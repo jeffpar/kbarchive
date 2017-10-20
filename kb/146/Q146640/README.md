@@ -6,6 +6,8 @@ permalink: /kb/146/Q146640/
 
 ## Q146640: FIX: Controls Saved as Class from PageFrame Becomes Invisible
 
+{% raw %}
+
 	Article: Q146640
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -76,3 +78,5 @@ permalink: /kb/146/Q146640/
 	
 	=============================================================================
 	
+
+{% endraw %}

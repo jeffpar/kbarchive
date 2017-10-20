@@ -6,6 +6,8 @@ permalink: /kb/168/Q168533/
 
 ## Q168533: XFOR: Tabs Translated to Brackets
 
+{% raw %}
+
 	Article: Q168533
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/168/Q168533/
 	
 	=============================================================================
 	
+
+{% endraw %}

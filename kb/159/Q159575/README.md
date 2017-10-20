@@ -6,6 +6,8 @@ permalink: /kb/159/Q159575/
 
 ## Q159575: DOC: SendTime Sample Needs DCOM to Work
 
+{% raw %}
+
 	Article: Q159575
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -52,3 +54,5 @@ permalink: /kb/159/Q159575/
 	
 	=============================================================================
 	
+
+{% endraw %}

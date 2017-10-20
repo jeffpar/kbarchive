@@ -6,6 +6,8 @@ permalink: /kb/131/Q131714/
 
 ## Q131714: Custom PCL Separator File Example
 
+{% raw %}
+
 	Article: Q131714
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1; winnt:3.5,3.51,4.0
@@ -300,3 +302,5 @@ permalink: /kb/131/Q131714/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158406/
 
 ## Q158406: DOCERR: The AutoIncrement Property Does Not Exist
 
+{% raw %}
+
 	Article: Q158406
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -45,3 +47,5 @@ permalink: /kb/158/Q158406/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240983/
 
 ## Q240983: Pandora's Box: Scratchy or Distorted Sound
 
+{% raw %}
+
 	Article: Q240983
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/240/Q240983/
 	
 	=============================================================================
 	
+
+{% endraw %}

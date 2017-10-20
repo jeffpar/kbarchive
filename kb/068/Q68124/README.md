@@ -6,6 +6,8 @@ permalink: /kb/068/Q68124/
 
 ## Q68124: Task List Tile Option Doesn't Tile Maximized Windows
 
+{% raw %}
+
 	Article: Q68124
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -42,3 +44,5 @@ permalink: /kb/068/Q68124/
 	
 	=============================================================================
 	
+
+{% endraw %}

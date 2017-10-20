@@ -6,6 +6,8 @@ permalink: /kb/105/Q105501/
 
 ## Q105501: Dial.exe - Dialing a Modem in Windows 3.1
 
+{% raw %}
+
 	Article: Q105501
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/105/Q105501/
 	
 	=============================================================================
 	
+
+{% endraw %}

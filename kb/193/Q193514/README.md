@@ -6,6 +6,8 @@ permalink: /kb/193/Q193514/
 
 ## Q193514: BUG: Data Form Wizard Mishandles '-' in Table or Field Names
 
+{% raw %}
+
 	Article: Q193514
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -119,3 +121,5 @@ permalink: /kb/193/Q193514/
 	
 	=============================================================================
 	
+
+{% endraw %}

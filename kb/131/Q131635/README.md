@@ -6,6 +6,8 @@ permalink: /kb/131/Q131635/
 
 ## Q131635: Error Message: Your EFAXPUMP.INI File Has Become Too Large
 
+{% raw %}
+
 	Article: Q131635
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -70,3 +72,5 @@ permalink: /kb/131/Q131635/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112340/
 
 ## Q112340: DOC: QuickWin Does Not Support Run Time in a DLL (/MD)
 
+{% raw %}
+
 	Article: Q112340
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -39,3 +41,5 @@ permalink: /kb/112/Q112340/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154776/
 
 ## Q154776: XCON: MTA Crashes in Otpmmain Due to Null Pointer
 
+{% raw %}
+
 	Article: Q154776
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/154/Q154776/
 	
 	=============================================================================
 	
+
+{% endraw %}

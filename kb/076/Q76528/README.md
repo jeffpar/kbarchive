@@ -6,6 +6,8 @@ permalink: /kb/076/Q76528/
 
 ## Q76528: Tabs in Write Not Working Properly for 9-Pin Printer Drivers
 
+{% raw %}
+
 	Article: Q76528
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/076/Q76528/
 	
 	=============================================================================
 	
+
+{% endraw %}

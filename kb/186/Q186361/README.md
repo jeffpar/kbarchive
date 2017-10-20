@@ -6,6 +6,8 @@ permalink: /kb/186/Q186361/
 
 ## Q186361: INFO: ERR &quot;...Some links may not be restored&quot;
 
+{% raw %}
+
 	Article: Q186361
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS: 6.0
@@ -56,3 +58,5 @@ permalink: /kb/186/Q186361/
 	
 	=============================================================================
 	
+
+{% endraw %}

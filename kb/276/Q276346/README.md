@@ -6,6 +6,8 @@ permalink: /kb/276/Q276346/
 
 ## Q276346: FIX: SendKeys Function Locks Keyboard on Windows 2000
 
+{% raw %}
+
 	Article: Q276346
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0,SP1
@@ -170,3 +172,5 @@ permalink: /kb/276/Q276346/
 	
 	=============================================================================
 	
+
+{% endraw %}

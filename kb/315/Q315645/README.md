@@ -6,6 +6,8 @@ permalink: /kb/315/Q315645/
 
 ## Q315645: FIX: Docked Watch Window or Toolbar Causes Error
 
+{% raw %}
+
 	Article: Q315645
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -121,3 +123,5 @@ permalink: /kb/315/Q315645/
 	
 	=============================================================================
 	
+
+{% endraw %}

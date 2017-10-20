@@ -6,6 +6,8 @@ permalink: /kb/087/Q87467/
 
 ## Q87467: PC DB: What the NETWORK.GLB File Is Used For
 
+{% raw %}
+
 	Article: Q87467
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -67,3 +69,5 @@ permalink: /kb/087/Q87467/
 	
 	=============================================================================
 	
+
+{% endraw %}

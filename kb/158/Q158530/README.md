@@ -6,6 +6,8 @@ permalink: /kb/158/Q158530/
 
 ## Q158530: XGEN: Build Numbers for Exchange
 
+{% raw %}
+
 	Article: Q158530
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/158/Q158530/
 	
 	=============================================================================
 	
+
+{% endraw %}

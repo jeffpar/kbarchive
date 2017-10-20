@@ -6,6 +6,8 @@ permalink: /kb/314/Q314245/
 
 ## Q314245: Flight Simulator 2002: Err Msg: Font &quot;Quartz&quot;(-22) Isn't Found
 
+{% raw %}
+
 	Article: Q314245
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/314/Q314245/
 	
 	=============================================================================
 	
+
+{% endraw %}

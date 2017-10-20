@@ -6,6 +6,8 @@ permalink: /kb/323/Q323939/
 
 ## Q323939: FIX: &quot;Not Enough Memory&quot; Err Msg  When You Retrieve a NULL Date
 
+{% raw %}
+
 	Article: Q323939
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/323/Q323939/
 	
 	=============================================================================
 	
+
+{% endraw %}

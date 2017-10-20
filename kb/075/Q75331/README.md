@@ -6,6 +6,8 @@ permalink: /kb/075/Q75331/
 
 ## Q75331: HP LaserJet III Driver Version 3.77 Does Not Save Changes
 
+{% raw %}
+
 	Article: Q75331
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/075/Q75331/
 	
 	=============================================================================
 	
+
+{% endraw %}

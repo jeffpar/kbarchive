@@ -6,6 +6,8 @@ permalink: /kb/046/Q46948/
 
 ## Q46948: MSJ 9/88: &quot;Using MSC for TSRs&quot; Omission/TSRs in C Information
 
+{% raw %}
+
 	Article: Q46948
 	Product(s): See article
 	Version(s): 5.10
@@ -62,3 +64,5 @@ permalink: /kb/046/Q46948/
 	There are third-party packages that make programming TSRs in C
 	easier and safer. You may want to contact one of the PC programmers'
 	software houses about this.
+
+{% endraw %}

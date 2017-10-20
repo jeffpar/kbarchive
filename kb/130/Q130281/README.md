@@ -6,6 +6,8 @@ permalink: /kb/130/Q130281/
 
 ## Q130281: RAS Does Not Autodetect Hayes Ultra 14.4 Modem
 
+{% raw %}
+
 	Article: Q130281
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -74,3 +76,5 @@ permalink: /kb/130/Q130281/
 	
 	=============================================================================
 	
+
+{% endraw %}

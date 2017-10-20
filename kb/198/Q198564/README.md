@@ -6,6 +6,8 @@ permalink: /kb/198/Q198564/
 
 ## Q198564: Internet Security for POP3, IMAP4, LDAP, SMTP, &amp; NNTP
 
+{% raw %}
+
 	Article: Q198564
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/198/Q198564/
 	
 	=============================================================================
 	
+
+{% endraw %}

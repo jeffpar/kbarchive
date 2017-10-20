@@ -6,6 +6,8 @@ permalink: /kb/130/Q130917/
 
 ## Q130917: Trantor T160 or T260 May Cause Windows NT to Hang
 
+{% raw %}
+
 	Article: Q130917
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130917/
 	
 	=============================================================================
 	
+
+{% endraw %}

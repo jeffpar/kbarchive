@@ -6,6 +6,8 @@ permalink: /kb/176/Q176441/
 
 ## Q176441: Cannot Send or Receive E-mail After Automatic Mail Configuration
 
+{% raw %}
+
 	Article: Q176441
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,5.0
@@ -73,3 +75,5 @@ permalink: /kb/176/Q176441/
 	
 	=============================================================================
 	
+
+{% endraw %}

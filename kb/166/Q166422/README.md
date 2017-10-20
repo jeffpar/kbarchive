@@ -6,6 +6,8 @@ permalink: /kb/166/Q166422/
 
 ## Q166422: Some MicroChannel NIC Cards May Not Start On a Dual Bus System
 
+{% raw %}
+
 	Article: Q166422
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -97,3 +99,5 @@ permalink: /kb/166/Q166422/
 	
 	=============================================================================
 	
+
+{% endraw %}

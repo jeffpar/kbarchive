@@ -6,6 +6,8 @@ permalink: /kb/238/Q238166/
 
 ## Q238166: Administrator Is Unable to Delete Local Profile in Windows NT
 
+{% raw %}
+
 	Article: Q238166
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -118,3 +120,5 @@ permalink: /kb/238/Q238166/
 	
 	=============================================================================
 	
+
+{% endraw %}

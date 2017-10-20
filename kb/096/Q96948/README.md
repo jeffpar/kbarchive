@@ -6,6 +6,8 @@ permalink: /kb/096/Q96948/
 
 ## Q96948: WFWG: 3C509 Modem Setting May Disable Network Functionality
 
+{% raw %}
+
 	Article: Q96948
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -118,3 +120,5 @@ permalink: /kb/096/Q96948/
 	
 	=============================================================================
 	
+
+{% endraw %}

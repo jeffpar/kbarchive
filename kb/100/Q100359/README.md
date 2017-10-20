@@ -6,6 +6,8 @@ permalink: /kb/100/Q100359/
 
 ## Q100359: DOC: Incomplete Description of ExitWindows()
 
+{% raw %}
+
 	Article: Q100359
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:
@@ -46,3 +48,5 @@ permalink: /kb/100/Q100359/
 	
 	=============================================================================
 	
+
+{% endraw %}

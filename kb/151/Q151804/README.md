@@ -6,6 +6,8 @@ permalink: /kb/151/Q151804/
 
 ## Q151804: PRB: Dynamic Creation of Redistributable Control Fails
 
+{% raw %}
+
 	Article: Q151804
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -151,3 +153,5 @@ permalink: /kb/151/Q151804/
 	
 	=============================================================================
 	
+
+{% endraw %}

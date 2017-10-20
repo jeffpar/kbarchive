@@ -6,6 +6,8 @@ permalink: /kb/168/Q168205/
 
 ## Q168205: INFO: Difference Between BeginTrans/CommitTrans and Optimistic B
 
+{% raw %}
+
 	Article: Q168205
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/168/Q168205/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152294/
 
 ## Q152294: HOWTO: Accessing Binary Data Using dbDao
 
+{% raw %}
+
 	Article: Q152294
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,4.2b,5.0,6.0
@@ -154,3 +156,5 @@ permalink: /kb/152/Q152294/
 	
 	=============================================================================
 	
+
+{% endraw %}

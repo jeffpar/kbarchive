@@ -6,6 +6,8 @@ permalink: /kb/260/Q260357/
 
 ## Q260357: HEAD Request Returns Both Header and Body
 
+{% raw %}
+
 	Article: Q260357
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -72,3 +74,5 @@ permalink: /kb/260/Q260357/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124912/
 
 ## Q124912: Slow Processing with Windows NT PDC and LAN Manager BDC
 
+{% raw %}
+
 	Article: Q124912
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5; :
@@ -79,3 +81,5 @@ permalink: /kb/124/Q124912/
 	
 	=============================================================================
 	
+
+{% endraw %}

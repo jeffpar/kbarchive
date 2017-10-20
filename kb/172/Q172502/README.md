@@ -6,6 +6,8 @@ permalink: /kb/172/Q172502/
 
 ## Q172502: WD97: How to Troubleshoot Setup for the Web AutoUpdate Feature
 
+{% raw %}
+
 	Article: Q172502
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -459,3 +461,5 @@ permalink: /kb/172/Q172502/
 	
 	=============================================================================
 	
+
+{% endraw %}

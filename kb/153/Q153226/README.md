@@ -6,6 +6,8 @@ permalink: /kb/153/Q153226/
 
 ## Q153226: PGC Requires File Extensions in the Configuration Command Line
 
+{% raw %}
+
 	Article: Q153226
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -81,3 +83,5 @@ permalink: /kb/153/Q153226/
 	
 	=============================================================================
 	
+
+{% endraw %}

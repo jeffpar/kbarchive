@@ -6,6 +6,8 @@ permalink: /kb/105/Q105246/
 
 ## Q105246: Using XTree for Windows Version 2.0 with Windows NT
 
+{% raw %}
+
 	Article: Q105246
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -73,3 +75,5 @@ permalink: /kb/105/Q105246/
 	
 	=============================================================================
 	
+
+{% endraw %}

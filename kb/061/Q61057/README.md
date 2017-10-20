@@ -6,6 +6,8 @@ permalink: /kb/061/Q61057/
 
 ## Q61057: C6 /Gh Switch for Windows 2.x and C 5.10 Library Compatability
 
+{% raw %}
+
 	Article: Q61057
 	Product(s): See article
 	Version(s): 6.00
@@ -36,3 +38,5 @@ permalink: /kb/061/Q61057/
 	2. Use of any library where the helper functions have been replaced.
 	
 	3. Use of customized run-time libraries.
+
+{% endraw %}

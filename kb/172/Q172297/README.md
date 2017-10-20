@@ -6,6 +6,8 @@ permalink: /kb/172/Q172297/
 
 ## Q172297: SNA Client Upgrade Forces Re-Entry of Configuration Information
 
+{% raw %}
+
 	Article: Q172297
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172297/
 	
 	=============================================================================
 	
+
+{% endraw %}

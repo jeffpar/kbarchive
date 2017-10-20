@@ -6,6 +6,8 @@ permalink: /kb/130/Q130983/
 
 ## Q130983: Removing Faxes from the Microsoft Fax Queue
 
+{% raw %}
+
 	Article: Q130983
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/130/Q130983/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129746/
 
 ## Q129746: X.400 SMTP: Mixed Gateway Addresses on the To: Line
 
+{% raw %}
+
 	Article: Q129746
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/129/Q129746/
 	
 	=============================================================================
 	
+
+{% endraw %}

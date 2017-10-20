@@ -6,6 +6,8 @@ permalink: /kb/294/Q294947/
 
 ## Q294947: XFOR:Event IDs 43, 86,  and  85  When Starting cc:Mail Connector
 
+{% raw %}
+
 	Article: Q294947
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -143,3 +145,5 @@ permalink: /kb/294/Q294947/
 	
 	=============================================================================
 	
+
+{% endraw %}

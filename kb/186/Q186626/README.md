@@ -6,6 +6,8 @@ permalink: /kb/186/Q186626/
 
 ## Q186626: Terminal Server and User Accounts/SAM Use
 
+{% raw %}
+
 	Article: Q186626
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/186/Q186626/
 	
 	=============================================================================
 	
+
+{% endraw %}

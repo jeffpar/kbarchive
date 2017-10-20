@@ -6,6 +6,8 @@ permalink: /kb/280/Q280449/
 
 ## Q280449: XCON: MTA Generates 9318 Events on Multihomed Servers
 
+{% raw %}
+
 	Article: Q280449
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -113,3 +115,5 @@ permalink: /kb/280/Q280449/
 	
 	=============================================================================
 	
+
+{% endraw %}

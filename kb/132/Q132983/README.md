@@ -6,6 +6,8 @@ permalink: /kb/132/Q132983/
 
 ## Q132983: Registry Editor Error Message: Access Code Is Invalid
 
+{% raw %}
+
 	Article: Q132983
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -79,3 +81,5 @@ permalink: /kb/132/Q132983/
 	
 	=============================================================================
 	
+
+{% endraw %}

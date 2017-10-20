@@ -6,6 +6,8 @@ permalink: /kb/150/Q150950/
 
 ## Q150950: DOCFIX: SelectObject Declaration is Incorrect in API Viewer
 
+{% raw %}
+
 	Article: Q150950
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/150/Q150950/
 	
 	=============================================================================
 	
+
+{% endraw %}

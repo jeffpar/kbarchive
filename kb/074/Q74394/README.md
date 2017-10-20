@@ -6,6 +6,8 @@ permalink: /kb/074/Q74394/
 
 ## Q74394: Microsoft Recognizer Supports Only Horizontal Writing
 
+{% raw %}
+
 	Article: Q74394
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -37,3 +39,5 @@ permalink: /kb/074/Q74394/
 	
 	=============================================================================
 	
+
+{% endraw %}

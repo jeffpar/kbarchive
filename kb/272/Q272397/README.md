@@ -6,6 +6,8 @@ permalink: /kb/272/Q272397/
 
 ## Q272397: WD97: Photo Editor Doesn't Recognize Default Printer Change
 
+{% raw %}
+
 	Article: Q272397
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/272/Q272397/
 	
 	=============================================================================
 	
+
+{% endraw %}

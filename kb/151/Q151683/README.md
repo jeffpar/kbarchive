@@ -6,6 +6,8 @@ permalink: /kb/151/Q151683/
 
 ## Q151683: FIX: MFC ODBC Exceptions Using the SQL Server 6.5 Driver
 
+{% raw %}
+
 	Article: Q151683
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 2.20 4.00 4.10
@@ -142,3 +144,5 @@ permalink: /kb/151/Q151683/
 	
 	=============================================================================
 	
+
+{% endraw %}

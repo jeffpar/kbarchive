@@ -6,6 +6,8 @@ permalink: /kb/259/Q259211/
 
 ## Q259211: PRB: COMRETURNERROR() Only Works Properly if Error Has Occurred
 
+{% raw %}
+
 	Article: Q259211
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -138,3 +140,5 @@ permalink: /kb/259/Q259211/
 	
 	=============================================================================
 	
+
+{% endraw %}

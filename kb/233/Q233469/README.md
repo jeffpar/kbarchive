@@ -6,6 +6,8 @@ permalink: /kb/233/Q233469/
 
 ## Q233469: Business Planner: Stops Responding When You Click Help Topic
 
+{% raw %}
+
 	Article: Q233469
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/233/Q233469/
 	
 	=============================================================================
 	
+
+{% endraw %}

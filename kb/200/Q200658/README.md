@@ -6,6 +6,8 @@ permalink: /kb/200/Q200658/
 
 ## Q200658: XADM: Unrecognizable Chars. Receiving Mail from Japanese IMC
 
+{% raw %}
+
 	Article: Q200658
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/200/Q200658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162576/
 
 ## Q162576: FPNW Clients Do Not Receive Printing Notification
 
+{% raw %}
+
 	Article: Q162576
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/162/Q162576/
 	
 	=============================================================================
 	
+
+{% endraw %}

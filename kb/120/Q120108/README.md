@@ -6,6 +6,8 @@ permalink: /kb/120/Q120108/
 
 ## Q120108: BUG: dBASE: SQL_ERROR w/ SQLExecute/SQLFreeStmt(SQL_CLOSE)
 
+{% raw %}
+
 	Article: Q120108
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -94,3 +96,5 @@ permalink: /kb/120/Q120108/
 	
 	=============================================================================
 	
+
+{% endraw %}

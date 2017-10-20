@@ -6,6 +6,8 @@ permalink: /kb/255/Q255024/
 
 ## Q255024: XCON: SMTP Addresses Can Be Encapsulated in RFC-822 DDA
 
+{% raw %}
+
 	Article: Q255024
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -101,3 +103,5 @@ permalink: /kb/255/Q255024/
 	
 	=============================================================================
 	
+
+{% endraw %}

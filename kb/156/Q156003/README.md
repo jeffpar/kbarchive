@@ -6,6 +6,8 @@ permalink: /kb/156/Q156003/
 
 ## Q156003: PPT: Error Trying to Install Internet Assistant for PowerPoint
 
+{% raw %}
+
 	Article: Q156003
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0,97
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156003/
 	
 	=============================================================================
 	
+
+{% endraw %}

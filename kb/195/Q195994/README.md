@@ -6,6 +6,8 @@ permalink: /kb/195/Q195994/
 
 ## Q195994: WD97: How to Force Text to Start at Same Line in Merged Letters
 
+{% raw %}
+
 	Article: Q195994
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/195/Q195994/
 	
 	=============================================================================
 	
+
+{% endraw %}

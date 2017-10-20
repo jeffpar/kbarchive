@@ -6,6 +6,8 @@ permalink: /kb/240/Q240980/
 
 ## Q240980: Smscfg.cpl May Not Be Loaded with More Than 20 Network Adapters
 
+{% raw %}
+
 	Article: Q240980
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -93,3 +95,5 @@ permalink: /kb/240/Q240980/
 	
 	=============================================================================
 	
+
+{% endraw %}

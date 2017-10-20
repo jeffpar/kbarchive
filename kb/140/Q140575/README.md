@@ -6,6 +6,8 @@ permalink: /kb/140/Q140575/
 
 ## Q140575: PRB: Connectivity Error: Not a Recognized Built-in Function
 
+{% raw %}
+
 	Article: Q140575
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -113,3 +115,5 @@ permalink: /kb/140/Q140575/
 	
 	=============================================================================
 	
+
+{% endraw %}

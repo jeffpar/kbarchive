@@ -6,6 +6,8 @@ permalink: /kb/143/Q143151/
 
 ## Q143151: Registry Corruption Detected During Restart of Windows NT
 
+{% raw %}
+
 	Article: Q143151
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -57,3 +59,5 @@ permalink: /kb/143/Q143151/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156467/
 
 ## Q156467: Writer 2: GPF in GDI with Virtual Memory Disabled
 
+{% raw %}
+
 	Article: Q156467
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -54,3 +56,5 @@ permalink: /kb/156/Q156467/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155695/
 
 ## Q155695: XCON: Replication Over X.400 Backbone Might Fail
 
+{% raw %}
+
 	Article: Q155695
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/155/Q155695/
 	
 	=============================================================================
 	
+
+{% endraw %}

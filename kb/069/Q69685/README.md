@@ -6,6 +6,8 @@ permalink: /kb/069/Q69685/
 
 ## Q69685: Program Manager Always Starts Minimized in Windows 3.0
 
+{% raw %}
+
 	Article: Q69685
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/069/Q69685/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111575/
 
 ## Q111575: Security Settings File Error with Shared Windows Installation
 
+{% raw %}
+
 	Article: Q111575
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -66,3 +68,5 @@ permalink: /kb/111/Q111575/
 	
 	=============================================================================
 	
+
+{% endraw %}

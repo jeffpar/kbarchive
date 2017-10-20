@@ -6,6 +6,8 @@ permalink: /kb/192/Q192296/
 
 ## Q192296: Specially-Malformed GET Requests Can Create Denial of Service
 
+{% raw %}
+
 	Article: Q192296
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0
@@ -124,3 +126,5 @@ permalink: /kb/192/Q192296/
 	
 	=============================================================================
 	
+
+{% endraw %}

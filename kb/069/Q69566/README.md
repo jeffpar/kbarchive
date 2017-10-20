@@ -6,6 +6,8 @@ permalink: /kb/069/Q69566/
 
 ## Q69566: File Manager Problem Renaming a File with No New Filename
 
+{% raw %}
+
 	Article: Q69566
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -38,3 +40,5 @@ permalink: /kb/069/Q69566/
 	
 	=============================================================================
 	
+
+{% endraw %}

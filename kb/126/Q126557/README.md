@@ -6,6 +6,8 @@ permalink: /kb/126/Q126557/
 
 ## Q126557: Error Message: A Device Is Not Functioning
 
+{% raw %}
+
 	Article: Q126557
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/126/Q126557/
 	
 	=============================================================================
 	
+
+{% endraw %}

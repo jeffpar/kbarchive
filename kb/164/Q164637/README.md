@@ -6,6 +6,8 @@ permalink: /kb/164/Q164637/
 
 ## Q164637: Unknown Demo Link Service Script Found
 
+{% raw %}
+
 	Article: Q164637
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164637/
 	
 	=============================================================================
 	
+
+{% endraw %}

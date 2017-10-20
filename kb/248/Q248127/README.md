@@ -6,6 +6,8 @@ permalink: /kb/248/Q248127/
 
 ## Q248127: XCLN: Free and Busy Information Not Updated When Working Offline
 
+{% raw %}
+
 	Article: Q248127
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -62,3 +64,5 @@ permalink: /kb/248/Q248127/
 	
 	=============================================================================
 	
+
+{% endraw %}

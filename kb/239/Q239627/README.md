@@ -6,6 +6,8 @@ permalink: /kb/239/Q239627/
 
 ## Q239627: Encarta Interactive World Atlas Is Unable to Continue Running...
 
+{% raw %}
+
 	Article: Q239627
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/239/Q239627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177341/
 
 ## Q177341: HOWTO: Remove the Sizing Grip from a Status Bar
 
+{% raw %}
+
 	Article: Q177341
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/177/Q177341/
 	
 	=============================================================================
 	
+
+{% endraw %}

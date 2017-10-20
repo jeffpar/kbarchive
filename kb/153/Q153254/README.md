@@ -6,6 +6,8 @@ permalink: /kb/153/Q153254/
 
 ## Q153254: Win16 RUI_BID Traps on Windows NT Win32 Thunking DLL
 
+{% raw %}
+
 	Article: Q153254
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -52,3 +54,5 @@ permalink: /kb/153/Q153254/
 	
 	=============================================================================
 	
+
+{% endraw %}

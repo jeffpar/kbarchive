@@ -6,6 +6,8 @@ permalink: /kb/093/Q93394/
 
 ## Q93394: DOCERR: CITATION .HPJ Statement Incorrectly Documented
 
+{% raw %}
+
 	Article: Q93394
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -83,3 +85,5 @@ permalink: /kb/093/Q93394/
 	
 	=============================================================================
 	
+
+{% endraw %}

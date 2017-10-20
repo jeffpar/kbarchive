@@ -6,6 +6,8 @@ permalink: /kb/141/Q141756/
 
 ## Q141756: How to Play MIDI Files Using API Calls from Visual Basic
 
+{% raw %}
+
 	Article: Q141756
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -101,3 +103,5 @@ permalink: /kb/141/Q141756/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39386/
 
 ## Q39386: Error Message Explanations When Using &quot;COM1:&quot; and &quot;COM2:&quot;
 
+{% raw %}
+
 	Article: Q39386
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -170,3 +172,5 @@ permalink: /kb/039/Q39386/
 	   segment.
 	
 	5. Report any pending errors.
+
+{% endraw %}

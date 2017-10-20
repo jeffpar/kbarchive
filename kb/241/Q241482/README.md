@@ -6,6 +6,8 @@ permalink: /kb/241/Q241482/
 
 ## Q241482: XADM: Invalid TNEF from Internet Mail Service Makes Store Crash
 
+{% raw %}
+
 	Article: Q241482
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -117,3 +119,5 @@ permalink: /kb/241/Q241482/
 	
 	=============================================================================
 	
+
+{% endraw %}

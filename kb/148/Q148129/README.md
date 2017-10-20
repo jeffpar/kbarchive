@@ -6,6 +6,8 @@ permalink: /kb/148/Q148129/
 
 ## Q148129: NetDDE Trusted Shares Disappear After The User Logs Off
 
+{% raw %}
+
 	Article: Q148129
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -83,3 +85,5 @@ permalink: /kb/148/Q148129/
 	
 	=============================================================================
 	
+
+{% endraw %}

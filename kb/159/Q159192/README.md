@@ -6,6 +6,8 @@ permalink: /kb/159/Q159192/
 
 ## Q159192: XCON: MTA Shows High CPU Usage and Messages Not Delivered
 
+{% raw %}
+
 	Article: Q159192
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/159/Q159192/
 	
 	=============================================================================
 	
+
+{% endraw %}

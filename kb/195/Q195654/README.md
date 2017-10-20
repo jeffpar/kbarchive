@@ -6,6 +6,8 @@ permalink: /kb/195/Q195654/
 
 ## Q195654: Methods for Condensing a Performance Monitor Log File
 
+{% raw %}
+
 	Article: Q195654
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/195/Q195654/
 	
 	=============================================================================
 	
+
+{% endraw %}

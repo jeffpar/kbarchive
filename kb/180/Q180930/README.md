@@ -6,6 +6,8 @@ permalink: /kb/180/Q180930/
 
 ## Q180930: Access Violation in SNA Manager When Editing DLS Properties
 
+{% raw %}
+
 	Article: Q180930
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -67,3 +69,5 @@ permalink: /kb/180/Q180930/
 	
 	=============================================================================
 	
+
+{% endraw %}

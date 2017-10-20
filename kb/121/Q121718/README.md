@@ -6,6 +6,8 @@ permalink: /kb/121/Q121718/
 
 ## Q121718: Disabled Net Card on Compaq XL560 Is Detected By Plug and Play
 
+{% raw %}
+
 	Article: Q121718
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/121/Q121718/
 	
 	=============================================================================
 	
+
+{% endraw %}

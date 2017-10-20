@@ -6,6 +6,8 @@ permalink: /kb/157/Q157175/
 
 ## Q157175: XCON: MTA Service Terminates Unexpectedly
 
+{% raw %}
+
 	Article: Q157175
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -129,3 +131,5 @@ permalink: /kb/157/Q157175/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237711/
 
 ## Q237711: NBA 2000: Computer Team Takes Free Throws After Fouling You
 
+{% raw %}
+
 	Article: Q237711
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/237/Q237711/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77934/
 
 ## Q77934: Determining That Display Driver Supports Transparent Mode
 
+{% raw %}
+
 	Article: Q77934
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -51,3 +53,5 @@ permalink: /kb/077/Q77934/
 	
 	=============================================================================
 	
+
+{% endraw %}

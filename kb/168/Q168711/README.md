@@ -6,6 +6,8 @@ permalink: /kb/168/Q168711/
 
 ## Q168711: How To Move a DHCP DB from WinNT 3.51 to new WinNT 4.0 Computer
 
+{% raw %}
+
 	Article: Q168711
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -110,3 +112,5 @@ permalink: /kb/168/Q168711/
 	
 	=============================================================================
 	
+
+{% endraw %}

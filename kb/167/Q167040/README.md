@@ -6,6 +6,8 @@ permalink: /kb/167/Q167040/
 
 ## Q167040: PPTP Performance Update for Windows NT 4.0 Release Notes
 
+{% raw %}
+
 	Article: Q167040
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -246,3 +248,5 @@ permalink: /kb/167/Q167040/
 	
 	=============================================================================
 	
+
+{% endraw %}

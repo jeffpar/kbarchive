@@ -6,6 +6,8 @@ permalink: /kb/165/Q165739/
 
 ## Q165739: WD97: How Word Determines the Name of a Saved Version
 
+{% raw %}
+
 	Article: Q165739
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/165/Q165739/
 	
 	=============================================================================
 	
+
+{% endraw %}

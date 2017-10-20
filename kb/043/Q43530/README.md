@@ -6,6 +6,8 @@ permalink: /kb/043/Q43530/
 
 ## Q43530: QB.EXE 4.50 Hangs If File Unloaded While Watch Is Set
 
+{% raw %}
+
 	Article: Q43530
 	Product(s): See article
 	Version(s): 4.50
@@ -80,3 +82,5 @@ permalink: /kb/043/Q43530/
 	
 	11. Press TAB, then the SPACE key, then ENTER, and the editor will
 	    be hung.
+
+{% endraw %}

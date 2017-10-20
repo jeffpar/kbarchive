@@ -6,6 +6,8 @@ permalink: /kb/194/Q194712/
 
 ## Q194712: X400: Cannot Start Gateway if PO Has Large Serial Number
 
+{% raw %}
+
 	Article: Q194712
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/194/Q194712/
 	
 	=============================================================================
 	
+
+{% endraw %}

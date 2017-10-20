@@ -6,6 +6,8 @@ permalink: /kb/186/Q186391/
 
 ## Q186391: FIX: ATL Controls Don't Remove CLSID Key During Unregistration
 
+{% raw %}
+
 	Article: Q186391
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1
@@ -122,3 +124,5 @@ permalink: /kb/186/Q186391/
 	
 	=============================================================================
 	
+
+{% endraw %}

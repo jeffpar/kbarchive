@@ -6,6 +6,8 @@ permalink: /kb/140/Q140886/
 
 ## Q140886: HOWTO: Print Multiline Text Box Using Windows API Functions
 
+{% raw %}
+
 	Article: Q140886
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -217,3 +219,5 @@ permalink: /kb/140/Q140886/
 	
 	=============================================================================
 	
+
+{% endraw %}

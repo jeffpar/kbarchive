@@ -6,6 +6,8 @@ permalink: /kb/159/Q159224/
 
 ## Q159224: Stop 0x0000000A Nwlnkrip.sys RAS Server w/2 Token Ring Cards
 
+{% raw %}
+
 	Article: Q159224
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/159/Q159224/
 	
 	=============================================================================
 	
+
+{% endraw %}

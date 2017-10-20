@@ -6,6 +6,8 @@ permalink: /kb/124/Q124360/
 
 ## Q124360: Non Critical Error with IR32_32.DLL and Mitsumi IDE CD-ROM
 
+{% raw %}
+
 	Article: Q124360
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/124/Q124360/
 	
 	=============================================================================
 	
+
+{% endraw %}

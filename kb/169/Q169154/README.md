@@ -6,6 +6,8 @@ permalink: /kb/169/Q169154/
 
 ## Q169154: PRB: Error &quot;OLE Object is Invalid or Corrupt&quot; on Empty Gen Field
 
+{% raw %}
+
 	Article: Q169154
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -151,3 +153,5 @@ permalink: /kb/169/Q169154/
 	
 	=============================================================================
 	
+
+{% endraw %}

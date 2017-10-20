@@ -6,6 +6,8 @@ permalink: /kb/191/Q191628/
 
 ## Q191628: Urban Assault: Cannot Change Display Resolution in Game
 
+{% raw %}
+
 	Article: Q191628
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/191/Q191628/
 	
 	=============================================================================
 	
+
+{% endraw %}

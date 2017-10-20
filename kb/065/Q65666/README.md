@@ -6,6 +6,8 @@ permalink: /kb/065/Q65666/
 
 ## Q65666: Emulation Modes for for Xerox 4045 Printer
 
+{% raw %}
+
 	Article: Q65666
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -47,3 +49,5 @@ permalink: /kb/065/Q65666/
 	
 	=============================================================================
 	
+
+{% endraw %}

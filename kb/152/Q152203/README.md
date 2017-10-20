@@ -6,6 +6,8 @@ permalink: /kb/152/Q152203/
 
 ## Q152203: SNA Server Access Violation (0xC0000005) in s1pupcds()
 
+{% raw %}
+
 	Article: Q152203
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -85,3 +87,5 @@ permalink: /kb/152/Q152203/
 	
 	=============================================================================
 	
+
+{% endraw %}

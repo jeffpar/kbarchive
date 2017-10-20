@@ -6,6 +6,8 @@ permalink: /kb/148/Q148525/
 
 ## Q148525: Removable Media Does Not Eject if Formatted in NTFS
 
+{% raw %}
+
 	Article: Q148525
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/148/Q148525/
 	
 	=============================================================================
 	
+
+{% endraw %}

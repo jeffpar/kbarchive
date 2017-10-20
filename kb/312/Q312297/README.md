@@ -6,6 +6,8 @@ permalink: /kb/312/Q312297/
 
 ## Q312297: Cannot Update Cached Forms if You Are Not an Administrator
 
+{% raw %}
+
 	Article: Q312297
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/312/Q312297/
 	
 	=============================================================================
 	
+
+{% endraw %}

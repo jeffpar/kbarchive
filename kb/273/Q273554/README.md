@@ -6,6 +6,8 @@ permalink: /kb/273/Q273554/
 
 ## Q273554: SMS: License Requirements for Servers and Clients Using SMS
 
+{% raw %}
+
 	Article: Q273554
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -88,3 +90,5 @@ permalink: /kb/273/Q273554/
 	
 	=============================================================================
 	
+
+{% endraw %}

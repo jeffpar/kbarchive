@@ -6,6 +6,8 @@ permalink: /kb/198/Q198348/
 
 ## Q198348: PRB: Component Gallery Errors in Localized German VFP
 
+{% raw %}
+
 	Article: Q198348
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/198/Q198348/
 	
 	=============================================================================
 	
+
+{% endraw %}

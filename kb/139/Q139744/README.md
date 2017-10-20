@@ -6,6 +6,8 @@ permalink: /kb/139/Q139744/
 
 ## Q139744: Desktop Themes Does Not List Available Themes
 
+{% raw %}
+
 	Article: Q139744
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -116,3 +118,5 @@ permalink: /kb/139/Q139744/
 	
 	=============================================================================
 	
+
+{% endraw %}

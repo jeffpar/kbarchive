@@ -6,6 +6,8 @@ permalink: /kb/095/Q95392/
 
 ## Q95392: INFO: Managing Icons Extracted Using ExtractIcon()
 
+{% raw %}
+
 	Article: Q95392
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/095/Q95392/
 	
 	=============================================================================
 	
+
+{% endraw %}

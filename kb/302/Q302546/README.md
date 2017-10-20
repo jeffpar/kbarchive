@@ -6,6 +6,8 @@ permalink: /kb/302/Q302546/
 
 ## Q302546: E-mail POP-Suck
 
+{% raw %}
+
 	Article: Q302546
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -58,3 +60,5 @@ permalink: /kb/302/Q302546/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217772/
 
 ## Q217772: PRB: CAsyncMonikerFile::Open() Fails in Visual C++ 5.0 MFC Apps
 
+{% raw %}
+
 	Article: Q217772
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -72,3 +74,5 @@ permalink: /kb/217/Q217772/
 	
 	=============================================================================
 	
+
+{% endraw %}

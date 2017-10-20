@@ -6,6 +6,8 @@ permalink: /kb/171/Q171608/
 
 ## Q171608: WD97: Text Converter Updates in Service Release 1
 
+{% raw %}
+
 	Article: Q171608
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -163,3 +165,5 @@ permalink: /kb/171/Q171608/
 	
 	=============================================================================
 	
+
+{% endraw %}

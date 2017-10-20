@@ -6,6 +6,8 @@ permalink: /kb/177/Q177716/
 
 ## Q177716: Age of Empires: Game Unexpectedly Quits When You Play a Scenario
 
+{% raw %}
+
 	Article: Q177716
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -83,3 +85,5 @@ permalink: /kb/177/Q177716/
 	
 	=============================================================================
 	
+
+{% endraw %}

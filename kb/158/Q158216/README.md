@@ -6,6 +6,8 @@ permalink: /kb/158/Q158216/
 
 ## Q158216: Unable to Directly Access Any Applet In Control Panel
 
+{% raw %}
+
 	Article: Q158216
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -161,3 +163,5 @@ permalink: /kb/158/Q158216/
 	
 	=============================================================================
 	
+
+{% endraw %}

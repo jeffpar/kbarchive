@@ -6,6 +6,8 @@ permalink: /kb/191/Q191529/
 
 ## Q191529: HOWTO: Use UPDATE SQL Command to Modify a Second Table
 
+{% raw %}
+
 	Article: Q191529
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -186,3 +188,5 @@ permalink: /kb/191/Q191529/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189007/
 
 ## Q189007: DNS: RPC Server or EndPoints not available.
 
+{% raw %}
+
 	Article: Q189007
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -79,3 +81,5 @@ permalink: /kb/189/Q189007/
 	
 	=============================================================================
 	
+
+{% endraw %}

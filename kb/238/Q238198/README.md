@@ -6,6 +6,8 @@ permalink: /kb/238/Q238198/
 
 ## Q238198: RAS Callback to a Hunt Group Does Not Work
 
+{% raw %}
+
 	Article: Q238198
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -59,3 +61,5 @@ permalink: /kb/238/Q238198/
 	
 	=============================================================================
 	
+
+{% endraw %}

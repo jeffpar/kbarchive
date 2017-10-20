@@ -6,6 +6,8 @@ permalink: /kb/079/Q79146/
 
 ## Q79146: FIX: MASM 6.0 Generates L1103 for Nested Structures
 
+{% raw %}
+
 	Article: Q79146
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -114,3 +116,5 @@ permalink: /kb/079/Q79146/
 	
 	=============================================================================
 	
+
+{% endraw %}

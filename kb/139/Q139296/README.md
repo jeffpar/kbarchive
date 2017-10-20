@@ -6,6 +6,8 @@ permalink: /kb/139/Q139296/
 
 ## Q139296: BUG: C2955 Error Generated If Using Same Name as Template
 
+{% raw %}
+
 	Article: Q139296
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0
@@ -74,3 +76,5 @@ permalink: /kb/139/Q139296/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89151/
 
 ## Q89151: Golf: Aiming Marker Not Readjusted after Maximizing Main View
 
+{% raw %}
+
 	Article: Q89151
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/089/Q89151/
 	
 	=============================================================================
 	
+
+{% endraw %}

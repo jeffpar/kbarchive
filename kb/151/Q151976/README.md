@@ -6,6 +6,8 @@ permalink: /kb/151/Q151976/
 
 ## Q151976: TN3270E Users Do Not Need Windows NT User Accounts
 
+{% raw %}
+
 	Article: Q151976
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0
@@ -37,3 +39,5 @@ permalink: /kb/151/Q151976/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194578/
 
 ## Q194578: SAMPLE: MULTIMON.EXE Uses Multiple Monitors in Visual Basic
 
+{% raw %}
+
 	Article: Q194578
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -220,3 +222,5 @@ permalink: /kb/194/Q194578/
 	
 	=============================================================================
 	
+
+{% endraw %}

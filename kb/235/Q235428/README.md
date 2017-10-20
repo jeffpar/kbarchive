@@ -6,6 +6,8 @@ permalink: /kb/235/Q235428/
 
 ## Q235428: XCLN: Err. Message: This Feature Requires Internet Explorer 4.01
 
+{% raw %}
+
 	Article: Q235428
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -96,3 +98,5 @@ permalink: /kb/235/Q235428/
 	
 	=============================================================================
 	
+
+{% endraw %}

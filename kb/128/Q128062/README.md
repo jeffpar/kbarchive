@@ -6,6 +6,8 @@ permalink: /kb/128/Q128062/
 
 ## Q128062: How to Place Objects on Pages in a Pageframe
 
+{% raw %}
+
 	Article: Q128062
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/128/Q128062/
 	
 	=============================================================================
 	
+
+{% endraw %}

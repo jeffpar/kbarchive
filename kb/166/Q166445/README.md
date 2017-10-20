@@ -6,6 +6,8 @@ permalink: /kb/166/Q166445/
 
 ## Q166445: Stop 0x00000050 with S3 Video
 
+{% raw %}
+
 	Article: Q166445
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/166/Q166445/
 	
 	=============================================================================
 	
+
+{% endraw %}

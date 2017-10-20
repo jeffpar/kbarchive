@@ -6,6 +6,8 @@ permalink: /kb/165/Q165587/
 
 ## Q165587: TrueType Not Printing on Remote Print Servers
 
+{% raw %}
+
 	Article: Q165587
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.00
@@ -65,3 +67,5 @@ permalink: /kb/165/Q165587/
 	
 	=============================================================================
 	
+
+{% endraw %}

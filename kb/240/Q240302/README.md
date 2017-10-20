@@ -6,6 +6,8 @@ permalink: /kb/240/Q240302/
 
 ## Q240302: PRB: MSDN Library Setup Fails on Terminal Server in Execute Mode
 
+{% raw %}
+
 	Article: Q240302
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -187,3 +189,5 @@ permalink: /kb/240/Q240302/
 	
 	=============================================================================
 	
+
+{% endraw %}

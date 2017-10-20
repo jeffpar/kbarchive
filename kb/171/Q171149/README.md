@@ -6,6 +6,8 @@ permalink: /kb/171/Q171149/
 
 ## Q171149: Running MS Office 97 CD-ROM: D:&#92;Samples&#92;Setup.exe Not Present
 
+{% raw %}
+
 	Article: Q171149
 	Product(s): Microsoft Press
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/171/Q171149/
 	
 	=============================================================================
 	
+
+{% endraw %}

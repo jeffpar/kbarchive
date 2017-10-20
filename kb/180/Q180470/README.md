@@ -6,6 +6,8 @@ permalink: /kb/180/Q180470/
 
 ## Q180470: Scale Font Option Not Working for SNA Server Print Server
 
+{% raw %}
+
 	Article: Q180470
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,4.0
@@ -73,3 +75,5 @@ permalink: /kb/180/Q180470/
 	
 	=============================================================================
 	
+
+{% endraw %}

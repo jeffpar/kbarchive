@@ -6,6 +6,8 @@ permalink: /kb/174/Q174916/
 
 ## Q174916: PRB: APPEND PROCEDURES Causes &quot;Feature Not Available&quot; in Runtime
 
+{% raw %}
+
 	Article: Q174916
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/174/Q174916/
 	
 	=============================================================================
 	
+
+{% endraw %}

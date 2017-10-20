@@ -6,6 +6,8 @@ permalink: /kb/150/Q150767/
 
 ## Q150767: HOWTO: Redirect Standard I/O of a Console App Using Batch File
 
+{% raw %}
+
 	Article: Q150767
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -106,3 +108,5 @@ permalink: /kb/150/Q150767/
 	
 	=============================================================================
 	
+
+{% endraw %}

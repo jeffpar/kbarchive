@@ -6,6 +6,8 @@ permalink: /kb/155/Q155726/
 
 ## Q155726: Scivdd.dll Generates Error Messages at Windows NT Startup
 
+{% raw %}
+
 	Article: Q155726
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/155/Q155726/
 	
 	=============================================================================
 	
+
+{% endraw %}

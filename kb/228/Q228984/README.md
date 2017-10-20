@@ -6,6 +6,8 @@ permalink: /kb/228/Q228984/
 
 ## Q228984: Using Certificate Server 2.0 to Generate a Server Certificate
 
+{% raw %}
+
 	Article: Q228984
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -145,3 +147,5 @@ permalink: /kb/228/Q228984/
 	
 	=============================================================================
 	
+
+{% endraw %}

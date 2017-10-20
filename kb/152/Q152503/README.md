@@ -6,6 +6,8 @@ permalink: /kb/152/Q152503/
 
 ## Q152503: XADM: How to Eliminate DNS's MX records with Multiple Sites
 
+{% raw %}
+
 	Article: Q152503
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/152/Q152503/
 	
 	=============================================================================
 	
+
+{% endraw %}

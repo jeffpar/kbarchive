@@ -6,6 +6,8 @@ permalink: /kb/223/Q223131/
 
 ## Q223131: FIX: Incorrect Firing of LostFocus Event
 
+{% raw %}
+
 	Article: Q223131
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -115,3 +117,5 @@ permalink: /kb/223/Q223131/
 	
 	=============================================================================
 	
+
+{% endraw %}

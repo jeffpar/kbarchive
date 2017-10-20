@@ -6,6 +6,8 @@ permalink: /kb/150/Q150816/
 
 ## Q150816: XCLN: Client Installation Point Doc Err in Installation Guide
 
+{% raw %}
+
 	Article: Q150816
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -45,3 +47,5 @@ permalink: /kb/150/Q150816/
 	
 	=============================================================================
 	
+
+{% endraw %}

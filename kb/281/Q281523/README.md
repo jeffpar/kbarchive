@@ -6,6 +6,8 @@ permalink: /kb/281/Q281523/
 
 ## Q281523: Device Off for Extended Period
 
+{% raw %}
+
 	Article: Q281523
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -63,3 +65,5 @@ permalink: /kb/281/Q281523/
 	
 	=============================================================================
 	
+
+{% endraw %}

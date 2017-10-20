@@ -6,6 +6,8 @@ permalink: /kb/174/Q174207/
 
 ## Q174207: XFOR: Notes Proxy Domain Name Over 31 Characters Stripped
 
+{% raw %}
+
 	Article: Q174207
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -45,3 +47,5 @@ permalink: /kb/174/Q174207/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61221/
 
 ## Q61221: C 6.00 README: CV: Debugging Programs w/Code in Include Files
 
+{% raw %}
+
 	Article: Q61221
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -21,3 +23,5 @@ permalink: /kb/061/Q61221/
 	
 	- Do not attempt to debug programs with code in include files if those
 	  files are included prior to the main function.
+
+{% endraw %}

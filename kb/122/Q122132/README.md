@@ -6,6 +6,8 @@ permalink: /kb/122/Q122132/
 
 ## Q122132: Err Msg: Fatal Translation Error on Tape... with WangDat 3200
 
+{% raw %}
+
 	Article: Q122132
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/122/Q122132/
 	
 	=============================================================================
 	
+
+{% endraw %}

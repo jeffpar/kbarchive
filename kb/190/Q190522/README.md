@@ -6,6 +6,8 @@ permalink: /kb/190/Q190522/
 
 ## Q190522: PRB: Error Setting Field Format Property of Access Tables
 
+{% raw %}
+
 	Article: Q190522
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -109,3 +111,5 @@ permalink: /kb/190/Q190522/
 	
 	=============================================================================
 	
+
+{% endraw %}

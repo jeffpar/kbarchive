@@ -6,6 +6,8 @@ permalink: /kb/114/Q114359/
 
 ## Q114359: Problems Installing MS-DOS 6.21 Upgrade over Novell DOS 7
 
+{% raw %}
+
 	Article: Q114359
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/114/Q114359/
 	
 	=============================================================================
 	
+
+{% endraw %}

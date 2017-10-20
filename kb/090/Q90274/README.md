@@ -6,6 +6,8 @@ permalink: /kb/090/Q90274/
 
 ## Q90274: Managing Network Printers in Print Manager and Control Panel
 
+{% raw %}
+
 	Article: Q90274
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/090/Q90274/
 	
 	=============================================================================
 	
+
+{% endraw %}

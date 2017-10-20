@@ -6,6 +6,8 @@ permalink: /kb/131/Q131868/
 
 ## Q131868: How to Troubleshoot PCMCIA Modems in Windows NT
 
+{% raw %}
+
 	Article: Q131868
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -162,3 +164,5 @@ permalink: /kb/131/Q131868/
 	
 	=============================================================================
 	
+
+{% endraw %}

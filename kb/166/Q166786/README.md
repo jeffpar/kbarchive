@@ -6,6 +6,8 @@ permalink: /kb/166/Q166786/
 
 ## Q166786: WD97: Selection.Cells.Shading Applies Shading to Selected Text
 
+{% raw %}
+
 	Article: Q166786
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/166/Q166786/
 	
 	=============================================================================
 	
+
+{% endraw %}

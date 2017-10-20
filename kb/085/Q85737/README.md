@@ -6,6 +6,8 @@ permalink: /kb/085/Q85737/
 
 ## Q85737: ALR EISA Err Msg: EMM386: Unrecoverable Privileged...Error #05
 
+{% raw %}
+
 	Article: Q85737
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -88,3 +90,5 @@ permalink: /kb/085/Q85737/
 	
 	=============================================================================
 	
+
+{% endraw %}

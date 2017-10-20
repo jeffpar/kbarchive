@@ -6,6 +6,8 @@ permalink: /kb/169/Q169145/
 
 ## Q169145: Event ID: 5511 - Mismatched SIDs
 
+{% raw %}
+
 	Article: Q169145
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -57,3 +59,5 @@ permalink: /kb/169/Q169145/
 	
 	=============================================================================
 	
+
+{% endraw %}

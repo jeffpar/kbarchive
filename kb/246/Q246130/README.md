@@ -6,6 +6,8 @@ permalink: /kb/246/Q246130/
 
 ## Q246130: PRB: MSDN Library Problems Installing to Jazz and Zip Drives
 
+{% raw %}
+
 	Article: Q246130
 	Product(s): Microsoft Developer Network
 	Version(s): October 99
@@ -120,3 +122,5 @@ permalink: /kb/246/Q246130/
 	
 	=============================================================================
 	
+
+{% endraw %}

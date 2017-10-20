@@ -6,6 +6,8 @@ permalink: /kb/192/Q192238/
 
 ## Q192238: PC WRmt: Remote Client May Display Date Incorrectly After 2000
 
+{% raw %}
+
 	Article: Q192238
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -111,3 +113,5 @@ permalink: /kb/192/Q192238/
 	
 	=============================================================================
 	
+
+{% endraw %}

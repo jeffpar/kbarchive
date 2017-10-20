@@ -6,6 +6,8 @@ permalink: /kb/197/Q197321/
 
 ## Q197321: PRB: &quot;Invalid File Format&quot; from ImgEdt Reading Sony Mavica JPG
 
+{% raw %}
+
 	Article: Q197321
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/197/Q197321/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142308/
 
 ## Q142308: WINS Proxy Button is Unavailable
 
+{% raw %}
+
 	Article: Q142308
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -38,3 +40,5 @@ permalink: /kb/142/Q142308/
 	
 	=============================================================================
 	
+
+{% endraw %}

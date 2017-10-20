@@ -6,6 +6,8 @@ permalink: /kb/252/Q252433/
 
 ## Q252433: XCON: Configuring MTA to Route Messages Based on Content Type
 
+{% raw %}
+
 	Article: Q252433
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -68,3 +70,5 @@ permalink: /kb/252/Q252433/
 	
 	=============================================================================
 	
+
+{% endraw %}

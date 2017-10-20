@@ -6,6 +6,8 @@ permalink: /kb/179/Q179337/
 
 ## Q179337: WD97: Recorded Macro to Stop &quot;Same As Previous&quot; Fail on Playback
 
+{% raw %}
+
 	Article: Q179337
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -132,3 +134,5 @@ permalink: /kb/179/Q179337/
 	
 	=============================================================================
 	
+
+{% endraw %}

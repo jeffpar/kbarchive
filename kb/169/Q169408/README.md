@@ -6,6 +6,8 @@ permalink: /kb/169/Q169408/
 
 ## Q169408: XCLN: Unable to Drag and Drop Attachment in Message
 
+{% raw %}
+
 	Article: Q169408
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -64,3 +66,5 @@ permalink: /kb/169/Q169408/
 	
 	=============================================================================
 	
+
+{% endraw %}

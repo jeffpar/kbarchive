@@ -6,6 +6,8 @@ permalink: /kb/196/Q196160/
 
 ## Q196160: XWEB: Contacts Information Not Available When Using OWA
 
+{% raw %}
+
 	Article: Q196160
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/196/Q196160/
 	
 	=============================================================================
 	
+
+{% endraw %}

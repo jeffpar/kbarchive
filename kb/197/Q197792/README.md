@@ -6,6 +6,8 @@ permalink: /kb/197/Q197792/
 
 ## Q197792: XFOR: General Troubleshooting Stuck Msg in Internet Mail Service
 
+{% raw %}
+
 	Article: Q197792
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/197/Q197792/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123608/
 
 ## Q123608: Olicom NIC Driver Does Not Install Correctly
 
+{% raw %}
+
 	Article: Q123608
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/123/Q123608/
 	
 	=============================================================================
 	
+
+{% endraw %}

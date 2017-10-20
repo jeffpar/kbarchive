@@ -6,6 +6,8 @@ permalink: /kb/133/Q133408/
 
 ## Q133408: Upgrading Windows NT Resets Boot Menu Timer
 
+{% raw %}
+
 	Article: Q133408
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/133/Q133408/
 	
 	=============================================================================
 	
+
+{% endraw %}

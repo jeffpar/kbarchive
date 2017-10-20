@@ -6,6 +6,8 @@ permalink: /kb/146/Q146321/
 
 ## Q146321: XADM: Administrating Exchange Servers in Multiple Domains
 
+{% raw %}
+
 	Article: Q146321
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146321/
 	
 	=============================================================================
 	
+
+{% endraw %}

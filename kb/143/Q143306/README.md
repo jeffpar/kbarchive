@@ -6,6 +6,8 @@ permalink: /kb/143/Q143306/
 
 ## Q143306: BUG: COLOR on @...GET Push Button Does Not Work as Expected
 
+{% raw %}
+
 	Article: Q143306
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a; WINDOWS:2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -96,3 +98,5 @@ permalink: /kb/143/Q143306/
 	
 	=============================================================================
 	
+
+{% endraw %}

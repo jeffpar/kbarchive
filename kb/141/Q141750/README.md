@@ -6,6 +6,8 @@ permalink: /kb/141/Q141750/
 
 ## Q141750: Bookshelf: Unable to Paste Article into Lotus Ami Pro
 
+{% raw %}
+
 	Article: Q141750
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/141/Q141750/
 	
 	=============================================================================
 	
+
+{% endraw %}

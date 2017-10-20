@@ -6,6 +6,8 @@ permalink: /kb/244/Q244236/
 
 ## Q244236: HOWTO: Use the System Color on ScrollBars Under Windows NT
 
+{% raw %}
+
 	Article: Q244236
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -158,3 +160,5 @@ permalink: /kb/244/Q244236/
 	
 	=============================================================================
 	
+
+{% endraw %}

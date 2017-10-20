@@ -6,6 +6,8 @@ permalink: /kb/138/Q138695/
 
 ## Q138695: DOC: ConstructElements &amp; DestructElements
 
+{% raw %}
+
 	Article: Q138695
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/138/Q138695/
 	
 	=============================================================================
 	
+
+{% endraw %}

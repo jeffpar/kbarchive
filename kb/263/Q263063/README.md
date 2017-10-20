@@ -6,6 +6,8 @@ permalink: /kb/263/Q263063/
 
 ## Q263063: Site Component Manager May Attempt to Install Components
 
+{% raw %}
+
 	Article: Q263063
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -73,3 +75,5 @@ permalink: /kb/263/Q263063/
 	
 	=============================================================================
 	
+
+{% endraw %}

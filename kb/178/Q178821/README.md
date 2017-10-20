@@ -6,6 +6,8 @@ permalink: /kb/178/Q178821/
 
 ## Q178821: XCON: Content Conversion Failure 4096
 
+{% raw %}
+
 	Article: Q178821
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -90,3 +92,5 @@ permalink: /kb/178/Q178821/
 	
 	=============================================================================
 	
+
+{% endraw %}

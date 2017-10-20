@@ -6,6 +6,8 @@ permalink: /kb/156/Q156749/
 
 ## Q156749: WSAAsyncGetHostByName() Returns IP Address in Reverse Order
 
+{% raw %}
+
 	Article: Q156749
 	Product(s): Microsoft Windows NT
 	Version(s): MS-DOS:3.0; :2.2c
@@ -65,3 +67,5 @@ permalink: /kb/156/Q156749/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/219/Q219434/
 
 ## Q219434: TS Client Set to Automatically Log On Is Prompted for Password
 
+{% raw %}
+
 	Article: Q219434
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/219/Q219434/
 	
 	=============================================================================
 	
+
+{% endraw %}

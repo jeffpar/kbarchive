@@ -6,6 +6,8 @@ permalink: /kb/241/Q241712/
 
 ## Q241712: Cannot Start 16-Bit Program with Long Path Name
 
+{% raw %}
+
 	Article: Q241712
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.51,4.0
@@ -99,3 +101,5 @@ permalink: /kb/241/Q241712/
 	
 	=============================================================================
 	
+
+{% endraw %}

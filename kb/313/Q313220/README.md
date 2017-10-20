@@ -6,6 +6,8 @@ permalink: /kb/313/Q313220/
 
 ## Q313220: PRB: Unexpected Connections to SQL Server with JDBC
 
+{% raw %}
+
 	Article: Q313220
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/313/Q313220/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138981/
 
 ## Q138981: HOWTO: Create a Calculated Column in a Grid
 
+{% raw %}
+
 	Article: Q138981
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/138/Q138981/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118533/
 
 ## Q118533: FFAPI: Understanding FFAPI Error Message Format
 
+{% raw %}
+
 	Article: Q118533
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/118/Q118533/
 	
 	=============================================================================
 	
+
+{% endraw %}

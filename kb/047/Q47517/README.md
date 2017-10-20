@@ -6,6 +6,8 @@ permalink: /kb/047/Q47517/
 
 ## Q47517: Mail Wkst: Send Inquiry Screen Keyboard Shortcuts
 
+{% raw %}
+
 	Article: Q47517
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -55,3 +57,5 @@ permalink: /kb/047/Q47517/
 	
 	=============================================================================
 	
+
+{% endraw %}

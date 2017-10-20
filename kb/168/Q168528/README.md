@@ -6,6 +6,8 @@ permalink: /kb/168/Q168528/
 
 ## Q168528: PRB: Add Method/Add Property Adds To All Interfaces
 
+{% raw %}
+
 	Article: Q168528
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0 6.0
@@ -43,14 +45,14 @@ permalink: /kb/168/Q168528/
 	      properties:
 	       // NOTE - ClassWizard will maintain property information here.
 	       //    Use extreme caution when editing this section.
-	       //{ {AFX_ODL_PROP(CTestingDoc)
-	       //} }AFX_ODL_PROP
+	       //{{AFX_ODL_PROP(CTestingDoc)
+	       //}}AFX_ODL_PROP
 	
 	      methods:
 	       // NOTE - ClassWizard will maintain method information here.
 	       //    Use extreme caution when editing this section.
-	       //{ {AFX_ODL_METHOD(CTestingDoc)
-	       //} }AFX_ODL_METHOD
+	       //{{AFX_ODL_METHOD(CTestingDoc)
+	       //}}AFX_ODL_METHOD
 	    };
 	
 	The AFX_ODL_PROP() and AFX_ODL_METHOD() in the comments are used by the
@@ -130,3 +132,5 @@ permalink: /kb/168/Q168528/
 	
 	=============================================================================
 	
+
+{% endraw %}

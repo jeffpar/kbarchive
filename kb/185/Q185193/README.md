@@ -6,6 +6,8 @@ permalink: /kb/185/Q185193/
 
 ## Q185193: PRB: Clireg32 Fails to Register the Type Library of DCOM Server
 
+{% raw %}
+
 	Article: Q185193
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -207,3 +209,5 @@ permalink: /kb/185/Q185193/
 	
 	=============================================================================
 	
+
+{% endraw %}

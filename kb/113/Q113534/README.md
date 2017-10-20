@@ -6,6 +6,8 @@ permalink: /kb/113/Q113534/
 
 ## Q113534: FIX: C2248 Error When Calling CView::OnInitialUpdate()
 
+{% raw %}
+
 	Article: Q113534
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -110,3 +112,5 @@ permalink: /kb/113/Q113534/
 	
 	=============================================================================
 	
+
+{% endraw %}

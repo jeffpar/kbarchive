@@ -6,6 +6,8 @@ permalink: /kb/131/Q131677/
 
 ## Q131677: PC NTMMTA: Err Msg: Could Not Create Directory...
 
+{% raw %}
+
 	Article: Q131677
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -54,3 +56,5 @@ permalink: /kb/131/Q131677/
 	
 	=============================================================================
 	
+
+{% endraw %}

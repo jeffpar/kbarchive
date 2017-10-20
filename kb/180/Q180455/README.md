@@ -6,6 +6,8 @@ permalink: /kb/180/Q180455/
 
 ## Q180455: BUG: Error 451 &quot;Object not a collection&quot; When Using Left()
 
+{% raw %}
+
 	Article: Q180455
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -102,3 +104,5 @@ permalink: /kb/180/Q180455/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/304/Q304152/
 
 ## Q304152: MS Reader: Message Prompting You to Uninstall Earlier Version
 
+{% raw %}
+
 	Article: Q304152
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -63,3 +65,5 @@ permalink: /kb/304/Q304152/
 	
 	=============================================================================
 	
+
+{% endraw %}

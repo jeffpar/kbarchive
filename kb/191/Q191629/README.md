@@ -6,6 +6,8 @@ permalink: /kb/191/Q191629/
 
 ## Q191629: HOWTO: Create an MTS Component that Works with FoxIsapi
 
+{% raw %}
+
 	Article: Q191629
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -77,3 +79,5 @@ permalink: /kb/191/Q191629/
 	
 	=============================================================================
 	
+
+{% endraw %}

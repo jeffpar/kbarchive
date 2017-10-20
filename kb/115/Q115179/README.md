@@ -6,6 +6,8 @@ permalink: /kb/115/Q115179/
 
 ## Q115179: Avoid Running Software Carousel Task Swapper and Setup/Defrag
 
+{% raw %}
+
 	Article: Q115179
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -40,3 +42,5 @@ permalink: /kb/115/Q115179/
 	
 	=============================================================================
 	
+
+{% endraw %}

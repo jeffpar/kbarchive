@@ -6,6 +6,8 @@ permalink: /kb/237/Q237955/
 
 ## Q237955: STOP 0x0000001e in Win32k.sys
 
+{% raw %}
+
 	Article: Q237955
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/237/Q237955/
 	
 	=============================================================================
 	
+
+{% endraw %}

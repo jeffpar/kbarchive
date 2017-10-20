@@ -6,6 +6,8 @@ permalink: /kb/230/Q230335/
 
 ## Q230335: Date May Be Displayed Improperly Using Configuration Back-Up
 
+{% raw %}
+
 	Article: Q230335
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/230/Q230335/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85512/
 
 ## Q85512: BUG: CodeView Executes Entire Single Statement Loop
 
+{% raw %}
+
 	Article: Q85512
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
@@ -163,3 +165,5 @@ permalink: /kb/085/Q85512/
 	
 	=============================================================================
 	
+
+{% endraw %}

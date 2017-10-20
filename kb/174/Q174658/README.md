@@ -6,6 +6,8 @@ permalink: /kb/174/Q174658/
 
 ## Q174658: XL: &quot;Merge Handler&quot; Error Message Dragging Files into Briefcase
 
+{% raw %}
+
 	Article: Q174658
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2000
@@ -155,3 +157,5 @@ permalink: /kb/174/Q174658/
 	
 	=============================================================================
 	
+
+{% endraw %}

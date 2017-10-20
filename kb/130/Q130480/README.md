@@ -6,6 +6,8 @@ permalink: /kb/130/Q130480/
 
 ## Q130480: GSNW Share Names Displayed as DELETED with RAS Server Running
 
+{% raw %}
+
 	Article: Q130480
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -47,3 +49,5 @@ permalink: /kb/130/Q130480/
 	
 	=============================================================================
 	
+
+{% endraw %}

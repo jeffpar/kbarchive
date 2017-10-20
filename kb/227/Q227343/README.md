@@ -6,6 +6,8 @@ permalink: /kb/227/Q227343/
 
 ## Q227343: Connection Manager Stops Responding When Canceling VPN Dialing
 
+{% raw %}
+
 	Article: Q227343
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/227/Q227343/
 	
 	=============================================================================
 	
+
+{% endraw %}

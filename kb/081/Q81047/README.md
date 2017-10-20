@@ -6,6 +6,8 @@ permalink: /kb/081/Q81047/
 
 ## Q81047: INFO: Microsoft Drag-Drop Server Strategy
 
+{% raw %}
+
 	Article: Q81047
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/081/Q81047/
 	
 	=============================================================================
 	
+
+{% endraw %}

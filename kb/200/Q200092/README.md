@@ -6,6 +6,8 @@ permalink: /kb/200/Q200092/
 
 ## Q200092: XIMS: Internet Mail Service Fails to Start on DEC Alpha, 4087
 
+{% raw %}
+
 	Article: Q200092
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -79,3 +81,5 @@ permalink: /kb/200/Q200092/
 	
 	=============================================================================
 	
+
+{% endraw %}

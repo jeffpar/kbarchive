@@ -6,6 +6,8 @@ permalink: /kb/143/Q143207/
 
 ## Q143207: PRB: Common Problems When Using STL with STD Namespace
 
+{% raw %}
+
 	Article: Q143207
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00
@@ -155,3 +157,5 @@ permalink: /kb/143/Q143207/
 	
 	=============================================================================
 	
+
+{% endraw %}

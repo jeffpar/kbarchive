@@ -6,6 +6,8 @@ permalink: /kb/179/Q179065/
 
 ## Q179065: XADM: Changes to Primary Windows NT Account Do Not Take Effect
 
+{% raw %}
+
 	Article: Q179065
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -99,3 +101,5 @@ permalink: /kb/179/Q179065/
 	
 	=============================================================================
 	
+
+{% endraw %}

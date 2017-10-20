@@ -6,6 +6,8 @@ permalink: /kb/092/Q92717/
 
 ## Q92717: WFWG: Windows for Workgroups 3.1 Hardware Compatibility List
 
+{% raw %}
+
 	Article: Q92717
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -495,3 +497,5 @@ permalink: /kb/092/Q92717/
 	
 	=============================================================================
 	
+
+{% endraw %}

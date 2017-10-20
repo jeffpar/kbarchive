@@ -6,6 +6,8 @@ permalink: /kb/246/Q246866/
 
 ## Q246866: XCLN: Resource Calendars Display Incorrect Free and Busy Times
 
+{% raw %}
+
 	Article: Q246866
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,8.03,8.04
@@ -82,3 +84,5 @@ permalink: /kb/246/Q246866/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152029/
 
 ## Q152029: HOWTO: Prevent Creation of Initial Macintosh Document
 
+{% raw %}
+
 	Article: Q152029
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:2.0,4.0
@@ -105,3 +107,5 @@ permalink: /kb/152/Q152029/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/210/Q210167/
 
 ## Q210167: INFO: Customizing Dynamic Collections
 
+{% raw %}
+
 	Article: Q210167
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -118,3 +120,5 @@ permalink: /kb/210/Q210167/
 	
 	=============================================================================
 	
+
+{% endraw %}

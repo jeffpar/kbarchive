@@ -6,6 +6,8 @@ permalink: /kb/199/Q199664/
 
 ## Q199664: SMSINST: Cannot Remove More Than Two Sections in .ini File
 
+{% raw %}
+
 	Article: Q199664
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0
@@ -57,3 +59,5 @@ permalink: /kb/199/Q199664/
 	
 	=============================================================================
 	
+
+{% endraw %}

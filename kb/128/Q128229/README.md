@@ -6,6 +6,8 @@ permalink: /kb/128/Q128229/
 
 ## Q128229: Using the ADDLABEL.APP Sample App in Visual FoxPro
 
+{% raw %}
+
 	Article: Q128229
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/128/Q128229/
 	
 	=============================================================================
 	
+
+{% endraw %}

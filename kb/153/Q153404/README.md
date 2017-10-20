@@ -6,6 +6,8 @@ permalink: /kb/153/Q153404/
 
 ## Q153404: XCLN: How to Allow Others User Access to Your Inbox
 
+{% raw %}
+
 	Article: Q153404
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -87,3 +89,5 @@ permalink: /kb/153/Q153404/
 	
 	=============================================================================
 	
+
+{% endraw %}

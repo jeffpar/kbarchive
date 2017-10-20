@@ -6,6 +6,8 @@ permalink: /kb/161/Q161631/
 
 ## Q161631: WD97: How to Reset Word 97 Most Recently Used (MRU) Lists
 
+{% raw %}
+
 	Article: Q161631
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -297,3 +299,5 @@ permalink: /kb/161/Q161631/
 	
 	=============================================================================
 	
+
+{% endraw %}

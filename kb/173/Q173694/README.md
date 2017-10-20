@@ -6,6 +6,8 @@ permalink: /kb/173/Q173694/
 
 ## Q173694: Err Msg: ERROR: Setup Was Unable to Install the Boot Loader
 
+{% raw %}
+
 	Article: Q173694
 	Product(s): Microsoft Windows NT
 	Version(s): 2,2.1,4.0
@@ -86,3 +88,5 @@ permalink: /kb/173/Q173694/
 	
 	=============================================================================
 	
+
+{% endraw %}

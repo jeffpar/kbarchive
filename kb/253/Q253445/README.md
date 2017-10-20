@@ -6,6 +6,8 @@ permalink: /kb/253/Q253445/
 
 ## Q253445: System Process Hangs Windows NT with Novell Client 4.6
 
+{% raw %}
+
 	Article: Q253445
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/253/Q253445/
 	
 	=============================================================================
 	
+
+{% endraw %}

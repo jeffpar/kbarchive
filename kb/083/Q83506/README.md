@@ -6,6 +6,8 @@ permalink: /kb/083/Q83506/
 
 ## Q83506: Productivity Pack Version 3.1 Minimized Icon Won't Move
 
+{% raw %}
+
 	Article: Q83506
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/083/Q83506/
 	
 	=============================================================================
 	
+
+{% endraw %}

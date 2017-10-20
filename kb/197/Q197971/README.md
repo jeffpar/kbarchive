@@ -6,6 +6,8 @@ permalink: /kb/197/Q197971/
 
 ## Q197971: XADM: The Exchange Server Tmp.edb File
 
+{% raw %}
+
 	Article: Q197971
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -53,3 +55,5 @@ permalink: /kb/197/Q197971/
 	
 	=============================================================================
 	
+
+{% endraw %}

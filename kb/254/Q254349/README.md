@@ -6,6 +6,8 @@ permalink: /kb/254/Q254349/
 
 ## Q254349: XADM: Rehoming Public Folders Adds Number to End of SMTP Address
 
+{% raw %}
+
 	Article: Q254349
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/254/Q254349/
 	
 	=============================================================================
 	
+
+{% endraw %}

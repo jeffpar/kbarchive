@@ -6,6 +6,8 @@ permalink: /kb/126/Q126846/
 
 ## Q126846: Golf 2.0: Some Links Courses Not Recognized
 
+{% raw %}
+
 	Article: Q126846
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -65,3 +67,5 @@ permalink: /kb/126/Q126846/
 	
 	=============================================================================
 	
+
+{% endraw %}

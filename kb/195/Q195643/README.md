@@ -6,6 +6,8 @@ permalink: /kb/195/Q195643/
 
 ## Q195643: How to Configure Windows NT for LPR Printing
 
+{% raw %}
+
 	Article: Q195643
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -107,3 +109,5 @@ permalink: /kb/195/Q195643/
 	
 	=============================================================================
 	
+
+{% endraw %}

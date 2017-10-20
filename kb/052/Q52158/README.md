@@ -6,6 +6,8 @@ permalink: /kb/052/Q52158/
 
 ## Q52158: Mac Wkst: Description of the &quot;Word-Mail #X&quot; File
 
+{% raw %}
+
 	Article: Q52158
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -40,3 +42,5 @@ permalink: /kb/052/Q52158/
 	
 	=============================================================================
 	
+
+{% endraw %}

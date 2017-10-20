@@ -6,6 +6,8 @@ permalink: /kb/120/Q120696/
 
 ## Q120696: SNA Server 2.0 Allows Only 99 LU Pools
 
+{% raw %}
+
 	Article: Q120696
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0
@@ -51,3 +53,5 @@ permalink: /kb/120/Q120696/
 	
 	=============================================================================
 	
+
+{% endraw %}

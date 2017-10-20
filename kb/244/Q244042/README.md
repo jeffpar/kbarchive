@@ -6,6 +6,8 @@ permalink: /kb/244/Q244042/
 
 ## Q244042: XADM: Propagating Permissions to All Public Folder Subfolders
 
+{% raw %}
+
 	Article: Q244042
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/244/Q244042/
 	
 	=============================================================================
 	
+
+{% endraw %}

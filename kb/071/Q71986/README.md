@@ -6,6 +6,8 @@ permalink: /kb/071/Q71986/
 
 ## Q71986: MS-DOS 5.0 Internal and External Commands
 
+{% raw %}
+
 	Article: Q71986
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -123,3 +125,5 @@ permalink: /kb/071/Q71986/
 	
 	=============================================================================
 	
+
+{% endraw %}

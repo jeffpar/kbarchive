@@ -6,6 +6,8 @@ permalink: /kb/160/Q160178/
 
 ## Q160178: XADM: Exchange Information Store Performance Monitor Counters
 
+{% raw %}
+
 	Article: Q160178
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -180,3 +182,5 @@ permalink: /kb/160/Q160178/
 	
 	=============================================================================
 	
+
+{% endraw %}

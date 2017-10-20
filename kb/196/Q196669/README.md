@@ -6,6 +6,8 @@ permalink: /kb/196/Q196669/
 
 ## Q196669: XCON: MTA Queue Length Can Show More Messages than in Queue
 
+{% raw %}
+
 	Article: Q196669
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -88,3 +90,5 @@ permalink: /kb/196/Q196669/
 	
 	=============================================================================
 	
+
+{% endraw %}

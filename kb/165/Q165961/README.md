@@ -6,6 +6,8 @@ permalink: /kb/165/Q165961/
 
 ## Q165961: XCLN: How to Fully Remove the Windows 95 and Windows NT Clients
 
+{% raw %}
+
 	Article: Q165961
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0;Win95:4.0
@@ -157,3 +159,5 @@ permalink: /kb/165/Q165961/
 	
 	=============================================================================
 	
+
+{% endraw %}

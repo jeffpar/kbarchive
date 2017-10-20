@@ -6,6 +6,8 @@ permalink: /kb/169/Q169548/
 
 ## Q169548: Using Proxy Server with Routing and Remote Access
 
+{% raw %}
+
 	Article: Q169548
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.0
@@ -141,3 +143,5 @@ permalink: /kb/169/Q169548/
 	
 	=============================================================================
 	
+
+{% endraw %}

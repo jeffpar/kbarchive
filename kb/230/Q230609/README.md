@@ -6,6 +6,8 @@ permalink: /kb/230/Q230609/
 
 ## Q230609: XADM: How to Post to Public Folders Using Fax Senior Gateway
 
+{% raw %}
+
 	Article: Q230609
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/230/Q230609/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156191/
 
 ## Q156191: PRB: SQL Server 6.5 SP1 on Windows 95 Gives Cryptic Message
 
+{% raw %}
+
 	Article: Q156191
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2,5.0
@@ -51,3 +53,5 @@ permalink: /kb/156/Q156191/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196852/
 
 ## Q196852: XCON: MTA Stops with Database Server Internal Processing Error
 
+{% raw %}
+
 	Article: Q196852
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -141,3 +143,5 @@ permalink: /kb/196/Q196852/
 	
 	=============================================================================
 	
+
+{% endraw %}

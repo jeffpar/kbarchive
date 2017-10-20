@@ -6,6 +6,8 @@ permalink: /kb/177/Q177462/
 
 ## Q177462: INFO: Troubleshooting Cmdlines.txt During an Unattended Setup
 
+{% raw %}
+
 	Article: Q177462
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -154,3 +156,5 @@ permalink: /kb/177/Q177462/
 	
 	=============================================================================
 	
+
+{% endraw %}

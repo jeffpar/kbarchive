@@ -6,6 +6,8 @@ permalink: /kb/162/Q162683/
 
 ## Q162683: BUG: BROWSE FORMAT May Cause Blank Browse Window
 
+{% raw %}
+
 	Article: Q162683
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -71,3 +73,5 @@ permalink: /kb/162/Q162683/
 	
 	=============================================================================
 	
+
+{% endraw %}

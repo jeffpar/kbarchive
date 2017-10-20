@@ -6,6 +6,8 @@ permalink: /kb/284/Q284284/
 
 ## Q284284: Crimson Skies Err Msg: Error Starting Program the Msvp60.dll...
 
+{% raw %}
+
 	Article: Q284284
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/284/Q284284/
 	
 	=============================================================================
 	
+
+{% endraw %}

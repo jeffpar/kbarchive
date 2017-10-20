@@ -6,6 +6,8 @@ permalink: /kb/173/Q173451/
 
 ## Q173451: XWEB: Err Msg: Failed to get Inbox, Using OWA
 
+{% raw %}
+
 	Article: Q173451
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/173/Q173451/
 	
 	=============================================================================
 	
+
+{% endraw %}

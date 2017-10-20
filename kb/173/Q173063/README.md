@@ -6,6 +6,8 @@ permalink: /kb/173/Q173063/
 
 ## Q173063: Using File Open Command Causes Applications to Terminate
 
+{% raw %}
+
 	Article: Q173063
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/173/Q173063/
 	
 	=============================================================================
 	
+
+{% endraw %}

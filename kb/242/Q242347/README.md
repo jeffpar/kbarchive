@@ -6,6 +6,8 @@ permalink: /kb/242/Q242347/
 
 ## Q242347: PRB: Error Message &quot;Invalid Procedure Call or Argument&quot;
 
+{% raw %}
+
 	Article: Q242347
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/242/Q242347/
 	
 	=============================================================================
 	
+
+{% endraw %}

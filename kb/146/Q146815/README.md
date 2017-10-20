@@ -6,6 +6,8 @@ permalink: /kb/146/Q146815/
 
 ## Q146815: Using Internet Information Server with Windows NT Authentication
 
+{% raw %}
+
 	Article: Q146815
 	Product(s): Internet Information Server
 	Version(s): 3.51
@@ -65,3 +67,5 @@ permalink: /kb/146/Q146815/
 	
 	=============================================================================
 	
+
+{% endraw %}

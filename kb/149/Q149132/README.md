@@ -6,6 +6,8 @@ permalink: /kb/149/Q149132/
 
 ## Q149132: BUG: Signed 4-byte Integer Overlow Not Caught by the Compiler
 
+{% raw %}
+
 	Article: Q149132
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149132/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120734/
 
 ## Q120734: Microsoft Windows NT Internet Servers
 
+{% raw %}
+
 	Article: Q120734
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/120/Q120734/
 	
 	=============================================================================
 	
+
+{% endraw %}

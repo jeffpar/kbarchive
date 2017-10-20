@@ -6,6 +6,8 @@ permalink: /kb/296/Q296793/
 
 ## Q296793: MCSE Training Kit Microsoft SQL Server 2000 System Administratio
 
+{% raw %}
+
 	Article: Q296793
 	Product(s): Microsoft Press
 	Version(s): 
@@ -170,3 +172,5 @@ permalink: /kb/296/Q296793/
 	
 	=============================================================================
 	
+
+{% endraw %}

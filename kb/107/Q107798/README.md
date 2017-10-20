@@ -6,6 +6,8 @@ permalink: /kb/107/Q107798/
 
 ## Q107798: WFWG 3.11 Err Msg: Executable Not Found
 
+{% raw %}
+
 	Article: Q107798
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/107/Q107798/
 	
 	=============================================================================
 	
+
+{% endraw %}

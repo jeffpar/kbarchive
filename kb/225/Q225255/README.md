@@ -6,6 +6,8 @@ permalink: /kb/225/Q225255/
 
 ## Q225255: Some Share Names May Not Work Correctly
 
+{% raw %}
+
 	Article: Q225255
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/225/Q225255/
 	
 	=============================================================================
 	
+
+{% endraw %}

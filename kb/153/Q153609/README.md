@@ -6,6 +6,8 @@ permalink: /kb/153/Q153609/
 
 ## Q153609: Alerter Aborts After Deadlocking with Another Process
 
+{% raw %}
+
 	Article: Q153609
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153609/
 	
 	=============================================================================
 	
+
+{% endraw %}

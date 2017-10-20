@@ -6,6 +6,8 @@ permalink: /kb/140/Q140149/
 
 ## Q140149: SNA 802.2 Connection Icon Indicates Incorrect Network Type
 
+{% raw %}
+
 	Article: Q140149
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0
@@ -182,3 +184,5 @@ permalink: /kb/140/Q140149/
 	
 	=============================================================================
 	
+
+{% endraw %}

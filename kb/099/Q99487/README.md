@@ -6,6 +6,8 @@ permalink: /kb/099/Q99487/
 
 ## Q99487: Argument Orders for CDECL and PASCAL Functions in MASM
 
+{% raw %}
+
 	Article: Q99487
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/099/Q99487/
 	
 	=============================================================================
 	
+
+{% endraw %}

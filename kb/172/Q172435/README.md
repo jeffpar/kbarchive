@@ -6,6 +6,8 @@ permalink: /kb/172/Q172435/
 
 ## Q172435: Err Msg: Winhlp32 Caused an Invalid Page Fault in Module...
 
+{% raw %}
+
 	Article: Q172435
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/172/Q172435/
 	
 	=============================================================================
 	
+
+{% endraw %}

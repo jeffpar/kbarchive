@@ -6,6 +6,8 @@ permalink: /kb/126/Q126640/
 
 ## Q126640: Setting Up a Backup Domain Controller Stated Incorrectly
 
+{% raw %}
+
 	Article: Q126640
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/126/Q126640/
 	
 	=============================================================================
 	
+
+{% endraw %}

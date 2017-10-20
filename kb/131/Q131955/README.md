@@ -6,6 +6,8 @@ permalink: /kb/131/Q131955/
 
 ## Q131955: BUG: Cannot Set Project Level Rights with SourceSafe's SSADMIN
 
+{% raw %}
+
 	Article: Q131955
 	Product(s): Microsoft SourceSafe
 	Version(s): MACINTOSH:3.04,3.1
@@ -74,3 +76,5 @@ permalink: /kb/131/Q131955/
 	
 	=============================================================================
 	
+
+{% endraw %}

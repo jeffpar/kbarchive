@@ -6,6 +6,8 @@ permalink: /kb/261/Q261075/
 
 ## Q261075: Motocross Madness 2: Startup Screen Is Not Displayed Properly
 
+{% raw %}
+
 	Article: Q261075
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -78,3 +80,5 @@ permalink: /kb/261/Q261075/
 	
 	=============================================================================
 	
+
+{% endraw %}

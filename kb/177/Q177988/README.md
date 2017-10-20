@@ -6,6 +6,8 @@ permalink: /kb/177/Q177988/
 
 ## Q177988: XADM: BCC Line Is Viewable from Recipient's Mailbox
 
+{% raw %}
+
 	Article: Q177988
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -51,3 +53,5 @@ permalink: /kb/177/Q177988/
 	
 	=============================================================================
 	
+
+{% endraw %}

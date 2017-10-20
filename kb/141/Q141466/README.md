@@ -6,6 +6,8 @@ permalink: /kb/141/Q141466/
 
 ## Q141466: DHCP Client Reserved Name and Comment Changed by Client
 
+{% raw %}
+
 	Article: Q141466
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0; :
@@ -57,3 +59,5 @@ permalink: /kb/141/Q141466/
 	
 	=============================================================================
 	
+
+{% endraw %}

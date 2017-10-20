@@ -6,6 +6,8 @@ permalink: /kb/326/Q326817/
 
 ## Q326817: FIX: &quot;Reserved Error (-7743)&quot; Error Message with ODBC for DB2
 
+{% raw %}
+
 	Article: Q326817
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/326/Q326817/
 	
 	=============================================================================
 	
+
+{% endraw %}

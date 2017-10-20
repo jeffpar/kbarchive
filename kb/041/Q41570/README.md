@@ -6,6 +6,8 @@ permalink: /kb/041/Q41570/
 
 ## Q41570: QuickC 2.00 README.DOC: Pragmas
 
+{% raw %}
+
 	Article: Q41570
 	Product(s): See article
 	Version(s): 2.00
@@ -23,3 +25,5 @@ permalink: /kb/041/Q41570/
 	-- "#pragma skip" and "#pragma title" -- are not supported. The QuickC
 	pragmas (message, pack, check_stack, and check_pointer) are documented
 	in on-line help.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221637/
 
 ## Q221637: FIX: Form Wizard Error with Maximum Design Area Set to (None)
 
+{% raw %}
+
 	Article: Q221637
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -72,3 +74,5 @@ permalink: /kb/221/Q221637/
 	
 	=============================================================================
 	
+
+{% endraw %}

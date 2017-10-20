@@ -6,6 +6,8 @@ permalink: /kb/077/Q77403/
 
 ## Q77403: MsgMode.exe Uses Message Mode Services &amp; VMM w/VxD
 
+{% raw %}
+
 	Article: Q77403
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -65,3 +67,5 @@ permalink: /kb/077/Q77403/
 	
 	=============================================================================
 	
+
+{% endraw %}

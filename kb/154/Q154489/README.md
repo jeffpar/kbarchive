@@ -6,6 +6,8 @@ permalink: /kb/154/Q154489/
 
 ## Q154489: Inside OLE (2ed) VC++ 4.x Update Files
 
+{% raw %}
+
 	Article: Q154489
 	Product(s): Microsoft Press
 	Version(s): 
@@ -137,3 +139,5 @@ permalink: /kb/154/Q154489/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157905/
 
 ## Q157905: INSIDE OLE 2ND EDITION Corrections and Comments
 
+{% raw %}
+
 	Article: Q157905
 	Product(s): Microsoft Press
 	Version(s): 
@@ -144,3 +146,5 @@ permalink: /kb/157/Q157905/
 	
 	=============================================================================
 	
+
+{% endraw %}

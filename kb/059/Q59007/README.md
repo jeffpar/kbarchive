@@ -6,6 +6,8 @@ permalink: /kb/059/Q59007/
 
 ## Q59007: How BASIC Can Display Multiple Text Colors at Once on SCREEN 1
 
+{% raw %}
+
 	Article: Q59007
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -96,3 +98,5 @@ permalink: /kb/059/Q59007/
 	    LOCATE row, col      'for every character written to the screen
 	  NEXT
 	END SUB
+
+{% endraw %}

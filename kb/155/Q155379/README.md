@@ -6,6 +6,8 @@ permalink: /kb/155/Q155379/
 
 ## Q155379: XADM: Unable to Match Custom Recipient Due to RFC1327 Conversion
 
+{% raw %}
+
 	Article: Q155379
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/155/Q155379/
 	
 	=============================================================================
 	
+
+{% endraw %}

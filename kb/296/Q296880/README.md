@@ -6,6 +6,8 @@ permalink: /kb/296/Q296880/
 
 ## Q296880: XFOR: Messages Sent by Lotus Notes to Exchange Appear in Badmail
 
+{% raw %}
+
 	Article: Q296880
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -133,3 +135,5 @@ permalink: /kb/296/Q296880/
 	
 	=============================================================================
 	
+
+{% endraw %}

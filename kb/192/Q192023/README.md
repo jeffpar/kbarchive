@@ -6,6 +6,8 @@ permalink: /kb/192/Q192023/
 
 ## Q192023: XFOR: Generating Unique SMTP Address During Dirsync
 
+{% raw %}
+
 	Article: Q192023
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -137,3 +139,5 @@ permalink: /kb/192/Q192023/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163525/
 
 ## Q163525: Delay When Saving Word File to Windows NT 4.0 Server
 
+{% raw %}
+
 	Article: Q163525
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.51,4.0
@@ -108,3 +110,5 @@ permalink: /kb/163/Q163525/
 	
 	=============================================================================
 	
+
+{% endraw %}

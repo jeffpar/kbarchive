@@ -6,6 +6,8 @@ permalink: /kb/134/Q134951/
 
 ## Q134951: X400: Public X.25 Mail Services Can Route on PRMD
 
+{% raw %}
+
 	Article: Q134951
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -67,3 +69,5 @@ permalink: /kb/134/Q134951/
 	
 	=============================================================================
 	
+
+{% endraw %}

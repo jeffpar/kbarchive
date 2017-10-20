@@ -6,6 +6,8 @@ permalink: /kb/196/Q196941/
 
 ## Q196941: WD97: Changing the Source of a Link May Resize the Object
 
+{% raw %}
+
 	Article: Q196941
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/196/Q196941/
 	
 	=============================================================================
 	
+
+{% endraw %}

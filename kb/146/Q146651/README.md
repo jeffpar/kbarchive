@@ -6,6 +6,8 @@ permalink: /kb/146/Q146651/
 
 ## Q146651: HOWTO: Call SQL Stored Procedures from Visual Basic
 
+{% raw %}
+
 	Article: Q146651
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/146/Q146651/
 	
 	=============================================================================
 	
+
+{% endraw %}

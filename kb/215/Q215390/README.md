@@ -6,6 +6,8 @@ permalink: /kb/215/Q215390/
 
 ## Q215390: BUG: Grid: It Takes Two Clicks to Move Focus Away from the Grid
 
+{% raw %}
+
 	Article: Q215390
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0
@@ -127,3 +129,5 @@ permalink: /kb/215/Q215390/
 	
 	=============================================================================
 	
+
+{% endraw %}

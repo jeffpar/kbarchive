@@ -6,6 +6,8 @@ permalink: /kb/042/Q42027/
 
 ## Q42027: Ambiguous Switch /PAC with QuickC 2.00 Linker
 
+{% raw %}
+
 	Article: Q42027
 	Product(s): See article
 	Version(s): 4.06
@@ -30,3 +32,5 @@ permalink: /kb/042/Q42027/
 	The shortest version of /PACKCODE that can be used is /PACKC.
 	Similarly, /PACKD is the shortest version of /PACKDATA that can be
 	used.
+
+{% endraw %}

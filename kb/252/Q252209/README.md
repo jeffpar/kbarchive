@@ -6,6 +6,8 @@ permalink: /kb/252/Q252209/
 
 ## Q252209: XADM: Troubleshooting Link Monitor When Red Arrow Is Displayed
 
+{% raw %}
+
 	Article: Q252209
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -119,3 +121,5 @@ permalink: /kb/252/Q252209/
 	
 	=============================================================================
 	
+
+{% endraw %}

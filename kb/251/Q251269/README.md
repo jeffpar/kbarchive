@@ -6,6 +6,8 @@ permalink: /kb/251/Q251269/
 
 ## Q251269: XCLN: Cannot Bcc Recipients Using Rules Wizard
 
+{% raw %}
+
 	Article: Q251269
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -50,3 +52,5 @@ permalink: /kb/251/Q251269/
 	
 	=============================================================================
 	
+
+{% endraw %}

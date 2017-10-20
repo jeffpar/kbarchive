@@ -6,6 +6,8 @@ permalink: /kb/192/Q192671/
 
 ## Q192671: SMS: Remote Control Blue Screens with Dell GX1 and ATI Rage 3D
 
+{% raw %}
+
 	Article: Q192671
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -83,3 +85,5 @@ permalink: /kb/192/Q192671/
 	
 	=============================================================================
 	
+
+{% endraw %}

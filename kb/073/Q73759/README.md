@@ -6,6 +6,8 @@ permalink: /kb/073/Q73759/
 
 ## Q73759: Mac Hyp: Getting the Zone of the Current Server
 
+{% raw %}
+
 	Article: Q73759
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0
@@ -48,3 +50,5 @@ permalink: /kb/073/Q73759/
 	
 	=============================================================================
 	
+
+{% endraw %}

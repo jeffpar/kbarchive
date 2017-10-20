@@ -6,6 +6,8 @@ permalink: /kb/149/Q149008/
 
 ## Q149008: Pregnancy: Unable to Print or Copy Help Contents
 
+{% raw %}
+
 	Article: Q149008
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/149/Q149008/
 	
 	=============================================================================
 	
+
+{% endraw %}

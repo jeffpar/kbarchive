@@ -6,6 +6,8 @@ permalink: /kb/150/Q150576/
 
 ## Q150576: FIX: C2682 Using dynamic_cast to Cast to a Const Pointer Type
 
+{% raw %}
+
 	Article: Q150576
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -94,3 +96,5 @@ permalink: /kb/150/Q150576/
 	
 	=============================================================================
 	
+
+{% endraw %}

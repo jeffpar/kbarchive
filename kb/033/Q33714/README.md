@@ -6,6 +6,8 @@ permalink: /kb/033/Q33714/
 
 ## Q33714: Passing Strings to Assembler Routines Written for GW-BASIC
 
+{% raw %}
+
 	Article: Q33714
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -84,3 +86,5 @@ permalink: /kb/033/Q33714/
 	simulate a GW-BASIC string descriptor, the assembly routine thinks it
 	is receiving a GW-BASIC string. It does not matter that the descriptor
 	and string data are contiguous in memory.
+
+{% endraw %}

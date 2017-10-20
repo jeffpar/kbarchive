@@ -6,6 +6,8 @@ permalink: /kb/235/Q235724/
 
 ## Q235724: SMSINST: Working with Complex Expressions and Operators
 
+{% raw %}
+
 	Article: Q235724
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -56,3 +58,5 @@ permalink: /kb/235/Q235724/
 	
 	=============================================================================
 	
+
+{% endraw %}

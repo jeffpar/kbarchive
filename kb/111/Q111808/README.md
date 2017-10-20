@@ -6,6 +6,8 @@ permalink: /kb/111/Q111808/
 
 ## Q111808: COMMAND+&lt;Number&gt; Combinations in FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q111808
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -45,3 +47,5 @@ permalink: /kb/111/Q111808/
 	
 	=============================================================================
 	
+
+{% endraw %}

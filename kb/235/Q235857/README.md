@@ -6,6 +6,8 @@ permalink: /kb/235/Q235857/
 
 ## Q235857: The First TN3270 Client on an OnDemand Connection Fails
 
+{% raw %}
+
 	Article: Q235857
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -80,3 +82,5 @@ permalink: /kb/235/Q235857/
 	
 	=============================================================================
 	
+
+{% endraw %}

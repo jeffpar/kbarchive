@@ -6,6 +6,8 @@ permalink: /kb/045/Q45761/
 
 ## Q45761: How to Reboot Your Machine within a QuickC 2.00 Application
 
+{% raw %}
+
 	Article: Q45761
 	Product(s): See article
 	Version(s): 2.00
@@ -40,3 +42,5 @@ permalink: /kb/045/Q45761/
 	      jmp dword ptr ds:reboot_vector   ; jump to the bios routine
 	      }
 	}
+
+{% endraw %}

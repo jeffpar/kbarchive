@@ -6,6 +6,8 @@ permalink: /kb/103/Q103943/
 
 ## Q103943: Mac Gty: Details Unavailable for Gateway Users
 
+{% raw %}
+
 	Article: Q103943
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1,3.1a,3.1c,3.1d
@@ -60,3 +62,5 @@ permalink: /kb/103/Q103943/
 	
 	=============================================================================
 	
+
+{% endraw %}

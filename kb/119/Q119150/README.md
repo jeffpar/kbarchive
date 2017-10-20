@@ -6,6 +6,8 @@ permalink: /kb/119/Q119150/
 
 ## Q119150: FIX: Memory Leak with ODBC Driver Manager During Connection
 
+{% raw %}
+
 	Article: Q119150
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -91,3 +93,5 @@ permalink: /kb/119/Q119150/
 	
 	=============================================================================
 	
+
+{% endraw %}

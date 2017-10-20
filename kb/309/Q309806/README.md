@@ -6,6 +6,8 @@ permalink: /kb/309/Q309806/
 
 ## Q309806: MS Reader v.2.0: Title Bar Buttons Move or Are Missing
 
+{% raw %}
+
 	Article: Q309806
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/309/Q309806/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41101/
 
 ## Q41101: CodeView and Video Pages
 
+{% raw %}
+
 	Article: Q41101
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
@@ -40,3 +42,5 @@ permalink: /kb/041/Q41101/
 	
 	=============================================================================
 	
+
+{% endraw %}

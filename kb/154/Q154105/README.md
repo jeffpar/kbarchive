@@ -6,6 +6,8 @@ permalink: /kb/154/Q154105/
 
 ## Q154105: PRB: C2664 Compiler Error in Afxtempl.h Using VC++ 4.2
 
+{% raw %}
+
 	Article: Q154105
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -133,3 +135,5 @@ permalink: /kb/154/Q154105/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108594/
 
 ## Q108594: Flight Simulator 5.0: Maximums for Weather Areas
 
+{% raw %}
+
 	Article: Q108594
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -51,3 +53,5 @@ permalink: /kb/108/Q108594/
 	
 	=============================================================================
 	
+
+{% endraw %}

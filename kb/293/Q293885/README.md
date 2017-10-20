@@ -6,6 +6,8 @@ permalink: /kb/293/Q293885/
 
 ## Q293885: How to Search a WebDAV Directory with XML
 
+{% raw %}
+
 	Article: Q293885
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -80,3 +82,5 @@ permalink: /kb/293/Q293885/
 	
 	=============================================================================
 	
+
+{% endraw %}

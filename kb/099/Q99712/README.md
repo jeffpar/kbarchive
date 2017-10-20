@@ -6,6 +6,8 @@ permalink: /kb/099/Q99712/
 
 ## Q99712: Err Msg: Cannot Find UNIDRV.DLL When Printing to DeskJet 500C
 
+{% raw %}
+
 	Article: Q99712
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/099/Q99712/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69244/
 
 ## Q69244: Calculator Err Msg: List of Error Messages
 
+{% raw %}
+
 	Article: Q69244
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/069/Q69244/
 	
 	=============================================================================
 	
+
+{% endraw %}

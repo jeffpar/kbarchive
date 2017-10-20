@@ -6,6 +6,8 @@ permalink: /kb/148/Q148288/
 
 ## Q148288: XADM: Microsoft Exchange TP4 Transport Stack
 
+{% raw %}
+
 	Article: Q148288
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/148/Q148288/
 	
 	=============================================================================
 	
+
+{% endraw %}

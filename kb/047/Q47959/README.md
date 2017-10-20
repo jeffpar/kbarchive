@@ -6,6 +6,8 @@ permalink: /kb/047/Q47959/
 
 ## Q47959: Description of a .MAP File's &quot;Program Entry Point&quot;
 
+{% raw %}
+
 	Article: Q47959
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -60,3 +62,5 @@ permalink: /kb/047/Q47959/
 	   ---------------------------------------------  ---------
 	   = DOS absolute or OS/2 virtual address of      1236:0e34
 	     the entry point (__astart)
+
+{% endraw %}

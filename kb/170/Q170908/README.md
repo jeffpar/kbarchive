@@ -6,6 +6,8 @@ permalink: /kb/170/Q170908/
 
 ## Q170908: INFO: Key Management Server Functions Not Exposed to Developers
 
+{% raw %}
+
 	Article: Q170908
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -45,3 +47,5 @@ permalink: /kb/170/Q170908/
 	
 	=============================================================================
 	
+
+{% endraw %}

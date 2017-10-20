@@ -6,6 +6,8 @@ permalink: /kb/304/Q304186/
 
 ## Q304186: BETA-INFO: FTP Security Accounts Add/Remove Buttons Unavailable
 
+{% raw %}
+
 	Article: Q304186
 	Product(s): Internet Information Server
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/304/Q304186/
 	
 	=============================================================================
 	
+
+{% endraw %}

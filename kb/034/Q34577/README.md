@@ -6,6 +6,8 @@ permalink: /kb/034/Q34577/
 
 ## Q34577: MASM 5.10 MACRO.DOC: Output
 
+{% raw %}
+
 	Article: Q34577
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -50,3 +52,5 @@ permalink: /kb/034/Q34577/
 	given)
 	Return:         None
 	Registers used: AX and DS
+
+{% endraw %}

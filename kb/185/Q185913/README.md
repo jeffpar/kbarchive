@@ -6,6 +6,8 @@ permalink: /kb/185/Q185913/
 
 ## Q185913: SMS: MIF Attribute Case Change May Cause MIF to Be Rejected
 
+{% raw %}
+
 	Article: Q185913
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185913/
 	
 	=============================================================================
 	
+
+{% endraw %}

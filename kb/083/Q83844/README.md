@@ -6,6 +6,8 @@ permalink: /kb/083/Q83844/
 
 ## Q83844: Incorrect Syntax for MONOUMB2.386 in Windows 3.1 README.WRI
 
+{% raw %}
+
 	Article: Q83844
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/083/Q83844/
 	
 	=============================================================================
 	
+
+{% endraw %}

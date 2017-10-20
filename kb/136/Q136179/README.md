@@ -6,6 +6,8 @@ permalink: /kb/136/Q136179/
 
 ## Q136179: PPT7: You Can Add Only One Textured Background Format at a Time
 
+{% raw %}
+
 	Article: Q136179
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -43,3 +45,5 @@ permalink: /kb/136/Q136179/
 	
 	=============================================================================
 	
+
+{% endraw %}

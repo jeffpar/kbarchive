@@ -6,6 +6,8 @@ permalink: /kb/170/Q170877/
 
 ## Q170877: WD97: Equation Editor Error: Elements That Are Not Available
 
+{% raw %}
+
 	Article: Q170877
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -78,3 +80,5 @@ permalink: /kb/170/Q170877/
 	
 	=============================================================================
 	
+
+{% endraw %}

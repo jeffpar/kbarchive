@@ -6,6 +6,8 @@ permalink: /kb/043/Q43007/
 
 ## Q43007: Reading Extended Keyboard Characters with C
 
+{% raw %}
+
 	Article: Q43007
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -62,3 +64,5 @@ permalink: /kb/043/Q43007/
 	        if ( key == 0x50e0)
 	                printf("down arrow key was pressed\n");
 	}
+
+{% endraw %}

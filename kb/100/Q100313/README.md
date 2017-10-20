@@ -6,6 +6,8 @@ permalink: /kb/100/Q100313/
 
 ## Q100313: Windows for Workgroups &quot;V86ModeLanas&quot; and TCP/IP
 
+{% raw %}
+
 	Article: Q100313
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/100/Q100313/
 	
 	=============================================================================
 	
+
+{% endraw %}

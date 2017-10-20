@@ -6,6 +6,8 @@ permalink: /kb/180/Q180411/
 
 ## Q180411: XADM: Anonymous User Count Not Included in Active User Count
 
+{% raw %}
+
 	Article: Q180411
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/180/Q180411/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96204/
 
 ## Q96204: You have a SCSI Hard Disk Drive and MemMaker Hangs
 
+{% raw %}
+
 	Article: Q96204
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/096/Q96204/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139108/
 
 ## Q139108: FIX: Visual FoxPro Fails If Subclass Name Ends in a Number
 
+{% raw %}
+
 	Article: Q139108
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -65,3 +67,5 @@ permalink: /kb/139/Q139108/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198622/
 
 ## Q198622: XCON: Adjustment of MTA Reliable Transfer Service Values
 
+{% raw %}
+
 	Article: Q198622
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -91,3 +93,5 @@ permalink: /kb/198/Q198622/
 	
 	=============================================================================
 	
+
+{% endraw %}

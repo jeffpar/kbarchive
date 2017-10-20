@@ -6,6 +6,8 @@ permalink: /kb/160/Q160897/
 
 ## Q160897: NWRedir Reports Incorrect Free Space If Limited by Admin
 
+{% raw %}
+
 	Article: Q160897
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/160/Q160897/
 	
 	=============================================================================
 	
+
+{% endraw %}

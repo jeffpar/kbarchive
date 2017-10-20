@@ -6,6 +6,8 @@ permalink: /kb/220/Q220883/
 
 ## Q220883: GetSecurityInfo Fails on SP4 with 87:ERROR_INVALID_PARAMETER
 
+{% raw %}
+
 	Article: Q220883
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/220/Q220883/
 	
 	=============================================================================
 	
+
+{% endraw %}

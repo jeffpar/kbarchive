@@ -6,6 +6,8 @@ permalink: /kb/130/Q130137/
 
 ## Q130137: HOWTO: How to Use ODBC to Run SQL SELECT on Microsoft Excel Data
 
+{% raw %}
+
 	Article: Q130137
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,6.0
@@ -76,3 +78,5 @@ permalink: /kb/130/Q130137/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/261/Q261275/
 
 ## Q261275: XADM: Forwarding Encrypted Mail
 
+{% raw %}
+
 	Article: Q261275
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/261/Q261275/
 	
 	=============================================================================
 	
+
+{% endraw %}

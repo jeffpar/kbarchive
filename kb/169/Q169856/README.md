@@ -6,6 +6,8 @@ permalink: /kb/169/Q169856/
 
 ## Q169856: SNA Print Service Leak When All Print Sessions Are Stopped
 
+{% raw %}
+
 	Article: Q169856
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -64,3 +66,5 @@ permalink: /kb/169/Q169856/
 	
 	=============================================================================
 	
+
+{% endraw %}

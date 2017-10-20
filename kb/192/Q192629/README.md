@@ -6,6 +6,8 @@ permalink: /kb/192/Q192629/
 
 ## Q192629: FIX: ClassView Cannot Add Member Functions To Template Classes
 
+{% raw %}
+
 	Article: Q192629
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/192/Q192629/
 	
 	=============================================================================
 	
+
+{% endraw %}

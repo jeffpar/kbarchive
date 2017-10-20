@@ -6,6 +6,8 @@ permalink: /kb/178/Q178699/
 
 ## Q178699: XADM: Delegates Unable to View New Messages After Move Mailbox
 
+{% raw %}
+
 	Article: Q178699
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -134,3 +136,5 @@ permalink: /kb/178/Q178699/
 	
 	=============================================================================
 	
+
+{% endraw %}

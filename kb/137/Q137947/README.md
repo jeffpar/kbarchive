@@ -6,6 +6,8 @@ permalink: /kb/137/Q137947/
 
 ## Q137947: FIX: Bitmaps Black or Poor Quality Printed in LaserJet Reports
 
+{% raw %}
+
 	Article: Q137947
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -91,3 +93,5 @@ permalink: /kb/137/Q137947/
 	
 	=============================================================================
 	
+
+{% endraw %}

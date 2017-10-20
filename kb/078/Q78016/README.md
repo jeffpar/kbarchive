@@ -6,6 +6,8 @@ permalink: /kb/078/Q78016/
 
 ## Q78016: No Animation Driver Is Supplied with Multimedia Extensions
 
+{% raw %}
+
 	Article: Q78016
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -40,3 +42,5 @@ permalink: /kb/078/Q78016/
 	
 	=============================================================================
 	
+
+{% endraw %}

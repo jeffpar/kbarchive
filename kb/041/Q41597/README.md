@@ -6,6 +6,8 @@ permalink: /kb/041/Q41597/
 
 ## Q41597: QuickC 2.00 README.DOC: Vector-Mapped Fonts
 
+{% raw %}
+
 	Article: Q41597
 	Product(s): See article
 	Version(s): 2.00
@@ -24,3 +26,5 @@ permalink: /kb/041/Q41597/
 	If a vector-mapped font is selected in graphics mode, any function
 	affecting "_moveto" or "_lineto" will also affect the font
 	("_setlinestyle" and so on) when "_outgtext" is called.
+
+{% endraw %}

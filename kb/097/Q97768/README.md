@@ -6,6 +6,8 @@ permalink: /kb/097/Q97768/
 
 ## Q97768: WFWG: Incorrect AutoStart=&lt;Full-or-Base&gt; Entry in SYSINI.WRI
 
+{% raw %}
+
 	Article: Q97768
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/097/Q97768/
 	
 	=============================================================================
 	
+
+{% endraw %}

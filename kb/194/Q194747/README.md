@@ -6,6 +6,8 @@ permalink: /kb/194/Q194747/
 
 ## Q194747: WD97: Mail Merge Tutorial and Help File Available
 
+{% raw %}
+
 	Article: Q194747
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -155,3 +157,5 @@ permalink: /kb/194/Q194747/
 	
 	=============================================================================
 	
+
+{% endraw %}

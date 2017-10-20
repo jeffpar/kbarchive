@@ -6,6 +6,8 @@ permalink: /kb/190/Q190775/
 
 ## Q190775: INFO: Installation Requirements for Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q190775
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -144,3 +146,5 @@ permalink: /kb/190/Q190775/
 	
 	=============================================================================
 	
+
+{% endraw %}

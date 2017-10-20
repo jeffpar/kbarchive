@@ -6,6 +6,8 @@ permalink: /kb/257/Q257549/
 
 ## Q257549: XADM: Cannot Install InterOrg Directory Synchronization Tool
 
+{% raw %}
+
 	Article: Q257549
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,Part 2
@@ -138,3 +140,5 @@ permalink: /kb/257/Q257549/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103698/
 
 ## Q103698: File Manager Cannot Modify File/Directory Names Containing &quot;?&quot;
 
+{% raw %}
+
 	Article: Q103698
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/103/Q103698/
 	
 	=============================================================================
 	
+
+{% endraw %}

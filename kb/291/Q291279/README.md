@@ -6,6 +6,8 @@ permalink: /kb/291/Q291279/
 
 ## Q291279: No Log File Created When There Is No Activity on a Web Site
 
+{% raw %}
+
 	Article: Q291279
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -45,3 +47,5 @@ permalink: /kb/291/Q291279/
 	
 	=============================================================================
 	
+
+{% endraw %}

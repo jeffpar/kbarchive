@@ -6,6 +6,8 @@ permalink: /kb/166/Q166838/
 
 ## Q166838: System Policies No Longer Applied Using 3rd-Party Client Service
 
+{% raw %}
+
 	Article: Q166838
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/166/Q166838/
 	
 	=============================================================================
 	
+
+{% endraw %}

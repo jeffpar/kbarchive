@@ -6,6 +6,8 @@ permalink: /kb/139/Q139549/
 
 ## Q139549: BUG: Using RUN to Shell to MS-DOS Results in ICE Error
 
+{% raw %}
+
 	Article: Q139549
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -62,3 +64,5 @@ permalink: /kb/139/Q139549/
 	
 	=============================================================================
 	
+
+{% endraw %}

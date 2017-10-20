@@ -6,6 +6,8 @@ permalink: /kb/182/Q182265/
 
 ## Q182265: APPC Display Call Fails With AP_STATE_CHECK (Primary_rc = 0002)
 
+{% raw %}
+
 	Article: Q182265
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -65,3 +67,5 @@ permalink: /kb/182/Q182265/
 	
 	=============================================================================
 	
+
+{% endraw %}

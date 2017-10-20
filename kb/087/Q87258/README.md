@@ -6,6 +6,8 @@ permalink: /kb/087/Q87258/
 
 ## Q87258: Mac Wkst: Can Print and Read in Outbox
 
+{% raw %}
+
 	Article: Q87258
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -37,3 +39,5 @@ permalink: /kb/087/Q87258/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85082/
 
 ## Q85082: Less Free Memory After Running Slide Show in PowerPoint Viewer
 
+{% raw %}
+
 	Article: Q85082
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -63,3 +65,5 @@ permalink: /kb/085/Q85082/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247955/
 
 ## Q247955: SMS: Wuser32.exe Does Not Shut Down Upon Client Shutdown
 
+{% raw %}
+
 	Article: Q247955
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -117,3 +119,5 @@ permalink: /kb/247/Q247955/
 	
 	=============================================================================
 	
+
+{% endraw %}

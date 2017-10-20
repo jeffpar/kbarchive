@@ -6,6 +6,8 @@ permalink: /kb/176/Q176616/
 
 ## Q176616: Errors Logon Alerts in Performance Monitor
 
+{% raw %}
+
 	Article: Q176616
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -51,3 +53,5 @@ permalink: /kb/176/Q176616/
 	
 	=============================================================================
 	
+
+{% endraw %}

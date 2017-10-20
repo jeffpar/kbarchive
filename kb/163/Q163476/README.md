@@ -6,6 +6,8 @@ permalink: /kb/163/Q163476/
 
 ## Q163476: MSB Ocean: Files Installed on the Macintosh
 
+{% raw %}
+
 	Article: Q163476
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -60,3 +62,5 @@ permalink: /kb/163/Q163476/
 	
 	=============================================================================
 	
+
+{% endraw %}

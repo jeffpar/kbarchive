@@ -6,6 +6,8 @@ permalink: /kb/137/Q137946/
 
 ## Q137946: HOWTO: Distribute Win32s Files w/ FoxPro 3.0 App on Network
 
+{% raw %}
+
 	Article: Q137946
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -80,3 +82,5 @@ permalink: /kb/137/Q137946/
 	
 	=============================================================================
 	
+
+{% endraw %}

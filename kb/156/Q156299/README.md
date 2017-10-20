@@ -6,6 +6,8 @@ permalink: /kb/156/Q156299/
 
 ## Q156299: STL Sample for the find_if Function
 
+{% raw %}
+
 	Article: Q156299
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -136,3 +138,5 @@ permalink: /kb/156/Q156299/
 	
 	=============================================================================
 	
+
+{% endraw %}

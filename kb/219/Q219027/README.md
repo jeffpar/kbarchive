@@ -6,6 +6,8 @@ permalink: /kb/219/Q219027/
 
 ## Q219027: STOP 0x00000024 in Ntfs.sys with Service Pack 4
 
+{% raw %}
+
 	Article: Q219027
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -85,3 +87,5 @@ permalink: /kb/219/Q219027/
 	
 	=============================================================================
 	
+
+{% endraw %}

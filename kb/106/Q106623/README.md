@@ -6,6 +6,8 @@ permalink: /kb/106/Q106623/
 
 ## Q106623: FFAPI: ERR MSG: Unknown Service or Bad Address
 
+{% raw %}
+
 	Article: Q106623
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -66,3 +68,5 @@ permalink: /kb/106/Q106623/
 	
 	=============================================================================
 	
+
+{% endraw %}

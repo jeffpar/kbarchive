@@ -6,6 +6,8 @@ permalink: /kb/142/Q142011/
 
 ## Q142011: How to Close a Remote Process by Using the Scheduler Service
 
+{% raw %}
+
 	Article: Q142011
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -52,3 +54,5 @@ permalink: /kb/142/Q142011/
 	
 	=============================================================================
 	
+
+{% endraw %}

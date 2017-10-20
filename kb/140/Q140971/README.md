@@ -6,6 +6,8 @@ permalink: /kb/140/Q140971/
 
 ## Q140971: WINS Service Generates a System Error 1 Incorrect Function
 
+{% raw %}
+
 	Article: Q140971
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -67,3 +69,5 @@ permalink: /kb/140/Q140971/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139379/
 
 ## Q139379: Cannot Load Lucida Typewriter Font
 
+{% raw %}
+
 	Article: Q139379
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -67,3 +69,5 @@ permalink: /kb/139/Q139379/
 	
 	=============================================================================
 	
+
+{% endraw %}

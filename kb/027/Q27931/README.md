@@ -6,6 +6,8 @@ permalink: /kb/027/Q27931/
 
 ## Q27931: Sample Program That Makes OS/2 Call DosGetDateTime
 
+{% raw %}
+
 	Article: Q27931
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -78,3 +80,5 @@ permalink: /kb/027/Q27931/
 	       fday$="XXXXXXXXX"
 	  END SELECT
 	END FUNCTION
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125188/
 
 ## Q125188: Err Msg: CVF Has Been Deleted or Has Been Seriously Damaged
 
+{% raw %}
+
 	Article: Q125188
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -68,3 +70,5 @@ permalink: /kb/125/Q125188/
 	
 	=============================================================================
 	
+
+{% endraw %}

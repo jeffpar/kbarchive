@@ -6,6 +6,8 @@ permalink: /kb/135/Q135868/
 
 ## Q135868: PC Gen: Files Installed on PO for LAN Manager Network Option
 
+{% raw %}
+
 	Article: Q135868
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -429,3 +431,5 @@ permalink: /kb/135/Q135868/
 	
 	=============================================================================
 	
+
+{% endraw %}

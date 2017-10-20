@@ -6,6 +6,8 @@ permalink: /kb/317/Q317493/
 
 ## Q317493: FIX: &quot;Unable to find Visual Class Library&quot; Msgs with NewObject
 
+{% raw %}
+
 	Article: Q317493
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -127,3 +129,5 @@ permalink: /kb/317/Q317493/
 	
 	=============================================================================
 	
+
+{% endraw %}

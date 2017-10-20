@@ -6,6 +6,8 @@ permalink: /kb/233/Q233182/
 
 ## Q233182: Zone Err Msg: The File/Fileset &lt;Filename&gt; Is Unaccounted For
 
+{% raw %}
+
 	Article: Q233182
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/233/Q233182/
 	
 	=============================================================================
 	
+
+{% endraw %}

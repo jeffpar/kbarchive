@@ -6,6 +6,8 @@ permalink: /kb/158/Q158057/
 
 ## Q158057: WD97: Backslash, Semicolon Dropped from XE Field
 
+{% raw %}
+
 	Article: Q158057
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/158/Q158057/
 	
 	=============================================================================
 	
+
+{% endraw %}

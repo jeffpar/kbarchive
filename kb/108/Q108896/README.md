@@ -6,6 +6,8 @@ permalink: /kb/108/Q108896/
 
 ## Q108896: INFO: Dynamically Disabling/Enabling a Control in a Dialog Box
 
+{% raw %}
+
 	Article: Q108896
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -90,3 +92,5 @@ permalink: /kb/108/Q108896/
 	
 	=============================================================================
 	
+
+{% endraw %}

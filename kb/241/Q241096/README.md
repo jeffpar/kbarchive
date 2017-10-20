@@ -6,6 +6,8 @@ permalink: /kb/241/Q241096/
 
 ## Q241096: MapPoint 2000: How to Install Program to Run from the Hard Disk
 
+{% raw %}
+
 	Article: Q241096
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -87,3 +89,5 @@ permalink: /kb/241/Q241096/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85936/
 
 ## Q85936: Real World Accounting Software and Windows 3.1
 
+{% raw %}
+
 	Article: Q85936
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/085/Q85936/
 	
 	=============================================================================
 	
+
+{% endraw %}

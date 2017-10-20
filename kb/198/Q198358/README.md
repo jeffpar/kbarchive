@@ -6,6 +6,8 @@ permalink: /kb/198/Q198358/
 
 ## Q198358: WD97: Converted Document with Numbered List Restarts Numbering
 
+{% raw %}
+
 	Article: Q198358
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/198/Q198358/
 	
 	=============================================================================
 	
+
+{% endraw %}

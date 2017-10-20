@@ -6,6 +6,8 @@ permalink: /kb/163/Q163843/
 
 ## Q163843: INFO: Managing Linked Tables When You Create a New DB from VSS
 
+{% raw %}
+
 	Article: Q163843
 	Product(s): Microsoft SourceSafe
 	Version(s): 97
@@ -179,3 +181,5 @@ permalink: /kb/163/Q163843/
 	
 	=============================================================================
 	
+
+{% endraw %}

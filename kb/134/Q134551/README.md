@@ -6,6 +6,8 @@ permalink: /kb/134/Q134551/
 
 ## Q134551: Hardware Suspend Button Hangs AcerNote 782 Computer
 
+{% raw %}
+
 	Article: Q134551
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134551/
 	
 	=============================================================================
 	
+
+{% endraw %}

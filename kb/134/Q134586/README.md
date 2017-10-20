@@ -6,6 +6,8 @@ permalink: /kb/134/Q134586/
 
 ## Q134586: Identifying Identical Network Adapters
 
+{% raw %}
+
 	Article: Q134586
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/134/Q134586/
 	
 	=============================================================================
 	
+
+{% endraw %}

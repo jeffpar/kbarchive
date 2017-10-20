@@ -6,6 +6,8 @@ permalink: /kb/067/Q67365/
 
 ## Q67365: Err Msg When Booting System: NO ROM BASIC
 
+{% raw %}
+
 	Article: Q67365
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22; WINDOWS:95
@@ -81,3 +83,5 @@ permalink: /kb/067/Q67365/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247548/
 
 ## Q247548: Excel 97 Step by Step, Advanced Topics Comments and Corrections
 
+{% raw %}
+
 	Article: Q247548
 	Product(s): Microsoft Press
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/247/Q247548/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97767/
 
 ## Q97767: Using Novell's ODI Drivers with Windows for Workgroups
 
+{% raw %}
+
 	Article: Q97767
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -263,3 +265,5 @@ permalink: /kb/097/Q97767/
 	
 	=============================================================================
 	
+
+{% endraw %}

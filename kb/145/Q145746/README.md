@@ -6,6 +6,8 @@ permalink: /kb/145/Q145746/
 
 ## Q145746: DOC: Technical Note 38: MFC/OLE IUnknown Implementation
 
+{% raw %}
+
 	Article: Q145746
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -121,3 +123,5 @@ permalink: /kb/145/Q145746/
 	
 	=============================================================================
 	
+
+{% endraw %}

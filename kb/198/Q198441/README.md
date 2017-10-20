@@ -6,6 +6,8 @@ permalink: /kb/198/Q198441/
 
 ## Q198441: XCLN: How to determine the Organizer of Direct Booked Appt.
 
+{% raw %}
+
 	Article: Q198441
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -101,3 +103,5 @@ permalink: /kb/198/Q198441/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135915/
 
 ## Q135915: PRB: BackColor for Objects in a Grid Appears to Be Incorrect
 
+{% raw %}
+
 	Article: Q135915
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -79,3 +81,5 @@ permalink: /kb/135/Q135915/
 	
 	=============================================================================
 	
+
+{% endraw %}

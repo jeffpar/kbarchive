@@ -6,6 +6,8 @@ permalink: /kb/183/Q183049/
 
 ## Q183049: FP98: Save Results Form Handler and Four-Digit Year Format
 
+{% raw %}
+
 	Article: Q183049
 	Product(s): Word Front Page
 	Version(s): 
@@ -196,3 +198,5 @@ permalink: /kb/183/Q183049/
 	
 	=============================================================================
 	
+
+{% endraw %}

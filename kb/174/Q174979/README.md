@@ -6,6 +6,8 @@ permalink: /kb/174/Q174979/
 
 ## Q174979: Screen Saver Password Is Not Changed with Domain Password
 
+{% raw %}
+
 	Article: Q174979
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -52,3 +54,5 @@ permalink: /kb/174/Q174979/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175421/
 
 ## Q175421: Hellbender: Err Msg: Bad Model
 
+{% raw %}
+
 	Article: Q175421
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -103,3 +105,5 @@ permalink: /kb/175/Q175421/
 	
 	=============================================================================
 	
+
+{% endraw %}

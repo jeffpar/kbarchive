@@ -6,6 +6,8 @@ permalink: /kb/142/Q142722/
 
 ## Q142722: NDS Mapped Drives Inaccessible After Using Dial-Up Connection
 
+{% raw %}
+
 	Article: Q142722
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/142/Q142722/
 	
 	=============================================================================
 	
+
+{% endraw %}

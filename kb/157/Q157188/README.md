@@ -6,6 +6,8 @@ permalink: /kb/157/Q157188/
 
 ## Q157188: PRB: String Functions Cannot Be Used with SQL ORDER BY Clause
 
+{% raw %}
+
 	Article: Q157188
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/157/Q157188/
 	
 	=============================================================================
 	
+
+{% endraw %}

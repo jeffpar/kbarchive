@@ -6,6 +6,8 @@ permalink: /kb/151/Q151713/
 
 ## Q151713: Description of Twisted-Pair Category Types
 
+{% raw %}
+
 	Article: Q151713
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): MS-DOS:3.0; WINDOWS:3.11,95; winnt:3.5,3.51; :2.2c,3.11,3.11a,3.11b
@@ -90,3 +92,5 @@ permalink: /kb/151/Q151713/
 	
 	=============================================================================
 	
+
+{% endraw %}

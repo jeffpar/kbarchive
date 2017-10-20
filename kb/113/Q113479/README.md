@@ -6,6 +6,8 @@ permalink: /kb/113/Q113479/
 
 ## Q113479: WFWG 3.11 Err Msg: Error 3: The Specified Path Was Not Found
 
+{% raw %}
+
 	Article: Q113479
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -76,3 +78,5 @@ permalink: /kb/113/Q113479/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72835/
 
 ## Q72835: Bitmap Files Not Tiling or Centering as Wallpaper in Windows
 
+{% raw %}
+
 	Article: Q72835
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/072/Q72835/
 	
 	=============================================================================
 	
+
+{% endraw %}

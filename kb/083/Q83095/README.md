@@ -6,6 +6,8 @@ permalink: /kb/083/Q83095/
 
 ## Q83095: INFO: CodeView Cannot Display #define or EQU Values
 
+{% raw %}
+
 	Article: Q83095
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
@@ -60,3 +62,5 @@ permalink: /kb/083/Q83095/
 	
 	=============================================================================
 	
+
+{% endraw %}

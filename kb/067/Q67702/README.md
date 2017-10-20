@@ -6,6 +6,8 @@ permalink: /kb/067/Q67702/
 
 ## Q67702: Windows 3.0 PIF Settings for Quicken Version 3.0
 
+{% raw %}
+
 	Article: Q67702
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/067/Q67702/
 	
 	=============================================================================
 	
+
+{% endraw %}

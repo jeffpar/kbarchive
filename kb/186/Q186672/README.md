@@ -6,6 +6,8 @@ permalink: /kb/186/Q186672/
 
 ## Q186672: XFOR: Russian Outlook MS Mail User Gets NDR Sending to Exchange
 
+{% raw %}
+
 	Article: Q186672
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -117,3 +119,5 @@ permalink: /kb/186/Q186672/
 	
 	=============================================================================
 	
+
+{% endraw %}

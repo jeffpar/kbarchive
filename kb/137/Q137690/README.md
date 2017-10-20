@@ -6,6 +6,8 @@ permalink: /kb/137/Q137690/
 
 ## Q137690: Encarta: Hangs When Playing Sound With Ensoniq Card
 
+{% raw %}
+
 	Article: Q137690
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/137/Q137690/
 	
 	=============================================================================
 	
+
+{% endraw %}

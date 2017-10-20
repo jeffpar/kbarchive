@@ -6,6 +6,8 @@ permalink: /kb/193/Q193209/
 
 ## Q193209: Gethostbyname Not Working Correctly with Only DUN Installed
 
+{% raw %}
+
 	Article: Q193209
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -82,3 +84,5 @@ permalink: /kb/193/Q193209/
 	
 	=============================================================================
 	
+
+{% endraw %}

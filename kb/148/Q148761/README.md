@@ -6,6 +6,8 @@ permalink: /kb/148/Q148761/
 
 ## Q148761: Description of Windows 95 OEM Service Release 1
 
+{% raw %}
+
 	Article: Q148761
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -74,3 +76,5 @@ permalink: /kb/148/Q148761/
 	
 	=============================================================================
 	
+
+{% endraw %}

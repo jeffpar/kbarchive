@@ -6,6 +6,8 @@ permalink: /kb/173/Q173960/
 
 ## Q173960: Create Renewal Request Option Grayed Out in Key Manager
 
+{% raw %}
+
 	Article: Q173960
 	Product(s): Internet Information Server
 	Version(s): WinNT:1.0
@@ -59,3 +61,5 @@ permalink: /kb/173/Q173960/
 	
 	=============================================================================
 	
+
+{% endraw %}

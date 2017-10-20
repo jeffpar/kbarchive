@@ -6,6 +6,8 @@ permalink: /kb/173/Q173882/
 
 ## Q173882: Netlogon Synchronization Errors
 
+{% raw %}
+
 	Article: Q173882
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,3.51,4.0
@@ -152,3 +154,5 @@ permalink: /kb/173/Q173882/
 	
 	=============================================================================
 	
+
+{% endraw %}

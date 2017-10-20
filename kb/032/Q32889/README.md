@@ -6,6 +6,8 @@ permalink: /kb/032/Q32889/
 
 ## Q32889: Toggling the Sign Bit on a Float or Double
 
+{% raw %}
+
 	Article: Q32889
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10
@@ -38,3 +40,5 @@ permalink: /kb/032/Q32889/
 	/* Macro to make either a float or a double Positive by clearing sign bit */
 	#define POS(arg) ((unsigned char *)&arg)[sizeof(arg)-1] &= \
 	                   (unsigned char)0x7fff
+
+{% endraw %}

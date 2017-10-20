@@ -6,6 +6,8 @@ permalink: /kb/308/Q308525/
 
 ## Q308525: Links 2001: Err Msg: Exception Access Violation in LS Interface
 
+{% raw %}
+
 	Article: Q308525
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -98,3 +100,5 @@ permalink: /kb/308/Q308525/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230558/
 
 ## Q230558: Terminal Server Hangs and Continuously Loops in Win32k.sys
 
+{% raw %}
+
 	Article: Q230558
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/230/Q230558/
 	
 	=============================================================================
 	
+
+{% endraw %}

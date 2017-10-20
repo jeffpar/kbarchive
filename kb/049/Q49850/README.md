@@ -6,6 +6,8 @@ permalink: /kb/049/Q49850/
 
 ## Q49850: FS 4.0: Crosswinds Too High in Instruction Mode
 
+{% raw %}
+
 	Article: Q49850
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:4.0
@@ -44,3 +46,5 @@ permalink: /kb/049/Q49850/
 	
 	=============================================================================
 	
+
+{% endraw %}

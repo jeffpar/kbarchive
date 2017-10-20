@@ -6,6 +6,8 @@ permalink: /kb/099/Q99557/
 
 ## Q99557: PRB: FoxPro Corruption Problems Fixed by Novell 3.11 Patches
 
+{% raw %}
+
 	Article: Q99557
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:1.02,2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/099/Q99557/
 	
 	=============================================================================
 	
+
+{% endraw %}

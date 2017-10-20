@@ -6,6 +6,8 @@ permalink: /kb/256/Q256507/
 
 ## Q256507: RAS Client May Not Be Authenticated When You Reconnect
 
+{% raw %}
+
 	Article: Q256507
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6,4.0 SP6a
@@ -91,3 +93,5 @@ permalink: /kb/256/Q256507/
 	
 	=============================================================================
 	
+
+{% endraw %}

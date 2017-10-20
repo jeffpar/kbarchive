@@ -6,6 +6,8 @@ permalink: /kb/196/Q196692/
 
 ## Q196692: FIX: Selecting Internet Tab Causes Access Violation
 
+{% raw %}
+
 	Article: Q196692
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/196/Q196692/
 	
 	=============================================================================
 	
+
+{% endraw %}

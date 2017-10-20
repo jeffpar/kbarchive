@@ -6,6 +6,8 @@ permalink: /kb/126/Q126573/
 
 ## Q126573: No Support for &quot;Connect As&quot; Option Like in Windows NT
 
+{% raw %}
+
 	Article: Q126573
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/126/Q126573/
 	
 	=============================================================================
 	
+
+{% endraw %}

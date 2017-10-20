@@ -6,6 +6,8 @@ permalink: /kb/151/Q151121/
 
 ## Q151121: Cinemania 96: Unable to Export Contents of April Update
 
+{% raw %}
+
 	Article: Q151121
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -60,3 +62,5 @@ permalink: /kb/151/Q151121/
 	
 	=============================================================================
 	
+
+{% endraw %}

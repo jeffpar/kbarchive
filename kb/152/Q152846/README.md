@@ -6,6 +6,8 @@ permalink: /kb/152/Q152846/
 
 ## Q152846: Srv Event 2000 With Shared Removable Media
 
+{% raw %}
+
 	Article: Q152846
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -71,3 +73,5 @@ permalink: /kb/152/Q152846/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128233/
 
 ## Q128233: Comparison of Windows NT Network Protocols
 
+{% raw %}
+
 	Article: Q128233
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -649,3 +651,5 @@ permalink: /kb/128/Q128233/
 	
 	=============================================================================
 	
+
+{% endraw %}

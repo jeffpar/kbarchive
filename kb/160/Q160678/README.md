@@ -6,6 +6,8 @@ permalink: /kb/160/Q160678/
 
 ## Q160678: Possible Access Violation in Win32k.sys Under High Stress
 
+{% raw %}
+
 	Article: Q160678
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/160/Q160678/
 	
 	=============================================================================
 	
+
+{% endraw %}

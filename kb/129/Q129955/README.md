@@ -6,6 +6,8 @@ permalink: /kb/129/Q129955/
 
 ## Q129955: IRQ Conflicts with PCI Display Adapters
 
+{% raw %}
+
 	Article: Q129955
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -78,3 +80,5 @@ permalink: /kb/129/Q129955/
 	
 	=============================================================================
 	
+
+{% endraw %}

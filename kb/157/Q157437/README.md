@@ -6,6 +6,8 @@ permalink: /kb/157/Q157437/
 
 ## Q157437: Fireev.exe Fires Events from a Second Thread
 
+{% raw %}
+
 	Article: Q157437
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -164,8 +166,8 @@ permalink: /kb/157/Q157437/
 	
 	        //add an entry for the message to the message map of the control
 	        BEGIN_MESSAGE_MAP(CFireeventCtrl, COleControl)
-	        //{ {AFX_MSG_MAP(CFireeventCtrl)
-	        //} }AFX_MSG_MAP
+	        //{{AFX_MSG_MAP(CFireeventCtrl)
+	        //}}AFX_MSG_MAP
 	        ON_OLEVERB(AFX_IDS_VERB_PROPERTIES, OnProperties)
 	        ON_MESSAGE(WM_THREADFIREEVENT,OnFireEventForThread) //custom handler
 	        END_MESSAGE_MAP()
@@ -219,3 +221,5 @@ permalink: /kb/157/Q157437/
 	
 	=============================================================================
 	
+
+{% endraw %}

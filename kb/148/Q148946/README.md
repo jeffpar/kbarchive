@@ -6,6 +6,8 @@ permalink: /kb/148/Q148946/
 
 ## Q148946: AT Gen: Who Provides Mail for AppleTalk Networks Support?
 
+{% raw %}
+
 	Article: Q148946
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0x,3.1d,3.1f,3.1x,3.2
@@ -118,3 +120,5 @@ permalink: /kb/148/Q148946/
 	
 	=============================================================================
 	
+
+{% endraw %}

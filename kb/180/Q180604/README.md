@@ -6,6 +6,8 @@ permalink: /kb/180/Q180604/
 
 ## Q180604: Windows NT Installation on Laptops with PCI Docking Station
 
+{% raw %}
+
 	Article: Q180604
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -89,3 +91,5 @@ permalink: /kb/180/Q180604/
 	
 	=============================================================================
 	
+
+{% endraw %}

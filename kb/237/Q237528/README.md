@@ -6,6 +6,8 @@ permalink: /kb/237/Q237528/
 
 ## Q237528: Encarta 2000: Unable to Play Song of Red-Winged Blackbird
 
+{% raw %}
+
 	Article: Q237528
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/237/Q237528/
 	
 	=============================================================================
 	
+
+{% endraw %}

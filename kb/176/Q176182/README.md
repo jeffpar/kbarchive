@@ -6,6 +6,8 @@ permalink: /kb/176/Q176182/
 
 ## Q176182: XADM: Information Store Crash Due to Incorrect Caching
 
+{% raw %}
+
 	Article: Q176182
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/176/Q176182/
 	
 	=============================================================================
 	
+
+{% endraw %}

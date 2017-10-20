@@ -6,6 +6,8 @@ permalink: /kb/173/Q173738/
 
 ## Q173738: INFO: Object Hungarian Notation Naming Conventions for VB
 
+{% raw %}
+
 	Article: Q173738
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,6.0
@@ -205,3 +207,5 @@ permalink: /kb/173/Q173738/
 	
 	=============================================================================
 	
+
+{% endraw %}

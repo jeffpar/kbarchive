@@ -6,6 +6,8 @@ permalink: /kb/244/Q244530/
 
 ## Q244530: NBF PPP Reuses IDs for Identical Config_reqs
 
+{% raw %}
+
 	Article: Q244530
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -75,3 +77,5 @@ permalink: /kb/244/Q244530/
 	
 	=============================================================================
 	
+
+{% endraw %}

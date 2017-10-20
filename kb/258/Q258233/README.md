@@ -6,6 +6,8 @@ permalink: /kb/258/Q258233/
 
 ## Q258233: PRB: Problem Reloading a UserControl File with an Add-In
 
+{% raw %}
+
 	Article: Q258233
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/258/Q258233/
 	
 	=============================================================================
 	
+
+{% endraw %}

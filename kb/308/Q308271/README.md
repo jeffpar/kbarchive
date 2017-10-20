@@ -6,6 +6,8 @@ permalink: /kb/308/Q308271/
 
 ## Q308271: Adding Windows XP Professional As Target Platform to SMS 2.0 SP3
 
+{% raw %}
+
 	Article: Q308271
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -67,3 +69,5 @@ permalink: /kb/308/Q308271/
 	
 	=============================================================================
 	
+
+{% endraw %}

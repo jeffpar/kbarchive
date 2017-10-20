@@ -6,6 +6,8 @@ permalink: /kb/118/Q118860/
 
 ## Q118860: X400: README.TXT: Gateway to X.400, Version 3.2
 
+{% raw %}
+
 	Article: Q118860
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -270,3 +272,5 @@ permalink: /kb/118/Q118860/
 	
 	=============================================================================
 	
+
+{% endraw %}

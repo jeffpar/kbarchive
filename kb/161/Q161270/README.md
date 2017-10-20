@@ -6,6 +6,8 @@ permalink: /kb/161/Q161270/
 
 ## Q161270: HOWTO: Extend the Scrolling Capabilities of a TextBox Control
 
+{% raw %}
+
 	Article: Q161270
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/161/Q161270/
 	
 	=============================================================================
 	
+
+{% endraw %}

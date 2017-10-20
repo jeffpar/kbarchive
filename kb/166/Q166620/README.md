@@ -6,6 +6,8 @@ permalink: /kb/166/Q166620/
 
 ## Q166620: XGEN: Credentials Caching for Internet Protocols
 
+{% raw %}
+
 	Article: Q166620
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -116,3 +118,5 @@ permalink: /kb/166/Q166620/
 	
 	=============================================================================
 	
+
+{% endraw %}

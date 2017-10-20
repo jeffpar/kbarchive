@@ -6,6 +6,8 @@ permalink: /kb/030/Q30517/
 
 ## Q30517: OFFSET Operator Is Segment Relative
 
+{% raw %}
+
 	Article: Q30517
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,6.0
@@ -89,3 +91,5 @@ permalink: /kb/030/Q30517/
 	
 	=============================================================================
 	
+
+{% endraw %}

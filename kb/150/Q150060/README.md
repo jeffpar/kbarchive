@@ -6,6 +6,8 @@ permalink: /kb/150/Q150060/
 
 ## Q150060: Cannot Delete Directory Structure on FPNW Volume
 
+{% raw %}
+
 	Article: Q150060
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -84,3 +86,5 @@ permalink: /kb/150/Q150060/
 	
 	=============================================================================
 	
+
+{% endraw %}

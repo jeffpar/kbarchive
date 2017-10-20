@@ -6,6 +6,8 @@ permalink: /kb/255/Q255757/
 
 ## Q255757: PRB: Circular Dependency Error When UDT Is Not In Base Class Mod
 
+{% raw %}
+
 	Article: Q255757
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/255/Q255757/
 	
 	=============================================================================
 	
+
+{% endraw %}

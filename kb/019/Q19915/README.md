@@ -6,6 +6,8 @@ permalink: /kb/019/Q19915/
 
 ## Q19915: Windows Versions 1.01 and 1.02 and the Bus Mouse
 
+{% raw %}
+
 	Article: Q19915
 	Product(s): See article
 	Version(s): 3.00
@@ -33,3 +35,5 @@ permalink: /kb/019/Q19915/
 	The above problem may also affect ISVs and OEMs that have developed
 	stand-alone Windows applications or have licensed and adapted Windows
 	using the initial Windows development software.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110840/
 
 ## Q110840: Flight Simulator: Altitude Hold Must Be Within 35,000 Feet
 
+{% raw %}
+
 	Article: Q110840
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -42,3 +44,5 @@ permalink: /kb/110/Q110840/
 	
 	=============================================================================
 	
+
+{% endraw %}

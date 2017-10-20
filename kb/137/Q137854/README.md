@@ -6,6 +6,8 @@ permalink: /kb/137/Q137854/
 
 ## Q137854: Contents of Visual FoxPro Standard Edition on CD-ROM
 
+{% raw %}
+
 	Article: Q137854
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -919,3 +921,5 @@ permalink: /kb/137/Q137854/
 	
 	=============================================================================
 	
+
+{% endraw %}

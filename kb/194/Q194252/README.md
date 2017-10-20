@@ -6,6 +6,8 @@ permalink: /kb/194/Q194252/
 
 ## Q194252: WD97: Table with Borders and Shading Prints Slowly
 
+{% raw %}
+
 	Article: Q194252
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/194/Q194252/
 	
 	=============================================================================
 	
+
+{% endraw %}

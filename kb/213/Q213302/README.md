@@ -6,6 +6,8 @@ permalink: /kb/213/Q213302/
 
 ## Q213302: SMS: Reports on Alpha Remote Admin Console Displays Wrong Time
 
+{% raw %}
+
 	Article: Q213302
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -43,3 +45,5 @@ permalink: /kb/213/Q213302/
 	
 	=============================================================================
 	
+
+{% endraw %}

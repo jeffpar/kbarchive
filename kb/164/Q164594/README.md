@@ -6,6 +6,8 @@ permalink: /kb/164/Q164594/
 
 ## Q164594: WinNT 4.0 Hangs on DEC AlphaServer 2000, 2100, and 2100A System
 
+{% raw %}
+
 	Article: Q164594
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -181,3 +183,5 @@ permalink: /kb/164/Q164594/
 	
 	=============================================================================
 	
+
+{% endraw %}

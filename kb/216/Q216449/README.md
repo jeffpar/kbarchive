@@ -6,6 +6,8 @@ permalink: /kb/216/Q216449/
 
 ## Q216449: BUG: Example for User Defined Type (UDT) Missing from CedarBank
 
+{% raw %}
+
 	Article: Q216449
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -57,3 +59,5 @@ permalink: /kb/216/Q216449/
 	
 	=============================================================================
 	
+
+{% endraw %}

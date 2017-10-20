@@ -6,6 +6,8 @@ permalink: /kb/082/Q82303/
 
 ## Q82303: PC OS2: Loading Both OS/2 Clients Causes Trap 00D Error
 
+{% raw %}
+
 	Article: Q82303
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/082/Q82303/
 	
 	=============================================================================
 	
+
+{% endraw %}

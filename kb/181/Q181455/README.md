@@ -6,6 +6,8 @@ permalink: /kb/181/Q181455/
 
 ## Q181455: XADM: PFADMIN v1.1.2 Does Not Support Exchange 5.0 Permissions
 
+{% raw %}
+
 	Article: Q181455
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -45,3 +47,5 @@ permalink: /kb/181/Q181455/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124645/
 
 ## Q124645: Playing Compressed Audio on Western Digital DSP-16 Sound Card
 
+{% raw %}
+
 	Article: Q124645
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1993 edition,1994 edition,1995 edition,1996 edition
@@ -94,3 +96,5 @@ permalink: /kb/124/Q124645/
 	
 	=============================================================================
 	
+
+{% endraw %}

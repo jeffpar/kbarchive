@@ -6,6 +6,8 @@ permalink: /kb/122/Q122646/
 
 ## Q122646: Windows NT 3.5 Setup on AST Bravo LP466D Fails
 
+{% raw %}
+
 	Article: Q122646
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/122/Q122646/
 	
 	=============================================================================
 	
+
+{% endraw %}

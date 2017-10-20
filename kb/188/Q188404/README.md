@@ -6,6 +6,8 @@ permalink: /kb/188/Q188404/
 
 ## Q188404: HOWTO: Use API Calls to Detect Other Running Applications
 
+{% raw %}
+
 	Article: Q188404
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -116,3 +118,5 @@ permalink: /kb/188/Q188404/
 	
 	=============================================================================
 	
+
+{% endraw %}

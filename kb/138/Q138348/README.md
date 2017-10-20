@@ -6,6 +6,8 @@ permalink: /kb/138/Q138348/
 
 ## Q138348: SMS: How to Manually Copy SMS Logon Script Files
 
+{% raw %}
+
 	Article: Q138348
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -118,3 +120,5 @@ permalink: /kb/138/Q138348/
 	
 	=============================================================================
 	
+
+{% endraw %}

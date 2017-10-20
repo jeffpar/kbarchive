@@ -6,6 +6,8 @@ permalink: /kb/068/Q68806/
 
 ## Q68806: Windows Err Msg: Problem With Disk Drive C (with Bus Mouse)
 
+{% raw %}
+
 	Article: Q68806
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/068/Q68806/
 	
 	=============================================================================
 	
+
+{% endraw %}

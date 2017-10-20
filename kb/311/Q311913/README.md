@@ -6,6 +6,8 @@ permalink: /kb/311/Q311913/
 
 ## Q311913: PRB: Problem When Send Notification Contains Less Than (&lt;) Chara
 
+{% raw %}
+
 	Article: Q311913
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/311/Q311913/
 	
 	=============================================================================
 	
+
+{% endraw %}

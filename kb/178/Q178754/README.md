@@ -6,6 +6,8 @@ permalink: /kb/178/Q178754/
 
 ## Q178754: PRB: Modal Form Does Not Appear in the Taskbar
 
+{% raw %}
+
 	Article: Q178754
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/178/Q178754/
 	
 	=============================================================================
 	
+
+{% endraw %}

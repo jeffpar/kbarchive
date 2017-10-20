@@ -6,6 +6,8 @@ permalink: /kb/177/Q177612/
 
 ## Q177612: HP 350C and 750C Plotter Output Contains a Blue Background
 
+{% raw %}
+
 	Article: Q177612
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/177/Q177612/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179560/
 
 ## Q179560: SMS: Remote Control Fails to Bring Up the Quick Viewer Window
 
+{% raw %}
+
 	Article: Q179560
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -43,3 +45,5 @@ permalink: /kb/179/Q179560/
 	
 	=============================================================================
 	
+
+{% endraw %}

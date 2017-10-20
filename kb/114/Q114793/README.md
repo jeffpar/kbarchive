@@ -6,6 +6,8 @@ permalink: /kb/114/Q114793/
 
 ## Q114793: Color Sets Not Supported on FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q114793
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -48,3 +50,5 @@ permalink: /kb/114/Q114793/
 	
 	=============================================================================
 	
+
+{% endraw %}

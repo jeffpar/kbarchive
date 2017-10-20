@@ -6,6 +6,8 @@ permalink: /kb/243/Q243601/
 
 ## Q243601: XADM: Backups Time Out on Large DBs when DB Scrubbing Is Enabled
 
+{% raw %}
+
 	Article: Q243601
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -70,3 +72,5 @@ permalink: /kb/243/Q243601/
 	
 	=============================================================================
 	
+
+{% endraw %}

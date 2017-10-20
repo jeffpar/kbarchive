@@ -6,6 +6,8 @@ permalink: /kb/068/Q68159/
 
 ## Q68159: How to Truncate a File Using DOS Interrupts from BASIC
 
+{% raw %}
+
 	Article: Q68159
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -139,3 +141,5 @@ permalink: /kb/068/Q68159/
 	CALL INTERRUPT, query on the following words:
 	
 	   CALL and INTERRUPT and application and note and QuickBASIC
+
+{% endraw %}

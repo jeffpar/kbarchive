@@ -6,6 +6,8 @@ permalink: /kb/127/Q127857/
 
 ## Q127857: Required Number of SQL Connections Needed for SMS
 
+{% raw %}
+
 	Article: Q127857
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -67,3 +69,5 @@ permalink: /kb/127/Q127857/
 	
 	=============================================================================
 	
+
+{% endraw %}

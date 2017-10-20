@@ -6,6 +6,8 @@ permalink: /kb/097/Q97079/
 
 ## Q97079: PC WRmt: Providing Access to Gateway User Address Lists
 
+{% raw %}
+
 	Article: Q97079
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -58,3 +60,5 @@ permalink: /kb/097/Q97079/
 	
 	=============================================================================
 	
+
+{% endraw %}

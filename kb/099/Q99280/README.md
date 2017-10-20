@@ -6,6 +6,8 @@ permalink: /kb/099/Q99280/
 
 ## Q99280: Comprehensive List of MS-DOS 6 Documentation Errors
 
+{% raw %}
+
 	Article: Q99280
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -677,3 +679,5 @@ permalink: /kb/099/Q99280/
 	
 	=============================================================================
 	
+
+{% endraw %}

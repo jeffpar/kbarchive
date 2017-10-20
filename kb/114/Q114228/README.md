@@ -6,6 +6,8 @@ permalink: /kb/114/Q114228/
 
 ## Q114228: HOWTO: Add Icons After Distributed Setup Program Is Run
 
+{% raw %}
+
 	Article: Q114228
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6,2.6a,3.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/114/Q114228/
 	
 	=============================================================================
 	
+
+{% endraw %}

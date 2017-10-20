@@ -6,6 +6,8 @@ permalink: /kb/111/Q111566/
 
 ## Q111566: Microsoft Mail Err Msg: Error: Unable to Allocate Hook...
 
+{% raw %}
+
 	Article: Q111566
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/111/Q111566/
 	
 	=============================================================================
 	
+
+{% endraw %}

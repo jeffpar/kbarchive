@@ -6,6 +6,8 @@ permalink: /kb/319/Q319036/
 
 ## Q319036: How To Manage Identities In Microsoft Entourage
 
+{% raw %}
+
 	Article: Q319036
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/319/Q319036/
 	
 	=============================================================================
 	
+
+{% endraw %}

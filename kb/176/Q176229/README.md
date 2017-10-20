@@ -6,6 +6,8 @@ permalink: /kb/176/Q176229/
 
 ## Q176229: XCLN: Recovered Items May not Appear in Deleted Items Folder
 
+{% raw %}
+
 	Article: Q176229
 	Product(s): Microsoft Exchange
 	Version(s): 8.03
@@ -58,3 +60,5 @@ permalink: /kb/176/Q176229/
 	
 	=============================================================================
 	
+
+{% endraw %}

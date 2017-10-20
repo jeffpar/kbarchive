@@ -6,6 +6,8 @@ permalink: /kb/143/Q143376/
 
 ## Q143376: XADM: Storage Capacity Limits of Microsoft Exchange Server
 
+{% raw %}
+
 	Article: Q143376
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -83,3 +85,5 @@ permalink: /kb/143/Q143376/
 	
 	=============================================================================
 	
+
+{% endraw %}

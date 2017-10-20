@@ -6,6 +6,8 @@ permalink: /kb/251/Q251170/
 
 ## Q251170: Malformed Argument in Hit-Highlighting Allows Access to Server
 
+{% raw %}
+
 	Article: Q251170
 	Product(s): Internet Information Server
 	Version(s): 2.0,2000,4.0
@@ -165,3 +167,5 @@ permalink: /kb/251/Q251170/
 	
 	=============================================================================
 	
+
+{% endraw %}

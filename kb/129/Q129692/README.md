@@ -6,6 +6,8 @@ permalink: /kb/129/Q129692/
 
 ## Q129692: Baseball 95: High Scores in Trivia Not Displayed During Game
 
+{% raw %}
+
 	Article: Q129692
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -45,3 +47,5 @@ permalink: /kb/129/Q129692/
 	
 	=============================================================================
 	
+
+{% endraw %}

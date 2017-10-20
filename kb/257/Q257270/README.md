@@ -6,6 +6,8 @@ permalink: /kb/257/Q257270/
 
 ## Q257270: SMS 2.0 Client Minimizes Full-Screen MS-DOS-Based Program
 
+{% raw %}
+
 	Article: Q257270
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/257/Q257270/
 	
 	=============================================================================
 	
+
+{% endraw %}

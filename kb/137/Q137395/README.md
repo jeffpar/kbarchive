@@ -6,6 +6,8 @@ permalink: /kb/137/Q137395/
 
 ## Q137395: Transferring Login Scripts Requires MAIL Directory Migration
 
+{% raw %}
+
 	Article: Q137395
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/137/Q137395/
 	
 	=============================================================================
 	
+
+{% endraw %}

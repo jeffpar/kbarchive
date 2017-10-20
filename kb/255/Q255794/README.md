@@ -6,6 +6,8 @@ permalink: /kb/255/Q255794/
 
 ## Q255794: International Calling Card Sequence Extended in DUN
 
+{% raw %}
+
 	Article: Q255794
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP5
@@ -90,3 +92,5 @@ permalink: /kb/255/Q255794/
 	
 	=============================================================================
 	
+
+{% endraw %}

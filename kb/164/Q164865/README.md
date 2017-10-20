@@ -6,6 +6,8 @@ permalink: /kb/164/Q164865/
 
 ## Q164865: XCON: Msg Text Word Wrap Not Working on X.400
 
+{% raw %}
+
 	Article: Q164865
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/164/Q164865/
 	
 	=============================================================================
 	
+
+{% endraw %}

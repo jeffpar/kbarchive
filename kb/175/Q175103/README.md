@@ -6,6 +6,8 @@ permalink: /kb/175/Q175103/
 
 ## Q175103: XFOR: Migration Wizard Contains Inaccurate Help File Option
 
+{% raw %}
+
 	Article: Q175103
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/175/Q175103/
 	
 	=============================================================================
 	
+
+{% endraw %}

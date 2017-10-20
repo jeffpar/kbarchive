@@ -6,6 +6,8 @@ permalink: /kb/215/Q215043/
 
 ## Q215043: SMS: Inventory Reports Incorrect Clock Speed on 486 Cyrix Chips
 
+{% raw %}
+
 	Article: Q215043
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/215/Q215043/
 	
 	=============================================================================
 	
+
+{% endraw %}

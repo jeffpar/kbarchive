@@ -6,6 +6,8 @@ permalink: /kb/156/Q156065/
 
 ## Q156065: Shortcut Key Launches Multiple Instances of Program
 
+{% raw %}
+
 	Article: Q156065
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/156/Q156065/
 	
 	=============================================================================
 	
+
+{% endraw %}

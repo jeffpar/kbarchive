@@ -6,6 +6,8 @@ permalink: /kb/238/Q238946/
 
 ## Q238946: XWEB: Can't View Graphic Inserted into HTML Message in OWA
 
+{% raw %}
+
 	Article: Q238946
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -48,3 +50,5 @@ permalink: /kb/238/Q238946/
 	
 	=============================================================================
 	
+
+{% endraw %}

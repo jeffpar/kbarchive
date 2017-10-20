@@ -6,6 +6,8 @@ permalink: /kb/156/Q156529/
 
 ## Q156529: Deleting Favorite Place May Cause Page Fault
 
+{% raw %}
+
 	Article: Q156529
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -42,3 +44,5 @@ permalink: /kb/156/Q156529/
 	
 	=============================================================================
 	
+
+{% endraw %}

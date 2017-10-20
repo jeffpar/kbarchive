@@ -6,6 +6,8 @@ permalink: /kb/163/Q163807/
 
 ## Q163807: WD97: Illegal Operation Opening Form Field Options Dialog Box
 
+{% raw %}
+
 	Article: Q163807
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/163/Q163807/
 	
 	=============================================================================
 	
+
+{% endraw %}

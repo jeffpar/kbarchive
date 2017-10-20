@@ -6,6 +6,8 @@ permalink: /kb/174/Q174811/
 
 ## Q174811: Authentication and Security for Internet Developers
 
+{% raw %}
+
 	Article: Q174811
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0; winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/174/Q174811/
 	
 	=============================================================================
 	
+
+{% endraw %}

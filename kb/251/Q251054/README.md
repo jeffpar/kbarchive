@@ -6,6 +6,8 @@ permalink: /kb/251/Q251054/
 
 ## Q251054: XADM: High Dsmain.exe CPU Usage When Populating Address Book Vie
 
+{% raw %}
+
 	Article: Q251054
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -106,3 +108,5 @@ permalink: /kb/251/Q251054/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89330/
 
 ## Q89330: Complete Text PW0563: Display Compatibility Testing
 
+{% raw %}
+
 	Article: Q89330
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1,3.11
@@ -113,3 +115,5 @@ permalink: /kb/089/Q89330/
 	
 	=============================================================================
 	
+
+{% endraw %}

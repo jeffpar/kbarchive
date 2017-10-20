@@ -6,6 +6,8 @@ permalink: /kb/099/Q99110/
 
 ## Q99110: BUG: ETO_CLIPPED Does Not Clip Rotated Text
 
+{% raw %}
+
 	Article: Q99110
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/099/Q99110/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192851/
 
 ## Q192851: PRB: Ten or More Parameters in an Oracle Procedure Call Fails
 
+{% raw %}
+
 	Article: Q192851
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,Build 2.573.2927,Build 2.573.3711,Build 2.573.4202,Build 2.573.4403
@@ -83,3 +85,5 @@ permalink: /kb/192/Q192851/
 	
 	=============================================================================
 	
+
+{% endraw %}

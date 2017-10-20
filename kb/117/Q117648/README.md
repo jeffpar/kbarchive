@@ -6,6 +6,8 @@ permalink: /kb/117/Q117648/
 
 ## Q117648: PC Gen: ErrMsg: Unexplained Mail Message From &#42;SPECIAL
 
+{% raw %}
+
 	Article: Q117648
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0; WINDOWS:3.0,3.0b,3.2
@@ -75,3 +77,5 @@ permalink: /kb/117/Q117648/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135157/
 
 ## Q135157: Cannot Access COM Ports on NEC Image P90 Computer
 
+{% raw %}
+
 	Article: Q135157
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/135/Q135157/
 	
 	=============================================================================
 	
+
+{% endraw %}

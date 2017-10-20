@@ -6,6 +6,8 @@ permalink: /kb/089/Q89571/
 
 ## Q89571: PRB: Colors Lost Printing Color Metafile on Color Printer
 
+{% raw %}
+
 	Article: Q89571
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -46,3 +48,5 @@ permalink: /kb/089/Q89571/
 	
 	=============================================================================
 	
+
+{% endraw %}

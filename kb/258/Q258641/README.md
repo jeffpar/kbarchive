@@ -6,6 +6,8 @@ permalink: /kb/258/Q258641/
 
 ## Q258641: Baseball 2001: Screen Turns Black When You Start the Program
 
+{% raw %}
+
 	Article: Q258641
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/258/Q258641/
 	
 	=============================================================================
 	
+
+{% endraw %}

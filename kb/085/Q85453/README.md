@@ -6,6 +6,8 @@ permalink: /kb/085/Q85453/
 
 ## Q85453: Windows 3.0 Logo Screen Appears When Starting Windows 3.1
 
+{% raw %}
+
 	Article: Q85453
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -100,3 +102,5 @@ permalink: /kb/085/Q85453/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74908/
 
 ## Q74908: CWheel.exe Uses the Palette Under Windows
 
+{% raw %}
+
 	Article: Q74908
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -200,3 +202,5 @@ permalink: /kb/074/Q74908/
 	
 	=============================================================================
 	
+
+{% endraw %}

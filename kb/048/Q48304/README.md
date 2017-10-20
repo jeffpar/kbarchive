@@ -6,6 +6,8 @@ permalink: /kb/048/Q48304/
 
 ## Q48304: Throttle Indicator Displayed Flying Schweizer 2-32
 
+{% raw %}
+
 	Article: Q48304
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/048/Q48304/
 	
 	=============================================================================
 	
+
+{% endraw %}

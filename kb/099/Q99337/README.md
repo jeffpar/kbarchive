@@ -6,6 +6,8 @@ permalink: /kb/099/Q99337/
 
 ## Q99337: PRB: Using ToAscii() in Journal Record Hooks
 
+{% raw %}
+
 	Article: Q99337
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/099/Q99337/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64429/
 
 ## Q64429: Example of Assembly Function Returning Integer to BASIC
 
+{% raw %}
+
 	Article: Q64429
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -68,3 +70,5 @@ permalink: /kb/064/Q64429/
 	   12345
 	   12345
 	   12345
+
+{% endraw %}

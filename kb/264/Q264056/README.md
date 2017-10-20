@@ -6,6 +6,8 @@ permalink: /kb/264/Q264056/
 
 ## Q264056: Documentation Error: Windows Help Refers to PWS Instead of IIS 5
 
+{% raw %}
+
 	Article: Q264056
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -52,3 +54,5 @@ permalink: /kb/264/Q264056/
 	
 	=============================================================================
 	
+
+{% endraw %}

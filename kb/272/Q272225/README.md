@@ -6,6 +6,8 @@ permalink: /kb/272/Q272225/
 
 ## Q272225: SNA Server and NetBIOS ScopeIDs on Windows 2000 Server
 
+{% raw %}
+
 	Article: Q272225
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3; :
@@ -63,3 +65,5 @@ permalink: /kb/272/Q272225/
 	
 	=============================================================================
 	
+
+{% endraw %}

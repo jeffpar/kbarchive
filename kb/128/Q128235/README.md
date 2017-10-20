@@ -6,6 +6,8 @@ permalink: /kb/128/Q128235/
 
 ## Q128235: Resource Kit Command Scheduler Hangs on MIPS Machine
 
+{% raw %}
+
 	Article: Q128235
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/128/Q128235/
 	
 	=============================================================================
 	
+
+{% endraw %}

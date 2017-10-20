@@ -6,6 +6,8 @@ permalink: /kb/150/Q150809/
 
 ## Q150809: Commenting an Internet Database Connector (IDC) File
 
+{% raw %}
+
 	Article: Q150809
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/150/Q150809/
 	
 	=============================================================================
 	
+
+{% endraw %}

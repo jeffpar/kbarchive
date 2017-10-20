@@ -6,6 +6,8 @@ permalink: /kb/171/Q171137/
 
 ## Q171137: Need to Remove MS Transaction Server After Remove IIS 4.0
 
+{% raw %}
+
 	Article: Q171137
 	Product(s): Internet Information Server
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/171/Q171137/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113088/
 
 ## Q113088: WFWG 3.11 Disk 4 Directory Listing (5.25 Inch, 1.2 MB)
 
+{% raw %}
+
 	Article: Q113088
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/113/Q113088/
 	
 	=============================================================================
 	
+
+{% endraw %}

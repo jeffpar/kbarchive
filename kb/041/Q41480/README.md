@@ -6,6 +6,8 @@ permalink: /kb/041/Q41480/
 
 ## Q41480: QuickC 2.00 README.DOC: Error Help
 
+{% raw %}
+
 	Article: Q41480
 	Product(s): See article
 	Version(s): 2.00
@@ -36,3 +38,5 @@ permalink: /kb/041/Q41480/
 	This warning appears only when you have 20 files open at the same time,
 	which is unlikely to occur. You can't ask for help about the message
 	because the help system is unable to open any help files.
+
+{% endraw %}

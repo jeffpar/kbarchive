@@ -6,6 +6,8 @@ permalink: /kb/150/Q150048/
 
 ## Q150048: Syscon Changes Maximum Password Age on FPNW Server
 
+{% raw %}
+
 	Article: Q150048
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150048/
 	
 	=============================================================================
 	
+
+{% endraw %}

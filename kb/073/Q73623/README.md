@@ -6,6 +6,8 @@ permalink: /kb/073/Q73623/
 
 ## Q73623: LANtastic LANcache Requires HIMEM.SYS /int15=&lt;xxxx&gt; Switch
 
+{% raw %}
+
 	Article: Q73623
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -48,3 +50,5 @@ permalink: /kb/073/Q73623/
 	
 	=============================================================================
 	
+
+{% endraw %}

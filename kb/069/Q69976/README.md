@@ -6,6 +6,8 @@ permalink: /kb/069/Q69976/
 
 ## Q69976: Windows Hangs with Fast Tech Hard Drive Controller #1050
 
+{% raw %}
+
 	Article: Q69976
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -75,3 +77,5 @@ permalink: /kb/069/Q69976/
 	
 	=============================================================================
 	
+
+{% endraw %}

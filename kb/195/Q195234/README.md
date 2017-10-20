@@ -6,6 +6,8 @@ permalink: /kb/195/Q195234/
 
 ## Q195234: The Operating System Was Unable to Load Your Profile
 
+{% raw %}
+
 	Article: Q195234
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/195/Q195234/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163746/
 
 ## Q163746: XCLN: Chinese Chars in Attachment File Name Wrong in Outlook
 
+{% raw %}
+
 	Article: Q163746
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/163/Q163746/
 	
 	=============================================================================
 	
+
+{% endraw %}

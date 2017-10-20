@@ -6,6 +6,8 @@ permalink: /kb/153/Q153968/
 
 ## Q153968: Unattended Installation of Service Pack 4 After NT Installed
 
+{% raw %}
+
 	Article: Q153968
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -40,3 +42,5 @@ permalink: /kb/153/Q153968/
 	
 	=============================================================================
 	
+
+{% endraw %}

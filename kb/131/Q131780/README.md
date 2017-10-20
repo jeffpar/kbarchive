@@ -6,6 +6,8 @@ permalink: /kb/131/Q131780/
 
 ## Q131780: Using the /E Option With CACLS.EXE
 
+{% raw %}
+
 	Article: Q131780
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/131/Q131780/
 	
 	=============================================================================
 	
+
+{% endraw %}

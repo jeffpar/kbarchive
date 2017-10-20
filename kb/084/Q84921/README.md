@@ -6,6 +6,8 @@ permalink: /kb/084/Q84921/
 
 ## Q84921: FTP VxD Causes Network Communications Problems
 
+{% raw %}
+
 	Article: Q84921
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/084/Q84921/
 	
 	=============================================================================
 	
+
+{% endraw %}

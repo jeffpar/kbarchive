@@ -6,6 +6,8 @@ permalink: /kb/150/Q150379/
 
 ## Q150379: XCLN: Error: Some Extensions Could Not be Loaded
 
+{% raw %}
+
 	Article: Q150379
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/150/Q150379/
 	
 	=============================================================================
 	
+
+{% endraw %}

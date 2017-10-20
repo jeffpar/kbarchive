@@ -6,6 +6,8 @@ permalink: /kb/162/Q162125/
 
 ## Q162125: Installation Error: Invalid Page Fault in Kernel32.dll
 
+{% raw %}
+
 	Article: Q162125
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,3.0
@@ -131,3 +133,5 @@ permalink: /kb/162/Q162125/
 	
 	=============================================================================
 	
+
+{% endraw %}

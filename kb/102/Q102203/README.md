@@ -6,6 +6,8 @@ permalink: /kb/102/Q102203/
 
 ## Q102203: BUG: Print Job Is Not Released to Printer
 
+{% raw %}
+
 	Article: Q102203
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b,2.6; UNIX:2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/102/Q102203/
 	
 	=============================================================================
 	
+
+{% endraw %}

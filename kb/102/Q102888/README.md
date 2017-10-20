@@ -6,6 +6,8 @@ permalink: /kb/102/Q102888/
 
 ## Q102888: Saving from Word or Excel Resets NTFS Security Permissions
 
+{% raw %}
+
 	Article: Q102888
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.1,3.5,3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/102/Q102888/
 	
 	=============================================================================
 	
+
+{% endraw %}

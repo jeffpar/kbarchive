@@ -6,6 +6,8 @@ permalink: /kb/274/Q274429/
 
 ## Q274429: Microsoft Reader: How to Troubleshoot Display Issues
 
+{% raw %}
+
 	Article: Q274429
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -176,3 +178,5 @@ permalink: /kb/274/Q274429/
 	
 	=============================================================================
 	
+
+{% endraw %}

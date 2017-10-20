@@ -6,6 +6,8 @@ permalink: /kb/243/Q243391/
 
 ## Q243391: Client Certificate Mapping Corrupts in Server-Side Variables
 
+{% raw %}
+
 	Article: Q243391
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/243/Q243391/
 	
 	=============================================================================
 	
+
+{% endraw %}

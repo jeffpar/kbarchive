@@ -6,6 +6,8 @@ permalink: /kb/099/Q99304/
 
 ## Q99304: Mac Srv: Server May Stop Operating When Run with Tape Backup
 
+{% raw %}
+
 	Article: Q99304
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,3.0,3.1
@@ -66,3 +68,5 @@ permalink: /kb/099/Q99304/
 	
 	=============================================================================
 	
+
+{% endraw %}

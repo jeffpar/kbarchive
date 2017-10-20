@@ -6,6 +6,8 @@ permalink: /kb/152/Q152919/
 
 ## Q152919: XFOR: SMTP CRs Routed to Home Site Before Going Out IMC
 
+{% raw %}
+
 	Article: Q152919
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/152/Q152919/
 	
 	=============================================================================
 	
+
+{% endraw %}

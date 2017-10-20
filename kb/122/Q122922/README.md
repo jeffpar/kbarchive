@@ -6,6 +6,8 @@ permalink: /kb/122/Q122922/
 
 ## Q122922: Supported Video Adapters on DEC Alpha AXP Systems
 
+{% raw %}
+
 	Article: Q122922
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/122/Q122922/
 	
 	=============================================================================
 	
+
+{% endraw %}

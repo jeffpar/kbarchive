@@ -6,6 +6,8 @@ permalink: /kb/245/Q245684/
 
 ## Q245684: PRB: SWP_NOREDRAW Not Defined for PPC 2.11 or HPC Pro 2.11
 
+{% raw %}
+
 	Article: Q245684
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/245/Q245684/
 	
 	=============================================================================
 	
+
+{% endraw %}

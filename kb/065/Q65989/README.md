@@ -6,6 +6,8 @@ permalink: /kb/065/Q65989/
 
 ## Q65989: Flight Sim: Plane Stalls or Nose Dives Unexpectedly
 
+{% raw %}
+
 	Article: Q65989
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/065/Q65989/
 	
 	=============================================================================
 	
+
+{% endraw %}

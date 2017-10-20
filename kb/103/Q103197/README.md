@@ -6,6 +6,8 @@ permalink: /kb/103/Q103197/
 
 ## Q103197: PC Forms: Debugging Forms Opened in Mail
 
+{% raw %}
+
 	Article: Q103197
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -81,3 +83,5 @@ permalink: /kb/103/Q103197/
 	
 	=============================================================================
 	
+
+{% endraw %}

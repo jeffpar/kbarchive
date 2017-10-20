@@ -6,6 +6,8 @@ permalink: /kb/088/Q88988/
 
 ## Q88988: SET SAFETY OFF Command Suppresses Messages
 
+{% raw %}
+
 	Article: Q88988
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:1.21,2.1
@@ -53,3 +55,5 @@ permalink: /kb/088/Q88988/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216064/
 
 ## Q216064: Cluster Server Has Clusdb Corruption After Power Outage
 
+{% raw %}
+
 	Article: Q216064
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/216/Q216064/
 	
 	=============================================================================
 	
+
+{% endraw %}

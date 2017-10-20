@@ -6,6 +6,8 @@ permalink: /kb/174/Q174046/
 
 ## Q174046: XCLN: Problems Using Print Button with Lexmark Optra E Printers
 
+{% raw %}
+
 	Article: Q174046
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174046/
 	
 	=============================================================================
 	
+
+{% endraw %}

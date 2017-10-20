@@ -6,6 +6,8 @@ permalink: /kb/082/Q82829/
 
 ## Q82829: Using Windows Entertainment Pack Version 1 with Windows 3.1
 
+{% raw %}
+
 	Article: Q82829
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/082/Q82829/
 	
 	=============================================================================
 	
+
+{% endraw %}

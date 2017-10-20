@@ -6,6 +6,8 @@ permalink: /kb/232/Q232370/
 
 ## Q232370: XCON: MTA Loses Attachment on FTBP Messages with No Subject
 
+{% raw %}
+
 	Article: Q232370
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -105,3 +107,5 @@ permalink: /kb/232/Q232370/
 	
 	=============================================================================
 	
+
+{% endraw %}

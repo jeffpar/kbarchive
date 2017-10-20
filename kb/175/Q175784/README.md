@@ -6,6 +6,8 @@ permalink: /kb/175/Q175784/
 
 ## Q175784: INFO: Replacing #import's Exception Raising Mechanism
 
+{% raw %}
+
 	Article: Q175784
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/175/Q175784/
 	
 	=============================================================================
 	
+
+{% endraw %}

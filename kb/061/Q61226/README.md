@@ -6,6 +6,8 @@ permalink: /kb/061/Q61226/
 
 ## Q61226: C 6.00 README: LINK Error L1116 Text
 
+{% raw %}
+
 	Article: Q61226
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -24,3 +26,5 @@ permalink: /kb/061/Q61226/
 	
 	  In other words, you cannot use the /EXEPACK option when linking
 	  Windows applications.
+
+{% endraw %}

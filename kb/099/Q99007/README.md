@@ -6,6 +6,8 @@ permalink: /kb/099/Q99007/
 
 ## Q99007: Undelete for Windows Hangs When Checking Root Directory
 
+{% raw %}
+
 	Article: Q99007
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/099/Q99007/
 	
 	=============================================================================
 	
+
+{% endraw %}

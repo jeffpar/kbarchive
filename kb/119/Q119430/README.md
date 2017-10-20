@@ -6,6 +6,8 @@ permalink: /kb/119/Q119430/
 
 ## Q119430: Pentium with Intel Motherboard Hangs When Running MemMaker
 
+{% raw %}
+
 	Article: Q119430
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/119/Q119430/
 	
 	=============================================================================
 	
+
+{% endraw %}

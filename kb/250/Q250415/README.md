@@ -6,6 +6,8 @@ permalink: /kb/250/Q250415/
 
 ## Q250415: SMS: Remote Control May Not Work for Component Servers
 
+{% raw %}
+
 	Article: Q250415
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -59,3 +61,5 @@ permalink: /kb/250/Q250415/
 	
 	=============================================================================
 	
+
+{% endraw %}

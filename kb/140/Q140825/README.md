@@ -6,6 +6,8 @@ permalink: /kb/140/Q140825/
 
 ## Q140825: Node Retries Open(Link) on X.25 Even After Error is Reported
 
+{% raw %}
+
 	Article: Q140825
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -73,3 +75,5 @@ permalink: /kb/140/Q140825/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195031/
 
 ## Q195031: HOWTO: Adding Splitter Bars Support to Active Document Server
 
+{% raw %}
+
 	Article: Q195031
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -197,3 +199,5 @@ permalink: /kb/195/Q195031/
 	
 	=============================================================================
 	
+
+{% endraw %}

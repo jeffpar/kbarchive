@@ -6,6 +6,8 @@ permalink: /kb/172/Q172525/
 
 ## Q172525: WD97: Incorrect Format of Phone Number in Mail Merge Result
 
+{% raw %}
+
 	Article: Q172525
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/172/Q172525/
 	
 	=============================================================================
 	
+
+{% endraw %}

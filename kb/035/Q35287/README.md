@@ -6,6 +6,8 @@ permalink: /kb/035/Q35287/
 
 ## Q35287: MDA Normal Inverse Text Example
 
+{% raw %}
+
 	Article: Q35287
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -36,3 +38,5 @@ permalink: /kb/035/Q35287/
 	 _settextcolor(oldcolor);
 	 _setbkcolor(oldbkcolor);
 	}
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98190/
 
 ## Q98190: Move Command Doesn't Work in Voice Pilot
 
+{% raw %}
+
 	Article: Q98190
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/098/Q98190/
 	
 	=============================================================================
 	
+
+{% endraw %}

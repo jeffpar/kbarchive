@@ -6,6 +6,8 @@ permalink: /kb/193/Q193393/
 
 ## Q193393: Modem Sharing Stops Working on LANtastic 7.0 Network
 
+{% raw %}
+
 	Article: Q193393
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/193/Q193393/
 	
 	=============================================================================
 	
+
+{% endraw %}

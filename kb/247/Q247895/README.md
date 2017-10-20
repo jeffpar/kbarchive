@@ -6,6 +6,8 @@ permalink: /kb/247/Q247895/
 
 ## Q247895: MSMQ Reports Number of Licenses Exceeded in Windows NT Server
 
+{% raw %}
+
 	Article: Q247895
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/247/Q247895/
 	
 	=============================================================================
 	
+
+{% endraw %}

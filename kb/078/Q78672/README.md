@@ -6,6 +6,8 @@ permalink: /kb/078/Q78672/
 
 ## Q78672: Computers That Do Not Maintain Date/Time with MS-DOS 5 or 6
 
+{% raw %}
+
 	Article: Q78672
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0,5.0a,6.0,6.2,6.21,6.22
@@ -102,3 +104,5 @@ permalink: /kb/078/Q78672/
 	
 	=============================================================================
 	
+
+{% endraw %}

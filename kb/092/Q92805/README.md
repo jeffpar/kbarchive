@@ -6,6 +6,8 @@ permalink: /kb/092/Q92805/
 
 ## Q92805: PC Win: Spelling and Custom Dict Entries in WIN.INI
 
+{% raw %}
+
 	Article: Q92805
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/092/Q92805/
 	
 	=============================================================================
 	
+
+{% endraw %}

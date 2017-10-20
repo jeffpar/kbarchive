@@ -6,6 +6,8 @@ permalink: /kb/132/Q132389/
 
 ## Q132389: Multimedia: Demo Won't Continue When You Switch to New Program
 
+{% raw %}
+
 	Article: Q132389
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/132/Q132389/
 	
 	=============================================================================
 	
+
+{% endraw %}

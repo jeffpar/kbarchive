@@ -6,6 +6,8 @@ permalink: /kb/131/Q131810/
 
 ## Q131810: Internet Newsgroups Shown as Bulletin Board Type
 
+{% raw %}
+
 	Article: Q131810
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -39,3 +41,5 @@ permalink: /kb/131/Q131810/
 	
 	=============================================================================
 	
+
+{% endraw %}

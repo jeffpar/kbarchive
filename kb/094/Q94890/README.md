@@ -6,6 +6,8 @@ permalink: /kb/094/Q94890/
 
 ## Q94890: Err Msg: &quot;This File Contains a Strain of M+E&quot;
 
+{% raw %}
+
 	Article: Q94890
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:3.0,4.0
@@ -45,3 +47,5 @@ permalink: /kb/094/Q94890/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/255/Q255181/
 
 ## Q255181: Exchange Server 5.5 Service Pack 2 Installation Stops
 
+{% raw %}
+
 	Article: Q255181
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2,5.5 SP3
@@ -87,3 +89,5 @@ permalink: /kb/255/Q255181/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265070/
 
 ## Q265070: XCLN: Error Message Occurs When You Reply to Or Forward E-mail
 
+{% raw %}
+
 	Article: Q265070
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; :
@@ -63,3 +65,5 @@ permalink: /kb/265/Q265070/
 	
 	=============================================================================
 	
+
+{% endraw %}

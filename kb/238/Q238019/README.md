@@ -6,6 +6,8 @@ permalink: /kb/238/Q238019/
 
 ## Q238019: Multimedia Err Msg: Video Not Available...
 
+{% raw %}
+
 	Article: Q238019
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/238/Q238019/
 	
 	=============================================================================
 	
+
+{% endraw %}

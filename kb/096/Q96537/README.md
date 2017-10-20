@@ -6,6 +6,8 @@ permalink: /kb/096/Q96537/
 
 ## Q96537: PROFS: 3.0 Gateway Disk 2 &#91;5.25&#93;
 
+{% raw %}
+
 	Article: Q96537
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -44,3 +46,5 @@ permalink: /kb/096/Q96537/
 	
 	=============================================================================
 	
+
+{% endraw %}

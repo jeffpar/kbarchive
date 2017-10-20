@@ -6,6 +6,8 @@ permalink: /kb/167/Q167351/
 
 ## Q167351: FIX: Using Declaration Causes C2327
 
+{% raw %}
+
 	Article: Q167351
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -91,3 +93,5 @@ permalink: /kb/167/Q167351/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259957/
 
 ## Q259957: XCLN: Sample Outlook.prf File with Internet E-mail Service
 
+{% raw %}
+
 	Article: Q259957
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -672,3 +674,5 @@ permalink: /kb/259/Q259957/
 	
 	=============================================================================
 	
+
+{% endraw %}

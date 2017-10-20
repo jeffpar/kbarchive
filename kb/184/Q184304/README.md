@@ -6,6 +6,8 @@ permalink: /kb/184/Q184304/
 
 ## Q184304: XWEB: Outlook Web Access Error Message: Unable to Render View
 
+{% raw %}
+
 	Article: Q184304
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -127,3 +129,5 @@ permalink: /kb/184/Q184304/
 	
 	=============================================================================
 	
+
+{% endraw %}

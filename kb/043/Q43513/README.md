@@ -6,6 +6,8 @@ permalink: /kb/043/Q43513/
 
 ## Q43513: Assert Macro Causes Warning C4074 with /W3 in QuickC 2.00
 
+{% raw %}
+
 	Article: Q43513
 	Product(s): See article
 	Version(s): 2.00
@@ -40,3 +42,5 @@ permalink: /kb/043/Q43513/
 	The line that will be deleted and moved is as follows:
 	
 	    void _CDECL _assert(void *, void *, unsigned); \
+
+{% endraw %}

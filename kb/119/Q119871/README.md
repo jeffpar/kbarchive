@@ -6,6 +6,8 @@ permalink: /kb/119/Q119871/
 
 ## Q119871: FIX: Optimization Bug Using Shift Operators and outp()
 
+{% raw %}
+
 	Article: Q119871
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -82,3 +84,5 @@ permalink: /kb/119/Q119871/
 	
 	=============================================================================
 	
+
+{% endraw %}

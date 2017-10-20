@@ -6,6 +6,8 @@ permalink: /kb/317/Q317692/
 
 ## Q317692: Unable to Map Error Code 1240
 
+{% raw %}
+
 	Article: Q317692
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -100,3 +102,5 @@ permalink: /kb/317/Q317692/
 	
 	=============================================================================
 	
+
+{% endraw %}

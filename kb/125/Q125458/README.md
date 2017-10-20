@@ -6,6 +6,8 @@ permalink: /kb/125/Q125458/
 
 ## Q125458: Writer/Artist: How to Print a Kids Document to a File
 
+{% raw %}
+
 	Article: Q125458
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,2.0
@@ -191,3 +193,5 @@ permalink: /kb/125/Q125458/
 	
 	=============================================================================
 	
+
+{% endraw %}

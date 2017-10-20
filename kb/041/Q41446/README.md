@@ -6,6 +6,8 @@ permalink: /kb/041/Q41446/
 
 ## Q41446: QB 2.x/3.00 Example to Load DOS Directory Listing into Array
 
+{% raw %}
+
 	Article: Q41446
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00
@@ -142,3 +144,5 @@ permalink: /kb/041/Q41446/
 	   CALL INT86(&H21, VARPTR(InArray%(0)), VARPTR(OutArray%(0)))
 	WEND
 	END
+
+{% endraw %}

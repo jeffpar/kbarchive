@@ -6,6 +6,8 @@ permalink: /kb/095/Q95972/
 
 ## Q95972: PC Ext: Dispatch Cannot Spawn External with Break Options
 
+{% raw %}
+
 	Article: Q95972
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/095/Q95972/
 	
 	=============================================================================
 	
+
+{% endraw %}

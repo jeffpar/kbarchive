@@ -6,6 +6,8 @@ permalink: /kb/162/Q162596/
 
 ## Q162596: WD97: Products That Qualify for the Word Upgrade
 
+{% raw %}
+
 	Article: Q162596
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/162/Q162596/
 	
 	=============================================================================
 	
+
+{% endraw %}

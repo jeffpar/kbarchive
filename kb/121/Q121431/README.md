@@ -6,6 +6,8 @@ permalink: /kb/121/Q121431/
 
 ## Q121431: Scenes 2.0: Cannot Activate from Windows NT Control Panel
 
+{% raw %}
+
 	Article: Q121431
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -53,3 +55,5 @@ permalink: /kb/121/Q121431/
 	
 	=============================================================================
 	
+
+{% endraw %}

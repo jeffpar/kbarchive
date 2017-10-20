@@ -6,6 +6,8 @@ permalink: /kb/219/Q219336/
 
 ## Q219336: Number9 Revolution3D Driver Replaced with VGA Driver
 
+{% raw %}
+
 	Article: Q219336
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/219/Q219336/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116158/
 
 ## Q116158: RAS Server Resets in Answer Mode with Sportster Modem
 
+{% raw %}
+
 	Article: Q116158
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -81,3 +83,5 @@ permalink: /kb/116/Q116158/
 	
 	=============================================================================
 	
+
+{% endraw %}

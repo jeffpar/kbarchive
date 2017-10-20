@@ -6,6 +6,8 @@ permalink: /kb/035/Q35028/
 
 ## Q35028: Passing Textargs to M with the /E Switch
 
+{% raw %}
+
 	Article: Q35028
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -66,3 +68,5 @@ permalink: /kb/035/Q35028/
 	This command searches for the QUOTED literal text ""a quoted search
 	string"".  The "\" and \"" are necessary to cause M itself to postpone
 	evaluation of the double-quotation marks until actual search time.
+
+{% endraw %}

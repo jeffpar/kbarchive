@@ -6,6 +6,8 @@ permalink: /kb/175/Q175437/
 
 ## Q175437: XFOR: Thai Characters not Translated by the MS Mail Connector
 
+{% raw %}
+
 	Article: Q175437
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/175/Q175437/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153428/
 
 ## Q153428: Microsoft Phone Dials Local Number as Long Distance
 
+{% raw %}
+
 	Article: Q153428
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153428/
 	
 	=============================================================================
 	
+
+{% endraw %}

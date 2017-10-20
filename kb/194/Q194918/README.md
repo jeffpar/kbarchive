@@ -6,6 +6,8 @@ permalink: /kb/194/Q194918/
 
 ## Q194918: XCOPY /D Uses Universal Time, Not Local Time, to Filter Files
 
+{% raw %}
+
 	Article: Q194918
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -91,3 +93,5 @@ permalink: /kb/194/Q194918/
 	
 	=============================================================================
 	
+
+{% endraw %}

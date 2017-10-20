@@ -6,6 +6,8 @@ permalink: /kb/078/Q78773/
 
 ## Q78773: FIX: Right Mouse Button Causes Remote Control Menus
 
+{% raw %}
+
 	Article: Q78773
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,3.0
@@ -92,3 +94,5 @@ permalink: /kb/078/Q78773/
 	
 	=============================================================================
 	
+
+{% endraw %}

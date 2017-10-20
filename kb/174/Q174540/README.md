@@ -6,6 +6,8 @@ permalink: /kb/174/Q174540/
 
 ## Q174540: Extra Page Printed on Epson Stylus Color Printers
 
+{% raw %}
+
 	Article: Q174540
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/174/Q174540/
 	
 	=============================================================================
 	
+
+{% endraw %}

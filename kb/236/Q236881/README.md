@@ -6,6 +6,8 @@ permalink: /kb/236/Q236881/
 
 ## Q236881: Incorrect Old Password When Updating Multiple Passwords
 
+{% raw %}
+
 	Article: Q236881
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/236/Q236881/
 	
 	=============================================================================
 	
+
+{% endraw %}

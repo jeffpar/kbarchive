@@ -6,6 +6,8 @@ permalink: /kb/135/Q135671/
 
 ## Q135671: PPT7: How to Play Sound Files Across Multiple Slides
 
+{% raw %}
+
 	Article: Q135671
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -81,3 +83,5 @@ permalink: /kb/135/Q135671/
 	
 	=============================================================================
 	
+
+{% endraw %}

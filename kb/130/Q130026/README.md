@@ -6,6 +6,8 @@ permalink: /kb/130/Q130026/
 
 ## Q130026: Best of Windows Entertainment Pack: Listing of Games
 
+{% raw %}
+
 	Article: Q130026
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130026/
 	
 	=============================================================================
 	
+
+{% endraw %}

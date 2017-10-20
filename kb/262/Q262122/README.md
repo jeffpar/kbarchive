@@ -6,6 +6,8 @@ permalink: /kb/262/Q262122/
 
 ## Q262122: XIMS: Internet Mail Service Extension Message Journaling
 
+{% raw %}
+
 	Article: Q262122
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -296,3 +298,5 @@ permalink: /kb/262/Q262122/
 	
 	=============================================================================
 	
+
+{% endraw %}

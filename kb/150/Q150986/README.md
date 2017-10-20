@@ -6,6 +6,8 @@ permalink: /kb/150/Q150986/
 
 ## Q150986: PPT7: Sample PowerPoint Templates Available on the Internet
 
+{% raw %}
+
 	Article: Q150986
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -87,3 +89,5 @@ permalink: /kb/150/Q150986/
 	
 	=============================================================================
 	
+
+{% endraw %}

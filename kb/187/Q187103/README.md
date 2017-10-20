@@ -6,6 +6,8 @@ permalink: /kb/187/Q187103/
 
 ## Q187103: Issue Connecting from Computers with Different Display Settings
 
+{% raw %}
+
 	Article: Q187103
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -39,3 +41,5 @@ permalink: /kb/187/Q187103/
 	
 	=============================================================================
 	
+
+{% endraw %}

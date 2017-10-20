@@ -6,6 +6,8 @@ permalink: /kb/183/Q183295/
 
 ## Q183295: FIX: Invalid Cursor State Error with the MS Oracle ODBC Driver
 
+{% raw %}
+
 	Article: Q183295
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03,Build 2.73.7356
@@ -107,3 +109,5 @@ permalink: /kb/183/Q183295/
 	
 	=============================================================================
 	
+
+{% endraw %}

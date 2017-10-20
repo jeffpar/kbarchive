@@ -6,6 +6,8 @@ permalink: /kb/125/Q125973/
 
 ## Q125973: Animation Techniques in Win32 Corrections and Comments
 
+{% raw %}
+
 	Article: Q125973
 	Product(s): Microsoft Press
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/125/Q125973/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187616/
 
 ## Q187616: FIX: The Dynamic Link Library Mfcce20d.dll Could Not Be Found
 
+{% raw %}
+
 	Article: Q187616
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0
@@ -112,3 +114,5 @@ permalink: /kb/187/Q187616/
 	
 	=============================================================================
 	
+
+{% endraw %}

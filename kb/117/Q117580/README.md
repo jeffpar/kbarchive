@@ -6,6 +6,8 @@ permalink: /kb/117/Q117580/
 
 ## Q117580: CONN: MMFF#.MSG Filename Range
 
+{% raw %}
+
 	Article: Q117580
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -58,3 +60,5 @@ permalink: /kb/117/Q117580/
 	
 	=============================================================================
 	
+
+{% endraw %}

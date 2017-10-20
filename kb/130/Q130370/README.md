@@ -6,6 +6,8 @@ permalink: /kb/130/Q130370/
 
 ## Q130370: FIX: C2676 on Overloaded Operators of Templated Classes
 
+{% raw %}
+
 	Article: Q130370
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -112,3 +114,5 @@ permalink: /kb/130/Q130370/
 	
 	=============================================================================
 	
+
+{% endraw %}

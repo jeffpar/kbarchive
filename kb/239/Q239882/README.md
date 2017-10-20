@@ -6,6 +6,8 @@ permalink: /kb/239/Q239882/
 
 ## Q239882: NFL Fever 2000: Graphics in the Game Do Not Appear Smooth
 
+{% raw %}
+
 	Article: Q239882
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/239/Q239882/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65125/
 
 ## Q65125: FILE: Developing Network Applications for Windows 3.1
 
+{% raw %}
+
 	Article: Q65125
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -295,3 +297,5 @@ permalink: /kb/065/Q65125/
 	
 	=============================================================================
 	
+
+{% endraw %}

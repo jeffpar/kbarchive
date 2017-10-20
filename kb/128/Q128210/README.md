@@ -6,6 +6,8 @@ permalink: /kb/128/Q128210/
 
 ## Q128210: FAQ: Most Commonly Asked Questions About Visual C++ Version 2.1
 
+{% raw %}
+
 	Article: Q128210
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:2.1;
@@ -223,3 +225,5 @@ permalink: /kb/128/Q128210/
 	
 	=============================================================================
 	
+
+{% endraw %}

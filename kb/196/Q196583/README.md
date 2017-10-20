@@ -6,6 +6,8 @@ permalink: /kb/196/Q196583/
 
 ## Q196583: PRB: An Unknown Error Occurred While Building the Cabinet File
 
+{% raw %}
+
 	Article: Q196583
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -127,3 +129,5 @@ permalink: /kb/196/Q196583/
 	
 	=============================================================================
 	
+
+{% endraw %}

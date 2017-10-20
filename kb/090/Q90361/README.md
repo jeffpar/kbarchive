@@ -6,6 +6,8 @@ permalink: /kb/090/Q90361/
 
 ## Q90361: Using SETUP /N with a Novell NetWare Server
 
+{% raw %}
+
 	Article: Q90361
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -80,3 +82,5 @@ permalink: /kb/090/Q90361/
 	
 	=============================================================================
 	
+
+{% endraw %}

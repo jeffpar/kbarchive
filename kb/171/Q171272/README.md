@@ -6,6 +6,8 @@ permalink: /kb/171/Q171272/
 
 ## Q171272: FIX: SQL-SELECT into Array Causes Illegal Operation
 
+{% raw %}
+
 	Article: Q171272
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -96,3 +98,5 @@ permalink: /kb/171/Q171272/
 	
 	=============================================================================
 	
+
+{% endraw %}

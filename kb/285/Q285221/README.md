@@ -6,6 +6,8 @@ permalink: /kb/285/Q285221/
 
 ## Q285221: PRB: &quot;There is Not Enough Memory&quot; with Menu in Defined Window
 
+{% raw %}
+
 	Article: Q285221
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -146,3 +148,5 @@ permalink: /kb/285/Q285221/
 	
 	=============================================================================
 	
+
+{% endraw %}

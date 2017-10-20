@@ -6,6 +6,8 @@ permalink: /kb/119/Q119092/
 
 ## Q119092: STB Lightspeed Tseng 4000 W32p Not Detected as PCI Card
 
+{% raw %}
+
 	Article: Q119092
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/119/Q119092/
 	
 	=============================================================================
 	
+
+{% endraw %}

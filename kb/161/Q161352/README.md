@@ -6,6 +6,8 @@ permalink: /kb/161/Q161352/
 
 ## Q161352: Problems Using the SideWinder Joystick with Games on NT 4.0
 
+{% raw %}
+
 	Article: Q161352
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0; winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/161/Q161352/
 	
 	=============================================================================
 	
+
+{% endraw %}

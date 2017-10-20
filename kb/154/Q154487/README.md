@@ -6,6 +6,8 @@ permalink: /kb/154/Q154487/
 
 ## Q154487: SYSDIFF /dump Err. Msg: The Data Is Invalid
 
+{% raw %}
+
 	Article: Q154487
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/154/Q154487/
 	
 	=============================================================================
 	
+
+{% endraw %}

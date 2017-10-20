@@ -6,6 +6,8 @@ permalink: /kb/170/Q170873/
 
 ## Q170873: WD97: IPF Viewing Name or Path on Linked Floating Picture
 
+{% raw %}
+
 	Article: Q170873
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/170/Q170873/
 	
 	=============================================================================
 	
+
+{% endraw %}

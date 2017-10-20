@@ -6,6 +6,8 @@ permalink: /kb/040/Q40797/
 
 ## Q40797: Mac DOS: Connect/Access AppleTalk Networks at Remote Sites
 
+{% raw %}
+
 	Article: Q40797
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0,3.1
@@ -60,3 +62,5 @@ permalink: /kb/040/Q40797/
 	
 	=============================================================================
 	
+
+{% endraw %}

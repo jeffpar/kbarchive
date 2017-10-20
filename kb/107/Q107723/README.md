@@ -6,6 +6,8 @@ permalink: /kb/107/Q107723/
 
 ## Q107723: Writer/Artist: Copying Text and Graphics
 
+{% raw %}
+
 	Article: Q107723
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -110,3 +112,5 @@ permalink: /kb/107/Q107723/
 	
 	=============================================================================
 	
+
+{% endraw %}

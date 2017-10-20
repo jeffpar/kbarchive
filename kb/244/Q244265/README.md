@@ -6,6 +6,8 @@ permalink: /kb/244/Q244265/
 
 ## Q244265: FS 2000: No Landing Gear to Surface Interaction Sounds
 
+{% raw %}
+
 	Article: Q244265
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -43,3 +45,5 @@ permalink: /kb/244/Q244265/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129199/
 
 ## Q129199: File Sharing Problem with Open Lotus Approach File
 
+{% raw %}
+
 	Article: Q129199
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11,3.5
@@ -66,3 +68,5 @@ permalink: /kb/129/Q129199/
 	
 	=============================================================================
 	
+
+{% endraw %}

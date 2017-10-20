@@ -6,6 +6,8 @@ permalink: /kb/249/Q249713/
 
 ## Q249713: Encarta 2000: How to Share Monthly Updates
 
+{% raw %}
+
 	Article: Q249713
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -85,3 +87,5 @@ permalink: /kb/249/Q249713/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113187/
 
 ## Q113187: Reasons for Failure of SetRestartDir
 
+{% raw %}
+
 	Article: Q113187
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/113/Q113187/
 	
 	=============================================================================
 	
+
+{% endraw %}

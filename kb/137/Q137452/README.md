@@ -6,6 +6,8 @@ permalink: /kb/137/Q137452/
 
 ## Q137452: Options Not Available When Connecting with Remote Mail
 
+{% raw %}
+
 	Article: Q137452
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/137/Q137452/
 	
 	=============================================================================
 	
+
+{% endraw %}

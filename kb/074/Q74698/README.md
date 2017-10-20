@@ -6,6 +6,8 @@ permalink: /kb/074/Q74698/
 
 ## Q74698: SDK Installation Incompatible with Networked Windows
 
+{% raw %}
+
 	Article: Q74698
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -64,3 +66,5 @@ permalink: /kb/074/Q74698/
 	
 	=============================================================================
 	
+
+{% endraw %}

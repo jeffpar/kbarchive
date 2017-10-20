@@ -6,6 +6,8 @@ permalink: /kb/091/Q91730/
 
 ## Q91730: PC Win: Custom Dictionary Not Loaded When It Should Be
 
+{% raw %}
+
 	Article: Q91730
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -49,3 +51,5 @@ permalink: /kb/091/Q91730/
 	
 	=============================================================================
 	
+
+{% endraw %}

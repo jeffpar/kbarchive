@@ -6,6 +6,8 @@ permalink: /kb/139/Q139996/
 
 ## Q139996: BUG: Wizards Create Invalid Column Names for QueryDef Join
 
+{% raw %}
+
 	Article: Q139996
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/139/Q139996/
 	
 	=============================================================================
 	
+
+{% endraw %}

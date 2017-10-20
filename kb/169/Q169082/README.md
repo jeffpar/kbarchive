@@ -6,6 +6,8 @@ permalink: /kb/169/Q169082/
 
 ## Q169082: FP: How to Fix Permissions on FrontPage Server Administrator
 
+{% raw %}
+
 	Article: Q169082
 	Product(s): Word Front Page
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/169/Q169082/
 	
 	=============================================================================
 	
+
+{% endraw %}

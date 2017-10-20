@@ -6,6 +6,8 @@ permalink: /kb/101/Q101646/
 
 ## Q101646: Scenes 1.0: Scenes in Startup Group Affects Logon Applications
 
+{% raw %}
+
 	Article: Q101646
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/101/Q101646/
 	
 	=============================================================================
 	
+
+{% endraw %}

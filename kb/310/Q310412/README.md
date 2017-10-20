@@ -6,6 +6,8 @@ permalink: /kb/310/Q310412/
 
 ## Q310412: Corrupt COM+ Catalog Prevents Iissync.exe from Running Properly
 
+{% raw %}
+
 	Article: Q310412
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -95,3 +97,5 @@ permalink: /kb/310/Q310412/
 	
 	=============================================================================
 	
+
+{% endraw %}

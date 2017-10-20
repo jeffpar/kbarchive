@@ -6,6 +6,8 @@ permalink: /kb/117/Q117711/
 
 ## Q117711: General ODBC/Connectivity Kit Information
 
+{% raw %}
+
 	Article: Q117711
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 2.60 3.00 | 2.5
@@ -45,3 +47,5 @@ permalink: /kb/117/Q117711/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185225/
 
 ## Q185225: XFOR: MSExchangeDX Fails To Start With Missing Xdir.edb File
 
+{% raw %}
+
 	Article: Q185225
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185225/
 	
 	=============================================================================
 	
+
+{% endraw %}

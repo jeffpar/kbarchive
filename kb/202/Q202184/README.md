@@ -6,6 +6,8 @@ permalink: /kb/202/Q202184/
 
 ## Q202184: Event 5701 Problems with Netlogon Service
 
+{% raw %}
+
 	Article: Q202184
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/202/Q202184/
 	
 	=============================================================================
 	
+
+{% endraw %}

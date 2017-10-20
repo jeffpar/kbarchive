@@ -6,6 +6,8 @@ permalink: /kb/174/Q174743/
 
 ## Q174743: XADM: Cannot Install 4.0/5.0 KMS After Installing 5.5 Server
 
+{% raw %}
+
 	Article: Q174743
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -46,3 +48,5 @@ permalink: /kb/174/Q174743/
 	
 	=============================================================================
 	
+
+{% endraw %}

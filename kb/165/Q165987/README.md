@@ -6,6 +6,8 @@ permalink: /kb/165/Q165987/
 
 ## Q165987: XWEB: Error Message: Failed to Get Inbox
 
+{% raw %}
+
 	Article: Q165987
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.0,5.0
@@ -104,3 +106,5 @@ permalink: /kb/165/Q165987/
 	
 	=============================================================================
 	
+
+{% endraw %}

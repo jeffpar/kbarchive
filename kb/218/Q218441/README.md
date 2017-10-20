@@ -6,6 +6,8 @@ permalink: /kb/218/Q218441/
 
 ## Q218441: Err Msg: Server Encountered Bad Data from the Client
 
+{% raw %}
+
 	Article: Q218441
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/218/Q218441/
 	
 	=============================================================================
 	
+
+{% endraw %}

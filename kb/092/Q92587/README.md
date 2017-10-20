@@ -6,6 +6,8 @@ permalink: /kb/092/Q92587/
 
 ## Q92587: Standard Mode Boot Process for Windows for Workgroups
 
+{% raw %}
+
 	Article: Q92587
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -88,3 +90,5 @@ permalink: /kb/092/Q92587/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142704/
 
 ## Q142704: Windows NT Mail Client Does Not Handle Long Filenames Correctly
 
+{% raw %}
+
 	Article: Q142704
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -71,3 +73,5 @@ permalink: /kb/142/Q142704/
 	
 	=============================================================================
 	
+
+{% endraw %}

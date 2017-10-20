@@ -6,6 +6,8 @@ permalink: /kb/177/Q177255/
 
 ## Q177255: Cannot Change the Default MSN E-mail Program to Outlook Express
 
+{% raw %}
+
 	Article: Q177255
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.01
@@ -71,3 +73,5 @@ permalink: /kb/177/Q177255/
 	
 	=============================================================================
 	
+
+{% endraw %}

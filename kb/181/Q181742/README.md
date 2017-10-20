@@ -6,6 +6,8 @@ permalink: /kb/181/Q181742/
 
 ## Q181742: XFOR: Message from Notes to Exchange Gets Stuck in Exchange.box
 
+{% raw %}
+
 	Article: Q181742
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -59,3 +61,5 @@ permalink: /kb/181/Q181742/
 	
 	=============================================================================
 	
+
+{% endraw %}

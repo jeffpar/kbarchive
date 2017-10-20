@@ -6,6 +6,8 @@ permalink: /kb/085/Q85422/
 
 ## Q85422: PRINTERS.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2
 
+{% raw %}
+
 	Article: Q85422
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -621,3 +623,5 @@ permalink: /kb/085/Q85422/
 	
 	=============================================================================
 	
+
+{% endraw %}

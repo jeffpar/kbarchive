@@ -6,6 +6,8 @@ permalink: /kb/145/Q145609/
 
 ## Q145609: Pregnancy &amp; Child Care: Setup Does Not Start
 
+{% raw %}
+
 	Article: Q145609
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/145/Q145609/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/228/Q228949/
 
 ## Q228949: Midtown Madness: Sparks Do Not Appear During Collisions
 
+{% raw %}
+
 	Article: Q228949
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/228/Q228949/
 	
 	=============================================================================
 	
+
+{% endraw %}

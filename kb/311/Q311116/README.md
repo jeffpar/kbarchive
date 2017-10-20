@@ -6,6 +6,8 @@ permalink: /kb/311/Q311116/
 
 ## Q311116: URLScan AllowDotInPath Documentation Contains an Error
 
+{% raw %}
+
 	Article: Q311116
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/311/Q311116/
 	
 	=============================================================================
 	
+
+{% endraw %}

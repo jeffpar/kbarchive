@@ -6,6 +6,8 @@ permalink: /kb/170/Q170334/
 
 ## Q170334: XADM: Troubleshooting Intrasite Directory Replication
 
+{% raw %}
+
 	Article: Q170334
 	Product(s): Microsoft Exchange
 	Version(s): 1.00
@@ -84,3 +86,5 @@ permalink: /kb/170/Q170334/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166026/
 
 ## Q166026: XADM: Malformed Message Causes AV in Information Store
 
+{% raw %}
+
 	Article: Q166026
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -83,3 +85,5 @@ permalink: /kb/166/Q166026/
 	
 	=============================================================================
 	
+
+{% endraw %}

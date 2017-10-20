@@ -6,6 +6,8 @@ permalink: /kb/266/Q266717/
 
 ## Q266717: HOWTO: Create a DCOM Client/Server Application by Using VB
 
+{% raw %}
+
 	Article: Q266717
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -295,3 +297,5 @@ permalink: /kb/266/Q266717/
 	
 	=============================================================================
 	
+
+{% endraw %}

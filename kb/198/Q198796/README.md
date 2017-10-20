@@ -6,6 +6,8 @@ permalink: /kb/198/Q198796/
 
 ## Q198796: IAS Cannot Authenticate to Windows NT Domain Using CHAP
 
+{% raw %}
+
 	Article: Q198796
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -181,3 +183,5 @@ permalink: /kb/198/Q198796/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135135/
 
 ## Q135135: Setup Hangs Some Racal Modems
 
+{% raw %}
+
 	Article: Q135135
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/135/Q135135/
 	
 	=============================================================================
 	
+
+{% endraw %}

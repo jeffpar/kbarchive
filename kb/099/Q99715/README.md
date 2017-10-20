@@ -6,6 +6,8 @@ permalink: /kb/099/Q99715/
 
 ## Q99715: 3COM: Err Msg: Error 2 -- Cannot Verify Logon User/Admin ID...
 
+{% raw %}
+
 	Article: Q99715
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/099/Q99715/
 	
 	=============================================================================
 	
+
+{% endraw %}

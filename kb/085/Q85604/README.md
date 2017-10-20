@@ -6,6 +6,8 @@ permalink: /kb/085/Q85604/
 
 ## Q85604: FAX: Program Name for the Fax Gateway
 
+{% raw %}
+
 	Article: Q85604
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -40,3 +42,5 @@ permalink: /kb/085/Q85604/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35148/
 
 ## Q35148: Underline, Reverse, Intense, Blinking in Monochrome SCREEN 0
 
+{% raw %}
+
 	Article: Q35148
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -100,3 +102,5 @@ permalink: /kb/035/Q35148/
 	   NEXT fore
 	   WHILE INKEY$ = "": WEND
 	   GOTO 5
+
+{% endraw %}

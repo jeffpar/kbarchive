@@ -6,6 +6,8 @@ permalink: /kb/057/Q57946/
 
 ## Q57946: An Example of a delay() Function in C 5.10 or QuickC 2.00
 
+{% raw %}
+
 	Article: Q57946
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -44,3 +46,5 @@ permalink: /kb/057/Q57946/
 	
 	The delay() function generates a delay in milliseconds. For example,
 	to have a 10 second delay, pass the value 10000 to the function.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150037/
 
 ## Q150037: IIS Fails to Install Some Components
 
+{% raw %}
+
 	Article: Q150037
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -41,3 +43,5 @@ permalink: /kb/150/Q150037/
 	
 	=============================================================================
 	
+
+{% endraw %}

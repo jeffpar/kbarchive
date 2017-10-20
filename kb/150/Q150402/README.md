@@ -6,6 +6,8 @@ permalink: /kb/150/Q150402/
 
 ## Q150402: Music Central 96 Update Contents: January 96
 
+{% raw %}
+
 	Article: Q150402
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -94,3 +96,5 @@ permalink: /kb/150/Q150402/
 	
 	=============================================================================
 	
+
+{% endraw %}

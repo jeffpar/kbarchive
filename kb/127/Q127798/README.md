@@ -6,6 +6,8 @@ permalink: /kb/127/Q127798/
 
 ## Q127798: Automap: Destination Ski Doesn't Install with Automap Pro
 
+{% raw %}
+
 	Article: Q127798
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/127/Q127798/
 	
 	=============================================================================
 	
+
+{% endraw %}

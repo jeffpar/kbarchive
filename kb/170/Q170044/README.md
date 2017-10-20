@@ -6,6 +6,8 @@ permalink: /kb/170/Q170044/
 
 ## Q170044: ASP Fails w/ Requested Header Not Found Err. Msg.
 
+{% raw %}
+
 	Article: Q170044
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0; :1.0
@@ -94,3 +96,5 @@ permalink: /kb/170/Q170044/
 	
 	=============================================================================
 	
+
+{% endraw %}

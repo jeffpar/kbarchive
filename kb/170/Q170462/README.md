@@ -6,6 +6,8 @@ permalink: /kb/170/Q170462/
 
 ## Q170462: Error Message Sharing Folder on Drive Created by SUBST Command
 
+{% raw %}
+
 	Article: Q170462
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/170/Q170462/
 	
 	=============================================================================
 	
+
+{% endraw %}

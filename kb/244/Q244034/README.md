@@ -6,6 +6,8 @@ permalink: /kb/244/Q244034/
 
 ## Q244034: SMS: Window 95/98 Clients Hang Opening E-mail Attachments
 
+{% raw %}
+
 	Article: Q244034
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -107,3 +109,5 @@ permalink: /kb/244/Q244034/
 	
 	=============================================================================
 	
+
+{% endraw %}

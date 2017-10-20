@@ -6,6 +6,8 @@ permalink: /kb/182/Q182754/
 
 ## Q182754: Win98 Resource Kit Beta CD-ROM Missing &#92;Betaonly Folder Files
 
+{% raw %}
+
 	Article: Q182754
 	Product(s): Microsoft Press
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/182/Q182754/
 	
 	=============================================================================
 	
+
+{% endraw %}

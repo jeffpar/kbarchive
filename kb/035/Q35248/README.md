@@ -6,6 +6,8 @@ permalink: /kb/035/Q35248/
 
 ## Q35248: No Data Type for 80-Bit Precision IEEE Real Numbers in BASIC
 
+{% raw %}
+
 	Article: Q35248
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/035/Q35248/
 	   IEEE
 	   345 East 47th Street
 	   New York, NY 10017 USA
+
+{% endraw %}

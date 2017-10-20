@@ -6,6 +6,8 @@ permalink: /kb/129/Q129942/
 
 ## Q129942: PRB: Using TypeOf as Part of an If Statement Fails
 
+{% raw %}
+
 	Article: Q129942
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -125,3 +127,5 @@ permalink: /kb/129/Q129942/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50461/
 
 ## Q50461: COLOR Statement in SCREEN 11 Gives &quot;Illegal Function Call&quot;
 
+{% raw %}
+
 	Article: Q50461
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -67,3 +69,5 @@ permalink: /kb/050/Q50461/
 	PALETTE 1, foreground&
 	LINE (10, 240)-(630, 240)
 	WHILE INKEY$ = "": WEND
+
+{% endraw %}

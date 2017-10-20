@@ -6,6 +6,8 @@ permalink: /kb/059/Q59536/
 
 ## Q59536: OS/2 Module Definition File Syntax
 
+{% raw %}
+
 	Article: Q59536
 	Product(s): See article
 	Version(s): 5.01.21 5.02 5.03 5.05
@@ -54,3 +56,5 @@ permalink: /kb/059/Q59536/
 	Syntax, in "Advanced OS/2 Programming" or Chapter 19, Using Module-
 	Definition Files, in the "Microsoft FORTRAN CodeView and Utilities
 	User's Guide," packaged with FORTRAN Version 5.00.
+
+{% endraw %}

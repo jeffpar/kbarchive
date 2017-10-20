@@ -6,6 +6,8 @@ permalink: /kb/285/Q285320/
 
 ## Q285320: MechWarrior 4 Err Msg: STOP: Cannot Create 'Resource&#92;Variants...
 
+{% raw %}
+
 	Article: Q285320
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/285/Q285320/
 	
 	=============================================================================
 	
+
+{% endraw %}

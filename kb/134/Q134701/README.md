@@ -6,6 +6,8 @@ permalink: /kb/134/Q134701/
 
 ## Q134701: Uninitialized Pointers in DHCPSSVC.DLL Cause Access Violation
 
+{% raw %}
+
 	Article: Q134701
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -66,3 +68,5 @@ permalink: /kb/134/Q134701/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35261/
 
 ## Q35261: Macro to Print Part or All of a File from within M
 
+{% raw %}
+
 	Article: Q35261
 	Product(s): See article
 	Version(s): 1.00  1.02 | 1.00 1.02
@@ -55,3 +57,5 @@ permalink: /kb/035/Q35261/
 	
 	5. arg "del PRINT.TMP" shell setfile: This executes a DOS shell that
 	   deletes PRINT.TMP, then uses Setfile to return to the original file.
+
+{% endraw %}

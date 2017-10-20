@@ -6,6 +6,8 @@ permalink: /kb/087/Q87152/
 
 ## Q87152: Mac Srv Wkst: Handling of Local and Server Wastebaskets
 
+{% raw %}
+
 	Article: Q87152
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -40,3 +42,5 @@ permalink: /kb/087/Q87152/
 	
 	=============================================================================
 	
+
+{% endraw %}

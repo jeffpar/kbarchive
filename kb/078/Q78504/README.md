@@ -6,6 +6,8 @@ permalink: /kb/078/Q78504/
 
 ## Q78504: EVDISK.SYS Is Not Compatible with MS-DOS 5 Upgrade
 
+{% raw %}
+
 	Article: Q78504
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/078/Q78504/
 	
 	=============================================================================
 	
+
+{% endraw %}

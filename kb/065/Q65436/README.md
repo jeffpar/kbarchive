@@ -6,6 +6,8 @@ permalink: /kb/065/Q65436/
 
 ## Q65436: HIMEM.SYS Included with Microsoft C Compiler Version 6.0
 
+{% raw %}
+
 	Article: Q65436
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -36,3 +38,5 @@ permalink: /kb/065/Q65436/
 	
 	=============================================================================
 	
+
+{% endraw %}

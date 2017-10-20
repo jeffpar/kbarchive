@@ -6,6 +6,8 @@ permalink: /kb/083/Q83500/
 
 ## Q83500: SMARTDRV.EXE Does Not Support Command Line Size Change
 
+{% raw %}
+
 	Article: Q83500
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/083/Q83500/
 	
 	=============================================================================
 	
+
+{% endraw %}

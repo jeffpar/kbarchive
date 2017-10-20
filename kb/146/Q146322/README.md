@@ -6,6 +6,8 @@ permalink: /kb/146/Q146322/
 
 ## Q146322: XADM: Modified Address Template Only Displays on Client
 
+{% raw %}
+
 	Article: Q146322
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/146/Q146322/
 	
 	=============================================================================
 	
+
+{% endraw %}

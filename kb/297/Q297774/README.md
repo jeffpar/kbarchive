@@ -6,6 +6,8 @@ permalink: /kb/297/Q297774/
 
 ## Q297774: Windows 95 Dial-Up Networking 1.4 Upgrade Release Notes
 
+{% raw %}
+
 	Article: Q297774
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1,2.5
@@ -561,3 +563,5 @@ permalink: /kb/297/Q297774/
 	
 	=============================================================================
 	
+
+{% endraw %}

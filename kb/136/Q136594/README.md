@@ -6,6 +6,8 @@ permalink: /kb/136/Q136594/
 
 ## Q136594: FIX: Error Using Inline Assembly in a Template Class
 
+{% raw %}
+
 	Article: Q136594
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2
@@ -102,3 +104,5 @@ permalink: /kb/136/Q136594/
 	
 	=============================================================================
 	
+
+{% endraw %}

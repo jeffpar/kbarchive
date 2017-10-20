@@ -6,6 +6,8 @@ permalink: /kb/178/Q178729/
 
 ## Q178729: How To Configure Windows 95 to Dial into a RAS/RRAS Server
 
+{% raw %}
+
 	Article: Q178729
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0;Windows:95
@@ -96,3 +98,5 @@ permalink: /kb/178/Q178729/
 	
 	=============================================================================
 	
+
+{% endraw %}

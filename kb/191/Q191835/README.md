@@ -6,6 +6,8 @@ permalink: /kb/191/Q191835/
 
 ## Q191835: PRB: Enumerated Data Types in DBGRID32.OCX
 
+{% raw %}
+
 	Article: Q191835
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/191/Q191835/
 	
 	=============================================================================
 	
+
+{% endraw %}

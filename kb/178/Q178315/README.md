@@ -6,6 +6,8 @@ permalink: /kb/178/Q178315/
 
 ## Q178315: APPC or CPIC Programs Stop Working
 
+{% raw %}
+
 	Article: Q178315
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -80,3 +82,5 @@ permalink: /kb/178/Q178315/
 	
 	=============================================================================
 	
+
+{% endraw %}

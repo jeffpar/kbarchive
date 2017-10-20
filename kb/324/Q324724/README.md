@@ -6,6 +6,8 @@ permalink: /kb/324/Q324724/
 
 ## Q324724: BUG: Backup Sponsor Servers Added to Client's Sponsor Server Lis
 
+{% raw %}
+
 	Article: Q324724
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -114,3 +116,5 @@ permalink: /kb/324/Q324724/
 	
 	=============================================================================
 	
+
+{% endraw %}

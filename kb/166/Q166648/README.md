@@ -6,6 +6,8 @@ permalink: /kb/166/Q166648/
 
 ## Q166648: Word Cannot Retrieve the Business Address from Outlook
 
+{% raw %}
+
 	Article: Q166648
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/166/Q166648/
 	
 	=============================================================================
 	
+
+{% endraw %}

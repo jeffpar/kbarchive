@@ -6,6 +6,8 @@ permalink: /kb/189/Q189580/
 
 ## Q189580: BUG: Print Preview Scroll Bar Disappears After Zoom In, Zoom Out
 
+{% raw %}
+
 	Article: Q189580
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0
@@ -181,3 +183,5 @@ permalink: /kb/189/Q189580/
 	
 	=============================================================================
 	
+
+{% endraw %}

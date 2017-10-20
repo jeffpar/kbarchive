@@ -6,6 +6,8 @@ permalink: /kb/167/Q167008/
 
 ## Q167008: SMS: Incorrect Workstation Attribute Set in the Setup Column
 
+{% raw %}
+
 	Article: Q167008
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -50,3 +52,5 @@ permalink: /kb/167/Q167008/
 	
 	=============================================================================
 	
+
+{% endraw %}

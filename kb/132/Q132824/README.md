@@ -6,6 +6,8 @@ permalink: /kb/132/Q132824/
 
 ## Q132824: Windows 95 Hangs on Dell Omniplex 486/66 Computers
 
+{% raw %}
+
 	Article: Q132824
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/132/Q132824/
 	
 	=============================================================================
 	
+
+{% endraw %}

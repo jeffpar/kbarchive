@@ -6,6 +6,8 @@ permalink: /kb/116/Q116491/
 
 ## Q116491: PRB: ClassWizard Links Only Types with DDX Support
 
+{% raw %}
+
 	Article: Q116491
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1,4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/116/Q116491/
 	
 	=============================================================================
 	
+
+{% endraw %}

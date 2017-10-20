@@ -6,6 +6,8 @@ permalink: /kb/128/Q128245/
 
 ## Q128245: CPIC/APPC Program May Hang Opening a Dependent APPC Session
 
+{% raw %}
+
 	Article: Q128245
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -111,3 +113,5 @@ permalink: /kb/128/Q128245/
 	
 	=============================================================================
 	
+
+{% endraw %}

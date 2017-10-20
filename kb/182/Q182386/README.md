@@ -6,6 +6,8 @@ permalink: /kb/182/Q182386/
 
 ## Q182386: PRB: Varchar Output Parameter Causes &quot;Data Truncated&quot; Error
 
+{% raw %}
+
 	Article: Q182386
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -81,3 +83,5 @@ permalink: /kb/182/Q182386/
 	
 	=============================================================================
 	
+
+{% endraw %}

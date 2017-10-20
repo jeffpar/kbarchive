@@ -6,6 +6,8 @@ permalink: /kb/264/Q264644/
 
 ## Q264644: &quot;The Drive Cannot Be Locked for Exclusive Use&quot; Message When Dele
 
+{% raw %}
+
 	Article: Q264644
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/264/Q264644/
 	
 	=============================================================================
 	
+
+{% endraw %}

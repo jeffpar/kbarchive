@@ -6,6 +6,8 @@ permalink: /kb/161/Q161689/
 
 ## Q161689: CG3: Error Messages Appear When You Install Extra Clip Art
 
+{% raw %}
+
 	Article: Q161689
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0
@@ -181,3 +183,5 @@ permalink: /kb/161/Q161689/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88075/
 
 ## Q88075: WinLogin Err Msg: Could Not Connect to a Remote Resource...
 
+{% raw %}
+
 	Article: Q88075
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -75,3 +77,5 @@ permalink: /kb/088/Q88075/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30819/
 
 ## Q30819: MASM 5.10 OS2.DOC: OS/2 Call Summary - Keyboard Input
 
+{% raw %}
+
 	Article: Q30819
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -76,3 +78,5 @@ permalink: /kb/030/Q30819/
 	
 	   @KbdSetCustXt - Installs a custom translate table for the logical keyboard
 	   Parameters - CodePage:PW, KbdHandle:W
+
+{% endraw %}

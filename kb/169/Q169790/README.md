@@ -6,6 +6,8 @@ permalink: /kb/169/Q169790/
 
 ## Q169790: How to Troubleshoot Basic TCP/IP Problems
 
+{% raw %}
+
 	Article: Q169790
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -682,3 +684,5 @@ permalink: /kb/169/Q169790/
 	
 	=============================================================================
 	
+
+{% endraw %}

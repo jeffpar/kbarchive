@@ -6,6 +6,8 @@ permalink: /kb/031/Q31515/
 
 ## Q31515: MASM 5.10 EXT.DOC: Overview
 
+{% raw %}
+
 	Article: Q31515
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -27,3 +29,5 @@ permalink: /kb/031/Q31515/
 	variables begins with 0. Therefore, line 0 is the first line in the
 	file.
 	*/
+
+{% endraw %}

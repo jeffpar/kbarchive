@@ -6,6 +6,8 @@ permalink: /kb/113/Q113290/
 
 ## Q113290: Epson ESCP/2 EPESCP2.DRV v. 1.60 Release Notes
 
+{% raw %}
+
 	Article: Q113290
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -254,3 +256,5 @@ permalink: /kb/113/Q113290/
 	
 	=============================================================================
 	
+
+{% endraw %}

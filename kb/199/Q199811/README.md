@@ -6,6 +6,8 @@ permalink: /kb/199/Q199811/
 
 ## Q199811: How to Install ATI Rage Pro Drivers During Unattended Install
 
+{% raw %}
+
 	Article: Q199811
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -112,3 +114,5 @@ permalink: /kb/199/Q199811/
 	
 	=============================================================================
 	
+
+{% endraw %}

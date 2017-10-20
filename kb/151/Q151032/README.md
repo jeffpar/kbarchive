@@ -6,6 +6,8 @@ permalink: /kb/151/Q151032/
 
 ## Q151032: GENSPLIT Putting a Generic CWnd in a Splitter Pane
 
+{% raw %}
+
 	Article: Q151032
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,4.1,5.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/151/Q151032/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139696/
 
 ## Q139696: BUG: WinHelp Called Twice
 
+{% raw %}
+
 	Article: Q139696
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,4.21,5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/139/Q139696/
 	
 	=============================================================================
 	
+
+{% endraw %}

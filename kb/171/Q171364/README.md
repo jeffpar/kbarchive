@@ -6,6 +6,8 @@ permalink: /kb/171/Q171364/
 
 ## Q171364: DOC: NTW 4.0 Resource Kit Single-Use License Incorrect
 
+{% raw %}
+
 	Article: Q171364
 	Product(s): Microsoft Press
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/171/Q171364/
 	
 	=============================================================================
 	
+
+{% endraw %}

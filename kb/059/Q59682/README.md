@@ -6,6 +6,8 @@ permalink: /kb/059/Q59682/
 
 ## Q59682: No Menu Item Highlights Visible
 
+{% raw %}
+
 	Article: Q59682
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/059/Q59682/
 	
 	=============================================================================
 	
+
+{% endraw %}

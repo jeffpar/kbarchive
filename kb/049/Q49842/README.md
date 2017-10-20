@@ -6,6 +6,8 @@ permalink: /kb/049/Q49842/
 
 ## Q49842: Installing In-Line 80 x 87 Assembly Instructions
 
+{% raw %}
+
 	Article: Q49842
 	Product(s): See article
 	Version(s): 5.10
@@ -63,3 +65,5 @@ permalink: /kb/049/Q49842/
 	CDATA   ends
 	
 	end
+
+{% endraw %}

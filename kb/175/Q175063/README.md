@@ -6,6 +6,8 @@ permalink: /kb/175/Q175063/
 
 ## Q175063: Host Security Integration Setup and Architectural Overview
 
+{% raw %}
+
 	Article: Q175063
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -195,3 +197,5 @@ permalink: /kb/175/Q175063/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152515/
 
 ## Q152515: BUG: VFP Does Not Redraw Correctly After Resolution Change
 
+{% raw %}
+
 	Article: Q152515
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -68,3 +70,5 @@ permalink: /kb/152/Q152515/
 	
 	=============================================================================
 	
+
+{% endraw %}

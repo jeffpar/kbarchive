@@ -6,6 +6,8 @@ permalink: /kb/058/Q58213/
 
 ## Q58213: How to Empty (Flush) the Keyboard Buffer in BASIC
 
+{% raw %}
+
 	Article: Q58213
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -53,3 +55,5 @@ permalink: /kb/058/Q58213/
 	
 	   WHILE INKEY$ <> ""
 	   WEND
+
+{% endraw %}

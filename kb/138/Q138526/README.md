@@ -6,6 +6,8 @@ permalink: /kb/138/Q138526/
 
 ## Q138526: PRB: Loading Controls from Array Gives Several Error Messages
 
+{% raw %}
+
 	Article: Q138526
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/138/Q138526/
 	
 	=============================================================================
 	
+
+{% endraw %}

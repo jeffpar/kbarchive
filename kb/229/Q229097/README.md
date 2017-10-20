@@ -6,6 +6,8 @@ permalink: /kb/229/Q229097/
 
 ## Q229097: SMS: Possible Helpdesk TCP and UDP Port Conflicts
 
+{% raw %}
+
 	Article: Q229097
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -169,3 +171,5 @@ permalink: /kb/229/Q229097/
 	
 	=============================================================================
 	
+
+{% endraw %}

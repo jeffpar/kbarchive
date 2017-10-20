@@ -6,6 +6,8 @@ permalink: /kb/039/Q39379/
 
 ## Q39379: QB.EXE 4.50 &quot;Binding...&quot; then Hang If SWAP User-TYPE Strings
 
+{% raw %}
+
 	Article: Q39379
 	Product(s): See article
 	Version(s): 4.50
@@ -61,3 +63,5 @@ permalink: /kb/039/Q39379/
 	   temp.string1 = var1.string1      ' 1. a -> temp
 	   var1.string1 = var2.string1      ' 2. b -> a
 	   var2.string1 = temp.string1      ' 3. temp -> b
+
+{% endraw %}

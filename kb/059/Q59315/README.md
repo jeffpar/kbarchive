@@ -6,6 +6,8 @@ permalink: /kb/059/Q59315/
 
 ## Q59315: CodeView Trace Skips Statement Following Switch Statement
 
+{% raw %}
+
 	Article: Q59315
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -57,3 +59,5 @@ permalink: /kb/059/Q59315/
 	      marker = 2;
 	
 	}
+
+{% endraw %}

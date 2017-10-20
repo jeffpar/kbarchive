@@ -6,6 +6,8 @@ permalink: /kb/125/Q125327/
 
 ## Q125327: Mac ARA: PowerBook Model 540c Hangs When Downloading Resources
 
+{% raw %}
+
 	Article: Q125327
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -82,3 +84,5 @@ permalink: /kb/125/Q125327/
 	
 	=============================================================================
 	
+
+{% endraw %}

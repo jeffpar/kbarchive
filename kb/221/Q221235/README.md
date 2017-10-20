@@ -6,6 +6,8 @@ permalink: /kb/221/Q221235/
 
 ## Q221235: XADM: Attachments in a Binhex Message Are Empty
 
+{% raw %}
+
 	Article: Q221235
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -74,3 +76,5 @@ permalink: /kb/221/Q221235/
 	
 	=============================================================================
 	
+
+{% endraw %}

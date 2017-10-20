@@ -6,6 +6,8 @@ permalink: /kb/263/Q263384/
 
 ## Q263384: SMS: PCBIOS Date Reported Incorrectly in Hardware Inventory
 
+{% raw %}
+
 	Article: Q263384
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -56,3 +58,5 @@ permalink: /kb/263/Q263384/
 	
 	=============================================================================
 	
+
+{% endraw %}

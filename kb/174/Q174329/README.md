@@ -6,6 +6,8 @@ permalink: /kb/174/Q174329/
 
 ## Q174329: SMSINST: Creating Backup Copies of Replaced Files
 
+{% raw %}
+
 	Article: Q174329
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -88,3 +90,5 @@ permalink: /kb/174/Q174329/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157716/
 
 ## Q157716: BUG: Invalid Handle Message When Attempting a Show Diffs
 
+{% raw %}
+
 	Article: Q157716
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/157/Q157716/
 	
 	=============================================================================
 	
+
+{% endraw %}

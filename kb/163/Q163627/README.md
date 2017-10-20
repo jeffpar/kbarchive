@@ -6,6 +6,8 @@ permalink: /kb/163/Q163627/
 
 ## Q163627: XADM: How to Defrag an EDB File on a Non-Exchange Server
 
+{% raw %}
+
 	Article: Q163627
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163627/
 	
 	=============================================================================
 	
+
+{% endraw %}

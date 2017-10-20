@@ -6,6 +6,8 @@ permalink: /kb/140/Q140980/
 
 ## Q140980: Imaging for Windows 95 Version 1.0
 
+{% raw %}
+
 	Article: Q140980
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -128,3 +130,5 @@ permalink: /kb/140/Q140980/
 	
 	=============================================================================
 	
+
+{% endraw %}

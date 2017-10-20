@@ -6,6 +6,8 @@ permalink: /kb/191/Q191643/
 
 ## Q191643: BUG: Insert Field Into Table In Designer Doesn't Highlight Name
 
+{% raw %}
+
 	Article: Q191643
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -64,3 +66,5 @@ permalink: /kb/191/Q191643/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/029/Q29113/
 
 ## Q29113: Example of Passing C Strings to Assembly Language
 
+{% raw %}
+
 	Article: Q29113
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -58,3 +60,5 @@ permalink: /kb/029/Q29113/
 	
 	_changit ENDP
 	        END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163226/
 
 ## Q163226: PaperPort Driver Setup Button May Be Unavailable
 
+{% raw %}
+
 	Article: Q163226
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -55,3 +57,5 @@ permalink: /kb/163/Q163226/
 	
 	=============================================================================
 	
+
+{% endraw %}

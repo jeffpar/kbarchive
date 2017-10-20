@@ -6,6 +6,8 @@ permalink: /kb/192/Q192653/
 
 ## Q192653: FIX: Eight or More ActiveX DLLs in Compiled Project Cause Error
 
+{% raw %}
+
 	Article: Q192653
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -155,3 +157,5 @@ permalink: /kb/192/Q192653/
 	
 	=============================================================================
 	
+
+{% endraw %}

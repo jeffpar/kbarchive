@@ -6,6 +6,8 @@ permalink: /kb/150/Q150973/
 
 ## Q150973: PRB: OLE Error 0x80040113 Invalid Class String with MSGraph
 
+{% raw %}
+
 	Article: Q150973
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -67,3 +69,5 @@ permalink: /kb/150/Q150973/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182877/
 
 ## Q182877: WD97: Reverse Print Order Does Not Work with Epson Stylus 500
 
+{% raw %}
+
 	Article: Q182877
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/182/Q182877/
 	
 	=============================================================================
 	
+
+{% endraw %}

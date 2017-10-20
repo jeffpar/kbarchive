@@ -6,6 +6,8 @@ permalink: /kb/178/Q178094/
 
 ## Q178094: XFOR: Incorrect Time Stamp on Messages Sent from NZDT Zone
 
+{% raw %}
+
 	Article: Q178094
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -90,3 +92,5 @@ permalink: /kb/178/Q178094/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241520/
 
 ## Q241520: How to Disable WebDAV for IIS 5.0
 
+{% raw %}
+
 	Article: Q241520
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/241/Q241520/
 	
 	=============================================================================
 	
+
+{% endraw %}

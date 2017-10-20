@@ -6,6 +6,8 @@ permalink: /kb/120/Q120693/
 
 ## Q120693: Dual Processor MIPS Computer with Proteon NIC Hangs At Startup
 
+{% raw %}
+
 	Article: Q120693
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/120/Q120693/
 	
 	=============================================================================
 	
+
+{% endraw %}

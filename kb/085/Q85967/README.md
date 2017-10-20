@@ -6,6 +6,8 @@ permalink: /kb/085/Q85967/
 
 ## Q85967: PC Win: Embedded Paintbrush Object Does Not Print Color
 
+{% raw %}
+
 	Article: Q85967
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -42,3 +44,5 @@ permalink: /kb/085/Q85967/
 	
 	=============================================================================
 	
+
+{% endraw %}

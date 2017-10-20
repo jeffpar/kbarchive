@@ -6,6 +6,8 @@ permalink: /kb/049/Q49707/
 
 ## Q49707: Shifting (SHL) Using an 8-Bit Constant
 
+{% raw %}
+
 	Article: Q49707
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -49,3 +51,5 @@ permalink: /kb/049/Q49707/
 	.code
 	shl bl,2
 	end
+
+{% endraw %}

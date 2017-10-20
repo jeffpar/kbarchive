@@ -6,6 +6,8 @@ permalink: /kb/249/Q249218/
 
 ## Q249218: XFOR: Using English Version Notes Client and Connector w. DBCS
 
+{% raw %}
+
 	Article: Q249218
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -157,3 +159,5 @@ permalink: /kb/249/Q249218/
 	
 	=============================================================================
 	
+
+{% endraw %}

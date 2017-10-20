@@ -6,6 +6,8 @@ permalink: /kb/107/Q107579/
 
 ## Q107579: Novell: Direct Hosting Works on ODI Drivers Only
 
+{% raw %}
+
 	Article: Q107579
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/107/Q107579/
 	
 	=============================================================================
 	
+
+{% endraw %}

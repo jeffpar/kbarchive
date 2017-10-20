@@ -6,6 +6,8 @@ permalink: /kb/189/Q189498/
 
 ## Q189498: INFO: Using DDE in VB to Communicate with Other Windows Programs
 
+{% raw %}
+
 	Article: Q189498
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -184,3 +186,5 @@ permalink: /kb/189/Q189498/
 	
 	=============================================================================
 	
+
+{% endraw %}

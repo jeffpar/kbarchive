@@ -6,6 +6,8 @@ permalink: /kb/189/Q189271/
 
 ## Q189271: List of Services Needed to Run a Secure IIS Computer
 
+{% raw %}
+
 	Article: Q189271
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -140,3 +142,5 @@ permalink: /kb/189/Q189271/
 	
 	=============================================================================
 	
+
+{% endraw %}

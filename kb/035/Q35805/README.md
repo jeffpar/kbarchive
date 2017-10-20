@@ -6,6 +6,8 @@ permalink: /kb/035/Q35805/
 
 ## Q35805: Quick Reference Documentation Error with _setbkcolor
 
+{% raw %}
+
 	Article: Q35805
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -17,3 +19,5 @@ permalink: /kb/035/Q35805/
 	"Microsoft Quick Reference Guide," the function _setbkcolor has the
 	incorrect argument type. Instead of a short type argument, the
 	argument should be a long type.
+
+{% endraw %}

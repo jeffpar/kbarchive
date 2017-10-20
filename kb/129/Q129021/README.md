@@ -6,6 +6,8 @@ permalink: /kb/129/Q129021/
 
 ## Q129021: CINEMANIA: The Film Encyclopedia Not Included in Cinemania
 
+{% raw %}
+
 	Article: Q129021
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:; :1994 edition,1995, 1996, 1997 editions
@@ -63,3 +65,5 @@ permalink: /kb/129/Q129021/
 	
 	=============================================================================
 	
+
+{% endraw %}

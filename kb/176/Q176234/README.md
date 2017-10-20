@@ -6,6 +6,8 @@ permalink: /kb/176/Q176234/
 
 ## Q176234: XADM: Named Props Error When Running ISINTEG Utility
 
+{% raw %}
+
 	Article: Q176234
 	Product(s): Microsoft Exchange
 	Version(s): Windows:4.0,5.0
@@ -66,3 +68,5 @@ permalink: /kb/176/Q176234/
 	
 	=============================================================================
 	
+
+{% endraw %}

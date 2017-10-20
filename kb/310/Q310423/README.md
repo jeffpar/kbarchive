@@ -6,6 +6,8 @@ permalink: /kb/310/Q310423/
 
 ## Q310423: PRB: SET FOXPROSWX= in Autoexec.bat File Causes Errors in VFP 6.
 
+{% raw %}
+
 	Article: Q310423
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,7.0
@@ -100,3 +102,5 @@ permalink: /kb/310/Q310423/
 	
 	=============================================================================
 	
+
+{% endraw %}

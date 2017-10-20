@@ -6,6 +6,8 @@ permalink: /kb/154/Q154985/
 
 ## Q154985: DNS Registry Key Not Updated When Changing Zone Type
 
+{% raw %}
+
 	Article: Q154985
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/154/Q154985/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183403/
 
 ## Q183403: Expedia Streets 98: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q183403
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/183/Q183403/
 	
 	=============================================================================
 	
+
+{% endraw %}

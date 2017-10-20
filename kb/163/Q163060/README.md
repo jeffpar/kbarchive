@@ -6,6 +6,8 @@ permalink: /kb/163/Q163060/
 
 ## Q163060: ODE97: Uninstalling ODE Tools Breaks 32-bit Visual Basic Pro 4.0
 
+{% raw %}
+
 	Article: Q163060
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:4.0
@@ -104,3 +106,5 @@ permalink: /kb/163/Q163060/
 	
 	=============================================================================
 	
+
+{% endraw %}

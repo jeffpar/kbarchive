@@ -6,6 +6,8 @@ permalink: /kb/108/Q108812/
 
 ## Q108812: BackColor Erases Existing Graphics on Form or Picture Control
 
+{% raw %}
+
 	Article: Q108812
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,3.0
@@ -114,3 +116,5 @@ permalink: /kb/108/Q108812/
 	
 	=============================================================================
 	
+
+{% endraw %}

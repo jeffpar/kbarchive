@@ -6,6 +6,8 @@ permalink: /kb/241/Q241157/
 
 ## Q241157: XCON: Send and Receive Mail Through a Demand Dial Router
 
+{% raw %}
+
 	Article: Q241157
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -98,3 +100,5 @@ permalink: /kb/241/Q241157/
 	
 	=============================================================================
 	
+
+{% endraw %}

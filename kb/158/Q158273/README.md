@@ -6,6 +6,8 @@ permalink: /kb/158/Q158273/
 
 ## Q158273: WinNT Err: No Drives to Disconnect After RCMD Session
 
+{% raw %}
+
 	Article: Q158273
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -113,3 +115,5 @@ permalink: /kb/158/Q158273/
 	
 	=============================================================================
 	
+
+{% endraw %}

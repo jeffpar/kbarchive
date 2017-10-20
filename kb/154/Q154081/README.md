@@ -6,6 +6,8 @@ permalink: /kb/154/Q154081/
 
 ## Q154081: HOWTO: Use a Template for Comments When Checking In Files
 
+{% raw %}
+
 	Article: Q154081
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/154/Q154081/
 	
 	=============================================================================
 	
+
+{% endraw %}

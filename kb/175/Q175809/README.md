@@ -6,6 +6,8 @@ permalink: /kb/175/Q175809/
 
 ## Q175809: How to Prevent the Password Prompt When Using Rsh.exe
 
+{% raw %}
+
 	Article: Q175809
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/175/Q175809/
 	
 	=============================================================================
 	
+
+{% endraw %}

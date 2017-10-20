@@ -6,6 +6,8 @@ permalink: /kb/128/Q128550/
 
 ## Q128550: Memory Leak: MS-DOS-Based Apps Starting Non-MS-DOS-Based Apps
 
+{% raw %}
+
 	Article: Q128550
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -98,3 +100,5 @@ permalink: /kb/128/Q128550/
 	
 	=============================================================================
 	
+
+{% endraw %}

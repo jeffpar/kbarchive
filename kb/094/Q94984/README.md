@@ -6,6 +6,8 @@ permalink: /kb/094/Q94984/
 
 ## Q94984: INF: Cursor Behavior in Autocommit Mode
 
+{% raw %}
+
 	Article: Q94984
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -81,3 +83,5 @@ permalink: /kb/094/Q94984/
 	
 	=============================================================================
 	
+
+{% endraw %}

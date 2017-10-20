@@ -6,6 +6,8 @@ permalink: /kb/078/Q78359/
 
 ## Q78359: How to Install RAS/LAN Manager on Dual 720K Floppy Disks
 
+{% raw %}
+
 	Article: Q78359
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -180,3 +182,5 @@ permalink: /kb/078/Q78359/
 	
 	=============================================================================
 	
+
+{% endraw %}

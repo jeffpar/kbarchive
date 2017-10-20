@@ -6,6 +6,8 @@ permalink: /kb/288/Q288706/
 
 ## Q288706: PRB: CLSID {00000010-0000-0010-8000-00AA006D2EA4} Not Found
 
+{% raw %}
+
 	Article: Q288706
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -108,3 +110,5 @@ permalink: /kb/288/Q288706/
 	
 	=============================================================================
 	
+
+{% endraw %}

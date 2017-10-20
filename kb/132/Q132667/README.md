@@ -6,6 +6,8 @@ permalink: /kb/132/Q132667/
 
 ## Q132667: Icon Spacing Does Not Take Effect Automatically
 
+{% raw %}
+
 	Article: Q132667
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132667/
 	
 	=============================================================================
 	
+
+{% endraw %}

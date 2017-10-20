@@ -6,6 +6,8 @@ permalink: /kb/143/Q143148/
 
 ## Q143148: Minimum Disk Partition Size Allowed Varies Among Drives
 
+{% raw %}
+
 	Article: Q143148
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -63,3 +65,5 @@ permalink: /kb/143/Q143148/
 	
 	=============================================================================
 	
+
+{% endraw %}

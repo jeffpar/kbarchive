@@ -6,6 +6,8 @@ permalink: /kb/114/Q114540/
 
 ## Q114540: PC Gen: WA0940: Recommendations for Better Performance
 
+{% raw %}
+
 	Article: Q114540
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.2
@@ -70,3 +72,5 @@ permalink: /kb/114/Q114540/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191221/
 
 ## Q191221: XWEB: Mailbox Hidden from GAL Not Usable in Outlook Web Access
 
+{% raw %}
+
 	Article: Q191221
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/191/Q191221/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136041/
 
 ## Q136041: SMTP: Err Msg: This Device Does Not Exist on the Network
 
+{% raw %}
+
 	Article: Q136041
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/136/Q136041/
 	
 	=============================================================================
 	
+
+{% endraw %}

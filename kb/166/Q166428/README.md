@@ -6,6 +6,8 @@ permalink: /kb/166/Q166428/
 
 ## Q166428: How to Use the Chinese Code Converter
 
+{% raw %}
+
 	Article: Q166428
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -127,3 +129,5 @@ permalink: /kb/166/Q166428/
 	
 	=============================================================================
 	
+
+{% endraw %}

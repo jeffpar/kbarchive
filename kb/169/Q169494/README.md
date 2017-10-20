@@ -6,6 +6,8 @@ permalink: /kb/169/Q169494/
 
 ## Q169494: Minimized Program Does Not Open When Clicked
 
+{% raw %}
+
 	Article: Q169494
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -124,3 +126,5 @@ permalink: /kb/169/Q169494/
 	
 	=============================================================================
 	
+
+{% endraw %}

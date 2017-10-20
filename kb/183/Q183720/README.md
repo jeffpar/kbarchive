@@ -6,6 +6,8 @@ permalink: /kb/183/Q183720/
 
 ## Q183720: MacDrive 95 and 98 Are Unable to Read Macintosh Formatted Disks
 
+{% raw %}
+
 	Article: Q183720
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,2.0,2.1,2.5
@@ -77,3 +79,5 @@ permalink: /kb/183/Q183720/
 	
 	=============================================================================
 	
+
+{% endraw %}

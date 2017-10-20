@@ -6,6 +6,8 @@ permalink: /kb/121/Q121857/
 
 ## Q121857: MS-DOS Setup Displays Error: Setup Error Detected
 
+{% raw %}
+
 	Article: Q121857
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/121/Q121857/
 	
 	=============================================================================
 	
+
+{% endraw %}

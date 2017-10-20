@@ -6,6 +6,8 @@ permalink: /kb/287/Q287395/
 
 ## Q287395: Err Msg: TCP/IP Reported Error 2 : Could Not Find File Specified
 
+{% raw %}
+
 	Article: Q287395
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/287/Q287395/
 	
 	=============================================================================
 	
+
+{% endraw %}

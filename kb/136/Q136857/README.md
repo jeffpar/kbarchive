@@ -6,6 +6,8 @@ permalink: /kb/136/Q136857/
 
 ## Q136857: How the EXCLUSIVE Setting Interacts With OPEN DATABASE Command
 
+{% raw %}
+
 	Article: Q136857
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136857/
 	
 	=============================================================================
 	
+
+{% endraw %}

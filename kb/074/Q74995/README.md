@@ -6,6 +6,8 @@ permalink: /kb/074/Q74995/
 
 ## Q74995: Using Batch Files to Start with Different Configurations
 
+{% raw %}
+
 	Article: Q74995
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x
@@ -117,3 +119,5 @@ permalink: /kb/074/Q74995/
 	
 	=============================================================================
 	
+
+{% endraw %}

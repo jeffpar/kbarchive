@@ -6,6 +6,8 @@ permalink: /kb/161/Q161990/
 
 ## Q161990: How to Enable Strong Password Functionality in Windows NT
 
+{% raw %}
+
 	Article: Q161990
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -148,3 +150,5 @@ permalink: /kb/161/Q161990/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275703/
 
 ## Q275703: PRB: Shared SQL Server Repository Option Unavailable in VB Pro 6
 
+{% raw %}
+
 	Article: Q275703
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP1,6.0 SP2,6.0 SP3,6.0 SP4
@@ -63,3 +65,5 @@ permalink: /kb/275/Q275703/
 	
 	=============================================================================
 	
+
+{% endraw %}

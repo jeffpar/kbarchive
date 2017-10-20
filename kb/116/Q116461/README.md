@@ -6,6 +6,8 @@ permalink: /kb/116/Q116461/
 
 ## Q116461: BUG: Conditional Breakpoint with Pass Count Breaks Incorrectly
 
+{% raw %}
+
 	Article: Q116461
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -79,3 +81,5 @@ permalink: /kb/116/Q116461/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94568/
 
 ## Q94568: MWAV.EXE Cannot Clean FORMS Virus But MSAV.EXE Can
 
+{% raw %}
+
 	Article: Q94568
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -50,3 +52,5 @@ permalink: /kb/094/Q94568/
 	
 	=============================================================================
 	
+
+{% endraw %}

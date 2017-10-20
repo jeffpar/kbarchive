@@ -6,6 +6,8 @@ permalink: /kb/262/Q262606/
 
 ## Q262606: IIS Access Violations Occur with DBCS Trail Byte Truncated URL
 
+{% raw %}
+
 	Article: Q262606
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/262/Q262606/
 	
 	=============================================================================
 	
+
+{% endraw %}

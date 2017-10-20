@@ -6,6 +6,8 @@ permalink: /kb/261/Q261273/
 
 ## Q261273: Allegiance: Logitech Cyberman 2 Does Not Function Correctly
 
+{% raw %}
+
 	Article: Q261273
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/261/Q261273/
 	
 	=============================================================================
 	
+
+{% endraw %}

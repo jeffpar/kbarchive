@@ -6,6 +6,8 @@ permalink: /kb/191/Q191119/
 
 ## Q191119: FIX: VB Classes Can Cause IIS to Have Access Violations
 
+{% raw %}
+
 	Article: Q191119
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -78,3 +80,5 @@ permalink: /kb/191/Q191119/
 	
 	=============================================================================
 	
+
+{% endraw %}

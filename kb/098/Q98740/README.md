@@ -6,6 +6,8 @@ permalink: /kb/098/Q98740/
 
 ## Q98740: System Hangs at &quot;Starting MS-DOS&quot; Message with DoubleSpace
 
+{% raw %}
+
 	Article: Q98740
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -154,3 +156,5 @@ permalink: /kb/098/Q98740/
 	
 	=============================================================================
 	
+
+{% endraw %}

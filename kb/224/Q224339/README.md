@@ -6,6 +6,8 @@ permalink: /kb/224/Q224339/
 
 ## Q224339: XCLN: How to List Contacts in the OAB by Last Name
 
+{% raw %}
+
 	Article: Q224339
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/224/Q224339/
 	
 	=============================================================================
 	
+
+{% endraw %}

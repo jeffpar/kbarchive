@@ -6,6 +6,8 @@ permalink: /kb/129/Q129849/
 
 ## Q129849: NET Commands Don't Have Hex 0D at the End of Lines
 
+{% raw %}
+
 	Article: Q129849
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -55,3 +57,5 @@ permalink: /kb/129/Q129849/
 	
 	=============================================================================
 	
+
+{% endraw %}

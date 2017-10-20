@@ -6,6 +6,8 @@ permalink: /kb/145/Q145931/
 
 ## Q145931: Scenes 2.0: Stereogram Disk 1 Contents
 
+{% raw %}
+
 	Article: Q145931
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -92,3 +94,5 @@ permalink: /kb/145/Q145931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169097/
 
 ## Q169097: FP: How to Create Invisible Frames in FrontPage
 
+{% raw %}
+
 	Article: Q169097
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97; macintosh:1.0
@@ -117,3 +119,5 @@ permalink: /kb/169/Q169097/
 	
 	=============================================================================
 	
+
+{% endraw %}

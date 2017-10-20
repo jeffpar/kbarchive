@@ -6,6 +6,8 @@ permalink: /kb/071/Q71499/
 
 ## Q71499: INFO: Menus Supported in Dialog Boxes w/o DS_MODALFRAME Style
 
+{% raw %}
+
 	Article: Q71499
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -44,3 +46,5 @@ permalink: /kb/071/Q71499/
 	
 	=============================================================================
 	
+
+{% endraw %}

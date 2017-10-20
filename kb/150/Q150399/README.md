@@ -6,6 +6,8 @@ permalink: /kb/150/Q150399/
 
 ## Q150399: Music Central 96 Update Contents: November 95
 
+{% raw %}
+
 	Article: Q150399
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -665,3 +667,5 @@ permalink: /kb/150/Q150399/
 	
 	=============================================================================
 	
+
+{% endraw %}

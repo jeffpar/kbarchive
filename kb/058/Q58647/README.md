@@ -6,6 +6,8 @@ permalink: /kb/058/Q58647/
 
 ## Q58647: How to Successfully Debug VioPopUp() Code with CodeView
 
+{% raw %}
+
 	Article: Q58647
 	Product(s): See article
 	Version(s): 2.20 2.30 2.35
@@ -33,3 +35,5 @@ permalink: /kb/058/Q58647/
 	To work around this problem, it is essential that you do NOT step into
 	a VioPopUp call. Instead, press F5 to execute to the next breakpoint.
 	Setting the breakpoint AFTER the VioEndPopUp() call is critical.
+
+{% endraw %}

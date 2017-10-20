@@ -6,6 +6,8 @@ permalink: /kb/122/Q122116/
 
 ## Q122116: /BASEVIDEO Switch Doesn't Work After Upgrade to 3.5
 
+{% raw %}
+
 	Article: Q122116
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -49,3 +51,5 @@ permalink: /kb/122/Q122116/
 	
 	=============================================================================
 	
+
+{% endraw %}

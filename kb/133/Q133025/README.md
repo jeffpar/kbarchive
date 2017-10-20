@@ -6,6 +6,8 @@ permalink: /kb/133/Q133025/
 
 ## Q133025: HOWTO: How to Store MFC Printer Information in a Document
 
+{% raw %}
+
 	Article: Q133025
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0,4.1
@@ -226,3 +228,5 @@ permalink: /kb/133/Q133025/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123752/
 
 ## Q123752: Application Icon Does Not Minimize to the Taskbar
 
+{% raw %}
+
 	Article: Q123752
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/123/Q123752/
 	
 	=============================================================================
 	
+
+{% endraw %}

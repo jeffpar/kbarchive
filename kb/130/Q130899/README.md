@@ -6,6 +6,8 @@ permalink: /kb/130/Q130899/
 
 ## Q130899: Cannot Print From SMSTRACE Utility
 
+{% raw %}
+
 	Article: Q130899
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -39,3 +41,5 @@ permalink: /kb/130/Q130899/
 	
 	=============================================================================
 	
+
+{% endraw %}

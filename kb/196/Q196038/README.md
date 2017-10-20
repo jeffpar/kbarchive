@@ -6,6 +6,8 @@ permalink: /kb/196/Q196038/
 
 ## Q196038: Date Subvector of NVAlert Major Vector Incorrectly Set in Yr 2K
 
+{% raw %}
+
 	Article: Q196038
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -56,3 +58,5 @@ permalink: /kb/196/Q196038/
 	
 	=============================================================================
 	
+
+{% endraw %}

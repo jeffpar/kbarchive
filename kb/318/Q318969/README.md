@@ -6,6 +6,8 @@ permalink: /kb/318/Q318969/
 
 ## Q318969: FIX: Second Instance of STDLL Object Causes Exception Error
 
+{% raw %}
+
 	Article: Q318969
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -109,3 +111,5 @@ permalink: /kb/318/Q318969/
 	
 	=============================================================================
 	
+
+{% endraw %}

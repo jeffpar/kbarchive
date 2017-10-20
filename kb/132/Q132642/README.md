@@ -6,6 +6,8 @@ permalink: /kb/132/Q132642/
 
 ## Q132642: Saving Clipboard Files May Lose Some Formats
 
+{% raw %}
+
 	Article: Q132642
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/132/Q132642/
 	
 	=============================================================================
 	
+
+{% endraw %}

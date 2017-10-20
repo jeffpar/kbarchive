@@ -6,6 +6,8 @@ permalink: /kb/176/Q176069/
 
 ## Q176069: HOWTO: Print a Range of Pages in Word Using OLE Automation
 
+{% raw %}
+
 	Article: Q176069
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -231,3 +233,5 @@ permalink: /kb/176/Q176069/
 	
 	=============================================================================
 	
+
+{% endraw %}

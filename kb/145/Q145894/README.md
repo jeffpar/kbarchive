@@ -6,6 +6,8 @@ permalink: /kb/145/Q145894/
 
 ## Q145894: How to Protect Properties and Methods in a Class
 
+{% raw %}
+
 	Article: Q145894
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -142,3 +144,5 @@ permalink: /kb/145/Q145894/
 	
 	=============================================================================
 	
+
+{% endraw %}

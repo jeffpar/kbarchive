@@ -6,6 +6,8 @@ permalink: /kb/157/Q157700/
 
 ## Q157700: XCLN: Updating Windows 3.x Client can Cause GP Fault
 
+{% raw %}
+
 	Article: Q157700
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/157/Q157700/
 	
 	=============================================================================
 	
+
+{% endraw %}

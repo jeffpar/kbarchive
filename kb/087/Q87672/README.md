@@ -6,6 +6,8 @@ permalink: /kb/087/Q87672/
 
 ## Q87672: Create a Boot Disk for LAN Manager Enhanced Workstation
 
+{% raw %}
+
 	Article: Q87672
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -156,3 +158,5 @@ permalink: /kb/087/Q87672/
 	
 	=============================================================================
 	
+
+{% endraw %}

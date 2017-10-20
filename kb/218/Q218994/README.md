@@ -6,6 +6,8 @@ permalink: /kb/218/Q218994/
 
 ## Q218994: How to Assign Printers to Terminal Server Clients
 
+{% raw %}
+
 	Article: Q218994
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/218/Q218994/
 	
 	=============================================================================
 	
+
+{% endraw %}

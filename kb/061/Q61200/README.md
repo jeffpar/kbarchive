@@ -6,6 +6,8 @@ permalink: /kb/061/Q61200/
 
 ## Q61200: C 6.00 README: How to Get Fastest/Smallest Code
 
+{% raw %}
+
 	Article: Q61200
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -34,3 +36,5 @@ permalink: /kb/061/Q61200/
 	For small code with a greater margin of safety, use
 	
 	   /Osler
+
+{% endraw %}

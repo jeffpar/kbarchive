@@ -6,6 +6,8 @@ permalink: /kb/131/Q131711/
 
 ## Q131711: HOWTO: Browse a Table While Using Row Buffering in a Form
 
+{% raw %}
+
 	Article: Q131711
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/131/Q131711/
 	
 	=============================================================================
 	
+
+{% endraw %}

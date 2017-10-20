@@ -6,6 +6,8 @@ permalink: /kb/103/Q103747/
 
 ## Q103747: Err Msg: &#92;&#92;&lt;Server&gt;&#92;&lt;Share&gt; Is an Invalid Port Name
 
+{% raw %}
+
 	Article: Q103747
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -56,3 +58,5 @@ permalink: /kb/103/Q103747/
 	
 	=============================================================================
 	
+
+{% endraw %}

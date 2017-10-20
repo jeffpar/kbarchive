@@ -6,6 +6,8 @@ permalink: /kb/243/Q243641/
 
 ## Q243641: Asheron's Call: Unable to Accept Item from Computer Character
 
+{% raw %}
+
 	Article: Q243641
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/243/Q243641/
 	
 	=============================================================================
 	
+
+{% endraw %}

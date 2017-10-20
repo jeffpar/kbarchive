@@ -6,6 +6,8 @@ permalink: /kb/103/Q103036/
 
 ## Q103036: BUG: AddAtom Causes Divide by Zero Error
 
+{% raw %}
+
 	Article: Q103036
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -96,3 +98,5 @@ permalink: /kb/103/Q103036/
 	
 	=============================================================================
 	
+
+{% endraw %}

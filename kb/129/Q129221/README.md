@@ -6,6 +6,8 @@ permalink: /kb/129/Q129221/
 
 ## Q129221: XCLN: Can't Print by Dragging Message to Printer
 
+{% raw %}
+
 	Article: Q129221
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/129/Q129221/
 	
 	=============================================================================
 	
+
+{% endraw %}

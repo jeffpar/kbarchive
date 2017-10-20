@@ -6,6 +6,8 @@ permalink: /kb/126/Q126119/
 
 ## Q126119: MS FOXPRO FOR DOS SBS: Corrections and Comments
 
+{% raw %}
+
 	Article: Q126119
 	Product(s): Microsoft Press
 	Version(s): 2.5
@@ -147,3 +149,5 @@ permalink: /kb/126/Q126119/
 	
 	=============================================================================
 	
+
+{% endraw %}

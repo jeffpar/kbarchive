@@ -6,6 +6,8 @@ permalink: /kb/273/Q273029/
 
 ## Q273029: SMS: Network Discovery Does Not Detect the Default Gateway
 
+{% raw %}
+
 	Article: Q273029
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -63,3 +65,5 @@ permalink: /kb/273/Q273029/
 	
 	=============================================================================
 	
+
+{% endraw %}

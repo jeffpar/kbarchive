@@ -6,6 +6,8 @@ permalink: /kb/278/Q278492/
 
 ## Q278492: BUG: List Window Pane in Project Explorer Highlights Wrong Item
 
+{% raw %}
+
 	Article: Q278492
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/278/Q278492/
 	
 	=============================================================================
 	
+
+{% endraw %}

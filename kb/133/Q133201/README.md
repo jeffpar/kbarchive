@@ -6,6 +6,8 @@ permalink: /kb/133/Q133201/
 
 ## Q133201: INFO: Contents of README.TXT Shipped with Visual FoxPro 3.0
 
+{% raw %}
+
 	Article: Q133201
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -305,3 +307,5 @@ permalink: /kb/133/Q133201/
 	
 	=============================================================================
 	
+
+{% endraw %}

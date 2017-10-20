@@ -6,6 +6,8 @@ permalink: /kb/216/Q216950/
 
 ## Q216950: How to Enable ODBC Connection Pooling Performance Counters
 
+{% raw %}
+
 	Article: Q216950
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0,4.0,5.0
@@ -89,3 +91,5 @@ permalink: /kb/216/Q216950/
 	
 	=============================================================================
 	
+
+{% endraw %}

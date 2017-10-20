@@ -6,6 +6,8 @@ permalink: /kb/187/Q187940/
 
 ## Q187940: Input Filters over IPX WAN Routing May Fail to Filter Packets
 
+{% raw %}
+
 	Article: Q187940
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/187/Q187940/
 	
 	=============================================================================
 	
+
+{% endraw %}

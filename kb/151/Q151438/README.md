@@ -6,6 +6,8 @@ permalink: /kb/151/Q151438/
 
 ## Q151438: Control Panels/Extensions Installed by Visual FoxPro for Mac
 
+{% raw %}
+
 	Article: Q151438
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -62,3 +64,5 @@ permalink: /kb/151/Q151438/
 	
 	=============================================================================
 	
+
+{% endraw %}

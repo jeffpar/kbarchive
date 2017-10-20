@@ -6,6 +6,8 @@ permalink: /kb/041/Q41220/
 
 ## Q41220: Program Hangs the Second Time It Is Run Using an 80287
 
+{% raw %}
+
 	Article: Q41220
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -55,3 +57,5 @@ permalink: /kb/041/Q41220/
 	    _fpreset();
 	    longjmp(mark, -1);
 	}
+
+{% endraw %}

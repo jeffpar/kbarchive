@@ -6,6 +6,8 @@ permalink: /kb/171/Q171821/
 
 ## Q171821: FIX: Memory Leak When Repeatedly Changing Toolbar Button Width
 
+{% raw %}
+
 	Article: Q171821
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -92,3 +94,5 @@ permalink: /kb/171/Q171821/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175979/
 
 ## Q175979: PRB: All Parameters of Choose Function Are Evaluated
 
+{% raw %}
+
 	Article: Q175979
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -171,3 +173,5 @@ permalink: /kb/175/Q175979/
 	
 	=============================================================================
 	
+
+{% endraw %}

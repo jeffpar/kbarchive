@@ -6,6 +6,8 @@ permalink: /kb/240/Q240299/
 
 ## Q240299: Unattended Encryption Setup Problem Adds Event Log Entry in SP6
 
+{% raw %}
+
 	Article: Q240299
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/240/Q240299/
 	
 	=============================================================================
 	
+
+{% endraw %}

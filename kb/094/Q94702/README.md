@@ -6,6 +6,8 @@ permalink: /kb/094/Q94702/
 
 ## Q94702: Architecture of Windows Pen Drivers
 
+{% raw %}
+
 	Article: Q94702
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -759,3 +761,5 @@ permalink: /kb/094/Q94702/
 	
 	=============================================================================
 	
+
+{% endraw %}

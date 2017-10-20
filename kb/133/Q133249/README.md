@@ -6,6 +6,8 @@ permalink: /kb/133/Q133249/
 
 ## Q133249: FIX: Fatal Error U1052: File 'win32.mak' Not Found
 
+{% raw %}
+
 	Article: Q133249
 	Product(s): Microsoft C Compiler
 	Version(s): 2.2
@@ -70,3 +72,5 @@ permalink: /kb/133/Q133249/
 	
 	=============================================================================
 	
+
+{% endraw %}

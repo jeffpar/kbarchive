@@ -6,6 +6,8 @@ permalink: /kb/119/Q119213/
 
 ## Q119213: Running Setup for the DoubleSpace Conversion from a Hard Disk
 
+{% raw %}
+
 	Article: Q119213
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -56,3 +58,5 @@ permalink: /kb/119/Q119213/
 	
 	=============================================================================
 	
+
+{% endraw %}

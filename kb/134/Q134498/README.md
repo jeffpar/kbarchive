@@ -6,6 +6,8 @@ permalink: /kb/134/Q134498/
 
 ## Q134498: 101-Rom Error Message in Compaq Concerto Docking System
 
+{% raw %}
+
 	Article: Q134498
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/134/Q134498/
 	
 	=============================================================================
 	
+
+{% endraw %}

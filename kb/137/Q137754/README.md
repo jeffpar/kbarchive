@@ -6,6 +6,8 @@ permalink: /kb/137/Q137754/
 
 ## Q137754: Attachment Types Supported in Microsoft Exchange
 
+{% raw %}
+
 	Article: Q137754
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -85,3 +87,5 @@ permalink: /kb/137/Q137754/
 	
 	=============================================================================
 	
+
+{% endraw %}

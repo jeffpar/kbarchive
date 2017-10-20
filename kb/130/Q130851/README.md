@@ -6,6 +6,8 @@ permalink: /kb/130/Q130851/
 
 ## Q130851: Slow Time-Out Trying to Connect to Nonexistent Computer
 
+{% raw %}
+
 	Article: Q130851
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130851/
 	
 	=============================================================================
 	
+
+{% endraw %}

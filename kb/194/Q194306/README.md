@@ -6,6 +6,8 @@ permalink: /kb/194/Q194306/
 
 ## Q194306: HOWTO: Make Word Print Duplex Using Automation
 
+{% raw %}
+
 	Article: Q194306
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -175,3 +177,5 @@ permalink: /kb/194/Q194306/
 	
 	=============================================================================
 	
+
+{% endraw %}

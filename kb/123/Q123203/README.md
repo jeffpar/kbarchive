@@ -6,6 +6,8 @@ permalink: /kb/123/Q123203/
 
 ## Q123203: X.121 Specification for X.25 Address Structure
 
+{% raw %}
+
 	Article: Q123203
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/123/Q123203/
 	
 	=============================================================================
 	
+
+{% endraw %}

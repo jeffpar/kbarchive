@@ -6,6 +6,8 @@ permalink: /kb/137/Q137779/
 
 ## Q137779: Dell Latitude: Installing both Xircom TR and Ethernet PCMCIA
 
+{% raw %}
+
 	Article: Q137779
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/137/Q137779/
 	
 	=============================================================================
 	
+
+{% endraw %}

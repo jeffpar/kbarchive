@@ -6,6 +6,8 @@ permalink: /kb/133/Q133335/
 
 ## Q133335: PRB: Cannot Rename Objects Originally Defined in a Container
 
+{% raw %}
+
 	Article: Q133335
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -93,3 +95,5 @@ permalink: /kb/133/Q133335/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135949/
 
 ## Q135949: Mouse Pointer Moves Erratically with Matrox Video Card
 
+{% raw %}
+
 	Article: Q135949
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/135/Q135949/
 	
 	=============================================================================
 	
+
+{% endraw %}

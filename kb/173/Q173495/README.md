@@ -6,6 +6,8 @@ permalink: /kb/173/Q173495/
 
 ## Q173495: XADM: IMS Advanced Tab Removed in Administrator Program
 
+{% raw %}
+
 	Article: Q173495
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -43,3 +45,5 @@ permalink: /kb/173/Q173495/
 	
 	=============================================================================
 	
+
+{% endraw %}

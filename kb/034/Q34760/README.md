@@ -6,6 +6,8 @@ permalink: /kb/034/Q34760/
 
 ## Q34760: Missing &lt;CR&gt; after Batch Label Causes Repeat of Last Command
 
+{% raw %}
+
 	Article: Q34760
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,3.3a,4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/034/Q34760/
 	
 	=============================================================================
 	
+
+{% endraw %}

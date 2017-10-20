@@ -6,6 +6,8 @@ permalink: /kb/082/Q82388/
 
 ## Q82388: Mavis Beacon Teaches Typing Under Windows
 
+{% raw %}
+
 	Article: Q82388
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95
@@ -56,3 +58,5 @@ permalink: /kb/082/Q82388/
 	
 	=============================================================================
 	
+
+{% endraw %}

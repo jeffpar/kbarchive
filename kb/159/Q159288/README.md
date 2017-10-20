@@ -6,6 +6,8 @@ permalink: /kb/159/Q159288/
 
 ## Q159288: XADM: Exchange Setup Stops During Replication with a Server
 
+{% raw %}
+
 	Article: Q159288
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/159/Q159288/
 	
 	=============================================================================
 	
+
+{% endraw %}

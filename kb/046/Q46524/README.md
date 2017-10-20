@@ -6,6 +6,8 @@ permalink: /kb/046/Q46524/
 
 ## Q46524: PRB: File Handles Cannot Be Shared Between Programs or DLLs
 
+{% raw %}
+
 	Article: Q46524
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -47,3 +49,5 @@ permalink: /kb/046/Q46524/
 	
 	=============================================================================
 	
+
+{% endraw %}

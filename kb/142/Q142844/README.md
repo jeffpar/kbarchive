@@ -6,6 +6,8 @@ permalink: /kb/142/Q142844/
 
 ## Q142844: Location of Stored Favorite Web Pages in Internet Explorer
 
+{% raw %}
+
 	Article: Q142844
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -33,3 +35,5 @@ permalink: /kb/142/Q142844/
 	
 	=============================================================================
 	
+
+{% endraw %}

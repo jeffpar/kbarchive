@@ -6,6 +6,8 @@ permalink: /kb/063/Q63959/
 
 ## Q63959: Using Unary &quot;+&quot; in QuickC Gives Incorrect Results
 
+{% raw %}
+
 	Article: Q63959
 	Product(s): See article
 	Version(s): 2.50
@@ -35,3 +37,5 @@ permalink: /kb/063/Q63959/
 	
 	This behavior occurs only when using floating point numbers or
 	doubles. Integers behave as expected.
+
+{% endraw %}

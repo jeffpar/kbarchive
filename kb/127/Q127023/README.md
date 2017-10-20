@@ -6,6 +6,8 @@ permalink: /kb/127/Q127023/
 
 ## Q127023: Raw SMB Requests Across Router Results in Session Termination
 
+{% raw %}
+
 	Article: Q127023
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -245,3 +247,5 @@ permalink: /kb/127/Q127023/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58694/
 
 ## Q58694: Purpose of Using Local Security in LAN Manager
 
+{% raw %}
+
 	Article: Q58694
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/058/Q58694/
 	
 	=============================================================================
 	
+
+{% endraw %}

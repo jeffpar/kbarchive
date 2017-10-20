@@ -6,6 +6,8 @@ permalink: /kb/201/Q201164/
 
 ## Q201164: XADM:  Knowledge Consistency Checker Returns Events 2024, 1124
 
+{% raw %}
+
 	Article: Q201164
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -122,3 +124,5 @@ permalink: /kb/201/Q201164/
 	
 	=============================================================================
 	
+
+{% endraw %}

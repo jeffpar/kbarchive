@@ -6,6 +6,8 @@ permalink: /kb/135/Q135952/
 
 ## Q135952: ScanDisk Last Result: Check Was Stopped Because of an Error
 
+{% raw %}
+
 	Article: Q135952
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135952/
 	
 	=============================================================================
 	
+
+{% endraw %}

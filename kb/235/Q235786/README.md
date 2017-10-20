@@ -6,6 +6,8 @@ permalink: /kb/235/Q235786/
 
 ## Q235786: SMS: Software Metering Server Same for Online/Offline Clients
 
+{% raw %}
+
 	Article: Q235786
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -120,3 +122,5 @@ permalink: /kb/235/Q235786/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169849/
 
 ## Q169849: XWEB: MAPI Clients Message Status Not Automatically Updating
 
+{% raw %}
+
 	Article: Q169849
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -46,3 +48,5 @@ permalink: /kb/169/Q169849/
 	
 	=============================================================================
 	
+
+{% endraw %}

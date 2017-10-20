@@ -6,6 +6,8 @@ permalink: /kb/187/Q187233/
 
 ## Q187233: BUG: DateTimePicker's CustomFormat May Be Ignored
 
+{% raw %}
+
 	Article: Q187233
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -91,3 +93,5 @@ permalink: /kb/187/Q187233/
 	
 	=============================================================================
 	
+
+{% endraw %}

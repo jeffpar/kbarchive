@@ -6,6 +6,8 @@ permalink: /kb/088/Q88386/
 
 ## Q88386: Bookshelf 1992 Content and User Interface Enhancements
 
+{% raw %}
+
 	Article: Q88386
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition
@@ -77,3 +79,5 @@ permalink: /kb/088/Q88386/
 	
 	=============================================================================
 	
+
+{% endraw %}

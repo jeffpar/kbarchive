@@ -6,6 +6,8 @@ permalink: /kb/184/Q184602/
 
 ## Q184602: Outwars: How to Host or Join a Multiplayer Game
 
+{% raw %}
+
 	Article: Q184602
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -143,3 +145,5 @@ permalink: /kb/184/Q184602/
 	
 	=============================================================================
 	
+
+{% endraw %}

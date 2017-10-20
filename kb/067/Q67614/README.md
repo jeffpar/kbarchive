@@ -6,6 +6,8 @@ permalink: /kb/067/Q67614/
 
 ## Q67614: PWB Hyperlink in PWB.HLP is Inconsistent in Version 1.1
 
+{% raw %}
+
 	Article: Q67614
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.1; OS/2:1.1
@@ -72,3 +74,5 @@ permalink: /kb/067/Q67614/
 	
 	=============================================================================
 	
+
+{% endraw %}

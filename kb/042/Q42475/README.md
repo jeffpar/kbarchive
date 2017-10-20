@@ -6,6 +6,8 @@ permalink: /kb/042/Q42475/
 
 ## Q42475: BASIC Uses ALIAS to DECLARE C Routines with Underscore in Name
 
+{% raw %}
+
 	Article: Q42475
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -49,3 +51,5 @@ permalink: /kb/042/Q42475/
 	{
 	  putch('A');
 	}
+
+{% endraw %}

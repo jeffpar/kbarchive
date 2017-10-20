@@ -6,6 +6,8 @@ permalink: /kb/139/Q139480/
 
 ## Q139480: ADT95: ADT for Windows 95 Product Information Available
 
+{% raw %}
+
 	Article: Q139480
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -56,3 +58,5 @@ permalink: /kb/139/Q139480/
 	
 	=============================================================================
 	
+
+{% endraw %}

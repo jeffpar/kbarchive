@@ -6,6 +6,8 @@ permalink: /kb/310/Q310686/
 
 ## Q310686: Train Simulator: Mprofile Appears, then Train Simulator Quits
 
+{% raw %}
+
 	Article: Q310686
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -139,3 +141,5 @@ permalink: /kb/310/Q310686/
 	
 	=============================================================================
 	
+
+{% endraw %}

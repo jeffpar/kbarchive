@@ -6,6 +6,8 @@ permalink: /kb/151/Q151004/
 
 ## Q151004: FIX: &quot;PRG&quot; File Type Missing in FoxPro File Group
 
+{% raw %}
+
 	Article: Q151004
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -84,3 +86,5 @@ permalink: /kb/151/Q151004/
 	
 	=============================================================================
 	
+
+{% endraw %}

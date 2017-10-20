@@ -6,6 +6,8 @@ permalink: /kb/197/Q197123/
 
 ## Q197123: PRB: Out-Of-Date Dependency Information for MSCal.ocx
 
+{% raw %}
+
 	Article: Q197123
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -95,3 +97,5 @@ permalink: /kb/197/Q197123/
 	
 	=============================================================================
 	
+
+{% endraw %}

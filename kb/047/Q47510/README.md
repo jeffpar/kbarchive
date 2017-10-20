@@ -6,6 +6,8 @@ permalink: /kb/047/Q47510/
 
 ## Q47510: Watch Value and Watchpoint Ignored During Event or ERROR Trap
 
+{% raw %}
+
 	Article: Q47510
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -47,3 +49,5 @@ permalink: /kb/047/Q47510/
 	you would expect. If you set a breakpoint inside the FOR NEXT loop,
 	you will also see that a watch value on "x" will always report a value
 	of 0.
+
+{% endraw %}

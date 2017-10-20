@@ -6,6 +6,8 @@ permalink: /kb/058/Q58343/
 
 ## Q58343: Windows 3.0 SYSTEM.INI &#91;nonwindowsapp&#93; Section
 
+{% raw %}
+
 	Article: Q58343
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/058/Q58343/
 	
 	=============================================================================
 	
+
+{% endraw %}

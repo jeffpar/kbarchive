@@ -6,6 +6,8 @@ permalink: /kb/082/Q82337/
 
 ## Q82337: Canon LBP Series Saves Cartridge Selections
 
+{% raw %}
+
 	Article: Q82337
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/082/Q82337/
 	
 	=============================================================================
 	
+
+{% endraw %}

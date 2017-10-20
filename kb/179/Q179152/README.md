@@ -6,6 +6,8 @@ permalink: /kb/179/Q179152/
 
 ## Q179152: XFOR: Mail Retrieved w/ POP3 Client Shows in SJIS Not JIS
 
+{% raw %}
+
 	Article: Q179152
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -57,3 +59,5 @@ permalink: /kb/179/Q179152/
 	
 	=============================================================================
 	
+
+{% endraw %}

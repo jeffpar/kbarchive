@@ -6,6 +6,8 @@ permalink: /kb/038/Q38935/
 
 ## Q38935: Expressions in Definitions Changed for MASM 5.10
 
+{% raw %}
+
 	Article: Q38935
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -51,3 +53,5 @@ permalink: /kb/038/Q38935/
 	
 	=============================================================================
 	
+
+{% endraw %}

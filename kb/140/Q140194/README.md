@@ -6,6 +6,8 @@ permalink: /kb/140/Q140194/
 
 ## Q140194: PC WSPlus: Tuning a Schedule+ 1.0 Installation
 
+{% raw %}
+
 	Article: Q140194
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -204,3 +206,5 @@ permalink: /kb/140/Q140194/
 	
 	=============================================================================
 	
+
+{% endraw %}

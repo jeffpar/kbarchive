@@ -6,6 +6,8 @@ permalink: /kb/171/Q171942/
 
 ## Q171942: SNA Windows 95 and Win 3.x Named Pipe Clients Fail to Connect
 
+{% raw %}
+
 	Article: Q171942
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -89,3 +91,5 @@ permalink: /kb/171/Q171942/
 	
 	=============================================================================
 	
+
+{% endraw %}

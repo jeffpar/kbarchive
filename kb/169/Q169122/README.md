@@ -6,6 +6,8 @@ permalink: /kb/169/Q169122/
 
 ## Q169122: Non-rfc Compliant DHCP Server Does Not Send DHCPNAK to Client
 
+{% raw %}
+
 	Article: Q169122
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/169/Q169122/
 	
 	=============================================================================
 	
+
+{% endraw %}

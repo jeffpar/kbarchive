@@ -6,6 +6,8 @@ permalink: /kb/111/Q111023/
 
 ## Q111023: Windows 3.1 Help Files on Current Issues
 
+{% raw %}
+
 	Article: Q111023
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/111/Q111023/
 	
 	=============================================================================
 	
+
+{% endraw %}

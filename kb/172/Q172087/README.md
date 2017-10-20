@@ -6,6 +6,8 @@ permalink: /kb/172/Q172087/
 
 ## Q172087: SAMPLE: Agrid.exe Navigates to Non-Visible Grid Cells in Visual
 
+{% raw %}
+
 	Article: Q172087
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -137,3 +139,5 @@ permalink: /kb/172/Q172087/
 	
 	=============================================================================
 	
+
+{% endraw %}

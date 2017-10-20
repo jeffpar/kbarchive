@@ -6,6 +6,8 @@ permalink: /kb/110/Q110349/
 
 ## Q110349: PRB: Color Depth Doesn't Change Display Mode in FoxPro for Mac
 
+{% raw %}
+
 	Article: Q110349
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -61,3 +63,5 @@ permalink: /kb/110/Q110349/
 	
 	=============================================================================
 	
+
+{% endraw %}

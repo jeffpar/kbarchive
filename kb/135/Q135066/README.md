@@ -6,6 +6,8 @@ permalink: /kb/135/Q135066/
 
 ## Q135066: PC MAPI: How to Schedule Mail Messaging on Windows NT
 
+{% raw %}
+
 	Article: Q135066
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -77,3 +79,5 @@ permalink: /kb/135/Q135066/
 	
 	=============================================================================
 	
+
+{% endraw %}

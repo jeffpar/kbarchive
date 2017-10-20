@@ -6,6 +6,8 @@ permalink: /kb/221/Q221669/
 
 ## Q221669: FIX: Return of COM Server Objref Causes Server to Not Release
 
+{% raw %}
+
 	Article: Q221669
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -103,3 +105,5 @@ permalink: /kb/221/Q221669/
 	
 	=============================================================================
 	
+
+{% endraw %}

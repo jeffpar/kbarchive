@@ -6,6 +6,8 @@ permalink: /kb/162/Q162396/
 
 ## Q162396: Problem with DHCP Decline Feature in Service Pack 2
 
+{% raw %}
+
 	Article: Q162396
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP2
@@ -74,3 +76,5 @@ permalink: /kb/162/Q162396/
 	
 	=============================================================================
 	
+
+{% endraw %}

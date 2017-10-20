@@ -6,6 +6,8 @@ permalink: /kb/073/Q73407/
 
 ## Q73407: Using PROTO and INVOKE to Call a C Function from MASM
 
+{% raw %}
+
 	Article: Q73407
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -162,3 +164,5 @@ permalink: /kb/073/Q73407/
 	
 	=============================================================================
 	
+
+{% endraw %}

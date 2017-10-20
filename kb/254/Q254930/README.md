@@ -6,6 +6,8 @@ permalink: /kb/254/Q254930/
 
 ## Q254930: TCP Session with Server Never Closes
 
+{% raw %}
+
 	Article: Q254930
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -153,3 +155,5 @@ permalink: /kb/254/Q254930/
 	
 	=============================================================================
 	
+
+{% endraw %}

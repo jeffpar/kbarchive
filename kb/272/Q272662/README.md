@@ -6,6 +6,8 @@ permalink: /kb/272/Q272662/
 
 ## Q272662: How to Create a Directory Viewer By Using ASP
 
+{% raw %}
+
 	Article: Q272662
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -186,3 +188,5 @@ permalink: /kb/272/Q272662/
 	
 	=============================================================================
 	
+
+{% endraw %}

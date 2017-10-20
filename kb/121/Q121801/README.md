@@ -6,6 +6,8 @@ permalink: /kb/121/Q121801/
 
 ## Q121801: Compaq Laptop APM BIOS 1.0 Returns Incorrect Battery Status
 
+{% raw %}
+
 	Article: Q121801
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121801/
 	
 	=============================================================================
 	
+
+{% endraw %}

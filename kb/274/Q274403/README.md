@@ -6,6 +6,8 @@ permalink: /kb/274/Q274403/
 
 ## Q274403: XADM: Internet Mail Service Stops Processing Inbound Conversion
 
+{% raw %}
+
 	Article: Q274403
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -87,3 +89,5 @@ permalink: /kb/274/Q274403/
 	
 	=============================================================================
 	
+
+{% endraw %}

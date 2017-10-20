@@ -6,6 +6,8 @@ permalink: /kb/149/Q149707/
 
 ## Q149707: Version Numbers for The Microsoft Network 1.3
 
+{% raw %}
+
 	Article: Q149707
 	Product(s): The Microsoft Network
 	Version(s): 1.30
@@ -46,3 +48,5 @@ permalink: /kb/149/Q149707/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124297/
 
 ## Q124297: SMS Doc Err: Package Rule Filename Incorrect
 
+{% raw %}
+
 	Article: Q124297
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -46,3 +48,5 @@ permalink: /kb/124/Q124297/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241865/
 
 ## Q241865: ILS May Cause SBS Wizards Not to Work
 
+{% raw %}
+
 	Article: Q241865
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -78,3 +80,5 @@ permalink: /kb/241/Q241865/
 	
 	=============================================================================
 	
+
+{% endraw %}

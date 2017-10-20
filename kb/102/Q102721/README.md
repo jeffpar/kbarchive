@@ -6,6 +6,8 @@ permalink: /kb/102/Q102721/
 
 ## Q102721: Err Msg: Windows NT Could Not Start Because the Following...
 
+{% raw %}
+
 	Article: Q102721
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -126,3 +128,5 @@ permalink: /kb/102/Q102721/
 	
 	=============================================================================
 	
+
+{% endraw %}

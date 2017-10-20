@@ -6,6 +6,8 @@ permalink: /kb/064/Q64039/
 
 ## Q64039: Refresh NIF Menus When ADMIN Account Is Downgraded
 
+{% raw %}
+
 	Article: Q64039
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/064/Q64039/
 	
 	=============================================================================
 	
+
+{% endraw %}

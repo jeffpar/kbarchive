@@ -6,6 +6,8 @@ permalink: /kb/165/Q165449/
 
 ## Q165449: MSB: ErrMsg: This Program Has Performed an Illegal Operation ...
 
+{% raw %}
+
 	Article: Q165449
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/165/Q165449/
 	
 	=============================================================================
 	
+
+{% endraw %}

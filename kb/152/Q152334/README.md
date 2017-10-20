@@ -6,6 +6,8 @@ permalink: /kb/152/Q152334/
 
 ## Q152334: Bookshelf '96-'97: Manual Installation on Windows 95/98 and NT
 
+{% raw %}
+
 	Article: Q152334
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): '96-'97
@@ -279,3 +281,5 @@ permalink: /kb/152/Q152334/
 	
 	=============================================================================
 	
+
+{% endraw %}

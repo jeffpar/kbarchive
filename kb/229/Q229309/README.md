@@ -6,6 +6,8 @@ permalink: /kb/229/Q229309/
 
 ## Q229309: Query May Fail for Meta Tags with Values Containing Digits
 
+{% raw %}
+
 	Article: Q229309
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -105,3 +107,5 @@ permalink: /kb/229/Q229309/
 	
 	=============================================================================
 	
+
+{% endraw %}

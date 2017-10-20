@@ -6,6 +6,8 @@ permalink: /kb/128/Q128208/
 
 ## Q128208: HOWTO: Perform Transactions with the MFC Database Classes
 
+{% raw %}
+
 	Article: Q128208
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,4.1,5.0
@@ -210,3 +212,5 @@ permalink: /kb/128/Q128208/
 	
 	=============================================================================
 	
+
+{% endraw %}

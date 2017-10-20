@@ -6,6 +6,8 @@ permalink: /kb/173/Q173884/
 
 ## Q173884: How to Capture Screen Shots in Windows Using Print Screen Key
 
+{% raw %}
+
 	Article: Q173884
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; Win2000:95; winnt:3.5,3.51,4.0
@@ -51,3 +53,5 @@ permalink: /kb/173/Q173884/
 	
 	=============================================================================
 	
+
+{% endraw %}

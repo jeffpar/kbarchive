@@ -6,6 +6,8 @@ permalink: /kb/248/Q248227/
 
 ## Q248227: SMS: Data Loader Drops Info When Processing an SMS 1.2 MIF
 
+{% raw %}
+
 	Article: Q248227
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -52,3 +54,5 @@ permalink: /kb/248/Q248227/
 	
 	=============================================================================
 	
+
+{% endraw %}

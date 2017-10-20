@@ -6,6 +6,8 @@ permalink: /kb/133/Q133284/
 
 ## Q133284: Folders/Shortcuts Re-created When You Run Setup Again
 
+{% raw %}
+
 	Article: Q133284
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/133/Q133284/
 	
 	=============================================================================
 	
+
+{% endraw %}

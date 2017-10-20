@@ -6,6 +6,8 @@ permalink: /kb/143/Q143273/
 
 ## Q143273: HOWTO: Insert TAB Characters in RichTextBox Control in VB
 
+{% raw %}
+
 	Article: Q143273
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/143/Q143273/
 	
 	=============================================================================
 	
+
+{% endraw %}

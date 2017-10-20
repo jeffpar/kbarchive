@@ -6,6 +6,8 @@ permalink: /kb/083/Q83254/
 
 ## Q83254: Productivity Pack 3.1 Setup/Program Disk (5.25 HD)
 
+{% raw %}
+
 	Article: Q83254
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/083/Q83254/
 	
 	=============================================================================
 	
+
+{% endraw %}

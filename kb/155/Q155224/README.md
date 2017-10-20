@@ -6,6 +6,8 @@ permalink: /kb/155/Q155224/
 
 ## Q155224: PRB: Using CEdit SetModify/GetModify Returns Invalid Values
 
+{% raw %}
+
 	Article: Q155224
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -113,3 +115,5 @@ permalink: /kb/155/Q155224/
 	
 	=============================================================================
 	
+
+{% endraw %}

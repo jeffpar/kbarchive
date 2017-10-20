@@ -6,6 +6,8 @@ permalink: /kb/132/Q132660/
 
 ## Q132660: Invalid Characters Allowed When Creating File Association
 
+{% raw %}
+
 	Article: Q132660
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/132/Q132660/
 	
 	=============================================================================
 	
+
+{% endraw %}

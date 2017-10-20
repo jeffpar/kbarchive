@@ -6,6 +6,8 @@ permalink: /kb/059/Q59006/
 
 ## Q59006: How to Distinguish Between a Standard and Enhanced Keyboard
 
+{% raw %}
+
 	Article: Q59006
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -58,3 +60,5 @@ permalink: /kb/059/Q59006/
 	SLEEP
 	CLS
 	END
+
+{% endraw %}

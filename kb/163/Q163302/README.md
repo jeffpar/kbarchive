@@ -6,6 +6,8 @@ permalink: /kb/163/Q163302/
 
 ## Q163302: PPT: Sample VB Code to Retrieve the Title of a Graph
 
+{% raw %}
+
 	Article: Q163302
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -223,3 +225,5 @@ permalink: /kb/163/Q163302/
 	
 	=============================================================================
 	
+
+{% endraw %}

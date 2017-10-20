@@ -6,6 +6,8 @@ permalink: /kb/235/Q235683/
 
 ## Q235683: XWEB: OWA Uses Client RPC Binding Order to Set Up Communication
 
+{% raw %}
+
 	Article: Q235683
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -68,3 +70,5 @@ permalink: /kb/235/Q235683/
 	
 	=============================================================================
 	
+
+{% endraw %}

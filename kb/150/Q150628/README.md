@@ -6,6 +6,8 @@ permalink: /kb/150/Q150628/
 
 ## Q150628: Event 3 May Indicate Excessive APPC LU Partnerships
 
+{% raw %}
+
 	Article: Q150628
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -70,3 +72,5 @@ permalink: /kb/150/Q150628/
 	
 	=============================================================================
 	
+
+{% endraw %}

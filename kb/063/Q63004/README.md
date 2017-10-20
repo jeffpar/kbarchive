@@ -6,6 +6,8 @@ permalink: /kb/063/Q63004/
 
 ## Q63004: SELECT CASE Example Correction for QuickBASIC 4.5 Manual
 
+{% raw %}
+
 	Article: Q63004
 	Product(s): See article
 	Version(s): 4.50
@@ -42,3 +44,5 @@ permalink: /kb/063/Q63004/
 	A correct version of the example is in the QB Advisor online Help
 	system for QuickBASIC version 4.50. You can find this code in "Example
 	2" from the example hypertext link when getting help on SELECT CASE.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112827/
 
 ## Q112827: PPT: PowerPoint Viewer (16-Bit) Available from Online Services
 
+{% raw %}
+
 	Article: Q112827
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,4.0; WINDOWS:2.0,3.0,4.0,7.0
@@ -109,3 +111,5 @@ permalink: /kb/112/Q112827/
 	
 	=============================================================================
 	
+
+{% endraw %}

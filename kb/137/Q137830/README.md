@@ -6,6 +6,8 @@ permalink: /kb/137/Q137830/
 
 ## Q137830: Slide Numbers in Title Not Printed in Outline View
 
+{% raw %}
+
 	Article: Q137830
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -50,3 +52,5 @@ permalink: /kb/137/Q137830/
 	
 	=============================================================================
 	
+
+{% endraw %}

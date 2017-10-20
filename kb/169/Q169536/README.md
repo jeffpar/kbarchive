@@ -6,6 +6,8 @@ permalink: /kb/169/Q169536/
 
 ## Q169536: XFOR: cc:Mail DB8 Migration Creates Randomized Password
 
+{% raw %}
+
 	Article: Q169536
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -50,3 +52,5 @@ permalink: /kb/169/Q169536/
 	
 	=============================================================================
 	
+
+{% endraw %}

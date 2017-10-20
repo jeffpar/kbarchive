@@ -6,6 +6,8 @@ permalink: /kb/150/Q150239/
 
 ## Q150239: PRB: Option Button TabStop Property Is Set to True at Run-time
 
+{% raw %}
+
 	Article: Q150239
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -57,3 +59,5 @@ permalink: /kb/150/Q150239/
 	
 	=============================================================================
 	
+
+{% endraw %}

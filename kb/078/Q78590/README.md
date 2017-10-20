@@ -6,6 +6,8 @@ permalink: /kb/078/Q78590/
 
 ## Q78590: Xerox XC 6060 Computer Hangs with MS-DOS ANSI.SYS
 
+{% raw %}
+
 	Article: Q78590
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/078/Q78590/
 	
 	=============================================================================
 	
+
+{% endraw %}

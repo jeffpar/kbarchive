@@ -6,6 +6,8 @@ permalink: /kb/166/Q166777/
 
 ## Q166777: FPNW 4.0 Update May Fail
 
+{% raw %}
+
 	Article: Q166777
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -106,3 +108,5 @@ permalink: /kb/166/Q166777/
 	
 	=============================================================================
 	
+
+{% endraw %}

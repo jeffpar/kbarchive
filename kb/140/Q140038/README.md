@@ -6,6 +6,8 @@ permalink: /kb/140/Q140038/
 
 ## Q140038: DEMO SDLC Link Service Setup Script Removes Wrong Link Service
 
+{% raw %}
+
 	Article: Q140038
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -67,3 +69,5 @@ permalink: /kb/140/Q140038/
 	
 	=============================================================================
 	
+
+{% endraw %}

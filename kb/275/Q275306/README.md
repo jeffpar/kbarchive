@@ -6,6 +6,8 @@ permalink: /kb/275/Q275306/
 
 ## Q275306: Encarta 2001: Photographs Not Displayed When You View Articles
 
+{% raw %}
+
 	Article: Q275306
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -174,3 +176,5 @@ permalink: /kb/275/Q275306/
 	
 	=============================================================================
 	
+
+{% endraw %}

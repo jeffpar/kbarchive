@@ -6,6 +6,8 @@ permalink: /kb/303/Q303231/
 
 ## Q303231: Running MSN Explorer In &quot;Compatibility Mode&quot; In Windows XP May C
 
+{% raw %}
+
 	Article: Q303231
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -53,3 +55,5 @@ permalink: /kb/303/Q303231/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174051/
 
 ## Q174051: DHCP Server Fails to Lease Addresses for New Scope
 
+{% raw %}
+
 	Article: Q174051
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174051/
 	
 	=============================================================================
 	
+
+{% endraw %}

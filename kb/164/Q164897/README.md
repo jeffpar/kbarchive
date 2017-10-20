@@ -6,6 +6,8 @@ permalink: /kb/164/Q164897/
 
 ## Q164897: Zone: Description and Policies of the Web site
 
+{% raw %}
+
 	Article: Q164897
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164897/
 	
 	=============================================================================
 	
+
+{% endraw %}

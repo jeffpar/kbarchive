@@ -6,6 +6,8 @@ permalink: /kb/173/Q173486/
 
 ## Q173486: SNAVER and SNA Manager Don't Display Service Pack Level
 
+{% raw %}
+
 	Article: Q173486
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -66,3 +68,5 @@ permalink: /kb/173/Q173486/
 	
 	=============================================================================
 	
+
+{% endraw %}

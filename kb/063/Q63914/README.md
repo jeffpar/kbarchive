@@ -6,6 +6,8 @@ permalink: /kb/063/Q63914/
 
 ## Q63914: Definition of SMARTDrive Double Buffering
 
+{% raw %}
+
 	Article: Q63914
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -89,3 +91,5 @@ permalink: /kb/063/Q63914/
 	
 	=============================================================================
 	
+
+{% endraw %}

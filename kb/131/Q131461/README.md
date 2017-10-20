@@ -6,6 +6,8 @@ permalink: /kb/131/Q131461/
 
 ## Q131461: Forcing Windows NT Clients to Use Non-Named Pipe LAN Transport
 
+{% raw %}
+
 	Article: Q131461
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1
@@ -91,3 +93,5 @@ permalink: /kb/131/Q131461/
 	
 	=============================================================================
 	
+
+{% endraw %}

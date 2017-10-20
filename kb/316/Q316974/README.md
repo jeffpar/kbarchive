@@ -6,6 +6,8 @@ permalink: /kb/316/Q316974/
 
 ## Q316974: Crimson Skies: Err Msg: Crimson Skies Requires a Sound Card...
 
+{% raw %}
+
 	Article: Q316974
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/316/Q316974/
 	
 	=============================================================================
 	
+
+{% endraw %}

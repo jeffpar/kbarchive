@@ -6,6 +6,8 @@ permalink: /kb/181/Q181848/
 
 ## Q181848: XCON: MTA Stops Unexpectedly When Message Volume Is Very High
 
+{% raw %}
+
 	Article: Q181848
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -64,3 +66,5 @@ permalink: /kb/181/Q181848/
 	
 	=============================================================================
 	
+
+{% endraw %}

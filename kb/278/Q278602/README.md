@@ -6,6 +6,8 @@ permalink: /kb/278/Q278602/
 
 ## Q278602: Error Message &quot;SChannel error = 80090304&quot;
 
+{% raw %}
+
 	Article: Q278602
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/278/Q278602/
 	
 	=============================================================================
 	
+
+{% endraw %}

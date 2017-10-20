@@ -6,6 +6,8 @@ permalink: /kb/300/Q300055/
 
 ## Q300055: FIX: Init Event Shows Twice In Event Tracking on Objects
 
+{% raw %}
+
 	Article: Q300055
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -75,3 +77,5 @@ permalink: /kb/300/Q300055/
 	
 	=============================================================================
 	
+
+{% endraw %}

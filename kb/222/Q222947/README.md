@@ -6,6 +6,8 @@ permalink: /kb/222/Q222947/
 
 ## Q222947: COMTI: Allow Use Of Already Verified and Application Override
 
+{% raw %}
+
 	Article: Q222947
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP2,4.0SP1,4.0SP2
@@ -138,3 +140,5 @@ permalink: /kb/222/Q222947/
 	
 	=============================================================================
 	
+
+{% endraw %}

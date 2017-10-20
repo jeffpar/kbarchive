@@ -6,6 +6,8 @@ permalink: /kb/145/Q145684/
 
 ## Q145684: BUG: ClearSel Method of Slider Sets SelStart Property to -1
 
+{% raw %}
+
 	Article: Q145684
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/145/Q145684/
 	
 	=============================================================================
 	
+
+{% endraw %}

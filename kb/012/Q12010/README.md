@@ -6,6 +6,8 @@ permalink: /kb/012/Q12010/
 
 ## Q12010: Directly Accessing Video Memory from a C Program
 
+{% raw %}
+
 	Article: Q12010
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 6.00 6.00a
@@ -68,3 +70,5 @@ permalink: /kb/012/Q12010/
 	    y = (char far *)MAKELONG( offset, COLORTEXT_BUFFER);
 	    *y = attrib;
 	}
+
+{% endraw %}

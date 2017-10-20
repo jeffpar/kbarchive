@@ -6,6 +6,8 @@ permalink: /kb/066/Q66145/
 
 ## Q66145: AutoLoad Feature in IdleWild Causes Multiple WIN.INI Entries
 
+{% raw %}
+
 	Article: Q66145
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/066/Q66145/
 	
 	=============================================================================
 	
+
+{% endraw %}

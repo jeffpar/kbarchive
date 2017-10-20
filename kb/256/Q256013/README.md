@@ -6,6 +6,8 @@ permalink: /kb/256/Q256013/
 
 ## Q256013: Problems Deleting Package While Package Share Changes Occur
 
+{% raw %}
+
 	Article: Q256013
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -86,3 +88,5 @@ permalink: /kb/256/Q256013/
 	
 	=============================================================================
 	
+
+{% endraw %}

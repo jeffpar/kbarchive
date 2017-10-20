@@ -6,6 +6,8 @@ permalink: /kb/180/Q180875/
 
 ## Q180875: Russian Clients May Have File I/O Problems on an FPNW Server
 
+{% raw %}
+
 	Article: Q180875
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/180/Q180875/
 	
 	=============================================================================
 	
+
+{% endraw %}

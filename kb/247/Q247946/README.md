@@ -6,6 +6,8 @@ permalink: /kb/247/Q247946/
 
 ## Q247946: AoE II: Quits Unexpectedly After Playing Opening Movie
 
+{% raw %}
+
 	Article: Q247946
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0; :
@@ -70,3 +72,5 @@ permalink: /kb/247/Q247946/
 	
 	=============================================================================
 	
+
+{% endraw %}

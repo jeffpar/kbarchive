@@ -6,6 +6,8 @@ permalink: /kb/250/Q250476/
 
 ## Q250476: PRB: VBCE: Process Won't End When MsgBox is in Terminate Event
 
+{% raw %}
+
 	Article: Q250476
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/250/Q250476/
 	
 	=============================================================================
 	
+
+{% endraw %}

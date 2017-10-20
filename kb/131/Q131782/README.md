@@ -6,6 +6,8 @@ permalink: /kb/131/Q131782/
 
 ## Q131782: &quot;Code 10&quot; Reported with PCMCIA Network Card on TravelMate 5000
 
+{% raw %}
+
 	Article: Q131782
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/131/Q131782/
 	
 	=============================================================================
 	
+
+{% endraw %}

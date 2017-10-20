@@ -6,6 +6,8 @@ permalink: /kb/097/Q97780/
 
 ## Q97780: Incorrect Error Message in Beethoven on Magnavox 461
 
+{% raw %}
+
 	Article: Q97780
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/097/Q97780/
 	
 	=============================================================================
 	
+
+{% endraw %}

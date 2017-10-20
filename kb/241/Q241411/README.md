@@ -6,6 +6,8 @@ permalink: /kb/241/Q241411/
 
 ## Q241411: &quot;Session Name Is Already in Use&quot; with Multiple Concurrent Logons
 
+{% raw %}
+
 	Article: Q241411
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/241/Q241411/
 	
 	=============================================================================
 	
+
+{% endraw %}

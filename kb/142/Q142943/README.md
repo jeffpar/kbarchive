@@ -6,6 +6,8 @@ permalink: /kb/142/Q142943/
 
 ## Q142943: Contents of Windows 95 and Microsoft Plus! Startup Disks
 
+{% raw %}
+
 	Article: Q142943
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -80,3 +82,5 @@ permalink: /kb/142/Q142943/
 	
 	=============================================================================
 	
+
+{% endraw %}

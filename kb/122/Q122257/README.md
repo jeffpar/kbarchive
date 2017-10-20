@@ -6,6 +6,8 @@ permalink: /kb/122/Q122257/
 
 ## Q122257: DOC: Description of Compiler Error C2712 is Incorrect
 
+{% raw %}
+
 	Article: Q122257
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -40,3 +42,5 @@ permalink: /kb/122/Q122257/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123957/
 
 ## Q123957: Error Updating PowerPoint 4.0 File Using CSNW/GSNW
 
+{% raw %}
+
 	Article: Q123957
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -68,3 +70,5 @@ permalink: /kb/123/Q123957/
 	
 	=============================================================================
 	
+
+{% endraw %}

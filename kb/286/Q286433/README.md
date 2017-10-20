@@ -6,6 +6,8 @@ permalink: /kb/286/Q286433/
 
 ## Q286433: ASP Performance Monitor Counters Fail from Terminal Session
 
+{% raw %}
+
 	Article: Q286433
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -81,3 +83,5 @@ permalink: /kb/286/Q286433/
 	
 	=============================================================================
 	
+
+{% endraw %}

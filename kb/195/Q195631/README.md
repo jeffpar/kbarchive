@@ -6,6 +6,8 @@ permalink: /kb/195/Q195631/
 
 ## Q195631: PRB: Effects of Operating System Version On TextBox Alignment
 
+{% raw %}
+
 	Article: Q195631
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/195/Q195631/
 	
 	=============================================================================
 	
+
+{% endraw %}

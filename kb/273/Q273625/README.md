@@ -6,6 +6,8 @@ permalink: /kb/273/Q273625/
 
 ## Q273625: Midtown Madness 2: How to Troubleshoot Video Problems
 
+{% raw %}
+
 	Article: Q273625
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -249,3 +251,5 @@ permalink: /kb/273/Q273625/
 	
 	=============================================================================
 	
+
+{% endraw %}

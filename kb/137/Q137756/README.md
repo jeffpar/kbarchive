@@ -6,6 +6,8 @@ permalink: /kb/137/Q137756/
 
 ## Q137756: PPT: Errors in PowerPoint Due to Multiple User Profiles
 
+{% raw %}
+
 	Article: Q137756
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 4.0,4.0a,4.0c,7.0
@@ -189,3 +191,5 @@ permalink: /kb/137/Q137756/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/270/Q270641/
 
 ## Q270641: MCSE Training Kit: Upgrading To Windows 2000 Comments and Correc
 
+{% raw %}
+
 	Article: Q270641
 	Product(s): Microsoft Press
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/270/Q270641/
 	
 	=============================================================================
 	
+
+{% endraw %}

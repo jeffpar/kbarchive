@@ -6,6 +6,8 @@ permalink: /kb/235/Q235503/
 
 ## Q235503: XFOR: &quot;To Keep All Addressing Components&quot; Option Doesn't Work
 
+{% raw %}
+
 	Article: Q235503
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/235/Q235503/
 	
 	=============================================================================
 	
+
+{% endraw %}

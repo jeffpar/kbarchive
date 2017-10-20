@@ -6,6 +6,8 @@ permalink: /kb/165/Q165320/
 
 ## Q165320: Shared Folder Gateway Hangs Getting Directory Listing
 
+{% raw %}
+
 	Article: Q165320
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/165/Q165320/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66856/
 
 ## Q66856: File Date Equals Date of Entertainment Pack Installation
 
+{% raw %}
+
 	Article: Q66856
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/066/Q66856/
 	
 	=============================================================================
 	
+
+{% endraw %}

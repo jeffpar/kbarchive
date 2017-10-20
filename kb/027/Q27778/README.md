@@ -6,6 +6,8 @@ permalink: /kb/027/Q27778/
 
 ## Q27778: Program's First Command-Line Argument Is &quot;C&quot; Under DOS 2.x
 
+{% raw %}
+
 	Article: Q27778
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 6.00a
@@ -20,3 +22,5 @@ permalink: /kb/027/Q27778/
 	
 	This is not a problem in the C compiler. Rather, it is a limitation of
 	MS-DOS versions 2.x.
+
+{% endraw %}

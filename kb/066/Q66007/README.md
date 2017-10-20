@@ -6,6 +6,8 @@ permalink: /kb/066/Q66007/
 
 ## Q66007: PC Adm: Changing Network and Postoffice Names
 
+{% raw %}
+
 	Article: Q66007
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -55,3 +57,5 @@ permalink: /kb/066/Q66007/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/306/Q306500/
 
 ## Q306500: PRB: &quot;Foxcode Script '' Failure&quot; Error with Intellisense
 
+{% raw %}
+
 	Article: Q306500
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -66,3 +68,5 @@ permalink: /kb/306/Q306500/
 	
 	=============================================================================
 	
+
+{% endraw %}

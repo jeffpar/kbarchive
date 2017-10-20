@@ -6,6 +6,8 @@ permalink: /kb/024/Q24178/
 
 ## Q24178: MENU.COM Needed to Load .MNU Files
 
+{% raw %}
+
 	Article: Q24178
 	Product(s): See article
 	Version(s): 4.x 5.x 6.00
@@ -19,3 +21,5 @@ permalink: /kb/024/Q24178/
 	installer MENU.COM and the menu compiler MAKEMENU.EXE. If you have the
 	software prior to Version 6.00, you will find MENU.COM and
 	MAKEMENU.EXE on your system diskette.
+
+{% endraw %}

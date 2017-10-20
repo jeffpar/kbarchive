@@ -6,6 +6,8 @@ permalink: /kb/160/Q160064/
 
 ## Q160064: HOWTO: Convert VBA to FoxPro for OLE Automation
 
+{% raw %}
+
 	Article: Q160064
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -215,3 +217,5 @@ permalink: /kb/160/Q160064/
 	
 	=============================================================================
 	
+
+{% endraw %}

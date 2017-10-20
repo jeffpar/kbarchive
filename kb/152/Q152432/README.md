@@ -6,6 +6,8 @@ permalink: /kb/152/Q152432/
 
 ## Q152432: XFOR: Comments in SMTP Addresses Cause NDR when Replying
 
+{% raw %}
+
 	Article: Q152432
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/152/Q152432/
 	
 	=============================================================================
 	
+
+{% endraw %}

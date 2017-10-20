@@ -6,6 +6,8 @@ permalink: /kb/160/Q160850/
 
 ## Q160850: XADM: DS_E_BUSY After Directory Service Restore
 
+{% raw %}
+
 	Article: Q160850
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -125,3 +127,5 @@ permalink: /kb/160/Q160850/
 	
 	=============================================================================
 	
+
+{% endraw %}

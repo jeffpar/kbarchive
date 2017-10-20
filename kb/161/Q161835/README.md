@@ -6,6 +6,8 @@ permalink: /kb/161/Q161835/
 
 ## Q161835: BUG: Visible Property Malfunctions with ComboBox in Container
 
+{% raw %}
+
 	Article: Q161835
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/161/Q161835/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138719/
 
 ## Q138719: Win95 Error Message: Error: 0003 Setting the Registry File
 
+{% raw %}
+
 	Article: Q138719
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/138/Q138719/
 	
 	=============================================================================
 	
+
+{% endraw %}

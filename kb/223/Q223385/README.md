@@ -6,6 +6,8 @@ permalink: /kb/223/Q223385/
 
 ## Q223385: XIMS: IMS Routing Incorrectly When Directory Replication Enabled
 
+{% raw %}
+
 	Article: Q223385
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -129,3 +131,5 @@ permalink: /kb/223/Q223385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135291/
 
 ## Q135291: Print Manager: Owner Appears as System Printing from Macintosh
 
+{% raw %}
+
 	Article: Q135291
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135291/
 	
 	=============================================================================
 	
+
+{% endraw %}

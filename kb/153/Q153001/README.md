@@ -6,6 +6,8 @@ permalink: /kb/153/Q153001/
 
 ## Q153001: XFOR: DNS MX Records and CNAMEs
 
+{% raw %}
+
 	Article: Q153001
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -92,3 +94,5 @@ permalink: /kb/153/Q153001/
 	
 	=============================================================================
 	
+
+{% endraw %}

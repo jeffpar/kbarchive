@@ -6,6 +6,8 @@ permalink: /kb/165/Q165978/
 
 ## Q165978: WD97: Cannot Change Word 95 Document Text Box After Opening It
 
+{% raw %}
+
 	Article: Q165978
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/165/Q165978/
 	
 	=============================================================================
 	
+
+{% endraw %}

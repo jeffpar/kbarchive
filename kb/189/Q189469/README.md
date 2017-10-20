@@ -6,6 +6,8 @@ permalink: /kb/189/Q189469/
 
 ## Q189469: Cluster Administrator Can Connect to All NetBIOS Names
 
+{% raw %}
+
 	Article: Q189469
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/189/Q189469/
 	
 	=============================================================================
 	
+
+{% endraw %}

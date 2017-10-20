@@ -6,6 +6,8 @@ permalink: /kb/160/Q160450/
 
 ## Q160450: RUI_TERM Hangs on Inactive LU After Session Cycle
 
+{% raw %}
+
 	Article: Q160450
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -77,3 +79,5 @@ permalink: /kb/160/Q160450/
 	
 	=============================================================================
 	
+
+{% endraw %}

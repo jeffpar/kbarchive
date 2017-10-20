@@ -6,6 +6,8 @@ permalink: /kb/240/Q240429/
 
 ## Q240429: DirectX: Ports Required to Play on a Network
 
+{% raw %}
+
 	Article: Q240429
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -158,3 +160,5 @@ permalink: /kb/240/Q240429/
 	
 	=============================================================================
 	
+
+{% endraw %}

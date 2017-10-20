@@ -6,6 +6,8 @@ permalink: /kb/254/Q254539/
 
 ## Q254539: INFO: HLP Files Not Supported on 64-Bit Windows
 
+{% raw %}
+
 	Article: Q254539
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -47,3 +49,5 @@ permalink: /kb/254/Q254539/
 	
 	=============================================================================
 	
+
+{% endraw %}

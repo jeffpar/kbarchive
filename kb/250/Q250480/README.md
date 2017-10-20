@@ -6,6 +6,8 @@ permalink: /kb/250/Q250480/
 
 ## Q250480: Performance Counters Provided with Metadirectory Services
 
+{% raw %}
+
 	Article: Q250480
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -95,3 +97,5 @@ permalink: /kb/250/Q250480/
 	
 	=============================================================================
 	
+
+{% endraw %}

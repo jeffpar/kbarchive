@@ -6,6 +6,8 @@ permalink: /kb/318/Q318739/
 
 ## Q318739: SMS: Cannot Update 120-Day Trial Version of SMS with Later SPs
 
+{% raw %}
+
 	Article: Q318739
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -52,3 +54,5 @@ permalink: /kb/318/Q318739/
 	
 	=============================================================================
 	
+
+{% endraw %}

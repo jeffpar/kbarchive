@@ -6,6 +6,8 @@ permalink: /kb/165/Q165046/
 
 ## Q165046: XCLN: How to Open a Hidden User's Schedule
 
+{% raw %}
+
 	Article: Q165046
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -67,3 +69,5 @@ permalink: /kb/165/Q165046/
 	
 	=============================================================================
 	
+
+{% endraw %}

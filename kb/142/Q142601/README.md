@@ -6,6 +6,8 @@ permalink: /kb/142/Q142601/
 
 ## Q142601: ADT2: How to Supply a Custom System Database with an ADT App
 
+{% raw %}
+
 	Article: Q142601
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -105,3 +107,5 @@ permalink: /kb/142/Q142601/
 	
 	=============================================================================
 	
+
+{% endraw %}

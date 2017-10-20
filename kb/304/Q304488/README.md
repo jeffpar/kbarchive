@@ -6,6 +6,8 @@ permalink: /kb/304/Q304488/
 
 ## Q304488: MCSE Training Kit: Microsoft Windows 2000 Advanced Server Cluste
 
+{% raw %}
+
 	Article: Q304488
 	Product(s): Microsoft Press
 	Version(s): 
@@ -160,3 +162,5 @@ permalink: /kb/304/Q304488/
 	
 	=============================================================================
 	
+
+{% endraw %}

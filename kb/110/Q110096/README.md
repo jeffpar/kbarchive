@@ -6,6 +6,8 @@ permalink: /kb/110/Q110096/
 
 ## Q110096: PC WSPlus: DefaultPrivateTask= Does Not Work as Documented
 
+{% raw %}
+
 	Article: Q110096
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -54,3 +56,5 @@ permalink: /kb/110/Q110096/
 	
 	=============================================================================
 	
+
+{% endraw %}

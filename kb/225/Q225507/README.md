@@ -6,6 +6,8 @@ permalink: /kb/225/Q225507/
 
 ## Q225507: SMS: Windows Management Service Keeps High Processor Utilization
 
+{% raw %}
+
 	Article: Q225507
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -109,3 +111,5 @@ permalink: /kb/225/Q225507/
 	
 	=============================================================================
 	
+
+{% endraw %}

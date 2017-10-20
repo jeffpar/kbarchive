@@ -6,6 +6,8 @@ permalink: /kb/151/Q151391/
 
 ## Q151391: New Password May Not Take Effect Immediately
 
+{% raw %}
+
 	Article: Q151391
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2
@@ -45,3 +47,5 @@ permalink: /kb/151/Q151391/
 	
 	=============================================================================
 	
+
+{% endraw %}

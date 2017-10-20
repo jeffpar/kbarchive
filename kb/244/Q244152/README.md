@@ -6,6 +6,8 @@ permalink: /kb/244/Q244152/
 
 ## Q244152: FS 2000 Pro: Cannot See Runway When Flying the Mooney Bravo IFR
 
+{% raw %}
+
 	Article: Q244152
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/244/Q244152/
 	
 	=============================================================================
 	
+
+{% endraw %}

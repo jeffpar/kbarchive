@@ -6,6 +6,8 @@ permalink: /kb/155/Q155318/
 
 ## Q155318: HOWTO: Hide a Form at Startup Using the DO FORM Command
 
+{% raw %}
+
 	Article: Q155318
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155318/
 	
 	=============================================================================
 	
+
+{% endraw %}

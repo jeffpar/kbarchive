@@ -6,6 +6,8 @@ permalink: /kb/068/Q68683/
 
 ## Q68683: ASD: Unable to Rotate Objects in the Scenery Editor
 
+{% raw %}
+
 	Article: Q68683
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/068/Q68683/
 	
 	=============================================================================
 	
+
+{% endraw %}

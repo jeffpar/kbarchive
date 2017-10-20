@@ -6,6 +6,8 @@ permalink: /kb/120/Q120453/
 
 ## Q120453: Unable to Capture Audio and Video Simultaneously with VidCap
 
+{% raw %}
+
 	Article: Q120453
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0,1.1
@@ -59,3 +61,5 @@ permalink: /kb/120/Q120453/
 	
 	=============================================================================
 	
+
+{% endraw %}

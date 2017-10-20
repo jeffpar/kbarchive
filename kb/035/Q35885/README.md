@@ -6,6 +6,8 @@ permalink: /kb/035/Q35885/
 
 ## Q35885: LONG INTEGER Overflow Is Not Detected in EXE
 
+{% raw %}
+
 	Article: Q35885
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -31,3 +33,5 @@ permalink: /kb/035/Q35885/
 	   b& = 2
 	   x& = a& * b&
 	   PRINT x&            ' EXE version prints a -2
+
+{% endraw %}

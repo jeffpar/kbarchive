@@ -6,6 +6,8 @@ permalink: /kb/129/Q129082/
 
 ## Q129082: Cannot Access Shared or Password-Protected Resource
 
+{% raw %}
+
 	Article: Q129082
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/129/Q129082/
 	
 	=============================================================================
 	
+
+{% endraw %}

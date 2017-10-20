@@ -6,6 +6,8 @@ permalink: /kb/303/Q303463/
 
 ## Q303463: Memory Leak in SMS Performance Monitor Counters
 
+{% raw %}
+
 	Article: Q303463
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -59,3 +61,5 @@ permalink: /kb/303/Q303463/
 	
 	=============================================================================
 	
+
+{% endraw %}

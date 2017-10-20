@@ -6,6 +6,8 @@ permalink: /kb/218/Q218471/
 
 ## Q218471: ISM/MMC Does Not Work Through a Firewall
 
+{% raw %}
+
 	Article: Q218471
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/218/Q218471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135187/
 
 ## Q135187: Setup Reports That Windows NT Is Installed When It Is Not
 
+{% raw %}
+
 	Article: Q135187
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135187/
 	
 	=============================================================================
 	
+
+{% endraw %}

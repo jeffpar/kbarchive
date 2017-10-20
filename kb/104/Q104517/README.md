@@ -6,6 +6,8 @@ permalink: /kb/104/Q104517/
 
 ## Q104517: PC MAPI: Err: Out of Memory Error with MAPIAddress() Function
 
+{% raw %}
+
 	Article: Q104517
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -61,3 +63,5 @@ permalink: /kb/104/Q104517/
 	
 	=============================================================================
 	
+
+{% endraw %}

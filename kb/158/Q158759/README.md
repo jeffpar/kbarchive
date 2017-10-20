@@ -6,6 +6,8 @@ permalink: /kb/158/Q158759/
 
 ## Q158759: FIX: Setup Wizard Gives Setup Error 799 Objec
 
+{% raw %}
+
 	Article: Q158759
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -75,3 +77,5 @@ permalink: /kb/158/Q158759/
 	
 	=============================================================================
 	
+
+{% endraw %}

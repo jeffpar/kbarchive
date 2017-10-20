@@ -6,6 +6,8 @@ permalink: /kb/168/Q168823/
 
 ## Q168823: DOC: Exchange/Outlook Jet IISAM Driver Does Not Ship with VB5
 
+{% raw %}
+
 	Article: Q168823
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/168/Q168823/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76872/
 
 ## Q76872: Multimedia Installable Driver SYSTEM.INI Entries
 
+{% raw %}
+
 	Article: Q76872
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/076/Q76872/
 	
 	=============================================================================
 	
+
+{% endraw %}

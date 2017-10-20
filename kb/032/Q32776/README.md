@@ -6,6 +6,8 @@ permalink: /kb/032/Q32776/
 
 ## Q32776: C2085 Error May Be the Result of a Missing Semicolon
 
+{% raw %}
+
 	Article: Q32776
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -37,3 +39,5 @@ permalink: /kb/032/Q32776/
 	function definition, and interprets the next line to follow the
 	prototype as if it were the first declaration within a function
 	definition.
+
+{% endraw %}

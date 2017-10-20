@@ -6,6 +6,8 @@ permalink: /kb/308/Q308702/
 
 ## Q308702: BUG: Jet VB Expression Service Changes FPU Precision to 64 Bits
 
+{% raw %}
+
 	Article: Q308702
 	Product(s): Microsoft C Compiler
 	Version(s): 3.51,4.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/308/Q308702/
 	
 	=============================================================================
 	
+
+{% endraw %}

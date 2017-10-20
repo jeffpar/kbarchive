@@ -6,6 +6,8 @@ permalink: /kb/173/Q173946/
 
 ## Q173946: XFOR: Disabling Support for Pull Newsfeeds
 
+{% raw %}
+
 	Article: Q173946
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173946/
 	
 	=============================================================================
 	
+
+{% endraw %}

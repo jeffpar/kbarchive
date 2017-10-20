@@ -6,6 +6,8 @@ permalink: /kb/152/Q152955/
 
 ## Q152955: XCON: MTA Prematurely Returns Messages w/NDR
 
+{% raw %}
+
 	Article: Q152955
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/152/Q152955/
 	
 	=============================================================================
 	
+
+{% endraw %}

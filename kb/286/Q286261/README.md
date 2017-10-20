@@ -6,6 +6,8 @@ permalink: /kb/286/Q286261/
 
 ## Q286261: Duplicate Messages Received by a Public Folder
 
+{% raw %}
+
 	Article: Q286261
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -94,3 +96,5 @@ permalink: /kb/286/Q286261/
 	
 	=============================================================================
 	
+
+{% endraw %}

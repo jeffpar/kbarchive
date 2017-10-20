@@ -6,6 +6,8 @@ permalink: /kb/252/Q252331/
 
 ## Q252331: XADM: Error Message: Failed to Get ADSI Object: 8007203A
 
+{% raw %}
+
 	Article: Q252331
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/252/Q252331/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237293/
 
 ## Q237293: XADM: Owner Field Blank in Distribution List Properties
 
+{% raw %}
+
 	Article: Q237293
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/237/Q237293/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87362/
 
 ## Q87362: Windows Setup Hangs on AST Premium 386/386c
 
+{% raw %}
+
 	Article: Q87362
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/087/Q87362/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180004/
 
 ## Q180004: Public Folder Permissions Are Cumulative
 
+{% raw %}
+
 	Article: Q180004
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/180/Q180004/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66945/
 
 ## Q66945: PRB: Fatal Exit Code 0x0019 Definition and Causes
 
+{% raw %}
+
 	Article: Q66945
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -65,3 +67,5 @@ permalink: /kb/066/Q66945/
 	
 	=============================================================================
 	
+
+{% endraw %}

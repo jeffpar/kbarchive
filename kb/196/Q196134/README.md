@@ -6,6 +6,8 @@ permalink: /kb/196/Q196134/
 
 ## Q196134: XCLN: Favorites Added in OWA Do Not Appear Without Refresh
 
+{% raw %}
+
 	Article: Q196134
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/196/Q196134/
 	
 	=============================================================================
 	
+
+{% endraw %}

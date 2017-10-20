@@ -6,6 +6,8 @@ permalink: /kb/125/Q125497/
 
 ## Q125497: PRB: Win32s Version of MSVCRT20.DLL and the iostream Classes
 
+{% raw %}
+
 	Article: Q125497
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -85,3 +87,5 @@ permalink: /kb/125/Q125497/
 	
 	=============================================================================
 	
+
+{% endraw %}

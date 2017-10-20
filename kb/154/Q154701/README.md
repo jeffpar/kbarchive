@@ -6,6 +6,8 @@ permalink: /kb/154/Q154701/
 
 ## Q154701: DIR Command on a NetWare Directory Results in &quot;File Not Found&quot;
 
+{% raw %}
+
 	Article: Q154701
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/154/Q154701/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/305/Q305693/
 
 ## Q305693: SMS: Access Violation with the Preinst During /DELSITE Command
 
+{% raw %}
+
 	Article: Q305693
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -93,3 +95,5 @@ permalink: /kb/305/Q305693/
 	
 	=============================================================================
 	
+
+{% endraw %}

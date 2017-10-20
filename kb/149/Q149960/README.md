@@ -6,6 +6,8 @@ permalink: /kb/149/Q149960/
 
 ## Q149960: Macs Unable to Connect to PCM Server in Zones with Long Names
 
+{% raw %}
+
 	Article: Q149960
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -60,3 +62,5 @@ permalink: /kb/149/Q149960/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195373/
 
 ## Q195373: BUG: Breakpoint Not Hit in ActiveX DLL on CE Device
 
+{% raw %}
+
 	Article: Q195373
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:
@@ -68,3 +70,5 @@ permalink: /kb/195/Q195373/
 	
 	=============================================================================
 	
+
+{% endraw %}

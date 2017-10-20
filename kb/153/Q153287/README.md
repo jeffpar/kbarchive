@@ -6,6 +6,8 @@ permalink: /kb/153/Q153287/
 
 ## Q153287: SMS Client Files Not Removed After Upgrade
 
+{% raw %}
+
 	Article: Q153287
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153287/
 	
 	=============================================================================
 	
+
+{% endraw %}

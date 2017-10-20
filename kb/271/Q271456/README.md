@@ -6,6 +6,8 @@ permalink: /kb/271/Q271456/
 
 ## Q271456: IIS 4.0 Causes Heap Corruption in CGI Application
 
+{% raw %}
+
 	Article: Q271456
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/271/Q271456/
 	
 	=============================================================================
 	
+
+{% endraw %}

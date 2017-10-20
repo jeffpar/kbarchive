@@ -6,6 +6,8 @@ permalink: /kb/075/Q75231/
 
 ## Q75231: MS-DOS and CSC Fastcache SCSI Controllers
 
+{% raw %}
+
 	Article: Q75231
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -35,3 +37,5 @@ permalink: /kb/075/Q75231/
 	
 	=============================================================================
 	
+
+{% endraw %}

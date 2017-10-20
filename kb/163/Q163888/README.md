@@ -6,6 +6,8 @@ permalink: /kb/163/Q163888/
 
 ## Q163888: Installing Sound Blaster 16 Value Disables PS/2 Mouse
 
+{% raw %}
+
 	Article: Q163888
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -51,3 +53,5 @@ permalink: /kb/163/Q163888/
 	
 	=============================================================================
 	
+
+{% endraw %}

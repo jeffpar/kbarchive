@@ -6,6 +6,8 @@ permalink: /kb/269/Q269768/
 
 ## Q269768: SMS: Deleted PCM Client Instruction Files Can Be Viewed
 
+{% raw %}
+
 	Article: Q269768
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -69,3 +71,5 @@ permalink: /kb/269/Q269768/
 	
 	=============================================================================
 	
+
+{% endraw %}

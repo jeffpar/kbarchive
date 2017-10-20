@@ -6,6 +6,8 @@ permalink: /kb/098/Q98824/
 
 ## Q98824: X400: 3.0 Gateway Disk &#91;5.25, 1.22 MB&#93;
 
+{% raw %}
+
 	Article: Q98824
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/098/Q98824/
 	
 	=============================================================================
 	
+
+{% endraw %}

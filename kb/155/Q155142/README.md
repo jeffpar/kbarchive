@@ -6,6 +6,8 @@ permalink: /kb/155/Q155142/
 
 ## Q155142: FIX: ClassWizard &#124; Member Variables Loses Member Variables
 
+{% raw %}
+
 	Article: Q155142
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -78,3 +80,5 @@ permalink: /kb/155/Q155142/
 	
 	=============================================================================
 	
+
+{% endraw %}

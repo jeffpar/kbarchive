@@ -6,6 +6,8 @@ permalink: /kb/261/Q261172/
 
 ## Q261172: PRB: fnevObjectDeleted Returns Short Term Entry ID from Exchange
 
+{% raw %}
+
 	Article: Q261172
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -86,3 +88,5 @@ permalink: /kb/261/Q261172/
 	
 	=============================================================================
 	
+
+{% endraw %}

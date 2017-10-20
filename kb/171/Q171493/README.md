@@ -6,6 +6,8 @@ permalink: /kb/171/Q171493/
 
 ## Q171493: FIX: Viewing Property Pages and Exiting Causes Memory Leak
 
+{% raw %}
+
 	Article: Q171493
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -93,3 +95,5 @@ permalink: /kb/171/Q171493/
 	
 	=============================================================================
 	
+
+{% endraw %}

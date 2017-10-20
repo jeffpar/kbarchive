@@ -6,6 +6,8 @@ permalink: /kb/186/Q186535/
 
 ## Q186535: Information Regarding Peoplesoft Cache Files
 
+{% raw %}
+
 	Article: Q186535
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -43,3 +45,5 @@ permalink: /kb/186/Q186535/
 	
 	=============================================================================
 	
+
+{% endraw %}

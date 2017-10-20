@@ -6,6 +6,8 @@ permalink: /kb/142/Q142367/
 
 ## Q142367: MS-DOS Clients Cannot Log On Across Router with TCP/IP
 
+{% raw %}
+
 	Article: Q142367
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142367/
 	
 	=============================================================================
 	
+
+{% endraw %}

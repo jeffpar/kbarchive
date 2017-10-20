@@ -6,6 +6,8 @@ permalink: /kb/107/Q107694/
 
 ## Q107694: PRB: Share Buffer Exceeded
 
+{% raw %}
+
 	Article: Q107694
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/107/Q107694/
 	
 	=============================================================================
 	
+
+{% endraw %}

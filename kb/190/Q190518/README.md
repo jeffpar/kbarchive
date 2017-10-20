@@ -6,6 +6,8 @@ permalink: /kb/190/Q190518/
 
 ## Q190518: FIX: MFC AppWizard Generates Incorrect Toolbars and Bitmaps
 
+{% raw %}
+
 	Article: Q190518
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -185,3 +187,5 @@ permalink: /kb/190/Q190518/
 	
 	=============================================================================
 	
+
+{% endraw %}

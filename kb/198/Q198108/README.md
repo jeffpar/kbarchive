@@ -6,6 +6,8 @@ permalink: /kb/198/Q198108/
 
 ## Q198108: XCLN: Microsoft Exchange and/or Outlook Client Hangs
 
+{% raw %}
+
 	Article: Q198108
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.0,8.01,8.02,8.03
@@ -70,3 +72,5 @@ permalink: /kb/198/Q198108/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86981/
 
 ## Q86981: X400: Effect of Dir-Sync on Gateway Address Lists
 
+{% raw %}
+
 	Article: Q86981
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/086/Q86981/
 	
 	=============================================================================
 	
+
+{% endraw %}

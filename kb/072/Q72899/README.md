@@ -6,6 +6,8 @@ permalink: /kb/072/Q72899/
 
 ## Q72899: SAMPLE: VPostD.exe Calls PostMessage from a Virtual Device (VxD)
 
+{% raw %}
+
 	Article: Q72899
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -85,3 +87,5 @@ permalink: /kb/072/Q72899/
 	
 	=============================================================================
 	
+
+{% endraw %}

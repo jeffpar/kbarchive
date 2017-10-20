@@ -6,6 +6,8 @@ permalink: /kb/161/Q161848/
 
 ## Q161848: FP: Custom Color Palette Reset After Editor Session
 
+{% raw %}
+
 	Article: Q161848
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -72,3 +74,5 @@ permalink: /kb/161/Q161848/
 	
 	=============================================================================
 	
+
+{% endraw %}

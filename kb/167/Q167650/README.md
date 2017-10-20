@@ -6,6 +6,8 @@ permalink: /kb/167/Q167650/
 
 ## Q167650: FIX: Problems with ToolTips on Windows 95
 
+{% raw %}
+
 	Article: Q167650
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -72,3 +74,5 @@ permalink: /kb/167/Q167650/
 	
 	=============================================================================
 	
+
+{% endraw %}

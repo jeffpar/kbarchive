@@ -6,6 +6,8 @@ permalink: /kb/297/Q297047/
 
 ## Q297047: Microsoft Office 2000 Expert Companion Comments And Corrections
 
+{% raw %}
+
 	Article: Q297047
 	Product(s): Microsoft Press
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/297/Q297047/
 	
 	=============================================================================
 	
+
+{% endraw %}

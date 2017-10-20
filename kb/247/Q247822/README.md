@@ -6,6 +6,8 @@ permalink: /kb/247/Q247822/
 
 ## Q247822: How to Use Demo SDLC Link Service for 3270 Client Testing
 
+{% raw %}
+
 	Article: Q247822
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -84,3 +86,5 @@ permalink: /kb/247/Q247822/
 	
 	=============================================================================
 	
+
+{% endraw %}

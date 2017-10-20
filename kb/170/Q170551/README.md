@@ -6,6 +6,8 @@ permalink: /kb/170/Q170551/
 
 ## Q170551: ADT/ODE: Transporter and Synchronizer Can't Share Log File
 
+{% raw %}
+
 	Article: Q170551
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -150,3 +152,5 @@ permalink: /kb/170/Q170551/
 	
 	=============================================================================
 	
+
+{% endraw %}

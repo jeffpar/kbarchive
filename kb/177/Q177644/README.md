@@ -6,6 +6,8 @@ permalink: /kb/177/Q177644/
 
 ## Q177644: Commenting Macintosh File Changes Date and Time Stamp
 
+{% raw %}
+
 	Article: Q177644
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -107,3 +109,5 @@ permalink: /kb/177/Q177644/
 	
 	=============================================================================
 	
+
+{% endraw %}

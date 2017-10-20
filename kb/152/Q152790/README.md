@@ -6,6 +6,8 @@ permalink: /kb/152/Q152790/
 
 ## Q152790: Clicking Tools Menu Hangs Microsoft Exchange
 
+{% raw %}
+
 	Article: Q152790
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -103,3 +105,5 @@ permalink: /kb/152/Q152790/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122941/
 
 ## Q122941: Invalid Voice Pilot Macro Hangs System
 
+{% raw %}
+
 	Article: Q122941
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.00 2.00a
@@ -55,3 +57,5 @@ permalink: /kb/122/Q122941/
 	
 	=============================================================================
 	
+
+{% endraw %}

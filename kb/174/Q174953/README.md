@@ -6,6 +6,8 @@ permalink: /kb/174/Q174953/
 
 ## Q174953: SMS: SMS 1.2 SP 3 Reduces Client/Server Network Traffic
 
+{% raw %}
+
 	Article: Q174953
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3
@@ -65,3 +67,5 @@ permalink: /kb/174/Q174953/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165747/
 
 ## Q165747: SNA Win95/NT Client Using Named Pipes Will Not Have the Data
 
+{% raw %}
+
 	Article: Q165747
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/165/Q165747/
 	
 	=============================================================================
 	
+
+{% endraw %}

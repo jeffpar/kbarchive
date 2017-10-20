@@ -6,6 +6,8 @@ permalink: /kb/073/Q73691/
 
 ## Q73691: Opening Editor with Selected File in Shell
 
+{% raw %}
+
 	Article: Q73691
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -62,3 +64,5 @@ permalink: /kb/073/Q73691/
 	
 	=============================================================================
 	
+
+{% endraw %}

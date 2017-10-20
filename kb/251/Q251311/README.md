@@ -6,6 +6,8 @@ permalink: /kb/251/Q251311/
 
 ## Q251311: BUG: Collection Tool Not Being Removed from the Start Menu
 
+{% raw %}
+
 	Article: Q251311
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:
@@ -83,3 +85,5 @@ permalink: /kb/251/Q251311/
 	
 	=============================================================================
 	
+
+{% endraw %}

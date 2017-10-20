@@ -6,6 +6,8 @@ permalink: /kb/175/Q175099/
 
 ## Q175099: XCLN: Shiva Error: Unable to Negotiate LCP Connection
 
+{% raw %}
+
 	Article: Q175099
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -80,3 +82,5 @@ permalink: /kb/175/Q175099/
 	
 	=============================================================================
 	
+
+{% endraw %}

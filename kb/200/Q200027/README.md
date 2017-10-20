@@ -6,6 +6,8 @@ permalink: /kb/200/Q200027/
 
 ## Q200027: HOWTO: Determine If IE Is Offline from an ActiveX Document
 
+{% raw %}
+
 	Article: Q200027
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,4.01,4.01 SP1,4.01 SP2,5,5.0,5.5,6.0
@@ -130,3 +132,5 @@ permalink: /kb/200/Q200027/
 	
 	=============================================================================
 	
+
+{% endraw %}

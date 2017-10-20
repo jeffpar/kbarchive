@@ -6,6 +6,8 @@ permalink: /kb/152/Q152735/
 
 ## Q152735: XCLN: Offline Folder Is in Use and Could Not Be Accessed
 
+{% raw %}
+
 	Article: Q152735
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152735/
 	
 	=============================================================================
 	
+
+{% endraw %}

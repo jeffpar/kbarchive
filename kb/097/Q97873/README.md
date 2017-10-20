@@ -6,6 +6,8 @@ permalink: /kb/097/Q97873/
 
 ## Q97873: LAN Man NetBEUI Cannot Accommodate More than 256 Sessions
 
+{% raw %}
+
 	Article: Q97873
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/097/Q97873/
 	
 	=============================================================================
 	
+
+{% endraw %}

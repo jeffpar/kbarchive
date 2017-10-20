@@ -6,6 +6,8 @@ permalink: /kb/156/Q156078/
 
 ## Q156078: RegMaid.exe Helps Clean Up the Registry
 
+{% raw %}
+
 	Article: Q156078
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/156/Q156078/
 	
 	=============================================================================
 	
+
+{% endraw %}

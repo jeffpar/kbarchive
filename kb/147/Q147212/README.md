@@ -6,6 +6,8 @@ permalink: /kb/147/Q147212/
 
 ## Q147212: Send Fax Wizard Does Not Convert Long File Name for Attachment
 
+{% raw %}
+
 	Article: Q147212
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/147/Q147212/
 	
 	=============================================================================
 	
+
+{% endraw %}

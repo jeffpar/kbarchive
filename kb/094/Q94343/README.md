@@ -6,6 +6,8 @@ permalink: /kb/094/Q94343/
 
 ## Q94343: Obtaining Number of Data Groups in .FRX Without Using UDF
 
+{% raw %}
+
 	Article: Q94343
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -57,3 +59,5 @@ permalink: /kb/094/Q94343/
 	
 	=============================================================================
 	
+
+{% endraw %}

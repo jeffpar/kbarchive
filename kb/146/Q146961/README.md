@@ -6,6 +6,8 @@ permalink: /kb/146/Q146961/
 
 ## Q146961: XCLN: Outbox on Win16 Client Does Not Change Color
 
+{% raw %}
+
 	Article: Q146961
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -51,3 +53,5 @@ permalink: /kb/146/Q146961/
 	
 	=============================================================================
 	
+
+{% endraw %}

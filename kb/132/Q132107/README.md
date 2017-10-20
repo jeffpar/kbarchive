@@ -6,6 +6,8 @@ permalink: /kb/132/Q132107/
 
 ## Q132107: Mac Encarta 1995 Err Msg: Cannot Find Files Needed to Start...
 
+{% raw %}
+
 	Article: Q132107
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -93,3 +95,5 @@ permalink: /kb/132/Q132107/
 	
 	=============================================================================
 	
+
+{% endraw %}

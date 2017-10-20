@@ -6,6 +6,8 @@ permalink: /kb/148/Q148259/
 
 ## Q148259: Cinemania 94: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148259
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 editions
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148259/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130771/
 
 ## Q130771: Cannot Use RAS or AWFAX with Hayes Accelerator Card Drivers
 
+{% raw %}
+
 	Article: Q130771
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/130/Q130771/
 	
 	=============================================================================
 	
+
+{% endraw %}

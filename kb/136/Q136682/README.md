@@ -6,6 +6,8 @@ permalink: /kb/136/Q136682/
 
 ## Q136682: Sharing Violation Accessing an Executable on an NTFS MAC Volume
 
+{% raw %}
+
 	Article: Q136682
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -85,3 +87,5 @@ permalink: /kb/136/Q136682/
 	
 	=============================================================================
 	
+
+{% endraw %}

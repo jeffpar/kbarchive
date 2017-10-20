@@ -6,6 +6,8 @@ permalink: /kb/070/Q70123/
 
 ## Q70123: PWB 1.1 Reads Environment Variables From .STS Files
 
+{% raw %}
+
 	Article: Q70123
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/070/Q70123/
 	
 	=============================================================================
 	
+
+{% endraw %}

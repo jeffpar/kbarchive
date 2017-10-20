@@ -6,6 +6,8 @@ permalink: /kb/090/Q90244/
 
 ## Q90244: The Network Card Is Unable to Access the Network
 
+{% raw %}
+
 	Article: Q90244
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/090/Q90244/
 	
 	=============================================================================
 	
+
+{% endraw %}

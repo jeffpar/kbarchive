@@ -6,6 +6,8 @@ permalink: /kb/200/Q200034/
 
 ## Q200034: HOWTO: Debug a Visual Basic Out-of-Process Server with Visual C+
 
+{% raw %}
+
 	Article: Q200034
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -197,3 +199,5 @@ permalink: /kb/200/Q200034/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105753/
 
 ## Q105753: &quot;Unable to Play Sound: Sound Blaster Is in Use by Another...&quot;
 
+{% raw %}
+
 	Article: Q105753
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/105/Q105753/
 	
 	=============================================================================
 	
+
+{% endraw %}

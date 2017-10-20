@@ -6,6 +6,8 @@ permalink: /kb/189/Q189111/
 
 ## Q189111: INFO: What Additional Components Are Installed with VB 6.0?
 
+{% raw %}
+
 	Article: Q189111
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/189/Q189111/
 	
 	=============================================================================
 	
+
+{% endraw %}

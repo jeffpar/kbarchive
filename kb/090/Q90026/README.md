@@ -6,6 +6,8 @@ permalink: /kb/090/Q90026/
 
 ## Q90026: FoxView Memo Field Limitations
 
+{% raw %}
+
 	Article: Q90026
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -134,3 +136,5 @@ permalink: /kb/090/Q90026/
 	
 	=============================================================================
 	
+
+{% endraw %}

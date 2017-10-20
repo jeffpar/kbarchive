@@ -6,6 +6,8 @@ permalink: /kb/102/Q102831/
 
 ## Q102831: Mac Srv: Update Gateway Connect Times Sends Outbound Message
 
+{% raw %}
+
 	Article: Q102831
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -42,3 +44,5 @@ permalink: /kb/102/Q102831/
 	
 	=============================================================================
 	
+
+{% endraw %}

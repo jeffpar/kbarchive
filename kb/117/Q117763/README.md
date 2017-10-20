@@ -6,6 +6,8 @@ permalink: /kb/117/Q117763/
 
 ## Q117763: PC Gen: README.TXT: Supplementary Modem Scripts Disk
 
+{% raw %}
+
 	Article: Q117763
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -132,3 +134,5 @@ permalink: /kb/117/Q117763/
 	
 	=============================================================================
 	
+
+{% endraw %}

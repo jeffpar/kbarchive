@@ -6,6 +6,8 @@ permalink: /kb/128/Q128633/
 
 ## Q128633: How Inheritance Affects PROTECTED Methods and Properties
 
+{% raw %}
+
 	Article: Q128633
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/128/Q128633/
 	
 	=============================================================================
 	
+
+{% endraw %}

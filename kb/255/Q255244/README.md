@@ -6,6 +6,8 @@ permalink: /kb/255/Q255244/
 
 ## Q255244: XCLN: How to Remove Journal Entries from Outlook
 
+{% raw %}
+
 	Article: Q255244
 	Product(s): Microsoft Exchange
 	Version(s): 8.04; WINDOWS:2000
@@ -63,3 +65,5 @@ permalink: /kb/255/Q255244/
 	
 	=============================================================================
 	
+
+{% endraw %}

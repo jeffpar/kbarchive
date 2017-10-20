@@ -6,6 +6,8 @@ permalink: /kb/195/Q195116/
 
 ## Q195116: SNA Server Logs Event 3 (1106) Node Configuration Error
 
+{% raw %}
+
 	Article: Q195116
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -65,3 +67,5 @@ permalink: /kb/195/Q195116/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102669/
 
 ## Q102669: PC DB: Updating a 2.1 PO to 3.0 Changes GRPMEM.GLB Variable
 
+{% raw %}
+
 	Article: Q102669
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -40,3 +42,5 @@ permalink: /kb/102/Q102669/
 	
 	=============================================================================
 	
+
+{% endraw %}

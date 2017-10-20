@@ -6,6 +6,8 @@ permalink: /kb/210/Q210961/
 
 ## Q210961: Files Added to Favorites Folder May Not Appear in Favorites Menu
 
+{% raw %}
+
 	Article: Q210961
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2000,4.01 Service Pack 2,4.x,5,5.01,5.5; Win2000:95,98,98 Second Edition; Win98
@@ -68,3 +70,5 @@ permalink: /kb/210/Q210961/
 	
 	=============================================================================
 	
+
+{% endraw %}

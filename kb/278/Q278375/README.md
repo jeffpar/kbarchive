@@ -6,6 +6,8 @@ permalink: /kb/278/Q278375/
 
 ## Q278375: Fighter Ace II: Joystick Does Not Function Correctly
 
+{% raw %}
+
 	Article: Q278375
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/278/Q278375/
 	
 	=============================================================================
 	
+
+{% endraw %}

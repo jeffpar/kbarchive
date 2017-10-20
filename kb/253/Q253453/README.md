@@ -6,6 +6,8 @@ permalink: /kb/253/Q253453/
 
 ## Q253453: Microsoft Games: Game Controller Does Not Function in the Game
 
+{% raw %}
+
 	Article: Q253453
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -101,3 +103,5 @@ permalink: /kb/253/Q253453/
 	
 	=============================================================================
 	
+
+{% endraw %}

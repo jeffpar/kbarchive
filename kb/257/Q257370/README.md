@@ -6,6 +6,8 @@ permalink: /kb/257/Q257370/
 
 ## Q257370: XCLN: Using Hypertext Markup Language Forms and Public Folders
 
+{% raw %}
+
 	Article: Q257370
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5,97; :
@@ -132,3 +134,5 @@ permalink: /kb/257/Q257370/
 	
 	=============================================================================
 	
+
+{% endraw %}

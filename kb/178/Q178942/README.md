@@ -6,6 +6,8 @@ permalink: /kb/178/Q178942/
 
 ## Q178942: HOWTO: Performance Tuning the Jet Engine Per Instance in MFC
 
+{% raw %}
+
 	Article: Q178942
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0,6.0
@@ -123,3 +125,5 @@ permalink: /kb/178/Q178942/
 	
 	=============================================================================
 	
+
+{% endraw %}

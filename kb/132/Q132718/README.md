@@ -6,6 +6,8 @@ permalink: /kb/132/Q132718/
 
 ## Q132718: SNA Server DISPLAY verb may return DISPLAY_INVALID_CONSTANT
 
+{% raw %}
+
 	Article: Q132718
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -62,3 +64,5 @@ permalink: /kb/132/Q132718/
 	
 	=============================================================================
 	
+
+{% endraw %}

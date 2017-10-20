@@ -6,6 +6,8 @@ permalink: /kb/319/Q319689/
 
 ## Q319689: Streets &amp; Trips 2002: Err Msg: Cannot Find Pocket Streets
 
+{% raw %}
+
 	Article: Q319689
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -189,3 +191,5 @@ permalink: /kb/319/Q319689/
 	
 	=============================================================================
 	
+
+{% endraw %}

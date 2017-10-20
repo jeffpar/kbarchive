@@ -6,6 +6,8 @@ permalink: /kb/163/Q163519/
 
 ## Q163519: DSPU Reconnect Failure After An Outage
 
+{% raw %}
+
 	Article: Q163519
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -63,3 +65,5 @@ permalink: /kb/163/Q163519/
 	
 	=============================================================================
 	
+
+{% endraw %}

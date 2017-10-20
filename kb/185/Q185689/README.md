@@ -6,6 +6,8 @@ permalink: /kb/185/Q185689/
 
 ## Q185689: Snaserver.exe May Trap in Function S1PXSND()
 
+{% raw %}
+
 	Article: Q185689
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -104,3 +106,5 @@ permalink: /kb/185/Q185689/
 	
 	=============================================================================
 	
+
+{% endraw %}

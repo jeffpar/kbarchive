@@ -6,6 +6,8 @@ permalink: /kb/148/Q148825/
 
 ## Q148825: Err Msg:  Modem Is Busy or Not Found.
 
+{% raw %}
+
 	Article: Q148825
 	Product(s): The Microsoft Network
 	Version(s): 2.0,2.5,2.6
@@ -114,3 +116,5 @@ permalink: /kb/148/Q148825/
 	
 	=============================================================================
 	
+
+{% endraw %}

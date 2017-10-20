@@ -6,6 +6,8 @@ permalink: /kb/314/Q314652/
 
 ## Q314652: Flight Simulator 2002: Troubleshooting Video Issues
 
+{% raw %}
+
 	Article: Q314652
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -316,3 +318,5 @@ permalink: /kb/314/Q314652/
 	
 	=============================================================================
 	
+
+{% endraw %}

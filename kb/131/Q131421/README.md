@@ -6,6 +6,8 @@ permalink: /kb/131/Q131421/
 
 ## Q131421: INF: List of Windows International Code Pages for Windows 3.1
 
+{% raw %}
+
 	Article: Q131421
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -51,3 +53,5 @@ permalink: /kb/131/Q131421/
 	
 	=============================================================================
 	
+
+{% endraw %}

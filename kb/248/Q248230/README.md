@@ -6,6 +6,8 @@ permalink: /kb/248/Q248230/
 
 ## Q248230: IPX Clients with Session ID &gt; 4,095 Can Cause &quot;Stop 0x1E&quot;
 
+{% raw %}
+
 	Article: Q248230
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/248/Q248230/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/304/Q304396/
 
 ## Q304396: Close Combat 3: Err Msg: Unable to Get Format on Stream
 
+{% raw %}
+
 	Article: Q304396
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/304/Q304396/
 	
 	=============================================================================
 	
+
+{% endraw %}

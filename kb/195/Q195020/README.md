@@ -6,6 +6,8 @@ permalink: /kb/195/Q195020/
 
 ## Q195020: INFO: VB Project in a Shared Location Overwrites Modifications
 
+{% raw %}
+
 	Article: Q195020
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -183,3 +185,5 @@ permalink: /kb/195/Q195020/
 	
 	=============================================================================
 	
+
+{% endraw %}

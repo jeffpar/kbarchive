@@ -6,6 +6,8 @@ permalink: /kb/165/Q165802/
 
 ## Q165802: WD97: Run-Time Error Setting Borders.InsideLineWidth
 
+{% raw %}
+
 	Article: Q165802
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/165/Q165802/
 	
 	=============================================================================
 	
+
+{% endraw %}

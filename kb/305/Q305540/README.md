@@ -6,6 +6,8 @@ permalink: /kb/305/Q305540/
 
 ## Q305540: XCON: Accented Characters in Subject Field Are Modified
 
+{% raw %}
+
 	Article: Q305540
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -49,3 +51,5 @@ permalink: /kb/305/Q305540/
 	
 	=============================================================================
 	
+
+{% endraw %}

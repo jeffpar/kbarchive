@@ -6,6 +6,8 @@ permalink: /kb/181/Q181942/
 
 ## Q181942: XCLN: Cannot Resolve SMTP Addresses, Messages Sent Successfully
 
+{% raw %}
+
 	Article: Q181942
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0; :8.01,8.02,8.03
@@ -89,3 +91,5 @@ permalink: /kb/181/Q181942/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173675/
 
 ## Q173675: WD97: Word Hangs Opening Print or Page Setup Dialog Boxes
 
+{% raw %}
+
 	Article: Q173675
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -132,3 +134,5 @@ permalink: /kb/173/Q173675/
 	
 	=============================================================================
 	
+
+{% endraw %}

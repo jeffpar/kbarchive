@@ -6,6 +6,8 @@ permalink: /kb/123/Q123275/
 
 ## Q123275: Extra Keys on Brazilian Keyboard Do Not Work at Command Prompt
 
+{% raw %}
+
 	Article: Q123275
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/123/Q123275/
 	
 	=============================================================================
 	
+
+{% endraw %}

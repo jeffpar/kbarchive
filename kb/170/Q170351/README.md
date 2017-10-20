@@ -6,6 +6,8 @@ permalink: /kb/170/Q170351/
 
 ## Q170351: WD97: Style List Shows Styles Out of Order
 
+{% raw %}
+
 	Article: Q170351
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/170/Q170351/
 	
 	=============================================================================
 	
+
+{% endraw %}

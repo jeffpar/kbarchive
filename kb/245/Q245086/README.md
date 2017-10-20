@@ -6,6 +6,8 @@ permalink: /kb/245/Q245086/
 
 ## Q245086: Netlogon Event 3051, with Invalid Registry Entry in Event Viewer
 
+{% raw %}
+
 	Article: Q245086
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/245/Q245086/
 	
 	=============================================================================
 	
+
+{% endraw %}

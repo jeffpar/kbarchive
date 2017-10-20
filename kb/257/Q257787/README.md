@@ -6,6 +6,8 @@ permalink: /kb/257/Q257787/
 
 ## Q257787: FIX: Program w/ Usercontrol Causes Access Violation When Exiting
 
+{% raw %}
+
 	Article: Q257787
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -215,3 +217,5 @@ permalink: /kb/257/Q257787/
 	
 	=============================================================================
 	
+
+{% endraw %}

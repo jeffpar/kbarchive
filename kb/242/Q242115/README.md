@@ -6,6 +6,8 @@ permalink: /kb/242/Q242115/
 
 ## Q242115: Computer Is Slow Locally But Is Normal Over Remote Connection
 
+{% raw %}
+
 	Article: Q242115
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/242/Q242115/
 	
 	=============================================================================
 	
+
+{% endraw %}

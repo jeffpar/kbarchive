@@ -6,6 +6,8 @@ permalink: /kb/140/Q140646/
 
 ## Q140646: How to Start Windows Explorer By Double-Clicking My Computer
 
+{% raw %}
+
 	Article: Q140646
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -58,3 +60,5 @@ permalink: /kb/140/Q140646/
 	
 	=============================================================================
 	
+
+{% endraw %}

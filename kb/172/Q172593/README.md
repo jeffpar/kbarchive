@@ -6,6 +6,8 @@ permalink: /kb/172/Q172593/
 
 ## Q172593: HOWTO: Populate DBGrid from Crosstab Parameter Query
 
+{% raw %}
+
 	Article: Q172593
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/172/Q172593/
 	
 	=============================================================================
 	
+
+{% endraw %}

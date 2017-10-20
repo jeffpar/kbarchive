@@ -6,6 +6,8 @@ permalink: /kb/134/Q134219/
 
 ## Q134219: Explorapedia: Wrong Version is Displayed on Product ID Screen
 
+{% raw %}
+
 	Article: Q134219
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/134/Q134219/
 	
 	=============================================================================
 	
+
+{% endraw %}

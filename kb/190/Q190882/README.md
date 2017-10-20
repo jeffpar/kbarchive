@@ -6,6 +6,8 @@ permalink: /kb/190/Q190882/
 
 ## Q190882: SAMPLE: FSOSAMP.EXE Application Uses the FileSystem Object
 
+{% raw %}
+
 	Article: Q190882
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -93,3 +95,5 @@ permalink: /kb/190/Q190882/
 	
 	=============================================================================
 	
+
+{% endraw %}

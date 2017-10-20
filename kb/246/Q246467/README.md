@@ -6,6 +6,8 @@ permalink: /kb/246/Q246467/
 
 ## Q246467: RAS Server Stops Responding to New PPP Connection Requests
 
+{% raw %}
+
 	Article: Q246467
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -96,3 +98,5 @@ permalink: /kb/246/Q246467/
 	
 	=============================================================================
 	
+
+{% endraw %}

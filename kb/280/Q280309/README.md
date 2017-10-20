@@ -6,6 +6,8 @@ permalink: /kb/280/Q280309/
 
 ## Q280309: PRB: _VFP.DataToClip() Only Reads DataSession 1
 
+{% raw %}
+
 	Article: Q280309
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/280/Q280309/
 	
 	=============================================================================
 	
+
+{% endraw %}

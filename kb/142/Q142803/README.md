@@ -6,6 +6,8 @@ permalink: /kb/142/Q142803/
 
 ## Q142803: Locking Error or Computer Hangs Accessing Network Database Files
 
+{% raw %}
+
 	Article: Q142803
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/142/Q142803/
 	
 	=============================================================================
 	
+
+{% endraw %}

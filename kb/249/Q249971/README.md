@@ -6,6 +6,8 @@ permalink: /kb/249/Q249971/
 
 ## Q249971: WinNT SNA Client Truncates FQDN in OtherServers Registry Param
 
+{% raw %}
+
 	Article: Q249971
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -63,3 +65,5 @@ permalink: /kb/249/Q249971/
 	
 	=============================================================================
 	
+
+{% endraw %}

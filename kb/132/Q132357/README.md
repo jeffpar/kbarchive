@@ -6,6 +6,8 @@ permalink: /kb/132/Q132357/
 
 ## Q132357: How to Implement CTRL+G Functionality to &quot;Find Again&quot;
 
+{% raw %}
+
 	Article: Q132357
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -94,3 +96,5 @@ permalink: /kb/132/Q132357/
 	
 	=============================================================================
 	
+
+{% endraw %}

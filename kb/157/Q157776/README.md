@@ -6,6 +6,8 @@ permalink: /kb/157/Q157776/
 
 ## Q157776: WD97: Horizontal Lines Are Displayed with Different Widths
 
+{% raw %}
+
 	Article: Q157776
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/157/Q157776/
 	
 	=============================================================================
 	
+
+{% endraw %}

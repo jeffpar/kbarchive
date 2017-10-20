@@ -6,6 +6,8 @@ permalink: /kb/247/Q247296/
 
 ## Q247296: XFOR: How to Filter Messages with Empty From Line
 
+{% raw %}
+
 	Article: Q247296
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2
@@ -64,3 +66,5 @@ permalink: /kb/247/Q247296/
 	
 	=============================================================================
 	
+
+{% endraw %}

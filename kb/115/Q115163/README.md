@@ -6,6 +6,8 @@ permalink: /kb/115/Q115163/
 
 ## Q115163: PC Gen: Automating Multiple Mail Logins on NetWare 3.11
 
+{% raw %}
+
 	Article: Q115163
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -129,3 +131,5 @@ permalink: /kb/115/Q115163/
 	
 	=============================================================================
 	
+
+{% endraw %}

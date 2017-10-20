@@ -6,6 +6,8 @@ permalink: /kb/128/Q128199/
 
 ## Q128199: HOWTO: Use _declspec(dllexport) in an MFC Extension DLL
 
+{% raw %}
+
 	Article: Q128199
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0
@@ -268,3 +270,5 @@ permalink: /kb/128/Q128199/
 	
 	=============================================================================
 	
+
+{% endraw %}

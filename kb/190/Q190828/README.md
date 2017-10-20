@@ -6,6 +6,8 @@ permalink: /kb/190/Q190828/
 
 ## Q190828: XADM: Information Store Fails to Start With Error
 
+{% raw %}
+
 	Article: Q190828
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -46,3 +48,5 @@ permalink: /kb/190/Q190828/
 	
 	=============================================================================
 	
+
+{% endraw %}

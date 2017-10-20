@@ -6,6 +6,8 @@ permalink: /kb/259/Q259952/
 
 ## Q259952: StarLancer: 3D Accelerator Card Is Not Detected by the Game
 
+{% raw %}
+
 	Article: Q259952
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/259/Q259952/
 	
 	=============================================================================
 	
+
+{% endraw %}

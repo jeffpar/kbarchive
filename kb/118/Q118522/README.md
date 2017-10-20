@@ -6,6 +6,8 @@ permalink: /kb/118/Q118522/
 
 ## Q118522: Numerical Recipes Disk Included with PowerStation
 
+{% raw %}
+
 	Article: Q118522
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0
@@ -58,3 +60,5 @@ permalink: /kb/118/Q118522/
 	
 	=============================================================================
 	
+
+{% endraw %}

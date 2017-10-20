@@ -6,6 +6,8 @@ permalink: /kb/193/Q193579/
 
 ## Q193579: FIX: SSAPI: Mssccprj.scc File Does Not Have SCC_Aux_Path Info
 
+{% raw %}
+
 	Article: Q193579
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/193/Q193579/
 	
 	=============================================================================
 	
+
+{% endraw %}

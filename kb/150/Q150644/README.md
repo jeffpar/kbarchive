@@ -6,6 +6,8 @@ permalink: /kb/150/Q150644/
 
 ## Q150644: INFO: Quotes Required in Command Line for Names with Spaces
 
+{% raw %}
+
 	Article: Q150644
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/150/Q150644/
 	
 	=============================================================================
 	
+
+{% endraw %}

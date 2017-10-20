@@ -6,6 +6,8 @@ permalink: /kb/142/Q142973/
 
 ## Q142973: PRB: Distribution Setup Fails After Visual FoxPro 3.0b Install
 
+{% raw %}
+
 	Article: Q142973
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -105,3 +107,5 @@ permalink: /kb/142/Q142973/
 	
 	=============================================================================
 	
+
+{% endraw %}

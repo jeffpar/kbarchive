@@ -6,6 +6,8 @@ permalink: /kb/115/Q115201/
 
 ## Q115201: MS-DOS Help: Incomplete Information About ScanDisk /AUTOFIX
 
+{% raw %}
+
 	Article: Q115201
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -51,3 +53,5 @@ permalink: /kb/115/Q115201/
 	
 	=============================================================================
 	
+
+{% endraw %}

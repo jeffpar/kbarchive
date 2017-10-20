@@ -6,6 +6,8 @@ permalink: /kb/225/Q225055/
 
 ## Q225055: Event 15 Logged When Attempting to Print With SNA Print Server
 
+{% raw %}
+
 	Article: Q225055
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -78,3 +80,5 @@ permalink: /kb/225/Q225055/
 	
 	=============================================================================
 	
+
+{% endraw %}

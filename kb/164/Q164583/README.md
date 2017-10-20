@@ -6,6 +6,8 @@ permalink: /kb/164/Q164583/
 
 ## Q164583: PPT: Sample VB Code to Retrieve the Path to PowerPoint
 
+{% raw %}
+
 	Article: Q164583
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/164/Q164583/
 	
 	=============================================================================
 	
+
+{% endraw %}

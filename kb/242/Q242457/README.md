@@ -6,6 +6,8 @@ permalink: /kb/242/Q242457/
 
 ## Q242457: SMTP Service Removed When Upgrading to Windows 2000
 
+{% raw %}
+
 	Article: Q242457
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -49,3 +51,5 @@ permalink: /kb/242/Q242457/
 	
 	=============================================================================
 	
+
+{% endraw %}

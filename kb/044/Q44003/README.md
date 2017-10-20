@@ -6,6 +6,8 @@ permalink: /kb/044/Q44003/
 
 ## Q44003: QuickC 2.00 &quot;Rebuild All&quot; Doesn't Necessarily Relink
 
+{% raw %}
+
 	Article: Q44003
 	Product(s): See article
 	Version(s): 2.00
@@ -64,3 +66,5 @@ permalink: /kb/044/Q44003/
 	linked and then the LIB variable is changed to point to C 5.10 or
 	other libraries in which identically named functions have different
 	definitions.
+
+{% endraw %}

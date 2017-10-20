@@ -6,6 +6,8 @@ permalink: /kb/137/Q137287/
 
 ## Q137287: Windows NT Backup Causes Access Violation When Started
 
+{% raw %}
+
 	Article: Q137287
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -57,3 +59,5 @@ permalink: /kb/137/Q137287/
 	
 	=============================================================================
 	
+
+{% endraw %}

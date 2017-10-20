@@ -6,6 +6,8 @@ permalink: /kb/257/Q257792/
 
 ## Q257792: FIX: TreeView NodeClick Events May Fire Despite Cancel = True
 
+{% raw %}
+
 	Article: Q257792
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -104,3 +106,5 @@ permalink: /kb/257/Q257792/
 	
 	=============================================================================
 	
+
+{% endraw %}

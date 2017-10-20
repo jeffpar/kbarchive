@@ -6,6 +6,8 @@ permalink: /kb/130/Q130458/
 
 ## Q130458: HOWTO: Highlight the Entire Row in Grid When User Clicks
 
+{% raw %}
+
 	Article: Q130458
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/130/Q130458/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141548/
 
 ## Q141548: PRB: 16-Bit Visual Basic Requires 16-Bit SourceSafe
 
+{% raw %}
+
 	Article: Q141548
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,95; winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/141/Q141548/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120962/
 
 ## Q120962: MS-DOS 6.22 Files with Incorrect Version Numbers and Copyright
 
+{% raw %}
+
 	Article: Q120962
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -71,3 +73,5 @@ permalink: /kb/120/Q120962/
 	
 	=============================================================================
 	
+
+{% endraw %}

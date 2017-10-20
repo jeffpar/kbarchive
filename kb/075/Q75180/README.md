@@ -6,6 +6,8 @@ permalink: /kb/075/Q75180/
 
 ## Q75180: Troubleshooting Print Screen Problems
 
+{% raw %}
+
 	Article: Q75180
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -155,3 +157,5 @@ permalink: /kb/075/Q75180/
 	
 	=============================================================================
 	
+
+{% endraw %}

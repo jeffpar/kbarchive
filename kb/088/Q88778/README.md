@@ -6,6 +6,8 @@ permalink: /kb/088/Q88778/
 
 ## Q88778: SMTP: Software &amp; Hardware Required for Downstream Postoffice
 
+{% raw %}
+
 	Article: Q88778
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -36,3 +38,5 @@ permalink: /kb/088/Q88778/
 	
 	=============================================================================
 	
+
+{% endraw %}

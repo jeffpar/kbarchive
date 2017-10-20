@@ -6,6 +6,8 @@ permalink: /kb/139/Q139183/
 
 ## Q139183: BUG: View Not Accurate with One-to-Many Grandchild Relation
 
+{% raw %}
+
 	Article: Q139183
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -136,3 +138,5 @@ permalink: /kb/139/Q139183/
 	
 	=============================================================================
 	
+
+{% endraw %}

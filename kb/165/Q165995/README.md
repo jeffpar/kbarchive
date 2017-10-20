@@ -6,6 +6,8 @@ permalink: /kb/165/Q165995/
 
 ## Q165995: Valid User Fails to Authenticate with NT Challenge/Response
 
+{% raw %}
+
 	Article: Q165995
 	Product(s): Internet Information Server
 	Version(s): Winnt:2.0,3.0
@@ -70,3 +72,5 @@ permalink: /kb/165/Q165995/
 	
 	=============================================================================
 	
+
+{% endraw %}

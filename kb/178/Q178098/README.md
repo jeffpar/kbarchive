@@ -6,6 +6,8 @@ permalink: /kb/178/Q178098/
 
 ## Q178098: How to Troubleshoot DirectX Video Problems
 
+{% raw %}
+
 	Article: Q178098
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -363,3 +365,5 @@ permalink: /kb/178/Q178098/
 	
 	=============================================================================
 	
+
+{% endraw %}

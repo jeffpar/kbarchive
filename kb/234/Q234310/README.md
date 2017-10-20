@@ -6,6 +6,8 @@ permalink: /kb/234/Q234310/
 
 ## Q234310: DirLV Sample Populates List Control Similar to Explorer
 
+{% raw %}
+
 	Article: Q234310
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/234/Q234310/
 	
 	=============================================================================
 	
+
+{% endraw %}

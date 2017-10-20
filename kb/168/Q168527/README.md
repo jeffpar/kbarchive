@@ -6,6 +6,8 @@ permalink: /kb/168/Q168527/
 
 ## Q168527: HOWTO: Simulate a Detail Band Longer Than One Page
 
+{% raw %}
+
 	Article: Q168527
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -100,3 +102,5 @@ permalink: /kb/168/Q168527/
 	
 	=============================================================================
 	
+
+{% endraw %}

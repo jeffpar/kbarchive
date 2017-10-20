@@ -6,6 +6,8 @@ permalink: /kb/128/Q128338/
 
 ## Q128338: BASEBALL: Dialog Box Truncates Long Path Names
 
+{% raw %}
+
 	Article: Q128338
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -53,3 +55,5 @@ permalink: /kb/128/Q128338/
 	
 	=============================================================================
 	
+
+{% endraw %}

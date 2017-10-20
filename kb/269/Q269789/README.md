@@ -6,6 +6,8 @@ permalink: /kb/269/Q269789/
 
 ## Q269789: Err Msg: Streets Caused General Protection Fault in Kernel32.dll
 
+{% raw %}
+
 	Article: Q269789
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/269/Q269789/
 	
 	=============================================================================
 	
+
+{% endraw %}

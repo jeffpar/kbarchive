@@ -6,6 +6,8 @@ permalink: /kb/080/Q80001/
 
 ## Q80001: WRQ Inc. Reflection Network Series and MS-DOS
 
+{% raw %}
+
 	Article: Q80001
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -102,3 +104,5 @@ permalink: /kb/080/Q80001/
 	
 	=============================================================================
 	
+
+{% endraw %}

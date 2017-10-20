@@ -6,6 +6,8 @@ permalink: /kb/140/Q140913/
 
 ## Q140913: Communicating over TCP/IP May Fail Due to 802.3 Frame Type
 
+{% raw %}
+
 	Article: Q140913
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5,3.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/140/Q140913/
 	
 	=============================================================================
 	
+
+{% endraw %}

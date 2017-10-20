@@ -6,6 +6,8 @@ permalink: /kb/301/Q301461/
 
 ## Q301461: Ad Rotator Does Not Connect Through a Proxy
 
+{% raw %}
+
 	Article: Q301461
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -48,3 +50,5 @@ permalink: /kb/301/Q301461/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165177/
 
 ## Q165177: Cannot Remove Computers in Replication Dialog Screen
 
+{% raw %}
+
 	Article: Q165177
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/165/Q165177/
 	
 	=============================================================================
 	
+
+{% endraw %}

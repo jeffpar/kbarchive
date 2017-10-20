@@ -6,6 +6,8 @@ permalink: /kb/226/Q226918/
 
 ## Q226918: SMS: Status Message Numbers Not Consistent Btwn Child and Parent
 
+{% raw %}
+
 	Article: Q226918
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -47,3 +49,5 @@ permalink: /kb/226/Q226918/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185187/
 
 ## Q185187: BUG: Pageframe Subclass Invisible Until Clicked
 
+{% raw %}
+
 	Article: Q185187
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -91,3 +93,5 @@ permalink: /kb/185/Q185187/
 	
 	=============================================================================
 	
+
+{% endraw %}

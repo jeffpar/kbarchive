@@ -6,6 +6,8 @@ permalink: /kb/043/Q43244/
 
 ## Q43244: Mac Wkst Srv: Auto Login Not Working on Server Macintosh
 
+{% raw %}
+
 	Article: Q43244
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -62,3 +64,5 @@ permalink: /kb/043/Q43244/
 	
 	=============================================================================
 	
+
+{% endraw %}

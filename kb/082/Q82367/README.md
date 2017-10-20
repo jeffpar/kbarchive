@@ -6,6 +6,8 @@ permalink: /kb/082/Q82367/
 
 ## Q82367: Erratic Mouse Behavior on Computers with Phoenix BIOS
 
+{% raw %}
+
 	Article: Q82367
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.0,2.0,3.1,3.11; :
@@ -64,3 +66,5 @@ permalink: /kb/082/Q82367/
 	
 	=============================================================================
 	
+
+{% endraw %}

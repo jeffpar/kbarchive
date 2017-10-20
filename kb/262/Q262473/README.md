@@ -6,6 +6,8 @@ permalink: /kb/262/Q262473/
 
 ## Q262473: LU 6.2 Data Compression Fails When Initiated by Host System
 
+{% raw %}
+
 	Article: Q262473
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -91,3 +93,5 @@ permalink: /kb/262/Q262473/
 	
 	=============================================================================
 	
+
+{% endraw %}

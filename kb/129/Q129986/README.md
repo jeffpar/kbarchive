@@ -6,6 +6,8 @@ permalink: /kb/129/Q129986/
 
 ## Q129986: Error Using Microsoft Network Client SOCKETS.EXE
 
+{% raw %}
+
 	Article: Q129986
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): MS-DOS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/129/Q129986/
 	
 	=============================================================================
 	
+
+{% endraw %}

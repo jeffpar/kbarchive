@@ -6,6 +6,8 @@ permalink: /kb/139/Q139983/
 
 ## Q139983: Class C Subnetting Options for RAS Routing
 
+{% raw %}
+
 	Article: Q139983
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -85,3 +87,5 @@ permalink: /kb/139/Q139983/
 	
 	=============================================================================
 	
+
+{% endraw %}

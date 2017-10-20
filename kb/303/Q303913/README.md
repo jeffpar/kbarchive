@@ -6,6 +6,8 @@ permalink: /kb/303/Q303913/
 
 ## Q303913: MechCommander 2.0: You Cannot See In-Game Videos
 
+{% raw %}
+
 	Article: Q303913
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -87,3 +89,5 @@ permalink: /kb/303/Q303913/
 	
 	=============================================================================
 	
+
+{% endraw %}

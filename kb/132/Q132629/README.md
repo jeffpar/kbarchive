@@ -6,6 +6,8 @@ permalink: /kb/132/Q132629/
 
 ## Q132629: ScanDisk Does Not List Correct Drives
 
+{% raw %}
+
 	Article: Q132629
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/132/Q132629/
 	
 	=============================================================================
 	
+
+{% endraw %}

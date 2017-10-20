@@ -6,6 +6,8 @@ permalink: /kb/197/Q197436/
 
 ## Q197436: Remote Link Service Does Not Answer Incoming Calls
 
+{% raw %}
+
 	Article: Q197436
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -75,3 +77,5 @@ permalink: /kb/197/Q197436/
 	
 	=============================================================================
 	
+
+{% endraw %}

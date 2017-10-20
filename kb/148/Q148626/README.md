@@ -6,6 +6,8 @@ permalink: /kb/148/Q148626/
 
 ## Q148626: BUG: D2013 Internal Compiler Error Reshape of Character Array
 
+{% raw %}
+
 	Article: Q148626
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/148/Q148626/
 	
 	=============================================================================
 	
+
+{% endraw %}

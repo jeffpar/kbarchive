@@ -6,6 +6,8 @@ permalink: /kb/245/Q245222/
 
 ## Q245222: INFO: Event ID in Win32_NTLogEvent, NT Event Viewer Don't Match
 
+{% raw %}
+
 	Article: Q245222
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:1.0,1.1,1.5,4.0
@@ -60,3 +62,5 @@ permalink: /kb/245/Q245222/
 	
 	=============================================================================
 	
+
+{% endraw %}

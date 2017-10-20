@@ -6,6 +6,8 @@ permalink: /kb/167/Q167900/
 
 ## Q167900: Error Attempting to Save System Policy File
 
+{% raw %}
+
 	Article: Q167900
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/167/Q167900/
 	
 	=============================================================================
 	
+
+{% endraw %}

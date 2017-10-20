@@ -6,6 +6,8 @@ permalink: /kb/088/Q88142/
 
 ## Q88142: Preventing Word Wrap in Microsoft Windows Help Files
 
+{% raw %}
+
 	Article: Q88142
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.0,3.1; WINDOWS:3.1,3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/088/Q88142/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246079/
 
 ## Q246079: XADM: ISINTEG -PRI -FIX -TEST FOLDER Incomplete w Orphan Folders
 
+{% raw %}
+
 	Article: Q246079
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -146,3 +148,5 @@ permalink: /kb/246/Q246079/
 	
 	=============================================================================
 	
+
+{% endraw %}

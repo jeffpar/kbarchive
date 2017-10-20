@@ -6,6 +6,8 @@ permalink: /kb/026/Q26529/
 
 ## Q26529: PPT: Restoring the Aspect Ratio of an Imported Graphic
 
+{% raw %}
+
 	Article: Q26529
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -56,3 +58,5 @@ permalink: /kb/026/Q26529/
 	
 	=============================================================================
 	
+
+{% endraw %}

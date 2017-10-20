@@ -6,6 +6,8 @@ permalink: /kb/239/Q239424/
 
 ## Q239424: Winsock Error: Can't Assign Requested Address
 
+{% raw %}
+
 	Article: Q239424
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/239/Q239424/
 	
 	=============================================================================
 	
+
+{% endraw %}

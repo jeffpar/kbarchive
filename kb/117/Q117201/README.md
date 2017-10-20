@@ -6,6 +6,8 @@ permalink: /kb/117/Q117201/
 
 ## Q117201: BUG: sizeof Used in Comparison Does Not Generate C4018
 
+{% raw %}
+
 	Article: Q117201
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/117/Q117201/
 	
 	=============================================================================
 	
+
+{% endraw %}

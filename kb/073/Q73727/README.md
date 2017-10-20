@@ -6,6 +6,8 @@ permalink: /kb/073/Q73727/
 
 ## Q73727: Opening Editor with the File Last Edited in MS-DOS Shell
 
+{% raw %}
+
 	Article: Q73727
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/073/Q73727/
 	
 	=============================================================================
 	
+
+{% endraw %}

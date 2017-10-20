@@ -6,6 +6,8 @@ permalink: /kb/106/Q106712/
 
 ## Q106712: Windows for Workgroups 3.11: Using the Generic IPXODI Driver
 
+{% raw %}
+
 	Article: Q106712
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -131,3 +133,5 @@ permalink: /kb/106/Q106712/
 	
 	=============================================================================
 	
+
+{% endraw %}

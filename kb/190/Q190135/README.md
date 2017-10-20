@@ -6,6 +6,8 @@ permalink: /kb/190/Q190135/
 
 ## Q190135: SMS: Despooler Errors: Compilation Failed, Error Code = cb
 
+{% raw %}
+
 	Article: Q190135
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -77,3 +79,5 @@ permalink: /kb/190/Q190135/
 	
 	=============================================================================
 	
+
+{% endraw %}

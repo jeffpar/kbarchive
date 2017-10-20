@@ -6,6 +6,8 @@ permalink: /kb/061/Q61195/
 
 ## Q61195: C 6.00 README: .DEF Files Allowed on Command Line
 
+{% raw %}
+
 	Article: Q61195
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -27,3 +29,5 @@ permalink: /kb/061/Q61195/
 	
 	tells CL to pass the name of the module-definition file "CLOCK.DEF" to
 	the linker after compiling.
+
+{% endraw %}

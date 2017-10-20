@@ -6,6 +6,8 @@ permalink: /kb/131/Q131074/
 
 ## Q131074: Printing Over LocalTalk Bridge Produces IOError
 
+{% raw %}
+
 	Article: Q131074
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131074/
 	
 	=============================================================================
 	
+
+{% endraw %}

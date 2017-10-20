@@ -6,6 +6,8 @@ permalink: /kb/179/Q179271/
 
 ## Q179271: FIX: C1001 Error for More Than One Explicit Instantiation
 
+{% raw %}
+
 	Article: Q179271
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/179/Q179271/
 	
 	=============================================================================
 	
+
+{% endraw %}

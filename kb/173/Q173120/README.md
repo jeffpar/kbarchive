@@ -6,6 +6,8 @@ permalink: /kb/173/Q173120/
 
 ## Q173120: SMS: Windows NT Remote Control May Fail in Routed Environment
 
+{% raw %}
+
 	Article: Q173120
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -151,3 +153,5 @@ permalink: /kb/173/Q173120/
 	
 	=============================================================================
 	
+
+{% endraw %}

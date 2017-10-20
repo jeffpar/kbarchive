@@ -6,6 +6,8 @@ permalink: /kb/256/Q256648/
 
 ## Q256648: Asheron's Call: Game Appears Too Dark
 
+{% raw %}
+
 	Article: Q256648
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/256/Q256648/
 	
 	=============================================================================
 	
+
+{% endraw %}

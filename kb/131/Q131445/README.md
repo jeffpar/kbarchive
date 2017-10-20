@@ -6,6 +6,8 @@ permalink: /kb/131/Q131445/
 
 ## Q131445: FIX: &quot;Timeout Locking File: UM&quot; Error Occurs at Startup
 
+{% raw %}
+
 	Article: Q131445
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:3.04; winnt:3.04
@@ -67,3 +69,5 @@ permalink: /kb/131/Q131445/
 	
 	=============================================================================
 	
+
+{% endraw %}

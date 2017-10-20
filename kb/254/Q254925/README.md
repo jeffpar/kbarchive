@@ -6,6 +6,8 @@ permalink: /kb/254/Q254925/
 
 ## Q254925: PRB: Printer Object Fails to Track Default Printer
 
+{% raw %}
+
 	Article: Q254925
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/254/Q254925/
 	
 	=============================================================================
 	
+
+{% endraw %}

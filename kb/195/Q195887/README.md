@@ -6,6 +6,8 @@ permalink: /kb/195/Q195887/
 
 ## Q195887: Shortcuts Created Under Terminal Server 4.0 Resolve to UNC Paths
 
+{% raw %}
+
 	Article: Q195887
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -130,3 +132,5 @@ permalink: /kb/195/Q195887/
 	
 	=============================================================================
 	
+
+{% endraw %}

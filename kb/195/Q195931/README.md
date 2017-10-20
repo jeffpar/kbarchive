@@ -6,6 +6,8 @@ permalink: /kb/195/Q195931/
 
 ## Q195931: Security Descriptor Size Increases Each Time Permissions Set
 
+{% raw %}
+
 	Article: Q195931
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/195/Q195931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263460/
 
 ## Q263460: XADM: Error When You Import a Folder with MBX Proxy Addresses
 
+{% raw %}
+
 	Article: Q263460
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -83,3 +85,5 @@ permalink: /kb/263/Q263460/
 	
 	=============================================================================
 	
+
+{% endraw %}

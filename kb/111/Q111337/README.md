@@ -6,6 +6,8 @@ permalink: /kb/111/Q111337/
 
 ## Q111337: BUG: Pie() and Arc() Functions Fail with a Wide Pen
 
+{% raw %}
+
 	Article: Q111337
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -74,3 +76,5 @@ permalink: /kb/111/Q111337/
 	
 	=============================================================================
 	
+
+{% endraw %}

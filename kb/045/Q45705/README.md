@@ -6,6 +6,8 @@ permalink: /kb/045/Q45705/
 
 ## Q45705: Why There's a 128K Limit on Some Huge Arrays and halloc()s
 
+{% raw %}
+
 	Article: Q45705
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -74,3 +76,5 @@ permalink: /kb/045/Q45705/
 	structures will fail. Two of the structures could be allocated, but
 	since each would go into a separate segment, neither of the segments
 	would contain enough space for the third element.
+
+{% endraw %}

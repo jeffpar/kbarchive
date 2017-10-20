@@ -6,6 +6,8 @@ permalink: /kb/168/Q168766/
 
 ## Q168766: FIX: Internet Transfer Control Fails on Case-Sensitive Server
 
+{% raw %}
+
 	Article: Q168766
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -101,3 +103,5 @@ permalink: /kb/168/Q168766/
 	
 	=============================================================================
 	
+
+{% endraw %}

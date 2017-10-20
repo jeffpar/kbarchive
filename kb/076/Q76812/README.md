@@ -6,6 +6,8 @@ permalink: /kb/076/Q76812/
 
 ## Q76812: Fastback Versions 2.11 and Earlier Give Divide Overflow Error
 
+{% raw %}
+
 	Article: Q76812
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -64,3 +66,5 @@ permalink: /kb/076/Q76812/
 	
 	=============================================================================
 	
+
+{% endraw %}

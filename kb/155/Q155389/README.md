@@ -6,6 +6,8 @@ permalink: /kb/155/Q155389/
 
 ## Q155389: HOWTO: Convert Values to Hexadecimal Format with Xbase
 
+{% raw %}
+
 	Article: Q155389
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/155/Q155389/
 	
 	=============================================================================
 	
+
+{% endraw %}

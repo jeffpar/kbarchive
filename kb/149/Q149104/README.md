@@ -6,6 +6,8 @@ permalink: /kb/149/Q149104/
 
 ## Q149104: New Users Not Prompted to Change Password
 
+{% raw %}
+
 	Article: Q149104
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -54,3 +56,5 @@ permalink: /kb/149/Q149104/
 	
 	=============================================================================
 	
+
+{% endraw %}

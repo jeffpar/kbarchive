@@ -6,6 +6,8 @@ permalink: /kb/096/Q96603/
 
 ## Q96603: Balancing Power Conservation and Performance with POWER.EXE
 
+{% raw %}
+
 	Article: Q96603
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/096/Q96603/
 	
 	=============================================================================
 	
+
+{% endraw %}

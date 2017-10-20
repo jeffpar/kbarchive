@@ -6,6 +6,8 @@ permalink: /kb/258/Q258173/
 
 ## Q258173: BUG: Chart Control Axis Label's WordWrap Property Does Not Work
 
+{% raw %}
+
 	Article: Q258173
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/258/Q258173/
 	
 	=============================================================================
 	
+
+{% endraw %}

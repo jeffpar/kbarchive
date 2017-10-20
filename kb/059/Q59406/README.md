@@ -6,6 +6,8 @@ permalink: /kb/059/Q59406/
 
 ## Q59406: Em and En Dashes Are Reversed on PostScript Printer
 
+{% raw %}
+
 	Article: Q59406
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/059/Q59406/
 	
 	=============================================================================
 	
+
+{% endraw %}

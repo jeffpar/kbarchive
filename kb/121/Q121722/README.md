@@ -6,6 +6,8 @@ permalink: /kb/121/Q121722/
 
 ## Q121722: PRB: &quot;Memo File Missing/Invalid&quot; Error with Project File
 
+{% raw %}
+
 	Article: Q121722
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.60 2.60a 3.00 | 2.00 2.5x
@@ -86,3 +88,5 @@ permalink: /kb/121/Q121722/
 	
 	=============================================================================
 	
+
+{% endraw %}

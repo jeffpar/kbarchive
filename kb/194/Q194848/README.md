@@ -6,6 +6,8 @@ permalink: /kb/194/Q194848/
 
 ## Q194848: SDLC Connection Fails with Event 23, Qualifier X'002E'
 
+{% raw %}
+
 	Article: Q194848
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -156,3 +158,5 @@ permalink: /kb/194/Q194848/
 	
 	=============================================================================
 	
+
+{% endraw %}

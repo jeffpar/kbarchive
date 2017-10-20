@@ -6,6 +6,8 @@ permalink: /kb/136/Q136633/
 
 ## Q136633: Reconnecting a RAS Line Without a User Logged On
 
+{% raw %}
+
 	Article: Q136633
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -51,3 +53,5 @@ permalink: /kb/136/Q136633/
 	
 	=============================================================================
 	
+
+{% endraw %}

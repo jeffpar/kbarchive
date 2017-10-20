@@ -6,6 +6,8 @@ permalink: /kb/154/Q154831/
 
 ## Q154831: Arcinst Not Available for PPC
 
+{% raw %}
+
 	Article: Q154831
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/154/Q154831/
 	
 	=============================================================================
 	
+
+{% endraw %}

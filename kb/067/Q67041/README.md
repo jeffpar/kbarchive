@@ -6,6 +6,8 @@ permalink: /kb/067/Q67041/
 
 ## Q67041: BUG: Structure Tags Visible Outside of Function Prototype Scope
 
+{% raw %}
+
 	Article: Q67041
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0 6.0a 6.0ax 7.0 1.0 1.5 2.0 4
@@ -104,3 +106,5 @@ permalink: /kb/067/Q67041/
 	
 	=============================================================================
 	
+
+{% endraw %}

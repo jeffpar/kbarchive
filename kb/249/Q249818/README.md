@@ -6,6 +6,8 @@ permalink: /kb/249/Q249818/
 
 ## Q249818: &quot;Protected Storage&quot; Error with Windows 2000 Roaming Profiles
 
+{% raw %}
+
 	Article: Q249818
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/249/Q249818/
 	
 	=============================================================================
 	
+
+{% endraw %}

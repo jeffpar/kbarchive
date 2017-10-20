@@ -6,6 +6,8 @@ permalink: /kb/147/Q147363/
 
 ## Q147363: AlphaServer Hangs on Install of Windows NT Version 4.0
 
+{% raw %}
+
 	Article: Q147363
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/147/Q147363/
 	
 	=============================================================================
 	
+
+{% endraw %}

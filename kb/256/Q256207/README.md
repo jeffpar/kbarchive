@@ -6,6 +6,8 @@ permalink: /kb/256/Q256207/
 
 ## Q256207: SMS: Clients Do Not Get Advertisements with SQL Account Problems
 
+{% raw %}
+
 	Article: Q256207
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -74,3 +76,5 @@ permalink: /kb/256/Q256207/
 	
 	=============================================================================
 	
+
+{% endraw %}

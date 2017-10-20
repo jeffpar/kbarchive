@@ -6,6 +6,8 @@ permalink: /kb/038/Q38808/
 
 ## Q38808: Error L1072 Common Area Longer than 65536 Bytes
 
+{% raw %}
+
 	Article: Q38808
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -43,3 +45,5 @@ permalink: /kb/038/Q38808/
 	
 	Use a large data model (compact, large, or huge). Try applying the /Gt
 	compilation option to lower the threshhold.
+
+{% endraw %}

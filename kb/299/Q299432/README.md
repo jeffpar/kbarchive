@@ -6,6 +6,8 @@ permalink: /kb/299/Q299432/
 
 ## Q299432: Cookies Not Deleted for My Site When User Closes Browser Window
 
+{% raw %}
+
 	Article: Q299432
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -61,3 +63,5 @@ permalink: /kb/299/Q299432/
 	
 	=============================================================================
 	
+
+{% endraw %}

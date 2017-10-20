@@ -6,6 +6,8 @@ permalink: /kb/191/Q191788/
 
 ## Q191788: PRB: rdoConnection_Connect Event Does Not Always Fire
 
+{% raw %}
+
 	Article: Q191788
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -157,3 +159,5 @@ permalink: /kb/191/Q191788/
 	
 	=============================================================================
 	
+
+{% endraw %}

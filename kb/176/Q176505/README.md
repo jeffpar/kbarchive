@@ -6,6 +6,8 @@ permalink: /kb/176/Q176505/
 
 ## Q176505: Values for WINS Manager Server Configuration Settings
 
+{% raw %}
+
 	Article: Q176505
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -86,3 +88,5 @@ permalink: /kb/176/Q176505/
 	
 	=============================================================================
 	
+
+{% endraw %}

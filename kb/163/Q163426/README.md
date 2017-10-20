@@ -6,6 +6,8 @@ permalink: /kb/163/Q163426/
 
 ## Q163426: Kids Plus!: Play It! Does not Play on Mono Sound Cards
 
+{% raw %}
+
 	Article: Q163426
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -40,3 +42,5 @@ permalink: /kb/163/Q163426/
 	
 	=============================================================================
 	
+
+{% endraw %}

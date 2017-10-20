@@ -6,6 +6,8 @@ permalink: /kb/161/Q161519/
 
 ## Q161519: WD97: Table Column Width Changes When Opened As HTML
 
+{% raw %}
+
 	Article: Q161519
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/161/Q161519/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163931/
 
 ## Q163931: BUG: FxAlert() Function Does Not Appear Centered
 
+{% raw %}
+
 	Article: Q163931
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -86,3 +88,5 @@ permalink: /kb/163/Q163931/
 	
 	=============================================================================
 	
+
+{% endraw %}

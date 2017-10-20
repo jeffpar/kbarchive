@@ -6,6 +6,8 @@ permalink: /kb/165/Q165433/
 
 ## Q165433: FIX: Query Designer Not Inserting Record if Field Name Has Dash
 
+{% raw %}
+
 	Article: Q165433
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0
@@ -99,3 +101,5 @@ permalink: /kb/165/Q165433/
 	
 	=============================================================================
 	
+
+{% endraw %}

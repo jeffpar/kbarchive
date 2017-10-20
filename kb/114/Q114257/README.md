@@ -6,6 +6,8 @@ permalink: /kb/114/Q114257/
 
 ## Q114257: BUG:Index Tag Not Found w/SET COMPATIBLE ON &amp; DELETE TAG ALL
 
+{% raw %}
+
 	Article: Q114257
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0,2.5,2.5a,2.5b,2.6,3.0,3.0b,5.0,5.0a,6.0
@@ -67,3 +69,5 @@ permalink: /kb/114/Q114257/
 	
 	=============================================================================
 	
+
+{% endraw %}

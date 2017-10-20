@@ -6,6 +6,8 @@ permalink: /kb/290/Q290612/
 
 ## Q290612: BUG: Event ID: 5 &quot;Error While Reading Default Settings&quot;
 
+{% raw %}
+
 	Article: Q290612
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/290/Q290612/
 	
 	=============================================================================
 	
+
+{% endraw %}

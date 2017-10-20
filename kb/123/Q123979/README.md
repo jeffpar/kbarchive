@@ -6,6 +6,8 @@ permalink: /kb/123/Q123979/
 
 ## Q123979: 3C770 FDDI (FLNK.SYS) Problems Under Windows NT 3.5
 
+{% raw %}
+
 	Article: Q123979
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -67,3 +69,5 @@ permalink: /kb/123/Q123979/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157328/
 
 ## Q157328: SNA Server Rejects Dependent LU6.2 Bind, Sense Code = 083500xx
 
+{% raw %}
+
 	Article: Q157328
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -122,3 +124,5 @@ permalink: /kb/157/Q157328/
 	
 	=============================================================================
 	
+
+{% endraw %}

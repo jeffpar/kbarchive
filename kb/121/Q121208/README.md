@@ -6,6 +6,8 @@ permalink: /kb/121/Q121208/
 
 ## Q121208: SAMPLE: SNDPLAY Sample Plays a Sound File
 
+{% raw %}
+
 	Article: Q121208
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/121/Q121208/
 	
 	=============================================================================
 	
+
+{% endraw %}

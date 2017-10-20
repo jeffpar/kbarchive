@@ -6,6 +6,8 @@ permalink: /kb/149/Q149845/
 
 ## Q149845: FP: How to Line Up Text and Objects Horizontally
 
+{% raw %}
+
 	Article: Q149845
 	Product(s): Word Front Page
 	Version(s): 1.0,1.0a,1.1
@@ -59,3 +61,5 @@ permalink: /kb/149/Q149845/
 	
 	=============================================================================
 	
+
+{% endraw %}

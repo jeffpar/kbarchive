@@ -6,6 +6,8 @@ permalink: /kb/183/Q183178/
 
 ## Q183178: XADM: IMS Will Not Start with Event Log Error 4071
 
+{% raw %}
+
 	Article: Q183178
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/183/Q183178/
 	
 	=============================================================================
 	
+
+{% endraw %}

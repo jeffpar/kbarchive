@@ -6,6 +6,8 @@ permalink: /kb/148/Q148846/
 
 ## Q148846: RAS Port Instance Names in Performance Monitor Are Corrupted
 
+{% raw %}
+
 	Article: Q148846
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP2,4.0
@@ -66,3 +68,5 @@ permalink: /kb/148/Q148846/
 	
 	=============================================================================
 	
+
+{% endraw %}

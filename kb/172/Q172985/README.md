@@ -6,6 +6,8 @@ permalink: /kb/172/Q172985/
 
 ## Q172985: FIX: Out of Order Definitions in idl May Cause Compiler Errors
 
+{% raw %}
+
 	Article: Q172985
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -104,3 +106,5 @@ permalink: /kb/172/Q172985/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194365/
 
 ## Q194365: SNA Server Access Violation in DestroyUser()
 
+{% raw %}
+
 	Article: Q194365
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -123,3 +125,5 @@ permalink: /kb/194/Q194365/
 	
 	=============================================================================
 	
+
+{% endraw %}

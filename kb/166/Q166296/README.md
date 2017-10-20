@@ -6,6 +6,8 @@ permalink: /kb/166/Q166296/
 
 ## Q166296: XCON: MTA Stops Responding; Access Violation
 
+{% raw %}
+
 	Article: Q166296
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/166/Q166296/
 	
 	=============================================================================
 	
+
+{% endraw %}

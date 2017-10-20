@@ -6,6 +6,8 @@ permalink: /kb/289/Q289573/
 
 ## Q289573: PRB: Configuring DSNs with SQL Server Net-Libraries
 
+{% raw %}
+
 	Article: Q289573
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.6,2000.80.194,7.0
@@ -157,3 +159,5 @@ permalink: /kb/289/Q289573/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132419/
 
 ## Q132419: Problems Sending Fax after Installing Bookshelf
 
+{% raw %}
+
 	Article: Q132419
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:3.0,3.0a,3.0b,6.0,6.0a,6.0c
@@ -146,3 +148,5 @@ permalink: /kb/132/Q132419/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179895/
 
 ## Q179895: XWEB: Err Msg. &quot;Object Moved&quot; When Accessing Active Server
 
+{% raw %}
+
 	Article: Q179895
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/179/Q179895/
 	
 	=============================================================================
 	
+
+{% endraw %}

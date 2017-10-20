@@ -6,6 +6,8 @@ permalink: /kb/167/Q167013/
 
 ## Q167013: XCLN: Exchange and Mail Provider SMTP Templates Different
 
+{% raw %}
+
 	Article: Q167013
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -74,3 +76,5 @@ permalink: /kb/167/Q167013/
 	
 	=============================================================================
 	
+
+{% endraw %}

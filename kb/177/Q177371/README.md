@@ -6,6 +6,8 @@ permalink: /kb/177/Q177371/
 
 ## Q177371: WD97: Picture/Object Does Not Show on Envelopes/Labels Tab
 
+{% raw %}
+
 	Article: Q177371
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/177/Q177371/
 	
 	=============================================================================
 	
+
+{% endraw %}

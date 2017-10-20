@@ -6,6 +6,8 @@ permalink: /kb/250/Q250671/
 
 ## Q250671: XFOR: Notes Group Type Attr. Doesn't Sync to Exchange Directory
 
+{% raw %}
+
 	Article: Q250671
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -61,3 +63,5 @@ permalink: /kb/250/Q250671/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153062/
 
 ## Q153062: Picture of Modem Does Not Appear in Modem Activity Window
 
+{% raw %}
+
 	Article: Q153062
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153062/
 	
 	=============================================================================
 	
+
+{% endraw %}

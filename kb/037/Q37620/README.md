@@ -6,6 +6,8 @@ permalink: /kb/037/Q37620/
 
 ## Q37620: EOH Is Not a Defined Constant for getch or getche
 
+{% raw %}
+
 	Article: Q37620
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -20,3 +22,5 @@ permalink: /kb/037/Q37620/
 	defined in an include file, though it is not. These functions actually
 	return 0 or 0xE0. The 0x convention is followed throughout the manual
 	for hexadecimal numbers, except in this case.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118802/
 
 ## Q118802: FILE: Fw1022.exe Demonstrates Using FoxPro for Windows Wizards
 
+{% raw %}
+
 	Article: Q118802
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6,3.0
@@ -65,3 +67,5 @@ permalink: /kb/118/Q118802/
 	
 	=============================================================================
 	
+
+{% endraw %}

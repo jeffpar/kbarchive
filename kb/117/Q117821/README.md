@@ -6,6 +6,8 @@ permalink: /kb/117/Q117821/
 
 ## Q117821: Mac Cinemania: Demo Runs on Monochrome Monitor and Looks Ugly
 
+{% raw %}
+
 	Article: Q117821
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -48,3 +50,5 @@ permalink: /kb/117/Q117821/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128597/
 
 ## Q128597: Default Wavemix.ini from Golf 1.0 Multimedia Edition
 
+{% raw %}
+
 	Article: Q128597
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -138,3 +140,5 @@ permalink: /kb/128/Q128597/
 	
 	=============================================================================
 	
+
+{% endraw %}

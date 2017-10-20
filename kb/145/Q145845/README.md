@@ -6,6 +6,8 @@ permalink: /kb/145/Q145845/
 
 ## Q145845: HOWTO: Suppress the Default Menu for a Visual FoxPro .EXE File
 
+{% raw %}
+
 	Article: Q145845
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -42,3 +44,5 @@ permalink: /kb/145/Q145845/
 	
 	=============================================================================
 	
+
+{% endraw %}

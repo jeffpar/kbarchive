@@ -6,6 +6,8 @@ permalink: /kb/155/Q155392/
 
 ## Q155392: HOWTO: Creating a Connection to SQL Server Without a Datasource
 
+{% raw %}
+
 	Article: Q155392
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,6.0
@@ -95,3 +97,5 @@ permalink: /kb/155/Q155392/
 	
 	=============================================================================
 	
+
+{% endraw %}

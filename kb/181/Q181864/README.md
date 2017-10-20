@@ -6,6 +6,8 @@ permalink: /kb/181/Q181864/
 
 ## Q181864: XADM: Setup /Q Prompts for Service Account
 
+{% raw %}
+
 	Article: Q181864
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -64,3 +66,5 @@ permalink: /kb/181/Q181864/
 	
 	=============================================================================
 	
+
+{% endraw %}

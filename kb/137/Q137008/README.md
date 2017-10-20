@@ -6,6 +6,8 @@ permalink: /kb/137/Q137008/
 
 ## Q137008: Setup Must Write to Disk 2 During First Install
 
+{% raw %}
+
 	Article: Q137008
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/137/Q137008/
 	
 	=============================================================================
 	
+
+{% endraw %}

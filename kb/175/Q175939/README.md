@@ -6,6 +6,8 @@ permalink: /kb/175/Q175939/
 
 ## Q175939: White Paper: Avoiding the Top Ten Design Mistakes
 
+{% raw %}
+
 	Article: Q175939
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/175/Q175939/
 	
 	=============================================================================
 	
+
+{% endraw %}

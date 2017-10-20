@@ -6,6 +6,8 @@ permalink: /kb/041/Q41579/
 
 ## Q41579: C2073 When Porting Code from QuickC 2.00 to C 5.10
 
+{% raw %}
+
 	Article: Q41579
 	Product(s): See article
 	Version(s): 2.00
@@ -44,3 +46,5 @@ permalink: /kb/041/Q41579/
 	void main (void)
 	   {
 	   {
+
+{% endraw %}

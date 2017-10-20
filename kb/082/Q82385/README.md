@@ -6,6 +6,8 @@ permalink: /kb/082/Q82385/
 
 ## Q82385: Windows: Turbo C++ Causes GP Fault After Numerous Searches
 
+{% raw %}
+
 	Article: Q82385
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/082/Q82385/
 	
 	=============================================================================
 	
+
+{% endraw %}

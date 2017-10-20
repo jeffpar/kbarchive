@@ -6,6 +6,8 @@ permalink: /kb/145/Q145847/
 
 ## Q145847: Mac Encarta: Unpacking Error: Damaged Yearbook Builder File
 
+{% raw %}
+
 	Article: Q145847
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -108,3 +110,5 @@ permalink: /kb/145/Q145847/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120133/
 
 ## Q120133: Can't Change &quot;Windows In Foreground&quot; Settings in Control Panel
 
+{% raw %}
+
 	Article: Q120133
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/120/Q120133/
 	
 	=============================================================================
 	
+
+{% endraw %}

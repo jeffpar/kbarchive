@@ -6,6 +6,8 @@ permalink: /kb/194/Q194986/
 
 ## Q194986: PRB: File Copy Error Messages Using Update.exe with Service Pack
 
+{% raw %}
+
 	Article: Q194986
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/194/Q194986/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186500/
 
 ## Q186500: Terminal Server Commands: APPSEC
 
+{% raw %}
+
 	Article: Q186500
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -40,3 +42,5 @@ permalink: /kb/186/Q186500/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189942/
 
 ## Q189942: System Eventually Slows Down When MMC Left Open
 
+{% raw %}
+
 	Article: Q189942
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/189/Q189942/
 	
 	=============================================================================
 	
+
+{% endraw %}

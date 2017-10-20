@@ -6,6 +6,8 @@ permalink: /kb/089/Q89517/
 
 ## Q89517: Accessing Microsoft LAN Manager Servers with WFWG
 
+{% raw %}
+
 	Article: Q89517
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -100,3 +102,5 @@ permalink: /kb/089/Q89517/
 	
 	=============================================================================
 	
+
+{% endraw %}

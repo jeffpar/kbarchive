@@ -6,6 +6,8 @@ permalink: /kb/051/Q51859/
 
 ## Q51859: How to Print Images on SCREENs 7 Through 12 to Epson Printer
 
+{% raw %}
+
 	Article: Q51859
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -241,3 +243,5 @@ permalink: /kb/051/Q51859/
 	     line$ = CHR$(12) : PUT #1, , line$  ' Send formfeed (page eject)
 	     CLOSE 1                             ' All done
 	   END SUB
+
+{% endraw %}

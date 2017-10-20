@@ -6,6 +6,8 @@ permalink: /kb/139/Q139339/
 
 ## Q139339: CPS Does Not Profile License Logging Service
 
+{% raw %}
+
 	Article: Q139339
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -98,3 +100,5 @@ permalink: /kb/139/Q139339/
 	
 	=============================================================================
 	
+
+{% endraw %}

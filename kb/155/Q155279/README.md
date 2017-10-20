@@ -6,6 +6,8 @@ permalink: /kb/155/Q155279/
 
 ## Q155279: Windows NT 3.51 Service Pack 4 Does Not Update Mgmtapi.dll
 
+{% raw %}
+
 	Article: Q155279
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -63,3 +65,5 @@ permalink: /kb/155/Q155279/
 	
 	=============================================================================
 	
+
+{% endraw %}

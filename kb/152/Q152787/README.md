@@ -6,6 +6,8 @@ permalink: /kb/152/Q152787/
 
 ## Q152787: Telephone Dialing In Colombia, France, and Finland
 
+{% raw %}
+
 	Article: Q152787
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152787/
 	
 	=============================================================================
 	
+
+{% endraw %}

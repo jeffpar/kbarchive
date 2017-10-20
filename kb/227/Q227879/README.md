@@ -6,6 +6,8 @@ permalink: /kb/227/Q227879/
 
 ## Q227879: Formatting Using the Compaq Array Configuration Utility
 
+{% raw %}
+
 	Article: Q227879
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/227/Q227879/
 	
 	=============================================================================
 	
+
+{% endraw %}

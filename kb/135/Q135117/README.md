@@ -6,6 +6,8 @@ permalink: /kb/135/Q135117/
 
 ## Q135117: PRB: Unable to Modify Tables in Database Flagged as Read-only
 
+{% raw %}
+
 	Article: Q135117
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/135/Q135117/
 	
 	=============================================================================
 	
+
+{% endraw %}

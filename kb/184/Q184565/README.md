@@ -6,6 +6,8 @@ permalink: /kb/184/Q184565/
 
 ## Q184565: XADM: Korean Outlook 8.5 MIME Messages Encoded Improperly
 
+{% raw %}
+
 	Article: Q184565
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/184/Q184565/
 	
 	=============================================================================
 	
+
+{% endraw %}

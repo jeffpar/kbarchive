@@ -6,6 +6,8 @@ permalink: /kb/087/Q87346/
 
 ## Q87346: FIX: PR1428 Illegal Breakpoint Error Profiling P-code
 
+{% raw %}
+
 	Article: Q87346
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.2
@@ -64,3 +66,5 @@ permalink: /kb/087/Q87346/
 	
 	=============================================================================
 	
+
+{% endraw %}

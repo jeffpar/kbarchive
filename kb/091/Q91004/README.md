@@ -6,6 +6,8 @@ permalink: /kb/091/Q91004/
 
 ## Q91004: Cannot Install More than One Network Adapter of Same Type
 
+{% raw %}
+
 	Article: Q91004
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/091/Q91004/
 	
 	=============================================================================
 	
+
+{% endraw %}

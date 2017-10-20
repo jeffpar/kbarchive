@@ -6,6 +6,8 @@ permalink: /kb/140/Q140713/
 
 ## Q140713: COPYEMBED From AutoCAD LT Works Incorrectly
 
+{% raw %}
+
 	Article: Q140713
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -68,3 +70,5 @@ permalink: /kb/140/Q140713/
 	
 	=============================================================================
 	
+
+{% endraw %}

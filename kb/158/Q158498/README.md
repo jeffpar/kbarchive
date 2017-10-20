@@ -6,6 +6,8 @@ permalink: /kb/158/Q158498/
 
 ## Q158498: PPT7: Files Installed by Stand-Alone PowerPoint
 
+{% raw %}
+
 	Article: Q158498
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -311,3 +313,5 @@ permalink: /kb/158/Q158498/
 	
 	=============================================================================
 	
+
+{% endraw %}

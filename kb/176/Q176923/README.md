@@ -6,6 +6,8 @@ permalink: /kb/176/Q176923/
 
 ## Q176923: Flight Simulator 98: Rudder Pedals Do Not Work Correctly
 
+{% raw %}
+
 	Article: Q176923
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -193,3 +195,5 @@ permalink: /kb/176/Q176923/
 	
 	=============================================================================
 	
+
+{% endraw %}

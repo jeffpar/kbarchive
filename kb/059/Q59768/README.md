@@ -6,6 +6,8 @@ permalink: /kb/059/Q59768/
 
 ## Q59768: How to Find the Load Size Required for a Program
 
+{% raw %}
+
 	Article: Q59768
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -45,3 +47,5 @@ permalink: /kb/059/Q59768/
 	
 	     size=_psp_pointer[1]-_psp;
 	}
+
+{% endraw %}

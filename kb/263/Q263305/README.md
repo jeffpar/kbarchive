@@ -6,6 +6,8 @@ permalink: /kb/263/Q263305/
 
 ## Q263305: High-Encryption Configuration Prevents Outlook Express Replies
 
+{% raw %}
+
 	Article: Q263305
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/263/Q263305/
 	
 	=============================================================================
 	
+
+{% endraw %}

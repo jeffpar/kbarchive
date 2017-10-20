@@ -6,6 +6,8 @@ permalink: /kb/100/Q100659/
 
 ## Q100659: INFO: Exporting Callback Functions Not Required in Win32 Apps
 
+{% raw %}
+
 	Article: Q100659
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,4.0,5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/100/Q100659/
 	
 	=============================================================================
 	
+
+{% endraw %}

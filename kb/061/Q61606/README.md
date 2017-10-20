@@ -6,6 +6,8 @@ permalink: /kb/061/Q61606/
 
 ## Q61606: _setvideomoderows() with _VRES2COLOR or _VRES16COLOR Modes
 
+{% raw %}
+
 	Article: Q61606
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 | 5.10 6.00
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61606/
 	setting the text position using the _settextposition() routine. For
 	example, if you set text to the center of the screen, you will notice
 	that the text seems to be printed four lines above the center.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/028/Q28786/
 
 ## Q28786: &quot;Illegal Function Call&quot; on Graphics GET in Subprograms
 
+{% raw %}
+
 	Article: Q28786
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -69,3 +71,5 @@ permalink: /kb/028/Q28786/
 	   GET (0, 0)-(100, 100), a%       'illegal function call on this line
 	   PRINT "All done"
 	END SUB
+
+{% endraw %}

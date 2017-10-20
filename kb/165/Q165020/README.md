@@ -6,6 +6,8 @@ permalink: /kb/165/Q165020/
 
 ## Q165020: INFO: Responding to Mouse Events with MFC ActiveX Controls
 
+{% raw %}
+
 	Article: Q165020
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/165/Q165020/
 	
 	=============================================================================
 	
+
+{% endraw %}

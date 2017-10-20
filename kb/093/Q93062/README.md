@@ -6,6 +6,8 @@ permalink: /kb/093/Q93062/
 
 ## Q93062: Publisher's Paintbrush Err Msg: &quot;Not Enough Memory to Show...&quot;
 
+{% raw %}
+
 	Article: Q93062
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :
@@ -50,3 +52,5 @@ permalink: /kb/093/Q93062/
 	
 	=============================================================================
 	
+
+{% endraw %}

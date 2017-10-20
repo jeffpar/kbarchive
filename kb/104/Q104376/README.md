@@ -6,6 +6,8 @@ permalink: /kb/104/Q104376/
 
 ## Q104376: Dinosaurs: No Visual Indication that Slide Show Is Running
 
+{% raw %}
+
 	Article: Q104376
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/104/Q104376/
 	
 	=============================================================================
 	
+
+{% endraw %}

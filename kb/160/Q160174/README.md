@@ -6,6 +6,8 @@ permalink: /kb/160/Q160174/
 
 ## Q160174: DOCERR: Steps to Make PPTP Connection Incomplete in WNTRK 4.0
 
+{% raw %}
+
 	Article: Q160174
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0; :
@@ -81,3 +83,5 @@ permalink: /kb/160/Q160174/
 	
 	=============================================================================
 	
+
+{% endraw %}

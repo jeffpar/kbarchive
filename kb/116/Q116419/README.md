@@ -6,6 +6,8 @@ permalink: /kb/116/Q116419/
 
 ## Q116419: FIX: Conditional Directives Ignored by Dependency Scanning
 
+{% raw %}
+
 	Article: Q116419
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -81,3 +83,5 @@ permalink: /kb/116/Q116419/
 	
 	=============================================================================
 	
+
+{% endraw %}

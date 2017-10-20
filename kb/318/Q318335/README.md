@@ -6,6 +6,8 @@ permalink: /kb/318/Q318335/
 
 ## Q318335: FS2002: Err Msg: Cannot Detect Windows Media Player
 
+{% raw %}
+
 	Article: Q318335
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/318/Q318335/
 	
 	=============================================================================
 	
+
+{% endraw %}

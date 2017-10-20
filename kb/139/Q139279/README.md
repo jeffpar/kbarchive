@@ -6,6 +6,8 @@ permalink: /kb/139/Q139279/
 
 ## Q139279: Using Windows NT To Access Pathworks For VMS (DOS) 4.x Server
 
+{% raw %}
+
 	Article: Q139279
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -83,3 +85,5 @@ permalink: /kb/139/Q139279/
 	
 	=============================================================================
 	
+
+{% endraw %}

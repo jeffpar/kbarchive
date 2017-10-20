@@ -6,6 +6,8 @@ permalink: /kb/201/Q201588/
 
 ## Q201588: BUG: Custom Mouse Pointer Changes Back to Default
 
+{% raw %}
+
 	Article: Q201588
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -73,3 +75,5 @@ permalink: /kb/201/Q201588/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163570/
 
 ## Q163570: CMEPLN Does Not Always Return Fully Qualified LU Name
 
+{% raw %}
+
 	Article: Q163570
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1
@@ -78,3 +80,5 @@ permalink: /kb/163/Q163570/
 	
 	=============================================================================
 	
+
+{% endraw %}

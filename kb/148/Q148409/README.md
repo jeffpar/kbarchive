@@ -6,6 +6,8 @@ permalink: /kb/148/Q148409/
 
 ## Q148409: PRB: HPPCL5 Driver Causes Resource Depletion in Windows 3.11
 
+{% raw %}
+
 	Article: Q148409
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -44,3 +46,5 @@ permalink: /kb/148/Q148409/
 	
 	=============================================================================
 	
+
+{% endraw %}

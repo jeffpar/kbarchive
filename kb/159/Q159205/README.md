@@ -6,6 +6,8 @@ permalink: /kb/159/Q159205/
 
 ## Q159205: SFM File Type and Creator Properties Invalid
 
+{% raw %}
+
 	Article: Q159205
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.00.
@@ -59,3 +61,5 @@ permalink: /kb/159/Q159205/
 	
 	=============================================================================
 	
+
+{% endraw %}

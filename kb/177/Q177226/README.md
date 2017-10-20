@@ -6,6 +6,8 @@ permalink: /kb/177/Q177226/
 
 ## Q177226: Memory Usage Increases When Querying Access 97 DB w/ ASP
 
+{% raw %}
+
 	Article: Q177226
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0,3.0
@@ -79,3 +81,5 @@ permalink: /kb/177/Q177226/
 	
 	=============================================================================
 	
+
+{% endraw %}

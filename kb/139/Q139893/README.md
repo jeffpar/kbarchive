@@ -6,6 +6,8 @@ permalink: /kb/139/Q139893/
 
 ## Q139893: Win95 Client Setup Puts SnaTcp Registry Key in Wrong Place
 
+{% raw %}
+
 	Article: Q139893
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -65,3 +67,5 @@ permalink: /kb/139/Q139893/
 	
 	=============================================================================
 	
+
+{% endraw %}

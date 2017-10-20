@@ -6,6 +6,8 @@ permalink: /kb/244/Q244702/
 
 ## Q244702: XFOR: Exchange Server 5.5 Post-SP3 Migration Fixes Available
 
+{% raw %}
+
 	Article: Q244702
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -118,3 +120,5 @@ permalink: /kb/244/Q244702/
 	
 	=============================================================================
 	
+
+{% endraw %}

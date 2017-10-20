@@ -6,6 +6,8 @@ permalink: /kb/190/Q190226/
 
 ## Q190226: HOWTO: Programmatically Add Child Controls to a CoolBar
 
+{% raw %}
+
 	Article: Q190226
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/190/Q190226/
 	
 	=============================================================================
 	
+
+{% endraw %}

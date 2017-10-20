@@ -6,6 +6,8 @@ permalink: /kb/173/Q173446/
 
 ## Q173446: How to Specify Site Certificate Providers to Use with MSN
 
+{% raw %}
+
 	Article: Q173446
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -60,3 +62,5 @@ permalink: /kb/173/Q173446/
 	
 	=============================================================================
 	
+
+{% endraw %}

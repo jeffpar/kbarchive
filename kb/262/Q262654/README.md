@@ -6,6 +6,8 @@ permalink: /kb/262/Q262654/
 
 ## Q262654: BUG: ShowAnnotationToolPalette ToolTips Display Incorrect Data
 
+{% raw %}
+
 	Article: Q262654
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/262/Q262654/
 	
 	=============================================================================
 	
+
+{% endraw %}

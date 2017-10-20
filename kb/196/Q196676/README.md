@@ -6,6 +6,8 @@ permalink: /kb/196/Q196676/
 
 ## Q196676: WD97: Form Field Length Expands or Contracts, Affects Alignment
 
+{% raw %}
+
 	Article: Q196676
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/196/Q196676/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141112/
 
 ## Q141112: LPR Postscript Clients Printing to LPD Server
 
+{% raw %}
+
 	Article: Q141112
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.51
@@ -61,3 +63,5 @@ permalink: /kb/141/Q141112/
 	
 	=============================================================================
 	
+
+{% endraw %}

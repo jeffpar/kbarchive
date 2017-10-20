@@ -6,6 +6,8 @@ permalink: /kb/131/Q131891/
 
 ## Q131891: SNA: How to Install Remote Admin and Focus On Remote Domains
 
+{% raw %}
+
 	Article: Q131891
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,4.0
@@ -107,3 +109,5 @@ permalink: /kb/131/Q131891/
 	
 	=============================================================================
 	
+
+{% endraw %}

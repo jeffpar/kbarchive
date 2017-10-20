@@ -6,6 +6,8 @@ permalink: /kb/221/Q221929/
 
 ## Q221929: XFOR: OV/VM (PROFS) Connector Stuck in Endless Loop
 
+{% raw %}
+
 	Article: Q221929
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/221/Q221929/
 	
 	=============================================================================
 	
+
+{% endraw %}

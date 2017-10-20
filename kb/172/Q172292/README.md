@@ -6,6 +6,8 @@ permalink: /kb/172/Q172292/
 
 ## Q172292: F1 Key Does Not Open Help in SNA Manager
 
+{% raw %}
+
 	Article: Q172292
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -59,3 +61,5 @@ permalink: /kb/172/Q172292/
 	
 	=============================================================================
 	
+
+{% endraw %}

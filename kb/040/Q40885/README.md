@@ -6,6 +6,8 @@ permalink: /kb/040/Q40885/
 
 ## Q40885: Passing a Single-Precision Array to FORTRAN from BASIC
 
+{% raw %}
+
 	Article: Q40885
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -134,3 +136,5 @@ permalink: /kb/040/Q40885/
 	invoking the FORTRAN compiler in the second step above, the filename
 	and extension are used. The FORTRAN subroutine can be compiled with
 	the /AM (medium-model) compiler directive.
+
+{% endraw %}

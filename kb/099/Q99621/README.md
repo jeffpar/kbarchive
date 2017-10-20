@@ -6,6 +6,8 @@ permalink: /kb/099/Q99621/
 
 ## Q99621: Changing Font Used in Print Commands in FP for Windows
 
+{% raw %}
+
 	Article: Q99621
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.6x 3.00
@@ -69,3 +71,5 @@ permalink: /kb/099/Q99621/
 	
 	=============================================================================
 	
+
+{% endraw %}

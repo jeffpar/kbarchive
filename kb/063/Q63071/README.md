@@ -6,6 +6,8 @@ permalink: /kb/063/Q63071/
 
 ## Q63071: Only First 8 Characters in a Batch Label Recognized
 
+{% raw %}
+
 	Article: Q63071
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.01,5.x,6.0,6.2,6.21,6.22
@@ -88,3 +90,5 @@ permalink: /kb/063/Q63071/
 	
 	=============================================================================
 	
+
+{% endraw %}

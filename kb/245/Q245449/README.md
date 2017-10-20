@@ -6,6 +6,8 @@ permalink: /kb/245/Q245449/
 
 ## Q245449: Err Msg: The Server Has Found an Unexplained Error...
 
+{% raw %}
+
 	Article: Q245449
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/245/Q245449/
 	
 	=============================================================================
 	
+
+{% endraw %}

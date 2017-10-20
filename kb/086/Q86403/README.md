@@ -6,6 +6,8 @@ permalink: /kb/086/Q86403/
 
 ## Q86403: PC MAPI: Custom Message Prints When Disabled
 
+{% raw %}
+
 	Article: Q86403
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -50,3 +52,5 @@ permalink: /kb/086/Q86403/
 	
 	=============================================================================
 	
+
+{% endraw %}

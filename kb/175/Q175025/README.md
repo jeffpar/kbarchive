@@ -6,6 +6,8 @@ permalink: /kb/175/Q175025/
 
 ## Q175025: How to Build and Reset a Trust Relationship from a Command Line
 
+{% raw %}
+
 	Article: Q175025
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/175/Q175025/
 	
 	=============================================================================
 	
+
+{% endraw %}

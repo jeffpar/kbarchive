@@ -6,6 +6,8 @@ permalink: /kb/135/Q135357/
 
 ## Q135357: PRB: Sync Between Visual SourceSafe and VB Is Delayed
 
+{% raw %}
+
 	Article: Q135357
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/135/Q135357/
 	
 	=============================================================================
 	
+
+{% endraw %}

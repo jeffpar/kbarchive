@@ -6,6 +6,8 @@ permalink: /kb/104/Q104847/
 
 ## Q104847: MemMaker Appears to Hang for One Minute or Longer
 
+{% raw %}
+
 	Article: Q104847
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -42,3 +44,5 @@ permalink: /kb/104/Q104847/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177280/
 
 ## Q177280: FS98: Global On Cockpit Instruments Not Always Visible
 
+{% raw %}
+
 	Article: Q177280
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -51,3 +53,5 @@ permalink: /kb/177/Q177280/
 	
 	=============================================================================
 	
+
+{% endraw %}

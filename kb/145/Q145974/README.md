@@ -6,6 +6,8 @@ permalink: /kb/145/Q145974/
 
 ## Q145974: XCLN: Cancel Button Slow to Respond When Using DUN
 
+{% raw %}
+
 	Article: Q145974
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -50,3 +52,5 @@ permalink: /kb/145/Q145974/
 	
 	=============================================================================
 	
+
+{% endraw %}

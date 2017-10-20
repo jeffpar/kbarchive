@@ -6,6 +6,8 @@ permalink: /kb/171/Q171934/
 
 ## Q171934: Cancelling SNA Windows 95 Logon Causes Sbpuinit() rc = 563
 
+{% raw %}
+
 	Article: Q171934
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -68,3 +70,5 @@ permalink: /kb/171/Q171934/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140812/
 
 ## Q140812: File Date Stamps in AUDIT.RUL Do Not Match Actual Date Stamps
 
+{% raw %}
+
 	Article: Q140812
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/140/Q140812/
 	
 	=============================================================================
 	
+
+{% endraw %}

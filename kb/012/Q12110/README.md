@@ -6,6 +6,8 @@ permalink: /kb/012/Q12110/
 
 ## Q12110: Calling ROM BIOS Routines to Check the Printer Status
 
+{% raw %}
+
 	Article: Q12110
 	Product(s): Microsoft Programming Utilities
 	Version(s): 6.0,6.0a,6.0ax; MS-DOS:7.0; WINDOWS:1.0,1.5
@@ -62,3 +64,5 @@ permalink: /kb/012/Q12110/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155493/
 
 ## Q155493: PPT7: Saving in 4.0 Fails if Path Longer Than 100 Characters
 
+{% raw %}
+
 	Article: Q155493
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -64,3 +66,5 @@ permalink: /kb/155/Q155493/
 	
 	=============================================================================
 	
+
+{% endraw %}

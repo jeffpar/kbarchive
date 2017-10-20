@@ -6,6 +6,8 @@ permalink: /kb/112/Q112641/
 
 ## Q112641: Using ExtDeviceMode() to Modify Printer Settings
 
+{% raw %}
+
 	Article: Q112641
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -433,3 +435,5 @@ permalink: /kb/112/Q112641/
 	
 	=============================================================================
 	
+
+{% endraw %}

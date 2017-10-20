@@ -6,6 +6,8 @@ permalink: /kb/323/Q323935/
 
 ## Q323935: Flight Simulator 2002: Black Border Surrounds Full-Screen Mode
 
+{% raw %}
+
 	Article: Q323935
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/323/Q323935/
 	
 	=============================================================================
 	
+
+{% endraw %}

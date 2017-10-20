@@ -6,6 +6,8 @@ permalink: /kb/203/Q203700/
 
 ## Q203700: Encarta 99: How to Install Additional Components
 
+{% raw %}
+
 	Article: Q203700
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -130,3 +132,5 @@ permalink: /kb/203/Q203700/
 	
 	=============================================================================
 	
+
+{% endraw %}

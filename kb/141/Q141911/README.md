@@ -6,6 +6,8 @@ permalink: /kb/141/Q141911/
 
 ## Q141911: PRB: Form with DeskTop=.T. Changes the Left or Top Properties
 
+{% raw %}
+
 	Article: Q141911
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -107,3 +109,5 @@ permalink: /kb/141/Q141911/
 	
 	=============================================================================
 	
+
+{% endraw %}

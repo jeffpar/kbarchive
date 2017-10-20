@@ -6,6 +6,8 @@ permalink: /kb/138/Q138599/
 
 ## Q138599: Identical Resources Open for Two Accounts in Server Manager
 
+{% raw %}
+
 	Article: Q138599
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -50,3 +52,5 @@ permalink: /kb/138/Q138599/
 	
 	=============================================================================
 	
+
+{% endraw %}

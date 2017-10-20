@@ -6,6 +6,8 @@ permalink: /kb/273/Q273782/
 
 ## Q273782: PRB: Error When You Copy and Paste GUID in Data View Window
 
+{% raw %}
+
 	Article: Q273782
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -97,3 +99,5 @@ permalink: /kb/273/Q273782/
 	
 	=============================================================================
 	
+
+{% endraw %}

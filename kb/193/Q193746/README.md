@@ -6,6 +6,8 @@ permalink: /kb/193/Q193746/
 
 ## Q193746: SMS: Resync File Cleaner - Dumpsync.exe
 
+{% raw %}
+
 	Article: Q193746
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -82,3 +84,5 @@ permalink: /kb/193/Q193746/
 	
 	=============================================================================
 	
+
+{% endraw %}

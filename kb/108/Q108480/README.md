@@ -6,6 +6,8 @@ permalink: /kb/108/Q108480/
 
 ## Q108480: Set Up Applications Does Not Search Mapped Network Drives
 
+{% raw %}
+
 	Article: Q108480
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/108/Q108480/
 	
 	=============================================================================
 	
+
+{% endraw %}

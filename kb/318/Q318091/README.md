@@ -6,6 +6,8 @@ permalink: /kb/318/Q318091/
 
 ## Q318091: MS02-018: Patch for Buffer Overrun in HTR ISAPI Extension
 
+{% raw %}
+
 	Article: Q318091
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -136,3 +138,5 @@ permalink: /kb/318/Q318091/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82478/
 
 ## Q82478: GP Fault in FINSTALL.DLL Copying Turbo Tax Soft Fonts
 
+{% raw %}
+
 	Article: Q82478
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/082/Q82478/
 	
 	=============================================================================
 	
+
+{% endraw %}

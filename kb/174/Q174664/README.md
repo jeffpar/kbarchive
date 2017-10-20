@@ -6,6 +6,8 @@ permalink: /kb/174/Q174664/
 
 ## Q174664: Microsoft Exchange Does Not Start
 
+{% raw %}
+
 	Article: Q174664
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/174/Q174664/
 	
 	=============================================================================
 	
+
+{% endraw %}

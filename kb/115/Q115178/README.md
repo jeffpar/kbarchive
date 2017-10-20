@@ -6,6 +6,8 @@ permalink: /kb/115/Q115178/
 
 ## Q115178: Drive Access Problems with Dual-Capacity Bernoulli Drive
 
+{% raw %}
+
 	Article: Q115178
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -69,3 +71,5 @@ permalink: /kb/115/Q115178/
 	
 	=============================================================================
 	
+
+{% endraw %}

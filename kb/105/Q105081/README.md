@@ -6,6 +6,8 @@ permalink: /kb/105/Q105081/
 
 ## Q105081: PRB: &quot;Warning: Calling DestroyWindow in CWnd::~CWnd&quot; Message
 
+{% raw %}
+
 	Article: Q105081
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -72,3 +74,5 @@ permalink: /kb/105/Q105081/
 	
 	=============================================================================
 	
+
+{% endraw %}

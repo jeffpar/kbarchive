@@ -6,6 +6,8 @@ permalink: /kb/086/Q86950/
 
 ## Q86950: 3COM: Receiving Multiple Messages from the Gateway
 
+{% raw %}
+
 	Article: Q86950
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -40,3 +42,5 @@ permalink: /kb/086/Q86950/
 	
 	=============================================================================
 	
+
+{% endraw %}

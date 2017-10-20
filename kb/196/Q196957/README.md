@@ -6,6 +6,8 @@ permalink: /kb/196/Q196957/
 
 ## Q196957: Using SFGW to Save Files May Cause Task Dump on S/36 or AS/36
 
+{% raw %}
+
 	Article: Q196957
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP1
@@ -101,3 +103,5 @@ permalink: /kb/196/Q196957/
 	
 	=============================================================================
 	
+
+{% endraw %}

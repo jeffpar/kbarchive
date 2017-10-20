@@ -6,6 +6,8 @@ permalink: /kb/167/Q167964/
 
 ## Q167964: NetBT Sends Wrong IP Address for Multihomed Computer
 
+{% raw %}
+
 	Article: Q167964
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/167/Q167964/
 	
 	=============================================================================
 	
+
+{% endraw %}

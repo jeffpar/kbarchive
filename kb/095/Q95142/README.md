@@ -6,6 +6,8 @@ permalink: /kb/095/Q95142/
 
 ## Q95142: Setting System Attribute on SYSTEM.INI Causes GP Fault
 
+{% raw %}
+
 	Article: Q95142
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/095/Q95142/
 	
 	=============================================================================
 	
+
+{% endraw %}

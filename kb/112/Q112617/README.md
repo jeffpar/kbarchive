@@ -6,6 +6,8 @@ permalink: /kb/112/Q112617/
 
 ## Q112617: WFWG 3.11 Err Msg: Write Timeout on Drive C:
 
+{% raw %}
+
 	Article: Q112617
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -52,3 +54,5 @@ permalink: /kb/112/Q112617/
 	
 	=============================================================================
 	
+
+{% endraw %}

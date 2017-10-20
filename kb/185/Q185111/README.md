@@ -6,6 +6,8 @@ permalink: /kb/185/Q185111/
 
 ## Q185111: FP: Error Publishing FrontPage Web Using Web Publishing Wizard
 
+{% raw %}
+
 	Article: Q185111
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1,97
@@ -57,3 +59,5 @@ permalink: /kb/185/Q185111/
 	
 	=============================================================================
 	
+
+{% endraw %}

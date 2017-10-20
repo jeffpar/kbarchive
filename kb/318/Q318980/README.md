@@ -6,6 +6,8 @@ permalink: /kb/318/Q318980/
 
 ## Q318980: FIX: ICE Deleting Records in a Buffered Table
 
+{% raw %}
+
 	Article: Q318980
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -100,3 +102,5 @@ permalink: /kb/318/Q318980/
 	
 	=============================================================================
 	
+
+{% endraw %}

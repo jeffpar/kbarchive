@@ -6,6 +6,8 @@ permalink: /kb/153/Q153770/
 
 ## Q153770: ADT/ODE: &quot;Setup Error 997&quot; Installing ADT or ODE Application
 
+{% raw %}
+
 	Article: Q153770
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 7.0
@@ -100,3 +102,5 @@ permalink: /kb/153/Q153770/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149708/
 
 ## Q149708: Printed Text May Be the Wrong Color
 
+{% raw %}
+
 	Article: Q149708
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -47,3 +49,5 @@ permalink: /kb/149/Q149708/
 	
 	=============================================================================
 	
+
+{% endraw %}

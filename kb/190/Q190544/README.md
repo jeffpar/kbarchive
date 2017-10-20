@@ -6,6 +6,8 @@ permalink: /kb/190/Q190544/
 
 ## Q190544: BUG: Compile of Report with #INCLUDE Causes VFP to Terminate
 
+{% raw %}
+
 	Article: Q190544
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -117,3 +119,5 @@ permalink: /kb/190/Q190544/
 	
 	=============================================================================
 	
+
+{% endraw %}

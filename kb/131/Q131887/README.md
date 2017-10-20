@@ -6,6 +6,8 @@ permalink: /kb/131/Q131887/
 
 ## Q131887: UNCONF: PRB: Problems If Change PCAnywhere Entry in SYSTEM.INI
 
+{% raw %}
+
 	Article: Q131887
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/131/Q131887/
 	
 	=============================================================================
 	
+
+{% endraw %}

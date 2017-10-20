@@ -6,6 +6,8 @@ permalink: /kb/183/Q183181/
 
 ## Q183181: COBOL PIC X(32768) or Larger Causes an Error
 
+{% raw %}
+
 	Article: Q183181
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -92,3 +94,5 @@ permalink: /kb/183/Q183181/
 	
 	=============================================================================
 	
+
+{% endraw %}

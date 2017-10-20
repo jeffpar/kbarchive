@@ -6,6 +6,8 @@ permalink: /kb/117/Q117237/
 
 ## Q117237: Windows 3.11 Directory Listing for Disk 4 (5.25 Inch 1.2 MB)
 
+{% raw %}
+
 	Article: Q117237
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -69,3 +71,5 @@ permalink: /kb/117/Q117237/
 	
 	=============================================================================
 	
+
+{% endraw %}

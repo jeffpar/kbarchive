@@ -6,6 +6,8 @@ permalink: /kb/247/Q247095/
 
 ## Q247095: XCLN: Outlook 98 Batch Mode Setup Switches for ODK
 
+{% raw %}
+
 	Article: Q247095
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -138,3 +140,5 @@ permalink: /kb/247/Q247095/
 	
 	=============================================================================
 	
+
+{% endraw %}

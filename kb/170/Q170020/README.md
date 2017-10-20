@@ -6,6 +6,8 @@ permalink: /kb/170/Q170020/
 
 ## Q170020: WD97: 'Allow A4/Letter Paper Resizing' Option Does Not Support L
 
+{% raw %}
+
 	Article: Q170020
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/170/Q170020/
 	
 	=============================================================================
 	
+
+{% endraw %}

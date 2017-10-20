@@ -6,6 +6,8 @@ permalink: /kb/244/Q244801/
 
 ## Q244801: PRB: Run-time Bound ADO Recordset Skips Second Record
 
+{% raw %}
+
 	Article: Q244801
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
@@ -124,3 +126,5 @@ permalink: /kb/244/Q244801/
 	
 	=============================================================================
 	
+
+{% endraw %}

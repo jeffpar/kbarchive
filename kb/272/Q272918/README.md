@@ -6,6 +6,8 @@ permalink: /kb/272/Q272918/
 
 ## Q272918: XADM: Preventing Attrib. Repl. from Exchange to Active Directory
 
+{% raw %}
+
 	Article: Q272918
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5 SP3
@@ -110,3 +112,5 @@ permalink: /kb/272/Q272918/
 	
 	=============================================================================
 	
+
+{% endraw %}

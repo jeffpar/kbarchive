@@ -6,6 +6,8 @@ permalink: /kb/177/Q177143/
 
 ## Q177143: PRB: &quot;Error Writing to File&quot; Error Using a Table on a CD-ROM
 
+{% raw %}
+
 	Article: Q177143
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -111,3 +113,5 @@ permalink: /kb/177/Q177143/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168378/
 
 ## Q168378: BUG: Debug &quot;Additional Dlls&quot; Entry Shows on All Projects
 
+{% raw %}
+
 	Article: Q168378
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/168/Q168378/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248704/
 
 ## Q248704: Open Database Connectivity Performance Slow When Tracing Enabled
 
+{% raw %}
+
 	Article: Q248704
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/248/Q248704/
 	
 	=============================================================================
 	
+
+{% endraw %}

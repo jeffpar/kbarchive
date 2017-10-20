@@ -6,6 +6,8 @@ permalink: /kb/152/Q152604/
 
 ## Q152604: XADM: Functionality Provided by Set as Default Option
 
+{% raw %}
+
 	Article: Q152604
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/152/Q152604/
 	
 	=============================================================================
 	
+
+{% endraw %}

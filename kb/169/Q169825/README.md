@@ -6,6 +6,8 @@ permalink: /kb/169/Q169825/
 
 ## Q169825: FIX: Upsizing Multiple Memo Fields to Oracle May Cause Data Loss
 
+{% raw %}
+
 	Article: Q169825
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -141,3 +143,5 @@ permalink: /kb/169/Q169825/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111591/
 
 ## Q111591: BUG: IsBadStringPtr() Reports Bad String as Valid
 
+{% raw %}
+
 	Article: Q111591
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/111/Q111591/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181491/
 
 ## Q181491: PRB: MFC Generic App Resources Cannot Interact with Desktop
 
+{% raw %}
+
 	Article: Q181491
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/181/Q181491/
 	
 	=============================================================================
 	
+
+{% endraw %}

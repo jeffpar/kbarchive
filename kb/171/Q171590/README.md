@@ -6,6 +6,8 @@ permalink: /kb/171/Q171590/
 
 ## Q171590: Fatal Error 127 during Windows NT Upgrade
 
+{% raw %}
+
 	Article: Q171590
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -81,3 +83,5 @@ permalink: /kb/171/Q171590/
 	
 	=============================================================================
 	
+
+{% endraw %}

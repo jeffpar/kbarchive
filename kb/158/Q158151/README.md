@@ -6,6 +6,8 @@ permalink: /kb/158/Q158151/
 
 ## Q158151: XFOR: ErrMsg: Event ID 1035 - Unable to Open or Read a Message
 
+{% raw %}
+
 	Article: Q158151
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -69,3 +71,5 @@ permalink: /kb/158/Q158151/
 	
 	=============================================================================
 	
+
+{% endraw %}

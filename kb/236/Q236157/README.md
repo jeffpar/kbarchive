@@ -6,6 +6,8 @@ permalink: /kb/236/Q236157/
 
 ## Q236157: XFOR: Adding Exchange Address Book to Lotus Notes Client
 
+{% raw %}
+
 	Article: Q236157
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -58,3 +60,5 @@ permalink: /kb/236/Q236157/
 	
 	=============================================================================
 	
+
+{% endraw %}

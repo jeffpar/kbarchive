@@ -6,6 +6,8 @@ permalink: /kb/049/Q49396/
 
 ## Q49396: Example of Passing Variable-Length String from BASIC to MASM
 
+{% raw %}
+
 	Article: Q49396
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -67,3 +69,5 @@ permalink: /kb/049/Q49396/
 	BSTR.EXE produces the following output:
 	
 	   This is the string
+
+{% endraw %}

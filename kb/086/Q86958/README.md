@@ -6,6 +6,8 @@ permalink: /kb/086/Q86958/
 
 ## Q86958: X400: The Structural Components of the X.400 Gateway
 
+{% raw %}
+
 	Article: Q86958
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/086/Q86958/
 	
 	=============================================================================
 	
+
+{% endraw %}

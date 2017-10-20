@@ -6,6 +6,8 @@ permalink: /kb/123/Q123833/
 
 ## Q123833: Connecting SNA Server over X.25/QLLC
 
+{% raw %}
+
 	Article: Q123833
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -59,3 +61,5 @@ permalink: /kb/123/Q123833/
 	
 	=============================================================================
 	
+
+{% endraw %}

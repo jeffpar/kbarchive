@@ -6,6 +6,8 @@ permalink: /kb/154/Q154538/
 
 ## Q154538: WinNT 4.0 Upgrade CD Will Not Upgrade WinNT 4.0 Installation
 
+{% raw %}
+
 	Article: Q154538
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/154/Q154538/
 	
 	=============================================================================
 	
+
+{% endraw %}

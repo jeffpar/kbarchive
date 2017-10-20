@@ -6,6 +6,8 @@ permalink: /kb/103/Q103945/
 
 ## Q103945: PC Mac: Macintosh Client Version 3.0.6 Update
 
+{% raw %}
+
 	Article: Q103945
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.2,3.2a
@@ -196,3 +198,5 @@ permalink: /kb/103/Q103945/
 	
 	=============================================================================
 	
+
+{% endraw %}

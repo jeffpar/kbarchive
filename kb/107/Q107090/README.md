@@ -6,6 +6,8 @@ permalink: /kb/107/Q107090/
 
 ## Q107090: PROFS: Verifying the CSIEXITs for Host Access Component
 
+{% raw %}
+
 	Article: Q107090
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.1,3.2,3.3
@@ -65,3 +67,5 @@ permalink: /kb/107/Q107090/
 	
 	=============================================================================
 	
+
+{% endraw %}

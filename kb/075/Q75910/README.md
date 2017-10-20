@@ -6,6 +6,8 @@ permalink: /kb/075/Q75910/
 
 ## Q75910: TimeSmp.exe - High-Resolution Timing Services
 
+{% raw %}
+
 	Article: Q75910
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/075/Q75910/
 	
 	=============================================================================
 	
+
+{% endraw %}

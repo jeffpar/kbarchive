@@ -6,6 +6,8 @@ permalink: /kb/271/Q271275/
 
 ## Q271275: XADM: Event IDs 11506 or 11508 with error 0x2740 Are Logged
 
+{% raw %}
+
 	Article: Q271275
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -119,3 +121,5 @@ permalink: /kb/271/Q271275/
 	
 	=============================================================================
 	
+
+{% endraw %}

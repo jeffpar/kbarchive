@@ -6,6 +6,8 @@ permalink: /kb/132/Q132395/
 
 ## Q132395: Wacom Pen Tablet Does Not Function in Windows 95
 
+{% raw %}
+
 	Article: Q132395
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/132/Q132395/
 	
 	=============================================================================
 	
+
+{% endraw %}

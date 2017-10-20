@@ -6,6 +6,8 @@ permalink: /kb/160/Q160793/
 
 ## Q160793: Additional Desktop Restrictions Available Through Registry
 
+{% raw %}
+
 	Article: Q160793
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -122,3 +124,5 @@ permalink: /kb/160/Q160793/
 	
 	=============================================================================
 	
+
+{% endraw %}

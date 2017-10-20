@@ -6,6 +6,8 @@ permalink: /kb/258/Q258138/
 
 ## Q258138: XWEB: OWA Processes Consecutive All-Day Appointments Incorrectly
 
+{% raw %}
+
 	Article: Q258138
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -85,3 +87,5 @@ permalink: /kb/258/Q258138/
 	
 	=============================================================================
 	
+
+{% endraw %}

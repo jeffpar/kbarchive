@@ -6,6 +6,8 @@ permalink: /kb/216/Q216876/
 
 ## Q216876: PRB: Moving Code Does Not Preserve Procedure Attributes
 
+{% raw %}
+
 	Article: Q216876
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/216/Q216876/
 	
 	=============================================================================
 	
+
+{% endraw %}

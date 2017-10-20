@@ -6,6 +6,8 @@ permalink: /kb/186/Q186697/
 
 ## Q186697: XCLN: Inbox Assistant Does ORing Instead of ANDing on Rules
 
+{% raw %}
+
 	Article: Q186697
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.03
@@ -57,3 +59,5 @@ permalink: /kb/186/Q186697/
 	
 	=============================================================================
 	
+
+{% endraw %}

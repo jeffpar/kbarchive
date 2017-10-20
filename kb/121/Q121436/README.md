@@ -6,6 +6,8 @@ permalink: /kb/121/Q121436/
 
 ## Q121436: Doc Err: Entry for Port of LPD Service Not Available
 
+{% raw %}
+
 	Article: Q121436
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/121/Q121436/
 	
 	=============================================================================
 	
+
+{% endraw %}

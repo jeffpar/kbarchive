@@ -6,6 +6,8 @@ permalink: /kb/298/Q298678/
 
 ## Q298678: INFO: ODBC 64-Bit API Changes in MDAC 2.7
 
+{% raw %}
+
 	Article: Q298678
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.7
@@ -340,3 +342,5 @@ permalink: /kb/298/Q298678/
 	
 	=============================================================================
 	
+
+{% endraw %}

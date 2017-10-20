@@ -6,6 +6,8 @@ permalink: /kb/131/Q131678/
 
 ## Q131678: PC NTMMTA: Err Msg: Unable to Open Specified INI File
 
+{% raw %}
+
 	Article: Q131678
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -55,3 +57,5 @@ permalink: /kb/131/Q131678/
 	
 	=============================================================================
 	
+
+{% endraw %}

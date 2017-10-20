@@ -6,6 +6,8 @@ permalink: /kb/030/Q30381/
 
 ## Q30381: FIX: Command Line Option /E Generates a Bad Fixup Record
 
+{% raw %}
+
 	Article: Q30381
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -59,3 +61,5 @@ permalink: /kb/030/Q30381/
 	
 	=============================================================================
 	
+
+{% endraw %}

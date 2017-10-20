@@ -6,6 +6,8 @@ permalink: /kb/130/Q130088/
 
 ## Q130088: Windows NT: Corrupt Files on Siemens PCE-5S (P90/100) Computers
 
+{% raw %}
+
 	Article: Q130088
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/130/Q130088/
 	
 	=============================================================================
 	
+
+{% endraw %}

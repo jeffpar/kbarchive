@@ -6,6 +6,8 @@ permalink: /kb/175/Q175575/
 
 ## Q175575: How to Disable Music on the MSN On Stage Web Page
 
+{% raw %}
+
 	Article: Q175575
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,95
@@ -45,3 +47,5 @@ permalink: /kb/175/Q175575/
 	
 	=============================================================================
 	
+
+{% endraw %}

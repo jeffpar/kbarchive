@@ -6,6 +6,8 @@ permalink: /kb/110/Q110568/
 
 ## Q110568: Pentium-Based Machine Hangs with Communication Applications
 
+{% raw %}
+
 	Article: Q110568
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/110/Q110568/
 	
 	=============================================================================
 	
+
+{% endraw %}

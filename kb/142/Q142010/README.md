@@ -6,6 +6,8 @@ permalink: /kb/142/Q142010/
 
 ## Q142010: BUG: Bad Message Appears When Promoting Domain Controllers
 
+{% raw %}
+
 	Article: Q142010
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -59,3 +61,5 @@ permalink: /kb/142/Q142010/
 	
 	=============================================================================
 	
+
+{% endraw %}

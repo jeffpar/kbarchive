@@ -6,6 +6,8 @@ permalink: /kb/107/Q107767/
 
 ## Q107767: PC Gen: How Global Groups Work When Sending Mail
 
+{% raw %}
+
 	Article: Q107767
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0a,3.2
@@ -115,3 +117,5 @@ permalink: /kb/107/Q107767/
 	
 	=============================================================================
 	
+
+{% endraw %}

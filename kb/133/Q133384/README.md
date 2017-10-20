@@ -6,6 +6,8 @@ permalink: /kb/133/Q133384/
 
 ## Q133384: Event ID 2019: Nonpaged Memory Pool Empty
 
+{% raw %}
+
 	Article: Q133384
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -103,3 +105,5 @@ permalink: /kb/133/Q133384/
 	
 	=============================================================================
 	
+
+{% endraw %}

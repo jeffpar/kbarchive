@@ -6,6 +6,8 @@ permalink: /kb/084/Q84421/
 
 ## Q84421: High Granularity Setting May Cause Problems Moving Windows
 
+{% raw %}
+
 	Article: Q84421
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/084/Q84421/
 	
 	=============================================================================
 	
+
+{% endraw %}

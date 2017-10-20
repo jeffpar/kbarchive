@@ -6,6 +6,8 @@ permalink: /kb/165/Q165683/
 
 ## Q165683: INFO: Visual C++ 5.0 Readme, ActiveX Control Issues
 
+{% raw %}
+
 	Article: Q165683
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -99,3 +101,5 @@ permalink: /kb/165/Q165683/
 	
 	=============================================================================
 	
+
+{% endraw %}

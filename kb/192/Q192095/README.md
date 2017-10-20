@@ -6,6 +6,8 @@ permalink: /kb/192/Q192095/
 
 ## Q192095: FIX: Problems Running Wizard From Report or Label Query
 
+{% raw %}
+
 	Article: Q192095
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -98,3 +100,5 @@ permalink: /kb/192/Q192095/
 	
 	=============================================================================
 	
+
+{% endraw %}

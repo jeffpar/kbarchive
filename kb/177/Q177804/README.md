@@ -6,6 +6,8 @@ permalink: /kb/177/Q177804/
 
 ## Q177804: SMS: Remote Control Fails on Win95 with STB Nitro
 
+{% raw %}
+
 	Article: Q177804
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -52,3 +54,5 @@ permalink: /kb/177/Q177804/
 	
 	=============================================================================
 	
+
+{% endraw %}

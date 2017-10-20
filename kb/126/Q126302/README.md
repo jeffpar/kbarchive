@@ -6,6 +6,8 @@ permalink: /kb/126/Q126302/
 
 ## Q126302: PRB: Excluded Encrypted App in Project Makes New App Encrypted
 
+{% raw %}
+
 	Article: Q126302
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6a,3.0,5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/126/Q126302/
 	
 	=============================================================================
 	
+
+{% endraw %}

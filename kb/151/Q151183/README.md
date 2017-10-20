@@ -6,6 +6,8 @@ permalink: /kb/151/Q151183/
 
 ## Q151183: WWW Clients Using Basic Authentication May Fail with IIS 1.0
 
+{% raw %}
+
 	Article: Q151183
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -115,3 +117,5 @@ permalink: /kb/151/Q151183/
 	
 	=============================================================================
 	
+
+{% endraw %}

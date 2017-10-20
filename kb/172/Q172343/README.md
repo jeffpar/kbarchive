@@ -6,6 +6,8 @@ permalink: /kb/172/Q172343/
 
 ## Q172343: FIX: Controls Cannot Be Added to Toolbar Programmatically
 
+{% raw %}
+
 	Article: Q172343
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.0,4.0,5.0,6.0
@@ -124,3 +126,5 @@ permalink: /kb/172/Q172343/
 	
 	=============================================================================
 	
+
+{% endraw %}

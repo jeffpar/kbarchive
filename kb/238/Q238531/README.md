@@ -6,6 +6,8 @@ permalink: /kb/238/Q238531/
 
 ## Q238531: SMSINST: Cannot Extract More Than 1,024 Files
 
+{% raw %}
+
 	Article: Q238531
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -54,3 +56,5 @@ permalink: /kb/238/Q238531/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225530/
 
 ## Q225530: SMS: Resource Explorer Returns &quot;File Not Found&quot; Error
 
+{% raw %}
+
 	Article: Q225530
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -62,3 +64,5 @@ permalink: /kb/225/Q225530/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/310/Q310723/
 
 ## Q310723: Configuring FTP Folder and Permissions for Domain Authentication
 
+{% raw %}
+
 	Article: Q310723
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -158,3 +160,5 @@ permalink: /kb/310/Q310723/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139095/
 
 ## Q139095: DOCERR: RAT() Command Doesn't Count from Rightmost Character
 
+{% raw %}
+
 	Article: Q139095
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6,2.6a; UNIX:2.6; WINDOWS:2.5x,2.6,2.6a,3.0
@@ -56,3 +58,5 @@ permalink: /kb/139/Q139095/
 	
 	=============================================================================
 	
+
+{% endraw %}

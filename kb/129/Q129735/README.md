@@ -6,6 +6,8 @@ permalink: /kb/129/Q129735/
 
 ## Q129735: When You Paste to FIND, 500 Nations Jumps to Northeast Nations
 
+{% raw %}
+
 	Article: Q129735
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/129/Q129735/
 	
 	=============================================================================
 	
+
+{% endraw %}

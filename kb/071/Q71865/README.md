@@ -6,6 +6,8 @@ permalink: /kb/071/Q71865/
 
 ## Q71865: Requirements for UMB Support in MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q71865
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -97,3 +99,5 @@ permalink: /kb/071/Q71865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142376/
 
 ## Q142376: PRB: Jetpack Failed With Error = 80
 
+{% raw %}
+
 	Article: Q142376
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -65,3 +67,5 @@ permalink: /kb/142/Q142376/
 	
 	=============================================================================
 	
+
+{% endraw %}

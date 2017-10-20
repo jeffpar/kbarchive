@@ -6,6 +6,8 @@ permalink: /kb/091/Q91020/
 
 ## Q91020: Shared WFWG Directory on Novell NetWare Server Is Disconnected
 
+{% raw %}
+
 	Article: Q91020
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/091/Q91020/
 	
 	=============================================================================
 	
+
+{% endraw %}

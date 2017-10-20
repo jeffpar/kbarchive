@@ -6,6 +6,8 @@ permalink: /kb/242/Q242011/
 
 ## Q242011: SMS: APM Does Not Install Software on BDCs
 
+{% raw %}
+
 	Article: Q242011
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -165,3 +167,5 @@ permalink: /kb/242/Q242011/
 	
 	=============================================================================
 	
+
+{% endraw %}

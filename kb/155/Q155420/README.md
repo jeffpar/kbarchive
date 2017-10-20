@@ -6,6 +6,8 @@ permalink: /kb/155/Q155420/
 
 ## Q155420: PRB: C2146, C2065, C2143 Instantiating Template Class Objects
 
+{% raw %}
+
 	Article: Q155420
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/155/Q155420/
 	
 	=============================================================================
 	
+
+{% endraw %}

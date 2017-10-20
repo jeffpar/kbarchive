@@ -6,6 +6,8 @@ permalink: /kb/143/Q143172/
 
 ## Q143172: Doc Err: Users Cannot Create New Clipbook Pages
 
+{% raw %}
+
 	Article: Q143172
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -54,3 +56,5 @@ permalink: /kb/143/Q143172/
 	
 	=============================================================================
 	
+
+{% endraw %}

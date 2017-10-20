@@ -6,6 +6,8 @@ permalink: /kb/148/Q148487/
 
 ## Q148487: MS-DOS &quot;For&quot; Command Fails when Run Against an FPNW Server
 
+{% raw %}
+
 	Article: Q148487
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -68,3 +70,5 @@ permalink: /kb/148/Q148487/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43000/
 
 ## Q43000: Passing Two-Dimensional Arrays between C and FORTRAN
 
+{% raw %}
+
 	Article: Q43000
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -73,3 +75,5 @@ permalink: /kb/043/Q43000/
 	            printf("\nthe value of %d:%d is %f"
 	                          ,i,j,cblock.array[j][i]);
 	}
+
+{% endraw %}

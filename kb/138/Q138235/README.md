@@ -6,6 +6,8 @@ permalink: /kb/138/Q138235/
 
 ## Q138235: Blank Fields Cause Inconsistent UI Behavior
 
+{% raw %}
+
 	Article: Q138235
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/138/Q138235/
 	
 	=============================================================================
 	
+
+{% endraw %}

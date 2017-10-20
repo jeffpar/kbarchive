@@ -6,6 +6,8 @@ permalink: /kb/026/Q26819/
 
 ## Q26819: FIX: &quot;Value Out of Range&quot; Error
 
+{% raw %}
+
 	Article: Q26819
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -46,3 +48,5 @@ permalink: /kb/026/Q26819/
 	
 	=============================================================================
 	
+
+{% endraw %}

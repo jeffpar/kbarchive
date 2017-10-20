@@ -6,6 +6,8 @@ permalink: /kb/185/Q185973/
 
 ## Q185973: SMS: INVWIN32 Stops Responding and Causes 100 Percent CPU Usage
 
+{% raw %}
+
 	Article: Q185973
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -88,3 +90,5 @@ permalink: /kb/185/Q185973/
 	
 	=============================================================================
 	
+
+{% endraw %}

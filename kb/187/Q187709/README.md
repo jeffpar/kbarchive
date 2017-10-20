@@ -6,6 +6,8 @@ permalink: /kb/187/Q187709/
 
 ## Q187709: Domain Name Resolver Caches Responses
 
+{% raw %}
+
 	Article: Q187709
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/187/Q187709/
 	
 	=============================================================================
 	
+
+{% endraw %}

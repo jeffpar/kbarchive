@@ -6,6 +6,8 @@ permalink: /kb/193/Q193108/
 
 ## Q193108: WD97: Text Doesn't Wrap Around Object
 
+{% raw %}
+
 	Article: Q193108
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -109,3 +111,5 @@ permalink: /kb/193/Q193108/
 	
 	=============================================================================
 	
+
+{% endraw %}

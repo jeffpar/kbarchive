@@ -6,6 +6,8 @@ permalink: /kb/084/Q84117/
 
 ## Q84117: Windows 3.1: Incorrect TrueType Output with HP DeskJet
 
+{% raw %}
+
 	Article: Q84117
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/084/Q84117/
 	
 	=============================================================================
 	
+
+{% endraw %}

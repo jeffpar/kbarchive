@@ -6,6 +6,8 @@ permalink: /kb/089/Q89652/
 
 ## Q89652: 14 Default TrueType Fonts in Windows 3.1
 
+{% raw %}
+
 	Article: Q89652
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/089/Q89652/
 	
 	=============================================================================
 	
+
+{% endraw %}

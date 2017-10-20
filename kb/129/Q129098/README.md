@@ -6,6 +6,8 @@ permalink: /kb/129/Q129098/
 
 ## Q129098: How to Change a Table's Name
 
+{% raw %}
+
 	Article: Q129098
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/129/Q129098/
 	
 	=============================================================================
 	
+
+{% endraw %}

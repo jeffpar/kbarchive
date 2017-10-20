@@ -6,6 +6,8 @@ permalink: /kb/161/Q161876/
 
 ## Q161876: Problems After Removing Atria Clearcase Software
 
+{% raw %}
+
 	Article: Q161876
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.5 3.51
@@ -78,3 +80,5 @@ permalink: /kb/161/Q161876/
 	
 	=============================================================================
 	
+
+{% endraw %}

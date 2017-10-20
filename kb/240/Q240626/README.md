@@ -6,6 +6,8 @@ permalink: /kb/240/Q240626/
 
 ## Q240626: BUG: Extra Lines are Generated in Assembly when Using #line
 
+{% raw %}
+
 	Article: Q240626
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -161,3 +163,5 @@ permalink: /kb/240/Q240626/
 	
 	=============================================================================
 	
+
+{% endraw %}

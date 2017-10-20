@@ -6,6 +6,8 @@ permalink: /kb/161/Q161387/
 
 ## Q161387: Golf 3.0: Installing Links LS Courses
 
+{% raw %}
+
 	Article: Q161387
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/161/Q161387/
 	
 	=============================================================================
 	
+
+{% endraw %}

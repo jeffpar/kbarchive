@@ -6,6 +6,8 @@ permalink: /kb/146/Q146029/
 
 ## Q146029: XCLN: No Status Indicator When Attach/Save/Send Attachments
 
+{% raw %}
+
 	Article: Q146029
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -43,3 +45,5 @@ permalink: /kb/146/Q146029/
 	
 	=============================================================================
 	
+
+{% endraw %}

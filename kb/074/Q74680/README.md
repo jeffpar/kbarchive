@@ -6,6 +6,8 @@ permalink: /kb/074/Q74680/
 
 ## Q74680: &#42;.GRP File Is Deleted When Program Group Removed from Program
 
+{% raw %}
+
 	Article: Q74680
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/074/Q74680/
 	
 	=============================================================================
 	
+
+{% endraw %}

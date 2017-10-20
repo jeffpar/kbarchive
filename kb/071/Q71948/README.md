@@ -6,6 +6,8 @@ permalink: /kb/071/Q71948/
 
 ## Q71948: Windows 3.0 Drivers for Xerox Panorama-IME 2-Page Display
 
+{% raw %}
+
 	Article: Q71948
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/071/Q71948/
 	
 	=============================================================================
 	
+
+{% endraw %}

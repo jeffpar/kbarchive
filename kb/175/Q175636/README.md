@@ -6,6 +6,8 @@ permalink: /kb/175/Q175636/
 
 ## Q175636: XCLN: Thank You Mood Stamp is not Displayed in Exchange Clients
 
+{% raw %}
+
 	Article: Q175636
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:4.0,5.0,8.0; winnt:5.5; :8.0,8.01,8.02,8.03
@@ -54,3 +56,5 @@ permalink: /kb/175/Q175636/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120930/
 
 ## Q120930: How to Re-sync a LAN Manager Server in a Windows NT Domain
 
+{% raw %}
+
 	Article: Q120930
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,3.1,3.5
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120930/
 	
 	=============================================================================
 	
+
+{% endraw %}

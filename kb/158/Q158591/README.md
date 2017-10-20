@@ -6,6 +6,8 @@ permalink: /kb/158/Q158591/
 
 ## Q158591: Err Msg: Spoolss.exe - Entry Point Not Found
 
+{% raw %}
+
 	Article: Q158591
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/158/Q158591/
 	
 	=============================================================================
 	
+
+{% endraw %}

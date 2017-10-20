@@ -6,6 +6,8 @@ permalink: /kb/108/Q108751/
 
 ## Q108751: Scenes 1.0: Invalid Parameter (Toshiba T4500, T4600, T6600)
 
+{% raw %}
+
 	Article: Q108751
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/108/Q108751/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74507/
 
 ## Q74507: BUG: Combo Boxes in DS_SYSMODAL Dialog Boxes
 
+{% raw %}
+
 	Article: Q74507
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1,95
@@ -62,3 +64,5 @@ permalink: /kb/074/Q74507/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30314/
 
 ## Q30314: PRINT SGN(a) AND SGN(b) Fails If Compiled with BC.EXE; 4.50 OK
 
+{% raw %}
+
 	Article: Q30314
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -47,3 +49,5 @@ permalink: /kb/030/Q30314/
 	PRINT SGN(a),
 	PRINT SGN(b),
 	PRINT (SGN(a)) AND (SGN(b))
+
+{% endraw %}

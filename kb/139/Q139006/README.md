@@ -6,6 +6,8 @@ permalink: /kb/139/Q139006/
 
 ## Q139006: Finding Referenced Labs in Mastering Microsoft Visual FoxPro
 
+{% raw %}
+
 	Article: Q139006
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -122,3 +124,5 @@ permalink: /kb/139/Q139006/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133279/
 
 ## Q133279: Using a DNS to Resolve NetBIOS Names Not Ending In &lt;00&gt; or &lt;20
 
+{% raw %}
+
 	Article: Q133279
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a,3.11b; WINDOWS:3.11
@@ -54,3 +56,5 @@ permalink: /kb/133/Q133279/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/308/Q308644/
 
 ## Q308644: BUG: Memory Leak When You Bind Recordset to VB Intrinsic Control
 
+{% raw %}
+
 	Article: Q308644
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -135,3 +137,5 @@ permalink: /kb/308/Q308644/
 	
 	=============================================================================
 	
+
+{% endraw %}

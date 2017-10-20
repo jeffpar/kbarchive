@@ -6,6 +6,8 @@ permalink: /kb/268/Q268466/
 
 ## Q268466: End User License Agreement (EULA) Policy on Duplicating CD-ROMs
 
+{% raw %}
+
 	Article: Q268466
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/268/Q268466/
 	
 	=============================================================================
 	
+
+{% endraw %}

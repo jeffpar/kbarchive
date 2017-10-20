@@ -6,6 +6,8 @@ permalink: /kb/197/Q197021/
 
 ## Q197021: WD97: Saving Form Data as Text Does Not Change Document Name
 
+{% raw %}
+
 	Article: Q197021
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/197/Q197021/
 	
 	=============================================================================
 	
+
+{% endraw %}

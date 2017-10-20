@@ -6,6 +6,8 @@ permalink: /kb/247/Q247702/
 
 ## Q247702: Fighter Ace II: Gun Muzzle Flashes Appear Blocky
 
+{% raw %}
+
 	Article: Q247702
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/247/Q247702/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107087/
 
 ## Q107087: SMTP: Err Msg: Warning No Return Path
 
+{% raw %}
+
 	Article: Q107087
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -65,3 +67,5 @@ permalink: /kb/107/Q107087/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137323/
 
 ## Q137323: Bookshelf: If No Notes Exist, ALT+N Closes Dialog Box
 
+{% raw %}
+
 	Article: Q137323
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1995 edition
@@ -50,3 +52,5 @@ permalink: /kb/137/Q137323/
 	
 	=============================================================================
 	
+
+{% endraw %}

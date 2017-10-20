@@ -6,6 +6,8 @@ permalink: /kb/267/Q267937/
 
 ## Q267937: BUG: Pipes Screen Saver Draws Outside Preview Window-Win2000
 
+{% raw %}
+
 	Article: Q267937
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -44,3 +46,5 @@ permalink: /kb/267/Q267937/
 	
 	=============================================================================
 	
+
+{% endraw %}

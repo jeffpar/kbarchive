@@ -6,6 +6,8 @@ permalink: /kb/096/Q96641/
 
 ## Q96641: PC DB: 3.0 Server Disk 3 &#91;3.5, 5.25&#93;
 
+{% raw %}
+
 	Article: Q96641
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -145,3 +147,5 @@ permalink: /kb/096/Q96641/
 	
 	=============================================================================
 	
+
+{% endraw %}

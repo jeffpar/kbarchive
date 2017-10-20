@@ -6,6 +6,8 @@ permalink: /kb/132/Q132796/
 
 ## Q132796: HP Ethertwist PC Lan Adapter/16 Plus Error Message
 
+{% raw %}
+
 	Article: Q132796
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/132/Q132796/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156258/
 
 ## Q156258: Command Prompt Does Not Recognize End-of-File Character
 
+{% raw %}
+
 	Article: Q156258
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -47,3 +49,5 @@ permalink: /kb/156/Q156258/
 	
 	=============================================================================
 	
+
+{% endraw %}

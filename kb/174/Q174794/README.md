@@ -6,6 +6,8 @@ permalink: /kb/174/Q174794/
 
 ## Q174794: How to Change Network Priority in a Cluster
 
+{% raw %}
+
 	Article: Q174794
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/174/Q174794/
 	
 	=============================================================================
 	
+
+{% endraw %}

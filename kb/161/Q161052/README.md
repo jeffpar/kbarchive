@@ -6,6 +6,8 @@ permalink: /kb/161/Q161052/
 
 ## Q161052: HOWTO: Create a Default Value for Custom Controls and Classes
 
+{% raw %}
+
 	Article: Q161052
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/161/Q161052/
 	
 	=============================================================================
 	
+
+{% endraw %}

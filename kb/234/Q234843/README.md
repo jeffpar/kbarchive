@@ -6,6 +6,8 @@ permalink: /kb/234/Q234843/
 
 ## Q234843: RUI Application Receives Duplicate MSG10 Screen
 
+{% raw %}
+
 	Article: Q234843
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,3.0SP4,4.0,4.0SP1,4.0SP2
@@ -162,3 +164,5 @@ permalink: /kb/234/Q234843/
 	
 	=============================================================================
 	
+
+{% endraw %}

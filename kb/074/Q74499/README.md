@@ -6,6 +6,8 @@ permalink: /kb/074/Q74499/
 
 ## Q74499: Future Domain SCSI Controllers Require BIOS Upgrade
 
+{% raw %}
+
 	Article: Q74499
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -66,3 +68,5 @@ permalink: /kb/074/Q74499/
 	
 	=============================================================================
 	
+
+{% endraw %}

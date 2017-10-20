@@ -6,6 +6,8 @@ permalink: /kb/246/Q246988/
 
 ## Q246988: Default Gateway Is Ignored When IRDP Is Enabled
 
+{% raw %}
+
 	Article: Q246988
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -102,3 +104,5 @@ permalink: /kb/246/Q246988/
 	
 	=============================================================================
 	
+
+{% endraw %}

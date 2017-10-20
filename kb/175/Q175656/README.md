@@ -6,6 +6,8 @@ permalink: /kb/175/Q175656/
 
 ## Q175656: SMS: Hardware Inventory Fails to Detect IRQ and Port Address
 
+{% raw %}
+
 	Article: Q175656
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/175/Q175656/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269134/
 
 ## Q269134: Multiple Shared Folders Clients Fail Over Same Local LU
 
+{% raw %}
+
 	Article: Q269134
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3; :
@@ -86,3 +88,5 @@ permalink: /kb/269/Q269134/
 	
 	=============================================================================
 	
+
+{% endraw %}

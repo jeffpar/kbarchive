@@ -6,6 +6,8 @@ permalink: /kb/164/Q164869/
 
 ## Q164869: FIX: SET COLLATE TO &quot;GENERAL&quot; May Affect Search Results
 
+{% raw %}
+
 	Article: Q164869
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -104,3 +106,5 @@ permalink: /kb/164/Q164869/
 	
 	=============================================================================
 	
+
+{% endraw %}

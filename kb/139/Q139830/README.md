@@ -6,6 +6,8 @@ permalink: /kb/139/Q139830/
 
 ## Q139830: Multimedia, Kids: Windows 95 Icons Moved in Full Screen Mode
 
+{% raw %}
+
 	Article: Q139830
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0; WINDOWS:1.0,95
@@ -55,3 +57,5 @@ permalink: /kb/139/Q139830/
 	
 	=============================================================================
 	
+
+{% endraw %}

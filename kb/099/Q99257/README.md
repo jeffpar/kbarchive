@@ -6,6 +6,8 @@ permalink: /kb/099/Q99257/
 
 ## Q99257: PC WRmt: Multiple MSMAIL.INI files
 
+{% raw %}
+
 	Article: Q99257
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -38,3 +40,5 @@ permalink: /kb/099/Q99257/
 	
 	=============================================================================
 	
+
+{% endraw %}

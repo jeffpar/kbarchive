@@ -6,6 +6,8 @@ permalink: /kb/227/Q227880/
 
 ## Q227880: Modifying TCP/IP Fields May Disable DHCP Relay Agent Service
 
+{% raw %}
+
 	Article: Q227880
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -80,3 +82,5 @@ permalink: /kb/227/Q227880/
 	
 	=============================================================================
 	
+
+{% endraw %}

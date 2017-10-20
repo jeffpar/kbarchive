@@ -6,6 +6,8 @@ permalink: /kb/063/Q63811/
 
 ## Q63811: Illegal RESUME NEXT Hangs QBX After ON LOCAL ERROR RESUME NEXT
 
+{% raw %}
+
 	Article: Q63811
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -59,3 +61,5 @@ permalink: /kb/063/Q63811/
 	  PRINT "This is next line after programming error 20, and ERR= "; ERR
 	  PRINT "Now ending subprogram"
 	END SUB
+
+{% endraw %}

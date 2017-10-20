@@ -6,6 +6,8 @@ permalink: /kb/168/Q168679/
 
 ## Q168679: MSN Viewer Does Not Maximize 1600 x 1200 Video Resolution
 
+{% raw %}
+
 	Article: Q168679
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -58,3 +60,5 @@ permalink: /kb/168/Q168679/
 	
 	=============================================================================
 	
+
+{% endraw %}

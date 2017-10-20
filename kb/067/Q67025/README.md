@@ -6,6 +6,8 @@ permalink: /kb/067/Q67025/
 
 ## Q67025: Bitstream Fontware 3.0 Installation Kit Supported Devices
 
+{% raw %}
+
 	Article: Q67025
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -152,3 +154,5 @@ permalink: /kb/067/Q67025/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142794/
 
 ## Q142794: Availability of Microsoft Windows 95 Service Pack 1
 
+{% raw %}
+
 	Article: Q142794
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.0,95
@@ -106,3 +108,5 @@ permalink: /kb/142/Q142794/
 	
 	=============================================================================
 	
+
+{% endraw %}

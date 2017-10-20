@@ -6,6 +6,8 @@ permalink: /kb/139/Q139469/
 
 ## Q139469: HOWTO: How to Use TrackPopupMenu() and Update UI Handlers
 
+{% raw %}
+
 	Article: Q139469
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1
@@ -95,3 +97,5 @@ permalink: /kb/139/Q139469/
 	
 	=============================================================================
 	
+
+{% endraw %}

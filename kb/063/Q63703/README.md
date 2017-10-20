@@ -6,6 +6,8 @@ permalink: /kb/063/Q63703/
 
 ## Q63703: How to Get Sample Programs in QuickAssembler 2.51
 
+{% raw %}
+
 	Article: Q63703
 	Product(s): See article
 	Version(s): 2.51
@@ -30,3 +32,5 @@ permalink: /kb/063/Q63703/
 	mouse button, or by pressing ENTER after placing the cursor on the
 	filename. Programs listed in lowercase are accessed via the hyperlink,
 	meaning you MUST select the right mouse button.
+
+{% endraw %}

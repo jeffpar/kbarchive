@@ -6,6 +6,8 @@ permalink: /kb/190/Q190492/
 
 ## Q190492: BUG: New Implements Does Not Generate Incompatibility Error
 
+{% raw %}
+
 	Article: Q190492
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/190/Q190492/
 	
 	=============================================================================
 	
+
+{% endraw %}

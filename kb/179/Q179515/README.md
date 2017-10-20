@@ -6,6 +6,8 @@ permalink: /kb/179/Q179515/
 
 ## Q179515: MSN Program Viewer Hangs During Internet Explorer Update
 
+{% raw %}
+
 	Article: Q179515
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -69,3 +71,5 @@ permalink: /kb/179/Q179515/
 	
 	=============================================================================
 	
+
+{% endraw %}

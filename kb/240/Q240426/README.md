@@ -6,6 +6,8 @@ permalink: /kb/240/Q240426/
 
 ## Q240426: SMS: Cannot Obtain Performance Data for SMS Counters
 
+{% raw %}
+
 	Article: Q240426
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -117,3 +119,5 @@ permalink: /kb/240/Q240426/
 	
 	=============================================================================
 	
+
+{% endraw %}

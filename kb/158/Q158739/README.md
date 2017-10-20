@@ -6,6 +6,8 @@ permalink: /kb/158/Q158739/
 
 ## Q158739: How to Obtain 128-bit Encryption for Windows NT Service Packs
 
+{% raw %}
+
 	Article: Q158739
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:3.0; winnt:2.0,4.0
@@ -81,3 +83,5 @@ permalink: /kb/158/Q158739/
 	
 	=============================================================================
 	
+
+{% endraw %}

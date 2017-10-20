@@ -6,6 +6,8 @@ permalink: /kb/184/Q184487/
 
 ## Q184487: WD97: Document Label Style Name Not Fully Displayed
 
+{% raw %}
+
 	Article: Q184487
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/184/Q184487/
 	
 	=============================================================================
 	
+
+{% endraw %}

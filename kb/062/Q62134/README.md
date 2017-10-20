@@ -6,6 +6,8 @@ permalink: /kb/062/Q62134/
 
 ## Q62134: Mac Hyp: Getting a List of User Names
 
+{% raw %}
+
 	Article: Q62134
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -63,3 +65,5 @@ permalink: /kb/062/Q62134/
 	
 	=============================================================================
 	
+
+{% endraw %}

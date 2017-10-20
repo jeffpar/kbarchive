@@ -6,6 +6,8 @@ permalink: /kb/153/Q153823/
 
 ## Q153823: Windows NT Administrator Cannot Delete Win95 User.dat
 
+{% raw %}
+
 	Article: Q153823
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -72,3 +74,5 @@ permalink: /kb/153/Q153823/
 	
 	=============================================================================
 	
+
+{% endraw %}

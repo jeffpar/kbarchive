@@ -6,6 +6,8 @@ permalink: /kb/174/Q174878/
 
 ## Q174878: FIX: Large Buttons When Resetting Toolbar
 
+{% raw %}
+
 	Article: Q174878
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/174/Q174878/
 	
 	=============================================================================
 	
+
+{% endraw %}

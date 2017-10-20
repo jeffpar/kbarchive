@@ -6,6 +6,8 @@ permalink: /kb/047/Q47491/
 
 ## Q47491: How SUB and FUNCTION Windows Inherit DEFtype in QB.EXE Editor
 
+{% raw %}
+
 	Article: Q47491
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -82,3 +84,5 @@ permalink: /kb/047/Q47491/
 	     X = 5
 	     Y% = 10
 	   END SUB
+
+{% endraw %}

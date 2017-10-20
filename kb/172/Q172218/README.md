@@ -6,6 +6,8 @@ permalink: /kb/172/Q172218/
 
 ## Q172218: Microsoft TCP/IP Host Name Resolution Order
 
+{% raw %}
+
 	Article: Q172218
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.0,3.5,3.51,4.0,95
@@ -211,3 +213,5 @@ permalink: /kb/172/Q172218/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/273/Q273668/
 
 ## Q273668: Event 1339 Messages Are Logged When You Use Host Security
 
+{% raw %}
+
 	Article: Q273668
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/273/Q273668/
 	
 	=============================================================================
 	
+
+{% endraw %}

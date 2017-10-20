@@ -6,6 +6,8 @@ permalink: /kb/163/Q163332/
 
 ## Q163332: SLI Application Stops Responding When Issuing SLI_SEND
 
+{% raw %}
+
 	Article: Q163332
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,3.0
@@ -113,3 +115,5 @@ permalink: /kb/163/Q163332/
 	
 	=============================================================================
 	
+
+{% endraw %}

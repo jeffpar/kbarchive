@@ -6,6 +6,8 @@ permalink: /kb/225/Q225127/
 
 ## Q225127: No Remote Access Functionality with Same User and Domain Name
 
+{% raw %}
+
 	Article: Q225127
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -64,3 +66,5 @@ permalink: /kb/225/Q225127/
 	
 	=============================================================================
 	
+
+{% endraw %}

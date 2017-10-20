@@ -6,6 +6,8 @@ permalink: /kb/199/Q199135/
 
 ## Q199135: SMS: Using DeletePDF to Delete Imported PDFs
 
+{% raw %}
+
 	Article: Q199135
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/199/Q199135/
 	
 	=============================================================================
 	
+
+{% endraw %}

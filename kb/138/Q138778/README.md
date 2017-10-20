@@ -6,6 +6,8 @@ permalink: /kb/138/Q138778/
 
 ## Q138778: PRB: Numeric Value Not Written to Table from Text Box
 
+{% raw %}
+
 	Article: Q138778
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -114,3 +116,5 @@ permalink: /kb/138/Q138778/
 	
 	=============================================================================
 	
+
+{% endraw %}

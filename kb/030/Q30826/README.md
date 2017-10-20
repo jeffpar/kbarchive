@@ -6,6 +6,8 @@ permalink: /kb/030/Q30826/
 
 ## Q30826: How to Load a C Extension that Is Not in Current Directory
 
+{% raw %}
+
 	Article: Q30826
 	Product(s): See article
 	Version(s): 1.00
@@ -54,3 +56,5 @@ permalink: /kb/030/Q30826/
 	   ; load 'c:\init\ourext'.
 	   ; Under OS/2, load 'ourext.dll' from LIBPATH
 	   load:c:\init\ourext
+
+{% endraw %}

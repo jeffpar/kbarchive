@@ -6,6 +6,8 @@ permalink: /kb/275/Q275601/
 
 ## Q275601: Virtual Directory Names with Executable Extensions Are Not Used
 
+{% raw %}
+
 	Article: Q275601
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/275/Q275601/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75529/
 
 ## Q75529: Differences Between Tandy DOS 5.0 and MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q75529
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -78,3 +80,5 @@ permalink: /kb/075/Q75529/
 	
 	=============================================================================
 	
+
+{% endraw %}

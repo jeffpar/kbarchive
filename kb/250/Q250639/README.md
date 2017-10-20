@@ -6,6 +6,8 @@ permalink: /kb/250/Q250639/
 
 ## Q250639: FPNW Has Problems with Files Created in 1980
 
+{% raw %}
+
 	Article: Q250639
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP6a
@@ -73,3 +75,5 @@ permalink: /kb/250/Q250639/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245748/
 
 ## Q245748: XADM: Low Resource Condition Causes Information Store to Stop
 
+{% raw %}
+
 	Article: Q245748
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/245/Q245748/
 	
 	=============================================================================
 	
+
+{% endraw %}

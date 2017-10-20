@@ -6,6 +6,8 @@ permalink: /kb/049/Q49936/
 
 ## Q49936: Resizing QuickC and QuickPascal Windows Using Cursor Keys
 
+{% raw %}
+
 	Article: Q49936
 	Product(s): See article
 	Version(s): 2.00
@@ -37,3 +39,5 @@ permalink: /kb/049/Q49936/
 	
 	4. Press the ENTER key to select the current size or press ESC to undo
 	   the window resize command.
+
+{% endraw %}

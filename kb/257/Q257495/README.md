@@ -6,6 +6,8 @@ permalink: /kb/257/Q257495/
 
 ## Q257495: FIX: ListView Executes ItemClick Twice with Label Set to Manual
 
+{% raw %}
+
 	Article: Q257495
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/257/Q257495/
 	
 	=============================================================================
 	
+
+{% endraw %}

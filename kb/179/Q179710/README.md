@@ -6,6 +6,8 @@ permalink: /kb/179/Q179710/
 
 ## Q179710: WD97: Changes to Custom Template Do Not Show in Preview
 
+{% raw %}
+
 	Article: Q179710
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/179/Q179710/
 	
 	=============================================================================
 	
+
+{% endraw %}

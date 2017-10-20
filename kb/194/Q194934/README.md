@@ -6,6 +6,8 @@ permalink: /kb/194/Q194934/
 
 ## Q194934: Shared Folders Gateway Doesn't Support S/36 or AS/36
 
+{% raw %}
+
 	Article: Q194934
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -113,3 +115,5 @@ permalink: /kb/194/Q194934/
 	
 	=============================================================================
 	
+
+{% endraw %}

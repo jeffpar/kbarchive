@@ -6,6 +6,8 @@ permalink: /kb/153/Q153059/
 
 ## Q153059: BUG: Incorrect Edition Starts in Different Operating Systems
 
+{% raw %}
+
 	Article: Q153059
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -81,3 +83,5 @@ permalink: /kb/153/Q153059/
 	
 	=============================================================================
 	
+
+{% endraw %}

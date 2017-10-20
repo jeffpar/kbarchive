@@ -6,6 +6,8 @@ permalink: /kb/171/Q171833/
 
 ## Q171833: FIX: Statement Builder Crashes Referencing GlobalMultiUse Server
 
+{% raw %}
+
 	Article: Q171833
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -96,3 +98,5 @@ permalink: /kb/171/Q171833/
 	
 	=============================================================================
 	
+
+{% endraw %}

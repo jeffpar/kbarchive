@@ -6,6 +6,8 @@ permalink: /kb/164/Q164772/
 
 ## Q164772: Host-Initiated Password Changes Are Not Sent to All Domains
 
+{% raw %}
+
 	Article: Q164772
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164772/
 	
 	=============================================================================
 	
+
+{% endraw %}

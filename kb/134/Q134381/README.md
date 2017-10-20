@@ -6,6 +6,8 @@ permalink: /kb/134/Q134381/
 
 ## Q134381: PC Gen: DIRSYNC.DOC from Mail 3.5 Does Not Print
 
+{% raw %}
+
 	Article: Q134381
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -58,3 +60,5 @@ permalink: /kb/134/Q134381/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178123/
 
 ## Q178123: Multimedia: Video Clips Do Not Play Properly
 
+{% raw %}
+
 	Article: Q178123
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/178/Q178123/
 	
 	=============================================================================
 	
+
+{% endraw %}

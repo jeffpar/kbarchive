@@ -6,6 +6,8 @@ permalink: /kb/102/Q102557/
 
 ## Q102557: SchedPlus: Mtg Request Only Displays Subj Line in Appt Book
 
+{% raw %}
+
 	Article: Q102557
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -42,3 +44,5 @@ permalink: /kb/102/Q102557/
 	
 	=============================================================================
 	
+
+{% endraw %}

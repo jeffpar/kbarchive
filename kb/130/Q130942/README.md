@@ -6,6 +6,8 @@ permalink: /kb/130/Q130942/
 
 ## Q130942: PRB: WSAStartup() May Return WSAVERNOTSUPPORTED on Second Call
 
+{% raw %}
+
 	Article: Q130942
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -84,3 +86,5 @@ permalink: /kb/130/Q130942/
 	
 	=============================================================================
 	
+
+{% endraw %}

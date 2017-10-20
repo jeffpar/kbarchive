@@ -6,6 +6,8 @@ permalink: /kb/246/Q246434/
 
 ## Q246434: XFOR: Internet Msgs from Notes to Exchange Need SMTP Address
 
+{% raw %}
+
 	Article: Q246434
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -76,3 +78,5 @@ permalink: /kb/246/Q246434/
 	
 	=============================================================================
 	
+
+{% endraw %}

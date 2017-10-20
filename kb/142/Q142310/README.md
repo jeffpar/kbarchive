@@ -6,6 +6,8 @@ permalink: /kb/142/Q142310/
 
 ## Q142310: How to Redirect Print Jobs If Print Device Is Not Available
 
+{% raw %}
+
 	Article: Q142310
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142310/
 	
 	=============================================================================
 	
+
+{% endraw %}

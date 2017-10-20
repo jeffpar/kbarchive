@@ -6,6 +6,8 @@ permalink: /kb/066/Q66136/
 
 ## Q66136: Emulation Modes for All Okidata Printers
 
+{% raw %}
+
 	Article: Q66136
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/066/Q66136/
 	
 	=============================================================================
 	
+
+{% endraw %}

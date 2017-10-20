@@ -6,6 +6,8 @@ permalink: /kb/085/Q85889/
 
 ## Q85889: PRB: &quot;Unrecognized Linker Switch /NOP&quot; Linking Setup Toolkit
 
+{% raw %}
+
 	Article: Q85889
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/085/Q85889/
 	
 	=============================================================================
 	
+
+{% endraw %}

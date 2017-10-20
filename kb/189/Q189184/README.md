@@ -6,6 +6,8 @@ permalink: /kb/189/Q189184/
 
 ## Q189184: XFOR: Outbound SMTP Msgs. Don't Flow w/ IMC/IMS Service Running
 
+{% raw %}
+
 	Article: Q189184
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -62,3 +64,5 @@ permalink: /kb/189/Q189184/
 	
 	=============================================================================
 	
+
+{% endraw %}

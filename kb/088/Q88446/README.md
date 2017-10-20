@@ -6,6 +6,8 @@ permalink: /kb/088/Q88446/
 
 ## Q88446: Top View Doesn't Show Total Yardage of Hole in Golf
 
+{% raw %}
+
 	Article: Q88446
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/088/Q88446/
 	
 	=============================================================================
 	
+
+{% endraw %}

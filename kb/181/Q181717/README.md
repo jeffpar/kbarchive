@@ -6,6 +6,8 @@ permalink: /kb/181/Q181717/
 
 ## Q181717: FIX: Analyze Problems with Open Log Files
 
+{% raw %}
+
 	Article: Q181717
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -121,3 +123,5 @@ permalink: /kb/181/Q181717/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185655/
 
 ## Q185655: FIX: TMP File Errors If ALTER TABLE Runs Same Time As ODBC DLL
 
+{% raw %}
+
 	Article: Q185655
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a
@@ -184,3 +186,5 @@ permalink: /kb/185/Q185655/
 	
 	=============================================================================
 	
+
+{% endraw %}

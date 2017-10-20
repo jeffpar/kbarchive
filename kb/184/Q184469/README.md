@@ -6,6 +6,8 @@ permalink: /kb/184/Q184469/
 
 ## Q184469: Zone: Computer Hangs When You Enter a Game Room
 
+{% raw %}
+
 	Article: Q184469
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -74,3 +76,5 @@ permalink: /kb/184/Q184469/
 	
 	=============================================================================
 	
+
+{% endraw %}

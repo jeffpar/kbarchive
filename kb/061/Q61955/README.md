@@ -6,6 +6,8 @@ permalink: /kb/061/Q61955/
 
 ## Q61955: PWB Generates SYS0002 If MSHELP.DLL Not Installed Properly
 
+{% raw %}
+
 	Article: Q61955
 	Product(s): Microsoft Programming Utilities
 	Version(s): OS/2:1.0,1.1
@@ -48,3 +50,5 @@ permalink: /kb/061/Q61955/
 	
 	=============================================================================
 	
+
+{% endraw %}

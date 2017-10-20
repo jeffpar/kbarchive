@@ -6,6 +6,8 @@ permalink: /kb/153/Q153597/
 
 ## Q153597: XADM: Japanese Version Cannot use &quot;Service&quot; as Service Account
 
+{% raw %}
+
 	Article: Q153597
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/153/Q153597/
 	
 	=============================================================================
 	
+
+{% endraw %}

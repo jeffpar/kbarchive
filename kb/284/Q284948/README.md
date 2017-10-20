@@ -6,6 +6,8 @@ permalink: /kb/284/Q284948/
 
 ## Q284948: BUG: Text Containing Single LF or CR Becomes CR/LF on Win2000
 
+{% raw %}
+
 	Article: Q284948
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -178,3 +180,5 @@ permalink: /kb/284/Q284948/
 	
 	=============================================================================
 	
+
+{% endraw %}

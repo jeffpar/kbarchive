@@ -6,6 +6,8 @@ permalink: /kb/307/Q307580/
 
 ## Q307580: Train Simulator: Err Msg: Failed to Load Activity Manager
 
+{% raw %}
+
 	Article: Q307580
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/307/Q307580/
 	
 	=============================================================================
 	
+
+{% endraw %}

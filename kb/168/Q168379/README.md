@@ -6,6 +6,8 @@ permalink: /kb/168/Q168379/
 
 ## Q168379: BUG: Debugger Does Not Step Over to &#95;&#95;finally Code Block
 
+{% raw %}
+
 	Article: Q168379
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/168/Q168379/
 	
 	=============================================================================
 	
+
+{% endraw %}

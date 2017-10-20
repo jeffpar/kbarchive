@@ -6,6 +6,8 @@ permalink: /kb/066/Q66307/
 
 ## Q66307: Accessing Online Help for C and Assembly Topics with Same Name
 
+{% raw %}
+
 	Article: Q66307
 	Product(s): See article
 	Version(s): 2.01 2.51
@@ -59,3 +61,5 @@ permalink: /kb/066/Q66307/
 	The solution to this problem is changing the search order of the help
 	files by changing the Language setting or forcing the search to be
 	case sensitive by disabling Smart Help.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153201/
 
 ## Q153201: PRB: Error Installing Distributed Application from CD-ROM
 
+{% raw %}
+
 	Article: Q153201
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -113,3 +115,5 @@ permalink: /kb/153/Q153201/
 	
 	=============================================================================
 	
+
+{% endraw %}

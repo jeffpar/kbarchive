@@ -6,6 +6,8 @@ permalink: /kb/081/Q81814/
 
 ## Q81814: ToolBox.exe Implements a &quot;Tool Box&quot; Window
 
+{% raw %}
+
 	Article: Q81814
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -89,3 +91,5 @@ permalink: /kb/081/Q81814/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177267/
 
 ## Q177267: FIX: Unattended Setup Disables EnableDHCPFlag on Second Adapter
 
+{% raw %}
+
 	Article: Q177267
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -118,3 +120,5 @@ permalink: /kb/177/Q177267/
 	
 	=============================================================================
 	
+
+{% endraw %}

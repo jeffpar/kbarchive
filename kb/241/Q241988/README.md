@@ -6,6 +6,8 @@ permalink: /kb/241/Q241988/
 
 ## Q241988: XFOR: After Dirsync, cc:Mail Address is Missing a Period
 
+{% raw %}
+
 	Article: Q241988
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -62,3 +64,5 @@ permalink: /kb/241/Q241988/
 	
 	=============================================================================
 	
+
+{% endraw %}

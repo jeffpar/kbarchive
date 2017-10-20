@@ -6,6 +6,8 @@ permalink: /kb/202/Q202036/
 
 ## Q202036: XWEB: Macintosh Binary Attachments May Not Be Opened in OWA
 
+{% raw %}
+
 	Article: Q202036
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/202/Q202036/
 	
 	=============================================================================
 	
+
+{% endraw %}

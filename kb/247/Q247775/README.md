@@ -6,6 +6,8 @@ permalink: /kb/247/Q247775/
 
 ## Q247775: XADM: Exchange Server Unavailable at Regular Intervals
 
+{% raw %}
+
 	Article: Q247775
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/247/Q247775/
 	
 	=============================================================================
 	
+
+{% endraw %}

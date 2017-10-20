@@ -6,6 +6,8 @@ permalink: /kb/235/Q235196/
 
 ## Q235196: SMS: Illegal Settings Can Be Set for Software Distribution
 
+{% raw %}
+
 	Article: Q235196
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP1,2.0 SP2,2.0 SP3
@@ -59,3 +61,5 @@ permalink: /kb/235/Q235196/
 	
 	=============================================================================
 	
+
+{% endraw %}

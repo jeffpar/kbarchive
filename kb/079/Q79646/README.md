@@ -6,6 +6,8 @@ permalink: /kb/079/Q79646/
 
 ## Q79646: Windows Compatible Networks and Their Required Versions
 
+{% raw %}
+
 	Article: Q79646
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/079/Q79646/
 	
 	=============================================================================
 	
+
+{% endraw %}

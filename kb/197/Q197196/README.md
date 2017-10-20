@@ -6,6 +6,8 @@ permalink: /kb/197/Q197196/
 
 ## Q197196: Controls Not Displayed in VB 6.0 on Alpha-Based Computers
 
+{% raw %}
+
 	Article: Q197196
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/197/Q197196/
 	
 	=============================================================================
 	
+
+{% endraw %}

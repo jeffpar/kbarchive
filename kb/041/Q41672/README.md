@@ -6,6 +6,8 @@ permalink: /kb/041/Q41672/
 
 ## Q41672: QuickC 2.00 README.DOC: Error Message U1051
 
+{% raw %}
+
 	Article: Q41672
 	Product(s): See article
 	Version(s): 2.00
@@ -21,3 +23,5 @@ permalink: /kb/041/Q41672/
 	
 	The word "[targets]" should be on the same line as the rest of the
 	message.
+
+{% endraw %}

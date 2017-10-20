@@ -6,6 +6,8 @@ permalink: /kb/147/Q147583/
 
 ## Q147583: BUG: Adding Multiple Files w/16-Bit SetupWiz Fails on Win95/98
 
+{% raw %}
+
 	Article: Q147583
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,95,98
@@ -106,3 +108,5 @@ permalink: /kb/147/Q147583/
 	
 	=============================================================================
 	
+
+{% endraw %}

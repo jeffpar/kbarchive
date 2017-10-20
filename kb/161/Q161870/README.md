@@ -6,6 +6,8 @@ permalink: /kb/161/Q161870/
 
 ## Q161870: Maximum Files on SFM Volume Limited by Paged Pool Memory
 
+{% raw %}
+
 	Article: Q161870
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -130,3 +132,5 @@ permalink: /kb/161/Q161870/
 	
 	=============================================================================
 	
+
+{% endraw %}

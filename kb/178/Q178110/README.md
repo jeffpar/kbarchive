@@ -6,6 +6,8 @@ permalink: /kb/178/Q178110/
 
 ## Q178110: FPNW Does Not Allow OS/2 Clients to Open Files
 
+{% raw %}
+
 	Article: Q178110
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0 SP3
@@ -65,3 +67,5 @@ permalink: /kb/178/Q178110/
 	
 	=============================================================================
 	
+
+{% endraw %}

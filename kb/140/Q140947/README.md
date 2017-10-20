@@ -6,6 +6,8 @@ permalink: /kb/140/Q140947/
 
 ## Q140947: XADM: Number of Active Logons Counter Always Zero
 
+{% raw %}
+
 	Article: Q140947
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140947/
 	
 	=============================================================================
 	
+
+{% endraw %}

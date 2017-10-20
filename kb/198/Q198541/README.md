@@ -6,6 +6,8 @@ permalink: /kb/198/Q198541/
 
 ## Q198541: Using DHCPCMD to Modify a Reservation Converts It to a Lease
 
+{% raw %}
+
 	Article: Q198541
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/198/Q198541/
 	
 	=============================================================================
 	
+
+{% endraw %}

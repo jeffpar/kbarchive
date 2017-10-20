@@ -6,6 +6,8 @@ permalink: /kb/275/Q275366/
 
 ## Q275366: Restarting APPC Print Sessions Results in a Pending Status
 
+{% raw %}
+
 	Article: Q275366
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3
@@ -109,3 +111,5 @@ permalink: /kb/275/Q275366/
 	
 	=============================================================================
 	
+
+{% endraw %}

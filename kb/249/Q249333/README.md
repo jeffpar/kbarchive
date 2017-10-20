@@ -6,6 +6,8 @@ permalink: /kb/249/Q249333/
 
 ## Q249333: SMS: LSM Performs a Full Work Cycle on SMS Executive Restart
 
+{% raw %}
+
 	Article: Q249333
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -87,3 +89,5 @@ permalink: /kb/249/Q249333/
 	
 	=============================================================================
 	
+
+{% endraw %}

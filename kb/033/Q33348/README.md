@@ -6,6 +6,8 @@ permalink: /kb/033/Q33348/
 
 ## Q33348: Loading Tagged Sections in OS/2 Version 1.10
 
+{% raw %}
+
 	Article: Q33348
 	Product(s): See article
 	Version(s): 1.00
@@ -32,3 +34,5 @@ permalink: /kb/033/Q33348/
 	
 	This information is not contained in the "Microsoft Editor User's
 	Guide."
+
+{% endraw %}

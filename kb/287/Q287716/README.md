@@ -6,6 +6,8 @@ permalink: /kb/287/Q287716/
 
 ## Q287716: SMS: Error Messages Are Logged in Site Component Manager
 
+{% raw %}
+
 	Article: Q287716
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -144,3 +146,5 @@ permalink: /kb/287/Q287716/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229444/
 
 ## Q229444: WD97: Word 2000 HTML File Opens as Text Only in Word 97
 
+{% raw %}
+
 	Article: Q229444
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/229/Q229444/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132700/
 
 ## Q132700: Multimedia: Programs Do Not Start Minimized in Windows
 
+{% raw %}
+
 	Article: Q132700
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132700/
 	
 	=============================================================================
 	
+
+{% endraw %}

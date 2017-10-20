@@ -6,6 +6,8 @@ permalink: /kb/028/Q28163/
 
 ## Q28163: Unexpected PRINT USING &quot;.##&quot; Rounding for .xx5
 
+{% raw %}
+
 	Article: Q28163
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -43,3 +45,5 @@ permalink: /kb/028/Q28163/
 	
 	The internal representations are correctly rounded and displayed. This
 	is not a software problem.
+
+{% endraw %}

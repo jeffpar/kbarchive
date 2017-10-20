@@ -6,6 +6,8 @@ permalink: /kb/085/Q85338/
 
 ## Q85338: FAX: Role of the Fax Gateway PC
 
+{% raw %}
+
 	Article: Q85338
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/085/Q85338/
 	
 	=============================================================================
 	
+
+{% endraw %}

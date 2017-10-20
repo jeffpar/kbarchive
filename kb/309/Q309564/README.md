@@ -6,6 +6,8 @@ permalink: /kb/309/Q309564/
 
 ## Q309564: MechCommander 2: Video RAM Error Setting Hardware Configuration
 
+{% raw %}
+
 	Article: Q309564
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -186,3 +188,5 @@ permalink: /kb/309/Q309564/
 	
 	=============================================================================
 	
+
+{% endraw %}

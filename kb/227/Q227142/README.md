@@ -6,6 +6,8 @@ permalink: /kb/227/Q227142/
 
 ## Q227142: XFOR: cc:Mail Connector May not Deliver Messages w/Attachments
 
+{% raw %}
+
 	Article: Q227142
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/227/Q227142/
 	
 	=============================================================================
 	
+
+{% endraw %}

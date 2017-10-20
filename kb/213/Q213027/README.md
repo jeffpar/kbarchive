@@ -6,6 +6,8 @@ permalink: /kb/213/Q213027/
 
 ## Q213027: SMSINST: SMS Installer Is Unable to Display a Wait Message
 
+{% raw %}
+
 	Article: Q213027
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -72,3 +74,5 @@ permalink: /kb/213/Q213027/
 	
 	=============================================================================
 	
+
+{% endraw %}

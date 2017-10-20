@@ -6,6 +6,8 @@ permalink: /kb/254/Q254421/
 
 ## Q254421: MapPoint 2001: How to Print a High Contrast Map
 
+{% raw %}
+
 	Article: Q254421
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/254/Q254421/
 	
 	=============================================================================
 	
+
+{% endraw %}

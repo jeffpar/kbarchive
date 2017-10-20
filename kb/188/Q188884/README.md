@@ -6,6 +6,8 @@ permalink: /kb/188/Q188884/
 
 ## Q188884: Upgrading Localized Versions of Windows 95/98
 
+{% raw %}
+
 	Article: Q188884
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -100,3 +102,5 @@ permalink: /kb/188/Q188884/
 	
 	=============================================================================
 	
+
+{% endraw %}

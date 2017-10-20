@@ -6,6 +6,8 @@ permalink: /kb/083/Q83974/
 
 ## Q83974: Visionware's X-Vision 4.0 Requires NetBIOS with Windows 3.1
 
+{% raw %}
+
 	Article: Q83974
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/083/Q83974/
 	
 	=============================================================================
 	
+
+{% endraw %}

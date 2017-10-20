@@ -6,6 +6,8 @@ permalink: /kb/165/Q165822/
 
 ## Q165822: WD97: Custom Bullet or Number Lost After Save to RTF
 
+{% raw %}
+
 	Article: Q165822
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/165/Q165822/
 	
 	=============================================================================
 	
+
+{% endraw %}

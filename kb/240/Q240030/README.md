@@ -6,6 +6,8 @@ permalink: /kb/240/Q240030/
 
 ## Q240030: PRB: Commands or Procedures on Menu Pads Do Not Run in ActiveDoc
 
+{% raw %}
+
 	Article: Q240030
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -200,3 +202,5 @@ permalink: /kb/240/Q240030/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140351/
 
 ## Q140351: PRB: Assertion in Dlgprop.cpp Line 499
 
+{% raw %}
+
 	Article: Q140351
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:2.0
@@ -82,3 +84,5 @@ permalink: /kb/140/Q140351/
 	
 	=============================================================================
 	
+
+{% endraw %}

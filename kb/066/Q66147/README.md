@@ -6,6 +6,8 @@ permalink: /kb/066/Q66147/
 
 ## Q66147: Error Copying Files with Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66147
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/066/Q66147/
 	
 	=============================================================================
 	
+
+{% endraw %}

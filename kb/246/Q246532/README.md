@@ -6,6 +6,8 @@ permalink: /kb/246/Q246532/
 
 ## Q246532: Cannot Install GSNW on Windows NT with Lotus Domino Notes Server
 
+{% raw %}
+
 	Article: Q246532
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -150,3 +152,5 @@ permalink: /kb/246/Q246532/
 	
 	=============================================================================
 	
+
+{% endraw %}

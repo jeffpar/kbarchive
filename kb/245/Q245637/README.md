@@ -6,6 +6,8 @@ permalink: /kb/245/Q245637/
 
 ## Q245637: Some LARGE LUN Numbers Are Not Available to the Computer
 
+{% raw %}
+
 	Article: Q245637
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP5,4.0 SP6
@@ -88,3 +90,5 @@ permalink: /kb/245/Q245637/
 	
 	=============================================================================
 	
+
+{% endraw %}

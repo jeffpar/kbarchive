@@ -6,6 +6,8 @@ permalink: /kb/137/Q137647/
 
 ## Q137647: Microsoft Plus! DMF Floppy Disk Directory Listing (2 of 2)
 
+{% raw %}
+
 	Article: Q137647
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -428,3 +430,5 @@ permalink: /kb/137/Q137647/
 	
 	=============================================================================
 	
+
+{% endraw %}

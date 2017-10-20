@@ -6,6 +6,8 @@ permalink: /kb/165/Q165490/
 
 ## Q165490: VB4 16-Bit OLE Clients Receive Error -2147319784
 
+{% raw %}
+
 	Article: Q165490
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -204,3 +206,5 @@ permalink: /kb/165/Q165490/
 	
 	=============================================================================
 	
+
+{% endraw %}

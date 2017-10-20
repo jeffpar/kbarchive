@@ -6,6 +6,8 @@ permalink: /kb/305/Q305282/
 
 ## Q305282: &quot;Say my name!&quot; Feature Not Available In MSN Explorer 6.1
 
+{% raw %}
+
 	Article: Q305282
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -123,3 +125,5 @@ permalink: /kb/305/Q305282/
 	
 	=============================================================================
 	
+
+{% endraw %}

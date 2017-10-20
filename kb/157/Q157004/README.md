@@ -6,6 +6,8 @@ permalink: /kb/157/Q157004/
 
 ## Q157004: XCLN: Text Files Sent from Macintosh via IMC are Corrupted
 
+{% raw %}
+
 	Article: Q157004
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/157/Q157004/
 	
 	=============================================================================
 	
+
+{% endraw %}

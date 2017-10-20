@@ -6,6 +6,8 @@ permalink: /kb/128/Q128450/
 
 ## Q128450: File Transfer Slave Dialog Box Only Displays Bottom of Chars.
 
+{% raw %}
+
 	Article: Q128450
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -41,3 +43,5 @@ permalink: /kb/128/Q128450/
 	
 	=============================================================================
 	
+
+{% endraw %}

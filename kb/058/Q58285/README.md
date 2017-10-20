@@ -6,6 +6,8 @@ permalink: /kb/058/Q58285/
 
 ## Q58285: &quot;Ugly&quot; Colors on 512K 8514 Adapter
 
+{% raw %}
+
 	Article: Q58285
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -41,3 +43,5 @@ permalink: /kb/058/Q58285/
 	
 	=============================================================================
 	
+
+{% endraw %}

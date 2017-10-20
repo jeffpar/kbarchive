@@ -6,6 +6,8 @@ permalink: /kb/255/Q255528/
 
 ## Q255528: BUG:  Violation in Constructor w/ Variable Number of Arguments
 
+{% raw %}
+
 	Article: Q255528
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -92,3 +94,5 @@ permalink: /kb/255/Q255528/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137041/
 
 ## Q137041: SMTP: Recommended Environments for the SMTP Gateway
 
+{% raw %}
+
 	Article: Q137041
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -88,3 +90,5 @@ permalink: /kb/137/Q137041/
 	
 	=============================================================================
 	
+
+{% endraw %}

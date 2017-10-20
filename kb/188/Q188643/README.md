@@ -6,6 +6,8 @@ permalink: /kb/188/Q188643/
 
 ## Q188643: XADM: Unable to Hide Global Address List
 
+{% raw %}
+
 	Article: Q188643
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/188/Q188643/
 	
 	=============================================================================
 	
+
+{% endraw %}

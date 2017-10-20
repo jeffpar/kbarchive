@@ -6,6 +6,8 @@ permalink: /kb/301/Q301501/
 
 ## Q301501: MSN Explorer 6.1 freezes if you click &quot;Put in Folder&quot; button whi
 
+{% raw %}
+
 	Article: Q301501
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -51,3 +53,5 @@ permalink: /kb/301/Q301501/
 	
 	=============================================================================
 	
+
+{% endraw %}

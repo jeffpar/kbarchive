@@ -6,6 +6,8 @@ permalink: /kb/060/Q60734/
 
 ## Q60734: C4127 Is Generated When Subexpression Evaluates to a Constant
 
+{% raw %}
+
 	Article: Q60734
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -66,3 +68,5 @@ permalink: /kb/060/Q60734/
 	eliminates the warning because the left expression could now evaluate
 	to either true or false (for example, false if hours = 0; true
 	otherwise).
+
+{% endraw %}

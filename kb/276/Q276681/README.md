@@ -6,6 +6,8 @@ permalink: /kb/276/Q276681/
 
 ## Q276681: HAC Does Not Start If Database Key Does Not Exist
 
+{% raw %}
+
 	Article: Q276681
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/276/Q276681/
 	
 	=============================================================================
 	
+
+{% endraw %}

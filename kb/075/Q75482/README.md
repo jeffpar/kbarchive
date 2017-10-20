@@ -6,6 +6,8 @@ permalink: /kb/075/Q75482/
 
 ## Q75482: Setup Repeatedly Prompts for Same Disk
 
+{% raw %}
+
 	Article: Q75482
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -70,3 +72,5 @@ permalink: /kb/075/Q75482/
 	
 	=============================================================================
 	
+
+{% endraw %}

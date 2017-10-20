@@ -6,6 +6,8 @@ permalink: /kb/186/Q186091/
 
 ## Q186091: Streets 98 Err Msg: The Main Application Could Not Be Launched
 
+{% raw %}
+
 	Article: Q186091
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:1.0,98
@@ -75,3 +77,5 @@ permalink: /kb/186/Q186091/
 	
 	=============================================================================
 	
+
+{% endraw %}

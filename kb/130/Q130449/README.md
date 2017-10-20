@@ -6,6 +6,8 @@ permalink: /kb/130/Q130449/
 
 ## Q130449: PC DirSync: Err Msg: Fatal 113 Failure to Send Mail...
 
+{% raw %}
+
 	Article: Q130449
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -70,3 +72,5 @@ permalink: /kb/130/Q130449/
 	
 	=============================================================================
 	
+
+{% endraw %}

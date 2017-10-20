@@ -6,6 +6,8 @@ permalink: /kb/173/Q173235/
 
 ## Q173235: Troubleshooting: Check Windows 95 System Performance
 
+{% raw %}
+
 	Article: Q173235
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/173/Q173235/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185323/
 
 ## Q185323: Pool NonPaged Bytes Not Accurately Calculated for User Mode
 
+{% raw %}
+
 	Article: Q185323
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/185/Q185323/
 	
 	=============================================================================
 	
+
+{% endraw %}

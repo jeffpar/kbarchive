@@ -6,6 +6,8 @@ permalink: /kb/140/Q140898/
 
 ## Q140898: BUG: Application Error Occurs When Rebinding a Bound DBGrid
 
+{% raw %}
+
 	Article: Q140898
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -134,3 +136,5 @@ permalink: /kb/140/Q140898/
 	
 	=============================================================================
 	
+
+{% endraw %}

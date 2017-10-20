@@ -6,6 +6,8 @@ permalink: /kb/194/Q194953/
 
 ## Q194953: INFO: Facts About WinInet API Support on Windows CE OS
 
+{% raw %}
+
 	Article: Q194953
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0
@@ -84,3 +86,5 @@ permalink: /kb/194/Q194953/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122917/
 
 ## Q122917: Golf 2.0 Err Msg: Win32s - Error. Improper Installation...
 
+{% raw %}
+
 	Article: Q122917
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -92,3 +94,5 @@ permalink: /kb/122/Q122917/
 	
 	=============================================================================
 	
+
+{% endraw %}

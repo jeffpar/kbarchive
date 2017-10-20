@@ -6,6 +6,8 @@ permalink: /kb/107/Q107665/
 
 ## Q107665: How to Create a Table Structure Using an ASCII File
 
+{% raw %}
+
 	Article: Q107665
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6x; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -55,3 +57,5 @@ permalink: /kb/107/Q107665/
 	
 	=============================================================================
 	
+
+{% endraw %}

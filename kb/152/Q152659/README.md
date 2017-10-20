@@ -6,6 +6,8 @@ permalink: /kb/152/Q152659/
 
 ## Q152659: XADM: Importing Exchange Accounts from Another Organization
 
+{% raw %}
+
 	Article: Q152659
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/152/Q152659/
 	
 	=============================================================================
 	
+
+{% endraw %}

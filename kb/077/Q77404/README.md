@@ -6,6 +6,8 @@ permalink: /kb/077/Q77404/
 
 ## Q77404: PRB: SETUP.EXE Fails to Replace OEM Drivers
 
+{% raw %}
+
 	Article: Q77404
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -70,3 +72,5 @@ permalink: /kb/077/Q77404/
 	
 	=============================================================================
 	
+
+{% endraw %}

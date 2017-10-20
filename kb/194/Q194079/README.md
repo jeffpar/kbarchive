@@ -6,6 +6,8 @@ permalink: /kb/194/Q194079/
 
 ## Q194079: XCLN: ODK:Some Hex Values Not Accepted for DWORD Registry Entry
 
+{% raw %}
+
 	Article: Q194079
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -57,3 +59,5 @@ permalink: /kb/194/Q194079/
 	
 	=============================================================================
 	
+
+{% endraw %}

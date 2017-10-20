@@ -6,6 +6,8 @@ permalink: /kb/173/Q173523/
 
 ## Q173523: IIS 3.0 Can Fail in Low Memory Conditions
 
+{% raw %}
+
 	Article: Q173523
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.0,4.0
@@ -66,3 +68,5 @@ permalink: /kb/173/Q173523/
 	
 	=============================================================================
 	
+
+{% endraw %}

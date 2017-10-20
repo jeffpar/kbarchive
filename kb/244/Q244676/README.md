@@ -6,6 +6,8 @@ permalink: /kb/244/Q244676/
 
 ## Q244676: HOWTO: Map, Delete, Enumerate Network Drives w/Scripting Host
 
+{% raw %}
+
 	Article: Q244676
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -101,3 +103,5 @@ permalink: /kb/244/Q244676/
 	
 	=============================================================================
 	
+
+{% endraw %}

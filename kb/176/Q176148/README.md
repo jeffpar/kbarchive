@@ -6,6 +6,8 @@ permalink: /kb/176/Q176148/
 
 ## Q176148: XCON: No NDR on Malformed X.400 Addresses
 
+{% raw %}
+
 	Article: Q176148
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/176/Q176148/
 	
 	=============================================================================
 	
+
+{% endraw %}

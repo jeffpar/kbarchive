@@ -6,6 +6,8 @@ permalink: /kb/120/Q120013/
 
 ## Q120013: Space Simulator Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q120013
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/120/Q120013/
 	
 	=============================================================================
 	
+
+{% endraw %}

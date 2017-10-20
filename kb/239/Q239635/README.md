@@ -6,6 +6,8 @@ permalink: /kb/239/Q239635/
 
 ## Q239635: World Atlas 2000: How to Install Program to Run from Hard Disk
 
+{% raw %}
+
 	Article: Q239635
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -116,3 +118,5 @@ permalink: /kb/239/Q239635/
 	
 	=============================================================================
 	
+
+{% endraw %}

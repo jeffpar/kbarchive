@@ -6,6 +6,8 @@ permalink: /kb/244/Q244364/
 
 ## Q244364: FS 2000 Err Msg: Invalid Page Fault in Module Joy.cpl
 
+{% raw %}
+
 	Article: Q244364
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/244/Q244364/
 	
 	=============================================================================
 	
+
+{% endraw %}

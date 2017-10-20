@@ -6,6 +6,8 @@ permalink: /kb/214/Q214686/
 
 ## Q214686: XCON: MTA PerfMon Counters Continue to Count When 0 Messages
 
+{% raw %}
+
 	Article: Q214686
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -123,3 +125,5 @@ permalink: /kb/214/Q214686/
 	
 	=============================================================================
 	
+
+{% endraw %}

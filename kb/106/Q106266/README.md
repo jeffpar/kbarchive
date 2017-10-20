@@ -6,6 +6,8 @@ permalink: /kb/106/Q106266/
 
 ## Q106266: System Slows After 32-Bit File Access Is Enabled
 
+{% raw %}
+
 	Article: Q106266
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -205,3 +207,5 @@ permalink: /kb/106/Q106266/
 	
 	=============================================================================
 	
+
+{% endraw %}

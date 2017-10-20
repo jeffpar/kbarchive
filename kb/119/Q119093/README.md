@@ -6,6 +6,8 @@ permalink: /kb/119/Q119093/
 
 ## Q119093: Criteria for Determining When the Task Bar Is Hidden
 
+{% raw %}
+
 	Article: Q119093
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -52,3 +54,5 @@ permalink: /kb/119/Q119093/
 	
 	=============================================================================
 	
+
+{% endraw %}

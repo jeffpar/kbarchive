@@ -6,6 +6,8 @@ permalink: /kb/178/Q178041/
 
 ## Q178041: XADM: Event ID 1171 Exception 0xe0010003
 
+{% raw %}
+
 	Article: Q178041
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -62,3 +64,5 @@ permalink: /kb/178/Q178041/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64790/
 
 ## Q64790: _emit Directive in C 6.00 Does Not Function Properly
 
+{% raw %}
+
 	Article: Q64790
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -23,3 +25,5 @@ permalink: /kb/064/Q64790/
 	Microsoft has confirmed this to be a problem in C version 6.00. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

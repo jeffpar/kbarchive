@@ -6,6 +6,8 @@ permalink: /kb/111/Q111947/
 
 ## Q111947: X400: Profile in X400ADM.EXE
 
+{% raw %}
+
 	Article: Q111947
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -148,3 +150,5 @@ permalink: /kb/111/Q111947/
 	
 	=============================================================================
 	
+
+{% endraw %}

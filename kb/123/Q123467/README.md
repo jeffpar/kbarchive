@@ -6,6 +6,8 @@ permalink: /kb/123/Q123467/
 
 ## Q123467: HOWTO: How to Create a New Database in SourceSafe
 
+{% raw %}
+
 	Article: Q123467
 	Product(s): Microsoft SourceSafe
 	Version(s): MACINTOSH:2.0x,3.01,3.02,3.04; MS-DOS:2.0x,3.01,3.02,3.04; WINDOWS:2.0x,3.0,3.01,3.02,3
@@ -64,3 +66,5 @@ permalink: /kb/123/Q123467/
 	
 	=============================================================================
 	
+
+{% endraw %}

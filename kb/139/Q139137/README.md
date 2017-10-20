@@ -6,6 +6,8 @@ permalink: /kb/139/Q139137/
 
 ## Q139137: Invalid or Missing Cache or History Folder
 
+{% raw %}
+
 	Article: Q139137
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.05,1.2,1.3
@@ -77,3 +79,5 @@ permalink: /kb/139/Q139137/
 	
 	=============================================================================
 	
+
+{% endraw %}

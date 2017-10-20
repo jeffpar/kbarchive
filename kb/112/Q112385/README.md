@@ -6,6 +6,8 @@ permalink: /kb/112/Q112385/
 
 ## Q112385: Text Output Using CScrollView Derivative
 
+{% raw %}
+
 	Article: Q112385
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1
@@ -92,3 +94,5 @@ permalink: /kb/112/Q112385/
 	
 	=============================================================================
 	
+
+{% endraw %}

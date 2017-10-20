@@ -6,6 +6,8 @@ permalink: /kb/206/Q206665/
 
 ## Q206665: FIX: Project Settings Not Updated for All Projects
 
+{% raw %}
+
 	Article: Q206665
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0; winnt:6.0
@@ -103,3 +105,5 @@ permalink: /kb/206/Q206665/
 	
 	=============================================================================
 	
+
+{% endraw %}

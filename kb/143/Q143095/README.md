@@ -6,6 +6,8 @@ permalink: /kb/143/Q143095/
 
 ## Q143095: FP: How to Use an HTML Editor Other Than FrontPage Editor
 
+{% raw %}
+
 	Article: Q143095
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -83,3 +85,5 @@ permalink: /kb/143/Q143095/
 	
 	=============================================================================
 	
+
+{% endraw %}

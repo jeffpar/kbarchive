@@ -6,6 +6,8 @@ permalink: /kb/216/Q216231/
 
 ## Q216231: FIX: VB6 App Setup Errors While Copying Files
 
+{% raw %}
+
 	Article: Q216231
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -222,3 +224,5 @@ permalink: /kb/216/Q216231/
 	
 	=============================================================================
 	
+
+{% endraw %}

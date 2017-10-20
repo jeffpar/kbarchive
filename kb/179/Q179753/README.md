@@ -6,6 +6,8 @@ permalink: /kb/179/Q179753/
 
 ## Q179753: HOWTO: Use the Microsoft RemoteData Control
 
+{% raw %}
+
 	Article: Q179753
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:97; winnt:5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/179/Q179753/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171804/
 
 ## Q171804: FIX: Change Event Not Fired When Selecting an Item in DBCombo
 
+{% raw %}
+
 	Article: Q171804
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -67,3 +69,5 @@ permalink: /kb/171/Q171804/
 	
 	=============================================================================
 	
+
+{% endraw %}

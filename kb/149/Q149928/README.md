@@ -6,6 +6,8 @@ permalink: /kb/149/Q149928/
 
 ## Q149928: Xircom Creditcard Ethernet+modem Fails After SP2 or 3
 
+{% raw %}
+
 	Article: Q149928
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -89,3 +91,5 @@ permalink: /kb/149/Q149928/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/326/Q326884/
 
 ## Q326884: MCAD/MCSD Self-Paced Training Kit: Developing Web Applications w
 
+{% raw %}
+
 	Article: Q326884
 	Product(s): Microsoft Press
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/326/Q326884/
 	
 	=============================================================================
 	
+
+{% endraw %}

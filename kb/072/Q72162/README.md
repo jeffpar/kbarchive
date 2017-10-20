@@ -6,6 +6,8 @@ permalink: /kb/072/Q72162/
 
 ## Q72162: MS-DOS 5 README.TXT: Notes on Windows
 
+{% raw %}
+
 	Article: Q72162
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -90,3 +92,5 @@ permalink: /kb/072/Q72162/
 	
 	=============================================================================
 	
+
+{% endraw %}

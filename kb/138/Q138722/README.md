@@ -6,6 +6,8 @@ permalink: /kb/138/Q138722/
 
 ## Q138722: FIX: LoadBarState and SaveBarState Increase .Ini File Size
 
+{% raw %}
+
 	Article: Q138722
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1
@@ -144,3 +146,5 @@ permalink: /kb/138/Q138722/
 	
 	=============================================================================
 	
+
+{% endraw %}

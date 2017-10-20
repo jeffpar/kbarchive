@@ -6,6 +6,8 @@ permalink: /kb/279/Q279009/
 
 ## Q279009: Combat Flight Simulator 2 Err Msg: Font Name Isn't Found...
 
+{% raw %}
+
 	Article: Q279009
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -265,3 +267,5 @@ permalink: /kb/279/Q279009/
 	
 	=============================================================================
 	
+
+{% endraw %}

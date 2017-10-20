@@ -6,6 +6,8 @@ permalink: /kb/175/Q175325/
 
 ## Q175325: PRB: Can't Create VB ActiveX Control with Embedded Licensed Ctrl
 
+{% raw %}
+
 	Article: Q175325
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -50,7 +52,7 @@ permalink: /kb/175/Q175325/
 	  control, it needs to support the following interface GUID:
 	
 	  {0x6e6e9780, 0x165d, 0x11d0, {0xb3, 0xe6, 0x00, 0xa0, 0xc9, 0x0f, 0x27,
-	  0x31} }
+	  0x31}}
 	
 	Visual Basic will call QueryInterface() on the embedded licensed control's
 	IClassFactory for the GUID above. If the embedded control's IClassFactory
@@ -106,3 +108,5 @@ permalink: /kb/175/Q175325/
 	
 	=============================================================================
 	
+
+{% endraw %}

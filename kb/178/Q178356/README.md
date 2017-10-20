@@ -6,6 +6,8 @@ permalink: /kb/178/Q178356/
 
 ## Q178356: Mail Merge May Affect Existing Toolbars
 
+{% raw %}
+
 	Article: Q178356
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/178/Q178356/
 	
 	=============================================================================
 	
+
+{% endraw %}

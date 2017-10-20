@@ -6,6 +6,8 @@ permalink: /kb/072/Q72592/
 
 ## Q72592: SAMPLE: ToolHelp.exe Demonstrates Functionality of ToolHelp.dll
 
+{% raw %}
+
 	Article: Q72592
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/072/Q72592/
 	
 	=============================================================================
 	
+
+{% endraw %}

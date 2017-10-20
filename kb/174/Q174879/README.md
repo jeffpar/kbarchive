@@ -6,6 +6,8 @@ permalink: /kb/174/Q174879/
 
 ## Q174879: FIX: Incorrect Syntax on Keywords May Delete Text
 
+{% raw %}
+
 	Article: Q174879
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/174/Q174879/
 	
 	=============================================================================
 	
+
+{% endraw %}

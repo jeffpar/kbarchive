@@ -6,6 +6,8 @@ permalink: /kb/121/Q121259/
 
 ## Q121259: Comparing Features of Windows Sound System 1.0, 1.0a, and 2.0
 
+{% raw %}
+
 	Article: Q121259
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/121/Q121259/
 	
 	=============================================================================
 	
+
+{% endraw %}

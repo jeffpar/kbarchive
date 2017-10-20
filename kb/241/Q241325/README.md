@@ -6,6 +6,8 @@ permalink: /kb/241/Q241325/
 
 ## Q241325: XCLN: Out of Space Message When Creating or Importing Rules
 
+{% raw %}
+
 	Article: Q241325
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -91,3 +93,5 @@ permalink: /kb/241/Q241325/
 	
 	=============================================================================
 	
+
+{% endraw %}

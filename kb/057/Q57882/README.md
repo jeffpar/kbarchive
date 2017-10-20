@@ -6,6 +6,8 @@ permalink: /kb/057/Q57882/
 
 ## Q57882: BUILDRTM.EXE Requires BASIC 7.00 Component Libraries; SETUP
 
+{% raw %}
+
 	Article: Q57882
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -44,3 +46,5 @@ permalink: /kb/057/Q57882/
 	To install these libraries, run the BASIC PDS 7.00 SETUP.EXE program,
 	select the libraries you want to install (real or protected mode), and
 	then specify that you want to maintain the component libraries.
+
+{% endraw %}

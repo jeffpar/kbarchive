@@ -6,6 +6,8 @@ permalink: /kb/128/Q128638/
 
 ## Q128638: User Logs On To a Blank Windows NT Screen
 
+{% raw %}
+
 	Article: Q128638
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/128/Q128638/
 	
 	=============================================================================
 	
+
+{% endraw %}

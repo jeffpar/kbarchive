@@ -6,6 +6,8 @@ permalink: /kb/266/Q266055/
 
 ## Q266055: Error Message Appears When Service Does Not Start
 
+{% raw %}
+
 	Article: Q266055
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.01,4.01 Service Pack 1
@@ -74,3 +76,5 @@ permalink: /kb/266/Q266055/
 	
 	=============================================================================
 	
+
+{% endraw %}

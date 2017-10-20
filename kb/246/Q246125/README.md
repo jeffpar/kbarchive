@@ -6,6 +6,8 @@ permalink: /kb/246/Q246125/
 
 ## Q246125: XADM: Exchange Server 5.5 Performance Optimizer Verbose Mode
 
+{% raw %}
+
 	Article: Q246125
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -247,3 +249,5 @@ permalink: /kb/246/Q246125/
 	
 	=============================================================================
 	
+
+{% endraw %}

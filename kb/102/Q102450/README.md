@@ -6,6 +6,8 @@ permalink: /kb/102/Q102450/
 
 ## Q102450: Windows NT Uses DLC for IBM Connectivity and Network Printing
 
+{% raw %}
+
 	Article: Q102450
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,4.0
@@ -85,3 +87,5 @@ permalink: /kb/102/Q102450/
 	
 	=============================================================================
 	
+
+{% endraw %}

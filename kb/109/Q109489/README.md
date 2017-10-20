@@ -6,6 +6,8 @@ permalink: /kb/109/Q109489/
 
 ## Q109489: UNDELETE Err Msg: Cannot Load with Neither Option Selected
 
+{% raw %}
+
 	Article: Q109489
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -73,3 +75,5 @@ permalink: /kb/109/Q109489/
 	
 	=============================================================================
 	
+
+{% endraw %}

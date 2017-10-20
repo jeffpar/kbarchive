@@ -6,6 +6,8 @@ permalink: /kb/272/Q272931/
 
 ## Q272931: PRB: Get on a project label returns the wrong version of a file
 
+{% raw %}
+
 	Article: Q272931
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -77,3 +79,5 @@ permalink: /kb/272/Q272931/
 	
 	=============================================================================
 	
+
+{% endraw %}

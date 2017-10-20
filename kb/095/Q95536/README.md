@@ -6,6 +6,8 @@ permalink: /kb/095/Q95536/
 
 ## Q95536: Results of DBLSPACE /CHKDSK
 
+{% raw %}
+
 	Article: Q95536
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -52,3 +54,5 @@ permalink: /kb/095/Q95536/
 	
 	=============================================================================
 	
+
+{% endraw %}

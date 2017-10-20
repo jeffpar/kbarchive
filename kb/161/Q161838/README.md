@@ -6,6 +6,8 @@ permalink: /kb/161/Q161838/
 
 ## Q161838: Programs That Lock 0 Bytes at Byte 0 Lock Entire File
 
+{% raw %}
+
 	Article: Q161838
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/161/Q161838/
 	
 	=============================================================================
 	
+
+{% endraw %}

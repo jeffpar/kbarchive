@@ -6,6 +6,8 @@ permalink: /kb/251/Q251379/
 
 ## Q251379: Encarta 2000 Err Msg: Encarta Encyclopedia Requires at Least 256
 
+{% raw %}
+
 	Article: Q251379
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -174,3 +176,5 @@ permalink: /kb/251/Q251379/
 	
 	=============================================================================
 	
+
+{% endraw %}

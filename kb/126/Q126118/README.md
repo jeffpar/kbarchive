@@ -6,6 +6,8 @@ permalink: /kb/126/Q126118/
 
 ## Q126118: MS WORD 6 SBS FOR WINDOWS: Corrections and Comments
 
+{% raw %}
+
 	Article: Q126118
 	Product(s): Microsoft Press
 	Version(s): 
@@ -273,3 +275,5 @@ permalink: /kb/126/Q126118/
 	
 	=============================================================================
 	
+
+{% endraw %}

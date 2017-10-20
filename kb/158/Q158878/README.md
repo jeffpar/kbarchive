@@ -6,6 +6,8 @@ permalink: /kb/158/Q158878/
 
 ## Q158878: Msbatch.inf Parameters: Installing Network Monitor Agent
 
+{% raw %}
+
 	Article: Q158878
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/158/Q158878/
 	
 	=============================================================================
 	
+
+{% endraw %}

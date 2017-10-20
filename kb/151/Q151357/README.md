@@ -6,6 +6,8 @@ permalink: /kb/151/Q151357/
 
 ## Q151357: Commit Changes Button Always Highlighted in Disk Administrator
 
+{% raw %}
+
 	Article: Q151357
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151357/
 	
 	=============================================================================
 	
+
+{% endraw %}

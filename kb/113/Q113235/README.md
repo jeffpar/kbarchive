@@ -6,6 +6,8 @@ permalink: /kb/113/Q113235/
 
 ## Q113235: Cannot Access Volume Serial Number with 32-Bit File Access
 
+{% raw %}
+
 	Article: Q113235
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -72,3 +74,5 @@ permalink: /kb/113/Q113235/
 	
 	=============================================================================
 	
+
+{% endraw %}

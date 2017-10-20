@@ -6,6 +6,8 @@ permalink: /kb/247/Q247356/
 
 ## Q247356: HOWTO: Execute a SQL Server 7.0 DTS Package from Visual FoxPro
 
+{% raw %}
+
 	Article: Q247356
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -151,3 +153,5 @@ permalink: /kb/247/Q247356/
 	
 	=============================================================================
 	
+
+{% endraw %}

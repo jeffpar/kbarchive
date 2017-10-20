@@ -6,6 +6,8 @@ permalink: /kb/181/Q181714/
 
 ## Q181714: Err Msg: The Initialization Values for MSDN Archive Edition...
 
+{% raw %}
+
 	Article: Q181714
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:3.1,3.11
@@ -115,3 +117,5 @@ permalink: /kb/181/Q181714/
 	
 	=============================================================================
 	
+
+{% endraw %}

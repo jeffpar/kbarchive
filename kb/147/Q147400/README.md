@@ -6,6 +6,8 @@ permalink: /kb/147/Q147400/
 
 ## Q147400: XCLN: How the Check Names Command Works
 
+{% raw %}
+
 	Article: Q147400
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -103,3 +105,5 @@ permalink: /kb/147/Q147400/
 	
 	=============================================================================
 	
+
+{% endraw %}

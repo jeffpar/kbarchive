@@ -6,6 +6,8 @@ permalink: /kb/214/Q214661/
 
 ## Q214661: FIX: Daylight Savings Time Bug in C Run-Time Library
 
+{% raw %}
+
 	Article: Q214661
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1,4.2,5.0,6.0
@@ -132,3 +134,5 @@ permalink: /kb/214/Q214661/
 	
 	=============================================================================
 	
+
+{% endraw %}

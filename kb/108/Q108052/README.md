@@ -6,6 +6,8 @@ permalink: /kb/108/Q108052/
 
 ## Q108052: SMTP: Err Msg: Recipient Unknown
 
+{% raw %}
+
 	Article: Q108052
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -79,3 +81,5 @@ permalink: /kb/108/Q108052/
 	
 	=============================================================================
 	
+
+{% endraw %}

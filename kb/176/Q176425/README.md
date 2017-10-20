@@ -6,6 +6,8 @@ permalink: /kb/176/Q176425/
 
 ## Q176425: XFOR: MS Mail Connector NDRs Messsage Due to Malformed Address
 
+{% raw %}
+
 	Article: Q176425
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -67,3 +69,5 @@ permalink: /kb/176/Q176425/
 	
 	=============================================================================
 	
+
+{% endraw %}

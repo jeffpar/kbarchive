@@ -6,6 +6,8 @@ permalink: /kb/073/Q73194/
 
 ## Q73194: H2INC Does Not Initialize Variables During Conversion
 
+{% raw %}
+
 	Article: Q73194
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/073/Q73194/
 	
 	=============================================================================
 	
+
+{% endraw %}

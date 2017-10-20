@@ -6,6 +6,8 @@ permalink: /kb/142/Q142401/
 
 ## Q142401: PRB: OLE Controls May Be Hidden by Group Box in Dialog
 
+{% raw %}
+
 	Article: Q142401
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/142/Q142401/
 	
 	=============================================================================
 	
+
+{% endraw %}

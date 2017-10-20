@@ -6,6 +6,8 @@ permalink: /kb/158/Q158516/
 
 ## Q158516: Access Violation in RPCRT4.DLL When Pickling Buffered RPC Data
 
+{% raw %}
+
 	Article: Q158516
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/158/Q158516/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153938/
 
 ## Q153938: WINS Server's Version IDs Might not Update
 
+{% raw %}
+
 	Article: Q153938
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -64,3 +66,5 @@ permalink: /kb/153/Q153938/
 	
 	=============================================================================
 	
+
+{% endraw %}

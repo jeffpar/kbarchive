@@ -6,6 +6,8 @@ permalink: /kb/077/Q77253/
 
 ## Q77253: Unable to Access Output Device in Lotus 1-2-3 for Windows
 
+{% raw %}
+
 	Article: Q77253
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/077/Q77253/
 	
 	=============================================================================
 	
+
+{% endraw %}

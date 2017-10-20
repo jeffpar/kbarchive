@@ -6,6 +6,8 @@ permalink: /kb/198/Q198909/
 
 ## Q198909: XLN: Error Msg: Can't Open This Item. Can't Complete Operation
 
+{% raw %}
+
 	Article: Q198909
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.5
@@ -66,3 +68,5 @@ permalink: /kb/198/Q198909/
 	
 	=============================================================================
 	
+
+{% endraw %}

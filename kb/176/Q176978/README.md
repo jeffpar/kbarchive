@@ -6,6 +6,8 @@ permalink: /kb/176/Q176978/
 
 ## Q176978: Error C00000BE When Changing Password
 
+{% raw %}
+
 	Article: Q176978
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,3.51,4.0
@@ -88,3 +90,5 @@ permalink: /kb/176/Q176978/
 	
 	=============================================================================
 	
+
+{% endraw %}

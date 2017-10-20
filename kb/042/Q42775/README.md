@@ -6,6 +6,8 @@ permalink: /kb/042/Q42775/
 
 ## Q42775: QuickC 2.00 Maximum Identifier Length Is 30 Characters
 
+{% raw %}
+
 	Article: Q42775
 	Product(s): See article
 	Version(s): 2.00
@@ -32,3 +34,5 @@ permalink: /kb/042/Q42775/
 	Microsoft has confirmed this to be a problem in QuickC Version 2.00.
 	We are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

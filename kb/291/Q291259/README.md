@@ -6,6 +6,8 @@ permalink: /kb/291/Q291259/
 
 ## Q291259: Running Windows 2000 Professional Comments and Corrections
 
+{% raw %}
+
 	Article: Q291259
 	Product(s): Microsoft Press
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/291/Q291259/
 	
 	=============================================================================
 	
+
+{% endraw %}

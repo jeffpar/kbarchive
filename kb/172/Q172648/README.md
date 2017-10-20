@@ -6,6 +6,8 @@ permalink: /kb/172/Q172648/
 
 ## Q172648: Find File Command Still Available When NoFind Policy Is Used
 
+{% raw %}
+
 	Article: Q172648
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/172/Q172648/
 	
 	=============================================================================
 	
+
+{% endraw %}

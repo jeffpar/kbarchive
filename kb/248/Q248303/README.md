@@ -6,6 +6,8 @@ permalink: /kb/248/Q248303/
 
 ## Q248303: Encarta Encyclopedia: Error Message When You Start Virtual Tour
 
+{% raw %}
+
 	Article: Q248303
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -64,3 +66,5 @@ permalink: /kb/248/Q248303/
 	
 	=============================================================================
 	
+
+{% endraw %}

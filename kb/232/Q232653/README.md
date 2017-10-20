@@ -6,6 +6,8 @@ permalink: /kb/232/Q232653/
 
 ## Q232653: SMSCliToknAcct&amp; Locked Out When Hardware Inventory Is Enabled
 
+{% raw %}
+
 	Article: Q232653
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -188,3 +190,5 @@ permalink: /kb/232/Q232653/
 	
 	=============================================================================
 	
+
+{% endraw %}

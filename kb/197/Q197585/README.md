@@ -6,6 +6,8 @@ permalink: /kb/197/Q197585/
 
 ## Q197585: HOWTO: Cover the Taskbar with a Window in Visual Basic
 
+{% raw %}
+
 	Article: Q197585
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -129,3 +131,5 @@ permalink: /kb/197/Q197585/
 	
 	=============================================================================
 	
+
+{% endraw %}

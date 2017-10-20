@@ -6,6 +6,8 @@ permalink: /kb/082/Q82716/
 
 ## Q82716: Side Effects of an Aborted Windows 3.0 to 3.1 Upgrade
 
+{% raw %}
+
 	Article: Q82716
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -104,3 +106,5 @@ permalink: /kb/082/Q82716/
 	
 	=============================================================================
 	
+
+{% endraw %}

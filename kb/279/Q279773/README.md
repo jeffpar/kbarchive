@@ -6,6 +6,8 @@ permalink: /kb/279/Q279773/
 
 ## Q279773: Combat Flight Simulator 2: Cannot Set Precipitation Type to Snow
 
+{% raw %}
+
 	Article: Q279773
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -37,3 +39,5 @@ permalink: /kb/279/Q279773/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147632/
 
 ## Q147632: BUG: Browsing Template Function Definition Goes to Wrong Place
 
+{% raw %}
+
 	Article: Q147632
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -63,3 +65,5 @@ permalink: /kb/147/Q147632/
 	
 	=============================================================================
 	
+
+{% endraw %}

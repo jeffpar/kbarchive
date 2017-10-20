@@ -6,6 +6,8 @@ permalink: /kb/241/Q241849/
 
 ## Q241849: INFO: More Information on MIDL2362 Warning
 
+{% raw %}
+
 	Article: Q241849
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -75,3 +77,5 @@ permalink: /kb/241/Q241849/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268795/
 
 ## Q268795: Lack of Proper SQL Indexes Causes Slow Software Inventorying
 
+{% raw %}
+
 	Article: Q268795
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -160,3 +162,5 @@ permalink: /kb/268/Q268795/
 	
 	=============================================================================
 	
+
+{% endraw %}

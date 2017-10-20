@@ -6,6 +6,8 @@ permalink: /kb/187/Q187577/
 
 ## Q187577: STOP 0xA Because of Spin Lock in Sfmatalk.sys on DEC Alpha
 
+{% raw %}
+
 	Article: Q187577
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/187/Q187577/
 	
 	=============================================================================
 	
+
+{% endraw %}

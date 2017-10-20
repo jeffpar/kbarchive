@@ -6,6 +6,8 @@ permalink: /kb/092/Q92828/
 
 ## Q92828: Maintaining a Hidden Application
 
+{% raw %}
+
 	Article: Q92828
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -74,3 +76,5 @@ permalink: /kb/092/Q92828/
 	
 	=============================================================================
 	
+
+{% endraw %}

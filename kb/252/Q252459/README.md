@@ -6,6 +6,8 @@ permalink: /kb/252/Q252459/
 
 ## Q252459: Retrieve Properties of User Objects with ADSI and ADO
 
+{% raw %}
+
 	Article: Q252459
 	Product(s): Microsoft Exchange
 	Version(s): 2.5
@@ -431,3 +433,5 @@ permalink: /kb/252/Q252459/
 	
 	=============================================================================
 	
+
+{% endraw %}

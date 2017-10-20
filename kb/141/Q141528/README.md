@@ -6,6 +6,8 @@ permalink: /kb/141/Q141528/
 
 ## Q141528: FIX: Data Designer Validation Text Causes Invalid Page Fault
 
+{% raw %}
+
 	Article: Q141528
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -63,3 +65,5 @@ permalink: /kb/141/Q141528/
 	
 	=============================================================================
 	
+
+{% endraw %}

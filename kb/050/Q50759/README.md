@@ -6,6 +6,8 @@ permalink: /kb/050/Q50759/
 
 ## Q50759: Calling C Run-Time from a Single-Threaded DLL Init Routine
 
+{% raw %}
+
 	Article: Q50759
 	Product(s): See article
 	Version(s): 5.10
@@ -147,3 +149,5 @@ permalink: /kb/050/Q50759/
 	  implib  proj.lib  dll.def
 	
 	  link /CO proj.obj, /NOI,, slibcep.lib proj.lib doscalls.lib/NOD ;
+
+{% endraw %}

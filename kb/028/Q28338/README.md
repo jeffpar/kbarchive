@@ -6,6 +6,8 @@ permalink: /kb/028/Q28338/
 
 ## Q28338: INFO: Return Value from ChangeClipboardChain()
 
+{% raw %}
+
 	Article: Q28338
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -43,3 +45,5 @@ permalink: /kb/028/Q28338/
 	
 	=============================================================================
 	
+
+{% endraw %}

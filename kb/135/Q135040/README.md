@@ -6,6 +6,8 @@ permalink: /kb/135/Q135040/
 
 ## Q135040: FIX: Pack Closes Index File But Does Not Update It
 
+{% raw %}
+
 	Article: Q135040
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -151,3 +153,5 @@ permalink: /kb/135/Q135040/
 	
 	=============================================================================
 	
+
+{% endraw %}

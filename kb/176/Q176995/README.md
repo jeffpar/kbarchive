@@ -6,6 +6,8 @@ permalink: /kb/176/Q176995/
 
 ## Q176995: WD97: IPF Using Linked Image SourceName/SourcePath Property
 
+{% raw %}
+
 	Article: Q176995
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/176/Q176995/
 	
 	=============================================================================
 	
+
+{% endraw %}

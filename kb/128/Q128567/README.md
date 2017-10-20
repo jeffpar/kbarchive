@@ -6,6 +6,8 @@ permalink: /kb/128/Q128567/
 
 ## Q128567: Landscape Orientation Reversed With Postscript Driver
 
+{% raw %}
+
 	Article: Q128567
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -54,3 +56,5 @@ permalink: /kb/128/Q128567/
 	
 	=============================================================================
 	
+
+{% endraw %}

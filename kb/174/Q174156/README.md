@@ -6,6 +6,8 @@ permalink: /kb/174/Q174156/
 
 ## Q174156: HOWTO: Programmatically Launch the Default Internet Browser
 
+{% raw %}
+
 	Article: Q174156
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -128,3 +130,5 @@ permalink: /kb/174/Q174156/
 	
 	=============================================================================
 	
+
+{% endraw %}

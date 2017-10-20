@@ -6,6 +6,8 @@ permalink: /kb/317/Q317049/
 
 ## Q317049: You Cannot Log On After You Remove the Computer from the Domain
 
+{% raw %}
+
 	Article: Q317049
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -111,3 +113,5 @@ permalink: /kb/317/Q317049/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239870/
 
 ## Q239870: RasDial Returns an Invalid Error Code
 
+{% raw %}
+
 	Article: Q239870
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/239/Q239870/
 	
 	=============================================================================
 	
+
+{% endraw %}

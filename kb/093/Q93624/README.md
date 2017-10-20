@@ -6,6 +6,8 @@ permalink: /kb/093/Q93624/
 
 ## Q93624: How to Activate Screen Background Color in FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q93624
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -40,3 +42,5 @@ permalink: /kb/093/Q93624/
 	
 	=============================================================================
 	
+
+{% endraw %}

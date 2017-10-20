@@ -6,6 +6,8 @@ permalink: /kb/193/Q193131/
 
 ## Q193131: XCLN: Using Alias Name in Find Fails to Find Items
 
+{% raw %}
+
 	Article: Q193131
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -97,3 +99,5 @@ permalink: /kb/193/Q193131/
 	
 	=============================================================================
 	
+
+{% endraw %}

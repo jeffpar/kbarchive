@@ -6,6 +6,8 @@ permalink: /kb/237/Q237516/
 
 ## Q237516: Encarta Encyclopedia 2000: Printed Maps Appear Completely Black
 
+{% raw %}
+
 	Article: Q237516
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/237/Q237516/
 	
 	=============================================================================
 	
+
+{% endraw %}

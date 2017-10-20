@@ -6,6 +6,8 @@ permalink: /kb/246/Q246167/
 
 ## Q246167: PRB: Collating Sequence Error Opening XLS as ADO Recordset
 
+{% raw %}
+
 	Article: Q246167
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1 SP2,2.5,2.6,6.0
@@ -117,3 +119,5 @@ permalink: /kb/246/Q246167/
 	
 	=============================================================================
 	
+
+{% endraw %}

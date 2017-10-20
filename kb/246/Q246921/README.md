@@ -6,6 +6,8 @@ permalink: /kb/246/Q246921/
 
 ## Q246921: HTTP 204 Response Returns Message-Body to Client
 
+{% raw %}
+
 	Article: Q246921
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -62,3 +64,5 @@ permalink: /kb/246/Q246921/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140431/
 
 ## Q140431: Compression Agent Detects Errors Even After Running ScanDisk
 
+{% raw %}
+
 	Article: Q140431
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -93,3 +95,5 @@ permalink: /kb/140/Q140431/
 	
 	=============================================================================
 	
+
+{% endraw %}

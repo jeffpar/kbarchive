@@ -6,6 +6,8 @@ permalink: /kb/131/Q131451/
 
 ## Q131451: How to Upgrade SourceSafe Manually
 
+{% raw %}
+
 	Article: Q131451
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.04 3.10 | 3.04 3.10 | 3.04 3.
@@ -69,3 +71,5 @@ permalink: /kb/131/Q131451/
 	
 	=============================================================================
 	
+
+{% endraw %}

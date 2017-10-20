@@ -6,6 +6,8 @@ permalink: /kb/216/Q216985/
 
 ## Q216985: BUG: Scrollbars Not Seen if Objects Placed Past Some Coordinates
 
+{% raw %}
+
 	Article: Q216985
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -146,3 +148,5 @@ permalink: /kb/216/Q216985/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87133/
 
 ## Q87133: LAN Manager 2.1 Upgrade Instructions Incorrect
 
+{% raw %}
+
 	Article: Q87133
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/087/Q87133/
 	
 	=============================================================================
 	
+
+{% endraw %}

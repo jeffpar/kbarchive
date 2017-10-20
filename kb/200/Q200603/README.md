@@ -6,6 +6,8 @@ permalink: /kb/200/Q200603/
 
 ## Q200603: BUG: SMS 2.0 Shows No Version for an SMS Version 1.2 Child Site
 
+{% raw %}
+
 	Article: Q200603
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/200/Q200603/
 	
 	=============================================================================
 	
+
+{% endraw %}

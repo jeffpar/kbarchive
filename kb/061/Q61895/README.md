@@ -6,6 +6,8 @@ permalink: /kb/061/Q61895/
 
 ## Q61895: PPT: How to Use the Mouse as a Slide Show Pen or Arrow
 
+{% raw %}
+
 	Article: Q61895
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:2.0,3.0,4.0; WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -106,3 +108,5 @@ permalink: /kb/061/Q61895/
 	
 	=============================================================================
 	
+
+{% endraw %}

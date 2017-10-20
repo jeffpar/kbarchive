@@ -6,6 +6,8 @@ permalink: /kb/297/Q297851/
 
 ## Q297851: FIX: Syntax Error in Startup Program Causes Fatal Exception
 
+{% raw %}
+
 	Article: Q297851
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -67,3 +69,5 @@ permalink: /kb/297/Q297851/
 	
 	=============================================================================
 	
+
+{% endraw %}

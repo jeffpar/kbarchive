@@ -6,6 +6,8 @@ permalink: /kb/149/Q149579/
 
 ## Q149579: XADM: MTA Error: Database Object Not in Use
 
+{% raw %}
+
 	Article: Q149579
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/149/Q149579/
 	
 	=============================================================================
 	
+
+{% endraw %}

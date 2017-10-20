@@ -6,6 +6,8 @@ permalink: /kb/172/Q172195/
 
 ## Q172195: Service Control Manager Reports Error But No Event ID Is Listed
 
+{% raw %}
+
 	Article: Q172195
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS NT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/172/Q172195/
 	
 	=============================================================================
 	
+
+{% endraw %}

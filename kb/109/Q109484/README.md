@@ -6,6 +6,8 @@ permalink: /kb/109/Q109484/
 
 ## Q109484: BUG: Running Macintosh Project in Windows Causes Error
 
+{% raw %}
+
 	Article: Q109484
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -95,3 +97,5 @@ permalink: /kb/109/Q109484/
 	
 	=============================================================================
 	
+
+{% endraw %}

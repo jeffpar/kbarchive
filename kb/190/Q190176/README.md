@@ -6,6 +6,8 @@ permalink: /kb/190/Q190176/
 
 ## Q190176: BUG: Visual Basic Setup Does Not Re-Register System Files
 
+{% raw %}
+
 	Article: Q190176
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -92,3 +94,5 @@ permalink: /kb/190/Q190176/
 	
 	=============================================================================
 	
+
+{% endraw %}

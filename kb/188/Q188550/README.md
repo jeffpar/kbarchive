@@ -6,6 +6,8 @@ permalink: /kb/188/Q188550/
 
 ## Q188550: BUG: vbKeySeparator Constant Does Not Work
 
+{% raw %}
+
 	Article: Q188550
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -163,3 +165,5 @@ permalink: /kb/188/Q188550/
 	
 	=============================================================================
 	
+
+{% endraw %}

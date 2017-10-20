@@ -6,6 +6,8 @@ permalink: /kb/149/Q149468/
 
 ## Q149468: CSNW Clients May Cause Clipper Index Corruption
 
+{% raw %}
+
 	Article: Q149468
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -80,3 +82,5 @@ permalink: /kb/149/Q149468/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158740/
 
 ## Q158740: Cannot Use Date In &quot;AT&quot; Scheduler In Korean Windows NT Server
 
+{% raw %}
+
 	Article: Q158740
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51 Korean
@@ -48,3 +50,5 @@ permalink: /kb/158/Q158740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64440/
 
 ## Q64440: Internal Compiler Error: '@(#)newcode.c:1.87', Line 604
 
+{% raw %}
+
 	Article: Q64440
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -60,3 +62,5 @@ permalink: /kb/064/Q64440/
 	Since these errors occur if any optimization is turned on, compiling
 	with the /Od optimization switch or using the new optimize pragma to
 	turn off all optimizations is the easiest solution.
+
+{% endraw %}

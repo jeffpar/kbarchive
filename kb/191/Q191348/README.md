@@ -6,6 +6,8 @@ permalink: /kb/191/Q191348/
 
 ## Q191348: SMS: WinNT 3.51 SP5 Upgrade Pkg Not Moving to Executed Commands
 
+{% raw %}
+
 	Article: Q191348
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/191/Q191348/
 	
 	=============================================================================
 	
+
+{% endraw %}

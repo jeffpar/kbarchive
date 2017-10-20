@@ -6,6 +6,8 @@ permalink: /kb/131/Q131681/
 
 ## Q131681: PC DirSync: After Reset, Export/Import Times Still Exist
 
+{% raw %}
+
 	Article: Q131681
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.2
@@ -106,3 +108,5 @@ permalink: /kb/131/Q131681/
 	
 	=============================================================================
 	
+
+{% endraw %}

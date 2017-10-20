@@ -6,6 +6,8 @@ permalink: /kb/138/Q138803/
 
 ## Q138803: SNA Server Admin May Show Incorrect Status for LUs 54 - 106
 
+{% raw %}
+
 	Article: Q138803
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -96,3 +98,5 @@ permalink: /kb/138/Q138803/
 	
 	=============================================================================
 	
+
+{% endraw %}

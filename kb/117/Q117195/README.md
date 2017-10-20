@@ -6,6 +6,8 @@ permalink: /kb/117/Q117195/
 
 ## Q117195: PPT: PowerPoint Readme- Filter Limitations (BMP and WMF)
 
+{% raw %}
+
 	Article: Q117195
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -63,3 +65,5 @@ permalink: /kb/117/Q117195/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34502/
 
 ## Q34502: /NOE Option for Redefinition Error L2044
 
+{% raw %}
+
 	Article: Q34502
 	Product(s): See article
 	Version(s): 3.x 5.x | 5.10
@@ -39,3 +41,5 @@ permalink: /kb/034/Q34502/
 	you will see the following error:
 	
 	L2025 BAR : symbol defined more than once
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198709/
 
 ## Q198709: XADM: Client Cannot Enroll in Exchange Server 5.0 KMS
 
+{% raw %}
+
 	Article: Q198709
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -68,3 +70,5 @@ permalink: /kb/198/Q198709/
 	
 	=============================================================================
 	
+
+{% endraw %}

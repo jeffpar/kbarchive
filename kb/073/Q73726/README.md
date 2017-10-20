@@ -6,6 +6,8 @@ permalink: /kb/073/Q73726/
 
 ## Q73726: Sperry 286 BIOS Versions Earlier Than 1.57 Need an Upgrade
 
+{% raw %}
+
 	Article: Q73726
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/073/Q73726/
 	
 	=============================================================================
 	
+
+{% endraw %}

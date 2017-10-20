@@ -6,6 +6,8 @@ permalink: /kb/152/Q152092/
 
 ## Q152092: DRAGD95.EXE OLE Drag/Drop in Windows 95 Common Controls
 
+{% raw %}
+
 	Article: Q152092
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -166,3 +168,5 @@ permalink: /kb/152/Q152092/
 	
 	=============================================================================
 	
+
+{% endraw %}

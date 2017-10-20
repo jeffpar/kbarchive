@@ -6,6 +6,8 @@ permalink: /kb/274/Q274471/
 
 ## Q274471: MSN Explorer Setup Does Not Recognize Installed Internet Explore
 
+{% raw %}
+
 	Article: Q274471
 	Product(s): The Microsoft Network
 	Version(s): 5,6.0,6.1
@@ -84,3 +86,5 @@ permalink: /kb/274/Q274471/
 	
 	=============================================================================
 	
+
+{% endraw %}

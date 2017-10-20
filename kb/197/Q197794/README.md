@@ -6,6 +6,8 @@ permalink: /kb/197/Q197794/
 
 ## Q197794: WD97: Existing Macros and AutoText Are Not Saved with New Form
 
+{% raw %}
+
 	Article: Q197794
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -77,3 +79,5 @@ permalink: /kb/197/Q197794/
 	
 	=============================================================================
 	
+
+{% endraw %}

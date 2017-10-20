@@ -6,6 +6,8 @@ permalink: /kb/165/Q165982/
 
 ## Q165982: Embedded Fonts Printed Only in RAW Mode
 
+{% raw %}
+
 	Article: Q165982
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/165/Q165982/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31448/
 
 ## Q31448: Array Index Multiplication with Integers Causes Link Error
 
+{% raw %}
+
 	Article: Q31448
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -45,3 +47,5 @@ permalink: /kb/031/Q31448/
 	as long. The following is a code example:
 	
 	   char huge arr[256L*512];
+
+{% endraw %}

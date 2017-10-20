@@ -6,6 +6,8 @@ permalink: /kb/214/Q214593/
 
 ## Q214593: Terminal Server w/ Metaframe ICA Client Can't Autocreate Printer
 
+{% raw %}
+
 	Article: Q214593
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -176,3 +178,5 @@ permalink: /kb/214/Q214593/
 	
 	=============================================================================
 	
+
+{% endraw %}

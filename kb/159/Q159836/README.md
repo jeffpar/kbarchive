@@ -6,6 +6,8 @@ permalink: /kb/159/Q159836/
 
 ## Q159836: XCLN: Dr Watson When Running Exchange on DEC Alpha
 
+{% raw %}
+
 	Article: Q159836
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -73,3 +75,5 @@ permalink: /kb/159/Q159836/
 	
 	=============================================================================
 	
+
+{% endraw %}

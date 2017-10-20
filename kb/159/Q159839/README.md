@@ -6,6 +6,8 @@ permalink: /kb/159/Q159839/
 
 ## Q159839: PRB: Sysdiff Does Not Add Empty Directories
 
+{% raw %}
+
 	Article: Q159839
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/159/Q159839/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157799/
 
 ## Q157799: WD97: Letter Wizard Defaults Stored In Normal Template
 
+{% raw %}
+
 	Article: Q157799
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/157/Q157799/
 	
 	=============================================================================
 	
+
+{% endraw %}

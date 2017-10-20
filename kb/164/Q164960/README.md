@@ -6,6 +6,8 @@ permalink: /kb/164/Q164960/
 
 ## Q164960: XFOR: Exchange Store Stops While Converting SMTP Message
 
+{% raw %}
+
 	Article: Q164960
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -124,3 +126,5 @@ permalink: /kb/164/Q164960/
 	
 	=============================================================================
 	
+
+{% endraw %}

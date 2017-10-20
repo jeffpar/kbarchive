@@ -6,6 +6,8 @@ permalink: /kb/151/Q151413/
 
 ## Q151413: XCON: ContentReturn Requested by Default
 
+{% raw %}
+
 	Article: Q151413
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -115,3 +117,5 @@ permalink: /kb/151/Q151413/
 	
 	=============================================================================
 	
+
+{% endraw %}

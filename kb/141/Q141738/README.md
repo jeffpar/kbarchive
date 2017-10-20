@@ -6,6 +6,8 @@ permalink: /kb/141/Q141738/
 
 ## Q141738: FIX: Report Form to ASCII Truncates Data After Page 11&quot; Mark
 
+{% raw %}
+
 	Article: Q141738
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -77,3 +79,5 @@ permalink: /kb/141/Q141738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112231/
 
 ## Q112231: FAX: FAX Boards Supported in Version 3.0a
 
+{% raw %}
+
 	Article: Q112231
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0a
@@ -48,3 +50,5 @@ permalink: /kb/112/Q112231/
 	
 	=============================================================================
 	
+
+{% endraw %}

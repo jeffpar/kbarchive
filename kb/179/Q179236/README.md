@@ -6,6 +6,8 @@ permalink: /kb/179/Q179236/
 
 ## Q179236: INFO: Using SQLConfigDatasource with MS Oracle ODBC Driver
 
+{% raw %}
+
 	Article: Q179236
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0,2.5,Build 2.573.2927,Build 2.73.7269
@@ -211,3 +213,5 @@ permalink: /kb/179/Q179236/
 	
 	=============================================================================
 	
+
+{% endraw %}

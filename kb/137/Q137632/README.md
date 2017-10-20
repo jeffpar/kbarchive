@@ -6,6 +6,8 @@ permalink: /kb/137/Q137632/
 
 ## Q137632: FIX: OnMessagePending Not Called When a Timer is Active
 
+{% raw %}
+
 	Article: Q137632
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2
@@ -130,3 +132,5 @@ permalink: /kb/137/Q137632/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188597/
 
 ## Q188597: XCON: Delivery Report Discarded Over 1984 X.400 Connector
 
+{% raw %}
+
 	Article: Q188597
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -79,3 +81,5 @@ permalink: /kb/188/Q188597/
 	
 	=============================================================================
 	
+
+{% endraw %}

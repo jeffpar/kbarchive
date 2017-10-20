@@ -6,6 +6,8 @@ permalink: /kb/246/Q246461/
 
 ## Q246461: How to Prevent Validation on a Backup Domain Controller
 
+{% raw %}
+
 	Article: Q246461
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/246/Q246461/
 	
 	=============================================================================
 	
+
+{% endraw %}

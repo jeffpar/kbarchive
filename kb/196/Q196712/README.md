@@ -6,6 +6,8 @@ permalink: /kb/196/Q196712/
 
 ## Q196712: Performance Monitor Hangs on Startup or When Adding Counters
 
+{% raw %}
+
 	Article: Q196712
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/196/Q196712/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138015/
 
 ## Q138015: TN3270 Server Rejects Client Model Types
 
+{% raw %}
+
 	Article: Q138015
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -96,3 +98,5 @@ permalink: /kb/138/Q138015/
 	
 	=============================================================================
 	
+
+{% endraw %}

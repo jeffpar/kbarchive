@@ -6,6 +6,8 @@ permalink: /kb/299/Q299428/
 
 ## Q299428: How to Configure Passport for Multiple Sites on a Single Server
 
+{% raw %}
+
 	Article: Q299428
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -81,3 +83,5 @@ permalink: /kb/299/Q299428/
 	
 	=============================================================================
 	
+
+{% endraw %}

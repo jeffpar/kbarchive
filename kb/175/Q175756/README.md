@@ -6,6 +6,8 @@ permalink: /kb/175/Q175756/
 
 ## Q175756: PRB: Setup Wizard Displays Message Box with '118' and OK Button
 
+{% raw %}
+
 	Article: Q175756
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -80,3 +82,5 @@ permalink: /kb/175/Q175756/
 	
 	=============================================================================
 	
+
+{% endraw %}

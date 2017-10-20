@@ -6,6 +6,8 @@ permalink: /kb/195/Q195738/
 
 ## Q195738: FIX: C1001 When Template Class Is Included in Precompiled Header
 
+{% raw %}
+
 	Article: Q195738
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0sp3,6.0
@@ -86,3 +88,5 @@ permalink: /kb/195/Q195738/
 	
 	=============================================================================
 	
+
+{% endraw %}

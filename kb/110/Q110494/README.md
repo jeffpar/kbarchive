@@ -6,6 +6,8 @@ permalink: /kb/110/Q110494/
 
 ## Q110494: Windows Hangs on Reboot After Installing Sound System 2.0
 
+{% raw %}
+
 	Article: Q110494
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/110/Q110494/
 	
 	=============================================================================
 	
+
+{% endraw %}

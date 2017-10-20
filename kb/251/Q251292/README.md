@@ -6,6 +6,8 @@ permalink: /kb/251/Q251292/
 
 ## Q251292: PRB: Closing a Modal Form Raises an Application Error
 
+{% raw %}
+
 	Article: Q251292
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -84,3 +86,5 @@ permalink: /kb/251/Q251292/
 	
 	=============================================================================
 	
+
+{% endraw %}

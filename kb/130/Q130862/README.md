@@ -6,6 +6,8 @@ permalink: /kb/130/Q130862/
 
 ## Q130862: Unable to Start Quick Recorder as an OLE Server
 
+{% raw %}
+
 	Article: Q130862
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/130/Q130862/
 	
 	=============================================================================
 	
+
+{% endraw %}

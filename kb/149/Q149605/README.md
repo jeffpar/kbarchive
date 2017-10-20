@@ -6,6 +6,8 @@ permalink: /kb/149/Q149605/
 
 ## Q149605: How to Change the TCP Port for IIS Services
 
+{% raw %}
+
 	Article: Q149605
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0,5.0
@@ -101,3 +103,5 @@ permalink: /kb/149/Q149605/
 	
 	=============================================================================
 	
+
+{% endraw %}

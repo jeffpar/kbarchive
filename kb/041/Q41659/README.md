@@ -6,6 +6,8 @@ permalink: /kb/041/Q41659/
 
 ## Q41659: QuickC 2.00 README.DOC: Differences Between NMAKE and MAKE
 
+{% raw %}
+
 	Article: Q41659
 	Product(s): See article
 	Version(s): 2.00
@@ -62,3 +64,5 @@ permalink: /kb/041/Q41659/
 	
 	3. Choose Edit Program List from the Make menu and immediately choose
 	   <Save List>.
+
+{% endraw %}

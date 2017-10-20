@@ -6,6 +6,8 @@ permalink: /kb/036/Q36798/
 
 ## Q36798: Microsoft System Journal M macros Fail
 
+{% raw %}
+
 	Article: Q36798
 	Product(s): See article
 	Version(s): 1.00 1.01 | 1.00 1.01
@@ -57,3 +59,5 @@ permalink: /kb/036/Q36798/
 	
 	bigprint:Alt+z
 	;end of bigfoot macro.
+
+{% endraw %}

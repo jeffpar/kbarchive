@@ -6,6 +6,8 @@ permalink: /kb/010/Q10212/
 
 ## Q10212: INFO: Definition of a Region
 
+{% raw %}
+
 	Article: Q10212
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -70,3 +72,5 @@ permalink: /kb/010/Q10212/
 	
 	=============================================================================
 	
+
+{% endraw %}

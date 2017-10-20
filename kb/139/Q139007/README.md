@@ -6,6 +6,8 @@ permalink: /kb/139/Q139007/
 
 ## Q139007: &quot;Unable to Find&quot; Mastering Visual FoxPro Error Upon Startup
 
+{% raw %}
+
 	Article: Q139007
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/139/Q139007/
 	
 	=============================================================================
 	
+
+{% endraw %}

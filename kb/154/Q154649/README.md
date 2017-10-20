@@ -6,6 +6,8 @@ permalink: /kb/154/Q154649/
 
 ## Q154649: FIX: CSocket Operation Hangs if a Timer is Active
 
+{% raw %}
+
 	Article: Q154649
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -197,3 +199,5 @@ permalink: /kb/154/Q154649/
 	
 	=============================================================================
 	
+
+{% endraw %}

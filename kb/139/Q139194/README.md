@@ -6,6 +6,8 @@ permalink: /kb/139/Q139194/
 
 ## Q139194: Encarta 1994: Problems Printing to the Color StyleWriter 2400
 
+{% raw %}
+
 	Article: Q139194
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -68,3 +70,5 @@ permalink: /kb/139/Q139194/
 	
 	=============================================================================
 	
+
+{% endraw %}

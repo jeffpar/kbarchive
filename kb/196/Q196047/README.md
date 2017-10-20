@@ -6,6 +6,8 @@ permalink: /kb/196/Q196047/
 
 ## Q196047: WD97: SectionPages Field Loses Formatting
 
+{% raw %}
+
 	Article: Q196047
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/196/Q196047/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/253/Q253926/
 
 ## Q253926: Changing SNA Trace File Directory May Not Have Any Effect
 
+{% raw %}
+
 	Article: Q253926
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -122,3 +124,5 @@ permalink: /kb/253/Q253926/
 	
 	=============================================================================
 	
+
+{% endraw %}

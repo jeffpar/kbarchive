@@ -6,6 +6,8 @@ permalink: /kb/136/Q136025/
 
 ## Q136025: How to Use Class Browser to Move Objects from Class to Class
 
+{% raw %}
+
 	Article: Q136025
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/136/Q136025/
 	
 	=============================================================================
 	
+
+{% endraw %}

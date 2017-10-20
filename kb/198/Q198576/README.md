@@ -6,6 +6,8 @@ permalink: /kb/198/Q198576/
 
 ## Q198576: Combat FS: Polygons Are Visible When You Fly Through Fog
 
+{% raw %}
+
 	Article: Q198576
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/198/Q198576/
 	
 	=============================================================================
 	
+
+{% endraw %}

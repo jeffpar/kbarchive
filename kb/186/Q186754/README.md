@@ -6,6 +6,8 @@ permalink: /kb/186/Q186754/
 
 ## Q186754: XWEB: No Send Again Button on NDRs in OWA Client
 
+{% raw %}
+
 	Article: Q186754
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -55,3 +57,5 @@ permalink: /kb/186/Q186754/
 	
 	=============================================================================
 	
+
+{% endraw %}

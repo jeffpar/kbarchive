@@ -6,6 +6,8 @@ permalink: /kb/244/Q244485/
 
 ## Q244485: PC WIN: Outlook 98 Uses MS Mail Postoffice Setting for HOP COUNT
 
+{% raw %}
+
 	Article: Q244485
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:4.0,98
@@ -56,3 +58,5 @@ permalink: /kb/244/Q244485/
 	
 	=============================================================================
 	
+
+{% endraw %}

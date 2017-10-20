@@ -6,6 +6,8 @@ permalink: /kb/261/Q261308/
 
 ## Q261308: Error Message: Stop 3B in Rasdd.dll
 
+{% raw %}
+
 	Article: Q261308
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -82,3 +84,5 @@ permalink: /kb/261/Q261308/
 	
 	=============================================================================
 	
+
+{% endraw %}

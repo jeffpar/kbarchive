@@ -6,6 +6,8 @@ permalink: /kb/155/Q155966/
 
 ## Q155966: Using Elsa Microlink ISDN/TLV34 to Connect to MSN
 
+{% raw %}
+
 	Article: Q155966
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -66,3 +68,5 @@ permalink: /kb/155/Q155966/
 	
 	=============================================================================
 	
+
+{% endraw %}

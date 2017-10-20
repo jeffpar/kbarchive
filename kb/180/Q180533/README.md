@@ -6,6 +6,8 @@ permalink: /kb/180/Q180533/
 
 ## Q180533: HTMLA: Host Header Name Information Not Kept in New Web Site
 
+{% raw %}
+
 	Article: Q180533
 	Product(s): Internet Information Server
 	Version(s): WinNT:4.0
@@ -88,3 +90,5 @@ permalink: /kb/180/Q180533/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/307/Q307821/
 
 ## Q307821: Permissions Lost When Shared Folders Service Is Restarted
 
+{% raw %}
+
 	Article: Q307821
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/307/Q307821/
 	
 	=============================================================================
 	
+
+{% endraw %}

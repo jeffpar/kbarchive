@@ -6,6 +6,8 @@ permalink: /kb/057/Q57640/
 
 ## Q57640: Net Print Job Appears Twice in Print Manager
 
+{% raw %}
+
 	Article: Q57640
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/057/Q57640/
 	
 	=============================================================================
 	
+
+{% endraw %}

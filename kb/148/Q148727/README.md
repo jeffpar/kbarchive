@@ -6,6 +6,8 @@ permalink: /kb/148/Q148727/
 
 ## Q148727: XFOR: Internet Mail Connector Fails to Start
 
+{% raw %}
+
 	Article: Q148727
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -171,3 +173,5 @@ permalink: /kb/148/Q148727/
 	
 	=============================================================================
 	
+
+{% endraw %}

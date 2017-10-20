@@ -6,6 +6,8 @@ permalink: /kb/316/Q316348/
 
 ## Q316348: HOW TO: Add a Printer to a Computer in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q316348
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -113,3 +115,5 @@ permalink: /kb/316/Q316348/
 	
 	=============================================================================
 	
+
+{% endraw %}

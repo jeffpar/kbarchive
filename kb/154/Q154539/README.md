@@ -6,6 +6,8 @@ permalink: /kb/154/Q154539/
 
 ## Q154539: PRB: Including STL.H Causes Compiler Errors
 
+{% raw %}
+
 	Article: Q154539
 	Product(s): Microsoft C Compiler
 	Version(s): 4.20
@@ -79,3 +81,5 @@ permalink: /kb/154/Q154539/
 	
 	=============================================================================
 	
+
+{% endraw %}

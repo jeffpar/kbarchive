@@ -6,6 +6,8 @@ permalink: /kb/271/Q271653/
 
 ## Q271653: XADM: No Public Information Store After Move Server Wizard  Runs
 
+{% raw %}
+
 	Article: Q271653
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -60,3 +62,5 @@ permalink: /kb/271/Q271653/
 	
 	=============================================================================
 	
+
+{% endraw %}

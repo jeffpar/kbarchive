@@ -6,6 +6,8 @@ permalink: /kb/150/Q150738/
 
 ## Q150738: Windows NT Hangs When Logging on After Regional Settings Change
 
+{% raw %}
+
 	Article: Q150738
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/150/Q150738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172326/
 
 ## Q172326: WD97: Spelling Checker Constantly Checks Same Word
 
+{% raw %}
+
 	Article: Q172326
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -134,3 +136,5 @@ permalink: /kb/172/Q172326/
 	
 	=============================================================================
 	
+
+{% endraw %}

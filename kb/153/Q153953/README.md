@@ -6,6 +6,8 @@ permalink: /kb/153/Q153953/
 
 ## Q153953: Log on Locally Permission Not Required for Client Access
 
+{% raw %}
+
 	Article: Q153953
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0
@@ -97,3 +99,5 @@ permalink: /kb/153/Q153953/
 	
 	=============================================================================
 	
+
+{% endraw %}

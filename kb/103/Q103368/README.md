@@ -6,6 +6,8 @@ permalink: /kb/103/Q103368/
 
 ## Q103368: From Command Prompt: &quot;The Name Specified Is Not Recognized...&quot;
 
+{% raw %}
+
 	Article: Q103368
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/103/Q103368/
 	
 	=============================================================================
 	
+
+{% endraw %}

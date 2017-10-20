@@ -6,6 +6,8 @@ permalink: /kb/084/Q84947/
 
 ## Q84947: Xerox Panorama-IME Two-Page Display and Windows 3.1
 
+{% raw %}
+
 	Article: Q84947
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/084/Q84947/
 	
 	=============================================================================
 	
+
+{% endraw %}

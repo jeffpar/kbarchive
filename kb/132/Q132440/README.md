@@ -6,6 +6,8 @@ permalink: /kb/132/Q132440/
 
 ## Q132440: Class Browser: How to Use the ShowMenu and AddIn Methods
 
+{% raw %}
+
 	Article: Q132440
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -120,3 +122,5 @@ permalink: /kb/132/Q132440/
 	
 	=============================================================================
 	
+
+{% endraw %}

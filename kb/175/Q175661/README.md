@@ -6,6 +6,8 @@ permalink: /kb/175/Q175661/
 
 ## Q175661: MSN 2.5 OEM Release Readme.txt File Contents
 
+{% raw %}
+
 	Article: Q175661
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -500,3 +502,5 @@ permalink: /kb/175/Q175661/
 	
 	=============================================================================
 	
+
+{% endraw %}

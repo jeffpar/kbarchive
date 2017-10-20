@@ -6,6 +6,8 @@ permalink: /kb/107/Q107726/
 
 ## Q107726: SNA Server Event 553 Running Novell Requestor for Windows NT
 
+{% raw %}
+
 	Article: Q107726
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -95,3 +97,5 @@ permalink: /kb/107/Q107726/
 	
 	=============================================================================
 	
+
+{% endraw %}

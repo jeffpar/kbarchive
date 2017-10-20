@@ -6,6 +6,8 @@ permalink: /kb/174/Q174697/
 
 ## Q174697: XFOR: Correspondence Between Foreign.nsf and Lmd.&#42;
 
+{% raw %}
+
 	Article: Q174697
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -106,3 +108,5 @@ permalink: /kb/174/Q174697/
 	
 	=============================================================================
 	
+
+{% endraw %}

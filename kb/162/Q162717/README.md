@@ -6,6 +6,8 @@ permalink: /kb/162/Q162717/
 
 ## Q162717: Autodial Settings Lost When Using Roaming Profiles
 
+{% raw %}
+
 	Article: Q162717
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/162/Q162717/
 	
 	=============================================================================
 	
+
+{% endraw %}

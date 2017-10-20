@@ -6,6 +6,8 @@ permalink: /kb/158/Q158389/
 
 ## Q158389: Games: Redraw Problems with ATI Video Cards
 
+{% raw %}
+
 	Article: Q158389
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,3.0
@@ -53,3 +55,5 @@ permalink: /kb/158/Q158389/
 	
 	=============================================================================
 	
+
+{% endraw %}

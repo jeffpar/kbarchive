@@ -6,6 +6,8 @@ permalink: /kb/100/Q100026/
 
 ## Q100026: 3COM: DocErr: 3ComGateDomain Incorrectly Listed as PO1:NET1
 
+{% raw %}
+
 	Article: Q100026
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/100/Q100026/
 	
 	=============================================================================
 	
+
+{% endraw %}

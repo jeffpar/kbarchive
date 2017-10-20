@@ -6,6 +6,8 @@ permalink: /kb/174/Q174284/
 
 ## Q174284: NET TIME Command May Set Incorrect Time
 
+{% raw %}
+
 	Article: Q174284
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95; winnt:3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/174/Q174284/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31936/
 
 ## Q31936: Example of Using SetUEvent, ON UEVENT to Detect Mouse Presence
 
+{% raw %}
+
 	Article: Q31936
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -63,3 +65,5 @@ permalink: /kb/031/Q31936/
 	   m2 = outregs.cx
 	   m3 = outregs.dx
 	END SUB
+
+{% endraw %}

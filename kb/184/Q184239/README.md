@@ -6,6 +6,8 @@ permalink: /kb/184/Q184239/
 
 ## Q184239: FIX: Service Control Manager (Services.exe) Fails
 
+{% raw %}
+
 	Article: Q184239
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/184/Q184239/
 	
 	=============================================================================
 	
+
+{% endraw %}

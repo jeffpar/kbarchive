@@ -6,6 +6,8 @@ permalink: /kb/097/Q97106/
 
 ## Q97106: MS-DOS Upgrade Setup May Not Disable PC-KWIK Disk Cache
 
+{% raw %}
+
 	Article: Q97106
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -50,3 +52,5 @@ permalink: /kb/097/Q97106/
 	
 	=============================================================================
 	
+
+{% endraw %}

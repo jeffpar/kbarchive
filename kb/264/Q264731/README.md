@@ -6,6 +6,8 @@ permalink: /kb/264/Q264731/
 
 ## Q264731: XADM: MAPI Tasks Don't Work with Virus API Anti-Virus Software
 
+{% raw %}
+
 	Article: Q264731
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3,5.5 SP4
@@ -190,3 +192,5 @@ permalink: /kb/264/Q264731/
 	
 	=============================================================================
 	
+
+{% endraw %}

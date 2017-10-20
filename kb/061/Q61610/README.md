@@ -6,6 +6,8 @@ permalink: /kb/061/Q61610/
 
 ## Q61610: Behavior of /Oa and /Ow Safer in C 6.00
 
+{% raw %}
+
 	Article: Q61610
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -131,3 +133,5 @@ permalink: /kb/061/Q61610/
 	
 	For more information see the "Microsoft C Advanced Programming
 	Techniques" manual, Pages 13-15.
+
+{% endraw %}

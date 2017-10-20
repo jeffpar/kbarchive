@@ -6,6 +6,8 @@ permalink: /kb/177/Q177516/
 
 ## Q177516: PRB: ODBCDirect Query Causes Error 3667
 
+{% raw %}
+
 	Article: Q177516
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/177/Q177516/
 	
 	=============================================================================
 	
+
+{% endraw %}

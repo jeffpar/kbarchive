@@ -6,6 +6,8 @@ permalink: /kb/174/Q174850/
 
 ## Q174850: Age of Empires: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q174850
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/174/Q174850/
 	
 	=============================================================================
 	
+
+{% endraw %}

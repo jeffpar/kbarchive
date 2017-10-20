@@ -6,6 +6,8 @@ permalink: /kb/154/Q154740/
 
 ## Q154740: PRB: Error Occurs when Exiting FoxPro Modal Form
 
+{% raw %}
+
 	Article: Q154740
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -71,3 +73,5 @@ permalink: /kb/154/Q154740/
 	
 	=============================================================================
 	
+
+{% endraw %}

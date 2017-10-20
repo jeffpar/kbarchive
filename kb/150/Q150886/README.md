@@ -6,6 +6,8 @@ permalink: /kb/150/Q150886/
 
 ## Q150886: Unsup.exe Finds Commands Not Supported by ODBC Drivers
 
+{% raw %}
+
 	Article: Q150886
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0,2.5,2.6
@@ -83,3 +85,5 @@ permalink: /kb/150/Q150886/
 	
 	=============================================================================
 	
+
+{% endraw %}

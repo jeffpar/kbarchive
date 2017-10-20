@@ -6,6 +6,8 @@ permalink: /kb/178/Q178156/
 
 ## Q178156: XCLN: How to Change the Default Directory Location
 
+{% raw %}
+
 	Article: Q178156
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.01,8.02,8.03
@@ -72,3 +74,5 @@ permalink: /kb/178/Q178156/
 	
 	=============================================================================
 	
+
+{% endraw %}

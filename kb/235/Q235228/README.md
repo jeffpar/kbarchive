@@ -6,6 +6,8 @@ permalink: /kb/235/Q235228/
 
 ## Q235228: XWEB: OWA Stops Responding with Exchange Server 5.5 SP2
 
+{% raw %}
+
 	Article: Q235228
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5; winnt:5.5
@@ -104,3 +106,5 @@ permalink: /kb/235/Q235228/
 	
 	=============================================================================
 	
+
+{% endraw %}

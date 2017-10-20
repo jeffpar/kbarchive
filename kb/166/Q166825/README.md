@@ -6,6 +6,8 @@ permalink: /kb/166/Q166825/
 
 ## Q166825: XADM: Containers Sorted by Directory Name in GAL
 
+{% raw %}
+
 	Article: Q166825
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0;WINDOWS:4.0;Win95:4.0
@@ -48,3 +50,5 @@ permalink: /kb/166/Q166825/
 	
 	=============================================================================
 	
+
+{% endraw %}

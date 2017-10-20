@@ -6,6 +6,8 @@ permalink: /kb/152/Q152874/
 
 ## Q152874: XCON: MTA NDR's All Messages Sent in Year 2000
 
+{% raw %}
+
 	Article: Q152874
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -44,3 +46,5 @@ permalink: /kb/152/Q152874/
 	
 	=============================================================================
 	
+
+{% endraw %}

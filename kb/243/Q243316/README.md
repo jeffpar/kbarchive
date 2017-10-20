@@ -6,6 +6,8 @@ permalink: /kb/243/Q243316/
 
 ## Q243316: RAS with Multiple-Port Digi Adapter Does Not Answer Calls
 
+{% raw %}
+
 	Article: Q243316
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/243/Q243316/
 	
 	=============================================================================
 	
+
+{% endraw %}

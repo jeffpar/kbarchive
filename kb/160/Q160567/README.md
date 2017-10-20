@@ -6,6 +6,8 @@ permalink: /kb/160/Q160567/
 
 ## Q160567: SMS: Updating Package Contents Requires Job
 
+{% raw %}
+
 	Article: Q160567
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/160/Q160567/
 	
 	=============================================================================
 	
+
+{% endraw %}

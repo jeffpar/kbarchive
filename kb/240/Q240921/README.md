@@ -6,6 +6,8 @@ permalink: /kb/240/Q240921/
 
 ## Q240921: Smsapm32 Consumes 100 Percent CPU Time on Windows NT SMS Clients
 
+{% raw %}
+
 	Article: Q240921
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -121,3 +123,5 @@ permalink: /kb/240/Q240921/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164907/
 
 ## Q164907: Backup Host Account Cache Service Hangs on Startup on WinNT BDC
 
+{% raw %}
+
 	Article: Q164907
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/164/Q164907/
 	
 	=============================================================================
 	
+
+{% endraw %}

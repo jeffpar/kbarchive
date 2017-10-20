@@ -6,6 +6,8 @@ permalink: /kb/121/Q121210/
 
 ## Q121210: MIDISX.EXE Demos MIDI System Exclusive Communication
 
+{% raw %}
+
 	Article: Q121210
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -62,3 +64,5 @@ permalink: /kb/121/Q121210/
 	
 	=============================================================================
 	
+
+{% endraw %}

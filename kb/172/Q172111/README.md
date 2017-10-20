@@ -6,6 +6,8 @@ permalink: /kb/172/Q172111/
 
 ## Q172111: FIX: VB5 Focus Not Returned to MDI Form After a Dialog Is Shown
 
+{% raw %}
+
 	Article: Q172111
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/172/Q172111/
 	
 	=============================================================================
 	
+
+{% endraw %}

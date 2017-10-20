@@ -6,6 +6,8 @@ permalink: /kb/031/Q31151/
 
 ## Q31151: &quot;Path/File Access Error&quot;; OPEN FOR APPEND ACCESS WRITE
 
+{% raw %}
+
 	Article: Q31151
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/031/Q31151/
 	        WRITE #1, "hello", k
 	NEXT k
 	close #1
+
+{% endraw %}

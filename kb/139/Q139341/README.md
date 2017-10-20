@@ -6,6 +6,8 @@ permalink: /kb/139/Q139341/
 
 ## Q139341: FTP Server Interaction with Guest Account
 
+{% raw %}
+
 	Article: Q139341
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -82,3 +84,5 @@ permalink: /kb/139/Q139341/
 	
 	=============================================================================
 	
+
+{% endraw %}

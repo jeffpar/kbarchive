@@ -6,6 +6,8 @@ permalink: /kb/242/Q242926/
 
 ## Q242926: Duplicate Client Configuration Request Stream in Ccrretry.box
 
+{% raw %}
+
 	Article: Q242926
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -84,3 +86,5 @@ permalink: /kb/242/Q242926/
 	
 	=============================================================================
 	
+
+{% endraw %}

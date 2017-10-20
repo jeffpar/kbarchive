@@ -6,6 +6,8 @@ permalink: /kb/182/Q182900/
 
 ## Q182900: XADM: Windows NT Account Is Able To Access All Mailboxes
 
+{% raw %}
+
 	Article: Q182900
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/182/Q182900/
 	
 	=============================================================================
 	
+
+{% endraw %}

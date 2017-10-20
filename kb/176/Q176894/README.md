@@ -6,6 +6,8 @@ permalink: /kb/176/Q176894/
 
 ## Q176894: HOWTO: Append Data from a Single Sheet of an Excel Workbook
 
+{% raw %}
+
 	Article: Q176894
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/176/Q176894/
 	
 	=============================================================================
 	
+
+{% endraw %}

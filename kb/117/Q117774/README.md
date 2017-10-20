@@ -6,6 +6,8 @@ permalink: /kb/117/Q117774/
 
 ## Q117774: How to Identify the Font Types Available on a Macintosh
 
+{% raw %}
+
 	Article: Q117774
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -82,3 +84,5 @@ permalink: /kb/117/Q117774/
 	
 	=============================================================================
 	
+
+{% endraw %}

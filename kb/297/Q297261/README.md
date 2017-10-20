@@ -6,6 +6,8 @@ permalink: /kb/297/Q297261/
 
 ## Q297261: IIS 5: SMTP/NNTP Virtual Server Missing in ISM
 
+{% raw %}
+
 	Article: Q297261
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -70,3 +72,5 @@ permalink: /kb/297/Q297261/
 	
 	=============================================================================
 	
+
+{% endraw %}

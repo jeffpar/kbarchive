@@ -6,6 +6,8 @@ permalink: /kb/182/Q182152/
 
 ## Q182152: FIX: StillExecuting Property Returns Incorrect Value
 
+{% raw %}
+
 	Article: Q182152
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -110,3 +112,5 @@ permalink: /kb/182/Q182152/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/308/Q308309/
 
 ## Q308309: Using the Get Response Time Utility GETRT.exe
 
+{% raw %}
+
 	Article: Q308309
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -112,3 +114,5 @@ permalink: /kb/308/Q308309/
 	
 	=============================================================================
 	
+
+{% endraw %}

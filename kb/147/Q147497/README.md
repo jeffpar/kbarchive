@@ -6,6 +6,8 @@ permalink: /kb/147/Q147497/
 
 ## Q147497: Matrox Video Driver May Fail on Alpha-based Computers
 
+{% raw %}
+
 	Article: Q147497
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/147/Q147497/
 	
 	=============================================================================
 	
+
+{% endraw %}

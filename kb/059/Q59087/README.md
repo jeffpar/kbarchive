@@ -6,6 +6,8 @@ permalink: /kb/059/Q59087/
 
 ## Q59087: Determining Size of Memory Block Referenced by a Pointer
 
+{% raw %}
+
 	Article: Q59087
 	Product(s): See article
 	Version(s): 5.00   | 5.10
@@ -119,3 +121,5 @@ permalink: /kb/059/Q59087/
 	allocated block. Actually, this is an expected result. Malloc() always
 	allocates even-byte amounts as a result of PC architecture.
 	Consequently, msize()'s return value always is an even amount.
+
+{% endraw %}

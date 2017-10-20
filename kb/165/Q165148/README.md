@@ -6,6 +6,8 @@ permalink: /kb/165/Q165148/
 
 ## Q165148: BUG: TN3270 Server Disconnects Clients When a Popup Message Occu
 
+{% raw %}
+
 	Article: Q165148
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -71,3 +73,5 @@ permalink: /kb/165/Q165148/
 	
 	=============================================================================
 	
+
+{% endraw %}

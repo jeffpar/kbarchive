@@ -6,6 +6,8 @@ permalink: /kb/193/Q193396/
 
 ## Q193396: Cannot Repartition Disk Space During Windows NT Setup
 
+{% raw %}
+
 	Article: Q193396
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/193/Q193396/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107417/
 
 ## Q107417: PRB: &quot;Error Creating OLE Object&quot; with APPEND GENERAL
 
+{% raw %}
+
 	Article: Q107417
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -64,3 +66,5 @@ permalink: /kb/107/Q107417/
 	
 	=============================================================================
 	
+
+{% endraw %}

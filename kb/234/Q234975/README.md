@@ -6,6 +6,8 @@ permalink: /kb/234/Q234975/
 
 ## Q234975: PRB: Error C0042116: No Write Access to Destination URL
 
+{% raw %}
+
 	Article: Q234975
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/234/Q234975/
 	
 	=============================================================================
 	
+
+{% endraw %}

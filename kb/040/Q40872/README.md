@@ -6,6 +6,8 @@ permalink: /kb/040/Q40872/
 
 ## Q40872: Some Coprocessor Assembler Instructions Are Not Emulated
 
+{% raw %}
+
 	Article: Q40872
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -69,3 +71,5 @@ permalink: /kb/040/Q40872/
 	
 	Also, some of the No-Wait forms of instructions are not emulated, such
 	as FNSTENV and FNINIT.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152164/
 
 ## Q152164: TN3270/E Server Service Incorrectly Handles Courtesy Acks
 
+{% raw %}
+
 	Article: Q152164
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -143,3 +145,5 @@ permalink: /kb/152/Q152164/
 	
 	=============================================================================
 	
+
+{% endraw %}

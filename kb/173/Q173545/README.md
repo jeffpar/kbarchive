@@ -6,6 +6,8 @@ permalink: /kb/173/Q173545/
 
 ## Q173545: XADM: Exclude Newsgroup Button Is Disabled
 
+{% raw %}
+
 	Article: Q173545
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -49,3 +51,5 @@ permalink: /kb/173/Q173545/
 	
 	=============================================================================
 	
+
+{% endraw %}

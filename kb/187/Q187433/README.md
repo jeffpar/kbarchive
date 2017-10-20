@@ -6,6 +6,8 @@ permalink: /kb/187/Q187433/
 
 ## Q187433: Messages Sent From TSAdmin Display While Session Is Locked
 
+{% raw %}
+
 	Article: Q187433
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/187/Q187433/
 	
 	=============================================================================
 	
+
+{% endraw %}

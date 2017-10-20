@@ -6,6 +6,8 @@ permalink: /kb/182/Q182915/
 
 ## Q182915: 3270 Emulator Hangs and Returns X'1003' Error to Mainframe
 
+{% raw %}
+
 	Article: Q182915
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -106,3 +108,5 @@ permalink: /kb/182/Q182915/
 	
 	=============================================================================
 	
+
+{% endraw %}

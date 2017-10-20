@@ -6,6 +6,8 @@ permalink: /kb/184/Q184757/
 
 ## Q184757: Programs on Pan-Chinese Windows NT May Use Fixed Font for Menus
 
+{% raw %}
+
 	Article: Q184757
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/184/Q184757/
 	
 	=============================================================================
 	
+
+{% endraw %}

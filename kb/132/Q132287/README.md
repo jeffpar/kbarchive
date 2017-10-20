@@ -6,6 +6,8 @@ permalink: /kb/132/Q132287/
 
 ## Q132287: 3Com 3C509B ODI Driver Fails to Load in Windows 95
 
+{% raw %}
+
 	Article: Q132287
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/132/Q132287/
 	
 	=============================================================================
 	
+
+{% endraw %}

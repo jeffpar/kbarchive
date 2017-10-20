@@ -6,6 +6,8 @@ permalink: /kb/168/Q168958/
 
 ## Q168958: HOWTO: Exporting STL Components Inside &amp; Outside of a Class
 
+{% raw %}
+
 	Article: Q168958
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -271,3 +273,5 @@ permalink: /kb/168/Q168958/
 	
 	=============================================================================
 	
+
+{% endraw %}

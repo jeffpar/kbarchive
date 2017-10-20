@@ -6,6 +6,8 @@ permalink: /kb/121/Q121797/
 
 ## Q121797: PC WSPlus:  Standard Response Buttons Unavailable
 
+{% raw %}
+
 	Article: Q121797
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,3.2,3.2a
@@ -66,3 +68,5 @@ permalink: /kb/121/Q121797/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246019/
 
 ## Q246019: Localstart.asp Not Display Browsing Local Computer With Netscape
 
+{% raw %}
+
 	Article: Q246019
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -107,3 +109,5 @@ permalink: /kb/246/Q246019/
 	
 	=============================================================================
 	
+
+{% endraw %}

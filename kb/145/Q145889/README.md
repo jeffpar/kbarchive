@@ -6,6 +6,8 @@ permalink: /kb/145/Q145889/
 
 ## Q145889: INFO: Why Floating Point Numbers May Lose Precision
 
+{% raw %}
+
 	Article: Q145889
 	Product(s): Microsoft C Compiler
 	Version(s): windows:1.00,1.50; winnt:1.00,2.00,4.00
@@ -115,3 +117,5 @@ permalink: /kb/145/Q145889/
 	
 	=============================================================================
 	
+
+{% endraw %}

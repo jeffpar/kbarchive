@@ -6,6 +6,8 @@ permalink: /kb/164/Q164905/
 
 ## Q164905: Can't Find PDC When Creating new Host Security Domain
 
+{% raw %}
+
 	Article: Q164905
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/164/Q164905/
 	
 	=============================================================================
 	
+
+{% endraw %}

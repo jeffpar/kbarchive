@@ -6,6 +6,8 @@ permalink: /kb/135/Q135462/
 
 ## Q135462: TCPIP-32 on Client with IPXODI Can Only Ping Itself
 
+{% raw %}
+
 	Article: Q135462
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a,3.11b; WINDOWS:95
@@ -84,3 +86,5 @@ permalink: /kb/135/Q135462/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186303/
 
 ## Q186303: NTbackup Reports Drive Verify as Informational or Error Message
 
+{% raw %}
+
 	Article: Q186303
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/186/Q186303/
 	
 	=============================================================================
 	
+
+{% endraw %}

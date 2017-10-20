@@ -6,6 +6,8 @@ permalink: /kb/311/Q311903/
 
 ## Q311903: Cannot Release Transport After You Send Async and Sync Notes
 
+{% raw %}
+
 	Article: Q311903
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/311/Q311903/
 	
 	=============================================================================
 	
+
+{% endraw %}

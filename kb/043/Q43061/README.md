@@ -6,6 +6,8 @@ permalink: /kb/043/Q43061/
 
 ## Q43061: Optimization Problem with SHIFTing and ANDing
 
+{% raw %}
+
 	Article: Q43061
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -58,3 +60,5 @@ permalink: /kb/043/Q43061/
 	    usResult = (usStart << usShift) & MASK;
 	    printf( "Result #2: %4.4X\n", usResult );
 	}
+
+{% endraw %}

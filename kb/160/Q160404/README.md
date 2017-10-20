@@ -6,6 +6,8 @@ permalink: /kb/160/Q160404/
 
 ## Q160404: Madge EISA Stops Responding on Alpha in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q160404
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160404/
 	
 	=============================================================================
 	
+
+{% endraw %}

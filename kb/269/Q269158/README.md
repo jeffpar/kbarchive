@@ -6,6 +6,8 @@ permalink: /kb/269/Q269158/
 
 ## Q269158: XCON: Message Transfer Agent Stops Responding in emsmta!onpugtck
 
+{% raw %}
+
 	Article: Q269158
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -77,3 +79,5 @@ permalink: /kb/269/Q269158/
 	
 	=============================================================================
 	
+
+{% endraw %}

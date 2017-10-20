@@ -6,6 +6,8 @@ permalink: /kb/166/Q166609/
 
 ## Q166609: XFOR: Unprotected Global Variables in MSMI
 
+{% raw %}
+
 	Article: Q166609
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/166/Q166609/
 	
 	=============================================================================
 	
+
+{% endraw %}

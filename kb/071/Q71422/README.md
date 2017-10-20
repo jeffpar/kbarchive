@@ -6,6 +6,8 @@ permalink: /kb/071/Q71422/
 
 ## Q71422: Maintaining a Library with NMAKE
 
+{% raw %}
+
 	Article: Q71422
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.01,1.11,1.12,1.13,1.2,1.21,1.3,1.4
@@ -165,3 +167,5 @@ permalink: /kb/071/Q71422/
 	
 	=============================================================================
 	
+
+{% endraw %}

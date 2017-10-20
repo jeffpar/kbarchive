@@ -6,6 +6,8 @@ permalink: /kb/143/Q143365/
 
 ## Q143365: 3D Movie Maker: How to Move Sounds Between Movies
 
+{% raw %}
+
 	Article: Q143365
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -121,3 +123,5 @@ permalink: /kb/143/Q143365/
 	
 	=============================================================================
 	
+
+{% endraw %}

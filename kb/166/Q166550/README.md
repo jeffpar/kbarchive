@@ -6,6 +6,8 @@ permalink: /kb/166/Q166550/
 
 ## Q166550: XCLN: Active Messaging App Running as Service Fails
 
+{% raw %}
+
 	Article: Q166550
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -64,3 +66,5 @@ permalink: /kb/166/Q166550/
 	
 	=============================================================================
 	
+
+{% endraw %}

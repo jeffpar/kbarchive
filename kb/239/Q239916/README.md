@@ -6,6 +6,8 @@ permalink: /kb/239/Q239916/
 
 ## Q239916: FIX: ATL ActiveX Fails on Win95 when Hosting ActiveX Controls
 
+{% raw %}
+
 	Article: Q239916
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -117,3 +119,5 @@ permalink: /kb/239/Q239916/
 	
 	=============================================================================
 	
+
+{% endraw %}

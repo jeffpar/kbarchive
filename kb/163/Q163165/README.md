@@ -6,6 +6,8 @@ permalink: /kb/163/Q163165/
 
 ## Q163165: DNS Name Resolution May Not Work On Diskless Workstation
 
+{% raw %}
+
 	Article: Q163165
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -102,3 +104,5 @@ permalink: /kb/163/Q163165/
 	
 	=============================================================================
 	
+
+{% endraw %}

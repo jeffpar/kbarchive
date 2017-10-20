@@ -6,6 +6,8 @@ permalink: /kb/185/Q185454/
 
 ## Q185454: HOWTO: Shutdown an Instance of VFP with a Window Caption
 
+{% raw %}
+
 	Article: Q185454
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -108,3 +110,5 @@ permalink: /kb/185/Q185454/
 	
 	=============================================================================
 	
+
+{% endraw %}

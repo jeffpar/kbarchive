@@ -6,6 +6,8 @@ permalink: /kb/092/Q92938/
 
 ## Q92938: Packard Bell Packmate Requires HIMEM.SYS /m:1
 
+{% raw %}
+
 	Article: Q92938
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/092/Q92938/
 	
 	=============================================================================
 	
+
+{% endraw %}

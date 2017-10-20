@@ -6,6 +6,8 @@ permalink: /kb/104/Q104995/
 
 ## Q104995: Using SCSI Devices that Require Device Drivers
 
+{% raw %}
+
 	Article: Q104995
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -84,3 +86,5 @@ permalink: /kb/104/Q104995/
 	
 	=============================================================================
 	
+
+{% endraw %}

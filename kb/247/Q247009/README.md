@@ -6,6 +6,8 @@ permalink: /kb/247/Q247009/
 
 ## Q247009: XIMS: Exchange Server 5.5 Post-SP3 Connector for cc:Mail Fixes
 
+{% raw %}
+
 	Article: Q247009
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/247/Q247009/
 	
 	=============================================================================
 	
+
+{% endraw %}

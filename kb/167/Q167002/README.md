@@ -6,6 +6,8 @@ permalink: /kb/167/Q167002/
 
 ## Q167002: XWEB: Limitations of the Active Server Components
 
+{% raw %}
+
 	Article: Q167002
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -98,3 +100,5 @@ permalink: /kb/167/Q167002/
 	
 	=============================================================================
 	
+
+{% endraw %}

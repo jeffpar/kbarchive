@@ -6,6 +6,8 @@ permalink: /kb/132/Q132878/
 
 ## Q132878: PC Ext: START Status Message on External
 
+{% raw %}
+
 	Article: Q132878
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -55,3 +57,5 @@ permalink: /kb/132/Q132878/
 	
 	=============================================================================
 	
+
+{% endraw %}

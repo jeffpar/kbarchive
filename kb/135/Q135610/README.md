@@ -6,6 +6,8 @@ permalink: /kb/135/Q135610/
 
 ## Q135610: How to Use the MoverLists Object Class with a Table Field
 
+{% raw %}
+
 	Article: Q135610
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/135/Q135610/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190069/
 
 ## Q190069: HOWTO: Showing Print Preview as MDI Child of Top-Level Form
 
+{% raw %}
+
 	Article: Q190069
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -185,3 +187,5 @@ permalink: /kb/190/Q190069/
 	
 	=============================================================================
 	
+
+{% endraw %}

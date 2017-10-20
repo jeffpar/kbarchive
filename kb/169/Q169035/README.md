@@ -6,6 +6,8 @@ permalink: /kb/169/Q169035/
 
 ## Q169035: Windows 95 WinSock Update to Improve Multihoming Support
 
+{% raw %}
+
 	Article: Q169035
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0
@@ -110,3 +112,5 @@ permalink: /kb/169/Q169035/
 	
 	=============================================================================
 	
+
+{% endraw %}

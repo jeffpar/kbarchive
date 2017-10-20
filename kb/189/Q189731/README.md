@@ -6,6 +6,8 @@ permalink: /kb/189/Q189731/
 
 ## Q189731: XFOR: When does the Message Get Archived?
 
+{% raw %}
+
 	Article: Q189731
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -77,3 +79,5 @@ permalink: /kb/189/Q189731/
 	
 	=============================================================================
 	
+
+{% endraw %}

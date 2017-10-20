@@ -6,6 +6,8 @@ permalink: /kb/194/Q194750/
 
 ## Q194750: XCON: Message Sticks in MTA Queue While Other Messages Flow By
 
+{% raw %}
+
 	Article: Q194750
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -101,3 +103,5 @@ permalink: /kb/194/Q194750/
 	
 	=============================================================================
 	
+
+{% endraw %}

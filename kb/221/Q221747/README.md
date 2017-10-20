@@ -6,6 +6,8 @@ permalink: /kb/221/Q221747/
 
 ## Q221747: FIX:C0000005 Fatal Error Passing FGETS() a String &gt; 256 chars
 
+{% raw %}
+
 	Article: Q221747
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -83,3 +85,5 @@ permalink: /kb/221/Q221747/
 	
 	=============================================================================
 	
+
+{% endraw %}

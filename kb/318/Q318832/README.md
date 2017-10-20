@@ -6,6 +6,8 @@ permalink: /kb/318/Q318832/
 
 ## Q318832: PRB: Run-Time Error 8015 If You Try to Open the Serial Port
 
+{% raw %}
+
 	Article: Q318832
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -118,3 +120,5 @@ permalink: /kb/318/Q318832/
 	
 	=============================================================================
 	
+
+{% endraw %}

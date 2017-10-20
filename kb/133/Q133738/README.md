@@ -6,6 +6,8 @@ permalink: /kb/133/Q133738/
 
 ## Q133738: How to Display Grid-Based Logical Fields as Other than T or F
 
+{% raw %}
+
 	Article: Q133738
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -109,3 +111,5 @@ permalink: /kb/133/Q133738/
 	
 	=============================================================================
 	
+
+{% endraw %}

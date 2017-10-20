@@ -6,6 +6,8 @@ permalink: /kb/038/Q38790/
 
 ## Q38790: Error L1081 Out of Space for Run File
 
+{% raw %}
+
 	Article: Q38790
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -33,3 +35,5 @@ permalink: /kb/038/Q38790/
 	error, or LINK if there is no input file. If the input file is an OBJ
 	or LIB file and has a module name, the module name is enclosed in
 	parentheses.
+
+{% endraw %}

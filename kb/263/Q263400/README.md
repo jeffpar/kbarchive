@@ -6,6 +6,8 @@ permalink: /kb/263/Q263400/
 
 ## Q263400: Status Message Viewer Shows Application Error Deleting Messages
 
+{% raw %}
+
 	Article: Q263400
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/263/Q263400/
 	
 	=============================================================================
 	
+
+{% endraw %}

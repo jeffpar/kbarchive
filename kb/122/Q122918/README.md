@@ -6,6 +6,8 @@ permalink: /kb/122/Q122918/
 
 ## Q122918: Golf 2.0 GROWSTUB ErrMsg: An Error Has Occurred in Your App...
 
+{% raw %}
+
 	Article: Q122918
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0,7.0
@@ -65,3 +67,5 @@ permalink: /kb/122/Q122918/
 	
 	=============================================================================
 	
+
+{% endraw %}

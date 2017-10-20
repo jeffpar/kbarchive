@@ -6,6 +6,8 @@ permalink: /kb/121/Q121869/
 
 ## Q121869: Mouse Stops Responding After Idle Period
 
+{% raw %}
+
 	Article: Q121869
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/121/Q121869/
 	
 	=============================================================================
 	
+
+{% endraw %}

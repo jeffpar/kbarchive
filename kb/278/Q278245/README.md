@@ -6,6 +6,8 @@ permalink: /kb/278/Q278245/
 
 ## Q278245: 4-Part Linked Server Queries via DB2OLEDB May Cause Exception
 
+{% raw %}
+
 	Article: Q278245
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3
@@ -68,3 +70,5 @@ permalink: /kb/278/Q278245/
 	
 	=============================================================================
 	
+
+{% endraw %}

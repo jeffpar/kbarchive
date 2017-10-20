@@ -6,6 +6,8 @@ permalink: /kb/142/Q142613/
 
 ## Q142613: System Control Application Shows Insufficient Memory Dialog Box
 
+{% raw %}
+
 	Article: Q142613
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142613/
 	
 	=============================================================================
 	
+
+{% endraw %}

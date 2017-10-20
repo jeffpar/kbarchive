@@ -6,6 +6,8 @@ permalink: /kb/152/Q152705/
 
 ## Q152705: Multihomed WINS Servers Send Name Query Responses
 
+{% raw %}
+
 	Article: Q152705
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP4
@@ -88,3 +90,5 @@ permalink: /kb/152/Q152705/
 	
 	=============================================================================
 	
+
+{% endraw %}

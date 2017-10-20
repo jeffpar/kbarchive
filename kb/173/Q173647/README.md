@@ -6,6 +6,8 @@ permalink: /kb/173/Q173647/
 
 ## Q173647: INFO: Programmer's Guide to Using ADO in Visual Basic
 
+{% raw %}
+
 	Article: Q173647
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/173/Q173647/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191684/
 
 ## Q191684: PRB: Setup Wizard Leaves 200KB of Disk Space on 1.44 Floppies
 
+{% raw %}
+
 	Article: Q191684
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/191/Q191684/
 	
 	=============================================================================
 	
+
+{% endraw %}

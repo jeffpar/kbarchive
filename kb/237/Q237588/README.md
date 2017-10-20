@@ -6,6 +6,8 @@ permalink: /kb/237/Q237588/
 
 ## Q237588: XFOR: cc:Mail Connector Dirsync Issues
 
+{% raw %}
+
 	Article: Q237588
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -76,3 +78,5 @@ permalink: /kb/237/Q237588/
 	
 	=============================================================================
 	
+
+{% endraw %}

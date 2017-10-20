@@ -6,6 +6,8 @@ permalink: /kb/152/Q152076/
 
 ## Q152076: Browser Returns Truncated List of Resources
 
+{% raw %}
+
 	Article: Q152076
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -71,3 +73,5 @@ permalink: /kb/152/Q152076/
 	
 	=============================================================================
 	
+
+{% endraw %}

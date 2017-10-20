@@ -6,6 +6,8 @@ permalink: /kb/183/Q183445/
 
 ## Q183445: Etk50pid.exe Incorrect Product ID Displayed in About Box
 
+{% raw %}
+
 	Article: Q183445
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/183/Q183445/
 	
 	=============================================================================
 	
+
+{% endraw %}

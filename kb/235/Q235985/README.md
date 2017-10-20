@@ -6,6 +6,8 @@ permalink: /kb/235/Q235985/
 
 ## Q235985: INFO: Error Codes for VFPCOM Utility
 
+{% raw %}
+
 	Article: Q235985
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -85,3 +87,5 @@ permalink: /kb/235/Q235985/
 	
 	=============================================================================
 	
+
+{% endraw %}

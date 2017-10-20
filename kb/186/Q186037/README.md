@@ -6,6 +6,8 @@ permalink: /kb/186/Q186037/
 
 ## Q186037: OFF97: Alki Language Proofing Tools Available
 
+{% raw %}
+
 	Article: Q186037
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -161,3 +163,5 @@ permalink: /kb/186/Q186037/
 	
 	=============================================================================
 	
+
+{% endraw %}

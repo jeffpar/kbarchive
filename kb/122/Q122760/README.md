@@ -6,6 +6,8 @@ permalink: /kb/122/Q122760/
 
 ## Q122760: PC Win: Shared Folders View Cannot Be Expanded
 
+{% raw %}
+
 	Article: Q122760
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -45,3 +47,5 @@ permalink: /kb/122/Q122760/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136741/
 
 ## Q136741: Error Message: The Fax Server Could Not Be Removed
 
+{% raw %}
+
 	Article: Q136741
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/136/Q136741/
 	
 	=============================================================================
 	
+
+{% endraw %}

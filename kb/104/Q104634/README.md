@@ -6,6 +6,8 @@ permalink: /kb/104/Q104634/
 
 ## Q104634: INFO: fstream's File Pointers Are Not Independent
 
+{% raw %}
+
 	Article: Q104634
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0,7.0,7.0a
@@ -111,3 +113,5 @@ permalink: /kb/104/Q104634/
 	
 	=============================================================================
 	
+
+{% endraw %}

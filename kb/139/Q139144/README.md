@@ -6,6 +6,8 @@ permalink: /kb/139/Q139144/
 
 ## Q139144: PRB: Can't Print a Plain, Unformatted Report to a File
 
+{% raw %}
+
 	Article: Q139144
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -83,3 +85,5 @@ permalink: /kb/139/Q139144/
 	
 	=============================================================================
 	
+
+{% endraw %}

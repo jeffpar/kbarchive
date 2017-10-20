@@ -6,6 +6,8 @@ permalink: /kb/049/Q49064/
 
 ## Q49064: INFO: Declaring a Pointer to a Function: C4071, C4001, or C4220
 
+{% raw %}
+
 	Article: Q49064
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/049/Q49064/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191038/
 
 ## Q191038: INFO: WebClass Initialize, BeginRequest, Terminate Events
 
+{% raw %}
+
 	Article: Q191038
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -123,3 +125,5 @@ permalink: /kb/191/Q191038/
 	
 	=============================================================================
 	
+
+{% endraw %}

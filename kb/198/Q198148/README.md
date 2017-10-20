@@ -6,6 +6,8 @@ permalink: /kb/198/Q198148/
 
 ## Q198148: WD97: INSERT (INS) Key Doesn't Switch Between Modes
 
+{% raw %}
+
 	Article: Q198148
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -157,3 +159,5 @@ permalink: /kb/198/Q198148/
 	
 	=============================================================================
 	
+
+{% endraw %}

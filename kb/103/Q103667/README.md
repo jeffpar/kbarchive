@@ -6,6 +6,8 @@ permalink: /kb/103/Q103667/
 
 ## Q103667: Defrag Returns Errorlevel 0 When You Exit (Press ESC)
 
+{% raw %}
+
 	Article: Q103667
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/103/Q103667/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77276/
 
 ## Q77276: Irwin Magnetics EasyTape Backup with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q77276
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -47,3 +49,5 @@ permalink: /kb/077/Q77276/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82492/
 
 ## Q82492: Canon LBP III: Time-Out Printing Mixed Orientations
 
+{% raw %}
+
 	Article: Q82492
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/082/Q82492/
 	
 	=============================================================================
 	
+
+{% endraw %}

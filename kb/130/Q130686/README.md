@@ -6,6 +6,8 @@ permalink: /kb/130/Q130686/
 
 ## Q130686: Visual FoxPro File Extensions and File Types
 
+{% raw %}
+
 	Article: Q130686
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -145,3 +147,5 @@ permalink: /kb/130/Q130686/
 	
 	=============================================================================
 	
+
+{% endraw %}

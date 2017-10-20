@@ -6,6 +6,8 @@ permalink: /kb/168/Q168460/
 
 ## Q168460: SMS: &quot;SMSEXEC.EXE - Lost Delayed-Write Data&quot; Error
 
+{% raw %}
+
 	Article: Q168460
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -79,3 +81,5 @@ permalink: /kb/168/Q168460/
 	
 	=============================================================================
 	
+
+{% endraw %}

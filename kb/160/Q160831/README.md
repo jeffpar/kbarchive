@@ -6,6 +6,8 @@ permalink: /kb/160/Q160831/
 
 ## Q160831: FP: Frames Wizard Doesn't Confirm Completion
 
+{% raw %}
+
 	Article: Q160831
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -54,3 +56,5 @@ permalink: /kb/160/Q160831/
 	
 	=============================================================================
 	
+
+{% endraw %}

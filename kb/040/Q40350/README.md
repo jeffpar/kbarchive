@@ -6,6 +6,8 @@ permalink: /kb/040/Q40350/
 
 ## Q40350: _getimage Buffer May Be Huge (Larger than 64K)
 
+{% raw %}
+
 	Article: Q40350
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -61,3 +63,5 @@ permalink: /kb/040/Q40350/
 	
 	   hfree (image);
 	 }
+
+{% endraw %}

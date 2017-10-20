@@ -6,6 +6,8 @@ permalink: /kb/324/Q324379/
 
 ## Q324379: PRB: Error Message After You Select Backup Configuration Option
 
+{% raw %}
+
 	Article: Q324379
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/324/Q324379/
 	
 	=============================================================================
 	
+
+{% endraw %}

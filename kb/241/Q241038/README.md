@@ -6,6 +6,8 @@ permalink: /kb/241/Q241038/
 
 ## Q241038: Mastering Visual Basic 6.0 Fundamentals Comments &amp; Corrections
 
+{% raw %}
+
 	Article: Q241038
 	Product(s): Microsoft Press
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/241/Q241038/
 	
 	=============================================================================
 	
+
+{% endraw %}

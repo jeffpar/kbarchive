@@ -6,6 +6,8 @@ permalink: /kb/199/Q199072/
 
 ## Q199072: CIFS or Public SMB Information on Common Internet File System
 
+{% raw %}
+
 	Article: Q199072
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/199/Q199072/
 	
 	=============================================================================
 	
+
+{% endraw %}

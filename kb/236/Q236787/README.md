@@ -6,6 +6,8 @@ permalink: /kb/236/Q236787/
 
 ## Q236787: SNACFG Should Allow Configuration of Compression for 3270 LUs
 
+{% raw %}
+
 	Article: Q236787
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -56,3 +58,5 @@ permalink: /kb/236/Q236787/
 	
 	=============================================================================
 	
+
+{% endraw %}

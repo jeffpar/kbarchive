@@ -6,6 +6,8 @@ permalink: /kb/274/Q274095/
 
 ## Q274095: Games Err Msg: Exception 01h in Module &lt;Unknown&gt;
 
+{% raw %}
+
 	Article: Q274095
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -106,3 +108,5 @@ permalink: /kb/274/Q274095/
 	
 	=============================================================================
 	
+
+{% endraw %}

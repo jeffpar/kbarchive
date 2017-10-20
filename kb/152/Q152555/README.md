@@ -6,6 +6,8 @@ permalink: /kb/152/Q152555/
 
 ## Q152555: XADM: Permissions Given to Local Groups Don't Work
 
+{% raw %}
+
 	Article: Q152555
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -43,3 +45,5 @@ permalink: /kb/152/Q152555/
 	
 	=============================================================================
 	
+
+{% endraw %}

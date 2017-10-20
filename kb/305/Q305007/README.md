@@ -6,6 +6,8 @@ permalink: /kb/305/Q305007/
 
 ## Q305007: XCON: You Cannot Send SMTP Mail Through a Firewall
 
+{% raw %}
+
 	Article: Q305007
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -84,3 +86,5 @@ permalink: /kb/305/Q305007/
 	
 	=============================================================================
 	
+
+{% endraw %}

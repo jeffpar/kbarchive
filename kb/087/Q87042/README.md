@@ -6,6 +6,8 @@ permalink: /kb/087/Q87042/
 
 ## Q87042: SMTP: SMTP Command-Line Parameters
 
+{% raw %}
+
 	Article: Q87042
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87042/
 	
 	=============================================================================
 	
+
+{% endraw %}

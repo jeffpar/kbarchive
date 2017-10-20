@@ -6,6 +6,8 @@ permalink: /kb/151/Q151504/
 
 ## Q151504: Using Server Push with IIS
 
+{% raw %}
+
 	Article: Q151504
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/151/Q151504/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99986/
 
 ## Q99986: Err Msg Running MSD: Error: You Have Attempted to Run...
 
+{% raw %}
+
 	Article: Q99986
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/099/Q99986/
 	
 	=============================================================================
 	
+
+{% endraw %}

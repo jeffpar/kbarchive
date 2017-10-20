@@ -6,6 +6,8 @@ permalink: /kb/096/Q96769/
 
 ## Q96769: Problems Formatting or Reading a Floppy Disk
 
+{% raw %}
+
 	Article: Q96769
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -230,3 +232,5 @@ permalink: /kb/096/Q96769/
 	
 	=============================================================================
 	
+
+{% endraw %}

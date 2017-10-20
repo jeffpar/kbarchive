@@ -6,6 +6,8 @@ permalink: /kb/306/Q306000/
 
 ## Q306000: Answer to Anniversary Secret Question Date Format Not Validated
 
+{% raw %}
+
 	Article: Q306000
 	Product(s): Microsoft Developer Network
 	Version(s): 2.0
@@ -44,3 +46,5 @@ permalink: /kb/306/Q306000/
 	
 	=============================================================================
 	
+
+{% endraw %}

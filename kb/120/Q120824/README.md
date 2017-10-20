@@ -6,6 +6,8 @@ permalink: /kb/120/Q120824/
 
 ## Q120824: Word 2.x for Windows Doesn't Load Files from UNC Path w/Novell
 
+{% raw %}
+
 	Article: Q120824
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/120/Q120824/
 	
 	=============================================================================
 	
+
+{% endraw %}

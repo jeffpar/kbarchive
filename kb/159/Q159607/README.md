@@ -6,6 +6,8 @@ permalink: /kb/159/Q159607/
 
 ## Q159607: Flight Simulator 95: Joysticks Turn Off in Middle of Flight
 
+{% raw %}
+
 	Article: Q159607
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/159/Q159607/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72365/
 
 ## Q72365: PC-Kwik Disk Cache Requires VirtualHDIRQ=False
 
+{% raw %}
+
 	Article: Q72365
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/072/Q72365/
 	
 	=============================================================================
 	
+
+{% endraw %}

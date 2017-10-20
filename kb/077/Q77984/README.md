@@ -6,6 +6,8 @@ permalink: /kb/077/Q77984/
 
 ## Q77984: Which MS-DOS Version Should I Boot to Run MS-DOS Setup?
 
+{% raw %}
+
 	Article: Q77984
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/077/Q77984/
 	
 	=============================================================================
 	
+
+{% endraw %}

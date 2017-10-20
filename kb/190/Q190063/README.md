@@ -6,6 +6,8 @@ permalink: /kb/190/Q190063/
 
 ## Q190063: PRB: Form Wizard &quot;Scrolling Grid&quot; Option Does Not Add Pages
 
+{% raw %}
+
 	Article: Q190063
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/190/Q190063/
 	
 	=============================================================================
 	
+
+{% endraw %}

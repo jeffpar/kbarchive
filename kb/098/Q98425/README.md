@@ -6,6 +6,8 @@ permalink: /kb/098/Q98425/
 
 ## Q98425: NUMBIGBUF Parameter Information for LM 2.1 and 2.2
 
+{% raw %}
+
 	Article: Q98425
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/098/Q98425/
 	
 	=============================================================================
 	
+
+{% endraw %}

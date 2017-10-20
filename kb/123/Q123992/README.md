@@ -6,6 +6,8 @@ permalink: /kb/123/Q123992/
 
 ## Q123992: Basic Configurations for COM Ports in Windows 95
 
+{% raw %}
+
 	Article: Q123992
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/123/Q123992/
 	
 	=============================================================================
 	
+
+{% endraw %}

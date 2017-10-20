@@ -6,6 +6,8 @@ permalink: /kb/148/Q148873/
 
 ## Q148873: INFO: Visual FoxPro Calculates Leap Year Correctly in 21st Centu
 
+{% raw %}
+
 	Article: Q148873
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/148/Q148873/
 	
 	=============================================================================
 	
+
+{% endraw %}

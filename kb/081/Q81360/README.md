@@ -6,6 +6,8 @@ permalink: /kb/081/Q81360/
 
 ## Q81360: MS-DOS EDIT and QBASIC Command Line Switches
 
+{% raw %}
+
 	Article: Q81360
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -95,3 +97,5 @@ permalink: /kb/081/Q81360/
 	
 	=============================================================================
 	
+
+{% endraw %}

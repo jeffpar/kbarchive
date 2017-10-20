@@ -6,6 +6,8 @@ permalink: /kb/221/Q221582/
 
 ## Q221582: STOP 0x0000000a Running Citrix MetaFrame on Terminal Server
 
+{% raw %}
+
 	Article: Q221582
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/221/Q221582/
 	
 	=============================================================================
 	
+
+{% endraw %}

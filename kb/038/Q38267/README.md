@@ -6,6 +6,8 @@ permalink: /kb/038/Q38267/
 
 ## Q38267: Error C1033 Cannot Open Assembly-Language Output 'filename'
 
+{% raw %}
+
 	Article: Q38267
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -37,3 +39,5 @@ permalink: /kb/038/Q38267/
 	        space.
 	
 	   3.  A read-only file with the given name already exists.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169342/
 
 ## Q169342: SMS: Batch File Runs Twice with Remote Execute on Windows 95
 
+{% raw %}
+
 	Article: Q169342
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -45,3 +47,5 @@ permalink: /kb/169/Q169342/
 	
 	=============================================================================
 	
+
+{% endraw %}

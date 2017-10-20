@@ -6,6 +6,8 @@ permalink: /kb/233/Q233164/
 
 ## Q233164: XFOR: Event ID 14005 and Event ID 59 During cc:Mail Dirsync
 
+{% raw %}
+
 	Article: Q233164
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -92,3 +94,5 @@ permalink: /kb/233/Q233164/
 	
 	=============================================================================
 	
+
+{% endraw %}

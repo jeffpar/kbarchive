@@ -6,6 +6,8 @@ permalink: /kb/112/Q112285/
 
 ## Q112285: PC Adm: IMPORT -R Versus Replace Command in Text File
 
+{% raw %}
+
 	Article: Q112285
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/112/Q112285/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77225/
 
 ## Q77225: Zenith Z-180/Z-184 Loses Date/Time with MS-DOS Upgrade
 
+{% raw %}
+
 	Article: Q77225
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -45,3 +47,5 @@ permalink: /kb/077/Q77225/
 	
 	=============================================================================
 	
+
+{% endraw %}

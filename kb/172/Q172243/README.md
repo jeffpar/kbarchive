@@ -6,6 +6,8 @@ permalink: /kb/172/Q172243/
 
 ## Q172243: Error Message: The Member ID or Password Is Not Valid
 
+{% raw %}
+
 	Article: Q172243
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -60,3 +62,5 @@ permalink: /kb/172/Q172243/
 	
 	=============================================================================
 	
+
+{% endraw %}

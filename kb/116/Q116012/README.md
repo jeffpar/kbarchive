@@ -6,6 +6,8 @@ permalink: /kb/116/Q116012/
 
 ## Q116012: SFM: Err Msg: Address Error
 
+{% raw %}
+
 	Article: Q116012
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -45,3 +47,5 @@ permalink: /kb/116/Q116012/
 	
 	=============================================================================
 	
+
+{% endraw %}

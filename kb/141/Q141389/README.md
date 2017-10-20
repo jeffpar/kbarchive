@@ -6,6 +6,8 @@ permalink: /kb/141/Q141389/
 
 ## Q141389: DOCERR: Incorrect SET PRINTER Command Syntax for Net Printers
 
+{% raw %}
+
 	Article: Q141389
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/141/Q141389/
 	
 	=============================================================================
 	
+
+{% endraw %}

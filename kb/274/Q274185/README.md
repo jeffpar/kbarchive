@@ -6,6 +6,8 @@ permalink: /kb/274/Q274185/
 
 ## Q274185: LocalLU for Invoking TPs is Documented Incorrectly in CPI-C SDK
 
+{% raw %}
+
 	Article: Q274185
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -85,3 +87,5 @@ permalink: /kb/274/Q274185/
 	
 	=============================================================================
 	
+
+{% endraw %}

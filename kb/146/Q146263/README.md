@@ -6,6 +6,8 @@ permalink: /kb/146/Q146263/
 
 ## Q146263: XFOR: IMC Packages Failed Messages in ATT, DAT, or TXT
 
+{% raw %}
+
 	Article: Q146263
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146263/
 	
 	=============================================================================
 	
+
+{% endraw %}

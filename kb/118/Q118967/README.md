@@ -6,6 +6,8 @@ permalink: /kb/118/Q118967/
 
 ## Q118967: ATT: Removal of Gateway Fails to Update NETWORK.GLB
 
+{% raw %}
+
 	Article: Q118967
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/118/Q118967/
 	
 	=============================================================================
 	
+
+{% endraw %}

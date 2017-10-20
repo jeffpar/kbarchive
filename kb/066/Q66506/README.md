@@ -6,6 +6,8 @@ permalink: /kb/066/Q66506/
 
 ## Q66506: Error: Cannot Open Response File : &quot;
 
+{% raw %}
+
 	Article: Q66506
 	Product(s): See article
 	Version(s): 6.00
@@ -24,3 +26,5 @@ permalink: /kb/066/Q66506/
 	
 	Check your DOS utilities directory, or any other directory specified
 	with the PATH command, for an older version of the LINK.EXE file.
+
+{% endraw %}

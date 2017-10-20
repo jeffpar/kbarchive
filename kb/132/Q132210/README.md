@@ -6,6 +6,8 @@ permalink: /kb/132/Q132210/
 
 ## Q132210: PC Win: Use of the Mail Utility PABSYNC.DLL
 
+{% raw %}
+
 	Article: Q132210
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -150,3 +152,5 @@ permalink: /kb/132/Q132210/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178250/
 
 ## Q178250: FS95: Error Message: Invalid Page Fault in Module Msvcrt40.dll
 
+{% raw %}
+
 	Article: Q178250
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -172,3 +174,5 @@ permalink: /kb/178/Q178250/
 	
 	=============================================================================
 	
+
+{% endraw %}

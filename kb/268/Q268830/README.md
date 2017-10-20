@@ -6,6 +6,8 @@ permalink: /kb/268/Q268830/
 
 ## Q268830: BUG: Floppy Drive Inaccessible on Computer with 512 MB of Memory
 
+{% raw %}
+
 	Article: Q268830
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/268/Q268830/
 	
 	=============================================================================
 	
+
+{% endraw %}

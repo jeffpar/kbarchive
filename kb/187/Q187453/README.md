@@ -6,6 +6,8 @@ permalink: /kb/187/Q187453/
 
 ## Q187453: User's SID Remains in Registry After Logoff
 
+{% raw %}
+
 	Article: Q187453
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/187/Q187453/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35143/
 
 ## Q35143: Using GOSUB, GOTO, ON Event GOSUB, ON ERROR GOTO in Modules
 
+{% raw %}
+
 	Article: Q35143
 	Product(s): See article
 	Version(s): Ox2.00 2.01 3.00 4.00 4.00b 4.50
@@ -128,3 +130,5 @@ permalink: /kb/035/Q35143/
 	SUB mod2sub2
 	   ERROR 2  'this is ok if mod2sub1 is called first
 	END SUB
+
+{% endraw %}

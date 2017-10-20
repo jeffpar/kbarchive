@@ -6,6 +6,8 @@ permalink: /kb/183/Q183529/
 
 ## Q183529: XCLN: Schedule+ Free and Busy Connector Errors 1034 and 1047
 
+{% raw %}
+
 	Article: Q183529
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/183/Q183529/
 	
 	=============================================================================
 	
+
+{% endraw %}

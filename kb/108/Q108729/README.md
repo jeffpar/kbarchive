@@ -6,6 +6,8 @@ permalink: /kb/108/Q108729/
 
 ## Q108729: OFF97: Color Shift Occurs When Printing in Windows 98
 
+{% raw %}
+
 	Article: Q108729
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/108/Q108729/
 	
 	=============================================================================
 	
+
+{% endraw %}

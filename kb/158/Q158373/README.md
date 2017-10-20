@@ -6,6 +6,8 @@ permalink: /kb/158/Q158373/
 
 ## Q158373: Monster Truck Madness: Viewing Options Vary Depending on View
 
+{% raw %}
+
 	Article: Q158373
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/158/Q158373/
 	
 	=============================================================================
 	
+
+{% endraw %}

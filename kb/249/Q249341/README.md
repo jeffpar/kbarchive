@@ -6,6 +6,8 @@ permalink: /kb/249/Q249341/
 
 ## Q249341: HOWTO: Create Layered Window in Visual Basic
 
+{% raw %}
+
 	Article: Q249341
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/249/Q249341/
 	
 	=============================================================================
 	
+
+{% endraw %}

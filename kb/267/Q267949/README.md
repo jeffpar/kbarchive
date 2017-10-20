@@ -6,6 +6,8 @@ permalink: /kb/267/Q267949/
 
 ## Q267949: Programs Set to Run Only When a User Is Logged On May Not Run
 
+{% raw %}
+
 	Article: Q267949
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -57,3 +59,5 @@ permalink: /kb/267/Q267949/
 	
 	=============================================================================
 	
+
+{% endraw %}

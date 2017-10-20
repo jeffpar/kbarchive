@@ -6,6 +6,8 @@ permalink: /kb/150/Q150320/
 
 ## Q150320: Bookshelf '96-'97: No Sound or Setup Using UNC Path
 
+{% raw %}
+
 	Article: Q150320
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.x
@@ -74,3 +76,5 @@ permalink: /kb/150/Q150320/
 	
 	=============================================================================
 	
+
+{% endraw %}

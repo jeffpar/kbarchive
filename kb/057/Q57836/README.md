@@ -6,6 +6,8 @@ permalink: /kb/057/Q57836/
 
 ## Q57836: Setting up OS/2 LAN Manager to Use Replicator Service
 
+{% raw %}
+
 	Article: Q57836
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/057/Q57836/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318106/
 
 ## Q318106: XADM: Correct Order to Define Custom Attributes in Exchange 5.5
 
+{% raw %}
+
 	Article: Q318106
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -93,3 +95,5 @@ permalink: /kb/318/Q318106/
 	
 	=============================================================================
 	
+
+{% endraw %}

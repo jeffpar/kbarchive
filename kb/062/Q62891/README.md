@@ -6,6 +6,8 @@ permalink: /kb/062/Q62891/
 
 ## Q62891: WAIT() Causes Execution to Continue If Any Bit Is Set
 
+{% raw %}
+
 	Article: Q62891
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -32,3 +34,5 @@ permalink: /kb/062/Q62891/
 	   DO
 	    x% = INP(1)
 	   LOOP UNTIL x% = 13
+
+{% endraw %}

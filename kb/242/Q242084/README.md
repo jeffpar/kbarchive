@@ -6,6 +6,8 @@ permalink: /kb/242/Q242084/
 
 ## Q242084: STOP 0xC0000244 Error Message When Browsing PDC
 
+{% raw %}
+
 	Article: Q242084
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/242/Q242084/
 	
 	=============================================================================
 	
+
+{% endraw %}

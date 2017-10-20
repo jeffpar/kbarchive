@@ -6,6 +6,8 @@ permalink: /kb/224/Q224379/
 
 ## Q224379: Characters Unreadable After Applying Pan-Chinese Windows NT SP3
 
+{% raw %}
+
 	Article: Q224379
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/224/Q224379/
 	
 	=============================================================================
 	
+
+{% endraw %}

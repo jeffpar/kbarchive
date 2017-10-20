@@ -6,6 +6,8 @@ permalink: /kb/302/Q302947/
 
 ## Q302947: Train Simulator 2000: Fatal Error When You Start Train Simulator
 
+{% raw %}
+
 	Article: Q302947
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -153,3 +155,5 @@ permalink: /kb/302/Q302947/
 	
 	=============================================================================
 	
+
+{% endraw %}

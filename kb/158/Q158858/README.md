@@ -6,6 +6,8 @@ permalink: /kb/158/Q158858/
 
 ## Q158858: Cannot Rename Users and Groups in Personal Web Server
 
+{% raw %}
+
 	Article: Q158858
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0,1.0a
@@ -47,3 +49,5 @@ permalink: /kb/158/Q158858/
 	
 	=============================================================================
 	
+
+{% endraw %}

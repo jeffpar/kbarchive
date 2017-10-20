@@ -6,6 +6,8 @@ permalink: /kb/257/Q257185/
 
 ## Q257185: SMS: Remotely Installed Client Doesn't Report Version Info
 
+{% raw %}
+
 	Article: Q257185
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -76,3 +78,5 @@ permalink: /kb/257/Q257185/
 	
 	=============================================================================
 	
+
+{% endraw %}

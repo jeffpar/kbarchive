@@ -6,6 +6,8 @@ permalink: /kb/132/Q132340/
 
 ## Q132340: INFO: Common File Extensions Used by Visual C++
 
+{% raw %}
+
 	Article: Q132340
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 1.50 1.51 1.52 | 1.00 2.00
@@ -241,3 +243,5 @@ permalink: /kb/132/Q132340/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244048/
 
 ## Q244048: XFOR: Manually Moving the Imcdata Folder
 
+{% raw %}
+
 	Article: Q244048
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/244/Q244048/
 	
 	=============================================================================
 	
+
+{% endraw %}

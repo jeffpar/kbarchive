@@ -6,6 +6,8 @@ permalink: /kb/228/Q228807/
 
 ## Q228807: Dr Watson Error After Installing Application on Terminal Server
 
+{% raw %}
+
 	Article: Q228807
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -62,3 +64,5 @@ permalink: /kb/228/Q228807/
 	
 	=============================================================================
 	
+
+{% endraw %}

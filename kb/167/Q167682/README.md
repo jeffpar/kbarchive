@@ -6,6 +6,8 @@ permalink: /kb/167/Q167682/
 
 ## Q167682: Application Exceptions When Opening a SNA Server 2.11 COM.CFG
 
+{% raw %}
+
 	Article: Q167682
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -115,3 +117,5 @@ permalink: /kb/167/Q167682/
 	
 	=============================================================================
 	
+
+{% endraw %}

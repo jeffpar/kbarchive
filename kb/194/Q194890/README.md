@@ -6,6 +6,8 @@ permalink: /kb/194/Q194890/
 
 ## Q194890: BUG: Clearing ImageList From ToolBar Shrinks ToolBar Buttons
 
+{% raw %}
+
 	Article: Q194890
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -78,3 +80,5 @@ permalink: /kb/194/Q194890/
 	
 	=============================================================================
 	
+
+{% endraw %}

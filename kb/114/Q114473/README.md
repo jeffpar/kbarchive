@@ -6,6 +6,8 @@ permalink: /kb/114/Q114473/
 
 ## Q114473: Intel Privileged and Sensitive Instructions
 
+{% raw %}
+
 	Article: Q114473
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -109,3 +111,5 @@ permalink: /kb/114/Q114473/
 	
 	=============================================================================
 	
+
+{% endraw %}

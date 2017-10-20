@@ -6,6 +6,8 @@ permalink: /kb/137/Q137507/
 
 ## Q137507: FoxPro Advisor Magazine Articles June 1995
 
+{% raw %}
+
 	Article: Q137507
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -165,3 +167,5 @@ permalink: /kb/137/Q137507/
 	
 	=============================================================================
 	
+
+{% endraw %}

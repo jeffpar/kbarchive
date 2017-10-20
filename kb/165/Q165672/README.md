@@ -6,6 +6,8 @@ permalink: /kb/165/Q165672/
 
 ## Q165672: Batch File Containing UNC Connection Fails When Run from PIF
 
+{% raw %}
+
 	Article: Q165672
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -48,3 +50,5 @@ permalink: /kb/165/Q165672/
 	
 	=============================================================================
 	
+
+{% endraw %}

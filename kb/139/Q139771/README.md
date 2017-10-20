@@ -6,6 +6,8 @@ permalink: /kb/139/Q139771/
 
 ## Q139771: Fatal Exception Errors and Random Characters Using ATI Mach 32
 
+{% raw %}
+
 	Article: Q139771
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -52,3 +54,5 @@ permalink: /kb/139/Q139771/
 	
 	=============================================================================
 	
+
+{% endraw %}

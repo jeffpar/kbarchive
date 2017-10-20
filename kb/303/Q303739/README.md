@@ -6,6 +6,8 @@ permalink: /kb/303/Q303739/
 
 ## Q303739: Firewall Prevents Access from Receiving Updates to Network Map
 
+{% raw %}
+
 	Article: Q303739
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4,1.99
@@ -91,3 +93,5 @@ permalink: /kb/303/Q303739/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243984/
 
 ## Q243984: FS: Rudder Pedals Do Not Work Correctly
 
+{% raw %}
+
 	Article: Q243984
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -248,3 +250,5 @@ permalink: /kb/243/Q243984/
 	
 	=============================================================================
 	
+
+{% endraw %}

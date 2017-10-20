@@ -6,6 +6,8 @@ permalink: /kb/158/Q158045/
 
 ## Q158045: Windows Explorer Reports 4 GB of Files as 0 Bytes
 
+{% raw %}
+
 	Article: Q158045
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/158/Q158045/
 	
 	=============================================================================
 	
+
+{% endraw %}

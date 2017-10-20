@@ -6,6 +6,8 @@ permalink: /kb/142/Q142839/
 
 ## Q142839: Unloading Form from Within DBGrid Event Causes GPF
 
+{% raw %}
+
 	Article: Q142839
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -105,3 +107,5 @@ permalink: /kb/142/Q142839/
 	
 	=============================================================================
 	
+
+{% endraw %}

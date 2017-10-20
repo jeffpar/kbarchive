@@ -6,6 +6,8 @@ permalink: /kb/135/Q135815/
 
 ## Q135815: Cannot Connect to The Microsoft Network Using Calling Card
 
+{% raw %}
+
 	Article: Q135815
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5
@@ -59,3 +61,5 @@ permalink: /kb/135/Q135815/
 	
 	=============================================================================
 	
+
+{% endraw %}

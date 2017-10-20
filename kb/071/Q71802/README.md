@@ -6,6 +6,8 @@ permalink: /kb/071/Q71802/
 
 ## Q71802: Windows Setup Does Not Recognize paging=off Setting
 
+{% raw %}
+
 	Article: Q71802
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/071/Q71802/
 	
 	=============================================================================
 	
+
+{% endraw %}

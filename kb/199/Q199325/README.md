@@ -6,6 +6,8 @@ permalink: /kb/199/Q199325/
 
 ## Q199325: XCON: MTA Size Restrictions Affect Local Delivery
 
+{% raw %}
+
 	Article: Q199325
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1,5.5 SP2,5.5 SP3
@@ -79,3 +81,5 @@ permalink: /kb/199/Q199325/
 	
 	=============================================================================
 	
+
+{% endraw %}

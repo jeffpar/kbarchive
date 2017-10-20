@@ -6,6 +6,8 @@ permalink: /kb/101/Q101750/
 
 ## Q101750: PC Ext: Overlay Files and How They Work
 
+{% raw %}
+
 	Article: Q101750
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -53,3 +55,5 @@ permalink: /kb/101/Q101750/
 	
 	=============================================================================
 	
+
+{% endraw %}

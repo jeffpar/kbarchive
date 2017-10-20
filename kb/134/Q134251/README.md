@@ -6,6 +6,8 @@ permalink: /kb/134/Q134251/
 
 ## Q134251: BUG: Run-Time Changes to the Grid Not Saved Correctly
 
+{% raw %}
+
 	Article: Q134251
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -99,3 +101,5 @@ permalink: /kb/134/Q134251/
 	
 	=============================================================================
 	
+
+{% endraw %}

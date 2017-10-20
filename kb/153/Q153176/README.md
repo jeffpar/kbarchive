@@ -6,6 +6,8 @@ permalink: /kb/153/Q153176/
 
 ## Q153176: SMS: Invos2.exe Incorrectly Identifies a Pentium Processor
 
+{% raw %}
+
 	Article: Q153176
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -47,3 +49,5 @@ permalink: /kb/153/Q153176/
 	
 	=============================================================================
 	
+
+{% endraw %}

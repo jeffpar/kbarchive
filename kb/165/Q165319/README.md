@@ -6,6 +6,8 @@ permalink: /kb/165/Q165319/
 
 ## Q165319: XADM: Can't Import Nested Container Recipients into DL
 
+{% raw %}
+
 	Article: Q165319
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -98,3 +100,5 @@ permalink: /kb/165/Q165319/
 	
 	=============================================================================
 	
+
+{% endraw %}

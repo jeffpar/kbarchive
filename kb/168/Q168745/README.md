@@ -6,6 +6,8 @@ permalink: /kb/168/Q168745/
 
 ## Q168745: PPT7: &quot;The File Cannot Be Removed...&quot; Error Running Pack And Go
 
+{% raw %}
+
 	Article: Q168745
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -62,3 +64,5 @@ permalink: /kb/168/Q168745/
 	
 	=============================================================================
 	
+
+{% endraw %}

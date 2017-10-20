@@ -6,6 +6,8 @@ permalink: /kb/193/Q193886/
 
 ## Q193886: How to Index Physical Roots
 
+{% raw %}
+
 	Article: Q193886
 	Product(s): Internet Information Server
 	Version(s): 2.0,4.0
@@ -99,3 +101,5 @@ permalink: /kb/193/Q193886/
 	
 	=============================================================================
 	
+
+{% endraw %}

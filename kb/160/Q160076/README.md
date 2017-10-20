@@ -6,6 +6,8 @@ permalink: /kb/160/Q160076/
 
 ## Q160076: Encarta Err Msg: No New Update/Download Files Found
 
+{% raw %}
+
 	Article: Q160076
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -109,3 +111,5 @@ permalink: /kb/160/Q160076/
 	
 	=============================================================================
 	
+
+{% endraw %}

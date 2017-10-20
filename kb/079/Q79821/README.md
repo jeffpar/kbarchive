@@ -6,6 +6,8 @@ permalink: /kb/079/Q79821/
 
 ## Q79821: FIX: MASM 6.0 May Incorrectly Generate A4000 for CMP
 
+{% raw %}
+
 	Article: Q79821
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -73,3 +75,5 @@ permalink: /kb/079/Q79821/
 	
 	=============================================================================
 	
+
+{% endraw %}

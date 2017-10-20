@@ -6,6 +6,8 @@ permalink: /kb/267/Q267987/
 
 ## Q267987: XADM: Directory Service Stops and Cannot Restart with Event IDs
 
+{% raw %}
+
 	Article: Q267987
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -88,3 +90,5 @@ permalink: /kb/267/Q267987/
 	
 	=============================================================================
 	
+
+{% endraw %}

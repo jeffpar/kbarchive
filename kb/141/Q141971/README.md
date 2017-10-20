@@ -6,6 +6,8 @@ permalink: /kb/141/Q141971/
 
 ## Q141971: PRB: Setting PageOrder May Generate an Error
 
+{% raw %}
+
 	Article: Q141971
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -84,3 +86,5 @@ permalink: /kb/141/Q141971/
 	
 	=============================================================================
 	
+
+{% endraw %}

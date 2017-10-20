@@ -6,6 +6,8 @@ permalink: /kb/122/Q122539/
 
 ## Q122539: BUG: C4786 or C1067 Caused by Long Identifier and /Zi
 
+{% raw %}
+
 	Article: Q122539
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/122/Q122539/
 	
 	=============================================================================
 	
+
+{% endraw %}

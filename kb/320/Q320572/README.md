@@ -6,6 +6,8 @@ permalink: /kb/320/Q320572/
 
 ## Q320572: How to Locate Your Version of MSN Explorer
 
+{% raw %}
+
 	Article: Q320572
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/320/Q320572/
 	
 	=============================================================================
 	
+
+{% endraw %}

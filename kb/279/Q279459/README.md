@@ -6,6 +6,8 @@ permalink: /kb/279/Q279459/
 
 ## Q279459: BUG: Component Category Registry Entries Remain in ATL Comp.
 
+{% raw %}
+
 	Article: Q279459
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -125,3 +127,5 @@ permalink: /kb/279/Q279459/
 	
 	=============================================================================
 	
+
+{% endraw %}

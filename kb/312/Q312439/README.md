@@ -6,6 +6,8 @@ permalink: /kb/312/Q312439/
 
 ## Q312439: Err Msg: Internet Mail Server Requires DNS to Be Configured
 
+{% raw %}
+
 	Article: Q312439
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -72,3 +74,5 @@ permalink: /kb/312/Q312439/
 	
 	=============================================================================
 	
+
+{% endraw %}

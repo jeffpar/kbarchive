@@ -6,6 +6,8 @@ permalink: /kb/231/Q231326/
 
 ## Q231326: Err Msg: The Document Is in Use by Another Application
 
+{% raw %}
+
 	Article: Q231326
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/231/Q231326/
 	
 	=============================================================================
 	
+
+{% endraw %}

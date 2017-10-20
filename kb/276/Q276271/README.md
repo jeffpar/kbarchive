@@ -6,6 +6,8 @@ permalink: /kb/276/Q276271/
 
 ## Q276271: SMS: Using the SMS Extract Utility for SMS Reporting
 
+{% raw %}
+
 	Article: Q276271
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -100,3 +102,5 @@ permalink: /kb/276/Q276271/
 	
 	=============================================================================
 	
+
+{% endraw %}

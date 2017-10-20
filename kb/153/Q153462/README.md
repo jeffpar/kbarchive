@@ -6,6 +6,8 @@ permalink: /kb/153/Q153462/
 
 ## Q153462: Err Msg: Event 4010: Unable to Get the Local Computer Name
 
+{% raw %}
+
 	Article: Q153462
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -74,3 +76,5 @@ permalink: /kb/153/Q153462/
 	
 	=============================================================================
 	
+
+{% endraw %}

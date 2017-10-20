@@ -6,6 +6,8 @@ permalink: /kb/152/Q152208/
 
 ## Q152208: Julia Child Err Msg: Insufficient Memory to Function
 
+{% raw %}
+
 	Article: Q152208
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/152/Q152208/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241073/
 
 ## Q241073: Error Message After Upgrading SBS 4.5 to BackOffice 4.5
 
+{% raw %}
+
 	Article: Q241073
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -52,3 +54,5 @@ permalink: /kb/241/Q241073/
 	
 	=============================================================================
 	
+
+{% endraw %}

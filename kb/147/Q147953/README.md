@@ -6,6 +6,8 @@ permalink: /kb/147/Q147953/
 
 ## Q147953: Last Software Scan Date Not Updated for Windows NT Clients
 
+{% raw %}
+
 	Article: Q147953
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -58,3 +60,5 @@ permalink: /kb/147/Q147953/
 	
 	=============================================================================
 	
+
+{% endraw %}

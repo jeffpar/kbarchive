@@ -6,6 +6,8 @@ permalink: /kb/185/Q185341/
 
 ## Q185341: SMS: How to Integrate Microsoft LAN Manager Servers
 
+{% raw %}
+
 	Article: Q185341
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -79,3 +81,5 @@ permalink: /kb/185/Q185341/
 	
 	=============================================================================
 	
+
+{% endraw %}

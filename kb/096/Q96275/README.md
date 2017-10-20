@@ -6,6 +6,8 @@ permalink: /kb/096/Q96275/
 
 ## Q96275: Mac ARA: AppleLink Gateway Conflicts with ARA
 
+{% raw %}
+
 	Article: Q96275
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1,3.1a,3.1c,3.1d
@@ -59,3 +61,5 @@ permalink: /kb/096/Q96275/
 	
 	=============================================================================
 	
+
+{% endraw %}

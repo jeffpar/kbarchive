@@ -6,6 +6,8 @@ permalink: /kb/230/Q230269/
 
 ## Q230269: XFOR: How to Re-add Extensions to Exchange for Notes Connector
 
+{% raw %}
+
 	Article: Q230269
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -92,3 +94,5 @@ permalink: /kb/230/Q230269/
 	
 	=============================================================================
 	
+
+{% endraw %}

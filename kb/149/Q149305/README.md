@@ -6,6 +6,8 @@ permalink: /kb/149/Q149305/
 
 ## Q149305: PCMCIA Network Cards May Fail to Start During NT Installation
 
+{% raw %}
+
 	Article: Q149305
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/149/Q149305/
 	
 	=============================================================================
 	
+
+{% endraw %}

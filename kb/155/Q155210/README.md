@@ -6,6 +6,8 @@ permalink: /kb/155/Q155210/
 
 ## Q155210: FP: Error 5 Copying Web with Author Account on IIS
 
+{% raw %}
+
 	Article: Q155210
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1
@@ -78,3 +80,5 @@ permalink: /kb/155/Q155210/
 	
 	=============================================================================
 	
+
+{% endraw %}

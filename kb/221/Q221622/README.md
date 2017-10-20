@@ -6,6 +6,8 @@ permalink: /kb/221/Q221622/
 
 ## Q221622: FIX: Hang When Resizing a ToolBar With ASELOBJ at Design-Time
 
+{% raw %}
+
 	Article: Q221622
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -81,3 +83,5 @@ permalink: /kb/221/Q221622/
 	
 	=============================================================================
 	
+
+{% endraw %}

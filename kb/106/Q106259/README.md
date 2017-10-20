@@ -6,6 +6,8 @@ permalink: /kb/106/Q106259/
 
 ## Q106259: FAX: Gateway to Fax Version 3.0.1 Update
 
+{% raw %}
+
 	Article: Q106259
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0a
@@ -110,3 +112,5 @@ permalink: /kb/106/Q106259/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/260/Q260384/
 
 ## Q260384: Site Server Express Fails on WHOIS Resolution
 
+{% raw %}
+
 	Article: Q260384
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -73,3 +75,5 @@ permalink: /kb/260/Q260384/
 	
 	=============================================================================
 	
+
+{% endraw %}

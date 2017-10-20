@@ -6,6 +6,8 @@ permalink: /kb/255/Q255647/
 
 ## Q255647: Resource Monitor Problem Results in Event 1116
 
+{% raw %}
+
 	Article: Q255647
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -56,3 +58,5 @@ permalink: /kb/255/Q255647/
 	
 	=============================================================================
 	
+
+{% endraw %}

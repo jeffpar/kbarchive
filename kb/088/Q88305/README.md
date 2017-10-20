@@ -6,6 +6,8 @@ permalink: /kb/088/Q88305/
 
 ## Q88305: Windows Resource Kit (7/6/92) Disk Directory (3.5 Inch)
 
+{% raw %}
+
 	Article: Q88305
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/088/Q88305/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179166/
 
 ## Q179166: PRB: SqlBCPColumnFormat in VBSQL.OCX Fails
 
+{% raw %}
+
 	Article: Q179166
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -151,3 +153,5 @@ permalink: /kb/179/Q179166/
 	
 	=============================================================================
 	
+
+{% endraw %}

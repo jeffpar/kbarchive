@@ -6,6 +6,8 @@ permalink: /kb/195/Q195028/
 
 ## Q195028: Mfccdc Demonstrates Viewport and Mapmode Use in MFC
 
+{% raw %}
+
 	Article: Q195028
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -113,3 +115,5 @@ permalink: /kb/195/Q195028/
 	
 	=============================================================================
 	
+
+{% endraw %}

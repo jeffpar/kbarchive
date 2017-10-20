@@ -6,6 +6,8 @@ permalink: /kb/140/Q140423/
 
 ## Q140423: SNA Server EHNAPPC Security fails using 10 Character User ID
 
+{% raw %}
+
 	Article: Q140423
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -72,3 +74,5 @@ permalink: /kb/140/Q140423/
 	
 	=============================================================================
 	
+
+{% endraw %}

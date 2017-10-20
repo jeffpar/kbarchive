@@ -6,6 +6,8 @@ permalink: /kb/250/Q250416/
 
 ## Q250416: Doc Err: SNACFG USER Syntax for Including the Domain
 
+{% raw %}
+
 	Article: Q250416
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -76,3 +78,5 @@ permalink: /kb/250/Q250416/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254943/
 
 ## Q254943: XCON: Message Transfer Agent Stops Unexpectedly w. Event ID 9405
 
+{% raw %}
+
 	Article: Q254943
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -135,3 +137,5 @@ permalink: /kb/254/Q254943/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106731/
 
 ## Q106731: PRB: Large BLOCK DATA Subprogram Compiles Slowly
 
+{% raw %}
+
 	Article: Q106731
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0
@@ -99,3 +101,5 @@ permalink: /kb/106/Q106731/
 	
 	=============================================================================
 	
+
+{% endraw %}

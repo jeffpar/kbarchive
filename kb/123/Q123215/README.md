@@ -6,6 +6,8 @@ permalink: /kb/123/Q123215/
 
 ## Q123215: Backup Incorrectly Sets Archive Bit on WFWG 3.11 Files
 
+{% raw %}
+
 	Article: Q123215
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123215/
 	
 	=============================================================================
 	
+
+{% endraw %}

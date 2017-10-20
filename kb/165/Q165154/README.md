@@ -6,6 +6,8 @@ permalink: /kb/165/Q165154/
 
 ## Q165154: 3270 Print Session Stays in Spooling Status
 
+{% raw %}
+
 	Article: Q165154
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/165/Q165154/
 	
 	=============================================================================
 	
+
+{% endraw %}

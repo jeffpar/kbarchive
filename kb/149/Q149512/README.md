@@ -6,6 +6,8 @@ permalink: /kb/149/Q149512/
 
 ## Q149512: BUG: ASSERT Failure with String Assigned to User-Defined Type
 
+{% raw %}
+
 	Article: Q149512
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/149/Q149512/
 	
 	=============================================================================
 	
+
+{% endraw %}

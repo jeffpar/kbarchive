@@ -6,6 +6,8 @@ permalink: /kb/084/Q84156/
 
 ## Q84156: Novell Printer Dialog Not Fully Repainted on EGA
 
+{% raw %}
+
 	Article: Q84156
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -33,3 +35,5 @@ permalink: /kb/084/Q84156/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/270/Q270744/
 
 ## Q270744: ELL: User Information Is Not Saved When Uninstalling Software
 
+{% raw %}
+
 	Article: Q270744
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/270/Q270744/
 	
 	=============================================================================
 	
+
+{% endraw %}

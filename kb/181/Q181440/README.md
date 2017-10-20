@@ -6,6 +6,8 @@ permalink: /kb/181/Q181440/
 
 ## Q181440: HOWTO: Add Full Row Select Functionality to a ListView Control
 
+{% raw %}
+
 	Article: Q181440
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -108,3 +110,5 @@ permalink: /kb/181/Q181440/
 	
 	=============================================================================
 	
+
+{% endraw %}

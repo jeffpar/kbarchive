@@ -6,6 +6,8 @@ permalink: /kb/261/Q261294/
 
 ## Q261294: XADM: Using Search Permissions to Suppress Container Views
 
+{% raw %}
+
 	Article: Q261294
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -112,3 +114,5 @@ permalink: /kb/261/Q261294/
 	
 	=============================================================================
 	
+
+{% endraw %}

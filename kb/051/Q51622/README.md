@@ -6,6 +6,8 @@ permalink: /kb/051/Q51622/
 
 ## Q51622: mgreplist Incorrectly Documented As megreplist in Example
 
+{% raw %}
+
 	Article: Q51622
 	Product(s): See article
 	Version(s): 1.02
@@ -40,3 +42,5 @@ permalink: /kb/051/Q51622/
 	
 	3. Any file along the INCLUDE environment variable path with a .H
 	   extension.
+
+{% endraw %}

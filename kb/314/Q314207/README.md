@@ -6,6 +6,8 @@ permalink: /kb/314/Q314207/
 
 ## Q314207: SMS: Site System Status Summarizer Does Not Update Properly
 
+{% raw %}
+
 	Article: Q314207
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -68,3 +70,5 @@ permalink: /kb/314/Q314207/
 	
 	=============================================================================
 	
+
+{% endraw %}

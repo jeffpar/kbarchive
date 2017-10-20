@@ -6,6 +6,8 @@ permalink: /kb/169/Q169257/
 
 ## Q169257: INFO: Actions That Perform an Implicit GET
 
+{% raw %}
+
 	Article: Q169257
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/169/Q169257/
 	
 	=============================================================================
 	
+
+{% endraw %}

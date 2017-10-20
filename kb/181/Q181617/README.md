@@ -6,6 +6,8 @@ permalink: /kb/181/Q181617/
 
 ## Q181617: WD97: How to Create Multiple Tables of Contents in Same Document
 
+{% raw %}
+
 	Article: Q181617
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -124,3 +126,5 @@ permalink: /kb/181/Q181617/
 	
 	=============================================================================
 	
+
+{% endraw %}

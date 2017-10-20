@@ -6,6 +6,8 @@ permalink: /kb/073/Q73715/
 
 ## Q73715: Horsehead Bookend Is Cropped by Design
 
+{% raw %}
+
 	Article: Q73715
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -37,3 +39,5 @@ permalink: /kb/073/Q73715/
 	
 	=============================================================================
 	
+
+{% endraw %}

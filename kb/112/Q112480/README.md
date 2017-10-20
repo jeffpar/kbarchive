@@ -6,6 +6,8 @@ permalink: /kb/112/Q112480/
 
 ## Q112480: How to Find the Hard Disk Drive Name Using FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q112480
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -47,3 +49,5 @@ permalink: /kb/112/Q112480/
 	
 	=============================================================================
 	
+
+{% endraw %}

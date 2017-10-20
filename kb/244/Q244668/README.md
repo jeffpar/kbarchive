@@ -6,6 +6,8 @@ permalink: /kb/244/Q244668/
 
 ## Q244668: XCLN: Outlook 2000 Upgrade Error Message: Unable to Switch to...
 
+{% raw %}
+
 	Article: Q244668
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -82,3 +84,5 @@ permalink: /kb/244/Q244668/
 	
 	=============================================================================
 	
+
+{% endraw %}

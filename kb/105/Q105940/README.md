@@ -6,6 +6,8 @@ permalink: /kb/105/Q105940/
 
 ## Q105940: Troubleshooting Serial Port Problems in Windows
 
+{% raw %}
+
 	Article: Q105940
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11,95
@@ -211,3 +213,5 @@ permalink: /kb/105/Q105940/
 	
 	=============================================================================
 	
+
+{% endraw %}

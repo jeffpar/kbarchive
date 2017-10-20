@@ -6,6 +6,8 @@ permalink: /kb/095/Q95869/
 
 ## Q95869: Test Button Unavailable for PC Speaker in Control Panel
 
+{% raw %}
+
 	Article: Q95869
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -86,3 +88,5 @@ permalink: /kb/095/Q95869/
 	
 	=============================================================================
 	
+
+{% endraw %}

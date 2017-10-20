@@ -6,6 +6,8 @@ permalink: /kb/134/Q134587/
 
 ## Q134587: Err Msg: Can't Use -REALBREAK Under this Version of DPMI
 
+{% raw %}
+
 	Article: Q134587
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134587/
 	
 	=============================================================================
 	
+
+{% endraw %}

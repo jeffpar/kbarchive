@@ -6,6 +6,8 @@ permalink: /kb/192/Q192297/
 
 ## Q192297: Applications May Fail with Access Violation During File Open
 
+{% raw %}
+
 	Article: Q192297
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/192/Q192297/
 	
 	=============================================================================
 	
+
+{% endraw %}

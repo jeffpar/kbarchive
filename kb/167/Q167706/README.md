@@ -6,6 +6,8 @@ permalink: /kb/167/Q167706/
 
 ## Q167706: FIX: Internet Transfer Control 5.0 &quot;POST&quot; Request Doesn't Work
 
+{% raw %}
+
 	Article: Q167706
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -222,3 +224,5 @@ permalink: /kb/167/Q167706/
 	
 	=============================================================================
 	
+
+{% endraw %}

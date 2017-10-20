@@ -6,6 +6,8 @@ permalink: /kb/166/Q166185/
 
 ## Q166185: Macintosh Chooser May Hang When Connecting to Windows NT
 
+{% raw %}
+
 	Article: Q166185
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -70,3 +72,5 @@ permalink: /kb/166/Q166185/
 	
 	=============================================================================
 	
+
+{% endraw %}

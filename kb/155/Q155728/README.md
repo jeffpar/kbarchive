@@ -6,6 +6,8 @@ permalink: /kb/155/Q155728/
 
 ## Q155728: Changing Access Rights for a User Changes Group Rights
 
+{% raw %}
+
 	Article: Q155728
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -48,3 +50,5 @@ permalink: /kb/155/Q155728/
 	
 	=============================================================================
 	
+
+{% endraw %}

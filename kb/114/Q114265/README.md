@@ -6,6 +6,8 @@ permalink: /kb/114/Q114265/
 
 ## Q114265: HP Scanjet IIc May Fail With Future Domain TMC 1670
 
+{% raw %}
+
 	Article: Q114265
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -68,3 +70,5 @@ permalink: /kb/114/Q114265/
 	
 	=============================================================================
 	
+
+{% endraw %}

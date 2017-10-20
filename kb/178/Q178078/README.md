@@ -6,6 +6,8 @@ permalink: /kb/178/Q178078/
 
 ## Q178078: PRB: Events Occur in EXE While a Message Box Is Displayed
 
+{% raw %}
+
 	Article: Q178078
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/178/Q178078/
 	
 	=============================================================================
 	
+
+{% endraw %}

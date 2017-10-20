@@ -6,6 +6,8 @@ permalink: /kb/175/Q175422/
 
 ## Q175422: Monster Truck Madness: Garbled or Missing Fonts
 
+{% raw %}
+
 	Article: Q175422
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/175/Q175422/
 	
 	=============================================================================
 	
+
+{% endraw %}

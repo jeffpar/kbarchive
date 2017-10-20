@@ -6,6 +6,8 @@ permalink: /kb/289/Q289863/
 
 ## Q289863: Data May Not Be Saved to Node When Cluster Cannot Communicate
 
+{% raw %}
+
 	Article: Q289863
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -127,3 +129,5 @@ permalink: /kb/289/Q289863/
 	
 	=============================================================================
 	
+
+{% endraw %}

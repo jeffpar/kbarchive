@@ -6,6 +6,8 @@ permalink: /kb/196/Q196821/
 
 ## Q196821: INFO: Files in Windows 98&#92;System Folder for Microsoft VM
 
+{% raw %}
+
 	Article: Q196821
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/196/Q196821/
 	
 	=============================================================================
 	
+
+{% endraw %}

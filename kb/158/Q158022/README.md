@@ -6,6 +6,8 @@ permalink: /kb/158/Q158022/
 
 ## Q158022: RunOnce Registry Key Runs Program at Every Startup
 
+{% raw %}
+
 	Article: Q158022
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -91,3 +93,5 @@ permalink: /kb/158/Q158022/
 	
 	=============================================================================
 	
+
+{% endraw %}

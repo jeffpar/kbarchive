@@ -6,6 +6,8 @@ permalink: /kb/289/Q289131/
 
 ## Q289131: Redirect URL Corruption When Requested URL Contains Trailing &quot;/&quot;
 
+{% raw %}
+
 	Article: Q289131
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -84,3 +86,5 @@ permalink: /kb/289/Q289131/
 	
 	=============================================================================
 	
+
+{% endraw %}

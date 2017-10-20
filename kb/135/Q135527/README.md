@@ -6,6 +6,8 @@ permalink: /kb/135/Q135527/
 
 ## Q135527: Err Msg: Windows NT Could Not Be Started As Configured
 
+{% raw %}
+
 	Article: Q135527
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -74,3 +76,5 @@ permalink: /kb/135/Q135527/
 	
 	=============================================================================
 	
+
+{% endraw %}

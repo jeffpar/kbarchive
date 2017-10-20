@@ -6,6 +6,8 @@ permalink: /kb/149/Q149418/
 
 ## Q149418: Problems with HP &quot;Fonts for the Family&quot; Font Package
 
+{% raw %}
+
 	Article: Q149418
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/149/Q149418/
 	
 	=============================================================================
 	
+
+{% endraw %}

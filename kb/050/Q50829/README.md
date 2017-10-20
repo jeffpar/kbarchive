@@ -6,6 +6,8 @@ permalink: /kb/050/Q50829/
 
 ## Q50829: Characters Appear on COM1 with Logitech Driver
 
+{% raw %}
+
 	Article: Q50829
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/050/Q50829/
 	
 	=============================================================================
 	
+
+{% endraw %}

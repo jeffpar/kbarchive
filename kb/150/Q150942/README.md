@@ -6,6 +6,8 @@ permalink: /kb/150/Q150942/
 
 ## Q150942: PRB: ISAM Tuning Information Not Read From VB.INI
 
+{% raw %}
+
 	Article: Q150942
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -111,3 +113,5 @@ permalink: /kb/150/Q150942/
 	
 	=============================================================================
 	
+
+{% endraw %}

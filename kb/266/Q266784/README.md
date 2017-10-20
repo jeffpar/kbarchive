@@ -6,6 +6,8 @@ permalink: /kb/266/Q266784/
 
 ## Q266784: XADM: Administrator Program Doesn't Start with Error 0xc0020002
 
+{% raw %}
+
 	Article: Q266784
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/266/Q266784/
 	
 	=============================================================================
 	
+
+{% endraw %}

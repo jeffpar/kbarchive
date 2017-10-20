@@ -6,6 +6,8 @@ permalink: /kb/238/Q238191/
 
 ## Q238191: Partial Replication May Take a Long Time with Very Large Groups
 
+{% raw %}
+
 	Article: Q238191
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -127,3 +129,5 @@ permalink: /kb/238/Q238191/
 	
 	=============================================================================
 	
+
+{% endraw %}

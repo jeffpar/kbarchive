@@ -6,6 +6,8 @@ permalink: /kb/266/Q266582/
 
 ## Q266582: Encarta Researcher: Researcher Window Is Repeatedly Displayed
 
+{% raw %}
+
 	Article: Q266582
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/266/Q266582/
 	
 	=============================================================================
 	
+
+{% endraw %}

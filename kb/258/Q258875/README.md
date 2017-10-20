@@ -6,6 +6,8 @@ permalink: /kb/258/Q258875/
 
 ## Q258875: BUG: Win2000 Multicast Groups Not Rejoined When Interface Enable
 
+{% raw %}
+
 	Article: Q258875
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -80,3 +82,5 @@ permalink: /kb/258/Q258875/
 	
 	=============================================================================
 	
+
+{% endraw %}

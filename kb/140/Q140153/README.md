@@ -6,6 +6,8 @@ permalink: /kb/140/Q140153/
 
 ## Q140153: Music Central and Cinemania Fonts on CD Are Not Reinstalled
 
+{% raw %}
+
 	Article: Q140153
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition; WINDOWS:95
@@ -81,3 +83,5 @@ permalink: /kb/140/Q140153/
 	
 	=============================================================================
 	
+
+{% endraw %}

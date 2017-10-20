@@ -6,6 +6,8 @@ permalink: /kb/315/Q315192/
 
 ## Q315192: GAMES: Windows Unexpectedly Restarts
 
+{% raw %}
+
 	Article: Q315192
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -161,3 +163,5 @@ permalink: /kb/315/Q315192/
 	
 	=============================================================================
 	
+
+{% endraw %}

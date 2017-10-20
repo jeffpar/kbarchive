@@ -6,6 +6,8 @@ permalink: /kb/046/Q46840/
 
 ## Q46840: QuickAssembler 2.01 PACKING.LST
 
+{% raw %}
+
 	Article: Q46840
 	Product(s): See article
 	Version(s): 2.01
@@ -239,3 +241,5 @@ permalink: /kb/046/Q46840/
 	
 	QA1.HLP                     Help on the QuickAssembler - Part 2 of 2
 	QCENV.HLP                   Help on the QuickC environment
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/207/Q207510/
 
 ## Q207510: Err Msg: An Error Occurred Reading or Setting a Configuration...
 
+{% raw %}
+
 	Article: Q207510
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/207/Q207510/
 	
 	=============================================================================
 	
+
+{% endraw %}

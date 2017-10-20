@@ -6,6 +6,8 @@ permalink: /kb/122/Q122847/
 
 ## Q122847: FIX: Cannot Watch Local Variables of a &#95;&#95;finally Block
 
+{% raw %}
+
 	Article: Q122847
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -96,3 +98,5 @@ permalink: /kb/122/Q122847/
 	
 	=============================================================================
 	
+
+{% endraw %}

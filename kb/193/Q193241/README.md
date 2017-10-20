@@ -6,6 +6,8 @@ permalink: /kb/193/Q193241/
 
 ## Q193241: HOWTO: Synchronize Data Displayed on Two Different Forms
 
+{% raw %}
+
 	Article: Q193241
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -296,3 +298,5 @@ permalink: /kb/193/Q193241/
 	
 	=============================================================================
 	
+
+{% endraw %}

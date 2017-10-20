@@ -6,6 +6,8 @@ permalink: /kb/285/Q285144/
 
 ## Q285144: Troubleshooting Microsoft Outlook Comments and Corrections
 
+{% raw %}
+
 	Article: Q285144
 	Product(s): Microsoft Press
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/285/Q285144/
 	
 	=============================================================================
 	
+
+{% endraw %}

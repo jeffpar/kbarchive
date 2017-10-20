@@ -6,6 +6,8 @@ permalink: /kb/032/Q32415/
 
 ## Q32415: Cannot Use Alternate Math Library Without Compiling BC /FPa
 
+{% raw %}
+
 	Article: Q32415
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -41,3 +43,5 @@ permalink: /kb/032/Q32415/
 	This information applies to Microsoft BASIC Compiler Versions 6.00 and
 	6.00b for MS-DOS and MS OS/2 and to Microsoft BASIC Professional
 	Development System (PDS) Version 7.00 for MS-DOS and MS OS/2.
+
+{% endraw %}

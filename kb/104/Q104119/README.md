@@ -6,6 +6,8 @@ permalink: /kb/104/Q104119/
 
 ## Q104119: Colors Are Strange or Text Is Hard to Read
 
+{% raw %}
+
 	Article: Q104119
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/104/Q104119/
 	
 	=============================================================================
 	
+
+{% endraw %}

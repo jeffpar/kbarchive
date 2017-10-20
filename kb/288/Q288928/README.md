@@ -6,6 +6,8 @@ permalink: /kb/288/Q288928/
 
 ## Q288928: BatchOptimistic With Client Side Cursor in DataEnvironment Fails
 
+{% raw %}
+
 	Article: Q288928
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.6,6.0 SP4
@@ -123,3 +125,5 @@ permalink: /kb/288/Q288928/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/255/Q255685/
 
 ## Q255685: Error Message Discovering &quot;Microsoft DMD&quot; and &quot;Configuration&quot;
 
+{% raw %}
+
 	Article: Q255685
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -75,3 +77,5 @@ permalink: /kb/255/Q255685/
 	
 	=============================================================================
 	
+
+{% endraw %}

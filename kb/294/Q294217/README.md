@@ -6,6 +6,8 @@ permalink: /kb/294/Q294217/
 
 ## Q294217: Cannot Retrieve Custom HTTP Variables That Contain an Underscore
 
+{% raw %}
+
 	Article: Q294217
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -62,3 +64,5 @@ permalink: /kb/294/Q294217/
 	
 	=============================================================================
 	
+
+{% endraw %}

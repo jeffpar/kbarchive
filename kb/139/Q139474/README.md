@@ -6,6 +6,8 @@ permalink: /kb/139/Q139474/
 
 ## Q139474: Cannot Access Floppy Drive When Backup Program Is Running
 
+{% raw %}
+
 	Article: Q139474
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/139/Q139474/
 	
 	=============================================================================
 	
+
+{% endraw %}

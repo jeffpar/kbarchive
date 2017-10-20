@@ -6,6 +6,8 @@ permalink: /kb/163/Q163378/
 
 ## Q163378: Microsoft Exchange Hangs Sending Message Using SPX
 
+{% raw %}
+
 	Article: Q163378
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/163/Q163378/
 	
 	=============================================================================
 	
+
+{% endraw %}

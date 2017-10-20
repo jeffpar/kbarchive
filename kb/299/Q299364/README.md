@@ -6,6 +6,8 @@ permalink: /kb/299/Q299364/
 
 ## Q299364: Access Violation in Services.exe with Unconfigured PC Card
 
+{% raw %}
+
 	Article: Q299364
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -92,3 +94,5 @@ permalink: /kb/299/Q299364/
 	
 	=============================================================================
 	
+
+{% endraw %}

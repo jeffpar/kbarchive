@@ -6,6 +6,8 @@ permalink: /kb/117/Q117728/
 
 ## Q117728: No Support for Apple Random Number Exchange
 
+{% raw %}
+
 	Article: Q117728
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -41,3 +43,5 @@ permalink: /kb/117/Q117728/
 	
 	=============================================================================
 	
+
+{% endraw %}

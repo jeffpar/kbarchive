@@ -6,6 +6,8 @@ permalink: /kb/122/Q122223/
 
 ## Q122223: Using Lexmark 4033 Network Printers in Windows NT
 
+{% raw %}
+
 	Article: Q122223
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/122/Q122223/
 	
 	=============================================================================
 	
+
+{% endraw %}

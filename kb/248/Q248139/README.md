@@ -6,6 +6,8 @@ permalink: /kb/248/Q248139/
 
 ## Q248139: BUG:MSHFlexGrid Control Empty w/ DataEnvironment Parameter Query
 
+{% raw %}
+
 	Article: Q248139
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -135,3 +137,5 @@ permalink: /kb/248/Q248139/
 	
 	=============================================================================
 	
+
+{% endraw %}

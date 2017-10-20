@@ -6,6 +6,8 @@ permalink: /kb/111/Q111707/
 
 ## Q111707: Workgroup Add-On for MS-DOS 3.11 Disk Directories
 
+{% raw %}
+
 	Article: Q111707
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -168,3 +170,5 @@ permalink: /kb/111/Q111707/
 	
 	=============================================================================
 	
+
+{% endraw %}

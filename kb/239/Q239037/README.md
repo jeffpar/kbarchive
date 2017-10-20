@@ -6,6 +6,8 @@ permalink: /kb/239/Q239037/
 
 ## Q239037: Bandwidth Throttling May Not Appear to Function in Some Cases
 
+{% raw %}
+
 	Article: Q239037
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -59,3 +61,5 @@ permalink: /kb/239/Q239037/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163935/
 
 ## Q163935: FIX: Error &quot;Invalid Page Fault&quot; When Connecting to Sybase
 
+{% raw %}
+
 	Article: Q163935
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a
@@ -82,3 +84,5 @@ permalink: /kb/163/Q163935/
 	
 	=============================================================================
 	
+
+{% endraw %}

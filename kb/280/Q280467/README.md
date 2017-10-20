@@ -6,6 +6,8 @@ permalink: /kb/280/Q280467/
 
 ## Q280467: PRB: DDE Support Disabled While MFC App Displays Modal Dialog
 
+{% raw %}
+
 	Article: Q280467
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -203,3 +205,5 @@ permalink: /kb/280/Q280467/
 	
 	=============================================================================
 	
+
+{% endraw %}

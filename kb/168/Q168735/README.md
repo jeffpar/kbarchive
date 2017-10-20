@@ -6,6 +6,8 @@ permalink: /kb/168/Q168735/
 
 ## Q168735: XGEN: README.TXT: Microsoft Exchange 5.0 U.S. Service Pack 2
 
+{% raw %}
+
 	Article: Q168735
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP2
@@ -889,3 +891,5 @@ permalink: /kb/168/Q168735/
 	
 	=============================================================================
 	
+
+{% endraw %}

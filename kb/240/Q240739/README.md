@@ -6,6 +6,8 @@ permalink: /kb/240/Q240739/
 
 ## Q240739: IBM ServeRAID Cluster Solutions Causes Cluster Handle Leak
 
+{% raw %}
+
 	Article: Q240739
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/240/Q240739/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234844/
 
 ## Q234844: Incorrect PID Installing Microsoft Certified Partner Welcome Kit
 
+{% raw %}
+
 	Article: Q234844
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -52,3 +54,5 @@ permalink: /kb/234/Q234844/
 	
 	=============================================================================
 	
+
+{% endraw %}

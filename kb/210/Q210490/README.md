@@ -6,6 +6,8 @@ permalink: /kb/210/Q210490/
 
 ## Q210490: Err Msg: Msgolf99 Caused an Invalid Page Fault in Module Unknown
 
+{% raw %}
+
 	Article: Q210490
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/210/Q210490/
 	
 	=============================================================================
 	
+
+{% endraw %}

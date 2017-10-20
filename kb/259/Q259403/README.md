@@ -6,6 +6,8 @@ permalink: /kb/259/Q259403/
 
 ## Q259403: Vcredist Installs Latest Run-Time Components for Visual C++
 
+{% raw %}
+
 	Article: Q259403
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,6.0
@@ -196,3 +198,5 @@ permalink: /kb/259/Q259403/
 	
 	=============================================================================
 	
+
+{% endraw %}

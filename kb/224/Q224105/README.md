@@ -6,6 +6,8 @@ permalink: /kb/224/Q224105/
 
 ## Q224105: XCLN: LDAP Query Returns Error Message: This Name Could Not...
 
+{% raw %}
+
 	Article: Q224105
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -124,3 +126,5 @@ permalink: /kb/224/Q224105/
 	
 	=============================================================================
 	
+
+{% endraw %}

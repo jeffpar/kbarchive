@@ -6,6 +6,8 @@ permalink: /kb/134/Q134906/
 
 ## Q134906: Changing Domains in SNA Admin Gives Wrong Status Information
 
+{% raw %}
+
 	Article: Q134906
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -71,3 +73,5 @@ permalink: /kb/134/Q134906/
 	
 	=============================================================================
 	
+
+{% endraw %}

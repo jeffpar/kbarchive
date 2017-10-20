@@ -6,6 +6,8 @@ permalink: /kb/269/Q269447/
 
 ## Q269447: XCLN: How to Disable the &quot;Reconfigure Mail Support&quot; Button
 
+{% raw %}
+
 	Article: Q269447
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/269/Q269447/
 	
 	=============================================================================
 	
+
+{% endraw %}

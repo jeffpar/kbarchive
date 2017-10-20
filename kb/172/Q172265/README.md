@@ -6,6 +6,8 @@ permalink: /kb/172/Q172265/
 
 ## Q172265: Running Microsoft Excel 97 Comments and Corrections
 
+{% raw %}
+
 	Article: Q172265
 	Product(s): Microsoft Press
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/172/Q172265/
 	
 	=============================================================================
 	
+
+{% endraw %}

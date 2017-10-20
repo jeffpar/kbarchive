@@ -6,6 +6,8 @@ permalink: /kb/295/Q295323/
 
 ## Q295323: Windows NT 4.0 Policies May Not Work in a Windows 2000 Domain
 
+{% raw %}
+
 	Article: Q295323
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -97,3 +99,5 @@ permalink: /kb/295/Q295323/
 	
 	=============================================================================
 	
+
+{% endraw %}

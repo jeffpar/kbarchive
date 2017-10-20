@@ -6,6 +6,8 @@ permalink: /kb/115/Q115361/
 
 ## Q115361: X400: X400ADM.EXE Log Print Job Errors Overwrite Admin Menu
 
+{% raw %}
+
 	Article: Q115361
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -65,3 +67,5 @@ permalink: /kb/115/Q115361/
 	
 	=============================================================================
 	
+
+{% endraw %}

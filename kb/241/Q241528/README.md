@@ -6,6 +6,8 @@ permalink: /kb/241/Q241528/
 
 ## Q241528: Terminal Server Client Hangs Up After Repeated Logon and Logoffs
 
+{% raw %}
+
 	Article: Q241528
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -48,3 +50,5 @@ permalink: /kb/241/Q241528/
 	
 	=============================================================================
 	
+
+{% endraw %}

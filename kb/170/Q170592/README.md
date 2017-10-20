@@ -6,6 +6,8 @@ permalink: /kb/170/Q170592/
 
 ## Q170592: XCLN: Client Appears to Hang When Using Check Names Command
 
+{% raw %}
+
 	Article: Q170592
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0; Win95:5.0
@@ -53,3 +55,5 @@ permalink: /kb/170/Q170592/
 	
 	=============================================================================
 	
+
+{% endraw %}

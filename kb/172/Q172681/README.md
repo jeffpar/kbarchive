@@ -6,6 +6,8 @@ permalink: /kb/172/Q172681/
 
 ## Q172681: Print Server Does Not End Job on &quot;Flush Print Buffer&quot;
 
+{% raw %}
+
 	Article: Q172681
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -70,3 +72,5 @@ permalink: /kb/172/Q172681/
 	
 	=============================================================================
 	
+
+{% endraw %}

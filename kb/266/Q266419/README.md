@@ -6,6 +6,8 @@ permalink: /kb/266/Q266419/
 
 ## Q266419: How to Disable Network Browsing But Keep UNC Functionality
 
+{% raw %}
+
 	Article: Q266419
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/266/Q266419/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163579/
 
 ## Q163579: Server Properties Shows &quot;Active Users&quot; at License Limit
 
+{% raw %}
+
 	Article: Q163579
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -66,3 +68,5 @@ permalink: /kb/163/Q163579/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116435/
 
 ## Q116435: PC DirSync: Null Dir-Sync Password Settings Accepted on Server
 
+{% raw %}
+
 	Article: Q116435
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -46,3 +48,5 @@ permalink: /kb/116/Q116435/
 	
 	=============================================================================
 	
+
+{% endraw %}

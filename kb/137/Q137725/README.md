@@ -6,6 +6,8 @@ permalink: /kb/137/Q137725/
 
 ## Q137725: Resource Kit Tools Included on the Windows 95 CD-ROM
 
+{% raw %}
+
 	Article: Q137725
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -214,3 +216,5 @@ permalink: /kb/137/Q137725/
 	
 	=============================================================================
 	
+
+{% endraw %}

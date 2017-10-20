@@ -6,6 +6,8 @@ permalink: /kb/179/Q179022/
 
 ## Q179022: PRB: Optimistic Concurrency Check Fails with SQL Text Field
 
+{% raw %}
+
 	Article: Q179022
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -192,3 +194,5 @@ permalink: /kb/179/Q179022/
 	
 	=============================================================================
 	
+
+{% endraw %}

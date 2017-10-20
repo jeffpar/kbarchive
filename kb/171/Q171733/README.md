@@ -6,6 +6,8 @@ permalink: /kb/171/Q171733/
 
 ## Q171733: PRB: FlexGrid Control Doesn't Trap Arrow Keys
 
+{% raw %}
+
 	Article: Q171733
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/171/Q171733/
 	
 	=============================================================================
 	
+
+{% endraw %}

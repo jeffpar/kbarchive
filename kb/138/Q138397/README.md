@@ -6,6 +6,8 @@ permalink: /kb/138/Q138397/
 
 ## Q138397: Disk Space Requirements for Visual FoxPro Workstation Installs
 
+{% raw %}
+
 	Article: Q138397
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/138/Q138397/
 	
 	=============================================================================
 	
+
+{% endraw %}

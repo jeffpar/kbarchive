@@ -6,6 +6,8 @@ permalink: /kb/327/Q327297/
 
 ## Q327297: BUG: 5250 Client in TN5250 Mode May Stop Responding
 
+{% raw %}
+
 	Article: Q327297
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/327/Q327297/
 	
 	=============================================================================
 	
+
+{% endraw %}

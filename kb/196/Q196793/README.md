@@ -6,6 +6,8 @@ permalink: /kb/196/Q196793/
 
 ## Q196793: XIMS: Restricting Internet E-Mail to Specific Domains via IMS
 
+{% raw %}
+
 	Article: Q196793
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/196/Q196793/
 	
 	=============================================================================
 	
+
+{% endraw %}

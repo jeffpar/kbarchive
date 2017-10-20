@@ -6,6 +6,8 @@ permalink: /kb/131/Q131402/
 
 ## Q131402: Windows NT Server Appears to Hang (NETBT.SYS is Looping)
 
+{% raw %}
+
 	Article: Q131402
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -58,3 +60,5 @@ permalink: /kb/131/Q131402/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222156/
 
 ## Q222156: MSClient 3.0 Enforces Source Routing in Token Ring Broadcasts
 
+{% raw %}
+
 	Article: Q222156
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.0
@@ -61,3 +63,5 @@ permalink: /kb/222/Q222156/
 	
 	=============================================================================
 	
+
+{% endraw %}

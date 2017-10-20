@@ -6,6 +6,8 @@ permalink: /kb/246/Q246398/
 
 ## Q246398: Help Screens Do Not Display in Compass
 
+{% raw %}
+
 	Article: Q246398
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1; WINDOWS:2000
@@ -80,3 +82,5 @@ permalink: /kb/246/Q246398/
 	
 	=============================================================================
 	
+
+{% endraw %}

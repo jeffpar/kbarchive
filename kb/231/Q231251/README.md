@@ -6,6 +6,8 @@ permalink: /kb/231/Q231251/
 
 ## Q231251: SMS: IBM Networks Coordinated Logon Client Hangs Installation
 
+{% raw %}
+
 	Article: Q231251
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -58,3 +60,5 @@ permalink: /kb/231/Q231251/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139856/
 
 ## Q139856: XCLN: Cannot Open or Print Multiple Attachments in Message
 
+{% raw %}
+
 	Article: Q139856
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -41,3 +43,5 @@ permalink: /kb/139/Q139856/
 	
 	=============================================================================
 	
+
+{% endraw %}

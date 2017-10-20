@@ -6,6 +6,8 @@ permalink: /kb/140/Q140415/
 
 ## Q140415: How to Remove Services and Device Drivers in Windows NT
 
+{% raw %}
+
 	Article: Q140415
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -90,3 +92,5 @@ permalink: /kb/140/Q140415/
 	
 	=============================================================================
 	
+
+{% endraw %}

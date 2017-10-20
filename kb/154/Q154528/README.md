@@ -6,6 +6,8 @@ permalink: /kb/154/Q154528/
 
 ## Q154528: How to Change or Disable the Screen Saver Used at Logon
 
+{% raw %}
+
 	Article: Q154528
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -59,3 +61,5 @@ permalink: /kb/154/Q154528/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114758/
 
 ## Q114758: TrueType Fonts Are Randomly Dropped with Kyocera F-800
 
+{% raw %}
+
 	Article: Q114758
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -67,3 +69,5 @@ permalink: /kb/114/Q114758/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84085/
 
 ## Q84085: Novell's Task Mode Switch Causes Problems in 386 Enhanced Mode
 
+{% raw %}
+
 	Article: Q84085
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/084/Q84085/
 	
 	=============================================================================
 	
+
+{% endraw %}

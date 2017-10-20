@@ -6,6 +6,8 @@ permalink: /kb/031/Q31495/
 
 ## Q31495: Macro to Enter Form Feed or Control Characters in Editor
 
+{% raw %}
+
 	Article: Q31495
 	Product(s): See article
 	Version(s): 1.00 | 1.00
@@ -32,3 +34,5 @@ permalink: /kb/031/Q31495/
 	followed by a "CTRL+X", you will see a "\030" instead of "arg":
 	
 	quote:F5.
+
+{% endraw %}

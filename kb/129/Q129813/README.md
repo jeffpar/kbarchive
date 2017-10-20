@@ -6,6 +6,8 @@ permalink: /kb/129/Q129813/
 
 ## Q129813: How to Not Check Addresses in The Microsoft Network E-mail
 
+{% raw %}
+
 	Article: Q129813
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0
@@ -39,3 +41,5 @@ permalink: /kb/129/Q129813/
 	
 	=============================================================================
 	
+
+{% endraw %}

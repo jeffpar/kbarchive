@@ -6,6 +6,8 @@ permalink: /kb/241/Q241420/
 
 ## Q241420: SNA Server Compact Disc Directory Listing of &#92;Clients&#92;Web Folder
 
+{% raw %}
+
 	Article: Q241420
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -426,3 +428,5 @@ permalink: /kb/241/Q241420/
 	
 	=============================================================================
 	
+
+{% endraw %}

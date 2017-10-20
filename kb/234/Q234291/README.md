@@ -6,6 +6,8 @@ permalink: /kb/234/Q234291/
 
 ## Q234291: XFOR: Canceling Notes/SNADS/PROFS/GW Setup Breaks Connector
 
+{% raw %}
+
 	Article: Q234291
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/234/Q234291/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245653/
 
 ## Q245653: Errors Opening Messages with Attachments on Terminal Server
 
+{% raw %}
+
 	Article: Q245653
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -59,3 +61,5 @@ permalink: /kb/245/Q245653/
 	
 	=============================================================================
 	
+
+{% endraw %}

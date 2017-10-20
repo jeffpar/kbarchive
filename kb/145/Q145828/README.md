@@ -6,6 +6,8 @@ permalink: /kb/145/Q145828/
 
 ## Q145828: Duplicate Server Names Cause Event Log 537 with FPNW Installed
 
+{% raw %}
+
 	Article: Q145828
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -54,3 +56,5 @@ permalink: /kb/145/Q145828/
 	
 	=============================================================================
 	
+
+{% endraw %}

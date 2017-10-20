@@ -6,6 +6,8 @@ permalink: /kb/032/Q32095/
 
 ## Q32095: Exit Does Not Save Files when NoAutosave Is Set
 
+{% raw %}
+
 	Article: Q32095
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -22,3 +24,5 @@ permalink: /kb/032/Q32095/
 	file must be explicitly saved when desired; this can be done by
 	entering Arg Arg Setfile (ALT+A ALT+A F2 in the default keyboard
 	setup).
+
+{% endraw %}

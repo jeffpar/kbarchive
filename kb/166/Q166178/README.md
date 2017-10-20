@@ -6,6 +6,8 @@ permalink: /kb/166/Q166178/
 
 ## Q166178: INFO: Visual FoxPro 5.0 Book and Video List
 
+{% raw %}
+
 	Article: Q166178
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -95,3 +97,5 @@ permalink: /kb/166/Q166178/
 	
 	=============================================================================
 	
+
+{% endraw %}

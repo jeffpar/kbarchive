@@ -6,6 +6,8 @@ permalink: /kb/068/Q68956/
 
 ## Q68956: WordPerfect 5.1 and WordStar 6.0 Mouse Support
 
+{% raw %}
+
 	Article: Q68956
 	Product(s): See article
 	Version(s): 1.00
@@ -40,3 +42,5 @@ permalink: /kb/068/Q68956/
 	The products referenced here are manufactured by vendors independent
 	of Microsoft; we make no warranty, implied or otherwise, regarding
 	these products' performance or reliability.
+
+{% endraw %}

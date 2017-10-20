@@ -6,6 +6,8 @@ permalink: /kb/164/Q164628/
 
 ## Q164628: XADM: Export Populates Addresses Column Randomly
 
+{% raw %}
+
 	Article: Q164628
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/164/Q164628/
 	
 	=============================================================================
 	
+
+{% endraw %}

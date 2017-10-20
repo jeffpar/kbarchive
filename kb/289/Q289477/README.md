@@ -6,6 +6,8 @@ permalink: /kb/289/Q289477/
 
 ## Q289477: Err Msg Installing DB2 ODBC Driver: Could Not Load Wappc32.dll
 
+{% raw %}
+
 	Article: Q289477
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/289/Q289477/
 	
 	=============================================================================
 	
+
+{% endraw %}

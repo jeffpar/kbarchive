@@ -6,6 +6,8 @@ permalink: /kb/240/Q240239/
 
 ## Q240239: HOWTO: Capture the Path to a File that has been Loaded into an A
 
+{% raw %}
+
 	Article: Q240239
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -110,3 +112,5 @@ permalink: /kb/240/Q240239/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274520/
 
 ## Q274520: Installing MSN Explorer With DUN Breaks NIC
 
+{% raw %}
+
 	Article: Q274520
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -53,3 +55,5 @@ permalink: /kb/274/Q274520/
 	
 	=============================================================================
 	
+
+{% endraw %}

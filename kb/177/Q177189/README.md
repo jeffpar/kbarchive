@@ -6,6 +6,8 @@ permalink: /kb/177/Q177189/
 
 ## Q177189: Err Msg: Guide.exe Is Linked to Missing Export Mcm.dll
 
+{% raw %}
+
 	Article: Q177189
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -148,3 +150,5 @@ permalink: /kb/177/Q177189/
 	
 	=============================================================================
 	
+
+{% endraw %}

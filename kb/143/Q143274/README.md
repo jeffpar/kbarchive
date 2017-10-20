@@ -6,6 +6,8 @@ permalink: /kb/143/Q143274/
 
 ## Q143274: HOWTO: Retrieve Printer Name from Windows95/98/Me Registry in VB
 
+{% raw %}
+
 	Article: Q143274
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -192,3 +194,5 @@ permalink: /kb/143/Q143274/
 	
 	=============================================================================
 	
+
+{% endraw %}

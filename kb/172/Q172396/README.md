@@ -6,6 +6,8 @@ permalink: /kb/172/Q172396/
 
 ## Q172396: PRB: Access Violation When Accessing STL Object in DLL
 
+{% raw %}
+
 	Article: Q172396
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS NT:5.0
@@ -172,3 +174,5 @@ permalink: /kb/172/Q172396/
 	
 	=============================================================================
 	
+
+{% endraw %}

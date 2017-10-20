@@ -6,6 +6,8 @@ permalink: /kb/150/Q150630/
 
 ## Q150630: Using the Seven Habits Wizard Generates Bad File Name Error
 
+{% raw %}
+
 	Article: Q150630
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -62,3 +64,5 @@ permalink: /kb/150/Q150630/
 	
 	=============================================================================
 	
+
+{% endraw %}

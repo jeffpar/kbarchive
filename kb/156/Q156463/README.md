@@ -6,6 +6,8 @@ permalink: /kb/156/Q156463/
 
 ## Q156463: Writer 2: System Font Remains When Show TrueType is Selected
 
+{% raw %}
+
 	Article: Q156463
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -44,3 +46,5 @@ permalink: /kb/156/Q156463/
 	
 	=============================================================================
 	
+
+{% endraw %}

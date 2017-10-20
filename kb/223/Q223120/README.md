@@ -6,6 +6,8 @@ permalink: /kb/223/Q223120/
 
 ## Q223120: FIX: ReDim Preserve on Array of UDTs Causes Crash
 
+{% raw %}
+
 	Article: Q223120
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -93,3 +95,5 @@ permalink: /kb/223/Q223120/
 	
 	=============================================================================
 	
+
+{% endraw %}

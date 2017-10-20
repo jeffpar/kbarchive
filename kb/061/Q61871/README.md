@@ -6,6 +6,8 @@ permalink: /kb/061/Q61871/
 
 ## Q61871: FIX: PWB 1.0 Requires Decimal Value for Stack Size LINK Option
 
+{% raw %}
+
 	Article: Q61871
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0; OS/2:1.0
@@ -53,3 +55,5 @@ permalink: /kb/061/Q61871/
 	
 	=============================================================================
 	
+
+{% endraw %}

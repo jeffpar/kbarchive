@@ -6,6 +6,8 @@ permalink: /kb/066/Q66990/
 
 ## Q66990: DOC: BinInfo Structure for GETSETPAPERBINS Escape Incorrect
 
+{% raw %}
+
 	Article: Q66990
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/066/Q66990/
 	
 	=============================================================================
 	
+
+{% endraw %}

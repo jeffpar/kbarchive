@@ -6,6 +6,8 @@ permalink: /kb/131/Q131143/
 
 ## Q131143: Event ID 5012 When Using S3 864 Video Adapter
 
+{% raw %}
+
 	Article: Q131143
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131143/
 	
 	=============================================================================
 	
+
+{% endraw %}

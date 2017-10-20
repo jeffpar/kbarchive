@@ -6,6 +6,8 @@ permalink: /kb/141/Q141325/
 
 ## Q141325: Baseball 1995: Team Filter Button Resets to All
 
+{% raw %}
+
 	Article: Q141325
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -43,3 +45,5 @@ permalink: /kb/141/Q141325/
 	
 	=============================================================================
 	
+
+{% endraw %}

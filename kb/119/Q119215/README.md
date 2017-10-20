@@ -6,6 +6,8 @@ permalink: /kb/119/Q119215/
 
 ## Q119215: WSS Err Msg: WSETUP Caused a GP Fault in Module WSETUP.EXE...
 
+{% raw %}
+
 	Article: Q119215
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.00 2.00a
@@ -52,3 +54,5 @@ permalink: /kb/119/Q119215/
 	
 	=============================================================================
 	
+
+{% endraw %}

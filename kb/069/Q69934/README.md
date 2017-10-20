@@ -6,6 +6,8 @@ permalink: /kb/069/Q69934/
 
 ## Q69934: INFO: #define Must Evaluate to Integer Const for #if Expression
 
+{% raw %}
+
 	Article: Q69934
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/069/Q69934/
 	
 	=============================================================================
 	
+
+{% endraw %}

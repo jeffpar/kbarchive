@@ -6,6 +6,8 @@ permalink: /kb/222/Q222967/
 
 ## Q222967: ZAK Client Setup Does Not Create TEMP Folders Correctly
 
+{% raw %}
+
 	Article: Q222967
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/222/Q222967/
 	
 	=============================================================================
 	
+
+{% endraw %}

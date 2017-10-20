@@ -6,6 +6,8 @@ permalink: /kb/035/Q35277/
 
 ## Q35277: Sample Program That Makes MS OS/2 Call to DosDelete Function
 
+{% raw %}
+
 	Article: Q35277
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -38,3 +40,5 @@ permalink: /kb/035/Q35277/
 	  Print fl$; "was DELETED"
 	END IF
 	end
+
+{% endraw %}

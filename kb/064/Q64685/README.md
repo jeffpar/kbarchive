@@ -6,6 +6,8 @@ permalink: /kb/064/Q64685/
 
 ## Q64685: Flight Simulator Does Not Have Serial Numbers
 
+{% raw %}
+
 	Article: Q64685
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/064/Q64685/
 	
 	=============================================================================
 	
+
+{% endraw %}

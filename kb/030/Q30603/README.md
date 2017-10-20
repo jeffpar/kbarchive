@@ -6,6 +6,8 @@ permalink: /kb/030/Q30603/
 
 ## Q30603: IBM 3270 PC Not Officially Supported by QuickBASIC
 
+{% raw %}
+
 	Article: Q30603
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -31,3 +33,5 @@ permalink: /kb/030/Q30603/
 	This information applies to QuickBASIC Versions 4.00, 4.00b, and 4.50,
 	and the Microsoft BASIC Compiler Versions 6.00 and 6.00b for MS-DOS
 	and OS/2 (and their included copies of QuickBASIC).
+
+{% endraw %}

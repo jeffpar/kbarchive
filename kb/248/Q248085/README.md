@@ -6,6 +6,8 @@ permalink: /kb/248/Q248085/
 
 ## Q248085: Err Msg: HTTP 401.5 - Unauthorized: Authorization by ISAPI ...
 
+{% raw %}
+
 	Article: Q248085
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -54,3 +56,5 @@ permalink: /kb/248/Q248085/
 	
 	=============================================================================
 	
+
+{% endraw %}

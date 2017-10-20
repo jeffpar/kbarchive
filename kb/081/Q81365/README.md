@@ -6,6 +6,8 @@ permalink: /kb/081/Q81365/
 
 ## Q81365: FIX: PWB Incorrectly Handles Select in Saved Macros
 
+{% raw %}
+
 	Article: Q81365
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.1
@@ -62,3 +64,5 @@ permalink: /kb/081/Q81365/
 	
 	=============================================================================
 	
+
+{% endraw %}

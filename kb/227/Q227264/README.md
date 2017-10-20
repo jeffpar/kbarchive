@@ -6,6 +6,8 @@ permalink: /kb/227/Q227264/
 
 ## Q227264: Index Server Returns Inconsistent Results
 
+{% raw %}
+
 	Article: Q227264
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,1.1,2.0
@@ -51,3 +53,5 @@ permalink: /kb/227/Q227264/
 	
 	=============================================================================
 	
+
+{% endraw %}

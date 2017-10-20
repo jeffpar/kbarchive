@@ -6,6 +6,8 @@ permalink: /kb/147/Q147130/
 
 ## Q147130: FIX: Building an .OCX Always Runs Regsvr32
 
+{% raw %}
+
 	Article: Q147130
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -72,3 +74,5 @@ permalink: /kb/147/Q147130/
 	
 	=============================================================================
 	
+
+{% endraw %}

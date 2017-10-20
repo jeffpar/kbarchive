@@ -6,6 +6,8 @@ permalink: /kb/249/Q249331/
 
 ## Q249331: Advertisements Received by Clients Outside Targeted Collections
 
+{% raw %}
+
 	Article: Q249331
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -81,3 +83,5 @@ permalink: /kb/249/Q249331/
 	
 	=============================================================================
 	
+
+{% endraw %}

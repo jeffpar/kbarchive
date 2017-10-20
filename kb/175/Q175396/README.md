@@ -6,6 +6,8 @@ permalink: /kb/175/Q175396/
 
 ## Q175396: Windows Socket Connection from a Multiple-Homed Computer
 
+{% raw %}
+
 	Article: Q175396
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,3.5,3.51,4.0
@@ -102,3 +104,5 @@ permalink: /kb/175/Q175396/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180216/
 
 ## Q180216: PRB: Error Setting CanGetFocus Property to False
 
+{% raw %}
+
 	Article: Q180216
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -77,3 +79,5 @@ permalink: /kb/180/Q180216/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68895/
 
 ## Q68895: Adobe Type Manager 1.0 Does Not Print in Color
 
+{% raw %}
+
 	Article: Q68895
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -44,3 +46,5 @@ permalink: /kb/068/Q68895/
 	
 	=============================================================================
 	
+
+{% endraw %}

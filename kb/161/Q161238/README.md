@@ -6,6 +6,8 @@ permalink: /kb/161/Q161238/
 
 ## Q161238: WD97: EPS Images Are Printed Full Size Rather Than Cropped
 
+{% raw %}
+
 	Article: Q161238
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/161/Q161238/
 	
 	=============================================================================
 	
+
+{% endraw %}

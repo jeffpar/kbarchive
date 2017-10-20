@@ -6,6 +6,8 @@ permalink: /kb/067/Q67188/
 
 ## Q67188: ASD: Mach Speed on 747 Panel
 
+{% raw %}
+
 	Article: Q67188
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/067/Q67188/
 	
 	=============================================================================
 	
+
+{% endraw %}

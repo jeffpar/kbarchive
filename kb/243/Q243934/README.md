@@ -6,6 +6,8 @@ permalink: /kb/243/Q243934/
 
 ## Q243934: SNA Print Server May Take 100 Percent of CPU Processing Time
 
+{% raw %}
+
 	Article: Q243934
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -86,3 +88,5 @@ permalink: /kb/243/Q243934/
 	
 	=============================================================================
 	
+
+{% endraw %}

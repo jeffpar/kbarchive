@@ -6,6 +6,8 @@ permalink: /kb/117/Q117257/
 
 ## Q117257: Mac Cinemania: Sounds Play in Some Applications But Not Others
 
+{% raw %}
+
 	Article: Q117257
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -56,3 +58,5 @@ permalink: /kb/117/Q117257/
 	
 	=============================================================================
 	
+
+{% endraw %}

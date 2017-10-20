@@ -6,6 +6,8 @@ permalink: /kb/086/Q86251/
 
 ## Q86251: Kingston SX/NOW 386 Upgrade Board Requires Windows Reinstall
 
+{% raw %}
+
 	Article: Q86251
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/086/Q86251/
 	
 	=============================================================================
 	
+
+{% endraw %}

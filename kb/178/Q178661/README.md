@@ -6,6 +6,8 @@ permalink: /kb/178/Q178661/
 
 ## Q178661: SMS: Error - 3201 While Running the Macintosh Inventory Agent
 
+{% raw %}
+
 	Article: Q178661
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3
@@ -97,3 +99,5 @@ permalink: /kb/178/Q178661/
 	
 	=============================================================================
 	
+
+{% endraw %}

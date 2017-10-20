@@ -6,6 +6,8 @@ permalink: /kb/041/Q41660/
 
 ## Q41660: QuickC 2.00 README.DOC: Help File Formats
 
+{% raw %}
+
 	Article: Q41660
 	Product(s): See article
 	Version(s): 2.00
@@ -24,3 +26,5 @@ permalink: /kb/041/Q41660/
 	Note: The QuickHelp format supported by QuickC is a subset of the
 	format supported by the OS/2 QuickHelp utility. QuickC does not
 	support the complete set of OS/2 QuickHelp dot commands.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232685/
 
 ## Q232685: XADM: Error 1084 Reports Corruption in an RTF Attachment
 
+{% raw %}
+
 	Article: Q232685
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/232/Q232685/
 	
 	=============================================================================
 	
+
+{% endraw %}

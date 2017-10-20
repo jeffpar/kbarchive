@@ -6,6 +6,8 @@ permalink: /kb/140/Q140042/
 
 ## Q140042: Disk Partition Does Not Match &gt; 1 GB On Windows NT Startup
 
+{% raw %}
+
 	Article: Q140042
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -40,3 +42,5 @@ permalink: /kb/140/Q140042/
 	
 	=============================================================================
 	
+
+{% endraw %}

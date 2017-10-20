@@ -6,6 +6,8 @@ permalink: /kb/186/Q186014/
 
 ## Q186014: WV: Setting Up Quick View to Preview Word Files with Word Viewer
 
+{% raw %}
+
 	Article: Q186014
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -103,3 +105,5 @@ permalink: /kb/186/Q186014/
 	
 	=============================================================================
 	
+
+{% endraw %}

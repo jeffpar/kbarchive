@@ -6,6 +6,8 @@ permalink: /kb/093/Q93176/
 
 ## Q93176: PC MAPI: Err Msg: MAPI ERROR: Unknown Recipient
 
+{% raw %}
+
 	Article: Q93176
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -78,3 +80,5 @@ permalink: /kb/093/Q93176/
 	
 	=============================================================================
 	
+
+{% endraw %}

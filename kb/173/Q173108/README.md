@@ -6,6 +6,8 @@ permalink: /kb/173/Q173108/
 
 ## Q173108: XADM: Mbclean.exe Deletes Outlook Calendar, Contacts, and Tasks
 
+{% raw %}
+
 	Article: Q173108
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -60,3 +62,5 @@ permalink: /kb/173/Q173108/
 	
 	=============================================================================
 	
+
+{% endraw %}

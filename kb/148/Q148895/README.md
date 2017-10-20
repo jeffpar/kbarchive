@@ -6,6 +6,8 @@ permalink: /kb/148/Q148895/
 
 ## Q148895: PRB: Cannot Access VFP Parameterized Views Remotely
 
+{% raw %}
+
 	Article: Q148895
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0
@@ -94,3 +96,5 @@ permalink: /kb/148/Q148895/
 	
 	=============================================================================
 	
+
+{% endraw %}

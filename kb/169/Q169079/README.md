@@ -6,6 +6,8 @@ permalink: /kb/169/Q169079/
 
 ## Q169079: FP97: Error Message Connecting to FrontPage Editor
 
+{% raw %}
+
 	Article: Q169079
 	Product(s): Word Front Page
 	Version(s): 
@@ -360,3 +362,5 @@ permalink: /kb/169/Q169079/
 	
 	=============================================================================
 	
+
+{% endraw %}

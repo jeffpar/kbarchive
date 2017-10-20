@@ -6,6 +6,8 @@ permalink: /kb/010/Q10220/
 
 ## Q10220: Locking Discardable Objects
 
+{% raw %}
+
 	Article: Q10220
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -37,3 +39,5 @@ permalink: /kb/010/Q10220/
 	
 	=============================================================================
 	
+
+{% endraw %}

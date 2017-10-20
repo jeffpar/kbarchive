@@ -6,6 +6,8 @@ permalink: /kb/263/Q263279/
 
 ## Q263279: SMS: Advertisement Fails with Error 10003
 
+{% raw %}
+
 	Article: Q263279
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -119,3 +121,5 @@ permalink: /kb/263/Q263279/
 	
 	=============================================================================
 	
+
+{% endraw %}

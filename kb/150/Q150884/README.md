@@ -6,6 +6,8 @@ permalink: /kb/150/Q150884/
 
 ## Q150884: FIX: C1001 Fatal Error in File Main.c, Line 413 for /O1 or /O2
 
+{% raw %}
+
 	Article: Q150884
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10
@@ -124,3 +126,5 @@ permalink: /kb/150/Q150884/
 	
 	=============================================================================
 	
+
+{% endraw %}

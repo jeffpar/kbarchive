@@ -6,6 +6,8 @@ permalink: /kb/252/Q252663/
 
 ## Q252663: WritePrinter() API Call Does Not Work Printin to an LPR Printer
 
+{% raw %}
+
 	Article: Q252663
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP6,4.0 SP6a
@@ -54,3 +56,5 @@ permalink: /kb/252/Q252663/
 	
 	=============================================================================
 	
+
+{% endraw %}

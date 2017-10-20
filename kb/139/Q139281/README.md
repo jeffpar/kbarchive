@@ -6,6 +6,8 @@ permalink: /kb/139/Q139281/
 
 ## Q139281: STOP Msg: 0x0000004E or 0x0000000A Under Heavy Computer Usage
 
+{% raw %}
+
 	Article: Q139281
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -64,3 +66,5 @@ permalink: /kb/139/Q139281/
 	
 	=============================================================================
 	
+
+{% endraw %}

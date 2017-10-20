@@ -6,6 +6,8 @@ permalink: /kb/104/Q104154/
 
 ## Q104154: Stravinsky: Can't Run from Second Chained CD-ROM Drive
 
+{% raw %}
+
 	Article: Q104154
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/104/Q104154/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135847/
 
 ## Q135847: Files Open Slowly From NetWare Server
 
+{% raw %}
+
 	Article: Q135847
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -75,3 +77,5 @@ permalink: /kb/135/Q135847/
 	
 	=============================================================================
 	
+
+{% endraw %}

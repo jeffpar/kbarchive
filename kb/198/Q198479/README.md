@@ -6,6 +6,8 @@ permalink: /kb/198/Q198479/
 
 ## Q198479: XCLN: Individual AutoArchive Settings not Stored in Registry
 
+{% raw %}
+
 	Article: Q198479
 	Product(s): Microsoft Exchange
 	Version(s): 8.01,8.02,8.03; WINDOWS:
@@ -93,3 +95,5 @@ permalink: /kb/198/Q198479/
 	
 	=============================================================================
 	
+
+{% endraw %}

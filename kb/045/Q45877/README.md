@@ -6,6 +6,8 @@ permalink: /kb/045/Q45877/
 
 ## Q45877: How Windows Updates the LRU (Least Recently Used) List
 
+{% raw %}
+
 	Article: Q45877
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -44,3 +46,5 @@ permalink: /kb/045/Q45877/
 	
 	=============================================================================
 	
+
+{% endraw %}

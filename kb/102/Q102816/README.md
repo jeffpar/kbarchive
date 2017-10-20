@@ -6,6 +6,8 @@ permalink: /kb/102/Q102816/
 
 ## Q102816: Running MemMaker on IBM PS/1 Machines
 
+{% raw %}
+
 	Article: Q102816
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -84,3 +86,5 @@ permalink: /kb/102/Q102816/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245828/
 
 ## Q245828: FS2000: Handbook Incorrectly States to Insert Disc 1
 
+{% raw %}
+
 	Article: Q245828
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/245/Q245828/
 	
 	=============================================================================
 	
+
+{% endraw %}

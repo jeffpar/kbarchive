@@ -6,6 +6,8 @@ permalink: /kb/101/Q101639/
 
 ## Q101639: Setting Permissions for a Drop Folder and its Contents
 
+{% raw %}
+
 	Article: Q101639
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -42,3 +44,5 @@ permalink: /kb/101/Q101639/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175273/
 
 ## Q175273: SNA Server Leaks Memory If Detailed Logging Is Enabled
 
+{% raw %}
+
 	Article: Q175273
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/175/Q175273/
 	
 	=============================================================================
 	
+
+{% endraw %}

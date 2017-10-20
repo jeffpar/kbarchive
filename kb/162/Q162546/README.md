@@ -6,6 +6,8 @@ permalink: /kb/162/Q162546/
 
 ## Q162546: FIX: ComboBox and ListBox Data Moves when Using Slide Control
 
+{% raw %}
+
 	Article: Q162546
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -116,3 +118,5 @@ permalink: /kb/162/Q162546/
 	
 	=============================================================================
 	
+
+{% endraw %}

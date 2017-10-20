@@ -6,6 +6,8 @@ permalink: /kb/104/Q104987/
 
 ## Q104987: MakeSys Hangs or Creates Invalid Files, Causing System Hang
 
+{% raw %}
+
 	Article: Q104987
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -88,3 +90,5 @@ permalink: /kb/104/Q104987/
 	
 	=============================================================================
 	
+
+{% endraw %}

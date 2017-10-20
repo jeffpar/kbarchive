@@ -6,6 +6,8 @@ permalink: /kb/207/Q207729/
 
 ## Q207729: SMS: Excluding Computers from Windows NT Remote Client Install
 
+{% raw %}
+
 	Article: Q207729
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -85,3 +87,5 @@ permalink: /kb/207/Q207729/
 	
 	=============================================================================
 	
+
+{% endraw %}

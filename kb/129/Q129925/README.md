@@ -6,6 +6,8 @@ permalink: /kb/129/Q129925/
 
 ## Q129925: Requery Method Not Available on PassThrough Queries
 
+{% raw %}
+
 	Article: Q129925
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -95,3 +97,5 @@ permalink: /kb/129/Q129925/
 	
 	=============================================================================
 	
+
+{% endraw %}

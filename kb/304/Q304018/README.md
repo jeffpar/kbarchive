@@ -6,6 +6,8 @@ permalink: /kb/304/Q304018/
 
 ## Q304018: Logon Failure When a Primary Domain Controller Is Unavailable
 
+{% raw %}
+
 	Article: Q304018
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/304/Q304018/
 	
 	=============================================================================
 	
+
+{% endraw %}

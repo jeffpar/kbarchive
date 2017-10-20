@@ -6,6 +6,8 @@ permalink: /kb/032/Q32311/
 
 ## Q32311: L1063 Error Not Documented in C Versions 5.00 or 5.10
 
+{% raw %}
+
 	Article: Q32311
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -28,3 +30,5 @@ permalink: /kb/032/Q32311/
 	   The linker was given too many object files with debug information,
 	and the linker ran out of space to store it. Reduce the number of
 	object files that have debug information.
+
+{% endraw %}

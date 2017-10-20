@@ -6,6 +6,8 @@ permalink: /kb/174/Q174914/
 
 ## Q174914: Encarta 98 Does Not Display Home Screen or Play Animations
 
+{% raw %}
+
 	Article: Q174914
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -217,3 +219,5 @@ permalink: /kb/174/Q174914/
 	
 	=============================================================================
 	
+
+{% endraw %}

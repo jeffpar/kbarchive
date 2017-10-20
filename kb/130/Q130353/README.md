@@ -6,6 +6,8 @@ permalink: /kb/130/Q130353/
 
 ## Q130353: No Special Effect Property for the Grid
 
+{% raw %}
+
 	Article: Q130353
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/130/Q130353/
 	
 	=============================================================================
 	
+
+{% endraw %}

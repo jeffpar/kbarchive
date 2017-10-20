@@ -6,6 +6,8 @@ permalink: /kb/150/Q150992/
 
 ## Q150992: Complete Gardening: White Space Added To Printout
 
+{% raw %}
+
 	Article: Q150992
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150992/
 	
 	=============================================================================
 	
+
+{% endraw %}

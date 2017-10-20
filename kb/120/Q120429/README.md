@@ -6,6 +6,8 @@ permalink: /kb/120/Q120429/
 
 ## Q120429: Brushes Do Not Display Correctly in Photoshop 2.5
 
+{% raw %}
+
 	Article: Q120429
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/120/Q120429/
 	
 	=============================================================================
 	
+
+{% endraw %}

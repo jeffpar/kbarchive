@@ -6,6 +6,8 @@ permalink: /kb/231/Q231275/
 
 ## Q231275: XCON: MTA in Uncontrollable State; MTA Service Can't Be Stopped
 
+{% raw %}
+
 	Article: Q231275
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -94,3 +96,5 @@ permalink: /kb/231/Q231275/
 	
 	=============================================================================
 	
+
+{% endraw %}

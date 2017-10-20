@@ -6,6 +6,8 @@ permalink: /kb/157/Q157944/
 
 ## Q157944: Domain Name Service in DUN Connection Does Not Work
 
+{% raw %}
+
 	Article: Q157944
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/157/Q157944/
 	
 	=============================================================================
 	
+
+{% endraw %}

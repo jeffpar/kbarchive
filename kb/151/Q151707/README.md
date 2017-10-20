@@ -6,6 +6,8 @@ permalink: /kb/151/Q151707/
 
 ## Q151707: XCLN: Replying With Exchange and MS Mail Services in Profile
 
+{% raw %}
+
 	Article: Q151707
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/151/Q151707/
 	
 	=============================================================================
 	
+
+{% endraw %}

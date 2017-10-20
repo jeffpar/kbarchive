@@ -6,6 +6,8 @@ permalink: /kb/111/Q111026/
 
 ## Q111026: Backup Creates Many REGXXXX Files, Can't Copy .EVT Files
 
+{% raw %}
+
 	Article: Q111026
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -55,3 +57,5 @@ permalink: /kb/111/Q111026/
 	
 	=============================================================================
 	
+
+{% endraw %}

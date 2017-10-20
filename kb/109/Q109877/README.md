@@ -6,6 +6,8 @@ permalink: /kb/109/Q109877/
 
 ## Q109877: BUG: Smallest Negative Integers Cause Error on Input
 
+{% raw %}
+
 	Article: Q109877
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -107,3 +109,5 @@ permalink: /kb/109/Q109877/
 	
 	=============================================================================
 	
+
+{% endraw %}

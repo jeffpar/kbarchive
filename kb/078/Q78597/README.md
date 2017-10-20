@@ -6,6 +6,8 @@ permalink: /kb/078/Q78597/
 
 ## Q78597: MS-DOS 5.0 or Later May Require a ROM BIOS Upgrade
 
+{% raw %}
+
 	Article: Q78597
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -38,3 +40,5 @@ permalink: /kb/078/Q78597/
 	
 	=============================================================================
 	
+
+{% endraw %}

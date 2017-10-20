@@ -6,6 +6,8 @@ permalink: /kb/145/Q145580/
 
 ## Q145580: Remotable Link Services Started by SNABASE
 
+{% raw %}
+
 	Article: Q145580
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -55,3 +57,5 @@ permalink: /kb/145/Q145580/
 	
 	=============================================================================
 	
+
+{% endraw %}

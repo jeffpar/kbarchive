@@ -6,6 +6,8 @@ permalink: /kb/087/Q87093/
 
 ## Q87093: Adding Windows 3.0 Support for Unlisted HP Printer Cartridges
 
+{% raw %}
+
 	Article: Q87093
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -98,3 +100,5 @@ permalink: /kb/087/Q87093/
 	
 	=============================================================================
 	
+
+{% endraw %}

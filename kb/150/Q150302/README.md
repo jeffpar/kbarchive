@@ -6,6 +6,8 @@ permalink: /kb/150/Q150302/
 
 ## Q150302: Overlapped I/O to Tape Results In Data Corruption
 
+{% raw %}
+
 	Article: Q150302
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150302/
 	
 	=============================================================================
 	
+
+{% endraw %}

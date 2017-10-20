@@ -6,6 +6,8 @@ permalink: /kb/125/Q125246/
 
 ## Q125246: MHS: Microsoft Mail Gateway to MHS OUTPOST.EXE Version 3.0.10
 
+{% raw %}
+
 	Article: Q125246
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -105,3 +107,5 @@ permalink: /kb/125/Q125246/
 	
 	=============================================================================
 	
+
+{% endraw %}

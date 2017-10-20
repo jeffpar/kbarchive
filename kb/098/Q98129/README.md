@@ -6,6 +6,8 @@ permalink: /kb/098/Q98129/
 
 ## Q98129: Allow Continual User Access with Password Restrictions
 
+{% raw %}
+
 	Article: Q98129
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/098/Q98129/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136674/
 
 ## Q136674: PRB: Can't Print GrandChild Records in One-to-Many Relation
 
+{% raw %}
+
 	Article: Q136674
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -106,3 +108,5 @@ permalink: /kb/136/Q136674/
 	
 	=============================================================================
 	
+
+{% endraw %}

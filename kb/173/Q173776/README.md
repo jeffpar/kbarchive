@@ -6,6 +6,8 @@ permalink: /kb/173/Q173776/
 
 ## Q173776: XADM: Custom Recipients Cannot Be Accessed via IMAP or POP3
 
+{% raw %}
+
 	Article: Q173776
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2
@@ -104,3 +106,5 @@ permalink: /kb/173/Q173776/
 	
 	=============================================================================
 	
+
+{% endraw %}

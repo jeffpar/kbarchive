@@ -6,6 +6,8 @@ permalink: /kb/128/Q128636/
 
 ## Q128636: HOWTO: Set Up SourceSafe for Replication Under Windows NT
 
+{% raw %}
+
 	Article: Q128636
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/128/Q128636/
 	
 	=============================================================================
 	
+
+{% endraw %}

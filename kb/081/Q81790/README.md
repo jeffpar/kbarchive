@@ -6,6 +6,8 @@ permalink: /kb/081/Q81790/
 
 ## Q81790: 'VM ERROR' from Lotus 1-2-3 Release 3.1
 
+{% raw %}
+
 	Article: Q81790
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -86,3 +88,5 @@ permalink: /kb/081/Q81790/
 	
 	=============================================================================
 	
+
+{% endraw %}

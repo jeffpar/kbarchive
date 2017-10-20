@@ -6,6 +6,8 @@ permalink: /kb/084/Q84415/
 
 ## Q84415: DrawPerfect 1.0 Mouse Problems in Window Mode
 
+{% raw %}
+
 	Article: Q84415
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -33,3 +35,5 @@ permalink: /kb/084/Q84415/
 	
 	=============================================================================
 	
+
+{% endraw %}

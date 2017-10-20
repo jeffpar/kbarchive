@@ -6,6 +6,8 @@ permalink: /kb/140/Q140469/
 
 ## Q140469: Err Msg: CHKDSK Is Correcting a Minor Error in File 5
 
+{% raw %}
+
 	Article: Q140469
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -57,3 +59,5 @@ permalink: /kb/140/Q140469/
 	
 	=============================================================================
 	
+
+{% endraw %}

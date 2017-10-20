@@ -6,6 +6,8 @@ permalink: /kb/059/Q59112/
 
 ## Q59112: Mac Form: Form Designer Adds Scroll Bar to Rectangular Fields
 
+{% raw %}
+
 	Article: Q59112
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -37,3 +39,5 @@ permalink: /kb/059/Q59112/
 	
 	=============================================================================
 	
+
+{% endraw %}

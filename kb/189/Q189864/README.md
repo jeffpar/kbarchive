@@ -6,6 +6,8 @@ permalink: /kb/189/Q189864/
 
 ## Q189864: BUG: Data Written to Table Despite Textbox Returning False
 
+{% raw %}
+
 	Article: Q189864
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -95,3 +97,5 @@ permalink: /kb/189/Q189864/
 	
 	=============================================================================
 	
+
+{% endraw %}

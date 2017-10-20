@@ -6,6 +6,8 @@ permalink: /kb/087/Q87626/
 
 ## Q87626: FoxBASE 2.17 System Specifications and Data Types
 
+{% raw %}
+
 	Article: Q87626
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.17
@@ -66,3 +68,5 @@ permalink: /kb/087/Q87626/
 	
 	=============================================================================
 	
+
+{% endraw %}

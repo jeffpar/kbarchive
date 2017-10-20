@@ -6,6 +6,8 @@ permalink: /kb/141/Q141076/
 
 ## Q141076: How to Change a Method at Run Time
 
+{% raw %}
+
 	Article: Q141076
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -82,3 +84,5 @@ permalink: /kb/141/Q141076/
 	
 	=============================================================================
 	
+
+{% endraw %}

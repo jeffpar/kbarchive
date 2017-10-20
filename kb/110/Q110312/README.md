@@ -6,6 +6,8 @@ permalink: /kb/110/Q110312/
 
 ## Q110312: Full Screen Graphics and Viewer Startup Screen
 
+{% raw %}
+
 	Article: Q110312
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -132,3 +134,5 @@ permalink: /kb/110/Q110312/
 	
 	=============================================================================
 	
+
+{% endraw %}

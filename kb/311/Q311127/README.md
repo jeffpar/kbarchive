@@ -6,6 +6,8 @@ permalink: /kb/311/Q311127/
 
 ## Q311127: High CPU Utilization in LSASS on PDC Emulator
 
+{% raw %}
+
 	Article: Q311127
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -320,3 +322,5 @@ permalink: /kb/311/Q311127/
 	
 	=============================================================================
 	
+
+{% endraw %}

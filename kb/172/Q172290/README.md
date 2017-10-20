@@ -6,6 +6,8 @@ permalink: /kb/172/Q172290/
 
 ## Q172290: Routing and Remote Access &quot;Out of Buffers&quot; Event Logs
 
+{% raw %}
+
 	Article: Q172290
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -102,3 +104,5 @@ permalink: /kb/172/Q172290/
 	
 	=============================================================================
 	
+
+{% endraw %}

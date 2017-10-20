@@ -6,6 +6,8 @@ permalink: /kb/234/Q234595/
 
 ## Q234595: XCLN: PowerPoint Slide Show Files (.pps) Get .ppt Extension
 
+{% raw %}
+
 	Article: Q234595
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -83,3 +85,5 @@ permalink: /kb/234/Q234595/
 	
 	=============================================================================
 	
+
+{% endraw %}

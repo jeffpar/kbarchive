@@ -6,6 +6,8 @@ permalink: /kb/166/Q166904/
 
 ## Q166904: Winsock Application Does Not Generate WSAEMSGSIZE Error Code
 
+{% raw %}
+
 	Article: Q166904
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166904/
 	
 	=============================================================================
 	
+
+{% endraw %}

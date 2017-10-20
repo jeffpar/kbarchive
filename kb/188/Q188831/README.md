@@ -6,6 +6,8 @@ permalink: /kb/188/Q188831/
 
 ## Q188831: How to Use the Special Pool Feature to Isolate Pool Damage
 
+{% raw %}
+
 	Article: Q188831
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0 SP4
@@ -192,3 +194,5 @@ permalink: /kb/188/Q188831/
 	
 	=============================================================================
 	
+
+{% endraw %}

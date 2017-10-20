@@ -6,6 +6,8 @@ permalink: /kb/263/Q263562/
 
 ## Q263562: Extra Files That Can Be Manually Installed from the SP4 CD
 
+{% raw %}
+
 	Article: Q263562
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -278,3 +280,5 @@ permalink: /kb/263/Q263562/
 	
 	=============================================================================
 	
+
+{% endraw %}

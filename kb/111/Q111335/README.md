@@ -6,6 +6,8 @@ permalink: /kb/111/Q111335/
 
 ## Q111335: BUG: SetWindowPos() on an Iconic Window and its Caption
 
+{% raw %}
+
 	Article: Q111335
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/111/Q111335/
 	
 	=============================================================================
 	
+
+{% endraw %}

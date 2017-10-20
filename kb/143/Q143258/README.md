@@ -6,6 +6,8 @@ permalink: /kb/143/Q143258/
 
 ## Q143258: HOWTO: Create Constants and DLL Declarations in a Type Library
 
+{% raw %}
+
 	Article: Q143258
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -171,3 +173,5 @@ permalink: /kb/143/Q143258/
 	
 	=============================================================================
 	
+
+{% endraw %}

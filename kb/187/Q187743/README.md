@@ -6,6 +6,8 @@ permalink: /kb/187/Q187743/
 
 ## Q187743: PRB: Right Mouse with Manual OLE D&amp;D Disables Left Mouse
 
+{% raw %}
+
 	Article: Q187743
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -158,3 +160,5 @@ permalink: /kb/187/Q187743/
 	
 	=============================================================================
 	
+
+{% endraw %}

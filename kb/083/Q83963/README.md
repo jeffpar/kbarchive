@@ -6,6 +6,8 @@ permalink: /kb/083/Q83963/
 
 ## Q83963: Windows 3.1: Insufficient Memory Error on a 2-MB Machine
 
+{% raw %}
+
 	Article: Q83963
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -99,3 +101,5 @@ permalink: /kb/083/Q83963/
 	
 	=============================================================================
 	
+
+{% endraw %}

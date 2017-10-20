@@ -6,6 +6,8 @@ permalink: /kb/180/Q180229/
 
 ## Q180229: Calling CONVERT Before RECEIVE_ALLOCATE May Lead to Event 60
 
+{% raw %}
+
 	Article: Q180229
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -61,3 +63,5 @@ permalink: /kb/180/Q180229/
 	
 	=============================================================================
 	
+
+{% endraw %}

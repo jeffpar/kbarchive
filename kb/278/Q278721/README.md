@@ -6,6 +6,8 @@ permalink: /kb/278/Q278721/
 
 ## Q278721: How to change the &quot;helper&quot; on MSN Companion
 
+{% raw %}
+
 	Article: Q278721
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/278/Q278721/
 	
 	=============================================================================
 	
+
+{% endraw %}

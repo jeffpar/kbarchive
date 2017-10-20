@@ -6,6 +6,8 @@ permalink: /kb/228/Q228453/
 
 ## Q228453: NBTSTAT -RR Does Not Increment Version IDs on the WINS Server
 
+{% raw %}
+
 	Article: Q228453
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -107,3 +109,5 @@ permalink: /kb/228/Q228453/
 	
 	=============================================================================
 	
+
+{% endraw %}

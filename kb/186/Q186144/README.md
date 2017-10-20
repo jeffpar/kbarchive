@@ -6,6 +6,8 @@ permalink: /kb/186/Q186144/
 
 ## Q186144: Dialog Box w/ Red Circle &amp; White X During WinNT 3.51 Upgrade
 
+{% raw %}
+
 	Article: Q186144
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/186/Q186144/
 	
 	=============================================================================
 	
+
+{% endraw %}

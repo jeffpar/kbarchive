@@ -6,6 +6,8 @@ permalink: /kb/037/Q37930/
 
 ## Q37930: Mac DOS: Printing Mail Messages from the Mailbox
 
+{% raw %}
+
 	Article: Q37930
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0,3.1
@@ -49,3 +51,5 @@ permalink: /kb/037/Q37930/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233236/
 
 ## Q233236: XFOR: Chinese Outlook MSMail Users Get NDRs Sending to Exchange
 
+{% raw %}
+
 	Article: Q233236
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -126,3 +128,5 @@ permalink: /kb/233/Q233236/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241892/
 
 ## Q241892: XFOR: NDR with Error 501 Syntactically Invalid HELO Argument(s)
 
+{% raw %}
+
 	Article: Q241892
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/241/Q241892/
 	
 	=============================================================================
 	
+
+{% endraw %}

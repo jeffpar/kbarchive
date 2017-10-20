@@ -6,6 +6,8 @@ permalink: /kb/131/Q131513/
 
 ## Q131513: PC Gen: Basic Asynchronous Troubleshooting Procedures
 
+{% raw %}
+
 	Article: Q131513
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -251,3 +253,5 @@ permalink: /kb/131/Q131513/
 	
 	=============================================================================
 	
+
+{% endraw %}

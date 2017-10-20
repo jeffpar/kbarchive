@@ -6,6 +6,8 @@ permalink: /kb/199/Q199974/
 
 ## Q199974: SMS: Event to Trap Translator Error-Can't Load Message File
 
+{% raw %}
+
 	Article: Q199974
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -100,3 +102,5 @@ permalink: /kb/199/Q199974/
 	
 	=============================================================================
 	
+
+{% endraw %}

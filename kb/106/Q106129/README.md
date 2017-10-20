@@ -6,6 +6,8 @@ permalink: /kb/106/Q106129/
 
 ## Q106129: Err Msg Running MemMaker: EMM386 DMA Buffer Is Too Small...
 
+{% raw %}
+
 	Article: Q106129
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -68,3 +70,5 @@ permalink: /kb/106/Q106129/
 	
 	=============================================================================
 	
+
+{% endraw %}

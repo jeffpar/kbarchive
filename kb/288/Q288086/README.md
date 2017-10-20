@@ -6,6 +6,8 @@ permalink: /kb/288/Q288086/
 
 ## Q288086: MCSE Training Kit Microsoft Exchange 2000 Server Implementation
 
+{% raw %}
+
 	Article: Q288086
 	Product(s): Microsoft Press
 	Version(s): 
@@ -201,3 +203,5 @@ permalink: /kb/288/Q288086/
 	
 	=============================================================================
 	
+
+{% endraw %}

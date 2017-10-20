@@ -6,6 +6,8 @@ permalink: /kb/085/Q85469/
 
 ## Q85469: How to Detect Windows Mode and Version from a Batch File
 
+{% raw %}
+
 	Article: Q85469
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0; WINDOWS:3.0,3.0a,3.1,3.11
@@ -263,3 +265,5 @@ permalink: /kb/085/Q85469/
 	
 	=============================================================================
 	
+
+{% endraw %}

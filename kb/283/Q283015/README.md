@@ -6,6 +6,8 @@ permalink: /kb/283/Q283015/
 
 ## Q283015: Windows NT 4.0 Lprmon Does Not Restart Job If It Receives &quot;Nack&quot;
 
+{% raw %}
+
 	Article: Q283015
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/283/Q283015/
 	
 	=============================================================================
 	
+
+{% endraw %}

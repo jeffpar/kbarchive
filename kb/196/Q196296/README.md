@@ -6,6 +6,8 @@ permalink: /kb/196/Q196296/
 
 ## Q196296: FILE: Objsrv.exe Contains Fix for &quot;Object Server Not..&quot; Err
 
+{% raw %}
+
 	Article: Q196296
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -149,3 +151,5 @@ permalink: /kb/196/Q196296/
 	
 	=============================================================================
 	
+
+{% endraw %}

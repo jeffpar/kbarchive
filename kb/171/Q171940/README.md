@@ -6,6 +6,8 @@ permalink: /kb/171/Q171940/
 
 ## Q171940: MS-DOS Application I/O Operations Cause Floppy Drive Access
 
+{% raw %}
+
 	Article: Q171940
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/171/Q171940/
 	
 	=============================================================================
 	
+
+{% endraw %}

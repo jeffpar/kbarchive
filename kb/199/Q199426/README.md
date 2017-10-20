@@ -6,6 +6,8 @@ permalink: /kb/199/Q199426/
 
 ## Q199426: SMS: Inventory Shows Incorrect Memory Amount for OS/2 Clients
 
+{% raw %}
+
 	Article: Q199426
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -57,3 +59,5 @@ permalink: /kb/199/Q199426/
 	
 	=============================================================================
 	
+
+{% endraw %}

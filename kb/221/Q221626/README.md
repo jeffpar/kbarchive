@@ -6,6 +6,8 @@ permalink: /kb/221/Q221626/
 
 ## Q221626: FIX: Debug/Fix in Form Shows Form Controls Toolbar in Debugger
 
+{% raw %}
+
 	Article: Q221626
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -100,3 +102,5 @@ permalink: /kb/221/Q221626/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96759/
 
 ## Q96759: No Expanded Memory Available After Installing EMM386.EXE
 
+{% raw %}
+
 	Article: Q96759
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21; WINDOWS:3.0,3.0a,3.1,3.11
@@ -344,3 +346,5 @@ permalink: /kb/096/Q96759/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126131/
 
 ## Q126131: HOWTO: Speed Up Apps that Use the Microsoft Access ODBC Driver
 
+{% raw %}
+
 	Article: Q126131
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,2.0,2.1,2.5,2.6,4.0,4.1,4.2,5.0,6.0
@@ -292,3 +294,5 @@ permalink: /kb/126/Q126131/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121786/
 
 ## Q121786: LPR and LPD Registry Entries for TCP/IP Printing
 
+{% raw %}
+
 	Article: Q121786
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -94,3 +96,5 @@ permalink: /kb/121/Q121786/
 	
 	=============================================================================
 	
+
+{% endraw %}

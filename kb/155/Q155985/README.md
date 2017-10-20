@@ -6,6 +6,8 @@ permalink: /kb/155/Q155985/
 
 ## Q155985: WD97: Run-Time Error Using Macro to Save File with Name
 
+{% raw %}
+
 	Article: Q155985
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/155/Q155985/
 	
 	=============================================================================
 	
+
+{% endraw %}

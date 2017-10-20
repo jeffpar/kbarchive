@@ -6,6 +6,8 @@ permalink: /kb/178/Q178384/
 
 ## Q178384: PRB: Report Preview in Top-Level Form Disables VFP Menu
 
+{% raw %}
+
 	Article: Q178384
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/178/Q178384/
 	
 	=============================================================================
 	
+
+{% endraw %}

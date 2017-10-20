@@ -6,6 +6,8 @@ permalink: /kb/150/Q150574/
 
 ## Q150574: FIX:CScrollView::OnHScroll/OnVScroll Do Not Call OnChildNotify
 
+{% raw %}
+
 	Article: Q150574
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2
@@ -112,3 +114,5 @@ permalink: /kb/150/Q150574/
 	
 	=============================================================================
 	
+
+{% endraw %}

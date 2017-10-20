@@ -6,6 +6,8 @@ permalink: /kb/041/Q41024/
 
 ## Q41024: FATAL: Internal Stack Failure, System Halted
 
+{% raw %}
+
 	Article: Q41024
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -39,3 +41,5 @@ permalink: /kb/041/Q41024/
 	
 	Note: For MS-DOS Version 3.30 on an IBM-PC, IBM-XT, or
 	IBM-PC-Portable, the default for n is 0 and s is 0 .
+
+{% endraw %}

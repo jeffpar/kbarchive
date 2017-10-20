@@ -6,6 +6,8 @@ permalink: /kb/066/Q66779/
 
 ## Q66779: PG Chart Displays May Have Uneven Spacing Between Bars
 
+{% raw %}
+
 	Article: Q66779
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -84,3 +86,5 @@ permalink: /kb/066/Q66779/
 	
 	   _setvideomode( _DEFAULTMODE );
 	}
+
+{% endraw %}

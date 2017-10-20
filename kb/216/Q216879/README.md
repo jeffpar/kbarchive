@@ -6,6 +6,8 @@ permalink: /kb/216/Q216879/
 
 ## Q216879: BUG: 'Errors occurred' Results When Converting OS/390 Signed Zon
 
+{% raw %}
+
 	Article: Q216879
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0 SP2
@@ -67,3 +69,5 @@ permalink: /kb/216/Q216879/
 	
 	=============================================================================
 	
+
+{% endraw %}

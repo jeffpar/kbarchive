@@ -6,6 +6,8 @@ permalink: /kb/156/Q156902/
 
 ## Q156902: STL Sample for deque::operator&#91;&#93; and deque::at Functions
 
+{% raw %}
+
 	Article: Q156902
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -184,3 +186,5 @@ permalink: /kb/156/Q156902/
 	
 	=============================================================================
 	
+
+{% endraw %}

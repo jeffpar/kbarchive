@@ -6,6 +6,8 @@ permalink: /kb/042/Q42802/
 
 ## Q42802: DOS Redirection and QuickC Environment Command Line
 
+{% raw %}
+
 	Article: Q42802
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -59,3 +61,5 @@ permalink: /kb/042/Q42802/
 	Note: DOS redirection will affect the DOS shell. If input was
 	redirected, you will not be able to type "exit" in order to get back to
 	QuickC.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252869/
 
 ## Q252869: XADM: Preventing Mail Loss When Move Mailbox Is Unsuccessful
 
+{% raw %}
+
 	Article: Q252869
 	Product(s): Microsoft Exchange
 	Version(s): 4.x,5.0,5.5
@@ -120,3 +122,5 @@ permalink: /kb/252/Q252869/
 	
 	=============================================================================
 	
+
+{% endraw %}

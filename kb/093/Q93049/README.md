@@ -6,6 +6,8 @@ permalink: /kb/093/Q93049/
 
 ## Q93049: Using Write to Determine Unprintable Regions
 
+{% raw %}
+
 	Article: Q93049
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11,95; winnt:3.1,3.5,3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/093/Q93049/
 	
 	=============================================================================
 	
+
+{% endraw %}

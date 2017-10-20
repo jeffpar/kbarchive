@@ -6,6 +6,8 @@ permalink: /kb/222/Q222613/
 
 ## Q222613: FIX: &quot;m_mov' : undeclared identifier&quot; Error With Alpha Project
 
+{% raw %}
+
 	Article: Q222613
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/222/Q222613/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154104/
 
 ## Q154104: Restoring a Deleted Microsoft Exchange Information Service
 
+{% raw %}
+
 	Article: Q154104
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -108,3 +110,5 @@ permalink: /kb/154/Q154104/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134558/
 
 ## Q134558: Cannot Edit Microsoft Excel Worksheet in WordPad
 
+{% raw %}
+
 	Article: Q134558
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134558/
 	
 	=============================================================================
 	
+
+{% endraw %}

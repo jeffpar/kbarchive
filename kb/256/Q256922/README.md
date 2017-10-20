@@ -6,6 +6,8 @@ permalink: /kb/256/Q256922/
 
 ## Q256922: SMS: Components Don't Function After Upgrading Win9x to Win2000
 
+{% raw %}
+
 	Article: Q256922
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/256/Q256922/
 	
 	=============================================================================
 	
+
+{% endraw %}

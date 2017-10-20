@@ -6,6 +6,8 @@ permalink: /kb/115/Q115822/
 
 ## Q115822: CD Sampler: Mouse Required Because No Keyboard Equivalents
 
+{% raw %}
+
 	Article: Q115822
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Spring 1994
@@ -40,3 +42,5 @@ permalink: /kb/115/Q115822/
 	
 	=============================================================================
 	
+
+{% endraw %}

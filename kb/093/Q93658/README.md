@@ -6,6 +6,8 @@ permalink: /kb/093/Q93658/
 
 ## Q93658: WD97: How to Send Printer Escape Codes from a Word Document
 
+{% raw %}
+
 	Article: Q93658
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/093/Q93658/
 	
 	=============================================================================
 	
+
+{% endraw %}

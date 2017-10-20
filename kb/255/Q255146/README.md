@@ -6,6 +6,8 @@ permalink: /kb/255/Q255146/
 
 ## Q255146: MapPoint 2001: How to Layer Objects By Using the Draw Menu
 
+{% raw %}
+
 	Article: Q255146
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/255/Q255146/
 	
 	=============================================================================
 	
+
+{% endraw %}

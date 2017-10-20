@@ -6,6 +6,8 @@ permalink: /kb/186/Q186842/
 
 ## Q186842: BUG: OpenURL Method Bug in Internet Transfer Control
 
+{% raw %}
+
 	Article: Q186842
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.01,5.0
@@ -108,3 +110,5 @@ permalink: /kb/186/Q186842/
 	
 	=============================================================================
 	
+
+{% endraw %}

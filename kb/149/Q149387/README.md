@@ -6,6 +6,8 @@ permalink: /kb/149/Q149387/
 
 ## Q149387: XFOR: MSMI Terminating with Memory Access Violation, Event ID 23
 
+{% raw %}
+
 	Article: Q149387
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/149/Q149387/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230677/
 
 ## Q230677: Malformed Phonebook Entry Security Vulnerability in RAS Client
 
+{% raw %}
+
 	Article: Q230677
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -114,3 +116,5 @@ permalink: /kb/230/Q230677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35530/
 
 ## Q35530: Differences between the vscroll and hike Numeric Switches
 
+{% raw %}
+
 	Article: Q35530
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -34,3 +36,5 @@ permalink: /kb/035/Q35530/
 	correctly set to 1, hike will overide it if hike has a greater value
 	than vscroll. Until this problem is corrected, both switches must be
 	set to 1 to scroll one line at a time.
+
+{% endraw %}

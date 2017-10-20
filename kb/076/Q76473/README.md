@@ -6,6 +6,8 @@ permalink: /kb/076/Q76473/
 
 ## Q76473: PRB: No Output from VxD Debug_Out and Trace_Out Macros
 
+{% raw %}
+
 	Article: Q76473
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -48,3 +50,5 @@ permalink: /kb/076/Q76473/
 	
 	=============================================================================
 	
+
+{% endraw %}

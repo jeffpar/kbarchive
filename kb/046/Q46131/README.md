@@ -6,6 +6,8 @@ permalink: /kb/046/Q46131/
 
 ## Q46131: DOC: tmpnam() Operation Does Not Change If P_tmpdir Modified
 
+{% raw %}
+
 	Article: Q46131
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,4.0,4.1,5.0,6.0
@@ -51,3 +53,5 @@ permalink: /kb/046/Q46131/
 	
 	=============================================================================
 	
+
+{% endraw %}

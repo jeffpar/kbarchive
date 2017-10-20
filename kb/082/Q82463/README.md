@@ -6,6 +6,8 @@ permalink: /kb/082/Q82463/
 
 ## Q82463: Citizen Narrow Carriage Printers Have 8&quot; Printable Region
 
+{% raw %}
+
 	Article: Q82463
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/082/Q82463/
 	
 	=============================================================================
 	
+
+{% endraw %}

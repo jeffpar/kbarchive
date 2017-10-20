@@ -6,6 +6,8 @@ permalink: /kb/153/Q153018/
 
 ## Q153018: BUG: CreateDynaset Holds Lock on Index if No Records Return
 
+{% raw %}
+
 	Article: Q153018
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -101,3 +103,5 @@ permalink: /kb/153/Q153018/
 	
 	=============================================================================
 	
+
+{% endraw %}

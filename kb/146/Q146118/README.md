@@ -6,6 +6,8 @@ permalink: /kb/146/Q146118/
 
 ## Q146118: PRB: Duplicate Column Appears in Combo or List Box
 
+{% raw %}
+
 	Article: Q146118
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -90,3 +92,5 @@ permalink: /kb/146/Q146118/
 	
 	=============================================================================
 	
+
+{% endraw %}

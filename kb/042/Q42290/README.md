@@ -6,6 +6,8 @@ permalink: /kb/042/Q42290/
 
 ## Q42290: Setting Page Width of Printed Listing
 
+{% raw %}
+
 	Article: Q42290
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/042/Q42290/
 	
 	For more information, see Pages 243-244 of the "Microsoft Macro
 	Assembler 5.1 Programmer's Guide."
+
+{% endraw %}

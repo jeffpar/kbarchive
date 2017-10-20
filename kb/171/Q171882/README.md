@@ -6,6 +6,8 @@ permalink: /kb/171/Q171882/
 
 ## Q171882: Error 2184: The Service has not been Started
 
+{% raw %}
+
 	Article: Q171882
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/171/Q171882/
 	
 	=============================================================================
 	
+
+{% endraw %}

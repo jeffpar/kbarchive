@@ -6,6 +6,8 @@ permalink: /kb/147/Q147791/
 
 ## Q147791: Small Outbound RU Size Causes Access Violations on TN3270
 
+{% raw %}
+
 	Article: Q147791
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11
@@ -61,3 +63,5 @@ permalink: /kb/147/Q147791/
 	
 	=============================================================================
 	
+
+{% endraw %}

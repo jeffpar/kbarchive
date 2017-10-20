@@ -6,6 +6,8 @@ permalink: /kb/098/Q98046/
 
 ## Q98046: PC WFW: 3.0b Windows Client Disk 1 &#91;5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q98046
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -75,3 +77,5 @@ permalink: /kb/098/Q98046/
 	
 	=============================================================================
 	
+
+{% endraw %}

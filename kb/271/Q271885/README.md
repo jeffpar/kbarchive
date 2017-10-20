@@ -6,6 +6,8 @@ permalink: /kb/271/Q271885/
 
 ## Q271885: SMS: Scripted Site Server Install Allows Lower Case Site Code
 
+{% raw %}
+
 	Article: Q271885
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -72,3 +74,5 @@ permalink: /kb/271/Q271885/
 	
 	=============================================================================
 	
+
+{% endraw %}

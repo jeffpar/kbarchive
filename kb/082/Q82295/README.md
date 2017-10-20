@@ -6,6 +6,8 @@ permalink: /kb/082/Q82295/
 
 ## Q82295: PC Win: Search Results for GAL has a Maximum of 500 Names
 
+{% raw %}
+
 	Article: Q82295
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -38,3 +40,5 @@ permalink: /kb/082/Q82295/
 	
 	=============================================================================
 	
+
+{% endraw %}

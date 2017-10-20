@@ -6,6 +6,8 @@ permalink: /kb/031/Q31747/
 
 ## Q31747: INFO: Changing the Mouse Cursor for a Window
 
+{% raw %}
+
 	Article: Q31747
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -94,3 +96,5 @@ permalink: /kb/031/Q31747/
 	
 	=============================================================================
 	
+
+{% endraw %}

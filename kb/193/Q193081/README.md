@@ -6,6 +6,8 @@ permalink: /kb/193/Q193081/
 
 ## Q193081: XADM: NDR When Message Is Routed Between Multiple Connectors
 
+{% raw %}
+
 	Article: Q193081
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -81,3 +83,5 @@ permalink: /kb/193/Q193081/
 	
 	=============================================================================
 	
+
+{% endraw %}

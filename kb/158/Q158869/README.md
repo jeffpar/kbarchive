@@ -6,6 +6,8 @@ permalink: /kb/158/Q158869/
 
 ## Q158869: ScanDisk May Not Fix the Media Descriptor Byte
 
+{% raw %}
+
 	Article: Q158869
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1,6.22
@@ -45,3 +47,5 @@ permalink: /kb/158/Q158869/
 	
 	=============================================================================
 	
+
+{% endraw %}

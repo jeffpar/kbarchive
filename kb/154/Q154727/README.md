@@ -6,6 +6,8 @@ permalink: /kb/154/Q154727/
 
 ## Q154727: Close Combat: Playing Over the Internet
 
+{% raw %}
+
 	Article: Q154727
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,1.1
@@ -150,3 +152,5 @@ permalink: /kb/154/Q154727/
 	
 	=============================================================================
 	
+
+{% endraw %}

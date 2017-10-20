@@ -6,6 +6,8 @@ permalink: /kb/122/Q122759/
 
 ## Q122759: PC Win: Unexpected Cursor Movement When Using Arrow Keys
 
+{% raw %}
+
 	Article: Q122759
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -59,3 +61,5 @@ permalink: /kb/122/Q122759/
 	
 	=============================================================================
 	
+
+{% endraw %}

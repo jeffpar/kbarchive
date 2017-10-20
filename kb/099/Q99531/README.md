@@ -6,6 +6,8 @@ permalink: /kb/099/Q99531/
 
 ## Q99531: Adjusting PRINTSTA Parameters Speeds Network Printing
 
+{% raw %}
+
 	Article: Q99531
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/099/Q99531/
 	
 	=============================================================================
 	
+
+{% endraw %}

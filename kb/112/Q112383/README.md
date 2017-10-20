@@ -6,6 +6,8 @@ permalink: /kb/112/Q112383/
 
 ## Q112383: PreferredRedir=Full Default with NetWare 4 Secondary Network
 
+{% raw %}
+
 	Article: Q112383
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -69,3 +71,5 @@ permalink: /kb/112/Q112383/
 	
 	=============================================================================
 	
+
+{% endraw %}

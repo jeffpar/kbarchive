@@ -6,6 +6,8 @@ permalink: /kb/136/Q136943/
 
 ## Q136943: Multiple-Language Implications in Visual FoxPro
 
+{% raw %}
+
 	Article: Q136943
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/136/Q136943/
 	
 	=============================================================================
 	
+
+{% endraw %}

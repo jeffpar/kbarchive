@@ -6,6 +6,8 @@ permalink: /kb/218/Q218129/
 
 ## Q218129: &quot;Snap in Failed to Initialize&quot; Error Opening Commerce Host Admin
 
+{% raw %}
+
 	Article: Q218129
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -72,3 +74,5 @@ permalink: /kb/218/Q218129/
 	
 	=============================================================================
 	
+
+{% endraw %}

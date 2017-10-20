@@ -6,6 +6,8 @@ permalink: /kb/130/Q130406/
 
 ## Q130406: DOCERR: SHOW(2) Does Not Set Modal Form or Formset to Modeless
 
+{% raw %}
+
 	Article: Q130406
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/130/Q130406/
 	
 	=============================================================================
 	
+
+{% endraw %}

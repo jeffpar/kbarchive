@@ -6,6 +6,8 @@ permalink: /kb/176/Q176318/
 
 ## Q176318: WINS Manager Displays Dots Instead of Sixteenth Character
 
+{% raw %}
+
 	Article: Q176318
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -86,3 +88,5 @@ permalink: /kb/176/Q176318/
 	
 	=============================================================================
 	
+
+{% endraw %}

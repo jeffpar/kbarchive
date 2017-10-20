@@ -6,6 +6,8 @@ permalink: /kb/039/Q39581/
 
 ## Q39581: Can't Define SUB/FUNCTION in INCLUDE File
 
+{% raw %}
+
 	Article: Q39581
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -44,3 +46,5 @@ permalink: /kb/039/Q39581/
 	         PRINT a(j)
 	      NEXT j
 	   END SUB
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143257/
 
 ## Q143257: Microsoft Plus! Requires Minimal Space on Windows 95 Drive
 
+{% raw %}
+
 	Article: Q143257
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/143/Q143257/
 	
 	=============================================================================
 	
+
+{% endraw %}

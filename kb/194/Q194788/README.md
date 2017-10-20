@@ -6,6 +6,8 @@ permalink: /kb/194/Q194788/
 
 ## Q194788: Windows NT Service Pack 4 and Client Certificates
 
+{% raw %}
+
 	Article: Q194788
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -91,3 +93,5 @@ permalink: /kb/194/Q194788/
 	
 	=============================================================================
 	
+
+{% endraw %}

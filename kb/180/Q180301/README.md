@@ -6,6 +6,8 @@ permalink: /kb/180/Q180301/
 
 ## Q180301: Unable to Close the Edit Alias Dialog Box in Personal Web Server
 
+{% raw %}
+
 	Article: Q180301
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:4.0
@@ -57,3 +59,5 @@ permalink: /kb/180/Q180301/
 	
 	=============================================================================
 	
+
+{% endraw %}

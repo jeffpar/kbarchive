@@ -6,6 +6,8 @@ permalink: /kb/107/Q107409/
 
 ## Q107409: HP DeskJet 500c/550c Non-Printing Area (Margin)
 
+{% raw %}
+
 	Article: Q107409
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/107/Q107409/
 	
 	=============================================================================
 	
+
+{% endraw %}

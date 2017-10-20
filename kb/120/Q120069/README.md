@@ -6,6 +6,8 @@ permalink: /kb/120/Q120069/
 
 ## Q120069: Real and Protected Mode Segment Size
 
+{% raw %}
+
 	Article: Q120069
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1,6.11
@@ -54,3 +56,5 @@ permalink: /kb/120/Q120069/
 	
 	=============================================================================
 	
+
+{% endraw %}

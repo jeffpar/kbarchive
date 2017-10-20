@@ -6,6 +6,8 @@ permalink: /kb/148/Q148637/
 
 ## Q148637: Windows 95/98 Overwrites Boot-Sector Field on Floppy Disks
 
+{% raw %}
+
 	Article: Q148637
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -180,3 +182,5 @@ permalink: /kb/148/Q148637/
 	
 	=============================================================================
 	
+
+{% endraw %}

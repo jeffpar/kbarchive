@@ -6,6 +6,8 @@ permalink: /kb/185/Q185682/
 
 ## Q185682: Bugcheck When IPX Is Bound to Only Ndiswan Adapter
 
+{% raw %}
+
 	Article: Q185682
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/185/Q185682/
 	
 	=============================================================================
 	
+
+{% endraw %}

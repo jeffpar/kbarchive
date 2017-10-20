@@ -6,6 +6,8 @@ permalink: /kb/037/Q37901/
 
 ## Q37901: &quot;Duplicate Definition&quot; LINKing C Graphics Library to BASIC, /O
 
+{% raw %}
+
 	Article: Q37901
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -28,3 +30,5 @@ permalink: /kb/037/Q37901/
 	Linking BASIC programs compiled BC /O with Microsoft C graphics
 	routines gives many "Duplicate Definition" errors, even if you LINK
 	with the /NOE option. Compile without /O to eliminate the errors.
+
+{% endraw %}

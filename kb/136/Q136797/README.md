@@ -6,6 +6,8 @@ permalink: /kb/136/Q136797/
 
 ## Q136797: DOC: ERROR - Events List for List Box Incomplete
 
+{% raw %}
+
 	Article: Q136797
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/136/Q136797/
 	
 	=============================================================================
 	
+
+{% endraw %}

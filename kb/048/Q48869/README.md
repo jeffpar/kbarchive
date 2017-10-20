@@ -6,6 +6,8 @@ permalink: /kb/048/Q48869/
 
 ## Q48869: Long TMP Environment Variable Causes L1089
 
+{% raw %}
+
 	Article: Q48869
 	Product(s): See article
 	Version(s): 5.03   | 5.03
@@ -31,3 +33,5 @@ permalink: /kb/048/Q48869/
 	: cannot open response file
 	
 	This problem occurs in FORTRAN 5.00 and Link 5.03.
+
+{% endraw %}

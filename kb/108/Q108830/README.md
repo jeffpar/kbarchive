@@ -6,6 +6,8 @@ permalink: /kb/108/Q108830/
 
 ## Q108830: PC Win: StripGatewayHeaders Limited to 75 Recipients
 
+{% raw %}
+
 	Article: Q108830
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -60,3 +62,5 @@ permalink: /kb/108/Q108830/
 	
 	=============================================================================
 	
+
+{% endraw %}

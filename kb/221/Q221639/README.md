@@ -6,6 +6,8 @@ permalink: /kb/221/Q221639/
 
 ## Q221639: FIX: Empty Memo Shows Trash Data With Trace Window Mouse Over
 
+{% raw %}
+
 	Article: Q221639
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/221/Q221639/
 	
 	=============================================================================
 	
+
+{% endraw %}

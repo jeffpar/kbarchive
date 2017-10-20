@@ -6,6 +6,8 @@ permalink: /kb/194/Q194497/
 
 ## Q194497: WD97: PRIVATE Fields Appear in Converted WordPerfect Documents
 
+{% raw %}
+
 	Article: Q194497
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/194/Q194497/
 	
 	=============================================================================
 	
+
+{% endraw %}

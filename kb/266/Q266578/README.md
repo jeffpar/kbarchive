@@ -6,6 +6,8 @@ permalink: /kb/266/Q266578/
 
 ## Q266578: Encarta Err Msg: Please Make Sure the &lt;Encarta&gt; Installation...
 
+{% raw %}
+
 	Article: Q266578
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/266/Q266578/
 	
 	=============================================================================
 	
+
+{% endraw %}

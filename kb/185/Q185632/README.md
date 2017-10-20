@@ -6,6 +6,8 @@ permalink: /kb/185/Q185632/
 
 ## Q185632: WD97: How to Share a Customized Built-in Toolbar
 
+{% raw %}
+
 	Article: Q185632
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -132,3 +134,5 @@ permalink: /kb/185/Q185632/
 	
 	=============================================================================
 	
+
+{% endraw %}

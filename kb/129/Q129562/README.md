@@ -6,6 +6,8 @@ permalink: /kb/129/Q129562/
 
 ## Q129562: Logitech Cyberman Requires MS-DOS Mode
 
+{% raw %}
+
 	Article: Q129562
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/129/Q129562/
 	
 	=============================================================================
 	
+
+{% endraw %}

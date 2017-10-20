@@ -6,6 +6,8 @@ permalink: /kb/122/Q122300/
 
 ## Q122300: FIX: C1001 Error for typedef Within the Class Declaration
 
+{% raw %}
+
 	Article: Q122300
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/122/Q122300/
 	
 	=============================================================================
 	
+
+{% endraw %}

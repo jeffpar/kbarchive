@@ -6,6 +6,8 @@ permalink: /kb/168/Q168210/
 
 ## Q168210: HOWTO: Get Return Parameters from a Stored Procedure with DAO
 
+{% raw %}
+
 	Article: Q168210
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -151,3 +153,5 @@ permalink: /kb/168/Q168210/
 	
 	=============================================================================
 	
+
+{% endraw %}

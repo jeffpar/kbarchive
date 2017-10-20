@@ -6,6 +6,8 @@ permalink: /kb/149/Q149202/
 
 ## Q149202: XCLN: Client for Macintosh Version 4.0 Release Notes
 
+{% raw %}
+
 	Article: Q149202
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -161,3 +163,5 @@ permalink: /kb/149/Q149202/
 	
 	=============================================================================
 	
+
+{% endraw %}

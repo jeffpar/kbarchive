@@ -6,6 +6,8 @@ permalink: /kb/095/Q95576/
 
 ## Q95576: WFWG: Network Card Detection Hangs Machine During Setup
 
+{% raw %}
+
 	Article: Q95576
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/095/Q95576/
 	
 	=============================================================================
 	
+
+{% endraw %}

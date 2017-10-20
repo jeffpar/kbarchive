@@ -6,6 +6,8 @@ permalink: /kb/257/Q257790/
 
 ## Q257790: BUG: CancelUpdate After AddNew Causes Error If Datatype Invalid
 
+{% raw %}
+
 	Article: Q257790
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0,6.0 SP3
@@ -120,3 +122,5 @@ permalink: /kb/257/Q257790/
 	
 	=============================================================================
 	
+
+{% endraw %}

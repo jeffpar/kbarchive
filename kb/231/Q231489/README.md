@@ -6,6 +6,8 @@ permalink: /kb/231/Q231489/
 
 ## Q231489: SMSINST: Using Wildcard with Install File Script Forces Restart
 
+{% raw %}
+
 	Article: Q231489
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2,2.0
@@ -77,3 +79,5 @@ permalink: /kb/231/Q231489/
 	
 	=============================================================================
 	
+
+{% endraw %}

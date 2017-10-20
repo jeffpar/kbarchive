@@ -6,6 +6,8 @@ permalink: /kb/221/Q221714/
 
 ## Q221714: BUG: FFCs - _Hyperlink Classes Builder Doesn't Allow Long URL
 
+{% raw %}
+
 	Article: Q221714
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -76,3 +78,5 @@ permalink: /kb/221/Q221714/
 	
 	=============================================================================
 	
+
+{% endraw %}

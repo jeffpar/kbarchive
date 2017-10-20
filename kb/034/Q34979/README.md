@@ -6,6 +6,8 @@ permalink: /kb/034/Q34979/
 
 ## Q34979: Multiple Communal Definitions Incorrectly Allowed
 
+{% raw %}
+
 	Article: Q34979
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -26,3 +28,5 @@ permalink: /kb/034/Q34979/
 	Microsoft has confirmed this to be a problem in Version 5.10. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

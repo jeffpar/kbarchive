@@ -6,6 +6,8 @@ permalink: /kb/258/Q258227/
 
 ## Q258227: SMS: Apostrophe in User Name or Group Name Causes SQL Errors
 
+{% raw %}
+
 	Article: Q258227
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/258/Q258227/
 	
 	=============================================================================
 	
+
+{% endraw %}

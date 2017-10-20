@@ -6,6 +6,8 @@ permalink: /kb/150/Q150727/
 
 ## Q150727: PCM Error: Unable to Connect. &lt;errcode&gt; -&#92;&#92;Server&#92;Share
 
+{% raw %}
+
 	Article: Q150727
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150727/
 	
 	=============================================================================
 	
+
+{% endraw %}

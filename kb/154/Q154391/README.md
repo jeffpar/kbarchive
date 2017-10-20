@@ -6,6 +6,8 @@ permalink: /kb/154/Q154391/
 
 ## Q154391: Flashing Question Mark During Startup
 
+{% raw %}
+
 	Article: Q154391
 	Product(s): Microsoft Tips for the Macintosh System
 	Version(s): 7.x
@@ -92,3 +94,5 @@ permalink: /kb/154/Q154391/
 	
 	=============================================================================
 	
+
+{% endraw %}

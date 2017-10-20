@@ -6,6 +6,8 @@ permalink: /kb/122/Q122032/
 
 ## Q122032: Troubleshooting At Work PC Fax in WFWG 3.11
 
+{% raw %}
+
 	Article: Q122032
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -349,3 +351,5 @@ permalink: /kb/122/Q122032/
 	
 	=============================================================================
 	
+
+{% endraw %}

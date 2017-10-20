@@ -6,6 +6,8 @@ permalink: /kb/186/Q186553/
 
 ## Q186553: Terminal Server Error Messages: 1700 to 1799
 
+{% raw %}
+
 	Article: Q186553
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -523,3 +525,5 @@ permalink: /kb/186/Q186553/
 	
 	=============================================================================
 	
+
+{% endraw %}

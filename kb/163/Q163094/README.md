@@ -6,6 +6,8 @@ permalink: /kb/163/Q163094/
 
 ## Q163094: WD97: Define Command Missing from Shortcut Menu
 
+{% raw %}
+
 	Article: Q163094
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/163/Q163094/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61593/
 
 ## Q61593: Pin-Outs of the 9-Pin Hosiden Socket
 
+{% raw %}
+
 	Article: Q61593
 	Product(s): See article
 	Version(s): 1.00
@@ -29,3 +31,5 @@ permalink: /kb/061/Q61593/
 	   8           SW3
 	   9           Signal ground
 	   E           Shield ground
+
+{% endraw %}

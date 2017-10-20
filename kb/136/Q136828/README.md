@@ -6,6 +6,8 @@ permalink: /kb/136/Q136828/
 
 ## Q136828: ICMP Does Not Provide MTU Hint in ICMP Dest Unreachable, DF Set
 
+{% raw %}
+
 	Article: Q136828
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -132,3 +134,5 @@ permalink: /kb/136/Q136828/
 	
 	=============================================================================
 	
+
+{% endraw %}

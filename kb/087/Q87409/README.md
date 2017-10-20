@@ -6,6 +6,8 @@ permalink: /kb/087/Q87409/
 
 ## Q87409: PC DB: Structure of the MAI Directory
 
+{% raw %}
+
 	Article: Q87409
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -55,3 +57,5 @@ permalink: /kb/087/Q87409/
 	
 	=============================================================================
 	
+
+{% endraw %}

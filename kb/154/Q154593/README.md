@@ -6,6 +6,8 @@ permalink: /kb/154/Q154593/
 
 ## Q154593: SMS: Administrator Utility Does Not Print Attribute Titles
 
+{% raw %}
+
 	Article: Q154593
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -46,3 +48,5 @@ permalink: /kb/154/Q154593/
 	
 	=============================================================================
 	
+
+{% endraw %}

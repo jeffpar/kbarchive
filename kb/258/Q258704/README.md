@@ -6,6 +6,8 @@ permalink: /kb/258/Q258704/
 
 ## Q258704: XIMS: SMTP Proxy Adds Trailing Period (.) for Template
 
+{% raw %}
+
 	Article: Q258704
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -69,3 +71,5 @@ permalink: /kb/258/Q258704/
 	
 	=============================================================================
 	
+
+{% endraw %}

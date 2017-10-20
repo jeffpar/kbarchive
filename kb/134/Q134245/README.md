@@ -6,6 +6,8 @@ permalink: /kb/134/Q134245/
 
 ## Q134245: FIX: Multi-Select List Box Does Not Retain Selected Items
 
+{% raw %}
+
 	Article: Q134245
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -111,3 +113,5 @@ permalink: /kb/134/Q134245/
 	
 	=============================================================================
 	
+
+{% endraw %}

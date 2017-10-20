@@ -6,6 +6,8 @@ permalink: /kb/238/Q238854/
 
 ## Q238854: SMS: User Wizard Adds Local Groups in Other Local Groups
 
+{% raw %}
+
 	Article: Q238854
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -42,3 +44,5 @@ permalink: /kb/238/Q238854/
 	
 	=============================================================================
 	
+
+{% endraw %}

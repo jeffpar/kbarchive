@@ -6,6 +6,8 @@ permalink: /kb/152/Q152609/
 
 ## Q152609: PRB: Visual Basic Program Does Not Run on Other Computers
 
+{% raw %}
+
 	Article: Q152609
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/152/Q152609/
 	
 	=============================================================================
 	
+
+{% endraw %}

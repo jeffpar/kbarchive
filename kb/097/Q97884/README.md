@@ -6,6 +6,8 @@ permalink: /kb/097/Q97884/
 
 ## Q97884: DBLSPACE /CHKDSK Stops (Hangs) with Cross-Linked Files
 
+{% raw %}
+
 	Article: Q97884
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -68,3 +70,5 @@ permalink: /kb/097/Q97884/
 	
 	=============================================================================
 	
+
+{% endraw %}

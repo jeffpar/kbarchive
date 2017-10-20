@@ -6,6 +6,8 @@ permalink: /kb/123/Q123109/
 
 ## Q123109: Macintosh Clients Not Able to Use Downloaded Fonts
 
+{% raw %}
+
 	Article: Q123109
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -108,3 +110,5 @@ permalink: /kb/123/Q123109/
 	
 	=============================================================================
 	
+
+{% endraw %}

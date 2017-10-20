@@ -6,6 +6,8 @@ permalink: /kb/140/Q140937/
 
 ## Q140937: XCON: Remote MTA Reports Syntax Error
 
+{% raw %}
+
 	Article: Q140937
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/140/Q140937/
 	
 	=============================================================================
 	
+
+{% endraw %}

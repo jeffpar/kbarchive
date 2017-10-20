@@ -6,6 +6,8 @@ permalink: /kb/048/Q48882/
 
 ## Q48882: Mac Wkst: The Mail Notifier and Cricket Graph
 
+{% raw %}
+
 	Article: Q48882
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -40,3 +42,5 @@ permalink: /kb/048/Q48882/
 	
 	=============================================================================
 	
+
+{% endraw %}

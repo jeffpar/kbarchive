@@ -6,6 +6,8 @@ permalink: /kb/164/Q164953/
 
 ## Q164953: Visual C++ Alpha Edition 4.2B C2.EXE 10.20.7032
 
+{% raw %}
+
 	Article: Q164953
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2b
@@ -75,3 +77,5 @@ permalink: /kb/164/Q164953/
 	
 	=============================================================================
 	
+
+{% endraw %}

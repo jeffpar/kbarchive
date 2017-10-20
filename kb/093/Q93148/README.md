@@ -6,6 +6,8 @@ permalink: /kb/093/Q93148/
 
 ## Q93148: Panasonic KX-P4420 May Not Print Large Documents
 
+{% raw %}
+
 	Article: Q93148
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/093/Q93148/
 	
 	=============================================================================
 	
+
+{% endraw %}

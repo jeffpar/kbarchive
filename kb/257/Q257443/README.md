@@ -6,6 +6,8 @@ permalink: /kb/257/Q257443/
 
 ## Q257443: Config.sys Not Processed When Booting from Floppy Disk Drive
 
+{% raw %}
+
 	Article: Q257443
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/257/Q257443/
 	
 	=============================================================================
 	
+
+{% endraw %}

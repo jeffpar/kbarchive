@@ -6,6 +6,8 @@ permalink: /kb/129/Q129909/
 
 ## Q129909: Loading Letter-Head Paper To Print in Duplex Mode
 
+{% raw %}
+
 	Article: Q129909
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.11 3.5 3.51 4.0
@@ -46,3 +48,5 @@ permalink: /kb/129/Q129909/
 	
 	=============================================================================
 	
+
+{% endraw %}

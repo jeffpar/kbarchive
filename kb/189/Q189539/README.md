@@ -6,6 +6,8 @@ permalink: /kb/189/Q189539/
 
 ## Q189539: INFO: VB 6.0 Readme Part 8: WebClass Designer Issues
 
+{% raw %}
+
 	Article: Q189539
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -492,3 +494,5 @@ permalink: /kb/189/Q189539/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/033/Q33673/
 
 ## Q33673: Windows PIF Settings for Microsoft Works for MS-DOS
 
+{% raw %}
+
 	Article: Q33673
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/033/Q33673/
 	
 	=============================================================================
 	
+
+{% endraw %}

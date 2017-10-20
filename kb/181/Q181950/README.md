@@ -6,6 +6,8 @@ permalink: /kb/181/Q181950/
 
 ## Q181950: XFOR: How to Use the Internet Mail Connector in Console Mode
 
+{% raw %}
+
 	Article: Q181950
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.50
@@ -104,3 +106,5 @@ permalink: /kb/181/Q181950/
 	
 	=============================================================================
 	
+
+{% endraw %}

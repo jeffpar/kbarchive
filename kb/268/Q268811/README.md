@@ -6,6 +6,8 @@ permalink: /kb/268/Q268811/
 
 ## Q268811: AoE II Expansion: Unable to Join Multiplayer Game
 
+{% raw %}
+
 	Article: Q268811
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/268/Q268811/
 	
 	=============================================================================
 	
+
+{% endraw %}

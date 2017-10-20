@@ -6,6 +6,8 @@ permalink: /kb/298/Q298279/
 
 ## Q298279: &quot;Form Load Failed&quot; Error Message When You Try to Choose a Form
 
+{% raw %}
+
 	Article: Q298279
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/298/Q298279/
 	
 	=============================================================================
 	
+
+{% endraw %}

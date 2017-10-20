@@ -6,6 +6,8 @@ permalink: /kb/321/Q321747/
 
 ## Q321747: Dungeon Siege: How to Set Screen Resolution and Color Depth
 
+{% raw %}
+
 	Article: Q321747
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -111,3 +113,5 @@ permalink: /kb/321/Q321747/
 	
 	=============================================================================
 	
+
+{% endraw %}

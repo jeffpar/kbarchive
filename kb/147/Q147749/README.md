@@ -6,6 +6,8 @@ permalink: /kb/147/Q147749/
 
 ## Q147749: BUG: Explicit-Shape Array Elements Not Displayed in Debugger
 
+{% raw %}
+
 	Article: Q147749
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/147/Q147749/
 	
 	=============================================================================
 	
+
+{% endraw %}

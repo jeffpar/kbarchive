@@ -6,6 +6,8 @@ permalink: /kb/110/Q110261/
 
 ## Q110261: Airframe Damage from Stress Causes Aircraft to Explode
 
+{% raw %}
+
 	Article: Q110261
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -65,3 +67,5 @@ permalink: /kb/110/Q110261/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245265/
 
 ## Q245265: Documentation Error: Disabling the OS/2 Subsystem
 
+{% raw %}
+
 	Article: Q245265
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/245/Q245265/
 	
 	=============================================================================
 	
+
+{% endraw %}

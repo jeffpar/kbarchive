@@ -6,6 +6,8 @@ permalink: /kb/130/Q130300/
 
 ## Q130300: Distributed .ICO or File Needs Multiple Images
 
+{% raw %}
+
 	Article: Q130300
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -69,3 +71,5 @@ permalink: /kb/130/Q130300/
 	
 	=============================================================================
 	
+
+{% endraw %}

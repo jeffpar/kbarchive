@@ -6,6 +6,8 @@ permalink: /kb/106/Q106747/
 
 ## Q106747: MS-DOS 6.2 Step-Up Err Msg: MakeSys Could Not...(DBLSPACE.BIN)
 
+{% raw %}
+
 	Article: Q106747
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -101,3 +103,5 @@ permalink: /kb/106/Q106747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86982/
 
 ## Q86982: X400: Maintaining Addresses with Import Program
 
+{% raw %}
+
 	Article: Q86982
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86982/
 	
 	=============================================================================
 	
+
+{% endraw %}

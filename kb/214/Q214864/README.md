@@ -6,6 +6,8 @@ permalink: /kb/214/Q214864/
 
 ## Q214864: Exchange Protocols Fail After Applying Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q214864
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4,4.5,5.5
@@ -131,3 +133,5 @@ permalink: /kb/214/Q214864/
 	
 	=============================================================================
 	
+
+{% endraw %}

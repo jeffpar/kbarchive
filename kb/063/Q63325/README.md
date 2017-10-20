@@ -6,6 +6,8 @@ permalink: /kb/063/Q63325/
 
 ## Q63325: Saved Mode Causes Backward Flight in Flight Simulator
 
+{% raw %}
+
 	Article: Q63325
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/063/Q63325/
 	
 	=============================================================================
 	
+
+{% endraw %}

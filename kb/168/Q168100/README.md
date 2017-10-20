@@ -6,6 +6,8 @@ permalink: /kb/168/Q168100/
 
 ## Q168100: WD97: Fields Inserted in AutoText Entry Updated Automatically
 
+{% raw %}
+
 	Article: Q168100
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/168/Q168100/
 	
 	=============================================================================
 	
+
+{% endraw %}

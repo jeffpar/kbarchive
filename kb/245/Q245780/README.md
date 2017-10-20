@@ -6,6 +6,8 @@ permalink: /kb/245/Q245780/
 
 ## Q245780: Access Violation in DNSAdmin.exe When Editing a Subnetted Revers
 
+{% raw %}
+
 	Article: Q245780
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -43,3 +45,5 @@ permalink: /kb/245/Q245780/
 	
 	=============================================================================
 	
+
+{% endraw %}

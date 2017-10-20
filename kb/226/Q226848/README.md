@@ -6,6 +6,8 @@ permalink: /kb/226/Q226848/
 
 ## Q226848: SMS: Network Discovery Doesn't Time Out After Failed RPC Call
 
+{% raw %}
+
 	Article: Q226848
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/226/Q226848/
 	
 	=============================================================================
 	
+
+{% endraw %}

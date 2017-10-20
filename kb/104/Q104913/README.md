@@ -6,6 +6,8 @@ permalink: /kb/104/Q104913/
 
 ## Q104913: PC Win OS2: Check for New Mail Time Is Twice the User Setting
 
+{% raw %}
+
 	Article: Q104913
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -58,3 +60,5 @@ permalink: /kb/104/Q104913/
 	
 	=============================================================================
 	
+
+{% endraw %}

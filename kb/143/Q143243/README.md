@@ -6,6 +6,8 @@ permalink: /kb/143/Q143243/
 
 ## Q143243: XADM: Missing Site Addressing Objects/E-Mail Addresses
 
+{% raw %}
+
 	Article: Q143243
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -89,3 +91,5 @@ permalink: /kb/143/Q143243/
 	
 	=============================================================================
 	
+
+{% endraw %}

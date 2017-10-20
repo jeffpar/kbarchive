@@ -6,6 +6,8 @@ permalink: /kb/256/Q256619/
 
 ## Q256619: FS: How to Edit a Checkride Certificate in Paint
 
+{% raw %}
+
 	Article: Q256619
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -163,3 +165,5 @@ permalink: /kb/256/Q256619/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236793/
 
 ## Q236793: XCLN ODK Deploying Internet Explorer 4.01 Service Packs with ODK
 
+{% raw %}
+
 	Article: Q236793
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -106,3 +108,5 @@ permalink: /kb/236/Q236793/
 	
 	=============================================================================
 	
+
+{% endraw %}

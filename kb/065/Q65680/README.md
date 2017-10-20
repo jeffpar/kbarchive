@@ -6,6 +6,8 @@ permalink: /kb/065/Q65680/
 
 ## Q65680: A Listing of Keyboard Commands in Windows Version 3.0
 
+{% raw %}
+
 	Article: Q65680
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -115,3 +117,5 @@ permalink: /kb/065/Q65680/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188823/
 
 ## Q188823: XCLN: Attachment Dropped During Forward of Message
 
+{% raw %}
+
 	Article: Q188823
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/188/Q188823/
 	
 	=============================================================================
 	
+
+{% endraw %}

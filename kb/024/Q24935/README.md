@@ -6,6 +6,8 @@ permalink: /kb/024/Q24935/
 
 ## Q24935: Effects of Min and Max Memory Allocation During C Program Load
 
+{% raw %}
+
 	Article: Q24935
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 6.00 6.00a
@@ -38,3 +40,5 @@ permalink: /kb/024/Q24935/
 	changing the maximum allocation to 4K -- you can link with the /CP:1
 	option or you can modify an existing .EXE file with the EXEHDR or
 	EXEMOD utilities.
+
+{% endraw %}

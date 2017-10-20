@@ -6,6 +6,8 @@ permalink: /kb/159/Q159791/
 
 ## Q159791: WD97: Word Count Appears Inaccurate
 
+{% raw %}
+
 	Article: Q159791
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/159/Q159791/
 	
 	=============================================================================
 	
+
+{% endraw %}

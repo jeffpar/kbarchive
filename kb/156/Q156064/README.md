@@ -6,6 +6,8 @@ permalink: /kb/156/Q156064/
 
 ## Q156064: WD97: Saved File Name Does Not Appear on Document Title Bar
 
+{% raw %}
+
 	Article: Q156064
 	Product(s): Word 97 for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -151,3 +153,5 @@ permalink: /kb/156/Q156064/
 	
 	=============================================================================
 	
+
+{% endraw %}

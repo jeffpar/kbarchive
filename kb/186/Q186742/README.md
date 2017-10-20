@@ -6,6 +6,8 @@ permalink: /kb/186/Q186742/
 
 ## Q186742: XFOR: MS Mail Migration Fails With EventID 7017
 
+{% raw %}
+
 	Article: Q186742
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/186/Q186742/
 	
 	=============================================================================
 	
+
+{% endraw %}

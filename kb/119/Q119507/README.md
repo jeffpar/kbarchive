@@ -6,6 +6,8 @@ permalink: /kb/119/Q119507/
 
 ## Q119507: Problems Accessing Extended Characters When Using KBDUSX.DLL
 
+{% raw %}
+
 	Article: Q119507
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/119/Q119507/
 	
 	=============================================================================
 	
+
+{% endraw %}

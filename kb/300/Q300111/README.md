@@ -6,6 +6,8 @@ permalink: /kb/300/Q300111/
 
 ## Q300111: Error Message: Unknown Partner Error at Passport Login Server
 
+{% raw %}
+
 	Article: Q300111
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -84,3 +86,5 @@ permalink: /kb/300/Q300111/
 	
 	=============================================================================
 	
+
+{% endraw %}

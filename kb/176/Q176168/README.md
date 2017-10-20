@@ -6,6 +6,8 @@ permalink: /kb/176/Q176168/
 
 ## Q176168: XADM: Schema Changes for Exchange Server 5.0 and 5.5
 
+{% raw %}
+
 	Article: Q176168
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -145,3 +147,5 @@ permalink: /kb/176/Q176168/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179053/
 
 ## Q179053: FS98: Shortcuts Created in Different Folders in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q179053
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:; winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/179/Q179053/
 	
 	=============================================================================
 	
+
+{% endraw %}

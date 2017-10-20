@@ -6,6 +6,8 @@ permalink: /kb/082/Q82620/
 
 ## Q82620: ObjectVision 2.0 Prints TrueType Fonts Smaller
 
+{% raw %}
+
 	Article: Q82620
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/082/Q82620/
 	
 	=============================================================================
 	
+
+{% endraw %}

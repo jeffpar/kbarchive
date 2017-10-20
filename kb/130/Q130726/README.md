@@ -6,6 +6,8 @@ permalink: /kb/130/Q130726/
 
 ## Q130726: Some Menu Options Unavailable in Distributed Applications
 
+{% raw %}
+
 	Article: Q130726
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -92,3 +94,5 @@ permalink: /kb/130/Q130726/
 	
 	=============================================================================
 	
+
+{% endraw %}

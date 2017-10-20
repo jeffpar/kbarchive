@@ -6,6 +6,8 @@ permalink: /kb/169/Q169889/
 
 ## Q169889: XGEN: Help File for Mailbox Migration Tool Has Wrong Bitmap
 
+{% raw %}
+
 	Article: Q169889
 	Product(s): Microsoft Windows NT
 	Version(s): Part 1
@@ -60,3 +62,5 @@ permalink: /kb/169/Q169889/
 	
 	=============================================================================
 	
+
+{% endraw %}

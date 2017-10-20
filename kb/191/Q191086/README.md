@@ -6,6 +6,8 @@ permalink: /kb/191/Q191086/
 
 ## Q191086: XFOR: NDR Not Sent When &quot;Report to DL Owner&quot; Option Checked
 
+{% raw %}
+
 	Article: Q191086
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/191/Q191086/
 	
 	=============================================================================
 	
+
+{% endraw %}

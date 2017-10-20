@@ -6,6 +6,8 @@ permalink: /kb/157/Q157844/
 
 ## Q157844: WD97: Format of List Style Unexpectedly Removed
 
+{% raw %}
+
 	Article: Q157844
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -124,3 +126,5 @@ permalink: /kb/157/Q157844/
 	
 	=============================================================================
 	
+
+{% endraw %}

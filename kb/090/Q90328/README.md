@@ -6,6 +6,8 @@ permalink: /kb/090/Q90328/
 
 ## Q90328: Conventional Memory Change with WFWG and DYNAMIC=YES Setting
 
+{% raw %}
+
 	Article: Q90328
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/090/Q90328/
 	
 	=============================================================================
 	
+
+{% endraw %}

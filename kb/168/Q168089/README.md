@@ -6,6 +6,8 @@ permalink: /kb/168/Q168089/
 
 ## Q168089: NTMMTA Locks Session.log When Run As a Service on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q168089
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -47,3 +49,5 @@ permalink: /kb/168/Q168089/
 	
 	=============================================================================
 	
+
+{% endraw %}

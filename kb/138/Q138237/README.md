@@ -6,6 +6,8 @@ permalink: /kb/138/Q138237/
 
 ## Q138237: Online Help Doesn't Index Remote Control w/ Quick Windows Viewer
 
+{% raw %}
+
 	Article: Q138237
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -42,3 +44,5 @@ permalink: /kb/138/Q138237/
 	
 	=============================================================================
 	
+
+{% endraw %}

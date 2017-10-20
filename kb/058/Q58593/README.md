@@ -6,6 +6,8 @@ permalink: /kb/058/Q58593/
 
 ## Q58593: Mac Hyp: AddHandle Attaches a Macintosh Resource to a Message
 
+{% raw %}
+
 	Article: Q58593
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -64,3 +66,5 @@ permalink: /kb/058/Q58593/
 	
 	=============================================================================
 	
+
+{% endraw %}

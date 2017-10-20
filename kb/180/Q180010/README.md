@@ -6,6 +6,8 @@ permalink: /kb/180/Q180010/
 
 ## Q180010: XADM: An Unexpected Error Has Occurred ID no: c106fbf8
 
+{% raw %}
+
 	Article: Q180010
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -133,3 +135,5 @@ permalink: /kb/180/Q180010/
 	
 	=============================================================================
 	
+
+{% endraw %}

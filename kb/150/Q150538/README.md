@@ -6,6 +6,8 @@ permalink: /kb/150/Q150538/
 
 ## Q150538: Support for Music Sampler for Windows 95
 
+{% raw %}
+
 	Article: Q150538
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -88,3 +90,5 @@ permalink: /kb/150/Q150538/
 	
 	=============================================================================
 	
+
+{% endraw %}

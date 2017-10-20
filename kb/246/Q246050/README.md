@@ -6,6 +6,8 @@ permalink: /kb/246/Q246050/
 
 ## Q246050: MapPoint: How to Import Streets &amp; Trips 2000 Pushpins
 
+{% raw %}
+
 	Article: Q246050
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/246/Q246050/
 	
 	=============================================================================
 	
+
+{% endraw %}

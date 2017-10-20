@@ -6,6 +6,8 @@ permalink: /kb/027/Q27784/
 
 ## Q27784: WD97: How to Change Automatic Page Number Font or Size
 
+{% raw %}
+
 	Article: Q27784
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/027/Q27784/
 	
 	=============================================================================
 	
+
+{% endraw %}

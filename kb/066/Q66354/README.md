@@ -6,6 +6,8 @@ permalink: /kb/066/Q66354/
 
 ## Q66354: Description of Taipei in the Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66354
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/066/Q66354/
 	
 	=============================================================================
 	
+
+{% endraw %}

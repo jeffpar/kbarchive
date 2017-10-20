@@ -6,6 +6,8 @@ permalink: /kb/174/Q174234/
 
 ## Q174234: Computer Hangs with Intensive 16-bit Code Running in a VDM
 
+{% raw %}
+
 	Article: Q174234
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/174/Q174234/
 	
 	=============================================================================
 	
+
+{% endraw %}

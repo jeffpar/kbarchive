@@ -6,6 +6,8 @@ permalink: /kb/041/Q41153/
 
 ## Q41153: &quot;AS Clause Required&quot; Error for REDIM Not Detected in QB 4.50
 
+{% raw %}
+
 	Article: Q41153
 	Product(s): See article
 	Version(s): 4.50
@@ -42,3 +44,5 @@ permalink: /kb/041/Q41153/
 	
 	REDIM a(20 TO 50)                     'This line contains the error
 	PRINT LBOUND(a), UBOUND(a), LEN(a(LBOUND(a)))
+
+{% endraw %}

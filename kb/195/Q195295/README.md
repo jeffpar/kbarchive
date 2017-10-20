@@ -6,6 +6,8 @@ permalink: /kb/195/Q195295/
 
 ## Q195295: Extensible Counters for Windows NT Option Pack Missing
 
+{% raw %}
+
 	Article: Q195295
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/195/Q195295/
 	
 	=============================================================================
 	
+
+{% endraw %}

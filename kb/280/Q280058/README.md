@@ -6,6 +6,8 @@ permalink: /kb/280/Q280058/
 
 ## Q280058: List of Bugs Fixed in SNA Server 4.0 Service Pack 4
 
+{% raw %}
+
 	Article: Q280058
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -338,3 +340,5 @@ permalink: /kb/280/Q280058/
 	
 	=============================================================================
 	
+
+{% endraw %}

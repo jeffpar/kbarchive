@@ -6,6 +6,8 @@ permalink: /kb/308/Q308523/
 
 ## Q308523: Program Stops Responding and Black Screen Appears with IBM Mouse
 
+{% raw %}
+
 	Article: Q308523
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/308/Q308523/
 	
 	=============================================================================
 	
+
+{% endraw %}

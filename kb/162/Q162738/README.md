@@ -6,6 +6,8 @@ permalink: /kb/162/Q162738/
 
 ## Q162738: Err Msg: Network Connection Could Not Be Established.
 
+{% raw %}
+
 	Article: Q162738
 	Product(s): The Microsoft Network
 	Version(s): 2.52,2.6,5.0,5.1,5.2
@@ -195,3 +197,5 @@ permalink: /kb/162/Q162738/
 	
 	=============================================================================
 	
+
+{% endraw %}

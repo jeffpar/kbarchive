@@ -6,6 +6,8 @@ permalink: /kb/240/Q240985/
 
 ## Q240985: Pandora's Box: Graphics Not Displayed Properly with 3D Rage Pro
 
+{% raw %}
+
 	Article: Q240985
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -77,3 +79,5 @@ permalink: /kb/240/Q240985/
 	
 	=============================================================================
 	
+
+{% endraw %}

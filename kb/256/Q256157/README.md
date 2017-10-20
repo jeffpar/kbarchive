@@ -6,6 +6,8 @@ permalink: /kb/256/Q256157/
 
 ## Q256157: PRB: Field Does Not Accept Null Values When Used with a Union
 
+{% raw %}
+
 	Article: Q256157
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -171,3 +173,5 @@ permalink: /kb/256/Q256157/
 	
 	=============================================================================
 	
+
+{% endraw %}

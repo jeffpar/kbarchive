@@ -6,6 +6,8 @@ permalink: /kb/164/Q164391/
 
 ## Q164391: WinNT 4.0 SP2 Atapi Claims IRQ for Unused IDE Channel
 
+{% raw %}
+
 	Article: Q164391
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164391/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132554/
 
 ## Q132554: Micro Channel Digiboard PC/XEM Fails Under Windows NT
 
+{% raw %}
+
 	Article: Q132554
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 SP2,3.51
@@ -113,3 +115,5 @@ permalink: /kb/132/Q132554/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194305/
 
 ## Q194305: BUG: Highlighter in List Box Does Not Move with MoverBar
 
+{% raw %}
+
 	Article: Q194305
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -77,3 +79,5 @@ permalink: /kb/194/Q194305/
 	
 	=============================================================================
 	
+
+{% endraw %}

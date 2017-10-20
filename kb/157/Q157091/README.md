@@ -6,6 +6,8 @@ permalink: /kb/157/Q157091/
 
 ## Q157091: WD97: How to Open Documents into an Earlier Version of Word
 
+{% raw %}
+
 	Article: Q157091
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/157/Q157091/
 	
 	=============================================================================
 	
+
+{% endraw %}

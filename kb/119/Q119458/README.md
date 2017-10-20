@@ -6,6 +6,8 @@ permalink: /kb/119/Q119458/
 
 ## Q119458: Result of _fpreset() Is Not _CW_DEFAULT
 
+{% raw %}
+
 	Article: Q119458
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -59,3 +61,5 @@ permalink: /kb/119/Q119458/
 	
 	=============================================================================
 	
+
+{% endraw %}

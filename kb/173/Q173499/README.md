@@ -6,6 +6,8 @@ permalink: /kb/173/Q173499/
 
 ## Q173499: WD97: Picture Loses Picture Placeholder Text When Made Hyperlink
 
+{% raw %}
+
 	Article: Q173499
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/173/Q173499/
 	
 	=============================================================================
 	
+
+{% endraw %}

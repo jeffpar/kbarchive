@@ -6,6 +6,8 @@ permalink: /kb/163/Q163687/
 
 ## Q163687: Winsock Applications May Timeout or Fail with an Error
 
+{% raw %}
+
 	Article: Q163687
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/163/Q163687/
 	
 	=============================================================================
 	
+
+{% endraw %}

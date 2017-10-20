@@ -6,6 +6,8 @@ permalink: /kb/097/Q97048/
 
 ## Q97048: HOWTO: Restore Corrupt or Deleted Visual C++ Group File
 
+{% raw %}
+
 	Article: Q97048
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0,1.5; winnt:1.0,2.0,2.1,4.0,5.0
@@ -88,3 +90,5 @@ permalink: /kb/097/Q97048/
 	
 	=============================================================================
 	
+
+{% endraw %}

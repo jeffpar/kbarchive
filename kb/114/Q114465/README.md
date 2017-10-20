@@ -6,6 +6,8 @@ permalink: /kb/114/Q114465/
 
 ## Q114465: FIX: Error Message When Comparing Large Strings
 
+{% raw %}
+
 	Article: Q114465
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50a 2.50b 2.60 2.60a 3.00 | 2.
@@ -173,3 +175,5 @@ permalink: /kb/114/Q114465/
 	
 	=============================================================================
 	
+
+{% endraw %}

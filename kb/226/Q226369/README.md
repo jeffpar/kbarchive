@@ -6,6 +6,8 @@ permalink: /kb/226/Q226369/
 
 ## Q226369: Windows NT Does Not Detect Media Change on ATAPI PD CD-ROM
 
+{% raw %}
+
 	Article: Q226369
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/226/Q226369/
 	
 	=============================================================================
 	
+
+{% endraw %}

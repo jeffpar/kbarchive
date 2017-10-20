@@ -6,6 +6,8 @@ permalink: /kb/032/Q32811/
 
 ## Q32811: FIX: Wrong Opcode For Far Call from USE16 Seg to USE32 Seg
 
+{% raw %}
+
 	Article: Q32811
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -77,3 +79,5 @@ permalink: /kb/032/Q32811/
 	
 	=============================================================================
 	
+
+{% endraw %}

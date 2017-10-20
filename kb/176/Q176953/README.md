@@ -6,6 +6,8 @@ permalink: /kb/176/Q176953/
 
 ## Q176953: Host Print Transform Dialog Accepts and Sends Lowercase to AS400
 
+{% raw %}
+
 	Article: Q176953
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2
@@ -101,3 +103,5 @@ permalink: /kb/176/Q176953/
 	
 	=============================================================================
 	
+
+{% endraw %}

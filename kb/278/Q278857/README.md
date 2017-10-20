@@ -6,6 +6,8 @@ permalink: /kb/278/Q278857/
 
 ## Q278857: Description of Updates to Internet Authentication Service
 
+{% raw %}
+
 	Article: Q278857
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,4.0,4.0 SP6a
@@ -103,3 +105,5 @@ permalink: /kb/278/Q278857/
 	
 	=============================================================================
 	
+
+{% endraw %}

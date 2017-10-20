@@ -6,6 +6,8 @@ permalink: /kb/170/Q170727/
 
 ## Q170727: WD97: Visual Basic for Applications Command for Copying Files
 
+{% raw %}
+
 	Article: Q170727
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/170/Q170727/
 	
 	=============================================================================
 	
+
+{% endraw %}

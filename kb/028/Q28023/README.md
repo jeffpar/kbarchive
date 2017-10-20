@@ -6,6 +6,8 @@ permalink: /kb/028/Q28023/
 
 ## Q28023: MS Floating Point Is Faster Than BC /FPa Alternate Math
 
+{% raw %}
+
 	Article: Q28023
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00  | 6.00 6.00b 7.00
@@ -49,3 +51,5 @@ permalink: /kb/028/Q28023/
 	Compiling without /FPa gives you IEEE floating-point format. IEEE
 	floating-point format is fastest when run on a computer that has a
 	coprocessor installed.
+
+{% endraw %}

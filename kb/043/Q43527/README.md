@@ -6,6 +6,8 @@ permalink: /kb/043/Q43527/
 
 ## Q43527: BASIC Program to Read Characters from the Screen into a String
 
+{% raw %}
+
 	Article: Q43527
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -63,3 +65,5 @@ permalink: /kb/043/Q43527/
 	  NEXT x%
 	  readstr$ = s$
 	END FUNCTION
+
+{% endraw %}

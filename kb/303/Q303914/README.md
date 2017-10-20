@@ -6,6 +6,8 @@ permalink: /kb/303/Q303914/
 
 ## Q303914: Err Msg: STOP: Cannot CreateNetLib...
 
+{% raw %}
+
 	Article: Q303914
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -118,3 +120,5 @@ permalink: /kb/303/Q303914/
 	
 	=============================================================================
 	
+
+{% endraw %}

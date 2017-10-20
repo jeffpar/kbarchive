@@ -6,6 +6,8 @@ permalink: /kb/145/Q145884/
 
 ## Q145884: FindFirstFile Returns Error &quot;The Network Name Was Deleted&quot;
 
+{% raw %}
+
 	Article: Q145884
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/145/Q145884/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131983/
 
 ## Q131983: Server Halts On Invalid LPR Transaction
 
+{% raw %}
+
 	Article: Q131983
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -55,3 +57,5 @@ permalink: /kb/131/Q131983/
 	
 	=============================================================================
 	
+
+{% endraw %}

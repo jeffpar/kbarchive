@@ -6,6 +6,8 @@ permalink: /kb/214/Q214515/
 
 ## Q214515: How to Determine which Virtual Server References &#91;Port /LM/W3SVC
 
+{% raw %}
+
 	Article: Q214515
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:; winnt:4.0
@@ -104,3 +106,5 @@ permalink: /kb/214/Q214515/
 	
 	=============================================================================
 	
+
+{% endraw %}

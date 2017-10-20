@@ -6,6 +6,8 @@ permalink: /kb/163/Q163462/
 
 ## Q163462: Kids Plus!: Fonts Installed with Microsoft Plus! For Kids
 
+{% raw %}
+
 	Article: Q163462
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/163/Q163462/
 	
 	=============================================================================
 	
+
+{% endraw %}

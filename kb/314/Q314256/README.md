@@ -6,6 +6,8 @@ permalink: /kb/314/Q314256/
 
 ## Q314256: Flight Simulator 2002: Game Performance Is Choppy
 
+{% raw %}
+
 	Article: Q314256
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -212,3 +214,5 @@ permalink: /kb/314/Q314256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136024/
 
 ## Q136024: Tape Hardware Data Compression Disabled After Running NTBackup
 
+{% raw %}
+
 	Article: Q136024
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -59,3 +61,5 @@ permalink: /kb/136/Q136024/
 	
 	=============================================================================
 	
+
+{% endraw %}

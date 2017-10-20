@@ -6,6 +6,8 @@ permalink: /kb/193/Q193295/
 
 ## Q193295: HOWTO: Reference an MTS Context Object From a COM DLL
 
+{% raw %}
+
 	Article: Q193295
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -94,3 +96,5 @@ permalink: /kb/193/Q193295/
 	
 	=============================================================================
 	
+
+{% endraw %}

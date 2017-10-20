@@ -6,6 +6,8 @@ permalink: /kb/137/Q137789/
 
 ## Q137789: SMS MIF Generator Does Not Accept Negative Default Number
 
+{% raw %}
+
 	Article: Q137789
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -43,3 +45,5 @@ permalink: /kb/137/Q137789/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222616/
 
 ## Q222616: Unable to Send Attachments by Fax When Source Program Is Open
 
+{% raw %}
+
 	Article: Q222616
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -69,3 +71,5 @@ permalink: /kb/222/Q222616/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105257/
 
 ## Q105257: Floppy Disk Drive Lights Flash Under MS-DOS 6.2
 
+{% raw %}
+
 	Article: Q105257
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -66,3 +68,5 @@ permalink: /kb/105/Q105257/
 	
 	=============================================================================
 	
+
+{% endraw %}

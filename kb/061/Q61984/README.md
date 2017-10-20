@@ -6,6 +6,8 @@ permalink: /kb/061/Q61984/
 
 ## Q61984: LAN Manager 2.0 Network API Library Information
 
+{% raw %}
+
 	Article: Q61984
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/061/Q61984/
 	
 	=============================================================================
 	
+
+{% endraw %}

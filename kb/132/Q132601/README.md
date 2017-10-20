@@ -6,6 +6,8 @@ permalink: /kb/132/Q132601/
 
 ## Q132601: Shortcut to MS-DOS-Based Program on Network Drive Fails
 
+{% raw %}
+
 	Article: Q132601
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/132/Q132601/
 	
 	=============================================================================
 	
+
+{% endraw %}

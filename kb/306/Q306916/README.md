@@ -6,6 +6,8 @@ permalink: /kb/306/Q306916/
 
 ## Q306916: PRB: VBScript &quot;Type Mismatch&quot; Error When Field Type Is adNumeric
 
+{% raw %}
+
 	Article: Q306916
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.5,2.0,2.5,2.6,2.7
@@ -138,3 +140,5 @@ permalink: /kb/306/Q306916/
 	
 	=============================================================================
 	
+
+{% endraw %}

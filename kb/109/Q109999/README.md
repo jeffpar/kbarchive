@@ -6,6 +6,8 @@ permalink: /kb/109/Q109999/
 
 ## Q109999: BUG: Browser Treats  Interface to Function  as a Subprogram
 
+{% raw %}
+
 	Article: Q109999
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -57,3 +59,5 @@ permalink: /kb/109/Q109999/
 	
 	=============================================================================
 	
+
+{% endraw %}

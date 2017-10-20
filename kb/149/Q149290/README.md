@@ -6,6 +6,8 @@ permalink: /kb/149/Q149290/
 
 ## Q149290: XCLN: Renaming Attachment Doesn't Change File Association
 
+{% raw %}
+
 	Article: Q149290
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/149/Q149290/
 	
 	=============================================================================
 	
+
+{% endraw %}

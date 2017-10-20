@@ -6,6 +6,8 @@ permalink: /kb/061/Q61986/
 
 ## Q61986: Sample Communications Server Program Using TRANSFER_MS_DATA
 
+{% raw %}
+
 	Article: Q61986
 	Product(s): Microsoft LAN Manager
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/061/Q61986/
 	
 	=============================================================================
 	
+
+{% endraw %}

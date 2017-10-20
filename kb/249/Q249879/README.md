@@ -6,6 +6,8 @@ permalink: /kb/249/Q249879/
 
 ## Q249879: PRB: IPF in Module VB6.exe When Exiting VB6
 
+{% raw %}
+
 	Article: Q249879
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -96,3 +98,5 @@ permalink: /kb/249/Q249879/
 	
 	=============================================================================
 	
+
+{% endraw %}

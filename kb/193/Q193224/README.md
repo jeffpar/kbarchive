@@ -6,6 +6,8 @@ permalink: /kb/193/Q193224/
 
 ## Q193224: SMS: PCMSVC32 AVs If Package Cmd Line Contains a Drive Letter
 
+{% raw %}
+
 	Article: Q193224
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -83,3 +85,5 @@ permalink: /kb/193/Q193224/
 	
 	=============================================================================
 	
+
+{% endraw %}

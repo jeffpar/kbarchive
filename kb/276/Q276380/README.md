@@ -6,6 +6,8 @@ permalink: /kb/276/Q276380/
 
 ## Q276380: BUG: ADO 2.0 Reference Cannot Be Saved in VB 6.0 With VS SP4
 
+{% raw %}
+
 	Article: Q276380
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP4
@@ -84,3 +86,5 @@ permalink: /kb/276/Q276380/
 	
 	=============================================================================
 	
+
+{% endraw %}

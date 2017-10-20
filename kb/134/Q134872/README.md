@@ -6,6 +6,8 @@ permalink: /kb/134/Q134872/
 
 ## Q134872: PPT7: Error While Saving in PowerPoint 4.0 Format
 
+{% raw %}
+
 	Article: Q134872
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -100,3 +102,5 @@ permalink: /kb/134/Q134872/
 	
 	=============================================================================
 	
+
+{% endraw %}

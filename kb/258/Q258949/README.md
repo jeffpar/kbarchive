@@ -6,6 +6,8 @@ permalink: /kb/258/Q258949/
 
 ## Q258949: MMS Compass Compatibility with WinSock 2.0
 
+{% raw %}
+
 	Article: Q258949
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -94,3 +96,5 @@ permalink: /kb/258/Q258949/
 	
 	=============================================================================
 	
+
+{% endraw %}

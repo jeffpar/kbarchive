@@ -6,6 +6,8 @@ permalink: /kb/139/Q139354/
 
 ## Q139354: PC Win: Spelling Options Are Stored in the MMF
 
+{% raw %}
+
 	Article: Q139354
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -50,3 +52,5 @@ permalink: /kb/139/Q139354/
 	
 	=============================================================================
 	
+
+{% endraw %}

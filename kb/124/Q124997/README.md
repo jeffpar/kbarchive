@@ -6,6 +6,8 @@ permalink: /kb/124/Q124997/
 
 ## Q124997: HP PC LAN Adapters Not Listed in Network Client Version 3.0
 
+{% raw %}
+
 	Article: Q124997
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.0,3.5
@@ -124,3 +126,5 @@ permalink: /kb/124/Q124997/
 	
 	=============================================================================
 	
+
+{% endraw %}

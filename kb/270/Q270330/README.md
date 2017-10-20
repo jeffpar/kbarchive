@@ -6,6 +6,8 @@ permalink: /kb/270/Q270330/
 
 ## Q270330: FILE: Corrupted IIS Index in July 2000 MSDN Library
 
+{% raw %}
+
 	Article: Q270330
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:July 2000
@@ -117,3 +119,5 @@ permalink: /kb/270/Q270330/
 	
 	=============================================================================
 	
+
+{% endraw %}

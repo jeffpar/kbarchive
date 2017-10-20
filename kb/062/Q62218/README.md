@@ -6,6 +6,8 @@ permalink: /kb/062/Q62218/
 
 ## Q62218: OS/2 API Function to Get Current Drive
 
+{% raw %}
+
 	Article: Q62218
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -102,3 +104,5 @@ permalink: /kb/062/Q62218/
 	END IF
 	
 	END
+
+{% endraw %}

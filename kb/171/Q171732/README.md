@@ -6,6 +6,8 @@ permalink: /kb/171/Q171732/
 
 ## Q171732: WD97: Control Code for Finding/Replacing with Unicode Value
 
+{% raw %}
+
 	Article: Q171732
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -104,3 +106,5 @@ permalink: /kb/171/Q171732/
 	
 	=============================================================================
 	
+
+{% endraw %}

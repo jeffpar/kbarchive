@@ -6,6 +6,8 @@ permalink: /kb/139/Q139937/
 
 ## Q139937: Cannot Print More Than 99 Copies with HP LaserJet Series II
 
+{% raw %}
+
 	Article: Q139937
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:3.1,3.11,6.0,6.0a,6.0c,7.0,7.0a,95,97
@@ -111,3 +113,5 @@ permalink: /kb/139/Q139937/
 	
 	=============================================================================
 	
+
+{% endraw %}

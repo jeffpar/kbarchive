@@ -6,6 +6,8 @@ permalink: /kb/128/Q128639/
 
 ## Q128639: MSDLC Hangs Computers Running Processor Speeds Over 66 MHz
 
+{% raw %}
+
 	Article: Q128639
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; :
@@ -61,3 +63,5 @@ permalink: /kb/128/Q128639/
 	
 	=============================================================================
 	
+
+{% endraw %}

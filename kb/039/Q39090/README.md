@@ -6,6 +6,8 @@ permalink: /kb/039/Q39090/
 
 ## Q39090: Shapes.exe Aligns Logical/Physical Coordinate Systems
 
+{% raw %}
+
 	Article: Q39090
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -114,3 +116,5 @@ permalink: /kb/039/Q39090/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50711/
 
 ## Q50711: &quot;.&quot; on the LIBPATH Eases DLL Debugging, But Not for CVP 2.20
 
+{% raw %}
+
 	Article: Q50711
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -39,3 +41,5 @@ permalink: /kb/050/Q50711/
 	By putting a period on the LIBPATH, the current directory becomes a
 	LIBPATH directory and only one copy of the DLL needs to exist, thus
 	eliminating any DLL update inconsistencies.
+
+{% endraw %}

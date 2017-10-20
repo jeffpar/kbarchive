@@ -6,6 +6,8 @@ permalink: /kb/099/Q99106/
 
 ## Q99106: PC WRmt: Mail Controls Windows During Active Modem Session
 
+{% raw %}
+
 	Article: Q99106
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -43,3 +45,5 @@ permalink: /kb/099/Q99106/
 	
 	=============================================================================
 	
+
+{% endraw %}

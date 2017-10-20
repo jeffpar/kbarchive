@@ -6,6 +6,8 @@ permalink: /kb/085/Q85586/
 
 ## Q85586: Network Button Not Available in Windows 3.1
 
+{% raw %}
+
 	Article: Q85586
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/085/Q85586/
 	
 	=============================================================================
 	
+
+{% endraw %}

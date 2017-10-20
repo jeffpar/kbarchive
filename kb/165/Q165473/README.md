@@ -6,6 +6,8 @@ permalink: /kb/165/Q165473/
 
 ## Q165473: WD97: Numbered List Restarts at One After Saving to HTML
 
+{% raw %}
+
 	Article: Q165473
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -198,3 +200,5 @@ permalink: /kb/165/Q165473/
 	
 	=============================================================================
 	
+
+{% endraw %}

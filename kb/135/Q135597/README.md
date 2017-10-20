@@ -6,6 +6,8 @@ permalink: /kb/135/Q135597/
 
 ## Q135597: No Prompt to Restart When Adding SNMP Community Names
 
+{% raw %}
+
 	Article: Q135597
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -53,3 +55,5 @@ permalink: /kb/135/Q135597/
 	
 	=============================================================================
 	
+
+{% endraw %}

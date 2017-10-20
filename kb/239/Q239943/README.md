@@ -6,6 +6,8 @@ permalink: /kb/239/Q239943/
 
 ## Q239943: FIX: UserControls with Menus Cause Resource Leak
 
+{% raw %}
+
 	Article: Q239943
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -228,3 +230,5 @@ permalink: /kb/239/Q239943/
 	
 	=============================================================================
 	
+
+{% endraw %}

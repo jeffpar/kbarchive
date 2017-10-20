@@ -6,6 +6,8 @@ permalink: /kb/231/Q231507/
 
 ## Q231507: MapPoint 2000: Found Addresses Are Not Marked with Yellow Circle
 
+{% raw %}
+
 	Article: Q231507
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -41,3 +43,5 @@ permalink: /kb/231/Q231507/
 	
 	=============================================================================
 	
+
+{% endraw %}

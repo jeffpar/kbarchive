@@ -6,6 +6,8 @@ permalink: /kb/189/Q189483/
 
 ## Q189483: BUG: Cannot Set RichTextBox Visible Property to False
 
+{% raw %}
+
 	Article: Q189483
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -117,3 +119,5 @@ permalink: /kb/189/Q189483/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/261/Q261066/
 
 ## Q261066: Motocross Madness 2: Results for Previous Race Are Not Recorded
 
+{% raw %}
+
 	Article: Q261066
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/261/Q261066/
 	
 	=============================================================================
 	
+
+{% endraw %}

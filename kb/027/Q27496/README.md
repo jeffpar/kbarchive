@@ -6,6 +6,8 @@ permalink: /kb/027/Q27496/
 
 ## Q27496: &quot;Overflow&quot; Error Using QLBDUMP.BAS with Large Quick Library
 
+{% raw %}
+
 	Article: Q27496
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -43,3 +45,5 @@ permalink: /kb/027/Q27496/
 	The QLBDUMP program lets you display the routines that are stored in a
 	.QLB Quick library. The QB.EXE editor uses Quick libraries for calling
 	external routines. Quick libraries (.QLB files) have no other purpose.
+
+{% endraw %}

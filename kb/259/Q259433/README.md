@@ -6,6 +6,8 @@ permalink: /kb/259/Q259433/
 
 ## Q259433: BUG: Wrong Event Is Signaled When Using RAS Custom Script API
 
+{% raw %}
+
 	Article: Q259433
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -92,3 +94,5 @@ permalink: /kb/259/Q259433/
 	
 	=============================================================================
 	
+
+{% endraw %}

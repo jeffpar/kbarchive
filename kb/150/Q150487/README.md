@@ -6,6 +6,8 @@ permalink: /kb/150/Q150487/
 
 ## Q150487: 3D Movie Maker: How to Import Sounds
 
+{% raw %}
+
 	Article: Q150487
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -137,3 +139,5 @@ permalink: /kb/150/Q150487/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158299/
 
 ## Q158299: XCLN: How to Change the Font of Folder Contents
 
+{% raw %}
+
 	Article: Q158299
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/158/Q158299/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61609/
 
 ## Q61609: Specific Status of Process ID and CWAIT
 
+{% raw %}
+
 	Article: Q61609
 	Product(s): See article
 	Version(s): 5.10 6.00
@@ -49,3 +51,5 @@ permalink: /kb/061/Q61609/
 	
 	   P_NOWAITO Continues to execute parent process and ignores wait and
 	             cwait calls against child process.
+
+{% endraw %}

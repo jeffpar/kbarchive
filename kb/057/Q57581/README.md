@@ -6,6 +6,8 @@ permalink: /kb/057/Q57581/
 
 ## Q57581: Microsoft Doesn't Offer Educational Edition of BASIC PDS 7.00
 
+{% raw %}
+
 	Article: Q57581
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -53,3 +55,5 @@ permalink: /kb/057/Q57581/
 	existing QuickBASIC academic editions are all targeted for people
 	making professional, commercial applications and are not crucial for
 	teaching BASIC.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90203/
 
 ## Q90203: EXP16.DOS Configures Intel EtherExpress 16 in WFWG
 
+{% raw %}
+
 	Article: Q90203
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/090/Q90203/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134678/
 
 ## Q134678: PC Gen: 3.5 Mail for PC Networks Macintosh Client Disk &#91;3.5&#93;
 
+{% raw %}
+
 	Article: Q134678
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -46,3 +48,5 @@ permalink: /kb/134/Q134678/
 	
 	=============================================================================
 	
+
+{% endraw %}

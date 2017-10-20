@@ -6,6 +6,8 @@ permalink: /kb/261/Q261250/
 
 ## Q261250: HOWTO: Expose and Use ENUMS from VB Components in ASP
 
+{% raw %}
+
 	Article: Q261250
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -89,3 +91,5 @@ permalink: /kb/261/Q261250/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247032/
 
 ## Q247032: XADM: Unable to Add a Directory Replication Connector to a Site
 
+{% raw %}
+
 	Article: Q247032
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/247/Q247032/
 	
 	=============================================================================
 	
+
+{% endraw %}

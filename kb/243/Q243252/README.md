@@ -6,6 +6,8 @@ permalink: /kb/243/Q243252/
 
 ## Q243252: BUG: Converting Access97 MDB to Access 2000 Format Using DAO 3.6
 
+{% raw %}
+
 	Article: Q243252
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -101,3 +103,5 @@ permalink: /kb/243/Q243252/
 	
 	=============================================================================
 	
+
+{% endraw %}

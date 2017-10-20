@@ -6,6 +6,8 @@ permalink: /kb/274/Q274151/
 
 ## Q274151: Computer Hangs When You Dismount an NTFS Volume
 
+{% raw %}
+
 	Article: Q274151
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/274/Q274151/
 	
 	=============================================================================
 	
+
+{% endraw %}

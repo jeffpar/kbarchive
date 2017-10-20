@@ -6,6 +6,8 @@ permalink: /kb/181/Q181762/
 
 ## Q181762: SMS: INVMAC Appears to Stop Responding During Inventory Scan
 
+{% raw %}
+
 	Article: Q181762
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -59,3 +61,5 @@ permalink: /kb/181/Q181762/
 	
 	=============================================================================
 	
+
+{% endraw %}

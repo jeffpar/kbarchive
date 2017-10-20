@@ -6,6 +6,8 @@ permalink: /kb/190/Q190048/
 
 ## Q190048: BUG: DHTML Project's MsgBox Statement Appears Behind Browser
 
+{% raw %}
+
 	Article: Q190048
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0;
@@ -65,3 +67,5 @@ permalink: /kb/190/Q190048/
 	
 	=============================================================================
 	
+
+{% endraw %}

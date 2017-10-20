@@ -6,6 +6,8 @@ permalink: /kb/161/Q161559/
 
 ## Q161559: Executing Perl Scripts Generates 403 Access Forbidden Error
 
+{% raw %}
+
 	Article: Q161559
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -61,3 +63,5 @@ permalink: /kb/161/Q161559/
 	
 	=============================================================================
 	
+
+{% endraw %}

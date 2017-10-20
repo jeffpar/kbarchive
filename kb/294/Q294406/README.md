@@ -6,6 +6,8 @@ permalink: /kb/294/Q294406/
 
 ## Q294406: XIMS: IMAP Cannot Open Appointment Items by Using SSL
 
+{% raw %}
+
 	Article: Q294406
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -109,3 +111,5 @@ permalink: /kb/294/Q294406/
 	
 	=============================================================================
 	
+
+{% endraw %}

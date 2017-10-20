@@ -6,6 +6,8 @@ permalink: /kb/303/Q303681/
 
 ## Q303681: Parent Directory Link Fails with Directory Browsing Turned On
 
+{% raw %}
+
 	Article: Q303681
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -102,3 +104,5 @@ permalink: /kb/303/Q303681/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95939/
 
 ## Q95939: PC Setup: Installing PC Mail 3.0 on a Novell 3.11 Server
 
+{% raw %}
+
 	Article: Q95939
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -351,3 +353,5 @@ permalink: /kb/095/Q95939/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183080/
 
 ## Q183080: HOWTO: Use ON_EVENT_RANGE Macro
 
+{% raw %}
+
 	Article: Q183080
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -85,8 +87,8 @@ permalink: /kb/183/Q183080/
 	Then, the event map should look similar to the following:
 	
 	     BEGIN_EVENTSINK_MAP(CTestDlg, CDialog)
-	         //{ {AFX_EVENTSINK_MAP(CTestDlg)
-	         //} }AFX_EVENTSINK_MAP
+	         //{{AFX_EVENTSINK_MAP(CTestDlg)
+	         //}}AFX_EVENTSINK_MAP
 	         ON_EVENT_RANGE(
 	             CTestDlg,      // Class to which this event sink map belongs.
 	             IDC_FIRSTCTRL, // ID of the first control in the range.
@@ -130,3 +132,5 @@ permalink: /kb/183/Q183080/
 	
 	=============================================================================
 	
+
+{% endraw %}

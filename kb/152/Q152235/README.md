@@ -6,6 +6,8 @@ permalink: /kb/152/Q152235/
 
 ## Q152235: Monitor Service Stops Immediately After Being Started
 
+{% raw %}
+
 	Article: Q152235
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -91,3 +93,5 @@ permalink: /kb/152/Q152235/
 	
 	=============================================================================
 	
+
+{% endraw %}

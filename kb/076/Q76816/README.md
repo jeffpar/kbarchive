@@ -6,6 +6,8 @@ permalink: /kb/076/Q76816/
 
 ## Q76816: SYSTEM.INI Settings for Multimedia Windows
 
+{% raw %}
+
 	Article: Q76816
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0
@@ -319,3 +321,5 @@ permalink: /kb/076/Q76816/
 	
 	=============================================================================
 	
+
+{% endraw %}

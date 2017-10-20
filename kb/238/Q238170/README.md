@@ -6,6 +6,8 @@ permalink: /kb/238/Q238170/
 
 ## Q238170: XFOR: Lotus Notes Client Information
 
+{% raw %}
+
 	Article: Q238170
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/238/Q238170/
 	
 	=============================================================================
 	
+
+{% endraw %}

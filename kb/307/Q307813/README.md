@@ -6,6 +6,8 @@ permalink: /kb/307/Q307813/
 
 ## Q307813: SMS: Systems Management Server and Storage Area Network
 
+{% raw %}
+
 	Article: Q307813
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -66,3 +68,5 @@ permalink: /kb/307/Q307813/
 	
 	=============================================================================
 	
+
+{% endraw %}

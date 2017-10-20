@@ -6,6 +6,8 @@ permalink: /kb/087/Q87207/
 
 ## Q87207: PROFS: How VM Addresses Are Converted to MS Mail Addresses
 
+{% raw %}
+
 	Article: Q87207
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -54,3 +56,5 @@ permalink: /kb/087/Q87207/
 	
 	=============================================================================
 	
+
+{% endraw %}

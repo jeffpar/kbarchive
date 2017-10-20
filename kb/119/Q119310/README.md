@@ -6,6 +6,8 @@ permalink: /kb/119/Q119310/
 
 ## Q119310: FAX: Cover Sheet Size Requirements in Inches
 
+{% raw %}
+
 	Article: Q119310
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -36,3 +38,5 @@ permalink: /kb/119/Q119310/
 	
 	=============================================================================
 	
+
+{% endraw %}

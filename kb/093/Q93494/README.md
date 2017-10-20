@@ -6,6 +6,8 @@ permalink: /kb/093/Q93494/
 
 ## Q93494: TCP NODE Problem on OS/2 Workstations and Peer Servers
 
+{% raw %}
+
 	Article: Q93494
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/093/Q93494/
 	
 	=============================================================================
 	
+
+{% endraw %}

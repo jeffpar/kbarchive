@@ -6,6 +6,8 @@ permalink: /kb/128/Q128356/
 
 ## Q128356: PC Mac: Err Msg: Cannot Perform Any Logging to Designated...
 
+{% raw %}
+
 	Article: Q128356
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/128/Q128356/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127950/
 
 ## Q127950: Cannot Use DSP Modem on HP Integrated Office Board
 
+{% raw %}
+
 	Article: Q127950
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/127/Q127950/
 	
 	=============================================================================
 	
+
+{% endraw %}

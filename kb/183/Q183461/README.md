@@ -6,6 +6,8 @@ permalink: /kb/183/Q183461/
 
 ## Q183461: Multimedia Properties Window Closes When You Click Devices Tab
 
+{% raw %}
+
 	Article: Q183461
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -88,3 +90,5 @@ permalink: /kb/183/Q183461/
 	
 	=============================================================================
 	
+
+{% endraw %}

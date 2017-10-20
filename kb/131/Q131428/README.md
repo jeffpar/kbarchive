@@ -6,6 +6,8 @@ permalink: /kb/131/Q131428/
 
 ## Q131428: DHCPADMN Reports Error 14 After You Select Local Machine
 
+{% raw %}
+
 	Article: Q131428
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -63,3 +65,5 @@ permalink: /kb/131/Q131428/
 	
 	=============================================================================
 	
+
+{% endraw %}

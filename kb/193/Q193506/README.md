@@ -6,6 +6,8 @@ permalink: /kb/193/Q193506/
 
 ## Q193506: BUG: SET(&quot;DATE&quot;,&quot;TO&quot;) Returns &quot;0&quot; Rather Than Valid Setting
 
+{% raw %}
+
 	Article: Q193506
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -90,3 +92,5 @@ permalink: /kb/193/Q193506/
 	
 	=============================================================================
 	
+
+{% endraw %}

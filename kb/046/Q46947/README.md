@@ -6,6 +6,8 @@ permalink: /kb/046/Q46947/
 
 ## Q46947: Type of Expression &quot;&amp;arrayname&quot; Changes under ANSI C
 
+{% raw %}
+
 	Article: Q46947
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -56,3 +58,5 @@ permalink: /kb/046/Q46947/
 	the address of the zeroth element of the array. In other words, it
 	will not somehow generate the address of the address -- especially
 	since the address is a constant.
+
+{% endraw %}

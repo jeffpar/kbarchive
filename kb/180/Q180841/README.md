@@ -6,6 +6,8 @@ permalink: /kb/180/Q180841/
 
 ## Q180841: HOWTO: Common DDL SQL for the Microsoft Access Database Engine
 
+{% raw %}
+
 	Article: Q180841
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,5.0,6.0,7.0,97
@@ -255,3 +257,5 @@ permalink: /kb/180/Q180841/
 	
 	=============================================================================
 	
+
+{% endraw %}

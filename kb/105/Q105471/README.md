@@ -6,6 +6,8 @@ permalink: /kb/105/Q105471/
 
 ## Q105471: Windows NT Advanced Server CD Contents &#92;ALPHA (528)
 
+{% raw %}
+
 	Article: Q105471
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -1181,3 +1183,5 @@ permalink: /kb/105/Q105471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31511/
 
 ## Q31511: Variable Passed to Dynamic SUB Changes after Integer Division
 
+{% raw %}
+
 	Article: Q31511
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -41,3 +43,5 @@ permalink: /kb/031/Q31511/
 	  dn = (20 - y!) \ 2
 	  PRINT "x! = "; x!  ' This line prints incorrect value from .EXE program.
 	END SUB
+
+{% endraw %}

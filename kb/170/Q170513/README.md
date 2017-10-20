@@ -6,6 +6,8 @@ permalink: /kb/170/Q170513/
 
 ## Q170513: DOC: PRF1301 Using Sample Command &quot;FTIME test.exe&quot;
 
+{% raw %}
+
 	Article: Q170513
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS: 5.0; WINDOWS NT: 5.0 6.0
@@ -71,3 +73,5 @@ permalink: /kb/170/Q170513/
 	
 	=============================================================================
 	
+
+{% endraw %}

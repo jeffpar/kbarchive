@@ -6,6 +6,8 @@ permalink: /kb/200/Q200025/
 
 ## Q200025: PRB: Erroneous Error When Repeatedly Opening Database
 
+{% raw %}
+
 	Article: Q200025
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0
@@ -97,3 +99,5 @@ permalink: /kb/200/Q200025/
 	
 	=============================================================================
 	
+
+{% endraw %}

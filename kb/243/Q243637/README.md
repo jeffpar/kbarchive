@@ -6,6 +6,8 @@ permalink: /kb/243/Q243637/
 
 ## Q243637: Outlook Unable to View All Items in Microsoft Mail Shared Folder
 
+{% raw %}
+
 	Article: Q243637
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -47,3 +49,5 @@ permalink: /kb/243/Q243637/
 	
 	=============================================================================
 	
+
+{% endraw %}

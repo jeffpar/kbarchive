@@ -6,6 +6,8 @@ permalink: /kb/075/Q75435/
 
 ## Q75435: INFO: Windows, Code Pages, and Character Sets
 
+{% raw %}
+
 	Article: Q75435
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -130,3 +132,5 @@ permalink: /kb/075/Q75435/
 	
 	=============================================================================
 	
+
+{% endraw %}

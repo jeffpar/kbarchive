@@ -6,6 +6,8 @@ permalink: /kb/155/Q155860/
 
 ## Q155860: Wine Guide 2.0: Unable to Print or Copy Text
 
+{% raw %}
+
 	Article: Q155860
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -80,3 +82,5 @@ permalink: /kb/155/Q155860/
 	
 	=============================================================================
 	
+
+{% endraw %}

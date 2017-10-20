@@ -6,6 +6,8 @@ permalink: /kb/266/Q266286/
 
 ## Q266286: XCLN: IMAP Clients Unable to See Attachments
 
+{% raw %}
+
 	Article: Q266286
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -61,3 +63,5 @@ permalink: /kb/266/Q266286/
 	
 	=============================================================================
 	
+
+{% endraw %}

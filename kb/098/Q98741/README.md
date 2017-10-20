@@ -6,6 +6,8 @@ permalink: /kb/098/Q98741/
 
 ## Q98741: EMM386 May Hang System with Certain Network Cards
 
+{% raw %}
+
 	Article: Q98741
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/098/Q98741/
 	
 	=============================================================================
 	
+
+{% endraw %}

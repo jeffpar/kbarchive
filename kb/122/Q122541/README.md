@@ -6,6 +6,8 @@ permalink: /kb/122/Q122541/
 
 ## Q122541: BUG: Goto() Within Try-Except Block Causes C2705 Error
 
+{% raw %}
+
 	Article: Q122541
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,4.0,4.1,4.2,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/122/Q122541/
 	
 	=============================================================================
 	
+
+{% endraw %}

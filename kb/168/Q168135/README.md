@@ -6,6 +6,8 @@ permalink: /kb/168/Q168135/
 
 ## Q168135: HP Font Attributes Display and Print Incorrectly
 
+{% raw %}
+
 	Article: Q168135
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/168/Q168135/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192570/
 
 ## Q192570: Message-Oriented TCP and Multithreaded Client/Server
 
+{% raw %}
+
 	Article: Q192570
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -112,3 +114,5 @@ permalink: /kb/192/Q192570/
 	
 	=============================================================================
 	
+
+{% endraw %}

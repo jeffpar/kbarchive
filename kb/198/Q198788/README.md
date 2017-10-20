@@ -6,6 +6,8 @@ permalink: /kb/198/Q198788/
 
 ## Q198788: XADM: Using a Batch File for Isinteg with Alltests
 
+{% raw %}
+
 	Article: Q198788
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -68,3 +70,5 @@ permalink: /kb/198/Q198788/
 	
 	=============================================================================
 	
+
+{% endraw %}

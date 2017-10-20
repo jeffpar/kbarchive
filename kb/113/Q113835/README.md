@@ -6,6 +6,8 @@ permalink: /kb/113/Q113835/
 
 ## Q113835: MS-DOS Setup Patch Gauge Hangs at 99 Percent
 
+{% raw %}
+
 	Article: Q113835
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -45,3 +47,5 @@ permalink: /kb/113/Q113835/
 	
 	=============================================================================
 	
+
+{% endraw %}

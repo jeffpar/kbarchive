@@ -6,6 +6,8 @@ permalink: /kb/137/Q137858/
 
 ## Q137858: Network Failure Using the SMC EtherCard Plus Series NIC
 
+{% raw %}
+
 	Article: Q137858
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:3.5,3.51
@@ -105,3 +107,5 @@ permalink: /kb/137/Q137858/
 	
 	=============================================================================
 	
+
+{% endraw %}

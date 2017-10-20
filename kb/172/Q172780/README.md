@@ -6,6 +6,8 @@ permalink: /kb/172/Q172780/
 
 ## Q172780: XWEB: Error Attaching File with Web Client
 
+{% raw %}
+
 	Article: Q172780
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -49,3 +51,5 @@ permalink: /kb/172/Q172780/
 	
 	=============================================================================
 	
+
+{% endraw %}

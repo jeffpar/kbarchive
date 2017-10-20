@@ -6,6 +6,8 @@ permalink: /kb/230/Q230242/
 
 ## Q230242: SMS: PCM May Cause Account Lockouts in a High-Security Domain
 
+{% raw %}
+
 	Article: Q230242
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -138,3 +140,5 @@ permalink: /kb/230/Q230242/
 	
 	=============================================================================
 	
+
+{% endraw %}

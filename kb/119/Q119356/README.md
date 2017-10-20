@@ -6,6 +6,8 @@ permalink: /kb/119/Q119356/
 
 ## Q119356: Multi-Language Clients Append Extended Headers
 
+{% raw %}
+
 	Article: Q119356
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -116,3 +118,5 @@ permalink: /kb/119/Q119356/
 	
 	=============================================================================
 	
+
+{% endraw %}

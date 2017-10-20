@@ -6,6 +6,8 @@ permalink: /kb/202/Q202183/
 
 ## Q202183: The OID for memPercentCommittedBytesInUse Always Returns Zero
 
+{% raw %}
+
 	Article: Q202183
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -122,3 +124,5 @@ permalink: /kb/202/Q202183/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190716/
 
 ## Q190716: WD97: Send To Mail Recipient Problem with Outlook Express/Win 95
 
+{% raw %}
+
 	Article: Q190716
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:4.0,4.01,97
@@ -129,3 +131,5 @@ permalink: /kb/190/Q190716/
 	
 	=============================================================================
 	
+
+{% endraw %}

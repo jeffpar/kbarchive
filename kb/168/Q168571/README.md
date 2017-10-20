@@ -6,6 +6,8 @@ permalink: /kb/168/Q168571/
 
 ## Q168571: Performance Monitor Logs are Limited to 2.1 GB of Data
 
+{% raw %}
+
 	Article: Q168571
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/168/Q168571/
 	
 	=============================================================================
 	
+
+{% endraw %}

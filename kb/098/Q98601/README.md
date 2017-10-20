@@ -6,6 +6,8 @@ permalink: /kb/098/Q98601/
 
 ## Q98601: HOWTO: Handle Exceptions That Occur in Exception Processing
 
+{% raw %}
+
 	Article: Q98601
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -111,3 +113,5 @@ permalink: /kb/098/Q98601/
 	
 	=============================================================================
 	
+
+{% endraw %}

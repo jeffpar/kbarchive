@@ -6,6 +6,8 @@ permalink: /kb/157/Q157142/
 
 ## Q157142: PRB:CFormView/Dialogs Sized Larger Under Win32s/WinNT 3.50
 
+{% raw %}
+
 	Article: Q157142
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1
@@ -87,10 +89,10 @@ permalink: /kb/157/Q157142/
 	         /// .... Standard code omitted
 	
 	     public:
-	         //{ {AFX_DATA(CFormtestView)
+	         //{{AFX_DATA(CFormtestView)
 	         enum{ IDD = IDD_FORMVIEW_REGULAR };
 	             // NOTE: the ClassWizard will add data members here
-	         //} }AFX_DATA
+	         //}}AFX_DATA
 	         static int m_nIDD; //The ID for the dialog template that is used
 	
 	     // Attributes
@@ -162,3 +164,5 @@ permalink: /kb/157/Q157142/
 	
 	=============================================================================
 	
+
+{% endraw %}

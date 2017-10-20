@@ -6,6 +6,8 @@ permalink: /kb/230/Q230691/
 
 ## Q230691: XADM: Space Tree Fragmentation Degrades Server Performance
 
+{% raw %}
+
 	Article: Q230691
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -98,3 +100,5 @@ permalink: /kb/230/Q230691/
 	
 	=============================================================================
 	
+
+{% endraw %}

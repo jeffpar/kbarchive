@@ -6,6 +6,8 @@ permalink: /kb/139/Q139604/
 
 ## Q139604: Golf 2.0 for Windows: Multimedia Edition Readme.txt File
 
+{% raw %}
+
 	Article: Q139604
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -549,3 +551,5 @@ permalink: /kb/139/Q139604/
 	
 	=============================================================================
 	
+
+{% endraw %}

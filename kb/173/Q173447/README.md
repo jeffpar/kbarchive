@@ -6,6 +6,8 @@ permalink: /kb/173/Q173447/
 
 ## Q173447: Limited Support for MPP for 5250 Printing
 
+{% raw %}
+
 	Article: Q173447
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -101,3 +103,5 @@ permalink: /kb/173/Q173447/
 	
 	=============================================================================
 	
+
+{% endraw %}

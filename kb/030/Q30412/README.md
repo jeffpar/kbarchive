@@ -6,6 +6,8 @@ permalink: /kb/030/Q30412/
 
 ## Q30412: FIX: Omitting Range Keyword After LABEL Directive Causes Error
 
+{% raw %}
+
 	Article: Q30412
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -79,3 +81,5 @@ permalink: /kb/030/Q30412/
 	
 	=============================================================================
 	
+
+{% endraw %}

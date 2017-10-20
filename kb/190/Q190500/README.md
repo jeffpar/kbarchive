@@ -6,6 +6,8 @@ permalink: /kb/190/Q190500/
 
 ## Q190500: XCON: Facilities Data Not Sent Out (by Exchange) with CALL ACC
 
+{% raw %}
+
 	Article: Q190500
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -143,3 +145,5 @@ permalink: /kb/190/Q190500/
 	
 	=============================================================================
 	
+
+{% endraw %}

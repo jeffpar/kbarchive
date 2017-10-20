@@ -6,6 +6,8 @@ permalink: /kb/223/Q223299/
 
 ## Q223299: MSB Animals: Unable to click Quit or Cancel to Quit Program
 
+{% raw %}
+
 	Article: Q223299
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/223/Q223299/
 	
 	=============================================================================
 	
+
+{% endraw %}

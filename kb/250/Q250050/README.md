@@ -6,6 +6,8 @@ permalink: /kb/250/Q250050/
 
 ## Q250050: Mouse Error Message with PS/2 Mouse on Windows NT Workstation
 
+{% raw %}
+
 	Article: Q250050
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/250/Q250050/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87183/
 
 ## Q87183: PROFS: Using ASCII/EBCDIC Programs to Solve Problems
 
+{% raw %}
+
 	Article: Q87183
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87183/
 	
 	=============================================================================
 	
+
+{% endraw %}

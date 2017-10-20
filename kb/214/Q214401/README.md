@@ -6,6 +6,8 @@ permalink: /kb/214/Q214401/
 
 ## Q214401: Speed of File Creation Slows Down Linearly with Number of Files
 
+{% raw %}
+
 	Article: Q214401
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/214/Q214401/
 	
 	=============================================================================
 	
+
+{% endraw %}

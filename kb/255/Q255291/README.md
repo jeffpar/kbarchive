@@ -6,6 +6,8 @@ permalink: /kb/255/Q255291/
 
 ## Q255291: XADM: Event ID 1356 - LDAP Modify Request Fails with Error 16
 
+{% raw %}
+
 	Article: Q255291
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/255/Q255291/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136924/
 
 ## Q136924: Visual FoxPro 3.0 Undocumented Properties
 
+{% raw %}
+
 	Article: Q136924
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/136/Q136924/
 	
 	=============================================================================
 	
+
+{% endraw %}

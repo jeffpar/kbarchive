@@ -6,6 +6,8 @@ permalink: /kb/142/Q142782/
 
 ## Q142782: XADM: Error -509 Starting Directory, IS, or Dirsync Services
 
+{% raw %}
+
 	Article: Q142782
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/142/Q142782/
 	
 	=============================================================================
 	
+
+{% endraw %}

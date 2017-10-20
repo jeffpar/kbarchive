@@ -6,6 +6,8 @@ permalink: /kb/150/Q150835/
 
 ## Q150835: Troubleshooting CGI Error
 
+{% raw %}
+
 	Article: Q150835
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -76,3 +78,5 @@ permalink: /kb/150/Q150835/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157302/
 
 ## Q157302: XCLN: Importing a PAB Can Result in Duplicate Entries
 
+{% raw %}
+
 	Article: Q157302
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -52,3 +54,5 @@ permalink: /kb/157/Q157302/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168569/
 
 ## Q168569: SMS: Remove Package from Server Leaves Registry Key
 
+{% raw %}
+
 	Article: Q168569
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -45,3 +47,5 @@ permalink: /kb/168/Q168569/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189596/
 
 ## Q189596: SAMPLE: VB6WLCTL.EXE Windowless Controls Demonstration
 
+{% raw %}
+
 	Article: Q189596
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -144,3 +146,5 @@ permalink: /kb/189/Q189596/
 	
 	=============================================================================
 	
+
+{% endraw %}

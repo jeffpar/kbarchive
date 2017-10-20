@@ -6,6 +6,8 @@ permalink: /kb/107/Q107117/
 
 ## Q107117: 5250 Applet Status Line
 
+{% raw %}
+
 	Article: Q107117
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.11,3.0,4.0
@@ -87,3 +89,5 @@ permalink: /kb/107/Q107117/
 	
 	=============================================================================
 	
+
+{% endraw %}

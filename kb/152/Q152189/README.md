@@ -6,6 +6,8 @@ permalink: /kb/152/Q152189/
 
 ## Q152189: MSB Ocean: Overview of Magic School Bus Explores the Ocean
 
+{% raw %}
+
 	Article: Q152189
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/152/Q152189/
 	
 	=============================================================================
 	
+
+{% endraw %}

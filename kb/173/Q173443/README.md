@@ -6,6 +6,8 @@ permalink: /kb/173/Q173443/
 
 ## Q173443: Slow Response Executing Start Menu or Control Panel Applets
 
+{% raw %}
+
 	Article: Q173443
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/173/Q173443/
 	
 	=============================================================================
 	
+
+{% endraw %}

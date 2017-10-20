@@ -6,6 +6,8 @@ permalink: /kb/129/Q129210/
 
 ## Q129210: FIX: Linker Errors on Array of Constant Pointers to Constants
 
+{% raw %}
+
 	Article: Q129210
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52
@@ -127,3 +129,5 @@ permalink: /kb/129/Q129210/
 	
 	=============================================================================
 	
+
+{% endraw %}

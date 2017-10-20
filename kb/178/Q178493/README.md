@@ -6,6 +6,8 @@ permalink: /kb/178/Q178493/
 
 ## Q178493: SNA Server Status Shows &quot;Off Line&quot; Even Though It's Active
 
+{% raw %}
+
 	Article: Q178493
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,4.0
@@ -104,3 +106,5 @@ permalink: /kb/178/Q178493/
 	
 	=============================================================================
 	
+
+{% endraw %}

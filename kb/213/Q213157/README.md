@@ -6,6 +6,8 @@ permalink: /kb/213/Q213157/
 
 ## Q213157: SMS: Software Metering Does Not Accurately Report Usage
 
+{% raw %}
+
 	Article: Q213157
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -48,3 +50,5 @@ permalink: /kb/213/Q213157/
 	
 	=============================================================================
 	
+
+{% endraw %}

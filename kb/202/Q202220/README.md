@@ -6,6 +6,8 @@ permalink: /kb/202/Q202220/
 
 ## Q202220: XADM: Using Mailbox Template w/Distribution Lists Between Sites
 
+{% raw %}
+
 	Article: Q202220
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/202/Q202220/
 	
 	=============================================================================
 	
+
+{% endraw %}

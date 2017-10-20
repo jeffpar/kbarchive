@@ -6,6 +6,8 @@ permalink: /kb/123/Q123862/
 
 ## Q123862: Opening a File Causes the Application to Close
 
+{% raw %}
+
 	Article: Q123862
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123862/
 	
 	=============================================================================
 	
+
+{% endraw %}

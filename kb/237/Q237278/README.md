@@ -6,6 +6,8 @@ permalink: /kb/237/Q237278/
 
 ## Q237278: WD97: AV When Programmatically Applying ListTemplate
 
+{% raw %}
+
 	Article: Q237278
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/237/Q237278/
 	
 	=============================================================================
 	
+
+{% endraw %}

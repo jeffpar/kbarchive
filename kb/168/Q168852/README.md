@@ -6,6 +6,8 @@ permalink: /kb/168/Q168852/
 
 ## Q168852: WD97: Nested Calculations Updated Incorrectly (International)
 
+{% raw %}
+
 	Article: Q168852
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -120,3 +122,5 @@ permalink: /kb/168/Q168852/
 	
 	=============================================================================
 	
+
+{% endraw %}

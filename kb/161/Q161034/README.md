@@ -6,6 +6,8 @@ permalink: /kb/161/Q161034/
 
 ## Q161034: PRB:Cannot Open File AppleGuideGlueLib When Trying to Quit VFP
 
+{% raw %}
+
 	Article: Q161034
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -61,3 +63,5 @@ permalink: /kb/161/Q161034/
 	
 	=============================================================================
 	
+
+{% endraw %}

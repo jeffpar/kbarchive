@@ -6,6 +6,8 @@ permalink: /kb/168/Q168854/
 
 ## Q168854: Puzzle Collection: Canceling Setup Will Corrupt Program Files
 
+{% raw %}
+
 	Article: Q168854
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/168/Q168854/
 	
 	=============================================================================
 	
+
+{% endraw %}

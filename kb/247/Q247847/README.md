@@ -6,6 +6,8 @@ permalink: /kb/247/Q247847/
 
 ## Q247847: XCLN: Creating a Rule to Process Mail Sent on Behalf of Another
 
+{% raw %}
+
 	Article: Q247847
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -114,3 +116,5 @@ permalink: /kb/247/Q247847/
 	
 	=============================================================================
 	
+
+{% endraw %}

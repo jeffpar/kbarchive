@@ -6,6 +6,8 @@ permalink: /kb/187/Q187998/
 
 ## Q187998: WD97: Invalid Page Fault in MSO97.DLL Inserting AutoText
 
+{% raw %}
+
 	Article: Q187998
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/187/Q187998/
 	
 	=============================================================================
 	
+
+{% endraw %}

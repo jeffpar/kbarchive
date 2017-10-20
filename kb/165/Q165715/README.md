@@ -6,6 +6,8 @@ permalink: /kb/165/Q165715/
 
 ## Q165715: WD97: Applying Single Border to Selected Text Sets All Borders
 
+{% raw %}
+
 	Article: Q165715
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/165/Q165715/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174517/
 
 ## Q174517: PRB: Office 97 SR-1 Patch Doesn't Update VB 5.0 Jet/DAO DLLs
 
+{% raw %}
+
 	Article: Q174517
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -97,3 +99,5 @@ permalink: /kb/174/Q174517/
 	
 	=============================================================================
 	
+
+{% endraw %}

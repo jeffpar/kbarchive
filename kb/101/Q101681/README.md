@@ -6,6 +6,8 @@ permalink: /kb/101/Q101681/
 
 ## Q101681: MHS: Err Msg: Inpost: General File I/O Error with MHS Swap
 
+{% raw %}
+
 	Article: Q101681
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/101/Q101681/
 	
 	=============================================================================
 	
+
+{% endraw %}

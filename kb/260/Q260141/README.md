@@ -6,6 +6,8 @@ permalink: /kb/260/Q260141/
 
 ## Q260141: PRB:OpenMsgStore and HrMailboxLogon Fail with Too Many Mailboxes
 
+{% raw %}
+
 	Article: Q260141
 	Product(s): Microsoft Exchange
 	Version(s): 1.0,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,5.0,5.5
@@ -107,3 +109,5 @@ permalink: /kb/260/Q260141/
 	
 	=============================================================================
 	
+
+{% endraw %}

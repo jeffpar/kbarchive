@@ -6,6 +6,8 @@ permalink: /kb/021/Q21809/
 
 ## Q21809: FILES Statement Always Displays Name of Current Directory
 
+{% raw %}
+
 	Article: Q21809
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -24,3 +26,5 @@ permalink: /kb/021/Q21809/
 	   The FILES statement in QuickBASIC is behaving in a manner
 	consistent with BASICA and GW-BASIC Version 3.20. It is not likely that
 	this behavior will change.
+
+{% endraw %}

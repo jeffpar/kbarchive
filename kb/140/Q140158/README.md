@@ -6,6 +6,8 @@ permalink: /kb/140/Q140158/
 
 ## Q140158: HOWTO: How to Place Static Text Labels Over Columns in a List Bo
 
+{% raw %}
+
 	Article: Q140158
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0
@@ -171,3 +173,5 @@ permalink: /kb/140/Q140158/
 	
 	=============================================================================
 	
+
+{% endraw %}

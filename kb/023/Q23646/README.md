@@ -6,6 +6,8 @@ permalink: /kb/023/Q23646/
 
 ## Q23646: CV Prior to 3.00 Needs /S for Mouse to Appear in OS/2 DOS Box
 
+{% raw %}
+
 	Article: Q23646
 	Product(s): See article
 	Version(s): 1.00 1.10 1.11 2.00 2.10 2.20 2.30 2.35
@@ -28,3 +30,5 @@ permalink: /kb/023/Q23646/
 	Beginning with version 3.00, CodeView detects whether it is running in
 	a DOS session under OS/2, and if so, automatically starts up with /S
 	as the default in order to make the mouse visible.
+
+{% endraw %}

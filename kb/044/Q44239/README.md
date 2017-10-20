@@ -6,6 +6,8 @@ permalink: /kb/044/Q44239/
 
 ## Q44239: Commodore Colt Limited to 112 Files in a Directory
 
+{% raw %}
+
 	Article: Q44239
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -30,3 +32,5 @@ permalink: /kb/044/Q44239/
 	not a problem with QuickBASIC. Contact Commodore Business Machines
 	Customer Support at (215) 436-4200 for information regarding the
 	availability of a correction.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138164/
 
 ## Q138164: Encarta 1996: Yearbook Builder FAQ
 
+{% raw %}
+
 	Article: Q138164
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -161,3 +163,5 @@ permalink: /kb/138/Q138164/
 	
 	=============================================================================
 	
+
+{% endraw %}

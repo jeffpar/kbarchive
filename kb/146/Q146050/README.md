@@ -6,6 +6,8 @@ permalink: /kb/146/Q146050/
 
 ## Q146050: Modifying Ntuser.dat Hive So New Users Get Defined Settings
 
+{% raw %}
+
 	Article: Q146050
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -119,3 +121,5 @@ permalink: /kb/146/Q146050/
 	
 	=============================================================================
 	
+
+{% endraw %}

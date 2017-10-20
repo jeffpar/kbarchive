@@ -6,6 +6,8 @@ permalink: /kb/156/Q156728/
 
 ## Q156728: XFOR: MSMI Mistakenly Returns NDR Instead of DR
 
+{% raw %}
+
 	Article: Q156728
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/156/Q156728/
 	
 	=============================================================================
 	
+
+{% endraw %}

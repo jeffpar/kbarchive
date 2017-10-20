@@ -6,6 +6,8 @@ permalink: /kb/303/Q303088/
 
 ## Q303088: STREETS: How to Avoid Using the Run CD
 
+{% raw %}
+
 	Article: Q303088
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/303/Q303088/
 	
 	=============================================================================
 	
+
+{% endraw %}

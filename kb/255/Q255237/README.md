@@ -6,6 +6,8 @@ permalink: /kb/255/Q255237/
 
 ## Q255237: Err Msg: DAPIWrite for Mailbox &lt;Location&gt; Failed with DAPI...
 
+{% raw %}
+
 	Article: Q255237
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -98,3 +100,5 @@ permalink: /kb/255/Q255237/
 	
 	=============================================================================
 	
+
+{% endraw %}

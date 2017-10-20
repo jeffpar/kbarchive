@@ -6,6 +6,8 @@ permalink: /kb/260/Q260701/
 
 ## Q260701: XADM: Reducing the Large Number of Public Folder Status Messages
 
+{% raw %}
+
 	Article: Q260701
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -102,3 +104,5 @@ permalink: /kb/260/Q260701/
 	
 	=============================================================================
 	
+
+{% endraw %}

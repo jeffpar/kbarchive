@@ -6,6 +6,8 @@ permalink: /kb/232/Q232679/
 
 ## Q232679: Err Msg: &quot;No Domain Server&quot; with Windows 95/98 DUN Client
 
+{% raw %}
+
 	Article: Q232679
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98,98 Second Edition; winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/232/Q232679/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195063/
 
 ## Q195063: Common User ID Problem when Using Associated Printer Feature
 
+{% raw %}
+
 	Article: Q195063
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -134,3 +136,5 @@ permalink: /kb/195/Q195063/
 	
 	=============================================================================
 	
+
+{% endraw %}

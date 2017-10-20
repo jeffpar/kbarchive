@@ -6,6 +6,8 @@ permalink: /kb/126/Q126225/
 
 ## Q126225: PRB: GetGlyphOutLine() Causes GPF Under Chinese Windows 3.1
 
+{% raw %}
+
 	Article: Q126225
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -47,3 +49,5 @@ permalink: /kb/126/Q126225/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257920/
 
 ## Q257920: &quot;The Specified Name ...&quot; Message When Installing MSCS Server
 
+{% raw %}
+
 	Article: Q257920
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/257/Q257920/
 	
 	=============================================================================
 	
+
+{% endraw %}

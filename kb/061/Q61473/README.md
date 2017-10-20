@@ -6,6 +6,8 @@ permalink: /kb/061/Q61473/
 
 ## Q61473: Debugging Large DOS Applications in CodeView 3.0 with /X /E /D
 
+{% raw %}
+
 	Article: Q61473
 	Product(s): See article
 	Version(s): 3.00
@@ -64,3 +66,5 @@ permalink: /kb/061/Q61473/
 	smaller swap area allows you to debug larger applications under DOS,
 	but CodeView runs slower because of the more frequent need to swap
 	code from disk to memory.
+
+{% endraw %}

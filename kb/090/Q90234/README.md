@@ -6,6 +6,8 @@ permalink: /kb/090/Q90234/
 
 ## Q90234: 3Com Etherlink Adapters Not Responding
 
+{% raw %}
+
 	Article: Q90234
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/090/Q90234/
 	
 	=============================================================================
 	
+
+{% endraw %}

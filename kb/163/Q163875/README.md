@@ -6,6 +6,8 @@ permalink: /kb/163/Q163875/
 
 ## Q163875: Group Policies Not Applied If DC Name Is More Than 13 Characters
 
+{% raw %}
+
 	Article: Q163875
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/163/Q163875/
 	
 	=============================================================================
 	
+
+{% endraw %}

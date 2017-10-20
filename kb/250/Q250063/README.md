@@ -6,6 +6,8 @@ permalink: /kb/250/Q250063/
 
 ## Q250063: Duplicates in Inventory After Site Inventory Synchronization
 
+{% raw %}
+
 	Article: Q250063
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/250/Q250063/
 	
 	=============================================================================
 	
+
+{% endraw %}

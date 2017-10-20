@@ -6,6 +6,8 @@ permalink: /kb/281/Q281817/
 
 ## Q281817: Expedia Streets and Trips 2000: How to Submit Map Feedback
 
+{% raw %}
+
 	Article: Q281817
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/281/Q281817/
 	
 	=============================================================================
 	
+
+{% endraw %}

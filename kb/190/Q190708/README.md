@@ -6,6 +6,8 @@ permalink: /kb/190/Q190708/
 
 ## Q190708: XFOR: Internet Mail Service Is Not Copying Administrator on NDRs
 
+{% raw %}
+
 	Article: Q190708
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -58,3 +60,5 @@ permalink: /kb/190/Q190708/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177436/
 
 ## Q177436: PRB: Developer Studio Hangs When Debug Breakpoint Is Set
 
+{% raw %}
+
 	Article: Q177436
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:97
@@ -103,3 +105,5 @@ permalink: /kb/177/Q177436/
 	
 	=============================================================================
 	
+
+{% endraw %}

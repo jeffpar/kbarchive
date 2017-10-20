@@ -6,6 +6,8 @@ permalink: /kb/135/Q135205/
 
 ## Q135205: UNC Connection Causes Failed Program Installation
 
+{% raw %}
+
 	Article: Q135205
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135205/
 	
 	=============================================================================
 	
+
+{% endraw %}

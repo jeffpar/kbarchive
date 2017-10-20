@@ -6,6 +6,8 @@ permalink: /kb/143/Q143046/
 
 ## Q143046: FIX: Error When Closing a Program Through the Control Box
 
+{% raw %}
+
 	Article: Q143046
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -124,3 +126,5 @@ permalink: /kb/143/Q143046/
 	
 	=============================================================================
 	
+
+{% endraw %}

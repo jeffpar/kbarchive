@@ -6,6 +6,8 @@ permalink: /kb/271/Q271982/
 
 ## Q271982: XADM: Error Message: The Messaging Interface Returned Unknown...
 
+{% raw %}
+
 	Article: Q271982
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -57,3 +59,5 @@ permalink: /kb/271/Q271982/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99165/
 
 ## Q99165: Explanation of the num_logons Variable
 
+{% raw %}
+
 	Article: Q99165
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/099/Q99165/
 	
 	=============================================================================
 	
+
+{% endraw %}

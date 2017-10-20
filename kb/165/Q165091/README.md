@@ -6,6 +6,8 @@ permalink: /kb/165/Q165091/
 
 ## Q165091: Password Uniqueness May Not Account for Case Sensitivity
 
+{% raw %}
+
 	Article: Q165091
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0
@@ -67,3 +69,5 @@ permalink: /kb/165/Q165091/
 	
 	=============================================================================
 	
+
+{% endraw %}

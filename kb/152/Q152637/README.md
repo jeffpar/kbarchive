@@ -6,6 +6,8 @@ permalink: /kb/152/Q152637/
 
 ## Q152637: Cli_dos Error Reading from Drive X - Abort Retry Fail
 
+{% raw %}
+
 	Article: Q152637
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152637/
 	
 	=============================================================================
 	
+
+{% endraw %}

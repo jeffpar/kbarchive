@@ -6,6 +6,8 @@ permalink: /kb/170/Q170641/
 
 ## Q170641: WD97: ODMA: DMS Does Not Track Changes to Template
 
+{% raw %}
+
 	Article: Q170641
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/170/Q170641/
 	
 	=============================================================================
 	
+
+{% endraw %}

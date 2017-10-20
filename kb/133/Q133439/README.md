@@ -6,6 +6,8 @@ permalink: /kb/133/Q133439/
 
 ## Q133439: Cannot Play Video Clips in Microsoft Encarta '93
 
+{% raw %}
+
 	Article: Q133439
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/133/Q133439/
 	
 	=============================================================================
 	
+
+{% endraw %}

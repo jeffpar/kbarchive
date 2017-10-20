@@ -6,6 +6,8 @@ permalink: /kb/251/Q251164/
 
 ## Q251164: SMS: Changing Time Zone Recopies Three Core SMS Client Files
 
+{% raw %}
+
 	Article: Q251164
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/251/Q251164/
 	
 	=============================================================================
 	
+
+{% endraw %}

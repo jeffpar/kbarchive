@@ -6,6 +6,8 @@ permalink: /kb/170/Q170854/
 
 ## Q170854: FTP Login Fails with Err. Msg: Home Directory Inaccessible
 
+{% raw %}
+
 	Article: Q170854
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -54,3 +56,5 @@ permalink: /kb/170/Q170854/
 	
 	=============================================================================
 	
+
+{% endraw %}

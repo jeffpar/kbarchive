@@ -6,6 +6,8 @@ permalink: /kb/139/Q139507/
 
 ## Q139507: SNA Server Twinax Connection to IBM 5494 Traps with 0x00000050
 
+{% raw %}
+
 	Article: Q139507
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -75,3 +77,5 @@ permalink: /kb/139/Q139507/
 	
 	=============================================================================
 	
+
+{% endraw %}

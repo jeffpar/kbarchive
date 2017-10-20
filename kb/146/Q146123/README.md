@@ -6,6 +6,8 @@ permalink: /kb/146/Q146123/
 
 ## Q146123: Non Critical Error Installing Software in Windows NT 3.51
 
+{% raw %}
+
 	Article: Q146123
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -50,3 +52,5 @@ permalink: /kb/146/Q146123/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239481/
 
 ## Q239481: ODBC Connection to DB2 Fails from Some Windows 95 Computers
 
+{% raw %}
+
 	Article: Q239481
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -63,3 +65,5 @@ permalink: /kb/239/Q239481/
 	
 	=============================================================================
 	
+
+{% endraw %}

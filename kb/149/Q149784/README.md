@@ -6,6 +6,8 @@ permalink: /kb/149/Q149784/
 
 ## Q149784: FIX: LNK2001 Incorrectly Generated for Static Data Member
 
+{% raw %}
+
 	Article: Q149784
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00
@@ -103,3 +105,5 @@ permalink: /kb/149/Q149784/
 	
 	=============================================================================
 	
+
+{% endraw %}

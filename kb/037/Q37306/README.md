@@ -6,6 +6,8 @@ permalink: /kb/037/Q37306/
 
 ## Q37306: &quot;Device I/O Error&quot; If Keyboard Buffer Filled During &quot;COM1&quot;
 
+{% raw %}
+
 	Article: Q37306
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -49,3 +51,5 @@ permalink: /kb/037/Q37306/
 	     INPUT #1, s$
 	     PRINT s$,
 	     RETURN
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190790/
 
 ## Q190790: BUG: Circular Dependency Error After Breaking Compatibility
 
+{% raw %}
+
 	Article: Q190790
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/190/Q190790/
 	
 	=============================================================================
 	
+
+{% endraw %}

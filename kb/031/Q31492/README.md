@@ -6,6 +6,8 @@ permalink: /kb/031/Q31492/
 
 ## Q31492: Editing Nonexisting Files with the Microsoft Editor
 
+{% raw %}
+
 	Article: Q31492
 	Product(s): See article
 	Version(s): 1.00
@@ -22,3 +24,5 @@ permalink: /kb/031/Q31492/
 	previous version is moved to the DELETED directory.
 	   The EXP command allows you to remove this file, and all other files
 	from the DELETED directory.
+
+{% endraw %}

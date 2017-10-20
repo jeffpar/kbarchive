@@ -6,6 +6,8 @@ permalink: /kb/175/Q175550/
 
 ## Q175550: How to Uninstall The Microsoft Network Version 2.0
 
+{% raw %}
+
 	Article: Q175550
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -160,3 +162,5 @@ permalink: /kb/175/Q175550/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141944/
 
 ## Q141944: Saving BBS Message as RTF File Creates Useless Icon
 
+{% raw %}
+
 	Article: Q141944
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.20 1.30
@@ -40,3 +42,5 @@ permalink: /kb/141/Q141944/
 	
 	=============================================================================
 	
+
+{% endraw %}

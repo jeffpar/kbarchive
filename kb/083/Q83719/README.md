@@ -6,6 +6,8 @@ permalink: /kb/083/Q83719/
 
 ## Q83719: No MS-DOS Prompt on Novell Network with Windows 3.1
 
+{% raw %}
+
 	Article: Q83719
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/083/Q83719/
 	
 	=============================================================================
 	
+
+{% endraw %}

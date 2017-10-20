@@ -6,6 +6,8 @@ permalink: /kb/135/Q135643/
 
 ## Q135643: INFO: Basic Troubleshooting Converting from Delta to SourceSafe
 
+{% raw %}
+
 	Article: Q135643
 	Product(s): Microsoft SourceSafe
 	Version(s): MS-DOS:3.1; WINDOWS:3.1,4.0,5.0; winnt:3.1
@@ -69,3 +71,5 @@ permalink: /kb/135/Q135643/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197008/
 
 ## Q197008: WD97: Word Assigns a Delivery Point Bar Code (DPBC) of 99
 
+{% raw %}
+
 	Article: Q197008
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -168,3 +170,5 @@ permalink: /kb/197/Q197008/
 	
 	=============================================================================
 	
+
+{% endraw %}

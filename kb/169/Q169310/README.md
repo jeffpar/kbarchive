@@ -6,6 +6,8 @@ permalink: /kb/169/Q169310/
 
 ## Q169310: Close Combat Trial Version Is Available
 
+{% raw %}
+
 	Article: Q169310
 	Product(s): Microsoft Home Games
 	Version(s): Trial Version
@@ -57,3 +59,5 @@ permalink: /kb/169/Q169310/
 	
 	=============================================================================
 	
+
+{% endraw %}

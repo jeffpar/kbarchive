@@ -6,6 +6,8 @@ permalink: /kb/141/Q141591/
 
 ## Q141591: Clarification of Enhanced IDE Under Windows NT
 
+{% raw %}
+
 	Article: Q141591
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -134,3 +136,5 @@ permalink: /kb/141/Q141591/
 	
 	=============================================================================
 	
+
+{% endraw %}

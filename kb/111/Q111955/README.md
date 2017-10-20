@@ -6,6 +6,8 @@ permalink: /kb/111/Q111955/
 
 ## Q111955: Description of Networking Diagram Inaccurate in Resource Kit
 
+{% raw %}
+
 	Article: Q111955
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -42,3 +44,5 @@ permalink: /kb/111/Q111955/
 	
 	=============================================================================
 	
+
+{% endraw %}

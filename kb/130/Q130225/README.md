@@ -6,6 +6,8 @@ permalink: /kb/130/Q130225/
 
 ## Q130225: PRB: Setting the ReadOnly Property of a Control Does Not Work
 
+{% raw %}
+
 	Article: Q130225
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/130/Q130225/
 	
 	=============================================================================
 	
+
+{% endraw %}

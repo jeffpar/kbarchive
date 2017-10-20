@@ -6,6 +6,8 @@ permalink: /kb/131/Q131612/
 
 ## Q131612: HyperTerminal Err Msg: The TAPI Configuration Has Changed...
 
+{% raw %}
+
 	Article: Q131612
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/131/Q131612/
 	
 	=============================================================================
 	
+
+{% endraw %}

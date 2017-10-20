@@ -6,6 +6,8 @@ permalink: /kb/085/Q85545/
 
 ## Q85545: Norton Disk Monitor May Cause Fragmented Conventional Memory
 
+{% raw %}
+
 	Article: Q85545
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -71,3 +73,5 @@ permalink: /kb/085/Q85545/
 	
 	=============================================================================
 	
+
+{% endraw %}

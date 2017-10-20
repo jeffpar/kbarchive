@@ -6,6 +6,8 @@ permalink: /kb/071/Q71746/
 
 ## Q71746: Getting the Correct Size MS-DOS Disks
 
+{% raw %}
+
 	Article: Q71746
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.30a,4.01a,5.0
@@ -56,3 +58,5 @@ permalink: /kb/071/Q71746/
 	
 	=============================================================================
 	
+
+{% endraw %}

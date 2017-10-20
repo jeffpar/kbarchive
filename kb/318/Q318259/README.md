@@ -6,6 +6,8 @@ permalink: /kb/318/Q318259/
 
 ## Q318259: Backup Server Returns &quot;Unable to Open Configuration&quot; Error Messa
 
+{% raw %}
+
 	Article: Q318259
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,4.0
@@ -141,3 +143,5 @@ permalink: /kb/318/Q318259/
 	
 	=============================================================================
 	
+
+{% endraw %}

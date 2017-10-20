@@ -6,6 +6,8 @@ permalink: /kb/082/Q82441/
 
 ## Q82441: Using the Generic PostScript Printer Driver under Windows 3.1
 
+{% raw %}
+
 	Article: Q82441
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/082/Q82441/
 	
 	=============================================================================
 	
+
+{% endraw %}

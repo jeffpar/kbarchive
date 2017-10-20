@@ -6,6 +6,8 @@ permalink: /kb/140/Q140954/
 
 ## Q140954: XCLN: Win16 Silent Mode Setup Fails to Create Profile
 
+{% raw %}
+
 	Article: Q140954
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/140/Q140954/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263437/
 
 ## Q263437: Adding Software Metering to a Secondary Site After Installation
 
+{% raw %}
+
 	Article: Q263437
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -61,3 +63,5 @@ permalink: /kb/263/Q263437/
 	
 	=============================================================================
 	
+
+{% endraw %}

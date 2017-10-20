@@ -6,6 +6,8 @@ permalink: /kb/227/Q227888/
 
 ## Q227888: Importing a Key Backup File to Use in IIS 5.0
 
+{% raw %}
+
 	Article: Q227888
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -84,3 +86,5 @@ permalink: /kb/227/Q227888/
 	
 	=============================================================================
 	
+
+{% endraw %}

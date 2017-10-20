@@ -6,6 +6,8 @@ permalink: /kb/038/Q38124/
 
 ## Q38124: Turning Off Cursor in Text Mode
 
+{% raw %}
+
 	Article: Q38124
 	Product(s): See article
 	Version(s): 5.10
@@ -37,3 +39,5 @@ permalink: /kb/038/Q38124/
 	     int86 ( 0x10, &regs, &regs );
 	
 	 }
+
+{% endraw %}

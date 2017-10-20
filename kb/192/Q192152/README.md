@@ -6,6 +6,8 @@ permalink: /kb/192/Q192152/
 
 ## Q192152: PRB: Server Object Error 'ASP 0178 : 800a0005' From WebClasses
 
+{% raw %}
+
 	Article: Q192152
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/192/Q192152/
 	
 	=============================================================================
 	
+
+{% endraw %}

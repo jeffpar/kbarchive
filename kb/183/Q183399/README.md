@@ -6,6 +6,8 @@ permalink: /kb/183/Q183399/
 
 ## Q183399: XADM: How to Read Perfmon.exe Logs from a Different Computer
 
+{% raw %}
+
 	Article: Q183399
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/183/Q183399/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138519/
 
 ## Q138519: PRB: Arguments Are Evaluated from Right to Left in Some Cases
 
+{% raw %}
+
 	Article: Q138519
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -163,3 +165,5 @@ permalink: /kb/138/Q138519/
 	
 	=============================================================================
 	
+
+{% endraw %}

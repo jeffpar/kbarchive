@@ -6,6 +6,8 @@ permalink: /kb/152/Q152934/
 
 ## Q152934: XCON: X.400 Connector Stack Property Page Behavior
 
+{% raw %}
+
 	Article: Q152934
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/152/Q152934/
 	
 	=============================================================================
 	
+
+{% endraw %}

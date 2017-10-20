@@ -6,6 +6,8 @@ permalink: /kb/062/Q62329/
 
 ## Q62329: Internal Compiler Error '@(#)regMD.c:1.100', Line 4634
 
+{% raw %}
+
 	Article: Q62329
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -100,3 +102,5 @@ permalink: /kb/062/Q62329/
 	
 	3. Change the order of the code or use a temporary variable in the
 	   assignment statement.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129745/
 
 ## Q129745: MHS: Gateway Will Not Process
 
+{% raw %}
+
 	Article: Q129745
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/129/Q129745/
 	
 	=============================================================================
 	
+
+{% endraw %}

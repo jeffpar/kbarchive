@@ -6,6 +6,8 @@ permalink: /kb/146/Q146453/
 
 ## Q146453: XCLN: Err Msg: An Item Could Not Be Copied...
 
+{% raw %}
+
 	Article: Q146453
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146453/
 	
 	=============================================================================
 	
+
+{% endraw %}

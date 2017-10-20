@@ -6,6 +6,8 @@ permalink: /kb/173/Q173994/
 
 ## Q173994: GetTextExtentPoint32W May Fail with Unicode Characters &gt; 0x
 
+{% raw %}
+
 	Article: Q173994
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/173/Q173994/
 	
 	=============================================================================
 	
+
+{% endraw %}

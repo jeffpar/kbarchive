@@ -6,6 +6,8 @@ permalink: /kb/037/Q37423/
 
 ## Q37423: QuickBASIC Support Hours, Press Release October 1990
 
+{% raw %}
+
 	Article: Q37423
 	Product(s): See article
 	Version(s): 4.50
@@ -45,3 +47,5 @@ permalink: /kb/037/Q37423/
 	phone system is blocked from calling 900 numbers, you may call our
 	unblocking toll number, (206) 646-5102, for a credit card charge of
 	$20.00 per call.
+
+{% endraw %}

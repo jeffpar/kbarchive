@@ -6,6 +6,8 @@ permalink: /kb/140/Q140419/
 
 ## Q140419: Name Release Notifications Not Sent to WINS on Shut Down
 
+{% raw %}
+
 	Article: Q140419
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/140/Q140419/
 	
 	=============================================================================
 	
+
+{% endraw %}

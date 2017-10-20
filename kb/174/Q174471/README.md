@@ -6,6 +6,8 @@ permalink: /kb/174/Q174471/
 
 ## Q174471: SMS: Cannot Run Virus Scanner on Some SMS Client Files
 
+{% raw %}
+
 	Article: Q174471
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -55,3 +57,5 @@ permalink: /kb/174/Q174471/
 	
 	=============================================================================
 	
+
+{% endraw %}

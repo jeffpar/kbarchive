@@ -6,6 +6,8 @@ permalink: /kb/136/Q136894/
 
 ## Q136894: First Contact Form for AppleTalk Mail Client &amp; Server
 
+{% raw %}
+
 	Article: Q136894
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1,3.1a,3.1c,3.1d
@@ -105,3 +107,5 @@ permalink: /kb/136/Q136894/
 	
 	=============================================================================
 	
+
+{% endraw %}

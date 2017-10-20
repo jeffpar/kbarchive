@@ -6,6 +6,8 @@ permalink: /kb/192/Q192545/
 
 ## Q192545: PC WRmt: Windows Remote Client Displays Wrong Date after 2000
 
+{% raw %}
+
 	Article: Q192545
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -46,3 +48,5 @@ permalink: /kb/192/Q192545/
 	
 	=============================================================================
 	
+
+{% endraw %}

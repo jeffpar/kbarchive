@@ -6,6 +6,8 @@ permalink: /kb/062/Q62820/
 
 ## Q62820: In SUB, Variable-Length Near String Array Element Losing Value
 
+{% raw %}
+
 	Article: Q62820
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -112,3 +114,5 @@ permalink: /kb/062/Q62820/
 	     dummy$ = RTRIM$("   bob    ")  'Use a temporary string variable
 	     A$(1) = dummy$                 'to work around the problem.
 	END SUB
+
+{% endraw %}

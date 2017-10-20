@@ -6,6 +6,8 @@ permalink: /kb/028/Q28166/
 
 ## Q28166: QB Uses Up Default String Space When Concatenating Far String
 
+{% raw %}
+
 	Article: Q28166
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -50,3 +52,5 @@ permalink: /kb/028/Q28166/
 	      srv(0) = RTRIM$(srv(0)) + abc$
 	      PRINT t, LEN(RTRIM$(srv(0))), FRE(""), FRE(-1)
 	   NEXT t
+
+{% endraw %}

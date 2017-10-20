@@ -6,6 +6,8 @@ permalink: /kb/107/Q107869/
 
 ## Q107869: CD Golf Error: There Is No Driver Installed on Your System
 
+{% raw %}
+
 	Article: Q107869
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/107/Q107869/
 	
 	=============================================================================
 	
+
+{% endraw %}

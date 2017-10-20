@@ -6,6 +6,8 @@ permalink: /kb/159/Q159562/
 
 ## Q159562: WD97: Determining the Current Page and Section Number
 
+{% raw %}
+
 	Article: Q159562
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/159/Q159562/
 	
 	=============================================================================
 	
+
+{% endraw %}

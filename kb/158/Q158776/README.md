@@ -6,6 +6,8 @@ permalink: /kb/158/Q158776/
 
 ## Q158776: SNA Server May Log Event 23, Qualifier 0x000A
 
+{% raw %}
+
 	Article: Q158776
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,3.0,4.0
@@ -72,3 +74,5 @@ permalink: /kb/158/Q158776/
 	
 	=============================================================================
 	
+
+{% endraw %}

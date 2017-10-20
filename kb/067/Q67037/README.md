@@ -6,6 +6,8 @@ permalink: /kb/067/Q67037/
 
 ## Q67037: Embedded Unnamed Structures and Unions Cannot Be Initialized
 
+{% raw %}
+
 	Article: Q67037
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -48,3 +50,5 @@ permalink: /kb/067/Q67037/
 	void main(void)
 	{
 	}
+
+{% endraw %}

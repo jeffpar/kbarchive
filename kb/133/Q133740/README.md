@@ -6,6 +6,8 @@ permalink: /kb/133/Q133740/
 
 ## Q133740: Null Value (.NULL.) Is a Marker - Not a Data Type
 
+{% raw %}
+
 	Article: Q133740
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/133/Q133740/
 	
 	=============================================================================
 	
+
+{% endraw %}

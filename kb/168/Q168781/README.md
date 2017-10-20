@@ -6,6 +6,8 @@ permalink: /kb/168/Q168781/
 
 ## Q168781: XFOR: Sending to SMTP Gets Immediate NDR 550 Error Message
 
+{% raw %}
+
 	Article: Q168781
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -86,3 +88,5 @@ permalink: /kb/168/Q168781/
 	
 	=============================================================================
 	
+
+{% endraw %}

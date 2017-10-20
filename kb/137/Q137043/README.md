@@ -6,6 +6,8 @@ permalink: /kb/137/Q137043/
 
 ## Q137043: SMTP: Benchmarking the SMTP Gateway
 
+{% raw %}
+
 	Article: Q137043
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -160,3 +162,5 @@ permalink: /kb/137/Q137043/
 	
 	=============================================================================
 	
+
+{% endraw %}

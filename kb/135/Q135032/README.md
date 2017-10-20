@@ -6,6 +6,8 @@ permalink: /kb/135/Q135032/
 
 ## Q135032: PC NTMMTA: Cannot Run as an Automatic Service w/ Banyan Vines
 
+{% raw %}
+
 	Article: Q135032
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -115,3 +117,5 @@ permalink: /kb/135/Q135032/
 	
 	=============================================================================
 	
+
+{% endraw %}

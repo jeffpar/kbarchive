@@ -6,6 +6,8 @@ permalink: /kb/085/Q85593/
 
 ## Q85593: BUG: Buttons Painted Incorrectly After Color Changed
 
+{% raw %}
+
 	Article: Q85593
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -42,3 +44,5 @@ permalink: /kb/085/Q85593/
 	
 	=============================================================================
 	
+
+{% endraw %}

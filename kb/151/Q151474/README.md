@@ -6,6 +6,8 @@ permalink: /kb/151/Q151474/
 
 ## Q151474: Cannot Save Word 95 File on NetWare Server With OS/2 Name Space
 
+{% raw %}
+
 	Article: Q151474
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -73,3 +75,5 @@ permalink: /kb/151/Q151474/
 	
 	=============================================================================
 	
+
+{% endraw %}

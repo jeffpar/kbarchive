@@ -6,6 +6,8 @@ permalink: /kb/176/Q176102/
 
 ## Q176102: MSN Err Msg: The Connection to the Server Has Failed...
 
+{% raw %}
+
 	Article: Q176102
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6,5.0
@@ -108,3 +110,5 @@ permalink: /kb/176/Q176102/
 	
 	=============================================================================
 	
+
+{% endraw %}

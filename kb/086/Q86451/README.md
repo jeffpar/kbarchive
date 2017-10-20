@@ -6,6 +6,8 @@ permalink: /kb/086/Q86451/
 
 ## Q86451: Err Msg: &quot;Abnormal Termination&quot; with Adobe TypeAlign
 
+{% raw %}
+
 	Article: Q86451
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/086/Q86451/
 	
 	=============================================================================
 	
+
+{% endraw %}

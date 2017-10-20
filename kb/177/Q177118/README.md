@@ -6,6 +6,8 @@ permalink: /kb/177/Q177118/
 
 ## Q177118: Registry Keys Added by Remote Access Service
 
+{% raw %}
+
 	Article: Q177118
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -112,3 +114,5 @@ permalink: /kb/177/Q177118/
 	
 	=============================================================================
 	
+
+{% endraw %}

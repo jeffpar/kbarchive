@@ -6,6 +6,8 @@ permalink: /kb/247/Q247622/
 
 ## Q247622: XFOR: Migrating from Lotus Stops Wizard with Dr. Watson Event
 
+{% raw %}
+
 	Article: Q247622
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/247/Q247622/
 	
 	=============================================================================
 	
+
+{% endraw %}

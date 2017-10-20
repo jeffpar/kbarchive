@@ -6,6 +6,8 @@ permalink: /kb/232/Q232611/
 
 ## Q232611: Zone Error Message: Your Connection to the Zone Game Server...
 
+{% raw %}
+
 	Article: Q232611
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/232/Q232611/
 	
 	=============================================================================
 	
+
+{% endraw %}

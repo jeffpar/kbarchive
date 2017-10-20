@@ -6,6 +6,8 @@ permalink: /kb/245/Q245192/
 
 ## Q245192: Blank Logon Dialog Box Appears After You Change Drive Letter.
 
+{% raw %}
+
 	Article: Q245192
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/245/Q245192/
 	
 	=============================================================================
 	
+
+{% endraw %}

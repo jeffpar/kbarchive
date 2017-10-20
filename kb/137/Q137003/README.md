@@ -6,6 +6,8 @@ permalink: /kb/137/Q137003/
 
 ## Q137003: Event ID 8011 Appears in the BDC Event Viewer
 
+{% raw %}
+
 	Article: Q137003
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/137/Q137003/
 	
 	=============================================================================
 	
+
+{% endraw %}

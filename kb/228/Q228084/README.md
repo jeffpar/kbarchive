@@ -6,6 +6,8 @@ permalink: /kb/228/Q228084/
 
 ## Q228084: Baseball 2000: How to Troubleshoot Graphics Issues
 
+{% raw %}
+
 	Article: Q228084
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -91,3 +93,5 @@ permalink: /kb/228/Q228084/
 	
 	=============================================================================
 	
+
+{% endraw %}

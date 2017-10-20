@@ -6,6 +6,8 @@ permalink: /kb/298/Q298932/
 
 ## Q298932: &quot;Connection Test Failed&quot; Error with SMS Web Reports Installation
 
+{% raw %}
+
 	Article: Q298932
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/298/Q298932/
 	
 	=============================================================================
 	
+
+{% endraw %}

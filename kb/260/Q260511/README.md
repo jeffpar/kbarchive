@@ -6,6 +6,8 @@ permalink: /kb/260/Q260511/
 
 ## Q260511: Asheron's Call Error Message: Server Connection Lost
 
+{% raw %}
+
 	Article: Q260511
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -116,3 +118,5 @@ permalink: /kb/260/Q260511/
 	
 	=============================================================================
 	
+
+{% endraw %}

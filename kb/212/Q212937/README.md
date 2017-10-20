@@ -6,6 +6,8 @@ permalink: /kb/212/Q212937/
 
 ## Q212937: LAN Sender Continually Tries to Connect to Deleted Child Site
 
+{% raw %}
+
 	Article: Q212937
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -95,3 +97,5 @@ permalink: /kb/212/Q212937/
 	
 	=============================================================================
 	
+
+{% endraw %}

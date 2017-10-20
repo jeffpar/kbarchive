@@ -6,6 +6,8 @@ permalink: /kb/160/Q160610/
 
 ## Q160610: READ_REGISTER_ULONG Doesn't Preserve ULONG Semantics on Alpha
 
+{% raw %}
+
 	Article: Q160610
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/160/Q160610/
 	
 	=============================================================================
 	
+
+{% endraw %}

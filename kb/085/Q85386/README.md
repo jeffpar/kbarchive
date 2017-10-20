@@ -6,6 +6,8 @@ permalink: /kb/085/Q85386/
 
 ## Q85386: Font Substitution Does Not Work for Microtek TrueLaser
 
+{% raw %}
+
 	Article: Q85386
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -83,3 +85,5 @@ permalink: /kb/085/Q85386/
 	
 	=============================================================================
 	
+
+{% endraw %}

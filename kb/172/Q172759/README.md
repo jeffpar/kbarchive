@@ -6,6 +6,8 @@ permalink: /kb/172/Q172759/
 
 ## Q172759: Advanced Windows 3rd Ed. Project Crashes VC++ 5.0
 
+{% raw %}
+
 	Article: Q172759
 	Product(s): Microsoft Press
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/172/Q172759/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159580/
 
 ## Q159580: WordPad Does Not Show Printer Fonts
 
+{% raw %}
+
 	Article: Q159580
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -49,3 +51,5 @@ permalink: /kb/159/Q159580/
 	
 	=============================================================================
 	
+
+{% endraw %}

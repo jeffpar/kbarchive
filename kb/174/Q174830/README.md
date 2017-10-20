@@ -6,6 +6,8 @@ permalink: /kb/174/Q174830/
 
 ## Q174830: NMI Error Message on Blue Screen May Be Garbled
 
+{% raw %}
+
 	Article: Q174830
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/174/Q174830/
 	
 	=============================================================================
 	
+
+{% endraw %}

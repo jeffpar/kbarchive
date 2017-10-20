@@ -6,6 +6,8 @@ permalink: /kb/156/Q156470/
 
 ## Q156470: Kids: Summary of Audio Used in Kids Titles
 
+{% raw %}
+
 	Article: Q156470
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,1.1b,1.1c,2.0; :1.0
@@ -68,3 +70,5 @@ permalink: /kb/156/Q156470/
 	
 	=============================================================================
 	
+
+{% endraw %}

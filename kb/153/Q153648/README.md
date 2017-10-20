@@ -6,6 +6,8 @@ permalink: /kb/153/Q153648/
 
 ## Q153648: Cannot Delete Secondary Site After Installing Admin Tools
 
+{% raw %}
+
 	Article: Q153648
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -67,3 +69,5 @@ permalink: /kb/153/Q153648/
 	
 	=============================================================================
 	
+
+{% endraw %}

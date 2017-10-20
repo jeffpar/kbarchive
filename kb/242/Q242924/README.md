@@ -6,6 +6,8 @@ permalink: /kb/242/Q242924/
 
 ## Q242924: SMS: Client Install Problems Using the SMS_LOCAL_DIR Variable
 
+{% raw %}
+
 	Article: Q242924
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -77,3 +79,5 @@ permalink: /kb/242/Q242924/
 	
 	=============================================================================
 	
+
+{% endraw %}

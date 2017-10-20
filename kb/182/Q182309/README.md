@@ -6,6 +6,8 @@ permalink: /kb/182/Q182309/
 
 ## Q182309: How to Use the Microsoft Mail for PC Networks Serializer
 
+{% raw %}
+
 	Article: Q182309
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -115,3 +117,5 @@ permalink: /kb/182/Q182309/
 	
 	=============================================================================
 	
+
+{% endraw %}

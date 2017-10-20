@@ -6,6 +6,8 @@ permalink: /kb/153/Q153778/
 
 ## Q153778: Close Combat: Unit Status Messages Out of Order
 
+{% raw %}
+
 	Article: Q153778
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -42,3 +44,5 @@ permalink: /kb/153/Q153778/
 	
 	=============================================================================
 	
+
+{% endraw %}

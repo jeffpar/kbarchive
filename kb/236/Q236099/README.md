@@ -6,6 +6,8 @@ permalink: /kb/236/Q236099/
 
 ## Q236099: FIX: C1001: Internal Compiler Error in Template.cpp, Line 6514
 
+{% raw %}
+
 	Article: Q236099
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -92,3 +94,5 @@ permalink: /kb/236/Q236099/
 	
 	=============================================================================
 	
+
+{% endraw %}

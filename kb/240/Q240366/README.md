@@ -6,6 +6,8 @@ permalink: /kb/240/Q240366/
 
 ## Q240366: NFL Fever: Unexpectedly Minimized When You Open Players Guide
 
+{% raw %}
+
 	Article: Q240366
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/240/Q240366/
 	
 	=============================================================================
 	
+
+{% endraw %}

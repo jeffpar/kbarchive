@@ -6,6 +6,8 @@ permalink: /kb/112/Q112333/
 
 ## Q112333: FIX: CTRL+Z Is Not End-of-File Marker in PowerStation
 
+{% raw %}
+
 	Article: Q112333
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -170,3 +172,5 @@ permalink: /kb/112/Q112333/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122984/
 
 ## Q122984: Golf Err Msg: Could Not Find Directory
 
+{% raw %}
+
 	Article: Q122984
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/122/Q122984/
 	
 	=============================================================================
 	
+
+{% endraw %}

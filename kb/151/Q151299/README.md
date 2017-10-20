@@ -6,6 +6,8 @@ permalink: /kb/151/Q151299/
 
 ## Q151299: Attachmate SDLC Card Not Respond to Connection Activation
 
+{% raw %}
+
 	Article: Q151299
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -118,3 +120,5 @@ permalink: /kb/151/Q151299/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132080/
 
 ## Q132080: HOWTO: Change the Color of an MFC Child Control Class
 
+{% raw %}
+
 	Article: Q132080
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,5.0,6.0
@@ -149,3 +151,5 @@ permalink: /kb/132/Q132080/
 	
 	=============================================================================
 	
+
+{% endraw %}

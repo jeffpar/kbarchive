@@ -6,6 +6,8 @@ permalink: /kb/288/Q288724/
 
 ## Q288724: BUG: ATL COM Event Handler Arguments Received in Reverse Order
 
+{% raw %}
+
 	Article: Q288724
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -345,3 +347,5 @@ permalink: /kb/288/Q288724/
 	
 	=============================================================================
 	
+
+{% endraw %}

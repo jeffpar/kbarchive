@@ -6,6 +6,8 @@ permalink: /kb/060/Q60649/
 
 ## Q60649: C 6.00 SAMPLES.DOC File
 
+{% raw %}
+
 	Article: Q60649
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -59,3 +61,5 @@ permalink: /kb/060/Q60649/
 	                      command. You can use it to replace a block of
 	                      text with the output of a user-specified
 	                      filter (such as the DOS SORT program).
+
+{% endraw %}

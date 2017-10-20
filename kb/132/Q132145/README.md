@@ -6,6 +6,8 @@ permalink: /kb/132/Q132145/
 
 ## Q132145: Dogs: Screen Split into Panels with Radius Video Card
 
+{% raw %}
+
 	Article: Q132145
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132145/
 	
 	=============================================================================
 	
+
+{% endraw %}

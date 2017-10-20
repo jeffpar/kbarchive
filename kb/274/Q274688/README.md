@@ -6,6 +6,8 @@ permalink: /kb/274/Q274688/
 
 ## Q274688: Metal Gear Solid: How to Troubleshoot Game Controller Issues
 
+{% raw %}
+
 	Article: Q274688
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/274/Q274688/
 	
 	=============================================================================
 	
+
+{% endraw %}

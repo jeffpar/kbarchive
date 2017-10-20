@@ -6,6 +6,8 @@ permalink: /kb/153/Q153981/
 
 ## Q153981: Error Message: Windows Cannot Find Autorun.exe
 
+{% raw %}
+
 	Article: Q153981
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95; winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/153/Q153981/
 	
 	=============================================================================
 	
+
+{% endraw %}

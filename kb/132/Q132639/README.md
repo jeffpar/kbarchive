@@ -6,6 +6,8 @@ permalink: /kb/132/Q132639/
 
 ## Q132639: Windows 95 Setup Error Message: Warning SU-0019
 
+{% raw %}
+
 	Article: Q132639
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/132/Q132639/
 	
 	=============================================================================
 	
+
+{% endraw %}

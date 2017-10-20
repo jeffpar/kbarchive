@@ -6,6 +6,8 @@ permalink: /kb/132/Q132631/
 
 ## Q132631: Setup Does Not Find CD-ROM Drive On HP Vectra Computer
 
+{% raw %}
+
 	Article: Q132631
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/132/Q132631/
 	
 	=============================================================================
 	
+
+{% endraw %}

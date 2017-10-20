@@ -6,6 +6,8 @@ permalink: /kb/073/Q73452/
 
 ## Q73452: HIMEM /int15:xxxx Switch Does Not Work with AutoCAD 10
 
+{% raw %}
+
 	Article: Q73452
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -40,3 +42,5 @@ permalink: /kb/073/Q73452/
 	
 	=============================================================================
 	
+
+{% endraw %}

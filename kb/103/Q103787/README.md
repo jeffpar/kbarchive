@@ -6,6 +6,8 @@ permalink: /kb/103/Q103787/
 
 ## Q103787: INFO: Compiler Looks for LINK.EXE in CL.EXE Directory First
 
+{% raw %}
+
 	Article: Q103787
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,2.2,4.0,4.1,5.0,6.0,7.0
@@ -43,3 +45,5 @@ permalink: /kb/103/Q103787/
 	
 	=============================================================================
 	
+
+{% endraw %}

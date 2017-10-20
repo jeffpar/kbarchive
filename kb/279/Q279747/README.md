@@ -6,6 +6,8 @@ permalink: /kb/279/Q279747/
 
 ## Q279747: CFS2: How to Import Combat Flight Simulator Scenery
 
+{% raw %}
+
 	Article: Q279747
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -154,3 +156,5 @@ permalink: /kb/279/Q279747/
 	
 	=============================================================================
 	
+
+{% endraw %}

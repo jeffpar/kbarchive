@@ -6,6 +6,8 @@ permalink: /kb/251/Q251318/
 
 ## Q251318: XCON: MTA Uses Node IP Address Instead of Cluster IP Address
 
+{% raw %}
+
 	Article: Q251318
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -82,3 +84,5 @@ permalink: /kb/251/Q251318/
 	
 	=============================================================================
 	
+
+{% endraw %}

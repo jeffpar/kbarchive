@@ -6,6 +6,8 @@ permalink: /kb/157/Q157272/
 
 ## Q157272: How to Set Up the Motorola BitSurfr for Single-Channel ISDN
 
+{% raw %}
+
 	Article: Q157272
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157272/
 	
 	=============================================================================
 	
+
+{% endraw %}

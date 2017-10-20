@@ -6,6 +6,8 @@ permalink: /kb/244/Q244837/
 
 ## Q244837: Function Exports Missing from Ws2_32.dll
 
+{% raw %}
+
 	Article: Q244837
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -79,3 +81,5 @@ permalink: /kb/244/Q244837/
 	
 	=============================================================================
 	
+
+{% endraw %}

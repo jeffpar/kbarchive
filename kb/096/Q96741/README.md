@@ -6,6 +6,8 @@ permalink: /kb/096/Q96741/
 
 ## Q96741: How Fault Tolerance Is Implemented
 
+{% raw %}
+
 	Article: Q96741
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/096/Q96741/
 	
 	=============================================================================
 	
+
+{% endraw %}

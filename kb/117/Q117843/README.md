@@ -6,6 +6,8 @@ permalink: /kb/117/Q117843/
 
 ## Q117843: PC WRmt: Not Designed to Support Extended Information
 
+{% raw %}
+
 	Article: Q117843
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -116,3 +118,5 @@ permalink: /kb/117/Q117843/
 	
 	=============================================================================
 	
+
+{% endraw %}

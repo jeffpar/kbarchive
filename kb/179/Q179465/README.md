@@ -6,6 +6,8 @@ permalink: /kb/179/Q179465/
 
 ## Q179465: Can't Access Windows 98 Starts Here Trial Version
 
+{% raw %}
+
 	Article: Q179465
 	Product(s): Microsoft Press
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/179/Q179465/
 	
 	=============================================================================
 	
+
+{% endraw %}

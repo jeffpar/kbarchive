@@ -6,6 +6,8 @@ permalink: /kb/246/Q246590/
 
 ## Q246590: COMTI Cannot Use All Available LU6.2 Sessions
 
+{% raw %}
+
 	Article: Q246590
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0 SP1,4.0,4.0 SP1,4.0 SP2
@@ -117,3 +119,5 @@ permalink: /kb/246/Q246590/
 	
 	=============================================================================
 	
+
+{% endraw %}

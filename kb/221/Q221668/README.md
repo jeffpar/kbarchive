@@ -6,6 +6,8 @@ permalink: /kb/221/Q221668/
 
 ## Q221668: FIX: Component Gallery Places Focus in Linked Item Folder
 
+{% raw %}
+
 	Article: Q221668
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/221/Q221668/
 	
 	=============================================================================
 	
+
+{% endraw %}

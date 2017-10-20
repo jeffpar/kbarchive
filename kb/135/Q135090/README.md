@@ -6,6 +6,8 @@ permalink: /kb/135/Q135090/
 
 ## Q135090: Shared Program Groups are Not Removed During PGC Deinstallation
 
+{% raw %}
+
 	Article: Q135090
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -51,3 +53,5 @@ permalink: /kb/135/Q135090/
 	
 	=============================================================================
 	
+
+{% endraw %}

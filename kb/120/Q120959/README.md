@@ -6,6 +6,8 @@ permalink: /kb/120/Q120959/
 
 ## Q120959: DOC: Documentation on fmod() Is Incorrect
 
+{% raw %}
+
 	Article: Q120959
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120959/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274543/
 
 ## Q274543: MSN Companion E-mail: Hotmail appears to be temporarily unavail
 
+{% raw %}
+
 	Article: Q274543
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -91,3 +93,5 @@ permalink: /kb/274/Q274543/
 	
 	=============================================================================
 	
+
+{% endraw %}

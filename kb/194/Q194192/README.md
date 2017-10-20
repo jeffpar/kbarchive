@@ -6,6 +6,8 @@ permalink: /kb/194/Q194192/
 
 ## Q194192: XADM: POP3 Client's Reply Message to Exchange User is NDRd
 
+{% raw %}
+
 	Article: Q194192
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -93,3 +95,5 @@ permalink: /kb/194/Q194192/
 	
 	=============================================================================
 	
+
+{% endraw %}

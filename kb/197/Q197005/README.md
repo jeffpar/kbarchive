@@ -6,6 +6,8 @@ permalink: /kb/197/Q197005/
 
 ## Q197005: Encarta 99 Standard Edition: Article Is Not Read Aloud
 
+{% raw %}
+
 	Article: Q197005
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/197/Q197005/
 	
 	=============================================================================
 	
+
+{% endraw %}

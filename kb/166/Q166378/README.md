@@ -6,6 +6,8 @@ permalink: /kb/166/Q166378/
 
 ## Q166378: HOWTO: Simulate an Incremental Search from a Text Box
 
+{% raw %}
+
 	Article: Q166378
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -297,3 +299,5 @@ permalink: /kb/166/Q166378/
 	
 	=============================================================================
 	
+
+{% endraw %}

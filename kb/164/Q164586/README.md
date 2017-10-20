@@ -6,6 +6,8 @@ permalink: /kb/164/Q164586/
 
 ## Q164586: INF: How to Use OLE DB Sample Text Provider in ADO
 
+{% raw %}
+
 	Article: Q164586
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.1
@@ -117,3 +119,5 @@ permalink: /kb/164/Q164586/
 	
 	=============================================================================
 	
+
+{% endraw %}

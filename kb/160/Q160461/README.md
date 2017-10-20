@@ -6,6 +6,8 @@ permalink: /kb/160/Q160461/
 
 ## Q160461: SMS: Inventory Does Not Report the CPU Speed on Windows NT
 
+{% raw %}
+
 	Article: Q160461
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2
@@ -73,3 +75,5 @@ permalink: /kb/160/Q160461/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138874/
 
 ## Q138874: FIX: Visual FoxPro Apps Branded w/ &quot;Engineering Prototype&quot;
 
+{% raw %}
+
 	Article: Q138874
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/138/Q138874/
 	
 	=============================================================================
 	
+
+{% endraw %}

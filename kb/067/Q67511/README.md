@@ -6,6 +6,8 @@ permalink: /kb/067/Q67511/
 
 ## Q67511: /Ta Switch Is Not Used By QuickC with QuickAssembler
 
+{% raw %}
+
 	Article: Q67511
 	Product(s): See article
 	Version(s): 2.00 2.01 2.50 2.51
@@ -34,3 +36,5 @@ permalink: /kb/067/Q67511/
 	Microsoft has confirmed this to be a problem in QuickC with
 	QuickAssembler versions 2.01 and 2.51. We are researching this problem
 	and will post new information here as it becomes available.
+
+{% endraw %}

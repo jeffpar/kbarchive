@@ -6,6 +6,8 @@ permalink: /kb/084/Q84148/
 
 ## Q84148: USER.EXE in System Directory Has Date of Installation
 
+{% raw %}
+
 	Article: Q84148
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/084/Q84148/
 	
 	=============================================================================
 	
+
+{% endraw %}

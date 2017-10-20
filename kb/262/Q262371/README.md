@@ -6,6 +6,8 @@ permalink: /kb/262/Q262371/
 
 ## Q262371: XADM: 2140 and 1002 w. Err. -1008 Starting Directory Service
 
+{% raw %}
+
 	Article: Q262371
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/262/Q262371/
 	
 	=============================================================================
 	
+
+{% endraw %}

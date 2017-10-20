@@ -6,6 +6,8 @@ permalink: /kb/095/Q95347/
 
 ## Q95347: Problems with Microsolutions Compaticard Controllers
 
+{% raw %}
+
 	Article: Q95347
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -89,3 +91,5 @@ permalink: /kb/095/Q95347/
 	
 	=============================================================================
 	
+
+{% endraw %}

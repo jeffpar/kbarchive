@@ -6,6 +6,8 @@ permalink: /kb/150/Q150845/
 
 ## Q150845: Windows NT 3.51 Setup on AST Manhattan w/Sanyo CD-ROM
 
+{% raw %}
+
 	Article: Q150845
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -61,3 +63,5 @@ permalink: /kb/150/Q150845/
 	
 	=============================================================================
 	
+
+{% endraw %}

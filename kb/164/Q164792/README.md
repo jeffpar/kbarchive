@@ -6,6 +6,8 @@ permalink: /kb/164/Q164792/
 
 ## Q164792: CPU Use at 100 Percent with SNA Server 3.0 Print Server
 
+{% raw %}
+
 	Article: Q164792
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0; winnt:3.51,4.0
@@ -87,3 +89,5 @@ permalink: /kb/164/Q164792/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179496/
 
 ## Q179496: FIX: Class Builder Reports Property Procedures as Variants
 
+{% raw %}
+
 	Article: Q179496
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/179/Q179496/
 	
 	=============================================================================
 	
+
+{% endraw %}

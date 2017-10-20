@@ -6,6 +6,8 @@ permalink: /kb/078/Q78147/
 
 ## Q78147: Starting a Program Requiring LOADFIX.COM from the PIF Editor
 
+{% raw %}
+
 	Article: Q78147
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/078/Q78147/
 	
 	=============================================================================
 	
+
+{% endraw %}

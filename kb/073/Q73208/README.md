@@ -6,6 +6,8 @@ permalink: /kb/073/Q73208/
 
 ## Q73208: MS-DOS 4.0 and Later Netware Redirector Switches Need &quot;/&quot;
 
+{% raw %}
+
 	Article: Q73208
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/073/Q73208/
 	
 	=============================================================================
 	
+
+{% endraw %}

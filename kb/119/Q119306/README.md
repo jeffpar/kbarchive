@@ -6,6 +6,8 @@ permalink: /kb/119/Q119306/
 
 ## Q119306: PROFS: Host Access INSTALL Failure with CLRSCRN Module
 
+{% raw %}
+
 	Article: Q119306
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -51,3 +53,5 @@ permalink: /kb/119/Q119306/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152936/
 
 ## Q152936: XADM: Admin Doesn't Browse for Exchange Server Computers
 
+{% raw %}
+
 	Article: Q152936
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -122,3 +124,5 @@ permalink: /kb/152/Q152936/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/308/Q308534/
 
 ## Q308534: Streets and Trips 2002: Err Msg When Using Find Feature
 
+{% raw %}
+
 	Article: Q308534
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -149,3 +151,5 @@ permalink: /kb/308/Q308534/
 	
 	=============================================================================
 	
+
+{% endraw %}

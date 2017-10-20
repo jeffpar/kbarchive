@@ -6,6 +6,8 @@ permalink: /kb/303/Q303909/
 
 ## Q303909: MechCommander 2.0: Known Issues
 
+{% raw %}
+
 	Article: Q303909
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -166,3 +168,5 @@ permalink: /kb/303/Q303909/
 	
 	=============================================================================
 	
+
+{% endraw %}

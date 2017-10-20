@@ -6,6 +6,8 @@ permalink: /kb/216/Q216747/
 
 ## Q216747: FIX: Incorrect Code Generated With /Og and /G6
 
+{% raw %}
+
 	Article: Q216747
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -70,3 +72,5 @@ permalink: /kb/216/Q216747/
 	
 	=============================================================================
 	
+
+{% endraw %}

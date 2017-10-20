@@ -6,6 +6,8 @@ permalink: /kb/108/Q108902/
 
 ## Q108902: Err Msg: Invalid Codepage....in PORTUAS
 
+{% raw %}
+
 	Article: Q108902
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -92,3 +94,5 @@ permalink: /kb/108/Q108902/
 	
 	=============================================================================
 	
+
+{% endraw %}

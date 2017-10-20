@@ -6,6 +6,8 @@ permalink: /kb/191/Q191639/
 
 ## Q191639: PRB: Report Command Used In Visual FoxPro COM DLL Causes Error
 
+{% raw %}
+
 	Article: Q191639
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -97,3 +99,5 @@ permalink: /kb/191/Q191639/
 	
 	=============================================================================
 	
+
+{% endraw %}

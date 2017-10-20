@@ -6,6 +6,8 @@ permalink: /kb/170/Q170479/
 
 ## Q170479: XCON: GMT Offset Not Calculated By Some Messaging Systems
 
+{% raw %}
+
 	Article: Q170479
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/170/Q170479/
 	
 	=============================================================================
 	
+
+{% endraw %}

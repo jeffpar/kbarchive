@@ -6,6 +6,8 @@ permalink: /kb/163/Q163420/
 
 ## Q163420: FIX: Running JOIN on Three or More Tables is Slow
 
+{% raw %}
+
 	Article: Q163420
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -152,3 +154,5 @@ permalink: /kb/163/Q163420/
 	
 	=============================================================================
 	
+
+{% endraw %}

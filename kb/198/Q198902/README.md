@@ -6,6 +6,8 @@ permalink: /kb/198/Q198902/
 
 ## Q198902: XFOR: How to Run the GroupWise Router in Console Mode
 
+{% raw %}
+
 	Article: Q198902
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -54,3 +56,5 @@ permalink: /kb/198/Q198902/
 	
 	=============================================================================
 	
+
+{% endraw %}

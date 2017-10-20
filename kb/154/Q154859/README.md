@@ -6,6 +6,8 @@ permalink: /kb/154/Q154859/
 
 ## Q154859: The Number of Managed NetWare Servers Should Not Exceed 32
 
+{% raw %}
+
 	Article: Q154859
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/154/Q154859/
 	
 	=============================================================================
 	
+
+{% endraw %}

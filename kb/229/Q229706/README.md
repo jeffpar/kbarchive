@@ -6,6 +6,8 @@ permalink: /kb/229/Q229706/
 
 ## Q229706: Managing a Microsoft Windows NT Network Corrections
 
+{% raw %}
+
 	Article: Q229706
 	Product(s): Microsoft Press
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/229/Q229706/
 	
 	=============================================================================
 	
+
+{% endraw %}

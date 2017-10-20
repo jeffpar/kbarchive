@@ -6,6 +6,8 @@ permalink: /kb/090/Q90285/
 
 ## Q90285: User Interface Differences Between WFWG and Windows 3.1
 
+{% raw %}
+
 	Article: Q90285
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1
@@ -161,3 +163,5 @@ permalink: /kb/090/Q90285/
 	
 	=============================================================================
 	
+
+{% endraw %}

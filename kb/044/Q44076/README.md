@@ -6,6 +6,8 @@ permalink: /kb/044/Q44076/
 
 ## Q44076: Using Presentation Graphics/Fonts with C 5.00 and C 5.10
 
+{% raw %}
+
 	Article: Q44076
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -32,3 +34,5 @@ permalink: /kb/044/Q44076/
 	functions; they are the names of support routines and new variables
 	that do not exist in the default library or GRAPHICS.LIB from the C
 	5.10 package.
+
+{% endraw %}

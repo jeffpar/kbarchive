@@ -6,6 +6,8 @@ permalink: /kb/240/Q240052/
 
 ## Q240052: HOWTO: Specifying a VSS Database Using the Command Line
 
+{% raw %}
+
 	Article: Q240052
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -67,3 +69,5 @@ permalink: /kb/240/Q240052/
 	
 	=============================================================================
 	
+
+{% endraw %}

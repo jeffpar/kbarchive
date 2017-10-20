@@ -6,6 +6,8 @@ permalink: /kb/176/Q176172/
 
 ## Q176172: XADM: Public Folder Does Not Appear in Instances Tab
 
+{% raw %}
+
 	Article: Q176172
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/176/Q176172/
 	
 	=============================================================================
 	
+
+{% endraw %}

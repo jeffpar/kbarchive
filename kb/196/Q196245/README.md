@@ -6,6 +6,8 @@ permalink: /kb/196/Q196245/
 
 ## Q196245: Snabase Displays Garbage String for Backupsponsor Server Name
 
+{% raw %}
+
 	Article: Q196245
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -56,3 +58,5 @@ permalink: /kb/196/Q196245/
 	
 	=============================================================================
 	
+
+{% endraw %}

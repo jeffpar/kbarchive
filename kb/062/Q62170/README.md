@@ -6,6 +6,8 @@ permalink: /kb/062/Q62170/
 
 ## Q62170: PRB: Modifying TOOLS.INI May Have No Effect on PWB Environment
 
+{% raw %}
+
 	Article: Q62170
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -62,3 +64,5 @@ permalink: /kb/062/Q62170/
 	
 	=============================================================================
 	
+
+{% endraw %}

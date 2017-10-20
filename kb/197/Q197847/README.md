@@ -6,6 +6,8 @@ permalink: /kb/197/Q197847/
 
 ## Q197847: Application Cannot Be Started After Installing Service Pack 4
 
+{% raw %}
+
 	Article: Q197847
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/197/Q197847/
 	
 	=============================================================================
 	
+
+{% endraw %}

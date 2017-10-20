@@ -6,6 +6,8 @@ permalink: /kb/197/Q197852/
 
 ## Q197852: Troubleshooting Directory Service Manager for NetWare
 
+{% raw %}
+
 	Article: Q197852
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -130,3 +132,5 @@ permalink: /kb/197/Q197852/
 	
 	=============================================================================
 	
+
+{% endraw %}

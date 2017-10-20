@@ -6,6 +6,8 @@ permalink: /kb/115/Q115820/
 
 ## Q115820: CD Sampler: Long Pause in Narration of Money Demonstration
 
+{% raw %}
+
 	Article: Q115820
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Spring 1994
@@ -39,3 +41,5 @@ permalink: /kb/115/Q115820/
 	
 	=============================================================================
 	
+
+{% endraw %}

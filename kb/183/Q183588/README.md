@@ -6,6 +6,8 @@ permalink: /kb/183/Q183588/
 
 ## Q183588: XFOR: cc:Mail User Receives NDR When replying to POP3 Sender
 
+{% raw %}
+
 	Article: Q183588
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/183/Q183588/
 	
 	=============================================================================
 	
+
+{% endraw %}

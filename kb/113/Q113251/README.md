@@ -6,6 +6,8 @@ permalink: /kb/113/Q113251/
 
 ## Q113251: MULTICON Demonstrates Dynamic Icons
 
+{% raw %}
+
 	Article: Q113251
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1
@@ -105,3 +107,5 @@ permalink: /kb/113/Q113251/
 	
 	=============================================================================
 	
+
+{% endraw %}

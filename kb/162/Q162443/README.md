@@ -6,6 +6,8 @@ permalink: /kb/162/Q162443/
 
 ## Q162443: Msbatch.inf Parameters: Setting Color Depth and Resolution
 
+{% raw %}
+
 	Article: Q162443
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/162/Q162443/
 	
 	=============================================================================
 	
+
+{% endraw %}

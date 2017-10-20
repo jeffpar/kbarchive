@@ -6,6 +6,8 @@ permalink: /kb/273/Q273347/
 
 ## Q273347: Dirsync Server and Remote Requestor Objects Not Removed
 
+{% raw %}
+
 	Article: Q273347
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/273/Q273347/
 	
 	=============================================================================
 	
+
+{% endraw %}

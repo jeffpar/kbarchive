@@ -6,6 +6,8 @@ permalink: /kb/234/Q234225/
 
 ## Q234225: HOWTO: Instantiate Multiple Copies of HTML Help in Visual FoxPro
 
+{% raw %}
+
 	Article: Q234225
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -68,3 +70,5 @@ permalink: /kb/234/Q234225/
 	
 	=============================================================================
 	
+
+{% endraw %}

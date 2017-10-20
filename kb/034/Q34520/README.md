@@ -6,6 +6,8 @@ permalink: /kb/034/Q34520/
 
 ## Q34520: Library Reference Defines Unused result Pointer
 
+{% raw %}
+
 	Article: Q34520
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -21,3 +23,5 @@ permalink: /kb/034/Q34520/
 	char **result;
 	
 	The result pointer is never used in the program.
+
+{% endraw %}

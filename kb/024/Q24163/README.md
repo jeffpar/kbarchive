@@ -6,6 +6,8 @@ permalink: /kb/024/Q24163/
 
 ## Q24163: Earlier Versions with Mouse Menu Software
 
+{% raw %}
+
 	Article: Q24163
 	Product(s): See article
 	Version(s): 4.x 5.x 6.00
@@ -23,3 +25,5 @@ permalink: /kb/024/Q24163/
 	have a version prior to Version 5.03, we recommend that you obtain the
 	"Microsoft Mouse Programmer's Reference Guide" if you are having any
 	problems with MENU.COM or MAKEMENU.EXE.
+
+{% endraw %}

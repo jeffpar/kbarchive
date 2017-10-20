@@ -6,6 +6,8 @@ permalink: /kb/152/Q152372/
 
 ## Q152372: BUG: No Help with Class Info Dialog from ? Menu Pad
 
+{% raw %}
+
 	Article: Q152372
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -82,3 +84,5 @@ permalink: /kb/152/Q152372/
 	
 	=============================================================================
 	
+
+{% endraw %}

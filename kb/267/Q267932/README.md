@@ -6,6 +6,8 @@ permalink: /kb/267/Q267932/
 
 ## Q267932: Secure Communication Shows Key Manager Button, But No Edit
 
+{% raw %}
+
 	Article: Q267932
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -132,3 +134,5 @@ permalink: /kb/267/Q267932/
 	
 	=============================================================================
 	
+
+{% endraw %}

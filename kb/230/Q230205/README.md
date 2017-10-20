@@ -6,6 +6,8 @@ permalink: /kb/230/Q230205/
 
 ## Q230205: Out of Environment Space Error Message in MS-DOS Programs
 
+{% raw %}
+
 	Article: Q230205
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1,2.5
@@ -98,3 +100,5 @@ permalink: /kb/230/Q230205/
 	
 	=============================================================================
 	
+
+{% endraw %}

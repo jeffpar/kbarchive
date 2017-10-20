@@ -6,6 +6,8 @@ permalink: /kb/246/Q246500/
 
 ## Q246500: XCLN: Plain Text Message Prints Only in Proportional Font
 
+{% raw %}
+
 	Article: Q246500
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -53,3 +55,5 @@ permalink: /kb/246/Q246500/
 	
 	=============================================================================
 	
+
+{% endraw %}

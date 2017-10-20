@@ -6,6 +6,8 @@ permalink: /kb/182/Q182193/
 
 ## Q182193: PRB: Err: Cluster Resource Dependency Can Not Be Found
 
+{% raw %}
+
 	Article: Q182193
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/182/Q182193/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235680/
 
 ## Q235680: FIX: Msdev.exe Crash in Devshl.dll During Command-Line Build
 
+{% raw %}
+
 	Article: Q235680
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -106,3 +108,5 @@ permalink: /kb/235/Q235680/
 	
 	=============================================================================
 	
+
+{% endraw %}

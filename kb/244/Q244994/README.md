@@ -6,6 +6,8 @@ permalink: /kb/244/Q244994/
 
 ## Q244994: Unattended Installation of Windows NT Does Not Autodetect 3C905.
 
+{% raw %}
+
 	Article: Q244994
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -162,3 +164,5 @@ permalink: /kb/244/Q244994/
 	
 	=============================================================================
 	
+
+{% endraw %}

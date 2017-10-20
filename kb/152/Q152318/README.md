@@ -6,6 +6,8 @@ permalink: /kb/152/Q152318/
 
 ## Q152318: FIX: DAO SDK's CdbRecordset::Requery() May Fail
 
+{% raw %}
+
 	Article: Q152318
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1
@@ -89,3 +91,5 @@ permalink: /kb/152/Q152318/
 	
 	=============================================================================
 	
+
+{% endraw %}

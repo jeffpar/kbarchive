@@ -6,6 +6,8 @@ permalink: /kb/266/Q266627/
 
 ## Q266627: Copying and Moving Files and Folders
 
+{% raw %}
+
 	Article: Q266627
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51,4.0
@@ -86,3 +88,5 @@ permalink: /kb/266/Q266627/
 	
 	=============================================================================
 	
+
+{% endraw %}

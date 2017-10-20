@@ -6,6 +6,8 @@ permalink: /kb/148/Q148880/
 
 ## Q148880: BUG: Breakpoint Occurs When You Insert Clipboard Assistant
 
+{% raw %}
+
 	Article: Q148880
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -76,3 +78,5 @@ permalink: /kb/148/Q148880/
 	
 	=============================================================================
 	
+
+{% endraw %}

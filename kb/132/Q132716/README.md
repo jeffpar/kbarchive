@@ -6,6 +6,8 @@ permalink: /kb/132/Q132716/
 
 ## Q132716: Dogs: Alt+Tab Key Combination Disabled in Canine Consultant
 
+{% raw %}
+
 	Article: Q132716
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132716/
 	
 	=============================================================================
 	
+
+{% endraw %}

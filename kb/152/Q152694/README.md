@@ -6,6 +6,8 @@ permalink: /kb/152/Q152694/
 
 ## Q152694: How To Add BMPs to Picture Properties in OutLine Control
 
+{% raw %}
+
 	Article: Q152694
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -78,3 +80,5 @@ permalink: /kb/152/Q152694/
 	
 	=============================================================================
 	
+
+{% endraw %}

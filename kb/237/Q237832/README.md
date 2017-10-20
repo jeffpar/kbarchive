@@ -6,6 +6,8 @@ permalink: /kb/237/Q237832/
 
 ## Q237832: Asheron's Call: Objects in Game Appear White
 
+{% raw %}
+
 	Article: Q237832
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -125,3 +127,5 @@ permalink: /kb/237/Q237832/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186486/
 
 ## Q186486: Terminal Server Usage of Net Name/Net Send
 
+{% raw %}
+
 	Article: Q186486
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -52,3 +54,5 @@ permalink: /kb/186/Q186486/
 	
 	=============================================================================
 	
+
+{% endraw %}

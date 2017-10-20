@@ -6,6 +6,8 @@ permalink: /kb/061/Q61205/
 
 ## Q61205: C 6.00 README: Signal() Function Limited in Multithread Usage
 
+{% raw %}
+
 	Article: Q61205
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -24,3 +26,5 @@ permalink: /kb/061/Q61205/
 	signal(SIGFPE,...) is supported in a multithreaded environment. To
 	trap error or interrupt conditions in this case, use direct calls to
 	DOSSETSIGHANDLER or DOSSETVEC.
+
+{% endraw %}

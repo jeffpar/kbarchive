@@ -6,6 +6,8 @@ permalink: /kb/090/Q90216/
 
 ## Q90216: NE 1000 and NE 2000 Don't Work on IRQ 5 with I/O at 300h
 
+{% raw %}
+
 	Article: Q90216
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/090/Q90216/
 	
 	=============================================================================
 	
+
+{% endraw %}

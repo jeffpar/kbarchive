@@ -6,6 +6,8 @@ permalink: /kb/145/Q145836/
 
 ## Q145836: Fatal Exception in VMM(06) Caused by Damaged Registry
 
+{% raw %}
+
 	Article: Q145836
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/145/Q145836/
 	
 	=============================================================================
 	
+
+{% endraw %}

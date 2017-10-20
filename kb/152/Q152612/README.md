@@ -6,6 +6,8 @@ permalink: /kb/152/Q152612/
 
 ## Q152612: Err Msg: Drvspace 484... Incompatible Compression Driver
 
+{% raw %}
+
 	Article: Q152612
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -83,3 +85,5 @@ permalink: /kb/152/Q152612/
 	
 	=============================================================================
 	
+
+{% endraw %}

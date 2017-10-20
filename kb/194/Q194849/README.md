@@ -6,6 +6,8 @@ permalink: /kb/194/Q194849/
 
 ## Q194849: PC MMTA: External Fails when Run as an Idle Process of Dispatch
 
+{% raw %}
+
 	Article: Q194849
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -84,3 +86,5 @@ permalink: /kb/194/Q194849/
 	
 	=============================================================================
 	
+
+{% endraw %}

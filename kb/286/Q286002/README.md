@@ -6,6 +6,8 @@ permalink: /kb/286/Q286002/
 
 ## Q286002: Combat Flight Simulator 2: How to Print a Flight Checklist
 
+{% raw %}
+
 	Article: Q286002
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/286/Q286002/
 	
 	=============================================================================
 	
+
+{% endraw %}

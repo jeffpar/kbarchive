@@ -6,6 +6,8 @@ permalink: /kb/239/Q239838/
 
 ## Q239838: Err Msg: This Drive Cannot Be Checked with this Version of...
 
+{% raw %}
+
 	Article: Q239838
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51,4.0
@@ -81,3 +83,5 @@ permalink: /kb/239/Q239838/
 	
 	=============================================================================
 	
+
+{% endraw %}

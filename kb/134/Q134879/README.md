@@ -6,6 +6,8 @@ permalink: /kb/134/Q134879/
 
 ## Q134879: Objects Are Refreshed in the Order They Were Added to the Form
 
+{% raw %}
+
 	Article: Q134879
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/134/Q134879/
 	
 	=============================================================================
 	
+
+{% endraw %}

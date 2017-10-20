@@ -6,6 +6,8 @@ permalink: /kb/192/Q192911/
 
 ## Q192911: XFOR: Dirsync Between Notes and OV/VM over Exchange Fails
 
+{% raw %}
+
 	Article: Q192911
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -84,3 +86,5 @@ permalink: /kb/192/Q192911/
 	
 	=============================================================================
 	
+
+{% endraw %}

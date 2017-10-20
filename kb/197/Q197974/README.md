@@ -6,6 +6,8 @@ permalink: /kb/197/Q197974/
 
 ## Q197974: XCLN: Sending Encrypted Mail to a User in Another Organization
 
+{% raw %}
+
 	Article: Q197974
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -83,3 +85,5 @@ permalink: /kb/197/Q197974/
 	
 	=============================================================================
 	
+
+{% endraw %}

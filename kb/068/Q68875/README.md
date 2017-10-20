@@ -6,6 +6,8 @@ permalink: /kb/068/Q68875/
 
 ## Q68875: Error L2029 May Be Caused by Improperly Renaming Libraries
 
+{% raw %}
+
 	Article: Q68875
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -47,3 +49,5 @@ permalink: /kb/068/Q68875/
 	
 	Note that this problem may also occur with QuickC versions 2.50 and
 	2.51.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85356/
 
 ## Q85356: FAX: Special Formats for Profile Parameters
 
+{% raw %}
+
 	Article: Q85356
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/085/Q85356/
 	
 	=============================================================================
 	
+
+{% endraw %}

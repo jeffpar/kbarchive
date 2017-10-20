@@ -6,6 +6,8 @@ permalink: /kb/082/Q82752/
 
 ## Q82752: Windows 3.1 and Soft Font Limitations
 
+{% raw %}
+
 	Article: Q82752
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/082/Q82752/
 	
 	=============================================================================
 	
+
+{% endraw %}

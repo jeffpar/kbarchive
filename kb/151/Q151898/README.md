@@ -6,6 +6,8 @@ permalink: /kb/151/Q151898/
 
 ## Q151898: BUG: Include Directories Cannot End with a Backslash
 
+{% raw %}
+
 	Article: Q151898
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,4.2b,5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/151/Q151898/
 	
 	=============================================================================
 	
+
+{% endraw %}

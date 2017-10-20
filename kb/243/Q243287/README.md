@@ -6,6 +6,8 @@ permalink: /kb/243/Q243287/
 
 ## Q243287: Error Message: EBUxxx Caused a Divide Error in Module EBUxxx.exe
 
+{% raw %}
+
 	Article: Q243287
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -323,3 +325,5 @@ permalink: /kb/243/Q243287/
 	
 	=============================================================================
 	
+
+{% endraw %}

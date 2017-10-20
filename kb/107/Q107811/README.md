@@ -6,6 +6,8 @@ permalink: /kb/107/Q107811/
 
 ## Q107811: Several WFW&lt;nn&gt; Files in Your Windows Directory
 
+{% raw %}
+
 	Article: Q107811
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -38,3 +40,5 @@ permalink: /kb/107/Q107811/
 	
 	=============================================================================
 	
+
+{% endraw %}

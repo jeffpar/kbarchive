@@ -6,6 +6,8 @@ permalink: /kb/194/Q194889/
 
 ## Q194889: Sgcinst.exe is Available for Download
 
+{% raw %}
+
 	Article: Q194889
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0
@@ -107,3 +109,5 @@ permalink: /kb/194/Q194889/
 	
 	=============================================================================
 	
+
+{% endraw %}

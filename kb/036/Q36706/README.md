@@ -6,6 +6,8 @@ permalink: /kb/036/Q36706/
 
 ## Q36706: Warning C4017 Cast of int Expression to far Pointer
 
+{% raw %}
+
 	Article: Q36706
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -50,3 +52,5 @@ permalink: /kb/036/Q36706/
 	returns an integer. If the warning level is set at 2, this code would
 	receive the warning C4016 "foo : no function return type" (if the
 	warning level were set to 1).
+
+{% endraw %}

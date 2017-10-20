@@ -6,6 +6,8 @@ permalink: /kb/194/Q194905/
 
 ## Q194905: XFOR: CCMC: Attachments from cc:Mail Version 7 Appear Corrupt
 
+{% raw %}
+
 	Article: Q194905
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/194/Q194905/
 	
 	=============================================================================
 	
+
+{% endraw %}

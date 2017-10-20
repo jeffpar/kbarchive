@@ -6,6 +6,8 @@ permalink: /kb/099/Q99597/
 
 ## Q99597: FoxBASE+/Mac Err Msg: Cannot Write to a Read-Only File
 
+{% raw %}
+
 	Article: Q99597
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -53,3 +55,5 @@ permalink: /kb/099/Q99597/
 	
 	=============================================================================
 	
+
+{% endraw %}

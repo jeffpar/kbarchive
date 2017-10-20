@@ -6,6 +6,8 @@ permalink: /kb/307/Q307026/
 
 ## Q307026: SMS: Duplicate Resources Appear in Collections
 
+{% raw %}
+
 	Article: Q307026
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -141,3 +143,5 @@ permalink: /kb/307/Q307026/
 	
 	=============================================================================
 	
+
+{% endraw %}

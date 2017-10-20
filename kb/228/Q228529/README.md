@@ -6,6 +6,8 @@ permalink: /kb/228/Q228529/
 
 ## Q228529: Baseball 2000: Cannot Use Directional Pad to Control Game Action
 
+{% raw %}
+
 	Article: Q228529
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/228/Q228529/
 	
 	=============================================================================
 	
+
+{% endraw %}

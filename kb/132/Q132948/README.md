@@ -6,6 +6,8 @@ permalink: /kb/132/Q132948/
 
 ## Q132948: HOWTO: Integrate Custom DDX /DDV in 32-bit ClassWizard Interface
 
+{% raw %}
+
 	Article: Q132948
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,5.0,6.0
@@ -76,3 +78,5 @@ permalink: /kb/132/Q132948/
 	
 	=============================================================================
 	
+
+{% endraw %}

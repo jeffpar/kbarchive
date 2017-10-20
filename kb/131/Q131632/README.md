@@ -6,6 +6,8 @@ permalink: /kb/131/Q131632/
 
 ## Q131632: How to Play Audio CDs from Visual FoxPro
 
+{% raw %}
+
 	Article: Q131632
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -77,3 +79,5 @@ permalink: /kb/131/Q131632/
 	
 	=============================================================================
 	
+
+{% endraw %}

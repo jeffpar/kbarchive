@@ -6,6 +6,8 @@ permalink: /kb/172/Q172381/
 
 ## Q172381: HOWTO: Respond to the Auto-commit Feature of a VB Data Control
 
+{% raw %}
+
 	Article: Q172381
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -157,3 +159,5 @@ permalink: /kb/172/Q172381/
 	
 	=============================================================================
 	
+
+{% endraw %}

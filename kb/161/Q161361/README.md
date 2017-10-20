@@ -6,6 +6,8 @@ permalink: /kb/161/Q161361/
 
 ## Q161361: How to Obtain Updated Printer Drivers for Windows NT
 
+{% raw %}
+
 	Article: Q161361
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/161/Q161361/
 	
 	=============================================================================
 	
+
+{% endraw %}

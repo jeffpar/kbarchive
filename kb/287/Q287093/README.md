@@ -6,6 +6,8 @@ permalink: /kb/287/Q287093/
 
 ## Q287093: INFO: DB2OLEDB Supports UPDATE/DELETE from SQL Linked Server
 
+{% raw %}
+
 	Article: Q287093
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP4,7.0 Service Pack 2,7.0 Service Pack 3
@@ -93,3 +95,5 @@ permalink: /kb/287/Q287093/
 	
 	=============================================================================
 	
+
+{% endraw %}

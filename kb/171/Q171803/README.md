@@ -6,6 +6,8 @@ permalink: /kb/171/Q171803/
 
 ## Q171803: FIX: Problems Retrieving VB 5.0 Projects from Visual SourceSafe
 
+{% raw %}
+
 	Article: Q171803
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/171/Q171803/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155133/
 
 ## Q155133: PRB: ClassWizard Doesn't Bring in Proper Header File
 
+{% raw %}
+
 	Article: Q155133
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/155/Q155133/
 	
 	=============================================================================
 	
+
+{% endraw %}

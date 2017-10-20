@@ -6,6 +6,8 @@ permalink: /kb/195/Q195303/
 
 ## Q195303: XCLN: No Long Filename Support for Finnish Exchange 5.0 Client
 
+{% raw %}
+
 	Article: Q195303
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -102,3 +104,5 @@ permalink: /kb/195/Q195303/
 	
 	=============================================================================
 	
+
+{% endraw %}

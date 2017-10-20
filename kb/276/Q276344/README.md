@@ -6,6 +6,8 @@ permalink: /kb/276/Q276344/
 
 ## Q276344: Classic Board Games: Game Selection Screen Distorted
 
+{% raw %}
+
 	Article: Q276344
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -43,3 +45,5 @@ permalink: /kb/276/Q276344/
 	
 	=============================================================================
 	
+
+{% endraw %}

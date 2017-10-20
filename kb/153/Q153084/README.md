@@ -6,6 +6,8 @@ permalink: /kb/153/Q153084/
 
 ## Q153084: Encarta World Atlas: Invalid Page Fault in Kernel32.dll
 
+{% raw %}
+
 	Article: Q153084
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153084/
 	
 	=============================================================================
 	
+
+{% endraw %}

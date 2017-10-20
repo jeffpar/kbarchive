@@ -6,6 +6,8 @@ permalink: /kb/039/Q39377/
 
 ## Q39377: Amount of RAM Required by QUICKBASIC Applications
 
+{% raw %}
+
 	Article: Q39377
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -31,3 +33,5 @@ permalink: /kb/039/Q39377/
 	and 6.00B can be used to determine the minimum load size of an .EXE
 	file. The utility is also shipped with Microsoft C, Microsoft Fortran,
 	Microsoft Pascal and Microsoft Macro Assembler.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68134/
 
 ## Q68134: IOLINE Plotter: No Windows 3.0 Compatible Driver
 
+{% raw %}
+
 	Article: Q68134
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/068/Q68134/
 	
 	=============================================================================
 	
+
+{% endraw %}

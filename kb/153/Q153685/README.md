@@ -6,6 +6,8 @@ permalink: /kb/153/Q153685/
 
 ## Q153685: FP: FrontPage Appears to Hang When Using Dial-Up-Adapter
 
+{% raw %}
+
 	Article: Q153685
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.1
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153685/
 	
 	=============================================================================
 	
+
+{% endraw %}

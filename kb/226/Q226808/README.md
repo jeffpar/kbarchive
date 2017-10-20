@@ -6,6 +6,8 @@ permalink: /kb/226/Q226808/
 
 ## Q226808: SMS: Remote Control of Client in MS-DOS Full Screen Mode Fails
 
+{% raw %}
+
 	Article: Q226808
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -49,3 +51,5 @@ permalink: /kb/226/Q226808/
 	
 	=============================================================================
 	
+
+{% endraw %}

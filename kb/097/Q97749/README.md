@@ -6,6 +6,8 @@ permalink: /kb/097/Q97749/
 
 ## Q97749: Adjusting PRINTSTA Parameters to Enhance Printer Speed
 
+{% raw %}
+
 	Article: Q97749
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/097/Q97749/
 	
 	=============================================================================
 	
+
+{% endraw %}

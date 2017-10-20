@@ -6,6 +6,8 @@ permalink: /kb/039/Q39368/
 
 ## Q39368: QuickBASIC Program to Rotate Characters and Graphic Images
 
+{% raw %}
+
 	Article: Q39368
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -192,3 +194,5 @@ permalink: /kb/039/Q39368/
 	
 	  CALL MatrixMult(p!(), t())
 	END SUB
+
+{% endraw %}

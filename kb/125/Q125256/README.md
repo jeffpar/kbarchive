@@ -6,6 +6,8 @@ permalink: /kb/125/Q125256/
 
 ## Q125256: PC Win: Saving Changes in Large Mail Message Truncates Message
 
+{% raw %}
+
 	Article: Q125256
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2,3.2a
@@ -69,3 +71,5 @@ permalink: /kb/125/Q125256/
 	
 	=============================================================================
 	
+
+{% endraw %}

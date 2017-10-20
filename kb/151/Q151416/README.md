@@ -6,6 +6,8 @@ permalink: /kb/151/Q151416/
 
 ## Q151416: Microsoft DNS Compatibility w/BIND Versions Earlier Than 4.9.4
 
+{% raw %}
+
 	Article: Q151416
 	Product(s): Microsoft Windows NT
 	Version(s): 4.00
@@ -78,3 +80,5 @@ permalink: /kb/151/Q151416/
 	
 	=============================================================================
 	
+
+{% endraw %}

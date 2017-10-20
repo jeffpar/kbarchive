@@ -6,6 +6,8 @@ permalink: /kb/151/Q151859/
 
 ## Q151859: Remote Control of NEC Versa M/100 is Unstable Using IPX Sockets
 
+{% raw %}
+
 	Article: Q151859
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:1.1
@@ -76,3 +78,5 @@ permalink: /kb/151/Q151859/
 	
 	=============================================================================
 	
+
+{% endraw %}

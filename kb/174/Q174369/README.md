@@ -6,6 +6,8 @@ permalink: /kb/174/Q174369/
 
 ## Q174369: Selecting Europe Navaids Causes System Hang
 
+{% raw %}
+
 	Article: Q174369
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/174/Q174369/
 	
 	=============================================================================
 	
+
+{% endraw %}

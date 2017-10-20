@@ -6,6 +6,8 @@ permalink: /kb/139/Q139454/
 
 ## Q139454: &quot;Rundll32&quot; Error After Viewing Properties for Network Adapter
 
+{% raw %}
+
 	Article: Q139454
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/139/Q139454/
 	
 	=============================================================================
 	
+
+{% endraw %}

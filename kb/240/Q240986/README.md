@@ -6,6 +6,8 @@ permalink: /kb/240/Q240986/
 
 ## Q240986: Pandora's Box: Game Graphics Are Distorted When You Use ALT+TAB
 
+{% raw %}
+
 	Article: Q240986
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/240/Q240986/
 	
 	=============================================================================
 	
+
+{% endraw %}

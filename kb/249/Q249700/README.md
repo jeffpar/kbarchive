@@ -6,6 +6,8 @@ permalink: /kb/249/Q249700/
 
 ## Q249700: PRB: Hot Keys of a ToolBar ActiveX Control are not Active
 
+{% raw %}
+
 	Article: Q249700
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -128,3 +130,5 @@ permalink: /kb/249/Q249700/
 	
 	=============================================================================
 	
+
+{% endraw %}

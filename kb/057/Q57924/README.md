@@ -6,6 +6,8 @@ permalink: /kb/057/Q57924/
 
 ## Q57924: Buttons Not Allowed in Resizeable Windows in 7.00 UI Toolbox
 
+{% raw %}
+
 	Article: Q57924
 	Product(s): See article
 	Version(s): 7.00
@@ -62,3 +64,5 @@ permalink: /kb/057/Q57924/
 	buttons in a resizable window. However, it is your responsibility to
 	make sure that any buttons opened stay within the window boundaries
 	after any resizing has been done.
+
+{% endraw %}

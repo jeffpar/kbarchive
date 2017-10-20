@@ -6,6 +6,8 @@ permalink: /kb/030/Q30978/
 
 ## Q30978: /2 and /O Switches Not Compatible
 
+{% raw %}
+
 	Article: Q30978
 	Product(s): See article
 	Version(s): 2.30
@@ -22,3 +24,5 @@ permalink: /kb/030/Q30978/
 	   This file recommends that the /2 switch be used when debugging PM
 	applications. The UTILITY.DOC file is correct. You cannot use the /2
 	and /O switches at the same time.
+
+{% endraw %}

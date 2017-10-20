@@ -6,6 +6,8 @@ permalink: /kb/196/Q196387/
 
 ## Q196387: XCLN: Microsoft Importer for cc:Mail Archive Fails During Setup
 
+{% raw %}
+
 	Article: Q196387
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/196/Q196387/
 	
 	=============================================================================
 	
+
+{% endraw %}

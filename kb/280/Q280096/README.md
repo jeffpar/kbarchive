@@ -6,6 +6,8 @@ permalink: /kb/280/Q280096/
 
 ## Q280096: XCCC: Unable to Connect to Exchange Server By Using POP3
 
+{% raw %}
+
 	Article: Q280096
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -59,3 +61,5 @@ permalink: /kb/280/Q280096/
 	
 	=============================================================================
 	
+
+{% endraw %}

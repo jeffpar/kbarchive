@@ -6,6 +6,8 @@ permalink: /kb/165/Q165005/
 
 ## Q165005: Windows NT Slows Down Because of Land Attack
 
+{% raw %}
+
 	Article: Q165005
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -126,3 +128,5 @@ permalink: /kb/165/Q165005/
 	
 	=============================================================================
 	
+
+{% endraw %}

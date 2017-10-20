@@ -6,6 +6,8 @@ permalink: /kb/157/Q157550/
 
 ## Q157550: WD97: Headings Inside a Table Do Not Appear in the Document Map
 
+{% raw %}
+
 	Article: Q157550
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/157/Q157550/
 	
 	=============================================================================
 	
+
+{% endraw %}

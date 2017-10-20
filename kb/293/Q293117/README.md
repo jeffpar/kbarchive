@@ -6,6 +6,8 @@ permalink: /kb/293/Q293117/
 
 ## Q293117: SMS: Client Install Fails Due to Pending Client Deinstallation
 
+{% raw %}
+
 	Article: Q293117
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -68,3 +70,5 @@ permalink: /kb/293/Q293117/
 	
 	=============================================================================
 	
+
+{% endraw %}

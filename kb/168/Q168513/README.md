@@ -6,6 +6,8 @@ permalink: /kb/168/Q168513/
 
 ## Q168513: Windows NT Installable File System Kit (IFS) Description
 
+{% raw %}
+
 	Article: Q168513
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/168/Q168513/
 	
 	=============================================================================
 	
+
+{% endraw %}

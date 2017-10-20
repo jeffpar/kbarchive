@@ -6,6 +6,8 @@ permalink: /kb/246/Q246661/
 
 ## Q246661: Cannot Reserve IP Addresses Using Swedish Dhcpadmn.exe
 
+{% raw %}
+
 	Article: Q246661
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/246/Q246661/
 	
 	=============================================================================
 	
+
+{% endraw %}

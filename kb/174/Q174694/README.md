@@ -6,6 +6,8 @@ permalink: /kb/174/Q174694/
 
 ## Q174694: XFOR: OV/VM Connector &quot;Waiting for NJE Signon&quot; After BIND
 
+{% raw %}
+
 	Article: Q174694
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/174/Q174694/
 	
 	=============================================================================
 	
+
+{% endraw %}

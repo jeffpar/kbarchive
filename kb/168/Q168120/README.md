@@ -6,6 +6,8 @@ permalink: /kb/168/Q168120/
 
 ## Q168120: User Policy May Be Used When Group Policies Are Enabled
 
+{% raw %}
+
 	Article: Q168120
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -76,3 +78,5 @@ permalink: /kb/168/Q168120/
 	
 	=============================================================================
 	
+
+{% endraw %}

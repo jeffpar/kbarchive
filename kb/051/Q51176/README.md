@@ -6,6 +6,8 @@ permalink: /kb/051/Q51176/
 
 ## Q51176: Mac Srv: Logged In User Create But Not Send Mail If Removed
 
+{% raw %}
+
 	Article: Q51176
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -39,3 +41,5 @@ permalink: /kb/051/Q51176/
 	
 	=============================================================================
 	
+
+{% endraw %}

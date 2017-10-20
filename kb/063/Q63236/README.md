@@ -6,6 +6,8 @@ permalink: /kb/063/Q63236/
 
 ## Q63236: CV 3.00 Incorrectly Documents helpbuffer Switch as helpbuffers
 
+{% raw %}
+
 	Article: Q63236
 	Product(s): See article
 	Version(s): 3.00   | 3.00
@@ -26,3 +28,5 @@ permalink: /kb/063/Q63236/
 	CodeView will not recognize the first spelling. The correct spelling
 	was incorporated into the online help beginning with CodeView version
 	3.10.
+
+{% endraw %}

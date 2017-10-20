@@ -6,6 +6,8 @@ permalink: /kb/196/Q196902/
 
 ## Q196902: BUG: UserControl Does Not Refresh the Menu
 
+{% raw %}
+
 	Article: Q196902
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -108,3 +110,5 @@ permalink: /kb/196/Q196902/
 	
 	=============================================================================
 	
+
+{% endraw %}

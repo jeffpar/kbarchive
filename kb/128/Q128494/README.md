@@ -6,6 +6,8 @@ permalink: /kb/128/Q128494/
 
 ## Q128494: File Filter Can Exclude Only Registered File Types
 
+{% raw %}
+
 	Article: Q128494
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -79,3 +81,5 @@ permalink: /kb/128/Q128494/
 	
 	=============================================================================
 	
+
+{% endraw %}

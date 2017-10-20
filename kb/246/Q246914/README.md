@@ -6,6 +6,8 @@ permalink: /kb/246/Q246914/
 
 ## Q246914: HOWTO: Manually Promote a Label in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q246914
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,4.0a,5.0
@@ -106,3 +108,5 @@ permalink: /kb/246/Q246914/
 	
 	=============================================================================
 	
+
+{% endraw %}

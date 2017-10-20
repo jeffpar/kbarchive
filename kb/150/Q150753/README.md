@@ -6,6 +6,8 @@ permalink: /kb/150/Q150753/
 
 ## Q150753: How to Create a &quot;Windows-type&quot; Incremental Search Box in VFP
 
+{% raw %}
+
 	Article: Q150753
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,6.0
@@ -176,3 +178,5 @@ permalink: /kb/150/Q150753/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110469/
 
 ## Q110469: Golf Won't Run After Running MS-DOS 6 MemMaker
 
+{% raw %}
+
 	Article: Q110469
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/110/Q110469/
 	
 	=============================================================================
 	
+
+{% endraw %}

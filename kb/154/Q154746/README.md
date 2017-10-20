@@ -6,6 +6,8 @@ permalink: /kb/154/Q154746/
 
 ## Q154746: Logon Script Does Not Report the Correct Errorlevel Value
 
+{% raw %}
+
 	Article: Q154746
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -43,3 +45,5 @@ permalink: /kb/154/Q154746/
 	
 	=============================================================================
 	
+
+{% endraw %}

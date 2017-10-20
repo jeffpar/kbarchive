@@ -6,6 +6,8 @@ permalink: /kb/037/Q37410/
 
 ## Q37410: Sample BASIC 6.00/7.00 Program to CALL OS/2 Mouse Functions
 
+{% raw %}
+
 	Article: Q37410
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -128,3 +130,5 @@ permalink: /kb/037/Q37410/
 	   NoMouse.cCol=d
 	   x=MouRemovePtr(NoMouse,driver)
 	END SUB
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140047/
 
 ## Q140047: Eicon Diva ISDN PC-Card Setup Disables Mass-Storage Devices
 
+{% raw %}
+
 	Article: Q140047
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/140/Q140047/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/219/Q219324/
 
 ## Q219324: Access Violation When You Run 16-Bit Parent and Child Programs
 
+{% raw %}
+
 	Article: Q219324
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -65,3 +67,5 @@ permalink: /kb/219/Q219324/
 	
 	=============================================================================
 	
+
+{% endraw %}

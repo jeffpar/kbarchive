@@ -6,6 +6,8 @@ permalink: /kb/098/Q98185/
 
 ## Q98185: Flight Simulator: Altimeter Jumps from 128,000 Feet to 0 Feet
 
+{% raw %}
+
 	Article: Q98185
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:4.0,4.0a,4.0b
@@ -44,3 +46,5 @@ permalink: /kb/098/Q98185/
 	
 	=============================================================================
 	
+
+{% endraw %}

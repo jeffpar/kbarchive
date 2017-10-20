@@ -6,6 +6,8 @@ permalink: /kb/137/Q137184/
 
 ## Q137184: Julia Child: Pressing Return After Find does Not Go to Topic
 
+{% raw %}
+
 	Article: Q137184
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/137/Q137184/
 	
 	=============================================================================
 	
+
+{% endraw %}

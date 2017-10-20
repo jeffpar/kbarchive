@@ -6,6 +6,8 @@ permalink: /kb/134/Q134783/
 
 ## Q134783: Text Entered in Second Column Not Reflected in Outline View
 
+{% raw %}
+
 	Article: Q134783
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,4.0a,4.0c,7.0
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134783/
 	
 	=============================================================================
 	
+
+{% endraw %}

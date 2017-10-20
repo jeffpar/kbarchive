@@ -6,6 +6,8 @@ permalink: /kb/153/Q153792/
 
 ## Q153792: BUG: MESSAGEBOX() Function Displays Incorrect Icon
 
+{% raw %}
+
 	Article: Q153792
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153792/
 	
 	=============================================================================
 	
+
+{% endraw %}

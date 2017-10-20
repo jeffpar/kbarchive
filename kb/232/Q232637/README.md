@@ -6,6 +6,8 @@ permalink: /kb/232/Q232637/
 
 ## Q232637: WD97: Run-Time Error 1220 Running WordBasic.Shell Statement
 
+{% raw %}
+
 	Article: Q232637
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/232/Q232637/
 	
 	=============================================================================
 	
+
+{% endraw %}

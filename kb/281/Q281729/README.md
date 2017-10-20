@@ -6,6 +6,8 @@ permalink: /kb/281/Q281729/
 
 ## Q281729: &quot;CoCreateInstance Failed&quot; Error in SNA Server/HIS 2000 Manager
 
+{% raw %}
+
 	Article: Q281729
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -113,3 +115,5 @@ permalink: /kb/281/Q281729/
 	
 	=============================================================================
 	
+
+{% endraw %}

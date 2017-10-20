@@ -6,6 +6,8 @@ permalink: /kb/237/Q237575/
 
 ## Q237575: ACC2000:Reverting to Access 97 ODBC Driver After Installing MDAC
 
+{% raw %}
+
 	Article: Q237575
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2000,97
@@ -112,3 +114,5 @@ permalink: /kb/237/Q237575/
 	
 	=============================================================================
 	
+
+{% endraw %}

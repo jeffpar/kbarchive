@@ -6,6 +6,8 @@ permalink: /kb/135/Q135360/
 
 ## Q135360: Periodic Re-Transmit Times for Packets
 
+{% raw %}
+
 	Article: Q135360
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -76,3 +78,5 @@ permalink: /kb/135/Q135360/
 	
 	=============================================================================
 	
+
+{% endraw %}

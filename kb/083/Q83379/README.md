@@ -6,6 +6,8 @@ permalink: /kb/083/Q83379/
 
 ## Q83379: CorelDRAW! Gives WALDO Error Using Extrude or Blend
 
+{% raw %}
+
 	Article: Q83379
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/083/Q83379/
 	
 	=============================================================================
 	
+
+{% endraw %}

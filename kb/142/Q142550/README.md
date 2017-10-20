@@ -6,6 +6,8 @@ permalink: /kb/142/Q142550/
 
 ## Q142550: How to Easily Remark or Unremark Multiple Lines of Code
 
+{% raw %}
+
 	Article: Q142550
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -119,3 +121,5 @@ permalink: /kb/142/Q142550/
 	
 	=============================================================================
 	
+
+{% endraw %}

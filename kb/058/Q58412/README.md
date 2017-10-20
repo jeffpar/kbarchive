@@ -6,6 +6,8 @@ permalink: /kb/058/Q58412/
 
 ## Q58412: Do Not Use the MS-DOS APPEND Utility in Windows
 
+{% raw %}
+
 	Article: Q58412
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -73,3 +75,5 @@ permalink: /kb/058/Q58412/
 	
 	=============================================================================
 	
+
+{% endraw %}

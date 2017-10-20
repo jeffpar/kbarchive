@@ -6,6 +6,8 @@ permalink: /kb/142/Q142327/
 
 ## Q142327: Imaging for Windows 95 Version 1.0 Readme.txt File
 
+{% raw %}
+
 	Article: Q142327
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -261,3 +263,5 @@ permalink: /kb/142/Q142327/
 	
 	=============================================================================
 	
+
+{% endraw %}

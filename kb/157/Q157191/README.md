@@ -6,6 +6,8 @@ permalink: /kb/157/Q157191/
 
 ## Q157191: DOCERR: GotFocus Event Documented Incorrectly in VFP Help
 
+{% raw %}
+
 	Article: Q157191
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -40,3 +42,5 @@ permalink: /kb/157/Q157191/
 	
 	=============================================================================
 	
+
+{% endraw %}

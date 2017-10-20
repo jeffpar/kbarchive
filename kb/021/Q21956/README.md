@@ -6,6 +6,8 @@ permalink: /kb/021/Q21956/
 
 ## Q21956: Using Page 2 in SCREEN 9 Gives &quot;Illegal Function Call&quot; on EGA
 
+{% raw %}
+
 	Article: Q21956
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -32,3 +34,5 @@ permalink: /kb/021/Q21956/
 	   SCREEN 9,1,1,1  'EGA mode=9, 1=colorswitch on, apage=1, vpage=1
 	   COLOR 2,0
 	   LINE (1,1)-(100,100)
+
+{% endraw %}

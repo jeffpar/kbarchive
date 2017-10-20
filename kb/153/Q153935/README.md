@@ -6,6 +6,8 @@ permalink: /kb/153/Q153935/
 
 ## Q153935: Install May Fail for Programs Using REGEDIT4 on Windows NT
 
+{% raw %}
+
 	Article: Q153935
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -63,3 +65,5 @@ permalink: /kb/153/Q153935/
 	
 	=============================================================================
 	
+
+{% endraw %}

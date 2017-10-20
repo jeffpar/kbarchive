@@ -6,6 +6,8 @@ permalink: /kb/245/Q245733/
 
 ## Q245733: Encyclopedia 2000: Error Message When You Click Voice Control
 
+{% raw %}
+
 	Article: Q245733
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/245/Q245733/
 	
 	=============================================================================
 	
+
+{% endraw %}

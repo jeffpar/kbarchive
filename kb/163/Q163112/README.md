@@ -6,6 +6,8 @@ permalink: /kb/163/Q163112/
 
 ## Q163112: NetBIOS Scope ID All Uppercase in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q163112
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/163/Q163112/
 	
 	=============================================================================
 	
+
+{% endraw %}

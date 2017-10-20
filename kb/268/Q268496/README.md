@@ -6,6 +6,8 @@ permalink: /kb/268/Q268496/
 
 ## Q268496: XFOR: Migration Wizard Dr. Watson Migrating from GroupWise 5.5
 
+{% raw %}
+
 	Article: Q268496
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3,5.5 SP4
@@ -74,3 +76,5 @@ permalink: /kb/268/Q268496/
 	
 	=============================================================================
 	
+
+{% endraw %}

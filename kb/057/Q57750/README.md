@@ -6,6 +6,8 @@ permalink: /kb/057/Q57750/
 
 ## Q57750: M &quot;Keyboard&quot; Switch Doesn't Work As Documented
 
+{% raw %}
+
 	Article: Q57750
 	Product(s): See article
 	Version(s): 1.02
@@ -47,3 +49,5 @@ permalink: /kb/057/Q57750/
 	Microsoft has confirmed this to be a problem in the Microsoft Editor
 	Version 1.02. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

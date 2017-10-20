@@ -1,10 +1,12 @@
 ---
 layout: page
-title: "Q162512: WINSLI Applications Don't Show User Computer in SNA Admin"
+title: "Q162512: WINSLI Applications Dont Show User Computer in SNA Admin"
 permalink: /kb/162/Q162512/
 ---
 
-## Q162512: WINSLI Applications Don't Show User Computer in SNA Admin
+## Q162512: WINSLI Applications Dont Show User Computer in SNA Admin
+
+{% raw %}
 
 	Article: Q162512
 	Product(s): Microsoft SNA Server
@@ -81,3 +83,5 @@ permalink: /kb/162/Q162512/
 	
 	=============================================================================
 	
+
+{% endraw %}

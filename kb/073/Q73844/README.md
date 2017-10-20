@@ -6,6 +6,8 @@ permalink: /kb/073/Q73844/
 
 ## Q73844: MS-DOS 5.0 or Later Ignores /X Parameter on BUFFERS= Line
 
+{% raw %}
+
 	Article: Q73844
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -43,3 +45,5 @@ permalink: /kb/073/Q73844/
 	
 	=============================================================================
 	
+
+{% endraw %}

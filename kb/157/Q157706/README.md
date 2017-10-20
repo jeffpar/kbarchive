@@ -6,6 +6,8 @@ permalink: /kb/157/Q157706/
 
 ## Q157706: Icons Not Updating in Sched+ 7.0 for Rsponses from Sched+ 1.0
 
+{% raw %}
+
 	Article: Q157706
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,7.0
@@ -51,3 +53,5 @@ permalink: /kb/157/Q157706/
 	
 	=============================================================================
 	
+
+{% endraw %}

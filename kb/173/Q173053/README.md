@@ -6,6 +6,8 @@ permalink: /kb/173/Q173053/
 
 ## Q173053: WD97: Files Not Added to &quot;Recent&quot; Folder
 
+{% raw %}
+
 	Article: Q173053
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/173/Q173053/
 	
 	=============================================================================
 	
+
+{% endraw %}

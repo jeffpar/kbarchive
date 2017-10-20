@@ -6,6 +6,8 @@ permalink: /kb/183/Q183697/
 
 ## Q183697: WD97: Table Border Print Problems When Next to Frame or Text Box
 
+{% raw %}
+
 	Article: Q183697
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -137,3 +139,5 @@ permalink: /kb/183/Q183697/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168448/
 
 ## Q168448: WD97: Batch Conversion Wizard Enters Endless Loop
 
+{% raw %}
+
 	Article: Q168448
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/168/Q168448/
 	
 	=============================================================================
 	
+
+{% endraw %}

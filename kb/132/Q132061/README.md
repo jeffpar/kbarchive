@@ -6,6 +6,8 @@ permalink: /kb/132/Q132061/
 
 ## Q132061: I/O Addresses Not Available with Future Domain 850 Series
 
+{% raw %}
+
 	Article: Q132061
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -80,3 +82,5 @@ permalink: /kb/132/Q132061/
 	
 	=============================================================================
 	
+
+{% endraw %}

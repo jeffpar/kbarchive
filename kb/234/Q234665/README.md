@@ -6,6 +6,8 @@ permalink: /kb/234/Q234665/
 
 ## Q234665: XFOR: Event 238 During Lotus cc:Mail Migration
 
+{% raw %}
+
 	Article: Q234665
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/234/Q234665/
 	
 	=============================================================================
 	
+
+{% endraw %}

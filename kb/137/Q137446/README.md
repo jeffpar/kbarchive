@@ -6,6 +6,8 @@ permalink: /kb/137/Q137446/
 
 ## Q137446: Differences Between FoxPro and Visual FoxPro Setup Wizard
 
+{% raw %}
+
 	Article: Q137446
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -130,3 +132,5 @@ permalink: /kb/137/Q137446/
 	
 	=============================================================================
 	
+
+{% endraw %}

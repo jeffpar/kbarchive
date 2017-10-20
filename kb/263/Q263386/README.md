@@ -6,6 +6,8 @@ permalink: /kb/263/Q263386/
 
 ## Q263386: Error Installing SMS Components on Windows NT Terminal Server
 
+{% raw %}
+
 	Article: Q263386
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -64,3 +66,5 @@ permalink: /kb/263/Q263386/
 	
 	=============================================================================
 	
+
+{% endraw %}

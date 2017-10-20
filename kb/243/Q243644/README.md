@@ -6,6 +6,8 @@ permalink: /kb/243/Q243644/
 
 ## Q243644: XADM: Cannot Synchronize Clock on Exchange Server
 
+{% raw %}
+
 	Article: Q243644
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -100,3 +102,5 @@ permalink: /kb/243/Q243644/
 	
 	=============================================================================
 	
+
+{% endraw %}

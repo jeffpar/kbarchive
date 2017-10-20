@@ -6,6 +6,8 @@ permalink: /kb/086/Q86603/
 
 ## Q86603: PC WSPlus: Cannot Switch to Task List
 
+{% raw %}
+
 	Article: Q86603
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -52,3 +54,5 @@ permalink: /kb/086/Q86603/
 	
 	=============================================================================
 	
+
+{% endraw %}

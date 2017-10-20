@@ -6,6 +6,8 @@ permalink: /kb/179/Q179241/
 
 ## Q179241: Unable to Install a Joystick after Installing DirectX
 
+{% raw %}
+
 	Article: Q179241
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -49,3 +51,5 @@ permalink: /kb/179/Q179241/
 	
 	=============================================================================
 	
+
+{% endraw %}

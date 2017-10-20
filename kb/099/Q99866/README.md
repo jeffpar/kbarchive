@@ -6,6 +6,8 @@ permalink: /kb/099/Q99866/
 
 ## Q99866: Sound Box May Take a Long Time to Preload
 
+{% raw %}
+
 	Article: Q99866
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -40,3 +42,5 @@ permalink: /kb/099/Q99866/
 	
 	=============================================================================
 	
+
+{% endraw %}

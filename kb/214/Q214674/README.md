@@ -6,6 +6,8 @@ permalink: /kb/214/Q214674/
 
 ## Q214674: PRB: Cannot Simultaneously Write to Disk File and Have It Opened
 
+{% raw %}
+
 	Article: Q214674
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -164,3 +166,5 @@ permalink: /kb/214/Q214674/
 	
 	=============================================================================
 	
+
+{% endraw %}

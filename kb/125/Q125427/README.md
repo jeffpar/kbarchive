@@ -6,6 +6,8 @@ permalink: /kb/125/Q125427/
 
 ## Q125427: Writer: Rebus Pictures Don't Print on ImageWriter
 
+{% raw %}
+
 	Article: Q125427
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.1
@@ -56,3 +58,5 @@ permalink: /kb/125/Q125427/
 	
 	=============================================================================
 	
+
+{% endraw %}

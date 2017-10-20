@@ -6,6 +6,8 @@ permalink: /kb/185/Q185461/
 
 ## Q185461: PRB: UseSafeSubset Allows Non-Safe Objects to Be Called
 
+{% raw %}
+
 	Article: Q185461
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -126,3 +128,5 @@ permalink: /kb/185/Q185461/
 	
 	=============================================================================
 	
+
+{% endraw %}

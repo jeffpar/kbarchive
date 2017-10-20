@@ -6,6 +6,8 @@ permalink: /kb/147/Q147642/
 
 ## Q147642: NetWare Files Overwritten When Updating To Windows NT 3.51 SP4
 
+{% raw %}
+
 	Article: Q147642
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -56,3 +58,5 @@ permalink: /kb/147/Q147642/
 	
 	=============================================================================
 	
+
+{% endraw %}

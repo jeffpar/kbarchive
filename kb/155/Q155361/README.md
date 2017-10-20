@@ -6,6 +6,8 @@ permalink: /kb/155/Q155361/
 
 ## Q155361: INFO: Use of Visual C++ on Networks
 
+{% raw %}
+
 	Article: Q155361
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/155/Q155361/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164912/
 
 ## Q164912: Host Account Cache Requires Configuration of Master/Backup Role
 
+{% raw %}
+
 	Article: Q164912
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/164/Q164912/
 	
 	=============================================================================
 	
+
+{% endraw %}

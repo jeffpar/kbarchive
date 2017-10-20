@@ -6,6 +6,8 @@ permalink: /kb/303/Q303219/
 
 ## Q303219: Incorrect Buddy Name Exposed When Using Inspect With MSN Explore
 
+{% raw %}
+
 	Article: Q303219
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/303/Q303219/
 	
 	=============================================================================
 	
+
+{% endraw %}

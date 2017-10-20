@@ -6,6 +6,8 @@ permalink: /kb/028/Q28747/
 
 ## Q28747: Proper Installation for NEC PowerMate LCD Monitor
 
+{% raw %}
+
 	Article: Q28747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/028/Q28747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/091/Q91089/
 
 ## Q91089: Persistent Network Connections in WIN.INI Must Be Uppercase
 
+{% raw %}
+
 	Article: Q91089
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -51,3 +53,5 @@ permalink: /kb/091/Q91089/
 	
 	=============================================================================
 	
+
+{% endraw %}

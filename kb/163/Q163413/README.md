@@ -6,6 +6,8 @@ permalink: /kb/163/Q163413/
 
 ## Q163413: Upgrade to Windows NT 4.0 May Not Keep All Registry Settings
 
+{% raw %}
+
 	Article: Q163413
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/163/Q163413/
 	
 	=============================================================================
 	
+
+{% endraw %}

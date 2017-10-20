@@ -6,6 +6,8 @@ permalink: /kb/164/Q164126/
 
 ## Q164126: XFOR: How to Enable Diagnostic Logging for NNTP
 
+{% raw %}
+
 	Article: Q164126
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -119,3 +121,5 @@ permalink: /kb/164/Q164126/
 	
 	=============================================================================
 	
+
+{% endraw %}

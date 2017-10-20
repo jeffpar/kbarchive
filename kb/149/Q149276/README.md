@@ -6,6 +6,8 @@ permalink: /kb/149/Q149276/
 
 ## Q149276: HOWTO: Use Icons with the Windows 95/98/Me System Tray
 
+{% raw %}
+
 	Article: Q149276
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -204,3 +206,5 @@ permalink: /kb/149/Q149276/
 	
 	=============================================================================
 	
+
+{% endraw %}

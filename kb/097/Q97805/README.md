@@ -6,6 +6,8 @@ permalink: /kb/097/Q97805/
 
 ## Q97805: General Protection Fault in UNIDRV.DLL on an HP III Printer
 
+{% raw %}
+
 	Article: Q97805
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/097/Q97805/
 	
 	=============================================================================
 	
+
+{% endraw %}

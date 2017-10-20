@@ -6,6 +6,8 @@ permalink: /kb/140/Q140212/
 
 ## Q140212: ADT95: Microsoft ADT Licensing Questions and Answers
 
+{% raw %}
+
 	Article: Q140212
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -264,3 +266,5 @@ permalink: /kb/140/Q140212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131156/
 
 ## Q131156: XCLN: Text Displayed in Column Header When Width Set to 0
 
+{% raw %}
+
 	Article: Q131156
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 95
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131156/
 	
 	=============================================================================
 	
+
+{% endraw %}

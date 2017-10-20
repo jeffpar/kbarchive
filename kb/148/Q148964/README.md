@@ -6,6 +6,8 @@ permalink: /kb/148/Q148964/
 
 ## Q148964: Windows 95 Running Server Tools Sets Incorrect Permissions
 
+{% raw %}
+
 	Article: Q148964
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 95 4.0
@@ -51,3 +53,5 @@ permalink: /kb/148/Q148964/
 	
 	=============================================================================
 	
+
+{% endraw %}

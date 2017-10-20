@@ -6,6 +6,8 @@ permalink: /kb/132/Q132361/
 
 ## Q132361: Updated Proteon 139X NDIS Driver Needed for Network Client 3.0
 
+{% raw %}
+
 	Article: Q132361
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0,3.5,3.5,3.51,3.51
@@ -71,3 +73,5 @@ permalink: /kb/132/Q132361/
 	
 	=============================================================================
 	
+
+{% endraw %}

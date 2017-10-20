@@ -6,6 +6,8 @@ permalink: /kb/104/Q104214/
 
 ## Q104214: MS-DOS Keywords Cannot Be Used in Multi-Config Menus
 
+{% raw %}
+
 	Article: Q104214
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/104/Q104214/
 	
 	=============================================================================
 	
+
+{% endraw %}

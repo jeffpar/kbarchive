@@ -6,6 +6,8 @@ permalink: /kb/138/Q138618/
 
 ## Q138618: ErrMsg: &quot;No Configuration Info ...&quot; with PCMCIA
 
+{% raw %}
+
 	Article: Q138618
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -96,3 +98,5 @@ permalink: /kb/138/Q138618/
 	
 	=============================================================================
 	
+
+{% endraw %}

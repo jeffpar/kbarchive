@@ -6,6 +6,8 @@ permalink: /kb/249/Q249606/
 
 ## Q249606: Explorer Displays Folder Dates Incorrectly on Netware Servers
 
+{% raw %}
+
 	Article: Q249606
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98,98 Second Edition
@@ -83,3 +85,5 @@ permalink: /kb/249/Q249606/
 	
 	=============================================================================
 	
+
+{% endraw %}

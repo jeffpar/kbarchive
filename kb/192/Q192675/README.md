@@ -6,6 +6,8 @@ permalink: /kb/192/Q192675/
 
 ## Q192675: XWEB: Min. Size Requirements for Multipage Control on HTML Form
 
+{% raw %}
+
 	Article: Q192675
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:5.5
@@ -46,3 +48,5 @@ permalink: /kb/192/Q192675/
 	
 	=============================================================================
 	
+
+{% endraw %}

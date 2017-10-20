@@ -6,6 +6,8 @@ permalink: /kb/132/Q132559/
 
 ## Q132559: PC WSPlus: Err Msg: Your Passwords Don't Match...
 
+{% raw %}
+
 	Article: Q132559
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -114,3 +116,5 @@ permalink: /kb/132/Q132559/
 	
 	=============================================================================
 	
+
+{% endraw %}

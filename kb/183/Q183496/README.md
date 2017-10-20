@@ -6,6 +6,8 @@ permalink: /kb/183/Q183496/
 
 ## Q183496: XADM: Importing International Characters Into Exchange Fails
 
+{% raw %}
+
 	Article: Q183496
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/183/Q183496/
 	
 	=============================================================================
 	
+
+{% endraw %}

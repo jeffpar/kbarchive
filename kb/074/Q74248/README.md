@@ -6,6 +6,8 @@ permalink: /kb/074/Q74248/
 
 ## Q74248: Frozen Ballpoint Mouse Pointer in Enhanced mode
 
+{% raw %}
+
 	Article: Q74248
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/074/Q74248/
 	
 	=============================================================================
 	
+
+{% endraw %}

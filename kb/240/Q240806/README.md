@@ -6,6 +6,8 @@ permalink: /kb/240/Q240806/
 
 ## Q240806: Internet Explorer May Not Negotiate SGC 128-Bit Connection
 
+{% raw %}
+
 	Article: Q240806
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:5; winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/240/Q240806/
 	
 	=============================================================================
 	
+
+{% endraw %}

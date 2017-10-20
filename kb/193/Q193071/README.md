@@ -6,6 +6,8 @@ permalink: /kb/193/Q193071/
 
 ## Q193071: Encarta 98: How to Update Yearbook with No Internet Connection
 
+{% raw %}
+
 	Article: Q193071
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -98,3 +100,5 @@ permalink: /kb/193/Q193071/
 	
 	=============================================================================
 	
+
+{% endraw %}

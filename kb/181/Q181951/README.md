@@ -6,6 +6,8 @@ permalink: /kb/181/Q181951/
 
 ## Q181951: XFOR: Err Msg. Installing AT&amp;T Easylink Gateway on Connector PO
 
+{% raw %}
+
 	Article: Q181951
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/181/Q181951/
 	
 	=============================================================================
 	
+
+{% endraw %}

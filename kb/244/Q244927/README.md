@@ -6,6 +6,8 @@ permalink: /kb/244/Q244927/
 
 ## Q244927: Dr. Watson Error in CSRSS on Terminal Server Computer
 
+{% raw %}
+
 	Article: Q244927
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/244/Q244927/
 	
 	=============================================================================
 	
+
+{% endraw %}

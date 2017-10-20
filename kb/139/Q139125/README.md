@@ -6,6 +6,8 @@ permalink: /kb/139/Q139125/
 
 ## Q139125: Windows 95 SnaBase Uses Taskbar Even When Not Shown
 
+{% raw %}
+
 	Article: Q139125
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -72,3 +74,5 @@ permalink: /kb/139/Q139125/
 	
 	=============================================================================
 	
+
+{% endraw %}

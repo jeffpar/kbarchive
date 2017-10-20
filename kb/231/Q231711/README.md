@@ -6,6 +6,8 @@ permalink: /kb/231/Q231711/
 
 ## Q231711: Access Violation in Explorer During Session Logon
 
+{% raw %}
+
 	Article: Q231711
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/231/Q231711/
 	
 	=============================================================================
 	
+
+{% endraw %}

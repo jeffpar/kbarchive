@@ -6,6 +6,8 @@ permalink: /kb/191/Q191616/
 
 ## Q191616: BUG: Order of Evaluation Change Between Native Code and P-Code
 
+{% raw %}
+
 	Article: Q191616
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/191/Q191616/
 	
 	=============================================================================
 	
+
+{% endraw %}

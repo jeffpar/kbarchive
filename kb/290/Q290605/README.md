@@ -6,6 +6,8 @@ permalink: /kb/290/Q290605/
 
 ## Q290605: Terminal Server Clients Unable to Install Mail Certificates
 
+{% raw %}
+
 	Article: Q290605
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -60,3 +62,5 @@ permalink: /kb/290/Q290605/
 	
 	=============================================================================
 	
+
+{% endraw %}

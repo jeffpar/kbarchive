@@ -6,6 +6,8 @@ permalink: /kb/185/Q185291/
 
 ## Q185291: WD97: How Wrd97cnv.exe Determines Where to Place Files
 
+{% raw %}
+
 	Article: Q185291
 	Product(s): Word 97 for Windows
 	Version(s): 6.0,6.0a,6.0c,7.0,7.0a,97
@@ -121,3 +123,5 @@ permalink: /kb/185/Q185291/
 	
 	=============================================================================
 	
+
+{% endraw %}

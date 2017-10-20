@@ -6,6 +6,8 @@ permalink: /kb/166/Q166720/
 
 ## Q166720: FIX: ATL Object Wizard Dialog Box Comes Up Empty
 
+{% raw %}
+
 	Article: Q166720
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -75,3 +77,5 @@ permalink: /kb/166/Q166720/
 	
 	=============================================================================
 	
+
+{% endraw %}

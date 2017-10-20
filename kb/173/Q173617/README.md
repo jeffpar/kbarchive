@@ -6,6 +6,8 @@ permalink: /kb/173/Q173617/
 
 ## Q173617: Print Server Application Exception in Function AimOpenPrinter
 
+{% raw %}
+
 	Article: Q173617
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -143,3 +145,5 @@ permalink: /kb/173/Q173617/
 	
 	=============================================================================
 	
+
+{% endraw %}

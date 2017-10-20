@@ -6,6 +6,8 @@ permalink: /kb/246/Q246580/
 
 ## Q246580: XFOR: Event ID 2003 Displays the Wrong Destination Domain
 
+{% raw %}
+
 	Article: Q246580
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -74,3 +76,5 @@ permalink: /kb/246/Q246580/
 	
 	=============================================================================
 	
+
+{% endraw %}

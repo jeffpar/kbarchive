@@ -6,6 +6,8 @@ permalink: /kb/285/Q285141/
 
 ## Q285141: Troubleshooting Your PC Comments and Corrections
 
+{% raw %}
+
 	Article: Q285141
 	Product(s): Microsoft Press
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/285/Q285141/
 	
 	=============================================================================
 	
+
+{% endraw %}

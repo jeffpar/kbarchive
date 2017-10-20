@@ -6,6 +6,8 @@ permalink: /kb/153/Q153575/
 
 ## Q153575: PGC Prompts Twice When You Cancel a Change in NetWare Clients
 
+{% raw %}
+
 	Article: Q153575
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -46,3 +48,5 @@ permalink: /kb/153/Q153575/
 	
 	=============================================================================
 	
+
+{% endraw %}

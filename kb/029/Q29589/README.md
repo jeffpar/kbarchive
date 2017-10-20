@@ -6,6 +6,8 @@ permalink: /kb/029/Q29589/
 
 ## Q29589: Incorrect Interface Statement
 
+{% raw %}
+
 	Article: Q29589
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -21,3 +23,5 @@ permalink: /kb/029/Q29589/
 	This is incorrect. It should read as follows:
 	
 	INTERFACE TO REAL*8 FUNCTION CFUN [C] (I,J)
+
+{% endraw %}

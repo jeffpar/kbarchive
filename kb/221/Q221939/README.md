@@ -6,6 +6,8 @@ permalink: /kb/221/Q221939/
 
 ## Q221939: XFOR: Notes Connector CPU Use is More Than 80 Percent
 
+{% raw %}
+
 	Article: Q221939
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/221/Q221939/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/228/Q228754/
 
 ## Q228754: CC III: The Russian Front: Description of the Cc30b.exe Update
 
+{% raw %}
+
 	Article: Q228754
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -134,3 +136,5 @@ permalink: /kb/228/Q228754/
 	
 	=============================================================================
 	
+
+{% endraw %}

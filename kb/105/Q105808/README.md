@@ -6,6 +6,8 @@ permalink: /kb/105/Q105808/
 
 ## Q105808: FIX: Overflow in VB version 3.0 ICONWRKS Sample Program
 
+{% raw %}
+
 	Article: Q105808
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -70,3 +72,5 @@ permalink: /kb/105/Q105808/
 	
 	=============================================================================
 	
+
+{% endraw %}

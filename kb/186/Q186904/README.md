@@ -6,6 +6,8 @@ permalink: /kb/186/Q186904/
 
 ## Q186904: MPROUTER Access Violation on Invalid RADIUS Response
 
+{% raw %}
+
 	Article: Q186904
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP3
@@ -82,3 +84,5 @@ permalink: /kb/186/Q186904/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/312/Q312853/
 
 ## Q312853: FMH-5 Attach Message Routed to TP Even if Local LU Doesn't Match
 
+{% raw %}
+
 	Article: Q312853
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -189,3 +191,5 @@ permalink: /kb/312/Q312853/
 	
 	=============================================================================
 	
+
+{% endraw %}

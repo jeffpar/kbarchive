@@ -6,6 +6,8 @@ permalink: /kb/161/Q161834/
 
 ## Q161834: FIX: Long String Placed in RowSource Property Causes Error
 
+{% raw %}
+
 	Article: Q161834
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
@@ -84,3 +86,5 @@ permalink: /kb/161/Q161834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158248/
 
 ## Q158248: HOWTO: Use the Calendar Control to Enter and Display Dates
 
+{% raw %}
+
 	Article: Q158248
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/158/Q158248/
 	
 	=============================================================================
 	
+
+{% endraw %}

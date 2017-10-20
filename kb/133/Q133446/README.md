@@ -6,6 +6,8 @@ permalink: /kb/133/Q133446/
 
 ## Q133446: PPT7: Features and Limitations of Presentation Conferencing
 
+{% raw %}
+
 	Article: Q133446
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -83,3 +85,5 @@ permalink: /kb/133/Q133446/
 	
 	=============================================================================
 	
+
+{% endraw %}

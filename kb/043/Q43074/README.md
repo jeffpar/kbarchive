@@ -6,6 +6,8 @@ permalink: /kb/043/Q43074/
 
 ## Q43074: Cannot Use Standard Device Names as Filenames
 
+{% raw %}
+
 	Article: Q43074
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -25,3 +27,5 @@ permalink: /kb/043/Q43074/
 	others will give errors or hang when the file is saved.
 	
 	The protect-mode editor behaves in the same fashion.
+
+{% endraw %}

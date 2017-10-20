@@ -6,6 +6,8 @@ permalink: /kb/043/Q43002/
 
 ## Q43002: Return Values for _remapallpalette and _remappalette
 
+{% raw %}
+
 	Article: Q43002
 	Product(s): See article
 	Version(s): 5.10
@@ -24,3 +26,5 @@ permalink: /kb/043/Q43002/
 	Reference" for both C Version 5.10 and QuickC Version 1.01, the C 5.10
 	README.DOC, and QuickC 2.00 Advisor (on-line help screens titled
 	"Help: _remapallpalette" and "Help: _remappalette).
+
+{% endraw %}

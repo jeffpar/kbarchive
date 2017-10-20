@@ -6,6 +6,8 @@ permalink: /kb/058/Q58957/
 
 ## Q58957: ListBox Redefines Window 1 and Closes All Windows When Done
 
+{% raw %}
+
 	Article: Q58957
 	Product(s): See article
 	Version(s): 7.00
@@ -131,3 +133,5 @@ permalink: /kb/058/Q58957/
 	'Trap the clicking of the button.
 	CALL WindowDo(0, 0)
 	END
+
+{% endraw %}

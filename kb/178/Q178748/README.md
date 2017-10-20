@@ -6,6 +6,8 @@ permalink: /kb/178/Q178748/
 
 ## Q178748: SMS: SATAN Causes High Memory Utilization in WUSER32
 
+{% raw %}
+
 	Article: Q178748
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -76,3 +78,5 @@ permalink: /kb/178/Q178748/
 	
 	=============================================================================
 	
+
+{% endraw %}

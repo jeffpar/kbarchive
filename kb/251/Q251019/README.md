@@ -6,6 +6,8 @@ permalink: /kb/251/Q251019/
 
 ## Q251019: How to Schedule VIACompact to Run on a Routine Basis
 
+{% raw %}
+
 	Article: Q251019
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -218,3 +220,5 @@ permalink: /kb/251/Q251019/
 	
 	=============================================================================
 	
+
+{% endraw %}

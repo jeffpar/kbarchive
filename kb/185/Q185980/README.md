@@ -6,6 +6,8 @@ permalink: /kb/185/Q185980/
 
 ## Q185980: WD97: Selected Text Not Visible or Offset in Some Dialog Boxes
 
+{% raw %}
+
 	Article: Q185980
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -121,3 +123,5 @@ permalink: /kb/185/Q185980/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158439/
 
 ## Q158439: Files with Long Extensions Bypass the Recycle Bin When Deleted
 
+{% raw %}
+
 	Article: Q158439
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/158/Q158439/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155747/
 
 ## Q155747: HOWTO: Use the New Application Property in Visual FoxPro 5.0
 
+{% raw %}
+
 	Article: Q155747
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/155/Q155747/
 	
 	=============================================================================
 	
+
+{% endraw %}

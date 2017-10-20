@@ -6,6 +6,8 @@ permalink: /kb/167/Q167265/
 
 ## Q167265: XADM: Missing File New Custom Recipient Option
 
+{% raw %}
+
 	Article: Q167265
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/167/Q167265/
 	
 	=============================================================================
 	
+
+{% endraw %}

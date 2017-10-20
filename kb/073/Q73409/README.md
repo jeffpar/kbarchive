@@ -6,6 +6,8 @@ permalink: /kb/073/Q73409/
 
 ## Q73409: FIX: MASM 6.0 Fails with /Ta if Filename Has No Period
 
+{% raw %}
+
 	Article: Q73409
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/073/Q73409/
 	
 	=============================================================================
 	
+
+{% endraw %}

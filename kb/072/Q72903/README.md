@@ -6,6 +6,8 @@ permalink: /kb/072/Q72903/
 
 ## Q72903: HP Electrostatic Plotters Emulate HP-7586B
 
+{% raw %}
+
 	Article: Q72903
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -71,3 +73,5 @@ permalink: /kb/072/Q72903/
 	
 	=============================================================================
 	
+
+{% endraw %}

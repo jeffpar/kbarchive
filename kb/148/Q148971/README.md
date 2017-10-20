@@ -6,6 +6,8 @@ permalink: /kb/148/Q148971/
 
 ## Q148971: TR-attached IPX SNA Client Not Find Server Across FDDI Bridge
 
+{% raw %}
+
 	Article: Q148971
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -112,3 +114,5 @@ permalink: /kb/148/Q148971/
 	
 	=============================================================================
 	
+
+{% endraw %}

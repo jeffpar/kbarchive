@@ -6,6 +6,8 @@ permalink: /kb/282/Q282240/
 
 ## Q282240: Critical update message repeats when trying to sign in to MSN Ex
 
+{% raw %}
+
 	Article: Q282240
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -55,3 +57,5 @@ permalink: /kb/282/Q282240/
 	
 	=============================================================================
 	
+
+{% endraw %}

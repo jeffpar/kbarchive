@@ -6,6 +6,8 @@ permalink: /kb/037/Q37657/
 
 ## Q37657: RCData.exe Uses User-Defined Resources in Windows Apps
 
+{% raw %}
+
 	Article: Q37657
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -68,3 +70,5 @@ permalink: /kb/037/Q37657/
 	
 	=============================================================================
 	
+
+{% endraw %}

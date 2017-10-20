@@ -6,6 +6,8 @@ permalink: /kb/187/Q187299/
 
 ## Q187299: SAMPLE: PERSIST.EXE Persists Class Objects with VB6
 
+{% raw %}
+
 	Article: Q187299
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -92,3 +94,5 @@ permalink: /kb/187/Q187299/
 	
 	=============================================================================
 	
+
+{% endraw %}

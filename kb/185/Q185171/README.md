@@ -6,6 +6,8 @@ permalink: /kb/185/Q185171/
 
 ## Q185171: HOWTO: How to Send/Receive E-Mail Messages with Visual Basic
 
+{% raw %}
+
 	Article: Q185171
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -145,3 +147,5 @@ permalink: /kb/185/Q185171/
 	
 	=============================================================================
 	
+
+{% endraw %}

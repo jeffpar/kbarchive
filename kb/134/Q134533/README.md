@@ -6,6 +6,8 @@ permalink: /kb/134/Q134533/
 
 ## Q134533: Micron Pentium 90 with Phoenix BIOS Hangs on Shutdown
 
+{% raw %}
+
 	Article: Q134533
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/134/Q134533/
 	
 	=============================================================================
 	
+
+{% endraw %}

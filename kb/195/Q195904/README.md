@@ -6,6 +6,8 @@ permalink: /kb/195/Q195904/
 
 ## Q195904: NTVDM Is Not Initialized After TCP/IP Removal
 
+{% raw %}
+
 	Article: Q195904
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/195/Q195904/
 	
 	=============================================================================
 	
+
+{% endraw %}

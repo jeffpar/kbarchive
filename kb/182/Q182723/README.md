@@ -6,6 +6,8 @@ permalink: /kb/182/Q182723/
 
 ## Q182723: Problems Adding New Hardware in Windows 95
 
+{% raw %}
+
 	Article: Q182723
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -121,3 +123,5 @@ permalink: /kb/182/Q182723/
 	
 	=============================================================================
 	
+
+{% endraw %}

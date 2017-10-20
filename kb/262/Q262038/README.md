@@ -6,6 +6,8 @@ permalink: /kb/262/Q262038/
 
 ## Q262038: PRB: COMRETURNERROR Fails if Error Occurs During Server Creation
 
+{% raw %}
+
 	Article: Q262038
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -195,3 +197,5 @@ permalink: /kb/262/Q262038/
 	
 	=============================================================================
 	
+
+{% endraw %}

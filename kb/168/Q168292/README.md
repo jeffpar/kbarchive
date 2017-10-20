@@ -6,6 +6,8 @@ permalink: /kb/168/Q168292/
 
 ## Q168292: XFOR: Err Msg: (RAS) Phone Book Cannot Be Opened
 
+{% raw %}
+
 	Article: Q168292
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/168/Q168292/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186087/
 
 ## Q186087: PRB: Perceived Problems Populating General Fields Using Word
 
+{% raw %}
+
 	Article: Q186087
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -125,3 +127,5 @@ permalink: /kb/186/Q186087/
 	
 	=============================================================================
 	
+
+{% endraw %}

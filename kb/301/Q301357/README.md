@@ -6,6 +6,8 @@ permalink: /kb/301/Q301357/
 
 ## Q301357: PRB: DLLs Not Unloaded After Calling CoFreeUnusedLibraries
 
+{% raw %}
+
 	Article: Q301357
 	Product(s): Microsoft Programming Utilities
 	Version(s): (all versions and editions),4.0
@@ -162,3 +164,5 @@ permalink: /kb/301/Q301357/
 	
 	=============================================================================
 	
+
+{% endraw %}

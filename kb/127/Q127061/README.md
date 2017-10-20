@@ -6,6 +6,8 @@ permalink: /kb/127/Q127061/
 
 ## Q127061: FIX: Add File Dialog Forces Uppercase Filename
 
+{% raw %}
+
 	Article: Q127061
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.10
@@ -48,3 +50,5 @@ permalink: /kb/127/Q127061/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127881/
 
 ## Q127881: Modem Fails to Disconnect After Selecting Hang Up in RASPHONE
 
+{% raw %}
+
 	Article: Q127881
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 4.0
@@ -80,3 +82,5 @@ permalink: /kb/127/Q127881/
 	
 	=============================================================================
 	
+
+{% endraw %}

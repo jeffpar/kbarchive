@@ -6,6 +6,8 @@ permalink: /kb/118/Q118564/
 
 ## Q118564: SMTP: Maintaining Config and Addresses On Re-Install, Upgrade
 
+{% raw %}
+
 	Article: Q118564
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -85,3 +87,5 @@ permalink: /kb/118/Q118564/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133007/
 
 ## Q133007: Flight Simulator 5.1: CD-ROM Add-Ons Readme.doc File Contents
 
+{% raw %}
+
 	Article: Q133007
 	Product(s): Microsoft Home Games
 	Version(s): 5.1
@@ -71,3 +73,5 @@ permalink: /kb/133/Q133007/
 	
 	=============================================================================
 	
+
+{% endraw %}

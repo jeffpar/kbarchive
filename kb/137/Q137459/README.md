@@ -6,6 +6,8 @@ permalink: /kb/137/Q137459/
 
 ## Q137459: Multimedia: Printer Error pr807, pr808, Etc.
 
+{% raw %}
+
 	Article: Q137459
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0; WINDOWS:1.0,3.1,3.11
@@ -155,3 +157,5 @@ permalink: /kb/137/Q137459/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192747/
 
 ## Q192747: XFOR: Linkage SNADS Connector Does Not Handle NDR Properly
 
+{% raw %}
+
 	Article: Q192747
 	Product(s): Microsoft Exchange
 	Version(s): 3.2
@@ -140,3 +142,5 @@ permalink: /kb/192/Q192747/
 	
 	=============================================================================
 	
+
+{% endraw %}

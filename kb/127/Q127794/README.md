@@ -6,6 +6,8 @@ permalink: /kb/127/Q127794/
 
 ## Q127794: Cannot Load TSRs in NetWare Login Script
 
+{% raw %}
+
 	Article: Q127794
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/127/Q127794/
 	
 	=============================================================================
 	
+
+{% endraw %}

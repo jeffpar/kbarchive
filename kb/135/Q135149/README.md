@@ -6,6 +6,8 @@ permalink: /kb/135/Q135149/
 
 ## Q135149: Cannot Use Dial-Up Networking on Server-Based-Setup Client
 
+{% raw %}
+
 	Article: Q135149
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -85,3 +87,5 @@ permalink: /kb/135/Q135149/
 	
 	=============================================================================
 	
+
+{% endraw %}

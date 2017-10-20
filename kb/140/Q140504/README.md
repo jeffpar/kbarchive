@@ -6,6 +6,8 @@ permalink: /kb/140/Q140504/
 
 ## Q140504: Err Msg: Error Happened While Writing to Msbatch.inf
 
+{% raw %}
+
 	Article: Q140504
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/140/Q140504/
 	
 	=============================================================================
 	
+
+{% endraw %}

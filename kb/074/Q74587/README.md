@@ -6,6 +6,8 @@ permalink: /kb/074/Q74587/
 
 ## Q74587: Older Mouse Systems Drivers Incompatible with MS-DOS 5.0 Shell
 
+{% raw %}
+
 	Article: Q74587
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -37,3 +39,5 @@ permalink: /kb/074/Q74587/
 	
 	=============================================================================
 	
+
+{% endraw %}

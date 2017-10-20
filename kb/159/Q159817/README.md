@@ -6,6 +6,8 @@ permalink: /kb/159/Q159817/
 
 ## Q159817: WD97: Can't Connect, Insert Database with ODBC and MSQuery
 
+{% raw %}
+
 	Article: Q159817
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/159/Q159817/
 	
 	=============================================================================
 	
+
+{% endraw %}

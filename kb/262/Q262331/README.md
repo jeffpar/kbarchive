@@ -6,6 +6,8 @@ permalink: /kb/262/Q262331/
 
 ## Q262331: Allegiance: Ship Rolls Out of Control
 
+{% raw %}
+
 	Article: Q262331
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -185,3 +187,5 @@ permalink: /kb/262/Q262331/
 	
 	=============================================================================
 	
+
+{% endraw %}

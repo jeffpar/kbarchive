@@ -6,6 +6,8 @@ permalink: /kb/131/Q131425/
 
 ## Q131425: Windows NT Recognizes Only One Processor On HP XU 5/90C
 
+{% raw %}
+
 	Article: Q131425
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -65,3 +67,5 @@ permalink: /kb/131/Q131425/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135721/
 
 ## Q135721: No InfoMover NE4100 PCMCIA Adapter Choice in Control Panel
 
+{% raw %}
+
 	Article: Q135721
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135721/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186255/
 
 ## Q186255: SMS: File Corruption During File Transfer from Help Desk
 
+{% raw %}
+
 	Article: Q186255
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -73,3 +75,5 @@ permalink: /kb/186/Q186255/
 	
 	=============================================================================
 	
+
+{% endraw %}

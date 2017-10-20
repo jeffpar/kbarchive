@@ -6,6 +6,8 @@ permalink: /kb/186/Q186024/
 
 ## Q186024: MTM2: Trucks Are Black and Black Boxes Surround Scenery Objects
 
+{% raw %}
+
 	Article: Q186024
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -86,3 +88,5 @@ permalink: /kb/186/Q186024/
 	
 	=============================================================================
 	
+
+{% endraw %}

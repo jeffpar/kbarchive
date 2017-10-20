@@ -6,6 +6,8 @@ permalink: /kb/059/Q59703/
 
 ## Q59703: 3Com 3+Share Messaging Service and Windows 3.0
 
+{% raw %}
+
 	Article: Q59703
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/059/Q59703/
 	
 	=============================================================================
 	
+
+{% endraw %}

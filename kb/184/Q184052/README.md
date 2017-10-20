@@ -6,6 +6,8 @@ permalink: /kb/184/Q184052/
 
 ## Q184052: XFOR: Reply Address Wrong in cc:Mail ADE Relationship
 
+{% raw %}
+
 	Article: Q184052
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -189,3 +191,5 @@ permalink: /kb/184/Q184052/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/286/Q286464/
 
 ## Q286464: PRB: Error 7008 Occurs When Using DB2OLEDB Provider with DB2/400
 
+{% raw %}
+
 	Article: Q286464
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3,4.0 SP4
@@ -128,3 +130,5 @@ permalink: /kb/286/Q286464/
 	
 	=============================================================================
 	
+
+{% endraw %}

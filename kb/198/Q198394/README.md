@@ -6,6 +6,8 @@ permalink: /kb/198/Q198394/
 
 ## Q198394: Combat Flight Simulator: Aircraft Lighting Is Not Available
 
+{% raw %}
+
 	Article: Q198394
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/198/Q198394/
 	
 	=============================================================================
 	
+
+{% endraw %}

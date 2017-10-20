@@ -6,6 +6,8 @@ permalink: /kb/107/Q107598/
 
 ## Q107598: WFWG Err Msg: Warning: A Serious Disk Error Has Occurred...
 
+{% raw %}
+
 	Article: Q107598
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -53,3 +55,5 @@ permalink: /kb/107/Q107598/
 	
 	=============================================================================
 	
+
+{% endraw %}

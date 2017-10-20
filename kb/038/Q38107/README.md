@@ -6,6 +6,8 @@ permalink: /kb/038/Q38107/
 
 ## Q38107: Windows Support of Hewlett-Packard Font Cartridges
 
+{% raw %}
+
 	Article: Q38107
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.0,3.0a
@@ -74,3 +76,5 @@ permalink: /kb/038/Q38107/
 	
 	=============================================================================
 	
+
+{% endraw %}

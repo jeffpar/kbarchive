@@ -6,6 +6,8 @@ permalink: /kb/288/Q288202/
 
 ## Q288202: &quot;SSCP Connection Already Open&quot; Error Starting 257th 3270 Session
 
+{% raw %}
+
 	Article: Q288202
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -97,3 +99,5 @@ permalink: /kb/288/Q288202/
 	
 	=============================================================================
 	
+
+{% endraw %}

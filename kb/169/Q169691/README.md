@@ -6,6 +6,8 @@ permalink: /kb/169/Q169691/
 
 ## Q169691: XCON: MTA Slow to X.400 Links
 
+{% raw %}
+
 	Article: Q169691
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -70,3 +72,5 @@ permalink: /kb/169/Q169691/
 	
 	=============================================================================
 	
+
+{% endraw %}

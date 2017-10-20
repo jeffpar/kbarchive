@@ -6,6 +6,8 @@ permalink: /kb/169/Q169678/
 
 ## Q169678: XADM: IMS and IS Use Quoted-Printable Encoding For MIME/JIS
 
+{% raw %}
+
 	Article: Q169678
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -61,3 +63,5 @@ permalink: /kb/169/Q169678/
 	
 	=============================================================================
 	
+
+{% endraw %}

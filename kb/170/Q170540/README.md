@@ -6,6 +6,8 @@ permalink: /kb/170/Q170540/
 
 ## Q170540: XFOR: All Mailboxes Replicate After Running Migsmtp.exe
 
+{% raw %}
+
 	Article: Q170540
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/170/Q170540/
 	
 	=============================================================================
 	
+
+{% endraw %}

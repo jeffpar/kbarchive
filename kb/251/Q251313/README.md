@@ -6,6 +6,8 @@ permalink: /kb/251/Q251313/
 
 ## Q251313: How to Configure SNA Server for PU Passthrough
 
+{% raw %}
+
 	Article: Q251313
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -98,3 +100,5 @@ permalink: /kb/251/Q251313/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59598/
 
 ## Q59598: Mac AL: Sample Gateway Message on AppleLink
 
+{% raw %}
+
 	Article: Q59598
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -68,3 +70,5 @@ permalink: /kb/059/Q59598/
 	
 	=============================================================================
 	
+
+{% endraw %}

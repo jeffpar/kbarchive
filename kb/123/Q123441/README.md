@@ -6,6 +6,8 @@ permalink: /kb/123/Q123441/
 
 ## Q123441: Windows 95 DriveSpace Err Msg: Windows Cannot Perform...
 
+{% raw %}
+
 	Article: Q123441
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/123/Q123441/
 	
 	=============================================================================
 	
+
+{% endraw %}

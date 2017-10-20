@@ -6,6 +6,8 @@ permalink: /kb/190/Q190796/
 
 ## Q190796: PRB: VC Installation Hangs With Message &quot;Updating Registry&quot;
 
+{% raw %}
+
 	Article: Q190796
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -78,3 +80,5 @@ permalink: /kb/190/Q190796/
 	
 	=============================================================================
 	
+
+{% endraw %}

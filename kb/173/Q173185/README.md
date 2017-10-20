@@ -6,6 +6,8 @@ permalink: /kb/173/Q173185/
 
 ## Q173185: XCLN: Err Msg: The Schedule File Could Not Be Opened
 
+{% raw %}
+
 	Article: Q173185
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,7.0,7.5; Win95:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/173/Q173185/
 	
 	=============================================================================
 	
+
+{% endraw %}

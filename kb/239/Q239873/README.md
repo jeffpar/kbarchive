@@ -6,6 +6,8 @@ permalink: /kb/239/Q239873/
 
 ## Q239873: Application Security May Not Work After Improper Shutdown
 
+{% raw %}
+
 	Article: Q239873
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -59,3 +61,5 @@ permalink: /kb/239/Q239873/
 	
 	=============================================================================
 	
+
+{% endraw %}

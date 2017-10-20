@@ -6,6 +6,8 @@ permalink: /kb/161/Q161565/
 
 ## Q161565: Modifying Setup.log to Expedite File Repair
 
+{% raw %}
+
 	Article: Q161565
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -76,3 +78,5 @@ permalink: /kb/161/Q161565/
 	
 	=============================================================================
 	
+
+{% endraw %}

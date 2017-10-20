@@ -6,6 +6,8 @@ permalink: /kb/164/Q164833/
 
 ## Q164833: XADM: EDBUTIL and ISINTEG Fail to Complete on Corrupted Store
 
+{% raw %}
+
 	Article: Q164833
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/164/Q164833/
 	
 	=============================================================================
 	
+
+{% endraw %}

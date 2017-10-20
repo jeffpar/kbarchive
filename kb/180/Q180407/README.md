@@ -6,6 +6,8 @@ permalink: /kb/180/Q180407/
 
 ## Q180407: SMS: An Error Was Reported While Executing the Database Upgrade
 
+{% raw %}
+
 	Article: Q180407
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -87,3 +89,5 @@ permalink: /kb/180/Q180407/
 	
 	=============================================================================
 	
+
+{% endraw %}

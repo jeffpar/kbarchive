@@ -6,6 +6,8 @@ permalink: /kb/252/Q252689/
 
 ## Q252689: XCON: Extended Characters in Attachment Names Are Mishandled
 
+{% raw %}
+
 	Article: Q252689
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/252/Q252689/
 	
 	=============================================================================
 	
+
+{% endraw %}

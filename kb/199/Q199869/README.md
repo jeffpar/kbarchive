@@ -6,6 +6,8 @@ permalink: /kb/199/Q199869/
 
 ## Q199869: SMS: Assigning Class and Instance Security Rights
 
+{% raw %}
+
 	Article: Q199869
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -79,3 +81,5 @@ permalink: /kb/199/Q199869/
 	
 	=============================================================================
 	
+
+{% endraw %}

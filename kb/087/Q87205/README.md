@@ -6,6 +6,8 @@ permalink: /kb/087/Q87205/
 
 ## Q87205: PROFS: Typical AUTOEXEC.BAT &amp; CONFIG.SYS Files for Gateway PC
 
+{% raw %}
+
 	Article: Q87205
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -93,3 +95,5 @@ permalink: /kb/087/Q87205/
 	
 	=============================================================================
 	
+
+{% endraw %}

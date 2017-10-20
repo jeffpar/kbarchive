@@ -6,6 +6,8 @@ permalink: /kb/132/Q132659/
 
 ## Q132659: Cannot Start WordPerfect 6.0a After Local Reboot
 
+{% raw %}
+
 	Article: Q132659
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/132/Q132659/
 	
 	=============================================================================
 	
+
+{% endraw %}

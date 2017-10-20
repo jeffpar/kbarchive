@@ -6,6 +6,8 @@ permalink: /kb/192/Q192088/
 
 ## Q192088: How to Install MSN Using the Windows 98 CD-ROM
 
+{% raw %}
+
 	Article: Q192088
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.52
@@ -77,3 +79,5 @@ permalink: /kb/192/Q192088/
 	
 	=============================================================================
 	
+
+{% endraw %}

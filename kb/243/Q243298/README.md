@@ -6,6 +6,8 @@ permalink: /kb/243/Q243298/
 
 ## Q243298: FIX: Err Msg: C2668: InlineIsEqualGUID : Ambiguous Call...
 
+{% raw %}
+
 	Article: Q243298
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -91,3 +93,5 @@ permalink: /kb/243/Q243298/
 	
 	=============================================================================
 	
+
+{% endraw %}

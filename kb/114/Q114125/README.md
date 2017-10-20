@@ -6,6 +6,8 @@ permalink: /kb/114/Q114125/
 
 ## Q114125: PC WRmt: Simple MAPI Programs Only Send Mail with Remote
 
+{% raw %}
+
 	Article: Q114125
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -55,3 +57,5 @@ permalink: /kb/114/Q114125/
 	
 	=============================================================================
 	
+
+{% endraw %}

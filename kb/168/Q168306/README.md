@@ -6,6 +6,8 @@ permalink: /kb/168/Q168306/
 
 ## Q168306: Err Msg: Disconnected from the Remote Server
 
+{% raw %}
+
 	Article: Q168306
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -61,3 +63,5 @@ permalink: /kb/168/Q168306/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123249/
 
 ## Q123249: After Running ATI Mach32 Setup, System Uses Safe Mode Startup
 
+{% raw %}
+
 	Article: Q123249
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/123/Q123249/
 	
 	=============================================================================
 	
+
+{% endraw %}

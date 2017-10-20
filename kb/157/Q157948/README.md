@@ -6,6 +6,8 @@ permalink: /kb/157/Q157948/
 
 ## Q157948: XCLN: StuffIt Delux Files Received with Incorrect File
 
+{% raw %}
+
 	Article: Q157948
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -91,3 +93,5 @@ permalink: /kb/157/Q157948/
 	
 	=============================================================================
 	
+
+{% endraw %}

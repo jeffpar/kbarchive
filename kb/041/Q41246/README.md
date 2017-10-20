@@ -6,6 +6,8 @@ permalink: /kb/041/Q41246/
 
 ## Q41246: How to Use Environment Variable Substitution in Batch Files
 
+{% raw %}
+
 	Article: Q41246
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -76,3 +78,5 @@ permalink: /kb/041/Q41246/
 	
 	=============================================================================
 	
+
+{% endraw %}

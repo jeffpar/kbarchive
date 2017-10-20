@@ -6,6 +6,8 @@ permalink: /kb/178/Q178092/
 
 ## Q178092: XADM: Modifying Cross-Posted Message Crashes Information Store
 
+{% raw %}
+
 	Article: Q178092
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -54,3 +56,5 @@ permalink: /kb/178/Q178092/
 	
 	=============================================================================
 	
+
+{% endraw %}

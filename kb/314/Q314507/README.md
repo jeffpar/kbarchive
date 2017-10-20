@@ -6,6 +6,8 @@ permalink: /kb/314/Q314507/
 
 ## Q314507: FS2002: Err Msg: System Is Not Able to Use Hardware Acceleration
 
+{% raw %}
+
 	Article: Q314507
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -173,3 +175,5 @@ permalink: /kb/314/Q314507/
 	
 	=============================================================================
 	
+
+{% endraw %}

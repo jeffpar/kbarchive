@@ -6,6 +6,8 @@ permalink: /kb/316/Q316326/
 
 ## Q316326: Asheron's Call: Game Quits or Err Msg: Client Has Encountered...
 
+{% raw %}
+
 	Article: Q316326
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -74,3 +76,5 @@ permalink: /kb/316/Q316326/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65794/
 
 ## Q65794: Using Quarterdeck QEMM386 with Windows 3.0
 
+{% raw %}
+
 	Article: Q65794
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -157,3 +159,5 @@ permalink: /kb/065/Q65794/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234839/
 
 ## Q234839: MOD2000: Admin Can't Check In File with VBA Source Code Control
 
+{% raw %}
+
 	Article: Q234839
 	Product(s): Microsoft SourceSafe
 	Version(s): ; WINDOWS:6.0
@@ -92,3 +94,5 @@ permalink: /kb/234/Q234839/
 	
 	=============================================================================
 	
+
+{% endraw %}

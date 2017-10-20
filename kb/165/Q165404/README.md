@@ -6,6 +6,8 @@ permalink: /kb/165/Q165404/
 
 ## Q165404: NTVDM AV on Servers with Exchange cc:Mail Connector
 
+{% raw %}
+
 	Article: Q165404
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -184,3 +186,5 @@ permalink: /kb/165/Q165404/
 	
 	=============================================================================
 	
+
+{% endraw %}

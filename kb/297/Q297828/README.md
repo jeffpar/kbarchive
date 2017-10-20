@@ -6,6 +6,8 @@ permalink: /kb/297/Q297828/
 
 ## Q297828: XADM: ESEPERF!CollectPerformanceData Causes Winlogon to Crash
 
+{% raw %}
+
 	Article: Q297828
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a,5.5,5.5 SP1,5.5 SP2,5.5 S
@@ -100,3 +102,5 @@ permalink: /kb/297/Q297828/
 	
 	=============================================================================
 	
+
+{% endraw %}

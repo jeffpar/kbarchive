@@ -6,6 +6,8 @@ permalink: /kb/169/Q169928/
 
 ## Q169928: HOWTO: Open a SourceSafe Database with OLE Automation in C++
 
+{% raw %}
+
 	Article: Q169928
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/169/Q169928/
 	
 	=============================================================================
 	
+
+{% endraw %}

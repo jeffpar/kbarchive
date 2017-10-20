@@ -6,6 +6,8 @@ permalink: /kb/156/Q156579/
 
 ## Q156579: PRB: ACTIVATE WINDOW DEBUG Activates Debug Output Window
 
+{% raw %}
+
 	Article: Q156579
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -66,3 +68,5 @@ permalink: /kb/156/Q156579/
 	
 	=============================================================================
 	
+
+{% endraw %}

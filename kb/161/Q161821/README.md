@@ -6,6 +6,8 @@ permalink: /kb/161/Q161821/
 
 ## Q161821: PRB: Remote OLE Automation: Using Access Control Lists (ACL)
 
+{% raw %}
+
 	Article: Q161821
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -162,3 +164,5 @@ permalink: /kb/161/Q161821/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165915/
 
 ## Q165915: Explanation of Jet Database for Windows NT 4.0
 
+{% raw %}
+
 	Article: Q165915
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -88,3 +90,5 @@ permalink: /kb/165/Q165915/
 	
 	=============================================================================
 	
+
+{% endraw %}

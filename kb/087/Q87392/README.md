@@ -6,6 +6,8 @@ permalink: /kb/087/Q87392/
 
 ## Q87392: PC DB: Which Programs Access the GLOBAL.GLB File
 
+{% raw %}
+
 	Article: Q87392
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -38,3 +40,5 @@ permalink: /kb/087/Q87392/
 	
 	=============================================================================
 	
+
+{% endraw %}

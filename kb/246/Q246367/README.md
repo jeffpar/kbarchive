@@ -6,6 +6,8 @@ permalink: /kb/246/Q246367/
 
 ## Q246367: Interix Does Not Support the Crypt Command
 
+{% raw %}
+
 	Article: Q246367
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -44,3 +46,5 @@ permalink: /kb/246/Q246367/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118658/
 
 ## Q118658: PRB: Problem Entering Footnotes in Word 6.0
 
+{% raw %}
+
 	Article: Q118658
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0
@@ -69,3 +71,5 @@ permalink: /kb/118/Q118658/
 	
 	=============================================================================
 	
+
+{% endraw %}

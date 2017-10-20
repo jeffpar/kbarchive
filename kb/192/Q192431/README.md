@@ -6,6 +6,8 @@ permalink: /kb/192/Q192431/
 
 ## Q192431: No Prompt to Save File After Deleting Empty Table Cells
 
+{% raw %}
+
 	Article: Q192431
 	Product(s): Word Front Page
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/192/Q192431/
 	
 	=============================================================================
 	
+
+{% endraw %}

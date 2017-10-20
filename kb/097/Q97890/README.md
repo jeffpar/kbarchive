@@ -6,6 +6,8 @@ permalink: /kb/097/Q97890/
 
 ## Q97890: PC WRmt: Cannot Download More Than 50 Messages at One Time
 
+{% raw %}
+
 	Article: Q97890
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -49,3 +51,5 @@ permalink: /kb/097/Q97890/
 	
 	=============================================================================
 	
+
+{% endraw %}

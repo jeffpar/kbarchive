@@ -6,6 +6,8 @@ permalink: /kb/274/Q274647/
 
 ## Q274647: CFS2: Large Areas of Terrain Are Displayed Without Textures
 
+{% raw %}
+
 	Article: Q274647
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -82,3 +84,5 @@ permalink: /kb/274/Q274647/
 	
 	=============================================================================
 	
+
+{% endraw %}

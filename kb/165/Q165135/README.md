@@ -6,6 +6,8 @@ permalink: /kb/165/Q165135/
 
 ## Q165135: XCLN: Client Setup Requires a Restart During First Install
 
+{% raw %}
+
 	Article: Q165135
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; Win95:4.0
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165135/
 	
 	=============================================================================
 	
+
+{% endraw %}

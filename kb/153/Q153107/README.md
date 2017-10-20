@@ -6,6 +6,8 @@ permalink: /kb/153/Q153107/
 
 ## Q153107: Incorrect Configuration of TEMPDB Causes Query Execution Error
 
+{% raw %}
+
 	Article: Q153107
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153107/
 	
 	=============================================================================
 	
+
+{% endraw %}

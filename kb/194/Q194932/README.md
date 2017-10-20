@@ -6,6 +6,8 @@ permalink: /kb/194/Q194932/
 
 ## Q194932: Implicit Incoming Remote LU Cannot Be Set to None with SNACFG
 
+{% raw %}
+
 	Article: Q194932
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -85,3 +87,5 @@ permalink: /kb/194/Q194932/
 	
 	=============================================================================
 	
+
+{% endraw %}

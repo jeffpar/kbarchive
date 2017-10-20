@@ -6,6 +6,8 @@ permalink: /kb/263/Q263947/
 
 ## Q263947: XADM: Messages Stuck in Outbox with Antivirus API in Use
 
+{% raw %}
+
 	Article: Q263947
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -85,3 +87,5 @@ permalink: /kb/263/Q263947/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74586/
 
 ## Q74586: Cosmos Revelation Database G.2 May Cause Intermittent Hanging
 
+{% raw %}
+
 	Article: Q74586
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -51,3 +53,5 @@ permalink: /kb/074/Q74586/
 	
 	=============================================================================
 	
+
+{% endraw %}

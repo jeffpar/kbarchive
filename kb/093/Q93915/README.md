@@ -6,6 +6,8 @@ permalink: /kb/093/Q93915/
 
 ## Q93915: INFO: MFC Application Idle Processing and Power Consumption
 
+{% raw %}
+
 	Article: Q93915
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -101,3 +103,5 @@ permalink: /kb/093/Q93915/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172016/
 
 ## Q172016: WD97: Some Text Attributes Lost Inserting Corel Graphic (.cdr)
 
+{% raw %}
+
 	Article: Q172016
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/172/Q172016/
 	
 	=============================================================================
 	
+
+{% endraw %}

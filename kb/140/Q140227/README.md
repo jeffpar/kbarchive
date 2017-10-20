@@ -6,6 +6,8 @@ permalink: /kb/140/Q140227/
 
 ## Q140227: BUG: MS-DOS Applications May Fail Printing to NetWare Printer
 
+{% raw %}
+
 	Article: Q140227
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -55,3 +57,5 @@ permalink: /kb/140/Q140227/
 	
 	=============================================================================
 	
+
+{% endraw %}

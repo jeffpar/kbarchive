@@ -6,6 +6,8 @@ permalink: /kb/171/Q171627/
 
 ## Q171627: Incorrect Data Printed When PDF File Used with AS/400 Printing
 
+{% raw %}
+
 	Article: Q171627
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -64,3 +66,5 @@ permalink: /kb/171/Q171627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191695/
 
 ## Q191695: PRB: VFP ODBC Driver Errors When Using Left Outer Join
 
+{% raw %}
+
 	Article: Q191695
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.6,5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/191/Q191695/
 	
 	=============================================================================
 	
+
+{% endraw %}

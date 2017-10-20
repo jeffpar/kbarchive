@@ -6,6 +6,8 @@ permalink: /kb/162/Q162577/
 
 ## Q162577: STOP: C0000143 MISSING DISPLAY_DRIVER.DLL
 
+{% raw %}
+
 	Article: Q162577
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -94,3 +96,5 @@ permalink: /kb/162/Q162577/
 	
 	=============================================================================
 	
+
+{% endraw %}

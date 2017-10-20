@@ -6,6 +6,8 @@ permalink: /kb/263/Q263953/
 
 ## Q263953: &quot;Modify Error 18032&quot; Error When Creating New Management Agent
 
+{% raw %}
+
 	Article: Q263953
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -66,3 +68,5 @@ permalink: /kb/263/Q263953/
 	
 	=============================================================================
 	
+
+{% endraw %}

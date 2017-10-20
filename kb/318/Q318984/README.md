@@ -6,6 +6,8 @@ permalink: /kb/318/Q318984/
 
 ## Q318984: How To Change The Default Download Location For Files In Interne
 
+{% raw %}
+
 	Article: Q318984
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/318/Q318984/
 	
 	=============================================================================
 	
+
+{% endraw %}

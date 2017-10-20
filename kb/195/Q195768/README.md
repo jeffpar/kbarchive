@@ -6,6 +6,8 @@ permalink: /kb/195/Q195768/
 
 ## Q195768: HOWTO: Profile an ISAPI DLL
 
+{% raw %}
+
 	Article: Q195768
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -93,3 +95,5 @@ permalink: /kb/195/Q195768/
 	
 	=============================================================================
 	
+
+{% endraw %}

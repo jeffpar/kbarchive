@@ -6,6 +6,8 @@ permalink: /kb/140/Q140537/
 
 ## Q140537: HOWTO: Change the Data Directory Location for Integration Apps
 
+{% raw %}
+
 	Article: Q140537
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/140/Q140537/
 	
 	=============================================================================
 	
+
+{% endraw %}

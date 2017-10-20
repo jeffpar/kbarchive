@@ -6,6 +6,8 @@ permalink: /kb/155/Q155054/
 
 ## Q155054: PRB: Visual SourceSafe Occasionally Saves .FRX File as Text
 
+{% raw %}
+
 	Article: Q155054
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.00
@@ -85,3 +87,5 @@ permalink: /kb/155/Q155054/
 	
 	=============================================================================
 	
+
+{% endraw %}

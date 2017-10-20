@@ -6,6 +6,8 @@ permalink: /kb/240/Q240017/
 
 ## Q240017: FIX: Selecting Multiple ResourceView Controls Causes VC to Fail
 
+{% raw %}
+
 	Article: Q240017
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -88,3 +90,5 @@ permalink: /kb/240/Q240017/
 	
 	=============================================================================
 	
+
+{% endraw %}

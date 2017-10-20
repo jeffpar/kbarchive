@@ -6,6 +6,8 @@ permalink: /kb/138/Q138667/
 
 ## Q138667: New Video Card Not Detected After Replacing Trident Card
 
+{% raw %}
+
 	Article: Q138667
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/138/Q138667/
 	
 	=============================================================================
 	
+
+{% endraw %}

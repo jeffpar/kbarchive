@@ -6,6 +6,8 @@ permalink: /kb/185/Q185451/
 
 ## Q185451: HOWTO: Display Descriptions of Menu Items When Highlighted
 
+{% raw %}
+
 	Article: Q185451
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -303,3 +305,5 @@ permalink: /kb/185/Q185451/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275016/
 
 ## Q275016: SMS: Access Violation with Windows CE Platform Builder Add-on
 
+{% raw %}
+
 	Article: Q275016
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -71,3 +73,5 @@ permalink: /kb/275/Q275016/
 	
 	=============================================================================
 	
+
+{% endraw %}

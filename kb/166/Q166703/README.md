@@ -6,6 +6,8 @@ permalink: /kb/166/Q166703/
 
 ## Q166703: WD97: Known Video Driver Conflicts in Word 97
 
+{% raw %}
+
 	Article: Q166703
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -187,3 +189,5 @@ permalink: /kb/166/Q166703/
 	
 	=============================================================================
 	
+
+{% endraw %}

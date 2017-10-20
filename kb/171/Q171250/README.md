@@ -6,6 +6,8 @@ permalink: /kb/171/Q171250/
 
 ## Q171250: Host Account Cache Database Is Lost When Promoted To Master
 
+{% raw %}
+
 	Article: Q171250
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -64,3 +66,5 @@ permalink: /kb/171/Q171250/
 	
 	=============================================================================
 	
+
+{% endraw %}

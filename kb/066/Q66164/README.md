@@ -6,6 +6,8 @@ permalink: /kb/066/Q66164/
 
 ## Q66164: Versions of Utilities (LINK, LIB, Etc.) Shipped with BASIC
 
+{% raw %}
+
 	Article: Q66164
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -83,3 +85,5 @@ permalink: /kb/066/Q66164/
 	
 	BASIC PDS 7.10 introduces the Programmer's WorkBench (PWB.EXE) version
 	1.10 for mixed-language and OS/2 programming.
+
+{% endraw %}

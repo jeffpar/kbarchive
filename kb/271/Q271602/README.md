@@ -6,6 +6,8 @@ permalink: /kb/271/Q271602/
 
 ## Q271602: SMS: MSI Packages May Not Work When Distributed by SMS
 
+{% raw %}
+
 	Article: Q271602
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -80,3 +82,5 @@ permalink: /kb/271/Q271602/
 	
 	=============================================================================
 	
+
+{% endraw %}

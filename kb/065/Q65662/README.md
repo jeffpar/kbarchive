@@ -6,6 +6,8 @@ permalink: /kb/065/Q65662/
 
 ## Q65662: WINDIR Environment Variable Set When Running Windows
 
+{% raw %}
+
 	Article: Q65662
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -38,3 +40,5 @@ permalink: /kb/065/Q65662/
 	
 	=============================================================================
 	
+
+{% endraw %}

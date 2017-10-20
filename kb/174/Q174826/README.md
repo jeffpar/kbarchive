@@ -6,6 +6,8 @@ permalink: /kb/174/Q174826/
 
 ## Q174826: Printing Using EMF May Not Allow Text to Wrap Correctly
 
+{% raw %}
+
 	Article: Q174826
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/174/Q174826/
 	
 	=============================================================================
 	
+
+{% endraw %}

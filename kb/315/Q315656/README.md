@@ -6,6 +6,8 @@ permalink: /kb/315/Q315656/
 
 ## Q315656: FIX: USE Table CONNSTRING Ignores NODATA and ALIAS Clauses
 
+{% raw %}
+
 	Article: Q315656
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -88,3 +90,5 @@ permalink: /kb/315/Q315656/
 	
 	=============================================================================
 	
+
+{% endraw %}

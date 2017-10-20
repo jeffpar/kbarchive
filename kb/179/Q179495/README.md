@@ -6,6 +6,8 @@ permalink: /kb/179/Q179495/
 
 ## Q179495: WD97: Different Date Formats Listed on Insert Date and Time List
 
+{% raw %}
+
 	Article: Q179495
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -103,3 +105,5 @@ permalink: /kb/179/Q179495/
 	
 	=============================================================================
 	
+
+{% endraw %}

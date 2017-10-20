@@ -6,6 +6,8 @@ permalink: /kb/199/Q199295/
 
 ## Q199295: PRB: VXD Containing Constant Data May Fail To Load in Windows 95
 
+{% raw %}
+
 	Article: Q199295
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/199/Q199295/
 	
 	=============================================================================
 	
+
+{% endraw %}

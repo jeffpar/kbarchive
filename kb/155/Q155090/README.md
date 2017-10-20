@@ -6,6 +6,8 @@ permalink: /kb/155/Q155090/
 
 ## Q155090: BUG: Setup Wizard Doesn't Have Netsetup Distribution Option
 
+{% raw %}
+
 	Article: Q155090
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00b
@@ -67,3 +69,5 @@ permalink: /kb/155/Q155090/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64592/
 
 ## Q64592: &quot;Overflow&quot; from &quot;&amp;H nn&quot; or &quot;&amp;O nn&quot; with Illegal Embedded Space
 
+{% raw %}
+
 	Article: Q64592
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -39,3 +41,5 @@ permalink: /kb/064/Q64592/
 	
 	QuickBASIC compiler versions 3.00 and earlier ignore this syntax error
 	and interpret the faulty information as a zero (0).
+
+{% endraw %}

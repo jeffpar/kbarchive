@@ -6,6 +6,8 @@ permalink: /kb/068/Q68679/
 
 ## Q68679: ASD: Add a Point After Feature
 
+{% raw %}
+
 	Article: Q68679
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/068/Q68679/
 	
 	=============================================================================
 	
+
+{% endraw %}

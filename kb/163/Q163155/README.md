@@ -6,6 +6,8 @@ permalink: /kb/163/Q163155/
 
 ## Q163155: WD97: No Shortcut Menu in Find and Replace Dialog Box
 
+{% raw %}
+
 	Article: Q163155
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163155/
 	
 	=============================================================================
 	
+
+{% endraw %}

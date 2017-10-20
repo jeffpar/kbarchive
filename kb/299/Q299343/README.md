@@ -6,6 +6,8 @@ permalink: /kb/299/Q299343/
 
 ## Q299343: SNMPMON.EXE Is Not Included With The Windows 2000 Resource Kits
 
+{% raw %}
+
 	Article: Q299343
 	Product(s): Microsoft Press
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/299/Q299343/
 	
 	=============================================================================
 	
+
+{% endraw %}

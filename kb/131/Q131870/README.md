@@ -6,6 +6,8 @@ permalink: /kb/131/Q131870/
 
 ## Q131870: Scenes 2.0: More Memory Is Needed To Run Transition Effects
 
+{% raw %}
+
 	Article: Q131870
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131870/
 	
 	=============================================================================
 	
+
+{% endraw %}

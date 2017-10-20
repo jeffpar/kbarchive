@@ -6,6 +6,8 @@ permalink: /kb/264/Q264401/
 
 ## Q264401: XFOR: Finding Instructions for Exchange Notes Connector Setup
 
+{% raw %}
+
 	Article: Q264401
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -42,3 +44,5 @@ permalink: /kb/264/Q264401/
 	
 	=============================================================================
 	
+
+{% endraw %}

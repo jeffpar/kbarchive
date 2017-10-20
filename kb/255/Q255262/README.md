@@ -6,6 +6,8 @@ permalink: /kb/255/Q255262/
 
 ## Q255262: Changes to Site Control File Are Lost After the File Is 434KB
 
+{% raw %}
+
 	Article: Q255262
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -119,3 +121,5 @@ permalink: /kb/255/Q255262/
 	
 	=============================================================================
 	
+
+{% endraw %}

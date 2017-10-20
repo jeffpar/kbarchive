@@ -6,6 +6,8 @@ permalink: /kb/131/Q131944/
 
 ## Q131944: Windows 95/98: How to Delete Temporary Files
 
+{% raw %}
+
 	Article: Q131944
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/131/Q131944/
 	
 	=============================================================================
 	
+
+{% endraw %}

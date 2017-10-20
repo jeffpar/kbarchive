@@ -6,6 +6,8 @@ permalink: /kb/160/Q160649/
 
 ## Q160649: STOP 0x0000000A in Ntoskrnl.exe at Logon to Windows NT 4.0
 
+{% raw %}
+
 	Article: Q160649
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/160/Q160649/
 	
 	=============================================================================
 	
+
+{% endraw %}

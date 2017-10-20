@@ -6,6 +6,8 @@ permalink: /kb/197/Q197225/
 
 ## Q197225: WD97: Text Larger Than Expected or Distorted in Normal View
 
+{% raw %}
+
 	Article: Q197225
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/197/Q197225/
 	
 	=============================================================================
 	
+
+{% endraw %}

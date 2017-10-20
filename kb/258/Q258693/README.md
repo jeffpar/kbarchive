@@ -6,6 +6,8 @@ permalink: /kb/258/Q258693/
 
 ## Q258693: CLUSTER:IIS Server Instance Resources Offline After NNTP Install
 
+{% raw %}
+
 	Article: Q258693
 	Product(s): Internet Information Server
 	Version(s): 2000,5.0
@@ -68,3 +70,5 @@ permalink: /kb/258/Q258693/
 	
 	=============================================================================
 	
+
+{% endraw %}

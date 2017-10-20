@@ -6,6 +6,8 @@ permalink: /kb/128/Q128447/
 
 ## Q128447: Enumeration of Large NTFS Directory Takes a Long Time
 
+{% raw %}
+
 	Article: Q128447
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -48,3 +50,5 @@ permalink: /kb/128/Q128447/
 	
 	=============================================================================
 	
+
+{% endraw %}

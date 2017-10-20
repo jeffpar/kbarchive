@@ -6,6 +6,8 @@ permalink: /kb/130/Q130665/
 
 ## Q130665: PRB: &quot;&lt;arrayname&gt; is not an array&quot; Error When Creating Array
 
+{% raw %}
+
 	Article: Q130665
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/130/Q130665/
 	
 	=============================================================================
 	
+
+{% endraw %}

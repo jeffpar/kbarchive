@@ -6,6 +6,8 @@ permalink: /kb/028/Q28448/
 
 ## Q28448: Example Calling OS/2 DosFindFirst, DosFindNext, DosFindClose
 
+{% raw %}
+
 	Article: Q28448
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -238,3 +240,5 @@ permalink: /kb/028/Q28448/
 	      unsigned&=65536+num
 	   END IF
 	END FUNCTION
+
+{% endraw %}

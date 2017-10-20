@@ -6,6 +6,8 @@ permalink: /kb/163/Q163238/
 
 ## Q163238: Team Manager 97 not present on Step by Step CD-ROM
 
+{% raw %}
+
 	Article: Q163238
 	Product(s): Microsoft Press
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/163/Q163238/
 	
 	=============================================================================
 	
+
+{% endraw %}

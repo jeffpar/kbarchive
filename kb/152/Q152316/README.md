@@ -6,6 +6,8 @@ permalink: /kb/152/Q152316/
 
 ## Q152316: CONDOC.EXE Extract Container/Document Info with MFC DAO
 
+{% raw %}
+
 	Article: Q152316
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -242,3 +244,5 @@ permalink: /kb/152/Q152316/
 	
 	=============================================================================
 	
+
+{% endraw %}

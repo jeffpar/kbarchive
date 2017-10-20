@@ -6,6 +6,8 @@ permalink: /kb/035/Q35289/
 
 ## Q35289: MDA Blinking Bright Text Example
 
+{% raw %}
+
 	Article: Q35289
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -36,3 +38,5 @@ permalink: /kb/035/Q35289/
 	 _settextcolor(oldcolor);
 	 _setbkcolor(oldbkcolor);
 	}
+
+{% endraw %}

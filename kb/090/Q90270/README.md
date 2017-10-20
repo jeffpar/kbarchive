@@ -6,6 +6,8 @@ permalink: /kb/090/Q90270/
 
 ## Q90270: Does Windows for Workgroups Work with Novell TCP/IP?
 
+{% raw %}
+
 	Article: Q90270
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1
@@ -49,3 +51,5 @@ permalink: /kb/090/Q90270/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302468/
 
 ## Q302468: Encarta: Err Msg When You Use Links in Encarta Web Center
 
+{% raw %}
+
 	Article: Q302468
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/302/Q302468/
 	
 	=============================================================================
 	
+
+{% endraw %}

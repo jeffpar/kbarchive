@@ -6,6 +6,8 @@ permalink: /kb/114/Q114806/
 
 ## Q114806: How to Determine the Path to the Macintosh Desktop
 
+{% raw %}
+
 	Article: Q114806
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -107,3 +109,5 @@ permalink: /kb/114/Q114806/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174739/
 
 ## Q174739: XWEB: Empty Rectangles Appear in Outlook Web Access
 
+{% raw %}
+
 	Article: Q174739
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -47,3 +49,5 @@ permalink: /kb/174/Q174739/
 	
 	=============================================================================
 	
+
+{% endraw %}

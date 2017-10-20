@@ -6,6 +6,8 @@ permalink: /kb/181/Q181609/
 
 ## Q181609: NoClick.exe Illustrates Click Method of StatusBar OCX
 
+{% raw %}
+
 	Article: Q181609
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -78,3 +80,5 @@ permalink: /kb/181/Q181609/
 	
 	=============================================================================
 	
+
+{% endraw %}

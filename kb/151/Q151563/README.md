@@ -6,6 +6,8 @@ permalink: /kb/151/Q151563/
 
 ## Q151563: PRB: Err Msg. Unable to Create The Directory &#92;C:
 
+{% raw %}
+
 	Article: Q151563
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/151/Q151563/
 	
 	=============================================================================
 	
+
+{% endraw %}

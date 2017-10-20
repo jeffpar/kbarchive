@@ -6,6 +6,8 @@ permalink: /kb/077/Q77625/
 
 ## Q77625: XIOS Corporation Software Conflicts with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q77625
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -69,3 +71,5 @@ permalink: /kb/077/Q77625/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125925/
 
 ## Q125925: WFWG Client Cannot Connect to Windows 95 Server
 
+{% raw %}
+
 	Article: Q125925
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -77,3 +79,5 @@ permalink: /kb/125/Q125925/
 	
 	=============================================================================
 	
+
+{% endraw %}

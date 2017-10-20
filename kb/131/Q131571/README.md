@@ -6,6 +6,8 @@ permalink: /kb/131/Q131571/
 
 ## Q131571: Microsoft Fax Attachment Not Associated
 
+{% raw %}
+
 	Article: Q131571
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131571/
 	
 	=============================================================================
 	
+
+{% endraw %}

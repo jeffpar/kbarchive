@@ -6,6 +6,8 @@ permalink: /kb/095/Q95182/
 
 ## Q95182: DXMC0MOD.SYS Err Msg: Invalid Shared RAM Address
 
+{% raw %}
+
 	Article: Q95182
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -70,3 +72,5 @@ permalink: /kb/095/Q95182/
 	
 	=============================================================================
 	
+
+{% endraw %}

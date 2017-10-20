@@ -6,6 +6,8 @@ permalink: /kb/119/Q119415/
 
 ## Q119415: PC WRmt: How the System Selector Works
 
+{% raw %}
+
 	Article: Q119415
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -111,3 +113,5 @@ permalink: /kb/119/Q119415/
 	
 	=============================================================================
 	
+
+{% endraw %}

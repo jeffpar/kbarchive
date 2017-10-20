@@ -6,6 +6,8 @@ permalink: /kb/140/Q140585/
 
 ## Q140585: PRB: Resizing CPropertySheet in OnInitDialog Does Not Work
 
+{% raw %}
+
 	Article: Q140585
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/140/Q140585/
 	
 	=============================================================================
 	
+
+{% endraw %}

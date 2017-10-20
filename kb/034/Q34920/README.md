@@ -6,6 +6,8 @@ permalink: /kb/034/Q34920/
 
 ## Q34920: Mixed Expressions Can Cause Unsigned Division
 
+{% raw %}
+
 	Article: Q34920
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -60,3 +62,5 @@ permalink: /kb/034/Q34920/
 	_dos_read, _dos_setblock, _dos_setdate, _dos_setfileattr,
 	_dos_setftime, _dos_settime, _dos_write, FP_OFF, FP_SEG,
 	long_lrotl, long_lrotr, _rotl, and _rotr
+
+{% endraw %}

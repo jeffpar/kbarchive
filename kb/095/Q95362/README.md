@@ -6,6 +6,8 @@ permalink: /kb/095/Q95362/
 
 ## Q95362: AST Cupid 386 or 486 May Need BIOS Upgrade
 
+{% raw %}
+
 	Article: Q95362
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/095/Q95362/
 	
 	=============================================================================
 	
+
+{% endraw %}

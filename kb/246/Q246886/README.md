@@ -6,6 +6,8 @@ permalink: /kb/246/Q246886/
 
 ## Q246886: Zone Msg: We Have Paused Your Connection to the Zone...
 
+{% raw %}
+
 	Article: Q246886
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/246/Q246886/
 	
 	=============================================================================
 	
+
+{% endraw %}

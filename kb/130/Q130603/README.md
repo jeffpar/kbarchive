@@ -6,6 +6,8 @@ permalink: /kb/130/Q130603/
 
 ## Q130603: How to Use SET PATH to Control Which Table Opens First
 
+{% raw %}
+
 	Article: Q130603
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -88,3 +90,5 @@ permalink: /kb/130/Q130603/
 	
 	=============================================================================
 	
+
+{% endraw %}

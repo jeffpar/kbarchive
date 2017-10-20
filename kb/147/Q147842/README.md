@@ -6,6 +6,8 @@ permalink: /kb/147/Q147842/
 
 ## Q147842: HOWTO: Detect a Mouse Click on Any Column of List View Control
 
+{% raw %}
+
 	Article: Q147842
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -156,3 +158,5 @@ permalink: /kb/147/Q147842/
 	
 	=============================================================================
 	
+
+{% endraw %}

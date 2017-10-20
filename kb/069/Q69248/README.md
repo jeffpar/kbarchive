@@ -6,6 +6,8 @@ permalink: /kb/069/Q69248/
 
 ## Q69248: Using the MSC Technologies Serial and Bus Mouse Under Windows
 
+{% raw %}
+
 	Article: Q69248
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/069/Q69248/
 	
 	=============================================================================
 	
+
+{% endraw %}

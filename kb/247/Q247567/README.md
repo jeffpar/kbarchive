@@ -6,6 +6,8 @@ permalink: /kb/247/Q247567/
 
 ## Q247567: Service Pack 4 Switches Passed to Archive Do Not Work
 
+{% raw %}
+
 	Article: Q247567
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/247/Q247567/
 	
 	=============================================================================
 	
+
+{% endraw %}

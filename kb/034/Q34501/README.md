@@ -6,6 +6,8 @@ permalink: /kb/034/Q34501/
 
 ## Q34501: word Causes &quot;Illegal Operand Size&quot; Warning
 
+{% raw %}
+
 	Article: Q34501
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -47,3 +49,5 @@ permalink: /kb/034/Q34501/
 	            ret
 	_foo        ENDP
 	            END
+
+{% endraw %}

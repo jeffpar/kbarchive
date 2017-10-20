@@ -6,6 +6,8 @@ permalink: /kb/314/Q314758/
 
 ## Q314758: OOP with Microsoft Visual Basic .NET and Microsoft Visual C# .NE
 
+{% raw %}
+
 	Article: Q314758
 	Product(s): Microsoft Press
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/314/Q314758/
 	
 	=============================================================================
 	
+
+{% endraw %}

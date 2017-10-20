@@ -6,6 +6,8 @@ permalink: /kb/142/Q142630/
 
 ## Q142630: NTFS with Full Logfile Condition May Cause Trap
 
+{% raw %}
+
 	Article: Q142630
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -64,3 +66,5 @@ permalink: /kb/142/Q142630/
 	
 	=============================================================================
 	
+
+{% endraw %}

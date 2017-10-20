@@ -6,6 +6,8 @@ permalink: /kb/143/Q143432/
 
 ## Q143432: HOWTO: Gain Access to an ActiveX Control from its Property Page
 
+{% raw %}
+
 	Article: Q143432
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,5.0,6.0
@@ -166,3 +168,5 @@ permalink: /kb/143/Q143432/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252821/
 
 ## Q252821: XGEN: Read Contact Properties from ASP Page with VBScript
 
+{% raw %}
+
 	Article: Q252821
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -123,3 +125,5 @@ permalink: /kb/252/Q252821/
 	
 	=============================================================================
 	
+
+{% endraw %}

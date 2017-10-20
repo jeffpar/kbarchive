@@ -6,6 +6,8 @@ permalink: /kb/245/Q245031/
 
 ## Q245031: Use a Script to Change Registry Permissions from Command Prompt.
 
+{% raw %}
+
 	Article: Q245031
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -125,3 +127,5 @@ permalink: /kb/245/Q245031/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191871/
 
 ## Q191871: PRB: Error When Properties are Evaluated at Design Time
 
+{% raw %}
+
 	Article: Q191871
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -90,3 +92,5 @@ permalink: /kb/191/Q191871/
 	
 	=============================================================================
 	
+
+{% endraw %}

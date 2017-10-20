@@ -6,6 +6,8 @@ permalink: /kb/169/Q169839/
 
 ## Q169839: XFOR: Cannot Enable (Appletalk) MTA Service NT SP3
 
+{% raw %}
+
 	Article: Q169839
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/169/Q169839/
 	
 	=============================================================================
 	
+
+{% endraw %}

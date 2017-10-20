@@ -6,6 +6,8 @@ permalink: /kb/062/Q62703/
 
 ## Q62703: Use of K&amp;R Style Function Definitions May Generate Bad Code
 
+{% raw %}
+
 	Article: Q62703
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -55,3 +57,5 @@ permalink: /kb/062/Q62703/
 	{
 	   printf("%c", suffix);
 	}
+
+{% endraw %}

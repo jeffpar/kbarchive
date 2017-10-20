@@ -6,6 +6,8 @@ permalink: /kb/128/Q128534/
 
 ## Q128534: Microsoft Systems Management Server Help File, November 1995
 
+{% raw %}
+
 	Article: Q128534
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1
@@ -76,3 +78,5 @@ permalink: /kb/128/Q128534/
 	
 	=============================================================================
 	
+
+{% endraw %}

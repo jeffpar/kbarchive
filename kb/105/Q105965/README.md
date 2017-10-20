@@ -6,6 +6,8 @@ permalink: /kb/105/Q105965/
 
 ## Q105965: PC DirSync: Err Msg: GAL Not Active on this PO
 
+{% raw %}
+
 	Article: Q105965
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2,3.5
@@ -69,3 +71,5 @@ permalink: /kb/105/Q105965/
 	
 	=============================================================================
 	
+
+{% endraw %}

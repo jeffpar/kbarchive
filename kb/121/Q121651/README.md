@@ -6,6 +6,8 @@ permalink: /kb/121/Q121651/
 
 ## Q121651: Extra Page(s) Printing After Print Job on a Novell Network
 
+{% raw %}
+
 	Article: Q121651
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -103,3 +105,5 @@ permalink: /kb/121/Q121651/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130124/
 
 ## Q130124: HOWTO: Create Custom Cursor and Icon Files
 
+{% raw %}
+
 	Article: Q130124
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130124/
 	
 	=============================================================================
 	
+
+{% endraw %}

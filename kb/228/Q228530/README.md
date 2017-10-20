@@ -6,6 +6,8 @@ permalink: /kb/228/Q228530/
 
 ## Q228530: BUG: Crash in Ole32.dll When Creating an ATL Composite Control
 
+{% raw %}
+
 	Article: Q228530
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -130,3 +132,5 @@ permalink: /kb/228/Q228530/
 	
 	=============================================================================
 	
+
+{% endraw %}

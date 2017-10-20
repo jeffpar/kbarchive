@@ -6,6 +6,8 @@ permalink: /kb/147/Q147044/
 
 ## Q147044: XFOR: Using the IMC and AT&amp;T Easylink Gateway Together
 
+{% raw %}
+
 	Article: Q147044
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/147/Q147044/
 	
 	=============================================================================
 	
+
+{% endraw %}

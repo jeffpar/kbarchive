@@ -6,6 +6,8 @@ permalink: /kb/253/Q253928/
 
 ## Q253928: Err Msg: Error Was Encountered in Function : HrDoImport...
 
+{% raw %}
+
 	Article: Q253928
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -69,3 +71,5 @@ permalink: /kb/253/Q253928/
 	
 	=============================================================================
 	
+
+{% endraw %}

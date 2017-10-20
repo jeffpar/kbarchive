@@ -6,6 +6,8 @@ permalink: /kb/156/Q156267/
 
 ## Q156267: HOWTO: Use the DataToClip Method
 
+{% raw %}
+
 	Article: Q156267
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/156/Q156267/
 	
 	=============================================================================
 	
+
+{% endraw %}

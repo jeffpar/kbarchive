@@ -6,6 +6,8 @@ permalink: /kb/323/Q323494/
 
 ## Q323494: AV When You Type Mnemonic on Property Page with ActiveX Control
 
+{% raw %}
+
 	Article: Q323494
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/323/Q323494/
 	
 	=============================================================================
 	
+
+{% endraw %}

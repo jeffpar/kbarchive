@@ -6,6 +6,8 @@ permalink: /kb/164/Q164480/
 
 ## Q164480: WD97: Menu and Toolbar Initialization Response Slow
 
+{% raw %}
+
 	Article: Q164480
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/164/Q164480/
 	
 	=============================================================================
 	
+
+{% endraw %}

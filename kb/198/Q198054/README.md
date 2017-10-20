@@ -6,6 +6,8 @@ permalink: /kb/198/Q198054/
 
 ## Q198054: WD97: Known Issues Using &quot;Windows 95 for Pen Computing&quot;
 
+{% raw %}
+
 	Article: Q198054
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/198/Q198054/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152602/
 
 ## Q152602: DOC: MSBV3032.DLL Incorrectly Referenced in On-Line Help
 
+{% raw %}
+
 	Article: Q152602
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -70,3 +72,5 @@ permalink: /kb/152/Q152602/
 	
 	=============================================================================
 	
+
+{% endraw %}

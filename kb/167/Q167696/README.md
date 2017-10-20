@@ -6,6 +6,8 @@ permalink: /kb/167/Q167696/
 
 ## Q167696: FIX: Debug Static MFC Library Links to UrlMon.dll/Wininet.dll
 
+{% raw %}
+
 	Article: Q167696
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -83,3 +85,5 @@ permalink: /kb/167/Q167696/
 	
 	=============================================================================
 	
+
+{% endraw %}

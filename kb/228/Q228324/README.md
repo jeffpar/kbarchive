@@ -6,6 +6,8 @@ permalink: /kb/228/Q228324/
 
 ## Q228324: SMS: Delete File(s) &quot;Remove Dir. Containing Files&quot; Option Fails
 
+{% raw %}
+
 	Article: Q228324
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/228/Q228324/
 	
 	=============================================================================
 	
+
+{% endraw %}

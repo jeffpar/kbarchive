@@ -6,6 +6,8 @@ permalink: /kb/035/Q35297/
 
 ## Q35297: Differences between C signal() Function and DosSetSigHandler
 
+{% raw %}
+
 	Article: Q35297
 	Product(s): See article
 	Version(s): 5.10
@@ -117,3 +119,5 @@ permalink: /kb/035/Q35297/
 	blocked. If thread 1 must run critical sections of code, it should
 	call DosHoldSignal to disable the signal prior to entering the
 	critical section.
+
+{% endraw %}

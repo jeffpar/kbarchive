@@ -6,6 +6,8 @@ permalink: /kb/232/Q232573/
 
 ## Q232573: SMS: Logon Discovery in Multiple-Site Environments
 
+{% raw %}
+
 	Article: Q232573
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/232/Q232573/
 	
 	=============================================================================
 	
+
+{% endraw %}

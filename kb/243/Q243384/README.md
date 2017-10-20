@@ -6,6 +6,8 @@ permalink: /kb/243/Q243384/
 
 ## Q243384: SNA LU3 Printing Does Not Support 3270 Some Data Stream Orders
 
+{% raw %}
+
 	Article: Q243384
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -42,3 +44,5 @@ permalink: /kb/243/Q243384/
 	
 	=============================================================================
 	
+
+{% endraw %}

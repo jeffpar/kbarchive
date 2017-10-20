@@ -6,6 +6,8 @@ permalink: /kb/123/Q123826/
 
 ## Q123826: SMTP: Err Msg: Error (116) Network Read Error
 
+{% raw %}
+
 	Article: Q123826
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -74,3 +76,5 @@ permalink: /kb/123/Q123826/
 	
 	=============================================================================
 	
+
+{% endraw %}

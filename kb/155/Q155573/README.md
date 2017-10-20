@@ -6,6 +6,8 @@ permalink: /kb/155/Q155573/
 
 ## Q155573: &quot;Stop 0x50&quot; Transferring Files over RAS with Windows NT 4.0
 
+{% raw %}
+
 	Article: Q155573
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155573/
 	
 	=============================================================================
 	
+
+{% endraw %}

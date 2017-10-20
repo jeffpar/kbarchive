@@ -6,6 +6,8 @@ permalink: /kb/139/Q139396/
 
 ## Q139396: Encarta 1995: Printout Missing Jump (Hot) Text
 
+{% raw %}
+
 	Article: Q139396
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition,1995 edition
@@ -64,3 +66,5 @@ permalink: /kb/139/Q139396/
 	
 	=============================================================================
 	
+
+{% endraw %}

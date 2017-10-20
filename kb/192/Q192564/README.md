@@ -6,6 +6,8 @@ permalink: /kb/192/Q192564/
 
 ## Q192564: INFO: Set Winsock Control RemoteHost and RemotePort for UDP
 
+{% raw %}
+
 	Article: Q192564
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -60,3 +62,5 @@ permalink: /kb/192/Q192564/
 	
 	=============================================================================
 	
+
+{% endraw %}

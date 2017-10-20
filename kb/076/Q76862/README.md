@@ -6,6 +6,8 @@ permalink: /kb/076/Q76862/
 
 ## Q76862: JetWare SuperSet+ 425-in-1 Causes UAEs when Printing
 
+{% raw %}
+
 	Article: Q76862
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -47,3 +49,5 @@ permalink: /kb/076/Q76862/
 	
 	=============================================================================
 	
+
+{% endraw %}

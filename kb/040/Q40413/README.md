@@ -6,6 +6,8 @@ permalink: /kb/040/Q40413/
 
 ## Q40413: Recursive FUNCTION Procedure Shouldn't Be STATIC in QuickBASIC
 
+{% raw %}
+
 	Article: Q40413
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/040/Q40413/
 	each level of the recursive iteration. The value for N% cannot be
 	correct if the number is not stored on the stack with each recursive
 	call.
+
+{% endraw %}

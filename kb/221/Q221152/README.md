@@ -6,6 +6,8 @@ permalink: /kb/221/Q221152/
 
 ## Q221152: XWEB: Small File Attachments Show Incorrect Size in OWA
 
+{% raw %}
+
 	Article: Q221152
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -46,3 +48,5 @@ permalink: /kb/221/Q221152/
 	
 	=============================================================================
 	
+
+{% endraw %}

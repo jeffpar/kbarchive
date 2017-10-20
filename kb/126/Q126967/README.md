@@ -6,6 +6,8 @@ permalink: /kb/126/Q126967/
 
 ## Q126967: New TCP/IP Registry Parameter Ignores Push Bit on Receives
 
+{% raw %}
+
 	Article: Q126967
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -102,3 +104,5 @@ permalink: /kb/126/Q126967/
 	
 	=============================================================================
 	
+
+{% endraw %}

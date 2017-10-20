@@ -6,6 +6,8 @@ permalink: /kb/139/Q139481/
 
 ## Q139481: ADT95: MS Access &amp; ADT Features Checklist Available
 
+{% raw %}
+
 	Article: Q139481
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -57,3 +59,5 @@ permalink: /kb/139/Q139481/
 	
 	=============================================================================
 	
+
+{% endraw %}

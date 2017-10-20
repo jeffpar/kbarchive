@@ -6,6 +6,8 @@ permalink: /kb/174/Q174095/
 
 ## Q174095: IGMP Query Times Out in Windows 95 with Winsock2 Update
 
+{% raw %}
+
 	Article: Q174095
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2
@@ -100,3 +102,5 @@ permalink: /kb/174/Q174095/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73601/
 
 ## Q73601: Using Uninstall on an OS/2 System
 
+{% raw %}
+
 	Article: Q73601
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -44,3 +46,5 @@ permalink: /kb/073/Q73601/
 	
 	=============================================================================
 	
+
+{% endraw %}

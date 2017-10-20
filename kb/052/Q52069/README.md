@@ -6,6 +6,8 @@ permalink: /kb/052/Q52069/
 
 ## Q52069: MatSEqn FUNCTION Correction Page 506, 7.00 Language Reference
 
+{% raw %}
+
 	Article: Q52069
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -38,3 +40,5 @@ permalink: /kb/052/Q52069/
 	the following words:
 	
 	   Gaussian and elimination
+
+{% endraw %}

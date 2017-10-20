@@ -6,6 +6,8 @@ permalink: /kb/157/Q157552/
 
 ## Q157552: WD97: Fill Color Extends Through Border Formatting
 
+{% raw %}
+
 	Article: Q157552
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157552/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122311/
 
 ## Q122311: Using Rumba with TCP/IP-32
 
+{% raw %}
+
 	Article: Q122311
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -61,3 +63,5 @@ permalink: /kb/122/Q122311/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140999/
 
 ## Q140999: Bookshelf 95: Copy To: Copies to First Instance of Word, Excel
 
+{% raw %}
+
 	Article: Q140999
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:7.0; Win95:
@@ -65,3 +67,5 @@ permalink: /kb/140/Q140999/
 	
 	=============================================================================
 	
+
+{% endraw %}

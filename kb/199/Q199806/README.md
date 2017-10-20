@@ -6,6 +6,8 @@ permalink: /kb/199/Q199806/
 
 ## Q199806: IIS: Headers Containing White Spaces May Return a 404 Error
 
+{% raw %}
+
 	Article: Q199806
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/199/Q199806/
 	
 	=============================================================================
 	
+
+{% endraw %}

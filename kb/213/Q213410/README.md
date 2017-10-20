@@ -6,6 +6,8 @@ permalink: /kb/213/Q213410/
 
 ## Q213410: SMS: Determining Version and Build Number
 
+{% raw %}
+
 	Article: Q213410
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -112,3 +114,5 @@ permalink: /kb/213/Q213410/
 	
 	=============================================================================
 	
+
+{% endraw %}

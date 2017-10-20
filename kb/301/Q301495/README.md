@@ -6,6 +6,8 @@ permalink: /kb/301/Q301495/
 
 ## Q301495: E-mail: How to Block a Sender
 
+{% raw %}
+
 	Article: Q301495
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/301/Q301495/
 	
 	=============================================================================
 	
+
+{% endraw %}

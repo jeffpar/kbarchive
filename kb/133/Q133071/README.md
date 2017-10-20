@@ -6,6 +6,8 @@ permalink: /kb/133/Q133071/
 
 ## Q133071: FIX: Exception Specification in Template causes C2961 Error
 
+{% raw %}
+
 	Article: Q133071
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1
@@ -96,3 +98,5 @@ permalink: /kb/133/Q133071/
 	
 	=============================================================================
 	
+
+{% endraw %}

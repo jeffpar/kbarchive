@@ -6,6 +6,8 @@ permalink: /kb/108/Q108749/
 
 ## Q108749: IPX&#92;SPX Compatible Transport Generates Error 7361
 
+{% raw %}
+
 	Article: Q108749
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.11
@@ -76,3 +78,5 @@ permalink: /kb/108/Q108749/
 	
 	=============================================================================
 	
+
+{% endraw %}

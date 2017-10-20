@@ -6,6 +6,8 @@ permalink: /kb/196/Q196688/
 
 ## Q196688: XADM: Move Server Wizard Does Not Warn of Encrypted Mail
 
+{% raw %}
+
 	Article: Q196688
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -55,3 +57,5 @@ permalink: /kb/196/Q196688/
 	
 	=============================================================================
 	
+
+{% endraw %}

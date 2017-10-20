@@ -6,6 +6,8 @@ permalink: /kb/037/Q37954/
 
 ## Q37954: Cannot Set Border Color with ANSI.SYS
 
+{% raw %}
+
 	Article: Q37954
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -68,3 +70,5 @@ permalink: /kb/037/Q37954/
 	
 	=============================================================================
 	
+
+{% endraw %}

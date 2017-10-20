@@ -6,6 +6,8 @@ permalink: /kb/149/Q149501/
 
 ## Q149501: PRB: Child CPropertySheet Hangs If Focus Is Switched
 
+{% raw %}
+
 	Article: Q149501
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0; winnt:4.0a
@@ -91,3 +93,5 @@ permalink: /kb/149/Q149501/
 	
 	=============================================================================
 	
+
+{% endraw %}

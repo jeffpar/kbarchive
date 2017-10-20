@@ -6,6 +6,8 @@ permalink: /kb/109/Q109504/
 
 ## Q109504: README.WRI from Windows for Workgroups 3.11 (Part 3 of 4)
 
+{% raw %}
+
 	Article: Q109504
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -419,3 +421,5 @@ permalink: /kb/109/Q109504/
 	
 	=============================================================================
 	
+
+{% endraw %}

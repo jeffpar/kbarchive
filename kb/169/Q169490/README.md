@@ -6,6 +6,8 @@ permalink: /kb/169/Q169490/
 
 ## Q169490: SNA Server Appears to Be Offline After MNGAGENT AV
 
+{% raw %}
+
 	Article: Q169490
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -94,3 +96,5 @@ permalink: /kb/169/Q169490/
 	
 	=============================================================================
 	
+
+{% endraw %}

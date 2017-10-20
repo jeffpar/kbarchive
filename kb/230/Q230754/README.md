@@ -6,6 +6,8 @@ permalink: /kb/230/Q230754/
 
 ## Q230754: Zone Error Message: Failed to Extract File...
 
+{% raw %}
+
 	Article: Q230754
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/230/Q230754/
 	
 	=============================================================================
 	
+
+{% endraw %}

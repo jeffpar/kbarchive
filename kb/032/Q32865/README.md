@@ -6,6 +6,8 @@ permalink: /kb/032/Q32865/
 
 ## Q32865: Invalid Operation and Inexact Result in Control Word
 
+{% raw %}
+
 	Article: Q32865
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -74,3 +76,5 @@ permalink: /kb/032/Q32865/
 	
 	=============================================================================
 	
+
+{% endraw %}

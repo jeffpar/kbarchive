@@ -6,6 +6,8 @@ permalink: /kb/143/Q143247/
 
 ## Q143247: FIX: Scrolling Edit Window Causes Incorrect Highlighting
 
+{% raw %}
+
 	Article: Q143247
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -105,3 +107,5 @@ permalink: /kb/143/Q143247/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150217/
 
 ## Q150217: Invalid Format for Microsoft Internet Explorer
 
+{% raw %}
+
 	Article: Q150217
 	Product(s): The Microsoft Network
 	Version(s): 1.0,1.05,1.2,1.3
@@ -115,3 +117,5 @@ permalink: /kb/150/Q150217/
 	
 	=============================================================================
 	
+
+{% endraw %}

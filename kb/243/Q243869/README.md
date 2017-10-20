@@ -6,6 +6,8 @@ permalink: /kb/243/Q243869/
 
 ## Q243869: Using More Than Eight LUNs Per SCSI ID
 
+{% raw %}
+
 	Article: Q243869
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -75,3 +77,5 @@ permalink: /kb/243/Q243869/
 	
 	=============================================================================
 	
+
+{% endraw %}

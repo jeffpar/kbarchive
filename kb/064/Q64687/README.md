@@ -6,6 +6,8 @@ permalink: /kb/064/Q64687/
 
 ## Q64687: Cannot View Some Include Files Inside the PWB Online Help
 
+{% raw %}
+
 	Article: Q64687
 	Product(s): See article
 	Version(s): 6.00
@@ -40,3 +42,5 @@ permalink: /kb/064/Q64687/
 	Microsoft has confirmed this to be a problem in the PWB version 1.00.
 	We are researching this problem and will post new information here as
 	it becomes available.
+
+{% endraw %}

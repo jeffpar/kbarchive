@@ -6,6 +6,8 @@ permalink: /kb/166/Q166297/
 
 ## Q166297: Override Size Checkbox Added to Print Session Property Page
 
+{% raw %}
+
 	Article: Q166297
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/166/Q166297/
 	
 	=============================================================================
 	
+
+{% endraw %}

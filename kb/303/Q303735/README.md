@@ -6,6 +6,8 @@ permalink: /kb/303/Q303735/
 
 ## Q303735: Passport Manager Administration Utility
 
+{% raw %}
+
 	Article: Q303735
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4,1.99
@@ -48,3 +50,5 @@ permalink: /kb/303/Q303735/
 	
 	=============================================================================
 	
+
+{% endraw %}

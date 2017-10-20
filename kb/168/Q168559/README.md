@@ -6,6 +6,8 @@ permalink: /kb/168/Q168559/
 
 ## Q168559: ERR: Cannot Copy Ntdetect.com or Ntldr During WinNT Install
 
+{% raw %}
+
 	Article: Q168559
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/168/Q168559/
 	
 	=============================================================================
 	
+
+{% endraw %}

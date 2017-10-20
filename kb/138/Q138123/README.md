@@ -6,6 +6,8 @@ permalink: /kb/138/Q138123/
 
 ## Q138123: Bookshelf 1995: No Keyboard Access to Audio, Video
 
+{% raw %}
+
 	Article: Q138123
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/138/Q138123/
 	
 	=============================================================================
 	
+
+{% endraw %}

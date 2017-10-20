@@ -6,6 +6,8 @@ permalink: /kb/270/Q270067/
 
 ## Q270067: Delta Values Not Updated When You Run Management Agent
 
+{% raw %}
+
 	Article: Q270067
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2
@@ -93,3 +95,5 @@ permalink: /kb/270/Q270067/
 	
 	=============================================================================
 	
+
+{% endraw %}

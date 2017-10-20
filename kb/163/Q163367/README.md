@@ -6,6 +6,8 @@ permalink: /kb/163/Q163367/
 
 ## Q163367: WD97: &quot;Network or File Permission Error&quot; Saving Document
 
+{% raw %}
+
 	Article: Q163367
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/163/Q163367/
 	
 	=============================================================================
 	
+
+{% endraw %}

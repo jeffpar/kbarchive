@@ -6,6 +6,8 @@ permalink: /kb/255/Q255664/
 
 ## Q255664: Installation Problem Due to SQL 7.0 Quoted_Identifier Attribute
 
+{% raw %}
+
 	Article: Q255664
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -122,3 +124,5 @@ permalink: /kb/255/Q255664/
 	
 	=============================================================================
 	
+
+{% endraw %}

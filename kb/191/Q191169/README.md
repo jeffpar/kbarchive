@@ -6,6 +6,8 @@ permalink: /kb/191/Q191169/
 
 ## Q191169: SNA Windows NT Client Does Not Detect The SNA Web Client
 
+{% raw %}
+
 	Article: Q191169
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/191/Q191169/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174985/
 
 ## Q174985: WD97: Cannot Check for AutoUpdate After Installing IE 4.0
 
+{% raw %}
+
 	Article: Q174985
 	Product(s): Word 97 for Windows
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/174/Q174985/
 	
 	=============================================================================
 	
+
+{% endraw %}

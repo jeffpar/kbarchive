@@ -6,6 +6,8 @@ permalink: /kb/162/Q162849/
 
 ## Q162849: KiXtart Script Error: Unknown Macro
 
+{% raw %}
+
 	Article: Q162849
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162849/
 	
 	=============================================================================
 	
+
+{% endraw %}

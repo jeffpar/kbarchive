@@ -6,6 +6,8 @@ permalink: /kb/074/Q74166/
 
 ## Q74166: MS-DOS: Piped DIR Command Shows Temporary Files
 
+{% raw %}
+
 	Article: Q74166
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -62,3 +64,5 @@ permalink: /kb/074/Q74166/
 	
 	=============================================================================
 	
+
+{% endraw %}

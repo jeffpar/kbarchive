@@ -6,6 +6,8 @@ permalink: /kb/147/Q147577/
 
 ## Q147577: PC Mac: Inserts Carriage Return Before Last Word of Paragraph
 
+{% raw %}
+
 	Article: Q147577
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -61,3 +63,5 @@ permalink: /kb/147/Q147577/
 	
 	=============================================================================
 	
+
+{% endraw %}

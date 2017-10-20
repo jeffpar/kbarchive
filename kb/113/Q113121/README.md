@@ -6,6 +6,8 @@ permalink: /kb/113/Q113121/
 
 ## Q113121: Bookshelf: Only Left Side of Wide Almanac Table Is Printed
 
+{% raw %}
+
 	Article: Q113121
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition
@@ -49,3 +51,5 @@ permalink: /kb/113/Q113121/
 	
 	=============================================================================
 	
+
+{% endraw %}

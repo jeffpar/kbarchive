@@ -6,6 +6,8 @@ permalink: /kb/045/Q45235/
 
 ## Q45235: Mac DOS: Notifier Alert Window and Graphics Applications
 
+{% raw %}
+
 	Article: Q45235
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -47,3 +49,5 @@ permalink: /kb/045/Q45235/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35507/
 
 ## Q35507: Real-Number Encoding Needs Exact Number of Digits
 
+{% raw %}
+
 	Article: Q35507
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b
@@ -59,3 +61,5 @@ permalink: /kb/035/Q35507/
 	
 	=============================================================================
 	
+
+{% endraw %}

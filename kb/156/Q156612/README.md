@@ -6,6 +6,8 @@ permalink: /kb/156/Q156612/
 
 ## Q156612: Using WinNT 3.5x Uptomp.exe to Upgrade 4.0 Systems to multiproc
 
+{% raw %}
+
 	Article: Q156612
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -105,3 +107,5 @@ permalink: /kb/156/Q156612/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/011/Q11966/
 
 ## Q11966: Using Two Monitors with CodeView
 
+{% raw %}
+
 	Article: Q11966
 	Product(s): See article
 	Version(s): 1.00 1.10 2.00 2.10 2.20 2.30 | 2.20 2.30
@@ -48,3 +50,5 @@ permalink: /kb/011/Q11966/
 	the CGA up as the default adapter. You could then debug a graphics
 	program with the graphics display appearing on the graphics monitor
 	and the debugging display appearing on the monochrome adapter.
+
+{% endraw %}

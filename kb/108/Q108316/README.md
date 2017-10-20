@@ -6,6 +6,8 @@ permalink: /kb/108/Q108316/
 
 ## Q108316: DOC: Incorrect Hard-Coded Values in SDK BITMAP.C Sample
 
+{% raw %}
+
 	Article: Q108316
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -67,3 +69,5 @@ permalink: /kb/108/Q108316/
 	
 	=============================================================================
 	
+
+{% endraw %}

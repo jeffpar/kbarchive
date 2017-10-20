@@ -6,6 +6,8 @@ permalink: /kb/082/Q82547/
 
 ## Q82547: Gupta's Quest GP Faults When Importing dBASE/CSV
 
+{% raw %}
+
 	Article: Q82547
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -38,3 +40,5 @@ permalink: /kb/082/Q82547/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262622/
 
 ## Q262622: Games: Blank Error Message When You Install the Game
 
+{% raw %}
+
 	Article: Q262622
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -207,3 +209,5 @@ permalink: /kb/262/Q262622/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191548/
 
 ## Q191548: Troubleshooting Guide for the Internet Mail Connector/Internet M
 
+{% raw %}
+
 	Article: Q191548
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -297,3 +299,5 @@ permalink: /kb/191/Q191548/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169653/
 
 ## Q169653: XADM: Explanation of Replication Inbound and Outbound Sites
 
+{% raw %}
+
 	Article: Q169653
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -110,3 +112,5 @@ permalink: /kb/169/Q169653/
 	
 	=============================================================================
 	
+
+{% endraw %}

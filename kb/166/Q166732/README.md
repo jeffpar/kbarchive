@@ -6,6 +6,8 @@ permalink: /kb/166/Q166732/
 
 ## Q166732: Cannot Read Parameters Help Screen for Route.exe
 
+{% raw %}
+
 	Article: Q166732
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166732/
 	
 	=============================================================================
 	
+
+{% endraw %}

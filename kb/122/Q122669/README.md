@@ -6,6 +6,8 @@ permalink: /kb/122/Q122669/
 
 ## Q122669: MSB Human: Overview
 
+{% raw %}
+
 	Article: Q122669
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/122/Q122669/
 	
 	=============================================================================
 	
+
+{% endraw %}

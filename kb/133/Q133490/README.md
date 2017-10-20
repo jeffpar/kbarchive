@@ -6,6 +6,8 @@ permalink: /kb/133/Q133490/
 
 ## Q133490: Resolving Duplicate IP Address Conflicts on a DHCP Network
 
+{% raw %}
+
 	Article: Q133490
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.0,3.11,3.11a,3.11b,3.5,3.51
@@ -61,3 +63,5 @@ permalink: /kb/133/Q133490/
 	
 	=============================================================================
 	
+
+{% endraw %}

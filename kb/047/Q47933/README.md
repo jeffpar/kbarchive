@@ -6,6 +6,8 @@ permalink: /kb/047/Q47933/
 
 ## Q47933: Effective Limit of 52 Threads Per Process with DosCreateThread
 
+{% raw %}
+
 	Article: Q47933
 	Product(s): See article
 	Version(s): 5.10
@@ -39,3 +41,5 @@ permalink: /kb/047/Q47933/
 	function _beginthread is limited to creating 31 threads in C 5.10, for
 	a total of 32 threads. The next version of C will support the creation
 	of substantially more threads with its _beginthread.
+
+{% endraw %}

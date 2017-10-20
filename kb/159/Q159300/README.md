@@ -6,6 +6,8 @@ permalink: /kb/159/Q159300/
 
 ## Q159300: XFOR: PCMTA Fails to Respond to NetBIOS Notification
 
+{% raw %}
+
 	Article: Q159300
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/159/Q159300/
 	
 	=============================================================================
 	
+
+{% endraw %}

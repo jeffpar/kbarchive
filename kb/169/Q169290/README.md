@@ -6,6 +6,8 @@ permalink: /kb/169/Q169290/
 
 ## Q169290: DHCP Reservations Do Not Get Assigned from a Superscope
 
+{% raw %}
+
 	Article: Q169290
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/169/Q169290/
 	
 	=============================================================================
 	
+
+{% endraw %}

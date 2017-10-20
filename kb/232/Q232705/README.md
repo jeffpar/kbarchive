@@ -6,6 +6,8 @@ permalink: /kb/232/Q232705/
 
 ## Q232705: XADM: Error 87 Starting Information Store after Online Restore
 
+{% raw %}
+
 	Article: Q232705
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/232/Q232705/
 	
 	=============================================================================
 	
+
+{% endraw %}

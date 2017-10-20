@@ -6,6 +6,8 @@ permalink: /kb/313/Q313880/
 
 ## Q313880: Index Server Does Not Correctly Track UNC Directory Name Changes
 
+{% raw %}
+
 	Article: Q313880
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -76,3 +78,5 @@ permalink: /kb/313/Q313880/
 	
 	=============================================================================
 	
+
+{% endraw %}

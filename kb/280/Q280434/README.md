@@ -6,6 +6,8 @@ permalink: /kb/280/Q280434/
 
 ## Q280434: XADM: Changes Made in Raw Mode Do Not Seem to Be Applied
 
+{% raw %}
+
 	Article: Q280434
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP3,5.5 SP4
@@ -63,3 +65,5 @@ permalink: /kb/280/Q280434/
 	
 	=============================================================================
 	
+
+{% endraw %}

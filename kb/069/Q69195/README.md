@@ -6,6 +6,8 @@ permalink: /kb/069/Q69195/
 
 ## Q69195: Using Microsoft Serial Mice with Leading Edge Computers
 
+{% raw %}
+
 	Article: Q69195
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/069/Q69195/
 	
 	=============================================================================
 	
+
+{% endraw %}

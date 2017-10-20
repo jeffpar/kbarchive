@@ -6,6 +6,8 @@ permalink: /kb/085/Q85239/
 
 ## Q85239: Windows 3.1 May Erroneously Offer the Tutorial as an Option
 
+{% raw %}
+
 	Article: Q85239
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/085/Q85239/
 	
 	=============================================================================
 	
+
+{% endraw %}

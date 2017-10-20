@@ -6,6 +6,8 @@ permalink: /kb/067/Q67314/
 
 ## Q67314: BC.EXE &quot;Out of Memory&quot; with Numeric Array Elements and SWAP
 
+{% raw %}
+
 	Article: Q67314
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -69,3 +71,5 @@ permalink: /kb/067/Q67314/
 	   assignment statement.
 	
 	5. The code is compiled using BC.EXE
+
+{% endraw %}

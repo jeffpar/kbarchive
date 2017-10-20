@@ -6,6 +6,8 @@ permalink: /kb/132/Q132766/
 
 ## Q132766: Plug and Play ISA Adapter Not Automatically Recognized
 
+{% raw %}
+
 	Article: Q132766
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/132/Q132766/
 	
 	=============================================================================
 	
+
+{% endraw %}

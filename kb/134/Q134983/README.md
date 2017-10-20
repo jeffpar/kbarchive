@@ -6,6 +6,8 @@ permalink: /kb/134/Q134983/
 
 ## Q134983: Baseball 94: Video Clips Fail with ATI Mach 64
 
+{% raw %}
+
 	Article: Q134983
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -104,3 +106,5 @@ permalink: /kb/134/Q134983/
 	
 	=============================================================================
 	
+
+{% endraw %}

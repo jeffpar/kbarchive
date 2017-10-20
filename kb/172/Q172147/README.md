@@ -6,6 +6,8 @@ permalink: /kb/172/Q172147/
 
 ## Q172147: Add Printer Wizard Hangs When Searching for Remote Printers
 
+{% raw %}
+
 	Article: Q172147
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/172/Q172147/
 	
 	=============================================================================
 	
+
+{% endraw %}

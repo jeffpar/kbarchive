@@ -6,6 +6,8 @@ permalink: /kb/320/Q320319/
 
 ## Q320319: PRB: &quot;Um.dat May Be Corrupt&quot; Err Msg When You Start SourceSafe
 
+{% raw %}
+
 	Article: Q320319
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -114,3 +116,5 @@ permalink: /kb/320/Q320319/
 	
 	=============================================================================
 	
+
+{% endraw %}

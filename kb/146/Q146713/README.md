@@ -6,6 +6,8 @@ permalink: /kb/146/Q146713/
 
 ## Q146713: XCLN: Unable to Save Sealed/Signed Message with Attachment
 
+{% raw %}
+
 	Article: Q146713
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/146/Q146713/
 	
 	=============================================================================
 	
+
+{% endraw %}

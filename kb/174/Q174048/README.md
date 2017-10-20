@@ -6,6 +6,8 @@ permalink: /kb/174/Q174048/
 
 ## Q174048: How to Create, Send, and Receive E-mail Using Outlook Express
 
+{% raw %}
+
 	Article: Q174048
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,4.0
@@ -104,3 +106,5 @@ permalink: /kb/174/Q174048/
 	
 	=============================================================================
 	
+
+{% endraw %}

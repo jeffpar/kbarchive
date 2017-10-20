@@ -6,6 +6,8 @@ permalink: /kb/096/Q96060/
 
 ## Q96060: PC DirSync: Directory Synchronization (Dir-Sync)
 
+{% raw %}
+
 	Article: Q96060
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -2146,3 +2148,5 @@ permalink: /kb/096/Q96060/
 	
 	=============================================================================
 	
+
+{% endraw %}

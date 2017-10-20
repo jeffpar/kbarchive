@@ -6,6 +6,8 @@ permalink: /kb/197/Q197023/
 
 ## Q197023: WD97: Rotated or Flipped Text in Macpict Graphic Seems Distorted
 
+{% raw %}
+
 	Article: Q197023
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/197/Q197023/
 	
 	=============================================================================
 	
+
+{% endraw %}

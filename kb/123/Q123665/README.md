@@ -6,6 +6,8 @@ permalink: /kb/123/Q123665/
 
 ## Q123665: PRB: DOSXNT: Fatal Error DX1410: Cannot Load Program
 
+{% raw %}
+
 	Article: Q123665
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -96,3 +98,5 @@ permalink: /kb/123/Q123665/
 	
 	=============================================================================
 	
+
+{% endraw %}

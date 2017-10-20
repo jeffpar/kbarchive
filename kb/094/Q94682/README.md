@@ -6,6 +6,8 @@ permalink: /kb/094/Q94682/
 
 ## Q94682: Windows 3.1 COMM.DRV File May Be Incompatible with PS/2 50Z
 
+{% raw %}
+
 	Article: Q94682
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -77,3 +79,5 @@ permalink: /kb/094/Q94682/
 	
 	=============================================================================
 	
+
+{% endraw %}

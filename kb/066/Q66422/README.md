@@ -6,6 +6,8 @@ permalink: /kb/066/Q66422/
 
 ## Q66422: Bottom Part of Desktop Missing on NEC Prospeed 386
 
+{% raw %}
+
 	Article: Q66422
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/066/Q66422/
 	
 	=============================================================================
 	
+
+{% endraw %}

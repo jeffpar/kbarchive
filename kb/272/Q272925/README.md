@@ -6,6 +6,8 @@ permalink: /kb/272/Q272925/
 
 ## Q272925: XFOR: Notes Connector Quits with Messages in the Browser Log
 
+{% raw %}
+
 	Article: Q272925
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -64,3 +66,5 @@ permalink: /kb/272/Q272925/
 	
 	=============================================================================
 	
+
+{% endraw %}

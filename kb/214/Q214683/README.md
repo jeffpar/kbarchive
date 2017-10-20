@@ -6,6 +6,8 @@ permalink: /kb/214/Q214683/
 
 ## Q214683: WD97: Duplex Printing Does Not Work with Objects on Page
 
+{% raw %}
+
 	Article: Q214683
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/214/Q214683/
 	
 	=============================================================================
 	
+
+{% endraw %}

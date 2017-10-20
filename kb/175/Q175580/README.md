@@ -6,6 +6,8 @@ permalink: /kb/175/Q175580/
 
 ## Q175580: XADM: Internet Mail Service Does Not Handle Uudecode Correctly
 
+{% raw %}
+
 	Article: Q175580
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -80,3 +82,5 @@ permalink: /kb/175/Q175580/
 	
 	=============================================================================
 	
+
+{% endraw %}

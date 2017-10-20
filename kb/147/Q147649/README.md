@@ -6,6 +6,8 @@ permalink: /kb/147/Q147649/
 
 ## Q147649: Encarta 1995: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q147649
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -60,3 +62,5 @@ permalink: /kb/147/Q147649/
 	
 	=============================================================================
 	
+
+{% endraw %}

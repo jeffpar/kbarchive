@@ -6,6 +6,8 @@ permalink: /kb/086/Q86842/
 
 ## Q86842: PC WSPlus: Error Printing with Printers Using GENLIB.DLL
 
+{% raw %}
+
 	Article: Q86842
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,3.0
@@ -55,3 +57,5 @@ permalink: /kb/086/Q86842/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/202/Q202179/
 
 ## Q202179: HOWTO: Call Windows APIs with Special Requirements from VB
 
+{% raw %}
+
 	Article: Q202179
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -347,3 +349,5 @@ permalink: /kb/202/Q202179/
 	
 	=============================================================================
 	
+
+{% endraw %}

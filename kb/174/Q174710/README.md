@@ -6,6 +6,8 @@ permalink: /kb/174/Q174710/
 
 ## Q174710: XWEB: Can't Type Information in Outlook Web Access Mail Msg
 
+{% raw %}
+
 	Article: Q174710
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/174/Q174710/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89222/
 
 ## Q89222: Terminal Incorrectly Saves Filenames
 
+{% raw %}
+
 	Article: Q89222
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/089/Q89222/
 	
 	=============================================================================
 	
+
+{% endraw %}

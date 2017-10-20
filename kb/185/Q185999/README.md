@@ -6,6 +6,8 @@ permalink: /kb/185/Q185999/
 
 ## Q185999: FS98: Location of the Learjet 45 Spoiler Indicator
 
+{% raw %}
+
 	Article: Q185999
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/185/Q185999/
 	
 	=============================================================================
 	
+
+{% endraw %}

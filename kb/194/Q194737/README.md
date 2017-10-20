@@ -6,6 +6,8 @@ permalink: /kb/194/Q194737/
 
 ## Q194737: PC Adm: Admin Hangs When Listing Over 200 Postoffices
 
+{% raw %}
+
 	Article: Q194737
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -71,3 +73,5 @@ permalink: /kb/194/Q194737/
 	
 	=============================================================================
 	
+
+{% endraw %}

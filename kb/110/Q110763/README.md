@@ -6,6 +6,8 @@ permalink: /kb/110/Q110763/
 
 ## Q110763: Postscript Error Printing to Macintosh from Windows NT
 
+{% raw %}
+
 	Article: Q110763
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -70,3 +72,5 @@ permalink: /kb/110/Q110763/
 	
 	=============================================================================
 	
+
+{% endraw %}

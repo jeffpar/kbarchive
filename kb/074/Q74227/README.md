@@ -6,6 +6,8 @@ permalink: /kb/074/Q74227/
 
 ## Q74227: Updating to Windows 3.0a on a Network
 
+{% raw %}
+
 	Article: Q74227
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/074/Q74227/
 	
 	=============================================================================
 	
+
+{% endraw %}

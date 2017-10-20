@@ -6,6 +6,8 @@ permalink: /kb/174/Q174167/
 
 ## Q174167: XFOR: Forum Password Security Lost After Collabra Migration
 
+{% raw %}
+
 	Article: Q174167
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -54,3 +56,5 @@ permalink: /kb/174/Q174167/
 	
 	=============================================================================
 	
+
+{% endraw %}

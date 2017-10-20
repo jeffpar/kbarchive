@@ -6,6 +6,8 @@ permalink: /kb/140/Q140596/
 
 ## Q140596: INFO: MFC 4.0 No Longer Pre-Registers Window Classes
 
+{% raw %}
+
 	Article: Q140596
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -122,3 +124,5 @@ permalink: /kb/140/Q140596/
 	
 	=============================================================================
 	
+
+{% endraw %}

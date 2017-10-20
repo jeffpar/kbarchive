@@ -6,6 +6,8 @@ permalink: /kb/195/Q195057/
 
 ## Q195057: PA: Display Settings Incorrect or Cannot Close Dialog Box
 
+{% raw %}
+
 	Article: Q195057
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/195/Q195057/
 	
 	=============================================================================
 	
+
+{% endraw %}

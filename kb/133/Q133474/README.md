@@ -6,6 +6,8 @@ permalink: /kb/133/Q133474/
 
 ## Q133474: Using the Magitronics EZ2000 Card With Windows NT
 
+{% raw %}
+
 	Article: Q133474
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/133/Q133474/
 	
 	=============================================================================
 	
+
+{% endraw %}

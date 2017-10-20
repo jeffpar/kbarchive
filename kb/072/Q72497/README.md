@@ -6,6 +6,8 @@ permalink: /kb/072/Q72497/
 
 ## Q72497: BUG: FatalExit() Interacts Through Terminal Only
 
+{% raw %}
+
 	Article: Q72497
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -53,3 +55,5 @@ permalink: /kb/072/Q72497/
 	
 	=============================================================================
 	
+
+{% endraw %}

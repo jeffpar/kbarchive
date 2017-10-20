@@ -6,6 +6,8 @@ permalink: /kb/198/Q198307/
 
 ## Q198307: WD97: Text Box Background Is Opaque After Changing Wrap Style
 
+{% raw %}
+
 	Article: Q198307
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/198/Q198307/
 	
 	=============================================================================
 	
+
+{% endraw %}

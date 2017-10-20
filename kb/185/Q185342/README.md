@@ -6,6 +6,8 @@ permalink: /kb/185/Q185342/
 
 ## Q185342: SMS: How to Install, Share, and Inventory Software
 
+{% raw %}
+
 	Article: Q185342
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -88,3 +90,5 @@ permalink: /kb/185/Q185342/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171891/
 
 ## Q171891: Windows 95 Uses Encapsulated Arcnet
 
+{% raw %}
+
 	Article: Q171891
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WinNT:3.51,4.0;Windows:95
@@ -56,3 +58,5 @@ permalink: /kb/171/Q171891/
 	
 	=============================================================================
 	
+
+{% endraw %}

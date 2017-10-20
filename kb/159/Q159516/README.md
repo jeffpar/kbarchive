@@ -6,6 +6,8 @@ permalink: /kb/159/Q159516/
 
 ## Q159516: Encarta 97: Unable to Print to HP DeskJet Drivers 4.x and 5.x
 
+{% raw %}
+
 	Article: Q159516
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -93,3 +95,5 @@ permalink: /kb/159/Q159516/
 	
 	=============================================================================
 	
+
+{% endraw %}

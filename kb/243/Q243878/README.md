@@ -6,6 +6,8 @@ permalink: /kb/243/Q243878/
 
 ## Q243878: Tcpip.sys Hotfixes Dated 4/28/99 to 6/4/99 Replaced
 
+{% raw %}
+
 	Article: Q243878
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/243/Q243878/
 	
 	=============================================================================
 	
+
+{% endraw %}

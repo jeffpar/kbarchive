@@ -6,6 +6,8 @@ permalink: /kb/044/Q44413/
 
 ## Q44413: How to Spawn C 5.10 Compiler Passes without CL.EXE
 
+{% raw %}
+
 	Article: Q44413
 	Product(s): See article
 	Version(s): 5.10
@@ -78,3 +80,5 @@ permalink: /kb/044/Q44413/
 	    }
 	    puts("**********End of environment strings\n");
 	}
+
+{% endraw %}

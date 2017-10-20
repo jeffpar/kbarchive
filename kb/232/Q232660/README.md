@@ -6,6 +6,8 @@ permalink: /kb/232/Q232660/
 
 ## Q232660: BUG: GDI Leak Printing Report w/ 256 Color BMP &amp; SET PALETTE OFF
 
+{% raw %}
+
 	Article: Q232660
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0,6.0 SP3
@@ -169,3 +171,5 @@ permalink: /kb/232/Q232660/
 	
 	=============================================================================
 	
+
+{% endraw %}

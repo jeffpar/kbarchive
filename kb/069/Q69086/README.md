@@ -6,6 +6,8 @@ permalink: /kb/069/Q69086/
 
 ## Q69086: EMM386 DMA Buffer and SCSI Devices
 
+{% raw %}
+
 	Article: Q69086
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/069/Q69086/
 	
 	=============================================================================
 	
+
+{% endraw %}

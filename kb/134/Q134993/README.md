@@ -6,6 +6,8 @@ permalink: /kb/134/Q134993/
 
 ## Q134993: Stretch And Skew Dialog Box Does Not Accept Negative Values
 
+{% raw %}
+
 	Article: Q134993
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -69,3 +71,5 @@ permalink: /kb/134/Q134993/
 	
 	=============================================================================
 	
+
+{% endraw %}

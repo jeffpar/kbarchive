@@ -6,6 +6,8 @@ permalink: /kb/065/Q65314/
 
 ## Q65314: C1001: Internal Compiler Error: '@(#)omf.c: 1.88', Line 147
 
+{% raw %}
+
 	Article: Q65314
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -30,7 +32,7 @@ permalink: /kb/065/Q65314/
 	
 	_segment myseg;
 	extern int _based(myseg) a[];
-	int _based(_segname("foo")) a[] = { {0} };
+	int _based(_segname("foo")) a[] = {{0}};
 	
 	To workaround the problem, use one of the following:
 	
@@ -41,3 +43,5 @@ permalink: /kb/065/Q65314/
 	Microsoft has confirmed this to be a problem with the C version 6.00.
 	We are researching this problem and will post new information here as
 	it becomes available.
+
+{% endraw %}

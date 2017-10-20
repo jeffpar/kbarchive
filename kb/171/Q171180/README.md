@@ -6,6 +6,8 @@ permalink: /kb/171/Q171180/
 
 ## Q171180: Non-Paged Pool Memory Leak in IRP Pool Tag
 
+{% raw %}
+
 	Article: Q171180
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/171/Q171180/
 	
 	=============================================================================
 	
+
+{% endraw %}

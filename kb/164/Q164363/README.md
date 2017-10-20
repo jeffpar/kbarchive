@@ -6,6 +6,8 @@ permalink: /kb/164/Q164363/
 
 ## Q164363: Troubleshooting RIP on Routing and Remote Access
 
+{% raw %}
+
 	Article: Q164363
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/164/Q164363/
 	
 	=============================================================================
 	
+
+{% endraw %}

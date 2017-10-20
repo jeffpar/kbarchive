@@ -6,6 +6,8 @@ permalink: /kb/146/Q146337/
 
 ## Q146337: Schd+ for Win 3.x Limited to 6 Open Archive and Project Files
 
+{% raw %}
+
 	Article: Q146337
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:3.x,7.0
@@ -45,3 +47,5 @@ permalink: /kb/146/Q146337/
 	
 	=============================================================================
 	
+
+{% endraw %}

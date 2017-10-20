@@ -6,6 +6,8 @@ permalink: /kb/174/Q174699/
 
 ## Q174699: XFOR: Customizing LinkAge Connector Logged Messages
 
+{% raw %}
+
 	Article: Q174699
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/174/Q174699/
 	
 	=============================================================================
 	
+
+{% endraw %}

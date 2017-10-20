@@ -6,6 +6,8 @@ permalink: /kb/033/Q33621/
 
 ## Q33621: &quot;RETURN without GOSUB&quot; When ON ERROR and CHAIN in 4.00b
 
+{% raw %}
+
 	Article: Q33621
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -47,3 +49,5 @@ permalink: /kb/033/Q33621/
 	         RETURN
 	   sub3: ON ERROR GOTO OhNo      'Should never get to this line.
 	   OhNo: END                     'Never gets to this line.
+
+{% endraw %}

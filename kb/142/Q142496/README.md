@@ -6,6 +6,8 @@ permalink: /kb/142/Q142496/
 
 ## Q142496: Send Command from 32-Bit Program Starts Only MS Exchange
 
+{% raw %}
+
 	Article: Q142496
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/142/Q142496/
 	
 	=============================================================================
 	
+
+{% endraw %}

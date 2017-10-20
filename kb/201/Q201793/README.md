@@ -6,6 +6,8 @@ permalink: /kb/201/Q201793/
 
 ## Q201793: SMS: Version 2.0 Remote Control Command Line Options
 
+{% raw %}
+
 	Article: Q201793
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -71,3 +73,5 @@ permalink: /kb/201/Q201793/
 	
 	=============================================================================
 	
+
+{% endraw %}

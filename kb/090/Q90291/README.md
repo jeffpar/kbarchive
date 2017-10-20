@@ -6,6 +6,8 @@ permalink: /kb/090/Q90291/
 
 ## Q90291: Using Graphics Within a Help File
 
+{% raw %}
+
 	Article: Q90291
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.1; WINDOWS:3.51,4.0
@@ -145,3 +147,5 @@ permalink: /kb/090/Q90291/
 	
 	=============================================================================
 	
+
+{% endraw %}

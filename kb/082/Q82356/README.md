@@ -6,6 +6,8 @@ permalink: /kb/082/Q82356/
 
 ## Q82356: SMARTDrive 4.0 May Conflict with Virus Detection Software
 
+{% raw %}
+
 	Article: Q82356
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/082/Q82356/
 	
 	=============================================================================
 	
+
+{% endraw %}

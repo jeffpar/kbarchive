@@ -6,6 +6,8 @@ permalink: /kb/168/Q168075/
 
 ## Q168075: XCLN: Personal DLs vs. Exchange Server DL
 
+{% raw %}
+
 	Article: Q168075
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/168/Q168075/
 	
 	=============================================================================
 	
+
+{% endraw %}

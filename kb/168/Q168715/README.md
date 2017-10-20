@@ -6,6 +6,8 @@ permalink: /kb/168/Q168715/
 
 ## Q168715: XGEN: CD Key Required for Exchange 5.0 Evaluation Software
 
+{% raw %}
+
 	Article: Q168715
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -57,3 +59,5 @@ permalink: /kb/168/Q168715/
 	
 	=============================================================================
 	
+
+{% endraw %}

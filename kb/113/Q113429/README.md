@@ -6,6 +6,8 @@ permalink: /kb/113/Q113429/
 
 ## Q113429: FIX: C1001: coff.c, Line 280, new of &#95;&#95;declspec(dllimport)
 
+{% raw %}
+
 	Article: Q113429
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -78,3 +80,5 @@ permalink: /kb/113/Q113429/
 	
 	=============================================================================
 	
+
+{% endraw %}

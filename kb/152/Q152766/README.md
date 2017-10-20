@@ -6,6 +6,8 @@ permalink: /kb/152/Q152766/
 
 ## Q152766: WD: Error Message: &quot;WordMail Initialization Has Failed&quot;
 
+{% raw %}
+
 	Article: Q152766
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:7.0,7.0a,95,97
@@ -167,3 +169,5 @@ permalink: /kb/152/Q152766/
 	
 	=============================================================================
 	
+
+{% endraw %}

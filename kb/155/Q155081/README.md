@@ -6,6 +6,8 @@ permalink: /kb/155/Q155081/
 
 ## Q155081: HOWTO: Send Files to the Recycle Bin
 
+{% raw %}
+
 	Article: Q155081
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/155/Q155081/
 	
 	=============================================================================
 	
+
+{% endraw %}

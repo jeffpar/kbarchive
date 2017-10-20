@@ -6,6 +6,8 @@ permalink: /kb/153/Q153270/
 
 ## Q153270: XFOR: Internet Mail Connector Proxy Generator Options
 
+{% raw %}
+
 	Article: Q153270
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/153/Q153270/
 	
 	=============================================================================
 	
+
+{% endraw %}

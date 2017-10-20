@@ -6,6 +6,8 @@ permalink: /kb/239/Q239564/
 
 ## Q239564: SMS: Client Components Reinstalled During Periodic Verification
 
+{% raw %}
+
 	Article: Q239564
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -116,3 +118,5 @@ permalink: /kb/239/Q239564/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159838/
 
 ## Q159838: XADM: Procedure Used During Backup
 
+{% raw %}
+
 	Article: Q159838
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/159/Q159838/
 	
 	=============================================================================
 	
+
+{% endraw %}

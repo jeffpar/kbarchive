@@ -6,6 +6,8 @@ permalink: /kb/254/Q254720/
 
 ## Q254720: XADM: Install of French Mailbox Manager on cluster server fails
 
+{% raw %}
+
 	Article: Q254720
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -62,3 +64,5 @@ permalink: /kb/254/Q254720/
 	
 	=============================================================================
 	
+
+{% endraw %}

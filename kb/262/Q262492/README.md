@@ -6,6 +6,8 @@ permalink: /kb/262/Q262492/
 
 ## Q262492: STOP 0x0000000a or STOP 0x00000050 Error with HP Printer Drivers
 
+{% raw %}
+
 	Article: Q262492
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/262/Q262492/
 	
 	=============================================================================
 	
+
+{% endraw %}

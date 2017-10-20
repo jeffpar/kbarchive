@@ -6,6 +6,8 @@ permalink: /kb/084/Q84165/
 
 ## Q84165: Novell Error Message for Persistent Connections
 
+{% raw %}
+
 	Article: Q84165
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/084/Q84165/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240032/
 
 ## Q240032: CG5: Err Msg: Msvcp60.dll Is Linked to the Missing Export Msvcrt
 
+{% raw %}
+
 	Article: Q240032
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 5.0
@@ -208,3 +210,5 @@ permalink: /kb/240/Q240032/
 	
 	=============================================================================
 	
+
+{% endraw %}

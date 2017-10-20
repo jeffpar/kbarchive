@@ -6,6 +6,8 @@ permalink: /kb/299/Q299934/
 
 ## Q299934: FIX: Database Opened with NOUPDATE Allows Index Creation
 
+{% raw %}
+
 	Article: Q299934
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -70,3 +72,5 @@ permalink: /kb/299/Q299934/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/028/Q28141/
 
 ## Q28141: Beginner's Concerns for Writing Non-PM Graphic Applications
 
+{% raw %}
+
 	Article: Q28141
 	Product(s): See article
 	Version(s): 5.10
@@ -66,3 +68,5 @@ permalink: /kb/028/Q28141/
 	     VioScrUnLock
 	     VioModeWait
 	     VioRedrawWait
+
+{% endraw %}

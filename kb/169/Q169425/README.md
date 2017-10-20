@@ -6,6 +6,8 @@ permalink: /kb/169/Q169425/
 
 ## Q169425: XADM: Missing X.400 Organization Field
 
+{% raw %}
+
 	Article: Q169425
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/169/Q169425/
 	
 	=============================================================================
 	
+
+{% endraw %}

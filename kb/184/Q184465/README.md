@@ -6,6 +6,8 @@ permalink: /kb/184/Q184465/
 
 ## Q184465: &quot;Take Ownership&quot; Assigns Ownership to the Wrong User
 
+{% raw %}
+
 	Article: Q184465
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT: 4.0
@@ -57,3 +59,5 @@ permalink: /kb/184/Q184465/
 	
 	=============================================================================
 	
+
+{% endraw %}

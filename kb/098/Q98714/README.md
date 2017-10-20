@@ -6,6 +6,8 @@ permalink: /kb/098/Q98714/
 
 ## Q98714: Mac ARA: Apple Modem and Shiva Dial-In May Produce Give Ups
 
+{% raw %}
+
 	Article: Q98714
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -69,3 +71,5 @@ permalink: /kb/098/Q98714/
 	
 	=============================================================================
 	
+
+{% endraw %}

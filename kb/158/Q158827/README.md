@@ -6,6 +6,8 @@ permalink: /kb/158/Q158827/
 
 ## Q158827: BUG: PageFrame on Toolbar Causes System Error 11
 
+{% raw %}
+
 	Article: Q158827
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -63,3 +65,5 @@ permalink: /kb/158/Q158827/
 	
 	=============================================================================
 	
+
+{% endraw %}

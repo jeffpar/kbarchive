@@ -6,6 +6,8 @@ permalink: /kb/065/Q65702/
 
 ## Q65702: Fatal Error C1002: Out of Heap Space in Pass 2
 
+{% raw %}
+
 	Article: Q65702
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -58,3 +60,5 @@ permalink: /kb/065/Q65702/
 	6. Observe the compiling options. Change these to see if these have
 	   any affect. For example, disable optimizations with /Od if
 	   optimizing is currently enabled.
+
+{% endraw %}

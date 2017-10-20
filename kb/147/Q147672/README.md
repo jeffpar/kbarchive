@@ -6,6 +6,8 @@ permalink: /kb/147/Q147672/
 
 ## Q147672: HOWTO: How to specify 32x32 and 16x16 Icons for Win95 Logo Compl
 
+{% raw %}
+
 	Article: Q147672
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -99,3 +101,5 @@ permalink: /kb/147/Q147672/
 	
 	=============================================================================
 	
+
+{% endraw %}

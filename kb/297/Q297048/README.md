@@ -6,6 +6,8 @@ permalink: /kb/297/Q297048/
 
 ## Q297048: SMS: Programs That You Start When You Log On Lose Focus
 
+{% raw %}
+
 	Article: Q297048
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -69,3 +71,5 @@ permalink: /kb/297/Q297048/
 	
 	=============================================================================
 	
+
+{% endraw %}

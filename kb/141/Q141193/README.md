@@ -6,6 +6,8 @@ permalink: /kb/141/Q141193/
 
 ## Q141193: Training and Source Materials for Windows 95
 
+{% raw %}
+
 	Article: Q141193
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -172,3 +174,5 @@ permalink: /kb/141/Q141193/
 	
 	=============================================================================
 	
+
+{% endraw %}

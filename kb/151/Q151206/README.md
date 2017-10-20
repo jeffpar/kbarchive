@@ -6,6 +6,8 @@ permalink: /kb/151/Q151206/
 
 ## Q151206: Err Msg: ...Problem w/ Mail System. Messages Could Not Be Read
 
+{% raw %}
+
 	Article: Q151206
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,3.2,3.2a,3.5,7.0
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151206/
 	
 	=============================================================================
 	
+
+{% endraw %}

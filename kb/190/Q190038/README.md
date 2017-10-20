@@ -6,6 +6,8 @@ permalink: /kb/190/Q190038/
 
 ## Q190038: BUG: Windowless OptionButton Events Not in Correct Order
 
+{% raw %}
+
 	Article: Q190038
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -128,3 +130,5 @@ permalink: /kb/190/Q190038/
 	
 	=============================================================================
 	
+
+{% endraw %}

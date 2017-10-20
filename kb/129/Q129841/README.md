@@ -6,6 +6,8 @@ permalink: /kb/129/Q129841/
 
 ## Q129841: DEVELOPING MS EXCEL 5 SOLUTIONS Corrections and Comments
 
+{% raw %}
+
 	Article: Q129841
 	Product(s): Microsoft Press
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/129/Q129841/
 	
 	=============================================================================
 	
+
+{% endraw %}

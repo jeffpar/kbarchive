@@ -6,6 +6,8 @@ permalink: /kb/178/Q178666/
 
 ## Q178666: BUG: Form Not Released When Focus on Grid and Modal Form Started
 
+{% raw %}
+
 	Article: Q178666
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b;WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -121,3 +123,5 @@ permalink: /kb/178/Q178666/
 	
 	=============================================================================
 	
+
+{% endraw %}

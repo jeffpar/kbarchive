@@ -6,6 +6,8 @@ permalink: /kb/106/Q106713/
 
 ## Q106713: Incorrect I/O Address Detected on SMC Elite+ Network Adapter
 
+{% raw %}
+
 	Article: Q106713
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -53,3 +55,5 @@ permalink: /kb/106/Q106713/
 	
 	=============================================================================
 	
+
+{% endraw %}

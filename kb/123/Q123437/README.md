@@ -6,6 +6,8 @@ permalink: /kb/123/Q123437/
 
 ## Q123437: PC Adm: Err Msg: Could Not Access Requestor's Configuration...
 
+{% raw %}
+
 	Article: Q123437
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2
@@ -83,3 +85,5 @@ permalink: /kb/123/Q123437/
 	
 	=============================================================================
 	
+
+{% endraw %}

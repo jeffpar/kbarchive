@@ -6,6 +6,8 @@ permalink: /kb/179/Q179137/
 
 ## Q179137: Enable Default Processing in a Subclassed Button Control
 
+{% raw %}
+
 	Article: Q179137
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -223,3 +225,5 @@ permalink: /kb/179/Q179137/
 	
 	=============================================================================
 	
+
+{% endraw %}

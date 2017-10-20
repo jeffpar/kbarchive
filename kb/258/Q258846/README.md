@@ -6,6 +6,8 @@ permalink: /kb/258/Q258846/
 
 ## Q258846: 9-Digit Dialing Required in Belgium After July 1, 2000
 
+{% raw %}
+
 	Article: Q258846
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0
@@ -125,3 +127,5 @@ permalink: /kb/258/Q258846/
 	
 	=============================================================================
 	
+
+{% endraw %}

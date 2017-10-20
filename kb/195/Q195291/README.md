@@ -6,6 +6,8 @@ permalink: /kb/195/Q195291/
 
 ## Q195291: How to Disable #exec in Server-Side Include Files
 
+{% raw %}
+
 	Article: Q195291
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/195/Q195291/
 	
 	=============================================================================
 	
+
+{% endraw %}

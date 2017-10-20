@@ -6,6 +6,8 @@ permalink: /kb/134/Q134445/
 
 ## Q134445: Flight Simulator 5.1: Panasonic KXL-D720 Does Not Read Disc
 
+{% raw %}
+
 	Article: Q134445
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -78,3 +80,5 @@ permalink: /kb/134/Q134445/
 	
 	=============================================================================
 	
+
+{% endraw %}

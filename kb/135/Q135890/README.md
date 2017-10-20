@@ -6,6 +6,8 @@ permalink: /kb/135/Q135890/
 
 ## Q135890: Windows 95 CD-ROM Printers.txt File
 
+{% raw %}
+
 	Article: Q135890
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -402,3 +404,5 @@ permalink: /kb/135/Q135890/
 	
 	=============================================================================
 	
+
+{% endraw %}

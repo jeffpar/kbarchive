@@ -6,6 +6,8 @@ permalink: /kb/178/Q178784/
 
 ## Q178784: HOWTO: Use Automation to Open and Print a Word Document
 
+{% raw %}
+
 	Article: Q178784
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -174,3 +176,5 @@ permalink: /kb/178/Q178784/
 	
 	=============================================================================
 	
+
+{% endraw %}

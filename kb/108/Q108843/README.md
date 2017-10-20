@@ -6,6 +6,8 @@ permalink: /kb/108/Q108843/
 
 ## Q108843: PC Ext: Err Msg: Invalid Option Specified in .INI
 
+{% raw %}
+
 	Article: Q108843
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -71,3 +73,5 @@ permalink: /kb/108/Q108843/
 	
 	=============================================================================
 	
+
+{% endraw %}

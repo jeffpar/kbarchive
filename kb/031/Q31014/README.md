@@ -6,6 +6,8 @@ permalink: /kb/031/Q31014/
 
 ## Q31014: Screen Setup for Kaypro 16-2 Portable
 
+{% raw %}
+
 	Article: Q31014
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/031/Q31014/
 	
 	=============================================================================
 	
+
+{% endraw %}

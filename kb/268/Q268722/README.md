@@ -6,6 +6,8 @@ permalink: /kb/268/Q268722/
 
 ## Q268722: Access Violation in Cmd.exe Calling CreateProcess()
 
+{% raw %}
+
 	Article: Q268722
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -103,3 +105,5 @@ permalink: /kb/268/Q268722/
 	
 	=============================================================================
 	
+
+{% endraw %}

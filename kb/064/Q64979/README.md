@@ -6,6 +6,8 @@ permalink: /kb/064/Q64979/
 
 ## Q64979: ISAM Benchmark of PDS 7.10 Versus 7.00, FoxPro, and Btrieve
 
+{% raw %}
+
 	Article: Q64979
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -104,3 +106,5 @@ permalink: /kb/064/Q64979/
 	Two-File, Many to Many Join        15.3       3.1       394%
 	
 	Mean Speed Improvement of 152 percent BASIC PDS 7.10 over Btrieve
+
+{% endraw %}

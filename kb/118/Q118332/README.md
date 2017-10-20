@@ -6,6 +6,8 @@ permalink: /kb/118/Q118332/
 
 ## Q118332: S3 Video on Certain Dell Computers is Limited to 256 Colors
 
+{% raw %}
+
 	Article: Q118332
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -48,3 +50,5 @@ permalink: /kb/118/Q118332/
 	
 	=============================================================================
 	
+
+{% endraw %}

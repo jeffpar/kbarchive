@@ -6,6 +6,8 @@ permalink: /kb/221/Q221671/
 
 ## Q221671: FIX: OLE Error &quot;Member Not Found&quot; Using MSMQ
 
+{% raw %}
+
 	Article: Q221671
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -126,3 +128,5 @@ permalink: /kb/221/Q221671/
 	
 	=============================================================================
 	
+
+{% endraw %}

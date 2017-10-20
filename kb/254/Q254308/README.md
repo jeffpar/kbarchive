@@ -6,6 +6,8 @@ permalink: /kb/254/Q254308/
 
 ## Q254308: Games: Hal.dll Error Message When You Attempt to Start Program
 
+{% raw %}
+
 	Article: Q254308
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -80,3 +82,5 @@ permalink: /kb/254/Q254308/
 	
 	=============================================================================
 	
+
+{% endraw %}

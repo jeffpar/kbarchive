@@ -6,6 +6,8 @@ permalink: /kb/107/Q107105/
 
 ## Q107105: PROFS: File Format of Message Sent from PROFS to MS Mail
 
+{% raw %}
+
 	Article: Q107105
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1,3.2,3.3,3.4
@@ -65,3 +67,5 @@ permalink: /kb/107/Q107105/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68688/
 
 ## Q68688: Specifying Anchor Blocks in Help Files in RTF
 
+{% raw %}
+
 	Article: Q68688
 	Product(s): See article
 	Version(s): 1.05   | 1.05
@@ -60,3 +62,5 @@ permalink: /kb/068/Q68688/
 	
 	For more information, see the online help and Chapter 7 in the
 	"Microsoft C Advanced Programming Techniques" manual.
+
+{% endraw %}

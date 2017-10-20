@@ -6,6 +6,8 @@ permalink: /kb/078/Q78993/
 
 ## Q78993: Slow Color Output with DeskJet 500C
 
+{% raw %}
+
 	Article: Q78993
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/078/Q78993/
 	
 	=============================================================================
 	
+
+{% endraw %}

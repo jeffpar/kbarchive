@@ -6,6 +6,8 @@ permalink: /kb/159/Q159270/
 
 ## Q159270: INFO: How the Merge Process Works in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q159270
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/159/Q159270/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124102/
 
 ## Q124102: &quot;Out of Paper&quot; Message After DeskJet 560c Tray Is Refilled
 
+{% raw %}
+
 	Article: Q124102
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/124/Q124102/
 	
 	=============================================================================
 	
+
+{% endraw %}

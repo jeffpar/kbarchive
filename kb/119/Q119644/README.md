@@ -6,6 +6,8 @@ permalink: /kb/119/Q119644/
 
 ## Q119644: Copying Files from Windows NT Using NBF Can Be Very Slow
 
+{% raw %}
+
 	Article: Q119644
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -95,3 +97,5 @@ permalink: /kb/119/Q119644/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229697/
 
 ## Q229697: How to Enable IPX/SPX in Connection Manager
 
+{% raw %}
+
 	Article: Q229697
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/229/Q229697/
 	
 	=============================================================================
 	
+
+{% endraw %}

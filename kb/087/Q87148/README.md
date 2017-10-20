@@ -6,6 +6,8 @@ permalink: /kb/087/Q87148/
 
 ## Q87148: Mac Wkst: Contents of Cache File and Data File for User
 
+{% raw %}
+
 	Article: Q87148
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/087/Q87148/
 	
 	=============================================================================
 	
+
+{% endraw %}

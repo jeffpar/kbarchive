@@ -6,6 +6,8 @@ permalink: /kb/124/Q124890/
 
 ## Q124890: How to Use Modem AT Commands in HyperTerminal
 
+{% raw %}
+
 	Article: Q124890
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/124/Q124890/
 	
 	=============================================================================
 	
+
+{% endraw %}

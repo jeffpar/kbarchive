@@ -6,6 +6,8 @@ permalink: /kb/226/Q226818/
 
 ## Q226818: SMS: Broken DBCS Characters in Remote MS-DOS Command Window
 
+{% raw %}
+
 	Article: Q226818
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -50,3 +52,5 @@ permalink: /kb/226/Q226818/
 	
 	=============================================================================
 	
+
+{% endraw %}

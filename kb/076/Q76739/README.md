@@ -6,6 +6,8 @@ permalink: /kb/076/Q76739/
 
 ## Q76739: Updating Backup Files with NMAKE &amp; ALL Target-Dependency
 
+{% raw %}
+
 	Article: Q76739
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.01,1.11,1.12,1.13,1.2,1.21,1.3,1.4
@@ -78,3 +80,5 @@ permalink: /kb/076/Q76739/
 	
 	=============================================================================
 	
+
+{% endraw %}

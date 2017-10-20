@@ -6,6 +6,8 @@ permalink: /kb/095/Q95943/
 
 ## Q95943: PC Win: Offline Symbol Appears in Status Bar
 
+{% raw %}
+
 	Article: Q95943
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b
@@ -77,3 +79,5 @@ permalink: /kb/095/Q95943/
 	
 	=============================================================================
 	
+
+{% endraw %}

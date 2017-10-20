@@ -6,6 +6,8 @@ permalink: /kb/031/Q31992/
 
 ## Q31992: Link Error L1053 Symbol Table Overflow
 
+{% raw %}
+
 	Article: Q31992
 	Product(s): See article
 	Version(s): 3.x 5.01.20 5.01.21
@@ -27,3 +29,5 @@ permalink: /kb/031/Q31992/
 	Under OS/2, the segmented-executable linker (Versions 5.x and above)
 	has no limit on the size of the symbol table because it extends the
 	symbol table in virtual memory.
+
+{% endraw %}

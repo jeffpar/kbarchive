@@ -6,6 +6,8 @@ permalink: /kb/145/Q145797/
 
 ## Q145797: No User Account Authentication Appears in Internet Explorer
 
+{% raw %}
+
 	Article: Q145797
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/145/Q145797/
 	
 	=============================================================================
 	
+
+{% endraw %}

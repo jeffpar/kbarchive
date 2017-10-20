@@ -6,6 +6,8 @@ permalink: /kb/199/Q199466/
 
 ## Q199466: SMS: How to Set Up SQL Server Integrated Security For Use w/ SMS
 
+{% raw %}
+
 	Article: Q199466
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -311,3 +313,5 @@ permalink: /kb/199/Q199466/
 	
 	=============================================================================
 	
+
+{% endraw %}

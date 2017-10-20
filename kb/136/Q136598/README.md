@@ -6,6 +6,8 @@ permalink: /kb/136/Q136598/
 
 ## Q136598: PC Ext: Cannot Initiate Connection to External Asynchronous PO
 
+{% raw %}
+
 	Article: Q136598
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0a,3.2,3.2a
@@ -59,3 +61,5 @@ permalink: /kb/136/Q136598/
 	
 	=============================================================================
 	
+
+{% endraw %}

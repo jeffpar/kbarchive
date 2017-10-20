@@ -6,6 +6,8 @@ permalink: /kb/189/Q189522/
 
 ## Q189522: Network Drive Letters in PATH Statement Causes Excessive Traffic
 
+{% raw %}
+
 	Article: Q189522
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/189/Q189522/
 	
 	=============================================================================
 	
+
+{% endraw %}

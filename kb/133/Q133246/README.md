@@ -6,6 +6,8 @@ permalink: /kb/133/Q133246/
 
 ## Q133246: How to Install VFP300.ESL in a Distributed Application
 
+{% raw %}
+
 	Article: Q133246
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -94,3 +96,5 @@ permalink: /kb/133/Q133246/
 	
 	=============================================================================
 	
+
+{% endraw %}

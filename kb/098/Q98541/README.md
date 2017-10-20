@@ -6,6 +6,8 @@ permalink: /kb/098/Q98541/
 
 ## Q98541: Windows Err Msg: LPT2 Is Not Present... (Interlnk)
 
+{% raw %}
+
 	Article: Q98541
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/098/Q98541/
 	
 	=============================================================================
 	
+
+{% endraw %}

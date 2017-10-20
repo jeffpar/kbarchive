@@ -6,6 +6,8 @@ permalink: /kb/192/Q192300/
 
 ## Q192300: HOWTO: Use ADSI for Printer Information and Control
 
+{% raw %}
+
 	Article: Q192300
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0; winnt:2.5
@@ -344,3 +346,5 @@ permalink: /kb/192/Q192300/
 	
 	=============================================================================
 	
+
+{% endraw %}

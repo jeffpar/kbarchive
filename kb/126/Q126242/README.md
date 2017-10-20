@@ -6,6 +6,8 @@ permalink: /kb/126/Q126242/
 
 ## Q126242: PC Win: New Mail Interval Does Not Accept White Space
 
+{% raw %}
+
 	Article: Q126242
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -48,3 +50,5 @@ permalink: /kb/126/Q126242/
 	
 	=============================================================================
 	
+
+{% endraw %}

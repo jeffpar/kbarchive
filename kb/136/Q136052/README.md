@@ -6,6 +6,8 @@ permalink: /kb/136/Q136052/
 
 ## Q136052: PC Mac: Compressing Private Folder File(s)
 
+{% raw %}
+
 	Article: Q136052
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/136/Q136052/
 	
 	=============================================================================
 	
+
+{% endraw %}

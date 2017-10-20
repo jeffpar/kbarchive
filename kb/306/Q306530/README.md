@@ -6,6 +6,8 @@ permalink: /kb/306/Q306530/
 
 ## Q306530: PRB: Cannot Use Boolean Parameter with Oracle
 
+{% raw %}
+
 	Article: Q306530
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,2.1,2.5,2.6,2.7,Build 2.573.2927,Build 2.573.4403,Build 2.573.6526,Build 2.573.771
@@ -163,3 +165,5 @@ permalink: /kb/306/Q306530/
 	
 	=============================================================================
 	
+
+{% endraw %}

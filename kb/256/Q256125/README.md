@@ -6,6 +6,8 @@ permalink: /kb/256/Q256125/
 
 ## Q256125: SMS: No Status Message When Client Base Components Upgraded
 
+{% raw %}
+
 	Article: Q256125
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -67,3 +69,5 @@ permalink: /kb/256/Q256125/
 	
 	=============================================================================
 	
+
+{% endraw %}

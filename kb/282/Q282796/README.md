@@ -6,6 +6,8 @@ permalink: /kb/282/Q282796/
 
 ## Q282796: XADM: Store.exe Causes Access Violation with an SMTP Message
 
+{% raw %}
+
 	Article: Q282796
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -81,3 +83,5 @@ permalink: /kb/282/Q282796/
 	
 	=============================================================================
 	
+
+{% endraw %}

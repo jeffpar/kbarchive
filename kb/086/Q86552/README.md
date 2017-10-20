@@ -6,6 +6,8 @@ permalink: /kb/086/Q86552/
 
 ## Q86552: MHS: What the Gateway to MHS Does
 
+{% raw %}
+
 	Article: Q86552
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86552/
 	
 	=============================================================================
 	
+
+{% endraw %}

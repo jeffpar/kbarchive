@@ -6,6 +6,8 @@ permalink: /kb/254/Q254893/
 
 ## Q254893: XFOR: Internet Mail Service Does Not Generate the NDR
 
+{% raw %}
+
 	Article: Q254893
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -88,3 +90,5 @@ permalink: /kb/254/Q254893/
 	
 	=============================================================================
 	
+
+{% endraw %}

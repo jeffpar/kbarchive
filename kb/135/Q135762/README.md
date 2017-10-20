@@ -6,6 +6,8 @@ permalink: /kb/135/Q135762/
 
 ## Q135762: Installing the Cisco Systems AccessPro PC Card With Windows NT
 
+{% raw %}
+
 	Article: Q135762
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51
@@ -73,3 +75,5 @@ permalink: /kb/135/Q135762/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153239/
 
 ## Q153239: BUG: Multiple CRichEditView::PrintInsideRect's Are Distorted
 
+{% raw %}
+
 	Article: Q153239
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/153/Q153239/
 	
 	=============================================================================
 	
+
+{% endraw %}

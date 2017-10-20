@@ -6,6 +6,8 @@ permalink: /kb/157/Q157015/
 
 ## Q157015: XCON: MTA Outbound Connection Refused by X.400 Host
 
+{% raw %}
+
 	Article: Q157015
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/157/Q157015/
 	
 	=============================================================================
 	
+
+{% endraw %}

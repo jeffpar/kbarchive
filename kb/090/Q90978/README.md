@@ -6,6 +6,8 @@ permalink: /kb/090/Q90978/
 
 ## Q90978: Setup and Control Panel: Different Recommended Swap File Size
 
+{% raw %}
+
 	Article: Q90978
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -35,3 +37,5 @@ permalink: /kb/090/Q90978/
 	
 	=============================================================================
 	
+
+{% endraw %}

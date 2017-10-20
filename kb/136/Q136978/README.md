@@ -6,6 +6,8 @@ permalink: /kb/136/Q136978/
 
 ## Q136978: How to Refresh a Formset by Using Commands Outside of the Form
 
+{% raw %}
+
 	Article: Q136978
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -88,3 +90,5 @@ permalink: /kb/136/Q136978/
 	
 	=============================================================================
 	
+
+{% endraw %}

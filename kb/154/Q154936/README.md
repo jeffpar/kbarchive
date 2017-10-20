@@ -6,6 +6,8 @@ permalink: /kb/154/Q154936/
 
 ## Q154936: SMS Displays # When Attempting to Create SMS Client
 
+{% raw %}
+
 	Article: Q154936
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -61,3 +63,5 @@ permalink: /kb/154/Q154936/
 	
 	=============================================================================
 	
+
+{% endraw %}

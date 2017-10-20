@@ -6,6 +6,8 @@ permalink: /kb/083/Q83734/
 
 ## Q83734: HP Vectra QS/20 Wrong HIMEM.SYS Slows Machine
 
+{% raw %}
+
 	Article: Q83734
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/083/Q83734/
 	
 	=============================================================================
 	
+
+{% endraw %}

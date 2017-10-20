@@ -6,6 +6,8 @@ permalink: /kb/122/Q122526/
 
 ## Q122526: IntelliPoint Mouse Software Not Supported Under Windows NT
 
+{% raw %}
+
 	Article: Q122526
 	Product(s): Microsoft Windows NT
 	Version(s): ; WINDOWS:2000; winnt:3.5,3.51,4.0
@@ -66,3 +68,5 @@ permalink: /kb/122/Q122526/
 	
 	=============================================================================
 	
+
+{% endraw %}

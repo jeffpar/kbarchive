@@ -6,6 +6,8 @@ permalink: /kb/171/Q171929/
 
 ## Q171929: Internet Explorer 3.0 SBS: Web Address Returns Error Message
 
+{% raw %}
+
 	Article: Q171929
 	Product(s): Microsoft Press
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/171/Q171929/
 	
 	=============================================================================
 	
+
+{% endraw %}

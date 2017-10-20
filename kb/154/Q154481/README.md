@@ -6,6 +6,8 @@ permalink: /kb/154/Q154481/
 
 ## Q154481: XGEN: README.TXT: Microsoft Exchange 5.0 U.S. Service Pack 1
 
+{% raw %}
+
 	Article: Q154481
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -677,3 +679,5 @@ permalink: /kb/154/Q154481/
 	
 	=============================================================================
 	
+
+{% endraw %}

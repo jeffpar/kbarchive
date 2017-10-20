@@ -6,6 +6,8 @@ permalink: /kb/226/Q226873/
 
 ## Q226873: SMS: Group Permissions Fail if Group Name Contain Extended Char.
 
+{% raw %}
+
 	Article: Q226873
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -62,3 +64,5 @@ permalink: /kb/226/Q226873/
 	
 	=============================================================================
 	
+
+{% endraw %}

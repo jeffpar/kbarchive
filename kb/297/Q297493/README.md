@@ -6,6 +6,8 @@ permalink: /kb/297/Q297493/
 
 ## Q297493: HOWTO: Modify Exchange Folder Permissions w/IExchangeModifyTable
 
+{% raw %}
+
 	Article: Q297493
 	Product(s): Microsoft Exchange
 	Version(s): 1.0,5.5
@@ -470,3 +472,5 @@ permalink: /kb/297/Q297493/
 	
 	=============================================================================
 	
+
+{% endraw %}

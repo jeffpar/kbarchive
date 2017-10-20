@@ -6,6 +6,8 @@ permalink: /kb/161/Q161578/
 
 ## Q161578: BUG: Duplicate Entries Appear in Open Database Dialog Box
 
+{% raw %}
+
 	Article: Q161578
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -142,3 +144,5 @@ permalink: /kb/161/Q161578/
 	
 	=============================================================================
 	
+
+{% endraw %}

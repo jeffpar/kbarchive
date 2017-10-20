@@ -6,6 +6,8 @@ permalink: /kb/191/Q191691/
 
 ## Q191691: BUG: Sub Moved Above Enum or Type Causes Incompatibility Error
 
+{% raw %}
+
 	Article: Q191691
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/191/Q191691/
 	
 	=============================================================================
 	
+
+{% endraw %}

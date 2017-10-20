@@ -6,6 +6,8 @@ permalink: /kb/323/Q323637/
 
 ## Q323637: Connection Settings link on Spanish-U.S. MSN Explorer version si
 
+{% raw %}
+
 	Article: Q323637
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/323/Q323637/
 	
 	=============================================================================
 	
+
+{% endraw %}

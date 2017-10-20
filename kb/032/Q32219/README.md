@@ -6,6 +6,8 @@ permalink: /kb/032/Q32219/
 
 ## Q32219: DosGetPid and DosGetInfoSeg Get Process Identification (PID)
 
+{% raw %}
+
 	Article: Q32219
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -87,3 +89,5 @@ permalink: /kb/032/Q32219/
 	         print "       Process ID of Parent : ";info.pidParent
 	         print "Thread ID of Current Thread : ";info.tid
 	       END IF
+
+{% endraw %}

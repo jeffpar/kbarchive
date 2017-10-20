@@ -6,6 +6,8 @@ permalink: /kb/170/Q170548/
 
 ## Q170548: PRB: DAO Transactions to ODBC Database Can Hang Application
 
+{% raw %}
+
 	Article: Q170548
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -169,3 +171,5 @@ permalink: /kb/170/Q170548/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85269/
 
 ## Q85269: Intensity Control May Cause Gray Images to Print as Black
 
+{% raw %}
+
 	Article: Q85269
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/085/Q85269/
 	
 	=============================================================================
 	
+
+{% endraw %}

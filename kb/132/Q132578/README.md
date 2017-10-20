@@ -6,6 +6,8 @@ permalink: /kb/132/Q132578/
 
 ## Q132578: Incorrect Error When Attempting Remote Administration
 
+{% raw %}
+
 	Article: Q132578
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/132/Q132578/
 	
 	=============================================================================
 	
+
+{% endraw %}

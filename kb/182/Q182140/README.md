@@ -6,6 +6,8 @@ permalink: /kb/182/Q182140/
 
 ## Q182140: DSPU and PU Passthrough Available in SNA Workstation Product
 
+{% raw %}
+
 	Article: Q182140
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -59,3 +61,5 @@ permalink: /kb/182/Q182140/
 	
 	=============================================================================
 	
+
+{% endraw %}

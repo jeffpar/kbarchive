@@ -6,6 +6,8 @@ permalink: /kb/036/Q36782/
 
 ## Q36782: C2086 Error When Compiling with /Oi and #include &lt;mt&#92;math.h&gt;
 
+{% raw %}
+
 	Article: Q36782
 	Product(s): See article
 	Version(s): 5.10
@@ -105,3 +107,5 @@ permalink: /kb/036/Q36782/
 	preprocessor will remove those prototypes from the compilation:
 	
 	cl  ... /D INTRINSICS ...
+
+{% endraw %}

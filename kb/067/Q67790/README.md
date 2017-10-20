@@ -6,6 +6,8 @@ permalink: /kb/067/Q67790/
 
 ## Q67790: %n Format Specifier May Be Ignored in C 6.00 sscanf()
 
+{% raw %}
+
 	Article: Q67790
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -45,3 +47,5 @@ permalink: /kb/067/Q67790/
 	------
 	
 	0  3  0
+
+{% endraw %}

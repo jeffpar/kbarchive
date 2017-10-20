@@ -6,6 +6,8 @@ permalink: /kb/283/Q283075/
 
 ## Q283075: Networking Essentials Second Edition Training Kit, Deluxe Multim
 
+{% raw %}
+
 	Article: Q283075
 	Product(s): Microsoft Press
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/283/Q283075/
 	
 	=============================================================================
 	
+
+{% endraw %}

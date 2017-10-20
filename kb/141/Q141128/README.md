@@ -6,6 +6,8 @@ permalink: /kb/141/Q141128/
 
 ## Q141128: Windows 95 Self-Help and Online Support Options
 
+{% raw %}
+
 	Article: Q141128
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -536,3 +538,5 @@ permalink: /kb/141/Q141128/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132685/
 
 ## Q132685: PC WSPlus: Loss of Description Data After a Carriage Return
 
+{% raw %}
+
 	Article: Q132685
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132685/
 	
 	=============================================================================
 	
+
+{% endraw %}

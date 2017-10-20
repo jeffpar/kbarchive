@@ -6,6 +6,8 @@ permalink: /kb/185/Q185154/
 
 ## Q185154: XCON: Cannot Start Exchange MTA Service With Error 2140
 
+{% raw %}
+
 	Article: Q185154
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -91,3 +93,5 @@ permalink: /kb/185/Q185154/
 	
 	=============================================================================
 	
+
+{% endraw %}

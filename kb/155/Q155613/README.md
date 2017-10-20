@@ -6,6 +6,8 @@ permalink: /kb/155/Q155613/
 
 ## Q155613: AMD Nx586 Processor Incompatible with Windows NT 4.0
 
+{% raw %}
+
 	Article: Q155613
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/155/Q155613/
 	
 	=============================================================================
 	
+
+{% endraw %}

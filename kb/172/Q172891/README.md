@@ -6,6 +6,8 @@ permalink: /kb/172/Q172891/
 
 ## Q172891: Modem Disconnects from MSN After Idle for 20 Minutes
 
+{% raw %}
+
 	Article: Q172891
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6
@@ -67,3 +69,5 @@ permalink: /kb/172/Q172891/
 	
 	=============================================================================
 	
+
+{% endraw %}

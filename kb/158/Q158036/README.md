@@ -6,6 +6,8 @@ permalink: /kb/158/Q158036/
 
 ## Q158036: MSN Kids: Where Is MSN Kids?
 
+{% raw %}
+
 	Article: Q158036
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/158/Q158036/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/081/Q81547/
 
 ## Q81547: DDEML CONVINFO Structure, wConvst Field Description
 
+{% raw %}
+
 	Article: Q81547
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -78,3 +80,5 @@ permalink: /kb/081/Q81547/
 	
 	=============================================================================
 	
+
+{% endraw %}

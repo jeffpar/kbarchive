@@ -6,6 +6,8 @@ permalink: /kb/304/Q304962/
 
 ## Q304962: TrainSim: How To Optimize Performance
 
+{% raw %}
+
 	Article: Q304962
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -251,3 +253,5 @@ permalink: /kb/304/Q304962/
 	
 	=============================================================================
 	
+
+{% endraw %}

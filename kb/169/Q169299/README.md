@@ -6,6 +6,8 @@ permalink: /kb/169/Q169299/
 
 ## Q169299: XCON: HP Openmail Returns a Loop Detected NDR to Exchange
 
+{% raw %}
+
 	Article: Q169299
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/169/Q169299/
 	
 	=============================================================================
 	
+
+{% endraw %}

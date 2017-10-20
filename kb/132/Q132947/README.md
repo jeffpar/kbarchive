@@ -6,6 +6,8 @@ permalink: /kb/132/Q132947/
 
 ## Q132947: HOWTO: Suppress the Initial Dialog Box in a Parameterized View
 
+{% raw %}
+
 	Article: Q132947
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132947/
 	
 	=============================================================================
 	
+
+{% endraw %}

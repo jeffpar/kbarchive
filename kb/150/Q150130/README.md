@@ -6,6 +6,8 @@ permalink: /kb/150/Q150130/
 
 ## Q150130: BUG: NMAKE Utility May Compile Project Files More Than Once
 
+{% raw %}
+
 	Article: Q150130
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0
@@ -42,3 +44,5 @@ permalink: /kb/150/Q150130/
 	
 	=============================================================================
 	
+
+{% endraw %}

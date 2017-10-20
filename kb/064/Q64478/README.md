@@ -6,6 +6,8 @@ permalink: /kb/064/Q64478/
 
 ## Q64478: Mathematica 387 and Mathlab 386 with Windows 3.0
 
+{% raw %}
+
 	Article: Q64478
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/064/Q64478/
 	
 	=============================================================================
 	
+
+{% endraw %}

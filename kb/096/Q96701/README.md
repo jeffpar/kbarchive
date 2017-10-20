@@ -6,6 +6,8 @@ permalink: /kb/096/Q96701/
 
 ## Q96701: DoubleSpace Err Msg: Unknown Error Cause by Watchdog PC
 
+{% raw %}
+
 	Article: Q96701
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -51,3 +53,5 @@ permalink: /kb/096/Q96701/
 	
 	=============================================================================
 	
+
+{% endraw %}

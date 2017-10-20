@@ -6,6 +6,8 @@ permalink: /kb/120/Q120575/
 
 ## Q120575: IBM Token Ring Adapter Problems with Base I/O Address
 
+{% raw %}
+
 	Article: Q120575
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1,3.5,3.51,4.0; :
@@ -99,3 +101,5 @@ permalink: /kb/120/Q120575/
 	
 	=============================================================================
 	
+
+{% endraw %}

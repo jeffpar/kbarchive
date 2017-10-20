@@ -6,6 +6,8 @@ permalink: /kb/151/Q151431/
 
 ## Q151431: XFOR: MSMI Stops Without Error
 
+{% raw %}
+
 	Article: Q151431
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -62,3 +64,5 @@ permalink: /kb/151/Q151431/
 	
 	=============================================================================
 	
+
+{% endraw %}

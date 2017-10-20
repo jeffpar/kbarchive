@@ -6,6 +6,8 @@ permalink: /kb/323/Q323803/
 
 ## Q323803: BUG: Issues Related to Using ODBC Driver for DB2 with File DSNs
 
+{% raw %}
+
 	Article: Q323803
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/323/Q323803/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130436/
 
 ## Q130436: MHS: Blank Subject Line
 
+{% raw %}
+
 	Article: Q130436
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/130/Q130436/
 	
 	=============================================================================
 	
+
+{% endraw %}

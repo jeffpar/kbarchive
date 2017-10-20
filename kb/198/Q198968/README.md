@@ -6,6 +6,8 @@ permalink: /kb/198/Q198968/
 
 ## Q198968: Err Msg: SSL Required
 
+{% raw %}
+
 	Article: Q198968
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -84,3 +86,5 @@ permalink: /kb/198/Q198968/
 	
 	=============================================================================
 	
+
+{% endraw %}

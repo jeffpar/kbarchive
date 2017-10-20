@@ -6,6 +6,8 @@ permalink: /kb/032/Q32100/
 
 ## Q32100: RANDOMIZE Results Differ in QB.EXE Versus Compiled .EXE
 
+{% raw %}
+
 	Article: Q32100
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -88,3 +90,5 @@ permalink: /kb/032/Q32100/
 	   1
 	   3
 	   4
+
+{% endraw %}

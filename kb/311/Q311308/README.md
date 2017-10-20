@@ -6,6 +6,8 @@ permalink: /kb/311/Q311308/
 
 ## Q311308: PRB: All Users Do Not Have Access to Installed Application
 
+{% raw %}
+
 	Article: Q311308
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -70,3 +72,5 @@ permalink: /kb/311/Q311308/
 	
 	=============================================================================
 	
+
+{% endraw %}

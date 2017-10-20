@@ -6,6 +6,8 @@ permalink: /kb/134/Q134938/
 
 ## Q134938: BUG: MASM sample SYSINFO Error: L1101 invalid object module
 
+{% raw %}
+
 	Article: Q134938
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.11,6.11c,6.11d
@@ -92,3 +94,5 @@ permalink: /kb/134/Q134938/
 	
 	=============================================================================
 	
+
+{% endraw %}

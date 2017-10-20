@@ -6,6 +6,8 @@ permalink: /kb/146/Q146509/
 
 ## Q146509: XCON: MTA May Stop If Site Connector Is Removed
 
+{% raw %}
+
 	Article: Q146509
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146509/
 	
 	=============================================================================
 	
+
+{% endraw %}

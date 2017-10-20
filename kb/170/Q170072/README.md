@@ -6,6 +6,8 @@ permalink: /kb/170/Q170072/
 
 ## Q170072: Host Security Update Renames SNAREG.DLL
 
+{% raw %}
+
 	Article: Q170072
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -94,3 +96,5 @@ permalink: /kb/170/Q170072/
 	
 	=============================================================================
 	
+
+{% endraw %}

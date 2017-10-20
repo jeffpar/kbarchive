@@ -6,6 +6,8 @@ permalink: /kb/141/Q141303/
 
 ## Q141303: Dynasets w/ CLongBinary Fields Throws Incorrect Exception
 
+{% raw %}
+
 	Article: Q141303
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -211,3 +213,5 @@ permalink: /kb/141/Q141303/
 	
 	=============================================================================
 	
+
+{% endraw %}

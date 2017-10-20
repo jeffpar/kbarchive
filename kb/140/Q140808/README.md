@@ -6,6 +6,8 @@ permalink: /kb/140/Q140808/
 
 ## Q140808: German PDF File for Office 4.2a Detects Office 4.2c
 
+{% raw %}
+
 	Article: Q140808
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/140/Q140808/
 	
 	=============================================================================
 	
+
+{% endraw %}

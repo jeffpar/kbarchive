@@ -6,6 +6,8 @@ permalink: /kb/153/Q153658/
 
 ## Q153658: XFOR: DXA Crashing with Event ID 268
 
+{% raw %}
+
 	Article: Q153658
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -149,3 +151,5 @@ permalink: /kb/153/Q153658/
 	
 	=============================================================================
 	
+
+{% endraw %}

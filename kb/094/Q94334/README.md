@@ -6,6 +6,8 @@ permalink: /kb/094/Q94334/
 
 ## Q94334: Using MS-DOS Upgrade Fdisk Program with EXTDISK.SYS
 
+{% raw %}
+
 	Article: Q94334
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -71,3 +73,5 @@ permalink: /kb/094/Q94334/
 	
 	=============================================================================
 	
+
+{% endraw %}

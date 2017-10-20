@@ -6,6 +6,8 @@ permalink: /kb/257/Q257935/
 
 ## Q257935: Clustool Replaces ClusConB As Cluster Configuration Backup Util.
 
+{% raw %}
+
 	Article: Q257935
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/257/Q257935/
 	
 	=============================================================================
 	
+
+{% endraw %}

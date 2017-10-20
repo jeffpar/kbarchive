@@ -6,6 +6,8 @@ permalink: /kb/151/Q151280/
 
 ## Q151280: TCP/IP Does Not Function After Adding a Second Adapter
 
+{% raw %}
+
 	Article: Q151280
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151280/
 	
 	=============================================================================
 	
+
+{% endraw %}

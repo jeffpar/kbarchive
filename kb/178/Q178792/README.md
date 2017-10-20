@@ -6,6 +6,8 @@ permalink: /kb/178/Q178792/
 
 ## Q178792: Tutor: Error Message: Unable to Initialize Direct Draw
 
+{% raw %}
+
 	Article: Q178792
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -160,3 +162,5 @@ permalink: /kb/178/Q178792/
 	
 	=============================================================================
 	
+
+{% endraw %}

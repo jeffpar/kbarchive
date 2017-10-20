@@ -6,6 +6,8 @@ permalink: /kb/135/Q135143/
 
 ## Q135143: Zenith ZDS 1762 Laptop Computer Hangs at Startup
 
+{% raw %}
+
 	Article: Q135143
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135143/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135683/
 
 ## Q135683: Visual FoxPro/Windows Standard Edition Disk Directory Contents
 
+{% raw %}
+
 	Article: Q135683
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -961,3 +963,5 @@ permalink: /kb/135/Q135683/
 	
 	=============================================================================
 	
+
+{% endraw %}

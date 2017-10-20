@@ -6,6 +6,8 @@ permalink: /kb/253/Q253215/
 
 ## Q253215: STOP 0x00000050 Error Message in Windows Terminal Server
 
+{% raw %}
+
 	Article: Q253215
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -72,3 +74,5 @@ permalink: /kb/253/Q253215/
 	
 	=============================================================================
 	
+
+{% endraw %}

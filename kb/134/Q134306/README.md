@@ -6,6 +6,8 @@ permalink: /kb/134/Q134306/
 
 ## Q134306: How to Simulate a Tabbed Dialog Box with Vertical Tabs
 
+{% raw %}
+
 	Article: Q134306
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -187,3 +189,5 @@ permalink: /kb/134/Q134306/
 	
 	=============================================================================
 	
+
+{% endraw %}

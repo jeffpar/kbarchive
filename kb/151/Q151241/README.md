@@ -6,6 +6,8 @@ permalink: /kb/151/Q151241/
 
 ## Q151241: XCLN: How to Work with Public Folders Offline
 
+{% raw %}
+
 	Article: Q151241
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -62,3 +64,5 @@ permalink: /kb/151/Q151241/
 	
 	=============================================================================
 	
+
+{% endraw %}

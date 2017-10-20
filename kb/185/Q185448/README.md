@@ -6,6 +6,8 @@ permalink: /kb/185/Q185448/
 
 ## Q185448: Dbview Fails to Display SNA Server 4.0 Message Database
 
+{% raw %}
+
 	Article: Q185448
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -63,3 +65,5 @@ permalink: /kb/185/Q185448/
 	
 	=============================================================================
 	
+
+{% endraw %}

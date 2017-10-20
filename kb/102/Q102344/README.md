@@ -6,6 +6,8 @@ permalink: /kb/102/Q102344/
 
 ## Q102344: Microsoft Product Support Options Q&amp;A
 
+{% raw %}
+
 	Article: Q102344
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/102/Q102344/
 	
 	=============================================================================
 	
+
+{% endraw %}

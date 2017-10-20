@@ -6,6 +6,8 @@ permalink: /kb/279/Q279335/
 
 ## Q279335: Cannot Add the Same Workstation Restrictions to Multiple TN3270
 
+{% raw %}
+
 	Article: Q279335
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -135,3 +137,5 @@ permalink: /kb/279/Q279335/
 	
 	=============================================================================
 	
+
+{% endraw %}

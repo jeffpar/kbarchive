@@ -6,6 +6,8 @@ permalink: /kb/185/Q185261/
 
 ## Q185261: PRB: Grid Record Pointer Display Problem Using Down Arrow
 
+{% raw %}
+
 	Article: Q185261
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -79,3 +81,5 @@ permalink: /kb/185/Q185261/
 	
 	=============================================================================
 	
+
+{% endraw %}

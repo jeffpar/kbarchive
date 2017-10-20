@@ -6,6 +6,8 @@ permalink: /kb/170/Q170337/
 
 ## Q170337: XADM: User Manager Can Cause File in Use Errors
 
+{% raw %}
+
 	Article: Q170337
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/170/Q170337/
 	
 	=============================================================================
 	
+
+{% endraw %}

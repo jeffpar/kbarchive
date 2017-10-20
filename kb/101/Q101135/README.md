@@ -6,6 +6,8 @@ permalink: /kb/101/Q101135/
 
 ## Q101135: Main Window Does Not Appear When Program Is Launched
 
+{% raw %}
+
 	Article: Q101135
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition,1994 edition
@@ -83,3 +85,5 @@ permalink: /kb/101/Q101135/
 	
 	=============================================================================
 	
+
+{% endraw %}

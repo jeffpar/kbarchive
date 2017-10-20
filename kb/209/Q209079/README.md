@@ -6,6 +6,8 @@ permalink: /kb/209/Q209079/
 
 ## Q209079: BUG: TreeView Properties Set in Design do not Work at Run-Time
 
+{% raw %}
+
 	Article: Q209079
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,2.11,3.0
@@ -92,3 +94,5 @@ permalink: /kb/209/Q209079/
 	
 	=============================================================================
 	
+
+{% endraw %}

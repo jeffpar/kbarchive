@@ -6,6 +6,8 @@ permalink: /kb/166/Q166583/
 
 ## Q166583: XADM: Folders Are Sorted When Non-English Settings Are Used
 
+{% raw %}
+
 	Article: Q166583
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -54,3 +56,5 @@ permalink: /kb/166/Q166583/
 	
 	=============================================================================
 	
+
+{% endraw %}

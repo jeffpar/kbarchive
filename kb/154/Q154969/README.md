@@ -6,6 +6,8 @@ permalink: /kb/154/Q154969/
 
 ## Q154969: Problem Installing Rnaplus.inf File
 
+{% raw %}
+
 	Article: Q154969
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -82,3 +84,5 @@ permalink: /kb/154/Q154969/
 	
 	=============================================================================
 	
+
+{% endraw %}

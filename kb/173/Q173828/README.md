@@ -6,6 +6,8 @@ permalink: /kb/173/Q173828/
 
 ## Q173828: Access Step by Step: Page 11: Cannot Import 01Client.txt
 
+{% raw %}
+
 	Article: Q173828
 	Product(s): Microsoft Press
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173828/
 	
 	=============================================================================
 	
+
+{% endraw %}

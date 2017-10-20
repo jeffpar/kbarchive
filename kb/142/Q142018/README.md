@@ -6,6 +6,8 @@ permalink: /kb/142/Q142018/
 
 ## Q142018: BUG: Shutdown.exe Disables Windows NT ScreenSaver
 
+{% raw %}
+
 	Article: Q142018
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -97,3 +99,5 @@ permalink: /kb/142/Q142018/
 	
 	=============================================================================
 	
+
+{% endraw %}

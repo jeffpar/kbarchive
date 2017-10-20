@@ -6,6 +6,8 @@ permalink: /kb/198/Q198477/
 
 ## Q198477: PRB: Use of /ZI May Cause Access Violation
 
+{% raw %}
+
 	Article: Q198477
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -90,3 +92,5 @@ permalink: /kb/198/Q198477/
 	
 	=============================================================================
 	
+
+{% endraw %}

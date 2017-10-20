@@ -6,6 +6,8 @@ permalink: /kb/032/Q32641/
 
 ## Q32641: Problem Passing Array Element to SUB Compiled with No /Debug
 
+{% raw %}
+
 	Article: Q32641
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/032/Q32641/
 	SUB test (i AS INTEGER, j AS INTEGER)
 	i = 2
 	END SUB
+
+{% endraw %}

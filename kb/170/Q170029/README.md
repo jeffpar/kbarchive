@@ -6,6 +6,8 @@ permalink: /kb/170/Q170029/
 
 ## Q170029: Remote Access Service Fails If Plug and Play Service Disabled
 
+{% raw %}
+
 	Article: Q170029
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/170/Q170029/
 	
 	=============================================================================
 	
+
+{% endraw %}

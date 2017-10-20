@@ -6,6 +6,8 @@ permalink: /kb/243/Q243337/
 
 ## Q243337: PRB: Errors with Integration After Enabling P &amp; M
 
+{% raw %}
+
 	Article: Q243337
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0,97,98; winnt:3.0
@@ -101,3 +103,5 @@ permalink: /kb/243/Q243337/
 	
 	=============================================================================
 	
+
+{% endraw %}

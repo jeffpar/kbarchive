@@ -6,6 +6,8 @@ permalink: /kb/203/Q203338/
 
 ## Q203338: 16-Bit Apps Fail if Names Longer Than 8.3 Naming Convention
 
+{% raw %}
+
 	Article: Q203338
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/203/Q203338/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182504/
 
 ## Q182504: XADM: How to Activate Protocol Logging for POP3 and IMAP4
 
+{% raw %}
+
 	Article: Q182504
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -74,3 +76,5 @@ permalink: /kb/182/Q182504/
 	
 	=============================================================================
 	
+
+{% endraw %}

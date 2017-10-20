@@ -6,6 +6,8 @@ permalink: /kb/170/Q170726/
 
 ## Q170726: WD97: Macros to Test for an Existing AutoText Entry Name
 
+{% raw %}
+
 	Article: Q170726
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -132,3 +134,5 @@ permalink: /kb/170/Q170726/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69026/
 
 ## Q69026: Operations on Hidden Files
 
+{% raw %}
+
 	Article: Q69026
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.0,4.01
@@ -47,3 +49,5 @@ permalink: /kb/069/Q69026/
 	
 	=============================================================================
 	
+
+{% endraw %}

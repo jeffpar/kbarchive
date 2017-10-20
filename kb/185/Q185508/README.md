@@ -6,6 +6,8 @@ permalink: /kb/185/Q185508/
 
 ## Q185508: Error Message: Service Pack Setup Error
 
+{% raw %}
+
 	Article: Q185508
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -87,3 +89,5 @@ permalink: /kb/185/Q185508/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147231/
 
 ## Q147231: Adding Program Groups and Items During Unattended Setup
 
+{% raw %}
+
 	Article: Q147231
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -156,3 +158,5 @@ permalink: /kb/147/Q147231/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137599/
 
 ## Q137599: PPT7: Setup Does Not Install the CorelDRAW .CDR Filter
 
+{% raw %}
+
 	Article: Q137599
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -158,3 +160,5 @@ permalink: /kb/137/Q137599/
 	
 	=============================================================================
 	
+
+{% endraw %}

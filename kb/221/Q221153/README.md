@@ -6,6 +6,8 @@ permalink: /kb/221/Q221153/
 
 ## Q221153: Control Panel Does Not Open
 
+{% raw %}
+
 	Article: Q221153
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -195,3 +197,5 @@ permalink: /kb/221/Q221153/
 	
 	=============================================================================
 	
+
+{% endraw %}

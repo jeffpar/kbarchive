@@ -6,6 +6,8 @@ permalink: /kb/038/Q38951/
 
 ## Q38951: QuickC Version 2.00 Supports CodeView Information
 
+{% raw %}
+
 	Article: Q38951
 	Product(s): See article
 	Version(s): 2.00
@@ -33,3 +35,5 @@ permalink: /kb/038/Q38951/
 	that was Incrementally compiled and/or linked, you will be unable to
 	trace through the code. The trace will "fall" through to the end of
 	your program.
+
+{% endraw %}

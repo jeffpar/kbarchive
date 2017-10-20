@@ -6,6 +6,8 @@ permalink: /kb/040/Q40154/
 
 ## Q40154: QB.EXE &quot;OUT OF MEMORY&quot; after SHELL to DOS PRINT, MODE, ASSIGN
 
+{% raw %}
+
 	Article: Q40154
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/040/Q40154/
 	
 	   mode com1:300,N,8,1,bin
 	   mode lpt1:=com1:
+
+{% endraw %}

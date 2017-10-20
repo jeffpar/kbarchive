@@ -6,6 +6,8 @@ permalink: /kb/235/Q235849/
 
 ## Q235849: DEC Alpha SNA Server Drops Client LAN Connection, Logs Event 631
 
+{% raw %}
+
 	Article: Q235849
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -93,3 +95,5 @@ permalink: /kb/235/Q235849/
 	
 	=============================================================================
 	
+
+{% endraw %}

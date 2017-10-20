@@ -6,6 +6,8 @@ permalink: /kb/087/Q87297/
 
 ## Q87297: Additional Icons Available from WEP 1.0 and Windows 3.1
 
+{% raw %}
+
 	Article: Q87297
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/087/Q87297/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103290/
 
 ## Q103290: PC Forms: Error Copying Files in Setup
 
+{% raw %}
+
 	Article: Q103290
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -77,3 +79,5 @@ permalink: /kb/103/Q103290/
 	
 	=============================================================================
 	
+
+{% endraw %}

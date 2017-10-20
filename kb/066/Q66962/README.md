@@ -6,6 +6,8 @@ permalink: /kb/066/Q66962/
 
 ## Q66962: Dell 316LT and Dell 320LT Require EMMExclude with Windows 3.0
 
+{% raw %}
+
 	Article: Q66962
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/066/Q66962/
 	
 	=============================================================================
 	
+
+{% endraw %}

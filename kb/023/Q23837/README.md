@@ -6,6 +6,8 @@ permalink: /kb/023/Q23837/
 
 ## Q23837: Expert and Standard Mouse Menus
 
+{% raw %}
+
 	Article: Q23837
 	Product(s): See article
 	Version(s): 4.x 5.x 6.00
@@ -19,3 +21,5 @@ permalink: /kb/023/Q23837/
 	Response:
 	   Standard mouse menus are loaded with MENU.COM, while an Expert
 	mouse menu is an executable .COM file.
+
+{% endraw %}

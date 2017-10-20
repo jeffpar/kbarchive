@@ -6,6 +6,8 @@ permalink: /kb/222/Q222926/
 
 ## Q222926: XADM: How to Limit Size of Public Folder Replication Messages
 
+{% raw %}
+
 	Article: Q222926
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -96,3 +98,5 @@ permalink: /kb/222/Q222926/
 	
 	=============================================================================
 	
+
+{% endraw %}

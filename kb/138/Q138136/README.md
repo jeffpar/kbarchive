@@ -6,6 +6,8 @@ permalink: /kb/138/Q138136/
 
 ## Q138136: HOWTO: Assign the F8 Key to DebugStepInto in Visual C++
 
+{% raw %}
+
 	Article: Q138136
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -82,3 +84,5 @@ permalink: /kb/138/Q138136/
 	
 	=============================================================================
 	
+
+{% endraw %}

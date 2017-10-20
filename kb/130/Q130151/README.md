@@ -6,6 +6,8 @@ permalink: /kb/130/Q130151/
 
 ## Q130151: Route Command Directs Output to Stderr
 
+{% raw %}
+
 	Article: Q130151
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/130/Q130151/
 	
 	=============================================================================
 	
+
+{% endraw %}

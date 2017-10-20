@@ -6,6 +6,8 @@ permalink: /kb/198/Q198712/
 
 ## Q198712: PRB: CommonDialog Changes System Wide Printer Properties
 
+{% raw %}
+
 	Article: Q198712
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/198/Q198712/
 	
 	=============================================================================
 	
+
+{% endraw %}

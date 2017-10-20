@@ -6,6 +6,8 @@ permalink: /kb/081/Q81420/
 
 ## Q81420: PC Win: Problem Restarting Mail After UAE
 
+{% raw %}
+
 	Article: Q81420
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/081/Q81420/
 	
 	=============================================================================
 	
+
+{% endraw %}

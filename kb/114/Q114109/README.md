@@ -6,6 +6,8 @@ permalink: /kb/114/Q114109/
 
 ## Q114109: Mail Spell Checker Defaults to Windows NT Subdirectory
 
+{% raw %}
+
 	Article: Q114109
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -49,3 +51,5 @@ permalink: /kb/114/Q114109/
 	
 	=============================================================================
 	
+
+{% endraw %}

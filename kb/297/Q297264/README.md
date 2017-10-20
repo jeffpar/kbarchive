@@ -6,6 +6,8 @@ permalink: /kb/297/Q297264/
 
 ## Q297264: A+ Certification Training Kit, Third Edition Comments And Correc
 
+{% raw %}
+
 	Article: Q297264
 	Product(s): Microsoft Press
 	Version(s): 
@@ -246,3 +248,5 @@ permalink: /kb/297/Q297264/
 	
 	=============================================================================
 	
+
+{% endraw %}

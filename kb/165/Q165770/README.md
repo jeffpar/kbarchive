@@ -6,6 +6,8 @@ permalink: /kb/165/Q165770/
 
 ## Q165770: WD97: Double Strikethrough Lost When File Opened in Word 6.0/95
 
+{% raw %}
+
 	Article: Q165770
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/165/Q165770/
 	
 	=============================================================================
 	
+
+{% endraw %}

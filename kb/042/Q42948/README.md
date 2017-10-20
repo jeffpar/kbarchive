@@ -6,6 +6,8 @@ permalink: /kb/042/Q42948/
 
 ## Q42948: Compiled INPUT Doesn't Read Text Previously PRINTed on Screen
 
+{% raw %}
+
 	Article: Q42948
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -57,3 +59,5 @@ permalink: /kb/042/Q42948/
 	INPUT A$
 	PRINT A$
 	END
+
+{% endraw %}

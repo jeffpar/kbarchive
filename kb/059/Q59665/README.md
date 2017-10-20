@@ -6,6 +6,8 @@ permalink: /kb/059/Q59665/
 
 ## Q59665: Loss of Colors in Paintbrush File
 
+{% raw %}
+
 	Article: Q59665
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/059/Q59665/
 	
 	=============================================================================
 	
+
+{% endraw %}

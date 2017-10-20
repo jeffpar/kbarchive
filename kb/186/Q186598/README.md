@@ -6,6 +6,8 @@ permalink: /kb/186/Q186598/
 
 ## Q186598: Terminal Server Commands: RESET SESSION
 
+{% raw %}
+
 	Article: Q186598
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -79,3 +81,5 @@ permalink: /kb/186/Q186598/
 	
 	=============================================================================
 	
+
+{% endraw %}

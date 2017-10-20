@@ -6,6 +6,8 @@ permalink: /kb/139/Q139128/
 
 ## Q139128: DOC: Help for WindowType Shows Incorrect Property Settings
 
+{% raw %}
+
 	Article: Q139128
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -42,3 +44,5 @@ permalink: /kb/139/Q139128/
 	
 	=============================================================================
 	
+
+{% endraw %}

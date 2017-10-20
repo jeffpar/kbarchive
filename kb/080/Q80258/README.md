@@ -6,6 +6,8 @@ permalink: /kb/080/Q80258/
 
 ## Q80258: PC Gen: Contents of Modem Script File IBM5853.MDM
 
+{% raw %}
+
 	Article: Q80258
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e
@@ -353,3 +355,5 @@ permalink: /kb/080/Q80258/
 	
 	=============================================================================
 	
+
+{% endraw %}

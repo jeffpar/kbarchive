@@ -6,6 +6,8 @@ permalink: /kb/298/Q298460/
 
 ## Q298460: Windows NT 4.0 Workstation Deployment Resources
 
+{% raw %}
+
 	Article: Q298460
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -103,3 +105,5 @@ permalink: /kb/298/Q298460/
 	
 	=============================================================================
 	
+
+{% endraw %}

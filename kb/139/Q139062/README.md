@@ -6,6 +6,8 @@ permalink: /kb/139/Q139062/
 
 ## Q139062: DOCERR: Note in REPLACE Command Documentation Is Misleading
 
+{% raw %}
+
 	Article: Q139062
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/139/Q139062/
 	
 	=============================================================================
 	
+
+{% endraw %}

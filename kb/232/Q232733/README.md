@@ -6,6 +6,8 @@ permalink: /kb/232/Q232733/
 
 ## Q232733: Process Working Set Trimmed Below Minimum Unnecessarily
 
+{% raw %}
+
 	Article: Q232733
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -83,3 +85,5 @@ permalink: /kb/232/Q232733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173399/
 
 ## Q173399: WD97: Image Not Correctly Shown in Table of HTML Document
 
+{% raw %}
+
 	Article: Q173399
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -127,3 +129,5 @@ permalink: /kb/173/Q173399/
 	
 	=============================================================================
 	
+
+{% endraw %}

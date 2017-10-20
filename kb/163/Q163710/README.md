@@ -6,6 +6,8 @@ permalink: /kb/163/Q163710/
 
 ## Q163710: ResKit Tool Global.exe Returns Incomplete User List
 
+{% raw %}
+
 	Article: Q163710
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/163/Q163710/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149415/
 
 ## Q149415: Group Policies Are Not Recognized with MSNDS
 
+{% raw %}
+
 	Article: Q149415
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -135,3 +137,5 @@ permalink: /kb/149/Q149415/
 	
 	=============================================================================
 	
+
+{% endraw %}

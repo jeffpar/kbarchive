@@ -6,6 +6,8 @@ permalink: /kb/165/Q165095/
 
 ## Q165095: XCLN: Form Allows Incorrect or Missing Data in Required Fields
 
+{% raw %}
+
 	Article: Q165095
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -54,3 +56,5 @@ permalink: /kb/165/Q165095/
 	
 	=============================================================================
 	
+
+{% endraw %}

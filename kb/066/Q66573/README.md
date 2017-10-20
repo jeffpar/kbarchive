@@ -6,6 +6,8 @@ permalink: /kb/066/Q66573/
 
 ## Q66573: C 6.00 SAMPLES.DOC Omits CHRTOPT.C in CHARTDEMO Files List
 
+{% raw %}
+
 	Article: Q66573
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -33,3 +35,5 @@ permalink: /kb/066/Q66573/
 	   CHRTSUPT.C         for testing different modes and options before
 	   CHRTOPT.C          building them into your own programs. Real mode
 	   CHRTDEMO.H         only.
+
+{% endraw %}

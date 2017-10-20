@@ -6,6 +6,8 @@ permalink: /kb/137/Q137624/
 
 ## Q137624: Missing Product Identification Number Needed for Setup
 
+{% raw %}
+
 	Article: Q137624
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137624/
 	
 	=============================================================================
 	
+
+{% endraw %}

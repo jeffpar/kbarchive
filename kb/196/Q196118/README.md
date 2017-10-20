@@ -6,6 +6,8 @@ permalink: /kb/196/Q196118/
 
 ## Q196118: DNS May Not Transfer Some Glue Records to Secondary Servers
 
+{% raw %}
+
 	Article: Q196118
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/196/Q196118/
 	
 	=============================================================================
 	
+
+{% endraw %}

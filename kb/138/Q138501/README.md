@@ -6,6 +6,8 @@ permalink: /kb/138/Q138501/
 
 ## Q138501: PRB: Modifying a Remote View Results in a Syntax Error
 
+{% raw %}
+
 	Article: Q138501
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -68,3 +70,5 @@ permalink: /kb/138/Q138501/
 	
 	=============================================================================
 	
+
+{% endraw %}

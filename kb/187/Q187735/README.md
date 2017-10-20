@@ -6,6 +6,8 @@ permalink: /kb/187/Q187735/
 
 ## Q187735: Delay in NetBIOS Connections from a Multihomed Computer
 
+{% raw %}
+
 	Article: Q187735
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -100,3 +102,5 @@ permalink: /kb/187/Q187735/
 	
 	=============================================================================
 	
+
+{% endraw %}

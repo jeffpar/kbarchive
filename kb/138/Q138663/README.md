@@ -6,6 +6,8 @@ permalink: /kb/138/Q138663/
 
 ## Q138663: PRB: GetCheckedRadioButton() Returns ID Outside Button Group
 
+{% raw %}
+
 	Article: Q138663
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0
@@ -84,3 +86,5 @@ permalink: /kb/138/Q138663/
 	
 	=============================================================================
 	
+
+{% endraw %}

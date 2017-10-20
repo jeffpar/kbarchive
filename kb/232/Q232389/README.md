@@ -6,6 +6,8 @@ permalink: /kb/232/Q232389/
 
 ## Q232389: XCON: DRAS Failing after You Upgrade to Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q232389
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,4.0 SP4,5.0,5.5
@@ -92,3 +94,5 @@ permalink: /kb/232/Q232389/
 	
 	=============================================================================
 	
+
+{% endraw %}

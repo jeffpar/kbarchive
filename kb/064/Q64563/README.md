@@ -6,6 +6,8 @@ permalink: /kb/064/Q64563/
 
 ## Q64563: Command Line Error D2030: INTERNAL COMPILER ERROR IN 'QC'
 
+{% raw %}
+
 	Article: Q64563
 	Product(s): See article
 	Version(s): 6.00
@@ -52,3 +54,5 @@ permalink: /kb/064/Q64563/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133032/
 
 ## Q133032: Event ID 20087 Appears When You Dial a RAS Server
 
+{% raw %}
+
 	Article: Q133032
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -88,3 +90,5 @@ permalink: /kb/133/Q133032/
 	
 	=============================================================================
 	
+
+{% endraw %}

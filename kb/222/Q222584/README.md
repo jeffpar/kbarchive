@@ -6,6 +6,8 @@ permalink: /kb/222/Q222584/
 
 ## Q222584: BUG: Blue Screen Occurs When Disabling a USB Controller
 
+{% raw %}
+
 	Article: Q222584
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; Win95:
@@ -62,3 +64,5 @@ permalink: /kb/222/Q222584/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157723/
 
 ## Q157723: HOWTO: Extend the Visual FoxPro Solutions Sample
 
+{% raw %}
+
 	Article: Q157723
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,6.0
@@ -170,3 +172,5 @@ permalink: /kb/157/Q157723/
 	
 	=============================================================================
 	
+
+{% endraw %}

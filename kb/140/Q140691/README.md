@@ -6,6 +6,8 @@ permalink: /kb/140/Q140691/
 
 ## Q140691: How to Manipulate &amp; Sort Character Arrays in the API
 
+{% raw %}
+
 	Article: Q140691
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -194,3 +196,5 @@ permalink: /kb/140/Q140691/
 	
 	=============================================================================
 	
+
+{% endraw %}

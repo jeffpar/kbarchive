@@ -6,6 +6,8 @@ permalink: /kb/183/Q183251/
 
 ## Q183251: Files Included in the 32-Bit DLC Upgrade Download (Dlc32upd.exe)
 
+{% raw %}
+
 	Article: Q183251
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -60,3 +62,5 @@ permalink: /kb/183/Q183251/
 	
 	=============================================================================
 	
+
+{% endraw %}

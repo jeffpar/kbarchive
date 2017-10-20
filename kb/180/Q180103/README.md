@@ -6,6 +6,8 @@ permalink: /kb/180/Q180103/
 
 ## Q180103: Flight Simulator 98/2000: Instrument Panel Is Difficult to Read
 
+{% raw %}
+
 	Article: Q180103
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -95,3 +97,5 @@ permalink: /kb/180/Q180103/
 	
 	=============================================================================
 	
+
+{% endraw %}

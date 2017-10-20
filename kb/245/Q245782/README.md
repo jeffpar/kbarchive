@@ -6,6 +6,8 @@ permalink: /kb/245/Q245782/
 
 ## Q245782: INFO: Find Information on the Office 97/2000 Application's Objec
 
+{% raw %}
+
 	Article: Q245782
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -71,3 +73,5 @@ permalink: /kb/245/Q245782/
 	
 	=============================================================================
 	
+
+{% endraw %}

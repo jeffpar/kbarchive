@@ -6,6 +6,8 @@ permalink: /kb/257/Q257778/
 
 ## Q257778: BUG: Closing Two MDI Child Forms Rapidly Results in an IPF
 
+{% raw %}
+
 	Article: Q257778
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0; Win2000:95
@@ -183,3 +185,5 @@ permalink: /kb/257/Q257778/
 	
 	=============================================================================
 	
+
+{% endraw %}

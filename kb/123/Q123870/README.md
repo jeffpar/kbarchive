@@ -6,6 +6,8 @@ permalink: /kb/123/Q123870/
 
 ## Q123870: INFO: Portable DLL Example Using _declspec() and _export
 
+{% raw %}
+
 	Article: Q123870
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,4.0,5.0
@@ -219,3 +221,5 @@ permalink: /kb/123/Q123870/
 	
 	=============================================================================
 	
+
+{% endraw %}

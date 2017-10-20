@@ -6,6 +6,8 @@ permalink: /kb/235/Q235252/
 
 ## Q235252: XCLN: Outlook 2000 Delegate Calendar Permissions Unavailable Aft
 
+{% raw %}
+
 	Article: Q235252
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -81,3 +83,5 @@ permalink: /kb/235/Q235252/
 	
 	=============================================================================
 	
+
+{% endraw %}

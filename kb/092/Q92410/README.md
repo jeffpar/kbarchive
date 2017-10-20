@@ -6,6 +6,8 @@ permalink: /kb/092/Q92410/
 
 ## Q92410: PRB: Average &amp; Maximum Char Widths Different for TT Fixed Font
 
+{% raw %}
+
 	Article: Q92410
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/092/Q92410/
 	
 	=============================================================================
 	
+
+{% endraw %}

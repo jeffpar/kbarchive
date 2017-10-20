@@ -6,6 +6,8 @@ permalink: /kb/254/Q254214/
 
 ## Q254214: XFOR: Routing Restrictions Don't Work w Some Antivirus Solutions
 
+{% raw %}
+
 	Article: Q254214
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/254/Q254214/
 	
 	=============================================================================
 	
+
+{% endraw %}

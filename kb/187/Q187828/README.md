@@ -6,6 +6,8 @@ permalink: /kb/187/Q187828/
 
 ## Q187828: XADM: Information Store Hangs as Thread CPU Utilization Drops
 
+{% raw %}
+
 	Article: Q187828
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -64,3 +66,5 @@ permalink: /kb/187/Q187828/
 	
 	=============================================================================
 	
+
+{% endraw %}

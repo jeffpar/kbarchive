@@ -6,6 +6,8 @@ permalink: /kb/196/Q196167/
 
 ## Q196167: XADM: Unable to Initialize Extension Data Attributes
 
+{% raw %}
+
 	Article: Q196167
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/196/Q196167/
 	
 	=============================================================================
 	
+
+{% endraw %}

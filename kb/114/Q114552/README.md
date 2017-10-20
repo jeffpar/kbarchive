@@ -6,6 +6,8 @@ permalink: /kb/114/Q114552/
 
 ## Q114552: ADT2: Using Scroll Bar Control to Move Through Records
 
+{% raw %}
+
 	Article: Q114552
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 2.0
@@ -139,3 +141,5 @@ permalink: /kb/114/Q114552/
 	
 	=============================================================================
 	
+
+{% endraw %}

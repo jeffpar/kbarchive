@@ -6,6 +6,8 @@ permalink: /kb/169/Q169368/
 
 ## Q169368: PRB: 3D Frame Control Causes Modal Form to Become Invisible
 
+{% raw %}
+
 	Article: Q169368
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -68,3 +70,5 @@ permalink: /kb/169/Q169368/
 	
 	=============================================================================
 	
+
+{% endraw %}

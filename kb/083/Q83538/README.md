@@ -6,6 +6,8 @@ permalink: /kb/083/Q83538/
 
 ## Q83538: Mac Fax: Running Fax Gateway with Other Gateways
 
+{% raw %}
+
 	Article: Q83538
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.x,3.0
@@ -49,3 +51,5 @@ permalink: /kb/083/Q83538/
 	
 	=============================================================================
 	
+
+{% endraw %}

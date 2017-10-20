@@ -6,6 +6,8 @@ permalink: /kb/145/Q145582/
 
 ## Q145582: SMS Only Reports 16mb RAM On MS-DOS and Windows Systems
 
+{% raw %}
+
 	Article: Q145582
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -57,3 +59,5 @@ permalink: /kb/145/Q145582/
 	
 	=============================================================================
 	
+
+{% endraw %}

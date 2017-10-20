@@ -6,6 +6,8 @@ permalink: /kb/262/Q262271/
 
 ## Q262271: XADM: Admin.exe Access Violation Attempting to Duplicate User
 
+{% raw %}
+
 	Article: Q262271
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -101,3 +103,5 @@ permalink: /kb/262/Q262271/
 	
 	=============================================================================
 	
+
+{% endraw %}

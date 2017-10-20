@@ -6,6 +6,8 @@ permalink: /kb/188/Q188879/
 
 ## Q188879: RPC Endpoint Mapper Will Not Register All Interfaces
 
+{% raw %}
+
 	Article: Q188879
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/188/Q188879/
 	
 	=============================================================================
 	
+
+{% endraw %}

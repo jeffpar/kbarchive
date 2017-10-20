@@ -6,6 +6,8 @@ permalink: /kb/174/Q174531/
 
 ## Q174531: DirectDraw Fails Surface Creation with Large Dimensions
 
+{% raw %}
+
 	Article: Q174531
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/174/Q174531/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/048/Q48398/
 
 ## Q48398: Using RUN with No Argument Inside SUB Should Cause Error
 
+{% raw %}
+
 	Article: Q48398
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -148,3 +150,5 @@ permalink: /kb/048/Q48398/
 	4. Pass the array as a parameter to the SUBprogram.
 	
 	Additional reference words: B_BasicCom SR# S900919-42 SR# S890801-4
+
+{% endraw %}

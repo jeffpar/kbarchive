@@ -6,6 +6,8 @@ permalink: /kb/216/Q216513/
 
 ## Q216513: XCLN: Message Body is Blank Using Encryption &amp; Digital Sig.
 
+{% raw %}
+
 	Article: Q216513
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03
@@ -50,3 +52,5 @@ permalink: /kb/216/Q216513/
 	
 	=============================================================================
 	
+
+{% endraw %}

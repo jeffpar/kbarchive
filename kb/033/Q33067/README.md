@@ -6,6 +6,8 @@ permalink: /kb/033/Q33067/
 
 ## Q33067: Anonymous Labels for Jump Instructions
 
+{% raw %}
+
 	Article: Q33067
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b
@@ -60,3 +62,5 @@ permalink: /kb/033/Q33067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86273/
 
 ## Q86273: Panasonic KX-P 1695 Missing Paper Size
 
+{% raw %}
+
 	Article: Q86273
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/086/Q86273/
 	
 	=============================================================================
 	
+
+{% endraw %}

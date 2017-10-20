@@ -6,6 +6,8 @@ permalink: /kb/184/Q184347/
 
 ## Q184347: Program Is Still Listed After It Is Uninstalled
 
+{% raw %}
+
 	Article: Q184347
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/184/Q184347/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143061/
 
 ## Q143061: Accessing Local MS Exchange Mail from a Remote Computer
 
+{% raw %}
+
 	Article: Q143061
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -125,3 +127,5 @@ permalink: /kb/143/Q143061/
 	
 	=============================================================================
 	
+
+{% endraw %}

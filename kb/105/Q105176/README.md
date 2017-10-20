@@ -6,6 +6,8 @@ permalink: /kb/105/Q105176/
 
 ## Q105176: PC Win: Lotus 1-2-3 WYSIWYG Attachments
 
+{% raw %}
+
 	Article: Q105176
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -70,3 +72,5 @@ permalink: /kb/105/Q105176/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/049/Q49576/
 
 ## Q49576: Configuring On-Line Help for M 1.02
 
+{% raw %}
+
 	Article: Q49576
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -56,3 +58,5 @@ permalink: /kb/049/Q49576/
 	For more information on this topic, refer to the Microsoft Editor for
 	MS OS/2 and MS-DOS Operating Systems: User's Guide" that accompanies
 	with M 1.02.
+
+{% endraw %}

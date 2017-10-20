@@ -6,6 +6,8 @@ permalink: /kb/220/Q220818/
 
 ## Q220818: XADM: Removed Mailbox Cleanup Agent Remains in Mailbox Resources
 
+{% raw %}
+
 	Article: Q220818
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -84,3 +86,5 @@ permalink: /kb/220/Q220818/
 	
 	=============================================================================
 	
+
+{% endraw %}

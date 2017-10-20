@@ -6,6 +6,8 @@ permalink: /kb/198/Q198384/
 
 ## Q198384: WD97: Mail Merge Produces Full Page of Labels
 
+{% raw %}
+
 	Article: Q198384
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -114,3 +116,5 @@ permalink: /kb/198/Q198384/
 	
 	=============================================================================
 	
+
+{% endraw %}

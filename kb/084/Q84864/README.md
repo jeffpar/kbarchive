@@ -6,6 +6,8 @@ permalink: /kb/084/Q84864/
 
 ## Q84864: Using MS-DOS 4.x Shell Under MS-DOS 5.0 and later
 
+{% raw %}
+
 	Article: Q84864
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -155,3 +157,5 @@ permalink: /kb/084/Q84864/
 	
 	=============================================================================
 	
+
+{% endraw %}

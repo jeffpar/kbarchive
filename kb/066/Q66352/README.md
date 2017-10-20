@@ -6,6 +6,8 @@ permalink: /kb/066/Q66352/
 
 ## Q66352: Description of Minesweeper in Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66352
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/066/Q66352/
 	
 	=============================================================================
 	
+
+{% endraw %}

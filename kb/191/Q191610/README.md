@@ -6,6 +6,8 @@ permalink: /kb/191/Q191610/
 
 ## Q191610: Assigning LUs/Pools to Workstation MAC Addresses Not Supported
 
+{% raw %}
+
 	Article: Q191610
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -104,3 +106,5 @@ permalink: /kb/191/Q191610/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32856/
 
 ## Q32856: Flight Simulator: Autopilot Doesn't Recognize VOR Lock
 
+{% raw %}
+
 	Article: Q32856
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/032/Q32856/
 	
 	=============================================================================
 	
+
+{% endraw %}

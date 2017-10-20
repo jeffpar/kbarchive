@@ -6,6 +6,8 @@ permalink: /kb/140/Q140421/
 
 ## Q140421: Doc Err: Mandatory Profiles Are Not Cached
 
+{% raw %}
+
 	Article: Q140421
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -85,3 +87,5 @@ permalink: /kb/140/Q140421/
 	
 	=============================================================================
 	
+
+{% endraw %}

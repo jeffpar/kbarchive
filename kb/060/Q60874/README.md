@@ -6,6 +6,8 @@ permalink: /kb/060/Q60874/
 
 ## Q60874: Print Screen Features and Workarounds for Windows
 
+{% raw %}
+
 	Article: Q60874
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11,95
@@ -196,3 +198,5 @@ permalink: /kb/060/Q60874/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140416/
 
 ## Q140416: Remote Control Clients Are Grayed Out in SMS after Applying SP1
 
+{% raw %}
+
 	Article: Q140416
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140416/
 	
 	=============================================================================
 	
+
+{% endraw %}

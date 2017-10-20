@@ -6,6 +6,8 @@ permalink: /kb/217/Q217388/
 
 ## Q217388: XCON: IMAP4 Referral Support
 
+{% raw %}
+
 	Article: Q217388
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -111,3 +113,5 @@ permalink: /kb/217/Q217388/
 	
 	=============================================================================
 	
+
+{% endraw %}

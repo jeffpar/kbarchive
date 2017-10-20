@@ -6,6 +6,8 @@ permalink: /kb/031/Q31518/
 
 ## Q31518: MASM 5.10 EXT.DOC: DelLine - Deletes Lines from a File
 
+{% raw %}
+
 	Article: Q31518
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/031/Q31518/
 	void pascal DelLine (pfile, yStart, yEnd)
 	PFILE pfile;
 	LINE yStart, yEnd;
+
+{% endraw %}

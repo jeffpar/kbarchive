@@ -6,6 +6,8 @@ permalink: /kb/129/Q129533/
 
 ## Q129533: HOWTO: Pass Data to Microsoft Graph Programatically
 
+{% raw %}
+
 	Article: Q129533
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/129/Q129533/
 	
 	=============================================================================
 	
+
+{% endraw %}

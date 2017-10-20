@@ -6,6 +6,8 @@ permalink: /kb/178/Q178559/
 
 ## Q178559: IIS-Redirect to Secured Page Logs Successful Anonymous Access
 
+{% raw %}
+
 	Article: Q178559
 	Product(s): Internet Information Server
 	Version(s): IIS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/178/Q178559/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140978/
 
 ## Q140978: WINS Does Not Replicate &lt;1c&gt; Names Properly
 
+{% raw %}
+
 	Article: Q140978
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -180,3 +182,5 @@ permalink: /kb/140/Q140978/
 	
 	=============================================================================
 	
+
+{% endraw %}

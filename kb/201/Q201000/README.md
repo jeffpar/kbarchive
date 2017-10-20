@@ -6,6 +6,8 @@ permalink: /kb/201/Q201000/
 
 ## Q201000: Encarta 98 Err Msg: Fatal Exception 0E
 
+{% raw %}
+
 	Article: Q201000
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -92,3 +94,5 @@ permalink: /kb/201/Q201000/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119204/
 
 ## Q119204: Setup Problems on NEC Docking Station When Checking for APM
 
+{% raw %}
+
 	Article: Q119204
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -53,3 +55,5 @@ permalink: /kb/119/Q119204/
 	
 	=============================================================================
 	
+
+{% endraw %}

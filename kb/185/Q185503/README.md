@@ -6,6 +6,8 @@ permalink: /kb/185/Q185503/
 
 ## Q185503: APPC Security Information Sent Even If Host Doesn't Support It
 
+{% raw %}
+
 	Article: Q185503
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP2,3.0 SP3,4.0
@@ -279,3 +281,5 @@ permalink: /kb/185/Q185503/
 	
 	=============================================================================
 	
+
+{% endraw %}

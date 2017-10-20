@@ -6,6 +6,8 @@ permalink: /kb/187/Q187021/
 
 ## Q187021: Client Reconnects to Non-Responding Application
 
+{% raw %}
+
 	Article: Q187021
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/187/Q187021/
 	
 	=============================================================================
 	
+
+{% endraw %}

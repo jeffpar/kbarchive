@@ -6,6 +6,8 @@ permalink: /kb/049/Q49063/
 
 ## Q49063: Changing Default Character in QC 2.00 Presentation Graphics
 
+{% raw %}
+
 	Article: Q49063
 	Product(s): See article
 	Version(s): 2.00
@@ -48,10 +50,10 @@ permalink: /kb/049/Q49063/
 	
 	#define ITEMS  5
 	#define SERIES 2
-	float far employees[SERIES][ITEMS] = { {235., 423., 596., 729., 963.},
-	                                      {285., 392., 634., 801., 895.} };
-	float far profits[SERIES][ITEMS] =   { {0.9,  2.3,  5.4,  8.0,  9.3},
-	                                      {4.2,  3.4,  3.6,  2.9,  2.7} };
+	float far employees[SERIES][ITEMS] = {{235., 423., 596., 729., 963.},
+	                                      {285., 392., 634., 801., 895.}};
+	float far profits[SERIES][ITEMS] =   {{0.9,  2.3,  5.4,  8.0,  9.3},
+	                                      {4.2,  3.4,  3.6,  2.9,  2.7}};
 	char far *companies[SERIES] = { "Goodstuff, Inc.", "Badjunk & Co."};
 	
 	charmap  chartemp1;
@@ -95,3 +97,5 @@ permalink: /kb/049/Q49063/
 	
 	    exit( !_setvideomode( _DEFAULTMODE ) );
 	}
+
+{% endraw %}

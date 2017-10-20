@@ -6,6 +6,8 @@ permalink: /kb/077/Q77738/
 
 ## Q77738: BUG: Extra Click Event If Double-Click When Mouse Button Down
 
+{% raw %}
+
 	Article: Q77738
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,3.0
@@ -119,3 +121,5 @@ permalink: /kb/077/Q77738/
 	
 	=============================================================================
 	
+
+{% endraw %}

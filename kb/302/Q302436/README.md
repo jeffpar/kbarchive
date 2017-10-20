@@ -6,6 +6,8 @@ permalink: /kb/302/Q302436/
 
 ## Q302436: Japanese Version Of MSN Explorer Contains Unreadable Characters
 
+{% raw %}
+
 	Article: Q302436
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -56,3 +58,5 @@ permalink: /kb/302/Q302436/
 	
 	=============================================================================
 	
+
+{% endraw %}

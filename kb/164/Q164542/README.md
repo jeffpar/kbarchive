@@ -6,6 +6,8 @@ permalink: /kb/164/Q164542/
 
 ## Q164542: MGET to an IBM Host FTP Server Returns Garbage Characters
 
+{% raw %}
+
 	Article: Q164542
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -76,3 +78,5 @@ permalink: /kb/164/Q164542/
 	
 	=============================================================================
 	
+
+{% endraw %}

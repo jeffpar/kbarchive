@@ -6,6 +6,8 @@ permalink: /kb/231/Q231177/
 
 ## Q231177: BUG: Permission Denied Error by Building From PWB
 
+{% raw %}
+
 	Article: Q231177
 	Product(s): Microsoft Macro Assembler
 	Version(s): winnt:6.11,6.11a,6.11c,6.11d,6.12,6.13,6.14
@@ -75,3 +77,5 @@ permalink: /kb/231/Q231177/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/321/Q321775/
 
 ## Q321775: Error Loading Gdi.exe Connecting to Terminal Server
 
+{% raw %}
+
 	Article: Q321775
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/321/Q321775/
 	
 	=============================================================================
 	
+
+{% endraw %}

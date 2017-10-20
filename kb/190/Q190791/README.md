@@ -6,6 +6,8 @@ permalink: /kb/190/Q190791/
 
 ## Q190791: STATUS_CANT_WAIT Returned from an NTCreateFile Call
 
+{% raw %}
+
 	Article: Q190791
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/190/Q190791/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66922/
 
 ## Q66922: R6012 Caused by Error in strtok() and strpbrk() Example
 
+{% raw %}
+
 	Article: Q66922
 	Product(s): See article
 	Version(s): 6.00a 6.00 | 6.00a 6.00
@@ -48,3 +50,5 @@ permalink: /kb/066/Q66922/
 	In this case, the error caught by the pointer checking routine would
 	not have caused any harm because it would have failed on the last
 	iteration of the loop.
+
+{% endraw %}

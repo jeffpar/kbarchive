@@ -6,6 +6,8 @@ permalink: /kb/156/Q156165/
 
 ## Q156165: ICMP Time Stamp Not Supported
 
+{% raw %}
+
 	Article: Q156165
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -49,3 +51,5 @@ permalink: /kb/156/Q156165/
 	
 	=============================================================================
 	
+
+{% endraw %}

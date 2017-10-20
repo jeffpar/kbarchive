@@ -6,6 +6,8 @@ permalink: /kb/089/Q89380/
 
 ## Q89380: VSAFE Virus Scanning Software Causes Windows 3.1 Setup to Fail
 
+{% raw %}
+
 	Article: Q89380
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21; WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/089/Q89380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/298/Q298141/
 
 ## Q298141: HOWTO: Send a PCL or PostScript File Directly to a Printer w/ VB
 
+{% raw %}
+
 	Article: Q298141
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -177,3 +179,5 @@ permalink: /kb/298/Q298141/
 	
 	=============================================================================
 	
+
+{% endraw %}

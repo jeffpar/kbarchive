@@ -6,6 +6,8 @@ permalink: /kb/182/Q182066/
 
 ## Q182066: Application Exception in PPD5250 When Set Line Density Is Zero
 
+{% raw %}
+
 	Article: Q182066
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -78,3 +80,5 @@ permalink: /kb/182/Q182066/
 	
 	=============================================================================
 	
+
+{% endraw %}

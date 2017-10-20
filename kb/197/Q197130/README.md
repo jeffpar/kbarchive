@@ -6,6 +6,8 @@ permalink: /kb/197/Q197130/
 
 ## Q197130: XCON: FETCH Using IMAP Client Fails to Retrieve SMIME Message
 
+{% raw %}
+
 	Article: Q197130
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -73,3 +75,5 @@ permalink: /kb/197/Q197130/
 	
 	=============================================================================
 	
+
+{% endraw %}

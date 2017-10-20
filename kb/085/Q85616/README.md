@@ -6,6 +6,8 @@ permalink: /kb/085/Q85616/
 
 ## Q85616: FAX: Major Limitations of Microsoft Mail Gateway to Fax
 
+{% raw %}
+
 	Article: Q85616
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -41,3 +43,5 @@ permalink: /kb/085/Q85616/
 	
 	=============================================================================
 	
+
+{% endraw %}

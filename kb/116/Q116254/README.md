@@ -6,6 +6,8 @@ permalink: /kb/116/Q116254/
 
 ## Q116254: System File Changes Installing Xircom CE10 Ethernet Adapter
 
+{% raw %}
+
 	Article: Q116254
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -127,3 +129,5 @@ permalink: /kb/116/Q116254/
 	
 	=============================================================================
 	
+
+{% endraw %}

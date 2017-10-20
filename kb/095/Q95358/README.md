@@ -6,6 +6,8 @@ permalink: /kb/095/Q95358/
 
 ## Q95358: Font Pack 2 Incorrectly States WIN.INI Backup Filename
 
+{% raw %}
+
 	Article: Q95358
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/095/Q95358/
 	
 	=============================================================================
 	
+
+{% endraw %}

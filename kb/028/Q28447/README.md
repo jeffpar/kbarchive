@@ -6,6 +6,8 @@ permalink: /kb/028/Q28447/
 
 ## Q28447: Calling OS/2 DOSInsMessage, DOSGetMessage, DOSPutMessage
 
+{% raw %}
+
 	Article: Q28447
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -109,3 +111,5 @@ permalink: /kb/028/Q28447/
 	locate 10,1
 	
 	END
+
+{% endraw %}

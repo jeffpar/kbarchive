@@ -6,6 +6,8 @@ permalink: /kb/158/Q158765/
 
 ## Q158765: INFO: NODUALINTERFACE Entry is Placed in Registry by VFP 5.0
 
+{% raw %}
+
 	Article: Q158765
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/158/Q158765/
 	
 	=============================================================================
 	
+
+{% endraw %}

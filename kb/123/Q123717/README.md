@@ -6,6 +6,8 @@ permalink: /kb/123/Q123717/
 
 ## Q123717: Windows NT Backup Writes Incorrect Times To Log
 
+{% raw %}
+
 	Article: Q123717
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123717/
 	
 	=============================================================================
 	
+
+{% endraw %}

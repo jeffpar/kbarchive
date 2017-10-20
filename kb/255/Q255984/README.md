@@ -6,6 +6,8 @@ permalink: /kb/255/Q255984/
 
 ## Q255984: PRB: IIS5 User Privilege Elevation Vulnerability
 
+{% raw %}
+
 	Article: Q255984
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:2000; winnt:5.0
@@ -68,3 +70,5 @@ permalink: /kb/255/Q255984/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263219/
 
 ## Q263219: SMS: Unable to View Advertisements in SMS Administrator Console
 
+{% raw %}
+
 	Article: Q263219
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/263/Q263219/
 	
 	=============================================================================
 	
+
+{% endraw %}

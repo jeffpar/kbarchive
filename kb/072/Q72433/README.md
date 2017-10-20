@@ -6,6 +6,8 @@ permalink: /kb/072/Q72433/
 
 ## Q72433: Terminal and the Ventel EC18K-34/Pathfinder Telebit Modem
 
+{% raw %}
+
 	Article: Q72433
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/072/Q72433/
 	
 	=============================================================================
 	
+
+{% endraw %}

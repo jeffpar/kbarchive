@@ -6,6 +6,8 @@ permalink: /kb/154/Q154707/
 
 ## Q154707: Error Running #COMMAND /C Capture.exe from Login Script
 
+{% raw %}
+
 	Article: Q154707
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -54,3 +56,5 @@ permalink: /kb/154/Q154707/
 	
 	=============================================================================
 	
+
+{% endraw %}

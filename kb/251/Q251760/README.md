@@ -6,6 +6,8 @@ permalink: /kb/251/Q251760/
 
 ## Q251760: XADM: Exchange 5.5 Setup Doesn't Work on Windows 2000 (TS)
 
+{% raw %}
+
 	Article: Q251760
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/251/Q251760/
 	
 	=============================================================================
 	
+
+{% endraw %}

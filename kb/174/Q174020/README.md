@@ -6,6 +6,8 @@ permalink: /kb/174/Q174020/
 
 ## Q174020: STOP 0x0000001E During Forced Shutdown and Program Exit
 
+{% raw %}
+
 	Article: Q174020
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/174/Q174020/
 	
 	=============================================================================
 	
+
+{% endraw %}

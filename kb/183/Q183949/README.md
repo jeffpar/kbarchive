@@ -6,6 +6,8 @@ permalink: /kb/183/Q183949/
 
 ## Q183949: Bookshelf 98: Duplicate Image Is Pasted Instead of Article Text
 
+{% raw %}
+
 	Article: Q183949
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/183/Q183949/
 	
 	=============================================================================
 	
+
+{% endraw %}

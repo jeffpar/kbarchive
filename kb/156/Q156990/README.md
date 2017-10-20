@@ -6,6 +6,8 @@ permalink: /kb/156/Q156990/
 
 ## Q156990: XADM: Move Buttons on MIME Property Page Toggle Back and Forth
 
+{% raw %}
+
 	Article: Q156990
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156990/
 	
 	=============================================================================
 	
+
+{% endraw %}

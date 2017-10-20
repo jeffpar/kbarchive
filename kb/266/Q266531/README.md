@@ -6,6 +6,8 @@ permalink: /kb/266/Q266531/
 
 ## Q266531: Encarta 2001: Video Unexpectedly Restarts in Full-Screen Mode
 
+{% raw %}
+
 	Article: Q266531
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/266/Q266531/
 	
 	=============================================================================
 	
+
+{% endraw %}

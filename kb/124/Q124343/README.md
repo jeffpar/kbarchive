@@ -6,6 +6,8 @@ permalink: /kb/124/Q124343/
 
 ## Q124343: MSDLC T1 Timer Does Not Back Off
 
+{% raw %}
+
 	Article: Q124343
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2,3.11
@@ -58,3 +60,5 @@ permalink: /kb/124/Q124343/
 	
 	=============================================================================
 	
+
+{% endraw %}

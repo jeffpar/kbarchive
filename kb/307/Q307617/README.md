@@ -6,6 +6,8 @@ permalink: /kb/307/Q307617/
 
 ## Q307617: CurrentNonAnonymousUsers Counter Change from Zero to Negative
 
+{% raw %}
+
 	Article: Q307617
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -107,3 +109,5 @@ permalink: /kb/307/Q307617/
 	
 	=============================================================================
 	
+
+{% endraw %}

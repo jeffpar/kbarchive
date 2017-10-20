@@ -6,6 +6,8 @@ permalink: /kb/171/Q171406/
 
 ## Q171406: WD97: How to Disable the Use of Universal Naming Convention (UNC
 
+{% raw %}
+
 	Article: Q171406
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -183,3 +185,5 @@ permalink: /kb/171/Q171406/
 	
 	=============================================================================
 	
+
+{% endraw %}

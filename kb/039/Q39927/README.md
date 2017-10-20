@@ -6,6 +6,8 @@ permalink: /kb/039/Q39927/
 
 ## Q39927: MS-DOS: Directory and Subdirectory Limitations
 
+{% raw %}
+
 	Article: Q39927
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22; WINDOWS:95
@@ -86,3 +88,5 @@ permalink: /kb/039/Q39927/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165897/
 
 ## Q165897: PPT: Versions of Internet Assistant
 
+{% raw %}
+
 	Article: Q165897
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -78,3 +80,5 @@ permalink: /kb/165/Q165897/
 	
 	=============================================================================
 	
+
+{% endraw %}

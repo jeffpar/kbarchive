@@ -6,6 +6,8 @@ permalink: /kb/122/Q122389/
 
 ## Q122389: Updated Network Files for Windows For Workgroups 3.11
 
+{% raw %}
+
 	Article: Q122389
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:3.5,4.0
@@ -78,3 +80,5 @@ permalink: /kb/122/Q122389/
 	
 	=============================================================================
 	
+
+{% endraw %}

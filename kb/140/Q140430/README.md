@@ -6,6 +6,8 @@ permalink: /kb/140/Q140430/
 
 ## Q140430: Problem with No Label Check Box When Formatting Floppy Disk
 
+{% raw %}
+
 	Article: Q140430
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/140/Q140430/
 	
 	=============================================================================
 	
+
+{% endraw %}

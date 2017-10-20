@@ -6,6 +6,8 @@ permalink: /kb/230/Q230728/
 
 ## Q230728: Err Msg: STOP 0x0000000A Only Displays the First Two Lines
 
+{% raw %}
+
 	Article: Q230728
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/230/Q230728/
 	
 	=============================================================================
 	
+
+{% endraw %}

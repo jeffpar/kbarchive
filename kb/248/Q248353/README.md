@@ -6,6 +6,8 @@ permalink: /kb/248/Q248353/
 
 ## Q248353: BUG: System Boot Sits at the Blue Blank Screen for ~90 Seconds
 
+{% raw %}
+
 	Article: Q248353
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -74,3 +76,5 @@ permalink: /kb/248/Q248353/
 	
 	=============================================================================
 	
+
+{% endraw %}

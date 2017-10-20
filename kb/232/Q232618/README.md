@@ -6,6 +6,8 @@ permalink: /kb/232/Q232618/
 
 ## Q232618: XADM: Importing Custom Recipient Logs Event ID 236
 
+{% raw %}
+
 	Article: Q232618
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/232/Q232618/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74044/
 
 ## Q74044: INFO: Logical and Physical Coordinate Relationship
 
+{% raw %}
+
 	Article: Q74044
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -105,3 +107,5 @@ permalink: /kb/074/Q74044/
 	
 	=============================================================================
 	
+
+{% endraw %}

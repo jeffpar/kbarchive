@@ -6,6 +6,8 @@ permalink: /kb/125/Q125173/
 
 ## Q125173: Calling a 32-bit Application From WOW Causes Memory Leak
 
+{% raw %}
+
 	Article: Q125173
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -63,3 +65,5 @@ permalink: /kb/125/Q125173/
 	
 	=============================================================================
 	
+
+{% endraw %}

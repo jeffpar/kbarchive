@@ -6,6 +6,8 @@ permalink: /kb/288/Q288209/
 
 ## Q288209: MechWarrior 4: Mech Torso Does Not Center Correctly
 
+{% raw %}
+
 	Article: Q288209
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/288/Q288209/
 	
 	=============================================================================
 	
+
+{% endraw %}

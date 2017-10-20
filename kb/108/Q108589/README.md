@@ -6,6 +6,8 @@ permalink: /kb/108/Q108589/
 
 ## Q108589: Flight Simulator 5.0 Manual Installation
 
+{% raw %}
+
 	Article: Q108589
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -78,3 +80,5 @@ permalink: /kb/108/Q108589/
 	
 	=============================================================================
 	
+
+{% endraw %}

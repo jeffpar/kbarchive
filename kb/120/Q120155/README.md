@@ -6,6 +6,8 @@ permalink: /kb/120/Q120155/
 
 ## Q120155: PRB: Error A2068 Using REP Prefix with CMPS Instructions
 
+{% raw %}
+
 	Article: Q120155
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -68,3 +70,5 @@ permalink: /kb/120/Q120155/
 	
 	=============================================================================
 	
+
+{% endraw %}

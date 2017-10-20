@@ -6,6 +6,8 @@ permalink: /kb/185/Q185058/
 
 ## Q185058: How to Send Faxes Using SBS Fax Client Software
 
+{% raw %}
+
 	Article: Q185058
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0a
@@ -237,3 +239,5 @@ permalink: /kb/185/Q185058/
 	
 	=============================================================================
 	
+
+{% endraw %}

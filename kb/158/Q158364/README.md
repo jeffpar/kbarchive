@@ -6,6 +6,8 @@ permalink: /kb/158/Q158364/
 
 ## Q158364: Flight Simulator Flight Shop &amp; Flight Simulator for Windows 95
 
+{% raw %}
+
 	Article: Q158364
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/158/Q158364/
 	
 	=============================================================================
 	
+
+{% endraw %}

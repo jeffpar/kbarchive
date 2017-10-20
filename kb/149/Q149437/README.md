@@ -6,6 +6,8 @@ permalink: /kb/149/Q149437/
 
 ## Q149437: Unconnected Token Ring Adapter Won't Initialize
 
+{% raw %}
+
 	Article: Q149437
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -52,3 +54,5 @@ permalink: /kb/149/Q149437/
 	
 	=============================================================================
 	
+
+{% endraw %}

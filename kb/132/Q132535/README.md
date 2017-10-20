@@ -6,6 +6,8 @@ permalink: /kb/132/Q132535/
 
 ## Q132535: PRB: Releasing Object Variable Does Not Close Microsoft Excel
 
+{% raw %}
+
 	Article: Q132535
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,5.0,5.0a,6.0
@@ -116,3 +118,5 @@ permalink: /kb/132/Q132535/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/293/Q293901/
 
 ## Q293901: BUG: Wrong Number of Rows Inserted w/ MS ODBC Driver &amp; Stored Pr
 
+{% raw %}
+
 	Article: Q293901
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,2.1,2.5,2.6,2000.80.194,3.7
@@ -168,3 +170,5 @@ permalink: /kb/293/Q293901/
 	
 	=============================================================================
 	
+
+{% endraw %}

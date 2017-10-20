@@ -6,6 +6,8 @@ permalink: /kb/139/Q139142/
 
 ## Q139142: Client Setup of Systems Management Server Alters AUTOEXEC.BAT
 
+{% raw %}
+
 	Article: Q139142
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -68,3 +70,5 @@ permalink: /kb/139/Q139142/
 	
 	=============================================================================
 	
+
+{% endraw %}

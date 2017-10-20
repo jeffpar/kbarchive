@@ -6,6 +6,8 @@ permalink: /kb/035/Q35888/
 
 ## Q35888: CTRL+PRINT SCREEN Fails in EXE Compiled with BCOM Library
 
+{% raw %}
+
 	Article: Q35888
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/035/Q35888/
 	15 FOR i = 1 TO 5
 	20 INPUT "Enter text:"; a$
 	25 NEXT
+
+{% endraw %}

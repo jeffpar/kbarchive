@@ -6,6 +6,8 @@ permalink: /kb/153/Q153013/
 
 ## Q153013: Netware Compatible Password not Automatically Expired
 
+{% raw %}
+
 	Article: Q153013
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -59,3 +61,5 @@ permalink: /kb/153/Q153013/
 	
 	=============================================================================
 	
+
+{% endraw %}

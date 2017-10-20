@@ -6,6 +6,8 @@ permalink: /kb/196/Q196171/
 
 ## Q196171: XADM: Incorrect Attempt to Update KMS during 5.5 SP1 Update
 
+{% raw %}
+
 	Article: Q196171
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -76,3 +78,5 @@ permalink: /kb/196/Q196171/
 	
 	=============================================================================
 	
+
+{% endraw %}

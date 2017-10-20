@@ -6,6 +6,8 @@ permalink: /kb/190/Q190203/
 
 ## Q190203: RRAS STOP Msg: 0x0000000A After Applying Hotfix
 
+{% raw %}
+
 	Article: Q190203
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/190/Q190203/
 	
 	=============================================================================
 	
+
+{% endraw %}

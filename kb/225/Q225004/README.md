@@ -6,6 +6,8 @@ permalink: /kb/225/Q225004/
 
 ## Q225004: WSAEMSGSIZE - Error 10040 in Winsock 2.0
 
+{% raw %}
+
 	Article: Q225004
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -95,3 +97,5 @@ permalink: /kb/225/Q225004/
 	
 	=============================================================================
 	
+
+{% endraw %}

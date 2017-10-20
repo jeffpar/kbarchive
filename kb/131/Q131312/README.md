@@ -6,6 +6,8 @@ permalink: /kb/131/Q131312/
 
 ## Q131312: FIX: Manipulator Causes C1001 IC Error in MSC1.CPP Line 1056
 
+{% raw %}
+
 	Article: Q131312
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -106,3 +108,5 @@ permalink: /kb/131/Q131312/
 	
 	=============================================================================
 	
+
+{% endraw %}

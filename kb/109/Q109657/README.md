@@ -6,6 +6,8 @@ permalink: /kb/109/Q109657/
 
 ## Q109657: Asimov: Can't Do a Global Search
 
+{% raw %}
+
 	Article: Q109657
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -38,3 +40,5 @@ permalink: /kb/109/Q109657/
 	
 	=============================================================================
 	
+
+{% endraw %}

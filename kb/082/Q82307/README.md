@@ -6,6 +6,8 @@ permalink: /kb/082/Q82307/
 
 ## Q82307: Bad Font or Display with PC Tools Version 7.0 or 7.1
 
+{% raw %}
+
 	Article: Q82307
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/082/Q82307/
 	
 	=============================================================================
 	
+
+{% endraw %}

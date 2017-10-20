@@ -6,6 +6,8 @@ permalink: /kb/129/Q129712/
 
 ## Q129712: PRB: Capitalization in Visual Basic 4.0 Differs from 3.0
 
+{% raw %}
+
 	Article: Q129712
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -116,3 +118,5 @@ permalink: /kb/129/Q129712/
 	
 	=============================================================================
 	
+
+{% endraw %}

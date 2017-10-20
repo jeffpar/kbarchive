@@ -6,6 +6,8 @@ permalink: /kb/155/Q155000/
 
 ## Q155000: Error Message: Sage Cannot Be Removed
 
+{% raw %}
+
 	Article: Q155000
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -144,3 +146,5 @@ permalink: /kb/155/Q155000/
 	
 	=============================================================================
 	
+
+{% endraw %}

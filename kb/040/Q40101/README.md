@@ -6,6 +6,8 @@ permalink: /kb/040/Q40101/
 
 ## Q40101: Using C within _asm Blocks of Assembly Code
 
+{% raw %}
+
 	Article: Q40101
 	Product(s): See article
 	Version(s): 2.00
@@ -62,3 +64,5 @@ permalink: /kb/040/Q40101/
 	         mov  result, ax
 	       }
 	}
+
+{% endraw %}

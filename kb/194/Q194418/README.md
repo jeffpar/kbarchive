@@ -6,6 +6,8 @@ permalink: /kb/194/Q194418/
 
 ## Q194418: PRB: CallByName Fails to Return the Correct Error Information
 
+{% raw %}
+
 	Article: Q194418
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -257,3 +259,5 @@ permalink: /kb/194/Q194418/
 	
 	=============================================================================
 	
+
+{% endraw %}

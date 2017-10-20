@@ -6,6 +6,8 @@ permalink: /kb/190/Q190175/
 
 ## Q190175: BUG: MTS is Unable to Delete VB6 Project Compatible Server
 
+{% raw %}
+
 	Article: Q190175
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -109,3 +111,5 @@ permalink: /kb/190/Q190175/
 	
 	=============================================================================
 	
+
+{% endraw %}

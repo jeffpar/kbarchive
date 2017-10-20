@@ -6,6 +6,8 @@ permalink: /kb/263/Q263683/
 
 ## Q263683: StarLancer: Computer Stops Responding When You Start Game
 
+{% raw %}
+
 	Article: Q263683
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/263/Q263683/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216799/
 
 ## Q216799: STOP 0x0000007B Error on Alpha-Based Compaq Computer
 
+{% raw %}
+
 	Article: Q216799
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/216/Q216799/
 	
 	=============================================================================
 	
+
+{% endraw %}

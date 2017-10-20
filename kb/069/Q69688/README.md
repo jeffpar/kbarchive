@@ -6,6 +6,8 @@ permalink: /kb/069/Q69688/
 
 ## Q69688: Cornerstone Drivers for Single- and Dual-Page Systems
 
+{% raw %}
+
 	Article: Q69688
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/069/Q69688/
 	
 	=============================================================================
 	
+
+{% endraw %}

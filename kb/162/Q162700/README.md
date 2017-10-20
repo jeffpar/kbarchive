@@ -6,6 +6,8 @@ permalink: /kb/162/Q162700/
 
 ## Q162700: WD97: &quot;All Active Templates and Documents&quot; Missing Macros
 
+{% raw %}
+
 	Article: Q162700
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/162/Q162700/
 	
 	=============================================================================
 	
+
+{% endraw %}

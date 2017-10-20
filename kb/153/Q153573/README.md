@@ -6,6 +6,8 @@ permalink: /kb/153/Q153573/
 
 ## Q153573: If Data Loader Loses Its Link to SQL, Good MIFs May Be Rejected
 
+{% raw %}
+
 	Article: Q153573
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -55,3 +57,5 @@ permalink: /kb/153/Q153573/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222904/
 
 ## Q222904: HOWTO: Create Macintosh Associations for Nondefault File Extensi
 
+{% raw %}
+
 	Article: Q222904
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/222/Q222904/
 	
 	=============================================================================
 	
+
+{% endraw %}

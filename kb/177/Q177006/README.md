@@ -6,6 +6,8 @@ permalink: /kb/177/Q177006/
 
 ## Q177006: XADM: MTA May Fail During Mailstorms Involving Large DLs
 
+{% raw %}
+
 	Article: Q177006
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -73,3 +75,5 @@ permalink: /kb/177/Q177006/
 	
 	=============================================================================
 	
+
+{% endraw %}

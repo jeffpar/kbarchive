@@ -6,6 +6,8 @@ permalink: /kb/077/Q77918/
 
 ## Q77918: ALR Business Veisa and Erratic Mouse Behavior in Windows
 
+{% raw %}
+
 	Article: Q77918
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/077/Q77918/
 	
 	=============================================================================
 	
+
+{% endraw %}

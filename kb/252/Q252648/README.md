@@ -6,6 +6,8 @@ permalink: /kb/252/Q252648/
 
 ## Q252648: XGEN: A Brief Introduction to ASN.1 and BER
 
+{% raw %}
+
 	Article: Q252648
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): ; winnt:5.5
@@ -216,3 +218,5 @@ permalink: /kb/252/Q252648/
 	
 	=============================================================================
 	
+
+{% endraw %}

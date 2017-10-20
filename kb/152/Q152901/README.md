@@ -6,6 +6,8 @@ permalink: /kb/152/Q152901/
 
 ## Q152901: XADM: MTA Reports Repeated Occurrence of Event Id 1209
 
+{% raw %}
+
 	Article: Q152901
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/152/Q152901/
 	
 	=============================================================================
 	
+
+{% endraw %}

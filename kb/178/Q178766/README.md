@@ -6,6 +6,8 @@ permalink: /kb/178/Q178766/
 
 ## Q178766: XWEB: Error Message: Failed to Open this Message
 
+{% raw %}
+
 	Article: Q178766
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/178/Q178766/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131899/
 
 ## Q131899: FIX: Access Violation with Large NAMELIST
 
+{% raw %}
+
 	Article: Q131899
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -88,3 +90,5 @@ permalink: /kb/131/Q131899/
 	
 	=============================================================================
 	
+
+{% endraw %}

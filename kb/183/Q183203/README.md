@@ -6,6 +6,8 @@ permalink: /kb/183/Q183203/
 
 ## Q183203: Print Queue Backs Up When Connected to NetWare Server via LPR
 
+{% raw %}
+
 	Article: Q183203
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/183/Q183203/
 	
 	=============================================================================
 	
+
+{% endraw %}

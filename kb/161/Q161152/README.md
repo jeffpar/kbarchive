@@ -6,6 +6,8 @@ permalink: /kb/161/Q161152/
 
 ## Q161152: HOWTO: Add a New Appointment in Schedule Plus
 
+{% raw %}
+
 	Article: Q161152
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -71,3 +73,5 @@ permalink: /kb/161/Q161152/
 	
 	=============================================================================
 	
+
+{% endraw %}

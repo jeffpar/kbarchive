@@ -6,6 +6,8 @@ permalink: /kb/277/Q277034/
 
 ## Q277034: ELL: Sound Card Does Not Supply Required Voltage
 
+{% raw %}
+
 	Article: Q277034
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/277/Q277034/
 	
 	=============================================================================
 	
+
+{% endraw %}

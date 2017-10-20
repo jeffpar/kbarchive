@@ -6,6 +6,8 @@ permalink: /kb/132/Q132295/
 
 ## Q132295: How to Change the Attributes of a Visual FoxPro Window
 
+{% raw %}
+
 	Article: Q132295
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/132/Q132295/
 	
 	=============================================================================
 	
+
+{% endraw %}

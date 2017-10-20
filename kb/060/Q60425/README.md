@@ -6,6 +6,8 @@ permalink: /kb/060/Q60425/
 
 ## Q60425: Unresolved External Making Quick Library from CHRTB.BAS
 
+{% raw %}
+
 	Article: Q60425
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -44,3 +46,5 @@ permalink: /kb/060/Q60425/
 	manner:
 	
 	   LIB chrtb.lib +chrtb+chrtasm+uiasm+fontb+fontasm+qbx.lib;
+
+{% endraw %}

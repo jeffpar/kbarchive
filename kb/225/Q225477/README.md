@@ -6,6 +6,8 @@ permalink: /kb/225/Q225477/
 
 ## Q225477: How to Install BackOffice Server 4.5 as an Administration Server
 
+{% raw %}
+
 	Article: Q225477
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -76,3 +78,5 @@ permalink: /kb/225/Q225477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86648/
 
 ## Q86648: No MS-DOS Extended Error Info for Windows File Functions
 
+{% raw %}
+
 	Article: Q86648
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -37,3 +39,5 @@ permalink: /kb/086/Q86648/
 	
 	=============================================================================
 	
+
+{% endraw %}

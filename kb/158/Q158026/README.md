@@ -6,6 +6,8 @@ permalink: /kb/158/Q158026/
 
 ## Q158026: GEX: How to Play Using a Keyboard
 
+{% raw %}
+
 	Article: Q158026
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/158/Q158026/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231242/
 
 ## Q231242: SMS: &quot;Right Now&quot; Crystal Reports Schedule Incorrectly
 
+{% raw %}
+
 	Article: Q231242
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -77,3 +79,5 @@ permalink: /kb/231/Q231242/
 	
 	=============================================================================
 	
+
+{% endraw %}

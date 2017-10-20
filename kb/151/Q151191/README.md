@@ -6,6 +6,8 @@ permalink: /kb/151/Q151191/
 
 ## Q151191: PC Cillin Anti-virus Can Cause SNA Client 629 or 546 on Win 95
 
+{% raw %}
+
 	Article: Q151191
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -46,3 +48,5 @@ permalink: /kb/151/Q151191/
 	
 	=============================================================================
 	
+
+{% endraw %}

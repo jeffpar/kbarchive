@@ -6,6 +6,8 @@ permalink: /kb/236/Q236794/
 
 ## Q236794: &quot;STOP 0xA&quot; in Ntoskrnl.exe Caused by Race Condition in Tcpip.sys
 
+{% raw %}
+
 	Article: Q236794
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -61,3 +63,5 @@ permalink: /kb/236/Q236794/
 	
 	=============================================================================
 	
+
+{% endraw %}

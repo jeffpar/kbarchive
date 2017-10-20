@@ -6,6 +6,8 @@ permalink: /kb/120/Q120590/
 
 ## Q120590: DRVSPACE /MOUNT Err Msg: Cannot Find the File DRVSPACE.000
 
+{% raw %}
+
 	Article: Q120590
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/120/Q120590/
 	
 	=============================================================================
 	
+
+{% endraw %}

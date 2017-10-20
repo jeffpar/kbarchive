@@ -6,6 +6,8 @@ permalink: /kb/074/Q74474/
 
 ## Q74474: INFO: Killing the Parent of a Modal Dialog Box
 
+{% raw %}
+
 	Article: Q74474
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/074/Q74474/
 	
 	=============================================================================
 	
+
+{% endraw %}

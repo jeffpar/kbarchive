@@ -6,6 +6,8 @@ permalink: /kb/169/Q169528/
 
 ## Q169528: FP97: NTLM Authentication Error Opening/Publishing FrontPage Web
 
+{% raw %}
+
 	Article: Q169528
 	Product(s): Word Front Page
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/169/Q169528/
 	
 	=============================================================================
 	
+
+{% endraw %}

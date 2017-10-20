@@ -6,6 +6,8 @@ permalink: /kb/128/Q128170/
 
 ## Q128170: PC WSPlus: MVCAL Fails If USERNAME.BAD Exists in CAL Directory
 
+{% raw %}
+
 	Article: Q128170
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/128/Q128170/
 	
 	=============================================================================
 	
+
+{% endraw %}

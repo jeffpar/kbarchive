@@ -6,6 +6,8 @@ permalink: /kb/163/Q163417/
 
 ## Q163417: WD97: Command to Display the Properties Dialog Box
 
+{% raw %}
+
 	Article: Q163417
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/163/Q163417/
 	
 	=============================================================================
 	
+
+{% endraw %}

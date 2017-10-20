@@ -6,6 +6,8 @@ permalink: /kb/243/Q243889/
 
 ## Q243889: XFOR: Requirements for Exchange Application Converter for Notes
 
+{% raw %}
+
 	Article: Q243889
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/243/Q243889/
 	
 	=============================================================================
 	
+
+{% endraw %}

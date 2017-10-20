@@ -6,6 +6,8 @@ permalink: /kb/301/Q301939/
 
 ## Q301939: HOWTO: Add MSXML Support to a C++ Application
 
+{% raw %}
+
 	Article: Q301939
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -83,3 +85,5 @@ permalink: /kb/301/Q301939/
 	
 	=============================================================================
 	
+
+{% endraw %}

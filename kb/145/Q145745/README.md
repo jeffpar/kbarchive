@@ -6,6 +6,8 @@ permalink: /kb/145/Q145745/
 
 ## Q145745: INFO: Function Differences Between Asc/AscB/AscW and Chr/ChrB/Ch
 
+{% raw %}
+
 	Article: Q145745
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -178,3 +180,5 @@ permalink: /kb/145/Q145745/
 	
 	=============================================================================
 	
+
+{% endraw %}

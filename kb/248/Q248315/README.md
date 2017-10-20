@@ -6,6 +6,8 @@ permalink: /kb/248/Q248315/
 
 ## Q248315: PRB: Memo Fields No Longer Stretch with Overflow
 
+{% raw %}
+
 	Article: Q248315
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -142,3 +144,5 @@ permalink: /kb/248/Q248315/
 	
 	=============================================================================
 	
+
+{% endraw %}

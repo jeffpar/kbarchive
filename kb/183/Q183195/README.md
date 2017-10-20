@@ -6,6 +6,8 @@ permalink: /kb/183/Q183195/
 
 ## Q183195: WD97: Opening an Equation Editor Object Gives Error Message
 
+{% raw %}
+
 	Article: Q183195
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/183/Q183195/
 	
 	=============================================================================
 	
+
+{% endraw %}

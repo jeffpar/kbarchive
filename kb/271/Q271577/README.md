@@ -6,6 +6,8 @@ permalink: /kb/271/Q271577/
 
 ## Q271577: Fix: CManualAccessor Does Not Work With Schema Rowsets
 
+{% raw %}
+
 	Article: Q271577
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0,6.0sp5
@@ -230,3 +232,5 @@ permalink: /kb/271/Q271577/
 	
 	=============================================================================
 	
+
+{% endraw %}

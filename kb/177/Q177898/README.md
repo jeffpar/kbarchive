@@ -6,6 +6,8 @@ permalink: /kb/177/Q177898/
 
 ## Q177898: Dragging LUs Between Pools of the Same Type Does Not Work
 
+{% raw %}
+
 	Article: Q177898
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -68,3 +70,5 @@ permalink: /kb/177/Q177898/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60838/
 
 ## Q60838: Windows Err Msg: The Specified Path Is Invalid
 
+{% raw %}
+
 	Article: Q60838
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/060/Q60838/
 	
 	=============================================================================
 	
+
+{% endraw %}

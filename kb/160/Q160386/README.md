@@ -6,6 +6,8 @@ permalink: /kb/160/Q160386/
 
 ## Q160386: Incorrect MediaType Parameter on IBM PCMCIA Token Ring Card
 
+{% raw %}
+
 	Article: Q160386
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/160/Q160386/
 	
 	=============================================================================
 	
+
+{% endraw %}

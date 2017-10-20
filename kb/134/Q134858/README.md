@@ -6,6 +6,8 @@ permalink: /kb/134/Q134858/
 
 ## Q134858: Removing NetBIOS from Above TCP/IP-32 for Windows for Workgroups
 
+{% raw %}
+
 	Article: Q134858
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a,3.11b; WINDOWS:3.11
@@ -39,3 +41,5 @@ permalink: /kb/134/Q134858/
 	
 	=============================================================================
 	
+
+{% endraw %}

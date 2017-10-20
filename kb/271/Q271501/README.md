@@ -6,6 +6,8 @@ permalink: /kb/271/Q271501/
 
 ## Q271501: Golf 2001: Cannot Use Wheel on Pointing Device to Scroll
 
+{% raw %}
+
 	Article: Q271501
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/271/Q271501/
 	
 	=============================================================================
 	
+
+{% endraw %}

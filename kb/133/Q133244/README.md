@@ -6,6 +6,8 @@ permalink: /kb/133/Q133244/
 
 ## Q133244: PRB: CD Command Results in &quot;Unrecognized command verb&quot; Error
 
+{% raw %}
+
 	Article: Q133244
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/133/Q133244/
 	
 	=============================================================================
 	
+
+{% endraw %}

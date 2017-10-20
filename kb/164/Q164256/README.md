@@ -6,6 +6,8 @@ permalink: /kb/164/Q164256/
 
 ## Q164256: ODE97: ODE Setup Wizard Creates Unexpected Registry Keys
 
+{% raw %}
+
 	Article: Q164256
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/164/Q164256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116082/
 
 ## Q116082: SAMPLE: Using MCI Commands in Visual Basic
 
+{% raw %}
+
 	Article: Q116082
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1; :1.1
@@ -98,3 +100,5 @@ permalink: /kb/116/Q116082/
 	
 	=============================================================================
 	
+
+{% endraw %}

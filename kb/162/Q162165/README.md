@@ -6,6 +6,8 @@ permalink: /kb/162/Q162165/
 
 ## Q162165: SMS: Client Inventory Data Entered Under a New SMSID
 
+{% raw %}
+
 	Article: Q162165
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -60,3 +62,5 @@ permalink: /kb/162/Q162165/
 	
 	=============================================================================
 	
+
+{% endraw %}

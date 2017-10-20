@@ -6,6 +6,8 @@ permalink: /kb/084/Q84933/
 
 ## Q84933: Media Player Does Not Rewind After Playing an Audio CD
 
+{% raw %}
+
 	Article: Q84933
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.1; :1.0
@@ -68,3 +70,5 @@ permalink: /kb/084/Q84933/
 	
 	=============================================================================
 	
+
+{% endraw %}

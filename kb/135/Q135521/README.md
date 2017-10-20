@@ -6,6 +6,8 @@ permalink: /kb/135/Q135521/
 
 ## Q135521: PRB: Send Does Not Work Under Windows 95 or Windows NT
 
+{% raw %}
+
 	Article: Q135521
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/135/Q135521/
 	
 	=============================================================================
 	
+
+{% endraw %}

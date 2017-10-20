@@ -6,6 +6,8 @@ permalink: /kb/254/Q254367/
 
 ## Q254367: How to Configure pcAnywhere Behind a Proxy Server
 
+{% raw %}
+
 	Article: Q254367
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.5
@@ -151,3 +153,5 @@ permalink: /kb/254/Q254367/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138243/
 
 ## Q138243: Duplicate Lan_Sender Entry in Sender Site Properties
 
+{% raw %}
+
 	Article: Q138243
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -62,3 +64,5 @@ permalink: /kb/138/Q138243/
 	
 	=============================================================================
 	
+
+{% endraw %}

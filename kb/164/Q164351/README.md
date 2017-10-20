@@ -6,6 +6,8 @@ permalink: /kb/164/Q164351/
 
 ## Q164351: Command Prompt's Treatment of Long File Extensions
 
+{% raw %}
+
 	Article: Q164351
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/164/Q164351/
 	
 	=============================================================================
 	
+
+{% endraw %}

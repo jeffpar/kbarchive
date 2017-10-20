@@ -6,6 +6,8 @@ permalink: /kb/084/Q84737/
 
 ## Q84737: BUG: RCVCOM /? Incorrectly Displays RMCVCOM Instead of RCVCOM
 
+{% raw %}
+
 	Article: Q84737
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.1
@@ -61,3 +63,5 @@ permalink: /kb/084/Q84737/
 	
 	=============================================================================
 	
+
+{% endraw %}

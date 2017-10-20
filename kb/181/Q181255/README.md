@@ -6,6 +6,8 @@ permalink: /kb/181/Q181255/
 
 ## Q181255: SAMPLE: How to Implement Enumerated Properties in ATL
 
+{% raw %}
+
 	Article: Q181255
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,3.0,5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/181/Q181255/
 	
 	=============================================================================
 	
+
+{% endraw %}

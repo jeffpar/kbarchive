@@ -6,6 +6,8 @@ permalink: /kb/164/Q164439/
 
 ## Q164439: Configuring an HP JetDirect printer to Monitor FPNW Print Queues
 
+{% raw %}
+
 	Article: Q164439
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -271,3 +273,5 @@ permalink: /kb/164/Q164439/
 	
 	=============================================================================
 	
+
+{% endraw %}

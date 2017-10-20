@@ -6,6 +6,8 @@ permalink: /kb/215/Q215114/
 
 ## Q215114: SMS: Clients of SMS 1.2 Site Are Orphaned After Upgrade to SMS 2
 
+{% raw %}
+
 	Article: Q215114
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/215/Q215114/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43488/
 
 ## Q43488: QuickC: GRDEMO Sample Program Gives Run-Time Error R6003
 
+{% raw %}
+
 	Article: Q43488
 	Product(s): See article
 	Version(s): 2.00
@@ -21,3 +23,5 @@ permalink: /kb/043/Q43488/
 	
 	A simple bounds check may be added to the program to prevent the
 	error.
+
+{% endraw %}

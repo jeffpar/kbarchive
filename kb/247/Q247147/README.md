@@ -6,6 +6,8 @@ permalink: /kb/247/Q247147/
 
 ## Q247147: WD97: Index Headings Incorrect with Some Nordic Characters
 
+{% raw %}
+
 	Article: Q247147
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/247/Q247147/
 	
 	=============================================================================
 	
+
+{% endraw %}

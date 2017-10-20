@@ -6,6 +6,8 @@ permalink: /kb/134/Q134976/
 
 ## Q134976: PPT7: How to Restore the Default Design Template
 
+{% raw %}
+
 	Article: Q134976
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -75,3 +77,5 @@ permalink: /kb/134/Q134976/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/079/Q79992/
 
 ## Q79992: Saving High Scores in Tut's Tomb
 
+{% raw %}
+
 	Article: Q79992
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/079/Q79992/
 	
 	=============================================================================
 	
+
+{% endraw %}

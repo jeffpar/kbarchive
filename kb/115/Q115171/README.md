@@ -6,6 +6,8 @@ permalink: /kb/115/Q115171/
 
 ## Q115171: WD97: Merge Data Source Fails to Attach, Merge, or Allow Check
 
+{% raw %}
+
 	Article: Q115171
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/115/Q115171/
 	
 	=============================================================================
 	
+
+{% endraw %}

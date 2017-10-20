@@ -6,6 +6,8 @@ permalink: /kb/192/Q192932/
 
 ## Q192932: XFOR: PROFS Does Not Retain File Extension of Attachment
 
+{% raw %}
+
 	Article: Q192932
 	Product(s): Microsoft Exchange
 	Version(s): 3.2,5.5
@@ -249,3 +251,5 @@ permalink: /kb/192/Q192932/
 	
 	=============================================================================
 	
+
+{% endraw %}

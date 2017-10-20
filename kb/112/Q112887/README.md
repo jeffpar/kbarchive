@@ -6,6 +6,8 @@ permalink: /kb/112/Q112887/
 
 ## Q112887: PC Gen: Err Msg: Notice 6 Error in Mail Header Retrieval
 
+{% raw %}
+
 	Article: Q112887
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0b,3.2
@@ -92,3 +94,5 @@ permalink: /kb/112/Q112887/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167630/
 
 ## Q167630: SMS: Office 97 Contains Incorrect PDF Format
 
+{% raw %}
+
 	Article: Q167630
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -55,3 +57,5 @@ permalink: /kb/167/Q167630/
 	
 	=============================================================================
 	
+
+{% endraw %}

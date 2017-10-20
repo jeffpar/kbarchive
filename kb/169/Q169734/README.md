@@ -6,6 +6,8 @@ permalink: /kb/169/Q169734/
 
 ## Q169734: How to Change the Location of the Windows 95 Print Spool Folder
 
+{% raw %}
+
 	Article: Q169734
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -108,3 +110,5 @@ permalink: /kb/169/Q169734/
 	
 	=============================================================================
 	
+
+{% endraw %}

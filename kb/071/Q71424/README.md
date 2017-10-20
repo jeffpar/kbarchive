@@ -6,6 +6,8 @@ permalink: /kb/071/Q71424/
 
 ## Q71424: INFO: Type float Variable Arguments Are Promoted to Type double
 
+{% raw %}
+
 	Article: Q71424
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -114,3 +116,5 @@ permalink: /kb/071/Q71424/
 	
 	=============================================================================
 	
+
+{% endraw %}

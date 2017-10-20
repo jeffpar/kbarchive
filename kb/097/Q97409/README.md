@@ -6,6 +6,8 @@ permalink: /kb/097/Q97409/
 
 ## Q97409: DDESERV Demonstrates a Basic DDE Server
 
+{% raw %}
+
 	Article: Q97409
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -93,3 +95,5 @@ permalink: /kb/097/Q97409/
 	
 	=============================================================================
 	
+
+{% endraw %}

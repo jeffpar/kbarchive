@@ -6,6 +6,8 @@ permalink: /kb/224/Q224547/
 
 ## Q224547: Memory Leak in Routing and Remote Access Service
 
+{% raw %}
+
 	Article: Q224547
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/224/Q224547/
 	
 	=============================================================================
 	
+
+{% endraw %}

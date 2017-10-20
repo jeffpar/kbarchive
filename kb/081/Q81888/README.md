@@ -6,6 +6,8 @@ permalink: /kb/081/Q81888/
 
 ## Q81888: FIX: MASM Incorrectly Allows Relative Values as Constant
 
+{% raw %}
+
 	Article: Q81888
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -99,3 +101,5 @@ permalink: /kb/081/Q81888/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38960/
 
 ## Q38960: QuickBASIC 4.50 Editor Aborts Exit if Key Pressed During Save
 
+{% raw %}
+
 	Article: Q38960
 	Product(s): See article
 	Version(s): 4.50
@@ -35,3 +37,5 @@ permalink: /kb/038/Q38960/
 	
 	You can work around this problem by allowing QuickBASIC to complete
 	the process of saving the file before pressing a key.
+
+{% endraw %}

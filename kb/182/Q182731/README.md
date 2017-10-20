@@ -6,6 +6,8 @@ permalink: /kb/182/Q182731/
 
 ## Q182731: Download File List for DirectX 5.0 (Dx5eng.exe)
 
+{% raw %}
+
 	Article: Q182731
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -319,3 +321,5 @@ permalink: /kb/182/Q182731/
 	
 	=============================================================================
 	
+
+{% endraw %}

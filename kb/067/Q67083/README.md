@@ -6,6 +6,8 @@ permalink: /kb/067/Q67083/
 
 ## Q67083: DOC: Online Help Lists Wrong Warning Level for C4127 &amp; C4135
 
+{% raw %}
+
 	Article: Q67083
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,6.0,6.0a,6.0ax
@@ -50,3 +52,5 @@ permalink: /kb/067/Q67083/
 	
 	=============================================================================
 	
+
+{% endraw %}

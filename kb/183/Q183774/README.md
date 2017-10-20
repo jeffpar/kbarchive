@@ -6,6 +6,8 @@ permalink: /kb/183/Q183774/
 
 ## Q183774: XCLN: How to Allow File Attachments in EFD Forms
 
+{% raw %}
+
 	Article: Q183774
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/183/Q183774/
 	
 	=============================================================================
 	
+
+{% endraw %}

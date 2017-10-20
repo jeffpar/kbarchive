@@ -6,6 +6,8 @@ permalink: /kb/178/Q178118/
 
 ## Q178118: XADM: Inbound Unicode 2.0 Messages Not Decoded Properly
 
+{% raw %}
+
 	Article: Q178118
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -80,3 +82,5 @@ permalink: /kb/178/Q178118/
 	
 	=============================================================================
 	
+
+{% endraw %}

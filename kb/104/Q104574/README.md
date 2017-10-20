@@ -6,6 +6,8 @@ permalink: /kb/104/Q104574/
 
 ## Q104574: Print Manager Starts Minimized Without Run Minimized Selected
 
+{% raw %}
+
 	Article: Q104574
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -57,3 +59,5 @@ permalink: /kb/104/Q104574/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271733/
 
 ## Q271733: HOWTO: Write a REG_EXPAND_SZ to the Registry
 
+{% raw %}
+
 	Article: Q271733
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -192,3 +194,5 @@ permalink: /kb/271/Q271733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169694/
 
 ## Q169694: XCON: Content Conversion Fails When MDBEF Formatting Disabled
 
+{% raw %}
+
 	Article: Q169694
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -109,3 +111,5 @@ permalink: /kb/169/Q169694/
 	
 	=============================================================================
 	
+
+{% endraw %}

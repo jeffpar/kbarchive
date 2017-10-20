@@ -6,6 +6,8 @@ permalink: /kb/232/Q232333/
 
 ## Q232333: Error Message When Using a Colon in File or Folder Name in SFU
 
+{% raw %}
+
 	Article: Q232333
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/232/Q232333/
 	
 	=============================================================================
 	
+
+{% endraw %}

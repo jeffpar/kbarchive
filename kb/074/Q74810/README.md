@@ -6,6 +6,8 @@ permalink: /kb/074/Q74810/
 
 ## Q74810: Calling Windows Functions from a Device Driver
 
+{% raw %}
+
 	Article: Q74810
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -62,3 +64,5 @@ permalink: /kb/074/Q74810/
 	
 	=============================================================================
 	
+
+{% endraw %}

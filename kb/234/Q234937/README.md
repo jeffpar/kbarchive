@@ -6,6 +6,8 @@ permalink: /kb/234/Q234937/
 
 ## Q234937: Worm.Explore.Zip Virus Alert
 
+{% raw %}
+
 	Article: Q234937
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0,4.5,5.0,5.5,8.0,8.01,8.02,8.03,8.04,8.5,9.0
@@ -173,3 +175,5 @@ permalink: /kb/234/Q234937/
 	
 	=============================================================================
 	
+
+{% endraw %}

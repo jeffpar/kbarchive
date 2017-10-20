@@ -6,6 +6,8 @@ permalink: /kb/193/Q193133/
 
 ## Q193133: HOWTO: Compile VB Programs with Debug Symbols Embedded
 
+{% raw %}
+
 	Article: Q193133
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -136,3 +138,5 @@ permalink: /kb/193/Q193133/
 	
 	=============================================================================
 	
+
+{% endraw %}

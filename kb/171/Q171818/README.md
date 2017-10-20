@@ -6,6 +6,8 @@ permalink: /kb/171/Q171818/
 
 ## Q171818: FIX: IDE Crashes When Repeatedly Placing a Control on a Form
 
+{% raw %}
+
 	Article: Q171818
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -97,3 +99,5 @@ permalink: /kb/171/Q171818/
 	
 	=============================================================================
 	
+
+{% endraw %}

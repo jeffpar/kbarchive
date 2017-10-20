@@ -6,6 +6,8 @@ permalink: /kb/283/Q283271/
 
 ## Q283271: XADM: How to Give Users Permissions to Create Mail-Enabled Users
 
+{% raw %}
+
 	Article: Q283271
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5 SP3,5.5 SP4
@@ -90,3 +92,5 @@ permalink: /kb/283/Q283271/
 	
 	=============================================================================
 	
+
+{% endraw %}

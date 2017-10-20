@@ -6,6 +6,8 @@ permalink: /kb/127/Q127914/
 
 ## Q127914: MSB Human: ErrMsg: This Program Requires 256 Colors Video Mode
 
+{% raw %}
+
 	Article: Q127914
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -113,3 +115,5 @@ permalink: /kb/127/Q127914/
 	
 	=============================================================================
 	
+
+{% endraw %}

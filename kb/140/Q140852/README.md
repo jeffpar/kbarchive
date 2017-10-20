@@ -6,6 +6,8 @@ permalink: /kb/140/Q140852/
 
 ## Q140852: Encarta 1996: Manual Install Instructions for Windows 95
 
+{% raw %}
+
 	Article: Q140852
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95; winnt:3.51
@@ -252,3 +254,5 @@ permalink: /kb/140/Q140852/
 	
 	=============================================================================
 	
+
+{% endraw %}

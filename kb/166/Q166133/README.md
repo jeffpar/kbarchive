@@ -6,6 +6,8 @@ permalink: /kb/166/Q166133/
 
 ## Q166133: BUG: Execute &lt;name&gt;.EXE Menu Item Does Not State Name of SP
 
+{% raw %}
+
 	Article: Q166133
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/166/Q166133/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258666/
 
 ## Q258666: Baseball 2001: Pointer Flickers When You View Player's Guide
 
+{% raw %}
+
 	Article: Q258666
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/258/Q258666/
 	
 	=============================================================================
 	
+
+{% endraw %}

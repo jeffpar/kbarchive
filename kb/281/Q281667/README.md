@@ -6,6 +6,8 @@ permalink: /kb/281/Q281667/
 
 ## Q281667: Links 2001: Distance from Aiming Marker to Pin Shown Incorrectly
 
+{% raw %}
+
 	Article: Q281667
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/281/Q281667/
 	
 	=============================================================================
 	
+
+{% endraw %}

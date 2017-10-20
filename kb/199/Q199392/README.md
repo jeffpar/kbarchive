@@ -6,6 +6,8 @@ permalink: /kb/199/Q199392/
 
 ## Q199392: XCLN: Schedule+ View (Username.vue) Settings Overwritten after U
 
+{% raw %}
+
 	Article: Q199392
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:7.5
@@ -49,3 +51,5 @@ permalink: /kb/199/Q199392/
 	
 	=============================================================================
 	
+
+{% endraw %}

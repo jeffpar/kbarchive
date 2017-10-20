@@ -6,6 +6,8 @@ permalink: /kb/148/Q148407/
 
 ## Q148407: PRB: Error: Cannot load ODBC Library Odbc32.dll
 
+{% raw %}
+
 	Article: Q148407
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b
@@ -61,3 +63,5 @@ permalink: /kb/148/Q148407/
 	
 	=============================================================================
 	
+
+{% endraw %}

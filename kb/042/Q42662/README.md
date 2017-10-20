@@ -6,6 +6,8 @@ permalink: /kb/042/Q42662/
 
 ## Q42662: Corrupt Parameters in SUB Using PRINT with Comma; BC.EXE 4.50
 
+{% raw %}
+
 	Article: Q42662
 	Product(s): See article
 	Version(s): 4.50
@@ -77,3 +79,5 @@ permalink: /kb/042/Q42662/
 	      a = x  ' Pass back values to parameters
 	      b = y  ' Pass back values to parameters
 	   END SUB
+
+{% endraw %}

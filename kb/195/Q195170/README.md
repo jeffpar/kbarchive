@@ -6,6 +6,8 @@ permalink: /kb/195/Q195170/
 
 ## Q195170: SNA Server Sends an Incorrect Sequence Number in BIND Response
 
+{% raw %}
+
 	Article: Q195170
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -152,3 +154,5 @@ permalink: /kb/195/Q195170/
 	
 	=============================================================================
 	
+
+{% endraw %}

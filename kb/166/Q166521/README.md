@@ -6,6 +6,8 @@ permalink: /kb/166/Q166521/
 
 ## Q166521: XFOR: X.400 Address is Encapsulated on SMTP Messages
 
+{% raw %}
+
 	Article: Q166521
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -52,3 +54,5 @@ permalink: /kb/166/Q166521/
 	
 	=============================================================================
 	
+
+{% endraw %}

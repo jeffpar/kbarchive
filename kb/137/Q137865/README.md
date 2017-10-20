@@ -6,6 +6,8 @@ permalink: /kb/137/Q137865/
 
 ## Q137865: PC DirSync: Incorrect SMTP Addresses in POL After Dir-Sync
 
+{% raw %}
+
 	Article: Q137865
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -77,3 +79,5 @@ permalink: /kb/137/Q137865/
 	
 	=============================================================================
 	
+
+{% endraw %}

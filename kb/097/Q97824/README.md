@@ -6,6 +6,8 @@ permalink: /kb/097/Q97824/
 
 ## Q97824: Embedding Sound Files in Excel 3.x
 
+{% raw %}
+
 	Article: Q97824
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/097/Q97824/
 	
 	=============================================================================
 	
+
+{% endraw %}

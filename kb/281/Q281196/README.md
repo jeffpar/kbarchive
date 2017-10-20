@@ -6,6 +6,8 @@ permalink: /kb/281/Q281196/
 
 ## Q281196: Combat Flight Simulator 2: Lights in Virtual Cockpit View Flash
 
+{% raw %}
+
 	Article: Q281196
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/281/Q281196/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174686/
 
 ## Q174686: PRB: Error 371 or 404 Occurs When Using the Show Method
 
+{% raw %}
+
 	Article: Q174686
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/174/Q174686/
 	
 	=============================================================================
 	
+
+{% endraw %}

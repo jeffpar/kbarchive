@@ -6,6 +6,8 @@ permalink: /kb/107/Q107984/
 
 ## Q107984: Flight Simulator for MS-DOS: Cannot Activate Thrust Reversers
 
+{% raw %}
+
 	Article: Q107984
 	Product(s): Microsoft Home Games
 	Version(s): 5.0
@@ -56,3 +58,5 @@ permalink: /kb/107/Q107984/
 	
 	=============================================================================
 	
+
+{% endraw %}

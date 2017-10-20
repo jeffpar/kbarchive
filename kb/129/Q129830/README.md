@@ -6,6 +6,8 @@ permalink: /kb/129/Q129830/
 
 ## Q129830: How To Install Printer Drivers From A Trusted Print Server
 
+{% raw %}
+
 	Article: Q129830
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -89,3 +91,5 @@ permalink: /kb/129/Q129830/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/062/Q62173/
 
 ## Q62173: Mac Hyp: Tips for Using the msmail() Function
 
+{% raw %}
+
 	Article: Q62173
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -50,3 +52,5 @@ permalink: /kb/062/Q62173/
 	
 	=============================================================================
 	
+
+{% endraw %}

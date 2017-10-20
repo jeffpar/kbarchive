@@ -6,6 +6,8 @@ permalink: /kb/146/Q146584/
 
 ## Q146584: WD97: Deleted Text Reappears with Tracked Changes On
 
+{% raw %}
+
 	Article: Q146584
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/146/Q146584/
 	
 	=============================================================================
 	
+
+{% endraw %}

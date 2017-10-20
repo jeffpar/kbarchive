@@ -6,6 +6,8 @@ permalink: /kb/137/Q137315/
 
 ## Q137315: PRB: APPEND GENERAL DATA Not Working in Windows for Workgroups
 
+{% raw %}
+
 	Article: Q137315
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -96,3 +98,5 @@ permalink: /kb/137/Q137315/
 	
 	=============================================================================
 	
+
+{% endraw %}

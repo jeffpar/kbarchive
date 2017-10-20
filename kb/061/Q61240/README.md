@@ -6,6 +6,8 @@ permalink: /kb/061/Q61240/
 
 ## Q61240: C 6.00 README: C 6.00 and the ANSI C Specification
 
+{% raw %}
+
 	Article: Q61240
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -26,3 +28,5 @@ permalink: /kb/061/Q61240/
 	
 	For complete information on Microsoft C 6.00 ANSI compatibility, see
 	Appendix B of "Advanced Programming Techniques."
+
+{% endraw %}

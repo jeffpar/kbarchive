@@ -6,6 +6,8 @@ permalink: /kb/172/Q172088/
 
 ## Q172088: FIX: SelText in Edit Box Limited to 255 Characters
 
+{% raw %}
+
 	Article: Q172088
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -110,3 +112,5 @@ permalink: /kb/172/Q172088/
 	
 	=============================================================================
 	
+
+{% endraw %}

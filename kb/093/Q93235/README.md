@@ -6,6 +6,8 @@ permalink: /kb/093/Q93235/
 
 ## Q93235: Kodak Ekta Plus 7008 TrueType Problems in Landscape Mode
 
+{% raw %}
+
 	Article: Q93235
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/093/Q93235/
 	
 	=============================================================================
 	
+
+{% endraw %}

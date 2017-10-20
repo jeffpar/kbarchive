@@ -6,6 +6,8 @@ permalink: /kb/258/Q258555/
 
 ## Q258555: Link Service May be Deleted after You Install New Link Service
 
+{% raw %}
+
 	Article: Q258555
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -116,3 +118,5 @@ permalink: /kb/258/Q258555/
 	
 	=============================================================================
 	
+
+{% endraw %}

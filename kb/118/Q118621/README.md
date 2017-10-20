@@ -6,6 +6,8 @@ permalink: /kb/118/Q118621/
 
 ## Q118621: PC DirSync: Commonly Asked Questions
 
+{% raw %}
+
 	Article: Q118621
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.2a,3.5
@@ -206,3 +208,5 @@ permalink: /kb/118/Q118621/
 	
 	=============================================================================
 	
+
+{% endraw %}

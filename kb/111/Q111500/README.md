@@ -6,6 +6,8 @@ permalink: /kb/111/Q111500/
 
 ## Q111500: BUG: Trailing Commas May Cause Incorrect Error Messages
 
+{% raw %}
+
 	Article: Q111500
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1,6.11,6.1a
@@ -110,3 +112,5 @@ permalink: /kb/111/Q111500/
 	
 	=============================================================================
 	
+
+{% endraw %}

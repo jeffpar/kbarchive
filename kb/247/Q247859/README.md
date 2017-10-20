@@ -6,6 +6,8 @@ permalink: /kb/247/Q247859/
 
 ## Q247859: FS: Description of the Real-World Weather Feature
 
+{% raw %}
+
 	Article: Q247859
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/247/Q247859/
 	
 	=============================================================================
 	
+
+{% endraw %}

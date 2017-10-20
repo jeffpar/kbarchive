@@ -6,6 +6,8 @@ permalink: /kb/159/Q159352/
 
 ## Q159352: RPC over NetBIOS Programs Can't Call from Server to RAS Client
 
+{% raw %}
+
 	Article: Q159352
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/159/Q159352/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129645/
 
 ## Q129645: PRB: GETDIR() Doesn't Behave as Expected Under System 7.5
 
+{% raw %}
+
 	Article: Q129645
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b
@@ -79,3 +81,5 @@ permalink: /kb/129/Q129645/
 	
 	=============================================================================
 	
+
+{% endraw %}

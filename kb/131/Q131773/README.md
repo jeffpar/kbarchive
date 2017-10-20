@@ -6,6 +6,8 @@ permalink: /kb/131/Q131773/
 
 ## Q131773: INFO: Setting Compare to Time Increases Speed of GET Command
 
+{% raw %}
+
 	Article: Q131773
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/131/Q131773/
 	
 	=============================================================================
 	
+
+{% endraw %}

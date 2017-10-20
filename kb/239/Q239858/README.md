@@ -6,6 +6,8 @@ permalink: /kb/239/Q239858/
 
 ## Q239858: Sample PU Statement in Worksheet Produced by Mainframe APPC/LU6.
 
+{% raw %}
+
 	Article: Q239858
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0 SP2
@@ -48,3 +50,5 @@ permalink: /kb/239/Q239858/
 	
 	=============================================================================
 	
+
+{% endraw %}

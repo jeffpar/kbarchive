@@ -6,6 +6,8 @@ permalink: /kb/112/Q112594/
 
 ## Q112594: Unable to Administer Domain when NetLogon Not Started
 
+{% raw %}
+
 	Article: Q112594
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,3.5,3.51,4.0
@@ -56,3 +58,5 @@ permalink: /kb/112/Q112594/
 	
 	=============================================================================
 	
+
+{% endraw %}

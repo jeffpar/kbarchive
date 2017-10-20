@@ -6,6 +6,8 @@ permalink: /kb/192/Q192067/
 
 ## Q192067: PC Card in Dock Not Enumerated When Hot Docking
 
+{% raw %}
+
 	Article: Q192067
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,2.1,2.5
@@ -86,3 +88,5 @@ permalink: /kb/192/Q192067/
 	
 	=============================================================================
 	
+
+{% endraw %}

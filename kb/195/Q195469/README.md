@@ -6,6 +6,8 @@ permalink: /kb/195/Q195469/
 
 ## Q195469: STOP 0xEFFFFFFF Exception in OLE Servers with Multiple Clients
 
+{% raw %}
+
 	Article: Q195469
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -114,3 +116,5 @@ permalink: /kb/195/Q195469/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171304/
 
 ## Q171304: Learn Java Now: VJ++ Setup: No CD-Key Included with Book
 
+{% raw %}
+
 	Article: Q171304
 	Product(s): Microsoft Press
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/171/Q171304/
 	
 	=============================================================================
 	
+
+{% endraw %}

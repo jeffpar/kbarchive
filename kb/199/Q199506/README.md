@@ -6,6 +6,8 @@ permalink: /kb/199/Q199506/
 
 ## Q199506: Active Visual Basic 5.0 Comments and Corrections
 
+{% raw %}
+
 	Article: Q199506
 	Product(s): Microsoft Press
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/199/Q199506/
 	
 	=============================================================================
 	
+
+{% endraw %}

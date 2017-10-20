@@ -6,6 +6,8 @@ permalink: /kb/039/Q39374/
 
 ## Q39374: FIX: MASM 5.1 Generates Incorrect Listing for RET Statement
 
+{% raw %}
+
 	Article: Q39374
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -102,3 +104,5 @@ permalink: /kb/039/Q39374/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262173/
 
 ## Q262173: Memory Leak Occurs When MSWC.IISLog Is Repeatedly Instantiated
 
+{% raw %}
+
 	Article: Q262173
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -54,3 +56,5 @@ permalink: /kb/262/Q262173/
 	
 	=============================================================================
 	
+
+{% endraw %}

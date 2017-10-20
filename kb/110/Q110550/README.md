@@ -6,6 +6,8 @@ permalink: /kb/110/Q110550/
 
 ## Q110550: Flight Simulator: Air Temperature May Exceed 100 Degrees
 
+{% raw %}
+
 	Article: Q110550
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -56,3 +58,5 @@ permalink: /kb/110/Q110550/
 	
 	=============================================================================
 	
+
+{% endraw %}

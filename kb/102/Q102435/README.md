@@ -6,6 +6,8 @@ permalink: /kb/102/Q102435/
 
 ## Q102435: INFO: Reasons for &quot;Unauthorized Copy of Visual C++&quot; Message
 
+{% raw %}
+
 	Article: Q102435
 	Product(s): Microsoft C Compiler
 	Version(s): WIN3X:1.0,1.5;WINNT:1.0,2.0,2.1,4.0,4.1,4.2,5.0;
@@ -93,3 +95,5 @@ permalink: /kb/102/Q102435/
 	
 	=============================================================================
 	
+
+{% endraw %}

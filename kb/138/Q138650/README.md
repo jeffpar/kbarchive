@@ -6,6 +6,8 @@ permalink: /kb/138/Q138650/
 
 ## Q138650: DOCERR: Setup Shows Incorrect Required Disk Space
 
+{% raw %}
+
 	Article: Q138650
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/138/Q138650/
 	
 	=============================================================================
 	
+
+{% endraw %}

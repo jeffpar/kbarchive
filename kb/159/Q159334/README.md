@@ -6,6 +6,8 @@ permalink: /kb/159/Q159334/
 
 ## Q159334: WD97: Document Repaginated When You Switch to Header/Footer
 
+{% raw %}
+
 	Article: Q159334
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -52,3 +54,5 @@ permalink: /kb/159/Q159334/
 	
 	=============================================================================
 	
+
+{% endraw %}

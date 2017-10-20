@@ -6,6 +6,8 @@ permalink: /kb/155/Q155761/
 
 ## Q155761: Database Path Must Exist Before Moving with Administrator
 
+{% raw %}
+
 	Article: Q155761
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155761/
 	
 	=============================================================================
 	
+
+{% endraw %}

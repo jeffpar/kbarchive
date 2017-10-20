@@ -6,6 +6,8 @@ permalink: /kb/172/Q172377/
 
 ## Q172377: SNA Server Exception Error Stopping/Starting Manage Client
 
+{% raw %}
+
 	Article: Q172377
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -117,3 +119,5 @@ permalink: /kb/172/Q172377/
 	
 	=============================================================================
 	
+
+{% endraw %}

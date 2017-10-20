@@ -6,6 +6,8 @@ permalink: /kb/161/Q161601/
 
 ## Q161601: XADM: Public Folder Replication Set to Every 15 Minutes
 
+{% raw %}
+
 	Article: Q161601
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/161/Q161601/
 	
 	=============================================================================
 	
+
+{% endraw %}

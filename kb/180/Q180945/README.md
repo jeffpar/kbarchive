@@ -6,6 +6,8 @@ permalink: /kb/180/Q180945/
 
 ## Q180945: HOWTO: Disconnect a Project from Source Control
 
+{% raw %}
+
 	Article: Q180945
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/180/Q180945/
 	
 	=============================================================================
 	
+
+{% endraw %}

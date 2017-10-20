@@ -6,6 +6,8 @@ permalink: /kb/318/Q318977/
 
 ## Q318977: FIX: The CDATA Section of CURSORTOXML( ) May Format Characters
 
+{% raw %}
+
 	Article: Q318977
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -101,3 +103,5 @@ permalink: /kb/318/Q318977/
 	
 	=============================================================================
 	
+
+{% endraw %}

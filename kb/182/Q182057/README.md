@@ -6,6 +6,8 @@ permalink: /kb/182/Q182057/
 
 ## Q182057: WD97: Merging Documents vs. Comparing Documents
 
+{% raw %}
+
 	Article: Q182057
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/182/Q182057/
 	
 	=============================================================================
 	
+
+{% endraw %}

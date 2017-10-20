@@ -6,6 +6,8 @@ permalink: /kb/195/Q195692/
 
 ## Q195692: WD97: Collapsed Outline Appears Expanded in Print Preview
 
+{% raw %}
+
 	Article: Q195692
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/195/Q195692/
 	
 	=============================================================================
 	
+
+{% endraw %}

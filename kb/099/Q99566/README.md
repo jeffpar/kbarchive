@@ -6,6 +6,8 @@ permalink: /kb/099/Q99566/
 
 ## Q99566: Possible Causes for Net 3100 (Default) Errors
 
+{% raw %}
+
 	Article: Q99566
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/099/Q99566/
 	
 	=============================================================================
 	
+
+{% endraw %}

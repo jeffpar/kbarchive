@@ -6,6 +6,8 @@ permalink: /kb/149/Q149317/
 
 ## Q149317: SMS: IP Address Not Reported for NetWare Clients
 
+{% raw %}
+
 	Article: Q149317
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -53,3 +55,5 @@ permalink: /kb/149/Q149317/
 	
 	=============================================================================
 	
+
+{% endraw %}

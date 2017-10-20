@@ -6,6 +6,8 @@ permalink: /kb/098/Q98841/
 
 ## Q98841: INFO: Conforming to ANSI C Standards
 
+{% raw %}
+
 	Article: Q98841
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,4.0,5.0,6.0,7.0
@@ -65,3 +67,5 @@ permalink: /kb/098/Q98841/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257516/
 
 ## Q257516: FIX: Button Removed from Toolbar Cannot Be Added Back
 
+{% raw %}
+
 	Article: Q257516
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -96,3 +98,5 @@ permalink: /kb/257/Q257516/
 	
 	=============================================================================
 	
+
+{% endraw %}

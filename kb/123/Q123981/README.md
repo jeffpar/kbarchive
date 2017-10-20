@@ -6,6 +6,8 @@ permalink: /kb/123/Q123981/
 
 ## Q123981: Event IDs 4307 and 4311 Occur After Disabling WINS Bindings
 
+{% raw %}
+
 	Article: Q123981
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -65,3 +67,5 @@ permalink: /kb/123/Q123981/
 	
 	=============================================================================
 	
+
+{% endraw %}

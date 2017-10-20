@@ -6,6 +6,8 @@ permalink: /kb/244/Q244641/
 
 ## Q244641: Documentation Error in the Windows NT Server Networking Guide
 
+{% raw %}
+
 	Article: Q244641
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/244/Q244641/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141498/
 
 ## Q141498: Filling List Box Using MFC's DDX Facility
 
+{% raw %}
+
 	Article: Q141498
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/141/Q141498/
 	
 	=============================================================================
 	
+
+{% endraw %}

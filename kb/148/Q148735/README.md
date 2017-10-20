@@ -6,6 +6,8 @@ permalink: /kb/148/Q148735/
 
 ## Q148735: Return of Arcade: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148735
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/148/Q148735/
 	
 	=============================================================================
 	
+
+{% endraw %}

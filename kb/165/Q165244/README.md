@@ -6,6 +6,8 @@ permalink: /kb/165/Q165244/
 
 ## Q165244: NTbackup on Spanish NT 4.0 Will Not Use Command-line Switches
 
+{% raw %}
+
 	Article: Q165244
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/165/Q165244/
 	
 	=============================================================================
 	
+
+{% endraw %}

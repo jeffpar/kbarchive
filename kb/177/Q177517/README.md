@@ -6,6 +6,8 @@ permalink: /kb/177/Q177517/
 
 ## Q177517: Removing Windows Multimedia Components Does Not Remove All Files
 
+{% raw %}
+
 	Article: Q177517
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/177/Q177517/
 	
 	=============================================================================
 	
+
+{% endraw %}

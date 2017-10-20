@@ -6,6 +6,8 @@ permalink: /kb/090/Q90257/
 
 ## Q90257: How Does WFWG Upgrade from LAN Manager 2.1?
 
+{% raw %}
+
 	Article: Q90257
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/090/Q90257/
 	
 	=============================================================================
 	
+
+{% endraw %}

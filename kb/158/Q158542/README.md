@@ -6,6 +6,8 @@ permalink: /kb/158/Q158542/
 
 ## Q158542: CG3: Clip Gallery Takes a Long Time to Start
 
+{% raw %}
+
 	Article: Q158542
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,97
@@ -80,3 +82,5 @@ permalink: /kb/158/Q158542/
 	
 	=============================================================================
 	
+
+{% endraw %}

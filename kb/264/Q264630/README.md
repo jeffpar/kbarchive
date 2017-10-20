@@ -6,6 +6,8 @@ permalink: /kb/264/Q264630/
 
 ## Q264630: SMS 2.0 SP1 and SP2 Interoperability Issues Without Updates
 
+{% raw %}
+
 	Article: Q264630
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -247,3 +249,5 @@ permalink: /kb/264/Q264630/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140084/
 
 ## Q140084: Permissions Error Creating an LPR Printer
 
+{% raw %}
+
 	Article: Q140084
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -95,3 +97,5 @@ permalink: /kb/140/Q140084/
 	
 	=============================================================================
 	
+
+{% endraw %}

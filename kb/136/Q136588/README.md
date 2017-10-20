@@ -6,6 +6,8 @@ permalink: /kb/136/Q136588/
 
 ## Q136588: PRB: List Boxes and Combo Boxes Lose Item Properties
 
+{% raw %}
+
 	Article: Q136588
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -81,3 +83,5 @@ permalink: /kb/136/Q136588/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138024/
 
 ## Q138024: Problems Printing to NewGen Turbo PS Printers
 
+{% raw %}
+
 	Article: Q138024
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/138/Q138024/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/224/Q224271/
 
 ## Q224271: Streets and Trips 2000: Route Hash Marks Are Not Visible
 
+{% raw %}
+
 	Article: Q224271
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -99,3 +101,5 @@ permalink: /kb/224/Q224271/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142918/
 
 ## Q142918: Installing to Another Folder Is Not Fully Automated
 
+{% raw %}
+
 	Article: Q142918
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/142/Q142918/
 	
 	=============================================================================
 	
+
+{% endraw %}

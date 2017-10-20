@@ -6,6 +6,8 @@ permalink: /kb/131/Q131029/
 
 ## Q131029: HOWTO: Manipulate Embedded Objects in General Fields
 
+{% raw %}
+
 	Article: Q131029
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/131/Q131029/
 	
 	=============================================================================
 	
+
+{% endraw %}

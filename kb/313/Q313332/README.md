@@ -6,6 +6,8 @@ permalink: /kb/313/Q313332/
 
 ## Q313332: INFO: Qualify Table Names When You Replicate Tables to DB2
 
+{% raw %}
+
 	Article: Q313332
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/313/Q313332/
 	
 	=============================================================================
 	
+
+{% endraw %}

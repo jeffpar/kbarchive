@@ -6,6 +6,8 @@ permalink: /kb/314/Q314756/
 
 ## Q314756: Microsoft Visual C++ .NET Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q314756
 	Product(s): Microsoft Press
 	Version(s): 
@@ -158,3 +160,5 @@ permalink: /kb/314/Q314756/
 	
 	=============================================================================
 	
+
+{% endraw %}

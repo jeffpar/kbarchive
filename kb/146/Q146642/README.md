@@ -6,6 +6,8 @@ permalink: /kb/146/Q146642/
 
 ## Q146642: How to Undelete a File Deleted by the Project Manager
 
+{% raw %}
+
 	Article: Q146642
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -70,3 +72,5 @@ permalink: /kb/146/Q146642/
 	
 	=============================================================================
 	
+
+{% endraw %}

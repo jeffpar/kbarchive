@@ -6,6 +6,8 @@ permalink: /kb/105/Q105527/
 
 ## Q105527: X400: Bodypart Types Supported by Mail for PC Networks
 
+{% raw %}
+
 	Article: Q105527
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2; WINDOWS:2.1,3.0,3.2
@@ -52,3 +54,5 @@ permalink: /kb/105/Q105527/
 	
 	=============================================================================
 	
+
+{% endraw %}

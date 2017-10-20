@@ -6,6 +6,8 @@ permalink: /kb/129/Q129855/
 
 ## Q129855: WinNT Cannot See Shares of Workgroup Add-On for MS-DOS Computer
 
+{% raw %}
+
 	Article: Q129855
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.1,3.11,3.5,3.51
@@ -94,3 +96,5 @@ permalink: /kb/129/Q129855/
 	
 	=============================================================================
 	
+
+{% endraw %}

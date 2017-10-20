@@ -6,6 +6,8 @@ permalink: /kb/129/Q129390/
 
 ## Q129390: Toshiba T3100 Screen Is Black After Video Resolution Change
 
+{% raw %}
+
 	Article: Q129390
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/129/Q129390/
 	
 	=============================================================================
 	
+
+{% endraw %}

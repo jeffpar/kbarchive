@@ -6,6 +6,8 @@ permalink: /kb/124/Q124899/
 
 ## Q124899: BUG: SQLNumResultCols May Fail After Prepared SQL Statement
 
+{% raw %}
+
 	Article: Q124899
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0,2.0
@@ -70,3 +72,5 @@ permalink: /kb/124/Q124899/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159543/
 
 ## Q159543: Intel ProShare PC Card May Hang Computer
 
+{% raw %}
+
 	Article: Q159543
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -58,3 +60,5 @@ permalink: /kb/159/Q159543/
 	
 	=============================================================================
 	
+
+{% endraw %}

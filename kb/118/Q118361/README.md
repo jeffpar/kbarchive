@@ -6,6 +6,8 @@ permalink: /kb/118/Q118361/
 
 ## Q118361: Mac Bookshelf: Quickshelf Does Not Recognize Words in Works
 
+{% raw %}
+
 	Article: Q118361
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1996-1997; MACINTOSH:3.0
@@ -60,3 +62,5 @@ permalink: /kb/118/Q118361/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192625/
 
 ## Q192625: PRB: VC++ Shared Workspace File Loses Project Locations
 
+{% raw %}
+
 	Article: Q192625
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.0a,5.0,6.0
@@ -131,3 +133,5 @@ permalink: /kb/192/Q192625/
 	
 	=============================================================================
 	
+
+{% endraw %}

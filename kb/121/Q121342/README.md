@@ -6,6 +6,8 @@ permalink: /kb/121/Q121342/
 
 ## Q121342: Z Order Problems in Space Simulator
 
+{% raw %}
+
 	Article: Q121342
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/121/Q121342/
 	
 	=============================================================================
 	
+
+{% endraw %}

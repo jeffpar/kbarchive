@@ -6,6 +6,8 @@ permalink: /kb/170/Q170140/
 
 ## Q170140: XCLN: Error After Update.exe on Japanese Win16 Exchange Client
 
+{% raw %}
+
 	Article: Q170140
 	Product(s): Microsoft Exchange
 	Version(s): 5.0 SP1
@@ -55,3 +57,5 @@ permalink: /kb/170/Q170140/
 	
 	=============================================================================
 	
+
+{% endraw %}

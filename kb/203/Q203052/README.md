@@ -6,6 +6,8 @@ permalink: /kb/203/Q203052/
 
 ## Q203052: Poor Program and Service Performance During Crash Dump Transfer
 
+{% raw %}
+
 	Article: Q203052
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/203/Q203052/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112842/
 
 ## Q112842: Locating the Source of AppleTalk Error 48
 
+{% raw %}
+
 	Article: Q112842
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -75,3 +77,5 @@ permalink: /kb/112/Q112842/
 	
 	=============================================================================
 	
+
+{% endraw %}

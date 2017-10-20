@@ -6,6 +6,8 @@ permalink: /kb/099/Q99062/
 
 ## Q99062: Using REXX Data Conversion Commands
 
+{% raw %}
+
 	Article: Q99062
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/099/Q99062/
 	
 	=============================================================================
 	
+
+{% endraw %}

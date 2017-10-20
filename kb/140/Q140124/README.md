@@ -6,6 +6,8 @@ permalink: /kb/140/Q140124/
 
 ## Q140124: NetWare Search Mapping Works Only in Current MS-DOS Session
 
+{% raw %}
+
 	Article: Q140124
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/140/Q140124/
 	
 	=============================================================================
 	
+
+{% endraw %}

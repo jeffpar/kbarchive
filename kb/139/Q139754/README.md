@@ -6,6 +6,8 @@ permalink: /kb/139/Q139754/
 
 ## Q139754: Microsoft Plus! Screen Saver &quot;Hot Corner&quot; Settings Are Global
 
+{% raw %}
+
 	Article: Q139754
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -72,3 +74,5 @@ permalink: /kb/139/Q139754/
 	
 	=============================================================================
 	
+
+{% endraw %}

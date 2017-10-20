@@ -6,6 +6,8 @@ permalink: /kb/165/Q165923/
 
 ## Q165923: WD97: Creating Hyperlink Deletes Object Reference
 
+{% raw %}
+
 	Article: Q165923
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -148,3 +150,5 @@ permalink: /kb/165/Q165923/
 	
 	=============================================================================
 	
+
+{% endraw %}

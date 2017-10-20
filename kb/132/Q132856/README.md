@@ -6,6 +6,8 @@ permalink: /kb/132/Q132856/
 
 ## Q132856: PC DirSync: Notice 37 When Exporting Postoffice Address List
 
+{% raw %}
+
 	Article: Q132856
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -49,3 +51,5 @@ permalink: /kb/132/Q132856/
 	
 	=============================================================================
 	
+
+{% endraw %}

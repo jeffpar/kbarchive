@@ -6,6 +6,8 @@ permalink: /kb/142/Q142340/
 
 ## Q142340: WD97: Date, Currency Results Incorrect Merging from Access
 
+{% raw %}
+
 	Article: Q142340
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/142/Q142340/
 	
 	=============================================================================
 	
+
+{% endraw %}

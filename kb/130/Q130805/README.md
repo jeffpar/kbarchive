@@ -6,6 +6,8 @@ permalink: /kb/130/Q130805/
 
 ## Q130805: Drawing to a Memory Bitmap for Faster Performance
 
+{% raw %}
+
 	Article: Q130805
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 1.25,2000,3.1,3.5
@@ -68,3 +70,5 @@ permalink: /kb/130/Q130805/
 	
 	=============================================================================
 	
+
+{% endraw %}

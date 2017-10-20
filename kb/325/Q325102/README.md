@@ -6,6 +6,8 @@ permalink: /kb/325/Q325102/
 
 ## Q325102: Train Simulator: Train Bell Produces No Sound
 
+{% raw %}
+
 	Article: Q325102
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/325/Q325102/
 	
 	=============================================================================
 	
+
+{% endraw %}

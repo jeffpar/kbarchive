@@ -6,6 +6,8 @@ permalink: /kb/149/Q149473/
 
 ## Q149473: BUG: FOR4265 Warning Not Generated for Undefined Argument
 
+{% raw %}
+
 	Article: Q149473
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/149/Q149473/
 	
 	=============================================================================
 	
+
+{% endraw %}

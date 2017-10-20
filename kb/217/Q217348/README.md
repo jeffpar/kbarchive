@@ -6,6 +6,8 @@ permalink: /kb/217/Q217348/
 
 ## Q217348: Combat FS: Game Is Not Displayed Properly in Full Screen Mode
 
+{% raw %}
+
 	Article: Q217348
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/217/Q217348/
 	
 	=============================================================================
 	
+
+{% endraw %}

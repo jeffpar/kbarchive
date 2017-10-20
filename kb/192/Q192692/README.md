@@ -6,6 +6,8 @@ permalink: /kb/192/Q192692/
 
 ## Q192692: Rs2dbf.exe Converting ADO 2.x Recordset to VFP Cursor
 
+{% raw %}
+
 	Article: Q192692
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.1 SP2,2.6,6.0
@@ -65,3 +67,5 @@ permalink: /kb/192/Q192692/
 	
 	=============================================================================
 	
+
+{% endraw %}

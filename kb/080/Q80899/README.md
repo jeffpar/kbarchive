@@ -6,6 +6,8 @@ permalink: /kb/080/Q80899/
 
 ## Q80899: Windows 3.1 Application Compatibility (part 4 of 7)
 
+{% raw %}
+
 	Article: Q80899
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -164,3 +166,5 @@ permalink: /kb/080/Q80899/
 	
 	=============================================================================
 	
+
+{% endraw %}

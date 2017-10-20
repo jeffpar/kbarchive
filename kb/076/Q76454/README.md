@@ -6,6 +6,8 @@ permalink: /kb/076/Q76454/
 
 ## Q76454: Leading Edge Model D Loses Date/Time with MS-DOS
 
+{% raw %}
+
 	Article: Q76454
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -54,3 +56,5 @@ permalink: /kb/076/Q76454/
 	
 	=============================================================================
 	
+
+{% endraw %}

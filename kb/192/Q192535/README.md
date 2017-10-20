@@ -6,6 +6,8 @@ permalink: /kb/192/Q192535/
 
 ## Q192535: PRB: Regsvr32.exe Fails in Mfco42d.dll Registering MFC Server
 
+{% raw %}
+
 	Article: Q192535
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/192/Q192535/
 	
 	=============================================================================
 	
+
+{% endraw %}

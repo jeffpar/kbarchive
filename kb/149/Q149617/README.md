@@ -6,6 +6,8 @@ permalink: /kb/149/Q149617/
 
 ## Q149617: Eudora Changes Default MailTo Handler
 
+{% raw %}
+
 	Article: Q149617
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -91,3 +93,5 @@ permalink: /kb/149/Q149617/
 	
 	=============================================================================
 	
+
+{% endraw %}

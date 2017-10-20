@@ -6,6 +6,8 @@ permalink: /kb/110/Q110968/
 
 ## Q110968: INFO: FoxPro Header Check to Determine if Table is Corrupt
 
+{% raw %}
+
 	Article: Q110968
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -56,3 +58,5 @@ permalink: /kb/110/Q110968/
 	
 	=============================================================================
 	
+
+{% endraw %}

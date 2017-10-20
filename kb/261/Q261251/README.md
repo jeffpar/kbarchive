@@ -6,6 +6,8 @@ permalink: /kb/261/Q261251/
 
 ## Q261251: XCON: Check DNS When Receiving Event ID 9318 with Error 1722
 
+{% raw %}
+
 	Article: Q261251
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/261/Q261251/
 	
 	=============================================================================
 	
+
+{% endraw %}

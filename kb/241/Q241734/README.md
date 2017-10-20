@@ -6,6 +6,8 @@ permalink: /kb/241/Q241734/
 
 ## Q241734: SMS: MMC Stack Overflow in User Security Wizard
 
+{% raw %}
+
 	Article: Q241734
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -130,3 +132,5 @@ permalink: /kb/241/Q241734/
 	
 	=============================================================================
 	
+
+{% endraw %}

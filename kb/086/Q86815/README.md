@@ -6,6 +6,8 @@ permalink: /kb/086/Q86815/
 
 ## Q86815: Mixed C and MASM with MASM Main Language, No C Run-Time
 
+{% raw %}
+
 	Article: Q86815
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b,6.1
@@ -202,3 +204,5 @@ permalink: /kb/086/Q86815/
 	
 	=============================================================================
 	
+
+{% endraw %}

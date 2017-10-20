@@ -6,6 +6,8 @@ permalink: /kb/074/Q74664/
 
 ## Q74664: FIX: MASM 5.1/5.1a Will Not Allow .STACK to Exceed 32K
 
+{% raw %}
+
 	Article: Q74664
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1,5.10a,6.0
@@ -72,3 +74,5 @@ permalink: /kb/074/Q74664/
 	
 	=============================================================================
 	
+
+{% endraw %}

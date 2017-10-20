@@ -6,6 +6,8 @@ permalink: /kb/136/Q136577/
 
 ## Q136577: Contents of Visual FoxPro Pro Edition CD-ROM Disc Part 2 of 2
 
+{% raw %}
+
 	Article: Q136577
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -1192,3 +1194,5 @@ permalink: /kb/136/Q136577/
 	
 	=============================================================================
 	
+
+{% endraw %}

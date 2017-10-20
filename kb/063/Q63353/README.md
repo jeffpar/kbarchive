@@ -6,6 +6,8 @@ permalink: /kb/063/Q63353/
 
 ## Q63353: 256-Color Driver Not Showing 256 Colors in Windows 3.0
 
+{% raw %}
+
 	Article: Q63353
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/063/Q63353/
 	
 	=============================================================================
 	
+
+{% endraw %}

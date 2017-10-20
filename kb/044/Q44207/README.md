@@ -6,6 +6,8 @@ permalink: /kb/044/Q44207/
 
 ## Q44207: Example for freopen Is Incorrect in C, QuickC Manuals
 
+{% raw %}
+
 	Article: Q44207
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -21,3 +23,5 @@ permalink: /kb/044/Q44207/
 	This error is also present in the QuickC Versions 1.00, 1.01, and 2.00
 	run-time library reference manuals. The sample program has been
 	changed in the QuickC 2.00 on-line help example and is correct there.
+
+{% endraw %}

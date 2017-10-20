@@ -6,6 +6,8 @@ permalink: /kb/142/Q142594/
 
 ## Q142594: INFO: Caveats for Using Empty Top-Level Projects in Dev. Studio
 
+{% raw %}
+
 	Article: Q142594
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/142/Q142594/
 	
 	=============================================================================
 	
+
+{% endraw %}

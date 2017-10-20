@@ -6,6 +6,8 @@ permalink: /kb/255/Q255184/
 
 ## Q255184: NT 4.0 Option Pack Installation Errors on MSCS Running MSDTC
 
+{% raw %}
+
 	Article: Q255184
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/255/Q255184/
 	
 	=============================================================================
 	
+
+{% endraw %}

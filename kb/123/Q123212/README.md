@@ -6,6 +6,8 @@ permalink: /kb/123/Q123212/
 
 ## Q123212: How to Set Up SMS to a Remote SQL Server
 
+{% raw %}
+
 	Article: Q123212
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -113,3 +115,5 @@ permalink: /kb/123/Q123212/
 	
 	=============================================================================
 	
+
+{% endraw %}

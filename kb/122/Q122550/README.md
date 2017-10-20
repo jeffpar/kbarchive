@@ -6,6 +6,8 @@ permalink: /kb/122/Q122550/
 
 ## Q122550: How to Disable Persistent Connections for Network Client 3.0
 
+{% raw %}
+
 	Article: Q122550
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.0
@@ -41,3 +43,5 @@ permalink: /kb/122/Q122550/
 	
 	=============================================================================
 	
+
+{% endraw %}

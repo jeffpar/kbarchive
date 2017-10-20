@@ -6,6 +6,8 @@ permalink: /kb/170/Q170954/
 
 ## Q170954: WD97: E-Mail File Attachments Display as Empty Outlined Box
 
+{% raw %}
+
 	Article: Q170954
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -121,3 +123,5 @@ permalink: /kb/170/Q170954/
 	
 	=============================================================================
 	
+
+{% endraw %}

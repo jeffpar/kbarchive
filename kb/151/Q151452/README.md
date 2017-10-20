@@ -6,6 +6,8 @@ permalink: /kb/151/Q151452/
 
 ## Q151452: Print Jobs Fail to Print to Printer Pool if Printer is Offline
 
+{% raw %}
+
 	Article: Q151452
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -60,3 +62,5 @@ permalink: /kb/151/Q151452/
 	
 	=============================================================================
 	
+
+{% endraw %}

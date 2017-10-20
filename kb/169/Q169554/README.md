@@ -6,6 +6,8 @@ permalink: /kb/169/Q169554/
 
 ## Q169554: Taskbar Auto Hide Option Behavior Varies
 
+{% raw %}
+
 	Article: Q169554
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0,95
@@ -85,3 +87,5 @@ permalink: /kb/169/Q169554/
 	
 	=============================================================================
 	
+
+{% endraw %}

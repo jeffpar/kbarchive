@@ -6,6 +6,8 @@ permalink: /kb/142/Q142022/
 
 ## Q142022: Logon Server Files Not Downloaded on OS/2 and LAN Server
 
+{% raw %}
+
 	Article: Q142022
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,3.51
@@ -60,3 +62,5 @@ permalink: /kb/142/Q142022/
 	
 	=============================================================================
 	
+
+{% endraw %}

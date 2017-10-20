@@ -6,6 +6,8 @@ permalink: /kb/172/Q172877/
 
 ## Q172877: Shortcuts Missing from Start Menu After Windows Setup
 
+{% raw %}
+
 	Article: Q172877
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -56,3 +58,5 @@ permalink: /kb/172/Q172877/
 	
 	=============================================================================
 	
+
+{% endraw %}

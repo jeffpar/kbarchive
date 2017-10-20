@@ -6,6 +6,8 @@ permalink: /kb/069/Q69415/
 
 ## Q69415: WD97: Preventing Page Breaks in Tables
 
+{% raw %}
+
 	Article: Q69415
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/069/Q69415/
 	
 	=============================================================================
 	
+
+{% endraw %}

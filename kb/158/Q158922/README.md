@@ -6,6 +6,8 @@ permalink: /kb/158/Q158922/
 
 ## Q158922: Removed Device Not Detected by Add New Hardware Wizard
 
+{% raw %}
+
 	Article: Q158922
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -55,3 +57,5 @@ permalink: /kb/158/Q158922/
 	
 	=============================================================================
 	
+
+{% endraw %}

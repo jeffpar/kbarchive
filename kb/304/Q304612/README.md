@@ -6,6 +6,8 @@ permalink: /kb/304/Q304612/
 
 ## Q304612: PRB: IViewObject Interface Error Previewing RTF File In Report
 
+{% raw %}
+
 	Article: Q304612
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0,7.0
@@ -83,3 +85,5 @@ permalink: /kb/304/Q304612/
 	
 	=============================================================================
 	
+
+{% endraw %}

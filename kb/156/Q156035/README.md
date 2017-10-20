@@ -6,6 +6,8 @@ permalink: /kb/156/Q156035/
 
 ## Q156035: PRB: Control in Grid w/ When Returning .F. Passes Keys to Form
 
+{% raw %}
+
 	Article: Q156035
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -185,3 +187,5 @@ permalink: /kb/156/Q156035/
 	
 	=============================================================================
 	
+
+{% endraw %}

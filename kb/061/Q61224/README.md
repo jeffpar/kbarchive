@@ -6,6 +6,8 @@ permalink: /kb/061/Q61224/
 
 ## Q61224: C 6.00 README: Graphics and Dual-Monitor Debugging Requirement
 
+{% raw %}
+
 	Article: Q61224
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -25,3 +27,5 @@ permalink: /kb/061/Q61224/
 	  or are using a mouse from another manufacturer, you should use the
 	  /M option (disable mouse support) in the situations referred to
 	  above.
+
+{% endraw %}

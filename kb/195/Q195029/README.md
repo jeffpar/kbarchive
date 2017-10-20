@@ -6,6 +6,8 @@ permalink: /kb/195/Q195029/
 
 ## Q195029: CardWizard Socket Services Stop Responding During Startup
 
+{% raw %}
+
 	Article: Q195029
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -123,3 +125,5 @@ permalink: /kb/195/Q195029/
 	
 	=============================================================================
 	
+
+{% endraw %}

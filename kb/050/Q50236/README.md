@@ -6,6 +6,8 @@ permalink: /kb/050/Q50236/
 
 ## Q50236: Mac Wkst: Files in the Trash Can Be Enclosed in Messages
 
+{% raw %}
+
 	Article: Q50236
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -38,3 +40,5 @@ permalink: /kb/050/Q50236/
 	
 	=============================================================================
 	
+
+{% endraw %}

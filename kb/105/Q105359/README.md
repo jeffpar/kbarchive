@@ -6,6 +6,8 @@ permalink: /kb/105/Q105359/
 
 ## Q105359: Filenames with Trailing Periods Not Found
 
+{% raw %}
+
 	Article: Q105359
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -75,3 +77,5 @@ permalink: /kb/105/Q105359/
 	
 	=============================================================================
 	
+
+{% endraw %}

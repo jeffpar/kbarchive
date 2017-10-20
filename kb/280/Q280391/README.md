@@ -6,6 +6,8 @@ permalink: /kb/280/Q280391/
 
 ## Q280391: HOWTO: Send Digitally Signed Messages By Using CDOSYS/CDOEX
 
+{% raw %}
+
 	Article: Q280391
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000
@@ -272,3 +274,5 @@ permalink: /kb/280/Q280391/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197077/
 
 ## Q197077: Multiple Windows Open Automatically at Logon
 
+{% raw %}
+
 	Article: Q197077
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -80,3 +82,5 @@ permalink: /kb/197/Q197077/
 	
 	=============================================================================
 	
+
+{% endraw %}

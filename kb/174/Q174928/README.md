@@ -6,6 +6,8 @@ permalink: /kb/174/Q174928/
 
 ## Q174928: Dependencies Page Empty When Running Resource Wizard
 
+{% raw %}
+
 	Article: Q174928
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/174/Q174928/
 	
 	=============================================================================
 	
+
+{% endraw %}

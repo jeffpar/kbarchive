@@ -6,6 +6,8 @@ permalink: /kb/155/Q155414/
 
 ## Q155414: XADM: Bulk Import/Export FAQ
 
+{% raw %}
+
 	Article: Q155414
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -227,3 +229,5 @@ permalink: /kb/155/Q155414/
 	
 	=============================================================================
 	
+
+{% endraw %}

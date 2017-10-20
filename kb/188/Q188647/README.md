@@ -6,6 +6,8 @@ permalink: /kb/188/Q188647/
 
 ## Q188647: XADM: Folder Assistant Rule to Forward Messages May Fail
 
+{% raw %}
+
 	Article: Q188647
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -83,3 +85,5 @@ permalink: /kb/188/Q188647/
 	
 	=============================================================================
 	
+
+{% endraw %}

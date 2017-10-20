@@ -6,6 +6,8 @@ permalink: /kb/319/Q319941/
 
 ## Q319941: Inside Microsoft .NET IL Assembler Comments And Corrections
 
+{% raw %}
+
 	Article: Q319941
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/319/Q319941/
 	
 	=============================================================================
 	
+
+{% endraw %}

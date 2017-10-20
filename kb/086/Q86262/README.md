@@ -6,6 +6,8 @@ permalink: /kb/086/Q86262/
 
 ## Q86262: DOC: PENWIN.DLL Requires Windows 3.1
 
+{% raw %}
+
 	Article: Q86262
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/086/Q86262/
 	
 	=============================================================================
 	
+
+{% endraw %}

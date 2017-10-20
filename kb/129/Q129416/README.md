@@ -6,6 +6,8 @@ permalink: /kb/129/Q129416/
 
 ## Q129416: Loading HP ScanJet IIcx Driver Causes CD-ROM to Fail
 
+{% raw %}
+
 	Article: Q129416
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/129/Q129416/
 	
 	=============================================================================
 	
+
+{% endraw %}

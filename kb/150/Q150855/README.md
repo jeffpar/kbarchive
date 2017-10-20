@@ -6,6 +6,8 @@ permalink: /kb/150/Q150855/
 
 ## Q150855: How to Set Up Server-Based User Profiles for Windows 95 Clients
 
+{% raw %}
+
 	Article: Q150855
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150855/
 	
 	=============================================================================
 	
+
+{% endraw %}

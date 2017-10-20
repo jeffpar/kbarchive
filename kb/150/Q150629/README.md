@@ -6,6 +6,8 @@ permalink: /kb/150/Q150629/
 
 ## Q150629: Configuring and Testing a PERL Script with IIS
 
+{% raw %}
+
 	Article: Q150629
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0
@@ -97,3 +99,5 @@ permalink: /kb/150/Q150629/
 	
 	=============================================================================
 	
+
+{% endraw %}

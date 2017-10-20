@@ -6,6 +6,8 @@ permalink: /kb/164/Q164562/
 
 ## Q164562: SMS: Changing SMS Database Account Name or Password
 
+{% raw %}
+
 	Article: Q164562
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/164/Q164562/
 	
 	=============================================================================
 	
+
+{% endraw %}

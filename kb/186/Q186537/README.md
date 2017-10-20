@@ -6,6 +6,8 @@ permalink: /kb/186/Q186537/
 
 ## Q186537: Terminal Server Commands: PERUSER
 
+{% raw %}
+
 	Article: Q186537
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/186/Q186537/
 	
 	=============================================================================
 	
+
+{% endraw %}

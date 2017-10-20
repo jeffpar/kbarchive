@@ -6,6 +6,8 @@ permalink: /kb/171/Q171156/
 
 ## Q171156: Admin Wizard Creates Home Directories with Incorrect Permissions
 
+{% raw %}
+
 	Article: Q171156
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/171/Q171156/
 	
 	=============================================================================
 	
+
+{% endraw %}

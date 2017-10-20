@@ -6,6 +6,8 @@ permalink: /kb/163/Q163364/
 
 ## Q163364: FIX: Class-local typedef Causes C1001 in msc1.cpp, Line 1089
 
+{% raw %}
+
 	Article: Q163364
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -83,3 +85,5 @@ permalink: /kb/163/Q163364/
 	
 	=============================================================================
 	
+
+{% endraw %}

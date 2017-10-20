@@ -6,6 +6,8 @@ permalink: /kb/274/Q274656/
 
 ## Q274656: CFS2 Error Message: Invalid Page Fault in Module Winhlp32.exe
 
+{% raw %}
+
 	Article: Q274656
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -83,3 +85,5 @@ permalink: /kb/274/Q274656/
 	
 	=============================================================================
 	
+
+{% endraw %}

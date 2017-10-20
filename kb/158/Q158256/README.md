@@ -6,6 +6,8 @@ permalink: /kb/158/Q158256/
 
 ## Q158256: BUG: AFIELDS() Array Causes Error in CREATE...FROM ARRAY
 
+{% raw %}
+
 	Article: Q158256
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -112,3 +114,5 @@ permalink: /kb/158/Q158256/
 	
 	=============================================================================
 	
+
+{% endraw %}

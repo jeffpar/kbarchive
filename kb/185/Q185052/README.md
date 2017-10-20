@@ -6,6 +6,8 @@ permalink: /kb/185/Q185052/
 
 ## Q185052: WD97: How to Use Other Converters with the FileFormat Property
 
+{% raw %}
+
 	Article: Q185052
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -241,3 +243,5 @@ permalink: /kb/185/Q185052/
 	
 	=============================================================================
 	
+
+{% endraw %}

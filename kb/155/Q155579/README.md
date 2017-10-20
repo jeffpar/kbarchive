@@ -6,6 +6,8 @@ permalink: /kb/155/Q155579/
 
 ## Q155579: Shell Does Not Start After Logon
 
+{% raw %}
+
 	Article: Q155579
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/155/Q155579/
 	
 	=============================================================================
 	
+
+{% endraw %}

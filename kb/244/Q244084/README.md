@@ -6,6 +6,8 @@ permalink: /kb/244/Q244084/
 
 ## Q244084: &quot;Stop 0xA&quot; Error Message in Wlbs.sys or Computer Hangs
 
+{% raw %}
+
 	Article: Q244084
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -89,3 +91,5 @@ permalink: /kb/244/Q244084/
 	
 	=============================================================================
 	
+
+{% endraw %}

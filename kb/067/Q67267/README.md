@@ -6,6 +6,8 @@ permalink: /kb/067/Q67267/
 
 ## Q67267: WIN.INI Run= Command Problem with Windowed MS-DOS Apps
 
+{% raw %}
+
 	Article: Q67267
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/067/Q67267/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249142/
 
 ## Q249142: Gtwy: AT&amp;T Gateway to MS Mail (PC) Version 5.0 Supported by AT&amp;T
 
+{% raw %}
+
 	Article: Q249142
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.x
@@ -159,3 +161,5 @@ permalink: /kb/249/Q249142/
 	
 	=============================================================================
 	
+
+{% endraw %}

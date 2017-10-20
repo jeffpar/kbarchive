@@ -6,6 +6,8 @@ permalink: /kb/195/Q195104/
 
 ## Q195104: XADM: Configuring an LDAP Referral Server in 5.5
 
+{% raw %}
+
 	Article: Q195104
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -129,3 +131,5 @@ permalink: /kb/195/Q195104/
 	
 	=============================================================================
 	
+
+{% endraw %}

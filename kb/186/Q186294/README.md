@@ -6,6 +6,8 @@ permalink: /kb/186/Q186294/
 
 ## Q186294: Schedule+ Week Numbering Incorrect in Monthly View
 
+{% raw %}
+
 	Article: Q186294
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5
@@ -86,3 +88,5 @@ permalink: /kb/186/Q186294/
 	
 	=============================================================================
 	
+
+{% endraw %}

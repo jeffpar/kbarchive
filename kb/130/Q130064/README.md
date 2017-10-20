@@ -6,6 +6,8 @@ permalink: /kb/130/Q130064/
 
 ## Q130064: PC DirSync: Err Msg: &#91;XX&#93; Error Obtaining Message #: YY
 
+{% raw %}
+
 	Article: Q130064
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130064/
 	
 	=============================================================================
 	
+
+{% endraw %}

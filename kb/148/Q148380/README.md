@@ -6,6 +6,8 @@ permalink: /kb/148/Q148380/
 
 ## Q148380: XADM: Exchange Server Setup Directory
 
+{% raw %}
+
 	Article: Q148380
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/148/Q148380/
 	
 	=============================================================================
 	
+
+{% endraw %}

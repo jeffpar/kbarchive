@@ -6,6 +6,8 @@ permalink: /kb/136/Q136792/
 
 ## Q136792: Cancelling RECEIVE_AND_WAIT Using DEALLOCATE(ABEND) Hangs
 
+{% raw %}
+
 	Article: Q136792
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP1
@@ -70,3 +72,5 @@ permalink: /kb/136/Q136792/
 	
 	=============================================================================
 	
+
+{% endraw %}

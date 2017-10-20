@@ -6,6 +6,8 @@ permalink: /kb/129/Q129395/
 
 ## Q129395: Troubleshooting FTP Error 425
 
+{% raw %}
+
 	Article: Q129395
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -91,3 +93,5 @@ permalink: /kb/129/Q129395/
 	
 	=============================================================================
 	
+
+{% endraw %}

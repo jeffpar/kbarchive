@@ -6,6 +6,8 @@ permalink: /kb/040/Q40589/
 
 ## Q40589: The Definition of Reentrancy
 
+{% raw %}
+
 	Article: Q40589
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -27,3 +29,5 @@ permalink: /kb/040/Q40589/
 	reentrant.
 	
 	Note: Most library routines are not reentrant, nor is DOS or BIOS.
+
+{% endraw %}

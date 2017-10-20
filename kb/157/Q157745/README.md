@@ -6,6 +6,8 @@ permalink: /kb/157/Q157745/
 
 ## Q157745: Command Extensions Cause Access Violation in Cmd.exe
 
+{% raw %}
+
 	Article: Q157745
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/157/Q157745/
 	
 	=============================================================================
 	
+
+{% endraw %}

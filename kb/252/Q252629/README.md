@@ -6,6 +6,8 @@ permalink: /kb/252/Q252629/
 
 ## Q252629: Allegiance: Unable to Hear the Turrets Firing
 
+{% raw %}
+
 	Article: Q252629
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/252/Q252629/
 	
 	=============================================================================
 	
+
+{% endraw %}

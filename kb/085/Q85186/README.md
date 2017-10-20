@@ -6,6 +6,8 @@ permalink: /kb/085/Q85186/
 
 ## Q85186: Incorrect Icon Used for Minimized MS-DOS Application
 
+{% raw %}
+
 	Article: Q85186
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/085/Q85186/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135184/
 
 ## Q135184: ARCsolo Network Drive Listing Is Different in Windows 95
 
+{% raw %}
+
 	Article: Q135184
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135184/
 	
 	=============================================================================
 	
+
+{% endraw %}

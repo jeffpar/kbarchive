@@ -6,6 +6,8 @@ permalink: /kb/083/Q83089/
 
 ## Q83089: FIX: Tracing into MOVE Startup May Cause R6915 Error
 
+{% raw %}
+
 	Article: Q83089
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/083/Q83089/
 	
 	=============================================================================
 	
+
+{% endraw %}

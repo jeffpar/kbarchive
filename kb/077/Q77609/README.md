@@ -6,6 +6,8 @@ permalink: /kb/077/Q77609/
 
 ## Q77609: Flight Simulator: Using the Keyboard and Joystick in Slew Mode
 
+{% raw %}
+
 	Article: Q77609
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/077/Q77609/
 	
 	=============================================================================
 	
+
+{% endraw %}

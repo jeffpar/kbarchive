@@ -6,6 +6,8 @@ permalink: /kb/159/Q159285/
 
 ## Q159285: XFOR: Japanese Text in NDR from MS-Mail Is Replaced with &quot;?&quot;
 
+{% raw %}
+
 	Article: Q159285
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/159/Q159285/
 	
 	=============================================================================
 	
+
+{% endraw %}

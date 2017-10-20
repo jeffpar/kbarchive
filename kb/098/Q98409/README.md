@@ -6,6 +6,8 @@ permalink: /kb/098/Q98409/
 
 ## Q98409: INFO: Using a Structure with an Empty Array Member
 
+{% raw %}
+
 	Article: Q98409
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,5.0,6.0
@@ -161,3 +163,5 @@ permalink: /kb/098/Q98409/
 	
 	=============================================================================
 	
+
+{% endraw %}

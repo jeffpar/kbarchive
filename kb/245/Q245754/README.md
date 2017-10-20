@@ -6,6 +6,8 @@ permalink: /kb/245/Q245754/
 
 ## Q245754: BUG: Windows 2000 RichEdit Control Generates WM_CONTEXTMENU Mess
 
+{% raw %}
+
 	Article: Q245754
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/245/Q245754/
 	
 	=============================================================================
 	
+
+{% endraw %}

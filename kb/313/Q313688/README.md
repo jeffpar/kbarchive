@@ -6,6 +6,8 @@ permalink: /kb/313/Q313688/
 
 ## Q313688: SNA Server Access Violation in Function S1PWHSES()
 
+{% raw %}
+
 	Article: Q313688
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -179,3 +181,5 @@ permalink: /kb/313/Q313688/
 	
 	=============================================================================
 	
+
+{% endraw %}

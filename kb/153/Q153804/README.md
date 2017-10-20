@@ -6,6 +6,8 @@ permalink: /kb/153/Q153804/
 
 ## Q153804: Encarta 97 World Atlas: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q153804
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153804/
 	
 	=============================================================================
 	
+
+{% endraw %}

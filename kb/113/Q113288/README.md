@@ -6,6 +6,8 @@ permalink: /kb/113/Q113288/
 
 ## Q113288: Envelope Address Prints Too High on BJ300 and BJ330
 
+{% raw %}
+
 	Article: Q113288
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.1,3.11,6.0,6.0a
@@ -156,3 +158,5 @@ permalink: /kb/113/Q113288/
 	
 	=============================================================================
 	
+
+{% endraw %}

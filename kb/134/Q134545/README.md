@@ -6,6 +6,8 @@ permalink: /kb/134/Q134545/
 
 ## Q134545: Restart Problems When Running Ssmode.exe
 
+{% raw %}
+
 	Article: Q134545
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/134/Q134545/
 	
 	=============================================================================
 	
+
+{% endraw %}

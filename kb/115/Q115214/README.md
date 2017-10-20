@@ -6,6 +6,8 @@ permalink: /kb/115/Q115214/
 
 ## Q115214: PRB: Project Editor Gives &quot;Invalid File Format&quot; at Startup
 
+{% raw %}
+
 	Article: Q115214
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -53,3 +55,5 @@ permalink: /kb/115/Q115214/
 	
 	=============================================================================
 	
+
+{% endraw %}

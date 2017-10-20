@@ -6,6 +6,8 @@ permalink: /kb/269/Q269782/
 
 ## Q269782: XADM: Err 3355443765 Starting Information Store After Restore
 
+{% raw %}
+
 	Article: Q269782
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/269/Q269782/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174264/
 
 ## Q174264: WinNT ERR: INVALID LINE...IN INF FILE during Windows NT Setup
 
+{% raw %}
+
 	Article: Q174264
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/174/Q174264/
 	
 	=============================================================================
 	
+
+{% endraw %}

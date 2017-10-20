@@ -6,6 +6,8 @@ permalink: /kb/158/Q158735/
 
 ## Q158735: SMS: Remote Control Display Problems with Trident Video Card
 
+{% raw %}
+
 	Article: Q158735
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/158/Q158735/
 	
 	=============================================================================
 	
+
+{% endraw %}

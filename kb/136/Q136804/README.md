@@ -6,6 +6,8 @@ permalink: /kb/136/Q136804/
 
 ## Q136804: XCLN: Loading/Disabling MS Mail 3.x Win Client Extensions
 
+{% raw %}
+
 	Article: Q136804
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -93,3 +95,5 @@ permalink: /kb/136/Q136804/
 	
 	=============================================================================
 	
+
+{% endraw %}

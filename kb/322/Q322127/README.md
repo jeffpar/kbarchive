@@ -6,6 +6,8 @@ permalink: /kb/322/Q322127/
 
 ## Q322127: Empty Base Class/Structure Assignment Operator May Corrupt Data
 
+{% raw %}
+
 	Article: Q322127
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -134,3 +136,5 @@ permalink: /kb/322/Q322127/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/286/Q286816/
 
 ## Q286816: CFS2: Toggle Padlock Mode Action Switches Gunsight Mode
 
+{% raw %}
+
 	Article: Q286816
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/286/Q286816/
 	
 	=============================================================================
 	
+
+{% endraw %}

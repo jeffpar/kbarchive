@@ -6,6 +6,8 @@ permalink: /kb/066/Q66351/
 
 ## Q66351: Description of Pegged in Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66351
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/066/Q66351/
 	
 	=============================================================================
 	
+
+{% endraw %}

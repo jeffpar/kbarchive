@@ -6,6 +6,8 @@ permalink: /kb/087/Q87214/
 
 ## Q87214: PROFS: Why Is the Gateway Program Called HostDisp?
 
+{% raw %}
+
 	Article: Q87214
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -40,3 +42,5 @@ permalink: /kb/087/Q87214/
 	
 	=============================================================================
 	
+
+{% endraw %}

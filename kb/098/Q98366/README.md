@@ -6,6 +6,8 @@ permalink: /kb/098/Q98366/
 
 ## Q98366: Using Print Commands in FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q98366
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -128,3 +130,5 @@ permalink: /kb/098/Q98366/
 	
 	=============================================================================
 	
+
+{% endraw %}

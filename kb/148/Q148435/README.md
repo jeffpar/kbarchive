@@ -6,6 +6,8 @@ permalink: /kb/148/Q148435/
 
 ## Q148435: CMD.EXE Help Refers To Non-Existing Registry Key
 
+{% raw %}
+
 	Article: Q148435
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -115,3 +117,5 @@ permalink: /kb/148/Q148435/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/297/Q297126/
 
 ## Q297126: Runtime Error When Using Spelling Checker With MSN 6.1 (MSN Expl
 
+{% raw %}
+
 	Article: Q297126
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -70,3 +72,5 @@ permalink: /kb/297/Q297126/
 	
 	=============================================================================
 	
+
+{% endraw %}

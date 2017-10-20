@@ -6,6 +6,8 @@ permalink: /kb/217/Q217140/
 
 ## Q217140: Computer Does Not Boot When Tracking Memory Usage with Pool Tags
 
+{% raw %}
+
 	Article: Q217140
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -72,3 +74,5 @@ permalink: /kb/217/Q217140/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168356/
 
 ## Q168356: XFOR: Cannot Reply to SMTP Mail Coming from the ccMail Connector
 
+{% raw %}
+
 	Article: Q168356
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -55,3 +57,5 @@ permalink: /kb/168/Q168356/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30859/
 
 ## Q30859: &quot;Internal Error&quot; Using FUNCTION as Argument in POKE Statement
 
+{% raw %}
+
 	Article: Q30859
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -57,3 +59,5 @@ permalink: /kb/030/Q30859/
 	  SA = ScreenAttrib(F, B)
 	  POKE LOCA+1, SA
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186896/
 
 ## Q186896: HOWTO: Use the ImageCombo Control with Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q186896
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -149,3 +151,5 @@ permalink: /kb/186/Q186896/
 	
 	=============================================================================
 	
+
+{% endraw %}

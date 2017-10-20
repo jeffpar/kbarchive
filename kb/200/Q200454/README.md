@@ -6,6 +6,8 @@ permalink: /kb/200/Q200454/
 
 ## Q200454: BUG: Visual Basic Does Not Receive Some OSP Notifications
 
+{% raw %}
+
 	Article: Q200454
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -56,3 +58,5 @@ permalink: /kb/200/Q200454/
 	
 	=============================================================================
 	
+
+{% endraw %}

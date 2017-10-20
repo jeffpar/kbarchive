@@ -6,6 +6,8 @@ permalink: /kb/241/Q241126/
 
 ## Q241126: INFO:Dynamically Add UserControls That Require Run-Time Licenses
 
+{% raw %}
+
 	Article: Q241126
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -71,3 +73,5 @@ permalink: /kb/241/Q241126/
 	
 	=============================================================================
 	
+
+{% endraw %}

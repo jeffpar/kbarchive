@@ -6,6 +6,8 @@ permalink: /kb/191/Q191306/
 
 ## Q191306: SMS: Unattended Installation of SMS 1.2 Service Pack 4
 
+{% raw %}
+
 	Article: Q191306
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -73,3 +75,5 @@ permalink: /kb/191/Q191306/
 	
 	=============================================================================
 	
+
+{% endraw %}

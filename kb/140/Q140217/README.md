@@ -6,6 +6,8 @@ permalink: /kb/140/Q140217/
 
 ## Q140217: Oceans Error Message: Not Enough Memory To Print
 
+{% raw %}
+
 	Article: Q140217
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/140/Q140217/
 	
 	=============================================================================
 	
+
+{% endraw %}

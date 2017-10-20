@@ -6,6 +6,8 @@ permalink: /kb/032/Q32000/
 
 ## Q32000: Incremental Linking
 
+{% raw %}
+
 	Article: Q32000
 	Product(s): See article
 	Version(s): 3.x 5.01.20 5.01.21
@@ -22,3 +24,5 @@ permalink: /kb/032/Q32000/
 	with the new .OBJ file. This patching is called incremental linking.
 	   Incremental linking only is supported for OS/2 and Windows
 	programs.
+
+{% endraw %}

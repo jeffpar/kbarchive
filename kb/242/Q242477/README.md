@@ -6,6 +6,8 @@ permalink: /kb/242/Q242477/
 
 ## Q242477: SMS: Login Script Support Files Not Copied After Applying SP1
 
+{% raw %}
+
 	Article: Q242477
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -93,3 +95,5 @@ permalink: /kb/242/Q242477/
 	
 	=============================================================================
 	
+
+{% endraw %}

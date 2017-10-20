@@ -6,6 +6,8 @@ permalink: /kb/265/Q265796/
 
 ## Q265796: HOWTO: Run ADOCE on the Pocket PC Platform
 
+{% raw %}
+
 	Article: Q265796
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -177,3 +179,5 @@ permalink: /kb/265/Q265796/
 	
 	=============================================================================
 	
+
+{% endraw %}

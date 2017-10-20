@@ -6,6 +6,8 @@ permalink: /kb/244/Q244704/
 
 ## Q244704: INFO: Dragging EXE File Doesn't Default to &quot;Create Shortcut&quot;
 
+{% raw %}
+
 	Article: Q244704
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -48,3 +50,5 @@ permalink: /kb/244/Q244704/
 	
 	=============================================================================
 	
+
+{% endraw %}

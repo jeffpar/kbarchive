@@ -6,6 +6,8 @@ permalink: /kb/155/Q155362/
 
 ## Q155362: Problems Viewing Driver Information in OSR2 Device Manager
 
+{% raw %}
+
 	Article: Q155362
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -56,3 +58,5 @@ permalink: /kb/155/Q155362/
 	
 	=============================================================================
 	
+
+{% endraw %}

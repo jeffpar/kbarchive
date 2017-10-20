@@ -6,6 +6,8 @@ permalink: /kb/247/Q247351/
 
 ## Q247351: User Variables Not Passed to Out-of-Process COM Objects
 
+{% raw %}
+
 	Article: Q247351
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -57,3 +59,5 @@ permalink: /kb/247/Q247351/
 	
 	=============================================================================
 	
+
+{% endraw %}

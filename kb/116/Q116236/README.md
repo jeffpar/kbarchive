@@ -6,6 +6,8 @@ permalink: /kb/116/Q116236/
 
 ## Q116236: Baseball: Custom Modem Setting Disappears When Not Selected
 
+{% raw %}
+
 	Article: Q116236
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -66,3 +68,5 @@ permalink: /kb/116/Q116236/
 	
 	=============================================================================
 	
+
+{% endraw %}

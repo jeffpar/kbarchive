@@ -6,6 +6,8 @@ permalink: /kb/073/Q73427/
 
 ## Q73427: HP DeskJet 500 Scalable Font Initialization Error
 
+{% raw %}
+
 	Article: Q73427
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/073/Q73427/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/021/Q21795/
 
 ## Q21795: &quot;/&quot; Switches on the Wang PC
 
+{% raw %}
+
 	Article: Q21795
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 3.00 4.00 4.00b 4.50
@@ -22,3 +24,5 @@ permalink: /kb/021/Q21795/
 	
 	On some Wang PC models, you must use "-" instead of "/" for the
 	QuickBASIC Version 1.x compiler switches.
+
+{% endraw %}

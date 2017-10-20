@@ -6,6 +6,8 @@ permalink: /kb/123/Q123032/
 
 ## Q123032: BUG: SKIP Produces Unexpected Results
 
+{% raw %}
+
 	Article: Q123032
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.60
@@ -79,3 +81,5 @@ permalink: /kb/123/Q123032/
 	
 	=============================================================================
 	
+
+{% endraw %}

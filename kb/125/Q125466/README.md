@@ -6,6 +6,8 @@ permalink: /kb/125/Q125466/
 
 ## Q125466: Strauss: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q125466
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -247,3 +249,5 @@ permalink: /kb/125/Q125466/
 	
 	=============================================================================
 	
+
+{% endraw %}

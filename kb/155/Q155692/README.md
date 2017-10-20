@@ -6,6 +6,8 @@ permalink: /kb/155/Q155692/
 
 ## Q155692: HOWTO: Calculate Payments in FoxPro
 
+{% raw %}
+
 	Article: Q155692
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155692/
 	
 	=============================================================================
 	
+
+{% endraw %}

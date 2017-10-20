@@ -6,6 +6,8 @@ permalink: /kb/135/Q135645/
 
 ## Q135645: Setacl Doesn't Run When Converting to NTFS After Setup
 
+{% raw %}
+
 	Article: Q135645
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/135/Q135645/
 	
 	=============================================================================
 	
+
+{% endraw %}

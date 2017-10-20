@@ -6,6 +6,8 @@ permalink: /kb/178/Q178622/
 
 ## Q178622: PRB: Thai resource problem on VC++
 
+{% raw %}
+
 	Article: Q178622
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/178/Q178622/
 	
 	=============================================================================
 	
+
+{% endraw %}

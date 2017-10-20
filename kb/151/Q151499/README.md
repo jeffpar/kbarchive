@@ -6,6 +6,8 @@ permalink: /kb/151/Q151499/
 
 ## Q151499: FIX: Compiler Performs Illegal Sign Conversion Optimization
 
+{% raw %}
+
 	Article: Q151499
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -71,3 +73,5 @@ permalink: /kb/151/Q151499/
 	
 	=============================================================================
 	
+
+{% endraw %}

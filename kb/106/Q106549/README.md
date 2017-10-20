@@ -6,6 +6,8 @@ permalink: /kb/106/Q106549/
 
 ## Q106549: Compressed Audio Doesn't Play on Sound Blaster Card
 
+{% raw %}
+
 	Article: Q106549
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1993 edition,1994 edition,1995 edition,2.0
@@ -259,3 +261,5 @@ permalink: /kb/106/Q106549/
 	
 	=============================================================================
 	
+
+{% endraw %}

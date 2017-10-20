@@ -6,6 +6,8 @@ permalink: /kb/155/Q155053/
 
 ## Q155053: Black Screen on Boot
 
+{% raw %}
+
 	Article: Q155053
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/155/Q155053/
 	
 	=============================================================================
 	
+
+{% endraw %}

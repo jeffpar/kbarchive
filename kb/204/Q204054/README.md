@@ -6,6 +6,8 @@ permalink: /kb/204/Q204054/
 
 ## Q204054: PRB: ErrMsg 35603 &quot;Invalid Key&quot; w/TreeView or ListView Control
 
+{% raw %}
+
 	Article: Q204054
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -116,3 +118,5 @@ permalink: /kb/204/Q204054/
 	
 	=============================================================================
 	
+
+{% endraw %}

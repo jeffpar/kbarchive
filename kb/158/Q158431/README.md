@@ -6,6 +6,8 @@ permalink: /kb/158/Q158431/
 
 ## Q158431: HOWTO: Deploy a Project Adds Two .GIF Files
 
+{% raw %}
+
 	Article: Q158431
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/158/Q158431/
 	
 	=============================================================================
 	
+
+{% endraw %}

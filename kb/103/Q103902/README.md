@@ -6,6 +6,8 @@ permalink: /kb/103/Q103902/
 
 ## Q103902: PC WRmt: Baud Rate Displayed Not Always Accurate
 
+{% raw %}
+
 	Article: Q103902
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -47,3 +49,5 @@ permalink: /kb/103/Q103902/
 	
 	=============================================================================
 	
+
+{% endraw %}

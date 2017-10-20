@@ -6,6 +6,8 @@ permalink: /kb/127/Q127925/
 
 ## Q127925: Remote Control Works Only Once with Micromatic VTD/8 Gateway
 
+{% raw %}
+
 	Article: Q127925
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -52,3 +54,5 @@ permalink: /kb/127/Q127925/
 	
 	=============================================================================
 	
+
+{% endraw %}

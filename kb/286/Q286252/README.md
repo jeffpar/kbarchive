@@ -6,6 +6,8 @@ permalink: /kb/286/Q286252/
 
 ## Q286252: CFS2: How to Import Combat Flight Simulator Aircraft
 
+{% raw %}
+
 	Article: Q286252
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -109,3 +111,5 @@ permalink: /kb/286/Q286252/
 	
 	=============================================================================
 	
+
+{% endraw %}

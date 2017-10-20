@@ -6,6 +6,8 @@ permalink: /kb/142/Q142622/
 
 ## Q142622: Repeated Automatic Logons in Windows NT May Fail
 
+{% raw %}
+
 	Article: Q142622
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -71,3 +73,5 @@ permalink: /kb/142/Q142622/
 	
 	=============================================================================
 	
+
+{% endraw %}

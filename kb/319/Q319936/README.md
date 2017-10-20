@@ -6,6 +6,8 @@ permalink: /kb/319/Q319936/
 
 ## Q319936: XCON: The MTA Generates an Event ID 4283 Message
 
+{% raw %}
+
 	Article: Q319936
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -128,3 +130,5 @@ permalink: /kb/319/Q319936/
 	
 	=============================================================================
 	
+
+{% endraw %}

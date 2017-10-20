@@ -6,6 +6,8 @@ permalink: /kb/151/Q151742/
 
 ## Q151742: BUG: Mastering Exchange: Setup Dialog Box Appears Too Short
 
+{% raw %}
+
 	Article: Q151742
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/151/Q151742/
 	
 	=============================================================================
 	
+
+{% endraw %}

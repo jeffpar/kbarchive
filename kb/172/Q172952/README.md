@@ -6,6 +6,8 @@ permalink: /kb/172/Q172952/
 
 ## Q172952: How to Rebuild Corrupted or Missing SYSTEM Partition
 
+{% raw %}
+
 	Article: Q172952
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -261,3 +263,5 @@ permalink: /kb/172/Q172952/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149800/
 
 ## Q149800: 3D Movie Maker: Disabling Resolution Switching in Windows 95
 
+{% raw %}
+
 	Article: Q149800
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -58,3 +60,5 @@ permalink: /kb/149/Q149800/
 	
 	=============================================================================
 	
+
+{% endraw %}

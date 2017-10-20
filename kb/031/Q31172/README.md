@@ -6,6 +6,8 @@ permalink: /kb/031/Q31172/
 
 ## Q31172: Use ERASE to Reinitialize Array of User-Defined TYPE Records
 
+{% raw %}
+
 	Article: Q31172
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/031/Q31172/
 	Note that adding the OPTION BASE 1 statement to the above program
 	makes the arrays start at element 1 instead of element 0. This will
 	save memory if you do not intend to use element 0 of the array.
+
+{% endraw %}

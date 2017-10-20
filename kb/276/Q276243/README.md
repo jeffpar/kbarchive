@@ -6,6 +6,8 @@ permalink: /kb/276/Q276243/
 
 ## Q276243: Microsoft Classic Board Games: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q276243
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/276/Q276243/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138238/
 
 ## Q138238: IPConfig Shows Default Subnet Mask and Gateway for RAS Client
 
+{% raw %}
+
 	Article: Q138238
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -70,3 +72,5 @@ permalink: /kb/138/Q138238/
 	
 	=============================================================================
 	
+
+{% endraw %}

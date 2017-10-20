@@ -6,6 +6,8 @@ permalink: /kb/185/Q185519/
 
 ## Q185519: FILE: Vbinet.exe WinInet API Declarations for Visual Basic
 
+{% raw %}
+
 	Article: Q185519
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -72,3 +74,5 @@ permalink: /kb/185/Q185519/
 	
 	=============================================================================
 	
+
+{% endraw %}

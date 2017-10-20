@@ -6,6 +6,8 @@ permalink: /kb/152/Q152262/
 
 ## Q152262: Mismatched IPX/SPX Frame Types Prevent Connectivity
 
+{% raw %}
+
 	Article: Q152262
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/152/Q152262/
 	
 	=============================================================================
 	
+
+{% endraw %}

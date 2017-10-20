@@ -6,6 +6,8 @@ permalink: /kb/238/Q238982/
 
 ## Q238982: XWEB: Prompt for Security Credentials Before Logon.asp Loads
 
+{% raw %}
+
 	Article: Q238982
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -56,3 +58,5 @@ permalink: /kb/238/Q238982/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148894/
 
 ## Q148894: How to Enforce Uniqueness in Visual FoxPro Memo Fields
 
+{% raw %}
+
 	Article: Q148894
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -87,3 +89,5 @@ permalink: /kb/148/Q148894/
 	
 	=============================================================================
 	
+
+{% endraw %}

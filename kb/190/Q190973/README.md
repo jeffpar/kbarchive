@@ -6,6 +6,8 @@ permalink: /kb/190/Q190973/
 
 ## Q190973: PRB: IntelliSense Does Not Display Enumerated Elements
 
+{% raw %}
+
 	Article: Q190973
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/190/Q190973/
 	
 	=============================================================================
 	
+
+{% endraw %}

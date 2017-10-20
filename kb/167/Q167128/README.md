@@ -6,6 +6,8 @@ permalink: /kb/167/Q167128/
 
 ## Q167128: SMS: Network Ports Used by Remote Helpdesk Functions
 
+{% raw %}
+
 	Article: Q167128
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0
@@ -60,3 +62,5 @@ permalink: /kb/167/Q167128/
 	
 	=============================================================================
 	
+
+{% endraw %}

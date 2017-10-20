@@ -6,6 +6,8 @@ permalink: /kb/185/Q185109/
 
 ## Q185109: XFOR: LinkAge Queue Viewer Is Not FIFO
 
+{% raw %}
+
 	Article: Q185109
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -125,3 +127,5 @@ permalink: /kb/185/Q185109/
 	
 	=============================================================================
 	
+
+{% endraw %}

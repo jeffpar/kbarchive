@@ -6,6 +6,8 @@ permalink: /kb/190/Q190267/
 
 ## Q190267: PRB: Negative Numbers Do Not Display in a Combo Box
 
+{% raw %}
+
 	Article: Q190267
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -77,3 +79,5 @@ permalink: /kb/190/Q190267/
 	
 	=============================================================================
 	
+
+{% endraw %}

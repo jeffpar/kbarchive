@@ -6,6 +6,8 @@ permalink: /kb/177/Q177696/
 
 ## Q177696: HOWTO: Use Named Pipes in a Visual Basic 32-bit Program
 
+{% raw %}
+
 	Article: Q177696
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,3.5,3.51,4.0,5.0,6.0
@@ -319,3 +321,5 @@ permalink: /kb/177/Q177696/
 	
 	=============================================================================
 	
+
+{% endraw %}

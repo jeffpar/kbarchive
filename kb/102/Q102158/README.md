@@ -6,6 +6,8 @@ permalink: /kb/102/Q102158/
 
 ## Q102158: FIX: ifstream Object Loses Character in Text Mode
 
+{% raw %}
+
 	Article: Q102158
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,4.2
@@ -96,3 +98,5 @@ permalink: /kb/102/Q102158/
 	
 	=============================================================================
 	
+
+{% endraw %}

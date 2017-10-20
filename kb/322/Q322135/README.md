@@ -6,6 +6,8 @@ permalink: /kb/322/Q322135/
 
 ## Q322135: Pocket Streets 2002: Err Msg: Error Extracting Support Files
 
+{% raw %}
+
 	Article: Q322135
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -99,3 +101,5 @@ permalink: /kb/322/Q322135/
 	
 	=============================================================================
 	
+
+{% endraw %}

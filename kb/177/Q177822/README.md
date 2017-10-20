@@ -6,6 +6,8 @@ permalink: /kb/177/Q177822/
 
 ## Q177822: XCLN: Err Msg: General Protection Fault Running Forms Designer
 
+{% raw %}
+
 	Article: Q177822
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/177/Q177822/
 	
 	=============================================================================
 	
+
+{% endraw %}

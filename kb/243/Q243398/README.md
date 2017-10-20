@@ -6,6 +6,8 @@ permalink: /kb/243/Q243398/
 
 ## Q243398: XADM: Two Sites With the Same Org and Site Name May Join
 
+{% raw %}
+
 	Article: Q243398
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/243/Q243398/
 	
 	=============================================================================
 	
+
+{% endraw %}

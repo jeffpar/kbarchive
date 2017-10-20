@@ -6,6 +6,8 @@ permalink: /kb/163/Q163031/
 
 ## Q163031: PRB: Help of VFP ODBC Driver Unclear on INDEX ON Command
 
+{% raw %}
+
 	Article: Q163031
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/163/Q163031/
 	
 	=============================================================================
 	
+
+{% endraw %}

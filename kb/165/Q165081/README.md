@@ -6,6 +6,8 @@ permalink: /kb/165/Q165081/
 
 ## Q165081: WINSCL Cannot Delete NetBIOS Registration That Contains Spaces
 
+{% raw %}
+
 	Article: Q165081
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -49,3 +51,5 @@ permalink: /kb/165/Q165081/
 	
 	=============================================================================
 	
+
+{% endraw %}

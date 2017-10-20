@@ -6,6 +6,8 @@ permalink: /kb/237/Q237523/
 
 ## Q237523: Bookshelf 99 Removed When Removing Encarta Reference Suite 2000
 
+{% raw %}
+
 	Article: Q237523
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/237/Q237523/
 	
 	=============================================================================
 	
+
+{% endraw %}

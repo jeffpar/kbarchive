@@ -6,6 +6,8 @@ permalink: /kb/265/Q265152/
 
 ## Q265152: BUG: RasDial() Function Gets Slower with Large Number of Redials
 
+{% raw %}
+
 	Article: Q265152
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,4.0
@@ -93,3 +95,5 @@ permalink: /kb/265/Q265152/
 	
 	=============================================================================
 	
+
+{% endraw %}

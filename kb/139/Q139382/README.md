@@ -6,6 +6,8 @@ permalink: /kb/139/Q139382/
 
 ## Q139382: Cannot Install CorelDraw 3.0 Revision B with DriveSpace 3
 
+{% raw %}
+
 	Article: Q139382
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139382/
 	
 	=============================================================================
 	
+
+{% endraw %}

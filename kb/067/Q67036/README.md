@@ -6,6 +6,8 @@ permalink: /kb/067/Q67036/
 
 ## Q67036: ANSI Spec Says Taking Address of register Array is Not Allowed
 
+{% raw %}
+
 	Article: Q67036
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -53,3 +55,5 @@ permalink: /kb/067/Q67036/
 	    array name to a pointer). Thus the only operator that can be
 	    applied to an array with storage-class specifier register is
 	    sizeof.
+
+{% endraw %}

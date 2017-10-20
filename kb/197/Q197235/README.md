@@ -6,6 +6,8 @@ permalink: /kb/197/Q197235/
 
 ## Q197235: XFOR: Notes Connector Creates a CT Table on First Startup
 
+{% raw %}
+
 	Article: Q197235
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/197/Q197235/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137924/
 
 ## Q137924: Custom Forms Do Not Function Correctly with Quickbooks 3
 
+{% raw %}
+
 	Article: Q137924
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -52,3 +54,5 @@ permalink: /kb/137/Q137924/
 	
 	=============================================================================
 	
+
+{% endraw %}

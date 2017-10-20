@@ -6,6 +6,8 @@ permalink: /kb/155/Q155025/
 
 ## Q155025: DBWEB: Control Panel Hangs when dbWeb Service is Running
 
+{% raw %}
+
 	Article: Q155025
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.0,1.1
@@ -91,3 +93,5 @@ permalink: /kb/155/Q155025/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141119/
 
 ## Q141119: PRB: SMC8432BT-E Fails GetBackUpList Request
 
+{% raw %}
+
 	Article: Q141119
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -53,3 +55,5 @@ permalink: /kb/141/Q141119/
 	
 	=============================================================================
 	
+
+{% endraw %}

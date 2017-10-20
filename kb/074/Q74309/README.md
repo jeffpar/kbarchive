@@ -6,6 +6,8 @@ permalink: /kb/074/Q74309/
 
 ## Q74309: View File Contents Option Under MS-DOS Shell
 
+{% raw %}
+
 	Article: Q74309
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -53,3 +55,5 @@ permalink: /kb/074/Q74309/
 	
 	=============================================================================
 	
+
+{% endraw %}

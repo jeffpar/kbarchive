@@ -6,6 +6,8 @@ permalink: /kb/258/Q258629/
 
 ## Q258629: Error 997 Attempting to Delete Online Cluster Server Resource
 
+{% raw %}
+
 	Article: Q258629
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0; winnt:
@@ -57,3 +59,5 @@ permalink: /kb/258/Q258629/
 	
 	=============================================================================
 	
+
+{% endraw %}

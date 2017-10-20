@@ -6,6 +6,8 @@ permalink: /kb/246/Q246145/
 
 ## Q246145: Changes to the W32Time and TimeServ Utilities
 
+{% raw %}
+
 	Article: Q246145
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -184,3 +186,5 @@ permalink: /kb/246/Q246145/
 	
 	=============================================================================
 	
+
+{% endraw %}

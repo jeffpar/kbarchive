@@ -6,6 +6,8 @@ permalink: /kb/120/Q120202/
 
 ## Q120202: MindMaze Err Msg: Cannot Access This File
 
+{% raw %}
+
 	Article: Q120202
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition
@@ -109,3 +111,5 @@ permalink: /kb/120/Q120202/
 	
 	=============================================================================
 	
+
+{% endraw %}

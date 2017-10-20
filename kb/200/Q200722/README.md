@@ -6,6 +6,8 @@ permalink: /kb/200/Q200722/
 
 ## Q200722: FP: Unable to Create CGI-BIN Folder When Publishing Web
 
+{% raw %}
+
 	Article: Q200722
 	Product(s): Word Front Page
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/200/Q200722/
 	
 	=============================================================================
 	
+
+{% endraw %}

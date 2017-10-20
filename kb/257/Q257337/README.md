@@ -6,6 +6,8 @@ permalink: /kb/257/Q257337/
 
 ## Q257337: Supported Transfer Mode in IIS
 
+{% raw %}
+
 	Article: Q257337
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0,5.0
@@ -50,3 +52,5 @@ permalink: /kb/257/Q257337/
 	
 	=============================================================================
 	
+
+{% endraw %}

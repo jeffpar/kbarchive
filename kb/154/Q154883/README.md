@@ -6,6 +6,8 @@ permalink: /kb/154/Q154883/
 
 ## Q154883: Home Products Containing Multimedia Version of Msinfo32.exe
 
+{% raw %}
+
 	Article: Q154883
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,2.0,5.0,97; :1996 edition,1997 edition
@@ -173,3 +175,5 @@ permalink: /kb/154/Q154883/
 	
 	=============================================================================
 	
+
+{% endraw %}

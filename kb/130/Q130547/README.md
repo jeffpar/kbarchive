@@ -6,6 +6,8 @@ permalink: /kb/130/Q130547/
 
 ## Q130547: FIX: C2300 on Explicit Destructor Call in Class Template
 
+{% raw %}
+
 	Article: Q130547
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -94,3 +96,5 @@ permalink: /kb/130/Q130547/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274788/
 
 ## Q274788: Encarta 2001: Find Box Is Not Displayed on Home Screen
 
+{% raw %}
+
 	Article: Q274788
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/274/Q274788/
 	
 	=============================================================================
 	
+
+{% endraw %}

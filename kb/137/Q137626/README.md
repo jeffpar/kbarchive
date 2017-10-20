@@ -6,6 +6,8 @@ permalink: /kb/137/Q137626/
 
 ## Q137626: How to Use DBC Field Captions on Visual FoxPro Forms &amp; Reports
 
+{% raw %}
+
 	Article: Q137626
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -124,3 +126,5 @@ permalink: /kb/137/Q137626/
 	
 	=============================================================================
 	
+
+{% endraw %}

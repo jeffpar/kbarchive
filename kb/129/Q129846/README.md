@@ -6,6 +6,8 @@ permalink: /kb/129/Q129846/
 
 ## Q129846: How to Use the Professional Edition's Documenting Wizard
 
+{% raw %}
+
 	Article: Q129846
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -307,3 +309,5 @@ permalink: /kb/129/Q129846/
 	
 	=============================================================================
 	
+
+{% endraw %}

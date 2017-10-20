@@ -6,6 +6,8 @@ permalink: /kb/136/Q136111/
 
 ## Q136111: Windows 95 Customer Advisory for Virus on Disk 2 Problems
 
+{% raw %}
+
 	Article: Q136111
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/136/Q136111/
 	
 	=============================================================================
 	
+
+{% endraw %}

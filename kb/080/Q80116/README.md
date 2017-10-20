@@ -6,6 +6,8 @@ permalink: /kb/080/Q80116/
 
 ## Q80116: FIX: Illegal Instruction from Structure Member Offset
 
+{% raw %}
+
 	Article: Q80116
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -86,3 +88,5 @@ permalink: /kb/080/Q80116/
 	
 	=============================================================================
 	
+
+{% endraw %}

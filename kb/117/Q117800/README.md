@@ -6,6 +6,8 @@ permalink: /kb/117/Q117800/
 
 ## Q117800: Using the MMP16 Sound Card with Windows Sound System
 
+{% raw %}
+
 	Article: Q117800
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0,2.0
@@ -45,3 +47,5 @@ permalink: /kb/117/Q117800/
 	
 	=============================================================================
 	
+
+{% endraw %}

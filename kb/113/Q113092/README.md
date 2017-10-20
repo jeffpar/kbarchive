@@ -6,6 +6,8 @@ permalink: /kb/113/Q113092/
 
 ## Q113092: WFWG 3.11 Disk 3 Directory Listing (3.5 Inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q113092
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/113/Q113092/
 	
 	=============================================================================
 	
+
+{% endraw %}

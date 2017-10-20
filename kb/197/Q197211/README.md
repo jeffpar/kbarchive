@@ -6,6 +6,8 @@ permalink: /kb/197/Q197211/
 
 ## Q197211: WD97: Envelope Print Merge Fails to Omit Return Address
 
+{% raw %}
+
 	Article: Q197211
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/197/Q197211/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186390/
 
 ## Q186390: XCLN: Macintosh Client Adds Characters to Paste in 4D Database
 
+{% raw %}
+
 	Article: Q186390
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -60,3 +62,5 @@ permalink: /kb/186/Q186390/
 	
 	=============================================================================
 	
+
+{% endraw %}

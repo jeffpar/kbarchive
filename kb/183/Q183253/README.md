@@ -6,6 +6,8 @@ permalink: /kb/183/Q183253/
 
 ## Q183253: Problems After Using Rdisk When Cloned w/System Preparation Tool
 
+{% raw %}
+
 	Article: Q183253
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/183/Q183253/
 	
 	=============================================================================
 	
+
+{% endraw %}

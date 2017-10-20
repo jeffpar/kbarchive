@@ -6,6 +6,8 @@ permalink: /kb/165/Q165856/
 
 ## Q165856: XCLN: Messages Dragged from Client to Desktop Overlap
 
+{% raw %}
+
 	Article: Q165856
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.01; Win95:4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/165/Q165856/
 	
 	=============================================================================
 	
+
+{% endraw %}

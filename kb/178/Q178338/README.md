@@ -6,6 +6,8 @@ permalink: /kb/178/Q178338/
 
 ## Q178338: XADM: Information Store Access Violation in hrVerifyAttach
 
+{% raw %}
+
 	Article: Q178338
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -117,3 +119,5 @@ permalink: /kb/178/Q178338/
 	
 	=============================================================================
 	
+
+{% endraw %}

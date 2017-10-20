@@ -6,6 +6,8 @@ permalink: /kb/313/Q313834/
 
 ## Q313834: BUG: The Validate Event Does Not Fire for Controls on the SSTab
 
+{% raw %}
+
 	Article: Q313834
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -101,3 +103,5 @@ permalink: /kb/313/Q313834/
 	
 	=============================================================================
 	
+
+{% endraw %}

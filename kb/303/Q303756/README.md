@@ -6,6 +6,8 @@ permalink: /kb/303/Q303756/
 
 ## Q303756: Passport Developer Support Options
 
+{% raw %}
+
 	Article: Q303756
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4,1.99,2.0
@@ -65,3 +67,5 @@ permalink: /kb/303/Q303756/
 	
 	=============================================================================
 	
+
+{% endraw %}

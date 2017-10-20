@@ -6,6 +6,8 @@ permalink: /kb/200/Q200730/
 
 ## Q200730: SMS: NetWare Clients Do Not Show NetBIOS Machine Name
 
+{% raw %}
+
 	Article: Q200730
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,1.2 SP1,1.2 SP2,1.2 SP3,1.2 SP4
@@ -133,3 +135,5 @@ permalink: /kb/200/Q200730/
 	
 	=============================================================================
 	
+
+{% endraw %}

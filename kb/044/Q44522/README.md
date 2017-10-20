@@ -6,6 +6,8 @@ permalink: /kb/044/Q44522/
 
 ## Q44522: Regular Expressions in QuickC 2.00
 
+{% raw %}
+
 	Article: Q44522
 	Product(s): See article
 	Version(s): 2.00
@@ -46,3 +48,5 @@ permalink: /kb/044/Q44522/
 	expressions, within QuickC, were not meant to write complex search
 	strings. If such functionality is desired, it is better to use another
 	editor capable of such operations.
+
+{% endraw %}

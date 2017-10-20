@@ -6,6 +6,8 @@ permalink: /kb/089/Q89221/
 
 ## Q89221: Minimized Clock Truncates Digits in Digital Mode
 
+{% raw %}
+
 	Article: Q89221
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/089/Q89221/
 	
 	=============================================================================
 	
+
+{% endraw %}

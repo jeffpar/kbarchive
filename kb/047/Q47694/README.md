@@ -6,6 +6,8 @@ permalink: /kb/047/Q47694/
 
 ## Q47694: Structures Declared with Near, Far, Pascal, and Fortran
 
+{% raw %}
+
 	Article: Q47694
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -55,3 +57,5 @@ permalink: /kb/047/Q47694/
 	
 	This puts a watch on the first and second elements (x and y) in the
 	structure.
+
+{% endraw %}

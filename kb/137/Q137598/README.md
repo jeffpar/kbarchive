@@ -6,6 +6,8 @@ permalink: /kb/137/Q137598/
 
 ## Q137598: PPT7: PowerPoint Presentation Conferencing Unavailable
 
+{% raw %}
+
 	Article: Q137598
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -81,3 +83,5 @@ permalink: /kb/137/Q137598/
 	
 	=============================================================================
 	
+
+{% endraw %}

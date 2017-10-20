@@ -6,6 +6,8 @@ permalink: /kb/134/Q134886/
 
 ## Q134886: Flight Simulator 5.1: Troubleshooting General Sound Problems
 
+{% raw %}
+
 	Article: Q134886
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -160,3 +162,5 @@ permalink: /kb/134/Q134886/
 	
 	=============================================================================
 	
+
+{% endraw %}

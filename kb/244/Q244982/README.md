@@ -6,6 +6,8 @@ permalink: /kb/244/Q244982/
 
 ## Q244982: Radius Authentication Provider Name Limited to 14 Characters
 
+{% raw %}
+
 	Article: Q244982
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/244/Q244982/
 	
 	=============================================================================
 	
+
+{% endraw %}

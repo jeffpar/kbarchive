@@ -6,6 +6,8 @@ permalink: /kb/234/Q234869/
 
 ## Q234869: XADM: Multi-Valued String Array MAPI Property Not Copied
 
+{% raw %}
+
 	Article: Q234869
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -128,3 +130,5 @@ permalink: /kb/234/Q234869/
 	
 	=============================================================================
 	
+
+{% endraw %}

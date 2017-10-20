@@ -6,6 +6,8 @@ permalink: /kb/291/Q291992/
 
 ## Q291992: 100% CPU Occurs When Refreshing Deleted Vdir in MetaEdit 2.0/2.1
 
+{% raw %}
+
 	Article: Q291992
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/291/Q291992/
 	
 	=============================================================================
 	
+
+{% endraw %}

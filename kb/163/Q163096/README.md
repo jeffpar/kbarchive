@@ -6,6 +6,8 @@ permalink: /kb/163/Q163096/
 
 ## Q163096: WD97: Error Installing Alki Language Proofing Tools
 
+{% raw %}
+
 	Article: Q163096
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/163/Q163096/
 	
 	=============================================================================
 	
+
+{% endraw %}

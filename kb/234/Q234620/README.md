@@ -6,6 +6,8 @@ permalink: /kb/234/Q234620/
 
 ## Q234620: PRB: Visual C++ Debugger Can Fail on Pentium III Computers
 
+{% raw %}
+
 	Article: Q234620
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -61,3 +63,5 @@ permalink: /kb/234/Q234620/
 	
 	=============================================================================
 	
+
+{% endraw %}

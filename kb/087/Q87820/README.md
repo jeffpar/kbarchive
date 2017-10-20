@@ -6,6 +6,8 @@ permalink: /kb/087/Q87820/
 
 ## Q87820: CORE MCK PROMs for Microsoft OS/2 1.3
 
+{% raw %}
+
 	Article: Q87820
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/087/Q87820/
 	
 	=============================================================================
 	
+
+{% endraw %}

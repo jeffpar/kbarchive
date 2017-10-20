@@ -6,6 +6,8 @@ permalink: /kb/256/Q256925/
 
 ## Q256925: BUG: INSERT INTO View w/Default Value Does Not Work as Expected
 
+{% raw %}
+
 	Article: Q256925
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -140,3 +142,5 @@ permalink: /kb/256/Q256925/
 	
 	=============================================================================
 	
+
+{% endraw %}

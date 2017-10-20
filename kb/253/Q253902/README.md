@@ -6,6 +6,8 @@ permalink: /kb/253/Q253902/
 
 ## Q253902: XCLN: Windows and Macintosh Exchange Clients Interoperability
 
+{% raw %}
+
 	Article: Q253902
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0,8.1,8.2,8.2.1; WINDOWS:2000,4.0,5.0,5.5,7.0a,7.5,8.0; :
@@ -347,3 +349,5 @@ permalink: /kb/253/Q253902/
 	
 	=============================================================================
 	
+
+{% endraw %}

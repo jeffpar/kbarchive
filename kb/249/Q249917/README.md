@@ -6,6 +6,8 @@ permalink: /kb/249/Q249917/
 
 ## Q249917: Stop 0x00000050 on Terminal Server with Lexmark Printer Driver
 
+{% raw %}
+
 	Article: Q249917
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/249/Q249917/
 	
 	=============================================================================
 	
+
+{% endraw %}

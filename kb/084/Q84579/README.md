@@ -6,6 +6,8 @@ permalink: /kb/084/Q84579/
 
 ## Q84579: Invalid VxD Dynamic Link Call to Device Number 000A
 
+{% raw %}
+
 	Article: Q84579
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -117,3 +119,5 @@ permalink: /kb/084/Q84579/
 	
 	=============================================================================
 	
+
+{% endraw %}

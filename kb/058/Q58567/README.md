@@ -6,6 +6,8 @@ permalink: /kb/058/Q58567/
 
 ## Q58567: Any EGA/VGA Video RAM Above 256K Not Usable in Compiled BASIC
 
+{% raw %}
+
 	Article: Q58567
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/058/Q58567/
 	as follows:
 	
 	   Pages = 256K / 128K = 2 pages
+
+{% endraw %}

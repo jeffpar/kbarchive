@@ -6,6 +6,8 @@ permalink: /kb/045/Q45586/
 
 ## Q45586: Use _setfont to Specify Characteristics for Current Font
 
+{% raw %}
+
 	Article: Q45586
 	Product(s): See article
 	Version(s): 2.00
@@ -35,3 +37,5 @@ permalink: /kb/045/Q45586/
 	   Whether or not to allow the program to
 	      choose a "best fit" from the available
 	      fonts, if an exact match cannot be made      (optional)
+
+{% endraw %}

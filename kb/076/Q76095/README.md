@@ -6,6 +6,8 @@ permalink: /kb/076/Q76095/
 
 ## Q76095: CONN: -N or /N Allows Use of Different .INI Filename
 
+{% raw %}
+
 	Article: Q76095
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/076/Q76095/
 	
 	=============================================================================
 	
+
+{% endraw %}

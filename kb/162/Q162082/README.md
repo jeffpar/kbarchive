@@ -6,6 +6,8 @@ permalink: /kb/162/Q162082/
 
 ## Q162082: FIX: LostFocus of Form in Formset Does Not Fire with Mouse
 
+{% raw %}
+
 	Article: Q162082
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -74,3 +76,5 @@ permalink: /kb/162/Q162082/
 	
 	=============================================================================
 	
+
+{% endraw %}

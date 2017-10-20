@@ -6,6 +6,8 @@ permalink: /kb/173/Q173379/
 
 ## Q173379: WD97: Hyperlink Not Inserted After Saving as HTML
 
+{% raw %}
+
 	Article: Q173379
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/173/Q173379/
 	
 	=============================================================================
 	
+
+{% endraw %}

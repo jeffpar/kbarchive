@@ -6,6 +6,8 @@ permalink: /kb/071/Q71470/
 
 ## Q71470: Large Partitions Not Recognized by Norton Utilities Ver 1-4.0
 
+{% raw %}
+
 	Article: Q71470
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.0
@@ -42,3 +44,5 @@ permalink: /kb/071/Q71470/
 	
 	=============================================================================
 	
+
+{% endraw %}

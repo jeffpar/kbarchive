@@ -6,6 +6,8 @@ permalink: /kb/247/Q247497/
 
 ## Q247497: &quot;System Registry&quot; Error Message When Running Setup Program
 
+{% raw %}
+
 	Article: Q247497
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -101,3 +103,5 @@ permalink: /kb/247/Q247497/
 	
 	=============================================================================
 	
+
+{% endraw %}

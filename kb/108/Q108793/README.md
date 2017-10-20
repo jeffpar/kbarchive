@@ -6,6 +6,8 @@ permalink: /kb/108/Q108793/
 
 ## Q108793: Video for Windows 1.1 Drivers Disk (3.5 Inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q108793
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.1
@@ -69,3 +71,5 @@ permalink: /kb/108/Q108793/
 	
 	=============================================================================
 	
+
+{% endraw %}

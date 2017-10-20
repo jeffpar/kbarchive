@@ -6,6 +6,8 @@ permalink: /kb/304/Q304203/
 
 ## Q304203: DAV WebDAV PROPPATCH Verb Returns 405 Method Not Allowed
 
+{% raw %}
+
 	Article: Q304203
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -64,3 +66,5 @@ permalink: /kb/304/Q304203/
 	
 	=============================================================================
 	
+
+{% endraw %}

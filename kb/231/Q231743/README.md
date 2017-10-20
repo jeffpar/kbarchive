@@ -6,6 +6,8 @@ permalink: /kb/231/Q231743/
 
 ## Q231743: WD97: Dot Leaders Do Not Print Correctly
 
+{% raw %}
+
 	Article: Q231743
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -87,3 +89,5 @@ permalink: /kb/231/Q231743/
 	
 	=============================================================================
 	
+
+{% endraw %}

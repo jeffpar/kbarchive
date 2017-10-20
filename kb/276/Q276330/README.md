@@ -6,6 +6,8 @@ permalink: /kb/276/Q276330/
 
 ## Q276330: TN3270 Connection Requests Fail Over Slow Links
 
+{% raw %}
+
 	Article: Q276330
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -97,3 +99,5 @@ permalink: /kb/276/Q276330/
 	
 	=============================================================================
 	
+
+{% endraw %}

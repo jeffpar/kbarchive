@@ -6,6 +6,8 @@ permalink: /kb/172/Q172083/
 
 ## Q172083: PRB: Cannot Modify DataChanged Property of DBGrid Column Object
 
+{% raw %}
+
 	Article: Q172083
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0 5.0 97
@@ -69,3 +71,5 @@ permalink: /kb/172/Q172083/
 	
 	=============================================================================
 	
+
+{% endraw %}

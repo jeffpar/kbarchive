@@ -6,6 +6,8 @@ permalink: /kb/196/Q196673/
 
 ## Q196673: WD97: Window Stays on Screen Using Shell to Start MS-DOS Program
 
+{% raw %}
+
 	Article: Q196673
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/196/Q196673/
 	
 	=============================================================================
 	
+
+{% endraw %}

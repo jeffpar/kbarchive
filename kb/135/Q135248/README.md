@@ -6,6 +6,8 @@ permalink: /kb/135/Q135248/
 
 ## Q135248: Exposition Error Message: &quot;Incompatible PICCLIP.VBX&quot;
 
+{% raw %}
+
 	Article: Q135248
 	Product(s): Microsoft Product Support Information
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/135/Q135248/
 	
 	=============================================================================
 	
+
+{% endraw %}

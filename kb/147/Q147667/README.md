@@ -6,6 +6,8 @@ permalink: /kb/147/Q147667/
 
 ## Q147667: PRB: 'Invalid Picture' Error When Setting Metafile (WMF)
 
+{% raw %}
+
 	Article: Q147667
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -81,3 +83,5 @@ permalink: /kb/147/Q147667/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242114/
 
 ## Q242114: Custom Toolbar Settings Are Not Saved in File Manager
 
+{% raw %}
+
 	Article: Q242114
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
@@ -42,3 +44,5 @@ permalink: /kb/242/Q242114/
 	
 	=============================================================================
 	
+
+{% endraw %}

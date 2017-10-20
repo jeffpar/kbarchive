@@ -6,6 +6,8 @@ permalink: /kb/201/Q201394/
 
 ## Q201394: PRB: Only Project Folders Restored from Archive
 
+{% raw %}
+
 	Article: Q201394
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/201/Q201394/
 	
 	=============================================================================
 	
+
+{% endraw %}

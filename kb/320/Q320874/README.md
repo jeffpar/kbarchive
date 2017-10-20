@@ -6,6 +6,8 @@ permalink: /kb/320/Q320874/
 
 ## Q320874: PRB: Page Numbers Not Incremented in a Maximized Preview Window
 
+{% raw %}
+
 	Article: Q320874
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,7.0
@@ -90,3 +92,5 @@ permalink: /kb/320/Q320874/
 	
 	=============================================================================
 	
+
+{% endraw %}

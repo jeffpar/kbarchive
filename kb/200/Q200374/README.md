@@ -6,6 +6,8 @@ permalink: /kb/200/Q200374/
 
 ## Q200374: SMS: SMSINST: Automatic Rollback With the SMS Installer
 
+{% raw %}
+
 	Article: Q200374
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -148,3 +150,5 @@ permalink: /kb/200/Q200374/
 	
 	=============================================================================
 	
+
+{% endraw %}

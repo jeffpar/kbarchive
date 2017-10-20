@@ -6,6 +6,8 @@ permalink: /kb/189/Q189633/
 
 ## Q189633: HOWTO: Query a Service for Status and Configuration
 
+{% raw %}
+
 	Article: Q189633
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -271,3 +273,5 @@ permalink: /kb/189/Q189633/
 	
 	=============================================================================
 	
+
+{% endraw %}

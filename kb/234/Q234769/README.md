@@ -6,6 +6,8 @@ permalink: /kb/234/Q234769/
 
 ## Q234769: BUG: Unregistering CE ATL Servers Don't Remove Registry Entries
 
+{% raw %}
+
 	Article: Q234769
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/234/Q234769/
 	
 	=============================================================================
 	
+
+{% endraw %}

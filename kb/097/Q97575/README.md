@@ -6,6 +6,8 @@ permalink: /kb/097/Q97575/
 
 ## Q97575: WEP Err Msg: Can't Write File VBRUN100.DLL
 
+{% raw %}
+
 	Article: Q97575
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -106,3 +108,5 @@ permalink: /kb/097/Q97575/
 	
 	=============================================================================
 	
+
+{% endraw %}

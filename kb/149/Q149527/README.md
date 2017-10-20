@@ -6,6 +6,8 @@ permalink: /kb/149/Q149527/
 
 ## Q149527: XCLN: Can't Add Fax Service After Installing Exchange
 
+{% raw %}
+
 	Article: Q149527
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.0,8.01,8.02,8.03
@@ -71,3 +73,5 @@ permalink: /kb/149/Q149527/
 	
 	=============================================================================
 	
+
+{% endraw %}

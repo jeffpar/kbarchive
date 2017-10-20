@@ -6,6 +6,8 @@ permalink: /kb/123/Q123729/
 
 ## Q123729: Accessing Command Line Arguments
 
+{% raw %}
+
 	Article: Q123729
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,6.0,6.1,6.11
@@ -82,3 +84,5 @@ permalink: /kb/123/Q123729/
 	
 	=============================================================================
 	
+
+{% endraw %}

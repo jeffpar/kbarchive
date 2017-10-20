@@ -6,6 +6,8 @@ permalink: /kb/264/Q264587/
 
 ## Q264587: XADM: Error with Import of the Home-MDB and Home-MTA Attributes
 
+{% raw %}
+
 	Article: Q264587
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/264/Q264587/
 	
 	=============================================================================
 	
+
+{% endraw %}

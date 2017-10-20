@@ -6,6 +6,8 @@ permalink: /kb/173/Q173346/
 
 ## Q173346: XADM: Upgrading Exchange 5.0 Evaluation Copy to Release Version
 
+{% raw %}
+
 	Article: Q173346
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/173/Q173346/
 	
 	=============================================================================
 	
+
+{% endraw %}

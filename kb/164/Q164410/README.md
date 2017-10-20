@@ -6,6 +6,8 @@ permalink: /kb/164/Q164410/
 
 ## Q164410: CHGPASS and SETPASS Do Not Prompt for Typing Correction
 
+{% raw %}
+
 	Article: Q164410
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -56,3 +58,5 @@ permalink: /kb/164/Q164410/
 	
 	=============================================================================
 	
+
+{% endraw %}

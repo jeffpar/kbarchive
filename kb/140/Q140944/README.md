@@ -6,6 +6,8 @@ permalink: /kb/140/Q140944/
 
 ## Q140944: XADM: DirSync Imports Treated Differently by Exchange
 
+{% raw %}
+
 	Article: Q140944
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/140/Q140944/
 	
 	=============================================================================
 	
+
+{% endraw %}

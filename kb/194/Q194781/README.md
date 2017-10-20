@@ -6,6 +6,8 @@ permalink: /kb/194/Q194781/
 
 ## Q194781: PRB: Version Information in Project Causes Invalid .Exe File
 
+{% raw %}
+
 	Article: Q194781
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -77,3 +79,5 @@ permalink: /kb/194/Q194781/
 	
 	=============================================================================
 	
+
+{% endraw %}

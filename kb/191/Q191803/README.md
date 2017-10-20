@@ -6,6 +6,8 @@ permalink: /kb/191/Q191803/
 
 ## Q191803: PRB: Click Event for DBGrid Returns Previous Row Values
 
+{% raw %}
+
 	Article: Q191803
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/191/Q191803/
 	
 	=============================================================================
 	
+
+{% endraw %}

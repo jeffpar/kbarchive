@@ -6,6 +6,8 @@ permalink: /kb/198/Q198814/
 
 ## Q198814: XADM: Recovering a KM Server after a complete Exchange Rebuild
 
+{% raw %}
+
 	Article: Q198814
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/198/Q198814/
 	
 	=============================================================================
 	
+
+{% endraw %}

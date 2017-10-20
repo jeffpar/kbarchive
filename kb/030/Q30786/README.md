@@ -6,6 +6,8 @@ permalink: /kb/030/Q30786/
 
 ## Q30786: MASM 5.10 MIXED.DOC: Compatiblity with Undocumented Macros
 
+{% raw %}
+
 	Article: Q30786
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -50,3 +52,5 @@ permalink: /kb/030/Q30786/
 	versions. The new macros use new MASM features to simulate the same
 	functionality more efficiently. Do not use the MIXED.INC provided with
 	MASM 5.00. It will not work under MASM 5.10.
+
+{% endraw %}

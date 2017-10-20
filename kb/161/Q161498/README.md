@@ -6,6 +6,8 @@ permalink: /kb/161/Q161498/
 
 ## Q161498: FIX: Full Outer Join Returns No Records If One Table is Empty
 
+{% raw %}
+
 	Article: Q161498
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/161/Q161498/
 	
 	=============================================================================
 	
+
+{% endraw %}

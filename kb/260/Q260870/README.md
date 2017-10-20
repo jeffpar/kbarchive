@@ -6,6 +6,8 @@ permalink: /kb/260/Q260870/
 
 ## Q260870: Restrict Anonymous Prevents Discovery of Windows NT 4.0 Domain
 
+{% raw %}
+
 	Article: Q260870
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -81,3 +83,5 @@ permalink: /kb/260/Q260870/
 	
 	=============================================================================
 	
+
+{% endraw %}

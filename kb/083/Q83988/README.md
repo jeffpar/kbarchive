@@ -6,6 +6,8 @@ permalink: /kb/083/Q83988/
 
 ## Q83988: Windows: Numeric Keypad ENTER Key Not Functioning as Expected
 
+{% raw %}
+
 	Article: Q83988
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/083/Q83988/
 	
 	=============================================================================
 	
+
+{% endraw %}

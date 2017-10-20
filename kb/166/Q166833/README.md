@@ -6,6 +6,8 @@ permalink: /kb/166/Q166833/
 
 ## Q166833: SMS: Failed Status MIF Does Not Update Job Status
 
+{% raw %}
+
 	Article: Q166833
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -150,3 +152,5 @@ permalink: /kb/166/Q166833/
 	
 	=============================================================================
 	
+
+{% endraw %}

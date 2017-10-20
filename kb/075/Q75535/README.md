@@ -6,6 +6,8 @@ permalink: /kb/075/Q75535/
 
 ## Q75535: PRB: Network Drive Type Reported Incorrectly
 
+{% raw %}
+
 	Article: Q75535
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -73,3 +75,5 @@ permalink: /kb/075/Q75535/
 	
 	=============================================================================
 	
+
+{% endraw %}

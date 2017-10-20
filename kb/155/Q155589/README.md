@@ -6,6 +6,8 @@ permalink: /kb/155/Q155589/
 
 ## Q155589: XADM: Import Format for Generic SMTP Custom Recipient
 
+{% raw %}
+
 	Article: Q155589
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155589/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145575/
 
 ## Q145575: XCLN: Err Msg: The Attachment(s) Could Not Be Displayed...
 
+{% raw %}
+
 	Article: Q145575
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -53,3 +55,5 @@ permalink: /kb/145/Q145575/
 	
 	=============================================================================
 	
+
+{% endraw %}

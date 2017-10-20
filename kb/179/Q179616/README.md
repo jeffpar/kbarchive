@@ -6,6 +6,8 @@ permalink: /kb/179/Q179616/
 
 ## Q179616: PRB: Rollback Causes DAO Recordset Editmode To Be Set Back to 0
 
+{% raw %}
+
 	Article: Q179616
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/179/Q179616/
 	
 	=============================================================================
 	
+
+{% endraw %}

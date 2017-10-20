@@ -6,6 +6,8 @@ permalink: /kb/092/Q92776/
 
 ## Q92776: Setup Overwrites _DEFAULT.PIF and DOSPRMPT.PIF
 
+{% raw %}
+
 	Article: Q92776
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -37,3 +39,5 @@ permalink: /kb/092/Q92776/
 	
 	=============================================================================
 	
+
+{% endraw %}

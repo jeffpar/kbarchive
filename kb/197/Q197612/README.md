@@ -6,6 +6,8 @@ permalink: /kb/197/Q197612/
 
 ## Q197612: Virtual and Physical Directories May Share the Same Name
 
+{% raw %}
+
 	Article: Q197612
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/197/Q197612/
 	
 	=============================================================================
 	
+
+{% endraw %}

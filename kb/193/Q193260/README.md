@@ -6,6 +6,8 @@ permalink: /kb/193/Q193260/
 
 ## Q193260: XADM: OWA Stops when Replying to Message with Inline Image
 
+{% raw %}
+
 	Article: Q193260
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5; winnt:5.5,5.5 SP1
@@ -139,3 +141,5 @@ permalink: /kb/193/Q193260/
 	
 	=============================================================================
 	
+
+{% endraw %}

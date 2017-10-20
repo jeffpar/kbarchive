@@ -6,6 +6,8 @@ permalink: /kb/272/Q272286/
 
 ## Q272286: Redirection Variable Fails When You Use a POST Method
 
+{% raw %}
+
 	Article: Q272286
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/272/Q272286/
 	
 	=============================================================================
 	
+
+{% endraw %}

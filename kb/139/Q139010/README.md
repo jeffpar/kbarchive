@@ -6,6 +6,8 @@ permalink: /kb/139/Q139010/
 
 ## Q139010: DEC Alpha STOP C000000143 on AlphaServer 1000
 
+{% raw %}
+
 	Article: Q139010
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -79,3 +81,5 @@ permalink: /kb/139/Q139010/
 	
 	=============================================================================
 	
+
+{% endraw %}

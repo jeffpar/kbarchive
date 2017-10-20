@@ -6,6 +6,8 @@ permalink: /kb/246/Q246974/
 
 ## Q246974: SMS: Mandatory Assignments May Not Run If CAP Cannot Be Reached
 
+{% raw %}
+
 	Article: Q246974
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/246/Q246974/
 	
 	=============================================================================
 	
+
+{% endraw %}

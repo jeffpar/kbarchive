@@ -6,6 +6,8 @@ permalink: /kb/185/Q185203/
 
 ## Q185203: SPOOLSS Hangs When Printing a File With a Corrupted EMF Record
 
+{% raw %}
+
 	Article: Q185203
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/185/Q185203/
 	
 	=============================================================================
 	
+
+{% endraw %}

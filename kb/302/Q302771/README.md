@@ -6,6 +6,8 @@ permalink: /kb/302/Q302771/
 
 ## Q302771: E-mail Spellcheck Is Listed As Installed And Available, But Is N
 
+{% raw %}
+
 	Article: Q302771
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -61,3 +63,5 @@ permalink: /kb/302/Q302771/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/109/Q109239/
 
 ## Q109239: PRB: FoxPro Does Not Respond to Apple Events During READ
 
+{% raw %}
+
 	Article: Q109239
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -83,3 +85,5 @@ permalink: /kb/109/Q109239/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126134/
 
 ## Q126134: FIX: Date/Time Fields Fail to Update When Using a Dynaset
 
+{% raw %}
+
 	Article: Q126134
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00
@@ -105,3 +107,5 @@ permalink: /kb/126/Q126134/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145698/
 
 ## Q145698: PRB: Mnemonic Differences Between MFC 4.0 and Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q145698
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -229,3 +231,5 @@ permalink: /kb/145/Q145698/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/048/Q48771/
 
 ## Q48771: LIB.LIB: Cannot Find Library
 
+{% raw %}
+
 	Article: Q48771
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -21,3 +23,5 @@ permalink: /kb/048/Q48771/
 	This error occurs when a trailing space is included at the end of the
 	library files directory in Options.Environment. Remove the trailing
 	space or retype the directory and path without the trailing space.
+
+{% endraw %}

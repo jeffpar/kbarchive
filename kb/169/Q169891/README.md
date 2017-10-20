@@ -6,6 +6,8 @@ permalink: /kb/169/Q169891/
 
 ## Q169891: XFOR: Internet Message Cannot Be Processed
 
+{% raw %}
+
 	Article: Q169891
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -48,3 +50,5 @@ permalink: /kb/169/Q169891/
 	
 	=============================================================================
 	
+
+{% endraw %}

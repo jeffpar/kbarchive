@@ -6,6 +6,8 @@ permalink: /kb/182/Q182901/
 
 ## Q182901: XADM: Optimizer Error: One or More File Locations Are Not Valid
 
+{% raw %}
+
 	Article: Q182901
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/182/Q182901/
 	
 	=============================================================================
 	
+
+{% endraw %}

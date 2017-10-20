@@ -6,6 +6,8 @@ permalink: /kb/171/Q171259/
 
 ## Q171259: XFOR: How to Move the Microsoft Mail Connector Postoffice
 
+{% raw %}
+
 	Article: Q171259
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -105,3 +107,5 @@ permalink: /kb/171/Q171259/
 	
 	=============================================================================
 	
+
+{% endraw %}

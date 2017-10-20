@@ -6,6 +6,8 @@ permalink: /kb/046/Q46792/
 
 ## Q46792: _setvideomode Resets the Palette
 
+{% raw %}
+
 	Article: Q46792
 	Product(s): See article
 	Version(s): 5.10
@@ -17,3 +19,5 @@ permalink: /kb/046/Q46792/
 	default palette colors each time it is called. Therefore, remapping
 	the color palette in C lasts only as long as the video mode remains
 	active.
+
+{% endraw %}

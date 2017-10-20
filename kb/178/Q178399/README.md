@@ -6,6 +6,8 @@ permalink: /kb/178/Q178399/
 
 ## Q178399: Exchange Client Not Displaying Message Text Correctly
 
+{% raw %}
+
 	Article: Q178399
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/178/Q178399/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177736/
 
 ## Q177736: HOWTO: Retrieve Identity Column After Insert Using ODBCDirect
 
+{% raw %}
+
 	Article: Q177736
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -148,3 +150,5 @@ permalink: /kb/177/Q177736/
 	
 	=============================================================================
 	
+
+{% endraw %}

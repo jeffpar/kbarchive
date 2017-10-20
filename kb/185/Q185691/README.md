@@ -6,6 +6,8 @@ permalink: /kb/185/Q185691/
 
 ## Q185691: X.25 Link Service May Hang When Using IBM's ARTIC Driver
 
+{% raw %}
+
 	Article: Q185691
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/185/Q185691/
 	
 	=============================================================================
 	
+
+{% endraw %}

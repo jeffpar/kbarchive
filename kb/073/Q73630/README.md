@@ -6,6 +6,8 @@ permalink: /kb/073/Q73630/
 
 ## Q73630: Cannot Swap Out of WordPerfect 5.1 in 132 Column Video Mode
 
+{% raw %}
+
 	Article: Q73630
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -40,3 +42,5 @@ permalink: /kb/073/Q73630/
 	
 	=============================================================================
 	
+
+{% endraw %}

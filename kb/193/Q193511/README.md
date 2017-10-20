@@ -6,6 +6,8 @@ permalink: /kb/193/Q193511/
 
 ## Q193511: PRB: Can Not Debug Using IDE Over Windows CE Services
 
+{% raw %}
+
 	Article: Q193511
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -149,3 +151,5 @@ permalink: /kb/193/Q193511/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317957/
 
 ## Q317957: PRB: Connection Information Is Broken After You Check In Without
 
+{% raw %}
+
 	Article: Q317957
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -132,3 +134,5 @@ permalink: /kb/317/Q317957/
 	
 	=============================================================================
 	
+
+{% endraw %}

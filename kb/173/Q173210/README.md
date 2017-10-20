@@ -6,6 +6,8 @@ permalink: /kb/173/Q173210/
 
 ## Q173210: How to Troubleshoot Event 2000 in System Event Log
 
+{% raw %}
+
 	Article: Q173210
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -122,3 +124,5 @@ permalink: /kb/173/Q173210/
 	
 	=============================================================================
 	
+
+{% endraw %}

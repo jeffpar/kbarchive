@@ -6,6 +6,8 @@ permalink: /kb/161/Q161952/
 
 ## Q161952: XFOR: Messages Sent with MSMI Are Malformed
 
+{% raw %}
+
 	Article: Q161952
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 SP3,5.0
@@ -57,3 +59,5 @@ permalink: /kb/161/Q161952/
 	
 	=============================================================================
 	
+
+{% endraw %}

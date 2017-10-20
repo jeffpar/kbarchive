@@ -6,6 +6,8 @@ permalink: /kb/138/Q138979/
 
 ## Q138979: How to Create a Builder That Changes the Font of Form Objects
 
+{% raw %}
+
 	Article: Q138979
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -117,3 +119,5 @@ permalink: /kb/138/Q138979/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154950/
 
 ## Q154950: SPX Header Not Available for a Terminate Packet
 
+{% raw %}
+
 	Article: Q154950
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -53,3 +55,5 @@ permalink: /kb/154/Q154950/
 	
 	=============================================================================
 	
+
+{% endraw %}

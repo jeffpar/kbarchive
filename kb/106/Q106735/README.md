@@ -6,6 +6,8 @@ permalink: /kb/106/Q106735/
 
 ## Q106735: Closing Word for Windows 6.0 Causes General Protection Fault
 
+{% raw %}
+
 	Article: Q106735
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -57,3 +59,5 @@ permalink: /kb/106/Q106735/
 	
 	=============================================================================
 	
+
+{% endraw %}

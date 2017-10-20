@@ -6,6 +6,8 @@ permalink: /kb/066/Q66458/
 
 ## Q66458: Pascal 4.00 and C 6.00 Mixed Language Considerations
 
+{% raw %}
+
 	Article: Q66458
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -68,3 +70,5 @@ permalink: /kb/066/Q66458/
 	removed. Remember when building your application to compile the C code
 	with /AM, /AL, or /AH because the Pascal code will require far
 	function calls.
+
+{% endraw %}

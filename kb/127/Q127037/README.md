@@ -6,6 +6,8 @@ permalink: /kb/127/Q127037/
 
 ## Q127037: Purpose of CHARACTER BINARY and MEMO BINARY Fields
 
+{% raw %}
+
 	Article: Q127037
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -73,3 +75,5 @@ permalink: /kb/127/Q127037/
 	
 	=============================================================================
 	
+
+{% endraw %}

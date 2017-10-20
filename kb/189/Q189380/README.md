@@ -6,6 +6,8 @@ permalink: /kb/189/Q189380/
 
 ## Q189380: FP: Text String With No Spaces Overwrites Right-aligned Image
 
+{% raw %}
+
 	Article: Q189380
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/189/Q189380/
 	
 	=============================================================================
 	
+
+{% endraw %}

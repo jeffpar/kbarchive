@@ -6,6 +6,8 @@ permalink: /kb/134/Q134708/
 
 ## Q134708: Missing Operating System After Setup Restarts Your Computer
 
+{% raw %}
+
 	Article: Q134708
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -82,3 +84,5 @@ permalink: /kb/134/Q134708/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120817/
 
 ## Q120817: How to Delete and Re-create a WFWG Post Office
 
+{% raw %}
+
 	Article: Q120817
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -120,3 +122,5 @@ permalink: /kb/120/Q120817/
 	
 	=============================================================================
 	
+
+{% endraw %}

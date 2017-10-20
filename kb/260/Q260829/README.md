@@ -6,6 +6,8 @@ permalink: /kb/260/Q260829/
 
 ## Q260829: XFOR: Date Empty in Meeting Request Sent from Exchange to Notes
 
+{% raw %}
+
 	Article: Q260829
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -43,3 +45,5 @@ permalink: /kb/260/Q260829/
 	
 	=============================================================================
 	
+
+{% endraw %}

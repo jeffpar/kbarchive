@@ -6,6 +6,8 @@ permalink: /kb/158/Q158910/
 
 ## Q158910: Msbatch.inf Parameters: Multimedia Components Not Installed
 
+{% raw %}
+
 	Article: Q158910
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/158/Q158910/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98041/
 
 ## Q98041: INFO: Using CBitmapButton in CDialogBar and CFormView
 
+{% raw %}
+
 	Article: Q98041
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0
@@ -72,3 +74,5 @@ permalink: /kb/098/Q98041/
 	
 	=============================================================================
 	
+
+{% endraw %}

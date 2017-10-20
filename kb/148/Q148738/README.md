@@ -6,6 +6,8 @@ permalink: /kb/148/Q148738/
 
 ## Q148738: MFCDRAG Implements Drag and Drop Between CListCtrl and CTree
 
+{% raw %}
+
 	Article: Q148738
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,5.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/148/Q148738/
 	
 	=============================================================================
 	
+
+{% endraw %}

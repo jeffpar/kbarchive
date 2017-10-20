@@ -6,6 +6,8 @@ permalink: /kb/257/Q257621/
 
 ## Q257621: FIX: Resources Lost When Loading Modal Form from ActiveX Server
 
+{% raw %}
+
 	Article: Q257621
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -130,3 +132,5 @@ permalink: /kb/257/Q257621/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173405/
 
 ## Q173405: PRB: Misleading Message When Checking Out Older File Version
 
+{% raw %}
+
 	Article: Q173405
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/173/Q173405/
 	
 	=============================================================================
 	
+
+{% endraw %}

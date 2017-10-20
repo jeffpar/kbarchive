@@ -6,6 +6,8 @@ permalink: /kb/073/Q73674/
 
 ## Q73674: Icon and Cursor Size Determined by Display Driver
 
+{% raw %}
+
 	Article: Q73674
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/073/Q73674/
 	
 	=============================================================================
 	
+
+{% endraw %}

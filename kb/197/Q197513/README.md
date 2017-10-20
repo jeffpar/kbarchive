@@ -6,6 +6,8 @@ permalink: /kb/197/Q197513/
 
 ## Q197513: Windows NT Memory Limitations
 
+{% raw %}
+
 	Article: Q197513
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/197/Q197513/
 	
 	=============================================================================
 	
+
+{% endraw %}

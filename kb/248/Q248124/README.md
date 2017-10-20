@@ -6,6 +6,8 @@ permalink: /kb/248/Q248124/
 
 ## Q248124: XADM: Service Specific Error 4015 When Information Store Starts
 
+{% raw %}
+
 	Article: Q248124
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -103,3 +105,5 @@ permalink: /kb/248/Q248124/
 	
 	=============================================================================
 	
+
+{% endraw %}

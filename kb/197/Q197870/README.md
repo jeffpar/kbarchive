@@ -6,6 +6,8 @@ permalink: /kb/197/Q197870/
 
 ## Q197870: XFOR: Exchange Notes Connector Stops on Corrupted Message
 
+{% raw %}
+
 	Article: Q197870
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -98,3 +100,5 @@ permalink: /kb/197/Q197870/
 	
 	=============================================================================
 	
+
+{% endraw %}

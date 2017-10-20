@@ -6,6 +6,8 @@ permalink: /kb/173/Q173993/
 
 ## Q173993: Dialog Message Not Sent Correctly from 32-bit to 16-bit App
 
+{% raw %}
+
 	Article: Q173993
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/173/Q173993/
 	
 	=============================================================================
 	
+
+{% endraw %}

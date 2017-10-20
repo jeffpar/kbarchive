@@ -6,6 +6,8 @@ permalink: /kb/139/Q139162/
 
 ## Q139162: Encarta World Atlas, 1996: README.WRI Contents
 
+{% raw %}
+
 	Article: Q139162
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -455,3 +457,5 @@ permalink: /kb/139/Q139162/
 	
 	=============================================================================
 	
+
+{% endraw %}

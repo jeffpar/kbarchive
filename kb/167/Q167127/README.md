@@ -6,6 +6,8 @@ permalink: /kb/167/Q167127/
 
 ## Q167127: SMS: Client Program Group Is Not Created on Windows Clients
 
+{% raw %}
+
 	Article: Q167127
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -46,3 +48,5 @@ permalink: /kb/167/Q167127/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158365/
 
 ## Q158365: Scenery Compatibility with Flight Simulator for Windows 95
 
+{% raw %}
+
 	Article: Q158365
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/158/Q158365/
 	
 	=============================================================================
 	
+
+{% endraw %}

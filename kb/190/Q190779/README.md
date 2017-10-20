@@ -6,6 +6,8 @@ permalink: /kb/190/Q190779/
 
 ## Q190779: Zone: How to Add Names to the Friends List
 
+{% raw %}
+
 	Article: Q190779
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -52,3 +54,5 @@ permalink: /kb/190/Q190779/
 	
 	=============================================================================
 	
+
+{% endraw %}

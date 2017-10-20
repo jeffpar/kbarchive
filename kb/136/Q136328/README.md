@@ -6,6 +6,8 @@ permalink: /kb/136/Q136328/
 
 ## Q136328: How to Determine the Coordinates of an Object
 
+{% raw %}
+
 	Article: Q136328
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -89,3 +91,5 @@ permalink: /kb/136/Q136328/
 	
 	=============================================================================
 	
+
+{% endraw %}

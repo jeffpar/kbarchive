@@ -6,6 +6,8 @@ permalink: /kb/154/Q154785/
 
 ## Q154785: WinNT 3.51 Service Packs (SPs) Incorrectly Update Newer SPs
 
+{% raw %}
+
 	Article: Q154785
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -64,3 +66,5 @@ permalink: /kb/154/Q154785/
 	
 	=============================================================================
 	
+
+{% endraw %}

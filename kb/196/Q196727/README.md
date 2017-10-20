@@ -6,6 +6,8 @@ permalink: /kb/196/Q196727/
 
 ## Q196727: HOWTO: Process Idle Time and Termination in Performance Monitor
 
+{% raw %}
+
 	Article: Q196727
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/196/Q196727/
 	
 	=============================================================================
 	
+
+{% endraw %}

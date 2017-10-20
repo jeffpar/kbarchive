@@ -6,6 +6,8 @@ permalink: /kb/176/Q176211/
 
 ## Q176211: Console-mode Apps May Run Slowly on Multiprocessor Computers
 
+{% raw %}
+
 	Article: Q176211
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -90,3 +92,5 @@ permalink: /kb/176/Q176211/
 	
 	=============================================================================
 	
+
+{% endraw %}

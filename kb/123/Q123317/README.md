@@ -6,6 +6,8 @@ permalink: /kb/123/Q123317/
 
 ## Q123317: SMS: Enabling Help Desk Options from Logon Servers Unsupported
 
+{% raw %}
+
 	Article: Q123317
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0.,1.1,1.2
@@ -52,3 +54,5 @@ permalink: /kb/123/Q123317/
 	
 	=============================================================================
 	
+
+{% endraw %}

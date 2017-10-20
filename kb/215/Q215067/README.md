@@ -6,6 +6,8 @@ permalink: /kb/215/Q215067/
 
 ## Q215067: Online Help Does Not Match Licensed Software Properties
 
+{% raw %}
+
 	Article: Q215067
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -47,3 +49,5 @@ permalink: /kb/215/Q215067/
 	
 	=============================================================================
 	
+
+{% endraw %}

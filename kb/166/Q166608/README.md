@@ -6,6 +6,8 @@ permalink: /kb/166/Q166608/
 
 ## Q166608: XADM: Store Access Violation with Error Code C0000005
 
+{% raw %}
+
 	Article: Q166608
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -45,3 +47,5 @@ permalink: /kb/166/Q166608/
 	
 	=============================================================================
 	
+
+{% endraw %}

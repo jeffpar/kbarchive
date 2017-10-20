@@ -6,6 +6,8 @@ permalink: /kb/156/Q156596/
 
 ## Q156596: Cannot Change Mailbox Numbers in Microsoft Phone
 
+{% raw %}
+
 	Article: Q156596
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/156/Q156596/
 	
 	=============================================================================
 	
+
+{% endraw %}

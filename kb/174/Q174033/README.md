@@ -6,6 +6,8 @@ permalink: /kb/174/Q174033/
 
 ## Q174033: XFOR: Performance Tuning a 16Mbps Token Ring Network for PROFS
 
+{% raw %}
+
 	Article: Q174033
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/174/Q174033/
 	
 	=============================================================================
 	
+
+{% endraw %}

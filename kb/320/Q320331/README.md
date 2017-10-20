@@ -6,6 +6,8 @@ permalink: /kb/320/Q320331/
 
 ## Q320331: User Name Mapping Becomes Inconsistent in a Cluster Environment
 
+{% raw %}
+
 	Article: Q320331
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2 OEM Only,3.0
@@ -80,3 +82,5 @@ permalink: /kb/320/Q320331/
 	
 	=============================================================================
 	
+
+{% endraw %}

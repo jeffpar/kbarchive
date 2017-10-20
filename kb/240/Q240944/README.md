@@ -6,6 +6,8 @@ permalink: /kb/240/Q240944/
 
 ## Q240944: BUG: ListView's Left/Top Properties Return Unexpected Values
 
+{% raw %}
+
 	Article: Q240944
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -152,3 +154,5 @@ permalink: /kb/240/Q240944/
 	
 	=============================================================================
 	
+
+{% endraw %}

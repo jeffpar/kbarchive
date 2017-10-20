@@ -6,6 +6,8 @@ permalink: /kb/169/Q169611/
 
 ## Q169611: BUG: OLE AutoActivate Property Fails When Set To &quot;1 - GotFocus&quot;
 
+{% raw %}
+
 	Article: Q169611
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/169/Q169611/
 	
 	=============================================================================
 	
+
+{% endraw %}

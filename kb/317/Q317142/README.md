@@ -6,6 +6,8 @@ permalink: /kb/317/Q317142/
 
 ## Q317142: How to Change a Service  Account Password with a Batch File
 
+{% raw %}
+
 	Article: Q317142
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/317/Q317142/
 	
 	=============================================================================
 	
+
+{% endraw %}

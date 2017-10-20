@@ -6,6 +6,8 @@ permalink: /kb/162/Q162084/
 
 ## Q162084: PRB: Non-Standard RETURN TO MASTER Behavior After LOCATE Error
 
+{% raw %}
+
 	Article: Q162084
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0
@@ -116,3 +118,5 @@ permalink: /kb/162/Q162084/
 	
 	=============================================================================
 	
+
+{% endraw %}

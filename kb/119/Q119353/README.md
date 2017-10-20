@@ -6,6 +6,8 @@ permalink: /kb/119/Q119353/
 
 ## Q119353: UNCONF: PRB:GETS Disabled When All Records Are Deleted
 
+{% raw %}
+
 	Article: Q119353
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6
@@ -87,3 +89,5 @@ permalink: /kb/119/Q119353/
 	
 	=============================================================================
 	
+
+{% endraw %}

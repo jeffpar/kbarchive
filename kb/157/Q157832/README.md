@@ -6,6 +6,8 @@ permalink: /kb/157/Q157832/
 
 ## Q157832: SMS: NetworkType Not Updated Upgrading from WFWG to Windows NT
 
+{% raw %}
+
 	Article: Q157832
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157832/
 	
 	=============================================================================
 	
+
+{% endraw %}

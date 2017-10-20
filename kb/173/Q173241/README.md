@@ -6,6 +6,8 @@ permalink: /kb/173/Q173241/
 
 ## Q173241: Update to Windows for Workgroups TCP/IP for Out-of-Band Issue
 
+{% raw %}
+
 	Article: Q173241
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11b
@@ -82,3 +84,5 @@ permalink: /kb/173/Q173241/
 	
 	=============================================================================
 	
+
+{% endraw %}

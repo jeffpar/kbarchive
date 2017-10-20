@@ -6,6 +6,8 @@ permalink: /kb/048/Q48669/
 
 ## Q48669: QB 4.50 .EXE Program Might Print DYNAMIC Arrays Incorrectly
 
+{% raw %}
+
 	Article: Q48669
 	Product(s): See article
 	Version(s): 4.50
@@ -122,3 +124,5 @@ permalink: /kb/048/Q48669/
 	The values in the DYNAMIC arrays in the above program will PRINT
 	unpredictably on all machines -- the values can vary depending on the
 	hardware configuration.
+
+{% endraw %}

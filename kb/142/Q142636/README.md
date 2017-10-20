@@ -6,6 +6,8 @@ permalink: /kb/142/Q142636/
 
 ## Q142636: Kernel Debugger 3.51 Not Compatible with Windows NT 4.0
 
+{% raw %}
+
 	Article: Q142636
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/142/Q142636/
 	
 	=============================================================================
 	
+
+{% endraw %}

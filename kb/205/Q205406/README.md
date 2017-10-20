@@ -6,6 +6,8 @@ permalink: /kb/205/Q205406/
 
 ## Q205406: SMS: Client Access Point and Distribution Point Selection
 
+{% raw %}
+
 	Article: Q205406
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -94,3 +96,5 @@ permalink: /kb/205/Q205406/
 	
 	=============================================================================
 	
+
+{% endraw %}

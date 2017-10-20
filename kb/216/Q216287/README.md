@@ -6,6 +6,8 @@ permalink: /kb/216/Q216287/
 
 ## Q216287: XFOR: IMAP4 Extractor Does Not Migrate Filed Messages
 
+{% raw %}
+
 	Article: Q216287
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -46,3 +48,5 @@ permalink: /kb/216/Q216287/
 	
 	=============================================================================
 	
+
+{% endraw %}

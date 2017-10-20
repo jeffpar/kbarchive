@@ -6,6 +6,8 @@ permalink: /kb/154/Q154066/
 
 ## Q154066: Removing Everyone(Read) from %WinRoot% Shuts Down at Logon
 
+{% raw %}
+
 	Article: Q154066
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -55,3 +57,5 @@ permalink: /kb/154/Q154066/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163809/
 
 ## Q163809: WD97: Extend Selection Is Turned Off After Macro Completion
 
+{% raw %}
+
 	Article: Q163809
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/163/Q163809/
 	
 	=============================================================================
 	
+
+{% endraw %}

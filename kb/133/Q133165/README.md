@@ -6,6 +6,8 @@ permalink: /kb/133/Q133165/
 
 ## Q133165: DOCERR: Developer's Guide Gives Incorrect DataSession Default
 
+{% raw %}
+
 	Article: Q133165
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -38,3 +40,5 @@ permalink: /kb/133/Q133165/
 	
 	=============================================================================
 	
+
+{% endraw %}

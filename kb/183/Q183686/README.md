@@ -6,6 +6,8 @@ permalink: /kb/183/Q183686/
 
 ## Q183686: XWEB: Cannot Identify Yourself When Posting Newsgroup Messages
 
+{% raw %}
+
 	Article: Q183686
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -64,3 +66,5 @@ permalink: /kb/183/Q183686/
 	
 	=============================================================================
 	
+
+{% endraw %}

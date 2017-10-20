@@ -6,6 +6,8 @@ permalink: /kb/215/Q215113/
 
 ## Q215113: SMS: Windows 9x Clients Can't Connect to Bindery Emulation CAPs
 
+{% raw %}
+
 	Article: Q215113
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/215/Q215113/
 	
 	=============================================================================
 	
+
+{% endraw %}

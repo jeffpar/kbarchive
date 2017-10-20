@@ -6,6 +6,8 @@ permalink: /kb/061/Q61605/
 
 ## Q61605: DOCERR: NODATA and pwords Parameters Switched in EXPORT Docs
 
+{% raw %}
+
 	Article: Q61605
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.01.21,5.02,5.03,5.05,5.1
@@ -61,3 +63,5 @@ permalink: /kb/061/Q61605/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/301/Q301361/
 
 ## Q301361: XGEN: Incorrect Attachment Processing in Exchange Server 5.5 OWA
 
+{% raw %}
+
 	Article: Q301361
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -156,3 +158,5 @@ permalink: /kb/301/Q301361/
 	
 	=============================================================================
 	
+
+{% endraw %}

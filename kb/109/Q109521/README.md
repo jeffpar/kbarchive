@@ -6,6 +6,8 @@ permalink: /kb/109/Q109521/
 
 ## Q109521: MPU-401 Cards Are Not Supported Under Windows NT
 
+{% raw %}
+
 	Article: Q109521
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -43,3 +45,5 @@ permalink: /kb/109/Q109521/
 	
 	=============================================================================
 	
+
+{% endraw %}

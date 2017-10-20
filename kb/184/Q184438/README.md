@@ -6,6 +6,8 @@ permalink: /kb/184/Q184438/
 
 ## Q184438: XADM: MSExchangeISPriv Event ID 2011 Causes Information Store To
 
+{% raw %}
+
 	Article: Q184438
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -103,3 +105,5 @@ permalink: /kb/184/Q184438/
 	
 	=============================================================================
 	
+
+{% endraw %}

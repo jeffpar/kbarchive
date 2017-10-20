@@ -6,6 +6,8 @@ permalink: /kb/062/Q62269/
 
 ## Q62269: Two Fixed-Length Strings 32K Long in COMMON Hang QuickBASIC
 
+{% raw %}
+
 	Article: Q62269
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -34,3 +36,5 @@ permalink: /kb/062/Q62269/
 	available.
 	
 	The problem does not occur in programs compiled with BC.EXE.
+
+{% endraw %}

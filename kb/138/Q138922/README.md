@@ -6,6 +6,8 @@ permalink: /kb/138/Q138922/
 
 ## Q138922: Disk Activity Light Stops on Compaq DeskPro XLS
 
+{% raw %}
+
 	Article: Q138922
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -54,3 +56,5 @@ permalink: /kb/138/Q138922/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191220/
 
 ## Q191220: XCLN: Outlook Bar Shortcut Empties Server's Deleted Items
 
+{% raw %}
+
 	Article: Q191220
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/191/Q191220/
 	
 	=============================================================================
 	
+
+{% endraw %}

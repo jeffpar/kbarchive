@@ -6,6 +6,8 @@ permalink: /kb/254/Q254120/
 
 ## Q254120: SMS: Following Service Account Name Change, HMAN, &amp; DDM Fail
 
+{% raw %}
+
 	Article: Q254120
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -72,3 +74,5 @@ permalink: /kb/254/Q254120/
 	
 	=============================================================================
 	
+
+{% endraw %}

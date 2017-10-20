@@ -6,6 +6,8 @@ permalink: /kb/150/Q150652/
 
 ## Q150652: MSB Ocean: How to Run MSB Ocean for Macintosh without CD
 
+{% raw %}
+
 	Article: Q150652
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -74,3 +76,5 @@ permalink: /kb/150/Q150652/
 	
 	=============================================================================
 	
+
+{% endraw %}

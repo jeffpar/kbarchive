@@ -6,6 +6,8 @@ permalink: /kb/133/Q133750/
 
 ## Q133750: Julia Child: Button Bar Disappears When Selecting Help Index
 
+{% raw %}
+
 	Article: Q133750
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/133/Q133750/
 	
 	=============================================================================
 	
+
+{% endraw %}

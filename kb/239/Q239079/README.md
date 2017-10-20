@@ -6,6 +6,8 @@ permalink: /kb/239/Q239079/
 
 ## Q239079: DNS INT Zone File Identified as Reverse Instead of Forward
 
+{% raw %}
+
 	Article: Q239079
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -105,3 +107,5 @@ permalink: /kb/239/Q239079/
 	
 	=============================================================================
 	
+
+{% endraw %}

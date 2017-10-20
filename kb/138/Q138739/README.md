@@ -6,6 +6,8 @@ permalink: /kb/138/Q138739/
 
 ## Q138739: Service Pack 2 Upgrade Causes Macintosh Volumes Not To Appear
 
+{% raw %}
+
 	Article: Q138739
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -57,3 +59,5 @@ permalink: /kb/138/Q138739/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303418/
 
 ## Q303418: TRAP Page Fault Error Message with Damaged System Hive
 
+{% raw %}
+
 	Article: Q303418
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -118,3 +120,5 @@ permalink: /kb/303/Q303418/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238524/
 
 ## Q238524: Using Cache Array Routing Protocol with WLBS
 
+{% raw %}
+
 	Article: Q238524
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -314,3 +316,5 @@ permalink: /kb/238/Q238524/
 	
 	=============================================================================
 	
+
+{% endraw %}

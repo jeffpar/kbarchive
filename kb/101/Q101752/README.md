@@ -6,6 +6,8 @@ permalink: /kb/101/Q101752/
 
 ## Q101752: PC Ext: Dispatch Cannot Spawn Batch File Without COMMAND.COM
 
+{% raw %}
+
 	Article: Q101752
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -76,3 +78,5 @@ permalink: /kb/101/Q101752/
 	
 	=============================================================================
 	
+
+{% endraw %}

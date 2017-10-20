@@ -6,6 +6,8 @@ permalink: /kb/290/Q290341/
 
 ## Q290341: IIS5 OWA: Configuring Internet Authentication in Exchange 2000
 
+{% raw %}
+
 	Article: Q290341
 	Product(s): Internet Information Server
 	Version(s): 2000,5.0
@@ -78,3 +80,5 @@ permalink: /kb/290/Q290341/
 	
 	=============================================================================
 	
+
+{% endraw %}

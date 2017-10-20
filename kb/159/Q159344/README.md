@@ -6,6 +6,8 @@ permalink: /kb/159/Q159344/
 
 ## Q159344: Fatal Exception in DLC Running Program from NetWare Server
 
+{% raw %}
+
 	Article: Q159344
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -70,3 +72,5 @@ permalink: /kb/159/Q159344/
 	
 	=============================================================================
 	
+
+{% endraw %}

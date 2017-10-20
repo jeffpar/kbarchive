@@ -6,6 +6,8 @@ permalink: /kb/196/Q196833/
 
 ## Q196833: EditGrid.exe: Edit Cells in MSFlexGrid ActiveX Control
 
+{% raw %}
+
 	Article: Q196833
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -135,8 +137,8 @@ permalink: /kb/196/Q196833/
 	     EdtGrid.cpp
 	
 	        BEGIN_EVENTSINK_MAP(CEditGrid, CMSFlexGrid)
-	        // { {AFX_EVENTSINK_MAP(CEditGrid)
-	        // } }AFX_EVENTSINK_MAP
+	        // {{AFX_EVENTSINK_MAP(CEditGrid)
+	        // }}AFX_EVENTSINK_MAP
 	           ON_EVENT_REFLECT(CEditGrid, -603 /* KeyPress */, OnKeyPressGrid,
 	                            VTS_PI2)
 	           ON_EVENT_REFLECT(CEditGrid, -601 /* DblClick */, OnDblClickGrid,
@@ -259,3 +261,5 @@ permalink: /kb/196/Q196833/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184743/
 
 ## Q184743: PRB: Script Code Runs During AddCode Method
 
+{% raw %}
+
 	Article: Q184743
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/184/Q184743/
 	
 	=============================================================================
 	
+
+{% endraw %}

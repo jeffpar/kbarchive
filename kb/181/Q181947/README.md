@@ -6,6 +6,8 @@ permalink: /kb/181/Q181947/
 
 ## Q181947: XCON: PRMD Value in Numeric-OR-Address Won't Downgrade to 84
 
+{% raw %}
+
 	Article: Q181947
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/181/Q181947/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103219/
 
 ## Q103219: Testing to See if a Drive is a CD-ROM
 
+{% raw %}
+
 	Article: Q103219
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/103/Q103219/
 	
 	=============================================================================
 	
+
+{% endraw %}

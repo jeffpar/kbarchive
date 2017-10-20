@@ -6,6 +6,8 @@ permalink: /kb/082/Q82326/
 
 ## Q82326: EMM386.EXE Causes Problems for Ventura 4.0 in Standard Mode
 
+{% raw %}
+
 	Article: Q82326
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/082/Q82326/
 	
 	=============================================================================
 	
+
+{% endraw %}

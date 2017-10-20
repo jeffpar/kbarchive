@@ -6,6 +6,8 @@ permalink: /kb/112/Q112266/
 
 ## Q112266: PC DOS: Updating Monitor Hotkey Status
 
+{% raw %}
+
 	Article: Q112266
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -39,3 +41,5 @@ permalink: /kb/112/Q112266/
 	
 	=============================================================================
 	
+
+{% endraw %}

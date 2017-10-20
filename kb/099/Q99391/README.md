@@ -6,6 +6,8 @@ permalink: /kb/099/Q99391/
 
 ## Q99391: INFO: Converting an RC File to Use Microsoft Foundation Classes
 
+{% raw %}
+
 	Article: Q99391
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/099/Q99391/
 	
 	=============================================================================
 	
+
+{% endraw %}

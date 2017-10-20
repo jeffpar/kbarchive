@@ -6,6 +6,8 @@ permalink: /kb/158/Q158876/
 
 ## Q158876: Msbatch.inf Parameters: Remove the Welcome To Windows Box
 
+{% raw %}
+
 	Article: Q158876
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/158/Q158876/
 	
 	=============================================================================
 	
+
+{% endraw %}

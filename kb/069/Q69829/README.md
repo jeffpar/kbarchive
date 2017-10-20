@@ -6,6 +6,8 @@ permalink: /kb/069/Q69829/
 
 ## Q69829: Running Windows in Enhanced Mode with Tandy 4000 with SCSI
 
+{% raw %}
+
 	Article: Q69829
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/069/Q69829/
 	
 	=============================================================================
 	
+
+{% endraw %}

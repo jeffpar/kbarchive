@@ -6,6 +6,8 @@ permalink: /kb/169/Q169456/
 
 ## Q169456: Multihomed DNS Server May Fail Recursive Queries
 
+{% raw %}
+
 	Article: Q169456
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/169/Q169456/
 	
 	=============================================================================
 	
+
+{% endraw %}

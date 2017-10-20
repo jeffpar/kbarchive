@@ -6,6 +6,8 @@ permalink: /kb/069/Q69080/
 
 ## Q69080: Simulating Drag-and-Drop Interface for Custom Control
 
+{% raw %}
+
 	Article: Q69080
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -58,3 +60,5 @@ permalink: /kb/069/Q69080/
 	
 	=============================================================================
 	
+
+{% endraw %}

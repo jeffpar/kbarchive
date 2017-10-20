@@ -6,6 +6,8 @@ permalink: /kb/167/Q167679/
 
 ## Q167679: INFO: Placement of Screen Code with Functional Conversion
 
+{% raw %}
+
 	Article: Q167679
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/167/Q167679/
 	
 	=============================================================================
 	
+
+{% endraw %}

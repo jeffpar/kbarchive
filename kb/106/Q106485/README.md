@@ -6,6 +6,8 @@ permalink: /kb/106/Q106485/
 
 ## Q106485: PRB: Menu Hot Key (ALT+&lt;Key&gt;) Doesn't Work
 
+{% raw %}
+
 	Article: Q106485
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6,2.6a,3.0
@@ -54,3 +56,5 @@ permalink: /kb/106/Q106485/
 	
 	=============================================================================
 	
+
+{% endraw %}

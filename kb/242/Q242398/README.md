@@ -6,6 +6,8 @@ permalink: /kb/242/Q242398/
 
 ## Q242398: Cluster Loses Track of Custom Resource DLL Registration
 
+{% raw %}
+
 	Article: Q242398
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -82,3 +84,5 @@ permalink: /kb/242/Q242398/
 	
 	=============================================================================
 	
+
+{% endraw %}

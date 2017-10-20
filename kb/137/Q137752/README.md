@@ -6,6 +6,8 @@ permalink: /kb/137/Q137752/
 
 ## Q137752: Cannot Print to Microsoft Fax Printer Driver
 
+{% raw %}
+
 	Article: Q137752
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:; Win2000:95
@@ -71,3 +73,5 @@ permalink: /kb/137/Q137752/
 	
 	=============================================================================
 	
+
+{% endraw %}

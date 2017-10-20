@@ -6,6 +6,8 @@ permalink: /kb/219/Q219037/
 
 ## Q219037: XCLN: Advanced Security Setting Not Consistent
 
+{% raw %}
+
 	Article: Q219037
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -96,3 +98,5 @@ permalink: /kb/219/Q219037/
 	
 	=============================================================================
 	
+
+{% endraw %}

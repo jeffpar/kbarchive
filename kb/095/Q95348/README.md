@@ -6,6 +6,8 @@ permalink: /kb/095/Q95348/
 
 ## Q95348: Converting Stacker-Compressed Removable Disks
 
+{% raw %}
+
 	Article: Q95348
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -109,3 +111,5 @@ permalink: /kb/095/Q95348/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139841/
 
 ## Q139841: SNMP Returns Corrupt MAC Address
 
+{% raw %}
+
 	Article: Q139841
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -78,3 +80,5 @@ permalink: /kb/139/Q139841/
 	
 	=============================================================================
 	
+
+{% endraw %}

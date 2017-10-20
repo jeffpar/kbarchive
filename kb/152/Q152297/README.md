@@ -6,6 +6,8 @@ permalink: /kb/152/Q152297/
 
 ## Q152297: PRB: Calling APRINTERS Function Causes Feature Not Available
 
+{% raw %}
+
 	Article: Q152297
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -67,3 +69,5 @@ permalink: /kb/152/Q152297/
 	
 	=============================================================================
 	
+
+{% endraw %}

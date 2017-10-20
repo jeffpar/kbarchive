@@ -6,6 +6,8 @@ permalink: /kb/073/Q73117/
 
 ## Q73117: MSU Introduces MS-DOS 5 Video Course for Support Engineers
 
+{% raw %}
+
 	Article: Q73117
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -46,3 +48,5 @@ permalink: /kb/073/Q73117/
 	
 	=============================================================================
 	
+
+{% endraw %}

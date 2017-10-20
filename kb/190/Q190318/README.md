@@ -6,6 +6,8 @@ permalink: /kb/190/Q190318/
 
 ## Q190318: PRB: BINTOC() Fails with SET COLLATE TO &quot;GENERAL&quot;
 
+{% raw %}
+
 	Article: Q190318
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -69,3 +71,5 @@ permalink: /kb/190/Q190318/
 	
 	=============================================================================
 	
+
+{% endraw %}

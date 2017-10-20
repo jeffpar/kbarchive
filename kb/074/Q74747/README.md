@@ -6,6 +6,8 @@ permalink: /kb/074/Q74747/
 
 ## Q74747: INFO: Why Microsoft Development Tools Use TMP Instead of TEMP
 
+{% raw %}
+
 	Article: Q74747
 	Product(s): Microsoft C Compiler
 	Version(s): ; MS-DOS:; WINDOWS:1.0,1.5; winnt:1.0,2.0,2.1,4.0,5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/074/Q74747/
 	
 	=============================================================================
 	
+
+{% endraw %}

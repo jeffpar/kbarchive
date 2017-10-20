@@ -6,6 +6,8 @@ permalink: /kb/189/Q189601/
 
 ## Q189601: PRB: Numeric Values Shift in Grid Column Containing NULL Values
 
+{% raw %}
+
 	Article: Q189601
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -106,3 +108,5 @@ permalink: /kb/189/Q189601/
 	
 	=============================================================================
 	
+
+{% endraw %}

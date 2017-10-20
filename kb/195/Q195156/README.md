@@ -6,6 +6,8 @@ permalink: /kb/195/Q195156/
 
 ## Q195156: XCLN: Windows NT Change Password Button Is Enabled with DPA
 
+{% raw %}
+
 	Article: Q195156
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:5.5
@@ -93,3 +95,5 @@ permalink: /kb/195/Q195156/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96484/
 
 ## Q96484: Certified Boot ROM List
 
+{% raw %}
+
 	Article: Q96484
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/096/Q96484/
 	
 	=============================================================================
 	
+
+{% endraw %}

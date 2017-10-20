@@ -6,6 +6,8 @@ permalink: /kb/271/Q271532/
 
 ## Q271532: Encarta 2001: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q271532
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -199,3 +201,5 @@ permalink: /kb/271/Q271532/
 	
 	=============================================================================
 	
+
+{% endraw %}

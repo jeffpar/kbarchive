@@ -6,6 +6,8 @@ permalink: /kb/150/Q150271/
 
 ## Q150271: Duplicate Name on the Network error message
 
+{% raw %}
+
 	Article: Q150271
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150271/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90819/
 
 ## Q90819: Paintbrush and Write Use Different Font Size Measurements
 
+{% raw %}
+
 	Article: Q90819
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/090/Q90819/
 	
 	=============================================================================
 	
+
+{% endraw %}

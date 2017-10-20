@@ -6,6 +6,8 @@ permalink: /kb/090/Q90199/
 
 ## Q90199: Setup May Hang with FASTOPEN.EXE Installed
 
+{% raw %}
+
 	Article: Q90199
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -47,3 +49,5 @@ permalink: /kb/090/Q90199/
 	
 	=============================================================================
 	
+
+{% endraw %}

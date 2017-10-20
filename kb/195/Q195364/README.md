@@ -6,6 +6,8 @@ permalink: /kb/195/Q195364/
 
 ## Q195364: Err Msg: Mcdetect Caused an Invalid Page Fault in Msvcrt40.dll
 
+{% raw %}
+
 	Article: Q195364
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51
@@ -99,3 +101,5 @@ permalink: /kb/195/Q195364/
 	
 	=============================================================================
 	
+
+{% endraw %}

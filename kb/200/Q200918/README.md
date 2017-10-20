@@ -6,6 +6,8 @@ permalink: /kb/200/Q200918/
 
 ## Q200918: SMSINST: The Application or DLL OLE2.DLL is Not a Valid NT Image
 
+{% raw %}
+
 	Article: Q200918
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/200/Q200918/
 	
 	=============================================================================
 	
+
+{% endraw %}

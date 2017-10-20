@@ -6,6 +6,8 @@ permalink: /kb/321/Q321599/
 
 ## Q321599: MS02-028: Heap Overrun in HTR Chunked Encoding Weakens Web Srv
 
+{% raw %}
+
 	Article: Q321599
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -246,3 +248,5 @@ permalink: /kb/321/Q321599/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/290/Q290651/
 
 ## Q290651: XADM: Cannot Bring Exchange Services Online Using Cluster Admin
 
+{% raw %}
+
 	Article: Q290651
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -130,3 +132,5 @@ permalink: /kb/290/Q290651/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186539/
 
 ## Q186539: Terminal Server Error Messages: 0 to 199
 
+{% raw %}
+
 	Article: Q186539
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -745,3 +747,5 @@ permalink: /kb/186/Q186539/
 	
 	=============================================================================
 	
+
+{% endraw %}

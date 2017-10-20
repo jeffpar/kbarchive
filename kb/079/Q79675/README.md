@@ -6,6 +6,8 @@ permalink: /kb/079/Q79675/
 
 ## Q79675: DOC: LBS_STANDARD List Box Style Documented Incorrectly
 
+{% raw %}
+
 	Article: Q79675
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -41,3 +43,5 @@ permalink: /kb/079/Q79675/
 	
 	=============================================================================
 	
+
+{% endraw %}

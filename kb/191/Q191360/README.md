@@ -6,6 +6,8 @@ permalink: /kb/191/Q191360/
 
 ## Q191360: SMS: Despooler Retry Count Increments by 2 and Not by 1
 
+{% raw %}
+
 	Article: Q191360
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP1,1.2 SP2
@@ -74,3 +76,5 @@ permalink: /kb/191/Q191360/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168330/
 
 ## Q168330: WD97: Alpha: Cannot Use Word 97 Converter with Alpha Word 6.0
 
+{% raw %}
+
 	Article: Q168330
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/168/Q168330/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/062/Q62362/
 
 ## Q62362: Printing from a Network Aware/Unaware MS-DOS Application
 
+{% raw %}
+
 	Article: Q62362
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/062/Q62362/
 	
 	=============================================================================
 	
+
+{% endraw %}

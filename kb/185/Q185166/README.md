@@ -6,6 +6,8 @@ permalink: /kb/185/Q185166/
 
 ## Q185166: WD97: EnableCancelKey Fails to Reset After Macro Completion
 
+{% raw %}
+
 	Article: Q185166
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -138,3 +140,5 @@ permalink: /kb/185/Q185166/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108633/
 
 ## Q108633: BUG: &quot;Invalid File Descriptor&quot; When Saving Read-Only Query
 
+{% raw %}
+
 	Article: Q108633
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,5.0a
@@ -78,3 +80,5 @@ permalink: /kb/108/Q108633/
 	
 	=============================================================================
 	
+
+{% endraw %}

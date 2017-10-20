@@ -6,6 +6,8 @@ permalink: /kb/225/Q225087/
 
 ## Q225087: Writing Custom ADM Files For System Policy Editor
 
+{% raw %}
+
 	Article: Q225087
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -333,3 +335,5 @@ permalink: /kb/225/Q225087/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159309/
 
 ## Q159309: Windows NT 4.0 RAS Not Releasing Static IP Addresses
 
+{% raw %}
+
 	Article: Q159309
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/159/Q159309/
 	
 	=============================================================================
 	
+
+{% endraw %}

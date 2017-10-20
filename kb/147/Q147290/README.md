@@ -6,6 +6,8 @@ permalink: /kb/147/Q147290/
 
 ## Q147290: Changing Focus From Role Box Loses Newly Typed Data
 
+{% raw %}
+
 	Article: Q147290
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -43,3 +45,5 @@ permalink: /kb/147/Q147290/
 	
 	=============================================================================
 	
+
+{% endraw %}

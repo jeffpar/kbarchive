@@ -6,6 +6,8 @@ permalink: /kb/067/Q67430/
 
 ## Q67430: Using Automatic Scenery Selection with SubLOGIC Scenery
 
+{% raw %}
+
 	Article: Q67430
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/067/Q67430/
 	
 	=============================================================================
 	
+
+{% endraw %}

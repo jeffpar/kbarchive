@@ -6,6 +6,8 @@ permalink: /kb/240/Q240871/
 
 ## Q240871: BUG: Explicitly Specified Template Functions Not Overloaded
 
+{% raw %}
+
 	Article: Q240871
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/240/Q240871/
 	
 	=============================================================================
 	
+
+{% endraw %}

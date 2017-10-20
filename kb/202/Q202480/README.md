@@ -6,6 +6,8 @@ permalink: /kb/202/Q202480/
 
 ## Q202480: HOW TO: Determine Printer Status and Print Job Status from VB
 
+{% raw %}
+
 	Article: Q202480
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -798,3 +800,5 @@ permalink: /kb/202/Q202480/
 	
 	=============================================================================
 	
+
+{% endraw %}

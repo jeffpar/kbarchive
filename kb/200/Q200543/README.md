@@ -6,6 +6,8 @@ permalink: /kb/200/Q200543/
 
 ## Q200543: SMS: PGC Status Setter - PGCSET32.EXE
 
+{% raw %}
+
 	Article: Q200543
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -72,3 +74,5 @@ permalink: /kb/200/Q200543/
 	
 	=============================================================================
 	
+
+{% endraw %}

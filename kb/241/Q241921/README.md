@@ -6,6 +6,8 @@ permalink: /kb/241/Q241921/
 
 ## Q241921: WD97: Copied Text Viewed as Metafile Appears Clipped in Viewer
 
+{% raw %}
+
 	Article: Q241921
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/241/Q241921/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41087/
 
 ## Q41087: Mouse and Lotus 1-2-3 Mouse Menu Under Windows/286
 
+{% raw %}
+
 	Article: Q41087
 	Product(s): See article
 	Version(s): 1.00
@@ -26,3 +28,5 @@ permalink: /kb/041/Q41087/
 	correctly. If not, reboot the system from the original floppy DOS disk
 	to make sure nothing else in memory is interfering, then load the
 	mouse and menu into memory.
+
+{% endraw %}

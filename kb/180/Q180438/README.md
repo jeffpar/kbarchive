@@ -6,6 +6,8 @@ permalink: /kb/180/Q180438/
 
 ## Q180438: Problems If Screen Saver Password Is More Than 14 Characters
 
+{% raw %}
+
 	Article: Q180438
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -72,3 +74,5 @@ permalink: /kb/180/Q180438/
 	
 	=============================================================================
 	
+
+{% endraw %}

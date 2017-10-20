@@ -6,6 +6,8 @@ permalink: /kb/068/Q68384/
 
 ## Q68384: First _pg_chartscatter() Call May Not Use Specified plotchar
 
+{% raw %}
+
 	Article: Q68384
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -93,3 +95,5 @@ permalink: /kb/068/Q68384/
 	
 	    _setvideomode( _DEFAULTMODE );
 	}
+
+{% endraw %}

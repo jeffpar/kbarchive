@@ -6,6 +6,8 @@ permalink: /kb/217/Q217183/
 
 ## Q217183: FIX: GetPropertyInfo Not Returning Correct Values for Default Ca
 
+{% raw %}
+
 	Article: Q217183
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0,6.0 SP3; winnt:6.0
@@ -132,3 +134,5 @@ permalink: /kb/217/Q217183/
 	
 	=============================================================================
 	
+
+{% endraw %}

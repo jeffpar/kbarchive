@@ -6,6 +6,8 @@ permalink: /kb/245/Q245331/
 
 ## Q245331: IIS: HTMLA Allows the Selection of Require Client Certificates
 
+{% raw %}
+
 	Article: Q245331
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -66,3 +68,5 @@ permalink: /kb/245/Q245331/
 	
 	=============================================================================
 	
+
+{% endraw %}

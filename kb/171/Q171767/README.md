@@ -6,6 +6,8 @@ permalink: /kb/171/Q171767/
 
 ## Q171767: OS/2 Clients Do Not Receive Print Notification
 
+{% raw %}
+
 	Article: Q171767
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -53,3 +55,5 @@ permalink: /kb/171/Q171767/
 	
 	=============================================================================
 	
+
+{% endraw %}

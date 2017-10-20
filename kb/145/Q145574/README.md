@@ -6,6 +6,8 @@ permalink: /kb/145/Q145574/
 
 ## Q145574: FIX: IDE Appears to Hang If Browse Key (F11 or F12) Is Pressed
 
+{% raw %}
+
 	Article: Q145574
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -60,3 +62,5 @@ permalink: /kb/145/Q145574/
 	
 	=============================================================================
 	
+
+{% endraw %}

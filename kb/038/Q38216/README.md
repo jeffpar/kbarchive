@@ -6,6 +6,8 @@ permalink: /kb/038/Q38216/
 
 ## Q38216: PRB: Possible Cause of L2002 for Mixed C, MASM in Large Model
 
+{% raw %}
+
 	Article: Q38216
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -80,3 +82,5 @@ permalink: /kb/038/Q38216/
 	
 	=============================================================================
 	
+
+{% endraw %}

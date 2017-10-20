@@ -6,6 +6,8 @@ permalink: /kb/096/Q96417/
 
 ## Q96417: Mac GW: Incompatibility Between GW and Cache Switch
 
+{% raw %}
+
 	Article: Q96417
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/096/Q96417/
 	
 	=============================================================================
 	
+
+{% endraw %}

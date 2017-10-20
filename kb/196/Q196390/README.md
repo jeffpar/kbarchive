@@ -6,6 +6,8 @@ permalink: /kb/196/Q196390/
 
 ## Q196390: SNA Server Refuses New User Connection after Server Restarted
 
+{% raw %}
+
 	Article: Q196390
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -78,3 +80,5 @@ permalink: /kb/196/Q196390/
 	
 	=============================================================================
 	
+
+{% endraw %}

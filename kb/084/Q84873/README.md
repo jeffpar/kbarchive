@@ -6,6 +6,8 @@ permalink: /kb/084/Q84873/
 
 ## Q84873: COMxFIFO Does Not Properly Understand True and False
 
+{% raw %}
+
 	Article: Q84873
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/084/Q84873/
 	
 	=============================================================================
 	
+
+{% endraw %}

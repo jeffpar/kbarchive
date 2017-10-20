@@ -6,6 +6,8 @@ permalink: /kb/260/Q260147/
 
 ## Q260147: FS2000 Error Message: Failed to Initialize GPS Engine
 
+{% raw %}
+
 	Article: Q260147
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -139,3 +141,5 @@ permalink: /kb/260/Q260147/
 	
 	=============================================================================
 	
+
+{% endraw %}

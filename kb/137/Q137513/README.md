@@ -6,6 +6,8 @@ permalink: /kb/137/Q137513/
 
 ## Q137513: User Manager Cannot Rename a Group
 
+{% raw %}
+
 	Article: Q137513
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -50,3 +52,5 @@ permalink: /kb/137/Q137513/
 	
 	=============================================================================
 	
+
+{% endraw %}

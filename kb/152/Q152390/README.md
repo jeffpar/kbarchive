@@ -6,6 +6,8 @@ permalink: /kb/152/Q152390/
 
 ## Q152390: Gardening: Back Button Does Not Return to Original Category
 
+{% raw %}
+
 	Article: Q152390
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/152/Q152390/
 	
 	=============================================================================
 	
+
+{% endraw %}

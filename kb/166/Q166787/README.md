@@ -6,6 +6,8 @@ permalink: /kb/166/Q166787/
 
 ## Q166787: WD97: ODMA File Open Not Supported in Mail Merge
 
+{% raw %}
+
 	Article: Q166787
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -46,3 +48,5 @@ permalink: /kb/166/Q166787/
 	
 	=============================================================================
 	
+
+{% endraw %}

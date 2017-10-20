@@ -6,6 +6,8 @@ permalink: /kb/106/Q106439/
 
 ## Q106439: Extended Characters May Be Displayed Incorrectly in WinPopup
 
+{% raw %}
+
 	Article: Q106439
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -41,3 +43,5 @@ permalink: /kb/106/Q106439/
 	
 	=============================================================================
 	
+
+{% endraw %}

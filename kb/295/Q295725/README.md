@@ -6,6 +6,8 @@ permalink: /kb/295/Q295725/
 
 ## Q295725: Receiving Duplicate Inbound SMTP Messages
 
+{% raw %}
+
 	Article: Q295725
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -123,3 +125,5 @@ permalink: /kb/295/Q295725/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117730/
 
 ## Q117730: Customer Letter Included with TrueType Font Pack Version 1.0a
 
+{% raw %}
+
 	Article: Q117730
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -127,3 +129,5 @@ permalink: /kb/117/Q117730/
 	
 	=============================================================================
 	
+
+{% endraw %}

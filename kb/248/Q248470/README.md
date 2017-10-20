@@ -6,6 +6,8 @@ permalink: /kb/248/Q248470/
 
 ## Q248470: Fighter Ace II: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q248470
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/248/Q248470/
 	
 	=============================================================================
 	
+
+{% endraw %}

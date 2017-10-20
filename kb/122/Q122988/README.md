@@ -6,6 +6,8 @@ permalink: /kb/122/Q122988/
 
 ## Q122988: SMS Installation Incomplete with Missing Admin Drive Share
 
+{% raw %}
+
 	Article: Q122988
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -67,3 +69,5 @@ permalink: /kb/122/Q122988/
 	
 	=============================================================================
 	
+
+{% endraw %}

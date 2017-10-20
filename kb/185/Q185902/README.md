@@ -6,6 +6,8 @@ permalink: /kb/185/Q185902/
 
 ## Q185902: SMSINST: %SystemRoot% Values Not Written to Registry Correctly
 
+{% raw %}
+
 	Article: Q185902
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/185/Q185902/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75471/
 
 ## Q75471: INFO: Basics of Banding Printing in Windows
 
+{% raw %}
+
 	Article: Q75471
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -84,3 +86,5 @@ permalink: /kb/075/Q75471/
 	
 	=============================================================================
 	
+
+{% endraw %}

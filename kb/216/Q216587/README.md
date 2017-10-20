@@ -6,6 +6,8 @@ permalink: /kb/216/Q216587/
 
 ## Q216587: BUG: Previewing Report Writer Causes Memory Leak
 
+{% raw %}
+
 	Article: Q216587
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -79,3 +81,5 @@ permalink: /kb/216/Q216587/
 	
 	=============================================================================
 	
+
+{% endraw %}

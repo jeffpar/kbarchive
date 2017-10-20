@@ -6,6 +6,8 @@ permalink: /kb/132/Q132991/
 
 ## Q132991: Microsoft Fax for Windows 95 Questions and Answers
 
+{% raw %}
+
 	Article: Q132991
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -127,3 +129,5 @@ permalink: /kb/132/Q132991/
 	
 	=============================================================================
 	
+
+{% endraw %}

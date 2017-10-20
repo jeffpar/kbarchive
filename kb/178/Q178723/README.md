@@ -6,6 +6,8 @@ permalink: /kb/178/Q178723/
 
 ## Q178723: Problems with &quot;Run Only Allowed Windows Application&quot;
 
+{% raw %}
+
 	Article: Q178723
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -128,3 +130,5 @@ permalink: /kb/178/Q178723/
 	
 	=============================================================================
 	
+
+{% endraw %}

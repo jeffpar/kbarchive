@@ -6,6 +6,8 @@ permalink: /kb/140/Q140766/
 
 ## Q140766: MSB Ocean: Video Distortion in Games When Using S3 Card
 
+{% raw %}
+
 	Article: Q140766
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,3.x
@@ -72,3 +74,5 @@ permalink: /kb/140/Q140766/
 	
 	=============================================================================
 	
+
+{% endraw %}

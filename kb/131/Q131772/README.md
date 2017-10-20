@@ -6,6 +6,8 @@ permalink: /kb/131/Q131772/
 
 ## Q131772: INFO: Setting Compare to Checksum Speeds GET Command
 
+{% raw %}
+
 	Article: Q131772
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/131/Q131772/
 	
 	=============================================================================
 	
+
+{% endraw %}

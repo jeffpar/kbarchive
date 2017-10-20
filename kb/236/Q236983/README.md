@@ -6,6 +6,8 @@ permalink: /kb/236/Q236983/
 
 ## Q236983: XADM: Using Directory Import to Modify the Internet Protocol
 
+{% raw %}
+
 	Article: Q236983
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -129,3 +131,5 @@ permalink: /kb/236/Q236983/
 	
 	=============================================================================
 	
+
+{% endraw %}

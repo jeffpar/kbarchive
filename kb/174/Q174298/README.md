@@ -6,6 +6,8 @@ permalink: /kb/174/Q174298/
 
 ## Q174298: XADM: Customizing the Moderator Address in Moderated Newsgroup
 
+{% raw %}
+
 	Article: Q174298
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/174/Q174298/
 	
 	=============================================================================
 	
+
+{% endraw %}

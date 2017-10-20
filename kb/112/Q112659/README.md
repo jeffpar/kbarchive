@@ -6,6 +6,8 @@ permalink: /kb/112/Q112659/
 
 ## Q112659: BootExecute Incorrectly Documented in Resource Kit
 
+{% raw %}
+
 	Article: Q112659
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -41,3 +43,5 @@ permalink: /kb/112/Q112659/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200941/
 
 ## Q200941: XADM: How the Restore in Progress Registry Key Works
 
+{% raw %}
+
 	Article: Q200941
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -573,3 +575,5 @@ permalink: /kb/200/Q200941/
 	
 	=============================================================================
 	
+
+{% endraw %}

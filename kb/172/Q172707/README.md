@@ -6,6 +6,8 @@ permalink: /kb/172/Q172707/
 
 ## Q172707: File Manager Shows Incorrect Date for Year 2000 or Later
 
+{% raw %}
+
 	Article: Q172707
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -67,3 +69,5 @@ permalink: /kb/172/Q172707/
 	
 	=============================================================================
 	
+
+{% endraw %}

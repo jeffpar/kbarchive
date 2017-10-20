@@ -6,6 +6,8 @@ permalink: /kb/251/Q251045/
 
 ## Q251045: BUG:Memory in Shared Code Sections Not Shared Across TS Sessions
 
+{% raw %}
+
 	Article: Q251045
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000
@@ -85,3 +87,5 @@ permalink: /kb/251/Q251045/
 	
 	=============================================================================
 	
+
+{% endraw %}

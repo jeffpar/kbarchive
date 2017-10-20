@@ -6,6 +6,8 @@ permalink: /kb/172/Q172227/
 
 ## Q172227: Network Address Translators Can Block Netlogon Traffic
 
+{% raw %}
+
 	Article: Q172227
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -143,3 +145,5 @@ permalink: /kb/172/Q172227/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187424/
 
 ## Q187424: Start Menu Remote Shortcut Not Removed
 
+{% raw %}
+
 	Article: Q187424
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -44,3 +46,5 @@ permalink: /kb/187/Q187424/
 	
 	=============================================================================
 	
+
+{% endraw %}

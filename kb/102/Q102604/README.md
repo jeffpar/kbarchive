@@ -6,6 +6,8 @@ permalink: /kb/102/Q102604/
 
 ## Q102604: Windows NT Does Not Support Power Management
 
+{% raw %}
+
 	Article: Q102604
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -40,3 +42,5 @@ permalink: /kb/102/Q102604/
 	
 	=============================================================================
 	
+
+{% endraw %}

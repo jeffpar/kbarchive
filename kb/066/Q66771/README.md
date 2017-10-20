@@ -6,6 +6,8 @@ permalink: /kb/066/Q66771/
 
 ## Q66771: How to Re-create BASIC Help Files Using HELPMAKE.EXE
 
+{% raw %}
+
 	Article: Q66771
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -59,3 +61,5 @@ permalink: /kb/066/Q66771/
 	
 	For a more detailed discussion of HELPMAKE, refer to Chapter 11 of
 	"Microsoft BASIC 7.0: Programmer's Guide" for versions 7.00 and 7.10.
+
+{% endraw %}

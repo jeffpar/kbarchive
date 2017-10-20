@@ -6,6 +6,8 @@ permalink: /kb/187/Q187913/
 
 ## Q187913: HOWTO: List Running Processes
 
+{% raw %}
+
 	Article: Q187913
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -247,3 +249,5 @@ permalink: /kb/187/Q187913/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/297/Q297267/
 
 ## Q297267: How to Configure the Windows Exit Screen Saver Tool
 
+{% raw %}
+
 	Article: Q297267
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -111,3 +113,5 @@ permalink: /kb/297/Q297267/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/048/Q48967/
 
 ## Q48967: Confusion Regarding the /Zs Switch
 
+{% raw %}
+
 	Article: Q48967
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -22,3 +24,5 @@ permalink: /kb/048/Q48967/
 	that it does not generate any code, it may appear that other switches,
 	such as the /Fa switch, which generates an assembly listing, do not
 	function.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125372/
 
 ## Q125372: How To Check for a Floppy Disk Using FOXTOOLS
 
+{% raw %}
+
 	Article: Q125372
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6x 3.00 3.00b
@@ -138,3 +140,5 @@ permalink: /kb/125/Q125372/
 	
 	=============================================================================
 	
+
+{% endraw %}

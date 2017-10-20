@@ -6,6 +6,8 @@ permalink: /kb/173/Q173454/
 
 ## Q173454: XADM: System Messages Are Not Modifiable
 
+{% raw %}
+
 	Article: Q173454
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -37,3 +39,5 @@ permalink: /kb/173/Q173454/
 	
 	=============================================================================
 	
+
+{% endraw %}

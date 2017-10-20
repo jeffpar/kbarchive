@@ -6,6 +6,8 @@ permalink: /kb/081/Q81643/
 
 ## Q81643: Exchanging a Disk Between DR-DOS 6.0 and MS-DOS
 
+{% raw %}
+
 	Article: Q81643
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:1.x,2.x,3.x,4.x,6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/081/Q81643/
 	
 	=============================================================================
 	
+
+{% endraw %}

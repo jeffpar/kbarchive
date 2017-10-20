@@ -6,6 +6,8 @@ permalink: /kb/169/Q169848/
 
 ## Q169848: XADM: Performance Optimizer Fails with Low Disk Space
 
+{% raw %}
+
 	Article: Q169848
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/169/Q169848/
 	
 	=============================================================================
 	
+
+{% endraw %}

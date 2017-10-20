@@ -6,6 +6,8 @@ permalink: /kb/116/Q116220/
 
 ## Q116220: WD97: Character Formatting in Data Source Not Retained In Merge
 
+{% raw %}
+
 	Article: Q116220
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/116/Q116220/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158019/
 
 ## Q158019: SMS: Quick Windows Viewer Unavailable on RC French WinNT Client
 
+{% raw %}
+
 	Article: Q158019
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,1.2 SP1
@@ -65,3 +67,5 @@ permalink: /kb/158/Q158019/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216211/
 
 ## Q216211: PRB: Extended ASCII Characters Displayed as &quot;?&quot;
 
+{% raw %}
+
 	Article: Q216211
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -177,3 +179,5 @@ permalink: /kb/216/Q216211/
 	
 	=============================================================================
 	
+
+{% endraw %}

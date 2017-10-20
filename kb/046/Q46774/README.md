@@ -6,6 +6,8 @@ permalink: /kb/046/Q46774/
 
 ## Q46774: Calculating an Application's Load Size, Minimum Load Size
 
+{% raw %}
+
 	Article: Q46774
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/046/Q46774/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146036/
 
 ## Q146036: XCLN: Deliver/Read Receipts Continue Though Turned Off
 
+{% raw %}
+
 	Article: Q146036
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/146/Q146036/
 	
 	=============================================================================
 	
+
+{% endraw %}

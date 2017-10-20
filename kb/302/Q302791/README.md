@@ -6,6 +6,8 @@ permalink: /kb/302/Q302791/
 
 ## Q302791: Windows XP Beta 2 Users May Lose MSN Explorer Favorites When Usi
 
+{% raw %}
+
 	Article: Q302791
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -50,3 +52,5 @@ permalink: /kb/302/Q302791/
 	
 	=============================================================================
 	
+
+{% endraw %}

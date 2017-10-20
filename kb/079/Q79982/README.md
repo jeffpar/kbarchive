@@ -6,6 +6,8 @@ permalink: /kb/079/Q79982/
 
 ## Q79982: PRB: BS_GROUPBOX-Style Child Window Background Painting Wrong
 
+{% raw %}
+
 	Article: Q79982
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -114,3 +116,5 @@ permalink: /kb/079/Q79982/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199058/
 
 ## Q199058: BUG: Debugger.SetNextStatement Displays Dialog Box
 
+{% raw %}
+
 	Article: Q199058
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0,1.1,97; winnt:5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/199/Q199058/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/312/Q312105/
 
 ## Q312105: HOWTO: Save Outlook E-mail to a Folder Other Than Sent Items
 
+{% raw %}
+
 	Article: Q312105
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -230,3 +232,5 @@ permalink: /kb/312/Q312105/
 	
 	=============================================================================
 	
+
+{% endraw %}

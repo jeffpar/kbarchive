@@ -6,6 +6,8 @@ permalink: /kb/043/Q43972/
 
 ## Q43972: QuickC: Bad Symbolic Information for Char Array in Structure
 
+{% raw %}
+
 	Article: Q43972
 	Product(s): See article
 	Version(s): 1.00 1.01
@@ -79,3 +81,5 @@ permalink: /kb/043/Q43972/
 	                     /* debugging command--in QC, use the Add Watch */
 	>w? info.array       /*                                Menu option  */
 	"0"                  /*   return value in watch window */
+
+{% endraw %}

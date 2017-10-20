@@ -6,6 +6,8 @@ permalink: /kb/176/Q176280/
 
 ## Q176280: TN3270 Name Resolution Requires Fully Qualified Domain Names
 
+{% raw %}
+
 	Article: Q176280
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -160,3 +162,5 @@ permalink: /kb/176/Q176280/
 	
 	=============================================================================
 	
+
+{% endraw %}

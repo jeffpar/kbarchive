@@ -6,6 +6,8 @@ permalink: /kb/193/Q193631/
 
 ## Q193631: FrontPage Stops Responding When Sending a File Greater Than 1 MB
 
+{% raw %}
+
 	Article: Q193631
 	Product(s): Internet Information Server
 	Version(s): 1.0,3.0
@@ -51,3 +53,5 @@ permalink: /kb/193/Q193631/
 	
 	=============================================================================
 	
+
+{% endraw %}

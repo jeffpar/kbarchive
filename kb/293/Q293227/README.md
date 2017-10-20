@@ -6,6 +6,8 @@ permalink: /kb/293/Q293227/
 
 ## Q293227: XFOR: Notes R5 Multiple Mail.box Structure May Cause Event Error
 
+{% raw %}
+
 	Article: Q293227
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/293/Q293227/
 	
 	=============================================================================
 	
+
+{% endraw %}

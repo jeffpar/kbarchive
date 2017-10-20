@@ -6,6 +6,8 @@ permalink: /kb/214/Q214969/
 
 ## Q214969: SMS: Server Component Logging Is Turned Off by Default.
 
+{% raw %}
+
 	Article: Q214969
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/214/Q214969/
 	
 	=============================================================================
 	
+
+{% endraw %}

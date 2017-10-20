@@ -6,6 +6,8 @@ permalink: /kb/130/Q130930/
 
 ## Q130930: Creating a Boot Floppy for a Multibus SCSI Adapter
 
+{% raw %}
+
 	Article: Q130930
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/130/Q130930/
 	
 	=============================================================================
 	
+
+{% endraw %}

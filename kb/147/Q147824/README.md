@@ -6,6 +6,8 @@ permalink: /kb/147/Q147824/
 
 ## Q147824: Export and Import Servers in Directory Replication
 
+{% raw %}
+
 	Article: Q147824
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -69,3 +71,5 @@ permalink: /kb/147/Q147824/
 	
 	=============================================================================
 	
+
+{% endraw %}

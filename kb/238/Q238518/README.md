@@ -6,6 +6,8 @@ permalink: /kb/238/Q238518/
 
 ## Q238518: PRB: SQL Select Statement w/Outer Join Clause Adds NULL Values
 
+{% raw %}
+
 	Article: Q238518
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -108,3 +110,5 @@ permalink: /kb/238/Q238518/
 	
 	=============================================================================
 	
+
+{% endraw %}

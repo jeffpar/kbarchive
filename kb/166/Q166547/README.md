@@ -6,6 +6,8 @@ permalink: /kb/166/Q166547/
 
 ## Q166547: XCLN: Mac Client Will Not Launch on PowerMacs Without Easy Open
 
+{% raw %}
+
 	Article: Q166547
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -79,3 +81,5 @@ permalink: /kb/166/Q166547/
 	
 	=============================================================================
 	
+
+{% endraw %}

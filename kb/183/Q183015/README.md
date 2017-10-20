@@ -6,6 +6,8 @@ permalink: /kb/183/Q183015/
 
 ## Q183015: XADM: Restrictions on ABV Break Mailbox Name Resolution
 
+{% raw %}
+
 	Article: Q183015
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -119,3 +121,5 @@ permalink: /kb/183/Q183015/
 	
 	=============================================================================
 	
+
+{% endraw %}

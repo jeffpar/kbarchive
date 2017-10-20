@@ -6,6 +6,8 @@ permalink: /kb/231/Q231969/
 
 ## Q231969: XADM: Deliv-Ext-Cont-Types Attribute Is Not Recreated
 
+{% raw %}
+
 	Article: Q231969
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/231/Q231969/
 	
 	=============================================================================
 	
+
+{% endraw %}

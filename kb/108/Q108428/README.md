@@ -6,6 +6,8 @@ permalink: /kb/108/Q108428/
 
 ## Q108428: Err Msg: An Error Occurred Accessing the Security Settings...
 
+{% raw %}
+
 	Article: Q108428
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -71,3 +73,5 @@ permalink: /kb/108/Q108428/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64424/
 
 ## Q64424: LINK &quot;Stack Plus Data Exceed 64K&quot;; 7.00 BC /Fs Forces /S
 
+{% raw %}
+
 	Article: Q64424
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -44,3 +46,5 @@ permalink: /kb/064/Q64424/
 	The BC /Fs (Far Strings) option gives you more space for
 	variable-length string variables at the cost of increasing the size
 	and slowing the speed of .EXE programs.
+
+{% endraw %}

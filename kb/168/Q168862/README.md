@@ -6,6 +6,8 @@ permalink: /kb/168/Q168862/
 
 ## Q168862: How to Install ISO and TP4 Parser for Network Monitor
 
+{% raw %}
+
 	Article: Q168862
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -119,3 +121,5 @@ permalink: /kb/168/Q168862/
 	
 	=============================================================================
 	
+
+{% endraw %}

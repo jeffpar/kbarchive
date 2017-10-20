@@ -6,6 +6,8 @@ permalink: /kb/083/Q83542/
 
 ## Q83542: Mac Fax: Fax Gateway Versions
 
+{% raw %}
+
 	Article: Q83542
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -50,3 +52,5 @@ permalink: /kb/083/Q83542/
 	
 	=============================================================================
 	
+
+{% endraw %}

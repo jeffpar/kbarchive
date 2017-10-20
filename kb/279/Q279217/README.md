@@ -6,6 +6,8 @@ permalink: /kb/279/Q279217/
 
 ## Q279217: MSN Companion unit shows &quot;MSN&quot; splash screen and never boots
 
+{% raw %}
+
 	Article: Q279217
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/279/Q279217/
 	
 	=============================================================================
 	
+
+{% endraw %}

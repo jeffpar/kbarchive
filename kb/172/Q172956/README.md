@@ -6,6 +6,8 @@ permalink: /kb/172/Q172956/
 
 ## Q172956: RAS Clients Fail to Connect with IP Assigned via DHCP
 
+{% raw %}
+
 	Article: Q172956
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -128,3 +130,5 @@ permalink: /kb/172/Q172956/
 	
 	=============================================================================
 	
+
+{% endraw %}

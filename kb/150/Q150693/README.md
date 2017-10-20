@@ -6,6 +6,8 @@ permalink: /kb/150/Q150693/
 
 ## Q150693: Fury Defaults to Keyboard as Primary Flight Control Option
 
+{% raw %}
+
 	Article: Q150693
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150693/
 	
 	=============================================================================
 	
+
+{% endraw %}

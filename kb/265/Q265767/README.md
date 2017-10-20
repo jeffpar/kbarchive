@@ -6,6 +6,8 @@ permalink: /kb/265/Q265767/
 
 ## Q265767: HOWTO: Use the Remote Tools Installed with eMbedded Visual Basic
 
+{% raw %}
+
 	Article: Q265767
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -222,3 +224,5 @@ permalink: /kb/265/Q265767/
 	
 	=============================================================================
 	
+
+{% endraw %}

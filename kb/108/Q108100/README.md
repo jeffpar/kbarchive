@@ -6,6 +6,8 @@ permalink: /kb/108/Q108100/
 
 ## Q108100: PC-NFS Error: NFS903F Missing or Invalid PROTOCOL.INI Data
 
+{% raw %}
+
 	Article: Q108100
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -77,3 +79,5 @@ permalink: /kb/108/Q108100/
 	
 	=============================================================================
 	
+
+{% endraw %}

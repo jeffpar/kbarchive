@@ -6,6 +6,8 @@ permalink: /kb/258/Q258772/
 
 ## Q258772: AoE: How to Play Age of Empires
 
+{% raw %}
+
 	Article: Q258772
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -204,3 +206,5 @@ permalink: /kb/258/Q258772/
 	
 	=============================================================================
 	
+
+{% endraw %}

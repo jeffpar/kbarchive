@@ -6,6 +6,8 @@ permalink: /kb/191/Q191954/
 
 ## Q191954: PRB: OLE DLL with Exposed Objects Returns Incorrect Description
 
+{% raw %}
+
 	Article: Q191954
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -93,3 +95,5 @@ permalink: /kb/191/Q191954/
 	
 	=============================================================================
 	
+
+{% endraw %}

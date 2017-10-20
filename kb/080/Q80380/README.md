@@ -6,6 +6,8 @@ permalink: /kb/080/Q80380/
 
 ## Q80380: BUG: H2INC Doesn't Allow Multiple Files to Be Specified
 
+{% raw %}
+
 	Article: Q80380
 	Product(s): Microsoft C Compiler
 	Version(s): OS/2:1.0; winnt:1.0,1.11
@@ -63,3 +65,5 @@ permalink: /kb/080/Q80380/
 	
 	=============================================================================
 	
+
+{% endraw %}

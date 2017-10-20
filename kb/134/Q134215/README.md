@@ -6,6 +6,8 @@ permalink: /kb/134/Q134215/
 
 ## Q134215: BUG: OLE SUBCLASS: Subclassing of OleControl/OLE Unspecified
 
+{% raw %}
+
 	Article: Q134215
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -78,3 +80,5 @@ permalink: /kb/134/Q134215/
 	
 	=============================================================================
 	
+
+{% endraw %}

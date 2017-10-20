@@ -6,6 +6,8 @@ permalink: /kb/192/Q192183/
 
 ## Q192183: PRB: Accelerator Keys Fail to Work in MDI Child Forms
 
+{% raw %}
+
 	Article: Q192183
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -167,3 +169,5 @@ permalink: /kb/192/Q192183/
 	
 	=============================================================================
 	
+
+{% endraw %}

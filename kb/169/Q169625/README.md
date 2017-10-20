@@ -6,6 +6,8 @@ permalink: /kb/169/Q169625/
 
 ## Q169625: Availability of Windows 95 OEM Service Release 2
 
+{% raw %}
+
 	Article: Q169625
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -58,3 +60,5 @@ permalink: /kb/169/Q169625/
 	
 	=============================================================================
 	
+
+{% endraw %}

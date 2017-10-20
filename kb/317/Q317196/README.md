@@ -6,6 +6,8 @@ permalink: /kb/317/Q317196/
 
 ## Q317196: MS02-018: Patch for Service Denial Through FTP Status Request
 
+{% raw %}
+
 	Article: Q317196
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -138,3 +140,5 @@ permalink: /kb/317/Q317196/
 	
 	=============================================================================
 	
+
+{% endraw %}

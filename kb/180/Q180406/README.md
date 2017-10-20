@@ -6,6 +6,8 @@ permalink: /kb/180/Q180406/
 
 ## Q180406: Windows 95 DFS Client May Not Work with V-Shield
 
+{% raw %}
+
 	Article: Q180406
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; WINNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/180/Q180406/
 	
 	=============================================================================
 	
+
+{% endraw %}

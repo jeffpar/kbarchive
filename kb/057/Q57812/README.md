@@ -6,6 +6,8 @@ permalink: /kb/057/Q57812/
 
 ## Q57812: DOSEDIT Does Not Work in Windows 3.0 Enhanced Mode
 
+{% raw %}
+
 	Article: Q57812
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/057/Q57812/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156796/
 
 ## Q156796: XADM: Forward Rule Causes MTA to NDR When Submitting Msg to IS
 
+{% raw %}
+
 	Article: Q156796
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/156/Q156796/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140205/
 
 ## Q140205: BUG: Status of Project Window Is Not Saved with .vbp File
 
+{% raw %}
+
 	Article: Q140205
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -76,3 +78,5 @@ permalink: /kb/140/Q140205/
 	
 	=============================================================================
 	
+
+{% endraw %}

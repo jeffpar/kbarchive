@@ -6,6 +6,8 @@ permalink: /kb/309/Q309289/
 
 ## Q309289: COMTI Perfmon Counters Not Available When Using Terminal Server
 
+{% raw %}
+
 	Article: Q309289
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/309/Q309289/
 	
 	=============================================================================
 	
+
+{% endraw %}

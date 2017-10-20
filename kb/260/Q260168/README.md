@@ -6,6 +6,8 @@ permalink: /kb/260/Q260168/
 
 ## Q260168: SMS: Err Msg: Unable to Read Site Data from Caplist.ini File
 
+{% raw %}
+
 	Article: Q260168
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -64,3 +66,5 @@ permalink: /kb/260/Q260168/
 	
 	=============================================================================
 	
+
+{% endraw %}

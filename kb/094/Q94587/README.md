@@ -6,6 +6,8 @@ permalink: /kb/094/Q94587/
 
 ## Q94587: FIX: DUP Behavior Different with Span-Dependent Value
 
+{% raw %}
+
 	Article: Q94587
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -92,3 +94,5 @@ permalink: /kb/094/Q94587/
 	
 	=============================================================================
 	
+
+{% endraw %}

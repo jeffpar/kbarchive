@@ -6,6 +6,8 @@ permalink: /kb/236/Q236449/
 
 ## Q236449: Net LocalGroup Command May Cause Access Violation
 
+{% raw %}
+
 	Article: Q236449
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/236/Q236449/
 	
 	=============================================================================
 	
+
+{% endraw %}

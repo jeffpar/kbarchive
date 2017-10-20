@@ -6,6 +6,8 @@ permalink: /kb/190/Q190900/
 
 ## Q190900: DirectX: Description of the DirectX Diagnostic Tool
 
+{% raw %}
+
 	Article: Q190900
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -184,3 +186,5 @@ permalink: /kb/190/Q190900/
 	
 	=============================================================================
 	
+
+{% endraw %}

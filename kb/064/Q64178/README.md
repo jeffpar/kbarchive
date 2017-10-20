@@ -6,6 +6,8 @@ permalink: /kb/064/Q64178/
 
 ## Q64178: Bus Mouse Port on Leading Edge 386 SX
 
+{% raw %}
+
 	Article: Q64178
 	Product(s): See article
 	Version(s): 2.00
@@ -22,3 +24,5 @@ permalink: /kb/064/Q64178/
 	There is one switch that may or may not be in the correct position to
 	install the mouse. This is Switch 3 on the motherboard. This must be
 	in the ON position or the mouse will not install.
+
+{% endraw %}

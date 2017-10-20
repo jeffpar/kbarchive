@@ -6,6 +6,8 @@ permalink: /kb/221/Q221786/
 
 ## Q221786: Looping Menu Function Call Causes Automatic Reboot
 
+{% raw %}
+
 	Article: Q221786
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -60,3 +62,5 @@ permalink: /kb/221/Q221786/
 	
 	=============================================================================
 	
+
+{% endraw %}

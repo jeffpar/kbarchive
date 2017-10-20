@@ -6,6 +6,8 @@ permalink: /kb/266/Q266712/
 
 ## Q266712: SMS: Security Based on Global Groups Fails in Win 2000 Domains
 
+{% raw %}
+
 	Article: Q266712
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -93,3 +95,5 @@ permalink: /kb/266/Q266712/
 	
 	=============================================================================
 	
+
+{% endraw %}

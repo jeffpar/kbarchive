@@ -6,6 +6,8 @@ permalink: /kb/251/Q251475/
 
 ## Q251475: XFOR: MAPI Error 80040110 Occurs When Attempting to Run Calcon
 
+{% raw %}
+
 	Article: Q251475
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1
@@ -87,3 +89,5 @@ permalink: /kb/251/Q251475/
 	
 	=============================================================================
 	
+
+{% endraw %}

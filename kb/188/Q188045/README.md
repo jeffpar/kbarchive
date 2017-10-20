@@ -6,6 +6,8 @@ permalink: /kb/188/Q188045/
 
 ## Q188045: SMS: Smsls.ini Fails If Used in a Domain with Multiple Sites
 
+{% raw %}
+
 	Article: Q188045
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -66,3 +68,5 @@ permalink: /kb/188/Q188045/
 	
 	=============================================================================
 	
+
+{% endraw %}

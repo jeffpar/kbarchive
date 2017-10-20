@@ -6,6 +6,8 @@ permalink: /kb/167/Q167859/
 
 ## Q167859: FP: How to Move FrontPage PWS to Another Drive
 
+{% raw %}
+
 	Article: Q167859
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -116,3 +118,5 @@ permalink: /kb/167/Q167859/
 	
 	=============================================================================
 	
+
+{% endraw %}

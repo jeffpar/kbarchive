@@ -6,6 +6,8 @@ permalink: /kb/123/Q123352/
 
 ## Q123352: BUG: Uninstalling FoxPro Leaves Some Files Behind
 
+{% raw %}
+
 	Article: Q123352
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -49,3 +51,5 @@ permalink: /kb/123/Q123352/
 	
 	=============================================================================
 	
+
+{% endraw %}

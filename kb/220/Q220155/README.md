@@ -6,6 +6,8 @@ permalink: /kb/220/Q220155/
 
 ## Q220155: Troubleshooting NTVDM and WOW Startup Errors
 
+{% raw %}
+
 	Article: Q220155
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -256,3 +258,5 @@ permalink: /kb/220/Q220155/
 	
 	=============================================================================
 	
+
+{% endraw %}

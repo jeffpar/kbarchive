@@ -6,6 +6,8 @@ permalink: /kb/171/Q171959/
 
 ## Q171959: Mac Bookshelf 98: Text and Images Not Copied at Same Time
 
+{% raw %}
+
 	Article: Q171959
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -64,3 +66,5 @@ permalink: /kb/171/Q171959/
 	
 	=============================================================================
 	
+
+{% endraw %}

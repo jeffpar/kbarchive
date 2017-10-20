@@ -6,6 +6,8 @@ permalink: /kb/198/Q198717/
 
 ## Q198717: SMS: Client Requirements for Remote Control
 
+{% raw %}
+
 	Article: Q198717
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/198/Q198717/
 	
 	=============================================================================
 	
+
+{% endraw %}

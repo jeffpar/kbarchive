@@ -6,6 +6,8 @@ permalink: /kb/030/Q30370/
 
 ## Q30370: Reading F11 and F12 Keys on Extended Keyboard
 
+{% raw %}
+
 	Article: Q30370
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -48,3 +50,5 @@ permalink: /kb/030/Q30370/
 	
 	  }
 	}
+
+{% endraw %}

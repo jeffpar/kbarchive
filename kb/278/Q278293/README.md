@@ -6,6 +6,8 @@ permalink: /kb/278/Q278293/
 
 ## Q278293: XADM: Dr. Watson Message on store!OMSG::EcMakeRTFFromBody
 
+{% raw %}
+
 	Article: Q278293
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP3,5.5 SP4
@@ -135,3 +137,5 @@ permalink: /kb/278/Q278293/
 	
 	=============================================================================
 	
+
+{% endraw %}

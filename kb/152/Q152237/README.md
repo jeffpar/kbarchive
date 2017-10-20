@@ -6,6 +6,8 @@ permalink: /kb/152/Q152237/
 
 ## Q152237: Bookshelf 1996-97: Unable to Play Word Pronunciations
 
+{% raw %}
+
 	Article: Q152237
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -77,3 +79,5 @@ permalink: /kb/152/Q152237/
 	
 	=============================================================================
 	
+
+{% endraw %}

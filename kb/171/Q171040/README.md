@@ -6,6 +6,8 @@ permalink: /kb/171/Q171040/
 
 ## Q171040: Incorrect Domain Name for SNAPMP Causes Events 22 and 1314
 
+{% raw %}
+
 	Article: Q171040
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -88,3 +90,5 @@ permalink: /kb/171/Q171040/
 	
 	=============================================================================
 	
+
+{% endraw %}

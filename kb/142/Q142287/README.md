@@ -6,6 +6,8 @@ permalink: /kb/142/Q142287/
 
 ## Q142287: PRB: Cannot Trap for Error #1739
 
+{% raw %}
+
 	Article: Q142287
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -136,3 +138,5 @@ permalink: /kb/142/Q142287/
 	
 	=============================================================================
 	
+
+{% endraw %}

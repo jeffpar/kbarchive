@@ -6,6 +6,8 @@ permalink: /kb/118/Q118667/
 
 ## Q118667: Ancient Lands: Narration for Guided Tour Skips a Screen
 
+{% raw %}
+
 	Article: Q118667
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/118/Q118667/
 	
 	=============================================================================
 	
+
+{% endraw %}

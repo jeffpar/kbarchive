@@ -6,6 +6,8 @@ permalink: /kb/263/Q263835/
 
 ## Q263835: XCON: MTA Stops (Event ID 9411), Free Disk Space More Than 10 MB
 
+{% raw %}
+
 	Article: Q263835
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/263/Q263835/
 	
 	=============================================================================
 	
+
+{% endraw %}

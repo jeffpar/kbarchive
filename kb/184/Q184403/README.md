@@ -6,6 +6,8 @@ permalink: /kb/184/Q184403/
 
 ## Q184403: XCLN: How to Reset the Recently Used File List in Schedule+
 
+{% raw %}
+
 	Article: Q184403
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5
@@ -62,3 +64,5 @@ permalink: /kb/184/Q184403/
 	
 	=============================================================================
 	
+
+{% endraw %}

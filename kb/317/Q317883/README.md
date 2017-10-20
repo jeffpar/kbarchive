@@ -6,6 +6,8 @@ permalink: /kb/317/Q317883/
 
 ## Q317883: HOW TO: Manage Your Visual SourceSafe Configuration for VS .NET
 
+{% raw %}
+
 	Article: Q317883
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -239,3 +241,5 @@ permalink: /kb/317/Q317883/
 	
 	=============================================================================
 	
+
+{% endraw %}

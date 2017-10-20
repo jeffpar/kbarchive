@@ -6,6 +6,8 @@ permalink: /kb/120/Q120965/
 
 ## Q120965: FIX: C1001: 'e:&#92;b_bld&#92;c2&#92;P2&#92;main.c', line 374 with /Zi Switch
 
+{% raw %}
+
 	Article: Q120965
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -86,3 +88,5 @@ permalink: /kb/120/Q120965/
 	
 	=============================================================================
 	
+
+{% endraw %}

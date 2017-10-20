@@ -6,6 +6,8 @@ permalink: /kb/150/Q150420/
 
 ## Q150420: Err: Win16 Subsystem Unable to Enter Protected Mode
 
+{% raw %}
+
 	Article: Q150420
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150420/
 	
 	=============================================================================
 	
+
+{% endraw %}

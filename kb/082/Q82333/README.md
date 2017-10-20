@@ -6,6 +6,8 @@ permalink: /kb/082/Q82333/
 
 ## Q82333: Out Of Memory Errors with True Color Display Drivers
 
+{% raw %}
+
 	Article: Q82333
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/082/Q82333/
 	
 	=============================================================================
 	
+
+{% endraw %}

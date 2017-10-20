@@ -6,6 +6,8 @@ permalink: /kb/085/Q85653/
 
 ## Q85653: IBM QuickWriter Missing Paper Sources
 
+{% raw %}
+
 	Article: Q85653
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/085/Q85653/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240072/
 
 ## Q240072: Cannot Open Setup.log File Installing Terminal Server SP4
 
+{% raw %}
+
 	Article: Q240072
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -85,3 +87,5 @@ permalink: /kb/240/Q240072/
 	
 	=============================================================================
 	
+
+{% endraw %}

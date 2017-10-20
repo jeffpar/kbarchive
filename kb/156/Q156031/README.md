@@ -6,6 +6,8 @@ permalink: /kb/156/Q156031/
 
 ## Q156031: PRB: Ordinal Not Found When Starting VFP or Application
 
+{% raw %}
+
 	Article: Q156031
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -122,3 +124,5 @@ permalink: /kb/156/Q156031/
 	
 	=============================================================================
 	
+
+{% endraw %}

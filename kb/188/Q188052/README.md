@@ -6,6 +6,8 @@ permalink: /kb/188/Q188052/
 
 ## Q188052: SMS: Applications Manager Error: Package Disappeared from Source
 
+{% raw %}
+
 	Article: Q188052
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -80,3 +82,5 @@ permalink: /kb/188/Q188052/
 	
 	=============================================================================
 	
+
+{% endraw %}

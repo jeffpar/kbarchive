@@ -6,6 +6,8 @@ permalink: /kb/213/Q213285/
 
 ## Q213285: SMS: NetWare Bindery Server Must Be Client's Preferred Server
 
+{% raw %}
+
 	Article: Q213285
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -52,3 +54,5 @@ permalink: /kb/213/Q213285/
 	
 	=============================================================================
 	
+
+{% endraw %}

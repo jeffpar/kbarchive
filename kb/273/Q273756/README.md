@@ -6,6 +6,8 @@ permalink: /kb/273/Q273756/
 
 ## Q273756: NFS Client Write Buffers Not Set When Using UNC Names
 
+{% raw %}
+
 	Article: Q273756
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/273/Q273756/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131085/
 
 ## Q131085: WordPad Text Inserted as Object in Other Programs
 
+{% raw %}
+
 	Article: Q131085
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/131/Q131085/
 	
 	=============================================================================
 	
+
+{% endraw %}

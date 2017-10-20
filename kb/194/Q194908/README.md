@@ -6,6 +6,8 @@ permalink: /kb/194/Q194908/
 
 ## Q194908: BUG: Control Repaint Problems When ClipControls Set to False
 
+{% raw %}
+
 	Article: Q194908
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/194/Q194908/
 	
 	=============================================================================
 	
+
+{% endraw %}

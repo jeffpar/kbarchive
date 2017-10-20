@@ -6,6 +6,8 @@ permalink: /kb/197/Q197970/
 
 ## Q197970: XADM: Attributes Missing When Recreating DS Objects with DS/IS
 
+{% raw %}
+
 	Article: Q197970
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/197/Q197970/
 	
 	=============================================================================
 	
+
+{% endraw %}

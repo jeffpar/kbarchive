@@ -6,6 +6,8 @@ permalink: /kb/076/Q76880/
 
 ## Q76880: Information Needed Before Setup of Multimedia Extensions
 
+{% raw %}
+
 	Article: Q76880
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -270,3 +272,5 @@ permalink: /kb/076/Q76880/
 	
 	=============================================================================
 	
+
+{% endraw %}

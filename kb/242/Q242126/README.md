@@ -6,6 +6,8 @@ permalink: /kb/242/Q242126/
 
 ## Q242126: Cannot Delete Print Job and Printer
 
+{% raw %}
+
 	Article: Q242126
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/242/Q242126/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238140/
 
 ## Q238140: Reference Products: Find Feature Does Not Function Properly
 
+{% raw %}
+
 	Article: Q238140
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :
@@ -281,3 +283,5 @@ permalink: /kb/238/Q238140/
 	
 	=============================================================================
 	
+
+{% endraw %}

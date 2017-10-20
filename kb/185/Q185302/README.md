@@ -6,6 +6,8 @@ permalink: /kb/185/Q185302/
 
 ## Q185302: Cannot Copy Files from a CD-ROM Shared as a Mac Volume
 
+{% raw %}
+
 	Article: Q185302
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/185/Q185302/
 	
 	=============================================================================
 	
+
+{% endraw %}

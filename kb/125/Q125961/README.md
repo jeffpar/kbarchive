@@ -6,6 +6,8 @@ permalink: /kb/125/Q125961/
 
 ## Q125961: How to Configure Chameleon PPP Client Software for Windows NT
 
+{% raw %}
+
 	Article: Q125961
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -111,3 +113,5 @@ permalink: /kb/125/Q125961/
 	
 	=============================================================================
 	
+
+{% endraw %}

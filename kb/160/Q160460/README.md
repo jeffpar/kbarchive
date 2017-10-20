@@ -6,6 +6,8 @@ permalink: /kb/160/Q160460/
 
 ## Q160460: GPF in Administrator Tool During Remote Control of Netscape
 
+{% raw %}
+
 	Article: Q160460
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/160/Q160460/
 	
 	=============================================================================
 	
+
+{% endraw %}

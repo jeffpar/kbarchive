@@ -6,6 +6,8 @@ permalink: /kb/141/Q141724/
 
 ## Q141724: Context-Sensitive Help in a CDialog Object
 
+{% raw %}
+
 	Article: Q141724
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1 4.2,4.2b,5.0
@@ -104,3 +106,5 @@ permalink: /kb/141/Q141724/
 	
 	=============================================================================
 	
+
+{% endraw %}

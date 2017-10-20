@@ -6,6 +6,8 @@ permalink: /kb/193/Q193894/
 
 ## Q193894: XCON: MTA Stops Processing Messages and Generates 9156 Events
 
+{% raw %}
+
 	Article: Q193894
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -152,3 +154,5 @@ permalink: /kb/193/Q193894/
 	
 	=============================================================================
 	
+
+{% endraw %}

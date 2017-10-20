@@ -6,6 +6,8 @@ permalink: /kb/142/Q142666/
 
 ## Q142666: HOWTO: Setting Up an Additional Service in Unattended Setup
 
+{% raw %}
+
 	Article: Q142666
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -121,3 +123,5 @@ permalink: /kb/142/Q142666/
 	
 	=============================================================================
 	
+
+{% endraw %}

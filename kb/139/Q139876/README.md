@@ -6,6 +6,8 @@ permalink: /kb/139/Q139876/
 
 ## Q139876: Non-CompuServe Recipients Not Listed in CIS Mail Header
 
+{% raw %}
+
 	Article: Q139876
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -51,3 +53,5 @@ permalink: /kb/139/Q139876/
 	
 	=============================================================================
 	
+
+{% endraw %}

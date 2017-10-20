@@ -6,6 +6,8 @@ permalink: /kb/134/Q134577/
 
 ## Q134577: Taskbar Not Updated Correctly with Maxtime Loaded
 
+{% raw %}
+
 	Article: Q134577
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/134/Q134577/
 	
 	=============================================================================
 	
+
+{% endraw %}

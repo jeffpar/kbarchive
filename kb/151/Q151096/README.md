@@ -6,6 +6,8 @@ permalink: /kb/151/Q151096/
 
 ## Q151096: Cinemania 96: Updates Do Not Print Complete Descriptions
 
+{% raw %}
+
 	Article: Q151096
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -85,3 +87,5 @@ permalink: /kb/151/Q151096/
 	
 	=============================================================================
 	
+
+{% endraw %}

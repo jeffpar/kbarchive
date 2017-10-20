@@ -6,6 +6,8 @@ permalink: /kb/126/Q126078/
 
 ## Q126078: Destination Europe 1.0 DD Disk Contents (3.5 Inch, 720K)
 
+{% raw %}
+
 	Article: Q126078
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/126/Q126078/
 	
 	=============================================================================
 	
+
+{% endraw %}

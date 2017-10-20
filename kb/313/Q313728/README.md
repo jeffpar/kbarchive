@@ -6,6 +6,8 @@ permalink: /kb/313/Q313728/
 
 ## Q313728: HIS 2000 Clients Using Active Directory Fail to Get Host Session
 
+{% raw %}
+
 	Article: Q313728
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -190,3 +192,5 @@ permalink: /kb/313/Q313728/
 	
 	=============================================================================
 	
+
+{% endraw %}

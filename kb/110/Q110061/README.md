@@ -6,6 +6,8 @@ permalink: /kb/110/Q110061/
 
 ## Q110061: Effects of Pausing a Service
 
+{% raw %}
+
 	Article: Q110061
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/110/Q110061/
 	
 	=============================================================================
 	
+
+{% endraw %}

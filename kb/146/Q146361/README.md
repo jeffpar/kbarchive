@@ -6,6 +6,8 @@ permalink: /kb/146/Q146361/
 
 ## Q146361: XCLN: Attachments Not Showing in Schedule+ 1.0
 
+{% raw %}
+
 	Article: Q146361
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/146/Q146361/
 	
 	=============================================================================
 	
+
+{% endraw %}

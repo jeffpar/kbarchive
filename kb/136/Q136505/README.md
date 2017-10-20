@@ -6,6 +6,8 @@ permalink: /kb/136/Q136505/
 
 ## Q136505: Fury3: Mute doesn't function during AVI sequences
 
+{% raw %}
+
 	Article: Q136505
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/136/Q136505/
 	
 	=============================================================================
 	
+
+{% endraw %}

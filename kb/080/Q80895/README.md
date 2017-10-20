@@ -6,6 +6,8 @@ permalink: /kb/080/Q80895/
 
 ## Q80895: Mac MSPlus: User Distribution Settings Not Working
 
+{% raw %}
+
 	Article: Q80895
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/080/Q80895/
 	
 	=============================================================================
 	
+
+{% endraw %}

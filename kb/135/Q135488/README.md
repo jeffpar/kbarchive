@@ -6,6 +6,8 @@ permalink: /kb/135/Q135488/
 
 ## Q135488: PC NTMMTA: DrivesWAN Fails to Work
 
+{% raw %}
+
 	Article: Q135488
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -83,3 +85,5 @@ permalink: /kb/135/Q135488/
 	
 	=============================================================================
 	
+
+{% endraw %}

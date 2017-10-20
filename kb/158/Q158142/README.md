@@ -6,6 +6,8 @@ permalink: /kb/158/Q158142/
 
 ## Q158142: WM_DDE_EXECUTE API Causes a Memory Leak in the WOW Subsystem
 
+{% raw %}
+
 	Article: Q158142
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/158/Q158142/
 	
 	=============================================================================
 	
+
+{% endraw %}

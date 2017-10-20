@@ -6,6 +6,8 @@ permalink: /kb/250/Q250486/
 
 ## Q250486: Running a Management Agent for a Limited Number of Entries
 
+{% raw %}
+
 	Article: Q250486
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -63,3 +65,5 @@ permalink: /kb/250/Q250486/
 	
 	=============================================================================
 	
+
+{% endraw %}

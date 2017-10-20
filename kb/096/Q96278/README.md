@@ -6,6 +6,8 @@ permalink: /kb/096/Q96278/
 
 ## Q96278: Mac Srv: CD-ROM Causes Server to Stop Operating
 
+{% raw %}
+
 	Article: Q96278
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -40,3 +42,5 @@ permalink: /kb/096/Q96278/
 	
 	=============================================================================
 	
+
+{% endraw %}

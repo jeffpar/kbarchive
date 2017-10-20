@@ -6,6 +6,8 @@ permalink: /kb/123/Q123976/
 
 ## Q123976: Sequential File Reads of 4K Instead of 64K Blocks
 
+{% raw %}
+
 	Article: Q123976
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/123/Q123976/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120435/
 
 ## Q120435: Photoshop 2.5.1 &quot;Unable to Parse PostScript&quot; Opening an EPS
 
+{% raw %}
+
 	Article: Q120435
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/120/Q120435/
 	
 	=============================================================================
 	
+
+{% endraw %}

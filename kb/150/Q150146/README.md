@@ -6,6 +6,8 @@ permalink: /kb/150/Q150146/
 
 ## Q150146: PRB: No Error Generated Initializing Named Common Block Object
 
+{% raw %}
+
 	Article: Q150146
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/150/Q150146/
 	
 	=============================================================================
 	
+
+{% endraw %}

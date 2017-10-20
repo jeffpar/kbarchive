@@ -6,6 +6,8 @@ permalink: /kb/161/Q161887/
 
 ## Q161887: XFOR: Starting Internet Mail Service, Store Causes Stack Fault
 
+{% raw %}
+
 	Article: Q161887
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -109,3 +111,5 @@ permalink: /kb/161/Q161887/
 	
 	=============================================================================
 	
+
+{% endraw %}

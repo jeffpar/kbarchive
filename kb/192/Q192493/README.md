@@ -6,6 +6,8 @@ permalink: /kb/192/Q192493/
 
 ## Q192493: XADM: Setup Doesn't Add Permission to MSExchangeES Registry Key
 
+{% raw %}
+
 	Article: Q192493
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -85,3 +87,5 @@ permalink: /kb/192/Q192493/
 	
 	=============================================================================
 	
+
+{% endraw %}

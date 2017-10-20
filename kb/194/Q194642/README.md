@@ -6,6 +6,8 @@ permalink: /kb/194/Q194642/
 
 ## Q194642: XWEB: Netscape 4.04: Contact Form Not Visible in Public Folder
 
+{% raw %}
+
 	Article: Q194642
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -62,3 +64,5 @@ permalink: /kb/194/Q194642/
 	
 	=============================================================================
 	
+
+{% endraw %}

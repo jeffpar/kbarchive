@@ -6,6 +6,8 @@ permalink: /kb/161/Q161145/
 
 ## Q161145: BUG: Group Header on Report with Columns Prints on Detail Band
 
+{% raw %}
+
 	Article: Q161145
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/161/Q161145/
 	
 	=============================================================================
 	
+
+{% endraw %}

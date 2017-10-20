@@ -6,6 +6,8 @@ permalink: /kb/161/Q161146/
 
 ## Q161146: PRB: _Tally System Variable Reports Incorrect Record Count
 
+{% raw %}
+
 	Article: Q161146
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/161/Q161146/
 	
 	=============================================================================
 	
+
+{% endraw %}

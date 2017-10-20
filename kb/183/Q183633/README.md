@@ -6,6 +6,8 @@ permalink: /kb/183/Q183633/
 
 ## Q183633: XADM: High CPU in Store.exe w/ Incorrectly Formatted Attachment
 
+{% raw %}
+
 	Article: Q183633
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -130,3 +132,5 @@ permalink: /kb/183/Q183633/
 	
 	=============================================================================
 	
+
+{% endraw %}

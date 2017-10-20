@@ -6,6 +6,8 @@ permalink: /kb/155/Q155749/
 
 ## Q155749: FIX: Trigger Failed Error When Updating a Compound Primary Key
 
+{% raw %}
+
 	Article: Q155749
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -162,3 +164,5 @@ permalink: /kb/155/Q155749/
 	
 	=============================================================================
 	
+
+{% endraw %}

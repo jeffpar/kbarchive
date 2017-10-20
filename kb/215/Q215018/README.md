@@ -6,6 +6,8 @@ permalink: /kb/215/Q215018/
 
 ## Q215018: SMS: Cannot Add Local Groups in Manage User Wizard
 
+{% raw %}
+
 	Article: Q215018
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/215/Q215018/
 	
 	=============================================================================
 	
+
+{% endraw %}

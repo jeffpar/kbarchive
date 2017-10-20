@@ -6,6 +6,8 @@ permalink: /kb/129/Q129928/
 
 ## Q129928: PRB: 'For Each' with 'Delete' Doesn't Work for DAO Collections
 
+{% raw %}
+
 	Article: Q129928
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -125,3 +127,5 @@ permalink: /kb/129/Q129928/
 	
 	=============================================================================
 	
+
+{% endraw %}

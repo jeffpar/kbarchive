@@ -6,6 +6,8 @@ permalink: /kb/161/Q161053/
 
 ## Q161053: FIX: CALCULATE SUM() on Currency Field Gives Illegal Operation
 
+{% raw %}
+
 	Article: Q161053
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -98,3 +100,5 @@ permalink: /kb/161/Q161053/
 	
 	=============================================================================
 	
+
+{% endraw %}

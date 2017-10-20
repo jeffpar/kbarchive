@@ -6,6 +6,8 @@ permalink: /kb/153/Q153705/
 
 ## Q153705: XCLN: Messages with Large Attachments Sit in Outbox
 
+{% raw %}
+
 	Article: Q153705
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -84,3 +86,5 @@ permalink: /kb/153/Q153705/
 	
 	=============================================================================
 	
+
+{% endraw %}

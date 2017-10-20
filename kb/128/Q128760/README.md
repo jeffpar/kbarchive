@@ -6,6 +6,8 @@ permalink: /kb/128/Q128760/
 
 ## Q128760: High Resolutions with Diamond Stealth 64 2 MB Video Card
 
+{% raw %}
+
 	Article: Q128760
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -55,3 +57,5 @@ permalink: /kb/128/Q128760/
 	
 	=============================================================================
 	
+
+{% endraw %}

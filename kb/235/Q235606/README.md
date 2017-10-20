@@ -6,6 +6,8 @@ permalink: /kb/235/Q235606/
 
 ## Q235606: FIX: Errors from Project Differences Window
 
+{% raw %}
+
 	Article: Q235606
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -133,3 +135,5 @@ permalink: /kb/235/Q235606/
 	
 	=============================================================================
 	
+
+{% endraw %}

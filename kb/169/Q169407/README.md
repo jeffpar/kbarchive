@@ -6,6 +6,8 @@ permalink: /kb/169/Q169407/
 
 ## Q169407: Routing and Remote Access does not use TAPI Dialing Properties
 
+{% raw %}
+
 	Article: Q169407
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/169/Q169407/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126792/
 
 ## Q126792: PC Win WRmt: Err Msg: Following Recipient(s) Could Not Be...
 
+{% raw %}
+
 	Article: Q126792
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2,3.2a
@@ -61,3 +63,5 @@ permalink: /kb/126/Q126792/
 	
 	=============================================================================
 	
+
+{% endraw %}

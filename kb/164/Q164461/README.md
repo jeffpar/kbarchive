@@ -6,6 +6,8 @@ permalink: /kb/164/Q164461/
 
 ## Q164461: Service Pack Removal Restores Compressed Files
 
+{% raw %}
+
 	Article: Q164461
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP2
@@ -67,3 +69,5 @@ permalink: /kb/164/Q164461/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124017/
 
 ## Q124017: Encarta 1995: How to Rewrite a Damaged Driver
 
+{% raw %}
+
 	Article: Q124017
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -86,3 +88,5 @@ permalink: /kb/124/Q124017/
 	
 	=============================================================================
 	
+
+{% endraw %}

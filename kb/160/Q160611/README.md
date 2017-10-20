@@ -6,6 +6,8 @@ permalink: /kb/160/Q160611/
 
 ## Q160611: SMS: AppleTalk Session Protocol Parameter Error with PCMMAC
 
+{% raw %}
+
 	Article: Q160611
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/160/Q160611/
 	
 	=============================================================================
 	
+
+{% endraw %}

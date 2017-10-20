@@ -6,6 +6,8 @@ permalink: /kb/129/Q129886/
 
 ## Q129886: HOWTO: Optimize OLE Calls in Visual Basic
 
+{% raw %}
+
 	Article: Q129886
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -144,3 +146,5 @@ permalink: /kb/129/Q129886/
 	
 	=============================================================================
 	
+
+{% endraw %}

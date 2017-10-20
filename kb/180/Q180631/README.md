@@ -6,6 +6,8 @@ permalink: /kb/180/Q180631/
 
 ## Q180631: WD97: Example Macro to Send E-mail Using MAPI Commands
 
+{% raw %}
+
 	Article: Q180631
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/180/Q180631/
 	
 	=============================================================================
 	
+
+{% endraw %}

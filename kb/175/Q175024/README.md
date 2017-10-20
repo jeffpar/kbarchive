@@ -6,6 +6,8 @@ permalink: /kb/175/Q175024/
 
 ## Q175024: Resetting Domain Member Secure Channel
 
+{% raw %}
+
 	Article: Q175024
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -167,3 +169,5 @@ permalink: /kb/175/Q175024/
 	
 	=============================================================================
 	
+
+{% endraw %}

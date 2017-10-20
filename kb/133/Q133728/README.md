@@ -6,6 +6,8 @@ permalink: /kb/133/Q133728/
 
 ## Q133728: Cannot Access System Icons on Taskbar Without Pointing Device
 
+{% raw %}
+
 	Article: Q133728
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/133/Q133728/
 	
 	=============================================================================
 	
+
+{% endraw %}

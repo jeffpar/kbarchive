@@ -6,6 +6,8 @@ permalink: /kb/148/Q148523/
 
 ## Q148523: ADT/ODE: Run-time Application Error with Exit Button
 
+{% raw %}
+
 	Article: Q148523
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 7.0,97
@@ -83,3 +85,5 @@ permalink: /kb/148/Q148523/
 	
 	=============================================================================
 	
+
+{% endraw %}

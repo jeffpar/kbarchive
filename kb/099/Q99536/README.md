@@ -6,6 +6,8 @@ permalink: /kb/099/Q99536/
 
 ## Q99536: Cross-Domain and Guest Access Between Windows NT and OS/2
 
+{% raw %}
+
 	Article: Q99536
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/099/Q99536/
 	
 	=============================================================================
 	
+
+{% endraw %}

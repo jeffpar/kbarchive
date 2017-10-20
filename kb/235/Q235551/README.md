@@ -6,6 +6,8 @@ permalink: /kb/235/Q235551/
 
 ## Q235551: Exiting Full-Screen DOS Session Hangs ICA Session
 
+{% raw %}
+
 	Article: Q235551
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -63,3 +65,5 @@ permalink: /kb/235/Q235551/
 	
 	=============================================================================
 	
+
+{% endraw %}

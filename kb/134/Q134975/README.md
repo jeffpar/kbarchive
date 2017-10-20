@@ -6,6 +6,8 @@ permalink: /kb/134/Q134975/
 
 ## Q134975: Multimedia Options Unavailable with CrystalWare Sound Card
 
+{% raw %}
+
 	Article: Q134975
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134975/
 	
 	=============================================================================
 	
+
+{% endraw %}

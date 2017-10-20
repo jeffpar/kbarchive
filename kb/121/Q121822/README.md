@@ -6,6 +6,8 @@ permalink: /kb/121/Q121822/
 
 ## Q121822: Deadlocks When Using Asynchronous Named Pipes
 
+{% raw %}
+
 	Article: Q121822
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1; winnt:3.5
@@ -56,3 +58,5 @@ permalink: /kb/121/Q121822/
 	
 	=============================================================================
 	
+
+{% endraw %}

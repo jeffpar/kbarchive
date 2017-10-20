@@ -6,6 +6,8 @@ permalink: /kb/238/Q238945/
 
 ## Q238945: FIX: Repeatedly Manipulating Data in Edit Box Causes Error Msg
 
+{% raw %}
+
 	Article: Q238945
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -101,3 +103,5 @@ permalink: /kb/238/Q238945/
 	
 	=============================================================================
 	
+
+{% endraw %}

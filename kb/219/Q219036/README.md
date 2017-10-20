@@ -6,6 +6,8 @@ permalink: /kb/219/Q219036/
 
 ## Q219036: SP4 on a Digital Alpha System Requires an OEM HAL Update
 
+{% raw %}
+
 	Article: Q219036
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP3
@@ -90,3 +92,5 @@ permalink: /kb/219/Q219036/
 	
 	=============================================================================
 	
+
+{% endraw %}

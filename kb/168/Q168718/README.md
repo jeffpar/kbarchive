@@ -6,6 +6,8 @@ permalink: /kb/168/Q168718/
 
 ## Q168718: XCLN: Win95 NW Clients Disconnected from Mail on Novell Server
 
+{% raw %}
+
 	Article: Q168718
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -74,3 +76,5 @@ permalink: /kb/168/Q168718/
 	
 	=============================================================================
 	
+
+{% endraw %}

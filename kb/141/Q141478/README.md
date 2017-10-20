@@ -6,6 +6,8 @@ permalink: /kb/141/Q141478/
 
 ## Q141478: FIX: Floating Toolbars Disappear in Developer Studio
 
+{% raw %}
+
 	Article: Q141478
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -66,3 +68,5 @@ permalink: /kb/141/Q141478/
 	
 	=============================================================================
 	
+
+{% endraw %}

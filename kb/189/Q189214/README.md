@@ -6,6 +6,8 @@ permalink: /kb/189/Q189214/
 
 ## Q189214: Running Win 98: Win98 Starts Here Demo Installation Confusing
 
+{% raw %}
+
 	Article: Q189214
 	Product(s): Microsoft Press
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/189/Q189214/
 	
 	=============================================================================
 	
+
+{% endraw %}

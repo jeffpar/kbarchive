@@ -6,6 +6,8 @@ permalink: /kb/147/Q147204/
 
 ## Q147204: Stop 0x0000000A in NDIS.SYS on a Multi-Processor Computer
 
+{% raw %}
+
 	Article: Q147204
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -55,3 +57,5 @@ permalink: /kb/147/Q147204/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47516/
 
 ## Q47516: Mac Wkst: Read Window Keyboard Shortcuts
 
+{% raw %}
+
 	Article: Q47516
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
@@ -58,3 +60,5 @@ permalink: /kb/047/Q47516/
 	
 	=============================================================================
 	
+
+{% endraw %}

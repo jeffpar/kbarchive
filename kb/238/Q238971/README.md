@@ -6,6 +6,8 @@ permalink: /kb/238/Q238971/
 
 ## Q238971: Err Msg: OLE DB Provider for ODBC Drivers Error '80004005'
 
+{% raw %}
+
 	Article: Q238971
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/238/Q238971/
 	
 	=============================================================================
 	
+
+{% endraw %}

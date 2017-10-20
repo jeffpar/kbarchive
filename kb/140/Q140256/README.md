@@ -6,6 +6,8 @@ permalink: /kb/140/Q140256/
 
 ## Q140256: &quot;Listen&quot; for NetBIOS Group Name Fails
 
+{% raw %}
+
 	Article: Q140256
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -84,3 +86,5 @@ permalink: /kb/140/Q140256/
 	
 	=============================================================================
 	
+
+{% endraw %}

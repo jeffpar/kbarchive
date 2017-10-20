@@ -6,6 +6,8 @@ permalink: /kb/193/Q193578/
 
 ## Q193578: BUG: Rollback Causes File Label Corruption
 
+{% raw %}
+
 	Article: Q193578
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/193/Q193578/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185180/
 
 ## Q185180: XFOR: Carriage Returns Not Preserved by Notes Connector
 
+{% raw %}
+
 	Article: Q185180
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -80,3 +82,5 @@ permalink: /kb/185/Q185180/
 	
 	=============================================================================
 	
+
+{% endraw %}

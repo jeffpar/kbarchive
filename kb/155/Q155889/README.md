@@ -6,6 +6,8 @@ permalink: /kb/155/Q155889/
 
 ## Q155889: BUG: File Loses One Byte When Checked Out
 
+{% raw %}
+
 	Article: Q155889
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a
@@ -78,3 +80,5 @@ permalink: /kb/155/Q155889/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146780/
 
 ## Q146780: XCLN: Setup Is Unable to Create Item In Program Manager Group
 
+{% raw %}
+
 	Article: Q146780
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -49,3 +51,5 @@ permalink: /kb/146/Q146780/
 	
 	=============================================================================
 	
+
+{% endraw %}

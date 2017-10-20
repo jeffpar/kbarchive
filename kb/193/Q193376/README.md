@@ -6,6 +6,8 @@ permalink: /kb/193/Q193376/
 
 ## Q193376: Simulated RTC Presents the Century Byte with 19 Instead of 20
 
+{% raw %}
+
 	Article: Q193376
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -72,3 +74,5 @@ permalink: /kb/193/Q193376/
 	
 	=============================================================================
 	
+
+{% endraw %}

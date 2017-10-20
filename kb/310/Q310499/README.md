@@ -6,6 +6,8 @@ permalink: /kb/310/Q310499/
 
 ## Q310499: SMS: Cannot Install the SMS Client on Windows XP Home Edition
 
+{% raw %}
+
 	Article: Q310499
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -58,3 +60,5 @@ permalink: /kb/310/Q310499/
 	
 	=============================================================================
 	
+
+{% endraw %}

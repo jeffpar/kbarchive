@@ -6,6 +6,8 @@ permalink: /kb/172/Q172862/
 
 ## Q172862: DOCFIX: Error in Sample Code for Async Downloading of Property
 
+{% raw %}
+
 	Article: Q172862
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172862/
 	
 	=============================================================================
 	
+
+{% endraw %}

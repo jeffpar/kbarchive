@@ -6,6 +6,8 @@ permalink: /kb/175/Q175563/
 
 ## Q175563: XFOR: Apple Chooser Does Not Recognize Exchange Cluster Name
 
+{% raw %}
+
 	Article: Q175563
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/175/Q175563/
 	
 	=============================================================================
 	
+
+{% endraw %}

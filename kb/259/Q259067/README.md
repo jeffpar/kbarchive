@@ -6,6 +6,8 @@ permalink: /kb/259/Q259067/
 
 ## Q259067: Win2000: Only Administrator or Power User Can Run Legacy Program
 
+{% raw %}
+
 	Article: Q259067
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:4.5a
@@ -88,3 +90,5 @@ permalink: /kb/259/Q259067/
 	
 	=============================================================================
 	
+
+{% endraw %}

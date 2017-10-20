@@ -6,6 +6,8 @@ permalink: /kb/166/Q166135/
 
 ## Q166135: FIX: Print Preview Behavior Changes Since VC 4.2
 
+{% raw %}
+
 	Article: Q166135
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,4.2b,5.0,6.0
@@ -150,3 +152,5 @@ permalink: /kb/166/Q166135/
 	
 	=============================================================================
 	
+
+{% endraw %}

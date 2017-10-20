@@ -6,6 +6,8 @@ permalink: /kb/238/Q238061/
 
 ## Q238061: Encarta Dictionary 2000: No Integration with Word or PowerPoint
 
+{% raw %}
+
 	Article: Q238061
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -108,3 +110,5 @@ permalink: /kb/238/Q238061/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248793/
 
 ## Q248793: XCLN: Renaming Mailbox That Is Displayed in Outlook
 
+{% raw %}
+
 	Article: Q248793
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; :
@@ -91,3 +93,5 @@ permalink: /kb/248/Q248793/
 	
 	=============================================================================
 	
+
+{% endraw %}

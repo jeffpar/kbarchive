@@ -6,6 +6,8 @@ permalink: /kb/130/Q130224/
 
 ## Q130224: PRB: Cannot Pass an Array Member to a Procedure
 
+{% raw %}
+
 	Article: Q130224
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -104,3 +106,5 @@ permalink: /kb/130/Q130224/
 	
 	=============================================================================
 	
+
+{% endraw %}

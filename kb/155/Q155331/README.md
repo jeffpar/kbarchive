@@ -6,6 +6,8 @@ permalink: /kb/155/Q155331/
 
 ## Q155331: How To Enable VfW 1.1 CAPSCRN.EXE to Work in Windows 95
 
+{% raw %}
+
 	Article: Q155331
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 1.1
@@ -59,3 +61,5 @@ permalink: /kb/155/Q155331/
 	
 	=============================================================================
 	
+
+{% endraw %}

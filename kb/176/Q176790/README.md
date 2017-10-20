@@ -6,6 +6,8 @@ permalink: /kb/176/Q176790/
 
 ## Q176790: HOWTO: Use CoCreateGUID API to Generate a GUID with VB
 
+{% raw %}
+
 	Article: Q176790
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -108,3 +110,5 @@ permalink: /kb/176/Q176790/
 	
 	=============================================================================
 	
+
+{% endraw %}

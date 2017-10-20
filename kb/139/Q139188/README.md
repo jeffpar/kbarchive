@@ -6,6 +6,8 @@ permalink: /kb/139/Q139188/
 
 ## Q139188: FIX: Cannot Click a List Box on a Pageframe by Using the Mouse
 
+{% raw %}
+
 	Article: Q139188
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -101,3 +103,5 @@ permalink: /kb/139/Q139188/
 	
 	=============================================================================
 	
+
+{% endraw %}

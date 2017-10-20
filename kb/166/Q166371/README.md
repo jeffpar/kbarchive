@@ -6,6 +6,8 @@ permalink: /kb/166/Q166371/
 
 ## Q166371: WindowsNT 4.0 Not Filtering Ports Destined for Remote Segments
 
+{% raw %}
+
 	Article: Q166371
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166371/
 	
 	=============================================================================
 	
+
+{% endraw %}

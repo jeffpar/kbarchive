@@ -6,6 +6,8 @@ permalink: /kb/266/Q266363/
 
 ## Q266363: BUG: Fatal Error When Closing Forms That Use DHTML Edit Control
 
+{% raw %}
+
 	Article: Q266363
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -151,3 +153,5 @@ permalink: /kb/266/Q266363/
 	
 	=============================================================================
 	
+
+{% endraw %}

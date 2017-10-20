@@ -6,6 +6,8 @@ permalink: /kb/099/Q99458/
 
 ## Q99458: OEM Setup Does Not Add Code Page Statements to AUTOEXEC.BAT
 
+{% raw %}
+
 	Article: Q99458
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -42,3 +44,5 @@ permalink: /kb/099/Q99458/
 	
 	=============================================================================
 	
+
+{% endraw %}

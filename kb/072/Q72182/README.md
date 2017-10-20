@@ -6,6 +6,8 @@ permalink: /kb/072/Q72182/
 
 ## Q72182: APPNOTES.TXT: Using Applications with MS-DOS Version 5.0
 
+{% raw %}
+
 	Article: Q72182
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -326,3 +328,5 @@ permalink: /kb/072/Q72182/
 	
 	=============================================================================
 	
+
+{% endraw %}

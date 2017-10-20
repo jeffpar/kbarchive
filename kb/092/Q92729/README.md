@@ -6,6 +6,8 @@ permalink: /kb/092/Q92729/
 
 ## Q92729: Windows Sound System Version 1.0 Disk Directory Listings
 
+{% raw %}
+
 	Article: Q92729
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -162,3 +164,5 @@ permalink: /kb/092/Q92729/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197584/
 
 ## Q197584: Bookshelf 99: Buttons Cover Find Box and Search Option
 
+{% raw %}
+
 	Article: Q197584
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/197/Q197584/
 	
 	=============================================================================
 	
+
+{% endraw %}

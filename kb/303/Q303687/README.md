@@ -6,6 +6,8 @@ permalink: /kb/303/Q303687/
 
 ## Q303687: PRB: Duplicate Email When User Does Not Complete Password Change
 
+{% raw %}
+
 	Article: Q303687
 	Product(s): Microsoft Developer Network
 	Version(s): 2.0
@@ -91,3 +93,5 @@ permalink: /kb/303/Q303687/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315522/
 
 ## Q315522: HOW TO: Extract the URLScan Tool and Lockdown Template Files
 
+{% raw %}
+
 	Article: Q315522
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -80,3 +82,5 @@ permalink: /kb/315/Q315522/
 	
 	=============================================================================
 	
+
+{% endraw %}

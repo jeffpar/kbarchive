@@ -6,6 +6,8 @@ permalink: /kb/163/Q163037/
 
 ## Q163037: FIX: Label Properties Cause Illegal Operation
 
+{% raw %}
+
 	Article: Q163037
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0a 5.0
@@ -112,3 +114,5 @@ permalink: /kb/163/Q163037/
 	
 	=============================================================================
 	
+
+{% endraw %}

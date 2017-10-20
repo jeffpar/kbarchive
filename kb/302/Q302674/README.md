@@ -6,6 +6,8 @@ permalink: /kb/302/Q302674/
 
 ## Q302674: Advertisement Does Not Run with Unavailable Distribution Point
 
+{% raw %}
+
 	Article: Q302674
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -190,3 +192,5 @@ permalink: /kb/302/Q302674/
 	
 	=============================================================================
 	
+
+{% endraw %}

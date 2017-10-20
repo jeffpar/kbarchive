@@ -6,6 +6,8 @@ permalink: /kb/193/Q193705/
 
 ## Q193705: Cannot Use 11 or More Musical Instrument Device Interface Ports
 
+{% raw %}
+
 	Article: Q193705
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -56,3 +58,5 @@ permalink: /kb/193/Q193705/
 	
 	=============================================================================
 	
+
+{% endraw %}

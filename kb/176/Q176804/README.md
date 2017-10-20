@@ -6,6 +6,8 @@ permalink: /kb/176/Q176804/
 
 ## Q176804: Getdrive.exe: How To List the Drives on a Win32 System
 
+{% raw %}
+
 	Article: Q176804
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -82,3 +84,5 @@ permalink: /kb/176/Q176804/
 	
 	=============================================================================
 	
+
+{% endraw %}

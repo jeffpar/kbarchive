@@ -6,6 +6,8 @@ permalink: /kb/142/Q142427/
 
 ## Q142427: DynaZip Decompression Does Not Work with Old PKZip Files
 
+{% raw %}
+
 	Article: Q142427
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -71,3 +73,5 @@ permalink: /kb/142/Q142427/
 	
 	=============================================================================
 	
+
+{% endraw %}

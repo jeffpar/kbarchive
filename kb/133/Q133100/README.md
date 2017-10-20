@@ -6,6 +6,8 @@ permalink: /kb/133/Q133100/
 
 ## Q133100: FIX: Timer is Visible on a Form After Using Graphics Methods
 
+{% raw %}
+
 	Article: Q133100
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -75,3 +77,5 @@ permalink: /kb/133/Q133100/
 	
 	=============================================================================
 	
+
+{% endraw %}

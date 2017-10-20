@@ -6,6 +6,8 @@ permalink: /kb/168/Q168706/
 
 ## Q168706: FIX: PivotTable Wizard - Cannot Find Excel 97
 
+{% raw %}
+
 	Article: Q168706
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -71,3 +73,5 @@ permalink: /kb/168/Q168706/
 	
 	=============================================================================
 	
+
+{% endraw %}

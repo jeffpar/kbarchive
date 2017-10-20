@@ -6,6 +6,8 @@ permalink: /kb/130/Q130459/
 
 ## Q130459: Adding TrueType, Raster, or Vector Fonts to System
 
+{% raw %}
+
 	Article: Q130459
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
@@ -79,3 +81,5 @@ permalink: /kb/130/Q130459/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214519/
 
 ## Q214519: Combat Flight Simulator: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q214519
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/214/Q214519/
 	
 	=============================================================================
 	
+
+{% endraw %}

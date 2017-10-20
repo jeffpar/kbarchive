@@ -6,6 +6,8 @@ permalink: /kb/078/Q78596/
 
 ## Q78596: Why MS-DOS Shell May Require Updated Mouse Driver
 
+{% raw %}
+
 	Article: Q78596
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -53,3 +55,5 @@ permalink: /kb/078/Q78596/
 	
 	=============================================================================
 	
+
+{% endraw %}

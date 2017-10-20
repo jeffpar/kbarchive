@@ -6,6 +6,8 @@ permalink: /kb/129/Q129016/
 
 ## Q129016: How to Register Your Third-Party Wizards
 
+{% raw %}
+
 	Article: Q129016
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/129/Q129016/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164073/
 
 ## Q164073: ASP Queries When SSL Enabled Gives Incomplete Results or Errors
 
+{% raw %}
+
 	Article: Q164073
 	Product(s): Internet Information Server
 	Version(s): 1.0,3.0,3.01
@@ -78,3 +80,5 @@ permalink: /kb/164/Q164073/
 	
 	=============================================================================
 	
+
+{% endraw %}

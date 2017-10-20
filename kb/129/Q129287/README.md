@@ -6,6 +6,8 @@ permalink: /kb/129/Q129287/
 
 ## Q129287: INFO: Differences Between Exclamation Mark (!) &amp; Dot (.) Syntax
 
+{% raw %}
+
 	Article: Q129287
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -89,3 +91,5 @@ permalink: /kb/129/Q129287/
 	
 	=============================================================================
 	
+
+{% endraw %}

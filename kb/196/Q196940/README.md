@@ -6,6 +6,8 @@ permalink: /kb/196/Q196940/
 
 ## Q196940: WD97: Mail Merge Does Not Merge Hidden Character Formatting
 
+{% raw %}
+
 	Article: Q196940
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/196/Q196940/
 	
 	=============================================================================
 	
+
+{% endraw %}

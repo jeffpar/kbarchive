@@ -6,6 +6,8 @@ permalink: /kb/085/Q85638/
 
 ## Q85638: WRK Flowchart Incorrectly States SMARTDrive Cache
 
+{% raw %}
+
 	Article: Q85638
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/085/Q85638/
 	
 	=============================================================================
 	
+
+{% endraw %}

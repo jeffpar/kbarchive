@@ -6,6 +6,8 @@ permalink: /kb/063/Q63588/
 
 ## Q63588: Troubleshooting Unsupported VGA Cards with Windows 3.0
 
+{% raw %}
+
 	Article: Q63588
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -94,3 +96,5 @@ permalink: /kb/063/Q63588/
 	
 	=============================================================================
 	
+
+{% endraw %}

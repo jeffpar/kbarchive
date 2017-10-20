@@ -6,6 +6,8 @@ permalink: /kb/221/Q221672/
 
 ## Q221672: FIX: Coverage Profiler Does Not Accept Long Coverage File Names
 
+{% raw %}
+
 	Article: Q221672
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -80,3 +82,5 @@ permalink: /kb/221/Q221672/
 	
 	=============================================================================
 	
+
+{% endraw %}

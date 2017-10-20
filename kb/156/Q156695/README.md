@@ -6,6 +6,8 @@ permalink: /kb/156/Q156695/
 
 ## Q156695: User Profiles not Being Mapped to Local and Domain Profiles
 
+{% raw %}
+
 	Article: Q156695
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156695/
 	
 	=============================================================================
 	
+
+{% endraw %}

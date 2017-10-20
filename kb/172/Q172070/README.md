@@ -6,6 +6,8 @@ permalink: /kb/172/Q172070/
 
 ## Q172070: Deleting 3270 Pool May Result in Unnamed Pool in SNA Manager
 
+{% raw %}
+
 	Article: Q172070
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -66,3 +68,5 @@ permalink: /kb/172/Q172070/
 	
 	=============================================================================
 	
+
+{% endraw %}

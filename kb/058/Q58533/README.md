@@ -6,6 +6,8 @@ permalink: /kb/058/Q58533/
 
 ## Q58533: Offsetof() Macro Gives Incorrect Results or C1045
 
+{% raw %}
+
 	Article: Q58533
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00 2.01
@@ -110,3 +112,5 @@ permalink: /kb/058/Q58533/
 	The results are as follows:
 	
 	   The offsets are 0 and 2
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139492/
 
 ## Q139492: Locating Microsoft SNA Server Companion Products Catalog
 
+{% raw %}
+
 	Article: Q139492
 	Product(s): Microsoft SNA Server
 	Version(s): winnt:2.1,2.11,3.0,4.0
@@ -61,3 +63,5 @@ permalink: /kb/139/Q139492/
 	
 	=============================================================================
 	
+
+{% endraw %}

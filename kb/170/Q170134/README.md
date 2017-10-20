@@ -6,6 +6,8 @@ permalink: /kb/170/Q170134/
 
 ## Q170134: RASDIAL Error 623 When Dial-up Entry Name Contains Spaces
 
+{% raw %}
+
 	Article: Q170134
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -52,3 +54,5 @@ permalink: /kb/170/Q170134/
 	
 	=============================================================================
 	
+
+{% endraw %}

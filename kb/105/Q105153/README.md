@@ -6,6 +6,8 @@ permalink: /kb/105/Q105153/
 
 ## Q105153: AppleTalk Architecture Compared to the OSI Model
 
+{% raw %}
+
 	Article: Q105153
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/105/Q105153/
 	
 	=============================================================================
 	
+
+{% endraw %}

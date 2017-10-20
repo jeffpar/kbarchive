@@ -6,6 +6,8 @@ permalink: /kb/137/Q137350/
 
 ## Q137350: PRB: Visual FoxPro Quits to MS-DOS If AWFAX Is Running
 
+{% raw %}
+
 	Article: Q137350
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -99,3 +101,5 @@ permalink: /kb/137/Q137350/
 	
 	=============================================================================
 	
+
+{% endraw %}

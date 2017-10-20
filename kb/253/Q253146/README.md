@@ -6,6 +6,8 @@ permalink: /kb/253/Q253146/
 
 ## Q253146: Tuning the Performance and Scalability of ASP Web Applications
 
+{% raw %}
+
 	Article: Q253146
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -111,3 +113,5 @@ permalink: /kb/253/Q253146/
 	
 	=============================================================================
 	
+
+{% endraw %}

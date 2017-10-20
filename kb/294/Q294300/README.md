@@ -6,6 +6,8 @@ permalink: /kb/294/Q294300/
 
 ## Q294300: Terminal Server Client May Have Keyboard Problems When Shadowed
 
+{% raw %}
+
 	Article: Q294300
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6
@@ -95,3 +97,5 @@ permalink: /kb/294/Q294300/
 	
 	=============================================================================
 	
+
+{% endraw %}

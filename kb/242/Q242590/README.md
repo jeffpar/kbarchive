@@ -6,6 +6,8 @@ permalink: /kb/242/Q242590/
 
 ## Q242590: Microsoft Outlook 2000 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q242590
 	Product(s): Microsoft Press
 	Version(s): 
@@ -209,3 +211,5 @@ permalink: /kb/242/Q242590/
 	
 	=============================================================================
 	
+
+{% endraw %}

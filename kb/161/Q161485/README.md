@@ -6,6 +6,8 @@ permalink: /kb/161/Q161485/
 
 ## Q161485: PPT: Sample Code to Find Slides that Don't Follow Slide Master
 
+{% raw %}
+
 	Article: Q161485
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -155,3 +157,5 @@ permalink: /kb/161/Q161485/
 	
 	=============================================================================
 	
+
+{% endraw %}

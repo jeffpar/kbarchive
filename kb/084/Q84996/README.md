@@ -6,6 +6,8 @@ permalink: /kb/084/Q84996/
 
 ## Q84996: Emulation Modes for Diconix 300W Printer
 
+{% raw %}
+
 	Article: Q84996
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/084/Q84996/
 	
 	=============================================================================
 	
+
+{% endraw %}

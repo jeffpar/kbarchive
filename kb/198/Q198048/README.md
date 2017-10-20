@@ -6,6 +6,8 @@ permalink: /kb/198/Q198048/
 
 ## Q198048: WD97: How to Use Settings for Viewing and Printing Objects
 
+{% raw %}
+
 	Article: Q198048
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -129,3 +131,5 @@ permalink: /kb/198/Q198048/
 	
 	=============================================================================
 	
+
+{% endraw %}

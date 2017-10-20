@@ -6,6 +6,8 @@ permalink: /kb/085/Q85733/
 
 ## Q85733: How to Change the Program Manager Title Bar
 
+{% raw %}
+
 	Article: Q85733
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/085/Q85733/
 	
 	=============================================================================
 	
+
+{% endraw %}

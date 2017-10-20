@@ -6,6 +6,8 @@ permalink: /kb/081/Q81075/
 
 ## Q81075: HP IIIsi Auto Select Option Not Saved when Windows Restarts
 
+{% raw %}
+
 	Article: Q81075
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/081/Q81075/
 	
 	=============================================================================
 	
+
+{% endraw %}

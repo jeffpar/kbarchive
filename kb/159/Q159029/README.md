@@ -6,6 +6,8 @@ permalink: /kb/159/Q159029/
 
 ## Q159029: WD97: Macro to Count Number of Rows in a Table
 
+{% raw %}
+
 	Article: Q159029
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -122,3 +124,5 @@ permalink: /kb/159/Q159029/
 	
 	=============================================================================
 	
+
+{% endraw %}

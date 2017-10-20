@@ -6,6 +6,8 @@ permalink: /kb/193/Q193577/
 
 ## Q193577: HOWTO: Pin Multiple Files in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q193577
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/193/Q193577/
 	
 	=============================================================================
 	
+
+{% endraw %}

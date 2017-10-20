@@ -6,6 +6,8 @@ permalink: /kb/034/Q34065/
 
 ## Q34065: setvbuf with Buffer Greater than 32K Causes fwrite Failure
 
+{% raw %}
+
 	Article: Q34065
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -49,3 +51,5 @@ permalink: /kb/034/Q34065/
 	                exit(-1) ;
 	                }
 	}
+
+{% endraw %}

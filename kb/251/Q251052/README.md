@@ -6,6 +6,8 @@ permalink: /kb/251/Q251052/
 
 ## Q251052: XADM: Move Server Wizard Stops After Information Store Fix
 
+{% raw %}
+
 	Article: Q251052
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -144,3 +146,5 @@ permalink: /kb/251/Q251052/
 	
 	=============================================================================
 	
+
+{% endraw %}

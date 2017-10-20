@@ -6,6 +6,8 @@ permalink: /kb/061/Q61231/
 
 ## Q61231: C 6.00 README: CV: Blank Screen Debugging Under Earlier OS/2
 
+{% raw %}
+
 	Article: Q61231
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -38,3 +40,5 @@ permalink: /kb/061/Q61231/
 	2. If the syslevel command returns the value "xr04043" and you have
 	   experienced the difficulties described above, contact your OS/2
 	   distributor for an upgrade.
+
+{% endraw %}

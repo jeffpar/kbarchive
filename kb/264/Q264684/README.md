@@ -6,6 +6,8 @@ permalink: /kb/264/Q264684/
 
 ## Q264684: MS00-040: Patch for &quot;Remote Registry Access Authentication&quot; Vuln
 
+{% raw %}
+
 	Article: Q264684
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -118,3 +120,5 @@ permalink: /kb/264/Q264684/
 	
 	=============================================================================
 	
+
+{% endraw %}

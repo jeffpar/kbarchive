@@ -6,6 +6,8 @@ permalink: /kb/094/Q94213/
 
 ## Q94213: Vegas Games Causes Error Message
 
+{% raw %}
+
 	Article: Q94213
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/094/Q94213/
 	
 	=============================================================================
 	
+
+{% endraw %}

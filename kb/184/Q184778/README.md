@@ -6,6 +6,8 @@ permalink: /kb/184/Q184778/
 
 ## Q184778: XADM: Unable to Modify Public Folder Client Permissions
 
+{% raw %}
+
 	Article: Q184778
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/184/Q184778/
 	
 	=============================================================================
 	
+
+{% endraw %}

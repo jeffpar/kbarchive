@@ -6,6 +6,8 @@ permalink: /kb/062/Q62926/
 
 ## Q62926: Using C Compiler /Gs Switch in PM Environment
 
+{% raw %}
+
 	Article: Q62926
 	Product(s): See article
 	Version(s): 5.10 6.00
@@ -151,3 +153,5 @@ permalink: /kb/062/Q62926/
 	does NOT have to allocate stack areas. OS/2 version 2.00 will do it
 	automatically and if a process or thread ever exceeds the stack area,
 	OS/2 version 2.00 will expand it on the fly.
+
+{% endraw %}

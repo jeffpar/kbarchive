@@ -6,6 +6,8 @@ permalink: /kb/127/Q127868/
 
 ## Q127868: XGEN: Supported CCITT and ISO Standards
 
+{% raw %}
+
 	Article: Q127868
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -60,3 +62,5 @@ permalink: /kb/127/Q127868/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138952/
 
 ## Q138952: FIX: Calling AMEMBERS() w/ Invalid Parameter Creates an Array
 
+{% raw %}
+
 	Article: Q138952
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -60,3 +62,5 @@ permalink: /kb/138/Q138952/
 	
 	=============================================================================
 	
+
+{% endraw %}

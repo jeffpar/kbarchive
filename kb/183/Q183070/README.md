@@ -6,6 +6,8 @@ permalink: /kb/183/Q183070/
 
 ## Q183070: WD97: Embedded OLE Objects Are Changed to Pictures After Save As
 
+{% raw %}
+
 	Article: Q183070
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -51,3 +53,5 @@ permalink: /kb/183/Q183070/
 	
 	=============================================================================
 	
+
+{% endraw %}

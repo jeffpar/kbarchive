@@ -6,6 +6,8 @@ permalink: /kb/034/Q34922/
 
 ## Q34922: CodeView Cannot Debug Source Code in Include Files
 
+{% raw %}
+
 	Article: Q34922
 	Product(s): See article
 	Version(s): 1.00 1.10 1.11 2.00 2.02.02 2.10 2.20
@@ -39,3 +41,5 @@ permalink: /kb/034/Q34922/
 	Although it is valid C code, include files must not contain
 	initializations or function definitions or other executable statements
 	for CodeView to be able to debug your programs properly.
+
+{% endraw %}

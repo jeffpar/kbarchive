@@ -6,6 +6,8 @@ permalink: /kb/246/Q246536/
 
 ## Q246536: XCLN: New vCard from Contact Contains Info from GAL
 
+{% raw %}
+
 	Article: Q246536
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -76,3 +78,5 @@ permalink: /kb/246/Q246536/
 	
 	=============================================================================
 	
+
+{% endraw %}

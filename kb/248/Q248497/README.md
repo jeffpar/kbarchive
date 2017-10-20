@@ -6,6 +6,8 @@ permalink: /kb/248/Q248497/
 
 ## Q248497: Event ID 113: &quot;Instance 1 Has Invalid Binding Descriptor&quot;
 
+{% raw %}
+
 	Article: Q248497
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:2.0,4.0
@@ -67,3 +69,5 @@ permalink: /kb/248/Q248497/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175924/
 
 ## Q175924: WD97: Code to Determine Whether Open Document Is a Template
 
+{% raw %}
+
 	Article: Q175924
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -108,3 +110,5 @@ permalink: /kb/175/Q175924/
 	
 	=============================================================================
 	
+
+{% endraw %}

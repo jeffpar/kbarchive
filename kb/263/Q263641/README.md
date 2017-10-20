@@ -6,6 +6,8 @@ permalink: /kb/263/Q263641/
 
 ## Q263641: XCON: Exchange Connector for Novell GroupWise Incorrectly Transl
 
+{% raw %}
+
 	Article: Q263641
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -173,3 +175,5 @@ permalink: /kb/263/Q263641/
 	
 	=============================================================================
 	
+
+{% endraw %}

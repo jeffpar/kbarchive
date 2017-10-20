@@ -6,6 +6,8 @@ permalink: /kb/157/Q157257/
 
 ## Q157257: XCLN: How to Change a Send Form to a Post Form
 
+{% raw %}
+
 	Article: Q157257
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/157/Q157257/
 	
 	=============================================================================
 	
+
+{% endraw %}

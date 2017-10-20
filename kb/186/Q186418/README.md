@@ -6,6 +6,8 @@ permalink: /kb/186/Q186418/
 
 ## Q186418: SMS: NOAUTOUPGRADE Switch to Prevent Upgrade of Secondary Sites
 
+{% raw %}
+
 	Article: Q186418
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -56,3 +58,5 @@ permalink: /kb/186/Q186418/
 	
 	=============================================================================
 	
+
+{% endraw %}

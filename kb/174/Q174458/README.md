@@ -6,6 +6,8 @@ permalink: /kb/174/Q174458/
 
 ## Q174458: SMS: Failure Playing AVIs During a Win95 Remote Control Session
 
+{% raw %}
+
 	Article: Q174458
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/174/Q174458/
 	
 	=============================================================================
 	
+
+{% endraw %}

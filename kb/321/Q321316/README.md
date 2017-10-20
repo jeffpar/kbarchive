@@ -6,6 +6,8 @@ permalink: /kb/321/Q321316/
 
 ## Q321316: BUG: The EnableDNS Method May Return Error Code 94
 
+{% raw %}
+
 	Article: Q321316
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/321/Q321316/
 	
 	=============================================================================
 	
+
+{% endraw %}

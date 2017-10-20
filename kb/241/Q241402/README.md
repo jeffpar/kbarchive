@@ -6,6 +6,8 @@ permalink: /kb/241/Q241402/
 
 ## Q241402: HOWTO: Run ADOCE on a Palm-Size PC Device from VBCE6
 
+{% raw %}
+
 	Article: Q241402
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -174,3 +176,5 @@ permalink: /kb/241/Q241402/
 	
 	=============================================================================
 	
+
+{% endraw %}

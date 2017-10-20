@@ -6,6 +6,8 @@ permalink: /kb/254/Q254481/
 
 ## Q254481: Err Msg: The Page Cannot Be Displayed...
 
+{% raw %}
+
 	Article: Q254481
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -77,3 +79,5 @@ permalink: /kb/254/Q254481/
 	
 	=============================================================================
 	
+
+{% endraw %}

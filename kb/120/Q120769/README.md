@@ -6,6 +6,8 @@ permalink: /kb/120/Q120769/
 
 ## Q120769: Visual C++ Version 2.0 README.WRI File - Part 1 Setup
 
+{% raw %}
+
 	Article: Q120769
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/120/Q120769/
 	
 	=============================================================================
 	
+
+{% endraw %}

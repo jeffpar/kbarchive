@@ -6,6 +6,8 @@ permalink: /kb/166/Q166145/
 
 ## Q166145: Ultimate Climb: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q166145
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0a
@@ -63,3 +65,5 @@ permalink: /kb/166/Q166145/
 	
 	=============================================================================
 	
+
+{% endraw %}

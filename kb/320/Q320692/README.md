@@ -6,6 +6,8 @@ permalink: /kb/320/Q320692/
 
 ## Q320692: SMS: Transaction History Files Increase in Size
 
+{% raw %}
+
 	Article: Q320692
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3,2.0 SP4
@@ -165,3 +167,5 @@ permalink: /kb/320/Q320692/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170861/
 
 ## Q170861: Error 501, Not Supported When Using .Exe and .Com Applications
 
+{% raw %}
+
 	Article: Q170861
 	Product(s): Internet Information Server
 	Version(s): WinNT:2.0,3.0
@@ -85,3 +87,5 @@ permalink: /kb/170/Q170861/
 	
 	=============================================================================
 	
+
+{% endraw %}

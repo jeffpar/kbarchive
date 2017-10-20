@@ -6,6 +6,8 @@ permalink: /kb/167/Q167347/
 
 ## Q167347: FIX: /Og Causes C1001, main.c, line 379 for Recursive Call
 
+{% raw %}
+
 	Article: Q167347
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -88,3 +90,5 @@ permalink: /kb/167/Q167347/
 	
 	=============================================================================
 	
+
+{% endraw %}

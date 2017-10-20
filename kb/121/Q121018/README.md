@@ -6,6 +6,8 @@ permalink: /kb/121/Q121018/
 
 ## Q121018: PRB: Special Characters in Path Cause NMake Error U1007
 
+{% raw %}
+
 	Article: Q121018
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,5.0
@@ -70,3 +72,5 @@ permalink: /kb/121/Q121018/
 	
 	=============================================================================
 	
+
+{% endraw %}

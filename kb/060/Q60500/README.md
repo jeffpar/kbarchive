@@ -6,6 +6,8 @@ permalink: /kb/060/Q60500/
 
 ## Q60500: How to Abort Compilation When Using PWB
 
+{% raw %}
+
 	Article: Q60500
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/060/Q60500/
 	
 	=============================================================================
 	
+
+{% endraw %}

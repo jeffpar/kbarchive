@@ -6,6 +6,8 @@ permalink: /kb/112/Q112430/
 
 ## Q112430: PPT: Cannot Convert Linked PowerPoint Objects
 
+{% raw %}
+
 	Article: Q112430
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -49,3 +51,5 @@ permalink: /kb/112/Q112430/
 	
 	=============================================================================
 	
+
+{% endraw %}

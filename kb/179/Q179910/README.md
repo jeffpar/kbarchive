@@ -6,6 +6,8 @@ permalink: /kb/179/Q179910/
 
 ## Q179910: Encarta Err Msg: Qt32inst Caused a Divide Error in Qt32inst.exe
 
+{% raw %}
+
 	Article: Q179910
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -106,3 +108,5 @@ permalink: /kb/179/Q179910/
 	
 	=============================================================================
 	
+
+{% endraw %}

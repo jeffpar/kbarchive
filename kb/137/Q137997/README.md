@@ -6,6 +6,8 @@ permalink: /kb/137/Q137997/
 
 ## Q137997: XCLN: Message Finder Does Not Save View
 
+{% raw %}
+
 	Article: Q137997
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -45,3 +47,5 @@ permalink: /kb/137/Q137997/
 	
 	=============================================================================
 	
+
+{% endraw %}

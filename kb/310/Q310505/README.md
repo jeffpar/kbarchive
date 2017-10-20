@@ -6,6 +6,8 @@ permalink: /kb/310/Q310505/
 
 ## Q310505: SMS: SMS SP3 ICP Upgrade May Damage Secondary Site Installation
 
+{% raw %}
+
 	Article: Q310505
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -99,3 +101,5 @@ permalink: /kb/310/Q310505/
 	
 	=============================================================================
 	
+
+{% endraw %}

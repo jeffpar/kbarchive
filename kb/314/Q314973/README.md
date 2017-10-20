@@ -6,6 +6,8 @@ permalink: /kb/314/Q314973/
 
 ## Q314973: &quot;Unable to Write File&quot; Err Msg After Adding Local APPC LU
 
+{% raw %}
+
 	Article: Q314973
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -131,3 +133,5 @@ permalink: /kb/314/Q314973/
 	
 	=============================================================================
 	
+
+{% endraw %}

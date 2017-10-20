@@ -6,6 +6,8 @@ permalink: /kb/192/Q192331/
 
 ## Q192331: AbirNet SessionWall-3 with Windows NT 4.0 Displays Blue Screen
 
+{% raw %}
+
 	Article: Q192331
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/192/Q192331/
 	
 	=============================================================================
 	
+
+{% endraw %}

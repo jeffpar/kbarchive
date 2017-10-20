@@ -6,6 +6,8 @@ permalink: /kb/058/Q58108/
 
 ## Q58108: BASIC 7.00 Wrong Integer FOR-NEXT Index Results in .EXE
 
+{% raw %}
+
 	Article: Q58108
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -90,3 +92,5 @@ permalink: /kb/058/Q58108/
 	   3   3   46.7
 	   4   4   46.7
 	   5   5   46.7
+
+{% endraw %}

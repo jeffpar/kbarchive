@@ -6,6 +6,8 @@ permalink: /kb/273/Q273742/
 
 ## Q273742: XADM: Error Message: Setup Failed While Installing Sub-Component
 
+{% raw %}
+
 	Article: Q273742
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/273/Q273742/
 	
 	=============================================================================
 	
+
+{% endraw %}

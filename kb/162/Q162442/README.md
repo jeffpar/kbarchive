@@ -6,6 +6,8 @@ permalink: /kb/162/Q162442/
 
 ## Q162442: FIX: Setup Wizard Creates Disk Images That Cannot Be Copied
 
+{% raw %}
+
 	Article: Q162442
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -86,3 +88,5 @@ permalink: /kb/162/Q162442/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87282/
 
 ## Q87282: VESA Local Bus Diamond Stealth May Cause Hardware Conflict
 
+{% raw %}
+
 	Article: Q87282
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/087/Q87282/
 	
 	=============================================================================
 	
+
+{% endraw %}

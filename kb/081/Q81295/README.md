@@ -6,6 +6,8 @@ permalink: /kb/081/Q81295/
 
 ## Q81295: Setup Err Msg: Sector Not Found Error Reading Drive A:
 
+{% raw %}
+
 	Article: Q81295
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/081/Q81295/
 	
 	=============================================================================
 	
+
+{% endraw %}

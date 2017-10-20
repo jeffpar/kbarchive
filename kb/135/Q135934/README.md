@@ -6,6 +6,8 @@ permalink: /kb/135/Q135934/
 
 ## Q135934: DriveSpace 3 Operation Fails if Disk Defragmenter Is Running
 
+{% raw %}
+
 	Article: Q135934
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/135/Q135934/
 	
 	=============================================================================
 	
+
+{% endraw %}

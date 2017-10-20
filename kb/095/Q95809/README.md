@@ -6,6 +6,8 @@ permalink: /kb/095/Q95809/
 
 ## Q95809: IFR Cruising Altitudes Documented Incorrectly
 
+{% raw %}
+
 	Article: Q95809
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/095/Q95809/
 	
 	=============================================================================
 	
+
+{% endraw %}

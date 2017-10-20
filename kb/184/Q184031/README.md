@@ -6,6 +6,8 @@ permalink: /kb/184/Q184031/
 
 ## Q184031: Proxy/IIS Errors: Web Site IP Addresses Are Misconfigured
 
+{% raw %}
+
 	Article: Q184031
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0,4.0
@@ -95,3 +97,5 @@ permalink: /kb/184/Q184031/
 	
 	=============================================================================
 	
+
+{% endraw %}

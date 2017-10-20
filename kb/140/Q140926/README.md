@@ -6,6 +6,8 @@ permalink: /kb/140/Q140926/
 
 ## Q140926: L2GETNET Doesn't Report IP Address of German Windows 95 Client
 
+{% raw %}
+
 	Article: Q140926
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -42,3 +44,5 @@ permalink: /kb/140/Q140926/
 	
 	=============================================================================
 	
+
+{% endraw %}

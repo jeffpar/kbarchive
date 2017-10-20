@@ -6,6 +6,8 @@ permalink: /kb/151/Q151642/
 
 ## Q151642: Encarta 96: Contents of the January 96 Yearbook Update
 
+{% raw %}
+
 	Article: Q151642
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1996 edition
@@ -94,3 +96,5 @@ permalink: /kb/151/Q151642/
 	
 	=============================================================================
 	
+
+{% endraw %}

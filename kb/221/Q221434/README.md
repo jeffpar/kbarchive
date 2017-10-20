@@ -6,6 +6,8 @@ permalink: /kb/221/Q221434/
 
 ## Q221434: XADM: &quot;Send As&quot; Functionality Does Not Work When DPA Is Used
 
+{% raw %}
+
 	Article: Q221434
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -90,3 +92,5 @@ permalink: /kb/221/Q221434/
 	
 	=============================================================================
 	
+
+{% endraw %}

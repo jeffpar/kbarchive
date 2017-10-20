@@ -6,6 +6,8 @@ permalink: /kb/122/Q122322/
 
 ## Q122322: Extra Characters Added to DNS Name Query
 
+{% raw %}
+
 	Article: Q122322
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -62,3 +64,5 @@ permalink: /kb/122/Q122322/
 	
 	=============================================================================
 	
+
+{% endraw %}

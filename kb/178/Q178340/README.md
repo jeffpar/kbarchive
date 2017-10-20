@@ -6,6 +6,8 @@ permalink: /kb/178/Q178340/
 
 ## Q178340: CFS or FS98/2000: Outside View Constantly Pans or Shifts
 
+{% raw %}
+
 	Article: Q178340
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -208,3 +210,5 @@ permalink: /kb/178/Q178340/
 	
 	=============================================================================
 	
+
+{% endraw %}

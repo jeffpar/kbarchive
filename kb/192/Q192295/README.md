@@ -6,6 +6,8 @@ permalink: /kb/192/Q192295/
 
 ## Q192295: IIS Causes Memory Leak When Using Secure Sockets Layer (SSL)
 
+{% raw %}
+
 	Article: Q192295
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -124,3 +126,5 @@ permalink: /kb/192/Q192295/
 	
 	=============================================================================
 	
+
+{% endraw %}

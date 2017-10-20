@@ -6,6 +6,8 @@ permalink: /kb/133/Q133732/
 
 ## Q133732: Missing TrueType Fonts in Fonts Folder or Programs
 
+{% raw %}
+
 	Article: Q133732
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -155,3 +157,5 @@ permalink: /kb/133/Q133732/
 	
 	=============================================================================
 	
+
+{% endraw %}

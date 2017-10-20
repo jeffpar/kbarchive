@@ -6,6 +6,8 @@ permalink: /kb/157/Q157866/
 
 ## Q157866: Msbatch.inf Parameters: Installing Printers
 
+{% raw %}
+
 	Article: Q157866
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157866/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119362/
 
 ## Q119362: PC Adm: Remote User Init-Disk Hangs
 
+{% raw %}
+
 	Article: Q119362
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -52,3 +54,5 @@ permalink: /kb/119/Q119362/
 	
 	=============================================================================
 	
+
+{% endraw %}

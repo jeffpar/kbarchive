@@ -6,6 +6,8 @@ permalink: /kb/166/Q166196/
 
 ## Q166196: SMS Setup Requires SQL Server Named Pipes Network Support
 
+{% raw %}
+
 	Article: Q166196
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -57,3 +59,5 @@ permalink: /kb/166/Q166196/
 	
 	=============================================================================
 	
+
+{% endraw %}

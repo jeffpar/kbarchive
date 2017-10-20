@@ -6,6 +6,8 @@ permalink: /kb/051/Q51292/
 
 ## Q51292: PRINT SPC(n) USING on Array Element, Bad Results
 
+{% raw %}
+
 	Article: Q51292
 	Product(s): See article
 	Version(s): 4.00 4.50
@@ -113,3 +115,5 @@ permalink: /kb/051/Q51292/
 	DATA "Club 01   ",  2, 0, 9, 33, 57,  4
 	DATA "Club 02   ",  3, 2, 6, 45, 17,  4
 	END
+
+{% endraw %}

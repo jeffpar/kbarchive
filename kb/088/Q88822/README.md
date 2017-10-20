@@ -6,6 +6,8 @@ permalink: /kb/088/Q88822/
 
 ## Q88822: PRINTER.WRI Incorrectly States TTFavor Switch
 
+{% raw %}
+
 	Article: Q88822
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :
@@ -64,3 +66,5 @@ permalink: /kb/088/Q88822/
 	
 	=============================================================================
 	
+
+{% endraw %}

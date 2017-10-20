@@ -6,6 +6,8 @@ permalink: /kb/078/Q78119/
 
 ## Q78119: PRB: Help Compiler Warning &quot;Using Old Key Phrase Table&quot; Cause
 
+{% raw %}
+
 	Article: Q78119
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -56,3 +58,5 @@ permalink: /kb/078/Q78119/
 	
 	=============================================================================
 	
+
+{% endraw %}

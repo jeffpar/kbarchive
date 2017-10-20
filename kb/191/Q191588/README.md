@@ -6,6 +6,8 @@ permalink: /kb/191/Q191588/
 
 ## Q191588: BUG: Create Report w/ SYS(1037) Saves Old Printer Information
 
+{% raw %}
+
 	Article: Q191588
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/191/Q191588/
 	
 	=============================================================================
 	
+
+{% endraw %}

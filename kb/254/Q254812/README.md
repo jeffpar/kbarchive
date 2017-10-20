@@ -6,6 +6,8 @@ permalink: /kb/254/Q254812/
 
 ## Q254812: XADM: MTA Backlogs to Private and Public Information Store
 
+{% raw %}
+
 	Article: Q254812
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -94,3 +96,5 @@ permalink: /kb/254/Q254812/
 	
 	=============================================================================
 	
+
+{% endraw %}

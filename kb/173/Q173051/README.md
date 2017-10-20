@@ -6,6 +6,8 @@ permalink: /kb/173/Q173051/
 
 ## Q173051: WD97: Errors Removing &quot;Run From Network Server&quot; Installation
 
+{% raw %}
+
 	Article: Q173051
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/173/Q173051/
 	
 	=============================================================================
 	
+
+{% endraw %}

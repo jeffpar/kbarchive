@@ -6,6 +6,8 @@ permalink: /kb/177/Q177567/
 
 ## Q177567: Inbox Starts Microsoft Exchange Instead of Windows Messaging
 
+{% raw %}
+
 	Article: Q177567
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -104,3 +106,5 @@ permalink: /kb/177/Q177567/
 	
 	=============================================================================
 	
+
+{% endraw %}

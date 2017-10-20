@@ -6,6 +6,8 @@ permalink: /kb/112/Q112806/
 
 ## Q112806: TrueType Font Pack 2 for Windows v1.0a (3.5&quot; 1.44 MB)
 
+{% raw %}
+
 	Article: Q112806
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -193,3 +195,5 @@ permalink: /kb/112/Q112806/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156705/
 
 ## Q156705: XADM: Site Tear-Down Causes Public Folders to be Re-homed
 
+{% raw %}
+
 	Article: Q156705
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -114,3 +116,5 @@ permalink: /kb/156/Q156705/
 	
 	=============================================================================
 	
+
+{% endraw %}

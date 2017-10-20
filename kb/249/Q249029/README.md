@@ -6,6 +6,8 @@ permalink: /kb/249/Q249029/
 
 ## Q249029: XFOR: Using a Verisign Certificate with Exchange Server SSL
 
+{% raw %}
+
 	Article: Q249029
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/249/Q249029/
 	
 	=============================================================================
 	
+
+{% endraw %}

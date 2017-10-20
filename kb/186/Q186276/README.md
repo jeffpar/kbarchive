@@ -6,6 +6,8 @@ permalink: /kb/186/Q186276/
 
 ## Q186276: PRB: Invalid Parameter Number Error Calling RDO BatchUpdate
 
+{% raw %}
+
 	Article: Q186276
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -206,3 +208,5 @@ permalink: /kb/186/Q186276/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114427/
 
 ## Q114427: How AWFAX Initializes a Class 1 or Class 2 Fax Modem
 
+{% raw %}
+
 	Article: Q114427
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -67,3 +69,5 @@ permalink: /kb/114/Q114427/
 	
 	=============================================================================
 	
+
+{% endraw %}

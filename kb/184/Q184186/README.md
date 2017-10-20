@@ -6,6 +6,8 @@ permalink: /kb/184/Q184186/
 
 ## Q184186: XADM: Recovering Exchange from a Corrupted Directory
 
+{% raw %}
+
 	Article: Q184186
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/184/Q184186/
 	
 	=============================================================================
 	
+
+{% endraw %}

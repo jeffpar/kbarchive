@@ -6,6 +6,8 @@ permalink: /kb/274/Q274197/
 
 ## Q274197: XADM: Error Message: System Cannot Find the File Specified
 
+{% raw %}
+
 	Article: Q274197
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -89,3 +91,5 @@ permalink: /kb/274/Q274197/
 	
 	=============================================================================
 	
+
+{% endraw %}

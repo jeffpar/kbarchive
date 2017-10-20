@@ -6,6 +6,8 @@ permalink: /kb/274/Q274099/
 
 ## Q274099: PRB: Page Size of Embedded Word File Changes When Edited
 
+{% raw %}
+
 	Article: Q274099
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -81,3 +83,5 @@ permalink: /kb/274/Q274099/
 	
 	=============================================================================
 	
+
+{% endraw %}

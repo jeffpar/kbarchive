@@ -6,6 +6,8 @@ permalink: /kb/158/Q158917/
 
 ## Q158917: Err Msg: MAPI Spooler Has Shut Down Unexpectedly
 
+{% raw %}
+
 	Article: Q158917
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 95
@@ -89,3 +91,5 @@ permalink: /kb/158/Q158917/
 	
 	=============================================================================
 	
+
+{% endraw %}

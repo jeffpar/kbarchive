@@ -6,6 +6,8 @@ permalink: /kb/259/Q259673/
 
 ## Q259673: HOWTO: Change the Application Icon with Visual Basic
 
+{% raw %}
+
 	Article: Q259673
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -146,3 +148,5 @@ permalink: /kb/259/Q259673/
 	
 	=============================================================================
 	
+
+{% endraw %}

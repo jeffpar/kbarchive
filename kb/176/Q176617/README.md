@@ -6,6 +6,8 @@ permalink: /kb/176/Q176617/
 
 ## Q176617: Transfer Users to Trusted Domain Option Unavailable in NWConv
 
+{% raw %}
+
 	Article: Q176617
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.00
@@ -49,3 +51,5 @@ permalink: /kb/176/Q176617/
 	
 	=============================================================================
 	
+
+{% endraw %}

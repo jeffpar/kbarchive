@@ -6,6 +6,8 @@ permalink: /kb/094/Q94358/
 
 ## Q94358: MemMaker Err Msg with QEMM: 'Bad Command or Filename'
 
+{% raw %}
+
 	Article: Q94358
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/094/Q94358/
 	
 	=============================================================================
 	
+
+{% endraw %}

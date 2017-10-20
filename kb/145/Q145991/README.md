@@ -6,6 +6,8 @@ permalink: /kb/145/Q145991/
 
 ## Q145991: HOWTO: Inserting an OLE Object into a SQL Table by Using SPT
 
+{% raw %}
+
 	Article: Q145991
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -62,3 +64,5 @@ permalink: /kb/145/Q145991/
 	
 	=============================================================================
 	
+
+{% endraw %}

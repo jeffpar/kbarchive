@@ -6,6 +6,8 @@ permalink: /kb/157/Q157915/
 
 ## Q157915: SMS: Network Monitor Save As Only Saves One Frame
 
+{% raw %}
+
 	Article: Q157915
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -73,3 +75,5 @@ permalink: /kb/157/Q157915/
 	
 	=============================================================================
 	
+
+{% endraw %}

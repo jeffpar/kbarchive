@@ -6,6 +6,8 @@ permalink: /kb/237/Q237327/
 
 ## Q237327: XIMS: STARTTLS Advertised Even If SSL Certificate Not Available
 
+{% raw %}
+
 	Article: Q237327
 	Product(s): Microsoft Exchange
 	Version(s): 2.0,4.0,5.5 SP2
@@ -119,3 +121,5 @@ permalink: /kb/237/Q237327/
 	
 	=============================================================================
 	
+
+{% endraw %}

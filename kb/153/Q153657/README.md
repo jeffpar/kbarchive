@@ -6,6 +6,8 @@ permalink: /kb/153/Q153657/
 
 ## Q153657: SMS: Event ID 316 Reports Incorrect Site Code
 
+{% raw %}
+
 	Article: Q153657
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -52,3 +54,5 @@ permalink: /kb/153/Q153657/
 	
 	=============================================================================
 	
+
+{% endraw %}

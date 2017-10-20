@@ -6,6 +6,8 @@ permalink: /kb/245/Q245462/
 
 ## Q245462: Inserting an Excel Worksheet Object May Not Work
 
+{% raw %}
+
 	Article: Q245462
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/245/Q245462/
 	
 	=============================================================================
 	
+
+{% endraw %}

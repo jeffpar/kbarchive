@@ -6,6 +6,8 @@ permalink: /kb/142/Q142960/
 
 ## Q142960: FIX: CCheckListBox Fails with Style LBS_MULTICOLUMN
 
+{% raw %}
+
 	Article: Q142960
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -147,3 +149,5 @@ permalink: /kb/142/Q142960/
 	
 	=============================================================================
 	
+
+{% endraw %}

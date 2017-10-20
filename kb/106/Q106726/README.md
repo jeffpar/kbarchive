@@ -6,6 +6,8 @@ permalink: /kb/106/Q106726/
 
 ## Q106726: BUG: Errors CV1255 and EE0037 Watching Assumed Size Arrays
 
+{% raw %}
+
 	Article: Q106726
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -85,3 +87,5 @@ permalink: /kb/106/Q106726/
 	
 	=============================================================================
 	
+
+{% endraw %}

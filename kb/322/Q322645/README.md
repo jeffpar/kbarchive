@@ -6,6 +6,8 @@ permalink: /kb/322/Q322645/
 
 ## Q322645: Microsoft SQL Server 2000 Programming Step by Step Comments and
 
+{% raw %}
+
 	Article: Q322645
 	Product(s): Microsoft Press
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/322/Q322645/
 	
 	=============================================================================
 	
+
+{% endraw %}

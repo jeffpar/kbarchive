@@ -6,6 +6,8 @@ permalink: /kb/130/Q130382/
 
 ## Q130382: X400: Err Msg: Outgoing Mail Remains in Queue
 
+{% raw %}
+
 	Article: Q130382
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -79,3 +81,5 @@ permalink: /kb/130/Q130382/
 	
 	=============================================================================
 	
+
+{% endraw %}

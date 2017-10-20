@@ -6,6 +6,8 @@ permalink: /kb/147/Q147848/
 
 ## Q147848: MSB Human: How to Run Macintosh Program without CD
 
+{% raw %}
+
 	Article: Q147848
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -84,3 +86,5 @@ permalink: /kb/147/Q147848/
 	
 	=============================================================================
 	
+
+{% endraw %}

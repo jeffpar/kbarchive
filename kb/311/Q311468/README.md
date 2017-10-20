@@ -6,6 +6,8 @@ permalink: /kb/311/Q311468/
 
 ## Q311468: Exchange 2000 Does Not Support IMAP4 NAMESPACE Command
 
+{% raw %}
+
 	Article: Q311468
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -58,3 +60,5 @@ permalink: /kb/311/Q311468/
 	
 	=============================================================================
 	
+
+{% endraw %}

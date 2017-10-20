@@ -6,6 +6,8 @@ permalink: /kb/258/Q258428/
 
 ## Q258428: FIX: Printer Name Longer than 64 Characters Causes Error
 
+{% raw %}
+
 	Article: Q258428
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -97,3 +99,5 @@ permalink: /kb/258/Q258428/
 	
 	=============================================================================
 	
+
+{% endraw %}

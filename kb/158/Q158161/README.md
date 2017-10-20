@@ -6,6 +6,8 @@ permalink: /kb/158/Q158161/
 
 ## Q158161: XFOR: IMC NDR Resends Do Not Preserve Original Message Options
 
+{% raw %}
+
 	Article: Q158161
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/158/Q158161/
 	
 	=============================================================================
 	
+
+{% endraw %}

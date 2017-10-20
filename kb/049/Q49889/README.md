@@ -6,6 +6,8 @@ permalink: /kb/049/Q49889/
 
 ## Q49889: PUTting a CONST to a RANDOM File Hangs QB.EXE 4.50 Editor
 
+{% raw %}
+
 	Article: Q49889
 	Product(s): See article
 	Version(s): 4.50
@@ -45,3 +47,5 @@ permalink: /kb/049/Q49889/
 	   CONST a = 1
 	   OPEN "test.dat" FOR RANDOM AS #1
 	   PUT #1, 1, a
+
+{% endraw %}

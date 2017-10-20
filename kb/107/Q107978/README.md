@@ -6,6 +6,8 @@ permalink: /kb/107/Q107978/
 
 ## Q107978: EMM Exception Error #6 Exiting Windows for Workgroups 3.11
 
+{% raw %}
+
 	Article: Q107978
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -127,3 +129,5 @@ permalink: /kb/107/Q107978/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77904/
 
 ## Q77904: DOCERR: User Must Execute &quot;CMD&quot; in PAUSE Statement Under OS/2
 
+{% raw %}
+
 	Article: Q77904
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -33,3 +35,5 @@ permalink: /kb/077/Q77904/
 	
 	=============================================================================
 	
+
+{% endraw %}

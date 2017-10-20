@@ -6,6 +6,8 @@ permalink: /kb/035/Q35534/
 
 ## Q35534: Why the Editor Cannot Find or Load TOOLS.INI
 
+{% raw %}
+
 	Article: Q35534
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -33,3 +35,5 @@ permalink: /kb/035/Q35534/
 	concerning the editor then would follow after this tag. Under DOS
 	Versions 2.x, the Microsoft Editor looks for a [c] tag rather an [m]
 	tag or whatever you have renamed M.EXE to.
+
+{% endraw %}

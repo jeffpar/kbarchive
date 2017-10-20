@@ -6,6 +6,8 @@ permalink: /kb/159/Q159141/
 
 ## Q159141: CDFS Incorrectly Creates Short File Names for Some Files
 
+{% raw %}
+
 	Article: Q159141
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/159/Q159141/
 	
 	=============================================================================
 	
+
+{% endraw %}

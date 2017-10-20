@@ -6,6 +6,8 @@ permalink: /kb/032/Q32128/
 
 ## Q32128: Extension Cables for Microsoft Mice
 
+{% raw %}
+
 	Article: Q32128
 	Product(s): See article
 	Version(s): 5.x 6.x 1.00
@@ -45,3 +47,5 @@ permalink: /kb/032/Q32128/
 	in the manual. Microsoft assumes the customer will comply with all
 	applicable laws and regulations, and offers the above advice only on
 	that basis.
+
+{% endraw %}

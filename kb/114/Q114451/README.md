@@ -6,6 +6,8 @@ permalink: /kb/114/Q114451/
 
 ## Q114451: Windows Terminal Supports XModem-1K Protocol
 
+{% raw %}
+
 	Article: Q114451
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; winnt:3.1
@@ -78,3 +80,5 @@ permalink: /kb/114/Q114451/
 	
 	=============================================================================
 	
+
+{% endraw %}

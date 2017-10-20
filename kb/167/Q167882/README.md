@@ -6,6 +6,8 @@ permalink: /kb/167/Q167882/
 
 ## Q167882: WD97: Pleading Wizard Stops If Visual Basic Editor Window Open
 
+{% raw %}
+
 	Article: Q167882
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/167/Q167882/
 	
 	=============================================================================
 	
+
+{% endraw %}

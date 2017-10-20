@@ -6,6 +6,8 @@ permalink: /kb/164/Q164354/
 
 ## Q164354: Removing FPNW from a PDC Causes Loss of Netware Compatible Login
 
+{% raw %}
+
 	Article: Q164354
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51 4.0
@@ -55,3 +57,5 @@ permalink: /kb/164/Q164354/
 	
 	=============================================================================
 	
+
+{% endraw %}

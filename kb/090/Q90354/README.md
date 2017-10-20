@@ -6,6 +6,8 @@ permalink: /kb/090/Q90354/
 
 ## Q90354: Cinemania: Filters Display Four Stars Instead of Five
 
+{% raw %}
+
 	Article: Q90354
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 editions
@@ -47,3 +49,5 @@ permalink: /kb/090/Q90354/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125937/
 
 ## Q125937: WD97: Creating a Table of Contents and Index with Field Codes
 
+{% raw %}
+
 	Article: Q125937
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -268,3 +270,5 @@ permalink: /kb/125/Q125937/
 	
 	=============================================================================
 	
+
+{% endraw %}

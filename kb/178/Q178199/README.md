@@ -6,6 +6,8 @@ permalink: /kb/178/Q178199/
 
 ## Q178199: HOWTO: Create a Resource DLL File Containing an AVI
 
+{% raw %}
+
 	Article: Q178199
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0, 6.0
@@ -90,3 +92,5 @@ permalink: /kb/178/Q178199/
 	
 	=============================================================================
 	
+
+{% endraw %}

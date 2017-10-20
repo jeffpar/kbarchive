@@ -6,6 +6,8 @@ permalink: /kb/151/Q151292/
 
 ## Q151292: Top Articles on Microsoft Product Support Offerings
 
+{% raw %}
+
 	Article: Q151292
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/151/Q151292/
 	
 	=============================================================================
 	
+
+{% endraw %}

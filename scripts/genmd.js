@@ -13,6 +13,7 @@
 let fs = require("fs");
 let path = require("path");
 let mkdirp = require("mkdirp");
+let tmpDir = "tmp/";
 
 /**
  * isAlphaNum(s)
@@ -77,7 +78,7 @@ function processDir(sDir) {
  * @param {string} sFile
  */
 function processFile(sFile) {
-    let sNewDir = sFile.replace("txt/", "kb/").replace(".TXT", "");
+    let sNewDir = sFile.replace("txt/", tmpDir + "kb/").replace(".TXT", "");
     let sNewFile = path.join(sNewDir, "README.md");
 
     // console.log("processing " + sFile + " new dir: " + sNewDir + " new file: " + sNewFile);
@@ -147,7 +148,7 @@ function processFile(sFile) {
  */
 function processText(sID, sTitle, sProductID, sProductName, sProductVersions, sSystem, sKeywords, sDateModified, sText, sNewDir, sNewFile)
 {
-    let sNewText = "";
+    let sNewText = "{% raw %}\n\n";
     sNewText += "\tArticle: " + sID + "\n";
     sNewText += "\tProduct(s): " + sProductName + "\n";
     sNewText += "\tVersion(s): " + sProductVersions + "\n";
@@ -163,17 +164,14 @@ function processText(sID, sTitle, sProductID, sProductName, sProductVersions, sS
             let chCode = sLine.charCodeAt(i++);
             if (chCode >= 0x7F || chCode < 0x20 && chCode != 0x09 && chCode != 0x0A && chCode != 0x0D) {
                 ch = "<" + toHex(chCode) + ">";
-                // console.log(sID + ", line " + l + ", pos " + i + ": unrecognized character " + ch + " (" + chCode + ")");
+                console.log(sID + ", line " + l + ", pos " + i + ": unrecognized character " + ch + " (" + chCode + ")");
             }
             sNewLine += ch;
         }
-        /*
-         * The Liquid template engine gets confused by {{...}} sequences, even though they're inside code blocks,
-         * so we insert spaces between the braces.
-         */
-        sNewText += '\t' + sNewLine.replace(/{{/g, "{ {").replace(/}}/g, "} }") + '\n';
+        sNewText += '\t' + sNewLine + '\n';
     }
-    let sSiteDir = '/' + sNewDir;
+    sNewText += "\n{% endraw %}\n";
+    let sSiteDir = '/' + sNewDir.replace(tmpDir, "");
     sTitle = sTitle.replace(/&/g, "&amp;").replace(/\|/g, "&#124;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/\$/g, "&#36;").replace(/\*/g, "&#42;").replace(/\[/g, "&#91;").replace(/\\/g, "&#92;").replace(/]/g, "&#93;").replace(/__/g, "&#95;&#95;").replace(/{{/g, "{ {").replace(/}}/g, "} }");
     sNewText = "---\nlayout: page\ntitle: \"" + sID + ": " + sTitle + "\"\npermalink: " + sSiteDir + "/\n---\n\n## " + sID + ": " + sTitle + "\n\n" + sNewText;
     if (!fs.existsSync(sNewDir)) {
@@ -191,14 +189,14 @@ function processText(sID, sTitle, sProductID, sProductName, sProductVersions, sS
     if (!isAlphaNum(sProductID)) {
         throw new Error(sID + " contains unexpected product ID: " + sProductID);
     }
-    sNewDir = "id/" + sProductID;
+    sNewDir = tmpDir + "id/" + sProductID;
     if (!fs.existsSync(sNewDir)) {
         mkdirp.sync(sNewDir);
     }
     sNewFile = sNewDir + "/README.md";
     sNewText = "- [" + sID + ": " + sTitle + "](" + sSiteDir + "/)\n";
     if (!fs.existsSync(sNewFile)) {
-        sNewText = "---\nlayout: page\ntitle: \"" + sProductName + "\"\npermalink: /" + sNewDir + "/\n---\n\n## KB Articles for " + sProductName + "\n\n" + sNewText;
+        sNewText = "---\nlayout: page\ntitle: \"" + sProductName + "\"\npermalink: /" + sNewDir.replace(tmpDir, "") + "/\n---\n\n## KB Articles for " + sProductName + "\n\n" + sNewText;
     }
     fs.appendFileSync(sNewFile, sNewText);
 }

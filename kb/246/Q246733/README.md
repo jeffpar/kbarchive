@@ -6,6 +6,8 @@ permalink: /kb/246/Q246733/
 
 ## Q246733: INFO: Windows CE Web Browsers
 
+{% raw %}
+
 	Article: Q246733
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.0
@@ -147,3 +149,5 @@ permalink: /kb/246/Q246733/
 	
 	=============================================================================
 	
+
+{% endraw %}

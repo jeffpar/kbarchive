@@ -6,6 +6,8 @@ permalink: /kb/181/Q181506/
 
 ## Q181506: HOWTO: Make VC++ Recognize File Extensions as C/C++ Files
 
+{% raw %}
+
 	Article: Q181506
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.0a,4.1,4.2,4.2b,5.0,6.0,97
@@ -198,3 +200,5 @@ permalink: /kb/181/Q181506/
 	
 	=============================================================================
 	
+
+{% endraw %}

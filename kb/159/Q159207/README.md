@@ -6,6 +6,8 @@ permalink: /kb/159/Q159207/
 
 ## Q159207: SCSI Specification Reassign Blocks Command Set to One
 
+{% raw %}
+
 	Article: Q159207
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -66,3 +68,5 @@ permalink: /kb/159/Q159207/
 	
 	=============================================================================
 	
+
+{% endraw %}

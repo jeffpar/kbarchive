@@ -6,6 +6,8 @@ permalink: /kb/193/Q193860/
 
 ## Q193860: XFOR: How to Dump LDE Schedule Using SQL Server
 
+{% raw %}
+
 	Article: Q193860
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/193/Q193860/
 	
 	=============================================================================
 	
+
+{% endraw %}

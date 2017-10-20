@@ -6,6 +6,8 @@ permalink: /kb/187/Q187766/
 
 ## Q187766: Slow Performance Saving Documents to FPNW Server
 
+{% raw %}
+
 	Article: Q187766
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -90,3 +92,5 @@ permalink: /kb/187/Q187766/
 	
 	=============================================================================
 	
+
+{% endraw %}

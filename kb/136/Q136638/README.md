@@ -6,6 +6,8 @@ permalink: /kb/136/Q136638/
 
 ## Q136638: HOWTO: Send E-mail Programmatically Using MSMAPI OLE Control
 
+{% raw %}
+
 	Article: Q136638
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/136/Q136638/
 	
 	=============================================================================
 	
+
+{% endraw %}

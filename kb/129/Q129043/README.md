@@ -6,6 +6,8 @@ permalink: /kb/129/Q129043/
 
 ## Q129043: Repair Fails When Mirrored Drive is Two Gigabytes or Larger
 
+{% raw %}
+
 	Article: Q129043
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -66,3 +68,5 @@ permalink: /kb/129/Q129043/
 	
 	=============================================================================
 	
+
+{% endraw %}

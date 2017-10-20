@@ -6,6 +6,8 @@ permalink: /kb/152/Q152248/
 
 ## Q152248: Fury3 Errors with Trial Version Downloaded from the Web
 
+{% raw %}
+
 	Article: Q152248
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -104,3 +106,5 @@ permalink: /kb/152/Q152248/
 	
 	=============================================================================
 	
+
+{% endraw %}

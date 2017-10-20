@@ -6,6 +6,8 @@ permalink: /kb/117/Q117589/
 
 ## Q117589: ASLM Licensing Information
 
+{% raw %}
+
 	Article: Q117589
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -49,3 +51,5 @@ permalink: /kb/117/Q117589/
 	
 	=============================================================================
 	
+
+{% endraw %}

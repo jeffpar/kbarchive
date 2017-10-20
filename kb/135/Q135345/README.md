@@ -6,6 +6,8 @@ permalink: /kb/135/Q135345/
 
 ## Q135345: Compaq NetFlex-L Fails To Start/Windows NT Hangs During Shutdown
 
+{% raw %}
+
 	Article: Q135345
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -70,3 +72,5 @@ permalink: /kb/135/Q135345/
 	
 	=============================================================================
 	
+
+{% endraw %}

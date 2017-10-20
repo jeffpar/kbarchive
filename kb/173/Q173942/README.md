@@ -6,6 +6,8 @@ permalink: /kb/173/Q173942/
 
 ## Q173942: WINS Replication Triggered Incorrectly
 
+{% raw %}
+
 	Article: Q173942
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/173/Q173942/
 	
 	=============================================================================
 	
+
+{% endraw %}

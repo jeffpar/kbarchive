@@ -6,6 +6,8 @@ permalink: /kb/243/Q243840/
 
 ## Q243840: Winlogon.exe Causes Performance Issues with Many Profiles
 
+{% raw %}
+
 	Article: Q243840
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -54,3 +56,5 @@ permalink: /kb/243/Q243840/
 	
 	=============================================================================
 	
+
+{% endraw %}

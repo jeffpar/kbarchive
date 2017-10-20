@@ -6,6 +6,8 @@ permalink: /kb/104/Q104130/
 
 ## Q104130: PC Win: Import/Export Does Not Work with Extended Characters
 
+{% raw %}
+
 	Article: Q104130
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -51,3 +53,5 @@ permalink: /kb/104/Q104130/
 	
 	=============================================================================
 	
+
+{% endraw %}

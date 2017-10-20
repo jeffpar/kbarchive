@@ -6,6 +6,8 @@ permalink: /kb/146/Q146027/
 
 ## Q146027: XCLN: Font Changes May Truncate Data
 
+{% raw %}
+
 	Article: Q146027
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -48,3 +50,5 @@ permalink: /kb/146/Q146027/
 	
 	=============================================================================
 	
+
+{% endraw %}

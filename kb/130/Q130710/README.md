@@ -6,6 +6,8 @@ permalink: /kb/130/Q130710/
 
 ## Q130710: Cannot Access Files on Novell 3.11 Server
 
+{% raw %}
+
 	Article: Q130710
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -116,3 +118,5 @@ permalink: /kb/130/Q130710/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/287/Q287264/
 
 ## Q287264: Monitor Service Stops Running; Event Logs Appear
 
+{% raw %}
+
 	Article: Q287264
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -142,3 +144,5 @@ permalink: /kb/287/Q287264/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/219/Q219717/
 
 ## Q219717: NTOP Has Not Been Tested with the Current Configuration
 
+{% raw %}
+
 	Article: Q219717
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/219/Q219717/
 	
 	=============================================================================
 	
+
+{% endraw %}

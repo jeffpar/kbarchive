@@ -6,6 +6,8 @@ permalink: /kb/155/Q155834/
 
 ## Q155834: INFO: ODBC Drivers Installed with Visual FoxPro 5.0
 
+{% raw %}
+
 	Article: Q155834
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/155/Q155834/
 	
 	=============================================================================
 	
+
+{% endraw %}

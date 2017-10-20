@@ -6,6 +6,8 @@ permalink: /kb/044/Q44307/
 
 ## Q44307: Orchid Pro-Designer VGA Card Needs NMI Jumper Off for QB 4.50
 
+{% raw %}
+
 	Article: Q44307
 	Product(s): See article
 	Version(s): 4.50
@@ -19,3 +21,5 @@ permalink: /kb/044/Q44307/
 	card.
 	
 	Microsoft has not tested or confirmed this information.
+
+{% endraw %}

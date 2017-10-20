@@ -6,6 +6,8 @@ permalink: /kb/190/Q190999/
 
 ## Q190999: BUG: Visual C++ Project Settings Saved Only on Normal Exit
 
+{% raw %}
+
 	Article: Q190999
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/190/Q190999/
 	
 	=============================================================================
 	
+
+{% endraw %}

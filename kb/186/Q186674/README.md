@@ -6,6 +6,8 @@ permalink: /kb/186/Q186674/
 
 ## Q186674: STOP: C0000143 or 0x0000001E Caused by Remotely Possible/32
 
+{% raw %}
+
 	Article: Q186674
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -164,3 +166,5 @@ permalink: /kb/186/Q186674/
 	
 	=============================================================================
 	
+
+{% endraw %}

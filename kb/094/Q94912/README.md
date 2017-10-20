@@ -6,6 +6,8 @@ permalink: /kb/094/Q94912/
 
 ## Q94912: FIX: A2138, A2036 or Hang, Init Nested Structure Array
 
+{% raw %}
+
 	Article: Q94912
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -79,8 +81,8 @@ permalink: /kb/094/Q94912/
 	  outer_struct ENDS
 	
 	  .DATA
-	  tst1 outer_struct { {{1},{2} }}   ; This line generates an error message
-	  ; tst2 outer_struct { {} }        ; This line is allowed
+	  tst1 outer_struct {{{1},{2}}}   ; This line generates an error message
+	  ; tst2 outer_struct {{}}        ; This line is allowed
 	
 	  END
 	
@@ -94,3 +96,5 @@ permalink: /kb/094/Q94912/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149054/
 
 ## Q149054: INFO: Choosing an rdoResultset Cursortype
 
+{% raw %}
+
 	Article: Q149054
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -133,3 +135,5 @@ permalink: /kb/149/Q149054/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141212/
 
 ## Q141212: How to Open the Find Tool by Double-Clicking a Folder
 
+{% raw %}
+
 	Article: Q141212
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -72,3 +74,5 @@ permalink: /kb/141/Q141212/
 	
 	=============================================================================
 	
+
+{% endraw %}

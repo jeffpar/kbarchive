@@ -6,6 +6,8 @@ permalink: /kb/190/Q190207/
 
 ## Q190207: INFO: Satellite DLL Directory Search Patterns
 
+{% raw %}
+
 	Article: Q190207
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/190/Q190207/
 	
 	=============================================================================
 	
+
+{% endraw %}

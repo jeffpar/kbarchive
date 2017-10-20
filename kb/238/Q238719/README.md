@@ -6,6 +6,8 @@ permalink: /kb/238/Q238719/
 
 ## Q238719: XIMS: MTA Queues Mail for &quot;Inbound Only&quot; Internet Mail Service
 
+{% raw %}
+
 	Article: Q238719
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/238/Q238719/
 	
 	=============================================================================
 	
+
+{% endraw %}

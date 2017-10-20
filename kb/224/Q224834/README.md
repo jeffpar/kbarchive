@@ -6,6 +6,8 @@ permalink: /kb/224/Q224834/
 
 ## Q224834: Setting Filter to View Only Browser Frames in Network Monitor
 
+{% raw %}
+
 	Article: Q224834
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/224/Q224834/
 	
 	=============================================================================
 	
+
+{% endraw %}

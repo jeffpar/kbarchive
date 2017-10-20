@@ -6,6 +6,8 @@ permalink: /kb/161/Q161190/
 
 ## Q161190: TN3270 Error 520 When the Host Unbinds and Binds a Session
 
+{% raw %}
+
 	Article: Q161190
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -91,3 +93,5 @@ permalink: /kb/161/Q161190/
 	
 	=============================================================================
 	
+
+{% endraw %}

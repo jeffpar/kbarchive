@@ -6,6 +6,8 @@ permalink: /kb/074/Q74213/
 
 ## Q74213: MS-DOS Shell: Select Across Directories Option
 
+{% raw %}
+
 	Article: Q74213
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -62,3 +64,5 @@ permalink: /kb/074/Q74213/
 	
 	=============================================================================
 	
+
+{% endraw %}

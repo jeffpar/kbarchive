@@ -6,6 +6,8 @@ permalink: /kb/039/Q39089/
 
 ## Q39089: Using _gettextposition and printf.
 
+{% raw %}
+
 	Article: Q39089
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -45,3 +47,5 @@ permalink: /kb/039/Q39089/
 	}
 	
 	The work around is use _outtext instead of printf.
+
+{% endraw %}

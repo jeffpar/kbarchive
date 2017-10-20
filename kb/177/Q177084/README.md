@@ -6,6 +6,8 @@ permalink: /kb/177/Q177084/
 
 ## Q177084: FS98/2000: Description of VOR Functionality
 
+{% raw %}
+
 	Article: Q177084
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -77,3 +79,5 @@ permalink: /kb/177/Q177084/
 	
 	=============================================================================
 	
+
+{% endraw %}

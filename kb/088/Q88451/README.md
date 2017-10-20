@@ -6,6 +6,8 @@ permalink: /kb/088/Q88451/
 
 ## Q88451: In the Main View the Aiming Marker Pole Movement Hangs Up
 
+{% raw %}
+
 	Article: Q88451
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/088/Q88451/
 	
 	=============================================================================
 	
+
+{% endraw %}

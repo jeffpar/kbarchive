@@ -6,6 +6,8 @@ permalink: /kb/270/Q270697/
 
 ## Q270697: SMS: Windows NT Clients Are Continually Prompted to Restart
 
+{% raw %}
+
 	Article: Q270697
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -86,3 +88,5 @@ permalink: /kb/270/Q270697/
 	
 	=============================================================================
 	
+
+{% endraw %}

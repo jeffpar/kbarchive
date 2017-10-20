@@ -6,6 +6,8 @@ permalink: /kb/086/Q86978/
 
 ## Q86978: X400: How to Specify an MTA Name
 
+{% raw %}
+
 	Article: Q86978
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86978/
 	
 	=============================================================================
 	
+
+{% endraw %}

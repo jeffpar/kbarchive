@@ -6,6 +6,8 @@ permalink: /kb/191/Q191361/
 
 ## Q191361: SrvFindMfcb Fails to Obtain Lock If the File Name Is NULL
 
+{% raw %}
+
 	Article: Q191361
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/191/Q191361/
 	
 	=============================================================================
 	
+
+{% endraw %}

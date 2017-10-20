@@ -6,6 +6,8 @@ permalink: /kb/136/Q136558/
 
 ## Q136558: FIX: Debug and Trace Options Disabled After Running RI Builder
 
+{% raw %}
+
 	Article: Q136558
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/136/Q136558/
 	
 	=============================================================================
 	
+
+{% endraw %}

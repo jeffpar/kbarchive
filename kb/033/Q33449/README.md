@@ -6,6 +6,8 @@ permalink: /kb/033/Q33449/
 
 ## Q33449: How to Increase MS-DOS Environment Space
 
+{% raw %}
+
 	Article: Q33449
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -80,3 +82,5 @@ permalink: /kb/033/Q33449/
 	
 	=============================================================================
 	
+
+{% endraw %}

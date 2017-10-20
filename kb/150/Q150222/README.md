@@ -6,6 +6,8 @@ permalink: /kb/150/Q150222/
 
 ## Q150222: BUG: Graph Control Does Not Print When DrawMode Is Set to 5
 
+{% raw %}
+
 	Article: Q150222
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/150/Q150222/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129591/
 
 ## Q129591: MAC Bookshelf 1994: CloseView Control Panel Freezes System
 
+{% raw %}
+
 	Article: Q129591
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0,1.0a,2.0; :1.0,1993, 1994, 1995, 1996-1997 editions,1994 edition,1995 edi
@@ -71,3 +73,5 @@ permalink: /kb/129/Q129591/
 	
 	=============================================================================
 	
+
+{% endraw %}

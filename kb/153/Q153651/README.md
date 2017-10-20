@@ -6,6 +6,8 @@ permalink: /kb/153/Q153651/
 
 ## Q153651: Appstart Cannot Resolve Long Server Names in Windows 3.1 Client
 
+{% raw %}
+
 	Article: Q153651
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -45,3 +47,5 @@ permalink: /kb/153/Q153651/
 	
 	=============================================================================
 	
+
+{% endraw %}

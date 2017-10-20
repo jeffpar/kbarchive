@@ -6,6 +6,8 @@ permalink: /kb/264/Q264171/
 
 ## Q264171: Incomplete Secondary Site Removal Creates Component Status 3400
 
+{% raw %}
+
 	Article: Q264171
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -101,3 +103,5 @@ permalink: /kb/264/Q264171/
 	
 	=============================================================================
 	
+
+{% endraw %}

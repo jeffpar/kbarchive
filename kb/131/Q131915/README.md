@@ -6,6 +6,8 @@ permalink: /kb/131/Q131915/
 
 ## Q131915: PC Ext: Using External and Dynamic Drives on Novell NetWare
 
+{% raw %}
+
 	Article: Q131915
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -65,3 +67,5 @@ permalink: /kb/131/Q131915/
 	
 	=============================================================================
 	
+
+{% endraw %}

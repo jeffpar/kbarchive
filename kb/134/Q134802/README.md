@@ -6,6 +6,8 @@ permalink: /kb/134/Q134802/
 
 ## Q134802: Beyond Planet Earth Generates General Protection Fault
 
+{% raw %}
+
 	Article: Q134802
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/134/Q134802/
 	
 	=============================================================================
 	
+
+{% endraw %}

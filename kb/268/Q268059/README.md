@@ -6,6 +6,8 @@ permalink: /kb/268/Q268059/
 
 ## Q268059: INFO: Using Macro Substitution with Index Commands
 
+{% raw %}
+
 	Article: Q268059
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -150,3 +152,5 @@ permalink: /kb/268/Q268059/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176373/
 
 ## Q176373: Fatal Exception After Hardcore Visual Basic 2nd Ed. Setup
 
+{% raw %}
+
 	Article: Q176373
 	Product(s): Microsoft Press
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/176/Q176373/
 	
 	=============================================================================
 	
+
+{% endraw %}

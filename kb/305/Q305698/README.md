@@ -6,6 +6,8 @@ permalink: /kb/305/Q305698/
 
 ## Q305698: SMSINST: Install File Script Item May Cause Compile to Hang
 
+{% raw %}
+
 	Article: Q305698
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -135,3 +137,5 @@ permalink: /kb/305/Q305698/
 	
 	=============================================================================
 	
+
+{% endraw %}

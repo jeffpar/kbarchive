@@ -6,6 +6,8 @@ permalink: /kb/312/Q312984/
 
 ## Q312984: Microsoft Access Version 2002 Step by Step Comments and Correcti
 
+{% raw %}
+
 	Article: Q312984
 	Product(s): Microsoft Press
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/312/Q312984/
 	
 	=============================================================================
 	
+
+{% endraw %}

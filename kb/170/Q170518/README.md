@@ -6,6 +6,8 @@ permalink: /kb/170/Q170518/
 
 ## Q170518: DNS Admin Fails When Managing Large Number of Zones
 
+{% raw %}
+
 	Article: Q170518
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/170/Q170518/
 	
 	=============================================================================
 	
+
+{% endraw %}

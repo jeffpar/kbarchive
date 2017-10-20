@@ -6,6 +6,8 @@ permalink: /kb/161/Q161919/
 
 ## Q161919: WD97: Word Still Runs After OLE Automation Session
 
+{% raw %}
+
 	Article: Q161919
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -106,3 +108,5 @@ permalink: /kb/161/Q161919/
 	
 	=============================================================================
 	
+
+{% endraw %}

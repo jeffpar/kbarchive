@@ -6,6 +6,8 @@ permalink: /kb/140/Q140348/
 
 ## Q140348: How to Indent Outline Items Without Using the Indent Property
 
+{% raw %}
+
 	Article: Q140348
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -178,3 +180,5 @@ permalink: /kb/140/Q140348/
 	
 	=============================================================================
 	
+
+{% endraw %}

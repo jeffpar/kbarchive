@@ -6,6 +6,8 @@ permalink: /kb/168/Q168373/
 
 ## Q168373: FIX: C2065 When Default Constructor of a Nested Class Called
 
+{% raw %}
+
 	Article: Q168373
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -97,3 +99,5 @@ permalink: /kb/168/Q168373/
 	
 	=============================================================================
 	
+
+{% endraw %}

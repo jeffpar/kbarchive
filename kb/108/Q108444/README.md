@@ -6,6 +6,8 @@ permalink: /kb/108/Q108444/
 
 ## Q108444: Art Gallery: Search List Contains Multiple Instances of Titles
 
+{% raw %}
+
 	Article: Q108444
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -53,3 +55,5 @@ permalink: /kb/108/Q108444/
 	
 	=============================================================================
 	
+
+{% endraw %}

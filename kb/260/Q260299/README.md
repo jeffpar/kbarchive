@@ -6,6 +6,8 @@ permalink: /kb/260/Q260299/
 
 ## Q260299: SMS: PGC Wizard and Resource Kit Tools Are Not on the SP2 CD-ROM
 
+{% raw %}
+
 	Article: Q260299
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -54,3 +56,5 @@ permalink: /kb/260/Q260299/
 	
 	=============================================================================
 	
+
+{% endraw %}

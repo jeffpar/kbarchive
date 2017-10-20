@@ -6,6 +6,8 @@ permalink: /kb/196/Q196311/
 
 ## Q196311: XFOR: Chat Performance Monitor Counter Does Not Reset After Paus
 
+{% raw %}
+
 	Article: Q196311
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/196/Q196311/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159274/
 
 ## Q159274: TN3270E Does Not Support RTM
 
+{% raw %}
+
 	Article: Q159274
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159274/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156384/
 
 ## Q156384: Control of Source Routing on Token Ring IP Broadcasts
 
+{% raw %}
+
 	Article: Q156384
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/156/Q156384/
 	
 	=============================================================================
 	
+
+{% endraw %}

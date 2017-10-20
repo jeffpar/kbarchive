@@ -6,6 +6,8 @@ permalink: /kb/245/Q245008/
 
 ## Q245008: Ipconfig Generates Inconsistent Registry Contents Error Message.
 
+{% raw %}
+
 	Article: Q245008
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/245/Q245008/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124996/
 
 ## Q124996: Incorrect Swap File Size Reported for Client Computers
 
+{% raw %}
+
 	Article: Q124996
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -50,3 +52,5 @@ permalink: /kb/124/Q124996/
 	
 	=============================================================================
 	
+
+{% endraw %}

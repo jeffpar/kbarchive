@@ -6,6 +6,8 @@ permalink: /kb/093/Q93550/
 
 ## Q93550: Pro Audio Spectrum 16 May Hang Windows 3.1
 
+{% raw %}
+
 	Article: Q93550
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -91,3 +93,5 @@ permalink: /kb/093/Q93550/
 	
 	=============================================================================
 	
+
+{% endraw %}

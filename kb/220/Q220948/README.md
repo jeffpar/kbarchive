@@ -6,6 +6,8 @@ permalink: /kb/220/Q220948/
 
 ## Q220948: Problems Using a Non-US WinNT Workstation w/ US Terminal Server
 
+{% raw %}
+
 	Article: Q220948
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/220/Q220948/
 	
 	=============================================================================
 	
+
+{% endraw %}

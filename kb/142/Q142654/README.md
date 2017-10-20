@@ -6,6 +6,8 @@ permalink: /kb/142/Q142654/
 
 ## Q142654: Winsock Memory Access Violation in Ws2help.dll Or Msafd.dll
 
+{% raw %}
+
 	Article: Q142654
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142654/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121794/
 
 ## Q121794: Reinstalling MS-DOS 6.22 Step-Up with DriveSpace Installed
 
+{% raw %}
+
 	Article: Q121794
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -62,3 +64,5 @@ permalink: /kb/121/Q121794/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195978/
 
 ## Q195978: EVG99: Dual Pointer Focus on Home Screen and Dialog Box
 
+{% raw %}
+
 	Article: Q195978
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/195/Q195978/
 	
 	=============================================================================
 	
+
+{% endraw %}

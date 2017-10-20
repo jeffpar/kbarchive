@@ -6,6 +6,8 @@ permalink: /kb/142/Q142238/
 
 ## Q142238: BUG: Setup /AUTO Fails to Install 32-bit ODBC on Windows NT
 
+{% raw %}
+
 	Article: Q142238
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0
@@ -101,3 +103,5 @@ permalink: /kb/142/Q142238/
 	
 	=============================================================================
 	
+
+{% endraw %}

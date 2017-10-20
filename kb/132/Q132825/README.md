@@ -6,6 +6,8 @@ permalink: /kb/132/Q132825/
 
 ## Q132825: &quot;VMError - makepattern&quot; Error Printing to PostScript Printer
 
+{% raw %}
+
 	Article: Q132825
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/132/Q132825/
 	
 	=============================================================================
 	
+
+{% endraw %}

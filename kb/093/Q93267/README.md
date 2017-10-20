@@ -6,6 +6,8 @@ permalink: /kb/093/Q93267/
 
 ## Q93267: IBM PS/2 N51SLC Laptop Should Be Configured as MS-DOS System
 
+{% raw %}
+
 	Article: Q93267
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/093/Q93267/
 	
 	=============================================================================
 	
+
+{% endraw %}

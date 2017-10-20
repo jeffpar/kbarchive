@@ -6,6 +6,8 @@ permalink: /kb/089/Q89355/
 
 ## Q89355: Add/Remove Components Does Not Delete .INI Files
 
+{% raw %}
+
 	Article: Q89355
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/089/Q89355/
 	
 	=============================================================================
 	
+
+{% endraw %}

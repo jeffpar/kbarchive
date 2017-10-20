@@ -6,6 +6,8 @@ permalink: /kb/319/Q319055/
 
 ## Q319055: How To Set Internet Explorer As The Default Browser In Macintosh
 
+{% raw %}
+
 	Article: Q319055
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/319/Q319055/
 	
 	=============================================================================
 	
+
+{% endraw %}

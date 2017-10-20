@@ -6,6 +6,8 @@ permalink: /kb/101/Q101671/
 
 ## Q101671: PC WRmt: Inbox Shadowing Not Recommended
 
+{% raw %}
+
 	Article: Q101671
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -61,3 +63,5 @@ permalink: /kb/101/Q101671/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75786/
 
 ## Q75786: RESTORE Command Requires Path and Filename of Files to Restore
 
+{% raw %}
+
 	Article: Q75786
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,4.x,5.x,6.0,6.2,6.21,6.22
@@ -81,3 +83,5 @@ permalink: /kb/075/Q75786/
 	
 	=============================================================================
 	
+
+{% endraw %}

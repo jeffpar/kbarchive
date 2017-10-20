@@ -6,6 +6,8 @@ permalink: /kb/124/Q124529/
 
 ## Q124529: HOWTO: Access SourceSafe Code From a Central Directory
 
+{% raw %}
+
 	Article: Q124529
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.04
@@ -57,3 +59,5 @@ permalink: /kb/124/Q124529/
 	
 	=============================================================================
 	
+
+{% endraw %}

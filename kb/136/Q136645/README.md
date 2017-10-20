@@ -6,6 +6,8 @@ permalink: /kb/136/Q136645/
 
 ## Q136645: Cannot Boot from Server with Ungermann-Bass Network Adapter
 
+{% raw %}
+
 	Article: Q136645
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/136/Q136645/
 	
 	=============================================================================
 	
+
+{% endraw %}

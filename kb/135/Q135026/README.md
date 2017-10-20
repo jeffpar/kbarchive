@@ -6,6 +6,8 @@ permalink: /kb/135/Q135026/
 
 ## Q135026: X400: Doc Err: Customized Address Maps File
 
+{% raw %}
+
 	Article: Q135026
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -72,3 +74,5 @@ permalink: /kb/135/Q135026/
 	
 	=============================================================================
 	
+
+{% endraw %}

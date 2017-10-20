@@ -6,6 +6,8 @@ permalink: /kb/247/Q247250/
 
 ## Q247250: XCLN: Cannot Remove Signature from Custom Form w/AutoSignature
 
+{% raw %}
+
 	Article: Q247250
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -80,3 +82,5 @@ permalink: /kb/247/Q247250/
 	
 	=============================================================================
 	
+
+{% endraw %}

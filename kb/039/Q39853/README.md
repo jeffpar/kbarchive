@@ -6,6 +6,8 @@ permalink: /kb/039/Q39853/
 
 ## Q39853: Networks Supported by QuickBASIC, BASIC Compiler &amp; BASIC PDS
 
+{% raw %}
+
 	Article: Q39853
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/039/Q39853/
 	help determine known problems and troubleshooting techniques.
 	Unrelated TSR (terminate and stay resident) programs should be removed
 	from memory to help isolate the problem.
+
+{% endraw %}

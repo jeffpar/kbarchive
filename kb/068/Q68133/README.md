@@ -6,6 +6,8 @@ permalink: /kb/068/Q68133/
 
 ## Q68133: Primage Daisy-Wheel Printers and Windows 3.00
 
+{% raw %}
+
 	Article: Q68133
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -41,3 +43,5 @@ permalink: /kb/068/Q68133/
 	
 	=============================================================================
 	
+
+{% endraw %}

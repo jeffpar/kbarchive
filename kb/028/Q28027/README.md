@@ -6,6 +6,8 @@ permalink: /kb/028/Q28027/
 
 ## Q28027: SETUP Program Can Create Subdirectory Only If Parent Exists
 
+{% raw %}
+
 	Article: Q28027
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -26,3 +28,5 @@ permalink: /kb/028/Q28027/
 	
 	This is also a limitation of DOS. You cannot use the MKDIR command to
 	create a subdirectory in a directory that does not exist.
+
+{% endraw %}

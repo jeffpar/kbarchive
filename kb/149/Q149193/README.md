@@ -6,6 +6,8 @@ permalink: /kb/149/Q149193/
 
 ## Q149193: Clicking the Stop Button in CD Player May Hang Computer
 
+{% raw %}
+
 	Article: Q149193
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/149/Q149193/
 	
 	=============================================================================
 	
+
+{% endraw %}

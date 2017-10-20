@@ -6,6 +6,8 @@ permalink: /kb/155/Q155866/
 
 ## Q155866: Wine Guide 2.0: Unnecessary CD Key Label affixed to CD Case
 
+{% raw %}
+
 	Article: Q155866
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:2.0; WINDOWS:2.0
@@ -42,3 +44,5 @@ permalink: /kb/155/Q155866/
 	
 	=============================================================================
 	
+
+{% endraw %}

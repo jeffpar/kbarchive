@@ -6,6 +6,8 @@ permalink: /kb/104/Q104644/
 
 ## Q104644: INFO: Passing C Arrays to MASM by Reference
 
+{% raw %}
+
 	Article: Q104644
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0,7.0
@@ -195,3 +197,5 @@ permalink: /kb/104/Q104644/
 	
 	=============================================================================
 	
+
+{% endraw %}

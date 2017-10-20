@@ -6,6 +6,8 @@ permalink: /kb/151/Q151733/
 
 ## Q151733: Mastering Access Programming: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q151733
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a
@@ -59,3 +61,5 @@ permalink: /kb/151/Q151733/
 	
 	=============================================================================
 	
+
+{% endraw %}

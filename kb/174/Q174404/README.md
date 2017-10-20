@@ -6,6 +6,8 @@ permalink: /kb/174/Q174404/
 
 ## Q174404: BUG: Field Aliases Options in Expression Builder Dialog Disabled
 
+{% raw %}
+
 	Article: Q174404
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174404/
 	
 	=============================================================================
 	
+
+{% endraw %}

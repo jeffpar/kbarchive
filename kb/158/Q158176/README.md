@@ -6,6 +6,8 @@ permalink: /kb/158/Q158176/
 
 ## Q158176: GEX: List of Video Card Issues
 
+{% raw %}
+
 	Article: Q158176
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -104,3 +106,5 @@ permalink: /kb/158/Q158176/
 	
 	=============================================================================
 	
+
+{% endraw %}

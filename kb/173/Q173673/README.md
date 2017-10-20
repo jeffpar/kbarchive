@@ -6,6 +6,8 @@ permalink: /kb/173/Q173673/
 
 ## Q173673: Windows NT Server Tools for Windows NT Workstation 4.0 Available
 
+{% raw %}
+
 	Article: Q173673
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/173/Q173673/
 	
 	=============================================================================
 	
+
+{% endraw %}

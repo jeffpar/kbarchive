@@ -6,6 +6,8 @@ permalink: /kb/158/Q158682/
 
 ## Q158682: Shortcuts Created Under Windows NT 4.0 Resolve to UNC Paths
 
+{% raw %}
+
 	Article: Q158682
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -221,3 +223,5 @@ permalink: /kb/158/Q158682/
 	
 	=============================================================================
 	
+
+{% endraw %}

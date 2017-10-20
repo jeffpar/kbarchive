@@ -6,6 +6,8 @@ permalink: /kb/106/Q106620/
 
 ## Q106620: Art Gallery/ Wine Guide: Animations Don't Play with ATI
 
+{% raw %}
+
 	Article: Q106620
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,2.0
@@ -51,3 +53,5 @@ permalink: /kb/106/Q106620/
 	
 	=============================================================================
 	
+
+{% endraw %}

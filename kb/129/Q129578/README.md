@@ -6,6 +6,8 @@ permalink: /kb/129/Q129578/
 
 ## Q129578: Broken Sound or Heavy Reverberation Playing .WAV File
 
+{% raw %}
+
 	Article: Q129578
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -82,3 +84,5 @@ permalink: /kb/129/Q129578/
 	
 	=============================================================================
 	
+
+{% endraw %}

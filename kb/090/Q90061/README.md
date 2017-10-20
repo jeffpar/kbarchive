@@ -6,6 +6,8 @@ permalink: /kb/090/Q90061/
 
 ## Q90061: Volume Control Loops Endlessly with Microsoft SoundBits
 
+{% raw %}
+
 	Article: Q90061
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/090/Q90061/
 	
 	=============================================================================
 	
+
+{% endraw %}

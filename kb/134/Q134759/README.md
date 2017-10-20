@@ -6,6 +6,8 @@ permalink: /kb/134/Q134759/
 
 ## Q134759: Event 2000 Occurs When You Print to a Shared Printer
 
+{% raw %}
+
 	Article: Q134759
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -102,3 +104,5 @@ permalink: /kb/134/Q134759/
 	
 	=============================================================================
 	
+
+{% endraw %}

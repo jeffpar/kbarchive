@@ -6,6 +6,8 @@ permalink: /kb/154/Q154531/
 
 ## Q154531: XADM: Moving the KM Server to Another Server in the Site
 
+{% raw %}
+
 	Article: Q154531
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/154/Q154531/
 	
 	=============================================================================
 	
+
+{% endraw %}

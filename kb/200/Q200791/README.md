@@ -6,6 +6,8 @@ permalink: /kb/200/Q200791/
 
 ## Q200791: SMS: SMS 1.2 SP4 May Cause WinNT Clients Not to Report Inventory
 
+{% raw %}
+
 	Article: Q200791
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -190,3 +192,5 @@ permalink: /kb/200/Q200791/
 	
 	=============================================================================
 	
+
+{% endraw %}

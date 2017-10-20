@@ -6,6 +6,8 @@ permalink: /kb/182/Q182346/
 
 ## Q182346: XFOR: Cannot Start or Create Internet Mail Service, Event 4087
 
+{% raw %}
+
 	Article: Q182346
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -114,3 +116,5 @@ permalink: /kb/182/Q182346/
 	
 	=============================================================================
 	
+
+{% endraw %}

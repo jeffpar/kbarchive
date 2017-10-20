@@ -6,6 +6,8 @@ permalink: /kb/149/Q149394/
 
 ## Q149394: CTRL+BREAK Does Not Work for 16-Bit Applications
 
+{% raw %}
+
 	Article: Q149394
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -53,3 +55,5 @@ permalink: /kb/149/Q149394/
 	
 	=============================================================================
 	
+
+{% endraw %}

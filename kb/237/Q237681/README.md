@@ -6,6 +6,8 @@ permalink: /kb/237/Q237681/
 
 ## Q237681: PRB: Version not found Error in InterDev after rolling back a fi
 
+{% raw %}
+
 	Article: Q237681
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:1.0,5.0,6.0
@@ -109,3 +111,5 @@ permalink: /kb/237/Q237681/
 	
 	=============================================================================
 	
+
+{% endraw %}

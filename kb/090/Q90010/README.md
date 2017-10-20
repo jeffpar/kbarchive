@@ -6,6 +6,8 @@ permalink: /kb/090/Q90010/
 
 ## Q90010: WD97: Use of ASK and FILLIN Fields and &#92;o Switch
 
+{% raw %}
+
 	Article: Q90010
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/090/Q90010/
 	
 	=============================================================================
 	
+
+{% endraw %}

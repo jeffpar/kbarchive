@@ -6,6 +6,8 @@ permalink: /kb/185/Q185886/
 
 ## Q185886: DOC: Unbndgrd Sample App Updates Wrong Row
 
+{% raw %}
+
 	Article: Q185886
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -85,3 +87,5 @@ permalink: /kb/185/Q185886/
 	
 	=============================================================================
 	
+
+{% endraw %}

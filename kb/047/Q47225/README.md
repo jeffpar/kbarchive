@@ -6,6 +6,8 @@ permalink: /kb/047/Q47225/
 
 ## Q47225: .DEF File Optional Internal Names Not Supported by Implib
 
+{% raw %}
+
 	Article: Q47225
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -57,3 +59,5 @@ permalink: /kb/047/Q47225/
 	CRTLIB.DLL. The Windows Software Development Kit for creating DOS
 	Windows applications comes with memory model-specific import libraries
 	such as SLIBW.LIB.
+
+{% endraw %}

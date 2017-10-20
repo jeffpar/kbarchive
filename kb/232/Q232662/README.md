@@ -6,6 +6,8 @@ permalink: /kb/232/Q232662/
 
 ## Q232662: Problems Accessing Secured Site with Czech WinNT SP4 and IE 5
 
+{% raw %}
+
 	Article: Q232662
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -103,3 +105,5 @@ permalink: /kb/232/Q232662/
 	
 	=============================================================================
 	
+
+{% endraw %}

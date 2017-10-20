@@ -6,6 +6,8 @@ permalink: /kb/132/Q132802/
 
 ## Q132802: The Game &quot;Dracula Unleashed&quot; May Cause the Computer to Hang
 
+{% raw %}
+
 	Article: Q132802
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/132/Q132802/
 	
 	=============================================================================
 	
+
+{% endraw %}

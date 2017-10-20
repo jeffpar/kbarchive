@@ -6,6 +6,8 @@ permalink: /kb/181/Q181795/
 
 ## Q181795: XADM: Directory Service Does Not Start with Event ID 1196
 
+{% raw %}
+
 	Article: Q181795
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/181/Q181795/
 	
 	=============================================================================
 	
+
+{% endraw %}

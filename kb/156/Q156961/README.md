@@ -6,6 +6,8 @@ permalink: /kb/156/Q156961/
 
 ## Q156961: XFOR: Mac Connection Gateway Will Not Install on System 7.5.3
 
+{% raw %}
+
 	Article: Q156961
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/156/Q156961/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161813/
 
 ## Q161813: XFOR: SMTP Headers Visible in MSMail Clients After SP3 Install
 
+{% raw %}
+
 	Article: Q161813
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/161/Q161813/
 	
 	=============================================================================
 	
+
+{% endraw %}

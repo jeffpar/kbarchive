@@ -6,6 +6,8 @@ permalink: /kb/140/Q140343/
 
 ## Q140343: WD97: How to Print Envelopes or Labels from a List of Addresses
 
+{% raw %}
+
 	Article: Q140343
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -379,3 +381,5 @@ permalink: /kb/140/Q140343/
 	
 	=============================================================================
 	
+
+{% endraw %}

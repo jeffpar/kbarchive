@@ -6,6 +6,8 @@ permalink: /kb/074/Q74605/
 
 ## Q74605: Advanced WDEB386 Features and Tips
 
+{% raw %}
+
 	Article: Q74605
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -217,3 +219,5 @@ permalink: /kb/074/Q74605/
 	
 	=============================================================================
 	
+
+{% endraw %}

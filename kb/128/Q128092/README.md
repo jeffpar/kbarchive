@@ -6,6 +6,8 @@ permalink: /kb/128/Q128092/
 
 ## Q128092: Data Loader Reads Many Unneeded Rows Causing Network Traffic
 
+{% raw %}
+
 	Article: Q128092
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -42,3 +44,5 @@ permalink: /kb/128/Q128092/
 	
 	=============================================================================
 	
+
+{% endraw %}

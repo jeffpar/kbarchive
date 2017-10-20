@@ -6,6 +6,8 @@ permalink: /kb/191/Q191694/
 
 ## Q191694: HOWTO: Add a User and Set User Privileges to SQL Server
 
+{% raw %}
+
 	Article: Q191694
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -154,3 +156,5 @@ permalink: /kb/191/Q191694/
 	
 	=============================================================================
 	
+
+{% endraw %}

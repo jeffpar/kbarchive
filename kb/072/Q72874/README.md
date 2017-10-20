@@ -6,6 +6,8 @@ permalink: /kb/072/Q72874/
 
 ## Q72874: Windows: Do Not Install for No Network if Network Exists
 
+{% raw %}
+
 	Article: Q72874
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/072/Q72874/
 	
 	=============================================================================
 	
+
+{% endraw %}

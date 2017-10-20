@@ -6,6 +6,8 @@ permalink: /kb/149/Q149982/
 
 ## Q149982: BUG: GetDlgItem() Returns NULL Under Win32s
 
+{% raw %}
+
 	Article: Q149982
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149982/
 	
 	=============================================================================
 	
+
+{% endraw %}

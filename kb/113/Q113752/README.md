@@ -6,6 +6,8 @@ permalink: /kb/113/Q113752/
 
 ## Q113752: HOWTO: Create a Table Using FoxPro Connectivity Kit
 
+{% raw %}
+
 	Article: Q113752
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x,2.6x,3.0
@@ -233,3 +235,5 @@ permalink: /kb/113/Q113752/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190700/
 
 ## Q190700: XADM: The Services Required When Creating a New Mailbox
 
+{% raw %}
+
 	Article: Q190700
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/190/Q190700/
 	
 	=============================================================================
 	
+
+{% endraw %}

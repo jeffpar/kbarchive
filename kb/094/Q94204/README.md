@@ -6,6 +6,8 @@ permalink: /kb/094/Q94204/
 
 ## Q94204: Single Colors Print as Two Colors on Dot-Matrix Printer
 
+{% raw %}
+
 	Article: Q94204
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/094/Q94204/
 	
 	=============================================================================
 	
+
+{% endraw %}

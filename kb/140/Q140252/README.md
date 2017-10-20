@@ -6,6 +6,8 @@ permalink: /kb/140/Q140252/
 
 ## Q140252: PRB: ClassWizard Disables Add Function &amp; Add Variable Buttons
 
+{% raw %}
+
 	Article: Q140252
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -86,3 +88,5 @@ permalink: /kb/140/Q140252/
 	
 	=============================================================================
 	
+
+{% endraw %}

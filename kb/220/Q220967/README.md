@@ -6,6 +6,8 @@ permalink: /kb/220/Q220967/
 
 ## Q220967: Explanation of COMTI Metadata Elements
 
+{% raw %}
+
 	Article: Q220967
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,1.0 SP1,4.0 SP2
@@ -166,3 +168,5 @@ permalink: /kb/220/Q220967/
 	
 	=============================================================================
 	
+
+{% endraw %}

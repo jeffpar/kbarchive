@@ -6,6 +6,8 @@ permalink: /kb/038/Q38795/
 
 ## Q38795: Error L1087 Unexpected End-of-File on Scratch File
 
+{% raw %}
+
 	Article: Q38795
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -34,3 +36,5 @@ permalink: /kb/038/Q38795/
 	
 	This error can be caused by insufficient space on the disk (hard,
 	floppy, or RAM) where the temporary file is being written.
+
+{% endraw %}

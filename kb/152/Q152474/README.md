@@ -6,6 +6,8 @@ permalink: /kb/152/Q152474/
 
 ## Q152474: Window Socket Application Failure with Connection Reset Event
 
+{% raw %}
+
 	Article: Q152474
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -140,3 +142,5 @@ permalink: /kb/152/Q152474/
 	
 	=============================================================================
 	
+
+{% endraw %}

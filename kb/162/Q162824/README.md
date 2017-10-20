@@ -6,6 +6,8 @@ permalink: /kb/162/Q162824/
 
 ## Q162824: Errors in Vtdi.386 with Early Cyrix Processors
 
+{% raw %}
+
 	Article: Q162824
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/162/Q162824/
 	
 	=============================================================================
 	
+
+{% endraw %}

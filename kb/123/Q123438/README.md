@@ -6,6 +6,8 @@ permalink: /kb/123/Q123438/
 
 ## Q123438: Cannot Launch FTP Batch File and Have Interactive Session
 
+{% raw %}
+
 	Article: Q123438
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -51,3 +53,5 @@ permalink: /kb/123/Q123438/
 	
 	=============================================================================
 	
+
+{% endraw %}

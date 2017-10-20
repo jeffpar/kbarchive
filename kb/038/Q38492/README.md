@@ -6,6 +6,8 @@ permalink: /kb/038/Q38492/
 
 ## Q38492: FILEATTR Gets MS-DOS File Handle to Get File Date/Time Stamp
 
+{% raw %}
+
 	Article: Q38492
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -95,3 +97,5 @@ permalink: /kb/038/Q38492/
 	          PRINT ERR
 	        END IF
 	        END
+
+{% endraw %}

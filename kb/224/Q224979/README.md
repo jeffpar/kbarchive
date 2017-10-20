@@ -6,6 +6,8 @@ permalink: /kb/224/Q224979/
 
 ## Q224979: Using Browser Capabilities with Internet Explorer 5.0
 
+{% raw %}
+
 	Article: Q224979
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:5; winnt:5.0
@@ -286,3 +288,5 @@ permalink: /kb/224/Q224979/
 	
 	=============================================================================
 	
+
+{% endraw %}

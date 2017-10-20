@@ -6,6 +6,8 @@ permalink: /kb/148/Q148677/
 
 ## Q148677: Error Attempting to Access IIS Using Netscape Navigator 2.0
 
+{% raw %}
+
 	Article: Q148677
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0
@@ -54,3 +56,5 @@ permalink: /kb/148/Q148677/
 	
 	=============================================================================
 	
+
+{% endraw %}

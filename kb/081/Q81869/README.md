@@ -6,6 +6,8 @@ permalink: /kb/081/Q81869/
 
 ## Q81869: Using mciSendCommand() to Control CD-ROM Drive
 
+{% raw %}
+
 	Article: Q81869
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -55,3 +57,5 @@ permalink: /kb/081/Q81869/
 	
 	=============================================================================
 	
+
+{% endraw %}

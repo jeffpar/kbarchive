@@ -6,6 +6,8 @@ permalink: /kb/272/Q272519/
 
 ## Q272519: How to Redirect a Client Drive in Terminal Services
 
+{% raw %}
+
 	Article: Q272519
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -99,3 +101,5 @@ permalink: /kb/272/Q272519/
 	
 	=============================================================================
 	
+
+{% endraw %}

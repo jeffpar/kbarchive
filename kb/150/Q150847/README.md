@@ -6,6 +6,8 @@ permalink: /kb/150/Q150847/
 
 ## Q150847: File Manager Truncates Long File Names Containing Spaces
 
+{% raw %}
+
 	Article: Q150847
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -85,3 +87,5 @@ permalink: /kb/150/Q150847/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194191/
 
 ## Q194191: XFOR: Notes SMTP Addresses Are Truncated upon Reply
 
+{% raw %}
+
 	Article: Q194191
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -80,3 +82,5 @@ permalink: /kb/194/Q194191/
 	
 	=============================================================================
 	
+
+{% endraw %}

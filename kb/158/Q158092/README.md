@@ -6,6 +6,8 @@ permalink: /kb/158/Q158092/
 
 ## Q158092: STL Sample for the List::insert Function
 
+{% raw %}
+
 	Article: Q158092
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -154,3 +156,5 @@ permalink: /kb/158/Q158092/
 	
 	=============================================================================
 	
+
+{% endraw %}

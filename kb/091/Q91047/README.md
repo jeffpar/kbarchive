@@ -6,6 +6,8 @@ permalink: /kb/091/Q91047/
 
 ## Q91047: QEMM LASTDRIVE Program Is Incompatible with WFWG
 
+{% raw %}
+
 	Article: Q91047
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/091/Q91047/
 	
 	=============================================================================
 	
+
+{% endraw %}

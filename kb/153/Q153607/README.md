@@ -6,6 +6,8 @@ permalink: /kb/153/Q153607/
 
 ## Q153607: Do-It-Yourself Guide: Cannot Enter Metric Measurements
 
+{% raw %}
+
 	Article: Q153607
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/153/Q153607/
 	
 	=============================================================================
 	
+
+{% endraw %}

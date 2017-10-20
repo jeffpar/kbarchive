@@ -6,6 +6,8 @@ permalink: /kb/166/Q166356/
 
 ## Q166356: FP: How to Create a New Web in Microsoft FrontPage
 
+{% raw %}
+
 	Article: Q166356
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -122,3 +124,5 @@ permalink: /kb/166/Q166356/
 	
 	=============================================================================
 	
+
+{% endraw %}

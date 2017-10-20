@@ -6,6 +6,8 @@ permalink: /kb/044/Q44746/
 
 ## Q44746: .MODEL and FAR_STACK, LOCAL_STACK in Quick Assembler
 
+{% raw %}
+
 	Article: Q44746
 	Product(s): See article
 	Version(s): 2.01
@@ -77,3 +79,5 @@ permalink: /kb/044/Q44746/
 	
 	An error is generated if FAR_STACK is specified along with the TINY
 	memory model.
+
+{% endraw %}

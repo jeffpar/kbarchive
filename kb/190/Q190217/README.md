@@ -6,6 +6,8 @@ permalink: /kb/190/Q190217/
 
 ## Q190217: HOWTO: Get Free System Resources in 32-Bit Visual Basic
 
+{% raw %}
+
 	Article: Q190217
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -249,3 +251,5 @@ permalink: /kb/190/Q190217/
 	
 	=============================================================================
 	
+
+{% endraw %}

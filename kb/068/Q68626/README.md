@@ -6,6 +6,8 @@ permalink: /kb/068/Q68626/
 
 ## Q68626: /Gm Option Can Be Emulated with a Preprocessor
 
+{% raw %}
+
 	Article: Q68626
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -46,3 +48,5 @@ permalink: /kb/068/Q68626/
 	
 	Many thanks to Paul van Keep (CIS ID:75170,1045) for the code that
 	does the preprocessing.
+
+{% endraw %}

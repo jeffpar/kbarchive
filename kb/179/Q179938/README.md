@@ -6,6 +6,8 @@ permalink: /kb/179/Q179938/
 
 ## Q179938: PRB: Sybase Formula One OCX Dependency Warning w/Setup Wizard
 
+{% raw %}
+
 	Article: Q179938
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -92,3 +94,5 @@ permalink: /kb/179/Q179938/
 	
 	=============================================================================
 	
+
+{% endraw %}

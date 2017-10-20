@@ -6,6 +6,8 @@ permalink: /kb/119/Q119088/
 
 ## Q119088: PC DOS: 4096 Is Maximum Number of Inbox Entries
 
+{% raw %}
+
 	Article: Q119088
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -47,3 +49,5 @@ permalink: /kb/119/Q119088/
 	
 	=============================================================================
 	
+
+{% endraw %}

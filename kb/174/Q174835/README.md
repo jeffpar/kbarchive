@@ -6,6 +6,8 @@ permalink: /kb/174/Q174835/
 
 ## Q174835: FIX: Internet Transfer Control Using Username and Password
 
+{% raw %}
+
 	Article: Q174835
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -133,3 +135,5 @@ permalink: /kb/174/Q174835/
 	
 	=============================================================================
 	
+
+{% endraw %}

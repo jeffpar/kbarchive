@@ -6,6 +6,8 @@ permalink: /kb/182/Q182311/
 
 ## Q182311: WD97: How to Change Delivery or Return Address Formatting
 
+{% raw %}
+
 	Article: Q182311
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -212,3 +214,5 @@ permalink: /kb/182/Q182311/
 	
 	=============================================================================
 	
+
+{% endraw %}

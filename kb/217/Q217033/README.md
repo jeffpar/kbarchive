@@ -6,6 +6,8 @@ permalink: /kb/217/Q217033/
 
 ## Q217033: FIX: /Og May Cause Incorrect Floating Point Calculation Result
 
+{% raw %}
+
 	Article: Q217033
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -81,3 +83,5 @@ permalink: /kb/217/Q217033/
 	
 	=============================================================================
 	
+
+{% endraw %}

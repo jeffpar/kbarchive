@@ -6,6 +6,8 @@ permalink: /kb/170/Q170858/
 
 ## Q170858: Err. Msg.: The Referenced Account is Currently Locked Out
 
+{% raw %}
+
 	Article: Q170858
 	Product(s): Internet Information Server
 	Version(s): WinNT:2.0,3.0
@@ -68,3 +70,5 @@ permalink: /kb/170/Q170858/
 	
 	=============================================================================
 	
+
+{% endraw %}

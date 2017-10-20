@@ -6,6 +6,8 @@ permalink: /kb/090/Q90032/
 
 ## Q90032: PRB: COPY FILE Command Gives &quot;File Access Denied&quot; Error
 
+{% raw %}
+
 	Article: Q90032
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.5x 2.6x | 2.5x 2.6x 3.00
@@ -62,3 +64,5 @@ permalink: /kb/090/Q90032/
 	
 	=============================================================================
 	
+
+{% endraw %}

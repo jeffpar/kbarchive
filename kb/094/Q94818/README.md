@@ -6,6 +6,8 @@ permalink: /kb/094/Q94818/
 
 ## Q94818: The 44 TrueType Fonts Offered in TrueType Font Pack 2
 
+{% raw %}
+
 	Article: Q94818
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/094/Q94818/
 	
 	=============================================================================
 	
+
+{% endraw %}

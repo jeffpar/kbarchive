@@ -6,6 +6,8 @@ permalink: /kb/300/Q300197/
 
 ## Q300197: HOW TO: Ping an IP Address with Visual Basic by Using ICMP
 
+{% raw %}
+
 	Article: Q300197
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -373,3 +375,5 @@ permalink: /kb/300/Q300197/
 	
 	=============================================================================
 	
+
+{% endraw %}

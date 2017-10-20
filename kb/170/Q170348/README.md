@@ -6,6 +6,8 @@ permalink: /kb/170/Q170348/
 
 ## Q170348: Network Installation of PowerPoint 97 Missing Tabs and Templates
 
+{% raw %}
+
 	Article: Q170348
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/170/Q170348/
 	
 	=============================================================================
 	
+
+{% endraw %}

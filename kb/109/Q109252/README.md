@@ -6,6 +6,8 @@ permalink: /kb/109/Q109252/
 
 ## Q109252: Cinemania 1994: MMPERF.TMP Diagnostics File
 
+{% raw %}
+
 	Article: Q109252
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 editions
@@ -185,3 +187,5 @@ permalink: /kb/109/Q109252/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302648/
 
 ## Q302648: Settings UserName
 
+{% raw %}
+
 	Article: Q302648
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -46,3 +48,5 @@ permalink: /kb/302/Q302648/
 	
 	=============================================================================
 	
+
+{% endraw %}

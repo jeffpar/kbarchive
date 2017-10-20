@@ -6,6 +6,8 @@ permalink: /kb/138/Q138702/
 
 ## Q138702: STOP 0x7F when Running Network Monitor Agent
 
+{% raw %}
+
 	Article: Q138702
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -54,3 +56,5 @@ permalink: /kb/138/Q138702/
 	
 	=============================================================================
 	
+
+{% endraw %}

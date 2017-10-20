@@ -6,6 +6,8 @@ permalink: /kb/100/Q100977/
 
 ## Q100977: No Inbox in Windows for Workgroups Mail or Microsoft Mail 3.0
 
+{% raw %}
+
 	Article: Q100977
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/100/Q100977/
 	
 	=============================================================================
 	
+
+{% endraw %}

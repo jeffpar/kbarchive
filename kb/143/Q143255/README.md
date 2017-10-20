@@ -6,6 +6,8 @@ permalink: /kb/143/Q143255/
 
 ## Q143255: HOWTO: Make a Resizable Dialog Bar
 
+{% raw %}
+
 	Article: Q143255
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,5.0,6.0
@@ -258,8 +260,8 @@ permalink: /kb/143/Q143255/
 	
 	     // Overrides
 	         // ClassWizard generated virtual function overrides
-	         //{ {AFX_VIRTUAL(CResizableDlgBar)
-	         //} }AFX_VIRTUAL
+	         //{{AFX_VIRTUAL(CResizableDlgBar)
+	         //}}AFX_VIRTUAL
 	         virtual CSize CalcDynamicLayout( int nLength, DWORD dwMode );
 	
 	     // Implementation
@@ -267,9 +269,9 @@ permalink: /kb/143/Q143255/
 	
 	     // Generated message map functions
 	     protected:
-	         //{ {AFX_MSG(CResizableDlgBar)
+	         //{{AFX_MSG(CResizableDlgBar)
 	         // NOTE - the ClassWizard will add and remove member functions here.
-	         //} }AFX_MSG
+	         //}}AFX_MSG
 	         DECLARE_MESSAGE_MAP()
 	     };
 	
@@ -336,10 +338,10 @@ permalink: /kb/143/Q143255/
 	     }
 	
 	     BEGIN_MESSAGE_MAP(CResizableDlgBar, CDialogBar)
-	         //{ {AFX_MSG_MAP(CResizableDlgBar)
+	         //{{AFX_MSG_MAP(CResizableDlgBar)
 	             // NOTE - the ClassWizard will add and remove mapping macros
 	  here.
-	         //} }AFX_MSG_MAP
+	         //}}AFX_MSG_MAP
 	     END_MESSAGE_MAP()
 	
 	     ///////////////////////////////////////////////////////////////////// 
@@ -365,3 +367,5 @@ permalink: /kb/143/Q143255/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256053/
 
 ## Q256053: XCLN: How to Create Rule to Change Task Color Based on Due Date
 
+{% raw %}
+
 	Article: Q256053
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/256/Q256053/
 	
 	=============================================================================
 	
+
+{% endraw %}

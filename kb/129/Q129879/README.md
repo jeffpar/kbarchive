@@ -6,6 +6,8 @@ permalink: /kb/129/Q129879/
 
 ## Q129879: How to Import Relationships Using DAO in a VB 4.0 Program
 
+{% raw %}
+
 	Article: Q129879
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -185,3 +187,5 @@ permalink: /kb/129/Q129879/
 	
 	=============================================================================
 	
+
+{% endraw %}

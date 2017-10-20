@@ -6,6 +6,8 @@ permalink: /kb/139/Q139874/
 
 ## Q139874: How to Disable a Button &amp; Move the Focus to a Specified Object
 
+{% raw %}
+
 	Article: Q139874
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -93,3 +95,5 @@ permalink: /kb/139/Q139874/
 	
 	=============================================================================
 	
+
+{% endraw %}

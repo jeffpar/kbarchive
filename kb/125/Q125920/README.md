@@ -6,6 +6,8 @@ permalink: /kb/125/Q125920/
 
 ## Q125920: PROFS: Template Information Lost Using IMPORT -T
 
+{% raw %}
+
 	Article: Q125920
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -69,3 +71,5 @@ permalink: /kb/125/Q125920/
 	
 	=============================================================================
 	
+
+{% endraw %}

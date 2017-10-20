@@ -6,6 +6,8 @@ permalink: /kb/183/Q183108/
 
 ## Q183108: WD97: Err Msg: &quot;Setup Could Not Open the File: Ie4setup.exe&quot;
 
+{% raw %}
+
 	Article: Q183108
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/183/Q183108/
 	
 	=============================================================================
 	
+
+{% endraw %}

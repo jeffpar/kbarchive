@@ -6,6 +6,8 @@ permalink: /kb/231/Q231756/
 
 ## Q231756: The Convert.exe Tool Uses 512-Byte Clusters
 
+{% raw %}
+
 	Article: Q231756
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/231/Q231756/
 	
 	=============================================================================
 	
+
+{% endraw %}

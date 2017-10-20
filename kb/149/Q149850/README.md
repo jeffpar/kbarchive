@@ -6,6 +6,8 @@ permalink: /kb/149/Q149850/
 
 ## Q149850: Platform Field in .SCX and .VCX Contains the String WINDOWS
 
+{% raw %}
+
 	Article: Q149850
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -58,3 +60,5 @@ permalink: /kb/149/Q149850/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140707/
 
 ## Q140707: File Not Listed Using DIR Command with OS/2 Name Space
 
+{% raw %}
+
 	Article: Q140707
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/140/Q140707/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166641/
 
 ## Q166641: Limiting the Size of Outbound Messages
 
+{% raw %}
+
 	Article: Q166641
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -48,3 +50,5 @@ permalink: /kb/166/Q166641/
 	
 	=============================================================================
 	
+
+{% endraw %}

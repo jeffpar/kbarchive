@@ -6,6 +6,8 @@ permalink: /kb/145/Q145821/
 
 ## Q145821: BUG: Format Specifications Give Incorrect Output
 
+{% raw %}
+
 	Article: Q145821
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0
@@ -72,3 +74,5 @@ permalink: /kb/145/Q145821/
 	
 	=============================================================================
 	
+
+{% endraw %}

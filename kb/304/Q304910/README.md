@@ -6,6 +6,8 @@ permalink: /kb/304/Q304910/
 
 ## Q304910: MCSE Training Kit Microsoft SQL ServerT 2000 Database Design and
 
+{% raw %}
+
 	Article: Q304910
 	Product(s): Microsoft Press
 	Version(s): 
@@ -370,3 +372,5 @@ permalink: /kb/304/Q304910/
 	
 	=============================================================================
 	
+
+{% endraw %}

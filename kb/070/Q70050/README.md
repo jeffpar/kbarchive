@@ -6,6 +6,8 @@ permalink: /kb/070/Q70050/
 
 ## Q70050: Learning DOS 2.00: Hangs on Sanyo 16NB Laptop
 
+{% raw %}
+
 	Article: Q70050
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/070/Q70050/
 	
 	=============================================================================
 	
+
+{% endraw %}

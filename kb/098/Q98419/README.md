@@ -6,6 +6,8 @@ permalink: /kb/098/Q98419/
 
 ## Q98419: Parity Errors Often Not Due to &quot;Usual&quot; Causes
 
+{% raw %}
+
 	Article: Q98419
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/098/Q98419/
 	
 	=============================================================================
 	
+
+{% endraw %}

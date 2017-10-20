@@ -6,6 +6,8 @@ permalink: /kb/123/Q123158/
 
 ## Q123158: Adding Control Bars to Foundation Classes Dialogs
 
+{% raw %}
+
 	Article: Q123158
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0
@@ -151,3 +153,5 @@ permalink: /kb/123/Q123158/
 	
 	=============================================================================
 	
+
+{% endraw %}

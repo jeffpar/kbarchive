@@ -6,6 +6,8 @@ permalink: /kb/039/Q39525/
 
 ## Q39525: ARPL (Protected Mode Only) Produces Incorrect Code
 
+{% raw %}
+
 	Article: Q39525
 	Product(s): See article
 	Version(s): 5.00   | 5.10
@@ -49,3 +51,5 @@ permalink: /kb/039/Q39525/
 	      10                                        end start
 	      11 0002                           @CurSeg ends
 	..........................................................................
+
+{% endraw %}

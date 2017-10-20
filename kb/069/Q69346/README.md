@@ -6,6 +6,8 @@ permalink: /kb/069/Q69346/
 
 ## Q69346: BUG: MASM 5.10 Installation Asks for Disk &quot;OS/2 Program&quot;
 
+{% raw %}
+
 	Article: Q69346
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -44,3 +46,5 @@ permalink: /kb/069/Q69346/
 	
 	=============================================================================
 	
+
+{% endraw %}

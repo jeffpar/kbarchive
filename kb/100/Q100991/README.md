@@ -6,6 +6,8 @@ permalink: /kb/100/Q100991/
 
 ## Q100991: Microsoft SoundBits Browser Does Not Show Collections
 
+{% raw %}
+
 	Article: Q100991
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0; MACINTOSH:1.0
@@ -62,3 +64,5 @@ permalink: /kb/100/Q100991/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135041/
 
 ## Q135041: DOC: Help File Gives Incorrect Info on ColumnCount Property
 
+{% raw %}
+
 	Article: Q135041
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135041/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262965/
 
 ## Q262965: How UNIX Permissions Are Approximated by Server for NFS
 
+{% raw %}
+
 	Article: Q262965
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -88,3 +90,5 @@ permalink: /kb/262/Q262965/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142599/
 
 ## Q142599: Cannot Establish Network Connection
 
+{% raw %}
+
 	Article: Q142599
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.6,5.0,5.1,5.2
@@ -101,3 +103,5 @@ permalink: /kb/142/Q142599/
 	
 	=============================================================================
 	
+
+{% endraw %}

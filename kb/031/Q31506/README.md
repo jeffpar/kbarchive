@@ -6,6 +6,8 @@ permalink: /kb/031/Q31506/
 
 ## Q31506: Fixed-Length String Illegal in FIELD; QB.EXE Wrongly Allows It
 
+{% raw %}
+
 	Article: Q31506
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -58,3 +60,5 @@ permalink: /kb/031/Q31506/
 	GET #1, 2
 	PRINT firstname$; lastname
 	CLOSE #1
+
+{% endraw %}

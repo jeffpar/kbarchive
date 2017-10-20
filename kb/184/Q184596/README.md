@@ -6,6 +6,8 @@ permalink: /kb/184/Q184596/
 
 ## Q184596: Outwars: Additional Programs and Updates Included on CD-ROM
 
+{% raw %}
+
 	Article: Q184596
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -77,3 +79,5 @@ permalink: /kb/184/Q184596/
 	
 	=============================================================================
 	
+
+{% endraw %}

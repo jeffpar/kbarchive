@@ -6,6 +6,8 @@ permalink: /kb/321/Q321555/
 
 ## Q321555: Types of Encryption Included with SNA Server and HIS 2000
 
+{% raw %}
+
 	Article: Q321555
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -148,3 +150,5 @@ permalink: /kb/321/Q321555/
 	
 	=============================================================================
 	
+
+{% endraw %}

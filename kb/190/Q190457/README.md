@@ -6,6 +6,8 @@ permalink: /kb/190/Q190457/
 
 ## Q190457: FIX: Extended Character Data Overwritten Upon Reselection
 
+{% raw %}
+
 	Article: Q190457
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
@@ -186,3 +188,5 @@ permalink: /kb/190/Q190457/
 	
 	=============================================================================
 	
+
+{% endraw %}

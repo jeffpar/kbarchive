@@ -6,6 +6,8 @@ permalink: /kb/238/Q238458/
 
 ## Q238458: How to Remove the TimeServ Utility
 
+{% raw %}
+
 	Article: Q238458
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/238/Q238458/
 	
 	=============================================================================
 	
+
+{% endraw %}

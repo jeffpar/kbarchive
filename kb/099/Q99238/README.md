@@ -6,6 +6,8 @@ permalink: /kb/099/Q99238/
 
 ## Q99238: Encarta: Atlas Map Prints Incorrectly to a HP DeskJet 550C
 
+{% raw %}
+
 	Article: Q99238
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 editions,2.0
@@ -46,3 +48,5 @@ permalink: /kb/099/Q99238/
 	
 	=============================================================================
 	
+
+{% endraw %}

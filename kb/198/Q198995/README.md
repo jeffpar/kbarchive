@@ -6,6 +6,8 @@ permalink: /kb/198/Q198995/
 
 ## Q198995: XADM: Fatal Error Installing Exchange Server on MSCS
 
+{% raw %}
+
 	Article: Q198995
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/198/Q198995/
 	
 	=============================================================================
 	
+
+{% endraw %}

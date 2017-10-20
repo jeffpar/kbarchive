@@ -6,6 +6,8 @@ permalink: /kb/262/Q262426/
 
 ## Q262426: XCLN: Obtaining a Copy of Exchange Client 4.0
 
+{% raw %}
+
 	Article: Q262426
 	Product(s): Microsoft Exchange
 	Version(s): MS-DOS:4.0; WINDOWS:4.0
@@ -70,3 +72,5 @@ permalink: /kb/262/Q262426/
 	
 	=============================================================================
 	
+
+{% endraw %}

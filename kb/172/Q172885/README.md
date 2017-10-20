@@ -6,6 +6,8 @@ permalink: /kb/172/Q172885/
 
 ## Q172885: NetWare Print Server Names With Periods Truncated in Explorer
 
+{% raw %}
+
 	Article: Q172885
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/172/Q172885/
 	
 	=============================================================================
 	
+
+{% endraw %}

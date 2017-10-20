@@ -6,6 +6,8 @@ permalink: /kb/104/Q104963/
 
 ## Q104963: BUG: SelectClipRgn() Does Not Update Properly on Printer
 
+{% raw %}
+
 	Article: Q104963
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -79,3 +81,5 @@ permalink: /kb/104/Q104963/
 	
 	=============================================================================
 	
+
+{% endraw %}

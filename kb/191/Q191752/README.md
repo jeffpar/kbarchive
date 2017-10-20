@@ -6,6 +6,8 @@ permalink: /kb/191/Q191752/
 
 ## Q191752: PRB: DataRepeater Control's RepeaterBindings List Is Empty
 
+{% raw %}
+
 	Article: Q191752
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -64,3 +66,5 @@ permalink: /kb/191/Q191752/
 	
 	=============================================================================
 	
+
+{% endraw %}

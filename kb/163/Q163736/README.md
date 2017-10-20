@@ -6,6 +6,8 @@ permalink: /kb/163/Q163736/
 
 ## Q163736: Access Violation in DNS Manager When Deleting Cached Domain
 
+{% raw %}
+
 	Article: Q163736
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/163/Q163736/
 	
 	=============================================================================
 	
+
+{% endraw %}

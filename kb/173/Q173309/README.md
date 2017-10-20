@@ -6,6 +6,8 @@ permalink: /kb/173/Q173309/
 
 ## Q173309: Blue Screen STOP Message C0000135 Appears at Startup
 
+{% raw %}
+
 	Article: Q173309
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -169,3 +171,5 @@ permalink: /kb/173/Q173309/
 	
 	=============================================================================
 	
+
+{% endraw %}

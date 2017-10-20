@@ -6,6 +6,8 @@ permalink: /kb/117/Q117888/
 
 ## Q117888: FIX: Relative Include Files May Not be a Dependency
 
+{% raw %}
+
 	Article: Q117888
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/117/Q117888/
 	
 	=============================================================================
 	
+
+{% endraw %}

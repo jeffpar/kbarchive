@@ -6,6 +6,8 @@ permalink: /kb/090/Q90292/
 
 ## Q90292: Causes of Help Compiler Error 5059
 
+{% raw %}
+
 	Article: Q90292
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -86,3 +88,5 @@ permalink: /kb/090/Q90292/
 	
 	=============================================================================
 	
+
+{% endraw %}

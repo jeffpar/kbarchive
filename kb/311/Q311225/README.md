@@ -6,6 +6,8 @@ permalink: /kb/311/Q311225/
 
 ## Q311225: Encarta Stops Responding When You Play a Multimedia Clip
 
+{% raw %}
+
 	Article: Q311225
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/311/Q311225/
 	
 	=============================================================================
 	
+
+{% endraw %}

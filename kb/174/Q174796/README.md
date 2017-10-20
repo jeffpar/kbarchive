@@ -6,6 +6,8 @@ permalink: /kb/174/Q174796/
 
 ## Q174796: ZAK: Internet Explorer Launches Taskbar
 
+{% raw %}
+
 	Article: Q174796
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/174/Q174796/
 	
 	=============================================================================
 	
+
+{% endraw %}

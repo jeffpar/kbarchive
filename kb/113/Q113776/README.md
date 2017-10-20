@@ -6,6 +6,8 @@ permalink: /kb/113/Q113776/
 
 ## Q113776: Remote Access Monitor Disappears From Desktop
 
+{% raw %}
+
 	Article: Q113776
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -52,3 +54,5 @@ permalink: /kb/113/Q113776/
 	
 	=============================================================================
 	
+
+{% endraw %}

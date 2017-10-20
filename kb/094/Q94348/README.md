@@ -6,6 +6,8 @@ permalink: /kb/094/Q94348/
 
 ## Q94348: PRB: Resolving FoxPro &quot;Memo File Is Missing/Invalid&quot; Error
 
+{% raw %}
+
 	Article: Q94348
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a | 2.50 2.50a 3.0
@@ -66,3 +68,5 @@ permalink: /kb/094/Q94348/
 	
 	=============================================================================
 	
+
+{% endraw %}

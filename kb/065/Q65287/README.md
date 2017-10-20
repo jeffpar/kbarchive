@@ -6,6 +6,8 @@ permalink: /kb/065/Q65287/
 
 ## Q65287: Must Use BYVAL at Both Ends When CALLing 7.10 SUB or FUNCTION
 
+{% raw %}
+
 	Article: Q65287
 	Product(s): See article
 	Version(s): 7.10   | 7.10
@@ -103,3 +105,5 @@ permalink: /kb/065/Q65287/
 	   statement (BASIC procedures). For specifics on using BYVAL with
 	   CALL, see the online Help for the CALL statement (BASIC
 	   procedures).
+
+{% endraw %}

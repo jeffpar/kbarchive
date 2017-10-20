@@ -6,6 +6,8 @@ permalink: /kb/152/Q152441/
 
 ## Q152441: XCLN: How to Specify Default Attachments Directory
 
+{% raw %}
+
 	Article: Q152441
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -50,3 +52,5 @@ permalink: /kb/152/Q152441/
 	
 	=============================================================================
 	
+
+{% endraw %}

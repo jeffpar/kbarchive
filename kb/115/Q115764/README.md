@@ -6,6 +6,8 @@ permalink: /kb/115/Q115764/
 
 ## Q115764: INFO: Windows for Workgroups SDK
 
+{% raw %}
+
 	Article: Q115764
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/115/Q115764/
 	
 	=============================================================================
 	
+
+{% endraw %}

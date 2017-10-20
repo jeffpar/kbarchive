@@ -6,6 +6,8 @@ permalink: /kb/043/Q43072/
 
 ## Q43072: INFO: Switching from Reading to Writing Files Can Garble Data
 
+{% raw %}
+
 	Article: Q43072
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:6.00ax,7.0; OS/2:6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,2.1,2.2,4.0,4.1,
@@ -92,3 +94,5 @@ permalink: /kb/043/Q43072/
 	
 	=============================================================================
 	
+
+{% endraw %}

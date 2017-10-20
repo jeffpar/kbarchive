@@ -6,6 +6,8 @@ permalink: /kb/183/Q183987/
 
 ## Q183987: PRB: SendData Method Generates Error 40006
 
+{% raw %}
+
 	Article: Q183987
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -107,3 +109,5 @@ permalink: /kb/183/Q183987/
 	
 	=============================================================================
 	
+
+{% endraw %}

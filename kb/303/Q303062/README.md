@@ -6,6 +6,8 @@ permalink: /kb/303/Q303062/
 
 ## Q303062: IIS - Secure Communications Edit Button Does Not Open Properties
 
+{% raw %}
+
 	Article: Q303062
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/303/Q303062/
 	
 	=============================================================================
 	
+
+{% endraw %}

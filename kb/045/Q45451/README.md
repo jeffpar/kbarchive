@@ -6,6 +6,8 @@ permalink: /kb/045/Q45451/
 
 ## Q45451: CLEAR Resets ON ERROR GOTO and Turns Off Error Trapping
 
+{% raw %}
+
 	Article: Q45451
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -57,3 +59,5 @@ permalink: /kb/045/Q45451/
 	The output for this program is as follows:
 	
 	   In the ERROR Handler
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152072/
 
 ## Q152072: FIX: ASSERT in OLECLI1.CPP When Copying Embedding to Clipboard
 
+{% raw %}
+
 	Article: Q152072
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1; :1.5,1.51,1.52
@@ -277,3 +279,5 @@ permalink: /kb/152/Q152072/
 	
 	=============================================================================
 	
+
+{% endraw %}

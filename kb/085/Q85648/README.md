@@ -6,6 +6,8 @@ permalink: /kb/085/Q85648/
 
 ## Q85648: Mac DOS: Err Msg: Your Server Doesn't Seem to Be Able to...
 
+{% raw %}
+
 	Article: Q85648
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -49,3 +51,5 @@ permalink: /kb/085/Q85648/
 	
 	=============================================================================
 	
+
+{% endraw %}

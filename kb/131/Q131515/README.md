@@ -6,6 +6,8 @@ permalink: /kb/131/Q131515/
 
 ## Q131515: Recurring Task Shown Once in Weekly Schedule View
 
+{% raw %}
+
 	Article: Q131515
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -42,3 +44,5 @@ permalink: /kb/131/Q131515/
 	
 	=============================================================================
 	
+
+{% endraw %}

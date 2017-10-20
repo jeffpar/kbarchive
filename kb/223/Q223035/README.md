@@ -6,6 +6,8 @@ permalink: /kb/223/Q223035/
 
 ## Q223035: Zone.com: How to Access Your Account Information
 
+{% raw %}
+
 	Article: Q223035
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/223/Q223035/
 	
 	=============================================================================
 	
+
+{% endraw %}

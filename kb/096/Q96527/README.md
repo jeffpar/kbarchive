@@ -6,6 +6,8 @@ permalink: /kb/096/Q96527/
 
 ## Q96527: Mac RSC: Remote Server Connection Timeout
 
+{% raw %}
+
 	Article: Q96527
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/096/Q96527/
 	
 	=============================================================================
 	
+
+{% endraw %}

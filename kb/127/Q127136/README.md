@@ -6,6 +6,8 @@ permalink: /kb/127/Q127136/
 
 ## Q127136: Direct Cable Connection Fails with Only NetBEUI Loaded
 
+{% raw %}
+
 	Article: Q127136
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -95,3 +97,5 @@ permalink: /kb/127/Q127136/
 	
 	=============================================================================
 	
+
+{% endraw %}

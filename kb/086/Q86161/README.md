@@ -6,6 +6,8 @@ permalink: /kb/086/Q86161/
 
 ## Q86161: .VOC Sound Files Not Supported by Windows
 
+{% raw %}
+
 	Article: Q86161
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11; :1.0
@@ -44,3 +46,5 @@ permalink: /kb/086/Q86161/
 	
 	=============================================================================
 	
+
+{% endraw %}

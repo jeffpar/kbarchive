@@ -6,6 +6,8 @@ permalink: /kb/185/Q185281/
 
 ## Q185281: PRB: OnLButtonDblClk() Not Called in Windows CE
 
+{% raw %}
+
 	Article: Q185281
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0,2.0
@@ -78,3 +80,5 @@ permalink: /kb/185/Q185281/
 	
 	=============================================================================
 	
+
+{% endraw %}

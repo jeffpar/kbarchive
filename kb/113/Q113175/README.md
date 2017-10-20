@@ -6,6 +6,8 @@ permalink: /kb/113/Q113175/
 
 ## Q113175: How to Print Multiple Columns in FoxPro for MS-DOS
 
+{% raw %}
+
 	Article: Q113175
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -162,3 +164,5 @@ permalink: /kb/113/Q113175/
 	
 	=============================================================================
 	
+
+{% endraw %}

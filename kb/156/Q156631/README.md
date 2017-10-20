@@ -6,6 +6,8 @@ permalink: /kb/156/Q156631/
 
 ## Q156631: PRB: Parameterized View Discrepancy Using IN() Filter Criteria
 
+{% raw %}
+
 	Article: Q156631
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/156/Q156631/
 	
 	=============================================================================
 	
+
+{% endraw %}

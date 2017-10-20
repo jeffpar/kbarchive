@@ -6,6 +6,8 @@ permalink: /kb/128/Q128452/
 
 ## Q128452: INVDOS Fails to Write &#42;.TMP File to &#92;INVENTRY.BOX
 
+{% raw %}
+
 	Article: Q128452
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -48,3 +50,5 @@ permalink: /kb/128/Q128452/
 	
 	=============================================================================
 	
+
+{% endraw %}

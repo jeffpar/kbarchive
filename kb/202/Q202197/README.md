@@ -6,6 +6,8 @@ permalink: /kb/202/Q202197/
 
 ## Q202197: BUG: Freeing Resource DLLs in ExitInstance Causes Error
 
+{% raw %}
+
 	Article: Q202197
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/202/Q202197/
 	
 	=============================================================================
 	
+
+{% endraw %}

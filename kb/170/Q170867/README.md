@@ -6,6 +6,8 @@ permalink: /kb/170/Q170867/
 
 ## Q170867: INFO: Unattended Install of IIS 2.0
 
+{% raw %}
+
 	Article: Q170867
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -116,3 +118,5 @@ permalink: /kb/170/Q170867/
 	
 	=============================================================================
 	
+
+{% endraw %}

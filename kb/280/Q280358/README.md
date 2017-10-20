@@ -6,6 +6,8 @@ permalink: /kb/280/Q280358/
 
 ## Q280358: WD97: Change Case Command Does Not Change to Sentence/Title Case
 
+{% raw %}
+
 	Article: Q280358
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/280/Q280358/
 	
 	=============================================================================
 	
+
+{% endraw %}

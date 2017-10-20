@@ -6,6 +6,8 @@ permalink: /kb/154/Q154684/
 
 ## Q154684: Token Ring Server-Based Setup May Not Work Properly
 
+{% raw %}
+
 	Article: Q154684
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/154/Q154684/
 	
 	=============================================================================
 	
+
+{% endraw %}

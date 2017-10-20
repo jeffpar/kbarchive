@@ -6,6 +6,8 @@ permalink: /kb/202/Q202514/
 
 ## Q202514: XFOR: Notes Application Connector Not Replicating Responses
 
+{% raw %}
+
 	Article: Q202514
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -55,3 +57,5 @@ permalink: /kb/202/Q202514/
 	
 	=============================================================================
 	
+
+{% endraw %}

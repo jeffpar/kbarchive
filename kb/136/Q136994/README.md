@@ -6,6 +6,8 @@ permalink: /kb/136/Q136994/
 
 ## Q136994: PRB: Read-Only Recordset with Microsoft SQL Server
 
+{% raw %}
+
 	Article: Q136994
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0,7.0
@@ -96,3 +98,5 @@ permalink: /kb/136/Q136994/
 	
 	=============================================================================
 	
+
+{% endraw %}

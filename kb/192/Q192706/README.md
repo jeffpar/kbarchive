@@ -6,6 +6,8 @@ permalink: /kb/192/Q192706/
 
 ## Q192706: WD97: Year 2000 Date Parsing Improvements in SR-2
 
+{% raw %}
+
 	Article: Q192706
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 2
@@ -100,3 +102,5 @@ permalink: /kb/192/Q192706/
 	
 	=============================================================================
 	
+
+{% endraw %}

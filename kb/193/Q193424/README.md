@@ -6,6 +6,8 @@ permalink: /kb/193/Q193424/
 
 ## Q193424: BUG: Excel 97 Menus Fail with In-Place Activation from MDI Child
 
+{% raw %}
+
 	Article: Q193424
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0,97
@@ -127,3 +129,5 @@ permalink: /kb/193/Q193424/
 	
 	=============================================================================
 	
+
+{% endraw %}

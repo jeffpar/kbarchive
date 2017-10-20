@@ -6,6 +6,8 @@ permalink: /kb/080/Q80259/
 
 ## Q80259: PC Gen: Contents of Modem Script File MICROCOM.MDM
 
+{% raw %}
+
 	Article: Q80259
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e
@@ -295,3 +297,5 @@ permalink: /kb/080/Q80259/
 	
 	=============================================================================
 	
+
+{% endraw %}

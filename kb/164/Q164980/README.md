@@ -6,6 +6,8 @@ permalink: /kb/164/Q164980/
 
 ## Q164980: IIS Memory Leak When Using IDC and Microsoft Access
 
+{% raw %}
+
 	Article: Q164980
 	Product(s): Internet Information Server
 	Version(s): WinNt:1.0,2.0,3.0
@@ -53,3 +55,5 @@ permalink: /kb/164/Q164980/
 	
 	=============================================================================
 	
+
+{% endraw %}

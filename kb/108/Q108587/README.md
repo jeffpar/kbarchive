@@ -6,6 +6,8 @@ permalink: /kb/108/Q108587/
 
 ## Q108587: HOWTO: Get Current CDocument or CView from Anywhere
 
+{% raw %}
+
 	Article: Q108587
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1
@@ -197,3 +199,5 @@ permalink: /kb/108/Q108587/
 	
 	=============================================================================
 	
+
+{% endraw %}

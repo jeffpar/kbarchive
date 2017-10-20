@@ -6,6 +6,8 @@ permalink: /kb/189/Q189444/
 
 ## Q189444: FP97: Font Size Increase Not Reflected in Web Browser
 
+{% raw %}
+
 	Article: Q189444
 	Product(s): Word Front Page
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/189/Q189444/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272667/
 
 ## Q272667: MSN Companion controls: radio buttons, checkboxes, selection box
 
+{% raw %}
+
 	Article: Q272667
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -80,3 +82,5 @@ permalink: /kb/272/Q272667/
 	
 	=============================================================================
 	
+
+{% endraw %}

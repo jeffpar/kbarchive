@@ -6,6 +6,8 @@ permalink: /kb/157/Q157332/
 
 ## Q157332: Windows NT Hangs with Adaptec 2940 Enable Disconnect Set to No
 
+{% raw %}
+
 	Article: Q157332
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/157/Q157332/
 	
 	=============================================================================
 	
+
+{% endraw %}

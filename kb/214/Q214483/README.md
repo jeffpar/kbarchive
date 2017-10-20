@@ -6,6 +6,8 @@ permalink: /kb/214/Q214483/
 
 ## Q214483: Implements Statement Requires Interface Derived from IDispatch
 
+{% raw %}
+
 	Article: Q214483
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0; winnt:5.0,6.0
@@ -152,3 +154,5 @@ permalink: /kb/214/Q214483/
 	
 	=============================================================================
 	
+
+{% endraw %}

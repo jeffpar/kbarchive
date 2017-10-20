@@ -6,6 +6,8 @@ permalink: /kb/154/Q154715/
 
 ## Q154715: PC Win: Import, Export Folder Command Missing In  File Menu
 
+{% raw %}
+
 	Article: Q154715
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -59,3 +61,5 @@ permalink: /kb/154/Q154715/
 	
 	=============================================================================
 	
+
+{% endraw %}

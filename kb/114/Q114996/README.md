@@ -6,6 +6,8 @@ permalink: /kb/114/Q114996/
 
 ## Q114996: NET.ACC Timestamp Not Accurate Indicator of PDC Backups
 
+{% raw %}
+
 	Article: Q114996
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/114/Q114996/
 	
 	=============================================================================
 	
+
+{% endraw %}

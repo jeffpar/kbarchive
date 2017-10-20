@@ -6,6 +6,8 @@ permalink: /kb/263/Q263716/
 
 ## Q263716: Internet Services Manager (HTML) Not Available in Windows 2000
 
+{% raw %}
+
 	Article: Q263716
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -66,3 +68,5 @@ permalink: /kb/263/Q263716/
 	
 	=============================================================================
 	
+
+{% endraw %}

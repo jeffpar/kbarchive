@@ -6,6 +6,8 @@ permalink: /kb/186/Q186746/
 
 ## Q186746: International Calling Codes Updated in Service Pack 4
 
+{% raw %}
+
 	Article: Q186746
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/186/Q186746/
 	
 	=============================================================================
 	
+
+{% endraw %}

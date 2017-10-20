@@ -6,6 +6,8 @@ permalink: /kb/142/Q142220/
 
 ## Q142220: World Atlas 96 Printing: Unable to Continue Running...
 
+{% raw %}
+
 	Article: Q142220
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/142/Q142220/
 	
 	=============================================================================
 	
+
+{% endraw %}

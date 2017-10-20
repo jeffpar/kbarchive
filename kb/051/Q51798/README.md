@@ -6,6 +6,8 @@ permalink: /kb/051/Q51798/
 
 ## Q51798: &quot;File Not Found&quot; Error Returned Over Novell Network
 
+{% raw %}
+
 	Article: Q51798
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -64,3 +66,5 @@ permalink: /kb/051/Q51798/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101789/
 
 ## Q101789: Reconstructing BOOTSECT.DOS
 
+{% raw %}
+
 	Article: Q101789
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -63,3 +65,5 @@ permalink: /kb/101/Q101789/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/305/Q305587/
 
 ## Q305587: TrainSim/MotoMad: Computer Stops Responding When You Start Game
 
+{% raw %}
+
 	Article: Q305587
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -81,3 +83,5 @@ permalink: /kb/305/Q305587/
 	
 	=============================================================================
 	
+
+{% endraw %}

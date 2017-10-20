@@ -6,6 +6,8 @@ permalink: /kb/069/Q69377/
 
 ## Q69377: Entering Special Characters in MS-DOS Editor (5.0 &amp; Later)
 
+{% raw %}
+
 	Article: Q69377
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/069/Q69377/
 	
 	=============================================================================
 	
+
+{% endraw %}

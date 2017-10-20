@@ -6,6 +6,8 @@ permalink: /kb/245/Q245221/
 
 ## Q245221: Setting IdleWinStationPoolCount to zero prevents client session
 
+{% raw %}
+
 	Article: Q245221
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -99,3 +101,5 @@ permalink: /kb/245/Q245221/
 	
 	=============================================================================
 	
+
+{% endraw %}

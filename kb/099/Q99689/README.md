@@ -6,6 +6,8 @@ permalink: /kb/099/Q99689/
 
 ## Q99689: Mac Adm: Lost Details of GWRecips in PAB
 
+{% raw %}
+
 	Article: Q99689
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1a
@@ -73,3 +75,5 @@ permalink: /kb/099/Q99689/
 	
 	=============================================================================
 	
+
+{% endraw %}

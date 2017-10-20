@@ -6,6 +6,8 @@ permalink: /kb/171/Q171483/
 
 ## Q171483: FIX: Crash When Rebuilding EXE Containing UserControl
 
+{% raw %}
+
 	Article: Q171483
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -112,3 +114,5 @@ permalink: /kb/171/Q171483/
 	
 	=============================================================================
 	
+
+{% endraw %}

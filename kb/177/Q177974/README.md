@@ -6,6 +6,8 @@ permalink: /kb/177/Q177974/
 
 ## Q177974: Location of CedarBank Recording File Is Misleading
 
+{% raw %}
+
 	Article: Q177974
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/177/Q177974/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252279/
 
 ## Q252279: PRB: Sysprep Shows Error Message After Running Mini Setup
 
+{% raw %}
+
 	Article: Q252279
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -101,3 +103,5 @@ permalink: /kb/252/Q252279/
 	
 	=============================================================================
 	
+
+{% endraw %}

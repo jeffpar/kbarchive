@@ -6,6 +6,8 @@ permalink: /kb/258/Q258246/
 
 ## Q258246: XFOR: Calendar Connector Not Removed w. Connectivity Components
 
+{% raw %}
+
 	Article: Q258246
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/258/Q258246/
 	
 	=============================================================================
 	
+
+{% endraw %}

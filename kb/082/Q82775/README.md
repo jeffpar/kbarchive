@@ -6,6 +6,8 @@ permalink: /kb/082/Q82775/
 
 ## Q82775: Uncompressed Files on Windows 3.1 disks
 
+{% raw %}
+
 	Article: Q82775
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -91,3 +93,5 @@ permalink: /kb/082/Q82775/
 	
 	=============================================================================
 	
+
+{% endraw %}

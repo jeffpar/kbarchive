@@ -6,6 +6,8 @@ permalink: /kb/255/Q255849/
 
 ## Q255849: XCLN: How to Set Up Public Journaling for Public Folder Contacts
 
+{% raw %}
+
 	Article: Q255849
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/255/Q255849/
 	
 	=============================================================================
 	
+
+{% endraw %}

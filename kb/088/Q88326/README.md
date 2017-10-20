@@ -6,6 +6,8 @@ permalink: /kb/088/Q88326/
 
 ## Q88326: Unable to Exit Paintbrush with Earlier DLL Files Installed
 
+{% raw %}
+
 	Article: Q88326
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/088/Q88326/
 	
 	=============================================================================
 	
+
+{% endraw %}

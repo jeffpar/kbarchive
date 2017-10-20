@@ -6,6 +6,8 @@ permalink: /kb/113/Q113510/
 
 ## Q113510: BUG: SQLFreeStmt After SQLExecute/SQLExecDirect May Cause GPF
 
+{% raw %}
+
 	Article: Q113510
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/113/Q113510/
 	
 	=============================================================================
 	
+
+{% endraw %}

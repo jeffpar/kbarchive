@@ -6,6 +6,8 @@ permalink: /kb/145/Q145732/
 
 ## Q145732: FIX: Cannot Enter All Ten Digits of CD Key at Setup Time
 
+{% raw %}
+
 	Article: Q145732
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -116,3 +118,5 @@ permalink: /kb/145/Q145732/
 	
 	=============================================================================
 	
+
+{% endraw %}

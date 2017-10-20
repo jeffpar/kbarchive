@@ -6,6 +6,8 @@ permalink: /kb/162/Q162670/
 
 ## Q162670: XCLN: 16-Bit Exchange Client Memory Issue
 
+{% raw %}
+
 	Article: Q162670
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -84,3 +86,5 @@ permalink: /kb/162/Q162670/
 	
 	=============================================================================
 	
+
+{% endraw %}

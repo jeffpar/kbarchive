@@ -6,6 +6,8 @@ permalink: /kb/239/Q239449/
 
 ## Q239449: Err: Internet Explorer Can't Open the Site Https://&lt;Sitename&gt;...
 
+{% raw %}
+
 	Article: Q239449
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/239/Q239449/
 	
 	=============================================================================
 	
+
+{% endraw %}

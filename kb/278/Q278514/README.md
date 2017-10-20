@@ -6,6 +6,8 @@ permalink: /kb/278/Q278514/
 
 ## Q278514: Downloading graphics on MSN Companion takes too long
 
+{% raw %}
+
 	Article: Q278514
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/278/Q278514/
 	
 	=============================================================================
 	
+
+{% endraw %}

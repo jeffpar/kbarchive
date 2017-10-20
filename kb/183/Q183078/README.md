@@ -6,6 +6,8 @@ permalink: /kb/183/Q183078/
 
 ## Q183078: WD97: Language Changes When Text Changes to Hyperlink
 
+{% raw %}
+
 	Article: Q183078
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/183/Q183078/
 	
 	=============================================================================
 	
+
+{% endraw %}

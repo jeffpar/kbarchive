@@ -6,6 +6,8 @@ permalink: /kb/106/Q106051/
 
 ## Q106051: Errors Printing from Windows for Workgroups
 
+{% raw %}
+
 	Article: Q106051
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.10 3.11 3.50
@@ -82,3 +84,5 @@ permalink: /kb/106/Q106051/
 	
 	=============================================================================
 	
+
+{% endraw %}

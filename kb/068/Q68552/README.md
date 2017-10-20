@@ -6,6 +6,8 @@ permalink: /kb/068/Q68552/
 
 ## Q68552: PRB: Cannot Exit Windows with DLL-Instanced Windows Open
 
+{% raw %}
+
 	Article: Q68552
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -73,3 +75,5 @@ permalink: /kb/068/Q68552/
 	
 	=============================================================================
 	
+
+{% endraw %}

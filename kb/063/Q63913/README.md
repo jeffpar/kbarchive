@@ -6,6 +6,8 @@ permalink: /kb/063/Q63913/
 
 ## Q63913: SMARTDrive, RAMDrive, and IBM PCS EMS Drivers
 
+{% raw %}
+
 	Article: Q63913
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/063/Q63913/
 	
 	=============================================================================
 	
+
+{% endraw %}

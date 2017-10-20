@@ -6,6 +6,8 @@ permalink: /kb/139/Q139114/
 
 ## Q139114: SNA Server Support for ASCII-EBCDIC Character Conversion
 
+{% raw %}
+
 	Article: Q139114
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -197,3 +199,5 @@ permalink: /kb/139/Q139114/
 	
 	=============================================================================
 	
+
+{% endraw %}

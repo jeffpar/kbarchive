@@ -6,6 +6,8 @@ permalink: /kb/282/Q282228/
 
 ## Q282228: Terminal Server Random &quot;Stop 0x0000001E&quot; Error Message
 
+{% raw %}
+
 	Article: Q282228
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -115,3 +117,5 @@ permalink: /kb/282/Q282228/
 	
 	=============================================================================
 	
+
+{% endraw %}

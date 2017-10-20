@@ -6,6 +6,8 @@ permalink: /kb/125/Q125708/
 
 ## Q125708: Applications Using Common Dialogs Append Default Extension
 
+{% raw %}
+
 	Article: Q125708
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -91,3 +93,5 @@ permalink: /kb/125/Q125708/
 	
 	=============================================================================
 	
+
+{% endraw %}

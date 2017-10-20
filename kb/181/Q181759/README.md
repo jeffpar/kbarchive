@@ -6,6 +6,8 @@ permalink: /kb/181/Q181759/
 
 ## Q181759: SMSINST: Edit INI File Is Limited to 30720 Characters
 
+{% raw %}
+
 	Article: Q181759
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/181/Q181759/
 	
 	=============================================================================
 	
+
+{% endraw %}

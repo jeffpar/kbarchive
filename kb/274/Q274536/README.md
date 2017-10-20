@@ -6,6 +6,8 @@ permalink: /kb/274/Q274536/
 
 ## Q274536: HOWTO: Bind a Data Environment Connection to a UDL File
 
+{% raw %}
+
 	Article: Q274536
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.1 SP1,2.1 SP2,2.5,2.5 SP1,2.6,6.0
@@ -80,3 +82,5 @@ permalink: /kb/274/Q274536/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58069/
 
 ## Q58069: C 5.10 Prototypes Differ Between &#92;INCLUDE and &#92;INCLUDE&#92;MT
 
+{% raw %}
+
 	Article: Q58069
 	Product(s): See article
 	Version(s): 5.10
@@ -40,3 +42,5 @@ permalink: /kb/058/Q58069/
 	
 	You can find complete compile and link instructions for multithreaded
 	programming in MTDYNA.DOC, which is on the C version 5.10 disks.
+
+{% endraw %}

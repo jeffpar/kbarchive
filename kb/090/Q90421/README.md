@@ -6,6 +6,8 @@ permalink: /kb/090/Q90421/
 
 ## Q90421: WFWG Err Msg: Error Loading MMTLHI.DRV... with ET 4000 Video
 
+{% raw %}
+
 	Article: Q90421
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/090/Q90421/
 	
 	=============================================================================
 	
+
+{% endraw %}

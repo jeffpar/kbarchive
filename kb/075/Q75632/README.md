@@ -6,6 +6,8 @@ permalink: /kb/075/Q75632/
 
 ## Q75632: Anatomy of the Sound Blaster
 
+{% raw %}
+
 	Article: Q75632
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0
@@ -228,3 +230,5 @@ permalink: /kb/075/Q75632/
 	
 	=============================================================================
 	
+
+{% endraw %}

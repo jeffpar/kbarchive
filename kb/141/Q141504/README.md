@@ -6,6 +6,8 @@ permalink: /kb/141/Q141504/
 
 ## Q141504: HOWTO: Make SourceSafe Keyword Expansion Work in Text Docs
 
+{% raw %}
+
 	Article: Q141504
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -199,3 +201,5 @@ permalink: /kb/141/Q141504/
 	
 	=============================================================================
 	
+
+{% endraw %}

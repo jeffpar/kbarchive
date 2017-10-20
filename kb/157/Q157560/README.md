@@ -6,6 +6,8 @@ permalink: /kb/157/Q157560/
 
 ## Q157560: STL Sample for the merge Function
 
+{% raw %}
+
 	Article: Q157560
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -209,3 +211,5 @@ permalink: /kb/157/Q157560/
 	
 	=============================================================================
 	
+
+{% endraw %}

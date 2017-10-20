@@ -6,6 +6,8 @@ permalink: /kb/118/Q118345/
 
 ## Q118345: Problems Using Publisher's Paintbrush 2.0 in Windows 95
 
+{% raw %}
+
 	Article: Q118345
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/118/Q118345/
 	
 	=============================================================================
 	
+
+{% endraw %}

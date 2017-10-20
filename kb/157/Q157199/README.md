@@ -6,6 +6,8 @@ permalink: /kb/157/Q157199/
 
 ## Q157199: WD97: Memo Wizard Quits If Memo Title Is Over 255 Characters
 
+{% raw %}
+
 	Article: Q157199
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -53,3 +55,5 @@ permalink: /kb/157/Q157199/
 	
 	=============================================================================
 	
+
+{% endraw %}

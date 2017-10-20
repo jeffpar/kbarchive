@@ -6,6 +6,8 @@ permalink: /kb/192/Q192448/
 
 ## Q192448: WD97: Errors Saving and Opening Files on a Novell 4.11 Server
 
+{% raw %}
+
 	Article: Q192448
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -176,3 +178,5 @@ permalink: /kb/192/Q192448/
 	
 	=============================================================================
 	
+
+{% endraw %}

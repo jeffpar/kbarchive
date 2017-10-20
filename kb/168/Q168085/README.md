@@ -6,6 +6,8 @@ permalink: /kb/168/Q168085/
 
 ## Q168085: BUG: Single-Line Comments May Give &quot;Wrong Number of Parameters&quot;
 
+{% raw %}
+
 	Article: Q168085
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.65
@@ -55,3 +57,5 @@ permalink: /kb/168/Q168085/
 	
 	=============================================================================
 	
+
+{% endraw %}

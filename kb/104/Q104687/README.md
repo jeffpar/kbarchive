@@ -6,6 +6,8 @@ permalink: /kb/104/Q104687/
 
 ## Q104687: PC Adm: IMPORT: Error &#91;12&#93; Displays Wrong Line Number
 
+{% raw %}
+
 	Article: Q104687
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -52,3 +54,5 @@ permalink: /kb/104/Q104687/
 	
 	=============================================================================
 	
+
+{% endraw %}

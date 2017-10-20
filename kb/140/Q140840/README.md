@@ -6,6 +6,8 @@ permalink: /kb/140/Q140840/
 
 ## Q140840: 2 Connections Using Same Link Service and Destination Address
 
+{% raw %}
+
 	Article: Q140840
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -88,3 +90,5 @@ permalink: /kb/140/Q140840/
 	
 	=============================================================================
 	
+
+{% endraw %}

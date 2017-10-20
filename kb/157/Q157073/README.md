@@ -6,6 +6,8 @@ permalink: /kb/157/Q157073/
 
 ## Q157073: PRB: Exception Not Caught Using CArchive or CFile
 
+{% raw %}
+
 	Article: Q157073
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2
@@ -193,3 +195,5 @@ permalink: /kb/157/Q157073/
 	
 	=============================================================================
 	
+
+{% endraw %}

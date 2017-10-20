@@ -6,6 +6,8 @@ permalink: /kb/148/Q148728/
 
 ## Q148728: &quot;Navigator Not Found&quot; When Attempting to Open BBS
 
+{% raw %}
+
 	Article: Q148728
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -57,3 +59,5 @@ permalink: /kb/148/Q148728/
 	
 	=============================================================================
 	
+
+{% endraw %}

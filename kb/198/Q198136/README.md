@@ -6,6 +6,8 @@ permalink: /kb/198/Q198136/
 
 ## Q198136: Combat Flight Simulator: Uses More Hard Disk Space Than Expected
 
+{% raw %}
+
 	Article: Q198136
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/198/Q198136/
 	
 	=============================================================================
 	
+
+{% endraw %}

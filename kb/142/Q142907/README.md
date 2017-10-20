@@ -6,6 +6,8 @@ permalink: /kb/142/Q142907/
 
 ## Q142907: IBM Auto 16/4 Token Ring Adapter Drivers Does Not Load
 
+{% raw %}
+
 	Article: Q142907
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -67,3 +69,5 @@ permalink: /kb/142/Q142907/
 	
 	=============================================================================
 	
+
+{% endraw %}

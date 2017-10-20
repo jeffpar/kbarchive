@@ -6,6 +6,8 @@ permalink: /kb/030/Q30417/
 
 ## Q30417: Error Message Generated when Include File Has CTRL+Z
 
+{% raw %}
+
 	Article: Q30417
 	Product(s): See article
 	Version(s): 5.10
@@ -25,3 +27,5 @@ permalink: /kb/030/Q30417/
 	Microsoft has confirmed this to be a problem in Version 5.10. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

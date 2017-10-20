@@ -6,6 +6,8 @@ permalink: /kb/153/Q153640/
 
 ## Q153640: Run Local Copy If Present&quot; Removes Local Executable Files
 
+{% raw %}
+
 	Article: Q153640
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -45,3 +47,5 @@ permalink: /kb/153/Q153640/
 	
 	=============================================================================
 	
+
+{% endraw %}

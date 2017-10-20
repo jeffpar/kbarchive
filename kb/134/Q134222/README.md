@@ -6,6 +6,8 @@ permalink: /kb/134/Q134222/
 
 ## Q134222: No Warning Deleting .Exe or .Com Files from Recycle Bin
 
+{% raw %}
+
 	Article: Q134222
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134222/
 	
 	=============================================================================
 	
+
+{% endraw %}

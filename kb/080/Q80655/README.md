@@ -6,6 +6,8 @@ permalink: /kb/080/Q80655/
 
 ## Q80655: Mac AL: Troubleshooting the AppleLink Gateway
 
+{% raw %}
+
 	Article: Q80655
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/080/Q80655/
 	
 	=============================================================================
 	
+
+{% endraw %}

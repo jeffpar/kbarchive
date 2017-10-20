@@ -6,6 +6,8 @@ permalink: /kb/170/Q170525/
 
 ## Q170525: WD97: How to Print Envelopes with HP Deskjet 500 from NT 4.0
 
+{% raw %}
+
 	Article: Q170525
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -97,3 +99,5 @@ permalink: /kb/170/Q170525/
 	
 	=============================================================================
 	
+
+{% endraw %}

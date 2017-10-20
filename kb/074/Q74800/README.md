@@ -6,6 +6,8 @@ permalink: /kb/074/Q74800/
 
 ## Q74800: INFO: Working Around the STRINGTABLE 255 Character Limit
 
+{% raw %}
+
 	Article: Q74800
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -85,3 +87,5 @@ permalink: /kb/074/Q74800/
 	
 	=============================================================================
 	
+
+{% endraw %}

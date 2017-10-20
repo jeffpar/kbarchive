@@ -6,6 +6,8 @@ permalink: /kb/166/Q166817/
 
 ## Q166817: FIX: Alpha MFC Regular DLL Fails After Porting from Intel
 
+{% raw %}
+
 	Article: Q166817
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.0a
@@ -86,3 +88,5 @@ permalink: /kb/166/Q166817/
 	
 	=============================================================================
 	
+
+{% endraw %}

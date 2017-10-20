@@ -6,6 +6,8 @@ permalink: /kb/314/Q314506/
 
 ## Q314506: HOW TO: Use Internet Explorer to Verify Your IIS Security Config
 
+{% raw %}
+
 	Article: Q314506
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -98,3 +100,5 @@ permalink: /kb/314/Q314506/
 	
 	=============================================================================
 	
+
+{% endraw %}

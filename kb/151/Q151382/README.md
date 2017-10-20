@@ -6,6 +6,8 @@ permalink: /kb/151/Q151382/
 
 ## Q151382: FIX: LoadBarState() Causes Assert In Bardock.cpp, Line 682
 
+{% raw %}
+
 	Article: Q151382
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1; :
@@ -68,3 +70,5 @@ permalink: /kb/151/Q151382/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74463/
 
 ## Q74463: Extended Error Code Information
 
+{% raw %}
+
 	Article: Q74463
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -195,3 +197,5 @@ permalink: /kb/074/Q74463/
 	
 	=============================================================================
 	
+
+{% endraw %}

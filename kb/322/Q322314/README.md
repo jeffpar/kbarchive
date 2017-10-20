@@ -6,6 +6,8 @@ permalink: /kb/322/Q322314/
 
 ## Q322314: XADM: Information Store Does Not Start After Online Restore
 
+{% raw %}
+
 	Article: Q322314
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -179,3 +181,5 @@ permalink: /kb/322/Q322314/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149486/
 
 ## Q149486: How to Run Multiple Instances of SMS Administrator
 
+{% raw %}
+
 	Article: Q149486
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/149/Q149486/
 	
 	=============================================================================
 	
+
+{% endraw %}

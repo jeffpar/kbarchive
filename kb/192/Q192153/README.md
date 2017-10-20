@@ -6,6 +6,8 @@ permalink: /kb/192/Q192153/
 
 ## Q192153: DOC: CompactDatabase IntelliSense Different than Documentation
 
+{% raw %}
+
 	Article: Q192153
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/192/Q192153/
 	
 	=============================================================================
 	
+
+{% endraw %}

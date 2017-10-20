@@ -6,6 +6,8 @@ permalink: /kb/191/Q191174/
 
 ## Q191174: HOWTO: Create a Custom HTML Help Viewer in Visual FoxPro
 
+{% raw %}
+
 	Article: Q191174
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -107,3 +109,5 @@ permalink: /kb/191/Q191174/
 	
 	=============================================================================
 	
+
+{% endraw %}

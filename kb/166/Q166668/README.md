@@ -6,6 +6,8 @@ permalink: /kb/166/Q166668/
 
 ## Q166668: XFOR: How to Eliminate Duplicates in Exchange GAL
 
+{% raw %}
+
 	Article: Q166668
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166668/
 	
 	=============================================================================
 	
+
+{% endraw %}

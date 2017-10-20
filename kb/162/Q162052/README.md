@@ -6,6 +6,8 @@ permalink: /kb/162/Q162052/
 
 ## Q162052: Resume May Cause Power Off When in Standby Mode
 
+{% raw %}
+
 	Article: Q162052
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -88,3 +90,5 @@ permalink: /kb/162/Q162052/
 	
 	=============================================================================
 	
+
+{% endraw %}

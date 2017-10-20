@@ -6,6 +6,8 @@ permalink: /kb/114/Q114968/
 
 ## Q114968: HOWTO: Making Visual C++ 32-bit Edition Books Online Run Faster
 
+{% raw %}
+
 	Article: Q114968
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 2.00 2.10 4.00
@@ -103,3 +105,5 @@ permalink: /kb/114/Q114968/
 	
 	=============================================================================
 	
+
+{% endraw %}

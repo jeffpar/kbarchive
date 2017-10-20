@@ -6,6 +6,8 @@ permalink: /kb/118/Q118382/
 
 ## Q118382: Making and Running AREXEC/AREXECD Samples
 
+{% raw %}
+
 	Article: Q118382
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.11,3.0,4.0
@@ -131,3 +133,5 @@ permalink: /kb/118/Q118382/
 	
 	=============================================================================
 	
+
+{% endraw %}

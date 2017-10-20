@@ -6,6 +6,8 @@ permalink: /kb/089/Q89176/
 
 ## Q89176: Networking with FoxBASE+/Mac and FoxBASE+ for MS-DOS
 
+{% raw %}
+
 	Article: Q89176
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01; MS-DOS:2.1
@@ -49,3 +51,5 @@ permalink: /kb/089/Q89176/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50822/
 
 ## Q50822: Second Print Job Fails after Deleting a Printer Driver
 
+{% raw %}
+
 	Article: Q50822
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -35,3 +37,5 @@ permalink: /kb/050/Q50822/
 	
 	=============================================================================
 	
+
+{% endraw %}

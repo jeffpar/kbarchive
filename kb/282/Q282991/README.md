@@ -6,6 +6,8 @@ permalink: /kb/282/Q282991/
 
 ## Q282991: You Cannot Browse IP Addresses by Using a UNC switch in Windows
 
+{% raw %}
+
 	Article: Q282991
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/282/Q282991/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61337/
 
 ## Q61337: BASIC PDS 7.00 Not Compatible with C PDS Version 6.00
 
+{% raw %}
+
 	Article: Q61337
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -71,3 +73,5 @@ permalink: /kb/061/Q61337/
 	However, BASIC PDS 7.00 and QuickBASIC 4.50 (and earlier versions) are
 	not compatible with routines compiled with C 6.00, even when the C
 	6.00 /Gh option is used.
+
+{% endraw %}

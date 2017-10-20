@@ -6,6 +6,8 @@ permalink: /kb/218/Q218188/
 
 ## Q218188: XADM: Sender Receives NDR When Sending to User From OAB
 
+{% raw %}
+
 	Article: Q218188
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -92,3 +94,5 @@ permalink: /kb/218/Q218188/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196027/
 
 ## Q196027: PRB: Multi-Column Listbox Fails When &gt;15 Chars in Last Column
 
+{% raw %}
+
 	Article: Q196027
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -171,3 +173,5 @@ permalink: /kb/196/Q196027/
 	
 	=============================================================================
 	
+
+{% endraw %}

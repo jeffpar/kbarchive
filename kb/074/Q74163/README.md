@@ -6,6 +6,8 @@ permalink: /kb/074/Q74163/
 
 ## Q74163: Hewlett-Packard Type Director Soft Fonts 2.0 and Windows
 
+{% raw %}
+
 	Article: Q74163
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -80,3 +82,5 @@ permalink: /kb/074/Q74163/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102682/
 
 ## Q102682: PC Forms: Text Not Aligned in Mail 2.1 Client
 
+{% raw %}
+
 	Article: Q102682
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,2.1
@@ -65,3 +67,5 @@ permalink: /kb/102/Q102682/
 	
 	=============================================================================
 	
+
+{% endraw %}

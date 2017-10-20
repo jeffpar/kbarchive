@@ -6,6 +6,8 @@ permalink: /kb/153/Q153188/
 
 ## Q153188: XCON: Description of MTA Diagnostics Logging Options
 
+{% raw %}
+
 	Article: Q153188
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -400,3 +402,5 @@ permalink: /kb/153/Q153188/
 	
 	=============================================================================
 	
+
+{% endraw %}

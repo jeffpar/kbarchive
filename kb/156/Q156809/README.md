@@ -6,6 +6,8 @@ permalink: /kb/156/Q156809/
 
 ## Q156809: STL Sample for adjacent_difference, vector::push_back Function
 
+{% raw %}
+
 	Article: Q156809
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -192,3 +194,5 @@ permalink: /kb/156/Q156809/
 	
 	=============================================================================
 	
+
+{% endraw %}

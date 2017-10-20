@@ -6,6 +6,8 @@ permalink: /kb/166/Q166311/
 
 ## Q166311: Memory Leak Retrieving OLE Property Values with Service Pack 2
 
+{% raw %}
+
 	Article: Q166311
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/166/Q166311/
 	
 	=============================================================================
 	
+
+{% endraw %}

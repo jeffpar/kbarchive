@@ -6,6 +6,8 @@ permalink: /kb/245/Q245155/
 
 ## Q245155: XFOR: Error Message: Extension 'lsntscp0' Could Not Be Loaded
 
+{% raw %}
+
 	Article: Q245155
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -105,3 +107,5 @@ permalink: /kb/245/Q245155/
 	
 	=============================================================================
 	
+
+{% endraw %}

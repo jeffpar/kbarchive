@@ -6,6 +6,8 @@ permalink: /kb/196/Q196960/
 
 ## Q196960: WD97: Cannot Confirm Conversion Method Opening Non-Word Document
 
+{% raw %}
+
 	Article: Q196960
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/196/Q196960/
 	
 	=============================================================================
 	
+
+{% endraw %}

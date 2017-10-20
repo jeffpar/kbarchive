@@ -6,6 +6,8 @@ permalink: /kb/321/Q321906/
 
 ## Q321906: FIX: OLE DB Provider Does Not Return Result Sets for Stored Proc
 
+{% raw %}
+
 	Article: Q321906
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/321/Q321906/
 	
 	=============================================================================
 	
+
+{% endraw %}

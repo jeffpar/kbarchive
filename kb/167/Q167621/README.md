@@ -6,6 +6,8 @@ permalink: /kb/167/Q167621/
 
 ## Q167621: WD97: Invalid Page Fault with Proofing Tools on Network
 
+{% raw %}
+
 	Article: Q167621
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/167/Q167621/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/310/Q310934/
 
 ## Q310934: Event 51 Logged During Failed Host-Initiated Password Change
 
+{% raw %}
+
 	Article: Q310934
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/310/Q310934/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135680/
 
 ## Q135680: RAS Err Msg: Unable to Connect. No More Connections can be...
 
+{% raw %}
+
 	Article: Q135680
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/135/Q135680/
 	
 	=============================================================================
 	
+
+{% endraw %}

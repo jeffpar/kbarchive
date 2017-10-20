@@ -6,6 +6,8 @@ permalink: /kb/126/Q126820/
 
 ## Q126820: BUG: EM_LIMITTEXT Causes GPF in Japanese and Chinese Windows
 
+{% raw %}
+
 	Article: Q126820
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -105,3 +107,5 @@ permalink: /kb/126/Q126820/
 	
 	=============================================================================
 	
+
+{% endraw %}

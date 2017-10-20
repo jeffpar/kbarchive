@@ -6,6 +6,8 @@ permalink: /kb/189/Q189036/
 
 ## Q189036: PRB: WinDBG for WinCe 2.0 Does Not Support Named Pipes
 
+{% raw %}
+
 	Article: Q189036
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0
@@ -56,3 +58,5 @@ permalink: /kb/189/Q189036/
 	
 	=============================================================================
 	
+
+{% endraw %}

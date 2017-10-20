@@ -6,6 +6,8 @@ permalink: /kb/057/Q57883/
 
 ## Q57883: UI Toolbox Menu Bar with Menu Past 64th Column Shows Garbage
 
+{% raw %}
+
 	Article: Q57883
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -64,3 +66,5 @@ permalink: /kb/057/Q57883/
 	Toolbox, query in this Knowledge Base on the following keywords:
 	
 	   user and interface and toolbox and buglist7.00
+
+{% endraw %}

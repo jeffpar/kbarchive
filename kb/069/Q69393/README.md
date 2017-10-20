@@ -6,6 +6,8 @@ permalink: /kb/069/Q69393/
 
 ## Q69393: Margins Omitted When Printing to HP with Adobe Cartridge
 
+{% raw %}
+
 	Article: Q69393
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/069/Q69393/
 	
 	=============================================================================
 	
+
+{% endraw %}

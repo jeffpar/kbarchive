@@ -6,6 +6,8 @@ permalink: /kb/158/Q158597/
 
 ## Q158597: Mac Encarta 97: Readme.txt: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q158597
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -65,3 +67,5 @@ permalink: /kb/158/Q158597/
 	
 	=============================================================================
 	
+
+{% endraw %}

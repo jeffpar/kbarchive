@@ -6,6 +6,8 @@ permalink: /kb/040/Q40057/
 
 ## Q40057: Identifying IBM PS/2 Displays by Model Number
 
+{% raw %}
+
 	Article: Q40057
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/040/Q40057/
 	
 	=============================================================================
 	
+
+{% endraw %}

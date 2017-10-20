@@ -6,6 +6,8 @@ permalink: /kb/198/Q198556/
 
 ## Q198556: PRB: Converted Form Has Large Page Frame
 
+{% raw %}
+
 	Article: Q198556
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0b,5.0,5.0a,6.0
@@ -163,3 +165,5 @@ permalink: /kb/198/Q198556/
 	
 	=============================================================================
 	
+
+{% endraw %}

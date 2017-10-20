@@ -6,6 +6,8 @@ permalink: /kb/067/Q67160/
 
 ## Q67160: PRB: CXX0004: Syntax Error Can Be Caused by a Leading Zero
 
+{% raw %}
+
 	Article: Q67160
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
@@ -70,3 +72,5 @@ permalink: /kb/067/Q67160/
 	
 	=============================================================================
 	
+
+{% endraw %}

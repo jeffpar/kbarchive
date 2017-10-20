@@ -6,6 +6,8 @@ permalink: /kb/100/Q100450/
 
 ## Q100450: PRB: SYS(18) Does Not Return Name of GET Objects
 
+{% raw %}
+
 	Article: Q100450
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -58,3 +60,5 @@ permalink: /kb/100/Q100450/
 	
 	=============================================================================
 	
+
+{% endraw %}

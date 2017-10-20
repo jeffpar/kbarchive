@@ -6,6 +6,8 @@ permalink: /kb/164/Q164456/
 
 ## Q164456: XFOR: Migrated MS Mail Users May Not Receive Messages in Inbox
 
+{% raw %}
+
 	Article: Q164456
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/164/Q164456/
 	
 	=============================================================================
 	
+
+{% endraw %}

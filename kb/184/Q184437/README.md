@@ -6,6 +6,8 @@ permalink: /kb/184/Q184437/
 
 ## Q184437: XADM: Information Store Stops with Large Number of NNTP Users
 
+{% raw %}
+
 	Article: Q184437
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -51,3 +53,5 @@ permalink: /kb/184/Q184437/
 	
 	=============================================================================
 	
+
+{% endraw %}

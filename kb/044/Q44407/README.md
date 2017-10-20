@@ -6,6 +6,8 @@ permalink: /kb/044/Q44407/
 
 ## Q44407: Keyboard Scan Code Table Is Missing Line 3 in QB 4.50 Manual
 
+{% raw %}
+
 	Article: Q44407
 	Product(s): See article
 	Version(s): 4.50
@@ -29,3 +31,5 @@ permalink: /kb/044/Q44407/
 	@ or 2      03            S           1F            F1          3B
 	
 	# or 3      04            D           20            F2          3C
+
+{% endraw %}

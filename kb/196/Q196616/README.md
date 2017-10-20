@@ -6,6 +6,8 @@ permalink: /kb/196/Q196616/
 
 ## Q196616: Deadlock When Updating ASP Pages on a Multiprocessor Server
 
+{% raw %}
+
 	Article: Q196616
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -119,3 +121,5 @@ permalink: /kb/196/Q196616/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142394/
 
 ## Q142394: PRB: CLEAR ALL Removes Back-Links from Data Environment Object
 
+{% raw %}
+
 	Article: Q142394
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -96,3 +98,5 @@ permalink: /kb/142/Q142394/
 	
 	=============================================================================
 	
+
+{% endraw %}

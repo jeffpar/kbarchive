@@ -6,6 +6,8 @@ permalink: /kb/110/Q110540/
 
 ## Q110540: PRB: Quotation Marks Missing from Compiled Help File
 
+{% raw %}
+
 	Article: Q110540
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.0,3.1; WINDOWS:3.5,3.51,4.0
@@ -78,3 +80,5 @@ permalink: /kb/110/Q110540/
 	
 	=============================================================================
 	
+
+{% endraw %}

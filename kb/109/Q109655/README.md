@@ -6,6 +6,8 @@ permalink: /kb/109/Q109655/
 
 ## Q109655: Asimov: Errors in Video and Audio Playback
 
+{% raw %}
+
 	Article: Q109655
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/109/Q109655/
 	
 	=============================================================================
 	
+
+{% endraw %}

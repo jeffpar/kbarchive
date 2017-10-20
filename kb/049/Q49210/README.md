@@ -6,6 +6,8 @@ permalink: /kb/049/Q49210/
 
 ## Q49210: &quot;Subscript Out of Range&quot; Using ERASEd Array in a SUB
 
+{% raw %}
+
 	Article: Q49210
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -113,3 +115,5 @@ permalink: /kb/049/Q49210/
 	  ERASE A$
 	  PRINT A$(80)
 	END SUB
+
+{% endraw %}

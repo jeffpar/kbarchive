@@ -6,6 +6,8 @@ permalink: /kb/101/Q101808/
 
 ## Q101808: PRB: Insufficient Memory or Not Enough Memory for Application
 
+{% raw %}
+
 	Article: Q101808
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6x,3.0,3.0b,5.0,6.0
@@ -146,3 +148,5 @@ permalink: /kb/101/Q101808/
 	
 	=============================================================================
 	
+
+{% endraw %}

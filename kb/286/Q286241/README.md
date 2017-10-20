@@ -6,6 +6,8 @@ permalink: /kb/286/Q286241/
 
 ## Q286241: PRB: Error Saving NULL Value w/ ADODC and Bound Controls
 
+{% raw %}
+
 	Article: Q286241
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.5 SP1,2.6,6.0
@@ -132,3 +134,5 @@ permalink: /kb/286/Q286241/
 	
 	=============================================================================
 	
+
+{% endraw %}

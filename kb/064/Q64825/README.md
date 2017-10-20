@@ -6,6 +6,8 @@ permalink: /kb/064/Q64825/
 
 ## Q64825: Windows 3.0 Support for the Tektronix Printers
 
+{% raw %}
+
 	Article: Q64825
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/064/Q64825/
 	
 	=============================================================================
 	
+
+{% endraw %}

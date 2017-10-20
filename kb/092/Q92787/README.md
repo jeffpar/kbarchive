@@ -6,6 +6,8 @@ permalink: /kb/092/Q92787/
 
 ## Q92787: All DEC Etherworks Cards Are Detected as Etherworks MC
 
+{% raw %}
+
 	Article: Q92787
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -40,3 +42,5 @@ permalink: /kb/092/Q92787/
 	
 	=============================================================================
 	
+
+{% endraw %}

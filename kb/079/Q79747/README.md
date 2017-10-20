@@ -6,6 +6,8 @@ permalink: /kb/079/Q79747/
 
 ## Q79747: Current License Agreement Policies for MS-DOS and Windows
 
+{% raw %}
+
 	Article: Q79747
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/079/Q79747/
 	
 	=============================================================================
 	
+
+{% endraw %}

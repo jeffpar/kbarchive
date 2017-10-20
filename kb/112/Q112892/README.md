@@ -6,6 +6,8 @@ permalink: /kb/112/Q112892/
 
 ## Q112892: PC WRmt: Friendly Name Doesn't Change
 
+{% raw %}
+
 	Article: Q112892
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -61,3 +63,5 @@ permalink: /kb/112/Q112892/
 	
 	=============================================================================
 	
+
+{% endraw %}

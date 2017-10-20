@@ -6,6 +6,8 @@ permalink: /kb/051/Q51528/
 
 ## Q51528: Run-Time Function fabs() Is Prototyped in MATH.H
 
+{% raw %}
+
 	Article: Q51528
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -20,3 +22,5 @@ permalink: /kb/051/Q51528/
 	
 	The other two run-time functions abs() and labs() are prototyped in
 	STDLIB.H header file.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116049/
 
 ## Q116049: Baseball: Abnormal Program Termination Error on Startup
 
+{% raw %}
+
 	Article: Q116049
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -45,3 +47,5 @@ permalink: /kb/116/Q116049/
 	
 	=============================================================================
 	
+
+{% endraw %}

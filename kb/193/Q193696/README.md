@@ -6,6 +6,8 @@ permalink: /kb/193/Q193696/
 
 ## Q193696: FIX: Set Mark To '.' Causes Invalid Distribution Disks
 
+{% raw %}
+
 	Article: Q193696
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -121,3 +123,5 @@ permalink: /kb/193/Q193696/
 	
 	=============================================================================
 	
+
+{% endraw %}

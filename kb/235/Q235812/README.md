@@ -6,6 +6,8 @@ permalink: /kb/235/Q235812/
 
 ## Q235812: SMS: DDM Fails to Process DDR w/ Assigned Sites Set to &lt;Unknown&gt;
 
+{% raw %}
+
 	Article: Q235812
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -70,3 +72,5 @@ permalink: /kb/235/Q235812/
 	
 	=============================================================================
 	
+
+{% endraw %}

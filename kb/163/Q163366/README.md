@@ -6,6 +6,8 @@ permalink: /kb/163/Q163366/
 
 ## Q163366: WD97: Can't Type Text Across Entire Label Using DeskJet 500
 
+{% raw %}
+
 	Article: Q163366
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/163/Q163366/
 	
 	=============================================================================
 	
+
+{% endraw %}

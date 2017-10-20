@@ -6,6 +6,8 @@ permalink: /kb/097/Q97340/
 
 ## Q97340: GetGlyphOutline() Function Demonstration
 
+{% raw %}
+
 	Article: Q97340
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/097/Q97340/
 	
 	=============================================================================
 	
+
+{% endraw %}

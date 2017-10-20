@@ -6,6 +6,8 @@ permalink: /kb/216/Q216250/
 
 ## Q216250: Err Msg: This Program Cannot Be Run in DOS Mode
 
+{% raw %}
+
 	Article: Q216250
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -56,3 +58,5 @@ permalink: /kb/216/Q216250/
 	
 	=============================================================================
 	
+
+{% endraw %}

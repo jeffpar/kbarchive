@@ -6,6 +6,8 @@ permalink: /kb/031/Q31985/
 
 ## Q31985: Adjusting Mouse Acceleration Within a Driver
 
+{% raw %}
+
 	Article: Q31985
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -34,3 +36,5 @@ permalink: /kb/031/Q31985/
 	
 	=============================================================================
 	
+
+{% endraw %}

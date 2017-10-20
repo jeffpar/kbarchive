@@ -6,6 +6,8 @@ permalink: /kb/137/Q137681/
 
 ## Q137681: HOWTO: Control the Screen Size of an .Exe File at Startup
 
+{% raw %}
+
 	Article: Q137681
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/137/Q137681/
 	
 	=============================================================================
 	
+
+{% endraw %}

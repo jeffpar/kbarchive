@@ -6,6 +6,8 @@ permalink: /kb/122/Q122798/
 
 ## Q122798: 16-Bit Graphic Applications Fail with Large Number of Fonts
 
+{% raw %}
+
 	Article: Q122798
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -53,3 +55,5 @@ permalink: /kb/122/Q122798/
 	
 	=============================================================================
 	
+
+{% endraw %}

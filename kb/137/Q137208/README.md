@@ -6,6 +6,8 @@ permalink: /kb/137/Q137208/
 
 ## Q137208: Public Folders with Unread Messages Not Bold
 
+{% raw %}
+
 	Article: Q137208
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/137/Q137208/
 	
 	=============================================================================
 	
+
+{% endraw %}

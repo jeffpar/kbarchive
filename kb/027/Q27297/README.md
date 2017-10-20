@@ -6,6 +6,8 @@ permalink: /kb/027/Q27297/
 
 ## Q27297: Passing BASIC User-Defined Type to C by Near Reference
 
+{% raw %}
+
 	Article: Q27297
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -70,3 +72,5 @@ permalink: /kb/027/Q27297/
 	Record.A = 128
 	Record.B = 02-02-1988
 	Record.C = 39.599998
+
+{% endraw %}

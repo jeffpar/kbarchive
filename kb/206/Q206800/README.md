@@ -6,6 +6,8 @@ permalink: /kb/206/Q206800/
 
 ## Q206800: SMS: How to Force Hardware and Software Inventory in SMS 2.0
 
+{% raw %}
+
 	Article: Q206800
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -83,3 +85,5 @@ permalink: /kb/206/Q206800/
 	
 	=============================================================================
 	
+
+{% endraw %}

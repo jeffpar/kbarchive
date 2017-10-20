@@ -6,6 +6,8 @@ permalink: /kb/242/Q242044/
 
 ## Q242044: PDC Cannot Validate Account on Member Server or Workstation
 
+{% raw %}
+
 	Article: Q242044
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/242/Q242044/
 	
 	=============================================================================
 	
+
+{% endraw %}

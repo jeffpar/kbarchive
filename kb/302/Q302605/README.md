@@ -6,6 +6,8 @@ permalink: /kb/302/Q302605/
 
 ## Q302605: Flight Simulator 2000: IPF When You Load a Saved Flight
 
+{% raw %}
+
 	Article: Q302605
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/302/Q302605/
 	
 	=============================================================================
 	
+
+{% endraw %}

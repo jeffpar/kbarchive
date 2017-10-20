@@ -6,6 +6,8 @@ permalink: /kb/138/Q138876/
 
 ## Q138876: New Features in Compaq NT SSD Version 1.16
 
+{% raw %}
+
 	Article: Q138876
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -133,3 +135,5 @@ permalink: /kb/138/Q138876/
 	
 	=============================================================================
 	
+
+{% endraw %}

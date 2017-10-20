@@ -6,6 +6,8 @@ permalink: /kb/131/Q131606/
 
 ## Q131606: AT Command with /Interactive Switch Hangs Access 2.0
 
+{% raw %}
+
 	Article: Q131606
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/131/Q131606/
 	
 	=============================================================================
 	
+
+{% endraw %}

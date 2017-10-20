@@ -6,6 +6,8 @@ permalink: /kb/087/Q87343/
 
 ## Q87343: Creating a Glossary Button in Windows Help
 
+{% raw %}
+
 	Article: Q87343
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -98,3 +100,5 @@ permalink: /kb/087/Q87343/
 	
 	=============================================================================
 	
+
+{% endraw %}

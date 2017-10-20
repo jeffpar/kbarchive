@@ -6,6 +6,8 @@ permalink: /kb/073/Q73679/
 
 ## Q73679: Appropriate Uses of WINMEM32
 
+{% raw %}
+
 	Article: Q73679
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -71,3 +73,5 @@ permalink: /kb/073/Q73679/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40877/
 
 ## Q40877: With QB /L, &quot;Far Heap Corrupt&quot; After Deleting Module
 
+{% raw %}
+
 	Article: Q40877
 	Product(s): See article
 	Version(s): 4.50
@@ -42,3 +44,5 @@ permalink: /kb/040/Q40877/
 	Microsoft has confirmed this to be a problem in Version 4.50. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

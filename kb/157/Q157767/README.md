@@ -6,6 +6,8 @@ permalink: /kb/157/Q157767/
 
 ## Q157767: Vfpodbc5.exe Visual FoxPro ODBC Driver Version 5.0
 
+{% raw %}
+
 	Article: Q157767
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a
@@ -104,3 +106,5 @@ permalink: /kb/157/Q157767/
 	
 	=============================================================================
 	
+
+{% endraw %}

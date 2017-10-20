@@ -6,6 +6,8 @@ permalink: /kb/141/Q141644/
 
 ## Q141644: Mac Encarta 96 &amp; 97: Unable to Copy and Paste an Image
 
+{% raw %}
+
 	Article: Q141644
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition,1997 edition
@@ -80,3 +82,5 @@ permalink: /kb/141/Q141644/
 	
 	=============================================================================
 	
+
+{% endraw %}

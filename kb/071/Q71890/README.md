@@ -6,6 +6,8 @@ permalink: /kb/071/Q71890/
 
 ## Q71890: FIX: Using TYPE Operator in Indirect Memory Operand Gives A2056
 
+{% raw %}
+
 	Article: Q71890
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -76,3 +78,5 @@ permalink: /kb/071/Q71890/
 	
 	=============================================================================
 	
+
+{% endraw %}

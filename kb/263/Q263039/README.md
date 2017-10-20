@@ -6,6 +6,8 @@ permalink: /kb/263/Q263039/
 
 ## Q263039: Games: How to Troubleshoot Display Issues
 
+{% raw %}
+
 	Article: Q263039
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -256,3 +258,5 @@ permalink: /kb/263/Q263039/
 	
 	=============================================================================
 	
+
+{% endraw %}

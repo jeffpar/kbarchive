@@ -6,6 +6,8 @@ permalink: /kb/289/Q289000/
 
 ## Q289000: Client Agent Settings Do Not Propagate After Applying SP3 RC9
 
+{% raw %}
+
 	Article: Q289000
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -189,3 +191,5 @@ permalink: /kb/289/Q289000/
 	
 	=============================================================================
 	
+
+{% endraw %}

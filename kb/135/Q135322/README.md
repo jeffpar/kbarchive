@@ -6,6 +6,8 @@ permalink: /kb/135/Q135322/
 
 ## Q135322: Default Printer Not Changed in PowerPoint
 
+{% raw %}
+
 	Article: Q135322
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -63,3 +65,5 @@ permalink: /kb/135/Q135322/
 	
 	=============================================================================
 	
+
+{% endraw %}

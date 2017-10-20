@@ -6,6 +6,8 @@ permalink: /kb/105/Q105850/
 
 ## Q105850: FoxBASE+/Mac Most Frequently Asked Questions and Answers
 
+{% raw %}
+
 	Article: Q105850
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -142,3 +144,5 @@ permalink: /kb/105/Q105850/
 	
 	=============================================================================
 	
+
+{% endraw %}

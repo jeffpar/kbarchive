@@ -6,6 +6,8 @@ permalink: /kb/326/Q326888/
 
 ## Q326888: Network+ Certification Training Kit, Second Edition Comments and
 
+{% raw %}
+
 	Article: Q326888
 	Product(s): Microsoft Press
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/326/Q326888/
 	
 	=============================================================================
 	
+
+{% endraw %}

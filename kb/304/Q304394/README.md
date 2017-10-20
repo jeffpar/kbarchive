@@ -6,6 +6,8 @@ permalink: /kb/304/Q304394/
 
 ## Q304394: BUG: MS Oracle Driver Doesn't Sort SQLPrimaryKeys Result Set
 
+{% raw %}
+
 	Article: Q304394
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.6,2.7,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Build
@@ -97,3 +99,5 @@ permalink: /kb/304/Q304394/
 	
 	=============================================================================
 	
+
+{% endraw %}

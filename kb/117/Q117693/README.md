@@ -6,6 +6,8 @@ permalink: /kb/117/Q117693/
 
 ## Q117693: PC Adm: Microsoft Mail MMFCLEAN.EXE Utility
 
+{% raw %}
+
 	Article: Q117693
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -420,3 +422,5 @@ permalink: /kb/117/Q117693/
 	
 	=============================================================================
 	
+
+{% endraw %}

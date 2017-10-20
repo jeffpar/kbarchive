@@ -6,6 +6,8 @@ permalink: /kb/094/Q94763/
 
 ## Q94763: VidEdit: Unnecessary Recompression of .AVI Files
 
+{% raw %}
+
 	Article: Q94763
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/094/Q94763/
 	
 	=============================================================================
 	
+
+{% endraw %}

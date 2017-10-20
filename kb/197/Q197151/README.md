@@ -6,6 +6,8 @@ permalink: /kb/197/Q197151/
 
 ## Q197151: WD97: Can't Print More Than One Page of Embedded Objects
 
+{% raw %}
+
 	Article: Q197151
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -52,3 +54,5 @@ permalink: /kb/197/Q197151/
 	
 	=============================================================================
 	
+
+{% endraw %}

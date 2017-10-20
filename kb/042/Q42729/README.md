@@ -6,6 +6,8 @@ permalink: /kb/042/Q42729/
 
 ## Q42729: Direct Memory Addressing
 
+{% raw %}
+
 	Article: Q42729
 	Product(s): See article
 	Version(s): 4.x 5.00 5.10 | 5.10
@@ -34,3 +36,5 @@ permalink: /kb/042/Q42729/
 	
 	For more information, see Section 14.3.1 on Direct Memory Operands,
 	Page 276 in the MASM 5.10 programmer's guide.
+
+{% endraw %}

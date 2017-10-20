@@ -6,6 +6,8 @@ permalink: /kb/176/Q176871/
 
 ## Q176871: XFOR:SNADS PROFS NOTES Proxy Generation Fails on 21 Like Aliases
 
+{% raw %}
+
 	Article: Q176871
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -142,3 +144,5 @@ permalink: /kb/176/Q176871/
 	
 	=============================================================================
 	
+
+{% endraw %}

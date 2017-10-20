@@ -6,6 +6,8 @@ permalink: /kb/244/Q244056/
 
 ## Q244056: Netdde.exe Stops Responding When Used from a Service
 
+{% raw %}
+
 	Article: Q244056
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6
@@ -82,3 +84,5 @@ permalink: /kb/244/Q244056/
 	
 	=============================================================================
 	
+
+{% endraw %}

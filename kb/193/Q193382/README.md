@@ -6,6 +6,8 @@ permalink: /kb/193/Q193382/
 
 ## Q193382: Virtual Globe 99: Lunar Map Links to Earth-Related Content
 
+{% raw %}
+
 	Article: Q193382
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/193/Q193382/
 	
 	=============================================================================
 	
+
+{% endraw %}

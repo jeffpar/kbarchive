@@ -6,6 +6,8 @@ permalink: /kb/263/Q263341/
 
 ## Q263341: SMS: Thread in SMS_EXECUTIVE Leaks Handles with NetWare 4.7
 
+{% raw %}
+
 	Article: Q263341
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -72,3 +74,5 @@ permalink: /kb/263/Q263341/
 	
 	=============================================================================
 	
+
+{% endraw %}

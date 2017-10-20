@@ -6,6 +6,8 @@ permalink: /kb/280/Q280126/
 
 ## Q280126: Device Manager Indicates PCI Conflicts in Windows 95
 
+{% raw %}
+
 	Article: Q280126
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/280/Q280126/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149748/
 
 ## Q149748: BUG: FOR3093 Error Incorrectly Generated Without /4Ys
 
+{% raw %}
+
 	Article: Q149748
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/149/Q149748/
 	
 	=============================================================================
 	
+
+{% endraw %}

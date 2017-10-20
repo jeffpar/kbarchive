@@ -6,6 +6,8 @@ permalink: /kb/238/Q238077/
 
 ## Q238077: HOWTO: Set Blank Date as Initial Value for Date Time Control
 
+{% raw %}
+
 	Article: Q238077
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/238/Q238077/
 	
 	=============================================================================
 	
+
+{% endraw %}

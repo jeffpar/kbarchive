@@ -6,6 +6,8 @@ permalink: /kb/032/Q32473/
 
 ## Q32473: /C No Effect on Communications Receive Buffer in CHAINed Prog
 
+{% raw %}
+
 	Article: Q32473
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/032/Q32473/
 	3.00. Using the RB option lets a CHAINed program (PROG2.EXE) set the
 	receive buffer size independent of the settings in the CHAINing
 	program (PROG1.EXE).
+
+{% endraw %}

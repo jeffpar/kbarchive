@@ -6,6 +6,8 @@ permalink: /kb/186/Q186434/
 
 ## Q186434: Slow Network Default Profile Operation
 
+{% raw %}
+
 	Article: Q186434
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -101,3 +103,5 @@ permalink: /kb/186/Q186434/
 	
 	=============================================================================
 	
+
+{% endraw %}

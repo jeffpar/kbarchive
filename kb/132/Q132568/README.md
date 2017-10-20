@@ -6,6 +6,8 @@ permalink: /kb/132/Q132568/
 
 ## Q132568: PRB: Creating Instance of OLE Control Causes Exception Error
 
+{% raw %}
+
 	Article: Q132568
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/132/Q132568/
 	
 	=============================================================================
 	
+
+{% endraw %}

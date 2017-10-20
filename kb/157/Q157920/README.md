@@ -6,6 +6,8 @@ permalink: /kb/157/Q157920/
 
 ## Q157920: INFO: How to Prevent Welcome to Windows NT Screen During Setup
 
+{% raw %}
+
 	Article: Q157920
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -154,3 +156,5 @@ permalink: /kb/157/Q157920/
 	
 	=============================================================================
 	
+
+{% endraw %}

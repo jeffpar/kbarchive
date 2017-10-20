@@ -6,6 +6,8 @@ permalink: /kb/130/Q130255/
 
 ## Q130255: HOWTO: Installing or Setting a Default Printer Driver
 
+{% raw %}
+
 	Article: Q130255
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/130/Q130255/
 	
 	=============================================================================
 	
+
+{% endraw %}

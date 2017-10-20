@@ -6,6 +6,8 @@ permalink: /kb/136/Q136858/
 
 ## Q136858: COM Port failures with Digiboard mc/XEM
 
+{% raw %}
+
 	Article: Q136858
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/136/Q136858/
 	
 	=============================================================================
 	
+
+{% endraw %}

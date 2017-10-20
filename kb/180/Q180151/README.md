@@ -6,6 +6,8 @@ permalink: /kb/180/Q180151/
 
 ## Q180151: How to Select the PCM Distribution Server Selection Logic
 
+{% raw %}
+
 	Article: Q180151
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -112,3 +114,5 @@ permalink: /kb/180/Q180151/
 	
 	=============================================================================
 	
+
+{% endraw %}

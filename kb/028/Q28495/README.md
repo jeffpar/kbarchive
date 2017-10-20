@@ -6,6 +6,8 @@ permalink: /kb/028/Q28495/
 
 ## Q28495: Tests with the Compaq 386/20
 
+{% raw %}
+
 	Article: Q28495
 	Product(s): See article
 	Version(s): 1.0
@@ -21,3 +23,5 @@ permalink: /kb/028/Q28495/
 	mouse driver.
 	   The white button and gray button serial mice tested successfully
 	with the Compaq 386/20's serial port.
+
+{% endraw %}

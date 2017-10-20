@@ -6,6 +6,8 @@ permalink: /kb/104/Q104189/
 
 ## Q104189: MSD Reports an 80287 Math Coprocessor as an 80387
 
+{% raw %}
+
 	Article: Q104189
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -64,3 +66,5 @@ permalink: /kb/104/Q104189/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278747/
 
 ## Q278747: ELL Error Message: Invalid Page Fault in Module Kernel32.dll
 
+{% raw %}
+
 	Article: Q278747
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/278/Q278747/
 	
 	=============================================================================
 	
+
+{% endraw %}

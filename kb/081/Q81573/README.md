@@ -6,6 +6,8 @@ permalink: /kb/081/Q81573/
 
 ## Q81573: Converting Apple Sound Files to Wave Format
 
+{% raw %}
+
 	Article: Q81573
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/081/Q81573/
 	
 	=============================================================================
 	
+
+{% endraw %}

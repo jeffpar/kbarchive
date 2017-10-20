@@ -6,6 +6,8 @@ permalink: /kb/139/Q139490/
 
 ## Q139490: FIX: Can't Select First Table When Creating DAO Table Recordse
 
+{% raw %}
+
 	Article: Q139490
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/139/Q139490/
 	
 	=============================================================================
 	
+
+{% endraw %}

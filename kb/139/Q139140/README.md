@@ -6,6 +6,8 @@ permalink: /kb/139/Q139140/
 
 ## Q139140: Older Supra Modems May Not Work on Unitel Phone Lines
 
+{% raw %}
+
 	Article: Q139140
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.2 1.3 2.00
@@ -83,3 +85,5 @@ permalink: /kb/139/Q139140/
 	
 	=============================================================================
 	
+
+{% endraw %}

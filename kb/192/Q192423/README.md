@@ -6,6 +6,8 @@ permalink: /kb/192/Q192423/
 
 ## Q192423: EVG99: Back Button Does Not Return You to Previous Screen
 
+{% raw %}
+
 	Article: Q192423
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/192/Q192423/
 	
 	=============================================================================
 	
+
+{% endraw %}

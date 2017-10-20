@@ -6,6 +6,8 @@ permalink: /kb/096/Q96271/
 
 ## Q96271: Chaining Parent PSP Environment Variables
 
+{% raw %}
+
 	Article: Q96271
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -48,3 +50,5 @@ permalink: /kb/096/Q96271/
 	
 	=============================================================================
 	
+
+{% endraw %}

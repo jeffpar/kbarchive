@@ -6,6 +6,8 @@ permalink: /kb/237/Q237896/
 
 ## Q237896: Enhanced GET_LU_STATUS Incorrectly Indicates SyncPoint Support
 
+{% raw %}
+
 	Article: Q237896
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -68,3 +70,5 @@ permalink: /kb/237/Q237896/
 	
 	=============================================================================
 	
+
+{% endraw %}

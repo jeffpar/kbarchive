@@ -6,6 +6,8 @@ permalink: /kb/029/Q29281/
 
 ## Q29281: Using printf() with Far Pointers in Small Model Programs
 
+{% raw %}
+
 	Article: Q29281
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -41,3 +43,5 @@ permalink: /kb/029/Q29281/
 	For additional information on the use of the F specifier with
 	printf(), refer to the  C run-time library reference or online help
 	that was supplied with your particular version of the compiler.
+
+{% endraw %}

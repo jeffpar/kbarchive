@@ -6,6 +6,8 @@ permalink: /kb/214/Q214467/
 
 ## Q214467: Windows NT 4.0 DNR Only &quot;Devolves&quot; Two Domain Suffixes
 
+{% raw %}
+
 	Article: Q214467
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -128,3 +130,5 @@ permalink: /kb/214/Q214467/
 	
 	=============================================================================
 	
+
+{% endraw %}

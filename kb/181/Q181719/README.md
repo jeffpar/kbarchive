@@ -6,6 +6,8 @@ permalink: /kb/181/Q181719/
 
 ## Q181719: PRB: &quot;Cannot Access the ClassView Information File...&quot;
 
+{% raw %}
+
 	Article: Q181719
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/181/Q181719/
 	
 	=============================================================================
 	
+
+{% endraw %}

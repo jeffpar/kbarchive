@@ -6,6 +6,8 @@ permalink: /kb/166/Q166788/
 
 ## Q166788: WD97: Can't Save with Embedded Control and Missing Reference
 
+{% raw %}
+
 	Article: Q166788
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/166/Q166788/
 	
 	=============================================================================
 	
+
+{% endraw %}

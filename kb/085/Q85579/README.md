@@ -6,6 +6,8 @@ permalink: /kb/085/Q85579/
 
 ## Q85579: Pen Err Msg: Cannot Load Dictionary XXX.DLL...
 
+{% raw %}
+
 	Article: Q85579
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,1.0a
@@ -85,3 +87,5 @@ permalink: /kb/085/Q85579/
 	
 	=============================================================================
 	
+
+{% endraw %}

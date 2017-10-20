@@ -6,6 +6,8 @@ permalink: /kb/135/Q135584/
 
 ## Q135584: Unattended Installation of Windows NT 3.51 Service Pack 1
 
+{% raw %}
+
 	Article: Q135584
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -146,3 +148,5 @@ permalink: /kb/135/Q135584/
 	
 	=============================================================================
 	
+
+{% endraw %}

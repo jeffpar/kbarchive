@@ -6,6 +6,8 @@ permalink: /kb/235/Q235298/
 
 ## Q235298: Microsoft Word 2000 Step by Step
 
+{% raw %}
+
 	Article: Q235298
 	Product(s): Microsoft Press
 	Version(s): 
@@ -203,3 +205,5 @@ permalink: /kb/235/Q235298/
 	
 	=============================================================================
 	
+
+{% endraw %}

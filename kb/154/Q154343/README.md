@@ -6,6 +6,8 @@ permalink: /kb/154/Q154343/
 
 ## Q154343: MSB Ocean: Background Music Stops Playing on Macintosh
 
+{% raw %}
+
 	Article: Q154343
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -62,3 +64,5 @@ permalink: /kb/154/Q154343/
 	
 	=============================================================================
 	
+
+{% endraw %}

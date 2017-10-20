@@ -6,6 +6,8 @@ permalink: /kb/099/Q99276/
 
 ## Q99276: LAN Manager API NetUserSetInfo - Changeable Flag Options
 
+{% raw %}
+
 	Article: Q99276
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/099/Q99276/
 	
 	=============================================================================
 	
+
+{% endraw %}

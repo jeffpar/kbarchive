@@ -6,6 +6,8 @@ permalink: /kb/166/Q166526/
 
 ## Q166526: WinNT Explorer Clears Archive Attribute after Perms Change
 
+{% raw %}
+
 	Article: Q166526
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/166/Q166526/
 	
 	=============================================================================
 	
+
+{% endraw %}

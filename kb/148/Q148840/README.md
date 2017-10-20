@@ -6,6 +6,8 @@ permalink: /kb/148/Q148840/
 
 ## Q148840: Err Msg: Encarta Cannot Find the Files Needed to Start
 
+{% raw %}
+
 	Article: Q148840
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/148/Q148840/
 	
 	=============================================================================
 	
+
+{% endraw %}

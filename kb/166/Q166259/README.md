@@ -6,6 +6,8 @@ permalink: /kb/166/Q166259/
 
 ## Q166259: INFO: Visual Interdev/Visual SourceSafe Integration Discussion
 
+{% raw %}
+
 	Article: Q166259
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:1.0,5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/166/Q166259/
 	
 	=============================================================================
 	
+
+{% endraw %}

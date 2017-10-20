@@ -6,6 +6,8 @@ permalink: /kb/124/Q124968/
 
 ## Q124968: MSB Human: Computer Stops Responding on Exit
 
+{% raw %}
+
 	Article: Q124968
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -77,3 +79,5 @@ permalink: /kb/124/Q124968/
 	
 	=============================================================================
 	
+
+{% endraw %}

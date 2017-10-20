@@ -6,6 +6,8 @@ permalink: /kb/109/Q109598/
 
 ## Q109598: PRB: Using INKEY() in FoxPro for Mac Seems to Hang System
 
+{% raw %}
+
 	Article: Q109598
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -60,3 +62,5 @@ permalink: /kb/109/Q109598/
 	
 	=============================================================================
 	
+
+{% endraw %}

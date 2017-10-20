@@ -6,6 +6,8 @@ permalink: /kb/129/Q129777/
 
 ## Q129777: System Instabilities Playing .WAV Files
 
+{% raw %}
+
 	Article: Q129777
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/129/Q129777/
 	
 	=============================================================================
 	
+
+{% endraw %}

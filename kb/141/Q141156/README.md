@@ -6,6 +6,8 @@ permalink: /kb/141/Q141156/
 
 ## Q141156: STOP Msg: 0x0000000A in SFMATALK.SYS After Receiving ATP Packet
 
+{% raw %}
+
 	Article: Q141156
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -62,3 +64,5 @@ permalink: /kb/141/Q141156/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247150/
 
 ## Q247150: XADM: Registry Error Message When Performing Soft Recovery
 
+{% raw %}
+
 	Article: Q247150
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -104,3 +106,5 @@ permalink: /kb/247/Q247150/
 	
 	=============================================================================
 	
+
+{% endraw %}

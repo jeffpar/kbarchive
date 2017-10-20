@@ -6,6 +6,8 @@ permalink: /kb/034/Q34473/
 
 ## Q34473: MASM 5.10 MACRO.DOC: Miscellaneous
 
+{% raw %}
+
 	Article: Q34473
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -86,3 +88,5 @@ permalink: /kb/034/Q34473/
 	                @SetInt     = ES:BX points to interrupt routine
 	Registers used: AX for both; ES and BX for @GetInt; DS and
 	DS for @SetInt
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198398/
 
 ## Q198398: Access Violation in Snalink.exe Activating Numerous Connections
 
+{% raw %}
+
 	Article: Q198398
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -178,3 +180,5 @@ permalink: /kb/198/Q198398/
 	
 	=============================================================================
 	
+
+{% endraw %}

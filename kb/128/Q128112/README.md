@@ -6,6 +6,8 @@ permalink: /kb/128/Q128112/
 
 ## Q128112: INFO: CFile::end (from CFile::Seek) Uses a Forward Offset
 
+{% raw %}
+
 	Article: Q128112
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1; :1.0,1.5,1.51
@@ -64,3 +66,5 @@ permalink: /kb/128/Q128112/
 	
 	=============================================================================
 	
+
+{% endraw %}

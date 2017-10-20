@@ -6,6 +6,8 @@ permalink: /kb/083/Q83916/
 
 ## Q83916: CONVINFO Data Structure wStatus Field Description
 
+{% raw %}
+
 	Article: Q83916
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/083/Q83916/
 	
 	=============================================================================
 	
+
+{% endraw %}

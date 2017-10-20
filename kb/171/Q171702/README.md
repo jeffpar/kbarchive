@@ -6,6 +6,8 @@ permalink: /kb/171/Q171702/
 
 ## Q171702: MSN Prompts for SMTP and POP3 Mail Servers
 
+{% raw %}
+
 	Article: Q171702
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -84,3 +86,5 @@ permalink: /kb/171/Q171702/
 	
 	=============================================================================
 	
+
+{% endraw %}

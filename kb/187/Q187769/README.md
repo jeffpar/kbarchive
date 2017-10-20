@@ -6,6 +6,8 @@ permalink: /kb/187/Q187769/
 
 ## Q187769: Application Error in NTVDM Running cc:Mail Utilities
 
+{% raw %}
+
 	Article: Q187769
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:5.0,5.5; WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/187/Q187769/
 	
 	=============================================================================
 	
+
+{% endraw %}

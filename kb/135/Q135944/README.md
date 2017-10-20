@@ -6,6 +6,8 @@ permalink: /kb/135/Q135944/
 
 ## Q135944: Problems Using WISE Setup Toolkit When System Agent Is Running
 
+{% raw %}
+
 	Article: Q135944
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/135/Q135944/
 	
 	=============================================================================
 	
+
+{% endraw %}

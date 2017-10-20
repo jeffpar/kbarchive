@@ -6,6 +6,8 @@ permalink: /kb/042/Q42793/
 
 ## Q42793: Fatal Error C1059: Out of Near Heap Space
 
+{% raw %}
+
 	Article: Q42793
 	Product(s): See article
 	Version(s): 5.00   | 5.10
@@ -32,3 +34,5 @@ permalink: /kb/042/Q42793/
 	The preprocessor uses the near heap to evaluate macro expansions. The
 	compiler /Zg option uses the near heap while producing the function
 	declaration listing.
+
+{% endraw %}

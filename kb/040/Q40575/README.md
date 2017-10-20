@@ -6,6 +6,8 @@ permalink: /kb/040/Q40575/
 
 ## Q40575: Norton's Guide Hangs QuickC Version 2.00
 
+{% raw %}
+
 	Article: Q40575
 	Product(s): See article
 	Version(s): 2.00   | 2.00
@@ -27,3 +29,5 @@ permalink: /kb/040/Q40575/
 	Microsoft has confirmed this to be a problem in Version 2.00. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

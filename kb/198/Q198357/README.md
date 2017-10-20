@@ -6,6 +6,8 @@ permalink: /kb/198/Q198357/
 
 ## Q198357: WD97: Box Border Incorrect When Applied to Multiple Paragraphs
 
+{% raw %}
+
 	Article: Q198357
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/198/Q198357/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103645/
 
 ## Q103645: HOWTO: Change the Default Windows Printer from FoxPro
 
+{% raw %}
+
 	Article: Q103645
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -403,3 +405,5 @@ permalink: /kb/103/Q103645/
 	
 	=============================================================================
 	
+
+{% endraw %}

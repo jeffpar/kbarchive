@@ -6,6 +6,8 @@ permalink: /kb/185/Q185955/
 
 ## Q185955: Streets 98 Err Msg: Setup Could Not Read from the File...
 
+{% raw %}
+
 	Article: Q185955
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/185/Q185955/
 	
 	=============================================================================
 	
+
+{% endraw %}

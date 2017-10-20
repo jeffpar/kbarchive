@@ -6,6 +6,8 @@ permalink: /kb/135/Q135857/
 
 ## Q135857: Err Msg: Invalid Parameter Specified After Configuring EMM386
 
+{% raw %}
+
 	Article: Q135857
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -75,3 +77,5 @@ permalink: /kb/135/Q135857/
 	
 	=============================================================================
 	
+
+{% endraw %}

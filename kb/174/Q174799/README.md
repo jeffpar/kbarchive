@@ -6,6 +6,8 @@ permalink: /kb/174/Q174799/
 
 ## Q174799: How to Install Service Packs in a Cluster
 
+{% raw %}
+
 	Article: Q174799
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -86,3 +88,5 @@ permalink: /kb/174/Q174799/
 	
 	=============================================================================
 	
+
+{% endraw %}

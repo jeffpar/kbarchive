@@ -6,6 +6,8 @@ permalink: /kb/064/Q64791/
 
 ## Q64791: Intrinsic Form of memcpy() Can Produce Incorrect Code
 
+{% raw %}
+
 	Article: Q64791
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -75,3 +77,5 @@ permalink: /kb/064/Q64791/
 	Microsoft has confirmed this to be a problem in C version 6.00. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

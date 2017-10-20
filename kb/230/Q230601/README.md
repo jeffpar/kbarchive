@@ -6,6 +6,8 @@ permalink: /kb/230/Q230601/
 
 ## Q230601: CB Incorrectly Maps COBOL Data Types for Unsigned Display
 
+{% raw %}
+
 	Article: Q230601
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -94,3 +96,5 @@ permalink: /kb/230/Q230601/
 	
 	=============================================================================
 	
+
+{% endraw %}

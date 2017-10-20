@@ -6,6 +6,8 @@ permalink: /kb/156/Q156768/
 
 ## Q156768: STL Sample for deque::push_front, deque::pop_front Functions
 
+{% raw %}
+
 	Article: Q156768
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -148,3 +150,5 @@ permalink: /kb/156/Q156768/
 	
 	=============================================================================
 	
+
+{% endraw %}

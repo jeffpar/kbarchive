@@ -6,6 +6,8 @@ permalink: /kb/137/Q137993/
 
 ## Q137993: Windows 95 Readme.txt File from Drivers&#92;Display&#92;Avance Folder
 
+{% raw %}
+
 	Article: Q137993
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/137/Q137993/
 	
 	=============================================================================
 	
+
+{% endraw %}

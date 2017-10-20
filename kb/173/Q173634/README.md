@@ -6,6 +6,8 @@ permalink: /kb/173/Q173634/
 
 ## Q173634: Windows NT Cannot Audit RAS Client Activity
 
+{% raw %}
+
 	Article: Q173634
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -47,3 +49,5 @@ permalink: /kb/173/Q173634/
 	
 	=============================================================================
 	
+
+{% endraw %}

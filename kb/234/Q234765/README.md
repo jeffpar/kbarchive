@@ -6,6 +6,8 @@ permalink: /kb/234/Q234765/
 
 ## Q234765: STOP 0x0000000a or 0x0000004e Errors with Citrix Metaframe
 
+{% raw %}
+
 	Article: Q234765
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -68,3 +70,5 @@ permalink: /kb/234/Q234765/
 	
 	=============================================================================
 	
+
+{% endraw %}

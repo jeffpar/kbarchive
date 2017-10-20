@@ -6,6 +6,8 @@ permalink: /kb/157/Q157721/
 
 ## Q157721: HOWTO: Determine FileFormat Values for Excel SaveAs Method
 
+{% raw %}
+
 	Article: Q157721
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/157/Q157721/
 	
 	=============================================================================
 	
+
+{% endraw %}

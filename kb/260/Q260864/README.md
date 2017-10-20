@@ -6,6 +6,8 @@ permalink: /kb/260/Q260864/
 
 ## Q260864: StarLancer: No Lighting Effects for Engines or Weapons Fire
 
+{% raw %}
+
 	Article: Q260864
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/260/Q260864/
 	
 	=============================================================================
 	
+
+{% endraw %}

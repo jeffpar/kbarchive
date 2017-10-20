@@ -6,6 +6,8 @@ permalink: /kb/263/Q263072/
 
 ## Q263072: XCON: Err. Installing Internet Mail Service w. Terminal Services
 
+{% raw %}
+
 	Article: Q263072
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -93,3 +95,5 @@ permalink: /kb/263/Q263072/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141986/
 
 ## Q141986: XCLN: Status Bar Indicator Does Not Update in Filter View
 
+{% raw %}
+
 	Article: Q141986
 	Product(s): Microsoft Exchange
 	Version(s): 4.00
@@ -54,3 +56,5 @@ permalink: /kb/141/Q141986/
 	
 	=============================================================================
 	
+
+{% endraw %}

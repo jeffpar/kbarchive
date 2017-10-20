@@ -6,6 +6,8 @@ permalink: /kb/155/Q155179/
 
 ## Q155179: WD97: How to Use Microsoft Excel Data Source for Word Mail Merge
 
+{% raw %}
+
 	Article: Q155179
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -129,3 +131,5 @@ permalink: /kb/155/Q155179/
 	
 	=============================================================================
 	
+
+{% endraw %}

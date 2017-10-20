@@ -6,6 +6,8 @@ permalink: /kb/240/Q240208/
 
 ## Q240208: XFOR: Applying Exchange Service Packs Does Not Update MSMC Files
 
+{% raw %}
+
 	Article: Q240208
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5,5.5 SP1,5.5 SP2
@@ -104,3 +106,5 @@ permalink: /kb/240/Q240208/
 	
 	=============================================================================
 	
+
+{% endraw %}

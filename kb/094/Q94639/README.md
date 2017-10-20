@@ -6,6 +6,8 @@ permalink: /kb/094/Q94639/
 
 ## Q94639: Troubleshooting MS Backup and MS Backup for Windows
 
+{% raw %}
+
 	Article: Q94639
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a,3.1,3.11
@@ -94,3 +96,5 @@ permalink: /kb/094/Q94639/
 	
 	=============================================================================
 	
+
+{% endraw %}

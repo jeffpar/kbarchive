@@ -6,6 +6,8 @@ permalink: /kb/130/Q130387/
 
 ## Q130387: PRB: CLEAR EVENTS in Modal Form Does Not Clear a READ
 
+{% raw %}
+
 	Article: Q130387
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -87,3 +89,5 @@ permalink: /kb/130/Q130387/
 	
 	=============================================================================
 	
+
+{% endraw %}

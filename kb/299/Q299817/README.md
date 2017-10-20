@@ -6,6 +6,8 @@ permalink: /kb/299/Q299817/
 
 ## Q299817: Train Simulator: Hisatsu: Bridges on Ground, Roads Unavailable
 
+{% raw %}
+
 	Article: Q299817
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/299/Q299817/
 	
 	=============================================================================
 	
+
+{% endraw %}

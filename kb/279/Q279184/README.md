@@ -6,6 +6,8 @@ permalink: /kb/279/Q279184/
 
 ## Q279184: FIX: Multiple Checkout Setting Disables Checkout Option
 
+{% raw %}
+
 	Article: Q279184
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -119,3 +121,5 @@ permalink: /kb/279/Q279184/
 	
 	=============================================================================
 	
+
+{% endraw %}

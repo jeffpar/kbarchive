@@ -6,6 +6,8 @@ permalink: /kb/198/Q198368/
 
 ## Q198368: WD97: Text Boxes/Drawing Objects Not Merged with Track Changes
 
+{% raw %}
+
 	Article: Q198368
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/198/Q198368/
 	
 	=============================================================================
 	
+
+{% endraw %}

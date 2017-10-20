@@ -6,6 +6,8 @@ permalink: /kb/165/Q165601/
 
 ## Q165601: WD97: Macro Record Results In PlayBack Error Editing Objects
 
+{% raw %}
+
 	Article: Q165601
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/165/Q165601/
 	
 	=============================================================================
 	
+
+{% endraw %}

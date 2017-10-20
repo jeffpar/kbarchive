@@ -6,6 +6,8 @@ permalink: /kb/183/Q183768/
 
 ## Q183768: XCLN: Error: MAPI MapiSend Failed
 
+{% raw %}
+
 	Article: Q183768
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -80,3 +82,5 @@ permalink: /kb/183/Q183768/
 	
 	=============================================================================
 	
+
+{% endraw %}

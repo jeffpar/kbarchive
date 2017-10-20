@@ -6,6 +6,8 @@ permalink: /kb/154/Q154074/
 
 ## Q154074: Unable to View Unshared Printer in Windows NT 4.0 Printer Folder
 
+{% raw %}
+
 	Article: Q154074
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/154/Q154074/
 	
 	=============================================================================
 	
+
+{% endraw %}

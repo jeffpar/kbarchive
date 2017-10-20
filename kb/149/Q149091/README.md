@@ -6,6 +6,8 @@ permalink: /kb/149/Q149091/
 
 ## Q149091: Power Users Can Modify Common Groups
 
+{% raw %}
+
 	Article: Q149091
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/149/Q149091/
 	
 	=============================================================================
 	
+
+{% endraw %}

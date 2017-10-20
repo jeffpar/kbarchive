@@ -6,6 +6,8 @@ permalink: /kb/135/Q135514/
 
 ## Q135514: FltSim 5.1: Setup Option to Save Disk Space and Time
 
+{% raw %}
+
 	Article: Q135514
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -190,3 +192,5 @@ permalink: /kb/135/Q135514/
 	
 	=============================================================================
 	
+
+{% endraw %}

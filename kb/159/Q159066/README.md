@@ -6,6 +6,8 @@ permalink: /kb/159/Q159066/
 
 ## Q159066: A Client Crash May Prevent an NTFS Volume Dismount
 
+{% raw %}
+
 	Article: Q159066
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159066/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193614/
 
 ## Q193614: Viewing Computer from MMC Causes Access Violation to Occur
 
+{% raw %}
+
 	Article: Q193614
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/193/Q193614/
 	
 	=============================================================================
 	
+
+{% endraw %}

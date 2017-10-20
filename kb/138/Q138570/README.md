@@ -6,6 +6,8 @@ permalink: /kb/138/Q138570/
 
 ## Q138570: PRB: LIST STRUCTURE Command Truncates Long Field Names
 
+{% raw %}
+
 	Article: Q138570
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138570/
 	
 	=============================================================================
 	
+
+{% endraw %}

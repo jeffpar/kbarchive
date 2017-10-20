@@ -6,6 +6,8 @@ permalink: /kb/167/Q167853/
 
 ## Q167853: PRB: LNK1104 Cannot Find mfc42pd.lib
 
+{% raw %}
+
 	Article: Q167853
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.0b
@@ -95,3 +97,5 @@ permalink: /kb/167/Q167853/
 	
 	=============================================================================
 	
+
+{% endraw %}

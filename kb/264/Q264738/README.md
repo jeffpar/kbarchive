@@ -6,6 +6,8 @@ permalink: /kb/264/Q264738/
 
 ## Q264738: Unable to Start Citrix Installer Service
 
+{% raw %}
+
 	Article: Q264738
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -59,3 +61,5 @@ permalink: /kb/264/Q264738/
 	
 	=============================================================================
 	
+
+{% endraw %}

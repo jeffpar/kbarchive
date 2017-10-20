@@ -6,6 +6,8 @@ permalink: /kb/151/Q151712/
 
 ## Q151712: Remotely Synchronizing the Time Between Two Computers
 
+{% raw %}
+
 	Article: Q151712
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -61,3 +63,5 @@ permalink: /kb/151/Q151712/
 	
 	=============================================================================
 	
+
+{% endraw %}

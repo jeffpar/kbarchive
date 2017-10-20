@@ -6,6 +6,8 @@ permalink: /kb/199/Q199714/
 
 ## Q199714: Cannot Join Domain Because of SMB Signing
 
+{% raw %}
+
 	Article: Q199714
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -147,3 +149,5 @@ permalink: /kb/199/Q199714/
 	
 	=============================================================================
 	
+
+{% endraw %}

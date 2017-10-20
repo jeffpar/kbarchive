@@ -6,6 +6,8 @@ permalink: /kb/088/Q88369/
 
 ## Q88369: PC Win: Starting Mail for Windows 3.0 Minimized
 
+{% raw %}
+
 	Article: Q88369
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/088/Q88369/
 	
 	=============================================================================
 	
+
+{% endraw %}

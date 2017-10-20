@@ -6,6 +6,8 @@ permalink: /kb/170/Q170681/
 
 ## Q170681: XCLN: Deleting Personal Folder Service Causes Loss of Messages
 
+{% raw %}
+
 	Article: Q170681
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/170/Q170681/
 	
 	=============================================================================
 	
+
+{% endraw %}

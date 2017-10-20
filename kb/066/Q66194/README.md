@@ -6,6 +6,8 @@ permalink: /kb/066/Q66194/
 
 ## Q66194: Flight Simulator: Using Com Ports
 
+{% raw %}
+
 	Article: Q66194
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/066/Q66194/
 	
 	=============================================================================
 	
+
+{% endraw %}

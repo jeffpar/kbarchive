@@ -6,6 +6,8 @@ permalink: /kb/248/Q248326/
 
 ## Q248326: Automap: Stops Responding When You Start Program
 
+{% raw %}
+
 	Article: Q248326
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/248/Q248326/
 	
 	=============================================================================
 	
+
+{% endraw %}

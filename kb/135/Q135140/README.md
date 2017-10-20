@@ -6,6 +6,8 @@ permalink: /kb/135/Q135140/
 
 ## Q135140: EPS File Printed Too Large with AmiPro
 
+{% raw %}
+
 	Article: Q135140
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -42,3 +44,5 @@ permalink: /kb/135/Q135140/
 	
 	=============================================================================
 	
+
+{% endraw %}

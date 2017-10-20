@@ -6,6 +6,8 @@ permalink: /kb/245/Q245092/
 
 ## Q245092: Add Printer Wizard Does Not Start When Generating Print Queue.
 
+{% raw %}
+
 	Article: Q245092
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/245/Q245092/
 	
 	=============================================================================
 	
+
+{% endraw %}

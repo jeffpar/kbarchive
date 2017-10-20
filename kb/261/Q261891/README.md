@@ -6,6 +6,8 @@ permalink: /kb/261/Q261891/
 
 ## Q261891: XADM: Public Folder Size Displayed Incorr. If Larger Than 4.3 GB
 
+{% raw %}
+
 	Article: Q261891
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/261/Q261891/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42943/
 
 ## Q42943: Problem with Floats in While Loop
 
+{% raw %}
+
 	Article: Q42943
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -34,3 +36,5 @@ permalink: /kb/042/Q42943/
 	    while (test < (float) 1)
 	       printf("Should not have entered loop, but did\n");
 	}
+
+{% endraw %}

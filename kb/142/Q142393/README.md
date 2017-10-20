@@ -6,6 +6,8 @@ permalink: /kb/142/Q142393/
 
 ## Q142393: PRB: Cannot Create a Quick Report/Wizard Report from a Cursor
 
+{% raw %}
+
 	Article: Q142393
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -93,3 +95,5 @@ permalink: /kb/142/Q142393/
 	
 	=============================================================================
 	
+
+{% endraw %}

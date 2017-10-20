@@ -6,6 +6,8 @@ permalink: /kb/258/Q258537/
 
 ## Q258537: FIX: CONFIG.FPW Setting for Terminal Server Environment
 
+{% raw %}
+
 	Article: Q258537
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -110,3 +112,5 @@ permalink: /kb/258/Q258537/
 	
 	=============================================================================
 	
+
+{% endraw %}

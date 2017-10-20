@@ -6,6 +6,8 @@ permalink: /kb/138/Q138991/
 
 ## Q138991: Problems Using Windows 95 or MS Plus! Startup Disk
 
+{% raw %}
+
 	Article: Q138991
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -173,3 +175,5 @@ permalink: /kb/138/Q138991/
 	
 	=============================================================================
 	
+
+{% endraw %}

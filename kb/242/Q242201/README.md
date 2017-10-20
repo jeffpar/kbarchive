@@ -6,6 +6,8 @@ permalink: /kb/242/Q242201/
 
 ## Q242201: XADM: Information Store Stops Processing a Replication Message
 
+{% raw %}
+
 	Article: Q242201
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -81,3 +83,5 @@ permalink: /kb/242/Q242201/
 	
 	=============================================================================
 	
+
+{% endraw %}

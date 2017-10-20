@@ -6,6 +6,8 @@ permalink: /kb/154/Q154563/
 
 ## Q154563: FPNW: Search Drive Vector Not Set
 
+{% raw %}
+
 	Article: Q154563
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -73,3 +75,5 @@ permalink: /kb/154/Q154563/
 	
 	=============================================================================
 	
+
+{% endraw %}

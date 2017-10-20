@@ -6,6 +6,8 @@ permalink: /kb/251/Q251173/
 
 ## Q251173: XADM: Move Server Wizard Does Not Check For Private IS
 
+{% raw %}
+
 	Article: Q251173
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2,5.5 SP3
@@ -102,3 +104,5 @@ permalink: /kb/251/Q251173/
 	
 	=============================================================================
 	
+
+{% endraw %}

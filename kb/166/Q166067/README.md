@@ -6,6 +6,8 @@ permalink: /kb/166/Q166067/
 
 ## Q166067: WV: Can't Use CTRL+C in Word Viewer to Close Full Screen View
 
+{% raw %}
+
 	Article: Q166067
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/166/Q166067/
 	
 	=============================================================================
 	
+
+{% endraw %}

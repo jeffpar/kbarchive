@@ -6,6 +6,8 @@ permalink: /kb/089/Q89943/
 
 ## Q89943: Windows Resource Kit (7/6/92) Disk Directory (5.25 Inch)
 
+{% raw %}
+
 	Article: Q89943
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -138,3 +140,5 @@ permalink: /kb/089/Q89943/
 	
 	=============================================================================
 	
+
+{% endraw %}

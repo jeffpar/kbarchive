@@ -6,6 +6,8 @@ permalink: /kb/155/Q155915/
 
 ## Q155915: Encarta 97: Setup: Cannot Restart With Exchange Running
 
+{% raw %}
+
 	Article: Q155915
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155915/
 	
 	=============================================================================
 	
+
+{% endraw %}

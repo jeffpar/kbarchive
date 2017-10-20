@@ -6,6 +6,8 @@ permalink: /kb/138/Q138305/
 
 ## Q138305: Cannot Configure Windows 95 to Use Default Hardware Profile
 
+{% raw %}
+
 	Article: Q138305
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/138/Q138305/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189847/
 
 ## Q189847: INFO: New String and Format Functions in Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q189847
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/189/Q189847/
 	
 	=============================================================================
 	
+
+{% endraw %}

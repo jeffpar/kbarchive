@@ -6,6 +6,8 @@ permalink: /kb/174/Q174231/
 
 ## Q174231: DHCP Uses 100% CPU If First Network Card Is Disabled
 
+{% raw %}
+
 	Article: Q174231
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/174/Q174231/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149701/
 
 ## Q149701: DOCERR: Insert Method Does Not Exist for Columns Collection
 
+{% raw %}
+
 	Article: Q149701
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/149/Q149701/
 	
 	=============================================================================
 	
+
+{% endraw %}

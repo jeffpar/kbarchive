@@ -6,6 +6,8 @@ permalink: /kb/116/Q116341/
 
 ## Q116341: Characters Change When Pasted into 16-bit Applications
 
+{% raw %}
+
 	Article: Q116341
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -48,3 +50,5 @@ permalink: /kb/116/Q116341/
 	
 	=============================================================================
 	
+
+{% endraw %}

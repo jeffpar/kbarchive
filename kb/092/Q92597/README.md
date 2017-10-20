@@ -6,6 +6,8 @@ permalink: /kb/092/Q92597/
 
 ## Q92597: Disabling an Inactive Persistent Connection
 
+{% raw %}
+
 	Article: Q92597
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -77,3 +79,5 @@ permalink: /kb/092/Q92597/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140832/
 
 ## Q140832: SNA Server Windows 3.x Client Fails to Install on Windows 95
 
+{% raw %}
+
 	Article: Q140832
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -91,3 +93,5 @@ permalink: /kb/140/Q140832/
 	
 	=============================================================================
 	
+
+{% endraw %}

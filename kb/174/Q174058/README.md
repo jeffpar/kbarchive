@@ -6,6 +6,8 @@ permalink: /kb/174/Q174058/
 
 ## Q174058: Delayed Worker Threads Causes a STOP 7A
 
+{% raw %}
+
 	Article: Q174058
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174058/
 	
 	=============================================================================
 	
+
+{% endraw %}

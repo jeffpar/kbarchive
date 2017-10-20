@@ -6,6 +6,8 @@ permalink: /kb/198/Q198749/
 
 ## Q198749: SMS: Determining If a client Will Use Video Acceleration
 
+{% raw %}
+
 	Article: Q198749
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -61,3 +63,5 @@ permalink: /kb/198/Q198749/
 	
 	=============================================================================
 	
+
+{% endraw %}

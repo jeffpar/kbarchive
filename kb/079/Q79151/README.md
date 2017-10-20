@@ -6,6 +6,8 @@ permalink: /kb/079/Q79151/
 
 ## Q79151: FIX: MASM 6.0 May Incorrectly Insert Prologue with USES
 
+{% raw %}
+
 	Article: Q79151
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -72,3 +74,5 @@ permalink: /kb/079/Q79151/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225048/
 
 ## Q225048: INFO: Issues Migrating from DAO/Jet to ADO/Jet
 
+{% raw %}
+
 	Article: Q225048
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.01,2.1,2.5,2.6,5.0,6.0
@@ -315,3 +317,5 @@ permalink: /kb/225/Q225048/
 	
 	=============================================================================
 	
+
+{% endraw %}

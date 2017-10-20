@@ -6,6 +6,8 @@ permalink: /kb/240/Q240368/
 
 ## Q240368: Zone Err Msg: Are You Sure You Saw The Spade?
 
+{% raw %}
+
 	Article: Q240368
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/240/Q240368/
 	
 	=============================================================================
 	
+
+{% endraw %}

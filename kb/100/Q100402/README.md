@@ -6,6 +6,8 @@ permalink: /kb/100/Q100402/
 
 ## Q100402: Musical Instruments: Annotation Disturbs Line Spacing
 
+{% raw %}
+
 	Article: Q100402
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -44,3 +46,5 @@ permalink: /kb/100/Q100402/
 	
 	=============================================================================
 	
+
+{% endraw %}

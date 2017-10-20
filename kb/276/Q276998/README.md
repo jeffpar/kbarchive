@@ -6,6 +6,8 @@ permalink: /kb/276/Q276998/
 
 ## Q276998: Cannot Populate Certain User Attributes in Connected Directory
 
+{% raw %}
+
 	Article: Q276998
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -71,3 +73,5 @@ permalink: /kb/276/Q276998/
 	
 	=============================================================================
 	
+
+{% endraw %}

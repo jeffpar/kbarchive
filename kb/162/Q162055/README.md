@@ -6,6 +6,8 @@ permalink: /kb/162/Q162055/
 
 ## Q162055: Ipconfig and Winipcfg Display Only One Default Gateway Address
 
+{% raw %}
+
 	Article: Q162055
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11,95; WINNT:3.5,3.51,4.0
@@ -118,3 +120,5 @@ permalink: /kb/162/Q162055/
 	
 	=============================================================================
 	
+
+{% endraw %}

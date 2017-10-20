@@ -6,6 +6,8 @@ permalink: /kb/107/Q107119/
 
 ## Q107119: Local and Remote Control Point Names Can't be the Same
 
+{% raw %}
+
 	Article: Q107119
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.11
@@ -63,3 +65,5 @@ permalink: /kb/107/Q107119/
 	
 	=============================================================================
 	
+
+{% endraw %}

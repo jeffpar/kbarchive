@@ -6,6 +6,8 @@ permalink: /kb/114/Q114248/
 
 ## Q114248: How to Print Specific Number of Records in Detail Band
 
+{% raw %}
+
 	Article: Q114248
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -120,3 +122,5 @@ permalink: /kb/114/Q114248/
 	
 	=============================================================================
 	
+
+{% endraw %}

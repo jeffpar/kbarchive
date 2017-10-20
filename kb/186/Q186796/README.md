@@ -6,6 +6,8 @@ permalink: /kb/186/Q186796/
 
 ## Q186796: Troubleshooting &quot;Invalid Password&quot; Error Using SSL Certificates
 
+{% raw %}
+
 	Article: Q186796
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.0,2.0,3.0,4.0
@@ -131,3 +133,5 @@ permalink: /kb/186/Q186796/
 	
 	=============================================================================
 	
+
+{% endraw %}

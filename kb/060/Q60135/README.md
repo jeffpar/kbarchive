@@ -6,6 +6,8 @@ permalink: /kb/060/Q60135/
 
 ## Q60135: L2025 Creating Quick Library Using Functions in SIGNAL.H
 
+{% raw %}
+
 	Article: Q60135
 	Product(s): See article
 	Version(s): 7.00
@@ -66,3 +68,5 @@ permalink: /kb/060/Q60135/
 	The working EXE produces the following output:
 	
 	   SigFPE: -1
+
+{% endraw %}

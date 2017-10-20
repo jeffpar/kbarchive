@@ -6,6 +6,8 @@ permalink: /kb/112/Q112376/
 
 ## Q112376: RAS: Disable Modem Speaker Works on Outgoing Calls Only
 
+{% raw %}
+
 	Article: Q112376
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -104,3 +106,5 @@ permalink: /kb/112/Q112376/
 	
 	=============================================================================
 	
+
+{% endraw %}

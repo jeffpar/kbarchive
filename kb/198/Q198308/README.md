@@ -6,6 +6,8 @@ permalink: /kb/198/Q198308/
 
 ## Q198308: WD97: New Word Is Not Added to Custom Dictionary
 
+{% raw %}
+
 	Article: Q198308
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -149,3 +151,5 @@ permalink: /kb/198/Q198308/
 	
 	=============================================================================
 	
+
+{% endraw %}

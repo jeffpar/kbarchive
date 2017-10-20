@@ -6,6 +6,8 @@ permalink: /kb/156/Q156263/
 
 ## Q156263: Some Text Not Printed When Using HP DeskJet 855c
 
+{% raw %}
+
 	Article: Q156263
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/156/Q156263/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122537/
 
 ## Q122537: Arcade for Macintosh: How to Enable 32-bit Addressing
 
+{% raw %}
+
 	Article: Q122537
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -54,3 +56,5 @@ permalink: /kb/122/Q122537/
 	
 	=============================================================================
 	
+
+{% endraw %}

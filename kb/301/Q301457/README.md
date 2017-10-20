@@ -6,6 +6,8 @@ permalink: /kb/301/Q301457/
 
 ## Q301457: HOW TO: View or Change Authentication Methods in IIS
 
+{% raw %}
+
 	Article: Q301457
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -124,3 +126,5 @@ permalink: /kb/301/Q301457/
 	
 	=============================================================================
 	
+
+{% endraw %}

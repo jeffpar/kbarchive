@@ -6,6 +6,8 @@ permalink: /kb/193/Q193434/
 
 ## Q193434: Migration Changes NetWare Accounts Expiration Date
 
+{% raw %}
+
 	Article: Q193434
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -140,3 +142,5 @@ permalink: /kb/193/Q193434/
 	
 	=============================================================================
 	
+
+{% endraw %}

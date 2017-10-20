@@ -6,6 +6,8 @@ permalink: /kb/115/Q115436/
 
 ## Q115436: MSBACKUP Does Not Correctly Read MWBACKUP .SET Files
 
+{% raw %}
+
 	Article: Q115436
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/115/Q115436/
 	
 	=============================================================================
 	
+
+{% endraw %}

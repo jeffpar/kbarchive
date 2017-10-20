@@ -6,6 +6,8 @@ permalink: /kb/114/Q114839/
 
 ## Q114839: Net Start Fails When TCP/IP is the Only Protocol
 
+{% raw %}
+
 	Article: Q114839
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0a,3.1,3.11
@@ -94,3 +96,5 @@ permalink: /kb/114/Q114839/
 	
 	=============================================================================
 	
+
+{% endraw %}

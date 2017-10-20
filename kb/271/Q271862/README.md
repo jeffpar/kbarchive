@@ -6,6 +6,8 @@ permalink: /kb/271/Q271862/
 
 ## Q271862: Password Filter Excludes the Slash Character
 
+{% raw %}
+
 	Article: Q271862
 	Product(s): Microsoft Windows NT
 	Version(s): 2000 SP1,4.0 SP6,4.0 SP6a
@@ -96,3 +98,5 @@ permalink: /kb/271/Q271862/
 	
 	=============================================================================
 	
+
+{% endraw %}

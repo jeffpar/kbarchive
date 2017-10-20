@@ -6,6 +6,8 @@ permalink: /kb/094/Q94611/
 
 ## Q94611: Jumping to a Keyword in the Middle of a Help Topic
 
+{% raw %}
+
 	Article: Q94611
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.1; WINDOWS:3.5,3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/094/Q94611/
 	
 	=============================================================================
 	
+
+{% endraw %}

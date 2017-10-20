@@ -6,6 +6,8 @@ permalink: /kb/242/Q242592/
 
 ## Q242592: How to Configure Peer Networking In Windows NT 4.0
 
+{% raw %}
+
 	Article: Q242592
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -121,3 +123,5 @@ permalink: /kb/242/Q242592/
 	
 	=============================================================================
 	
+
+{% endraw %}

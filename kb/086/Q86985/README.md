@@ -6,6 +6,8 @@ permalink: /kb/086/Q86985/
 
 ## Q86985: X400: How Changing a Network Name Affects X.400 Gateway
 
+{% raw %}
+
 	Article: Q86985
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86985/
 	
 	=============================================================================
 	
+
+{% endraw %}

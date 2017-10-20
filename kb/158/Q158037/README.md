@@ -6,6 +6,8 @@ permalink: /kb/158/Q158037/
 
 ## Q158037: STL Sample for the stack::operator== Function
 
+{% raw %}
+
 	Article: Q158037
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -201,3 +203,5 @@ permalink: /kb/158/Q158037/
 	
 	=============================================================================
 	
+
+{% endraw %}

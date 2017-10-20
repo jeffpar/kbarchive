@@ -6,6 +6,8 @@ permalink: /kb/247/Q247322/
 
 ## Q247322: &quot;Error Reading Configuration File&quot; When Using the 3270 Applet
 
+{% raw %}
+
 	Article: Q247322
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -82,3 +84,5 @@ permalink: /kb/247/Q247322/
 	
 	=============================================================================
 	
+
+{% endraw %}

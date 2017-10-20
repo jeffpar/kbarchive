@@ -6,6 +6,8 @@ permalink: /kb/245/Q245058/
 
 ## Q245058: XADM: Information Store Service Specific Error 4294966264
 
+{% raw %}
+
 	Article: Q245058
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -114,3 +116,5 @@ permalink: /kb/245/Q245058/
 	
 	=============================================================================
 	
+
+{% endraw %}

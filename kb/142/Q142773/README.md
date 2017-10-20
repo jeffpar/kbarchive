@@ -6,6 +6,8 @@ permalink: /kb/142/Q142773/
 
 ## Q142773: Cannot Run NDS Tools Without Running Nwadmin.exe
 
+{% raw %}
+
 	Article: Q142773
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -163,3 +165,5 @@ permalink: /kb/142/Q142773/
 	
 	=============================================================================
 	
+
+{% endraw %}

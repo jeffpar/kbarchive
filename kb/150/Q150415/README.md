@@ -6,6 +6,8 @@ permalink: /kb/150/Q150415/
 
 ## Q150415: FPNW Printing Causes File Cache to Grow
 
+{% raw %}
+
 	Article: Q150415
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150415/
 	
 	=============================================================================
 	
+
+{% endraw %}

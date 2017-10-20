@@ -6,6 +6,8 @@ permalink: /kb/140/Q140053/
 
 ## Q140053: QuickViewer Does Not Pass Through ALT+Print Screen
 
+{% raw %}
+
 	Article: Q140053
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -43,3 +45,5 @@ permalink: /kb/140/Q140053/
 	
 	=============================================================================
 	
+
+{% endraw %}

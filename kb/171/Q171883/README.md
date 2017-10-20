@@ -6,6 +6,8 @@ permalink: /kb/171/Q171883/
 
 ## Q171883: Runtime Error When Installing Microsoft Cluster Server
 
+{% raw %}
+
 	Article: Q171883
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:1.0
@@ -56,3 +58,5 @@ permalink: /kb/171/Q171883/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77246/
 
 ## Q77246: System Clock Speeds Up When Using Task Swapper
 
+{% raw %}
+
 	Article: Q77246
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -83,3 +85,5 @@ permalink: /kb/077/Q77246/
 	
 	=============================================================================
 	
+
+{% endraw %}

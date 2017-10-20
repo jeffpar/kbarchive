@@ -6,6 +6,8 @@ permalink: /kb/221/Q221756/
 
 ## Q221756: XADM: Support Boundaries for Snap Backup and Restoration
 
+{% raw %}
+
 	Article: Q221756
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -37,3 +39,5 @@ permalink: /kb/221/Q221756/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195238/
 
 ## Q195238: PRB: MFC Control Does Not Detect Keystrokes When SSTabs Exist
 
+{% raw %}
+
 	Article: Q195238
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -207,3 +209,5 @@ permalink: /kb/195/Q195238/
 	
 	=============================================================================
 	
+
+{% endraw %}

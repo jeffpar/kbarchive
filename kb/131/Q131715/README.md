@@ -6,6 +6,8 @@ permalink: /kb/131/Q131715/
 
 ## Q131715: How to Set Up And Synchronize with Domain Time Source Servers
 
+{% raw %}
+
 	Article: Q131715
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/131/Q131715/
 	
 	=============================================================================
 	
+
+{% endraw %}

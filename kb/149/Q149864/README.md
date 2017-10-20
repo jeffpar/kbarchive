@@ -6,6 +6,8 @@ permalink: /kb/149/Q149864/
 
 ## Q149864: XADM: Compression of Replication Traffic
 
+{% raw %}
+
 	Article: Q149864
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/149/Q149864/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140417/
 
 ## Q140417: Controlling Common Program Groups Seen In User Profiles
 
+{% raw %}
+
 	Article: Q140417
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -93,3 +95,5 @@ permalink: /kb/140/Q140417/
 	
 	=============================================================================
 	
+
+{% endraw %}

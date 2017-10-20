@@ -6,6 +6,8 @@ permalink: /kb/256/Q256322/
 
 ## Q256322: Error Configuring IIS to Use Samba Network Share As Its Root
 
+{% raw %}
+
 	Article: Q256322
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -103,3 +105,5 @@ permalink: /kb/256/Q256322/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39578/
 
 ## Q39578: CHR&#36;(0) PRINTs As Space to Screen; LPRINTs Nothing to Printer
 
+{% raw %}
+
 	Article: Q39578
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -69,3 +71,5 @@ permalink: /kb/039/Q39578/
 	PRINT aVariable.Field1; "xxxx"
 	PRINT "printing aVariable.Field1 with PRINT USING '\     \xxxx'"
 	PRINT USING "\     \xxxx"; aVariable.Field1
+
+{% endraw %}

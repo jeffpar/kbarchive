@@ -6,6 +6,8 @@ permalink: /kb/145/Q145599/
 
 ## Q145599: Network Software Installation Problems With Xircom Netaccess
 
+{% raw %}
+
 	Article: Q145599
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -71,3 +73,5 @@ permalink: /kb/145/Q145599/
 	
 	=============================================================================
 	
+
+{% endraw %}

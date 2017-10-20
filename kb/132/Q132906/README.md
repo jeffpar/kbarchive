@@ -6,6 +6,8 @@ permalink: /kb/132/Q132906/
 
 ## Q132906: Cannot Configure Disabled Devices in Device Manager
 
+{% raw %}
+
 	Article: Q132906
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/132/Q132906/
 	
 	=============================================================================
 	
+
+{% endraw %}

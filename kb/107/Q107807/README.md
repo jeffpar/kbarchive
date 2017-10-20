@@ -6,6 +6,8 @@ permalink: /kb/107/Q107807/
 
 ## Q107807: How to Center a Screen in FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q107807
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -41,3 +43,5 @@ permalink: /kb/107/Q107807/
 	
 	=============================================================================
 	
+
+{% endraw %}

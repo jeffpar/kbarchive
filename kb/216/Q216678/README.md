@@ -6,6 +6,8 @@ permalink: /kb/216/Q216678/
 
 ## Q216678: Dfs Drive Connections Not Displayed in Windows NT Explorer
 
+{% raw %}
+
 	Article: Q216678
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/216/Q216678/
 	
 	=============================================================================
 	
+
+{% endraw %}

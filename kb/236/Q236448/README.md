@@ -6,6 +6,8 @@ permalink: /kb/236/Q236448/
 
 ## Q236448: Asheron's Call: Magical Projectiles Do Not Appear
 
+{% raw %}
+
 	Article: Q236448
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/236/Q236448/
 	
 	=============================================================================
 	
+
+{% endraw %}

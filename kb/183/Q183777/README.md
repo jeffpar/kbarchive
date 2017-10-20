@@ -6,6 +6,8 @@ permalink: /kb/183/Q183777/
 
 ## Q183777: FP: Server Extensions Do Not Support Nested Virtual Roots
 
+{% raw %}
+
 	Article: Q183777
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1,97
@@ -71,3 +73,5 @@ permalink: /kb/183/Q183777/
 	
 	=============================================================================
 	
+
+{% endraw %}

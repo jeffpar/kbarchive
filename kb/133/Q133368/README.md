@@ -6,6 +6,8 @@ permalink: /kb/133/Q133368/
 
 ## Q133368: Julia Child: Extra Characters Print with Recipe
 
+{% raw %}
+
 	Article: Q133368
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/133/Q133368/
 	
 	=============================================================================
 	
+
+{% endraw %}

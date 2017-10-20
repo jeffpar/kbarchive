@@ -6,6 +6,8 @@ permalink: /kb/167/Q167798/
 
 ## Q167798: FIX: Can Not Attach Process to Debugger from NT Task Manager
 
+{% raw %}
+
 	Article: Q167798
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -117,3 +119,5 @@ permalink: /kb/167/Q167798/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146614/
 
 ## Q146614: Pregnancy: How the Find By Symptom Feature Sorts a List
 
+{% raw %}
+
 	Article: Q146614
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/146/Q146614/
 	
 	=============================================================================
 	
+
+{% endraw %}

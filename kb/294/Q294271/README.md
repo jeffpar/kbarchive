@@ -6,6 +6,8 @@ permalink: /kb/294/Q294271/
 
 ## Q294271: INFO: ASP Error Codes
 
+{% raw %}
+
 	Article: Q294271
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -347,3 +349,5 @@ permalink: /kb/294/Q294271/
 	
 	=============================================================================
 	
+
+{% endraw %}

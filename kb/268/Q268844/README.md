@@ -6,6 +6,8 @@ permalink: /kb/268/Q268844/
 
 ## Q268844: How to Use LINKCFG to Remove SNA Server Link Services
 
+{% raw %}
+
 	Article: Q268844
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -87,3 +89,5 @@ permalink: /kb/268/Q268844/
 	
 	=============================================================================
 	
+
+{% endraw %}

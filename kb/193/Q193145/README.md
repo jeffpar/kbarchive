@@ -6,6 +6,8 @@ permalink: /kb/193/Q193145/
 
 ## Q193145: WD97: How to Have More Than One Index in a Document
 
+{% raw %}
+
 	Article: Q193145
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -202,3 +204,5 @@ permalink: /kb/193/Q193145/
 	
 	=============================================================================
 	
+
+{% endraw %}

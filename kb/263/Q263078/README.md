@@ -6,6 +6,8 @@ permalink: /kb/263/Q263078/
 
 ## Q263078: DB5_setSingleValuedAttribute() Returns &quot;Invalid Encoding (0)&quot;
 
+{% raw %}
+
 	Article: Q263078
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -65,3 +67,5 @@ permalink: /kb/263/Q263078/
 	
 	=============================================================================
 	
+
+{% endraw %}

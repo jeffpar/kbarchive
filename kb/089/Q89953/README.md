@@ -6,6 +6,8 @@ permalink: /kb/089/Q89953/
 
 ## Q89953: WD97: Fields Updated When Document Repaginated
 
+{% raw %}
+
 	Article: Q89953
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/089/Q89953/
 	
 	=============================================================================
 	
+
+{% endraw %}

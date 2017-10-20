@@ -6,6 +6,8 @@ permalink: /kb/166/Q166334/
 
 ## Q166334: OpenGL Access Violation on Windows NT Version 4.0
 
+{% raw %}
+
 	Article: Q166334
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/166/Q166334/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175200/
 
 ## Q175200: Cannot Change the Properties of a Document in the Print Queue
 
+{% raw %}
+
 	Article: Q175200
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/175/Q175200/
 	
 	=============================================================================
 	
+
+{% endraw %}

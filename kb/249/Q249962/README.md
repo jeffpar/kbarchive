@@ -6,6 +6,8 @@ permalink: /kb/249/Q249962/
 
 ## Q249962: INFO: Differences in Padding UDTs Between VB 5.0 and VB 6.0
 
+{% raw %}
+
 	Article: Q249962
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -143,3 +145,5 @@ permalink: /kb/249/Q249962/
 	
 	=============================================================================
 	
+
+{% endraw %}

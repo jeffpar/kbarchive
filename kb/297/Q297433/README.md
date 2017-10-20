@@ -6,6 +6,8 @@ permalink: /kb/297/Q297433/
 
 ## Q297433: ENC2001: &quot;ENC2001 Caused an Invalid Page Fault&quot; Error Message
 
+{% raw %}
+
 	Article: Q297433
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/297/Q297433/
 	
 	=============================================================================
 	
+
+{% endraw %}

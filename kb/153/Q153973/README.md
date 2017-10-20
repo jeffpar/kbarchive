@@ -6,6 +6,8 @@ permalink: /kb/153/Q153973/
 
 ## Q153973: Recovering NTFS Boot Sector on NTFS Partitions
 
+{% raw %}
+
 	Article: Q153973
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0
@@ -306,3 +308,5 @@ permalink: /kb/153/Q153973/
 	
 	=============================================================================
 	
+
+{% endraw %}

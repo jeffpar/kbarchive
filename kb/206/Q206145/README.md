@@ -6,6 +6,8 @@ permalink: /kb/206/Q206145/
 
 ## Q206145: Random Characters Appear in Network Adapters List
 
+{% raw %}
+
 	Article: Q206145
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -102,3 +104,5 @@ permalink: /kb/206/Q206145/
 	
 	=============================================================================
 	
+
+{% endraw %}

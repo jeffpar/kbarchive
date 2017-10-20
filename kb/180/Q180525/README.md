@@ -6,6 +6,8 @@ permalink: /kb/180/Q180525/
 
 ## Q180525: PRB: DCOMCNFG Reports Multiple Copies of DCOM Server
 
+{% raw %}
+
 	Article: Q180525
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -230,3 +232,5 @@ permalink: /kb/180/Q180525/
 	
 	=============================================================================
 	
+
+{% endraw %}

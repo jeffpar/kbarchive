@@ -6,6 +6,8 @@ permalink: /kb/189/Q189308/
 
 ## Q189308: Manager Fails to Detect Installed Link Service
 
+{% raw %}
+
 	Article: Q189308
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -59,3 +61,5 @@ permalink: /kb/189/Q189308/
 	
 	=============================================================================
 	
+
+{% endraw %}

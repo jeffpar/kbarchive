@@ -6,6 +6,8 @@ permalink: /kb/168/Q168161/
 
 ## Q168161: FIX: Distributed Transaction Fails on Subsequent Runs
 
+{% raw %}
+
 	Article: Q168161
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -59,3 +61,5 @@ permalink: /kb/168/Q168161/
 	
 	=============================================================================
 	
+
+{% endraw %}

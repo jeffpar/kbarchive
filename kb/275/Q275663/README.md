@@ -6,6 +6,8 @@ permalink: /kb/275/Q275663/
 
 ## Q275663: CFS2: Sounds Are Not Played in Training Missions
 
+{% raw %}
+
 	Article: Q275663
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/275/Q275663/
 	
 	=============================================================================
 	
+
+{% endraw %}

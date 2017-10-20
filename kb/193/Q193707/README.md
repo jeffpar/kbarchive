@@ -6,6 +6,8 @@ permalink: /kb/193/Q193707/
 
 ## Q193707: XADM: Error Message: Could not open the file named Mdbmsg.dll
 
+{% raw %}
+
 	Article: Q193707
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -49,3 +51,5 @@ permalink: /kb/193/Q193707/
 	
 	=============================================================================
 	
+
+{% endraw %}

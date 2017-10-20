@@ -6,6 +6,8 @@ permalink: /kb/194/Q194367/
 
 ## Q194367: Assigning LUA LUs to a 3270 Display Pool Results in a Drwatson
 
+{% raw %}
+
 	Article: Q194367
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP1
@@ -50,3 +52,5 @@ permalink: /kb/194/Q194367/
 	
 	=============================================================================
 	
+
+{% endraw %}

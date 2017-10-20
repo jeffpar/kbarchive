@@ -6,6 +6,8 @@ permalink: /kb/168/Q168618/
 
 ## Q168618: WD97: Saving As Word 6.0/95 Format Saves Incorrect File Size
 
+{% raw %}
+
 	Article: Q168618
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/168/Q168618/
 	
 	=============================================================================
 	
+
+{% endraw %}

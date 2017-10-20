@@ -6,6 +6,8 @@ permalink: /kb/321/Q321100/
 
 ## Q321100: COMTI Stops Responding on Second Call with Event 102
 
+{% raw %}
+
 	Article: Q321100
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -146,3 +148,5 @@ permalink: /kb/321/Q321100/
 	
 	=============================================================================
 	
+
+{% endraw %}

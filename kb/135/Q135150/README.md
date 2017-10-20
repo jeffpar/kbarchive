@@ -6,6 +6,8 @@ permalink: /kb/135/Q135150/
 
 ## Q135150: GP Fault in Beginning Reading When Clicking Jack
 
+{% raw %}
+
 	Article: Q135150
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/135/Q135150/
 	
 	=============================================================================
 	
+
+{% endraw %}

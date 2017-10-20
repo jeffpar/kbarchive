@@ -6,6 +6,8 @@ permalink: /kb/177/Q177621/
 
 ## Q177621: Dr. Watson in Mprouter.exe When Using a Script
 
+{% raw %}
+
 	Article: Q177621
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/177/Q177621/
 	
 	=============================================================================
 	
+
+{% endraw %}

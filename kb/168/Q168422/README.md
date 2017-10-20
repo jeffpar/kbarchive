@@ -6,6 +6,8 @@ permalink: /kb/168/Q168422/
 
 ## Q168422: WD97: Batch Conversion Wizard Cannot Convert Templates
 
+{% raw %}
+
 	Article: Q168422
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/168/Q168422/
 	
 	=============================================================================
 	
+
+{% endraw %}

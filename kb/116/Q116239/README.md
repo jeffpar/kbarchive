@@ -6,6 +6,8 @@ permalink: /kb/116/Q116239/
 
 ## Q116239: BUG: Function that Inherits Through Dominance Fails
 
+{% raw %}
+
 	Article: Q116239
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
@@ -153,3 +155,5 @@ permalink: /kb/116/Q116239/
 	
 	=============================================================================
 	
+
+{% endraw %}

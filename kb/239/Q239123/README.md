@@ -6,6 +6,8 @@ permalink: /kb/239/Q239123/
 
 ## Q239123: Flight Simulator 5.1: How to Create and Use a Boot Disk
 
+{% raw %}
+
 	Article: Q239123
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -81,3 +83,5 @@ permalink: /kb/239/Q239123/
 	
 	=============================================================================
 	
+
+{% endraw %}

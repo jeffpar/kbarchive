@@ -6,6 +6,8 @@ permalink: /kb/196/Q196454/
 
 ## Q196454: FIX: Application Error in Windows NT With Access 97
 
+{% raw %}
+
 	Article: Q196454
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/196/Q196454/
 	
 	=============================================================================
 	
+
+{% endraw %}

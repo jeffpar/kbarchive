@@ -6,6 +6,8 @@ permalink: /kb/166/Q166998/
 
 ## Q166998: Services for Macintosh Modifies Header Information on Print Jobs
 
+{% raw %}
+
 	Article: Q166998
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/166/Q166998/
 	
 	=============================================================================
 	
+
+{% endraw %}

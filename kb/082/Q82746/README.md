@@ -6,6 +6,8 @@ permalink: /kb/082/Q82746/
 
 ## Q82746: General Information About Print Manager and Windows 3.1
 
+{% raw %}
+
 	Article: Q82746
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -170,3 +172,5 @@ permalink: /kb/082/Q82746/
 	
 	=============================================================================
 	
+
+{% endraw %}

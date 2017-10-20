@@ -6,6 +6,8 @@ permalink: /kb/190/Q190932/
 
 ## Q190932: SNMP Service Ignores SNMP Trap PDU Greater Than 4,096 Bytes
 
+{% raw %}
+
 	Article: Q190932
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/190/Q190932/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41534/
 
 ## Q41534: ON KEY (n) GOSUB Cannot Trap for SCROLL LOCK Status; Ignored
 
+{% raw %}
+
 	Article: Q41534
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -30,3 +32,5 @@ permalink: /kb/041/Q41534/
 	3. Microsoft BASIC PDS Version 7.00 for MS-DOS and MS OS/2.
 	
 	4. Microsoft GW-BASIC Interpreter Versions 3.20, 3.22, and 3.23
+
+{% endraw %}

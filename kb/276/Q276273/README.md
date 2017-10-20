@@ -6,6 +6,8 @@ permalink: /kb/276/Q276273/
 
 ## Q276273: Remote Administration Is Not Supported in Multiple Master Domain
 
+{% raw %}
+
 	Article: Q276273
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -88,3 +90,5 @@ permalink: /kb/276/Q276273/
 	
 	=============================================================================
 	
+
+{% endraw %}

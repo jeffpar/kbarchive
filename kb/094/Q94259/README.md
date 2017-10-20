@@ -6,6 +6,8 @@ permalink: /kb/094/Q94259/
 
 ## Q94259: PC DB: Err Msg: Could Not Find Mail System Database
 
+{% raw %}
+
 	Article: Q94259
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -248,3 +250,5 @@ permalink: /kb/094/Q94259/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188897/
 
 ## Q188897: HOWTO: Setting the System Date and Time Programmatically
 
+{% raw %}
+
 	Article: Q188897
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -151,3 +153,5 @@ permalink: /kb/188/Q188897/
 	
 	=============================================================================
 	
+
+{% endraw %}

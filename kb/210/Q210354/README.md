@@ -6,6 +6,8 @@ permalink: /kb/210/Q210354/
 
 ## Q210354: SMS: When Changing Package Access Accounts Must Update Package
 
+{% raw %}
+
 	Article: Q210354
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -47,3 +49,5 @@ permalink: /kb/210/Q210354/
 	
 	=============================================================================
 	
+
+{% endraw %}

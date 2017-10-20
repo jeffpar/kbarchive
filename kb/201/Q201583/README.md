@@ -6,6 +6,8 @@ permalink: /kb/201/Q201583/
 
 ## Q201583: BUG: Toolbar Does Not Resize to Fit the Caption of a Button
 
+{% raw %}
+
 	Article: Q201583
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/201/Q201583/
 	
 	=============================================================================
 	
+
+{% endraw %}

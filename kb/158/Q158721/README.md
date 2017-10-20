@@ -6,6 +6,8 @@ permalink: /kb/158/Q158721/
 
 ## Q158721: How to Configure and Administer Personal Web Server
 
+{% raw %}
+
 	Article: Q158721
 	Product(s): Internet Information Server
 	Version(s): 1.0,1.0a
@@ -497,3 +499,5 @@ permalink: /kb/158/Q158721/
 	
 	=============================================================================
 	
+
+{% endraw %}

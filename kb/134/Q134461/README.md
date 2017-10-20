@@ -6,6 +6,8 @@ permalink: /kb/134/Q134461/
 
 ## Q134461: PPT7: Embedded OLE Object Won't Update in Branched Presentation
 
+{% raw %}
+
 	Article: Q134461
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134461/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181420/
 
 ## Q181420: How to Configure Exchange or Other SMTP with Proxy Server
 
+{% raw %}
+
 	Article: Q181420
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.0,4.0,5.0,5.5
@@ -316,3 +318,5 @@ permalink: /kb/181/Q181420/
 	
 	=============================================================================
 	
+
+{% endraw %}

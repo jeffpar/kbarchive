@@ -6,6 +6,8 @@ permalink: /kb/087/Q87365/
 
 ## Q87365: Use Generic/Text Only Driver with HP ThinkJet 2225A
 
+{% raw %}
+
 	Article: Q87365
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/087/Q87365/
 	
 	=============================================================================
 	
+
+{% endraw %}

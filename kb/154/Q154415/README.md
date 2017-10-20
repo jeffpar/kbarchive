@@ -6,6 +6,8 @@ permalink: /kb/154/Q154415/
 
 ## Q154415: Cannot Open Other's Calendar File with SP4 or Later
 
+{% raw %}
+
 	Article: Q154415
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP4,4.0
@@ -53,3 +55,5 @@ permalink: /kb/154/Q154415/
 	
 	=============================================================================
 	
+
+{% endraw %}

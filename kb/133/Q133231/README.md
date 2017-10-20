@@ -6,6 +6,8 @@ permalink: /kb/133/Q133231/
 
 ## Q133231: Dogs: Interactivity, Did You Know? Screen Smeared
 
+{% raw %}
+
 	Article: Q133231
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/133/Q133231/
 	
 	=============================================================================
 	
+
+{% endraw %}

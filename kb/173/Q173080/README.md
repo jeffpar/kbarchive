@@ -6,6 +6,8 @@ permalink: /kb/173/Q173080/
 
 ## Q173080: Connection Settings Command Is Unavailable on MSN Desktop Icon
 
+{% raw %}
+
 	Article: Q173080
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -66,3 +68,5 @@ permalink: /kb/173/Q173080/
 	
 	=============================================================================
 	
+
+{% endraw %}

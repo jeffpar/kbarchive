@@ -6,6 +6,8 @@ permalink: /kb/033/Q33036/
 
 ## Q33036: Hanging Problems When QB.EXE Editor Loads Fast-Load Modules
 
+{% raw %}
+
 	Article: Q33036
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -30,3 +32,5 @@ permalink: /kb/033/Q33036/
 	Note: This problem does not occur in QuickBASIC Versions 2.00, 2.10,
 	and 3.00; these versions do not support "Fast Load and Save" format or
 	the loading of multiple separate modules.
+
+{% endraw %}

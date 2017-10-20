@@ -6,6 +6,8 @@ permalink: /kb/095/Q95575/
 
 ## Q95575: How Windows Handles Bad Permanent Swap Files
 
+{% raw %}
+
 	Article: Q95575
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -94,3 +96,5 @@ permalink: /kb/095/Q95575/
 	
 	=============================================================================
 	
+
+{% endraw %}

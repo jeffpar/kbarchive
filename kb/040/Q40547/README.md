@@ -6,6 +6,8 @@ permalink: /kb/040/Q40547/
 
 ## Q40547: BC.EXE Will Not Compile Files Named USER.&#42;
 
+{% raw %}
+
 	Article: Q40547
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -31,3 +33,5 @@ permalink: /kb/040/Q40547/
 	4.50, and Microsoft BASIC Compiler Versions 6.00 and 6.00b for MS-DOS
 	and MS OS/2, and Microsoft BASIC PDS Version 7.00 for MS-DOS and MS
 	OS/2.
+
+{% endraw %}

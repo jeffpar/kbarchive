@@ -6,6 +6,8 @@ permalink: /kb/139/Q139718/
 
 ## Q139718: Resizing Causes Window Contents to Flicker
 
+{% raw %}
+
 	Article: Q139718
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139718/
 	
 	=============================================================================
 	
+
+{% endraw %}

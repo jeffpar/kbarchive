@@ -6,6 +6,8 @@ permalink: /kb/182/Q182799/
 
 ## Q182799: SAMPLE: MMCTRL.EXE Demonstrates Using Multiple Sound Cards
 
+{% raw %}
+
 	Article: Q182799
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -161,3 +163,5 @@ permalink: /kb/182/Q182799/
 	
 	=============================================================================
 	
+
+{% endraw %}

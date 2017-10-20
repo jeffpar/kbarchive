@@ -6,6 +6,8 @@ permalink: /kb/041/Q41525/
 
 ## Q41525: BC Command-Line Options in QuickBASIC Version 4.50
 
+{% raw %}
+
 	Article: Q41525
 	Product(s): See article
 	Version(s): 4.50
@@ -33,3 +35,5 @@ permalink: /kb/041/Q41525/
 	for the following keywords:
 	
 	   TERSE and BC and OPTION
+
+{% endraw %}

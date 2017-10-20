@@ -6,6 +6,8 @@ permalink: /kb/267/Q267995/
 
 ## Q267995: XCLN: Outlook 8.03 Cannot Connect to Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q267995
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/267/Q267995/
 	
 	=============================================================================
 	
+
+{% endraw %}

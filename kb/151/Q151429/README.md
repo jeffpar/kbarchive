@@ -6,6 +6,8 @@ permalink: /kb/151/Q151429/
 
 ## Q151429: Err Msg: Can't Run 16-Bit Windows Program
 
+{% raw %}
+
 	Article: Q151429
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -85,3 +87,5 @@ permalink: /kb/151/Q151429/
 	
 	=============================================================================
 	
+
+{% endraw %}

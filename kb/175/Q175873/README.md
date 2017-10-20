@@ -6,6 +6,8 @@ permalink: /kb/175/Q175873/
 
 ## Q175873: FS98/2000: Using Aircraft and Adventures from Earlier Versions
 
+{% raw %}
+
 	Article: Q175873
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -200,3 +202,5 @@ permalink: /kb/175/Q175873/
 	
 	=============================================================================
 	
+
+{% endraw %}

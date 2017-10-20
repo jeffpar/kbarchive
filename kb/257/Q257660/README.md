@@ -6,6 +6,8 @@ permalink: /kb/257/Q257660/
 
 ## Q257660: FIX: Setting Printer Object Reference to Nothing Causes IPF
 
+{% raw %}
+
 	Article: Q257660
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -91,3 +93,5 @@ permalink: /kb/257/Q257660/
 	
 	=============================================================================
 	
+
+{% endraw %}

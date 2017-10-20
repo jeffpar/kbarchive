@@ -6,6 +6,8 @@ permalink: /kb/085/Q85993/
 
 ## Q85993: PPT: Excel Charts Embed in Black and White
 
+{% raw %}
+
 	Article: Q85993
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -167,3 +169,5 @@ permalink: /kb/085/Q85993/
 	
 	=============================================================================
 	
+
+{% endraw %}

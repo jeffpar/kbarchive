@@ -6,6 +6,8 @@ permalink: /kb/123/Q123339/
 
 ## Q123339: Stability Problems on NEC Duo MIPS Computers
 
+{% raw %}
+
 	Article: Q123339
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -51,3 +53,5 @@ permalink: /kb/123/Q123339/
 	
 	=============================================================================
 	
+
+{% endraw %}

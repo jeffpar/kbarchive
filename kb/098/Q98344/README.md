@@ -6,6 +6,8 @@ permalink: /kb/098/Q98344/
 
 ## Q98344: DOCERR: Correction to MM Viewer DW_SIZE Message Parameters
 
+{% raw %}
+
 	Article: Q98344
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0
@@ -37,3 +39,5 @@ permalink: /kb/098/Q98344/
 	
 	=============================================================================
 	
+
+{% endraw %}

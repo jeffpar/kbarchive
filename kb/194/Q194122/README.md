@@ -6,6 +6,8 @@ permalink: /kb/194/Q194122/
 
 ## Q194122: XADM: MSW: Public Folder Contents Not Available
 
+{% raw %}
+
 	Article: Q194122
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -47,3 +49,5 @@ permalink: /kb/194/Q194122/
 	
 	=============================================================================
 	
+
+{% endraw %}

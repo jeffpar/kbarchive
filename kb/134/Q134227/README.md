@@ -6,6 +6,8 @@ permalink: /kb/134/Q134227/
 
 ## Q134227: PC NTMMTA: External Service Starts Inconsistently
 
+{% raw %}
+
 	Article: Q134227
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -64,3 +66,5 @@ permalink: /kb/134/Q134227/
 	
 	=============================================================================
 	
+
+{% endraw %}

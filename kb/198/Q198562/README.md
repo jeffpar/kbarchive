@@ -6,6 +6,8 @@ permalink: /kb/198/Q198562/
 
 ## Q198562: XCLN: Cannot Find Users on Referral Server Using Outlook Express
 
+{% raw %}
+
 	Article: Q198562
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -49,3 +51,5 @@ permalink: /kb/198/Q198562/
 	
 	=============================================================================
 	
+
+{% endraw %}

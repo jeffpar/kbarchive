@@ -6,6 +6,8 @@ permalink: /kb/143/Q143147/
 
 ## Q143147: WD97: Word Does Not Receive Subsequent Updates from DDE Server
 
+{% raw %}
+
 	Article: Q143147
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/143/Q143147/
 	
 	=============================================================================
 	
+
+{% endraw %}

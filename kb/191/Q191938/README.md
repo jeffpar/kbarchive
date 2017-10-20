@@ -6,6 +6,8 @@ permalink: /kb/191/Q191938/
 
 ## Q191938: WD97: &quot;User Options&quot; File Location Path Has No Function
 
+{% raw %}
+
 	Article: Q191938
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/191/Q191938/
 	
 	=============================================================================
 	
+
+{% endraw %}

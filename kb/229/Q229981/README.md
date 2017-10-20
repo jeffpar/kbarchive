@@ -6,6 +6,8 @@ permalink: /kb/229/Q229981/
 
 ## Q229981: Err Msg: The Windows 95 Year 2000 Update Could Not Determine...
 
+{% raw %}
+
 	Article: Q229981
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -61,3 +63,5 @@ permalink: /kb/229/Q229981/
 	
 	=============================================================================
 	
+
+{% endraw %}

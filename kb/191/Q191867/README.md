@@ -6,6 +6,8 @@ permalink: /kb/191/Q191867/
 
 ## Q191867: HOWTO: Obtain Microsoft SQL Server Version Information
 
+{% raw %}
+
 	Article: Q191867
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -140,3 +142,5 @@ permalink: /kb/191/Q191867/
 	
 	=============================================================================
 	
+
+{% endraw %}

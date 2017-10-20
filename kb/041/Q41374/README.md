@@ -6,6 +6,8 @@ permalink: /kb/041/Q41374/
 
 ## Q41374: Assignment of Void Pointer Does Not Give Warning Message
 
+{% raw %}
+
 	Article: Q41374
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,2.1,6.0,6.0a,6.0ax
@@ -85,3 +87,5 @@ permalink: /kb/041/Q41374/
 	
 	=============================================================================
 	
+
+{% endraw %}

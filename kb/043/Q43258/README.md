@@ -6,6 +6,8 @@ permalink: /kb/043/Q43258/
 
 ## Q43258: strspn() Function Not Directly Available in On-line Help
 
+{% raw %}
+
 	Article: Q43258
 	Product(s): See article
 	Version(s): 2.00
@@ -21,3 +23,5 @@ permalink: /kb/043/Q43258/
 	Microsoft has confirmed this to be a problem in Version 2.00. We are
 	researching the problem and will post new information as it becomes
 	available.
+
+{% endraw %}

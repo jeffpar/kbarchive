@@ -6,6 +6,8 @@ permalink: /kb/106/Q106517/
 
 ## Q106517: Setup Hangs with NEC Ultralight Versalinear Display
 
+{% raw %}
+
 	Article: Q106517
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/106/Q106517/
 	
 	=============================================================================
 	
+
+{% endraw %}

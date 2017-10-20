@@ -6,6 +6,8 @@ permalink: /kb/129/Q129853/
 
 ## Q129853: PRB: Exceeded Limits on Array Sizes of User Defined Types
 
+{% raw %}
+
 	Article: Q129853
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/129/Q129853/
 	
 	=============================================================================
 	
+
+{% endraw %}

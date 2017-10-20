@@ -6,6 +6,8 @@ permalink: /kb/127/Q127822/
 
 ## Q127822: EISA Configuration Utility for Compaq Prosignia
 
+{% raw %}
+
 	Article: Q127822
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/127/Q127822/
 	
 	=============================================================================
 	
+
+{% endraw %}

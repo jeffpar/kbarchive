@@ -6,6 +6,8 @@ permalink: /kb/141/Q141292/
 
 ## Q141292: How to Set Up a Fax Server or Fax Client with Microsoft Fax
 
+{% raw %}
+
 	Article: Q141292
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -116,3 +118,5 @@ permalink: /kb/141/Q141292/
 	
 	=============================================================================
 	
+
+{% endraw %}

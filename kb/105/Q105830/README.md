@@ -6,6 +6,8 @@ permalink: /kb/105/Q105830/
 
 ## Q105830: GP Fault in MS Mail &quot;Work Offline&quot; Dialog When Exiting WFWG
 
+{% raw %}
+
 	Article: Q105830
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/105/Q105830/
 	
 	=============================================================================
 	
+
+{% endraw %}

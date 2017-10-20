@@ -6,6 +6,8 @@ permalink: /kb/109/Q109054/
 
 ## Q109054: Games Group Installed Even If Games Are Not Selected
 
+{% raw %}
+
 	Article: Q109054
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -43,3 +45,5 @@ permalink: /kb/109/Q109054/
 	
 	=============================================================================
 	
+
+{% endraw %}

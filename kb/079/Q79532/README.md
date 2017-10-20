@@ -6,6 +6,8 @@ permalink: /kb/079/Q79532/
 
 ## Q79532: Running Borland C++ 2.0 in Protected Mode Within Windows
 
+{% raw %}
+
 	Article: Q79532
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/079/Q79532/
 	
 	=============================================================================
 	
+
+{% endraw %}

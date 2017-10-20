@@ -6,6 +6,8 @@ permalink: /kb/126/Q126786/
 
 ## Q126786: HOWTO: Remove or Change a Label
 
+{% raw %}
+
 	Article: Q126786
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -76,3 +78,5 @@ permalink: /kb/126/Q126786/
 	
 	=============================================================================
 	
+
+{% endraw %}

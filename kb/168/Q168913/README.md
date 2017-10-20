@@ -6,6 +6,8 @@ permalink: /kb/168/Q168913/
 
 ## Q168913: WD97: Cannot Insert a Caption Inside a Table Cell
 
+{% raw %}
+
 	Article: Q168913
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/168/Q168913/
 	
 	=============================================================================
 	
+
+{% endraw %}

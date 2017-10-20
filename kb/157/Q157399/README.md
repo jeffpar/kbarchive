@@ -6,6 +6,8 @@ permalink: /kb/157/Q157399/
 
 ## Q157399: Inconsistent Descriptions When Using Event Viewer
 
+{% raw %}
+
 	Article: Q157399
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -62,3 +64,5 @@ permalink: /kb/157/Q157399/
 	
 	=============================================================================
 	
+
+{% endraw %}

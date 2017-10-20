@@ -6,6 +6,8 @@ permalink: /kb/182/Q182954/
 
 ## Q182954: PRB: rdConcurRowver Availability Incorrect in Books Online
 
+{% raw %}
+
 	Article: Q182954
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/182/Q182954/
 	
 	=============================================================================
 	
+
+{% endraw %}

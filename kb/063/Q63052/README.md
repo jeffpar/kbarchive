@@ -6,6 +6,8 @@ permalink: /kb/063/Q63052/
 
 ## Q63052: FIX: PWB 1.0 Extensions Will Only Return True Under MS-DOS
 
+{% raw %}
+
 	Article: Q63052
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0; OS/2:1.0
@@ -110,3 +112,5 @@ permalink: /kb/063/Q63052/
 	
 	=============================================================================
 	
+
+{% endraw %}

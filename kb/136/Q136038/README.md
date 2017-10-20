@@ -6,6 +6,8 @@ permalink: /kb/136/Q136038/
 
 ## Q136038: Diskeeper 1.0 Compatibility In Windows NT 3.51
 
+{% raw %}
+
 	Article: Q136038
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -68,3 +70,5 @@ permalink: /kb/136/Q136038/
 	
 	=============================================================================
 	
+
+{% endraw %}

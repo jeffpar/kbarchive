@@ -6,6 +6,8 @@ permalink: /kb/128/Q128985/
 
 ## Q128985: INFO: Comparing SNA client TCP/IP named pipes vs sockets
 
+{% raw %}
+
 	Article: Q128985
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,3.0,4.0
@@ -177,3 +179,5 @@ permalink: /kb/128/Q128985/
 	
 	=============================================================================
 	
+
+{% endraw %}

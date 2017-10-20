@@ -6,6 +6,8 @@ permalink: /kb/187/Q187091/
 
 ## Q187091: Cannot Close a Shadow Session
 
+{% raw %}
+
 	Article: Q187091
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -41,3 +43,5 @@ permalink: /kb/187/Q187091/
 	
 	=============================================================================
 	
+
+{% endraw %}

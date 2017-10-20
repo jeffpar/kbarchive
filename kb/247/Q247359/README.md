@@ -6,6 +6,8 @@ permalink: /kb/247/Q247359/
 
 ## Q247359: BUG: WindowList Menu Does Not Always Show MDIChild Forms
 
+{% raw %}
+
 	Article: Q247359
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -148,3 +150,5 @@ permalink: /kb/247/Q247359/
 	
 	=============================================================================
 	
+
+{% endraw %}

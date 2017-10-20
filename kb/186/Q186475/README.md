@@ -6,6 +6,8 @@ permalink: /kb/186/Q186475/
 
 ## Q186475: Icons Mapped to NetWare Drives Appear/Disappear from Start Menu
 
+{% raw %}
+
 	Article: Q186475
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -49,3 +51,5 @@ permalink: /kb/186/Q186475/
 	
 	=============================================================================
 	
+
+{% endraw %}

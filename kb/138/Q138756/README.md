@@ -6,6 +6,8 @@ permalink: /kb/138/Q138756/
 
 ## Q138756: FIX: Cursor Editor Fill Tool Doesn't Affect BackGround Pixels
 
+{% raw %}
+
 	Article: Q138756
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138756/
 	
 	=============================================================================
 	
+
+{% endraw %}

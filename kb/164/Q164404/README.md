@@ -6,6 +6,8 @@ permalink: /kb/164/Q164404/
 
 ## Q164404: Cannot Delete Individual Print Jobs in NetWare Print Queue
 
+{% raw %}
+
 	Article: Q164404
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/164/Q164404/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108595/
 
 ## Q108595: Flight Simulator: Calculating Cloud Deviation Zone Thickness
 
+{% raw %}
+
 	Article: Q108595
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0,5.0a
@@ -77,3 +79,5 @@ permalink: /kb/108/Q108595/
 	
 	=============================================================================
 	
+
+{% endraw %}

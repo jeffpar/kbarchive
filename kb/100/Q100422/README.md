@@ -6,6 +6,8 @@ permalink: /kb/100/Q100422/
 
 ## Q100422: Duplex on Kyocera EcoSys a-Si FS-1500A Requires ROM Upgrade
 
+{% raw %}
+
 	Article: Q100422
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/100/Q100422/
 	
 	=============================================================================
 	
+
+{% endraw %}

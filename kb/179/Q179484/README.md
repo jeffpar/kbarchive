@@ -6,6 +6,8 @@ permalink: /kb/179/Q179484/
 
 ## Q179484: Cannot Update the List of MSN 2.5 Access Telephone Numbers
 
+{% raw %}
+
 	Article: Q179484
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -78,3 +80,5 @@ permalink: /kb/179/Q179484/
 	
 	=============================================================================
 	
+
+{% endraw %}

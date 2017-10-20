@@ -6,6 +6,8 @@ permalink: /kb/183/Q183906/
 
 ## Q183906: BUG: Drag From FileListBox Includes Extra Backslash
 
+{% raw %}
+
 	Article: Q183906
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -128,3 +130,5 @@ permalink: /kb/183/Q183906/
 	
 	=============================================================================
 	
+
+{% endraw %}

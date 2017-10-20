@@ -6,6 +6,8 @@ permalink: /kb/271/Q271455/
 
 ## Q271455: Releasing a DHCP-Assigned IP Address at Shutdown in Windows NT
 
+{% raw %}
+
 	Article: Q271455
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1,3.5,3.51 (all service packs),4.0
@@ -76,3 +78,5 @@ permalink: /kb/271/Q271455/
 	
 	=============================================================================
 	
+
+{% endraw %}

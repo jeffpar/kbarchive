@@ -6,6 +6,8 @@ permalink: /kb/192/Q192541/
 
 ## Q192541: Err Msg: Mcdetect Caused an Invalid Page Fault in Msvcrt.dll
 
+{% raw %}
+
 	Article: Q192541
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6
@@ -70,3 +72,5 @@ permalink: /kb/192/Q192541/
 	
 	=============================================================================
 	
+
+{% endraw %}

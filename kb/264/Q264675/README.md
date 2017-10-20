@@ -6,6 +6,8 @@ permalink: /kb/264/Q264675/
 
 ## Q264675: XADM: Directory Replication Fails with 1091 Error 2147746077
 
+{% raw %}
+
 	Article: Q264675
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/264/Q264675/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/300/Q300467/
 
 ## Q300467: FP: How to Clear a Search Form Text Box By Using DHTML
 
+{% raw %}
+
 	Article: Q300467
 	Product(s): Word Front Page
 	Version(s): 
@@ -151,3 +153,5 @@ permalink: /kb/300/Q300467/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/319/Q319890/
 
 ## Q319890: &quot;Path Not Found Error&quot; Err Msg Using CDONTS to Send Mail via ASP
 
+{% raw %}
+
 	Article: Q319890
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -198,3 +200,5 @@ permalink: /kb/319/Q319890/
 	
 	=============================================================================
 	
+
+{% endraw %}

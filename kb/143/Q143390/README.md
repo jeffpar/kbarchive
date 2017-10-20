@@ -6,6 +6,8 @@ permalink: /kb/143/Q143390/
 
 ## Q143390: Adtran ISU Device Support in Windows NT
 
+{% raw %}
+
 	Article: Q143390
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -40,3 +42,5 @@ permalink: /kb/143/Q143390/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149004/
 
 ## Q149004: Bookshelf 96-97: PowerPoint Copy Incorrectly Lists Names
 
+{% raw %}
+
 	Article: Q149004
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/149/Q149004/
 	
 	=============================================================================
 	
+
+{% endraw %}

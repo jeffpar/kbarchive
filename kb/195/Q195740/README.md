@@ -6,6 +6,8 @@ permalink: /kb/195/Q195740/
 
 ## Q195740: PUT Command with HTTP Causes File Deletion 401.1 Error
 
+{% raw %}
+
 	Article: Q195740
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/195/Q195740/
 	
 	=============================================================================
 	
+
+{% endraw %}

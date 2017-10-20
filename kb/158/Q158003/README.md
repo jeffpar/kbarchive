@@ -6,6 +6,8 @@ permalink: /kb/158/Q158003/
 
 ## Q158003: STL Sample for the partial_sort_copy Function
 
+{% raw %}
+
 	Article: Q158003
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -171,3 +173,5 @@ permalink: /kb/158/Q158003/
 	
 	=============================================================================
 	
+
+{% endraw %}

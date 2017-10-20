@@ -6,6 +6,8 @@ permalink: /kb/134/Q134295/
 
 ## Q134295: Computer May Hang with Cyrix Processor and ACC2066 Chip Set
 
+{% raw %}
+
 	Article: Q134295
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/134/Q134295/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180009/
 
 ## Q180009: XADM: Exchange 5.5 Upgrade Fails With ID No: c106fdda
 
+{% raw %}
+
 	Article: Q180009
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -123,3 +125,5 @@ permalink: /kb/180/Q180009/
 	
 	=============================================================================
 	
+
+{% endraw %}

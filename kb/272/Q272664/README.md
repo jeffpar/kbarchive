@@ -6,6 +6,8 @@ permalink: /kb/272/Q272664/
 
 ## Q272664: Golf 2001 &amp; Links LS: Cannot Start or Game Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q272664
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:; :
@@ -97,3 +99,5 @@ permalink: /kb/272/Q272664/
 	
 	=============================================================================
 	
+
+{% endraw %}

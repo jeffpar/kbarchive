@@ -6,6 +6,8 @@ permalink: /kb/032/Q32788/
 
 ## Q32788: Example of Trapping CTRL+ALT+DEL Keys in QuickBASIC
 
+{% raw %}
+
 	Article: Q32788
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -89,3 +91,5 @@ permalink: /kb/032/Q32788/
 	numbers are preceded with &H. If you wish, you can convert the number
 	to decimal notation (base 10) and use that value. Be sure not to use
 	&H in front of the value in BASIC if the value is in decimal notation.
+
+{% endraw %}

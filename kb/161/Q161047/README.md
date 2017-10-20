@@ -6,6 +6,8 @@ permalink: /kb/161/Q161047/
 
 ## Q161047: Compaq Insight Manager may Cause TN3270 Event ID 903
 
+{% raw %}
+
 	Article: Q161047
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -66,3 +68,5 @@ permalink: /kb/161/Q161047/
 	
 	=============================================================================
 	
+
+{% endraw %}

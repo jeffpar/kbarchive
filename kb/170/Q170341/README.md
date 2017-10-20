@@ -6,6 +6,8 @@ permalink: /kb/170/Q170341/
 
 ## Q170341: FIX: LoadPicture Displays 16 x 16 Icons as 32 x 32
 
+{% raw %}
+
 	Article: Q170341
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/170/Q170341/
 	
 	=============================================================================
 	
+
+{% endraw %}

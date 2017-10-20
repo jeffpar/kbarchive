@@ -6,6 +6,8 @@ permalink: /kb/209/Q209010/
 
 ## Q209010: BUG: IDE: File/Make Retains Last VBCE Project Name
 
+{% raw %}
+
 	Article: Q209010
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/209/Q209010/
 	
 	=============================================================================
 	
+
+{% endraw %}

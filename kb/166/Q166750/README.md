@@ -6,6 +6,8 @@ permalink: /kb/166/Q166750/
 
 ## Q166750: ARP Cache Entries May Not Time Out for 10 Minutes
 
+{% raw %}
+
 	Article: Q166750
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -113,3 +115,5 @@ permalink: /kb/166/Q166750/
 	
 	=============================================================================
 	
+
+{% endraw %}

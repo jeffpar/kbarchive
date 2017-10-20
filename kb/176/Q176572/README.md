@@ -6,6 +6,8 @@ permalink: /kb/176/Q176572/
 
 ## Q176572: FIX: ODBC Date Filter Greater Than 12/31/1999 Return No Records
 
+{% raw %}
+
 	Article: Q176572
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -125,3 +127,5 @@ permalink: /kb/176/Q176572/
 	
 	=============================================================================
 	
+
+{% endraw %}

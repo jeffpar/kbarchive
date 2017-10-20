@@ -6,6 +6,8 @@ permalink: /kb/251/Q251000/
 
 ## Q251000: WFP Warning Appears While Installing BackOffice Server 4.5
 
+{% raw %}
+
 	Article: Q251000
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.5
@@ -76,3 +78,5 @@ permalink: /kb/251/Q251000/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174933/
 
 ## Q174933: SMS: PCM Service Job Does Not Log Failure If Not Mandatory
 
+{% raw %}
+
 	Article: Q174933
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -70,3 +72,5 @@ permalink: /kb/174/Q174933/
 	
 	=============================================================================
 	
+
+{% endraw %}

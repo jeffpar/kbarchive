@@ -6,6 +6,8 @@ permalink: /kb/224/Q224193/
 
 ## Q224193: Errors Starting Microsoft Exchange Administrator Tool
 
+{% raw %}
+
 	Article: Q224193
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/224/Q224193/
 	
 	=============================================================================
 	
+
+{% endraw %}

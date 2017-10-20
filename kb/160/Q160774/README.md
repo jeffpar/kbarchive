@@ -6,6 +6,8 @@ permalink: /kb/160/Q160774/
 
 ## Q160774: SMS: MIFMAC Cannot Display Extended Characters in a List Field
 
+{% raw %}
+
 	Article: Q160774
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160774/
 	
 	=============================================================================
 	
+
+{% endraw %}

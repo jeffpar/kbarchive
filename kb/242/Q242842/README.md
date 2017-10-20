@@ -6,6 +6,8 @@ permalink: /kb/242/Q242842/
 
 ## Q242842: FS2000: Speed Brakes Remain in the Arm Position When You Land
 
+{% raw %}
+
 	Article: Q242842
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/242/Q242842/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/228/Q228146/
 
 ## Q228146: Moving from Corporate WAN to Home LAN Causes Validation Problems
 
+{% raw %}
+
 	Article: Q228146
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.1,3.5,3.51,4.0
@@ -99,3 +101,5 @@ permalink: /kb/228/Q228146/
 	
 	=============================================================================
 	
+
+{% endraw %}

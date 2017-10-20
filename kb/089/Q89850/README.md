@@ -6,6 +6,8 @@ permalink: /kb/089/Q89850/
 
 ## Q89850: PC Ext: Err Msg: Already Attached to Server
 
+{% raw %}
+
 	Article: Q89850
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -44,3 +46,5 @@ permalink: /kb/089/Q89850/
 	
 	=============================================================================
 	
+
+{% endraw %}

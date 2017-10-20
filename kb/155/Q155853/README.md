@@ -6,6 +6,8 @@ permalink: /kb/155/Q155853/
 
 ## Q155853: PC WIN: Error Using Details in the Spanish Windows 3.5 Client
 
+{% raw %}
+
 	Article: Q155853
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -76,3 +78,5 @@ permalink: /kb/155/Q155853/
 	
 	=============================================================================
 	
+
+{% endraw %}

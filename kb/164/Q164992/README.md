@@ -6,6 +6,8 @@ permalink: /kb/164/Q164992/
 
 ## Q164992: WD97: Cancel RegOptions Macro Doesn't Cancel Registry Changes
 
+{% raw %}
+
 	Article: Q164992
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/164/Q164992/
 	
 	=============================================================================
 	
+
+{% endraw %}

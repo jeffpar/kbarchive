@@ -6,6 +6,8 @@ permalink: /kb/157/Q157683/
 
 ## Q157683: XCLN: Forms Designed with Many Fields Might not Show Them All
 
+{% raw %}
+
 	Article: Q157683
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -67,3 +69,5 @@ permalink: /kb/157/Q157683/
 	
 	=============================================================================
 	
+
+{% endraw %}

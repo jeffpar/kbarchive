@@ -6,6 +6,8 @@ permalink: /kb/188/Q188772/
 
 ## Q188772: XADM: Error for Incorrect Journal Recipient Is Informational
 
+{% raw %}
+
 	Article: Q188772
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -80,3 +82,5 @@ permalink: /kb/188/Q188772/
 	
 	=============================================================================
 	
+
+{% endraw %}

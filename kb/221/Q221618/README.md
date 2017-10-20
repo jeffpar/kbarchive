@@ -6,6 +6,8 @@ permalink: /kb/221/Q221618/
 
 ## Q221618: FIX: Form Wizard Error Sorting by 2 Fields with DBCS Names
 
+{% raw %}
+
 	Article: Q221618
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -84,3 +86,5 @@ permalink: /kb/221/Q221618/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124347/
 
 ## Q124347: FoxPro Advisor Magazine Articles April 1994
 
+{% raw %}
+
 	Article: Q124347
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50x 2.60 2.60a | 2.00 2.50x 2.
@@ -86,3 +88,5 @@ permalink: /kb/124/Q124347/
 	
 	=============================================================================
 	
+
+{% endraw %}

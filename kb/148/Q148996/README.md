@@ -6,6 +6,8 @@ permalink: /kb/148/Q148996/
 
 ## Q148996: Attachmate Advanced Coax Adapter Fails w/Event 23 Qualifier 11
 
+{% raw %}
+
 	Article: Q148996
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -52,3 +54,5 @@ permalink: /kb/148/Q148996/
 	
 	=============================================================================
 	
+
+{% endraw %}

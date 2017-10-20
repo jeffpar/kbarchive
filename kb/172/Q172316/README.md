@@ -6,6 +6,8 @@ permalink: /kb/172/Q172316/
 
 ## Q172316: WD97: WordMail Shortcut Keys Re-Assigned with Templates
 
+{% raw %}
+
 	Article: Q172316
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/172/Q172316/
 	
 	=============================================================================
 	
+
+{% endraw %}

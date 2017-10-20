@@ -6,6 +6,8 @@ permalink: /kb/132/Q132749/
 
 ## Q132749: Microsoft Systems Journal: August 1995
 
+{% raw %}
+
 	Article: Q132749
 	Product(s): Miscrosoft Systems Journal
 	Version(s): for August 1995
@@ -122,3 +124,5 @@ permalink: /kb/132/Q132749/
 	
 	=============================================================================
 	
+
+{% endraw %}

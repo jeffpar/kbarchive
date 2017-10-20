@@ -6,6 +6,8 @@ permalink: /kb/306/Q306513/
 
 ## Q306513: Server Hangs Before Logon Screen After Uninstalling the SRP
 
+{% raw %}
+
 	Article: Q306513
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -97,3 +99,5 @@ permalink: /kb/306/Q306513/
 	
 	=============================================================================
 	
+
+{% endraw %}

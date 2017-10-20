@@ -6,6 +6,8 @@ permalink: /kb/183/Q183528/
 
 ## Q183528: PRB: ScrollBar and Custom Controls Do Not Have Events to Handle
 
+{% raw %}
+
 	Article: Q183528
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/183/Q183528/
 	
 	=============================================================================
 	
+
+{% endraw %}

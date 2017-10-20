@@ -6,6 +6,8 @@ permalink: /kb/155/Q155438/
 
 ## Q155438: PRB: &quot;Directory Not Found&quot; When Using Macintosh Client 4.00a
 
+{% raw %}
+
 	Article: Q155438
 	Product(s): Microsoft SourceSafe
 	Version(s): MACINTOSH:4.0a
@@ -59,3 +61,5 @@ permalink: /kb/155/Q155438/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190895/
 
 ## Q190895: DirectX: Different File Versions Listed in Diagnostic Tools
 
+{% raw %}
+
 	Article: Q190895
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:95
@@ -75,3 +77,5 @@ permalink: /kb/190/Q190895/
 	
 	=============================================================================
 	
+
+{% endraw %}

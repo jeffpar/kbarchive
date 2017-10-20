@@ -6,6 +6,8 @@ permalink: /kb/139/Q139121/
 
 ## Q139121: Windows 95 Client Reboots Upon Starting
 
+{% raw %}
+
 	Article: Q139121
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.50 3.51
@@ -71,3 +73,5 @@ permalink: /kb/139/Q139121/
 	
 	=============================================================================
 	
+
+{% endraw %}

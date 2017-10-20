@@ -6,6 +6,8 @@ permalink: /kb/086/Q86090/
 
 ## Q86090: PC Win: OLE Object Redraws Slowly in Message
 
+{% raw %}
+
 	Article: Q86090
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -67,3 +69,5 @@ permalink: /kb/086/Q86090/
 	
 	=============================================================================
 	
+
+{% endraw %}

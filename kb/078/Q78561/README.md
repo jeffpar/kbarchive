@@ -6,6 +6,8 @@ permalink: /kb/078/Q78561/
 
 ## Q78561: Incorrect Settings in SYSTEM.INI for Sound Blaster Pro
 
+{% raw %}
+
 	Article: Q78561
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/078/Q78561/
 	
 	=============================================================================
 	
+
+{% endraw %}

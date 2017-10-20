@@ -6,6 +6,8 @@ permalink: /kb/195/Q195608/
 
 ## Q195608: WD97: How to Set Up Page with Set Number of Characters Per Line
 
+{% raw %}
+
 	Article: Q195608
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/195/Q195608/
 	
 	=============================================================================
 	
+
+{% endraw %}

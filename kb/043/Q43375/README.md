@@ -6,6 +6,8 @@ permalink: /kb/043/Q43375/
 
 ## Q43375: QuickC: Version 2.00 Search and Replace Problem
 
+{% raw %}
+
 	Article: Q43375
 	Product(s): See article
 	Version(s): 2.00
@@ -43,3 +45,5 @@ permalink: /kb/043/Q43375/
 	
 	Microsoft is researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86175/
 
 ## Q86175: Environment Lost in Enhanced Mode on Novell Network
 
+{% raw %}
+
 	Article: Q86175
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -107,3 +109,5 @@ permalink: /kb/086/Q86175/
 	
 	=============================================================================
 	
+
+{% endraw %}

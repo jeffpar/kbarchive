@@ -6,6 +6,8 @@ permalink: /kb/190/Q190258/
 
 ## Q190258: BUG: Pressing ESC Twice in Combo Box Resets ListIndex Property
 
+{% raw %}
+
 	Article: Q190258
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -120,3 +122,5 @@ permalink: /kb/190/Q190258/
 	
 	=============================================================================
 	
+
+{% endraw %}

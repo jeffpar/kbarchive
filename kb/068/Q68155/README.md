@@ -6,6 +6,8 @@ permalink: /kb/068/Q68155/
 
 ## Q68155: BUG: PM or Windows DLL Build Options Ignore .RC Files in PWB 1.1
 
+{% raw %}
+
 	Article: Q68155
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.1; OS/2:1.1
@@ -91,3 +93,5 @@ permalink: /kb/068/Q68155/
 	
 	=============================================================================
 	
+
+{% endraw %}

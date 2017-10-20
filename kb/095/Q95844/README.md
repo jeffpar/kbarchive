@@ -6,6 +6,8 @@ permalink: /kb/095/Q95844/
 
 ## Q95844: DOC: WINDOWPOS Structure Documented Incorrectly
 
+{% raw %}
+
 	Article: Q95844
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/095/Q95844/
 	
 	=============================================================================
 	
+
+{% endraw %}

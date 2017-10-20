@@ -6,6 +6,8 @@ permalink: /kb/047/Q47643/
 
 ## Q47643: Improper IF Statement Syntax Can Hang QB.EXE 4.00 Environment
 
+{% raw %}
+
 	Article: Q47643
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/047/Q47643/
 	If you attempt to enter the above code in the QBX.EXE environment of
 	BASIC PDS 7.00, the environment correctly highlights the second string
 	variable and reports "Expected: Label or Line-number".
+
+{% endraw %}

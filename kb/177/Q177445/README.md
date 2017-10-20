@@ -6,6 +6,8 @@ permalink: /kb/177/Q177445/
 
 ## Q177445: Use LoadLibraryEx When Loading Printer Drivers
 
+{% raw %}
+
 	Article: Q177445
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/177/Q177445/
 	
 	=============================================================================
 	
+
+{% endraw %}

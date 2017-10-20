@@ -6,6 +6,8 @@ permalink: /kb/077/Q77646/
 
 ## Q77646: PC DB: NetWare 286/386 Rights for Mail Database
 
+{% raw %}
+
 	Article: Q77646
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.0,2.1
@@ -74,3 +76,5 @@ permalink: /kb/077/Q77646/
 	
 	=============================================================================
 	
+
+{% endraw %}

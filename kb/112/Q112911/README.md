@@ -6,6 +6,8 @@ permalink: /kb/112/Q112911/
 
 ## Q112911: MHS: README.TXT: Gateway to MHS, Version 3.0
 
+{% raw %}
+
 	Article: Q112911
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -106,3 +108,5 @@ permalink: /kb/112/Q112911/
 	
 	=============================================================================
 	
+
+{% endraw %}

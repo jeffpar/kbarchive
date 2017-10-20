@@ -6,6 +6,8 @@ permalink: /kb/231/Q231535/
 
 ## Q231535: MapPoint 2000: Drawing Tools Do Not Work in World View
 
+{% raw %}
+
 	Article: Q231535
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -40,3 +42,5 @@ permalink: /kb/231/Q231535/
 	
 	=============================================================================
 	
+
+{% endraw %}

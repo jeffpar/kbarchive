@@ -6,6 +6,8 @@ permalink: /kb/161/Q161956/
 
 ## Q161956: MS BOOKSHELF INTERNET DIRECTORY 1996/97 EDITION Corrections
 
+{% raw %}
+
 	Article: Q161956
 	Product(s): Microsoft Press
 	Version(s): 
@@ -398,3 +400,5 @@ permalink: /kb/161/Q161956/
 	
 	=============================================================================
 	
+
+{% endraw %}

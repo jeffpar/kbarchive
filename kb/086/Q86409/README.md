@@ -6,6 +6,8 @@ permalink: /kb/086/Q86409/
 
 ## Q86409: BUG: LIBENTRY.ASM Missing Include File Error
 
+{% raw %}
+
 	Article: Q86409
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/086/Q86409/
 	
 	=============================================================================
 	
+
+{% endraw %}

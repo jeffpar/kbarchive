@@ -6,6 +6,8 @@ permalink: /kb/234/Q234771/
 
 ## Q234771: FIX: Error 800a2328 When You Browse a VB 6.0 WebClass
 
+{% raw %}
+
 	Article: Q234771
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -87,3 +89,5 @@ permalink: /kb/234/Q234771/
 	
 	=============================================================================
 	
+
+{% endraw %}

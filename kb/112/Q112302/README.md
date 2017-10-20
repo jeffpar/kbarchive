@@ -6,6 +6,8 @@ permalink: /kb/112/Q112302/
 
 ## Q112302: PC Win: Exporting Folders Err Msg: Not Enough Memory...
 
+{% raw %}
+
 	Article: Q112302
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -72,3 +74,5 @@ permalink: /kb/112/Q112302/
 	
 	=============================================================================
 	
+
+{% endraw %}

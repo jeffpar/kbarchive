@@ -6,6 +6,8 @@ permalink: /kb/154/Q154819/
 
 ## Q154819: HOWTO: Access PC Bus Devices in Visual Basic for Windows
 
+{% raw %}
+
 	Article: Q154819
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/154/Q154819/
 	
 	=============================================================================
 	
+
+{% endraw %}

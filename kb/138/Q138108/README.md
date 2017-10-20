@@ -6,6 +6,8 @@ permalink: /kb/138/Q138108/
 
 ## Q138108: DOC: Size Help Shows Option &quot;To Fit&quot;
 
+{% raw %}
+
 	Article: Q138108
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -42,3 +44,5 @@ permalink: /kb/138/Q138108/
 	
 	=============================================================================
 	
+
+{% endraw %}

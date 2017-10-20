@@ -6,6 +6,8 @@ permalink: /kb/271/Q271477/
 
 ## Q271477: WD97: Changing Relative Position Causes Shape to Jump to Top
 
+{% raw %}
+
 	Article: Q271477
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -145,3 +147,5 @@ permalink: /kb/271/Q271477/
 	
 	=============================================================================
 	
+
+{% endraw %}

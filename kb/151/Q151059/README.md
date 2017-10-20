@@ -6,6 +6,8 @@ permalink: /kb/151/Q151059/
 
 ## Q151059: Using PlayerNet to Connect Two People via the Internet
 
+{% raw %}
+
 	Article: Q151059
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -118,3 +120,5 @@ permalink: /kb/151/Q151059/
 	
 	=============================================================================
 	
+
+{% endraw %}

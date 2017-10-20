@@ -6,6 +6,8 @@ permalink: /kb/237/Q237443/
 
 ## Q237443: MultinetGetConnectionPerformance() May Not Give Expected Results
 
+{% raw %}
+
 	Article: Q237443
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/237/Q237443/
 	
 	=============================================================================
 	
+
+{% endraw %}

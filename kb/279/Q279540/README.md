@@ -6,6 +6,8 @@ permalink: /kb/279/Q279540/
 
 ## Q279540: MSN Companion Compaq IA-2 err msg &quot;Missing operating system&quot;
 
+{% raw %}
+
 	Article: Q279540
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -64,3 +66,5 @@ permalink: /kb/279/Q279540/
 	
 	=============================================================================
 	
+
+{% endraw %}

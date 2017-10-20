@@ -6,6 +6,8 @@ permalink: /kb/243/Q243300/
 
 ## Q243300: Err Msg: Remote Tools Security Rights to Run Remote Tools on...
 
+{% raw %}
+
 	Article: Q243300
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -69,3 +71,5 @@ permalink: /kb/243/Q243300/
 	
 	=============================================================================
 	
+
+{% endraw %}

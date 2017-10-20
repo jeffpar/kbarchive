@@ -6,6 +6,8 @@ permalink: /kb/128/Q128451/
 
 ## Q128451: INVDOS: SMSSAFE.TMP is Deleted upon Creation
 
+{% raw %}
+
 	Article: Q128451
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -54,3 +56,5 @@ permalink: /kb/128/Q128451/
 	
 	=============================================================================
 	
+
+{% endraw %}

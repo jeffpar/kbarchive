@@ -6,6 +6,8 @@ permalink: /kb/156/Q156083/
 
 ## Q156083: SNA Server APPC Error Communicating to Software AG Entire APPC
 
+{% raw %}
+
 	Article: Q156083
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -117,3 +119,5 @@ permalink: /kb/156/Q156083/
 	
 	=============================================================================
 	
+
+{% endraw %}

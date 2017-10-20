@@ -6,6 +6,8 @@ permalink: /kb/173/Q173650/
 
 ## Q173650: PRB: Version Number Not Incrementing Using Command Line /Make
 
+{% raw %}
+
 	Article: Q173650
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -110,3 +112,5 @@ permalink: /kb/173/Q173650/
 	
 	=============================================================================
 	
+
+{% endraw %}

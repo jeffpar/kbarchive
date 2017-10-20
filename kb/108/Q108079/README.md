@@ -6,6 +6,8 @@ permalink: /kb/108/Q108079/
 
 ## Q108079: 32-Bit File Access Maximum Cache Size
 
+{% raw %}
+
 	Article: Q108079
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:95
@@ -83,3 +85,5 @@ permalink: /kb/108/Q108079/
 	
 	=============================================================================
 	
+
+{% endraw %}

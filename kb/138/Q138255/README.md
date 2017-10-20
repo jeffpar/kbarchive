@@ -6,6 +6,8 @@ permalink: /kb/138/Q138255/
 
 ## Q138255: Vfpmapi.exe Updated VFP for Windows FOXMAPI Files
 
+{% raw %}
+
 	Article: Q138255
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -97,3 +99,5 @@ permalink: /kb/138/Q138255/
 	
 	=============================================================================
 	
+
+{% endraw %}

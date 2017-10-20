@@ -6,6 +6,8 @@ permalink: /kb/137/Q137125/
 
 ## Q137125: How to Use IncrementalSearch Property of List and Combo Boxes
 
+{% raw %}
+
 	Article: Q137125
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/137/Q137125/
 	
 	=============================================================================
 	
+
+{% endraw %}

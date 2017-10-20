@@ -6,6 +6,8 @@ permalink: /kb/244/Q244951/
 
 ## Q244951: Streets and Trips: Converting Latitude and Longitude Coordinates
 
+{% raw %}
+
 	Article: Q244951
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/244/Q244951/
 	
 	=============================================================================
 	
+
+{% endraw %}

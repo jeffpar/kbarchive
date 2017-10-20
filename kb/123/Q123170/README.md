@@ -6,6 +6,8 @@ permalink: /kb/123/Q123170/
 
 ## Q123170: WINS Event Log IDs 4135 - 4144 (Warning Messages)
 
+{% raw %}
+
 	Article: Q123170
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -76,3 +78,5 @@ permalink: /kb/123/Q123170/
 	
 	=============================================================================
 	
+
+{% endraw %}

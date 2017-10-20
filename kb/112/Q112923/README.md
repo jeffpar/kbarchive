@@ -6,6 +6,8 @@ permalink: /kb/112/Q112923/
 
 ## Q112923: PC Adm: Err Msg: Notice 99 Unable to Access Address Record
 
+{% raw %}
+
 	Article: Q112923
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0a,3.2
@@ -86,3 +88,5 @@ permalink: /kb/112/Q112923/
 	
 	=============================================================================
 	
+
+{% endraw %}

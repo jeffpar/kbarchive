@@ -6,6 +6,8 @@ permalink: /kb/126/Q126564/
 
 ## Q126564: PGC Does Not Remove Shared Program Groups When Un-installed
 
+{% raw %}
+
 	Article: Q126564
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -44,3 +46,5 @@ permalink: /kb/126/Q126564/
 	
 	=============================================================================
 	
+
+{% endraw %}

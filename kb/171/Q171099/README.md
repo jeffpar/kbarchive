@@ -6,6 +6,8 @@ permalink: /kb/171/Q171099/
 
 ## Q171099: PRB: Per-Recipient &quot;Send Options&quot; Not Saved to Address Book
 
+{% raw %}
+
 	Article: Q171099
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -56,3 +58,5 @@ permalink: /kb/171/Q171099/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101560/
 
 ## Q101560: Odd MSAV Behavior when CHKLIST.MS Files Are Read-Only
 
+{% raw %}
+
 	Article: Q101560
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/101/Q101560/
 	
 	=============================================================================
 	
+
+{% endraw %}

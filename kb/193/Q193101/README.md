@@ -6,6 +6,8 @@ permalink: /kb/193/Q193101/
 
 ## Q193101: FIX: Unhandled Exception Using MFC Sockets in Visual C++ 6.0
 
+{% raw %}
+
 	Article: Q193101
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -120,3 +122,5 @@ permalink: /kb/193/Q193101/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134485/
 
 ## Q134485: After Dynamic Load/Unload of NDIS3, Server Service Stops
 
+{% raw %}
+
 	Article: Q134485
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/134/Q134485/
 	
 	=============================================================================
 	
+
+{% endraw %}

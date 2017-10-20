@@ -6,6 +6,8 @@ permalink: /kb/235/Q235213/
 
 ## Q235213: BUG: Four-part Name Linked Server Queries Fail w/DB2 for OS/390
 
+{% raw %}
+
 	Article: Q235213
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -73,3 +75,5 @@ permalink: /kb/235/Q235213/
 	
 	=============================================================================
 	
+
+{% endraw %}

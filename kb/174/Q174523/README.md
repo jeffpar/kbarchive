@@ -6,6 +6,8 @@ permalink: /kb/174/Q174523/
 
 ## Q174523: BUG: BMP Turns Black on a Disable Button under NT 4.0
 
+{% raw %}
+
 	Article: Q174523
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -91,3 +93,5 @@ permalink: /kb/174/Q174523/
 	
 	=============================================================================
 	
+
+{% endraw %}

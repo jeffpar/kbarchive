@@ -6,6 +6,8 @@ permalink: /kb/092/Q92873/
 
 ## Q92873: Windows for Workgroups Hangs at Logo Screen
 
+{% raw %}
+
 	Article: Q92873
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -131,3 +133,5 @@ permalink: /kb/092/Q92873/
 	
 	=============================================================================
 	
+
+{% endraw %}

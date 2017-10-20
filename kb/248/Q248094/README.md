@@ -6,6 +6,8 @@ permalink: /kb/248/Q248094/
 
 ## Q248094: BUG: Fatal error RC1022 or Error RC2104
 
+{% raw %}
+
 	Article: Q248094
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0,97; winnt:5.0,6.0
@@ -166,3 +168,5 @@ permalink: /kb/248/Q248094/
 	
 	=============================================================================
 	
+
+{% endraw %}

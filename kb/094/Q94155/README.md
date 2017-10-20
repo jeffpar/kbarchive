@@ -6,6 +6,8 @@ permalink: /kb/094/Q94155/
 
 ## Q94155: HP LaserJet III/4: Text Prints on Top of Graphic
 
+{% raw %}
+
 	Article: Q94155
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/094/Q94155/
 	
 	=============================================================================
 	
+
+{% endraw %}

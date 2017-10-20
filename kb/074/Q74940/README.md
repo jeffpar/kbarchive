@@ -6,6 +6,8 @@ permalink: /kb/074/Q74940/
 
 ## Q74940: Keeping MS-DOS-Based App Active Under Windows 3.1
 
+{% raw %}
+
 	Article: Q74940
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -126,3 +128,5 @@ permalink: /kb/074/Q74940/
 	
 	=============================================================================
 	
+
+{% endraw %}

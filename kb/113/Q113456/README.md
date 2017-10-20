@@ -6,6 +6,8 @@ permalink: /kb/113/Q113456/
 
 ## Q113456: Problems Sending Faxes from MAPI-Enabled Applications
 
+{% raw %}
+
 	Article: Q113456
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -59,3 +61,5 @@ permalink: /kb/113/Q113456/
 	
 	=============================================================================
 	
+
+{% endraw %}

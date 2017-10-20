@@ -6,6 +6,8 @@ permalink: /kb/122/Q122870/
 
 ## Q122870: Infinite Disk Does Not Support 32-Bit File Access
 
+{% raw %}
+
 	Article: Q122870
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -56,3 +58,5 @@ permalink: /kb/122/Q122870/
 	
 	=============================================================================
 	
+
+{% endraw %}

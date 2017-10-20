@@ -6,6 +6,8 @@ permalink: /kb/161/Q161932/
 
 ## Q161932: XFOR: MtaCheck Causes Access Violation Exception Error
 
+{% raw %}
+
 	Article: Q161932
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/161/Q161932/
 	
 	=============================================================================
 	
+
+{% endraw %}

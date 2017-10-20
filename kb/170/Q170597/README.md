@@ -6,6 +6,8 @@ permalink: /kb/170/Q170597/
 
 ## Q170597: BUG: Special Effect Does Not Work for Container Control
 
+{% raw %}
+
 	Article: Q170597
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -97,3 +99,5 @@ permalink: /kb/170/Q170597/
 	
 	=============================================================================
 	
+
+{% endraw %}

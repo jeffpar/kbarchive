@@ -6,6 +6,8 @@ permalink: /kb/129/Q129239/
 
 ## Q129239: SMTP: Err Msg: Warning SMTP Output Retry Count Exceeded...
 
+{% raw %}
+
 	Article: Q129239
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/129/Q129239/
 	
 	=============================================================================
 	
+
+{% endraw %}

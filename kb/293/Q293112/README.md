@@ -6,6 +6,8 @@ permalink: /kb/293/Q293112/
 
 ## Q293112: MSN Accounts Created After 12/15/2000 No Longer Able To Use Thir
 
+{% raw %}
+
 	Article: Q293112
 	Product(s): The Microsoft Network
 	Version(s): 5.0,5.1,5.2,5.3,6.0,6.1
@@ -45,3 +47,5 @@ permalink: /kb/293/Q293112/
 	
 	=============================================================================
 	
+
+{% endraw %}

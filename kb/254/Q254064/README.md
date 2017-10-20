@@ -6,6 +6,8 @@ permalink: /kb/254/Q254064/
 
 ## Q254064: XFOR: Connector for SNADS Delivery Receipt Fails in SP2 and SP3
 
+{% raw %}
+
 	Article: Q254064
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2,5.5 SP3
@@ -68,3 +70,5 @@ permalink: /kb/254/Q254064/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99249/
 
 ## Q99249: Boot Block Configuration File Format
 
+{% raw %}
+
 	Article: Q99249
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -196,3 +198,5 @@ permalink: /kb/099/Q99249/
 	
 	=============================================================================
 	
+
+{% endraw %}

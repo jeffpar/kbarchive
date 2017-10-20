@@ -6,6 +6,8 @@ permalink: /kb/136/Q136014/
 
 ## Q136014: PCMCIA Card Does Not Work After Running PCMCIA Wizard
 
+{% raw %}
+
 	Article: Q136014
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/136/Q136014/
 	
 	=============================================================================
 	
+
+{% endraw %}

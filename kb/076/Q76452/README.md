@@ -6,6 +6,8 @@ permalink: /kb/076/Q76452/
 
 ## Q76452: PRB: Global TSR Pop-ups Incompatible with Windows
 
+{% raw %}
+
 	Article: Q76452
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -49,3 +51,5 @@ permalink: /kb/076/Q76452/
 	
 	=============================================================================
 	
+
+{% endraw %}

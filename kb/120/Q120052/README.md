@@ -6,6 +6,8 @@ permalink: /kb/120/Q120052/
 
 ## Q120052: NBT Query Can Hang Computer or Drop Back to MS-DOS
 
+{% raw %}
+
 	Article: Q120052
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11
@@ -56,3 +58,5 @@ permalink: /kb/120/Q120052/
 	
 	=============================================================================
 	
+
+{% endraw %}

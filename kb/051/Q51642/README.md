@@ -6,6 +6,8 @@ permalink: /kb/051/Q51642/
 
 ## Q51642: QuickC 2.00: /Ot Code Generation Error
 
+{% raw %}
+
 	Article: Q51642
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -51,3 +53,5 @@ permalink: /kb/051/Q51642/
 	Microsoft has confirmed this to be a problem with QuickC Versions 2.00
 	and 2.01. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

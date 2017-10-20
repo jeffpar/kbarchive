@@ -6,6 +6,8 @@ permalink: /kb/239/Q239132/
 
 ## Q239132: Exchange Clients Appear to Hang During Normal Operation
 
+{% raw %}
+
 	Article: Q239132
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,5.0,5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -107,3 +109,5 @@ permalink: /kb/239/Q239132/
 	
 	=============================================================================
 	
+
+{% endraw %}

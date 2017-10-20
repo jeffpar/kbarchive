@@ -6,6 +6,8 @@ permalink: /kb/101/Q101537/
 
 ## Q101537: Windows Sound System Uncompressed Files
 
+{% raw %}
+
 	Article: Q101537
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -304,3 +306,5 @@ permalink: /kb/101/Q101537/
 	
 	=============================================================================
 	
+
+{% endraw %}

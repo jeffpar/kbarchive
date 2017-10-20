@@ -6,6 +6,8 @@ permalink: /kb/192/Q192823/
 
 ## Q192823: Printer Disappears If Ports Entry Contains &gt; 255 Characters
 
+{% raw %}
+
 	Article: Q192823
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -45,3 +47,5 @@ permalink: /kb/192/Q192823/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157193/
 
 ## Q157193: DOCERR: ActiveX Controls Help Topic Lists Incorrect File
 
+{% raw %}
+
 	Article: Q157193
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -49,3 +51,5 @@ permalink: /kb/157/Q157193/
 	
 	=============================================================================
 	
+
+{% endraw %}

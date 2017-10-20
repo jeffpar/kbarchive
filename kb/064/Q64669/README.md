@@ -6,6 +6,8 @@ permalink: /kb/064/Q64669/
 
 ## Q64669: SoftRIP Error Message in Windows 3.0
 
+{% raw %}
+
 	Article: Q64669
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -84,3 +86,5 @@ permalink: /kb/064/Q64669/
 	
 	=============================================================================
 	
+
+{% endraw %}

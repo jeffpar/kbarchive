@@ -6,6 +6,8 @@ permalink: /kb/118/Q118678/
 
 ## Q118678: FIX: Internal Make Error U1073
 
+{% raw %}
+
 	Article: Q118678
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/118/Q118678/
 	
 	=============================================================================
 	
+
+{% endraw %}

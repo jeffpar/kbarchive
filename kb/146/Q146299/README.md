@@ -6,6 +6,8 @@ permalink: /kb/146/Q146299/
 
 ## Q146299: XFOR: SMTP Address Space Appears as a Semicolon
 
+{% raw %}
+
 	Article: Q146299
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/146/Q146299/
 	
 	=============================================================================
 	
+
+{% endraw %}

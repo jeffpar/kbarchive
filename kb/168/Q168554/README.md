@@ -6,6 +6,8 @@ permalink: /kb/168/Q168554/
 
 ## Q168554: FIX: Resource Drain with PictureBox on Form
 
+{% raw %}
+
 	Article: Q168554
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -87,3 +89,5 @@ permalink: /kb/168/Q168554/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119358/
 
 ## Q119358: Mac Hyp: Calling MS Mail XFCN from Microsoft FoxPro
 
+{% raw %}
+
 	Article: Q119358
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0
@@ -134,3 +136,5 @@ permalink: /kb/119/Q119358/
 	
 	=============================================================================
 	
+
+{% endraw %}

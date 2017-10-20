@@ -6,6 +6,8 @@ permalink: /kb/140/Q140735/
 
 ## Q140735: WD97: How to Send a Word Document in E-mail
 
+{% raw %}
+
 	Article: Q140735
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/140/Q140735/
 	
 	=============================================================================
 	
+
+{% endraw %}

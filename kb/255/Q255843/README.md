@@ -6,6 +6,8 @@ permalink: /kb/255/Q255843/
 
 ## Q255843: XCLN: Unable to Log on Exchange Server from Windows 2000 Client
 
+{% raw %}
+
 	Article: Q255843
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.0 SP1,5.5
@@ -116,3 +118,5 @@ permalink: /kb/255/Q255843/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196860/
 
 ## Q196860: WD97: Can't Rename or Delete File in Open Dialog Box (File Menu)
 
+{% raw %}
+
 	Article: Q196860
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/196/Q196860/
 	
 	=============================================================================
 	
+
+{% endraw %}

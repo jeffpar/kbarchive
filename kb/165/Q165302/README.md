@@ -6,6 +6,8 @@ permalink: /kb/165/Q165302/
 
 ## Q165302: WD97: Numbered Page Break Added When File Opened in 7.0
 
+{% raw %}
+
 	Article: Q165302
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/165/Q165302/
 	
 	=============================================================================
 	
+
+{% endraw %}

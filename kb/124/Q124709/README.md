@@ -6,6 +6,8 @@ permalink: /kb/124/Q124709/
 
 ## Q124709: PATCH: Out of Memory Error w/ AddNew/Update on Dynaset/Table
 
+{% raw %}
+
 	Article: Q124709
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -161,3 +163,5 @@ permalink: /kb/124/Q124709/
 	
 	=============================================================================
 	
+
+{% endraw %}

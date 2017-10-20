@@ -6,6 +6,8 @@ permalink: /kb/061/Q61310/
 
 ## Q61310: /Ot May Generate Incorrect Code with Nested Conditionals
 
+{% raw %}
+
 	Article: Q61310
 	Product(s): See article
 	Version(s): 5.10 6.00 | 5.10 6.00
@@ -87,3 +89,5 @@ permalink: /kb/061/Q61310/
 	Microsoft has confirmed this to be a problem with C version 6.00 We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

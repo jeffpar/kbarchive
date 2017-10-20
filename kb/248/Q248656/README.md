@@ -6,6 +6,8 @@ permalink: /kb/248/Q248656/
 
 ## Q248656: Windows 98 Clients Cannot Print to HP LaserJet 1100 Printer
 
+{% raw %}
+
 	Article: Q248656
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/248/Q248656/
 	
 	=============================================================================
 	
+
+{% endraw %}

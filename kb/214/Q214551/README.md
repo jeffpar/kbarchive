@@ -6,6 +6,8 @@ permalink: /kb/214/Q214551/
 
 ## Q214551: Close Combat III: The Russian Front: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q214551
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/214/Q214551/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177998/
 
 ## Q177998: XFOR: IMAP/POP3 Clients Cannot Reply to Migrated Messages
 
+{% raw %}
+
 	Article: Q177998
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177998/
 	
 	=============================================================================
 	
+
+{% endraw %}

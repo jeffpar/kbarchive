@@ -6,6 +6,8 @@ permalink: /kb/134/Q134299/
 
 ## Q134299: Sound Blaster WaveStudio 1.1 Out of Memory in Windows 95
 
+{% raw %}
+
 	Article: Q134299
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/134/Q134299/
 	
 	=============================================================================
 	
+
+{% endraw %}

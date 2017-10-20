@@ -6,6 +6,8 @@ permalink: /kb/043/Q43563/
 
 ## Q43563: Function MENU%() Fails in Hergert's &quot;QuickBASIC, 2nd Edition&quot;
 
+{% raw %}
+
 	Article: Q43563
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/043/Q43563/
 	
 	   false% = 0 : true% = NOT false%
 	   true% = -1 : false% = NOT true%
+
+{% endraw %}

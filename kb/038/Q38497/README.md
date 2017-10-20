@@ -6,6 +6,8 @@ permalink: /kb/038/Q38497/
 
 ## Q38497: Cursor May Disappear in EGA 43-Line Mode Using Logitech Mouse
 
+{% raw %}
+
 	Article: Q38497
 	Product(s): See article
 	Version(s): 4.50
@@ -38,3 +40,5 @@ permalink: /kb/038/Q38497/
 	
 	   LogiMouse (415) 795-8500
 	   LogiTech, Inc. (415) 795-0427 Technical Support Line
+
+{% endraw %}

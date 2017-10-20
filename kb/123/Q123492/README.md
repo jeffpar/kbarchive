@@ -6,6 +6,8 @@ permalink: /kb/123/Q123492/
 
 ## Q123492: FIX: Link /SECTION Option Does Not Check for Name Errors
 
+{% raw %}
+
 	Article: Q123492
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/123/Q123492/
 	
 	=============================================================================
 	
+
+{% endraw %}

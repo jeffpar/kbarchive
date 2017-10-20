@@ -6,6 +6,8 @@ permalink: /kb/087/Q87691/
 
 ## Q87691: PRB: &quot;File in Use by Another&quot; Errors in Networked FoxPro
 
+{% raw %}
+
 	Article: Q87691
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a | 2.50 2.50a 3.0
@@ -58,3 +60,5 @@ permalink: /kb/087/Q87691/
 	
 	=============================================================================
 	
+
+{% endraw %}

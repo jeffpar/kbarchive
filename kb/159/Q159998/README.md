@@ -6,6 +6,8 @@ permalink: /kb/159/Q159998/
 
 ## Q159998: Error Message: Error Access Is Denied
 
+{% raw %}
+
 	Article: Q159998
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/159/Q159998/
 	
 	=============================================================================
 	
+
+{% endraw %}

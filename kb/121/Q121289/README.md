@@ -6,6 +6,8 @@ permalink: /kb/121/Q121289/
 
 ## Q121289: PRB: Unreferenced Symbols Don't Appear in .BSC File
 
+{% raw %}
+
 	Article: Q121289
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51
@@ -112,3 +114,5 @@ permalink: /kb/121/Q121289/
 	
 	=============================================================================
 	
+
+{% endraw %}

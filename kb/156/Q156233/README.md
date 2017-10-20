@@ -6,6 +6,8 @@ permalink: /kb/156/Q156233/
 
 ## Q156233: SMS: Windows NT Clients Stop Responding After Clicking Display
 
+{% raw %}
+
 	Article: Q156233
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -90,3 +92,5 @@ permalink: /kb/156/Q156233/
 	
 	=============================================================================
 	
+
+{% endraw %}

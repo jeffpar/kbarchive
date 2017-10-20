@@ -6,6 +6,8 @@ permalink: /kb/145/Q145802/
 
 ## Q145802: Pregnancy and Child Care: Find By Symptom Seems Inaccurate
 
+{% raw %}
+
 	Article: Q145802
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -64,3 +66,5 @@ permalink: /kb/145/Q145802/
 	
 	=============================================================================
 	
+
+{% endraw %}

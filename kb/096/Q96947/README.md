@@ -6,6 +6,8 @@ permalink: /kb/096/Q96947/
 
 ## Q96947: How To: Using a NetWare Drive Without a Login Script in WFWG
 
+{% raw %}
+
 	Article: Q96947
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -87,3 +89,5 @@ permalink: /kb/096/Q96947/
 	
 	=============================================================================
 	
+
+{% endraw %}

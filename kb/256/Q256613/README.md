@@ -6,6 +6,8 @@ permalink: /kb/256/Q256613/
 
 ## Q256613: MapPoint: Currency Values Are Not Displayed Properly
 
+{% raw %}
+
 	Article: Q256613
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -48,3 +50,5 @@ permalink: /kb/256/Q256613/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184899/
 
 ## Q184899: PRB: SelPrint Method Issues an EndDoc When Printing
 
+{% raw %}
+
 	Article: Q184899
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/184/Q184899/
 	
 	=============================================================================
 	
+
+{% endraw %}

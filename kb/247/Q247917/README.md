@@ -6,6 +6,8 @@ permalink: /kb/247/Q247917/
 
 ## Q247917: Hewlett-Packard JetDirect Ports Missing on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q247917
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/247/Q247917/
 	
 	=============================================================================
 	
+
+{% endraw %}

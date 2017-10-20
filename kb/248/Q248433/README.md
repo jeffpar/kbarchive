@@ -6,6 +6,8 @@ permalink: /kb/248/Q248433/
 
 ## Q248433: Fighter Ace II Err Msg: Expected Voodoo Graphics, None Detected
 
+{% raw %}
+
 	Article: Q248433
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/248/Q248433/
 	
 	=============================================================================
 	
+
+{% endraw %}

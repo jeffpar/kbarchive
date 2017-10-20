@@ -6,6 +6,8 @@ permalink: /kb/060/Q60959/
 
 ## Q60959: Keyboard Summary of Flight Simulator Slewing Controls
 
+{% raw %}
+
 	Article: Q60959
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/060/Q60959/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163379/
 
 ## Q163379: SMS: Sender Capacity May Cause Secondary Site Install Failure
 
+{% raw %}
+
 	Article: Q163379
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -74,3 +76,5 @@ permalink: /kb/163/Q163379/
 	
 	=============================================================================
 	
+
+{% endraw %}

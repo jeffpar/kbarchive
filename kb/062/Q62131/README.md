@@ -6,6 +6,8 @@ permalink: /kb/062/Q62131/
 
 ## Q62131: Mac Hyp: Forwarding a Message and Its Enclosures
 
+{% raw %}
+
 	Article: Q62131
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -58,3 +60,5 @@ permalink: /kb/062/Q62131/
 	
 	=============================================================================
 	
+
+{% endraw %}

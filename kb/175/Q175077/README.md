@@ -6,6 +6,8 @@ permalink: /kb/175/Q175077/
 
 ## Q175077: SMS: Audit Gets &quot;No Data Available&quot; Message After Full Inventory
 
+{% raw %}
+
 	Article: Q175077
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -73,3 +75,5 @@ permalink: /kb/175/Q175077/
 	
 	=============================================================================
 	
+
+{% endraw %}

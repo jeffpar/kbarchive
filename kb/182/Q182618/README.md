@@ -6,6 +6,8 @@ permalink: /kb/182/Q182618/
 
 ## Q182618: XADM: Cannot Log On Using IMAP4 If WinNT Locale Set to Swedish
 
+{% raw %}
+
 	Article: Q182618
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -89,3 +91,5 @@ permalink: /kb/182/Q182618/
 	
 	=============================================================================
 	
+
+{% endraw %}

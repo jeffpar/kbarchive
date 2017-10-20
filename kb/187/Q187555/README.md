@@ -6,6 +6,8 @@ permalink: /kb/187/Q187555/
 
 ## Q187555: WINS Incorrect Version ID Assigned During Scavenging
 
+{% raw %}
+
 	Article: Q187555
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -109,3 +111,5 @@ permalink: /kb/187/Q187555/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82773/
 
 ## Q82773: How Setup Determines a File Version
 
+{% raw %}
+
 	Article: Q82773
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/082/Q82773/
 	
 	=============================================================================
 	
+
+{% endraw %}

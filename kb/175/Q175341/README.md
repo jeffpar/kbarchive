@@ -6,6 +6,8 @@ permalink: /kb/175/Q175341/
 
 ## Q175341: Multipage LU3 Print Jobs Don't Form Feed Correctly
 
+{% raw %}
+
 	Article: Q175341
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2
@@ -84,3 +86,5 @@ permalink: /kb/175/Q175341/
 	
 	=============================================================================
 	
+
+{% endraw %}

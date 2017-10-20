@@ -6,6 +6,8 @@ permalink: /kb/168/Q168069/
 
 ## Q168069: Cannot Change Time Style Setting
 
+{% raw %}
+
 	Article: Q168069
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/168/Q168069/
 	
 	=============================================================================
 	
+
+{% endraw %}

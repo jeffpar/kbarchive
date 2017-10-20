@@ -6,6 +6,8 @@ permalink: /kb/109/Q109152/
 
 ## Q109152: How to Create a Data Grouping on Every Nth Record
 
+{% raw %}
+
 	Article: Q109152
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.6,2.6a; MS-DOS:2.5,2.5a,2.5b,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,
@@ -64,3 +66,5 @@ permalink: /kb/109/Q109152/
 	
 	=============================================================================
 	
+
+{% endraw %}

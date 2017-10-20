@@ -6,6 +6,8 @@ permalink: /kb/299/Q299755/
 
 ## Q299755: Train Simulator: Program Hangs When You Unlock Computer
 
+{% raw %}
+
 	Article: Q299755
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/299/Q299755/
 	
 	=============================================================================
 	
+
+{% endraw %}

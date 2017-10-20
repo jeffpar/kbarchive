@@ -6,6 +6,8 @@ permalink: /kb/148/Q148686/
 
 ## Q148686: FIX: IOMANIPdeclare Macro Causes C2758 Error with References
 
+{% raw %}
+
 	Article: Q148686
 	Product(s): Microsoft C Compiler
 	Version(s): 1.52,2.2,4.0,4.1,4.2,5.0,6.0
@@ -217,3 +219,5 @@ permalink: /kb/148/Q148686/
 	
 	=============================================================================
 	
+
+{% endraw %}

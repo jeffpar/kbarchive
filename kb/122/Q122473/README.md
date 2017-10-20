@@ -6,6 +6,8 @@ permalink: /kb/122/Q122473/
 
 ## Q122473: Complete Basketball '94-'95: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q122473
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994-1995 edition
@@ -274,3 +276,5 @@ permalink: /kb/122/Q122473/
 	
 	=============================================================================
 	
+
+{% endraw %}

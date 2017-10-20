@@ -6,6 +6,8 @@ permalink: /kb/039/Q39246/
 
 ## Q39246: No QB Support for Mixed Languages Compiled with /FPc or /FPa
 
+{% raw %}
+
 	Article: Q39246
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/039/Q39246/
 	(QBX.EXE) that comes with BASIC PDS support /FPa. Therefore,
 	mixed-language programming using alternate math (/FPa) could be
 	accomplished with compiled programs with these products.
+
+{% endraw %}

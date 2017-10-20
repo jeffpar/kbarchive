@@ -6,6 +6,8 @@ permalink: /kb/195/Q195885/
 
 ## Q195885: Installing Seagate Backup Exec 7.x on Terminal Server
 
+{% raw %}
+
 	Article: Q195885
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/195/Q195885/
 	
 	=============================================================================
 	
+
+{% endraw %}

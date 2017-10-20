@@ -6,6 +6,8 @@ permalink: /kb/155/Q155979/
 
 ## Q155979: Windows NT/2000 Backup Does Not Recognize Windows 95/98 Backup
 
+{% raw %}
+
 	Article: Q155979
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -56,3 +58,5 @@ permalink: /kb/155/Q155979/
 	
 	=============================================================================
 	
+
+{% endraw %}

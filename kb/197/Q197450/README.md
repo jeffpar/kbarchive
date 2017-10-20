@@ -6,6 +6,8 @@ permalink: /kb/197/Q197450/
 
 ## Q197450: XCLN: Macintosh Outlook Client Version 8.1 New Features
 
+{% raw %}
+
 	Article: Q197450
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0
@@ -73,3 +75,5 @@ permalink: /kb/197/Q197450/
 	
 	=============================================================================
 	
+
+{% endraw %}

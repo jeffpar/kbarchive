@@ -6,6 +6,8 @@ permalink: /kb/120/Q120925/
 
 ## Q120925: Visual C++ Vers 2.0 README.WRI, Part 9 Utilities
 
+{% raw %}
+
 	Article: Q120925
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -49,3 +51,5 @@ permalink: /kb/120/Q120925/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67222/
 
 ## Q67222: Calendar Err Msg: Cannot Add Another Date to Calendar...
 
+{% raw %}
+
 	Article: Q67222
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/067/Q67222/
 	
 	=============================================================================
 	
+
+{% endraw %}

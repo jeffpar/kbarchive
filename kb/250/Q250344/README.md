@@ -6,6 +6,8 @@ permalink: /kb/250/Q250344/
 
 ## Q250344: SAMPLE: ARRAYCONVERT.EXE Variant Conversion Functions
 
+{% raw %}
+
 	Article: Q250344
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/250/Q250344/
 	
 	=============================================================================
 	
+
+{% endraw %}

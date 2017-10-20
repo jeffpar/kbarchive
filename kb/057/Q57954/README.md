@@ -6,6 +6,8 @@ permalink: /kb/057/Q57954/
 
 ## Q57954: EMS Support in Windows Versions 3.0 and 3.1
 
+{% raw %}
+
 	Article: Q57954
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -160,3 +162,5 @@ permalink: /kb/057/Q57954/
 	
 	=============================================================================
 	
+
+{% endraw %}

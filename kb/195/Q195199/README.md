@@ -6,6 +6,8 @@ permalink: /kb/195/Q195199/
 
 ## Q195199: WD97: Frame Border Indented When You Indent Text in Frame
 
+{% raw %}
+
 	Article: Q195199
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/195/Q195199/
 	
 	=============================================================================
 	
+
+{% endraw %}

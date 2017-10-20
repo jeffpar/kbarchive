@@ -6,6 +6,8 @@ permalink: /kb/255/Q255881/
 
 ## Q255881: Allegiance: Game Hangs When You Attempt to Launch a Ship
 
+{% raw %}
+
 	Article: Q255881
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/255/Q255881/
 	
 	=============================================================================
 	
+
+{% endraw %}

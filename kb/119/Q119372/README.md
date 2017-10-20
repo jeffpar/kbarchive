@@ -6,6 +6,8 @@ permalink: /kb/119/Q119372/
 
 ## Q119372: Setting the Name Resolution Search Order for TCP/IP-32
 
+{% raw %}
+
 	Article: Q119372
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -65,3 +67,5 @@ permalink: /kb/119/Q119372/
 	
 	=============================================================================
 	
+
+{% endraw %}

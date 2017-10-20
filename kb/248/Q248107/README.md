@@ -6,6 +6,8 @@ permalink: /kb/248/Q248107/
 
 ## Q248107: Creating Server Certificates Using Certificate Services Web Form
 
+{% raw %}
+
 	Article: Q248107
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -121,3 +123,5 @@ permalink: /kb/248/Q248107/
 	
 	=============================================================================
 	
+
+{% endraw %}

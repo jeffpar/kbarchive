@@ -6,6 +6,8 @@ permalink: /kb/121/Q121057/
 
 ## Q121057: 20 Second Delay in Keystrokes and Mouse Movements in TCP/IP-32
 
+{% raw %}
+
 	Article: Q121057
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -57,3 +59,5 @@ permalink: /kb/121/Q121057/
 	
 	=============================================================================
 	
+
+{% endraw %}

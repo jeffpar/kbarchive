@@ -6,6 +6,8 @@ permalink: /kb/166/Q166612/
 
 ## Q166612: XADM: Migration from Collabra to MS Exchange Fails
 
+{% raw %}
+
 	Article: Q166612
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -143,3 +145,5 @@ permalink: /kb/166/Q166612/
 	
 	=============================================================================
 	
+
+{% endraw %}

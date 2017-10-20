@@ -6,6 +6,8 @@ permalink: /kb/200/Q200953/
 
 ## Q200953: SMS: Deploying SMS 2.0 in an Existing SMS 1.2 Site
 
+{% raw %}
+
 	Article: Q200953
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/200/Q200953/
 	
 	=============================================================================
 	
+
+{% endraw %}

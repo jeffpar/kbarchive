@@ -6,6 +6,8 @@ permalink: /kb/156/Q156632/
 
 ## Q156632: PRB: SetFocus Does Not Function in All Control Methods
 
+{% raw %}
+
 	Article: Q156632
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -79,3 +81,5 @@ permalink: /kb/156/Q156632/
 	
 	=============================================================================
 	
+
+{% endraw %}

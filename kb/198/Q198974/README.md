@@ -6,6 +6,8 @@ permalink: /kb/198/Q198974/
 
 ## Q198974: HOWTO: Use the Common Dialog Control with Multiple Long File Nam
 
+{% raw %}
+
 	Article: Q198974
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -175,3 +177,5 @@ permalink: /kb/198/Q198974/
 	
 	=============================================================================
 	
+
+{% endraw %}

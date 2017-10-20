@@ -6,6 +6,8 @@ permalink: /kb/162/Q162552/
 
 ## Q162552: WD97: Error Attempting to Copy or Rename Project Module
 
+{% raw %}
+
 	Article: Q162552
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/162/Q162552/
 	
 	=============================================================================
 	
+
+{% endraw %}

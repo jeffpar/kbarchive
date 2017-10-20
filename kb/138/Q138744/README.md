@@ -6,6 +6,8 @@ permalink: /kb/138/Q138744/
 
 ## Q138744: Policy Editor Adds Incorrect Value for NetWare Search Mode
 
+{% raw %}
+
 	Article: Q138744
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -109,3 +111,5 @@ permalink: /kb/138/Q138744/
 	
 	=============================================================================
 	
+
+{% endraw %}

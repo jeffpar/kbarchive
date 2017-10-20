@@ -6,6 +6,8 @@ permalink: /kb/143/Q143478/
 
 ## Q143478: Stop 0A in Tcpip.sys When Receiving Out Of Band (OOB) Data
 
+{% raw %}
+
 	Article: Q143478
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -151,3 +153,5 @@ permalink: /kb/143/Q143478/
 	
 	=============================================================================
 	
+
+{% endraw %}

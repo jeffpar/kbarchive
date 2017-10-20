@@ -6,6 +6,8 @@ permalink: /kb/223/Q223165/
 
 ## Q223165: FIX: GetIDsOfNames( ) Returns DISP_E_UNKNOWNNAME for Named Args
 
+{% raw %}
+
 	Article: Q223165
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/223/Q223165/
 	
 	=============================================================================
 	
+
+{% endraw %}

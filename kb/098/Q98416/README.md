@@ -6,6 +6,8 @@ permalink: /kb/098/Q98416/
 
 ## Q98416: DosOpen Thread Blocked Pending DosWaitNmPipe
 
+{% raw %}
+
 	Article: Q98416
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/098/Q98416/
 	
 	=============================================================================
 	
+
+{% endraw %}

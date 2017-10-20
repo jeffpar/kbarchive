@@ -6,6 +6,8 @@ permalink: /kb/238/Q238819/
 
 ## Q238819: Windows NT Remote Troubleshooting/Diagnostics Paper Available
 
+{% raw %}
+
 	Article: Q238819
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/238/Q238819/
 	
 	=============================================================================
 	
+
+{% endraw %}

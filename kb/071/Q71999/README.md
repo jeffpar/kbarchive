@@ -6,6 +6,8 @@ permalink: /kb/071/Q71999/
 
 ## Q71999: WD97: How to Disable the Fast Saves Option
 
+{% raw %}
+
 	Article: Q71999
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/071/Q71999/
 	
 	=============================================================================
 	
+
+{% endraw %}

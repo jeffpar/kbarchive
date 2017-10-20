@@ -6,6 +6,8 @@ permalink: /kb/260/Q260335/
 
 ## Q260335: SMS: SQL Provider May Fail to Install on Remote SQL Server
 
+{% raw %}
+
 	Article: Q260335
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -56,3 +58,5 @@ permalink: /kb/260/Q260335/
 	
 	=============================================================================
 	
+
+{% endraw %}

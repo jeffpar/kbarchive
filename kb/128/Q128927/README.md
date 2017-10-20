@@ -6,6 +6,8 @@ permalink: /kb/128/Q128927/
 
 ## Q128927: Err Msg: Remote Control Agent Cannot Load IDIS_IPX.DLL
 
+{% raw %}
+
 	Article: Q128927
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -67,3 +69,5 @@ permalink: /kb/128/Q128927/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194726/
 
 ## Q194726: FPNW Client Does Not Get Correct Time or Date After Y2K
 
+{% raw %}
+
 	Article: Q194726
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -128,3 +130,5 @@ permalink: /kb/194/Q194726/
 	
 	=============================================================================
 	
+
+{% endraw %}

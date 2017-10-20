@@ -6,6 +6,8 @@ permalink: /kb/243/Q243632/
 
 ## Q243632: XCON: Maximum X.400 Connectors on an Exchange Server Computer
 
+{% raw %}
+
 	Article: Q243632
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -140,3 +142,5 @@ permalink: /kb/243/Q243632/
 	
 	=============================================================================
 	
+
+{% endraw %}

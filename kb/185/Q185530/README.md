@@ -6,6 +6,8 @@ permalink: /kb/185/Q185530/
 
 ## Q185530: WD97: Unexpected Behavior Paste Linking Ami Pro Document Object
 
+{% raw %}
+
 	Article: Q185530
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/185/Q185530/
 	
 	=============================================================================
 	
+
+{% endraw %}

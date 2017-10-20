@@ -6,6 +6,8 @@ permalink: /kb/069/Q69483/
 
 ## Q69483: Running SMARTDrive with Windows and Future Domain's LDRIVE.SYS
 
+{% raw %}
+
 	Article: Q69483
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/069/Q69483/
 	
 	=============================================================================
 	
+
+{% endraw %}

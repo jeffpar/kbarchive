@@ -6,6 +6,8 @@ permalink: /kb/098/Q98113/
 
 ## Q98113: Playing as Guest in Tri-Peaks Does Not Register High Score
 
+{% raw %}
+
 	Article: Q98113
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -48,3 +50,5 @@ permalink: /kb/098/Q98113/
 	
 	=============================================================================
 	
+
+{% endraw %}

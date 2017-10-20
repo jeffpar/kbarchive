@@ -6,6 +6,8 @@ permalink: /kb/281/Q281718/
 
 ## Q281718: SMS: The Accumulation of .ddr Files on Secondary Site Servers
 
+{% raw %}
+
 	Article: Q281718
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/281/Q281718/
 	
 	=============================================================================
 	
+
+{% endraw %}

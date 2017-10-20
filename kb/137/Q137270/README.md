@@ -6,6 +6,8 @@ permalink: /kb/137/Q137270/
 
 ## Q137270: CD-ROM Drive Not Detected on Media Vision 3D Sound Card
 
+{% raw %}
+
 	Article: Q137270
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137270/
 	
 	=============================================================================
 	
+
+{% endraw %}

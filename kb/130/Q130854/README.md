@@ -6,6 +6,8 @@ permalink: /kb/130/Q130854/
 
 ## Q130854: Automating the SNA Server Win 3.x Client Login Process
 
+{% raw %}
+
 	Article: Q130854
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,3.0,4.0
@@ -132,3 +134,5 @@ permalink: /kb/130/Q130854/
 	
 	=============================================================================
 	
+
+{% endraw %}

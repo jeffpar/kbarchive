@@ -6,6 +6,8 @@ permalink: /kb/216/Q216345/
 
 ## Q216345: Error During SSD 2.10 or Earlier Installation on WinNT 4.0 SP4
 
+{% raw %}
+
 	Article: Q216345
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/216/Q216345/
 	
 	=============================================================================
 	
+
+{% endraw %}

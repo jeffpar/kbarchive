@@ -6,6 +6,8 @@ permalink: /kb/083/Q83293/
 
 ## Q83293: Emulation Modes for Mannesmann Tally Printers with Windows 3.0
 
+{% raw %}
+
 	Article: Q83293
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/083/Q83293/
 	
 	=============================================================================
 	
+
+{% endraw %}

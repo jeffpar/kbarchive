@@ -6,6 +6,8 @@ permalink: /kb/235/Q235984/
 
 ## Q235984: XADM: Event ID 1025 During Information Store Storage Warning
 
+{% raw %}
+
 	Article: Q235984
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -102,3 +104,5 @@ permalink: /kb/235/Q235984/
 	
 	=============================================================================
 	
+
+{% endraw %}

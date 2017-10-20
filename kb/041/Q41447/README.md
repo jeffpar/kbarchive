@@ -6,6 +6,8 @@ permalink: /kb/041/Q41447/
 
 ## Q41447: QB 4.x Example to Load MS-DOS Directory Listing into an Array
 
+{% raw %}
+
 	Article: Q41447
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -226,3 +228,5 @@ permalink: /kb/041/Q41447/
 	  inreg.dx = VARPTR(BUFFER)
 	  CALL interruptx(&H21, inreg, outreg)
 	END SUB
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176487/
 
 ## Q176487: PRB: C2065 Error Occurs on GetWrapperWindow or Other Symbols
 
+{% raw %}
+
 	Article: Q176487
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0,4.0b
@@ -175,3 +177,5 @@ permalink: /kb/176/Q176487/
 	
 	=============================================================================
 	
+
+{% endraw %}

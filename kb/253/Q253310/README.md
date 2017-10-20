@@ -6,6 +6,8 @@ permalink: /kb/253/Q253310/
 
 ## Q253310: XCON: MTA on RAS Server Stops Repeatedly with Events 9315, 9405
 
+{% raw %}
+
 	Article: Q253310
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/253/Q253310/
 	
 	=============================================================================
 	
+
+{% endraw %}

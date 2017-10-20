@@ -6,6 +6,8 @@ permalink: /kb/137/Q137203/
 
 ## Q137203: XADM: Controlling Intra-Site Replication
 
+{% raw %}
+
 	Article: Q137203
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/137/Q137203/
 	
 	=============================================================================
 	
+
+{% endraw %}

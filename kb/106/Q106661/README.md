@@ -6,6 +6,8 @@ permalink: /kb/106/Q106661/
 
 ## Q106661: How to Determine the Shape of the Mouse Cursor
 
+{% raw %}
+
 	Article: Q106661
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,3.0
@@ -96,3 +98,5 @@ permalink: /kb/106/Q106661/
 	
 	=============================================================================
 	
+
+{% endraw %}

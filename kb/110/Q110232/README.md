@@ -6,6 +6,8 @@ permalink: /kb/110/Q110232/
 
 ## Q110232: Error If Font Pack 2 Is Installed over Word Assistant
 
+{% raw %}
+
 	Article: Q110232
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11,6.0; :1.0
@@ -75,3 +77,5 @@ permalink: /kb/110/Q110232/
 	
 	=============================================================================
 	
+
+{% endraw %}

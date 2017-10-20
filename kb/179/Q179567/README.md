@@ -6,6 +6,8 @@ permalink: /kb/179/Q179567/
 
 ## Q179567: ODE97: Setup Wizard Template Files Updater Available
 
+{% raw %}
+
 	Article: Q179567
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -126,3 +128,5 @@ permalink: /kb/179/Q179567/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84428/
 
 ## Q84428: HP DeskJet Printer Driver Support in Windows 3.1
 
+{% raw %}
+
 	Article: Q84428
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -117,3 +119,5 @@ permalink: /kb/084/Q84428/
 	
 	=============================================================================
 	
+
+{% endraw %}

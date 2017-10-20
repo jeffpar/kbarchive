@@ -6,6 +6,8 @@ permalink: /kb/169/Q169668/
 
 ## Q169668: XCON: X.25 Support for SAT Cards
 
+{% raw %}
+
 	Article: Q169668
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -76,3 +78,5 @@ permalink: /kb/169/Q169668/
 	
 	=============================================================================
 	
+
+{% endraw %}

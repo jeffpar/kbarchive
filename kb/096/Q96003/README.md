@@ -6,6 +6,8 @@ permalink: /kb/096/Q96003/
 
 ## Q96003: PC DirSync: Error and Status Msgs #60 - 118
 
+{% raw %}
+
 	Article: Q96003
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -254,3 +256,5 @@ permalink: /kb/096/Q96003/
 	
 	=============================================================================
 	
+
+{% endraw %}

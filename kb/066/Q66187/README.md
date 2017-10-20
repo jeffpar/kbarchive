@@ -6,6 +6,8 @@ permalink: /kb/066/Q66187/
 
 ## Q66187: Flight Simulator: Coordinates for the Statue of Liberty
 
+{% raw %}
+
 	Article: Q66187
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/066/Q66187/
 	
 	=============================================================================
 	
+
+{% endraw %}

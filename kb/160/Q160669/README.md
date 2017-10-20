@@ -6,6 +6,8 @@ permalink: /kb/160/Q160669/
 
 ## Q160669: Err. Msg: The Catalog Directory Can Not Be Found...
 
+{% raw %}
+
 	Article: Q160669
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.1
@@ -67,3 +69,5 @@ permalink: /kb/160/Q160669/
 	
 	=============================================================================
 	
+
+{% endraw %}

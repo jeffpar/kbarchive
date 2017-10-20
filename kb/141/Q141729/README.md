@@ -6,6 +6,8 @@ permalink: /kb/141/Q141729/
 
 ## Q141729: Macintosh Ultimate Robot: Screen Saver Viewer Does Not Start
 
+{% raw %}
+
 	Article: Q141729
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/141/Q141729/
 	
 	=============================================================================
 	
+
+{% endraw %}

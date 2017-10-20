@@ -6,6 +6,8 @@ permalink: /kb/241/Q241223/
 
 ## Q241223: Overloaded DHCP Server Stops Functioning with Limited Queue Size
 
+{% raw %}
+
 	Article: Q241223
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/241/Q241223/
 	
 	=============================================================================
 	
+
+{% endraw %}

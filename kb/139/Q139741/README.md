@@ -6,6 +6,8 @@ permalink: /kb/139/Q139741/
 
 ## Q139741: Clicking MSN Icon Does Not Open Sign In Window
 
+{% raw %}
+
 	Article: Q139741
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0
@@ -85,3 +87,5 @@ permalink: /kb/139/Q139741/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143366/
 
 ## Q143366: MSB Solar: ErrMsg: Solar System Needs More Memory to Run
 
+{% raw %}
+
 	Article: Q143366
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,3.x
@@ -113,3 +115,5 @@ permalink: /kb/143/Q143366/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/062/Q62332/
 
 ## Q62332: Can't Use Multiple Description Blocks with NMAKE Version 1.10
 
+{% raw %}
+
 	Article: Q62332
 	Product(s): See article
 	Version(s): 1.10
@@ -54,3 +56,5 @@ permalink: /kb/062/Q62332/
 	
 	Microsoft has confirmed this to be a problem in NMAKE version 1.10.
 	This problem was corrected in version 1.11.
+
+{% endraw %}

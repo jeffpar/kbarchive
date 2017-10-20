@@ -6,6 +6,8 @@ permalink: /kb/133/Q133340/
 
 ## Q133340: Windows 95/98: How to Delete a File
 
+{% raw %}
+
 	Article: Q133340
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:95
@@ -94,3 +96,5 @@ permalink: /kb/133/Q133340/
 	
 	=============================================================================
 	
+
+{% endraw %}

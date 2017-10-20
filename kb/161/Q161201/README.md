@@ -6,6 +6,8 @@ permalink: /kb/161/Q161201/
 
 ## Q161201: NTBackup.exe from WinNT 3.51 SP5 Causes Verify Errors
 
+{% raw %}
+
 	Article: Q161201
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/161/Q161201/
 	
 	=============================================================================
 	
+
+{% endraw %}

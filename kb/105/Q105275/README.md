@@ -6,6 +6,8 @@ permalink: /kb/105/Q105275/
 
 ## Q105275: Using the &quot;BR&quot; Command in WDEB386.EXE
 
+{% raw %}
+
 	Article: Q105275
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -56,3 +58,5 @@ permalink: /kb/105/Q105275/
 	
 	=============================================================================
 	
+
+{% endraw %}

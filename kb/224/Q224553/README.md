@@ -6,6 +6,8 @@ permalink: /kb/224/Q224553/
 
 ## Q224553: IIS Server Instance Parameters Window Is Missing
 
+{% raw %}
+
 	Article: Q224553
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -104,3 +106,5 @@ permalink: /kb/224/Q224553/
 	
 	=============================================================================
 	
+
+{% endraw %}

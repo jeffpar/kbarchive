@@ -6,6 +6,8 @@ permalink: /kb/132/Q132784/
 
 ## Q132784: Windows 95 Does Not Start on Dell Omniplex
 
+{% raw %}
+
 	Article: Q132784
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/132/Q132784/
 	
 	=============================================================================
 	
+
+{% endraw %}

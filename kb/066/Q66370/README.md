@@ -6,6 +6,8 @@ permalink: /kb/066/Q66370/
 
 ## Q66370: ListHorz/ListHscr EXEs Control Horizontal Scroll Bar List Box
 
+{% raw %}
+
 	Article: Q66370
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -435,3 +437,5 @@ permalink: /kb/066/Q66370/
 	
 	=============================================================================
 	
+
+{% endraw %}

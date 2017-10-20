@@ -6,6 +6,8 @@ permalink: /kb/137/Q137810/
 
 ## Q137810: Maximum Number of Volumes a Macintosh Can Mount
 
+{% raw %}
+
 	Article: Q137810
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -50,3 +52,5 @@ permalink: /kb/137/Q137810/
 	
 	=============================================================================
 	
+
+{% endraw %}

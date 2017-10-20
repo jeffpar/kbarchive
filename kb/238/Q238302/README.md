@@ -6,6 +6,8 @@ permalink: /kb/238/Q238302/
 
 ## Q238302: SMS: Logon Points Are Not Removed Correctly
 
+{% raw %}
+
 	Article: Q238302
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/238/Q238302/
 	
 	=============================================================================
 	
+
+{% endraw %}

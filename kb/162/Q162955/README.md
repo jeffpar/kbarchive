@@ -6,6 +6,8 @@ permalink: /kb/162/Q162955/
 
 ## Q162955: WD97: Alignment of Bulleted or Numbered List Lost in HTML
 
+{% raw %}
+
 	Article: Q162955
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/162/Q162955/
 	
 	=============================================================================
 	
+
+{% endraw %}

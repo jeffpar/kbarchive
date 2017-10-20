@@ -6,6 +6,8 @@ permalink: /kb/148/Q148177/
 
 ## Q148177: PRB: Mismatched Jet DLL Files with Excel and Visual Basic
 
+{% raw %}
+
 	Article: Q148177
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,4.0a; Win95:7.0
@@ -68,3 +70,5 @@ permalink: /kb/148/Q148177/
 	
 	=============================================================================
 	
+
+{% endraw %}

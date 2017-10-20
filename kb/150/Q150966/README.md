@@ -6,6 +6,8 @@ permalink: /kb/150/Q150966/
 
 ## Q150966: Macintosh Bookshelf '96-'97: Contents of Each Book
 
+{% raw %}
+
 	Article: Q150966
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -84,3 +86,5 @@ permalink: /kb/150/Q150966/
 	
 	=============================================================================
 	
+
+{% endraw %}

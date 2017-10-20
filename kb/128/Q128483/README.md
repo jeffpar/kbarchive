@@ -6,6 +6,8 @@ permalink: /kb/128/Q128483/
 
 ## Q128483: BUG: Selected Background Color Not Always Saved
 
+{% raw %}
+
 	Article: Q128483
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -73,3 +75,5 @@ permalink: /kb/128/Q128483/
 	
 	=============================================================================
 	
+
+{% endraw %}

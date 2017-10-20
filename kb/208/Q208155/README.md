@@ -6,6 +6,8 @@ permalink: /kb/208/Q208155/
 
 ## Q208155: PRB: BK1503 when Building Large .bsc File
 
+{% raw %}
+
 	Article: Q208155
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/208/Q208155/
 	
 	=============================================================================
 	
+
+{% endraw %}

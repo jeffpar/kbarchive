@@ -6,6 +6,8 @@ permalink: /kb/141/Q141901/
 
 ## Q141901: Attachment Icon in MS Mail Missing with &quot;Send To&quot; Command
 
+{% raw %}
+
 	Article: Q141901
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/141/Q141901/
 	
 	=============================================================================
 	
+
+{% endraw %}

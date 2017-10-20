@@ -6,6 +6,8 @@ permalink: /kb/186/Q186150/
 
 ## Q186150: NetBEUI May Hang When Using Arcnet Under Heavy Network Traffic
 
+{% raw %}
+
 	Article: Q186150
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/186/Q186150/
 	
 	=============================================================================
 	
+
+{% endraw %}

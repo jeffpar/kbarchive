@@ -6,6 +6,8 @@ permalink: /kb/172/Q172464/
 
 ## Q172464: SMS: PowerPoint Loses Cursor When PCMWIN16 Is Loaded
 
+{% raw %}
+
 	Article: Q172464
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2
@@ -60,3 +62,5 @@ permalink: /kb/172/Q172464/
 	
 	=============================================================================
 	
+
+{% endraw %}

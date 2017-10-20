@@ -6,6 +6,8 @@ permalink: /kb/061/Q61673/
 
 ## Q61673: &quot;Illegal Function Call&quot; with TAB &amp; LOCATE in Compiled Program
 
+{% raw %}
+
 	Article: Q61673
 	Product(s): See article
 	Version(s): 4.50
@@ -49,3 +51,5 @@ permalink: /kb/061/Q61673/
 	       PRINT TAB(2);
 	       LOCATE col, 1     'This line gives the "Illegal Function call"
 	   END SUB
+
+{% endraw %}

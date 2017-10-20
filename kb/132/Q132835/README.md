@@ -6,6 +6,8 @@ permalink: /kb/132/Q132835/
 
 ## Q132835: Brief 3.0 Behaves Erratically with Long PATH Variable
 
+{% raw %}
+
 	Article: Q132835
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132835/
 	
 	=============================================================================
 	
+
+{% endraw %}

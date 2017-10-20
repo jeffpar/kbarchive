@@ -6,6 +6,8 @@ permalink: /kb/180/Q180822/
 
 ## Q180822: FP98: How to Use Microsoft Forms 2.0 ActiveX Controls
 
+{% raw %}
+
 	Article: Q180822
 	Product(s): Word Front Page
 	Version(s): 
@@ -647,3 +649,5 @@ permalink: /kb/180/Q180822/
 	
 	=============================================================================
 	
+
+{% endraw %}

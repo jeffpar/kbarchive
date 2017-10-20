@@ -6,6 +6,8 @@ permalink: /kb/030/Q30816/
 
 ## Q30816: MASM 5.10 OS2.DOC: OS/2 Call Summary - Date/Time Management
 
+{% raw %}
+
 	Article: Q30816
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -36,3 +38,5 @@ permalink: /kb/030/Q30816/
 	
 	   @DosTimerStop - Stops an interval or asynchronous timer
 	   Parameters - Handle:W
+
+{% endraw %}

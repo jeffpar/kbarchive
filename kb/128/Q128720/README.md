@@ -6,6 +6,8 @@ permalink: /kb/128/Q128720/
 
 ## Q128720: INF: Use of SQLPutData() in Visual Basic
 
+{% raw %}
+
 	Article: Q128720
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0,2.1,3.0
@@ -309,3 +311,5 @@ permalink: /kb/128/Q128720/
 	
 	=============================================================================
 	
+
+{% endraw %}

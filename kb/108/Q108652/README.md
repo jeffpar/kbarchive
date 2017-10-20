@@ -6,6 +6,8 @@ permalink: /kb/108/Q108652/
 
 ## Q108652: Flight Simulator 5.0: Undocumented Autopilot Quick Key, CTRL+Z
 
+{% raw %}
+
 	Article: Q108652
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -37,3 +39,5 @@ permalink: /kb/108/Q108652/
 	
 	=============================================================================
 	
+
+{% endraw %}

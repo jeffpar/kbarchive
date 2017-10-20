@@ -6,6 +6,8 @@ permalink: /kb/189/Q189245/
 
 ## Q189245: Lmmib2.dll Does Not Support All Objects
 
+{% raw %}
+
 	Article: Q189245
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/189/Q189245/
 	
 	=============================================================================
 	
+
+{% endraw %}

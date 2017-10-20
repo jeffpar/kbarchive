@@ -6,6 +6,8 @@ permalink: /kb/150/Q150192/
 
 ## Q150192: FIX: X / Y Coordinates Reversed Using PSet on Printer Object
 
+{% raw %}
+
 	Article: Q150192
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/150/Q150192/
 	
 	=============================================================================
 	
+
+{% endraw %}

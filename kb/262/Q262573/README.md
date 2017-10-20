@@ -6,6 +6,8 @@ permalink: /kb/262/Q262573/
 
 ## Q262573: Japanese CICS File Transfer Fails with 3270 Applet
 
+{% raw %}
+
 	Article: Q262573
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -60,3 +62,5 @@ permalink: /kb/262/Q262573/
 	
 	=============================================================================
 	
+
+{% endraw %}

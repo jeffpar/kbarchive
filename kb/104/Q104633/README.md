@@ -6,6 +6,8 @@ permalink: /kb/104/Q104633/
 
 ## Q104633: Arcade: Scoring Topic in Battlezone Help File Incorrect
 
+{% raw %}
+
 	Article: Q104633
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -39,3 +41,5 @@ permalink: /kb/104/Q104633/
 	
 	=============================================================================
 	
+
+{% endraw %}

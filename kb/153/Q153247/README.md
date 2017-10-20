@@ -6,6 +6,8 @@ permalink: /kb/153/Q153247/
 
 ## Q153247: Despooler Uses More Bytes After Move to a Helper Server
 
+{% raw %}
+
 	Article: Q153247
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -57,3 +59,5 @@ permalink: /kb/153/Q153247/
 	
 	=============================================================================
 	
+
+{% endraw %}

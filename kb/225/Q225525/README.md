@@ -6,6 +6,8 @@ permalink: /kb/225/Q225525/
 
 ## Q225525: Users Cannot Change System Time
 
+{% raw %}
+
 	Article: Q225525
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/225/Q225525/
 	
 	=============================================================================
 	
+
+{% endraw %}

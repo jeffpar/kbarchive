@@ -6,6 +6,8 @@ permalink: /kb/172/Q172892/
 
 ## Q172892: FIX: MSDEV Crashes If Same PDB Name Used for Compiler and Linker
 
+{% raw %}
+
 	Article: Q172892
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -109,3 +111,5 @@ permalink: /kb/172/Q172892/
 	
 	=============================================================================
 	
+
+{% endraw %}

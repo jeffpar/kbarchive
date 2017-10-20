@@ -6,6 +6,8 @@ permalink: /kb/084/Q84456/
 
 ## Q84456: SAMPLE: TERMWAIT Spawns Task and Waits for its Termination
 
+{% raw %}
+
 	Article: Q84456
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -93,3 +95,5 @@ permalink: /kb/084/Q84456/
 	
 	=============================================================================
 	
+
+{% endraw %}

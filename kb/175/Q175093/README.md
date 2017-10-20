@@ -6,6 +6,8 @@ permalink: /kb/175/Q175093/
 
 ## Q175093: User Manager Does Not Recognize February 2000 As a Leap Year
 
+{% raw %}
+
 	Article: Q175093
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -144,3 +146,5 @@ permalink: /kb/175/Q175093/
 	
 	=============================================================================
 	
+
+{% endraw %}

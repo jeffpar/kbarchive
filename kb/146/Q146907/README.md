@@ -6,6 +6,8 @@ permalink: /kb/146/Q146907/
 
 ## Q146907: HOWTO: Create a Screen Saver in Visual Basic
 
+{% raw %}
+
 	Article: Q146907
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -166,3 +168,5 @@ permalink: /kb/146/Q146907/
 	
 	=============================================================================
 	
+
+{% endraw %}

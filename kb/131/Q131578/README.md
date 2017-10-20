@@ -6,6 +6,8 @@ permalink: /kb/131/Q131578/
 
 ## Q131578: FIX: Math Problem with INT() Function
 
+{% raw %}
+
 	Article: Q131578
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -68,3 +70,5 @@ permalink: /kb/131/Q131578/
 	
 	=============================================================================
 	
+
+{% endraw %}

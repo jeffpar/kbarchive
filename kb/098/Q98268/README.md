@@ -6,6 +6,8 @@ permalink: /kb/098/Q98268/
 
 ## Q98268: PRB: Metafiles and Palettes
 
+{% raw %}
+
 	Article: Q98268
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -175,3 +177,5 @@ permalink: /kb/098/Q98268/
 	
 	=============================================================================
 	
+
+{% endraw %}

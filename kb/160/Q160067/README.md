@@ -6,6 +6,8 @@ permalink: /kb/160/Q160067/
 
 ## Q160067: Golf 3.0 Trial Version Is Available
 
+{% raw %}
+
 	Article: Q160067
 	Product(s): Microsoft Home Games
 	Version(s): 3.0
@@ -57,3 +59,5 @@ permalink: /kb/160/Q160067/
 	
 	=============================================================================
 	
+
+{% endraw %}

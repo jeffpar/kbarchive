@@ -6,6 +6,8 @@ permalink: /kb/059/Q59402/
 
 ## Q59402: QBX &amp; BC /Es Option Shares Expanded Memory with Mixed Language
 
+{% raw %}
+
 	Article: Q59402
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -70,3 +72,5 @@ permalink: /kb/059/Q59402/
 	            of expanded memory. Specify /Es when you are using a
 	            Quick library or mixed-language routine that makes use
 	            of expanded memory. Do not use /Es with the /Ea option.
+
+{% endraw %}

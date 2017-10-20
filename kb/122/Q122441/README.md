@@ -6,6 +6,8 @@ permalink: /kb/122/Q122441/
 
 ## Q122441: STOP 7B When Not Updating File Systems for Windows NT 3.1
 
+{% raw %}
+
 	Article: Q122441
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/122/Q122441/
 	
 	=============================================================================
 	
+
+{% endraw %}

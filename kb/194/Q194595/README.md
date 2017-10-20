@@ -6,6 +6,8 @@ permalink: /kb/194/Q194595/
 
 ## Q194595: FP98: Permissions Not Retained When Web Is Renamed
 
+{% raw %}
+
 	Article: Q194595
 	Product(s): Word Front Page
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/194/Q194595/
 	
 	=============================================================================
 	
+
+{% endraw %}

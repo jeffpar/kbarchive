@@ -6,6 +6,8 @@ permalink: /kb/028/Q28171/
 
 ## Q28171: Calling Interrupts to Program Microsoft Mouse from QuickBASIC
 
+{% raw %}
+
 	Article: Q28171
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -138,3 +140,5 @@ permalink: /kb/028/Q28171/
 	  CALL int86old(51, regs(), regs())
 	  m0 = regs(0): m1 = regs(1): m2 = regs(2): m3 = regs(3)
 	END SUB
+
+{% endraw %}

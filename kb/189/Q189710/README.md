@@ -6,6 +6,8 @@ permalink: /kb/189/Q189710/
 
 ## Q189710: FIX: ActiveX Control Shows Through Page After Modal Form Runs
 
+{% raw %}
+
 	Article: Q189710
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -120,3 +122,5 @@ permalink: /kb/189/Q189710/
 	
 	=============================================================================
 	
+
+{% endraw %}

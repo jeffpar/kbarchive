@@ -6,6 +6,8 @@ permalink: /kb/082/Q82760/
 
 ## Q82760: Citizen Printers: Dark Printing with Color Option On
 
+{% raw %}
+
 	Article: Q82760
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/082/Q82760/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89556/
 
 ## Q89556: Windows for Workgroups Drivers Install in Root Directory
 
+{% raw %}
+
 	Article: Q89556
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/089/Q89556/
 	
 	=============================================================================
 	
+
+{% endraw %}

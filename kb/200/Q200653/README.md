@@ -6,6 +6,8 @@ permalink: /kb/200/Q200653/
 
 ## Q200653: SMS: Using Conv20.exe to Check Database Integrity
 
+{% raw %}
+
 	Article: Q200653
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -71,3 +73,5 @@ permalink: /kb/200/Q200653/
 	
 	=============================================================================
 	
+
+{% endraw %}

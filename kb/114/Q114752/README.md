@@ -6,6 +6,8 @@ permalink: /kb/114/Q114752/
 
 ## Q114752: Commands and Functions Affected by SET COMPATIBLE
 
+{% raw %}
+
 	Article: Q114752
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -128,3 +130,5 @@ permalink: /kb/114/Q114752/
 	
 	=============================================================================
 	
+
+{% endraw %}

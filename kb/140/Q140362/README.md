@@ -6,6 +6,8 @@ permalink: /kb/140/Q140362/
 
 ## Q140362: BUG: PVCS_SS Does Not Work with PVCS for Windows NT
 
+{% raw %}
+
 	Article: Q140362
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -51,3 +53,5 @@ permalink: /kb/140/Q140362/
 	
 	=============================================================================
 	
+
+{% endraw %}

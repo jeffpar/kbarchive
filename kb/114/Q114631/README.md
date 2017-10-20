@@ -6,6 +6,8 @@ permalink: /kb/114/Q114631/
 
 ## Q114631: What to Do When You Have a Damaged FoxPro Disk
 
+{% raw %}
+
 	Article: Q114631
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -109,3 +111,5 @@ permalink: /kb/114/Q114631/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114376/
 
 ## Q114376: FIX: CWnd::ExecuteDlgInit() Uses AfxGetInstanceHandle
 
+{% raw %}
+
 	Article: Q114376
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -137,9 +139,9 @@ permalink: /kb/114/Q114376/
 	  CDerivedDlg::CDerivedDlg(CWnd* pParent /*=NULL*/)
 	      : CDialog(CDerivedDlg::IDD, pParent)
 	  {
-	      //{ {AFX_DATA_INIT(CDerivedDlg)
+	      //{{AFX_DATA_INIT(CDerivedDlg)
 	      // NOTE: the ClassWizard will add member initialization here
-	      //} }AFX_DATA_INIT
+	      //}}AFX_DATA_INIT
 	      AfxSetResourceHandle(ResourceInit(m_lpDialogTemplate,RT_DIALOG));
 	  }
 	
@@ -177,3 +179,5 @@ permalink: /kb/114/Q114376/
 	
 	=============================================================================
 	
+
+{% endraw %}

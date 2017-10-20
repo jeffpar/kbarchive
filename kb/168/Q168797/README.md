@@ -6,6 +6,8 @@ permalink: /kb/168/Q168797/
 
 ## Q168797: FIX: ImageList Control Does Not Accept Small Icons
 
+{% raw %}
+
 	Article: Q168797
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/168/Q168797/
 	
 	=============================================================================
 	
+
+{% endraw %}

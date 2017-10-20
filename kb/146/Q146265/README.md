@@ -6,6 +6,8 @@ permalink: /kb/146/Q146265/
 
 ## Q146265: Meeting Request Allows Multiple Resources
 
+{% raw %}
+
 	Article: Q146265
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -42,3 +44,5 @@ permalink: /kb/146/Q146265/
 	
 	=============================================================================
 	
+
+{% endraw %}

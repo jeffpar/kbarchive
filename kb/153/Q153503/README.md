@@ -6,6 +6,8 @@ permalink: /kb/153/Q153503/
 
 ## Q153503: BUG: Fonts are Corrupt or Extremely Large in Windows 95
 
+{% raw %}
+
 	Article: Q153503
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0,95
@@ -59,3 +61,5 @@ permalink: /kb/153/Q153503/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149553/
 
 ## Q149553: Greeting and Disconnect Problems Using Microsoft Phone
 
+{% raw %}
+
 	Article: Q149553
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/149/Q149553/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/316/Q316432/
 
 ## Q316432: FIX: XMLToCursor Incorrectly Adds Row When You Use Inline Schema
 
+{% raw %}
+
 	Article: Q316432
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -78,3 +80,5 @@ permalink: /kb/316/Q316432/
 	
 	=============================================================================
 	
+
+{% endraw %}

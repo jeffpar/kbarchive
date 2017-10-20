@@ -6,6 +6,8 @@ permalink: /kb/069/Q69537/
 
 ## Q69537: MSHERC.COM Mistakenly Loads on CGA Computer; README Addition
 
+{% raw %}
+
 	Article: Q69537
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -89,3 +91,5 @@ permalink: /kb/069/Q69537/
 	
 	Microsoft Mouse
 	=============================================================================
+
+{% endraw %}

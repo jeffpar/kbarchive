@@ -6,6 +6,8 @@ permalink: /kb/174/Q174063/
 
 ## Q174063: WD97: Data in Wrong Cell After Being Pasted from Table to Graph
 
+{% raw %}
+
 	Article: Q174063
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/174/Q174063/
 	
 	=============================================================================
 	
+
+{% endraw %}

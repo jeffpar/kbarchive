@@ -6,6 +6,8 @@ permalink: /kb/046/Q46816/
 
 ## Q46816: BC.EXE &quot;Cannot Generate Listing for BASIC Binary Source Files&quot;
 
+{% raw %}
+
 	Article: Q46816
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -36,3 +38,5 @@ permalink: /kb/046/Q46816/
 	3. Press SPACEBAR.
 	
 	4. Press ENTER and the file will be saved as text.
+
+{% endraw %}

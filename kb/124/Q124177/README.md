@@ -6,6 +6,8 @@ permalink: /kb/124/Q124177/
 
 ## Q124177: Application Error: SUWIN Caused an Illegal Instruction
 
+{% raw %}
+
 	Article: Q124177
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/124/Q124177/
 	
 	=============================================================================
 	
+
+{% endraw %}

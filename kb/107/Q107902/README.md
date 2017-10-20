@@ -6,6 +6,8 @@ permalink: /kb/107/Q107902/
 
 ## Q107902: Writer 1: Can't Use the Keyboard to Highlight Text
 
+{% raw %}
+
 	Article: Q107902
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -53,3 +55,5 @@ permalink: /kb/107/Q107902/
 	
 	=============================================================================
 	
+
+{% endraw %}

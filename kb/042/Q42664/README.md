@@ -6,6 +6,8 @@ permalink: /kb/042/Q42664/
 
 ## Q42664: QB.EXE Confusing If TYPE Statement Used in SUB/FUNCTION
 
+{% raw %}
+
 	Article: Q42664
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -71,3 +73,5 @@ permalink: /kb/042/Q42664/
 	If a TYPE statement is encountered in a SUB or FUNCTION, it should be
 	flagged as an error prior to flagging errors related to the TYPE
 	statement that are past the TYPE statement.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178550/
 
 ## Q178550: IP Address Conflict with Address 0.0.0.0
 
+{% raw %}
+
 	Article: Q178550
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -95,3 +97,5 @@ permalink: /kb/178/Q178550/
 	
 	=============================================================================
 	
+
+{% endraw %}

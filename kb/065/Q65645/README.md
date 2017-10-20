@@ -6,6 +6,8 @@ permalink: /kb/065/Q65645/
 
 ## Q65645: Use of Ternary Conditional Operator with a Constant
 
+{% raw %}
+
 	Article: Q65645
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -41,3 +43,5 @@ permalink: /kb/065/Q65645/
 	Microsoft has confirmed this to be a problem in C version 6.00. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87290/
 
 ## Q87290: What Is a Clean Boot for Windows 3.1?
 
+{% raw %}
+
 	Article: Q87290
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -170,3 +172,5 @@ permalink: /kb/087/Q87290/
 	
 	=============================================================================
 	
+
+{% endraw %}

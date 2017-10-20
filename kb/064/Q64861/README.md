@@ -6,6 +6,8 @@ permalink: /kb/064/Q64861/
 
 ## Q64861: Using the QMS Jetscript with Windows 3.0
 
+{% raw %}
+
 	Article: Q64861
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/064/Q64861/
 	
 	=============================================================================
 	
+
+{% endraw %}

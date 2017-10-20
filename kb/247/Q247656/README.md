@@ -6,6 +6,8 @@ permalink: /kb/247/Q247656/
 
 ## Q247656: XADM: How to Locate the Source of a Rogue Server Monitor
 
+{% raw %}
+
 	Article: Q247656
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -110,3 +112,5 @@ permalink: /kb/247/Q247656/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34917/
 
 ## Q34917: PRINT to Viewport Has Screen's Background Color Not Viewport's
 
+{% raw %}
+
 	Article: Q34917
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/034/Q34917/
 	REM Print is green with light blue background:
 	  LOCATE 9, 9: PRINT "Inner viewport"
 	  END
+
+{% endraw %}

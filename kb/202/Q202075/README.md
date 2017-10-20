@@ -6,6 +6,8 @@ permalink: /kb/202/Q202075/
 
 ## Q202075: Multiple Script Map Entries Created in IIS 4.0
 
+{% raw %}
+
 	Article: Q202075
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/202/Q202075/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104455/
 
 ## Q104455: Dinosaurs: Index: Not Returned to Letter If Topic Not Selected
 
+{% raw %}
+
 	Article: Q104455
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/104/Q104455/
 	
 	=============================================================================
 	
+
+{% endraw %}

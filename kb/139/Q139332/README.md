@@ -6,6 +6,8 @@ permalink: /kb/139/Q139332/
 
 ## Q139332: Interactive Switch Fails With Schedule Service
 
+{% raw %}
+
 	Article: Q139332
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -46,3 +48,5 @@ permalink: /kb/139/Q139332/
 	
 	=============================================================================
 	
+
+{% endraw %}

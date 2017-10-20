@@ -6,6 +6,8 @@ permalink: /kb/098/Q98389/
 
 ## Q98389: PC WFW: 3.0b Windows Client Disk 2 &#91;3.5, 720K&#93;
 
+{% raw %}
+
 	Article: Q98389
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -64,3 +66,5 @@ permalink: /kb/098/Q98389/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143116/
 
 ## Q143116: BUG: Calendar Control in Visual Basic Causes Application Error
 
+{% raw %}
+
 	Article: Q143116
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -69,3 +71,5 @@ permalink: /kb/143/Q143116/
 	
 	=============================================================================
 	
+
+{% endraw %}

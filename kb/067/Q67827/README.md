@@ -6,6 +6,8 @@ permalink: /kb/067/Q67827/
 
 ## Q67827: Flight Simulator: Support for Kensington Trackball
 
+{% raw %}
+
 	Article: Q67827
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/067/Q67827/
 	
 	=============================================================================
 	
+
+{% endraw %}

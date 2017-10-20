@@ -6,6 +6,8 @@ permalink: /kb/177/Q177471/
 
 ## Q177471: EBCDIC Characters Not Properly Converted to ANSI Characters
 
+{% raw %}
+
 	Article: Q177471
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/177/Q177471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151789/
 
 ## Q151789: XADM: Error -1018 (JET_errReadVerifyFailure)
 
+{% raw %}
+
 	Article: Q151789
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -195,3 +197,5 @@ permalink: /kb/151/Q151789/
 	
 	=============================================================================
 	
+
+{% endraw %}

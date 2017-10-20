@@ -6,6 +6,8 @@ permalink: /kb/186/Q186411/
 
 ## Q186411: SMS: Secondary Sites Do Not Get WinNT 4.0 Video Drivers
 
+{% raw %}
+
 	Article: Q186411
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -70,3 +72,5 @@ permalink: /kb/186/Q186411/
 	
 	=============================================================================
 	
+
+{% endraw %}

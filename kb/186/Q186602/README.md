@@ -6,6 +6,8 @@ permalink: /kb/186/Q186602/
 
 ## Q186602: Terminal Server's Three Levels of Security
 
+{% raw %}
+
 	Article: Q186602
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/186/Q186602/
 	
 	=============================================================================
 	
+
+{% endraw %}

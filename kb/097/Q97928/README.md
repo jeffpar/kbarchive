@@ -6,6 +6,8 @@ permalink: /kb/097/Q97928/
 
 ## Q97928: CONVERT.BAT and GETPATH.BAT File Contents
 
+{% raw %}
+
 	Article: Q97928
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -324,3 +326,5 @@ permalink: /kb/097/Q97928/
 	
 	=============================================================================
 	
+
+{% endraw %}

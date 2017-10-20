@@ -6,6 +6,8 @@ permalink: /kb/122/Q122062/
 
 ## Q122062: Err Msg: This Version of Mail Is Too Old...
 
+{% raw %}
+
 	Article: Q122062
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -127,3 +129,5 @@ permalink: /kb/122/Q122062/
 	
 	=============================================================================
 	
+
+{% endraw %}

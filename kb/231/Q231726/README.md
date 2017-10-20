@@ -6,6 +6,8 @@ permalink: /kb/231/Q231726/
 
 ## Q231726: HOWTO: Export a DataReport to an RTF file
 
+{% raw %}
+
 	Article: Q231726
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -78,3 +80,5 @@ permalink: /kb/231/Q231726/
 	
 	=============================================================================
 	
+
+{% endraw %}

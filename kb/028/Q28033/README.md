@@ -6,6 +6,8 @@ permalink: /kb/028/Q28033/
 
 ## Q28033: QB.EXE Can Hang Using &#36;INCLUDE on Single-Drive System
 
+{% raw %}
+
 	Article: Q28033
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -58,3 +60,5 @@ permalink: /kb/028/Q28033/
 	Please note that Disk 2 is the one to use when you are asked to insert
 	a disk in Drive B. If you modify HIDE.BAS before running QuickBASIC,
 	then QuickBASIC will hang when trying to load QB.BI.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89890/
 
 ## Q89890: ERR: &quot;No Fields to Process&quot; in FoxBASE+ for the Macintosh
 
+{% raw %}
+
 	Article: Q89890
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -60,3 +62,5 @@ permalink: /kb/089/Q89890/
 	
 	=============================================================================
 	
+
+{% endraw %}

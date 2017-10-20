@@ -6,6 +6,8 @@ permalink: /kb/174/Q174138/
 
 ## Q174138: Frequently Asked Questions About Newsgroups on MSN
 
+{% raw %}
+
 	Article: Q174138
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,2.0,2.5
@@ -524,3 +526,5 @@ permalink: /kb/174/Q174138/
 	
 	=============================================================================
 	
+
+{% endraw %}

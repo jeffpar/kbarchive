@@ -6,6 +6,8 @@ permalink: /kb/240/Q240899/
 
 ## Q240899: Error Message: You Must Select at Least One Network Protocol
 
+{% raw %}
+
 	Article: Q240899
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/240/Q240899/
 	
 	=============================================================================
 	
+
+{% endraw %}

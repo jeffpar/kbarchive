@@ -6,6 +6,8 @@ permalink: /kb/240/Q240864/
 
 ## Q240864: &quot;STOP 0x00000050&quot; Error Message with Services for Macintosh
 
+{% raw %}
+
 	Article: Q240864
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/240/Q240864/
 	
 	=============================================================================
 	
+
+{% endraw %}

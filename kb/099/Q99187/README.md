@@ -6,6 +6,8 @@ permalink: /kb/099/Q99187/
 
 ## Q99187: Winadmin Storage Limit on Home Directories
 
+{% raw %}
+
 	Article: Q99187
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/099/Q99187/
 	
 	=============================================================================
 	
+
+{% endraw %}

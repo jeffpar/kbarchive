@@ -6,6 +6,8 @@ permalink: /kb/176/Q176141/
 
 ## Q176141: Shortcut Retains Settings When Window Size Is Changed
 
+{% raw %}
+
 	Article: Q176141
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -58,3 +60,5 @@ permalink: /kb/176/Q176141/
 	
 	=============================================================================
 	
+
+{% endraw %}

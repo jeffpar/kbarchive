@@ -6,6 +6,8 @@ permalink: /kb/194/Q194748/
 
 ## Q194748: Modem Call Cancellation Timeout Value Defaults to 55 Seconds
 
+{% raw %}
+
 	Article: Q194748
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/194/Q194748/
 	
 	=============================================================================
 	
+
+{% endraw %}

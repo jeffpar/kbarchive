@@ -6,6 +6,8 @@ permalink: /kb/084/Q84717/
 
 ## Q84717: Gerber Software Requires Upgrade for Windows 3.1
 
+{% raw %}
+
 	Article: Q84717
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/084/Q84717/
 	
 	=============================================================================
 	
+
+{% endraw %}

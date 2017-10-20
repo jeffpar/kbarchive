@@ -6,6 +6,8 @@ permalink: /kb/153/Q153638/
 
 ## Q153638: PowerPoint Colors Not Displayed Correctly During Remote Control
 
+{% raw %}
+
 	Article: Q153638
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -45,3 +47,5 @@ permalink: /kb/153/Q153638/
 	
 	=============================================================================
 	
+
+{% endraw %}

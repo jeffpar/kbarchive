@@ -6,6 +6,8 @@ permalink: /kb/170/Q170977/
 
 ## Q170977: Error 629: The Port Was Disconnected by the Remote Machine
 
+{% raw %}
+
 	Article: Q170977
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/170/Q170977/
 	
 	=============================================================================
 	
+
+{% endraw %}

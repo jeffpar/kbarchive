@@ -6,6 +6,8 @@ permalink: /kb/169/Q169666/
 
 ## Q169666: XADM: POP3 Users may not Receive an Attachment if Part of DL
 
+{% raw %}
+
 	Article: Q169666
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -71,3 +73,5 @@ permalink: /kb/169/Q169666/
 	
 	=============================================================================
 	
+
+{% endraw %}

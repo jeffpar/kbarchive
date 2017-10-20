@@ -6,6 +6,8 @@ permalink: /kb/111/Q111768/
 
 ## Q111768: PRB: Control Bar Not Visible After Calling Create
 
+{% raw %}
+
 	Article: Q111768
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0
@@ -115,3 +117,5 @@ permalink: /kb/111/Q111768/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106562/
 
 ## Q106562: FIX: CTRL+C Is Not Trapped in GetCharQQ
 
+{% raw %}
+
 	Article: Q106562
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/106/Q106562/
 	
 	=============================================================================
 	
+
+{% endraw %}

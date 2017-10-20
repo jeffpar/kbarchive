@@ -6,6 +6,8 @@ permalink: /kb/181/Q181718/
 
 ## Q181718: PRB: &quot;Error Updating the SourceSafe Database via DDCONVW.EXE&quot;
 
+{% raw %}
+
 	Article: Q181718
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/181/Q181718/
 	
 	=============================================================================
 	
+
+{% endraw %}

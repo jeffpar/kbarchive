@@ -6,6 +6,8 @@ permalink: /kb/133/Q133224/
 
 ## Q133224: USS Ticonderoga Displays &quot;Incorrect DOS Version&quot; at Startup
 
+{% raw %}
+
 	Article: Q133224
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/133/Q133224/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249584/
 
 ## Q249584: Building Applications with Outlook 2000 Technical Reference Comm
 
+{% raw %}
+
 	Article: Q249584
 	Product(s): Microsoft Press
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/249/Q249584/
 	
 	=============================================================================
 	
+
+{% endraw %}

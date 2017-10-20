@@ -6,6 +6,8 @@ permalink: /kb/163/Q163369/
 
 ## Q163369: FIX: LDd Suppresses Implicit Definition of _DEBUG
 
+{% raw %}
+
 	Article: Q163369
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/163/Q163369/
 	
 	=============================================================================
 	
+
+{% endraw %}

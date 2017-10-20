@@ -6,6 +6,8 @@ permalink: /kb/145/Q145758/
 
 ## Q145758: INFO: Redistributable Files in the PSS Directory of VB 4.0 CD
 
+{% raw %}
+
 	Article: Q145758
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/145/Q145758/
 	
 	=============================================================================
 	
+
+{% endraw %}

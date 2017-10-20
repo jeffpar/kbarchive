@@ -6,6 +6,8 @@ permalink: /kb/194/Q194764/
 
 ## Q194764: Print Screen in 5250 Applet Does Not Support Greek Code Page
 
+{% raw %}
+
 	Article: Q194764
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -58,3 +60,5 @@ permalink: /kb/194/Q194764/
 	
 	=============================================================================
 	
+
+{% endraw %}

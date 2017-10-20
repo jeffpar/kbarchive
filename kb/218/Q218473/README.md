@@ -6,6 +6,8 @@ permalink: /kb/218/Q218473/
 
 ## Q218473: Restricting Changes to Base System Objects
 
+{% raw %}
+
 	Article: Q218473
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -193,3 +195,5 @@ permalink: /kb/218/Q218473/
 	
 	=============================================================================
 	
+
+{% endraw %}

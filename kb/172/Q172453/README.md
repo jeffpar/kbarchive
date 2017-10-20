@@ -6,6 +6,8 @@ permalink: /kb/172/Q172453/
 
 ## Q172453: PRB: Czech Characters Display Incorrectly in Label Caption
 
+{% raw %}
+
 	Article: Q172453
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -102,3 +104,5 @@ permalink: /kb/172/Q172453/
 	
 	=============================================================================
 	
+
+{% endraw %}

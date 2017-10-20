@@ -6,6 +6,8 @@ permalink: /kb/311/Q311950/
 
 ## Q311950: PRB: &quot;Insufficient Base Table Information for Updating&quot; Error
 
+{% raw %}
+
 	Article: Q311950
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.7,6.0,6.0 SP3,6.0 SP4,6.0 SP5
@@ -115,3 +117,5 @@ permalink: /kb/311/Q311950/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174911/
 
 ## Q174911: AUDIO: Copy To Feature May cause GPF
 
+{% raw %}
+
 	Article: Q174911
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/174/Q174911/
 	
 	=============================================================================
 	
+
+{% endraw %}

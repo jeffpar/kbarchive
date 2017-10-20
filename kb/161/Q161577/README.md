@@ -6,6 +6,8 @@ permalink: /kb/161/Q161577/
 
 ## Q161577: HOWTO: Use Keyword Expansion in HTML Files
 
+{% raw %}
+
 	Article: Q161577
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -115,3 +117,5 @@ permalink: /kb/161/Q161577/
 	
 	=============================================================================
 	
+
+{% endraw %}

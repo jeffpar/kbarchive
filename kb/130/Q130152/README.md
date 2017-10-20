@@ -6,6 +6,8 @@ permalink: /kb/130/Q130152/
 
 ## Q130152: Windows Applications Fail When Using LMHosts File with NetBIOS
 
+{% raw %}
+
 	Article: Q130152
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130152/
 	
 	=============================================================================
 	
+
+{% endraw %}

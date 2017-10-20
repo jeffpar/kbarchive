@@ -6,6 +6,8 @@ permalink: /kb/098/Q98757/
 
 ## Q98757: FIX: Binary (or Unformatted) I/O Fails, Array Size &gt; 64K
 
+{% raw %}
+
 	Article: Q98757
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -124,3 +126,5 @@ permalink: /kb/098/Q98757/
 	
 	=============================================================================
 	
+
+{% endraw %}

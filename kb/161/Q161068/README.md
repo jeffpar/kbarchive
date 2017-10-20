@@ -6,6 +6,8 @@ permalink: /kb/161/Q161068/
 
 ## Q161068: Publishing Both Default.asp and Default.htm Within IIS
 
+{% raw %}
+
 	Article: Q161068
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0; :1.0
@@ -63,3 +65,5 @@ permalink: /kb/161/Q161068/
 	
 	=============================================================================
 	
+
+{% endraw %}

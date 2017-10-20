@@ -6,6 +6,8 @@ permalink: /kb/169/Q169192/
 
 ## Q169192: BUG: Cannot Add Pictures into ComboBox in Init Event
 
+{% raw %}
+
 	Article: Q169192
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -84,3 +86,5 @@ permalink: /kb/169/Q169192/
 	
 	=============================================================================
 	
+
+{% endraw %}

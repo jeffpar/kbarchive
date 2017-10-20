@@ -6,6 +6,8 @@ permalink: /kb/063/Q63845/
 
 ## Q63845: Using the HP QuietJet Printer with Windows Version 3.0
 
+{% raw %}
+
 	Article: Q63845
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -38,3 +40,5 @@ permalink: /kb/063/Q63845/
 	
 	=============================================================================
 	
+
+{% endraw %}

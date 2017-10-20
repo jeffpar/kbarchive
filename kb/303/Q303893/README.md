@@ -6,6 +6,8 @@ permalink: /kb/303/Q303893/
 
 ## Q303893: MechCommander 2.0: System Requirements
 
+{% raw %}
+
 	Article: Q303893
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -75,3 +77,5 @@ permalink: /kb/303/Q303893/
 	
 	=============================================================================
 	
+
+{% endraw %}

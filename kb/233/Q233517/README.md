@@ -6,6 +6,8 @@ permalink: /kb/233/Q233517/
 
 ## Q233517: Domain Logon Attempt Does Not Work with M-Node Clients
 
+{% raw %}
+
 	Article: Q233517
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -171,3 +173,5 @@ permalink: /kb/233/Q233517/
 	
 	=============================================================================
 	
+
+{% endraw %}

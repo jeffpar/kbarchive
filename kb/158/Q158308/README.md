@@ -6,6 +6,8 @@ permalink: /kb/158/Q158308/
 
 ## Q158308: XFOR: Err Msg: Initialization of Dynamic Link Library Failed
 
+{% raw %}
+
 	Article: Q158308
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -114,3 +116,5 @@ permalink: /kb/158/Q158308/
 	
 	=============================================================================
 	
+
+{% endraw %}

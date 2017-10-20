@@ -6,6 +6,8 @@ permalink: /kb/197/Q197216/
 
 ## Q197216: WD97: Error with Blank ASK or FILLIN Field on Merge
 
+{% raw %}
+
 	Article: Q197216
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/197/Q197216/
 	
 	=============================================================================
 	
+
+{% endraw %}

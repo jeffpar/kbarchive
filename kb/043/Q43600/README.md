@@ -6,6 +6,8 @@ permalink: /kb/043/Q43600/
 
 ## Q43600: MS123.COM May Not Work in Lotus 1-2-3 with Look &amp; Link Add-On
 
+{% raw %}
+
 	Article: Q43600
 	Product(s): See article
 	Version(s): 1.x
@@ -18,3 +20,5 @@ permalink: /kb/043/Q43600/
 	
 	The workaround is to load MOUSE.SYS in the CONFIG.SYS file instead of
 	loading MOUSE.COM in the AUTOEXEC.BAT file.
+
+{% endraw %}

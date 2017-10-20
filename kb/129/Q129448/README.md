@@ -6,6 +6,8 @@ permalink: /kb/129/Q129448/
 
 ## Q129448: PRB: Using Reserved Keywords as Types
 
+{% raw %}
+
 	Article: Q129448
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -149,3 +151,5 @@ permalink: /kb/129/Q129448/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183556/
 
 ## Q183556: SNADDM Service Fails If Install Directory Path Is Too Long
 
+{% raw %}
+
 	Article: Q183556
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -85,3 +87,5 @@ permalink: /kb/183/Q183556/
 	
 	=============================================================================
 	
+
+{% endraw %}

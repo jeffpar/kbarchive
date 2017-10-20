@@ -6,6 +6,8 @@ permalink: /kb/221/Q221767/
 
 ## Q221767: XADM: PF InterOrg Replication Does Not Work with Different Lang
 
+{% raw %}
+
 	Article: Q221767
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -45,3 +47,5 @@ permalink: /kb/221/Q221767/
 	
 	=============================================================================
 	
+
+{% endraw %}

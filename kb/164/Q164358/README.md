@@ -6,6 +6,8 @@ permalink: /kb/164/Q164358/
 
 ## Q164358: PRB: Handling Violation of Field Rules in Forms
 
+{% raw %}
+
 	Article: Q164358
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 6.0
@@ -186,3 +188,5 @@ permalink: /kb/164/Q164358/
 	
 	=============================================================================
 	
+
+{% endraw %}

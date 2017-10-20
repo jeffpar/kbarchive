@@ -6,6 +6,8 @@ permalink: /kb/171/Q171623/
 
 ## Q171623: Unable to Define a Low-Priority LUA LU in SNA Server Manager
 
+{% raw %}
+
 	Article: Q171623
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -81,3 +83,5 @@ permalink: /kb/171/Q171623/
 	
 	=============================================================================
 	
+
+{% endraw %}

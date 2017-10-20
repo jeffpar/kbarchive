@@ -6,6 +6,8 @@ permalink: /kb/166/Q166282/
 
 ## Q166282: FIX: C2440 Caused by Template Function with Const Pointer
 
+{% raw %}
+
 	Article: Q166282
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2 4.2b 5.0
@@ -112,3 +114,5 @@ permalink: /kb/166/Q166282/
 	
 	=============================================================================
 	
+
+{% endraw %}

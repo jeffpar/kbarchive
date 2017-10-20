@@ -6,6 +6,8 @@ permalink: /kb/171/Q171618/
 
 ## Q171618: Unattended Install of WinNT SP May Leave System Unbootable
 
+{% raw %}
+
 	Article: Q171618
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -119,3 +121,5 @@ permalink: /kb/171/Q171618/
 	
 	=============================================================================
 	
+
+{% endraw %}

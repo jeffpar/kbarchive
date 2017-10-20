@@ -6,6 +6,8 @@ permalink: /kb/124/Q124957/
 
 ## Q124957: ATAPI Driver Fails to Load For Sony CDU-55E CD-ROM
 
+{% raw %}
+
 	Article: Q124957
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -76,3 +78,5 @@ permalink: /kb/124/Q124957/
 	
 	=============================================================================
 	
+
+{% endraw %}

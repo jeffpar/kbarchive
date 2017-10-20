@@ -6,6 +6,8 @@ permalink: /kb/152/Q152664/
 
 ## Q152664: TcpipClientSupport Fails w/ NetWareClientSupport Specified
 
+{% raw %}
+
 	Article: Q152664
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.51
@@ -61,3 +63,5 @@ permalink: /kb/152/Q152664/
 	
 	=============================================================================
 	
+
+{% endraw %}

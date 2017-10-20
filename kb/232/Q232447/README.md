@@ -6,6 +6,8 @@ permalink: /kb/232/Q232447/
 
 ## Q232447: BUG: SetPrinter() with Level 5 Fails to Change Port
 
+{% raw %}
+
 	Article: Q232447
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/232/Q232447/
 	
 	=============================================================================
 	
+
+{% endraw %}

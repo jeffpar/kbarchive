@@ -6,6 +6,8 @@ permalink: /kb/079/Q79055/
 
 ## Q79055: INFO: Overcoming the 64 Kilobyte Limit for List Box Data
 
+{% raw %}
+
 	Article: Q79055
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -101,3 +103,5 @@ permalink: /kb/079/Q79055/
 	
 	=============================================================================
 	
+
+{% endraw %}

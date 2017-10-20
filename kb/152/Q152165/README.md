@@ -6,6 +6,8 @@ permalink: /kb/152/Q152165/
 
 ## Q152165: XCON: IMS Queues Back Up to Hosts with Multiple MX Records
 
+{% raw %}
+
 	Article: Q152165
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152165/
 	
 	=============================================================================
 	
+
+{% endraw %}

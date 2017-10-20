@@ -6,6 +6,8 @@ permalink: /kb/181/Q181051/
 
 ## Q181051: Error Message: Your System Is Not Setup for Host Operation...
 
+{% raw %}
+
 	Article: Q181051
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -78,3 +80,5 @@ permalink: /kb/181/Q181051/
 	
 	=============================================================================
 	
+
+{% endraw %}

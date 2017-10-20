@@ -6,6 +6,8 @@ permalink: /kb/142/Q142645/
 
 ## Q142645: FPNW Stops with Win3.x Client Directory Search: &quot;&#42;&#42;&#42;&#42;&#42;&#42;&#42;&#42;.&#42;&#42;&#42;&quot;
 
+{% raw %}
+
 	Article: Q142645
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -65,3 +67,5 @@ permalink: /kb/142/Q142645/
 	
 	=============================================================================
 	
+
+{% endraw %}

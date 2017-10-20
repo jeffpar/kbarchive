@@ -6,6 +6,8 @@ permalink: /kb/169/Q169968/
 
 ## Q169968: WD97: How to Copy Custom Label Information to Another Computer
 
+{% raw %}
+
 	Article: Q169968
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -120,3 +122,5 @@ permalink: /kb/169/Q169968/
 	
 	=============================================================================
 	
+
+{% endraw %}

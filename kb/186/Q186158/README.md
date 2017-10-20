@@ -6,6 +6,8 @@ permalink: /kb/186/Q186158/
 
 ## Q186158: Blue Screen When Shutting Down with RAS Connection Established
 
+{% raw %}
+
 	Article: Q186158
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -58,3 +60,5 @@ permalink: /kb/186/Q186158/
 	
 	=============================================================================
 	
+
+{% endraw %}

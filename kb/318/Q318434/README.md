@@ -6,6 +6,8 @@ permalink: /kb/318/Q318434/
 
 ## Q318434: SMS: How to Use SMS 2.0 to Silently Install  .NET Framework
 
+{% raw %}
+
 	Article: Q318434
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -119,3 +121,5 @@ permalink: /kb/318/Q318434/
 	
 	=============================================================================
 	
+
+{% endraw %}

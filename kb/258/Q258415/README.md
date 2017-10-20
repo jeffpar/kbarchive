@@ -6,6 +6,8 @@ permalink: /kb/258/Q258415/
 
 ## Q258415: Baseball 2001: Game Quits Unexpectedly When You Click Play Ball
 
+{% raw %}
+
 	Article: Q258415
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -88,3 +90,5 @@ permalink: /kb/258/Q258415/
 	
 	=============================================================================
 	
+
+{% endraw %}

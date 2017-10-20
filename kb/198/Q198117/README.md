@@ -6,6 +6,8 @@ permalink: /kb/198/Q198117/
 
 ## Q198117: Combat Flight Simulator: Slow Frame Rate During Game Play
 
+{% raw %}
+
 	Article: Q198117
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -93,3 +95,5 @@ permalink: /kb/198/Q198117/
 	
 	=============================================================================
 	
+
+{% endraw %}

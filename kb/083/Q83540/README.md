@@ -6,6 +6,8 @@ permalink: /kb/083/Q83540/
 
 ## Q83540: Mac Fax: FaxGate Rasterization Problems
 
+{% raw %}
+
 	Article: Q83540
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.x,3.0
@@ -55,3 +57,5 @@ permalink: /kb/083/Q83540/
 	
 	=============================================================================
 	
+
+{% endraw %}

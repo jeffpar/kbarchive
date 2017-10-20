@@ -6,6 +6,8 @@ permalink: /kb/181/Q181186/
 
 ## Q181186: XFOR: CCMC Doesn't Work w/ Exchange Installed to Long Directory
 
+{% raw %}
+
 	Article: Q181186
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -112,3 +114,5 @@ permalink: /kb/181/Q181186/
 	
 	=============================================================================
 	
+
+{% endraw %}

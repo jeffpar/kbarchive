@@ -6,6 +6,8 @@ permalink: /kb/260/Q260909/
 
 ## Q260909: Internet Explorer Script Error with Services for UNIX Admin Tool
 
+{% raw %}
+
 	Article: Q260909
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -83,3 +85,5 @@ permalink: /kb/260/Q260909/
 	
 	=============================================================================
 	
+
+{% endraw %}

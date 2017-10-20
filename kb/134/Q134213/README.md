@@ -6,6 +6,8 @@ permalink: /kb/134/Q134213/
 
 ## Q134213: BUG: Init Method for Cursor Object has Incorrect Data Session
 
+{% raw %}
+
 	Article: Q134213
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
@@ -77,3 +79,5 @@ permalink: /kb/134/Q134213/
 	
 	=============================================================================
 	
+
+{% endraw %}

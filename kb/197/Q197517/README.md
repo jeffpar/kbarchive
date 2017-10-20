@@ -6,6 +6,8 @@ permalink: /kb/197/Q197517/
 
 ## Q197517: Handle Leak Occurs When Using RasDial API
 
+{% raw %}
+
 	Article: Q197517
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/197/Q197517/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132401/
 
 ## Q132401: 5250 Printer LU Hangs When Client-Server LAN Session is Lost
 
+{% raw %}
+
 	Article: Q132401
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1
@@ -84,3 +86,5 @@ permalink: /kb/132/Q132401/
 	
 	=============================================================================
 	
+
+{% endraw %}

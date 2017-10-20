@@ -6,6 +6,8 @@ permalink: /kb/150/Q150883/
 
 ## Q150883: XCLN: Error 0x1b5a During ChangePasswordOnPDC
 
+{% raw %}
+
 	Article: Q150883
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150883/
 	
 	=============================================================================
 	
+
+{% endraw %}

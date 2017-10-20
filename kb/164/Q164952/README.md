@@ -6,6 +6,8 @@ permalink: /kb/164/Q164952/
 
 ## Q164952: INFO: Fixes and Features of Visual C++ 4.0a RISC Edition
 
+{% raw %}
+
 	Article: Q164952
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.0a
@@ -77,3 +79,5 @@ permalink: /kb/164/Q164952/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145849/
 
 ## Q145849: ErrMsg: Ir32.dll Set to Read Only Causes Setup to Fail
 
+{% raw %}
+
 	Article: Q145849
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/145/Q145849/
 	
 	=============================================================================
 	
+
+{% endraw %}

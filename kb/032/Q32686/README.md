@@ -6,6 +6,8 @@ permalink: /kb/032/Q32686/
 
 ## Q32686: More Than 127 Segments Will Generate Bad Object Record
 
+{% raw %}
+
 	Article: Q32686
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -20,3 +22,5 @@ permalink: /kb/032/Q32686/
 	   Microsoft has confirmed this to be a problem in Version 5.10. We
 	are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

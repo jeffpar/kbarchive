@@ -6,6 +6,8 @@ permalink: /kb/266/Q266498/
 
 ## Q266498: Encarta 2001: Researcher Prompts You to Overwrite Text File
 
+{% raw %}
+
 	Article: Q266498
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/266/Q266498/
 	
 	=============================================================================
 	
+
+{% endraw %}

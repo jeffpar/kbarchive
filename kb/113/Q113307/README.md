@@ -6,6 +6,8 @@ permalink: /kb/113/Q113307/
 
 ## Q113307: Sound Board Manufacturers Phone List
 
+{% raw %}
+
 	Article: Q113307
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/113/Q113307/
 	
 	=============================================================================
 	
+
+{% endraw %}

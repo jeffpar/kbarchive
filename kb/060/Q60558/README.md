@@ -6,6 +6,8 @@ permalink: /kb/060/Q60558/
 
 ## Q60558: Flight Simulator: Getting Color on IBM PS/2 25-004
 
+{% raw %}
+
 	Article: Q60558
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/060/Q60558/
 	
 	=============================================================================
 	
+
+{% endraw %}

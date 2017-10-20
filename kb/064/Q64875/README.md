@@ -6,6 +6,8 @@ permalink: /kb/064/Q64875/
 
 ## Q64875: C's _getvideoconfig Returns Incorrect Mode If Set from BASIC
 
+{% raw %}
+
 	Article: Q64875
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/064/Q64875/
 	   int86(0x10, &inregs, &outregs);
 	   return(outregs.h.al);
 	}
+
+{% endraw %}

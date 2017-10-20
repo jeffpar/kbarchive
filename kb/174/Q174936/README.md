@@ -6,6 +6,8 @@ permalink: /kb/174/Q174936/
 
 ## Q174936: SMS: Event to Trap Translator Cannot Send Traps &gt; 4,096 Bytes
 
+{% raw %}
+
 	Article: Q174936
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/174/Q174936/
 	
 	=============================================================================
 	
+
+{% endraw %}

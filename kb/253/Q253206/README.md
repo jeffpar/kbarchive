@@ -6,6 +6,8 @@ permalink: /kb/253/Q253206/
 
 ## Q253206: Active TN3270 Clients Might Hang Unexpectedly
 
+{% raw %}
+
 	Article: Q253206
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -106,3 +108,5 @@ permalink: /kb/253/Q253206/
 	
 	=============================================================================
 	
+
+{% endraw %}

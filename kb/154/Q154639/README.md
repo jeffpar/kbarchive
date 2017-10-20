@@ -6,6 +6,8 @@ permalink: /kb/154/Q154639/
 
 ## Q154639: Printer Icon Not Updated After Changing Port Type
 
+{% raw %}
+
 	Article: Q154639
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/154/Q154639/
 	
 	=============================================================================
 	
+
+{% endraw %}

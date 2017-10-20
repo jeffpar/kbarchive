@@ -6,6 +6,8 @@ permalink: /kb/157/Q157174/
 
 ## Q157174: Windows NT Logon Script Does Not Run on Windows 95 RAS Client
 
+{% raw %}
+
 	Article: Q157174
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:3.5,3.51
@@ -89,3 +91,5 @@ permalink: /kb/157/Q157174/
 	
 	=============================================================================
 	
+
+{% endraw %}

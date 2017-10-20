@@ -6,6 +6,8 @@ permalink: /kb/107/Q107979/
 
 ## Q107979: MemMaker Err Msg: Error Reading CONFIG.SYS in Root
 
+{% raw %}
+
 	Article: Q107979
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/107/Q107979/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160807/
 
 ## Q160807: Cannot Connect to Windows NT Server with Many Shares
 
+{% raw %}
+
 	Article: Q160807
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2,2.1,3.1,3.5,3.51,4.0
@@ -142,3 +144,5 @@ permalink: /kb/160/Q160807/
 	
 	=============================================================================
 	
+
+{% endraw %}

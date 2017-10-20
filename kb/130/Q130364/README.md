@@ -6,6 +6,8 @@ permalink: /kb/130/Q130364/
 
 ## Q130364: FIX: Scroll Bars Disappear When No Data Bound to a Grid
 
+{% raw %}
+
 	Article: Q130364
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -62,3 +64,5 @@ permalink: /kb/130/Q130364/
 	
 	=============================================================================
 	
+
+{% endraw %}

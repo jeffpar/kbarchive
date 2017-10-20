@@ -6,6 +6,8 @@ permalink: /kb/071/Q71136/
 
 ## Q71136: Upper Tray Option on Toshiba Pagelaser12 Setup Doesn't Work
 
+{% raw %}
+
 	Article: Q71136
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/071/Q71136/
 	
 	=============================================================================
 	
+
+{% endraw %}

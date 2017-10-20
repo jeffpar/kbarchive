@@ -6,6 +6,8 @@ permalink: /kb/148/Q148427/
 
 ## Q148427: Generic SSL (PCT/TLS) Updates for IIS and MS Internet Products
 
+{% raw %}
+
 	Article: Q148427
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0,4.0,4.0 SP3
@@ -77,3 +79,5 @@ permalink: /kb/148/Q148427/
 	
 	=============================================================================
 	
+
+{% endraw %}

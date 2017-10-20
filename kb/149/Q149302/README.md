@@ -6,6 +6,8 @@ permalink: /kb/149/Q149302/
 
 ## Q149302: If No Session Configured, TN3270 Client Error Can Be Misleading
 
+{% raw %}
+
 	Article: Q149302
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149302/
 	
 	=============================================================================
 	
+
+{% endraw %}

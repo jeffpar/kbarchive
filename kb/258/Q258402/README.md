@@ -6,6 +6,8 @@ permalink: /kb/258/Q258402/
 
 ## Q258402: Baseball 2001: Black Screen When Starting Game Second Time
 
+{% raw %}
+
 	Article: Q258402
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -215,3 +217,5 @@ permalink: /kb/258/Q258402/
 	
 	=============================================================================
 	
+
+{% endraw %}

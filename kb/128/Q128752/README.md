@@ -6,6 +6,8 @@ permalink: /kb/128/Q128752/
 
 ## Q128752: How to Use Hot Keys in Visual FoxPro
 
+{% raw %}
+
 	Article: Q128752
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -140,3 +142,5 @@ permalink: /kb/128/Q128752/
 	
 	=============================================================================
 	
+
+{% endraw %}

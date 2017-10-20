@@ -6,6 +6,8 @@ permalink: /kb/186/Q186887/
 
 ## Q186887: XWEB: OWA: Macintosh: No Default Selection for Unresolved Recipi
 
+{% raw %}
+
 	Article: Q186887
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:4.01; WINDOWS:5.5
@@ -68,3 +70,5 @@ permalink: /kb/186/Q186887/
 	
 	=============================================================================
 	
+
+{% endraw %}

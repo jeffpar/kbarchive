@@ -6,6 +6,8 @@ permalink: /kb/163/Q163632/
 
 ## Q163632: Windows NT User Account Database Search Order
 
+{% raw %}
+
 	Article: Q163632
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -107,3 +109,5 @@ permalink: /kb/163/Q163632/
 	
 	=============================================================================
 	
+
+{% endraw %}

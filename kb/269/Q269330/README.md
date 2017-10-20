@@ -6,6 +6,8 @@ permalink: /kb/269/Q269330/
 
 ## Q269330: HOWTO: Troubleshoot DCOM for VB Client/Server Applications
 
+{% raw %}
+
 	Article: Q269330
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -533,3 +535,5 @@ permalink: /kb/269/Q269330/
 	
 	=============================================================================
 	
+
+{% endraw %}

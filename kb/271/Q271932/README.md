@@ -6,6 +6,8 @@ permalink: /kb/271/Q271932/
 
 ## Q271932: XCON: Event ID 2253: Directory Operation Failed
 
+{% raw %}
+
 	Article: Q271932
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/271/Q271932/
 	
 	=============================================================================
 	
+
+{% endraw %}

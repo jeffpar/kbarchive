@@ -6,6 +6,8 @@ permalink: /kb/135/Q135338/
 
 ## Q135338: HOWTO: View Exported Functions in a DLL
 
+{% raw %}
+
 	Article: Q135338
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/135/Q135338/
 	
 	=============================================================================
 	
+
+{% endraw %}

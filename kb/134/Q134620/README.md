@@ -6,6 +6,8 @@ permalink: /kb/134/Q134620/
 
 ## Q134620: FIX: Error in Converter: Variable Gendircount Not Found
 
+{% raw %}
+
 	Article: Q134620
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -119,3 +121,5 @@ permalink: /kb/134/Q134620/
 	
 	=============================================================================
 	
+
+{% endraw %}

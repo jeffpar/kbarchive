@@ -6,6 +6,8 @@ permalink: /kb/245/Q245585/
 
 ## Q245585: XCON: SP3 MTA Replaces DDA Type RFC-822 w/DDA Type SMTP
 
+{% raw %}
+
 	Article: Q245585
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -67,3 +69,5 @@ permalink: /kb/245/Q245585/
 	
 	=============================================================================
 	
+
+{% endraw %}

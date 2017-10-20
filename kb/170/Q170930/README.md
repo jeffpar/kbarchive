@@ -6,6 +6,8 @@ permalink: /kb/170/Q170930/
 
 ## Q170930: How to Save Internet Shortcuts on The Microsoft Network
 
+{% raw %}
+
 	Article: Q170930
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.01
@@ -49,3 +51,5 @@ permalink: /kb/170/Q170930/
 	
 	=============================================================================
 	
+
+{% endraw %}

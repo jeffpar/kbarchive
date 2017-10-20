@@ -6,6 +6,8 @@ permalink: /kb/126/Q126048/
 
 ## Q126048: Writer: Difficulty Printing Cards on Epson Stylus
 
+{% raw %}
+
 	Article: Q126048
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,2.0
@@ -96,3 +98,5 @@ permalink: /kb/126/Q126048/
 	
 	=============================================================================
 	
+
+{% endraw %}

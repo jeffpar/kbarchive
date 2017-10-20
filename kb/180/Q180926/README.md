@@ -6,6 +6,8 @@ permalink: /kb/180/Q180926/
 
 ## Q180926: Setting Registry Quota Before the Reboot of Unattended Install
 
+{% raw %}
+
 	Article: Q180926
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -115,3 +117,5 @@ permalink: /kb/180/Q180926/
 	
 	=============================================================================
 	
+
+{% endraw %}

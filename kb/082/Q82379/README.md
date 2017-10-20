@@ -6,6 +6,8 @@ permalink: /kb/082/Q82379/
 
 ## Q82379: MicroCourier Displays Vertical Lines
 
+{% raw %}
+
 	Article: Q82379
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82379/
 	
 	=============================================================================
 	
+
+{% endraw %}

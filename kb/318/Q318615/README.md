@@ -6,6 +6,8 @@ permalink: /kb/318/Q318615/
 
 ## Q318615: FIX: VFP 7.0 Does Not Open Properly with Some Screen Readers
 
+{% raw %}
+
 	Article: Q318615
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -83,3 +85,5 @@ permalink: /kb/318/Q318615/
 	
 	=============================================================================
 	
+
+{% endraw %}

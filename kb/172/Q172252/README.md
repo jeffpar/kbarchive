@@ -6,6 +6,8 @@ permalink: /kb/172/Q172252/
 
 ## Q172252: FIX: DBCombo Click Event Fires During Form Load
 
+{% raw %}
+
 	Article: Q172252
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -66,3 +68,5 @@ permalink: /kb/172/Q172252/
 	
 	=============================================================================
 	
+
+{% endraw %}

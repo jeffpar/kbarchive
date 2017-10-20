@@ -6,6 +6,8 @@ permalink: /kb/141/Q141716/
 
 ## Q141716: PRB: Oracle Driver Does Not Support Dynasets
 
+{% raw %}
+
 	Article: Q141716
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/141/Q141716/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66774/
 
 ## Q66774: _wrapon() Function Will Prevent Text Windows From Scrolling
 
+{% raw %}
+
 	Article: Q66774
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a | 6.00 6.00a
@@ -101,3 +103,5 @@ permalink: /kb/066/Q66774/
 	exist in the C version 5.10 or QuickC 2.00 libraries. To build this
 	program with either of these compilers, the program must be rewritten
 	without the _outmem() function.
+
+{% endraw %}

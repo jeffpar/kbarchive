@@ -6,6 +6,8 @@ permalink: /kb/236/Q236930/
 
 ## Q236930: Cannot Open Files if Restrictions in a Policy Are Used
 
+{% raw %}
+
 	Article: Q236930
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -110,3 +112,5 @@ permalink: /kb/236/Q236930/
 	
 	=============================================================================
 	
+
+{% endraw %}

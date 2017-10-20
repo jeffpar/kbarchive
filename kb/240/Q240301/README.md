@@ -6,6 +6,8 @@ permalink: /kb/240/Q240301/
 
 ## Q240301: HOWTO: Use the MSDN Library Successfully with Terminal Server
 
+{% raw %}
+
 	Article: Q240301
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -174,3 +176,5 @@ permalink: /kb/240/Q240301/
 	
 	=============================================================================
 	
+
+{% endraw %}

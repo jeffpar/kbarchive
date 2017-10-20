@@ -6,6 +6,8 @@ permalink: /kb/032/Q32069/
 
 ## Q32069: INFO: No Error Message Text If .ERR Files Not in PATH
 
+{% raw %}
+
 	Article: Q32069
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,6.0,6.0a,6.0ax
@@ -67,3 +69,5 @@ permalink: /kb/032/Q32069/
 	
 	=============================================================================
 	
+
+{% endraw %}

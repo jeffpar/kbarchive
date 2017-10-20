@@ -6,6 +6,8 @@ permalink: /kb/160/Q160581/
 
 ## Q160581: Encarta 97 Err Msg: Could Not Start Another Application...
 
+{% raw %}
+
 	Article: Q160581
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -133,3 +135,5 @@ permalink: /kb/160/Q160581/
 	
 	=============================================================================
 	
+
+{% endraw %}

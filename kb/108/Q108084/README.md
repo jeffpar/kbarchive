@@ -6,6 +6,8 @@ permalink: /kb/108/Q108084/
 
 ## Q108084: Server Fails, Internal Processing Error RMN:SFT LCK
 
+{% raw %}
+
 	Article: Q108084
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/108/Q108084/
 	
 	=============================================================================
 	
+
+{% endraw %}

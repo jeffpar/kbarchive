@@ -6,6 +6,8 @@ permalink: /kb/300/Q300432/
 
 ## Q300432: HOWTO: Promote a Member Server Running IIS to a DC Running IIS
 
+{% raw %}
+
 	Article: Q300432
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -68,3 +70,5 @@ permalink: /kb/300/Q300432/
 	
 	=============================================================================
 	
+
+{% endraw %}

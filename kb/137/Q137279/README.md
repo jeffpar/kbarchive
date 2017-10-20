@@ -6,6 +6,8 @@ permalink: /kb/137/Q137279/
 
 ## Q137279: PRB: Program w/ @..SAY..GETs Exits If Press PAGE UP/PAGE DOWN
 
+{% raw %}
+
 	Article: Q137279
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -84,3 +86,5 @@ permalink: /kb/137/Q137279/
 	
 	=============================================================================
 	
+
+{% endraw %}

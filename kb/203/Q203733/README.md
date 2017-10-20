@@ -6,6 +6,8 @@ permalink: /kb/203/Q203733/
 
 ## Q203733: Quarterdeck Cleansweep Registry Wizard Stops Working
 
+{% raw %}
+
 	Article: Q203733
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/203/Q203733/
 	
 	=============================================================================
 	
+
+{% endraw %}

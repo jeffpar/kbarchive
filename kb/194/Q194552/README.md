@@ -6,6 +6,8 @@ permalink: /kb/194/Q194552/
 
 ## Q194552: Client SNA Manager Traps after Removing Host Account Manager
 
+{% raw %}
+
 	Article: Q194552
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -68,3 +70,5 @@ permalink: /kb/194/Q194552/
 	
 	=============================================================================
 	
+
+{% endraw %}

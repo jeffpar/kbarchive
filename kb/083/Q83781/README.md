@@ -6,6 +6,8 @@ permalink: /kb/083/Q83781/
 
 ## Q83781: Beethoven Arrows Invisible Under Windows 3.1
 
+{% raw %}
+
 	Article: Q83781
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/083/Q83781/
 	
 	=============================================================================
 	
+
+{% endraw %}

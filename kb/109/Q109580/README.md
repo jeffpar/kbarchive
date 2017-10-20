@@ -6,6 +6,8 @@ permalink: /kb/109/Q109580/
 
 ## Q109580: Causes of Common SELECT - SQL Error Messages
 
+{% raw %}
+
 	Article: Q109580
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 3.00 | 2.00 2.5
@@ -174,3 +176,5 @@ permalink: /kb/109/Q109580/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166098/
 
 ## Q166098: WD97: DocVariable Field Is Autoindex Field After Conversion
 
+{% raw %}
+
 	Article: Q166098
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -114,3 +116,5 @@ permalink: /kb/166/Q166098/
 	
 	=============================================================================
 	
+
+{% endraw %}

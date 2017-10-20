@@ -6,6 +6,8 @@ permalink: /kb/188/Q188059/
 
 ## Q188059: SMS: (SightNT&#92;Lana)RegOpenKeyEx Failed: 2 Error Message
 
+{% raw %}
+
 	Article: Q188059
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -102,3 +104,5 @@ permalink: /kb/188/Q188059/
 	
 	=============================================================================
 	
+
+{% endraw %}

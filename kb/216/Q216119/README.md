@@ -6,6 +6,8 @@ permalink: /kb/216/Q216119/
 
 ## Q216119: FIX: PDW Add Files Dialog Doesn't Allow Selecting Multiple Files
 
+{% raw %}
+
 	Article: Q216119
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/216/Q216119/
 	
 	=============================================================================
 	
+
+{% endraw %}

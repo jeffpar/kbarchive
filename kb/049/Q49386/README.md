@@ -6,6 +6,8 @@ permalink: /kb/049/Q49386/
 
 ## Q49386: Example of Passing Array of Long Integers from BASIC to MASM
 
+{% raw %}
+
 	Article: Q49386
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -81,3 +83,5 @@ permalink: /kb/049/Q49386/
 	
 	   Calling assembly routine to fill array elements...
 	   Values in array: 1 1 1 1 1 1 1 1 1 1
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/288/Q288994/
 
 ## Q288994: Data Corruption or AV in ContinueRawRead
 
+{% raw %}
+
 	Article: Q288994
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -92,3 +94,5 @@ permalink: /kb/288/Q288994/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97677/
 
 ## Q97677: Debug Script to Test for Windows Sound System Presence
 
+{% raw %}
+
 	Article: Q97677
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/097/Q97677/
 	
 	=============================================================================
 	
+
+{% endraw %}

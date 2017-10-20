@@ -6,6 +6,8 @@ permalink: /kb/098/Q98612/
 
 ## Q98612: Mac Wkst: Err Msg: Out of Memory in Chooser Setup
 
+{% raw %}
+
 	Article: Q98612
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/098/Q98612/
 	
 	=============================================================================
 	
+
+{% endraw %}

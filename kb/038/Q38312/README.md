@@ -6,6 +6,8 @@ permalink: /kb/038/Q38312/
 
 ## Q38312: Attributes in Hercules Graphics Mode
 
+{% raw %}
+
 	Article: Q38312
 	Product(s): See article
 	Version(s): 5.10
@@ -32,3 +34,5 @@ permalink: /kb/038/Q38312/
 	
 	If you put the adapter into Text mode, you can use all of these
 	attributes freely.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175763/
 
 ## Q175763: SMS: Long Inventory Package Names Cause Incomplete Inventory
 
+{% raw %}
+
 	Article: Q175763
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -108,3 +110,5 @@ permalink: /kb/175/Q175763/
 	
 	=============================================================================
 	
+
+{% endraw %}

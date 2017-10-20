@@ -6,6 +6,8 @@ permalink: /kb/141/Q141865/
 
 ## Q141865: FIX: Can't Get to Hidden Workspace After Enabling Docking View
 
+{% raw %}
+
 	Article: Q141865
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -83,3 +85,5 @@ permalink: /kb/141/Q141865/
 	
 	=============================================================================
 	
+
+{% endraw %}

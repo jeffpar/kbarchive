@@ -6,6 +6,8 @@ permalink: /kb/164/Q164652/
 
 ## Q164652: Verify Old Passwords Before Updating SNA Host Account Database
 
+{% raw %}
+
 	Article: Q164652
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -92,3 +94,5 @@ permalink: /kb/164/Q164652/
 	
 	=============================================================================
 	
+
+{% endraw %}

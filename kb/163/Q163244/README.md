@@ -6,6 +6,8 @@ permalink: /kb/163/Q163244/
 
 ## Q163244: PRB: RFX Unnecessarily Updates Floating Point Fields
 
+{% raw %}
+
 	Article: Q163244
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -235,3 +237,5 @@ permalink: /kb/163/Q163244/
 	
 	=============================================================================
 	
+
+{% endraw %}

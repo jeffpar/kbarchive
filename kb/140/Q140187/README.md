@@ -6,6 +6,8 @@ permalink: /kb/140/Q140187/
 
 ## Q140187: Setting Recurring Monthly Appointments to Day 31
 
+{% raw %}
+
 	Article: Q140187
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140187/
 	
 	=============================================================================
 	
+
+{% endraw %}

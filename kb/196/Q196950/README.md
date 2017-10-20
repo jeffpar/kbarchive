@@ -6,6 +6,8 @@ permalink: /kb/196/Q196950/
 
 ## Q196950: WD97: How Bin Selection Works on the HP LaserJet 4
 
+{% raw %}
+
 	Article: Q196950
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -722,3 +724,5 @@ permalink: /kb/196/Q196950/
 	
 	=============================================================================
 	
+
+{% endraw %}

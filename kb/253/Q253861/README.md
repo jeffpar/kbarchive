@@ -6,6 +6,8 @@ permalink: /kb/253/Q253861/
 
 ## Q253861: Windows NT Desktop Turns Gray and Icons Disappear
 
+{% raw %}
+
 	Article: Q253861
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/253/Q253861/
 	
 	=============================================================================
 	
+
+{% endraw %}

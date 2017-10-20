@@ -6,6 +6,8 @@ permalink: /kb/152/Q152994/
 
 ## Q152994: ADT2: Err Msg: Unable to Create Item in Program Manager Group
 
+{% raw %}
+
 	Article: Q152994
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152994/
 	
 	=============================================================================
 	
+
+{% endraw %}

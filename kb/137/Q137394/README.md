@@ -6,6 +6,8 @@ permalink: /kb/137/Q137394/
 
 ## Q137394: Long Path Length in cc:Mail Causes GP Fault
 
+{% raw %}
+
 	Article: Q137394
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0,95
@@ -57,3 +59,5 @@ permalink: /kb/137/Q137394/
 	
 	=============================================================================
 	
+
+{% endraw %}

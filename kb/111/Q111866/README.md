@@ -6,6 +6,8 @@ permalink: /kb/111/Q111866/
 
 ## Q111866: BUG: Outline of a Pie() Slice May Not Be Completely Smooth
 
+{% raw %}
+
 	Article: Q111866
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -86,3 +88,5 @@ permalink: /kb/111/Q111866/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119412/
 
 ## Q119412: Mac Srv: Problems with Backup and Startup Manager
 
+{% raw %}
+
 	Article: Q119412
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -71,3 +73,5 @@ permalink: /kb/119/Q119412/
 	
 	=============================================================================
 	
+
+{% endraw %}

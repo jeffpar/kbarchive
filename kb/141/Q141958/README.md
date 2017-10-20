@@ -6,6 +6,8 @@ permalink: /kb/141/Q141958/
 
 ## Q141958: FIX: _CRTDBG_MAP_ALLOC Environment Var References Incorrect
 
+{% raw %}
+
 	Article: Q141958
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/141/Q141958/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247543/
 
 ## Q247543: SMS: Clients Incorrectly Assigned to Multiple Sites
 
+{% raw %}
+
 	Article: Q247543
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -93,3 +95,5 @@ permalink: /kb/247/Q247543/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245431/
 
 ## Q245431: XFOR: Zero Byte Files in GroupWise API Gateway API_OUT Folder
 
+{% raw %}
+
 	Article: Q245431
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2,5.5 SP3
@@ -79,3 +81,5 @@ permalink: /kb/245/Q245431/
 	
 	=============================================================================
 	
+
+{% endraw %}

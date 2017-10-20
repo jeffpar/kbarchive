@@ -6,6 +6,8 @@ permalink: /kb/155/Q155160/
 
 ## Q155160: FIX: Debugger Sees Only One Variable of Two with Same Name
 
+{% raw %}
+
 	Article: Q155160
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -108,3 +110,5 @@ permalink: /kb/155/Q155160/
 	
 	=============================================================================
 	
+
+{% endraw %}

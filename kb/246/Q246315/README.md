@@ -6,6 +6,8 @@ permalink: /kb/246/Q246315/
 
 ## Q246315: Interix, GNU, Configure Scripts, and Portability
 
+{% raw %}
+
 	Article: Q246315
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -55,3 +57,5 @@ permalink: /kb/246/Q246315/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96509/
 
 ## Q96509: Installing OS/2 on EISA Gateway 486 with Ultrastore 24F
 
+{% raw %}
+
 	Article: Q96509
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/096/Q96509/
 	
 	=============================================================================
 	
+
+{% endraw %}

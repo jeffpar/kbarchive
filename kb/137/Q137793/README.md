@@ -6,6 +6,8 @@ permalink: /kb/137/Q137793/
 
 ## Q137793: Invdos.exe Doesn't Detect NEC 3x CD-ROM on MS-DOS Computer
 
+{% raw %}
+
 	Article: Q137793
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -44,3 +46,5 @@ permalink: /kb/137/Q137793/
 	
 	=============================================================================
 	
+
+{% endraw %}

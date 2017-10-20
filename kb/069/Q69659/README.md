@@ -6,6 +6,8 @@ permalink: /kb/069/Q69659/
 
 ## Q69659: Using PRINT SCREEN with Graphics and HP Printers
 
+{% raw %}
+
 	Article: Q69659
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.01,5.x,6.0,6.2,6.21,6.22
@@ -66,3 +68,5 @@ permalink: /kb/069/Q69659/
 	
 	=============================================================================
 	
+
+{% endraw %}

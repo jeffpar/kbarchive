@@ -6,6 +6,8 @@ permalink: /kb/036/Q36605/
 
 ## Q36605: Environment Variable Trailing Spaces Not Truncated
 
+{% raw %}
+
 	Article: Q36605
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -54,3 +56,5 @@ permalink: /kb/036/Q36605/
 	
 	=============================================================================
 	
+
+{% endraw %}

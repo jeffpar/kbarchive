@@ -6,6 +6,8 @@ permalink: /kb/142/Q142201/
 
 ## Q142201: FIX: Running a Query from View Designer Causes Error Message
 
+{% raw %}
+
 	Article: Q142201
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -126,3 +128,5 @@ permalink: /kb/142/Q142201/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76163/
 
 ## Q76163: Line Numbers in .MAP File Do Not Relate to Listing File
 
+{% raw %}
+
 	Article: Q76163
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.0,5.10,5.10a
@@ -83,3 +85,5 @@ permalink: /kb/076/Q76163/
 	
 	=============================================================================
 	
+
+{% endraw %}

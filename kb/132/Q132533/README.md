@@ -6,6 +6,8 @@ permalink: /kb/132/Q132533/
 
 ## Q132533: PRB: Form.SaveAs Appears to Change Order of Added Grid Column
 
+{% raw %}
+
 	Article: Q132533
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -99,3 +101,5 @@ permalink: /kb/132/Q132533/
 	
 	=============================================================================
 	
+
+{% endraw %}

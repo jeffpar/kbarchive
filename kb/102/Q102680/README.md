@@ -6,6 +6,8 @@ permalink: /kb/102/Q102680/
 
 ## Q102680: DOCERR: Backslash Edit Descriptor Documented Incorrectly
 
+{% raw %}
+
 	Article: Q102680
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -55,3 +57,5 @@ permalink: /kb/102/Q102680/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127188/
 
 ## Q127188: DOC: SourceSafe Undocumented Command Line Switches
 
+{% raw %}
+
 	Article: Q127188
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/127/Q127188/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102083/
 
 ## Q102083: FILE: Fw0844.exe FoxDoc Default Template Files
 
+{% raw %}
+
 	Article: Q102083
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a
@@ -217,3 +219,5 @@ permalink: /kb/102/Q102083/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198371/
 
 ## Q198371: WD97: How to Use STYLEREF Field to Place Chapter Info in Header
 
+{% raw %}
+
 	Article: Q198371
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -244,3 +246,5 @@ permalink: /kb/198/Q198371/
 	
 	=============================================================================
 	
+
+{% endraw %}

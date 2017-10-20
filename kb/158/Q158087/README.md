@@ -6,6 +6,8 @@ permalink: /kb/158/Q158087/
 
 ## Q158087: Mac Encarta 97: No Sound in Collages or MindMaze
 
+{% raw %}
+
 	Article: Q158087
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition; MACINTOSH:
@@ -55,3 +57,5 @@ permalink: /kb/158/Q158087/
 	
 	=============================================================================
 	
+
+{% endraw %}

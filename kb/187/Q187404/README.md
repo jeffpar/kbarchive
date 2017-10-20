@@ -6,6 +6,8 @@ permalink: /kb/187/Q187404/
 
 ## Q187404: Printer Drivers Setup Makes Server Appear To Be Hung
 
+{% raw %}
+
 	Article: Q187404
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -49,3 +51,5 @@ permalink: /kb/187/Q187404/
 	
 	=============================================================================
 	
+
+{% endraw %}

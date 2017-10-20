@@ -6,6 +6,8 @@ permalink: /kb/061/Q61345/
 
 ## Q61345: Differences Between FormatX&#36; Functions &amp; PRINT USING Statement
 
+{% raw %}
+
 	Article: Q61345
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -98,3 +100,5 @@ permalink: /kb/061/Q61345/
 	
 	   123.46
 	   88.99
+
+{% endraw %}

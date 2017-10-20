@@ -6,6 +6,8 @@ permalink: /kb/154/Q154320/
 
 ## Q154320: BUG: AfxOleInit Returns TRUE Without Initializing OLE in a DLL
 
+{% raw %}
+
 	Article: Q154320
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/154/Q154320/
 	
 	=============================================================================
 	
+
+{% endraw %}

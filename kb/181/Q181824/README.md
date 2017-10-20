@@ -6,6 +6,8 @@ permalink: /kb/181/Q181824/
 
 ## Q181824: XADM: Exch DB Doesn't Detect Removed Page in B-tree Split Opera
 
+{% raw %}
+
 	Article: Q181824
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -227,3 +229,5 @@ permalink: /kb/181/Q181824/
 	
 	=============================================================================
 	
+
+{% endraw %}

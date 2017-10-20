@@ -6,6 +6,8 @@ permalink: /kb/194/Q194350/
 
 ## Q194350: Encarta Virtual Globe 99: Incorrect URL in Bibliography
 
+{% raw %}
+
 	Article: Q194350
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/194/Q194350/
 	
 	=============================================================================
 	
+
+{% endraw %}

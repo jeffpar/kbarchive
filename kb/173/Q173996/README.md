@@ -6,6 +6,8 @@ permalink: /kb/173/Q173996/
 
 ## Q173996: Explorer Caused an Invalid Page Fault in Comctl32.dll
 
+{% raw %}
+
 	Article: Q173996
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -99,3 +101,5 @@ permalink: /kb/173/Q173996/
 	
 	=============================================================================
 	
+
+{% endraw %}

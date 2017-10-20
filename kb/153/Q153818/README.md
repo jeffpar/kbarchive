@@ -6,6 +6,8 @@ permalink: /kb/153/Q153818/
 
 ## Q153818: Running SMSVIEW Removes Permissions On Existing SMS Views
 
+{% raw %}
+
 	Article: Q153818
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -36,3 +38,5 @@ permalink: /kb/153/Q153818/
 	
 	=============================================================================
 	
+
+{% endraw %}

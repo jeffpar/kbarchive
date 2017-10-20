@@ -6,6 +6,8 @@ permalink: /kb/166/Q166736/
 
 ## Q166736: WD97: User Name Dialog Box Appears When You Start Word
 
+{% raw %}
+
 	Article: Q166736
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/166/Q166736/
 	
 	=============================================================================
 	
+
+{% endraw %}

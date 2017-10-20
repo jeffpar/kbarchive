@@ -6,6 +6,8 @@ permalink: /kb/194/Q194147/
 
 ## Q194147: Quick View Icon Disappears from Taskbar While Connected to MSN
 
+{% raw %}
+
 	Article: Q194147
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -61,3 +63,5 @@ permalink: /kb/194/Q194147/
 	
 	=============================================================================
 	
+
+{% endraw %}

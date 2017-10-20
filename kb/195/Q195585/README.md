@@ -6,6 +6,8 @@ permalink: /kb/195/Q195585/
 
 ## Q195585: PRB: &quot;SQL: Cannot Locate Table&quot; Message w/ Modify View Command
 
+{% raw %}
+
 	Article: Q195585
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -162,3 +164,5 @@ permalink: /kb/195/Q195585/
 	
 	=============================================================================
 	
+
+{% endraw %}

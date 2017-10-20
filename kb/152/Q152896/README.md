@@ -6,6 +6,8 @@ permalink: /kb/152/Q152896/
 
 ## Q152896: XADM: MTA Startup Slow When Database is Large
 
+{% raw %}
+
 	Article: Q152896
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/152/Q152896/
 	
 	=============================================================================
 	
+
+{% endraw %}

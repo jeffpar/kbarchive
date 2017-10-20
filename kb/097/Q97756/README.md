@@ -6,6 +6,8 @@ permalink: /kb/097/Q97756/
 
 ## Q97756: 3Server/Suppressing Extra Printed Page
 
+{% raw %}
+
 	Article: Q97756
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/097/Q97756/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88515/
 
 ## Q88515: Additional Golf Courses Available from Access Software
 
+{% raw %}
+
 	Article: Q88515
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/088/Q88515/
 	
 	=============================================================================
 	
+
+{% endraw %}

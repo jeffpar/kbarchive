@@ -6,6 +6,8 @@ permalink: /kb/142/Q142756/
 
 ## Q142756: WD97: How to Design and Set Up Mail Merge Data Sources
 
+{% raw %}
+
 	Article: Q142756
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -292,3 +294,5 @@ permalink: /kb/142/Q142756/
 	
 	=============================================================================
 	
+
+{% endraw %}

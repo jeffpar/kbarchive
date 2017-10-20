@@ -6,6 +6,8 @@ permalink: /kb/132/Q132946/
 
 ## Q132946: How to Install Windows 3.1 Drivers in Windows 95
 
+{% raw %}
+
 	Article: Q132946
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/132/Q132946/
 	
 	=============================================================================
 	
+
+{% endraw %}

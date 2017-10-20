@@ -6,6 +6,8 @@ permalink: /kb/239/Q239626/
 
 ## Q239626: World Atlas 2000: Quits When You Click a Media Viewer Thumbnail
 
+{% raw %}
+
 	Article: Q239626
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/239/Q239626/
 	
 	=============================================================================
 	
+
+{% endraw %}

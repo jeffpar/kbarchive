@@ -6,6 +6,8 @@ permalink: /kb/216/Q216419/
 
 ## Q216419: SMS: Client Installation Requires a Valid TEMP Directory
 
+{% raw %}
+
 	Article: Q216419
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -77,3 +79,5 @@ permalink: /kb/216/Q216419/
 	
 	=============================================================================
 	
+
+{% endraw %}

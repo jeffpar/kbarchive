@@ -6,6 +6,8 @@ permalink: /kb/129/Q129006/
 
 ## Q129006: Windows NT 3.51: HP-PCL Driver Does Not Send Output Tray Command
 
+{% raw %}
+
 	Article: Q129006
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -53,3 +55,5 @@ permalink: /kb/129/Q129006/
 	
 	=============================================================================
 	
+
+{% endraw %}

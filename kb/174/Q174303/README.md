@@ -6,6 +6,8 @@ permalink: /kb/174/Q174303/
 
 ## Q174303: BUG: ListBox Caption Changes When Copied as Control Array
 
+{% raw %}
+
 	Article: Q174303
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/174/Q174303/
 	
 	=============================================================================
 	
+
+{% endraw %}

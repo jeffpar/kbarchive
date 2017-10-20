@@ -6,6 +6,8 @@ permalink: /kb/139/Q139748/
 
 ## Q139748: Cannot Reinstall Microsoft Plus!
 
+{% raw %}
+
 	Article: Q139748
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -82,3 +84,5 @@ permalink: /kb/139/Q139748/
 	
 	=============================================================================
 	
+
+{% endraw %}

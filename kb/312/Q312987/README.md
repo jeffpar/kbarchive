@@ -6,6 +6,8 @@ permalink: /kb/312/Q312987/
 
 ## Q312987: Write Operations Slow Using Windows Services for UNIX 2.2
 
+{% raw %}
+
 	Article: Q312987
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2 OEM Only
@@ -101,3 +103,5 @@ permalink: /kb/312/Q312987/
 	
 	=============================================================================
 	
+
+{% endraw %}

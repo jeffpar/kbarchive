@@ -6,6 +6,8 @@ permalink: /kb/127/Q127010/
 
 ## Q127010: PRB: Check Box Loses 3D Look at Higher Font Sizes
 
+{% raw %}
+
 	Article: Q127010
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -56,3 +58,5 @@ permalink: /kb/127/Q127010/
 	
 	=============================================================================
 	
+
+{% endraw %}

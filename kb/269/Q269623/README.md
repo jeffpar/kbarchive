@@ -6,6 +6,8 @@ permalink: /kb/269/Q269623/
 
 ## Q269623: Printers Missing from Print Dialog Box with Roaming Profiles
 
+{% raw %}
+
 	Article: Q269623
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/269/Q269623/
 	
 	=============================================================================
 	
+
+{% endraw %}

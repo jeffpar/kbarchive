@@ -6,6 +6,8 @@ permalink: /kb/112/Q112181/
 
 ## Q112181: Changing the Style of Secondary Viewer Windows
 
+{% raw %}
+
 	Article: Q112181
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -206,3 +208,5 @@ permalink: /kb/112/Q112181/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126354/
 
 ## Q126354: Video Performance and Display Problems with Matrox MGA Driver
 
+{% raw %}
+
 	Article: Q126354
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/126/Q126354/
 	
 	=============================================================================
 	
+
+{% endraw %}

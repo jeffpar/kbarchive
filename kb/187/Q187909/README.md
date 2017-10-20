@@ -6,6 +6,8 @@ permalink: /kb/187/Q187909/
 
 ## Q187909: HOWTO: How to Prevent UI in an Out of Process Server
 
+{% raw %}
+
 	Article: Q187909
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0
@@ -102,3 +104,5 @@ permalink: /kb/187/Q187909/
 	
 	=============================================================================
 	
+
+{% endraw %}

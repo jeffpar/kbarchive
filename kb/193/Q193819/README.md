@@ -6,6 +6,8 @@ permalink: /kb/193/Q193819/
 
 ## Q193819: Errors When Using Directory Replicator to Backup DHCP Database
 
+{% raw %}
+
 	Article: Q193819
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/193/Q193819/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226858/
 
 ## Q226858: SMS:License &amp; Calculated Trend Balancing Not Off in Offline Mode
 
+{% raw %}
+
 	Article: Q226858
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -107,3 +109,5 @@ permalink: /kb/226/Q226858/
 	
 	=============================================================================
 	
+
+{% endraw %}

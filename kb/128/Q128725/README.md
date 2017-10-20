@@ -6,6 +6,8 @@ permalink: /kb/128/Q128725/
 
 ## Q128725: Domain Name Ignored by Windows for Workgroups with TCP/IP-32
 
+{% raw %}
+
 	Article: Q128725
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11a; WINDOWS:3.11
@@ -65,3 +67,5 @@ permalink: /kb/128/Q128725/
 	
 	=============================================================================
 	
+
+{% endraw %}

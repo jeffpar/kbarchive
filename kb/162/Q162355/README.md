@@ -6,6 +6,8 @@ permalink: /kb/162/Q162355/
 
 ## Q162355: Internet Tab Missing or Duplicated in Message Properties
 
+{% raw %}
+
 	Article: Q162355
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.00 95
@@ -74,3 +76,5 @@ permalink: /kb/162/Q162355/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/051/Q51897/
 
 ## Q51897: Using Flight Simulator Version 3.00 Logbook with Version 4.00
 
+{% raw %}
+
 	Article: Q51897
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/051/Q51897/
 	
 	=============================================================================
 	
+
+{% endraw %}

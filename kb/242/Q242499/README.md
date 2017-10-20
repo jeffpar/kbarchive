@@ -6,6 +6,8 @@ permalink: /kb/242/Q242499/
 
 ## Q242499: HOWTO: Install ADOCE When Windows CE Services Is Not Present
 
+{% raw %}
+
 	Article: Q242499
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/242/Q242499/
 	
 	=============================================================================
 	
+
+{% endraw %}

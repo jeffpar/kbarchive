@@ -6,6 +6,8 @@ permalink: /kb/248/Q248705/
 
 ## Q248705: PRB: Quality of Service and Wake on LAN
 
+{% raw %}
+
 	Article: Q248705
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -51,3 +53,5 @@ permalink: /kb/248/Q248705/
 	
 	=============================================================================
 	
+
+{% endraw %}

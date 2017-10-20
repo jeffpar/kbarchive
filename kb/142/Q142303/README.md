@@ -6,6 +6,8 @@ permalink: /kb/142/Q142303/
 
 ## Q142303: DNS Address from RAS Server Not Passed to RAS Client
 
+{% raw %}
+
 	Article: Q142303
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/142/Q142303/
 	
 	=============================================================================
 	
+
+{% endraw %}

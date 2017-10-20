@@ -6,6 +6,8 @@ permalink: /kb/231/Q231627/
 
 ## Q231627: XFOR: &quot;No Active Recipients&quot; Sending from GroupWise to Exchange
 
+{% raw %}
+
 	Article: Q231627
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/231/Q231627/
 	
 	=============================================================================
 	
+
+{% endraw %}

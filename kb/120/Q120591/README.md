@@ -6,6 +6,8 @@ permalink: /kb/120/Q120591/
 
 ## Q120591: PRB: Maintenance Setup Runs When Trying to Install FoxPro
 
+{% raw %}
+
 	Article: Q120591
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -61,3 +63,5 @@ permalink: /kb/120/Q120591/
 	
 	=============================================================================
 	
+
+{% endraw %}

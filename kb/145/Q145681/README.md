@@ -6,6 +6,8 @@ permalink: /kb/145/Q145681/
 
 ## Q145681: FIX: TreeView Nodeclick Differences with Mouse and Keyboard
 
+{% raw %}
+
 	Article: Q145681
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -115,3 +117,5 @@ permalink: /kb/145/Q145681/
 	
 	=============================================================================
 	
+
+{% endraw %}

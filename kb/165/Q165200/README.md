@@ -6,6 +6,8 @@ permalink: /kb/165/Q165200/
 
 ## Q165200: Network Transports Options Not Available on RISC Systems
 
+{% raw %}
+
 	Article: Q165200
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/165/Q165200/
 	
 	=============================================================================
 	
+
+{% endraw %}

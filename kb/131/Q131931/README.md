@@ -6,6 +6,8 @@ permalink: /kb/131/Q131931/
 
 ## Q131931: Packard Bell Legend 820CD Hangs During Hardware Detection
 
+{% raw %}
+
 	Article: Q131931
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/131/Q131931/
 	
 	=============================================================================
 	
+
+{% endraw %}

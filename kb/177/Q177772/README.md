@@ -6,6 +6,8 @@ permalink: /kb/177/Q177772/
 
 ## Q177772: XADM: Removing Stranded Mailboxes In Mailbox Resources
 
+{% raw %}
+
 	Article: Q177772
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/177/Q177772/
 	
 	=============================================================================
 	
+
+{% endraw %}

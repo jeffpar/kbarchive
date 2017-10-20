@@ -6,6 +6,8 @@ permalink: /kb/164/Q164370/
 
 ## Q164370: WD97: Word Development Tools and White Papers
 
+{% raw %}
+
 	Article: Q164370
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -135,3 +137,5 @@ permalink: /kb/164/Q164370/
 	
 	=============================================================================
 	
+
+{% endraw %}

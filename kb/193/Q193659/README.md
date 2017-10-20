@@ -6,6 +6,8 @@ permalink: /kb/193/Q193659/
 
 ## Q193659: SNA Server Access Violation in s1prfrcb()
 
+{% raw %}
+
 	Article: Q193659
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -124,3 +126,5 @@ permalink: /kb/193/Q193659/
 	
 	=============================================================================
 	
+
+{% endraw %}

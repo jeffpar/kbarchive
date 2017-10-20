@@ -6,6 +6,8 @@ permalink: /kb/216/Q216760/
 
 ## Q216760: IIS: FTP Users Will Still Be Prompted for Credentials Even From
 
+{% raw %}
+
 	Article: Q216760
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0,5.0
@@ -43,3 +45,5 @@ permalink: /kb/216/Q216760/
 	
 	=============================================================================
 	
+
+{% endraw %}

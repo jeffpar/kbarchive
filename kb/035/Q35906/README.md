@@ -6,6 +6,8 @@ permalink: /kb/035/Q35906/
 
 ## Q35906: BC 6.00 Example Calling OS/2 API Function DosSetMaxFH
 
+{% raw %}
+
 	Article: Q35906
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -51,3 +53,5 @@ permalink: /kb/035/Q35906/
 	  Print i
 	
 	end
+
+{% endraw %}

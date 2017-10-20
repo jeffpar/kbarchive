@@ -6,6 +6,8 @@ permalink: /kb/141/Q141753/
 
 ## Q141753: Memory Violation Running Attachmate Extra! for Windows in WOW
 
+{% raw %}
+
 	Article: Q141753
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -56,3 +58,5 @@ permalink: /kb/141/Q141753/
 	
 	=============================================================================
 	
+
+{% endraw %}

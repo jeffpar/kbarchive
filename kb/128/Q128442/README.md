@@ -6,6 +6,8 @@ permalink: /kb/128/Q128442/
 
 ## Q128442: ErrMsg: &quot;5735: Protocol Manager has reported...&quot; w/ 3Com NIC
 
+{% raw %}
+
 	Article: Q128442
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.0,3.5
@@ -51,3 +53,5 @@ permalink: /kb/128/Q128442/
 	
 	=============================================================================
 	
+
+{% endraw %}

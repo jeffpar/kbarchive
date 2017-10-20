@@ -6,6 +6,8 @@ permalink: /kb/271/Q271970/
 
 ## Q271970: Cron Service May Stop Unexpectedly Because of Access Violation
 
+{% raw %}
+
 	Article: Q271970
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/271/Q271970/
 	
 	=============================================================================
 	
+
+{% endraw %}

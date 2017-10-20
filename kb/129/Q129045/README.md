@@ -6,6 +6,8 @@ permalink: /kb/129/Q129045/
 
 ## Q129045: Date and Time Stamp of Files Change When Copied to Netware
 
+{% raw %}
+
 	Article: Q129045
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11 3.50
@@ -54,3 +56,5 @@ permalink: /kb/129/Q129045/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272998/
 
 ## Q272998: XADM: Setup Doesn't Work with 0XC103FC93
 
+{% raw %}
+
 	Article: Q272998
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -69,3 +71,5 @@ permalink: /kb/272/Q272998/
 	
 	=============================================================================
 	
+
+{% endraw %}

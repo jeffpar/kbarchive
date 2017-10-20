@@ -6,6 +6,8 @@ permalink: /kb/198/Q198706/
 
 ## Q198706: SMS: Software Metering Components on the Client
 
+{% raw %}
+
 	Article: Q198706
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/198/Q198706/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174582/
 
 ## Q174582: Most Microsoft Press Books Require Related Software
 
+{% raw %}
+
 	Article: Q174582
 	Product(s): Microsoft Press
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174582/
 	
 	=============================================================================
 	
+
+{% endraw %}

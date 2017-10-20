@@ -6,6 +6,8 @@ permalink: /kb/142/Q142046/
 
 ## Q142046: License Manager Purchase History Lost Promoting BDC to PDC
 
+{% raw %}
+
 	Article: Q142046
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -56,3 +58,5 @@ permalink: /kb/142/Q142046/
 	
 	=============================================================================
 	
+
+{% endraw %}

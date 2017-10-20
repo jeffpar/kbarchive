@@ -6,6 +6,8 @@ permalink: /kb/246/Q246279/
 
 ## Q246279: XFOR: PAB Addresses Invalid After Migration from MS Mail
 
+{% raw %}
+
 	Article: Q246279
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -65,3 +67,5 @@ permalink: /kb/246/Q246279/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66578/
 
 ## Q66578: Program Crashes If Run on a Machine Without an 80x87
 
+{% raw %}
+
 	Article: Q66578
 	Product(s): See article
 	Version(s): 6.00
@@ -34,3 +36,5 @@ permalink: /kb/066/Q66578/
 	initialization code that is not performed in the run-time for that
 	thread; this is mandatory because 80x87 emulation is performed in the
 	run-time in cases where there is no coprocessor.
+
+{% endraw %}

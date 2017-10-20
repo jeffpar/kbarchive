@@ -6,6 +6,8 @@ permalink: /kb/123/Q123766/
 
 ## Q123766: Doc Err: WINS and LAN Manager 2.x Clients
 
+{% raw %}
+
 	Article: Q123766
 	Product(s): Microsoft Windows NT
 	Version(s): 2.x,3.5,4.0
@@ -44,3 +46,5 @@ permalink: /kb/123/Q123766/
 	
 	=============================================================================
 	
+
+{% endraw %}

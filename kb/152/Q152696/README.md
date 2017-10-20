@@ -6,6 +6,8 @@ permalink: /kb/152/Q152696/
 
 ## Q152696: HOWTO: Using the MFC Database Classes in Console Applications
 
+{% raw %}
+
 	Article: Q152696
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0 2.1 2.2 4.0 4.1 4.2 5.0 6.0
@@ -161,3 +163,5 @@ permalink: /kb/152/Q152696/
 	
 	=============================================================================
 	
+
+{% endraw %}

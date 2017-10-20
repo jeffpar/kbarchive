@@ -6,6 +6,8 @@ permalink: /kb/069/Q69413/
 
 ## Q69413: C1001: Internal Compiler Error: regMD.c, Lines 3101 and 3074
 
+{% raw %}
+
 	Article: Q69413
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -65,3 +67,5 @@ permalink: /kb/069/Q69413/
 	{
 	    uch2 = uch1 ? (unsigned char)'0' : (unsigned char)(uch1 % 24);
 	}
+
+{% endraw %}

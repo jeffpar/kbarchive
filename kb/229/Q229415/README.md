@@ -6,6 +6,8 @@ permalink: /kb/229/Q229415/
 
 ## Q229415: INFO: Visual Basic Supports P-Code and Native Code Compilation
 
+{% raw %}
+
 	Article: Q229415
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -61,3 +63,5 @@ permalink: /kb/229/Q229415/
 	
 	=============================================================================
 	
+
+{% endraw %}

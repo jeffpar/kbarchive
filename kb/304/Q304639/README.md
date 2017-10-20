@@ -6,6 +6,8 @@ permalink: /kb/304/Q304639/
 
 ## Q304639: HOWTO: Find PaperSize for Custom Print Sizes Under Windows NT/2K
 
+{% raw %}
+
 	Article: Q304639
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,7.0
@@ -202,3 +204,5 @@ permalink: /kb/304/Q304639/
 	
 	=============================================================================
 	
+
+{% endraw %}

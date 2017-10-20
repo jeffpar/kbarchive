@@ -6,6 +6,8 @@ permalink: /kb/041/Q41701/
 
 ## Q41701: Using ANSI Escape Sequences in Microsoft C
 
+{% raw %}
+
 	Article: Q41701
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -40,3 +42,5 @@ permalink: /kb/041/Q41701/
 	
 	Note: For escape sequences to work correctly, ANSI.SYS must be
 	installed.
+
+{% endraw %}

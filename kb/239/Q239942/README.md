@@ -6,6 +6,8 @@ permalink: /kb/239/Q239942/
 
 ## Q239942: Access Violation in Snaexp.exe Occurs When Inserting a Range of
 
+{% raw %}
+
 	Article: Q239942
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -63,3 +65,5 @@ permalink: /kb/239/Q239942/
 	
 	=============================================================================
 	
+
+{% endraw %}

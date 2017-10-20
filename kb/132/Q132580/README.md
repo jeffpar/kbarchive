@@ -6,6 +6,8 @@ permalink: /kb/132/Q132580/
 
 ## Q132580: Cannot Start Windows 95 After Installing Close-Up
 
+{% raw %}
+
 	Article: Q132580
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/132/Q132580/
 	
 	=============================================================================
 	
+
+{% endraw %}

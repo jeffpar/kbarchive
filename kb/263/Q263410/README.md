@@ -6,6 +6,8 @@ permalink: /kb/263/Q263410/
 
 ## Q263410: SMS: Distribution Manager Orphans Package Share
 
+{% raw %}
+
 	Article: Q263410
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -58,3 +60,5 @@ permalink: /kb/263/Q263410/
 	
 	=============================================================================
 	
+
+{% endraw %}

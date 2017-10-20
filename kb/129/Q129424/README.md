@@ -6,6 +6,8 @@ permalink: /kb/129/Q129424/
 
 ## Q129424: PRB: Property Not Evaluated When Object Is Created
 
+{% raw %}
+
 	Article: Q129424
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -91,3 +93,5 @@ permalink: /kb/129/Q129424/
 	
 	=============================================================================
 	
+
+{% endraw %}

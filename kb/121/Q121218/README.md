@@ -6,6 +6,8 @@ permalink: /kb/121/Q121218/
 
 ## Q121218: FIX: pvarResult Should Be NULL When vtRet==VT_EMPTY
 
+{% raw %}
+
 	Article: Q121218
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,2.0
@@ -108,3 +110,5 @@ permalink: /kb/121/Q121218/
 	
 	=============================================================================
 	
+
+{% endraw %}

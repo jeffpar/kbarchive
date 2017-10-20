@@ -6,6 +6,8 @@ permalink: /kb/107/Q107870/
 
 ## Q107870: Deluxe Set Option Not Available in WordZap Under VGA
 
+{% raw %}
+
 	Article: Q107870
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -45,3 +47,5 @@ permalink: /kb/107/Q107870/
 	
 	=============================================================================
 	
+
+{% endraw %}

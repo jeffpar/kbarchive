@@ -6,6 +6,8 @@ permalink: /kb/180/Q180111/
 
 ## Q180111: XADM: Setting Up View Only Admin for Message Tracking
 
+{% raw %}
+
 	Article: Q180111
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -75,3 +77,5 @@ permalink: /kb/180/Q180111/
 	
 	=============================================================================
 	
+
+{% endraw %}

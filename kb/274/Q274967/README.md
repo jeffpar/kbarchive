@@ -6,6 +6,8 @@ permalink: /kb/274/Q274967/
 
 ## Q274967: CFS2: First Player to Exit Team Game Receives Credit for Kills
 
+{% raw %}
+
 	Article: Q274967
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -43,3 +45,5 @@ permalink: /kb/274/Q274967/
 	
 	=============================================================================
 	
+
+{% endraw %}

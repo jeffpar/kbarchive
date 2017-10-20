@@ -6,6 +6,8 @@ permalink: /kb/120/Q120739/
 
 ## Q120739: Raising Max SFM Volume Size Reported to System 7.5 Mac Users
 
+{% raw %}
+
 	Article: Q120739
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -84,3 +86,5 @@ permalink: /kb/120/Q120739/
 	
 	=============================================================================
 	
+
+{% endraw %}

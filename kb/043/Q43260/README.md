@@ -6,6 +6,8 @@ permalink: /kb/043/Q43260/
 
 ## Q43260: Vertical Scroll Inactive with MODE CO40 and Dual Monitors
 
+{% raw %}
+
 	Article: Q43260
 	Product(s): See article
 	Version(s): 2.x
@@ -41,3 +43,5 @@ permalink: /kb/043/Q43260/
 	  _setvideomode(_TEXTC40);
 	  _setvideomode(DEFAULTMODE);
 	}
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90293/
 
 ## Q90293: .SHG Files Cannot Be Edited
 
+{% raw %}
+
 	Article: Q90293
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/090/Q90293/
 	
 	=============================================================================
 	
+
+{% endraw %}

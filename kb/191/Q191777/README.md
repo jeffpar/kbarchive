@@ -6,6 +6,8 @@ permalink: /kb/191/Q191777/
 
 ## Q191777: XCLN: Unable to Access MAPI Calendar
 
+{% raw %}
+
 	Article: Q191777
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0
@@ -80,3 +82,5 @@ permalink: /kb/191/Q191777/
 	
 	=============================================================================
 	
+
+{% endraw %}

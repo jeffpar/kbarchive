@@ -6,6 +6,8 @@ permalink: /kb/258/Q258640/
 
 ## Q258640: Baseball 2001: Slow Frame Rate and Poor Graphics Performance Dur
 
+{% raw %}
+
 	Article: Q258640
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/258/Q258640/
 	
 	=============================================================================
 	
+
+{% endraw %}

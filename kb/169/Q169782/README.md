@@ -6,6 +6,8 @@ permalink: /kb/169/Q169782/
 
 ## Q169782: XFOR: POP3 and IMAP4 Clients That Work with Exchange Server
 
+{% raw %}
+
 	Article: Q169782
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/169/Q169782/
 	
 	=============================================================================
 	
+
+{% endraw %}

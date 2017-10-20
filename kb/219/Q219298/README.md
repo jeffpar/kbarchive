@@ -6,6 +6,8 @@ permalink: /kb/219/Q219298/
 
 ## Q219298: Fonts Display Incorrectly if More than 48 MB of Fonts Exists
 
+{% raw %}
+
 	Article: Q219298
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -98,3 +100,5 @@ permalink: /kb/219/Q219298/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189540/
 
 ## Q189540: PRB: Access Denied Error on WebClass Files
 
+{% raw %}
+
 	Article: Q189540
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/189/Q189540/
 	
 	=============================================================================
 	
+
+{% endraw %}

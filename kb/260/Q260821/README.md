@@ -6,6 +6,8 @@ permalink: /kb/260/Q260821/
 
 ## Q260821: Generic Text Printer Driver Outputs 0xFE as 0xFD
 
+{% raw %}
+
 	Article: Q260821
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/260/Q260821/
 	
 	=============================================================================
 	
+
+{% endraw %}

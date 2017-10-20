@@ -6,6 +6,8 @@ permalink: /kb/265/Q265884/
 
 ## Q265884: BUG: Optional Parameter with Default Value Null Causes Error 458
 
+{% raw %}
+
 	Article: Q265884
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/265/Q265884/
 	
 	=============================================================================
 	
+
+{% endraw %}

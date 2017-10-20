@@ -6,6 +6,8 @@ permalink: /kb/135/Q135109/
 
 ## Q135109: HOWTO: Use Updatable Joins in an MFC ODBC Application
 
+{% raw %}
+
 	Article: Q135109
 	Product(s): Microsoft C Compiler
 	Version(s): 1.51,1.52,2.0,2.1,2.2,4.0,4.1,4.2
@@ -180,3 +182,5 @@ permalink: /kb/135/Q135109/
 	
 	=============================================================================
 	
+
+{% endraw %}

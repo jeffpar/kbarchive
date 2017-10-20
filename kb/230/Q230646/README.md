@@ -6,6 +6,8 @@ permalink: /kb/230/Q230646/
 
 ## Q230646: XFOR: Attachments Corrupted by Incorrect Mapping in Cmsxmap.tbl
 
+{% raw %}
+
 	Article: Q230646
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/230/Q230646/
 	
 	=============================================================================
 	
+
+{% endraw %}

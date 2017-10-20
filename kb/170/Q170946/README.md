@@ -6,6 +6,8 @@ permalink: /kb/170/Q170946/
 
 ## Q170946: HOWTO: Create and Use a Minimal ActiveX Component in VB
 
+{% raw %}
+
 	Article: Q170946
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -138,3 +140,5 @@ permalink: /kb/170/Q170946/
 	
 	=============================================================================
 	
+
+{% endraw %}

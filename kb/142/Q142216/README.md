@@ -6,6 +6,8 @@ permalink: /kb/142/Q142216/
 
 ## Q142216: HOWTO: Create ODBC Data Sources Using SqlConfigDataSource
 
+{% raw %}
+
 	Article: Q142216
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,6.0
@@ -103,3 +105,5 @@ permalink: /kb/142/Q142216/
 	
 	=============================================================================
 	
+
+{% endraw %}

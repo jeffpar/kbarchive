@@ -6,6 +6,8 @@ permalink: /kb/035/Q35131/
 
 ## Q35131: Supplemental Mouse Menus Disk (Expert and Basic Menus)
 
+{% raw %}
+
 	Article: Q35131
 	Product(s): See article
 	Version(s): 1.00
@@ -47,3 +49,5 @@ permalink: /kb/035/Q35131/
 	
 	The expert menus have more functionality than the basic menus. The
 	menus are sold for a small fee.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106732/
 
 ## Q106732: BUG: Dependencies Not Scanned If Include Statement Is Labeled
 
+{% raw %}
+
 	Article: Q106732
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/106/Q106732/
 	
 	=============================================================================
 	
+
+{% endraw %}

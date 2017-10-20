@@ -6,6 +6,8 @@ permalink: /kb/221/Q221700/
 
 ## Q221700: FIX: CommandTargetExec Ignores Return Value
 
+{% raw %}
+
 	Article: Q221700
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -159,3 +161,5 @@ permalink: /kb/221/Q221700/
 	
 	=============================================================================
 	
+
+{% endraw %}

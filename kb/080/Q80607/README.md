@@ -6,6 +6,8 @@ permalink: /kb/080/Q80607/
 
 ## Q80607: MS-DOS 5 Upgrade (5.0a) Disk Directories (3.5-Inch, 720K)
 
+{% raw %}
+
 	Article: Q80607
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0a
@@ -187,3 +189,5 @@ permalink: /kb/080/Q80607/
 	
 	=============================================================================
 	
+
+{% endraw %}

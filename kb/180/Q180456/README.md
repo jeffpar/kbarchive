@@ -6,6 +6,8 @@ permalink: /kb/180/Q180456/
 
 ## Q180456: PRB: Passing Variant Array to WriteFields Method Generates Error
 
+{% raw %}
+
 	Article: Q180456
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -86,3 +88,5 @@ permalink: /kb/180/Q180456/
 	
 	=============================================================================
 	
+
+{% endraw %}

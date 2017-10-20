@@ -6,6 +6,8 @@ permalink: /kb/216/Q216081/
 
 ## Q216081: Installing C2 Security Configuration Manager on Terminal Server
 
+{% raw %}
+
 	Article: Q216081
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/216/Q216081/
 	
 	=============================================================================
 	
+
+{% endraw %}

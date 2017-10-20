@@ -6,6 +6,8 @@ permalink: /kb/174/Q174730/
 
 ## Q174730: XFOR: Lotus Notes Invitations Result in NDR
 
+{% raw %}
+
 	Article: Q174730
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -79,3 +81,5 @@ permalink: /kb/174/Q174730/
 	
 	=============================================================================
 	
+
+{% endraw %}

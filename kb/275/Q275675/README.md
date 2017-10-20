@@ -6,6 +6,8 @@ permalink: /kb/275/Q275675/
 
 ## Q275675: NFL 2000: Leaders Tab Is Missing from the Sports Pages Screen
 
+{% raw %}
+
 	Article: Q275675
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/275/Q275675/
 	
 	=============================================================================
 	
+
+{% endraw %}

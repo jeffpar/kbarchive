@@ -6,6 +6,8 @@ permalink: /kb/125/Q125663/
 
 ## Q125663: Setting Print Spooler Priority
 
+{% raw %}
+
 	Article: Q125663
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -58,3 +60,5 @@ permalink: /kb/125/Q125663/
 	
 	=============================================================================
 	
+
+{% endraw %}

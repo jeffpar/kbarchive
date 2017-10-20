@@ -6,6 +6,8 @@ permalink: /kb/323/Q323064/
 
 ## Q323064: Access Violation in NotifySendHeader
 
+{% raw %}
+
 	Article: Q323064
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/323/Q323064/
 	
 	=============================================================================
 	
+
+{% endraw %}

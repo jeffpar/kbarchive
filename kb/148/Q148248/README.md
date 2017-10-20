@@ -6,6 +6,8 @@ permalink: /kb/148/Q148248/
 
 ## Q148248: Gardening: Unable to Add a Plant Name to the Shopping List
 
+{% raw %}
+
 	Article: Q148248
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148248/
 	
 	=============================================================================
 	
+
+{% endraw %}

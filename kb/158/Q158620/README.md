@@ -6,6 +6,8 @@ permalink: /kb/158/Q158620/
 
 ## Q158620: STL Sample for the vector::(push_back, pop_back) Functions
 
+{% raw %}
+
 	Article: Q158620
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -156,3 +158,5 @@ permalink: /kb/158/Q158620/
 	
 	=============================================================================
 	
+
+{% endraw %}

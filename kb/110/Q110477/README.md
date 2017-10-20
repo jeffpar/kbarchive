@@ -6,6 +6,8 @@ permalink: /kb/110/Q110477/
 
 ## Q110477: BUG: L1103 Error Caused by Incorrectly Nested Segments
 
+{% raw %}
+
 	Article: Q110477
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -86,3 +88,5 @@ permalink: /kb/110/Q110477/
 	
 	=============================================================================
 	
+
+{% endraw %}

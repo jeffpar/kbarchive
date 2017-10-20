@@ -6,6 +6,8 @@ permalink: /kb/094/Q94329/
 
 ## Q94329: MS-DOS OEM Setup Doesn't Boot on Tandy 1000TX 286
 
+{% raw %}
+
 	Article: Q94329
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/094/Q94329/
 	
 	=============================================================================
 	
+
+{% endraw %}

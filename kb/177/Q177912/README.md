@@ -6,6 +6,8 @@ permalink: /kb/177/Q177912/
 
 ## Q177912: FIX: Access Violation When Calling COleVariant::Clear()
 
+{% raw %}
+
 	Article: Q177912
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -168,3 +170,5 @@ permalink: /kb/177/Q177912/
 	
 	=============================================================================
 	
+
+{% endraw %}

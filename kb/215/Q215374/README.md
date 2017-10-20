@@ -6,6 +6,8 @@ permalink: /kb/215/Q215374/
 
 ## Q215374: BUG: Selecting &quot;Send to Back&quot; and &quot;Bring to Front&quot; Has No Affect
 
+{% raw %}
+
 	Article: Q215374
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/215/Q215374/
 	
 	=============================================================================
 	
+
+{% endraw %}

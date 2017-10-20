@@ -6,6 +6,8 @@ permalink: /kb/097/Q97725/
 
 ## Q97725: Distribution Disk File Lists for LAN Manager 2.1
 
+{% raw %}
+
 	Article: Q97725
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -1823,3 +1825,5 @@ permalink: /kb/097/Q97725/
 	
 	=============================================================================
 	
+
+{% endraw %}

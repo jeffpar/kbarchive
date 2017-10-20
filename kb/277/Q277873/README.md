@@ -6,6 +6,8 @@ permalink: /kb/277/Q277873/
 
 ## Q277873: Patch for &quot;Web Server File Request Parsing&quot; Vulnerability
 
+{% raw %}
+
 	Article: Q277873
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -202,3 +204,5 @@ permalink: /kb/277/Q277873/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154434/
 
 ## Q154434: Err Msg: No Domain Server Was Available to Validate...
 
+{% raw %}
+
 	Article: Q154434
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1,2,2.1
@@ -106,3 +108,5 @@ permalink: /kb/154/Q154434/
 	
 	=============================================================================
 	
+
+{% endraw %}

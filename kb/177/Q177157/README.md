@@ -6,6 +6,8 @@ permalink: /kb/177/Q177157/
 
 ## Q177157: PRB: Disabled Items in List Box Become Enabled
 
+{% raw %}
+
 	Article: Q177157
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -94,3 +96,5 @@ permalink: /kb/177/Q177157/
 	
 	=============================================================================
 	
+
+{% endraw %}

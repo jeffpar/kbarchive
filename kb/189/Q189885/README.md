@@ -6,6 +6,8 @@ permalink: /kb/189/Q189885/
 
 ## Q189885: MSB Solar and Explorapedia: Program Does Not Start
 
+{% raw %}
+
 	Article: Q189885
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -81,3 +83,5 @@ permalink: /kb/189/Q189885/
 	
 	=============================================================================
 	
+
+{% endraw %}

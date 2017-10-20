@@ -6,6 +6,8 @@ permalink: /kb/152/Q152479/
 
 ## Q152479: Err Msg: You Are Not this Person's Assistant
 
+{% raw %}
+
 	Article: Q152479
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,7.0; Win95:7.0
@@ -77,3 +79,5 @@ permalink: /kb/152/Q152479/
 	
 	=============================================================================
 	
+
+{% endraw %}

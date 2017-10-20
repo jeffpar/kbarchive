@@ -6,6 +6,8 @@ permalink: /kb/139/Q139048/
 
 ## Q139048: BUG: Update SQL Works Incorrectly with RAND() in WHERE Clause
 
+{% raw %}
+
 	Article: Q139048
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -123,3 +125,5 @@ permalink: /kb/139/Q139048/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138499/
 
 ## Q138499: How to Limit the Number of Characters Typed in a Combo Box
 
+{% raw %}
+
 	Article: Q138499
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/138/Q138499/
 	
 	=============================================================================
 	
+
+{% endraw %}

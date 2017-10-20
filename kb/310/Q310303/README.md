@@ -6,6 +6,8 @@ permalink: /kb/310/Q310303/
 
 ## Q310303: PRB: Package and Deployment Wizard Does Not Distribute MDAC 2.6
 
+{% raw %}
+
 	Article: Q310303
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,2.5,2.6,2.7,6.0
@@ -126,3 +128,5 @@ permalink: /kb/310/Q310303/
 	
 	=============================================================================
 	
+
+{% endraw %}

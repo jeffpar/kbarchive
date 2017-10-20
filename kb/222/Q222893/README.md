@@ -6,6 +6,8 @@ permalink: /kb/222/Q222893/
 
 ## Q222893: XFOR: Troubleshooting Calendar Connector for Lotus Notes
 
+{% raw %}
+
 	Article: Q222893
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -182,3 +184,5 @@ permalink: /kb/222/Q222893/
 	
 	=============================================================================
 	
+
+{% endraw %}

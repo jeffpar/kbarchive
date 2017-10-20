@@ -6,6 +6,8 @@ permalink: /kb/109/Q109993/
 
 ## Q109993: Winsock Application Causes 0x0000000A Blue Screen STOP Message
 
+{% raw %}
+
 	Article: Q109993
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/109/Q109993/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279727/
 
 ## Q279727: XFOR: Exchange SNADS Connector Shuts Down with 22096 Event
 
+{% raw %}
+
 	Article: Q279727
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -93,3 +95,5 @@ permalink: /kb/279/Q279727/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276564/
 
 ## Q276564: SMS: SMS Client Service Stops Responding (Hangs) During Startup
 
+{% raw %}
+
 	Article: Q276564
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -89,3 +91,5 @@ permalink: /kb/276/Q276564/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245785/
 
 ## Q245785: XADM: Installing Exchange Server from Select CD on Windows 2000
 
+{% raw %}
+
 	Article: Q245785
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/245/Q245785/
 	
 	=============================================================================
 	
+
+{% endraw %}

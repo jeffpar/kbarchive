@@ -6,6 +6,8 @@ permalink: /kb/288/Q288151/
 
 ## Q288151: Shortcuts in Startup Group Do Not Run in Windows NT Workstation
 
+{% raw %}
+
 	Article: Q288151
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/288/Q288151/
 	
 	=============================================================================
 	
+
+{% endraw %}

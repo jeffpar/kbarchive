@@ -6,6 +6,8 @@ permalink: /kb/048/Q48873/
 
 ## Q48873: Mac Wkst: Text Limitation for Body of a Message
 
+{% raw %}
+
 	Article: Q48873
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -43,3 +45,5 @@ permalink: /kb/048/Q48873/
 	
 	=============================================================================
 	
+
+{% endraw %}

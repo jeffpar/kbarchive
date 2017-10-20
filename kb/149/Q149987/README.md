@@ -6,6 +6,8 @@ permalink: /kb/149/Q149987/
 
 ## Q149987: SPRY Mosaic Web Client Crash When Connected to IIS
 
+{% raw %}
+
 	Article: Q149987
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,3.5,3.51
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149987/
 	
 	=============================================================================
 	
+
+{% endraw %}

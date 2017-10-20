@@ -6,6 +6,8 @@ permalink: /kb/169/Q169328/
 
 ## Q169328: MSMail: Network Name Could Not be Found When Creating a New PO
 
+{% raw %}
+
 	Article: Q169328
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -75,3 +77,5 @@ permalink: /kb/169/Q169328/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187049/
 
 ## Q187049: Active Sessions Cannot Have Related Clients
 
+{% raw %}
+
 	Article: Q187049
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/187/Q187049/
 	
 	=============================================================================
 	
+
+{% endraw %}

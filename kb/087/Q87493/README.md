@@ -6,6 +6,8 @@ permalink: /kb/087/Q87493/
 
 ## Q87493: BUG: Setup CreateProgmanItem Does Not Overwrite Item
 
+{% raw %}
+
 	Article: Q87493
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/087/Q87493/
 	
 	=============================================================================
 	
+
+{% endraw %}

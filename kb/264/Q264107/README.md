@@ -6,6 +6,8 @@ permalink: /kb/264/Q264107/
 
 ## Q264107: XADM: No Automatic Move Mailbox in 5.5 Administrator Program
 
+{% raw %}
+
 	Article: Q264107
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -46,3 +48,5 @@ permalink: /kb/264/Q264107/
 	
 	=============================================================================
 	
+
+{% endraw %}

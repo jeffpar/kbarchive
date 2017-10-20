@@ -6,6 +6,8 @@ permalink: /kb/130/Q130579/
 
 ## Q130579: PRB: UserId and Password Viewable in Database Container
 
+{% raw %}
+
 	Article: Q130579
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -65,3 +67,5 @@ permalink: /kb/130/Q130579/
 	
 	=============================================================================
 	
+
+{% endraw %}

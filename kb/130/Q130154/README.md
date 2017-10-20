@@ -6,6 +6,8 @@ permalink: /kb/130/Q130154/
 
 ## Q130154: PPT: Columns or Rows Missing from Inserted Gantt Chart
 
+{% raw %}
+
 	Article: Q130154
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -68,3 +70,5 @@ permalink: /kb/130/Q130154/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221688/
 
 ## Q221688: FIX:_VFP.Eval() Only Accepts Strings of 255 Characters or Less
 
+{% raw %}
+
 	Article: Q221688
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/221/Q221688/
 	
 	=============================================================================
 	
+
+{% endraw %}

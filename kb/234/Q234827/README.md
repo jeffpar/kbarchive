@@ -6,6 +6,8 @@ permalink: /kb/234/Q234827/
 
 ## Q234827: MOD2000:Unnecessary Error When You Cancel Adding Project to VSS
 
+{% raw %}
+
 	Article: Q234827
 	Product(s): Microsoft SourceSafe
 	Version(s): ; WINDOWS:6.0
@@ -66,3 +68,5 @@ permalink: /kb/234/Q234827/
 	
 	=============================================================================
 	
+
+{% endraw %}

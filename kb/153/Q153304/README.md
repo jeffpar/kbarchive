@@ -6,6 +6,8 @@ permalink: /kb/153/Q153304/
 
 ## Q153304: USERTSR and USERIPX Options in Documentation Incorrect
 
+{% raw %}
+
 	Article: Q153304
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153304/
 	
 	=============================================================================
 	
+
+{% endraw %}

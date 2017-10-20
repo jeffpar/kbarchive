@@ -6,6 +6,8 @@ permalink: /kb/325/Q325977/
 
 ## Q325977: Train Simulator 1.0: Mouse Pointer Is Erratic or Stops Moving
 
+{% raw %}
+
 	Article: Q325977
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -126,3 +128,5 @@ permalink: /kb/325/Q325977/
 	
 	=============================================================================
 	
+
+{% endraw %}

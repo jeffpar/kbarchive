@@ -6,6 +6,8 @@ permalink: /kb/181/Q181122/
 
 ## Q181122: Event ID 627 Running SNA Services Under WinNT User Account
 
+{% raw %}
+
 	Article: Q181122
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -69,3 +71,5 @@ permalink: /kb/181/Q181122/
 	
 	=============================================================================
 	
+
+{% endraw %}

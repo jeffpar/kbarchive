@@ -6,6 +6,8 @@ permalink: /kb/321/Q321550/
 
 ## Q321550: HOWTO: Optimize VFP Apps While Using Norton AntiVirus 2002
 
+{% raw %}
+
 	Article: Q321550
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0,7.0
@@ -140,3 +142,5 @@ permalink: /kb/321/Q321550/
 	
 	=============================================================================
 	
+
+{% endraw %}

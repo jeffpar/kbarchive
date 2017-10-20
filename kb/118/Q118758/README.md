@@ -6,6 +6,8 @@ permalink: /kb/118/Q118758/
 
 ## Q118758: Article List for Problems With a CLongBinary Field
 
+{% raw %}
+
 	Article: Q118758
 	Product(s): Microsoft C Compiler
 	Version(s): 1.50 1.51 1.52 | 2.00 2.10 2.20
@@ -54,3 +56,5 @@ permalink: /kb/118/Q118758/
 	
 	=============================================================================
 	
+
+{% endraw %}

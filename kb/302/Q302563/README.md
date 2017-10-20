@@ -6,6 +6,8 @@ permalink: /kb/302/Q302563/
 
 ## Q302563: Multi-User Associated Accounts
 
+{% raw %}
+
 	Article: Q302563
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -47,3 +49,5 @@ permalink: /kb/302/Q302563/
 	
 	=============================================================================
 	
+
+{% endraw %}

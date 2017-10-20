@@ -6,6 +6,8 @@ permalink: /kb/069/Q69136/
 
 ## Q69136: fread() May Cause Protection Violation Under OS/2
 
+{% raw %}
+
 	Article: Q69136
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -63,3 +65,5 @@ permalink: /kb/069/Q69136/
 	Microsoft has confirmed this to be a problem in C versions 6.00 and
 	6.00a. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

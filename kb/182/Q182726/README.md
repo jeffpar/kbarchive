@@ -6,6 +6,8 @@ permalink: /kb/182/Q182726/
 
 ## Q182726: WD97: Save Preview Picture Setting Is Document Specific
 
+{% raw %}
+
 	Article: Q182726
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -140,3 +142,5 @@ permalink: /kb/182/Q182726/
 	
 	=============================================================================
 	
+
+{% endraw %}

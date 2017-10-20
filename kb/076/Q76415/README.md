@@ -6,6 +6,8 @@ permalink: /kb/076/Q76415/
 
 ## Q76415: HOWTO: Creating a Progress Dialog with a Cancel Option
 
+{% raw %}
+
 	Article: Q76415
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -168,3 +170,5 @@ permalink: /kb/076/Q76415/
 	
 	=============================================================================
 	
+
+{% endraw %}

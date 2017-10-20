@@ -6,6 +6,8 @@ permalink: /kb/098/Q98417/
 
 ## Q98417: Heuristics Don't Disable MS-DOS Workstation Write-Behind
 
+{% raw %}
+
 	Article: Q98417
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/098/Q98417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94034/
 
 ## Q94034: Cannot Print to File Using PCPanel Version 2.2
 
+{% raw %}
+
 	Article: Q94034
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/094/Q94034/
 	
 	=============================================================================
 	
+
+{% endraw %}

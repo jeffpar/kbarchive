@@ -6,6 +6,8 @@ permalink: /kb/094/Q94330/
 
 ## Q94330: DoubleSpace Setup Runs in Mono on Some Older 8514/a Cards
 
+{% raw %}
+
 	Article: Q94330
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -63,3 +65,5 @@ permalink: /kb/094/Q94330/
 	
 	=============================================================================
 	
+
+{% endraw %}

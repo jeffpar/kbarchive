@@ -6,6 +6,8 @@ permalink: /kb/159/Q159236/
 
 ## Q159236: WD97: Help Topic for Supplemental Converters Listed Twice
 
+{% raw %}
+
 	Article: Q159236
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/159/Q159236/
 	
 	=============================================================================
 	
+
+{% endraw %}

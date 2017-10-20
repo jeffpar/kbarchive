@@ -6,6 +6,8 @@ permalink: /kb/139/Q139026/
 
 ## Q139026: DOC: Remote Debugging with TCP/IP Isn't Supported on Win32s
 
+{% raw %}
+
 	Article: Q139026
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -42,3 +44,5 @@ permalink: /kb/139/Q139026/
 	
 	=============================================================================
 	
+
+{% endraw %}

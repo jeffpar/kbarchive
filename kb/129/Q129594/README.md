@@ -6,6 +6,8 @@ permalink: /kb/129/Q129594/
 
 ## Q129594: Command-Line Switches for Microsoft Exchange
 
+{% raw %}
+
 	Article: Q129594
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/129/Q129594/
 	
 	=============================================================================
 	
+
+{% endraw %}

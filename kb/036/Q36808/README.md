@@ -6,6 +6,8 @@ permalink: /kb/036/Q36808/
 
 ## Q36808: Line Number 65,529 Is the Maximum Supported by QuickBASIC
 
+{% raw %}
+
 	Article: Q36808
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/036/Q36808/
 	        BEEP
 	       END IF
 	RETURN
+
+{% endraw %}

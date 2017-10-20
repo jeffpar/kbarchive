@@ -6,6 +6,8 @@ permalink: /kb/171/Q171819/
 
 ## Q171819: FIX: Invalid Enum Value Causes Incompatible Binary Compatible
 
+{% raw %}
+
 	Article: Q171819
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -113,3 +115,5 @@ permalink: /kb/171/Q171819/
 	
 	=============================================================================
 	
+
+{% endraw %}

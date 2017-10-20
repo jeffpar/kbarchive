@@ -6,6 +6,8 @@ permalink: /kb/095/Q95023/
 
 ## Q95023: INF: Error Handling in Visual Basic Data Access Layer
 
+{% raw %}
+
 	Article: Q95023
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -84,3 +86,5 @@ permalink: /kb/095/Q95023/
 	
 	=============================================================================
 	
+
+{% endraw %}

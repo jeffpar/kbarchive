@@ -6,6 +6,8 @@ permalink: /kb/185/Q185379/
 
 ## Q185379: Browser Stops When .Exe File Attempts to Run Instead of Download
 
+{% raw %}
+
 	Article: Q185379
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/185/Q185379/
 	
 	=============================================================================
 	
+
+{% endraw %}

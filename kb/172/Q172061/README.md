@@ -6,6 +6,8 @@ permalink: /kb/172/Q172061/
 
 ## Q172061: Browsing Domains Using SNA Win95 UDConfig Does Not Work
 
+{% raw %}
+
 	Article: Q172061
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/172/Q172061/
 	
 	=============================================================================
 	
+
+{% endraw %}

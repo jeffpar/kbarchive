@@ -6,6 +6,8 @@ permalink: /kb/097/Q97360/
 
 ## Q97360: SAMPLE: Styles.exe Demonstrates Window Hierarchy and Styles
 
+{% raw %}
+
 	Article: Q97360
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/097/Q97360/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173536/
 
 ## Q173536: STOP Message 0x0000001E Appears with Seagate Backup Exec 6.0
 
+{% raw %}
+
 	Article: Q173536
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5, 3.51
@@ -55,3 +57,5 @@ permalink: /kb/173/Q173536/
 	
 	=============================================================================
 	
+
+{% endraw %}

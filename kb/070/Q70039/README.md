@@ -6,6 +6,8 @@ permalink: /kb/070/Q70039/
 
 ## Q70039: Passing an Application's Start Up Directory via SETUP.INF
 
+{% raw %}
+
 	Article: Q70039
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -97,3 +99,5 @@ permalink: /kb/070/Q70039/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137746/
 
 ## Q137746: Microsoft Plus! Internet.txt File Contents
 
+{% raw %}
+
 	Article: Q137746
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -264,3 +266,5 @@ permalink: /kb/137/Q137746/
 	
 	=============================================================================
 	
+
+{% endraw %}

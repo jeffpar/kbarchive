@@ -6,6 +6,8 @@ permalink: /kb/123/Q123169/
 
 ## Q123169: WINS Event Log IDs 4096 - 4134 (Informational Messages)
 
+{% raw %}
+
 	Article: Q123169
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -184,3 +186,5 @@ permalink: /kb/123/Q123169/
 	
 	=============================================================================
 	
+
+{% endraw %}

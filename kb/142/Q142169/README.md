@@ -6,6 +6,8 @@ permalink: /kb/142/Q142169/
 
 ## Q142169: FIX: TABLEREVERT() Does Not Release Header Lock
 
+{% raw %}
+
 	Article: Q142169
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -103,3 +105,5 @@ permalink: /kb/142/Q142169/
 	
 	=============================================================================
 	
+
+{% endraw %}

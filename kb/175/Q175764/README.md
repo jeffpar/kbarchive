@@ -6,6 +6,8 @@ permalink: /kb/175/Q175764/
 
 ## Q175764: SMS: DBCNV12a Does Not Modify Table During SMS 1.2 SP2 Upgrade
 
+{% raw %}
+
 	Article: Q175764
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -63,3 +65,5 @@ permalink: /kb/175/Q175764/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44880/
 
 ## Q44880: Definition of Windows Temporary Files
 
+{% raw %}
+
 	Article: Q44880
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/044/Q44880/
 	
 	=============================================================================
 	
+
+{% endraw %}

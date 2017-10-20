@@ -6,6 +6,8 @@ permalink: /kb/074/Q74601/
 
 ## Q74601: INFO: Using GetDIBits()
 
+{% raw %}
+
 	Article: Q74601
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/074/Q74601/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127062/
 
 ## Q127062: Mouse Hangs After Windows 95 Hardware Detection
 
+{% raw %}
+
 	Article: Q127062
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/127/Q127062/
 	
 	=============================================================================
 	
+
+{% endraw %}

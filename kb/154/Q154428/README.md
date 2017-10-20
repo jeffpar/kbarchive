@@ -6,6 +6,8 @@ permalink: /kb/154/Q154428/
 
 ## Q154428: INFO: Visual C++ Version 4.1b
 
+{% raw %}
+
 	Article: Q154428
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -447,3 +449,5 @@ permalink: /kb/154/Q154428/
 	
 	=============================================================================
 	
+
+{% endraw %}

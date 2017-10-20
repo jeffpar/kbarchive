@@ -6,6 +6,8 @@ permalink: /kb/174/Q174175/
 
 ## Q174175: XFOR: Some Exchange Server Non-Delivery Report Codes
 
+{% raw %}
+
 	Article: Q174175
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0 SP4
@@ -165,3 +167,5 @@ permalink: /kb/174/Q174175/
 	
 	=============================================================================
 	
+
+{% endraw %}

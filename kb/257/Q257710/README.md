@@ -6,6 +6,8 @@ permalink: /kb/257/Q257710/
 
 ## Q257710: FIX: PointSelected of MSChart May Return Wrong DataPoint Value
 
+{% raw %}
+
 	Article: Q257710
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -111,3 +113,5 @@ permalink: /kb/257/Q257710/
 	
 	=============================================================================
 	
+
+{% endraw %}

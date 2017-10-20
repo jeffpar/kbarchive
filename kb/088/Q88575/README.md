@@ -6,6 +6,8 @@ permalink: /kb/088/Q88575/
 
 ## Q88575: Using the COMPAQ 286N with Windows 3.0
 
+{% raw %}
+
 	Article: Q88575
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/088/Q88575/
 	
 	=============================================================================
 	
+
+{% endraw %}

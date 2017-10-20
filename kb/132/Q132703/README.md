@@ -6,6 +6,8 @@ permalink: /kb/132/Q132703/
 
 ## Q132703: HOWTO: Set Up SourceSafe for the Macintosh Manually
 
+{% raw %}
+
 	Article: Q132703
 	Product(s): Microsoft SourceSafe
 	Version(s): MACINTOSH:3.04,3.1
@@ -92,3 +94,5 @@ permalink: /kb/132/Q132703/
 	
 	=============================================================================
 	
+
+{% endraw %}

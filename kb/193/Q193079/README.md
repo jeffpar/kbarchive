@@ -6,6 +6,8 @@ permalink: /kb/193/Q193079/
 
 ## Q193079: FIX: &quot;Syntax Error&quot; with EVAL of ALL or LTRIM in SELECT-SQL
 
+{% raw %}
+
 	Article: Q193079
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -127,3 +129,5 @@ permalink: /kb/193/Q193079/
 	
 	=============================================================================
 	
+
+{% endraw %}

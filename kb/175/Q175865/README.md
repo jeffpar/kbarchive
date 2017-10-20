@@ -6,6 +6,8 @@ permalink: /kb/175/Q175865/
 
 ## Q175865: Print Directly to Printer Unsupported with LPR Devices
 
+{% raw %}
+
 	Article: Q175865
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/175/Q175865/
 	
 	=============================================================================
 	
+
+{% endraw %}

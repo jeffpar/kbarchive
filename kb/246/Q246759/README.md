@@ -6,6 +6,8 @@ permalink: /kb/246/Q246759/
 
 ## Q246759: Cannot Create Client Connection Account in Administrator Console
 
+{% raw %}
+
 	Article: Q246759
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -127,3 +129,5 @@ permalink: /kb/246/Q246759/
 	
 	=============================================================================
 	
+
+{% endraw %}

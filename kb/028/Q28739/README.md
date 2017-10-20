@@ -6,6 +6,8 @@ permalink: /kb/028/Q28739/
 
 ## Q28739: Programming the Mouse Driver Versus Writing One
 
+{% raw %}
+
 	Article: Q28739
 	Product(s): See article
 	Version(s): 1.00
@@ -29,3 +31,5 @@ permalink: /kb/028/Q28739/
 	The Serial mouse protocol may be obtained by writing a formal request
 	to our Mouse Product Manager (or contacting our Mouse ISV department),
 	giving supported reasons for bypassing our mouse driver.
+
+{% endraw %}

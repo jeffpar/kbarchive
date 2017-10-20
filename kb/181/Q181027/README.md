@@ -6,6 +6,8 @@ permalink: /kb/181/Q181027/
 
 ## Q181027: Closing Subdomain Causes Dr. Watson in CSnaItem::Terminate
 
+{% raw %}
+
 	Article: Q181027
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -82,3 +84,5 @@ permalink: /kb/181/Q181027/
 	
 	=============================================================================
 	
+
+{% endraw %}

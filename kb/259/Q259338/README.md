@@ -6,6 +6,8 @@ permalink: /kb/259/Q259338/
 
 ## Q259338: XCLN: Private Meeting Requests Are Not Forwarded to Delegate
 
+{% raw %}
+
 	Article: Q259338
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/259/Q259338/
 	
 	=============================================================================
 	
+
+{% endraw %}

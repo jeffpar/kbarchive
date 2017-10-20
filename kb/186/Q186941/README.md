@@ -6,6 +6,8 @@ permalink: /kb/186/Q186941/
 
 ## Q186941: Mac Bookshelf 96-97 Err Msg: Unable to Start Because of an Error
 
+{% raw %}
+
 	Article: Q186941
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -58,3 +60,5 @@ permalink: /kb/186/Q186941/
 	
 	=============================================================================
 	
+
+{% endraw %}

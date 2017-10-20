@@ -6,6 +6,8 @@ permalink: /kb/180/Q180384/
 
 ## Q180384: HOWTO: Troubleshoot Run-time Error '70' in DCOM Applications
 
+{% raw %}
+
 	Article: Q180384
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -172,3 +174,5 @@ permalink: /kb/180/Q180384/
 	
 	=============================================================================
 	
+
+{% endraw %}

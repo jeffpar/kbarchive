@@ -6,6 +6,8 @@ permalink: /kb/175/Q175041/
 
 ## Q175041: XFOR: Mail for Macintosh User Names with Bullet Points
 
+{% raw %}
+
 	Article: Q175041
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/175/Q175041/
 	
 	=============================================================================
 	
+
+{% endraw %}

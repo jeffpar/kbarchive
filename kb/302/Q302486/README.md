@@ -6,6 +6,8 @@ permalink: /kb/302/Q302486/
 
 ## Q302486: MechWarrior 4: Gray Box Displayed Over the Playing Screen
 
+{% raw %}
+
 	Article: Q302486
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/302/Q302486/
 	
 	=============================================================================
 	
+
+{% endraw %}

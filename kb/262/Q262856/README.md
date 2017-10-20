@@ -6,6 +6,8 @@ permalink: /kb/262/Q262856/
 
 ## Q262856: SMS: Invalid Pointer Causes Low-rights Client Install to Fail
 
+{% raw %}
+
 	Article: Q262856
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -94,3 +96,5 @@ permalink: /kb/262/Q262856/
 	
 	=============================================================================
 	
+
+{% endraw %}

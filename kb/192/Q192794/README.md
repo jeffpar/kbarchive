@@ -6,6 +6,8 @@ permalink: /kb/192/Q192794/
 
 ## Q192794: How to Apply System Policies to Terminal Server
 
+{% raw %}
+
 	Article: Q192794
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/192/Q192794/
 	
 	=============================================================================
 	
+
+{% endraw %}

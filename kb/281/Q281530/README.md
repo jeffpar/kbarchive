@@ -6,6 +6,8 @@ permalink: /kb/281/Q281530/
 
 ## Q281530: Reader: &quot;Activation Error&quot; When You Activate in Network Domain
 
+{% raw %}
+
 	Article: Q281530
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -57,3 +59,5 @@ permalink: /kb/281/Q281530/
 	
 	=============================================================================
 	
+
+{% endraw %}

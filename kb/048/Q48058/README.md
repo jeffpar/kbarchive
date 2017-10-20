@@ -6,6 +6,8 @@ permalink: /kb/048/Q48058/
 
 ## Q48058: Graphics Algorithm Different in QuickBASIC Versus GW-BASIC
 
+{% raw %}
+
 	Article: Q48058
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -54,3 +56,5 @@ permalink: /kb/048/Q48058/
 	10 SCREEN 1
 	20 LINE (160, 90)-(140, 1), 1
 	30 LINE (162, 90)-(182, 1), 1
+
+{% endraw %}

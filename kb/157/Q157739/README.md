@@ -6,6 +6,8 @@ permalink: /kb/157/Q157739/
 
 ## Q157739: Winbm2fv.exe Does Not Work in Windows NT
 
+{% raw %}
+
 	Article: Q157739
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/157/Q157739/
 	
 	=============================================================================
 	
+
+{% endraw %}

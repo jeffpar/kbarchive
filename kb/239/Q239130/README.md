@@ -6,6 +6,8 @@ permalink: /kb/239/Q239130/
 
 ## Q239130: SMS: 32-Bit Package Does Not Remove Duplicate Registry Entries
 
+{% raw %}
+
 	Article: Q239130
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -73,3 +75,5 @@ permalink: /kb/239/Q239130/
 	
 	=============================================================================
 	
+
+{% endraw %}

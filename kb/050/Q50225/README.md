@@ -6,6 +6,8 @@ permalink: /kb/050/Q50225/
 
 ## Q50225: How to Convert VGA Colors to Their Equivalent Gray Scale
 
+{% raw %}
+
 	Article: Q50225
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -81,3 +83,5 @@ permalink: /kb/050/Q50225/
 	loaded as follows:
 	
 	   QBX GRAY /L QBX.QLB
+
+{% endraw %}

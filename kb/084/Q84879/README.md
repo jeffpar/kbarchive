@@ -6,6 +6,8 @@ permalink: /kb/084/Q84879/
 
 ## Q84879: NEC Silentwriter 95 Shows Apple LaserWriter in Print Setup
 
+{% raw %}
+
 	Article: Q84879
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -90,3 +92,5 @@ permalink: /kb/084/Q84879/
 	
 	=============================================================================
 	
+
+{% endraw %}

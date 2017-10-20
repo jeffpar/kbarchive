@@ -6,6 +6,8 @@ permalink: /kb/196/Q196514/
 
 ## Q196514: WD97: Merge Results Blank Using Header File with ODBC
 
+{% raw %}
+
 	Article: Q196514
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/196/Q196514/
 	
 	=============================================================================
 	
+
+{% endraw %}

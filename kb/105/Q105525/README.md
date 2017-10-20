@@ -6,6 +6,8 @@ permalink: /kb/105/Q105525/
 
 ## Q105525: FFAPI: Cannot Mail to Group Members on External Post Offices
 
+{% raw %}
+
 	Article: Q105525
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0
@@ -44,3 +46,5 @@ permalink: /kb/105/Q105525/
 	
 	=============================================================================
 	
+
+{% endraw %}

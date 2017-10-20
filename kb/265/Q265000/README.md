@@ -6,6 +6,8 @@ permalink: /kb/265/Q265000/
 
 ## Q265000: StarLancer Error Message: Debug Assertion Error
 
+{% raw %}
+
 	Article: Q265000
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -121,3 +123,5 @@ permalink: /kb/265/Q265000/
 	
 	=============================================================================
 	
+
+{% endraw %}

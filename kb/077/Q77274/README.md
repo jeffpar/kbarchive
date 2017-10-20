@@ -6,6 +6,8 @@ permalink: /kb/077/Q77274/
 
 ## Q77274: No Page Break Unavailable in Printer Setup with IBM Proprinter
 
+{% raw %}
+
 	Article: Q77274
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/077/Q77274/
 	
 	=============================================================================
 	
+
+{% endraw %}

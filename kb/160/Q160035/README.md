@@ -6,6 +6,8 @@ permalink: /kb/160/Q160035/
 
 ## Q160035: Memory Leak in SNMP Subagents
 
+{% raw %}
+
 	Article: Q160035
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/160/Q160035/
 	
 	=============================================================================
 	
+
+{% endraw %}

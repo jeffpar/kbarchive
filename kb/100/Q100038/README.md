@@ -6,6 +6,8 @@ permalink: /kb/100/Q100038/
 
 ## Q100038: Mac DOS: Drivers Needed for MS-DOS Client for AppleTalk Mail
 
+{% raw %}
+
 	Article: Q100038
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0,3.1
@@ -87,3 +89,5 @@ permalink: /kb/100/Q100038/
 	
 	=============================================================================
 	
+
+{% endraw %}

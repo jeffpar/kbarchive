@@ -6,6 +6,8 @@ permalink: /kb/116/Q116343/
 
 ## Q116343: Limited AppleTalk Stack Included in Windows NT Workstation
 
+{% raw %}
+
 	Article: Q116343
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -45,3 +47,5 @@ permalink: /kb/116/Q116343/
 	
 	=============================================================================
 	
+
+{% endraw %}

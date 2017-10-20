@@ -6,6 +6,8 @@ permalink: /kb/199/Q199824/
 
 ## Q199824: HOWTO: Get the Address of Variables in Visual Basic
 
+{% raw %}
+
 	Article: Q199824
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -220,3 +222,5 @@ permalink: /kb/199/Q199824/
 	
 	=============================================================================
 	
+
+{% endraw %}

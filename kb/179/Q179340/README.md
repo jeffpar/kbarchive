@@ -6,6 +6,8 @@ permalink: /kb/179/Q179340/
 
 ## Q179340: WD97: CC: Address Gone After Using Address Book in Letter Wizard
 
+{% raw %}
+
 	Article: Q179340
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/179/Q179340/
 	
 	=============================================================================
 	
+
+{% endraw %}

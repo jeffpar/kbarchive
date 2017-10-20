@@ -6,6 +6,8 @@ permalink: /kb/138/Q138639/
 
 ## Q138639: &quot;Slides From Outline&quot; Command Causes &quot;Currently In Use&quot; Error
 
+{% raw %}
+
 	Article: Q138639
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -65,3 +67,5 @@ permalink: /kb/138/Q138639/
 	
 	=============================================================================
 	
+
+{% endraw %}

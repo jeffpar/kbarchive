@@ -6,6 +6,8 @@ permalink: /kb/214/Q214470/
 
 ## Q214470: How to Move the Location of a Locally Cached Profile
 
+{% raw %}
+
 	Article: Q214470
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/214/Q214470/
 	
 	=============================================================================
 	
+
+{% endraw %}

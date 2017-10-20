@@ -6,6 +6,8 @@ permalink: /kb/221/Q221687/
 
 ## Q221687: FIX:C0000005 Fatal Error with CLEAR DEBUGGER and SUSPEND
 
+{% raw %}
+
 	Article: Q221687
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -85,3 +87,5 @@ permalink: /kb/221/Q221687/
 	
 	=============================================================================
 	
+
+{% endraw %}

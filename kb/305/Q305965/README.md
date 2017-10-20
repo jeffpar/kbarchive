@@ -6,6 +6,8 @@ permalink: /kb/305/Q305965/
 
 ## Q305965: HOW TO:Consume XML Web Service Methods by Using SOAP Toolkit 2.0
 
+{% raw %}
+
 	Article: Q305965
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,4.0,6.0,6.0 SP5
@@ -102,3 +104,5 @@ permalink: /kb/305/Q305965/
 	
 	=============================================================================
 	
+
+{% endraw %}

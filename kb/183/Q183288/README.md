@@ -6,6 +6,8 @@ permalink: /kb/183/Q183288/
 
 ## Q183288: Encarta DVD Reference Suite: Problems with Creative Labs DVD Kit
 
+{% raw %}
+
 	Article: Q183288
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/183/Q183288/
 	
 	=============================================================================
 	
+
+{% endraw %}

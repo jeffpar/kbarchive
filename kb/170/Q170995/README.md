@@ -6,6 +6,8 @@ permalink: /kb/170/Q170995/
 
 ## Q170995: How to Install Third-Party Network Adapter Drivers
 
+{% raw %}
+
 	Article: Q170995
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0
@@ -197,3 +199,5 @@ permalink: /kb/170/Q170995/
 	
 	=============================================================================
 	
+
+{% endraw %}

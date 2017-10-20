@@ -6,6 +6,8 @@ permalink: /kb/174/Q174899/
 
 ## Q174899: Canon BJC-610 Printer May Not Print After Restarting Computer
 
+{% raw %}
+
 	Article: Q174899
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -100,3 +102,5 @@ permalink: /kb/174/Q174899/
 	
 	=============================================================================
 	
+
+{% endraw %}

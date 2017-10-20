@@ -6,6 +6,8 @@ permalink: /kb/149/Q149587/
 
 ## Q149587: PPT7: Creating PowerPoint 95 Viewer Disks from Downloaded File
 
+{% raw %}
+
 	Article: Q149587
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -109,3 +111,5 @@ permalink: /kb/149/Q149587/
 	
 	=============================================================================
 	
+
+{% endraw %}

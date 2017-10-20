@@ -6,6 +6,8 @@ permalink: /kb/221/Q221738/
 
 ## Q221738: FIX:  Memory Leak With SET SYSMENU OFF
 
+{% raw %}
+
 	Article: Q221738
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -104,3 +106,5 @@ permalink: /kb/221/Q221738/
 	
 	=============================================================================
 	
+
+{% endraw %}

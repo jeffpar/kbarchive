@@ -6,6 +6,8 @@ permalink: /kb/169/Q169255/
 
 ## Q169255: Spooler Fails to Notify When Disk is Full
 
+{% raw %}
+
 	Article: Q169255
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/169/Q169255/
 	
 	=============================================================================
 	
+
+{% endraw %}

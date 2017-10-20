@@ -6,6 +6,8 @@ permalink: /kb/078/Q78442/
 
 ## Q78442: MS-DOS Shell Task Swapper and Framework III/Frameword IV
 
+{% raw %}
+
 	Article: Q78442
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -53,3 +55,5 @@ permalink: /kb/078/Q78442/
 	
 	=============================================================================
 	
+
+{% endraw %}

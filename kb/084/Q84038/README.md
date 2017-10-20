@@ -6,6 +6,8 @@ permalink: /kb/084/Q84038/
 
 ## Q84038: Assigning a Shortcut Key to a Windows 3.1 Screen Saver
 
+{% raw %}
+
 	Article: Q84038
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -111,3 +113,5 @@ permalink: /kb/084/Q84038/
 	
 	=============================================================================
 	
+
+{% endraw %}

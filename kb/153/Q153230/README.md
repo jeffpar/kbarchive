@@ -6,6 +6,8 @@ permalink: /kb/153/Q153230/
 
 ## Q153230: ErrMsg: Complete Gardening Cannot Start Your Video Driver
 
+{% raw %}
+
 	Article: Q153230
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,95
@@ -122,3 +124,5 @@ permalink: /kb/153/Q153230/
 	
 	=============================================================================
 	
+
+{% endraw %}

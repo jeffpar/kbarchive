@@ -6,6 +6,8 @@ permalink: /kb/196/Q196252/
 
 ## Q196252: XFOR: 119 Character Limit for &quot;Administrator info&quot; in Web Admin
 
+{% raw %}
+
 	Article: Q196252
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/196/Q196252/
 	
 	=============================================================================
 	
+
+{% endraw %}

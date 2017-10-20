@@ -6,6 +6,8 @@ permalink: /kb/198/Q198817/
 
 ## Q198817: CHAT: Channel with Keys Set May Block Sysop
 
+{% raw %}
+
 	Article: Q198817
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/198/Q198817/
 	
 	=============================================================================
 	
+
+{% endraw %}

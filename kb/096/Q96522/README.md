@@ -6,6 +6,8 @@ permalink: /kb/096/Q96522/
 
 ## Q96522: Regions Scanned by the EMM386.EXE HIGHSCAN Switch
 
+{% raw %}
+
 	Article: Q96522
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/096/Q96522/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122932/
 
 ## Q122932: FIX: Special Characters in Path May Prevent File Access
 
+{% raw %}
+
 	Article: Q122932
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -67,3 +69,5 @@ permalink: /kb/122/Q122932/
 	
 	=============================================================================
 	
+
+{% endraw %}

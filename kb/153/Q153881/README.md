@@ -6,6 +6,8 @@ permalink: /kb/153/Q153881/
 
 ## Q153881: HOWTO: How To Assign the ActiveX Control LPDispatch Property in
 
+{% raw %}
+
 	Article: Q153881
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -85,3 +87,5 @@ permalink: /kb/153/Q153881/
 	
 	=============================================================================
 	
+
+{% endraw %}

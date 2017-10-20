@@ -6,6 +6,8 @@ permalink: /kb/169/Q169291/
 
 ## Q169291: Using Scopes with Different Subnet Masks in a Superscope
 
+{% raw %}
+
 	Article: Q169291
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -90,3 +92,5 @@ permalink: /kb/169/Q169291/
 	
 	=============================================================================
 	
+
+{% endraw %}

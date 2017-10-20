@@ -6,6 +6,8 @@ permalink: /kb/060/Q60089/
 
 ## Q60089: Using DEBUG to Start a Low-Level Format
 
+{% raw %}
+
 	Article: Q60089
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -98,3 +100,5 @@ permalink: /kb/060/Q60089/
 	
 	=============================================================================
 	
+
+{% endraw %}

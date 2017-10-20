@@ -6,6 +6,8 @@ permalink: /kb/073/Q73711/
 
 ## Q73711: Backup/Restore of an Empty Directory
 
+{% raw %}
+
 	Article: Q73711
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -63,3 +65,5 @@ permalink: /kb/073/Q73711/
 	
 	=============================================================================
 	
+
+{% endraw %}

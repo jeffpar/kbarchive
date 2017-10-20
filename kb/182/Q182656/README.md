@@ -6,6 +6,8 @@ permalink: /kb/182/Q182656/
 
 ## Q182656: New Security Feature in SNA 4.0 May Prevent Access to APPC LUs
 
+{% raw %}
+
 	Article: Q182656
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -134,3 +136,5 @@ permalink: /kb/182/Q182656/
 	
 	=============================================================================
 	
+
+{% endraw %}

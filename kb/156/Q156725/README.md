@@ -6,6 +6,8 @@ permalink: /kb/156/Q156725/
 
 ## Q156725: XFOR: MS Mail X.400 Gateways and Exchange X.121 Addresses
 
+{% raw %}
+
 	Article: Q156725
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156725/
 	
 	=============================================================================
 	
+
+{% endraw %}

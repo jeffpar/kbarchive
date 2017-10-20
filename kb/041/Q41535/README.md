@@ -6,6 +6,8 @@ permalink: /kb/041/Q41535/
 
 ## Q41535: Syntax Differs When Calling a SUB without the CALL Keyword
 
+{% raw %}
+
 	Article: Q41535
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/041/Q41535/
 	    arg1 = 1
 	    arg2 = 2
 	  END SUB
+
+{% endraw %}

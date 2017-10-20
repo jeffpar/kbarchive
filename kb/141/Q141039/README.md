@@ -6,6 +6,8 @@ permalink: /kb/141/Q141039/
 
 ## Q141039: HOWTO: How to Hide the Apply Button in CPropertySheet
 
+{% raw %}
+
 	Article: Q141039
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0
@@ -104,3 +106,5 @@ permalink: /kb/141/Q141039/
 	
 	=============================================================================
 	
+
+{% endraw %}

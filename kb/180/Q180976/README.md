@@ -6,6 +6,8 @@ permalink: /kb/180/Q180976/
 
 ## Q180976: WD97: How to Create a Watermark in Word
 
+{% raw %}
+
 	Article: Q180976
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -323,3 +325,5 @@ permalink: /kb/180/Q180976/
 	
 	=============================================================================
 	
+
+{% endraw %}

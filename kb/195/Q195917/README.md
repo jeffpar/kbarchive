@@ -6,6 +6,8 @@ permalink: /kb/195/Q195917/
 
 ## Q195917: EVG99: Favorite List Entry Cannot Be Longer Than 42 Characters
 
+{% raw %}
+
 	Article: Q195917
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/195/Q195917/
 	
 	=============================================================================
 	
+
+{% endraw %}

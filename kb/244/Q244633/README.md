@@ -6,6 +6,8 @@ permalink: /kb/244/Q244633/
 
 ## Q244633: SMS: Site Status Node is Slow
 
+{% raw %}
+
 	Article: Q244633
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -104,3 +106,5 @@ permalink: /kb/244/Q244633/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156170/
 
 ## Q156170: PRB: Open Tab on Docked Project Manager Stops Desktop Resize
 
+{% raw %}
+
 	Article: Q156170
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -61,3 +63,5 @@ permalink: /kb/156/Q156170/
 	
 	=============================================================================
 	
+
+{% endraw %}

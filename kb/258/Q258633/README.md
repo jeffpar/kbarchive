@@ -6,6 +6,8 @@ permalink: /kb/258/Q258633/
 
 ## Q258633: Baseball 2001: Screen Turns Black or Text Is Not Displayed
 
+{% raw %}
+
 	Article: Q258633
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/258/Q258633/
 	
 	=============================================================================
 	
+
+{% endraw %}

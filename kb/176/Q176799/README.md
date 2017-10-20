@@ -6,6 +6,8 @@ permalink: /kb/176/Q176799/
 
 ## Q176799: INFO: Using DCOM Config (DCOMCNFG.EXE) on Windows NT
 
+{% raw %}
+
 	Article: Q176799
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -319,3 +321,5 @@ permalink: /kb/176/Q176799/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263159/
 
 ## Q263159: How to Troubleshoot Extension Conflicts on the Macintosh
 
+{% raw %}
+
 	Article: Q263159
 	Product(s): Microsoft Tips for the Macintosh System
 	Version(s): 7.5 and later,98
@@ -139,3 +141,5 @@ permalink: /kb/263/Q263159/
 	
 	=============================================================================
 	
+
+{% endraw %}

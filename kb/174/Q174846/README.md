@@ -6,6 +6,8 @@ permalink: /kb/174/Q174846/
 
 ## Q174846: Mac Close Combat: Error -192 When Starting Program
 
+{% raw %}
+
 	Article: Q174846
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -54,3 +56,5 @@ permalink: /kb/174/Q174846/
 	
 	=============================================================================
 	
+
+{% endraw %}

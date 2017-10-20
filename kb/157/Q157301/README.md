@@ -6,6 +6,8 @@ permalink: /kb/157/Q157301/
 
 ## Q157301: Shutdown of 16-bit Named Pipe Client Causes GPF in Netapi.dll
 
+{% raw %}
+
 	Article: Q157301
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -55,3 +57,5 @@ permalink: /kb/157/Q157301/
 	
 	=============================================================================
 	
+
+{% endraw %}

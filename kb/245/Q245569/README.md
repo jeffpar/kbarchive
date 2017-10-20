@@ -6,6 +6,8 @@ permalink: /kb/245/Q245569/
 
 ## Q245569: XFOR: Connector for Notes: Error Opening Mailbox Domain/Server
 
+{% raw %}
+
 	Article: Q245569
 	Product(s): Microsoft Exchange
 	Version(s): 3.2,5.5
@@ -67,3 +69,5 @@ permalink: /kb/245/Q245569/
 	
 	=============================================================================
 	
+
+{% endraw %}

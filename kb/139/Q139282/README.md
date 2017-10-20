@@ -6,6 +6,8 @@ permalink: /kb/139/Q139282/
 
 ## Q139282: New 3C509 Addressing Scheme Requires New Remoteboot Config
 
+{% raw %}
+
 	Article: Q139282
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -46,3 +48,5 @@ permalink: /kb/139/Q139282/
 	
 	=============================================================================
 	
+
+{% endraw %}

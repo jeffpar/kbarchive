@@ -6,6 +6,8 @@ permalink: /kb/081/Q81422/
 
 ## Q81422: No Expanded Memory in MS-DOS-Based Applications w/ Windows 3.0
 
+{% raw %}
+
 	Article: Q81422
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -83,3 +85,5 @@ permalink: /kb/081/Q81422/
 	
 	=============================================================================
 	
+
+{% endraw %}

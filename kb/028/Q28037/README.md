@@ -6,6 +6,8 @@ permalink: /kb/028/Q28037/
 
 ## Q28037: RESUME NEXT with Single-Line DEF FN RESUMEs Wrongly in QB.EXE
 
+{% raw %}
+
 	Article: Q28037
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -45,3 +47,5 @@ permalink: /kb/028/Q28037/
 	
 	   900 PRINT "No negatives"
 	   910 RESUME NEXT
+
+{% endraw %}

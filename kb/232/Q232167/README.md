@@ -6,6 +6,8 @@ permalink: /kb/232/Q232167/
 
 ## Q232167: How to Remove a Server Certificate from an IIS 5.0 Web Site
 
+{% raw %}
+
 	Article: Q232167
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -62,3 +64,5 @@ permalink: /kb/232/Q232167/
 	
 	=============================================================================
 	
+
+{% endraw %}

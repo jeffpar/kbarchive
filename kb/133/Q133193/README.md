@@ -6,6 +6,8 @@ permalink: /kb/133/Q133193/
 
 ## Q133193: Black Screen Running Magic School Bus - Solar System Demo.
 
+{% raw %}
+
 	Article: Q133193
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/133/Q133193/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130132/
 
 ## Q130132: PRB: Instance of Container Class Uses Parent Form Scalemode
 
+{% raw %}
+
 	Article: Q130132
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -190,3 +192,5 @@ permalink: /kb/130/Q130132/
 	
 	=============================================================================
 	
+
+{% endraw %}

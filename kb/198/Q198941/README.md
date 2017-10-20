@@ -6,6 +6,8 @@ permalink: /kb/198/Q198941/
 
 ## Q198941: Users Cannot Change Password When Logging On
 
+{% raw %}
+
 	Article: Q198941
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -131,3 +133,5 @@ permalink: /kb/198/Q198941/
 	
 	=============================================================================
 	
+
+{% endraw %}

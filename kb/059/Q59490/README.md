@@ -6,6 +6,8 @@ permalink: /kb/059/Q59490/
 
 ## Q59490: Errors When Space Exists Between Macro Name and Parameters
 
+{% raw %}
+
 	Article: Q59490
 	Product(s): See article
 	Version(s): 4.x 5.00 5.10 | 5.10
@@ -61,3 +63,5 @@ permalink: /kb/059/Q59490/
 	                 function
 	   macro.c(10) : warning C4071: 'function through ptr' : no
 	                 function prototype given
+
+{% endraw %}

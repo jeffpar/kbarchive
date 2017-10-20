@@ -6,6 +6,8 @@ permalink: /kb/135/Q135600/
 
 ## Q135600: Doc Err: Halting System When Security Log Is Full
 
+{% raw %}
+
 	Article: Q135600
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -40,3 +42,5 @@ permalink: /kb/135/Q135600/
 	
 	=============================================================================
 	
+
+{% endraw %}

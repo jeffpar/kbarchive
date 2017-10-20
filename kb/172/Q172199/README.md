@@ -6,6 +6,8 @@ permalink: /kb/172/Q172199/
 
 ## Q172199: HOWTO: Optimize Queries in Visual Basic
 
+{% raw %}
+
 	Article: Q172199
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0,4.0,5.0
@@ -360,3 +362,5 @@ permalink: /kb/172/Q172199/
 	
 	=============================================================================
 	
+
+{% endraw %}

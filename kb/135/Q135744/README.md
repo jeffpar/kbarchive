@@ -6,6 +6,8 @@ permalink: /kb/135/Q135744/
 
 ## Q135744: PPT7: Contents of PPReadme.txt File
 
+{% raw %}
+
 	Article: Q135744
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -82,3 +84,5 @@ permalink: /kb/135/Q135744/
 	
 	=============================================================================
 	
+
+{% endraw %}

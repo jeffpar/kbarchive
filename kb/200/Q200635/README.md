@@ -6,6 +6,8 @@ permalink: /kb/200/Q200635/
 
 ## Q200635: SMS: Windows NT Resource Kit Setup Hangs on SMS 2.0 Site Server
 
+{% raw %}
+
 	Article: Q200635
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -43,3 +45,5 @@ permalink: /kb/200/Q200635/
 	
 	=============================================================================
 	
+
+{% endraw %}

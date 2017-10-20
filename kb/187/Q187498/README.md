@@ -6,6 +6,8 @@ permalink: /kb/187/Q187498/
 
 ## Q187498: Disable PCT 1.0, SSL 2.0, or SSL 3.0 on IIS
 
+{% raw %}
+
 	Article: Q187498
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0
@@ -101,3 +103,5 @@ permalink: /kb/187/Q187498/
 	
 	=============================================================================
 	
+
+{% endraw %}

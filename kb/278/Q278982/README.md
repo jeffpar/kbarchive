@@ -6,6 +6,8 @@ permalink: /kb/278/Q278982/
 
 ## Q278982: Server Discovery Doesn't Keep History of All Discovered Servers
 
+{% raw %}
+
 	Article: Q278982
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -66,3 +68,5 @@ permalink: /kb/278/Q278982/
 	
 	=============================================================================
 	
+
+{% endraw %}

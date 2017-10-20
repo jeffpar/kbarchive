@@ -6,6 +6,8 @@ permalink: /kb/087/Q87208/
 
 ## Q87208: PROFS: How Much Address Conversion Is Done by the Gateway?
 
+{% raw %}
+
 	Article: Q87208
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -50,3 +52,5 @@ permalink: /kb/087/Q87208/
 	
 	=============================================================================
 	
+
+{% endraw %}

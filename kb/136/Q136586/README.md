@@ -6,6 +6,8 @@ permalink: /kb/136/Q136586/
 
 ## Q136586: Where to Find Info About Visual FoxPro File Structures
 
+{% raw %}
+
 	Article: Q136586
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00    | 3.00b
@@ -48,3 +50,5 @@ permalink: /kb/136/Q136586/
 	
 	=============================================================================
 	
+
+{% endraw %}

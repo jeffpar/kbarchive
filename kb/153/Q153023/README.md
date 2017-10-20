@@ -6,6 +6,8 @@ permalink: /kb/153/Q153023/
 
 ## Q153023: BUG: Adding PIF Files in SetupWiz Step 7 Copies Actual Files
 
+{% raw %}
+
 	Article: Q153023
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -92,3 +94,5 @@ permalink: /kb/153/Q153023/
 	
 	=============================================================================
 	
+
+{% endraw %}

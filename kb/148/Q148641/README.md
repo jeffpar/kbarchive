@@ -6,6 +6,8 @@ permalink: /kb/148/Q148641/
 
 ## Q148641: DOC: Generic Categories of ODBC Errors
 
+{% raw %}
+
 	Article: Q148641
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,6.0
@@ -94,3 +96,5 @@ permalink: /kb/148/Q148641/
 	
 	=============================================================================
 	
+
+{% endraw %}

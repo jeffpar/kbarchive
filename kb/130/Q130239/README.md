@@ -6,6 +6,8 @@ permalink: /kb/130/Q130239/
 
 ## Q130239: PRB: Changes to SQL Remote View Aren't Saved
 
+{% raw %}
+
 	Article: Q130239
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130239/
 	
 	=============================================================================
 	
+
+{% endraw %}

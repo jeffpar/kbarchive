@@ -6,6 +6,8 @@ permalink: /kb/169/Q169089/
 
 ## Q169089: FP: New Disk-Based Web Times Out While Trying to Connect
 
+{% raw %}
+
 	Article: Q169089
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -71,3 +73,5 @@ permalink: /kb/169/Q169089/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130858/
 
 ## Q130858: Windows NT Does Not Detect a Three-Button Mouse
 
+{% raw %}
+
 	Article: Q130858
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/130/Q130858/
 	
 	=============================================================================
 	
+
+{% endraw %}

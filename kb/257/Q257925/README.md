@@ -6,6 +6,8 @@ permalink: /kb/257/Q257925/
 
 ## Q257925: Cluster Server Does Not Detect Network Problems in Windows NT
 
+{% raw %}
+
 	Article: Q257925
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0; winnt:1.0
@@ -70,3 +72,5 @@ permalink: /kb/257/Q257925/
 	
 	=============================================================================
 	
+
+{% endraw %}

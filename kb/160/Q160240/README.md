@@ -6,6 +6,8 @@ permalink: /kb/160/Q160240/
 
 ## Q160240: WD97: Office Assistant Balloon Has No Controls After Replace
 
+{% raw %}
+
 	Article: Q160240
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/160/Q160240/
 	
 	=============================================================================
 	
+
+{% endraw %}

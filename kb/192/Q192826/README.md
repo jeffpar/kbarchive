@@ -6,6 +6,8 @@ permalink: /kb/192/Q192826/
 
 ## Q192826: FIX: DeleteColumn Causes Invalid Page Fault Error in Grid
 
+{% raw %}
+
 	Article: Q192826
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -84,3 +86,5 @@ permalink: /kb/192/Q192826/
 	
 	=============================================================================
 	
+
+{% endraw %}

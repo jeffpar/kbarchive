@@ -6,6 +6,8 @@ permalink: /kb/324/Q324717/
 
 ## Q324717: PRB: Connection Stays Pending for AS/400 with Gigabit Adapter
 
+{% raw %}
+
 	Article: Q324717
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/324/Q324717/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192506/
 
 ## Q192506: Windows 98 Starts Here Demo Does Not Load Correctly
 
+{% raw %}
+
 	Article: Q192506
 	Product(s): Microsoft Press
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/192/Q192506/
 	
 	=============================================================================
 	
+
+{% endraw %}

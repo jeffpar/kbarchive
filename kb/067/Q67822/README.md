@@ -6,6 +6,8 @@ permalink: /kb/067/Q67822/
 
 ## Q67822: Flight Simulator: Simulating Snowy Weather
 
+{% raw %}
+
 	Article: Q67822
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/067/Q67822/
 	
 	=============================================================================
 	
+
+{% endraw %}

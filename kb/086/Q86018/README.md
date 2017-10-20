@@ -6,6 +6,8 @@ permalink: /kb/086/Q86018/
 
 ## Q86018: Windows 3.1 Has Limited Support for VCPI
 
+{% raw %}
+
 	Article: Q86018
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/086/Q86018/
 	
 	=============================================================================
 	
+
+{% endraw %}

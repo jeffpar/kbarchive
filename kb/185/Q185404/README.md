@@ -6,6 +6,8 @@ permalink: /kb/185/Q185404/
 
 ## Q185404: WD97: Incorrect Value/Table Cell Inserted Referencing Bookmark
 
+{% raw %}
+
 	Article: Q185404
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/185/Q185404/
 	
 	=============================================================================
 	
+
+{% endraw %}

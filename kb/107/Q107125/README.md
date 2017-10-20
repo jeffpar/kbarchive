@@ -6,6 +6,8 @@ permalink: /kb/107/Q107125/
 
 ## Q107125: Scenes 1.0: How to Retain Previous Wallpaper
 
+{% raw %}
+
 	Article: Q107125
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/107/Q107125/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244506/
 
 ## Q244506: XCLN: Error Message: Directory Change Failed. Defaulting to ...
 
+{% raw %}
+
 	Article: Q244506
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -82,3 +84,5 @@ permalink: /kb/244/Q244506/
 	
 	=============================================================================
 	
+
+{% endraw %}

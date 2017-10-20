@@ -6,6 +6,8 @@ permalink: /kb/122/Q122159/
 
 ## Q122159: Err Msg: Setup Is Unable to Identify Your Hard Drive's...
 
+{% raw %}
+
 	Article: Q122159
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -49,3 +51,5 @@ permalink: /kb/122/Q122159/
 	
 	=============================================================================
 	
+
+{% endraw %}

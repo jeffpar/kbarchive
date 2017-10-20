@@ -6,6 +6,8 @@ permalink: /kb/080/Q80178/
 
 ## Q80178: Mouse Systems OEM Driver for Windows
 
+{% raw %}
+
 	Article: Q80178
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -98,3 +100,5 @@ permalink: /kb/080/Q80178/
 	
 	=============================================================================
 	
+
+{% endraw %}

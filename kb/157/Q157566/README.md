@@ -6,6 +6,8 @@ permalink: /kb/157/Q157566/
 
 ## Q157566: STL Sample for the Predicate Version of the includes Function
 
+{% raw %}
+
 	Article: Q157566
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -185,3 +187,5 @@ permalink: /kb/157/Q157566/
 	
 	=============================================================================
 	
+
+{% endraw %}

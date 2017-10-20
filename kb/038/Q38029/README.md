@@ -6,6 +6,8 @@ permalink: /kb/038/Q38029/
 
 ## Q38029: Windows and Early Intel 80386 CPU 32-Bit Operations
 
+{% raw %}
+
 	Article: Q38029
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/038/Q38029/
 	
 	=============================================================================
 	
+
+{% endraw %}

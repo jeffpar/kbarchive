@@ -6,6 +6,8 @@ permalink: /kb/314/Q314613/
 
 ## Q314613: Asheron's Call: Known Video Issues
 
+{% raw %}
+
 	Article: Q314613
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -313,3 +315,5 @@ permalink: /kb/314/Q314613/
 	
 	=============================================================================
 	
+
+{% endraw %}

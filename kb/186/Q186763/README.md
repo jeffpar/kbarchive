@@ -6,6 +6,8 @@ permalink: /kb/186/Q186763/
 
 ## Q186763: WD97: Undesired Characters When You Open HTML Document in Word
 
+{% raw %}
+
 	Article: Q186763
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/186/Q186763/
 	
 	=============================================================================
 	
+
+{% endraw %}

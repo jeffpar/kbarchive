@@ -6,6 +6,8 @@ permalink: /kb/074/Q74977/
 
 ## Q74977: EMM386 and Early Versions of HIMEM.SYS
 
+{% raw %}
+
 	Article: Q74977
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/074/Q74977/
 	
 	=============================================================================
 	
+
+{% endraw %}

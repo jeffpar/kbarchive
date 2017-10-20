@@ -6,6 +6,8 @@ permalink: /kb/193/Q193416/
 
 ## Q193416: PRB: Cannot Set the ReadOnly Property of a File
 
+{% raw %}
+
 	Article: Q193416
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/193/Q193416/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107063/
 
 ## Q107063: PC Win: Err Msg: An Error Occurred While Moving...
 
+{% raw %}
+
 	Article: Q107063
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2
@@ -56,3 +58,5 @@ permalink: /kb/107/Q107063/
 	
 	=============================================================================
 	
+
+{% endraw %}

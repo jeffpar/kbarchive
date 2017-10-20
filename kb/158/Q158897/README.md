@@ -6,6 +6,8 @@ permalink: /kb/158/Q158897/
 
 ## Q158897: PWS Pages Should Normally Be Stored in the Home Root Folder
 
+{% raw %}
+
 	Article: Q158897
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0,1.0a
@@ -80,3 +82,5 @@ permalink: /kb/158/Q158897/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149554/
 
 ## Q149554: TCP/IP Settings Are Incorrect After Server-Based Setup
 
+{% raw %}
+
 	Article: Q149554
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149554/
 	
 	=============================================================================
 	
+
+{% endraw %}

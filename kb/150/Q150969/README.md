@@ -6,6 +6,8 @@ permalink: /kb/150/Q150969/
 
 ## Q150969: XFOR: All Messages Sent Over IMC Result in NDRs
 
+{% raw %}
+
 	Article: Q150969
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/150/Q150969/
 	
 	=============================================================================
 	
+
+{% endraw %}

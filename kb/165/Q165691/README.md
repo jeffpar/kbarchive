@@ -6,6 +6,8 @@ permalink: /kb/165/Q165691/
 
 ## Q165691: INFO: Visual C++ 5.0 Readme, Sample Program Issues
 
+{% raw %}
+
 	Article: Q165691
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -285,3 +287,5 @@ permalink: /kb/165/Q165691/
 	
 	=============================================================================
 	
+
+{% endraw %}

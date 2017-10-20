@@ -6,6 +6,8 @@ permalink: /kb/042/Q42982/
 
 ## Q42982: Altering BP Register in In-Line Assembly Block
 
+{% raw %}
+
 	Article: Q42982
 	Product(s): See article
 	Version(s): 2.00
@@ -40,3 +42,5 @@ permalink: /kb/042/Q42982/
 	        mov ax, nStackVar   ; nStackVar is OK again
 	        }
 	}
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229687/
 
 ## Q229687: Err Msg: &quot;Workstation Is Locked&quot; with Invalid Screen Saver
 
+{% raw %}
+
 	Article: Q229687
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -115,3 +117,5 @@ permalink: /kb/229/Q229687/
 	
 	=============================================================================
 	
+
+{% endraw %}

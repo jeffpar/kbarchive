@@ -6,6 +6,8 @@ permalink: /kb/266/Q266058/
 
 ## Q266058: How to Migrate a Printer Server to a Server Cluster
 
+{% raw %}
+
 	Article: Q266058
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -198,3 +200,5 @@ permalink: /kb/266/Q266058/
 	
 	=============================================================================
 	
+
+{% endraw %}

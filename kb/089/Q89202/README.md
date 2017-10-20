@@ -6,6 +6,8 @@ permalink: /kb/089/Q89202/
 
 ## Q89202: Speller Handles Some Abbreviations Incorrectly
 
+{% raw %}
+
 	Article: Q89202
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:1.0,1.1,3.0,4.0; WINDOWS:1.0,1.1,3.0,4.0,4.0a,4.0c,7.0
@@ -57,3 +59,5 @@ permalink: /kb/089/Q89202/
 	
 	=============================================================================
 	
+
+{% endraw %}

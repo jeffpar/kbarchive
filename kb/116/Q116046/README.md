@@ -6,6 +6,8 @@ permalink: /kb/116/Q116046/
 
 ## Q116046: Baseball: Some Players Don't Have Change Year Buttons
 
+{% raw %}
+
 	Article: Q116046
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -43,3 +45,5 @@ permalink: /kb/116/Q116046/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125965/
 
 ## Q125965: MSVC++ 1.1 Err Msg Under Windows NT: All Pipe Instances Busy
 
+{% raw %}
+
 	Article: Q125965
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/125/Q125965/
 	
 	=============================================================================
 	
+
+{% endraw %}

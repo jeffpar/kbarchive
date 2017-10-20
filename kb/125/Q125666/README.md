@@ -6,6 +6,8 @@ permalink: /kb/125/Q125666/
 
 ## Q125666: Noncritical Error Opening RPLSVC.MDB for Remoteboot Service
 
+{% raw %}
+
 	Article: Q125666
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -79,3 +81,5 @@ permalink: /kb/125/Q125666/
 	
 	=============================================================================
 	
+
+{% endraw %}

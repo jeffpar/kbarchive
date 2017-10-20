@@ -6,6 +6,8 @@ permalink: /kb/123/Q123221/
 
 ## Q123221: DumpSend: Send Request File Formats
 
+{% raw %}
+
 	Article: Q123221
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1
@@ -219,3 +221,5 @@ permalink: /kb/123/Q123221/
 	
 	=============================================================================
 	
+
+{% endraw %}

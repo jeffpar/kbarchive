@@ -6,6 +6,8 @@ permalink: /kb/247/Q247540/
 
 ## Q247540: Unable to View Printer Properties from SNA Server Manager
 
+{% raw %}
+
 	Article: Q247540
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -62,3 +64,5 @@ permalink: /kb/247/Q247540/
 	
 	=============================================================================
 	
+
+{% endraw %}

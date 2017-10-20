@@ -6,6 +6,8 @@ permalink: /kb/124/Q124959/
 
 ## Q124959: Err Msg: ...the Package Requires an NTFS Drive to Install...
 
+{% raw %}
+
 	Article: Q124959
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -56,3 +58,5 @@ permalink: /kb/124/Q124959/
 	
 	=============================================================================
 	
+
+{% endraw %}

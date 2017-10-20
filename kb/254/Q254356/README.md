@@ -6,6 +6,8 @@ permalink: /kb/254/Q254356/
 
 ## Q254356: MapPoint 2000: Program Hangs When Splash Screen Is Displayed
 
+{% raw %}
+
 	Article: Q254356
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/254/Q254356/
 	
 	=============================================================================
 	
+
+{% endraw %}

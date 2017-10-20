@@ -6,6 +6,8 @@ permalink: /kb/150/Q150508/
 
 ## Q150508: Netscape Clients Hang While Posting Data to SSL Forms on IIS
 
+{% raw %}
+
 	Article: Q150508
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -64,3 +66,5 @@ permalink: /kb/150/Q150508/
 	
 	=============================================================================
 	
+
+{% endraw %}

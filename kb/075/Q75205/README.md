@@ -6,6 +6,8 @@ permalink: /kb/075/Q75205/
 
 ## Q75205: PC DOS: Graphics Screen Corruption When Using Micro &amp; Monitor
 
+{% raw %}
+
 	Article: Q75205
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
@@ -56,3 +58,5 @@ permalink: /kb/075/Q75205/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142226/
 
 ## Q142226: PRB: CButton SetIcon and SetBitmap Work Only Under Windows 95
 
+{% raw %}
+
 	Article: Q142226
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -104,3 +106,5 @@ permalink: /kb/142/Q142226/
 	
 	=============================================================================
 	
+
+{% endraw %}

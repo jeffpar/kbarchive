@@ -6,6 +6,8 @@ permalink: /kb/126/Q126034/
 
 ## Q126034: RUNNING MS WORKS 3 FOR WIN: Corrections and Comments
 
+{% raw %}
+
 	Article: Q126034
 	Product(s): Microsoft Press
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/126/Q126034/
 	
 	=============================================================================
 	
+
+{% endraw %}

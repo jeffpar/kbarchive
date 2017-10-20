@@ -6,6 +6,8 @@ permalink: /kb/293/Q293218/
 
 ## Q293218: XWEB: &quot;Failed to Create MAPI.Session&quot; Error Message in OWA
 
+{% raw %}
+
 	Article: Q293218
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -61,3 +63,5 @@ permalink: /kb/293/Q293218/
 	
 	=============================================================================
 	
+
+{% endraw %}

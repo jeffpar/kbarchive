@@ -6,6 +6,8 @@ permalink: /kb/150/Q150794/
 
 ## Q150794: MaintainServerList Value Location in Windows 95 Resource Kit
 
+{% raw %}
+
 	Article: Q150794
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): Win2000:95; winnt:3.5,3.51
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150794/
 	
 	=============================================================================
 	
+
+{% endraw %}

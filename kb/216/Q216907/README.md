@@ -6,6 +6,8 @@ permalink: /kb/216/Q216907/
 
 ## Q216907: HOW TO: Obtain a Test or Test Client Authentication Certificate
 
+{% raw %}
+
 	Article: Q216907
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -100,3 +102,5 @@ permalink: /kb/216/Q216907/
 	
 	=============================================================================
 	
+
+{% endraw %}

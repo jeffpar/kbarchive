@@ -6,6 +6,8 @@ permalink: /kb/175/Q175512/
 
 ## Q175512: HOWTO: Get a Short Filename from a Long Filename
 
+{% raw %}
+
 	Article: Q175512
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/175/Q175512/
 	
 	=============================================================================
 	
+
+{% endraw %}

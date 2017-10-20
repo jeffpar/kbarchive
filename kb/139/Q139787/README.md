@@ -6,6 +6,8 @@ permalink: /kb/139/Q139787/
 
 ## Q139787: RECEIVE_ALLOCATE Fails With F011 on Windows 95 Clients
 
+{% raw %}
+
 	Article: Q139787
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -82,3 +84,5 @@ permalink: /kb/139/Q139787/
 	
 	=============================================================================
 	
+
+{% endraw %}

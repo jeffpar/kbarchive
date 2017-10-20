@@ -6,6 +6,8 @@ permalink: /kb/193/Q193032/
 
 ## Q193032: Cannot Print Directory Listings from Explorer
 
+{% raw %}
+
 	Article: Q193032
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -60,3 +62,5 @@ permalink: /kb/193/Q193032/
 	
 	=============================================================================
 	
+
+{% endraw %}

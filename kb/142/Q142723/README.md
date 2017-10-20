@@ -6,6 +6,8 @@ permalink: /kb/142/Q142723/
 
 ## Q142723: Windows NT Server Management Tools Not Working in Windows 95
 
+{% raw %}
+
 	Article: Q142723
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/142/Q142723/
 	
 	=============================================================================
 	
+
+{% endraw %}

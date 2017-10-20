@@ -6,6 +6,8 @@ permalink: /kb/073/Q73322/
 
 ## Q73322: Backfill for EMM386.EXE Cannot Be Disabled
 
+{% raw %}
+
 	Article: Q73322
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x; WINDOWS:3.0,3.0a,3.1,3.11
@@ -82,3 +84,5 @@ permalink: /kb/073/Q73322/
 	
 	=============================================================================
 	
+
+{% endraw %}

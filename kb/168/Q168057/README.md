@@ -6,6 +6,8 @@ permalink: /kb/168/Q168057/
 
 ## Q168057: WD97: Maximum Number of Printers Visible in Word
 
+{% raw %}
+
 	Article: Q168057
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:7.0,7.0a,97
@@ -69,3 +71,5 @@ permalink: /kb/168/Q168057/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150605/
 
 ## Q150605: Cannot Print Using LPR from Windows NT to Sun Workstation LPD
 
+{% raw %}
+
 	Article: Q150605
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/150/Q150605/
 	
 	=============================================================================
 	
+
+{% endraw %}

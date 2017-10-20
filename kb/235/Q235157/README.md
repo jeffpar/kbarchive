@@ -6,6 +6,8 @@ permalink: /kb/235/Q235157/
 
 ## Q235157: SMS: When New DP Added, Despooler Puts Package on Old &amp; New DP
 
+{% raw %}
+
 	Article: Q235157
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -65,3 +67,5 @@ permalink: /kb/235/Q235157/
 	
 	=============================================================================
 	
+
+{% endraw %}

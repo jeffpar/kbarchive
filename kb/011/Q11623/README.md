@@ -6,6 +6,8 @@ permalink: /kb/011/Q11623/
 
 ## Q11623: How to Transparently Intercept Procedure Calls in Windows
 
+{% raw %}
+
 	Article: Q11623
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -92,3 +94,5 @@ permalink: /kb/011/Q11623/
 	
 	=============================================================================
 	
+
+{% endraw %}

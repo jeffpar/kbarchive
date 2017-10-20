@@ -6,6 +6,8 @@ permalink: /kb/288/Q288930/
 
 ## Q288930: PRB: PDW Raises Error &quot;Filename Must Contain Text&quot;
 
+{% raw %}
+
 	Article: Q288930
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -111,3 +113,5 @@ permalink: /kb/288/Q288930/
 	
 	=============================================================================
 	
+
+{% endraw %}

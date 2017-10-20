@@ -6,6 +6,8 @@ permalink: /kb/157/Q157623/
 
 ## Q157623: STL Sample for priority_queue::(push,pop,empty,top) Functions
 
+{% raw %}
+
 	Article: Q157623
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -189,3 +191,5 @@ permalink: /kb/157/Q157623/
 	
 	=============================================================================
 	
+
+{% endraw %}

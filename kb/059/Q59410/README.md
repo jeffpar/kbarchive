@@ -6,6 +6,8 @@ permalink: /kb/059/Q59410/
 
 ## Q59410: What Windows SDK Does to the C Run-Time Libraries
 
+{% raw %}
+
 	Article: Q59410
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00
@@ -64,3 +66,5 @@ permalink: /kb/059/Q59410/
 	SDK, use the /Gh switch and link with the libraries from C version
 	5.10. In addition, use all the tools that shipped with the Windows
 	2.1x SDK, including LINK4.EXE and RC.EXE.
+
+{% endraw %}

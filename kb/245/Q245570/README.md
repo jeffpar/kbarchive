@@ -6,6 +6,8 @@ permalink: /kb/245/Q245570/
 
 ## Q245570: SMSINST: Repackaged REG_MULTI_SZ Values May Be Truncated
 
+{% raw %}
+
 	Article: Q245570
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/245/Q245570/
 	
 	=============================================================================
 	
+
+{% endraw %}

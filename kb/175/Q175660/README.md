@@ -6,6 +6,8 @@ permalink: /kb/175/Q175660/
 
 ## Q175660: The Microsoft Network 2.51 CD-ROM Directory Contents
 
+{% raw %}
+
 	Article: Q175660
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51
@@ -318,3 +320,5 @@ permalink: /kb/175/Q175660/
 	
 	=============================================================================
 	
+
+{% endraw %}

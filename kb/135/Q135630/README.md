@@ -6,6 +6,8 @@ permalink: /kb/135/Q135630/
 
 ## Q135630: DOC: Incorrect Prototype &amp; Memory Allocation for PX_Blob
 
+{% raw %}
+
 	Article: Q135630
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -71,3 +73,5 @@ permalink: /kb/135/Q135630/
 	
 	=============================================================================
 	
+
+{% endraw %}

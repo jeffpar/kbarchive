@@ -6,6 +6,8 @@ permalink: /kb/123/Q123476/
 
 ## Q123476: PRB:SoureSafe &quot;Error locking file&quot; on Windows NT or Multi-User
 
+{% raw %}
+
 	Article: Q123476
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/123/Q123476/
 	
 	=============================================================================
 	
+
+{% endraw %}

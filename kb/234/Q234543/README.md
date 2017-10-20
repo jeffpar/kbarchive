@@ -6,6 +6,8 @@ permalink: /kb/234/Q234543/
 
 ## Q234543: Internet Explorer Installs Newer Encryption Files on SP3 but Not
 
+{% raw %}
+
 	Article: Q234543
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/234/Q234543/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155494/
 
 ## Q155494: Limiting the Number of Records Returned by IDC
 
+{% raw %}
+
 	Article: Q155494
 	Product(s): Internet Information Server
 	Version(s): 1.0 2.0
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155494/
 	
 	=============================================================================
 	
+
+{% endraw %}

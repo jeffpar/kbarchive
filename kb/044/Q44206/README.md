@@ -6,6 +6,8 @@ permalink: /kb/044/Q44206/
 
 ## Q44206: Explanation of the _fontinfo Structure
 
+{% raw %}
+
 	Article: Q44206
 	Product(s): See article
 	Version(s): 2.00
@@ -54,3 +56,5 @@ permalink: /kb/044/Q44206/
 	Note: For an explanation of differences between 'ascent' and
 	'pixheight,' please refer to Pages 654-655 in the book "Programming
 	Windows" by Charles Petzold.
+
+{% endraw %}

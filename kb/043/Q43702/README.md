@@ -6,6 +6,8 @@ permalink: /kb/043/Q43702/
 
 ## Q43702: QuickC: Dual Floppy Compile/Link Procedure
 
+{% raw %}
+
 	Article: Q43702
 	Product(s): See article
 	Version(s): 2.00
@@ -76,3 +78,5 @@ permalink: /kb/043/Q43702/
 	If there are errors in your code, QuickC will stop after step 12 and
 	report any errors it finds. Correct these errors and start from Step
 	9.
+
+{% endraw %}

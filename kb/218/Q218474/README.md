@@ -6,6 +6,8 @@ permalink: /kb/218/Q218474/
 
 ## Q218474: SMS: UNC Package Source Cannot Contain Space Characters
 
+{% raw %}
+
 	Article: Q218474
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/218/Q218474/
 	
 	=============================================================================
 	
+
+{% endraw %}

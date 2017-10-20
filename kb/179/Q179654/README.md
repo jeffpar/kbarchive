@@ -6,6 +6,8 @@ permalink: /kb/179/Q179654/
 
 ## Q179654: XADM: Current Log Files Are Lost After Incomplete Restore
 
+{% raw %}
+
 	Article: Q179654
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/179/Q179654/
 	
 	=============================================================================
 	
+
+{% endraw %}

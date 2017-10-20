@@ -6,6 +6,8 @@ permalink: /kb/084/Q84466/
 
 ## Q84466: Express Publisher Not Printing Graphics to EPS File
 
+{% raw %}
+
 	Article: Q84466
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/084/Q84466/
 	
 	=============================================================================
 	
+
+{% endraw %}

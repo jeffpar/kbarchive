@@ -6,6 +6,8 @@ permalink: /kb/247/Q247408/
 
 ## Q247408: Error Message or Spooler Hangs When You Pause or Resume Printing
 
+{% raw %}
+
 	Article: Q247408
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/247/Q247408/
 	
 	=============================================================================
 	
+
+{% endraw %}

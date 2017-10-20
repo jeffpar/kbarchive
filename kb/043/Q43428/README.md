@@ -6,6 +6,8 @@ permalink: /kb/043/Q43428/
 
 ## Q43428: INFO: Storage of Environment Variables
 
+{% raw %}
+
 	Article: Q43428
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:5.1,6.0,6.00a,6.00ax,7.0; OS/2:5.1,6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.
@@ -60,3 +62,5 @@ permalink: /kb/043/Q43428/
 	
 	=============================================================================
 	
+
+{% endraw %}

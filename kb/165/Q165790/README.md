@@ -6,6 +6,8 @@ permalink: /kb/165/Q165790/
 
 ## Q165790: INFO: Microsoft Visual Database Tools Readme
 
+{% raw %}
+
 	Article: Q165790
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -102,3 +104,5 @@ permalink: /kb/165/Q165790/
 	
 	=============================================================================
 	
+
+{% endraw %}

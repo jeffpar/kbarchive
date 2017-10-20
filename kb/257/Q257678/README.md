@@ -6,6 +6,8 @@ permalink: /kb/257/Q257678/
 
 ## Q257678: XWEB: OWA Cannot Send to SMTP User By Using X.400 Address
 
+{% raw %}
+
 	Article: Q257678
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -82,3 +84,5 @@ permalink: /kb/257/Q257678/
 	
 	=============================================================================
 	
+
+{% endraw %}

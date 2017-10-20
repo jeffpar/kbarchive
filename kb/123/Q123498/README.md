@@ -6,6 +6,8 @@ permalink: /kb/123/Q123498/
 
 ## Q123498: NumLock Key State Not Saved When Logging Off
 
+{% raw %}
+
 	Article: Q123498
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -77,3 +79,5 @@ permalink: /kb/123/Q123498/
 	
 	=============================================================================
 	
+
+{% endraw %}

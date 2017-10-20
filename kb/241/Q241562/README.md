@@ -6,6 +6,8 @@ permalink: /kb/241/Q241562/
 
 ## Q241562: IIS May Permit Clients with an Unresolved IP Address to Connect
 
+{% raw %}
+
 	Article: Q241562
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -124,3 +126,5 @@ permalink: /kb/241/Q241562/
 	
 	=============================================================================
 	
+
+{% endraw %}

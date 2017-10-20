@@ -6,6 +6,8 @@ permalink: /kb/076/Q76550/
 
 ## Q76550: FIX: Undocumented Separator Property of a VB Menu Item
 
+{% raw %}
+
 	Article: Q76550
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0
@@ -90,3 +92,5 @@ permalink: /kb/076/Q76550/
 	
 	=============================================================================
 	
+
+{% endraw %}

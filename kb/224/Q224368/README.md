@@ -6,6 +6,8 @@ permalink: /kb/224/Q224368/
 
 ## Q224368: HTMLA Web Site Friendly Names Are Truncated
 
+{% raw %}
+
 	Article: Q224368
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -55,3 +57,5 @@ permalink: /kb/224/Q224368/
 	
 	=============================================================================
 	
+
+{% endraw %}

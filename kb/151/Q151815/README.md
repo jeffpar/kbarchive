@@ -6,6 +6,8 @@ permalink: /kb/151/Q151815/
 
 ## Q151815: BUG: RDO Rowcount May Be Wrong When Using rdAsyncEnable Flag
 
+{% raw %}
+
 	Article: Q151815
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -118,3 +120,5 @@ permalink: /kb/151/Q151815/
 	
 	=============================================================================
 	
+
+{% endraw %}

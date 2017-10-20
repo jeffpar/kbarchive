@@ -6,6 +6,8 @@ permalink: /kb/107/Q107830/
 
 ## Q107830: Description of FOXPRO.INI Settings
 
+{% raw %}
+
 	Article: Q107830
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -128,3 +130,5 @@ permalink: /kb/107/Q107830/
 	
 	=============================================================================
 	
+
+{% endraw %}

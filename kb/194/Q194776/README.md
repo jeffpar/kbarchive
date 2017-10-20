@@ -6,6 +6,8 @@ permalink: /kb/194/Q194776/
 
 ## Q194776: HOWTO: Install a Visual Basic Application on Terminal Server
 
+{% raw %}
+
 	Article: Q194776
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/194/Q194776/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88385/
 
 ## Q88385: Word Cannot Use the Tools-Path Specified in WIN.INI
 
+{% raw %}
+
 	Article: Q88385
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition,1993 edition
@@ -49,3 +51,5 @@ permalink: /kb/088/Q88385/
 	
 	=============================================================================
 	
+
+{% endraw %}

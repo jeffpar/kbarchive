@@ -6,6 +6,8 @@ permalink: /kb/149/Q149798/
 
 ## Q149798: 3D Movie Maker: Locations for All of the Talent Book Pages
 
+{% raw %}
+
 	Article: Q149798
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -107,3 +109,5 @@ permalink: /kb/149/Q149798/
 	
 	=============================================================================
 	
+
+{% endraw %}

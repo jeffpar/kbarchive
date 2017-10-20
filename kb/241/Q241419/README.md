@@ -6,6 +6,8 @@ permalink: /kb/241/Q241419/
 
 ## Q241419: SMS Executive Causes Access Violation Processing Prochist.dat
 
+{% raw %}
+
 	Article: Q241419
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -104,3 +106,5 @@ permalink: /kb/241/Q241419/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180905/
 
 ## Q180905: WD97: Errors Saving File with Low Hard Disk Space
 
+{% raw %}
+
 	Article: Q180905
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -113,3 +115,5 @@ permalink: /kb/180/Q180905/
 	
 	=============================================================================
 	
+
+{% endraw %}

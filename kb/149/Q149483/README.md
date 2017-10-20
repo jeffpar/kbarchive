@@ -6,6 +6,8 @@ permalink: /kb/149/Q149483/
 
 ## Q149483: Redirected TREE /F Command Does Not Work in Windows 95 GUI
 
+{% raw %}
+
 	Article: Q149483
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -73,3 +75,5 @@ permalink: /kb/149/Q149483/
 	
 	=============================================================================
 	
+
+{% endraw %}

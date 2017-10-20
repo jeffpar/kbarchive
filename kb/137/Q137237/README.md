@@ -6,6 +6,8 @@ permalink: /kb/137/Q137237/
 
 ## Q137237: Default Logon Script Timeout Limits for MS Network Clients
 
+{% raw %}
+
 	Article: Q137237
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2b,2.2c,3.0,3.1,3.11,3.5,3.51,95
@@ -68,3 +70,5 @@ permalink: /kb/137/Q137237/
 	
 	=============================================================================
 	
+
+{% endraw %}

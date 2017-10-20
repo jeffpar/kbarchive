@@ -6,6 +6,8 @@ permalink: /kb/044/Q44493/
 
 ## Q44493: Arrays Declared Twice in COMMON, Do Not Give Error in QB.EXE
 
+{% raw %}
+
 	Article: Q44493
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/044/Q44493/
 	   'example 4
 	   COMMON SHARED A%(),
 	   COMMON SHARED B#,C#,A%()
+
+{% endraw %}

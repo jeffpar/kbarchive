@@ -6,6 +6,8 @@ permalink: /kb/092/Q92766/
 
 ## Q92766: ROM BIOS Shadowing Not an Advantage with Windows NT
 
+{% raw %}
+
 	Article: Q92766
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -60,3 +62,5 @@ permalink: /kb/092/Q92766/
 	
 	=============================================================================
 	
+
+{% endraw %}

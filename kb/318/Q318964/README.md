@@ -6,6 +6,8 @@ permalink: /kb/318/Q318964/
 
 ## Q318964: How To Add An MSN News Server To Microsoft Entourage
 
+{% raw %}
+
 	Article: Q318964
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/318/Q318964/
 	
 	=============================================================================
 	
+
+{% endraw %}

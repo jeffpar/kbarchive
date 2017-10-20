@@ -6,6 +6,8 @@ permalink: /kb/161/Q161123/
 
 ## Q161123: PPT: Sample Code to Determine the Current View
 
+{% raw %}
+
 	Article: Q161123
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -127,3 +129,5 @@ permalink: /kb/161/Q161123/
 	
 	=============================================================================
 	
+
+{% endraw %}

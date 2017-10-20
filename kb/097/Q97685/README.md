@@ -6,6 +6,8 @@ permalink: /kb/097/Q97685/
 
 ## Q97685: Installing AutoSketch 3.0 on a DoubleSpace-Compressed Drive
 
+{% raw %}
+
 	Article: Q97685
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -128,3 +130,5 @@ permalink: /kb/097/Q97685/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/109/Q109855/
 
 ## Q109855: Flight Simulator For MS-DOS: Thrust Reversers Have No Effect
 
+{% raw %}
+
 	Article: Q109855
 	Product(s): Microsoft Home Games
 	Version(s): 5.0
@@ -44,3 +46,5 @@ permalink: /kb/109/Q109855/
 	
 	=============================================================================
 	
+
+{% endraw %}

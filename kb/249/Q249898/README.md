@@ -6,6 +6,8 @@ permalink: /kb/249/Q249898/
 
 ## Q249898: XADM: MTA Queue Full When Directory Replication Set to Always
 
+{% raw %}
+
 	Article: Q249898
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/249/Q249898/
 	
 	=============================================================================
 	
+
+{% endraw %}

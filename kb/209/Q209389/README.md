@@ -6,6 +6,8 @@ permalink: /kb/209/Q209389/
 
 ## Q209389: IIS 4.0 Prompts for Password with Web-based Password Change Tool
 
+{% raw %}
+
 	Article: Q209389
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -104,3 +106,5 @@ permalink: /kb/209/Q209389/
 	
 	=============================================================================
 	
+
+{% endraw %}

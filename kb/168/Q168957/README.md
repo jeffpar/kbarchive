@@ -6,6 +6,8 @@ permalink: /kb/168/Q168957/
 
 ## Q168957: FIX: C1001, file 'msc1.cpp', line 1188, Caused by Name Hiding
 
+{% raw %}
+
 	Article: Q168957
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -77,3 +79,5 @@ permalink: /kb/168/Q168957/
 	
 	=============================================================================
 	
+
+{% endraw %}

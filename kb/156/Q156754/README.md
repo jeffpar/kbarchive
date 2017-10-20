@@ -6,6 +6,8 @@ permalink: /kb/156/Q156754/
 
 ## Q156754: Limit of 26 Catalogs with Microsoft Index Server
 
+{% raw %}
+
 	Article: Q156754
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0; :
@@ -142,3 +144,5 @@ permalink: /kb/156/Q156754/
 	
 	=============================================================================
 	
+
+{% endraw %}

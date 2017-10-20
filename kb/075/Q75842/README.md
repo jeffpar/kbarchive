@@ -6,6 +6,8 @@ permalink: /kb/075/Q75842/
 
 ## Q75842: RCRESULT rectBoundInk Field Is in Client Coordinates
 
+{% raw %}
+
 	Article: Q75842
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/075/Q75842/
 	
 	=============================================================================
 	
+
+{% endraw %}

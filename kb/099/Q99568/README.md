@@ -6,6 +6,8 @@ permalink: /kb/099/Q99568/
 
 ## Q99568: PC Forms: Gauge Custom Control Causes GP Fault
 
+{% raw %}
+
 	Article: Q99568
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,2.0,3.0,3.2
@@ -64,3 +66,5 @@ permalink: /kb/099/Q99568/
 	
 	=============================================================================
 	
+
+{% endraw %}

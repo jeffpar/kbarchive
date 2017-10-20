@@ -6,6 +6,8 @@ permalink: /kb/039/Q39638/
 
 ## Q39638: /Ss Fails under Environment Variable Setting
 
+{% raw %}
+
 	Article: Q39638
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -41,3 +43,5 @@ permalink: /kb/039/Q39638/
 	The workaround is to remove the /Ss"Line with spaces" from the
 	environment CL setting, and either type it on the command line, or put
 	it into a batch file, or make file.
+
+{% endraw %}

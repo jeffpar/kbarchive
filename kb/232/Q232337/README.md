@@ -6,6 +6,8 @@ permalink: /kb/232/Q232337/
 
 ## Q232337: PRB: MFC Wizards Fail with &quot;Unrecognized Database Format&quot;
 
+{% raw %}
+
 	Article: Q232337
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -87,3 +89,5 @@ permalink: /kb/232/Q232337/
 	
 	=============================================================================
 	
+
+{% endraw %}

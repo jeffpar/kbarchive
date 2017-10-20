@@ -6,6 +6,8 @@ permalink: /kb/149/Q149292/
 
 ## Q149292: XCLN: Cannot Print Messages Linked as Icon
 
+{% raw %}
+
 	Article: Q149292
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -47,3 +49,5 @@ permalink: /kb/149/Q149292/
 	
 	=============================================================================
 	
+
+{% endraw %}

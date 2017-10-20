@@ -6,6 +6,8 @@ permalink: /kb/154/Q154175/
 
 ## Q154175: Users May Lose Designated Default Printer After Multiple Logins
 
+{% raw %}
+
 	Article: Q154175
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -72,3 +74,5 @@ permalink: /kb/154/Q154175/
 	
 	=============================================================================
 	
+
+{% endraw %}

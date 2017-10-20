@@ -6,6 +6,8 @@ permalink: /kb/160/Q160828/
 
 ## Q160828: Network Monitor Parses DNS WINS Lookup Queries as DNS Packets
 
+{% raw %}
+
 	Article: Q160828
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/160/Q160828/
 	
 	=============================================================================
 	
+
+{% endraw %}

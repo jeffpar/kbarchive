@@ -6,6 +6,8 @@ permalink: /kb/149/Q149324/
 
 ## Q149324: FIX: Modifying Const Temporary Object Doesn't Generate Error
 
+{% raw %}
+
 	Article: Q149324
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/149/Q149324/
 	
 	=============================================================================
 	
+
+{% endraw %}

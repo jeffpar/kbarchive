@@ -6,6 +6,8 @@ permalink: /kb/086/Q86954/
 
 ## Q86954: 3COM: Floppy Disk Layouts for MS Mail Gateway to 3Com 3+Mail
 
+{% raw %}
+
 	Article: Q86954
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -62,3 +64,5 @@ permalink: /kb/086/Q86954/
 	
 	=============================================================================
 	
+
+{% endraw %}

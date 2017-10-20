@@ -6,6 +6,8 @@ permalink: /kb/323/Q323312/
 
 ## Q323312: HOW TO: Create an IIS Baseline by Using Log Analysis
 
+{% raw %}
+
 	Article: Q323312
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -223,3 +225,5 @@ permalink: /kb/323/Q323312/
 	
 	=============================================================================
 	
+
+{% endraw %}

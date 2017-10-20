@@ -6,6 +6,8 @@ permalink: /kb/169/Q169663/
 
 ## Q169663: XADM: User Manager for Domains Hangs During Shutdown of Server
 
+{% raw %}
+
 	Article: Q169663
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/169/Q169663/
 	
 	=============================================================================
 	
+
+{% endraw %}

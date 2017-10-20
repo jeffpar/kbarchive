@@ -6,6 +6,8 @@ permalink: /kb/042/Q42074/
 
 ## Q42074: ESC Key Aborts Only the Compile Process in QC Environment
 
+{% raw %}
+
 	Article: Q42074
 	Product(s): See article
 	Version(s): 2.00
@@ -25,3 +27,5 @@ permalink: /kb/042/Q42074/
 	incomplete object file that will not link properly. Pressing CTRL+C or
 	CTRL+BREAK during the link process may result in a bad executable
 	file. Attempting to run the bad .EXE may hang your machine.
+
+{% endraw %}

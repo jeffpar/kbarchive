@@ -6,6 +6,8 @@ permalink: /kb/228/Q228276/
 
 ## Q228276: SMS: Foreground App Performance Degrades During SW Inventory
 
+{% raw %}
+
 	Article: Q228276
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -101,3 +103,5 @@ permalink: /kb/228/Q228276/
 	
 	=============================================================================
 	
+
+{% endraw %}

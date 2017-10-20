@@ -6,6 +6,8 @@ permalink: /kb/172/Q172268/
 
 ## Q172268: PRB: Error Passing Recordset to Excel Using Automation From VB
 
+{% raw %}
+
 	Article: Q172268
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -170,3 +172,5 @@ permalink: /kb/172/Q172268/
 	
 	=============================================================================
 	
+
+{% endraw %}

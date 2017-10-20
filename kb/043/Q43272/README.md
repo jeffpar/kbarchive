@@ -6,6 +6,8 @@ permalink: /kb/043/Q43272/
 
 ## Q43272: Printing ASCII Characters Greater Than 127 Fails in CGA Mode
 
+{% raw %}
+
 	Article: Q43272
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -27,3 +29,5 @@ permalink: /kb/043/Q43272/
 	For more information, see Richard Wilton's book "Programmer's Guide to
 	PC & PS/2 Video Systems," Page 269, which is available from Microsoft
 	Press.
+
+{% endraw %}

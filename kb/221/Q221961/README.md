@@ -6,6 +6,8 @@ permalink: /kb/221/Q221961/
 
 ## Q221961: Err Msg: Rundll32.dll Caused a General Protection Fault in...
 
+{% raw %}
+
 	Article: Q221961
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/221/Q221961/
 	
 	=============================================================================
 	
+
+{% endraw %}

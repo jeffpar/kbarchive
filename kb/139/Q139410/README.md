@@ -6,6 +6,8 @@ permalink: /kb/139/Q139410/
 
 ## Q139410: Err Msg: There are Currently No Logon Servers Available...
 
+{% raw %}
+
 	Article: Q139410
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -135,3 +137,5 @@ permalink: /kb/139/Q139410/
 	
 	=============================================================================
 	
+
+{% endraw %}

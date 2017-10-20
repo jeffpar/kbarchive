@@ -6,6 +6,8 @@ permalink: /kb/084/Q84252/
 
 ## Q84252: Kyocera Q8010 Prints Blank Page When Using TrueType Fonts
 
+{% raw %}
+
 	Article: Q84252
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/084/Q84252/
 	
 	=============================================================================
 	
+
+{% endraw %}

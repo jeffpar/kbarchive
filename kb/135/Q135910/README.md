@@ -6,6 +6,8 @@ permalink: /kb/135/Q135910/
 
 ## Q135910: Flight Simulator: List of Sound Options
 
+{% raw %}
+
 	Article: Q135910
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0,5.1
@@ -97,3 +99,5 @@ permalink: /kb/135/Q135910/
 	
 	=============================================================================
 	
+
+{% endraw %}

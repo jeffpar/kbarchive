@@ -6,6 +6,8 @@ permalink: /kb/128/Q128875/
 
 ## Q128875: UT1x: No Referential Integrity Triggers Using Upsizing Tools
 
+{% raw %}
+
 	Article: Q128875
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/128/Q128875/
 	
 	=============================================================================
 	
+
+{% endraw %}

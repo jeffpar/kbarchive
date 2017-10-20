@@ -6,6 +6,8 @@ permalink: /kb/102/Q102829/
 
 ## Q102829: How to Replace a View in a CMDIChildWnd Window
 
+{% raw %}
+
 	Article: Q102829
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.51,1.52,2.0,2.1,l.5
@@ -143,3 +145,5 @@ permalink: /kb/102/Q102829/
 	
 	=============================================================================
 	
+
+{% endraw %}

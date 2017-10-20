@@ -6,6 +6,8 @@ permalink: /kb/103/Q103983/
 
 ## Q103983: PRB: Serializing an Abstract Base Class
 
+{% raw %}
+
 	Article: Q103983
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1
@@ -79,3 +81,5 @@ permalink: /kb/103/Q103983/
 	
 	=============================================================================
 	
+
+{% endraw %}

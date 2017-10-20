@@ -6,6 +6,8 @@ permalink: /kb/145/Q145769/
 
 ## Q145769: PRB: Capital &quot;S&quot; Not Displayed When Using the Text ISAM
 
+{% raw %}
+
 	Article: Q145769
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -90,3 +92,5 @@ permalink: /kb/145/Q145769/
 	
 	=============================================================================
 	
+
+{% endraw %}

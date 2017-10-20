@@ -6,6 +6,8 @@ permalink: /kb/230/Q230670/
 
 ## Q230670: XCLN: URL to PFs Doesn't Work w/Clients of Different Languages
 
+{% raw %}
+
 	Article: Q230670
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,98
@@ -75,3 +77,5 @@ permalink: /kb/230/Q230670/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175402/
 
 ## Q175402: XCLN: An Extension Failed To Initialize
 
+{% raw %}
+
 	Article: Q175402
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -88,3 +90,5 @@ permalink: /kb/175/Q175402/
 	
 	=============================================================================
 	
+
+{% endraw %}

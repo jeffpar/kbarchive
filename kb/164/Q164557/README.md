@@ -6,6 +6,8 @@ permalink: /kb/164/Q164557/
 
 ## Q164557: WD97: Email Profile Argument Does Not Exist For Document Routing
 
+{% raw %}
+
 	Article: Q164557
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/164/Q164557/
 	
 	=============================================================================
 	
+
+{% endraw %}

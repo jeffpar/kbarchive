@@ -6,6 +6,8 @@ permalink: /kb/247/Q247888/
 
 ## Q247888: XADM: Error c1031b95 Configuring an ADC Connection Agreement
 
+{% raw %}
+
 	Article: Q247888
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/247/Q247888/
 	
 	=============================================================================
 	
+
+{% endraw %}

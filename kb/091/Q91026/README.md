@@ -6,6 +6,8 @@ permalink: /kb/091/Q91026/
 
 ## Q91026: Obtain LOGSHOW/VIEWCFG Info Without Installing MS OS/2
 
+{% raw %}
+
 	Article: Q91026
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/091/Q91026/
 	
 	=============================================================================
 	
+
+{% endraw %}

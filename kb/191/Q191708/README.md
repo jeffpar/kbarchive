@@ -6,6 +6,8 @@ permalink: /kb/191/Q191708/
 
 ## Q191708: BUG: Visual FoxPro ODBC Driver May Crash Client Application
 
+{% raw %}
+
 	Article: Q191708
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.6,6.0
@@ -77,3 +79,5 @@ permalink: /kb/191/Q191708/
 	
 	=============================================================================
 	
+
+{% endraw %}

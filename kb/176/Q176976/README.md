@@ -6,6 +6,8 @@ permalink: /kb/176/Q176976/
 
 ## Q176976: Wrong Return Value from MkParseDisplayName
 
+{% raw %}
+
 	Article: Q176976
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/176/Q176976/
 	
 	=============================================================================
 	
+
+{% endraw %}

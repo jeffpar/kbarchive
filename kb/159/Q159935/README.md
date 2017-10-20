@@ -6,6 +6,8 @@ permalink: /kb/159/Q159935/
 
 ## Q159935: &quot;User Not Allowed to Log on at This Computer&quot; Using C2CONFIG
 
+{% raw %}
+
 	Article: Q159935
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0;Windows:95
@@ -75,3 +77,5 @@ permalink: /kb/159/Q159935/
 	
 	=============================================================================
 	
+
+{% endraw %}

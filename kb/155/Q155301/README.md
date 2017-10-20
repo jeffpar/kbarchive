@@ -6,6 +6,8 @@ permalink: /kb/155/Q155301/
 
 ## Q155301: Screen Goes Blank During Online Game When Host Disconnects
 
+{% raw %}
+
 	Article: Q155301
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155301/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158760/
 
 ## Q158760: FIX: Setting Grid RowHeight to Large Number Affects Page Down
 
+{% raw %}
+
 	Article: Q158760
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -80,3 +82,5 @@ permalink: /kb/158/Q158760/
 	
 	=============================================================================
 	
+
+{% endraw %}

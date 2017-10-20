@@ -6,6 +6,8 @@ permalink: /kb/199/Q199051/
 
 ## Q199051: XFOR: Incoming SMTP Messages Missing To, From, and/or Subject
 
+{% raw %}
+
 	Article: Q199051
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/199/Q199051/
 	
 	=============================================================================
 	
+
+{% endraw %}

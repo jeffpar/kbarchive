@@ -6,6 +6,8 @@ permalink: /kb/189/Q189480/
 
 ## Q189480: PRB: RichTextBox Control Saves Locale Setting When Created
 
+{% raw %}
+
 	Article: Q189480
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/189/Q189480/
 	
 	=============================================================================
 	
+
+{% endraw %}

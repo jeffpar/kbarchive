@@ -6,6 +6,8 @@ permalink: /kb/089/Q89948/
 
 ## Q89948: Sound Finder Does Not Start Minimized
 
+{% raw %}
+
 	Article: Q89948
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/089/Q89948/
 	
 	=============================================================================
 	
+
+{% endraw %}

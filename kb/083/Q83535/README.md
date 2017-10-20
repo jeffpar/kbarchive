@@ -6,6 +6,8 @@ permalink: /kb/083/Q83535/
 
 ## Q83535: Mac Fax: MailSender 32-bit Compatibility
 
+{% raw %}
+
 	Article: Q83535
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -40,3 +42,5 @@ permalink: /kb/083/Q83535/
 	
 	=============================================================================
 	
+
+{% endraw %}

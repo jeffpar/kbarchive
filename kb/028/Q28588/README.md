@@ -6,6 +6,8 @@ permalink: /kb/028/Q28588/
 
 ## Q28588: Pascal Subprogram &quot;Invalid Format&quot; Loaded as Quick Library
 
+{% raw %}
+
 	Article: Q28588
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -51,3 +53,5 @@ permalink: /kb/028/Q28588/
 	         b := b + 1;
 	       end; {PasSub}
 	    end.
+
+{% endraw %}

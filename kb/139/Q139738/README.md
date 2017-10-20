@@ -6,6 +6,8 @@ permalink: /kb/139/Q139738/
 
 ## Q139738: ROUTE Command Prints Help Text to STDERR
 
+{% raw %}
+
 	Article: Q139738
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -76,3 +78,5 @@ permalink: /kb/139/Q139738/
 	
 	=============================================================================
 	
+
+{% endraw %}

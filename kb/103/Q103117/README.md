@@ -6,6 +6,8 @@ permalink: /kb/103/Q103117/
 
 ## Q103117: WACOM PENWIN.DLL Generates &quot;Out of Memory&quot; Message with Write
 
+{% raw %}
+
 	Article: Q103117
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/103/Q103117/
 	
 	=============================================================================
 	
+
+{% endraw %}

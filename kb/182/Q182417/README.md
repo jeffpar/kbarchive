@@ -6,6 +6,8 @@ permalink: /kb/182/Q182417/
 
 ## Q182417: OS/400 Version 3 Release 7 Password Synchronization May Fail
 
+{% raw %}
+
 	Article: Q182417
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -75,3 +77,5 @@ permalink: /kb/182/Q182417/
 	
 	=============================================================================
 	
+
+{% endraw %}

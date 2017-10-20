@@ -6,6 +6,8 @@ permalink: /kb/197/Q197378/
 
 ## Q197378: XCON: MTA Generates 9301 Events on Incoming Connections
 
+{% raw %}
+
 	Article: Q197378
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -198,3 +200,5 @@ permalink: /kb/197/Q197378/
 	
 	=============================================================================
 	
+
+{% endraw %}

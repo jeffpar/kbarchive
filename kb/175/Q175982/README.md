@@ -6,6 +6,8 @@ permalink: /kb/175/Q175982/
 
 ## Q175982: XFOR: Outbound SMTP Mail Never Leaves Microsoft Exchange Server
 
+{% raw %}
+
 	Article: Q175982
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/175/Q175982/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179341/
 
 ## Q179341: WD97: On Exit Macro Jump to Unprotected Section Fails
 
+{% raw %}
+
 	Article: Q179341
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -108,3 +110,5 @@ permalink: /kb/179/Q179341/
 	
 	=============================================================================
 	
+
+{% endraw %}

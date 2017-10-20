@@ -6,6 +6,8 @@ permalink: /kb/137/Q137755/
 
 ## Q137755: No More Than 16 MB of Memory Reported on Some IBM PS/2 Models
 
+{% raw %}
+
 	Article: Q137755
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/137/Q137755/
 	
 	=============================================================================
 	
+
+{% endraw %}

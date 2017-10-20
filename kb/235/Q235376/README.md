@@ -6,6 +6,8 @@ permalink: /kb/235/Q235376/
 
 ## Q235376: Disabling Autochk Causes Incorrect Volume Set Size
 
+{% raw %}
+
 	Article: Q235376
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/235/Q235376/
 	
 	=============================================================================
 	
+
+{% endraw %}

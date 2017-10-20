@@ -6,6 +6,8 @@ permalink: /kb/136/Q136925/
 
 ## Q136925: How to Change the Color of an &quot;X&quot; in a Check Box
 
+{% raw %}
+
 	Article: Q136925
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/136/Q136925/
 	
 	=============================================================================
 	
+
+{% endraw %}

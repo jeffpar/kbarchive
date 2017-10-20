@@ -6,6 +6,8 @@ permalink: /kb/124/Q124175/
 
 ## Q124175: Microsoft Network Client and LAN Manager 2.2c Comparison
 
+{% raw %}
+
 	Article: Q124175
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2c,3.0
@@ -78,3 +80,5 @@ permalink: /kb/124/Q124175/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178656/
 
 ## Q178656: XWEB: VBScript Error When Attempting to Access a Mailbox
 
+{% raw %}
+
 	Article: Q178656
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -81,3 +83,5 @@ permalink: /kb/178/Q178656/
 	
 	=============================================================================
 	
+
+{% endraw %}

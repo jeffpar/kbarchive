@@ -6,6 +6,8 @@ permalink: /kb/141/Q141027/
 
 ## Q141027: HOWTO: How to Quickly Search a List Box
 
+{% raw %}
+
 	Article: Q141027
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -103,3 +105,5 @@ permalink: /kb/141/Q141027/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172818/
 
 ## Q172818: WD97: Insert WordArt/AutoShape Opens Blank Picture Object
 
+{% raw %}
+
 	Article: Q172818
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/172/Q172818/
 	
 	=============================================================================
 	
+
+{% endraw %}

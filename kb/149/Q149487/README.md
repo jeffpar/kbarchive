@@ -6,6 +6,8 @@ permalink: /kb/149/Q149487/
 
 ## Q149487: BUG: Mouse Captured After Clicking DBGrid Column Header
 
+{% raw %}
+
 	Article: Q149487
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -132,3 +134,5 @@ permalink: /kb/149/Q149487/
 	
 	=============================================================================
 	
+
+{% endraw %}

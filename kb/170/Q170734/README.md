@@ -6,6 +6,8 @@ permalink: /kb/170/Q170734/
 
 ## Q170734: WD97: Cut or Copy Object in Label Causes IPF
 
+{% raw %}
+
 	Article: Q170734
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -159,3 +161,5 @@ permalink: /kb/170/Q170734/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171509/
 
 ## Q171509: FIX: Access Violation on NT4.0 or Windows 2000 on Multi-line Tex
 
+{% raw %}
+
 	Article: Q171509
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -99,3 +101,5 @@ permalink: /kb/171/Q171509/
 	
 	=============================================================================
 	
+
+{% endraw %}

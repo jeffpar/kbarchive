@@ -6,6 +6,8 @@ permalink: /kb/139/Q139958/
 
 ## Q139958: How to Update a Table from a List Box with Mover Bars
 
+{% raw %}
+
 	Article: Q139958
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -147,3 +149,5 @@ permalink: /kb/139/Q139958/
 	
 	=============================================================================
 	
+
+{% endraw %}

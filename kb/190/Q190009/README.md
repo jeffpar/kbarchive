@@ -6,6 +6,8 @@ permalink: /kb/190/Q190009/
 
 ## Q190009: Client Cert. Mapping Only Works w/First Page on Proxy Connection
 
+{% raw %}
+
 	Article: Q190009
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/190/Q190009/
 	
 	=============================================================================
 	
+
+{% endraw %}

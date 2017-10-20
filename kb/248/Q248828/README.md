@@ -6,6 +6,8 @@ permalink: /kb/248/Q248828/
 
 ## Q248828: XADM: Dirsync Requestor Updates Not Sent After Upgrade to SP3
 
+{% raw %}
+
 	Article: Q248828
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -66,3 +68,5 @@ permalink: /kb/248/Q248828/
 	
 	=============================================================================
 	
+
+{% endraw %}

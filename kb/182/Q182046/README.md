@@ -6,6 +6,8 @@ permalink: /kb/182/Q182046/
 
 ## Q182046: HOWTO: Work Around Bugs in Template Libraries
 
+{% raw %}
+
 	Article: Q182046
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -193,3 +195,5 @@ permalink: /kb/182/Q182046/
 	
 	=============================================================================
 	
+
+{% endraw %}

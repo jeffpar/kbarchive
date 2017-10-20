@@ -6,6 +6,8 @@ permalink: /kb/208/Q208820/
 
 ## Q208820: Print Monitor Does Not Support Bidirectional Printing
 
+{% raw %}
+
 	Article: Q208820
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/208/Q208820/
 	
 	=============================================================================
 	
+
+{% endraw %}

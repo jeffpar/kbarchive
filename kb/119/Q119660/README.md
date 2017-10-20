@@ -6,6 +6,8 @@ permalink: /kb/119/Q119660/
 
 ## Q119660: Compressed Audio Doesn't Play on Aztech Labs (AZI) Sound Cards
 
+{% raw %}
+
 	Article: Q119660
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/119/Q119660/
 	
 	=============================================================================
 	
+
+{% endraw %}

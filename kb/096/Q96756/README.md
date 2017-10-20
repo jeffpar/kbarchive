@@ -6,6 +6,8 @@ permalink: /kb/096/Q96756/
 
 ## Q96756: MS-DOS Fails to Detect Floppy Disk Change
 
+{% raw %}
+
 	Article: Q96756
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/096/Q96756/
 	
 	=============================================================================
 	
+
+{% endraw %}

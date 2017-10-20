@@ -6,6 +6,8 @@ permalink: /kb/138/Q138604/
 
 ## Q138604: Minimized Program Goes to End of Switching Order
 
+{% raw %}
+
 	Article: Q138604
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -44,3 +46,5 @@ permalink: /kb/138/Q138604/
 	
 	=============================================================================
 	
+
+{% endraw %}

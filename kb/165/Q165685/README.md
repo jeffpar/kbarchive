@@ -6,6 +6,8 @@ permalink: /kb/165/Q165685/
 
 ## Q165685: INFO: Visual C++ 5.0 Readme, MFC and Other Libraries
 
+{% raw %}
+
 	Article: Q165685
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -700,3 +702,5 @@ permalink: /kb/165/Q165685/
 	
 	=============================================================================
 	
+
+{% endraw %}

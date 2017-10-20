@@ -6,6 +6,8 @@ permalink: /kb/115/Q115874/
 
 ## Q115874: Distribution Disk File Lists for Windows NT Subsystem for PM
 
+{% raw %}
+
 	Article: Q115874
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -166,3 +168,5 @@ permalink: /kb/115/Q115874/
 	
 	=============================================================================
 	
+
+{% endraw %}

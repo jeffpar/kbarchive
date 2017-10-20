@@ -6,6 +6,8 @@ permalink: /kb/042/Q42600/
 
 ## Q42600: _imagesize Formula Documented Incorrectly for Some Video Modes
 
+{% raw %}
+
 	Article: Q42600
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -105,3 +107,5 @@ permalink: /kb/042/Q42600/
 	For more information on bit planes and pixel maps, refer to the
 	"Programmer's Guide to PC & PS/2 Video Systems" by Richard Wilton,
 	Pages 87-91.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96334/
 
 ## Q96334: Windows for Workgroups or WC Hang on NETBIND Command
 
+{% raw %}
+
 	Article: Q96334
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1; :1.0
@@ -63,3 +65,5 @@ permalink: /kb/096/Q96334/
 	
 	=============================================================================
 	
+
+{% endraw %}

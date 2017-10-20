@@ -6,6 +6,8 @@ permalink: /kb/058/Q58391/
 
 ## Q58391: Cancel Button Must Be Chosen Three Times in Error Dialog
 
+{% raw %}
+
 	Article: Q58391
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/058/Q58391/
 	
 	=============================================================================
 	
+
+{% endraw %}

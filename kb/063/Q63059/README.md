@@ -6,6 +6,8 @@ permalink: /kb/063/Q63059/
 
 ## Q63059: PWB Text Highlight with Mouse Acts Strange After Search
 
+{% raw %}
+
 	Article: Q63059
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -37,3 +39,5 @@ permalink: /kb/063/Q63059/
 	Microsoft has confirmed this to be a problem with the Programmer's
 	Workbench version 1.00. We are researching this problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

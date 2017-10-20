@@ -6,6 +6,8 @@ permalink: /kb/192/Q192978/
 
 ## Q192978: PRB: Query Output to Label or Report Prints All Records
 
+{% raw %}
+
 	Article: Q192978
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -93,3 +95,5 @@ permalink: /kb/192/Q192978/
 	
 	=============================================================================
 	
+
+{% endraw %}

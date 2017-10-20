@@ -6,6 +6,8 @@ permalink: /kb/170/Q170427/
 
 ## Q170427: XFOR: Hebrew Zayin Character Not Preserved
 
+{% raw %}
+
 	Article: Q170427
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -49,3 +51,5 @@ permalink: /kb/170/Q170427/
 	
 	=============================================================================
 	
+
+{% endraw %}

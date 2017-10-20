@@ -6,6 +6,8 @@ permalink: /kb/180/Q180622/
 
 ## Q180622: STOP:0x0000001E with STATUS_INSUFFICIENT_RESOURCES in Sfmsrv.sys
 
+{% raw %}
+
 	Article: Q180622
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -112,3 +114,5 @@ permalink: /kb/180/Q180622/
 	
 	=============================================================================
 	
+
+{% endraw %}

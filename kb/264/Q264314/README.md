@@ -6,6 +6,8 @@ permalink: /kb/264/Q264314/
 
 ## Q264314: XADM: Mailbox Move Fails with Error 80004005-0501-000004dd
 
+{% raw %}
+
 	Article: Q264314
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/264/Q264314/
 	
 	=============================================================================
 	
+
+{% endraw %}

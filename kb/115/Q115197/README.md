@@ -6,6 +6,8 @@ permalink: /kb/115/Q115197/
 
 ## Q115197: BUG: Double-Clicking .VUE File in Finder Won't Restore View
 
+{% raw %}
+
 	Article: Q115197
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -77,3 +79,5 @@ permalink: /kb/115/Q115197/
 	
 	=============================================================================
 	
+
+{% endraw %}

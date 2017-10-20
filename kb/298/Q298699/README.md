@@ -6,6 +6,8 @@ permalink: /kb/298/Q298699/
 
 ## Q298699: MSN Explorer (MSN Version 6.1) Sign-in And Sign-up Error Message
 
+{% raw %}
+
 	Article: Q298699
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -156,3 +158,5 @@ permalink: /kb/298/Q298699/
 	
 	=============================================================================
 	
+
+{% endraw %}

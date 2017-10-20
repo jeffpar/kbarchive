@@ -6,6 +6,8 @@ permalink: /kb/074/Q74984/
 
 ## Q74984: EMM386.EXE Hangs Machine with Adaptec Controller
 
+{% raw %}
+
 	Article: Q74984
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -56,3 +58,5 @@ permalink: /kb/074/Q74984/
 	
 	=============================================================================
 	
+
+{% endraw %}

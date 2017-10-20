@@ -6,6 +6,8 @@ permalink: /kb/169/Q169685/
 
 ## Q169685: XFOR: When Remote Clients Support MAPI, BP9 not Sent
 
+{% raw %}
+
 	Article: Q169685
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -144,3 +146,5 @@ permalink: /kb/169/Q169685/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/320/Q320829/
 
 ## Q320829: HOW TO: Modify the Default SizReqBuf Value in Windows 2000
 
+{% raw %}
+
 	Article: Q320829
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/320/Q320829/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138504/
 
 ## Q138504: PRB: &quot;Data type mismatch&quot; Error When Running a Form
 
+{% raw %}
+
 	Article: Q138504
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/138/Q138504/
 	
 	=============================================================================
 	
+
+{% endraw %}

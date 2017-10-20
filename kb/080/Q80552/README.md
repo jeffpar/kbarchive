@@ -6,6 +6,8 @@ permalink: /kb/080/Q80552/
 
 ## Q80552: Windows 3.0 Enhanced Mode Problems with Site Lock 3.1
 
+{% raw %}
+
 	Article: Q80552
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -91,3 +93,5 @@ permalink: /kb/080/Q80552/
 	
 	=============================================================================
 	
+
+{% endraw %}

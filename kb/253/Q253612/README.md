@@ -6,6 +6,8 @@ permalink: /kb/253/Q253612/
 
 ## Q253612: BUG: Printers Collection May Not Contain All Printers in Folder
 
+{% raw %}
+
 	Article: Q253612
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -101,3 +103,5 @@ permalink: /kb/253/Q253612/
 	
 	=============================================================================
 	
+
+{% endraw %}

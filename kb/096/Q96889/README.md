@@ -6,6 +6,8 @@ permalink: /kb/096/Q96889/
 
 ## Q96889: Mac Form: Replying with a Custom Form
 
+{% raw %}
+
 	Article: Q96889
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -70,3 +72,5 @@ permalink: /kb/096/Q96889/
 	
 	=============================================================================
 	
+
+{% endraw %}

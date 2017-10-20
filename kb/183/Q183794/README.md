@@ -6,6 +6,8 @@ permalink: /kb/183/Q183794/
 
 ## Q183794: Smart IPX Device Driver Interface to Srv.sys
 
+{% raw %}
+
 	Article: Q183794
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -256,3 +258,5 @@ permalink: /kb/183/Q183794/
 	
 	=============================================================================
 	
+
+{% endraw %}

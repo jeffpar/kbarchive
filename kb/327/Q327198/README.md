@@ -6,6 +6,8 @@ permalink: /kb/327/Q327198/
 
 ## Q327198: INFO: Platform Support for ASP.NET Applications
 
+{% raw %}
+
 	Article: Q327198
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -70,3 +72,5 @@ permalink: /kb/327/Q327198/
 	
 	=============================================================================
 	
+
+{% endraw %}

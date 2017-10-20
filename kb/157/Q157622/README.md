@@ -6,6 +6,8 @@ permalink: /kb/157/Q157622/
 
 ## Q157622: STL Sample for queue::(push,pop,empty,back,front) Functions
 
+{% raw %}
+
 	Article: Q157622
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -193,3 +195,5 @@ permalink: /kb/157/Q157622/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108200/
 
 ## Q108200: Requirements to Create External Library (.MLB) Files
 
+{% raw %}
+
 	Article: Q108200
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b
@@ -43,3 +45,5 @@ permalink: /kb/108/Q108200/
 	
 	=============================================================================
 	
+
+{% endraw %}

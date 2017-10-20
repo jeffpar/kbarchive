@@ -6,6 +6,8 @@ permalink: /kb/197/Q197469/
 
 ## Q197469: WD97: Word Lists Unused Table of Contents and Index Styles
 
+{% raw %}
+
 	Article: Q197469
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/197/Q197469/
 	
 	=============================================================================
 	
+
+{% endraw %}

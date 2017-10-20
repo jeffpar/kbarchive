@@ -6,6 +6,8 @@ permalink: /kb/131/Q131654/
 
 ## Q131654: 500 NATIONS: Make Wallpaper Replaces Previous Wallpaper
 
+{% raw %}
+
 	Article: Q131654
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/131/Q131654/
 	
 	=============================================================================
 	
+
+{% endraw %}

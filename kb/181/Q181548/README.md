@@ -6,6 +6,8 @@ permalink: /kb/181/Q181548/
 
 ## Q181548: Event ID 4119 and 4311 After Removal of Remote Access Service
 
+{% raw %}
+
 	Article: Q181548
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -83,3 +85,5 @@ permalink: /kb/181/Q181548/
 	
 	=============================================================================
 	
+
+{% endraw %}

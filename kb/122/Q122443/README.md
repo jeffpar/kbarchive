@@ -6,6 +6,8 @@ permalink: /kb/122/Q122443/
 
 ## Q122443: FIX: C2664 When Converting Type Defined Array to Const Array
 
+{% raw %}
+
 	Article: Q122443
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -95,3 +97,5 @@ permalink: /kb/122/Q122443/
 	
 	=============================================================================
 	
+
+{% endraw %}

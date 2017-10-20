@@ -6,6 +6,8 @@ permalink: /kb/071/Q71407/
 
 ## Q71407: Mac Hyp: Changing the Mail Server
 
+{% raw %}
+
 	Article: Q71407
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0
@@ -65,3 +67,5 @@ permalink: /kb/071/Q71407/
 	
 	=============================================================================
 	
+
+{% endraw %}

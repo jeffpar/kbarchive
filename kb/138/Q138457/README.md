@@ -6,6 +6,8 @@ permalink: /kb/138/Q138457/
 
 ## Q138457: DOC: PUTFILE() Help Topic Says DialogCaption Is at the Top
 
+{% raw %}
+
 	Article: Q138457
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a; WINDOWS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/138/Q138457/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129749/
 
 ## Q129749: Using Undo Command in Paint Undoes Unfinished Operation
 
+{% raw %}
+
 	Article: Q129749
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -58,3 +60,5 @@ permalink: /kb/129/Q129749/
 	
 	=============================================================================
 	
+
+{% endraw %}

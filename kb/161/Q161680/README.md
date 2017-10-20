@@ -6,6 +6,8 @@ permalink: /kb/161/Q161680/
 
 ## Q161680: Kids Plus!: The Background Displays Different Color
 
+{% raw %}
+
 	Article: Q161680
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/161/Q161680/
 	
 	=============================================================================
 	
+
+{% endraw %}

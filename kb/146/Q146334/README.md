@@ -6,6 +6,8 @@ permalink: /kb/146/Q146334/
 
 ## Q146334: Editing a Deleted Appointment Can Generate Error
 
+{% raw %}
+
 	Article: Q146334
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -45,3 +47,5 @@ permalink: /kb/146/Q146334/
 	
 	=============================================================================
 	
+
+{% endraw %}

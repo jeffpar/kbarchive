@@ -6,6 +6,8 @@ permalink: /kb/198/Q198660/
 
 ## Q198660: DOC: Additional Jet Database Record Size Information
 
+{% raw %}
+
 	Article: Q198660
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0,7.0,97
@@ -75,3 +77,5 @@ permalink: /kb/198/Q198660/
 	
 	=============================================================================
 	
+
+{% endraw %}

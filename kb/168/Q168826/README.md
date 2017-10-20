@@ -6,6 +6,8 @@ permalink: /kb/168/Q168826/
 
 ## Q168826: PRB: Adding VB Custom Method Control Causes Fault in VFP5
 
+{% raw %}
+
 	Article: Q168826
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -101,3 +103,5 @@ permalink: /kb/168/Q168826/
 	
 	=============================================================================
 	
+
+{% endraw %}

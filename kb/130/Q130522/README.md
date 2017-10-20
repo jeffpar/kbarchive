@@ -6,6 +6,8 @@ permalink: /kb/130/Q130522/
 
 ## Q130522: Internal Memory Management in Visual FoxPro
 
+{% raw %}
+
 	Article: Q130522
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -75,3 +77,5 @@ permalink: /kb/130/Q130522/
 	
 	=============================================================================
 	
+
+{% endraw %}

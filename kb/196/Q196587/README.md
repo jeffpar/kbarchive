@@ -6,6 +6,8 @@ permalink: /kb/196/Q196587/
 
 ## Q196587: BUG: Data View: New Oracle Views Incorrectly Named During Save
 
+{% raw %}
+
 	Article: Q196587
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -120,3 +122,5 @@ permalink: /kb/196/Q196587/
 	
 	=============================================================================
 	
+
+{% endraw %}

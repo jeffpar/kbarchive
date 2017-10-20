@@ -6,6 +6,8 @@ permalink: /kb/099/Q99277/
 
 ## Q99277: PC Win: Err Msg: Your Message File Could Not Be Opened...
 
+{% raw %}
+
 	Article: Q99277
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -66,3 +68,5 @@ permalink: /kb/099/Q99277/
 	
 	=============================================================================
 	
+
+{% endraw %}

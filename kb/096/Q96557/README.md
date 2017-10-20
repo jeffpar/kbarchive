@@ -6,6 +6,8 @@ permalink: /kb/096/Q96557/
 
 ## Q96557: MSAV Detects a Boot-Sector Virus but Fails to Clean It
 
+{% raw %}
+
 	Article: Q96557
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -163,3 +165,5 @@ permalink: /kb/096/Q96557/
 	
 	=============================================================================
 	
+
+{% endraw %}

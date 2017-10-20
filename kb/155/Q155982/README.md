@@ -6,6 +6,8 @@ permalink: /kb/155/Q155982/
 
 ## Q155982: WD97: Hyperlink Style Format Is Not Retained After Merge
 
+{% raw %}
+
 	Article: Q155982
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/155/Q155982/
 	
 	=============================================================================
 	
+
+{% endraw %}

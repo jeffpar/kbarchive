@@ -6,6 +6,8 @@ permalink: /kb/260/Q260016/
 
 ## Q260016: StarLancer Err Msg: DirectX 7.0a Is Required to Run StarLancer
 
+{% raw %}
+
 	Article: Q260016
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/260/Q260016/
 	
 	=============================================================================
 	
+
+{% endraw %}

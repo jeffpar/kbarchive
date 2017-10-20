@@ -6,6 +6,8 @@ permalink: /kb/132/Q132775/
 
 ## Q132775: Alacrity Equip+ Does Not Function Properly in Windows 95
 
+{% raw %}
+
 	Article: Q132775
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132775/
 	
 	=============================================================================
 	
+
+{% endraw %}

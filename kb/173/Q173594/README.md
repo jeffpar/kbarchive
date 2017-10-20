@@ -6,6 +6,8 @@ permalink: /kb/173/Q173594/
 
 ## Q173594: SMS: Remote Control Agent Stops Responding on Startup &amp; Shutdown
 
+{% raw %}
+
 	Article: Q173594
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -148,3 +150,5 @@ permalink: /kb/173/Q173594/
 	
 	=============================================================================
 	
+
+{% endraw %}

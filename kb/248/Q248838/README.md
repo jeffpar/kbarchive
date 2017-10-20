@@ -6,6 +6,8 @@ permalink: /kb/248/Q248838/
 
 ## Q248838: XADM: Exchange Server 5.5 Post-SP3 Information Store Fixes
 
+{% raw %}
+
 	Article: Q248838
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -393,3 +395,5 @@ permalink: /kb/248/Q248838/
 	
 	=============================================================================
 	
+
+{% endraw %}

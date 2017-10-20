@@ -6,6 +6,8 @@ permalink: /kb/173/Q173105/
 
 ## Q173105: Error Moving Message from PST to Exchange Server Mailbox
 
+{% raw %}
+
 	Article: Q173105
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5; Win95:4.0,5.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/173/Q173105/
 	
 	=============================================================================
 	
+
+{% endraw %}

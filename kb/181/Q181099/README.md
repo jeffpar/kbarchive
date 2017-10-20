@@ -6,6 +6,8 @@ permalink: /kb/181/Q181099/
 
 ## Q181099: Some SNACFG Options Fail using a German version of Windows NT
 
+{% raw %}
+
 	Article: Q181099
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
@@ -79,3 +81,5 @@ permalink: /kb/181/Q181099/
 	
 	=============================================================================
 	
+
+{% endraw %}

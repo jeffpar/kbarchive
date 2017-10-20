@@ -6,6 +6,8 @@ permalink: /kb/183/Q183333/
 
 ## Q183333: HOWTO: Create a Dynamically Scrolling Graph
 
+{% raw %}
+
 	Article: Q183333
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -201,3 +203,5 @@ permalink: /kb/183/Q183333/
 	
 	=============================================================================
 	
+
+{% endraw %}

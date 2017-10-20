@@ -6,6 +6,8 @@ permalink: /kb/107/Q107712/
 
 ## Q107712: Files Needed to Manually Install MS-DOS 6.0/6.2 Utilities
 
+{% raw %}
+
 	Article: Q107712
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -137,3 +139,5 @@ permalink: /kb/107/Q107712/
 	
 	=============================================================================
 	
+
+{% endraw %}

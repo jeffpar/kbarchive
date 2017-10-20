@@ -6,6 +6,8 @@ permalink: /kb/098/Q98460/
 
 ## Q98460: Using SyQuest Removable Drives and Tape Drives with MS-DOS 6
 
+{% raw %}
+
 	Article: Q98460
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -77,3 +79,5 @@ permalink: /kb/098/Q98460/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182024/
 
 ## Q182024: XFOR: Built-in WinNT System Groups Not Added to Chat Sysop
 
+{% raw %}
+
 	Article: Q182024
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/182/Q182024/
 	
 	=============================================================================
 	
+
+{% endraw %}

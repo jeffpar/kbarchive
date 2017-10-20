@@ -6,6 +6,8 @@ permalink: /kb/031/Q31534/
 
 ## Q31534: MASM 5.10 EXT.DOC: ReadChar - Returns Next Raw Keystroke
 
+{% raw %}
+
 	Article: Q31534
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -41,3 +43,5 @@ permalink: /kb/031/Q31534/
 	 *  is on the numeric keypad.
 	 */
 	long pascal ReadChar();
+
+{% endraw %}

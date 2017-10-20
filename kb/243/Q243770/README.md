@@ -6,6 +6,8 @@ permalink: /kb/243/Q243770/
 
 ## Q243770: XFOR: Inconsistent Disk Space Requirements for App. Converter
 
+{% raw %}
+
 	Article: Q243770
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -44,3 +46,5 @@ permalink: /kb/243/Q243770/
 	
 	=============================================================================
 	
+
+{% endraw %}

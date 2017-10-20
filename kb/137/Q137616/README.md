@@ -6,6 +6,8 @@ permalink: /kb/137/Q137616/
 
 ## Q137616: PC Gen: Mail Version 3.5 Disk 1 Label Clarification
 
+{% raw %}
+
 	Article: Q137616
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -82,3 +84,5 @@ permalink: /kb/137/Q137616/
 	
 	=============================================================================
 	
+
+{% endraw %}

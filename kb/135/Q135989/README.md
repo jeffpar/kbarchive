@@ -6,6 +6,8 @@ permalink: /kb/135/Q135989/
 
 ## Q135989: BUG: SQLNumResultCols Returns Zero for the pcCol Argument
 
+{% raw %}
+
 	Article: Q135989
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5
@@ -73,3 +75,5 @@ permalink: /kb/135/Q135989/
 	
 	=============================================================================
 	
+
+{% endraw %}

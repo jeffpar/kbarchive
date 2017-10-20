@@ -6,6 +6,8 @@ permalink: /kb/043/Q43319/
 
 ## Q43319: C: exec and spawn (P_OVERLAY) Will Fail When Bound
 
+{% raw %}
+
 	Article: Q43319
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -62,3 +64,5 @@ permalink: /kb/043/Q43319/
 	{
 	  spawnl(P_OVERLAY,"c:\\tmp\\prog.exe","prog",NULL);
 	}
+
+{% endraw %}

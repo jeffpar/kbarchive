@@ -6,6 +6,8 @@ permalink: /kb/079/Q79894/
 
 ## Q79894: QWINFIX, QEMM 6.0 and Enhanced Mode Windows
 
+{% raw %}
+
 	Article: Q79894
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/079/Q79894/
 	
 	=============================================================================
 	
+
+{% endraw %}

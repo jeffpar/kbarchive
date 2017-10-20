@@ -6,6 +6,8 @@ permalink: /kb/176/Q176465/
 
 ## Q176465: XFOR: Information Store Stops Unexpectedly with Null Recipient
 
+{% raw %}
+
 	Article: Q176465
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176465/
 	
 	=============================================================================
 	
+
+{% endraw %}

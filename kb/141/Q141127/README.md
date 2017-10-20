@@ -6,6 +6,8 @@ permalink: /kb/141/Q141127/
 
 ## Q141127: SFS Post Office Shared Folders Not Available with MS Exchange
 
+{% raw %}
+
 	Article: Q141127
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/141/Q141127/
 	
 	=============================================================================
 	
+
+{% endraw %}

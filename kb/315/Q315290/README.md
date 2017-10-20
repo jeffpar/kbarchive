@@ -6,6 +6,8 @@ permalink: /kb/315/Q315290/
 
 ## Q315290: Events Do Not Fire When You Use WithEvents for a WebClass
 
+{% raw %}
+
 	Article: Q315290
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -91,3 +93,5 @@ permalink: /kb/315/Q315290/
 	
 	=============================================================================
 	
+
+{% endraw %}

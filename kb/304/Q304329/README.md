@@ -6,6 +6,8 @@ permalink: /kb/304/Q304329/
 
 ## Q304329: Fix:Microsoft Oracle ODBC Driver Crashes When TNS Does Not Exist
 
+{% raw %}
+
 	Article: Q304329
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.6,2.6 SP1,Build 2.573.6526,Build 2.573.7326
@@ -102,3 +104,5 @@ permalink: /kb/304/Q304329/
 	
 	=============================================================================
 	
+
+{% endraw %}

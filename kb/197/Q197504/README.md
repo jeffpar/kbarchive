@@ -6,6 +6,8 @@ permalink: /kb/197/Q197504/
 
 ## Q197504: PRB: KeyPress Problem When Using MFC Control on MDI Child Form
 
+{% raw %}
+
 	Article: Q197504
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -165,3 +167,5 @@ permalink: /kb/197/Q197504/
 	
 	=============================================================================
 	
+
+{% endraw %}

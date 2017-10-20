@@ -6,6 +6,8 @@ permalink: /kb/189/Q189527/
 
 ## Q189527: Unable to Create Folder on an NTFS Partition
 
+{% raw %}
+
 	Article: Q189527
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1,2.5
@@ -62,3 +64,5 @@ permalink: /kb/189/Q189527/
 	
 	=============================================================================
 	
+
+{% endraw %}

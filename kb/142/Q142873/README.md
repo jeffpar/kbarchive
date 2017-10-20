@@ -6,6 +6,8 @@ permalink: /kb/142/Q142873/
 
 ## Q142873: STOP 0x0000000A Using Banyan Vines Driver VNS.SYS
 
+{% raw %}
+
 	Article: Q142873
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -48,3 +50,5 @@ permalink: /kb/142/Q142873/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196015/
 
 ## Q196015: WD97: Dates in Table Sort Incorrectly as Date Type
 
+{% raw %}
+
 	Article: Q196015
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/196/Q196015/
 	
 	=============================================================================
 	
+
+{% endraw %}

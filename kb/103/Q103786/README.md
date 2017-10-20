@@ -6,6 +6,8 @@ permalink: /kb/103/Q103786/
 
 ## Q103786: HOWTO: Change Window Background Color with Foundation Classes
 
+{% raw %}
+
 	Article: Q103786
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -134,3 +136,5 @@ permalink: /kb/103/Q103786/
 	
 	=============================================================================
 	
+
+{% endraw %}

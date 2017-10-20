@@ -6,6 +6,8 @@ permalink: /kb/259/Q259760/
 
 ## Q259760: Compression Is Not Enabled on POST Request
 
+{% raw %}
+
 	Article: Q259760
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -97,3 +99,5 @@ permalink: /kb/259/Q259760/
 	
 	=============================================================================
 	
+
+{% endraw %}

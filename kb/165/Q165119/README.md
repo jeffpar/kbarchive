@@ -6,6 +6,8 @@ permalink: /kb/165/Q165119/
 
 ## Q165119: XCON: Site Connector Configuration Basics
 
+{% raw %}
+
 	Article: Q165119
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/165/Q165119/
 	
 	=============================================================================
 	
+
+{% endraw %}

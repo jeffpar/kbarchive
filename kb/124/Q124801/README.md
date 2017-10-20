@@ -6,6 +6,8 @@ permalink: /kb/124/Q124801/
 
 ## Q124801: SMTP: Err Msg: Socket Error (123) When Starting Gateway
 
+{% raw %}
+
 	Article: Q124801
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.x
@@ -55,3 +57,5 @@ permalink: /kb/124/Q124801/
 	
 	=============================================================================
 	
+
+{% endraw %}

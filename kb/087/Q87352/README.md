@@ -6,6 +6,8 @@ permalink: /kb/087/Q87352/
 
 ## Q87352: Using Publisher's PowerPak with Windows 3.0
 
+{% raw %}
+
 	Article: Q87352
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -76,3 +78,5 @@ permalink: /kb/087/Q87352/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69158/
 
 ## Q69158: ISAMCVT Doesn't Properly Convert db/LIB Date Fields
 
+{% raw %}
+
 	Article: Q69158
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,7.0,7.1
@@ -106,3 +108,5 @@ permalink: /kb/069/Q69158/
 	
 	=============================================================================
 	
+
+{% endraw %}

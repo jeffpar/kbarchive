@@ -6,6 +6,8 @@ permalink: /kb/093/Q93252/
 
 ## Q93252: No Network Services if Real Mode Redirector Started
 
+{% raw %}
+
 	Article: Q93252
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -62,3 +64,5 @@ permalink: /kb/093/Q93252/
 	
 	=============================================================================
 	
+
+{% endraw %}

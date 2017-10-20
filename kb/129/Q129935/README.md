@@ -6,6 +6,8 @@ permalink: /kb/129/Q129935/
 
 ## Q129935: PRB: Non-Reserved Word w/ Colon Behaves Differently in VB 4.0
 
+{% raw %}
+
 	Article: Q129935
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -86,3 +88,5 @@ permalink: /kb/129/Q129935/
 	
 	=============================================================================
 	
+
+{% endraw %}

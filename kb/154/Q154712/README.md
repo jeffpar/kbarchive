@@ -6,6 +6,8 @@ permalink: /kb/154/Q154712/
 
 ## Q154712: Cannot Recognize Devices Attached to BusLogic BT-946c
 
+{% raw %}
+
 	Article: Q154712
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/154/Q154712/
 	
 	=============================================================================
 	
+
+{% endraw %}

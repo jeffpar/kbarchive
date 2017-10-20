@@ -6,6 +6,8 @@ permalink: /kb/063/Q63680/
 
 ## Q63680: AutoCAD 386 and Windows 3.0
 
+{% raw %}
+
 	Article: Q63680
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/063/Q63680/
 	
 	=============================================================================
 	
+
+{% endraw %}

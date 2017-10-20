@@ -6,6 +6,8 @@ permalink: /kb/272/Q272670/
 
 ## Q272670: Golf 2001: Sounds in the Game Stutter or Are Distorted
 
+{% raw %}
+
 	Article: Q272670
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/272/Q272670/
 	
 	=============================================================================
 	
+
+{% endraw %}

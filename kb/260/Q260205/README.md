@@ -6,6 +6,8 @@ permalink: /kb/260/Q260205/
 
 ## Q260205: HTTP Request with Large Number of Dots/Slashes Causes High CPU
 
+{% raw %}
+
 	Article: Q260205
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -322,3 +324,5 @@ permalink: /kb/260/Q260205/
 	
 	=============================================================================
 	
+
+{% endraw %}

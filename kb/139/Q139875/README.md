@@ -6,6 +6,8 @@ permalink: /kb/139/Q139875/
 
 ## Q139875: D-Link Network Adapter Not Recognized During Setup
 
+{% raw %}
+
 	Article: Q139875
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/139/Q139875/
 	
 	=============================================================================
 	
+
+{% endraw %}

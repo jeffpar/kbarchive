@@ -6,6 +6,8 @@ permalink: /kb/095/Q95578/
 
 ## Q95578: PRB: Double-Click Does Not Close Win 3.1 Maximized MDI Child
 
+{% raw %}
+
 	Article: Q95578
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -68,3 +70,5 @@ permalink: /kb/095/Q95578/
 	
 	=============================================================================
 	
+
+{% endraw %}

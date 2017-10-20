@@ -6,6 +6,8 @@ permalink: /kb/194/Q194754/
 
 ## Q194754: PRB: SETUP.EXE File Linked to Missing Export OLEAUT32.DLL:185
 
+{% raw %}
+
 	Article: Q194754
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -84,3 +86,5 @@ permalink: /kb/194/Q194754/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151039/
 
 ## Q151039: FP: Unexpected Pink Lines Appear in Link View Field
 
+{% raw %}
+
 	Article: Q151039
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.1
@@ -78,3 +80,5 @@ permalink: /kb/151/Q151039/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170914/
 
 ## Q170914: WD97: File Open Reverts to Program Folder Not Network Location
 
+{% raw %}
+
 	Article: Q170914
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/170/Q170914/
 	
 	=============================================================================
 	
+
+{% endraw %}

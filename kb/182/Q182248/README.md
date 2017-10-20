@@ -6,6 +6,8 @@ permalink: /kb/182/Q182248/
 
 ## Q182248: HOWTO: Use DCOM Config (DCOMCNFG.EXE) with Windows 95/98/Me
 
+{% raw %}
+
 	Article: Q182248
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -233,3 +235,5 @@ permalink: /kb/182/Q182248/
 	
 	=============================================================================
 	
+
+{% endraw %}

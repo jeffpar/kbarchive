@@ -6,6 +6,8 @@ permalink: /kb/130/Q130927/
 
 ## Q130927: Error Attempting to Format a Striped Drive: Device Is Busy
 
+{% raw %}
+
 	Article: Q130927
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5
@@ -50,3 +52,5 @@ permalink: /kb/130/Q130927/
 	
 	=============================================================================
 	
+
+{% endraw %}

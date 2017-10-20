@@ -6,6 +6,8 @@ permalink: /kb/232/Q232225/
 
 ## Q232225: Access Violation May Occur if Path Greater Than 517 Characters
 
+{% raw %}
+
 	Article: Q232225
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/232/Q232225/
 	
 	=============================================================================
 	
+
+{% endraw %}

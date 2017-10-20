@@ -6,6 +6,8 @@ permalink: /kb/104/Q104897/
 
 ## Q104897: BUG: Syntax Error in Makefile with Projects &gt; 511 Files
 
+{% raw %}
+
 	Article: Q104897
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -72,3 +74,5 @@ permalink: /kb/104/Q104897/
 	
 	=============================================================================
 	
+
+{% endraw %}

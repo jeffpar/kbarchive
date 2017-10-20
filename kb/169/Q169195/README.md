@@ -6,6 +6,8 @@ permalink: /kb/169/Q169195/
 
 ## Q169195: Mac Encarta 97: ErrMsg: One or More Files Required for Apple...
 
+{% raw %}
+
 	Article: Q169195
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -83,3 +85,5 @@ permalink: /kb/169/Q169195/
 	
 	=============================================================================
 	
+
+{% endraw %}

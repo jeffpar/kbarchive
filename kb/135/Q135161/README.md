@@ -6,6 +6,8 @@ permalink: /kb/135/Q135161/
 
 ## Q135161: Cannot Run Program Using UNC Path in Run Dialog Box
 
+{% raw %}
+
 	Article: Q135161
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135161/
 	
 	=============================================================================
 	
+
+{% endraw %}

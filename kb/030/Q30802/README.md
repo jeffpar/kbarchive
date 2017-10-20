@@ -6,6 +6,8 @@ permalink: /kb/030/Q30802/
 
 ## Q30802: MASM 5.10 OS2.DOC: OS/2 Call Summary - @DosBeep, @DosExit
 
+{% raw %}
+
 	Article: Q30802
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -24,3 +26,5 @@ permalink: /kb/030/Q30802/
 	
 	   @DosExit - Terminates a thread
 	   Parameters - ActionCode:W, ResultCode:W
+
+{% endraw %}

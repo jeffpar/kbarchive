@@ -6,6 +6,8 @@ permalink: /kb/147/Q147315/
 
 ## Q147315: FIX: Access Violation After Unloading Extension DLL
 
+{% raw %}
+
 	Article: Q147315
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2
@@ -94,3 +96,5 @@ permalink: /kb/147/Q147315/
 	
 	=============================================================================
 	
+
+{% endraw %}

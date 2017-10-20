@@ -6,6 +6,8 @@ permalink: /kb/148/Q148886/
 
 ## Q148886: Return of Arcade: Information About Joystick Support
 
+{% raw %}
+
 	Article: Q148886
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/148/Q148886/
 	
 	=============================================================================
 	
+
+{% endraw %}

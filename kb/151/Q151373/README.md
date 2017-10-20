@@ -6,6 +6,8 @@ permalink: /kb/151/Q151373/
 
 ## Q151373: XCON: DBCS Chars in Subject of Embedded Message not Converted
 
+{% raw %}
+
 	Article: Q151373
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/151/Q151373/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125495/
 
 ## Q125495: BUG: Enum in Function Template Causes C2065 Compiler Error
 
+{% raw %}
+
 	Article: Q125495
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -103,3 +105,5 @@ permalink: /kb/125/Q125495/
 	
 	=============================================================================
 	
+
+{% endraw %}

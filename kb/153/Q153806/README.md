@@ -6,6 +6,8 @@ permalink: /kb/153/Q153806/
 
 ## Q153806: MSN Accounts and Billing Questions &amp; Answers
 
+{% raw %}
+
 	Article: Q153806
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6,5.0
@@ -252,3 +254,5 @@ permalink: /kb/153/Q153806/
 	
 	=============================================================================
 	
+
+{% endraw %}

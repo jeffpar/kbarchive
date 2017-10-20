@@ -6,6 +6,8 @@ permalink: /kb/159/Q159348/
 
 ## Q159348: No Windows 95 Support for Zoomed Video Devices
 
+{% raw %}
+
 	Article: Q159348
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -64,3 +66,5 @@ permalink: /kb/159/Q159348/
 	
 	=============================================================================
 	
+
+{% endraw %}

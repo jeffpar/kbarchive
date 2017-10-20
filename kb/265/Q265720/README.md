@@ -6,6 +6,8 @@ permalink: /kb/265/Q265720/
 
 ## Q265720: EnhancedSecurityLevel of 1 Causes &quot;Stop 0x1E&quot; at Password Change
 
+{% raw %}
+
 	Article: Q265720
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6a
@@ -91,3 +93,5 @@ permalink: /kb/265/Q265720/
 	
 	=============================================================================
 	
+
+{% endraw %}

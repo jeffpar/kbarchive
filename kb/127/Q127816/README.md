@@ -6,6 +6,8 @@ permalink: /kb/127/Q127816/
 
 ## Q127816: NWCONV Ignores Prefix for Duplicate Names
 
+{% raw %}
+
 	Article: Q127816
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -73,3 +75,5 @@ permalink: /kb/127/Q127816/
 	
 	=============================================================================
 	
+
+{% endraw %}

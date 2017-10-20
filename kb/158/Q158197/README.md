@@ -6,6 +6,8 @@ permalink: /kb/158/Q158197/
 
 ## Q158197: SAMPLE: ODBCBIND.EXE RDO: Bind Parameters to Stored Procedures
 
+{% raw %}
+
 	Article: Q158197
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -114,3 +116,5 @@ permalink: /kb/158/Q158197/
 	
 	=============================================================================
 	
+
+{% endraw %}

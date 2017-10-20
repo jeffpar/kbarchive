@@ -6,6 +6,8 @@ permalink: /kb/100/Q100215/
 
 ## Q100215: Err Msg: Not Enough Memory to Run Word
 
+{% raw %}
+
 	Article: Q100215
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.51
@@ -100,3 +102,5 @@ permalink: /kb/100/Q100215/
 	
 	=============================================================================
 	
+
+{% endraw %}

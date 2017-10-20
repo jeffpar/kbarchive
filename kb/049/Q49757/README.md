@@ -6,6 +6,8 @@ permalink: /kb/049/Q49757/
 
 ## Q49757: PRB: Error U1082 When Command Line Too Long in Makefile
 
+{% raw %}
+
 	Article: Q49757
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.1,1.11,1.12,1.13,1.2,1.3,1.4; OS/2:1.01,1.11,1.12,1.21
@@ -53,3 +55,5 @@ permalink: /kb/049/Q49757/
 	
 	=============================================================================
 	
+
+{% endraw %}

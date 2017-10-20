@@ -6,6 +6,8 @@ permalink: /kb/294/Q294946/
 
 ## Q294946: Forcing New Dial-up Number Selection Or &quot;Poptimization&quot;
 
+{% raw %}
+
 	Article: Q294946
 	Product(s): The Microsoft Network
 	Version(s): 5.3,5.4,6.1
@@ -84,3 +86,5 @@ permalink: /kb/294/Q294946/
 	
 	=============================================================================
 	
+
+{% endraw %}

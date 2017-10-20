@@ -6,6 +6,8 @@ permalink: /kb/224/Q224831/
 
 ## Q224831: Tips on Upgrading from IIS 3.0 to IIS 4.0
 
+{% raw %}
+
 	Article: Q224831
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/224/Q224831/
 	
 	=============================================================================
 	
+
+{% endraw %}

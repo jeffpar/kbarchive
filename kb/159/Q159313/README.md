@@ -6,6 +6,8 @@ permalink: /kb/159/Q159313/
 
 ## Q159313: DOCERR: Incorrect Help Information on Number of Tables Open
 
+{% raw %}
+
 	Article: Q159313
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -60,3 +62,5 @@ permalink: /kb/159/Q159313/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95114/
 
 ## Q95114: Unable to Move the Save As Dialog Box When Quitting Windows
 
+{% raw %}
+
 	Article: Q95114
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/095/Q95114/
 	
 	=============================================================================
 	
+
+{% endraw %}

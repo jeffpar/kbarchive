@@ -6,6 +6,8 @@ permalink: /kb/246/Q246803/
 
 ## Q246803: STOP 0xA Error After Heavy Usage of NetFlex-3 with Compaq Driver
 
+{% raw %}
+
 	Article: Q246803
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/246/Q246803/
 	
 	=============================================================================
 	
+
+{% endraw %}

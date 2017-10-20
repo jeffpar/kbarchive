@@ -6,6 +6,8 @@ permalink: /kb/106/Q106235/
 
 ## Q106235: File Manager GP Fault on BW-NFS Network
 
+{% raw %}
+
 	Article: Q106235
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -51,3 +53,5 @@ permalink: /kb/106/Q106235/
 	
 	=============================================================================
 	
+
+{% endraw %}

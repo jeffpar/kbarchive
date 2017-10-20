@@ -6,6 +6,8 @@ permalink: /kb/153/Q153245/
 
 ## Q153245: Remote Transfer Does Not Show Last Drive
 
+{% raw %}
+
 	Article: Q153245
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -45,3 +47,5 @@ permalink: /kb/153/Q153245/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/270/Q270795/
 
 ## Q270795: ELL French: Virtual Challenge Does Not Cross Out Dates
 
+{% raw %}
+
 	Article: Q270795
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/270/Q270795/
 	
 	=============================================================================
 	
+
+{% endraw %}

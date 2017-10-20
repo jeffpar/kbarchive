@@ -6,6 +6,8 @@ permalink: /kb/135/Q135741/
 
 ## Q135741: What's New in PowerPoint for Windows 95: Slide Show
 
+{% raw %}
+
 	Article: Q135741
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -74,3 +76,5 @@ permalink: /kb/135/Q135741/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162926/
 
 ## Q162926: STOP: 0x0x0000000A After Call to GlobalAddAtom()
 
+{% raw %}
+
 	Article: Q162926
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/162/Q162926/
 	
 	=============================================================================
 	
+
+{% endraw %}

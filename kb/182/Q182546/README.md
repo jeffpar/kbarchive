@@ -6,6 +6,8 @@ permalink: /kb/182/Q182546/
 
 ## Q182546: PPT: PowerPoint Saves Year in Three-Digit Format
 
+{% raw %}
+
 	Article: Q182546
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -95,3 +97,5 @@ permalink: /kb/182/Q182546/
 	
 	=============================================================================
 	
+
+{% endraw %}

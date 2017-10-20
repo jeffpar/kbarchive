@@ -6,6 +6,8 @@ permalink: /kb/229/Q229804/
 
 ## Q229804: Service Pack Appears to Extract Font Files Only
 
+{% raw %}
+
 	Article: Q229804
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -83,3 +85,5 @@ permalink: /kb/229/Q229804/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64037/
 
 ## Q64037: ATI SX Motherboards and Windows 3.0
 
+{% raw %}
+
 	Article: Q64037
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/064/Q64037/
 	
 	=============================================================================
 	
+
+{% endraw %}

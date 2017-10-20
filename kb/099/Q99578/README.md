@@ -6,6 +6,8 @@ permalink: /kb/099/Q99578/
 
 ## Q99578: Trap Errors with NEC Powermate Global Cache and Madge
 
+{% raw %}
+
 	Article: Q99578
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/099/Q99578/
 	
 	=============================================================================
 	
+
+{% endraw %}

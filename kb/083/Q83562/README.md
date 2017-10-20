@@ -6,6 +6,8 @@ permalink: /kb/083/Q83562/
 
 ## Q83562: SMARTDrive Version 4.0 and Syquest Removable Drives
 
+{% raw %}
+
 	Article: Q83562
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/083/Q83562/
 	
 	=============================================================================
 	
+
+{% endraw %}

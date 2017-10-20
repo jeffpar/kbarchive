@@ -6,6 +6,8 @@ permalink: /kb/181/Q181451/
 
 ## Q181451: XADM: Setting Diagnostics Logging Levels in the Registry
 
+{% raw %}
+
 	Article: Q181451
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/181/Q181451/
 	
 	=============================================================================
 	
+
+{% endraw %}

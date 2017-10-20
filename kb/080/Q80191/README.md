@@ -6,6 +6,8 @@ permalink: /kb/080/Q80191/
 
 ## Q80191: PC OS2: Err Msg: Mail Database Cannot Be Reached
 
+{% raw %}
+
 	Article: Q80191
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
@@ -56,3 +58,5 @@ permalink: /kb/080/Q80191/
 	
 	=============================================================================
 	
+
+{% endraw %}

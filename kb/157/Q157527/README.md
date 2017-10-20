@@ -6,6 +6,8 @@ permalink: /kb/157/Q157527/
 
 ## Q157527: INFO: New Visual SourceSafe Commands and Functionality
 
+{% raw %}
+
 	Article: Q157527
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -174,3 +176,5 @@ permalink: /kb/157/Q157527/
 	
 	=============================================================================
 	
+
+{% endraw %}

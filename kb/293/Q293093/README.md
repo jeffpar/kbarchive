@@ -6,6 +6,8 @@ permalink: /kb/293/Q293093/
 
 ## Q293093: Browser Causes Computer to Stop Responding
 
+{% raw %}
+
 	Article: Q293093
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -80,3 +82,5 @@ permalink: /kb/293/Q293093/
 	
 	=============================================================================
 	
+
+{% endraw %}

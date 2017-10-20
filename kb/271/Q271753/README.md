@@ -6,6 +6,8 @@ permalink: /kb/271/Q271753/
 
 ## Q271753: Err Msg: Game Caused an Invalid Page Fault In Module Winmm.dll
 
+{% raw %}
+
 	Article: Q271753
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -176,3 +178,5 @@ permalink: /kb/271/Q271753/
 	
 	=============================================================================
 	
+
+{% endraw %}

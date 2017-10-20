@@ -6,6 +6,8 @@ permalink: /kb/257/Q257493/
 
 ## Q257493: Troubleshooting System Error 12 After Installing Q243222 Hotfix
 
+{% raw %}
+
 	Article: Q257493
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0; :4.0
@@ -64,3 +66,5 @@ permalink: /kb/257/Q257493/
 	
 	=============================================================================
 	
+
+{% endraw %}

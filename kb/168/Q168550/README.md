@@ -6,6 +6,8 @@ permalink: /kb/168/Q168550/
 
 ## Q168550: XFOR: How to Exclude OLE Attachments from Migration
 
+{% raw %}
+
 	Article: Q168550
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/168/Q168550/
 	
 	=============================================================================
 	
+
+{% endraw %}

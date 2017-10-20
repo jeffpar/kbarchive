@@ -6,6 +6,8 @@ permalink: /kb/131/Q131205/
 
 ## Q131205: In Case of IPX Problems Get Latest Service Pack
 
+{% raw %}
+
 	Article: Q131205
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -39,3 +41,5 @@ permalink: /kb/131/Q131205/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259503/
 
 ## Q259503: XADM: Event ID 292 When Performing a Directory Import
 
+{% raw %}
+
 	Article: Q259503
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/259/Q259503/
 	
 	=============================================================================
 	
+
+{% endraw %}

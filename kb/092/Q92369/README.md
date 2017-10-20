@@ -6,6 +6,8 @@ permalink: /kb/092/Q92369/
 
 ## Q92369: PC Gen: Novell NetWare and NCP Calls -- General Information
 
+{% raw %}
+
 	Article: Q92369
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -89,3 +91,5 @@ permalink: /kb/092/Q92369/
 	
 	=============================================================================
 	
+
+{% endraw %}

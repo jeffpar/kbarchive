@@ -6,6 +6,8 @@ permalink: /kb/263/Q263042/
 
 ## Q263042: How to remove the MSN 5.x icon from the Internet Explorer window
 
+{% raw %}
+
 	Article: Q263042
 	Product(s): The Microsoft Network
 	Version(s): 2000,5,5.0,5.1,5.2,5.3,5.5,95,98,98 Second Edition
@@ -85,3 +87,5 @@ permalink: /kb/263/Q263042/
 	
 	=============================================================================
 	
+
+{% endraw %}

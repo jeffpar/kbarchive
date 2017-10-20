@@ -6,6 +6,8 @@ permalink: /kb/262/Q262298/
 
 ## Q262298: SMS: CCM Tries to Install Client on SAMBA Servers
 
+{% raw %}
+
 	Article: Q262298
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -111,3 +113,5 @@ permalink: /kb/262/Q262298/
 	
 	=============================================================================
 	
+
+{% endraw %}

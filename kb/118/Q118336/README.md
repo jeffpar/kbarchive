@@ -6,6 +6,8 @@ permalink: /kb/118/Q118336/
 
 ## Q118336: Mac Encarta 94: Flag Flashes Momentarily When Being Copied
 
+{% raw %}
+
 	Article: Q118336
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -43,3 +45,5 @@ permalink: /kb/118/Q118336/
 	
 	=============================================================================
 	
+
+{% endraw %}

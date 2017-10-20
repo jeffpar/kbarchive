@@ -6,6 +6,8 @@ permalink: /kb/090/Q90198/
 
 ## Q90198: WFWG Setup Updates MSCDEX and adds LANMAN10.386 for CD-ROM
 
+{% raw %}
+
 	Article: Q90198
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -48,3 +50,5 @@ permalink: /kb/090/Q90198/
 	
 	=============================================================================
 	
+
+{% endraw %}

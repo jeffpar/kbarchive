@@ -6,6 +6,8 @@ permalink: /kb/132/Q132643/
 
 ## Q132643: Cannot Adjust MIDI Volume on AWE32 with Creative Mixer
 
+{% raw %}
+
 	Article: Q132643
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/132/Q132643/
 	
 	=============================================================================
 	
+
+{% endraw %}

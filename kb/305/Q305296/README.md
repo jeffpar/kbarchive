@@ -6,6 +6,8 @@ permalink: /kb/305/Q305296/
 
 ## Q305296: ENC2003: Club Encarta Updates Available Until October 31, 2003
 
+{% raw %}
+
 	Article: Q305296
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -50,3 +52,5 @@ permalink: /kb/305/Q305296/
 	
 	=============================================================================
 	
+
+{% endraw %}

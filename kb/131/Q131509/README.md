@@ -6,6 +6,8 @@ permalink: /kb/131/Q131509/
 
 ## Q131509: PC DirSync: Err Msg: No Tasks from Requestor:...
 
+{% raw %}
+
 	Article: Q131509
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -51,3 +53,5 @@ permalink: /kb/131/Q131509/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157219/
 
 ## Q157219: INETINFO Access Violation When Using SNA Server APPC
 
+{% raw %}
+
 	Article: Q157219
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1; winnt:2.0,4.0
@@ -93,3 +95,5 @@ permalink: /kb/157/Q157219/
 	
 	=============================================================================
 	
+
+{% endraw %}

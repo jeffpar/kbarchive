@@ -6,6 +6,8 @@ permalink: /kb/170/Q170671/
 
 ## Q170671: Microgate SDLC Link Service Must be Installed as External
 
+{% raw %}
+
 	Article: Q170671
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -54,3 +56,5 @@ permalink: /kb/170/Q170671/
 	
 	=============================================================================
 	
+
+{% endraw %}

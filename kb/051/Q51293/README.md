@@ -6,6 +6,8 @@ permalink: /kb/051/Q51293/
 
 ## Q51293: BASIC Program to Tell If Expanded Memory Driver Is Resident
 
+{% raw %}
+
 	Article: Q51293
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -170,3 +172,5 @@ permalink: /kb/051/Q51293/
 	END IF
 	
 	END
+
+{% endraw %}

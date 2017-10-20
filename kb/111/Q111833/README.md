@@ -6,6 +6,8 @@ permalink: /kb/111/Q111833/
 
 ## Q111833: ALT+7 Produces ASCII Character 149 Instead of a Beep
 
+{% raw %}
+
 	Article: Q111833
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -50,3 +52,5 @@ permalink: /kb/111/Q111833/
 	
 	=============================================================================
 	
+
+{% endraw %}

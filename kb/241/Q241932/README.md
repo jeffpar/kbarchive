@@ -6,6 +6,8 @@ permalink: /kb/241/Q241932/
 
 ## Q241932: PRB: Run-Time Error 13 While Running VB DHTML Applications
 
+{% raw %}
+
 	Article: Q241932
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5,6.0
@@ -99,3 +101,5 @@ permalink: /kb/241/Q241932/
 	
 	=============================================================================
 	
+
+{% endraw %}

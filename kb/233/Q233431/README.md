@@ -6,6 +6,8 @@ permalink: /kb/233/Q233431/
 
 ## Q233431: Business Planner: Unexpected Text Is Displayed in ToolTip
 
+{% raw %}
+
 	Article: Q233431
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -44,3 +46,5 @@ permalink: /kb/233/Q233431/
 	
 	=============================================================================
 	
+
+{% endraw %}

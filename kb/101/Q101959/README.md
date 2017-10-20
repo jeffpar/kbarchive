@@ -6,6 +6,8 @@ permalink: /kb/101/Q101959/
 
 ## Q101959: NETX.EXE and LOADHIGH in Remote Boot Configuration
 
+{% raw %}
+
 	Article: Q101959
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -68,3 +70,5 @@ permalink: /kb/101/Q101959/
 	
 	=============================================================================
 	
+
+{% endraw %}

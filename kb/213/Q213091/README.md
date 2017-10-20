@@ -6,6 +6,8 @@ permalink: /kb/213/Q213091/
 
 ## Q213091: SMS: Connection Failure Gives Wrong Software Metering Msg
 
+{% raw %}
+
 	Article: Q213091
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/213/Q213091/
 	
 	=============================================================================
 	
+
+{% endraw %}

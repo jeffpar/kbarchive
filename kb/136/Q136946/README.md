@@ -6,6 +6,8 @@ permalink: /kb/136/Q136946/
 
 ## Q136946: FIX: No RightClick Event For ToolBars, Containers, or Controls
 
+{% raw %}
+
 	Article: Q136946
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136946/
 	
 	=============================================================================
 	
+
+{% endraw %}

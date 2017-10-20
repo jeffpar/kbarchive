@@ -6,6 +6,8 @@ permalink: /kb/181/Q181999/
 
 ## Q181999: XADM: Err Msg Attempting to Uninstall &quot;Entry Point Not Found&quot;
 
+{% raw %}
+
 	Article: Q181999
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -85,3 +87,5 @@ permalink: /kb/181/Q181999/
 	
 	=============================================================================
 	
+
+{% endraw %}

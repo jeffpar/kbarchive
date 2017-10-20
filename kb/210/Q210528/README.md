@@ -6,6 +6,8 @@ permalink: /kb/210/Q210528/
 
 ## Q210528: Golf 99: Incorrect Par Rating Stated in Flyby Commentary Script
 
+{% raw %}
+
 	Article: Q210528
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/210/Q210528/
 	
 	=============================================================================
 	
+
+{% endraw %}

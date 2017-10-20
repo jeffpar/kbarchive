@@ -6,6 +6,8 @@ permalink: /kb/140/Q140363/
 
 ## Q140363: FIX: Visual SourceSafe Slows as It Increases Processor Usage
 
+{% raw %}
+
 	Article: Q140363
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -57,3 +59,5 @@ permalink: /kb/140/Q140363/
 	
 	=============================================================================
 	
+
+{% endraw %}

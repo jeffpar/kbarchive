@@ -6,6 +6,8 @@ permalink: /kb/071/Q71812/
 
 ## Q71812: UNFORMAT Does Not Work on Disk Manager Partition
 
+{% raw %}
+
 	Article: Q71812
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -56,3 +58,5 @@ permalink: /kb/071/Q71812/
 	
 	=============================================================================
 	
+
+{% endraw %}

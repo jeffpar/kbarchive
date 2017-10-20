@@ -6,6 +6,8 @@ permalink: /kb/039/Q39866/
 
 ## Q39866: Quick Library Routines Must Be Compiled in Same Version as QB
 
+{% raw %}
+
 	Article: Q39866
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -27,3 +29,5 @@ permalink: /kb/039/Q39866/
 	Versions 4.00, 4.00b, and 4.50, to the QB.EXE environment of
 	Microsoft BASIC Compiler Versions 6.00 and 6.00b, and to the QBX.EXE
 	environment of the Microsoft BASIC PDS Version 7.00.
+
+{% endraw %}

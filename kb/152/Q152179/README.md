@@ -6,6 +6,8 @@ permalink: /kb/152/Q152179/
 
 ## Q152179: Explorapedia: Video Not Available, Cannot Find 'vids:iv32'
 
+{% raw %}
+
 	Article: Q152179
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -174,3 +176,5 @@ permalink: /kb/152/Q152179/
 	
 	=============================================================================
 	
+
+{% endraw %}

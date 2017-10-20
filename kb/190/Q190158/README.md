@@ -6,6 +6,8 @@ permalink: /kb/190/Q190158/
 
 ## Q190158: Reset vs. Logoff in Terminal Server Administration Program
 
+{% raw %}
+
 	Article: Q190158
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -42,3 +44,5 @@ permalink: /kb/190/Q190158/
 	
 	=============================================================================
 	
+
+{% endraw %}

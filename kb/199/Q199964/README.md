@@ -6,6 +6,8 @@ permalink: /kb/199/Q199964/
 
 ## Q199964: XCLN: Err Msg: The Delegate Page Is Not Available. Unable to Acc
 
+{% raw %}
+
 	Article: Q199964
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:95,98
@@ -65,3 +67,5 @@ permalink: /kb/199/Q199964/
 	
 	=============================================================================
 	
+
+{% endraw %}

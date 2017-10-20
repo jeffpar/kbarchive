@@ -6,6 +6,8 @@ permalink: /kb/043/Q43175/
 
 ## Q43175: Bad Code Produced for specific source when optimizations used
 
+{% raw %}
+
 	Article: Q43175
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -48,3 +50,5 @@ permalink: /kb/043/Q43175/
 	}
 	
 	                  Laguna Beach, CA 92651
+
+{% endraw %}

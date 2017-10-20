@@ -6,6 +6,8 @@ permalink: /kb/323/Q323147/
 
 ## Q323147: Applied Microsoft .NET Framework Programming Comments and Correc
 
+{% raw %}
+
 	Article: Q323147
 	Product(s): Microsoft Press
 	Version(s): 
@@ -1270,3 +1272,5 @@ permalink: /kb/323/Q323147/
 	
 	=============================================================================
 	
+
+{% endraw %}

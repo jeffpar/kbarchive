@@ -6,6 +6,8 @@ permalink: /kb/174/Q174317/
 
 ## Q174317: WD97: Incorrect Characters Displayed in Multilingual Web Page
 
+{% raw %}
+
 	Article: Q174317
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/174/Q174317/
 	
 	=============================================================================
 	
+
+{% endraw %}

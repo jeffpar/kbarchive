@@ -6,6 +6,8 @@ permalink: /kb/274/Q274229/
 
 ## Q274229: XADM: How to Copy Exchange Attributes from One AD to Another
 
+{% raw %}
+
 	Article: Q274229
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -106,3 +108,5 @@ permalink: /kb/274/Q274229/
 	
 	=============================================================================
 	
+
+{% endraw %}

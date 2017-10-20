@@ -6,6 +6,8 @@ permalink: /kb/232/Q232271/
 
 ## Q232271: How to Optimize Windows NT Server Using the Registry
 
+{% raw %}
+
 	Article: Q232271
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -106,3 +108,5 @@ permalink: /kb/232/Q232271/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163180/
 
 ## Q163180: Flight Simulator 95: Installing Scenery
 
+{% raw %}
+
 	Article: Q163180
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -272,3 +274,5 @@ permalink: /kb/163/Q163180/
 	
 	=============================================================================
 	
+
+{% endraw %}

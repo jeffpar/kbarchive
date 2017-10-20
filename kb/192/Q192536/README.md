@@ -6,6 +6,8 @@ permalink: /kb/192/Q192536/
 
 ## Q192536: BUG: Msvcrt.dll Does Not Initialize Global Objects
 
+{% raw %}
+
 	Article: Q192536
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:
@@ -84,3 +86,5 @@ permalink: /kb/192/Q192536/
 	
 	=============================================================================
 	
+
+{% endraw %}

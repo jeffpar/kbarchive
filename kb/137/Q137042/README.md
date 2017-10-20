@@ -6,6 +6,8 @@ permalink: /kb/137/Q137042/
 
 ## Q137042: SMTP: How the Gateway Uses Memory
 
+{% raw %}
+
 	Article: Q137042
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -92,3 +94,5 @@ permalink: /kb/137/Q137042/
 	
 	=============================================================================
 	
+
+{% endraw %}

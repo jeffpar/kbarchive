@@ -6,6 +6,8 @@ permalink: /kb/091/Q91666/
 
 ## Q91666: File Manager: Format Cannot Make Disk Label 11 Characters
 
+{% raw %}
+
 	Article: Q91666
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/091/Q91666/
 	
 	=============================================================================
 	
+
+{% endraw %}

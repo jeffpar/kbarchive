@@ -6,6 +6,8 @@ permalink: /kb/069/Q69379/
 
 ## Q69379: COMPAQ CDROM Adapters and Windows 3.00
 
+{% raw %}
+
 	Article: Q69379
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/069/Q69379/
 	
 	=============================================================================
 	
+
+{% endraw %}

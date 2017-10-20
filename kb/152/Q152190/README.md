@@ -6,6 +6,8 @@ permalink: /kb/152/Q152190/
 
 ## Q152190: MSB Earth: Overview of Magic School Bus Explores the Earth
 
+{% raw %}
+
 	Article: Q152190
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/152/Q152190/
 	
 	=============================================================================
 	
+
+{% endraw %}

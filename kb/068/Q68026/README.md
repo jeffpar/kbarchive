@@ -6,6 +6,8 @@ permalink: /kb/068/Q68026/
 
 ## Q68026: Unexpected Results Using DOS TYPE to Display RANDOM File
 
+{% raw %}
+
 	Article: Q68026
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -181,3 +183,5 @@ permalink: /kb/068/Q68026/
 	
 	Note that even though DOS's TYPE command did not display all of your
 	file, you can still GET all the information in the file.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99999/
 
 ## Q99999: INFO: Background Processing in an MFC Application
 
+{% raw %}
+
 	Article: Q99999
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -95,3 +97,5 @@ permalink: /kb/099/Q99999/
 	
 	=============================================================================
 	
+
+{% endraw %}

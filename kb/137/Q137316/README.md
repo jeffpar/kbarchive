@@ -6,6 +6,8 @@ permalink: /kb/137/Q137316/
 
 ## Q137316: PRB: SET ALTERNATE Adds Extra Spaces to the End of Each Line
 
+{% raw %}
+
 	Article: Q137316
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -119,3 +121,5 @@ permalink: /kb/137/Q137316/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75470/
 
 ## Q75470: Incorrect Recommendation for BIOS Upgrade for Always SCSI
 
+{% raw %}
+
 	Article: Q75470
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -56,3 +58,5 @@ permalink: /kb/075/Q75470/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169020/
 
 ## Q169020: 32-bit Help Fails to Start When 16-bit Help Is Running
 
+{% raw %}
+
 	Article: Q169020
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/169/Q169020/
 	
 	=============================================================================
 	
+
+{% endraw %}

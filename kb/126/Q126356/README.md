@@ -6,6 +6,8 @@ permalink: /kb/126/Q126356/
 
 ## Q126356: GSI IDE Controller Forces Real-Mode Drivers
 
+{% raw %}
+
 	Article: Q126356
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -83,3 +85,5 @@ permalink: /kb/126/Q126356/
 	
 	=============================================================================
 	
+
+{% endraw %}

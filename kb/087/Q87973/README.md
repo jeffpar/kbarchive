@@ -6,6 +6,8 @@ permalink: /kb/087/Q87973/
 
 ## Q87973: ADMIN.WRI from WinLogin 1.0 Part B
 
+{% raw %}
+
 	Article: Q87973
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,3.1,3.11
@@ -354,3 +356,5 @@ permalink: /kb/087/Q87973/
 	
 	=============================================================================
 	
+
+{% endraw %}

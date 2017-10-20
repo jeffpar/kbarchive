@@ -6,6 +6,8 @@ permalink: /kb/146/Q146917/
 
 ## Q146917: Scenes 1.0: Impressionists Disk 2 Contents
 
+{% raw %}
+
 	Article: Q146917
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -98,3 +100,5 @@ permalink: /kb/146/Q146917/
 	
 	=============================================================================
 	
+
+{% endraw %}

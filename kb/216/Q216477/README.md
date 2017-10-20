@@ -6,6 +6,8 @@ permalink: /kb/216/Q216477/
 
 ## Q216477: Environment Path Too Long Causes Access Violation in Winlogon
 
+{% raw %}
+
 	Article: Q216477
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/216/Q216477/
 	
 	=============================================================================
 	
+
+{% endraw %}

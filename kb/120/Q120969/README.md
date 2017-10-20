@@ -6,6 +6,8 @@ permalink: /kb/120/Q120969/
 
 ## Q120969: Telnet Does Not Provide Character Mapping
 
+{% raw %}
+
 	Article: Q120969
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/120/Q120969/
 	
 	=============================================================================
 	
+
+{% endraw %}

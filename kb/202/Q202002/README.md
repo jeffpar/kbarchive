@@ -6,6 +6,8 @@ permalink: /kb/202/Q202002/
 
 ## Q202002: SMS: PC BIOS Properties Should Be Updated for New Systems
 
+{% raw %}
+
 	Article: Q202002
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -51,3 +53,5 @@ permalink: /kb/202/Q202002/
 	
 	=============================================================================
 	
+
+{% endraw %}

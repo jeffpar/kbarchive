@@ -6,6 +6,8 @@ permalink: /kb/136/Q136746/
 
 ## Q136746: FilterKeys Notification Message
 
+{% raw %}
+
 	Article: Q136746
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -74,3 +76,5 @@ permalink: /kb/136/Q136746/
 	
 	=============================================================================
 	
+
+{% endraw %}

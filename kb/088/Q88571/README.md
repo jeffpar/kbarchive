@@ -6,6 +6,8 @@ permalink: /kb/088/Q88571/
 
 ## Q88571: DTC 3290 SCSI Controller and Windows 3.1
 
+{% raw %}
+
 	Article: Q88571
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/088/Q88571/
 	
 	=============================================================================
 	
+
+{% endraw %}

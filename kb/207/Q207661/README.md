@@ -6,6 +6,8 @@ permalink: /kb/207/Q207661/
 
 ## Q207661: SMS Installer Watch Doesn't Support Command Line Arguments
 
+{% raw %}
+
 	Article: Q207661
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/207/Q207661/
 	
 	=============================================================================
 	
+
+{% endraw %}

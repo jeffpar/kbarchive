@@ -6,6 +6,8 @@ permalink: /kb/047/Q47347/
 
 ## Q47347: The Number of SUBprograms Per Module Affects .EXE Size
 
+{% raw %}
+
 	Article: Q47347
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -114,3 +116,5 @@ permalink: /kb/047/Q47347/
 	together. SUBprograms that are not often called together in the same
 	program can be placed into separate modules. The separate modules can
 	be placed into a library for linking convenience.
+
+{% endraw %}

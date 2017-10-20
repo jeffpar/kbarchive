@@ -6,6 +6,8 @@ permalink: /kb/231/Q231751/
 
 ## Q231751: XADM:Can't Renew Signing Key After Applying SP2 for Exchange 5.5
 
+{% raw %}
+
 	Article: Q231751
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -85,3 +87,5 @@ permalink: /kb/231/Q231751/
 	
 	=============================================================================
 	
+
+{% endraw %}

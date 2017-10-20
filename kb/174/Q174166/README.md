@@ -6,6 +6,8 @@ permalink: /kb/174/Q174166/
 
 ## Q174166: XFOR: Exchange Connectivity Log Browser Shows Unknown Entries
 
+{% raw %}
+
 	Article: Q174166
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/174/Q174166/
 	
 	=============================================================================
 	
+
+{% endraw %}

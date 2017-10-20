@@ -6,6 +6,8 @@ permalink: /kb/076/Q76860/
 
 ## Q76860: Removing Defined Application Shortcut Key Assignment from PIF
 
+{% raw %}
+
 	Article: Q76860
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/076/Q76860/
 	
 	=============================================================================
 	
+
+{% endraw %}

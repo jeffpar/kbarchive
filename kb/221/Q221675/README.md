@@ -6,6 +6,8 @@ permalink: /kb/221/Q221675/
 
 ## Q221675: FIX: Problem Converting FP2.6 Screens With Large Labels &amp; @SAYs
 
+{% raw %}
+
 	Article: Q221675
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -120,3 +122,5 @@ permalink: /kb/221/Q221675/
 	
 	=============================================================================
 	
+
+{% endraw %}

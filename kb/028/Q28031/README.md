@@ -6,6 +6,8 @@ permalink: /kb/028/Q28031/
 
 ## Q28031: QB Fast-Load Format Source Code Cannot Be Used in MS CodeView
 
+{% raw %}
+
 	Article: Q28031
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -34,3 +36,5 @@ permalink: /kb/028/Q28031/
 	This information applies to QuickBASIC Versions 4.00, 4.00b, 4.50, and
 	the QuickBASIC which comes with the BASIC Compiler Version 6.00 or
 	6.00b for MS-DOS.
+
+{% endraw %}

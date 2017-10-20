@@ -6,6 +6,8 @@ permalink: /kb/088/Q88737/
 
 ## Q88737: Text Does Not Appear with Picture Publisher 3.0
 
+{% raw %}
+
 	Article: Q88737
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/088/Q88737/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112207/
 
 ## Q112207: PC DOS: Command-Line Parameters for MSCAPT.EXE
 
+{% raw %}
+
 	Article: Q112207
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -52,3 +54,5 @@ permalink: /kb/112/Q112207/
 	
 	=============================================================================
 	
+
+{% endraw %}

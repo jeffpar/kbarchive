@@ -6,6 +6,8 @@ permalink: /kb/083/Q83384/
 
 ## Q83384: Registration Cards Not Included with Windows 3.1 Upgrade
 
+{% raw %}
+
 	Article: Q83384
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/083/Q83384/
 	
 	=============================================================================
 	
+
+{% endraw %}

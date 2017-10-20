@@ -6,6 +6,8 @@ permalink: /kb/150/Q150492/
 
 ## Q150492: Julia Child: Manual Installation Instructions for Windows 3.x
 
+{% raw %}
+
 	Article: Q150492
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,3.1,3.11
@@ -172,3 +174,5 @@ permalink: /kb/150/Q150492/
 	
 	=============================================================================
 	
+
+{% endraw %}

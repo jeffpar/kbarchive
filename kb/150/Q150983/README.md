@@ -6,6 +6,8 @@ permalink: /kb/150/Q150983/
 
 ## Q150983: PPT7: Graph Patterns Not Printed in PowerPoint Presentation
 
+{% raw %}
+
 	Article: Q150983
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:5.0,7.0
@@ -104,3 +106,5 @@ permalink: /kb/150/Q150983/
 	
 	=============================================================================
 	
+
+{% endraw %}

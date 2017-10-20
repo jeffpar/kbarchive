@@ -6,6 +6,8 @@ permalink: /kb/248/Q248477/
 
 ## Q248477: FIX: Deadlock Using STL Map or Set in Multithreaded Application
 
+{% raw %}
+
 	Article: Q248477
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -75,3 +77,5 @@ permalink: /kb/248/Q248477/
 	
 	=============================================================================
 	
+
+{% endraw %}

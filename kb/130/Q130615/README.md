@@ -6,6 +6,8 @@ permalink: /kb/130/Q130615/
 
 ## Q130615: PRB: Unwanted Rebuilds Occur When Using NMAKE or Visual C++
 
+{% raw %}
+
 	Article: Q130615
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,4.0
@@ -133,3 +135,5 @@ permalink: /kb/130/Q130615/
 	
 	=============================================================================
 	
+
+{% endraw %}

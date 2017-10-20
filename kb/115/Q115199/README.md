@@ -6,6 +6,8 @@ permalink: /kb/115/Q115199/
 
 ## Q115199: Too Many Files in Root Directory Generates DriveSpace Err Msgs
 
+{% raw %}
+
 	Article: Q115199
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -72,3 +74,5 @@ permalink: /kb/115/Q115199/
 	
 	=============================================================================
 	
+
+{% endraw %}

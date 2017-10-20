@@ -6,6 +6,8 @@ permalink: /kb/179/Q179256/
 
 ## Q179256: WD97: Word Mail Merge Hangs Using Access Parameter Query
 
+{% raw %}
+
 	Article: Q179256
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/179/Q179256/
 	
 	=============================================================================
 	
+
+{% endraw %}

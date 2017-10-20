@@ -6,6 +6,8 @@ permalink: /kb/274/Q274658/
 
 ## Q274658: Combat Flight Simulator 2: Documentation Errors in Pilot Manual
 
+{% raw %}
+
 	Article: Q274658
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -106,3 +108,5 @@ permalink: /kb/274/Q274658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174635/
 
 ## Q174635: FIX: _variant_t::operator IUnknown&#42;() Fails to AddRef Interface
 
+{% raw %}
+
 	Article: Q174635
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -95,3 +97,5 @@ permalink: /kb/174/Q174635/
 	
 	=============================================================================
 	
+
+{% endraw %}

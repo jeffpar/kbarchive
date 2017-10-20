@@ -6,6 +6,8 @@ permalink: /kb/133/Q133719/
 
 ## Q133719: PC DirSync: MaxLanMailSize Does Not Apply to Dir-Sync Messages
 
+{% raw %}
+
 	Article: Q133719
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -63,3 +65,5 @@ permalink: /kb/133/Q133719/
 	
 	=============================================================================
 	
+
+{% endraw %}

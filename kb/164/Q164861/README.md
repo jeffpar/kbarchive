@@ -6,6 +6,8 @@ permalink: /kb/164/Q164861/
 
 ## Q164861: XFOR: Cannot Configure French AT Server as Directory Requester
 
+{% raw %}
+
 	Article: Q164861
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/164/Q164861/
 	
 	=============================================================================
 	
+
+{% endraw %}

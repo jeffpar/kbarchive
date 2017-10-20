@@ -6,6 +6,8 @@ permalink: /kb/158/Q158413/
 
 ## Q158413: AutoCorrect Does Not Automatically Scroll Correction List
 
+{% raw %}
+
 	Article: Q158413
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -49,3 +51,5 @@ permalink: /kb/158/Q158413/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164601/
 
 ## Q164601: How to Enable PPTP Port for Network Monitor
 
+{% raw %}
+
 	Article: Q164601
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 1.2
@@ -60,3 +62,5 @@ permalink: /kb/164/Q164601/
 	
 	=============================================================================
 	
+
+{% endraw %}

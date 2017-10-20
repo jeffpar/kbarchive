@@ -6,6 +6,8 @@ permalink: /kb/121/Q121256/
 
 ## Q121256: PC MMTA: Err Msg: Drive Connection Failure. Unable...
 
+{% raw %}
+
 	Article: Q121256
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -49,3 +51,5 @@ permalink: /kb/121/Q121256/
 	
 	=============================================================================
 	
+
+{% endraw %}

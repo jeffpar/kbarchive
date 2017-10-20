@@ -6,6 +6,8 @@ permalink: /kb/245/Q245010/
 
 ## Q245010: Print Jobs Sent from LPR Print Server Are Not Printed
 
+{% raw %}
+
 	Article: Q245010
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/245/Q245010/
 	
 	=============================================================================
 	
+
+{% endraw %}

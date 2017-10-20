@@ -6,6 +6,8 @@ permalink: /kb/022/Q22320/
 
 ## Q22320: INFO: NAN &amp; INF Internal Representation Specific to Coprocessor
 
+{% raw %}
+
 	Article: Q22320
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:6.0,6.00a,6.00ax,7.0,7.00a; OS/2:6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,
@@ -42,3 +44,5 @@ permalink: /kb/022/Q22320/
 	
 	=============================================================================
 	
+
+{% endraw %}

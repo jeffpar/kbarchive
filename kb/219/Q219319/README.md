@@ -6,6 +6,8 @@ permalink: /kb/219/Q219319/
 
 ## Q219319: STOP in Winlogon.exe When Printing and Running Screen Saver
 
+{% raw %}
+
 	Article: Q219319
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/219/Q219319/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173934/
 
 ## Q173934: WD97: No Outlook Address Book File to Open on Hard Disk Drive
 
+{% raw %}
+
 	Article: Q173934
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/173/Q173934/
 	
 	=============================================================================
 	
+
+{% endraw %}

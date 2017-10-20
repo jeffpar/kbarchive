@@ -6,6 +6,8 @@ permalink: /kb/134/Q134534/
 
 ## Q134534: Mouse Pointer Is Jerky and Multimedia Sound Stutters
 
+{% raw %}
+
 	Article: Q134534
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/134/Q134534/
 	
 	=============================================================================
 	
+
+{% endraw %}

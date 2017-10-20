@@ -6,6 +6,8 @@ permalink: /kb/102/Q102367/
 
 ## Q102367: BUG: CXX0030 Error Using Enumerated Type in Class
 
+{% raw %}
+
 	Article: Q102367
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.05,4.1; WINDOWS:1.0
@@ -92,3 +94,5 @@ permalink: /kb/102/Q102367/
 	
 	=============================================================================
 	
+
+{% endraw %}

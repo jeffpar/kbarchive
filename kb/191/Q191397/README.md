@@ -6,6 +6,8 @@ permalink: /kb/191/Q191397/
 
 ## Q191397: XCON: During DRAS Call, Server Unavailable on the Local Network
 
+{% raw %}
+
 	Article: Q191397
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/191/Q191397/
 	
 	=============================================================================
 	
+
+{% endraw %}

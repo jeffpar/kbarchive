@@ -6,6 +6,8 @@ permalink: /kb/138/Q138776/
 
 ## Q138776: How to Put ? Output from a Form on the Desktop
 
+{% raw %}
+
 	Article: Q138776
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138776/
 	
 	=============================================================================
 	
+
+{% endraw %}

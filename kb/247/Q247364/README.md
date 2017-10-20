@@ -6,6 +6,8 @@ permalink: /kb/247/Q247364/
 
 ## Q247364: IIS Sample ADSI Script to Create FTP Virtual Servers
 
+{% raw %}
+
 	Article: Q247364
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -335,3 +337,5 @@ permalink: /kb/247/Q247364/
 	
 	=============================================================================
 	
+
+{% endraw %}

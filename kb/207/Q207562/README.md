@@ -6,6 +6,8 @@ permalink: /kb/207/Q207562/
 
 ## Q207562: HOWTO: Delete Tables from a Windows CE Device from VBCE or eVB
 
+{% raw %}
+
 	Article: Q207562
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -129,3 +131,5 @@ permalink: /kb/207/Q207562/
 	
 	=============================================================================
 	
+
+{% endraw %}

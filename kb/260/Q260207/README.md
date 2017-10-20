@@ -6,6 +6,8 @@ permalink: /kb/260/Q260207/
 
 ## Q260207: Partitions Mounted to an NTFS Folder Are Not Indexed
 
+{% raw %}
+
 	Article: Q260207
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -54,3 +56,5 @@ permalink: /kb/260/Q260207/
 	
 	=============================================================================
 	
+
+{% endraw %}

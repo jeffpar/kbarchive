@@ -6,6 +6,8 @@ permalink: /kb/108/Q108078/
 
 ## Q108078: Dr. Watson Removed in Windows for Workgroups 3.11 Setup
 
+{% raw %}
+
 	Article: Q108078
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -40,3 +42,5 @@ permalink: /kb/108/Q108078/
 	
 	=============================================================================
 	
+
+{% endraw %}

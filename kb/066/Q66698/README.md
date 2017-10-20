@@ -6,6 +6,8 @@ permalink: /kb/066/Q66698/
 
 ## Q66698: FIX: L1089 Error, Response Filename Length &gt; 32 Characters
 
+{% raw %}
+
 	Article: Q66698
 	Product(s): Microsoft Programming Utilities
 	Version(s): 5.01.21,5.03,5.05
@@ -57,3 +59,5 @@ permalink: /kb/066/Q66698/
 	
 	=============================================================================
 	
+
+{% endraw %}

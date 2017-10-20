@@ -6,6 +6,8 @@ permalink: /kb/134/Q134582/
 
 ## Q134582: Video Greeting Err Msg: Video for Windows Not Installed
 
+{% raw %}
+
 	Article: Q134582
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134582/
 	
 	=============================================================================
 	
+
+{% endraw %}

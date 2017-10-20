@@ -6,6 +6,8 @@ permalink: /kb/196/Q196401/
 
 ## Q196401: XADM: Mbclean Does Not Run Against Outlook Folders
 
+{% raw %}
+
 	Article: Q196401
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/196/Q196401/
 	
 	=============================================================================
 	
+
+{% endraw %}

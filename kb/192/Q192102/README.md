@@ -6,6 +6,8 @@ permalink: /kb/192/Q192102/
 
 ## Q192102: FIX: Resource/Memory Leaks When Using MFC in a Static Library
 
+{% raw %}
+
 	Article: Q192102
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0
@@ -134,3 +136,5 @@ permalink: /kb/192/Q192102/
 	
 	=============================================================================
 	
+
+{% endraw %}

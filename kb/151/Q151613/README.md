@@ -6,6 +6,8 @@ permalink: /kb/151/Q151613/
 
 ## Q151613: XCLN: Exchange Client on OS/2 Support Policy
 
+{% raw %}
+
 	Article: Q151613
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -52,3 +54,5 @@ permalink: /kb/151/Q151613/
 	
 	=============================================================================
 	
+
+{% endraw %}

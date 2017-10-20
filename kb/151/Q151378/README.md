@@ -6,6 +6,8 @@ permalink: /kb/151/Q151378/
 
 ## Q151378: PRB: CStatic::SetBitmap Doesn't Display Bitmap on Win NT 3.51
 
+{% raw %}
+
 	Article: Q151378
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1
@@ -71,3 +73,5 @@ permalink: /kb/151/Q151378/
 	
 	=============================================================================
 	
+
+{% endraw %}

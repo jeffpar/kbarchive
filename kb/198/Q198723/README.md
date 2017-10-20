@@ -6,6 +6,8 @@ permalink: /kb/198/Q198723/
 
 ## Q198723: XWEB: Must Refresh OWA Twice if Session Times Out
 
+{% raw %}
+
 	Article: Q198723
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -59,3 +61,5 @@ permalink: /kb/198/Q198723/
 	
 	=============================================================================
 	
+
+{% endraw %}

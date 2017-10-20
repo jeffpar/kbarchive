@@ -6,6 +6,8 @@ permalink: /kb/040/Q40484/
 
 ## Q40484: QuickC 2.00 Does Not Automatically Change Memory Models
 
+{% raw %}
+
 	Article: Q40484
 	Product(s): See article
 	Version(s): 2.00
@@ -25,3 +27,5 @@ permalink: /kb/040/Q40484/
 	linking, then error messages are produced and you have to re-examine
 	the code or choose the option for a different, more adequate memory
 	model.
+
+{% endraw %}

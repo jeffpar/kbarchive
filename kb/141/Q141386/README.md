@@ -6,6 +6,8 @@ permalink: /kb/141/Q141386/
 
 ## Q141386: Using Send Command in 16-Bit Program Starts Microsoft Exchange
 
+{% raw %}
+
 	Article: Q141386
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/141/Q141386/
 	
 	=============================================================================
 	
+
+{% endraw %}

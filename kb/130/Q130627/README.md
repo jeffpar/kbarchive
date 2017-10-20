@@ -6,6 +6,8 @@ permalink: /kb/130/Q130627/
 
 ## Q130627: Quick Format Results in No ID Address Mark Found
 
+{% raw %}
+
 	Article: Q130627
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0 SP6,4.0 SP6a
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152520/
 
 ## Q152520: PRB: Opening a Dynaset on a SQL Server Stored Procedure
 
+{% raw %}
+
 	Article: Q152520
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/152/Q152520/
 	
 	=============================================================================
 	
+
+{% endraw %}

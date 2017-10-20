@@ -6,6 +6,8 @@ permalink: /kb/186/Q186556/
 
 ## Q186556: Terminal Server Commands: SHADOW
 
+{% raw %}
+
 	Article: Q186556
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -108,3 +110,5 @@ permalink: /kb/186/Q186556/
 	
 	=============================================================================
 	
+
+{% endraw %}

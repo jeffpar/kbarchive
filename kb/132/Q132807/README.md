@@ -6,6 +6,8 @@ permalink: /kb/132/Q132807/
 
 ## Q132807: Enhanced Encryption for Windows 95 Password Cache
 
+{% raw %}
+
 	Article: Q132807
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; Win2000:95
@@ -146,3 +148,5 @@ permalink: /kb/132/Q132807/
 	
 	=============================================================================
 	
+
+{% endraw %}

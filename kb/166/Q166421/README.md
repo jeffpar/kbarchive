@@ -6,6 +6,8 @@ permalink: /kb/166/Q166421/
 
 ## Q166421: FPNW Returns Time Stamp with 60 Seconds to Clients
 
+{% raw %}
+
 	Article: Q166421
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/166/Q166421/
 	
 	=============================================================================
 	
+
+{% endraw %}

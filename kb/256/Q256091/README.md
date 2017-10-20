@@ -6,6 +6,8 @@ permalink: /kb/256/Q256091/
 
 ## Q256091: Age of Empires II: Certain Commands Are Missing
 
+{% raw %}
+
 	Article: Q256091
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -118,3 +120,5 @@ permalink: /kb/256/Q256091/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271967/
 
 ## Q271967: Select Active Directory Containers to Discover Box Unavailable
 
+{% raw %}
+
 	Article: Q271967
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -63,3 +65,5 @@ permalink: /kb/271/Q271967/
 	
 	=============================================================================
 	
+
+{% endraw %}

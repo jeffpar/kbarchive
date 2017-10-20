@@ -6,6 +6,8 @@ permalink: /kb/173/Q173814/
 
 ## Q173814: WD97: Find and Replace Won't Use Buttons on Formatting Toolbar
 
+{% raw %}
+
 	Article: Q173814
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/173/Q173814/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130601/
 
 ## Q130601: How to Create a Primary Index in a Visual FoxPro Program
 
+{% raw %}
+
 	Article: Q130601
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -85,3 +87,5 @@ permalink: /kb/130/Q130601/
 	
 	=============================================================================
 	
+
+{% endraw %}

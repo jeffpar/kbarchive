@@ -6,6 +6,8 @@ permalink: /kb/092/Q92536/
 
 ## Q92536: Upgrade Installation Fails, Then Setup Doesn't Work
 
+{% raw %}
+
 	Article: Q92536
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/092/Q92536/
 	
 	=============================================================================
 	
+
+{% endraw %}

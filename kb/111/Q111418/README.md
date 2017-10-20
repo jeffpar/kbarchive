@@ -6,6 +6,8 @@ permalink: /kb/111/Q111418/
 
 ## Q111418: Scenes 1.0: Error Messages During Setup
 
+{% raw %}
+
 	Article: Q111418
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -82,3 +84,5 @@ permalink: /kb/111/Q111418/
 	
 	=============================================================================
 	
+
+{% endraw %}

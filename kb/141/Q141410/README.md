@@ -6,6 +6,8 @@ permalink: /kb/141/Q141410/
 
 ## Q141410: World of Flight: Color Palette Problem Occurs with QuicRes
 
+{% raw %}
+
 	Article: Q141410
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -59,3 +61,5 @@ permalink: /kb/141/Q141410/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234550/
 
 ## Q234550: Random Crashes on Alpha Proliant 42x0
 
+{% raw %}
+
 	Article: Q234550
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/234/Q234550/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30815/
 
 ## Q30815: MASM 5.10 OS2.DOC: OS/2 Call Summary - Miscellaneous Functions
 
+{% raw %}
+
 	Article: Q30815
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -59,3 +61,5 @@ permalink: /kb/030/Q30815/
 	   @DosGetMachineMode - Tells whether the processor is in real or
 	                        protected mode
 	   Parameters - MachineMode:PB
+
+{% endraw %}

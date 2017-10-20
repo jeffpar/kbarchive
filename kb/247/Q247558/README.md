@@ -6,6 +6,8 @@ permalink: /kb/247/Q247558/
 
 ## Q247558: Browsing HTML Administrator without Default Document Enabled Ret
 
+{% raw %}
+
 	Article: Q247558
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -53,3 +55,5 @@ permalink: /kb/247/Q247558/
 	
 	=============================================================================
 	
+
+{% endraw %}

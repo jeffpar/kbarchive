@@ -6,6 +6,8 @@ permalink: /kb/250/Q250856/
 
 ## Q250856: MSB Bugs: Screen Turns Black When You Start Program
 
+{% raw %}
+
 	Article: Q250856
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS|MACINTOS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/250/Q250856/
 	
 	=============================================================================
 	
+
+{% endraw %}

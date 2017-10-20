@@ -6,6 +6,8 @@ permalink: /kb/132/Q132331/
 
 ## Q132331: PRB: Null Values Disappear When Selected in a Grid or Browse
 
+{% raw %}
+
 	Article: Q132331
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -143,3 +145,5 @@ permalink: /kb/132/Q132331/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137894/
 
 ## Q137894: Setup Reports Success when it Fails to Add Invalid Components
 
+{% raw %}
+
 	Article: Q137894
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137894/
 	
 	=============================================================================
 	
+
+{% endraw %}

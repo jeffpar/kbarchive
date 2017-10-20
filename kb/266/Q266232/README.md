@@ -6,6 +6,8 @@ permalink: /kb/266/Q266232/
 
 ## Q266232: Windows 9x Clients Hang When Remote Control Agent Is Installed
 
+{% raw %}
+
 	Article: Q266232
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -121,3 +123,5 @@ permalink: /kb/266/Q266232/
 	
 	=============================================================================
 	
+
+{% endraw %}

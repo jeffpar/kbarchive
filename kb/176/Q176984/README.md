@@ -6,6 +6,8 @@ permalink: /kb/176/Q176984/
 
 ## Q176984: XCLN: Send to Alias Name Cannot Be Resolved
 
+{% raw %}
+
 	Article: Q176984
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/176/Q176984/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135277/
 
 ## Q135277: WINS Records of Multi-homed Computers Do Not Replicate
 
+{% raw %}
+
 	Article: Q135277
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -80,3 +82,5 @@ permalink: /kb/135/Q135277/
 	
 	=============================================================================
 	
+
+{% endraw %}

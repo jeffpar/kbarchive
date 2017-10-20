@@ -6,6 +6,8 @@ permalink: /kb/156/Q156141/
 
 ## Q156141: PRB: Default Values Not Shown in Input Parameters Dialog Box
 
+{% raw %}
+
 	Article: Q156141
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -57,3 +59,5 @@ permalink: /kb/156/Q156141/
 	
 	=============================================================================
 	
+
+{% endraw %}

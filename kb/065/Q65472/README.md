@@ -6,6 +6,8 @@ permalink: /kb/065/Q65472/
 
 ## Q65472: INFO: Predefined Identifiers in Microsoft C and C++
 
+{% raw %}
+
 	Article: Q65472
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -183,3 +185,5 @@ permalink: /kb/065/Q65472/
 	
 	=============================================================================
 	
+
+{% endraw %}

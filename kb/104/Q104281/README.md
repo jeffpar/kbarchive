@@ -6,6 +6,8 @@ permalink: /kb/104/Q104281/
 
 ## Q104281: PROFS: How to Create and Import Customized Templates
 
+{% raw %}
+
 	Article: Q104281
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.2
@@ -112,3 +114,5 @@ permalink: /kb/104/Q104281/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303105/
 
 ## Q303105: PRB: Cursor Moves to First Column If You Use Keyboard to Scroll
 
+{% raw %}
+
 	Article: Q303105
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0 SP5
@@ -73,3 +75,5 @@ permalink: /kb/303/Q303105/
 	
 	=============================================================================
 	
+
+{% endraw %}

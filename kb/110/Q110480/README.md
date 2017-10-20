@@ -6,6 +6,8 @@ permalink: /kb/110/Q110480/
 
 ## Q110480: Table &amp; Alias Names Not Always the Same in FoxPro for Mac
 
+{% raw %}
+
 	Article: Q110480
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -84,3 +86,5 @@ permalink: /kb/110/Q110480/
 	
 	=============================================================================
 	
+
+{% endraw %}

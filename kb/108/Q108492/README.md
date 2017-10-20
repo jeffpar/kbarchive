@@ -6,6 +6,8 @@ permalink: /kb/108/Q108492/
 
 ## Q108492: MS-DOS 6.0 &amp; 6.2 Not Supported on Tandy 1000 and 1200HD
 
+{% raw %}
+
 	Article: Q108492
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/108/Q108492/
 	
 	=============================================================================
 	
+
+{% endraw %}

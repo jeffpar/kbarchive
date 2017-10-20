@@ -6,6 +6,8 @@ permalink: /kb/317/Q317423/
 
 ## Q317423: SMS: Software Inventory Agent Generates an Invalid Page Fault
 
+{% raw %}
+
 	Article: Q317423
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -193,3 +195,5 @@ permalink: /kb/317/Q317423/
 	
 	=============================================================================
 	
+
+{% endraw %}

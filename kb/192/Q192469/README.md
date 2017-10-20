@@ -6,6 +6,8 @@ permalink: /kb/192/Q192469/
 
 ## Q192469: Can't Find Visual Basic 6 Step by Step Files
 
+{% raw %}
+
 	Article: Q192469
 	Product(s): Microsoft Press
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/192/Q192469/
 	
 	=============================================================================
 	
+
+{% endraw %}

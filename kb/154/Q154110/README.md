@@ -6,6 +6,8 @@ permalink: /kb/154/Q154110/
 
 ## Q154110: Mastering Visual C++: Windows 95 Registry Entries
 
+{% raw %}
+
 	Article: Q154110
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0; WINDOWS:95
@@ -94,3 +96,5 @@ permalink: /kb/154/Q154110/
 	
 	=============================================================================
 	
+
+{% endraw %}

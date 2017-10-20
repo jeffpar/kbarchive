@@ -6,6 +6,8 @@ permalink: /kb/129/Q129821/
 
 ## Q129821: Poor Color Mapping in Quick Windows Viewer During Remote Control
 
+{% raw %}
+
 	Article: Q129821
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -50,3 +52,5 @@ permalink: /kb/129/Q129821/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95099/
 
 ## Q95099: Changing Colors in MS-DOS Shell
 
+{% raw %}
+
 	Article: Q95099
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -128,3 +130,5 @@ permalink: /kb/095/Q95099/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117552/
 
 ## Q117552: INFO: Use KBKeywords to Search for Languages Articles
 
+{% raw %}
+
 	Article: Q117552
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,6.0,6.11
@@ -406,3 +408,5 @@ permalink: /kb/117/Q117552/
 	
 	=============================================================================
 	
+
+{% endraw %}

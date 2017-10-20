@@ -6,6 +6,8 @@ permalink: /kb/132/Q132733/
 
 ## Q132733: Upgrading to Windows 95 Setup Questions and Answers
 
+{% raw %}
+
 	Article: Q132733
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -176,3 +178,5 @@ permalink: /kb/132/Q132733/
 	
 	=============================================================================
 	
+
+{% endraw %}

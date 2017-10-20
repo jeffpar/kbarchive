@@ -6,6 +6,8 @@ permalink: /kb/196/Q196028/
 
 ## Q196028: PRB: FileListBox Control May Not List File Names Properly
 
+{% raw %}
+
 	Article: Q196028
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/196/Q196028/
 	
 	=============================================================================
 	
+
+{% endraw %}

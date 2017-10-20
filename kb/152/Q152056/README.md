@@ -6,6 +6,8 @@ permalink: /kb/152/Q152056/
 
 ## Q152056: BUG: Using Intrinsic Versions of log10 and fmod
 
+{% raw %}
+
 	Article: Q152056
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0
@@ -81,3 +83,5 @@ permalink: /kb/152/Q152056/
 	
 	=============================================================================
 	
+
+{% endraw %}

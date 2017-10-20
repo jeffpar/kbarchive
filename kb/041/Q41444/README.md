@@ -6,6 +6,8 @@ permalink: /kb/041/Q41444/
 
 ## Q41444: QuickC 2.00 README.DOC: Closing Windows
 
+{% raw %}
+
 	Article: Q41444
 	Product(s): See article
 	Version(s): 2.00
@@ -26,3 +28,5 @@ permalink: /kb/041/Q41444/
 	error "File Already Loaded". To clear the contents of the Notepad
 	window, you must choose the File menu New command while the Notepad
 	window is active.
+
+{% endraw %}

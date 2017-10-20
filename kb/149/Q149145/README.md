@@ -6,6 +6,8 @@ permalink: /kb/149/Q149145/
 
 ## Q149145: BUG: F1001 Error in Write of Namelist in Internal Procedure
 
+{% raw %}
+
 	Article: Q149145
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149145/
 	
 	=============================================================================
 	
+
+{% endraw %}

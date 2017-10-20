@@ -6,6 +6,8 @@ permalink: /kb/176/Q176918/
 
 ## Q176918: Cannot Change Network Printer Location from a Command Prompt
 
+{% raw %}
+
 	Article: Q176918
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176918/
 	
 	=============================================================================
 	
+
+{% endraw %}

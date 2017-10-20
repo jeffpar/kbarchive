@@ -6,6 +6,8 @@ permalink: /kb/168/Q168423/
 
 ## Q168423: WD97: Batch Conversion Macro Causes Error When You Convert File
 
+{% raw %}
+
 	Article: Q168423
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -197,3 +199,5 @@ permalink: /kb/168/Q168423/
 	
 	=============================================================================
 	
+
+{% endraw %}

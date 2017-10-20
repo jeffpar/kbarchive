@@ -6,6 +6,8 @@ permalink: /kb/046/Q46773/
 
 ## Q46773: Using C Run-Time Library Functions in .DLLs
 
+{% raw %}
+
 	Article: Q46773
 	Product(s): See article
 	Version(s): 5.10
@@ -59,3 +61,5 @@ permalink: /kb/046/Q46773/
 	
 	Aside from these two details and the new OS/2 1.10 library and header
 	files, MTDYNA.DOC is an excellent guide for writing .DLLs.
+
+{% endraw %}

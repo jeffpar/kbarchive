@@ -6,6 +6,8 @@ permalink: /kb/122/Q122489/
 
 ## Q122489: How to Disable Default Pushbutton Handling for MFC Dialog
 
+{% raw %}
+
 	Article: Q122489
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 1.50 | 1.00 2.00 4.00
@@ -86,3 +88,5 @@ permalink: /kb/122/Q122489/
 	
 	=============================================================================
 	
+
+{% endraw %}

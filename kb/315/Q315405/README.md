@@ -6,6 +6,8 @@ permalink: /kb/315/Q315405/
 
 ## Q315405: SEND State Error When Using ODBC/OLEDB DB2 Providers with Two-Ph
 
+{% raw %}
+
 	Article: Q315405
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -192,3 +194,5 @@ permalink: /kb/315/Q315405/
 	
 	=============================================================================
 	
+
+{% endraw %}

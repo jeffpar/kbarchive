@@ -6,6 +6,8 @@ permalink: /kb/157/Q157177/
 
 ## Q157177: Server Takes a Very Long Time to Shut Down
 
+{% raw %}
+
 	Article: Q157177
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -65,3 +67,5 @@ permalink: /kb/157/Q157177/
 	
 	=============================================================================
 	
+
+{% endraw %}

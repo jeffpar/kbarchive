@@ -6,6 +6,8 @@ permalink: /kb/131/Q131099/
 
 ## Q131099: PRB: MFC App's CWinApp::ProcessMessageFilter() Never Invoked
 
+{% raw %}
+
 	Article: Q131099
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -87,3 +89,5 @@ permalink: /kb/131/Q131099/
 	
 	=============================================================================
 	
+
+{% endraw %}

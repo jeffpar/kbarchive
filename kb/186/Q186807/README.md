@@ -6,6 +6,8 @@ permalink: /kb/186/Q186807/
 
 ## Q186807: How to Reinstall Certificate Server and Keep the CA
 
+{% raw %}
+
 	Article: Q186807
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.0
@@ -74,3 +76,5 @@ permalink: /kb/186/Q186807/
 	
 	=============================================================================
 	
+
+{% endraw %}

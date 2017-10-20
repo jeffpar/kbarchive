@@ -6,6 +6,8 @@ permalink: /kb/175/Q175668/
 
 ## Q175668: MultiSoc : Illustrates Using Sockets in Multiple Threads
 
+{% raw %}
+
 	Article: Q175668
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -156,3 +158,5 @@ permalink: /kb/175/Q175668/
 	
 	=============================================================================
 	
+
+{% endraw %}

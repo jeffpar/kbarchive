@@ -6,6 +6,8 @@ permalink: /kb/165/Q165325/
 
 ## Q165325: Cybex Switch Boxes Fails to Recognize Mouse After Upgrade
 
+{% raw %}
+
 	Article: Q165325
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -96,3 +98,5 @@ permalink: /kb/165/Q165325/
 	
 	=============================================================================
 	
+
+{% endraw %}

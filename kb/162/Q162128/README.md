@@ -6,6 +6,8 @@ permalink: /kb/162/Q162128/
 
 ## Q162128: CG3: Clip Gallery General Troubleshooting Tips Part 2 of 2
 
+{% raw %}
+
 	Article: Q162128
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0,97
@@ -368,3 +370,5 @@ permalink: /kb/162/Q162128/
 	
 	=============================================================================
 	
+
+{% endraw %}

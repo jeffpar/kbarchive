@@ -6,6 +6,8 @@ permalink: /kb/132/Q132045/
 
 ## Q132045: PC Win: Files Installed with Version 3.2a
 
+{% raw %}
+
 	Article: Q132045
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -257,3 +259,5 @@ permalink: /kb/132/Q132045/
 	
 	=============================================================================
 	
+
+{% endraw %}

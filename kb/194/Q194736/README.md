@@ -6,6 +6,8 @@ permalink: /kb/194/Q194736/
 
 ## Q194736: PC Adm: Admin Not Displaying X.400 Names Correctly in French
 
+{% raw %}
+
 	Article: Q194736
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -68,3 +70,5 @@ permalink: /kb/194/Q194736/
 	
 	=============================================================================
 	
+
+{% endraw %}

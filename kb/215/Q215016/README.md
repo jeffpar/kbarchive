@@ -6,6 +6,8 @@ permalink: /kb/215/Q215016/
 
 ## Q215016: SMS: Win16 Clients Ignore Detail Level in Software Inventory
 
+{% raw %}
+
 	Article: Q215016
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/215/Q215016/
 	
 	=============================================================================
 	
+
+{% endraw %}

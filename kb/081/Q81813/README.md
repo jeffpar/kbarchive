@@ -6,6 +6,8 @@ permalink: /kb/081/Q81813/
 
 ## Q81813: Hooking Interrupt 21h Before Windows
 
+{% raw %}
+
 	Article: Q81813
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -83,3 +85,5 @@ permalink: /kb/081/Q81813/
 	
 	=============================================================================
 	
+
+{% endraw %}

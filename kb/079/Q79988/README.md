@@ -6,6 +6,8 @@ permalink: /kb/079/Q79988/
 
 ## Q79988: CE_OVERRUN Errors with Serial Communications
 
+{% raw %}
+
 	Article: Q79988
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -175,3 +177,5 @@ permalink: /kb/079/Q79988/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217204/
 
 ## Q217204: XADM: Age Limit Deletes Reoccurring Appts. in Shared Calendar
 
+{% raw %}
+
 	Article: Q217204
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/217/Q217204/
 	
 	=============================================================================
 	
+
+{% endraw %}

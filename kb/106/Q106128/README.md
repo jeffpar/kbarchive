@@ -6,6 +6,8 @@ permalink: /kb/106/Q106128/
 
 ## Q106128: Backup Err Msg: Backup Requires Configuration for This...
 
+{% raw %}
+
 	Article: Q106128
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -66,3 +68,5 @@ permalink: /kb/106/Q106128/
 	
 	=============================================================================
 	
+
+{% endraw %}

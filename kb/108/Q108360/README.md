@@ -6,6 +6,8 @@ permalink: /kb/108/Q108360/
 
 ## Q108360: Stacker Conversion Error Msg When Path Is Longer Than 127
 
+{% raw %}
+
 	Article: Q108360
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -73,3 +75,5 @@ permalink: /kb/108/Q108360/
 	
 	=============================================================================
 	
+
+{% endraw %}

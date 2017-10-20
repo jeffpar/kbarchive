@@ -6,6 +6,8 @@ permalink: /kb/149/Q149549/
 
 ## Q149549: Signing Out During Phonebook Update Hangs Guide and Moscp
 
+{% raw %}
+
 	Article: Q149549
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149549/
 	
 	=============================================================================
 	
+
+{% endraw %}

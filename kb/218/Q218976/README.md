@@ -6,6 +6,8 @@ permalink: /kb/218/Q218976/
 
 ## Q218976: BUG: COPY FILE TO Command Behaves Differently Based on OS
 
+{% raw %}
+
 	Article: Q218976
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -82,3 +84,5 @@ permalink: /kb/218/Q218976/
 	
 	=============================================================================
 	
+
+{% endraw %}

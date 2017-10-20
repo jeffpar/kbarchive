@@ -6,6 +6,8 @@ permalink: /kb/030/Q30810/
 
 ## Q30810: MASM 5.10 OS2.DOC: OS/2 Call Summary - Resource Management
 
+{% raw %}
+
 	Article: Q30810
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -21,3 +23,5 @@ permalink: /kb/030/Q30810/
 	
 	   @DosGetResource - Returns the selector of a specified resource segment
 	   Parameters - ModHandle:W, TypeID:W, NameID:W, Selector:PW
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185649/
 
 ## Q185649: SMS: Run Cmd on Workstation Send Phase Only Never Shows Complete
 
+{% raw %}
+
 	Article: Q185649
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/185/Q185649/
 	
 	=============================================================================
 	
+
+{% endraw %}

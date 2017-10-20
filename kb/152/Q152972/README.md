@@ -6,6 +6,8 @@ permalink: /kb/152/Q152972/
 
 ## Q152972: How to Pass Values from VFP Back to Calling AppleScript
 
+{% raw %}
+
 	Article: Q152972
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -154,3 +156,5 @@ permalink: /kb/152/Q152972/
 	
 	=============================================================================
 	
+
+{% endraw %}

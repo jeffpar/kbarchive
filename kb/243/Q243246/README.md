@@ -6,6 +6,8 @@ permalink: /kb/243/Q243246/
 
 ## Q243246: XCLN: Outlook 97, 98 Cannot Clear Wrap to Window Option Default
 
+{% raw %}
+
 	Article: Q243246
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:97,98
@@ -53,3 +55,5 @@ permalink: /kb/243/Q243246/
 	
 	=============================================================================
 	
+
+{% endraw %}

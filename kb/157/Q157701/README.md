@@ -6,6 +6,8 @@ permalink: /kb/157/Q157701/
 
 ## Q157701: XCON: MTA: Dr. Watson Report with Exception e0020002
 
+{% raw %}
+
 	Article: Q157701
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/157/Q157701/
 	
 	=============================================================================
 	
+
+{% endraw %}

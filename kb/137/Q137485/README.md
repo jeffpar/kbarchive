@@ -6,6 +6,8 @@ permalink: /kb/137/Q137485/
 
 ## Q137485: Hewlett-Packard Network Port Option May Not Be Available
 
+{% raw %}
+
 	Article: Q137485
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -66,3 +68,5 @@ permalink: /kb/137/Q137485/
 	
 	=============================================================================
 	
+
+{% endraw %}

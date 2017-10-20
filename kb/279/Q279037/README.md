@@ -6,6 +6,8 @@ permalink: /kb/279/Q279037/
 
 ## Q279037: MSN Companion Troubleshooting Tool MURMUR
 
+{% raw %}
+
 	Article: Q279037
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -93,3 +95,5 @@ permalink: /kb/279/Q279037/
 	
 	=============================================================================
 	
+
+{% endraw %}

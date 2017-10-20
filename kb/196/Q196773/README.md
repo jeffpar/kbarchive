@@ -6,6 +6,8 @@ permalink: /kb/196/Q196773/
 
 ## Q196773: FIX: Slow View Performance with Sybase ODBC Driver
 
+{% raw %}
+
 	Article: Q196773
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a,6.0
@@ -93,3 +95,5 @@ permalink: /kb/196/Q196773/
 	
 	=============================================================================
 	
+
+{% endraw %}

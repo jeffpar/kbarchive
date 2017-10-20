@@ -6,6 +6,8 @@ permalink: /kb/068/Q68536/
 
 ## Q68536: Helvetica and Times Roman Font Substitutions in Windows 3.00
 
+{% raw %}
+
 	Article: Q68536
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -79,3 +81,5 @@ permalink: /kb/068/Q68536/
 	
 	=============================================================================
 	
+
+{% endraw %}

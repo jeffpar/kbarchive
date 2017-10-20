@@ -6,6 +6,8 @@ permalink: /kb/166/Q166615/
 
 ## Q166615: XFOR: Message Characters Corrupted When Different Locale Used
 
+{% raw %}
+
 	Article: Q166615
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166615/
 	
 	=============================================================================
 	
+
+{% endraw %}

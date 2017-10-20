@@ -6,6 +6,8 @@ permalink: /kb/186/Q186764/
 
 ## Q186764: XCLN: Cannot Search For Names That Contain Swedish Characters
 
+{% raw %}
+
 	Article: Q186764
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -92,3 +94,5 @@ permalink: /kb/186/Q186764/
 	
 	=============================================================================
 	
+
+{% endraw %}

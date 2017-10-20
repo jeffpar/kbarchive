@@ -6,6 +6,8 @@ permalink: /kb/171/Q171097/
 
 ## Q171097: WD97: Macro to Calculate Number of Months between Two Dates
 
+{% raw %}
+
 	Article: Q171097
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -97,3 +99,5 @@ permalink: /kb/171/Q171097/
 	
 	=============================================================================
 	
+
+{% endraw %}

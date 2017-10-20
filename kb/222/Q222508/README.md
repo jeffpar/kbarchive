@@ -6,6 +6,8 @@ permalink: /kb/222/Q222508/
 
 ## Q222508: XFOR: IMS Sends MIME Plain Text as HTML &amp; Plain Text
 
+{% raw %}
+
 	Article: Q222508
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -131,3 +133,5 @@ permalink: /kb/222/Q222508/
 	
 	=============================================================================
 	
+
+{% endraw %}

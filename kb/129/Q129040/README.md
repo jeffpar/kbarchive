@@ -6,6 +6,8 @@ permalink: /kb/129/Q129040/
 
 ## Q129040: Cannot Remote Control a 256 Color 1024x768 SVGA Machine
 
+{% raw %}
+
 	Article: Q129040
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -51,3 +53,5 @@ permalink: /kb/129/Q129040/
 	
 	=============================================================================
 	
+
+{% endraw %}

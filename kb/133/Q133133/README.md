@@ -6,6 +6,8 @@ permalink: /kb/133/Q133133/
 
 ## Q133133: USER32.DBG Link Date Does Not Match USER32.DLL
 
+{% raw %}
+
 	Article: Q133133
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -55,3 +57,5 @@ permalink: /kb/133/Q133133/
 	
 	=============================================================================
 	
+
+{% endraw %}

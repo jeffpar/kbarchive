@@ -6,6 +6,8 @@ permalink: /kb/120/Q120758/
 
 ## Q120758: DHCP Manager System Errors
 
+{% raw %}
+
 	Article: Q120758
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -51,3 +53,5 @@ permalink: /kb/120/Q120758/
 	
 	=============================================================================
 	
+
+{% endraw %}

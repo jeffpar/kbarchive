@@ -6,6 +6,8 @@ permalink: /kb/274/Q274836/
 
 ## Q274836: Crimson Skies: Game Sounds Are Not Played Correctly
 
+{% raw %}
+
 	Article: Q274836
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -132,3 +134,5 @@ permalink: /kb/274/Q274836/
 	
 	=============================================================================
 	
+
+{% endraw %}

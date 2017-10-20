@@ -6,6 +6,8 @@ permalink: /kb/131/Q131637/
 
 ## Q131637: PC Win: Viewing Windows Characters in Mail Messages
 
+{% raw %}
+
 	Article: Q131637
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -165,3 +167,5 @@ permalink: /kb/131/Q131637/
 	
 	=============================================================================
 	
+
+{% endraw %}

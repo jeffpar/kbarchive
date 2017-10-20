@@ -6,6 +6,8 @@ permalink: /kb/041/Q41654/
 
 ## Q41654: QuickC 2.00 README.DOC: /Ze, /Za (Enable/Disable Extensions)
 
+{% raw %}
+
 	Article: Q41654
 	Product(s): See article
 	Version(s): 2.00
@@ -46,3 +48,5 @@ permalink: /kb/041/Q41654/
 	
 	A second method is to declare pfunc as a union that can act as a
 	function pointer or a data pointer.
+
+{% endraw %}

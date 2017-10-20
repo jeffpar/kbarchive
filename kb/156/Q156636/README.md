@@ -6,6 +6,8 @@ permalink: /kb/156/Q156636/
 
 ## Q156636: Writer 2: Link Text Colors Don't Transfer
 
+{% raw %}
+
 	Article: Q156636
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -40,3 +42,5 @@ permalink: /kb/156/Q156636/
 	
 	=============================================================================
 	
+
+{% endraw %}

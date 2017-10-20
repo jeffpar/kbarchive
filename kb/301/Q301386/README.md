@@ -6,6 +6,8 @@ permalink: /kb/301/Q301386/
 
 ## Q301386: HOW TO: Install MetaEdit 2.2 on Windows NT 4.0 or Windows 2000
 
+{% raw %}
+
 	Article: Q301386
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -98,3 +100,5 @@ permalink: /kb/301/Q301386/
 	
 	=============================================================================
 	
+
+{% endraw %}

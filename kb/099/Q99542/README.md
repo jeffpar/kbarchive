@@ -6,6 +6,8 @@ permalink: /kb/099/Q99542/
 
 ## Q99542: Printing Reports Created w/ Question Marks in FP for Win
 
+{% raw %}
+
 	Article: Q99542
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 3.00 3.00 | 3.00b
@@ -95,3 +97,5 @@ permalink: /kb/099/Q99542/
 	
 	=============================================================================
 	
+
+{% endraw %}

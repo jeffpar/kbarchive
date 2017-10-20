@@ -6,6 +6,8 @@ permalink: /kb/129/Q129941/
 
 ## Q129941: PRB:Unexpected Results When Raise Method Propogates OLE Errors
 
+{% raw %}
+
 	Article: Q129941
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/129/Q129941/
 	
 	=============================================================================
 	
+
+{% endraw %}

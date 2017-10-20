@@ -6,6 +6,8 @@ permalink: /kb/189/Q189249/
 
 ## Q189249: HOWTO: Determine Which 32-Bit Windows Version Is Being Used
 
+{% raw %}
+
 	Article: Q189249
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -143,3 +145,5 @@ permalink: /kb/189/Q189249/
 	
 	=============================================================================
 	
+
+{% endraw %}

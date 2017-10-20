@@ -6,6 +6,8 @@ permalink: /kb/193/Q193944/
 
 ## Q193944: PRB: AddProperty Does Not Work in OLE DLL
 
+{% raw %}
+
 	Article: Q193944
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -126,3 +128,5 @@ permalink: /kb/193/Q193944/
 	
 	=============================================================================
 	
+
+{% endraw %}

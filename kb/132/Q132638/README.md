@@ -6,6 +6,8 @@ permalink: /kb/132/Q132638/
 
 ## Q132638: Help Window in Carbon Copy Setup May Not Be Visible
 
+{% raw %}
+
 	Article: Q132638
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132638/
 	
 	=============================================================================
 	
+
+{% endraw %}

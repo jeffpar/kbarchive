@@ -6,6 +6,8 @@ permalink: /kb/030/Q30030/
 
 ## Q30030: M.EXE Editor Macro to Join Current Line with Next Line
 
+{% raw %}
+
 	Article: Q30030
 	Product(s): See article
 	Version(s): 1.00    | 1.00
@@ -41,3 +43,5 @@ permalink: /kb/030/Q30030/
 	   Use sdelete because it closes the stream of characters and/or white
 	space between the starting cursor position and the ending cursor
 	position.
+
+{% endraw %}

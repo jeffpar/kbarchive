@@ -6,6 +6,8 @@ permalink: /kb/271/Q271252/
 
 ## Q271252: Microsoft Reader: List of Keyboard Shortcuts
 
+{% raw %}
+
 	Article: Q271252
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -93,3 +95,5 @@ permalink: /kb/271/Q271252/
 	
 	=============================================================================
 	
+
+{% endraw %}

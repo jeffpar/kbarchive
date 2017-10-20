@@ -6,6 +6,8 @@ permalink: /kb/249/Q249892/
 
 ## Q249892: XCLN: User in Trusted Domain Cannot Log On to Exchange Server
 
+{% raw %}
+
 	Article: Q249892
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/249/Q249892/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134890/
 
 ## Q134890: FIX: Wizards Can Be Hidden Allowing More Than One to Run
 
+{% raw %}
+
 	Article: Q134890
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -62,3 +64,5 @@ permalink: /kb/134/Q134890/
 	
 	=============================================================================
 	
+
+{% endraw %}

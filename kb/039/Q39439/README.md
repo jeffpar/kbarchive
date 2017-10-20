@@ -6,6 +6,8 @@ permalink: /kb/039/Q39439/
 
 ## Q39439: DOCERR: SMSW, SGDT, SIDT, SLDT, VERR, VERW Don't Assemble
 
+{% raw %}
+
 	Article: Q39439
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -88,3 +90,5 @@ permalink: /kb/039/Q39439/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192330/
 
 ## Q192330: HOWTO: Using the ProjectHook Class to Create a Generic Project
 
+{% raw %}
+
 	Article: Q192330
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -97,3 +99,5 @@ permalink: /kb/192/Q192330/
 	
 	=============================================================================
 	
+
+{% endraw %}

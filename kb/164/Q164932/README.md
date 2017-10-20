@@ -6,6 +6,8 @@ permalink: /kb/164/Q164932/
 
 ## Q164932: WordPad Crashes with Wrong Version of MFC42U.DLL
 
+{% raw %}
+
 	Article: Q164932
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/164/Q164932/
 	
 	=============================================================================
 	
+
+{% endraw %}

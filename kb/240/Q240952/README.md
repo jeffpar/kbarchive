@@ -6,6 +6,8 @@ permalink: /kb/240/Q240952/
 
 ## Q240952: Zone Err Msg: Zone Setup Failed to Copy Itself to...
 
+{% raw %}
+
 	Article: Q240952
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/240/Q240952/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125444/
 
 ## Q125444: Visual C++ 2.0 Source Code for Alpha Run-Time Lib
 
+{% raw %}
+
 	Article: Q125444
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -77,3 +79,5 @@ permalink: /kb/125/Q125444/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149477/
 
 ## Q149477: BUG: Run-Time Error F6511 - Variable Name Not Found
 
+{% raw %}
+
 	Article: Q149477
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -100,3 +102,5 @@ permalink: /kb/149/Q149477/
 	
 	=============================================================================
 	
+
+{% endraw %}

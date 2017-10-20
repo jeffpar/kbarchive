@@ -6,6 +6,8 @@ permalink: /kb/146/Q146426/
 
 ## Q146426: Pregnancy and Child Care Minimum System Requirements
 
+{% raw %}
+
 	Article: Q146426
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/146/Q146426/
 	
 	=============================================================================
 	
+
+{% endraw %}

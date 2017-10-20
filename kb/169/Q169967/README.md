@@ -6,6 +6,8 @@ permalink: /kb/169/Q169967/
 
 ## Q169967: WD97: Cannot Change Suggested AutoComplete Date Year Format
 
+{% raw %}
+
 	Article: Q169967
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -119,3 +121,5 @@ permalink: /kb/169/Q169967/
 	
 	=============================================================================
 	
+
+{% endraw %}

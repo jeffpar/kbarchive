@@ -6,6 +6,8 @@ permalink: /kb/182/Q182479/
 
 ## Q182479: XFOR: GP Fault Sending or Receiving SMTP Messages
 
+{% raw %}
+
 	Article: Q182479
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/182/Q182479/
 	
 	=============================================================================
 	
+
+{% endraw %}

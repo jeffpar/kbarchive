@@ -6,6 +6,8 @@ permalink: /kb/113/Q113427/
 
 ## Q113427: FIX: Incorrect Optimization of Left Shift Operator
 
+{% raw %}
+
 	Article: Q113427
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -81,3 +83,5 @@ permalink: /kb/113/Q113427/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188648/
 
 ## Q188648: XADM: Enabling Security on a 5.5 Exchange Server or Site
 
+{% raw %}
+
 	Article: Q188648
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/188/Q188648/
 	
 	=============================================================================
 	
+
+{% endraw %}

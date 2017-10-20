@@ -6,6 +6,8 @@ permalink: /kb/082/Q82164/
 
 ## Q82164: How to Distinguish MS-DOS 5.0a from MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q82164
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -63,3 +65,5 @@ permalink: /kb/082/Q82164/
 	
 	=============================================================================
 	
+
+{% endraw %}

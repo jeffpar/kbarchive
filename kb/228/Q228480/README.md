@@ -6,6 +6,8 @@ permalink: /kb/228/Q228480/
 
 ## Q228480: Error 1722 When Starting Cluster Administrator
 
+{% raw %}
+
 	Article: Q228480
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -124,3 +126,5 @@ permalink: /kb/228/Q228480/
 	
 	=============================================================================
 	
+
+{% endraw %}

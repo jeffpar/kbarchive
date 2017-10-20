@@ -6,6 +6,8 @@ permalink: /kb/140/Q140805/
 
 ## Q140805: Dataloader Logs &quot;inventory sent&quot; after Failure of Cycle
 
+{% raw %}
+
 	Article: Q140805
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -42,3 +44,5 @@ permalink: /kb/140/Q140805/
 	
 	=============================================================================
 	
+
+{% endraw %}

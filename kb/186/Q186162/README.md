@@ -6,6 +6,8 @@ permalink: /kb/186/Q186162/
 
 ## Q186162: XCLN: Schedule+ Prints Black Bars in Monthly View
 
+{% raw %}
+
 	Article: Q186162
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.5
@@ -84,3 +86,5 @@ permalink: /kb/186/Q186162/
 	
 	=============================================================================
 	
+
+{% endraw %}

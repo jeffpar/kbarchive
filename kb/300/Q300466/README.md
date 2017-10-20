@@ -6,6 +6,8 @@ permalink: /kb/300/Q300466/
 
 ## Q300466: FP: Clicking Reset on Search Results Page Does Not Clear Form
 
+{% raw %}
+
 	Article: Q300466
 	Product(s): Word Front Page
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/300/Q300466/
 	
 	=============================================================================
 	
+
+{% endraw %}

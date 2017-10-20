@@ -6,6 +6,8 @@ permalink: /kb/203/Q203230/
 
 ## Q203230: FIX: GPF Using ATL Control Array and Accelerator Key
 
+{% raw %}
+
 	Article: Q203230
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -162,3 +164,5 @@ permalink: /kb/203/Q203230/
 	
 	=============================================================================
 	
+
+{% endraw %}

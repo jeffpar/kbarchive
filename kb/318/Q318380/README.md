@@ -6,6 +6,8 @@ permalink: /kb/318/Q318380/
 
 ## Q318380: IIS Status Codes
 
+{% raw %}
+
 	Article: Q318380
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -533,3 +535,5 @@ permalink: /kb/318/Q318380/
 	
 	=============================================================================
 	
+
+{% endraw %}

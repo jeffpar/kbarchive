@@ -6,6 +6,8 @@ permalink: /kb/158/Q158192/
 
 ## Q158192: XCLN: Error When Opening File Posted to Public Folder
 
+{% raw %}
+
 	Article: Q158192
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/158/Q158192/
 	
 	=============================================================================
 	
+
+{% endraw %}

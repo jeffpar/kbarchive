@@ -6,6 +6,8 @@ permalink: /kb/104/Q104638/
 
 ## Q104638: FIX: CFile::SetStatus Throws Exception When Setting Time
 
+{% raw %}
+
 	Article: Q104638
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -113,3 +115,5 @@ permalink: /kb/104/Q104638/
 	
 	=============================================================================
 	
+
+{% endraw %}

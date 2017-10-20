@@ -6,6 +6,8 @@ permalink: /kb/223/Q223391/
 
 ## Q223391: XADM: OOF Messages Received Even When OOF Option is Disabled
 
+{% raw %}
+
 	Article: Q223391
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/223/Q223391/
 	
 	=============================================================================
 	
+
+{% endraw %}

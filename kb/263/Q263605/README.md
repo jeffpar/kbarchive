@@ -6,6 +6,8 @@ permalink: /kb/263/Q263605/
 
 ## Q263605: HalAssignSlotResources() Call May Not Assign Resources
 
+{% raw %}
+
 	Article: Q263605
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -83,3 +85,5 @@ permalink: /kb/263/Q263605/
 	
 	=============================================================================
 	
+
+{% endraw %}

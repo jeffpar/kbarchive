@@ -6,6 +6,8 @@ permalink: /kb/032/Q32169/
 
 ## Q32169: FASTOPEN Harmful If Used with Disk Optimizers/Cachers
 
+{% raw %}
+
 	Article: Q32169
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/032/Q32169/
 	
 	=============================================================================
 	
+
+{% endraw %}

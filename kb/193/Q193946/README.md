@@ -6,6 +6,8 @@ permalink: /kb/193/Q193946/
 
 ## Q193946: HOWTO: Demo of ADO AddNew, Update, Delete, Find and Filter
 
+{% raw %}
+
 	Article: Q193946
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.1 SP2,2.5,2.6,6.0
@@ -137,3 +139,5 @@ permalink: /kb/193/Q193946/
 	
 	=============================================================================
 	
+
+{% endraw %}

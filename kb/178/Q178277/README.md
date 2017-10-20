@@ -6,6 +6,8 @@ permalink: /kb/178/Q178277/
 
 ## Q178277: Setting DNS Domain Suffix Search Order During Unattend Install
 
+{% raw %}
+
 	Article: Q178277
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,4.0
@@ -132,3 +134,5 @@ permalink: /kb/178/Q178277/
 	
 	=============================================================================
 	
+
+{% endraw %}

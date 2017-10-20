@@ -6,6 +6,8 @@ permalink: /kb/086/Q86649/
 
 ## Q86649: RECOVER Command Does Not Rename Files
 
+{% raw %}
+
 	Article: Q86649
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -62,3 +64,5 @@ permalink: /kb/086/Q86649/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225745/
 
 ## Q225745: Administrators Can Remove Themselves from the Permissions for a
 
+{% raw %}
+
 	Article: Q225745
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -199,3 +201,5 @@ permalink: /kb/225/Q225745/
 	
 	=============================================================================
 	
+
+{% endraw %}

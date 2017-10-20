@@ -6,6 +6,8 @@ permalink: /kb/184/Q184057/
 
 ## Q184057: Printing Wide Carriage with Generic/Text Only Print Driver
 
+{% raw %}
+
 	Article: Q184057
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/184/Q184057/
 	
 	=============================================================================
 	
+
+{% endraw %}

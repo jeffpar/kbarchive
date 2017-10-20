@@ -6,6 +6,8 @@ permalink: /kb/127/Q127179/
 
 ## Q127179: PRB: Output from TIME() Does Not Change with SET HOURS
 
+{% raw %}
+
 	Article: Q127179
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -133,3 +135,5 @@ permalink: /kb/127/Q127179/
 	
 	=============================================================================
 	
+
+{% endraw %}

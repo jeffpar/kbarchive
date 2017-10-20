@@ -6,6 +6,8 @@ permalink: /kb/275/Q275243/
 
 ## Q275243: XADM: Can't Back Up Databases Containing Extended ASCII Chars.
 
+{% raw %}
+
 	Article: Q275243
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/275/Q275243/
 	
 	=============================================================================
 	
+
+{% endraw %}

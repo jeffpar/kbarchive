@@ -6,6 +6,8 @@ permalink: /kb/170/Q170834/
 
 ## Q170834: Take Ownership Remotely Does Not Log Security Event
 
+{% raw %}
+
 	Article: Q170834
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -118,3 +120,5 @@ permalink: /kb/170/Q170834/
 	
 	=============================================================================
 	
+
+{% endraw %}

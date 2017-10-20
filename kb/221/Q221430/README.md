@@ -6,6 +6,8 @@ permalink: /kb/221/Q221430/
 
 ## Q221430: XADM: View-Only Admin Can Delete/Create Organization Forms Lib.
 
+{% raw %}
+
 	Article: Q221430
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/221/Q221430/
 	
 	=============================================================================
 	
+
+{% endraw %}

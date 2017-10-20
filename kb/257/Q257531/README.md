@@ -6,6 +6,8 @@ permalink: /kb/257/Q257531/
 
 ## Q257531: FIX: Wrong Large Currency Values Returned From Late Bound Object
 
+{% raw %}
+
 	Article: Q257531
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -116,3 +118,5 @@ permalink: /kb/257/Q257531/
 	
 	=============================================================================
 	
+
+{% endraw %}

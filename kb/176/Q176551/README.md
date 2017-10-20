@@ -6,6 +6,8 @@ permalink: /kb/176/Q176551/
 
 ## Q176551: FIX: Automation Events Not Received by VBasic Applications
 
+{% raw %}
+
 	Article: Q176551
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/176/Q176551/
 	
 	=============================================================================
 	
+
+{% endraw %}

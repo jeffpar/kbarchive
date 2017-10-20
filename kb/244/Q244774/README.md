@@ -6,6 +6,8 @@ permalink: /kb/244/Q244774/
 
 ## Q244774: HTTP Compression Deletes Contents of IIS Temporary Cache Files
 
+{% raw %}
+
 	Article: Q244774
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -52,3 +54,5 @@ permalink: /kb/244/Q244774/
 	
 	=============================================================================
 	
+
+{% endraw %}

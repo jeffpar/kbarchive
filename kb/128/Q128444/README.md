@@ -6,6 +6,8 @@ permalink: /kb/128/Q128444/
 
 ## Q128444: MHS: Err Msg: User Not Found: Postmaster
 
+{% raw %}
+
 	Article: Q128444
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/128/Q128444/
 	
 	=============================================================================
 	
+
+{% endraw %}

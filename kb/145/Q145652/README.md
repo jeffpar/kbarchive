@@ -6,6 +6,8 @@ permalink: /kb/145/Q145652/
 
 ## Q145652: Windows 95 RPC Ignores Shutdown Packets
 
+{% raw %}
+
 	Article: Q145652
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/145/Q145652/
 	
 	=============================================================================
 	
+
+{% endraw %}

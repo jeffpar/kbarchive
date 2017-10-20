@@ -6,6 +6,8 @@ permalink: /kb/163/Q163017/
 
 ## Q163017: Cannot Run Applications after Making File Association
 
+{% raw %}
+
 	Article: Q163017
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0
@@ -107,3 +109,5 @@ permalink: /kb/163/Q163017/
 	
 	=============================================================================
 	
+
+{% endraw %}

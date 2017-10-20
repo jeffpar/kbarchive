@@ -6,6 +6,8 @@ permalink: /kb/239/Q239514/
 
 ## Q239514: MEM Command Reports Only 64 MB Extended Memory in MS-DOS Window
 
+{% raw %}
+
 	Article: Q239514
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -64,3 +66,5 @@ permalink: /kb/239/Q239514/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60708/
 
 ## Q60708: Hardware Failure Possible Cause of C1001
 
+{% raw %}
+
 	Article: Q60708
 	Product(s): See article
 	Version(s): 5.10 6.00
@@ -48,3 +50,5 @@ permalink: /kb/060/Q60708/
 	problems, take the code to another machine and try it there. If the
 	problem does not appear on the second machine, the hardware of the
 	original machine may be faulty and need repair.
+
+{% endraw %}

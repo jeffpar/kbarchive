@@ -6,6 +6,8 @@ permalink: /kb/105/Q105443/
 
 ## Q105443: PRB: MetaFile Displays Incorrectly in Print Preview
 
+{% raw %}
+
 	Article: Q105443
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0
@@ -152,3 +154,5 @@ permalink: /kb/105/Q105443/
 	
 	=============================================================================
 	
+
+{% endraw %}

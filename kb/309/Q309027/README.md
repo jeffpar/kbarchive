@@ -6,6 +6,8 @@ permalink: /kb/309/Q309027/
 
 ## Q309027: Academic Learning Series Microsoft Exchange 2000 Server Implemen
 
+{% raw %}
+
 	Article: Q309027
 	Product(s): Microsoft Press
 	Version(s): 
@@ -187,3 +189,5 @@ permalink: /kb/309/Q309027/
 	
 	=============================================================================
 	
+
+{% endraw %}

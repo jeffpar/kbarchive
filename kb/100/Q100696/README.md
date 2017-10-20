@@ -6,6 +6,8 @@ permalink: /kb/100/Q100696/
 
 ## Q100696: Flight Simulator 5.0 Compatability with Version 4.0
 
+{% raw %}
+
 	Article: Q100696
 	Product(s): Microsoft Home Games
 	Version(s): 4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/100/Q100696/
 	
 	=============================================================================
 	
+
+{% endraw %}

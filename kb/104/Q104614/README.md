@@ -6,6 +6,8 @@ permalink: /kb/104/Q104614/
 
 ## Q104614: Arcade: Description of Tempest
 
+{% raw %}
+
 	Article: Q104614
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -118,3 +120,5 @@ permalink: /kb/104/Q104614/
 	
 	=============================================================================
 	
+
+{% endraw %}

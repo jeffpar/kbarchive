@@ -6,6 +6,8 @@ permalink: /kb/174/Q174247/
 
 ## Q174247: FS98 Setup Err Msg: FS98 Requires 4XXXMB for Installation
 
+{% raw %}
+
 	Article: Q174247
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/174/Q174247/
 	
 	=============================================================================
 	
+
+{% endraw %}

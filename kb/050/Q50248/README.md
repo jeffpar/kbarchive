@@ -6,6 +6,8 @@ permalink: /kb/050/Q50248/
 
 ## Q50248: Mac Form: Differences Between Image Field and Graphic Overlay
 
+{% raw %}
+
 	Article: Q50248
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -59,3 +61,5 @@ permalink: /kb/050/Q50248/
 	
 	=============================================================================
 	
+
+{% endraw %}

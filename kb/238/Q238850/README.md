@@ -6,6 +6,8 @@ permalink: /kb/238/Q238850/
 
 ## Q238850: XFOR: Migration Fails with Error Message and Event 6003
 
+{% raw %}
+
 	Article: Q238850
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/238/Q238850/
 	
 	=============================================================================
 	
+
+{% endraw %}

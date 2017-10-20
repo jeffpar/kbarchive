@@ -6,6 +6,8 @@ permalink: /kb/242/Q242319/
 
 ## Q242319: PRB: A &quot;The Parameter Is Incorrect&quot; Error Message In VB SnapIn
 
+{% raw %}
+
 	Article: Q242319
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.1,1.2,6.0
@@ -99,3 +101,5 @@ permalink: /kb/242/Q242319/
 	
 	=============================================================================
 	
+
+{% endraw %}

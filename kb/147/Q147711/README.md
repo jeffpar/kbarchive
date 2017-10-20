@@ -6,6 +6,8 @@ permalink: /kb/147/Q147711/
 
 ## Q147711: Scheduled RASDIAL Fails To Connect to Windows NT RAS Server
 
+{% raw %}
+
 	Article: Q147711
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -75,3 +77,5 @@ permalink: /kb/147/Q147711/
 	
 	=============================================================================
 	
+
+{% endraw %}

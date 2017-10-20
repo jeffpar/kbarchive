@@ -6,6 +6,8 @@ permalink: /kb/142/Q142353/
 
 ## Q142353: Scenes 2.0: ErrMsg: Illegal Instruction In Module MSSCMN.DLL
 
+{% raw %}
+
 	Article: Q142353
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -47,3 +49,5 @@ permalink: /kb/142/Q142353/
 	
 	=============================================================================
 	
+
+{% endraw %}

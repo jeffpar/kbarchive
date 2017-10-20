@@ -6,6 +6,8 @@ permalink: /kb/191/Q191947/
 
 ## Q191947: XCON: MTA Fails to Convert Message from 1984 X.400 System
 
+{% raw %}
+
 	Article: Q191947
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -110,3 +112,5 @@ permalink: /kb/191/Q191947/
 	
 	=============================================================================
 	
+
+{% endraw %}

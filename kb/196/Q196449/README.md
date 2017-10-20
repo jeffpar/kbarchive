@@ -6,6 +6,8 @@ permalink: /kb/196/Q196449/
 
 ## Q196449: Error: SAS Window: Winlogon.exe When Logging In
 
+{% raw %}
+
 	Article: Q196449
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/196/Q196449/
 	
 	=============================================================================
 	
+
+{% endraw %}

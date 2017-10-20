@@ -6,6 +6,8 @@ permalink: /kb/268/Q268120/
 
 ## Q268120: Web Applications with Visual InterDev 6.0 Comments and Correctio
 
+{% raw %}
+
 	Article: Q268120
 	Product(s): Microsoft Press
 	Version(s): 
@@ -338,3 +340,5 @@ permalink: /kb/268/Q268120/
 	
 	=============================================================================
 	
+
+{% endraw %}

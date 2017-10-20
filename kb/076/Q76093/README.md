@@ -6,6 +6,8 @@ permalink: /kb/076/Q76093/
 
 ## Q76093: CONN: MAPPINGS.TXT File for MS Mail Connection Version 1.0
 
+{% raw %}
+
 	Article: Q76093
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0
@@ -124,3 +126,5 @@ permalink: /kb/076/Q76093/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177365/
 
 ## Q177365: Vinca Drivers May Cause Stop 0x24
 
+{% raw %}
+
 	Article: Q177365
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/177/Q177365/
 	
 	=============================================================================
 	
+
+{% endraw %}

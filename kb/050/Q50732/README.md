@@ -6,6 +6,8 @@ permalink: /kb/050/Q50732/
 
 ## Q50732: INFO: Pointer to Undeclared Structure Does Not Generate Error
 
+{% raw %}
+
 	Article: Q50732
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,2.1,4.0,5.0,6.0
@@ -58,3 +60,5 @@ permalink: /kb/050/Q50732/
 	
 	=============================================================================
 	
+
+{% endraw %}

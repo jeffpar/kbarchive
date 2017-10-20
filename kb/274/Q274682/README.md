@@ -6,6 +6,8 @@ permalink: /kb/274/Q274682/
 
 ## Q274682: Crimson Skies: How to Improve Game Performance
 
+{% raw %}
+
 	Article: Q274682
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -297,3 +299,5 @@ permalink: /kb/274/Q274682/
 	
 	=============================================================================
 	
+
+{% endraw %}

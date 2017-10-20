@@ -6,6 +6,8 @@ permalink: /kb/243/Q243761/
 
 ## Q243761: XFOR: Folder Options for Application Converter for Lotus Notes
 
+{% raw %}
+
 	Article: Q243761
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/243/Q243761/
 	
 	=============================================================================
 	
+
+{% endraw %}

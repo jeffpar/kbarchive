@@ -6,6 +6,8 @@ permalink: /kb/220/Q220605/
 
 ## Q220605: Stop 0x0000000A Caused by Malformed File Write Request
 
+{% raw %}
+
 	Article: Q220605
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -70,3 +72,5 @@ permalink: /kb/220/Q220605/
 	
 	=============================================================================
 	
+
+{% endraw %}

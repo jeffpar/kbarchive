@@ -6,6 +6,8 @@ permalink: /kb/165/Q165232/
 
 ## Q165232: WD97: Table of Contents Page Number Tip Incorrect
 
+{% raw %}
+
 	Article: Q165232
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165232/
 	
 	=============================================================================
 	
+
+{% endraw %}

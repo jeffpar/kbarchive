@@ -6,6 +6,8 @@ permalink: /kb/156/Q156171/
 
 ## Q156171: DOCERR: Help Topic &quot;Switching Views&quot; Is Incorrect in VFP 3.0
 
+{% raw %}
+
 	Article: Q156171
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -81,3 +83,5 @@ permalink: /kb/156/Q156171/
 	
 	=============================================================================
 	
+
+{% endraw %}

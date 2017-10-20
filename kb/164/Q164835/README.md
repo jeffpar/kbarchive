@@ -6,6 +6,8 @@ permalink: /kb/164/Q164835/
 
 ## Q164835: XCON: RETIX Message Does Not Trigger Read Receipt
 
+{% raw %}
+
 	Article: Q164835
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/164/Q164835/
 	
 	=============================================================================
 	
+
+{% endraw %}

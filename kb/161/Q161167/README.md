@@ -6,6 +6,8 @@ permalink: /kb/161/Q161167/
 
 ## Q161167: Application Exception in SETUP.EXE if CleanSweep 3.0 Installed
 
+{% raw %}
+
 	Article: Q161167
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1
@@ -65,3 +67,5 @@ permalink: /kb/161/Q161167/
 	
 	=============================================================================
 	
+
+{% endraw %}

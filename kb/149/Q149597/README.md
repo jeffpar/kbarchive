@@ -6,6 +6,8 @@ permalink: /kb/149/Q149597/
 
 ## Q149597: Peer SDLC Connections Allow Invalid Idle Timeout/Retry Values
 
+{% raw %}
+
 	Article: Q149597
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -75,3 +77,5 @@ permalink: /kb/149/Q149597/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133280/
 
 ## Q133280: FTPSVC: Delay Receiving FTP Directory Annotation and Prompt
 
+{% raw %}
+
 	Article: Q133280
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -71,3 +73,5 @@ permalink: /kb/133/Q133280/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303279/
 
 ## Q303279: SMS: Software Inventory Processor Has a Critical Status
 
+{% raw %}
+
 	Article: Q303279
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -76,3 +78,5 @@ permalink: /kb/303/Q303279/
 	
 	=============================================================================
 	
+
+{% endraw %}

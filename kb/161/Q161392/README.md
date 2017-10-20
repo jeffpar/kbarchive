@@ -6,6 +6,8 @@ permalink: /kb/161/Q161392/
 
 ## Q161392: PPT: Sample Code to Name a Slide
 
+{% raw %}
+
 	Article: Q161392
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -159,3 +161,5 @@ permalink: /kb/161/Q161392/
 	
 	=============================================================================
 	
+
+{% endraw %}

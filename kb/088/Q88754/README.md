@@ -6,6 +6,8 @@ permalink: /kb/088/Q88754/
 
 ## Q88754: RM/COBOL-85 Is Incompatible with SMARTDrive 4.0
 
+{% raw %}
+
 	Article: Q88754
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/088/Q88754/
 	
 	=============================================================================
 	
+
+{% endraw %}

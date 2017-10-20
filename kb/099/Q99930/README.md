@@ -6,6 +6,8 @@ permalink: /kb/099/Q99930/
 
 ## Q99930: PC WRmt: Viewing and Usage of the ACCESS4.GLB File
 
+{% raw %}
+
 	Article: Q99930
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -53,3 +55,5 @@ permalink: /kb/099/Q99930/
 	
 	=============================================================================
 	
+
+{% endraw %}

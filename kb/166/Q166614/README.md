@@ -6,6 +6,8 @@ permalink: /kb/166/Q166614/
 
 ## Q166614: XFOR: Attachments Migrated from ccMail Are Not Viewable
 
+{% raw %}
+
 	Article: Q166614
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/166/Q166614/
 	
 	=============================================================================
 	
+
+{% endraw %}

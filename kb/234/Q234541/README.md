@@ -6,6 +6,8 @@ permalink: /kb/234/Q234541/
 
 ## Q234541: STOP 0x00000050 When Source Routing Info Exceeds 18 Bytes
 
+{% raw %}
+
 	Article: Q234541
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/234/Q234541/
 	
 	=============================================================================
 	
+
+{% endraw %}

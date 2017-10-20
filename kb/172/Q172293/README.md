@@ -6,6 +6,8 @@ permalink: /kb/172/Q172293/
 
 ## Q172293: Tops of Characters Missing When Win3270 Applet Window Resized
 
+{% raw %}
+
 	Article: Q172293
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172293/
 	
 	=============================================================================
 	
+
+{% endraw %}

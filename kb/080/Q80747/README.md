@@ -6,6 +6,8 @@ permalink: /kb/080/Q80747/
 
 ## Q80747: Supported File Types for Windows 3.1 Clipboard
 
+{% raw %}
+
 	Article: Q80747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -89,3 +91,5 @@ permalink: /kb/080/Q80747/
 	
 	=============================================================================
 	
+
+{% endraw %}

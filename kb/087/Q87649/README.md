@@ -6,6 +6,8 @@ permalink: /kb/087/Q87649/
 
 ## Q87649: X400: How to Move the Gateway to Another Postoffice
 
+{% raw %}
+
 	Article: Q87649
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/087/Q87649/
 	
 	=============================================================================
 	
+
+{% endraw %}

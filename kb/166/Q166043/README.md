@@ -6,6 +6,8 @@ permalink: /kb/166/Q166043/
 
 ## Q166043: DHCPAdmin Incorrectly Writes the BootFileTable in the Registry
 
+{% raw %}
+
 	Article: Q166043
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/166/Q166043/
 	
 	=============================================================================
 	
+
+{% endraw %}

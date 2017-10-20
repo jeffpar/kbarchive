@@ -6,6 +6,8 @@ permalink: /kb/191/Q191897/
 
 ## Q191897: BUG: Shape on Transparent UserControl May Not Redraw Properly
 
+{% raw %}
+
 	Article: Q191897
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/191/Q191897/
 	
 	=============================================================================
 	
+
+{% endraw %}

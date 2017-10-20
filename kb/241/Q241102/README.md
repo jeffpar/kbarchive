@@ -6,6 +6,8 @@ permalink: /kb/241/Q241102/
 
 ## Q241102: BUG: Node Item Tips Hidden whenTreeView Is Sited on UserControl
 
+{% raw %}
+
 	Article: Q241102
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -170,3 +172,5 @@ permalink: /kb/241/Q241102/
 	
 	=============================================================================
 	
+
+{% endraw %}

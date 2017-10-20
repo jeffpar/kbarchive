@@ -6,6 +6,8 @@ permalink: /kb/136/Q136015/
 
 ## Q136015: FIX: Spinner Name Doesn't Move with Spinner in a PageFrame
 
+{% raw %}
+
 	Article: Q136015
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/136/Q136015/
 	
 	=============================================================================
 	
+
+{% endraw %}

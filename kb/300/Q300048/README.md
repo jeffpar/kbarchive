@@ -6,6 +6,8 @@ permalink: /kb/300/Q300048/
 
 ## Q300048: XCON: MTA Event ID 57 on Bridgehead Servers
 
+{% raw %}
+
 	Article: Q300048
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -86,3 +88,5 @@ permalink: /kb/300/Q300048/
 	
 	=============================================================================
 	
+
+{% endraw %}

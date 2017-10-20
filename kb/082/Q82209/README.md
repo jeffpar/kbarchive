@@ -6,6 +6,8 @@ permalink: /kb/082/Q82209/
 
 ## Q82209: Printer Driver for the HP LaserJet IIP Plus
 
+{% raw %}
+
 	Article: Q82209
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -53,3 +55,5 @@ permalink: /kb/082/Q82209/
 	
 	=============================================================================
 	
+
+{% endraw %}

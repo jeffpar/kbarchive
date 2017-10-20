@@ -6,6 +6,8 @@ permalink: /kb/102/Q102899/
 
 ## Q102899: Only 30 Characters of Local Group Name Shown in Properties
 
+{% raw %}
+
 	Article: Q102899
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -45,3 +47,5 @@ permalink: /kb/102/Q102899/
 	
 	=============================================================================
 	
+
+{% endraw %}

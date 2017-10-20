@@ -6,6 +6,8 @@ permalink: /kb/196/Q196615/
 
 ## Q196615: XFOR: PROFS and SNADS Connector Does Not Support Euro Symbol
 
+{% raw %}
+
 	Article: Q196615
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/196/Q196615/
 	
 	=============================================================================
 	
+
+{% endraw %}

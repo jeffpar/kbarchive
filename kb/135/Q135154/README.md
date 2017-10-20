@@ -6,6 +6,8 @@ permalink: /kb/135/Q135154/
 
 ## Q135154: Login Script GOTO Command Finds Wrong Target Label
 
+{% raw %}
+
 	Article: Q135154
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/135/Q135154/
 	
 	=============================================================================
 	
+
+{% endraw %}

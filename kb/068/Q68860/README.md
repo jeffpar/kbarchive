@@ -6,6 +6,8 @@ permalink: /kb/068/Q68860/
 
 ## Q68860: Unable to Move Icons Within Program Groups with Keyboard
 
+{% raw %}
+
 	Article: Q68860
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/068/Q68860/
 	
 	=============================================================================
 	
+
+{% endraw %}

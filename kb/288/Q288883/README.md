@@ -6,6 +6,8 @@ permalink: /kb/288/Q288883/
 
 ## Q288883: Error Message: No Server Path Specified
 
+{% raw %}
+
 	Article: Q288883
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -73,3 +75,5 @@ permalink: /kb/288/Q288883/
 	
 	=============================================================================
 	
+
+{% endraw %}

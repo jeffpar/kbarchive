@@ -6,6 +6,8 @@ permalink: /kb/179/Q179469/
 
 ## Q179469: Windows 98 Beta Is Not Included On CD-ROM
 
+{% raw %}
+
 	Article: Q179469
 	Product(s): Microsoft Press
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/179/Q179469/
 	
 	=============================================================================
 	
+
+{% endraw %}

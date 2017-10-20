@@ -6,6 +6,8 @@ permalink: /kb/192/Q192054/
 
 ## Q192054: SMTP: Mail from SMTP Gateway Has Incorrect Sent Date and Time
 
+{% raw %}
+
 	Article: Q192054
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0a; winnt:4.0,5.0,5.5
@@ -99,3 +101,5 @@ permalink: /kb/192/Q192054/
 	
 	=============================================================================
 	
+
+{% endraw %}

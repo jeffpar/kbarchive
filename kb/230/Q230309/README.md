@@ -6,6 +6,8 @@ permalink: /kb/230/Q230309/
 
 ## Q230309: Contents of SMTP Service Release Notes
 
+{% raw %}
+
 	Article: Q230309
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -346,3 +348,5 @@ permalink: /kb/230/Q230309/
 	
 	=============================================================================
 	
+
+{% endraw %}

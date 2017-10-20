@@ -6,6 +6,8 @@ permalink: /kb/243/Q243682/
 
 ## Q243682: INFO: Synching Up a Web Project with Visual SourceSafe
 
+{% raw %}
+
 	Article: Q243682
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/243/Q243682/
 	
 	=============================================================================
 	
+
+{% endraw %}

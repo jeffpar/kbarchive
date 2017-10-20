@@ -6,6 +6,8 @@ permalink: /kb/175/Q175704/
 
 ## Q175704: XFOR: IMS Failing to Decode Uuencoded Attachments
 
+{% raw %}
+
 	Article: Q175704
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -90,3 +92,5 @@ permalink: /kb/175/Q175704/
 	
 	=============================================================================
 	
+
+{% endraw %}

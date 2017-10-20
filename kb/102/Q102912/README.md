@@ -6,6 +6,8 @@ permalink: /kb/102/Q102912/
 
 ## Q102912: Scenes 1.0: Removing Picture Set Does Not Remove from Disk
 
+{% raw %}
+
 	Article: Q102912
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/102/Q102912/
 	
 	=============================================================================
 	
+
+{% endraw %}

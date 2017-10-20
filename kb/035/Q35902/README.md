@@ -6,6 +6,8 @@ permalink: /kb/035/Q35902/
 
 ## Q35902: /FPa; &quot;Symbol Defined More Than Once&quot; Linking BASIC and Pascal
 
+{% raw %}
+
 	Article: Q35902
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -41,3 +43,5 @@ permalink: /kb/035/Q35902/
 	      LIBPASA.LIB(fcall.ASM) : error L2025: __fpmath : symbol defined
 	      more than once
 	      pos: 1339E Record type: 7F04
+
+{% endraw %}

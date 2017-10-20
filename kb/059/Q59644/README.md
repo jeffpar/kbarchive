@@ -6,6 +6,8 @@ permalink: /kb/059/Q59644/
 
 ## Q59644: HPPCL Err Msg: Please Specify the Complete Path
 
+{% raw %}
+
 	Article: Q59644
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -36,3 +38,5 @@ permalink: /kb/059/Q59644/
 	
 	=============================================================================
 	
+
+{% endraw %}

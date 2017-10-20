@@ -6,6 +6,8 @@ permalink: /kb/155/Q155315/
 
 ## Q155315: Cannot Log On After User Access to Boot Partition Removed
 
+{% raw %}
+
 	Article: Q155315
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -160,3 +162,5 @@ permalink: /kb/155/Q155315/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132297/
 
 ## Q132297: Bookshelf 95: Problems Playing South African Anthem
 
+{% raw %}
+
 	Article: Q132297
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:3.x
@@ -71,3 +73,5 @@ permalink: /kb/132/Q132297/
 	
 	=============================================================================
 	
+
+{% endraw %}

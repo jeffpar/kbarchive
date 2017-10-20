@@ -6,6 +6,8 @@ permalink: /kb/249/Q249292/
 
 ## Q249292: XML In Action Comments and Corrections
 
+{% raw %}
+
 	Article: Q249292
 	Product(s): Microsoft Press
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/249/Q249292/
 	
 	=============================================================================
 	
+
+{% endraw %}

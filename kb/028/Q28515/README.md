@@ -6,6 +6,8 @@ permalink: /kb/028/Q28515/
 
 ## Q28515: Cipher Data Tape Drive Conflicts with Bus Mouse
 
+{% raw %}
+
 	Article: Q28515
 	Product(s): See article
 	Version(s): 1.00
@@ -18,3 +20,5 @@ permalink: /kb/028/Q28515/
 	time the Bus mouse moves.
 	   The Tape Drive can reportedly use another I/O address to resolve
 	the conflict. This is not a problem with the serial mouse.
+
+{% endraw %}

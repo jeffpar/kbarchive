@@ -6,6 +6,8 @@ permalink: /kb/108/Q108521/
 
 ## Q108521: FIX: ClassWizard Parsing Error with Float Variables
 
+{% raw %}
+
 	Article: Q108521
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -99,3 +101,5 @@ permalink: /kb/108/Q108521/
 	
 	=============================================================================
 	
+
+{% endraw %}

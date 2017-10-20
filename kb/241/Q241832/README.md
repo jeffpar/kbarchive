@@ -6,6 +6,8 @@ permalink: /kb/241/Q241832/
 
 ## Q241832: Err Msg: 401.4 Unauthorized: Authorization Denied by Filter
 
+{% raw %}
+
 	Article: Q241832
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -55,3 +57,5 @@ permalink: /kb/241/Q241832/
 	
 	=============================================================================
 	
+
+{% endraw %}

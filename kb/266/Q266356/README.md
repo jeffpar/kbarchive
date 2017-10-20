@@ -6,6 +6,8 @@ permalink: /kb/266/Q266356/
 
 ## Q266356: Multiple Calls to AddHeader Cause Heap Corruption in IIS 4.0
 
+{% raw %}
+
 	Article: Q266356
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -122,3 +124,5 @@ permalink: /kb/266/Q266356/
 	
 	=============================================================================
 	
+
+{% endraw %}

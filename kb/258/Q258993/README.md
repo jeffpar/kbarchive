@@ -6,6 +6,8 @@ permalink: /kb/258/Q258993/
 
 ## Q258993: Perflib Event 1009 Occurs When Opening COMTI Performance Monito
 
+{% raw %}
+
 	Article: Q258993
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,1.0 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -85,3 +87,5 @@ permalink: /kb/258/Q258993/
 	
 	=============================================================================
 	
+
+{% endraw %}

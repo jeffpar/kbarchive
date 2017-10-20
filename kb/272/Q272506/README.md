@@ -6,6 +6,8 @@ permalink: /kb/272/Q272506/
 
 ## Q272506: XFOR: Event 3018 Occurs When Restarting the IMS
 
+{% raw %}
+
 	Article: Q272506
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -54,3 +56,5 @@ permalink: /kb/272/Q272506/
 	
 	=============================================================================
 	
+
+{% endraw %}

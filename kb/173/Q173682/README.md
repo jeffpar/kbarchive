@@ -6,6 +6,8 @@ permalink: /kb/173/Q173682/
 
 ## Q173682: Print Service Doesn't Print Jobs Concurrently If PDT Is Used
 
+{% raw %}
+
 	Article: Q173682
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -83,3 +85,5 @@ permalink: /kb/173/Q173682/
 	
 	=============================================================================
 	
+
+{% endraw %}

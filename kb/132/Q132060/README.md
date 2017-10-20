@@ -6,6 +6,8 @@ permalink: /kb/132/Q132060/
 
 ## Q132060: SMTP: SMTP Gateway in Small, Medium, and Large Organizations
 
+{% raw %}
+
 	Article: Q132060
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -259,3 +261,5 @@ permalink: /kb/132/Q132060/
 	
 	=============================================================================
 	
+
+{% endraw %}

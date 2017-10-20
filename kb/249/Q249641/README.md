@@ -6,6 +6,8 @@ permalink: /kb/249/Q249641/
 
 ## Q249641: XADM: Exchange Admin Cannot Display Over 65535 Public Folders
 
+{% raw %}
+
 	Article: Q249641
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -115,3 +117,5 @@ permalink: /kb/249/Q249641/
 	
 	=============================================================================
 	
+
+{% endraw %}

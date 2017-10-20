@@ -6,6 +6,8 @@ permalink: /kb/156/Q156575/
 
 ## Q156575: PRB: Word Wrap is Disabled when Syntax Coloring Is Enabled
 
+{% raw %}
+
 	Article: Q156575
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -61,3 +63,5 @@ permalink: /kb/156/Q156575/
 	
 	=============================================================================
 	
+
+{% endraw %}

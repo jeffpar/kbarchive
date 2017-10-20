@@ -6,6 +6,8 @@ permalink: /kb/137/Q137798/
 
 ## Q137798: SMS: Re-draw Problem with Package Command Manager
 
+{% raw %}
+
 	Article: Q137798
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -48,3 +50,5 @@ permalink: /kb/137/Q137798/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/322/Q322224/
 
 ## Q322224: DOC: MSDN InstanceDescriptor Class Example Is Incorrect
 
+{% raw %}
+
 	Article: Q322224
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/322/Q322224/
 	
 	=============================================================================
 	
+
+{% endraw %}

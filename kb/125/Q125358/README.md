@@ -6,6 +6,8 @@ permalink: /kb/125/Q125358/
 
 ## Q125358: STOP Message Installing Windows NT on NEC Image Computer
 
+{% raw %}
+
 	Article: Q125358
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/125/Q125358/
 	
 	=============================================================================
 	
+
+{% endraw %}

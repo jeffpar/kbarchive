@@ -6,6 +6,8 @@ permalink: /kb/271/Q271518/
 
 ## Q271518: Error Message Loading Profile When Using Roaming Profile
 
+{% raw %}
+
 	Article: Q271518
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -114,3 +116,5 @@ permalink: /kb/271/Q271518/
 	
 	=============================================================================
 	
+
+{% endraw %}

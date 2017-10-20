@@ -6,6 +6,8 @@ permalink: /kb/235/Q235434/
 
 ## Q235434: FIX: &quot;Attach to Process&quot; List Is Empty
 
+{% raw %}
+
 	Article: Q235434
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -115,3 +117,5 @@ permalink: /kb/235/Q235434/
 	
 	=============================================================================
 	
+
+{% endraw %}

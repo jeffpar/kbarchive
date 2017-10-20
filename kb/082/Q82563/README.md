@@ -6,6 +6,8 @@ permalink: /kb/082/Q82563/
 
 ## Q82563: Windows Hangs on ALT+TAB with Logitech Mouse Driver
 
+{% raw %}
+
 	Article: Q82563
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/082/Q82563/
 	
 	=============================================================================
 	
+
+{% endraw %}

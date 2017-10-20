@@ -6,6 +6,8 @@ permalink: /kb/126/Q126545/
 
 ## Q126545: Cannot Find Second NetWare Server with Two Net Cards Installed
 
+{% raw %}
+
 	Article: Q126545
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/126/Q126545/
 	
 	=============================================================================
 	
+
+{% endraw %}

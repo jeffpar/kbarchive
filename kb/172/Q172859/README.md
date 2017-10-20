@@ -6,6 +6,8 @@ permalink: /kb/172/Q172859/
 
 ## Q172859: ODE97: &quot;You Don't Have a License&quot; Error Using ActiveX Control
 
+{% raw %}
+
 	Article: Q172859
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/172/Q172859/
 	
 	=============================================================================
 	
+
+{% endraw %}

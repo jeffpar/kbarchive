@@ -6,6 +6,8 @@ permalink: /kb/130/Q130298/
 
 ## Q130298: INFO: Cursors and the Data Environment on Forms and Reports
 
+{% raw %}
+
 	Article: Q130298
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130298/
 	
 	=============================================================================
 	
+
+{% endraw %}

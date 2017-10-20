@@ -6,6 +6,8 @@ permalink: /kb/146/Q146451/
 
 ## Q146451: Scenes 1.0: Impressionists Disk 1 Contents
 
+{% raw %}
+
 	Article: Q146451
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/146/Q146451/
 	
 	=============================================================================
 	
+
+{% endraw %}

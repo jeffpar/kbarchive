@@ -6,6 +6,8 @@ permalink: /kb/200/Q200670/
 
 ## Q200670: SMS: Customizing the SMS Administrator Console
 
+{% raw %}
+
 	Article: Q200670
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -191,3 +193,5 @@ permalink: /kb/200/Q200670/
 	
 	=============================================================================
 	
+
+{% endraw %}

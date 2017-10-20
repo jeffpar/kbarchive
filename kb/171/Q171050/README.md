@@ -6,6 +6,8 @@ permalink: /kb/171/Q171050/
 
 ## Q171050: XADM: Err Msg: Event ID 1005; Name Service Is Unavailable
 
+{% raw %}
+
 	Article: Q171050
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/171/Q171050/
 	
 	=============================================================================
 	
+
+{% endraw %}

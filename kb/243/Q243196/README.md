@@ -6,6 +6,8 @@ permalink: /kb/243/Q243196/
 
 ## Q243196: Internet Information Services 5.0 RC2 Release Notes
 
+{% raw %}
+
 	Article: Q243196
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -112,3 +114,5 @@ permalink: /kb/243/Q243196/
 	
 	=============================================================================
 	
+
+{% endraw %}

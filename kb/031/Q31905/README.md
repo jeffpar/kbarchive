@@ -6,6 +6,8 @@ permalink: /kb/031/Q31905/
 
 ## Q31905: Loading Scenery Disks When Running on Floppy Disks
 
+{% raw %}
+
 	Article: Q31905
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/031/Q31905/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193844/
 
 ## Q193844: Explanation of DNS Wildcards
 
+{% raw %}
+
 	Article: Q193844
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/193/Q193844/
 	
 	=============================================================================
 	
+
+{% endraw %}

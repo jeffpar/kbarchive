@@ -6,6 +6,8 @@ permalink: /kb/242/Q242312/
 
 ## Q242312: HOWTO: Distribute an ADOCE 2.0 Application to a PsPC Device
 
+{% raw %}
+
 	Article: Q242312
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -120,3 +122,5 @@ permalink: /kb/242/Q242312/
 	
 	=============================================================================
 	
+
+{% endraw %}

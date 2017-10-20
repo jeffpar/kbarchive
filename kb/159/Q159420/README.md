@@ -6,6 +6,8 @@ permalink: /kb/159/Q159420/
 
 ## Q159420: Mac Encarta 97: Trouble Downloading/Integrating Yearbook Update
 
+{% raw %}
+
 	Article: Q159420
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -214,3 +216,5 @@ permalink: /kb/159/Q159420/
 	
 	=============================================================================
 	
+
+{% endraw %}

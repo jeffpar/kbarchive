@@ -6,6 +6,8 @@ permalink: /kb/128/Q128931/
 
 ## Q128931: Enabling SCSI-Tagged Command Queuing for NCR PCI SCSI Controller
 
+{% raw %}
+
 	Article: Q128931
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/128/Q128931/
 	
 	=============================================================================
 	
+
+{% endraw %}

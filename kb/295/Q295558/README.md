@@ -6,6 +6,8 @@ permalink: /kb/295/Q295558/
 
 ## Q295558: HOWTO: Add Delegate To Exchange Folder w/ ACL Component and CDO
 
+{% raw %}
+
 	Article: Q295558
 	Product(s): Microsoft Exchange
 	Version(s): 1.21,5.5
@@ -151,3 +153,5 @@ permalink: /kb/295/Q295558/
 	
 	=============================================================================
 	
+
+{% endraw %}

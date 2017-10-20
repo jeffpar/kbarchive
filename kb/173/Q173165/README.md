@@ -6,6 +6,8 @@ permalink: /kb/173/Q173165/
 
 ## Q173165: FIX: Modified Resource Files Don't Affect Resources
 
+{% raw %}
+
 	Article: Q173165
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS NT:5.0,6.0
@@ -116,3 +118,5 @@ permalink: /kb/173/Q173165/
 	
 	=============================================================================
 	
+
+{% endraw %}

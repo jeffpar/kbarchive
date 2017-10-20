@@ -6,6 +6,8 @@ permalink: /kb/152/Q152686/
 
 ## Q152686: XCLN: How Expired Encryption Key Pairs Work
 
+{% raw %}
+
 	Article: Q152686
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/152/Q152686/
 	
 	=============================================================================
 	
+
+{% endraw %}

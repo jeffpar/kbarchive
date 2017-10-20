@@ -6,6 +6,8 @@ permalink: /kb/228/Q228942/
 
 ## Q228942: SP4 May Cause Loss of TCP/IP Connectivity in WLBS Host
 
+{% raw %}
+
 	Article: Q228942
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0 SP4
@@ -108,3 +110,5 @@ permalink: /kb/228/Q228942/
 	
 	=============================================================================
 	
+
+{% endraw %}

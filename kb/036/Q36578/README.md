@@ -6,6 +6,8 @@ permalink: /kb/036/Q36578/
 
 ## Q36578: &quot;Bad File Mode&quot; Loading 4.50 Fast Load Format File into 4.00
 
+{% raw %}
+
 	Article: Q36578
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/036/Q36578/
 	
 	Note that QuickBASIC versions earlier than 4.00 do not have a Fast
 	Load format (just text mode).
+
+{% endraw %}

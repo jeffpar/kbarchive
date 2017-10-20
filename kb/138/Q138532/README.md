@@ -6,6 +6,8 @@ permalink: /kb/138/Q138532/
 
 ## Q138532: PRB: VB Tab Control Picture Property Doesn't Support Metafiles
 
+{% raw %}
+
 	Article: Q138532
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -51,3 +53,5 @@ permalink: /kb/138/Q138532/
 	
 	=============================================================================
 	
+
+{% endraw %}

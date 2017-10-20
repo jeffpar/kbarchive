@@ -6,6 +6,8 @@ permalink: /kb/206/Q206081/
 
 ## Q206081: NMI Parity Errors on NCR WorldMark 4300 Pentium Pro
 
+{% raw %}
+
 	Article: Q206081
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -68,3 +70,5 @@ permalink: /kb/206/Q206081/
 	
 	=============================================================================
 	
+
+{% endraw %}

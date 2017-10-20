@@ -6,6 +6,8 @@ permalink: /kb/174/Q174668/
 
 ## Q174668: INFO: Dbgrid32.ocx Requires Grdkrn32.dll
 
+{% raw %}
+
 	Article: Q174668
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,4.1,4.2
@@ -54,3 +56,5 @@ permalink: /kb/174/Q174668/
 	
 	=============================================================================
 	
+
+{% endraw %}

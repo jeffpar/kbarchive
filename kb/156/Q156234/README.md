@@ -6,6 +6,8 @@ permalink: /kb/156/Q156234/
 
 ## Q156234: PRB: CLOSE DATABASE ALL Does Not Close All Databases
 
+{% raw %}
+
 	Article: Q156234
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/156/Q156234/
 	
 	=============================================================================
 	
+
+{% endraw %}

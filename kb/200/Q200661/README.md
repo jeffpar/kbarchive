@@ -6,6 +6,8 @@ permalink: /kb/200/Q200661/
 
 ## Q200661: XFOR: Event ID 2403: Failure Converting OLE v2 Object to OLE v1
 
+{% raw %}
+
 	Article: Q200661
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/200/Q200661/
 	
 	=============================================================================
 	
+
+{% endraw %}

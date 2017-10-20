@@ -6,6 +6,8 @@ permalink: /kb/186/Q186551/
 
 ## Q186551: Terminal Server Error Messages: 1200 to 1399
 
+{% raw %}
+
 	Article: Q186551
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -796,3 +798,5 @@ permalink: /kb/186/Q186551/
 	
 	=============================================================================
 	
+
+{% endraw %}

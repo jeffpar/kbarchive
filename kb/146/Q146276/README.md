@@ -6,6 +6,8 @@ permalink: /kb/146/Q146276/
 
 ## Q146276: XCLN: Sectool.exe Loses Message Body Information
 
+{% raw %}
+
 	Article: Q146276
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -53,3 +55,5 @@ permalink: /kb/146/Q146276/
 	
 	=============================================================================
 	
+
+{% endraw %}

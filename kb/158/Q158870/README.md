@@ -6,6 +6,8 @@ permalink: /kb/158/Q158870/
 
 ## Q158870: HOWTO: Display DBCS in a VB Application Running on Windows NT
 
+{% raw %}
+
 	Article: Q158870
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -144,3 +146,5 @@ permalink: /kb/158/Q158870/
 	
 	=============================================================================
 	
+
+{% endraw %}

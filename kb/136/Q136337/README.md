@@ -6,6 +6,8 @@ permalink: /kb/136/Q136337/
 
 ## Q136337: Troubleshooting Windows 95 Startup Problems and Error Messages
 
+{% raw %}
+
 	Article: Q136337
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -288,3 +290,5 @@ permalink: /kb/136/Q136337/
 	
 	=============================================================================
 	
+
+{% endraw %}

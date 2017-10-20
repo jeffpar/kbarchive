@@ -6,6 +6,8 @@ permalink: /kb/324/Q324204/
 
 ## Q324204: SMS: Collections That Are Based on Complex Queries Do Not Update
 
+{% raw %}
+
 	Article: Q324204
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3,2.0 SP4
@@ -395,3 +397,5 @@ permalink: /kb/324/Q324204/
 	
 	=============================================================================
 	
+
+{% endraw %}

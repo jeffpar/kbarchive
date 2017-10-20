@@ -6,6 +6,8 @@ permalink: /kb/226/Q226867/
 
 ## Q226867: SMS: Time Zone Is Not Registered for Licensed Programs
 
+{% raw %}
+
 	Article: Q226867
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -51,3 +53,5 @@ permalink: /kb/226/Q226867/
 	
 	=============================================================================
 	
+
+{% endraw %}

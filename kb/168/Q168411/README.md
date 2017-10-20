@@ -6,6 +6,8 @@ permalink: /kb/168/Q168411/
 
 ## Q168411: FIX: VS97 Per-File Switch at Project Level Silently Deleted
 
+{% raw %}
+
 	Article: Q168411
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -72,3 +74,5 @@ permalink: /kb/168/Q168411/
 	
 	=============================================================================
 	
+
+{% endraw %}

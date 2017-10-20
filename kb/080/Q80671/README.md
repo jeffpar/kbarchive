@@ -6,6 +6,8 @@ permalink: /kb/080/Q80671/
 
 ## Q80671: Novell Err Msg: VIPX.386 Cannot Load
 
+{% raw %}
+
 	Article: Q80671
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/080/Q80671/
 	
 	=============================================================================
 	
+
+{% endraw %}

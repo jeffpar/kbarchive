@@ -6,6 +6,8 @@ permalink: /kb/240/Q240642/
 
 ## Q240642: World Atlas: Quits Unexpectedly When Screen Resolution Changed
 
+{% raw %}
+
 	Article: Q240642
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/240/Q240642/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152935/
 
 ## Q152935: XADM: Adding/Removing Recipient Containers to MSMail Dir-Sync
 
+{% raw %}
+
 	Article: Q152935
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -137,3 +139,5 @@ permalink: /kb/152/Q152935/
 	
 	=============================================================================
 	
+
+{% endraw %}

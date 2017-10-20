@@ -6,6 +6,8 @@ permalink: /kb/235/Q235661/
 
 ## Q235661: WD97: Error Msg: &quot;Word cannot edit the Microsoft Excel Chart&quot;
 
+{% raw %}
+
 	Article: Q235661
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/235/Q235661/
 	
 	=============================================================================
 	
+
+{% endraw %}

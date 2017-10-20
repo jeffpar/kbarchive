@@ -6,6 +6,8 @@ permalink: /kb/154/Q154941/
 
 ## Q154941: XADM: How to Determine Which Public Folder Replica is Used
 
+{% raw %}
+
 	Article: Q154941
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -108,3 +110,5 @@ permalink: /kb/154/Q154941/
 	
 	=============================================================================
 	
+
+{% endraw %}

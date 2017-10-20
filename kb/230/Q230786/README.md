@@ -6,6 +6,8 @@ permalink: /kb/230/Q230786/
 
 ## Q230786: How to Enable RADIUS Port for Network Monitor
 
+{% raw %}
+
 	Article: Q230786
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/230/Q230786/
 	
 	=============================================================================
 	
+
+{% endraw %}

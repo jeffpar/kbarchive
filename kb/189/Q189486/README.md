@@ -6,6 +6,8 @@ permalink: /kb/189/Q189486/
 
 ## Q189486: HOWTO: Expose an MFC OLE Container to VBA Automation
 
+{% raw %}
+
 	Article: Q189486
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -152,3 +154,5 @@ permalink: /kb/189/Q189486/
 	
 	=============================================================================
 	
+
+{% endraw %}

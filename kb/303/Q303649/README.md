@@ -6,6 +6,8 @@ permalink: /kb/303/Q303649/
 
 ## Q303649: SMS: User and User Group Discovery Runs w/Site Component Manager
 
+{% raw %}
+
 	Article: Q303649
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -68,3 +70,5 @@ permalink: /kb/303/Q303649/
 	
 	=============================================================================
 	
+
+{% endraw %}

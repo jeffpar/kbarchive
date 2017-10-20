@@ -6,6 +6,8 @@ permalink: /kb/242/Q242176/
 
 ## Q242176: Err Msg: A Chain of Certs Didn't Chain as They Should in a...
 
+{% raw %}
+
 	Article: Q242176
 	Product(s): Internet Information Server
 	Version(s): 1.0,4.0
@@ -76,3 +78,5 @@ permalink: /kb/242/Q242176/
 	
 	=============================================================================
 	
+
+{% endraw %}

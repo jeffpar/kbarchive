@@ -6,6 +6,8 @@ permalink: /kb/203/Q203017/
 
 ## Q203017: PRB: &quot;Only one database connection is supported at one time&quot;
 
+{% raw %}
+
 	Article: Q203017
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -106,3 +108,5 @@ permalink: /kb/203/Q203017/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247375/
 
 ## Q247375: INETINFO.EXE Ends With MTS Event 4097 Using MS ODBC for DB2
 
+{% raw %}
+
 	Article: Q247375
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3
@@ -119,3 +121,5 @@ permalink: /kb/247/Q247375/
 	
 	=============================================================================
 	
+
+{% endraw %}

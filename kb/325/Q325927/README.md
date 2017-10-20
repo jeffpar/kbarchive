@@ -6,6 +6,8 @@ permalink: /kb/325/Q325927/
 
 ## Q325927: Unknown Comp Filter Priority When You Turn On HTTP Compression
 
+{% raw %}
+
 	Article: Q325927
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -109,3 +111,5 @@ permalink: /kb/325/Q325927/
 	
 	=============================================================================
 	
+
+{% endraw %}

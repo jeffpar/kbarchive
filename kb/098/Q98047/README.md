@@ -6,6 +6,8 @@ permalink: /kb/098/Q98047/
 
 ## Q98047: PC WFW: 1.0a Schedule+ for Windows Disk 2 &#91;5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q98047
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -65,3 +67,5 @@ permalink: /kb/098/Q98047/
 	
 	=============================================================================
 	
+
+{% endraw %}

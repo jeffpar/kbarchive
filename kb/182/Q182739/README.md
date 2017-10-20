@@ -6,6 +6,8 @@ permalink: /kb/182/Q182739/
 
 ## Q182739: Lock Workstation Button Still Functions After Being Disabled
 
+{% raw %}
+
 	Article: Q182739
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/182/Q182739/
 	
 	=============================================================================
 	
+
+{% endraw %}

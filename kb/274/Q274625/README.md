@@ -6,6 +6,8 @@ permalink: /kb/274/Q274625/
 
 ## Q274625: Combat Flight Simulator 2: Poor Video Performance
 
+{% raw %}
+
 	Article: Q274625
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -85,3 +87,5 @@ permalink: /kb/274/Q274625/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194641/
 
 ## Q194641: HOWTO: Make A Trusted SQL Server DSNLESS Connection
 
+{% raw %}
+
 	Article: Q194641
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194641/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114832/
 
 ## Q114832: ADT/ODE: Calendar Control Cannot Format Individual Dates
 
+{% raw %}
+
 	Article: Q114832
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0,7.0,97
@@ -128,3 +130,5 @@ permalink: /kb/114/Q114832/
 	
 	=============================================================================
 	
+
+{% endraw %}

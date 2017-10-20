@@ -6,6 +6,8 @@ permalink: /kb/163/Q163892/
 
 ## Q163892: A Service May Not Set Hooks on 32-bit GUI Applications
 
+{% raw %}
+
 	Article: Q163892
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163892/
 	
 	=============================================================================
 	
+
+{% endraw %}

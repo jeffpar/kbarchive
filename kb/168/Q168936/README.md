@@ -6,6 +6,8 @@ permalink: /kb/168/Q168936/
 
 ## Q168936: FIX: Virtual Base Class Destructor Called More than Once
 
+{% raw %}
+
 	Article: Q168936
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -138,3 +140,5 @@ permalink: /kb/168/Q168936/
 	
 	=============================================================================
 	
+
+{% endraw %}

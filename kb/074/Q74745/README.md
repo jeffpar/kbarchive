@@ -6,6 +6,8 @@ permalink: /kb/074/Q74745/
 
 ## Q74745: BUG: Assembling .ASM File With CL.EXE Fails w/ MASM 6.0
 
+{% raw %}
+
 	Article: Q74745
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a
@@ -66,3 +68,5 @@ permalink: /kb/074/Q74745/
 	
 	=============================================================================
 	
+
+{% endraw %}

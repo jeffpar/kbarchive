@@ -6,6 +6,8 @@ permalink: /kb/232/Q232985/
 
 ## Q232985: Remotely Administering IIS 4.0 with MMC Returns Access Denied
 
+{% raw %}
+
 	Article: Q232985
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/232/Q232985/
 	
 	=============================================================================
 	
+
+{% endraw %}

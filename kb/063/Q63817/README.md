@@ -6,6 +6,8 @@ permalink: /kb/063/Q63817/
 
 ## Q63817: FIX: Protection Violation Compiling BLOCK DATA with Implied DO
 
+{% raw %}
+
 	Article: Q63817
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.0
@@ -76,3 +78,5 @@ permalink: /kb/063/Q63817/
 	
 	=============================================================================
 	
+
+{% endraw %}

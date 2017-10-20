@@ -6,6 +6,8 @@ permalink: /kb/142/Q142233/
 
 ## Q142233: No Password Prompt After Network Adapter Is Detected
 
+{% raw %}
+
 	Article: Q142233
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -132,3 +134,5 @@ permalink: /kb/142/Q142233/
 	
 	=============================================================================
 	
+
+{% endraw %}

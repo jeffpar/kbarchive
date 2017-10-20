@@ -6,6 +6,8 @@ permalink: /kb/198/Q198356/
 
 ## Q198356: WD97: Float Over Text Object Disappears Inserting to a Frame
 
+{% raw %}
+
 	Article: Q198356
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/198/Q198356/
 	
 	=============================================================================
 	
+
+{% endraw %}

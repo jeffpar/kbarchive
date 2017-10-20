@@ -6,6 +6,8 @@ permalink: /kb/139/Q139922/
 
 ## Q139922: Encarta 1995: Word Processor Starts Only Once
 
+{% raw %}
+
 	Article: Q139922
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -51,3 +53,5 @@ permalink: /kb/139/Q139922/
 	
 	=============================================================================
 	
+
+{% endraw %}

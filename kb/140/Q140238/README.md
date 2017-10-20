@@ -6,6 +6,8 @@ permalink: /kb/140/Q140238/
 
 ## Q140238: PRB: Can't Run Mastering Visual FoxPro with ATI Video Drivers
 
+{% raw %}
+
 	Article: Q140238
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140238/
 	
 	=============================================================================
 	
+
+{% endraw %}

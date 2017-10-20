@@ -6,6 +6,8 @@ permalink: /kb/175/Q175439/
 
 ## Q175439: XFOR: Enabling SSL For Exchange Server
 
+{% raw %}
+
 	Article: Q175439
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -156,3 +158,5 @@ permalink: /kb/175/Q175439/
 	
 	=============================================================================
 	
+
+{% endraw %}

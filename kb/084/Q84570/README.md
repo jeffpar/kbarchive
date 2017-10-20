@@ -6,6 +6,8 @@ permalink: /kb/084/Q84570/
 
 ## Q84570: Where Windows 3.1 Looks for the MOUSE.INI File
 
+{% raw %}
+
 	Article: Q84570
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -114,3 +116,5 @@ permalink: /kb/084/Q84570/
 	
 	=============================================================================
 	
+
+{% endraw %}

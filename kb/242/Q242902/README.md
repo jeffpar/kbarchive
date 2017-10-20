@@ -6,6 +6,8 @@ permalink: /kb/242/Q242902/
 
 ## Q242902: AoE II Err Msg: Could Not Initialize Graphics System...
 
+{% raw %}
+
 	Article: Q242902
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -356,3 +358,5 @@ permalink: /kb/242/Q242902/
 	
 	=============================================================================
 	
+
+{% endraw %}

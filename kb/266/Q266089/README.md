@@ -6,6 +6,8 @@ permalink: /kb/266/Q266089/
 
 ## Q266089: PRB: MODIFY VIEW with Long IN Clause Causes VFP to Terminate
 
+{% raw %}
+
 	Article: Q266089
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -95,3 +97,5 @@ permalink: /kb/266/Q266089/
 	
 	=============================================================================
 	
+
+{% endraw %}

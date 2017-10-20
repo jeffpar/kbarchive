@@ -6,6 +6,8 @@ permalink: /kb/317/Q317547/
 
 ## Q317547: How To Configure TCP/IP Settings In A Macintosh OS For A Broadba
 
+{% raw %}
+
 	Article: Q317547
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/317/Q317547/
 	
 	=============================================================================
 	
+
+{% endraw %}

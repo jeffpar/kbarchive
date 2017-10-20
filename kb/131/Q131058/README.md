@@ -6,6 +6,8 @@ permalink: /kb/131/Q131058/
 
 ## Q131058: INFO: Tips for Remote Debugging with Visual C++ 2.x, 4.0/5.0/6.0
 
+{% raw %}
+
 	Article: Q131058
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,4.2,5.0,6.0
@@ -183,3 +185,5 @@ permalink: /kb/131/Q131058/
 	
 	=============================================================================
 	
+
+{% endraw %}

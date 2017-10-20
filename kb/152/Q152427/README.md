@@ -6,6 +6,8 @@ permalink: /kb/152/Q152427/
 
 ## Q152427: SNA Server Windows Enhanced APPC Router Win.ini Parameters
 
+{% raw %}
+
 	Article: Q152427
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11 SP1,3.0
@@ -124,3 +126,5 @@ permalink: /kb/152/Q152427/
 	
 	=============================================================================
 	
+
+{% endraw %}

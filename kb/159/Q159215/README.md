@@ -6,6 +6,8 @@ permalink: /kb/159/Q159215/
 
 ## Q159215: XCLN: PAB Location Inconsistent in &quot;Show Names from&quot; listbox
 
+{% raw %}
+
 	Article: Q159215
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -76,3 +78,5 @@ permalink: /kb/159/Q159215/
 	
 	=============================================================================
 	
+
+{% endraw %}

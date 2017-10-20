@@ -6,6 +6,8 @@ permalink: /kb/145/Q145613/
 
 ## Q145613: Access Violation Using MPR and Third-Party Network Provider
 
+{% raw %}
+
 	Article: Q145613
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -92,3 +94,5 @@ permalink: /kb/145/Q145613/
 	
 	=============================================================================
 	
+
+{% endraw %}

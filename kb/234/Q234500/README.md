@@ -6,6 +6,8 @@ permalink: /kb/234/Q234500/
 
 ## Q234500: Microsoft Pocket Guide to MS Excel 2000 Comments and Corrections
 
+{% raw %}
+
 	Article: Q234500
 	Product(s): Microsoft Press
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/234/Q234500/
 	
 	=============================================================================
 	
+
+{% endraw %}

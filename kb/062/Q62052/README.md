@@ -6,6 +6,8 @@ permalink: /kb/062/Q62052/
 
 ## Q62052: Mac Hyp: Getting the Name of Currently Logged On User
 
+{% raw %}
+
 	Article: Q62052
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -44,3 +46,5 @@ permalink: /kb/062/Q62052/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271631/
 
 ## Q271631: SMS: Clients Ignore Specified Polling Interval for Advertisement
 
+{% raw %}
+
 	Article: Q271631
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -74,3 +76,5 @@ permalink: /kb/271/Q271631/
 	
 	=============================================================================
 	
+
+{% endraw %}

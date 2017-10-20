@@ -6,6 +6,8 @@ permalink: /kb/273/Q273807/
 
 ## Q273807: Midtown Madness 2: Correct Audio Device Is Not Displayed
 
+{% raw %}
+
 	Article: Q273807
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -55,3 +57,5 @@ permalink: /kb/273/Q273807/
 	
 	=============================================================================
 	
+
+{% endraw %}

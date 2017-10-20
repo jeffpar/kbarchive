@@ -6,6 +6,8 @@ permalink: /kb/128/Q128218/
 
 ## Q128218: Using Remote Mail on The Microsoft Network
 
+{% raw %}
+
 	Article: Q128218
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,95
@@ -126,3 +128,5 @@ permalink: /kb/128/Q128218/
 	
 	=============================================================================
 	
+
+{% endraw %}

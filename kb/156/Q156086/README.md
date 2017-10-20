@@ -6,6 +6,8 @@ permalink: /kb/156/Q156086/
 
 ## Q156086: HOWTO: Replace a Text Field Value from a Shortcut Menu
 
+{% raw %}
+
 	Article: Q156086
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/156/Q156086/
 	
 	=============================================================================
 	
+
+{% endraw %}

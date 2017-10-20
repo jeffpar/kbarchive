@@ -6,6 +6,8 @@ permalink: /kb/191/Q191834/
 
 ## Q191834: Network Problems That Occur When Logging Off May Corrupt Profile
 
+{% raw %}
+
 	Article: Q191834
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -104,3 +106,5 @@ permalink: /kb/191/Q191834/
 	
 	=============================================================================
 	
+
+{% endraw %}

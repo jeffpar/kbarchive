@@ -6,6 +6,8 @@ permalink: /kb/035/Q35538/
 
 ## Q35538: Saving without Exiting
 
+{% raw %}
+
 	Article: Q35538
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -30,3 +32,5 @@ permalink: /kb/035/Q35538/
 	
 	   Save:=Arg Arg Setfile
 	   Save:Alt+S
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125455/
 
 ## Q125455: Shadow Effect with SMS MachineIDs and NetWare 500/1000 Licenses
 
+{% raw %}
+
 	Article: Q125455
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -75,3 +77,5 @@ permalink: /kb/125/Q125455/
 	
 	=============================================================================
 	
+
+{% endraw %}

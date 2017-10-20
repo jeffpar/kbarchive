@@ -6,6 +6,8 @@ permalink: /kb/128/Q128443/
 
 ## Q128443: MHS: Mail Stops Moving Between Microsoft Mail and MHS
 
+{% raw %}
+
 	Article: Q128443
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/128/Q128443/
 	
 	=============================================================================
 	
+
+{% endraw %}

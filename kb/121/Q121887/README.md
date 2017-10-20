@@ -6,6 +6,8 @@ permalink: /kb/121/Q121887/
 
 ## Q121887: PRB: Debugger Can't Evaluate Cast of Enum to (long&#42;)
 
+{% raw %}
+
 	Article: Q121887
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/121/Q121887/
 	
 	=============================================================================
 	
+
+{% endraw %}

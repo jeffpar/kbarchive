@@ -6,6 +6,8 @@ permalink: /kb/094/Q94331/
 
 ## Q94331: Disk Error Messages with ASPI2DOS.SYS Device Driver
 
+{% raw %}
+
 	Article: Q94331
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -66,3 +68,5 @@ permalink: /kb/094/Q94331/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272166/
 
 ## Q272166: SMS: Smsclreg.dll Generates Error When Running 20clicln.bat
 
+{% raw %}
+
 	Article: Q272166
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -54,3 +56,5 @@ permalink: /kb/272/Q272166/
 	
 	=============================================================================
 	
+
+{% endraw %}

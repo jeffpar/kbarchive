@@ -6,6 +6,8 @@ permalink: /kb/155/Q155888/
 
 ## Q155888: PRB: Binary Files with Keyword Expansion Corrupted
 
+{% raw %}
+
 	Article: Q155888
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -136,3 +138,5 @@ permalink: /kb/155/Q155888/
 	
 	=============================================================================
 	
+
+{% endraw %}

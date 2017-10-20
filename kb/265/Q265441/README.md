@@ -6,6 +6,8 @@ permalink: /kb/265/Q265441/
 
 ## Q265441: XADM: Some Questions and Answers About the Exmerge Utility
 
+{% raw %}
+
 	Article: Q265441
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -273,3 +275,5 @@ permalink: /kb/265/Q265441/
 	
 	=============================================================================
 	
+
+{% endraw %}

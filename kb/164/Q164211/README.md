@@ -6,6 +6,8 @@ permalink: /kb/164/Q164211/
 
 ## Q164211: FPNW Doesn't Convert the Long File Names Correctly
 
+{% raw %}
+
 	Article: Q164211
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/164/Q164211/
 	
 	=============================================================================
 	
+
+{% endraw %}

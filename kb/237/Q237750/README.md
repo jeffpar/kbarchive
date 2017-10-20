@@ -6,6 +6,8 @@ permalink: /kb/237/Q237750/
 
 ## Q237750: SMS: Windows 2000 Beta 3 Upgrade Scripts Are Incorrect
 
+{% raw %}
+
 	Article: Q237750
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -77,3 +79,5 @@ permalink: /kb/237/Q237750/
 	
 	=============================================================================
 	
+
+{% endraw %}

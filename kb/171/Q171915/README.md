@@ -6,6 +6,8 @@ permalink: /kb/171/Q171915/
 
 ## Q171915: Active User Sessions Always Display Total Users Sessions
 
+{% raw %}
+
 	Article: Q171915
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -54,3 +56,5 @@ permalink: /kb/171/Q171915/
 	
 	=============================================================================
 	
+
+{% endraw %}

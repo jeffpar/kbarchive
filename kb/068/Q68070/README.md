@@ -6,6 +6,8 @@ permalink: /kb/068/Q68070/
 
 ## Q68070: Not Enough Core Message in PWB Caused By Lack of Memory
 
+{% raw %}
+
 	Article: Q68070
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1
@@ -34,3 +36,5 @@ permalink: /kb/068/Q68070/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170880/
 
 ## Q170880: Diskdump.sys Common Buffer Size Is Changed
 
+{% raw %}
+
 	Article: Q170880
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/170/Q170880/
 	
 	=============================================================================
 	
+
+{% endraw %}

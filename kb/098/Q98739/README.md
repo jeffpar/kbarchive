@@ -6,6 +6,8 @@ permalink: /kb/098/Q98739/
 
 ## Q98739: The Window Sound System Autodemo
 
+{% raw %}
+
 	Article: Q98739
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.00
@@ -64,3 +66,5 @@ permalink: /kb/098/Q98739/
 	
 	=============================================================================
 	
+
+{% endraw %}

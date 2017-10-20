@@ -6,6 +6,8 @@ permalink: /kb/243/Q243303/
 
 ## Q243303: Recycle Bin May Open Slowly If Security Is Set on Logical Disks
 
+{% raw %}
+
 	Article: Q243303
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/243/Q243303/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217026/
 
 ## Q217026: PRB: IIPF from UserControl with a User-Defined Validate Event
 
+{% raw %}
+
 	Article: Q217026
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -116,3 +118,5 @@ permalink: /kb/217/Q217026/
 	
 	=============================================================================
 	
+
+{% endraw %}

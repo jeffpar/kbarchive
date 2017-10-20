@@ -6,6 +6,8 @@ permalink: /kb/266/Q266051/
 
 ## Q266051: XADM: Microsoft Exchange Server Performance Optimizer WP
 
+{% raw %}
+
 	Article: Q266051
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -46,3 +48,5 @@ permalink: /kb/266/Q266051/
 	
 	=============================================================================
 	
+
+{% endraw %}

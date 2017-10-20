@@ -6,6 +6,8 @@ permalink: /kb/194/Q194791/
 
 ## Q194791: Err Msg: Could Not Open &lt;Filename&gt; Because It Is Already Open...
 
+{% raw %}
+
 	Article: Q194791
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -114,3 +116,5 @@ permalink: /kb/194/Q194791/
 	
 	=============================================================================
 	
+
+{% endraw %}

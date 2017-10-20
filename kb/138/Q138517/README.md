@@ -6,6 +6,8 @@ permalink: /kb/138/Q138517/
 
 ## Q138517: Properties of Object Passed ByVal Can Be Modified
 
+{% raw %}
+
 	Article: Q138517
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -233,3 +235,5 @@ permalink: /kb/138/Q138517/
 	
 	=============================================================================
 	
+
+{% endraw %}

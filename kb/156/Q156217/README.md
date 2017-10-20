@@ -6,6 +6,8 @@ permalink: /kb/156/Q156217/
 
 ## Q156217: XCLN: SP2 NT Client Adds WORD Tab to Options
 
+{% raw %}
+
 	Article: Q156217
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -49,3 +51,5 @@ permalink: /kb/156/Q156217/
 	
 	=============================================================================
 	
+
+{% endraw %}

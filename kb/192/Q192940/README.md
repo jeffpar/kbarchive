@@ -6,6 +6,8 @@ permalink: /kb/192/Q192940/
 
 ## Q192940: XFOR: Internet Mail Loses Message Body
 
+{% raw %}
+
 	Article: Q192940
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -112,3 +114,5 @@ permalink: /kb/192/Q192940/
 	
 	=============================================================================
 	
+
+{% endraw %}

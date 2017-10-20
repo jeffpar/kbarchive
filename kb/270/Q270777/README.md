@@ -6,6 +6,8 @@ permalink: /kb/270/Q270777/
 
 ## Q270777: ELL FR &amp; SP: Menu Not Active in Virtual Challenge
 
+{% raw %}
+
 	Article: Q270777
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/270/Q270777/
 	
 	=============================================================================
 	
+
+{% endraw %}

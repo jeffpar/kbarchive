@@ -6,6 +6,8 @@ permalink: /kb/059/Q59707/
 
 ## Q59707: PIF Editor Advanced Button Not Working
 
+{% raw %}
+
 	Article: Q59707
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -36,3 +38,5 @@ permalink: /kb/059/Q59707/
 	
 	=============================================================================
 	
+
+{% endraw %}

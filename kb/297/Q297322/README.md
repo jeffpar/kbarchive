@@ -6,6 +6,8 @@ permalink: /kb/297/Q297322/
 
 ## Q297322: FP: Error Message: Cannot Open Service.lck for Writing, Reading
 
+{% raw %}
+
 	Article: Q297322
 	Product(s): Word Front Page
 	Version(s): 
@@ -181,3 +183,5 @@ permalink: /kb/297/Q297322/
 	
 	=============================================================================
 	
+
+{% endraw %}

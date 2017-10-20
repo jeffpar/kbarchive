@@ -6,6 +6,8 @@ permalink: /kb/131/Q131668/
 
 ## Q131668: Error Message: Error Opening EAGLEMAC.BIN
 
+{% raw %}
+
 	Article: Q131668
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -67,3 +69,5 @@ permalink: /kb/131/Q131668/
 	
 	=============================================================================
 	
+
+{% endraw %}

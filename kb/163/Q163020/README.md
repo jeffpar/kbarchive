@@ -6,6 +6,8 @@ permalink: /kb/163/Q163020/
 
 ## Q163020: XFOR: MSMail Connector NDR Message with Event ID 2117
 
+{% raw %}
+
 	Article: Q163020
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/163/Q163020/
 	
 	=============================================================================
 	
+
+{% endraw %}

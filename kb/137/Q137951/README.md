@@ -6,6 +6,8 @@ permalink: /kb/137/Q137951/
 
 ## Q137951: FIX: Can't Change the Title of the Validation Error Box
 
+{% raw %}
+
 	Article: Q137951
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -93,3 +95,5 @@ permalink: /kb/137/Q137951/
 	
 	=============================================================================
 	
+
+{% endraw %}

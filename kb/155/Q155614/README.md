@@ -6,6 +6,8 @@ permalink: /kb/155/Q155614/
 
 ## Q155614: Unattended Installation of Microsoft Windows NT 4.0
 
+{% raw %}
+
 	Article: Q155614
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/155/Q155614/
 	
 	=============================================================================
 	
+
+{% endraw %}

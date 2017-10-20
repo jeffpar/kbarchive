@@ -6,6 +6,8 @@ permalink: /kb/196/Q196611/
 
 ## Q196611: Error Code 29 After Resuming from Suspend Mode
 
+{% raw %}
+
 	Article: Q196611
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -100,3 +102,5 @@ permalink: /kb/196/Q196611/
 	
 	=============================================================================
 	
+
+{% endraw %}

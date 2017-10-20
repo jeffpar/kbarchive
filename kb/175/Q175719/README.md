@@ -6,6 +6,8 @@ permalink: /kb/175/Q175719/
 
 ## Q175719: Registry Keys Added by Routing and Remote Access Service Update
 
+{% raw %}
+
 	Article: Q175719
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -160,3 +162,5 @@ permalink: /kb/175/Q175719/
 	
 	=============================================================================
 	
+
+{% endraw %}

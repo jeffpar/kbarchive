@@ -6,6 +6,8 @@ permalink: /kb/126/Q126634/
 
 ## Q126634: Disable Device Bitmap Support in Windows 3.1 Video Driver
 
+{% raw %}
+
 	Article: Q126634
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/126/Q126634/
 	
 	=============================================================================
 	
+
+{% endraw %}

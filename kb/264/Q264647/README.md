@@ -6,6 +6,8 @@ permalink: /kb/264/Q264647/
 
 ## Q264647: Cannot Install Applications, Error Message States That the Unins
 
+{% raw %}
+
 	Article: Q264647
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/264/Q264647/
 	
 	=============================================================================
 	
+
+{% endraw %}

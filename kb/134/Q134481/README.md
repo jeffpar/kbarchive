@@ -6,6 +6,8 @@ permalink: /kb/134/Q134481/
 
 ## Q134481: MS Paint Text Tool Does Not Work with Large Size Zoom Option
 
+{% raw %}
+
 	Article: Q134481
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/134/Q134481/
 	
 	=============================================================================
 	
+
+{% endraw %}

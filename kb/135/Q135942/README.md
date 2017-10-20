@@ -6,6 +6,8 @@ permalink: /kb/135/Q135942/
 
 ## Q135942: DoubleSpace Driver in Memory After Drive is Uncompressed
 
+{% raw %}
+
 	Article: Q135942
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135942/
 	
 	=============================================================================
 	
+
+{% endraw %}

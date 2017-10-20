@@ -6,6 +6,8 @@ permalink: /kb/153/Q153777/
 
 ## Q153777: Close Combat Err Msg: &#91;ufs&#93;Reference Is Invalid
 
+{% raw %}
+
 	Article: Q153777
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -129,3 +131,5 @@ permalink: /kb/153/Q153777/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152873/
 
 ## Q152873: XFOR: Command Line Migration Crashes With no FldOwner Entry
 
+{% raw %}
+
 	Article: Q152873
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/152/Q152873/
 	
 	=============================================================================
 	
+
+{% endraw %}

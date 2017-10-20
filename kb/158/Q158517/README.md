@@ -6,6 +6,8 @@ permalink: /kb/158/Q158517/
 
 ## Q158517: Stop 0x000000094 Running Windows NT 4.0 and NFS Maestro
 
+{% raw %}
+
 	Article: Q158517
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/158/Q158517/
 	
 	=============================================================================
 	
+
+{% endraw %}

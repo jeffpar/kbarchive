@@ -6,6 +6,8 @@ permalink: /kb/141/Q141457/
 
 ## Q141457: FIX: C1001 When Calling Base Class Conversion Operator
 
+{% raw %}
+
 	Article: Q141457
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -87,3 +89,5 @@ permalink: /kb/141/Q141457/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132674/
 
 ## Q132674: Microsoft Systems Journal: June 1995
 
+{% raw %}
+
 	Article: Q132674
 	Product(s): Miscrosoft Systems Journal
 	Version(s): for June 1995
@@ -123,3 +125,5 @@ permalink: /kb/132/Q132674/
 	
 	=============================================================================
 	
+
+{% endraw %}

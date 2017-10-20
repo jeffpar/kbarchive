@@ -6,6 +6,8 @@ permalink: /kb/136/Q136416/
 
 ## Q136416: Windows Does Not Start Normally With Bootgui=1 in the Msdos.sys
 
+{% raw %}
+
 	Article: Q136416
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/136/Q136416/
 	
 	=============================================================================
 	
+
+{% endraw %}

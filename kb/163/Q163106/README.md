@@ -6,6 +6,8 @@ permalink: /kb/163/Q163106/
 
 ## Q163106: ODE97: ODBC Desktop Database Drivers Needed by ODE Setup Wizard
 
+{% raw %}
+
 	Article: Q163106
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/163/Q163106/
 	
 	=============================================================================
 	
+
+{% endraw %}

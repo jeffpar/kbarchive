@@ -6,6 +6,8 @@ permalink: /kb/154/Q154032/
 
 ## Q154032: XADM: Error 1105 - EcBadVersion Occurs When Restoring Offline St
 
+{% raw %}
+
 	Article: Q154032
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/154/Q154032/
 	
 	=============================================================================
 	
+
+{% endraw %}

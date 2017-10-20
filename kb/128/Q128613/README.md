@@ -6,6 +6,8 @@ permalink: /kb/128/Q128613/
 
 ## Q128613: SMS: WUSER GP Faults with Compaq Qvision Adapter
 
+{% raw %}
+
 	Article: Q128613
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -54,3 +56,5 @@ permalink: /kb/128/Q128613/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129309/
 
 ## Q129309: PRB: Can't Paste OLE Control into an OLE Control on a Form
 
+{% raw %}
+
 	Article: Q129309
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/129/Q129309/
 	
 	=============================================================================
 	
+
+{% endraw %}

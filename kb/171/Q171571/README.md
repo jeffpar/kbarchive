@@ -6,6 +6,8 @@ permalink: /kb/171/Q171571/
 
 ## Q171571: PPT: Sample Code to Print Slide Numbers for a Custom Show
 
+{% raw %}
+
 	Article: Q171571
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -309,3 +311,5 @@ permalink: /kb/171/Q171571/
 	
 	=============================================================================
 	
+
+{% endraw %}

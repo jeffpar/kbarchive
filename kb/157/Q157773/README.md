@@ -6,6 +6,8 @@ permalink: /kb/157/Q157773/
 
 ## Q157773: WD97: Macro to Disable Float Over Text Property
 
+{% raw %}
+
 	Article: Q157773
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/157/Q157773/
 	
 	=============================================================================
 	
+
+{% endraw %}

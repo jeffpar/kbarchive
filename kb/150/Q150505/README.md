@@ -6,6 +6,8 @@ permalink: /kb/150/Q150505/
 
 ## Q150505: DOCERR: Commands Not Supported by Visual FoxPro ODBC Driver
 
+{% raw %}
+
 	Article: Q150505
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/150/Q150505/
 	
 	=============================================================================
 	
+
+{% endraw %}

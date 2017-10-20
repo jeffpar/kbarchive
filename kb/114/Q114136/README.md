@@ -6,6 +6,8 @@ permalink: /kb/114/Q114136/
 
 ## Q114136: BUG: FoxPro Math-Precision Problems with SET DECIMALS
 
+{% raw %}
+
 	Article: Q114136
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0,3.0b,5.0,5.0a,6.0
@@ -95,3 +97,5 @@ permalink: /kb/114/Q114136/
 	
 	=============================================================================
 	
+
+{% endraw %}

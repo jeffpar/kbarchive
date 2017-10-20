@@ -6,6 +6,8 @@ permalink: /kb/268/Q268086/
 
 ## Q268086: Windows NT MA Not Supported for Connecting to Windows 2000
 
+{% raw %}
+
 	Article: Q268086
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -56,3 +58,5 @@ permalink: /kb/268/Q268086/
 	
 	=============================================================================
 	
+
+{% endraw %}

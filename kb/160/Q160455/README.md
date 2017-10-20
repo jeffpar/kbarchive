@@ -6,6 +6,8 @@ permalink: /kb/160/Q160455/
 
 ## Q160455: WD97: Can't Use CRTL+ALT+F8 on Programmable Keyboard
 
+{% raw %}
+
 	Article: Q160455
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/160/Q160455/
 	
 	=============================================================================
 	
+
+{% endraw %}

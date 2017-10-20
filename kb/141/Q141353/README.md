@@ -6,6 +6,8 @@ permalink: /kb/141/Q141353/
 
 ## Q141353: PRB: Check-in That Uses Drag and Drop Causes Application Error
 
+{% raw %}
+
 	Article: Q141353
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/141/Q141353/
 	
 	=============================================================================
 	
+
+{% endraw %}

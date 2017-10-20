@@ -6,6 +6,8 @@ permalink: /kb/168/Q168542/
 
 ## Q168542: Postscript Preprocessor Fails to Find Any Embedded Fonts
 
+{% raw %}
+
 	Article: Q168542
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/168/Q168542/
 	
 	=============================================================================
 	
+
+{% endraw %}

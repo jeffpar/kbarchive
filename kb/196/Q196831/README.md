@@ -6,6 +6,8 @@ permalink: /kb/196/Q196831/
 
 ## Q196831: INFO: Version History of Microsoft Foundation Classes DLLs
 
+{% raw %}
+
 	Article: Q196831
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/196/Q196831/
 	
 	=============================================================================
 	
+
+{% endraw %}

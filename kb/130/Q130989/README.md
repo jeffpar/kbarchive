@@ -6,6 +6,8 @@ permalink: /kb/130/Q130989/
 
 ## Q130989: How to Make an Array Protected
 
+{% raw %}
+
 	Article: Q130989
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130989/
 	
 	=============================================================================
 	
+
+{% endraw %}

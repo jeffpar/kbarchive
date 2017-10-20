@@ -6,6 +6,8 @@ permalink: /kb/265/Q265792/
 
 ## Q265792: DB2OLEDB Leaks Memory When Stored Proc Returns adLongVarChar
 
+{% raw %}
+
 	Article: Q265792
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -146,3 +148,5 @@ permalink: /kb/265/Q265792/
 	
 	=============================================================================
 	
+
+{% endraw %}

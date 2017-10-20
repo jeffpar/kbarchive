@@ -6,6 +6,8 @@ permalink: /kb/187/Q187535/
 
 ## Q187535: HOWTO: Change Passwords Programmatically in Windows NT
 
+{% raw %}
+
 	Article: Q187535
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -265,3 +267,5 @@ permalink: /kb/187/Q187535/
 	
 	=============================================================================
 	
+
+{% endraw %}

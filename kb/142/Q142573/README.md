@@ -6,6 +6,8 @@ permalink: /kb/142/Q142573/
 
 ## Q142573: SMS Client Hangs Using USERTSR or USERIPX
 
+{% raw %}
+
 	Article: Q142573
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -47,3 +49,5 @@ permalink: /kb/142/Q142573/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161080/
 
 ## Q161080: Windows 95 Clients Connected to NT Server over NWLink May Fail
 
+{% raw %}
+
 	Article: Q161080
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11 3.5 3.51 4.0
@@ -65,3 +67,5 @@ permalink: /kb/161/Q161080/
 	
 	=============================================================================
 	
+
+{% endraw %}

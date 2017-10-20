@@ -6,6 +6,8 @@ permalink: /kb/075/Q75738/
 
 ## Q75738: Dynaccel.exe Creates Accelerator Tables Dynamically
 
+{% raw %}
+
 	Article: Q75738
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -171,3 +173,5 @@ permalink: /kb/075/Q75738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190459/
 
 ## Q190459: BUG: Restricted Function or Interface Error with IDispatch
 
+{% raw %}
+
 	Article: Q190459
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/190/Q190459/
 	
 	=============================================================================
 	
+
+{% endraw %}

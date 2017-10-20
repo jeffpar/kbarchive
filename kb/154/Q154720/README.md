@@ -6,6 +6,8 @@ permalink: /kb/154/Q154720/
 
 ## Q154720: Using FDOS on the PowerPC
 
+{% raw %}
+
 	Article: Q154720
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -92,3 +94,5 @@ permalink: /kb/154/Q154720/
 	
 	=============================================================================
 	
+
+{% endraw %}

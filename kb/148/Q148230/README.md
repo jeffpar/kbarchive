@@ -6,6 +6,8 @@ permalink: /kb/148/Q148230/
 
 ## Q148230: FIX: TypeLibs with Large Argument Lists May Crash ClassWizard
 
+{% raw %}
+
 	Article: Q148230
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -82,3 +84,5 @@ permalink: /kb/148/Q148230/
 	
 	=============================================================================
 	
+
+{% endraw %}

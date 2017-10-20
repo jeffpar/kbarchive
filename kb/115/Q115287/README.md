@@ -6,6 +6,8 @@ permalink: /kb/115/Q115287/
 
 ## Q115287: DPT SCSI Controllers with Windows NT
 
+{% raw %}
+
 	Article: Q115287
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -56,3 +58,5 @@ permalink: /kb/115/Q115287/
 	
 	=============================================================================
 	
+
+{% endraw %}

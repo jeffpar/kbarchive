@@ -6,6 +6,8 @@ permalink: /kb/202/Q202057/
 
 ## Q202057: SAMPLE: DISPINVOKER.EXE How to Implement CallByName in VB4/VB5
 
+{% raw %}
+
 	Article: Q202057
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -221,3 +223,5 @@ permalink: /kb/202/Q202057/
 	
 	=============================================================================
 	
+
+{% endraw %}

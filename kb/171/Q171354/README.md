@@ -6,6 +6,8 @@ permalink: /kb/171/Q171354/
 
 ## Q171354: Extinction Interval and Extinction Timeout Values Change
 
+{% raw %}
+
 	Article: Q171354
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/171/Q171354/
 	
 	=============================================================================
 	
+
+{% endraw %}

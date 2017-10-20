@@ -6,6 +6,8 @@ permalink: /kb/128/Q128800/
 
 ## Q128800: How to Provide Additional NDIS2 Drivers for Network Client 3.0
 
+{% raw %}
+
 	Article: Q128800
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -131,3 +133,5 @@ permalink: /kb/128/Q128800/
 	
 	=============================================================================
 	
+
+{% endraw %}

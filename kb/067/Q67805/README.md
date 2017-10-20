@@ -6,6 +6,8 @@ permalink: /kb/067/Q67805/
 
 ## Q67805: LAN Manager 2.0 Named Pipe Performance Information
 
+{% raw %}
+
 	Article: Q67805
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -159,3 +161,5 @@ permalink: /kb/067/Q67805/
 	
 	=============================================================================
 	
+
+{% endraw %}

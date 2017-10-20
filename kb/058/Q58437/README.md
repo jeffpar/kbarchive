@@ -6,6 +6,8 @@ permalink: /kb/058/Q58437/
 
 ## Q58437: Accessing Child Process Exit Code from Parent Process
 
+{% raw %}
+
 	Article: Q58437
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -112,3 +114,5 @@ permalink: /kb/058/Q58437/
 	interrupt call:
 	
 	_asm mov syscode, ah
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185130/
 
 ## Q185130: Outwars: Sounds Are Distorted When You Play Game
 
+{% raw %}
+
 	Article: Q185130
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/185/Q185130/
 	
 	=============================================================================
 	
+
+{% endraw %}

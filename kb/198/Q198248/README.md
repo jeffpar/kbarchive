@@ -6,6 +6,8 @@ permalink: /kb/198/Q198248/
 
 ## Q198248: Some SPI_SET Settings Are Treated As Read-Only Attributes
 
+{% raw %}
+
 	Article: Q198248
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -108,3 +110,5 @@ permalink: /kb/198/Q198248/
 	
 	=============================================================================
 	
+
+{% endraw %}

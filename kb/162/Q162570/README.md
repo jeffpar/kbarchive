@@ -6,6 +6,8 @@ permalink: /kb/162/Q162570/
 
 ## Q162570: IPX: Banner Page Prints When No One Is Logged On to Server
 
+{% raw %}
+
 	Article: Q162570
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/162/Q162570/
 	
 	=============================================================================
 	
+
+{% endraw %}

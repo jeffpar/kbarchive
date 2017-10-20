@@ -6,6 +6,8 @@ permalink: /kb/180/Q180173/
 
 ## Q180173: PRB: &quot;The profile name is not valid&quot; with MAPISession Control
 
+{% raw %}
+
 	Article: Q180173
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/180/Q180173/
 	
 	=============================================================================
 	
+
+{% endraw %}

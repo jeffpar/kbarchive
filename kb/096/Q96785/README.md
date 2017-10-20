@@ -6,6 +6,8 @@ permalink: /kb/096/Q96785/
 
 ## Q96785: Quitting Uninstall Causes Computer to Reboot
 
+{% raw %}
+
 	Article: Q96785
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -41,3 +43,5 @@ permalink: /kb/096/Q96785/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165290/
 
 ## Q165290: WD97: Cannot Reference HeadingStyle Index with String Value
 
+{% raw %}
+
 	Article: Q165290
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -125,3 +127,5 @@ permalink: /kb/165/Q165290/
 	
 	=============================================================================
 	
+
+{% endraw %}

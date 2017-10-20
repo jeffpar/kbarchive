@@ -6,6 +6,8 @@ permalink: /kb/084/Q84920/
 
 ## Q84920: Upgrading a Shared Windows 3.1 Network
 
+{% raw %}
+
 	Article: Q84920
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -134,3 +136,5 @@ permalink: /kb/084/Q84920/
 	
 	=============================================================================
 	
+
+{% endraw %}

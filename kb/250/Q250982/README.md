@@ -6,6 +6,8 @@ permalink: /kb/250/Q250982/
 
 ## Q250982: User Cannot Be Given the Right to Load or Unload Device Drivers
 
+{% raw %}
+
 	Article: Q250982
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -53,3 +55,5 @@ permalink: /kb/250/Q250982/
 	
 	=============================================================================
 	
+
+{% endraw %}

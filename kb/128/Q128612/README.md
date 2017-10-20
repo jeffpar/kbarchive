@@ -6,6 +6,8 @@ permalink: /kb/128/Q128612/
 
 ## Q128612: SMS: Visual Basic Application Setup Fails When Executed by PCM
 
+{% raw %}
+
 	Article: Q128612
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -65,3 +67,5 @@ permalink: /kb/128/Q128612/
 	
 	=============================================================================
 	
+
+{% endraw %}

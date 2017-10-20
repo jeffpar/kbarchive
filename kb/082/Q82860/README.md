@@ -6,6 +6,8 @@ permalink: /kb/082/Q82860/
 
 ## Q82860: The WIN.INI &#91;Compatibility&#93; Section
 
+{% raw %}
+
 	Article: Q82860
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -531,3 +533,5 @@ permalink: /kb/082/Q82860/
 	
 	=============================================================================
 	
+
+{% endraw %}

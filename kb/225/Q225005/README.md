@@ -6,6 +6,8 @@ permalink: /kb/225/Q225005/
 
 ## Q225005: Streets and Trips 2000: Error When You Print to Canon Printer
 
+{% raw %}
+
 	Article: Q225005
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -98,3 +100,5 @@ permalink: /kb/225/Q225005/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243569/
 
 ## Q243569: XADM: Wrong Wording for Storage Warnings for Czech Clients
 
+{% raw %}
+
 	Article: Q243569
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -89,3 +91,5 @@ permalink: /kb/243/Q243569/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/227/Q227021/
 
 ## Q227021: SMS:Scheduler Creates Zero Byte Instruction Files for Minijobs
 
+{% raw %}
+
 	Article: Q227021
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -51,3 +53,5 @@ permalink: /kb/227/Q227021/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147303/
 
 ## Q147303: Long Term Goal Box Data Lost If Not Linked To Role
 
+{% raw %}
+
 	Article: Q147303
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -44,3 +46,5 @@ permalink: /kb/147/Q147303/
 	
 	=============================================================================
 	
+
+{% endraw %}

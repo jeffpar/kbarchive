@@ -6,6 +6,8 @@ permalink: /kb/103/Q103716/
 
 ## Q103716: INFO: Debug Session Still Active Even After Last &quot;}&quot; of Main
 
+{% raw %}
+
 	Article: Q103716
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/103/Q103716/
 	
 	=============================================================================
 	
+
+{% endraw %}

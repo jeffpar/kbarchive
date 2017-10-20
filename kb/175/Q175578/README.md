@@ -6,6 +6,8 @@ permalink: /kb/175/Q175578/
 
 ## Q175578: XCON: Autoforwarded Messages Not Handled Correctly
 
+{% raw %}
+
 	Article: Q175578
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/175/Q175578/
 	
 	=============================================================================
 	
+
+{% endraw %}

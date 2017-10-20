@@ -6,6 +6,8 @@ permalink: /kb/140/Q140599/
 
 ## Q140599: PRB: MFC DAO Functions Accepting COleVariant Strings May Fail
 
+{% raw %}
+
 	Article: Q140599
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2 4.2b 5.0
@@ -129,3 +131,5 @@ permalink: /kb/140/Q140599/
 	
 	=============================================================================
 	
+
+{% endraw %}

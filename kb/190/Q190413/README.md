@@ -6,6 +6,8 @@ permalink: /kb/190/Q190413/
 
 ## Q190413: XADM: MAPI Notifications Appear to Be Dropped
 
+{% raw %}
+
 	Article: Q190413
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -162,3 +164,5 @@ permalink: /kb/190/Q190413/
 	
 	=============================================================================
 	
+
+{% endraw %}

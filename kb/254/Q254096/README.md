@@ -6,6 +6,8 @@ permalink: /kb/254/Q254096/
 
 ## Q254096: OEM Support Tools Phase 2 Service Release 2 Availability
 
+{% raw %}
+
 	Article: Q254096
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -131,3 +133,5 @@ permalink: /kb/254/Q254096/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149192/
 
 ## Q149192: XFOR: Dir-Sync Agent Submits Custom Recipient Proxy Address
 
+{% raw %}
+
 	Article: Q149192
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/149/Q149192/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160798/
 
 ## Q160798: How to Change the SMS Remote Control Agent Startup Value
 
+{% raw %}
+
 	Article: Q160798
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -63,3 +65,5 @@ permalink: /kb/160/Q160798/
 	
 	=============================================================================
 	
+
+{% endraw %}

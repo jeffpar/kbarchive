@@ -6,6 +6,8 @@ permalink: /kb/089/Q89103/
 
 ## Q89103: RAMDrive Icon Replaced with Network Drive Icon in Windows
 
+{% raw %}
+
 	Article: Q89103
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.03,2.1,2.11,3.0,3.0a,3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/089/Q89103/
 	
 	=============================================================================
 	
+
+{% endraw %}

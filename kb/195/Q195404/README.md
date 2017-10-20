@@ -6,6 +6,8 @@ permalink: /kb/195/Q195404/
 
 ## Q195404: HOWTO: Keep Word Print Dialog Box on Top Using APIs
 
+{% raw %}
+
 	Article: Q195404
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -118,3 +120,5 @@ permalink: /kb/195/Q195404/
 	
 	=============================================================================
 	
+
+{% endraw %}

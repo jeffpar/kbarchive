@@ -6,6 +6,8 @@ permalink: /kb/160/Q160926/
 
 ## Q160926: XADM: Modifying Usage Quotas for All Users
 
+{% raw %}
+
 	Article: Q160926
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/160/Q160926/
 	
 	=============================================================================
 	
+
+{% endraw %}

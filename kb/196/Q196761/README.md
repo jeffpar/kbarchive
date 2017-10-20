@@ -6,6 +6,8 @@ permalink: /kb/196/Q196761/
 
 ## Q196761: WD97: AutoRecover Turned Off for Master Documents
 
+{% raw %}
+
 	Article: Q196761
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/196/Q196761/
 	
 	=============================================================================
 	
+
+{% endraw %}

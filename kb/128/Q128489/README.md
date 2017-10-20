@@ -6,6 +6,8 @@ permalink: /kb/128/Q128489/
 
 ## Q128489: Inter-Domain Trust Account Passwords
 
+{% raw %}
+
 	Article: Q128489
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -143,3 +145,5 @@ permalink: /kb/128/Q128489/
 	
 	=============================================================================
 	
+
+{% endraw %}

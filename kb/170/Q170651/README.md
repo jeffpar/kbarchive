@@ -6,6 +6,8 @@ permalink: /kb/170/Q170651/
 
 ## Q170651: PRB: ODBC Connectivity Errors with 68K Executables Only
 
+{% raw %}
+
 	Article: Q170651
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -103,3 +105,5 @@ permalink: /kb/170/Q170651/
 	
 	=============================================================================
 	
+
+{% endraw %}

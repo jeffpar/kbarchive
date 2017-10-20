@@ -6,6 +6,8 @@ permalink: /kb/119/Q119884/
 
 ## Q119884: PC Ext: Increasing Retry Count for LAN-Based Mail
 
+{% raw %}
+
 	Article: Q119884
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -129,3 +131,5 @@ permalink: /kb/119/Q119884/
 	
 	=============================================================================
 	
+
+{% endraw %}

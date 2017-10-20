@@ -6,6 +6,8 @@ permalink: /kb/189/Q189284/
 
 ## Q189284: Entering Suspend Mode While in Standby Mode Hangs USB Computer
 
+{% raw %}
+
 	Article: Q189284
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.1,2.5
@@ -49,3 +51,5 @@ permalink: /kb/189/Q189284/
 	
 	=============================================================================
 	
+
+{% endraw %}

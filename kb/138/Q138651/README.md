@@ -6,6 +6,8 @@ permalink: /kb/138/Q138651/
 
 ## Q138651: How to Exclude or Include Vfp300.esl File from Compression
 
+{% raw %}
+
 	Article: Q138651
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/138/Q138651/
 	
 	=============================================================================
 	
+
+{% endraw %}

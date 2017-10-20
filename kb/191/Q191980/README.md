@@ -6,6 +6,8 @@ permalink: /kb/191/Q191980/
 
 ## Q191980: PRB: Application Builder Not Removing Form/Report from Project
 
+{% raw %}
+
 	Article: Q191980
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -87,3 +89,5 @@ permalink: /kb/191/Q191980/
 	
 	=============================================================================
 	
+
+{% endraw %}

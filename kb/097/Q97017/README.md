@@ -6,6 +6,8 @@ permalink: /kb/097/Q97017/
 
 ## Q97017: Tandon Pacs: DoubleSpace Requires Updated DPACCESS.SYS
 
+{% raw %}
+
 	Article: Q97017
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/097/Q97017/
 	
 	=============================================================================
 	
+
+{% endraw %}

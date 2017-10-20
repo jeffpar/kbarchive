@@ -6,6 +6,8 @@ permalink: /kb/309/Q309567/
 
 ## Q309567: Query Returns Empty Results with IS NULL Test Condition
 
+{% raw %}
+
 	Article: Q309567
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -69,3 +71,5 @@ permalink: /kb/309/Q309567/
 	
 	=============================================================================
 	
+
+{% endraw %}

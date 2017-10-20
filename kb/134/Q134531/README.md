@@ -6,6 +6,8 @@ permalink: /kb/134/Q134531/
 
 ## Q134531: Cannot Create Startup Disk During Setup w/Promise Controller
 
+{% raw %}
+
 	Article: Q134531
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/134/Q134531/
 	
 	=============================================================================
 	
+
+{% endraw %}

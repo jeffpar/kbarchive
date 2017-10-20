@@ -6,6 +6,8 @@ permalink: /kb/174/Q174009/
 
 ## Q174009: Mail Attachment Security Add-on Available
 
+{% raw %}
+
 	Article: Q174009
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,95
@@ -67,3 +69,5 @@ permalink: /kb/174/Q174009/
 	
 	=============================================================================
 	
+
+{% endraw %}

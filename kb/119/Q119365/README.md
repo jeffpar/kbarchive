@@ -6,6 +6,8 @@ permalink: /kb/119/Q119365/
 
 ## Q119365: Runtime Error 6009 - Default Environment Size
 
+{% raw %}
+
 	Article: Q119365
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/119/Q119365/
 	
 	=============================================================================
 	
+
+{% endraw %}

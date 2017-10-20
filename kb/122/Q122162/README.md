@@ -6,6 +6,8 @@ permalink: /kb/122/Q122162/
 
 ## Q122162: SMC9000.DOS Doesn't Activate Megahertz PCMCIA Ethernet Card
 
+{% raw %}
+
 	Article: Q122162
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/122/Q122162/
 	
 	=============================================================================
 	
+
+{% endraw %}

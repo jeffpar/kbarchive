@@ -6,6 +6,8 @@ permalink: /kb/271/Q271625/
 
 ## Q271625: Printer Properties Not Correct Printing from Windows NT 4.0
 
+{% raw %}
+
 	Article: Q271625
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -109,3 +111,5 @@ permalink: /kb/271/Q271625/
 	
 	=============================================================================
 	
+
+{% endraw %}

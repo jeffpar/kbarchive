@@ -6,6 +6,8 @@ permalink: /kb/132/Q132575/
 
 ## Q132575: Windows Explorer Does Not Refresh Disk Drives Automatically
 
+{% raw %}
+
 	Article: Q132575
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -84,3 +86,5 @@ permalink: /kb/132/Q132575/
 	
 	=============================================================================
 	
+
+{% endraw %}

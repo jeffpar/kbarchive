@@ -6,6 +6,8 @@ permalink: /kb/255/Q255235/
 
 ## Q255235: SQL Backup to Remote Drive Fails, Error 18204: Access is Denied
 
+{% raw %}
+
 	Article: Q255235
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/255/Q255235/
 	
 	=============================================================================
 	
+
+{% endraw %}

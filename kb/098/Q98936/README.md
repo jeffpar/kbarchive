@@ -6,6 +6,8 @@ permalink: /kb/098/Q98936/
 
 ## Q98936: Description of Dr. Black Jack
 
+{% raw %}
+
 	Article: Q98936
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/098/Q98936/
 	
 	=============================================================================
 	
+
+{% endraw %}

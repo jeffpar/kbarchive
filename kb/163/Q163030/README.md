@@ -6,6 +6,8 @@ permalink: /kb/163/Q163030/
 
 ## Q163030: PRB: Report Wizard Can Generate Detail Bands Too Large
 
+{% raw %}
+
 	Article: Q163030
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00b 3.00 5.00 6.00
@@ -96,3 +98,5 @@ permalink: /kb/163/Q163030/
 	
 	=============================================================================
 	
+
+{% endraw %}

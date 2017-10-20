@@ -6,6 +6,8 @@ permalink: /kb/128/Q128605/
 
 ## Q128605: Managing Profiles of USRMGR.HLP States Invalid Network Path
 
+{% raw %}
+
 	Article: Q128605
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -65,3 +67,5 @@ permalink: /kb/128/Q128605/
 	
 	=============================================================================
 	
+
+{% endraw %}

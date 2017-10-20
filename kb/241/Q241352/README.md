@@ -6,6 +6,8 @@ permalink: /kb/241/Q241352/
 
 ## Q241352: How to Prevent DNS Cache Pollution
 
+{% raw %}
+
 	Article: Q241352
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -121,3 +123,5 @@ permalink: /kb/241/Q241352/
 	
 	=============================================================================
 	
+
+{% endraw %}

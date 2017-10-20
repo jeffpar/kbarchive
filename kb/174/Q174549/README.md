@@ -6,6 +6,8 @@ permalink: /kb/174/Q174549/
 
 ## Q174549: Reinstalling Windows 95 with Internet Explorer 4.0
 
+{% raw %}
+
 	Article: Q174549
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:4.0,95
@@ -191,3 +193,5 @@ permalink: /kb/174/Q174549/
 	
 	=============================================================================
 	
+
+{% endraw %}

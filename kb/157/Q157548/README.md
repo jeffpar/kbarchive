@@ -6,6 +6,8 @@ permalink: /kb/157/Q157548/
 
 ## Q157548: WD97: Objects in Converted Document Don't Display in Normal View
 
+{% raw %}
+
 	Article: Q157548
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -47,3 +49,5 @@ permalink: /kb/157/Q157548/
 	
 	=============================================================================
 	
+
+{% endraw %}

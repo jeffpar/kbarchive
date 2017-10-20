@@ -6,6 +6,8 @@ permalink: /kb/160/Q160328/
 
 ## Q160328: Internet Explorer 3.0 Causes Windows NT 4.0 to Blue Screen
 
+{% raw %}
+
 	Article: Q160328
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.0,4.0
@@ -63,3 +65,5 @@ permalink: /kb/160/Q160328/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31785/
 
 ## Q31785: &quot;Overflow&quot; Error in Intermediate Integer Calculation
 
+{% raw %}
+
 	Article: Q31785
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -68,3 +70,5 @@ permalink: /kb/031/Q31785/
 	BASIC Compiler version 6.00 and 6.00b for MS-DOS and MS OS/2. This
 	information is also found in Appendix B of the "Microsoft BASIC 7.0:
 	Programmer's Guide" manual for BASIC PDS 7.00 and 7.10.
+
+{% endraw %}

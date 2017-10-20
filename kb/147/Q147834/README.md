@@ -6,6 +6,8 @@ permalink: /kb/147/Q147834/
 
 ## Q147834: Macintosh Ancient Lands: Ancient Lands ReadMe Contents
 
+{% raw %}
+
 	Article: Q147834
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -287,3 +289,5 @@ permalink: /kb/147/Q147834/
 	
 	=============================================================================
 	
+
+{% endraw %}

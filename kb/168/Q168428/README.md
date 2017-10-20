@@ -6,6 +6,8 @@ permalink: /kb/168/Q168428/
 
 ## Q168428: HOWTO: Test Your ActiveX Documents (.VBD)
 
+{% raw %}
+
 	Article: Q168428
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -454,3 +456,5 @@ permalink: /kb/168/Q168428/
 	
 	=============================================================================
 	
+
+{% endraw %}

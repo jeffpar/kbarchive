@@ -6,6 +6,8 @@ permalink: /kb/141/Q141407/
 
 ## Q141407: Wine Guide: Search Word Not Highlighted When Using NT
 
+{% raw %}
+
 	Article: Q141407
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,2.0; winnt:3.5x,4.0 beta 2
@@ -42,3 +44,5 @@ permalink: /kb/141/Q141407/
 	
 	=============================================================================
 	
+
+{% endraw %}

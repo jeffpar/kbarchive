@@ -6,6 +6,8 @@ permalink: /kb/128/Q128038/
 
 ## Q128038: Using Novell's ODINSUP with Network Client 3.0 TCP/IP
 
+{% raw %}
+
 	Article: Q128038
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0 3.5 4.0
@@ -226,3 +228,5 @@ permalink: /kb/128/Q128038/
 	
 	=============================================================================
 	
+
+{% endraw %}

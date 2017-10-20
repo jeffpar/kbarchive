@@ -6,6 +6,8 @@ permalink: /kb/164/Q164873/
 
 ## Q164873: PCI Device Not Configured and Resources Unassigned
 
+{% raw %}
+
 	Article: Q164873
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -71,3 +73,5 @@ permalink: /kb/164/Q164873/
 	
 	=============================================================================
 	
+
+{% endraw %}

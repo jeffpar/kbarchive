@@ -6,6 +6,8 @@ permalink: /kb/301/Q301493/
 
 ## Q301493: Dialing: User has Moved
 
+{% raw %}
+
 	Article: Q301493
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -64,3 +66,5 @@ permalink: /kb/301/Q301493/
 	
 	=============================================================================
 	
+
+{% endraw %}

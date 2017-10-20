@@ -6,6 +6,8 @@ permalink: /kb/241/Q241143/
 
 ## Q241143: Err Msg: Limited Virtual Memory. Your System Is Running...
 
+{% raw %}
+
 	Article: Q241143
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/241/Q241143/
 	
 	=============================================================================
 	
+
+{% endraw %}

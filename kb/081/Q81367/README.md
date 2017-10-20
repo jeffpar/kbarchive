@@ -6,6 +6,8 @@ permalink: /kb/081/Q81367/
 
 ## Q81367: FIX: EVEN, ALIGN Generate Error in AT Segments
 
+{% raw %}
+
 	Article: Q81367
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -88,3 +90,5 @@ permalink: /kb/081/Q81367/
 	
 	=============================================================================
 	
+
+{% endraw %}

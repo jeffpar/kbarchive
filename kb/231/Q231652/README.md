@@ -6,6 +6,8 @@ permalink: /kb/231/Q231652/
 
 ## Q231652: PRB: Paste Fails in the VC IDE After Installing NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q231652
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 SP4,5.0,6.0
@@ -59,3 +61,5 @@ permalink: /kb/231/Q231652/
 	
 	=============================================================================
 	
+
+{% endraw %}

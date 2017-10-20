@@ -6,6 +6,8 @@ permalink: /kb/126/Q126112/
 
 ## Q126112: Sky Appears Beneath the Earth in the Modeling Module
 
+{% raw %}
+
 	Article: Q126112
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/126/Q126112/
 	
 	=============================================================================
 	
+
+{% endraw %}

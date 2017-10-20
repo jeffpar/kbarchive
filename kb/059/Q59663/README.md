@@ -6,6 +6,8 @@ permalink: /kb/059/Q59663/
 
 ## Q59663: Program Manager Group Items Arranged Vertically
 
+{% raw %}
+
 	Article: Q59663
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -47,3 +49,5 @@ permalink: /kb/059/Q59663/
 	
 	=============================================================================
 	
+
+{% endraw %}

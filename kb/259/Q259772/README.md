@@ -6,6 +6,8 @@ permalink: /kb/259/Q259772/
 
 ## Q259772: Visual FoxPro 6.0 Sample: Calculates the Number of Business Days
 
+{% raw %}
+
 	Article: Q259772
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -234,3 +236,5 @@ permalink: /kb/259/Q259772/
 	
 	=============================================================================
 	
+
+{% endraw %}

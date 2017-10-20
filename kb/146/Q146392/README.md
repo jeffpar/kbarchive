@@ -6,6 +6,8 @@ permalink: /kb/146/Q146392/
 
 ## Q146392: Deleting a Contact Deletes Any Associated Tasks
 
+{% raw %}
+
 	Article: Q146392
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -43,3 +45,5 @@ permalink: /kb/146/Q146392/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182616/
 
 ## Q182616: FP: FrontPage Cannot Open a Macintosh Disk-based Web
 
+{% raw %}
+
 	Article: Q182616
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/182/Q182616/
 	
 	=============================================================================
 	
+
+{% endraw %}

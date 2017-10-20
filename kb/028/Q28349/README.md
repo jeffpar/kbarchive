@@ -6,6 +6,8 @@ permalink: /kb/028/Q28349/
 
 ## Q28349: Hexadecimal Unsigned Char Array Elements Missing &quot;&#92;&quot;
 
+{% raw %}
+
 	Article: Q28349
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -18,3 +20,5 @@ permalink: /kb/028/Q28349/
 	For the _getfillmask and _setfillmask examples, the unsigned char
 	array element values should be shown with backslackes "\" preceding
 	the x's to indicate that they are hexadecimal values.
+
+{% endraw %}

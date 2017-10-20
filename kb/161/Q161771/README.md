@@ -6,6 +6,8 @@ permalink: /kb/161/Q161771/
 
 ## Q161771: TN3287 Print Emulator Fails Through TN3270 Service
 
+{% raw %}
+
 	Article: Q161771
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -74,3 +76,5 @@ permalink: /kb/161/Q161771/
 	
 	=============================================================================
 	
+
+{% endraw %}

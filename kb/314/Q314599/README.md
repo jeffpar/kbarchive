@@ -6,6 +6,8 @@ permalink: /kb/314/Q314599/
 
 ## Q314599: Encarta: Err Msg: Error Starting Program...Shrl30.dll
 
+{% raw %}
+
 	Article: Q314599
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -184,3 +186,5 @@ permalink: /kb/314/Q314599/
 	
 	=============================================================================
 	
+
+{% endraw %}

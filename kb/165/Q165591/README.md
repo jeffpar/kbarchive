@@ -6,6 +6,8 @@ permalink: /kb/165/Q165591/
 
 ## Q165591: SMS: SNMP Traps Are Not Sent If Trap Throttle Is Too Strict
 
+{% raw %}
+
 	Article: Q165591
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -68,3 +70,5 @@ permalink: /kb/165/Q165591/
 	
 	=============================================================================
 	
+
+{% endraw %}

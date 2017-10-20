@@ -6,6 +6,8 @@ permalink: /kb/072/Q72231/
 
 ## Q72231: Paintbrush: No Cursor After Loading Write or Word for Windows
 
+{% raw %}
+
 	Article: Q72231
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/072/Q72231/
 	
 	=============================================================================
 	
+
+{% endraw %}

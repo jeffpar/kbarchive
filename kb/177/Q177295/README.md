@@ -6,6 +6,8 @@ permalink: /kb/177/Q177295/
 
 ## Q177295: Error Message: Unable to Save the Registry...
 
+{% raw %}
+
 	Article: Q177295
 	Product(s): Microsoft Windows NT
 	Version(s): 1.00
@@ -69,3 +71,5 @@ permalink: /kb/177/Q177295/
 	
 	=============================================================================
 	
+
+{% endraw %}

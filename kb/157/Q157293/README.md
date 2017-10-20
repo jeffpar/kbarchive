@@ -6,6 +6,8 @@ permalink: /kb/157/Q157293/
 
 ## Q157293: XADM: Err Msg: You Must Specify a Server in the Organization
 
+{% raw %}
+
 	Article: Q157293
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -55,3 +57,5 @@ permalink: /kb/157/Q157293/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176517/
 
 ## Q176517: SMS: Troubleshooting Inventory MIF Backlog Problems
 
+{% raw %}
+
 	Article: Q176517
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -220,3 +222,5 @@ permalink: /kb/176/Q176517/
 	
 	=============================================================================
 	
+
+{% endraw %}

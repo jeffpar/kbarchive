@@ -6,6 +6,8 @@ permalink: /kb/246/Q246863/
 
 ## Q246863: The Assignments Are Not Mandatory Over Slow Links Option
 
+{% raw %}
+
 	Article: Q246863
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -158,3 +160,5 @@ permalink: /kb/246/Q246863/
 	
 	=============================================================================
 	
+
+{% endraw %}

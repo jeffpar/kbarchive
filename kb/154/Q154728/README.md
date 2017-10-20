@@ -6,6 +6,8 @@ permalink: /kb/154/Q154728/
 
 ## Q154728: Close Combat: Playing Over a Network
 
+{% raw %}
+
 	Article: Q154728
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -100,3 +102,5 @@ permalink: /kb/154/Q154728/
 	
 	=============================================================================
 	
+
+{% endraw %}

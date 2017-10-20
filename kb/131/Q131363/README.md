@@ -6,6 +6,8 @@ permalink: /kb/131/Q131363/
 
 ## Q131363: Changing Display Drivers Fails with Show Compatible Devices
 
+{% raw %}
+
 	Article: Q131363
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/131/Q131363/
 	
 	=============================================================================
 	
+
+{% endraw %}

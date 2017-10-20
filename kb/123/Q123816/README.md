@@ -6,6 +6,8 @@ permalink: /kb/123/Q123816/
 
 ## Q123816: 3COM EtherLink III NIC Intermittently Fails to Start
 
+{% raw %}
+
 	Article: Q123816
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -58,3 +60,5 @@ permalink: /kb/123/Q123816/
 	
 	=============================================================================
 	
+
+{% endraw %}

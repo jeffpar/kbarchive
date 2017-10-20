@@ -6,6 +6,8 @@ permalink: /kb/175/Q175847/
 
 ## Q175847: How to Set Up Data Logging on a Remote Computer
 
+{% raw %}
+
 	Article: Q175847
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -100,3 +102,5 @@ permalink: /kb/175/Q175847/
 	
 	=============================================================================
 	
+
+{% endraw %}

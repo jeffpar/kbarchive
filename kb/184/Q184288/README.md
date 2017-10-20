@@ -6,6 +6,8 @@ permalink: /kb/184/Q184288/
 
 ## Q184288: GP Fault May Occur with IIS on Multiprocessor System
 
+{% raw %}
+
 	Article: Q184288
 	Product(s): Internet Information Server
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/184/Q184288/
 	
 	=============================================================================
 	
+
+{% endraw %}

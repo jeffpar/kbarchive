@@ -6,6 +6,8 @@ permalink: /kb/205/Q205053/
 
 ## Q205053: PRB: &quot;Overflow&quot; with Integer Division and MOD Operator
 
+{% raw %}
+
 	Article: Q205053
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/205/Q205053/
 	
 	=============================================================================
 	
+
+{% endraw %}

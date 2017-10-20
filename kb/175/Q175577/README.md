@@ -6,6 +6,8 @@ permalink: /kb/175/Q175577/
 
 ## Q175577: Music Is Not Played on the MSN On Stage Web Page
 
+{% raw %}
+
 	Article: Q175577
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,95
@@ -84,3 +86,5 @@ permalink: /kb/175/Q175577/
 	
 	=============================================================================
 	
+
+{% endraw %}

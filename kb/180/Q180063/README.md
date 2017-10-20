@@ -6,6 +6,8 @@ permalink: /kb/180/Q180063/
 
 ## Q180063: Err Msg: The WINS Server Whose IP Address You Have Specified...
 
+{% raw %}
+
 	Article: Q180063
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/180/Q180063/
 	
 	=============================================================================
 	
+
+{% endraw %}

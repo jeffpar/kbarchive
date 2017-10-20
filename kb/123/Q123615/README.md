@@ -6,6 +6,8 @@ permalink: /kb/123/Q123615/
 
 ## Q123615: No Network Services with DEC EtherWorks Turbo III
 
+{% raw %}
+
 	Article: Q123615
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/123/Q123615/
 	
 	=============================================================================
 	
+
+{% endraw %}

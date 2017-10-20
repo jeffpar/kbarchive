@@ -6,6 +6,8 @@ permalink: /kb/119/Q119661/
 
 ## Q119661: Ancient Lands: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q119661
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -295,3 +297,5 @@ permalink: /kb/119/Q119661/
 	
 	=============================================================================
 	
+
+{% endraw %}

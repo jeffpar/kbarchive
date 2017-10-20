@@ -6,6 +6,8 @@ permalink: /kb/116/Q116073/
 
 ## Q116073: Baseball: Red Hot Text May Look Almost Black on Some Displays
 
+{% raw %}
+
 	Article: Q116073
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -45,3 +47,5 @@ permalink: /kb/116/Q116073/
 	
 	=============================================================================
 	
+
+{% endraw %}

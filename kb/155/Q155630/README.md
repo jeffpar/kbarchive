@@ -6,6 +6,8 @@ permalink: /kb/155/Q155630/
 
 ## Q155630: Windows CD-ROM Not Automatically Run Correctly
 
+{% raw %}
+
 	Article: Q155630
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155630/
 	
 	=============================================================================
 	
+
+{% endraw %}

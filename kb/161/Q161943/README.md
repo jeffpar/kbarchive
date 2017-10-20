@@ -6,6 +6,8 @@ permalink: /kb/161/Q161943/
 
 ## Q161943: XFOR: RFC822 Header Includes BCC Recipients Fields
 
+{% raw %}
+
 	Article: Q161943
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/161/Q161943/
 	
 	=============================================================================
 	
+
+{% endraw %}

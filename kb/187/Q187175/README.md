@@ -6,6 +6,8 @@ permalink: /kb/187/Q187175/
 
 ## Q187175: Network Error Message When Maximum Connection Limit Exceeded
 
+{% raw %}
+
 	Article: Q187175
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -52,3 +54,5 @@ permalink: /kb/187/Q187175/
 	
 	=============================================================================
 	
+
+{% endraw %}

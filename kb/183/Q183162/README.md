@@ -6,6 +6,8 @@ permalink: /kb/183/Q183162/
 
 ## Q183162: BUG: VB Crashes After Ending Application While in Break Mode
 
+{% raw %}
+
 	Article: Q183162
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -105,3 +107,5 @@ permalink: /kb/183/Q183162/
 	
 	=============================================================================
 	
+
+{% endraw %}

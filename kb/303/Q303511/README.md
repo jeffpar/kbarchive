@@ -6,6 +6,8 @@ permalink: /kb/303/Q303511/
 
 ## Q303511: STREETS: Err Msg: Setup Cannot Find the MDAC Directory
 
+{% raw %}
+
 	Article: Q303511
 	Product(s): Microsoft Automap
 	Version(s): 1.0,3.1,3.5,3.51,3.51 SP5,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -86,3 +88,5 @@ permalink: /kb/303/Q303511/
 	
 	=============================================================================
 	
+
+{% endraw %}

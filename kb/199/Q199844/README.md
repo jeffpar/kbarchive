@@ -6,6 +6,8 @@ permalink: /kb/199/Q199844/
 
 ## Q199844: FS98/2000: No Lessons Are Displayed in the Lessons List
 
+{% raw %}
+
 	Article: Q199844
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/199/Q199844/
 	
 	=============================================================================
 	
+
+{% endraw %}

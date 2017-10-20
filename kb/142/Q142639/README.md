@@ -6,6 +6,8 @@ permalink: /kb/142/Q142639/
 
 ## Q142639: Windows NT 4.0 Readme.wri File (Part 1 of 5)
 
+{% raw %}
+
 	Article: Q142639
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -1043,3 +1045,5 @@ permalink: /kb/142/Q142639/
 	
 	=============================================================================
 	
+
+{% endraw %}

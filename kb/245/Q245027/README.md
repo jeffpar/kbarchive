@@ -6,6 +6,8 @@ permalink: /kb/245/Q245027/
 
 ## Q245027: STOP 0xC0000143 Damaged or Missing Display_driver.dll.
 
+{% raw %}
+
 	Article: Q245027
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:2.0,4.0
@@ -122,3 +124,5 @@ permalink: /kb/245/Q245027/
 	
 	=============================================================================
 	
+
+{% endraw %}

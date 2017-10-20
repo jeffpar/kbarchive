@@ -6,6 +6,8 @@ permalink: /kb/156/Q156630/
 
 ## Q156630: PRB: Incremental Search with Grid Causes Screen Flicker
 
+{% raw %}
+
 	Article: Q156630
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -117,3 +119,5 @@ permalink: /kb/156/Q156630/
 	
 	=============================================================================
 	
+
+{% endraw %}

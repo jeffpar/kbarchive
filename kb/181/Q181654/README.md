@@ -6,6 +6,8 @@ permalink: /kb/181/Q181654/
 
 ## Q181654: FP: Hyperlink Font Color Settings not Visible in Browser
 
+{% raw %}
+
 	Article: Q181654
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1,97
@@ -73,3 +75,5 @@ permalink: /kb/181/Q181654/
 	
 	=============================================================================
 	
+
+{% endraw %}

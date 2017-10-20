@@ -6,6 +6,8 @@ permalink: /kb/070/Q70773/
 
 ## Q70773: Optimizing Use of PCL Soft Fonts in Windows 3.0
 
+{% raw %}
+
 	Article: Q70773
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -116,3 +118,5 @@ permalink: /kb/070/Q70773/
 	
 	=============================================================================
 	
+
+{% endraw %}

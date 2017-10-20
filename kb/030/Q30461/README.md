@@ -6,6 +6,8 @@ permalink: /kb/030/Q30461/
 
 ## Q30461: Central Point Software Nokey and Windows
 
+{% raw %}
+
 	Article: Q30461
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/030/Q30461/
 	
 	=============================================================================
 	
+
+{% endraw %}

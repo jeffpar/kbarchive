@@ -6,6 +6,8 @@ permalink: /kb/161/Q161994/
 
 ## Q161994: Querying Powered-Off PC Card Modem Hangs Computer
 
+{% raw %}
+
 	Article: Q161994
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -60,3 +62,5 @@ permalink: /kb/161/Q161994/
 	
 	=============================================================================
 	
+
+{% endraw %}

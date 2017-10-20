@@ -6,6 +6,8 @@ permalink: /kb/085/Q85476/
 
 ## Q85476: LOAD=, RUN=, and StartUp Group Ignored in Windows
 
+{% raw %}
+
 	Article: Q85476
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -79,3 +81,5 @@ permalink: /kb/085/Q85476/
 	
 	=============================================================================
 	
+
+{% endraw %}

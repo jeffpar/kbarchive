@@ -6,6 +6,8 @@ permalink: /kb/172/Q172014/
 
 ## Q172014: WD97: Equation Editor Help Reference Incorrect
 
+{% raw %}
+
 	Article: Q172014
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/172/Q172014/
 	
 	=============================================================================
 	
+
+{% endraw %}

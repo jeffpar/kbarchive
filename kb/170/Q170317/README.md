@@ -6,6 +6,8 @@ permalink: /kb/170/Q170317/
 
 ## Q170317: XFOR: IMC Stops Responding When VRFY Is Enabled
 
+{% raw %}
+
 	Article: Q170317
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -52,3 +54,5 @@ permalink: /kb/170/Q170317/
 	
 	=============================================================================
 	
+
+{% endraw %}

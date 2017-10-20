@@ -6,6 +6,8 @@ permalink: /kb/175/Q175156/
 
 ## Q175156: PRB: Class Not Registered Error and Empty Components Dialog
 
+{% raw %}
+
 	Article: Q175156
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/175/Q175156/
 	
 	=============================================================================
 	
+
+{% endraw %}

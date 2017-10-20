@@ -6,6 +6,8 @@ permalink: /kb/122/Q122896/
 
 ## Q122896: MSB Human: How to Change Installation Directory
 
+{% raw %}
+
 	Article: Q122896
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -118,3 +120,5 @@ permalink: /kb/122/Q122896/
 	
 	=============================================================================
 	
+
+{% endraw %}

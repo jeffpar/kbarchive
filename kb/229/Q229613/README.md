@@ -6,6 +6,8 @@ permalink: /kb/229/Q229613/
 
 ## Q229613: Dtcxatm.log File Grows Unexpectedly Large
 
+{% raw %}
+
 	Article: Q229613
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/229/Q229613/
 	
 	=============================================================================
 	
+
+{% endraw %}

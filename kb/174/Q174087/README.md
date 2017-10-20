@@ -6,6 +6,8 @@ permalink: /kb/174/Q174087/
 
 ## Q174087: HOWTO: Display Additional Buttons in Customize Toolbar Dialog
 
+{% raw %}
+
 	Article: Q174087
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -164,3 +166,5 @@ permalink: /kb/174/Q174087/
 	
 	=============================================================================
 	
+
+{% endraw %}

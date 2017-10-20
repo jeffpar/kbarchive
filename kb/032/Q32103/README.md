@@ -6,6 +6,8 @@ permalink: /kb/032/Q32103/
 
 ## Q32103: &quot;Too Many Files&quot; When Using Make EXE Option in QB.EXE Editor
 
+{% raw %}
+
 	Article: Q32103
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -95,3 +97,5 @@ permalink: /kb/032/Q32103/
 	6. Choose Make EXE File... (or Make EXE And Exit) from the Run menu.
 	
 	7. A "Too Many Files" error may now appear.
+
+{% endraw %}

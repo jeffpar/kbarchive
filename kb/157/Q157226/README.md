@@ -6,6 +6,8 @@ permalink: /kb/157/Q157226/
 
 ## Q157226: WD97: Can't Use Back, Forward Buttons After View HTML Source
 
+{% raw %}
+
 	Article: Q157226
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157226/
 	
 	=============================================================================
 	
+
+{% endraw %}

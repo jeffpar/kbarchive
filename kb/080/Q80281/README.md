@@ -6,6 +6,8 @@ permalink: /kb/080/Q80281/
 
 ## Q80281: PRB: Combining Multiple Compiled Resource Files Fails
 
+{% raw %}
+
 	Article: Q80281
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -86,3 +88,5 @@ permalink: /kb/080/Q80281/
 	
 	=============================================================================
 	
+
+{% endraw %}

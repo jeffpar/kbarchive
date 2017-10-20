@@ -6,6 +6,8 @@ permalink: /kb/166/Q166289/
 
 ## Q166289: Cannot Remove or Reinstall Windows Messaging
 
+{% raw %}
+
 	Article: Q166289
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 97
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166289/
 	
 	=============================================================================
 	
+
+{% endraw %}

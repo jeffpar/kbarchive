@@ -6,6 +6,8 @@ permalink: /kb/190/Q190180/
 
 ## Q190180: PRB: Value of the Point Function Does Not Match Set Color
 
+{% raw %}
+
 	Article: Q190180
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/190/Q190180/
 	
 	=============================================================================
 	
+
+{% endraw %}

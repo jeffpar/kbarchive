@@ -6,6 +6,8 @@ permalink: /kb/068/Q68388/
 
 ## Q68388: &#36;&#36;(@F) Macro Doesn't Work with NMAKE Version 1.01
 
+{% raw %}
+
 	Article: Q68388
 	Product(s): See article
 	Version(s): 1.01   | 1.01
@@ -27,3 +29,5 @@ permalink: /kb/068/Q68388/
 	With NMAKE version 1.01, this will only work for the first file in the
 	list. Subsequent files are not processed. NMAKE 1.11 correctly copies
 	all three files to the c:\include directory.
+
+{% endraw %}

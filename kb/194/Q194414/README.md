@@ -6,6 +6,8 @@ permalink: /kb/194/Q194414/
 
 ## Q194414: FIX: &quot;Unexpected Error&quot; Message When Loading a GIF
 
+{% raw %}
+
 	Article: Q194414
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -83,3 +85,5 @@ permalink: /kb/194/Q194414/
 	
 	=============================================================================
 	
+
+{% endraw %}

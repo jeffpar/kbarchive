@@ -6,6 +6,8 @@ permalink: /kb/163/Q163550/
 
 ## Q163550: WD97: Letter Wizard Subject Line Not Selected
 
+{% raw %}
+
 	Article: Q163550
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/163/Q163550/
 	
 	=============================================================================
 	
+
+{% endraw %}

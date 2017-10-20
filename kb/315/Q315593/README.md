@@ -6,6 +6,8 @@ permalink: /kb/315/Q315593/
 
 ## Q315593: Flight Simulator 2002: You Don't Hear Marker Indicator Sounds
 
+{% raw %}
+
 	Article: Q315593
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/315/Q315593/
 	
 	=============================================================================
 	
+
+{% endraw %}

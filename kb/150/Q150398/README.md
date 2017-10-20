@@ -6,6 +6,8 @@ permalink: /kb/150/Q150398/
 
 ## Q150398: Bookshelf '96-'97: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q150398
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/150/Q150398/
 	
 	=============================================================================
 	
+
+{% endraw %}

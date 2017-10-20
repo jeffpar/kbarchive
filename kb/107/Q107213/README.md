@@ -6,6 +6,8 @@ permalink: /kb/107/Q107213/
 
 ## Q107213: Encarta: Table Text Garbled with ATI Mach 32 Video Driver
 
+{% raw %}
+
 	Article: Q107213
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition
@@ -44,3 +46,5 @@ permalink: /kb/107/Q107213/
 	
 	=============================================================================
 	
+
+{% endraw %}

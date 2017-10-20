@@ -6,6 +6,8 @@ permalink: /kb/152/Q152929/
 
 ## Q152929: XCLN: WordPad and Exchange Crash When Run on Non-English NT 3.51
 
+{% raw %}
+
 	Article: Q152929
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -87,3 +89,5 @@ permalink: /kb/152/Q152929/
 	
 	=============================================================================
 	
+
+{% endraw %}

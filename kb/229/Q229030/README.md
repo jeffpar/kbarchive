@@ -6,6 +6,8 @@ permalink: /kb/229/Q229030/
 
 ## Q229030: FIX: A Workspace with Many Dependencies May Appear to Hang
 
+{% raw %}
+
 	Article: Q229030
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -76,3 +78,5 @@ permalink: /kb/229/Q229030/
 	
 	=============================================================================
 	
+
+{% endraw %}

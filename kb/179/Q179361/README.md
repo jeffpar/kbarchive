@@ -6,6 +6,8 @@ permalink: /kb/179/Q179361/
 
 ## Q179361: WD97: Toolbar Button Color Lost Converting Word 95 Toolbar
 
+{% raw %}
+
 	Article: Q179361
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/179/Q179361/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141014/
 
 ## Q141014: Emergency Recovery Utility Does Not Back Up Files
 
+{% raw %}
+
 	Article: Q141014
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/141/Q141014/
 	
 	=============================================================================
 	
+
+{% endraw %}

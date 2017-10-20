@@ -6,6 +6,8 @@ permalink: /kb/188/Q188588/
 
 ## Q188588: VB5SP3DS.EXE Contains Visual Basic SP3 Debugging Symbols
 
+{% raw %}
+
 	Article: Q188588
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97sp3
@@ -116,3 +118,5 @@ permalink: /kb/188/Q188588/
 	
 	=============================================================================
 	
+
+{% endraw %}

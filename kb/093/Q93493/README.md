@@ -6,6 +6,8 @@ permalink: /kb/093/Q93493/
 
 ## Q93493: Mac Srv: Admin Functions w/ Mismatched Client/Server Versions
 
+{% raw %}
+
 	Article: Q93493
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/093/Q93493/
 	
 	=============================================================================
 	
+
+{% endraw %}

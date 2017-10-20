@@ -6,6 +6,8 @@ permalink: /kb/259/Q259055/
 
 ## Q259055: MAPI Exchange Management Agent/Discovery Takes a Long Time
 
+{% raw %}
+
 	Article: Q259055
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -77,3 +79,5 @@ permalink: /kb/259/Q259055/
 	
 	=============================================================================
 	
+
+{% endraw %}

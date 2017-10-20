@@ -6,6 +6,8 @@ permalink: /kb/161/Q161566/
 
 ## Q161566: GDI Heap Corruption Causes Stop 0x0000000A
 
+{% raw %}
+
 	Article: Q161566
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -46,3 +48,5 @@ permalink: /kb/161/Q161566/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130435/
 
 ## Q130435: Internal Task Ordering with Timex Data Link Watch
 
+{% raw %}
+
 	Article: Q130435
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -59,3 +61,5 @@ permalink: /kb/130/Q130435/
 	
 	=============================================================================
 	
+
+{% endraw %}

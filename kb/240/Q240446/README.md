@@ -6,6 +6,8 @@ permalink: /kb/240/Q240446/
 
 ## Q240446: BUG: Text Box and Data Control on UserControl Closes It in IDE
 
+{% raw %}
+
 	Article: Q240446
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -72,3 +74,5 @@ permalink: /kb/240/Q240446/
 	
 	=============================================================================
 	
+
+{% endraw %}

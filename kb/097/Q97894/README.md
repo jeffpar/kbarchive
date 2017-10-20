@@ -6,6 +6,8 @@ permalink: /kb/097/Q97894/
 
 ## Q97894: PC WRmt: Remote Mail Password Dialogs
 
+{% raw %}
+
 	Article: Q97894
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -115,3 +117,5 @@ permalink: /kb/097/Q97894/
 	
 	=============================================================================
 	
+
+{% endraw %}

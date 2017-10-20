@@ -6,6 +6,8 @@ permalink: /kb/173/Q173952/
 
 ## Q173952: How to Configure Outlook Express for The Microsoft Network
 
+{% raw %}
+
 	Article: Q173952
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6
@@ -166,3 +168,5 @@ permalink: /kb/173/Q173952/
 	
 	=============================================================================
 	
+
+{% endraw %}

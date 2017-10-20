@@ -6,6 +6,8 @@ permalink: /kb/133/Q133093/
 
 ## Q133093: Julia Child: Errors or System Hangs if CD-ROM is Removed
 
+{% raw %}
+
 	Article: Q133093
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/133/Q133093/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136772/
 
 ## Q136772: INFO: General Information on the Visual FoxPro Upsizing Wizard
 
+{% raw %}
+
 	Article: Q136772
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/136/Q136772/
 	
 	=============================================================================
 	
+
+{% endraw %}

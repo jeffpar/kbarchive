@@ -6,6 +6,8 @@ permalink: /kb/262/Q262986/
 
 ## Q262986: XGEN: Exchange 5.5 and Exchange 2K RFC/Standards Compliance
 
+{% raw %}
+
 	Article: Q262986
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -475,3 +477,5 @@ permalink: /kb/262/Q262986/
 	
 	=============================================================================
 	
+
+{% endraw %}

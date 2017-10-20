@@ -6,6 +6,8 @@ permalink: /kb/292/Q292720/
 
 ## Q292720: Inside Windows NT Second Edition Comments and Corrections
 
+{% raw %}
+
 	Article: Q292720
 	Product(s): Microsoft Press
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/292/Q292720/
 	
 	=============================================================================
 	
+
+{% endraw %}

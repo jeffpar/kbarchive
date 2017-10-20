@@ -6,6 +6,8 @@ permalink: /kb/111/Q111586/
 
 ## Q111586: BUG: GetRasterizerCaps Returns Zero When TrueType Is Disabled
 
+{% raw %}
+
 	Article: Q111586
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/111/Q111586/
 	
 	=============================================================================
 	
+
+{% endraw %}

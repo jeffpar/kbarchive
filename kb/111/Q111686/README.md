@@ -6,6 +6,8 @@ permalink: /kb/111/Q111686/
 
 ## Q111686: Incorrect Detection of Artisoft's NodeRunner Network Card
 
+{% raw %}
+
 	Article: Q111686
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95
@@ -62,3 +64,5 @@ permalink: /kb/111/Q111686/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72480/
 
 ## Q72480: FIX: MASM 5.1/5.1a .OBJ May Cause LINK to Generate L2013 Error
 
+{% raw %}
+
 	Article: Q72480
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -154,3 +156,5 @@ permalink: /kb/072/Q72480/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/300/Q300968/
 
 ## Q300968: Train Simulator: Installation Uses More Disk Space Than Expected
 
+{% raw %}
+
 	Article: Q300968
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -86,3 +88,5 @@ permalink: /kb/300/Q300968/
 	
 	=============================================================================
 	
+
+{% endraw %}

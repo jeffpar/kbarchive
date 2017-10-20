@@ -6,6 +6,8 @@ permalink: /kb/045/Q45909/
 
 ## Q45909: Example of How to Use 1- and 2-Byte Return Codes from INKEY&#36;
 
+{% raw %}
+
 	Article: Q45909
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -99,3 +101,5 @@ permalink: /kb/045/Q45909/
 	 END IF
 	LOOP
 	END
+
+{% endraw %}

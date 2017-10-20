@@ -6,6 +6,8 @@ permalink: /kb/164/Q164599/
 
 ## Q164599: XCLN: Opening an Attachment on Rich Text Field Fails
 
+{% raw %}
+
 	Article: Q164599
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0; Win95:5.0; :8.03
@@ -110,3 +112,5 @@ permalink: /kb/164/Q164599/
 	
 	=============================================================================
 	
+
+{% endraw %}

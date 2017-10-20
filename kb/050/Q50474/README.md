@@ -6,6 +6,8 @@ permalink: /kb/050/Q50474/
 
 ## Q50474: GRAPHICS.LIB Not Supported in C for OS/2
 
+{% raw %}
+
 	Article: Q50474
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -16,3 +18,5 @@ permalink: /kb/050/Q50474/
 	GRAPHICS.LIB is a real-mode library and its use in a protected mode
 	application leads to a general protection fault or a protection
 	violation.
+
+{% endraw %}

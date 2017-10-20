@@ -6,6 +6,8 @@ permalink: /kb/035/Q35966/
 
 ## Q35966: Using LIB.EXE to Add, Modify, and Combine .LIB; Quick Library
 
+{% raw %}
+
 	Article: Q35966
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -66,3 +68,5 @@ permalink: /kb/035/Q35966/
 	Compiler Versions 6.00 and 6.00b for MS-DOS and MS OS/2 or BASIC PDS
 	7.00 for MS-DOS and MS OS/2. The BQLB4x.LIB file comes on the release
 	disk.
+
+{% endraw %}

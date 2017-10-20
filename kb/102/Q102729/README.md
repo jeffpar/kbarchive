@@ -6,6 +6,8 @@ permalink: /kb/102/Q102729/
 
 ## Q102729: CD-ROM and Services for Macintosh
 
+{% raw %}
+
 	Article: Q102729
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 4.0
@@ -59,3 +61,5 @@ permalink: /kb/102/Q102729/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123371/
 
 ## Q123371: Mac OOF: Forwarding Mail to a Gateway Recipient
 
+{% raw %}
+
 	Article: Q123371
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -71,3 +73,5 @@ permalink: /kb/123/Q123371/
 	
 	=============================================================================
 	
+
+{% endraw %}

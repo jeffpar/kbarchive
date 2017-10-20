@@ -6,6 +6,8 @@ permalink: /kb/150/Q150102/
 
 ## Q150102: HP Netserver Stop Err Msg: Stop 0x0000007F (00000008)
 
+{% raw %}
+
 	Article: Q150102
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -72,3 +74,5 @@ permalink: /kb/150/Q150102/
 	
 	=============================================================================
 	
+
+{% endraw %}

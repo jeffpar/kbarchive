@@ -6,6 +6,8 @@ permalink: /kb/156/Q156516/
 
 ## Q156516: Error 26 or &quot;MAPI_E_NOT_SUPPORTED&quot; with MAPI-Based Program
 
+{% raw %}
+
 	Article: Q156516
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:4.0,4.01,95
@@ -76,3 +78,5 @@ permalink: /kb/156/Q156516/
 	
 	=============================================================================
 	
+
+{% endraw %}

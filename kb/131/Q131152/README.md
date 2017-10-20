@@ -6,6 +6,8 @@ permalink: /kb/131/Q131152/
 
 ## Q131152: PC WRmt: Running Mail Remote Under Windows NT
 
+{% raw %}
+
 	Article: Q131152
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -81,3 +83,5 @@ permalink: /kb/131/Q131152/
 	
 	=============================================================================
 	
+
+{% endraw %}

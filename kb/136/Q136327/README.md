@@ -6,6 +6,8 @@ permalink: /kb/136/Q136327/
 
 ## Q136327: How to Enable Autologon During an Automated Setup
 
+{% raw %}
+
 	Article: Q136327
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -106,3 +108,5 @@ permalink: /kb/136/Q136327/
 	
 	=============================================================================
 	
+
+{% endraw %}

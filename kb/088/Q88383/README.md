@@ -6,6 +6,8 @@ permalink: /kb/088/Q88383/
 
 ## Q88383: Windows Err Msg: Problem Drawing or Printing Object
 
+{% raw %}
+
 	Article: Q88383
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :3.1
@@ -50,3 +52,5 @@ permalink: /kb/088/Q88383/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164776/
 
 ## Q164776: BUG: Credit Letter.Doc not on Access 97 Step By Step disk
 
+{% raw %}
+
 	Article: Q164776
 	Product(s): Microsoft Press
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/164/Q164776/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41657/
 
 ## Q41657: QuickC 2.00 README.DOC: /Gi (Use Incremental Compilation)
 
+{% raw %}
+
 	Article: Q41657
 	Product(s): See article
 	Version(s): 2.00
@@ -28,3 +30,5 @@ permalink: /kb/041/Q41657/
 	
 	If you own Microsoft C version 5.1 or earlier and want to use the
 	CodeView debugger, do NOT use the /Gi or /Li options.
+
+{% endraw %}

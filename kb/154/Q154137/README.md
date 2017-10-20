@@ -6,6 +6,8 @@ permalink: /kb/154/Q154137/
 
 ## Q154137: XCLN: How to View, Print MS Exchange Personal Address Book Files
 
+{% raw %}
+
 	Article: Q154137
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -108,3 +110,5 @@ permalink: /kb/154/Q154137/
 	
 	=============================================================================
 	
+
+{% endraw %}

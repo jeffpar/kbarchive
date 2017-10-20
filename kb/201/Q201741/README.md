@@ -6,6 +6,8 @@ permalink: /kb/201/Q201741/
 
 ## Q201741: INFO: Differences of Behavior in Debug Mode and Compile Mode
 
+{% raw %}
+
 	Article: Q201741
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -154,3 +156,5 @@ permalink: /kb/201/Q201741/
 	
 	=============================================================================
 	
+
+{% endraw %}

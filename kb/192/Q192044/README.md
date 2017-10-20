@@ -6,6 +6,8 @@ permalink: /kb/192/Q192044/
 
 ## Q192044: XADM: Setting Up X509v3 Certs on Exch 5.5 SP1 KMS Local Cert Srv
 
+{% raw %}
+
 	Article: Q192044
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1
@@ -103,3 +105,5 @@ permalink: /kb/192/Q192044/
 	
 	=============================================================================
 	
+
+{% endraw %}

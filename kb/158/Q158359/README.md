@@ -6,6 +6,8 @@ permalink: /kb/158/Q158359/
 
 ## Q158359: License Wizard Displays Unreadable Enterprise Details
 
+{% raw %}
+
 	Article: Q158359
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/158/Q158359/
 	
 	=============================================================================
 	
+
+{% endraw %}

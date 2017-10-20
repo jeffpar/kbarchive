@@ -6,6 +6,8 @@ permalink: /kb/148/Q148784/
 
 ## Q148784: How to Use UDF() to Modify Default Scientific Notation Format
 
+{% raw %}
+
 	Article: Q148784
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5a
@@ -122,3 +124,5 @@ permalink: /kb/148/Q148784/
 	
 	=============================================================================
 	
+
+{% endraw %}

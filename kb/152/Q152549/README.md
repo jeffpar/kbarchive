@@ -6,6 +6,8 @@ permalink: /kb/152/Q152549/
 
 ## Q152549: Mac Bookshelf '96 - '97: How to Determine Installed Version
 
+{% raw %}
+
 	Article: Q152549
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152549/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274605/
 
 ## Q274605: CFS2: Computer Hangs When You Start Game or Mission Builder
 
+{% raw %}
+
 	Article: Q274605
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/274/Q274605/
 	
 	=============================================================================
 	
+
+{% endraw %}

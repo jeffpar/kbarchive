@@ -6,6 +6,8 @@ permalink: /kb/252/Q252820/
 
 ## Q252820: XADM: Store Stops Responding When an Orphan User Logs On
 
+{% raw %}
+
 	Article: Q252820
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -87,3 +89,5 @@ permalink: /kb/252/Q252820/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123058/
 
 ## Q123058: Closing Timed-Out Applications Without Choosing End Task
 
+{% raw %}
+
 	Article: Q123058
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/123/Q123058/
 	
 	=============================================================================
 	
+
+{% endraw %}

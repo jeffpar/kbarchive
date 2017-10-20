@@ -6,6 +6,8 @@ permalink: /kb/125/Q125756/
 
 ## Q125756: Cannot Reconnect With Same IP Address to SLIP Server
 
+{% raw %}
+
 	Article: Q125756
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -53,3 +55,5 @@ permalink: /kb/125/Q125756/
 	
 	=============================================================================
 	
+
+{% endraw %}

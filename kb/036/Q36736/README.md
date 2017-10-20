@@ -6,6 +6,8 @@ permalink: /kb/036/Q36736/
 
 ## Q36736: RANDOMIZE Statements Reseed but Don't Restart RND Sequence
 
+{% raw %}
+
 	Article: Q36736
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -133,3 +135,5 @@ permalink: /kb/036/Q36736/
 	multiple RANDOMIZE statements reseed the sequence (and change the
 	random number set displayed), but they do not restart the sequence
 	from the beginning.
+
+{% endraw %}

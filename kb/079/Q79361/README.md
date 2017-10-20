@@ -6,6 +6,8 @@ permalink: /kb/079/Q79361/
 
 ## Q79361: IBM Quietwriter III Printer Switches
 
+{% raw %}
+
 	Article: Q79361
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/079/Q79361/
 	
 	=============================================================================
 	
+
+{% endraw %}

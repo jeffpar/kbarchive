@@ -6,6 +6,8 @@ permalink: /kb/255/Q255252/
 
 ## Q255252: INFO: Accessing and Building Projects Over a Network Using VC++
 
+{% raw %}
+
 	Article: Q255252
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/255/Q255252/
 	
 	=============================================================================
 	
+
+{% endraw %}

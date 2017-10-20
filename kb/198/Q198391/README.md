@@ -6,6 +6,8 @@ permalink: /kb/198/Q198391/
 
 ## Q198391: WD97: Some Words and Synonyms Missing After Installing SR-2
 
+{% raw %}
+
 	Article: Q198391
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 2
@@ -44,3 +46,5 @@ permalink: /kb/198/Q198391/
 	
 	=============================================================================
 	
+
+{% endraw %}

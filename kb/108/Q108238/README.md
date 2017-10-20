@@ -6,6 +6,8 @@ permalink: /kb/108/Q108238/
 
 ## Q108238: Problem with the Copy Command and Multiple Parallel Ports
 
+{% raw %}
+
 	Article: Q108238
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -66,3 +68,5 @@ permalink: /kb/108/Q108238/
 	
 	=============================================================================
 	
+
+{% endraw %}

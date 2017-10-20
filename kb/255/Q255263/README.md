@@ -6,6 +6,8 @@ permalink: /kb/255/Q255263/
 
 ## Q255263: Windows Client Hangs When You Use &quot;SMS Restarts Computer&quot;
 
+{% raw %}
+
 	Article: Q255263
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/255/Q255263/
 	
 	=============================================================================
 	
+
+{% endraw %}

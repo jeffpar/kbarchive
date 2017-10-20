@@ -6,6 +6,8 @@ permalink: /kb/160/Q160175/
 
 ## Q160175: What Does WinNT 4.0 look for in a Valid WinNT 3.51 Install
 
+{% raw %}
+
 	Article: Q160175
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -109,3 +111,5 @@ permalink: /kb/160/Q160175/
 	
 	=============================================================================
 	
+
+{% endraw %}

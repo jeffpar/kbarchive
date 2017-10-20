@@ -6,6 +6,8 @@ permalink: /kb/187/Q187287/
 
 ## Q187287: SMS: PCM Does Not Remind Users of Pending Commands
 
+{% raw %}
+
 	Article: Q187287
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -88,3 +90,5 @@ permalink: /kb/187/Q187287/
 	
 	=============================================================================
 	
+
+{% endraw %}

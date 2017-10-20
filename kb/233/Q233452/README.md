@@ -6,6 +6,8 @@ permalink: /kb/233/Q233452/
 
 ## Q233452: Business Planner: Text in Article Title Overlaps Itself
 
+{% raw %}
+
 	Article: Q233452
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/233/Q233452/
 	
 	=============================================================================
 	
+
+{% endraw %}

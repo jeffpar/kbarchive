@@ -6,6 +6,8 @@ permalink: /kb/024/Q24910/
 
 ## Q24910: Memory Not Freed by DOS 2.x for exec or spawn with P_OVERLAY
 
+{% raw %}
+
 	Article: Q24910
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -27,3 +29,5 @@ permalink: /kb/024/Q24910/
 	It appears that only the exec() family (or spawn() with P_OVERLAY
 	specified) is affected by this DOS problem. The spawn() family (except
 	when P_OVERLAY is specified) seems to work correctly.
+
+{% endraw %}

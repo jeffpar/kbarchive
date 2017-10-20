@@ -6,6 +6,8 @@ permalink: /kb/184/Q184946/
 
 ## Q184946: WD97: Outline Character Formatting in Object Not Printed
 
+{% raw %}
+
 	Article: Q184946
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -42,3 +44,5 @@ permalink: /kb/184/Q184946/
 	
 	=============================================================================
 	
+
+{% endraw %}

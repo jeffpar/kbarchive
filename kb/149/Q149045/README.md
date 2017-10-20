@@ -6,6 +6,8 @@ permalink: /kb/149/Q149045/
 
 ## Q149045: XCLN: RPC Files Installed w/ Windows 3.x &amp; MS-DOS Clients
 
+{% raw %}
+
 	Article: Q149045
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -66,3 +68,5 @@ permalink: /kb/149/Q149045/
 	
 	=============================================================================
 	
+
+{% endraw %}

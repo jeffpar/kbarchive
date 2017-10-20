@@ -6,6 +6,8 @@ permalink: /kb/173/Q173636/
 
 ## Q173636: XWEB: Outlook Web Access Cannot Open Multiple Mailboxes
 
+{% raw %}
+
 	Article: Q173636
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -45,3 +47,5 @@ permalink: /kb/173/Q173636/
 	
 	=============================================================================
 	
+
+{% endraw %}

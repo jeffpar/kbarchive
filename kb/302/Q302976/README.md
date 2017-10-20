@@ -6,6 +6,8 @@ permalink: /kb/302/Q302976/
 
 ## Q302976: MSN Explorer 6.0 May Shut Down When Stock Tickers Of Nine Charac
 
+{% raw %}
+
 	Article: Q302976
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -59,3 +61,5 @@ permalink: /kb/302/Q302976/
 	
 	=============================================================================
 	
+
+{% endraw %}

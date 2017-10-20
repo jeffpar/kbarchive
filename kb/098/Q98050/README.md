@@ -6,6 +6,8 @@ permalink: /kb/098/Q98050/
 
 ## Q98050: SMTP: FFAPI Models Used in SMTP Gateway
 
+{% raw %}
+
 	Article: Q98050
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/098/Q98050/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231736/
 
 ## Q231736: False &quot;Read Only&quot; Message When Opening AutoCAD R14 File
 
+{% raw %}
+
 	Article: Q231736
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/231/Q231736/
 	
 	=============================================================================
 	
+
+{% endraw %}

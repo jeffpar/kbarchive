@@ -6,6 +6,8 @@ permalink: /kb/150/Q150519/
 
 ## Q150519: Running Shared Word 6.0 Help File Causes an Error
 
+{% raw %}
+
 	Article: Q150519
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/150/Q150519/
 	
 	=============================================================================
 	
+
+{% endraw %}

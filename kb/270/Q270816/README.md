@@ -6,6 +6,8 @@ permalink: /kb/270/Q270816/
 
 ## Q270816: Encarta Language Learning French: Scoring Errors
 
+{% raw %}
+
 	Article: Q270816
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/270/Q270816/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128108/
 
 ## Q128108: Avoid Fixed Pitch Font in Thai Application
 
+{% raw %}
+
 	Article: Q128108
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -38,3 +40,5 @@ permalink: /kb/128/Q128108/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231411/
 
 ## Q231411: XCON: Embedded X.400 Message Opened Using Wrong Message Window
 
+{% raw %}
+
 	Article: Q231411
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -100,3 +102,5 @@ permalink: /kb/231/Q231411/
 	
 	=============================================================================
 	
+
+{% endraw %}

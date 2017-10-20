@@ -6,6 +6,8 @@ permalink: /kb/166/Q166061/
 
 ## Q166061: WV: Cannot Follow Hyperlink to Its Source from Word Viewer
 
+{% raw %}
+
 	Article: Q166061
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/166/Q166061/
 	
 	=============================================================================
 	
+
+{% endraw %}

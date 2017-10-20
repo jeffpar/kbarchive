@@ -6,6 +6,8 @@ permalink: /kb/230/Q230167/
 
 ## Q230167: BUG:DataCombo/DataList Not Displaying Recordset with Sort/Filter
 
+{% raw %}
+
 	Article: Q230167
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.5,2.6,5.0,6.0
@@ -208,3 +210,5 @@ permalink: /kb/230/Q230167/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169117/
 
 ## Q169117: XFOR: MS Mail Users Send SMTP, NDR, 2375, 2113 Inconsistently
 
+{% raw %}
+
 	Article: Q169117
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -118,3 +120,5 @@ permalink: /kb/169/Q169117/
 	
 	=============================================================================
 	
+
+{% endraw %}

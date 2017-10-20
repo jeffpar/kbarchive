@@ -6,6 +6,8 @@ permalink: /kb/153/Q153576/
 
 ## Q153576: Despooler Fails to Retry After Package Distribution Errs
 
+{% raw %}
+
 	Article: Q153576
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153576/
 	
 	=============================================================================
 	
+
+{% endraw %}

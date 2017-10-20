@@ -6,6 +6,8 @@ permalink: /kb/122/Q122565/
 
 ## Q122565: FORTRAN PowerStation 32 Update for Windows NT 3.5
 
+{% raw %}
+
 	Article: Q122565
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/122/Q122565/
 	
 	=============================================================================
 	
+
+{% endraw %}

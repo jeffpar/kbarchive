@@ -6,6 +6,8 @@ permalink: /kb/182/Q182591/
 
 ## Q182591: CardBus Cards Not Enumerated on Some PC Card Controllers
 
+{% raw %}
+
 	Article: Q182591
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,2.1,2.5
@@ -81,3 +83,5 @@ permalink: /kb/182/Q182591/
 	
 	=============================================================================
 	
+
+{% endraw %}

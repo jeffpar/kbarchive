@@ -6,6 +6,8 @@ permalink: /kb/011/Q11274/
 
 ## Q11274: Italics (and Other Fonts) on a Monochrome Monitor
 
+{% raw %}
+
 	Article: Q11274
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a
@@ -33,3 +35,5 @@ permalink: /kb/011/Q11274/
 	
 	It is possible to incorporate many desired fonts into your application
 	by writing your application to interface with Microsoft Windows.
+
+{% endraw %}

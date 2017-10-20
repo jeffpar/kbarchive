@@ -6,6 +6,8 @@ permalink: /kb/066/Q66630/
 
 ## Q66630: ASD: Flight Timing Gate Scoring
 
+{% raw %}
+
 	Article: Q66630
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/066/Q66630/
 	
 	=============================================================================
 	
+
+{% endraw %}

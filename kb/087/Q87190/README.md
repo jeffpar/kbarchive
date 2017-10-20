@@ -6,6 +6,8 @@ permalink: /kb/087/Q87190/
 
 ## Q87190: PROFS: Notice 16, Error Reading Mail
 
+{% raw %}
+
 	Article: Q87190
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -56,3 +58,5 @@ permalink: /kb/087/Q87190/
 	
 	=============================================================================
 	
+
+{% endraw %}

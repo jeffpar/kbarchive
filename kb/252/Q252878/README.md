@@ -6,6 +6,8 @@ permalink: /kb/252/Q252878/
 
 ## Q252878: XCLN: Schedule+ Err Mssg: The File Req32.cfg Could Not Be Opened
 
+{% raw %}
+
 	Article: Q252878
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.0a,7.5
@@ -72,3 +74,5 @@ permalink: /kb/252/Q252878/
 	
 	=============================================================================
 	
+
+{% endraw %}

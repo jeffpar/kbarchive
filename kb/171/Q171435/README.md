@@ -6,6 +6,8 @@ permalink: /kb/171/Q171435/
 
 ## Q171435: XFOR: POP3 Logon Attempt Fails with Event 11202
 
+{% raw %}
+
 	Article: Q171435
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -100,3 +102,5 @@ permalink: /kb/171/Q171435/
 	
 	=============================================================================
 	
+
+{% endraw %}

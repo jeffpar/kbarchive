@@ -6,6 +6,8 @@ permalink: /kb/184/Q184455/
 
 ## Q184455: Outwars: How to Enable Direct3D Hardware Acceleration
 
+{% raw %}
+
 	Article: Q184455
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/184/Q184455/
 	
 	=============================================================================
 	
+
+{% endraw %}

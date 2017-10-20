@@ -6,6 +6,8 @@ permalink: /kb/156/Q156545/
 
 ## Q156545: XFOR: How to Set Up a 2nd MS-type Proxy Address for MSMail Users
 
+{% raw %}
+
 	Article: Q156545
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156545/
 	
 	=============================================================================
 	
+
+{% endraw %}

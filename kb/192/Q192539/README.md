@@ -6,6 +6,8 @@ permalink: /kb/192/Q192539/
 
 ## Q192539: FIX: 'using namespace std' Before Friend Operator Fails Compile
 
+{% raw %}
+
 	Article: Q192539
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -180,3 +182,5 @@ permalink: /kb/192/Q192539/
 	
 	=============================================================================
 	
+
+{% endraw %}

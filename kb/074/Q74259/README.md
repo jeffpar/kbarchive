@@ -6,6 +6,8 @@ permalink: /kb/074/Q74259/
 
 ## Q74259: Windows Err Msgs: Compressed Windows Utilities
 
+{% raw %}
+
 	Article: Q74259
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/074/Q74259/
 	
 	=============================================================================
 	
+
+{% endraw %}

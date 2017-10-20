@@ -6,6 +6,8 @@ permalink: /kb/153/Q153528/
 
 ## Q153528: SET PRINTER TO Enhancements in Visual FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q153528
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -122,3 +124,5 @@ permalink: /kb/153/Q153528/
 	
 	=============================================================================
 	
+
+{% endraw %}

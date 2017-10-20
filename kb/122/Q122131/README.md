@@ -6,6 +6,8 @@ permalink: /kb/122/Q122131/
 
 ## Q122131: Video for Windows Conflicts with Diamond VideoStar Board
 
+{% raw %}
+
 	Article: Q122131
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.1
@@ -76,3 +78,5 @@ permalink: /kb/122/Q122131/
 	
 	=============================================================================
 	
+
+{% endraw %}

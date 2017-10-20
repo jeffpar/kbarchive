@@ -6,6 +6,8 @@ permalink: /kb/178/Q178676/
 
 ## Q178676: How to Install an ISDN Device in Windows NT
 
+{% raw %}
+
 	Article: Q178676
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -101,3 +103,5 @@ permalink: /kb/178/Q178676/
 	
 	=============================================================================
 	
+
+{% endraw %}

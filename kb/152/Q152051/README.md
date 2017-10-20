@@ -6,6 +6,8 @@ permalink: /kb/152/Q152051/
 
 ## Q152051: IBM Gothic Box Font Appears Garbled
 
+{% raw %}
+
 	Article: Q152051
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -50,3 +52,5 @@ permalink: /kb/152/Q152051/
 	
 	=============================================================================
 	
+
+{% endraw %}

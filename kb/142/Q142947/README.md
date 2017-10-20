@@ -6,6 +6,8 @@ permalink: /kb/142/Q142947/
 
 ## Q142947: Problems Reinstalling Microsoft Exchange Information Service
 
+{% raw %}
+
 	Article: Q142947
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -181,3 +183,5 @@ permalink: /kb/142/Q142947/
 	
 	=============================================================================
 	
+
+{% endraw %}

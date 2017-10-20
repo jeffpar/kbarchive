@@ -6,6 +6,8 @@ permalink: /kb/040/Q40952/
 
 ## Q40952: No Variable Name Cross-reference for QuickBASIC for MS-DOS
 
+{% raw %}
+
 	Article: Q40952
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -39,3 +41,5 @@ permalink: /kb/040/Q40952/
 	
 	Other companies may also offer a cross-reference program for the BASIC
 	language.
+
+{% endraw %}

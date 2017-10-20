@@ -6,6 +6,8 @@ permalink: /kb/074/Q74173/
 
 ## Q74173: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 7-10
 
+{% raw %}
+
 	Article: Q74173
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -290,3 +292,5 @@ permalink: /kb/074/Q74173/
 	
 	=============================================================================
 	
+
+{% endraw %}

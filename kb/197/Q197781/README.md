@@ -6,6 +6,8 @@ permalink: /kb/197/Q197781/
 
 ## Q197781: CopyProxy Does Not Make a Copy for Dual Interfaces
 
+{% raw %}
+
 	Article: Q197781
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/197/Q197781/
 	
 	=============================================================================
 	
+
+{% endraw %}

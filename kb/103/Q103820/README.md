@@ -6,6 +6,8 @@ permalink: /kb/103/Q103820/
 
 ## Q103820: PC Adm: Generating RNETWORK.GLB, Writing Records to .XTN Files
 
+{% raw %}
+
 	Article: Q103820
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -46,3 +48,5 @@ permalink: /kb/103/Q103820/
 	
 	=============================================================================
 	
+
+{% endraw %}

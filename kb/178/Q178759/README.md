@@ -6,6 +6,8 @@ permalink: /kb/178/Q178759/
 
 ## Q178759: XCLN: Outlook Spell Check Suggests More Words Than Exchange
 
+{% raw %}
+
 	Article: Q178759
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -70,3 +72,5 @@ permalink: /kb/178/Q178759/
 	
 	=============================================================================
 	
+
+{% endraw %}

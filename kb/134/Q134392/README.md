@@ -6,6 +6,8 @@ permalink: /kb/134/Q134392/
 
 ## Q134392: FIX: Shape Control's Mouseup Incorrectly Fired by Form Click
 
+{% raw %}
+
 	Article: Q134392
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -81,3 +83,5 @@ permalink: /kb/134/Q134392/
 	
 	=============================================================================
 	
+
+{% endraw %}

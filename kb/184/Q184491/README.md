@@ -6,6 +6,8 @@ permalink: /kb/184/Q184491/
 
 ## Q184491: Some Print Jobs Print in Bold Text or Incorrect Font
 
+{% raw %}
+
 	Article: Q184491
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT: 4.0
@@ -78,3 +80,5 @@ permalink: /kb/184/Q184491/
 	
 	=============================================================================
 	
+
+{% endraw %}

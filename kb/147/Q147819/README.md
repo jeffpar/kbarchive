@@ -6,6 +6,8 @@ permalink: /kb/147/Q147819/
 
 ## Q147819: Update Job Fails If Clients Logged On to Share
 
+{% raw %}
+
 	Article: Q147819
 	Product(s): Microsoft Windows NT
 	Version(s): 1.10
@@ -52,3 +54,5 @@ permalink: /kb/147/Q147819/
 	
 	=============================================================================
 	
+
+{% endraw %}

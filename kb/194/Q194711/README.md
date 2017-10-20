@@ -6,6 +6,8 @@ permalink: /kb/194/Q194711/
 
 ## Q194711: X400: Characters with Diacritical Marks Aren't Encoded Properly
 
+{% raw %}
+
 	Article: Q194711
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -111,3 +113,5 @@ permalink: /kb/194/Q194711/
 	
 	=============================================================================
 	
+
+{% endraw %}

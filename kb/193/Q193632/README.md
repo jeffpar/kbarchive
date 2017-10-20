@@ -6,6 +6,8 @@ permalink: /kb/193/Q193632/
 
 ## Q193632: Bookshelf: Wave Sounds Pause or Break Up During Playback
 
+{% raw %}
+
 	Article: Q193632
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/193/Q193632/
 	
 	=============================================================================
 	
+
+{% endraw %}

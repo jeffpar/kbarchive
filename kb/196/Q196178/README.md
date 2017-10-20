@@ -6,6 +6,8 @@ permalink: /kb/196/Q196178/
 
 ## Q196178: XADM: Move Server Wizard Errors on Routing Calculation Servers
 
+{% raw %}
+
 	Article: Q196178
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -54,3 +56,5 @@ permalink: /kb/196/Q196178/
 	
 	=============================================================================
 	
+
+{% endraw %}

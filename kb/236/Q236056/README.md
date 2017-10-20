@@ -6,6 +6,8 @@ permalink: /kb/236/Q236056/
 
 ## Q236056: FIX: DAO 3.6 Overruns Buffers in GetRowsEx Method
 
+{% raw %}
+
 	Article: Q236056
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:3.6,6.0
@@ -194,3 +196,5 @@ permalink: /kb/236/Q236056/
 	
 	=============================================================================
 	
+
+{% endraw %}

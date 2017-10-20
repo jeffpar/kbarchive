@@ -6,6 +6,8 @@ permalink: /kb/086/Q86876/
 
 ## Q86876: TopDesk Window May Not Retain Its Size or Position
 
+{% raw %}
+
 	Article: Q86876
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/086/Q86876/
 	
 	=============================================================================
 	
+
+{% endraw %}

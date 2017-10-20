@@ -6,6 +6,8 @@ permalink: /kb/111/Q111599/
 
 ## Q111599: BUG: Character Background Is Not Painted Correctly
 
+{% raw %}
+
 	Article: Q111599
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/111/Q111599/
 	
 	=============================================================================
 	
+
+{% endraw %}

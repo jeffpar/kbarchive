@@ -6,6 +6,8 @@ permalink: /kb/133/Q133457/
 
 ## Q133457: Bookshelf '95: How CD Edition Differs from the Intro Edition
 
+{% raw %}
+
 	Article: Q133457
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -70,3 +72,5 @@ permalink: /kb/133/Q133457/
 	
 	=============================================================================
 	
+
+{% endraw %}

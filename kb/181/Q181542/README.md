@@ -6,6 +6,8 @@ permalink: /kb/181/Q181542/
 
 ## Q181542: PRB: Error 13 Type Mismatch Error on DAO OpenRecordset Method
 
+{% raw %}
+
 	Article: Q181542
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1 SP2,2.5,2.6,2.7,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/181/Q181542/
 	
 	=============================================================================
 	
+
+{% endraw %}

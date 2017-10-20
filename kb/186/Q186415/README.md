@@ -6,6 +6,8 @@ permalink: /kb/186/Q186415/
 
 ## Q186415: SMS: Status MIF Creator, Ismif32.exe Is Available
 
+{% raw %}
+
 	Article: Q186415
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -151,3 +153,5 @@ permalink: /kb/186/Q186415/
 	
 	=============================================================================
 	
+
+{% endraw %}

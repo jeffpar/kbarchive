@@ -6,6 +6,8 @@ permalink: /kb/167/Q167708/
 
 ## Q167708: BootP Client Names Disappear in DHCP Manager
 
+{% raw %}
+
 	Article: Q167708
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/167/Q167708/
 	
 	=============================================================================
 	
+
+{% endraw %}

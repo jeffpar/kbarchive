@@ -6,6 +6,8 @@ permalink: /kb/320/Q320028/
 
 ## Q320028: XCLN: &quot;Unable to Load Personal Free&quot; Err Msg Quitting Outlook
 
+{% raw %}
+
 	Article: Q320028
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -127,3 +129,5 @@ permalink: /kb/320/Q320028/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180110/
 
 ## Q180110: XADM: Directory Export Does Not Append to Existing File
 
+{% raw %}
+
 	Article: Q180110
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/180/Q180110/
 	
 	=============================================================================
 	
+
+{% endraw %}

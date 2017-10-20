@@ -6,6 +6,8 @@ permalink: /kb/225/Q225050/
 
 ## Q225050: Availability of the Windows 95 Year 2000 Update
 
+{% raw %}
+
 	Article: Q225050
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -133,3 +135,5 @@ permalink: /kb/225/Q225050/
 	
 	=============================================================================
 	
+
+{% endraw %}

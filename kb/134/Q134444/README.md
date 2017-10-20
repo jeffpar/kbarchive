@@ -6,6 +6,8 @@ permalink: /kb/134/Q134444/
 
 ## Q134444: Dogs for Windows: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q134444
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -297,3 +299,5 @@ permalink: /kb/134/Q134444/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44305/
 
 ## Q44305: TIME&#36; Problem in IF Statement at Midnight (24:00:00)
 
+{% raw %}
+
 	Article: Q44305
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -71,3 +73,5 @@ permalink: /kb/044/Q44305/
 	
 	If you implement the correction shown above, the program will not stop
 	in QB.EXE or QBX.EXE until you press CTRL+BREAK.
+
+{% endraw %}

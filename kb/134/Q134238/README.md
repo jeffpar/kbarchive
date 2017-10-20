@@ -6,6 +6,8 @@ permalink: /kb/134/Q134238/
 
 ## Q134238: Disabled Devices Generate Code 10 Status
 
+{% raw %}
+
 	Article: Q134238
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/134/Q134238/
 	
 	=============================================================================
 	
+
+{% endraw %}

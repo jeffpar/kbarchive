@@ -6,6 +6,8 @@ permalink: /kb/164/Q164469/
 
 ## Q164469: XFOR: Scheduled X.400 Connector Doesn't Initiate Connection
 
+{% raw %}
+
 	Article: Q164469
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/164/Q164469/
 	
 	=============================================================================
 	
+
+{% endraw %}

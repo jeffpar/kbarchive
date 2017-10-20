@@ -6,6 +6,8 @@ permalink: /kb/184/Q184620/
 
 ## Q184620: An Instance of the Service is Already Running
 
+{% raw %}
+
 	Article: Q184620
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -85,3 +87,5 @@ permalink: /kb/184/Q184620/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140603/
 
 ## Q140603: SNMP Trap Frames Appear to be Dropped
 
+{% raw %}
+
 	Article: Q140603
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -74,3 +76,5 @@ permalink: /kb/140/Q140603/
 	
 	=============================================================================
 	
+
+{% endraw %}

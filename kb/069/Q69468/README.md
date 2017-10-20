@@ -6,6 +6,8 @@ permalink: /kb/069/Q69468/
 
 ## Q69468: Microsoft BASIC Phone Support Policies; 900 Unblocking
 
+{% raw %}
+
 	Article: Q69468
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -66,3 +68,5 @@ permalink: /kb/069/Q69468/
 	Blain Barton
 	BASIC Languages Team Manager
 	Product Support Services
+
+{% endraw %}

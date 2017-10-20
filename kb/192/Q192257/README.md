@@ -6,6 +6,8 @@ permalink: /kb/192/Q192257/
 
 ## Q192257: PRB: Recursive Use of AddressOf Operator Fails
 
+{% raw %}
+
 	Article: Q192257
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -109,3 +111,5 @@ permalink: /kb/192/Q192257/
 	
 	=============================================================================
 	
+
+{% endraw %}

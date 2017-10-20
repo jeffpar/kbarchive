@@ -6,6 +6,8 @@ permalink: /kb/164/Q164858/
 
 ## Q164858: XCON: StarNine Mail Gateway May Rename Directory
 
+{% raw %}
+
 	Article: Q164858
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164858/
 	
 	=============================================================================
 	
+
+{% endraw %}

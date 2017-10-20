@@ -6,6 +6,8 @@ permalink: /kb/107/Q107785/
 
 ## Q107785: WD97: Word Hangs or Returns Error Printing to Fax
 
+{% raw %}
+
 	Article: Q107785
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/107/Q107785/
 	
 	=============================================================================
 	
+
+{% endraw %}

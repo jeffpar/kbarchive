@@ -6,6 +6,8 @@ permalink: /kb/185/Q185701/
 
 ## Q185701: Virtual Globe: Location Sensor or Measure Tool Is Not Displayed
 
+{% raw %}
+
 	Article: Q185701
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/185/Q185701/
 	
 	=============================================================================
 	
+
+{% endraw %}

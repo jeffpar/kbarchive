@@ -6,6 +6,8 @@ permalink: /kb/257/Q257635/
 
 ## Q257635: FIX: DataGrid Loses Focus After You Cancel AddNew
 
+{% raw %}
+
 	Article: Q257635
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.5,6.0
@@ -99,3 +101,5 @@ permalink: /kb/257/Q257635/
 	
 	=============================================================================
 	
+
+{% endraw %}

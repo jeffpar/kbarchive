@@ -6,6 +6,8 @@ permalink: /kb/223/Q223315/
 
 ## Q223315: Zone Err Msg: An ActiveX Control on This Page Is Not Safe...
 
+{% raw %}
+
 	Article: Q223315
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/223/Q223315/
 	
 	=============================================================================
 	
+
+{% endraw %}

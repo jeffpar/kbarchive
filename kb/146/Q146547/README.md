@@ -6,6 +6,8 @@ permalink: /kb/146/Q146547/
 
 ## Q146547: Anniversary Dates on Timex Datalink Not in Chronological Order
 
+{% raw %}
+
 	Article: Q146547
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -48,3 +50,5 @@ permalink: /kb/146/Q146547/
 	
 	=============================================================================
 	
+
+{% endraw %}

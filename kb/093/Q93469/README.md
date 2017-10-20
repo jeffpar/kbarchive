@@ -6,6 +6,8 @@ permalink: /kb/093/Q93469/
 
 ## Q93469: Complete Text PW0519: Virtual DMA Services (VDS)
 
+{% raw %}
+
 	Article: Q93469
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -1018,3 +1020,5 @@ permalink: /kb/093/Q93469/
 	
 	=============================================================================
 	
+
+{% endraw %}

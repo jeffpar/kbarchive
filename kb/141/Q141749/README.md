@@ -6,6 +6,8 @@ permalink: /kb/141/Q141749/
 
 ## Q141749: MMSYSTEM326. No wave device that can...
 
+{% raw %}
+
 	Article: Q141749
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996
@@ -95,3 +97,5 @@ permalink: /kb/141/Q141749/
 	
 	=============================================================================
 	
+
+{% endraw %}

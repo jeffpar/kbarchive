@@ -6,6 +6,8 @@ permalink: /kb/123/Q123208/
 
 ## Q123208: TCP/IP-32 FTP.EXE PUT Command Fails on Some FTP Servers
 
+{% raw %}
+
 	Article: Q123208
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a
@@ -71,3 +73,5 @@ permalink: /kb/123/Q123208/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248972/
 
 ## Q248972: FS2000: How to Optimize Your Installation of Flight Simulator
 
+{% raw %}
+
 	Article: Q248972
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -171,3 +173,5 @@ permalink: /kb/248/Q248972/
 	
 	=============================================================================
 	
+
+{% endraw %}

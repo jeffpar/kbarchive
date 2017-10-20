@@ -6,6 +6,8 @@ permalink: /kb/132/Q132583/
 
 ## Q132583: You're Hired! Ver. 1.02 May Not Run Again After Local Reboot
 
+{% raw %}
+
 	Article: Q132583
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132583/
 	
 	=============================================================================
 	
+
+{% endraw %}

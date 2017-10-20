@@ -6,6 +6,8 @@ permalink: /kb/153/Q153888/
 
 ## Q153888: PRB: RFX_LongBinary Not Optimized for SQL Server
 
+{% raw %}
+
 	Article: Q153888
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -139,3 +141,5 @@ permalink: /kb/153/Q153888/
 	
 	=============================================================================
 	
+
+{% endraw %}

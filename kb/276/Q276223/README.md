@@ -6,6 +6,8 @@ permalink: /kb/276/Q276223/
 
 ## Q276223: XCLN: Named Pipes in RPC Binding Order causes Open Resources
 
+{% raw %}
+
 	Article: Q276223
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/276/Q276223/
 	
 	=============================================================================
 	
+
+{% endraw %}

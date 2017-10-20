@@ -6,6 +6,8 @@ permalink: /kb/086/Q86935/
 
 ## Q86935: 3COM: What Directories Are Created During Installation
 
+{% raw %}
+
 	Article: Q86935
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -41,3 +43,5 @@ permalink: /kb/086/Q86935/
 	
 	=============================================================================
 	
+
+{% endraw %}

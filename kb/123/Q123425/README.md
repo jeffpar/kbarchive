@@ -6,6 +6,8 @@ permalink: /kb/123/Q123425/
 
 ## Q123425: Docerr: SMSVIEW Program Item Not Available
 
+{% raw %}
+
 	Article: Q123425
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -52,3 +54,5 @@ permalink: /kb/123/Q123425/
 	
 	=============================================================================
 	
+
+{% endraw %}

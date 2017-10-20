@@ -6,6 +6,8 @@ permalink: /kb/168/Q168918/
 
 ## Q168918: Alternative Solution to Obtain a MAP ROOT Share
 
+{% raw %}
+
 	Article: Q168918
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -103,3 +105,5 @@ permalink: /kb/168/Q168918/
 	
 	=============================================================================
 	
+
+{% endraw %}

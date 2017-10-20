@@ -6,6 +6,8 @@ permalink: /kb/153/Q153461/
 
 ## Q153461: PostScript Printer Skips Blank Pages When Printing
 
+{% raw %}
+
 	Article: Q153461
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/153/Q153461/
 	
 	=============================================================================
 	
+
+{% endraw %}

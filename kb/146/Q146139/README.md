@@ -6,6 +6,8 @@ permalink: /kb/146/Q146139/
 
 ## Q146139: XFOR: Indents on Replies to Internet Are not Preserved
 
+{% raw %}
+
 	Article: Q146139
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -48,3 +50,5 @@ permalink: /kb/146/Q146139/
 	
 	=============================================================================
 	
+
+{% endraw %}

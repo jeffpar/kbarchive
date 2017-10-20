@@ -6,6 +6,8 @@ permalink: /kb/251/Q251193/
 
 ## Q251193: FS2000: How to Print a Navigation Log
 
+{% raw %}
+
 	Article: Q251193
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -79,3 +81,5 @@ permalink: /kb/251/Q251193/
 	
 	=============================================================================
 	
+
+{% endraw %}

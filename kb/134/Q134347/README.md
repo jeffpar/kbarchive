@@ -6,6 +6,8 @@ permalink: /kb/134/Q134347/
 
 ## Q134347: INFO: Troubleshooting Visual C++ Setup Problems Under Windows 9
 
+{% raw %}
+
 	Article: Q134347
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0
@@ -221,3 +223,5 @@ permalink: /kb/134/Q134347/
 	
 	=============================================================================
 	
+
+{% endraw %}

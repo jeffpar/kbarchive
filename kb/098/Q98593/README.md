@@ -6,6 +6,8 @@ permalink: /kb/098/Q98593/
 
 ## Q98593: Streams Development Environment
 
+{% raw %}
+
 	Article: Q98593
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/098/Q98593/
 	
 	=============================================================================
 	
+
+{% endraw %}

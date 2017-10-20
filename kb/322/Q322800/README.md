@@ -6,6 +6,8 @@ permalink: /kb/322/Q322800/
 
 ## Q322800: Turn Off 8.3 Translation to Improve Client For NFS Performance
 
+{% raw %}
+
 	Article: Q322800
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,2.1 OEM Only,2.2 OEM Only,2.3 OEM Only,3.0
@@ -69,3 +71,5 @@ permalink: /kb/322/Q322800/
 	
 	=============================================================================
 	
+
+{% endraw %}

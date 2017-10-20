@@ -6,6 +6,8 @@ permalink: /kb/224/Q224928/
 
 ## Q224928: BUG: CFormView Loses the Control's Focus When Restored
 
+{% raw %}
+
 	Article: Q224928
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/224/Q224928/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136850/
 
 ## Q136850: HOWTO: Connect Network Printers in Different Windows Platforms
 
+{% raw %}
+
 	Article: Q136850
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/136/Q136850/
 	
 	=============================================================================
 	
+
+{% endraw %}

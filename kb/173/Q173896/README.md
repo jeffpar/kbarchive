@@ -6,6 +6,8 @@ permalink: /kb/173/Q173896/
 
 ## Q173896: XWEB: Err Msg: Netscape is Unable to Connect to the Server
 
+{% raw %}
+
 	Article: Q173896
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173896/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110815/
 
 ## Q110815: Font Installer Doesn't Find Non-TrueType Compressed Fonts
 
+{% raw %}
+
 	Article: Q110815
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -62,3 +64,5 @@ permalink: /kb/110/Q110815/
 	
 	=============================================================================
 	
+
+{% endraw %}

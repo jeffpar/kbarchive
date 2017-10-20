@@ -6,6 +6,8 @@ permalink: /kb/116/Q116161/
 
 ## Q116161: Baseball: Last Line of Stat List Cut Off when Printed/Copied
 
+{% raw %}
+
 	Article: Q116161
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -44,3 +46,5 @@ permalink: /kb/116/Q116161/
 	
 	=============================================================================
 	
+
+{% endraw %}

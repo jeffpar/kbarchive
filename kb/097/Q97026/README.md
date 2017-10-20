@@ -6,6 +6,8 @@ permalink: /kb/097/Q97026/
 
 ## Q97026: MemMaker Error: MEMMAKER cannot continue: Your computer's...
 
+{% raw %}
+
 	Article: Q97026
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/097/Q97026/
 	
 	=============================================================================
 	
+
+{% endraw %}

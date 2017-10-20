@@ -6,6 +6,8 @@ permalink: /kb/116/Q116400/
 
 ## Q116400: Comprehensive List of Video for Windows Documentation Errors
 
+{% raw %}
+
 	Article: Q116400
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/116/Q116400/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198662/
 
 ## Q198662: DOC: Undocumented SynonymType Property Value for Oracle Synonyms
 
+{% raw %}
+
 	Article: Q198662
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -54,3 +56,5 @@ permalink: /kb/198/Q198662/
 	
 	=============================================================================
 	
+
+{% endraw %}

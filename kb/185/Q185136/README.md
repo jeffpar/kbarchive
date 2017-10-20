@@ -6,6 +6,8 @@ permalink: /kb/185/Q185136/
 
 ## Q185136: XCLN: Synchronization Codes For Offline Storage Folders
 
+{% raw %}
+
 	Article: Q185136
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0; :8.0,8.01,8.02,8.03
@@ -127,3 +129,5 @@ permalink: /kb/185/Q185136/
 	
 	=============================================================================
 	
+
+{% endraw %}

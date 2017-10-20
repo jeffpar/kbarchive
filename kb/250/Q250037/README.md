@@ -6,6 +6,8 @@ permalink: /kb/250/Q250037/
 
 ## Q250037: XADM: Client Cannot Open Public Folder
 
+{% raw %}
+
 	Article: Q250037
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -102,3 +104,5 @@ permalink: /kb/250/Q250037/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168000/
 
 ## Q168000: WD97: Dialog Box Text Truncated
 
+{% raw %}
+
 	Article: Q168000
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -125,3 +127,5 @@ permalink: /kb/168/Q168000/
 	
 	=============================================================================
 	
+
+{% endraw %}

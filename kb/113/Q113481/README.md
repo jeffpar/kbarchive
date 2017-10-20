@@ -6,6 +6,8 @@ permalink: /kb/113/Q113481/
 
 ## Q113481: ISDN Support for Windows for Workgroups RAS
 
+{% raw %}
+
 	Article: Q113481
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -132,3 +134,5 @@ permalink: /kb/113/Q113481/
 	
 	=============================================================================
 	
+
+{% endraw %}

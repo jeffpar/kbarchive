@@ -6,6 +6,8 @@ permalink: /kb/170/Q170814/
 
 ## Q170814: HOWTO: Determining the Amount of Physical RAM on a Mac from VFP
 
+{% raw %}
+
 	Article: Q170814
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -64,3 +66,5 @@ permalink: /kb/170/Q170814/
 	
 	=============================================================================
 	
+
+{% endraw %}

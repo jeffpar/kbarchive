@@ -6,6 +6,8 @@ permalink: /kb/141/Q141238/
 
 ## Q141238: Remote Network Monitor Agents Information Not Available
 
+{% raw %}
+
 	Article: Q141238
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -78,3 +80,5 @@ permalink: /kb/141/Q141238/
 	
 	=============================================================================
 	
+
+{% endraw %}

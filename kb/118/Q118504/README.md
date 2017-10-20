@@ -6,6 +6,8 @@ permalink: /kb/118/Q118504/
 
 ## Q118504: PC Ext: X.25 Err Msg: Mail Retry Count Exceeded...
 
+{% raw %}
+
 	Article: Q118504
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -84,3 +86,5 @@ permalink: /kb/118/Q118504/
 	
 	=============================================================================
 	
+
+{% endraw %}

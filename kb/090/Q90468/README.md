@@ -6,6 +6,8 @@ permalink: /kb/090/Q90468/
 
 ## Q90468: Garbled Characters and Beeping in WFWG When Starting NetBEUI
 
+{% raw %}
+
 	Article: Q90468
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/090/Q90468/
 	
 	=============================================================================
 	
+
+{% endraw %}

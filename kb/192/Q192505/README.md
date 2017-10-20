@@ -6,6 +6,8 @@ permalink: /kb/192/Q192505/
 
 ## Q192505: Microsoft Excel 97 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q192505
 	Product(s): Microsoft Press
 	Version(s): 
@@ -232,3 +234,5 @@ permalink: /kb/192/Q192505/
 	
 	=============================================================================
 	
+
+{% endraw %}

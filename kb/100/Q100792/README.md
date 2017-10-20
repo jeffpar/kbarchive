@@ -6,6 +6,8 @@ permalink: /kb/100/Q100792/
 
 ## Q100792: WFWG: Schedule+ Prompts to Archive and Delete Old Appointments
 
+{% raw %}
+
 	Article: Q100792
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/100/Q100792/
 	
 	=============================================================================
 	
+
+{% endraw %}

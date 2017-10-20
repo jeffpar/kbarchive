@@ -6,6 +6,8 @@ permalink: /kb/090/Q90343/
 
 ## Q90343: LAN Manager Logon Scripts Cause System Integrity Violations
 
+{% raw %}
+
 	Article: Q90343
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -93,3 +95,5 @@ permalink: /kb/090/Q90343/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183698/
 
 ## Q183698: SAMPLE: AXSH.EXE Demonstrates Implementing ActiveX Script Hosts
 
+{% raw %}
+
 	Article: Q183698
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.1,2.0,3.0,4.0,5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/183/Q183698/
 	
 	=============================================================================
 	
+
+{% endraw %}

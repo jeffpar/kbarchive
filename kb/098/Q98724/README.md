@@ -6,6 +6,8 @@ permalink: /kb/098/Q98724/
 
 ## Q98724: Password Case Sensitivity and System Error 1219
 
+{% raw %}
+
 	Article: Q98724
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.51 4.0
@@ -65,3 +67,5 @@ permalink: /kb/098/Q98724/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165977/
 
 ## Q165977: WD97: StoryRanges Does Not Return Text Box Text in Header/Footer
 
+{% raw %}
+
 	Article: Q165977
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -125,3 +127,5 @@ permalink: /kb/165/Q165977/
 	
 	=============================================================================
 	
+
+{% endraw %}

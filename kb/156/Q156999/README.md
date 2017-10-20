@@ -6,6 +6,8 @@ permalink: /kb/156/Q156999/
 
 ## Q156999: XFOR: SMTP Headers Lost for DOS MS Mail Client
 
+{% raw %}
+
 	Article: Q156999
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/156/Q156999/
 	
 	=============================================================================
 	
+
+{% endraw %}

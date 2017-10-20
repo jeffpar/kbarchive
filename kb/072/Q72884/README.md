@@ -6,6 +6,8 @@ permalink: /kb/072/Q72884/
 
 ## Q72884: Profiler Won't Profile DLLs That Are Freed, Then Reloaded
 
+{% raw %}
+
 	Article: Q72884
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/072/Q72884/
 	
 	=============================================================================
 	
+
+{% endraw %}

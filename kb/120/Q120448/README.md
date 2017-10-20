@@ -6,6 +6,8 @@ permalink: /kb/120/Q120448/
 
 ## Q120448: PC Adm: Microsoft Mail MAILMGR.DLL Version 3.2.0.4074 Update
 
+{% raw %}
+
 	Article: Q120448
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -130,3 +132,5 @@ permalink: /kb/120/Q120448/
 	
 	=============================================================================
 	
+
+{% endraw %}

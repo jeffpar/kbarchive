@@ -6,6 +6,8 @@ permalink: /kb/041/Q41370/
 
 ## Q41370: The Meaning of &quot;ILINK:Fatal Error L1266: Invalid .EXE File&quot;
 
+{% raw %}
+
 	Article: Q41370
 	Product(s): See article
 	Version(s): 2.00
@@ -28,3 +30,5 @@ permalink: /kb/041/Q41370/
 	which there is no current .OBJ or .EXE file. There is nothing to be
 	saved by performing an incremental link, so the incremental linker
 	calls the 4.06 linker to do a full link.
+
+{% endraw %}

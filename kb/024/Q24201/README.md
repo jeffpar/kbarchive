@@ -6,6 +6,8 @@ permalink: /kb/024/Q24201/
 
 ## Q24201: Flipping vs. Swapping Screens in CodeView
 
+{% raw %}
+
 	Article: Q24201
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.11,3.12,3.5,4.0,4.01,4.05,4.1
@@ -47,3 +49,5 @@ permalink: /kb/024/Q24201/
 	
 	=============================================================================
 	
+
+{% endraw %}

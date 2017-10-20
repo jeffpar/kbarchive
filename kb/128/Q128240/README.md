@@ -6,6 +6,8 @@ permalink: /kb/128/Q128240/
 
 ## Q128240: Cannot Print Reports from Device Manager
 
+{% raw %}
+
 	Article: Q128240
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/128/Q128240/
 	
 	=============================================================================
 	
+
+{% endraw %}

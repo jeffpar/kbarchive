@@ -6,6 +6,8 @@ permalink: /kb/194/Q194668/
 
 ## Q194668: PRB: NewObject() Requires Null or &quot;&quot; for 2nd &amp; 3rd Parameters
 
+{% raw %}
+
 	Article: Q194668
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -94,3 +96,5 @@ permalink: /kb/194/Q194668/
 	
 	=============================================================================
 	
+
+{% endraw %}

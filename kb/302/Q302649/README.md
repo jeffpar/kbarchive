@@ -6,6 +6,8 @@ permalink: /kb/302/Q302649/
 
 ## Q302649: Account Master User Age Settings
 
+{% raw %}
+
 	Article: Q302649
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/302/Q302649/
 	
 	=============================================================================
 	
+
+{% endraw %}

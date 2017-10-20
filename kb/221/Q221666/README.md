@@ -6,6 +6,8 @@ permalink: /kb/221/Q221666/
 
 ## Q221666: FIX: SQL Upsizing Wizard Save Generated SQL Bloats Script.fpt
 
+{% raw %}
+
 	Article: Q221666
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a,6.0
@@ -127,3 +129,5 @@ permalink: /kb/221/Q221666/
 	
 	=============================================================================
 	
+
+{% endraw %}

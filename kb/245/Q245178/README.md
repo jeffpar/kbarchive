@@ -6,6 +6,8 @@ permalink: /kb/245/Q245178/
 
 ## Q245178: Cannot Print to HP 6P Printer, Terminal Server Stops Responding.
 
+{% raw %}
+
 	Article: Q245178
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/245/Q245178/
 	
 	=============================================================================
 	
+
+{% endraw %}

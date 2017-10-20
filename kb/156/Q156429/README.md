@@ -6,6 +6,8 @@ permalink: /kb/156/Q156429/
 
 ## Q156429: Supported 16-bit Utilities and NetWare-Aware Applications
 
+{% raw %}
+
 	Article: Q156429
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/156/Q156429/
 	
 	=============================================================================
 	
+
+{% endraw %}

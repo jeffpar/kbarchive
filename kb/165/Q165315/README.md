@@ -6,6 +6,8 @@ permalink: /kb/165/Q165315/
 
 ## Q165315: PC WRmt: MS Mail Remote Users Not Able to View Attachments
 
+{% raw %}
+
 	Article: Q165315
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2; winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/165/Q165315/
 	
 	=============================================================================
 	
+
+{% endraw %}

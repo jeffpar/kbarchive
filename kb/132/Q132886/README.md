@@ -6,6 +6,8 @@ permalink: /kb/132/Q132886/
 
 ## Q132886: Compaq Screen Does Not Wake Up After EnergyStar Shutdown
 
+{% raw %}
+
 	Article: Q132886
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -76,3 +78,5 @@ permalink: /kb/132/Q132886/
 	
 	=============================================================================
 	
+
+{% endraw %}

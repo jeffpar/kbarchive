@@ -6,6 +6,8 @@ permalink: /kb/197/Q197407/
 
 ## Q197407: PC Adm: Dirsync Events Not Scheduled Properly in Year 2000
 
+{% raw %}
+
 	Article: Q197407
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -95,3 +97,5 @@ permalink: /kb/197/Q197407/
 	
 	=============================================================================
 	
+
+{% endraw %}

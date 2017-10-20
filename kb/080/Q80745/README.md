@@ -6,6 +6,8 @@ permalink: /kb/080/Q80745/
 
 ## Q80745: Saving GW-Basic/BASICA ASCII File to Use with QBasic
 
+{% raw %}
+
 	Article: Q80745
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -90,3 +92,5 @@ permalink: /kb/080/Q80745/
 	
 	=============================================================================
 	
+
+{% endraw %}

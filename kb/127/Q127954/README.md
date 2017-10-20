@@ -6,6 +6,8 @@ permalink: /kb/127/Q127954/
 
 ## Q127954: PC DB: Keeping NTFS Security Intact When Moving a PO
 
+{% raw %}
+
 	Article: Q127954
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a
@@ -113,3 +115,5 @@ permalink: /kb/127/Q127954/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131767/
 
 ## Q131767: Flight Simulator Err Msg: Unable to Lock XMS Memory
 
+{% raw %}
+
 	Article: Q131767
 	Product(s): Microsoft Home Games
 	Version(s): 5.0,5.1
@@ -141,3 +143,5 @@ permalink: /kb/131/Q131767/
 	
 	=============================================================================
 	
+
+{% endraw %}

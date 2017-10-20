@@ -6,6 +6,8 @@ permalink: /kb/180/Q180403/
 
 ## Q180403: XADM: Error Message Trying to Install Exchange 5.5 Upgrade Only
 
+{% raw %}
+
 	Article: Q180403
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/180/Q180403/
 	
 	=============================================================================
 	
+
+{% endraw %}

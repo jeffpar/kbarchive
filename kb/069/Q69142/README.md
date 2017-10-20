@@ -6,6 +6,8 @@ permalink: /kb/069/Q69142/
 
 ## Q69142: Reinitializing After Changing Editor Settings Is Very Slow
 
+{% raw %}
+
 	Article: Q69142
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.1; OS/2:1.1
@@ -67,3 +69,5 @@ permalink: /kb/069/Q69142/
 	
 	=============================================================================
 	
+
+{% endraw %}

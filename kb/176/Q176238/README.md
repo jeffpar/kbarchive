@@ -6,6 +6,8 @@ permalink: /kb/176/Q176238/
 
 ## Q176238: WD97: Sample Code to Increment Through a Document Line by Line
 
+{% raw %}
+
 	Article: Q176238
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/176/Q176238/
 	
 	=============================================================================
 	
+
+{% endraw %}

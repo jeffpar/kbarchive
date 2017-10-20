@@ -6,6 +6,8 @@ permalink: /kb/023/Q23754/
 
 ## Q23754: Unassigning Predefined Keys
 
+{% raw %}
+
 	Article: Q23754
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -28,3 +30,5 @@ permalink: /kb/023/Q23754/
 	line in your TOOLS.INI file:
 	
 	Unassigned:ALT+A.
+
+{% endraw %}

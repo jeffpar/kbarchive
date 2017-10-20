@@ -6,6 +6,8 @@ permalink: /kb/177/Q177979/
 
 ## Q177979: XFOR: Internet Message w/Message As Attachment Generates NDR
 
+{% raw %}
+
 	Article: Q177979
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/177/Q177979/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182444/
 
 ## Q182444: NBF MaxFrameSize Calculated Incorrectly on Token Ring
 
+{% raw %}
+
 	Article: Q182444
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -83,3 +85,5 @@ permalink: /kb/182/Q182444/
 	
 	=============================================================================
 	
+
+{% endraw %}

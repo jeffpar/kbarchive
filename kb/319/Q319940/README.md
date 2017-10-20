@@ -6,6 +6,8 @@ permalink: /kb/319/Q319940/
 
 ## Q319940: Upgrading Microsoft Visual Basic 6.0 to Microsoft Visual Basic .
 
+{% raw %}
+
 	Article: Q319940
 	Product(s): Microsoft Press
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/319/Q319940/
 	
 	=============================================================================
 	
+
+{% endraw %}

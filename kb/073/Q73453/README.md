@@ -6,6 +6,8 @@ permalink: /kb/073/Q73453/
 
 ## Q73453: WordPerfect 5.1 and EMM386.EXE Conflict
 
+{% raw %}
+
 	Article: Q73453
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/073/Q73453/
 	
 	=============================================================================
 	
+
+{% endraw %}

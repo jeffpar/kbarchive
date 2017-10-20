@@ -6,6 +6,8 @@ permalink: /kb/269/Q269117/
 
 ## Q269117: PRB:Hourly Type Event Agents Require the Days Property to Be Set
 
+{% raw %}
+
 	Article: Q269117
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -125,3 +127,5 @@ permalink: /kb/269/Q269117/
 	
 	=============================================================================
 	
+
+{% endraw %}

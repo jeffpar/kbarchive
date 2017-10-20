@@ -6,6 +6,8 @@ permalink: /kb/085/Q85705/
 
 ## Q85705: Compuserve's CIM May Not Run on Packard Bell with SVGA Display
 
+{% raw %}
+
 	Article: Q85705
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/085/Q85705/
 	
 	=============================================================================
 	
+
+{% endraw %}

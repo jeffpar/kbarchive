@@ -6,6 +6,8 @@ permalink: /kb/067/Q67078/
 
 ## Q67078: Different Warnings Appear Using Different Optimizations
 
+{% raw %}
+
 	Article: Q67078
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -78,3 +80,5 @@ permalink: /kb/067/Q67078/
 	
 	=============================================================================
 	
+
+{% endraw %}

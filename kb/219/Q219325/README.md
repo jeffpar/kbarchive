@@ -6,6 +6,8 @@ permalink: /kb/219/Q219325/
 
 ## Q219325: Digital AlphaServer Cannot Start After Installing Service Pack 4
 
+{% raw %}
+
 	Article: Q219325
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/219/Q219325/
 	
 	=============================================================================
 	
+
+{% endraw %}

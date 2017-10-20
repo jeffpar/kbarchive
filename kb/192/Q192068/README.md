@@ -6,6 +6,8 @@ permalink: /kb/192/Q192068/
 
 ## Q192068: WD97: Documents Will Not Print Until Macro Ends
 
+{% raw %}
+
 	Article: Q192068
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/192/Q192068/
 	
 	=============================================================================
 	
+
+{% endraw %}

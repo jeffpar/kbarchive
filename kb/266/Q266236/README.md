@@ -6,6 +6,8 @@ permalink: /kb/266/Q266236/
 
 ## Q266236: HOWTO: Use Serial Comm with Windows CE Emulators
 
+{% raw %}
+
 	Article: Q266236
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -120,3 +122,5 @@ permalink: /kb/266/Q266236/
 	
 	=============================================================================
 	
+
+{% endraw %}

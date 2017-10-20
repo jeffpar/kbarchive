@@ -6,6 +6,8 @@ permalink: /kb/178/Q178726/
 
 ## Q178726: PRB: Error Message &quot;User-defined Type Not Defined&quot;
 
+{% raw %}
+
 	Article: Q178726
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/178/Q178726/
 	
 	=============================================================================
 	
+
+{% endraw %}

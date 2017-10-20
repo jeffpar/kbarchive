@@ -6,6 +6,8 @@ permalink: /kb/200/Q200072/
 
 ## Q200072: HOWTO: Initializing lpstrFilter for All Files on the Macintosh
 
+{% raw %}
+
 	Article: Q200072
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0,4.0b
@@ -71,3 +73,5 @@ permalink: /kb/200/Q200072/
 	
 	=============================================================================
 	
+
+{% endraw %}

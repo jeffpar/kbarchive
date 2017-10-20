@@ -6,6 +6,8 @@ permalink: /kb/150/Q150275/
 
 ## Q150275: Redirector Doesn't Close the Session After User Logs Off
 
+{% raw %}
+
 	Article: Q150275
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/150/Q150275/
 	
 	=============================================================================
 	
+
+{% endraw %}

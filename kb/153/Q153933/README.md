@@ -6,6 +6,8 @@ permalink: /kb/153/Q153933/
 
 ## Q153933: SMS: INVWIN32 Does Not Collect IRQ Information
 
+{% raw %}
+
 	Article: Q153933
 	Product(s): Microsoft Systems Management Server
 	Version(s): MS-DOS:1.0,1.1,1.2
@@ -36,3 +38,5 @@ permalink: /kb/153/Q153933/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175916/
 
 ## Q175916: Bookshelf 98: Integration Fails with Word 95
 
+{% raw %}
+
 	Article: Q175916
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -107,3 +109,5 @@ permalink: /kb/175/Q175916/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190225/
 
 ## Q190225: HOWTO: Do a MergeCells with FlexGrid or Hierarchical FlexGrid
 
+{% raw %}
+
 	Article: Q190225
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -179,3 +181,5 @@ permalink: /kb/190/Q190225/
 	
 	=============================================================================
 	
+
+{% endraw %}

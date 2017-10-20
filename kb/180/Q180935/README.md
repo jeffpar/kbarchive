@@ -6,6 +6,8 @@ permalink: /kb/180/Q180935/
 
 ## Q180935: Distributed Link Service Reactivation Fails with Event 77,x0AFF
 
+{% raw %}
+
 	Article: Q180935
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -94,3 +96,5 @@ permalink: /kb/180/Q180935/
 	
 	=============================================================================
 	
+
+{% endraw %}

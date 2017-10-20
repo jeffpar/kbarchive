@@ -6,6 +6,8 @@ permalink: /kb/271/Q271794/
 
 ## Q271794: Access Violation in RPCSS with Endpoint Mapper RPC Requests
 
+{% raw %}
+
 	Article: Q271794
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/271/Q271794/
 	
 	=============================================================================
 	
+
+{% endraw %}

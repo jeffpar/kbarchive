@@ -6,6 +6,8 @@ permalink: /kb/097/Q97844/
 
 ## Q97844: Framing Difference Prevents Comms from NetWare to ArcNet
 
+{% raw %}
+
 	Article: Q97844
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/097/Q97844/
 	
 	=============================================================================
 	
+
+{% endraw %}

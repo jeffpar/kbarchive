@@ -6,6 +6,8 @@ permalink: /kb/153/Q153634/
 
 ## Q153634: Too Many NAKs&quot; Error When Remote Controlling a NetWare Client
 
+{% raw %}
+
 	Article: Q153634
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -51,3 +53,5 @@ permalink: /kb/153/Q153634/
 	
 	=============================================================================
 	
+
+{% endraw %}

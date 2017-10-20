@@ -6,6 +6,8 @@ permalink: /kb/241/Q241462/
 
 ## Q241462: XCON: Non-Delivery Report May Contain the Wrong User Information
 
+{% raw %}
+
 	Article: Q241462
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -73,3 +75,5 @@ permalink: /kb/241/Q241462/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258643/
 
 ## Q258643: Baseball 2001: Game Graphics Appear Shredded
 
+{% raw %}
+
 	Article: Q258643
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -77,3 +79,5 @@ permalink: /kb/258/Q258643/
 	
 	=============================================================================
 	
+
+{% endraw %}

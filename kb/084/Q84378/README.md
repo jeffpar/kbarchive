@@ -6,6 +6,8 @@ permalink: /kb/084/Q84378/
 
 ## Q84378: Printer Setup Limitations with Windows 3.1 Automated Setup
 
+{% raw %}
+
 	Article: Q84378
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/084/Q84378/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154436/
 
 ## Q154436: Errors Accessing Hard Disk with Spin-Down Enabled
 
+{% raw %}
+
 	Article: Q154436
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -120,3 +122,5 @@ permalink: /kb/154/Q154436/
 	
 	=============================================================================
 	
+
+{% endraw %}

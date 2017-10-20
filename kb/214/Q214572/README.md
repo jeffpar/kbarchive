@@ -6,6 +6,8 @@ permalink: /kb/214/Q214572/
 
 ## Q214572: How To Retrieve Link Information For SNA Server Programmatically
 
+{% raw %}
+
 	Article: Q214572
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,4.0
@@ -511,3 +513,5 @@ permalink: /kb/214/Q214572/
 	
 	=============================================================================
 	
+
+{% endraw %}

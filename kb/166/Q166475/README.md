@@ -6,6 +6,8 @@ permalink: /kb/166/Q166475/
 
 ## Q166475: NWLNKSPX Retransmission Problem Over a Slow Link
 
+{% raw %}
+
 	Article: Q166475
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/166/Q166475/
 	
 	=============================================================================
 	
+
+{% endraw %}

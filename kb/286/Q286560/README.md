@@ -6,6 +6,8 @@ permalink: /kb/286/Q286560/
 
 ## Q286560: Interface Unknown Error With DB2 Column Length Greater Than 300
 
+{% raw %}
+
 	Article: Q286560
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -95,3 +97,5 @@ permalink: /kb/286/Q286560/
 	
 	=============================================================================
 	
+
+{% endraw %}

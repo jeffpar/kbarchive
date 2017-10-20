@@ -6,6 +6,8 @@ permalink: /kb/130/Q130694/
 
 ## Q130694: NTFS Performance with Numerous Long Filenames
 
+{% raw %}
+
 	Article: Q130694
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5
@@ -103,3 +105,5 @@ permalink: /kb/130/Q130694/
 	
 	=============================================================================
 	
+
+{% endraw %}

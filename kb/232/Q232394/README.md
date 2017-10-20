@@ -6,6 +6,8 @@ permalink: /kb/232/Q232394/
 
 ## Q232394: HOWTO: Catch Run-time Errors in an ActiveX Script Host
 
+{% raw %}
+
 	Article: Q232394
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,4.0,5.0,5.0sp1,5.0sp2,5.0sp3,6.0
@@ -119,3 +121,5 @@ permalink: /kb/232/Q232394/
 	
 	=============================================================================
 	
+
+{% endraw %}

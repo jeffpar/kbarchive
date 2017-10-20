@@ -6,6 +6,8 @@ permalink: /kb/165/Q165089/
 
 ## Q165089: SLI API Can Now Acquire a 3270 LU
 
+{% raw %}
+
 	Article: Q165089
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165089/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183058/
 
 ## Q183058: XFOR: Modifying the Display Name and Alias for cc:Mail Dirsync
 
+{% raw %}
+
 	Article: Q183058
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -128,3 +130,5 @@ permalink: /kb/183/Q183058/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97659/
 
 ## Q97659: How to Add Pathworks for MS-DOS DECnet Client to Network
 
+{% raw %}
+
 	Article: Q97659
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/097/Q97659/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214619/
 
 ## Q214619: FIX: Type Definition Is Not Inherited in Derived Template Class
 
+{% raw %}
+
 	Article: Q214619
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -87,3 +89,5 @@ permalink: /kb/214/Q214619/
 	
 	=============================================================================
 	
+
+{% endraw %}

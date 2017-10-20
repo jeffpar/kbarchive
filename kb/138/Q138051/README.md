@@ -6,6 +6,8 @@ permalink: /kb/138/Q138051/
 
 ## Q138051: Undo Command in Paint Does Not Restore Text
 
+{% raw %}
+
 	Article: Q138051
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -47,3 +49,5 @@ permalink: /kb/138/Q138051/
 	
 	=============================================================================
 	
+
+{% endraw %}

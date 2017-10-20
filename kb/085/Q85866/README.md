@@ -6,6 +6,8 @@ permalink: /kb/085/Q85866/
 
 ## Q85866: MS-DOS Shell May Create #.1 File
 
+{% raw %}
+
 	Article: Q85866
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -58,3 +60,5 @@ permalink: /kb/085/Q85866/
 	
 	=============================================================================
 	
+
+{% endraw %}

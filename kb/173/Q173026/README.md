@@ -6,6 +6,8 @@ permalink: /kb/173/Q173026/
 
 ## Q173026: PRB: Message-Handlers for ActiveX Control Aren't Called
 
+{% raw %}
+
 	Article: Q173026
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.0a,4.1,4.2,4.2b,5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/173/Q173026/
 	
 	=============================================================================
 	
+
+{% endraw %}

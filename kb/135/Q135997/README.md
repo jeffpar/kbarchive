@@ -6,6 +6,8 @@ permalink: /kb/135/Q135997/
 
 ## Q135997: Scenes 2.0: Wallpaper and Windows NT 3.5
 
+{% raw %}
+
 	Article: Q135997
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135997/
 	
 	=============================================================================
 	
+
+{% endraw %}

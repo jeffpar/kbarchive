@@ -6,6 +6,8 @@ permalink: /kb/159/Q159925/
 
 ## Q159925: Error 1057: The Account Name is Invalid or Does Not Exist
 
+{% raw %}
+
 	Article: Q159925
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/159/Q159925/
 	
 	=============================================================================
 	
+
+{% endraw %}

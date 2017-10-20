@@ -6,6 +6,8 @@ permalink: /kb/146/Q146980/
 
 ## Q146980: XCLN: Wrong Personal Folders Service Highlighted
 
+{% raw %}
+
 	Article: Q146980
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146980/
 	
 	=============================================================================
 	
+
+{% endraw %}

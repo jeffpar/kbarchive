@@ -6,6 +6,8 @@ permalink: /kb/170/Q170380/
 
 ## Q170380: HOWTO: Display/Pass TimeStamp Value from/to SQL Server
 
+{% raw %}
+
 	Article: Q170380
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -203,3 +205,5 @@ permalink: /kb/170/Q170380/
 	
 	=============================================================================
 	
+
+{% endraw %}

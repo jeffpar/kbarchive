@@ -6,6 +6,8 @@ permalink: /kb/058/Q58551/
 
 ## Q58551: Mac DOS: Running Mail with the 3Com EtherLink II Card
 
+{% raw %}
+
 	Article: Q58551
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -54,3 +56,5 @@ permalink: /kb/058/Q58551/
 	
 	=============================================================================
 	
+
+{% endraw %}

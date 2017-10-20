@@ -6,6 +6,8 @@ permalink: /kb/138/Q138228/
 
 ## Q138228: Accessibility High Contrast Setting Reverts to Custom
 
+{% raw %}
+
 	Article: Q138228
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/138/Q138228/
 	
 	=============================================================================
 	
+
+{% endraw %}

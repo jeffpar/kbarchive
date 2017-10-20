@@ -6,6 +6,8 @@ permalink: /kb/108/Q108590/
 
 ## Q108590: Flight Simulator 5.0: Hang During Splash Startup Screen
 
+{% raw %}
+
 	Article: Q108590
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -65,3 +67,5 @@ permalink: /kb/108/Q108590/
 	
 	=============================================================================
 	
+
+{% endraw %}

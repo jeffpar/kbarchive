@@ -6,6 +6,8 @@ permalink: /kb/300/Q300685/
 
 ## Q300685: PRB: OLEDB Err Msg: Conversation Was Deallocated with AP_ABEND
 
+{% raw %}
+
 	Article: Q300685
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -123,3 +125,5 @@ permalink: /kb/300/Q300685/
 	
 	=============================================================================
 	
+
+{% endraw %}

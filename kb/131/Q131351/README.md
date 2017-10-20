@@ -6,6 +6,8 @@ permalink: /kb/131/Q131351/
 
 ## Q131351: IBM Lan Streamer Error 5009
 
+{% raw %}
+
 	Article: Q131351
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/131/Q131351/
 	
 	=============================================================================
 	
+
+{% endraw %}

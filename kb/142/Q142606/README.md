@@ -6,6 +6,8 @@ permalink: /kb/142/Q142606/
 
 ## Q142606: ErrMsg: Procedure Entry Point Could Not Be Located
 
+{% raw %}
+
 	Article: Q142606
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142606/
 	
 	=============================================================================
 	
+
+{% endraw %}

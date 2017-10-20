@@ -6,6 +6,8 @@ permalink: /kb/174/Q174039/
 
 ## Q174039: XCON: Read or Delivery Reports Show OU2 and OU3 Values
 
+{% raw %}
+
 	Article: Q174039
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -83,3 +85,5 @@ permalink: /kb/174/Q174039/
 	
 	=============================================================================
 	
+
+{% endraw %}

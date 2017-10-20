@@ -6,6 +6,8 @@ permalink: /kb/176/Q176470/
 
 ## Q176470: WD97: Next Page Section Break Changes to Odd
 
+{% raw %}
+
 	Article: Q176470
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/176/Q176470/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152905/
 
 ## Q152905: XCLN: Err Msg: Upload of Offline Changes Could not be...
 
+{% raw %}
+
 	Article: Q152905
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/152/Q152905/
 	
 	=============================================================================
 	
+
+{% endraw %}

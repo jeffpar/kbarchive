@@ -6,6 +6,8 @@ permalink: /kb/028/Q28164/
 
 ## Q28164: Unexpected PRINT USING &quot;.##&quot; Rounding for .xx5
 
+{% raw %}
+
 	Article: Q28164
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -59,3 +61,5 @@ permalink: /kb/028/Q28164/
 	
 	Note that the CURRENCY data type can store 19 digits, but only 4
 	digits can be used after the decimal point.
+
+{% endraw %}

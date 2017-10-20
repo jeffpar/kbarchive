@@ -6,6 +6,8 @@ permalink: /kb/141/Q141077/
 
 ## Q141077: WD97: &quot;Invalid Page Fault&quot; During Mail Merge
 
+{% raw %}
+
 	Article: Q141077
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -113,3 +115,5 @@ permalink: /kb/141/Q141077/
 	
 	=============================================================================
 	
+
+{% endraw %}

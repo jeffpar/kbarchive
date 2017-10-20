@@ -6,6 +6,8 @@ permalink: /kb/118/Q118535/
 
 ## Q118535: X400: Details on Disclose Recipient Option
 
+{% raw %}
+
 	Article: Q118535
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/118/Q118535/
 	
 	=============================================================================
 	
+
+{% endraw %}

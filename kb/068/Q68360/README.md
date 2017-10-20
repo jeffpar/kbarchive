@@ -6,6 +6,8 @@ permalink: /kb/068/Q68360/
 
 ## Q68360: Control Panel Doesn't Respond to WM_WININICHANGE Messages
 
+{% raw %}
+
 	Article: Q68360
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -64,3 +66,5 @@ permalink: /kb/068/Q68360/
 	
 	=============================================================================
 	
+
+{% endraw %}

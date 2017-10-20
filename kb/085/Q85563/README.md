@@ -6,6 +6,8 @@ permalink: /kb/085/Q85563/
 
 ## Q85563: Windows, Novell NetWare, Incorrect Form Number when Printing
 
+{% raw %}
+
 	Article: Q85563
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -111,3 +113,5 @@ permalink: /kb/085/Q85563/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103529/
 
 ## Q103529: FORMAT Overwrites Compressed Volume File on Floppy Disk
 
+{% raw %}
+
 	Article: Q103529
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -65,3 +67,5 @@ permalink: /kb/103/Q103529/
 	
 	=============================================================================
 	
+
+{% endraw %}

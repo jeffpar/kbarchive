@@ -6,6 +6,8 @@ permalink: /kb/128/Q128921/
 
 ## Q128921: Err Msg: The Device Has Been Disabled in Hardware... (Code 29)
 
+{% raw %}
+
 	Article: Q128921
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/128/Q128921/
 	
 	=============================================================================
 	
+
+{% endraw %}

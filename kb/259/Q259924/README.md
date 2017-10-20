@@ -6,6 +6,8 @@ permalink: /kb/259/Q259924/
 
 ## Q259924: INFO: COFF Type Debug Information No Longer Contains Line Number
 
+{% raw %}
+
 	Article: Q259924
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -67,3 +69,5 @@ permalink: /kb/259/Q259924/
 	
 	=============================================================================
 	
+
+{% endraw %}

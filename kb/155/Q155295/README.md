@@ -6,6 +6,8 @@ permalink: /kb/155/Q155295/
 
 ## Q155295: Games: Machine Hangs While Changing Resolution
 
+{% raw %}
+
 	Article: Q155295
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/155/Q155295/
 	
 	=============================================================================
 	
+
+{% endraw %}

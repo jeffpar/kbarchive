@@ -6,6 +6,8 @@ permalink: /kb/280/Q280306/
 
 ## Q280306: XADM: Client Stops Responding If You Open Another User's Folder
 
+{% raw %}
+
 	Article: Q280306
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/280/Q280306/
 	
 	=============================================================================
 	
+
+{% endraw %}

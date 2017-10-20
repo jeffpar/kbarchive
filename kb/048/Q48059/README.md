@@ -6,6 +6,8 @@ permalink: /kb/048/Q48059/
 
 ## Q48059: &quot;String Space Corrupt&quot; If BSAVE Variable-Length-String Array
 
+{% raw %}
+
 	Article: Q48059
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -98,3 +100,5 @@ permalink: /kb/048/Q48059/
 	FOR I = 1 TO 10
 	   PRINT Arr2$(I)
 	NEXT I
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142082/
 
 ## Q142082: FIX: CTL3D32.DLL Errors with Windows 95
 
+{% raw %}
+
 	Article: Q142082
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -57,3 +59,5 @@ permalink: /kb/142/Q142082/
 	
 	=============================================================================
 	
+
+{% endraw %}

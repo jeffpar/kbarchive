@@ -6,6 +6,8 @@ permalink: /kb/067/Q67503/
 
 ## Q67503: Notepad: 1st Line of Printing Overlaps 2nd with HP Printers
 
+{% raw %}
+
 	Article: Q67503
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/067/Q67503/
 	
 	=============================================================================
 	
+
+{% endraw %}

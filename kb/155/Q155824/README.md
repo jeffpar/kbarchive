@@ -6,6 +6,8 @@ permalink: /kb/155/Q155824/
 
 ## Q155824: Installing a Panasonic KXL-D740 4X CDROM using KXLC002
 
+{% raw %}
+
 	Article: Q155824
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/155/Q155824/
 	
 	=============================================================================
 	
+
+{% endraw %}

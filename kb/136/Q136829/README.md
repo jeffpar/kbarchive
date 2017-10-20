@@ -6,6 +6,8 @@ permalink: /kb/136/Q136829/
 
 ## Q136829: Grays Displayed with Blue Tint Using 1-MB #9 GXE Adapter
 
+{% raw %}
+
 	Article: Q136829
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/136/Q136829/
 	
 	=============================================================================
 	
+
+{% endraw %}

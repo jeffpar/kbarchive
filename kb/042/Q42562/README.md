@@ -6,6 +6,8 @@ permalink: /kb/042/Q42562/
 
 ## Q42562: PRB: C4057 or C4133 Occur Unexpectedly
 
+{% raw %}
+
 	Article: Q42562
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/042/Q42562/
 	
 	=============================================================================
 	
+
+{% endraw %}

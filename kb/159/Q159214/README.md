@@ -6,6 +6,8 @@ permalink: /kb/159/Q159214/
 
 ## Q159214: How to Detect and Compare File Differences
 
+{% raw %}
+
 	Article: Q159214
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -85,3 +87,5 @@ permalink: /kb/159/Q159214/
 	
 	=============================================================================
 	
+
+{% endraw %}

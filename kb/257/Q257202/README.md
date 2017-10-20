@@ -6,6 +6,8 @@ permalink: /kb/257/Q257202/
 
 ## Q257202: SMS: SP2 Functional Change in Processing Logon Point Updates
 
+{% raw %}
+
 	Article: Q257202
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -67,3 +69,5 @@ permalink: /kb/257/Q257202/
 	
 	=============================================================================
 	
+
+{% endraw %}

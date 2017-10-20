@@ -6,6 +6,8 @@ permalink: /kb/068/Q68757/
 
 ## Q68757: Recorder Err Msg: Playback Window Does Not Exist
 
+{% raw %}
+
 	Article: Q68757
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/068/Q68757/
 	
 	=============================================================================
 	
+
+{% endraw %}

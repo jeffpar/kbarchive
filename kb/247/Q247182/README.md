@@ -6,6 +6,8 @@ permalink: /kb/247/Q247182/
 
 ## Q247182: XFOR: Exchange Notes Connector Dirsync Deletes Custom Recipients
 
+{% raw %}
+
 	Article: Q247182
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -63,3 +65,5 @@ permalink: /kb/247/Q247182/
 	
 	=============================================================================
 	
+
+{% endraw %}

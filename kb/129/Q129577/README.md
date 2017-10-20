@@ -6,6 +6,8 @@ permalink: /kb/129/Q129577/
 
 ## Q129577: Modem Defaults to Auto Answer Mode in Windows 95
 
+{% raw %}
+
 	Article: Q129577
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/129/Q129577/
 	
 	=============================================================================
 	
+
+{% endraw %}

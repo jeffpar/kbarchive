@@ -6,6 +6,8 @@ permalink: /kb/192/Q192839/
 
 ## Q192839: XADM: Full Offline Address Book Download with Differences Specif
 
+{% raw %}
+
 	Article: Q192839
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -71,3 +73,5 @@ permalink: /kb/192/Q192839/
 	
 	=============================================================================
 	
+
+{% endraw %}

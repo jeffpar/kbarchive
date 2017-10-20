@@ -6,6 +6,8 @@ permalink: /kb/041/Q41582/
 
 ## Q41582: Amdek Has CLREPC.EXE to Help with Keyboard Incompatibilities
 
+{% raw %}
+
 	Article: Q41582
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -38,3 +40,5 @@ permalink: /kb/041/Q41582/
 	This keyboard correction does not let you highlight text with the
 	extended-keyboard cursor keys; instead, you must use the numeric
 	keypad with the SHIFT key.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94748/
 
 ## Q94748: PC Rmt: Mail Remote for MS-DOS MAIL.EXE 3.0.2 Update
 
+{% raw %}
+
 	Article: Q94748
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -100,3 +102,5 @@ permalink: /kb/094/Q94748/
 	
 	=============================================================================
 	
+
+{% endraw %}

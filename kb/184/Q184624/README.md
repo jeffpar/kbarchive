@@ -6,6 +6,8 @@ permalink: /kb/184/Q184624/
 
 ## Q184624: XFOR: cc:Mail Connector Does Not Return Attachments On NDRs
 
+{% raw %}
+
 	Article: Q184624
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -81,3 +83,5 @@ permalink: /kb/184/Q184624/
 	
 	=============================================================================
 	
+
+{% endraw %}

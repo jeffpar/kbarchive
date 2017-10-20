@@ -6,6 +6,8 @@ permalink: /kb/116/Q116417/
 
 ## Q116417: Mac Bookshelf 94: Errors if Installed on Nonstartup Disk
 
+{% raw %}
+
 	Article: Q116417
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -52,3 +54,5 @@ permalink: /kb/116/Q116417/
 	
 	=============================================================================
 	
+
+{% endraw %}

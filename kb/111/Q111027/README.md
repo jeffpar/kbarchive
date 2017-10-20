@@ -6,6 +6,8 @@ permalink: /kb/111/Q111027/
 
 ## Q111027: File Write to Network Share Using MS-DOS 21h Function Fails
 
+{% raw %}
+
 	Article: Q111027
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -52,3 +54,5 @@ permalink: /kb/111/Q111027/
 	
 	=============================================================================
 	
+
+{% endraw %}

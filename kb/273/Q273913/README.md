@@ -6,6 +6,8 @@ permalink: /kb/273/Q273913/
 
 ## Q273913: XCLN: Maintaining Calendar Functionality for IMAP4/POP3 Clients
 
+{% raw %}
+
 	Article: Q273913
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -84,3 +86,5 @@ permalink: /kb/273/Q273913/
 	
 	=============================================================================
 	
+
+{% endraw %}

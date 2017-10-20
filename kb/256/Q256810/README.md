@@ -6,6 +6,8 @@ permalink: /kb/256/Q256810/
 
 ## Q256810: MapPoint 2001 Err Msg: Could Not Find the Microsoft MapPoint...
 
+{% raw %}
+
 	Article: Q256810
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/256/Q256810/
 	
 	=============================================================================
 	
+
+{% endraw %}

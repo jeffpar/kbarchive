@@ -6,6 +6,8 @@ permalink: /kb/247/Q247603/
 
 ## Q247603: 401.3 Unauthorized Due to ACL on Resource
 
+{% raw %}
+
 	Article: Q247603
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -60,3 +62,5 @@ permalink: /kb/247/Q247603/
 	
 	=============================================================================
 	
+
+{% endraw %}

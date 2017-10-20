@@ -6,6 +6,8 @@ permalink: /kb/078/Q78056/
 
 ## Q78056: Roland Driver Does Not Play Wave Files
 
+{% raw %}
+
 	Article: Q78056
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -41,3 +43,5 @@ permalink: /kb/078/Q78056/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248200/
 
 ## Q248200: FS2000: Unable to See Landing Lights from the Cockpit
 
+{% raw %}
+
 	Article: Q248200
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/248/Q248200/
 	
 	=============================================================================
 	
+
+{% endraw %}

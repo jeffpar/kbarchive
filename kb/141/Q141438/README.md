@@ -6,6 +6,8 @@ permalink: /kb/141/Q141438/
 
 ## Q141438: PRB: The Profiler Isn't Enabled
 
+{% raw %}
+
 	Article: Q141438
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00
@@ -70,3 +72,5 @@ permalink: /kb/141/Q141438/
 	
 	=============================================================================
 	
+
+{% endraw %}

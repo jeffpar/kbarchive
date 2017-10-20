@@ -6,6 +6,8 @@ permalink: /kb/159/Q159340/
 
 ## Q159340: Err Msg: This File Is Not a Windows Help File
 
+{% raw %}
+
 	Article: Q159340
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11; WINDOWS:3.1,3.11,95
@@ -65,3 +67,5 @@ permalink: /kb/159/Q159340/
 	
 	=============================================================================
 	
+
+{% endraw %}

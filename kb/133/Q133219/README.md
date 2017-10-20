@@ -6,6 +6,8 @@ permalink: /kb/133/Q133219/
 
 ## Q133219: Connecting to the Internet Using a Service Provider
 
+{% raw %}
+
 	Article: Q133219
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; Win2000:95
@@ -202,3 +204,5 @@ permalink: /kb/133/Q133219/
 	
 	=============================================================================
 	
+
+{% endraw %}

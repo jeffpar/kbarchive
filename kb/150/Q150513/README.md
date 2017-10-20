@@ -6,6 +6,8 @@ permalink: /kb/150/Q150513/
 
 ## Q150513: Multiple SLI_OPEN()s Can Cause SESSION_ALREADY_OPEN
 
+{% raw %}
+
 	Article: Q150513
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -78,3 +80,5 @@ permalink: /kb/150/Q150513/
 	
 	=============================================================================
 	
+
+{% endraw %}

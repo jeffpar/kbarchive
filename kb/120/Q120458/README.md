@@ -6,6 +6,8 @@ permalink: /kb/120/Q120458/
 
 ## Q120458: 2 RAS Client/RAS IPX Server's Cannot Dial into Another IPX Netwk
 
+{% raw %}
+
 	Article: Q120458
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -69,3 +71,5 @@ permalink: /kb/120/Q120458/
 	
 	=============================================================================
 	
+
+{% endraw %}

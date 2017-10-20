@@ -6,6 +6,8 @@ permalink: /kb/142/Q142247/
 
 ## Q142247: FIX: Application Error Occurs When Printing a Large Project
 
+{% raw %}
+
 	Article: Q142247
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0; winnt:3.51
@@ -85,3 +87,5 @@ permalink: /kb/142/Q142247/
 	
 	=============================================================================
 	
+
+{% endraw %}

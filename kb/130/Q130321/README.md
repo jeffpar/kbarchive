@@ -6,6 +6,8 @@ permalink: /kb/130/Q130321/
 
 ## Q130321: PC MAPI: Attachment Name Must Retain 3 Letter File Extension
 
+{% raw %}
+
 	Article: Q130321
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130321/
 	
 	=============================================================================
 	
+
+{% endraw %}

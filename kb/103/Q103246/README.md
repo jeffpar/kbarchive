@@ -6,6 +6,8 @@ permalink: /kb/103/Q103246/
 
 ## Q103246: FFAPI: Gateway-Put Executables Version 3.04.7 Update
 
+{% raw %}
+
 	Article: Q103246
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:
@@ -106,3 +108,5 @@ permalink: /kb/103/Q103246/
 	
 	=============================================================================
 	
+
+{% endraw %}

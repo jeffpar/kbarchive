@@ -6,6 +6,8 @@ permalink: /kb/145/Q145949/
 
 ## Q145949: Share Names Greater Than 12 Characters Cause Errors on Clients
 
+{% raw %}
+
 	Article: Q145949
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2c,2000,3.0,3.11,3.51,4.0
@@ -108,3 +110,5 @@ permalink: /kb/145/Q145949/
 	
 	=============================================================================
 	
+
+{% endraw %}

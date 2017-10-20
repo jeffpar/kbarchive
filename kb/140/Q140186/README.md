@@ -6,6 +6,8 @@ permalink: /kb/140/Q140186/
 
 ## Q140186: XFOR: Configuring the PC MTA to Use WAN Drives
 
+{% raw %}
+
 	Article: Q140186
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/140/Q140186/
 	
 	=============================================================================
 	
+
+{% endraw %}

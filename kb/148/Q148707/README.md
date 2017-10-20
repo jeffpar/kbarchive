@@ -6,6 +6,8 @@ permalink: /kb/148/Q148707/
 
 ## Q148707: PC DB: Troubleshooting Mail When Messages Are Not Moving
 
+{% raw %}
+
 	Article: Q148707
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -155,3 +157,5 @@ permalink: /kb/148/Q148707/
 	
 	=============================================================================
 	
+
+{% endraw %}

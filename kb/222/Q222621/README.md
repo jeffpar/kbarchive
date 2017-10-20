@@ -6,6 +6,8 @@ permalink: /kb/222/Q222621/
 
 ## Q222621: XADM: Buffer Is Not Cleared in Exchange LDAP Service
 
+{% raw %}
+
 	Article: Q222621
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -74,3 +76,5 @@ permalink: /kb/222/Q222621/
 	
 	=============================================================================
 	
+
+{% endraw %}

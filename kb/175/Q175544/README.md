@@ -6,6 +6,8 @@ permalink: /kb/175/Q175544/
 
 ## Q175544: Windows NT Setup for 3.51 Fails When Deleting User Profiles
 
+{% raw %}
+
 	Article: Q175544
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -123,3 +125,5 @@ permalink: /kb/175/Q175544/
 	
 	=============================================================================
 	
+
+{% endraw %}

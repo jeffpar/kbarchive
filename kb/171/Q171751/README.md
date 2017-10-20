@@ -6,6 +6,8 @@ permalink: /kb/171/Q171751/
 
 ## Q171751: FS95: No Air Traffic Control in Flight Simulator for Windows 95
 
+{% raw %}
+
 	Article: Q171751
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/171/Q171751/
 	
 	=============================================================================
 	
+
+{% endraw %}

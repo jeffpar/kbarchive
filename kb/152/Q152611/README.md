@@ -6,6 +6,8 @@ permalink: /kb/152/Q152611/
 
 ## Q152611: OSR2 Cannot Dual-Boot Between Windows 3.x and Windows 95
 
+{% raw %}
+
 	Article: Q152611
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -71,3 +73,5 @@ permalink: /kb/152/Q152611/
 	
 	=============================================================================
 	
+
+{% endraw %}

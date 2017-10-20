@@ -6,6 +6,8 @@ permalink: /kb/051/Q51472/
 
 ## Q51472: Shift Left Assignment Operator &quot;&lt;&lt;=&quot; Does Not Work Correctly
 
+{% raw %}
+
 	Article: Q51472
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -61,3 +63,5 @@ permalink: /kb/051/Q51472/
 	Microsoft has confirmed this to be a problem with the QuickC compiler
 	Versions 2.00 and 2.01. We are researching this problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

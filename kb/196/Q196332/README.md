@@ -6,6 +6,8 @@ permalink: /kb/196/Q196332/
 
 ## Q196332: XADM: Edb.chk Does Not Move During Performance Optimization
 
+{% raw %}
+
 	Article: Q196332
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/196/Q196332/
 	
 	=============================================================================
 	
+
+{% endraw %}

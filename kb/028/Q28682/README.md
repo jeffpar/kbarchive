@@ -6,6 +6,8 @@ permalink: /kb/028/Q28682/
 
 ## Q28682: No IBM DW4 or TopView Support for Bus Mouse with InPort
 
+{% raw %}
+
 	Article: Q28682
 	Product(s): See article
 	Version(s): 6.00 6.02 6.10 1.00
@@ -24,3 +26,5 @@ permalink: /kb/028/Q28682/
 	   Because DisplayWrite 4 has custom-made pointing device drivers, you
 	should contact your IBM dealer or have the IBM dealer contact
 	IBM dealer support.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134439/
 
 ## Q134439: Mastering Series Titles: Error Viewing .Avi Files
 
+{% raw %}
+
 	Article: Q134439
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/134/Q134439/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61220/
 
 ## Q61220: C 6.00 README: CV: New Statefileread Switch
 
+{% raw %}
+
 	Article: Q61220
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -28,3 +30,5 @@ permalink: /kb/061/Q61220/
 	For further information, see "Configuring CodeView" in the CodeView
 	online help. Also, see the description of the /TSF start-up option
 	below.
+
+{% endraw %}

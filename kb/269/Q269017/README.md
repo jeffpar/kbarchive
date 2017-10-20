@@ -6,6 +6,8 @@ permalink: /kb/269/Q269017/
 
 ## Q269017: Add Printer Wizard in My Computer Is Not Available
 
+{% raw %}
+
 	Article: Q269017
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/269/Q269017/
 	
 	=============================================================================
 	
+
+{% endraw %}

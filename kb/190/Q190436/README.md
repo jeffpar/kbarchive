@@ -6,6 +6,8 @@ permalink: /kb/190/Q190436/
 
 ## Q190436: XADM: How the Location of Public Folders Affects Clients
 
+{% raw %}
+
 	Article: Q190436
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -83,3 +85,5 @@ permalink: /kb/190/Q190436/
 	
 	=============================================================================
 	
+
+{% endraw %}

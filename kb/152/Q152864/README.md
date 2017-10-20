@@ -6,6 +6,8 @@ permalink: /kb/152/Q152864/
 
 ## Q152864: XFOR: Exchange Doesn't Handle Multiple Comments in Addresses
 
+{% raw %}
+
 	Article: Q152864
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/152/Q152864/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182974/
 
 ## Q182974: WD97: Supplemental Help File Available Containing KB Web Links
 
+{% raw %}
+
 	Article: Q182974
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/182/Q182974/
 	
 	=============================================================================
 	
+
+{% endraw %}

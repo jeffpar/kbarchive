@@ -6,6 +6,8 @@ permalink: /kb/231/Q231921/
 
 ## Q231921: Midtown Madness: No Credit for Passing Through Checkpoints
 
+{% raw %}
+
 	Article: Q231921
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/231/Q231921/
 	
 	=============================================================================
 	
+
+{% endraw %}

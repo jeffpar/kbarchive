@@ -6,6 +6,8 @@ permalink: /kb/192/Q192836/
 
 ## Q192836: XADM: Admin.exe Stops When Viewing Properties of Remote Server
 
+{% raw %}
+
 	Article: Q192836
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -130,3 +132,5 @@ permalink: /kb/192/Q192836/
 	
 	=============================================================================
 	
+
+{% endraw %}

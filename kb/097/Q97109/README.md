@@ -6,6 +6,8 @@ permalink: /kb/097/Q97109/
 
 ## Q97109: Defrag Sees Several Megabytes of Unmovable Blocks
 
+{% raw %}
+
 	Article: Q97109
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -60,3 +62,5 @@ permalink: /kb/097/Q97109/
 	
 	=============================================================================
 	
+
+{% endraw %}

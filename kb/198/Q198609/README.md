@@ -6,6 +6,8 @@ permalink: /kb/198/Q198609/
 
 ## Q198609: FIX: Write Statement Prints Double-Quote(&quot;)
 
+{% raw %}
+
 	Article: Q198609
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -88,3 +90,5 @@ permalink: /kb/198/Q198609/
 	
 	=============================================================================
 	
+
+{% endraw %}

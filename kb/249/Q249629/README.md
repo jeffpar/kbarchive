@@ -6,6 +6,8 @@ permalink: /kb/249/Q249629/
 
 ## Q249629: Encarta 2000: Error Messages When You Attempt to Start Program
 
+{% raw %}
+
 	Article: Q249629
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -157,3 +159,5 @@ permalink: /kb/249/Q249629/
 	
 	=============================================================================
 	
+
+{% endraw %}

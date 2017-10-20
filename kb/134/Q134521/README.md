@@ -6,6 +6,8 @@ permalink: /kb/134/Q134521/
 
 ## Q134521: Run Command on Start Menu Does Not Accept Redirection or Pipes
 
+{% raw %}
+
 	Article: Q134521
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134521/
 	
 	=============================================================================
 	
+
+{% endraw %}

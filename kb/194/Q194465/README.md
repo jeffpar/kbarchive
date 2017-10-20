@@ -6,6 +6,8 @@ permalink: /kb/194/Q194465/
 
 ## Q194465: PPTP May Refuse Connections When VPNs Are Free
 
+{% raw %}
+
 	Article: Q194465
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/194/Q194465/
 	
 	=============================================================================
 	
+
+{% endraw %}

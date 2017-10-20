@@ -6,6 +6,8 @@ permalink: /kb/041/Q41197/
 
 ## Q41197: QuickC 2.00 Sporadically Fails to Exec Linker in 3.x BOX
 
+{% raw %}
+
 	Article: Q41197
 	Product(s): See article
 	Version(s): 2.00
@@ -43,3 +45,5 @@ permalink: /kb/041/Q41197/
 	has 280K available with QuickC loaded, and if an attempt is made to link
 	the program while shelled out of the environment, it links with no
 	errors.
+
+{% endraw %}

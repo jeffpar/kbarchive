@@ -6,6 +6,8 @@ permalink: /kb/131/Q131769/
 
 ## Q131769: Adding A Second Adaptec 154x SCSI Adapter Fails in Windows NT
 
+{% raw %}
+
 	Article: Q131769
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/131/Q131769/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194297/
 
 ## Q194297: SMS: Windows NT Inventory File Collector Causes Access Violation
 
+{% raw %}
+
 	Article: Q194297
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,Part 2
@@ -81,3 +83,5 @@ permalink: /kb/194/Q194297/
 	
 	=============================================================================
 	
+
+{% endraw %}

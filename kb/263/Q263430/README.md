@@ -6,6 +6,8 @@ permalink: /kb/263/Q263430/
 
 ## Q263430: SMS: Nt Discovery Tab Won't Accept Comp Names Beginning w/ Nmbrs
 
+{% raw %}
+
 	Article: Q263430
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -58,3 +60,5 @@ permalink: /kb/263/Q263430/
 	
 	=============================================================================
 	
+
+{% endraw %}

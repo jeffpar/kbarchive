@@ -6,6 +6,8 @@ permalink: /kb/135/Q135009/
 
 ## Q135009: DCS EM320W Terminal Emulator Slows Down Programs and Printing
 
+{% raw %}
+
 	Article: Q135009
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -55,3 +57,5 @@ permalink: /kb/135/Q135009/
 	
 	=============================================================================
 	
+
+{% endraw %}

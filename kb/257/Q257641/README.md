@@ -6,6 +6,8 @@ permalink: /kb/257/Q257641/
 
 ## Q257641: FIX: DataSource Drop-Down Loads Slowly in Large Project
 
+{% raw %}
+
 	Article: Q257641
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -74,3 +76,5 @@ permalink: /kb/257/Q257641/
 	
 	=============================================================================
 	
+
+{% endraw %}

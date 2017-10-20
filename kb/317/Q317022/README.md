@@ -6,6 +6,8 @@ permalink: /kb/317/Q317022/
 
 ## Q317022: DNS Resolution Fails with System Log Event ID 453 and 7053
 
+{% raw %}
+
 	Article: Q317022
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -109,3 +111,5 @@ permalink: /kb/317/Q317022/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157126/
 
 ## Q157126: PRB: OpenEx() May Fail with &quot;ODBC;&quot; in Connection String
 
+{% raw %}
+
 	Article: Q157126
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/157/Q157126/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67868/
 
 ## Q67868: SVAR: Program that Creates System Variables from Network Info
 
+{% raw %}
+
 	Article: Q67868
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -157,3 +159,5 @@ permalink: /kb/067/Q67868/
 	
 	=============================================================================
 	
+
+{% endraw %}

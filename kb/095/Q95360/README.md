@@ -6,6 +6,8 @@ permalink: /kb/095/Q95360/
 
 ## Q95360: WFWG: Unable to Log on to Banyan VINES
 
+{% raw %}
+
 	Article: Q95360
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -85,3 +87,5 @@ permalink: /kb/095/Q95360/
 	
 	=============================================================================
 	
+
+{% endraw %}

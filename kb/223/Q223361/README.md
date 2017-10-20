@@ -6,6 +6,8 @@ permalink: /kb/223/Q223361/
 
 ## Q223361: DOC: Return Values Incorrectly Described for Time.getDayofWeek
 
+{% raw %}
+
 	Article: Q223361
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:6.0; winnt:6.0
@@ -67,3 +69,5 @@ permalink: /kb/223/Q223361/
 	
 	=============================================================================
 	
+
+{% endraw %}

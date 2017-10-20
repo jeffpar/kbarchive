@@ -6,6 +6,8 @@ permalink: /kb/226/Q226889/
 
 ## Q226889: SMS 2.0 Administrator's Guide Site System Roles Are Incorrect
 
+{% raw %}
+
 	Article: Q226889
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -42,3 +44,5 @@ permalink: /kb/226/Q226889/
 	
 	=============================================================================
 	
+
+{% endraw %}

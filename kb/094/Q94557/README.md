@@ -6,6 +6,8 @@ permalink: /kb/094/Q94557/
 
 ## Q94557: Write Restores Subscripts to Incorrect Font Size
 
+{% raw %}
+
 	Article: Q94557
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/094/Q94557/
 	
 	=============================================================================
 	
+
+{% endraw %}

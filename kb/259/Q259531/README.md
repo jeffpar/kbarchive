@@ -6,6 +6,8 @@ permalink: /kb/259/Q259531/
 
 ## Q259531: XFOR: How to Configure SMTP Relay for Domains and Subdomains
 
+{% raw %}
+
 	Article: Q259531
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/259/Q259531/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123029/
 
 ## Q123029: WFW 3.11 Clients Hang Accessing Windows NT Server
 
+{% raw %}
+
 	Article: Q123029
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:3.5
@@ -87,3 +89,5 @@ permalink: /kb/123/Q123029/
 	
 	=============================================================================
 	
+
+{% endraw %}

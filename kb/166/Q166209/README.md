@@ -6,6 +6,8 @@ permalink: /kb/166/Q166209/
 
 ## Q166209: Invalid Page Fault in Module Gdi32.dll
 
+{% raw %}
+
 	Article: Q166209
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,3.0,3.01,3.02,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,
@@ -100,3 +102,5 @@ permalink: /kb/166/Q166209/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/273/Q273073/
 
 ## Q273073: XADM: Services Are Not Started When You Use the Restore Wizard
 
+{% raw %}
+
 	Article: Q273073
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -52,3 +54,5 @@ permalink: /kb/273/Q273073/
 	
 	=============================================================================
 	
+
+{% endraw %}

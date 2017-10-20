@@ -6,6 +6,8 @@ permalink: /kb/268/Q268324/
 
 ## Q268324: XCLN: Corrupted Offline Address Books from Changes to PDN List
 
+{% raw %}
+
 	Article: Q268324
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -277,3 +279,5 @@ permalink: /kb/268/Q268324/
 	
 	=============================================================================
 	
+
+{% endraw %}

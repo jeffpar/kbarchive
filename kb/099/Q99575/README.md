@@ -6,6 +6,8 @@ permalink: /kb/099/Q99575/
 
 ## Q99575: FIX: Phar Lap err 58 Running MASM From Read-Only Drive
 
+{% raw %}
+
 	Article: Q99575
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1
@@ -75,3 +77,5 @@ permalink: /kb/099/Q99575/
 	
 	=============================================================================
 	
+
+{% endraw %}

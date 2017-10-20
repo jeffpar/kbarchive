@@ -6,6 +6,8 @@ permalink: /kb/263/Q263214/
 
 ## Q263214: Executive Status Err Msg on Shutdown w/ Windows 2000 Server
 
+{% raw %}
+
 	Article: Q263214
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP2
@@ -72,3 +74,5 @@ permalink: /kb/263/Q263214/
 	
 	=============================================================================
 	
+
+{% endraw %}

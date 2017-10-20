@@ -6,6 +6,8 @@ permalink: /kb/201/Q201788/
 
 ## Q201788: PC DB: Can't Send Microsoft Mail in Inbox of Outlook or Exchange
 
+{% raw %}
+
 	Article: Q201788
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:4.0,5.0,97; :
@@ -70,3 +72,5 @@ permalink: /kb/201/Q201788/
 	
 	=============================================================================
 	
+
+{% endraw %}

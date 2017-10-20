@@ -6,6 +6,8 @@ permalink: /kb/139/Q139150/
 
 ## Q139150: PPT7: PowerPoint Missing Features Under Windows NT
 
+{% raw %}
+
 	Article: Q139150
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -158,3 +160,5 @@ permalink: /kb/139/Q139150/
 	
 	=============================================================================
 	
+
+{% endraw %}

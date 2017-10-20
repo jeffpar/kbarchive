@@ -6,6 +6,8 @@ permalink: /kb/181/Q181127/
 
 ## Q181127: FP: How to Publish Your Web to a Server w/o FrontPage Extensions
 
+{% raw %}
+
 	Article: Q181127
 	Product(s): Word Front Page
 	Version(s): ; MACINTOSH:1.0
@@ -140,3 +142,5 @@ permalink: /kb/181/Q181127/
 	
 	=============================================================================
 	
+
+{% endraw %}

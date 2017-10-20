@@ -6,6 +6,8 @@ permalink: /kb/264/Q264745/
 
 ## Q264745: XCLN: Can't Permanently Delete Defer. Delivery Mails fr. Outbox
 
+{% raw %}
+
 	Article: Q264745
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/264/Q264745/
 	
 	=============================================================================
 	
+
+{% endraw %}

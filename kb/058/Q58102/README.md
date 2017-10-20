@@ -6,6 +6,8 @@ permalink: /kb/058/Q58102/
 
 ## Q58102: No Beep When Clicking Outside Modal Window of WINDOW.BAS
 
+{% raw %}
+
 	Article: Q58102
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -43,3 +45,5 @@ permalink: /kb/058/Q58102/
 	   TAB
 	   ENTER (on numeric keypad)
 	   1, 2, 3, 4, 5, 6, 7, 8, 9 (on numeric keypad)
+
+{% endraw %}

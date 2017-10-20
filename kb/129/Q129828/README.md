@@ -6,6 +6,8 @@ permalink: /kb/129/Q129828/
 
 ## Q129828: MODEL Structure is Read-Only in Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q129828
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -41,3 +43,5 @@ permalink: /kb/129/Q129828/
 	
 	=============================================================================
 	
+
+{% endraw %}

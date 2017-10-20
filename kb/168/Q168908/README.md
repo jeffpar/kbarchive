@@ -6,6 +6,8 @@ permalink: /kb/168/Q168908/
 
 ## Q168908: How to Authenticate a User Against All Trusting Domains
 
+{% raw %}
+
 	Article: Q168908
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0,4.0,5.0
@@ -124,3 +126,5 @@ permalink: /kb/168/Q168908/
 	
 	=============================================================================
 	
+
+{% endraw %}

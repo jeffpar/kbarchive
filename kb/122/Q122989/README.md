@@ -6,6 +6,8 @@ permalink: /kb/122/Q122989/
 
 ## Q122989: SMS Err Msg: PowerPoint Could Not Locate or Start the Quick....
 
+{% raw %}
+
 	Article: Q122989
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -56,3 +58,5 @@ permalink: /kb/122/Q122989/
 	
 	=============================================================================
 	
+
+{% endraw %}

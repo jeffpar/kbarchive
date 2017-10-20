@@ -6,6 +6,8 @@ permalink: /kb/096/Q96388/
 
 ## Q96388: Uninstalling MS-DOS on an XtraDrive Compressed Drive
 
+{% raw %}
+
 	Article: Q96388
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -50,3 +52,5 @@ permalink: /kb/096/Q96388/
 	
 	=============================================================================
 	
+
+{% endraw %}

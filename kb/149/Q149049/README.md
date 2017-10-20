@@ -6,6 +6,8 @@ permalink: /kb/149/Q149049/
 
 ## Q149049: PRB: Compiled In-Process Server Used Before IDE Server
 
+{% raw %}
+
 	Article: Q149049
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -146,3 +148,5 @@ permalink: /kb/149/Q149049/
 	
 	=============================================================================
 	
+
+{% endraw %}

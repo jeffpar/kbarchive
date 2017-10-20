@@ -6,6 +6,8 @@ permalink: /kb/098/Q98472/
 
 ## Q98472: Unusual Symptoms Indicate Hardware Conflicts or Problems
 
+{% raw %}
+
 	Article: Q98472
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/098/Q98472/
 	
 	=============================================================================
 	
+
+{% endraw %}

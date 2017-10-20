@@ -6,6 +6,8 @@ permalink: /kb/134/Q134300/
 
 ## Q134300: APM Not Installed on Midwest Micro Elite Soundbook
 
+{% raw %}
+
 	Article: Q134300
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134300/
 	
 	=============================================================================
 	
+
+{% endraw %}

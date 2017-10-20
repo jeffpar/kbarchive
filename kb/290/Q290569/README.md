@@ -6,6 +6,8 @@ permalink: /kb/290/Q290569/
 
 ## Q290569: PRB: #exec with IIS Buffering Displays HTTP Headers in Browser
 
+{% raw %}
+
 	Article: Q290569
 	Product(s): Internet Information Server
 	Version(s): 1.0,4.0,4.0 (Spanish version),5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/290/Q290569/
 	
 	=============================================================================
 	
+
+{% endraw %}

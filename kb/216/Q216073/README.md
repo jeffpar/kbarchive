@@ -6,6 +6,8 @@ permalink: /kb/216/Q216073/
 
 ## Q216073: SAMPLE: 4thScrpt.exe Demos Active Debug in ATL ActiveX Script
 
+{% raw %}
+
 	Article: Q216073
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -252,3 +254,5 @@ permalink: /kb/216/Q216073/
 	
 	=============================================================================
 	
+
+{% endraw %}

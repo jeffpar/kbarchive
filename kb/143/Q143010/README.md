@@ -6,6 +6,8 @@ permalink: /kb/143/Q143010/
 
 ## Q143010: Slide Colors Change When Editing Graph or Organization Chart
 
+{% raw %}
+
 	Article: Q143010
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -57,3 +59,5 @@ permalink: /kb/143/Q143010/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186770/
 
 ## Q186770: Windows NT Hangs Trying to Access SuperDisk SLS-120 Disk Drive
 
+{% raw %}
+
 	Article: Q186770
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/186/Q186770/
 	
 	=============================================================================
 	
+
+{% endraw %}

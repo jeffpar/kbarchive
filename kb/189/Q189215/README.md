@@ -6,6 +6,8 @@ permalink: /kb/189/Q189215/
 
 ## Q189215: Running Windows 98: E-Book Setup Label Incorrect
 
+{% raw %}
+
 	Article: Q189215
 	Product(s): Microsoft Press
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/189/Q189215/
 	
 	=============================================================================
 	
+
+{% endraw %}

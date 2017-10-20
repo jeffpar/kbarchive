@@ -6,6 +6,8 @@ permalink: /kb/121/Q121793/
 
 ## Q121793: Err Msg: The DOS Sockets TSR is Not Loaded
 
+{% raw %}
+
 	Article: Q121793
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121793/
 	
 	=============================================================================
 	
+
+{% endraw %}

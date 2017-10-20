@@ -6,6 +6,8 @@ permalink: /kb/177/Q177088/
 
 ## Q177088: BUG: Run-Time Error 380 &quot;Invalid Property Value&quot; with MaskEdBox
 
+{% raw %}
+
 	Article: Q177088
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/177/Q177088/
 	
 	=============================================================================
 	
+
+{% endraw %}

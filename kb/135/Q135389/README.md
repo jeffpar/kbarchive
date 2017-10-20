@@ -6,6 +6,8 @@ permalink: /kb/135/Q135389/
 
 ## Q135389: FIX: What's New: Bug Fixes Made in Visual C++ Version 2.2
 
+{% raw %}
+
 	Article: Q135389
 	Product(s): Microsoft C Compiler
 	Version(s): 2.2
@@ -243,3 +245,5 @@ permalink: /kb/135/Q135389/
 	
 	=============================================================================
 	
+
+{% endraw %}

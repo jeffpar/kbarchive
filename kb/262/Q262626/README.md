@@ -6,6 +6,8 @@ permalink: /kb/262/Q262626/
 
 ## Q262626: ASP Request Executing Counter and ProcessorThreadMax
 
+{% raw %}
+
 	Article: Q262626
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/262/Q262626/
 	
 	=============================================================================
 	
+
+{% endraw %}

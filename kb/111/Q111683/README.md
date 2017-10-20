@@ -6,6 +6,8 @@ permalink: /kb/111/Q111683/
 
 ## Q111683: New Installation of WFWG with IPX.COM Gives Erroneous Dialog
 
+{% raw %}
+
 	Article: Q111683
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/111/Q111683/
 	
 	=============================================================================
 	
+
+{% endraw %}

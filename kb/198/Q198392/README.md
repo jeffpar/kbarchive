@@ -6,6 +6,8 @@ permalink: /kb/198/Q198392/
 
 ## Q198392: XCON: NDR Shows Exchange DN of User Instead of X.400 Address
 
+{% raw %}
+
 	Article: Q198392
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP2,5.5 SP1
@@ -159,3 +161,5 @@ permalink: /kb/198/Q198392/
 	
 	=============================================================================
 	
+
+{% endraw %}

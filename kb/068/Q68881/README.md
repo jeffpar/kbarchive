@@ -6,6 +6,8 @@ permalink: /kb/068/Q68881/
 
 ## Q68881: Pascal Example in Programmer's Guide Won't Compile
 
+{% raw %}
+
 	Article: Q68881
 	Product(s): See article
 	Version(s): 1.00
@@ -74,3 +76,5 @@ permalink: /kb/068/Q68881/
 	        m2 := CpuReg.ES              { from subroutines  }
 	   end;
 	end; {mouse}
+
+{% endraw %}

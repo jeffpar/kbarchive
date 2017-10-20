@@ -6,6 +6,8 @@ permalink: /kb/161/Q161488/
 
 ## Q161488: XADM: Factors That Determine the Size of the Directory Database
 
+{% raw %}
+
 	Article: Q161488
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/161/Q161488/
 	
 	=============================================================================
 	
+
+{% endraw %}

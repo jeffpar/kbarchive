@@ -6,6 +6,8 @@ permalink: /kb/268/Q268728/
 
 ## Q268728: XADM: Active Directory Connector Setup Fails with Error C10361ca
 
+{% raw %}
+
 	Article: Q268728
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -54,3 +56,5 @@ permalink: /kb/268/Q268728/
 	
 	=============================================================================
 	
+
+{% endraw %}

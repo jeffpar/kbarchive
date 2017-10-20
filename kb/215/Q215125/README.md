@@ -6,6 +6,8 @@ permalink: /kb/215/Q215125/
 
 ## Q215125: SMS: Migration from 1.2 to 2.0 Causes PGC &amp; PCM Warning Dialogs
 
+{% raw %}
+
 	Article: Q215125
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -63,3 +65,5 @@ permalink: /kb/215/Q215125/
 	
 	=============================================================================
 	
+
+{% endraw %}

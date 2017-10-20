@@ -6,6 +6,8 @@ permalink: /kb/198/Q198727/
 
 ## Q198727: SMS: Remote Control Setting Registry Values Provided
 
+{% raw %}
+
 	Article: Q198727
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -93,3 +95,5 @@ permalink: /kb/198/Q198727/
 	
 	=============================================================================
 	
+
+{% endraw %}

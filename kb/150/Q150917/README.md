@@ -6,6 +6,8 @@ permalink: /kb/150/Q150917/
 
 ## Q150917: ODI Client Hangs on Client Setup
 
+{% raw %}
+
 	Article: Q150917
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -70,3 +72,5 @@ permalink: /kb/150/Q150917/
 	
 	=============================================================================
 	
+
+{% endraw %}

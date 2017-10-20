@@ -6,6 +6,8 @@ permalink: /kb/243/Q243800/
 
 ## Q243800: Activation of COM DLL Registered with Long Path Does Not Succeed
 
+{% raw %}
+
 	Article: Q243800
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -88,3 +90,5 @@ permalink: /kb/243/Q243800/
 	
 	=============================================================================
 	
+
+{% endraw %}

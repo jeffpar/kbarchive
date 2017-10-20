@@ -6,6 +6,8 @@ permalink: /kb/271/Q271235/
 
 ## Q271235: SMS: Mandatory Advertisement Runs Immediately After the Event
 
+{% raw %}
+
 	Article: Q271235
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -51,3 +53,5 @@ permalink: /kb/271/Q271235/
 	
 	=============================================================================
 	
+
+{% endraw %}

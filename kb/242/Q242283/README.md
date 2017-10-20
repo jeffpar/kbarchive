@@ -6,6 +6,8 @@ permalink: /kb/242/Q242283/
 
 ## Q242283: 16-Bit Programs Hang Using Dynamic Data Exchange
 
+{% raw %}
+
 	Article: Q242283
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/242/Q242283/
 	
 	=============================================================================
 	
+
+{% endraw %}

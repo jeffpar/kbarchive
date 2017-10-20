@@ -6,6 +6,8 @@ permalink: /kb/165/Q165264/
 
 ## Q165264: SMS: Wrong Use of the /D: Switch May Cause Incomplete Inventory
 
+{% raw %}
+
 	Article: Q165264
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/165/Q165264/
 	
 	=============================================================================
 	
+
+{% endraw %}

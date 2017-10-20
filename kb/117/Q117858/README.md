@@ -6,6 +6,8 @@ permalink: /kb/117/Q117858/
 
 ## Q117858: PPT: Simulating Use of More Than One Template in PowerPoint
 
+{% raw %}
+
 	Article: Q117858
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,4.0; WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -149,3 +151,5 @@ permalink: /kb/117/Q117858/
 	
 	=============================================================================
 	
+
+{% endraw %}

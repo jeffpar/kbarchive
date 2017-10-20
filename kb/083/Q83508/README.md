@@ -6,6 +6,8 @@ permalink: /kb/083/Q83508/
 
 ## Q83508: Productivity Pack 3.1 Allows Task Switching
 
+{% raw %}
+
 	Article: Q83508
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/083/Q83508/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105297/
 
 ## Q105297: Mozart: Sound Problems on Minimum Configuration System
 
+{% raw %}
+
 	Article: Q105297
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -88,3 +90,5 @@ permalink: /kb/105/Q105297/
 	
 	=============================================================================
 	
+
+{% endraw %}

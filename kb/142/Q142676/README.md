@@ -6,6 +6,8 @@ permalink: /kb/142/Q142676/
 
 ## Q142676: Overcoming User32.dll Initialization Failure Errors
 
+{% raw %}
+
 	Article: Q142676
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -111,3 +113,5 @@ permalink: /kb/142/Q142676/
 	
 	=============================================================================
 	
+
+{% endraw %}

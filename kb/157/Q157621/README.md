@@ -6,6 +6,8 @@ permalink: /kb/157/Q157621/
 
 ## Q157621: Personal Groups Not Visible If %Systemroot% Is Read-Only
 
+{% raw %}
+
 	Article: Q157621
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/157/Q157621/
 	
 	=============================================================================
 	
+
+{% endraw %}

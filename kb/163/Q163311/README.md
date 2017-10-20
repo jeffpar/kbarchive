@@ -6,6 +6,8 @@ permalink: /kb/163/Q163311/
 
 ## Q163311: Number of Active Users Exceeds Number of Active Sessions
 
+{% raw %}
+
 	Article: Q163311
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1
@@ -64,3 +66,5 @@ permalink: /kb/163/Q163311/
 	
 	=============================================================================
 	
+
+{% endraw %}

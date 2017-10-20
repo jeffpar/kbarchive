@@ -6,6 +6,8 @@ permalink: /kb/137/Q137038/
 
 ## Q137038: How to Add Menu Controls to a Form from an Add-In
 
+{% raw %}
+
 	Article: Q137038
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -258,3 +260,5 @@ permalink: /kb/137/Q137038/
 	
 	=============================================================================
 	
+
+{% endraw %}

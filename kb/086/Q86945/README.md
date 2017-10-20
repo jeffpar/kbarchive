@@ -6,6 +6,8 @@ permalink: /kb/086/Q86945/
 
 ## Q86945: 3COM: How to Control Polling for New Mail
 
+{% raw %}
+
 	Article: Q86945
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -42,3 +44,5 @@ permalink: /kb/086/Q86945/
 	
 	=============================================================================
 	
+
+{% endraw %}

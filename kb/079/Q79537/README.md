@@ -6,6 +6,8 @@ permalink: /kb/079/Q79537/
 
 ## Q79537: VFeature Deluxe Partition Is Not Compatible with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q79537
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -64,3 +66,5 @@ permalink: /kb/079/Q79537/
 	
 	=============================================================================
 	
+
+{% endraw %}

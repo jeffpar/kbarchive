@@ -6,6 +6,8 @@ permalink: /kb/198/Q198623/
 
 ## Q198623: HOWTO: JIT Debug a COM Local Server
 
+{% raw %}
+
 	Article: Q198623
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,6.0
@@ -230,3 +232,5 @@ permalink: /kb/198/Q198623/
 	
 	=============================================================================
 	
+
+{% endraw %}

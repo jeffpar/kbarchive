@@ -6,6 +6,8 @@ permalink: /kb/320/Q320266/
 
 ## Q320266: HOWTO: Convert a Visual FoxPro 7.0 Menu to a Visual FoxPro 6.0 F
 
+{% raw %}
+
 	Article: Q320266
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,7.0
@@ -65,3 +67,5 @@ permalink: /kb/320/Q320266/
 	
 	=============================================================================
 	
+
+{% endraw %}

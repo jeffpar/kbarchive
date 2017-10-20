@@ -6,6 +6,8 @@ permalink: /kb/156/Q156997/
 
 ## Q156997: XFOR: IMC NDRs or Misdirects Mail Without Domain Address
 
+{% raw %}
+
 	Article: Q156997
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/156/Q156997/
 	
 	=============================================================================
 	
+
+{% endraw %}

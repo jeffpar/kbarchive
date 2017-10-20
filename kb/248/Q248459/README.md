@@ -6,6 +6,8 @@ permalink: /kb/248/Q248459/
 
 ## Q248459: PRB: eading Spaces Trimmed in DataReport Label Multi-Line Captio
 
+{% raw %}
+
 	Article: Q248459
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -134,3 +136,5 @@ permalink: /kb/248/Q248459/
 	
 	=============================================================================
 	
+
+{% endraw %}

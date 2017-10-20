@@ -6,6 +6,8 @@ permalink: /kb/071/Q71880/
 
 ## Q71880: Cannot Find File _DEFAULT.BAT
 
+{% raw %}
+
 	Article: Q71880
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/071/Q71880/
 	
 	=============================================================================
 	
+
+{% endraw %}

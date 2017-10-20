@@ -6,6 +6,8 @@ permalink: /kb/178/Q178137/
 
 ## Q178137: SMSINST: Compiling SMS Installer Scripts from the Command Line
 
+{% raw %}
+
 	Article: Q178137
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -47,3 +49,5 @@ permalink: /kb/178/Q178137/
 	
 	=============================================================================
 	
+
+{% endraw %}

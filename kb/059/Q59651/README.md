@@ -6,6 +6,8 @@ permalink: /kb/059/Q59651/
 
 ## Q59651: XyWrite Uses ALT+TAB Key Combination
 
+{% raw %}
+
 	Article: Q59651
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/059/Q59651/
 	
 	=============================================================================
 	
+
+{% endraw %}

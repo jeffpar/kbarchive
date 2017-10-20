@@ -6,6 +6,8 @@ permalink: /kb/149/Q149103/
 
 ## Q149103: MSN Interactive Teen: How to Send Suggestions
 
+{% raw %}
+
 	Article: Q149103
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0; WINDOWS:95
@@ -49,3 +51,5 @@ permalink: /kb/149/Q149103/
 	
 	=============================================================================
 	
+
+{% endraw %}

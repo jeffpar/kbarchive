@@ -6,6 +6,8 @@ permalink: /kb/281/Q281535/
 
 ## Q281535: PRB: Error Debugging Procedure with sql_variant Input Parameter
 
+{% raw %}
+
 	Article: Q281535
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -76,3 +78,5 @@ permalink: /kb/281/Q281535/
 	
 	=============================================================================
 	
+
+{% endraw %}

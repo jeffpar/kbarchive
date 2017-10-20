@@ -6,6 +6,8 @@ permalink: /kb/129/Q129724/
 
 ## Q129724: Macintosh Client Has Slow Access to Windows NT 3.5x SFM Volume
 
+{% raw %}
+
 	Article: Q129724
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -69,3 +71,5 @@ permalink: /kb/129/Q129724/
 	
 	=============================================================================
 	
+
+{% endraw %}

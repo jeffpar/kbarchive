@@ -6,6 +6,8 @@ permalink: /kb/220/Q220836/
 
 ## Q220836: Regrgs.exe: Adds Entries to the Registry Using RGS File
 
+{% raw %}
+
 	Article: Q220836
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/220/Q220836/
 	
 	=============================================================================
 	
+
+{% endraw %}

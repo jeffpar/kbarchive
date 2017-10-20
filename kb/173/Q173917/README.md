@@ -6,6 +6,8 @@ permalink: /kb/173/Q173917/
 
 ## Q173917: XWEB: Pine Puts Windows NT Domain Name in Internet Address
 
+{% raw %}
+
 	Article: Q173917
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -79,3 +81,5 @@ permalink: /kb/173/Q173917/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106567/
 
 ## Q106567: BUG: RUNQQ Generates DX1420 for MS-DOS Extended Tools
 
+{% raw %}
+
 	Article: Q106567
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -73,3 +75,5 @@ permalink: /kb/106/Q106567/
 	
 	=============================================================================
 	
+
+{% endraw %}

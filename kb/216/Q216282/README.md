@@ -6,6 +6,8 @@ permalink: /kb/216/Q216282/
 
 ## Q216282: Encarta Reference Suite 99: Network Installation Instructions
 
+{% raw %}
+
 	Article: Q216282
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -93,3 +95,5 @@ permalink: /kb/216/Q216282/
 	
 	=============================================================================
 	
+
+{% endraw %}

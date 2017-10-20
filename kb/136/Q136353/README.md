@@ -6,6 +6,8 @@ permalink: /kb/136/Q136353/
 
 ## Q136353: Fury3: Flashing screen during AVI sequence with Boca SuperX
 
+{% raw %}
+
 	Article: Q136353
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/136/Q136353/
 	
 	=============================================================================
 	
+
+{% endraw %}

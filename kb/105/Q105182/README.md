@@ -6,6 +6,8 @@ permalink: /kb/105/Q105182/
 
 ## Q105182: Undelete May Not Correctly Update AUTOEXEC.BAT &amp; UNDELETE.INI
 
+{% raw %}
+
 	Article: Q105182
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/105/Q105182/
 	
 	=============================================================================
 	
+
+{% endraw %}

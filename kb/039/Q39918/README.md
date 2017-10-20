@@ -6,6 +6,8 @@ permalink: /kb/039/Q39918/
 
 ## Q39918: Graphic Functions Not Supported under OS/2 Protected Mode
 
+{% raw %}
+
 	Article: Q39918
 	Product(s): See article
 	Version(s): 5.10
@@ -21,3 +23,5 @@ permalink: /kb/039/Q39918/
 	"Microsoft C 5.10 Optimizing Compiler User's Guide" section 7.2.1,
 	there is a list of functions supported in real mode only. All of the
 	graphics functions also should be listed.
+
+{% endraw %}

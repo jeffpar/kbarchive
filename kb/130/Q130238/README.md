@@ -6,6 +6,8 @@ permalink: /kb/130/Q130238/
 
 ## Q130238: PRB: Macro Substitution Won't Work in Expression Builder
 
+{% raw %}
+
 	Article: Q130238
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/130/Q130238/
 	
 	=============================================================================
 	
+
+{% endraw %}

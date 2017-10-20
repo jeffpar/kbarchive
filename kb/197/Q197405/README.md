@@ -6,6 +6,8 @@ permalink: /kb/197/Q197405/
 
 ## Q197405: XADM: Cannot Filter Junk E-mail on Blank &quot;From&quot; Field
 
+{% raw %}
+
 	Article: Q197405
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -59,3 +61,5 @@ permalink: /kb/197/Q197405/
 	
 	=============================================================================
 	
+
+{% endraw %}

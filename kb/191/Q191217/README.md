@@ -6,6 +6,8 @@ permalink: /kb/191/Q191217/
 
 ## Q191217: XWEB: VBScript Runtime Error 800a03e3 Using Outlook Web Access
 
+{% raw %}
+
 	Article: Q191217
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -74,3 +76,5 @@ permalink: /kb/191/Q191217/
 	
 	=============================================================================
 	
+
+{% endraw %}

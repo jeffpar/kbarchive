@@ -6,6 +6,8 @@ permalink: /kb/114/Q114448/
 
 ## Q114448: Windows 3.11 Directory Listing for Disk 1 (3.5 Inch 1.44 MB)
 
+{% raw %}
+
 	Article: Q114448
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -67,3 +69,5 @@ permalink: /kb/114/Q114448/
 	
 	=============================================================================
 	
+
+{% endraw %}

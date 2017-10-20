@@ -6,6 +6,8 @@ permalink: /kb/177/Q177947/
 
 ## Q177947: PRB: &quot;Syntax Error in FROM Clause&quot; Using Text ODBC Driver
 
+{% raw %}
+
 	Article: Q177947
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.5; winnt:5.0,6.0
@@ -163,3 +165,5 @@ permalink: /kb/177/Q177947/
 	
 	=============================================================================
 	
+
+{% endraw %}

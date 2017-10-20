@@ -6,6 +6,8 @@ permalink: /kb/246/Q246314/
 
 ## Q246314: Configure Scripts and Porting: Configuration Scripts in Interix
 
+{% raw %}
+
 	Article: Q246314
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -66,3 +68,5 @@ permalink: /kb/246/Q246314/
 	
 	=============================================================================
 	
+
+{% endraw %}

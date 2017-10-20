@@ -6,6 +6,8 @@ permalink: /kb/130/Q130871/
 
 ## Q130871: Lucida Math Type 1 Fonts Do Not Print Correctly
 
+{% raw %}
+
 	Article: Q130871
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130871/
 	
 	=============================================================================
 	
+
+{% endraw %}

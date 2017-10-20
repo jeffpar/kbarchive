@@ -6,6 +6,8 @@ permalink: /kb/221/Q221743/
 
 ## Q221743: FIX: NVL() Releases Object Ref and Causes Fatal Error C0000005
 
+{% raw %}
+
 	Article: Q221743
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -104,3 +106,5 @@ permalink: /kb/221/Q221743/
 	
 	=============================================================================
 	
+
+{% endraw %}

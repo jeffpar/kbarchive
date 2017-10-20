@@ -6,6 +6,8 @@ permalink: /kb/157/Q157949/
 
 ## Q157949: Slow Keyboard Response on Some Windows 95-Based Computers
 
+{% raw %}
+
 	Article: Q157949
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/157/Q157949/
 	
 	=============================================================================
 	
+
+{% endraw %}

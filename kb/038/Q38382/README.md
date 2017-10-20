@@ -6,6 +6,8 @@ permalink: /kb/038/Q38382/
 
 ## Q38382: CodeView Instruction Pointer Miscounts Very Long Lines
 
+{% raw %}
+
 	Article: Q38382
 	Product(s): See article
 	Version(s): 2.20
@@ -29,3 +31,5 @@ permalink: /kb/038/Q38382/
 	Microsoft has confirmed this to be a problem in CodeView Version 2.20.
 	We are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

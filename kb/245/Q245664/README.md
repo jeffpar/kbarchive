@@ -6,6 +6,8 @@ permalink: /kb/245/Q245664/
 
 ## Q245664: XADM: Exchange Backup Doesn't Work from Terminal Server Client
 
+{% raw %}
+
 	Article: Q245664
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/245/Q245664/
 	
 	=============================================================================
 	
+
+{% endraw %}

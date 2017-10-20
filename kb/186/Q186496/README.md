@@ -6,6 +6,8 @@ permalink: /kb/186/Q186496/
 
 ## Q186496: Securing a Common Folder
 
+{% raw %}
+
 	Article: Q186496
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/186/Q186496/
 	
 	=============================================================================
 	
+
+{% endraw %}

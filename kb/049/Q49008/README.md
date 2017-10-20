@@ -6,6 +6,8 @@ permalink: /kb/049/Q49008/
 
 ## Q49008: /NOI Switch May Cause L2022 and L2029 in PM Programs
 
+{% raw %}
+
 	Article: Q49008
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -50,3 +52,5 @@ permalink: /kb/049/Q49008/
 	so the linker considers it an "unresolved external."
 	
 	Removing the /NOI switch from your link line corrects both errors.
+
+{% endraw %}

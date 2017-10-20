@@ -6,6 +6,8 @@ permalink: /kb/135/Q135194/
 
 ## Q135194: MS Cinemania 1995 About Dialog Box Does Not Appear
 
+{% raw %}
+
 	Article: Q135194
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135194/
 	
 	=============================================================================
 	
+
+{% endraw %}

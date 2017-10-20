@@ -6,6 +6,8 @@ permalink: /kb/151/Q151711/
 
 ## Q151711: Error Msg: &quot;Unable to change password&quot; 0xC00000E5
 
+{% raw %}
+
 	Article: Q151711
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -48,3 +50,5 @@ permalink: /kb/151/Q151711/
 	
 	=============================================================================
 	
+
+{% endraw %}

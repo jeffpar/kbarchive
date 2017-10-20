@@ -6,6 +6,8 @@ permalink: /kb/311/Q311837/
 
 ## Q311837: End of Print Job Handling Incorrect If Print Filter DLL Used
 
+{% raw %}
+
 	Article: Q311837
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -125,3 +127,5 @@ permalink: /kb/311/Q311837/
 	
 	=============================================================================
 	
+
+{% endraw %}

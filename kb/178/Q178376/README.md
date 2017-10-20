@@ -6,6 +6,8 @@ permalink: /kb/178/Q178376/
 
 ## Q178376: XCON: Local Address Space Replicated to Other Sites
 
+{% raw %}
+
 	Article: Q178376
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/178/Q178376/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216377/
 
 ## Q216377: XWEB: Exchange Server is Down When Using Address Book Views
 
+{% raw %}
+
 	Article: Q216377
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/216/Q216377/
 	
 	=============================================================================
 	
+
+{% endraw %}

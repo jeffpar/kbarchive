@@ -6,6 +6,8 @@ permalink: /kb/173/Q173595/
 
 ## Q173595: XCLN: Netscape Client Returns Confusing Error Message
 
+{% raw %}
+
 	Article: Q173595
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -57,3 +59,5 @@ permalink: /kb/173/Q173595/
 	
 	=============================================================================
 	
+
+{% endraw %}

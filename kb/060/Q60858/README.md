@@ -6,6 +6,8 @@ permalink: /kb/060/Q60858/
 
 ## Q60858: Floating-Point Bench Marks: QB vs BC6 vs PDS, /FPi vs /FPa
 
+{% raw %}
+
 	Article: Q60858
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -130,3 +132,5 @@ permalink: /kb/060/Q60858/
 	   NEXT
 	   PRINT "J#=COS(I#): "; TIMER - orig
 	   END
+
+{% endraw %}

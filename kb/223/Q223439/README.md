@@ -6,6 +6,8 @@ permalink: /kb/223/Q223439/
 
 ## Q223439: HOWTO: Using Class Wrappers to Access Windows Common Controls in
 
+{% raw %}
+
 	Article: Q223439
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/223/Q223439/
 	
 	=============================================================================
 	
+
+{% endraw %}

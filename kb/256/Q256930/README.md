@@ -6,6 +6,8 @@ permalink: /kb/256/Q256930/
 
 ## Q256930: XCLN: Save as Web Page Feature Requires Web Publishing Wizard
 
+{% raw %}
+
 	Article: Q256930
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/256/Q256930/
 	
 	=============================================================================
 	
+
+{% endraw %}

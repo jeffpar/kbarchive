@@ -6,6 +6,8 @@ permalink: /kb/127/Q127027/
 
 ## Q127027: Windows NT Printing Err Msg: The Requested Resource Is In Use
 
+{% raw %}
+
 	Article: Q127027
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -78,3 +80,5 @@ permalink: /kb/127/Q127027/
 	
 	=============================================================================
 	
+
+{% endraw %}

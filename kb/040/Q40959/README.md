@@ -6,6 +6,8 @@ permalink: /kb/040/Q40959/
 
 ## Q40959: FastBlt.exe Implements Smooth Movement of a Bitmap
 
+{% raw %}
+
 	Article: Q40959
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
@@ -59,3 +61,5 @@ permalink: /kb/040/Q40959/
 	
 	=============================================================================
 	
+
+{% endraw %}

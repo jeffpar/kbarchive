@@ -6,6 +6,8 @@ permalink: /kb/181/Q181636/
 
 ## Q181636: XFOR: Rule For Forwarding To Internet Address Does Not Work
 
+{% raw %}
+
 	Article: Q181636
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0,8.01,8.02,8.03; winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/181/Q181636/
 	
 	=============================================================================
 	
+
+{% endraw %}

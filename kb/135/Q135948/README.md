@@ -6,6 +6,8 @@ permalink: /kb/135/Q135948/
 
 ## Q135948: System Agent Reports Error After Running ScanDisk
 
+{% raw %}
+
 	Article: Q135948
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/135/Q135948/
 	
 	=============================================================================
 	
+
+{% endraw %}

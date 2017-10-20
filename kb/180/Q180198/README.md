@@ -6,6 +6,8 @@ permalink: /kb/180/Q180198/
 
 ## Q180198: BUG: RDO Doesn't Work with Schema and Oracle Stored Procedures
 
+{% raw %}
+
 	Article: Q180198
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -87,3 +89,5 @@ permalink: /kb/180/Q180198/
 	
 	=============================================================================
 	
+
+{% endraw %}

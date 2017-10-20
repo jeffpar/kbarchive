@@ -6,6 +6,8 @@ permalink: /kb/196/Q196421/
 
 ## Q196421: XADM: SMTP Proxies are Set to &quot;@site.org.com&quot; by Default
 
+{% raw %}
+
 	Article: Q196421
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -48,3 +50,5 @@ permalink: /kb/196/Q196421/
 	
 	=============================================================================
 	
+
+{% endraw %}

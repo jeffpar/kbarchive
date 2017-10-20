@@ -6,6 +6,8 @@ permalink: /kb/185/Q185516/
 
 ## Q185516: WD97: Crash IPF Reading an RTF File Converted from Mac Word 5.1
 
+{% raw %}
+
 	Article: Q185516
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/185/Q185516/
 	
 	=============================================================================
 	
+
+{% endraw %}

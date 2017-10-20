@@ -6,6 +6,8 @@ permalink: /kb/165/Q165532/
 
 ## Q165532: WD97: How to Upgrade from Works to Word 97
 
+{% raw %}
+
 	Article: Q165532
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:2.0,2.0a,3.0,3.0a,3.0b,4.0,4.0a,97
@@ -75,3 +77,5 @@ permalink: /kb/165/Q165532/
 	
 	=============================================================================
 	
+
+{% endraw %}

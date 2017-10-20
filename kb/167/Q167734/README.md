@@ -6,6 +6,8 @@ permalink: /kb/167/Q167734/
 
 ## Q167734: FILE: MFC Browser Library (MFC.BSC) in VC 5.0 Is Incomplete
 
+{% raw %}
+
 	Article: Q167734
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -131,3 +133,5 @@ permalink: /kb/167/Q167734/
 	
 	=============================================================================
 	
+
+{% endraw %}

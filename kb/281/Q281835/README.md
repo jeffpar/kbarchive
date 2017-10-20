@@ -6,6 +6,8 @@ permalink: /kb/281/Q281835/
 
 ## Q281835: XFOR: Setting &quot;Message Text Word Wrap&quot; to &quot;Never&quot; Does Not Work
 
+{% raw %}
+
 	Article: Q281835
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -59,3 +61,5 @@ permalink: /kb/281/Q281835/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315124/
 
 ## Q315124: SAMPLE: Use the Winsock ActiveX Control with Visual FoxPro
 
+{% raw %}
+
 	Article: Q315124
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,7.0
@@ -110,3 +112,5 @@ permalink: /kb/315/Q315124/
 	
 	=============================================================================
 	
+
+{% endraw %}

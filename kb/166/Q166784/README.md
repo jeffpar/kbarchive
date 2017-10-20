@@ -6,6 +6,8 @@ permalink: /kb/166/Q166784/
 
 ## Q166784: WD97: Error Message: &quot;Can't Exit Design Mode...&quot; After Adding Co
 
+{% raw %}
+
 	Article: Q166784
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166784/
 	
 	=============================================================================
 	
+
+{% endraw %}

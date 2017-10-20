@@ -6,6 +6,8 @@ permalink: /kb/139/Q139338/
 
 ## Q139338: WINS Counters Disappear from Performance Monitor
 
+{% raw %}
+
 	Article: Q139338
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -61,3 +63,5 @@ permalink: /kb/139/Q139338/
 	
 	=============================================================================
 	
+
+{% endraw %}

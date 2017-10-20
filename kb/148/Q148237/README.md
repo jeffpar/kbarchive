@@ -6,6 +6,8 @@ permalink: /kb/148/Q148237/
 
 ## Q148237: IDC: Error Performing Query Connecting to SQL Server
 
+{% raw %}
+
 	Article: Q148237
 	Product(s): Internet Information Server
 	Version(s): WINNT: 1.0,2.0,3.0,4.0
@@ -108,3 +110,5 @@ permalink: /kb/148/Q148237/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94410/
 
 ## Q94410: FFAPI: Basic Address Formats for Gateways
 
+{% raw %}
+
 	Article: Q94410
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0
@@ -234,3 +236,5 @@ permalink: /kb/094/Q94410/
 	
 	=============================================================================
 	
+
+{% endraw %}

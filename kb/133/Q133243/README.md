@@ -6,6 +6,8 @@ permalink: /kb/133/Q133243/
 
 ## Q133243: How to Determine Which Key the User Pressed in a Grid
 
+{% raw %}
+
 	Article: Q133243
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/133/Q133243/
 	
 	=============================================================================
 	
+
+{% endraw %}

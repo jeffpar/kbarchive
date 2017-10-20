@@ -6,6 +6,8 @@ permalink: /kb/178/Q178252/
 
 ## Q178252: Control Unit Image Number Not Available to ESCON Link Service
 
+{% raw %}
+
 	Article: Q178252
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -121,3 +123,5 @@ permalink: /kb/178/Q178252/
 	
 	=============================================================================
 	
+
+{% endraw %}

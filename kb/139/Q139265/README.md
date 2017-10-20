@@ -6,6 +6,8 @@ permalink: /kb/139/Q139265/
 
 ## Q139265: Times Matching on DHCP Clients and Servers
 
+{% raw %}
+
 	Article: Q139265
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -75,3 +77,5 @@ permalink: /kb/139/Q139265/
 	
 	=============================================================================
 	
+
+{% endraw %}

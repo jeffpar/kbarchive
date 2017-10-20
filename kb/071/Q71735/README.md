@@ -6,6 +6,8 @@ permalink: /kb/071/Q71735/
 
 ## Q71735: Aldus PageMaker version 4.0 Requires Path Statement
 
+{% raw %}
+
 	Article: Q71735
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/071/Q71735/
 	
 	=============================================================================
 	
+
+{% endraw %}

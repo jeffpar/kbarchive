@@ -6,6 +6,8 @@ permalink: /kb/142/Q142886/
 
 ## Q142886: FIX: &quot;Record is in use by another&quot; Error Inside of Grid
 
+{% raw %}
+
 	Article: Q142886
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -74,3 +76,5 @@ permalink: /kb/142/Q142886/
 	
 	=============================================================================
 	
+
+{% endraw %}

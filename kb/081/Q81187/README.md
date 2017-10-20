@@ -6,6 +6,8 @@ permalink: /kb/081/Q81187/
 
 ## Q81187: BUG: Gauge Custom Control: Valid NeedleWidth Range 1 to 32767
 
+{% raw %}
+
 	Article: Q81187
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,3.0
@@ -77,3 +79,5 @@ permalink: /kb/081/Q81187/
 	
 	=============================================================================
 	
+
+{% endraw %}

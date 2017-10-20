@@ -6,6 +6,8 @@ permalink: /kb/242/Q242502/
 
 ## Q242502: Domain Logon List Is Not Properly Updated
 
+{% raw %}
+
 	Article: Q242502
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/242/Q242502/
 	
 	=============================================================================
 	
+
+{% endraw %}

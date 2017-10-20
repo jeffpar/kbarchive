@@ -6,6 +6,8 @@ permalink: /kb/132/Q132913/
 
 ## Q132913: How to Use EXTRACT.EXE to Copy Files from DMF Disks
 
+{% raw %}
+
 	Article: Q132913
 	Product(s): Microsoft Product Support Information
 	Version(s): WINDOWS:5.0c,6.0c,7.0
@@ -297,3 +299,5 @@ permalink: /kb/132/Q132913/
 	
 	=============================================================================
 	
+
+{% endraw %}

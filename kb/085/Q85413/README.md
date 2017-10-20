@@ -6,6 +6,8 @@ permalink: /kb/085/Q85413/
 
 ## Q85413: MS-DOS 5.0a Upgrade README.TXT: Hardware Compatibility
 
+{% raw %}
+
 	Article: Q85413
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0a
@@ -198,3 +200,5 @@ permalink: /kb/085/Q85413/
 	
 	=============================================================================
 	
+
+{% endraw %}

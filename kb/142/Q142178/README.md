@@ -6,6 +6,8 @@ permalink: /kb/142/Q142178/
 
 ## Q142178: How to Use Maple.adm with System Policy Editor
 
+{% raw %}
+
 	Article: Q142178
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -98,3 +100,5 @@ permalink: /kb/142/Q142178/
 	
 	=============================================================================
 	
+
+{% endraw %}

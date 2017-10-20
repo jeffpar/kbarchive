@@ -6,6 +6,8 @@ permalink: /kb/178/Q178481/
 
 ## Q178481: WD97: Errors Accessing the Address Book Icon
 
+{% raw %}
+
 	Article: Q178481
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -182,3 +184,5 @@ permalink: /kb/178/Q178481/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122701/
 
 ## Q122701: RAS Clients Select the Beginning Address in Static Pool
 
+{% raw %}
+
 	Article: Q122701
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -62,3 +64,5 @@ permalink: /kb/122/Q122701/
 	
 	=============================================================================
 	
+
+{% endraw %}

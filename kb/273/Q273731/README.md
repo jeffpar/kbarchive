@@ -6,6 +6,8 @@ permalink: /kb/273/Q273731/
 
 ## Q273731: Flight Simulator 2000 Err Msg: Dlgalert.bmp Cannot Be Loaded
 
+{% raw %}
+
 	Article: Q273731
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/273/Q273731/
 	
 	=============================================================================
 	
+
+{% endraw %}

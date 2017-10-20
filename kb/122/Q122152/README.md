@@ -6,6 +6,8 @@ permalink: /kb/122/Q122152/
 
 ## Q122152: PC MTA: Read Error During Data Exchange
 
+{% raw %}
+
 	Article: Q122152
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -80,3 +82,5 @@ permalink: /kb/122/Q122152/
 	
 	=============================================================================
 	
+
+{% endraw %}

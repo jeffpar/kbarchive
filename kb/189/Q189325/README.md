@@ -6,6 +6,8 @@ permalink: /kb/189/Q189325/
 
 ## Q189325: XADM: IMAP4 Client/Server Commands
 
+{% raw %}
+
 	Article: Q189325
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -680,3 +682,5 @@ permalink: /kb/189/Q189325/
 	
 	=============================================================================
 	
+
+{% endraw %}

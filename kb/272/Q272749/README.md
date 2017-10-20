@@ -6,6 +6,8 @@ permalink: /kb/272/Q272749/
 
 ## Q272749: WD97: Macros Enabled Using Access Database File in Word
 
+{% raw %}
+
 	Article: Q272749
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/272/Q272749/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/026/Q26768/
 
 ## Q26768: Colored Text in SCREEN 1 in QB Versions 2.x and 3.00, Not 4.00
 
+{% raw %}
+
 	Article: Q26768
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -54,3 +56,5 @@ permalink: /kb/026/Q26768/
 	   PRINT "HELLO in light magenta"
 	   POKE &H53, 1
 	   PRINT "HELLO in simultaneous light blue"
+
+{% endraw %}

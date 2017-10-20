@@ -6,6 +6,8 @@ permalink: /kb/283/Q283169/
 
 ## Q283169: Crimson Skies Error Message: Unable to Initialize Video
 
+{% raw %}
+
 	Article: Q283169
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -68,3 +70,5 @@ permalink: /kb/283/Q283169/
 	
 	=============================================================================
 	
+
+{% endraw %}

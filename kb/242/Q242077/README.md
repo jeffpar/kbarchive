@@ -6,6 +6,8 @@ permalink: /kb/242/Q242077/
 
 ## Q242077: SP4 on Windows NT 4.0 Enterprise Edition Records Event ID 43
 
+{% raw %}
+
 	Article: Q242077
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -74,3 +76,5 @@ permalink: /kb/242/Q242077/
 	
 	=============================================================================
 	
+
+{% endraw %}

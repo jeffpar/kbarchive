@@ -6,6 +6,8 @@ permalink: /kb/199/Q199705/
 
 ## Q199705: XFOR: How to Enable Detailed Logging for the Notes Excalcon Task
 
+{% raw %}
+
 	Article: Q199705
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/199/Q199705/
 	
 	=============================================================================
 	
+
+{% endraw %}

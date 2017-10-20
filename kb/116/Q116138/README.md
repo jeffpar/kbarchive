@@ -6,6 +6,8 @@ permalink: /kb/116/Q116138/
 
 ## Q116138: FIX: Visual Workbench Toolbar Buttons Don't Use Double-Click
 
+{% raw %}
+
 	Article: Q116138
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/116/Q116138/
 	
 	=============================================================================
 	
+
+{% endraw %}

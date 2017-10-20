@@ -6,6 +6,8 @@ permalink: /kb/256/Q256888/
 
 ## Q256888: Internet Information Service Returns Source of ASP File
 
+{% raw %}
+
 	Article: Q256888
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -90,3 +92,5 @@ permalink: /kb/256/Q256888/
 	
 	=============================================================================
 	
+
+{% endraw %}

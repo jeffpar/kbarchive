@@ -6,6 +6,8 @@ permalink: /kb/118/Q118628/
 
 ## Q118628: Windows 95 Does Not Recognize Your Computer as Plug and Play
 
+{% raw %}
+
 	Article: Q118628
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/118/Q118628/
 	
 	=============================================================================
 	
+
+{% endraw %}

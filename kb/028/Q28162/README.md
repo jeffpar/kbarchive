@@ -6,6 +6,8 @@ permalink: /kb/028/Q28162/
 
 ## Q28162: Missing END IF in FOR NEXT Gives Different Errors in QB and BC
 
+{% raw %}
+
 	Article: Q28162
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00   | 6.00 6.00b 7.00
@@ -28,3 +30,5 @@ permalink: /kb/028/Q28162/
 	
 	Both error messages are correct, depending on how you view the program.
 	This feature will not be changed.
+
+{% endraw %}

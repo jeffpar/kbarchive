@@ -6,6 +6,8 @@ permalink: /kb/139/Q139829/
 
 ## Q139829: 500 Nations: Icon Missing in Program Manager After Reinstall
 
+{% raw %}
+
 	Article: Q139829
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -82,3 +84,5 @@ permalink: /kb/139/Q139829/
 	
 	=============================================================================
 	
+
+{% endraw %}

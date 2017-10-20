@@ -6,6 +6,8 @@ permalink: /kb/173/Q173559/
 
 ## Q173559: XADM: Active User Count doesn't Contain Anonymous User Count
 
+{% raw %}
+
 	Article: Q173559
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/173/Q173559/
 	
 	=============================================================================
 	
+
+{% endraw %}

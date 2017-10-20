@@ -6,6 +6,8 @@ permalink: /kb/234/Q234593/
 
 ## Q234593: WinNT 4.0 Tcpip.sys Hotfixes Dated 4/28/99 to 5/28/99 Replaced
 
+{% raw %}
+
 	Article: Q234593
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -108,3 +110,5 @@ permalink: /kb/234/Q234593/
 	
 	=============================================================================
 	
+
+{% endraw %}

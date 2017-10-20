@@ -6,6 +6,8 @@ permalink: /kb/193/Q193472/
 
 ## Q193472: FIX: Exception Error Exiting Top-Level Form App in Windows 95
 
+{% raw %}
+
 	Article: Q193472
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -178,3 +180,5 @@ permalink: /kb/193/Q193472/
 	
 	=============================================================================
 	
+
+{% endraw %}

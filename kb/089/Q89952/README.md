@@ -6,6 +6,8 @@ permalink: /kb/089/Q89952/
 
 ## Q89952: Skip Button Is Disabled in Windows Sound System
 
+{% raw %}
+
 	Article: Q89952
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/089/Q89952/
 	
 	=============================================================================
 	
+
+{% endraw %}

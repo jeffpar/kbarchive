@@ -6,6 +6,8 @@ permalink: /kb/193/Q193573/
 
 ## Q193573: HOWTO: Determine the Version of a DLL
 
+{% raw %}
+
 	Article: Q193573
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -173,3 +175,5 @@ permalink: /kb/193/Q193573/
 	
 	=============================================================================
 	
+
+{% endraw %}

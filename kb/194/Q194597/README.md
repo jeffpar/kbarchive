@@ -6,6 +6,8 @@ permalink: /kb/194/Q194597/
 
 ## Q194597: WD97: IF Fields Not Visible in Mail Merge Documents
 
+{% raw %}
+
 	Article: Q194597
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/194/Q194597/
 	
 	=============================================================================
 	
+
+{% endraw %}

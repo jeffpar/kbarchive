@@ -6,6 +6,8 @@ permalink: /kb/094/Q94229/
 
 ## Q94229: HPFS.386 Returns Wrong Error for File Creation
 
+{% raw %}
+
 	Article: Q94229
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/094/Q94229/
 	
 	=============================================================================
 	
+
+{% endraw %}

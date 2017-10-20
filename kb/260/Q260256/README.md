@@ -6,6 +6,8 @@ permalink: /kb/260/Q260256/
 
 ## Q260256: Java Plug-in Leaves Browser Processes and NTVDMs Running
 
+{% raw %}
+
 	Article: Q260256
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6
@@ -65,3 +67,5 @@ permalink: /kb/260/Q260256/
 	
 	=============================================================================
 	
+
+{% endraw %}

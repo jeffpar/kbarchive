@@ -6,6 +6,8 @@ permalink: /kb/187/Q187448/
 
 ## Q187448: Upgrading Does Not Copy Riched20.dll Correctly
 
+{% raw %}
+
 	Article: Q187448
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/187/Q187448/
 	
 	=============================================================================
 	
+
+{% endraw %}

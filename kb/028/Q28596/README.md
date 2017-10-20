@@ -6,6 +6,8 @@ permalink: /kb/028/Q28596/
 
 ## Q28596: DOCERR: Correction for Shifting and Rotating Bits
 
+{% raw %}
+
 	Article: Q28596
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -43,3 +45,5 @@ permalink: /kb/028/Q28596/
 	
 	=============================================================================
 	
+
+{% endraw %}

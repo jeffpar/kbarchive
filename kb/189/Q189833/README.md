@@ -6,6 +6,8 @@ permalink: /kb/189/Q189833/
 
 ## Q189833: BUG: Visual Basic Does Not Create an EXE File After Compiling
 
+{% raw %}
+
 	Article: Q189833
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/189/Q189833/
 	
 	=============================================================================
 	
+
+{% endraw %}

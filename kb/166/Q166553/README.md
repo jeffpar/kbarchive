@@ -6,6 +6,8 @@ permalink: /kb/166/Q166553/
 
 ## Q166553: XCON: Encapsulated Message Not Delivered Over X.400 Connector
 
+{% raw %}
+
 	Article: Q166553
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -51,3 +53,5 @@ permalink: /kb/166/Q166553/
 	
 	=============================================================================
 	
+
+{% endraw %}

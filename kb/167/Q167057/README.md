@@ -6,6 +6,8 @@ permalink: /kb/167/Q167057/
 
 ## Q167057: PRB: Templates Are Not Available After Installing Visual Basic
 
+{% raw %}
+
 	Article: Q167057
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -64,3 +66,5 @@ permalink: /kb/167/Q167057/
 	
 	=============================================================================
 	
+
+{% endraw %}

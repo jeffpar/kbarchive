@@ -6,6 +6,8 @@ permalink: /kb/085/Q85402/
 
 ## Q85402: MS-DOS 5.0a Upgrade PACKING.LST (5.25-Inch, 360K Disk Set)
 
+{% raw %}
+
 	Article: Q85402
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0a
@@ -289,3 +291,5 @@ permalink: /kb/085/Q85402/
 	
 	=============================================================================
 	
+
+{% endraw %}

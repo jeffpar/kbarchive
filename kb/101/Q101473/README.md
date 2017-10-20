@@ -6,6 +6,8 @@ permalink: /kb/101/Q101473/
 
 ## Q101473: Replication Overview in the Windows NT Operating System
 
+{% raw %}
+
 	Article: Q101473
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -92,3 +94,5 @@ permalink: /kb/101/Q101473/
 	
 	=============================================================================
 	
+
+{% endraw %}

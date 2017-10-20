@@ -6,6 +6,8 @@ permalink: /kb/277/Q277900/
 
 ## Q277900: PRB: Changes to Key Field in Parent Table Not Cascaded to Child
 
+{% raw %}
+
 	Article: Q277900
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -136,3 +138,5 @@ permalink: /kb/277/Q277900/
 	
 	=============================================================================
 	
+
+{% endraw %}

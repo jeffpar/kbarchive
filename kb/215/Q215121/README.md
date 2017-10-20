@@ -6,6 +6,8 @@ permalink: /kb/215/Q215121/
 
 ## Q215121: SMS: Japanese Novell NetWare/IntraNetWare 4.11 Changes the Time
 
+{% raw %}
+
 	Article: Q215121
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -55,3 +57,5 @@ permalink: /kb/215/Q215121/
 	
 	=============================================================================
 	
+
+{% endraw %}

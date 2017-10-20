@@ -6,6 +6,8 @@ permalink: /kb/280/Q280051/
 
 ## Q280051: Foreign User Exclusion Template Has a Duplicate Message Number
 
+{% raw %}
+
 	Article: Q280051
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -83,3 +85,5 @@ permalink: /kb/280/Q280051/
 	
 	=============================================================================
 	
+
+{% endraw %}

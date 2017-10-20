@@ -6,6 +6,8 @@ permalink: /kb/113/Q113503/
 
 ## Q113503: Overview of Disk Volume Sets in Windows NT
 
+{% raw %}
+
 	Article: Q113503
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51,4.0
@@ -118,3 +120,5 @@ permalink: /kb/113/Q113503/
 	
 	=============================================================================
 	
+
+{% endraw %}

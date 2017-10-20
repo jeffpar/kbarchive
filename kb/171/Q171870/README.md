@@ -6,6 +6,8 @@ permalink: /kb/171/Q171870/
 
 ## Q171870: FIX: SQL_CUR_USE_IF_NEEDED Does Not Work with 2.0 Drivers
 
+{% raw %}
+
 	Article: Q171870
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/171/Q171870/
 	
 	=============================================================================
 	
+
+{% endraw %}

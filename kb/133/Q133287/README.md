@@ -6,6 +6,8 @@ permalink: /kb/133/Q133287/
 
 ## Q133287: How to Create Hot Spots on Top of a Picture in a Form
 
+{% raw %}
+
 	Article: Q133287
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -148,3 +150,5 @@ permalink: /kb/133/Q133287/
 	
 	=============================================================================
 	
+
+{% endraw %}

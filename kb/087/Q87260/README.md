@@ -6,6 +6,8 @@ permalink: /kb/087/Q87260/
 
 ## Q87260: Mac Tool: Rebuild Data File on Floppy Disk
 
+{% raw %}
+
 	Article: Q87260
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -39,3 +41,5 @@ permalink: /kb/087/Q87260/
 	
 	=============================================================================
 	
+
+{% endraw %}

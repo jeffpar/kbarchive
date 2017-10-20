@@ -6,6 +6,8 @@ permalink: /kb/216/Q216115/
 
 ## Q216115: HOWTO: Set Up Multiple Databases in Visual SourceSafe 6.0
 
+{% raw %}
+
 	Article: Q216115
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -62,3 +64,5 @@ permalink: /kb/216/Q216115/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149267/
 
 ## Q149267: BUG: Container Property of DBGrid Does Not Behave Correctly
 
+{% raw %}
+
 	Article: Q149267
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -108,3 +110,5 @@ permalink: /kb/149/Q149267/
 	
 	=============================================================================
 	
+
+{% endraw %}

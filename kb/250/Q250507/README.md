@@ -6,6 +6,8 @@ permalink: /kb/250/Q250507/
 
 ## Q250507: XIMS: NDRs Generated with &lt;&gt; (Blank or Null) Reverse
 
+{% raw %}
+
 	Article: Q250507
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -73,3 +75,5 @@ permalink: /kb/250/Q250507/
 	
 	=============================================================================
 	
+
+{% endraw %}

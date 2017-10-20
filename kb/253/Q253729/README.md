@@ -6,6 +6,8 @@ permalink: /kb/253/Q253729/
 
 ## Q253729: Stopping Persistent Connection Causes It to Become Unavailable
 
+{% raw %}
+
 	Article: Q253729
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/253/Q253729/
 	
 	=============================================================================
 	
+
+{% endraw %}

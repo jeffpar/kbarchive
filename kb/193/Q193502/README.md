@@ -6,6 +6,8 @@ permalink: /kb/193/Q193502/
 
 ## Q193502: PRB: Cannot Quit VFP End Task Causes Application Error
 
+{% raw %}
+
 	Article: Q193502
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -143,3 +145,5 @@ permalink: /kb/193/Q193502/
 	
 	=============================================================================
 	
+
+{% endraw %}

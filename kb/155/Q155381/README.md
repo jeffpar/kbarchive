@@ -6,6 +6,8 @@ permalink: /kb/155/Q155381/
 
 ## Q155381: Error 53 When Connecting from NT to IBM LAN Server
 
+{% raw %}
+
 	Article: Q155381
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -43,3 +45,5 @@ permalink: /kb/155/Q155381/
 	
 	=============================================================================
 	
+
+{% endraw %}

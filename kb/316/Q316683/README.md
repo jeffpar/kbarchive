@@ -6,6 +6,8 @@ permalink: /kb/316/Q316683/
 
 ## Q316683: Cache Expiration Does Not Free All Associated Memory
 
+{% raw %}
+
 	Article: Q316683
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -91,3 +93,5 @@ permalink: /kb/316/Q316683/
 	
 	=============================================================================
 	
+
+{% endraw %}

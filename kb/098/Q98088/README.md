@@ -6,6 +6,8 @@ permalink: /kb/098/Q98088/
 
 ## Q98088: PC WRmt: 3.2 Mail Remote for Windows Disk 2 &#91;5.25&#93; - U.S.
 
+{% raw %}
+
 	Article: Q98088
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -70,3 +72,5 @@ permalink: /kb/098/Q98088/
 	
 	=============================================================================
 	
+
+{% endraw %}

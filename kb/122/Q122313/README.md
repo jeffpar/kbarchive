@@ -6,6 +6,8 @@ permalink: /kb/122/Q122313/
 
 ## Q122313: Err Msg: Error 7361: IPX or NetBIOS Must Be Running...
 
+{% raw %}
+
 	Article: Q122313
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -241,3 +243,5 @@ permalink: /kb/122/Q122313/
 	
 	=============================================================================
 	
+
+{% endraw %}

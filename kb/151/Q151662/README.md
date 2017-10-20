@@ -6,6 +6,8 @@ permalink: /kb/151/Q151662/
 
 ## Q151662: HOWTO: How To Disable Tabs in CPropertySheet
 
+{% raw %}
+
 	Article: Q151662
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -158,3 +160,5 @@ permalink: /kb/151/Q151662/
 	
 	=============================================================================
 	
+
+{% endraw %}

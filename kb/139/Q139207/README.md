@@ -6,6 +6,8 @@ permalink: /kb/139/Q139207/
 
 ## Q139207: S3 Driver Doesn't Correctly Support 72Hz on Some IBM PS/2 Models
 
+{% raw %}
+
 	Article: Q139207
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139207/
 	
 	=============================================================================
 	
+
+{% endraw %}

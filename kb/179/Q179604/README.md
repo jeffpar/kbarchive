@@ -6,6 +6,8 @@ permalink: /kb/179/Q179604/
 
 ## Q179604: How to Manually Install MSN Components from the MSN 2.51 CD-ROM
 
+{% raw %}
+
 	Article: Q179604
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51,4.0
@@ -103,3 +105,5 @@ permalink: /kb/179/Q179604/
 	
 	=============================================================================
 	
+
+{% endraw %}

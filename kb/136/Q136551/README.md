@@ -6,6 +6,8 @@ permalink: /kb/136/Q136551/
 
 ## Q136551: Accessibility Options Require Program Compatibility
 
+{% raw %}
+
 	Article: Q136551
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136551/
 	
 	=============================================================================
 	
+
+{% endraw %}

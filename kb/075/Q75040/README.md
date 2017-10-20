@@ -6,6 +6,8 @@ permalink: /kb/075/Q75040/
 
 ## Q75040: Flow-of-Control During Recognition
 
+{% raw %}
+
 	Article: Q75040
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -477,3 +479,5 @@ permalink: /kb/075/Q75040/
 	
 	=============================================================================
 	
+
+{% endraw %}

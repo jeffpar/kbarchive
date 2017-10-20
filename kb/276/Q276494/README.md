@@ -6,6 +6,8 @@ permalink: /kb/276/Q276494/
 
 ## Q276494: Using Python Scripts with IIS
 
+{% raw %}
+
 	Article: Q276494
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -174,3 +176,5 @@ permalink: /kb/276/Q276494/
 	
 	=============================================================================
 	
+
+{% endraw %}

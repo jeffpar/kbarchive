@@ -6,6 +6,8 @@ permalink: /kb/152/Q152399/
 
 ## Q152399: MPI: MS WINDOWS 95 STARTS HERE Corrections and Comments
 
+{% raw %}
+
 	Article: Q152399
 	Product(s): Microsoft Press
 	Version(s): 
@@ -250,3 +252,5 @@ permalink: /kb/152/Q152399/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134650/
 
 ## Q134650: HOWTO: Get Info for Troubleshooting Compiler &amp; Linker Problems
 
+{% raw %}
+
 	Article: Q134650
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:1.0,2.0,2.1,2.2,4.0,4.1,5.0;
@@ -111,3 +113,5 @@ permalink: /kb/134/Q134650/
 	
 	=============================================================================
 	
+
+{% endraw %}

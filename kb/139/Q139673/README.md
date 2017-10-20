@@ -6,6 +6,8 @@ permalink: /kb/139/Q139673/
 
 ## Q139673: SNA Manuals for SNA Version 2.11 Reference SNA 2.10
 
+{% raw %}
+
 	Article: Q139673
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -64,3 +66,5 @@ permalink: /kb/139/Q139673/
 	
 	=============================================================================
 	
+
+{% endraw %}

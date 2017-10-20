@@ -6,6 +6,8 @@ permalink: /kb/189/Q189324/
 
 ## Q189324: SNA Server Manager Shows Incorrect DLC t1 Timer Value
 
+{% raw %}
+
 	Article: Q189324
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP3,4.0,4.0 SP1
@@ -109,3 +111,5 @@ permalink: /kb/189/Q189324/
 	
 	=============================================================================
 	
+
+{% endraw %}

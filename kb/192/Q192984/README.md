@@ -6,6 +6,8 @@ permalink: /kb/192/Q192984/
 
 ## Q192984: PRB: ATL Classes Are Not Compatible With ClassWizard
 
+{% raw %}
+
 	Article: Q192984
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,4.0a,4.1,4.2,4.2b,5.0,6.0
@@ -153,3 +155,5 @@ permalink: /kb/192/Q192984/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140579/
 
 ## Q140579: FIX: Incorrect Results from SELECT with Nested SELECTs and OR
 
+{% raw %}
+
 	Article: Q140579
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -119,3 +121,5 @@ permalink: /kb/140/Q140579/
 	
 	=============================================================================
 	
+
+{% endraw %}

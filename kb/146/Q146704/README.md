@@ -6,6 +6,8 @@ permalink: /kb/146/Q146704/
 
 ## Q146704: XCLN: Fields Pasted onto a Tab Field in EFD Might Disappear
 
+{% raw %}
+
 	Article: Q146704
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/146/Q146704/
 	
 	=============================================================================
 	
+
+{% endraw %}

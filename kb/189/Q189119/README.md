@@ -6,6 +6,8 @@ permalink: /kb/189/Q189119/
 
 ## Q189119: UserEnv Returns Corrupted Profile for All Failures
 
+{% raw %}
+
 	Article: Q189119
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -187,3 +189,5 @@ permalink: /kb/189/Q189119/
 	
 	=============================================================================
 	
+
+{% endraw %}

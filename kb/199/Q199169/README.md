@@ -6,6 +6,8 @@ permalink: /kb/199/Q199169/
 
 ## Q199169: SMS: Secondary Site Has Status Messages From NetWare Components
 
+{% raw %}
+
 	Article: Q199169
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -69,3 +71,5 @@ permalink: /kb/199/Q199169/
 	
 	=============================================================================
 	
+
+{% endraw %}

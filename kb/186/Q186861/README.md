@@ -6,6 +6,8 @@ permalink: /kb/186/Q186861/
 
 ## Q186861: BUG: Install Wizard Cannot Distinguish Between MIPS CPUs
 
+{% raw %}
+
 	Article: Q186861
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/186/Q186861/
 	
 	=============================================================================
 	
+
+{% endraw %}

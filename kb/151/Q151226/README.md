@@ -6,6 +6,8 @@ permalink: /kb/151/Q151226/
 
 ## Q151226: FPNW Grace Logins Are Not Reset When Password Is Changed
 
+{% raw %}
+
 	Article: Q151226
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151226/
 	
 	=============================================================================
 	
+
+{% endraw %}

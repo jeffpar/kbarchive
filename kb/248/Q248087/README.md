@@ -6,6 +6,8 @@ permalink: /kb/248/Q248087/
 
 ## Q248087: PRB: Visual Studio Error &quot;Attempting to use invalid help file&quot;
 
+{% raw %}
+
 	Article: Q248087
 	Product(s): Microsoft Developer Network
 	Version(s): 6.0
@@ -87,3 +89,5 @@ permalink: /kb/248/Q248087/
 	
 	=============================================================================
 	
+
+{% endraw %}

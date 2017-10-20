@@ -6,6 +6,8 @@ permalink: /kb/139/Q139545/
 
 ## Q139545: STG: MFC Docfile Viewer
 
+{% raw %}
+
 	Article: Q139545
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -57,3 +59,5 @@ permalink: /kb/139/Q139545/
 	
 	=============================================================================
 	
+
+{% endraw %}

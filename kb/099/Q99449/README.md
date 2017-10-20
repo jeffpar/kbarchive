@@ -6,6 +6,8 @@ permalink: /kb/099/Q99449/
 
 ## Q99449: Err Msg: Error Reading Partition Table with Stacker Disk
 
+{% raw %}
+
 	Article: Q99449
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/099/Q99449/
 	
 	=============================================================================
 	
+
+{% endraw %}

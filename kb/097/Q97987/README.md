@@ -6,6 +6,8 @@ permalink: /kb/097/Q97987/
 
 ## Q97987: PC WRmt: Font Changes Make Some Text Unreadable
 
+{% raw %}
+
 	Article: Q97987
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -56,3 +58,5 @@ permalink: /kb/097/Q97987/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171511/
 
 ## Q171511: FIX: Controls in Frame/PictureBox Do Not Repaint in Design Mode
 
+{% raw %}
+
 	Article: Q171511
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -105,3 +107,5 @@ permalink: /kb/171/Q171511/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170055/
 
 ## Q170055: XCON: Unable to View MTA Queue
 
+{% raw %}
+
 	Article: Q170055
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/170/Q170055/
 	
 	=============================================================================
 	
+
+{% endraw %}

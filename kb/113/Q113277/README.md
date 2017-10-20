@@ -6,6 +6,8 @@ permalink: /kb/113/Q113277/
 
 ## Q113277: BUG: Popup Not Cleared in FoxPro for Windows
 
+{% raw %}
+
 	Article: Q113277
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,5.0a,6.0
@@ -93,3 +95,5 @@ permalink: /kb/113/Q113277/
 	
 	=============================================================================
 	
+
+{% endraw %}

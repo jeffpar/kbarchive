@@ -6,6 +6,8 @@ permalink: /kb/297/Q297218/
 
 ## Q297218: PRB: PDW Err &quot;Object Invoked Has Disconnected from Its Clients&quot;
 
+{% raw %}
+
 	Article: Q297218
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -93,3 +95,5 @@ permalink: /kb/297/Q297218/
 	
 	=============================================================================
 	
+
+{% endraw %}

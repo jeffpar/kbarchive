@@ -6,6 +6,8 @@ permalink: /kb/146/Q146332/
 
 ## Q146332: Display Driver May Not Reset Refresh Rate During Setup
 
+{% raw %}
+
 	Article: Q146332
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/146/Q146332/
 	
 	=============================================================================
 	
+
+{% endraw %}

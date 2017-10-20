@@ -6,6 +6,8 @@ permalink: /kb/048/Q48758/
 
 ## Q48758: Vertical Speed Indicator Overreacts in Flight Simulator
 
+{% raw %}
+
 	Article: Q48758
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/048/Q48758/
 	
 	=============================================================================
 	
+
+{% endraw %}

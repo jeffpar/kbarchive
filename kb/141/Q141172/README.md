@@ -6,6 +6,8 @@ permalink: /kb/141/Q141172/
 
 ## Q141172: PRB: Database Errors Not Shown When Closing Form
 
+{% raw %}
+
 	Article: Q141172
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -122,3 +124,5 @@ permalink: /kb/141/Q141172/
 	
 	=============================================================================
 	
+
+{% endraw %}

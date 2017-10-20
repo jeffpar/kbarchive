@@ -6,6 +6,8 @@ permalink: /kb/068/Q68694/
 
 ## Q68694: DOCERR: RTF Codes &#92;fi&lt;n&gt; and &#92;li&lt;n&gt; Use Twips Instead of Spaces
 
+{% raw %}
+
 	Article: Q68694
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.06
@@ -52,3 +54,5 @@ permalink: /kb/068/Q68694/
 	
 	=============================================================================
 	
+
+{% endraw %}

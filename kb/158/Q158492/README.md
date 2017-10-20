@@ -6,6 +6,8 @@ permalink: /kb/158/Q158492/
 
 ## Q158492: WD97: &quot;Word Cannot Obtain...&quot; Inserting Object on Banyan Vines
 
+{% raw %}
+
 	Article: Q158492
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/158/Q158492/
 	
 	=============================================================================
 	
+
+{% endraw %}

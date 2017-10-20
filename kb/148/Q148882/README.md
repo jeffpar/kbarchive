@@ -6,6 +6,8 @@ permalink: /kb/148/Q148882/
 
 ## Q148882: PRB: Visual C++ 4.0 or 4.1 Setup Fails to Copy Shared DLLs
 
+{% raw %}
+
 	Article: Q148882
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -112,3 +114,5 @@ permalink: /kb/148/Q148882/
 	
 	=============================================================================
 	
+
+{% endraw %}

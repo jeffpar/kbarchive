@@ -6,6 +6,8 @@ permalink: /kb/215/Q215115/
 
 ## Q215115: SMS: Windows 16-Bit Client Stops Responding with Remote Tools
 
+{% raw %}
+
 	Article: Q215115
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -52,3 +54,5 @@ permalink: /kb/215/Q215115/
 	
 	=============================================================================
 	
+
+{% endraw %}

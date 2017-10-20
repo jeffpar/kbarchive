@@ -6,6 +6,8 @@ permalink: /kb/190/Q190720/
 
 ## Q190720: XWEB: Keyboard Shortcuts are Not Supported in OWA Client
 
+{% raw %}
+
 	Article: Q190720
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -44,3 +46,5 @@ permalink: /kb/190/Q190720/
 	
 	=============================================================================
 	
+
+{% endraw %}

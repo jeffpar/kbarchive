@@ -6,6 +6,8 @@ permalink: /kb/128/Q128155/
 
 ## Q128155: Description of VFPSTART.PRG
 
+{% raw %}
+
 	Article: Q128155
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/128/Q128155/
 	
 	=============================================================================
 	
+
+{% endraw %}

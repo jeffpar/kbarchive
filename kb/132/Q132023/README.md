@@ -6,6 +6,8 @@ permalink: /kb/132/Q132023/
 
 ## Q132023: ADT2: Menu Items That Should Be Disabled in Run-Time Apps
 
+{% raw %}
+
 	Article: Q132023
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -101,3 +103,5 @@ permalink: /kb/132/Q132023/
 	
 	=============================================================================
 	
+
+{% endraw %}

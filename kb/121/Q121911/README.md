@@ -6,6 +6,8 @@ permalink: /kb/121/Q121911/
 
 ## Q121911: The Close Button Does Not Appear or Is Disabled
 
+{% raw %}
+
 	Article: Q121911
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/121/Q121911/
 	
 	=============================================================================
 	
+
+{% endraw %}

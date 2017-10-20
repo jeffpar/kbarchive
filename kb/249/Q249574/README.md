@@ -6,6 +6,8 @@ permalink: /kb/249/Q249574/
 
 ## Q249574: Schedule+ 7.5 To Do Tab Maps Short Date Style Year Incorrectly
 
+{% raw %}
+
 	Article: Q249574
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.5
@@ -90,3 +92,5 @@ permalink: /kb/249/Q249574/
 	
 	=============================================================================
 	
+
+{% endraw %}

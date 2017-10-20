@@ -6,6 +6,8 @@ permalink: /kb/306/Q306315/
 
 ## Q306315: Deleted Aged Status Messages Can Leave Orphaned Database Entries
 
+{% raw %}
+
 	Article: Q306315
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -112,3 +114,5 @@ permalink: /kb/306/Q306315/
 	
 	=============================================================================
 	
+
+{% endraw %}

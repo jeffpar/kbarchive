@@ -6,6 +6,8 @@ permalink: /kb/169/Q169866/
 
 ## Q169866: WD97: Explanation for Converting Redlining Incorrect in ORK
 
+{% raw %}
+
 	Article: Q169866
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/169/Q169866/
 	
 	=============================================================================
 	
+
+{% endraw %}

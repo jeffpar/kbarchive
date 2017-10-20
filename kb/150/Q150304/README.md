@@ -6,6 +6,8 @@ permalink: /kb/150/Q150304/
 
 ## Q150304: SNA Server Admin Application Exception When Use Banyan Vines
 
+{% raw %}
+
 	Article: Q150304
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1
@@ -84,3 +86,5 @@ permalink: /kb/150/Q150304/
 	
 	=============================================================================
 	
+
+{% endraw %}

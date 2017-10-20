@@ -6,6 +6,8 @@ permalink: /kb/026/Q26885/
 
 ## Q26885: PPT7: Clipart Gallery 2.0a Update for Windows NT Users
 
+{% raw %}
+
 	Article: Q26885
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -64,3 +66,5 @@ permalink: /kb/026/Q26885/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243777/
 
 ## Q243777: Nothing Happens When You Click Save in &quot;Save File As&quot; Box
 
+{% raw %}
+
 	Article: Q243777
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:2000,95
@@ -107,3 +109,5 @@ permalink: /kb/243/Q243777/
 	
 	=============================================================================
 	
+
+{% endraw %}

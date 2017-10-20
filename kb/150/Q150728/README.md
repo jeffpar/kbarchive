@@ -6,6 +6,8 @@ permalink: /kb/150/Q150728/
 
 ## Q150728: Err Msg: This Version of SMS Administrator (Build xxx) Is Not
 
+{% raw %}
+
 	Article: Q150728
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150728/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117780/
 
 ## Q117780: Using .PCH Files Across Projects in Visual Workbench
 
+{% raw %}
+
 	Article: Q117780
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/117/Q117780/
 	
 	=============================================================================
 	
+
+{% endraw %}

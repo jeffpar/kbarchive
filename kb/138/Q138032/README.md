@@ -6,6 +6,8 @@ permalink: /kb/138/Q138032/
 
 ## Q138032: FIX: CIRC2 and CIRC3 Samples Don't Handle WM_SIZE Message
 
+{% raw %}
+
 	Article: Q138032
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -94,3 +96,5 @@ permalink: /kb/138/Q138032/
 	
 	=============================================================================
 	
+
+{% endraw %}

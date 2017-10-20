@@ -6,6 +6,8 @@ permalink: /kb/096/Q96500/
 
 ## Q96500: PC Win: Err Msg: A TPL File Has Been Incorrectly Modified...
 
+{% raw %}
+
 	Article: Q96500
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -68,3 +70,5 @@ permalink: /kb/096/Q96500/
 	
 	=============================================================================
 	
+
+{% endraw %}

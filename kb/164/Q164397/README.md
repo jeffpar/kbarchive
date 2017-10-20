@@ -6,6 +6,8 @@ permalink: /kb/164/Q164397/
 
 ## Q164397: Stop 0x0000000A in TCP/IP Due to AFD Sending Invalid MDL
 
+{% raw %}
+
 	Article: Q164397
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/164/Q164397/
 	
 	=============================================================================
 	
+
+{% endraw %}

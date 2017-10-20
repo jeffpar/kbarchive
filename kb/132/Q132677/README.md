@@ -6,6 +6,8 @@ permalink: /kb/132/Q132677/
 
 ## Q132677: How to Place Insertion Point at Far Left of Field on Entry
 
+{% raw %}
+
 	Article: Q132677
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132677/
 	
 	=============================================================================
 	
+
+{% endraw %}

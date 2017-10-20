@@ -6,6 +6,8 @@ permalink: /kb/048/Q48242/
 
 ## Q48242: Mac Form: Label Not Printed with Corresponding Field
 
+{% raw %}
+
 	Article: Q48242
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -53,3 +55,5 @@ permalink: /kb/048/Q48242/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194592/
 
 ## Q194592: XFOR: OV/VM Connector Diagnostic Logging Registry Settings
 
+{% raw %}
+
 	Article: Q194592
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -74,3 +76,5 @@ permalink: /kb/194/Q194592/
 	
 	=============================================================================
 	
+
+{% endraw %}

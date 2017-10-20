@@ -6,6 +6,8 @@ permalink: /kb/039/Q39444/
 
 ## Q39444: DOCERR: The Stack Grows into Low Memory
 
+{% raw %}
+
 	Article: Q39444
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -41,3 +43,5 @@ permalink: /kb/039/Q39444/
 	
 	=============================================================================
 	
+
+{% endraw %}

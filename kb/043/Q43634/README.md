@@ -6,6 +6,8 @@ permalink: /kb/043/Q43634/
 
 ## Q43634: How to Get HELPMAKE to Understand &#36;INCLUDE
 
+{% raw %}
+
 	Article: Q43634
 	Product(s): See article
 	Version(s): 2.00
@@ -47,3 +49,5 @@ permalink: /kb/043/Q43634/
 	
 	Some of the cross-reference text files used by QC.HLP are the C header
 	files and the README.DOC(s).
+
+{% endraw %}

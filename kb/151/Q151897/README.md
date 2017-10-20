@@ -6,6 +6,8 @@ permalink: /kb/151/Q151897/
 
 ## Q151897: FIX: CListCtrl::InsertColumn() Causes Column Data to Shift
 
+{% raw %}
+
 	Article: Q151897
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -152,3 +154,5 @@ permalink: /kb/151/Q151897/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187293/
 
 ## Q187293: SMS: Raw File May Cause Inventory Processor to Stop Responding
 
+{% raw %}
+
 	Article: Q187293
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/187/Q187293/
 	
 	=============================================================================
 	
+
+{% endraw %}

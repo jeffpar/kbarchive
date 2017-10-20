@@ -6,6 +6,8 @@ permalink: /kb/181/Q181228/
 
 ## Q181228: Download of File from IIS 4.0 Fails on IE 4.01 Client
 
+{% raw %}
+
 	Article: Q181228
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:4.01; winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/181/Q181228/
 	
 	=============================================================================
 	
+
+{% endraw %}

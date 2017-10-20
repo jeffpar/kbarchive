@@ -6,6 +6,8 @@ permalink: /kb/170/Q170619/
 
 ## Q170619: Windows 95 ServiceProvider Priority Values Not Applied
 
+{% raw %}
+
 	Article: Q170619
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -114,3 +116,5 @@ permalink: /kb/170/Q170619/
 	
 	=============================================================================
 	
+
+{% endraw %}

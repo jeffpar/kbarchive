@@ -6,6 +6,8 @@ permalink: /kb/161/Q161728/
 
 ## Q161728: PRB: &quot;PrinterShare GX&quot; Unimplemented Trap with General Field
 
+{% raw %}
+
 	Article: Q161728
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -119,3 +121,5 @@ permalink: /kb/161/Q161728/
 	
 	=============================================================================
 	
+
+{% endraw %}

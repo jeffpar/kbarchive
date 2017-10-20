@@ -6,6 +6,8 @@ permalink: /kb/163/Q163346/
 
 ## Q163346: ACC97: Linked Table Manager Doesn't Prompt You to Check Out Data
 
+{% raw %}
+
 	Article: Q163346
 	Product(s): Microsoft SourceSafe
 	Version(s): 97
@@ -123,3 +125,5 @@ permalink: /kb/163/Q163346/
 	
 	=============================================================================
 	
+
+{% endraw %}

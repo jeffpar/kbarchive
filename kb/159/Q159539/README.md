@@ -6,6 +6,8 @@ permalink: /kb/159/Q159539/
 
 ## Q159539: SMS: File Transfer Fails with Client Running NetWare Client32
 
+{% raw %}
+
 	Article: Q159539
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -53,3 +55,5 @@ permalink: /kb/159/Q159539/
 	
 	=============================================================================
 	
+
+{% endraw %}

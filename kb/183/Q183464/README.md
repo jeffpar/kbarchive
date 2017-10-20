@@ -6,6 +6,8 @@ permalink: /kb/183/Q183464/
 
 ## Q183464: Windows NT Remote Boot Clients Lose Enhanced Keyboard Support
 
+{% raw %}
+
 	Article: Q183464
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/183/Q183464/
 	
 	=============================================================================
 	
+
+{% endraw %}

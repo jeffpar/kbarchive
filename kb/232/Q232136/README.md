@@ -6,6 +6,8 @@ permalink: /kb/232/Q232136/
 
 ## Q232136: How to Back Up a Server Certificate in IIS 5.0
 
+{% raw %}
+
 	Article: Q232136
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -163,3 +165,5 @@ permalink: /kb/232/Q232136/
 	
 	=============================================================================
 	
+
+{% endraw %}

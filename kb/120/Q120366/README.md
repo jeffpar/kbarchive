@@ -6,6 +6,8 @@ permalink: /kb/120/Q120366/
 
 ## Q120366: How to Create a Bootable Floppy Disk for the Macintosh
 
+{% raw %}
+
 	Article: Q120366
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -80,3 +82,5 @@ permalink: /kb/120/Q120366/
 	
 	=============================================================================
 	
+
+{% endraw %}

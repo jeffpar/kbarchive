@@ -6,6 +6,8 @@ permalink: /kb/172/Q172586/
 
 ## Q172586: How To Check the Version Number of DirectX Drivers in Windows 95
 
+{% raw %}
+
 	Article: Q172586
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:95
@@ -55,3 +57,5 @@ permalink: /kb/172/Q172586/
 	
 	=============================================================================
 	
+
+{% endraw %}

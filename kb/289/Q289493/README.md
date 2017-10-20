@@ -6,6 +6,8 @@ permalink: /kb/289/Q289493/
 
 ## Q289493: PRB: Component Not Registered Error When Attempt to Run VB App
 
+{% raw %}
+
 	Article: Q289493
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/289/Q289493/
 	
 	=============================================================================
 	
+
+{% endraw %}

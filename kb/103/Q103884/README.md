@@ -6,6 +6,8 @@ permalink: /kb/103/Q103884/
 
 ## Q103884: The OSI Model's Seven Layers Defined and Functions Explained
 
+{% raw %}
+
 	Article: Q103884
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -258,3 +260,5 @@ permalink: /kb/103/Q103884/
 	
 	=============================================================================
 	
+
+{% endraw %}

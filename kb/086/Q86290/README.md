@@ -6,6 +6,8 @@ permalink: /kb/086/Q86290/
 
 ## Q86290: Microsoft Windows 3.1 &amp; MS-DOS 5 Upgrade
 
+{% raw %}
+
 	Article: Q86290
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -304,3 +306,5 @@ permalink: /kb/086/Q86290/
 	
 	=============================================================================
 	
+
+{% endraw %}

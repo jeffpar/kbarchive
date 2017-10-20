@@ -6,6 +6,8 @@ permalink: /kb/209/Q209043/
 
 ## Q209043: INFO: Properties Supported and Unsupported by the Grid Control
 
+{% raw %}
+
 	Article: Q209043
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -172,3 +174,5 @@ permalink: /kb/209/Q209043/
 	
 	=============================================================================
 	
+
+{% endraw %}

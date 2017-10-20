@@ -6,6 +6,8 @@ permalink: /kb/137/Q137785/
 
 ## Q137785: How to Use a Number Other Than 1 When Dialing Long Distance
 
+{% raw %}
+
 	Article: Q137785
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -96,3 +98,5 @@ permalink: /kb/137/Q137785/
 	
 	=============================================================================
 	
+
+{% endraw %}

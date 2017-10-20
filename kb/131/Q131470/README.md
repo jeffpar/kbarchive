@@ -6,6 +6,8 @@ permalink: /kb/131/Q131470/
 
 ## Q131470: PRINT.EXE Command Fails on Eleventh Try From Batch File
 
+{% raw %}
+
 	Article: Q131470
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -59,3 +61,5 @@ permalink: /kb/131/Q131470/
 	
 	=============================================================================
 	
+
+{% endraw %}

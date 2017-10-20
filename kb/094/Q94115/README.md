@@ -6,6 +6,8 @@ permalink: /kb/094/Q94115/
 
 ## Q94115: PCS Host Terminal Software and Windows for Workgroups
 
+{% raw %}
+
 	Article: Q94115
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -103,3 +105,5 @@ permalink: /kb/094/Q94115/
 	
 	=============================================================================
 	
+
+{% endraw %}

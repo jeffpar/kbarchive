@@ -6,6 +6,8 @@ permalink: /kb/157/Q157601/
 
 ## Q157601: Golf: Game Play Recommendations
 
+{% raw %}
+
 	Article: Q157601
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/157/Q157601/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/219/Q219277/
 
 ## Q219277: Load Balancing HTTP with WLBS
 
+{% raw %}
+
 	Article: Q219277
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -66,3 +68,5 @@ permalink: /kb/219/Q219277/
 	
 	=============================================================================
 	
+
+{% endraw %}

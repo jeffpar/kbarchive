@@ -6,6 +6,8 @@ permalink: /kb/126/Q126128/
 
 ## Q126128: Message Popup Changes Color When Using OpenGL Screen Saver
 
+{% raw %}
+
 	Article: Q126128
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/126/Q126128/
 	
 	=============================================================================
 	
+
+{% endraw %}

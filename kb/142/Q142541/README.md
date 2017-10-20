@@ -6,6 +6,8 @@ permalink: /kb/142/Q142541/
 
 ## Q142541: Updated Modem .inf Files for VoiceView-Compatible Modems
 
+{% raw %}
+
 	Article: Q142541
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -70,3 +72,5 @@ permalink: /kb/142/Q142541/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150996/
 
 ## Q150996: Session Canceled Error Using IBM 16/4 Adapter II
 
+{% raw %}
+
 	Article: Q150996
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -67,3 +69,5 @@ permalink: /kb/150/Q150996/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74466/
 
 ## Q74466: UNDELETE Does Not Work If File Deleted from Windows or Shell
 
+{% raw %}
+
 	Article: Q74466
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -66,3 +68,5 @@ permalink: /kb/074/Q74466/
 	
 	=============================================================================
 	
+
+{% endraw %}

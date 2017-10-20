@@ -6,6 +6,8 @@ permalink: /kb/158/Q158146/
 
 ## Q158146: NetLogon Service fails to start with Event 7003
 
+{% raw %}
+
 	Article: Q158146
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/158/Q158146/
 	
 	=============================================================================
 	
+
+{% endraw %}

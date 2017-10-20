@@ -6,6 +6,8 @@ permalink: /kb/322/Q322316/
 
 ## Q322316: XADM: Event ID 181 Recurs in the Application Event Log
 
+{% raw %}
+
 	Article: Q322316
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -81,3 +83,5 @@ permalink: /kb/322/Q322316/
 	
 	=============================================================================
 	
+
+{% endraw %}

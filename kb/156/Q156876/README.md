@@ -6,6 +6,8 @@ permalink: /kb/156/Q156876/
 
 ## Q156876: INFO: Using UDF Files with Windows NT 4.0 Unattended Setup
 
+{% raw %}
+
 	Article: Q156876
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -162,3 +164,5 @@ permalink: /kb/156/Q156876/
 	
 	=============================================================================
 	
+
+{% endraw %}

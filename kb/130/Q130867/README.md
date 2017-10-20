@@ -6,6 +6,8 @@ permalink: /kb/130/Q130867/
 
 ## Q130867: FIX: Link Paste Update Causes ASSERT in AFXWIN1.INL
 
+{% raw %}
+
 	Article: Q130867
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0
@@ -66,3 +68,5 @@ permalink: /kb/130/Q130867/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183691/
 
 ## Q183691: HOWTO: Access UserControl Properties From the Same Project
 
+{% raw %}
+
 	Article: Q183691
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/183/Q183691/
 	
 	=============================================================================
 	
+
+{% endraw %}

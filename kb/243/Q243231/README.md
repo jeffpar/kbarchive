@@ -6,6 +6,8 @@ permalink: /kb/243/Q243231/
 
 ## Q243231: Asheron's Call: Compass Flickers and Blips Momentarily Disappear
 
+{% raw %}
+
 	Article: Q243231
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/243/Q243231/
 	
 	=============================================================================
 	
+
+{% endraw %}

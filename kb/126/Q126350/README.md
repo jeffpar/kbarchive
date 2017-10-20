@@ -6,6 +6,8 @@ permalink: /kb/126/Q126350/
 
 ## Q126350: Windows 95 Setup Modifies the Boot Sector of All Drives
 
+{% raw %}
+
 	Article: Q126350
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/126/Q126350/
 	
 	=============================================================================
 	
+
+{% endraw %}

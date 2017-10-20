@@ -6,6 +6,8 @@ permalink: /kb/136/Q136472/
 
 ## Q136472: NE3200 NIC Driver Can Lose Locally Administered Address
 
+{% raw %}
+
 	Article: Q136472
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136472/
 	
 	=============================================================================
 	
+
+{% endraw %}

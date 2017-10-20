@@ -6,6 +6,8 @@ permalink: /kb/192/Q192561/
 
 ## Q192561: PRB: Error C2787 When Building a Project Using ATL 3.0
 
+{% raw %}
+
 	Article: Q192561
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -106,3 +108,5 @@ permalink: /kb/192/Q192561/
 	
 	=============================================================================
 	
+
+{% endraw %}

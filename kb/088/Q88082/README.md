@@ -6,6 +6,8 @@ permalink: /kb/088/Q88082/
 
 ## Q88082: PPT: Error Opening Untranslated Presentation
 
+{% raw %}
+
 	Article: Q88082
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0,4.0,4.0a,4.0c,7.0
@@ -124,3 +126,5 @@ permalink: /kb/088/Q88082/
 	
 	=============================================================================
 	
+
+{% endraw %}

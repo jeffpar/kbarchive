@@ -6,6 +6,8 @@ permalink: /kb/154/Q154933/
 
 ## Q154933: Err Msg: The LsaCreateSecret Call Failed
 
+{% raw %}
+
 	Article: Q154933
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -67,3 +69,5 @@ permalink: /kb/154/Q154933/
 	
 	=============================================================================
 	
+
+{% endraw %}

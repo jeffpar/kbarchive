@@ -6,6 +6,8 @@ permalink: /kb/238/Q238158/
 
 ## Q238158: Reference Suite 2000: Locations of Network Administrator's Guide
 
+{% raw %}
+
 	Article: Q238158
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/238/Q238158/
 	
 	=============================================================================
 	
+
+{% endraw %}

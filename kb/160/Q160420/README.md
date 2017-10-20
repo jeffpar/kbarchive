@@ -6,6 +6,8 @@ permalink: /kb/160/Q160420/
 
 ## Q160420: Changing Colors on Cirrus Logic Cards to 65k Can Cause Stop
 
+{% raw %}
+
 	Article: Q160420
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160420/
 	
 	=============================================================================
 	
+
+{% endraw %}

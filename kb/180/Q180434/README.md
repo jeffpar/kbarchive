@@ -6,6 +6,8 @@ permalink: /kb/180/Q180434/
 
 ## Q180434: XFOR: How to Remove, Reinstall, and Verify Dirsync Configuration
 
+{% raw %}
+
 	Article: Q180434
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -180,3 +182,5 @@ permalink: /kb/180/Q180434/
 	
 	=============================================================================
 	
+
+{% endraw %}

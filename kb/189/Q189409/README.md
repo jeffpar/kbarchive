@@ -6,6 +6,8 @@ permalink: /kb/189/Q189409/
 
 ## Q189409: INFO: Controlling the Caching of Web Pages with IIS 4.0
 
+{% raw %}
+
 	Article: Q189409
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -127,3 +129,5 @@ permalink: /kb/189/Q189409/
 	
 	=============================================================================
 	
+
+{% endraw %}

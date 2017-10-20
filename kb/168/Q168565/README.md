@@ -6,6 +6,8 @@ permalink: /kb/168/Q168565/
 
 ## Q168565: SMS: Child Site Attachment May Result in Incorrect Inventory
 
+{% raw %}
+
 	Article: Q168565
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -72,3 +74,5 @@ permalink: /kb/168/Q168565/
 	
 	=============================================================================
 	
+
+{% endraw %}

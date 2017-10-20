@@ -6,6 +6,8 @@ permalink: /kb/157/Q157220/
 
 ## Q157220: INFO: STL Sample for the exp, log, and log10 Functions
 
+{% raw %}
+
 	Article: Q157220
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -183,3 +185,5 @@ permalink: /kb/157/Q157220/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275931/
 
 ## Q275931: XCON: DNS Errors When Installing IMS on Top of Cluster Server
 
+{% raw %}
+
 	Article: Q275931
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -54,3 +56,5 @@ permalink: /kb/275/Q275931/
 	
 	=============================================================================
 	
+
+{% endraw %}

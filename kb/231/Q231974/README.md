@@ -6,6 +6,8 @@ permalink: /kb/231/Q231974/
 
 ## Q231974: XFOR: Notes Connector Doesn't Restart
 
+{% raw %}
+
 	Article: Q231974
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/231/Q231974/
 	
 	=============================================================================
 	
+
+{% endraw %}

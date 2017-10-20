@@ -6,6 +6,8 @@ permalink: /kb/159/Q159748/
 
 ## Q159748: WD97: How to Protect VBA Code from Unauthorized Access
 
+{% raw %}
+
 	Article: Q159748
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/159/Q159748/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216242/
 
 ## Q216242: SMS: View Troubleshooting Information in Administrator Console
 
+{% raw %}
+
 	Article: Q216242
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -79,3 +81,5 @@ permalink: /kb/216/Q216242/
 	
 	=============================================================================
 	
+
+{% endraw %}

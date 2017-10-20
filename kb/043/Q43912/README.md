@@ -6,6 +6,8 @@ permalink: /kb/043/Q43912/
 
 ## Q43912: C: /Oa Causes Changes in Variable Values to Be Ignored
 
+{% raw %}
+
 	Article: Q43912
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -59,3 +61,5 @@ permalink: /kb/043/Q43912/
 	The "MOV BX, AX" generated for "strbuf[len] = '\0';" above should be a
 	"MOV BX, [len]". AX contains the old value of len at this point, not
 	the incremented value.
+
+{% endraw %}

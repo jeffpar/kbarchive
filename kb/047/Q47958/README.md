@@ -6,6 +6,8 @@ permalink: /kb/047/Q47958/
 
 ## Q47958: Patching malloc() to Reuse Memory within an Allocated Block
 
+{% raw %}
+
 	Article: Q47958
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -74,3 +76,5 @@ permalink: /kb/047/Q47958/
 	   follows:
 	
 	        lib llibcer.lib -+amalloc;
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190443/
 
 ## Q190443: XADM: Replication Msg. Can't Be Sent If IS Send Limit Reached
 
+{% raw %}
+
 	Article: Q190443
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/190/Q190443/
 	
 	=============================================================================
 	
+
+{% endraw %}

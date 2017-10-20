@@ -6,6 +6,8 @@ permalink: /kb/253/Q253356/
 
 ## Q253356: PRB: &quot;API Call Caused an Exception&quot; with 3rd-Party Print Drivers
 
+{% raw %}
+
 	Article: Q253356
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -105,3 +107,5 @@ permalink: /kb/253/Q253356/
 	
 	=============================================================================
 	
+
+{% endraw %}

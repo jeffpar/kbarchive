@@ -6,6 +6,8 @@ permalink: /kb/149/Q149154/
 
 ## Q149154: BUG: Memory Leak Caused by Formatted Internal WRITE
 
+{% raw %}
+
 	Article: Q149154
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/149/Q149154/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/294/Q294966/
 
 ## Q294966: PRB: RepairDatabase Method Is No Longer Available in DAO 3.6
 
+{% raw %}
+
 	Article: Q294966
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/294/Q294966/
 	
 	=============================================================================
 	
+
+{% endraw %}

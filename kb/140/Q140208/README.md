@@ -6,6 +6,8 @@ permalink: /kb/140/Q140208/
 
 ## Q140208: Cannot Use Both Dial-Up Networking and Direct Cable Connection
 
+{% raw %}
+
 	Article: Q140208
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/140/Q140208/
 	
 	=============================================================================
 	
+
+{% endraw %}

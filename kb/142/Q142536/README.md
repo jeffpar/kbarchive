@@ -6,6 +6,8 @@ permalink: /kb/142/Q142536/
 
 ## Q142536: No Dial Tone When You Attempt to Connect to MSN
 
+{% raw %}
+
 	Article: Q142536
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.6,5.0,5.1,5.2,5.3,5.4,6.0,6.1
@@ -93,3 +95,5 @@ permalink: /kb/142/Q142536/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140291/
 
 ## Q140291: HOWTO: Call the Graph Wizard &amp; Create a Chart Programmatically
 
+{% raw %}
+
 	Article: Q140291
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -135,3 +137,5 @@ permalink: /kb/140/Q140291/
 	
 	=============================================================================
 	
+
+{% endraw %}

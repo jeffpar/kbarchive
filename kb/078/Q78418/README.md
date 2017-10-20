@@ -6,6 +6,8 @@ permalink: /kb/078/Q78418/
 
 ## Q78418: Marstek Mouse Driver 6.01b Required with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q78418
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/078/Q78418/
 	
 	=============================================================================
 	
+
+{% endraw %}

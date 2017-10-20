@@ -6,6 +6,8 @@ permalink: /kb/118/Q118970/
 
 ## Q118970: SMTP: Error (9) Closing MS-DOS Socket for LAN Workplace
 
+{% raw %}
+
 	Article: Q118970
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/118/Q118970/
 	
 	=============================================================================
 	
+
+{% endraw %}

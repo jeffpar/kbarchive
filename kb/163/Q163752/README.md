@@ -6,6 +6,8 @@ permalink: /kb/163/Q163752/
 
 ## Q163752: SNA Server Manager Starts Minimized
 
+{% raw %}
+
 	Article: Q163752
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -93,3 +95,5 @@ permalink: /kb/163/Q163752/
 	
 	=============================================================================
 	
+
+{% endraw %}

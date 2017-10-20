@@ -6,6 +6,8 @@ permalink: /kb/317/Q317189/
 
 ## Q317189: Err Msg: Stop c000021a {Fatal System Error} The Session...
 
+{% raw %}
+
 	Article: Q317189
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -141,3 +143,5 @@ permalink: /kb/317/Q317189/
 	
 	=============================================================================
 	
+
+{% endraw %}

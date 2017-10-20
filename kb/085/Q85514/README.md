@@ -6,6 +6,8 @@ permalink: /kb/085/Q85514/
 
 ## Q85514: INFO: _DEBUG Must Be Defined When Linking to Debug Libraries
 
+{% raw %}
+
 	Article: Q85514
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -98,3 +100,5 @@ permalink: /kb/085/Q85514/
 	
 	=============================================================================
 	
+
+{% endraw %}

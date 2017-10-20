@@ -6,6 +6,8 @@ permalink: /kb/082/Q82763/
 
 ## Q82763: PS/2 Appears to Hang When Exiting Windows 3.1
 
+{% raw %}
+
 	Article: Q82763
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/082/Q82763/
 	
 	=============================================================================
 	
+
+{% endraw %}

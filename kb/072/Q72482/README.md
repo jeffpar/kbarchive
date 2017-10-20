@@ -6,6 +6,8 @@ permalink: /kb/072/Q72482/
 
 ## Q72482: FIX: MASM 6.0 May Generate A2103 Error When Assembling with /Zi
 
+{% raw %}
+
 	Article: Q72482
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -66,3 +68,5 @@ permalink: /kb/072/Q72482/
 	
 	=============================================================================
 	
+
+{% endraw %}

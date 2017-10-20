@@ -6,6 +6,8 @@ permalink: /kb/165/Q165516/
 
 ## Q165516: WD97: ArtWidth Sets Values in Points But Returns in Twips
 
+{% raw %}
+
 	Article: Q165516
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -103,3 +105,5 @@ permalink: /kb/165/Q165516/
 	
 	=============================================================================
 	
+
+{% endraw %}

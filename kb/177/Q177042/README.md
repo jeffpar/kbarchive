@@ -6,6 +6,8 @@ permalink: /kb/177/Q177042/
 
 ## Q177042: Age of Empires: Sound Plays Intermittently or Stops Unexpectedly
 
+{% raw %}
+
 	Article: Q177042
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -96,3 +98,5 @@ permalink: /kb/177/Q177042/
 	
 	=============================================================================
 	
+
+{% endraw %}

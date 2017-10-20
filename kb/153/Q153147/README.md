@@ -6,6 +6,8 @@ permalink: /kb/153/Q153147/
 
 ## Q153147: Client Inventory Fails on Game Ports
 
+{% raw %}
+
 	Article: Q153147
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -84,3 +86,5 @@ permalink: /kb/153/Q153147/
 	
 	=============================================================================
 	
+
+{% endraw %}

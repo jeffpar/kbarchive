@@ -6,6 +6,8 @@ permalink: /kb/221/Q221723/
 
 ## Q221723: FIX: Container Click Not Fired When Clicking Disabled Control
 
+{% raw %}
+
 	Article: Q221723
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -103,3 +105,5 @@ permalink: /kb/221/Q221723/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121029/
 
 ## Q121029: Copying Audio Does Not Produce Sound in Destination
 
+{% raw %}
+
 	Article: Q121029
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :'96-'97,1993 edition,1994 edition,1995 edition
@@ -143,3 +145,5 @@ permalink: /kb/121/Q121029/
 	
 	=============================================================================
 	
+
+{% endraw %}

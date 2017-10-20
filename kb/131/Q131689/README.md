@@ -6,6 +6,8 @@ permalink: /kb/131/Q131689/
 
 ## Q131689: Postscript Jobs Do Not Print Correctly Over SFM and AppleTalk
 
+{% raw %}
+
 	Article: Q131689
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -60,3 +62,5 @@ permalink: /kb/131/Q131689/
 	
 	=============================================================================
 	
+
+{% endraw %}

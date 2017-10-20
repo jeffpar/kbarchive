@@ -6,6 +6,8 @@ permalink: /kb/124/Q124295/
 
 ## Q124295: Unable to Install Windows NT 3.5 on IBM PS/2 56 8556
 
+{% raw %}
+
 	Article: Q124295
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/124/Q124295/
 	
 	=============================================================================
 	
+
+{% endraw %}

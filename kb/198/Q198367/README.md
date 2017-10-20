@@ -6,6 +6,8 @@ permalink: /kb/198/Q198367/
 
 ## Q198367: WD97: Text Box Position Not Retained When Copying and Pasting
 
+{% raw %}
+
 	Article: Q198367
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -52,3 +54,5 @@ permalink: /kb/198/Q198367/
 	
 	=============================================================================
 	
+
+{% endraw %}

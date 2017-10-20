@@ -6,6 +6,8 @@ permalink: /kb/050/Q50339/
 
 ## Q50339: Not All Extended ASCII Characters Are Mapped by QuickC Fonts
 
+{% raw %}
+
 	Article: Q50339
 	Product(s): See article
 	Version(s): 2.00
@@ -91,3 +93,5 @@ permalink: /kb/050/Q50339/
 	
 	You can find additional information on codepages in "The MS-DOS
 	Encyclopedia."
+
+{% endraw %}

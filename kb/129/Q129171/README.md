@@ -6,6 +6,8 @@ permalink: /kb/129/Q129171/
 
 ## Q129171: INFO: The Difference Among Visual FoxPro Numeric Data Types
 
+{% raw %}
+
 	Article: Q129171
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/129/Q129171/
 	
 	=============================================================================
 	
+
+{% endraw %}

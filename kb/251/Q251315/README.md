@@ -6,6 +6,8 @@ permalink: /kb/251/Q251315/
 
 ## Q251315: XADM: Send Replies to Old Organization After Move Server Wizard
 
+{% raw %}
+
 	Article: Q251315
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -118,3 +120,5 @@ permalink: /kb/251/Q251315/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155689/
 
 ## Q155689: Error Message: Mini.cab Is Missing or Corrupt
 
+{% raw %}
+
 	Article: Q155689
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -93,3 +95,5 @@ permalink: /kb/155/Q155689/
 	
 	=============================================================================
 	
+
+{% endraw %}

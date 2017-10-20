@@ -6,6 +6,8 @@ permalink: /kb/089/Q89558/
 
 ## Q89558: WFWG and Novell: LASTDRIVE=Z Makes &#91; and &#93; Active Drives
 
+{% raw %}
+
 	Article: Q89558
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/089/Q89558/
 	
 	=============================================================================
 	
+
+{% endraw %}

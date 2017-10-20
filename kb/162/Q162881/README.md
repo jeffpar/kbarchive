@@ -6,6 +6,8 @@ permalink: /kb/162/Q162881/
 
 ## Q162881: RIP Table Sent While Shutting Down When Silent RIP Set
 
+{% raw %}
+
 	Article: Q162881
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/162/Q162881/
 	
 	=============================================================================
 	
+
+{% endraw %}

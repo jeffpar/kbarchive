@@ -6,6 +6,8 @@ permalink: /kb/161/Q161979/
 
 ## Q161979: Encarta: How to Disable the Ability to Start Programs
 
+{% raw %}
+
 	Article: Q161979
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -128,3 +130,5 @@ permalink: /kb/161/Q161979/
 	
 	=============================================================================
 	
+
+{% endraw %}

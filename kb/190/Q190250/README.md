@@ -6,6 +6,8 @@ permalink: /kb/190/Q190250/
 
 ## Q190250: BUG: DHTML Page Designer: Cannot Find the Mshtml.Hlp File
 
+{% raw %}
+
 	Article: Q190250
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -89,3 +91,5 @@ permalink: /kb/190/Q190250/
 	
 	=============================================================================
 	
+
+{% endraw %}

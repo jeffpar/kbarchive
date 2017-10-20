@@ -6,6 +6,8 @@ permalink: /kb/097/Q97600/
 
 ## Q97600: Printed Colors Different than on Screen: Blue is Purple, etc.
 
+{% raw %}
+
 	Article: Q97600
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/097/Q97600/
 	
 	=============================================================================
 	
+
+{% endraw %}

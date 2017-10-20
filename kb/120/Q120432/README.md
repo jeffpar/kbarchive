@@ -6,6 +6,8 @@ permalink: /kb/120/Q120432/
 
 ## Q120432: No Menu Cursor in Lotus for MS-DOS version 2.4 and 3.4
 
+{% raw %}
+
 	Article: Q120432
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/120/Q120432/
 	
 	=============================================================================
 	
+
+{% endraw %}

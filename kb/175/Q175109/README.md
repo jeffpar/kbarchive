@@ -6,6 +6,8 @@ permalink: /kb/175/Q175109/
 
 ## Q175109: 3270 Users Fail to Get Sessions to SNA 3.0 After 2.11 Upgrade
 
+{% raw %}
+
 	Article: Q175109
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -113,3 +115,5 @@ permalink: /kb/175/Q175109/
 	
 	=============================================================================
 	
+
+{% endraw %}

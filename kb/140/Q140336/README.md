@@ -6,6 +6,8 @@ permalink: /kb/140/Q140336/
 
 ## Q140336: Remote Mail and Inbox Display Different &quot;From&quot; Name
 
+{% raw %}
+
 	Article: Q140336
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -44,3 +46,5 @@ permalink: /kb/140/Q140336/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135177/
 
 ## Q135177: Text-Screen Enhancement Programs May Not Work
 
+{% raw %}
+
 	Article: Q135177
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/135/Q135177/
 	
 	=============================================================================
 	
+
+{% endraw %}

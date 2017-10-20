@@ -6,6 +6,8 @@ permalink: /kb/167/Q167205/
 
 ## Q167205: RAS Event ID: 20055 Caused by Missing NetBios Interface
 
+{% raw %}
+
 	Article: Q167205
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/167/Q167205/
 	
 	=============================================================================
 	
+
+{% endraw %}

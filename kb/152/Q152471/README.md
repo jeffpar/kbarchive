@@ -6,6 +6,8 @@ permalink: /kb/152/Q152471/
 
 ## Q152471: XFOR: Difference Between SMTP:&#42; and SMTP: Address Space
 
+{% raw %}
+
 	Article: Q152471
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152471/
 	
 	=============================================================================
 	
+
+{% endraw %}

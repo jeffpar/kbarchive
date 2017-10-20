@@ -6,6 +6,8 @@ permalink: /kb/134/Q134363/
 
 ## Q134363: Windows 95 Support Assistant Available
 
+{% raw %}
+
 	Article: Q134363
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -106,3 +108,5 @@ permalink: /kb/134/Q134363/
 	
 	=============================================================================
 	
+
+{% endraw %}

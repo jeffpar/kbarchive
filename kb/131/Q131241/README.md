@@ -6,6 +6,8 @@ permalink: /kb/131/Q131241/
 
 ## Q131241: FTPSVC Orphans Connections, Uses Up Virtual Memory
 
+{% raw %}
+
 	Article: Q131241
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -63,3 +65,5 @@ permalink: /kb/131/Q131241/
 	
 	=============================================================================
 	
+
+{% endraw %}

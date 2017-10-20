@@ -6,6 +6,8 @@ permalink: /kb/075/Q75060/
 
 ## Q75060: Direct Access 5.1 Under MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q75060
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -87,3 +89,5 @@ permalink: /kb/075/Q75060/
 	
 	=============================================================================
 	
+
+{% endraw %}

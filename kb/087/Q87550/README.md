@@ -6,6 +6,8 @@ permalink: /kb/087/Q87550/
 
 ## Q87550: FIX: CV 4.0 Port Input Command Does Not Display Value
 
+{% raw %}
+
 	Article: Q87550
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.05
@@ -68,3 +70,5 @@ permalink: /kb/087/Q87550/
 	
 	=============================================================================
 	
+
+{% endraw %}

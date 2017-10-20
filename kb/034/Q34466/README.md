@@ -6,6 +6,8 @@ permalink: /kb/034/Q34466/
 
 ## Q34466: MASM 5.10 MACRO.DOC: Calling Macros in DOS.INC, BIOS.INC
 
+{% raw %}
+
 	Article: Q34466
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -67,3 +69,5 @@ permalink: /kb/034/Q34466/
 	Symbols must be previously defined before they can be passed as
 	arguments to most of the DOS macros. Generally this means that data
 	must be declared before code in the source file.
+
+{% endraw %}

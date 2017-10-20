@@ -6,6 +6,8 @@ permalink: /kb/059/Q59762/
 
 ## Q59762: QB 4.00 &quot;String Space Corrupt&quot; F8/F10 Step on CALL Breakpoint
 
+{% raw %}
+
 	Article: Q59762
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -69,3 +71,5 @@ permalink: /kb/059/Q59762/
 	'executing (press F5).
 	STOP
 	END SUB
+
+{% endraw %}

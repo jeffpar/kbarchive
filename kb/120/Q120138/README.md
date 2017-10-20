@@ -6,6 +6,8 @@ permalink: /kb/120/Q120138/
 
 ## Q120138: Errors Creating Files or Folders in the Root Directory
 
+{% raw %}
+
 	Article: Q120138
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -183,3 +185,5 @@ permalink: /kb/120/Q120138/
 	
 	=============================================================================
 	
+
+{% endraw %}

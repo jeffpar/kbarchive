@@ -6,6 +6,8 @@ permalink: /kb/155/Q155151/
 
 ## Q155151: Writer 2: Help Is Limited in Certain Areas
 
+{% raw %}
+
 	Article: Q155151
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155151/
 	
 	=============================================================================
 	
+
+{% endraw %}

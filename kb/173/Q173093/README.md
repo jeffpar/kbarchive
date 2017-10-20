@@ -6,6 +6,8 @@ permalink: /kb/173/Q173093/
 
 ## Q173093: BUG: Moving .VBP File Can Corrupt References with Long Paths
 
+{% raw %}
+
 	Article: Q173093
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -113,3 +115,5 @@ permalink: /kb/173/Q173093/
 	
 	=============================================================================
 	
+
+{% endraw %}

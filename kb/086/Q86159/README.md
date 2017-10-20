@@ -6,6 +6,8 @@ permalink: /kb/086/Q86159/
 
 ## Q86159: PROFS: How to De-Install the Gateway
 
+{% raw %}
+
 	Article: Q86159
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -40,3 +42,5 @@ permalink: /kb/086/Q86159/
 	
 	=============================================================================
 	
+
+{% endraw %}

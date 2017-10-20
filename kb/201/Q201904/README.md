@@ -6,6 +6,8 @@ permalink: /kb/201/Q201904/
 
 ## Q201904: XFOR: Information Store Archiving a Message If ResolveP2 Enabled
 
+{% raw %}
+
 	Article: Q201904
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -106,3 +108,5 @@ permalink: /kb/201/Q201904/
 	
 	=============================================================================
 	
+
+{% endraw %}

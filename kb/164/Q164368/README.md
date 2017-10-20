@@ -6,6 +6,8 @@ permalink: /kb/164/Q164368/
 
 ## Q164368: Kids Plus!: How to Disable Login Screen When Starting Windows
 
+{% raw %}
+
 	Article: Q164368
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -96,3 +98,5 @@ permalink: /kb/164/Q164368/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241657/
 
 ## Q241657: Client's Valid &lt;x&gt;.&lt;x&gt;.&lt;x&gt;.0 Host Address Disallowed on Network
 
+{% raw %}
+
 	Article: Q241657
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -124,3 +126,5 @@ permalink: /kb/241/Q241657/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76882/
 
 ## Q76882: Uninstalling Older Version of MS-DOS Without Uninstall Disk
 
+{% raw %}
+
 	Article: Q76882
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -179,3 +181,5 @@ permalink: /kb/076/Q76882/
 	
 	=============================================================================
 	
+
+{% endraw %}

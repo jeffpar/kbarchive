@@ -6,6 +6,8 @@ permalink: /kb/269/Q269036/
 
 ## Q269036: Windows Services for UNIX 2.0 Beta Version Is Not Uninstalled
 
+{% raw %}
+
 	Article: Q269036
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -69,3 +71,5 @@ permalink: /kb/269/Q269036/
 	
 	=============================================================================
 	
+
+{% endraw %}

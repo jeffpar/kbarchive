@@ -6,6 +6,8 @@ permalink: /kb/123/Q123006/
 
 ## Q123006: PRB: ODBC to Lotus Notes Does Not Bring in Numeric Data
 
+{% raw %}
+
 	Article: Q123006
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 2.60 3.00
@@ -105,3 +107,5 @@ permalink: /kb/123/Q123006/
 	
 	=============================================================================
 	
+
+{% endraw %}

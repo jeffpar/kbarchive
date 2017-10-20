@@ -6,6 +6,8 @@ permalink: /kb/277/Q277746/
 
 ## Q277746: CFS2: Air-to-Ground Mission Category Is Not Available
 
+{% raw %}
+
 	Article: Q277746
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/277/Q277746/
 	
 	=============================================================================
 	
+
+{% endraw %}

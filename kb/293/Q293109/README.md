@@ -6,6 +6,8 @@ permalink: /kb/293/Q293109/
 
 ## Q293109: Saving Archived E-mails Before Deleting MSN Explorer User Accoun
 
+{% raw %}
+
 	Article: Q293109
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -96,3 +98,5 @@ permalink: /kb/293/Q293109/
 	
 	=============================================================================
 	
+
+{% endraw %}

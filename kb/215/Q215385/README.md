@@ -6,6 +6,8 @@ permalink: /kb/215/Q215385/
 
 ## Q215385: BUG:ItemClick Event Fires After First ListItem Added to ListView
 
+{% raw %}
+
 	Article: Q215385
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,2.11,3.0
@@ -106,3 +108,5 @@ permalink: /kb/215/Q215385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169910/
 
 ## Q169910: SNA Print Service Doesn't Support SVF with 5250 Printing
 
+{% raw %}
+
 	Article: Q169910
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -70,3 +72,5 @@ permalink: /kb/169/Q169910/
 	
 	=============================================================================
 	
+
+{% endraw %}

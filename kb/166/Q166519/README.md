@@ -6,6 +6,8 @@ permalink: /kb/166/Q166519/
 
 ## Q166519: XCON: IMS Encapsulates the X.400 O/R Address
 
+{% raw %}
+
 	Article: Q166519
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -80,3 +82,5 @@ permalink: /kb/166/Q166519/
 	
 	=============================================================================
 	
+
+{% endraw %}

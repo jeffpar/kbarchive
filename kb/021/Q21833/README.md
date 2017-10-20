@@ -6,6 +6,8 @@ permalink: /kb/021/Q21833/
 
 ## Q21833: .EXE File Size Larger than Other BASIC Compilers
 
+{% raw %}
+
 	Article: Q21833
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -24,3 +26,5 @@ permalink: /kb/021/Q21833/
 	QuickBASIC .EXE programs are larger because of added features and
 	functionality. A program compiled with QuickBASIC will usually be
 	larger than one compiled with older compilers.
+
+{% endraw %}

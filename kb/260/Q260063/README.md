@@ -6,6 +6,8 @@ permalink: /kb/260/Q260063/
 
 ## Q260063: XADM: News Article with Followup-To Property Defined Not Posted
 
+{% raw %}
+
 	Article: Q260063
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -90,3 +92,5 @@ permalink: /kb/260/Q260063/
 	
 	=============================================================================
 	
+
+{% endraw %}

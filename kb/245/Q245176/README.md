@@ -6,6 +6,8 @@ permalink: /kb/245/Q245176/
 
 ## Q245176: Cached Terminal Server Roaming Profiles Use Too Much Disk Space.
 
+{% raw %}
+
 	Article: Q245176
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/245/Q245176/
 	
 	=============================================================================
 	
+
+{% endraw %}

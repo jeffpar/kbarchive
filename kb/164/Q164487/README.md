@@ -6,6 +6,8 @@ permalink: /kb/164/Q164487/
 
 ## Q164487: Briefcase May Take a Long Time to Update
 
+{% raw %}
+
 	Article: Q164487
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/164/Q164487/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236293/
 
 ## Q236293: Spooler Service Stops When Using Windows 95/98 Printer Driver
 
+{% raw %}
+
 	Article: Q236293
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/236/Q236293/
 	
 	=============================================================================
 	
+
+{% endraw %}

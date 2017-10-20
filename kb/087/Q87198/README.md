@@ -6,6 +6,8 @@ permalink: /kb/087/Q87198/
 
 ## Q87198: PROFS: Information Required by PROFS Gateway Install Program
 
+{% raw %}
+
 	Article: Q87198
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -55,3 +57,5 @@ permalink: /kb/087/Q87198/
 	
 	=============================================================================
 	
+
+{% endraw %}

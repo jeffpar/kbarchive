@@ -6,6 +6,8 @@ permalink: /kb/221/Q221644/
 
 ## Q221644: FIX: Can Drag Folder in Installed Controls in Component Gallery
 
+{% raw %}
+
 	Article: Q221644
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/221/Q221644/
 	
 	=============================================================================
 	
+
+{% endraw %}

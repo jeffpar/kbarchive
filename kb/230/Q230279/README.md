@@ -6,6 +6,8 @@ permalink: /kb/230/Q230279/
 
 ## Q230279: Corrupted User Profiles Can Cause New Local Default to Be Lost
 
+{% raw %}
+
 	Article: Q230279
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -82,3 +84,5 @@ permalink: /kb/230/Q230279/
 	
 	=============================================================================
 	
+
+{% endraw %}

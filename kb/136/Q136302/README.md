@@ -6,6 +6,8 @@ permalink: /kb/136/Q136302/
 
 ## Q136302: FIX: Drop-down Combobox Does Not Move with Property Sheet
 
+{% raw %}
+
 	Article: Q136302
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.52,1.52b; winnt:2.0,2.1,2.2
@@ -215,3 +217,5 @@ permalink: /kb/136/Q136302/
 	
 	=============================================================================
 	
+
+{% endraw %}

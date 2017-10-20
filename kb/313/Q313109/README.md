@@ -6,6 +6,8 @@ permalink: /kb/313/Q313109/
 
 ## Q313109: HOW TO: Find the Problem Exception Stack in the Stack Trace
 
+{% raw %}
+
 	Article: Q313109
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -195,3 +197,5 @@ permalink: /kb/313/Q313109/
 	
 	=============================================================================
 	
+
+{% endraw %}

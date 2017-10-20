@@ -6,6 +6,8 @@ permalink: /kb/150/Q150642/
 
 ## Q150642: HOWTO: Use SSInt.exe in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q150642
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150642/
 	
 	=============================================================================
 	
+
+{% endraw %}

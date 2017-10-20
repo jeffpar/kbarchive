@@ -6,6 +6,8 @@ permalink: /kb/097/Q97399/
 
 ## Q97399: DdList.exe Implements Owner-Draw Combo Boxes
 
+{% raw %}
+
 	Article: Q97399
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/097/Q97399/
 	
 	=============================================================================
 	
+
+{% endraw %}

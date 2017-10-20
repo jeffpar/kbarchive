@@ -6,6 +6,8 @@ permalink: /kb/128/Q128703/
 
 ## Q128703: Cannot Change Video Resolution on HP Vectra Computer
 
+{% raw %}
+
 	Article: Q128703
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/128/Q128703/
 	
 	=============================================================================
 	
+
+{% endraw %}

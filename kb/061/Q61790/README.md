@@ -6,6 +6,8 @@ permalink: /kb/061/Q61790/
 
 ## Q61790: A1022 Error If Include Environment Variable Is Not Set
 
+{% raw %}
+
 	Article: Q61790
 	Product(s): See article
 	Version(s): 2.51
@@ -35,3 +37,5 @@ permalink: /kb/061/Q61790/
 	To compile programs successfully, set the INCLUDE environment variable
 	to the QuickC with QuickAssembler INCLUDE directory; for example, SET
 	INCLUDE=D:\QCQA\INCLUDE.
+
+{% endraw %}

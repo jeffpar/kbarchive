@@ -6,6 +6,8 @@ permalink: /kb/135/Q135385/
 
 ## Q135385: FIX: CANCEL After &quot;Object in Use&quot; Error Closes Visual FoxPro
 
+{% raw %}
+
 	Article: Q135385
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/135/Q135385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182293/
 
 ## Q182293: Err Msg: Rundll32 Has Performed an Illegal Operation...
 
+{% raw %}
+
 	Article: Q182293
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -78,3 +80,5 @@ permalink: /kb/182/Q182293/
 	
 	=============================================================================
 	
+
+{% endraw %}

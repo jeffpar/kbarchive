@@ -6,6 +6,8 @@ permalink: /kb/084/Q84772/
 
 ## Q84772: WRK Err Msg: One of the Library Files Needed to Run This...
 
+{% raw %}
+
 	Article: Q84772
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/084/Q84772/
 	
 	=============================================================================
 	
+
+{% endraw %}

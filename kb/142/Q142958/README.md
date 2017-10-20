@@ -6,6 +6,8 @@ permalink: /kb/142/Q142958/
 
 ## Q142958: CTRL Key Combinations Not Working If Set to United Kingdom
 
+{% raw %}
+
 	Article: Q142958
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142958/
 	
 	=============================================================================
 	
+
+{% endraw %}

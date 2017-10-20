@@ -6,6 +6,8 @@ permalink: /kb/176/Q176055/
 
 ## Q176055: How to Replace a Damaged Msn.ini File
 
+{% raw %}
+
 	Article: Q176055
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -75,3 +77,5 @@ permalink: /kb/176/Q176055/
 	
 	=============================================================================
 	
+
+{% endraw %}

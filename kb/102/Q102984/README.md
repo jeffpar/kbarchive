@@ -6,6 +6,8 @@ permalink: /kb/102/Q102984/
 
 ## Q102984: REG: ControlSet&#92;Select Subkey Entries
 
+{% raw %}
+
 	Article: Q102984
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/102/Q102984/
 	
 	=============================================================================
 	
+
+{% endraw %}

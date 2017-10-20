@@ -6,6 +6,8 @@ permalink: /kb/138/Q138777/
 
 ## Q138777: How to Print Graphs Created in the Graph Wizard
 
+{% raw %}
+
 	Article: Q138777
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138777/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87028/
 
 ## Q87028: SMTP: How to Recognize Successful SMTP Gateway Installation
 
+{% raw %}
+
 	Article: Q87028
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/087/Q87028/
 	
 	=============================================================================
 	
+
+{% endraw %}

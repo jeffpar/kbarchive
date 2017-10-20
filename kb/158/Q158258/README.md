@@ -6,6 +6,8 @@ permalink: /kb/158/Q158258/
 
 ## Q158258: INFO: STL Sample for the reverse_copy Function
 
+{% raw %}
+
 	Article: Q158258
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -189,3 +191,5 @@ permalink: /kb/158/Q158258/
 	
 	=============================================================================
 	
+
+{% endraw %}

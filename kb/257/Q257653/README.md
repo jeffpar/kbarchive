@@ -6,6 +6,8 @@ permalink: /kb/257/Q257653/
 
 ## Q257653: Zone Err Msg: Failed to Write Settings to Registry
 
+{% raw %}
+
 	Article: Q257653
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/257/Q257653/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199947/
 
 ## Q199947: TCP/IP: Windows NT 4.0 Does Not Support TCP Scale Option
 
+{% raw %}
+
 	Article: Q199947
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -88,3 +90,5 @@ permalink: /kb/199/Q199947/
 	
 	=============================================================================
 	
+
+{% endraw %}

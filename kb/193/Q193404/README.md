@@ -6,6 +6,8 @@ permalink: /kb/193/Q193404/
 
 ## Q193404: INFO: IntelliSense and Visual FoxPro 6.0
 
+{% raw %}
+
 	Article: Q193404
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -84,3 +86,5 @@ permalink: /kb/193/Q193404/
 	
 	=============================================================================
 	
+
+{% endraw %}

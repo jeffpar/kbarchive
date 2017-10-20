@@ -6,6 +6,8 @@ permalink: /kb/249/Q249599/
 
 ## Q249599: Virtual Directory Mapped to UNC Returns Server-Side Script Code
 
+{% raw %}
+
 	Article: Q249599
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -274,3 +276,5 @@ permalink: /kb/249/Q249599/
 	
 	=============================================================================
 	
+
+{% endraw %}

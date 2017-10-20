@@ -6,6 +6,8 @@ permalink: /kb/260/Q260347/
 
 ## Q260347: MS00-060: IIS 4: Fix for Cross-Site Scripting Issues
 
+{% raw %}
+
 	Article: Q260347
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -160,3 +162,5 @@ permalink: /kb/260/Q260347/
 	
 	=============================================================================
 	
+
+{% endraw %}

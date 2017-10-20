@@ -6,6 +6,8 @@ permalink: /kb/172/Q172237/
 
 ## Q172237: Changing Link Service Properties Doesn't Update Com.cfg File
 
+{% raw %}
+
 	Article: Q172237
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -77,3 +79,5 @@ permalink: /kb/172/Q172237/
 	
 	=============================================================================
 	
+
+{% endraw %}

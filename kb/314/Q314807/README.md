@@ -6,6 +6,8 @@ permalink: /kb/314/Q314807/
 
 ## Q314807: LUWID Specified by SET_TP_PROPERTIES Verb May Be Overwritten
 
+{% raw %}
+
 	Article: Q314807
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -83,3 +85,5 @@ permalink: /kb/314/Q314807/
 	
 	=============================================================================
 	
+
+{% endraw %}

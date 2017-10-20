@@ -6,6 +6,8 @@ permalink: /kb/168/Q168029/
 
 ## Q168029: FIX: Global Optimizations (/Og) May Cause the Compiler to Hang
 
+{% raw %}
+
 	Article: Q168029
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -85,3 +87,5 @@ permalink: /kb/168/Q168029/
 	
 	=============================================================================
 	
+
+{% endraw %}

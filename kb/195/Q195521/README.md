@@ -6,6 +6,8 @@ permalink: /kb/195/Q195521/
 
 ## Q195521: XGEN: Exchange &quot;How-To&quot; Documents Available on the WWW
 
+{% raw %}
+
 	Article: Q195521
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/195/Q195521/
 	
 	=============================================================================
 	
+
+{% endraw %}

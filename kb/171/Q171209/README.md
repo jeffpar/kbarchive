@@ -6,6 +6,8 @@ permalink: /kb/171/Q171209/
 
 ## Q171209: BUG: Pop-up Menus May Cause Application Error in IDE
 
+{% raw %}
+
 	Article: Q171209
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/171/Q171209/
 	
 	=============================================================================
 	
+
+{% endraw %}

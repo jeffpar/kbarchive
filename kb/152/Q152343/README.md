@@ -6,6 +6,8 @@ permalink: /kb/152/Q152343/
 
 ## Q152343: How to Use a Custom Configuration File
 
+{% raw %}
+
 	Article: Q152343
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152343/
 	
 	=============================================================================
 	
+
+{% endraw %}

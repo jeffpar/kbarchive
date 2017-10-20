@@ -6,6 +6,8 @@ permalink: /kb/172/Q172744/
 
 ## Q172744: WD97: Custom Outline Numbered Preview Changes Location
 
+{% raw %}
+
 	Article: Q172744
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/172/Q172744/
 	
 	=============================================================================
 	
+
+{% endraw %}

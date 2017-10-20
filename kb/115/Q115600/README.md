@@ -6,6 +6,8 @@ permalink: /kb/115/Q115600/
 
 ## Q115600: Problems Accessing Floppy Disk Drives
 
+{% raw %}
+
 	Article: Q115600
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/115/Q115600/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105557/
 
 ## Q105557: HIMEM.SYS Verbose and Quiet Switches
 
+{% raw %}
+
 	Article: Q105557
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/105/Q105557/
 	
 	=============================================================================
 	
+
+{% endraw %}

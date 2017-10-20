@@ -6,6 +6,8 @@ permalink: /kb/110/Q110946/
 
 ## Q110946: SP2 Prohibits Administrator Access to Locked Workstations
 
+{% raw %}
+
 	Article: Q110946
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -66,3 +68,5 @@ permalink: /kb/110/Q110946/
 	
 	=============================================================================
 	
+
+{% endraw %}

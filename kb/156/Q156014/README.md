@@ -6,6 +6,8 @@ permalink: /kb/156/Q156014/
 
 ## Q156014: HOWTO: Set Up OLE Automation in Visual FoxPro
 
+{% raw %}
+
 	Article: Q156014
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/156/Q156014/
 	
 	=============================================================================
 	
+
+{% endraw %}

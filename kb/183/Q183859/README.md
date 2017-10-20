@@ -6,6 +6,8 @@ permalink: /kb/183/Q183859/
 
 ## Q183859: Integrity Checking on Secure Channels with Domain Controllers
 
+{% raw %}
+
 	Article: Q183859
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -126,3 +128,5 @@ permalink: /kb/183/Q183859/
 	
 	=============================================================================
 	
+
+{% endraw %}

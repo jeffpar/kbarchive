@@ -6,6 +6,8 @@ permalink: /kb/186/Q186545/
 
 ## Q186545: Terminal Server Error Messages: 3200 to 3299
 
+{% raw %}
+
 	Article: Q186545
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -512,3 +514,5 @@ permalink: /kb/186/Q186545/
 	
 	=============================================================================
 	
+
+{% endraw %}

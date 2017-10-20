@@ -6,6 +6,8 @@ permalink: /kb/079/Q79386/
 
 ## Q79386: PRB: High Granularity Setting Affects Windows/VB Form Resizing
 
+{% raw %}
+
 	Article: Q79386
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0,3.0a,3.1
@@ -75,3 +77,5 @@ permalink: /kb/079/Q79386/
 	
 	=============================================================================
 	
+
+{% endraw %}

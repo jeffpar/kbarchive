@@ -6,6 +6,8 @@ permalink: /kb/058/Q58375/
 
 ## Q58375: Erratic Output on IBM Proprinter X24 and XL24
 
+{% raw %}
+
 	Article: Q58375
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/058/Q58375/
 	
 	=============================================================================
 	
+
+{% endraw %}

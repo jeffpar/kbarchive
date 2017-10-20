@@ -6,6 +6,8 @@ permalink: /kb/154/Q154688/
 
 ## Q154688: DPT PCI-SCSI Fails on PPC if IRQ Greater Than 15
 
+{% raw %}
+
 	Article: Q154688
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -55,3 +57,5 @@ permalink: /kb/154/Q154688/
 	
 	=============================================================================
 	
+
+{% endraw %}

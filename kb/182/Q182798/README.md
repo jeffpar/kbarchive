@@ -6,6 +6,8 @@ permalink: /kb/182/Q182798/
 
 ## Q182798: XADM: Routing Calculation Fails Across Entire Organization
 
+{% raw %}
+
 	Article: Q182798
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -119,3 +121,5 @@ permalink: /kb/182/Q182798/
 	
 	=============================================================================
 	
+
+{% endraw %}

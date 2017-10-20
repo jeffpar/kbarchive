@@ -6,6 +6,8 @@ permalink: /kb/183/Q183651/
 
 ## Q183651: Default Memory Settings for Lexmark Optra S 1250 Incorrect
 
+{% raw %}
+
 	Article: Q183651
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/183/Q183651/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248043/
 
 ## Q248043: Error Message: 403.6 - Forbidden: IP Address Rejected
 
+{% raw %}
+
 	Article: Q248043
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -126,3 +128,5 @@ permalink: /kb/248/Q248043/
 	
 	=============================================================================
 	
+
+{% endraw %}

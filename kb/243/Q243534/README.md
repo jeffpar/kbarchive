@@ -6,6 +6,8 @@ permalink: /kb/243/Q243534/
 
 ## Q243534: BUG: Optim. Gives Wrong Result for Inline Func Returning double
 
+{% raw %}
+
 	Article: Q243534
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -111,3 +113,5 @@ permalink: /kb/243/Q243534/
 	
 	=============================================================================
 	
+
+{% endraw %}

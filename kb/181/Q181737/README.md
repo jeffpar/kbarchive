@@ -6,6 +6,8 @@ permalink: /kb/181/Q181737/
 
 ## Q181737: How a 3270 EIS Application May Affect Outbound Pacing
 
+{% raw %}
+
 	Article: Q181737
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -136,3 +138,5 @@ permalink: /kb/181/Q181737/
 	
 	=============================================================================
 	
+
+{% endraw %}

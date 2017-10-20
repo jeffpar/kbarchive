@@ -6,6 +6,8 @@ permalink: /kb/106/Q106429/
 
 ## Q106429: WFWG Upgrade 3.11 Disk Directories (5.25 Inch, 1.2 MB)
 
+{% raw %}
+
 	Article: Q106429
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -719,3 +721,5 @@ permalink: /kb/106/Q106429/
 	
 	=============================================================================
 	
+
+{% endraw %}

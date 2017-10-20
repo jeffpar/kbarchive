@@ -6,6 +6,8 @@ permalink: /kb/171/Q171857/
 
 ## Q171857: Long File Name Lost After Using Send To Command with WordPad
 
+{% raw %}
+
 	Article: Q171857
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; WINDOWS NT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/171/Q171857/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120821/
 
 ## Q120821: VUDP.386 Not Copied During TCP/IP-32 Install
 
+{% raw %}
+
 	Article: Q120821
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11; :3.11
@@ -46,3 +48,5 @@ permalink: /kb/120/Q120821/
 	
 	=============================================================================
 	
+
+{% endraw %}

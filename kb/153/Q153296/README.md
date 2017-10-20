@@ -6,6 +6,8 @@ permalink: /kb/153/Q153296/
 
 ## Q153296: Write Cache on IDE/ATAPI Disks Is Not Flushed on Shut Down
 
+{% raw %}
+
 	Article: Q153296
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -113,3 +115,5 @@ permalink: /kb/153/Q153296/
 	
 	=============================================================================
 	
+
+{% endraw %}

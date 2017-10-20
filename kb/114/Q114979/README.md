@@ -6,6 +6,8 @@ permalink: /kb/114/Q114979/
 
 ## Q114979: BUG: Access Violation or R6018 Executing IF Statement
 
+{% raw %}
+
 	Article: Q114979
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -104,3 +106,5 @@ permalink: /kb/114/Q114979/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191854/
 
 ## Q191854: RAS Authentication Does Not Work Connecting to RRAS Server
 
+{% raw %}
+
 	Article: Q191854
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -91,3 +93,5 @@ permalink: /kb/191/Q191854/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41613/
 
 ## Q41613: Error L2003 When Linking with Wrong Libraries
 
+{% raw %}
+
 	Article: Q41613
 	Product(s): See article
 	Version(s): 2.00
@@ -29,3 +31,5 @@ permalink: /kb/041/Q41613/
 	   consistent.
 	
 	2. Recompile the program.
+
+{% endraw %}

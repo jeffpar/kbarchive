@@ -6,6 +6,8 @@ permalink: /kb/048/Q48770/
 
 ## Q48770: Mac DOS: IRMA Board Not Supported by Mail 1.37, 2.00, 3.00
 
+{% raw %}
+
 	Article: Q48770
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -52,3 +54,5 @@ permalink: /kb/048/Q48770/
 	
 	=============================================================================
 	
+
+{% endraw %}

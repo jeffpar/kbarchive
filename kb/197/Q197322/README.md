@@ -6,6 +6,8 @@ permalink: /kb/197/Q197322/
 
 ## Q197322: PRB: &quot;Invalid File Format&quot; from ImgEdit Reading Sony Mavica JPG
 
+{% raw %}
+
 	Article: Q197322
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0sp3,6.0
@@ -81,3 +83,5 @@ permalink: /kb/197/Q197322/
 	
 	=============================================================================
 	
+
+{% endraw %}

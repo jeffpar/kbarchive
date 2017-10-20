@@ -6,6 +6,8 @@ permalink: /kb/215/Q215472/
 
 ## Q215472: XFOR: How the X.400 Connector Handles High-Priority Mail
 
+{% raw %}
+
 	Article: Q215472
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/215/Q215472/
 	
 	=============================================================================
 	
+
+{% endraw %}

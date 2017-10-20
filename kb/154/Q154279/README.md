@@ -6,6 +6,8 @@ permalink: /kb/154/Q154279/
 
 ## Q154279: PRB: Visual SourceSafe Status Truncates Filenames to 20 Char
 
+{% raw %}
+
 	Article: Q154279
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/154/Q154279/
 	
 	=============================================================================
 	
+
+{% endraw %}

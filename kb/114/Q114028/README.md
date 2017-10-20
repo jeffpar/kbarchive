@@ -6,6 +6,8 @@ permalink: /kb/114/Q114028/
 
 ## Q114028: PC Forms: Run Minimized Property Doesn't Function in E-form
 
+{% raw %}
+
 	Article: Q114028
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -80,3 +82,5 @@ permalink: /kb/114/Q114028/
 	
 	=============================================================================
 	
+
+{% endraw %}

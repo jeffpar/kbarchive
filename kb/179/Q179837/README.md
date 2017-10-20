@@ -6,6 +6,8 @@ permalink: /kb/179/Q179837/
 
 ## Q179837: XCON: NDR from Malformed Message Not Received
 
+{% raw %}
+
 	Article: Q179837
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -123,3 +125,5 @@ permalink: /kb/179/Q179837/
 	
 	=============================================================================
 	
+
+{% endraw %}

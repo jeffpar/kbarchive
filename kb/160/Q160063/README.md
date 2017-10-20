@@ -6,6 +6,8 @@ permalink: /kb/160/Q160063/
 
 ## Q160063: BUG: Printing Unconverted 2.x Report from Preview Causes Fault
 
+{% raw %}
+
 	Article: Q160063
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/160/Q160063/
 	
 	=============================================================================
 	
+
+{% endraw %}

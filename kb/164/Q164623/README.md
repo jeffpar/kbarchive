@@ -6,6 +6,8 @@ permalink: /kb/164/Q164623/
 
 ## Q164623: WD97: InlineShape.Reset Does Not Reset Size of Document Object
 
+{% raw %}
+
 	Article: Q164623
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -119,3 +121,5 @@ permalink: /kb/164/Q164623/
 	
 	=============================================================================
 	
+
+{% endraw %}

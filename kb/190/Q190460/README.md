@@ -6,6 +6,8 @@ permalink: /kb/190/Q190460/
 
 ## Q190460: PRB: Type Mismatch Error in Client After Modifying Server DLL
 
+{% raw %}
+
 	Article: Q190460
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -139,3 +141,5 @@ permalink: /kb/190/Q190460/
 	
 	=============================================================================
 	
+
+{% endraw %}

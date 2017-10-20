@@ -6,6 +6,8 @@ permalink: /kb/193/Q193215/
 
 ## Q193215: XADM: Security Context Deleted and Initialized at Same Time
 
+{% raw %}
+
 	Article: Q193215
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -64,3 +66,5 @@ permalink: /kb/193/Q193215/
 	
 	=============================================================================
 	
+
+{% endraw %}

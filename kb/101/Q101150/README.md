@@ -6,6 +6,8 @@ permalink: /kb/101/Q101150/
 
 ## Q101150: Operating Characteristics and Restrictions of Named Pipes
 
+{% raw %}
+
 	Article: Q101150
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/101/Q101150/
 	
 	=============================================================================
 	
+
+{% endraw %}

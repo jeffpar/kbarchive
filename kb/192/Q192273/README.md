@@ -6,6 +6,8 @@ permalink: /kb/192/Q192273/
 
 ## Q192273: PRB: SendKeys Does Not Work with NumLock or Caplock
 
+{% raw %}
+
 	Article: Q192273
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/192/Q192273/
 	
 	=============================================================================
 	
+
+{% endraw %}

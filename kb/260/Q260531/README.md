@@ -6,6 +6,8 @@ permalink: /kb/260/Q260531/
 
 ## Q260531: PC Win: PC WRmt: Error Message: &quot;MSMAIL Caused a General...
 
+{% raw %}
+
 	Article: Q260531
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.5
@@ -61,3 +63,5 @@ permalink: /kb/260/Q260531/
 	
 	=============================================================================
 	
+
+{% endraw %}

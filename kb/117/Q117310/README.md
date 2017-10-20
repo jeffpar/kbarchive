@@ -6,6 +6,8 @@ permalink: /kb/117/Q117310/
 
 ## Q117310: &quot;Copy to Word&quot; Missing from Bookshelf Edit Menu
 
+{% raw %}
+
 	Article: Q117310
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): '96-'97,1994 edition,1995 edition
@@ -83,3 +85,5 @@ permalink: /kb/117/Q117310/
 	
 	=============================================================================
 	
+
+{% endraw %}

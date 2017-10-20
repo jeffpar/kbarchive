@@ -6,6 +6,8 @@ permalink: /kb/163/Q163365/
 
 ## Q163365: WD97: Hang During Copy/Paste or Drag/Drop of Object After Undo
 
+{% raw %}
+
 	Article: Q163365
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/163/Q163365/
 	
 	=============================================================================
 	
+
+{% endraw %}

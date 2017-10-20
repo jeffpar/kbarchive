@@ -6,6 +6,8 @@ permalink: /kb/114/Q114285/
 
 ## Q114285: BUG: Summary List of ODBC 1.0 Bugs
 
+{% raw %}
+
 	Article: Q114285
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0
@@ -319,3 +321,5 @@ permalink: /kb/114/Q114285/
 	
 	=============================================================================
 	
+
+{% endraw %}

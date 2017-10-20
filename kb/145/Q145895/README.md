@@ -6,6 +6,8 @@ permalink: /kb/145/Q145895/
 
 ## Q145895: Cinemania 96: Facts from Online Update Are Inactive
 
+{% raw %}
+
 	Article: Q145895
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -56,3 +58,5 @@ permalink: /kb/145/Q145895/
 	
 	=============================================================================
 	
+
+{% endraw %}

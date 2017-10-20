@@ -6,6 +6,8 @@ permalink: /kb/143/Q143122/
 
 ## Q143122: Novell Netware Client for Windows NT Fails After Service Pack
 
+{% raw %}
+
 	Article: Q143122
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -73,3 +75,5 @@ permalink: /kb/143/Q143122/
 	
 	=============================================================================
 	
+
+{% endraw %}

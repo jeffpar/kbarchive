@@ -6,6 +6,8 @@ permalink: /kb/298/Q298430/
 
 ## Q298430: WD97: Nothing Happens When You Click a Hyperlink in a WordMail M
 
+{% raw %}
+
 	Article: Q298430
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/298/Q298430/
 	
 	=============================================================================
 	
+
+{% endraw %}

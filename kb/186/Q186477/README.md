@@ -6,6 +6,8 @@ permalink: /kb/186/Q186477/
 
 ## Q186477: Terminal Server Commands: LOGOFF
 
+{% raw %}
+
 	Article: Q186477
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -100,3 +102,5 @@ permalink: /kb/186/Q186477/
 	
 	=============================================================================
 	
+
+{% endraw %}

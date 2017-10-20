@@ -6,6 +6,8 @@ permalink: /kb/163/Q163191/
 
 ## Q163191: WD97: Grouped Drawing Objects Open as a Box in Word 7.0
 
+{% raw %}
+
 	Article: Q163191
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -53,3 +55,5 @@ permalink: /kb/163/Q163191/
 	
 	=============================================================================
 	
+
+{% endraw %}

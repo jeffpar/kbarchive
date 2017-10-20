@@ -6,6 +6,8 @@ permalink: /kb/066/Q66054/
 
 ## Q66054: HOWTO: Create Static Overlays with Macro Assembler
 
+{% raw %}
+
 	Article: Q66054
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -130,3 +132,5 @@ permalink: /kb/066/Q66054/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154119/
 
 ## Q154119: Error Message: Bad or Missing Ktvga.fon
 
+{% raw %}
+
 	Article: Q154119
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -49,3 +51,5 @@ permalink: /kb/154/Q154119/
 	
 	=============================================================================
 	
+
+{% endraw %}

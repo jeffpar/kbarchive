@@ -6,6 +6,8 @@ permalink: /kb/225/Q225211/
 
 ## Q225211: Bookshelf 2000: Location of the Network Administrator's Guide
 
+{% raw %}
+
 	Article: Q225211
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -44,3 +46,5 @@ permalink: /kb/225/Q225211/
 	
 	=============================================================================
 	
+
+{% endraw %}

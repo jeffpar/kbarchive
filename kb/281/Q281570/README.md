@@ -6,6 +6,8 @@ permalink: /kb/281/Q281570/
 
 ## Q281570: HOWTO: Use ASP Request and Session Collections to Link Forms
 
+{% raw %}
+
 	Article: Q281570
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -193,3 +195,5 @@ permalink: /kb/281/Q281570/
 	
 	=============================================================================
 	
+
+{% endraw %}

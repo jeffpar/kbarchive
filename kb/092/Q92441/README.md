@@ -6,6 +6,8 @@ permalink: /kb/092/Q92441/
 
 ## Q92441: SAMPLE: VerStamp.exe Accesses File Version Information Resource
 
+{% raw %}
+
 	Article: Q92441
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/092/Q92441/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245446/
 
 ## Q245446: XCLN: Error Message: No Transport Provider Was Available
 
+{% raw %}
+
 	Article: Q245446
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -110,3 +112,5 @@ permalink: /kb/245/Q245446/
 	
 	=============================================================================
 	
+
+{% endraw %}

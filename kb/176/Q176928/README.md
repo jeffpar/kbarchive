@@ -6,6 +6,8 @@ permalink: /kb/176/Q176928/
 
 ## Q176928: Bookshelf Err Msg: Could Not Open the File...
 
+{% raw %}
+
 	Article: Q176928
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:98
@@ -97,3 +99,5 @@ permalink: /kb/176/Q176928/
 	
 	=============================================================================
 	
+
+{% endraw %}

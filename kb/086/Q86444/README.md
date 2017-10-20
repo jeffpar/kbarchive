@@ -6,6 +6,8 @@ permalink: /kb/086/Q86444/
 
 ## Q86444: PPT: How to Create More Than One Notes Page Per Slide
 
+{% raw %}
+
 	Article: Q86444
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -77,3 +79,5 @@ permalink: /kb/086/Q86444/
 	
 	=============================================================================
 	
+
+{% endraw %}

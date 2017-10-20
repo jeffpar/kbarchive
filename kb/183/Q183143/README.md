@@ -6,6 +6,8 @@ permalink: /kb/183/Q183143/
 
 ## Q183143: ODE97: Run-Time Application Changes Windows File Associations
 
+{% raw %}
+
 	Article: Q183143
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0,97
@@ -168,3 +170,5 @@ permalink: /kb/183/Q183143/
 	
 	=============================================================================
 	
+
+{% endraw %}

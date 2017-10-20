@@ -6,6 +6,8 @@ permalink: /kb/164/Q164602/
 
 ## Q164602: SMS: Ending a Remote Control Session Leaves Open Handles
 
+{% raw %}
+
 	Article: Q164602
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164602/
 	
 	=============================================================================
 	
+
+{% endraw %}

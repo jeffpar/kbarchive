@@ -6,6 +6,8 @@ permalink: /kb/194/Q194923/
 
 ## Q194923: HOWTO: Trap Control Characters Using the MSComm Control
 
+{% raw %}
+
 	Article: Q194923
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -224,3 +226,5 @@ permalink: /kb/194/Q194923/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/092/Q92772/
 
 ## Q92772: No Files Found with SMC 90C65 Based Arcnet Cards in WFWG
 
+{% raw %}
+
 	Article: Q92772
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/092/Q92772/
 	
 	=============================================================================
 	
+
+{% endraw %}

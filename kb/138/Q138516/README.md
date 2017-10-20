@@ -6,6 +6,8 @@ permalink: /kb/138/Q138516/
 
 ## Q138516: Problems with the Samp1.adm File
 
+{% raw %}
+
 	Article: Q138516
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/138/Q138516/
 	
 	=============================================================================
 	
+
+{% endraw %}

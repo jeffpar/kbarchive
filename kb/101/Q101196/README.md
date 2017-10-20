@@ -6,6 +6,8 @@ permalink: /kb/101/Q101196/
 
 ## Q101196: LastDrive Affects Windows on Novell and LAN Manager
 
+{% raw %}
+
 	Article: Q101196
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -89,3 +91,5 @@ permalink: /kb/101/Q101196/
 	
 	=============================================================================
 	
+
+{% endraw %}

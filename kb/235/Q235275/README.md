@@ -6,6 +6,8 @@ permalink: /kb/235/Q235275/
 
 ## Q235275: INF:Sample TCP/IP CICS Concurrent Server Program Writes Log Data
 
+{% raw %}
+
 	Article: Q235275
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -77,3 +79,5 @@ permalink: /kb/235/Q235275/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169147/
 
 ## Q169147: Briefcase Error &quot;DLLCanUnloadNow&quot;
 
+{% raw %}
+
 	Article: Q169147
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/169/Q169147/
 	
 	=============================================================================
 	
+
+{% endraw %}

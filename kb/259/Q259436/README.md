@@ -6,6 +6,8 @@ permalink: /kb/259/Q259436/
 
 ## Q259436: Log Off all Terminal Server Session Users from a Command Prompt
 
+{% raw %}
+
 	Article: Q259436
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/259/Q259436/
 	
 	=============================================================================
 	
+
+{% endraw %}

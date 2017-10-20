@@ -6,6 +6,8 @@ permalink: /kb/121/Q121075/
 
 ## Q121075: DOCERR: Video for Windows Dev Kit ver. 1.1 &amp; JPEG Compression
 
+{% raw %}
+
 	Article: Q121075
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1; :1.1
@@ -56,3 +58,5 @@ permalink: /kb/121/Q121075/
 	
 	=============================================================================
 	
+
+{% endraw %}

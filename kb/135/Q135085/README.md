@@ -6,6 +6,8 @@ permalink: /kb/135/Q135085/
 
 ## Q135085: OLE Control Container Support in Visual C++ and MFC
 
+{% raw %}
+
 	Article: Q135085
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/135/Q135085/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139513/
 
 ## Q139513: DOCERR: DocumentFile Property Returns &quot; &quot; For Embedded Objects
 
+{% raw %}
+
 	Article: Q139513
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139513/
 	
 	=============================================================================
 	
+
+{% endraw %}

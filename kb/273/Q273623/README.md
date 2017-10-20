@@ -6,6 +6,8 @@ permalink: /kb/273/Q273623/
 
 ## Q273623: Midtown Madness 2: Sky and Checkpoint Textures Are Distorted
 
+{% raw %}
+
 	Article: Q273623
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -75,3 +77,5 @@ permalink: /kb/273/Q273623/
 	
 	=============================================================================
 	
+
+{% endraw %}

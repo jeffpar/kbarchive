@@ -6,6 +6,8 @@ permalink: /kb/219/Q219062/
 
 ## Q219062: DHCPCMD Converts OptionID Parameter to Octal Value
 
+{% raw %}
+
 	Article: Q219062
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/219/Q219062/
 	
 	=============================================================================
 	
+
+{% endraw %}

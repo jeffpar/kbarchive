@@ -6,6 +6,8 @@ permalink: /kb/245/Q245538/
 
 ## Q245538: &quot;STOP 0x0000000A&quot; Error Message While Using Rcmdsvc.exe
 
+{% raw %}
+
 	Article: Q245538
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -73,3 +75,5 @@ permalink: /kb/245/Q245538/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159779/
 
 ## Q159779: WD97: Invalid Page Fault Opening File with Long Path, File Name
 
+{% raw %}
+
 	Article: Q159779
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/159/Q159779/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191215/
 
 ## Q191215: BUG: Print Method Does Not Work Within a With-Block
 
+{% raw %}
+
 	Article: Q191215
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -94,3 +96,5 @@ permalink: /kb/191/Q191215/
 	
 	=============================================================================
 	
+
+{% endraw %}

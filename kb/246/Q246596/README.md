@@ -6,6 +6,8 @@ permalink: /kb/246/Q246596/
 
 ## Q246596: Cannot Use VBScript Classes with Application or Session Scope
 
+{% raw %}
+
 	Article: Q246596
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -137,3 +139,5 @@ permalink: /kb/246/Q246596/
 	
 	=============================================================================
 	
+
+{% endraw %}

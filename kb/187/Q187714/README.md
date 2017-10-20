@@ -6,6 +6,8 @@ permalink: /kb/187/Q187714/
 
 ## Q187714: Domain Controllers Being Replaced in 1C List
 
+{% raw %}
+
 	Article: Q187714
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -56,3 +58,5 @@ permalink: /kb/187/Q187714/
 	
 	=============================================================================
 	
+
+{% endraw %}

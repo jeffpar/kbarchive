@@ -6,6 +6,8 @@ permalink: /kb/108/Q108478/
 
 ## Q108478: After Dark AD-DOS.COM and Novell NetWare LSL.COM
 
+{% raw %}
+
 	Article: Q108478
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -65,3 +67,5 @@ permalink: /kb/108/Q108478/
 	
 	=============================================================================
 	
+
+{% endraw %}

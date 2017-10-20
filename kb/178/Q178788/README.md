@@ -6,6 +6,8 @@ permalink: /kb/178/Q178788/
 
 ## Q178788: WD97: Cannot &quot;Search the Web&quot; After Canceling Connection to ISP
 
+{% raw %}
+
 	Article: Q178788
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -112,3 +114,5 @@ permalink: /kb/178/Q178788/
 	
 	=============================================================================
 	
+
+{% endraw %}

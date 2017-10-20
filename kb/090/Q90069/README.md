@@ -6,6 +6,8 @@ permalink: /kb/090/Q90069/
 
 ## Q90069: GENLIB.DLL May Cause GP Faults in Windows 3.1
 
+{% raw %}
+
 	Article: Q90069
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/090/Q90069/
 	
 	=============================================================================
 	
+
+{% endraw %}

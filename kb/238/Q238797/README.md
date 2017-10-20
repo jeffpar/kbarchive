@@ -6,6 +6,8 @@ permalink: /kb/238/Q238797/
 
 ## Q238797: DNS Server Installation and Configuration Document Available
 
+{% raw %}
+
 	Article: Q238797
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/238/Q238797/
 	
 	=============================================================================
 	
+
+{% endraw %}

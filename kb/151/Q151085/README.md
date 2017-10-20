@@ -6,6 +6,8 @@ permalink: /kb/151/Q151085/
 
 ## Q151085: Mastering Visual C++: Help/Print Closes Unexpectedly
 
+{% raw %}
+
 	Article: Q151085
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a; WINDOWS:95
@@ -63,3 +65,5 @@ permalink: /kb/151/Q151085/
 	
 	=============================================================================
 	
+
+{% endraw %}

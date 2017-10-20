@@ -6,6 +6,8 @@ permalink: /kb/111/Q111745/
 
 ## Q111745: PRB: &quot;Position off Screen&quot; in FoxPro for Macintosh Application
 
+{% raw %}
+
 	Article: Q111745
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -65,3 +67,5 @@ permalink: /kb/111/Q111745/
 	
 	=============================================================================
 	
+
+{% endraw %}

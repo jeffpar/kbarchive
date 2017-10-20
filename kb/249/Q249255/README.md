@@ -6,6 +6,8 @@ permalink: /kb/249/Q249255/
 
 ## Q249255: Cannot Insert File Attachment from Local Drive to Office
 
+{% raw %}
+
 	Article: Q249255
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -76,3 +78,5 @@ permalink: /kb/249/Q249255/
 	
 	=============================================================================
 	
+
+{% endraw %}

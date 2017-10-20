@@ -6,6 +6,8 @@ permalink: /kb/135/Q135599/
 
 ## Q135599: How To Reposition a Centered Wallpaper Bitmap on The Desktop
 
+{% raw %}
+
 	Article: Q135599
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; winnt:3.5,3.51
@@ -90,3 +92,5 @@ permalink: /kb/135/Q135599/
 	
 	=============================================================================
 	
+
+{% endraw %}

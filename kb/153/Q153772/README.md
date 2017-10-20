@@ -6,6 +6,8 @@ permalink: /kb/153/Q153772/
 
 ## Q153772: Bookshelf Err Msg: ACME Setup Caused a GP Fault in VER.DLL
 
+{% raw %}
+
 	Article: Q153772
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -67,3 +69,5 @@ permalink: /kb/153/Q153772/
 	
 	=============================================================================
 	
+
+{% endraw %}

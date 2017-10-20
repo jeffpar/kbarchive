@@ -6,6 +6,8 @@ permalink: /kb/170/Q170316/
 
 ## Q170316: Client Receives Error When Resolving Fully Qualified Domain Name
 
+{% raw %}
+
 	Article: Q170316
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:1.0,3.5,3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/170/Q170316/
 	
 	=============================================================================
 	
+
+{% endraw %}

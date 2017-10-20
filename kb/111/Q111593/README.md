@@ -6,6 +6,8 @@ permalink: /kb/111/Q111593/
 
 ## Q111593: BUG: DPMI Function 0203h Does Not Report Error
 
+{% raw %}
+
 	Article: Q111593
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -72,3 +74,5 @@ permalink: /kb/111/Q111593/
 	
 	=============================================================================
 	
+
+{% endraw %}

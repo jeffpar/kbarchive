@@ -6,6 +6,8 @@ permalink: /kb/153/Q153577/
 
 ## Q153577: Remote Control Causes GPF, II Errors w/ Schedule+, PowerPoint
 
+{% raw %}
+
 	Article: Q153577
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -46,3 +48,5 @@ permalink: /kb/153/Q153577/
 	
 	=============================================================================
 	
+
+{% endraw %}

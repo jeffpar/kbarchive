@@ -6,6 +6,8 @@ permalink: /kb/122/Q122850/
 
 ## Q122850: PC Win: Err Msg: ...While Loading the Spelling Dictionary
 
+{% raw %}
+
 	Article: Q122850
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -104,3 +106,5 @@ permalink: /kb/122/Q122850/
 	
 	=============================================================================
 	
+
+{% endraw %}

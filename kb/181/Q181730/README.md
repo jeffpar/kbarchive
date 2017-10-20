@@ -6,6 +6,8 @@ permalink: /kb/181/Q181730/
 
 ## Q181730: WD97: How to Use Mail Merge to Create a List Sorted by Category
 
+{% raw %}
+
 	Article: Q181730
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -78,12 +80,12 @@ permalink: /kb/181/Q181730/
 	  section of this article. To insert the field braces, press CTRL+F9.
 	
 	  {If {MergeSeq} = "1" "{Mergefield City}<B6>
-	  " ""}{Set Place1 {Mergefield City} }<B6>
+	  " ""}{Set Place1 {Mergefield City}}<B6>
 	  {If {Place2} <> {Place1}"<B6>
 	  {Mergefield City}<B6>
 	<B6>
 	  {Mergefield Employee}{Mergefield Sales}" "{Mergefield
-	  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City} }<B6>
+	  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City}}<B6>
 	
 	  NOTE: To insert the {MergeSeq} field in the mail-merge main document, click
 	  Insert Word Field on the Mail Merge toolbar.
@@ -112,13 +114,13 @@ permalink: /kb/181/Q181730/
 	the field braces, press CTRL+F9.
 	
 	  {If {MergeSeq} = "1" "{Mergefield City}<B6>
-	  " ""}{Set Place1 {Mergefield City} }<B6>
+	  " ""}{Set Place1 {Mergefield City}}<B6>
 	  {If {Place2} <> {Place1}"
 	  ----------------------------Page Break--------------------------------
 	  {Mergefield City}<B6>
 	<B6>
 	  {Mergefield Employee}{Mergefield Sales}" "{Mergefield
-	  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City} }<B6>
+	  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City}}<B6>
 	
 	NOTE: A page break is inserted either by pressing CTRL+ENTER or by clicking Break
 	on the Insert menu, selecting Page Break, and then clicking OK.
@@ -146,12 +148,12 @@ permalink: /kb/181/Q181730/
 	"\* Upper". To insert the field braces, press CTRL+F9.
 	
 	  {If {MergeSeq} = "1" "{Mergefield City \* Upper}<B6>
-	  " ""}{Set Place1 {Mergefield City} }<B6>
+	  " ""}{Set Place1 {Mergefield City}}<B6>
 	  {If {Place2} <> {Place1}"<B6>
 	  {Mergefield City \* Upper}<B6>
 	<B6>
 	  {Mergefield Employee}{Mergefield Sales}" "{Mergefield
-	  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City} }<B6>
+	  Employee}{Mergefield Sales}"}{Set Place2 {Mergefield City}}<B6>
 	
 	The fields laid out in this example produce a catalog listing on the same page
 	with the city in all capital letters as follows:
@@ -203,3 +205,5 @@ permalink: /kb/181/Q181730/
 	
 	=============================================================================
 	
+
+{% endraw %}

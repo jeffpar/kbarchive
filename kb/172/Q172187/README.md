@@ -6,6 +6,8 @@ permalink: /kb/172/Q172187/
 
 ## Q172187: WD97: Corel Square Fountain Fill Changed to Radial
 
+{% raw %}
+
 	Article: Q172187
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/172/Q172187/
 	
 	=============================================================================
 	
+
+{% endraw %}

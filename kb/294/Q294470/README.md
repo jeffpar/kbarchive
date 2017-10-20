@@ -6,6 +6,8 @@ permalink: /kb/294/Q294470/
 
 ## Q294470: HOWTO: Add Entries For Exchange Services to Mapisvc.inf
 
+{% raw %}
+
 	Article: Q294470
 	Product(s): Microsoft Exchange
 	Version(s): 1.0,5.5
@@ -143,3 +145,5 @@ permalink: /kb/294/Q294470/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34503/
 
 ## Q34503: DOCERR: PROC Directive Will Not Work with Structure Type
 
+{% raw %}
+
 	Article: Q34503
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -72,3 +74,5 @@ permalink: /kb/034/Q34503/
 	
 	=============================================================================
 	
+
+{% endraw %}

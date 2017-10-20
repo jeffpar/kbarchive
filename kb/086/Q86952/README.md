@@ -6,6 +6,8 @@ permalink: /kb/086/Q86952/
 
 ## Q86952: 3COM: Restarting the Gateway
 
+{% raw %}
+
 	Article: Q86952
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -38,3 +40,5 @@ permalink: /kb/086/Q86952/
 	
 	=============================================================================
 	
+
+{% endraw %}

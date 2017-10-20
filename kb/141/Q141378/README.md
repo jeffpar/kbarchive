@@ -6,6 +6,8 @@ permalink: /kb/141/Q141378/
 
 ## Q141378: NEC Versa P Models Do Not Function with Xircom PS-CE2-10
 
+{% raw %}
+
 	Article: Q141378
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -75,3 +77,5 @@ permalink: /kb/141/Q141378/
 	
 	=============================================================================
 	
+
+{% endraw %}

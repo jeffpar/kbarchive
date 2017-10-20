@@ -6,6 +6,8 @@ permalink: /kb/254/Q254436/
 
 ## Q254436: MapPoint 2001: Unable to Start Trial Version
 
+{% raw %}
+
 	Article: Q254436
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/254/Q254436/
 	
 	=============================================================================
 	
+
+{% endraw %}

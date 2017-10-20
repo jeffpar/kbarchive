@@ -6,6 +6,8 @@ permalink: /kb/167/Q167123/
 
 ## Q167123: FIX: Comctl32.ocx Is Binary Incompatible with Previous Version
 
+{% raw %}
+
 	Article: Q167123
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -93,3 +95,5 @@ permalink: /kb/167/Q167123/
 	
 	=============================================================================
 	
+
+{% endraw %}

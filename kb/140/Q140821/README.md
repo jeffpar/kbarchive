@@ -6,6 +6,8 @@ permalink: /kb/140/Q140821/
 
 ## Q140821: The CPIC Thunk DLL Does not Support XCECST()/CMECST() Calls
 
+{% raw %}
+
 	Article: Q140821
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140821/
 	
 	=============================================================================
 	
+
+{% endraw %}

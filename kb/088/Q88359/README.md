@@ -6,6 +6,8 @@ permalink: /kb/088/Q88359/
 
 ## Q88359: Varityper VT-600P Missing Some Resident Fonts in Windows 3.1
 
+{% raw %}
+
 	Article: Q88359
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/088/Q88359/
 	
 	=============================================================================
 	
+
+{% endraw %}

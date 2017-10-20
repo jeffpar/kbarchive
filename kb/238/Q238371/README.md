@@ -6,6 +6,8 @@ permalink: /kb/238/Q238371/
 
 ## Q238371: SMS: Network Discovery Causes GPF When Polling DHCP Servers
 
+{% raw %}
+
 	Article: Q238371
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -79,3 +81,5 @@ permalink: /kb/238/Q238371/
 	
 	=============================================================================
 	
+
+{% endraw %}

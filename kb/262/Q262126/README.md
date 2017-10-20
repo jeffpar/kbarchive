@@ -6,6 +6,8 @@ permalink: /kb/262/Q262126/
 
 ## Q262126: XCON: Using Imccopy.exe for Internet Mail Service Message Format
 
+{% raw %}
+
 	Article: Q262126
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -209,3 +211,5 @@ permalink: /kb/262/Q262126/
 	
 	=============================================================================
 	
+
+{% endraw %}

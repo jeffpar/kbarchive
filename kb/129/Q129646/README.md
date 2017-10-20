@@ -6,6 +6,8 @@ permalink: /kb/129/Q129646/
 
 ## Q129646: FIX: Error Routine Not Called for USE Command
 
+{% raw %}
+
 	Article: Q129646
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -84,3 +86,5 @@ permalink: /kb/129/Q129646/
 	
 	=============================================================================
 	
+
+{% endraw %}

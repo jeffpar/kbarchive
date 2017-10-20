@@ -6,6 +6,8 @@ permalink: /kb/248/Q248367/
 
 ## Q248367: SMSINST: Repackager Hangs When the Package Requires A Reboot
 
+{% raw %}
+
 	Article: Q248367
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -81,3 +83,5 @@ permalink: /kb/248/Q248367/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152449/
 
 ## Q152449: XADM: Directory Import Fails When Import File Includes DBCS
 
+{% raw %}
+
 	Article: Q152449
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/152/Q152449/
 	
 	=============================================================================
 	
+
+{% endraw %}

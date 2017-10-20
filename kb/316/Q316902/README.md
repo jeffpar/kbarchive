@@ -6,6 +6,8 @@ permalink: /kb/316/Q316902/
 
 ## Q316902: BUG: Machine Account Added to HAC DB in Multi-Domain Environment
 
+{% raw %}
+
 	Article: Q316902
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -115,3 +117,5 @@ permalink: /kb/316/Q316902/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149693/
 
 ## Q149693: XCLN: Multiple Providers Not Available with the MS-DOS Client
 
+{% raw %}
+
 	Article: Q149693
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -42,3 +44,5 @@ permalink: /kb/149/Q149693/
 	
 	=============================================================================
 	
+
+{% endraw %}

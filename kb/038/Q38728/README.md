@@ -6,6 +6,8 @@ permalink: /kb/038/Q38728/
 
 ## Q38728: HOW TO: Initilize Large Character Arrays
 
+{% raw %}
+
 	Article: Q38728
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/038/Q38728/
 	
 	=============================================================================
 	
+
+{% endraw %}

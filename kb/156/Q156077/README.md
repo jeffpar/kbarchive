@@ -6,6 +6,8 @@ permalink: /kb/156/Q156077/
 
 ## Q156077: XADM: How to Specify Where New Public Folders Are Stored
 
+{% raw %}
+
 	Article: Q156077
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156077/
 	
 	=============================================================================
 	
+
+{% endraw %}

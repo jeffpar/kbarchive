@@ -6,6 +6,8 @@ permalink: /kb/087/Q87033/
 
 ## Q87033: SMTP: How to Backbone Over SMTP
 
+{% raw %}
+
 	Article: Q87033
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/087/Q87033/
 	
 	=============================================================================
 	
+
+{% endraw %}

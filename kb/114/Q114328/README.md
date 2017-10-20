@@ -6,6 +6,8 @@ permalink: /kb/114/Q114328/
 
 ## Q114328: Files Installed by Flight Simulator 5.0
 
+{% raw %}
+
 	Article: Q114328
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -716,3 +718,5 @@ permalink: /kb/114/Q114328/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74709/
 
 ## Q74709: Cannot Format High Density Floppy Disk as Low Density
 
+{% raw %}
+
 	Article: Q74709
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -47,3 +49,5 @@ permalink: /kb/074/Q74709/
 	
 	=============================================================================
 	
+
+{% endraw %}

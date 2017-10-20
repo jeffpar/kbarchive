@@ -6,6 +6,8 @@ permalink: /kb/256/Q256573/
 
 ## Q256573: Services for UNIX 2.0 NFS Gateway &quot;About&quot; Command Shows Nothing
 
+{% raw %}
+
 	Article: Q256573
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -40,3 +42,5 @@ permalink: /kb/256/Q256573/
 	
 	=============================================================================
 	
+
+{% endraw %}

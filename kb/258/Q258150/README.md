@@ -6,6 +6,8 @@ permalink: /kb/258/Q258150/
 
 ## Q258150: FS2000: How to Adjust Trim Sensitivity and Effectiveness
 
+{% raw %}
+
 	Article: Q258150
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -203,3 +205,5 @@ permalink: /kb/258/Q258150/
 	
 	=============================================================================
 	
+
+{% endraw %}

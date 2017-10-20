@@ -6,6 +6,8 @@ permalink: /kb/297/Q297157/
 
 ## Q297157: How Bad Password Count Works w/ Account Lockout Policy
 
+{% raw %}
+
 	Article: Q297157
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -109,3 +111,5 @@ permalink: /kb/297/Q297157/
 	
 	=============================================================================
 	
+
+{% endraw %}

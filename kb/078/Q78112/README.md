@@ -6,6 +6,8 @@ permalink: /kb/078/Q78112/
 
 ## Q78112: AMD Palasam Requires Version 1.2 of SP.EXE File
 
+{% raw %}
+
 	Article: Q78112
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -54,3 +56,5 @@ permalink: /kb/078/Q78112/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/309/Q309638/
 
 ## Q309638: Flight Simulator 2002: Known Video-Related Issues
 
+{% raw %}
+
 	Article: Q309638
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -386,3 +388,5 @@ permalink: /kb/309/Q309638/
 	
 	=============================================================================
 	
+
+{% endraw %}

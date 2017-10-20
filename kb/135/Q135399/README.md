@@ -6,6 +6,8 @@ permalink: /kb/135/Q135399/
 
 ## Q135399: FIX: Filer:Application Error If Long Filename in VFP Directory
 
+{% raw %}
+
 	Article: Q135399
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -83,3 +85,5 @@ permalink: /kb/135/Q135399/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132874/
 
 ## Q132874: INFO: Tips for Improving Performance of VCMac Applications
 
+{% raw %}
+
 	Article: Q132874
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:2.0;MAC:2.0;
@@ -133,3 +135,5 @@ permalink: /kb/132/Q132874/
 	
 	=============================================================================
 	
+
+{% endraw %}

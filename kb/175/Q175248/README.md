@@ -6,6 +6,8 @@ permalink: /kb/175/Q175248/
 
 ## Q175248: Extra Modem Settings N-P for Connecting to MSN
 
+{% raw %}
+
 	Article: Q175248
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -154,3 +156,5 @@ permalink: /kb/175/Q175248/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276593/
 
 ## Q276593: PRB: Error: &quot;NMAKE : Fatal Error U1045: Spawn Failed&quot; When You A
 
+{% raw %}
+
 	Article: Q276593
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/276/Q276593/
 	
 	=============================================================================
 	
+
+{% endraw %}

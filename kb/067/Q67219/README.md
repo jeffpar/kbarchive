@@ -6,6 +6,8 @@ permalink: /kb/067/Q67219/
 
 ## Q67219: GTCO Digitizer Tablets and Windows 3.0
 
+{% raw %}
+
 	Article: Q67219
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/067/Q67219/
 	
 	=============================================================================
 	
+
+{% endraw %}

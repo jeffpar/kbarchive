@@ -6,6 +6,8 @@ permalink: /kb/136/Q136458/
 
 ## Q136458: NetBIOS Datagrams Sent to Group Names Are Not Broadcast
 
+{% raw %}
+
 	Article: Q136458
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/136/Q136458/
 	
 	=============================================================================
 	
+
+{% endraw %}

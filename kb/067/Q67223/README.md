@@ -6,6 +6,8 @@ permalink: /kb/067/Q67223/
 
 ## Q67223: What Does RECOVER Do?
 
+{% raw %}
+
 	Article: Q67223
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.20,3.21,3.3,3.3a,3.x,4.01,5.0
@@ -61,3 +63,5 @@ permalink: /kb/067/Q67223/
 	
 	=============================================================================
 	
+
+{% endraw %}

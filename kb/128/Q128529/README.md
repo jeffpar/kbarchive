@@ -6,6 +6,8 @@ permalink: /kb/128/Q128529/
 
 ## Q128529: Kids: Insufficient Resources with Packard Bell
 
+{% raw %}
+
 	Article: Q128529
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.2
@@ -95,3 +97,5 @@ permalink: /kb/128/Q128529/
 	
 	=============================================================================
 	
+
+{% endraw %}

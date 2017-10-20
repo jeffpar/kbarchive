@@ -6,6 +6,8 @@ permalink: /kb/182/Q182821/
 
 ## Q182821: XFOR: Internet Mail Service Not Trying Next Exchange Record
 
+{% raw %}
+
 	Article: Q182821
 	Product(s): Microsoft Exchange
 	Version(s): 5.0 5.5
@@ -253,3 +255,5 @@ permalink: /kb/182/Q182821/
 	
 	=============================================================================
 	
+
+{% endraw %}

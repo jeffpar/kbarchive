@@ -6,6 +6,8 @@ permalink: /kb/031/Q31471/
 
 ## Q31471: &#36;INCLUDE Forces Extra Linefeeds in Print from QB.EXE File Menu
 
+{% raw %}
+
 	Article: Q31471
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/031/Q31471/
 	   PRINT "in the include file"
 	   PRINT "in the include file"
 	   PRINT "in the include file"
+
+{% endraw %}

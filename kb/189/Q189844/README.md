@@ -6,6 +6,8 @@ permalink: /kb/189/Q189844/
 
 ## Q189844: SMS: PGC Should Ignore Configuration Command Line
 
+{% raw %}
+
 	Article: Q189844
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -73,3 +75,5 @@ permalink: /kb/189/Q189844/
 	
 	=============================================================================
 	
+
+{% endraw %}

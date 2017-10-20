@@ -6,6 +6,8 @@ permalink: /kb/038/Q38883/
 
 ## Q38883: License Agreement: Copyright Notice for Sign-On and Disks
 
+{% raw %}
+
 	Article: Q38883
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -59,3 +61,5 @@ permalink: /kb/038/Q38883/
 	distributed by Microsoft Customer Service when a customer is concerned
 	about copyrights and license agreements for Microsoft Business
 	Language products.
+
+{% endraw %}

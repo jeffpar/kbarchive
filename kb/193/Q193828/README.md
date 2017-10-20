@@ -6,6 +6,8 @@ permalink: /kb/193/Q193828/
 
 ## Q193828: IMS Programs May Lock after COMTI Posts a Backout Operation
 
+{% raw %}
+
 	Article: Q193828
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0 SP2
@@ -121,3 +123,5 @@ permalink: /kb/193/Q193828/
 	
 	=============================================================================
 	
+
+{% endraw %}

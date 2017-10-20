@@ -6,6 +6,8 @@ permalink: /kb/130/Q130407/
 
 ## Q130407: How to Customize Icons &amp; Mouse Pointers in Forms Designer
 
+{% raw %}
+
 	Article: Q130407
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -174,3 +176,5 @@ permalink: /kb/130/Q130407/
 	
 	=============================================================================
 	
+
+{% endraw %}

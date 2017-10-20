@@ -6,6 +6,8 @@ permalink: /kb/280/Q280799/
 
 ## Q280799: Documents Indexed on Remote Shares Are Returned to All Users
 
+{% raw %}
+
 	Article: Q280799
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -79,3 +81,5 @@ permalink: /kb/280/Q280799/
 	
 	=============================================================================
 	
+
+{% endraw %}

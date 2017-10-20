@@ -6,6 +6,8 @@ permalink: /kb/099/Q99375/
 
 ## Q99375: How to Repair a Bad Sector in a Compressed Volume File (CVF)
 
+{% raw %}
+
 	Article: Q99375
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -162,3 +164,5 @@ permalink: /kb/099/Q99375/
 	
 	=============================================================================
 	
+
+{% endraw %}

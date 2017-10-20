@@ -6,6 +6,8 @@ permalink: /kb/043/Q43896/
 
 ## Q43896: Example of Graphics PUT on SCREEN 9 Using Bitmap DATA
 
+{% raw %}
+
 	Article: Q43896
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/043/Q43896/
 	DATA  96, 0, 3072, 96 , 0 , 3072 ,-129 ,-1 ,-769 , 0 , 0 , 0
 	DATA -129 ,-1 ,-769 ,-129 ,-1 ,-769 ,-129 ,-1 ,-769 , 0 , 0 , 0
 	DATA -129 ,-1 ,-769 ,-129 ,-1 ,-769 ,-129 ,-1 ,-769 , 0 , 0, 0
+
+{% endraw %}

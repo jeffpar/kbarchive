@@ -6,6 +6,8 @@ permalink: /kb/158/Q158196/
 
 ## Q158196: Using Suspend on Certain Gateway Laptops Drains Power
 
+{% raw %}
+
 	Article: Q158196
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/158/Q158196/
 	
 	=============================================================================
 	
+
+{% endraw %}

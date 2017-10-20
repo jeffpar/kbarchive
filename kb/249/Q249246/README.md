@@ -6,6 +6,8 @@ permalink: /kb/249/Q249246/
 
 ## Q249246: PC MMTA: Drive Is Either Local, Used, or Greater Than Lastdrive
 
+{% raw %}
+
 	Article: Q249246
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -61,3 +63,5 @@ permalink: /kb/249/Q249246/
 	
 	=============================================================================
 	
+
+{% endraw %}

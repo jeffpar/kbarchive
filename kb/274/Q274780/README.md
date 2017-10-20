@@ -6,6 +6,8 @@ permalink: /kb/274/Q274780/
 
 ## Q274780: Err Msg: Microsoft Reader Is Unable to Locate the Library...
 
+{% raw %}
+
 	Article: Q274780
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -50,3 +52,5 @@ permalink: /kb/274/Q274780/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101791/
 
 ## Q101791: Musical Instruments: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q101791
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -176,3 +178,5 @@ permalink: /kb/101/Q101791/
 	
 	=============================================================================
 	
+
+{% endraw %}

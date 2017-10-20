@@ -6,6 +6,8 @@ permalink: /kb/124/Q124554/
 
 ## Q124554: DriveSpace: DRVSPACX.VXD Is Removed, DRVSPACE.SYS /Move Is Not
 
+{% raw %}
+
 	Article: Q124554
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/124/Q124554/
 	
 	=============================================================================
 	
+
+{% endraw %}

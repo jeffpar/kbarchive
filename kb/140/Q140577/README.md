@@ -6,6 +6,8 @@ permalink: /kb/140/Q140577/
 
 ## Q140577: PRB: Visual FoxPro Laptop Install Doesn't Provide Uninstall
 
+{% raw %}
+
 	Article: Q140577
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/140/Q140577/
 	
 	=============================================================================
 	
+
+{% endraw %}

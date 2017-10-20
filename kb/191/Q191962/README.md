@@ -6,6 +6,8 @@ permalink: /kb/191/Q191962/
 
 ## Q191962: FAX: Problems Configuring Gateway to Stop in Year 2000 or Later
 
+{% raw %}
+
 	Article: Q191962
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -106,3 +108,5 @@ permalink: /kb/191/Q191962/
 	
 	=============================================================================
 	
+
+{% endraw %}

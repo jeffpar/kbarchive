@@ -6,6 +6,8 @@ permalink: /kb/027/Q27489/
 
 ## Q27489: &quot;Out of String Space,&quot; Dynamic Array of Fixed-Length Strings
 
+{% raw %}
+
 	Article: Q27489
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/027/Q27489/
 	   srv(0) = RTRIM$(srv(0)) + abc$
 	   PRINT t, LEN(RTRIM$(srv(0))), FRE(""), FRE(-1)
 	 NEXT T
+
+{% endraw %}

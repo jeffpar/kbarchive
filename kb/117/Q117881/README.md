@@ -6,6 +6,8 @@ permalink: /kb/117/Q117881/
 
 ## Q117881: Windows 95 Err Msg: This Application's Attempt to Get Access...
 
+{% raw %}
+
 	Article: Q117881
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/117/Q117881/
 	
 	=============================================================================
 	
+
+{% endraw %}

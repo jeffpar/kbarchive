@@ -6,6 +6,8 @@ permalink: /kb/156/Q156994/
 
 ## Q156994: INFO: STL Sample for the random_shuffle Function
 
+{% raw %}
+
 	Article: Q156994
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -177,3 +179,5 @@ permalink: /kb/156/Q156994/
 	
 	=============================================================================
 	
+
+{% endraw %}

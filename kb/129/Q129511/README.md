@@ -6,6 +6,8 @@ permalink: /kb/129/Q129511/
 
 ## Q129511: PRB: &quot;Property Command Not Found&quot; Error When Modifying Caption
 
+{% raw %}
+
 	Article: Q129511
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/129/Q129511/
 	
 	=============================================================================
 	
+
+{% endraw %}

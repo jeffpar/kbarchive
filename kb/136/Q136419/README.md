@@ -6,6 +6,8 @@ permalink: /kb/136/Q136419/
 
 ## Q136419: PPT7: Unexpected Results Overlapping Two Semi-Transparent Object
 
+{% raw %}
+
 	Article: Q136419
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136419/
 	
 	=============================================================================
 	
+
+{% endraw %}

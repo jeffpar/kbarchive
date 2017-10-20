@@ -6,6 +6,8 @@ permalink: /kb/163/Q163296/
 
 ## Q163296: XCON: MTA Events 2200 and 2201
 
+{% raw %}
+
 	Article: Q163296
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/163/Q163296/
 	
 	=============================================================================
 	
+
+{% endraw %}

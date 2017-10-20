@@ -6,6 +6,8 @@ permalink: /kb/140/Q140534/
 
 ## Q140534: FIX: &quot;Data Truncated Column&quot; Erroneously Reported
 
+{% raw %}
+
 	Article: Q140534
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -76,3 +78,5 @@ permalink: /kb/140/Q140534/
 	
 	=============================================================================
 	
+
+{% endraw %}

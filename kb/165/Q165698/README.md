@@ -6,6 +6,8 @@ permalink: /kb/165/Q165698/
 
 ## Q165698: XADM: Corrupt Admin.Ins
 
+{% raw %}
+
 	Article: Q165698
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/165/Q165698/
 	
 	=============================================================================
 	
+
+{% endraw %}

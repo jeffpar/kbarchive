@@ -6,6 +6,8 @@ permalink: /kb/238/Q238871/
 
 ## Q238871: PCI Resource Conflicts When You Resume from Suspend Mode
 
+{% raw %}
+
 	Article: Q238871
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -64,3 +66,5 @@ permalink: /kb/238/Q238871/
 	
 	=============================================================================
 	
+
+{% endraw %}

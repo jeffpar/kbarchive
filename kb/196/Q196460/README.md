@@ -6,6 +6,8 @@ permalink: /kb/196/Q196460/
 
 ## Q196460: Improving Mouse Movements in Terminal Server Applications
 
+{% raw %}
+
 	Article: Q196460
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/196/Q196460/
 	
 	=============================================================================
 	
+
+{% endraw %}

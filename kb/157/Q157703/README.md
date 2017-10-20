@@ -6,6 +6,8 @@ permalink: /kb/157/Q157703/
 
 ## Q157703: XFOR: NDRs Sending Mail Using Email.dot
 
+{% raw %}
+
 	Article: Q157703
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/157/Q157703/
 	
 	=============================================================================
 	
+
+{% endraw %}

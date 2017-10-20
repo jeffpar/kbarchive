@@ -6,6 +6,8 @@ permalink: /kb/063/Q63357/
 
 ## Q63357: Debugging NetWare Printing Problems in Windows
 
+{% raw %}
+
 	Article: Q63357
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -125,3 +127,5 @@ permalink: /kb/063/Q63357/
 	
 	=============================================================================
 	
+
+{% endraw %}

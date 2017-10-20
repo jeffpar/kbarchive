@@ -6,6 +6,8 @@ permalink: /kb/216/Q216916/
 
 ## Q216916: NTBACKUP Writes Incorrect Year to Log File
 
+{% raw %}
+
 	Article: Q216916
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -145,3 +147,5 @@ permalink: /kb/216/Q216916/
 	
 	=============================================================================
 	
+
+{% endraw %}

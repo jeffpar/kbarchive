@@ -6,6 +6,8 @@ permalink: /kb/192/Q192089/
 
 ## Q192089: BUG: Setting OptionButton Value to True Sets TabStop to True
 
+{% raw %}
+
 	Article: Q192089
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/192/Q192089/
 	
 	=============================================================================
 	
+
+{% endraw %}

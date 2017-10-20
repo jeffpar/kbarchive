@@ -6,6 +6,8 @@ permalink: /kb/273/Q273992/
 
 ## Q273992: Index Server Does Not Filter Documents with Large Property Sets
 
+{% raw %}
+
 	Article: Q273992
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -77,3 +79,5 @@ permalink: /kb/273/Q273992/
 	
 	=============================================================================
 	
+
+{% endraw %}

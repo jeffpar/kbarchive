@@ -6,6 +6,8 @@ permalink: /kb/174/Q174775/
 
 ## Q174775: How Windows NT Challenge/Response Works
 
+{% raw %}
+
 	Article: Q174775
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0,4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/174/Q174775/
 	
 	=============================================================================
 	
+
+{% endraw %}

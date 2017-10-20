@@ -6,6 +6,8 @@ permalink: /kb/142/Q142034/
 
 ## Q142034: Domain Controllers Unable to Communicate Over IPX Token-Ring WAN
 
+{% raw %}
+
 	Article: Q142034
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -75,3 +77,5 @@ permalink: /kb/142/Q142034/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169422/
 
 ## Q169422: Mastering: Setup Does Not Detect Newer Version of ActiveMovie
 
+{% raw %}
+
 	Article: Q169422
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/169/Q169422/
 	
 	=============================================================================
 	
+
+{% endraw %}

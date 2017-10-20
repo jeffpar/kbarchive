@@ -6,6 +6,8 @@ permalink: /kb/088/Q88312/
 
 ## Q88312: Windows Hangs on Dell 310 with Genius 420 Monitor
 
+{% raw %}
+
 	Article: Q88312
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/088/Q88312/
 	
 	=============================================================================
 	
+
+{% endraw %}

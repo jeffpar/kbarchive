@@ -6,6 +6,8 @@ permalink: /kb/163/Q163634/
 
 ## Q163634: XCLN: Can't Synchronize Microsoft Schedule+ File if Offline
 
+{% raw %}
+
 	Article: Q163634
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:4.0,7.0
@@ -83,3 +85,5 @@ permalink: /kb/163/Q163634/
 	
 	=============================================================================
 	
+
+{% endraw %}

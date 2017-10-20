@@ -6,6 +6,8 @@ permalink: /kb/302/Q302573/
 
 ## Q302573: HOW TO: Back Up and Restore IIS
 
+{% raw %}
+
 	Article: Q302573
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -148,3 +150,5 @@ permalink: /kb/302/Q302573/
 	
 	=============================================================================
 	
+
+{% endraw %}

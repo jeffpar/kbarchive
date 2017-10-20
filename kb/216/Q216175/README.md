@@ -6,6 +6,8 @@ permalink: /kb/216/Q216175/
 
 ## Q216175: FIX: CTRL+C Does Not Copy From Locked Textbox
 
+{% raw %}
+
 	Article: Q216175
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -110,3 +112,5 @@ permalink: /kb/216/Q216175/
 	
 	=============================================================================
 	
+
+{% endraw %}

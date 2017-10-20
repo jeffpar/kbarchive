@@ -6,6 +6,8 @@ permalink: /kb/301/Q301623/
 
 ## Q301623: IIS5: BOM of UTF-8 Encoded Files Is Treated as Data
 
+{% raw %}
+
 	Article: Q301623
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -103,3 +105,5 @@ permalink: /kb/301/Q301623/
 	
 	=============================================================================
 	
+
+{% endraw %}

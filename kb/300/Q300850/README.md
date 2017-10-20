@@ -6,6 +6,8 @@ permalink: /kb/300/Q300850/
 
 ## Q300850: BUG: GlobalMultiUse Class Doesn't End in Multithreaded Environmt
 
+{% raw %}
+
 	Article: Q300850
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP4,6.0 SP5
@@ -235,3 +237,5 @@ permalink: /kb/300/Q300850/
 	
 	=============================================================================
 	
+
+{% endraw %}

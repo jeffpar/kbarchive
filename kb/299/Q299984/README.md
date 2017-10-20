@@ -6,6 +6,8 @@ permalink: /kb/299/Q299984/
 
 ## Q299984: Using ASP to Retrieve Authentication Information About Web Users
 
+{% raw %}
+
 	Article: Q299984
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -103,3 +105,5 @@ permalink: /kb/299/Q299984/
 	
 	=============================================================================
 	
+
+{% endraw %}

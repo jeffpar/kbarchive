@@ -6,6 +6,8 @@ permalink: /kb/224/Q224437/
 
 ## Q224437: Problems Installing Exchange Server to Long Folder Name
 
+{% raw %}
+
 	Article: Q224437
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0,4.0a,4.5,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/224/Q224437/
 	
 	=============================================================================
 	
+
+{% endraw %}

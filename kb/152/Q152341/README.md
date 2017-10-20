@@ -6,6 +6,8 @@ permalink: /kb/152/Q152341/
 
 ## Q152341: BUG: Help Is Not Activated on a Non-system Partition
 
+{% raw %}
+
 	Article: Q152341
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -68,3 +70,5 @@ permalink: /kb/152/Q152341/
 	
 	=============================================================================
 	
+
+{% endraw %}

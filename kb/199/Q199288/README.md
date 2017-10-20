@@ -6,6 +6,8 @@ permalink: /kb/199/Q199288/
 
 ## Q199288: H-Node Multihomed Host May Send Broadcasts Immediately
 
+{% raw %}
+
 	Article: Q199288
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -86,3 +88,5 @@ permalink: /kb/199/Q199288/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128253/
 
 ## Q128253: Differences in Login Scripts in NetWare 4.x and NetWare 3.x
 
+{% raw %}
+
 	Article: Q128253
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -98,3 +100,5 @@ permalink: /kb/128/Q128253/
 	
 	=============================================================================
 	
+
+{% endraw %}

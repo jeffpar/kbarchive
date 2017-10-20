@@ -6,6 +6,8 @@ permalink: /kb/195/Q195179/
 
 ## Q195179: Cannot Disable HTTP KeepAlives for HTTP/1.1 Clients
 
+{% raw %}
+
 	Article: Q195179
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/195/Q195179/
 	
 	=============================================================================
 	
+
+{% endraw %}

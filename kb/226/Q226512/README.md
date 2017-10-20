@@ -6,6 +6,8 @@ permalink: /kb/226/Q226512/
 
 ## Q226512: HOW TO: Reinstall IIS 4.0 Performance Monitor Counters
 
+{% raw %}
+
 	Article: Q226512
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -149,3 +151,5 @@ permalink: /kb/226/Q226512/
 	
 	=============================================================================
 	
+
+{% endraw %}

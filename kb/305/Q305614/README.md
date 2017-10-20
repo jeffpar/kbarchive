@@ -6,6 +6,8 @@ permalink: /kb/305/Q305614/
 
 ## Q305614: SMSINST: Unexpected Results with &quot;Install File&quot; Action
 
+{% raw %}
+
 	Article: Q305614
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -86,3 +88,5 @@ permalink: /kb/305/Q305614/
 	
 	=============================================================================
 	
+
+{% endraw %}

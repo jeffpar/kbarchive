@@ -6,6 +6,8 @@ permalink: /kb/234/Q234038/
 
 ## Q234038: Inodes and Inode Cache File(s) in Services for Unix.
 
+{% raw %}
+
 	Article: Q234038
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/234/Q234038/
 	
 	=============================================================================
 	
+
+{% endraw %}

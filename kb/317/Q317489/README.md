@@ -6,6 +6,8 @@ permalink: /kb/317/Q317489/
 
 ## Q317489: FIX: Exclude Property Not Refreshed When File Excluded/Included
 
+{% raw %}
+
 	Article: Q317489
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -130,3 +132,5 @@ permalink: /kb/317/Q317489/
 	
 	=============================================================================
 	
+
+{% endraw %}

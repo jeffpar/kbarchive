@@ -6,6 +6,8 @@ permalink: /kb/124/Q124820/
 
 ## Q124820: PPT: Cannot Copy or Paste Objects in PowerPoint
 
+{% raw %}
+
 	Article: Q124820
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,4.0a,4.0c,7.0
@@ -85,3 +87,5 @@ permalink: /kb/124/Q124820/
 	
 	=============================================================================
 	
+
+{% endraw %}

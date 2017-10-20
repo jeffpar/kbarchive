@@ -6,6 +6,8 @@ permalink: /kb/294/Q294807/
 
 ## Q294807: HOWTO: Disable &quot;Friendly&quot; Error Messages on the Server Side
 
+{% raw %}
+
 	Article: Q294807
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -182,3 +184,5 @@ permalink: /kb/294/Q294807/
 	
 	=============================================================================
 	
+
+{% endraw %}

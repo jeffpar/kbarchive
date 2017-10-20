@@ -6,6 +6,8 @@ permalink: /kb/166/Q166971/
 
 ## Q166971: WD97: Invalid Page Fault When Normal.dot Is a Document
 
+{% raw %}
+
 	Article: Q166971
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/166/Q166971/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139208/
 
 ## Q139208: Instability in RAS using TAPI X25 Ndiswan Driver
 
+{% raw %}
+
 	Article: Q139208
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139208/
 	
 	=============================================================================
 	
+
+{% endraw %}

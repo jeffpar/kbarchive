@@ -6,6 +6,8 @@ permalink: /kb/129/Q129124/
 
 ## Q129124: Windows NT 3.5 Drivers for 3Com 3C590 and 3C595 PCI NICs
 
+{% raw %}
+
 	Article: Q129124
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -46,3 +48,5 @@ permalink: /kb/129/Q129124/
 	
 	=============================================================================
 	
+
+{% endraw %}

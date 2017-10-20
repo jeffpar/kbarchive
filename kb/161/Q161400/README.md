@@ -6,6 +6,8 @@ permalink: /kb/161/Q161400/
 
 ## Q161400: Authenticated Users Cannot Query Secured Documents
 
+{% raw %}
+
 	Article: Q161400
 	Product(s): Internet Information Server
 	Version(s): WINNT: 1.1,2.0
@@ -68,3 +70,5 @@ permalink: /kb/161/Q161400/
 	
 	=============================================================================
 	
+
+{% endraw %}

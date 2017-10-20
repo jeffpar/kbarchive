@@ -6,6 +6,8 @@ permalink: /kb/079/Q79844/
 
 ## Q79844: Embedding the Assembly Date and Time in a MASM 6.0 Object
 
+{% raw %}
+
 	Article: Q79844
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -80,3 +82,5 @@ permalink: /kb/079/Q79844/
 	
 	=============================================================================
 	
+
+{% endraw %}

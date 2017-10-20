@@ -6,6 +6,8 @@ permalink: /kb/123/Q123472/
 
 ## Q123472: HOWTO: Create a Unique SRCSAFE.INI File
 
+{% raw %}
+
 	Article: Q123472
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.0x 4.0
@@ -48,3 +50,5 @@ permalink: /kb/123/Q123472/
 	
 	=============================================================================
 	
+
+{% endraw %}

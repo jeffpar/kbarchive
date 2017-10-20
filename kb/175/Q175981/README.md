@@ -6,6 +6,8 @@ permalink: /kb/175/Q175981/
 
 ## Q175981: WinNT Err: Event ID 3206 Replicator Cannot Update Directory
 
+{% raw %}
+
 	Article: Q175981
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -125,3 +127,5 @@ permalink: /kb/175/Q175981/
 	
 	=============================================================================
 	
+
+{% endraw %}

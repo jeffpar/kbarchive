@@ -6,6 +6,8 @@ permalink: /kb/125/Q125644/
 
 ## Q125644: FIX: Property Sheet with Edit Doesn't Close On ESC Key
 
+{% raw %}
+
 	Article: Q125644
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0
@@ -71,3 +73,5 @@ permalink: /kb/125/Q125644/
 	
 	=============================================================================
 	
+
+{% endraw %}

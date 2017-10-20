@@ -6,6 +6,8 @@ permalink: /kb/249/Q249349/
 
 ## Q249349: XADM: MTA Converts (a) to (040)a(041) in Message Tracking
 
+{% raw %}
+
 	Article: Q249349
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -70,3 +72,5 @@ permalink: /kb/249/Q249349/
 	
 	=============================================================================
 	
+
+{% endraw %}

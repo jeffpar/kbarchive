@@ -6,6 +6,8 @@ permalink: /kb/293/Q293333/
 
 ## Q293333: SHIFT+TAB Works the Same as Just Using the TAB Key
 
+{% raw %}
+
 	Article: Q293333
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -90,3 +92,5 @@ permalink: /kb/293/Q293333/
 	
 	=============================================================================
 	
+
+{% endraw %}

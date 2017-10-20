@@ -6,6 +6,8 @@ permalink: /kb/259/Q259053/
 
 ## Q259053: ASN Decoding Errors in Genlogs on a Zoomit Server
 
+{% raw %}
+
 	Article: Q259053
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -92,3 +94,5 @@ permalink: /kb/259/Q259053/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117359/
 
 ## Q117359: SFM: Copying Files Between Volumes Freezes Other Mac Clients
 
+{% raw %}
+
 	Article: Q117359
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -48,3 +50,5 @@ permalink: /kb/117/Q117359/
 	
 	=============================================================================
 	
+
+{% endraw %}

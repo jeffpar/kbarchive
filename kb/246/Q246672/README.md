@@ -6,6 +6,8 @@ permalink: /kb/246/Q246672/
 
 ## Q246672: Error Message: No Folders Found in &lt;AS400 System Name&gt;
 
+{% raw %}
+
 	Article: Q246672
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -88,3 +90,5 @@ permalink: /kb/246/Q246672/
 	
 	=============================================================================
 	
+
+{% endraw %}

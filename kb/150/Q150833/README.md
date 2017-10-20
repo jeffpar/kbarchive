@@ -6,6 +6,8 @@ permalink: /kb/150/Q150833/
 
 ## Q150833: Memory Deallocation Failure in SRV.SYS Directory Notification
 
+{% raw %}
+
 	Article: Q150833
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150833/
 	
 	=============================================================================
 	
+
+{% endraw %}

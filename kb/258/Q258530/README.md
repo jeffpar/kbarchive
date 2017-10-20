@@ -6,6 +6,8 @@ permalink: /kb/258/Q258530/
 
 ## Q258530: FIX: Multiple References to File Object Causes OLE Error
 
+{% raw %}
+
 	Article: Q258530
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -92,3 +94,5 @@ permalink: /kb/258/Q258530/
 	
 	=============================================================================
 	
+
+{% endraw %}

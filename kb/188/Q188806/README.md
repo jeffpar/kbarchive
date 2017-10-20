@@ -6,6 +6,8 @@ permalink: /kb/188/Q188806/
 
 ## Q188806: &quot;::&#36;DATA&quot; Data Stream Name of a File May Return Source
 
+{% raw %}
+
 	Article: Q188806
 	Product(s): Internet Information Server
 	Version(s): NT:4.0; winnt:1.0,2.0,3.0,4.0
@@ -208,3 +210,5 @@ permalink: /kb/188/Q188806/
 	
 	=============================================================================
 	
+
+{% endraw %}

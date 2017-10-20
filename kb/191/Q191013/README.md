@@ -6,6 +6,8 @@ permalink: /kb/191/Q191013/
 
 ## Q191013: XGEN: README.TXT: Microsoft Exchange 5.5 U.S. Service Pack 1
 
+{% raw %}
+
 	Article: Q191013
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -202,3 +204,5 @@ permalink: /kb/191/Q191013/
 	
 	=============================================================================
 	
+
+{% endraw %}

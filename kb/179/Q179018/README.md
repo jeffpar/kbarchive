@@ -6,6 +6,8 @@ permalink: /kb/179/Q179018/
 
 ## Q179018: OPEN SSCP RSP ERROR Returns Err1:000F and Err2:0003
 
+{% raw %}
+
 	Article: Q179018
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2
@@ -74,3 +76,5 @@ permalink: /kb/179/Q179018/
 	
 	=============================================================================
 	
+
+{% endraw %}

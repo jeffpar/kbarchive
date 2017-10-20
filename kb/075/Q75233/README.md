@@ -6,6 +6,8 @@ permalink: /kb/075/Q75233/
 
 ## Q75233: DTK BIOS version 4.26 Pre-Revision 36 and IDE Drives
 
+{% raw %}
+
 	Article: Q75233
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/075/Q75233/
 	
 	=============================================================================
 	
+
+{% endraw %}

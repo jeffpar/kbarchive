@@ -6,6 +6,8 @@ permalink: /kb/264/Q264086/
 
 ## Q264086: HOWTO: Automatically Log on to IIS Using NT Challenge/Response
 
+{% raw %}
+
 	Article: Q264086
 	Product(s): Internet Information Server
 	Version(s): 4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,4.5,5,5.0
@@ -91,3 +93,5 @@ permalink: /kb/264/Q264086/
 	
 	=============================================================================
 	
+
+{% endraw %}

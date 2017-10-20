@@ -6,6 +6,8 @@ permalink: /kb/126/Q126871/
 
 ## Q126871: DOC: MENU() &amp; PAD() Examples Cause Error Message
 
+{% raw %}
+
 	Article: Q126871
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a; WINDOWS:2.6a
@@ -66,3 +68,5 @@ permalink: /kb/126/Q126871/
 	
 	=============================================================================
 	
+
+{% endraw %}

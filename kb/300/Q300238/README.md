@@ -6,6 +6,8 @@ permalink: /kb/300/Q300238/
 
 ## Q300238: Error Message: &quot;No Web Site Is Configured At This Address&quot;
 
+{% raw %}
+
 	Article: Q300238
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -78,3 +80,5 @@ permalink: /kb/300/Q300238/
 	
 	=============================================================================
 	
+
+{% endraw %}

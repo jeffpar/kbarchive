@@ -6,6 +6,8 @@ permalink: /kb/087/Q87867/
 
 ## Q87867: PC Win: Err Msg: The Application Could Not Be Executed
 
+{% raw %}
+
 	Article: Q87867
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/087/Q87867/
 	
 	=============================================================================
 	
+
+{% endraw %}

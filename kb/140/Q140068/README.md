@@ -6,6 +6,8 @@ permalink: /kb/140/Q140068/
 
 ## Q140068: PC WRmt: How to Install Supplemental Modem Scripts
 
+{% raw %}
+
 	Article: Q140068
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -90,3 +92,5 @@ permalink: /kb/140/Q140068/
 	
 	=============================================================================
 	
+
+{% endraw %}

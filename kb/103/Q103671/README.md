@@ -6,6 +6,8 @@ permalink: /kb/103/Q103671/
 
 ## Q103671: Flashing Blue or Green Triangle in Bottom Right Corner
 
+{% raw %}
+
 	Article: Q103671
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:4.0b
@@ -60,3 +62,5 @@ permalink: /kb/103/Q103671/
 	
 	=============================================================================
 	
+
+{% endraw %}

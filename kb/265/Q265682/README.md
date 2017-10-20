@@ -6,6 +6,8 @@ permalink: /kb/265/Q265682/
 
 ## Q265682: Appleshare Clients Have Maximum Viewable Volume Limit of 256
 
+{% raw %}
+
 	Article: Q265682
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/265/Q265682/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161230/
 
 ## Q161230: Resource Leak in StarSQL 32-Bit ODBC Driver
 
+{% raw %}
+
 	Article: Q161230
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -63,3 +65,5 @@ permalink: /kb/161/Q161230/
 	
 	=============================================================================
 	
+
+{% endraw %}

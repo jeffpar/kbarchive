@@ -6,6 +6,8 @@ permalink: /kb/159/Q159468/
 
 ## Q159468: FIX: Setup Error 915 Object 1 with VFP 5.0 Setup Wizard
 
+{% raw %}
+
 	Article: Q159468
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -92,3 +94,5 @@ permalink: /kb/159/Q159468/
 	
 	=============================================================================
 	
+
+{% endraw %}

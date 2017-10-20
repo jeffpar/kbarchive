@@ -6,6 +6,8 @@ permalink: /kb/170/Q170825/
 
 ## Q170825: RAS Auto-Answer Behavior in Windows NT
 
+{% raw %}
+
 	Article: Q170825
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.50,3.51,4.0
@@ -114,3 +116,5 @@ permalink: /kb/170/Q170825/
 	
 	=============================================================================
 	
+
+{% endraw %}

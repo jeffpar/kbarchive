@@ -6,6 +6,8 @@ permalink: /kb/253/Q253878/
 
 ## Q253878: WD97: Labels Print Higher After First Page
 
+{% raw %}
+
 	Article: Q253878
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -154,3 +156,5 @@ permalink: /kb/253/Q253878/
 	
 	=============================================================================
 	
+
+{% endraw %}

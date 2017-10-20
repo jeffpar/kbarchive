@@ -6,6 +6,8 @@ permalink: /kb/138/Q138537/
 
 ## Q138537: HOWTO: Print the Contents of an ImageList Control to a Form
 
+{% raw %}
+
 	Article: Q138537
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/138/Q138537/
 	
 	=============================================================================
 	
+
+{% endraw %}

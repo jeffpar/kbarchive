@@ -6,6 +6,8 @@ permalink: /kb/138/Q138924/
 
 ## Q138924: FTP, WWW, and Telnet Fail over RAS Even Though Ping Works
 
+{% raw %}
+
 	Article: Q138924
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -105,3 +107,5 @@ permalink: /kb/138/Q138924/
 	
 	=============================================================================
 	
+
+{% endraw %}

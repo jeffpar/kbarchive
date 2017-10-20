@@ -6,6 +6,8 @@ permalink: /kb/130/Q130732/
 
 ## Q130732: HOWTO: How to Create Data Source to Access Microsoft Excel Files
 
+{% raw %}
+
 	Article: Q130732
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,6.0
@@ -51,3 +53,5 @@ permalink: /kb/130/Q130732/
 	
 	=============================================================================
 	
+
+{% endraw %}

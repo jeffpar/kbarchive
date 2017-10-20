@@ -6,6 +6,8 @@ permalink: /kb/237/Q237510/
 
 ## Q237510: Encarta 2000: Err Msg: An Error Occurred During Printing
 
+{% raw %}
+
 	Article: Q237510
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/237/Q237510/
 	
 	=============================================================================
 	
+
+{% endraw %}

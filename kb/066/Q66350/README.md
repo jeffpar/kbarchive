@@ -6,6 +6,8 @@ permalink: /kb/066/Q66350/
 
 ## Q66350: IdleWild Screen Saver Does Not Hide Mouse Pointer
 
+{% raw %}
+
 	Article: Q66350
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/066/Q66350/
 	
 	=============================================================================
 	
+
+{% endraw %}

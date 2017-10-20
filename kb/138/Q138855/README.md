@@ -6,6 +6,8 @@ permalink: /kb/138/Q138855/
 
 ## Q138855: SNA Server Incorrectly Flips Sense Code Sent by RUI App.
 
+{% raw %}
+
 	Article: Q138855
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -71,3 +73,5 @@ permalink: /kb/138/Q138855/
 	
 	=============================================================================
 	
+
+{% endraw %}

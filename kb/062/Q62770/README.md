@@ -6,6 +6,8 @@ permalink: /kb/062/Q62770/
 
 ## Q62770: Must Load PROISAM or PROISAMD to Use ISAM Utilities
 
+{% raw %}
+
 	Article: Q62770
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -47,3 +49,5 @@ permalink: /kb/062/Q62770/
 	
 	   ISAMIO              Converts to or from simple ASCII text files and
 	                       ISAM files
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/287/Q287634/
 
 ## Q287634: EnhancedSecurityLevel of &quot;1&quot; Causes &quot;Stop 0x1E&quot; Error
 
+{% raw %}
+
 	Article: Q287634
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -92,3 +94,5 @@ permalink: /kb/287/Q287634/
 	
 	=============================================================================
 	
+
+{% endraw %}

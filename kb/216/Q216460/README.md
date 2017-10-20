@@ -6,6 +6,8 @@ permalink: /kb/216/Q216460/
 
 ## Q216460: XADM: ISINTEG Reports JET_errUpdateNotPrepared
 
+{% raw %}
+
 	Article: Q216460
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/216/Q216460/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246462/
 
 ## Q246462: Print Jobs Randomly Stop Responding with HP JetDirect Printing
 
+{% raw %}
+
 	Article: Q246462
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/246/Q246462/
 	
 	=============================================================================
 	
+
+{% endraw %}

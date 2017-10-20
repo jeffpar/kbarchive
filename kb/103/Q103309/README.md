@@ -6,6 +6,8 @@ permalink: /kb/103/Q103309/
 
 ## Q103309: MWAV.EXE Err Msg: Drive Was Not Logged
 
+{% raw %}
+
 	Article: Q103309
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a,3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/103/Q103309/
 	
 	=============================================================================
 	
+
+{% endraw %}

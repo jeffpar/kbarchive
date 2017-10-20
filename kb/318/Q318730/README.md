@@ -6,6 +6,8 @@ permalink: /kb/318/Q318730/
 
 ## Q318730: &quot;??_U@YAPAXI@Z Not Located in Msvcrt.dll&quot; Err Msg at Startup
 
+{% raw %}
+
 	Article: Q318730
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -134,3 +136,5 @@ permalink: /kb/318/Q318730/
 	
 	=============================================================================
 	
+
+{% endraw %}

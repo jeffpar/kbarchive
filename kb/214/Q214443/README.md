@@ -6,6 +6,8 @@ permalink: /kb/214/Q214443/
 
 ## Q214443: Small Business Server Client Installation Process
 
+{% raw %}
+
 	Article: Q214443
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0,4.0a,95
@@ -78,3 +80,5 @@ permalink: /kb/214/Q214443/
 	
 	=============================================================================
 	
+
+{% endraw %}

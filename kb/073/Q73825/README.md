@@ -6,6 +6,8 @@ permalink: /kb/073/Q73825/
 
 ## Q73825: Windows: MS-DOS-Based Applications Require Valid Video Grabber
 
+{% raw %}
+
 	Article: Q73825
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.11
@@ -70,3 +72,5 @@ permalink: /kb/073/Q73825/
 	
 	=============================================================================
 	
+
+{% endraw %}

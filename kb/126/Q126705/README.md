@@ -6,6 +6,8 @@ permalink: /kb/126/Q126705/
 
 ## Q126705: Cannot Do WFWG SETUP /N Over Previous Full Windows Install
 
+{% raw %}
+
 	Article: Q126705
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -103,3 +105,5 @@ permalink: /kb/126/Q126705/
 	
 	=============================================================================
 	
+
+{% endraw %}

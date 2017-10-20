@@ -6,6 +6,8 @@ permalink: /kb/114/Q114667/
 
 ## Q114667: PRB: &quot;Error Initializing OLE&quot; When Running GENGRAPH
 
+{% raw %}
+
 	Article: Q114667
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -109,3 +111,5 @@ permalink: /kb/114/Q114667/
 	
 	=============================================================================
 	
+
+{% endraw %}

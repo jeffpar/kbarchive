@@ -6,6 +6,8 @@ permalink: /kb/030/Q30818/
 
 ## Q30818: MASM 5.10 OS2.DOC: OS/2 Call Summary - Device Driver
 
+{% raw %}
+
 	Article: Q30818
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -37,3 +39,5 @@ permalink: /kb/030/Q30818/
 	
 	   @DosPhysicalDisk - Obtains information on partitionable disks
 	   Parameters - Function:W, DataPtr:D, DataLength:W, ParmPtr:D, ParmLength:W
+
+{% endraw %}

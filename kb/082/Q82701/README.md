@@ -6,6 +6,8 @@ permalink: /kb/082/Q82701/
 
 ## Q82701: Fax Manager Allows Embedded Spaces in Filenames
 
+{% raw %}
+
 	Article: Q82701
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82701/
 	
 	=============================================================================
 	
+
+{% endraw %}

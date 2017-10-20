@@ -6,6 +6,8 @@ permalink: /kb/161/Q161216/
 
 ## Q161216: SMS: Client Setup Fails to Update Sms.ini on Windows NT System
 
+{% raw %}
+
 	Article: Q161216
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2
@@ -90,3 +92,5 @@ permalink: /kb/161/Q161216/
 	
 	=============================================================================
 	
+
+{% endraw %}

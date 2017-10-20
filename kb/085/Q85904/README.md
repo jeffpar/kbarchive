@@ -6,6 +6,8 @@ permalink: /kb/085/Q85904/
 
 ## Q85904: Bitmaps Pasted into Cardfile Print Incorrectly
 
+{% raw %}
+
 	Article: Q85904
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -85,3 +87,5 @@ permalink: /kb/085/Q85904/
 	
 	=============================================================================
 	
+
+{% endraw %}

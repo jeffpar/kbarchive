@@ -6,6 +6,8 @@ permalink: /kb/260/Q260554/
 
 ## Q260554: XFOR: Microsoft Mail Connector Leaks Memory on Windows 2000
 
+{% raw %}
+
 	Article: Q260554
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.5; winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/260/Q260554/
 	
 	=============================================================================
 	
+
+{% endraw %}

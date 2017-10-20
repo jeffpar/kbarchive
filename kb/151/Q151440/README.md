@@ -6,6 +6,8 @@ permalink: /kb/151/Q151440/
 
 ## Q151440: MSB Earth: How to Use the Rock Transformer
 
+{% raw %}
+
 	Article: Q151440
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -84,3 +86,5 @@ permalink: /kb/151/Q151440/
 	
 	=============================================================================
 	
+
+{% endraw %}

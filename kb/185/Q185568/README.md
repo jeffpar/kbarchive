@@ -6,6 +6,8 @@ permalink: /kb/185/Q185568/
 
 ## Q185568: WlxCloseUserDesktop Function Unavailable for GINA Writers
 
+{% raw %}
+
 	Article: Q185568
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/185/Q185568/
 	
 	=============================================================================
 	
+
+{% endraw %}

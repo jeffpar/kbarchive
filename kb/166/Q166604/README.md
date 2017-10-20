@@ -6,6 +6,8 @@ permalink: /kb/166/Q166604/
 
 ## Q166604: XFOR: IMS Behind Firewall Does Not Use Second MX Record
 
+{% raw %}
+
 	Article: Q166604
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/166/Q166604/
 	
 	=============================================================================
 	
+
+{% endraw %}

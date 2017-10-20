@@ -6,6 +6,8 @@ permalink: /kb/253/Q253748/
 
 ## Q253748: BUG: WizardBar Cannot Go to Declaration of Void Functions
 
+{% raw %}
+
 	Article: Q253748
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -88,3 +90,5 @@ permalink: /kb/253/Q253748/
 	
 	=============================================================================
 	
+
+{% endraw %}

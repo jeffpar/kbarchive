@@ -6,6 +6,8 @@ permalink: /kb/238/Q238763/
 
 ## Q238763: Err Msg: STOP 0x00000050 in Tcpip.sys on Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q238763
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -86,3 +88,5 @@ permalink: /kb/238/Q238763/
 	
 	=============================================================================
 	
+
+{% endraw %}

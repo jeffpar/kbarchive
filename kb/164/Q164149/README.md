@@ -6,6 +6,8 @@ permalink: /kb/164/Q164149/
 
 ## Q164149: HOWTO: Build Custom COM Interface Marshalers with Visual C++
 
+{% raw %}
+
 	Article: Q164149
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -176,3 +178,5 @@ permalink: /kb/164/Q164149/
 	
 	=============================================================================
 	
+
+{% endraw %}

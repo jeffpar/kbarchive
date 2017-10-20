@@ -6,6 +6,8 @@ permalink: /kb/067/Q67162/
 
 ## Q67162: C 6.00a Setup with Monochrome Monitor
 
+{% raw %}
+
 	Article: Q67162
 	Product(s): See article
 	Version(s): 6.00a   | 6.00a
@@ -27,3 +29,5 @@ permalink: /kb/067/Q67162/
 	the Setup program for any other C 6.00a package. We are researching
 	this problem and will post new information here as it becomes
 	available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195611/
 
 ## Q195611: DNS Client Does Not Try All Servers in DNS Service List
 
+{% raw %}
+
 	Article: Q195611
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/195/Q195611/
 	
 	=============================================================================
 	
+
+{% endraw %}

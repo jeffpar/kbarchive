@@ -6,6 +6,8 @@ permalink: /kb/150/Q150027/
 
 ## Q150027: FPNW Sends Print Operator Broadcasts to All Users
 
+{% raw %}
+
 	Article: Q150027
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -61,3 +63,5 @@ permalink: /kb/150/Q150027/
 	
 	=============================================================================
 	
+
+{% endraw %}

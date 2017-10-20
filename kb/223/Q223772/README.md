@@ -6,6 +6,8 @@ permalink: /kb/223/Q223772/
 
 ## Q223772: XFOR: Connector for cc:Mail Loops Trying to Import Same Message
 
+{% raw %}
+
 	Article: Q223772
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/223/Q223772/
 	
 	=============================================================================
 	
+
+{% endraw %}

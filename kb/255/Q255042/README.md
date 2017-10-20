@@ -6,6 +6,8 @@ permalink: /kb/255/Q255042/
 
 ## Q255042: HOWTO: Make Machine Accounts by Using ADSI with Visual C++
 
+{% raw %}
+
 	Article: Q255042
 	Product(s): Microsoft Windows NT
 	Version(s): 2.5
@@ -497,7 +499,7 @@ permalink: /kb/255/Q255042/
 	
 	  // TODO: reference additional headers your program requires here.
 	
-	  //{ {AFX_INSERT_LOCATION} }
+	  //{{AFX_INSERT_LOCATION}}
 	  // Microsoft Visual C++ inserts additional declarations immediately before the previous line.
 	
 	  #endif // !defined(AFX_STDAFX_H__AAEF26DD_E0AA_11D2_BC85_00C04FD430AF__INCLUDED_)
@@ -533,3 +535,5 @@ permalink: /kb/255/Q255042/
 	
 	=============================================================================
 	
+
+{% endraw %}

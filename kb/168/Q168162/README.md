@@ -6,6 +6,8 @@ permalink: /kb/168/Q168162/
 
 ## Q168162: FIX: RDO Move 0 Fails to Refresh Record
 
+{% raw %}
+
 	Article: Q168162
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -58,3 +60,5 @@ permalink: /kb/168/Q168162/
 	
 	=============================================================================
 	
+
+{% endraw %}

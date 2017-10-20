@@ -6,6 +6,8 @@ permalink: /kb/143/Q143278/
 
 ## Q143278: 28,800 bps Modem May Connect to MSN at a Slower Speed
 
+{% raw %}
+
 	Article: Q143278
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -60,3 +62,5 @@ permalink: /kb/143/Q143278/
 	
 	=============================================================================
 	
+
+{% endraw %}

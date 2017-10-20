@@ -6,6 +6,8 @@ permalink: /kb/225/Q225236/
 
 ## Q225236: Error Message When You Start Administrator Tool
 
+{% raw %}
+
 	Article: Q225236
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -60,3 +62,5 @@ permalink: /kb/225/Q225236/
 	
 	=============================================================================
 	
+
+{% endraw %}

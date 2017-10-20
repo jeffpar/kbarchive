@@ -6,6 +6,8 @@ permalink: /kb/193/Q193818/
 
 ## Q193818: SNA Server 3.0 Logs Repeated BIND Errors (Event 18)
 
+{% raw %}
+
 	Article: Q193818
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3
@@ -80,3 +82,5 @@ permalink: /kb/193/Q193818/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136401/
 
 ## Q136401: PRB: Data Path Errors Starting SourceSafe
 
+{% raw %}
+
 	Article: Q136401
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/136/Q136401/
 	
 	=============================================================================
 	
+
+{% endraw %}

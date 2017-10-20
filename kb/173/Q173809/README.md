@@ -6,6 +6,8 @@ permalink: /kb/173/Q173809/
 
 ## Q173809: XADM: Cluster-Aware Exchange Disables Server Monitors
 
+{% raw %}
+
 	Article: Q173809
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -47,3 +49,5 @@ permalink: /kb/173/Q173809/
 	
 	=============================================================================
 	
+
+{% endraw %}

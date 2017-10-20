@@ -6,6 +6,8 @@ permalink: /kb/147/Q147894/
 
 ## Q147894: BUG: Spy++ Causes Exception in Owner-Drawn Combo Box
 
+{% raw %}
+
 	Article: Q147894
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -94,3 +96,5 @@ permalink: /kb/147/Q147894/
 	
 	=============================================================================
 	
+
+{% endraw %}

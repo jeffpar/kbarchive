@@ -6,6 +6,8 @@ permalink: /kb/216/Q216172/
 
 ## Q216172: XIMS: NNTP Event ID 11106 with MODE STREAM
 
+{% raw %}
+
 	Article: Q216172
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -73,3 +75,5 @@ permalink: /kb/216/Q216172/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199062/
 
 ## Q199062: PC Win: How to Use WinMail Client to Post to Shared Folders
 
+{% raw %}
+
 	Article: Q199062
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -77,3 +79,5 @@ permalink: /kb/199/Q199062/
 	
 	=============================================================================
 	
+
+{% endraw %}

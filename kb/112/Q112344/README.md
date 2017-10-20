@@ -6,6 +6,8 @@ permalink: /kb/112/Q112344/
 
 ## Q112344: FIX: F6422 on Unformatted File Opened with ACCESS='APPEND'
 
+{% raw %}
+
 	Article: Q112344
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -103,3 +105,5 @@ permalink: /kb/112/Q112344/
 	
 	=============================================================================
 	
+
+{% endraw %}

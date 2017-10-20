@@ -6,6 +6,8 @@ permalink: /kb/157/Q157045/
 
 ## Q157045: INFO: Read-Only Control Takes on DisabledBackColor
 
+{% raw %}
+
 	Article: Q157045
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -47,3 +49,5 @@ permalink: /kb/157/Q157045/
 	
 	=============================================================================
 	
+
+{% endraw %}

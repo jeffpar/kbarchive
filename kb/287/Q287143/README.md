@@ -6,6 +6,8 @@ permalink: /kb/287/Q287143/
 
 ## Q287143: MechWarrior 4: Improve Performance with DMA
 
+{% raw %}
+
 	Article: Q287143
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/287/Q287143/
 	
 	=============================================================================
 	
+
+{% endraw %}

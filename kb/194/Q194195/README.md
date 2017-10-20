@@ -6,6 +6,8 @@ permalink: /kb/194/Q194195/
 
 ## Q194195: FIX: Setup Wizard Cannot Differentiate Files With Same Name
 
+{% raw %}
+
 	Article: Q194195
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -136,3 +138,5 @@ permalink: /kb/194/Q194195/
 	
 	=============================================================================
 	
+
+{% endraw %}

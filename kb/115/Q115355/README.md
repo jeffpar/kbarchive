@@ -6,6 +6,8 @@ permalink: /kb/115/Q115355/
 
 ## Q115355: X400: Update Utility Crashes with &quot;Out of memory&quot; Message
 
+{% raw %}
+
 	Article: Q115355
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -92,3 +94,5 @@ permalink: /kb/115/Q115355/
 	
 	=============================================================================
 	
+
+{% endraw %}

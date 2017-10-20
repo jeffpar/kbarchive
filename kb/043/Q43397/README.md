@@ -6,6 +6,8 @@ permalink: /kb/043/Q43397/
 
 ## Q43397: Using OpenFile() with Sharing and Inheritance Bits
 
+{% raw %}
+
 	Article: Q43397
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -49,3 +51,5 @@ permalink: /kb/043/Q43397/
 	
 	=============================================================================
 	
+
+{% endraw %}

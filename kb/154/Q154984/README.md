@@ -6,6 +6,8 @@ permalink: /kb/154/Q154984/
 
 ## Q154984: DNS Server May Not Recursively Resolve Some Names
 
+{% raw %}
+
 	Article: Q154984
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/154/Q154984/
 	
 	=============================================================================
 	
+
+{% endraw %}

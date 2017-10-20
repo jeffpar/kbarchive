@@ -6,6 +6,8 @@ permalink: /kb/145/Q145744/
 
 ## Q145744: PRB: Client Installed from ReadOnly Server Won't Start
 
+{% raw %}
+
 	Article: Q145744
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/145/Q145744/
 	
 	=============================================================================
 	
+
+{% endraw %}

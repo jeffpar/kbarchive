@@ -6,6 +6,8 @@ permalink: /kb/191/Q191553/
 
 ## Q191553: Urban Assault Hangs After Introductory Movie Is Played
 
+{% raw %}
+
 	Article: Q191553
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -99,3 +101,5 @@ permalink: /kb/191/Q191553/
 	
 	=============================================================================
 	
+
+{% endraw %}

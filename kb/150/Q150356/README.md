@@ -6,6 +6,8 @@ permalink: /kb/150/Q150356/
 
 ## Q150356: Error Trying to Upgrade Win95 to Windows NT via SMS
 
+{% raw %}
+
 	Article: Q150356
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:1.0,1.1,1.2,3.5,3.51
@@ -46,3 +48,5 @@ permalink: /kb/150/Q150356/
 	
 	=============================================================================
 	
+
+{% endraw %}

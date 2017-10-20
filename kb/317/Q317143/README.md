@@ -6,6 +6,8 @@ permalink: /kb/317/Q317143/
 
 ## Q317143: STOP 0x0000001E When You Use Lexmark Optra Printer Drivers
 
+{% raw %}
+
 	Article: Q317143
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/317/Q317143/
 	
 	=============================================================================
 	
+
+{% endraw %}

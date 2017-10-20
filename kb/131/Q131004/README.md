@@ -6,6 +6,8 @@ permalink: /kb/131/Q131004/
 
 ## Q131004: How to Enable Print Notification with NetWare Print Servers
 
+{% raw %}
+
 	Article: Q131004
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -83,3 +85,5 @@ permalink: /kb/131/Q131004/
 	
 	=============================================================================
 	
+
+{% endraw %}

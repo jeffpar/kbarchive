@@ -6,6 +6,8 @@ permalink: /kb/239/Q239880/
 
 ## Q239880: NFL Fever 2000: Slow Video Frame Rate During First Plays of Game
 
+{% raw %}
+
 	Article: Q239880
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/239/Q239880/
 	
 	=============================================================================
 	
+
+{% endraw %}

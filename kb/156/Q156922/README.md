@@ -6,6 +6,8 @@ permalink: /kb/156/Q156922/
 
 ## Q156922: BUG: Disabled Pages in Container Class Appear Enabled
 
+{% raw %}
+
 	Article: Q156922
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/156/Q156922/
 	
 	=============================================================================
 	
+
+{% endraw %}

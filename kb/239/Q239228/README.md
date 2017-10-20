@@ -6,6 +6,8 @@ permalink: /kb/239/Q239228/
 
 ## Q239228: XCON: Internet Mail Service Incorrectly Routes Mail If Address S
 
+{% raw %}
+
 	Article: Q239228
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -83,3 +85,5 @@ permalink: /kb/239/Q239228/
 	
 	=============================================================================
 	
+
+{% endraw %}

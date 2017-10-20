@@ -6,6 +6,8 @@ permalink: /kb/145/Q145803/
 
 ## Q145803: Pregnancy and Child Care: Print Option Unavailable in Overview
 
+{% raw %}
+
 	Article: Q145803
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -59,3 +61,5 @@ permalink: /kb/145/Q145803/
 	
 	=============================================================================
 	
+
+{% endraw %}

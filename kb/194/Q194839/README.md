@@ -6,6 +6,8 @@ permalink: /kb/194/Q194839/
 
 ## Q194839: XADM: Outlook Web Access Cannot Resolve Name
 
+{% raw %}
+
 	Article: Q194839
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -72,3 +74,5 @@ permalink: /kb/194/Q194839/
 	
 	=============================================================================
 	
+
+{% endraw %}

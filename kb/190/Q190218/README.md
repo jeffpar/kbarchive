@@ -6,6 +6,8 @@ permalink: /kb/190/Q190218/
 
 ## Q190218: HOWTO: Retrieve Settings From a Printer Driver
 
+{% raw %}
+
 	Article: Q190218
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -308,3 +310,5 @@ permalink: /kb/190/Q190218/
 	
 	=============================================================================
 	
+
+{% endraw %}

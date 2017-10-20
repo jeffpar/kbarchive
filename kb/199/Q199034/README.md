@@ -6,6 +6,8 @@ permalink: /kb/199/Q199034/
 
 ## Q199034: Remote Control Cannot Connect If 3Com Connectivity Utility Run
 
+{% raw %}
+
 	Article: Q199034
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -63,3 +65,5 @@ permalink: /kb/199/Q199034/
 	
 	=============================================================================
 	
+
+{% endraw %}

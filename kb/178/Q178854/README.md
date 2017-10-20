@@ -6,6 +6,8 @@ permalink: /kb/178/Q178854/
 
 ## Q178854: XCLN: When You View Message from Explorer, Client Stops
 
+{% raw %}
+
 	Article: Q178854
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -54,3 +56,5 @@ permalink: /kb/178/Q178854/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142679/
 
 ## Q142679: Windows NT Fails to Locate the NE2000 Compatible Drivers
 
+{% raw %}
+
 	Article: Q142679
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/142/Q142679/
 	
 	=============================================================================
 	
+
+{% endraw %}

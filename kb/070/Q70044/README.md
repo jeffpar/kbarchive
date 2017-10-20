@@ -6,6 +6,8 @@ permalink: /kb/070/Q70044/
 
 ## Q70044: Loading a File in Paintbrush Doesn't Update Image Attributes
 
+{% raw %}
+
 	Article: Q70044
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/070/Q70044/
 	
 	=============================================================================
 	
+
+{% endraw %}

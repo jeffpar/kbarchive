@@ -6,6 +6,8 @@ permalink: /kb/060/Q60786/
 
 ## Q60786: DOSCALLS.LIB Is Not Shipped with C 6.00
 
+{% raw %}
+
 	Article: Q60786
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -24,3 +26,5 @@ permalink: /kb/060/Q60786/
 	there is no DOSCALLS.LIB supplied with C 6.00. Use OS2.LIB instead.
 	OS2.LIB contains all the functionality of DOSCALLS.LIB in addition to
 	having Presentation Manager (PM) support.
+
+{% endraw %}

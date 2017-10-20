@@ -6,6 +6,8 @@ permalink: /kb/191/Q191344/
 
 ## Q191344: PRB: Base Table Fields Changed with Remote View
 
+{% raw %}
+
 	Article: Q191344
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a,6.0
@@ -192,3 +194,5 @@ permalink: /kb/191/Q191344/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154430/
 
 ## Q154430: BUG: Visual C++ 4.2 DAO Breaks Certain Access95B Functions
 
+{% raw %}
+
 	Article: Q154430
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -119,3 +121,5 @@ permalink: /kb/154/Q154430/
 	
 	=============================================================================
 	
+
+{% endraw %}

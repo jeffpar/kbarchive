@@ -6,6 +6,8 @@ permalink: /kb/091/Q91039/
 
 ## Q91039: PC WFW: Network Name Doesn't Display After Upgrade
 
+{% raw %}
+
 	Article: Q91039
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -55,3 +57,5 @@ permalink: /kb/091/Q91039/
 	
 	=============================================================================
 	
+
+{% endraw %}

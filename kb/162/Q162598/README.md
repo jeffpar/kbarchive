@@ -6,6 +6,8 @@ permalink: /kb/162/Q162598/
 
 ## Q162598: WD97: ActiveX Controls Lose Sizing After Previewing in Browser
 
+{% raw %}
+
 	Article: Q162598
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:3.01,97
@@ -52,3 +54,5 @@ permalink: /kb/162/Q162598/
 	
 	=============================================================================
 	
+
+{% endraw %}

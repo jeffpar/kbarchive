@@ -6,6 +6,8 @@ permalink: /kb/305/Q305210/
 
 ## Q305210: Routemon.exe Can't Set Router Priority to Zero on OSPF Interface
 
+{% raw %}
+
 	Article: Q305210
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/305/Q305210/
 	
 	=============================================================================
 	
+
+{% endraw %}

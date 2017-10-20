@@ -6,6 +6,8 @@ permalink: /kb/127/Q127843/
 
 ## Q127843: How to Place a Command Button in a Grid Cell Visually
 
+{% raw %}
+
 	Article: Q127843
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -83,3 +85,5 @@ permalink: /kb/127/Q127843/
 	
 	=============================================================================
 	
+
+{% endraw %}

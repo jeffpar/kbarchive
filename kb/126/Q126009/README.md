@@ -6,6 +6,8 @@ permalink: /kb/126/Q126009/
 
 ## Q126009: Windows NT 3.5 SETUP.TXT File
 
+{% raw %}
+
 	Article: Q126009
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -555,3 +557,5 @@ permalink: /kb/126/Q126009/
 	
 	=============================================================================
 	
+
+{% endraw %}

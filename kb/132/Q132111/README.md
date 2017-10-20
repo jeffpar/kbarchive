@@ -6,6 +6,8 @@ permalink: /kb/132/Q132111/
 
 ## Q132111: Digiboard Drops DTR After Disconnect
 
+{% raw %}
+
 	Article: Q132111
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132111/
 	
 	=============================================================================
 	
+
+{% endraw %}

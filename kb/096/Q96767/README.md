@@ -6,6 +6,8 @@ permalink: /kb/096/Q96767/
 
 ## Q96767: Using the SETVER Command
 
+{% raw %}
+
 	Article: Q96767
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -161,3 +163,5 @@ permalink: /kb/096/Q96767/
 	
 	=============================================================================
 	
+
+{% endraw %}

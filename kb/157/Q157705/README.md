@@ -6,6 +6,8 @@ permalink: /kb/157/Q157705/
 
 ## Q157705: XFOR: IMC Can't Handle MIME w/ Content Type of Multipart/Digest
 
+{% raw %}
+
 	Article: Q157705
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/157/Q157705/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254443/
 
 ## Q254443: MapPoint 2001: &quot;Error 1305&quot; When You Install Program
 
+{% raw %}
+
 	Article: Q254443
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/254/Q254443/
 	
 	=============================================================================
 	
+
+{% endraw %}

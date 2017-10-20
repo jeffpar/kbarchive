@@ -6,6 +6,8 @@ permalink: /kb/104/Q104195/
 
 ## Q104195: SET Command May Truncate the List of Environment Variables
 
+{% raw %}
+
 	Article: Q104195
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -65,3 +67,5 @@ permalink: /kb/104/Q104195/
 	
 	=============================================================================
 	
+
+{% endraw %}

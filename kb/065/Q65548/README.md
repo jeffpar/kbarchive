@@ -6,6 +6,8 @@ permalink: /kb/065/Q65548/
 
 ## Q65548: PDS 7.10 Can Now Buffer COM1 or COM2 Input Data During a SHELL
 
+{% raw %}
+
 	Article: Q65548
 	Product(s): See article
 	Version(s): 7.10   | 7.10
@@ -40,3 +42,5 @@ permalink: /kb/065/Q65548/
 	stand-alone program, the code for communications support is directly
 	linked to the program and stays in memory, thus allowing the program
 	to continue to buffer communications data during a SHELL.
+
+{% endraw %}

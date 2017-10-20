@@ -6,6 +6,8 @@ permalink: /kb/195/Q195131/
 
 ## Q195131: WD97: How to Sort Words Separated by a Space
 
+{% raw %}
+
 	Article: Q195131
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/195/Q195131/
 	
 	=============================================================================
 	
+
+{% endraw %}

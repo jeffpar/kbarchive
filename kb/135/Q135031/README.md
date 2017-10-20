@@ -6,6 +6,8 @@ permalink: /kb/135/Q135031/
 
 ## Q135031: SMTP: Unable to Send SMTP Mail Messages from Downstream PO
 
+{% raw %}
+
 	Article: Q135031
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -73,3 +75,5 @@ permalink: /kb/135/Q135031/
 	
 	=============================================================================
 	
+
+{% endraw %}

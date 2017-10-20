@@ -6,6 +6,8 @@ permalink: /kb/086/Q86608/
 
 ## Q86608: PC WSPlus: Day Must Start on Hour or Half Hour
 
+{% raw %}
+
 	Article: Q86608
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -40,3 +42,5 @@ permalink: /kb/086/Q86608/
 	
 	=============================================================================
 	
+
+{% endraw %}

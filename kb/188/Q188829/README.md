@@ -6,6 +6,8 @@ permalink: /kb/188/Q188829/
 
 ## Q188829: XADM: Cannot View Message Text on Black Background
 
+{% raw %}
+
 	Article: Q188829
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -59,3 +61,5 @@ permalink: /kb/188/Q188829/
 	
 	=============================================================================
 	
+
+{% endraw %}

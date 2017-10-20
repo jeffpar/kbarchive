@@ -6,6 +6,8 @@ permalink: /kb/301/Q301242/
 
 ## Q301242: HOW TO: Share Memory-Mapped Objects Between Processes in Win CE
 
+{% raw %}
+
 	Article: Q301242
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -128,3 +130,5 @@ permalink: /kb/301/Q301242/
 	
 	=============================================================================
 	
+
+{% endraw %}

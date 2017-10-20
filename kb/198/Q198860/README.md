@@ -6,6 +6,8 @@ permalink: /kb/198/Q198860/
 
 ## Q198860: HOWTO: Open the Printer Properties Dialog
 
+{% raw %}
+
 	Article: Q198860
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/198/Q198860/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175105/
 
 ## Q175105: XFOR: Internet Message Labeled with Incorrect Character Set
 
+{% raw %}
+
 	Article: Q175105
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -47,3 +49,5 @@ permalink: /kb/175/Q175105/
 	
 	=============================================================================
 	
+
+{% endraw %}

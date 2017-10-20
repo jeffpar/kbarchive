@@ -6,6 +6,8 @@ permalink: /kb/248/Q248487/
 
 ## Q248487: XADM: Microsoft Exchange Server 5.5 SP1 Installation Stops
 
+{% raw %}
+
 	Article: Q248487
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/248/Q248487/
 	
 	=============================================================================
 	
+
+{% endraw %}

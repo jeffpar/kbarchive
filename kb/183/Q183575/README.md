@@ -6,6 +6,8 @@ permalink: /kb/183/Q183575/
 
 ## Q183575: IDBSchemaRowset::GetSchemas Returns Inaccurate Information
 
+{% raw %}
+
 	Article: Q183575
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -92,3 +94,5 @@ permalink: /kb/183/Q183575/
 	
 	=============================================================================
 	
+
+{% endraw %}

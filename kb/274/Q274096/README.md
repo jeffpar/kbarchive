@@ -6,6 +6,8 @@ permalink: /kb/274/Q274096/
 
 ## Q274096: Multimedia Err Msg: Exception 01h in Module &lt;Unknown&gt;
 
+{% raw %}
+
 	Article: Q274096
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/274/Q274096/
 	
 	=============================================================================
 	
+
+{% endraw %}

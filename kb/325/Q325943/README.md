@@ -6,6 +6,8 @@ permalink: /kb/325/Q325943/
 
 ## Q325943: FIX: Secondary HAC Service Cannot Copy Database File from MDB
 
+{% raw %}
+
 	Article: Q325943
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -160,3 +162,5 @@ permalink: /kb/325/Q325943/
 	
 	=============================================================================
 	
+
+{% endraw %}

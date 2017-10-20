@@ -6,6 +6,8 @@ permalink: /kb/237/Q237691/
 
 ## Q237691: Windows 98 Dial-Up Networking Security Upgrade Release Notes
 
+{% raw %}
+
 	Article: Q237691
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -226,3 +228,5 @@ permalink: /kb/237/Q237691/
 	
 	=============================================================================
 	
+
+{% endraw %}

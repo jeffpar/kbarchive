@@ -6,6 +6,8 @@ permalink: /kb/157/Q157533/
 
 ## Q157533: PRB: PVCS to SourceSafe Conversion Fails
 
+{% raw %}
+
 	Article: Q157533
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/157/Q157533/
 	
 	=============================================================================
 	
+
+{% endraw %}

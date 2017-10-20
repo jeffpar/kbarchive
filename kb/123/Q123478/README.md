@@ -6,6 +6,8 @@ permalink: /kb/123/Q123478/
 
 ## Q123478: Multiple ISDN Adapters Cannot Be Installed
 
+{% raw %}
+
 	Article: Q123478
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -66,3 +68,5 @@ permalink: /kb/123/Q123478/
 	
 	=============================================================================
 	
+
+{% endraw %}

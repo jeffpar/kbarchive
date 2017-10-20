@@ -6,6 +6,8 @@ permalink: /kb/088/Q88096/
 
 ## Q88096: EXTRA! for Windows Requires Update to Run in Standard Mode
 
+{% raw %}
+
 	Article: Q88096
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/088/Q88096/
 	
 	=============================================================================
 	
+
+{% endraw %}

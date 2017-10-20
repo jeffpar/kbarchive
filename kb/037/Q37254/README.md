@@ -6,6 +6,8 @@ permalink: /kb/037/Q37254/
 
 ## Q37254: Excellerator Requires Ms-DOS Version 3.30 with AT&amp;T 6312
 
+{% raw %}
+
 	Article: Q37254
 	Product(s): See article
 	Version(s): 1.00
@@ -28,3 +30,5 @@ permalink: /kb/037/Q37254/
 	
 	According to Leading Index, the problem can be corrected by upgrading
 	to MS-DOS Version 3.30.
+
+{% endraw %}

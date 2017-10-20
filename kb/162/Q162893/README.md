@@ -6,6 +6,8 @@ permalink: /kb/162/Q162893/
 
 ## Q162893: ODE97: System Requirements for Microsoft Office 97 (ODE)
 
+{% raw %}
+
 	Article: Q162893
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -113,3 +115,5 @@ permalink: /kb/162/Q162893/
 	
 	=============================================================================
 	
+
+{% endraw %}

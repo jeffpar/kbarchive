@@ -6,6 +6,8 @@ permalink: /kb/102/Q102066/
 
 ## Q102066: Using CHKSTOR for Disk Quota Reporting in LAN Manager
 
+{% raw %}
+
 	Article: Q102066
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/102/Q102066/
 	
 	=============================================================================
 	
+
+{% endraw %}

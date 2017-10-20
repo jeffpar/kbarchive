@@ -6,6 +6,8 @@ permalink: /kb/166/Q166725/
 
 ## Q166725: SMS: How to Upgrade Windows NT Workstation 3.51 to 4.0 w/ SMS
 
+{% raw %}
+
 	Article: Q166725
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2,3.51,4.0
@@ -189,3 +191,5 @@ permalink: /kb/166/Q166725/
 	
 	=============================================================================
 	
+
+{% endraw %}

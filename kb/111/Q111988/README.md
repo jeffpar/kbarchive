@@ -6,6 +6,8 @@ permalink: /kb/111/Q111988/
 
 ## Q111988: UNCONF: &quot;Unimplemented Trap Error&quot; on Accelerated Macintoshes
 
+{% raw %}
+
 	Article: Q111988
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b
@@ -64,3 +66,5 @@ permalink: /kb/111/Q111988/
 	
 	=============================================================================
 	
+
+{% endraw %}

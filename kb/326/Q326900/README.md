@@ -6,6 +6,8 @@ permalink: /kb/326/Q326900/
 
 ## Q326900: FIX: Stop XID Exchange When It Does Not Complete
 
+{% raw %}
+
 	Article: Q326900
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/326/Q326900/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77649/
 
 ## Q77649: Sample Source Code Demonstrates Playing Metafiles
 
+{% raw %}
+
 	Article: Q77649
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -56,3 +58,5 @@ permalink: /kb/077/Q77649/
 	
 	=============================================================================
 	
+
+{% endraw %}

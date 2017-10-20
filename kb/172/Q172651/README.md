@@ -6,6 +6,8 @@ permalink: /kb/172/Q172651/
 
 ## Q172651: SNA Workstation Traps When an APPC Application Calls DISPLAY()
 
+{% raw %}
+
 	Article: Q172651
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1; winnt:3.0,3.0 SP1
@@ -65,3 +67,5 @@ permalink: /kb/172/Q172651/
 	
 	=============================================================================
 	
+
+{% endraw %}

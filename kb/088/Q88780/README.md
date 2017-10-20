@@ -6,6 +6,8 @@ permalink: /kb/088/Q88780/
 
 ## Q88780: SMTP: Definition of the IMPORT Utility
 
+{% raw %}
+
 	Article: Q88780
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/088/Q88780/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258534/
 
 ## Q258534: FIX: Grid Display and Re-draw Are Slow Under Hebrew Windows
 
+{% raw %}
+
 	Article: Q258534
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/258/Q258534/
 	
 	=============================================================================
 	
+
+{% endraw %}

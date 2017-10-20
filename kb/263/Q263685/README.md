@@ -6,6 +6,8 @@ permalink: /kb/263/Q263685/
 
 ## Q263685: BUG: AV in VB IDE Compiling ADODB.Connection.Execute Method
 
+{% raw %}
+
 	Article: Q263685
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/263/Q263685/
 	
 	=============================================================================
 	
+
+{% endraw %}

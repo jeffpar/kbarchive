@@ -6,6 +6,8 @@ permalink: /kb/141/Q141802/
 
 ## Q141802: Dynamic Column Binding with MFC ODBC Database Classes
 
+{% raw %}
+
 	Article: Q141802
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -433,3 +435,5 @@ permalink: /kb/141/Q141802/
 	
 	=============================================================================
 	
+
+{% endraw %}

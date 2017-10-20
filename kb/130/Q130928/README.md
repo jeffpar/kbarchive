@@ -6,6 +6,8 @@ permalink: /kb/130/Q130928/
 
 ## Q130928: Restoring a Backup of Windows NT to Another Computer
 
+{% raw %}
+
 	Article: Q130928
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -124,3 +126,5 @@ permalink: /kb/130/Q130928/
 	
 	=============================================================================
 	
+
+{% endraw %}

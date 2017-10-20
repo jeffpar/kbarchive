@@ -6,6 +6,8 @@ permalink: /kb/149/Q149583/
 
 ## Q149583: XCLN: Directory Could Not be Expanded to an O/R Address
 
+{% raw %}
+
 	Article: Q149583
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -65,3 +67,5 @@ permalink: /kb/149/Q149583/
 	
 	=============================================================================
 	
+
+{% endraw %}

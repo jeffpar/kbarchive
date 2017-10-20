@@ -6,6 +6,8 @@ permalink: /kb/154/Q154496/
 
 ## Q154496: ODBC Error After Multiple Connections and Disconnections
 
+{% raw %}
+
 	Article: Q154496
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/154/Q154496/
 	
 	=============================================================================
 	
+
+{% endraw %}

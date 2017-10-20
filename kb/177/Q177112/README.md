@@ -6,6 +6,8 @@ permalink: /kb/177/Q177112/
 
 ## Q177112: Unable to Send Message to RAS Clients from RAS Admin
 
+{% raw %}
+
 	Article: Q177112
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -85,3 +87,5 @@ permalink: /kb/177/Q177112/
 	
 	=============================================================================
 	
+
+{% endraw %}

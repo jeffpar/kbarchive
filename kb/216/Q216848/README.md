@@ -6,6 +6,8 @@ permalink: /kb/216/Q216848/
 
 ## Q216848: BUG: MDAC: SQL Server Driver May Return Error &quot;Login Failed&quot;
 
+{% raw %}
+
 	Article: Q216848
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.7; winnt:6.5,7.0
@@ -118,3 +120,5 @@ permalink: /kb/216/Q216848/
 	
 	=============================================================================
 	
+
+{% endraw %}

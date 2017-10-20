@@ -6,6 +6,8 @@ permalink: /kb/127/Q127752/
 
 ## Q127752: PC DirSync: Err Msg: Warning 8 Error Deleting File...
 
+{% raw %}
+
 	Article: Q127752
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -93,3 +95,5 @@ permalink: /kb/127/Q127752/
 	
 	=============================================================================
 	
+
+{% endraw %}

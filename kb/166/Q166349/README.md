@@ -6,6 +6,8 @@ permalink: /kb/166/Q166349/
 
 ## Q166349: XGEN: Exchange Server, Client, and Outlook Version Numbers
 
+{% raw %}
+
 	Article: Q166349
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -142,3 +144,5 @@ permalink: /kb/166/Q166349/
 	
 	=============================================================================
 	
+
+{% endraw %}

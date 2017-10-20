@@ -6,6 +6,8 @@ permalink: /kb/200/Q200065/
 
 ## Q200065: XFOR: Replication Between French Exchange Server &amp; MacMail Fails
 
+{% raw %}
+
 	Article: Q200065
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/200/Q200065/
 	
 	=============================================================================
 	
+
+{% endraw %}

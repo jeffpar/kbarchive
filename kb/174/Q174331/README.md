@@ -6,6 +6,8 @@ permalink: /kb/174/Q174331/
 
 ## Q174331: Error Message Received Adding Second Time Service to Cluster
 
+{% raw %}
+
 	Article: Q174331
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/174/Q174331/
 	
 	=============================================================================
 	
+
+{% endraw %}

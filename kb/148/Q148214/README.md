@@ -6,6 +6,8 @@ permalink: /kb/148/Q148214/
 
 ## Q148214: Deleting Roles Causes Duplicate Button Faces
 
+{% raw %}
+
 	Article: Q148214
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -43,3 +45,5 @@ permalink: /kb/148/Q148214/
 	
 	=============================================================================
 	
+
+{% endraw %}

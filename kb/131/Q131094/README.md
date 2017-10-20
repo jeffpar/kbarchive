@@ -6,6 +6,8 @@ permalink: /kb/131/Q131094/
 
 ## Q131094: Gray State Check Boxes in SourceSafe
 
+{% raw %}
+
 	Article: Q131094
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:3.04,3.1; winnt:3.04,3.1
@@ -42,3 +44,5 @@ permalink: /kb/131/Q131094/
 	
 	=============================================================================
 	
+
+{% endraw %}

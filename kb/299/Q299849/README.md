@@ -6,6 +6,8 @@ permalink: /kb/299/Q299849/
 
 ## Q299849: FIX: Failed TABLEUPDATE Misplaces Record Pointer
 
+{% raw %}
+
 	Article: Q299849
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -95,3 +97,5 @@ permalink: /kb/299/Q299849/
 	
 	=============================================================================
 	
+
+{% endraw %}

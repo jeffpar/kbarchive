@@ -6,6 +6,8 @@ permalink: /kb/128/Q128531/
 
 ## Q128531: README.TXT: Windows NT Version 3.51 U.S. Service Pack
 
+{% raw %}
+
 	Article: Q128531
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP5
@@ -599,3 +601,5 @@ permalink: /kb/128/Q128531/
 	
 	=============================================================================
 	
+
+{% endraw %}

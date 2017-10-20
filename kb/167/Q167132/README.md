@@ -6,6 +6,8 @@ permalink: /kb/167/Q167132/
 
 ## Q167132: XADM: Access Violation in Store.exe After Upgrading to SP4
 
+{% raw %}
+
 	Article: Q167132
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -122,3 +124,5 @@ permalink: /kb/167/Q167132/
 	
 	=============================================================================
 	
+
+{% endraw %}

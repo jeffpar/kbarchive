@@ -6,6 +6,8 @@ permalink: /kb/169/Q169565/
 
 ## Q169565: PRB: Type Mismatch Using OLE Automation to Word 97
 
+{% raw %}
+
 	Article: Q169565
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0 3.0b 5.00 5.0a 8.0 97
@@ -142,3 +144,5 @@ permalink: /kb/169/Q169565/
 	
 	=============================================================================
 	
+
+{% endraw %}

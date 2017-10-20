@@ -6,6 +6,8 @@ permalink: /kb/317/Q317218/
 
 ## Q317218: Event IDs 7024, 7000 and FLCSS Service and Process Reported
 
+{% raw %}
+
 	Article: Q317218
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -133,3 +135,5 @@ permalink: /kb/317/Q317218/
 	
 	=============================================================================
 	
+
+{% endraw %}

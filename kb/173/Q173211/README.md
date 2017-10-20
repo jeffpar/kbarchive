@@ -6,6 +6,8 @@ permalink: /kb/173/Q173211/
 
 ## Q173211: MDG: Admin Notice 102 Caused By Missing or Hidden C850sort.glb
 
+{% raw %}
+
 	Article: Q173211
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -49,3 +51,5 @@ permalink: /kb/173/Q173211/
 	
 	=============================================================================
 	
+
+{% endraw %}

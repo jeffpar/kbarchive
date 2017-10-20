@@ -6,6 +6,8 @@ permalink: /kb/141/Q141394/
 
 ## Q141394: PRB: SearchForm from Wizstyle.vcx Displays Behind Desktop Form
 
+{% raw %}
+
 	Article: Q141394
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -104,3 +106,5 @@ permalink: /kb/141/Q141394/
 	
 	=============================================================================
 	
+
+{% endraw %}

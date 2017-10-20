@@ -6,6 +6,8 @@ permalink: /kb/119/Q119646/
 
 ## Q119646: PC Win: Undocumented Extension to Custom Command Syntax
 
+{% raw %}
+
 	Article: Q119646
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -62,3 +64,5 @@ permalink: /kb/119/Q119646/
 	
 	=============================================================================
 	
+
+{% endraw %}

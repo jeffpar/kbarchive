@@ -6,6 +6,8 @@ permalink: /kb/182/Q182049/
 
 ## Q182049: SMS: Remote Control Is Slow Using NetBT on SMP Clients
 
+{% raw %}
+
 	Article: Q182049
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -60,3 +62,5 @@ permalink: /kb/182/Q182049/
 	
 	=============================================================================
 	
+
+{% endraw %}

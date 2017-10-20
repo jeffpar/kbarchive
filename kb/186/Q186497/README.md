@@ -6,6 +6,8 @@ permalink: /kb/186/Q186497/
 
 ## Q186497: Do Not Install Active Desktop on Terminal Server
 
+{% raw %}
+
 	Article: Q186497
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/186/Q186497/
 	
 	=============================================================================
 	
+
+{% endraw %}

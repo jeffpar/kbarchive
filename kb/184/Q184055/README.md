@@ -6,6 +6,8 @@ permalink: /kb/184/Q184055/
 
 ## Q184055: IIS: Certificate Security Affected By Schannel.dll
 
+{% raw %}
+
 	Article: Q184055
 	Product(s): Internet Information Server
 	Version(s): WINNT:3.0
@@ -70,3 +72,5 @@ permalink: /kb/184/Q184055/
 	
 	=============================================================================
 	
+
+{% endraw %}

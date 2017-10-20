@@ -6,6 +6,8 @@ permalink: /kb/165/Q165282/
 
 ## Q165282: Err Msg: This Version of Msvcrt40.dll Is Intended for Win32s...
 
+{% raw %}
+
 	Article: Q165282
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -99,3 +101,5 @@ permalink: /kb/165/Q165282/
 	
 	=============================================================================
 	
+
+{% endraw %}

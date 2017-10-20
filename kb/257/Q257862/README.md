@@ -6,6 +6,8 @@ permalink: /kb/257/Q257862/
 
 ## Q257862: Advertisement Creation Indicates a Program Is Disabled When Not
 
+{% raw %}
+
 	Article: Q257862
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -136,3 +138,5 @@ permalink: /kb/257/Q257862/
 	
 	=============================================================================
 	
+
+{% endraw %}

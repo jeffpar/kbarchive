@@ -6,6 +6,8 @@ permalink: /kb/153/Q153719/
 
 ## Q153719: How to Re-Sync PDC/BDC Trust After Event IDs 3210 and 7023
 
+{% raw %}
+
 	Article: Q153719
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -137,3 +139,5 @@ permalink: /kb/153/Q153719/
 	
 	=============================================================================
 	
+
+{% endraw %}

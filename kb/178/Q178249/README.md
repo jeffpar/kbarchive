@@ -6,6 +6,8 @@ permalink: /kb/178/Q178249/
 
 ## Q178249: Using Network Control Panel to Configure SNA Server Fails
 
+{% raw %}
+
 	Article: Q178249
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -60,3 +62,5 @@ permalink: /kb/178/Q178249/
 	
 	=============================================================================
 	
+
+{% endraw %}

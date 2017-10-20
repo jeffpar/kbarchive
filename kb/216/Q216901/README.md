@@ -6,6 +6,8 @@ permalink: /kb/216/Q216901/
 
 ## Q216901: XCLN: Resources Free Busy Information Not Updated
 
+{% raw %}
+
 	Article: Q216901
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/216/Q216901/
 	
 	=============================================================================
 	
+
+{% endraw %}

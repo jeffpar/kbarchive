@@ -6,6 +6,8 @@ permalink: /kb/031/Q31787/
 
 ## Q31787: IF &lt;expression&gt; THEN NEXT / THEN WEND Not Supported
 
+{% raw %}
+
 	Article: Q31787
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -39,3 +41,5 @@ permalink: /kb/031/Q31787/
 	
 	3. Gray Page Update-57 of the "Microsoft QuickBASIC Version 3.00
 	   Update" manual.
+
+{% endraw %}

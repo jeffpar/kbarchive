@@ -6,6 +6,8 @@ permalink: /kb/279/Q279142/
 
 ## Q279142: FIX: BUILD EXE Command May Cause &quot;File Is Not Open&quot; Error
 
+{% raw %}
+
 	Article: Q279142
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/279/Q279142/
 	
 	=============================================================================
 	
+
+{% endraw %}

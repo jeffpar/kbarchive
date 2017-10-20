@@ -6,6 +6,8 @@ permalink: /kb/115/Q115070/
 
 ## Q115070: Writer 1: Prints Black/White on DeskWriter or Other Printers
 
+{% raw %}
+
 	Article: Q115070
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -76,3 +78,5 @@ permalink: /kb/115/Q115070/
 	
 	=============================================================================
 	
+
+{% endraw %}

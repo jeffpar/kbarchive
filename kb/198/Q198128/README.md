@@ -6,6 +6,8 @@ permalink: /kb/198/Q198128/
 
 ## Q198128: PRB: Accessing WINMODEM with MSComm Control Can Hang Application
 
+{% raw %}
+
 	Article: Q198128
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/198/Q198128/
 	
 	=============================================================================
 	
+
+{% endraw %}

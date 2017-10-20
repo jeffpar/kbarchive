@@ -6,6 +6,8 @@ permalink: /kb/153/Q153021/
 
 ## Q153021: DOC: ListView Sort Only on Text of ListItem
 
+{% raw %}
+
 	Article: Q153021
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/153/Q153021/
 	
 	=============================================================================
 	
+
+{% endraw %}

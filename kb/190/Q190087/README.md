@@ -6,6 +6,8 @@ permalink: /kb/190/Q190087/
 
 ## Q190087: BUG: Stop a Running Project From Immediate Window Crashes IDE
 
+{% raw %}
+
 	Article: Q190087
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -95,3 +97,5 @@ permalink: /kb/190/Q190087/
 	
 	=============================================================================
 	
+
+{% endraw %}

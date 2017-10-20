@@ -6,6 +6,8 @@ permalink: /kb/154/Q154463/
 
 ## Q154463: Clearing DNS Statistics Without Stopping DNS Server
 
+{% raw %}
+
 	Article: Q154463
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/154/Q154463/
 	
 	=============================================================================
 	
+
+{% endraw %}

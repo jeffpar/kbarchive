@@ -6,6 +6,8 @@ permalink: /kb/168/Q168159/
 
 ## Q168159: FIX: DBCombo Updates Incorrectly Using RDC Bound ListSource
 
+{% raw %}
+
 	Article: Q168159
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -50,3 +52,5 @@ permalink: /kb/168/Q168159/
 	
 	=============================================================================
 	
+
+{% endraw %}

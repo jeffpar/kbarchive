@@ -6,6 +6,8 @@ permalink: /kb/137/Q137397/
 
 ## Q137397: NWConv Err Msg: &lt;Ntservername&gt; Is Not a Server
 
+{% raw %}
+
 	Article: Q137397
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -53,3 +55,5 @@ permalink: /kb/137/Q137397/
 	
 	=============================================================================
 	
+
+{% endraw %}

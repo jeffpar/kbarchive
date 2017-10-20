@@ -6,6 +6,8 @@ permalink: /kb/201/Q201301/
 
 ## Q201301: FP98: Office Binder Documents Are Not Recognized
 
+{% raw %}
+
 	Article: Q201301
 	Product(s): Word Front Page
 	Version(s): WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/201/Q201301/
 	
 	=============================================================================
 	
+
+{% endraw %}

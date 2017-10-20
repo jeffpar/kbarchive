@@ -6,6 +6,8 @@ permalink: /kb/292/Q292261/
 
 ## Q292261: Advertised Programs Do Not Generate Status .mif Files
 
+{% raw %}
+
 	Article: Q292261
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -90,3 +92,5 @@ permalink: /kb/292/Q292261/
 	
 	=============================================================================
 	
+
+{% endraw %}

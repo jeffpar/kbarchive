@@ -6,6 +6,8 @@ permalink: /kb/279/Q279755/
 
 ## Q279755: INFO: Visual Basic and Arithmetic Precision
 
+{% raw %}
+
 	Article: Q279755
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -196,3 +198,5 @@ permalink: /kb/279/Q279755/
 	
 	=============================================================================
 	
+
+{% endraw %}

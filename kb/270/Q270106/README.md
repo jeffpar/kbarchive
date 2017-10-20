@@ -6,6 +6,8 @@ permalink: /kb/270/Q270106/
 
 ## Q270106: PRB: VFP ODBC Driver in COM DLL Under MTS Package May Hang
 
+{% raw %}
+
 	Article: Q270106
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,6.0
@@ -208,3 +210,5 @@ permalink: /kb/270/Q270106/
 	
 	=============================================================================
 	
+
+{% endraw %}

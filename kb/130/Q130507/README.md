@@ -6,6 +6,8 @@ permalink: /kb/130/Q130507/
 
 ## Q130507: HOWTO: Logical Values Must Be Sent to SQL Server as 1 or 0
 
+{% raw %}
+
 	Article: Q130507
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130507/
 	
 	=============================================================================
 	
+
+{% endraw %}

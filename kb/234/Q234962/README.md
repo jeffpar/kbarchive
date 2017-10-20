@@ -6,6 +6,8 @@ permalink: /kb/234/Q234962/
 
 ## Q234962: XCON: Certain Builds of the MTA Do Not Generate 9301 Event ID
 
+{% raw %}
+
 	Article: Q234962
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/234/Q234962/
 	
 	=============================================================================
 	
+
+{% endraw %}

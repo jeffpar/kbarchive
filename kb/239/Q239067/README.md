@@ -6,6 +6,8 @@ permalink: /kb/239/Q239067/
 
 ## Q239067: XADM: SP3 Update Doesn't Work If MBClean v1.93 Is Running
 
+{% raw %}
+
 	Article: Q239067
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -58,3 +60,5 @@ permalink: /kb/239/Q239067/
 	
 	=============================================================================
 	
+
+{% endraw %}

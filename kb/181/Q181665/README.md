@@ -6,6 +6,8 @@ permalink: /kb/181/Q181665/
 
 ## Q181665: Game Does Not Start or Black Screen When Game Starts
 
+{% raw %}
+
 	Article: Q181665
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -301,3 +303,5 @@ permalink: /kb/181/Q181665/
 	
 	=============================================================================
 	
+
+{% endraw %}

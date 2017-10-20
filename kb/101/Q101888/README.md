@@ -6,6 +6,8 @@ permalink: /kb/101/Q101888/
 
 ## Q101888: SETUP /E Removes Undelete Icon from Windows Program Manager
 
+{% raw %}
+
 	Article: Q101888
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/101/Q101888/
 	
 	=============================================================================
 	
+
+{% endraw %}

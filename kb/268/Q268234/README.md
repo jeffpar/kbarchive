@@ -6,6 +6,8 @@ permalink: /kb/268/Q268234/
 
 ## Q268234: INF: Host Requirements for COMTI
 
+{% raw %}
+
 	Article: Q268234
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3; :
@@ -61,3 +63,5 @@ permalink: /kb/268/Q268234/
 	
 	=============================================================================
 	
+
+{% endraw %}

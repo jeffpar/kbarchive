@@ -6,6 +6,8 @@ permalink: /kb/089/Q89515/
 
 ## Q89515: LAN Man 2.1 Test Summary (DigiBoard DigiCHANNEL C/X EISA)
 
+{% raw %}
+
 	Article: Q89515
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/089/Q89515/
 	
 	=============================================================================
 	
+
+{% endraw %}

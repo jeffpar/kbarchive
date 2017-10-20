@@ -6,6 +6,8 @@ permalink: /kb/110/Q110079/
 
 ## Q110079: System Stops Responding When Copying Corrupt SFM Files
 
+{% raw %}
+
 	Article: Q110079
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -47,3 +49,5 @@ permalink: /kb/110/Q110079/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98402/
 
 ## Q98402: Using Computer Lab International 5250 with DoubleSpace
 
+{% raw %}
+
 	Article: Q98402
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -54,3 +56,5 @@ permalink: /kb/098/Q98402/
 	
 	=============================================================================
 	
+
+{% endraw %}

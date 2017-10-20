@@ -6,6 +6,8 @@ permalink: /kb/173/Q173638/
 
 ## Q173638: BUG: &quot;What's This?&quot; Button Disappears from MDI Child Forms
 
+{% raw %}
+
 	Article: Q173638
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -137,3 +139,5 @@ permalink: /kb/173/Q173638/
 	
 	=============================================================================
 	
+
+{% endraw %}

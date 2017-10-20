@@ -6,6 +6,8 @@ permalink: /kb/033/Q33526/
 
 ## Q33526: Deeply Nested Blocks Cause C4073 Warning
 
+{% raw %}
+
 	Article: Q33526
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -38,3 +40,5 @@ permalink: /kb/033/Q33526/
 	is a macro that is expanded to two nested levels.
 	   You can work around the warning by moving the closing brace of the
 	function to the next line.
+
+{% endraw %}

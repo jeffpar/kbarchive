@@ -6,6 +6,8 @@ permalink: /kb/065/Q65880/
 
 ## Q65880: MDIStat.exe Places a Status Bar in an MDI Frame Window
 
+{% raw %}
+
 	Article: Q65880
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -67,3 +69,5 @@ permalink: /kb/065/Q65880/
 	
 	=============================================================================
 	
+
+{% endraw %}

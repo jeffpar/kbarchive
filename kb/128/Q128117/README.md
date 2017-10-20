@@ -6,6 +6,8 @@ permalink: /kb/128/Q128117/
 
 ## Q128117: How to Close a Form from a Toolbar
 
+{% raw %}
+
 	Article: Q128117
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/128/Q128117/
 	
 	=============================================================================
 	
+
+{% endraw %}

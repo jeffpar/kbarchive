@@ -6,6 +6,8 @@ permalink: /kb/220/Q220882/
 
 ## Q220882: XADM: NDR Generated for Wrong Recipients
 
+{% raw %}
+
 	Article: Q220882
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/220/Q220882/
 	
 	=============================================================================
 	
+
+{% endraw %}

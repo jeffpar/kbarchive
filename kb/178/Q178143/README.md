@@ -6,6 +6,8 @@ permalink: /kb/178/Q178143/
 
 ## Q178143: SMSINST: Installer Script Is Limited to 8,192 Lines
 
+{% raw %}
+
 	Article: Q178143
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:1.2
@@ -77,3 +79,5 @@ permalink: /kb/178/Q178143/
 	
 	=============================================================================
 	
+
+{% endraw %}

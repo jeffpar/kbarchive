@@ -6,6 +6,8 @@ permalink: /kb/190/Q190440/
 
 ## Q190440: XADM: Service Specific Error 4294966746 Starting Store
 
+{% raw %}
+
 	Article: Q190440
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -105,3 +107,5 @@ permalink: /kb/190/Q190440/
 	
 	=============================================================================
 	
+
+{% endraw %}

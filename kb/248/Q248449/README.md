@@ -6,6 +6,8 @@ permalink: /kb/248/Q248449/
 
 ## Q248449: PRB: MSDN Library NetCopy.exe Warns Network Share Is FAT
 
+{% raw %}
+
 	Article: Q248449
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:
@@ -79,3 +81,5 @@ permalink: /kb/248/Q248449/
 	
 	=============================================================================
 	
+
+{% endraw %}

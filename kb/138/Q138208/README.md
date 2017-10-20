@@ -6,6 +6,8 @@ permalink: /kb/138/Q138208/
 
 ## Q138208: How to Create a Flight Simulator Shortcut in Windows 95/98
 
+{% raw %}
+
 	Article: Q138208
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -86,3 +88,5 @@ permalink: /kb/138/Q138208/
 	
 	=============================================================================
 	
+
+{% endraw %}

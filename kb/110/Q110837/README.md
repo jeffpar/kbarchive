@@ -6,6 +6,8 @@ permalink: /kb/110/Q110837/
 
 ## Q110837: Altimeter Does Not Display Meters
 
+{% raw %}
+
 	Article: Q110837
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/110/Q110837/
 	
 	=============================================================================
 	
+
+{% endraw %}

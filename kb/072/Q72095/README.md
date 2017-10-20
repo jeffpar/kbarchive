@@ -6,6 +6,8 @@ permalink: /kb/072/Q72095/
 
 ## Q72095: Legally Purchasing Microsoft MS-DOS 5
 
+{% raw %}
+
 	Article: Q72095
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/072/Q72095/
 	
 	=============================================================================
 	
+
+{% endraw %}

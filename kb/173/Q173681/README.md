@@ -6,6 +6,8 @@ permalink: /kb/173/Q173681/
 
 ## Q173681: XADM: Renaming the Inbox Produces Unexpected Results
 
+{% raw %}
+
 	Article: Q173681
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/173/Q173681/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131836/
 
 ## Q131836: PRB: Grid Not Refreshing Displaying a Cursor From Query
 
+{% raw %}
+
 	Article: Q131836
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 5.00 | 3.00b
@@ -112,3 +114,5 @@ permalink: /kb/131/Q131836/
 	
 	=============================================================================
 	
+
+{% endraw %}

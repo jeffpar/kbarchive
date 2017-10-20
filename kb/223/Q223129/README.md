@@ -6,6 +6,8 @@ permalink: /kb/223/Q223129/
 
 ## Q223129: FIX: Toolbar's Customize Method Replicates Images in Toolba
 
+{% raw %}
+
 	Article: Q223129
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -124,3 +126,5 @@ permalink: /kb/223/Q223129/
 	
 	=============================================================================
 	
+
+{% endraw %}

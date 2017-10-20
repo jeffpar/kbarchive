@@ -6,6 +6,8 @@ permalink: /kb/039/Q39239/
 
 ## Q39239: &quot;Expression Too Complex&quot;, &quot;Stack Overflow&quot;, Adding Strings
 
+{% raw %}
+
 	Article: Q39239
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -62,3 +64,5 @@ permalink: /kb/039/Q39239/
 	   a$ = b$ + c$ + d$ + e$ + f$ + g$ + h$ + i$ + j$ + k$ + l$
 	   a$ = a$ + m$ + n$ + o$ + p$ + q$ + r$ + s$ + t$ + u$
 	   WEND
+
+{% endraw %}

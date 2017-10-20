@@ -6,6 +6,8 @@ permalink: /kb/164/Q164947/
 
 ## Q164947: FIX: Nested Macros Cause Errors C2065 and C2064
 
+{% raw %}
+
 	Article: Q164947
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -80,3 +82,5 @@ permalink: /kb/164/Q164947/
 	
 	=============================================================================
 	
+
+{% endraw %}

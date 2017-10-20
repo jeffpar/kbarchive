@@ -6,6 +6,8 @@ permalink: /kb/190/Q190474/
 
 ## Q190474: WD97: International, Localized Versions of Word for Windows
 
+{% raw %}
+
 	Article: Q190474
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/190/Q190474/
 	
 	=============================================================================
 	
+
+{% endraw %}

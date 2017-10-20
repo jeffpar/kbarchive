@@ -6,6 +6,8 @@ permalink: /kb/263/Q263709/
 
 ## Q263709: XCON: Message Smaller Than Size Restriction Returned w/ NDR
 
+{% raw %}
+
 	Article: Q263709
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/263/Q263709/
 	
 	=============================================================================
 	
+
+{% endraw %}

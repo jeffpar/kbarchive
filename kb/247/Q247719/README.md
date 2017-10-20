@@ -6,6 +6,8 @@ permalink: /kb/247/Q247719/
 
 ## Q247719: WLBS Writes Multiple Duplicate Event Log Messages
 
+{% raw %}
+
 	Article: Q247719
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/247/Q247719/
 	
 	=============================================================================
 	
+
+{% endraw %}

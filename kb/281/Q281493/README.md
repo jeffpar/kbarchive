@@ -6,6 +6,8 @@ permalink: /kb/281/Q281493/
 
 ## Q281493: XADM: Information Store Does Not Start with ESE Event ID 188
 
+{% raw %}
+
 	Article: Q281493
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/281/Q281493/
 	
 	=============================================================================
 	
+
+{% endraw %}

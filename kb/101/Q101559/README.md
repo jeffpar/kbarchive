@@ -6,6 +6,8 @@ permalink: /kb/101/Q101559/
 
 ## Q101559: Microsoft Backup Err Msg: Alert! Unknown Compression of File
 
+{% raw %}
+
 	Article: Q101559
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.22
@@ -59,3 +61,5 @@ permalink: /kb/101/Q101559/
 	
 	=============================================================================
 	
+
+{% endraw %}

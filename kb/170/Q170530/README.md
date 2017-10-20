@@ -6,6 +6,8 @@ permalink: /kb/170/Q170530/
 
 ## Q170530: FIX: AppWizard Project Cannot Open Include File .rc2
 
+{% raw %}
+
 	Article: Q170530
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -128,3 +130,5 @@ permalink: /kb/170/Q170530/
 	
 	=============================================================================
 	
+
+{% endraw %}

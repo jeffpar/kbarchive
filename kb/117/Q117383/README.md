@@ -6,6 +6,8 @@ permalink: /kb/117/Q117383/
 
 ## Q117383: BUG: C2483 Instantiating Objects with the Thread Attribute
 
+{% raw %}
+
 	Article: Q117383
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,4.0,4.1,4.2,5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/117/Q117383/
 	
 	=============================================================================
 	
+
+{% endraw %}

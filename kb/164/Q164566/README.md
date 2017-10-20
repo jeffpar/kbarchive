@@ -6,6 +6,8 @@ permalink: /kb/164/Q164566/
 
 ## Q164566: XCLN: Message Marked Private Can't Be Edited
 
+{% raw %}
+
 	Article: Q164566
 	Product(s): Microsoft Exchange
 	Version(s): MS-DOS:5.0; WINDOWS:5.0; Win95:5.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164566/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139158/
 
 ## Q139158: How to Add Fields to a Table in Visual FoxPro Programmatically
 
+{% raw %}
+
 	Article: Q139158
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/139/Q139158/
 	
 	=============================================================================
 	
+
+{% endraw %}

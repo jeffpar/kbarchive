@@ -6,6 +6,8 @@ permalink: /kb/041/Q41368/
 
 ## Q41368: QuickC 2.00 README.DOC: Using QC 2.00 With C 5.10
 
+{% raw %}
+
 	Article: Q41368
 	Product(s): See article
 	Version(s): 2.00
@@ -58,3 +60,5 @@ permalink: /kb/041/Q41368/
 	
 	If you are writing Windows or OS/2 applications, you should use
 	Version 5.02 of the Microsoft Segmented-Executable Linker.
+
+{% endraw %}

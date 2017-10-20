@@ -6,6 +6,8 @@ permalink: /kb/130/Q130834/
 
 ## Q130834: Objects Parameters Are Passed by Reference
 
+{% raw %}
+
 	Article: Q130834
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -89,3 +91,5 @@ permalink: /kb/130/Q130834/
 	
 	=============================================================================
 	
+
+{% endraw %}

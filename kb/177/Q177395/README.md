@@ -6,6 +6,8 @@ permalink: /kb/177/Q177395/
 
 ## Q177395: FILE: Vfpmsuwz.hqx: New Setup Wizard/Visual FoxPro Using OS 8
 
+{% raw %}
+
 	Article: Q177395
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -118,3 +120,5 @@ permalink: /kb/177/Q177395/
 	
 	=============================================================================
 	
+
+{% endraw %}

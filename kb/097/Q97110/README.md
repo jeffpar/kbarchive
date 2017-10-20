@@ -6,6 +6,8 @@ permalink: /kb/097/Q97110/
 
 ## Q97110: BUG: SIB MOV EAX,&#91;EAX+EBP&#93; Generates Incorrect Code
 
+{% raw %}
+
 	Article: Q97110
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -104,3 +106,5 @@ permalink: /kb/097/Q97110/
 	
 	=============================================================================
 	
+
+{% endraw %}

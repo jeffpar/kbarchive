@@ -6,6 +6,8 @@ permalink: /kb/106/Q106077/
 
 ## Q106077: BUG: System-Wide WH_DEBUG Hook Causes a GP Fault
 
+{% raw %}
+
 	Article: Q106077
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:
@@ -51,3 +53,5 @@ permalink: /kb/106/Q106077/
 	
 	=============================================================================
 	
+
+{% endraw %}

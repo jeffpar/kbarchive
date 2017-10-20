@@ -6,6 +6,8 @@ permalink: /kb/226/Q226110/
 
 ## Q226110: FIX: Internal Compiler Error Creating Copy of Temporary Object
 
+{% raw %}
+
 	Article: Q226110
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -111,3 +113,5 @@ permalink: /kb/226/Q226110/
 	
 	=============================================================================
 	
+
+{% endraw %}

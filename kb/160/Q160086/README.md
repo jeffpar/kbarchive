@@ -6,6 +6,8 @@ permalink: /kb/160/Q160086/
 
 ## Q160086: GP Fault at Startup with Remove-IT 95 Installed
 
+{% raw %}
+
 	Article: Q160086
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -55,3 +57,5 @@ permalink: /kb/160/Q160086/
 	
 	=============================================================================
 	
+
+{% endraw %}

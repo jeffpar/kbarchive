@@ -6,6 +6,8 @@ permalink: /kb/168/Q168401/
 
 ## Q168401: WD97: Invalid Page Fault Error When You Click Links Command
 
+{% raw %}
+
 	Article: Q168401
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/168/Q168401/
 	
 	=============================================================================
 	
+
+{% endraw %}

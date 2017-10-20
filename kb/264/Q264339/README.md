@@ -6,6 +6,8 @@ permalink: /kb/264/Q264339/
 
 ## Q264339: XADM: Event ID 2037 Creating Mailbox After Applying Q254805 Fix
 
+{% raw %}
+
 	Article: Q264339
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -93,3 +95,5 @@ permalink: /kb/264/Q264339/
 	
 	=============================================================================
 	
+
+{% endraw %}

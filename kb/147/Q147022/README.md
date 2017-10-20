@@ -6,6 +6,8 @@ permalink: /kb/147/Q147022/
 
 ## Q147022: XCON: MTA Strips Message Body Using X400 Connector With ISO 6937
 
+{% raw %}
+
 	Article: Q147022
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/147/Q147022/
 	
 	=============================================================================
 	
+
+{% endraw %}

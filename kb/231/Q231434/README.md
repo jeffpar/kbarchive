@@ -6,6 +6,8 @@ permalink: /kb/231/Q231434/
 
 ## Q231434: Encarta Encyclopedia: Problems When Running on Windows 2000
 
+{% raw %}
+
 	Article: Q231434
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -45,3 +47,5 @@ permalink: /kb/231/Q231434/
 	
 	=============================================================================
 	
+
+{% endraw %}

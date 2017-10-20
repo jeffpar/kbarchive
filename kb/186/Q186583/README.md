@@ -6,6 +6,8 @@ permalink: /kb/186/Q186583/
 
 ## Q186583: HOWTO: Use OLE Drag and Drop to Exchange Data Between Apps
 
+{% raw %}
+
 	Article: Q186583
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -201,3 +203,5 @@ permalink: /kb/186/Q186583/
 	
 	=============================================================================
 	
+
+{% endraw %}

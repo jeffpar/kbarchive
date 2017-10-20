@@ -6,6 +6,8 @@ permalink: /kb/040/Q40620/
 
 ## Q40620: Communicating Between Windows Virtual Machines with DDE
 
+{% raw %}
+
 	Article: Q40620
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -55,3 +57,5 @@ permalink: /kb/040/Q40620/
 	
 	=============================================================================
 	
+
+{% endraw %}

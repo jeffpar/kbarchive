@@ -6,6 +6,8 @@ permalink: /kb/068/Q68865/
 
 ## Q68865: Setting _settextcolor() to 0 May Give Unexpected Results
 
+{% raw %}
+
 	Article: Q68865
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a
@@ -54,3 +56,5 @@ permalink: /kb/068/Q68865/
 	
 	   _setvideomode(_DEFAULTMODE);
 	}
+
+{% endraw %}

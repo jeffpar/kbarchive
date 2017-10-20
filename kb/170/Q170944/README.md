@@ -6,6 +6,8 @@ permalink: /kb/170/Q170944/
 
 ## Q170944: WD97: Page Border Art Has a White Background
 
+{% raw %}
+
 	Article: Q170944
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/170/Q170944/
 	
 	=============================================================================
 	
+
+{% endraw %}

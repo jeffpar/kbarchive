@@ -6,6 +6,8 @@ permalink: /kb/164/Q164052/
 
 ## Q164052: PPTP and Interoperability with Other Local Machine Services
 
+{% raw %}
+
 	Article: Q164052
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0
@@ -117,3 +119,5 @@ permalink: /kb/164/Q164052/
 	
 	=============================================================================
 	
+
+{% endraw %}

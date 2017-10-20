@@ -6,6 +6,8 @@ permalink: /kb/273/Q273948/
 
 ## Q273948: XFOR: SSL Issues w/Internet Mail Service on Windows 2000
 
+{% raw %}
+
 	Article: Q273948
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -63,3 +65,5 @@ permalink: /kb/273/Q273948/
 	
 	=============================================================================
 	
+
+{% endraw %}

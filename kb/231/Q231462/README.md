@@ -6,6 +6,8 @@ permalink: /kb/231/Q231462/
 
 ## Q231462: IIS 3.0 Remote Computer May Fail after Applying Service Pack 4
 
+{% raw %}
+
 	Article: Q231462
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0
@@ -81,3 +83,5 @@ permalink: /kb/231/Q231462/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163454/
 
 ## Q163454: PRB: Problem Using Visual C++ v4.2b OLE Controls in VB v4.0
 
+{% raw %}
+
 	Article: Q163454
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0
@@ -81,3 +83,5 @@ permalink: /kb/163/Q163454/
 	
 	=============================================================================
 	
+
+{% endraw %}

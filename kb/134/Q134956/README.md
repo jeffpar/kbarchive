@@ -6,6 +6,8 @@ permalink: /kb/134/Q134956/
 
 ## Q134956: Logon Script Not Removed After Domain Is Removed From Site
 
+{% raw %}
+
 	Article: Q134956
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134956/
 	
 	=============================================================================
 	
+
+{% endraw %}

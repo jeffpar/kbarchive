@@ -6,6 +6,8 @@ permalink: /kb/128/Q128414/
 
 ## Q128414: Failure during Setup of Localized Version of NT
 
+{% raw %}
+
 	Article: Q128414
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,4.0
@@ -56,3 +58,5 @@ permalink: /kb/128/Q128414/
 	
 	=============================================================================
 	
+
+{% endraw %}

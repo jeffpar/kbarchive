@@ -6,6 +6,8 @@ permalink: /kb/127/Q127146/
 
 ## Q127146: Baseball: Cannot Print or Copy Tables from Baseball 1995
 
+{% raw %}
+
 	Article: Q127146
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -60,3 +62,5 @@ permalink: /kb/127/Q127146/
 	
 	=============================================================================
 	
+
+{% endraw %}

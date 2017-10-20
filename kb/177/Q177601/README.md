@@ -6,6 +6,8 @@ permalink: /kb/177/Q177601/
 
 ## Q177601: Microsoft File and Print Services for NetWare Readme.txt
 
+{% raw %}
+
 	Article: Q177601
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -366,3 +368,5 @@ permalink: /kb/177/Q177601/
 	
 	=============================================================================
 	
+
+{% endraw %}

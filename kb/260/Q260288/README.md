@@ -6,6 +6,8 @@ permalink: /kb/260/Q260288/
 
 ## Q260288: XADM: Offline Address Book Generation Does Not Work
 
+{% raw %}
+
 	Article: Q260288
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/260/Q260288/
 	
 	=============================================================================
 	
+
+{% endraw %}

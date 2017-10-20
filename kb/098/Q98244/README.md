@@ -6,6 +6,8 @@ permalink: /kb/098/Q98244/
 
 ## Q98244: Installing OS/2 1.3x on a Unisys PW2-3256 Computer
 
+{% raw %}
+
 	Article: Q98244
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/098/Q98244/
 	
 	=============================================================================
 	
+
+{% endraw %}

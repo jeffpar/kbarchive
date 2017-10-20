@@ -6,6 +6,8 @@ permalink: /kb/186/Q186140/
 
 ## Q186140: WD97: Clicking Hyperlink to View Web Page Closes Document
 
+{% raw %}
+
 	Article: Q186140
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/186/Q186140/
 	
 	=============================================================================
 	
+
+{% endraw %}

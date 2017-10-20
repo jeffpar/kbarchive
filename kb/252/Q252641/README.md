@@ -6,6 +6,8 @@ permalink: /kb/252/Q252641/
 
 ## Q252641: MSDTC Conflicts During NTOP Installation on Cluster Server
 
+{% raw %}
+
 	Article: Q252641
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -114,3 +116,5 @@ permalink: /kb/252/Q252641/
 	
 	=============================================================================
 	
+
+{% endraw %}

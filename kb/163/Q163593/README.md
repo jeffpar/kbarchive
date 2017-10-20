@@ -6,6 +6,8 @@ permalink: /kb/163/Q163593/
 
 ## Q163593: FP97: Uninstall Doesn't Remove Fpwpp.dll
 
+{% raw %}
+
 	Article: Q163593
 	Product(s): Word Front Page
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/163/Q163593/
 	
 	=============================================================================
 	
+
+{% endraw %}

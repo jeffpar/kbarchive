@@ -6,6 +6,8 @@ permalink: /kb/236/Q236778/
 
 ## Q236778: BUG: Focus Events not triggered in ActiveX Doc with Acc Keys
 
+{% raw %}
+
 	Article: Q236778
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/236/Q236778/
 	
 	=============================================================================
 	
+
+{% endraw %}

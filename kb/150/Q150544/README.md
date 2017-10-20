@@ -6,6 +6,8 @@ permalink: /kb/150/Q150544/
 
 ## Q150544: DHCP Manager Scope Properties
 
+{% raw %}
+
 	Article: Q150544
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -91,3 +93,5 @@ permalink: /kb/150/Q150544/
 	
 	=============================================================================
 	
+
+{% endraw %}

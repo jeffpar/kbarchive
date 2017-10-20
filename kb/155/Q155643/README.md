@@ -6,6 +6,8 @@ permalink: /kb/155/Q155643/
 
 ## Q155643: Case Studies Available Describing Windows NT 4.0 Deployments
 
+{% raw %}
+
 	Article: Q155643
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/155/Q155643/
 	
 	=============================================================================
 	
+
+{% endraw %}

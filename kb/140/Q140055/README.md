@@ -6,6 +6,8 @@ permalink: /kb/140/Q140055/
 
 ## Q140055: Installing Office 95 using Systems Management Server
 
+{% raw %}
+
 	Article: Q140055
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1
@@ -319,3 +321,5 @@ permalink: /kb/140/Q140055/
 	
 	=============================================================================
 	
+
+{% endraw %}

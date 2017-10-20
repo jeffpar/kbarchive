@@ -6,6 +6,8 @@ permalink: /kb/164/Q164421/
 
 ## Q164421: XCLN: Behavior of Schedule+ 7.0 Synchronize on Exit
 
+{% raw %}
+
 	Article: Q164421
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -51,3 +53,5 @@ permalink: /kb/164/Q164421/
 	
 	=============================================================================
 	
+
+{% endraw %}

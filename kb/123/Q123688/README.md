@@ -6,6 +6,8 @@ permalink: /kb/123/Q123688/
 
 ## Q123688: Turning a 16-bit Protected Segment into a 32-bit Segment
 
+{% raw %}
+
 	Article: Q123688
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.1,6.11
@@ -93,3 +95,5 @@ permalink: /kb/123/Q123688/
 	
 	=============================================================================
 	
+
+{% endraw %}

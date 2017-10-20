@@ -6,6 +6,8 @@ permalink: /kb/076/Q76846/
 
 ## Q76846: CHKDSK &#42;.&#42; Hangs on 1.44 MB Disk with Zero Byte File
 
+{% raw %}
+
 	Article: Q76846
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -46,3 +48,5 @@ permalink: /kb/076/Q76846/
 	
 	=============================================================================
 	
+
+{% endraw %}

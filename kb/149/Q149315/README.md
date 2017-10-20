@@ -6,6 +6,8 @@ permalink: /kb/149/Q149315/
 
 ## Q149315: XFOR: Exchange MS Mail Connector Adds SNADS GatewayName
 
+{% raw %}
+
 	Article: Q149315
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/149/Q149315/
 	
 	=============================================================================
 	
+
+{% endraw %}

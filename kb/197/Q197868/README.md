@@ -6,6 +6,8 @@ permalink: /kb/197/Q197868/
 
 ## Q197868: XCLN: Exchange Client Setup Hangs while Updating Your System
 
+{% raw %}
+
 	Article: Q197868
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -65,3 +67,5 @@ permalink: /kb/197/Q197868/
 	
 	=============================================================================
 	
+
+{% endraw %}

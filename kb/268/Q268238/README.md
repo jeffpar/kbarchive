@@ -6,6 +6,8 @@ permalink: /kb/268/Q268238/
 
 ## Q268238: SMS: Err Msg: Fatal Error. Setup Cannot Upgrade the SQL Database
 
+{% raw %}
+
 	Article: Q268238
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -189,3 +191,5 @@ permalink: /kb/268/Q268238/
 	
 	=============================================================================
 	
+
+{% endraw %}

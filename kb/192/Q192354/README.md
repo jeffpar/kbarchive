@@ -6,6 +6,8 @@ permalink: /kb/192/Q192354/
 
 ## Q192354: PRB: Error Saving a Form With ATL Control
 
+{% raw %}
+
 	Article: Q192354
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0; winnt:5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/192/Q192354/
 	
 	=============================================================================
 	
+
+{% endraw %}

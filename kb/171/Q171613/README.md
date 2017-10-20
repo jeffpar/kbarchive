@@ -6,6 +6,8 @@ permalink: /kb/171/Q171613/
 
 ## Q171613: INFO: Retaining Transactions with Transaction Object
 
+{% raw %}
+
 	Article: Q171613
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.1
@@ -61,3 +63,5 @@ permalink: /kb/171/Q171613/
 	
 	=============================================================================
 	
+
+{% endraw %}

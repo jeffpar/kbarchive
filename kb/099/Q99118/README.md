@@ -6,6 +6,8 @@ permalink: /kb/099/Q99118/
 
 ## Q99118: PC Forms: E-Form Causes GP Fault
 
+{% raw %}
+
 	Article: Q99118
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,2.0,3.0,3.2
@@ -66,3 +68,5 @@ permalink: /kb/099/Q99118/
 	
 	=============================================================================
 	
+
+{% endraw %}

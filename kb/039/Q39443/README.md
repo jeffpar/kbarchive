@@ -6,6 +6,8 @@ permalink: /kb/039/Q39443/
 
 ## Q39443: FIX: Parentheses Necessary for Operator Precedence
 
+{% raw %}
+
 	Article: Q39443
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -66,3 +68,5 @@ permalink: /kb/039/Q39443/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/283/Q283634/
 
 ## Q283634: Proxy 2.Server Has Two Different Files for the IP Filter Driver
 
+{% raw %}
+
 	Article: Q283634
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.0
@@ -93,3 +95,5 @@ permalink: /kb/283/Q283634/
 	
 	=============================================================================
 	
+
+{% endraw %}

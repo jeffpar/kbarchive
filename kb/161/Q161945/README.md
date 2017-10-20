@@ -6,6 +6,8 @@ permalink: /kb/161/Q161945/
 
 ## Q161945: XCON: MSMail Shows Blank Icon for File Attachments from Internet
 
+{% raw %}
+
 	Article: Q161945
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -147,3 +149,5 @@ permalink: /kb/161/Q161945/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/285/Q285345/
 
 ## Q285345: PRB: Error with DSN-Less Connection to FoxPro Table Through DAO
 
+{% raw %}
+
 	Article: Q285345
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -127,3 +129,5 @@ permalink: /kb/285/Q285345/
 	
 	=============================================================================
 	
+
+{% endraw %}

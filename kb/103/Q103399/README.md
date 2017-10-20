@@ -6,6 +6,8 @@ permalink: /kb/103/Q103399/
 
 ## Q103399: SAMPLE: NSetup.exe Reboots an MSSetup Script on User Request
 
+{% raw %}
+
 	Article: Q103399
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -91,3 +93,5 @@ permalink: /kb/103/Q103399/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150404/
 
 ## Q150404: Complete Gardening: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q150404
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -62,3 +64,5 @@ permalink: /kb/150/Q150404/
 	
 	=============================================================================
 	
+
+{% endraw %}

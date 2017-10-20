@@ -6,6 +6,8 @@ permalink: /kb/102/Q102716/
 
 ## Q102716: User Authentication with Windows NT
 
+{% raw %}
+
 	Article: Q102716
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1
@@ -216,3 +218,5 @@ permalink: /kb/102/Q102716/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/093/Q93521/
 
 ## Q93521: Parity Errors in Windows 3.x
 
+{% raw %}
+
 	Article: Q93521
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -153,3 +155,5 @@ permalink: /kb/093/Q93521/
 	
 	=============================================================================
 	
+
+{% endraw %}

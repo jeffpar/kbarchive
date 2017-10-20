@@ -6,6 +6,8 @@ permalink: /kb/087/Q87650/
 
 ## Q87650: X400: Command-Line Options Available to the X.400 Gateway
 
+{% raw %}
+
 	Article: Q87650
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -173,3 +175,5 @@ permalink: /kb/087/Q87650/
 	
 	=============================================================================
 	
+
+{% endraw %}

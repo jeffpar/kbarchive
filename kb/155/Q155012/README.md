@@ -6,6 +6,8 @@ permalink: /kb/155/Q155012/
 
 ## Q155012: HOWTO: Error Codes in Windows NT Part 2 of 2
 
+{% raw %}
+
 	Article: Q155012
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -900,3 +902,5 @@ permalink: /kb/155/Q155012/
 	
 	=============================================================================
 	
+
+{% endraw %}

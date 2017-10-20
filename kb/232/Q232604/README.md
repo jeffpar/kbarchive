@@ -6,6 +6,8 @@ permalink: /kb/232/Q232604/
 
 ## Q232604: XCON: MTA Is Leaking During Content Conversion
 
+{% raw %}
+
 	Article: Q232604
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -108,3 +110,5 @@ permalink: /kb/232/Q232604/
 	
 	=============================================================================
 	
+
+{% endraw %}

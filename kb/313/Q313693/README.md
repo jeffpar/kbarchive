@@ -6,6 +6,8 @@ permalink: /kb/313/Q313693/
 
 ## Q313693: 3270 Client (Win3270.exe) Doesn't Enforce User/Group Assignments
 
+{% raw %}
+
 	Article: Q313693
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/313/Q313693/
 	
 	=============================================================================
 	
+
+{% endraw %}

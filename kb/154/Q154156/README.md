@@ -6,6 +6,8 @@ permalink: /kb/154/Q154156/
 
 ## Q154156: Windows NT Not Compatible With U.S. Robotics WinModem
 
+{% raw %}
+
 	Article: Q154156
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -50,3 +52,5 @@ permalink: /kb/154/Q154156/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120194/
 
 ## Q120194: Resolved: WFW Popup Error
 
+{% raw %}
+
 	Article: Q120194
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/120/Q120194/
 	
 	=============================================================================
 	
+
+{% endraw %}

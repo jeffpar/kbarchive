@@ -6,6 +6,8 @@ permalink: /kb/075/Q75037/
 
 ## Q75037: Using the RESTORE Command to View Backup Files
 
+{% raw %}
+
 	Article: Q75037
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -72,3 +74,5 @@ permalink: /kb/075/Q75037/
 	
 	=============================================================================
 	
+
+{% endraw %}

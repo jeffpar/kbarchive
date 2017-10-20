@@ -6,6 +6,8 @@ permalink: /kb/317/Q317478/
 
 ## Q317478: HOW TO: Prevent IIS from Accepting Anon Requests During Install
 
+{% raw %}
+
 	Article: Q317478
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -123,3 +125,5 @@ permalink: /kb/317/Q317478/
 	
 	=============================================================================
 	
+
+{% endraw %}

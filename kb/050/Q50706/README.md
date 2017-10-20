@@ -6,6 +6,8 @@ permalink: /kb/050/Q50706/
 
 ## Q50706: Default Optimization for QuickC Compiler Is /Od (None), Not /O
 
+{% raw %}
+
 	Article: Q50706
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -18,3 +20,5 @@ permalink: /kb/050/Q50706/
 	incorrectly states that the default optimization for the QuickC
 	compiler is /Ot (or /O). QuickC does NO optimization by default. Thus,
 	the default is /Od (no optimization).
+
+{% endraw %}

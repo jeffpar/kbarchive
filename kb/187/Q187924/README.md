@@ -6,6 +6,8 @@ permalink: /kb/187/Q187924/
 
 ## Q187924: PRB: Unable To Build Internet Download Distribution Set
 
+{% raw %}
+
 	Article: Q187924
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -85,3 +87,5 @@ permalink: /kb/187/Q187924/
 	
 	=============================================================================
 	
+
+{% endraw %}

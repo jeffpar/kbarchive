@@ -6,6 +6,8 @@ permalink: /kb/233/Q233162/
 
 ## Q233162: Err Msg: The System Could Not Find the File Specified.
 
+{% raw %}
+
 	Article: Q233162
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/233/Q233162/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148465/
 
 ## Q148465: Complete Gardening: Unable to Edit Journal Entry Title
 
+{% raw %}
+
 	Article: Q148465
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/148/Q148465/
 	
 	=============================================================================
 	
+
+{% endraw %}

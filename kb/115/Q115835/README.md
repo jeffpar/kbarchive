@@ -6,6 +6,8 @@ permalink: /kb/115/Q115835/
 
 ## Q115835: TCP/IP Stack for Workgroups Add-On 3.11 Fails to Load
 
+{% raw %}
+
 	Article: Q115835
 	Product(s): Microsoft Disk Operating System
 	Version(s): 3.11
@@ -52,3 +54,5 @@ permalink: /kb/115/Q115835/
 	
 	=============================================================================
 	
+
+{% endraw %}

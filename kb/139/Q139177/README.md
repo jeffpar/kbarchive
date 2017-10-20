@@ -6,6 +6,8 @@ permalink: /kb/139/Q139177/
 
 ## Q139177: Windows NT Automatic Setup: Language Version
 
+{% raw %}
+
 	Article: Q139177
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -280,3 +282,5 @@ permalink: /kb/139/Q139177/
 	
 	=============================================================================
 	
+
+{% endraw %}

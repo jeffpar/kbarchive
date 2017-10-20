@@ -6,6 +6,8 @@ permalink: /kb/141/Q141340/
 
 ## Q141340: XCLN: MAPILogon Requires Profile Name
 
+{% raw %}
+
 	Article: Q141340
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -43,3 +45,5 @@ permalink: /kb/141/Q141340/
 	
 	=============================================================================
 	
+
+{% endraw %}

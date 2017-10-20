@@ -6,6 +6,8 @@ permalink: /kb/129/Q129856/
 
 ## Q129856: Use DAO GetRows Method to Fill Variant Arrays
 
+{% raw %}
+
 	Article: Q129856
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -103,3 +105,5 @@ permalink: /kb/129/Q129856/
 	
 	=============================================================================
 	
+
+{% endraw %}

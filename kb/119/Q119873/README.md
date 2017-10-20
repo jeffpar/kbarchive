@@ -6,6 +6,8 @@ permalink: /kb/119/Q119873/
 
 ## Q119873: FIX: Incorrect Use of #pragma Pack Causes C1001 Errors
 
+{% raw %}
+
 	Article: Q119873
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,4.0,4.1,4.2,5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/119/Q119873/
 	
 	=============================================================================
 	
+
+{% endraw %}

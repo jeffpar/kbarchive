@@ -6,6 +6,8 @@ permalink: /kb/175/Q175469/
 
 ## Q175469: XADM: Information Store Server Specific Error 2
 
+{% raw %}
+
 	Article: Q175469
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -83,3 +85,5 @@ permalink: /kb/175/Q175469/
 	
 	=============================================================================
 	
+
+{% endraw %}

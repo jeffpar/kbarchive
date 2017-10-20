@@ -6,6 +6,8 @@ permalink: /kb/099/Q99541/
 
 ## Q99541: How to Export Memo Data to a Text File Without an XCMD
 
+{% raw %}
+
 	Article: Q99541
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -52,3 +54,5 @@ permalink: /kb/099/Q99541/
 	
 	=============================================================================
 	
+
+{% endraw %}

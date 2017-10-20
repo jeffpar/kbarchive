@@ -6,6 +6,8 @@ permalink: /kb/109/Q109146/
 
 ## Q109146: How to Use Outshow with FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q109146
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -61,3 +63,5 @@ permalink: /kb/109/Q109146/
 	
 	=============================================================================
 	
+
+{% endraw %}

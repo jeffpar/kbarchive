@@ -6,6 +6,8 @@ permalink: /kb/154/Q154321/
 
 ## Q154321: MSB Dinosaurs: Hangs at a Black Screen on Startup
 
+{% raw %}
+
 	Article: Q154321
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -114,3 +116,5 @@ permalink: /kb/154/Q154321/
 	
 	=============================================================================
 	
+
+{% endraw %}

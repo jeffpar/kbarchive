@@ -6,6 +6,8 @@ permalink: /kb/268/Q268014/
 
 ## Q268014: SMS: Error Message on a Blue Screen After You Upgrade to SMS 2.0
 
+{% raw %}
+
 	Article: Q268014
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/268/Q268014/
 	
 	=============================================================================
 	
+
+{% endraw %}

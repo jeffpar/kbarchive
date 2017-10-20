@@ -6,6 +6,8 @@ permalink: /kb/158/Q158481/
 
 ## Q158481: WD97: Objects Stacked After Converting to Word 6.x/95 or RTF
 
+{% raw %}
+
 	Article: Q158481
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/158/Q158481/
 	
 	=============================================================================
 	
+
+{% endraw %}

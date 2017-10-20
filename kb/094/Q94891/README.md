@@ -6,6 +6,8 @@ permalink: /kb/094/Q94891/
 
 ## Q94891: Using MemMaker with MS-DOS Multiple Configuration Menus
 
+{% raw %}
+
 	Article: Q94891
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/094/Q94891/
 	
 	=============================================================================
 	
+
+{% endraw %}

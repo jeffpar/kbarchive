@@ -6,6 +6,8 @@ permalink: /kb/072/Q72527/
 
 ## Q72527: DOCERR: TOOLS.INI Tags for Video Not Recognized by PWB
 
+{% raw %}
+
 	Article: Q72527
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -63,3 +65,5 @@ permalink: /kb/072/Q72527/
 	
 	=============================================================================
 	
+
+{% endraw %}

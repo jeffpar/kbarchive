@@ -6,6 +6,8 @@ permalink: /kb/130/Q130604/
 
 ## Q130604: How to Retrieve Table Properties in a Program
 
+{% raw %}
+
 	Article: Q130604
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -152,3 +154,5 @@ permalink: /kb/130/Q130604/
 	
 	=============================================================================
 	
+
+{% endraw %}

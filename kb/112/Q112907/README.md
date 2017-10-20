@@ -6,6 +6,8 @@ permalink: /kb/112/Q112907/
 
 ## Q112907: PC WRmt: Operation When No Timer Available
 
+{% raw %}
+
 	Article: Q112907
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -50,3 +52,5 @@ permalink: /kb/112/Q112907/
 	
 	=============================================================================
 	
+
+{% endraw %}

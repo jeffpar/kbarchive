@@ -6,6 +6,8 @@ permalink: /kb/190/Q190725/
 
 ## Q190725: SqlOleDb.h Not Installed by VC++ 6.0
 
+{% raw %}
+
 	Article: Q190725
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -70,3 +72,5 @@ permalink: /kb/190/Q190725/
 	
 	=============================================================================
 	
+
+{% endraw %}

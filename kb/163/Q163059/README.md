@@ -6,6 +6,8 @@ permalink: /kb/163/Q163059/
 
 ## Q163059: WD97: Some Fonts Are Not Available in Word
 
+{% raw %}
+
 	Article: Q163059
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -132,3 +134,5 @@ permalink: /kb/163/Q163059/
 	
 	=============================================================================
 	
+
+{% endraw %}

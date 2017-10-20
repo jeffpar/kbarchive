@@ -6,6 +6,8 @@ permalink: /kb/139/Q139764/
 
 ## Q139764: Julia Child: Recipe Next and Previous Buttons Remain Red
 
+{% raw %}
+
 	Article: Q139764
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/139/Q139764/
 	
 	=============================================================================
 	
+
+{% endraw %}

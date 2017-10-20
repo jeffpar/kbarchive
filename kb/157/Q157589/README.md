@@ -6,6 +6,8 @@ permalink: /kb/157/Q157589/
 
 ## Q157589: SMS: PGC Does Not Work in a Trusted Domain with Windows 95
 
+{% raw %}
+
 	Article: Q157589
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -99,3 +101,5 @@ permalink: /kb/157/Q157589/
 	
 	=============================================================================
 	
+
+{% endraw %}

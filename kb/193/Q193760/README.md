@@ -6,6 +6,8 @@ permalink: /kb/193/Q193760/
 
 ## Q193760: XCON: MTA Stops Processing Messages When One Network Link Fails
 
+{% raw %}
+
 	Article: Q193760
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -131,3 +133,5 @@ permalink: /kb/193/Q193760/
 	
 	=============================================================================
 	
+
+{% endraw %}

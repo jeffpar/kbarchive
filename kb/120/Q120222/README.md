@@ -6,6 +6,8 @@ permalink: /kb/120/Q120222/
 
 ## Q120222: Plus Sign Appears in Windows Explorer but Not in File Manager
 
+{% raw %}
+
 	Article: Q120222
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -62,3 +64,5 @@ permalink: /kb/120/Q120222/
 	
 	=============================================================================
 	
+
+{% endraw %}

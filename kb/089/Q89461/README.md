@@ -6,6 +6,8 @@ permalink: /kb/089/Q89461/
 
 ## Q89461: LAN Man 2.1 Test Summary (American Power Back-UPS 900)
 
+{% raw %}
+
 	Article: Q89461
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/089/Q89461/
 	
 	=============================================================================
 	
+
+{% endraw %}

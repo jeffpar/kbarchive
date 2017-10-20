@@ -6,6 +6,8 @@ permalink: /kb/132/Q132768/
 
 ## Q132768: Garbled Display on Packard Bell Statesman 486/50 Computer
 
+{% raw %}
+
 	Article: Q132768
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/132/Q132768/
 	
 	=============================================================================
 	
+
+{% endraw %}

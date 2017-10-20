@@ -6,6 +6,8 @@ permalink: /kb/137/Q137988/
 
 ## Q137988: &quot;Final SQL Operations Failure&quot; Error when Upgrading to SMS 1.1
 
+{% raw %}
+
 	Article: Q137988
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -73,3 +75,5 @@ permalink: /kb/137/Q137988/
 	
 	=============================================================================
 	
+
+{% endraw %}

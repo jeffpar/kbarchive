@@ -6,6 +6,8 @@ permalink: /kb/221/Q221083/
 
 ## Q221083: BUG:Can't Insert CE ActiveX Control on Dialog in Resource Editor
 
+{% raw %}
+
 	Article: Q221083
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,5.0
@@ -106,3 +108,5 @@ permalink: /kb/221/Q221083/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135189/
 
 ## Q135189: Err Msg: Your Network Adapter HP27252 Is Not Configured...
 
+{% raw %}
+
 	Article: Q135189
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135189/
 	
 	=============================================================================
 	
+
+{% endraw %}

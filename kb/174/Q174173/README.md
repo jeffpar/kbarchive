@@ -6,6 +6,8 @@ permalink: /kb/174/Q174173/
 
 ## Q174173: XADM: F1 Opens Incorrect Help Topic
 
+{% raw %}
+
 	Article: Q174173
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -45,3 +47,5 @@ permalink: /kb/174/Q174173/
 	
 	=============================================================================
 	
+
+{% endraw %}

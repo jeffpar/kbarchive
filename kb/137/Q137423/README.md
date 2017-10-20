@@ -6,6 +6,8 @@ permalink: /kb/137/Q137423/
 
 ## Q137423: How to Reregister Services in WINS
 
+{% raw %}
+
 	Article: Q137423
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/137/Q137423/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171904/
 
 ## Q171904: Err Msg: MSNVIEWR Caused an Access Violation Fault in Module...
 
+{% raw %}
+
 	Article: Q171904
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -69,3 +71,5 @@ permalink: /kb/171/Q171904/
 	
 	=============================================================================
 	
+
+{% endraw %}

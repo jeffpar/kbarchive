@@ -6,6 +6,8 @@ permalink: /kb/247/Q247659/
 
 ## Q247659: Removing Trusted Certification Authorities from an IIS Server
 
+{% raw %}
+
 	Article: Q247659
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/247/Q247659/
 	
 	=============================================================================
 	
+
+{% endraw %}

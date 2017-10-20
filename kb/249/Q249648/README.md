@@ -6,6 +6,8 @@ permalink: /kb/249/Q249648/
 
 ## Q249648: Asheron's Call Error Message: Windows Cannot Find Program.exe
 
+{% raw %}
+
 	Article: Q249648
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -74,3 +76,5 @@ permalink: /kb/249/Q249648/
 	
 	=============================================================================
 	
+
+{% endraw %}

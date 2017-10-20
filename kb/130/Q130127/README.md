@@ -6,6 +6,8 @@ permalink: /kb/130/Q130127/
 
 ## Q130127: How to Change the Background Color of a Tab
 
+{% raw %}
+
 	Article: Q130127
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/130/Q130127/
 	
 	=============================================================================
 	
+
+{% endraw %}

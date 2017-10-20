@@ -6,6 +6,8 @@ permalink: /kb/173/Q173610/
 
 ## Q173610: Fonts Appear Too Large in MSN Program Viewer
 
+{% raw %}
+
 	Article: Q173610
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -57,3 +59,5 @@ permalink: /kb/173/Q173610/
 	
 	=============================================================================
 	
+
+{% endraw %}

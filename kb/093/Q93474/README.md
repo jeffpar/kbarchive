@@ -6,6 +6,8 @@ permalink: /kb/093/Q93474/
 
 ## Q93474: Cinemania Err Msg: There Was an Error Writing This File
 
+{% raw %}
+
 	Article: Q93474
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition
@@ -59,3 +61,5 @@ permalink: /kb/093/Q93474/
 	
 	=============================================================================
 	
+
+{% endraw %}

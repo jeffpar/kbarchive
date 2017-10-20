@@ -6,6 +6,8 @@ permalink: /kb/142/Q142490/
 
 ## Q142490: How to Connect to the Internet Using DUN and CompuServe
 
+{% raw %}
+
 	Article: Q142490
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -132,3 +134,5 @@ permalink: /kb/142/Q142490/
 	
 	=============================================================================
 	
+
+{% endraw %}

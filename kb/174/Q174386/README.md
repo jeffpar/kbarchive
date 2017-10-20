@@ -6,6 +6,8 @@ permalink: /kb/174/Q174386/
 
 ## Q174386: Err Msg: Selected Message Is No Longer Available on the Server
 
+{% raw %}
+
 	Article: Q174386
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.3,2.0,2.5,2.51,2.52,2.6
@@ -64,3 +66,5 @@ permalink: /kb/174/Q174386/
 	
 	=============================================================================
 	
+
+{% endraw %}

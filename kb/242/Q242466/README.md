@@ -6,6 +6,8 @@ permalink: /kb/242/Q242466/
 
 ## Q242466: XADM: Error Message: The Key Management Server Is Unable to...
 
+{% raw %}
+
 	Article: Q242466
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/242/Q242466/
 	
 	=============================================================================
 	
+
+{% endraw %}

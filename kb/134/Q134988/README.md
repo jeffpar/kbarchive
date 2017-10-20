@@ -6,6 +6,8 @@ permalink: /kb/134/Q134988/
 
 ## Q134988: Access Violation in glsbCreateAndDuplicateSection API on PowerPC
 
+{% raw %}
+
 	Article: Q134988
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -65,3 +67,5 @@ permalink: /kb/134/Q134988/
 	
 	=============================================================================
 	
+
+{% endraw %}

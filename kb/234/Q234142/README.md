@@ -6,6 +6,8 @@ permalink: /kb/234/Q234142/
 
 ## Q234142: Updating IIS After You Change the Computer Name
 
+{% raw %}
+
 	Article: Q234142
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -148,3 +150,5 @@ permalink: /kb/234/Q234142/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242581/
 
 ## Q242581: Y2K Analyzer Tool Does Not Recognize Schedule+ 7.0a
 
+{% raw %}
+
 	Article: Q242581
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0a
@@ -89,3 +91,5 @@ permalink: /kb/242/Q242581/
 	
 	=============================================================================
 	
+
+{% endraw %}

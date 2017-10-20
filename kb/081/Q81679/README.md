@@ -6,6 +6,8 @@ permalink: /kb/081/Q81679/
 
 ## Q81679: Sound Blaster JUKEBOX.EXE Not Compatible with Windows 3.1
 
+{% raw %}
+
 	Article: Q81679
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/081/Q81679/
 	
 	=============================================================================
 	
+
+{% endraw %}

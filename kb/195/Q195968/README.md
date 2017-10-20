@@ -6,6 +6,8 @@ permalink: /kb/195/Q195968/
 
 ## Q195968: XADM: Unable to Install Internet News Service
 
+{% raw %}
+
 	Article: Q195968
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/195/Q195968/
 	
 	=============================================================================
 	
+
+{% endraw %}

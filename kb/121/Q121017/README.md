@@ -6,6 +6,8 @@ permalink: /kb/121/Q121017/
 
 ## Q121017: FIX: Can't Create Directory &gt;1 Deep for Intermediate Files
 
+{% raw %}
+
 	Article: Q121017
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0
@@ -81,3 +83,5 @@ permalink: /kb/121/Q121017/
 	
 	=============================================================================
 	
+
+{% endraw %}

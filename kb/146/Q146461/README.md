@@ -6,6 +6,8 @@ permalink: /kb/146/Q146461/
 
 ## Q146461: Required Rights for Novell when Using Schedule+ 7.0
 
+{% raw %}
+
 	Article: Q146461
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -54,3 +56,5 @@ permalink: /kb/146/Q146461/
 	
 	=============================================================================
 	
+
+{% endraw %}

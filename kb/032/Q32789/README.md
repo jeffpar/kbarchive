@@ -6,6 +6,8 @@ permalink: /kb/032/Q32789/
 
 ## Q32789: Correction for COMMAND&#36; Function Example in Manual
 
+{% raw %}
+
 	Article: Q32789
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -43,3 +45,5 @@ permalink: /kb/032/Q32789/
 	This line should read as follows:
 	
 	   SUB Comline(NumArgs,Args$(),MaxArgs) STATIC
+
+{% endraw %}

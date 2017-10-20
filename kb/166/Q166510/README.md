@@ -6,6 +6,8 @@ permalink: /kb/166/Q166510/
 
 ## Q166510: BUG: Option Button in Export Dialog Box Causes Error Messages
 
+{% raw %}
+
 	Article: Q166510
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -83,3 +85,5 @@ permalink: /kb/166/Q166510/
 	
 	=============================================================================
 	
+
+{% endraw %}

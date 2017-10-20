@@ -6,6 +6,8 @@ permalink: /kb/089/Q89902/
 
 ## Q89902: MIDI Sequencing Software Issues with Windows Sound System
 
+{% raw %}
+
 	Article: Q89902
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/089/Q89902/
 	
 	=============================================================================
 	
+
+{% endraw %}

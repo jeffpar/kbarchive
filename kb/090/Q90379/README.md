@@ -6,6 +6,8 @@ permalink: /kb/090/Q90379/
 
 ## Q90379: Novell Driver Change in Setup Clears WIN.INI &quot;Load=&quot; Line
 
+{% raw %}
+
 	Article: Q90379
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/090/Q90379/
 	
 	=============================================================================
 	
+
+{% endraw %}

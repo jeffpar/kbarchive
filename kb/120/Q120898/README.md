@@ -6,6 +6,8 @@ permalink: /kb/120/Q120898/
 
 ## Q120898: File Manager and Shell Report Total Size of CD-ROMs as 128 MB
 
+{% raw %}
+
 	Article: Q120898
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -44,3 +46,5 @@ permalink: /kb/120/Q120898/
 	
 	=============================================================================
 	
+
+{% endraw %}

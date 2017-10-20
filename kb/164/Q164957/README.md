@@ -6,6 +6,8 @@ permalink: /kb/164/Q164957/
 
 ## Q164957: FIX: Failure to Load Odbccr32.dll on Alpha Machine
 
+{% raw %}
+
 	Article: Q164957
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5
@@ -66,3 +68,5 @@ permalink: /kb/164/Q164957/
 	
 	=============================================================================
 	
+
+{% endraw %}

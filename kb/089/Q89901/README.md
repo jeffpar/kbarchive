@@ -6,6 +6,8 @@ permalink: /kb/089/Q89901/
 
 ## Q89901: Quick Recorder Resize when Playing Causes Random Data Display
 
+{% raw %}
+
 	Article: Q89901
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/089/Q89901/
 	
 	=============================================================================
 	
+
+{% endraw %}

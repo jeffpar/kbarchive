@@ -6,6 +6,8 @@ permalink: /kb/299/Q299276/
 
 ## Q299276: &quot;Slave&quot; NIS Servers May Not Authenticate UNIX Users
 
+{% raw %}
+
 	Article: Q299276
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -95,3 +97,5 @@ permalink: /kb/299/Q299276/
 	
 	=============================================================================
 	
+
+{% endraw %}

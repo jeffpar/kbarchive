@@ -6,6 +6,8 @@ permalink: /kb/150/Q150786/
 
 ## Q150786: HOWTO: Use SQLBindParameter with 32-bit Visual Basic
 
+{% raw %}
+
 	Article: Q150786
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -194,3 +196,5 @@ permalink: /kb/150/Q150786/
 	
 	=============================================================================
 	
+
+{% endraw %}

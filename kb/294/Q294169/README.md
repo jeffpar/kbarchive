@@ -6,6 +6,8 @@ permalink: /kb/294/Q294169/
 
 ## Q294169: DOC: Explanation of Length Arguments for Unicode ODBC Functions
 
+{% raw %}
+
 	Article: Q294169
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.5,2.6,2.7,3.5
@@ -227,3 +229,5 @@ permalink: /kb/294/Q294169/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31998/
 
 ## Q31998: How the Linker Searches the Libraries
 
+{% raw %}
+
 	Article: Q31998
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/031/Q31998/
 	
 	=============================================================================
 	
+
+{% endraw %}

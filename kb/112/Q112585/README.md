@@ -6,6 +6,8 @@ permalink: /kb/112/Q112585/
 
 ## Q112585: Arcade: Game Hangs after Five Minutes to Two Hours of Play
 
+{% raw %}
+
 	Article: Q112585
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/112/Q112585/
 	
 	=============================================================================
 	
+
+{% endraw %}

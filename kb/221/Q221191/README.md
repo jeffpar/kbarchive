@@ -6,6 +6,8 @@ permalink: /kb/221/Q221191/
 
 ## Q221191: How to Install/Extract Symbols for Windows NT 4.0
 
+{% raw %}
+
 	Article: Q221191
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -73,3 +75,5 @@ permalink: /kb/221/Q221191/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152477/
 
 ## Q152477: XFOR: Handshake Files Moved to BADMAIL Directory
 
+{% raw %}
+
 	Article: Q152477
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/152/Q152477/
 	
 	=============================================================================
 	
+
+{% endraw %}

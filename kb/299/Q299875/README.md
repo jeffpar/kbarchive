@@ -6,6 +6,8 @@ permalink: /kb/299/Q299875/
 
 ## Q299875: HOW TO: Implement SSL on a Windows 2000 IIS 5.0 Computer
 
+{% raw %}
+
 	Article: Q299875
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -320,3 +322,5 @@ permalink: /kb/299/Q299875/
 	
 	=============================================================================
 	
+
+{% endraw %}

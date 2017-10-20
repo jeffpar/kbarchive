@@ -6,6 +6,8 @@ permalink: /kb/163/Q163578/
 
 ## Q163578: TN3270 Client's Session Drops
 
+{% raw %}
+
 	Article: Q163578
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -204,3 +206,5 @@ permalink: /kb/163/Q163578/
 	
 	=============================================================================
 	
+
+{% endraw %}

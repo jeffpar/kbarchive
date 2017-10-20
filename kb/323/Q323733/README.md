@@ -6,6 +6,8 @@ permalink: /kb/323/Q323733/
 
 ## Q323733: XCON: Two Servers in the Same Site Cannot Exchange E-Mail
 
+{% raw %}
+
 	Article: Q323733
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -109,3 +111,5 @@ permalink: /kb/323/Q323733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262691/
 
 ## Q262691: XCON: X.400 Address Received Over MIXER Gets SMTP Address Type
 
+{% raw %}
+
 	Article: Q262691
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -106,3 +108,5 @@ permalink: /kb/262/Q262691/
 	
 	=============================================================================
 	
+
+{% endraw %}

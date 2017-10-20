@@ -6,6 +6,8 @@ permalink: /kb/178/Q178635/
 
 ## Q178635: Can Not Change Domain in Windows After You Use NETDOM
 
+{% raw %}
+
 	Article: Q178635
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/178/Q178635/
 	
 	=============================================================================
 	
+
+{% endraw %}

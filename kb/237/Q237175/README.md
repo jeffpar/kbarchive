@@ -6,6 +6,8 @@ permalink: /kb/237/Q237175/
 
 ## Q237175: FIX: VB IDE Improperly Changes the Registry of ATL Objects
 
+{% raw %}
+
 	Article: Q237175
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0; winnt:6.0
@@ -165,3 +167,5 @@ permalink: /kb/237/Q237175/
 	
 	=============================================================================
 	
+
+{% endraw %}

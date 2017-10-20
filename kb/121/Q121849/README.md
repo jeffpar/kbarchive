@@ -6,6 +6,8 @@ permalink: /kb/121/Q121849/
 
 ## Q121849: ATI Video Fails with Adaptec 174x SCSI Driver Present
 
+{% raw %}
+
 	Article: Q121849
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/121/Q121849/
 	
 	=============================================================================
 	
+
+{% endraw %}

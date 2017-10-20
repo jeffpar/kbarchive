@@ -6,6 +6,8 @@ permalink: /kb/148/Q148708/
 
 ## Q148708: No Network Access After Running Sclntupd.exe
 
+{% raw %}
+
 	Article: Q148708
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/148/Q148708/
 	
 	=============================================================================
 	
+
+{% endraw %}

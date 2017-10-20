@@ -6,6 +6,8 @@ permalink: /kb/085/Q85267/
 
 ## Q85267: FastBack Plus Err Msg: WARNING #31 FastBack Plus Was
 
+{% raw %}
+
 	Article: Q85267
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/085/Q85267/
 	
 	=============================================================================
 	
+
+{% endraw %}

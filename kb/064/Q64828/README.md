@@ -6,6 +6,8 @@ permalink: /kb/064/Q64828/
 
 ## Q64828: Why Some Sample Programs Produce Compiler Warnings
 
+{% raw %}
+
 	Article: Q64828
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -30,3 +32,5 @@ permalink: /kb/064/Q64828/
 	   compiler progresses. Therefore, it is very difficult to write
 	   warning-free code early in the development process and have it
 	   compile with no warnings with the release version.
+
+{% endraw %}

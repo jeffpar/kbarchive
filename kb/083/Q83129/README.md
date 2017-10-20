@@ -6,6 +6,8 @@ permalink: /kb/083/Q83129/
 
 ## Q83129: WordPerfect Office SHELL.EXE Cannot Be Loaded High
 
+{% raw %}
+
 	Article: Q83129
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -63,3 +65,5 @@ permalink: /kb/083/Q83129/
 	
 	=============================================================================
 	
+
+{% endraw %}

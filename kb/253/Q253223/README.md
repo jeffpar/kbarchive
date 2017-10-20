@@ -6,6 +6,8 @@ permalink: /kb/253/Q253223/
 
 ## Q253223: XADM: ADC Doesn't Replicate 5.5 Mailbox to Active Directory Obj.
 
+{% raw %}
+
 	Article: Q253223
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/253/Q253223/
 	
 	=============================================================================
 	
+
+{% endraw %}

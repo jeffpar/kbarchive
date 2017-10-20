@@ -6,6 +6,8 @@ permalink: /kb/177/Q177778/
 
 ## Q177778: XADM: Events 12000 and 11201 from NNTP
 
+{% raw %}
+
 	Article: Q177778
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/177/Q177778/
 	
 	=============================================================================
 	
+
+{% endraw %}

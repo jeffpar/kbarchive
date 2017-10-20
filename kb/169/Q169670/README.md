@@ -6,6 +6,8 @@ permalink: /kb/169/Q169670/
 
 ## Q169670: XCON: Incoming Messages from HP OpenMail Include Winmail.dat
 
+{% raw %}
+
 	Article: Q169670
 	Product(s): Microsoft Exchange
 	Version(s): WinNT4.0,5.0
@@ -90,3 +92,5 @@ permalink: /kb/169/Q169670/
 	
 	=============================================================================
 	
+
+{% endraw %}

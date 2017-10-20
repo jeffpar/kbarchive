@@ -6,6 +6,8 @@ permalink: /kb/110/Q110884/
 
 ## Q110884: Arcade for Windows: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q110884
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/110/Q110884/
 	
 	=============================================================================
 	
+
+{% endraw %}

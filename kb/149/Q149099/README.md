@@ -6,6 +6,8 @@ permalink: /kb/149/Q149099/
 
 ## Q149099: MSN Interactive Teen: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q149099
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0; WINDOWS:95
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149099/
 	
 	=============================================================================
 	
+
+{% endraw %}

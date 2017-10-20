@@ -6,6 +6,8 @@ permalink: /kb/127/Q127081/
 
 ## Q127081: PC MAPI: General Information on MAPIVIM.DLL
 
+{% raw %}
+
 	Article: Q127081
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -48,3 +50,5 @@ permalink: /kb/127/Q127081/
 	
 	=============================================================================
 	
+
+{% endraw %}

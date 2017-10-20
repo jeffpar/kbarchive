@@ -6,6 +6,8 @@ permalink: /kb/299/Q299028/
 
 ## Q299028: Midtown Madness 2: Distorted Graphics with GeForce and 810 Cards
 
+{% raw %}
+
 	Article: Q299028
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -53,3 +55,5 @@ permalink: /kb/299/Q299028/
 	
 	=============================================================================
 	
+
+{% endraw %}

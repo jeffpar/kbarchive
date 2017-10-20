@@ -6,6 +6,8 @@ permalink: /kb/140/Q140831/
 
 ## Q140831: Cannot Build APPC Library DTRACS.LIB
 
+{% raw %}
+
 	Article: Q140831
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -66,3 +68,5 @@ permalink: /kb/140/Q140831/
 	
 	=============================================================================
 	
+
+{% endraw %}

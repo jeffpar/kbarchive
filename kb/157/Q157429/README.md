@@ -6,6 +6,8 @@ permalink: /kb/157/Q157429/
 
 ## Q157429: INFO: More About the Automation and Connection Managers
 
+{% raw %}
+
 	Article: Q157429
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/157/Q157429/
 	
 	=============================================================================
 	
+
+{% endraw %}

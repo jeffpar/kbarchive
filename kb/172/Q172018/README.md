@@ -6,6 +6,8 @@ permalink: /kb/172/Q172018/
 
 ## Q172018: Index Server Will Not Filter Microsoft Word Headers or Footers
 
+{% raw %}
+
 	Article: Q172018
 	Product(s): Internet Information Server
 	Version(s): WINNT: 1.1
@@ -53,3 +55,5 @@ permalink: /kb/172/Q172018/
 	
 	=============================================================================
 	
+
+{% endraw %}

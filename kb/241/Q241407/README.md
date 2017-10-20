@@ -6,6 +6,8 @@ permalink: /kb/241/Q241407/
 
 ## Q241407: Files on an FTP Server Can Be Improperly Accessed
 
+{% raw %}
+
 	Article: Q241407
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -148,3 +150,5 @@ permalink: /kb/241/Q241407/
 	
 	=============================================================================
 	
+
+{% endraw %}

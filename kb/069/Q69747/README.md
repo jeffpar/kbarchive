@@ -6,6 +6,8 @@ permalink: /kb/069/Q69747/
 
 ## Q69747: COMTOKR.SYS and LAN Manager NDDK
 
+{% raw %}
+
 	Article: Q69747
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/069/Q69747/
 	
 	=============================================================================
 	
+
+{% endraw %}

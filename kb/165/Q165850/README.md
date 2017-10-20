@@ -6,6 +6,8 @@ permalink: /kb/165/Q165850/
 
 ## Q165850: SNA Print Service Drops Escape Sequences from 3270 Print Job
 
+{% raw %}
+
 	Article: Q165850
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/165/Q165850/
 	
 	=============================================================================
 	
+
+{% endraw %}

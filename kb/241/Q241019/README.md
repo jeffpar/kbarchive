@@ -6,6 +6,8 @@ permalink: /kb/241/Q241019/
 
 ## Q241019: NBA Inside Drive 2000: Court Lines Disappear When Playing Game
 
+{% raw %}
+
 	Article: Q241019
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/241/Q241019/
 	
 	=============================================================================
 	
+
+{% endraw %}

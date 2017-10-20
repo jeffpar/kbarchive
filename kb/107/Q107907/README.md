@@ -6,6 +6,8 @@ permalink: /kb/107/Q107907/
 
 ## Q107907: Enhancements to Video for Windows, Version 1.1
 
+{% raw %}
+
 	Article: Q107907
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 1.1
@@ -151,3 +153,5 @@ permalink: /kb/107/Q107907/
 	
 	=============================================================================
 	
+
+{% endraw %}

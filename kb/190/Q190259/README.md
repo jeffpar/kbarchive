@@ -6,6 +6,8 @@ permalink: /kb/190/Q190259/
 
 ## Q190259: Wd97vba.exe Contains Header File w/ Word VBA Constants
 
+{% raw %}
+
 	Article: Q190259
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a
@@ -94,3 +96,5 @@ permalink: /kb/190/Q190259/
 	
 	=============================================================================
 	
+
+{% endraw %}

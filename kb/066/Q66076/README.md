@@ -6,6 +6,8 @@ permalink: /kb/066/Q66076/
 
 ## Q66076: Turning Off Autoswitching on Paradise Plus Card
 
+{% raw %}
+
 	Article: Q66076
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/066/Q66076/
 	
 	=============================================================================
 	
+
+{% endraw %}

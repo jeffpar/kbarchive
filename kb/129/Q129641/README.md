@@ -6,6 +6,8 @@ permalink: /kb/129/Q129641/
 
 ## Q129641: INFO: Alternative to SCATTER and GATHER in the New VFP Model
 
+{% raw %}
+
 	Article: Q129641
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/129/Q129641/
 	
 	=============================================================================
 	
+
+{% endraw %}

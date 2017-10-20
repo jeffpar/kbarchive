@@ -6,6 +6,8 @@ permalink: /kb/178/Q178756/
 
 ## Q178756: XCLN: Read-Write Access Required to Open .PST and PAB Files
 
+{% raw %}
+
 	Article: Q178756
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0; :8.0,8.01,8.02,8.03
@@ -76,3 +78,5 @@ permalink: /kb/178/Q178756/
 	
 	=============================================================================
 	
+
+{% endraw %}

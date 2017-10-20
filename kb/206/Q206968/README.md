@@ -6,6 +6,8 @@ permalink: /kb/206/Q206968/
 
 ## Q206968: XIMS: &quot;Relay Not Allowed&quot; After Installing Exchange 5.5 SP1
 
+{% raw %}
+
 	Article: Q206968
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/206/Q206968/
 	
 	=============================================================================
 	
+
+{% endraw %}

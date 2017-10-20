@@ -6,6 +6,8 @@ permalink: /kb/157/Q157042/
 
 ## Q157042: XFOR: Event ID 4018 if IMC Started Without Private IS
 
+{% raw %}
+
 	Article: Q157042
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/157/Q157042/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148966/
 
 ## Q148966: The TN3270 Server Does Not Check for a Best LU to IP Match
 
+{% raw %}
+
 	Article: Q148966
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -83,3 +85,5 @@ permalink: /kb/148/Q148966/
 	
 	=============================================================================
 	
+
+{% endraw %}

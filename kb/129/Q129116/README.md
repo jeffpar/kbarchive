@@ -6,6 +6,8 @@ permalink: /kb/129/Q129116/
 
 ## Q129116: Members of the Server Operators Group Cannot Add Workstations
 
+{% raw %}
+
 	Article: Q129116
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/129/Q129116/
 	
 	=============================================================================
 	
+
+{% endraw %}

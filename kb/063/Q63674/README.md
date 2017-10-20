@@ -6,6 +6,8 @@ permalink: /kb/063/Q63674/
 
 ## Q63674: ENTER Key Does Not Work in CorelDRAW! Under Windows 3.0
 
+{% raw %}
+
 	Article: Q63674
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/063/Q63674/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166039/
 
 ## Q166039: Kids Plus!: Protect It! MS-DOS Applications Won't Start
 
+{% raw %}
+
 	Article: Q166039
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/166/Q166039/
 	
 	=============================================================================
 	
+
+{% endraw %}

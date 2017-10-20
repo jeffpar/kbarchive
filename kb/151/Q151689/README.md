@@ -6,6 +6,8 @@ permalink: /kb/151/Q151689/
 
 ## Q151689: XADM: Error Starting Key Management Server
 
+{% raw %}
+
 	Article: Q151689
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -78,3 +80,5 @@ permalink: /kb/151/Q151689/
 	
 	=============================================================================
 	
+
+{% endraw %}

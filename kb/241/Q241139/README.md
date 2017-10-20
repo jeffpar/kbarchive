@@ -6,6 +6,8 @@ permalink: /kb/241/Q241139/
 
 ## Q241139: TPU: Collaboration Data Objects Required to Install TPU
 
+{% raw %}
+
 	Article: Q241139
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -99,3 +101,5 @@ permalink: /kb/241/Q241139/
 	
 	=============================================================================
 	
+
+{% endraw %}

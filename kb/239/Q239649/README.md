@@ -6,6 +6,8 @@ permalink: /kb/239/Q239649/
 
 ## Q239649: XADM: InterOrg Sync Doesn't Update Same Alias Import Containers
 
+{% raw %}
+
 	Article: Q239649
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2
@@ -75,3 +77,5 @@ permalink: /kb/239/Q239649/
 	
 	=============================================================================
 	
+
+{% endraw %}

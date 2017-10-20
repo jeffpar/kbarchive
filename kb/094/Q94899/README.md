@@ -6,6 +6,8 @@ permalink: /kb/094/Q94899/
 
 ## Q94899: WFWG: Recovering Windows 3.1 After Installation with DR-DOS
 
+{% raw %}
+
 	Article: Q94899
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -224,3 +226,5 @@ permalink: /kb/094/Q94899/
 	
 	=============================================================================
 	
+
+{% endraw %}

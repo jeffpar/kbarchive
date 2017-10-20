@@ -6,6 +6,8 @@ permalink: /kb/244/Q244019/
 
 ## Q244019: HOWTO: How to Retrieve Deleted Files in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q244019
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/244/Q244019/
 	
 	=============================================================================
 	
+
+{% endraw %}

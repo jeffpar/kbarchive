@@ -6,6 +6,8 @@ permalink: /kb/216/Q216108/
 
 ## Q216108: Memory Leak and STOP Screens Using Intermediate NDIS Drivers
 
+{% raw %}
+
 	Article: Q216108
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/216/Q216108/
 	
 	=============================================================================
 	
+
+{% endraw %}

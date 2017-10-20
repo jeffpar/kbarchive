@@ -6,6 +6,8 @@ permalink: /kb/139/Q139191/
 
 ## Q139191: Julia Child: Play Through Lesson Button Malfunctions
 
+{% raw %}
+
 	Article: Q139191
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/139/Q139191/
 	
 	=============================================================================
 	
+
+{% endraw %}

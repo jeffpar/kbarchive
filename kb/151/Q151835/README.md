@@ -6,6 +6,8 @@ permalink: /kb/151/Q151835/
 
 ## Q151835: Table of Contents for FoxPro Advisor Magazine for May 1996
 
+{% raw %}
+
 	Article: Q151835
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b | 2.50b 2.50c 2.60a |
@@ -167,3 +169,5 @@ permalink: /kb/151/Q151835/
 	
 	=============================================================================
 	
+
+{% endraw %}

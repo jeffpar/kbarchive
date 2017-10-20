@@ -6,6 +6,8 @@ permalink: /kb/131/Q131066/
 
 ## Q131066: PRB: C2922 Error for Class Template Containing Friend Function
 
+{% raw %}
+
 	Article: Q131066
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10
@@ -103,3 +105,5 @@ permalink: /kb/131/Q131066/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199263/
 
 ## Q199263: SMS: &quot;Remove software when it is no longer advertised&quot; Operation
 
+{% raw %}
+
 	Article: Q199263
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/199/Q199263/
 	
 	=============================================================================
 	
+
+{% endraw %}

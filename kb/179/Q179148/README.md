@@ -6,6 +6,8 @@ permalink: /kb/179/Q179148/
 
 ## Q179148: Settings May Not Be Applied with URL with Short Filename
 
+{% raw %}
+
 	Article: Q179148
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -122,3 +124,5 @@ permalink: /kb/179/Q179148/
 	
 	=============================================================================
 	
+
+{% endraw %}

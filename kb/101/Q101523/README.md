@@ -6,6 +6,8 @@ permalink: /kb/101/Q101523/
 
 ## Q101523: INF: Meaning of an Active ODBC Statement Handle
 
+{% raw %}
+
 	Article: Q101523
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/101/Q101523/
 	
 	=============================================================================
 	
+
+{% endraw %}

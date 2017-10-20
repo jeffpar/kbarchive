@@ -6,6 +6,8 @@ permalink: /kb/185/Q185254/
 
 ## Q185254: CART: Error Message When You Install the Cart101.exe Patch
 
+{% raw %}
+
 	Article: Q185254
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/185/Q185254/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132764/
 
 ## Q132764: Sound Card Is Not Detected If Network Card Uses Same Address
 
+{% raw %}
+
 	Article: Q132764
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/132/Q132764/
 	
 	=============================================================================
 	
+
+{% endraw %}

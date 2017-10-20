@@ -6,6 +6,8 @@ permalink: /kb/068/Q68713/
 
 ## Q68713: Mac Wkst: Unread Message Becomes Unbold
 
+{% raw %}
+
 	Article: Q68713
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/068/Q68713/
 	
 	=============================================================================
 	
+
+{% endraw %}

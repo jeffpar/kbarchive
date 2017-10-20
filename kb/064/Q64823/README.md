@@ -6,6 +6,8 @@ permalink: /kb/064/Q64823/
 
 ## Q64823: Windows 3.0 and Award BIOS for 286/386 Computers
 
+{% raw %}
+
 	Article: Q64823
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/064/Q64823/
 	
 	=============================================================================
 	
+
+{% endraw %}

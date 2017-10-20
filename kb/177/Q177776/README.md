@@ -6,6 +6,8 @@ permalink: /kb/177/Q177776/
 
 ## Q177776: XADM: How to Use the Mailbox Migration Utility
 
+{% raw %}
+
 	Article: Q177776
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -146,3 +148,5 @@ permalink: /kb/177/Q177776/
 	
 	=============================================================================
 	
+
+{% endraw %}

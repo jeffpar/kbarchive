@@ -6,6 +6,8 @@ permalink: /kb/131/Q131479/
 
 ## Q131479: Unable to Change Printer Settings From Windows Applications
 
+{% raw %}
+
 	Article: Q131479
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -47,3 +49,5 @@ permalink: /kb/131/Q131479/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146510/
 
 ## Q146510: XADM: General Descriptions of the OAB Files
 
+{% raw %}
+
 	Article: Q146510
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146510/
 	
 	=============================================================================
 	
+
+{% endraw %}

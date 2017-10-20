@@ -6,6 +6,8 @@ permalink: /kb/138/Q138465/
 
 ## Q138465: Dataloader Fails to Add Binary Inventory to DB from New Child
 
+{% raw %}
+
 	Article: Q138465
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -41,3 +43,5 @@ permalink: /kb/138/Q138465/
 	
 	=============================================================================
 	
+
+{% endraw %}

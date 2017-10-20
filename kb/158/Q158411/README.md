@@ -6,6 +6,8 @@ permalink: /kb/158/Q158411/
 
 ## Q158411: Deactivation of MSN-Only Access Phone Numbers
 
+{% raw %}
+
 	Article: Q158411
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -124,3 +126,5 @@ permalink: /kb/158/Q158411/
 	
 	=============================================================================
 	
+
+{% endraw %}

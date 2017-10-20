@@ -6,6 +6,8 @@ permalink: /kb/310/Q310709/
 
 ## Q310709: Dns.exe Process Quits Because of an Access Violation
 
+{% raw %}
+
 	Article: Q310709
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -73,3 +75,5 @@ permalink: /kb/310/Q310709/
 	
 	=============================================================================
 	
+
+{% endraw %}

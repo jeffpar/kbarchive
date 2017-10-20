@@ -6,6 +6,8 @@ permalink: /kb/115/Q115452/
 
 ## Q115452: SMTP: Date and Time Stamps Different in Inbox and Message
 
+{% raw %}
+
 	Article: Q115452
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/115/Q115452/
 	
 	=============================================================================
 	
+
+{% endraw %}

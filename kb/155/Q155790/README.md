@@ -6,6 +6,8 @@ permalink: /kb/155/Q155790/
 
 ## Q155790: XFOR: MT Rejects Reply from CHT Outlook Client on MS Mail PO
 
+{% raw %}
+
 	Article: Q155790
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/155/Q155790/
 	
 	=============================================================================
 	
+
+{% endraw %}

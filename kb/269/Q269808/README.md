@@ -6,6 +6,8 @@ permalink: /kb/269/Q269808/
 
 ## Q269808: MSB: Incomplete Printout or You Cannot Print from the Program
 
+{% raw %}
+
 	Article: Q269808
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -120,3 +122,5 @@ permalink: /kb/269/Q269808/
 	
 	=============================================================================
 	
+
+{% endraw %}

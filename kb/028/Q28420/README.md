@@ -6,6 +6,8 @@ permalink: /kb/028/Q28420/
 
 ## Q28420: Availability of MENU.COM
 
+{% raw %}
+
 	Article: Q28420
 	Product(s): See article
 	Version(s): 1.00
@@ -24,3 +26,5 @@ permalink: /kb/028/Q28420/
 	
 	If you have a version prior to Version 6.00, you will have the file on
 	your System Disk.
+
+{% endraw %}

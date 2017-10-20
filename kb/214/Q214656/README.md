@@ -6,6 +6,8 @@ permalink: /kb/214/Q214656/
 
 ## Q214656: Absolute Horizontal Move Command Handled Incorrectly if PDT Used
 
+{% raw %}
+
 	Article: Q214656
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -148,3 +150,5 @@ permalink: /kb/214/Q214656/
 	
 	=============================================================================
 	
+
+{% endraw %}

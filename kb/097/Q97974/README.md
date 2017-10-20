@@ -6,6 +6,8 @@ permalink: /kb/097/Q97974/
 
 ## Q97974: PRB: CV1053 Warning: TOOLS.INI Not Found
 
+{% raw %}
+
 	Article: Q97974
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/097/Q97974/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175841/
 
 ## Q175841: XFOR: SMTP Header Discarded with No Message Content
 
+{% raw %}
+
 	Article: Q175841
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/175/Q175841/
 	
 	=============================================================================
 	
+
+{% endraw %}

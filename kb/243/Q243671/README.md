@@ -6,6 +6,8 @@ permalink: /kb/243/Q243671/
 
 ## Q243671: How to Enable SNARAS Tracing on SNA Server 4.0
 
+{% raw %}
+
 	Article: Q243671
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -119,3 +121,5 @@ permalink: /kb/243/Q243671/
 	
 	=============================================================================
 	
+
+{% endraw %}

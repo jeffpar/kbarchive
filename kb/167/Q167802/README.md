@@ -6,6 +6,8 @@ permalink: /kb/167/Q167802/
 
 ## Q167802: EXCEPTEX Traps MFC and Win32 Structured Exceptions
 
+{% raw %}
+
 	Article: Q167802
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2,5.0; winnt:4.0,4.1,4.2,5.0
@@ -391,3 +393,5 @@ permalink: /kb/167/Q167802/
 	
 	=============================================================================
 	
+
+{% endraw %}

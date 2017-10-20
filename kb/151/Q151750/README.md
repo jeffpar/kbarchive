@@ -6,6 +6,8 @@ permalink: /kb/151/Q151750/
 
 ## Q151750: BUG: SET SYSMENU OFF Malfunctioning
 
+{% raw %}
+
 	Article: Q151750
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0; MACINTOSH:2.6a
@@ -70,3 +72,5 @@ permalink: /kb/151/Q151750/
 	
 	=============================================================================
 	
+
+{% endraw %}

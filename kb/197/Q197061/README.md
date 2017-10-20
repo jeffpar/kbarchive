@@ -6,6 +6,8 @@ permalink: /kb/197/Q197061/
 
 ## Q197061: Map Information Based on the WGS-84 Map Datum
 
+{% raw %}
+
 	Article: Q197061
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/197/Q197061/
 	
 	=============================================================================
 	
+
+{% endraw %}

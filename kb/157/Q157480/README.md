@@ -6,6 +6,8 @@ permalink: /kb/157/Q157480/
 
 ## Q157480: INFO: STL Sample for the rotate_copy Function
 
+{% raw %}
+
 	Article: Q157480
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -198,3 +200,5 @@ permalink: /kb/157/Q157480/
 	
 	=============================================================================
 	
+
+{% endraw %}

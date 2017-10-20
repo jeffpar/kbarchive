@@ -6,6 +6,8 @@ permalink: /kb/189/Q189666/
 
 ## Q189666: BUG: Toolbar Displays Multiple Selected Toggle Buttons
 
+{% raw %}
+
 	Article: Q189666
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/189/Q189666/
 	
 	=============================================================================
 	
+
+{% endraw %}

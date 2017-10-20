@@ -6,6 +6,8 @@ permalink: /kb/128/Q128739/
 
 ## Q128739: PC Win: Saving Multiple Messages into One File
 
+{% raw %}
+
 	Article: Q128739
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -80,3 +82,5 @@ permalink: /kb/128/Q128739/
 	
 	=============================================================================
 	
+
+{% endraw %}

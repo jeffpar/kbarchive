@@ -6,6 +6,8 @@ permalink: /kb/240/Q240989/
 
 ## Q240989: Pandora's Box: Puzzle Animations Are Played Extremely Slowly
 
+{% raw %}
+
 	Article: Q240989
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/240/Q240989/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173908/
 
 ## Q173908: WD97: Errors Opening File If Low Memory or Low Disk Space
 
+{% raw %}
+
 	Article: Q173908
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -124,3 +126,5 @@ permalink: /kb/173/Q173908/
 	
 	=============================================================================
 	
+
+{% endraw %}

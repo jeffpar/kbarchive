@@ -6,6 +6,8 @@ permalink: /kb/124/Q124542/
 
 ## Q124542: Service Logged On w/ User Account Able to Interact with Desktop
 
+{% raw %}
+
 	Article: Q124542
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -48,3 +50,5 @@ permalink: /kb/124/Q124542/
 	
 	=============================================================================
 	
+
+{% endraw %}

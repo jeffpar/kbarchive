@@ -6,6 +6,8 @@ permalink: /kb/138/Q138400/
 
 ## Q138400: Troubleshooting LNK2001 or L2029 Unresolved External Errors
 
+{% raw %}
+
 	Article: Q138400
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,7.0
@@ -663,3 +665,5 @@ permalink: /kb/138/Q138400/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/280/Q280054/
 
 ## Q280054: SMS: Remote Session Disconnects If Second User Tries to Connect
 
+{% raw %}
+
 	Article: Q280054
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -52,3 +54,5 @@ permalink: /kb/280/Q280054/
 	
 	=============================================================================
 	
+
+{% endraw %}

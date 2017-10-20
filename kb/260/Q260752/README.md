@@ -6,6 +6,8 @@ permalink: /kb/260/Q260752/
 
 ## Q260752: Terminal Server Hangs When Clients Access Dfs Shares
 
+{% raw %}
+
 	Article: Q260752
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/260/Q260752/
 	
 	=============================================================================
 	
+
+{% endraw %}

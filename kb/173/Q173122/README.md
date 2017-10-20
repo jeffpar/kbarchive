@@ -6,6 +6,8 @@ permalink: /kb/173/Q173122/
 
 ## Q173122: SMS: Mouse and Keyboard Input Fail During Remote Control
 
+{% raw %}
+
 	Article: Q173122
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173122/
 	
 	=============================================================================
 	
+
+{% endraw %}

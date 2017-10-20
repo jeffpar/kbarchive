@@ -6,6 +6,8 @@ permalink: /kb/193/Q193351/
 
 ## Q193351: Trailing Blanks Removed from String in Reply Data
 
+{% raw %}
+
 	Article: Q193351
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,1.0 SP1
@@ -89,3 +91,5 @@ permalink: /kb/193/Q193351/
 	
 	=============================================================================
 	
+
+{% endraw %}

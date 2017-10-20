@@ -6,6 +6,8 @@ permalink: /kb/236/Q236061/
 
 ## Q236061: SMS: Zero Byte DDR Causes High CPU Usage by Discovery Data Mgr
 
+{% raw %}
+
 	Article: Q236061
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -58,3 +60,5 @@ permalink: /kb/236/Q236061/
 	
 	=============================================================================
 	
+
+{% endraw %}

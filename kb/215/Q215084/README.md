@@ -6,6 +6,8 @@ permalink: /kb/215/Q215084/
 
 ## Q215084: SMS: Misleading Error Message with SMS Service Manager
 
+{% raw %}
+
 	Article: Q215084
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -106,3 +108,5 @@ permalink: /kb/215/Q215084/
 	
 	=============================================================================
 	
+
+{% endraw %}

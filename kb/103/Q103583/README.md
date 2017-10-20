@@ -6,6 +6,8 @@ permalink: /kb/103/Q103583/
 
 ## Q103583: Screen Fonts Varying in Size When in Different Resolution
 
+{% raw %}
+
 	Article: Q103583
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.60 2.60a 3.00
@@ -69,3 +71,5 @@ permalink: /kb/103/Q103583/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124549/
 
 ## Q124549: Unable to Disable Print Event Logging in Windows NT 3.5
 
+{% raw %}
+
 	Article: Q124549
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -64,3 +66,5 @@ permalink: /kb/124/Q124549/
 	
 	=============================================================================
 	
+
+{% endraw %}

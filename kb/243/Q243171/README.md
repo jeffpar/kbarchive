@@ -6,6 +6,8 @@ permalink: /kb/243/Q243171/
 
 ## Q243171: Advertisements Are Received by Clients Outside the Collection
 
+{% raw %}
+
 	Article: Q243171
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -80,3 +82,5 @@ permalink: /kb/243/Q243171/
 	
 	=============================================================================
 	
+
+{% endraw %}

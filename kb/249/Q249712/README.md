@@ -6,6 +6,8 @@ permalink: /kb/249/Q249712/
 
 ## Q249712: XADM: Setup Stops When Installing Exchange 5.5 on Windows 2000
 
+{% raw %}
+
 	Article: Q249712
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/249/Q249712/
 	
 	=============================================================================
 	
+
+{% endraw %}

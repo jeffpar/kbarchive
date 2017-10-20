@@ -6,6 +6,8 @@ permalink: /kb/085/Q85419/
 
 ## Q85419: APPNOTES.TXT: Using Applications with MS-DOS Version 5.0a
 
+{% raw %}
+
 	Article: Q85419
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0a
@@ -330,3 +332,5 @@ permalink: /kb/085/Q85419/
 	
 	=============================================================================
 	
+
+{% endraw %}

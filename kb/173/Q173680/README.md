@@ -6,6 +6,8 @@ permalink: /kb/173/Q173680/
 
 ## Q173680: XADM: New User Inherits Permissions of Deleted User
 
+{% raw %}
+
 	Article: Q173680
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -44,3 +46,5 @@ permalink: /kb/173/Q173680/
 	
 	=============================================================================
 	
+
+{% endraw %}

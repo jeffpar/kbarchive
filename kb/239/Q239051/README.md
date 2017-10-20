@@ -6,6 +6,8 @@ permalink: /kb/239/Q239051/
 
 ## Q239051: Unable to Browse HTMLA Using Netscape 3.0 for UNIX
 
+{% raw %}
+
 	Article: Q239051
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -49,3 +51,5 @@ permalink: /kb/239/Q239051/
 	
 	=============================================================================
 	
+
+{% endraw %}

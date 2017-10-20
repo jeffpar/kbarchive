@@ -6,6 +6,8 @@ permalink: /kb/098/Q98820/
 
 ## Q98820: PROFS: 3.0 Gateway Disk 1 &#91;3.5, 1.22 MB&#93;
 
+{% raw %}
+
 	Article: Q98820
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -48,3 +50,5 @@ permalink: /kb/098/Q98820/
 	
 	=============================================================================
 	
+
+{% endraw %}

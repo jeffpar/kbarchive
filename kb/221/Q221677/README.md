@@ -6,6 +6,8 @@ permalink: /kb/221/Q221677/
 
 ## Q221677: FIX: SQL Upsizing Wizard Problem if Upsized View Has '==' Filter
 
+{% raw %}
+
 	Article: Q221677
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a,6.0
@@ -149,3 +151,5 @@ permalink: /kb/221/Q221677/
 	
 	=============================================================================
 	
+
+{% endraw %}

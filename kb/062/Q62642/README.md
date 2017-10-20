@@ -6,6 +6,8 @@ permalink: /kb/062/Q62642/
 
 ## Q62642: Write Cannot Use Cut, Copy Accelerator Keys
 
+{% raw %}
+
 	Article: Q62642
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/062/Q62642/
 	
 	=============================================================================
 	
+
+{% endraw %}

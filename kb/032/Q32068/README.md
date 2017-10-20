@@ -6,6 +6,8 @@ permalink: /kb/032/Q32068/
 
 ## Q32068: Compiler C2061 Syntax Error: Identifier 'dev_t' in stat.h
 
+{% raw %}
+
 	Article: Q32068
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/032/Q32068/
 	
 	The order in which these files are included must occur as shown to
 	eliminate the compiler error message.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157119/
 
 ## Q157119: WD97: Pictures Visible Even When Picture Placeholders Selected
 
+{% raw %}
+
 	Article: Q157119
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/157/Q157119/
 	
 	=============================================================================
 	
+
+{% endraw %}

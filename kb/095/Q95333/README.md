@@ -6,6 +6,8 @@ permalink: /kb/095/Q95333/
 
 ## Q95333: Copying a File
 
+{% raw %}
+
 	Article: Q95333
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -69,3 +71,5 @@ permalink: /kb/095/Q95333/
 	
 	=============================================================================
 	
+
+{% endraw %}

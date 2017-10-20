@@ -6,6 +6,8 @@ permalink: /kb/275/Q275921/
 
 ## Q275921: XCLN: How to View Private Messages in an Additional Mailbox
 
+{% raw %}
+
 	Article: Q275921
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -75,3 +77,5 @@ permalink: /kb/275/Q275921/
 	
 	=============================================================================
 	
+
+{% endraw %}

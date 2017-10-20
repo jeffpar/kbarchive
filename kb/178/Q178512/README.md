@@ -6,6 +6,8 @@ permalink: /kb/178/Q178512/
 
 ## Q178512: FIX: C1001 in Third-Party STL Code Using Visual Studio 97 SP3
 
+{% raw %}
+
 	Article: Q178512
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0sp3
@@ -85,3 +87,5 @@ permalink: /kb/178/Q178512/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/028/Q28567/
 
 ## Q28567: Reference Page 75 Example 9 Causes Error C2147
 
+{% raw %}
+
 	Article: Q28567
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -55,3 +57,5 @@ permalink: /kb/028/Q28567/
 	
 	The second workaround is standard ANSI C and should compile on any
 	standard ANSI C compiler.
+
+{% endraw %}

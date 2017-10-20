@@ -6,6 +6,8 @@ permalink: /kb/165/Q165959/
 
 ## Q165959: Reading a File Saved with the Event Viewer of Another Computer
 
+{% raw %}
+
 	Article: Q165959
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -137,3 +139,5 @@ permalink: /kb/165/Q165959/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256164/
 
 ## Q256164: SMS: IME Conversion Hotkey May Not Function Correctly
 
+{% raw %}
+
 	Article: Q256164
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -48,3 +50,5 @@ permalink: /kb/256/Q256164/
 	
 	=============================================================================
 	
+
+{% endraw %}

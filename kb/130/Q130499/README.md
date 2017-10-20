@@ -6,6 +6,8 @@ permalink: /kb/130/Q130499/
 
 ## Q130499: How to Copy Visual Classes to Other Libraries
 
+{% raw %}
+
 	Article: Q130499
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -102,3 +104,5 @@ permalink: /kb/130/Q130499/
 	
 	=============================================================================
 	
+
+{% endraw %}

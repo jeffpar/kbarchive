@@ -6,6 +6,8 @@ permalink: /kb/259/Q259404/
 
 ## Q259404: BUG: MFC OLE Container May Merge Server Menus Incorrectly
 
+{% raw %}
+
 	Article: Q259404
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -99,3 +101,5 @@ permalink: /kb/259/Q259404/
 	
 	=============================================================================
 	
+
+{% endraw %}

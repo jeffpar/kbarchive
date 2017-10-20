@@ -6,6 +6,8 @@ permalink: /kb/195/Q195847/
 
 ## Q195847: XFOR: Chat Server Fails to Correctly Interpret an Extension
 
+{% raw %}
+
 	Article: Q195847
 	Product(s): Microsoft Exchange
 	Version(s): winnt:2.0,5.5
@@ -77,3 +79,5 @@ permalink: /kb/195/Q195847/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161240/
 
 ## Q161240: HOWTO: Select All Text in a Field When It Gets the Focus
 
+{% raw %}
+
 	Article: Q161240
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/161/Q161240/
 	
 	=============================================================================
 	
+
+{% endraw %}

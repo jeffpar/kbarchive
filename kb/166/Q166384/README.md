@@ -6,6 +6,8 @@ permalink: /kb/166/Q166384/
 
 ## Q166384: PRB: IME Always Active in Browse Window at VFP Run-Time
 
+{% raw %}
+
 	Article: Q166384
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -82,3 +84,5 @@ permalink: /kb/166/Q166384/
 	
 	=============================================================================
 	
+
+{% endraw %}

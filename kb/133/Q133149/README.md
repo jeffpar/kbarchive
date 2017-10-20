@@ -6,6 +6,8 @@ permalink: /kb/133/Q133149/
 
 ## Q133149: Cannot Use Manual Feed with Schedule Plus Junior / Pocket Forms
 
+{% raw %}
+
 	Article: Q133149
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -44,3 +46,5 @@ permalink: /kb/133/Q133149/
 	
 	=============================================================================
 	
+
+{% endraw %}

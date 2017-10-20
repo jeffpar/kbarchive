@@ -6,6 +6,8 @@ permalink: /kb/314/Q314814/
 
 ## Q314814: FIX: Error -1073741819 in MTDLL When You Use LIKE in SQL SELECT
 
+{% raw %}
+
 	Article: Q314814
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -145,3 +147,5 @@ permalink: /kb/314/Q314814/
 	
 	=============================================================================
 	
+
+{% endraw %}

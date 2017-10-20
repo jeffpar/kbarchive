@@ -6,6 +6,8 @@ permalink: /kb/132/Q132834/
 
 ## Q132834: Problems with Media Blitz 3.0 Setup
 
+{% raw %}
+
 	Article: Q132834
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -45,3 +47,5 @@ permalink: /kb/132/Q132834/
 	
 	=============================================================================
 	
+
+{% endraw %}

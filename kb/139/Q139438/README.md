@@ -6,6 +6,8 @@ permalink: /kb/139/Q139438/
 
 ## Q139438: PRB: 3D Effect Does Not Appear If Object Is too Small
 
+{% raw %}
+
 	Article: Q139438
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/139/Q139438/
 	
 	=============================================================================
 	
+
+{% endraw %}

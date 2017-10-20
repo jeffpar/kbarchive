@@ -6,6 +6,8 @@ permalink: /kb/147/Q147952/
 
 ## Q147952: Two-Way Communication Using IDispatch in MFC
 
+{% raw %}
+
 	Article: Q147952
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,6.0
@@ -161,3 +163,5 @@ permalink: /kb/147/Q147952/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83132/
 
 ## Q83132: Logitech Mouse Drivers for Windows
 
+{% raw %}
+
 	Article: Q83132
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.03,2.1,2.11,3.0,3.0a,3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/083/Q83132/
 	
 	=============================================================================
 	
+
+{% endraw %}

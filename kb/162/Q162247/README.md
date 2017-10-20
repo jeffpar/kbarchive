@@ -6,6 +6,8 @@ permalink: /kb/162/Q162247/
 
 ## Q162247: PPT: Sample Code to Center a Selection of Objects
 
+{% raw %}
+
 	Article: Q162247
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -186,3 +188,5 @@ permalink: /kb/162/Q162247/
 	
 	=============================================================================
 	
+
+{% endraw %}

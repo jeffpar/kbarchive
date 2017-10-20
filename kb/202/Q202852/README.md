@@ -6,6 +6,8 @@ permalink: /kb/202/Q202852/
 
 ## Q202852: FIX: SQLGetData Returns Extra Character For StrLen_or_IndPtr
 
+{% raw %}
+
 	Article: Q202852
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03,Build 2.73.7356
@@ -116,3 +118,5 @@ permalink: /kb/202/Q202852/
 	
 	=============================================================================
 	
+
+{% endraw %}

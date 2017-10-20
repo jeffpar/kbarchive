@@ -6,6 +6,8 @@ permalink: /kb/107/Q107123/
 
 ## Q107123: Removing SNA Links from Control Panel
 
+{% raw %}
+
 	Article: Q107123
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -68,3 +70,5 @@ permalink: /kb/107/Q107123/
 	
 	=============================================================================
 	
+
+{% endraw %}

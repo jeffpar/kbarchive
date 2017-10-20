@@ -6,6 +6,8 @@ permalink: /kb/259/Q259058/
 
 ## Q259058: Encarta Online Deluxe: Free Subscription for Encarta Users
 
+{% raw %}
+
 	Article: Q259058
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/259/Q259058/
 	
 	=============================================================================
 	
+
+{% endraw %}

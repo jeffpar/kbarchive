@@ -6,6 +6,8 @@ permalink: /kb/071/Q71841/
 
 ## Q71841: Divide by Zero Error with Ventura Publisher Version 3.0
 
+{% raw %}
+
 	Article: Q71841
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/071/Q71841/
 	
 	=============================================================================
 	
+
+{% endraw %}

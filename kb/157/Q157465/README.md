@@ -6,6 +6,8 @@ permalink: /kb/157/Q157465/
 
 ## Q157465: WD97: Can't See Field Codes for Some Objects
 
+{% raw %}
+
 	Article: Q157465
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -103,3 +105,5 @@ permalink: /kb/157/Q157465/
 	
 	=============================================================================
 	
+
+{% endraw %}

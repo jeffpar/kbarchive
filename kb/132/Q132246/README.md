@@ -6,6 +6,8 @@ permalink: /kb/132/Q132246/
 
 ## Q132246: Troubleshooting Windows For Workgroups and DHCP
 
+{% raw %}
+
 	Article: Q132246
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -142,3 +144,5 @@ permalink: /kb/132/Q132246/
 	
 	=============================================================================
 	
+
+{% endraw %}

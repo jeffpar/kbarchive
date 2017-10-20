@@ -6,6 +6,8 @@ permalink: /kb/141/Q141882/
 
 ## Q141882: &quot;The Application Cannot Start&quot; When Trying to Start Chat
 
+{% raw %}
+
 	Article: Q141882
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/141/Q141882/
 	
 	=============================================================================
 	
+
+{% endraw %}

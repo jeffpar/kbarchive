@@ -6,6 +6,8 @@ permalink: /kb/297/Q297814/
 
 ## Q297814: BUG: Constant Double Variables in a Type Library Do Not Display
 
+{% raw %}
+
 	Article: Q297814
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -97,3 +99,5 @@ permalink: /kb/297/Q297814/
 	
 	=============================================================================
 	
+
+{% endraw %}

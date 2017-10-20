@@ -6,6 +6,8 @@ permalink: /kb/163/Q163095/
 
 ## Q163095: WD97: Pictures Lost Saving a Web Page in Word
 
+{% raw %}
+
 	Article: Q163095
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/163/Q163095/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135704/
 
 ## Q135704: PC MAPI: Suppressing the Default Logon Dialog Box
 
+{% raw %}
+
 	Article: Q135704
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -71,3 +73,5 @@ permalink: /kb/135/Q135704/
 	
 	=============================================================================
 	
+
+{% endraw %}

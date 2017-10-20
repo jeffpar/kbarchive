@@ -6,6 +6,8 @@ permalink: /kb/197/Q197190/
 
 ## Q197190: BUG: Memory Leak Using UBound or LBound When Returning Array
 
+{% raw %}
+
 	Article: Q197190
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -85,3 +87,5 @@ permalink: /kb/197/Q197190/
 	
 	=============================================================================
 	
+
+{% endraw %}

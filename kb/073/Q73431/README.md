@@ -6,6 +6,8 @@ permalink: /kb/073/Q73431/
 
 ## Q73431: Setup Hangs When Creating Windows Directory
 
+{% raw %}
+
 	Article: Q73431
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -111,3 +113,5 @@ permalink: /kb/073/Q73431/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90896/
 
 ## Q90896: WinLogin Err Msg: &quot;An Error Occurred While Saving Changes...&quot;
 
+{% raw %}
+
 	Article: Q90896
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -85,3 +87,5 @@ permalink: /kb/090/Q90896/
 	
 	=============================================================================
 	
+
+{% endraw %}

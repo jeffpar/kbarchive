@@ -6,6 +6,8 @@ permalink: /kb/256/Q256467/
 
 ## Q256467: XADM: Information Store Doesn't Log Message in Event Log
 
+{% raw %}
+
 	Article: Q256467
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -97,3 +99,5 @@ permalink: /kb/256/Q256467/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66582/
 
 ## Q66582: ASD: Placement Accuracy of Navigational Aids
 
+{% raw %}
+
 	Article: Q66582
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/066/Q66582/
 	
 	=============================================================================
 	
+
+{% endraw %}

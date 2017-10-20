@@ -6,6 +6,8 @@ permalink: /kb/177/Q177652/
 
 ## Q177652: Stop 0x7B During Setup with More Than 1.792 GB of Memory
 
+{% raw %}
+
 	Article: Q177652
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/177/Q177652/
 	
 	=============================================================================
 	
+
+{% endraw %}

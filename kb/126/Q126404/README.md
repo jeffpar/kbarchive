@@ -6,6 +6,8 @@ permalink: /kb/126/Q126404/
 
 ## Q126404: How to Make Auto-Increment Keys in Wizard-Generated Screens
 
+{% raw %}
+
 	Article: Q126404
 	Product(s): Microsoft FoxPro
 	Version(s): 2.60a 3.00 | 2.60a | 2.60a
@@ -234,3 +236,5 @@ permalink: /kb/126/Q126404/
 	
 	=============================================================================
 	
+
+{% endraw %}

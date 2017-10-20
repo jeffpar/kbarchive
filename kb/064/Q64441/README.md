@@ -6,6 +6,8 @@ permalink: /kb/064/Q64441/
 
 ## Q64441: QuickAssembler Doesn't Generate Debug Information
 
+{% raw %}
+
 	Article: Q64441
 	Product(s): See article
 	Version(s): 2.51
@@ -23,3 +25,5 @@ permalink: /kb/064/Q64441/
 	Microsoft has confirmed this to be a problem with version 2.51. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97076/
 
 ## Q97076: PC WRmt: Interrupt Conflicts with LAN Card Installation
 
+{% raw %}
+
 	Article: Q97076
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -77,3 +79,5 @@ permalink: /kb/097/Q97076/
 	
 	=============================================================================
 	
+
+{% endraw %}

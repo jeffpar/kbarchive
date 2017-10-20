@@ -6,6 +6,8 @@ permalink: /kb/129/Q129834/
 
 ## Q129834: Garbled Screen After Installing Extras for Pan Chinese WinNT
 
+{% raw %}
+
 	Article: Q129834
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/129/Q129834/
 	
 	=============================================================================
 	
+
+{% endraw %}

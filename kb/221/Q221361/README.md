@@ -6,6 +6,8 @@ permalink: /kb/221/Q221361/
 
 ## Q221361: XADM: German Exchange Server 5.5 Doc. Contains Incorrect Links
 
+{% raw %}
+
 	Article: Q221361
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -65,3 +67,5 @@ permalink: /kb/221/Q221361/
 	
 	=============================================================================
 	
+
+{% endraw %}

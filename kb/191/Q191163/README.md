@@ -6,6 +6,8 @@ permalink: /kb/191/Q191163/
 
 ## Q191163: XFOR: Non-Delivery Report Returned When Message Includes Several
 
+{% raw %}
+
 	Article: Q191163
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -86,3 +88,5 @@ permalink: /kb/191/Q191163/
 	
 	=============================================================================
 	
+
+{% endraw %}

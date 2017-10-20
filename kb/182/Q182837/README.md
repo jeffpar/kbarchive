@@ -6,6 +6,8 @@ permalink: /kb/182/Q182837/
 
 ## Q182837: WD97: Unsaved Information Lost Printing from OS Shell
 
+{% raw %}
+
 	Article: Q182837
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -170,3 +172,5 @@ permalink: /kb/182/Q182837/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169530/
 
 ## Q169530: WD97: Date/Time Field Doesn't Update to International Version
 
+{% raw %}
+
 	Article: Q169530
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/169/Q169530/
 	
 	=============================================================================
 	
+
+{% endraw %}

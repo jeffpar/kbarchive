@@ -6,6 +6,8 @@ permalink: /kb/277/Q277673/
 
 ## Q277673: Windows NT Backup Software May Have Handle Leak
 
+{% raw %}
+
 	Article: Q277673
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6,4.0 SP6a
@@ -63,3 +65,5 @@ permalink: /kb/277/Q277673/
 	
 	=============================================================================
 	
+
+{% endraw %}

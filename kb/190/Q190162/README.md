@@ -6,6 +6,8 @@ permalink: /kb/190/Q190162/
 
 ## Q190162: Terminal Server and the 2048 Open File Limitation
 
+{% raw %}
+
 	Article: Q190162
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -126,3 +128,5 @@ permalink: /kb/190/Q190162/
 	
 	=============================================================================
 	
+
+{% endraw %}

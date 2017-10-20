@@ -6,6 +6,8 @@ permalink: /kb/309/Q309004/
 
 ## Q309004: Academic Learning Series Microsoft Windows 2000 Professional Com
 
+{% raw %}
+
 	Article: Q309004
 	Product(s): Microsoft Press
 	Version(s): 
@@ -763,3 +765,5 @@ permalink: /kb/309/Q309004/
 	
 	=============================================================================
 	
+
+{% endraw %}

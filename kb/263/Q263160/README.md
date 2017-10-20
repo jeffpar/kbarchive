@@ -6,6 +6,8 @@ permalink: /kb/263/Q263160/
 
 ## Q263160: Allegiance Err Msg: Error Occurred While Setting the LobbyServer
 
+{% raw %}
+
 	Article: Q263160
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -43,3 +45,5 @@ permalink: /kb/263/Q263160/
 	
 	=============================================================================
 	
+
+{% endraw %}

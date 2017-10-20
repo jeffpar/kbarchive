@@ -6,6 +6,8 @@ permalink: /kb/166/Q166826/
 
 ## Q166826: Data Read from ROM PC Card Device May Be Damaged
 
+{% raw %}
+
 	Article: Q166826
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -56,3 +58,5 @@ permalink: /kb/166/Q166826/
 	
 	=============================================================================
 	
+
+{% endraw %}

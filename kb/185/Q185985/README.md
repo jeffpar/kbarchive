@@ -6,6 +6,8 @@ permalink: /kb/185/Q185985/
 
 ## Q185985: Using Index Server to Query and Display META TAG Information
 
+{% raw %}
+
 	Article: Q185985
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0
@@ -121,3 +123,5 @@ permalink: /kb/185/Q185985/
 	
 	=============================================================================
 	
+
+{% endraw %}

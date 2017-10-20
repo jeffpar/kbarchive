@@ -6,6 +6,8 @@ permalink: /kb/125/Q125755/
 
 ## Q125755: Using START to Run Program Information Files (PIFs)
 
+{% raw %}
+
 	Article: Q125755
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/125/Q125755/
 	
 	=============================================================================
 	
+
+{% endraw %}

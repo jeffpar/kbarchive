@@ -6,6 +6,8 @@ permalink: /kb/118/Q118549/
 
 ## Q118549: PRB: PowerStation MS-DOS Apps Do Not Start Under Win32s
 
+{% raw %}
+
 	Article: Q118549
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -49,3 +51,5 @@ permalink: /kb/118/Q118549/
 	
 	=============================================================================
 	
+
+{% endraw %}

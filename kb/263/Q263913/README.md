@@ -6,6 +6,8 @@ permalink: /kb/263/Q263913/
 
 ## Q263913: SMS: Delete Aged Discovery Task Reports Zero Items Deleted
 
+{% raw %}
+
 	Article: Q263913
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -118,3 +120,5 @@ permalink: /kb/263/Q263913/
 	
 	=============================================================================
 	
+
+{% endraw %}

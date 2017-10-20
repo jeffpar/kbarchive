@@ -6,6 +6,8 @@ permalink: /kb/038/Q38269/
 
 ## Q38269: Error C1036 Cannot Open Source Listing File 'filename'
 
+{% raw %}
+
 	Article: Q38269
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -37,3 +39,5 @@ permalink: /kb/038/Q38269/
 	       space.
 	
 	   3.  A read-only file with the given name already exists.
+
+{% endraw %}

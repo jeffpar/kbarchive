@@ -6,6 +6,8 @@ permalink: /kb/296/Q296928/
 
 ## Q296928: FP: Error Message During Database Search with ASP
 
+{% raw %}
+
 	Article: Q296928
 	Product(s): Word Front Page
 	Version(s): (all versions and editions),4.0
@@ -83,3 +85,5 @@ permalink: /kb/296/Q296928/
 	
 	=============================================================================
 	
+
+{% endraw %}

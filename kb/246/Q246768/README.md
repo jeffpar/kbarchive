@@ -6,6 +6,8 @@ permalink: /kb/246/Q246768/
 
 ## Q246768: XCLN: Err Msg: VBScript: Team Folders: 424: There Has Been...
 
+{% raw %}
+
 	Article: Q246768
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -95,3 +97,5 @@ permalink: /kb/246/Q246768/
 	
 	=============================================================================
 	
+
+{% endraw %}

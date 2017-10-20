@@ -6,6 +6,8 @@ permalink: /kb/196/Q196835/
 
 ## Q196835: HOWTO: Override the MFC Default Control Containment
 
+{% raw %}
+
 	Article: Q196835
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -288,3 +290,5 @@ permalink: /kb/196/Q196835/
 	
 	=============================================================================
 	
+
+{% endraw %}

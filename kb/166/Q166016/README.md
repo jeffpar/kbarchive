@@ -6,6 +6,8 @@ permalink: /kb/166/Q166016/
 
 ## Q166016: WD97: Description of Compatibility Tab in Options Dialog Box
 
+{% raw %}
+
 	Article: Q166016
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -265,3 +267,5 @@ permalink: /kb/166/Q166016/
 	
 	=============================================================================
 	
+
+{% endraw %}

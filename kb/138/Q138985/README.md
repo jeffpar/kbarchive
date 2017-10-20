@@ -6,6 +6,8 @@ permalink: /kb/138/Q138985/
 
 ## Q138985: FIX: 'Syntax error in query' with Parameterized LIKE Queries
 
+{% raw %}
+
 	Article: Q138985
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -62,3 +64,5 @@ permalink: /kb/138/Q138985/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/052/Q52091/
 
 ## Q52091: Library Naming Conventions for BASIC PDS 7.00
 
+{% raw %}
+
 	Article: Q52091
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -160,3 +162,5 @@ permalink: /kb/052/Q52091/
 	
 	   Name: OS2.LIB
 	   Description: Used for operating system calls into MS OS/2.
+
+{% endraw %}

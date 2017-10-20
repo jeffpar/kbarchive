@@ -6,6 +6,8 @@ permalink: /kb/103/Q103620/
 
 ## Q103620: Changes to Windows NT Driver Library: Printers
 
+{% raw %}
+
 	Article: Q103620
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5
@@ -69,3 +71,5 @@ permalink: /kb/103/Q103620/
 	
 	=============================================================================
 	
+
+{% endraw %}

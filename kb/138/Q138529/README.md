@@ -6,6 +6,8 @@ permalink: /kb/138/Q138529/
 
 ## Q138529: PRB: Visual Basic 4.0 Does Not Support Color Cursor Files
 
+{% raw %}
+
 	Article: Q138529
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -124,3 +126,5 @@ permalink: /kb/138/Q138529/
 	
 	=============================================================================
 	
+
+{% endraw %}

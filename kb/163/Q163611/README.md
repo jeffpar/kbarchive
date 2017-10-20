@@ -6,6 +6,8 @@ permalink: /kb/163/Q163611/
 
 ## Q163611: PPT: Sample Code to Retrieve the Fonts Used in a Presentation
 
+{% raw %}
+
 	Article: Q163611
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -111,3 +113,5 @@ permalink: /kb/163/Q163611/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105215/
 
 ## Q105215: SMTP: Inbox Date Does Not Match Message Body Date
 
+{% raw %}
+
 	Article: Q105215
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -37,3 +39,5 @@ permalink: /kb/105/Q105215/
 	
 	=============================================================================
 	
+
+{% endraw %}

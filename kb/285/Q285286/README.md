@@ -6,6 +6,8 @@ permalink: /kb/285/Q285286/
 
 ## Q285286: Cannot Access IIS Metabase Through IIS Admin Objects
 
+{% raw %}
+
 	Article: Q285286
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/285/Q285286/
 	
 	=============================================================================
 	
+
+{% endraw %}

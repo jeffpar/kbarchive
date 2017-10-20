@@ -6,6 +6,8 @@ permalink: /kb/153/Q153389/
 
 ## Q153389: Cinemania 96 Update Contents: June 96
 
+{% raw %}
+
 	Article: Q153389
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -44,3 +46,5 @@ permalink: /kb/153/Q153389/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171481/
 
 ## Q171481: FIX: Cannot Set the Enabled Property of an UpDown Control
 
+{% raw %}
+
 	Article: Q171481
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -80,3 +82,5 @@ permalink: /kb/171/Q171481/
 	
 	=============================================================================
 	
+
+{% endraw %}

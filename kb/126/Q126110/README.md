@@ -6,6 +6,8 @@ permalink: /kb/126/Q126110/
 
 ## Q126110: FIX: What's New: Bug Fixes Made in Visual C++ Version 2.1
 
+{% raw %}
+
 	Article: Q126110
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1
@@ -395,3 +397,5 @@ permalink: /kb/126/Q126110/
 	
 	=============================================================================
 	
+
+{% endraw %}

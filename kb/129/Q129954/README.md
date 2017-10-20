@@ -6,6 +6,8 @@ permalink: /kb/129/Q129954/
 
 ## Q129954: DOCERR: ICM_DECOMPRESSEX_QUERY dwParam1 and dwParam2 Incorrect
 
+{% raw %}
+
 	Article: Q129954
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1; :1.1
@@ -57,3 +59,5 @@ permalink: /kb/129/Q129954/
 	
 	=============================================================================
 	
+
+{% endraw %}

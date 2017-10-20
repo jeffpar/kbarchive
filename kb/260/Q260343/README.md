@@ -6,6 +6,8 @@ permalink: /kb/260/Q260343/
 
 ## Q260343: XCON: ContentReturnRequest Field Cannot Be Changed Across a Site
 
+{% raw %}
+
 	Article: Q260343
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -71,3 +73,5 @@ permalink: /kb/260/Q260343/
 	
 	=============================================================================
 	
+
+{% endraw %}

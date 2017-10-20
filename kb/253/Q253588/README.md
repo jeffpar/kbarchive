@@ -6,6 +6,8 @@ permalink: /kb/253/Q253588/
 
 ## Q253588: PRB: OLE Error with Empty or NULL ControlSource with DT Picker
 
+{% raw %}
+
 	Article: Q253588
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -187,3 +189,5 @@ permalink: /kb/253/Q253588/
 	
 	=============================================================================
 	
+
+{% endraw %}

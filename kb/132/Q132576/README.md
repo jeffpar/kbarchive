@@ -6,6 +6,8 @@ permalink: /kb/132/Q132576/
 
 ## Q132576: Compaq Elite Suspend Problems
 
+{% raw %}
+
 	Article: Q132576
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132576/
 	
 	=============================================================================
 	
+
+{% endraw %}

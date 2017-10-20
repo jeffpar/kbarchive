@@ -6,6 +6,8 @@ permalink: /kb/185/Q185475/
 
 ## Q185475: XADM: LDAP Search Returns No Entries For Hidden/Deleted Objects
 
+{% raw %}
+
 	Article: Q185475
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -64,3 +66,5 @@ permalink: /kb/185/Q185475/
 	
 	=============================================================================
 	
+
+{% endraw %}

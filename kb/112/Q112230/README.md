@@ -6,6 +6,8 @@ permalink: /kb/112/Q112230/
 
 ## Q112230: FAX: Err Msg: App for Attached File Could Not Be Found
 
+{% raw %}
+
 	Article: Q112230
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1a; WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/112/Q112230/
 	
 	=============================================================================
 	
+
+{% endraw %}

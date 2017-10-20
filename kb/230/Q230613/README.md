@@ -6,6 +6,8 @@ permalink: /kb/230/Q230613/
 
 ## Q230613: How to Uninstall DCOM 95 Version 1.2
 
+{% raw %}
+
 	Article: Q230613
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -60,3 +62,5 @@ permalink: /kb/230/Q230613/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169632/
 
 ## Q169632: Unattended Err Msg: Setup Was Unable to Create the Following...
 
+{% raw %}
+
 	Article: Q169632
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -131,3 +133,5 @@ permalink: /kb/169/Q169632/
 	
 	=============================================================================
 	
+
+{% endraw %}

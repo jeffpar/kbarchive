@@ -6,6 +6,8 @@ permalink: /kb/191/Q191668/
 
 ## Q191668: DOC: CE Debug Shell Tool Does Not Support Serial Interface
 
+{% raw %}
+
 	Article: Q191668
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/191/Q191668/
 	
 	=============================================================================
 	
+
+{% endraw %}

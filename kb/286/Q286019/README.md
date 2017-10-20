@@ -6,6 +6,8 @@ permalink: /kb/286/Q286019/
 
 ## Q286019: Installing Internet Explorer on Windows NT 4.0 Terminal Server
 
+{% raw %}
+
 	Article: Q286019
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP7,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.0
@@ -134,3 +136,5 @@ permalink: /kb/286/Q286019/
 	
 	=============================================================================
 	
+
+{% endraw %}

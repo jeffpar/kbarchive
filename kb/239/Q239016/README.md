@@ -6,6 +6,8 @@ permalink: /kb/239/Q239016/
 
 ## Q239016: SMS: WBEM May Not Install on Windows 95
 
+{% raw %}
+
 	Article: Q239016
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:2.0
@@ -82,3 +84,5 @@ permalink: /kb/239/Q239016/
 	
 	=============================================================================
 	
+
+{% endraw %}

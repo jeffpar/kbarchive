@@ -6,6 +6,8 @@ permalink: /kb/180/Q180790/
 
 ## Q180790: Print Server Traps or Cannot Load Ppdxxxx.dll on NT3.51-J SP5
 
+{% raw %}
+
 	Article: Q180790
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -55,3 +57,5 @@ permalink: /kb/180/Q180790/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/045/Q45170/
 
 ## Q45170: Using CALL INTERRUPT to Return DOS Version Number
 
+{% raw %}
+
 	Article: Q45170
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -31,3 +33,5 @@ permalink: /kb/045/Q45170/
 	majorver = outregs.ax AND &HFF
 	minorver = (outregs.ax AND &HFF00) / 256
 	PRINT "MS-DOS Version: "; majorver; "."; minorver
+
+{% endraw %}

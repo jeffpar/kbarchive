@@ -6,6 +6,8 @@ permalink: /kb/104/Q104649/
 
 ## Q104649: FIX: Compiler Issues C1001 or Hangs with Missing Closing Brace
 
+{% raw %}
+
 	Article: Q104649
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5
@@ -146,3 +148,5 @@ permalink: /kb/104/Q104649/
 	
 	=============================================================================
 	
+
+{% endraw %}

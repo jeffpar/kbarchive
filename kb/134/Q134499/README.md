@@ -6,6 +6,8 @@ permalink: /kb/134/Q134499/
 
 ## Q134499: Unreadable Font in Info Window in Map Info
 
+{% raw %}
+
 	Article: Q134499
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/134/Q134499/
 	
 	=============================================================================
 	
+
+{% endraw %}

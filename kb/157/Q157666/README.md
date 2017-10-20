@@ -6,6 +6,8 @@ permalink: /kb/157/Q157666/
 
 ## Q157666: WD97: Cannot Open Word 97 Documents in Word 6.0 or 7.0
 
+{% raw %}
+
 	Article: Q157666
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/157/Q157666/
 	
 	=============================================================================
 	
+
+{% endraw %}

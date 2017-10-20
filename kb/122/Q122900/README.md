@@ -6,6 +6,8 @@ permalink: /kb/122/Q122900/
 
 ## Q122900: Can't Use Periods in DNS Host Names
 
+{% raw %}
+
 	Article: Q122900
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.5
@@ -113,3 +115,5 @@ permalink: /kb/122/Q122900/
 	
 	=============================================================================
 	
+
+{% endraw %}

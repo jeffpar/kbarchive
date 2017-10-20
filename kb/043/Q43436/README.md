@@ -6,6 +6,8 @@ permalink: /kb/043/Q43436/
 
 ## Q43436: Accessing Predefined Switches in C-Extension
 
+{% raw %}
+
 	Article: Q43436
 	Product(s): See article
 	Version(s): 1.02   |  1.02
@@ -60,3 +62,5 @@ permalink: /kb/043/Q43436/
 	Do not modify the predefined switches through the switch table. You
 	can change the values of the predefined switches from within an
 	editing session or in TOOLS.INI.
+
+{% endraw %}

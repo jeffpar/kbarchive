@@ -6,6 +6,8 @@ permalink: /kb/157/Q157198/
 
 ## Q157198: WD97: Conversion Wizard Restarts After Clicking Close
 
+{% raw %}
+
 	Article: Q157198
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157198/
 	
 	=============================================================================
 	
+
+{% endraw %}

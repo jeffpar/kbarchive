@@ -6,6 +6,8 @@ permalink: /kb/093/Q93565/
 
 ## Q93565: PC Adm: Err Msg: Error Creating Mailbox
 
+{% raw %}
+
 	Article: Q93565
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/093/Q93565/
 	
 	=============================================================================
 	
+
+{% endraw %}

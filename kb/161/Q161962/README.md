@@ -6,6 +6,8 @@ permalink: /kb/161/Q161962/
 
 ## Q161962: Dr. Watson Error When Imaging for Windows NT Is Opened
 
+{% raw %}
+
 	Article: Q161962
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/161/Q161962/
 	
 	=============================================================================
 	
+
+{% endraw %}

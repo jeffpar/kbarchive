@@ -6,6 +6,8 @@ permalink: /kb/079/Q79871/
 
 ## Q79871: Applications That Run with or Without Pen Extensions
 
+{% raw %}
+
 	Article: Q79871
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -92,3 +94,5 @@ permalink: /kb/079/Q79871/
 	
 	=============================================================================
 	
+
+{% endraw %}

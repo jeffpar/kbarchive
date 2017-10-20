@@ -6,6 +6,8 @@ permalink: /kb/190/Q190537/
 
 ## Q190537: PRB: Adding Active Document to the Office Binder Fails
 
+{% raw %}
+
 	Article: Q190537
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -63,3 +65,5 @@ permalink: /kb/190/Q190537/
 	
 	=============================================================================
 	
+
+{% endraw %}

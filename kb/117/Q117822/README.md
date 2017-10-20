@@ -6,6 +6,8 @@ permalink: /kb/117/Q117822/
 
 ## Q117822: Cinemania: Special and Foreign Characters Change When Copied
 
+{% raw %}
+
 	Article: Q117822
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -50,3 +52,5 @@ permalink: /kb/117/Q117822/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68241/
 
 ## Q68241: Updated Display Driver Required for Hyundai LT-5 Laptop
 
+{% raw %}
+
 	Article: Q68241
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/068/Q68241/
 	
 	=============================================================================
 	
+
+{% endraw %}

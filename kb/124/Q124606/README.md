@@ -6,6 +6,8 @@ permalink: /kb/124/Q124606/
 
 ## Q124606: Fw1125.exe Combines a Browse Window with Get Fields
 
+{% raw %}
+
 	Article: Q124606
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6a
@@ -54,3 +56,5 @@ permalink: /kb/124/Q124606/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240633/
 
 ## Q240633: World Atlas 2000: BACKSPACE Key Opens Previously Opened Web Page
 
+{% raw %}
+
 	Article: Q240633
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -85,3 +87,5 @@ permalink: /kb/240/Q240633/
 	
 	=============================================================================
 	
+
+{% endraw %}

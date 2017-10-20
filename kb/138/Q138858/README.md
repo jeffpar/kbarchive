@@ -6,6 +6,8 @@ permalink: /kb/138/Q138858/
 
 ## Q138858: TN3270 User Session Is Lost Unexpectedly
 
+{% raw %}
+
 	Article: Q138858
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138858/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90205/
 
 ## Q90205: WFWG with NetBEUI Runs Slowly on Large Networks
 
+{% raw %}
+
 	Article: Q90205
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1; :1.0
@@ -49,3 +51,5 @@ permalink: /kb/090/Q90205/
 	
 	=============================================================================
 	
+
+{% endraw %}

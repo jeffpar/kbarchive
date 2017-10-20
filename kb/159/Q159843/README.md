@@ -6,6 +6,8 @@ permalink: /kb/159/Q159843/
 
 ## Q159843: PRB: GPF with MDI Child Form System Menu and Right Arrow Key
 
+{% raw %}
+
 	Article: Q159843
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/159/Q159843/
 	
 	=============================================================================
 	
+
+{% endraw %}

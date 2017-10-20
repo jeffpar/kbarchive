@@ -6,6 +6,8 @@ permalink: /kb/084/Q84889/
 
 ## Q84889: Asymetrix DayBook/ToolBook Issues and Problems/Solutions
 
+{% raw %}
+
 	Article: Q84889
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0
@@ -101,3 +103,5 @@ permalink: /kb/084/Q84889/
 	
 	=============================================================================
 	
+
+{% endraw %}

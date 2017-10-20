@@ -6,6 +6,8 @@ permalink: /kb/140/Q140932/
 
 ## Q140932: XCON: IMC: Resent-from Headers Use Oldest Information
 
+{% raw %}
+
 	Article: Q140932
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/140/Q140932/
 	
 	=============================================================================
 	
+
+{% endraw %}

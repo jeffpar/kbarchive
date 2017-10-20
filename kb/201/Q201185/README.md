@@ -6,6 +6,8 @@ permalink: /kb/201/Q201185/
 
 ## Q201185: Internet Tab Does Not Appear When NetBIOS Name Is 15 Characters
 
+{% raw %}
+
 	Article: Q201185
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -51,3 +53,5 @@ permalink: /kb/201/Q201185/
 	
 	=============================================================================
 	
+
+{% endraw %}

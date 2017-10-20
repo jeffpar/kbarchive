@@ -6,6 +6,8 @@ permalink: /kb/190/Q190670/
 
 ## Q190670: HOWTO: Dynamically Add Controls to a Form with Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q190670
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -168,3 +170,5 @@ permalink: /kb/190/Q190670/
 	
 	=============================================================================
 	
+
+{% endraw %}

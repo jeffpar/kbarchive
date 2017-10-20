@@ -6,6 +6,8 @@ permalink: /kb/102/Q102664/
 
 ## Q102664: FIX: BSCMAKE Fails When Project Contains Only Object Files
 
+{% raw %}
+
 	Article: Q102664
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/102/Q102664/
 	
 	=============================================================================
 	
+
+{% endraw %}

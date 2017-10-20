@@ -6,6 +6,8 @@ permalink: /kb/155/Q155058/
 
 ## Q155058: IIS May Stop Responding after Processing Several Client Queries
 
+{% raw %}
+
 	Article: Q155058
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,1.0c
@@ -57,3 +59,5 @@ permalink: /kb/155/Q155058/
 	
 	=============================================================================
 	
+
+{% endraw %}

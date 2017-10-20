@@ -6,6 +6,8 @@ permalink: /kb/041/Q41373/
 
 ## Q41373: _Setvideomode _ERESCOLOR Only Supports 16 Colors
 
+{% raw %}
+
 	Article: Q41373
 	Product(s): See article
 	Version(s): 5.10
@@ -22,3 +24,5 @@ permalink: /kb/041/Q41373/
 	448, and the "MS-DOS Encyclopedia," Page 1513, the correct number of
 	colors in 640 x 350 EGA is 16 colors. The include file graph.h
 	correctly shows 16 colors.
+
+{% endraw %}

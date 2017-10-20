@@ -6,6 +6,8 @@ permalink: /kb/135/Q135058/
 
 ## Q135058: How to Draw Cubic Bezier Curves in Windows and Win32s
 
+{% raw %}
+
 	Article: Q135058
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:1.3,3.1,95; winnt:
@@ -82,3 +84,5 @@ permalink: /kb/135/Q135058/
 	
 	=============================================================================
 	
+
+{% endraw %}

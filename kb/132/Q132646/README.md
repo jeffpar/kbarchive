@@ -6,6 +6,8 @@ permalink: /kb/132/Q132646/
 
 ## Q132646: Display Corrupted with Full-Screen MS-DOS Warm Undocking
 
+{% raw %}
+
 	Article: Q132646
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/132/Q132646/
 	
 	=============================================================================
 	
+
+{% endraw %}

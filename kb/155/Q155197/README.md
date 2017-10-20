@@ -6,6 +6,8 @@ permalink: /kb/155/Q155197/
 
 ## Q155197: HOWTO: Unattended Setup Parameters for Unattend.txt File
 
+{% raw %}
+
 	Article: Q155197
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -1735,3 +1737,5 @@ permalink: /kb/155/Q155197/
 	
 	=============================================================================
 	
+
+{% endraw %}

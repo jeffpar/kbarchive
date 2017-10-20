@@ -6,6 +6,8 @@ permalink: /kb/228/Q228509/
 
 ## Q228509: XCLN: Meeting Item Cannot Be Opened on Outlook 8.04 Client
 
+{% raw %}
+
 	Article: Q228509
 	Product(s): Microsoft Exchange
 	Version(s): 8.04
@@ -120,3 +122,5 @@ permalink: /kb/228/Q228509/
 	
 	=============================================================================
 	
+
+{% endraw %}

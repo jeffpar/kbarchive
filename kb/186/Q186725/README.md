@@ -6,6 +6,8 @@ permalink: /kb/186/Q186725/
 
 ## Q186725: WD97: Leading Spaces and Tabs Removed with Inserted Database
 
+{% raw %}
+
 	Article: Q186725
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/186/Q186725/
 	
 	=============================================================================
 	
+
+{% endraw %}

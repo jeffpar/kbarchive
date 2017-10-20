@@ -6,6 +6,8 @@ permalink: /kb/282/Q282766/
 
 ## Q282766: SQL Server 2000 Administrator's Pocket Consultant Comments and C
 
+{% raw %}
+
 	Article: Q282766
 	Product(s): Microsoft Press
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/282/Q282766/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139301/
 
 ## Q139301: FIX: C2664 Error w/Property Sheet Component Added to CDocument
 
+{% raw %}
+
 	Article: Q139301
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139301/
 	
 	=============================================================================
 	
+
+{% endraw %}

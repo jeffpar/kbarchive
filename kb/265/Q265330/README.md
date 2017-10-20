@@ -6,6 +6,8 @@ permalink: /kb/265/Q265330/
 
 ## Q265330: XFOR: Message Text from SNADS Received As an Attachment
 
+{% raw %}
+
 	Article: Q265330
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -77,3 +79,5 @@ permalink: /kb/265/Q265330/
 	
 	=============================================================================
 	
+
+{% endraw %}

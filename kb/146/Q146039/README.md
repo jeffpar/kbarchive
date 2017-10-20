@@ -6,6 +6,8 @@ permalink: /kb/146/Q146039/
 
 ## Q146039: Second Time Zone May Display Incorrectly
 
+{% raw %}
+
 	Article: Q146039
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -53,3 +55,5 @@ permalink: /kb/146/Q146039/
 	
 	=============================================================================
 	
+
+{% endraw %}

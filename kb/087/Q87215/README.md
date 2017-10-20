@@ -6,6 +6,8 @@ permalink: /kb/087/Q87215/
 
 ## Q87215: PROFS: Order for Starting Up the Two Sides of the Gateway
 
+{% raw %}
+
 	Article: Q87215
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87215/
 	
 	=============================================================================
 	
+
+{% endraw %}

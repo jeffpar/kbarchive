@@ -6,6 +6,8 @@ permalink: /kb/232/Q232584/
 
 ## Q232584: Zone Err Msg: Failed to Establish Server Connection
 
+{% raw %}
+
 	Article: Q232584
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/232/Q232584/
 	
 	=============================================================================
 	
+
+{% endraw %}

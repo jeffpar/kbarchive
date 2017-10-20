@@ -6,6 +6,8 @@ permalink: /kb/164/Q164528/
 
 ## Q164528: XADM: MTA Conversion Error and NDR
 
+{% raw %}
+
 	Article: Q164528
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -175,3 +177,5 @@ permalink: /kb/164/Q164528/
 	
 	=============================================================================
 	
+
+{% endraw %}

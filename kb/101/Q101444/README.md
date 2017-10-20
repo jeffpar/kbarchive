@@ -6,6 +6,8 @@ permalink: /kb/101/Q101444/
 
 ## Q101444: Mac Wkst: Unable to Access Local Mail File
 
+{% raw %}
+
 	Article: Q101444
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -84,3 +86,5 @@ permalink: /kb/101/Q101444/
 	
 	=============================================================================
 	
+
+{% endraw %}

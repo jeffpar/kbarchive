@@ -6,6 +6,8 @@ permalink: /kb/304/Q304198/
 
 ## Q304198: BUG: IIS 5.1: Icon Does Not Change When You Create an IIS App
 
+{% raw %}
+
 	Article: Q304198
 	Product(s): Internet Information Server
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/304/Q304198/
 	
 	=============================================================================
 	
+
+{% endraw %}

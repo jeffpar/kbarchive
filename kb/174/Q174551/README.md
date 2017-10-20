@@ -6,6 +6,8 @@ permalink: /kb/174/Q174551/
 
 ## Q174551: TCP/IP Advanced Security Option Clears Automatically
 
+{% raw %}
+
 	Article: Q174551
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/174/Q174551/
 	
 	=============================================================================
 	
+
+{% endraw %}

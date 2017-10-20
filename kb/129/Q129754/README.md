@@ -6,6 +6,8 @@ permalink: /kb/129/Q129754/
 
 ## Q129754: How to Remap FoxPro 2.x Connectivity Kit Functions to 3.0
 
+{% raw %}
+
 	Article: Q129754
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -183,3 +185,5 @@ permalink: /kb/129/Q129754/
 	
 	=============================================================================
 	
+
+{% endraw %}

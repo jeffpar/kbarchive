@@ -6,6 +6,8 @@ permalink: /kb/123/Q123423/
 
 ## Q123423: Err Msg: No Domain Server Was Available to Validate Your...
 
+{% raw %}
+
 	Article: Q123423
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/123/Q123423/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131736/
 
 ## Q131736: TCP/IP: Load Balancing vs. Distributed Network Sessions
 
+{% raw %}
+
 	Article: Q131736
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -157,3 +159,5 @@ permalink: /kb/131/Q131736/
 	
 	=============================================================================
 	
+
+{% endraw %}

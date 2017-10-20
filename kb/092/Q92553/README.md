@@ -6,6 +6,8 @@ permalink: /kb/092/Q92553/
 
 ## Q92553: Creating a Combined Ascending and Descending Index
 
+{% raw %}
+
 	Article: Q92553
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:1.02,2.0,2.1,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -86,3 +88,5 @@ permalink: /kb/092/Q92553/
 	
 	=============================================================================
 	
+
+{% endraw %}

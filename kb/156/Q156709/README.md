@@ -6,6 +6,8 @@ permalink: /kb/156/Q156709/
 
 ## Q156709: XCLN: Errors When Trying to Start EFD
 
+{% raw %}
+
 	Article: Q156709
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -159,3 +161,5 @@ permalink: /kb/156/Q156709/
 	
 	=============================================================================
 	
+
+{% endraw %}

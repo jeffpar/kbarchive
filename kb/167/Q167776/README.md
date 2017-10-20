@@ -6,6 +6,8 @@ permalink: /kb/167/Q167776/
 
 ## Q167776: Certain Bitmap Fonts May Cause STOP 0x1E Message
 
+{% raw %}
+
 	Article: Q167776
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/167/Q167776/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147872/
 
 ## Q147872: Unable to Lease IP Address from DHCP Server
 
+{% raw %}
+
 	Article: Q147872
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/147/Q147872/
 	
 	=============================================================================
 	
+
+{% endraw %}

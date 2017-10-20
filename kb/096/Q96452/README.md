@@ -6,6 +6,8 @@ permalink: /kb/096/Q96452/
 
 ## Q96452: Mac Wkst: PowerBooks Will Not Sleep or Spin Down
 
+{% raw %}
+
 	Article: Q96452
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -51,3 +53,5 @@ permalink: /kb/096/Q96452/
 	
 	=============================================================================
 	
+
+{% endraw %}

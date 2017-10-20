@@ -6,6 +6,8 @@ permalink: /kb/240/Q240374/
 
 ## Q240374: Explorer Reverts New Folder Name to &quot;New Folder&quot; in SFM Volume
 
+{% raw %}
+
 	Article: Q240374
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
@@ -59,3 +61,5 @@ permalink: /kb/240/Q240374/
 	
 	=============================================================================
 	
+
+{% endraw %}

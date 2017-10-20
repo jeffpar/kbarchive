@@ -6,6 +6,8 @@ permalink: /kb/091/Q91724/
 
 ## Q91724: Save Changes Dialog Box: Changes Not Saved
 
+{% raw %}
+
 	Article: Q91724
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -70,3 +72,5 @@ permalink: /kb/091/Q91724/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184191/
 
 ## Q184191: Inserted CardBus PCMCIA Adapter Not Rebalanced Properly
 
+{% raw %}
+
 	Article: Q184191
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/184/Q184191/
 	
 	=============================================================================
 	
+
+{% endraw %}

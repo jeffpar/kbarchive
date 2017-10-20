@@ -6,6 +6,8 @@ permalink: /kb/071/Q71715/
 
 ## Q71715: MS-DOS: Unable to Change Volume Label
 
+{% raw %}
+
 	Article: Q71715
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -57,3 +59,5 @@ permalink: /kb/071/Q71715/
 	
 	=============================================================================
 	
+
+{% endraw %}

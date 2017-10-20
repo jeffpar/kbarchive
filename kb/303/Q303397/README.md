@@ -6,6 +6,8 @@ permalink: /kb/303/Q303397/
 
 ## Q303397: Cannot View Subcollections on Child Sites
 
+{% raw %}
+
 	Article: Q303397
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -89,3 +91,5 @@ permalink: /kb/303/Q303397/
 	
 	=============================================================================
 	
+
+{% endraw %}

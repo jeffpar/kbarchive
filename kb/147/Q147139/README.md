@@ -6,6 +6,8 @@ permalink: /kb/147/Q147139/
 
 ## Q147139: Mac Encarta 96 Encyclopedia: General Readme Contents
 
+{% raw %}
+
 	Article: Q147139
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -415,3 +417,5 @@ permalink: /kb/147/Q147139/
 	
 	=============================================================================
 	
+
+{% endraw %}

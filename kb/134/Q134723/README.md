@@ -6,6 +6,8 @@ permalink: /kb/134/Q134723/
 
 ## Q134723: PRB: Datasource Name Too Long Error as Establishing Connection
 
+{% raw %}
+
 	Article: Q134723
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -68,3 +70,5 @@ permalink: /kb/134/Q134723/
 	
 	=============================================================================
 	
+
+{% endraw %}

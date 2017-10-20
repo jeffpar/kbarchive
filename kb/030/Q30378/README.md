@@ -6,6 +6,8 @@ permalink: /kb/030/Q30378/
 
 ## Q30378: Structure Prototype Allowed to be Referenced in Program
 
+{% raw %}
+
 	Article: Q30378
 	Product(s): See article
 	Version(s): 5.10
@@ -39,3 +41,5 @@ permalink: /kb/030/Q30378/
 	
 	   Microsoft is researching this problem and will post new information
 	as it becomes available.
+
+{% endraw %}

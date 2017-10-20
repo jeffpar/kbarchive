@@ -6,6 +6,8 @@ permalink: /kb/171/Q171769/
 
 ## Q171769: Restoring a User Profile On a Windows NT Workstation or Server
 
+{% raw %}
+
 	Article: Q171769
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -124,3 +126,5 @@ permalink: /kb/171/Q171769/
 	
 	=============================================================================
 	
+
+{% endraw %}

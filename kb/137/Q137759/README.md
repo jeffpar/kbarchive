@@ -6,6 +6,8 @@ permalink: /kb/137/Q137759/
 
 ## Q137759: List of Reference Words Used by AutoClipArt
 
+{% raw %}
+
 	Article: Q137759
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -176,3 +178,5 @@ permalink: /kb/137/Q137759/
 	
 	=============================================================================
 	
+
+{% endraw %}

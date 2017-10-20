@@ -6,6 +6,8 @@ permalink: /kb/326/Q326880/
 
 ## Q326880: Programming Microsoft Windows with Microsoft Visual Basic.NET (C
 
+{% raw %}
+
 	Article: Q326880
 	Product(s): Microsoft Press
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/326/Q326880/
 	
 	=============================================================================
 	
+
+{% endraw %}

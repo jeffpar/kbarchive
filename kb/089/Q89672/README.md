@@ -6,6 +6,8 @@ permalink: /kb/089/Q89672/
 
 ## Q89672: Importing Dates from a Text File into FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q89672
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -38,3 +40,5 @@ permalink: /kb/089/Q89672/
 	
 	=============================================================================
 	
+
+{% endraw %}

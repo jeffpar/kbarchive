@@ -6,6 +6,8 @@ permalink: /kb/196/Q196184/
 
 ## Q196184: XADM: Regenerate Offline Address Books after the Move
 
+{% raw %}
+
 	Article: Q196184
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/196/Q196184/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266523/
 
 ## Q266523: Encarta 2001: Cannot Move Away from Web Center Screen
 
+{% raw %}
+
 	Article: Q266523
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/266/Q266523/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156591/
 
 ## Q156591: STL Sample for deque::begin and deque::end Functions
 
+{% raw %}
+
 	Article: Q156591
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/156/Q156591/
 	
 	=============================================================================
 	
+
+{% endraw %}

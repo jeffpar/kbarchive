@@ -6,6 +6,8 @@ permalink: /kb/125/Q125759/
 
 ## Q125759: Windows NT3.5 Improves Performance with Intel Neptune PCI Chip
 
+{% raw %}
+
 	Article: Q125759
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/125/Q125759/
 	
 	=============================================================================
 	
+
+{% endraw %}

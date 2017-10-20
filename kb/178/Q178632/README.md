@@ -6,6 +6,8 @@ permalink: /kb/178/Q178632/
 
 ## Q178632: Cannot Start Windows 95 After You Run DirectX Setup
 
+{% raw %}
+
 	Article: Q178632
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -165,3 +167,5 @@ permalink: /kb/178/Q178632/
 	
 	=============================================================================
 	
+
+{% endraw %}

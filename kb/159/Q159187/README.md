@@ -6,6 +6,8 @@ permalink: /kb/159/Q159187/
 
 ## Q159187: XADM: French Extended Chars in Read Receipts Convert Incorrectly
 
+{% raw %}
+
 	Article: Q159187
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159187/
 	
 	=============================================================================
 	
+
+{% endraw %}

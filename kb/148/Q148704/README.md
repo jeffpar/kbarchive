@@ -6,6 +6,8 @@ permalink: /kb/148/Q148704/
 
 ## Q148704: FIX: Template Keyword Can't Be Used Inside Class Declarations
 
+{% raw %}
+
 	Article: Q148704
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -86,3 +88,5 @@ permalink: /kb/148/Q148704/
 	
 	=============================================================================
 	
+
+{% endraw %}

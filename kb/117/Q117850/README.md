@@ -6,6 +6,8 @@ permalink: /kb/117/Q117850/
 
 ## Q117850: MS-DOS 6.22 COUNTRY.TXT File
 
+{% raw %}
+
 	Article: Q117850
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -308,3 +310,5 @@ permalink: /kb/117/Q117850/
 	
 	=============================================================================
 	
+
+{% endraw %}

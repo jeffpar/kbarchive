@@ -6,6 +6,8 @@ permalink: /kb/241/Q241338/
 
 ## Q241338: Windows NT Lan Manager 3 Logon Prevents Other Logon Activity
 
+{% raw %}
+
 	Article: Q241338
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -137,3 +139,5 @@ permalink: /kb/241/Q241338/
 	
 	=============================================================================
 	
+
+{% endraw %}

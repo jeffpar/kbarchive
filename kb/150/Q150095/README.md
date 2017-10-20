@@ -6,6 +6,8 @@ permalink: /kb/150/Q150095/
 
 ## Q150095: XADM: NDRs After Removing X.400 Address From DL
 
+{% raw %}
+
 	Article: Q150095
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/150/Q150095/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132626/
 
 ## Q132626: Mouse Pointer Disappears with S3 Video Adapter
 
+{% raw %}
+
 	Article: Q132626
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/132/Q132626/
 	
 	=============================================================================
 	
+
+{% endraw %}

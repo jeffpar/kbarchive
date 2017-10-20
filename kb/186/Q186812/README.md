@@ -6,6 +6,8 @@ permalink: /kb/186/Q186812/
 
 ## Q186812: PRB: Error Message: 403.7 Forbidden: Client Certificate Required
 
+{% raw %}
+
 	Article: Q186812
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -84,3 +86,5 @@ permalink: /kb/186/Q186812/
 	
 	=============================================================================
 	
+
+{% endraw %}

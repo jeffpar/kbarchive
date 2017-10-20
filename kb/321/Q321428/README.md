@@ -6,6 +6,8 @@ permalink: /kb/321/Q321428/
 
 ## Q321428: How to Change the Server Role with Host Integration Server 2000
 
+{% raw %}
+
 	Article: Q321428
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/321/Q321428/
 	
 	=============================================================================
 	
+
+{% endraw %}

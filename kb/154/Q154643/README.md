@@ -6,6 +6,8 @@ permalink: /kb/154/Q154643/
 
 ## Q154643: INFO: Desktop Drivers Not Meant For Access or DAO
 
+{% raw %}
+
 	Article: Q154643
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.40
@@ -103,3 +105,5 @@ permalink: /kb/154/Q154643/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190350/
 
 ## Q190350: HOWTO: Create Top-Level Splash Screen with No TaskBar Icon
 
+{% raw %}
+
 	Article: Q190350
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -176,3 +178,5 @@ permalink: /kb/190/Q190350/
 	
 	=============================================================================
 	
+
+{% endraw %}

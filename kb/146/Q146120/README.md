@@ -6,6 +6,8 @@ permalink: /kb/146/Q146120/
 
 ## Q146120: HOWTO: Use an OLE Control as an Automation Server
 
+{% raw %}
+
 	Article: Q146120
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/146/Q146120/
 	
 	=============================================================================
 	
+
+{% endraw %}

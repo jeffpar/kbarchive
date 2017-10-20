@@ -6,6 +6,8 @@ permalink: /kb/148/Q148911/
 
 ## Q148911: Cinemania 96/Music ErrMsg: Cinemania Could Not Find the Files
 
+{% raw %}
+
 	Article: Q148911
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -114,3 +116,5 @@ permalink: /kb/148/Q148911/
 	
 	=============================================================================
 	
+
+{% endraw %}

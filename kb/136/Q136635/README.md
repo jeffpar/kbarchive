@@ -6,6 +6,8 @@ permalink: /kb/136/Q136635/
 
 ## Q136635: TCP/IP-32 3.11b Client Fails to Obtain Reserved DHCP Address
 
+{% raw %}
+
 	Article: Q136635
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11b,3.5
@@ -56,3 +58,5 @@ permalink: /kb/136/Q136635/
 	
 	=============================================================================
 	
+
+{% endraw %}

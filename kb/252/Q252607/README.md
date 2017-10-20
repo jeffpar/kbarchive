@@ -6,6 +6,8 @@ permalink: /kb/252/Q252607/
 
 ## Q252607: PRB: CopyFile Doesn't Work for Printer DeviceName w/Spaces on NT
 
+{% raw %}
+
 	Article: Q252607
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/252/Q252607/
 	
 	=============================================================================
 	
+
+{% endraw %}

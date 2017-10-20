@@ -6,6 +6,8 @@ permalink: /kb/161/Q161614/
 
 ## Q161614: WD97: Unexpected Results with Find Object w/o Forward Argument
 
+{% raw %}
+
 	Article: Q161614
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -176,3 +178,5 @@ permalink: /kb/161/Q161614/
 	
 	=============================================================================
 	
+
+{% endraw %}

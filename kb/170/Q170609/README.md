@@ -6,6 +6,8 @@ permalink: /kb/170/Q170609/
 
 ## Q170609: FIX: PUTFILE Command to Drive &quot;A&quot; Without a Floppy Causes Fault
 
+{% raw %}
+
 	Article: Q170609
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -139,3 +141,5 @@ permalink: /kb/170/Q170609/
 	
 	=============================================================================
 	
+
+{% endraw %}

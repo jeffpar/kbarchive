@@ -6,6 +6,8 @@ permalink: /kb/175/Q175307/
 
 ## Q175307: SRVINFO Causes Dr. Watson Application Error
 
+{% raw %}
+
 	Article: Q175307
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -105,3 +107,5 @@ permalink: /kb/175/Q175307/
 	
 	=============================================================================
 	
+
+{% endraw %}

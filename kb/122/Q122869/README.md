@@ -6,6 +6,8 @@ permalink: /kb/122/Q122869/
 
 ## Q122869: 16-Bit Applications That Ship with Windows 95
 
+{% raw %}
+
 	Article: Q122869
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/122/Q122869/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138225/
 
 ## Q138225: Unable to Start Windows NT 3.51 MCP Assessments Exams
 
+{% raw %}
+
 	Article: Q138225
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138225/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127918/
 
 ## Q127918: PC Adm: Doc Err: Modifying Template Information
 
+{% raw %}
+
 	Article: Q127918
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -65,3 +67,5 @@ permalink: /kb/127/Q127918/
 	
 	=============================================================================
 	
+
+{% endraw %}

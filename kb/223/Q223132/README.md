@@ -6,6 +6,8 @@ permalink: /kb/223/Q223132/
 
 ## Q223132: FIX: Error Loading Repository Add-In in Non-English VB6 Versions
 
+{% raw %}
+
 	Article: Q223132
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -101,3 +103,5 @@ permalink: /kb/223/Q223132/
 	
 	=============================================================================
 	
+
+{% endraw %}

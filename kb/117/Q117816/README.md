@@ -6,6 +6,8 @@ permalink: /kb/117/Q117816/
 
 ## Q117816: MacCinemania 94: Cannot Pause and Restart Sounds
 
+{% raw %}
+
 	Article: Q117816
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -41,3 +43,5 @@ permalink: /kb/117/Q117816/
 	
 	=============================================================================
 	
+
+{% endraw %}

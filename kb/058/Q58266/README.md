@@ -6,6 +6,8 @@ permalink: /kb/058/Q58266/
 
 ## Q58266: EMM386.SYS Does Not Work on IBM PC-DOS 4.0
 
+{% raw %}
+
 	Article: Q58266
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/058/Q58266/
 	
 	=============================================================================
 	
+
+{% endraw %}

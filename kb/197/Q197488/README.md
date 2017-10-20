@@ -6,6 +6,8 @@ permalink: /kb/197/Q197488/
 
 ## Q197488: Access Denied When Synchronizing or Promoting a BDC
 
+{% raw %}
+
 	Article: Q197488
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/197/Q197488/
 	
 	=============================================================================
 	
+
+{% endraw %}

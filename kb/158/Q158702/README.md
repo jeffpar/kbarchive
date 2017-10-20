@@ -6,6 +6,8 @@ permalink: /kb/158/Q158702/
 
 ## Q158702: INFO: How ANALYZE Passes Work
 
+{% raw %}
+
 	Article: Q158702
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/158/Q158702/
 	
 	=============================================================================
 	
+
+{% endraw %}

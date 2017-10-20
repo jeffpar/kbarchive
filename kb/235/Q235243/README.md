@@ -6,6 +6,8 @@ permalink: /kb/235/Q235243/
 
 ## Q235243: Microsoft Office 2000 Step By Step Interactive Comments and Corr
 
+{% raw %}
+
 	Article: Q235243
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/235/Q235243/
 	
 	=============================================================================
 	
+
+{% endraw %}

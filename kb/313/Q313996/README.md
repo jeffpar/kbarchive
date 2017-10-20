@@ -6,6 +6,8 @@ permalink: /kb/313/Q313996/
 
 ## Q313996: A+ Certification Readiness Review Comments and Corrections
 
+{% raw %}
+
 	Article: Q313996
 	Product(s): Microsoft Press
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/313/Q313996/
 	
 	=============================================================================
 	
+
+{% endraw %}

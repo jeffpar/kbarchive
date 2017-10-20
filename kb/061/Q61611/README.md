@@ -6,6 +6,8 @@ permalink: /kb/061/Q61611/
 
 ## Q61611: CodeView Does Not Reset Initial Graphics Mode on Exit
 
+{% raw %}
+
 	Article: Q61611
 	Product(s): See article
 	Version(s): 2.x 3.00    | 2.x 3.00
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61611/
 	CodeView was loaded will be reset because CodeView has separate
 	swappable video memory pages to hold the output screen as well as the
 	CodeView screen.
+
+{% endraw %}

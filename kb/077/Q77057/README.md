@@ -6,6 +6,8 @@ permalink: /kb/077/Q77057/
 
 ## Q77057: Increasing the Foreground Application's Keyboard Response
 
+{% raw %}
+
 	Article: Q77057
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -68,3 +70,5 @@ permalink: /kb/077/Q77057/
 	
 	=============================================================================
 	
+
+{% endraw %}

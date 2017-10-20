@@ -6,6 +6,8 @@ permalink: /kb/261/Q261281/
 
 ## Q261281: XCCC: Unable to Authenticate When Changing Conference Resource
 
+{% raw %}
+
 	Article: Q261281
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -140,3 +142,5 @@ permalink: /kb/261/Q261281/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119413/
 
 ## Q119413: PC Mac: Err Msg: Application 'Unknown' Has Unexpectedly Quit
 
+{% raw %}
+
 	Article: Q119413
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -65,3 +67,5 @@ permalink: /kb/119/Q119413/
 	
 	=============================================================================
 	
+
+{% endraw %}

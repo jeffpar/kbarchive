@@ -6,6 +6,8 @@ permalink: /kb/253/Q253677/
 
 ## Q253677: BUG: VBCE Application Terminates When Replacing ImageList Image
 
+{% raw %}
+
 	Article: Q253677
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/253/Q253677/
 	
 	=============================================================================
 	
+
+{% endraw %}

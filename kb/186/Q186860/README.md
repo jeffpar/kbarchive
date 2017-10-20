@@ -6,6 +6,8 @@ permalink: /kb/186/Q186860/
 
 ## Q186860: Update Memory Settings and Add Exec Paper Size to Sharp Models
 
+{% raw %}
+
 	Article: Q186860
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/186/Q186860/
 	
 	=============================================================================
 	
+
+{% endraw %}

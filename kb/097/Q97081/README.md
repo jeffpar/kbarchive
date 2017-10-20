@@ -6,6 +6,8 @@ permalink: /kb/097/Q97081/
 
 ## Q97081: PC WRmt: Mail Remote for Windows Cannot Receive Incoming Calls
 
+{% raw %}
+
 	Article: Q97081
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -47,3 +49,5 @@ permalink: /kb/097/Q97081/
 	
 	=============================================================================
 	
+
+{% endraw %}

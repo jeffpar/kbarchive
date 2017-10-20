@@ -6,6 +6,8 @@ permalink: /kb/010/Q10837/
 
 ## Q10837: INFO: A Discussion of Windows Fonts
 
+{% raw %}
+
 	Article: Q10837
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -139,3 +141,5 @@ permalink: /kb/010/Q10837/
 	
 	=============================================================================
 	
+
+{% endraw %}

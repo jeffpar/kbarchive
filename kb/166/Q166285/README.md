@@ -6,6 +6,8 @@ permalink: /kb/166/Q166285/
 
 ## Q166285: FIX: MSDEV Crashes When Converting VC++ 4.0 Projects
 
+{% raw %}
+
 	Article: Q166285
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -177,3 +179,5 @@ permalink: /kb/166/Q166285/
 	
 	=============================================================================
 	
+
+{% endraw %}

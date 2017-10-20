@@ -6,6 +6,8 @@ permalink: /kb/201/Q201540/
 
 ## Q201540: HOWTO: Adding Tooltips to ATL ActiveX Controls
 
+{% raw %}
+
 	Article: Q201540
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,3.0,5.0,6.0
@@ -298,3 +300,5 @@ permalink: /kb/201/Q201540/
 	
 	=============================================================================
 	
+
+{% endraw %}

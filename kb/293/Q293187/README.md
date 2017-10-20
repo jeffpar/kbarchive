@@ -6,6 +6,8 @@ permalink: /kb/293/Q293187/
 
 ## Q293187: SMS: Clients Look for Old Packages on Client Access Points
 
+{% raw %}
+
 	Article: Q293187
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -91,3 +93,5 @@ permalink: /kb/293/Q293187/
 	
 	=============================================================================
 	
+
+{% endraw %}

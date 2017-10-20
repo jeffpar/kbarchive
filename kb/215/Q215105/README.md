@@ -6,6 +6,8 @@ permalink: /kb/215/Q215105/
 
 ## Q215105: SMS: 16-Bit Files Remain After Upgrading to 32-Bit Windows 95/98
 
+{% raw %}
+
 	Article: Q215105
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -154,3 +156,5 @@ permalink: /kb/215/Q215105/
 	
 	=============================================================================
 	
+
+{% endraw %}

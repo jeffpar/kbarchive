@@ -6,6 +6,8 @@ permalink: /kb/162/Q162559/
 
 ## Q162559: WD97: Error Message: &quot;...Password-Protected with an Encryption S
 
+{% raw %}
+
 	Article: Q162559
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/162/Q162559/
 	
 	=============================================================================
 	
+
+{% endraw %}

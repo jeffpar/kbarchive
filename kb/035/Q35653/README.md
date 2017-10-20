@@ -6,6 +6,8 @@ permalink: /kb/035/Q35653/
 
 ## Q35653: ERDEV &amp; ERDEV&#36; &quot;Advanced Feature&quot; Error in OS/2 Protected Mode
 
+{% raw %}
+
 	Article: Q35653
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -29,3 +31,5 @@ permalink: /kb/035/Q35653/
 	
 	I% = ERDEV
 	A$ = ERDEV$
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156365/
 
 ## Q156365: Hidden Shares Are Not Available After Using System Policy Editor
 
+{% raw %}
+
 	Article: Q156365
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -110,3 +112,5 @@ permalink: /kb/156/Q156365/
 	
 	=============================================================================
 	
+
+{% endraw %}

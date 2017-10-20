@@ -6,6 +6,8 @@ permalink: /kb/130/Q130437/
 
 ## Q130437: The Macintosh Hierarchical File System (HFS)
 
+{% raw %}
+
 	Article: Q130437
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -392,3 +394,5 @@ permalink: /kb/130/Q130437/
 	
 	=============================================================================
 	
+
+{% endraw %}

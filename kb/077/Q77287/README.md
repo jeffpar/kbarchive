@@ -6,6 +6,8 @@ permalink: /kb/077/Q77287/
 
 ## Q77287: GlbEdit.exe Raises Text Size Limit for Edit Controls
 
+{% raw %}
+
 	Article: Q77287
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -66,3 +68,5 @@ permalink: /kb/077/Q77287/
 	
 	=============================================================================
 	
+
+{% endraw %}

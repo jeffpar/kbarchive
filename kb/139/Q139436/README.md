@@ -6,6 +6,8 @@ permalink: /kb/139/Q139436/
 
 ## Q139436: Scheduled Tasks Reported as Complete as Soon as Started
 
+{% raw %}
+
 	Article: Q139436
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139436/
 	
 	=============================================================================
 	
+
+{% endraw %}

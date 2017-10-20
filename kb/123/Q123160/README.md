@@ -6,6 +6,8 @@ permalink: /kb/123/Q123160/
 
 ## Q123160: FIX: Conditional Breakpoint Doesn't Stop in Recursive Function
 
+{% raw %}
+
 	Article: Q123160
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -100,3 +102,5 @@ permalink: /kb/123/Q123160/
 	
 	=============================================================================
 	
+
+{% endraw %}

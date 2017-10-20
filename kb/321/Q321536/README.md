@@ -6,6 +6,8 @@ permalink: /kb/321/Q321536/
 
 ## Q321536: FIX: Applications Using OLE DB Provider for VSAM Stop Responding
 
+{% raw %}
+
 	Article: Q321536
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -114,3 +116,5 @@ permalink: /kb/321/Q321536/
 	
 	=============================================================================
 	
+
+{% endraw %}

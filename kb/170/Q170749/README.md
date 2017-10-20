@@ -6,6 +6,8 @@ permalink: /kb/170/Q170749/
 
 ## Q170749: INFO: What Window Position Values in Some INI Variables Mean
 
+{% raw %}
+
 	Article: Q170749
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/170/Q170749/
 	
 	=============================================================================
 	
+
+{% endraw %}

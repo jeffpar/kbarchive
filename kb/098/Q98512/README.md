@@ -6,6 +6,8 @@ permalink: /kb/098/Q98512/
 
 ## Q98512: DoubleSpace User Interface Text Not Visible on Plasma Display
 
+{% raw %}
+
 	Article: Q98512
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -142,3 +144,5 @@ permalink: /kb/098/Q98512/
 	
 	=============================================================================
 	
+
+{% endraw %}

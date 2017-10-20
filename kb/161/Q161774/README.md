@@ -6,6 +6,8 @@ permalink: /kb/161/Q161774/
 
 ## Q161774: Snalink.exe (SNADLC/802.2) Access Violation in Sbpa4snd()
 
+{% raw %}
+
 	Article: Q161774
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -100,3 +102,5 @@ permalink: /kb/161/Q161774/
 	
 	=============================================================================
 	
+
+{% endraw %}

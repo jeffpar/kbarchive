@@ -6,6 +6,8 @@ permalink: /kb/141/Q141304/
 
 ## Q141304: Oopintro.exe - Intro to Object Oriented Programming
 
+{% raw %}
+
 	Article: Q141304
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/141/Q141304/
 	
 	=============================================================================
 	
+
+{% endraw %}

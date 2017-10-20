@@ -6,6 +6,8 @@ permalink: /kb/161/Q161236/
 
 ## Q161236: Startnet.bat Not Removed with NetWare Workstation Shell 4.0
 
+{% raw %}
+
 	Article: Q161236
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -47,3 +49,5 @@ permalink: /kb/161/Q161236/
 	
 	=============================================================================
 	
+
+{% endraw %}

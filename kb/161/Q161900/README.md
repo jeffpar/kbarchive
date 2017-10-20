@@ -6,6 +6,8 @@ permalink: /kb/161/Q161900/
 
 ## Q161900: FIX: Clicking from ListBox on Form to Command Window Gives GPF
 
+{% raw %}
+
 	Article: Q161900
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -99,3 +101,5 @@ permalink: /kb/161/Q161900/
 	
 	=============================================================================
 	
+
+{% endraw %}

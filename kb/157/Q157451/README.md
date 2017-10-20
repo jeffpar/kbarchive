@@ -6,6 +6,8 @@ permalink: /kb/157/Q157451/
 
 ## Q157451: No Driver for Cirrus Logic PBXGB-AA Adapter for DEC Alpha
 
+{% raw %}
+
 	Article: Q157451
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/157/Q157451/
 	
 	=============================================================================
 	
+
+{% endraw %}

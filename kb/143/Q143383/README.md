@@ -6,6 +6,8 @@ permalink: /kb/143/Q143383/
 
 ## Q143383: XCLN: Double-Clicking Expansion Indicator Selects Folder
 
+{% raw %}
+
 	Article: Q143383
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -39,3 +41,5 @@ permalink: /kb/143/Q143383/
 	
 	=============================================================================
 	
+
+{% endraw %}

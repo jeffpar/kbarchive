@@ -6,6 +6,8 @@ permalink: /kb/153/Q153291/
 
 ## Q153291: BUG: Wizards Fail on Secure Microsoft Access Database
 
+{% raw %}
+
 	Article: Q153291
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153291/
 	
 	=============================================================================
 	
+
+{% endraw %}

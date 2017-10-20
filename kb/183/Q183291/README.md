@@ -6,6 +6,8 @@ permalink: /kb/183/Q183291/
 
 ## Q183291: XFOR: Exchange Client Receives Black and White Bitmap
 
+{% raw %}
+
 	Article: Q183291
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5,8.03
@@ -103,3 +105,5 @@ permalink: /kb/183/Q183291/
 	
 	=============================================================================
 	
+
+{% endraw %}

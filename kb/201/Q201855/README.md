@@ -6,6 +6,8 @@ permalink: /kb/201/Q201855/
 
 ## Q201855: SMS: Dll.log on Client Does Not Report Date/Time on Error Messag
 
+{% raw %}
+
 	Article: Q201855
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -58,3 +60,5 @@ permalink: /kb/201/Q201855/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157047/
 
 ## Q157047: HOWTO: Use the FetchAsNeeded Property in Visual FoxPro 5.0
 
+{% raw %}
+
 	Article: Q157047
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/157/Q157047/
 	
 	=============================================================================
 	
+
+{% endraw %}

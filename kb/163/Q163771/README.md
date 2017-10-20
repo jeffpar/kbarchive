@@ -6,6 +6,8 @@ permalink: /kb/163/Q163771/
 
 ## Q163771: Text Printed with White Background with Matrox Video Drivers
 
+{% raw %}
+
 	Article: Q163771
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/163/Q163771/
 	
 	=============================================================================
 	
+
+{% endraw %}

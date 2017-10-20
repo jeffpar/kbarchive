@@ -6,6 +6,8 @@ permalink: /kb/140/Q140297/
 
 ## Q140297: DOC: SendUpdates also Applies to Cursors from Local Views
 
+{% raw %}
+
 	Article: Q140297
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,6.0
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140297/
 	
 	=============================================================================
 	
+
+{% endraw %}

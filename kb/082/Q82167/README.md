@@ -6,6 +6,8 @@ permalink: /kb/082/Q82167/
 
 ## Q82167: INFO: DeviceCapabilities(DC_BINNAMES) Data Format
 
+{% raw %}
+
 	Article: Q82167
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/082/Q82167/
 	
 	=============================================================================
 	
+
+{% endraw %}

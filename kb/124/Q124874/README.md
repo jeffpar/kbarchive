@@ -6,6 +6,8 @@ permalink: /kb/124/Q124874/
 
 ## Q124874: STOP Message 0x0A Running Performance Monitor on NEC 3360
 
+{% raw %}
+
 	Article: Q124874
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -120,3 +122,5 @@ permalink: /kb/124/Q124874/
 	
 	=============================================================================
 	
+
+{% endraw %}

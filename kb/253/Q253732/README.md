@@ -6,6 +6,8 @@ permalink: /kb/253/Q253732/
 
 ## Q253732: HOWTO: Use FoxPro and MSXML to Return Information About XML Doc
 
+{% raw %}
+
 	Article: Q253732
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.6,3.0,6.0
@@ -150,3 +152,5 @@ permalink: /kb/253/Q253732/
 	
 	=============================================================================
 	
+
+{% endraw %}

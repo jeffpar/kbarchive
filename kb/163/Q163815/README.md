@@ -6,6 +6,8 @@ permalink: /kb/163/Q163815/
 
 ## Q163815: NTBACKUP Reports Verify Errors on Files in Mac Volume After SP5
 
+{% raw %}
+
 	Article: Q163815
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP5,4.0
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163815/
 	
 	=============================================================================
 	
+
+{% endraw %}

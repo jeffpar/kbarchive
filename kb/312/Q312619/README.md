@@ -6,6 +6,8 @@ permalink: /kb/312/Q312619/
 
 ## Q312619: MSN Explorer Not Recognizing New Hotmail Folder Or Folders
 
+{% raw %}
+
 	Article: Q312619
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/312/Q312619/
 	
 	=============================================================================
 	
+
+{% endraw %}

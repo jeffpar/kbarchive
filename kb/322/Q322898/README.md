@@ -6,6 +6,8 @@ permalink: /kb/322/Q322898/
 
 ## Q322898: Advanced Local Maps Use a Different Name Format in SFU 3.0
 
+{% raw %}
+
 	Article: Q322898
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0
@@ -79,3 +81,5 @@ permalink: /kb/322/Q322898/
 	
 	=============================================================================
 	
+
+{% endraw %}

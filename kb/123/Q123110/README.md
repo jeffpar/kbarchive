@@ -6,6 +6,8 @@ permalink: /kb/123/Q123110/
 
 ## Q123110: Err Msg: Unknown Firmware Error with Archive 5580 Tape Drive
 
+{% raw %}
+
 	Article: Q123110
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/123/Q123110/
 	
 	=============================================================================
 	
+
+{% endraw %}

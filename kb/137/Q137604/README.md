@@ -6,6 +6,8 @@ permalink: /kb/137/Q137604/
 
 ## Q137604: How to Convert SQL Datetime Column to a Date in a Remote View
 
+{% raw %}
+
 	Article: Q137604
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/137/Q137604/
 	
 	=============================================================================
 	
+
+{% endraw %}

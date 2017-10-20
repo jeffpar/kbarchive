@@ -6,6 +6,8 @@ permalink: /kb/072/Q72706/
 
 ## Q72706: DOCERR: Encoding for LTR Instruction Is Incorrect
 
+{% raw %}
+
 	Article: Q72706
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b
@@ -72,3 +74,5 @@ permalink: /kb/072/Q72706/
 	
 	=============================================================================
 	
+
+{% endraw %}

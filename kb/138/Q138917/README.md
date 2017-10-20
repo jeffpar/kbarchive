@@ -6,6 +6,8 @@ permalink: /kb/138/Q138917/
 
 ## Q138917: How to Use the Query Designer to Send Output to a Text File
 
+{% raw %}
+
 	Article: Q138917
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/138/Q138917/
 	
 	=============================================================================
 	
+
+{% endraw %}

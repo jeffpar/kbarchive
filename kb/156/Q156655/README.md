@@ -6,6 +6,8 @@ permalink: /kb/156/Q156655/
 
 ## Q156655: Memory Leak and STOP Screens Using Intermediate NDIS Drivers
 
+{% raw %}
+
 	Article: Q156655
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/156/Q156655/
 	
 	=============================================================================
 	
+
+{% endraw %}

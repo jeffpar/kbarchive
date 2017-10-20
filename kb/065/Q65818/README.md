@@ -6,6 +6,8 @@ permalink: /kb/065/Q65818/
 
 ## Q65818: Inline Assembly Incorrectly Accesses Far Labels
 
+{% raw %}
+
 	Article: Q65818
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -39,3 +41,5 @@ permalink: /kb/065/Q65818/
 	
 	This program was extracted from the larger example program ALARM.C,
 	which is accessible through online help.
+
+{% endraw %}

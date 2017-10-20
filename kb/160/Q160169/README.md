@@ -6,6 +6,8 @@ permalink: /kb/160/Q160169/
 
 ## Q160169: PRB: Cannot Connect Data Control to a Password Protected MDB
 
+{% raw %}
+
 	Article: Q160169
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -113,3 +115,5 @@ permalink: /kb/160/Q160169/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238184/
 
 ## Q238184: Err Msg: &quot;Transport Driver Error...&quot; with Citrix Client
 
+{% raw %}
+
 	Article: Q238184
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -93,3 +95,5 @@ permalink: /kb/238/Q238184/
 	
 	=============================================================================
 	
+
+{% endraw %}

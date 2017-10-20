@@ -6,6 +6,8 @@ permalink: /kb/031/Q31516/
 
 ## Q31516: MASM 5.10 EXT.DOC: Replace - Edits Character in File
 
+{% raw %}
+
 	Article: Q31516
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -44,3 +46,5 @@ permalink: /kb/031/Q31516/
 	LINE y;
 	PFILE pFile;
 	flagType fInsert;
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/299/Q299644/
 
 ## Q299644: Address Bar Has Long Query String Upon Return from Login Server
 
+{% raw %}
+
 	Article: Q299644
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -63,3 +65,5 @@ permalink: /kb/299/Q299644/
 	
 	=============================================================================
 	
+
+{% endraw %}

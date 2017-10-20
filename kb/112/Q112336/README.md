@@ -6,6 +6,8 @@ permalink: /kb/112/Q112336/
 
 ## Q112336: FIX: &quot;fatal error U1073: don't know how to make
 
+{% raw %}
+
 	Article: Q112336
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -90,3 +92,5 @@ permalink: /kb/112/Q112336/
 	
 	=============================================================================
 	
+
+{% endraw %}

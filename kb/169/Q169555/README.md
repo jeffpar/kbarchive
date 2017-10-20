@@ -6,6 +6,8 @@ permalink: /kb/169/Q169555/
 
 ## Q169555: SMS: Audit16 Fails If Username in Sms.ini Is Too Long
 
+{% raw %}
+
 	Article: Q169555
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -48,3 +50,5 @@ permalink: /kb/169/Q169555/
 	
 	=============================================================================
 	
+
+{% endraw %}

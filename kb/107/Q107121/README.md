@@ -6,6 +6,8 @@ permalink: /kb/107/Q107121/
 
 ## Q107121: Operator Information Area Indicators for 3270
 
+{% raw %}
+
 	Article: Q107121
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,2.11 SP1,3.0,4.0
@@ -144,3 +146,5 @@ permalink: /kb/107/Q107121/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103788/
 
 ## Q103788: INFO: Creating a Modeless Dialog Box with MFC Libraries
 
+{% raw %}
+
 	Article: Q103788
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -119,3 +121,5 @@ permalink: /kb/103/Q103788/
 	
 	=============================================================================
 	
+
+{% endraw %}

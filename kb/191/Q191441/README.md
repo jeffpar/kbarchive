@@ -6,6 +6,8 @@ permalink: /kb/191/Q191441/
 
 ## Q191441: Systems Management Server 1.2 Service Pack 4 Fixlist
 
+{% raw %}
+
 	Article: Q191441
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP4
@@ -202,3 +204,5 @@ permalink: /kb/191/Q191441/
 	
 	=============================================================================
 	
+
+{% endraw %}

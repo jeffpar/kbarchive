@@ -6,6 +6,8 @@ permalink: /kb/201/Q201314/
 
 ## Q201314: XFOR: Exchange Internet Mail Pickup Directory Usage
 
+{% raw %}
+
 	Article: Q201314
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -66,3 +68,5 @@ permalink: /kb/201/Q201314/
 	
 	=============================================================================
 	
+
+{% endraw %}

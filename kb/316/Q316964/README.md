@@ -6,6 +6,8 @@ permalink: /kb/316/Q316964/
 
 ## Q316964: INFO: How to Obtain the Latest Visual FoxPro for Windows 7.0 SP
 
+{% raw %}
+
 	Article: Q316964
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0 SP1
@@ -77,3 +79,5 @@ permalink: /kb/316/Q316964/
 	
 	=============================================================================
 	
+
+{% endraw %}

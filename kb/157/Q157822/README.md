@@ -6,6 +6,8 @@ permalink: /kb/157/Q157822/
 
 ## Q157822: XCLN: ErrMsg &quot;An extension failed to initialize...&quot;
 
+{% raw %}
+
 	Article: Q157822
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/157/Q157822/
 	
 	=============================================================================
 	
+
+{% endraw %}

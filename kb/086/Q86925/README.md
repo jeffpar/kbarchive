@@ -6,6 +6,8 @@ permalink: /kb/086/Q86925/
 
 ## Q86925: DOC: Region Functions Documented Incorrectly
 
+{% raw %}
+
 	Article: Q86925
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/086/Q86925/
 	
 	=============================================================================
 	
+
+{% endraw %}

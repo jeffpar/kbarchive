@@ -6,6 +6,8 @@ permalink: /kb/167/Q167806/
 
 ## Q167806: Explanation of Advanced Options in WINS Manager
 
+{% raw %}
+
 	Article: Q167806
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -107,3 +109,5 @@ permalink: /kb/167/Q167806/
 	
 	=============================================================================
 	
+
+{% endraw %}

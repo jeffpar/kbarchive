@@ -6,6 +6,8 @@ permalink: /kb/140/Q140781/
 
 ## Q140781: How Systems Management Server Detects a Windows Client
 
+{% raw %}
+
 	Article: Q140781
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -99,3 +101,5 @@ permalink: /kb/140/Q140781/
 	
 	=============================================================================
 	
+
+{% endraw %}

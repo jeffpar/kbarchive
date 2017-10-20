@@ -6,6 +6,8 @@ permalink: /kb/028/Q28050/
 
 ## Q28050: QuickBASIC Hangs Using User-Defined Record Greater Than 64K
 
+{% raw %}
+
 	Article: Q28050
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -43,3 +45,5 @@ permalink: /kb/028/Q28050/
 	array larger than 64K (which requires the /AH option), it is also
 	advisable to make the record-array element size a multiple (of any
 	power of 2) that terminates exactly on 64K boundaries.
+
+{% endraw %}

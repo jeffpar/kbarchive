@@ -6,6 +6,8 @@ permalink: /kb/314/Q314285/
 
 ## Q314285: Microsoft Visual Basic .NET Step by Step Comments and Correction
 
+{% raw %}
+
 	Article: Q314285
 	Product(s): Microsoft Press
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/314/Q314285/
 	
 	=============================================================================
 	
+
+{% endraw %}

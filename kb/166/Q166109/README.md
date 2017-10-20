@@ -6,6 +6,8 @@ permalink: /kb/166/Q166109/
 
 ## Q166109: FIX: Template Friend Function Causes Compiler Error C2248
 
+{% raw %}
+
 	Article: Q166109
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -105,3 +107,5 @@ permalink: /kb/166/Q166109/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161961/
 
 ## Q161961: Display Problems, Errors, or Computer Locks When Starting Game
 
+{% raw %}
+
 	Article: Q161961
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0,3.0
@@ -186,3 +188,5 @@ permalink: /kb/161/Q161961/
 	
 	=============================================================================
 	
+
+{% endraw %}

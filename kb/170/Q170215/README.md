@@ -6,6 +6,8 @@ permalink: /kb/170/Q170215/
 
 ## Q170215: XCON: Message Text Word-Wrap Broken in MS Exchange 5.0
 
+{% raw %}
+
 	Article: Q170215
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -52,3 +54,5 @@ permalink: /kb/170/Q170215/
 	
 	=============================================================================
 	
+
+{% endraw %}

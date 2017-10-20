@@ -6,6 +6,8 @@ permalink: /kb/027/Q27301/
 
 ## Q27301: Passing BASIC User-Defined Type to C by Far Reference
 
+{% raw %}
+
 	Article: Q27301
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -69,3 +71,5 @@ permalink: /kb/027/Q27301/
 	Record.A = 128
 	Record.B = 02-02-1988
 	Record.C = 39.599998
+
+{% endraw %}

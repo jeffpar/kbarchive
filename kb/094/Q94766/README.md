@@ -6,6 +6,8 @@ permalink: /kb/094/Q94766/
 
 ## Q94766: Workstation Not Showing Status w/Print Mgr Minimized on Server
 
+{% raw %}
+
 	Article: Q94766
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/094/Q94766/
 	
 	=============================================================================
 	
+
+{% endraw %}

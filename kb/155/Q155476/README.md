@@ -6,6 +6,8 @@ permalink: /kb/155/Q155476/
 
 ## Q155476: PPT7: Lines on Handouts Page Vary in Thickness When Printed
 
+{% raw %}
+
 	Article: Q155476
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -64,3 +66,5 @@ permalink: /kb/155/Q155476/
 	
 	=============================================================================
 	
+
+{% endraw %}

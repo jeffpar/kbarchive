@@ -6,6 +6,8 @@ permalink: /kb/304/Q304487/
 
 ## Q304487: MSReader: Installation Process Stops Responding at 100 Percent
 
+{% raw %}
+
 	Article: Q304487
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -90,3 +92,5 @@ permalink: /kb/304/Q304487/
 	
 	=============================================================================
 	
+
+{% endraw %}

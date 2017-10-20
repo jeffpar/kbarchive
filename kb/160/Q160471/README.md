@@ -6,6 +6,8 @@ permalink: /kb/160/Q160471/
 
 ## Q160471: Incorrect Documentation on WINS Database Backup Interval
 
+{% raw %}
+
 	Article: Q160471
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/160/Q160471/
 	
 	=============================================================================
 	
+
+{% endraw %}

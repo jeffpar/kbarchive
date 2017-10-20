@@ -6,6 +6,8 @@ permalink: /kb/198/Q198520/
 
 ## Q198520: BUG: ATL OLE DB Provider Fails When Called from SQL 7.0 Query
 
+{% raw %}
+
 	Article: Q198520
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0,7.0
@@ -147,3 +149,5 @@ permalink: /kb/198/Q198520/
 	
 	=============================================================================
 	
+
+{% endraw %}

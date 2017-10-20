@@ -6,6 +6,8 @@ permalink: /kb/079/Q79845/
 
 ## Q79845: INFO: Old Style (K&amp;R) Declarations Are Not Supported in C++
 
+{% raw %}
+
 	Article: Q79845
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0
@@ -65,3 +67,5 @@ permalink: /kb/079/Q79845/
 	
 	=============================================================================
 	
+
+{% endraw %}

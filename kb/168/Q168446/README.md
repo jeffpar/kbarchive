@@ -6,6 +6,8 @@ permalink: /kb/168/Q168446/
 
 ## Q168446: WD97: Word 2.0 Templates Such as Letblock, Memo2, Not Supported
 
+{% raw %}
+
 	Article: Q168446
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/168/Q168446/
 	
 	=============================================================================
 	
+
+{% endraw %}

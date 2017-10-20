@@ -6,6 +6,8 @@ permalink: /kb/164/Q164158/
 
 ## Q164158: OpenGL Diffuse Settings Revert to Default
 
+{% raw %}
+
 	Article: Q164158
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/164/Q164158/
 	
 	=============================================================================
 	
+
+{% endraw %}

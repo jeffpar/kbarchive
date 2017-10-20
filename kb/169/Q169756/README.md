@@ -6,6 +6,8 @@ permalink: /kb/169/Q169756/
 
 ## Q169756: XFOR: Using the LinkAge Log Browser for Troubleshooting
 
+{% raw %}
+
 	Article: Q169756
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/169/Q169756/
 	
 	=============================================================================
 	
+
+{% endraw %}

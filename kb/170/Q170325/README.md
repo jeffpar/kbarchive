@@ -6,6 +6,8 @@ permalink: /kb/170/Q170325/
 
 ## Q170325: Cannot Update Existing Drivers in OSR2
 
+{% raw %}
+
 	Article: Q170325
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -61,3 +63,5 @@ permalink: /kb/170/Q170325/
 	
 	=============================================================================
 	
+
+{% endraw %}

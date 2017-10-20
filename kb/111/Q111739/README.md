@@ -6,6 +6,8 @@ permalink: /kb/111/Q111739/
 
 ## Q111739: Strange Errors Occur with Resize on DoubleSpace CVF
 
+{% raw %}
+
 	Article: Q111739
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -95,3 +97,5 @@ permalink: /kb/111/Q111739/
 	
 	=============================================================================
 	
+
+{% endraw %}

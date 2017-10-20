@@ -6,6 +6,8 @@ permalink: /kb/087/Q87416/
 
 ## Q87416: PC DB: More MBG Files Than Local Postoffice Users
 
+{% raw %}
+
 	Article: Q87416
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -51,3 +53,5 @@ permalink: /kb/087/Q87416/
 	
 	=============================================================================
 	
+
+{% endraw %}

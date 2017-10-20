@@ -6,6 +6,8 @@ permalink: /kb/058/Q58023/
 
 ## Q58023: Multidimensional Limit for Undeclared (Non-DIMmed) Arrays
 
+{% raw %}
+
 	Article: Q58023
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -93,3 +95,5 @@ permalink: /kb/058/Q58023/
 	
 	5. "Microsoft BASIC Compiler 6.0: BASIC Language Reference" for
 	   Versions 6.00 and 6.00b
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77262/
 
 ## Q77262: Incorrect Date on Vendex Headstart XT Computer
 
+{% raw %}
+
 	Article: Q77262
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -50,3 +52,5 @@ permalink: /kb/077/Q77262/
 	
 	=============================================================================
 	
+
+{% endraw %}

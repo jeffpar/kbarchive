@@ -6,6 +6,8 @@ permalink: /kb/133/Q133373/
 
 ## Q133373: Maximum Number of Undos Is More Than Specified
 
+{% raw %}
+
 	Article: Q133373
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -57,3 +59,5 @@ permalink: /kb/133/Q133373/
 	
 	=============================================================================
 	
+
+{% endraw %}

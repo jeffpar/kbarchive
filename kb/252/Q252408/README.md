@@ -6,6 +6,8 @@ permalink: /kb/252/Q252408/
 
 ## Q252408: Unable to Shut Down the W3SVC Service Properly
 
+{% raw %}
+
 	Article: Q252408
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -138,3 +140,5 @@ permalink: /kb/252/Q252408/
 	
 	=============================================================================
 	
+
+{% endraw %}

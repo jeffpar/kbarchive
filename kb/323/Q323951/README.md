@@ -6,6 +6,8 @@ permalink: /kb/323/Q323951/
 
 ## Q323951: Dungeon Siege: How to Transfer a Character from Trial Version
 
+{% raw %}
+
 	Article: Q323951
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/323/Q323951/
 	
 	=============================================================================
 	
+
+{% endraw %}

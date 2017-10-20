@@ -6,6 +6,8 @@ permalink: /kb/128/Q128517/
 
 ## Q128517: MS-DOS-Based Game Plays No Sound or Shuts Down
 
+{% raw %}
+
 	Article: Q128517
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -73,3 +75,5 @@ permalink: /kb/128/Q128517/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269547/
 
 ## Q269547: SMS: Software Metering Licenses Increase Across Server
 
+{% raw %}
+
 	Article: Q269547
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -63,3 +65,5 @@ permalink: /kb/269/Q269547/
 	
 	=============================================================================
 	
+
+{% endraw %}

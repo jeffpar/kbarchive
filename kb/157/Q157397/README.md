@@ -6,6 +6,8 @@ permalink: /kb/157/Q157397/
 
 ## Q157397: WD97: Can't Access Form Properties With Frame Control
 
+{% raw %}
+
 	Article: Q157397
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/157/Q157397/
 	
 	=============================================================================
 	
+
+{% endraw %}

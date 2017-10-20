@@ -6,6 +6,8 @@ permalink: /kb/179/Q179930/
 
 ## Q179930: XCLN: Exchange Help Starts Outlook Help File
 
+{% raw %}
+
 	Article: Q179930
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; MACINTOSH:8.0; WINDOWS:4.0,5.0,8.0
@@ -63,3 +65,5 @@ permalink: /kb/179/Q179930/
 	
 	=============================================================================
 	
+
+{% endraw %}

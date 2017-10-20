@@ -6,6 +6,8 @@ permalink: /kb/146/Q146684/
 
 ## Q146684: XCON: Administrator Cannot Adjust the Filenames of Attachments
 
+{% raw %}
+
 	Article: Q146684
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/146/Q146684/
 	
 	=============================================================================
 	
+
+{% endraw %}

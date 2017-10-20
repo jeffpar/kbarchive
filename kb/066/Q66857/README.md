@@ -6,6 +6,8 @@ permalink: /kb/066/Q66857/
 
 ## Q66857: Windows Entertainment Pack Taipei Screen Cannot Be Sized
 
+{% raw %}
+
 	Article: Q66857
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/066/Q66857/
 	
 	=============================================================================
 	
+
+{% endraw %}

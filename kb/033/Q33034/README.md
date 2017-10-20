@@ -6,6 +6,8 @@ permalink: /kb/033/Q33034/
 
 ## Q33034: How to Trap CTRL+BREAK, CTRL+C on Standard &amp; Enhanced Keyboard
 
+{% raw %}
+
 	Article: Q33034
 	Product(s): See article
 	Version(s): 2.00 2.10 3.00 4.00 4.00b 4.50
@@ -73,3 +75,5 @@ permalink: /kb/033/Q33034/
 	ctrlctrap:
 	    PRINT "CONTROL+C Trapped"
 	    RETURN
+
+{% endraw %}

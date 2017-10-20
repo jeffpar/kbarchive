@@ -6,6 +6,8 @@ permalink: /kb/194/Q194618/
 
 ## Q194618: INFO: Fast Get Only Works When Compare = Checksum
 
+{% raw %}
+
 	Article: Q194618
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/194/Q194618/
 	
 	=============================================================================
 	
+
+{% endraw %}

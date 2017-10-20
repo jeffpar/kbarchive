@@ -6,6 +6,8 @@ permalink: /kb/044/Q44358/
 
 ## Q44358: SMALLERR.OBJ Makes Smaller .EXE in QuickBASIC 4.50 and BC 6.00
 
+{% raw %}
+
 	Article: Q44358
 	Product(s): See article
 	Version(s): 4.50
@@ -37,3 +39,5 @@ permalink: /kb/044/Q44358/
 	Microsoft QuickBASIC Versions 4.00 and 4.00b were not shipped with a
 	SMALLERR.OBJ file. QuickBASIC Versions 1.00, 1.01, 1.02, 2.00, 2.01,
 	and 3.00 were shipped with a SMALLERR.OBJ.
+
+{% endraw %}

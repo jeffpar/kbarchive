@@ -6,6 +6,8 @@ permalink: /kb/149/Q149704/
 
 ## Q149704: Browsing Shared Folders w/ IBM CA/400v3r1 Shows Local Drive
 
+{% raw %}
+
 	Article: Q149704
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,3.0
@@ -66,3 +68,5 @@ permalink: /kb/149/Q149704/
 	
 	=============================================================================
 	
+
+{% endraw %}

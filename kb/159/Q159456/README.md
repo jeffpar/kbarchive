@@ -6,6 +6,8 @@ permalink: /kb/159/Q159456/
 
 ## Q159456: Using IOMEGA Zip IDE Insider under Windows NT
 
+{% raw %}
+
 	Article: Q159456
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/159/Q159456/
 	
 	=============================================================================
 	
+
+{% endraw %}

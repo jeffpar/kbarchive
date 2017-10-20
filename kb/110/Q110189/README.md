@@ -6,6 +6,8 @@ permalink: /kb/110/Q110189/
 
 ## Q110189: Joystick Doesn't Work with Media Vision Card
 
+{% raw %}
+
 	Article: Q110189
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -58,3 +60,5 @@ permalink: /kb/110/Q110189/
 	
 	=============================================================================
 	
+
+{% endraw %}

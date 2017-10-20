@@ -6,6 +6,8 @@ permalink: /kb/157/Q157359/
 
 ## Q157359: FIX: Resize Event Automatically Called in SubClassed PageFrame
 
+{% raw %}
+
 	Article: Q157359
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -84,3 +86,5 @@ permalink: /kb/157/Q157359/
 	
 	=============================================================================
 	
+
+{% endraw %}

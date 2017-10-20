@@ -6,6 +6,8 @@ permalink: /kb/189/Q189900/
 
 ## Q189900: PRB: HyperLink Object Does Not Support Moving to FILE: URL
 
+{% raw %}
+
 	Article: Q189900
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -66,3 +68,5 @@ permalink: /kb/189/Q189900/
 	
 	=============================================================================
 	
+
+{% endraw %}

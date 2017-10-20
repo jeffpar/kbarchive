@@ -6,6 +6,8 @@ permalink: /kb/160/Q160161/
 
 ## Q160161: FIX: SPACE BAR+ARROW KEY Causes GPF When Unloading Form
 
+{% raw %}
+
 	Article: Q160161
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -85,3 +87,5 @@ permalink: /kb/160/Q160161/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159275/
 
 ## Q159275: TN3270E DATA-TYPE Field with a Value of 0x08
 
+{% raw %}
+
 	Article: Q159275
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -90,3 +92,5 @@ permalink: /kb/159/Q159275/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317425/
 
 ## Q317425: FIX: Exception Error With Two Successive INDEX ON Commands
 
+{% raw %}
+
 	Article: Q317425
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0,7.0
@@ -80,3 +82,5 @@ permalink: /kb/317/Q317425/
 	
 	=============================================================================
 	
+
+{% endraw %}

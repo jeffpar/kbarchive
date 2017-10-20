@@ -6,6 +6,8 @@ permalink: /kb/172/Q172470/
 
 ## Q172470: Zero-Length RU Causes Subsequent Jobs to Stop
 
+{% raw %}
+
 	Article: Q172470
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -179,3 +181,5 @@ permalink: /kb/172/Q172470/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130011/
 
 ## Q130011: DEC DE422 Network Adapter Not Listed
 
+{% raw %}
+
 	Article: Q130011
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -50,3 +52,5 @@ permalink: /kb/130/Q130011/
 	
 	=============================================================================
 	
+
+{% endraw %}

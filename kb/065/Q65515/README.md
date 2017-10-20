@@ -6,6 +6,8 @@ permalink: /kb/065/Q65515/
 
 ## Q65515: BASIC OS/2 Routines to Replace UIASM.ASM for UI ToolBox
 
+{% raw %}
+
 	Article: Q65515
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -208,3 +210,5 @@ permalink: /kb/065/Q65515/
 	                                 VideoHandle%   )
 	    Next i%
 	END SUB
+
+{% endraw %}

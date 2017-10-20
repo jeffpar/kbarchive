@@ -6,6 +6,8 @@ permalink: /kb/043/Q43186/
 
 ## Q43186: Mac Srv: Creating a Group of Users/Groups
 
+{% raw %}
+
 	Article: Q43186
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/043/Q43186/
 	
 	=============================================================================
 	
+
+{% endraw %}

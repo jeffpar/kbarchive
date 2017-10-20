@@ -6,6 +6,8 @@ permalink: /kb/112/Q112513/
 
 ## Q112513: BUG: SQL Server ODBC Driver Removes Entry From WIN.INI
 
+{% raw %}
+
 	Article: Q112513
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/112/Q112513/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196605/
 
 ## Q196605: LU-LU Test Tool Generates Invalid Event 96
 
+{% raw %}
+
 	Article: Q196605
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -73,3 +75,5 @@ permalink: /kb/196/Q196605/
 	
 	=============================================================================
 	
+
+{% endraw %}

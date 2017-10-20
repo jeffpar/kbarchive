@@ -6,6 +6,8 @@ permalink: /kb/293/Q293780/
 
 ## Q293780: Type-Ahead Disabled in Upgrading to SNA Server 4.0 SP3 or Later
 
+{% raw %}
+
 	Article: Q293780
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -137,3 +139,5 @@ permalink: /kb/293/Q293780/
 	
 	=============================================================================
 	
+
+{% endraw %}

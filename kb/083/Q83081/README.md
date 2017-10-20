@@ -6,6 +6,8 @@ permalink: /kb/083/Q83081/
 
 ## Q83081: INFO: Endl Flushes the cout Buffer Immediately Upon Execution
 
+{% raw %}
+
 	Article: Q83081
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/083/Q83081/
 	
 	=============================================================================
 	
+
+{% endraw %}

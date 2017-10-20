@@ -6,6 +6,8 @@ permalink: /kb/096/Q96017/
 
 ## Q96017: PROFS: Receive Command Drops the &quot;&#36;&quot; on Download
 
+{% raw %}
+
 	Article: Q96017
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.3
@@ -46,3 +48,5 @@ permalink: /kb/096/Q96017/
 	
 	=============================================================================
 	
+
+{% endraw %}

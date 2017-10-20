@@ -6,6 +6,8 @@ permalink: /kb/081/Q81335/
 
 ## Q81335: Code Demonstrates Multiple Instance DLL
 
+{% raw %}
+
 	Article: Q81335
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -111,3 +113,5 @@ permalink: /kb/081/Q81335/
 	
 	=============================================================================
 	
+
+{% endraw %}

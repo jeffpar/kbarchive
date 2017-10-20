@@ -6,6 +6,8 @@ permalink: /kb/148/Q148892/
 
 ## Q148892: BUG: SourceSafe File Not Found Error When VB Deletes .FRX File
 
+{% raw %}
+
 	Article: Q148892
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/148/Q148892/
 	
 	=============================================================================
 	
+
+{% endraw %}

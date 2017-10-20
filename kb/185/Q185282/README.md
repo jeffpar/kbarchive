@@ -6,6 +6,8 @@ permalink: /kb/185/Q185282/
 
 ## Q185282: PRB: CRichEditView, AppWizard View-Based Apps and Compound Files
 
+{% raw %}
+
 	Article: Q185282
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -123,3 +125,5 @@ permalink: /kb/185/Q185282/
 	
 	=============================================================================
 	
+
+{% endraw %}

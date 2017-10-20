@@ -6,6 +6,8 @@ permalink: /kb/132/Q132084/
 
 ## Q132084: NMAKE 1.4 on Windows 95 Won't Stop on Errors
 
+{% raw %}
+
 	Article: Q132084
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.5,1.51,1.52
@@ -76,3 +78,5 @@ permalink: /kb/132/Q132084/
 	
 	=============================================================================
 	
+
+{% endraw %}

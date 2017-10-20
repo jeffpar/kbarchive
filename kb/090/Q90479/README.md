@@ -6,6 +6,8 @@ permalink: /kb/090/Q90479/
 
 ## Q90479: PC DOS: Err Msg: No Users Defined in Personal Address List
 
+{% raw %}
+
 	Article: Q90479
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/090/Q90479/
 	
 	=============================================================================
 	
+
+{% endraw %}

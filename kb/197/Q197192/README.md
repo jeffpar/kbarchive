@@ -6,6 +6,8 @@ permalink: /kb/197/Q197192/
 
 ## Q197192: HOWTO: Find the Full Path of an Executable Given the Extension
 
+{% raw %}
+
 	Article: Q197192
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -124,3 +126,5 @@ permalink: /kb/197/Q197192/
 	
 	=============================================================================
 	
+
+{% endraw %}

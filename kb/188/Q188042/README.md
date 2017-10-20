@@ -6,6 +6,8 @@ permalink: /kb/188/Q188042/
 
 ## Q188042: SMS: Logon Servers Are Flooded with .sni Files
 
+{% raw %}
+
 	Article: Q188042
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -131,3 +133,5 @@ permalink: /kb/188/Q188042/
 	
 	=============================================================================
 	
+
+{% endraw %}

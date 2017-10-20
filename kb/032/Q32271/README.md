@@ -6,6 +6,8 @@ permalink: /kb/032/Q32271/
 
 ## Q32271: Passing Element of FIELDed Array to Subprogram UnFIELDs Array
 
+{% raw %}
+
 	Article: Q32271
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -121,3 +123,5 @@ permalink: /kb/032/Q32271/
 	   DDDDDDDD
 	   EEEEEEEE
 	   FFFFFFFF
+
+{% endraw %}

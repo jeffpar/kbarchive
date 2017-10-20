@@ -6,6 +6,8 @@ permalink: /kb/230/Q230594/
 
 ## Q230594: XWEB: Errors Inserting Attachments Using Outlook Web Access
 
+{% raw %}
+
 	Article: Q230594
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -97,3 +99,5 @@ permalink: /kb/230/Q230594/
 	
 	=============================================================================
 	
+
+{% endraw %}

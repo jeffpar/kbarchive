@@ -6,6 +6,8 @@ permalink: /kb/139/Q139627/
 
 ## Q139627: How to Manually Remove Systems Management Server
 
+{% raw %}
+
 	Article: Q139627
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -89,3 +91,5 @@ permalink: /kb/139/Q139627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85340/
 
 ## Q85340: FAX: Role of the Fax Board and Software
 
+{% raw %}
+
 	Article: Q85340
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/085/Q85340/
 	
 	=============================================================================
 	
+
+{% endraw %}

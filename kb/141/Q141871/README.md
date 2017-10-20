@@ -6,6 +6,8 @@ permalink: /kb/141/Q141871/
 
 ## Q141871: HOWTO: Add Tooltips to ActiveX Controls
 
+{% raw %}
+
 	Article: Q141871
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -186,3 +188,5 @@ permalink: /kb/141/Q141871/
 	
 	=============================================================================
 	
+
+{% endraw %}

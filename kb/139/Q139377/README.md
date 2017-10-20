@@ -6,6 +6,8 @@ permalink: /kb/139/Q139377/
 
 ## Q139377: SNA Server Win3x Banyan Client Displays Incorrect Username
 
+{% raw %}
+
 	Article: Q139377
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -65,3 +67,5 @@ permalink: /kb/139/Q139377/
 	
 	=============================================================================
 	
+
+{% endraw %}

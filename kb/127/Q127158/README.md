@@ -6,6 +6,8 @@ permalink: /kb/127/Q127158/
 
 ## Q127158: Amount of Memory Detected by POST and NTDETECT.COM Differs
 
+{% raw %}
+
 	Article: Q127158
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/127/Q127158/
 	
 	=============================================================================
 	
+
+{% endraw %}

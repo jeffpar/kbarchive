@@ -6,6 +6,8 @@ permalink: /kb/308/Q308953/
 
 ## Q308953: FP: Hover Buttons Appear Dimmed on Web Pages
 
+{% raw %}
+
 	Article: Q308953
 	Product(s): Word Front Page
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/308/Q308953/
 	
 	=============================================================================
 	
+
+{% endraw %}

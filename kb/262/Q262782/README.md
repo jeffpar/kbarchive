@@ -6,6 +6,8 @@ permalink: /kb/262/Q262782/
 
 ## Q262782: XIMS: Unable to Reach a Particular Host Using Domain Name System
 
+{% raw %}
+
 	Article: Q262782
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/262/Q262782/
 	
 	=============================================================================
 	
+
+{% endraw %}

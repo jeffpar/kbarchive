@@ -6,6 +6,8 @@ permalink: /kb/141/Q141896/
 
 ## Q141896: Encarta96 ErrMsg: Enc9632.exe Is Not a Valid Win32 Application
 
+{% raw %}
+
 	Article: Q141896
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996
@@ -100,3 +102,5 @@ permalink: /kb/141/Q141896/
 	
 	=============================================================================
 	
+
+{% endraw %}

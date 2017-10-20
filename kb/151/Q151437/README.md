@@ -6,6 +6,8 @@ permalink: /kb/151/Q151437/
 
 ## Q151437: BUG: Wizard Button Display Problem with KEYCOMP Set to Windows
 
+{% raw %}
+
 	Article: Q151437
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -98,3 +100,5 @@ permalink: /kb/151/Q151437/
 	
 	=============================================================================
 	
+
+{% endraw %}

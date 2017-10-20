@@ -6,6 +6,8 @@ permalink: /kb/121/Q121720/
 
 ## Q121720: Error 6103: The String Specified by the COMPUTERNAME...
 
+{% raw %}
+
 	Article: Q121720
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -57,3 +59,5 @@ permalink: /kb/121/Q121720/
 	
 	=============================================================================
 	
+
+{% endraw %}

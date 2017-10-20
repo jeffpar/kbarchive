@@ -6,6 +6,8 @@ permalink: /kb/090/Q90422/
 
 ## Q90422: WFWG Err Msg: Application Has Violated System Integrity
 
+{% raw %}
+
 	Article: Q90422
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/090/Q90422/
 	
 	=============================================================================
 	
+
+{% endraw %}

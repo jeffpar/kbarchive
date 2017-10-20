@@ -6,6 +6,8 @@ permalink: /kb/299/Q299591/
 
 ## Q299591: BUG: Item Is Not Highlighted in a FullRowSelect ListView Control
 
+{% raw %}
+
 	Article: Q299591
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/299/Q299591/
 	
 	=============================================================================
 	
+
+{% endraw %}

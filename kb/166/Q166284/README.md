@@ -6,6 +6,8 @@ permalink: /kb/166/Q166284/
 
 ## Q166284: HOWTO: Use ODBC API SQLTables Function with Visual Basic and RDO
 
+{% raw %}
+
 	Article: Q166284
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -230,3 +232,5 @@ permalink: /kb/166/Q166284/
 	
 	=============================================================================
 	
+
+{% endraw %}

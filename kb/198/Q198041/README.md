@@ -6,6 +6,8 @@ permalink: /kb/198/Q198041/
 
 ## Q198041: WD97: Creating All Odd- or All Even-Numbered Pages in Document
 
+{% raw %}
+
 	Article: Q198041
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -33,12 +35,12 @@ permalink: /kb/198/Q198041/
 	To create all odd-numbered pages, insert the following field in the document
 	header or footer:
 	
-	  {={page} + {={page} - 1} }.
+	  {={page} + {={page} - 1}}.
 	
 	To create all even-numbered pages, insert the following field in the document
 	header or footer:
 	
-	  {={page} + {page} }
+	  {={page} + {page}}
 	
 	NOTE: If you want to number each page in the same way throughout all sections,
 	add page numbers before you add section breaks. However, if you've already added
@@ -67,3 +69,5 @@ permalink: /kb/198/Q198041/
 	
 	=============================================================================
 	
+
+{% endraw %}

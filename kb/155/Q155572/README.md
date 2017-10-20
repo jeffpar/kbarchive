@@ -6,6 +6,8 @@ permalink: /kb/155/Q155572/
 
 ## Q155572: REM Does Not Prevent Parsing of FOR Statement in Batch File
 
+{% raw %}
+
 	Article: Q155572
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/155/Q155572/
 	
 	=============================================================================
 	
+
+{% endraw %}

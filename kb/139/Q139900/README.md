@@ -6,6 +6,8 @@ permalink: /kb/139/Q139900/
 
 ## Q139900: Using Intel NetportExpress XL Print Server with Windows NT
 
+{% raw %}
+
 	Article: Q139900
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -104,3 +106,5 @@ permalink: /kb/139/Q139900/
 	
 	=============================================================================
 	
+
+{% endraw %}

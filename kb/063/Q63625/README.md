@@ -6,6 +6,8 @@ permalink: /kb/063/Q63625/
 
 ## Q63625: Windows 3.0 and Third-Party Hard Disk Partitioning Software
 
+{% raw %}
+
 	Article: Q63625
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -170,3 +172,5 @@ permalink: /kb/063/Q63625/
 	
 	=============================================================================
 	
+
+{% endraw %}

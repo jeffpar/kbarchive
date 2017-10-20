@@ -6,6 +6,8 @@ permalink: /kb/191/Q191792/
 
 ## Q191792: INFO: VB 6.0 Readme Part 13: Dictionary Object
 
+{% raw %}
+
 	Article: Q191792
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/191/Q191792/
 	
 	=============================================================================
 	
+
+{% endraw %}

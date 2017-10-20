@@ -6,6 +6,8 @@ permalink: /kb/136/Q136399/
 
 ## Q136399: INFO: Visual Basic and Source Code Control Glyphs
 
+{% raw %}
+
 	Article: Q136399
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/136/Q136399/
 	
 	=============================================================================
 	
+
+{% endraw %}

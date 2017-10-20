@@ -6,6 +6,8 @@ permalink: /kb/135/Q135822/
 
 ## Q135822: PPT7: Write-up Fails If &quot;Show Field Codes&quot; Turned On in Word
 
+{% raw %}
+
 	Article: Q135822
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -65,3 +67,5 @@ permalink: /kb/135/Q135822/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190878/
 
 ## Q190878: HOWTO: Get Visual FoxPro Options Registry Settings
 
+{% raw %}
+
 	Article: Q190878
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -138,3 +140,5 @@ permalink: /kb/190/Q190878/
 	
 	=============================================================================
 	
+
+{% endraw %}

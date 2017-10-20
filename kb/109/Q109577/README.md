@@ -6,6 +6,8 @@ permalink: /kb/109/Q109577/
 
 ## Q109577: Writer: Pop Caps or Drop Caps Formatting May Not Appear
 
+{% raw %}
+
 	Article: Q109577
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -74,3 +76,5 @@ permalink: /kb/109/Q109577/
 	
 	=============================================================================
 	
+
+{% endraw %}

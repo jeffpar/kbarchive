@@ -6,6 +6,8 @@ permalink: /kb/139/Q139352/
 
 ## Q139352: PC Gen: FAQ - Implementing Electronic Mail under Windows 95
 
+{% raw %}
+
 	Article: Q139352
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,1.0a,3.x,4.0,7.0
@@ -387,3 +389,5 @@ permalink: /kb/139/Q139352/
 	
 	=============================================================================
 	
+
+{% endraw %}

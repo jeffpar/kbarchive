@@ -6,6 +6,8 @@ permalink: /kb/193/Q193961/
 
 ## Q193961: XCON: One Recipient Dropped on Exchange DL on Incoming Message
 
+{% raw %}
+
 	Article: Q193961
 	Product(s): Microsoft Exchange
 	Version(s): WinNT: 5.5
@@ -85,3 +87,5 @@ permalink: /kb/193/Q193961/
 	
 	=============================================================================
 	
+
+{% endraw %}

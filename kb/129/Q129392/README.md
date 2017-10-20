@@ -6,6 +6,8 @@ permalink: /kb/129/Q129392/
 
 ## Q129392: WordPad Does Not Collate Multiple Print Copies
 
+{% raw %}
+
 	Article: Q129392
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/129/Q129392/
 	
 	=============================================================================
 	
+
+{% endraw %}

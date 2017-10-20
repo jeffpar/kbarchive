@@ -6,6 +6,8 @@ permalink: /kb/132/Q132104/
 
 ## Q132104: FIX: Background Color in Text Box Does Not Use Dithered Colors
 
+{% raw %}
+
 	Article: Q132104
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -98,3 +100,5 @@ permalink: /kb/132/Q132104/
 	
 	=============================================================================
 	
+
+{% endraw %}

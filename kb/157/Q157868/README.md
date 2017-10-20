@@ -6,6 +6,8 @@ permalink: /kb/157/Q157868/
 
 ## Q157868: WD97: Custom Style Based on List Style Drops Numbering
 
+{% raw %}
+
 	Article: Q157868
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/157/Q157868/
 	
 	=============================================================================
 	
+
+{% endraw %}

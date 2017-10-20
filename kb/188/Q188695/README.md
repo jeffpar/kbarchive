@@ -6,6 +6,8 @@ permalink: /kb/188/Q188695/
 
 ## Q188695: HOWTO: Select Remote Components for Client Projects w/PDW
 
+{% raw %}
+
 	Article: Q188695
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/188/Q188695/
 	
 	=============================================================================
 	
+
+{% endraw %}

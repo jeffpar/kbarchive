@@ -6,6 +6,8 @@ permalink: /kb/291/Q291191/
 
 ## Q291191: HOWTO: Use the ENTER Key to Navigate in Visual Basic DataGrid
 
+{% raw %}
+
 	Article: Q291191
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -72,3 +74,5 @@ permalink: /kb/291/Q291191/
 	
 	=============================================================================
 	
+
+{% endraw %}

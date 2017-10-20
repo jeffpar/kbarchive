@@ -6,6 +6,8 @@ permalink: /kb/104/Q104428/
 
 ## Q104428: Satisfaxtion 400 Internal Modem Does Not Operate in Windows NT
 
+{% raw %}
+
 	Article: Q104428
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -71,3 +73,5 @@ permalink: /kb/104/Q104428/
 	
 	=============================================================================
 	
+
+{% endraw %}

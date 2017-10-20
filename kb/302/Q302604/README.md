@@ -6,6 +6,8 @@ permalink: /kb/302/Q302604/
 
 ## Q302604: Train Simulator: Train Simulator Doesn't Start After Install
 
+{% raw %}
+
 	Article: Q302604
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -191,3 +193,5 @@ permalink: /kb/302/Q302604/
 	
 	=============================================================================
 	
+
+{% endraw %}

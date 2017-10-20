@@ -6,6 +6,8 @@ permalink: /kb/325/Q325325/
 
 ## Q325325: XADM: Setup Hangs When You Upgrade to Enterprise Edition
 
+{% raw %}
+
 	Article: Q325325
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/325/Q325325/
 	
 	=============================================================================
 	
+
+{% endraw %}

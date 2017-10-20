@@ -6,6 +6,8 @@ permalink: /kb/125/Q125048/
 
 ## Q125048: Encarta 95 Err Msg: Encart95 Caused An Exception
 
+{% raw %}
+
 	Article: Q125048
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition; winnt:3.5
@@ -72,3 +74,5 @@ permalink: /kb/125/Q125048/
 	
 	=============================================================================
 	
+
+{% endraw %}

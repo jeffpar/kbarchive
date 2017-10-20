@@ -6,6 +6,8 @@ permalink: /kb/106/Q106276/
 
 ## Q106276: WFWG Err Msg: The 32-Bit File System Is Incompatible...SUBST
 
+{% raw %}
+
 	Article: Q106276
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -72,3 +74,5 @@ permalink: /kb/106/Q106276/
 	
 	=============================================================================
 	
+
+{% endraw %}

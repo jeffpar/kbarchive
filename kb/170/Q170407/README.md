@@ -6,6 +6,8 @@ permalink: /kb/170/Q170407/
 
 ## Q170407: WD97: ErrMsg Saving Graphic File to Read Only Share
 
+{% raw %}
+
 	Article: Q170407
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -74,3 +76,5 @@ permalink: /kb/170/Q170407/
 	
 	=============================================================================
 	
+
+{% endraw %}

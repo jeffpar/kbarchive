@@ -6,6 +6,8 @@ permalink: /kb/140/Q140049/
 
 ## Q140049: Err Msg: The Service Has Not Been Started
 
+{% raw %}
+
 	Article: Q140049
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0
@@ -49,3 +51,5 @@ permalink: /kb/140/Q140049/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/293/Q293348/
 
 ## Q293348: HOWTO: Set Focus on a Column in a DataGrid Control
 
+{% raw %}
+
 	Article: Q293348
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -120,3 +122,5 @@ permalink: /kb/293/Q293348/
 	
 	=============================================================================
 	
+
+{% endraw %}

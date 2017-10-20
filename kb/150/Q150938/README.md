@@ -6,6 +6,8 @@ permalink: /kb/150/Q150938/
 
 ## Q150938: Printer Resident Fonts not Available w/ &quot;Print Text as Graphics&quot;
 
+{% raw %}
+
 	Article: Q150938
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150938/
 	
 	=============================================================================
 	
+
+{% endraw %}

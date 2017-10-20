@@ -6,6 +6,8 @@ permalink: /kb/232/Q232603/
 
 ## Q232603: Stop 0x1e Error Message Using Network Undelete
 
+{% raw %}
+
 	Article: Q232603
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/232/Q232603/
 	
 	=============================================================================
 	
+
+{% endraw %}

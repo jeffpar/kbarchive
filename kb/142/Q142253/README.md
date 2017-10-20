@@ -6,6 +6,8 @@ permalink: /kb/142/Q142253/
 
 ## Q142253: Unable to Read from Floppy Disk Drive on Laptop Computer
 
+{% raw %}
+
 	Article: Q142253
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/142/Q142253/
 	
 	=============================================================================
 	
+
+{% endraw %}

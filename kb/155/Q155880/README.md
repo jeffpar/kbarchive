@@ -6,6 +6,8 @@ permalink: /kb/155/Q155880/
 
 ## Q155880: DOC: README FIRST Card Has a Typo in Stored Procedure Name
 
+{% raw %}
+
 	Article: Q155880
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -48,3 +50,5 @@ permalink: /kb/155/Q155880/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199437/
 
 ## Q199437: WD97: Text in Return Address Is Obscured by Graphic
 
+{% raw %}
+
 	Article: Q199437
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/199/Q199437/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141922/
 
 ## Q141922: WD97: How to Start a Mail Merge
 
+{% raw %}
+
 	Article: Q141922
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -234,3 +236,5 @@ permalink: /kb/141/Q141922/
 	
 	=============================================================================
 	
+
+{% endraw %}

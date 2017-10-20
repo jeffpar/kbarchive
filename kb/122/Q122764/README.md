@@ -6,6 +6,8 @@ permalink: /kb/122/Q122764/
 
 ## Q122764: DOC: Use MFC Migration Toolkit to Translate C Code to C++
 
+{% raw %}
+
 	Article: Q122764
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0
@@ -74,3 +76,5 @@ permalink: /kb/122/Q122764/
 	
 	=============================================================================
 	
+
+{% endraw %}

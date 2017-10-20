@@ -6,6 +6,8 @@ permalink: /kb/171/Q171810/
 
 ## Q171810: FIX: Invoking the Visual Component Manager Asserts in Exutil
 
+{% raw %}
+
 	Article: Q171810
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -75,3 +77,5 @@ permalink: /kb/171/Q171810/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166217/
 
 ## Q166217: PRB: ATL EXE Server Built On Windows 95 Errors While Registering
 
+{% raw %}
+
 	Article: Q166217
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,3.0
@@ -89,3 +91,5 @@ permalink: /kb/166/Q166217/
 	
 	=============================================================================
 	
+
+{% endraw %}

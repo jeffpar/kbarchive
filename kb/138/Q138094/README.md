@@ -6,6 +6,8 @@ permalink: /kb/138/Q138094/
 
 ## Q138094: How to Create Updatable Views by Using SQL Passthrough
 
+{% raw %}
+
 	Article: Q138094
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,6.0
@@ -121,3 +123,5 @@ permalink: /kb/138/Q138094/
 	
 	=============================================================================
 	
+
+{% endraw %}

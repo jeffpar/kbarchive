@@ -6,6 +6,8 @@ permalink: /kb/263/Q263846/
 
 ## Q263846: Secondary Site Installation May Not Work with Terminal Services
 
+{% raw %}
+
 	Article: Q263846
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/263/Q263846/
 	
 	=============================================================================
 	
+
+{% endraw %}

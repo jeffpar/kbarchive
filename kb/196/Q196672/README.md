@@ -6,6 +6,8 @@ permalink: /kb/196/Q196672/
 
 ## Q196672: WD97: Background Repagination Cannot Be Turned Off
 
+{% raw %}
+
 	Article: Q196672
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/196/Q196672/
 	
 	=============================================================================
 	
+
+{% endraw %}

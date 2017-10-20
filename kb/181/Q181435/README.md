@@ -6,6 +6,8 @@ permalink: /kb/181/Q181435/
 
 ## Q181435: WD97: Programs Missing from Default Picture Editor List
 
+{% raw %}
+
 	Article: Q181435
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/181/Q181435/
 	
 	=============================================================================
 	
+
+{% endraw %}

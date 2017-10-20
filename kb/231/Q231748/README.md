@@ -6,6 +6,8 @@ permalink: /kb/231/Q231748/
 
 ## Q231748: XADM: Pattern in Address in SMTP Messages Causes Store to Crash
 
+{% raw %}
+
 	Article: Q231748
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -108,3 +110,5 @@ permalink: /kb/231/Q231748/
 	
 	=============================================================================
 	
+
+{% endraw %}

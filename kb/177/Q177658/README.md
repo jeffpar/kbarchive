@@ -6,6 +6,8 @@ permalink: /kb/177/Q177658/
 
 ## Q177658: Patterns Do Not Print on HP LaserJet 5p
 
+{% raw %}
+
 	Article: Q177658
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -44,3 +46,5 @@ permalink: /kb/177/Q177658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164674/
 
 ## Q164674: How to Use a .CMD or .BAT File as a CGI Script
 
+{% raw %}
+
 	Article: Q164674
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -91,3 +93,5 @@ permalink: /kb/164/Q164674/
 	
 	=============================================================================
 	
+
+{% endraw %}

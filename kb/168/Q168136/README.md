@@ -6,6 +6,8 @@ permalink: /kb/168/Q168136/
 
 ## Q168136: XCON: X.400 Exchange Interop with Foreign MTA Causing NDR
 
+{% raw %}
+
 	Article: Q168136
 	Product(s): Microsoft Exchange
 	Version(s): Platform:4.0
@@ -63,3 +65,5 @@ permalink: /kb/168/Q168136/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148175/
 
 ## Q148175: Scenes 2.0: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148175
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -54,3 +56,5 @@ permalink: /kb/148/Q148175/
 	
 	=============================================================================
 	
+
+{% endraw %}

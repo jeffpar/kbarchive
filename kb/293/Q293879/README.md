@@ -6,6 +6,8 @@ permalink: /kb/293/Q293879/
 
 ## Q293879: &quot;Unable to Write File&quot; Error After Changing Com.cfg
 
+{% raw %}
+
 	Article: Q293879
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -141,3 +143,5 @@ permalink: /kb/293/Q293879/
 	
 	=============================================================================
 	
+
+{% endraw %}

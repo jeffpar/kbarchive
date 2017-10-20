@@ -6,6 +6,8 @@ permalink: /kb/187/Q187316/
 
 ## Q187316: Err Msg: Cannot Import &lt;File&gt;. Error Opening the File.
 
+{% raw %}
+
 	Article: Q187316
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/187/Q187316/
 	
 	=============================================================================
 	
+
+{% endraw %}

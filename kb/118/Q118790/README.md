@@ -6,6 +6,8 @@ permalink: /kb/118/Q118790/
 
 ## Q118790: WfWG: Slow File Transfers to WinNT w/ 3C509, TCP/IP, NetBEUI
 
+{% raw %}
+
 	Article: Q118790
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.1,3.11,3.5
@@ -56,3 +58,5 @@ permalink: /kb/118/Q118790/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229898/
 
 ## Q229898: Developing User Interfaces for Microsoft Windows Corrections
 
+{% raw %}
+
 	Article: Q229898
 	Product(s): Microsoft Press
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/229/Q229898/
 	
 	=============================================================================
 	
+
+{% endraw %}

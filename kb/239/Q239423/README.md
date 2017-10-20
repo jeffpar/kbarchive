@@ -6,6 +6,8 @@ permalink: /kb/239/Q239423/
 
 ## Q239423: WD97: Cannot Include Footnote or Endnote Text in Word Count
 
+{% raw %}
+
 	Article: Q239423
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/239/Q239423/
 	
 	=============================================================================
 	
+
+{% endraw %}

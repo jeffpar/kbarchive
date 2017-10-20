@@ -6,6 +6,8 @@ permalink: /kb/142/Q142797/
 
 ## Q142797: FIX: Allow Nulls on Field Change Results of SELECT-SQL
 
+{% raw %}
+
 	Article: Q142797
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -104,3 +106,5 @@ permalink: /kb/142/Q142797/
 	
 	=============================================================================
 	
+
+{% endraw %}

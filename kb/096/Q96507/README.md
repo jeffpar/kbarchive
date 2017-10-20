@@ -6,6 +6,8 @@ permalink: /kb/096/Q96507/
 
 ## Q96507: Installing OS/2 on a Compaq Prosignia
 
+{% raw %}
+
 	Article: Q96507
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/096/Q96507/
 	
 	=============================================================================
 	
+
+{% endraw %}

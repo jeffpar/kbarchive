@@ -6,6 +6,8 @@ permalink: /kb/084/Q84817/
 
 ## Q84817: Using the MIDI Mapper
 
+{% raw %}
+
 	Article: Q84817
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -147,3 +149,5 @@ permalink: /kb/084/Q84817/
 	
 	=============================================================================
 	
+
+{% endraw %}

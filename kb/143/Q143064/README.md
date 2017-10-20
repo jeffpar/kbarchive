@@ -6,6 +6,8 @@ permalink: /kb/143/Q143064/
 
 ## Q143064: DOCERR: ControlBox Property Not Available at Run Time Per Help
 
+{% raw %}
+
 	Article: Q143064
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -77,3 +79,5 @@ permalink: /kb/143/Q143064/
 	
 	=============================================================================
 	
+
+{% endraw %}

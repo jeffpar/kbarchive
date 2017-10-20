@@ -6,6 +6,8 @@ permalink: /kb/221/Q221663/
 
 ## Q221663: FIX: FFCs - registry.vcx foxreg.EnumOptions Contains Recursion
 
+{% raw %}
+
 	Article: Q221663
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/221/Q221663/
 	
 	=============================================================================
 	
+
+{% endraw %}

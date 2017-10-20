@@ -6,6 +6,8 @@ permalink: /kb/132/Q132582/
 
 ## Q132582: Backup File Damaged Saving Multiple Volumes to a Network Drive
 
+{% raw %}
+
 	Article: Q132582
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -46,3 +48,5 @@ permalink: /kb/132/Q132582/
 	
 	=============================================================================
 	
+
+{% endraw %}

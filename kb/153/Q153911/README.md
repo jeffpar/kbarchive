@@ -6,6 +6,8 @@ permalink: /kb/153/Q153911/
 
 ## Q153911: MSN Icon Does Not Function After MSN 1.2 Upgrade
 
+{% raw %}
+
 	Article: Q153911
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153911/
 	
 	=============================================================================
 	
+
+{% endraw %}

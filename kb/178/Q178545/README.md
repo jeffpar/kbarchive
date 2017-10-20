@@ -6,6 +6,8 @@ permalink: /kb/178/Q178545/
 
 ## Q178545: PRB: Cannot Set Marker Size or Style for MSChart
 
+{% raw %}
+
 	Article: Q178545
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/178/Q178545/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78340/
 
 ## Q78340: WD97: Words in Exclude Dictionary Not Flagged as Incorrect
 
+{% raw %}
+
 	Article: Q78340
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/078/Q78340/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185716/
 
 ## Q185716: Snalink.exe May Trap If the SNA Server Service Is Autostarted
 
+{% raw %}
+
 	Article: Q185716
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185716/
 	
 	=============================================================================
 	
+
+{% endraw %}

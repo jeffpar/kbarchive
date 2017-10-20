@@ -6,6 +6,8 @@ permalink: /kb/184/Q184827/
 
 ## Q184827: Paste Link Function Is Not Available Between WordPad Documents
 
+{% raw %}
+
 	Article: Q184827
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/184/Q184827/
 	
 	=============================================================================
 	
+
+{% endraw %}

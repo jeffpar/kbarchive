@@ -6,6 +6,8 @@ permalink: /kb/170/Q170589/
 
 ## Q170589: APPC Print Sessions Inactive w/ System 36 or AS/36 Host
 
+{% raw %}
+
 	Article: Q170589
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/170/Q170589/
 	
 	=============================================================================
 	
+
+{% endraw %}

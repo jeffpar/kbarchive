@@ -6,6 +6,8 @@ permalink: /kb/092/Q92942/
 
 ## Q92942: GlobalReAlloc() and GMEM_ZEROINIT Clarified
 
+{% raw %}
+
 	Article: Q92942
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -96,3 +98,5 @@ permalink: /kb/092/Q92942/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97107/
 
 ## Q97107: Compressed SCSI Drive Does Not Mount at Startup
 
+{% raw %}
+
 	Article: Q97107
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -48,3 +50,5 @@ permalink: /kb/097/Q97107/
 	
 	=============================================================================
 	
+
+{% endraw %}

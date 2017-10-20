@@ -6,6 +6,8 @@ permalink: /kb/186/Q186398/
 
 ## Q186398: SMS: How to Use the PDF Wizard - Pdfwiz.exe
 
+{% raw %}
+
 	Article: Q186398
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/186/Q186398/
 	
 	=============================================================================
 	
+
+{% endraw %}

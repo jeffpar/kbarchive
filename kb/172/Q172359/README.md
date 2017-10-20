@@ -6,6 +6,8 @@ permalink: /kb/172/Q172359/
 
 ## Q172359: PPT7: Error Editing Graph in PowerPoint 95 &amp; 97 Dual Format File
 
+{% raw %}
+
 	Article: Q172359
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -81,3 +83,5 @@ permalink: /kb/172/Q172359/
 	
 	=============================================================================
 	
+
+{% endraw %}

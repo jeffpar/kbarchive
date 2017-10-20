@@ -6,6 +6,8 @@ permalink: /kb/271/Q271926/
 
 ## Q271926: BUG: Memory Leak in ATL OLE DB Consumer Template Functions
 
+{% raw %}
+
 	Article: Q271926
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -206,3 +208,5 @@ permalink: /kb/271/Q271926/
 	
 	=============================================================================
 	
+
+{% endraw %}

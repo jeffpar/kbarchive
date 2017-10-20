@@ -6,6 +6,8 @@ permalink: /kb/140/Q140801/
 
 ## Q140801: German Office Pro 4.3c PDF and STF Files are Missing
 
+{% raw %}
+
 	Article: Q140801
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -48,3 +50,5 @@ permalink: /kb/140/Q140801/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166198/
 
 ## Q166198: Display Color Problem with OpenGL Apps In Windows NT 4.0 SP2
 
+{% raw %}
+
 	Article: Q166198
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166198/
 	
 	=============================================================================
 	
+
+{% endraw %}

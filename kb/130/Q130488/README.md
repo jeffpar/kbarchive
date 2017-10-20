@@ -6,6 +6,8 @@ permalink: /kb/130/Q130488/
 
 ## Q130488: Error Message: Error Trying to Add Trustee
 
+{% raw %}
+
 	Article: Q130488
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130488/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158768/
 
 ## Q158768: WD97: Sample VB Code to Set, Retrieve Summary Information
 
+{% raw %}
+
 	Article: Q158768
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -193,3 +195,5 @@ permalink: /kb/158/Q158768/
 	
 	=============================================================================
 	
+
+{% endraw %}

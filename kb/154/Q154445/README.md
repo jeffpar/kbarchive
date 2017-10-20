@@ -6,6 +6,8 @@ permalink: /kb/154/Q154445/
 
 ## Q154445: A Different OS was Detected...While Upgrading SMS Clients
 
+{% raw %}
+
 	Article: Q154445
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -52,3 +54,5 @@ permalink: /kb/154/Q154445/
 	
 	=============================================================================
 	
+
+{% endraw %}

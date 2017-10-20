@@ -6,6 +6,8 @@ permalink: /kb/179/Q179115/
 
 ## Q179115: XADM: Custom Attributes Not Updated in Column View
 
+{% raw %}
+
 	Article: Q179115
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -49,3 +51,5 @@ permalink: /kb/179/Q179115/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140811/
 
 ## Q140811: User Interface Takes 1 Minute to Display Job Details
 
+{% raw %}
+
 	Article: Q140811
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/140/Q140811/
 	
 	=============================================================================
 	
+
+{% endraw %}

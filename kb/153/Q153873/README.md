@@ -6,6 +6,8 @@ permalink: /kb/153/Q153873/
 
 ## Q153873: HOWTO: Upgrade from SourceSafe 3.x to Visual SourceSafe 4.0
 
+{% raw %}
+
 	Article: Q153873
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -178,3 +180,5 @@ permalink: /kb/153/Q153873/
 	
 	=============================================================================
 	
+
+{% endraw %}

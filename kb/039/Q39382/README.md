@@ -6,6 +6,8 @@ permalink: /kb/039/Q39382/
 
 ## Q39382: QuickBASIC 4.50 QB.EXE Does Not Allow CTRL+P, ESC Sequence
 
+{% raw %}
+
 	Article: Q39382
 	Product(s): See article
 	Version(s): 4.50
@@ -20,3 +22,5 @@ permalink: /kb/039/Q39382/
 	Note: QB.EXE Versions 4.00 and 4.00b do allow you to type a CTRL+P
 	followed by either ESC or CTRL+[ and thereby insert a CHR$(27) byte
 	into either a REMark or a quoted string.
+
+{% endraw %}

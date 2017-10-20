@@ -6,6 +6,8 @@ permalink: /kb/274/Q274830/
 
 ## Q274830: Metal Gear Solid: What's New in Metal Gear Solid
 
+{% raw %}
+
 	Article: Q274830
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/274/Q274830/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317960/
 
 ## Q317960: SNMP Management Programs Stop Responding on Invalid Trap Frames
 
+{% raw %}
+
 	Article: Q317960
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6a
@@ -82,3 +84,5 @@ permalink: /kb/317/Q317960/
 	
 	=============================================================================
 	
+
+{% endraw %}

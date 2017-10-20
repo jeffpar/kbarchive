@@ -6,6 +6,8 @@ permalink: /kb/120/Q120757/
 
 ## Q120757: WINS Manager: Config. and Replication Partners Menus Disabled
 
+{% raw %}
+
 	Article: Q120757
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/120/Q120757/
 	
 	=============================================================================
 	
+
+{% endraw %}

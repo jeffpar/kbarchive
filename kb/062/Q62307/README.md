@@ -6,6 +6,8 @@ permalink: /kb/062/Q62307/
 
 ## Q62307: Internal Compiler Error '@(#)p3symtab.c:1.39', Line 450
 
+{% raw %}
+
 	Article: Q62307
 	Product(s): See article
 	Version(s): 6.00 5.10 | 6.00 5.10
@@ -43,3 +45,5 @@ permalink: /kb/062/Q62307/
 	Microsoft has confirmed this to be a problem with C versions 5.10 and
 	6.00. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

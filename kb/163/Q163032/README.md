@@ -6,6 +6,8 @@ permalink: /kb/163/Q163032/
 
 ## Q163032: XCON: Description of Diagnostics Logging for MTA
 
+{% raw %}
+
 	Article: Q163032
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -200,3 +202,5 @@ permalink: /kb/163/Q163032/
 	
 	=============================================================================
 	
+
+{% endraw %}

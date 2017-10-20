@@ -6,6 +6,8 @@ permalink: /kb/264/Q264904/
 
 ## Q264904: Age of Empires II: Map on Game Screen Scrolls Up Unexpectedly
 
+{% raw %}
+
 	Article: Q264904
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -76,3 +78,5 @@ permalink: /kb/264/Q264904/
 	
 	=============================================================================
 	
+
+{% endraw %}

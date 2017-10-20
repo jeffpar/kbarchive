@@ -6,6 +6,8 @@ permalink: /kb/098/Q98768/
 
 ## Q98768: Troubleshooting MS-DOS 6.x and EMM386.EXE
 
+{% raw %}
+
 	Article: Q98768
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11,95
@@ -155,3 +157,5 @@ permalink: /kb/098/Q98768/
 	
 	=============================================================================
 	
+
+{% endraw %}

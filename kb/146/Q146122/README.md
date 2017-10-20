@@ -6,6 +6,8 @@ permalink: /kb/146/Q146122/
 
 ## Q146122: PC NTMMTA: Error 2140 When You Try to Start Instance
 
+{% raw %}
+
 	Article: Q146122
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -61,3 +63,5 @@ permalink: /kb/146/Q146122/
 	
 	=============================================================================
 	
+
+{% endraw %}

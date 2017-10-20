@@ -6,6 +6,8 @@ permalink: /kb/134/Q134494/
 
 ## Q134494: Drop-Down Menu Not Repainted Properly in WinFax Pro 4.0
 
+{% raw %}
+
 	Article: Q134494
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/134/Q134494/
 	
 	=============================================================================
 	
+
+{% endraw %}

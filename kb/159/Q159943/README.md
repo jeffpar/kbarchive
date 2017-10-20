@@ -6,6 +6,8 @@ permalink: /kb/159/Q159943/
 
 ## Q159943: WD97: General Information About Bullets and Numbering
 
+{% raw %}
+
 	Article: Q159943
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -194,3 +196,5 @@ permalink: /kb/159/Q159943/
 	
 	=============================================================================
 	
+
+{% endraw %}

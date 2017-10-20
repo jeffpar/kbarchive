@@ -6,6 +6,8 @@ permalink: /kb/042/Q42597/
 
 ## Q42597: Using Near Addresses in Interrupt Handlers in C
 
+{% raw %}
+
 	Article: Q42597
 	Product(s): See article
 	Version(s): 5.10
@@ -75,3 +77,5 @@ permalink: /kb/042/Q42597/
 	{
 	*ptr = 'a' ;
 	}
+
+{% endraw %}

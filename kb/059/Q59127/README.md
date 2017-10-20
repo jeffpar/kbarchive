@@ -6,6 +6,8 @@ permalink: /kb/059/Q59127/
 
 ## Q59127: Testing Math Coprocessor Instructions FLD FADD FSTP FST
 
+{% raw %}
+
 	Article: Q59127
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -68,3 +70,5 @@ permalink: /kb/059/Q59127/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82292/
 
 ## Q82292: Example PWB Macro That Works Similar to QuickC DEL Key
 
+{% raw %}
+
 	Article: Q82292
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1,2.0; OS/2:1.0,1.1
@@ -50,3 +52,5 @@ permalink: /kb/082/Q82292/
 	
 	=============================================================================
 	
+
+{% endraw %}

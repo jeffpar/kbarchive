@@ -6,6 +6,8 @@ permalink: /kb/225/Q225206/
 
 ## Q225206: XCON: Multiple Servers Can't Send to Another Server in Same Site
 
+{% raw %}
+
 	Article: Q225206
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -166,3 +168,5 @@ permalink: /kb/225/Q225206/
 	
 	=============================================================================
 	
+
+{% endraw %}

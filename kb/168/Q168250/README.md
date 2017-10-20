@@ -6,6 +6,8 @@ permalink: /kb/168/Q168250/
 
 ## Q168250: FIX: IIS Performance Degrades with a Bad Connection
 
+{% raw %}
+
 	Article: Q168250
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0; winnt:3.0
@@ -80,3 +82,5 @@ permalink: /kb/168/Q168250/
 	
 	=============================================================================
 	
+
+{% endraw %}

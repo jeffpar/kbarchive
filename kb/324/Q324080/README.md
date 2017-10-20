@@ -6,6 +6,8 @@ permalink: /kb/324/Q324080/
 
 ## Q324080: XADM: Orphaned Mailboxes in Exchange Server 5.5 Directories in a
 
+{% raw %}
+
 	Article: Q324080
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4,5.5 SP5,SP1,SP2,SP3
@@ -130,3 +132,5 @@ permalink: /kb/324/Q324080/
 	
 	=============================================================================
 	
+
+{% endraw %}

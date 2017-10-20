@@ -6,6 +6,8 @@ permalink: /kb/153/Q153824/
 
 ## Q153824: CPS Winntp Ignores Defaults.inf During Profile
 
+{% raw %}
+
 	Article: Q153824
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153824/
 	
 	=============================================================================
 	
+
+{% endraw %}

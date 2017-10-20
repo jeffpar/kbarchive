@@ -6,6 +6,8 @@ permalink: /kb/177/Q177806/
 
 ## Q177806: DHCP Server with Superscope Stops Assigning Addresses
 
+{% raw %}
+
 	Article: Q177806
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/177/Q177806/
 	
 	=============================================================================
 	
+
+{% endraw %}

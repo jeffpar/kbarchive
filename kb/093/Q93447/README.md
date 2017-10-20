@@ -6,6 +6,8 @@ permalink: /kb/093/Q93447/
 
 ## Q93447: PRB: C2060 or C1004 Error Occurs Using TRY/CATCH Macros
 
+{% raw %}
+
 	Article: Q93447
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,2.1,4.0,4.1,4.2,5.0
@@ -80,3 +82,5 @@ permalink: /kb/093/Q93447/
 	
 	=============================================================================
 	
+
+{% endraw %}

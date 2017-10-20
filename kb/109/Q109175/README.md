@@ -6,6 +6,8 @@ permalink: /kb/109/Q109175/
 
 ## Q109175: How to Limit an MFC Application to a Single Instance
 
+{% raw %}
+
 	Article: Q109175
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1
@@ -172,3 +174,5 @@ permalink: /kb/109/Q109175/
 	
 	=============================================================================
 	
+
+{% endraw %}

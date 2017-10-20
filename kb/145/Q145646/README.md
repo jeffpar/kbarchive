@@ -6,6 +6,8 @@ permalink: /kb/145/Q145646/
 
 ## Q145646: MSB Ocean: Answers to Frizz's Treasure Hunt Clues
 
+{% raw %}
+
 	Article: Q145646
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -221,3 +223,5 @@ permalink: /kb/145/Q145646/
 	
 	=============================================================================
 	
+
+{% endraw %}

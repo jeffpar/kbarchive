@@ -6,6 +6,8 @@ permalink: /kb/293/Q293295/
 
 ## Q293295: BUG: PDW Package Cannot Be Installed If User Name Is Korean DBCS
 
+{% raw %}
+
 	Article: Q293295
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/293/Q293295/
 	
 	=============================================================================
 	
+
+{% endraw %}

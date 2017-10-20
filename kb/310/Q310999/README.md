@@ -6,6 +6,8 @@ permalink: /kb/310/Q310999/
 
 ## Q310999: Can't Use the Spell Check Function Of Hotmail
 
+{% raw %}
+
 	Article: Q310999
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -45,3 +47,5 @@ permalink: /kb/310/Q310999/
 	
 	=============================================================================
 	
+
+{% endraw %}

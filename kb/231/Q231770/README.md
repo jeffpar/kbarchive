@@ -6,6 +6,8 @@ permalink: /kb/231/Q231770/
 
 ## Q231770: BUG: Windows CE Wizards Not Available After Install
 
+{% raw %}
+
 	Article: Q231770
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -92,3 +94,5 @@ permalink: /kb/231/Q231770/
 	
 	=============================================================================
 	
+
+{% endraw %}

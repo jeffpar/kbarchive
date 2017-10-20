@@ -6,6 +6,8 @@ permalink: /kb/165/Q165392/
 
 ## Q165392: WD97: Invalid Page Fault in Pima32.dll w/ Compaq Address Book
 
+{% raw %}
+
 	Article: Q165392
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/165/Q165392/
 	
 	=============================================================================
 	
+
+{% endraw %}

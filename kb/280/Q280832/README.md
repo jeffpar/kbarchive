@@ -6,6 +6,8 @@ permalink: /kb/280/Q280832/
 
 ## Q280832: Encarta Researcher: Cannot Convert Research Organizer Projects
 
+{% raw %}
+
 	Article: Q280832
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -74,3 +76,5 @@ permalink: /kb/280/Q280832/
 	
 	=============================================================================
 	
+
+{% endraw %}

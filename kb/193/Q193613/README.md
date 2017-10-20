@@ -6,6 +6,8 @@ permalink: /kb/193/Q193613/
 
 ## Q193613: ADSI Paths Greater than 80 Characters Causes Access Violation
 
+{% raw %}
+
 	Article: Q193613
 	Product(s): Internet Information Server
 	Version(s): winnt:2.5,4.0
@@ -55,3 +57,5 @@ permalink: /kb/193/Q193613/
 	
 	=============================================================================
 	
+
+{% endraw %}

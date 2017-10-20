@@ -6,6 +6,8 @@ permalink: /kb/159/Q159093/
 
 ## Q159093: Windows NT Muldiv() Function Returns Incorrect Value
 
+{% raw %}
+
 	Article: Q159093
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/159/Q159093/
 	
 	=============================================================================
 	
+
+{% endraw %}

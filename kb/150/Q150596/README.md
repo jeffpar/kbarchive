@@ -6,6 +6,8 @@ permalink: /kb/150/Q150596/
 
 ## Q150596: FIX: Error Message &quot;Variable is Not Found&quot; When Running Form
 
+{% raw %}
+
 	Article: Q150596
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -94,3 +96,5 @@ permalink: /kb/150/Q150596/
 	
 	=============================================================================
 	
+
+{% endraw %}

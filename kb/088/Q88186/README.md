@@ -6,6 +6,8 @@ permalink: /kb/088/Q88186/
 
 ## Q88186: Windows Video Seven Drivers Don't Support HT-216, 217 Chip Sets
 
+{% raw %}
+
 	Article: Q88186
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/088/Q88186/
 	
 	=============================================================================
 	
+
+{% endraw %}

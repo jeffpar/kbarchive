@@ -6,6 +6,8 @@ permalink: /kb/103/Q103225/
 
 ## Q103225: SmallCap.exe - Process Nonclient Msgs w/Msg Blaster Ctrl
 
+{% raw %}
+
 	Article: Q103225
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/103/Q103225/
 	
 	=============================================================================
 	
+
+{% endraw %}

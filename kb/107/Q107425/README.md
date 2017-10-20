@@ -6,6 +6,8 @@ permalink: /kb/107/Q107425/
 
 ## Q107425: Bookshelf: No Sound with Narrated Animation
 
+{% raw %}
+
 	Article: Q107425
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1993 edition
@@ -48,3 +50,5 @@ permalink: /kb/107/Q107425/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195729/
 
 ## Q195729: Virtual Globe 99: Cannot Press ALT+SPACEBAR to Restore Program
 
+{% raw %}
+
 	Article: Q195729
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/195/Q195729/
 	
 	=============================================================================
 	
+
+{% endraw %}

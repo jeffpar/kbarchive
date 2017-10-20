@@ -6,6 +6,8 @@ permalink: /kb/099/Q99176/
 
 ## Q99176: Bookshelf: Encyclopedia Index Lists Incomplete Names
 
+{% raw %}
+
 	Article: Q99176
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition,2.0
@@ -45,3 +47,5 @@ permalink: /kb/099/Q99176/
 	
 	=============================================================================
 	
+
+{% endraw %}

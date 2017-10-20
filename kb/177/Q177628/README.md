@@ -6,6 +6,8 @@ permalink: /kb/177/Q177628/
 
 ## Q177628: HOWTO: Use OLE_TRISTATE Property Data Type
 
+{% raw %}
+
 	Article: Q177628
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -160,3 +162,5 @@ permalink: /kb/177/Q177628/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177113/
 
 ## Q177113: Incomplete Print Jobs Using JetDirect over SPX
 
+{% raw %}
+
 	Article: Q177113
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -186,3 +188,5 @@ permalink: /kb/177/Q177113/
 	
 	=============================================================================
 	
+
+{% endraw %}

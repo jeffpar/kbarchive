@@ -6,6 +6,8 @@ permalink: /kb/197/Q197194/
 
 ## Q197194: WD97: Function to Test for Valid Directory Path
 
+{% raw %}
+
 	Article: Q197194
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/197/Q197194/
 	
 	=============================================================================
 	
+
+{% endraw %}

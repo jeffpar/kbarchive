@@ -6,6 +6,8 @@ permalink: /kb/197/Q197464/
 
 ## Q197464: How to Detect the ::&#36;DATA Attack in IIS Log Files
 
+{% raw %}
+
 	Article: Q197464
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0
@@ -75,3 +77,5 @@ permalink: /kb/197/Q197464/
 	
 	=============================================================================
 	
+
+{% endraw %}

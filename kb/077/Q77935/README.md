@@ -6,6 +6,8 @@ permalink: /kb/077/Q77935/
 
 ## Q77935: PRB: Causes of Help Compiler &quot;Table Too Complex&quot; Warning
 
+{% raw %}
+
 	Article: Q77935
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -61,3 +63,5 @@ permalink: /kb/077/Q77935/
 	
 	=============================================================================
 	
+
+{% endraw %}

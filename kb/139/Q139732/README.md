@@ -6,6 +6,8 @@ permalink: /kb/139/Q139732/
 
 ## Q139732: Cannot Join Domain Using Network Peripherals NP-EISA/S FDDI
 
+{% raw %}
+
 	Article: Q139732
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -54,3 +56,5 @@ permalink: /kb/139/Q139732/
 	
 	=============================================================================
 	
+
+{% endraw %}

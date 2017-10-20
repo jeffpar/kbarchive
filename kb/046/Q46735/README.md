@@ -6,6 +6,8 @@ permalink: /kb/046/Q46735/
 
 ## Q46735: Loop Optimization May Cause Improper Type Cast of int
 
+{% raw %}
+
 	Article: Q46735
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -68,3 +70,5 @@ permalink: /kb/046/Q46735/
 	lNum = (long) iNum = 34000                  <== WRONG! (should be -31536)
 	ulNum = (unsigned long) iNum = 34000        <== WRONG! (should be 4294935760)
 	done
+
+{% endraw %}

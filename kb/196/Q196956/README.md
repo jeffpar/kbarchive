@@ -6,6 +6,8 @@ permalink: /kb/196/Q196956/
 
 ## Q196956: DOC: Visual Basic Does Not Allow You to Build OLE DB Providers
 
+{% raw %}
+
 	Article: Q196956
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,6.0
@@ -46,3 +48,5 @@ permalink: /kb/196/Q196956/
 	
 	=============================================================================
 	
+
+{% endraw %}

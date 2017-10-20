@@ -6,6 +6,8 @@ permalink: /kb/090/Q90451/
 
 ## Q90451: NetWare NCOPY to Local Drive Gives Sharing Violation
 
+{% raw %}
+
 	Article: Q90451
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,95
@@ -67,3 +69,5 @@ permalink: /kb/090/Q90451/
 	
 	=============================================================================
 	
+
+{% endraw %}

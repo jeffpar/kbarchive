@@ -6,6 +6,8 @@ permalink: /kb/177/Q177399/
 
 ## Q177399: Event ID 20139 When Using Routing and Remote Access Service
 
+{% raw %}
+
 	Article: Q177399
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/177/Q177399/
 	
 	=============================================================================
 	
+
+{% endraw %}

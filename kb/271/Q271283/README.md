@@ -6,6 +6,8 @@ permalink: /kb/271/Q271283/
 
 ## Q271283: Install SNA Server or HIS 2000 on Windows Terminal Server
 
+{% raw %}
+
 	Article: Q271283
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3; :
@@ -180,3 +182,5 @@ permalink: /kb/271/Q271283/
 	
 	=============================================================================
 	
+
+{% endraw %}

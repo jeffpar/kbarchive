@@ -6,6 +6,8 @@ permalink: /kb/219/Q219365/
 
 ## Q219365: Free Disk Space Error When Attempting to Install SP4
 
+{% raw %}
+
 	Article: Q219365
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -75,3 +77,5 @@ permalink: /kb/219/Q219365/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/312/Q312141/
 
 ## Q312141: WINS Owner Replicated When Owner's IP Is in PersonaNonGrata List
 
+{% raw %}
+
 	Article: Q312141
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/312/Q312141/
 	
 	=============================================================================
 	
+
+{% endraw %}

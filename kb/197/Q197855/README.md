@@ -6,6 +6,8 @@ permalink: /kb/197/Q197855/
 
 ## Q197855: WD97: Control Codes to Use with Find and Replace (Edit Menu)
 
+{% raw %}
+
 	Article: Q197855
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/197/Q197855/
 	
 	=============================================================================
 	
+
+{% endraw %}

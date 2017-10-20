@@ -6,6 +6,8 @@ permalink: /kb/169/Q169472/
 
 ## Q169472: File and Printer Sharing for Microsoft Networks Is Unavailable
 
+{% raw %}
+
 	Article: Q169472
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -118,3 +120,5 @@ permalink: /kb/169/Q169472/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190122/
 
 ## Q190122: Err Msg: Please Insert the Disk Labeled: 'Generic FDC Driver...'
 
+{% raw %}
+
 	Article: Q190122
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/190/Q190122/
 	
 	=============================================================================
 	
+
+{% endraw %}

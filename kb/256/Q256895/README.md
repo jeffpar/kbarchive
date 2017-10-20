@@ -6,6 +6,8 @@ permalink: /kb/256/Q256895/
 
 ## Q256895: Remote Control Agent Does Not Listen on Assigned IP Addresses
 
+{% raw %}
+
 	Article: Q256895
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -84,3 +86,5 @@ permalink: /kb/256/Q256895/
 	
 	=============================================================================
 	
+
+{% endraw %}

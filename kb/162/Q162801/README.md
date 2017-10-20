@@ -6,6 +6,8 @@ permalink: /kb/162/Q162801/
 
 ## Q162801: WD97: Toolbars Dock on Top of Other Toolbars, Hide Buttons
 
+{% raw %}
+
 	Article: Q162801
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/162/Q162801/
 	
 	=============================================================================
 	
+
+{% endraw %}

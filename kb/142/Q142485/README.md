@@ -6,6 +6,8 @@ permalink: /kb/142/Q142485/
 
 ## Q142485: Streets 4.0: Highways Do Not Print Using HP Color Deskjet
 
+{% raw %}
+
 	Article: Q142485
 	Product(s): Microsoft Automap
 	Version(s): 4.00
@@ -68,3 +70,5 @@ permalink: /kb/142/Q142485/
 	
 	=============================================================================
 	
+
+{% endraw %}

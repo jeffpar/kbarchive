@@ -6,6 +6,8 @@ permalink: /kb/121/Q121048/
 
 ## Q121048: Determining the Version Number for HP DeskJet Drivers 4.x, 5.x
 
+{% raw %}
+
 	Article: Q121048
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.1,3.11
@@ -78,3 +80,5 @@ permalink: /kb/121/Q121048/
 	
 	=============================================================================
 	
+
+{% endraw %}

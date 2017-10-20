@@ -6,6 +6,8 @@ permalink: /kb/189/Q189187/
 
 ## Q189187: SMS: Pcmdump.exe - Using the PCM Dump Utility
 
+{% raw %}
+
 	Article: Q189187
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -79,3 +81,5 @@ permalink: /kb/189/Q189187/
 	
 	=============================================================================
 	
+
+{% endraw %}

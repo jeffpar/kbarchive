@@ -6,6 +6,8 @@ permalink: /kb/136/Q136447/
 
 ## Q136447: Performance Problems in Windows NT 3.51 With Intergraph PC-NFS
 
+{% raw %}
+
 	Article: Q136447
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -56,3 +58,5 @@ permalink: /kb/136/Q136447/
 	
 	=============================================================================
 	
+
+{% endraw %}

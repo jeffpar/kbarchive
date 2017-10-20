@@ -6,6 +6,8 @@ permalink: /kb/046/Q46272/
 
 ## Q46272: Documentation Errors in &quot;Configuring On-Line Help&quot; for M 1.02
 
+{% raw %}
+
 	Article: Q46272
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -40,3 +42,5 @@ permalink: /kb/046/Q46272/
 	The correct file is MHELP.PXT, so the sentence should read as follows:
 	
 	   MHELP.PXT is an extension to the editor.
+
+{% endraw %}

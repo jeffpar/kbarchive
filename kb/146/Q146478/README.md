@@ -6,6 +6,8 @@ permalink: /kb/146/Q146478/
 
 ## Q146478: XCLN: Exchange Requires Client for Microsoft Networks
 
+{% raw %}
+
 	Article: Q146478
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -74,3 +76,5 @@ permalink: /kb/146/Q146478/
 	
 	=============================================================================
 	
+
+{% endraw %}

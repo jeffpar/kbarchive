@@ -6,6 +6,8 @@ permalink: /kb/174/Q174729/
 
 ## Q174729: XADM: Err Msg: No Mapping Between Account Names and Security IDs
 
+{% raw %}
+
 	Article: Q174729
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -45,3 +47,5 @@ permalink: /kb/174/Q174729/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172774/
 
 ## Q172774: COPY Command at Command Prompt Does Not Prompt to Overwrite File
 
+{% raw %}
+
 	Article: Q172774
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS NT:4.0
@@ -45,3 +47,5 @@ permalink: /kb/172/Q172774/
 	
 	=============================================================================
 	
+
+{% endraw %}

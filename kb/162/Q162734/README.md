@@ -6,6 +6,8 @@ permalink: /kb/162/Q162734/
 
 ## Q162734: OL97: Cannot Access Offline Folders When Working Offline
 
+{% raw %}
+
 	Article: Q162734
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,97
@@ -70,3 +72,5 @@ permalink: /kb/162/Q162734/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279752/
 
 ## Q279752: SMS: Sms.ini File Is Missing Site Code and Domain Information
 
+{% raw %}
+
 	Article: Q279752
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3,1.2 SP4
@@ -72,3 +74,5 @@ permalink: /kb/279/Q279752/
 	
 	=============================================================================
 	
+
+{% endraw %}

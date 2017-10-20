@@ -6,6 +6,8 @@ permalink: /kb/236/Q236996/
 
 ## Q236996: ICA NetBEUI Workstation May Not Connect
 
+{% raw %}
+
 	Article: Q236996
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -58,3 +60,5 @@ permalink: /kb/236/Q236996/
 	
 	=============================================================================
 	
+
+{% endraw %}

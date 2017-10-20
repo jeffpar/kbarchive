@@ -6,6 +6,8 @@ permalink: /kb/145/Q145922/
 
 ## Q145922: XADM: Configuring Permissions for Windows NT Accounts
 
+{% raw %}
+
 	Article: Q145922
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/145/Q145922/
 	
 	=============================================================================
 	
+
+{% endraw %}

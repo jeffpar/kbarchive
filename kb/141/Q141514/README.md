@@ -6,6 +6,8 @@ permalink: /kb/141/Q141514/
 
 ## Q141514: Wrong IP Address Chosen from WINS Server
 
+{% raw %}
+
 	Article: Q141514
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/141/Q141514/
 	
 	=============================================================================
 	
+
+{% endraw %}

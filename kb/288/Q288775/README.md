@@ -6,6 +6,8 @@ permalink: /kb/288/Q288775/
 
 ## Q288775: PRB: Authentication Dialog Box When Exchange Accessed with MAPI
 
+{% raw %}
+
 	Article: Q288775
 	Product(s): Microsoft Exchange
 	Version(s): 1.0,1.21,4.0,5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/288/Q288775/
 	
 	=============================================================================
 	
+
+{% endraw %}

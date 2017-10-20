@@ -6,6 +6,8 @@ permalink: /kb/225/Q225081/
 
 ## Q225081: Cluster Resources Quorum Log Size Defaults to 64 KB
 
+{% raw %}
+
 	Article: Q225081
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -68,3 +70,5 @@ permalink: /kb/225/Q225081/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198678/
 
 ## Q198678: Content Expiration Shows Incorrect Date in HTMLA Web Admin
 
+{% raw %}
+
 	Article: Q198678
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -53,3 +55,5 @@ permalink: /kb/198/Q198678/
 	
 	=============================================================================
 	
+
+{% endraw %}

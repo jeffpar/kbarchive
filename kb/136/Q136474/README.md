@@ -6,6 +6,8 @@ permalink: /kb/136/Q136474/
 
 ## Q136474: PC Win: Long File Name Attachment Support
 
+{% raw %}
+
 	Article: Q136474
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -68,3 +70,5 @@ permalink: /kb/136/Q136474/
 	
 	=============================================================================
 	
+
+{% endraw %}

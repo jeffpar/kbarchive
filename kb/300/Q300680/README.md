@@ -6,6 +6,8 @@ permalink: /kb/300/Q300680/
 
 ## Q300680: INFO: Loading Multilingual Resource on Windows 2000
 
+{% raw %}
+
 	Article: Q300680
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -81,3 +83,5 @@ permalink: /kb/300/Q300680/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170870/
 
 ## Q170870: Err Msg: Query Is Too Expensive
 
+{% raw %}
+
 	Article: Q170870
 	Product(s): Internet Information Server
 	Version(s): winnt:1.1,2.0
@@ -66,3 +68,5 @@ permalink: /kb/170/Q170870/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/070/Q70744/
 
 ## Q70744: Running MS-DOS Shell in 43-Line Mode w/Renaissance EGA Board
 
+{% raw %}
+
 	Article: Q70744
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -36,3 +38,5 @@ permalink: /kb/070/Q70744/
 	
 	=============================================================================
 	
+
+{% endraw %}

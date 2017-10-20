@@ -6,6 +6,8 @@ permalink: /kb/282/Q282189/
 
 ## Q282189: ASP Error When Calling OOP Component with Delegation Security
 
+{% raw %}
+
 	Article: Q282189
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/282/Q282189/
 	
 	=============================================================================
 	
+
+{% endraw %}

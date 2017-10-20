@@ -6,6 +6,8 @@ permalink: /kb/191/Q191909/
 
 ## Q191909: XCLN: Error Msg: Unable to Download Offline Address Book
 
+{% raw %}
+
 	Article: Q191909
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02
@@ -75,3 +77,5 @@ permalink: /kb/191/Q191909/
 	
 	=============================================================================
 	
+
+{% endraw %}

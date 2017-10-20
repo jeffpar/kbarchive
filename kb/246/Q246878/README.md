@@ -6,6 +6,8 @@ permalink: /kb/246/Q246878/
 
 ## Q246878: How to Configure a Compass Client to Log On to an MMS Server
 
+{% raw %}
+
 	Article: Q246878
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2,2.2 SP1
@@ -128,3 +130,5 @@ permalink: /kb/246/Q246878/
 	
 	=============================================================================
 	
+
+{% endraw %}

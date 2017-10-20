@@ -6,6 +6,8 @@ permalink: /kb/225/Q225548/
 
 ## Q225548: IP Restrictions in HTMLA Web Admin Forms May Cause Problems
 
+{% raw %}
+
 	Article: Q225548
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -57,3 +59,5 @@ permalink: /kb/225/Q225548/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/205/Q205100/
 
 ## Q205100: Event IDs 4318 and 4224: WINS Database Missing or Corrupt
 
+{% raw %}
+
 	Article: Q205100
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -182,3 +184,5 @@ permalink: /kb/205/Q205100/
 	
 	=============================================================================
 	
+
+{% endraw %}

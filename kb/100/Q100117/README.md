@@ -6,6 +6,8 @@ permalink: /kb/100/Q100117/
 
 ## Q100117: Expert Developer CD Disk Information
 
+{% raw %}
+
 	Article: Q100117
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/100/Q100117/
 	
 	=============================================================================
 	
+
+{% endraw %}

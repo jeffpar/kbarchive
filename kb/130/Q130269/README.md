@@ -6,6 +6,8 @@ permalink: /kb/130/Q130269/
 
 ## Q130269: Arcade: No Support for Joysticks or Other Game Port Devices
 
+{% raw %}
+
 	Article: Q130269
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -37,3 +39,5 @@ permalink: /kb/130/Q130269/
 	
 	=============================================================================
 	
+
+{% endraw %}

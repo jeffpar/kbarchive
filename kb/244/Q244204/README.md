@@ -6,6 +6,8 @@ permalink: /kb/244/Q244204/
 
 ## Q244204: BUG: ATL Events Don't Fire If Defined With Interface Alias
 
+{% raw %}
+
 	Article: Q244204
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -167,3 +169,5 @@ permalink: /kb/244/Q244204/
 	
 	=============================================================================
 	
+
+{% endraw %}

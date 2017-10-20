@@ -6,6 +6,8 @@ permalink: /kb/219/Q219731/
 
 ## Q219731: Golf 99: Swing Animation Does Not Match the Shot You Play
 
+{% raw %}
+
 	Article: Q219731
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/219/Q219731/
 	
 	=============================================================================
 	
+
+{% endraw %}

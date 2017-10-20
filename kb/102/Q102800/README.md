@@ -6,6 +6,8 @@ permalink: /kb/102/Q102800/
 
 ## Q102800: Cannot Access IBM LAN Server NET.ACC from LAN Man System
 
+{% raw %}
+
 	Article: Q102800
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/102/Q102800/
 	
 	=============================================================================
 	
+
+{% endraw %}

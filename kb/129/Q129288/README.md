@@ -6,6 +6,8 @@ permalink: /kb/129/Q129288/
 
 ## Q129288: PRB: VB 4.0 EXEs Are Different When Compared Byte-by-Byte
 
+{% raw %}
+
 	Article: Q129288
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/129/Q129288/
 	
 	=============================================================================
 	
+
+{% endraw %}

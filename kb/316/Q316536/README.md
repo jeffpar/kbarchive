@@ -6,6 +6,8 @@ permalink: /kb/316/Q316536/
 
 ## Q316536: XCCC: &quot;Have Server Reply with Specific Message&quot;  Rule Fails
 
+{% raw %}
+
 	Article: Q316536
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -62,3 +64,5 @@ permalink: /kb/316/Q316536/
 	
 	=============================================================================
 	
+
+{% endraw %}

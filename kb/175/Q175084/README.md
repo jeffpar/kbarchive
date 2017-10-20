@@ -6,6 +6,8 @@ permalink: /kb/175/Q175084/
 
 ## Q175084: SAMPLE: PRTLGPCT.EXE: Print a Large Bitmap on Multiple Pages
 
+{% raw %}
+
 	Article: Q175084
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -180,3 +182,5 @@ permalink: /kb/175/Q175084/
 	
 	=============================================================================
 	
+
+{% endraw %}

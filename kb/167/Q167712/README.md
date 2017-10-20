@@ -6,6 +6,8 @@ permalink: /kb/167/Q167712/
 
 ## Q167712: Fatal Exception Error in VREDIR with DCOM Program
 
+{% raw %}
+
 	Article: Q167712
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0
@@ -78,3 +80,5 @@ permalink: /kb/167/Q167712/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238313/
 
 ## Q238313: PRB:Accessing the Internet Explorer Document Object Model w/ VB
 
+{% raw %}
+
 	Article: Q238313
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -245,3 +247,5 @@ permalink: /kb/238/Q238313/
 	
 	=============================================================================
 	
+
+{% endraw %}

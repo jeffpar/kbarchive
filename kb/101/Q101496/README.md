@@ -6,6 +6,8 @@ permalink: /kb/101/Q101496/
 
 ## Q101496: Err Msg: VNETWARE.386 Was Not Loaded After Installing Timbuktu
 
+{% raw %}
+
 	Article: Q101496
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/101/Q101496/
 	
 	=============================================================================
 	
+
+{% endraw %}

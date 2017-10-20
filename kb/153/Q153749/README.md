@@ -6,6 +6,8 @@ permalink: /kb/153/Q153749/
 
 ## Q153749: No Single-Route Broadcast on Token Ring with Windows 95 TCP/IP
 
+{% raw %}
+
 	Article: Q153749
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/153/Q153749/
 	
 	=============================================================================
 	
+
+{% endraw %}

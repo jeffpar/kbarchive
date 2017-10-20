@@ -6,6 +6,8 @@ permalink: /kb/216/Q216549/
 
 ## Q216549: Encarta 99: Introductory Audio Playback Is Intermittent or Quits
 
+{% raw %}
+
 	Article: Q216549
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -130,3 +132,5 @@ permalink: /kb/216/Q216549/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134869/
 
 ## Q134869: PPT7: Header or Footer Text Runs into Date or Slide Number
 
+{% raw %}
+
 	Article: Q134869
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134869/
 	
 	=============================================================================
 	
+
+{% endraw %}

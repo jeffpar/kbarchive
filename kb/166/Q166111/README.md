@@ -6,6 +6,8 @@ permalink: /kb/166/Q166111/
 
 ## Q166111: Asynchronous MFC ODBC Database Processing Using Threads
 
+{% raw %}
+
 	Article: Q166111
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/166/Q166111/
 	
 	=============================================================================
 	
+
+{% endraw %}

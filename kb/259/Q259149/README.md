@@ -6,6 +6,8 @@ permalink: /kb/259/Q259149/
 
 ## Q259149: SNA Server Selects Bad Dependent APPC LU from Default Pool
 
+{% raw %}
+
 	Article: Q259149
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -96,3 +98,5 @@ permalink: /kb/259/Q259149/
 	
 	=============================================================================
 	
+
+{% endraw %}

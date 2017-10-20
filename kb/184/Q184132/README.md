@@ -6,6 +6,8 @@ permalink: /kb/184/Q184132/
 
 ## Q184132: Err Msg: Value Entered Does Not Match with the Specified Type
 
+{% raw %}
+
 	Article: Q184132
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -106,3 +108,5 @@ permalink: /kb/184/Q184132/
 	
 	=============================================================================
 	
+
+{% endraw %}

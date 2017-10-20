@@ -6,6 +6,8 @@ permalink: /kb/128/Q128061/
 
 ## Q128061: INFO: Visual FoxPro Setup in Windows and Windows for Workgroups
 
+{% raw %}
+
 	Article: Q128061
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -82,3 +84,5 @@ permalink: /kb/128/Q128061/
 	
 	=============================================================================
 	
+
+{% endraw %}

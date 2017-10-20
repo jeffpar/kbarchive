@@ -6,6 +6,8 @@ permalink: /kb/268/Q268513/
 
 ## Q268513: Error Message Appears When Installing 3Com 3C575-TX CardBus NIC
 
+{% raw %}
+
 	Article: Q268513
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/268/Q268513/
 	
 	=============================================================================
 	
+
+{% endraw %}

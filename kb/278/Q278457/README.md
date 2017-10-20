@@ -6,6 +6,8 @@ permalink: /kb/278/Q278457/
 
 ## Q278457: Intermittent Hangs in Inetinfo with Microsoft SNA DB2 Provider
 
+{% raw %}
+
 	Article: Q278457
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3
@@ -76,3 +78,5 @@ permalink: /kb/278/Q278457/
 	
 	=============================================================================
 	
+
+{% endraw %}

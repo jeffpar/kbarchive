@@ -6,6 +6,8 @@ permalink: /kb/171/Q171478/
 
 ## Q171478: FIX: Cannot Set Width/Height of UserControl in Resize Event
 
+{% raw %}
+
 	Article: Q171478
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/171/Q171478/
 	
 	=============================================================================
 	
+
+{% endraw %}

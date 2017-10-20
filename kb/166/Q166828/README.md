@@ -6,6 +6,8 @@ permalink: /kb/166/Q166828/
 
 ## Q166828: Upgrade Installation of Windows NT 4.0 Results In STOP Errors
 
+{% raw %}
+
 	Article: Q166828
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -128,3 +130,5 @@ permalink: /kb/166/Q166828/
 	
 	=============================================================================
 	
+
+{% endraw %}

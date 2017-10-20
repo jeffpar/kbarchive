@@ -6,6 +6,8 @@ permalink: /kb/238/Q238053/
 
 ## Q238053: Encarta Dictionary: How to Turn Off Sounds and Visual Effects
 
+{% raw %}
+
 	Article: Q238053
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -122,3 +124,5 @@ permalink: /kb/238/Q238053/
 	
 	=============================================================================
 	
+
+{% endraw %}

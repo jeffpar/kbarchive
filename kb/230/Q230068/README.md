@@ -6,6 +6,8 @@ permalink: /kb/230/Q230068/
 
 ## Q230068: XFOR: Exchange Migration Does Not Work on Large Notes Mailbox
 
+{% raw %}
+
 	Article: Q230068
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -56,3 +58,5 @@ permalink: /kb/230/Q230068/
 	
 	=============================================================================
 	
+
+{% endraw %}

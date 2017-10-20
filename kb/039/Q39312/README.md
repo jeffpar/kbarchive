@@ -6,6 +6,8 @@ permalink: /kb/039/Q39312/
 
 ## Q39312: Commenting Out Blocks of Code and Comments for Debugging
 
+{% raw %}
+
 	Article: Q39312
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -44,3 +46,5 @@ permalink: /kb/039/Q39312/
 	   /* code and comments that you wish to remove are here */
 	
 	#endif
+
+{% endraw %}

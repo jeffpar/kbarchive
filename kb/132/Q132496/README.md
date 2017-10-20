@@ -6,6 +6,8 @@ permalink: /kb/132/Q132496/
 
 ## Q132496: Err Msg: Invalid VxD Dynamic Link Call to Device Number 0005
 
+{% raw %}
+
 	Article: Q132496
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/132/Q132496/
 	
 	=============================================================================
 	
+
+{% endraw %}

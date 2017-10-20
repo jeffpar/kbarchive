@@ -6,6 +6,8 @@ permalink: /kb/160/Q160038/
 
 ## Q160038: Socket EA Type II PC Card Hangs HP 800CT
 
+{% raw %}
+
 	Article: Q160038
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -48,3 +50,5 @@ permalink: /kb/160/Q160038/
 	
 	=============================================================================
 	
+
+{% endraw %}

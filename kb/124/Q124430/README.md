@@ -6,6 +6,8 @@ permalink: /kb/124/Q124430/
 
 ## Q124430: Information on the SMSLOG.TXT File
 
+{% raw %}
+
 	Article: Q124430
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -68,3 +70,5 @@ permalink: /kb/124/Q124430/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/297/Q297826/
 
 ## Q297826: FIX: CHRSAW() Function Can Hang When AutoYield = .F.
 
+{% raw %}
+
 	Article: Q297826
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/297/Q297826/
 	
 	=============================================================================
 	
+
+{% endraw %}

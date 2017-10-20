@@ -6,6 +6,8 @@ permalink: /kb/049/Q49551/
 
 ## Q49551: Multi-Player Information README.DOC Version 4.00
 
+{% raw %}
+
 	Article: Q49551
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/049/Q49551/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186182/
 
 ## Q186182: XFOR: Some Macintosh Attachments Not Encoded Using BinHex
 
+{% raw %}
+
 	Article: Q186182
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -96,3 +98,5 @@ permalink: /kb/186/Q186182/
 	
 	=============================================================================
 	
+
+{% endraw %}

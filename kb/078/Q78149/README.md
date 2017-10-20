@@ -6,6 +6,8 @@ permalink: /kb/078/Q78149/
 
 ## Q78149: AST Premium 286 May Require Premium BIOS 2.0
 
+{% raw %}
+
 	Article: Q78149
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -60,3 +62,5 @@ permalink: /kb/078/Q78149/
 	
 	=============================================================================
 	
+
+{% endraw %}

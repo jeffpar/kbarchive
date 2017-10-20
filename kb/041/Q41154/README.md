@@ -6,6 +6,8 @@ permalink: /kb/041/Q41154/
 
 ## Q41154: Towers of Hanoi: QuickBASIC 4.50 Recursive SUBprogram Example
 
+{% raw %}
+
 	Article: Q41154
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -90,3 +92,5 @@ permalink: /kb/041/Q41154/
 	                CALL HANOI(DISKS-1,TOWERB(),TOWERA(),TOWERC())
 	        END IF
 	END SUB
+
+{% endraw %}

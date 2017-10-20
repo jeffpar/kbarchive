@@ -6,6 +6,8 @@ permalink: /kb/035/Q35244/
 
 ## Q35244: To Suppress Linefeed, OPEN &quot;lpt1&quot; BINARY or &quot;LPT1:BIN&quot; RANDOM
 
+{% raw %}
+
 	Article: Q35244
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -94,3 +96,5 @@ permalink: /kb/035/Q35244/
 	CLOSE
 	PRINT "done printing"
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178126/
 
 ## Q178126: SNA NT Clients Should not Fall Back to Named Pipes
 
+{% raw %}
+
 	Article: Q178126
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2
@@ -81,3 +83,5 @@ permalink: /kb/178/Q178126/
 	
 	=============================================================================
 	
+
+{% endraw %}

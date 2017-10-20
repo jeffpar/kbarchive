@@ -6,6 +6,8 @@ permalink: /kb/267/Q267237/
 
 ## Q267237: SMS: Upgrading SMS SPs Resets Provider Connections to Default
 
+{% raw %}
+
 	Article: Q267237
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -152,3 +154,5 @@ permalink: /kb/267/Q267237/
 	
 	=============================================================================
 	
+
+{% endraw %}

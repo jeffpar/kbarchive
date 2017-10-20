@@ -6,6 +6,8 @@ permalink: /kb/151/Q151737/
 
 ## Q151737: Shortcut Inserted as Object Loses Command-Line Options
 
+{% raw %}
+
 	Article: Q151737
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -40,3 +42,5 @@ permalink: /kb/151/Q151737/
 	
 	=============================================================================
 	
+
+{% endraw %}

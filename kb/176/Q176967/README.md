@@ -6,6 +6,8 @@ permalink: /kb/176/Q176967/
 
 ## Q176967: WinNT Error Message: TCP/IP CP Reported Error 1214
 
+{% raw %}
+
 	Article: Q176967
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -101,3 +103,5 @@ permalink: /kb/176/Q176967/
 	
 	=============================================================================
 	
+
+{% endraw %}

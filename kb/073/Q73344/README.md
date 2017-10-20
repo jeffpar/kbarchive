@@ -6,6 +6,8 @@ permalink: /kb/073/Q73344/
 
 ## Q73344: Troubleshooting the Logitech Cordless Mouseman
 
+{% raw %}
+
 	Article: Q73344
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -124,3 +126,5 @@ permalink: /kb/073/Q73344/
 	
 	=============================================================================
 	
+
+{% endraw %}

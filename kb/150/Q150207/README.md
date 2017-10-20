@@ -6,6 +6,8 @@ permalink: /kb/150/Q150207/
 
 ## Q150207: FIX: Error Message on Property Page of ImageList Reappears
 
+{% raw %}
+
 	Article: Q150207
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150207/
 	
 	=============================================================================
 	
+
+{% endraw %}

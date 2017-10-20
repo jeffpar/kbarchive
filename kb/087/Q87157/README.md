@@ -6,6 +6,8 @@ permalink: /kb/087/Q87157/
 
 ## Q87157: Mac Wkst: Sending Mail Created During Offline Operation
 
+{% raw %}
+
 	Article: Q87157
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -42,3 +44,5 @@ permalink: /kb/087/Q87157/
 	
 	=============================================================================
 	
+
+{% endraw %}

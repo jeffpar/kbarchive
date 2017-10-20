@@ -6,6 +6,8 @@ permalink: /kb/196/Q196405/
 
 ## Q196405: XADM: Navigation Bar Missing After Upgrading to Exchange 5.5
 
+{% raw %}
+
 	Article: Q196405
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/196/Q196405/
 	
 	=============================================================================
 	
+
+{% endraw %}

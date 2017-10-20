@@ -6,6 +6,8 @@ permalink: /kb/090/Q90169/
 
 ## Q90169: WinLogin Err Msg: STFSETUP.INF Has Missing...
 
+{% raw %}
+
 	Article: Q90169
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -62,3 +64,5 @@ permalink: /kb/090/Q90169/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276230/
 
 ## Q276230: SNA Server Incorrectly Formats the First Line of Page
 
+{% raw %}
+
 	Article: Q276230
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP1,4.0 SP2,4.0 SP3
@@ -69,3 +71,5 @@ permalink: /kb/276/Q276230/
 	
 	=============================================================================
 	
+
+{% endraw %}

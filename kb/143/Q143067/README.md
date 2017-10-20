@@ -6,6 +6,8 @@ permalink: /kb/143/Q143067/
 
 ## Q143067: Mac Multimedia: Movies Freeze or Quit with QuickTime 1.6.x
 
+{% raw %}
+
 	Article: Q143067
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0,1.0a,2.0; :1994 edition,1995 edition,1995, 1996, 1997 editions,1997 editi
@@ -135,3 +137,5 @@ permalink: /kb/143/Q143067/
 	
 	=============================================================================
 	
+
+{% endraw %}

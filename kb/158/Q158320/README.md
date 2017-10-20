@@ -6,6 +6,8 @@ permalink: /kb/158/Q158320/
 
 ## Q158320: RSHSVC Included in WinNT 3.5x/4.0 ResKit Has Potential Leak
 
+{% raw %}
+
 	Article: Q158320
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -93,3 +95,5 @@ permalink: /kb/158/Q158320/
 	
 	=============================================================================
 	
+
+{% endraw %}

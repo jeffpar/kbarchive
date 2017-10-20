@@ -6,6 +6,8 @@ permalink: /kb/145/Q145723/
 
 ## Q145723: HOWTO: Modify SWDEPEND.INI for Your OLE Custom Control
 
+{% raw %}
+
 	Article: Q145723
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/145/Q145723/
 	
 	=============================================================================
 	
+
+{% endraw %}

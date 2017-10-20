@@ -6,6 +6,8 @@ permalink: /kb/074/Q74879/
 
 ## Q74879: ZEOS SCSI Adapter and RLL Controller Requires EMMEXCLUDE
 
+{% raw %}
+
 	Article: Q74879
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/074/Q74879/
 	
 	=============================================================================
 	
+
+{% endraw %}

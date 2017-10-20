@@ -6,6 +6,8 @@ permalink: /kb/140/Q140785/
 
 ## Q140785: PPT7: Style Checker Capitalizes Words Incorrectly
 
+{% raw %}
+
 	Article: Q140785
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -64,3 +66,5 @@ permalink: /kb/140/Q140785/
 	
 	=============================================================================
 	
+
+{% endraw %}

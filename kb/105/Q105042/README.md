@@ -6,6 +6,8 @@ permalink: /kb/105/Q105042/
 
 ## Q105042: HOWTO: Add/Remove Network Connections in FoxPro
 
+{% raw %}
+
 	Article: Q105042
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -126,3 +128,5 @@ permalink: /kb/105/Q105042/
 	
 	=============================================================================
 	
+
+{% endraw %}

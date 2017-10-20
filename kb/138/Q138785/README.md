@@ -6,6 +6,8 @@ permalink: /kb/138/Q138785/
 
 ## Q138785: DOC: CImageList::DeleteObject Generates a C2039 Error
 
+{% raw %}
+
 	Article: Q138785
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2
@@ -54,3 +56,5 @@ permalink: /kb/138/Q138785/
 	
 	=============================================================================
 	
+
+{% endraw %}

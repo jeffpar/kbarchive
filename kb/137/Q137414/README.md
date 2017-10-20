@@ -6,6 +6,8 @@ permalink: /kb/137/Q137414/
 
 ## Q137414: Baseball 1995: Copy from Daily Causes Invalid Data
 
+{% raw %}
+
 	Article: Q137414
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -42,3 +44,5 @@ permalink: /kb/137/Q137414/
 	
 	=============================================================================
 	
+
+{% endraw %}

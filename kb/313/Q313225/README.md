@@ -6,6 +6,8 @@ permalink: /kb/313/Q313225/
 
 ## Q313225: HOWTO: Connect to a SQL Server 2000 Named Instance with JDBC
 
+{% raw %}
+
 	Article: Q313225
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/313/Q313225/
 	
 	=============================================================================
 	
+
+{% endraw %}

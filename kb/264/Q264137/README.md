@@ -6,6 +6,8 @@ permalink: /kb/264/Q264137/
 
 ## Q264137: MTM2: Cannot Change Weather on the Graveyard Track
 
+{% raw %}
+
 	Article: Q264137
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -41,3 +43,5 @@ permalink: /kb/264/Q264137/
 	
 	=============================================================================
 	
+
+{% endraw %}

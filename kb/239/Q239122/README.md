@@ -6,6 +6,8 @@ permalink: /kb/239/Q239122/
 
 ## Q239122: XFOR: SNADS Documentation Chap03.doc on Exchange CD Is Corrupted
 
+{% raw %}
+
 	Article: Q239122
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/239/Q239122/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186743/
 
 ## Q186743: International Characters Print Incorrectly in Schedule Plus
 
+{% raw %}
+
 	Article: Q186743
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/186/Q186743/
 	
 	=============================================================================
 	
+
+{% endraw %}

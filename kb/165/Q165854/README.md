@@ -6,6 +6,8 @@ permalink: /kb/165/Q165854/
 
 ## Q165854: SNA 3.0 Service Pack 1 Readme.txt File
 
+{% raw %}
+
 	Article: Q165854
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -181,3 +183,5 @@ permalink: /kb/165/Q165854/
 	
 	=============================================================================
 	
+
+{% endraw %}

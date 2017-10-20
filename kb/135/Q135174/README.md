@@ -6,6 +6,8 @@ permalink: /kb/135/Q135174/
 
 ## Q135174: Cannot Access CD-ROM Drive from MS-DOS Mode or Command Prompt
 
+{% raw %}
+
 	Article: Q135174
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:; Win2000:95
@@ -345,3 +347,5 @@ permalink: /kb/135/Q135174/
 	
 	=============================================================================
 	
+
+{% endraw %}

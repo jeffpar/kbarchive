@@ -6,6 +6,8 @@ permalink: /kb/141/Q141138/
 
 ## Q141138: Signing Up for The Microsoft Network with Older Software
 
+{% raw %}
+
 	Article: Q141138
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -45,3 +47,5 @@ permalink: /kb/141/Q141138/
 	
 	=============================================================================
 	
+
+{% endraw %}

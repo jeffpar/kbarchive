@@ -6,6 +6,8 @@ permalink: /kb/272/Q272714/
 
 ## Q272714: XFOR: Fax Sent to 1(262)xxx-xxxx Gets Addressed to 1Cxxx-xxxx
 
+{% raw %}
+
 	Article: Q272714
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -108,3 +110,5 @@ permalink: /kb/272/Q272714/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175272/
 
 ## Q175272: Windows 3.x CPIC or APPC Fails; Host Sends Sense Code 10086040
 
+{% raw %}
+
 	Article: Q175272
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2
@@ -100,3 +102,5 @@ permalink: /kb/175/Q175272/
 	
 	=============================================================================
 	
+
+{% endraw %}

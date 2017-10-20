@@ -6,6 +6,8 @@ permalink: /kb/118/Q118946/
 
 ## Q118946: PC Ext: What Is the RNETSEM.GLB?
 
+{% raw %}
+
 	Article: Q118946
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -47,3 +49,5 @@ permalink: /kb/118/Q118946/
 	
 	=============================================================================
 	
+
+{% endraw %}

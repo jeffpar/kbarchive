@@ -6,6 +6,8 @@ permalink: /kb/160/Q160900/
 
 ## Q160900: Windows NT Users May Lack Permission to Change Password
 
+{% raw %}
+
 	Article: Q160900
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/160/Q160900/
 	
 	=============================================================================
 	
+
+{% endraw %}

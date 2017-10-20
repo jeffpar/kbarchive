@@ -6,6 +6,8 @@ permalink: /kb/128/Q128770/
 
 ## Q128770: PRB: &quot;Insufficient Memory&quot; Previewing A Report In FPM
 
+{% raw %}
+
 	Article: Q128770
 	Product(s): Microsoft FoxPro
 	Version(s): 2.60a 3.00b
@@ -65,3 +67,5 @@ permalink: /kb/128/Q128770/
 	
 	=============================================================================
 	
+
+{% endraw %}

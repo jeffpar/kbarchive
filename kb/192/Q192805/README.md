@@ -6,6 +6,8 @@ permalink: /kb/192/Q192805/
 
 ## Q192805: FIX: Hierarchical Child Recordset and ADO Data Control
 
+{% raw %}
+
 	Article: Q192805
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.1 SP2,2.5,2.6,6.0
@@ -99,3 +101,5 @@ permalink: /kb/192/Q192805/
 	
 	=============================================================================
 	
+
+{% endraw %}

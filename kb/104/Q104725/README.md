@@ -6,6 +6,8 @@ permalink: /kb/104/Q104725/
 
 ## Q104725: How to Configure ScanDisk to Monitor Read/Write/Seek Times
 
+{% raw %}
+
 	Article: Q104725
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -57,3 +59,5 @@ permalink: /kb/104/Q104725/
 	
 	=============================================================================
 	
+
+{% endraw %}

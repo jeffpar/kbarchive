@@ -6,6 +6,8 @@ permalink: /kb/165/Q165681/
 
 ## Q165681: INFO: Visual C++ 5.0 Readme, Build Issues
 
+{% raw %}
+
 	Article: Q165681
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -154,3 +156,5 @@ permalink: /kb/165/Q165681/
 	
 	=============================================================================
 	
+
+{% endraw %}

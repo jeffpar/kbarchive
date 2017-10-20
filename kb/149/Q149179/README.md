@@ -6,6 +6,8 @@ permalink: /kb/149/Q149179/
 
 ## Q149179: SMS 1.2 and SQL Server Upgrade
 
+{% raw %}
+
 	Article: Q149179
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2,4.21a,6.0
@@ -82,3 +84,5 @@ permalink: /kb/149/Q149179/
 	
 	=============================================================================
 	
+
+{% endraw %}

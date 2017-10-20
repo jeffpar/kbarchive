@@ -6,6 +6,8 @@ permalink: /kb/151/Q151841/
 
 ## Q151841: PRB: FoxPro and Clipper Share the Same DBF Files on a Network
 
+{% raw %}
+
 	Article: Q151841
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 2.60 2.60a 3.00
@@ -106,3 +108,5 @@ permalink: /kb/151/Q151841/
 	
 	=============================================================================
 	
+
+{% endraw %}

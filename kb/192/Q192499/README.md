@@ -6,6 +6,8 @@ permalink: /kb/192/Q192499/
 
 ## Q192499: SMS: Query Operator to Find Items Whose Value Is &lt;NULL&gt;
 
+{% raw %}
+
 	Article: Q192499
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -40,3 +42,5 @@ permalink: /kb/192/Q192499/
 	
 	=============================================================================
 	
+
+{% endraw %}

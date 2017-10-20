@@ -6,6 +6,8 @@ permalink: /kb/295/Q295696/
 
 ## Q295696: XADM: KMS Not Processing New Client Enrollments
 
+{% raw %}
+
 	Article: Q295696
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -70,3 +72,5 @@ permalink: /kb/295/Q295696/
 	
 	=============================================================================
 	
+
+{% endraw %}

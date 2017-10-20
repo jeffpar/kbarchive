@@ -6,6 +6,8 @@ permalink: /kb/072/Q72049/
 
 ## Q72049: Windows Causes Reboot on Everex 386/25 AGI 3900A
 
+{% raw %}
+
 	Article: Q72049
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/072/Q72049/
 	
 	=============================================================================
 	
+
+{% endraw %}

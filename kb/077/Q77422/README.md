@@ -6,6 +6,8 @@ permalink: /kb/077/Q77422/
 
 ## Q77422: Windows 3.0 Printer Drivers
 
+{% raw %}
+
 	Article: Q77422
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/077/Q77422/
 	
 	=============================================================================
 	
+
+{% endraw %}

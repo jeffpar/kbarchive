@@ -6,6 +6,8 @@ permalink: /kb/190/Q190846/
 
 ## Q190846: BUG: Calling AsyncRead on a File Twice Causes Error 698
 
+{% raw %}
+
 	Article: Q190846
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/190/Q190846/
 	
 	=============================================================================
 	
+
+{% endraw %}

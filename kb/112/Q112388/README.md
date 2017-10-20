@@ -6,6 +6,8 @@ permalink: /kb/112/Q112388/
 
 ## Q112388: GETBASEIRQ EscapeCommFunction()
 
+{% raw %}
+
 	Article: Q112388
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/112/Q112388/
 	
 	=============================================================================
 	
+
+{% endraw %}

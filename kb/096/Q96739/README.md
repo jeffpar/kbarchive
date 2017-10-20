@@ -6,6 +6,8 @@ permalink: /kb/096/Q96739/
 
 ## Q96739: Boot Drive Failure and Recovery with FTBOOT
 
+{% raw %}
+
 	Article: Q96739
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/096/Q96739/
 	
 	=============================================================================
 	
+
+{% endraw %}

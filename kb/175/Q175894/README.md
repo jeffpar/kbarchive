@@ -6,6 +6,8 @@ permalink: /kb/175/Q175894/
 
 ## Q175894: Video Adapter Drivers Included with DirectX 5 and DirectX 6
 
+{% raw %}
+
 	Article: Q175894
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; WINNT:4.0
@@ -351,3 +353,5 @@ permalink: /kb/175/Q175894/
 	
 	=============================================================================
 	
+
+{% endraw %}

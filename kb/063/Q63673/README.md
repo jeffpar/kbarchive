@@ -6,6 +6,8 @@ permalink: /kb/063/Q63673/
 
 ## Q63673: Setup Doesn't Modify Configuration Files with OS/2
 
+{% raw %}
+
 	Article: Q63673
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -44,3 +46,5 @@ permalink: /kb/063/Q63673/
 	
 	=============================================================================
 	
+
+{% endraw %}

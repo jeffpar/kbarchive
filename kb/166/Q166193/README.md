@@ -6,6 +6,8 @@ permalink: /kb/166/Q166193/
 
 ## Q166193: SAMPLE: ColorFrm Demonstrates ActiveX Control w/ Popup Toolbar
 
+{% raw %}
+
 	Article: Q166193
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.0a,4.1,4.2,4.2b,5.0,6.0
@@ -114,3 +116,5 @@ permalink: /kb/166/Q166193/
 	
 	=============================================================================
 	
+
+{% endraw %}

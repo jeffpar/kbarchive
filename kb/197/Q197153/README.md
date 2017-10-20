@@ -6,6 +6,8 @@ permalink: /kb/197/Q197153/
 
 ## Q197153: WD97: Reveal Formatting Does Not Work Inside a Text Box
 
+{% raw %}
+
 	Article: Q197153
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -79,3 +81,5 @@ permalink: /kb/197/Q197153/
 	
 	=============================================================================
 	
+
+{% endraw %}

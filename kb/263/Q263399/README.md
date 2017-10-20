@@ -6,6 +6,8 @@ permalink: /kb/263/Q263399/
 
 ## Q263399: SMS: Repackager Stops Responding During Visio 2000 Compilation
 
+{% raw %}
+
 	Article: Q263399
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/263/Q263399/
 	
 	=============================================================================
 	
+
+{% endraw %}

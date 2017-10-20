@@ -6,6 +6,8 @@ permalink: /kb/145/Q145919/
 
 ## Q145919: XFOR: MIME Headers for Attachment Filenames Supported by IMC
 
+{% raw %}
+
 	Article: Q145919
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/145/Q145919/
 	
 	=============================================================================
 	
+
+{% endraw %}

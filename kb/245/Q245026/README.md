@@ -6,6 +6,8 @@ permalink: /kb/245/Q245026/
 
 ## Q245026: Unattended Installation of 3Com NIC Generates Error Message.
 
+{% raw %}
+
 	Article: Q245026
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/245/Q245026/
 	
 	=============================================================================
 	
+
+{% endraw %}

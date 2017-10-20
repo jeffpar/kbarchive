@@ -6,6 +6,8 @@ permalink: /kb/167/Q167306/
 
 ## Q167306: FIX: Initializer for Empty Struct Causes C2059 or C1001
 
+{% raw %}
+
 	Article: Q167306
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/167/Q167306/
 	
 	=============================================================================
 	
+
+{% endraw %}

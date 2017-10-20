@@ -6,6 +6,8 @@ permalink: /kb/115/Q115554/
 
 ## Q115554: PROFS: Function of VMGATE and the 3270 Emulation Software
 
+{% raw %}
+
 	Article: Q115554
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -61,3 +63,5 @@ permalink: /kb/115/Q115554/
 	
 	=============================================================================
 	
+
+{% endraw %}

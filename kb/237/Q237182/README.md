@@ -6,6 +6,8 @@ permalink: /kb/237/Q237182/
 
 ## Q237182: XFOR: MSMI Fails with Unknown Exception During Message Delivery
 
+{% raw %}
+
 	Article: Q237182
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -79,3 +81,5 @@ permalink: /kb/237/Q237182/
 	
 	=============================================================================
 	
+
+{% endraw %}

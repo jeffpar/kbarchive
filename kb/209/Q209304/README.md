@@ -6,6 +6,8 @@ permalink: /kb/209/Q209304/
 
 ## Q209304: Index Server Catalog Corruption
 
+{% raw %}
+
 	Article: Q209304
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -67,3 +69,5 @@ permalink: /kb/209/Q209304/
 	
 	=============================================================================
 	
+
+{% endraw %}

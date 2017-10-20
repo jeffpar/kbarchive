@@ -6,6 +6,8 @@ permalink: /kb/155/Q155886/
 
 ## Q155886: Domain Controller Not Found When Using DNS
 
+{% raw %}
+
 	Article: Q155886
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -78,3 +80,5 @@ permalink: /kb/155/Q155886/
 	
 	=============================================================================
 	
+
+{% endraw %}

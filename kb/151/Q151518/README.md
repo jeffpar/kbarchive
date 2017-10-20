@@ -6,6 +6,8 @@ permalink: /kb/151/Q151518/
 
 ## Q151518: SNADS and PROFS Addresses Have Wrong Gateway Information
 
+{% raw %}
+
 	Article: Q151518
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/151/Q151518/
 	
 	=============================================================================
 	
+
+{% endraw %}

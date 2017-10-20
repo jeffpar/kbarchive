@@ -6,6 +6,8 @@ permalink: /kb/159/Q159942/
 
 ## Q159942: WD97: General Information about Text Boxes and Frames
 
+{% raw %}
+
 	Article: Q159942
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -201,3 +203,5 @@ permalink: /kb/159/Q159942/
 	
 	=============================================================================
 	
+
+{% endraw %}

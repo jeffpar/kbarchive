@@ -6,6 +6,8 @@ permalink: /kb/158/Q158816/
 
 ## Q158816: FP: Invalid Target Frame Reference Causes New Browser to Load
 
+{% raw %}
+
 	Article: Q158816
 	Product(s): Word Front Page
 	Version(s): 1.0,1.1
@@ -76,3 +78,5 @@ permalink: /kb/158/Q158816/
 	
 	=============================================================================
 	
+
+{% endraw %}

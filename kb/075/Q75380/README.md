@@ -6,6 +6,8 @@ permalink: /kb/075/Q75380/
 
 ## Q75380: INFO: Using the DRAWPATTERNRECT Escape in Windows
 
+{% raw %}
+
 	Article: Q75380
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
@@ -76,3 +78,5 @@ permalink: /kb/075/Q75380/
 	
 	=============================================================================
 	
+
+{% endraw %}

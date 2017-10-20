@@ -6,6 +6,8 @@ permalink: /kb/141/Q141380/
 
 ## Q141380: TCP/IP Printing to a QMS 1725 Print System
 
+{% raw %}
+
 	Article: Q141380
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/141/Q141380/
 	
 	=============================================================================
 	
+
+{% endraw %}

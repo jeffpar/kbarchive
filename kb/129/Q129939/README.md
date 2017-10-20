@@ -6,6 +6,8 @@ permalink: /kb/129/Q129939/
 
 ## Q129939: PRB: Err.Raise Doesn't Always Generate Expected Error
 
+{% raw %}
+
 	Article: Q129939
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -168,3 +170,5 @@ permalink: /kb/129/Q129939/
 	
 	=============================================================================
 	
+
+{% endraw %}

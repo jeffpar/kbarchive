@@ -6,6 +6,8 @@ permalink: /kb/183/Q183723/
 
 ## Q183723: Default NNTP Query Form Returns Blank Table Cells
 
+{% raw %}
+
 	Article: Q183723
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0
@@ -55,3 +57,5 @@ permalink: /kb/183/Q183723/
 	
 	=============================================================================
 	
+
+{% endraw %}

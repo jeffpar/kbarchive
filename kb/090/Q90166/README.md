@@ -6,6 +6,8 @@ permalink: /kb/090/Q90166/
 
 ## Q90166: Configuration Manager Does Not Accept ENTER Key
 
+{% raw %}
+
 	Article: Q90166
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -64,3 +66,5 @@ permalink: /kb/090/Q90166/
 	
 	=============================================================================
 	
+
+{% endraw %}

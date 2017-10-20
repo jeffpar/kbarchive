@@ -6,6 +6,8 @@ permalink: /kb/112/Q112005/
 
 ## Q112005: BUG: Illegal Formal Argument and -Zi Crash Compiler
 
+{% raw %}
+
 	Article: Q112005
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -94,3 +96,5 @@ permalink: /kb/112/Q112005/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35905/
 
 ## Q35905: Example of BASIC Calling MS OS/2 Function DosStartSession
 
+{% raw %}
+
 	Article: Q35905
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -83,3 +85,5 @@ permalink: /kb/035/Q35905/
 	   while inkey$="" :wend
 	end if
 	END
+
+{% endraw %}

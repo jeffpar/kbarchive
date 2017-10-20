@@ -6,6 +6,8 @@ permalink: /kb/089/Q89192/
 
 ## Q89192: Insufficient Memory With DR DOS and LANtastic
 
+{% raw %}
+
 	Article: Q89192
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/089/Q89192/
 	
 	=============================================================================
 	
+
+{% endraw %}

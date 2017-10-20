@@ -6,6 +6,8 @@ permalink: /kb/140/Q140929/
 
 ## Q140929: Appstart Causes General Protection (GP) Fault on Shared Apps
 
+{% raw %}
+
 	Article: Q140929
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -55,3 +57,5 @@ permalink: /kb/140/Q140929/
 	
 	=============================================================================
 	
+
+{% endraw %}

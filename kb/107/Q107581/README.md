@@ -6,6 +6,8 @@ permalink: /kb/107/Q107581/
 
 ## Q107581: NET USE in VM with NetWare Diskless Workstation
 
+{% raw %}
+
 	Article: Q107581
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -71,3 +73,5 @@ permalink: /kb/107/Q107581/
 	
 	=============================================================================
 	
+
+{% endraw %}

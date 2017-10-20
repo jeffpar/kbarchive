@@ -6,6 +6,8 @@ permalink: /kb/157/Q157446/
 
 ## Q157446: CorelDraw 6 cannot be installed on Korean NT Workstation 3.51
 
+{% raw %}
+
 	Article: Q157446
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157446/
 	
 	=============================================================================
 	
+
+{% endraw %}

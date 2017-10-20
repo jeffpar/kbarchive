@@ -6,6 +6,8 @@ permalink: /kb/271/Q271131/
 
 ## Q271131: Use the DRDA_VB Sample for DB2OLEDB
 
+{% raw %}
+
 	Article: Q271131
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/271/Q271131/
 	
 	=============================================================================
 	
+
+{% endraw %}

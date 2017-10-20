@@ -6,6 +6,8 @@ permalink: /kb/224/Q224428/
 
 ## Q224428: STOP 0x0A in Redirector with Invalid Server Responses
 
+{% raw %}
+
 	Article: Q224428
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -98,3 +100,5 @@ permalink: /kb/224/Q224428/
 	
 	=============================================================================
 	
+
+{% endraw %}

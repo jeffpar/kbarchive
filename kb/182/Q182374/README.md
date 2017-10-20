@@ -6,6 +6,8 @@ permalink: /kb/182/Q182374/
 
 ## Q182374: TN5250 Event ID 16 Error Causing APPC Session To Fail
 
+{% raw %}
+
 	Article: Q182374
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -87,3 +89,5 @@ permalink: /kb/182/Q182374/
 	
 	=============================================================================
 	
+
+{% endraw %}

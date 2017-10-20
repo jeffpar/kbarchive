@@ -6,6 +6,8 @@ permalink: /kb/191/Q191193/
 
 ## Q191193: XCLN: Error Msg. Opening PST: The Folder Could Not Be Opened
 
+{% raw %}
+
 	Article: Q191193
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -76,3 +78,5 @@ permalink: /kb/191/Q191193/
 	
 	=============================================================================
 	
+
+{% endraw %}

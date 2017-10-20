@@ -6,6 +6,8 @@ permalink: /kb/174/Q174238/
 
 ## Q174238: XCON: Message Size Grows When Rerouting on Same Server
 
+{% raw %}
+
 	Article: Q174238
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174238/
 	
 	=============================================================================
 	
+
+{% endraw %}

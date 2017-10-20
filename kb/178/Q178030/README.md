@@ -6,6 +6,8 @@ permalink: /kb/178/Q178030/
 
 ## Q178030: FS98/2000: Tips About Flying Adventures and Lessons
 
+{% raw %}
+
 	Article: Q178030
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -171,3 +173,5 @@ permalink: /kb/178/Q178030/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136667/
 
 ## Q136667: PRB: Action Diagram Does Not Show Graphic Lines
 
+{% raw %}
+
 	Article: Q136667
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -87,3 +89,5 @@ permalink: /kb/136/Q136667/
 	
 	=============================================================================
 	
+
+{% endraw %}

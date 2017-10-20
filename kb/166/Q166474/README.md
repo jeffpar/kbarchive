@@ -6,6 +6,8 @@ permalink: /kb/166/Q166474/
 
 ## Q166474: INFO: VC_EXTRALEAN and WIN32_LEAN_AND_MEAN
 
+{% raw %}
+
 	Article: Q166474
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/166/Q166474/
 	
 	=============================================================================
 	
+
+{% endraw %}

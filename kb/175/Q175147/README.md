@@ -6,6 +6,8 @@ permalink: /kb/175/Q175147/
 
 ## Q175147: Problem Registering Multicast Addresses with NDIS Miniports
 
+{% raw %}
+
 	Article: Q175147
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/175/Q175147/
 	
 	=============================================================================
 	
+
+{% endraw %}

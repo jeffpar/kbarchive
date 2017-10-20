@@ -6,6 +6,8 @@ permalink: /kb/143/Q143002/
 
 ## Q143002: Csexamp.exe - Client-Server Data Entry Screen for SQL
 
+{% raw %}
+
 	Article: Q143002
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -67,3 +69,5 @@ permalink: /kb/143/Q143002/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265394/
 
 ## Q265394: XFOR:Windows NNTP Service Does Not Support DefaultLogonDomain
 
+{% raw %}
+
 	Article: Q265394
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -46,3 +48,5 @@ permalink: /kb/265/Q265394/
 	
 	=============================================================================
 	
+
+{% endraw %}

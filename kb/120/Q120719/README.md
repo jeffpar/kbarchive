@@ -6,6 +6,8 @@ permalink: /kb/120/Q120719/
 
 ## Q120719: WordPad Cannot Use Courier Printer Font on the IBM 4019PS17
 
+{% raw %}
+
 	Article: Q120719
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/120/Q120719/
 	
 	=============================================================================
 	
+
+{% endraw %}

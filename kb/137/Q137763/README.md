@@ -6,6 +6,8 @@ permalink: /kb/137/Q137763/
 
 ## Q137763: Cannot Print from 500 Nations if Using Spooler in Windows 95/98
 
+{% raw %}
+
 	Article: Q137763
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,95
@@ -68,3 +70,5 @@ permalink: /kb/137/Q137763/
 	
 	=============================================================================
 	
+
+{% endraw %}

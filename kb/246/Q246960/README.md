@@ -6,6 +6,8 @@ permalink: /kb/246/Q246960/
 
 ## Q246960: HOWTO: Force Graphics to Always Download to Client
 
+{% raw %}
+
 	Article: Q246960
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/246/Q246960/
 	
 	=============================================================================
 	
+
+{% endraw %}

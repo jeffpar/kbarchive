@@ -6,6 +6,8 @@ permalink: /kb/142/Q142284/
 
 ## Q142284: HOWTO: Use gaErrors&#91;&#93; to Find Out Why a Trigger Failed
 
+{% raw %}
+
 	Article: Q142284
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -96,3 +98,5 @@ permalink: /kb/142/Q142284/
 	
 	=============================================================================
 	
+
+{% endraw %}

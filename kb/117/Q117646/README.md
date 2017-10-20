@@ -6,6 +6,8 @@ permalink: /kb/117/Q117646/
 
 ## Q117646: PC DB: Ownerless Files on Novell Networks
 
+{% raw %}
+
 	Article: Q117646
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0,3.0b,3.2
@@ -68,3 +70,5 @@ permalink: /kb/117/Q117646/
 	
 	=============================================================================
 	
+
+{% endraw %}

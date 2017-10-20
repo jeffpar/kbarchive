@@ -6,6 +6,8 @@ permalink: /kb/153/Q153548/
 
 ## Q153548: SCSI Drives Using FAT32 Should Be Repartitioned When Moved
 
+{% raw %}
+
 	Article: Q153548
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153548/
 	
 	=============================================================================
 	
+
+{% endraw %}

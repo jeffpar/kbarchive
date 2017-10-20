@@ -6,6 +6,8 @@ permalink: /kb/085/Q85484/
 
 ## Q85484: BUG: INT3 Encountered When Debugging a P-Code DLL
 
+{% raw %}
+
 	Article: Q85484
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -76,3 +78,5 @@ permalink: /kb/085/Q85484/
 	
 	=============================================================================
 	
+
+{% endraw %}

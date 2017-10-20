@@ -6,6 +6,8 @@ permalink: /kb/120/Q120586/
 
 ## Q120586: Encarta/Golf/MSB Ocean ErrMsg: Unhandled Exception Detected
 
+{% raw %}
+
 	Article: Q120586
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -92,3 +94,5 @@ permalink: /kb/120/Q120586/
 	
 	=============================================================================
 	
+
+{% endraw %}

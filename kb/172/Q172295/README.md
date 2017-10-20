@@ -6,6 +6,8 @@ permalink: /kb/172/Q172295/
 
 ## Q172295: Win3x Configuration Utility Parses &quot;Servers&quot; List Incorrectly
 
+{% raw %}
+
 	Article: Q172295
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,3.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/172/Q172295/
 	
 	=============================================================================
 	
+
+{% endraw %}

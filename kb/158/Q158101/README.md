@@ -6,6 +6,8 @@ permalink: /kb/158/Q158101/
 
 ## Q158101: GEX: Cannot Run GEX on Windows NT 3.51
 
+{% raw %}
+
 	Article: Q158101
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/158/Q158101/
 	
 	=============================================================================
 	
+
+{% endraw %}

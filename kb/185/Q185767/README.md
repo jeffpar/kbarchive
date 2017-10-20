@@ -6,6 +6,8 @@ permalink: /kb/185/Q185767/
 
 ## Q185767: MTM2: How to Configure the CB Radio Feature
 
+{% raw %}
+
 	Article: Q185767
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -120,3 +122,5 @@ permalink: /kb/185/Q185767/
 	
 	=============================================================================
 	
+
+{% endraw %}

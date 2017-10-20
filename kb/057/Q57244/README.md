@@ -6,6 +6,8 @@ permalink: /kb/057/Q57244/
 
 ## Q57244: INFO: Workaround for Converting a Float/Double to a String
 
+{% raw %}
+
 	Article: Q57244
 	Product(s): Microsoft C Compiler
 	Version(s): MS- DOS:5.1,6.0,6.00a,6.00ax,7.0;WIN3X:1.0,1.5;WINNT:1.0,2.0,2.1,4.0,5.0;
@@ -141,3 +143,5 @@ permalink: /kb/057/Q57244/
 	
 	=============================================================================
 	
+
+{% endraw %}

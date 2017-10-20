@@ -6,6 +6,8 @@ permalink: /kb/172/Q172812/
 
 ## Q172812: XADM: Event ID 9031 Database Resource Failure Error -1011
 
+{% raw %}
+
 	Article: Q172812
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0 SP3
@@ -91,3 +93,5 @@ permalink: /kb/172/Q172812/
 	
 	=============================================================================
 	
+
+{% endraw %}

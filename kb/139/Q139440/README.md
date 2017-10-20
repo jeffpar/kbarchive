@@ -6,6 +6,8 @@ permalink: /kb/139/Q139440/
 
 ## Q139440: Poor Full-Motion Video with Some S3 Video Drivers
 
+{% raw %}
+
 	Article: Q139440
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a
@@ -83,3 +85,5 @@ permalink: /kb/139/Q139440/
 	
 	=============================================================================
 	
+
+{% endraw %}

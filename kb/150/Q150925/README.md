@@ -6,6 +6,8 @@ permalink: /kb/150/Q150925/
 
 ## Q150925: How to Uninstall Novell's 32-Bit Network Client
 
+{% raw %}
+
 	Article: Q150925
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -127,3 +129,5 @@ permalink: /kb/150/Q150925/
 	
 	=============================================================================
 	
+
+{% endraw %}

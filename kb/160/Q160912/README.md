@@ -6,6 +6,8 @@ permalink: /kb/160/Q160912/
 
 ## Q160912: PRB: Remote View to SQL Server with Logical Values
 
+{% raw %}
+
 	Article: Q160912
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/160/Q160912/
 	
 	=============================================================================
 	
+
+{% endraw %}

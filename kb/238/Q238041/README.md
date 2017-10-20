@@ -6,6 +6,8 @@ permalink: /kb/238/Q238041/
 
 ## Q238041: Reference Suite: Setup Hangs During CD-ROM Verification
 
+{% raw %}
+
 	Article: Q238041
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/238/Q238041/
 	
 	=============================================================================
 	
+
+{% endraw %}

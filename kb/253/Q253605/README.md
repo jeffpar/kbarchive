@@ -6,6 +6,8 @@ permalink: /kb/253/Q253605/
 
 ## Q253605: XADM: Clients Hang at Logon If Duplicate OFL Folders Exist
 
+{% raw %}
+
 	Article: Q253605
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -105,3 +107,5 @@ permalink: /kb/253/Q253605/
 	
 	=============================================================================
 	
+
+{% endraw %}

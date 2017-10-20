@@ -6,6 +6,8 @@ permalink: /kb/135/Q135490/
 
 ## Q135490: SDLC Multidrop Primary Configuration Problems
 
+{% raw %}
+
 	Article: Q135490
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -76,3 +78,5 @@ permalink: /kb/135/Q135490/
 	
 	=============================================================================
 	
+
+{% endraw %}

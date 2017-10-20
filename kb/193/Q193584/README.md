@@ -6,6 +6,8 @@ permalink: /kb/193/Q193584/
 
 ## Q193584: FIX: Files Always Opened with Default Visual SourceSafe Viewer
 
+{% raw %}
+
 	Article: Q193584
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/193/Q193584/
 	
 	=============================================================================
 	
+
+{% endraw %}

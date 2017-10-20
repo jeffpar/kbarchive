@@ -6,6 +6,8 @@ permalink: /kb/161/Q161372/
 
 ## Q161372: How to Enable SMB Signing in Windows NT
 
+{% raw %}
+
 	Article: Q161372
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -108,3 +110,5 @@ permalink: /kb/161/Q161372/
 	
 	=============================================================================
 	
+
+{% endraw %}

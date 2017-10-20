@@ -6,6 +6,8 @@ permalink: /kb/173/Q173997/
 
 ## Q173997: Drive Letter Not Displayed in Error Message Box
 
+{% raw %}
+
 	Article: Q173997
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/173/Q173997/
 	
 	=============================================================================
 	
+
+{% endraw %}

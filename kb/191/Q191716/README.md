@@ -6,6 +6,8 @@ permalink: /kb/191/Q191716/
 
 ## Q191716: BUG: Assigning Resultset to RDC Does Not Update Control(s)
 
+{% raw %}
+
 	Article: Q191716
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/191/Q191716/
 	
 	=============================================================================
 	
+
+{% endraw %}

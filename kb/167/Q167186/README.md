@@ -6,6 +6,8 @@ permalink: /kb/167/Q167186/
 
 ## Q167186: PRB: SET CENTURY ROLLOVER Ignores Setting of SET CENTURY OFF
 
+{% raw %}
+
 	Article: Q167186
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a
@@ -194,3 +196,5 @@ permalink: /kb/167/Q167186/
 	
 	=============================================================================
 	
+
+{% endraw %}

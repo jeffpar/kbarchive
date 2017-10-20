@@ -6,6 +6,8 @@ permalink: /kb/303/Q303235/
 
 ## Q303235: Offline E-mail Feature Does Not Appear When Existing MSNIA User
 
+{% raw %}
+
 	Article: Q303235
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -86,3 +88,5 @@ permalink: /kb/303/Q303235/
 	
 	=============================================================================
 	
+
+{% endraw %}

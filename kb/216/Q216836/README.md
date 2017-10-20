@@ -6,6 +6,8 @@ permalink: /kb/216/Q216836/
 
 ## Q216836: GP Fault When Creating or Manipulating Many Windows
 
+{% raw %}
+
 	Article: Q216836
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -92,3 +94,5 @@ permalink: /kb/216/Q216836/
 	
 	=============================================================================
 	
+
+{% endraw %}

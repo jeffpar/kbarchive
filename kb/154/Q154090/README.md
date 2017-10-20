@@ -6,6 +6,8 @@ permalink: /kb/154/Q154090/
 
 ## Q154090: SCM.EXE Asserts Error When Many OLE Applications Installed
 
+{% raw %}
+
 	Article: Q154090
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51; :3.5,3.51
@@ -59,3 +61,5 @@ permalink: /kb/154/Q154090/
 	
 	=============================================================================
 	
+
+{% endraw %}

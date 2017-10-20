@@ -6,6 +6,8 @@ permalink: /kb/196/Q196666/
 
 ## Q196666: Users Can See Administrator Auto-Created Client Printers in Apps
 
+{% raw %}
+
 	Article: Q196666
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -69,3 +71,5 @@ permalink: /kb/196/Q196666/
 	
 	=============================================================================
 	
+
+{% endraw %}

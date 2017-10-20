@@ -6,6 +6,8 @@ permalink: /kb/249/Q249245/
 
 ## Q249245: IIS Global - Objects Counter Never Decreases
 
+{% raw %}
+
 	Article: Q249245
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/249/Q249245/
 	
 	=============================================================================
 	
+
+{% endraw %}

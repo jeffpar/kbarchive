@@ -6,6 +6,8 @@ permalink: /kb/219/Q219288/
 
 ## Q219288: Golf 99: How to Transfer Players from Golf 1998 Lite
 
+{% raw %}
+
 	Article: Q219288
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/219/Q219288/
 	
 	=============================================================================
 	
+
+{% endraw %}

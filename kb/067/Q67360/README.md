@@ -6,6 +6,8 @@ permalink: /kb/067/Q67360/
 
 ## Q67360: CodeView Does Not Debug kbhit() Correctly
 
+{% raw %}
+
 	Article: Q67360
 	Product(s): See article
 	Version(s): 3.00 3.10 3.11  | 3.00 3.10 3.11
@@ -55,3 +57,5 @@ permalink: /kb/067/Q67360/
 	
 	Microsoft Linker
 	=============================================================================
+
+{% endraw %}

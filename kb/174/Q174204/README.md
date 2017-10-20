@@ -6,6 +6,8 @@ permalink: /kb/174/Q174204/
 
 ## Q174204: Research Organizer: Error Message When Moving Cards/Sections
 
+{% raw %}
+
 	Article: Q174204
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -95,3 +97,5 @@ permalink: /kb/174/Q174204/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162895/
 
 ## Q162895: WD97: How to Use the ListNum Field in Word
 
+{% raw %}
+
 	Article: Q162895
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -148,3 +150,5 @@ permalink: /kb/162/Q162895/
 	
 	=============================================================================
 	
+
+{% endraw %}

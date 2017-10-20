@@ -6,6 +6,8 @@ permalink: /kb/186/Q186615/
 
 ## Q186615: Error 1008: Failed to Load/Unload the User Profile
 
+{% raw %}
+
 	Article: Q186615
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/186/Q186615/
 	
 	=============================================================================
 	
+
+{% endraw %}

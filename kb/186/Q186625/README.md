@@ -6,6 +6,8 @@ permalink: /kb/186/Q186625/
 
 ## Q186625: Terminal Server Commands: REGISTER
 
+{% raw %}
+
 	Article: Q186625
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -85,3 +87,5 @@ permalink: /kb/186/Q186625/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/261/Q261266/
 
 ## Q261266: XCLN: Outlook 97 Saves Unsent Messages to Inbox Folder
 
+{% raw %}
+
 	Article: Q261266
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/261/Q261266/
 	
 	=============================================================================
 	
+
+{% endraw %}

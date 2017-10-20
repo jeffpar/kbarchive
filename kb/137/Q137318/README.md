@@ -6,6 +6,8 @@ permalink: /kb/137/Q137318/
 
 ## Q137318: Comparison of Various Bookshelf 95 Editions
 
+{% raw %}
+
 	Article: Q137318
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -189,3 +191,5 @@ permalink: /kb/137/Q137318/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177662/
 
 ## Q177662: Roaming Profile Not Working When Using Services With Same Acct
 
+{% raw %}
+
 	Article: Q177662
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/177/Q177662/
 	
 	=============================================================================
 	
+
+{% endraw %}

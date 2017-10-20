@@ -6,6 +6,8 @@ permalink: /kb/140/Q140552/
 
 ## Q140552: How to Optimize Windows NT to Run Over Slow WAN Links w/TCP/IP
 
+{% raw %}
+
 	Article: Q140552
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -188,3 +190,5 @@ permalink: /kb/140/Q140552/
 	
 	=============================================================================
 	
+
+{% endraw %}

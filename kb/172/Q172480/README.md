@@ -6,6 +6,8 @@ permalink: /kb/172/Q172480/
 
 ## Q172480: GET_LU_STATUS_VERB Stops Responding on Call from 2nd Thread
 
+{% raw %}
+
 	Article: Q172480
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172480/
 	
 	=============================================================================
 	
+
+{% endraw %}

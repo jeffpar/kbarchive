@@ -6,6 +6,8 @@ permalink: /kb/118/Q118293/
 
 ## Q118293: MAC Encarta: Hang in MindMaze or Dictionary with CacheOut
 
+{% raw %}
+
 	Article: Q118293
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -50,3 +52,5 @@ permalink: /kb/118/Q118293/
 	
 	=============================================================================
 	
+
+{% endraw %}

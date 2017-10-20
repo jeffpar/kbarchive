@@ -6,6 +6,8 @@ permalink: /kb/174/Q174301/
 
 ## Q174301: HOWTO: Display Text on a Dithered Background in a TextBox
 
+{% raw %}
+
 	Article: Q174301
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -152,3 +154,5 @@ permalink: /kb/174/Q174301/
 	
 	=============================================================================
 	
+
+{% endraw %}

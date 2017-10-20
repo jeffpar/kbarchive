@@ -6,6 +6,8 @@ permalink: /kb/167/Q167325/
 
 ## Q167325: FIX: Env Vars Not Used in Exported Makefile Dependencies
 
+{% raw %}
+
 	Article: Q167325
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0 6.0
@@ -90,3 +92,5 @@ permalink: /kb/167/Q167325/
 	
 	=============================================================================
 	
+
+{% endraw %}

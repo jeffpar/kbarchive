@@ -6,6 +6,8 @@ permalink: /kb/117/Q117657/
 
 ## Q117657: Windows 95 May Not Start After Setup to Clean Directory
 
+{% raw %}
+
 	Article: Q117657
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -77,3 +79,5 @@ permalink: /kb/117/Q117657/
 	
 	=============================================================================
 	
+
+{% endraw %}

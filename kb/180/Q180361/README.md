@@ -6,6 +6,8 @@ permalink: /kb/180/Q180361/
 
 ## Q180361: &quot;Failure to Initialize Modem Session&quot; When Restarting External
 
+{% raw %}
+
 	Article: Q180361
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -63,3 +65,5 @@ permalink: /kb/180/Q180361/
 	
 	=============================================================================
 	
+
+{% endraw %}

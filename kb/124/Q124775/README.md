@@ -6,6 +6,8 @@ permalink: /kb/124/Q124775/
 
 ## Q124775: How to Play an .AVI File Using FoxPro for Windows
 
+{% raw %}
+
 	Article: Q124775
 	Product(s): Microsoft FoxPro
 	Version(s): 2.60a 3.00
@@ -94,3 +96,5 @@ permalink: /kb/124/Q124775/
 	
 	=============================================================================
 	
+
+{% endraw %}

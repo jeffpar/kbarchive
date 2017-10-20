@@ -6,6 +6,8 @@ permalink: /kb/112/Q112554/
 
 ## Q112554: No Pronunciations or Foreign Language Sounds
 
+{% raw %}
+
 	Article: Q112554
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,2.0
@@ -309,3 +311,5 @@ permalink: /kb/112/Q112554/
 	
 	=============================================================================
 	
+
+{% endraw %}

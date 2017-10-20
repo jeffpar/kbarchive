@@ -6,6 +6,8 @@ permalink: /kb/139/Q139350/
 
 ## Q139350: WinNT General Protection Fault Exiting 16-bit Access Version 2.0
 
+{% raw %}
+
 	Article: Q139350
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -59,3 +61,5 @@ permalink: /kb/139/Q139350/
 	
 	=============================================================================
 	
+
+{% endraw %}

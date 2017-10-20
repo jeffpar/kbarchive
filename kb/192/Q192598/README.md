@@ -6,6 +6,8 @@ permalink: /kb/192/Q192598/
 
 ## Q192598: Account Settings Missing from MSN Sign-In Screen
 
+{% raw %}
+
 	Article: Q192598
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.52,2.6
@@ -81,3 +83,5 @@ permalink: /kb/192/Q192598/
 	
 	=============================================================================
 	
+
+{% endraw %}

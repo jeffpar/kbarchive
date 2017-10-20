@@ -6,6 +6,8 @@ permalink: /kb/043/Q43252/
 
 ## Q43252: Must DECLARE a FUNCTION Invoked from an External Library
 
+{% raw %}
+
 	Article: Q43252
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -53,3 +55,5 @@ permalink: /kb/043/Q43252/
 	The DECLARE FUNCTION Func1#(<variables>) statement tells the compiler
 	that you are using a FUNCTION when you use the name Func1# and that
 	this is not a variable or an array.
+
+{% endraw %}

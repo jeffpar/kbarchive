@@ -6,6 +6,8 @@ permalink: /kb/190/Q190979/
 
 ## Q190979: DOC: CodeLocation Property Incorrectly Shows Optional Argument
 
+{% raw %}
+
 	Article: Q190979
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/190/Q190979/
 	
 	=============================================================================
 	
+
+{% endraw %}

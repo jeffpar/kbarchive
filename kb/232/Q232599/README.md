@@ -6,6 +6,8 @@ permalink: /kb/232/Q232599/
 
 ## Q232599: XADM: Exchange Server Creating Illegal JIS Encoded Text
 
+{% raw %}
+
 	Article: Q232599
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/232/Q232599/
 	
 	=============================================================================
 	
+
+{% endraw %}

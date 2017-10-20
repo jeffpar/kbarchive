@@ -6,6 +6,8 @@ permalink: /kb/252/Q252787/
 
 ## Q252787: DOC: DOCERR: Parameters Passed to Form Set's Load not Setup1
 
+{% raw %}
+
 	Article: Q252787
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -70,3 +72,5 @@ permalink: /kb/252/Q252787/
 	
 	=============================================================================
 	
+
+{% endraw %}

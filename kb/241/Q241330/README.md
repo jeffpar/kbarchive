@@ -6,6 +6,8 @@ permalink: /kb/241/Q241330/
 
 ## Q241330: Nwconv.exe Does Not Provide a Method of Migrating Printer Queues
 
+{% raw %}
+
 	Article: Q241330
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/241/Q241330/
 	
 	=============================================================================
 	
+
+{% endraw %}

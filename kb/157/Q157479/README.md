@@ -6,6 +6,8 @@ permalink: /kb/157/Q157479/
 
 ## Q157479: INFO: STL Sample for the rotate Function
 
+{% raw %}
+
 	Article: Q157479
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -169,3 +171,5 @@ permalink: /kb/157/Q157479/
 	
 	=============================================================================
 	
+
+{% endraw %}

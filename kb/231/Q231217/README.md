@@ -6,6 +6,8 @@ permalink: /kb/231/Q231217/
 
 ## Q231217: Registry Key Not Deleted after You Uninstall Software Metering
 
+{% raw %}
+
 	Article: Q231217
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/231/Q231217/
 	
 	=============================================================================
 	
+
+{% endraw %}

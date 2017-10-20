@@ -6,6 +6,8 @@ permalink: /kb/149/Q149825/
 
 ## Q149825: Explorapedia Nature: Contents of Version 1.2 Readme.wri
 
+{% raw %}
+
 	Article: Q149825
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.20
@@ -610,3 +612,5 @@ permalink: /kb/149/Q149825/
 	
 	=============================================================================
 	
+
+{% endraw %}

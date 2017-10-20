@@ -6,6 +6,8 @@ permalink: /kb/156/Q156676/
 
 ## Q156676: Windows NT 4.0 Won't Install on Computers with 386 Processors
 
+{% raw %}
+
 	Article: Q156676
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/156/Q156676/
 	
 	=============================================================================
 	
+
+{% endraw %}

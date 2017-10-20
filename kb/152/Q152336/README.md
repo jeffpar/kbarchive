@@ -6,6 +6,8 @@ permalink: /kb/152/Q152336/
 
 ## Q152336: How to Set Up the 3Com Impact for Dual-Channel ISDN
 
+{% raw %}
+
 	Article: Q152336
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,2.6
@@ -75,3 +77,5 @@ permalink: /kb/152/Q152336/
 	
 	=============================================================================
 	
+
+{% endraw %}

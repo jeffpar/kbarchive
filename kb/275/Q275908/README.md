@@ -6,6 +6,8 @@ permalink: /kb/275/Q275908/
 
 ## Q275908: COMTI: Need to Define a Decimal Data Type w/ More Than 18 Digits
 
+{% raw %}
+
 	Article: Q275908
 	Product(s): Microsoft SNA Server
 	Version(s): 1.0,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -92,3 +94,5 @@ permalink: /kb/275/Q275908/
 	
 	=============================================================================
 	
+
+{% endraw %}

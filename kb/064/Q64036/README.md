@@ -6,6 +6,8 @@ permalink: /kb/064/Q64036/
 
 ## Q64036: Unrecoverable Application Error in Windows Program Manager
 
+{% raw %}
+
 	Article: Q64036
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/064/Q64036/
 	
 	=============================================================================
 	
+
+{% endraw %}

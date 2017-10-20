@@ -6,6 +6,8 @@ permalink: /kb/243/Q243451/
 
 ## Q243451: INFO: C++ Standard Noncompliance Issues with Visual C++ .Net
 
+{% raw %}
+
 	Article: Q243451
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -114,3 +116,5 @@ permalink: /kb/243/Q243451/
 	
 	=============================================================================
 	
+
+{% endraw %}

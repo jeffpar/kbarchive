@@ -6,6 +6,8 @@ permalink: /kb/193/Q193599/
 
 ## Q193599: Windows NT Load Balancing Service Cluster Fails to Converge
 
+{% raw %}
+
 	Article: Q193599
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/193/Q193599/
 	
 	=============================================================================
 	
+
+{% endraw %}

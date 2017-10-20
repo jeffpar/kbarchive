@@ -6,6 +6,8 @@ permalink: /kb/242/Q242090/
 
 ## Q242090: Event 3113 using Novell intraNetWare Client Version 4.11a.
 
+{% raw %}
+
 	Article: Q242090
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/242/Q242090/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266302/
 
 ## Q266302: PRB: ADOX Error -2147217859 When You Append a Table to a Catalog
 
+{% raw %}
+
 	Article: Q266302
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -149,3 +151,5 @@ permalink: /kb/266/Q266302/
 	
 	=============================================================================
 	
+
+{% endraw %}

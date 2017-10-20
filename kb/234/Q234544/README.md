@@ -6,6 +6,8 @@ permalink: /kb/234/Q234544/
 
 ## Q234544: Cluster Bottleneck Occurs When a Large Number of Disks Are Invol
 
+{% raw %}
+
 	Article: Q234544
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/234/Q234544/
 	
 	=============================================================================
 	
+
+{% endraw %}

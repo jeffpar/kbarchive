@@ -6,6 +6,8 @@ permalink: /kb/230/Q230250/
 
 ## Q230250: XFOR:Internet Mail Service Failed to Deliver Message, Error 4117
 
+{% raw %}
+
 	Article: Q230250
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -103,3 +105,5 @@ permalink: /kb/230/Q230250/
 	
 	=============================================================================
 	
+
+{% endraw %}

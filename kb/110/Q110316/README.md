@@ -6,6 +6,8 @@ permalink: /kb/110/Q110316/
 
 ## Q110316: Flight Simulator: FS5.INI Line by Line Description
 
+{% raw %}
+
 	Article: Q110316
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -422,3 +424,5 @@ permalink: /kb/110/Q110316/
 	
 	=============================================================================
 	
+
+{% endraw %}

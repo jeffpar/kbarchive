@@ -6,6 +6,8 @@ permalink: /kb/061/Q61207/
 
 ## Q61207: C 6.00 README: Building PM Applications in PWB
 
+{% raw %}
+
 	Article: Q61207
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -41,3 +43,5 @@ permalink: /kb/061/Q61207/
 	"Programming the OS/2 Presentation Manager." Programs built using the
 	makefiles provided in the book will run correctly, but programs built
 	from within PWB must follow the instructions specified above.
+
+{% endraw %}

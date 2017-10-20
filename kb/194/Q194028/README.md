@@ -6,6 +6,8 @@ permalink: /kb/194/Q194028/
 
 ## Q194028: DHCP Server Fails to Start with Event 1007, 1008 and SCM 7023
 
+{% raw %}
+
 	Article: Q194028
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -110,3 +112,5 @@ permalink: /kb/194/Q194028/
 	
 	=============================================================================
 	
+
+{% endraw %}

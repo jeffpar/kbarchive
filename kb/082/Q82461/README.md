@@ -6,6 +6,8 @@ permalink: /kb/082/Q82461/
 
 ## Q82461: IBM Quiet Writer III Envelope Paper Source Not Functional
 
+{% raw %}
+
 	Article: Q82461
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/082/Q82461/
 	
 	=============================================================================
 	
+
+{% endraw %}

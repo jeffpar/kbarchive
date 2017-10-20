@@ -6,6 +6,8 @@ permalink: /kb/152/Q152233/
 
 ## Q152233: XADM: This Is a Special Version of Microsoft Exchange
 
+{% raw %}
+
 	Article: Q152233
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152233/
 	
 	=============================================================================
 	
+
+{% endraw %}

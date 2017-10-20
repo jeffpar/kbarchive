@@ -6,6 +6,8 @@ permalink: /kb/166/Q166153/
 
 ## Q166153: XFOR: PCMTA May Create &#42;.MAX, &#42;.PX or &#42;.ATX Files
 
+{% raw %}
+
 	Article: Q166153
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/166/Q166153/
 	
 	=============================================================================
 	
+
+{% endraw %}

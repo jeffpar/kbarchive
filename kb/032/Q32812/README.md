@@ -6,6 +6,8 @@ permalink: /kb/032/Q32812/
 
 ## Q32812: FIX: A4001 May Be Caused By a Literal '&gt;' in Text Equate
 
+{% raw %}
+
 	Article: Q32812
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -63,3 +65,5 @@ permalink: /kb/032/Q32812/
 	
 	=============================================================================
 	
+
+{% endraw %}

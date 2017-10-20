@@ -6,6 +6,8 @@ permalink: /kb/140/Q140422/
 
 ## Q140422: Domain Synchronization Over a Slow WAN Link
 
+{% raw %}
+
 	Article: Q140422
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -80,3 +82,5 @@ permalink: /kb/140/Q140422/
 	
 	=============================================================================
 	
+
+{% endraw %}

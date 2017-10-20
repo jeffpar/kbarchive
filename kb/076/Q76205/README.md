@@ -6,6 +6,8 @@ permalink: /kb/076/Q76205/
 
 ## Q76205: MS-DOS Shell Does Not Have to Read Files at Startup
 
+{% raw %}
+
 	Article: Q76205
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -44,3 +46,5 @@ permalink: /kb/076/Q76205/
 	
 	=============================================================================
 	
+
+{% endraw %}

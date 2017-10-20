@@ -6,6 +6,8 @@ permalink: /kb/083/Q83548/
 
 ## Q83548: Reasons for Windows 3.1 Setup to Fail While Upgrading
 
+{% raw %}
+
 	Article: Q83548
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -114,3 +116,5 @@ permalink: /kb/083/Q83548/
 	
 	=============================================================================
 	
+
+{% endraw %}

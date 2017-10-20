@@ -6,6 +6,8 @@ permalink: /kb/133/Q133468/
 
 ## Q133468: Julia Child: Find Dialog Box Remains in Foreground
 
+{% raw %}
+
 	Article: Q133468
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/133/Q133468/
 	
 	=============================================================================
 	
+
+{% endraw %}

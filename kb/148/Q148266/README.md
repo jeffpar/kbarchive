@@ -6,6 +6,8 @@ permalink: /kb/148/Q148266/
 
 ## Q148266: Data Forms Designer Doesn't Recognize MS Access 7.0 Database
 
+{% raw %}
+
 	Article: Q148266
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -96,3 +98,5 @@ permalink: /kb/148/Q148266/
 	
 	=============================================================================
 	
+
+{% endraw %}

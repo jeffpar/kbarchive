@@ -6,6 +6,8 @@ permalink: /kb/041/Q41653/
 
 ## Q41653: QuickC 2.00 README.DOC: /Li Option and Expanded Memory
 
+{% raw %}
+
 	Article: Q41653
 	Product(s): See article
 	Version(s): 2.00
@@ -46,3 +48,5 @@ permalink: /kb/041/Q41653/
 	
 	5. Contact Microsoft Product Support for additional information on
 	   ways to work around the problem.
+
+{% endraw %}

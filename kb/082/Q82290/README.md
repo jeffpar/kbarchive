@@ -6,6 +6,8 @@ permalink: /kb/082/Q82290/
 
 ## Q82290: FIX: EXTRN ABS Doesn't Work As Software Interrupt Number
 
+{% raw %}
+
 	Article: Q82290
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -106,3 +108,5 @@ permalink: /kb/082/Q82290/
 	
 	=============================================================================
 	
+
+{% endraw %}

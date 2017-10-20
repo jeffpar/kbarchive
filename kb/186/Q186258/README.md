@@ -6,6 +6,8 @@ permalink: /kb/186/Q186258/
 
 ## Q186258: XFOR: NDR on Message from Outlook via Microsoft Mail Connector
 
+{% raw %}
+
 	Article: Q186258
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -92,3 +94,5 @@ permalink: /kb/186/Q186258/
 	
 	=============================================================================
 	
+
+{% endraw %}

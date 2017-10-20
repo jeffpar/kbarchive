@@ -6,6 +6,8 @@ permalink: /kb/149/Q149876/
 
 ## Q149876: Print Preview Command in WordPad Truncates Words
 
+{% raw %}
+
 	Article: Q149876
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/149/Q149876/
 	
 	=============================================================================
 	
+
+{% endraw %}

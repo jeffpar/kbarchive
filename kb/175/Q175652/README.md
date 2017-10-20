@@ -6,6 +6,8 @@ permalink: /kb/175/Q175652/
 
 ## Q175652: SMS: PCM May Not Change the Status of Executed Package Commands
 
+{% raw %}
+
 	Article: Q175652
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -117,3 +119,5 @@ permalink: /kb/175/Q175652/
 	
 	=============================================================================
 	
+
+{% endraw %}

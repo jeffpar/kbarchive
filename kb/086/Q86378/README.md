@@ -6,6 +6,8 @@ permalink: /kb/086/Q86378/
 
 ## Q86378: PC WSPlus: Header Information Is Displayed in Message Body
 
+{% raw %}
+
 	Article: Q86378
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -44,3 +46,5 @@ permalink: /kb/086/Q86378/
 	
 	=============================================================================
 	
+
+{% endraw %}

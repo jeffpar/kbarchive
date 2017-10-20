@@ -6,6 +6,8 @@ permalink: /kb/060/Q60338/
 
 ## Q60338: PRB: Unable to Set CodeView Breakpoint on Desired Line
 
+{% raw %}
+
 	Article: Q60338
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/060/Q60338/
 	
 	=============================================================================
 	
+
+{% endraw %}

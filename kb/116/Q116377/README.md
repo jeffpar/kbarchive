@@ -6,6 +6,8 @@ permalink: /kb/116/Q116377/
 
 ## Q116377: WFWG 3.11: Fax Machines That Are Incompatible with AWFAX
 
+{% raw %}
+
 	Article: Q116377
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -57,3 +59,5 @@ permalink: /kb/116/Q116377/
 	
 	=============================================================================
 	
+
+{% endraw %}

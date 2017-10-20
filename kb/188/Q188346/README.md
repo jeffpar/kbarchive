@@ -6,6 +6,8 @@ permalink: /kb/188/Q188346/
 
 ## Q188346: New Client Connectivity Detection in ServerSupportFunction()
 
+{% raw %}
+
 	Article: Q188346
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -122,3 +124,5 @@ permalink: /kb/188/Q188346/
 	
 	=============================================================================
 	
+
+{% endraw %}

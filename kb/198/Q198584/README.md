@@ -6,6 +6,8 @@ permalink: /kb/198/Q198584/
 
 ## Q198584: Combat Flight Simulator: Pressing ALT+TAB Does Not Switch Tasks
 
+{% raw %}
+
 	Article: Q198584
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/198/Q198584/
 	
 	=============================================================================
 	
+
+{% endraw %}

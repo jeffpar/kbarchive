@@ -6,6 +6,8 @@ permalink: /kb/190/Q190471/
 
 ## Q190471: BUG: CTime::Format Returns Wrong Date If the Date Field Is NULL
 
+{% raw %}
+
 	Article: Q190471
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/190/Q190471/
 	
 	=============================================================================
 	
+
+{% endraw %}

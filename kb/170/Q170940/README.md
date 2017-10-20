@@ -6,6 +6,8 @@ permalink: /kb/170/Q170940/
 
 ## Q170940: WD97: Password Not Prompted with First Expansion of Sub-document
 
+{% raw %}
+
 	Article: Q170940
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/170/Q170940/
 	
 	=============================================================================
 	
+
+{% endraw %}

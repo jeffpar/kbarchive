@@ -6,6 +6,8 @@ permalink: /kb/259/Q259835/
 
 ## Q259835: StarLancer Setup Warning: Your Computer Is Slower Than 233 MHz
 
+{% raw %}
+
 	Article: Q259835
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/259/Q259835/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/048/Q48205/
 
 ## Q48205: Example of BASIC Function Returning a String to C
 
+{% raw %}
+
 	Article: Q48205
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -89,3 +91,5 @@ permalink: /kb/048/Q48205/
 	
 	   Length of String: 18
 	   This is the string
+
+{% endraw %}

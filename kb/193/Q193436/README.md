@@ -6,6 +6,8 @@ permalink: /kb/193/Q193436/
 
 ## Q193436: DHCP Client Shuts Down After Two Declines
 
+{% raw %}
+
 	Article: Q193436
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/193/Q193436/
 	
 	=============================================================================
 	
+
+{% endraw %}

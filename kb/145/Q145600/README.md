@@ -6,6 +6,8 @@ permalink: /kb/145/Q145600/
 
 ## Q145600: Creating Mirror Fails with Insufficient Disk Space
 
+{% raw %}
+
 	Article: Q145600
 	Product(s): Microsoft Windows NT
 	Version(s): beta99
@@ -86,3 +88,5 @@ permalink: /kb/145/Q145600/
 	
 	=============================================================================
 	
+
+{% endraw %}

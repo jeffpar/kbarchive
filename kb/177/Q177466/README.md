@@ -6,6 +6,8 @@ permalink: /kb/177/Q177466/
 
 ## Q177466: SMS: NNP Stays on Windows 95 Taskbar After Login
 
+{% raw %}
+
 	Article: Q177466
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -54,3 +56,5 @@ permalink: /kb/177/Q177466/
 	
 	=============================================================================
 	
+
+{% endraw %}

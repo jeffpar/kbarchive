@@ -6,6 +6,8 @@ permalink: /kb/132/Q132692/
 
 ## Q132692: PC WSPlus: How to Retrieve Archived Schedules
 
+{% raw %}
+
 	Article: Q132692
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -61,3 +63,5 @@ permalink: /kb/132/Q132692/
 	
 	=============================================================================
 	
+
+{% endraw %}

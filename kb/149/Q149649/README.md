@@ -6,6 +6,8 @@ permalink: /kb/149/Q149649/
 
 ## Q149649: Problems Using Epson LQ-570 Printer and Sheet Feeder
 
+{% raw %}
+
 	Article: Q149649
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/149/Q149649/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268516/
 
 ## Q268516: STOP C000026C Error Messages Appear When Trying to Remove Extra
 
+{% raw %}
+
 	Article: Q268516
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/268/Q268516/
 	
 	=============================================================================
 	
+
+{% endraw %}

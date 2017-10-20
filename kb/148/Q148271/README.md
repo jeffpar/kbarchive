@@ -6,6 +6,8 @@ permalink: /kb/148/Q148271/
 
 ## Q148271: XCLN: .Pst and .Pab Files Not Interchangeable
 
+{% raw %}
+
 	Article: Q148271
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.0,8.1,8.2
@@ -140,3 +142,5 @@ permalink: /kb/148/Q148271/
 	
 	=============================================================================
 	
+
+{% endraw %}

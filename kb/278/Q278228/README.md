@@ -6,6 +6,8 @@ permalink: /kb/278/Q278228/
 
 ## Q278228: INSERTS and DELETES from ACCESS to a DB2 Linked Table May Fail
 
+{% raw %}
+
 	Article: Q278228
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 4.0 SP2,4.0 SP3
@@ -67,3 +69,5 @@ permalink: /kb/278/Q278228/
 	
 	=============================================================================
 	
+
+{% endraw %}

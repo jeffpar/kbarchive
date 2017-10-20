@@ -6,6 +6,8 @@ permalink: /kb/174/Q174129/
 
 ## Q174129: Visual Basic Script Error Messages When Connected to MSN
 
+{% raw %}
+
 	Article: Q174129
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5 (OEM Release),3.01,3.02,95
@@ -81,3 +83,5 @@ permalink: /kb/174/Q174129/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/277/Q277761/
 
 ## Q277761: Browser Must Reauthenticate When Browsing Between Partner Sites
 
+{% raw %}
+
 	Article: Q277761
 	Product(s): Internet Information Server
 	Version(s): 1.3,1.4
@@ -54,3 +56,5 @@ permalink: /kb/277/Q277761/
 	
 	=============================================================================
 	
+
+{% endraw %}

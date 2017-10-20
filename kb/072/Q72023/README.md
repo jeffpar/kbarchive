@@ -6,6 +6,8 @@ permalink: /kb/072/Q72023/
 
 ## Q72023: SAMPLE: Verify.exe - Data Input Verification for Edit Controls
 
+{% raw %}
+
 	Article: Q72023
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -55,3 +57,5 @@ permalink: /kb/072/Q72023/
 	
 	=============================================================================
 	
+
+{% endraw %}

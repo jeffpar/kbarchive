@@ -6,6 +6,8 @@ permalink: /kb/155/Q155123/
 
 ## Q155123: Supported Modem Detected as Standard Modem
 
+{% raw %}
+
 	Article: Q155123
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -44,3 +46,5 @@ permalink: /kb/155/Q155123/
 	
 	=============================================================================
 	
+
+{% endraw %}

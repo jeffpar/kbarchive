@@ -6,6 +6,8 @@ permalink: /kb/183/Q183561/
 
 ## Q183561: Excessive Non-paged Pool Memory At SNA DDM Service Startup
 
+{% raw %}
+
 	Article: Q183561
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -50,3 +52,5 @@ permalink: /kb/183/Q183561/
 	
 	=============================================================================
 	
+
+{% endraw %}

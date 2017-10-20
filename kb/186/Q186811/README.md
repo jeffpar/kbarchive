@@ -6,6 +6,8 @@ permalink: /kb/186/Q186811/
 
 ## Q186811: How To Preload DLL Files With Internet Information Server 4.0
 
+{% raw %}
+
 	Article: Q186811
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/186/Q186811/
 	
 	=============================================================================
 	
+
+{% endraw %}

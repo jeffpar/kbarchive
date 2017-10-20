@@ -6,6 +6,8 @@ permalink: /kb/142/Q142484/
 
 ## Q142484: Oceans: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q142484
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -307,3 +309,5 @@ permalink: /kb/142/Q142484/
 	
 	=============================================================================
 	
+
+{% endraw %}

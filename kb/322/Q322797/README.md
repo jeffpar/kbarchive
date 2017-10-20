@@ -6,6 +6,8 @@ permalink: /kb/322/Q322797/
 
 ## Q322797: Interix Subsystem Process Limitations in SFU 3.0
 
+{% raw %}
+
 	Article: Q322797
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0
@@ -68,3 +70,5 @@ permalink: /kb/322/Q322797/
 	
 	=============================================================================
 	
+
+{% endraw %}

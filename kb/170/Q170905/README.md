@@ -6,6 +6,8 @@ permalink: /kb/170/Q170905/
 
 ## Q170905: WD97: Envelope Address Moves After Canceling Font Changes
 
+{% raw %}
+
 	Article: Q170905
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/170/Q170905/
 	
 	=============================================================================
 	
+
+{% endraw %}

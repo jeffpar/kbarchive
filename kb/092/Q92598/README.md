@@ -6,6 +6,8 @@ permalink: /kb/092/Q92598/
 
 ## Q92598: WFWG: Server Responds Slowly After RAS Connection is Made
 
+{% raw %}
+
 	Article: Q92598
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/092/Q92598/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153983/
 
 ## Q153983: Cannot Delete Directory from FPNW Server
 
+{% raw %}
+
 	Article: Q153983
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -76,3 +78,5 @@ permalink: /kb/153/Q153983/
 	
 	=============================================================================
 	
+
+{% endraw %}

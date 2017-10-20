@@ -6,6 +6,8 @@ permalink: /kb/076/Q76199/
 
 ## Q76199: Using Quarterdeck's BUFFERS.COM With MS-DOS 4.0 and Later
 
+{% raw %}
+
 	Article: Q76199
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.0,4.01,4.01a,5.0,5.0a
@@ -88,3 +90,5 @@ permalink: /kb/076/Q76199/
 	
 	=============================================================================
 	
+
+{% endraw %}

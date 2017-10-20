@@ -6,6 +6,8 @@ permalink: /kb/129/Q129200/
 
 ## Q129200: Who Provides Support for the Arabic and Hebrew SDK?
 
+{% raw %}
+
 	Article: Q129200
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/129/Q129200/
 	
 	=============================================================================
 	
+
+{% endraw %}

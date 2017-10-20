@@ -6,6 +6,8 @@ permalink: /kb/188/Q188673/
 
 ## Q188673: XADM: How to Assign a Group as Owner of a Distribution List
 
+{% raw %}
+
 	Article: Q188673
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/188/Q188673/
 	
 	=============================================================================
 	
+
+{% endraw %}

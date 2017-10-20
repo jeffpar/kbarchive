@@ -6,6 +6,8 @@ permalink: /kb/173/Q173500/
 
 ## Q173500: Error Message: MSN Failed to Load Folcom.dll
 
+{% raw %}
+
 	Article: Q173500
 	Product(s): The Microsoft Network
 	Version(s): 2.5
@@ -102,3 +104,5 @@ permalink: /kb/173/Q173500/
 	
 	=============================================================================
 	
+
+{% endraw %}

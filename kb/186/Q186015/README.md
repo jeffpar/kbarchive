@@ -6,6 +6,8 @@ permalink: /kb/186/Q186015/
 
 ## Q186015: HOWTO: Pass Parameters to an ActiveDoc
 
+{% raw %}
+
 	Article: Q186015
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -161,3 +163,5 @@ permalink: /kb/186/Q186015/
 	
 	=============================================================================
 	
+
+{% endraw %}

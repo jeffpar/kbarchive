@@ -6,6 +6,8 @@ permalink: /kb/184/Q184695/
 
 ## Q184695: Readme Notes for Certificate Server Update
 
+{% raw %}
+
 	Article: Q184695
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,4.0
@@ -118,3 +120,5 @@ permalink: /kb/184/Q184695/
 	
 	=============================================================================
 	
+
+{% endraw %}

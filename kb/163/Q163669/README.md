@@ -6,6 +6,8 @@ permalink: /kb/163/Q163669/
 
 ## Q163669: FIX: Setup Wizard Does Not Use Default Directory Specified
 
+{% raw %}
+
 	Article: Q163669
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -76,3 +78,5 @@ permalink: /kb/163/Q163669/
 	
 	=============================================================================
 	
+
+{% endraw %}

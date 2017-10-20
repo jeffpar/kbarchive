@@ -6,6 +6,8 @@ permalink: /kb/259/Q259708/
 
 ## Q259708: SMS: New SQL Views Are  Available in SMS 2.0
 
+{% raw %}
+
 	Article: Q259708
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -105,3 +107,5 @@ permalink: /kb/259/Q259708/
 	
 	=============================================================================
 	
+
+{% endraw %}

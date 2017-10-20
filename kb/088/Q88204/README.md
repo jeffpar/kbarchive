@@ -6,6 +6,8 @@ permalink: /kb/088/Q88204/
 
 ## Q88204: PageMaker 4.0 Cannot Print Duplex on HP IID
 
+{% raw %}
+
 	Article: Q88204
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -39,3 +41,5 @@ permalink: /kb/088/Q88204/
 	
 	=============================================================================
 	
+
+{% endraw %}

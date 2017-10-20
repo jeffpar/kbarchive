@@ -6,6 +6,8 @@ permalink: /kb/061/Q61993/
 
 ## Q61993: Using Flight Simulator with an EGA Monochrome Monitor
 
+{% raw %}
+
 	Article: Q61993
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/061/Q61993/
 	
 	=============================================================================
 	
+
+{% endraw %}

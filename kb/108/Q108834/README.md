@@ -6,6 +6,8 @@ permalink: /kb/108/Q108834/
 
 ## Q108834: PC MAPI: Adding an Automatic Message (Message of the Day)
 
+{% raw %}
+
 	Article: Q108834
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -106,3 +108,5 @@ permalink: /kb/108/Q108834/
 	
 	=============================================================================
 	
+
+{% endraw %}

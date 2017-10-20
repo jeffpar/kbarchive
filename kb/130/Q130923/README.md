@@ -6,6 +6,8 @@ permalink: /kb/130/Q130923/
 
 ## Q130923: How To Identify a PCI Boot Controller
 
+{% raw %}
+
 	Article: Q130923
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/130/Q130923/
 	
 	=============================================================================
 	
+
+{% endraw %}

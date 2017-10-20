@@ -6,6 +6,8 @@ permalink: /kb/140/Q140790/
 
 ## Q140790: MS Backup Err Msg: Errors Occurred During This Operation...
 
+{% raw %}
+
 	Article: Q140790
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/140/Q140790/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225500/
 
 ## Q225500: XCLN: CDO Search of GAL for CdoPR_MHS_COMMON_NAME is Slow
 
+{% raw %}
+
 	Article: Q225500
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -123,3 +125,5 @@ permalink: /kb/225/Q225500/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149692/
 
 ## Q149692: XCLN: Error Message When Clients Try To Connect Via Internet
 
+{% raw %}
+
 	Article: Q149692
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -85,3 +87,5 @@ permalink: /kb/149/Q149692/
 	
 	=============================================================================
 	
+
+{% endraw %}

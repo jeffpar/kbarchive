@@ -6,6 +6,8 @@ permalink: /kb/141/Q141863/
 
 ## Q141863: SAMPLE: Bdlg32.exe Draws a Bitmap in an MFC Dialog Box
 
+{% raw %}
+
 	Article: Q141863
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -231,3 +233,5 @@ permalink: /kb/141/Q141863/
 	
 	=============================================================================
 	
+
+{% endraw %}

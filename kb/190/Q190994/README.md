@@ -6,6 +6,8 @@ permalink: /kb/190/Q190994/
 
 ## Q190994: XADM: How to Save Organizational Forms to a PST File
 
+{% raw %}
+
 	Article: Q190994
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/190/Q190994/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89889/
 
 ## Q89889: Default Minimal View Attributes in Quick Recorder
 
+{% raw %}
+
 	Article: Q89889
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/089/Q89889/
 	
 	=============================================================================
 	
+
+{% endraw %}

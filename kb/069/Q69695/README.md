@@ -6,6 +6,8 @@ permalink: /kb/069/Q69695/
 
 ## Q69695: PC Setup: CONFIG.SYS Not Modified by Install Programs
 
+{% raw %}
+
 	Article: Q69695
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -46,3 +48,5 @@ permalink: /kb/069/Q69695/
 	
 	=============================================================================
 	
+
+{% endraw %}

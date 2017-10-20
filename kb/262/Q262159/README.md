@@ -6,6 +6,8 @@ permalink: /kb/262/Q262159/
 
 ## Q262159: Error Message When You Install Pocket Streets 2001
 
+{% raw %}
+
 	Article: Q262159
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/262/Q262159/
 	
 	=============================================================================
 	
+
+{% endraw %}

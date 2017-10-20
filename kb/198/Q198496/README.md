@@ -6,6 +6,8 @@ permalink: /kb/198/Q198496/
 
 ## Q198496: How to Configure WLBS Port Rules
 
+{% raw %}
+
 	Article: Q198496
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -148,3 +150,5 @@ permalink: /kb/198/Q198496/
 	
 	=============================================================================
 	
+
+{% endraw %}

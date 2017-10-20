@@ -6,6 +6,8 @@ permalink: /kb/026/Q26525/
 
 ## Q26525: FltSim: Printing a Screen or Poster to the ImageWriter
 
+{% raw %}
+
 	Article: Q26525
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/026/Q26525/
 	
 	=============================================================================
 	
+
+{% endraw %}

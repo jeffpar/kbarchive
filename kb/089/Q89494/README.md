@@ -6,6 +6,8 @@ permalink: /kb/089/Q89494/
 
 ## Q89494: VHotKeyd.exe VxD Hot Keys in Windows 386 Enhanced Mode
 
+{% raw %}
+
 	Article: Q89494
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -83,3 +85,5 @@ permalink: /kb/089/Q89494/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197007/
 
 ## Q197007: WD97: How to Import Font Substitution Functions in Word
 
+{% raw %}
+
 	Article: Q197007
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -156,3 +158,5 @@ permalink: /kb/197/Q197007/
 	
 	=============================================================================
 	
+
+{% endraw %}

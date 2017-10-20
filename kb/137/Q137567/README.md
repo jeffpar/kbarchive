@@ -6,6 +6,8 @@ permalink: /kb/137/Q137567/
 
 ## Q137567: Configuring RPC in Windows 95
 
+{% raw %}
+
 	Article: Q137567
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51
@@ -70,3 +72,5 @@ permalink: /kb/137/Q137567/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189719/
 
 ## Q189719: BUG: JustPath() May Return an Empty String for Some Paths
 
+{% raw %}
+
 	Article: Q189719
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -61,3 +63,5 @@ permalink: /kb/189/Q189719/
 	
 	=============================================================================
 	
+
+{% endraw %}

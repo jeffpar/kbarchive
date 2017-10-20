@@ -6,6 +6,8 @@ permalink: /kb/145/Q145901/
 
 ## Q145901: Mac Encarta 96: Cannot Paste Audio Copied from Encyclopedia
 
+{% raw %}
+
 	Article: Q145901
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -73,3 +75,5 @@ permalink: /kb/145/Q145901/
 	
 	=============================================================================
 	
+
+{% endraw %}

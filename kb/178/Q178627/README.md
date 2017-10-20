@@ -6,6 +6,8 @@ permalink: /kb/178/Q178627/
 
 ## Q178627: XFOR: Chat Server 2.0 Can Fail with Extremely Heavy Usage
 
+{% raw %}
+
 	Article: Q178627
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -59,3 +61,5 @@ permalink: /kb/178/Q178627/
 	
 	=============================================================================
 	
+
+{% endraw %}

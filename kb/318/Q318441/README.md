@@ -6,6 +6,8 @@ permalink: /kb/318/Q318441/
 
 ## Q318441: SMS: SQL Server Processes SMS 2.0 Queries Very Slowly
 
+{% raw %}
+
 	Article: Q318441
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -53,3 +55,5 @@ permalink: /kb/318/Q318441/
 	
 	=============================================================================
 	
+
+{% endraw %}

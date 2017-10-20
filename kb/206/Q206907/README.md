@@ -6,6 +6,8 @@ permalink: /kb/206/Q206907/
 
 ## Q206907: BUG: Reposition/Resize Control Can Causes Incorrect Results
 
+{% raw %}
+
 	Article: Q206907
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -164,3 +166,5 @@ permalink: /kb/206/Q206907/
 	
 	=============================================================================
 	
+
+{% endraw %}

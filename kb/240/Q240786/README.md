@@ -6,6 +6,8 @@ permalink: /kb/240/Q240786/
 
 ## Q240786: SMS: Hierarchy Manager Develops Backlog of .ct2 Files
 
+{% raw %}
+
 	Article: Q240786
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -86,3 +88,5 @@ permalink: /kb/240/Q240786/
 	
 	=============================================================================
 	
+
+{% endraw %}

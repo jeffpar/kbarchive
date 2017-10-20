@@ -6,6 +6,8 @@ permalink: /kb/178/Q178155/
 
 ## Q178155: XCLN: Outlook 97 Setup Adds IE Setup Icon to Desktop
 
+{% raw %}
+
 	Article: Q178155
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03
@@ -72,3 +74,5 @@ permalink: /kb/178/Q178155/
 	
 	=============================================================================
 	
+
+{% endraw %}

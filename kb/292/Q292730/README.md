@@ -6,6 +6,8 @@ permalink: /kb/292/Q292730/
 
 ## Q292730: FTP Directory Listing Returns Lowercase File Names
 
+{% raw %}
+
 	Article: Q292730
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -97,3 +99,5 @@ permalink: /kb/292/Q292730/
 	
 	=============================================================================
 	
+
+{% endraw %}

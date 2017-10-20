@@ -6,6 +6,8 @@ permalink: /kb/156/Q156102/
 
 ## Q156102: How To Set the Cross-Tab Wizard 3 Field Variables Requirement
 
+{% raw %}
+
 	Article: Q156102
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -100,3 +102,5 @@ permalink: /kb/156/Q156102/
 	
 	=============================================================================
 	
+
+{% endraw %}

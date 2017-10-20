@@ -6,6 +6,8 @@ permalink: /kb/156/Q156565/
 
 ## Q156565: XCLN: Public Folders and Linked/Embedded Documents
 
+{% raw %}
+
 	Article: Q156565
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/156/Q156565/
 	
 	=============================================================================
 	
+
+{% endraw %}

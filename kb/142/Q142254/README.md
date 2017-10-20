@@ -6,6 +6,8 @@ permalink: /kb/142/Q142254/
 
 ## Q142254: Problems Installing Network Protocol That Uses TDI Interface
 
+{% raw %}
+
 	Article: Q142254
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/142/Q142254/
 	
 	=============================================================================
 	
+
+{% endraw %}

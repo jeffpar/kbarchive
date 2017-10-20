@@ -6,6 +6,8 @@ permalink: /kb/064/Q64068/
 
 ## Q64068: 8087 Registers Not Viewable in QuickC
 
+{% raw %}
+
 	Article: Q64068
 	Product(s): See article
 	Version(s): 2.50 2.51
@@ -27,3 +29,5 @@ permalink: /kb/064/Q64068/
 	Microsoft has confirmed this to be a problem with QuickC version 2.50.
 	We are researching this problem and will post new information here as
 	it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/093/Q93236/
 
 ## Q93236: Using IBM DLC with Windows for Workgroups 3.10
 
+{% raw %}
+
 	Article: Q93236
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -106,3 +108,5 @@ permalink: /kb/093/Q93236/
 	
 	=============================================================================
 	
+
+{% endraw %}

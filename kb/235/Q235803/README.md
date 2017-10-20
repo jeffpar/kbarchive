@@ -6,6 +6,8 @@ permalink: /kb/235/Q235803/
 
 ## Q235803: SMS: Resource Explorer Doesn't Work As MMC Console Snap-in
 
+{% raw %}
+
 	Article: Q235803
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -75,3 +77,5 @@ permalink: /kb/235/Q235803/
 	
 	=============================================================================
 	
+
+{% endraw %}

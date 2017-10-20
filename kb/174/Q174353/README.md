@@ -6,6 +6,8 @@ permalink: /kb/174/Q174353/
 
 ## Q174353: XCLN: Creating and Using an OST Between Two Computers
 
+{% raw %}
+
 	Article: Q174353
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -93,3 +95,5 @@ permalink: /kb/174/Q174353/
 	
 	=============================================================================
 	
+
+{% endraw %}

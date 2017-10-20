@@ -6,6 +6,8 @@ permalink: /kb/151/Q151673/
 
 ## Q151673: FIX: Compiler Allocates Struct with Nested Struct Incorrectly
 
+{% raw %}
+
 	Article: Q151673
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -86,3 +88,5 @@ permalink: /kb/151/Q151673/
 	
 	=============================================================================
 	
+
+{% endraw %}

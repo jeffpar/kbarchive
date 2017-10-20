@@ -6,6 +6,8 @@ permalink: /kb/042/Q42772/
 
 ## Q42772: QuickC 2.00 Editor Function: ResetState
 
+{% raw %}
+
 	Article: Q42772
 	Product(s): See article
 	Version(s): 2.00
@@ -37,3 +39,5 @@ permalink: /kb/042/Q42772/
 	followed by 0. There are two methods of completing this command after
 	having pressed CTRL+K. The 0 key could be used to set the bookmark, or
 	CTRL+U could be used to cancel the SetBookMark function.
+
+{% endraw %}

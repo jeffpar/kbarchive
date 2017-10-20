@@ -6,6 +6,8 @@ permalink: /kb/226/Q226509/
 
 ## Q226509: Access Violation Error After Changing Event Viewer Log Location
 
+{% raw %}
+
 	Article: Q226509
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -72,3 +74,5 @@ permalink: /kb/226/Q226509/
 	
 	=============================================================================
 	
+
+{% endraw %}

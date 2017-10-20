@@ -6,6 +6,8 @@ permalink: /kb/153/Q153589/
 
 ## Q153589: Compaq NetFlex-3/E Controller not Upgraded During WinNT 4.0 Setu
 
+{% raw %}
+
 	Article: Q153589
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/153/Q153589/
 	
 	=============================================================================
 	
+
+{% endraw %}

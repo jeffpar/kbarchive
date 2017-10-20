@@ -6,6 +6,8 @@ permalink: /kb/118/Q118574/
 
 ## Q118574: Err Msg with Word or Excel Installed: Cannot Read from Drive C
 
+{% raw %}
+
 	Article: Q118574
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -70,3 +72,5 @@ permalink: /kb/118/Q118574/
 	
 	=============================================================================
 	
+
+{% endraw %}

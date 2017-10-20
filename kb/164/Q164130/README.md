@@ -6,6 +6,8 @@ permalink: /kb/164/Q164130/
 
 ## Q164130: Scheduler Service Will Not Start if Server Moved from Domain
 
+{% raw %}
+
 	Article: Q164130
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/164/Q164130/
 	
 	=============================================================================
 	
+
+{% endraw %}

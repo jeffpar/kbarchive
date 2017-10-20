@@ -6,6 +6,8 @@ permalink: /kb/161/Q161275/
 
 ## Q161275: Interaction of File and Folder Security on NTFS Volumes
 
+{% raw %}
+
 	Article: Q161275
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -59,3 +61,5 @@ permalink: /kb/161/Q161275/
 	
 	=============================================================================
 	
+
+{% endraw %}

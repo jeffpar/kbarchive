@@ -6,6 +6,8 @@ permalink: /kb/098/Q98766/
 
 ## Q98766: VIREX-PC May Incorrectly Report Viruses with VSAFE Installed
 
+{% raw %}
+
 	Article: Q98766
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/098/Q98766/
 	
 	=============================================================================
 	
+
+{% endraw %}

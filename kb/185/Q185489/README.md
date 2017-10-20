@@ -6,6 +6,8 @@ permalink: /kb/185/Q185489/
 
 ## Q185489: WinNT HP DJ600 Plotter Driver Requires Plotter Firmware 3.40
 
+{% raw %}
+
 	Article: Q185489
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185489/
 	
 	=============================================================================
 	
+
+{% endraw %}

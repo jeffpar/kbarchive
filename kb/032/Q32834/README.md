@@ -6,6 +6,8 @@ permalink: /kb/032/Q32834/
 
 ## Q32834: Line-Continuation Character Added
 
+{% raw %}
+
 	Article: Q32834
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -19,3 +21,5 @@ permalink: /kb/032/Q32834/
 	   The backslash must be the last character in the line. Using the
 	line-continuation character, you may have program lines up to 512
 	characters. Physical lines are still limited to 128 characters.
+
+{% endraw %}

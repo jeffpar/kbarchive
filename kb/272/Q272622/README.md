@@ -6,6 +6,8 @@ permalink: /kb/272/Q272622/
 
 ## Q272622: PRB: Refresh Method of Intrinsic Data Control Shows ErrMsg 3343
 
+{% raw %}
+
 	Article: Q272622
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.5,3.51,3.6,5.0
@@ -133,3 +135,5 @@ permalink: /kb/272/Q272622/
 	
 	=============================================================================
 	
+
+{% endraw %}

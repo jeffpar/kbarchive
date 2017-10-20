@@ -6,6 +6,8 @@ permalink: /kb/121/Q121915/
 
 ## Q121915: CONN: Err Msg: Exiting on (date time) with Status 70  (118)
 
+{% raw %}
+
 	Article: Q121915
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0b
@@ -68,3 +70,5 @@ permalink: /kb/121/Q121915/
 	
 	=============================================================================
 	
+
+{% endraw %}

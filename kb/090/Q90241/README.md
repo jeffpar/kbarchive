@@ -6,6 +6,8 @@ permalink: /kb/090/Q90241/
 
 ## Q90241: NET.EXE Does Not Save Passwords or Restore Connections
 
+{% raw %}
+
 	Article: Q90241
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1; :1.0
@@ -43,3 +45,5 @@ permalink: /kb/090/Q90241/
 	
 	=============================================================================
 	
+
+{% endraw %}

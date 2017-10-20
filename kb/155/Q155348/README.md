@@ -6,6 +6,8 @@ permalink: /kb/155/Q155348/
 
 ## Q155348: Some Programs Do Not Notify When Setup Is Finished
 
+{% raw %}
+
 	Article: Q155348
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155348/
 	
 	=============================================================================
 	
+
+{% endraw %}

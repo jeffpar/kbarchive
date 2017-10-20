@@ -6,6 +6,8 @@ permalink: /kb/159/Q159867/
 
 ## Q159867: The Microsoft Network 2.0 CD-ROM Readme.txt File
 
+{% raw %}
+
 	Article: Q159867
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -285,3 +287,5 @@ permalink: /kb/159/Q159867/
 	
 	=============================================================================
 	
+
+{% endraw %}

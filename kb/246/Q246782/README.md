@@ -6,6 +6,8 @@ permalink: /kb/246/Q246782/
 
 ## Q246782: STOP C000021a When Upgrading Compaq Computer to Windows NT 4.0
 
+{% raw %}
+
 	Article: Q246782
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/246/Q246782/
 	
 	=============================================================================
 	
+
+{% endraw %}

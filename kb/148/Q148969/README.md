@@ -6,6 +6,8 @@ permalink: /kb/148/Q148969/
 
 ## Q148969: INFO: Troubleshooting SNA Server Communication over an IP Router
 
+{% raw %}
+
 	Article: Q148969
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1
@@ -174,3 +176,5 @@ permalink: /kb/148/Q148969/
 	
 	=============================================================================
 	
+
+{% endraw %}

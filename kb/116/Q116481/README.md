@@ -6,6 +6,8 @@ permalink: /kb/116/Q116481/
 
 ## Q116481: HOWTO: Use Bar Codes in FoxPro
 
+{% raw %}
+
 	Article: Q116481
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/116/Q116481/
 	
 	=============================================================================
 	
+
+{% endraw %}

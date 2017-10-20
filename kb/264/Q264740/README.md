@@ -6,6 +6,8 @@ permalink: /kb/264/Q264740/
 
 ## Q264740: Courier Sender Creates Large Files for Multiple Sites
 
+{% raw %}
+
 	Article: Q264740
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP2
@@ -59,3 +61,5 @@ permalink: /kb/264/Q264740/
 	
 	=============================================================================
 	
+
+{% endraw %}

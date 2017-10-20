@@ -6,6 +6,8 @@ permalink: /kb/058/Q58809/
 
 ## Q58809: Flight Simulator 4.00 Hangs After Crashing into Ground
 
+{% raw %}
+
 	Article: Q58809
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/058/Q58809/
 	
 	=============================================================================
 	
+
+{% endraw %}

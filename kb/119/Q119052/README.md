@@ -6,6 +6,8 @@ permalink: /kb/119/Q119052/
 
 ## Q119052: SNADS: Win Client Sees Duplicate Headers for Loopback Message
 
+{% raw %}
+
 	Article: Q119052
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1
@@ -50,3 +52,5 @@ permalink: /kb/119/Q119052/
 	
 	=============================================================================
 	
+
+{% endraw %}

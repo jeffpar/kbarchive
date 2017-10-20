@@ -6,6 +6,8 @@ permalink: /kb/065/Q65927/
 
 ## Q65927: Using INTERRUPT 15 hex for Time Increments Less Than 1 Second
 
+{% raw %}
+
 	Article: Q65927
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -109,3 +111,5 @@ permalink: /kb/065/Q65927/
 	        '| Return the flag to the caller:
 	        DELAY% = ReturnDelay%
 	END FUNCTION
+
+{% endraw %}

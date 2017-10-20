@@ -6,6 +6,8 @@ permalink: /kb/120/Q120717/
 
 ## Q120717: Blue Screen: Init1 - System Processor
 
+{% raw %}
+
 	Article: Q120717
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/120/Q120717/
 	
 	=============================================================================
 	
+
+{% endraw %}

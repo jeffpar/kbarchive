@@ -6,6 +6,8 @@ permalink: /kb/319/Q319002/
 
 ## Q319002: FIX: Toolbar May Cause Incorrect Control Focus with MSAA
 
+{% raw %}
+
 	Article: Q319002
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -159,3 +161,5 @@ permalink: /kb/319/Q319002/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182407/
 
 ## Q182407: SMS: Remote Control Quick Viewer Freezes If Minimized
 
+{% raw %}
+
 	Article: Q182407
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/182/Q182407/
 	
 	=============================================================================
 	
+
+{% endraw %}

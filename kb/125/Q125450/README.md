@@ -6,6 +6,8 @@ permalink: /kb/125/Q125450/
 
 ## Q125450: Error Running RASPHONE.EXE and RASADMIN.EXE in Windows NT
 
+{% raw %}
+
 	Article: Q125450
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1,3.5; :3.1
@@ -91,3 +93,5 @@ permalink: /kb/125/Q125450/
 	
 	=============================================================================
 	
+
+{% endraw %}

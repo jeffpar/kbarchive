@@ -6,6 +6,8 @@ permalink: /kb/193/Q193028/
 
 ## Q193028: Wine Guide: Error Message When Starting in 640 x 480 Resolution
 
+{% raw %}
+
 	Article: Q193028
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a
@@ -82,3 +84,5 @@ permalink: /kb/193/Q193028/
 	
 	=============================================================================
 	
+
+{% endraw %}

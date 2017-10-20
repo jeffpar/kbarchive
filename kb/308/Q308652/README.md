@@ -6,6 +6,8 @@ permalink: /kb/308/Q308652/
 
 ## Q308652: IDBSchemaRowset::GetSchema Fails to Return List of Rowsets
 
+{% raw %}
+
 	Article: Q308652
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/308/Q308652/
 	
 	=============================================================================
 	
+
+{% endraw %}

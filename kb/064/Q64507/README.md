@@ -6,6 +6,8 @@ permalink: /kb/064/Q64507/
 
 ## Q64507: FontWare Inserts Incorrect Canon Printer Driver Header Section
 
+{% raw %}
+
 	Article: Q64507
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/064/Q64507/
 	
 	=============================================================================
 	
+
+{% endraw %}

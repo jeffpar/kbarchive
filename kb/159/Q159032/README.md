@@ -6,6 +6,8 @@ permalink: /kb/159/Q159032/
 
 ## Q159032: Err Msg: Data in Clipboard Is in an Unknown Format
 
+{% raw %}
+
 	Article: Q159032
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -42,3 +44,5 @@ permalink: /kb/159/Q159032/
 	
 	=============================================================================
 	
+
+{% endraw %}

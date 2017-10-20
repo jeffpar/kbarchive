@@ -6,6 +6,8 @@ permalink: /kb/068/Q68225/
 
 ## Q68225: StringAssign of Zero-Length (Null) String Fails; BASIC 7.10
 
+{% raw %}
+
 	Article: Q68225
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -118,3 +120,5 @@ permalink: /kb/068/Q68225/
 	        StringAssign(name, strlen(name), BasicString,0);
 	    }
 	}
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140489/
 
 ## Q140489: PRB: One-to-Many Report Prints First Child If Scope Is One
 
+{% raw %}
+
 	Article: Q140489
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0,3.0b
@@ -132,3 +134,5 @@ permalink: /kb/140/Q140489/
 	
 	=============================================================================
 	
+
+{% endraw %}

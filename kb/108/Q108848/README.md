@@ -6,6 +6,8 @@ permalink: /kb/108/Q108848/
 
 ## Q108848: Information on HPWINPS.DRV HP PostScript Printer Driver
 
+{% raw %}
+
 	Article: Q108848
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -208,3 +210,5 @@ permalink: /kb/108/Q108848/
 	
 	=============================================================================
 	
+
+{% endraw %}

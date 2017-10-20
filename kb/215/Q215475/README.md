@@ -6,6 +6,8 @@ permalink: /kb/215/Q215475/
 
 ## Q215475: Slow Performance with GSNW on Terminal Server
 
+{% raw %}
+
 	Article: Q215475
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/215/Q215475/
 	
 	=============================================================================
 	
+
+{% endraw %}

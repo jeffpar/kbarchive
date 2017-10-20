@@ -6,6 +6,8 @@ permalink: /kb/240/Q240376/
 
 ## Q240376: Err Msg: HTTP 500 - Internal Server Error
 
+{% raw %}
+
 	Article: Q240376
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/240/Q240376/
 	
 	=============================================================================
 	
+
+{% endraw %}

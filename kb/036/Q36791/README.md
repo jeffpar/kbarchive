@@ -6,6 +6,8 @@ permalink: /kb/036/Q36791/
 
 ## Q36791: Microsoft OS/2 Languages Use Virtual Memory
 
+{% raw %}
+
 	Article: Q36791
 	Product(s): See article
 	Version(s): 5.10
@@ -24,3 +26,5 @@ permalink: /kb/036/Q36791/
 	enough free disk space to swap to. OS/2 is generally not dependent on
 	the nature of the application for using virtual memory, except for
 	device drivers that may require fixed segments of physical RAM.
+
+{% endraw %}

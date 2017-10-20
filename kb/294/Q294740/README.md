@@ -6,6 +6,8 @@ permalink: /kb/294/Q294740/
 
 ## Q294740: MM2: Game Stops Responding (Hangs) w/SideWinder Force Feedback 2
 
+{% raw %}
+
 	Article: Q294740
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -50,3 +52,5 @@ permalink: /kb/294/Q294740/
 	
 	=============================================================================
 	
+
+{% endraw %}

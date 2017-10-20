@@ -6,6 +6,8 @@ permalink: /kb/234/Q234262/
 
 ## Q234262: SMS: Linking Query to a Collection Membership Rule May Not Work
 
+{% raw %}
+
 	Article: Q234262
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -112,3 +114,5 @@ permalink: /kb/234/Q234262/
 	
 	=============================================================================
 	
+
+{% endraw %}

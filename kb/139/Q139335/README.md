@@ -6,6 +6,8 @@ permalink: /kb/139/Q139335/
 
 ## Q139335: PRB: Import Wizard Shows the First 50 Records Only
 
+{% raw %}
+
 	Article: Q139335
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/139/Q139335/
 	
 	=============================================================================
 	
+
+{% endraw %}

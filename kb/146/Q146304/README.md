@@ -6,6 +6,8 @@ permalink: /kb/146/Q146304/
 
 ## Q146304: XADM: Directory Import File Format
 
+{% raw %}
+
 	Article: Q146304
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/146/Q146304/
 	
 	=============================================================================
 	
+
+{% endraw %}

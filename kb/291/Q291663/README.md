@@ -6,6 +6,8 @@ permalink: /kb/291/Q291663/
 
 ## Q291663: Error Message When Distribute Software Wizard Used
 
+{% raw %}
+
 	Article: Q291663
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -61,3 +63,5 @@ permalink: /kb/291/Q291663/
 	
 	=============================================================================
 	
+
+{% endraw %}

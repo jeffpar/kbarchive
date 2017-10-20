@@ -6,6 +6,8 @@ permalink: /kb/042/Q42926/
 
 ## Q42926: Use QuickC Environment and Compile with QCL or NMAKE
 
+{% raw %}
+
 	Article: Q42926
 	Product(s): See article
 	Version(s): 2.00
@@ -42,3 +44,5 @@ permalink: /kb/042/Q42926/
 	You can add NMAKE or other commands to the "Utility" menu in the
 	same manner. For further help, use the F1 key in QuickC on the
 	option you need help with.
+
+{% endraw %}

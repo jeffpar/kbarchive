@@ -6,6 +6,8 @@ permalink: /kb/134/Q134490/
 
 ## Q134490: GP Fault with PowerBuilder 4.0 Sample Applications
 
+{% raw %}
+
 	Article: Q134490
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/134/Q134490/
 	
 	=============================================================================
 	
+
+{% endraw %}

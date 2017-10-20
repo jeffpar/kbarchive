@@ -6,6 +6,8 @@ permalink: /kb/232/Q232384/
 
 ## Q232384: XFOR: Store Does Not Recognize Double Angle Brackets Correctly
 
+{% raw %}
+
 	Article: Q232384
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -91,3 +93,5 @@ permalink: /kb/232/Q232384/
 	
 	=============================================================================
 	
+
+{% endraw %}

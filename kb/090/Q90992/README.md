@@ -6,6 +6,8 @@ permalink: /kb/090/Q90992/
 
 ## Q90992: HP III Hangs with XLI Adapter
 
+{% raw %}
+
 	Article: Q90992
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -42,3 +44,5 @@ permalink: /kb/090/Q90992/
 	
 	=============================================================================
 	
+
+{% endraw %}

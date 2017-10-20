@@ -6,6 +6,8 @@ permalink: /kb/085/Q85601/
 
 ## Q85601: FAX: How to Control the Polling for Sending Mail Via Fax
 
+{% raw %}
+
 	Article: Q85601
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/085/Q85601/
 	
 	=============================================================================
 	
+
+{% endraw %}

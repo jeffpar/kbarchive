@@ -6,6 +6,8 @@ permalink: /kb/121/Q121555/
 
 ## Q121555: Compression Performance Tuning in Systems Management Server
 
+{% raw %}
+
 	Article: Q121555
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2,2.0
@@ -93,3 +95,5 @@ permalink: /kb/121/Q121555/
 	
 	=============================================================================
 	
+
+{% endraw %}

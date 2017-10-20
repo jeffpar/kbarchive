@@ -6,6 +6,8 @@ permalink: /kb/247/Q247405/
 
 ## Q247405: PRB: Incorrect SESSION_INFO_XX Pulled in when Compiling _MBCS
 
+{% raw %}
+
 	Article: Q247405
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/247/Q247405/
 	
 	=============================================================================
 	
+
+{% endraw %}

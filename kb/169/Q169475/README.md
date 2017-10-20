@@ -6,6 +6,8 @@ permalink: /kb/169/Q169475/
 
 ## Q169475: SMS: Command Line Parameters Are Not Passed with Long File Names
 
+{% raw %}
+
 	Article: Q169475
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -57,3 +59,5 @@ permalink: /kb/169/Q169475/
 	
 	=============================================================================
 	
+
+{% endraw %}

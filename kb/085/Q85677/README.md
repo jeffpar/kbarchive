@@ -6,6 +6,8 @@ permalink: /kb/085/Q85677/
 
 ## Q85677: Sources of Information about the Windows Help Compiler
 
+{% raw %}
+
 	Article: Q85677
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/085/Q85677/
 	
 	=============================================================================
 	
+
+{% endraw %}

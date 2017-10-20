@@ -6,6 +6,8 @@ permalink: /kb/117/Q117863/
 
 ## Q117863: Mac Encarta: Anatomy Images Cut Off on Right Side
 
+{% raw %}
+
 	Article: Q117863
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition; MACINTOSH:
@@ -60,3 +62,5 @@ permalink: /kb/117/Q117863/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232137/
 
 ## Q232137: How to Import a Server Certificate for Use in IIS 5.0
 
+{% raw %}
+
 	Article: Q232137
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -146,3 +148,5 @@ permalink: /kb/232/Q232137/
 	
 	=============================================================================
 	
+
+{% endraw %}

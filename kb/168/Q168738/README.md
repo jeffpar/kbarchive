@@ -6,6 +6,8 @@ permalink: /kb/168/Q168738/
 
 ## Q168738: XCON: HP Openmail Users Cannot Reply to SMTP Mail
 
+{% raw %}
+
 	Article: Q168738
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -88,3 +90,5 @@ permalink: /kb/168/Q168738/
 	
 	=============================================================================
 	
+
+{% endraw %}

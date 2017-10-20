@@ -6,6 +6,8 @@ permalink: /kb/270/Q270018/
 
 ## Q270018: XCON: Subject Line in OOF Messages Is Not in English
 
+{% raw %}
+
 	Article: Q270018
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -95,3 +97,5 @@ permalink: /kb/270/Q270018/
 	
 	=============================================================================
 	
+
+{% endraw %}

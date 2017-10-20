@@ -6,6 +6,8 @@ permalink: /kb/169/Q169392/
 
 ## Q169392: XFOR: LinkAge Connector Does Not Support Sharing Calendars
 
+{% raw %}
+
 	Article: Q169392
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -34,3 +36,5 @@ permalink: /kb/169/Q169392/
 	
 	=============================================================================
 	
+
+{% endraw %}

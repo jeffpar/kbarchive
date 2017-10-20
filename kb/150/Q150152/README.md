@@ -6,6 +6,8 @@ permalink: /kb/150/Q150152/
 
 ## Q150152: Printing from Mac to HP 3x with 52.2 HP Postscript Cartridge
 
+{% raw %}
+
 	Article: Q150152
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150152/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170233/
 
 ## Q170233: MDG:Purpose of the POBOX in Remote Mail
 
+{% raw %}
+
 	Article: Q170233
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -39,3 +41,5 @@ permalink: /kb/170/Q170233/
 	
 	=============================================================================
 	
+
+{% endraw %}

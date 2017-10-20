@@ -6,6 +6,8 @@ permalink: /kb/174/Q174580/
 
 ## Q174580: Where to Find Information about Deleting Data Files
 
+{% raw %}
+
 	Article: Q174580
 	Product(s): Microsoft Press
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/174/Q174580/
 	
 	=============================================================================
 	
+
+{% endraw %}

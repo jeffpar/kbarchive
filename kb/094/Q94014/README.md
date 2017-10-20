@@ -6,6 +6,8 @@ permalink: /kb/094/Q94014/
 
 ## Q94014: WSS: Internal Error at File XLRDR.C with Proofreader
 
+{% raw %}
+
 	Article: Q94014
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/094/Q94014/
 	
 	=============================================================================
 	
+
+{% endraw %}

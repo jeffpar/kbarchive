@@ -6,6 +6,8 @@ permalink: /kb/171/Q171950/
 
 ## Q171950: Buffer Pool Error 685 Printing Two Large Jobs Simultaneously
 
+{% raw %}
+
 	Article: Q171950
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -96,3 +98,5 @@ permalink: /kb/171/Q171950/
 	
 	=============================================================================
 	
+
+{% endraw %}

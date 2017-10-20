@@ -6,6 +6,8 @@ permalink: /kb/197/Q197757/
 
 ## Q197757: WD97: Conditional MERGEFIELD Lost When Converted to MacWord
 
+{% raw %}
+
 	Article: Q197757
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -71,3 +73,5 @@ permalink: /kb/197/Q197757/
 	
 	=============================================================================
 	
+
+{% endraw %}

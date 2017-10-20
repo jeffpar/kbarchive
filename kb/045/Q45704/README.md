@@ -6,6 +6,8 @@ permalink: /kb/045/Q45704/
 
 ## Q45704: Using GlobalFlags() to Test for GMEM_DISCARDABLE
 
+{% raw %}
+
 	Article: Q45704
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -44,3 +46,5 @@ permalink: /kb/045/Q45704/
 	
 	=============================================================================
 	
+
+{% endraw %}

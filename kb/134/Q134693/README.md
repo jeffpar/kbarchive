@@ -6,6 +6,8 @@ permalink: /kb/134/Q134693/
 
 ## Q134693: Unable to Delete More than 250 Computers from Ad Hoc Query List
 
+{% raw %}
+
 	Article: Q134693
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -63,3 +65,5 @@ permalink: /kb/134/Q134693/
 	
 	=============================================================================
 	
+
+{% endraw %}

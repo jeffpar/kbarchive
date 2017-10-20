@@ -6,6 +6,8 @@ permalink: /kb/132/Q132552/
 
 ## Q132552: SNA: Separate Logon Prompt If Non-MS Network Protocol Installed
 
+{% raw %}
+
 	Article: Q132552
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP1
@@ -180,3 +182,5 @@ permalink: /kb/132/Q132552/
 	
 	=============================================================================
 	
+
+{% endraw %}

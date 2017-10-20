@@ -6,6 +6,8 @@ permalink: /kb/182/Q182202/
 
 ## Q182202: XADM: Clean Mailbox Progress Bar Displays Incorrect Message Coun
 
+{% raw %}
+
 	Article: Q182202
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/182/Q182202/
 	
 	=============================================================================
 	
+
+{% endraw %}

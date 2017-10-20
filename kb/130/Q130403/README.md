@@ -6,6 +6,8 @@ permalink: /kb/130/Q130403/
 
 ## Q130403: Cannot Install Unlisted Driver During Setup
 
+{% raw %}
+
 	Article: Q130403
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -43,3 +45,5 @@ permalink: /kb/130/Q130403/
 	
 	=============================================================================
 	
+
+{% endraw %}

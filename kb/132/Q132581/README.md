@@ -6,6 +6,8 @@ permalink: /kb/132/Q132581/
 
 ## Q132581: No Sound Playing Freddy Pharkas in MS-DOS Session
 
+{% raw %}
+
 	Article: Q132581
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132581/
 	
 	=============================================================================
 	
+
+{% endraw %}

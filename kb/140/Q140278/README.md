@@ -6,6 +6,8 @@ permalink: /kb/140/Q140278/
 
 ## Q140278: PC NTMMTA: Err Msg: Can't Update Service...
 
+{% raw %}
+
 	Article: Q140278
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -62,3 +64,5 @@ permalink: /kb/140/Q140278/
 	
 	=============================================================================
 	
+
+{% endraw %}

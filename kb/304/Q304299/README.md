@@ -6,6 +6,8 @@ permalink: /kb/304/Q304299/
 
 ## Q304299: SAMPLE: Using the Voice Control from eMbedded Visual Basic
 
+{% raw %}
+
 	Article: Q304299
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -95,3 +97,5 @@ permalink: /kb/304/Q304299/
 	
 	=============================================================================
 	
+
+{% endraw %}

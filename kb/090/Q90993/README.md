@@ -6,6 +6,8 @@ permalink: /kb/090/Q90993/
 
 ## Q90993: Problems Caused by Setup Changing LASTDRIVE= Statement
 
+{% raw %}
+
 	Article: Q90993
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/090/Q90993/
 	
 	=============================================================================
 	
+
+{% endraw %}

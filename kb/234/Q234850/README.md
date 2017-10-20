@@ -6,6 +6,8 @@ permalink: /kb/234/Q234850/
 
 ## Q234850: SMS: Packages Are Advertised to the Wrong Collections
 
+{% raw %}
+
 	Article: Q234850
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -71,3 +73,5 @@ permalink: /kb/234/Q234850/
 	
 	=============================================================================
 	
+
+{% endraw %}

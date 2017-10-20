@@ -6,6 +6,8 @@ permalink: /kb/111/Q111071/
 
 ## Q111071: GP Fault in Module EQNEDIT.EXE on Object Insert
 
+{% raw %}
+
 	Article: Q111071
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -52,3 +54,5 @@ permalink: /kb/111/Q111071/
 	
 	=============================================================================
 	
+
+{% endraw %}

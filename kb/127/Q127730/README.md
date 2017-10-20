@@ -6,6 +6,8 @@ permalink: /kb/127/Q127730/
 
 ## Q127730: PROFS: SoftSwitch Gateway Hangs on Large Attachments
 
+{% raw %}
+
 	Article: Q127730
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4a
@@ -63,3 +65,5 @@ permalink: /kb/127/Q127730/
 	
 	=============================================================================
 	
+
+{% endraw %}

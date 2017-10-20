@@ -6,6 +6,8 @@ permalink: /kb/196/Q196331/
 
 ## Q196331: XADM: X.500 Proxy Address Creation by Move Server Wizard
 
+{% raw %}
+
 	Article: Q196331
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -47,3 +49,5 @@ permalink: /kb/196/Q196331/
 	
 	=============================================================================
 	
+
+{% endraw %}

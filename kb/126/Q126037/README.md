@@ -6,6 +6,8 @@ permalink: /kb/126/Q126037/
 
 ## Q126037: Problems with Pivot Functions on Radius Pivot Monitors
 
+{% raw %}
+
 	Article: Q126037
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/126/Q126037/
 	
 	=============================================================================
 	
+
+{% endraw %}

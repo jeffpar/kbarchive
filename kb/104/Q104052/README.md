@@ -6,6 +6,8 @@ permalink: /kb/104/Q104052/
 
 ## Q104052: FIX: FoxPro Sends Only Two Decimals to MS Graph
 
+{% raw %}
+
 	Article: Q104052
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.6a,3.0
@@ -110,3 +112,5 @@ permalink: /kb/104/Q104052/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159178/
 
 ## Q159178: MSMail Windows Client Fails to Delete Files
 
+{% raw %}
+
 	Article: Q159178
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -62,3 +64,5 @@ permalink: /kb/159/Q159178/
 	
 	=============================================================================
 	
+
+{% endraw %}

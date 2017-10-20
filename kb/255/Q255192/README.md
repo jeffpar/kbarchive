@@ -6,6 +6,8 @@ permalink: /kb/255/Q255192/
 
 ## Q255192: Terminal Server Client Cannot Perform Send To/Mail Recipient
 
+{% raw %}
+
 	Article: Q255192
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/255/Q255192/
 	
 	=============================================================================
 	
+
+{% endraw %}

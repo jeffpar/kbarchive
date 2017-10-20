@@ -6,6 +6,8 @@ permalink: /kb/119/Q119642/
 
 ## Q119642: PC Ext: Version Differences Locking External P1 File for Async
 
+{% raw %}
+
 	Article: Q119642
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2,3.5
@@ -172,3 +174,5 @@ permalink: /kb/119/Q119642/
 	
 	=============================================================================
 	
+
+{% endraw %}

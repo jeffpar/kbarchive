@@ -6,6 +6,8 @@ permalink: /kb/243/Q243046/
 
 ## Q243046: SNMPAPI Does Not Send Traps Without LAN Adapter on Computer
 
+{% raw %}
+
 	Article: Q243046
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/243/Q243046/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31485/
 
 ## Q31485: Making Assignments to PLUS, MINUS and PRINT SCREEN Keys
 
+{% raw %}
+
 	Article: Q31485
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -18,3 +20,5 @@ permalink: /kb/031/Q31485/
 	
 	For more information on function assignments, macros, and keystrokes,
 	consult section 6.2.1 of "The Microsoft Editor User's Guide."
+
+{% endraw %}

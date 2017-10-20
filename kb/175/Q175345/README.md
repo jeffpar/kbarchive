@@ -6,6 +6,8 @@ permalink: /kb/175/Q175345/
 
 ## Q175345: Age Of Empires Err Msg: Not Enough Memory or Swap File Space
 
+{% raw %}
+
 	Article: Q175345
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/175/Q175345/
 	
 	=============================================================================
 	
+
+{% endraw %}

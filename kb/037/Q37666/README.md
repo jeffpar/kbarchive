@@ -6,6 +6,8 @@ permalink: /kb/037/Q37666/
 
 ## Q37666: Additional Causes of Error C2152
 
+{% raw %}
+
 	Article: Q37666
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -26,3 +28,5 @@ permalink: /kb/037/Q37666/
 	This is correct, but incomplete. Additional causes are mixing near
 	and far function pointers and mixing interrupt and non-interrupt
 	function pointers.
+
+{% endraw %}

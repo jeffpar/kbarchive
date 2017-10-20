@@ -6,6 +6,8 @@ permalink: /kb/196/Q196953/
 
 ## Q196953: WD97: How to Use Form Data as Mail Merge Data Source
 
+{% raw %}
+
 	Article: Q196953
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/196/Q196953/
 	
 	=============================================================================
 	
+
+{% endraw %}

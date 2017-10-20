@@ -6,6 +6,8 @@ permalink: /kb/073/Q73797/
 
 ## Q73797: Windows Hangs if Coprocessor Is Incorrectly Reported
 
+{% raw %}
+
 	Article: Q73797
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/073/Q73797/
 	
 	=============================================================================
 	
+
+{% endraw %}

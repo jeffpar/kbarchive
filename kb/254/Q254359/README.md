@@ -6,6 +6,8 @@ permalink: /kb/254/Q254359/
 
 ## Q254359: Streets and Trips 2001: How to Install and Remove Pocket Streets
 
+{% raw %}
+
 	Article: Q254359
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/254/Q254359/
 	
 	=============================================================================
 	
+
+{% endraw %}

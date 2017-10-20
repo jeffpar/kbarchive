@@ -6,6 +6,8 @@ permalink: /kb/174/Q174808/
 
 ## Q174808: PRB: Poor Performance with the GoSub Statement
 
+{% raw %}
+
 	Article: Q174808
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -266,3 +268,5 @@ permalink: /kb/174/Q174808/
 	
 	=============================================================================
 	
+
+{% endraw %}

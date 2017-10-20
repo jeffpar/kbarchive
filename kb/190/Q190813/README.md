@@ -6,6 +6,8 @@ permalink: /kb/190/Q190813/
 
 ## Q190813: XADM: Information Store Fails to Start
 
+{% raw %}
+
 	Article: Q190813
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -65,3 +67,5 @@ permalink: /kb/190/Q190813/
 	
 	=============================================================================
 	
+
+{% endraw %}

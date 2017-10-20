@@ -6,6 +6,8 @@ permalink: /kb/077/Q77239/
 
 ## Q77239: Tandy 1400 Laptop Clock Problem Under MS-DOS 5.0 and Later
 
+{% raw %}
+
 	Article: Q77239
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/077/Q77239/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152785/
 
 ## Q152785: FILE: RDOTEST.EXE Test RDO and ODBC Driver Without Writing Code
 
+{% raw %}
+
 	Article: Q152785
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152785/
 	
 	=============================================================================
 	
+
+{% endraw %}

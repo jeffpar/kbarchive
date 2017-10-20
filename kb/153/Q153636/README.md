@@ -6,6 +6,8 @@ permalink: /kb/153/Q153636/
 
 ## Q153636: SMS Client Group Remains on the Windows 95 Task Bar
 
+{% raw %}
+
 	Article: Q153636
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153636/
 	
 	=============================================================================
 	
+
+{% endraw %}

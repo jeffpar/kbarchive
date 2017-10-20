@@ -6,6 +6,8 @@ permalink: /kb/151/Q151698/
 
 ## Q151698: APPC DISPLAY Verb May Return Incorrect LU6.2 Session Info
 
+{% raw %}
+
 	Article: Q151698
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11
@@ -58,3 +60,5 @@ permalink: /kb/151/Q151698/
 	
 	=============================================================================
 	
+
+{% endraw %}

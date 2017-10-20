@@ -6,6 +6,8 @@ permalink: /kb/037/Q37414/
 
 ## Q37414: Cannot Nest I/O Statements or Functions in I/O Statements
 
+{% raw %}
+
 	Article: Q37414
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -62,3 +64,5 @@ permalink: /kb/037/Q37414/
 	OPEN "test2.dat" FOR OUTPUT AS #2
 	CopyString$ = INPUT$(10, #1)
 	PRINT #2, CopyString$
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/323/Q323698/
 
 ## Q323698: PRB: &quot;There Is a Diff Chain Size Mismatch in File&quot; Error Message
 
+{% raw %}
+
 	Article: Q323698
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/323/Q323698/
 	
 	=============================================================================
 	
+
+{% endraw %}

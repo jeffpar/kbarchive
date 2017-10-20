@@ -6,6 +6,8 @@ permalink: /kb/130/Q130176/
 
 ## Q130176: Project versus File Labeling in SourceSafe
 
+{% raw %}
+
 	Article: Q130176
 	Product(s): Microsoft SourceSafe
 	Version(s): 2.20 3.0x 3.10 |2.20 3.0x 3.10 |
@@ -76,3 +78,5 @@ permalink: /kb/130/Q130176/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/092/Q92939/
 
 ## Q92939: Halftone Frequency Problem in PostScript Driver 3.53
 
+{% raw %}
+
 	Article: Q92939
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/092/Q92939/
 	
 	=============================================================================
 	
+
+{% endraw %}

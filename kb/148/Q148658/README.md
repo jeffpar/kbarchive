@@ -6,6 +6,8 @@ permalink: /kb/148/Q148658/
 
 ## Q148658: How to Load Windows NT MEMORY.DMP File Using I386KD.EXE
 
+{% raw %}
+
 	Article: Q148658
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -271,3 +273,5 @@ permalink: /kb/148/Q148658/
 	
 	=============================================================================
 	
+
+{% endraw %}

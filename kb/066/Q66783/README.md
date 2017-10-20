@@ -6,6 +6,8 @@ permalink: /kb/066/Q66783/
 
 ## Q66783: _floodfill() May Not Stop at the Correct Boundary Color
 
+{% raw %}
+
 	Article: Q66783
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -55,3 +57,5 @@ permalink: /kb/066/Q66783/
 	   getch();
 	   _setvideomode( _DEFAULTMODE );
 	}
+
+{% endraw %}

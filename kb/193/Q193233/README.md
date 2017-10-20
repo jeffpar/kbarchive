@@ -6,6 +6,8 @@ permalink: /kb/193/Q193233/
 
 ## Q193233: Rpcss.exe Consumes 100% CPU Due to RPC Spoofing Attack
 
+{% raw %}
+
 	Article: Q193233
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -106,3 +108,5 @@ permalink: /kb/193/Q193233/
 	
 	=============================================================================
 	
+
+{% endraw %}

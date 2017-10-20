@@ -6,6 +6,8 @@ permalink: /kb/160/Q160549/
 
 ## Q160549: Mac Music Central 97: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q160549
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -61,3 +63,5 @@ permalink: /kb/160/Q160549/
 	
 	=============================================================================
 	
+
+{% endraw %}

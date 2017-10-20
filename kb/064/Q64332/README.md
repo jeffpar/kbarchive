@@ -6,6 +6,8 @@ permalink: /kb/064/Q64332/
 
 ## Q64332: PostScript Driver 3.30 Doesn't Save Scaling Between Sessions
 
+{% raw %}
+
 	Article: Q64332
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/064/Q64332/
 	
 	=============================================================================
 	
+
+{% endraw %}

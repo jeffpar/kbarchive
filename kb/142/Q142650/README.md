@@ -6,6 +6,8 @@ permalink: /kb/142/Q142650/
 
 ## Q142650: Netlogon Stops when Mailslot Message Is Larger than Specified
 
+{% raw %}
+
 	Article: Q142650
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -63,3 +65,5 @@ permalink: /kb/142/Q142650/
 	
 	=============================================================================
 	
+
+{% endraw %}

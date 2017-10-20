@@ -6,6 +6,8 @@ permalink: /kb/242/Q242215/
 
 ## Q242215: IAS RADIUS Realms/Prefixes Do Not Work Per Design Specifications
 
+{% raw %}
+
 	Article: Q242215
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/242/Q242215/
 	
 	=============================================================================
 	
+
+{% endraw %}

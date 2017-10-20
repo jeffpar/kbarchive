@@ -6,6 +6,8 @@ permalink: /kb/124/Q124083/
 
 ## Q124083: SMS: ViewNAD and the Network Applications Database (NAD)
 
+{% raw %}
+
 	Article: Q124083
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -262,3 +264,5 @@ permalink: /kb/124/Q124083/
 	
 	=============================================================================
 	
+
+{% endraw %}

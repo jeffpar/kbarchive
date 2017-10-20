@@ -6,6 +6,8 @@ permalink: /kb/122/Q122524/
 
 ## Q122524: Blue Cast Screen with Compaq QVision Video in DEC Alpha 2100
 
+{% raw %}
+
 	Article: Q122524
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/122/Q122524/
 	
 	=============================================================================
 	
+
+{% endraw %}

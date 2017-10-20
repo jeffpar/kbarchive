@@ -6,6 +6,8 @@ permalink: /kb/077/Q77356/
 
 ## Q77356: PC Rmt: Mail Sent to Group via External or Remote Returned
 
+{% raw %}
+
 	Article: Q77356
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -51,3 +53,5 @@ permalink: /kb/077/Q77356/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110381/
 
 ## Q110381: U.S. Service Pack 2 Requires at Least 25 MB Free Disk Space
 
+{% raw %}
+
 	Article: Q110381
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -54,3 +56,5 @@ permalink: /kb/110/Q110381/
 	
 	=============================================================================
 	
+
+{% endraw %}

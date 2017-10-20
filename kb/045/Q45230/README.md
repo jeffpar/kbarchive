@@ -6,6 +6,8 @@ permalink: /kb/045/Q45230/
 
 ## Q45230: Conflict between Global and Local Variables When Debugging
 
+{% raw %}
+
 	Article: Q45230
 	Product(s): See article
 	Version(s): 2.00
@@ -64,3 +66,5 @@ permalink: /kb/045/Q45230/
 	    foo = 20;
 	    if (foo == 20) sub();
 	}
+
+{% endraw %}

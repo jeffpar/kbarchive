@@ -6,6 +6,8 @@ permalink: /kb/196/Q196255/
 
 ## Q196255: XFOR: Cc:Mail Custom Recipients Missing (.) in X.400 Address
 
+{% raw %}
+
 	Article: Q196255
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/196/Q196255/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141396/
 
 ## Q141396: How to Place FoxPro's Desktop Accessory Items on the Menu
 
+{% raw %}
+
 	Article: Q141396
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -60,3 +62,5 @@ permalink: /kb/141/Q141396/
 	
 	=============================================================================
 	
+
+{% endraw %}

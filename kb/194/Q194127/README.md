@@ -6,6 +6,8 @@ permalink: /kb/194/Q194127/
 
 ## Q194127: FIX: &quot;Syntax Error&quot; with SQL Literal String Over 16,379 Bytes
 
+{% raw %}
+
 	Article: Q194127
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0,2.0,3.0,3.5,3.6,6.0
@@ -156,3 +158,5 @@ permalink: /kb/194/Q194127/
 	
 	=============================================================================
 	
+
+{% endraw %}

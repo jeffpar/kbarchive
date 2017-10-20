@@ -6,6 +6,8 @@ permalink: /kb/138/Q138643/
 
 ## Q138643: PowerPoint 95 Viewer Doesn't Replace 16-Bit OLE Files
 
+{% raw %}
+
 	Article: Q138643
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -75,3 +77,5 @@ permalink: /kb/138/Q138643/
 	
 	=============================================================================
 	
+
+{% endraw %}

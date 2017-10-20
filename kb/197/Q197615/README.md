@@ -6,6 +6,8 @@ permalink: /kb/197/Q197615/
 
 ## Q197615: PowerPoint 97 Step by Step Corrections and Comments
 
+{% raw %}
+
 	Article: Q197615
 	Product(s): Microsoft Press
 	Version(s): 
@@ -126,3 +128,5 @@ permalink: /kb/197/Q197615/
 	
 	=============================================================================
 	
+
+{% endraw %}

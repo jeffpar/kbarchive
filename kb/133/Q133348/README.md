@@ -6,6 +6,8 @@ permalink: /kb/133/Q133348/
 
 ## Q133348: Windows 95/98: How to Read MS-DOS Mem Command Information
 
+{% raw %}
+
 	Article: Q133348
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:95
@@ -69,3 +71,5 @@ permalink: /kb/133/Q133348/
 	
 	=============================================================================
 	
+
+{% endraw %}

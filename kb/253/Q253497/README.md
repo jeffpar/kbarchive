@@ -6,6 +6,8 @@ permalink: /kb/253/Q253497/
 
 ## Q253497: RDPCLIP.EXE: Does Not Work If Session Was Disconnected
 
+{% raw %}
+
 	Article: Q253497
 	Product(s): Microsoft Press
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/253/Q253497/
 	
 	=============================================================================
 	
+
+{% endraw %}

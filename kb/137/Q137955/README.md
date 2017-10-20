@@ -6,6 +6,8 @@ permalink: /kb/137/Q137955/
 
 ## Q137955: PRB: &quot;Error loading file...&quot; When Opening a Form
 
+{% raw %}
+
 	Article: Q137955
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -93,3 +95,5 @@ permalink: /kb/137/Q137955/
 	
 	=============================================================================
 	
+
+{% endraw %}

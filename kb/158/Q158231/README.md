@@ -6,6 +6,8 @@ permalink: /kb/158/Q158231/
 
 ## Q158231: STL Sample for the binary_function Structure
 
+{% raw %}
+
 	Article: Q158231
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -126,3 +128,5 @@ permalink: /kb/158/Q158231/
 	
 	=============================================================================
 	
+
+{% endraw %}

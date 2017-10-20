@@ -6,6 +6,8 @@ permalink: /kb/166/Q166069/
 
 ## Q166069: WV: Document Properties Blank When Printed from Word Viewer
 
+{% raw %}
+
 	Article: Q166069
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/166/Q166069/
 	
 	=============================================================================
 	
+
+{% endraw %}

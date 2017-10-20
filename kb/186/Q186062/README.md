@@ -6,6 +6,8 @@ permalink: /kb/186/Q186062/
 
 ## Q186062: HOWTO: Use Custom System Colors Only When Your App Has Focus
 
+{% raw %}
+
 	Article: Q186062
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -417,3 +419,5 @@ permalink: /kb/186/Q186062/
 	
 	=============================================================================
 	
+
+{% endraw %}

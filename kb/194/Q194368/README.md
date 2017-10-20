@@ -6,6 +6,8 @@ permalink: /kb/194/Q194368/
 
 ## Q194368: FIX: Operators Do Not Recursively Call Object Default Properties
 
+{% raw %}
+
 	Article: Q194368
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -198,3 +200,5 @@ permalink: /kb/194/Q194368/
 	
 	=============================================================================
 	
+
+{% endraw %}

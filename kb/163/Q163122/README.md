@@ -6,6 +6,8 @@ permalink: /kb/163/Q163122/
 
 ## Q163122: Kids Plus!: Desktop Wallpaper Settings Lost After Installing
 
+{% raw %}
+
 	Article: Q163122
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/163/Q163122/
 	
 	=============================================================================
 	
+
+{% endraw %}

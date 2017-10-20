@@ -6,6 +6,8 @@ permalink: /kb/198/Q198040/
 
 ## Q198040: WD97: How to Use Dates as Mail Merge Selection Criteria
 
+{% raw %}
+
 	Article: Q198040
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -114,3 +116,5 @@ permalink: /kb/198/Q198040/
 	
 	=============================================================================
 	
+
+{% endraw %}

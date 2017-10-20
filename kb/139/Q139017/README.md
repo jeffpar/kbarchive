@@ -6,6 +6,8 @@ permalink: /kb/139/Q139017/
 
 ## Q139017: Cannot Monitor Recording with Compaq ESS ES688 Sound Chip
 
+{% raw %}
+
 	Article: Q139017
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/139/Q139017/
 	
 	=============================================================================
 	
+
+{% endraw %}

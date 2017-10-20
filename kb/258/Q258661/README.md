@@ -6,6 +6,8 @@ permalink: /kb/258/Q258661/
 
 ## Q258661: Baseball 2001: Game Graphics Are Distorted or Turn Black
 
+{% raw %}
+
 	Article: Q258661
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/258/Q258661/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191375/
 
 ## Q191375: HOWTO: Use COMCLASSINFO() to Check Installed ADO Version
 
+{% raw %}
+
 	Article: Q191375
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.1 SP2,2.6,6.0
@@ -69,3 +71,5 @@ permalink: /kb/191/Q191375/
 	
 	=============================================================================
 	
+
+{% endraw %}

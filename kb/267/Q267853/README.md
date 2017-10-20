@@ -6,6 +6,8 @@ permalink: /kb/267/Q267853/
 
 ## Q267853: Err Msg: Installation of This Application Has Been Corrupted
 
+{% raw %}
+
 	Article: Q267853
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/267/Q267853/
 	
 	=============================================================================
 	
+
+{% endraw %}

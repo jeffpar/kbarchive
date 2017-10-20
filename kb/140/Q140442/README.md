@@ -6,6 +6,8 @@ permalink: /kb/140/Q140442/
 
 ## Q140442: Err Msg: Client Service for NetWare. Unable to Complete...
 
+{% raw %}
+
 	Article: Q140442
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -80,3 +82,5 @@ permalink: /kb/140/Q140442/
 	
 	=============================================================================
 	
+
+{% endraw %}

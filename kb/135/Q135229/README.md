@@ -6,6 +6,8 @@ permalink: /kb/135/Q135229/
 
 ## Q135229: Paradox Coaches Button is Not Displayed
 
+{% raw %}
+
 	Article: Q135229
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/135/Q135229/
 	
 	=============================================================================
 	
+
+{% endraw %}

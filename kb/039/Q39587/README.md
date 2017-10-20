@@ -6,6 +6,8 @@ permalink: /kb/039/Q39587/
 
 ## Q39587: QB Advisor 4.50 &quot;Help: ON ERROR Statement Details&quot; Correction
 
+{% raw %}
+
 	Article: Q39587
 	Product(s): See article
 	Version(s): 4.50
@@ -106,3 +108,5 @@ permalink: /kb/039/Q39587/
 	
 	END SUB
 	[ end of incorrect HELP example. ] "
+
+{% endraw %}

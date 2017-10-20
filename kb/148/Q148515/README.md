@@ -6,6 +6,8 @@ permalink: /kb/148/Q148515/
 
 ## Q148515: XCLN: How the Exchange Windows 95 Client Uses Control.glb
 
+{% raw %}
+
 	Article: Q148515
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2,3.2a,3.5,4.0
@@ -74,3 +76,5 @@ permalink: /kb/148/Q148515/
 	
 	=============================================================================
 	
+
+{% endraw %}

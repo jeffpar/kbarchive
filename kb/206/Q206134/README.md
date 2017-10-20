@@ -6,6 +6,8 @@ permalink: /kb/206/Q206134/
 
 ## Q206134: Windows NT 4.0 Does Not Recognize Jaz Drive During Setup
 
+{% raw %}
+
 	Article: Q206134
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/206/Q206134/
 	
 	=============================================================================
 	
+
+{% endraw %}

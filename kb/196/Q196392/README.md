@@ -6,6 +6,8 @@ permalink: /kb/196/Q196392/
 
 ## Q196392: MngAgent Access Violation In Function CStdAgentProxy::SetPending
 
+{% raw %}
+
 	Article: Q196392
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -101,3 +103,5 @@ permalink: /kb/196/Q196392/
 	
 	=============================================================================
 	
+
+{% endraw %}

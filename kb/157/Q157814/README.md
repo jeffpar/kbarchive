@@ -6,6 +6,8 @@ permalink: /kb/157/Q157814/
 
 ## Q157814: SMS: Remote Control Causes Windows Client to Restart
 
+{% raw %}
+
 	Article: Q157814
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -49,3 +51,5 @@ permalink: /kb/157/Q157814/
 	
 	=============================================================================
 	
+
+{% endraw %}

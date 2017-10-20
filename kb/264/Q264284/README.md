@@ -6,6 +6,8 @@ permalink: /kb/264/Q264284/
 
 ## Q264284: What to Do When You Receive &quot;The Page Cannot be Found&quot; Error
 
+{% raw %}
+
 	Article: Q264284
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -152,3 +154,5 @@ permalink: /kb/264/Q264284/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96079/
 
 ## Q96079: WFWG: List of NCB Return Codes and Comments
 
+{% raw %}
+
 	Article: Q96079
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -80,3 +82,5 @@ permalink: /kb/096/Q96079/
 	
 	=============================================================================
 	
+
+{% endraw %}

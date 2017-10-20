@@ -6,6 +6,8 @@ permalink: /kb/320/Q320942/
 
 ## Q320942: Wildcard Searches Unsuccessful on Indexing Service 3.0
 
+{% raw %}
+
 	Article: Q320942
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -65,3 +67,5 @@ permalink: /kb/320/Q320942/
 	
 	=============================================================================
 	
+
+{% endraw %}

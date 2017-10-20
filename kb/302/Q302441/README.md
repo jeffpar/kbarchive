@@ -6,6 +6,8 @@ permalink: /kb/302/Q302441/
 
 ## Q302441: E-mail Message Opens In New Window Behind Main Window In MSN Exp
 
+{% raw %}
+
 	Article: Q302441
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -58,3 +60,5 @@ permalink: /kb/302/Q302441/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185705/
 
 ## Q185705: TCP/IP Address Changes to NetBIOS Name on Windows 95 SNA Client
 
+{% raw %}
+
 	Article: Q185705
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4
@@ -67,3 +69,5 @@ permalink: /kb/185/Q185705/
 	
 	=============================================================================
 	
+
+{% endraw %}

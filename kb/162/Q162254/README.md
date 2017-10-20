@@ -6,6 +6,8 @@ permalink: /kb/162/Q162254/
 
 ## Q162254: BUG: Container in Grid Column Fires Wrong Event
 
+{% raw %}
+
 	Article: Q162254
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 5.0a,3.0,3.0b,5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/162/Q162254/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160585/
 
 ## Q160585: Mac Multimedia Err: One or More File Required for Apple Guide
 
+{% raw %}
+
 	Article: Q160585
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996-1997,1997 edition
@@ -87,3 +89,5 @@ permalink: /kb/160/Q160585/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40546/
 
 ## Q40546: LINE Statement with BF Option Outside Window Will Hang
 
+{% raw %}
+
 	Article: Q40546
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -51,3 +53,5 @@ permalink: /kb/040/Q40546/
 	stall:  x$ = INKEY$: IF x$ = "" THEN GOTO stall
 	        IF x$ = CHR$(27) THEN END
 	        GOTO loop1
+
+{% endraw %}

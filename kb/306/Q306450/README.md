@@ -6,6 +6,8 @@ permalink: /kb/306/Q306450/
 
 ## Q306450: Can't Connect to FTP Site Anonymously When FTP Service Alone
 
+{% raw %}
+
 	Article: Q306450
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -100,3 +102,5 @@ permalink: /kb/306/Q306450/
 	
 	=============================================================================
 	
+
+{% endraw %}

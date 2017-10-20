@@ -6,6 +6,8 @@ permalink: /kb/164/Q164621/
 
 ## Q164621: MSN Err Msg: Video Not Available VIDS:IV32 Decompressor
 
+{% raw %}
+
 	Article: Q164621
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,95
@@ -91,3 +93,5 @@ permalink: /kb/164/Q164621/
 	
 	=============================================================================
 	
+
+{% endraw %}

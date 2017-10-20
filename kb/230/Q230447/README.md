@@ -6,6 +6,8 @@ permalink: /kb/230/Q230447/
 
 ## Q230447: Zone: ZoneFriends Status Bar Displays a Status of &quot;Logging On..&quot;
 
+{% raw %}
+
 	Article: Q230447
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/230/Q230447/
 	
 	=============================================================================
 	
+
+{% endraw %}

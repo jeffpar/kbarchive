@@ -6,6 +6,8 @@ permalink: /kb/153/Q153506/
 
 ## Q153506: PRB: Cannot Set Working Directory by Using .ini File
 
+{% raw %}
+
 	Article: Q153506
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/153/Q153506/
 	
 	=============================================================================
 	
+
+{% endraw %}

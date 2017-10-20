@@ -6,6 +6,8 @@ permalink: /kb/097/Q97652/
 
 ## Q97652: MHS: How Priority Levels are Mapped to Microsoft Mail
 
+{% raw %}
+
 	Article: Q97652
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/097/Q97652/
 	
 	=============================================================================
 	
+
+{% endraw %}

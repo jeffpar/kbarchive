@@ -6,6 +6,8 @@ permalink: /kb/153/Q153545/
 
 ## Q153545: How to Pass Unsafe Characters in a URL
 
+{% raw %}
+
 	Article: Q153545
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0
@@ -81,3 +83,5 @@ permalink: /kb/153/Q153545/
 	
 	=============================================================================
 	
+
+{% endraw %}

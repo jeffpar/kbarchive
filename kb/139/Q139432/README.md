@@ -6,6 +6,8 @@ permalink: /kb/139/Q139432/
 
 ## Q139432: OLE Update for Windows 95
 
+{% raw %}
+
 	Article: Q139432
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -178,3 +180,5 @@ permalink: /kb/139/Q139432/
 	
 	=============================================================================
 	
+
+{% endraw %}

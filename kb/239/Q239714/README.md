@@ -6,6 +6,8 @@ permalink: /kb/239/Q239714/
 
 ## Q239714: PRB: ODBC Error Message 1526 - &quot;Connectivity Error&quot;
 
+{% raw %}
+
 	Article: Q239714
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -116,3 +118,5 @@ permalink: /kb/239/Q239714/
 	
 	=============================================================================
 	
+
+{% endraw %}

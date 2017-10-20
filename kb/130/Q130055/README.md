@@ -6,6 +6,8 @@ permalink: /kb/130/Q130055/
 
 ## Q130055: Character Sets Supported by Hangeul (Korean) Windows Versions
 
+{% raw %}
+
 	Article: Q130055
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.1; WINDOWS:1.2,3.5
@@ -67,3 +69,5 @@ permalink: /kb/130/Q130055/
 	
 	=============================================================================
 	
+
+{% endraw %}

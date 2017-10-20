@@ -6,6 +6,8 @@ permalink: /kb/130/Q130876/
 
 ## Q130876: Printing Through HPMON(DLC) May Cause Print Subsystem to Hang
 
+{% raw %}
+
 	Article: Q130876
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130876/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135060/
 
 ## Q135060: Access Denied Attempting to Change Client Domain Password
 
+{% raw %}
+
 	Article: Q135060
 	Product(s): Microsoft Windows NT
 	Version(s): MS-DOS:3.0; WINDOWS:95; winnt:3.x,4.0; :
@@ -69,3 +71,5 @@ permalink: /kb/135/Q135060/
 	
 	=============================================================================
 	
+
+{% endraw %}

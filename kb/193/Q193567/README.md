@@ -6,6 +6,8 @@ permalink: /kb/193/Q193567/
 
 ## Q193567: XADM: KMS Database Conversion Fails During Exchange 5.5 Upgrade
 
+{% raw %}
+
 	Article: Q193567
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -88,3 +90,5 @@ permalink: /kb/193/Q193567/
 	
 	=============================================================================
 	
+
+{% endraw %}

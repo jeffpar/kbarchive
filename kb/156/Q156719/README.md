@@ -6,6 +6,8 @@ permalink: /kb/156/Q156719/
 
 ## Q156719: XCLN: Mac Client Doesn't Handle MacBinary Type I Attachments
 
+{% raw %}
+
 	Article: Q156719
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -74,3 +76,5 @@ permalink: /kb/156/Q156719/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43743/
 
 ## Q43743: Cannot Search and Replace String Longer Than 39 Characters
 
+{% raw %}
+
 	Article: Q43743
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/043/Q43743/
 	
 	The editor will replace PRINT with the given string, but it will
 	truncate the numbers off of the end.
+
+{% endraw %}

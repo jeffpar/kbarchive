@@ -6,6 +6,8 @@ permalink: /kb/184/Q184752/
 
 ## Q184752: Xerox PCL Does Not Print Landscape
 
+{% raw %}
+
 	Article: Q184752
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/184/Q184752/
 	
 	=============================================================================
 	
+
+{% endraw %}

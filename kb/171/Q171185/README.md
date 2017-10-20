@@ -6,6 +6,8 @@ permalink: /kb/171/Q171185/
 
 ## Q171185: WAN Addressing Options with Routing and Remote Access
 
+{% raw %}
+
 	Article: Q171185
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -118,3 +120,5 @@ permalink: /kb/171/Q171185/
 	
 	=============================================================================
 	
+
+{% endraw %}

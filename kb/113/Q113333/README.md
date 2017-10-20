@@ -6,6 +6,8 @@ permalink: /kb/113/Q113333/
 
 ## Q113333: How To Print Picture Box Contents Using StretchDIBits
 
+{% raw %}
+
 	Article: Q113333
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,3.0
@@ -517,3 +519,5 @@ permalink: /kb/113/Q113333/
 	
 	=============================================================================
 	
+
+{% endraw %}

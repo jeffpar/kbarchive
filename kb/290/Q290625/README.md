@@ -6,6 +6,8 @@ permalink: /kb/290/Q290625/
 
 ## Q290625: HOWTO: Configure SSL in a Windows 2000 IIS 5.0 Test Environment
 
+{% raw %}
+
 	Article: Q290625
 	Product(s): Internet Information Server
 	Version(s): 2.0,5.0
@@ -442,3 +444,5 @@ permalink: /kb/290/Q290625/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143150/
 
 ## Q143150: NetFlex-2 ENET-TR With Compaq SSD Not Routing to DECNet Node
 
+{% raw %}
+
 	Article: Q143150
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -64,3 +66,5 @@ permalink: /kb/143/Q143150/
 	
 	=============================================================================
 	
+
+{% endraw %}

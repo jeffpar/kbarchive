@@ -6,6 +6,8 @@ permalink: /kb/080/Q80652/
 
 ## Q80652: PC Win: Scroll Bars Are Not Available on Desktop
 
+{% raw %}
+
 	Article: Q80652
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/080/Q80652/
 	
 	=============================================================================
 	
+
+{% endraw %}

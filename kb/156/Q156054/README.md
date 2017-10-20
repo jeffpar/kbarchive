@@ -6,6 +6,8 @@ permalink: /kb/156/Q156054/
 
 ## Q156054: IIS FTP Server Will Not Start
 
+{% raw %}
+
 	Article: Q156054
 	Product(s): Internet Information Server
 	Version(s): 1.0 3.51
@@ -68,3 +70,5 @@ permalink: /kb/156/Q156054/
 	
 	=============================================================================
 	
+
+{% endraw %}

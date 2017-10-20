@@ -6,6 +6,8 @@ permalink: /kb/258/Q258734/
 
 ## Q258734: FIX: Large Cursor Causes Data Corruption with SQLEXEC
 
+{% raw %}
+
 	Article: Q258734
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -159,3 +161,5 @@ permalink: /kb/258/Q258734/
 	
 	=============================================================================
 	
+
+{% endraw %}

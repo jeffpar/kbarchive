@@ -6,6 +6,8 @@ permalink: /kb/179/Q179810/
 
 ## Q179810: Encarta 98 Standard Edition: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q179810
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/179/Q179810/
 	
 	=============================================================================
 	
+
+{% endraw %}

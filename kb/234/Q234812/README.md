@@ -6,6 +6,8 @@ permalink: /kb/234/Q234812/
 
 ## Q234812: XCLN: Outlook Does Not Recognize English (UK) Dictionary
 
+{% raw %}
+
 	Article: Q234812
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/234/Q234812/
 	
 	=============================================================================
 	
+
+{% endraw %}

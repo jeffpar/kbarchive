@@ -6,6 +6,8 @@ permalink: /kb/049/Q49537/
 
 ## Q49537: The CodeView Port Input Command Example Is Unclear
 
+{% raw %}
+
 	Article: Q49537
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -38,3 +40,5 @@ permalink: /kb/049/Q49537/
 	hexadecimal radix:
 	
 	   >I 0x2f8
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30856/
 
 ## Q30856: How to Make MOUSE CALLs in Hercules Graphics Mode, SCREEN 3
 
+{% raw %}
+
 	Article: Q30856
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -122,3 +124,5 @@ permalink: /kb/030/Q30856/
 	WHILE INKEY$="":WEND
 	CALL mouse(2, 0, 0, 0)       ' Turn off mouse cursor
 	END
+
+{% endraw %}

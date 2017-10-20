@@ -6,6 +6,8 @@ permalink: /kb/167/Q167009/
 
 ## Q167009: Description of DHCP Server Service Has a Misspelled Word
 
+{% raw %}
+
 	Article: Q167009
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/167/Q167009/
 	
 	=============================================================================
 	
+
+{% endraw %}

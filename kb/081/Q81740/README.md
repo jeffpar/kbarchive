@@ -6,6 +6,8 @@ permalink: /kb/081/Q81740/
 
 ## Q81740: CON, Switches=/K, ANSI.SYS /K, and Reading Keyboard Input
 
+{% raw %}
+
 	Article: Q81740
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -107,3 +109,5 @@ permalink: /kb/081/Q81740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133154/
 
 ## Q133154: ChessMaster 4000 Turbo Screen Becomes Distorted
 
+{% raw %}
+
 	Article: Q133154
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -63,3 +65,5 @@ permalink: /kb/133/Q133154/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201499/
 
 ## Q201499: PRB: NSLOOKUP Shows No IP Address for a Domain Name
 
+{% raw %}
+
 	Article: Q201499
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0a,4.5
@@ -92,3 +94,5 @@ permalink: /kb/201/Q201499/
 	
 	=============================================================================
 	
+
+{% endraw %}

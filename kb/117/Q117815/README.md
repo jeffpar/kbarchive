@@ -6,6 +6,8 @@ permalink: /kb/117/Q117815/
 
 ## Q117815: Mac Cinemania 94: Sounds Do Not Play with Insufficient Memory
 
+{% raw %}
+
 	Article: Q117815
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -65,3 +67,5 @@ permalink: /kb/117/Q117815/
 	
 	=============================================================================
 	
+
+{% endraw %}

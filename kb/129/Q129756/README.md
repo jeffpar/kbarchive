@@ -6,6 +6,8 @@ permalink: /kb/129/Q129756/
 
 ## Q129756: PRB: REPLACE Causes &quot;Field Rule Has Been Violated&quot; Error
 
+{% raw %}
+
 	Article: Q129756
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -107,3 +109,5 @@ permalink: /kb/129/Q129756/
 	
 	=============================================================================
 	
+
+{% endraw %}

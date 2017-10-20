@@ -6,6 +6,8 @@ permalink: /kb/235/Q235329/
 
 ## Q235329: XFOR: How to Change an MSMail Custom Recipient to SMTP
 
+{% raw %}
+
 	Article: Q235329
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/235/Q235329/
 	
 	=============================================================================
 	
+
+{% endraw %}

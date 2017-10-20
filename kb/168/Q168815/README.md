@@ -6,6 +6,8 @@ permalink: /kb/168/Q168815/
 
 ## Q168815: XCON: MTA Doesn't Start, Event IDs 9228 and 4300
 
+{% raw %}
+
 	Article: Q168815
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -111,3 +113,5 @@ permalink: /kb/168/Q168815/
 	
 	=============================================================================
 	
+
+{% endraw %}

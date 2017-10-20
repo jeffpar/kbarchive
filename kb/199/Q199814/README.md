@@ -6,6 +6,8 @@ permalink: /kb/199/Q199814/
 
 ## Q199814: SMS: Assigning Site System Roles to Distributed Servers
 
+{% raw %}
+
 	Article: Q199814
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -122,3 +124,5 @@ permalink: /kb/199/Q199814/
 	
 	=============================================================================
 	
+
+{% endraw %}

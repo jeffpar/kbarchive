@@ -6,6 +6,8 @@ permalink: /kb/269/Q269794/
 
 ## Q269794: PRB: MAPI: Advise() Call Returns 0x8007000E (E_OUTOFMEMORY)
 
+{% raw %}
+
 	Article: Q269794
 	Product(s): Microsoft Exchange
 	Version(s): 1.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/269/Q269794/
 	
 	=============================================================================
 	
+
+{% endraw %}

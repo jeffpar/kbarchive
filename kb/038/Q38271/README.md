@@ -6,6 +6,8 @@ permalink: /kb/038/Q38271/
 
 ## Q38271: Error C1059 Out of Near Heap Space
 
+{% raw %}
+
 	Article: Q38271
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -48,3 +50,5 @@ permalink: /kb/038/Q38271/
 	In the preceding command, <path> is the path (including drive and
 	directory) where C1L.EXE resides, and <sourcefile> is the name of the
 	C source file you want to compile.
+
+{% endraw %}

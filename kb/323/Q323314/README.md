@@ -6,6 +6,8 @@ permalink: /kb/323/Q323314/
 
 ## Q323314: HOW TO: Create an IIS Baseline by Using the Memory Object
 
+{% raw %}
+
 	Article: Q323314
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -224,3 +226,5 @@ permalink: /kb/323/Q323314/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263096/
 
 ## Q263096: ACTIVATE_SESSION Event Not Signaled When the Session Ends
 
+{% raw %}
+
 	Article: Q263096
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -75,3 +77,5 @@ permalink: /kb/263/Q263096/
 	
 	=============================================================================
 	
+
+{% endraw %}

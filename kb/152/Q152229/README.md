@@ -6,6 +6,8 @@ permalink: /kb/152/Q152229/
 
 ## Q152229: SMS: Expired SMS Jobs Alter Detailed Job Status
 
+{% raw %}
+
 	Article: Q152229
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -118,3 +120,5 @@ permalink: /kb/152/Q152229/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129727/
 
 ## Q129727: Wine Guide: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q129727
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -362,3 +364,5 @@ permalink: /kb/129/Q129727/
 	
 	=============================================================================
 	
+
+{% endraw %}

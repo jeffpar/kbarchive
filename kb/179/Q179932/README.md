@@ -6,6 +6,8 @@ permalink: /kb/179/Q179932/
 
 ## Q179932: Encarta: Amount from Contribution Is Incorrect
 
+{% raw %}
+
 	Article: Q179932
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:; WINDOWS:; :
@@ -66,3 +68,5 @@ permalink: /kb/179/Q179932/
 	
 	=============================================================================
 	
+
+{% endraw %}

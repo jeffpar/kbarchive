@@ -6,6 +6,8 @@ permalink: /kb/082/Q82654/
 
 ## Q82654: DEC Pathworks Remote Boot Workstations Under Windows 3.1
 
+{% raw %}
+
 	Article: Q82654
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/082/Q82654/
 	
 	=============================================================================
 	
+
+{% endraw %}

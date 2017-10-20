@@ -6,6 +6,8 @@ permalink: /kb/130/Q130322/
 
 ## Q130322: PC Gen: Information on Data Encryption Used in Mail
 
+{% raw %}
+
 	Article: Q130322
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130322/
 	
 	=============================================================================
 	
+
+{% endraw %}

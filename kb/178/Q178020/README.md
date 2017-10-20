@@ -6,6 +6,8 @@ permalink: /kb/178/Q178020/
 
 ## Q178020: FILE: WIN32API.EXE Updated Version of Win32api32.txt for VB 5.0
 
+{% raw %}
+
 	Article: Q178020
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -51,3 +53,5 @@ permalink: /kb/178/Q178020/
 	
 	=============================================================================
 	
+
+{% endraw %}

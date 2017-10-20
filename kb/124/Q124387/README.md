@@ -6,6 +6,8 @@ permalink: /kb/124/Q124387/
 
 ## Q124387: DOCERR: How to Use the MIXERLINECONTROLS dwControlType Flag
 
+{% raw %}
+
 	Article: Q124387
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/124/Q124387/
 	
 	=============================================================================
 	
+
+{% endraw %}

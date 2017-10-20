@@ -6,6 +6,8 @@ permalink: /kb/124/Q124483/
 
 ## Q124483: INF: Index Types and NULL Values
 
+{% raw %}
+
 	Article: Q124483
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/124/Q124483/
 	
 	=============================================================================
 	
+
+{% endraw %}

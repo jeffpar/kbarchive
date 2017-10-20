@@ -6,6 +6,8 @@ permalink: /kb/149/Q149180/
 
 ## Q149180: Dualboot of WinNT 3.51 and 4.0 Fails After SP Installation
 
+{% raw %}
+
 	Article: Q149180
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0 SUR
@@ -53,3 +55,5 @@ permalink: /kb/149/Q149180/
 	
 	=============================================================================
 	
+
+{% endraw %}

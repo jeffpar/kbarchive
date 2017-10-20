@@ -6,6 +6,8 @@ permalink: /kb/233/Q233445/
 
 ## Q233445: Business Planner: 20-Second Delay Before Program Starts
 
+{% raw %}
+
 	Article: Q233445
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/233/Q233445/
 	
 	=============================================================================
 	
+
+{% endraw %}

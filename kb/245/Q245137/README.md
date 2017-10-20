@@ -6,6 +6,8 @@ permalink: /kb/245/Q245137/
 
 ## Q245137: 'STOP: 0xC0000142 User32.dll' Error After Windows NT 4.0 Upgrade
 
+{% raw %}
+
 	Article: Q245137
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/245/Q245137/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98367/
 
 ## Q98367: How to Update Scrollable Lists in FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q98367
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -141,3 +143,5 @@ permalink: /kb/098/Q98367/
 	
 	=============================================================================
 	
+
+{% endraw %}

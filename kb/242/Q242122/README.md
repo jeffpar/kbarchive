@@ -6,6 +6,8 @@ permalink: /kb/242/Q242122/
 
 ## Q242122: Corrupted WINS database causes service to stop responding.
 
+{% raw %}
+
 	Article: Q242122
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/242/Q242122/
 	
 	=============================================================================
 	
+
+{% endraw %}

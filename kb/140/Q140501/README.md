@@ -6,6 +6,8 @@ permalink: /kb/140/Q140501/
 
 ## Q140501: No Sounds When Playing 3D Pinball
 
+{% raw %}
+
 	Article: Q140501
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -78,3 +80,5 @@ permalink: /kb/140/Q140501/
 	
 	=============================================================================
 	
+
+{% endraw %}

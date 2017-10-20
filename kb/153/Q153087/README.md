@@ -6,6 +6,8 @@ permalink: /kb/153/Q153087/
 
 ## Q153087: Scheduler Takes a Long Time To Activate Jobs
 
+{% raw %}
+
 	Article: Q153087
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153087/
 	
 	=============================================================================
 	
+
+{% endraw %}

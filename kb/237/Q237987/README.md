@@ -6,6 +6,8 @@ permalink: /kb/237/Q237987/
 
 ## Q237987: FTP GET Does Not Work Correctly on UNC Virtual Directories
 
+{% raw %}
+
 	Article: Q237987
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/237/Q237987/
 	
 	=============================================================================
 	
+
+{% endraw %}

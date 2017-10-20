@@ -6,6 +6,8 @@ permalink: /kb/215/Q215474/
 
 ## Q215474: XFOR: Missing SP2 README.RTF from Exchsrvr&#92;Connect&#92;Exchconn
 
+{% raw %}
+
 	Article: Q215474
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/215/Q215474/
 	
 	=============================================================================
 	
+
+{% endraw %}

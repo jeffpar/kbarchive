@@ -6,6 +6,8 @@ permalink: /kb/164/Q164595/
 
 ## Q164595: Duplicate Route Not Removed After Second Redirection
 
+{% raw %}
+
 	Article: Q164595
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/164/Q164595/
 	
 	=============================================================================
 	
+
+{% endraw %}

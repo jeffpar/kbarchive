@@ -6,6 +6,8 @@ permalink: /kb/126/Q126355/
 
 ## Q126355: Intel EtherExpress Pro Detected as 82595-Based Ethernet
 
+{% raw %}
+
 	Article: Q126355
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/126/Q126355/
 	
 	=============================================================================
 	
+
+{% endraw %}

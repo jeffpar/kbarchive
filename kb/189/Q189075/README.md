@@ -6,6 +6,8 @@ permalink: /kb/189/Q189075/
 
 ## Q189075: MTM2: How to Remove Player Names from the Driver Check-In List
 
+{% raw %}
+
 	Article: Q189075
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -52,3 +54,5 @@ permalink: /kb/189/Q189075/
 	
 	=============================================================================
 	
+
+{% endraw %}

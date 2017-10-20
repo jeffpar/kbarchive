@@ -6,6 +6,8 @@ permalink: /kb/156/Q156257/
 
 ## Q156257: FIX: SQL Server May Crash When sp_who2 Is Debugged
 
+{% raw %}
+
 	Article: Q156257
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -65,3 +67,5 @@ permalink: /kb/156/Q156257/
 	
 	=============================================================================
 	
+
+{% endraw %}

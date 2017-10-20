@@ -6,6 +6,8 @@ permalink: /kb/146/Q146952/
 
 ## Q146952: XCLN: Message Renamed to Subject Text After Embedding It
 
+{% raw %}
+
 	Article: Q146952
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -53,3 +55,5 @@ permalink: /kb/146/Q146952/
 	
 	=============================================================================
 	
+
+{% endraw %}

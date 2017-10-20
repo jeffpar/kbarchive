@@ -6,6 +6,8 @@ permalink: /kb/164/Q164813/
 
 ## Q164813: FIX: Web Browser Control Hangs in CFormView
 
+{% raw %}
+
 	Article: Q164813
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -109,3 +111,5 @@ permalink: /kb/164/Q164813/
 	
 	=============================================================================
 	
+
+{% endraw %}

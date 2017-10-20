@@ -6,6 +6,8 @@ permalink: /kb/119/Q119064/
 
 ## Q119064: HOWTO: Retrieving a List of All ODBC Data Sources
 
+{% raw %}
+
 	Article: Q119064
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1,2.2,2.5,2.6,2.7,4.0,4.1,4.2,5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/119/Q119064/
 	
 	=============================================================================
 	
+
+{% endraw %}

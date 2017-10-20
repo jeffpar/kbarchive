@@ -6,6 +6,8 @@ permalink: /kb/167/Q167959/
 
 ## Q167959: WD97: &quot;_Underline_&quot; AutoFormat Option Applies Italic
 
+{% raw %}
+
 	Article: Q167959
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/167/Q167959/
 	
 	=============================================================================
 	
+
+{% endraw %}

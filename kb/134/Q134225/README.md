@@ -6,6 +6,8 @@ permalink: /kb/134/Q134225/
 
 ## Q134225: PC DirSync: Use of the -TU and -TL Options for DISPATCH.EXE
 
+{% raw %}
+
 	Article: Q134225
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -73,3 +75,5 @@ permalink: /kb/134/Q134225/
 	
 	=============================================================================
 	
+
+{% endraw %}

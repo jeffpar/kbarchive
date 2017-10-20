@@ -6,6 +6,8 @@ permalink: /kb/190/Q190505/
 
 ## Q190505: BUG: Passing a Double Variable Causes Overflow Error in IDE
 
+{% raw %}
+
 	Article: Q190505
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/190/Q190505/
 	
 	=============================================================================
 	
+
+{% endraw %}

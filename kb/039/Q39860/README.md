@@ -6,6 +6,8 @@ permalink: /kb/039/Q39860/
 
 ## Q39860: Cannot Nest ON ERROR GOTO Error-Trapping Routines in BASIC
 
+{% raw %}
+
 	Article: Q39860
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/039/Q39860/
 	      Print "The error Number is: ";err
 	      RESUME NEXT
 	   END IF
+
+{% endraw %}

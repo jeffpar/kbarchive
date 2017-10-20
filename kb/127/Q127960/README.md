@@ -6,6 +6,8 @@ permalink: /kb/127/Q127960/
 
 ## Q127960: PC WRmt: Err Msg: Mail Driver Could Not Be Activated...
 
+{% raw %}
+
 	Article: Q127960
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -109,3 +111,5 @@ permalink: /kb/127/Q127960/
 	
 	=============================================================================
 	
+
+{% endraw %}

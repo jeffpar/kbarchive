@@ -6,6 +6,8 @@ permalink: /kb/161/Q161414/
 
 ## Q161414: FP97: How to Publish a FrontPage Web to the Internet, Intranet
 
+{% raw %}
+
 	Article: Q161414
 	Product(s): Word Front Page
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/161/Q161414/
 	
 	=============================================================================
 	
+
+{% endraw %}

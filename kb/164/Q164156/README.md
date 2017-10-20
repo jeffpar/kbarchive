@@ -6,6 +6,8 @@ permalink: /kb/164/Q164156/
 
 ## Q164156: XCLN: Err Msg: Spell Check Operation could not be Completed
 
+{% raw %}
+
 	Article: Q164156
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164156/
 	
 	=============================================================================
 	
+
+{% endraw %}

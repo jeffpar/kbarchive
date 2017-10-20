@@ -6,6 +6,8 @@ permalink: /kb/114/Q114280/
 
 ## Q114280: PC WRmt: Selector Doesn't Allow Copy/Move Without ServerPath
 
+{% raw %}
+
 	Article: Q114280
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -56,3 +58,5 @@ permalink: /kb/114/Q114280/
 	
 	=============================================================================
 	
+
+{% endraw %}

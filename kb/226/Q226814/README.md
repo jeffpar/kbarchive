@@ -6,6 +6,8 @@ permalink: /kb/226/Q226814/
 
 ## Q226814: SMS: &quot;Remote Execute&quot; Doesn't Open Files Associated with Program
 
+{% raw %}
+
 	Article: Q226814
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/226/Q226814/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148649/
 
 ## Q148649: INVPROC Should Force Pragma:Resync If There Is No History
 
+{% raw %}
+
 	Article: Q148649
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -60,3 +62,5 @@ permalink: /kb/148/Q148649/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150880/
 
 ## Q150880: XADM: Running Administrator From Untrusted NT Domain
 
+{% raw %}
+
 	Article: Q150880
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -91,3 +93,5 @@ permalink: /kb/150/Q150880/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135263/
 
 ## Q135263: Reapply Layout Doesn't Work If Master Layout Is Deleted
 
+{% raw %}
+
 	Article: Q135263
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -57,3 +59,5 @@ permalink: /kb/135/Q135263/
 	
 	=============================================================================
 	
+
+{% endraw %}

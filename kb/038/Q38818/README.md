@@ -6,6 +6,8 @@ permalink: /kb/038/Q38818/
 
 ## Q38818: Error L2029 Unresolved Externals
 
+{% raw %}
+
 	Article: Q38818
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -85,3 +87,5 @@ permalink: /kb/038/Q38818/
 	case of the functions, or the function in the assembler program didn't
 	have an underscore in front of its name to make it compatible with the
 	C naming convention.
+
+{% endraw %}

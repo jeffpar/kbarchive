@@ -6,6 +6,8 @@ permalink: /kb/189/Q189761/
 
 ## Q189761: WD97: Blank Line Placed Between Header and First Line of Text
 
+{% raw %}
+
 	Article: Q189761
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/189/Q189761/
 	
 	=============================================================================
 	
+
+{% endraw %}

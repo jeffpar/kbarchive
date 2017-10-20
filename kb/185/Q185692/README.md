@@ -6,6 +6,8 @@ permalink: /kb/185/Q185692/
 
 ## Q185692: XADM: Synchronization of OST Fails
 
+{% raw %}
+
 	Article: Q185692
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -58,3 +60,5 @@ permalink: /kb/185/Q185692/
 	
 	=============================================================================
 	
+
+{% endraw %}

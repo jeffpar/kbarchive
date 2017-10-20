@@ -6,6 +6,8 @@ permalink: /kb/292/Q292288/
 
 ## Q292288: Terminal Server Users Lose Drive Mappings
 
+{% raw %}
+
 	Article: Q292288
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/292/Q292288/
 	
 	=============================================================================
 	
+
+{% endraw %}

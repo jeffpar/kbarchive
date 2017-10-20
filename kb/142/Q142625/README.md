@@ -6,6 +6,8 @@ permalink: /kb/142/Q142625/
 
 ## Q142625: NETBIOS Defaults To 16 Sessions on Windows NT
 
+{% raw %}
+
 	Article: Q142625
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -93,3 +95,5 @@ permalink: /kb/142/Q142625/
 	
 	=============================================================================
 	
+
+{% endraw %}

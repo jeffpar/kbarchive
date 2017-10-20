@@ -6,6 +6,8 @@ permalink: /kb/106/Q106438/
 
 ## Q106438: Windows for Workgroups 3.11: How to Disable Printer Alerts
 
+{% raw %}
+
 	Article: Q106438
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -59,3 +61,5 @@ permalink: /kb/106/Q106438/
 	
 	=============================================================================
 	
+
+{% endraw %}

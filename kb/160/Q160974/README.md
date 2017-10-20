@@ -6,6 +6,8 @@ permalink: /kb/160/Q160974/
 
 ## Q160974: HOWTO: Determine If Text in a Text Box Can Be Undone
 
+{% raw %}
+
 	Article: Q160974
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0;
@@ -80,3 +82,5 @@ permalink: /kb/160/Q160974/
 	
 	=============================================================================
 	
+
+{% endraw %}

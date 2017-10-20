@@ -6,6 +6,8 @@ permalink: /kb/147/Q147794/
 
 ## Q147794: Implementing Per Server RAS Permissions
 
+{% raw %}
+
 	Article: Q147794
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -55,3 +57,5 @@ permalink: /kb/147/Q147794/
 	
 	=============================================================================
 	
+
+{% endraw %}

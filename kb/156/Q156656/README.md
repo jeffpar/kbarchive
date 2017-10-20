@@ -6,6 +6,8 @@ permalink: /kb/156/Q156656/
 
 ## Q156656: Err Msg: Remote Server Disconnect
 
+{% raw %}
+
 	Article: Q156656
 	Product(s): The Microsoft Network
 	Version(s): 2.0,2.5,2.51,2.52,2.6
@@ -166,3 +168,5 @@ permalink: /kb/156/Q156656/
 	
 	=============================================================================
 	
+
+{% endraw %}

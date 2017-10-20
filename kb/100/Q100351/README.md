@@ -6,6 +6,8 @@ permalink: /kb/100/Q100351/
 
 ## Q100351: Steps to Complete NPREP on a 3Com 3Server
 
+{% raw %}
+
 	Article: Q100351
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/100/Q100351/
 	
 	=============================================================================
 	
+
+{% endraw %}

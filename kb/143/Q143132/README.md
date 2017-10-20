@@ -6,6 +6,8 @@ permalink: /kb/143/Q143132/
 
 ## Q143132: EventLog Registry Value Does Not Enable Print Event Logging
 
+{% raw %}
+
 	Article: Q143132
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -88,3 +90,5 @@ permalink: /kb/143/Q143132/
 	
 	=============================================================================
 	
+
+{% endraw %}

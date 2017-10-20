@@ -6,6 +6,8 @@ permalink: /kb/076/Q76091/
 
 ## Q76091: CONN: Default .INI File for MS Mail Connection 1.0
 
+{% raw %}
+
 	Article: Q76091
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0
@@ -96,3 +98,5 @@ permalink: /kb/076/Q76091/
 	
 	=============================================================================
 	
+
+{% endraw %}

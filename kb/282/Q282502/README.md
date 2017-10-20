@@ -6,6 +6,8 @@ permalink: /kb/282/Q282502/
 
 ## Q282502: Encarta 2001: How to Manually Uninstall Encarta 2001
 
+{% raw %}
+
 	Article: Q282502
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/282/Q282502/
 	
 	=============================================================================
 	
+
+{% endraw %}

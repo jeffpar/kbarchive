@@ -6,6 +6,8 @@ permalink: /kb/241/Q241391/
 
 ## Q241391: HOWTO: Use the Win32 API FormatMessage Function with VFP
 
+{% raw %}
+
 	Article: Q241391
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -171,3 +173,5 @@ permalink: /kb/241/Q241391/
 	
 	=============================================================================
 	
+
+{% endraw %}

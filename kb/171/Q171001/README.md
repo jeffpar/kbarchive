@@ -6,6 +6,8 @@ permalink: /kb/171/Q171001/
 
 ## Q171001: XCON: Connection Difficulties When RAS Session Is In Progress
 
+{% raw %}
+
 	Article: Q171001
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/171/Q171001/
 	
 	=============================================================================
 	
+
+{% endraw %}

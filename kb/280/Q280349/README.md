@@ -6,6 +6,8 @@ permalink: /kb/280/Q280349/
 
 ## Q280349: XADM: &quot;Account information Is Incorrect&quot; Message During Setup
 
+{% raw %}
+
 	Article: Q280349
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5
@@ -79,3 +81,5 @@ permalink: /kb/280/Q280349/
 	
 	=============================================================================
 	
+
+{% endraw %}

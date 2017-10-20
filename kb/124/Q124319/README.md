@@ -6,6 +6,8 @@ permalink: /kb/124/Q124319/
 
 ## Q124319: BUG: Syntax Error When Using Qualified Table Name with Quotes
 
+{% raw %}
+
 	Article: Q124319
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -82,3 +84,5 @@ permalink: /kb/124/Q124319/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146564/
 
 ## Q146564: XCLN: Err Msg: Rules in Error
 
+{% raw %}
+
 	Article: Q146564
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -82,3 +84,5 @@ permalink: /kb/146/Q146564/
 	
 	=============================================================================
 	
+
+{% endraw %}

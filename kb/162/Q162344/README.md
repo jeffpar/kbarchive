@@ -6,6 +6,8 @@ permalink: /kb/162/Q162344/
 
 ## Q162344: SMS Administrator Misinterprets Multiple Site Selections
 
+{% raw %}
+
 	Article: Q162344
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -54,3 +56,5 @@ permalink: /kb/162/Q162344/
 	
 	=============================================================================
 	
+
+{% endraw %}

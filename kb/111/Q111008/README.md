@@ -6,6 +6,8 @@ permalink: /kb/111/Q111008/
 
 ## Q111008: BUG: Gaps Between Wedges Drawn with Pie()
 
+{% raw %}
+
 	Article: Q111008
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/111/Q111008/
 	
 	=============================================================================
 	
+
+{% endraw %}

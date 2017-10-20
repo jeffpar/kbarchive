@@ -6,6 +6,8 @@ permalink: /kb/077/Q77884/
 
 ## Q77884: PRB: Complex Printing Region Printed Incorrectly
 
+{% raw %}
+
 	Article: Q77884
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -48,3 +50,5 @@ permalink: /kb/077/Q77884/
 	
 	=============================================================================
 	
+
+{% endraw %}

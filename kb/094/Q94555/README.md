@@ -6,6 +6,8 @@ permalink: /kb/094/Q94555/
 
 ## Q94555: MemMaker: Order of Entries in the CONFIG.SYS File
 
+{% raw %}
+
 	Article: Q94555
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -70,3 +72,5 @@ permalink: /kb/094/Q94555/
 	
 	=============================================================================
 	
+
+{% endraw %}

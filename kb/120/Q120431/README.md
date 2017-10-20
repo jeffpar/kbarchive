@@ -6,6 +6,8 @@ permalink: /kb/120/Q120431/
 
 ## Q120431: Photoshop 2.5 Causes a GPF When Opening an EPS
 
+{% raw %}
+
 	Article: Q120431
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/120/Q120431/
 	
 	=============================================================================
 	
+
+{% endraw %}

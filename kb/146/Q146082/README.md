@@ -6,6 +6,8 @@ permalink: /kb/146/Q146082/
 
 ## Q146082: XCLN: Adding Subfolder to Outbox Changes Icon
 
+{% raw %}
+
 	Article: Q146082
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -45,3 +47,5 @@ permalink: /kb/146/Q146082/
 	
 	=============================================================================
 	
+
+{% endraw %}

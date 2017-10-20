@@ -6,6 +6,8 @@ permalink: /kb/200/Q200449/
 
 ## Q200449: XFOR: LME: Error When Opening the SNA Base Parameters Key
 
+{% raw %}
+
 	Article: Q200449
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2; winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/200/Q200449/
 	
 	=============================================================================
 	
+
+{% endraw %}

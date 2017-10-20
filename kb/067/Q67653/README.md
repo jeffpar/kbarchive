@@ -6,6 +6,8 @@ permalink: /kb/067/Q67653/
 
 ## Q67653: How to Respond When DDE Data Cannot Be Locked
 
+{% raw %}
+
 	Article: Q67653
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -41,3 +43,5 @@ permalink: /kb/067/Q67653/
 	
 	=============================================================================
 	
+
+{% endraw %}

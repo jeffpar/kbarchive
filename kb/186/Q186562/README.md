@@ -6,6 +6,8 @@ permalink: /kb/186/Q186562/
 
 ## Q186562: Terminal Server Multiprocessor Support
 
+{% raw %}
+
 	Article: Q186562
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/186/Q186562/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43008/
 
 ## Q43008: Debug Does Not Display Changes Made by _dos_setvect()
 
+{% raw %}
+
 	Article: Q43008
 	Product(s): See article
 	Version(s): 2.00
@@ -81,3 +83,5 @@ permalink: /kb/043/Q43008/
 	void interrupt far handler()
 	{
 	}
+
+{% endraw %}

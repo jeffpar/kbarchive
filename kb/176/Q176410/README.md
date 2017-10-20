@@ -6,6 +6,8 @@ permalink: /kb/176/Q176410/
 
 ## Q176410: PRB: GPF When Opening or Creating a New Project
 
+{% raw %}
+
 	Article: Q176410
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -65,3 +67,5 @@ permalink: /kb/176/Q176410/
 	
 	=============================================================================
 	
+
+{% endraw %}

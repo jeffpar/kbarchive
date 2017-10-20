@@ -6,6 +6,8 @@ permalink: /kb/060/Q60887/
 
 ## Q60887: WD97: Can Only Select Contiguous Text or Text and Graphics
 
+{% raw %}
+
 	Article: Q60887
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/060/Q60887/
 	
 	=============================================================================
 	
+
+{% endraw %}

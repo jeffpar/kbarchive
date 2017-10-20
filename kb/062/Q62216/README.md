@@ -6,6 +6,8 @@ permalink: /kb/062/Q62216/
 
 ## Q62216: QBX Hangs Using KEY with Two or More Characters, Then INPUT&#36;
 
+{% raw %}
+
 	Article: Q62216
 	Product(s): See article
 	Version(s): 7.00
@@ -40,3 +42,5 @@ permalink: /kb/062/Q62216/
 	   KEY 10, "*" + CHR$(13)   ' Any two or more characters produce problem.
 	   my$ = INPUT$(1)          ' Press F10 then additional key as input.
 	   print my$
+
+{% endraw %}

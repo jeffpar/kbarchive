@@ -6,6 +6,8 @@ permalink: /kb/165/Q165460/
 
 ## Q165460: SNA Server 3.0 Install Path Must Be Eight Characters or Less
 
+{% raw %}
+
 	Article: Q165460
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0; winnt:3.0
@@ -97,3 +99,5 @@ permalink: /kb/165/Q165460/
 	
 	=============================================================================
 	
+
+{% endraw %}

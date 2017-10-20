@@ -6,6 +6,8 @@ permalink: /kb/048/Q48839/
 
 ## Q48839: Warning L4014: /PACKDATA: Option Ignored for Real Mode
 
+{% raw %}
+
 	Article: Q48839
 	Product(s): See article
 	Version(s): 4.06 4.07 5.02 5.03 | 5.02 5.03
@@ -26,3 +28,5 @@ permalink: /kb/048/Q48839/
 	
 	This switch is implemented in segmented-executable LINK Versions 5.02
 	and later.
+
+{% endraw %}

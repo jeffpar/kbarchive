@@ -6,6 +6,8 @@ permalink: /kb/071/Q71409/
 
 ## Q71409: Mac Hyp: Removing an Enclosure Before Sending a Message
 
+{% raw %}
+
 	Article: Q71409
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0
@@ -52,3 +54,5 @@ permalink: /kb/071/Q71409/
 	
 	=============================================================================
 	
+
+{% endraw %}

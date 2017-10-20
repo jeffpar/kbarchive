@@ -6,6 +6,8 @@ permalink: /kb/115/Q115403/
 
 ## Q115403: Bookshelf: GPF If CD Is Removed While Bookshelf Is Starting
 
+{% raw %}
+
 	Article: Q115403
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -50,3 +52,5 @@ permalink: /kb/115/Q115403/
 	
 	=============================================================================
 	
+
+{% endraw %}

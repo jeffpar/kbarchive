@@ -6,6 +6,8 @@ permalink: /kb/099/Q99887/
 
 ## Q99887: Information on NWLink
 
+{% raw %}
+
 	Article: Q99887
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.51 4.0
@@ -87,3 +89,5 @@ permalink: /kb/099/Q99887/
 	
 	=============================================================================
 	
+
+{% endraw %}

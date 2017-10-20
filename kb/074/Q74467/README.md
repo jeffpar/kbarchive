@@ -6,6 +6,8 @@ permalink: /kb/074/Q74467/
 
 ## Q74467: INFO: Using GDI-Synthesized Italic Fonts
 
+{% raw %}
+
 	Article: Q74467
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -74,3 +76,5 @@ permalink: /kb/074/Q74467/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197312/
 
 ## Q197312: WD97: Thesaurus Suggests Incorrect Synonym
 
+{% raw %}
+
 	Article: Q197312
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -41,3 +43,5 @@ permalink: /kb/197/Q197312/
 	
 	=============================================================================
 	
+
+{% endraw %}

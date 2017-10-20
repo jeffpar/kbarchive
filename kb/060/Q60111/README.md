@@ -6,6 +6,8 @@ permalink: /kb/060/Q60111/
 
 ## Q60111: Mac Form: Objects That Cannot Transfer to the Read Screen
 
+{% raw %}
+
 	Article: Q60111
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -53,3 +55,5 @@ permalink: /kb/060/Q60111/
 	
 	=============================================================================
 	
+
+{% endraw %}

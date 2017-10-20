@@ -6,6 +6,8 @@ permalink: /kb/039/Q39909/
 
 ## Q39909: _scanf and _cscanf always Echo to the Screen
 
+{% raw %}
+
 	Article: Q39909
 	Product(s): See article
 	Version(s): 5.10
@@ -51,3 +53,5 @@ permalink: /kb/039/Q39909/
 	printf ("\n Number of correctly matched input"
 	       "items =  %d\n", result);          /* print # of input items */
 	       }
+
+{% endraw %}

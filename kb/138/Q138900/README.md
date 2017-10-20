@@ -6,6 +6,8 @@ permalink: /kb/138/Q138900/
 
 ## Q138900: PPT7: Slide Miniature Disappears If Dragged to Taskbar
 
+{% raw %}
+
 	Article: Q138900
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -60,3 +62,5 @@ permalink: /kb/138/Q138900/
 	
 	=============================================================================
 	
+
+{% endraw %}

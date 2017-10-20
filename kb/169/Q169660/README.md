@@ -6,6 +6,8 @@ permalink: /kb/169/Q169660/
 
 ## Q169660: XCLN: Excel Hyperlinks Don't Work If .xls Is in Public Folder
 
+{% raw %}
+
 	Article: Q169660
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/169/Q169660/
 	
 	=============================================================================
 	
+
+{% endraw %}

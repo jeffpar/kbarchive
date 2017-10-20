@@ -6,6 +6,8 @@ permalink: /kb/166/Q166607/
 
 ## Q166607: XFOR:  JPN: Outbound MIME Message Has Incorrect Label
 
+{% raw %}
+
 	Article: Q166607
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/166/Q166607/
 	
 	=============================================================================
 	
+
+{% endraw %}

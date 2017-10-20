@@ -6,6 +6,8 @@ permalink: /kb/173/Q173571/
 
 ## Q173571: BUG: Invalid Code Generated Implementing Outlook.Mailitem
 
+{% raw %}
+
 	Article: Q173571
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/173/Q173571/
 	
 	=============================================================================
 	
+
+{% endraw %}

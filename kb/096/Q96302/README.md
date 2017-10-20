@@ -6,6 +6,8 @@ permalink: /kb/096/Q96302/
 
 ## Q96302: PRB: Line in Group Header/Footer Ignores Data Grouping
 
+{% raw %}
+
 	Article: Q96302
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -70,3 +72,5 @@ permalink: /kb/096/Q96302/
 	
 	=============================================================================
 	
+
+{% endraw %}

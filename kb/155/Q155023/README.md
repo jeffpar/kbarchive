@@ -6,6 +6,8 @@ permalink: /kb/155/Q155023/
 
 ## Q155023: XCLN: HP Deskjet 600C Series Prints Blank Page
 
+{% raw %}
+
 	Article: Q155023
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,97
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155023/
 	
 	=============================================================================
 	
+
+{% endraw %}

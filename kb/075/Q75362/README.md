@@ -6,6 +6,8 @@ permalink: /kb/075/Q75362/
 
 ## Q75362: CMS Tape Software 2.46 Needed with MS-DOS 5.0 or Later
 
+{% raw %}
+
 	Article: Q75362
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/075/Q75362/
 	
 	=============================================================================
 	
+
+{% endraw %}

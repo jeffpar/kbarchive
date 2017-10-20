@@ -6,6 +6,8 @@ permalink: /kb/171/Q171874/
 
 ## Q171874: Link Service Title Cannot be Modified for DFT Link Services
 
+{% raw %}
+
 	Article: Q171874
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -59,3 +61,5 @@ permalink: /kb/171/Q171874/
 	
 	=============================================================================
 	
+
+{% endraw %}

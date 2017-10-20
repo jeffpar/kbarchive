@@ -6,6 +6,8 @@ permalink: /kb/104/Q104685/
 
 ## Q104685: How to Retrieve Hidden/System Files Using Dir&#91;&#36;&#93;() Function
 
+{% raw %}
+
 	Article: Q104685
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/104/Q104685/
 	
 	=============================================================================
 	
+
+{% endraw %}

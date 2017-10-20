@@ -6,6 +6,8 @@ permalink: /kb/260/Q260311/
 
 ## Q260311: XADM: Mailbox Manager Stops Responding Clicking the Policies Tab
 
+{% raw %}
+
 	Article: Q260311
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/260/Q260311/
 	
 	=============================================================================
 	
+
+{% endraw %}

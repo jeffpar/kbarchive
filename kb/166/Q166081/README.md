@@ -6,6 +6,8 @@ permalink: /kb/166/Q166081/
 
 ## Q166081: ASP Page Not Update Even if ASP File on UNC Virtual Dir. Changed
 
+{% raw %}
+
 	Article: Q166081
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166081/
 	
 	=============================================================================
 	
+
+{% endraw %}

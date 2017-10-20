@@ -6,6 +6,8 @@ permalink: /kb/156/Q156071/
 
 ## Q156071: PRB: Launching .Exe File Returns &quot;Document Is Locked&quot; Error
 
+{% raw %}
+
 	Article: Q156071
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -86,3 +88,5 @@ permalink: /kb/156/Q156071/
 	
 	=============================================================================
 	
+
+{% endraw %}

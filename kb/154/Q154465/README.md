@@ -6,6 +6,8 @@ permalink: /kb/154/Q154465/
 
 ## Q154465: Cinemania 97 and Music Central 97: INTERNET.TXT Contents
 
+{% raw %}
+
 	Article: Q154465
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition; WINDOWS:95
@@ -267,3 +269,5 @@ permalink: /kb/154/Q154465/
 	
 	=============================================================================
 	
+
+{% endraw %}

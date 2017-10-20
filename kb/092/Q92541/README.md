@@ -6,6 +6,8 @@ permalink: /kb/092/Q92541/
 
 ## Q92541: WFWG and Novell Netware Connectivity Configuration Files
 
+{% raw %}
+
 	Article: Q92541
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -84,3 +86,5 @@ permalink: /kb/092/Q92541/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151491/
 
 ## Q151491: FIX: copy() Member of _bstr_t in comutl.h Doesn't Copy
 
+{% raw %}
+
 	Article: Q151491
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -85,3 +87,5 @@ permalink: /kb/151/Q151491/
 	
 	=============================================================================
 	
+
+{% endraw %}

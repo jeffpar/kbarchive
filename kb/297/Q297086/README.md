@@ -6,6 +6,8 @@ permalink: /kb/297/Q297086/
 
 ## Q297086: Redirected to Former Site After Web Resource IP Address Changes
 
+{% raw %}
+
 	Article: Q297086
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/297/Q297086/
 	
 	=============================================================================
 	
+
+{% endraw %}

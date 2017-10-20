@@ -6,6 +6,8 @@ permalink: /kb/258/Q258514/
 
 ## Q258514: Unable to Manage IIS 4.0 with the System Locale Set to French
 
+{% raw %}
+
 	Article: Q258514
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0; :
@@ -77,3 +79,5 @@ permalink: /kb/258/Q258514/
 	
 	=============================================================================
 	
+
+{% endraw %}

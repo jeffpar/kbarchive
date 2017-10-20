@@ -6,6 +6,8 @@ permalink: /kb/157/Q157888/
 
 ## Q157888: WD97: Word Default Font Changed When Address Font Changed
 
+{% raw %}
+
 	Article: Q157888
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/157/Q157888/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185802/
 
 ## Q185802: Using Site Server 2.0 with Windows NT Option Pack (IIS 4.0)
 
+{% raw %}
+
 	Article: Q185802
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0,4.0
@@ -107,3 +109,5 @@ permalink: /kb/185/Q185802/
 	
 	=============================================================================
 	
+
+{% endraw %}

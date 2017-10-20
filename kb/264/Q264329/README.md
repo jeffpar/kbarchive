@@ -6,6 +6,8 @@ permalink: /kb/264/Q264329/
 
 ## Q264329: XCON: MTA Stops Transferring Data After an X.25 Error
 
+{% raw %}
+
 	Article: Q264329
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/264/Q264329/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140270/
 
 ## Q140270: FIX:ClassView Add Function/Variable Fails If Header File Moved
 
+{% raw %}
+
 	Article: Q140270
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10
@@ -71,3 +73,5 @@ permalink: /kb/140/Q140270/
 	
 	=============================================================================
 	
+
+{% endraw %}

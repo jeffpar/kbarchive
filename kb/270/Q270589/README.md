@@ -6,6 +6,8 @@ permalink: /kb/270/Q270589/
 
 ## Q270589: BUG: Run-Time ErrMsg When Passing Array of Dictionary Objects
 
+{% raw %}
+
 	Article: Q270589
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -147,3 +149,5 @@ permalink: /kb/270/Q270589/
 	
 	=============================================================================
 	
+
+{% endraw %}

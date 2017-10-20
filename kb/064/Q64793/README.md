@@ -6,6 +6,8 @@ permalink: /kb/064/Q64793/
 
 ## Q64793: Bus Speed 3C603 Token Link Card Problem w/ LAN Manager
 
+{% raw %}
+
 	Article: Q64793
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/064/Q64793/
 	
 	=============================================================================
 	
+
+{% endraw %}

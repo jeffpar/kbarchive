@@ -6,6 +6,8 @@ permalink: /kb/260/Q260184/
 
 ## Q260184: XADM: How to Add Storage Limits Columns for Mailboxes
 
+{% raw %}
+
 	Article: Q260184
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -83,3 +85,5 @@ permalink: /kb/260/Q260184/
 	
 	=============================================================================
 	
+
+{% endraw %}

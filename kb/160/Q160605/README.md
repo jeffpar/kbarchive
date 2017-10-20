@@ -6,6 +6,8 @@ permalink: /kb/160/Q160605/
 
 ## Q160605: WinNT Err: OS/2 !! SYS01475 After Restart
 
+{% raw %}
+
 	Article: Q160605
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -57,3 +59,5 @@ permalink: /kb/160/Q160605/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/311/Q311764/
 
 ## Q311764: SMS: Problems with Offline Log Upload if Client Time Is Wrong
 
+{% raw %}
+
 	Article: Q311764
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -67,3 +69,5 @@ permalink: /kb/311/Q311764/
 	
 	=============================================================================
 	
+
+{% endraw %}

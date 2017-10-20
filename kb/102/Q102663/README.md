@@ -6,6 +6,8 @@ permalink: /kb/102/Q102663/
 
 ## Q102663: NCB and SESS Reversed in Installation/Configuaration Guides
 
+{% raw %}
+
 	Article: Q102663
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/102/Q102663/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187684/
 
 ## Q187684: BUG: Assert When Calling AfxFreeLibrary from ExitInstance
 
+{% raw %}
+
 	Article: Q187684
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0
@@ -97,3 +99,5 @@ permalink: /kb/187/Q187684/
 	
 	=============================================================================
 	
+
+{% endraw %}

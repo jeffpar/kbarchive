@@ -6,6 +6,8 @@ permalink: /kb/097/Q97929/
 
 ## Q97929: DoubleSpace on DTC 3280 SCSI Hangs System
 
+{% raw %}
+
 	Article: Q97929
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -59,3 +61,5 @@ permalink: /kb/097/Q97929/
 	
 	=============================================================================
 	
+
+{% endraw %}

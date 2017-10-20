@@ -6,6 +6,8 @@ permalink: /kb/132/Q132826/
 
 ## Q132826: CSNAV List Box Does Not Scroll Properly When Updated
 
+{% raw %}
+
 	Article: Q132826
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -63,3 +65,5 @@ permalink: /kb/132/Q132826/
 	
 	=============================================================================
 	
+
+{% endraw %}

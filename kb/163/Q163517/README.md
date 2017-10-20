@@ -6,6 +6,8 @@ permalink: /kb/163/Q163517/
 
 ## Q163517: Sense Code 080E0000 Trying to Connect to an AS/400
 
+{% raw %}
+
 	Article: Q163517
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -67,3 +69,5 @@ permalink: /kb/163/Q163517/
 	
 	=============================================================================
 	
+
+{% endraw %}

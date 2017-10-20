@@ -6,6 +6,8 @@ permalink: /kb/152/Q152556/
 
 ## Q152556: XADM: Export Custom Recipients Option Affects DirSync Objects
 
+{% raw %}
+
 	Article: Q152556
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -40,3 +42,5 @@ permalink: /kb/152/Q152556/
 	
 	=============================================================================
 	
+
+{% endraw %}

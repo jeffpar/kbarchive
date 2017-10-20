@@ -6,6 +6,8 @@ permalink: /kb/275/Q275718/
 
 ## Q275718: SNA Server Manager May Stop Responding When You Quit the Program
 
+{% raw %}
+
 	Article: Q275718
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -83,3 +85,5 @@ permalink: /kb/275/Q275718/
 	
 	=============================================================================
 	
+
+{% endraw %}

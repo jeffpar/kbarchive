@@ -6,6 +6,8 @@ permalink: /kb/069/Q69299/
 
 ## Q69299: Windows Err Msg: List of Kernel Program Messages
 
+{% raw %}
+
 	Article: Q69299
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -84,3 +86,5 @@ permalink: /kb/069/Q69299/
 	
 	=============================================================================
 	
+
+{% endraw %}

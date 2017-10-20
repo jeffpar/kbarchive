@@ -6,6 +6,8 @@ permalink: /kb/236/Q236882/
 
 ## Q236882: XIMS: Addresses Separated by Spaces in IMAP4 Envelope
 
+{% raw %}
+
 	Article: Q236882
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/236/Q236882/
 	
 	=============================================================================
 	
+
+{% endraw %}

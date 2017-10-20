@@ -6,6 +6,8 @@ permalink: /kb/039/Q39216/
 
 ## Q39216: Opening Files Using Command Line Arguments.
 
+{% raw %}
+
 	Article: Q39216
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -70,3 +72,5 @@ permalink: /kb/039/Q39216/
 	   infile
 	   outfile
 	   Opened both files OK
+
+{% endraw %}

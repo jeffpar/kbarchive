@@ -6,6 +6,8 @@ permalink: /kb/245/Q245035/
 
 ## Q245035: Logon Script Does Not Run Remotely Using RAS Dial-up Connection
 
+{% raw %}
+
 	Article: Q245035
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/245/Q245035/
 	
 	=============================================================================
 	
+
+{% endraw %}

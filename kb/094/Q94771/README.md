@@ -6,6 +6,8 @@ permalink: /kb/094/Q94771/
 
 ## Q94771: Use Epson FX-80 Driver with Star SG-10 Printer
 
+{% raw %}
+
 	Article: Q94771
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/094/Q94771/
 	
 	=============================================================================
 	
+
+{% endraw %}

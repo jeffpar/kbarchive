@@ -6,6 +6,8 @@ permalink: /kb/120/Q120423/
 
 ## Q120423: CA-SuperProject for MS-DOS Tutorial Generates &quot;Ghost&quot; Pointers
 
+{% raw %}
+
 	Article: Q120423
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/120/Q120423/
 	
 	=============================================================================
 	
+
+{% endraw %}

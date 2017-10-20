@@ -6,6 +6,8 @@ permalink: /kb/192/Q192924/
 
 ## Q192924: Unable to Add a Network Service in Network Tool in Control Panel
 
+{% raw %}
+
 	Article: Q192924
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/192/Q192924/
 	
 	=============================================================================
 	
+
+{% endraw %}

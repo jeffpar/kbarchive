@@ -6,6 +6,8 @@ permalink: /kb/136/Q136509/
 
 ## Q136509: External Modem Cannot Receive Data
 
+{% raw %}
+
 	Article: Q136509
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -76,3 +78,5 @@ permalink: /kb/136/Q136509/
 	
 	=============================================================================
 	
+
+{% endraw %}

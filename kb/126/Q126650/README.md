@@ -6,6 +6,8 @@ permalink: /kb/126/Q126650/
 
 ## Q126650: PC Rmt: Using Null Modem Script at Higher Baud Rates Than 9600
 
+{% raw %}
+
 	Article: Q126650
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -71,3 +73,5 @@ permalink: /kb/126/Q126650/
 	
 	=============================================================================
 	
+
+{% endraw %}

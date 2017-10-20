@@ -6,6 +6,8 @@ permalink: /kb/136/Q136712/
 
 ## Q136712: Common Questions About Browsing with Windows
 
+{% raw %}
+
 	Article: Q136712
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0
@@ -174,3 +176,5 @@ permalink: /kb/136/Q136712/
 	
 	=============================================================================
 	
+
+{% endraw %}

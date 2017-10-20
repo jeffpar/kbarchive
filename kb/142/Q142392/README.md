@@ -6,6 +6,8 @@ permalink: /kb/142/Q142392/
 
 ## Q142392: FIX: Drag Icon Property Ignored on Outline Control OCX
 
+{% raw %}
+
 	Article: Q142392
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -136,3 +138,5 @@ permalink: /kb/142/Q142392/
 	
 	=============================================================================
 	
+
+{% endraw %}

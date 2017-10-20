@@ -6,6 +6,8 @@ permalink: /kb/185/Q185642/
 
 ## Q185642: WD97: Cannot Specify Password Using RecentFiles.Open Method
 
+{% raw %}
+
 	Article: Q185642
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -116,3 +118,5 @@ permalink: /kb/185/Q185642/
 	
 	=============================================================================
 	
+
+{% endraw %}

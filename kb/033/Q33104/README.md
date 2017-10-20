@@ -6,6 +6,8 @@ permalink: /kb/033/Q33104/
 
 ## Q33104: SH_COMPAT Share Flag for SOPEN()
 
+{% raw %}
+
 	Article: Q33104
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -17,3 +19,5 @@ permalink: /kb/033/Q33104/
 	SH_COMPAT is only valid in the DOS environment. The documentation in
 	the "Microsoft C 5.1 Opitimizing Compiler Run-time Library Reference,"
 	Page 548, does not document this restriction on the use of SH_COMPAT.
+
+{% endraw %}

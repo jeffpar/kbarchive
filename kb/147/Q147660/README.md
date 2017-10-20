@@ -6,6 +6,8 @@ permalink: /kb/147/Q147660/
 
 ## Q147660: Schubert: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q147660
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/147/Q147660/
 	
 	=============================================================================
 	
+
+{% endraw %}

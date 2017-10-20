@@ -6,6 +6,8 @@ permalink: /kb/135/Q135701/
 
 ## Q135701: FIX: TTOC Returns More Than 14 Characters
 
+{% raw %}
+
 	Article: Q135701
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/135/Q135701/
 	
 	=============================================================================
 	
+
+{% endraw %}

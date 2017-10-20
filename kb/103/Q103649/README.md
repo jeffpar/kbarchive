@@ -6,6 +6,8 @@ permalink: /kb/103/Q103649/
 
 ## Q103649: Missing Network Printers on Macintosh Choosers
 
+{% raw %}
+
 	Article: Q103649
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -77,3 +79,5 @@ permalink: /kb/103/Q103649/
 	
 	=============================================================================
 	
+
+{% endraw %}

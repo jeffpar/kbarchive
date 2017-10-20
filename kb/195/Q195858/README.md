@@ -6,6 +6,8 @@ permalink: /kb/195/Q195858/
 
 ## Q195858: SMS: Changes to the SMS Installer Parse String Function
 
+{% raw %}
+
 	Article: Q195858
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/195/Q195858/
 	
 	=============================================================================
 	
+
+{% endraw %}

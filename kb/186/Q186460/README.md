@@ -6,6 +6,8 @@ permalink: /kb/186/Q186460/
 
 ## Q186460: Setup Displays Completed Message But DirectX Is Not Installed
 
+{% raw %}
+
 	Article: Q186460
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -65,3 +67,5 @@ permalink: /kb/186/Q186460/
 	
 	=============================================================================
 	
+
+{% endraw %}

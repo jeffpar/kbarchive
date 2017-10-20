@@ -6,6 +6,8 @@ permalink: /kb/250/Q250522/
 
 ## Q250522: Adding Users to the Directory Administrators List
 
+{% raw %}
+
 	Article: Q250522
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -141,3 +143,5 @@ permalink: /kb/250/Q250522/
 	
 	=============================================================================
 	
+
+{% endraw %}

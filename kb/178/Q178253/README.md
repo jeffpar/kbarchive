@@ -6,6 +6,8 @@ permalink: /kb/178/Q178253/
 
 ## Q178253: SNA Server Access Violation in function s1pcsgm.
 
+{% raw %}
+
 	Article: Q178253
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -109,3 +111,5 @@ permalink: /kb/178/Q178253/
 	
 	=============================================================================
 	
+
+{% endraw %}

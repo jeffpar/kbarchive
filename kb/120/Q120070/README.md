@@ -6,6 +6,8 @@ permalink: /kb/120/Q120070/
 
 ## Q120070: Using Immediate and Memory Operands
 
+{% raw %}
+
 	Article: Q120070
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.1,6.11
@@ -111,3 +113,5 @@ permalink: /kb/120/Q120070/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263572/
 
 ## Q263572: HOWTO: Extract MAPI Properties of Current User in Outlook Form
 
+{% raw %}
+
 	Article: Q263572
 	Product(s): Microsoft Exchange
 	Version(s): 1.2,1.21,5.5,8.03
@@ -125,3 +127,5 @@ permalink: /kb/263/Q263572/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103669/
 
 ## Q103669: Flight Simulator 1.02 Disk Contents
 
+{% raw %}
+
 	Article: Q103669
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.02
@@ -62,3 +64,5 @@ permalink: /kb/103/Q103669/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135029/
 
 ## Q135029: X400: Doc Err: Incorrect Step in Extracting MAPTBL.OUT
 
+{% raw %}
+
 	Article: Q135029
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -80,3 +82,5 @@ permalink: /kb/135/Q135029/
 	
 	=============================================================================
 	
+
+{% endraw %}

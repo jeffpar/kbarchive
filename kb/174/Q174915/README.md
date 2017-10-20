@@ -6,6 +6,8 @@ permalink: /kb/174/Q174915/
 
 ## Q174915: PRB: VFP 3.0 for the Macintosh Setup Wizard Fails under OS 8
 
+{% raw %}
+
 	Article: Q174915
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -94,3 +96,5 @@ permalink: /kb/174/Q174915/
 	
 	=============================================================================
 	
+
+{% endraw %}

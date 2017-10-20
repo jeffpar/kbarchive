@@ -6,6 +6,8 @@ permalink: /kb/185/Q185601/
 
 ## Q185601: HOW TO: Recursively Search Directories by Using FileSystemObject
 
+{% raw %}
+
 	Article: Q185601
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -166,3 +168,5 @@ permalink: /kb/185/Q185601/
 	
 	=============================================================================
 	
+
+{% endraw %}

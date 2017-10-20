@@ -6,6 +6,8 @@ permalink: /kb/100/Q100445/
 
 ## Q100445: BUG: Character Field Appears as Date in Microsoft Graph
 
+{% raw %}
+
 	Article: Q100445
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0,3.0b,5.0,5.0a,6.0
@@ -71,3 +73,5 @@ permalink: /kb/100/Q100445/
 	
 	=============================================================================
 	
+
+{% endraw %}

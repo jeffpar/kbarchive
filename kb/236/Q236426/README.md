@@ -6,6 +6,8 @@ permalink: /kb/236/Q236426/
 
 ## Q236426: XADM: Information Store or Directory Service Appear Hung
 
+{% raw %}
+
 	Article: Q236426
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -91,3 +93,5 @@ permalink: /kb/236/Q236426/
 	
 	=============================================================================
 	
+
+{% endraw %}

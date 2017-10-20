@@ -6,6 +6,8 @@ permalink: /kb/260/Q260018/
 
 ## Q260018: BUG: Winsock Control Run-Time Error 10054 in DataArrival for UDP
 
+{% raw %}
+
 	Article: Q260018
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/260/Q260018/
 	
 	=============================================================================
 	
+
+{% endraw %}

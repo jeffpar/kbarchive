@@ -6,6 +6,8 @@ permalink: /kb/303/Q303820/
 
 ## Q303820: Cannot Print HTML-Formatted E-mail Message from Outlook
 
+{% raw %}
+
 	Article: Q303820
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,2000 SP1,2000 SP2,4.0
@@ -62,3 +64,5 @@ permalink: /kb/303/Q303820/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103892/
 
 ## Q103892: Versions of Bookshelf Recognized by the 1993 Upgrade
 
+{% raw %}
+
 	Article: Q103892
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 upgrade edition
@@ -61,3 +63,5 @@ permalink: /kb/103/Q103892/
 	
 	=============================================================================
 	
+
+{% endraw %}

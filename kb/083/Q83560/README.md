@@ -6,6 +6,8 @@ permalink: /kb/083/Q83560/
 
 ## Q83560: Lotus 1-2-3 for Windows 1.0 Does Not Display TrueType Fonts
 
+{% raw %}
+
 	Article: Q83560
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/083/Q83560/
 	
 	=============================================================================
 	
+
+{% endraw %}

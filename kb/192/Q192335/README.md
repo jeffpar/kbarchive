@@ -6,6 +6,8 @@ permalink: /kb/192/Q192335/
 
 ## Q192335: Err Msg: Information Is in an Invalid Format
 
+{% raw %}
+
 	Article: Q192335
 	Product(s): The Microsoft Network
 	Version(s): 5.0,5.1,5.2,5.3
@@ -77,3 +79,5 @@ permalink: /kb/192/Q192335/
 	
 	=============================================================================
 	
+
+{% endraw %}

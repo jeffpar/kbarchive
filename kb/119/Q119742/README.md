@@ -6,6 +6,8 @@ permalink: /kb/119/Q119742/
 
 ## Q119742: Using 32-Bit Disk Access with Quantum LPS540 IDE Disk Drives
 
+{% raw %}
+
 	Article: Q119742
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/119/Q119742/
 	
 	=============================================================================
 	
+
+{% endraw %}

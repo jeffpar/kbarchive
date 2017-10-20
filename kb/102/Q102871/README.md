@@ -6,6 +6,8 @@ permalink: /kb/102/Q102871/
 
 ## Q102871: Callback Functions in Multiple Instance Applications
 
+{% raw %}
+
 	Article: Q102871
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -61,3 +63,5 @@ permalink: /kb/102/Q102871/
 	
 	=============================================================================
 	
+
+{% endraw %}

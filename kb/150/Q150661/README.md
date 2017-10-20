@@ -6,6 +6,8 @@ permalink: /kb/150/Q150661/
 
 ## Q150661: Mac Bookshelf 96-97: Bookshelf Guide Disabled with System 7.0
 
+{% raw %}
+
 	Article: Q150661
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150661/
 	
 	=============================================================================
 	
+
+{% endraw %}

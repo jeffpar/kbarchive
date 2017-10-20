@@ -6,6 +6,8 @@ permalink: /kb/131/Q131676/
 
 ## Q131676: PC NTMMTA: Maximum Number of Instances Running as a Service
 
+{% raw %}
+
 	Article: Q131676
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -62,3 +64,5 @@ permalink: /kb/131/Q131676/
 	
 	=============================================================================
 	
+
+{% endraw %}

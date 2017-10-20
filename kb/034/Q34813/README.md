@@ -6,6 +6,8 @@ permalink: /kb/034/Q34813/
 
 ## Q34813: &quot;Type Not Defined&quot; after Saving Program in QB.EXE; Use AS ANY
 
+{% raw %}
+
 	Article: Q34813
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -87,3 +89,5 @@ permalink: /kb/034/Q34813/
 	   in the DECLARE statement to "ANY", as follows:
 	
 	   DECLARE SUB temp (y AS ANY)
+
+{% endraw %}

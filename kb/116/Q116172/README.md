@@ -6,6 +6,8 @@ permalink: /kb/116/Q116172/
 
 ## Q116172: BUG: Based Ptr. Init Fails at Global Scope in CPP File
 
+{% raw %}
+
 	Article: Q116172
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,4.2
@@ -126,3 +128,5 @@ permalink: /kb/116/Q116172/
 	
 	=============================================================================
 	
+
+{% endraw %}

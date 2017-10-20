@@ -6,6 +6,8 @@ permalink: /kb/217/Q217058/
 
 ## Q217058: XFOR: How to Enable DBCS Support on the Exchange Notes Connector
 
+{% raw %}
+
 	Article: Q217058
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -103,3 +105,5 @@ permalink: /kb/217/Q217058/
 	
 	=============================================================================
 	
+
+{% endraw %}

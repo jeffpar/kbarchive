@@ -6,6 +6,8 @@ permalink: /kb/168/Q168376/
 
 ## Q168376: PRB: STL string Class insert Function Does Not Work as Expected
 
+{% raw %}
+
 	Article: Q168376
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2 5.0
@@ -79,3 +81,5 @@ permalink: /kb/168/Q168376/
 	
 	=============================================================================
 	
+
+{% endraw %}

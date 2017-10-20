@@ -6,6 +6,8 @@ permalink: /kb/112/Q112338/
 
 ## Q112338: Visual C++ 32-bit Edition Phar Lap Requires 16-Bit GRAPHICS.LIB
 
+{% raw %}
+
 	Article: Q112338
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -45,3 +47,5 @@ permalink: /kb/112/Q112338/
 	
 	=============================================================================
 	
+
+{% endraw %}

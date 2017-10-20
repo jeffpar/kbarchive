@@ -6,6 +6,8 @@ permalink: /kb/173/Q173713/
 
 ## Q173713: XFOR: CR Receives Rich Text Format Information Unexpectedly
 
+{% raw %}
+
 	Article: Q173713
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -106,3 +108,5 @@ permalink: /kb/173/Q173713/
 	
 	=============================================================================
 	
+
+{% endraw %}

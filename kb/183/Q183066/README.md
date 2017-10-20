@@ -6,6 +6,8 @@ permalink: /kb/183/Q183066/
 
 ## Q183066: Quickshelf 98: Article Opens Behind Search Panel
 
+{% raw %}
+
 	Article: Q183066
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/183/Q183066/
 	
 	=============================================================================
 	
+
+{% endraw %}

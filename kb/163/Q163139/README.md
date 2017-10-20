@@ -6,6 +6,8 @@ permalink: /kb/163/Q163139/
 
 ## Q163139: XADM: Err Msg 1005: Access Is Denied
 
+{% raw %}
+
 	Article: Q163139
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.5
@@ -119,3 +121,5 @@ permalink: /kb/163/Q163139/
 	
 	=============================================================================
 	
+
+{% endraw %}

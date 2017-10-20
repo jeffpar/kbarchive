@@ -6,6 +6,8 @@ permalink: /kb/159/Q159226/
 
 ## Q159226: WD:97 Ami Pro 3.x Style Sheets Open Blank in Word
 
+{% raw %}
+
 	Article: Q159226
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/159/Q159226/
 	
 	=============================================================================
 	
+
+{% endraw %}

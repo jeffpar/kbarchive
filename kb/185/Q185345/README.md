@@ -6,6 +6,8 @@ permalink: /kb/185/Q185345/
 
 ## Q185345: SMS: &quot;SMS Logon Server Not Found&quot; Message Displayed at Logon
 
+{% raw %}
+
 	Article: Q185345
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3
@@ -111,3 +113,5 @@ permalink: /kb/185/Q185345/
 	
 	=============================================================================
 	
+
+{% endraw %}

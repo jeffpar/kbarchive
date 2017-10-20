@@ -6,6 +6,8 @@ permalink: /kb/142/Q142313/
 
 ## Q142313: FIX: Using RI Builder &amp; Long Table Names Makes Triggers Fail
 
+{% raw %}
+
 	Article: Q142313
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -145,3 +147,5 @@ permalink: /kb/142/Q142313/
 	
 	=============================================================================
 	
+
+{% endraw %}

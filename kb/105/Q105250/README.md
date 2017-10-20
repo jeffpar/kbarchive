@@ -6,6 +6,8 @@ permalink: /kb/105/Q105250/
 
 ## Q105250: Cannot use UNC Pathname for Working Directory in Windows NT
 
+{% raw %}
+
 	Article: Q105250
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -73,3 +75,5 @@ permalink: /kb/105/Q105250/
 	
 	=============================================================================
 	
+
+{% endraw %}

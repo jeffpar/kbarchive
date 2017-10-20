@@ -6,6 +6,8 @@ permalink: /kb/190/Q190294/
 
 ## Q190294: Use of all Numeric NetBIOS Names Can Cause Problems
 
+{% raw %}
+
 	Article: Q190294
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): Windows:3.11,95,98;WinNT:3.5,3.51,4.0
@@ -81,3 +83,5 @@ permalink: /kb/190/Q190294/
 	
 	=============================================================================
 	
+
+{% endraw %}

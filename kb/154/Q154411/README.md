@@ -6,6 +6,8 @@ permalink: /kb/154/Q154411/
 
 ## Q154411: SMS Err Msg: Unable to Initialize IPX Protocol
 
+{% raw %}
+
 	Article: Q154411
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -89,3 +91,5 @@ permalink: /kb/154/Q154411/
 	
 	=============================================================================
 	
+
+{% endraw %}

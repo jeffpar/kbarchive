@@ -6,6 +6,8 @@ permalink: /kb/138/Q138783/
 
 ## Q138783: PC DirSync: ErrMsg: Error &#91;115&#93; Failure to Read Mail from NULL
 
+{% raw %}
+
 	Article: Q138783
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -48,3 +50,5 @@ permalink: /kb/138/Q138783/
 	
 	=============================================================================
 	
+
+{% endraw %}

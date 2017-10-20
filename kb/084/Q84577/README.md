@@ -6,6 +6,8 @@ permalink: /kb/084/Q84577/
 
 ## Q84577: Error in Media Player with Speaker Driver
 
+{% raw %}
+
 	Article: Q84577
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/084/Q84577/
 	
 	=============================================================================
 	
+
+{% endraw %}

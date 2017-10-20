@@ -6,6 +6,8 @@ permalink: /kb/197/Q197158/
 
 ## Q197158: FORTRAN Carriage Control or FORTRAN Control Code
 
+{% raw %}
+
 	Article: Q197158
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/197/Q197158/
 	
 	=============================================================================
 	
+
+{% endraw %}

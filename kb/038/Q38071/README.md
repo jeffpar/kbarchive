@@ -6,6 +6,8 @@ permalink: /kb/038/Q38071/
 
 ## Q38071: &quot;Permission Denied&quot; If SHELLed Process Accesses Same OPEN File
 
+{% raw %}
+
 	Article: Q38071
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/038/Q38071/
 	   SHELL          ' Before saying EXIT, run TEST.EXE to show the
 	   UNLOCK #1, 3   ' "Permission Denied" message.
 	   END
+
+{% endraw %}

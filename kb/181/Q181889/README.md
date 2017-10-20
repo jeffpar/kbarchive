@@ -6,6 +6,8 @@ permalink: /kb/181/Q181889/
 
 ## Q181889: BUG: VB Hangs While Automating Excel Using OLE Control
 
+{% raw %}
+
 	Article: Q181889
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,5.0
@@ -141,3 +143,5 @@ permalink: /kb/181/Q181889/
 	
 	=============================================================================
 	
+
+{% endraw %}

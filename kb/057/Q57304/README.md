@@ -6,6 +6,8 @@ permalink: /kb/057/Q57304/
 
 ## Q57304: Novell Network Software May Cause L1084 Error
 
+{% raw %}
+
 	Article: Q57304
 	Product(s): See article
 	Version(s): 5.03
@@ -20,3 +22,5 @@ permalink: /kb/057/Q57304/
 	
 	This problem was observed with Netware versions 2.10 SFT and 2.15 of
 	the Novell network software.
+
+{% endraw %}

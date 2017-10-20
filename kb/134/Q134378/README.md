@@ -6,6 +6,8 @@ permalink: /kb/134/Q134378/
 
 ## Q134378: CONN: How to Reset the Mail Queue for Mail Connection 3.2
 
+{% raw %}
+
 	Article: Q134378
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -155,3 +157,5 @@ permalink: /kb/134/Q134378/
 	
 	=============================================================================
 	
+
+{% endraw %}

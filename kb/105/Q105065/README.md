@@ -6,6 +6,8 @@ permalink: /kb/105/Q105065/
 
 ## Q105065: Microsoft Backup Cannot Back Up SyQuest Removable Disk
 
+{% raw %}
+
 	Article: Q105065
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -43,3 +45,5 @@ permalink: /kb/105/Q105065/
 	
 	=============================================================================
 	
+
+{% endraw %}

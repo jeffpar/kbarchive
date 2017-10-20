@@ -6,6 +6,8 @@ permalink: /kb/232/Q232602/
 
 ## Q232602: XCON: MTA Fails to Recover Associations After Network Problems
 
+{% raw %}
+
 	Article: Q232602
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -150,3 +152,5 @@ permalink: /kb/232/Q232602/
 	
 	=============================================================================
 	
+
+{% endraw %}

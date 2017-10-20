@@ -6,6 +6,8 @@ permalink: /kb/070/Q70144/
 
 ## Q70144: DOCERR: PWB Error Messages Not Included in C 6.0 Help Files
 
+{% raw %}
+
 	Article: Q70144
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0; OS/2:1.0
@@ -125,3 +127,5 @@ permalink: /kb/070/Q70144/
 	
 	=============================================================================
 	
+
+{% endraw %}

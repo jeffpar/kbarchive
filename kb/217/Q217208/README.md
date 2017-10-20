@@ -6,6 +6,8 @@ permalink: /kb/217/Q217208/
 
 ## Q217208: FIX: CMenu::GetMenuString Truncates Strings Longer Than 256 Char
 
+{% raw %}
+
 	Article: Q217208
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -83,3 +85,5 @@ permalink: /kb/217/Q217208/
 	
 	=============================================================================
 	
+
+{% endraw %}

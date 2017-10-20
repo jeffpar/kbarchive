@@ -6,6 +6,8 @@ permalink: /kb/059/Q59921/
 
 ## Q59921: Mac Hyp: getUrgent Returns True if Sender Specified Urgent
 
+{% raw %}
+
 	Article: Q59921
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -39,3 +41,5 @@ permalink: /kb/059/Q59921/
 	
 	=============================================================================
 	
+
+{% endraw %}

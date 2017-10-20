@@ -6,6 +6,8 @@ permalink: /kb/061/Q61664/
 
 ## Q61664: Changes in OS/2 Multithreaded and DLL Support in C 6.00
 
+{% raw %}
+
 	Article: Q61664
 	Product(s): See article
 	Version(s): 6.00
@@ -61,3 +63,5 @@ permalink: /kb/061/Q61664/
 	Advanced Programming Techniques" and in the online help. Note that in
 	most of the C 6.00 documentation, the symbolic constant _MT is
 	improperly referred to as MT (missing the leading underscore).
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83841/
 
 ## Q83841: Novell Search Paths to Windows 3.0 Can Cause Problems for 3.1
 
+{% raw %}
+
 	Article: Q83841
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/083/Q83841/
 	
 	=============================================================================
 	
+
+{% endraw %}

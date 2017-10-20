@@ -6,6 +6,8 @@ permalink: /kb/138/Q138042/
 
 ## Q138042: PRB: MOD() with One Negative Number Returns Incorrect Result
 
+{% raw %}
+
 	Article: Q138042
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0
@@ -63,3 +65,5 @@ permalink: /kb/138/Q138042/
 	
 	=============================================================================
 	
+
+{% endraw %}

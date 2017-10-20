@@ -6,6 +6,8 @@ permalink: /kb/121/Q121876/
 
 ## Q121876: Reliable, Slow Links over WANs Using RAS
 
+{% raw %}
+
 	Article: Q121876
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -51,3 +53,5 @@ permalink: /kb/121/Q121876/
 	
 	=============================================================================
 	
+
+{% endraw %}

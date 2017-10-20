@@ -6,6 +6,8 @@ permalink: /kb/161/Q161697/
 
 ## Q161697: SMS: Chat Window Shows &quot;Unknown&quot; for User
 
+{% raw %}
+
 	Article: Q161697
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/161/Q161697/
 	
 	=============================================================================
 	
+
+{% endraw %}

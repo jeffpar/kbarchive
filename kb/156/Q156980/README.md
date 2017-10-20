@@ -6,6 +6,8 @@ permalink: /kb/156/Q156980/
 
 ## Q156980: Performance Monitor: Disk Transfers Per Second Not Working
 
+{% raw %}
+
 	Article: Q156980
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51; :3.5
@@ -56,3 +58,5 @@ permalink: /kb/156/Q156980/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216738/
 
 ## Q216738: SMS: WMI Terms and Concepts
 
+{% raw %}
+
 	Article: Q216738
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -114,3 +116,5 @@ permalink: /kb/216/Q216738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77104/
 
 ## Q77104: PC Adm: Microsoft Mail and Network Autodisconnect Feature
 
+{% raw %}
+
 	Article: Q77104
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -42,3 +44,5 @@ permalink: /kb/077/Q77104/
 	
 	=============================================================================
 	
+
+{% endraw %}

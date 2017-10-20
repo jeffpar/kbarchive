@@ -6,6 +6,8 @@ permalink: /kb/133/Q133286/
 
 ## Q133286: HOWTO: Use Microsoft Access Data in Visual FoxPro
 
+{% raw %}
+
 	Article: Q133286
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/133/Q133286/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32871/
 
 ## Q32871: Write Function Will Not Work Correctly with SS!=DS
 
+{% raw %}
+
 	Article: Q32871
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/032/Q32871/
 	call to stackavail() to make sure it does not overflow the stack; this
 	call is what prevents it from working with SS!=DS.
 	   This is program design for this product.
+
+{% endraw %}

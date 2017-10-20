@@ -6,6 +6,8 @@ permalink: /kb/177/Q177077/
 
 ## Q177077: How to Produce a List of Users and SIDs
 
+{% raw %}
+
 	Article: Q177077
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.5,3.51,4.0
@@ -168,3 +170,5 @@ permalink: /kb/177/Q177077/
 	
 	=============================================================================
 	
+
+{% endraw %}

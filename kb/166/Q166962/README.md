@@ -6,6 +6,8 @@ permalink: /kb/166/Q166962/
 
 ## Q166962: Kids Plus!: Users Use Same Screensaver But Different Passwords
 
+{% raw %}
+
 	Article: Q166962
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -55,3 +57,5 @@ permalink: /kb/166/Q166962/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247937/
 
 ## Q247937: XCLN: Error Message Using Outlook with Terminal Server
 
+{% raw %}
+
 	Article: Q247937
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/247/Q247937/
 	
 	=============================================================================
 	
+
+{% endraw %}

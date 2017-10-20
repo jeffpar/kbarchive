@@ -6,6 +6,8 @@ permalink: /kb/249/Q249970/
 
 ## Q249970: Print Server May Send CR and LF in Wrong Order
 
+{% raw %}
+
 	Article: Q249970
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -68,3 +70,5 @@ permalink: /kb/249/Q249970/
 	
 	=============================================================================
 	
+
+{% endraw %}

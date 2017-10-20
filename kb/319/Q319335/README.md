@@ -6,6 +6,8 @@ permalink: /kb/319/Q319335/
 
 ## Q319335: Err Msg: Server Service Was Unable to Map Error Code 1722
 
+{% raw %}
+
 	Article: Q319335
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -125,3 +127,5 @@ permalink: /kb/319/Q319335/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123947/
 
 ## Q123947: PRB: Unable to Change Field Type in MODIFY STRUCTURE
 
+{% raw %}
+
 	Article: Q123947
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -69,3 +71,5 @@ permalink: /kb/123/Q123947/
 	
 	=============================================================================
 	
+
+{% endraw %}

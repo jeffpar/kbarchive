@@ -6,6 +6,8 @@ permalink: /kb/172/Q172479/
 
 ## Q172479: DMOD limited to 4 Non-RPC Callbacks for API Libraries
 
+{% raw %}
+
 	Article: Q172479
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -86,3 +88,5 @@ permalink: /kb/172/Q172479/
 	
 	=============================================================================
 	
+
+{% endraw %}

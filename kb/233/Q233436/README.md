@@ -6,6 +6,8 @@ permalink: /kb/233/Q233436/
 
 ## Q233436: Business Planner: Background Color of Copied Table Changes
 
+{% raw %}
+
 	Article: Q233436
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/233/Q233436/
 	
 	=============================================================================
 	
+
+{% endraw %}

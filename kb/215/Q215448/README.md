@@ -6,6 +6,8 @@ permalink: /kb/215/Q215448/
 
 ## Q215448: BUG: ComboBox Scroll Event Might Not Fire
 
+{% raw %}
+
 	Article: Q215448
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0
@@ -78,3 +80,5 @@ permalink: /kb/215/Q215448/
 	
 	=============================================================================
 	
+
+{% endraw %}

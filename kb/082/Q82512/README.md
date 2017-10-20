@@ -6,6 +6,8 @@ permalink: /kb/082/Q82512/
 
 ## Q82512: ATI ULTRA Crystal Fonts Incorrect in Excel Formula Bar
 
+{% raw %}
+
 	Article: Q82512
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/082/Q82512/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153647/
 
 ## Q153647: SMS: Shared Applications Fail Using Specific Drive Letter
 
+{% raw %}
+
 	Article: Q153647
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -45,3 +47,5 @@ permalink: /kb/153/Q153647/
 	
 	=============================================================================
 	
+
+{% endraw %}

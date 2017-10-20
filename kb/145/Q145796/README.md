@@ -6,6 +6,8 @@ permalink: /kb/145/Q145796/
 
 ## Q145796: Print Manager Displays Macintosh EPS Document As File Name
 
+{% raw %}
+
 	Article: Q145796
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -54,3 +56,5 @@ permalink: /kb/145/Q145796/
 	
 	=============================================================================
 	
+
+{% endraw %}

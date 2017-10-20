@@ -6,6 +6,8 @@ permalink: /kb/089/Q89782/
 
 ## Q89782: Wang's WINLOC Interface May Hang Windows for Workgroups
 
+{% raw %}
+
 	Article: Q89782
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/089/Q89782/
 	
 	=============================================================================
 	
+
+{% endraw %}

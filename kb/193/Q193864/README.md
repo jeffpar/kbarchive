@@ -6,6 +6,8 @@ permalink: /kb/193/Q193864/
 
 ## Q193864: XFOR: Problems with FX!32 and Exchange's cc:Mail Connector
 
+{% raw %}
+
 	Article: Q193864
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/193/Q193864/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100633/
 
 ## Q100633: PACKING.LST for Professional Edition of VB 3.0 for Windows
 
+{% raw %}
+
 	Article: Q100633
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -695,3 +697,5 @@ permalink: /kb/100/Q100633/
 	
 	=============================================================================
 	
+
+{% endraw %}

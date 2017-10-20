@@ -6,6 +6,8 @@ permalink: /kb/235/Q235769/
 
 ## Q235769: SMS: Admin Guide Talks About Inbox on WinNT Logon Points
 
+{% raw %}
+
 	Article: Q235769
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -66,3 +68,5 @@ permalink: /kb/235/Q235769/
 	
 	=============================================================================
 	
+
+{% endraw %}

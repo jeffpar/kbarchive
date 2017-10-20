@@ -6,6 +6,8 @@ permalink: /kb/133/Q133734/
 
 ## Q133734: PPT7: Font Smoothing in Slide Show Built Text Looks Bad
 
+{% raw %}
+
 	Article: Q133734
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -83,3 +85,5 @@ permalink: /kb/133/Q133734/
 	
 	=============================================================================
 	
+
+{% endraw %}

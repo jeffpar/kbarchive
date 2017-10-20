@@ -6,6 +6,8 @@ permalink: /kb/075/Q75078/
 
 ## Q75078: Installing MS-DOS 5.0 on a Tandy 1000HX
 
+{% raw %}
+
 	Article: Q75078
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -65,3 +67,5 @@ permalink: /kb/075/Q75078/
 	
 	=============================================================================
 	
+
+{% endraw %}

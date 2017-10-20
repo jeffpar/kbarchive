@@ -6,6 +6,8 @@ permalink: /kb/207/Q207559/
 
 ## Q207559: Games: Game or Computer Hangs When Using Matrox Mystique 220
 
+{% raw %}
+
 	Article: Q207559
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -87,3 +89,5 @@ permalink: /kb/207/Q207559/
 	
 	=============================================================================
 	
+
+{% endraw %}

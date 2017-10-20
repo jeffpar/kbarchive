@@ -6,6 +6,8 @@ permalink: /kb/231/Q231460/
 
 ## Q231460: XFOR: Migration from Memo Fails with MIGMIGU0207E LINEFEED Field
 
+{% raw %}
+
 	Article: Q231460
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/231/Q231460/
 	
 	=============================================================================
 	
+
+{% endraw %}

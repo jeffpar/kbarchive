@@ -6,6 +6,8 @@ permalink: /kb/222/Q222161/
 
 ## Q222161: Program File with Duplicate Name Prevents Service from Starting
 
+{% raw %}
+
 	Article: Q222161
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -69,3 +71,5 @@ permalink: /kb/222/Q222161/
 	
 	=============================================================================
 	
+
+{% endraw %}

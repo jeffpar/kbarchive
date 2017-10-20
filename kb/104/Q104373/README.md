@@ -6,6 +6,8 @@ permalink: /kb/104/Q104373/
 
 ## Q104373: 3COM: Installation Stops If There Is a Space in Server Name
 
+{% raw %}
+
 	Article: Q104373
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/104/Q104373/
 	
 	=============================================================================
 	
+
+{% endraw %}

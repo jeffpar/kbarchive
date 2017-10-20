@@ -6,6 +6,8 @@ permalink: /kb/180/Q180615/
 
 ## Q180615: BUG: Text Box Value Does Not Change If ControlSource Is .NULL.
 
+{% raw %}
+
 	Article: Q180615
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -112,3 +114,5 @@ permalink: /kb/180/Q180615/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215465/
 
 ## Q215465: Installing Service Packs from Terminal Server Client Sessions
 
+{% raw %}
+
 	Article: Q215465
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -55,3 +57,5 @@ permalink: /kb/215/Q215465/
 	
 	=============================================================================
 	
+
+{% endraw %}

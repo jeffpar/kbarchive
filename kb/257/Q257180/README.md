@@ -6,6 +6,8 @@ permalink: /kb/257/Q257180/
 
 ## Q257180: XCLN: Insufficient Permissions When Moving Contacts
 
+{% raw %}
+
 	Article: Q257180
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/257/Q257180/
 	
 	=============================================================================
 	
+
+{% endraw %}

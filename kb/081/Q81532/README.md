@@ -6,6 +6,8 @@ permalink: /kb/081/Q81532/
 
 ## Q81532: PC Win: Row/Column Numbers Missing in Excel OLE Object
 
+{% raw %}
+
 	Article: Q81532
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -42,3 +44,5 @@ permalink: /kb/081/Q81532/
 	
 	=============================================================================
 	
+
+{% endraw %}

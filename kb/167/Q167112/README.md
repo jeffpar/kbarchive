@@ -6,6 +6,8 @@ permalink: /kb/167/Q167112/
 
 ## Q167112: WD97: Cannot Save Changes to Normal.dot in Second Word Session
 
+{% raw %}
+
 	Article: Q167112
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/167/Q167112/
 	
 	=============================================================================
 	
+
+{% endraw %}

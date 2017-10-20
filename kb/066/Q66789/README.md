@@ -6,6 +6,8 @@ permalink: /kb/066/Q66789/
 
 ## Q66789: Using 3Com EtherLink Plus w/ DOS LAN Man 2.x/Windows 3.x
 
+{% raw %}
+
 	Article: Q66789
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/066/Q66789/
 	
 	=============================================================================
 	
+
+{% endraw %}

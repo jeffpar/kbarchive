@@ -6,6 +6,8 @@ permalink: /kb/169/Q169462/
 
 ## Q169462: XFOR: Configuring POP3 Client for Remote Mail Configuration
 
+{% raw %}
+
 	Article: Q169462
 	Product(s): Microsoft Exchange
 	Version(s): 5.00
@@ -98,3 +100,5 @@ permalink: /kb/169/Q169462/
 	
 	=============================================================================
 	
+
+{% endraw %}

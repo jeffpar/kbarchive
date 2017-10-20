@@ -6,6 +6,8 @@ permalink: /kb/092/Q92345/
 
 ## Q92345: Using File Locking and Record Locking in FoxPro
 
+{% raw %}
+
 	Article: Q92345
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a | 2.50 2.50a 3.0
@@ -128,3 +130,5 @@ permalink: /kb/092/Q92345/
 	
 	=============================================================================
 	
+
+{% endraw %}

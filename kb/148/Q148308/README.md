@@ -6,6 +6,8 @@ permalink: /kb/148/Q148308/
 
 ## Q148308: Configuring Windows 95 Registry Settings From Windows NT 4.0
 
+{% raw %}
+
 	Article: Q148308
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/148/Q148308/
 	
 	=============================================================================
 	
+
+{% endraw %}

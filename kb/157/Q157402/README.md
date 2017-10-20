@@ -6,6 +6,8 @@ permalink: /kb/157/Q157402/
 
 ## Q157402: HOWTO: Use Config.fpw Files with OLE Automation Servers
 
+{% raw %}
+
 	Article: Q157402
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/157/Q157402/
 	
 	=============================================================================
 	
+
+{% endraw %}

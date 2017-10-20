@@ -6,6 +6,8 @@ permalink: /kb/068/Q68588/
 
 ## Q68588: OutGText% Works Only on First Call If WINDOW Invoked; UI Font
 
+{% raw %}
+
 	Article: Q68588
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -60,3 +62,5 @@ permalink: /kb/068/Q68588/
 	the first call to OutGText to output text, you must precede each
 	subsequent call to OutGText with a call to GTextWindow in order to
 	preserve logical coordinates of the window.
+
+{% endraw %}

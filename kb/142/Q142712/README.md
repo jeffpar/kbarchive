@@ -6,6 +6,8 @@ permalink: /kb/142/Q142712/
 
 ## Q142712: Definition of Time Field in IIS Log File
 
+{% raw %}
+
 	Article: Q142712
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -33,3 +35,5 @@ permalink: /kb/142/Q142712/
 	
 	=============================================================================
 	
+
+{% endraw %}

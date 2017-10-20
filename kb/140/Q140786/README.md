@@ -6,6 +6,8 @@ permalink: /kb/140/Q140786/
 
 ## Q140786: Which Products Qualify for PowerPoint for Windows 95 Upgrade
 
+{% raw %}
+
 	Article: Q140786
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -84,3 +86,5 @@ permalink: /kb/140/Q140786/
 	
 	=============================================================================
 	
+
+{% endraw %}

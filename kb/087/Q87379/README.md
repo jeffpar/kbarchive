@@ -6,6 +6,8 @@ permalink: /kb/087/Q87379/
 
 ## Q87379: PC DB: Description of an .ATT File
 
+{% raw %}
+
 	Article: Q87379
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -65,3 +67,5 @@ permalink: /kb/087/Q87379/
 	
 	=============================================================================
 	
+
+{% endraw %}

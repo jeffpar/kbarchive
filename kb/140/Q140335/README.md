@@ -6,6 +6,8 @@ permalink: /kb/140/Q140335/
 
 ## Q140335: Remote Mail Problems with Existing Connection to Mail Server
 
+{% raw %}
+
 	Article: Q140335
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -68,3 +70,5 @@ permalink: /kb/140/Q140335/
 	
 	=============================================================================
 	
+
+{% endraw %}

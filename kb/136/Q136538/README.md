@@ -6,6 +6,8 @@ permalink: /kb/136/Q136538/
 
 ## Q136538: MSB Human: Minimum System Requirements for Macintosh
 
+{% raw %}
+
 	Article: Q136538
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136538/
 	
 	=============================================================================
 	
+
+{% endraw %}

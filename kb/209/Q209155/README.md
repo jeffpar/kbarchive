@@ -6,6 +6,8 @@ permalink: /kb/209/Q209155/
 
 ## Q209155: Combat Flight Simulator: Overview of Multiplayer Game Issues
 
+{% raw %}
+
 	Article: Q209155
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -92,3 +94,5 @@ permalink: /kb/209/Q209155/
 	
 	=============================================================================
 	
+
+{% endraw %}

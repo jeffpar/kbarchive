@@ -6,6 +6,8 @@ permalink: /kb/044/Q44412/
 
 ## Q44412: Color and Monochrome Attributes in SCREEN 0 (Text) Explained
 
+{% raw %}
+
 	Article: Q44412
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -112,3 +114,5 @@ permalink: /kb/044/Q44412/
 	
 	   "Programmer's Guide to PC and PS/2 Video Systems," by Richard
 	   Wilton (published by Microsoft Press, 1987)
+
+{% endraw %}

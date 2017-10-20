@@ -6,6 +6,8 @@ permalink: /kb/069/Q69922/
 
 ## Q69922: Monochrome Limitations with IBM 8514/a Video Card
 
+{% raw %}
+
 	Article: Q69922
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/069/Q69922/
 	
 	=============================================================================
 	
+
+{% endraw %}

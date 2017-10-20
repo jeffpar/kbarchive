@@ -6,6 +6,8 @@ permalink: /kb/131/Q131640/
 
 ## Q131640: 100% CPU Usage Running SNA Windows 3.x Client on Windows NT
 
+{% raw %}
+
 	Article: Q131640
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -53,3 +55,5 @@ permalink: /kb/131/Q131640/
 	
 	=============================================================================
 	
+
+{% endraw %}

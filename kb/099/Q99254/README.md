@@ -6,6 +6,8 @@ permalink: /kb/099/Q99254/
 
 ## Q99254: Problems with Compaq 486/C LTEs and Megahertz 14.4k Modems
 
+{% raw %}
+
 	Article: Q99254
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/099/Q99254/
 	
 	=============================================================================
 	
+
+{% endraw %}

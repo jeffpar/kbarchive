@@ -6,6 +6,8 @@ permalink: /kb/234/Q234797/
 
 ## Q234797: BLOB Data Doesn't Update with CRecordset::Open appendOnly Option
 
+{% raw %}
+
 	Article: Q234797
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/234/Q234797/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141209/
 
 ## Q141209: BUG: Delete User Help Error: &quot;No Additional Help Is Available&quot;
 
+{% raw %}
+
 	Article: Q141209
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -22,3 +24,5 @@ permalink: /kb/141/Q141209/
 	
 	=============================================================================
 	
+
+{% endraw %}

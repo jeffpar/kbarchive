@@ -6,6 +6,8 @@ permalink: /kb/257/Q257940/
 
 ## Q257940: Digital Cluster Server Loses Drive Letter Assignment
 
+{% raw %}
+
 	Article: Q257940
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/257/Q257940/
 	
 	=============================================================================
 	
+
+{% endraw %}

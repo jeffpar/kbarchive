@@ -6,6 +6,8 @@ permalink: /kb/101/Q101368/
 
 ## Q101368: PC Win DOS: Windows and MS-DOS Client Folders
 
+{% raw %}
+
 	Article: Q101368
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -80,3 +82,5 @@ permalink: /kb/101/Q101368/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148455/
 
 ## Q148455: BUG: CSharedFile::Detach() Does Not Call GlobalUnlock()
 
+{% raw %}
+
 	Article: Q148455
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/148/Q148455/
 	
 	=============================================================================
 	
+
+{% endraw %}

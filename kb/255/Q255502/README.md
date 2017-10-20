@@ -6,6 +6,8 @@ permalink: /kb/255/Q255502/
 
 ## Q255502: PRB: Err Msg: ASP 0178 When You Run a WebClass in Windows 2000
 
+{% raw %}
+
 	Article: Q255502
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/255/Q255502/
 	
 	=============================================================================
 	
+
+{% endraw %}

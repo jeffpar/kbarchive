@@ -6,6 +6,8 @@ permalink: /kb/242/Q242124/
 
 ## Q242124: Err Msg: No End Points Available from End Point Mapper
 
+{% raw %}
+
 	Article: Q242124
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -128,3 +130,5 @@ permalink: /kb/242/Q242124/
 	
 	=============================================================================
 	
+
+{% endraw %}

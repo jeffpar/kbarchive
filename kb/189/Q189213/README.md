@@ -6,6 +6,8 @@ permalink: /kb/189/Q189213/
 
 ## Q189213: Windows NT Tech Support Training Deluxe Edition Corrections
 
+{% raw %}
+
 	Article: Q189213
 	Product(s): Microsoft Press
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/189/Q189213/
 	
 	=============================================================================
 	
+
+{% endraw %}

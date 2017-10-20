@@ -6,6 +6,8 @@ permalink: /kb/141/Q141309/
 
 ## Q141309: MS Plus! Setup Cannot Display 1 GB or More Free Disk Space
 
+{% raw %}
+
 	Article: Q141309
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/141/Q141309/
 	
 	=============================================================================
 	
+
+{% endraw %}

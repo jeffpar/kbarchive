@@ -6,6 +6,8 @@ permalink: /kb/312/Q312605/
 
 ## Q312605: Flight Simulator 2002: You Cannot Find the Navigation Charts
 
+{% raw %}
+
 	Article: Q312605
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/312/Q312605/
 	
 	=============================================================================
 	
+
+{% endraw %}

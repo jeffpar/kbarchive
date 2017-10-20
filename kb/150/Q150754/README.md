@@ -6,6 +6,8 @@ permalink: /kb/150/Q150754/
 
 ## Q150754: Mastering Visual C++, Mastering Access: No CD Key
 
+{% raw %}
+
 	Article: Q150754
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/150/Q150754/
 	
 	=============================================================================
 	
+
+{% endraw %}

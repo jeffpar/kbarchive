@@ -6,6 +6,8 @@ permalink: /kb/162/Q162372/
 
 ## Q162372: UT95: Upsizing Wizard Fails When Out of Disk Space on SQL Server
 
+{% raw %}
+
 	Article: Q162372
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -94,3 +96,5 @@ permalink: /kb/162/Q162372/
 	
 	=============================================================================
 	
+
+{% endraw %}

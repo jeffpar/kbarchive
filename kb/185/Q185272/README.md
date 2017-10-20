@@ -6,6 +6,8 @@ permalink: /kb/185/Q185272/
 
 ## Q185272: WD97: Office Assistant Disappears or Not Available
 
+{% raw %}
+
 	Article: Q185272
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/185/Q185272/
 	
 	=============================================================================
 	
+
+{% endraw %}

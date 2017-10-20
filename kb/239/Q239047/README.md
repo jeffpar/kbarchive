@@ -6,6 +6,8 @@ permalink: /kb/239/Q239047/
 
 ## Q239047: Err Msg: A Help File Was Not Specified (138)
 
+{% raw %}
+
 	Article: Q239047
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -61,3 +63,5 @@ permalink: /kb/239/Q239047/
 	
 	=============================================================================
 	
+
+{% endraw %}

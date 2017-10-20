@@ -6,6 +6,8 @@ permalink: /kb/048/Q48885/
 
 ## Q48885: INFO: Newline Character &#92;n Equivalent to ASCII Linefeed (0x0A)
 
+{% raw %}
+
 	Article: Q48885
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -50,3 +52,5 @@ permalink: /kb/048/Q48885/
 	
 	=============================================================================
 	
+
+{% endraw %}

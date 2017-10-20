@@ -6,6 +6,8 @@ permalink: /kb/157/Q157071/
 
 ## Q157071: FIX: GetFieldValue Returns Empty String for SQL_LONGVARCHAR
 
+{% raw %}
+
 	Article: Q157071
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -142,3 +144,5 @@ permalink: /kb/157/Q157071/
 	
 	=============================================================================
 	
+
+{% endraw %}

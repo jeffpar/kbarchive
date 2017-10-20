@@ -6,6 +6,8 @@ permalink: /kb/194/Q194958/
 
 ## Q194958: XCLN: Unable to Open Macintosh PowerPoint 98 Attachments
 
+{% raw %}
+
 	Article: Q194958
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:8.0
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194958/
 	
 	=============================================================================
 	
+
+{% endraw %}

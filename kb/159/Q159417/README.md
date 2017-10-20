@@ -6,6 +6,8 @@ permalink: /kb/159/Q159417/
 
 ## Q159417: WD97: System Requirements for Microsoft Word 97
 
+{% raw %}
+
 	Article: Q159417
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/159/Q159417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274814/
 
 ## Q274814: XADM: Services Don't Start Because of Service Account Password
 
+{% raw %}
+
 	Article: Q274814
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -139,3 +141,5 @@ permalink: /kb/274/Q274814/
 	
 	=============================================================================
 	
+
+{% endraw %}

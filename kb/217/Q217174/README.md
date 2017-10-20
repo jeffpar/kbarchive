@@ -6,6 +6,8 @@ permalink: /kb/217/Q217174/
 
 ## Q217174: FIX: APPEND FROM TYPE XL8 Makes VFP 6 Disappear
 
+{% raw %}
+
 	Article: Q217174
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -151,3 +153,5 @@ permalink: /kb/217/Q217174/
 	
 	=============================================================================
 	
+
+{% endraw %}

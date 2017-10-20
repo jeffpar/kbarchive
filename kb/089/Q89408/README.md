@@ -6,6 +6,8 @@ permalink: /kb/089/Q89408/
 
 ## Q89408: LAN Man 2.1 Test Summary (American Power SMART-UPS 400)
 
+{% raw %}
+
 	Article: Q89408
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/089/Q89408/
 	
 	=============================================================================
 	
+
+{% endraw %}

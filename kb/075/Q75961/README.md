@@ -6,6 +6,8 @@ permalink: /kb/075/Q75961/
 
 ## Q75961: Printing Extended Characters with Generic Text Driver
 
+{% raw %}
+
 	Article: Q75961
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -81,3 +83,5 @@ permalink: /kb/075/Q75961/
 	
 	=============================================================================
 	
+
+{% endraw %}

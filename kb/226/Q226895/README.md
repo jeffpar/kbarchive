@@ -6,6 +6,8 @@ permalink: /kb/226/Q226895/
 
 ## Q226895: SMS: APS Error When Printing Systems by File Name and File Size
 
+{% raw %}
+
 	Article: Q226895
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/226/Q226895/
 	
 	=============================================================================
 	
+
+{% endraw %}

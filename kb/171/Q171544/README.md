@@ -6,6 +6,8 @@ permalink: /kb/171/Q171544/
 
 ## Q171544: FIX: Engine: Collection Object Doesn't Access Correctly by Name
 
+{% raw %}
+
 	Article: Q171544
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0; WINNT:97
@@ -69,3 +71,5 @@ permalink: /kb/171/Q171544/
 	
 	=============================================================================
 	
+
+{% endraw %}

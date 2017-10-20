@@ -6,6 +6,8 @@ permalink: /kb/065/Q65128/
 
 ## Q65128: FILE: Windows Int 21h and NetBIOS Support for DPMI
 
+{% raw %}
+
 	Article: Q65128
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -260,3 +262,5 @@ permalink: /kb/065/Q65128/
 	
 	=============================================================================
 	
+
+{% endraw %}

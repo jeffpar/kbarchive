@@ -6,6 +6,8 @@ permalink: /kb/260/Q260326/
 
 ## Q260326: Unable to View Scheduled Reports in Remote Admin UI on Win2000
 
+{% raw %}
+
 	Article: Q260326
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP2
@@ -82,3 +84,5 @@ permalink: /kb/260/Q260326/
 	
 	=============================================================================
 	
+
+{% endraw %}

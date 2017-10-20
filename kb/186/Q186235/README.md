@@ -6,6 +6,8 @@ permalink: /kb/186/Q186235/
 
 ## Q186235: XFOR: NDR and Event 142 Sending to Lotus cc:Mail Recipient
 
+{% raw %}
+
 	Article: Q186235
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -71,3 +73,5 @@ permalink: /kb/186/Q186235/
 	
 	=============================================================================
 	
+
+{% endraw %}

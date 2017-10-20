@@ -6,6 +6,8 @@ permalink: /kb/094/Q94837/
 
 ## Q94837: PWB Extension Converts Selected Text to Uppercase Letters
 
+{% raw %}
+
 	Article: Q94837
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1,2.0; OS/2:1.0,1.1
@@ -137,3 +139,5 @@ permalink: /kb/094/Q94837/
 	
 	=============================================================================
 	
+
+{% endraw %}

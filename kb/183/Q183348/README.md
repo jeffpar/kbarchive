@@ -6,6 +6,8 @@ permalink: /kb/183/Q183348/
 
 ## Q183348: SMS: Secondary Sites Are No Longer Active
 
+{% raw %}
+
 	Article: Q183348
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -130,3 +132,5 @@ permalink: /kb/183/Q183348/
 	
 	=============================================================================
 	
+
+{% endraw %}

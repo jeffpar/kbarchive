@@ -6,6 +6,8 @@ permalink: /kb/249/Q249298/
 
 ## Q249298: Rapid Development Comments and Corrections
 
+{% raw %}
+
 	Article: Q249298
 	Product(s): Microsoft Press
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/249/Q249298/
 	
 	=============================================================================
 	
+
+{% endraw %}

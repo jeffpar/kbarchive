@@ -6,6 +6,8 @@ permalink: /kb/194/Q194829/
 
 ## Q194829: NET USE for Dfs Shares Fail for Terminal Server Clients &gt; 9
 
+{% raw %}
+
 	Article: Q194829
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -123,3 +125,5 @@ permalink: /kb/194/Q194829/
 	
 	=============================================================================
 	
+
+{% endraw %}

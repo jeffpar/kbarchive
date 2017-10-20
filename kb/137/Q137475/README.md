@@ -6,6 +6,8 @@ permalink: /kb/137/Q137475/
 
 ## Q137475: SMC 8416 EtherEZ Card Does Not Allow Reconfiguration
 
+{% raw %}
+
 	Article: Q137475
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51 95
@@ -81,3 +83,5 @@ permalink: /kb/137/Q137475/
 	
 	=============================================================================
 	
+
+{% endraw %}

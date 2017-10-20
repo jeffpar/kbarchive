@@ -6,6 +6,8 @@ permalink: /kb/097/Q97940/
 
 ## Q97940: SAMPLE: Global Heap Functions
 
+{% raw %}
+
 	Article: Q97940
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -57,3 +59,5 @@ permalink: /kb/097/Q97940/
 	
 	=============================================================================
 	
+
+{% endraw %}

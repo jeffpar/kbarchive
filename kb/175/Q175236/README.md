@@ -6,6 +6,8 @@ permalink: /kb/175/Q175236/
 
 ## Q175236: XFOR: Failed Message Conversion Error on Inbound Messages
 
+{% raw %}
+
 	Article: Q175236
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -54,3 +56,5 @@ permalink: /kb/175/Q175236/
 	
 	=============================================================================
 	
+
+{% endraw %}

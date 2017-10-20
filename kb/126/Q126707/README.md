@@ -6,6 +6,8 @@ permalink: /kb/126/Q126707/
 
 ## Q126707: Chip's Challenge: Two Bear Traps Won't Release in Level 70
 
+{% raw %}
+
 	Article: Q126707
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/126/Q126707/
 	
 	=============================================================================
 	
+
+{% endraw %}

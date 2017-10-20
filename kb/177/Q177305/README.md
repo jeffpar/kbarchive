@@ -6,6 +6,8 @@ permalink: /kb/177/Q177305/
 
 ## Q177305: Using the Current User Name and Password Option in RAS
 
+{% raw %}
+
 	Article: Q177305
 	Product(s): Microsoft Windows NT
 	Version(s): Winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/177/Q177305/
 	
 	=============================================================================
 	
+
+{% endraw %}

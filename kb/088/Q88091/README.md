@@ -6,6 +6,8 @@ permalink: /kb/088/Q88091/
 
 ## Q88091: Windows Only Starts from Windows Directory
 
+{% raw %}
+
 	Article: Q88091
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -100,3 +102,5 @@ permalink: /kb/088/Q88091/
 	
 	=============================================================================
 	
+
+{% endraw %}

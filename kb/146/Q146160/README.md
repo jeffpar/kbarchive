@@ -6,6 +6,8 @@ permalink: /kb/146/Q146160/
 
 ## Q146160: Error Exporting Data When Dispdib.dll is Missing
 
+{% raw %}
+
 	Article: Q146160
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -59,3 +61,5 @@ permalink: /kb/146/Q146160/
 	
 	=============================================================================
 	
+
+{% endraw %}

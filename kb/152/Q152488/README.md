@@ -6,6 +6,8 @@ permalink: /kb/152/Q152488/
 
 ## Q152488: Event 7000: File Not Found with SMS
 
+{% raw %}
+
 	Article: Q152488
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152488/
 	
 	=============================================================================
 	
+
+{% endraw %}

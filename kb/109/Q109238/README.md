@@ -6,6 +6,8 @@ permalink: /kb/109/Q109238/
 
 ## Q109238: PRB: In Filer, Can't Move to Higher Folder in Hierarchy
 
+{% raw %}
+
 	Article: Q109238
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -77,3 +79,5 @@ permalink: /kb/109/Q109238/
 	
 	=============================================================================
 	
+
+{% endraw %}

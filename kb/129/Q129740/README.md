@@ -6,6 +6,8 @@ permalink: /kb/129/Q129740/
 
 ## Q129740: BUG: Grid FixedAlignment Prop Accepts Value for Non-Fixed Cell
 
+{% raw %}
+
 	Article: Q129740
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -81,3 +83,5 @@ permalink: /kb/129/Q129740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146147/
 
 ## Q146147: XCLN: 8 MB RAM and No Swap File Prevents MAPI EMS Login
 
+{% raw %}
+
 	Article: Q146147
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -42,3 +44,5 @@ permalink: /kb/146/Q146147/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143030/
 
 ## Q143030: RAS Clients Not Able to Connect to RAS Server's Network
 
+{% raw %}
+
 	Article: Q143030
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -60,3 +62,5 @@ permalink: /kb/143/Q143030/
 	
 	=============================================================================
 	
+
+{% endraw %}

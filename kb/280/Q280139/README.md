@@ -6,6 +6,8 @@ permalink: /kb/280/Q280139/
 
 ## Q280139: TN3270 Print Session Connection Fails on Non-default Port
 
+{% raw %}
+
 	Article: Q280139
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -49,3 +51,5 @@ permalink: /kb/280/Q280139/
 	
 	=============================================================================
 	
+
+{% endraw %}

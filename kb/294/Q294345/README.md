@@ -6,6 +6,8 @@ permalink: /kb/294/Q294345/
 
 ## Q294345: Registry Hive Fragmentation Behavior Is Not Configurable
 
+{% raw %}
+
 	Article: Q294345
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6
@@ -90,3 +92,5 @@ permalink: /kb/294/Q294345/
 	
 	=============================================================================
 	
+
+{% endraw %}

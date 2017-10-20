@@ -6,6 +6,8 @@ permalink: /kb/277/Q277770/
 
 ## Q277770: XADM: Event 7000 Occurs Attempting to Start Exchange Service
 
+{% raw %}
+
 	Article: Q277770
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/277/Q277770/
 	
 	=============================================================================
 	
+
+{% endraw %}

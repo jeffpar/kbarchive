@@ -6,6 +6,8 @@ permalink: /kb/149/Q149607/
 
 ## Q149607: Must Restart After Installing Microsoft Phone on Presario
 
+{% raw %}
+
 	Article: Q149607
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/149/Q149607/
 	
 	=============================================================================
 	
+
+{% endraw %}

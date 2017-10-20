@@ -6,6 +6,8 @@ permalink: /kb/156/Q156775/
 
 ## Q156775: MSB Dinos: Errors Installing with 8-bit Sound Card
 
+{% raw %}
+
 	Article: Q156775
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/156/Q156775/
 	
 	=============================================================================
 	
+
+{% endraw %}

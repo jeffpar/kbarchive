@@ -6,6 +6,8 @@ permalink: /kb/076/Q76765/
 
 ## Q76765: README.TXT: Using Windows with Multimedia Extensions
 
+{% raw %}
+
 	Article: Q76765
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0
@@ -273,3 +275,5 @@ permalink: /kb/076/Q76765/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/220/Q220847/
 
 ## Q220847: FTP Cannot Retrieve Files with DBCS Characters
 
+{% raw %}
+
 	Article: Q220847
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -99,3 +101,5 @@ permalink: /kb/220/Q220847/
 	
 	=============================================================================
 	
+
+{% endraw %}

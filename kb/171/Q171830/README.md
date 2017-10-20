@@ -6,6 +6,8 @@ permalink: /kb/171/Q171830/
 
 ## Q171830: FIX: ActiveX Document Menu Changing Places
 
+{% raw %}
+
 	Article: Q171830
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -73,3 +75,5 @@ permalink: /kb/171/Q171830/
 	
 	=============================================================================
 	
+
+{% endraw %}

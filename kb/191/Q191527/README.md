@@ -6,6 +6,8 @@ permalink: /kb/191/Q191527/
 
 ## Q191527: HOWTO: Implement GenHTML Functionality in VFP Run-Time App
 
+{% raw %}
+
 	Article: Q191527
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/191/Q191527/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74870/
 
 ## Q74870: How EMM386.EXE Rounds Segment Addresses
 
+{% raw %}
+
 	Article: Q74870
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -85,3 +87,5 @@ permalink: /kb/074/Q74870/
 	
 	=============================================================================
 	
+
+{% endraw %}

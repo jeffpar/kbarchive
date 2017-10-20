@@ -6,6 +6,8 @@ permalink: /kb/319/Q319193/
 
 ## Q319193: Train Simulator: Update Patch Is Available
 
+{% raw %}
+
 	Article: Q319193
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -148,3 +150,5 @@ permalink: /kb/319/Q319193/
 	
 	=============================================================================
 	
+
+{% endraw %}

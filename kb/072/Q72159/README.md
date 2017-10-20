@@ -6,6 +6,8 @@ permalink: /kb/072/Q72159/
 
 ## Q72159: MS-DOS 5 README.TXT: Machine-Specific HIMEM.SYS Switches
 
+{% raw %}
+
 	Article: Q72159
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -70,3 +72,5 @@ permalink: /kb/072/Q72159/
 	
 	=============================================================================
 	
+
+{% endraw %}

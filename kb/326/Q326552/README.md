@@ -6,6 +6,8 @@ permalink: /kb/326/Q326552/
 
 ## Q326552: SNA Server and HIS Web Client Not Supported When in TN Mode
 
+{% raw %}
+
 	Article: Q326552
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -76,3 +78,5 @@ permalink: /kb/326/Q326552/
 	
 	=============================================================================
 	
+
+{% endraw %}

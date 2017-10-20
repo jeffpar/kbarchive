@@ -6,6 +6,8 @@ permalink: /kb/214/Q214841/
 
 ## Q214841: Err Msg: The Parameter Is Incorrect
 
+{% raw %}
+
 	Article: Q214841
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/214/Q214841/
 	
 	=============================================================================
 	
+
+{% endraw %}

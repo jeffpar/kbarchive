@@ -6,6 +6,8 @@ permalink: /kb/096/Q96740/
 
 ## Q96740: LAN Manager 2.2 FTBOOT Trap Ds on Reboot
 
+{% raw %}
+
 	Article: Q96740
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/096/Q96740/
 	
 	=============================================================================
 	
+
+{% endraw %}

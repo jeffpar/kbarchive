@@ -6,6 +6,8 @@ permalink: /kb/120/Q120045/
 
 ## Q120045: BUG: Value of cbDSN in SQLConnect is Not Mapped Correctly
 
+{% raw %}
+
 	Article: Q120045
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -67,3 +69,5 @@ permalink: /kb/120/Q120045/
 	
 	=============================================================================
 	
+
+{% endraw %}

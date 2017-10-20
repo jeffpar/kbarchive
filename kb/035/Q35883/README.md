@@ -6,6 +6,8 @@ permalink: /kb/035/Q35883/
 
 ## Q35883: FIX: Public Labels Are Prefixed with Underscore Incorrectly
 
+{% raw %}
+
 	Article: Q35883
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -81,3 +83,5 @@ permalink: /kb/035/Q35883/
 	
 	=============================================================================
 	
+
+{% endraw %}

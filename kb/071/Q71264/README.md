@@ -6,6 +6,8 @@ permalink: /kb/071/Q71264/
 
 ## Q71264: Information on SYSTEM.INI &#91;386enh&#93; Entry SystemROMBreakPoint=
 
+{% raw %}
+
 	Article: Q71264
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/071/Q71264/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59925/
 
 ## Q59925: Mac Hyp: Releasing Memory Used by Resource Handles
 
+{% raw %}
+
 	Article: Q59925
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -39,3 +41,5 @@ permalink: /kb/059/Q59925/
 	
 	=============================================================================
 	
+
+{% endraw %}

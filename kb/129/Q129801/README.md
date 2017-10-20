@@ -6,6 +6,8 @@ permalink: /kb/129/Q129801/
 
 ## Q129801: HOWTO: Create and Use a Minimal OLE Automation Server
 
+{% raw %}
+
 	Article: Q129801
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -130,3 +132,5 @@ permalink: /kb/129/Q129801/
 	
 	=============================================================================
 	
+
+{% endraw %}

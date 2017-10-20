@@ -6,6 +6,8 @@ permalink: /kb/180/Q180547/
 
 ## Q180547: XADM: Messages Generate NDR When Sent to Certain Sites
 
+{% raw %}
+
 	Article: Q180547
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/180/Q180547/
 	
 	=============================================================================
 	
+
+{% endraw %}

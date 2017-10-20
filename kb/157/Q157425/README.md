@@ -6,6 +6,8 @@ permalink: /kb/157/Q157425/
 
 ## Q157425: BUG: Quick Report Mixes Detail and Header Bands
 
+{% raw %}
+
 	Article: Q157425
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -73,3 +75,5 @@ permalink: /kb/157/Q157425/
 	
 	=============================================================================
 	
+
+{% endraw %}

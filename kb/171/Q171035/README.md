@@ -6,6 +6,8 @@ permalink: /kb/171/Q171035/
 
 ## Q171035: Modem Connection Remains After You Disconnect from MSN
 
+{% raw %}
+
 	Article: Q171035
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -75,3 +77,5 @@ permalink: /kb/171/Q171035/
 	
 	=============================================================================
 	
+
+{% endraw %}

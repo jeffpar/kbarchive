@@ -6,6 +6,8 @@ permalink: /kb/067/Q67349/
 
 ## Q67349: List of 8514/A Graphic Boards and Vendor-Supplied Drivers
 
+{% raw %}
+
 	Article: Q67349
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -95,3 +97,5 @@ permalink: /kb/067/Q67349/
 	
 	=============================================================================
 	
+
+{% endraw %}

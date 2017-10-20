@@ -6,6 +6,8 @@ permalink: /kb/273/Q273567/
 
 ## Q273567: How to install and set up MSN Companion
 
+{% raw %}
+
 	Article: Q273567
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -103,3 +105,5 @@ permalink: /kb/273/Q273567/
 	
 	=============================================================================
 	
+
+{% endraw %}

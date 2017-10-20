@@ -6,6 +6,8 @@ permalink: /kb/051/Q51604/
 
 ## Q51604: SCREEN Function Doesn't Give Color Attribute in Graphics Mode
 
+{% raw %}
+
 	Article: Q51604
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -31,3 +33,5 @@ permalink: /kb/051/Q51604/
 	When colorflag is zero or absent, the ASCII code of the character at
 	the specified location is returned as an integer in both graphics and
 	text modes.
+
+{% endraw %}

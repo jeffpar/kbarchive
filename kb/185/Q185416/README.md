@@ -6,6 +6,8 @@ permalink: /kb/185/Q185416/
 
 ## Q185416: Frequently Asked Questions About Hotmail
 
+{% raw %}
+
 	Article: Q185416
 	Product(s): The Microsoft Network
 	Version(s): 5.1,5.2,5.3,5.4,6.0,6.1
@@ -262,3 +264,5 @@ permalink: /kb/185/Q185416/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157135/
 
 ## Q157135: WD97: Newsletter Footer Doesn't Print Using Default Settings
 
+{% raw %}
+
 	Article: Q157135
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157135/
 	
 	=============================================================================
 	
+
+{% endraw %}

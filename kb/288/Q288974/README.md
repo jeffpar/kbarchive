@@ -6,6 +6,8 @@ permalink: /kb/288/Q288974/
 
 ## Q288974: Registration Intitiates Before Each MSN Companion Session
 
+{% raw %}
+
 	Article: Q288974
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -56,3 +58,5 @@ permalink: /kb/288/Q288974/
 	
 	=============================================================================
 	
+
+{% endraw %}

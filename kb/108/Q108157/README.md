@@ -6,6 +6,8 @@ permalink: /kb/108/Q108157/
 
 ## Q108157: 32-Bit File Access Cache Size Is Incorrectly Displayed
 
+{% raw %}
+
 	Article: Q108157
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -44,3 +46,5 @@ permalink: /kb/108/Q108157/
 	
 	=============================================================================
 	
+
+{% endraw %}

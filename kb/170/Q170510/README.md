@@ -6,6 +6,8 @@ permalink: /kb/170/Q170510/
 
 ## Q170510: Double-Clicking the Mouse Button Acts as a Single Click
 
+{% raw %}
+
 	Article: Q170510
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP3
@@ -93,3 +95,5 @@ permalink: /kb/170/Q170510/
 	
 	=============================================================================
 	
+
+{% endraw %}

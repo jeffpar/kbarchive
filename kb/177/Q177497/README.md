@@ -6,6 +6,8 @@ permalink: /kb/177/Q177497/
 
 ## Q177497: Server Service Fails to Start at Startup w/ Event ID 2505
 
+{% raw %}
+
 	Article: Q177497
 	Product(s): Microsoft Windows NT
 	Version(s): 4.00
@@ -102,3 +104,5 @@ permalink: /kb/177/Q177497/
 	
 	=============================================================================
 	
+
+{% endraw %}

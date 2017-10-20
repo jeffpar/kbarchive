@@ -6,6 +6,8 @@ permalink: /kb/271/Q271217/
 
 ## Q271217: Password Synchronization Doesn't Work Using Syntax Given in Help
 
+{% raw %}
+
 	Article: Q271217
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -81,3 +83,5 @@ permalink: /kb/271/Q271217/
 	
 	=============================================================================
 	
+
+{% endraw %}

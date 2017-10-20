@@ -6,6 +6,8 @@ permalink: /kb/081/Q81554/
 
 ## Q81554: PC Win: Only First File of Multiple Files Copies
 
+{% raw %}
+
 	Article: Q81554
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.5
@@ -42,3 +44,5 @@ permalink: /kb/081/Q81554/
 	
 	=============================================================================
 	
+
+{% endraw %}

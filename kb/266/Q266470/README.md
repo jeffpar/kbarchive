@@ -6,6 +6,8 @@ permalink: /kb/266/Q266470/
 
 ## Q266470: Encarta 2001: Only Copyright Is Printed When You Print Timeline
 
+{% raw %}
+
 	Article: Q266470
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/266/Q266470/
 	
 	=============================================================================
 	
+
+{% endraw %}

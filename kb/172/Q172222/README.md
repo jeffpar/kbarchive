@@ -6,6 +6,8 @@ permalink: /kb/172/Q172222/
 
 ## Q172222: Err Msg: No More Internal File Identifiers Available
 
+{% raw %}
+
 	Article: Q172222
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.00
@@ -78,3 +80,5 @@ permalink: /kb/172/Q172222/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214967/
 
 ## Q214967: SMS: Error Message from Selecting and Then Clearing Option
 
+{% raw %}
+
 	Article: Q214967
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -64,3 +66,5 @@ permalink: /kb/214/Q214967/
 	
 	=============================================================================
 	
+
+{% endraw %}

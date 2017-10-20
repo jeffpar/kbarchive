@@ -6,6 +6,8 @@ permalink: /kb/169/Q169949/
 
 ## Q169949: Mastering: Website Added to Notebook Instead of Content Page
 
+{% raw %}
+
 	Article: Q169949
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/169/Q169949/
 	
 	=============================================================================
 	
+
+{% endraw %}

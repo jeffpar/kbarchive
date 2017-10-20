@@ -6,6 +6,8 @@ permalink: /kb/084/Q84709/
 
 ## Q84709: How to Disable Access to Specific Control Panel Tools
 
+{% raw %}
+
 	Article: Q84709
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95
@@ -96,3 +98,5 @@ permalink: /kb/084/Q84709/
 	
 	=============================================================================
 	
+
+{% endraw %}

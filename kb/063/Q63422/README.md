@@ -6,6 +6,8 @@ permalink: /kb/063/Q63422/
 
 ## Q63422: B_OVREMAP in 7.00 Programmer's Guide Should Be B_OVLREMAP
 
+{% raw %}
+
 	Article: Q63422
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -36,3 +38,5 @@ permalink: /kb/063/Q63422/
 	   SHELL             'Do something to expanded memory in the SHELL
 	   CALL OvlReMap     'Remap overlays in expanded memory after SHELL
 	   END
+
+{% endraw %}

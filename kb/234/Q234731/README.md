@@ -6,6 +6,8 @@ permalink: /kb/234/Q234731/
 
 ## Q234731: MS Pocket Guide to MS Internet Explorer 5 Comments and Correctio
 
+{% raw %}
+
 	Article: Q234731
 	Product(s): Microsoft Press
 	Version(s): 
@@ -228,3 +230,5 @@ permalink: /kb/234/Q234731/
 	
 	=============================================================================
 	
+
+{% endraw %}

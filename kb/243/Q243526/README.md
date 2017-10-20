@@ -6,6 +6,8 @@ permalink: /kb/243/Q243526/
 
 ## Q243526: DOC: Usage of BufferLength in SQLGetDiagRecW
 
+{% raw %}
+
 	Article: Q243526
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.5,3.51,3.6,3.7
@@ -61,3 +63,5 @@ permalink: /kb/243/Q243526/
 	
 	=============================================================================
 	
+
+{% endraw %}

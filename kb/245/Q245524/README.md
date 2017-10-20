@@ -6,6 +6,8 @@ permalink: /kb/245/Q245524/
 
 ## Q245524: HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part II)
 
+{% raw %}
+
 	Article: Q245524
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,2.5,5.0,6.0
@@ -616,3 +618,5 @@ permalink: /kb/245/Q245524/
 	
 	=============================================================================
 	
+
+{% endraw %}

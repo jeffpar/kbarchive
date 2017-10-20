@@ -6,6 +6,8 @@ permalink: /kb/138/Q138449/
 
 ## Q138449: Using and Troubleshooting the TCP/IP Scope ID
 
+{% raw %}
+
 	Article: Q138449
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11,95; winnt:3.5,3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/138/Q138449/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158148/
 
 ## Q158148: Domain Secure Channel Utility -- Nltest.exe
 
+{% raw %}
+
 	Article: Q158148
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -333,3 +335,5 @@ permalink: /kb/158/Q158148/
 	
 	=============================================================================
 	
+
+{% endraw %}

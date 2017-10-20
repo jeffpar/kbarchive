@@ -6,6 +6,8 @@ permalink: /kb/173/Q173548/
 
 ## Q173548: Bookshelf: How to Return to Previously Viewed Articles
 
+{% raw %}
+
 	Article: Q173548
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173548/
 	
 	=============================================================================
 	
+
+{% endraw %}

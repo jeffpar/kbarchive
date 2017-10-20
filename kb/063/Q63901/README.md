@@ -6,6 +6,8 @@ permalink: /kb/063/Q63901/
 
 ## Q63901: Incorrect SEEK in Example in BASIC 7.00 Language Reference
 
+{% raw %}
+
 	Article: Q63901
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -35,3 +37,5 @@ permalink: /kb/063/Q63901/
 	
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+{% endraw %}

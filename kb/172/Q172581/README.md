@@ -6,6 +6,8 @@ permalink: /kb/172/Q172581/
 
 ## Q172581: Golf 3.0: Cannot Use Devil's Island Golf Course
 
+{% raw %}
+
 	Article: Q172581
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/172/Q172581/
 	
 	=============================================================================
 	
+
+{% endraw %}

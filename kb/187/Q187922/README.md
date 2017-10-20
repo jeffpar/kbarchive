@@ -6,6 +6,8 @@ permalink: /kb/187/Q187922/
 
 ## Q187922: PRB: Passing a UDT To Or From an ActiveX EXE May Fail on NT
 
+{% raw %}
+
 	Article: Q187922
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -76,3 +78,5 @@ permalink: /kb/187/Q187922/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85870/
 
 ## Q85870: FIX: L1035 Error, FUNCTIONS Statement First in .DEF File
 
+{% raw %}
+
 	Article: Q85870
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.3
@@ -66,3 +68,5 @@ permalink: /kb/085/Q85870/
 	
 	=============================================================================
 	
+
+{% endraw %}

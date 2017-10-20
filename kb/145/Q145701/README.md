@@ -6,6 +6,8 @@ permalink: /kb/145/Q145701/
 
 ## Q145701: HOWTO: Close Shelled Process When Finished under Windows95/98/Me
 
+{% raw %}
+
 	Article: Q145701
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -64,3 +66,5 @@ permalink: /kb/145/Q145701/
 	
 	=============================================================================
 	
+
+{% endraw %}

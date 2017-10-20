@@ -6,6 +6,8 @@ permalink: /kb/125/Q125974/
 
 ## Q125974: MS DOS 6.2 STEP BY STEP: Corrections and Comments
 
+{% raw %}
+
 	Article: Q125974
 	Product(s): Microsoft Press
 	Version(s): 
@@ -158,3 +160,5 @@ permalink: /kb/125/Q125974/
 	
 	=============================================================================
 	
+
+{% endraw %}

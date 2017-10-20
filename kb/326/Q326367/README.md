@@ -6,6 +6,8 @@ permalink: /kb/326/Q326367/
 
 ## Q326367: Request Unit Sizes Greater Than 16 KB Are Incorrectly Calculated
 
+{% raw %}
+
 	Article: Q326367
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -93,3 +95,5 @@ permalink: /kb/326/Q326367/
 	
 	=============================================================================
 	
+
+{% endraw %}

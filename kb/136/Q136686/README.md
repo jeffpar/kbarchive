@@ -6,6 +6,8 @@ permalink: /kb/136/Q136686/
 
 ## Q136686: Fury3 Mission Complete Text Not Displayed After Some Missions
 
+{% raw %}
+
 	Article: Q136686
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/136/Q136686/
 	
 	=============================================================================
 	
+
+{% endraw %}

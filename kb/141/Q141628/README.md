@@ -6,6 +6,8 @@ permalink: /kb/141/Q141628/
 
 ## Q141628: FIX: Pageframe.Addobject() to a New Page Disables Mouse
 
+{% raw %}
+
 	Article: Q141628
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -92,3 +94,5 @@ permalink: /kb/141/Q141628/
 	
 	=============================================================================
 	
+
+{% endraw %}

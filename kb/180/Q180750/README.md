@@ -6,6 +6,8 @@ permalink: /kb/180/Q180750/
 
 ## Q180750: PRB: ShowInTaskBar Forms Still Appear When Set to False
 
+{% raw %}
+
 	Article: Q180750
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -59,3 +61,5 @@ permalink: /kb/180/Q180750/
 	
 	=============================================================================
 	
+
+{% endraw %}

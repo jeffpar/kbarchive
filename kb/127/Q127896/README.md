@@ -6,6 +6,8 @@ permalink: /kb/127/Q127896/
 
 ## Q127896: Multimedia: General MIDI Troubleshooting In Windows 3.x
 
+{% raw %}
+
 	Article: Q127896
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0 with CD-ROM
@@ -266,3 +268,5 @@ permalink: /kb/127/Q127896/
 	
 	=============================================================================
 	
+
+{% endraw %}

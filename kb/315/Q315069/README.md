@@ -6,6 +6,8 @@ permalink: /kb/315/Q315069/
 
 ## Q315069: FIX: Report Preview Error with Properties Window and DE Open
 
+{% raw %}
+
 	Article: Q315069
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -77,3 +79,5 @@ permalink: /kb/315/Q315069/
 	
 	=============================================================================
 	
+
+{% endraw %}

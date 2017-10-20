@@ -6,6 +6,8 @@ permalink: /kb/165/Q165225/
 
 ## Q165225: AP_TP_Name_Not_Recognized with DBCS and Single Signon
 
+{% raw %}
+
 	Article: Q165225
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -98,3 +100,5 @@ permalink: /kb/165/Q165225/
 	
 	=============================================================================
 	
+
+{% endraw %}

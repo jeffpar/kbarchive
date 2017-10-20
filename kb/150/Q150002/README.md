@@ -6,6 +6,8 @@ permalink: /kb/150/Q150002/
 
 ## Q150002: How to Sort Schedule+ 7.0 Contacts List Using VB for Apps
 
+{% raw %}
+
 	Article: Q150002
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -144,3 +146,5 @@ permalink: /kb/150/Q150002/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182307/
 
 ## Q182307: XADM: Text Attachments Appear Corrupted
 
+{% raw %}
+
 	Article: Q182307
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -117,3 +119,5 @@ permalink: /kb/182/Q182307/
 	
 	=============================================================================
 	
+
+{% endraw %}

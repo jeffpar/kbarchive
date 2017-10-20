@@ -6,6 +6,8 @@ permalink: /kb/171/Q171045/
 
 ## Q171045: FP97: Inserted Form Field Defaults to New Line
 
+{% raw %}
+
 	Article: Q171045
 	Product(s): Word Front Page
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/171/Q171045/
 	
 	=============================================================================
 	
+
+{% endraw %}

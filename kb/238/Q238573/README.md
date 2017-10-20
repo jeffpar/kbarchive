@@ -6,6 +6,8 @@ permalink: /kb/238/Q238573/
 
 ## Q238573: XADM: Installing and Configuring InterOrg Replication Utility
 
+{% raw %}
+
 	Article: Q238573
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2
@@ -344,3 +346,5 @@ permalink: /kb/238/Q238573/
 	
 	=============================================================================
 	
+
+{% endraw %}

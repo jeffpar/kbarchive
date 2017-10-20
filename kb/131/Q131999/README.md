@@ -6,6 +6,8 @@ permalink: /kb/131/Q131999/
 
 ## Q131999: PC Adm: Restoring a Deleted Mail Account
 
+{% raw %}
+
 	Article: Q131999
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -61,3 +63,5 @@ permalink: /kb/131/Q131999/
 	
 	=============================================================================
 	
+
+{% endraw %}

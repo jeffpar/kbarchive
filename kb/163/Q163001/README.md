@@ -6,6 +6,8 @@ permalink: /kb/163/Q163001/
 
 ## Q163001: Err Msg: Stop 0x0000007f (Unexpected_ Kernel_ Mode_ Trap)
 
+{% raw %}
+
 	Article: Q163001
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -83,3 +85,5 @@ permalink: /kb/163/Q163001/
 	
 	=============================================================================
 	
+
+{% endraw %}

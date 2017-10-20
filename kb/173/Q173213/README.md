@@ -6,6 +6,8 @@ permalink: /kb/173/Q173213/
 
 ## Q173213: FIX: JPG in Image or PictureBox Control Doesn't Display Properly
 
+{% raw %}
+
 	Article: Q173213
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -78,3 +80,5 @@ permalink: /kb/173/Q173213/
 	
 	=============================================================================
 	
+
+{% endraw %}

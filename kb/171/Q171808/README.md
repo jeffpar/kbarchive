@@ -6,6 +6,8 @@ permalink: /kb/171/Q171808/
 
 ## Q171808: FIX: MDI Child Form Does Not Become Active
 
+{% raw %}
+
 	Article: Q171808
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -106,3 +108,5 @@ permalink: /kb/171/Q171808/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247852/
 
 ## Q247852: SMS: SQL Monitor Service Does Not Create Notification Files
 
+{% raw %}
+
 	Article: Q247852
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/247/Q247852/
 	
 	=============================================================================
 	
+
+{% endraw %}

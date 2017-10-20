@@ -6,6 +6,8 @@ permalink: /kb/135/Q135668/
 
 ## Q135668: Hardware Detection Hangs with Xircom Pocket Ethernet Adapter
 
+{% raw %}
+
 	Article: Q135668
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/135/Q135668/
 	
 	=============================================================================
 	
+
+{% endraw %}

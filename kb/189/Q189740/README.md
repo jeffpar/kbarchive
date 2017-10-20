@@ -6,6 +6,8 @@ permalink: /kb/189/Q189740/
 
 ## Q189740: BUG: Class Builder Does Not Handle Base Classes Properly
 
+{% raw %}
+
 	Article: Q189740
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/189/Q189740/
 	
 	=============================================================================
 	
+
+{% endraw %}

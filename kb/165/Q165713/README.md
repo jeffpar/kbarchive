@@ -6,6 +6,8 @@ permalink: /kb/165/Q165713/
 
 ## Q165713: Creation of an Emergency Repair Disk Fails
 
+{% raw %}
+
 	Article: Q165713
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/165/Q165713/
 	
 	=============================================================================
 	
+
+{% endraw %}

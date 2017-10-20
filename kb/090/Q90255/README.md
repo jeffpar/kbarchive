@@ -6,6 +6,8 @@ permalink: /kb/090/Q90255/
 
 ## Q90255: Control Panel: Network Does Not Check Hardware
 
+{% raw %}
+
 	Article: Q90255
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -37,3 +39,5 @@ permalink: /kb/090/Q90255/
 	
 	=============================================================================
 	
+
+{% endraw %}

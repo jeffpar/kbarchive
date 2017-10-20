@@ -6,6 +6,8 @@ permalink: /kb/136/Q136670/
 
 ## Q136670: How to Set Up CTRL+G as a Find Again Hot Key in Visual FoxPro
 
+{% raw %}
+
 	Article: Q136670
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/136/Q136670/
 	
 	=============================================================================
 	
+
+{% endraw %}

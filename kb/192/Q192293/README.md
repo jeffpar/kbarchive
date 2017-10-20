@@ -6,6 +6,8 @@ permalink: /kb/192/Q192293/
 
 ## Q192293: IIS Stops ODBC Logging after Failing to Communicate with SQL
 
+{% raw %}
+
 	Article: Q192293
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/192/Q192293/
 	
 	=============================================================================
 	
+
+{% endraw %}

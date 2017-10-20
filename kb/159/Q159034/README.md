@@ -6,6 +6,8 @@ permalink: /kb/159/Q159034/
 
 ## Q159034: Comic Sans Font Not Available in Windows Messaging
 
+{% raw %}
+
 	Article: Q159034
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -62,3 +64,5 @@ permalink: /kb/159/Q159034/
 	
 	=============================================================================
 	
+
+{% endraw %}

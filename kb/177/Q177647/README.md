@@ -6,6 +6,8 @@ permalink: /kb/177/Q177647/
 
 ## Q177647: Nonpaged Pool Size Incorrectly Displayed in Performance Monitor
 
+{% raw %}
+
 	Article: Q177647
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/177/Q177647/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/314/Q314538/
 
 ## Q314538: Encarta 2002 Dictionary: Search Results List Is Incorrect
 
+{% raw %}
+
 	Article: Q314538
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -132,3 +134,5 @@ permalink: /kb/314/Q314538/
 	
 	=============================================================================
 	
+
+{% endraw %}

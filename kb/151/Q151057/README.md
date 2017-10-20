@@ -6,6 +6,8 @@ permalink: /kb/151/Q151057/
 
 ## Q151057: Cinemania 96 Update Contents: May 96
 
+{% raw %}
+
 	Article: Q151057
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -45,3 +47,5 @@ permalink: /kb/151/Q151057/
 	
 	=============================================================================
 	
+
+{% endraw %}

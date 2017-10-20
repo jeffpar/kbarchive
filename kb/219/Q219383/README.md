@@ -6,6 +6,8 @@ permalink: /kb/219/Q219383/
 
 ## Q219383: STOP 0xA in NDIS MAC Driver When Using SPX
 
+{% raw %}
+
 	Article: Q219383
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/219/Q219383/
 	
 	=============================================================================
 	
+
+{% endraw %}

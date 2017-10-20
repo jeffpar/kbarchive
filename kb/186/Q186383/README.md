@@ -6,6 +6,8 @@ permalink: /kb/186/Q186383/
 
 ## Q186383: HOWTO: Use CDao for Connections to a Secure Attached Table
 
+{% raw %}
+
 	Article: Q186383
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.65
@@ -118,3 +120,5 @@ permalink: /kb/186/Q186383/
 	
 	=============================================================================
 	
+
+{% endraw %}

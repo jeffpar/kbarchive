@@ -6,6 +6,8 @@ permalink: /kb/259/Q259116/
 
 ## Q259116: SFU Telnet Server Connections Limited to License Server Limits
 
+{% raw %}
+
 	Article: Q259116
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -50,3 +52,5 @@ permalink: /kb/259/Q259116/
 	
 	=============================================================================
 	
+
+{% endraw %}

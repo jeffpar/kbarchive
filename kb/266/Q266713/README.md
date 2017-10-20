@@ -6,6 +6,8 @@ permalink: /kb/266/Q266713/
 
 ## Q266713: BUG: IDispatch::GetIDsOfNames() May Return E_FAIL When Successfu
 
+{% raw %}
+
 	Article: Q266713
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -114,3 +116,5 @@ permalink: /kb/266/Q266713/
 	
 	=============================================================================
 	
+
+{% endraw %}

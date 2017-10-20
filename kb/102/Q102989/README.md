@@ -6,6 +6,8 @@ permalink: /kb/102/Q102989/
 
 ## Q102989: Device Driver Entries, PART 2--Mouse/Keyboard Driver
 
+{% raw %}
+
 	Article: Q102989
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -283,3 +285,5 @@ permalink: /kb/102/Q102989/
 	
 	=============================================================================
 	
+
+{% endraw %}

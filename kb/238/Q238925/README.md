@@ -6,6 +6,8 @@ permalink: /kb/238/Q238925/
 
 ## Q238925: Encarta 2000: How to Troubleshoot Sound and Video Driver Issues
 
+{% raw %}
+
 	Article: Q238925
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -122,3 +124,5 @@ permalink: /kb/238/Q238925/
 	
 	=============================================================================
 	
+
+{% endraw %}

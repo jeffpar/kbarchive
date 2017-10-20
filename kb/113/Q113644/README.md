@@ -6,6 +6,8 @@ permalink: /kb/113/Q113644/
 
 ## Q113644: Single Digit Playback in Excel 5.0 Proofreader
 
+{% raw %}
+
 	Article: Q113644
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/113/Q113644/
 	
 	=============================================================================
 	
+
+{% endraw %}

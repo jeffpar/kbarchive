@@ -6,6 +6,8 @@ permalink: /kb/155/Q155624/
 
 ## Q155624: Cannot Print Gray Scale to LexMark Optrac PS Printer
 
+{% raw %}
+
 	Article: Q155624
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/155/Q155624/
 	
 	=============================================================================
 	
+
+{% endraw %}

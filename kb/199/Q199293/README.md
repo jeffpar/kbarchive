@@ -6,6 +6,8 @@ permalink: /kb/199/Q199293/
 
 ## Q199293: PRB: Numeric Value Out of Range Error with MS Oracle ODBC Driver
 
+{% raw %}
+
 	Article: Q199293
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,Build 2.573.2927,Build 2.573.3513
@@ -89,3 +91,5 @@ permalink: /kb/199/Q199293/
 	
 	=============================================================================
 	
+
+{% endraw %}

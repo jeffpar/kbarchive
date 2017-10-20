@@ -6,6 +6,8 @@ permalink: /kb/192/Q192129/
 
 ## Q192129: PRB: Run-Time Error '373' or '-2147417848(80010108)'
 
+{% raw %}
+
 	Article: Q192129
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -121,3 +123,5 @@ permalink: /kb/192/Q192129/
 	
 	=============================================================================
 	
+
+{% endraw %}

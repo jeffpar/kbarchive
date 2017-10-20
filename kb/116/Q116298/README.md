@@ -6,6 +6,8 @@ permalink: /kb/116/Q116298/
 
 ## Q116298: Bookshelf: System Error When Choosing Control Panel
 
+{% raw %}
+
 	Article: Q116298
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -44,3 +46,5 @@ permalink: /kb/116/Q116298/
 	
 	=============================================================================
 	
+
+{% endraw %}

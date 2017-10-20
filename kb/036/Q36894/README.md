@@ -6,6 +6,8 @@ permalink: /kb/036/Q36894/
 
 ## Q36894: Predefined Key ON KEY(n) GOSUB Trap Supersedes User-Defined
 
+{% raw %}
+
 	Article: Q36894
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -68,3 +70,5 @@ permalink: /kb/036/Q36894/
 	      KEY(1) ON
 	   END IF
 	RETURN
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61681/
 
 ## Q61681: Use of FASTOPEN and BASIC Application Causes &quot;Disk Full&quot; Error
 
+{% raw %}
+
 	Article: Q61681
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.01,5.0
@@ -60,3 +62,5 @@ permalink: /kb/061/Q61681/
 	
 	=============================================================================
 	
+
+{% endraw %}

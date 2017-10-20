@@ -6,6 +6,8 @@ permalink: /kb/318/Q318095/
 
 ## Q318095: FP: Hyperlinks Updated Even Though You Choose Not to Update
 
+{% raw %}
+
 	Article: Q318095
 	Product(s): Word Front Page
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/318/Q318095/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278661/
 
 ## Q278661: Possible Set-Up Errors With Web Companion
 
+{% raw %}
+
 	Article: Q278661
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/278/Q278661/
 	
 	=============================================================================
 	
+
+{% endraw %}

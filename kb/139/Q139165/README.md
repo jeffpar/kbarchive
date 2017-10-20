@@ -6,6 +6,8 @@ permalink: /kb/139/Q139165/
 
 ## Q139165: PRB: Memory DC Produces Monochrome Images
 
+{% raw %}
+
 	Article: Q139165
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,3.11,95; winnt:3.51
@@ -82,3 +84,5 @@ permalink: /kb/139/Q139165/
 	
 	=============================================================================
 	
+
+{% endraw %}

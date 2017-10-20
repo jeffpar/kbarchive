@@ -6,6 +6,8 @@ permalink: /kb/166/Q166896/
 
 ## Q166896: PRB: Header Files in External Dep Folder Aren't Added to SCC
 
+{% raw %}
+
 	Article: Q166896
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0; winnt:5.0
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166896/
 	
 	=============================================================================
 	
+
+{% endraw %}

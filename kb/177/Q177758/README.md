@@ -6,6 +6,8 @@ permalink: /kb/177/Q177758/
 
 ## Q177758: Bookshelf: How to Use the Parental Control Feature
 
+{% raw %}
+
 	Article: Q177758
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:; WINDOWS:
@@ -113,3 +115,5 @@ permalink: /kb/177/Q177758/
 	
 	=============================================================================
 	
+
+{% endraw %}

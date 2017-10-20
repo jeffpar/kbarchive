@@ -6,6 +6,8 @@ permalink: /kb/190/Q190710/
 
 ## Q190710: XFOR: How to Use Internet Mail Service to Reroute Messages
 
+{% raw %}
+
 	Article: Q190710
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -95,3 +97,5 @@ permalink: /kb/190/Q190710/
 	
 	=============================================================================
 	
+
+{% endraw %}

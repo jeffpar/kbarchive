@@ -6,6 +6,8 @@ permalink: /kb/067/Q67190/
 
 ## Q67190: ASD: Moving a Group of Static Scenery Items
 
+{% raw %}
+
 	Article: Q67190
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/067/Q67190/
 	
 	=============================================================================
 	
+
+{% endraw %}

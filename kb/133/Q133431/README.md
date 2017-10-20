@@ -6,6 +6,8 @@ permalink: /kb/133/Q133431/
 
 ## Q133431: PC NTMMTA: Service Drive Letters Not User Selectable
 
+{% raw %}
+
 	Article: Q133431
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -47,3 +49,5 @@ permalink: /kb/133/Q133431/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95816/
 
 ## Q95816: DBLSPACE.SYS /MOVE or DRVSPACE.SYS /MOVE in CONFIG.SYS Twice
 
+{% raw %}
+
 	Article: Q95816
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -49,3 +51,5 @@ permalink: /kb/095/Q95816/
 	
 	=============================================================================
 	
+
+{% endraw %}

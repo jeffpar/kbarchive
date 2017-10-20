@@ -6,6 +6,8 @@ permalink: /kb/274/Q274569/
 
 ## Q274569: FIX: MTS or IIS w/ ODBC Connection Pooling Hangs If DB Unavail.
 
+{% raw %}
+
 	Article: Q274569
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:2.1 SP2; winnt:2.0,4.0
@@ -71,3 +73,5 @@ permalink: /kb/274/Q274569/
 	
 	=============================================================================
 	
+
+{% endraw %}

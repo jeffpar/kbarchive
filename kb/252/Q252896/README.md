@@ -6,6 +6,8 @@ permalink: /kb/252/Q252896/
 
 ## Q252896: Error Message: (DB5_getRootRecord) Error Locating Local DSA Name
 
+{% raw %}
+
 	Article: Q252896
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -85,3 +87,5 @@ permalink: /kb/252/Q252896/
 	
 	=============================================================================
 	
+
+{% endraw %}

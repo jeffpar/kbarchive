@@ -6,6 +6,8 @@ permalink: /kb/173/Q173759/
 
 ## Q173759: FAQ: How Do I Get Visual FoxPro 5.0a with 5.0a No VFP Problems
 
+{% raw %}
+
 	Article: Q173759
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a
@@ -37,3 +39,5 @@ permalink: /kb/173/Q173759/
 	
 	=============================================================================
 	
+
+{% endraw %}

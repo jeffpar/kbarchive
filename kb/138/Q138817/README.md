@@ -6,6 +6,8 @@ permalink: /kb/138/Q138817/
 
 ## Q138817: FIX: ODBC SDK May Overwrite Latest Version of Msvcrt20.dll
 
+{% raw %}
+
 	Article: Q138817
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138817/
 	
 	=============================================================================
 	
+
+{% endraw %}

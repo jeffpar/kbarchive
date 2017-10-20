@@ -6,6 +6,8 @@ permalink: /kb/160/Q160980/
 
 ## Q160980: Event ID 23, Qualifier 11 While Using Andrew or IBM Twinax Link
 
+{% raw %}
+
 	Article: Q160980
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -82,3 +84,5 @@ permalink: /kb/160/Q160980/
 	
 	=============================================================================
 	
+
+{% endraw %}

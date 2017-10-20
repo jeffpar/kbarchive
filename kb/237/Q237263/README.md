@@ -6,6 +6,8 @@ permalink: /kb/237/Q237263/
 
 ## Q237263: Encarta 2000: Shortcut Menu Transparent When You Play Video Clip
 
+{% raw %}
+
 	Article: Q237263
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/237/Q237263/
 	
 	=============================================================================
 	
+
+{% endraw %}

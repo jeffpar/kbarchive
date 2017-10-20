@@ -6,6 +6,8 @@ permalink: /kb/036/Q36809/
 
 ## Q36809: Do Not Nest FOR/NEXT Loops with Same Counter Index Variable
 
+{% raw %}
+
 	Article: Q36809
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/036/Q36809/
 	   40     PRINT "Inside loop, t% =";T%
 	   50   NEXT T%
 	   60 NEXT T%
+
+{% endraw %}

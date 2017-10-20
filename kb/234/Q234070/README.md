@@ -6,6 +6,8 @@ permalink: /kb/234/Q234070/
 
 ## Q234070: PRB: Error  Using Remote View of SQL 7.0 Tables w/Unicode Tables
 
+{% raw %}
+
 	Article: Q234070
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0b,5.0,5.0a,6.0
@@ -203,3 +205,5 @@ permalink: /kb/234/Q234070/
 	
 	=============================================================================
 	
+
+{% endraw %}

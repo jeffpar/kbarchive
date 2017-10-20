@@ -6,6 +6,8 @@ permalink: /kb/073/Q73511/
 
 ## Q73511: FIX: CodeView Cannot Display Data in a Huge Array Beyond 64k
 
+{% raw %}
+
 	Article: Q73511
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.0,3.05,3.06,3.07,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
@@ -78,3 +80,5 @@ permalink: /kb/073/Q73511/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106480/
 
 ## Q106480: BUG: Access Driver Returns Incorrect pcbValue
 
+{% raw %}
+
 	Article: Q106480
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/106/Q106480/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31170/
 
 ## Q31170: SELECT, IF, FOR, DO, WHILE, CASE, and SUB Structure Errors
 
+{% raw %}
+
 	Article: Q31170
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -67,3 +69,5 @@ permalink: /kb/031/Q31170/
 	    CASE ELSE
 	 END SELECT
 	END SUB
+
+{% endraw %}

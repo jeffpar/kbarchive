@@ -6,6 +6,8 @@ permalink: /kb/154/Q154925/
 
 ## Q154925: Copy Disk Command Missing from Floppy Disk Drive Context Menu
 
+{% raw %}
+
 	Article: Q154925
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:; Win2000:95
@@ -67,3 +69,5 @@ permalink: /kb/154/Q154925/
 	
 	=============================================================================
 	
+
+{% endraw %}

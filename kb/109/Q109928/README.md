@@ -6,6 +6,8 @@ permalink: /kb/109/Q109928/
 
 ## Q109928: Printing from MS-DOS Applications to Local Printer
 
+{% raw %}
+
 	Article: Q109928
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -68,3 +70,5 @@ permalink: /kb/109/Q109928/
 	
 	=============================================================================
 	
+
+{% endraw %}

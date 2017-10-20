@@ -6,6 +6,8 @@ permalink: /kb/200/Q200481/
 
 ## Q200481: Encarta 99: Insufficient Hard Disk Space to Complete Setup
 
+{% raw %}
+
 	Article: Q200481
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/200/Q200481/
 	
 	=============================================================================
 	
+
+{% endraw %}

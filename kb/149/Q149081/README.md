@@ -6,6 +6,8 @@ permalink: /kb/149/Q149081/
 
 ## Q149081: How to Properly Reinstall MSN Version 1.2
 
+{% raw %}
+
 	Article: Q149081
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2
@@ -85,3 +87,5 @@ permalink: /kb/149/Q149081/
 	
 	=============================================================================
 	
+
+{% endraw %}

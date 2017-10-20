@@ -6,6 +6,8 @@ permalink: /kb/102/Q102746/
 
 ## Q102746: X400: Retry Times on Failures to Connect to MTA
 
+{% raw %}
+
 	Article: Q102746
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -84,3 +86,5 @@ permalink: /kb/102/Q102746/
 	
 	=============================================================================
 	
+
+{% endraw %}

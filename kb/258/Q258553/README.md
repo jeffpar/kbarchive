@@ -6,6 +6,8 @@ permalink: /kb/258/Q258553/
 
 ## Q258553: Baseball 2001: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q258553
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -70,3 +72,5 @@ permalink: /kb/258/Q258553/
 	
 	=============================================================================
 	
+
+{% endraw %}

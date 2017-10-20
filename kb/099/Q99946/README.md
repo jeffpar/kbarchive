@@ -6,6 +6,8 @@ permalink: /kb/099/Q99946/
 
 ## Q99946: PC WRmt: Available Modem Scripts
 
+{% raw %}
+
 	Article: Q99946
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -202,3 +204,5 @@ permalink: /kb/099/Q99946/
 	
 	=============================================================================
 	
+
+{% endraw %}

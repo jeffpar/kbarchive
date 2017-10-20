@@ -6,6 +6,8 @@ permalink: /kb/124/Q124615/
 
 ## Q124615: PC Gen: Post Microsoft Mail 3.2a File Updates
 
+{% raw %}
+
 	Article: Q124615
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2a
@@ -106,3 +108,5 @@ permalink: /kb/124/Q124615/
 	
 	=============================================================================
 	
+
+{% endraw %}

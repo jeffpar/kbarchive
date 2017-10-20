@@ -6,6 +6,8 @@ permalink: /kb/229/Q229061/
 
 ## Q229061: Cannot Manage Permissions from Within a Dfs 4.1 Tree
 
+{% raw %}
+
 	Article: Q229061
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/229/Q229061/
 	
 	=============================================================================
 	
+
+{% endraw %}

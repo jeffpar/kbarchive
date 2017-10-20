@@ -6,6 +6,8 @@ permalink: /kb/063/Q63151/
 
 ## Q63151: Flt Sim 4.00: Screen Options for Vectra CS-120 Portable
 
+{% raw %}
+
 	Article: Q63151
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/063/Q63151/
 	
 	=============================================================================
 	
+
+{% endraw %}

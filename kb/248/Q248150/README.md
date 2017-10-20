@@ -6,6 +6,8 @@ permalink: /kb/248/Q248150/
 
 ## Q248150: SMS: Package Status Inaccurate in Three-Tier Hierarchy
 
+{% raw %}
+
 	Article: Q248150
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -76,3 +78,5 @@ permalink: /kb/248/Q248150/
 	
 	=============================================================================
 	
+
+{% endraw %}

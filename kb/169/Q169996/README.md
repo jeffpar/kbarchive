@@ -6,6 +6,8 @@ permalink: /kb/169/Q169996/
 
 ## Q169996: To Run an ISAPI DLL with #exec, Use the CGI Statement
 
+{% raw %}
+
 	Article: Q169996
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -51,3 +53,5 @@ permalink: /kb/169/Q169996/
 	
 	=============================================================================
 	
+
+{% endraw %}

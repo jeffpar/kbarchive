@@ -6,6 +6,8 @@ permalink: /kb/140/Q140088/
 
 ## Q140088: FIX: Sample Application Dialog Box Is Disabled in InfoViewer
 
+{% raw %}
+
 	Article: Q140088
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/140/Q140088/
 	
 	=============================================================================
 	
+
+{% endraw %}

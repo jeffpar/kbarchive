@@ -6,6 +6,8 @@ permalink: /kb/321/Q321872/
 
 ## Q321872: SQL Error -514 Linking to Table That Has More Than 10 Records
 
+{% raw %}
+
 	Article: Q321872
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -192,3 +194,5 @@ permalink: /kb/321/Q321872/
 	
 	=============================================================================
 	
+
+{% endraw %}

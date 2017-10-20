@@ -6,6 +6,8 @@ permalink: /kb/185/Q185615/
 
 ## Q185615: Encarta 98 Err Msg: Enc98 Caused an Invalid Page Fault...
 
+{% raw %}
+
 	Article: Q185615
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -123,3 +125,5 @@ permalink: /kb/185/Q185615/
 	
 	=============================================================================
 	
+
+{% endraw %}

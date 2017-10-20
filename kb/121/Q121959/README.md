@@ -6,6 +6,8 @@ permalink: /kb/121/Q121959/
 
 ## Q121959: ADT/ODE: ADT/ODE Application Setup Always Defaults to Drive C
 
+{% raw %}
+
 	Article: Q121959
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0,7.0,97
@@ -85,3 +87,5 @@ permalink: /kb/121/Q121959/
 	
 	=============================================================================
 	
+
+{% endraw %}

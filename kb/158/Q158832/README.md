@@ -6,6 +6,8 @@ permalink: /kb/158/Q158832/
 
 ## Q158832: Personal Web Server Cannot Be Used as a Gopher Server
 
+{% raw %}
+
 	Article: Q158832
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0,1.0a
@@ -42,3 +44,5 @@ permalink: /kb/158/Q158832/
 	
 	=============================================================================
 	
+
+{% endraw %}

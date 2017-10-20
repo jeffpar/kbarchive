@@ -6,6 +6,8 @@ permalink: /kb/223/Q223389/
 
 ## Q223389: FILE: Scriptng.EXE Has Files To Add Active Debugging
 
+{% raw %}
+
 	Article: Q223389
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0,4.0,4.01; winnt:5.0,5.0sp1,5.0sp2,5.0sp3,6.0
@@ -101,3 +103,5 @@ permalink: /kb/223/Q223389/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105183/
 
 ## Q105183: Backup Overwrites DoubleSpace-Compressed Floppy Disks
 
+{% raw %}
+
 	Article: Q105183
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -65,3 +67,5 @@ permalink: /kb/105/Q105183/
 	
 	=============================================================================
 	
+
+{% endraw %}

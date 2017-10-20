@@ -6,6 +6,8 @@ permalink: /kb/187/Q187917/
 
 ## Q187917: Baseball 3D: How to Configure and Use Game Controls
 
+{% raw %}
+
 	Article: Q187917
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -446,3 +448,5 @@ permalink: /kb/187/Q187917/
 	
 	=============================================================================
 	
+
+{% endraw %}

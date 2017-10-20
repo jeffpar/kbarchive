@@ -6,6 +6,8 @@ permalink: /kb/049/Q49840/
 
 ## Q49840: Use of the /Gt Switch in C
 
+{% raw %}
+
 	Article: Q49840
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -59,3 +61,5 @@ permalink: /kb/049/Q49840/
 	heap (from which will be allocated some file buffers and the local
 	copy of the environment), and the 2-byte segment addresses for data
 	items moved out as needed.
+
+{% endraw %}

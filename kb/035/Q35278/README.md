@@ -6,6 +6,8 @@ permalink: /kb/035/Q35278/
 
 ## Q35278: Sample Program That Makes MS OS/2 Call to DosBeep Function
 
+{% raw %}
+
 	Article: Q35278
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -26,3 +28,5 @@ permalink: /kb/035/Q35278/
 	   i = i + &H100
 	   x = DOSBEEP(i, 400)
 	WEND
+
+{% endraw %}

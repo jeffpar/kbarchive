@@ -6,6 +6,8 @@ permalink: /kb/125/Q125311/
 
 ## Q125311: Bookshelf Fails on Second Print Attempt Using HP 4/ML Printer
 
+{% raw %}
+
 	Article: Q125311
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition; WINDOWS:3.1x
@@ -97,3 +99,5 @@ permalink: /kb/125/Q125311/
 	
 	=============================================================================
 	
+
+{% endraw %}

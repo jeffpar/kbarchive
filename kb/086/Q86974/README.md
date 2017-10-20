@@ -6,6 +6,8 @@ permalink: /kb/086/Q86974/
 
 ## Q86974: X400: What X.400 Gateway Settings Affect X.25 Card Operation
 
+{% raw %}
+
 	Article: Q86974
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/086/Q86974/
 	
 	=============================================================================
 	
+
+{% endraw %}

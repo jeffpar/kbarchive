@@ -6,6 +6,8 @@ permalink: /kb/243/Q243424/
 
 ## Q243424: FILE: Create and Compare Snapshots of Any Directory with FileImg
 
+{% raw %}
+
 	Article: Q243424
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98; winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/243/Q243424/
 	
 	=============================================================================
 	
+
+{% endraw %}

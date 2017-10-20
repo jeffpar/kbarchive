@@ -6,6 +6,8 @@ permalink: /kb/195/Q195281/
 
 ## Q195281: Official Internet Explorer 4 Book Comments and Corrections
 
+{% raw %}
+
 	Article: Q195281
 	Product(s): Microsoft Press
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/195/Q195281/
 	
 	=============================================================================
 	
+
+{% endraw %}

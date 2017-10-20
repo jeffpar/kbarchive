@@ -6,6 +6,8 @@ permalink: /kb/067/Q67063/
 
 ## Q67063: Inserting Right Justified Text in a Menu in Windows
 
+{% raw %}
+
 	Article: Q67063
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -51,3 +53,5 @@ permalink: /kb/067/Q67063/
 	
 	=============================================================================
 	
+
+{% endraw %}

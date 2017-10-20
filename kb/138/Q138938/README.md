@@ -6,6 +6,8 @@ permalink: /kb/138/Q138938/
 
 ## Q138938: PRB: PUTFILE() Ignores File Extension Parameter
 
+{% raw %}
+
 	Article: Q138938
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/138/Q138938/
 	
 	=============================================================================
 	
+
+{% endraw %}

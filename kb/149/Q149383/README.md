@@ -6,6 +6,8 @@ permalink: /kb/149/Q149383/
 
 ## Q149383: HOWTO: Check for Changed Record in Grid &amp; Prompt User to Save
 
+{% raw %}
+
 	Article: Q149383
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/149/Q149383/
 	
 	=============================================================================
 	
+
+{% endraw %}

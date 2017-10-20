@@ -6,6 +6,8 @@ permalink: /kb/099/Q99859/
 
 ## Q99859: Windows for Workgroups: Avoiding Hardware Conflicts
 
+{% raw %}
+
 	Article: Q99859
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -186,3 +188,5 @@ permalink: /kb/099/Q99859/
 	
 	=============================================================================
 	
+
+{% endraw %}

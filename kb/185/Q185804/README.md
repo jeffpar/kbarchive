@@ -6,6 +6,8 @@ permalink: /kb/185/Q185804/
 
 ## Q185804: SMSINST: Adding to the System Path Using SMS Installer
 
+{% raw %}
+
 	Article: Q185804
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -90,3 +92,5 @@ permalink: /kb/185/Q185804/
 	
 	=============================================================================
 	
+
+{% endraw %}

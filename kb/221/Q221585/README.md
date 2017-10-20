@@ -6,6 +6,8 @@ permalink: /kb/221/Q221585/
 
 ## Q221585: FIX: C1001 - Internal Compiler Error on String Default Argument
 
+{% raw %}
+
 	Article: Q221585
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0sp3
@@ -84,3 +86,5 @@ permalink: /kb/221/Q221585/
 	
 	=============================================================================
 	
+
+{% endraw %}

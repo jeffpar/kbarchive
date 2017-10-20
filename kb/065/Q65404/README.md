@@ -6,6 +6,8 @@ permalink: /kb/065/Q65404/
 
 ## Q65404: Solve BASIC 6.0 &quot;Unresolved External&quot; with OS/2's DOSCALLS.LIB
 
+{% raw %}
+
 	Article: Q65404
 	Product(s): See article
 	Version(s): 6.00 6.00b
@@ -41,3 +43,5 @@ permalink: /kb/065/Q65404/
 	provides support for all API functions, so linking with the OS/2
 	version of DOSCALLS.LIB should never be necessary in BASIC PDS 7.00
 	and 7.10.
+
+{% endraw %}

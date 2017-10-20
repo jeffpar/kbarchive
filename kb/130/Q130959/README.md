@@ -6,6 +6,8 @@ permalink: /kb/130/Q130959/
 
 ## Q130959: Windows NT Setup Cannot Install PCMCIA SCSI Controller
 
+{% raw %}
+
 	Article: Q130959
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130959/
 	
 	=============================================================================
 	
+
+{% endraw %}

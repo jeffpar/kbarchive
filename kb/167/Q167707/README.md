@@ -6,6 +6,8 @@ permalink: /kb/167/Q167707/
 
 ## Q167707: PRB: Visual Basic Replaces Missing Controls with PictureBoxes
 
+{% raw %}
+
 	Article: Q167707
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/167/Q167707/
 	
 	=============================================================================
 	
+
+{% endraw %}

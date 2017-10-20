@@ -6,6 +6,8 @@ permalink: /kb/271/Q271630/
 
 ## Q271630: Encarta 2001: Quick Define Does Not Work as Expected
 
+{% raw %}
+
 	Article: Q271630
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/271/Q271630/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190718/
 
 ## Q190718: WD97: Invalid Page Fault in Module Unknown Opening HTML Document
 
+{% raw %}
+
 	Article: Q190718
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:4.0,4.01,97
@@ -91,3 +93,5 @@ permalink: /kb/190/Q190718/
 	
 	=============================================================================
 	
+
+{% endraw %}

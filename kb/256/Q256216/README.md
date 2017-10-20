@@ -6,6 +6,8 @@ permalink: /kb/256/Q256216/
 
 ## Q256216: Relational Wildcard Queries Return Unexpected Results
 
+{% raw %}
+
 	Article: Q256216
 	Product(s): Internet Information Server
 	Version(s): 2.0,2000,3.0
@@ -130,3 +132,5 @@ permalink: /kb/256/Q256216/
 	
 	=============================================================================
 	
+
+{% endraw %}

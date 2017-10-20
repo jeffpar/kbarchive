@@ -6,6 +6,8 @@ permalink: /kb/085/Q85706/
 
 ## Q85706: Calendar Displays a Maximum of 14 Lines in Daily Schedule
 
+{% raw %}
+
 	Article: Q85706
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/085/Q85706/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235677/
 
 ## Q235677: FTP Client Hangs with Temporary Network or FTP Server Problem
 
+{% raw %}
+
 	Article: Q235677
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/235/Q235677/
 	
 	=============================================================================
 	
+
+{% endraw %}

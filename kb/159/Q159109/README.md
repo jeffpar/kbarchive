@@ -6,6 +6,8 @@ permalink: /kb/159/Q159109/
 
 ## Q159109: ExitWindowsEx Does Not Work With NEC Power Switch Service
 
+{% raw %}
+
 	Article: Q159109
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/159/Q159109/
 	
 	=============================================================================
 	
+
+{% endraw %}

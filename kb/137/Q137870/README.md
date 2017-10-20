@@ -6,6 +6,8 @@ permalink: /kb/137/Q137870/
 
 ## Q137870: New Emm386.exe Fixes Problem Receiving NMI in Protected Mode
 
+{% raw %}
+
 	Article: Q137870
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/137/Q137870/
 	
 	=============================================================================
 	
+
+{% endraw %}

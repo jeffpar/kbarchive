@@ -6,6 +6,8 @@ permalink: /kb/185/Q185402/
 
 ## Q185402: WD97: Calculation in Form Field Shows Wrong Result
 
+{% raw %}
+
 	Article: Q185402
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -120,7 +122,7 @@ permalink: /kb/185/Q185402/
 	  (=) field. Include the space that follows this field in your selection. The
 	  selection should resemble the following example:
 	
-	        { FORMTEXT {=Text1} }
+	        { FORMTEXT {=Text1}}
 	        ^                   ^
 	        |                   |
 	        Start of            End of
@@ -147,11 +149,11 @@ permalink: /kb/185/Q185402/
 	
 	For example, change this calculation
 	
-	  {FORMTEXT {=Text1 + Text2} }
+	  {FORMTEXT {=Text1 + Text2}}
 	
 	to the following
 	
-	  {FORMTEXT {=A1 + A2} }
+	  {FORMTEXT {=A1 + A2}}
 	
 	where the Text1 bookmark is in table cell A1 and the Text2 bookmark is in table
 	cell A2.
@@ -173,3 +175,5 @@ permalink: /kb/185/Q185402/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242587/
 
 ## Q242587: Narrow Font When Printing from Access with Japanese Windows NT
 
+{% raw %}
+
 	Article: Q242587
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -84,3 +86,5 @@ permalink: /kb/242/Q242587/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/092/Q92359/
 
 ## Q92359: INFO: Using the FoxPro LOOKUP() Function
 
+{% raw %}
+
 	Article: Q92359
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0,5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/092/Q92359/
 	
 	=============================================================================
 	
+
+{% endraw %}

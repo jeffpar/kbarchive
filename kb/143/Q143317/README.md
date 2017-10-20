@@ -6,6 +6,8 @@ permalink: /kb/143/Q143317/
 
 ## Q143317: Unconf: Jazz Sound Card And Haunted House
 
+{% raw %}
+
 	Article: Q143317
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -90,3 +92,5 @@ permalink: /kb/143/Q143317/
 	
 	=============================================================================
 	
+
+{% endraw %}

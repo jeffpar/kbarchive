@@ -6,6 +6,8 @@ permalink: /kb/196/Q196556/
 
 ## Q196556: WD97: Text Won't Wrap Around Frame or Text Box in Header/Footer
 
+{% raw %}
+
 	Article: Q196556
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/196/Q196556/
 	
 	=============================================================================
 	
+
+{% endraw %}

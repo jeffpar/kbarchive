@@ -6,6 +6,8 @@ permalink: /kb/260/Q260883/
 
 ## Q260883: Word 2000 Step by Step Courseware Instructor Guide Comments and
 
+{% raw %}
+
 	Article: Q260883
 	Product(s): Microsoft Press
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/260/Q260883/
 	
 	=============================================================================
 	
+
+{% endraw %}

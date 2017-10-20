@@ -6,6 +6,8 @@ permalink: /kb/153/Q153198/
 
 ## Q153198: Encarta 96 ErrMsg: Setup Tried to Create an Invalid Path
 
+{% raw %}
+
 	Article: Q153198
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153198/
 	
 	=============================================================================
 	
+
+{% endraw %}

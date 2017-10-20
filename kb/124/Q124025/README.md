@@ -6,6 +6,8 @@ permalink: /kb/124/Q124025/
 
 ## Q124025: BUG: Context Sensitve Help Fails in Table Structure Dialog
 
+{% raw %}
+
 	Article: Q124025
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -72,3 +74,5 @@ permalink: /kb/124/Q124025/
 	
 	=============================================================================
 	
+
+{% endraw %}

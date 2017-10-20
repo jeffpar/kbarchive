@@ -6,6 +6,8 @@ permalink: /kb/137/Q137961/
 
 ## Q137961: Bookshelf: F10 Function Key Disabled with QuickShelf
 
+{% raw %}
+
 	Article: Q137961
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11; :1995 edition
@@ -53,3 +55,5 @@ permalink: /kb/137/Q137961/
 	
 	=============================================================================
 	
+
+{% endraw %}

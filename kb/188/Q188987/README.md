@@ -6,6 +6,8 @@ permalink: /kb/188/Q188987/
 
 ## Q188987: HOWTO: Determine the Operating System Build Number
 
+{% raw %}
+
 	Article: Q188987
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -124,3 +126,5 @@ permalink: /kb/188/Q188987/
 	
 	=============================================================================
 	
+
+{% endraw %}

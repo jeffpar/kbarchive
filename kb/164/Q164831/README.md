@@ -6,6 +6,8 @@ permalink: /kb/164/Q164831/
 
 ## Q164831: WD97: Using CTRL+DELETE with Track Changes Deletes Two Words
 
+{% raw %}
+
 	Article: Q164831
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/164/Q164831/
 	
 	=============================================================================
 	
+
+{% endraw %}

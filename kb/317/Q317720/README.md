@@ -6,6 +6,8 @@ permalink: /kb/317/Q317720/
 
 ## Q317720: FIX: GetFldState Indicates Record Is Appended After TRANSACTION
 
+{% raw %}
+
 	Article: Q317720
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -169,3 +171,5 @@ permalink: /kb/317/Q317720/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149014/
 
 ## Q149014: Unable to Run NETADMIN.EXE or NWADMIN.EXE
 
+{% raw %}
+
 	Article: Q149014
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149014/
 	
 	=============================================================================
 	
+
+{% endraw %}

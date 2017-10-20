@@ -6,6 +6,8 @@ permalink: /kb/121/Q121782/
 
 ## Q121782: ADT2: Setup Wizard Cannot Find VSHARE.386 with Windows NT
 
+{% raw %}
+
 	Article: Q121782
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -75,3 +77,5 @@ permalink: /kb/121/Q121782/
 	
 	=============================================================================
 	
+
+{% endraw %}

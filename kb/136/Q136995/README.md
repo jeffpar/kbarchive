@@ -6,6 +6,8 @@ permalink: /kb/136/Q136995/
 
 ## Q136995: How the Visual FoxPro Setup Wizard Compresses Large Files
 
+{% raw %}
+
 	Article: Q136995
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -105,3 +107,5 @@ permalink: /kb/136/Q136995/
 	
 	=============================================================================
 	
+
+{% endraw %}

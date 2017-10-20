@@ -6,6 +6,8 @@ permalink: /kb/130/Q130937/
 
 ## Q130937: Manual Installation of INVWIN32 on Windows NT Workstation
 
+{% raw %}
+
 	Article: Q130937
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -69,3 +71,5 @@ permalink: /kb/130/Q130937/
 	
 	=============================================================================
 	
+
+{% endraw %}

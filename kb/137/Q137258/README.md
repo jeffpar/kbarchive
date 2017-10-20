@@ -6,6 +6,8 @@ permalink: /kb/137/Q137258/
 
 ## Q137258: Writer/Artist: How to Install to Run from a Network File Server
 
+{% raw %}
+
 	Article: Q137258
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1
@@ -90,3 +92,5 @@ permalink: /kb/137/Q137258/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172801/
 
 ## Q172801: TN3270 Client Session Lost Using PF Keys to Toggle Screens
 
+{% raw %}
+
 	Article: Q172801
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -82,3 +84,5 @@ permalink: /kb/172/Q172801/
 	
 	=============================================================================
 	
+
+{% endraw %}

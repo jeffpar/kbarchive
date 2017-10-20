@@ -6,6 +6,8 @@ permalink: /kb/119/Q119555/
 
 ## Q119555: PC Adm: Notice 56 Error Deleting User Address in POL
 
+{% raw %}
+
 	Article: Q119555
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -89,3 +91,5 @@ permalink: /kb/119/Q119555/
 	
 	=============================================================================
 	
+
+{% endraw %}

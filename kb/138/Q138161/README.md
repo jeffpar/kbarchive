@@ -6,6 +6,8 @@ permalink: /kb/138/Q138161/
 
 ## Q138161: NBIPX: Broadcast Datagrams Should Contain Destination Field
 
+{% raw %}
+
 	Article: Q138161
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.50,3.51
@@ -78,3 +80,5 @@ permalink: /kb/138/Q138161/
 	
 	=============================================================================
 	
+
+{% endraw %}

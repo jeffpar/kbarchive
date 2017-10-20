@@ -6,6 +6,8 @@ permalink: /kb/189/Q189410/
 
 ## Q189410: HOWTO: Enable or Disable Connection Pooling in IIS 4.0
 
+{% raw %}
+
 	Article: Q189410
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/189/Q189410/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165670/
 
 ## Q165670: NetScape Navigator Hangs Connecting to Secure IIS Server
 
+{% raw %}
+
 	Article: Q165670
 	Product(s): Internet Information Server
 	Version(s): Winnt:2.0,3.0
@@ -50,3 +52,5 @@ permalink: /kb/165/Q165670/
 	
 	=============================================================================
 	
+
+{% endraw %}

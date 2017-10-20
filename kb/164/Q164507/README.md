@@ -6,6 +6,8 @@ permalink: /kb/164/Q164507/
 
 ## Q164507: Any User Can Log on to FTP Server with Disabled Anonymous Logon
 
+{% raw %}
+
 	Article: Q164507
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/164/Q164507/
 	
 	=============================================================================
 	
+
+{% endraw %}

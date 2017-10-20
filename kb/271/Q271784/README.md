@@ -6,6 +6,8 @@ permalink: /kb/271/Q271784/
 
 ## Q271784: IBM SDLC Link Service Fails Under Windows 2000
 
+{% raw %}
+
 	Article: Q271784
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/271/Q271784/
 	
 	=============================================================================
 	
+
+{% endraw %}

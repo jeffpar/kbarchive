@@ -6,6 +6,8 @@ permalink: /kb/029/Q29547/
 
 ## Q29547: DOCERR: Initiating DDE Conversation w/ Instance of Win Excel
 
+{% raw %}
+
 	Article: Q29547
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -73,3 +75,5 @@ permalink: /kb/029/Q29547/
 	
 	=============================================================================
 	
+
+{% endraw %}

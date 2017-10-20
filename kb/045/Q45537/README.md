@@ -6,6 +6,8 @@ permalink: /kb/045/Q45537/
 
 ## Q45537: Only 20 Locals May Be Viewed Simultaneously
 
+{% raw %}
+
 	Article: Q45537
 	Product(s): See article
 	Version(s): 2.00
@@ -23,3 +25,5 @@ permalink: /kb/045/Q45537/
 	locals window may be edited directly. Delete a line that contains a
 	variable that is not wanted, insert a new line, and type the name of
 	the variable desired directly into the locals window.
+
+{% endraw %}

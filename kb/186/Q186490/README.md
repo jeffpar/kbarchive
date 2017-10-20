@@ -6,6 +6,8 @@ permalink: /kb/186/Q186490/
 
 ## Q186490: Terminal Server's Use of &quot;Access This Computer From Network&quot;
 
+{% raw %}
+
 	Article: Q186490
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/186/Q186490/
 	
 	=============================================================================
 	
+
+{% endraw %}

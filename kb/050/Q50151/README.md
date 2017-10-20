@@ -6,6 +6,8 @@ permalink: /kb/050/Q50151/
 
 ## Q50151: Mac Srv: Out-of-Memory Error When Loading Mail Server
 
+{% raw %}
+
 	Article: Q50151
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -57,3 +59,5 @@ permalink: /kb/050/Q50151/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/260/Q260193/
 
 ## Q260193: XADM: Mailbox Resources Displays the Wrong Display Name
 
+{% raw %}
+
 	Article: Q260193
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/260/Q260193/
 	
 	=============================================================================
 	
+
+{% endraw %}

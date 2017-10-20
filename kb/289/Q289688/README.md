@@ -6,6 +6,8 @@ permalink: /kb/289/Q289688/
 
 ## Q289688: WINS Settings Are Missing on VPN Client
 
+{% raw %}
+
 	Article: Q289688
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/289/Q289688/
 	
 	=============================================================================
 	
+
+{% endraw %}

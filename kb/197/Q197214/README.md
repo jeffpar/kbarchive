@@ -6,6 +6,8 @@ permalink: /kb/197/Q197214/
 
 ## Q197214: WD97:Creating Template with First Page or Odd/Even Header/Footer
 
+{% raw %}
+
 	Article: Q197214
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -228,3 +230,5 @@ permalink: /kb/197/Q197214/
 	
 	=============================================================================
 	
+
+{% endraw %}

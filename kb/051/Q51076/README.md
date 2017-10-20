@@ -6,6 +6,8 @@ permalink: /kb/051/Q51076/
 
 ## Q51076: PE Option in OPEN COM Statement Enables Parity Checking
 
+{% raw %}
+
 	Article: Q51076
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -60,3 +62,5 @@ permalink: /kb/051/Q51076/
 	2.00, 2.01, 3.00, 4.00, 4.00b, 4.50, to Microsoft BASIC Compiler
 	Versions 6.00 and 6.00b for MS-DOS, and to Microsoft BASIC PDS Version
 	7.00 for MS-DOS.
+
+{% endraw %}

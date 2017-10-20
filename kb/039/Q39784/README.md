@@ -6,6 +6,8 @@ permalink: /kb/039/Q39784/
 
 ## Q39784: &quot;D&quot; Incorrectly Defined as a printf/scanf Format Specifier
 
+{% raw %}
+
 	Article: Q39784
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -18,3 +20,5 @@ permalink: /kb/039/Q39784/
 	printf/scanf format specifier representing a signed long-decimal
 	integer. The printf/scanf format specifier for a long-decimal integer
 	is "ld". Using %D will print/return garbage characters.
+
+{% endraw %}

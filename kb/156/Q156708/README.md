@@ -6,6 +6,8 @@ permalink: /kb/156/Q156708/
 
 ## Q156708: XADM: Rule Forces CPU Usage Above 90%, Stops Message Delivery
 
+{% raw %}
+
 	Article: Q156708
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156708/
 	
 	=============================================================================
 	
+
+{% endraw %}

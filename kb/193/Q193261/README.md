@@ -6,6 +6,8 @@ permalink: /kb/193/Q193261/
 
 ## Q193261: BUG: Error 458 Using For Each with Variant Array of UDTs
 
+{% raw %}
+
 	Article: Q193261
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -86,3 +88,5 @@ permalink: /kb/193/Q193261/
 	
 	=============================================================================
 	
+
+{% endraw %}

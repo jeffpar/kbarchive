@@ -6,6 +6,8 @@ permalink: /kb/129/Q129311/
 
 ## Q129311: Visual FoxPro Has 3 New SYS Functions Related to Memory
 
+{% raw %}
+
 	Article: Q129311
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/129/Q129311/
 	
 	=============================================================================
 	
+
+{% endraw %}

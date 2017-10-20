@@ -6,6 +6,8 @@ permalink: /kb/171/Q171504/
 
 ## Q171504: FIX: Problems Setting PropertyPage Caption Property
 
+{% raw %}
+
 	Article: Q171504
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -113,3 +115,5 @@ permalink: /kb/171/Q171504/
 	
 	=============================================================================
 	
+
+{% endraw %}

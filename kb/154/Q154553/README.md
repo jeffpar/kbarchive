@@ -6,6 +6,8 @@ permalink: /kb/154/Q154553/
 
 ## Q154553: Windows NT 4.0 DNS WINS Reverse Lookups Do Not Use WINS
 
+{% raw %}
+
 	Article: Q154553
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/154/Q154553/
 	
 	=============================================================================
 	
+
+{% endraw %}

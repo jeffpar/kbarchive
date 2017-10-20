@@ -6,6 +6,8 @@ permalink: /kb/136/Q136603/
 
 ## Q136603: PPT7: Patch to Correct PowerPoint 7.0a Screen Redraw Problem
 
+{% raw %}
+
 	Article: Q136603
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0a
@@ -177,3 +179,5 @@ permalink: /kb/136/Q136603/
 	
 	=============================================================================
 	
+
+{% endraw %}

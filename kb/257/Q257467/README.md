@@ -6,6 +6,8 @@ permalink: /kb/257/Q257467/
 
 ## Q257467: HOWTO: Remove FTM Code Added by ATL Object Wizard
 
+{% raw %}
+
 	Article: Q257467
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -102,3 +104,5 @@ permalink: /kb/257/Q257467/
 	
 	=============================================================================
 	
+
+{% endraw %}

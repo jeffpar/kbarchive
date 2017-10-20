@@ -6,6 +6,8 @@ permalink: /kb/251/Q251149/
 
 ## Q251149: XIMS: Guest Account Allows Relaying with Routing Restrictions
 
+{% raw %}
+
 	Article: Q251149
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -54,3 +56,5 @@ permalink: /kb/251/Q251149/
 	
 	=============================================================================
 	
+
+{% endraw %}

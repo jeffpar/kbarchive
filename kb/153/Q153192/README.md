@@ -6,6 +6,8 @@ permalink: /kb/153/Q153192/
 
 ## Q153192: IIS Queries Against Oracle Datasource Cause Access Violations
 
+{% raw %}
+
 	Article: Q153192
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0
@@ -50,3 +52,5 @@ permalink: /kb/153/Q153192/
 	
 	=============================================================================
 	
+
+{% endraw %}

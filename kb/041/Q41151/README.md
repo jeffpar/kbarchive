@@ -6,6 +6,8 @@ permalink: /kb/041/Q41151/
 
 ## Q41151: Function KEY Strings Retained After CHAIN in QuickBASIC 4.x
 
+{% raw %}
+
 	Article: Q41151
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/041/Q41151/
 	INPUT "Press any function key F1 - F10 and hit RETURN",X$
 	PRINT "End of programs."
 	END
+
+{% endraw %}

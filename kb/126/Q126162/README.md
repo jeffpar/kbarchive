@@ -6,6 +6,8 @@ permalink: /kb/126/Q126162/
 
 ## Q126162: PC Win: Err Msg: This Name Has Already Been Assigned...
 
+{% raw %}
+
 	Article: Q126162
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -60,3 +62,5 @@ permalink: /kb/126/Q126162/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136034/
 
 ## Q136034: Updated MODEM.INF Available For Megahertz Modems
 
+{% raw %}
+
 	Article: Q136034
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -73,3 +75,5 @@ permalink: /kb/136/Q136034/
 	
 	=============================================================================
 	
+
+{% endraw %}

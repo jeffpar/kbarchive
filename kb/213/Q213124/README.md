@@ -6,6 +6,8 @@ permalink: /kb/213/Q213124/
 
 ## Q213124: SMS: Clients Hang After Installation of Hardware Inventory Agent
 
+{% raw %}
+
 	Article: Q213124
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/213/Q213124/
 	
 	=============================================================================
 	
+
+{% endraw %}

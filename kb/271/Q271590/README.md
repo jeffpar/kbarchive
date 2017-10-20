@@ -6,6 +6,8 @@ permalink: /kb/271/Q271590/
 
 ## Q271590: XFOR: Excalcon Stops Working When Notes Server Upgraded to 5.02c
 
+{% raw %}
+
 	Article: Q271590
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -85,3 +87,5 @@ permalink: /kb/271/Q271590/
 	
 	=============================================================================
 	
+
+{% endraw %}

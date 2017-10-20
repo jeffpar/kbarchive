@@ -6,6 +6,8 @@ permalink: /kb/148/Q148740/
 
 ## Q148740: PRB: Invalid Page Fault in Kernel32.dll Error
 
+{% raw %}
+
 	Article: Q148740
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/148/Q148740/
 	
 	=============================================================================
 	
+
+{% endraw %}

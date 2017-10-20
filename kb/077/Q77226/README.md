@@ -6,6 +6,8 @@ permalink: /kb/077/Q77226/
 
 ## Q77226: Memory Access Methods for Protected Mode Applications
 
+{% raw %}
+
 	Article: Q77226
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -99,3 +101,5 @@ permalink: /kb/077/Q77226/
 	
 	=============================================================================
 	
+
+{% endraw %}

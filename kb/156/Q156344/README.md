@@ -6,6 +6,8 @@ permalink: /kb/156/Q156344/
 
 ## Q156344: Plug and Play Devices Not Detected or Installed
 
+{% raw %}
+
 	Article: Q156344
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/156/Q156344/
 	
 	=============================================================================
 	
+
+{% endraw %}

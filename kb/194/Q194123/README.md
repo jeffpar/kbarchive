@@ -6,6 +6,8 @@ permalink: /kb/194/Q194123/
 
 ## Q194123: XADM: KMS Enrollment Messages Stay in System Attendant Mailbox
 
+{% raw %}
+
 	Article: Q194123
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/194/Q194123/
 	
 	=============================================================================
 	
+
+{% endraw %}

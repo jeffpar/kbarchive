@@ -6,6 +6,8 @@ permalink: /kb/182/Q182033/
 
 ## Q182033: HOWTO: Use BeforeNavigate2 in VB to Get an Event from HTML
 
+{% raw %}
+
 	Article: Q182033
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -102,3 +104,5 @@ permalink: /kb/182/Q182033/
 	
 	=============================================================================
 	
+
+{% endraw %}

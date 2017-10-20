@@ -6,6 +6,8 @@ permalink: /kb/106/Q106729/
 
 ## Q106729: FIX: EOF and BACKSPACE Cause GP Fault When the Unit Isn't Open
 
+{% raw %}
+
 	Article: Q106729
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -85,3 +87,5 @@ permalink: /kb/106/Q106729/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185900/
 
 ## Q185900: Configuring SNA Server and Exchange for SNADS Connectivity
 
+{% raw %}
+
 	Article: Q185900
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0
@@ -481,3 +483,5 @@ permalink: /kb/185/Q185900/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130352/
 
 ## Q130352: How to Remove Table from Persistent Relation with Program
 
+{% raw %}
+
 	Article: Q130352
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/130/Q130352/
 	
 	=============================================================================
 	
+
+{% endraw %}

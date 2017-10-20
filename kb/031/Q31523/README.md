@@ -6,6 +6,8 @@ permalink: /kb/031/Q31523/
 
 ## Q31523: MASM 5.10 EXT.DOC: DelFile - Deletes Contents of File
 
+{% raw %}
+
 	Article: Q31523
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/031/Q31523/
 	 */
 	void pascal DelFile (pFile)
 	PFILE pFile;
+
+{% endraw %}

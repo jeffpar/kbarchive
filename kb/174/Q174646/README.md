@@ -6,6 +6,8 @@ permalink: /kb/174/Q174646/
 
 ## Q174646: SNA Server Access Violation in snaservr!s1pufnty()
 
+{% raw %}
+
 	Article: Q174646
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -121,3 +123,5 @@ permalink: /kb/174/Q174646/
 	
 	=============================================================================
 	
+
+{% endraw %}

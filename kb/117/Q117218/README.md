@@ -6,6 +6,8 @@ permalink: /kb/117/Q117218/
 
 ## Q117218: How to Return the Maximum Value in a Database Field
 
+{% raw %}
+
 	Article: Q117218
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c; MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -151,3 +153,5 @@ permalink: /kb/117/Q117218/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193021/
 
 ## Q193021: BUG: SSTab Focus Given to a Control on a Non-Visible Tab
 
+{% raw %}
+
 	Article: Q193021
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -108,3 +110,5 @@ permalink: /kb/193/Q193021/
 	
 	=============================================================================
 	
+
+{% endraw %}

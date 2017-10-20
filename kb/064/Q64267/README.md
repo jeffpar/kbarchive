@@ -6,6 +6,8 @@ permalink: /kb/064/Q64267/
 
 ## Q64267: Adobe Soft Fonts, Word for Windows, and Windows 3.0
 
+{% raw %}
+
 	Article: Q64267
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -63,3 +65,5 @@ permalink: /kb/064/Q64267/
 	
 	=============================================================================
 	
+
+{% endraw %}

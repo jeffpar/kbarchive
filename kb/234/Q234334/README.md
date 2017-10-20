@@ -6,6 +6,8 @@ permalink: /kb/234/Q234334/
 
 ## Q234334: SMSINST: System32 Directory Remains Open After User Login
 
+{% raw %}
+
 	Article: Q234334
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -82,3 +84,5 @@ permalink: /kb/234/Q234334/
 	
 	=============================================================================
 	
+
+{% endraw %}

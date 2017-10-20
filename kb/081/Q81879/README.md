@@ -6,6 +6,8 @@ permalink: /kb/081/Q81879/
 
 ## Q81879: BUG: BIND Error U1253 Opening DOSCALLS.LIB
 
+{% raw %}
+
 	Article: Q81879
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -66,3 +68,5 @@ permalink: /kb/081/Q81879/
 	
 	=============================================================================
 	
+
+{% endraw %}

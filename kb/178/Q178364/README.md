@@ -6,6 +6,8 @@ permalink: /kb/178/Q178364/
 
 ## Q178364: Macintosh Clients See Files on WinNT Server Constantly Moving
 
+{% raw %}
+
 	Article: Q178364
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -127,3 +129,5 @@ permalink: /kb/178/Q178364/
 	
 	=============================================================================
 	
+
+{% endraw %}

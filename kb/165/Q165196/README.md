@@ -6,6 +6,8 @@ permalink: /kb/165/Q165196/
 
 ## Q165196: XCLN: Exchange Client Slow to Start When WSP Client Enabled
 
+{% raw %}
+
 	Article: Q165196
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -43,3 +45,5 @@ permalink: /kb/165/Q165196/
 	
 	=============================================================================
 	
+
+{% endraw %}

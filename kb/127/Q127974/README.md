@@ -6,6 +6,8 @@ permalink: /kb/127/Q127974/
 
 ## Q127974: ADT/ODE: Error Msg: Could Not Open the File Named &lt;File Name&gt;
 
+{% raw %}
+
 	Article: Q127974
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0,7.0,97
@@ -115,3 +117,5 @@ permalink: /kb/127/Q127974/
 	
 	=============================================================================
 	
+
+{% endraw %}

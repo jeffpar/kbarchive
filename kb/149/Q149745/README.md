@@ -6,6 +6,8 @@ permalink: /kb/149/Q149745/
 
 ## Q149745: XCLN: Dr. Watson Crash When Windows NT Client is Installed
 
+{% raw %}
+
 	Article: Q149745
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/149/Q149745/
 	
 	=============================================================================
 	
+
+{% endraw %}

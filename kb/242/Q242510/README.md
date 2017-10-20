@@ -6,6 +6,8 @@ permalink: /kb/242/Q242510/
 
 ## Q242510: Calling SetEntriesInAcl() Function Generates Error Message 87
 
+{% raw %}
+
 	Article: Q242510
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -88,3 +90,5 @@ permalink: /kb/242/Q242510/
 	
 	=============================================================================
 	
+
+{% endraw %}

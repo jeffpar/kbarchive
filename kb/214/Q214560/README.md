@@ -6,6 +6,8 @@ permalink: /kb/214/Q214560/
 
 ## Q214560: FIX: Installing Newer MSDN Causes Help to Malfunction
 
+{% raw %}
+
 	Article: Q214560
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -129,3 +131,5 @@ permalink: /kb/214/Q214560/
 	
 	=============================================================================
 	
+
+{% endraw %}

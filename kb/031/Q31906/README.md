@@ -6,6 +6,8 @@ permalink: /kb/031/Q31906/
 
 ## Q31906: Booting from Other DOS Partitions
 
+{% raw %}
+
 	Article: Q31906
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,6.0,6.2,6.21,6.22
@@ -63,3 +65,5 @@ permalink: /kb/031/Q31906/
 	
 	=============================================================================
 	
+
+{% endraw %}

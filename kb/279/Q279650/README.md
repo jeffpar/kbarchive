@@ -6,6 +6,8 @@ permalink: /kb/279/Q279650/
 
 ## Q279650: Microsoft Casino: Dealer Incorrectly States Two of a Kind
 
+{% raw %}
+
 	Article: Q279650
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/279/Q279650/
 	
 	=============================================================================
 	
+
+{% endraw %}

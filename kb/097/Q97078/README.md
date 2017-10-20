@@ -6,6 +6,8 @@ permalink: /kb/097/Q97078/
 
 ## Q97078: PC WRmt: New MMF Created in Apparently Incorrect Location
 
+{% raw %}
+
 	Article: Q97078
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -74,3 +76,5 @@ permalink: /kb/097/Q97078/
 	
 	=============================================================================
 	
+
+{% endraw %}

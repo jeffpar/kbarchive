@@ -6,6 +6,8 @@ permalink: /kb/270/Q270824/
 
 ## Q270824: ELL: Black Background, Unable to Read Text in Text Boxes
 
+{% raw %}
+
 	Article: Q270824
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/270/Q270824/
 	
 	=============================================================================
 	
+
+{% endraw %}

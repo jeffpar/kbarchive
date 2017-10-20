@@ -6,6 +6,8 @@ permalink: /kb/156/Q156689/
 
 ## Q156689: How to Change Print Job Priority in Windows NT Server 4.0
 
+{% raw %}
+
 	Article: Q156689
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/156/Q156689/
 	
 	=============================================================================
 	
+
+{% endraw %}

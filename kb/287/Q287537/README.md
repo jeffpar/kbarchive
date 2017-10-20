@@ -6,6 +6,8 @@ permalink: /kb/287/Q287537/
 
 ## Q287537: Using Basic Authentication to Generate Kerberos Tokens
 
+{% raw %}
+
 	Article: Q287537
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -122,3 +124,5 @@ permalink: /kb/287/Q287537/
 	
 	=============================================================================
 	
+
+{% endraw %}

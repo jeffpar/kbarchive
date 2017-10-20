@@ -6,6 +6,8 @@ permalink: /kb/111/Q111011/
 
 ## Q111011: Changing the Style of the Main Window
 
+{% raw %}
+
 	Article: Q111011
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -161,3 +163,5 @@ permalink: /kb/111/Q111011/
 	
 	=============================================================================
 	
+
+{% endraw %}

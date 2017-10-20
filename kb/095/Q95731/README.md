@@ -6,6 +6,8 @@ permalink: /kb/095/Q95731/
 
 ## Q95731: PC Win: Name Finder Fails If Space Before Name
 
+{% raw %}
+
 	Article: Q95731
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -42,3 +44,5 @@ permalink: /kb/095/Q95731/
 	
 	=============================================================================
 	
+
+{% endraw %}

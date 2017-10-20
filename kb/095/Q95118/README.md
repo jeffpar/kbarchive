@@ -6,6 +6,8 @@ permalink: /kb/095/Q95118/
 
 ## Q95118: Windows for Workgroups Open File Handle Limits
 
+{% raw %}
+
 	Article: Q95118
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/095/Q95118/
 	
 	=============================================================================
 	
+
+{% endraw %}

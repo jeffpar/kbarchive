@@ -6,6 +6,8 @@ permalink: /kb/162/Q162469/
 
 ## Q162469: Windows NT 4.0 SP3 Overwrites HyperTerminal Private Edition
 
+{% raw %}
+
 	Article: Q162469
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP3
@@ -61,3 +63,5 @@ permalink: /kb/162/Q162469/
 	
 	=============================================================================
 	
+
+{% endraw %}

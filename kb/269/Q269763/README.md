@@ -6,6 +6,8 @@ permalink: /kb/269/Q269763/
 
 ## Q269763: MSB in Concert: Minimum System Requirements for Windows
 
+{% raw %}
+
 	Article: Q269763
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/269/Q269763/
 	
 	=============================================================================
 	
+
+{% endraw %}

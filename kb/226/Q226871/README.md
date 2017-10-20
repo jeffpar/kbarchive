@@ -6,6 +6,8 @@ permalink: /kb/226/Q226871/
 
 ## Q226871: SMS: SWMServer Clock Displays Counter with a Negative Number
 
+{% raw %}
+
 	Article: Q226871
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/226/Q226871/
 	
 	=============================================================================
 	
+
+{% endraw %}

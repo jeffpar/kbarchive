@@ -6,6 +6,8 @@ permalink: /kb/129/Q129922/
 
 ## Q129922: BUG: Error Occurs When Stepping through BROWSE FOR UDF() Code
 
+{% raw %}
+
 	Article: Q129922
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -77,3 +79,5 @@ permalink: /kb/129/Q129922/
 	
 	=============================================================================
 	
+
+{% endraw %}

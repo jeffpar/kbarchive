@@ -6,6 +6,8 @@ permalink: /kb/068/Q68379/
 
 ## Q68379: FIX: NMAKE Filename-Parts Syntax Does Not Expand Macros
 
+{% raw %}
+
 	Article: Q68379
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.1,1.11,1.12,1.13; OS/2:1.01,1.11,1.12,1.13
@@ -65,3 +67,5 @@ permalink: /kb/068/Q68379/
 	
 	=============================================================================
 	
+
+{% endraw %}

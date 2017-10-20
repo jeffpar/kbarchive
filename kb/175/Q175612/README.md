@@ -6,6 +6,8 @@ permalink: /kb/175/Q175612/
 
 ## Q175612: BUG: Bitmap Appears Differently in General Field
 
+{% raw %}
+
 	Article: Q175612
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -112,3 +114,5 @@ permalink: /kb/175/Q175612/
 	
 	=============================================================================
 	
+
+{% endraw %}

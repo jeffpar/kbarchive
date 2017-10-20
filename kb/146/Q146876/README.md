@@ -6,6 +6,8 @@ permalink: /kb/146/Q146876/
 
 ## Q146876: PRB: DAO Error 3028 When Creating a DAO Workspace
 
+{% raw %}
+
 	Article: Q146876
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2 5.0 6.0
@@ -111,3 +113,5 @@ permalink: /kb/146/Q146876/
 	
 	=============================================================================
 	
+
+{% endraw %}

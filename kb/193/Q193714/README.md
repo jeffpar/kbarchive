@@ -6,6 +6,8 @@ permalink: /kb/193/Q193714/
 
 ## Q193714: WD97: Queries Not Available When Using Access Database
 
+{% raw %}
+
 	Article: Q193714
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -106,3 +108,5 @@ permalink: /kb/193/Q193714/
 	
 	=============================================================================
 	
+
+{% endraw %}

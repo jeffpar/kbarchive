@@ -6,6 +6,8 @@ permalink: /kb/125/Q125365/
 
 ## Q125365: PC Win: Search All Folders Does Not Search Deleted Mail Folder
 
+{% raw %}
+
 	Article: Q125365
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -37,3 +39,5 @@ permalink: /kb/125/Q125365/
 	
 	=============================================================================
 	
+
+{% endraw %}

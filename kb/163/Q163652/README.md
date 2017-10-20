@@ -6,6 +6,8 @@ permalink: /kb/163/Q163652/
 
 ## Q163652: ODE97: Error Msg: ISAM Unable to Register Itself in Custom App
 
+{% raw %}
+
 	Article: Q163652
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/163/Q163652/
 	
 	=============================================================================
 	
+
+{% endraw %}

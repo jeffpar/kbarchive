@@ -6,6 +6,8 @@ permalink: /kb/233/Q233217/
 
 ## Q233217: WD97: Error Saving Document with Subdocuments in Word 6.0/95
 
+{% raw %}
+
 	Article: Q233217
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/233/Q233217/
 	
 	=============================================================================
 	
+
+{% endraw %}

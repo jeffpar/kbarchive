@@ -6,6 +6,8 @@ permalink: /kb/146/Q146038/
 
 ## Q146038: Modifying Text of Meeting Response Message
 
+{% raw %}
+
 	Article: Q146038
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -43,3 +45,5 @@ permalink: /kb/146/Q146038/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197510/
 
 ## Q197510: FIX: Poor Performance with Forms Containing Many Objects
 
+{% raw %}
+
 	Article: Q197510
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -173,3 +175,5 @@ permalink: /kb/197/Q197510/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185733/
 
 ## Q185733: HOWTO: Limit a Window's Minimum and Maximum Size
 
+{% raw %}
+
 	Article: Q185733
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -197,3 +199,5 @@ permalink: /kb/185/Q185733/
 	
 	=============================================================================
 	
+
+{% endraw %}

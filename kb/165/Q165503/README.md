@@ -6,6 +6,8 @@ permalink: /kb/165/Q165503/
 
 ## Q165503: Description of the File System Troubleshooting Options
 
+{% raw %}
+
 	Article: Q165503
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -111,3 +113,5 @@ permalink: /kb/165/Q165503/
 	
 	=============================================================================
 	
+
+{% endraw %}

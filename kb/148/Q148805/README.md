@@ -6,6 +6,8 @@ permalink: /kb/148/Q148805/
 
 ## Q148805: FIX: CDaoTableDef CreateField Cannot Set &quot;Allow Zero Length&quot;
 
+{% raw %}
+
 	Article: Q148805
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -134,3 +136,5 @@ permalink: /kb/148/Q148805/
 	
 	=============================================================================
 	
+
+{% endraw %}

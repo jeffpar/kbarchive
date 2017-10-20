@@ -6,6 +6,8 @@ permalink: /kb/040/Q40361/
 
 ## Q40361: QuickBASIC Cursor Position Incorrect after Interlanguage Write
 
+{% raw %}
+
 	Article: Q40361
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -60,3 +62,5 @@ permalink: /kb/040/Q40361/
 	       C = 3
 	       D = 4
 	       END
+
+{% endraw %}

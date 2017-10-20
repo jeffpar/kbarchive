@@ -6,6 +6,8 @@ permalink: /kb/068/Q68296/
 
 ## Q68296: INFO: Windows 3.x Metafiles Support DeleteObject()
 
+{% raw %}
+
 	Article: Q68296
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -88,3 +90,5 @@ permalink: /kb/068/Q68296/
 	
 	=============================================================================
 	
+
+{% endraw %}

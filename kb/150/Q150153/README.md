@@ -6,6 +6,8 @@ permalink: /kb/150/Q150153/
 
 ## Q150153: RAS Error: &quot;Event 20077...The Account Is Disabled&quot;
 
+{% raw %}
+
 	Article: Q150153
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51 95
@@ -94,3 +96,5 @@ permalink: /kb/150/Q150153/
 	
 	=============================================================================
 	
+
+{% endraw %}

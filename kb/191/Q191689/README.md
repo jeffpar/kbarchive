@@ -6,6 +6,8 @@ permalink: /kb/191/Q191689/
 
 ## Q191689: Incorrect Font Characteristics May Be Used on Imported Graphics
 
+{% raw %}
+
 	Article: Q191689
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/191/Q191689/
 	
 	=============================================================================
 	
+
+{% endraw %}

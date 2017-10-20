@@ -6,6 +6,8 @@ permalink: /kb/103/Q103223/
 
 ## Q103223: Trapping System RIPs and Other Notification Messages
 
+{% raw %}
+
 	Article: Q103223
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -78,3 +80,5 @@ permalink: /kb/103/Q103223/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160070/
 
 ## Q160070: WD97: Symbol Dialog Different from Previous Versions
 
+{% raw %}
+
 	Article: Q160070
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -109,3 +111,5 @@ permalink: /kb/160/Q160070/
 	
 	=============================================================================
 	
+
+{% endraw %}

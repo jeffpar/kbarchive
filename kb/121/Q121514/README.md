@@ -6,6 +6,8 @@ permalink: /kb/121/Q121514/
 
 ## Q121514: Renaming File in File Manager Appears to the Delete File
 
+{% raw %}
+
 	Article: Q121514
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121514/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89806/
 
 ## Q89806: Cinemania 1992: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q89806
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition
@@ -72,3 +74,5 @@ permalink: /kb/089/Q89806/
 	
 	=============================================================================
 	
+
+{% endraw %}

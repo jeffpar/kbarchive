@@ -6,6 +6,8 @@ permalink: /kb/037/Q37507/
 
 ## Q37507: PRB: &quot;Floating-point Support Not Loaded&quot; Error with scanf()
 
+{% raw %}
+
 	Article: Q37507
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -91,3 +93,5 @@ permalink: /kb/037/Q37507/
 	
 	=============================================================================
 	
+
+{% endraw %}

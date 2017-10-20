@@ -6,6 +6,8 @@ permalink: /kb/067/Q67269/
 
 ## Q67269: Supplemental Driver Library Printer Driver Enhancements
 
+{% raw %}
+
 	Article: Q67269
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -79,3 +81,5 @@ permalink: /kb/067/Q67269/
 	
 	=============================================================================
 	
+
+{% endraw %}

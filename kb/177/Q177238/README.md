@@ -6,6 +6,8 @@ permalink: /kb/177/Q177238/
 
 ## Q177238: HOWTO: Hyperlink in UserDocuments
 
+{% raw %}
+
 	Article: Q177238
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.02,4.0,5.0,6.0
@@ -132,3 +134,5 @@ permalink: /kb/177/Q177238/
 	
 	=============================================================================
 	
+
+{% endraw %}

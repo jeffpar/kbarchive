@@ -6,6 +6,8 @@ permalink: /kb/113/Q113119/
 
 ## Q113119: PC Ext: External 3.2 Decrements Retry Count
 
+{% raw %}
+
 	Article: Q113119
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -79,3 +81,5 @@ permalink: /kb/113/Q113119/
 	
 	=============================================================================
 	
+
+{% endraw %}

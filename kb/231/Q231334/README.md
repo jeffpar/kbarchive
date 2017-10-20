@@ -6,6 +6,8 @@ permalink: /kb/231/Q231334/
 
 ## Q231334: Err Msg: Unable to Connect to the Active Directory Service...
 
+{% raw %}
+
 	Article: Q231334
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -54,3 +56,5 @@ permalink: /kb/231/Q231334/
 	
 	=============================================================================
 	
+
+{% endraw %}

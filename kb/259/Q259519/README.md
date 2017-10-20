@@ -6,6 +6,8 @@ permalink: /kb/259/Q259519/
 
 ## Q259519: PRB: Image Control Invisible When Visible Property Set to True
 
+{% raw %}
+
 	Article: Q259519
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -83,3 +85,5 @@ permalink: /kb/259/Q259519/
 	
 	=============================================================================
 	
+
+{% endraw %}

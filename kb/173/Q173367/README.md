@@ -6,6 +6,8 @@ permalink: /kb/173/Q173367/
 
 ## Q173367: Non-Administrators Not Allowed Access to Change Log Settings
 
+{% raw %}
+
 	Article: Q173367
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/173/Q173367/
 	
 	=============================================================================
 	
+
+{% endraw %}

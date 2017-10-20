@@ -6,6 +6,8 @@ permalink: /kb/323/Q323551/
 
 ## Q323551: Stop 0xA Occurs on a Windows NT 4.0 WINS Server
 
+{% raw %}
+
 	Article: Q323551
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -89,3 +91,5 @@ permalink: /kb/323/Q323551/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236430/
 
 ## Q236430: Asheron's Call: Network Ports Required to Play
 
+{% raw %}
+
 	Article: Q236430
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -100,3 +102,5 @@ permalink: /kb/236/Q236430/
 	
 	=============================================================================
 	
+
+{% endraw %}

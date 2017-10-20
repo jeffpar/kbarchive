@@ -6,6 +6,8 @@ permalink: /kb/248/Q248825/
 
 ## Q248825: XADM: Subject Field Is Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q248825
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -89,3 +91,5 @@ permalink: /kb/248/Q248825/
 	
 	=============================================================================
 	
+
+{% endraw %}

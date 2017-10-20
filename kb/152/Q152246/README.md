@@ -6,6 +6,8 @@ permalink: /kb/152/Q152246/
 
 ## Q152246: Refresh Setting in Visual FoxPro Has Effect on Buffered Data
 
+{% raw %}
+
 	Article: Q152246
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0;3.0b;6.0
@@ -54,3 +56,5 @@ permalink: /kb/152/Q152246/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215059/
 
 ## Q215059: SMS: Status Messages Stop Processing and Don't Appear In Status
 
+{% raw %}
+
 	Article: Q215059
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -81,3 +83,5 @@ permalink: /kb/215/Q215059/
 	
 	=============================================================================
 	
+
+{% endraw %}

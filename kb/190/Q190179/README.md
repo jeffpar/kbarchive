@@ -6,6 +6,8 @@ permalink: /kb/190/Q190179/
 
 ## Q190179: HOWTO: Change ProgressBar Orientation at Run-Time
 
+{% raw %}
+
 	Article: Q190179
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -97,3 +99,5 @@ permalink: /kb/190/Q190179/
 	
 	=============================================================================
 	
+
+{% endraw %}

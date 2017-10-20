@@ -6,6 +6,8 @@ permalink: /kb/156/Q156104/
 
 ## Q156104: HOWTO: Hide Focus on an Active Page Tab in a Pageframe
 
+{% raw %}
+
 	Article: Q156104
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/156/Q156104/
 	
 	=============================================================================
 	
+
+{% endraw %}

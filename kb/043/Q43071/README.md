@@ -6,6 +6,8 @@ permalink: /kb/043/Q43071/
 
 ## Q43071: QuickC 2.00 Editor Err Msg: Cannot Load Binary File
 
+{% raw %}
+
 	Article: Q43071
 	Product(s): See article
 	Version(s): 2.00
@@ -37,3 +39,5 @@ permalink: /kb/043/Q43071/
 	
 	The /c option allows you to specify what ASCII character the control
 	characters will be converted to. This switch is optional.
+
+{% endraw %}

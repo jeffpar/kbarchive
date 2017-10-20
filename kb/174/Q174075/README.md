@@ -6,6 +6,8 @@ permalink: /kb/174/Q174075/
 
 ## Q174075: Strong Passwords With Passfilt.dll Are Not Enforced
 
+{% raw %}
+
 	Article: Q174075
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -43,3 +45,5 @@ permalink: /kb/174/Q174075/
 	
 	=============================================================================
 	
+
+{% endraw %}

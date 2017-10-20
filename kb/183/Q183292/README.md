@@ -6,6 +6,8 @@ permalink: /kb/183/Q183292/
 
 ## Q183292: Print Preview Frequently Causes Access Violation in Spooler
 
+{% raw %}
+
 	Article: Q183292
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/183/Q183292/
 	
 	=============================================================================
 	
+
+{% endraw %}

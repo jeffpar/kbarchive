@@ -6,6 +6,8 @@ permalink: /kb/313/Q313151/
 
 ## Q313151: COMTI TCP/IP MS Link Fails If Less Data Is Returned Than Sent
 
+{% raw %}
+
 	Article: Q313151
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3,4.0 SP4
@@ -110,3 +112,5 @@ permalink: /kb/313/Q313151/
 	
 	=============================================================================
 	
+
+{% endraw %}

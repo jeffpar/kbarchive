@@ -6,6 +6,8 @@ permalink: /kb/027/Q27300/
 
 ## Q27300: Passing BASIC Array of Fixed-Length Strings to C
 
+{% raw %}
+
 	Article: Q27300
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -76,3 +78,5 @@ permalink: /kb/027/Q27300/
 	   0         AAAAAAAAA
 	   1         BBBBBBBBB
 	   2         CCCCCCCCC
+
+{% endraw %}

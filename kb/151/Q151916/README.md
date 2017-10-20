@@ -6,6 +6,8 @@ permalink: /kb/151/Q151916/
 
 ## Q151916: MS Client 3.0:Browse List Incomplete from NET.EXE Menu
 
+{% raw %}
+
 	Article: Q151916
 	Product(s): Microsoft Windows NT
 	Version(s): 3.00
@@ -46,3 +48,5 @@ permalink: /kb/151/Q151916/
 	
 	=============================================================================
 	
+
+{% endraw %}

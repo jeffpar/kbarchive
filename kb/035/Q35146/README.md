@@ -6,6 +6,8 @@ permalink: /kb/035/Q35146/
 
 ## Q35146: QB.EXE Editor Printing Source Code to 132-Column Printers
 
+{% raw %}
+
 	Article: Q35146
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -29,3 +31,5 @@ permalink: /kb/035/Q35146/
 	Versions 6.00 and 6.00b for MS-DOS and MS OS/2, and to the QBX.EXE
 	editor that comes with Microsoft BASIC PDS Version 7.00 for MS-DOS and
 	MS OS/2.
+
+{% endraw %}

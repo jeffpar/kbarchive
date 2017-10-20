@@ -6,6 +6,8 @@ permalink: /kb/099/Q99581/
 
 ## Q99581: Mac Adm: Incorrect Country Code May Be Displayed
 
+{% raw %}
+
 	Article: Q99581
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -39,3 +41,5 @@ permalink: /kb/099/Q99581/
 	
 	=============================================================================
 	
+
+{% endraw %}

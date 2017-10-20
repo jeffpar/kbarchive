@@ -6,6 +6,8 @@ permalink: /kb/150/Q150041/
 
 ## Q150041: Environment Variables Returned by IIS via CGI
 
+{% raw %}
+
 	Article: Q150041
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/150/Q150041/
 	
 	=============================================================================
 	
+
+{% endraw %}

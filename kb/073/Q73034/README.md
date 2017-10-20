@@ -6,6 +6,8 @@ permalink: /kb/073/Q73034/
 
 ## Q73034: Unable to LOADHIGH Correctly After NET5.COM Loaded
 
+{% raw %}
+
 	Article: Q73034
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -74,3 +76,5 @@ permalink: /kb/073/Q73034/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222191/
 
 ## Q222191: XADM: New Intersite Replication Counters Added
 
+{% raw %}
+
 	Article: Q222191
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -132,3 +134,5 @@ permalink: /kb/222/Q222191/
 	
 	=============================================================================
 	
+
+{% endraw %}

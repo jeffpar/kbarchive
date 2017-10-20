@@ -6,6 +6,8 @@ permalink: /kb/157/Q157195/
 
 ## Q157195: WD97: How to Add or Remove a Command from a Shortcut Menu
 
+{% raw %}
+
 	Article: Q157195
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/157/Q157195/
 	
 	=============================================================================
 	
+
+{% endraw %}

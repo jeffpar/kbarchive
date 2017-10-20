@@ -6,6 +6,8 @@ permalink: /kb/041/Q41257/
 
 ## Q41257: What Is the Format of an .EXE File?
 
+{% raw %}
+
 	Article: Q41257
 	Product(s): See article
 	Version(s): 5.10
@@ -28,3 +30,5 @@ permalink: /kb/041/Q41257/
 	The MS-DOS Encyclopedia is an incredibly valuable reference for
 	systems programmers. The format is too long and complicated to
 	reproduce here.
+
+{% endraw %}

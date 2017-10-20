@@ -6,6 +6,8 @@ permalink: /kb/082/Q82031/
 
 ## Q82031: Use of Undocumented MS-DOS Commands And Options
 
+{% raw %}
+
 	Article: Q82031
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/082/Q82031/
 	
 	=============================================================================
 	
+
+{% endraw %}

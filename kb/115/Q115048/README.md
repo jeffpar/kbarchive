@@ -6,6 +6,8 @@ permalink: /kb/115/Q115048/
 
 ## Q115048: PPT: Color of On-Screen Show Drawing Feature
 
+{% raw %}
+
 	Article: Q115048
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,4.0; WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -55,3 +57,5 @@ permalink: /kb/115/Q115048/
 	
 	=============================================================================
 	
+
+{% endraw %}

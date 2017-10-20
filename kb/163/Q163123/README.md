@@ -6,6 +6,8 @@ permalink: /kb/163/Q163123/
 
 ## Q163123: Setup Error Message: Unable to Copy a File ...
 
+{% raw %}
+
 	Article: Q163123
 	Product(s): Microsoft Home Kids Products
 	Version(s): 4.0
@@ -104,3 +106,5 @@ permalink: /kb/163/Q163123/
 	
 	=============================================================================
 	
+
+{% endraw %}

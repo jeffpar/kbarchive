@@ -6,6 +6,8 @@ permalink: /kb/196/Q196951/
 
 ## Q196951: WD97: Using Headers and Footers with Master Documents
 
+{% raw %}
+
 	Article: Q196951
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -445,3 +447,5 @@ permalink: /kb/196/Q196951/
 	
 	=============================================================================
 	
+
+{% endraw %}

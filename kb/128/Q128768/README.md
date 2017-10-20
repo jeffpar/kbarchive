@@ -6,6 +6,8 @@ permalink: /kb/128/Q128768/
 
 ## Q128768: How to Use the SETALL() Method in Visual FoxPro
 
+{% raw %}
+
 	Article: Q128768
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -142,3 +144,5 @@ permalink: /kb/128/Q128768/
 	
 	=============================================================================
 	
+
+{% endraw %}

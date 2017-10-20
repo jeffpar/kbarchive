@@ -6,6 +6,8 @@ permalink: /kb/219/Q219541/
 
 ## Q219541: WD97: Indications of Revisions Are Lost After Copy and Paste
 
+{% raw %}
+
 	Article: Q219541
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/219/Q219541/
 	
 	=============================================================================
 	
+
+{% endraw %}

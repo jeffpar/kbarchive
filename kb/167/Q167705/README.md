@@ -6,6 +6,8 @@ permalink: /kb/167/Q167705/
 
 ## Q167705: Talking Loudly into Microphone May Cause Disconnect
 
+{% raw %}
+
 	Article: Q167705
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -74,3 +76,5 @@ permalink: /kb/167/Q167705/
 	
 	=============================================================================
 	
+
+{% endraw %}

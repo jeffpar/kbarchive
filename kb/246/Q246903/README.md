@@ -6,6 +6,8 @@ permalink: /kb/246/Q246903/
 
 ## Q246903: Zone Err Msg: An Incomplete Zone Install Was Detected
 
+{% raw %}
+
 	Article: Q246903
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/246/Q246903/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180995/
 
 ## Q180995: HOWTO: Search FoxPro Advisor by Author, Index, and Advertisers
 
+{% raw %}
+
 	Article: Q180995
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -83,3 +85,5 @@ permalink: /kb/180/Q180995/
 	
 	=============================================================================
 	
+
+{% endraw %}

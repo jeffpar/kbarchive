@@ -6,6 +6,8 @@ permalink: /kb/248/Q248761/
 
 ## Q248761: Fighter Ace II: Engine Is Not Numbered Correctly
 
+{% raw %}
+
 	Article: Q248761
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/248/Q248761/
 	
 	=============================================================================
 	
+
+{% endraw %}

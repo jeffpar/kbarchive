@@ -6,6 +6,8 @@ permalink: /kb/162/Q162896/
 
 ## Q162896: PPT97: Word Table Borders Displayed Incorrectly in PowerPoint
 
+{% raw %}
+
 	Article: Q162896
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/162/Q162896/
 	
 	=============================================================================
 	
+
+{% endraw %}

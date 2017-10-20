@@ -6,6 +6,8 @@ permalink: /kb/256/Q256318/
 
 ## Q256318: DNS Service Does Not Start When Notify Option Is Set
 
+{% raw %}
+
 	Article: Q256318
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -104,3 +106,5 @@ permalink: /kb/256/Q256318/
 	
 	=============================================================================
 	
+
+{% endraw %}

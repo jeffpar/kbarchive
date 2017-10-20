@@ -6,6 +6,8 @@ permalink: /kb/096/Q96385/
 
 ## Q96385: CTRL+BREAK Hangs System If Running CHKDSK with BREAK=ON Line
 
+{% raw %}
+
 	Article: Q96385
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -41,3 +43,5 @@ permalink: /kb/096/Q96385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40356/
 
 ## Q40356: FileWrite() Function Fails to Write Back Out to the File
 
+{% raw %}
+
 	Article: Q40356
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -85,3 +87,5 @@ permalink: /kb/040/Q40356/
 	cl /Lp /AC /Fe%1.dll exthdrp.obj %1.obj skel.def
 	
 	  */
+
+{% endraw %}

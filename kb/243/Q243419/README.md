@@ -6,6 +6,8 @@ permalink: /kb/243/Q243419/
 
 ## Q243419: Setpass Does Not Update the NetWare Password with SYSKEY
 
+{% raw %}
+
 	Article: Q243419
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -103,3 +105,5 @@ permalink: /kb/243/Q243419/
 	
 	=============================================================================
 	
+
+{% endraw %}

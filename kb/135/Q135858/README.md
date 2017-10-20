@@ -6,6 +6,8 @@ permalink: /kb/135/Q135858/
 
 ## Q135858: Specifying an Account Control Field in an FTP Script
 
+{% raw %}
+
 	Article: Q135858
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/135/Q135858/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84155/
 
 ## Q84155: WIN.INI Switch to Disable Network-Specific Dialog Boxes
 
+{% raw %}
+
 	Article: Q84155
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/084/Q84155/
 	
 	=============================================================================
 	
+
+{% endraw %}

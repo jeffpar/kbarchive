@@ -6,6 +6,8 @@ permalink: /kb/132/Q132387/
 
 ## Q132387: Sound Settings Are Not Saved
 
+{% raw %}
+
 	Article: Q132387
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132387/
 	
 	=============================================================================
 	
+
+{% endraw %}

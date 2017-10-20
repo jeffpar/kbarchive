@@ -6,6 +6,8 @@ permalink: /kb/172/Q172785/
 
 ## Q172785: Internet Icon Missing from Desktop After Installing MSN
 
+{% raw %}
+
 	Article: Q172785
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -45,3 +47,5 @@ permalink: /kb/172/Q172785/
 	
 	=============================================================================
 	
+
+{% endraw %}

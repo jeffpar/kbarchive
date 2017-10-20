@@ -6,6 +6,8 @@ permalink: /kb/066/Q66489/
 
 ## Q66489: &quot;Learn BASIC Now&quot; Reply Letter: Appnote BB0353
 
+{% raw %}
+
 	Article: Q66489
 	Product(s): See article
 	Version(s): 4.50
@@ -76,3 +78,5 @@ permalink: /kb/066/Q66489/
 	BASIC Languages Team Manager
 	Product Support Services
 	BB0353
+
+{% endraw %}

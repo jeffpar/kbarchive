@@ -6,6 +6,8 @@ permalink: /kb/132/Q132363/
 
 ## Q132363: Paste Results in a Black Box After You Save the Clipboard Image
 
+{% raw %}
+
 	Article: Q132363
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/132/Q132363/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132763/
 
 ## Q132763: DISPLAY Command in Login Script Displays Incorrect Characters
 
+{% raw %}
+
 	Article: Q132763
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/132/Q132763/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191996/
 
 ## Q191996: BUG: Field Properties Button in View Designer Malfunctions
 
+{% raw %}
+
 	Article: Q191996
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/191/Q191996/
 	
 	=============================================================================
 	
+
+{% endraw %}

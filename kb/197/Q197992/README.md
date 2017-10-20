@@ -6,6 +6,8 @@ permalink: /kb/197/Q197992/
 
 ## Q197992: How to Configure WLBS Using a Single Network Interface Card
 
+{% raw %}
+
 	Article: Q197992
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -146,3 +148,5 @@ permalink: /kb/197/Q197992/
 	
 	=============================================================================
 	
+
+{% endraw %}

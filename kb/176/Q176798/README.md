@@ -6,6 +6,8 @@ permalink: /kb/176/Q176798/
 
 ## Q176798: Bookshelf 98 ErrMsg: Ctl3d32.dll Is Not the Correct Version
 
+{% raw %}
+
 	Article: Q176798
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -77,3 +79,5 @@ permalink: /kb/176/Q176798/
 	
 	=============================================================================
 	
+
+{% endraw %}

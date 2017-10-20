@@ -6,6 +6,8 @@ permalink: /kb/120/Q120465/
 
 ## Q120465: Scenes 2.0: Pauses When Interrupting Screen Saver
 
+{% raw %}
+
 	Article: Q120465
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -44,3 +46,5 @@ permalink: /kb/120/Q120465/
 	
 	=============================================================================
 	
+
+{% endraw %}

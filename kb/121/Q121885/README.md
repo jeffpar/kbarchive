@@ -6,6 +6,8 @@ permalink: /kb/121/Q121885/
 
 ## Q121885: Mac Arcade: Centipede Stops Responding When You Start Game
 
+{% raw %}
+
 	Article: Q121885
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -58,3 +60,5 @@ permalink: /kb/121/Q121885/
 	
 	=============================================================================
 	
+
+{% endraw %}

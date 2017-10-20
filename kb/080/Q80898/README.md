@@ -6,6 +6,8 @@ permalink: /kb/080/Q80898/
 
 ## Q80898: Windows 3.1 Application Compatibility (part 3 of 7)
 
+{% raw %}
+
 	Article: Q80898
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -231,3 +233,5 @@ permalink: /kb/080/Q80898/
 	
 	=============================================================================
 	
+
+{% endraw %}

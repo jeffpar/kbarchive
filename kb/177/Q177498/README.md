@@ -6,6 +6,8 @@ permalink: /kb/177/Q177498/
 
 ## Q177498: Configuration Preferences May Not Be Applied to Other Users
 
+{% raw %}
+
 	Article: Q177498
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/177/Q177498/
 	
 	=============================================================================
 	
+
+{% endraw %}

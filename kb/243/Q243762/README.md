@@ -6,6 +6,8 @@ permalink: /kb/243/Q243762/
 
 ## Q243762: XFOR: Cannot Set Connection Priority Using App. Converter
 
+{% raw %}
+
 	Article: Q243762
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -44,3 +46,5 @@ permalink: /kb/243/Q243762/
 	
 	=============================================================================
 	
+
+{% endraw %}

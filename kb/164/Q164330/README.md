@@ -6,6 +6,8 @@ permalink: /kb/164/Q164330/
 
 ## Q164330: WinNT Err: DHCP Specified Range Overlaps Or Already Exists
 
+{% raw %}
+
 	Article: Q164330
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -155,3 +157,5 @@ permalink: /kb/164/Q164330/
 	
 	=============================================================================
 	
+
+{% endraw %}

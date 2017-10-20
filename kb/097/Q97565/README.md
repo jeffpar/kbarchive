@@ -6,6 +6,8 @@ permalink: /kb/097/Q97565/
 
 ## Q97565: Novell Login Drive Not Available After Installing DoubleSpace
 
+{% raw %}
+
 	Article: Q97565
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -121,3 +123,5 @@ permalink: /kb/097/Q97565/
 	
 	=============================================================================
 	
+
+{% endraw %}

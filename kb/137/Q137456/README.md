@@ -6,6 +6,8 @@ permalink: /kb/137/Q137456/
 
 ## Q137456: Centimeter Measurements in WordPad Reported Incorrectly
 
+{% raw %}
+
 	Article: Q137456
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -42,3 +44,5 @@ permalink: /kb/137/Q137456/
 	
 	=============================================================================
 	
+
+{% endraw %}

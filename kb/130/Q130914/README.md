@@ -6,6 +6,8 @@ permalink: /kb/130/Q130914/
 
 ## Q130914: Number of Users and Groups Affects SAM Size of Domain
 
+{% raw %}
+
 	Article: Q130914
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -130,3 +132,5 @@ permalink: /kb/130/Q130914/
 	
 	=============================================================================
 	
+
+{% endraw %}

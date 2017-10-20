@@ -6,6 +6,8 @@ permalink: /kb/181/Q181992/
 
 ## Q181992: WD97: File Open Does Not Function When PC Docs Is Installed
 
+{% raw %}
+
 	Article: Q181992
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/181/Q181992/
 	
 	=============================================================================
 	
+
+{% endraw %}

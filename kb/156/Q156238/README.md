@@ -6,6 +6,8 @@ permalink: /kb/156/Q156238/
 
 ## Q156238: PRB: Form Not Released from Menu Pad or ON KEY LABEL
 
+{% raw %}
+
 	Article: Q156238
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/156/Q156238/
 	
 	=============================================================================
 	
+
+{% endraw %}

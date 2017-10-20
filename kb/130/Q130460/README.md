@@ -6,6 +6,8 @@ permalink: /kb/130/Q130460/
 
 ## Q130460: Using a Variable as a Parameter for CreateObject()
 
+{% raw %}
+
 	Article: Q130460
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/130/Q130460/
 	
 	=============================================================================
 	
+
+{% endraw %}

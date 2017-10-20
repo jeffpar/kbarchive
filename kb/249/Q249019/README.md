@@ -6,6 +6,8 @@ permalink: /kb/249/Q249019/
 
 ## Q249019: XCLN: Opening Attach. in Public Folders in Exchange Client 5.0
 
+{% raw %}
+
 	Article: Q249019
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/249/Q249019/
 	
 	=============================================================================
 	
+
+{% endraw %}

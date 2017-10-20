@@ -6,6 +6,8 @@ permalink: /kb/099/Q99484/
 
 ## Q99484: File Functions, Load Procedure, and Resources for XPad
 
+{% raw %}
+
 	Article: Q99484
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/099/Q99484/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189059/
 
 ## Q189059: Stop: 0x0000000A Using Microtest CD-ROM Changer Software
 
+{% raw %}
+
 	Article: Q189059
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/189/Q189059/
 	
 	=============================================================================
 	
+
+{% endraw %}

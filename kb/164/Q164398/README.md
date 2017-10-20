@@ -6,6 +6,8 @@ permalink: /kb/164/Q164398/
 
 ## Q164398: Afd.sys May Cause a STOP 0x0000001e Error Under High Stress
 
+{% raw %}
+
 	Article: Q164398
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164398/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120437/
 
 ## Q120437: Corel Ventura C-Runtime Error under Windows NT
 
+{% raw %}
+
 	Article: Q120437
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/120/Q120437/
 	
 	=============================================================================
 	
+
+{% endraw %}

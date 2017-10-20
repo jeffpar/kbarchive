@@ -6,6 +6,8 @@ permalink: /kb/108/Q108346/
 
 ## Q108346: FIX: Substring Out of Range Hangs with -4Yb -Ox -G5
 
+{% raw %}
+
 	Article: Q108346
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -77,3 +79,5 @@ permalink: /kb/108/Q108346/
 	
 	=============================================================================
 	
+
+{% endraw %}

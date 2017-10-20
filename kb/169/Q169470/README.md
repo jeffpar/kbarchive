@@ -6,6 +6,8 @@ permalink: /kb/169/Q169470/
 
 ## Q169470: INFO: Frequently Asked Questions About ODBC Connection Pooling
 
+{% raw %}
+
 	Article: Q169470
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.5,2.0,2.1,2.5,2.6,2.7,3.0
@@ -205,3 +207,5 @@ permalink: /kb/169/Q169470/
 	
 	=============================================================================
 	
+
+{% endraw %}

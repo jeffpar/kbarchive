@@ -6,6 +6,8 @@ permalink: /kb/084/Q84786/
 
 ## Q84786: MPC MP1010 or MP4002 Error, No P-Code in Application
 
+{% raw %}
+
 	Article: Q84786
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:7.0,8.0
@@ -60,3 +62,5 @@ permalink: /kb/084/Q84786/
 	
 	=============================================================================
 	
+
+{% endraw %}

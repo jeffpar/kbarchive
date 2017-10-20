@@ -6,6 +6,8 @@ permalink: /kb/106/Q106423/
 
 ## Q106423: Repartitioning Your Hard Disk to Upgrade to 6.0 or 6.2
 
+{% raw %}
+
 	Article: Q106423
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.0,6.2,6.21
@@ -569,3 +571,5 @@ permalink: /kb/106/Q106423/
 	
 	=============================================================================
 	
+
+{% endraw %}

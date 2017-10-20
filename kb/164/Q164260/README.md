@@ -6,6 +6,8 @@ permalink: /kb/164/Q164260/
 
 ## Q164260: Compressing and Uncompressing Files Cause File Cache to Grow
 
+{% raw %}
+
 	Article: Q164260
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/164/Q164260/
 	
 	=============================================================================
 	
+
+{% endraw %}

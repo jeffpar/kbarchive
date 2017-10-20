@@ -6,6 +6,8 @@ permalink: /kb/175/Q175350/
 
 ## Q175350: XCLN: AutoForwarded DBCS Message Is Corrupted
 
+{% raw %}
+
 	Article: Q175350
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03
@@ -57,3 +59,5 @@ permalink: /kb/175/Q175350/
 	
 	=============================================================================
 	
+
+{% endraw %}

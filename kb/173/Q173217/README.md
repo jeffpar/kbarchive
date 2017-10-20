@@ -6,6 +6,8 @@ permalink: /kb/173/Q173217/
 
 ## Q173217: XCLN: Messages Remain in the Outbox After You Try to Send Them
 
+{% raw %}
+
 	Article: Q173217
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/173/Q173217/
 	
 	=============================================================================
 	
+
+{% endraw %}

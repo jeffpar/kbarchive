@@ -6,6 +6,8 @@ permalink: /kb/176/Q176188/
 
 ## Q176188: SNA Link Access Violation in ibmx25!os_wtime
 
+{% raw %}
+
 	Article: Q176188
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -106,3 +108,5 @@ permalink: /kb/176/Q176188/
 	
 	=============================================================================
 	
+
+{% endraw %}

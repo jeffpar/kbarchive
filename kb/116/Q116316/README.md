@@ -6,6 +6,8 @@ permalink: /kb/116/Q116316/
 
 ## Q116316: BUG: Conditional Breakpoint Doesn't Break on CodeView Restart
 
+{% raw %}
+
 	Article: Q116316
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -92,3 +94,5 @@ permalink: /kb/116/Q116316/
 	
 	=============================================================================
 	
+
+{% endraw %}

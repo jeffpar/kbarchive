@@ -6,6 +6,8 @@ permalink: /kb/173/Q173243/
 
 ## Q173243: How to Install the Windows 95 Resource Kit Utilities
 
+{% raw %}
+
 	Article: Q173243
 	Product(s): Microsoft Press
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/173/Q173243/
 	
 	=============================================================================
 	
+
+{% endraw %}

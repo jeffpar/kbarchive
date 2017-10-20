@@ -6,6 +6,8 @@ permalink: /kb/198/Q198714/
 
 ## Q198714: SMS: Enabling Power Management May Cause Remote Control to Fail
 
+{% raw %}
+
 	Article: Q198714
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -57,3 +59,5 @@ permalink: /kb/198/Q198714/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278649/
 
 ## Q278649: Verify Phone Number in MSN Web Companion
 
+{% raw %}
+
 	Article: Q278649
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/278/Q278649/
 	
 	=============================================================================
 	
+
+{% endraw %}

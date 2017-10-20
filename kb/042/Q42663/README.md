@@ -6,6 +6,8 @@ permalink: /kb/042/Q42663/
 
 ## Q42663: Suppressing CR/LF on &quot;LPT1:BIN&quot; after Every 80 Printable Bytes
 
+{% raw %}
+
 	Article: Q42663
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -57,3 +59,5 @@ permalink: /kb/042/Q42663/
 	FOR I = 0 TO 255
 	   PRINT#1, CHR$(I);
 	NEXT
+
+{% endraw %}

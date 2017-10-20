@@ -6,6 +6,8 @@ permalink: /kb/221/Q221481/
 
 ## Q221481: FIX: WMI Fails to Install on Windows NT 4.0 SP 5 or Later
 
+{% raw %}
+
 	Article: Q221481
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -284,3 +286,5 @@ permalink: /kb/221/Q221481/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225063/
 
 ## Q225063: SMS: INVMAC Reports Incorrect Processor Name
 
+{% raw %}
+
 	Article: Q225063
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -100,3 +102,5 @@ permalink: /kb/225/Q225063/
 	
 	=============================================================================
 	
+
+{% endraw %}

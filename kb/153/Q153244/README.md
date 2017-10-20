@@ -6,6 +6,8 @@ permalink: /kb/153/Q153244/
 
 ## Q153244: INVWIN32 Causes GPF When Run from MS-DOS Window
 
+{% raw %}
+
 	Article: Q153244
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153244/
 	
 	=============================================================================
 	
+
+{% endraw %}

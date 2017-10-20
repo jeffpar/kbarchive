@@ -6,6 +6,8 @@ permalink: /kb/125/Q125625/
 
 ## Q125625: Software Compression Compatibility in Windows NT 3.5 RAS
 
+{% raw %}
+
 	Article: Q125625
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5
@@ -124,3 +126,5 @@ permalink: /kb/125/Q125625/
 	
 	=============================================================================
 	
+
+{% endraw %}

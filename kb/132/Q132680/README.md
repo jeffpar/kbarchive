@@ -6,6 +6,8 @@ permalink: /kb/132/Q132680/
 
 ## Q132680: PRB: Hiding a Modal Form Removes Its Modal Attribute
 
+{% raw %}
+
 	Article: Q132680
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -92,3 +94,5 @@ permalink: /kb/132/Q132680/
 	
 	=============================================================================
 	
+
+{% endraw %}

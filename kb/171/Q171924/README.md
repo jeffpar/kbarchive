@@ -6,6 +6,8 @@ permalink: /kb/171/Q171924/
 
 ## Q171924: MSN Sign-In Screen Appears When Starting Windows
 
+{% raw %}
+
 	Article: Q171924
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,95
@@ -195,3 +197,5 @@ permalink: /kb/171/Q171924/
 	
 	=============================================================================
 	
+
+{% endraw %}

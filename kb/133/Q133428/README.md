@@ -6,6 +6,8 @@ permalink: /kb/133/Q133428/
 
 ## Q133428: PC DirSync: Information on the REQTRANS.GLB Transaction File
 
+{% raw %}
+
 	Article: Q133428
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -81,3 +83,5 @@ permalink: /kb/133/Q133428/
 	
 	=============================================================================
 	
+
+{% endraw %}

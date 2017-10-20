@@ -6,6 +6,8 @@ permalink: /kb/157/Q157254/
 
 ## Q157254: BUG: SELECT-SQL Error When Joining Parent to Two Child Tables
 
+{% raw %}
+
 	Article: Q157254
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 5.0,5.0a,6.0
@@ -127,3 +129,5 @@ permalink: /kb/157/Q157254/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166434/
 
 ## Q166434: Abnormal Size of Character Map Under Taiwan Locale.
 
+{% raw %}
+
 	Article: Q166434
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -43,3 +45,5 @@ permalink: /kb/166/Q166434/
 	
 	=============================================================================
 	
+
+{% endraw %}

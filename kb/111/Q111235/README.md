@@ -6,6 +6,8 @@ permalink: /kb/111/Q111235/
 
 ## Q111235: BUG: D2030 or DX1020 Error on Assumed-Size Array Expressions
 
+{% raw %}
+
 	Article: Q111235
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -83,3 +85,5 @@ permalink: /kb/111/Q111235/
 	
 	=============================================================================
 	
+
+{% endraw %}

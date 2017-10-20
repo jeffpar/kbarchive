@@ -6,6 +6,8 @@ permalink: /kb/236/Q236035/
 
 ## Q236035: SMSINST: SMS Installer Cannot Directly Call Windows API Function
 
+{% raw %}
+
 	Article: Q236035
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/236/Q236035/
 	
 	=============================================================================
 	
+
+{% endraw %}

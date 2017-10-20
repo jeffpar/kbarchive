@@ -6,6 +6,8 @@ permalink: /kb/111/Q111420/
 
 ## Q111420: MIPS Four-Processor Computer Halts for Long Time
 
+{% raw %}
+
 	Article: Q111420
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -46,3 +48,5 @@ permalink: /kb/111/Q111420/
 	
 	=============================================================================
 	
+
+{% endraw %}

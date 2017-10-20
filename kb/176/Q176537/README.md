@@ -6,6 +6,8 @@ permalink: /kb/176/Q176537/
 
 ## Q176537: How to Run the Sounds Tool by Itself
 
+{% raw %}
+
 	Article: Q176537
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/176/Q176537/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116134/
 
 ## Q116134: FIX: Visual Workbench Ignores Request Not to Rebuild Project
 
+{% raw %}
+
 	Article: Q116134
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -87,3 +89,5 @@ permalink: /kb/116/Q116134/
 	
 	=============================================================================
 	
+
+{% endraw %}

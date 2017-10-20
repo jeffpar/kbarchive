@@ -6,6 +6,8 @@ permalink: /kb/099/Q99445/
 
 ## Q99445: Loading and Using PRTSC.EXE
 
+{% raw %}
+
 	Article: Q99445
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/099/Q99445/
 	
 	=============================================================================
 	
+
+{% endraw %}

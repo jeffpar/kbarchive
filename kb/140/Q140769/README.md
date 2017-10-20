@@ -6,6 +6,8 @@ permalink: /kb/140/Q140769/
 
 ## Q140769: Writer/Artist: Mouse Doesn't Work
 
+{% raw %}
+
 	Article: Q140769
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,95
@@ -53,3 +55,5 @@ permalink: /kb/140/Q140769/
 	
 	=============================================================================
 	
+
+{% endraw %}

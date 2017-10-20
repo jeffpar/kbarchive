@@ -6,6 +6,8 @@ permalink: /kb/263/Q263601/
 
 ## Q263601: BUG: C1001 When Using Certain float Values as Template Arguments
 
+{% raw %}
+
 	Article: Q263601
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -68,3 +70,5 @@ permalink: /kb/263/Q263601/
 	
 	=============================================================================
 	
+
+{% endraw %}

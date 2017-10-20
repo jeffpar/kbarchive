@@ -6,6 +6,8 @@ permalink: /kb/236/Q236625/
 
 ## Q236625: PRB: TABLEREVERT Fails with Row Buffering and List Box RowSource
 
+{% raw %}
+
 	Article: Q236625
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -213,3 +215,5 @@ permalink: /kb/236/Q236625/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96633/
 
 ## Q96633: OEM Setup Copies All Files By Default
 
+{% raw %}
+
 	Article: Q96633
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -45,3 +47,5 @@ permalink: /kb/096/Q96633/
 	
 	=============================================================================
 	
+
+{% endraw %}

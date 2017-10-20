@@ -6,6 +6,8 @@ permalink: /kb/142/Q142088/
 
 ## Q142088: WD97: Merge to Fax Not Available
 
+{% raw %}
+
 	Article: Q142088
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/142/Q142088/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124071/
 
 ## Q124071: Can't Boot from Sound Blaster SCSI II Controller
 
+{% raw %}
+
 	Article: Q124071
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -59,3 +61,5 @@ permalink: /kb/124/Q124071/
 	
 	=============================================================================
 	
+
+{% endraw %}

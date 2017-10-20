@@ -6,6 +6,8 @@ permalink: /kb/178/Q178221/
 
 ## Q178221: XCLN: Microsoft Outlook Displays Incorrect Size for Attachments
 
+{% raw %}
+
 	Article: Q178221
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03
@@ -81,3 +83,5 @@ permalink: /kb/178/Q178221/
 	
 	=============================================================================
 	
+
+{% endraw %}

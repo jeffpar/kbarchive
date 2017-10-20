@@ -6,6 +6,8 @@ permalink: /kb/255/Q255932/
 
 ## Q255932: TAMA: Incomplete Words Appear in the Operator's Log
 
+{% raw %}
+
 	Article: Q255932
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -75,3 +77,5 @@ permalink: /kb/255/Q255932/
 	
 	=============================================================================
 	
+
+{% endraw %}

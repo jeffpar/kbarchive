@@ -6,6 +6,8 @@ permalink: /kb/270/Q270029/
 
 ## Q270029: BUG: COleControl::SetControlSize Function Does Not Work
 
+{% raw %}
+
 	Article: Q270029
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -106,3 +108,5 @@ permalink: /kb/270/Q270029/
 	
 	=============================================================================
 	
+
+{% endraw %}

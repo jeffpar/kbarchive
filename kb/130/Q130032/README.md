@@ -6,6 +6,8 @@ permalink: /kb/130/Q130032/
 
 ## Q130032: XCLN: Duplicate Address Types When Creating Entry in PAB
 
+{% raw %}
+
 	Article: Q130032
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130032/
 	
 	=============================================================================
 	
+
+{% endraw %}

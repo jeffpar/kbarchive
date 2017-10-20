@@ -6,6 +6,8 @@ permalink: /kb/094/Q94308/
 
 ## Q94308: WFWG Err Msg: &quot;You Can Only Share...&quot; Sharing a CD-ROM
 
+{% raw %}
+
 	Article: Q94308
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/094/Q94308/
 	
 	=============================================================================
 	
+
+{% endraw %}

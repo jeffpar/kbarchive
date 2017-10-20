@@ -6,6 +6,8 @@ permalink: /kb/196/Q196895/
 
 ## Q196895: XADM: Mailbox Receives Duplicate Messages after Server is Moved
 
+{% raw %}
+
 	Article: Q196895
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -71,3 +73,5 @@ permalink: /kb/196/Q196895/
 	
 	=============================================================================
 	
+
+{% endraw %}

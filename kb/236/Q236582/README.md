@@ -6,6 +6,8 @@ permalink: /kb/236/Q236582/
 
 ## Q236582: XADM: Event 1005: Your Profile Is Not Configured
 
+{% raw %}
+
 	Article: Q236582
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/236/Q236582/
 	
 	=============================================================================
 	
+
+{% endraw %}

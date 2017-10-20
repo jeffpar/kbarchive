@@ -6,6 +6,8 @@ permalink: /kb/191/Q191959/
 
 ## Q191959: FIX: Filer Cannot Find File in Read-Only or Hidden Folder
 
+{% raw %}
+
 	Article: Q191959
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -100,3 +102,5 @@ permalink: /kb/191/Q191959/
 	
 	=============================================================================
 	
+
+{% endraw %}

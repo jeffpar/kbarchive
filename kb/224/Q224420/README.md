@@ -6,6 +6,8 @@ permalink: /kb/224/Q224420/
 
 ## Q224420: Description of the Windows Critical Update Notification Utility
 
+{% raw %}
+
 	Article: Q224420
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000
@@ -150,3 +152,5 @@ permalink: /kb/224/Q224420/
 	
 	=============================================================================
 	
+
+{% endraw %}

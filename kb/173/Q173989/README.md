@@ -6,6 +6,8 @@ permalink: /kb/173/Q173989/
 
 ## Q173989: SMS: Program Group Control May Cause an Access Violation
 
+{% raw %}
+
 	Article: Q173989
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -65,3 +67,5 @@ permalink: /kb/173/Q173989/
 	
 	=============================================================================
 	
+
+{% endraw %}

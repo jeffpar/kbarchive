@@ -6,6 +6,8 @@ permalink: /kb/141/Q141861/
 
 ## Q141861: Asian Characters Are Lost in Translation
 
+{% raw %}
+
 	Article: Q141861
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0; :4.0,7.0
@@ -57,3 +59,5 @@ permalink: /kb/141/Q141861/
 	
 	=============================================================================
 	
+
+{% endraw %}

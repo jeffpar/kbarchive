@@ -6,6 +6,8 @@ permalink: /kb/116/Q116053/
 
 ## Q116053: RAS ErrMsg: Error 692: Hardware Failure in Port or Attached...
 
+{% raw %}
+
 	Article: Q116053
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -175,3 +177,5 @@ permalink: /kb/116/Q116053/
 	
 	=============================================================================
 	
+
+{% endraw %}

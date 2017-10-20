@@ -6,6 +6,8 @@ permalink: /kb/141/Q141342/
 
 ## Q141342: XADM: Public Folders Automatically Get New Home Site/Server
 
+{% raw %}
+
 	Article: Q141342
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/141/Q141342/
 	
 	=============================================================================
 	
+
+{% endraw %}

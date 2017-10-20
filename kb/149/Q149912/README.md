@@ -6,6 +6,8 @@ permalink: /kb/149/Q149912/
 
 ## Q149912: Network Connection to Macintosh Alias Could Not Be Found
 
+{% raw %}
+
 	Article: Q149912
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149912/
 	
 	=============================================================================
 	
+
+{% endraw %}

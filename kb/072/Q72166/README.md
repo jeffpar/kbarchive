@@ -6,6 +6,8 @@ permalink: /kb/072/Q72166/
 
 ## Q72166: Mouse Inactive in MS-DOS Apps After Exiting Windows 3.0
 
+{% raw %}
+
 	Article: Q72166
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.0a,3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/072/Q72166/
 	
 	=============================================================================
 	
+
+{% endraw %}

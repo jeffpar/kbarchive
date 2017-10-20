@@ -6,6 +6,8 @@ permalink: /kb/098/Q98430/
 
 ## Q98430: Command Line Switches for Basic REDIR
 
+{% raw %}
+
 	Article: Q98430
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/098/Q98430/
 	
 	=============================================================================
 	
+
+{% endraw %}

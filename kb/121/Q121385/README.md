@@ -6,6 +6,8 @@ permalink: /kb/121/Q121385/
 
 ## Q121385: SMS Program Group Controller and AutoDisconnect
 
+{% raw %}
+
 	Article: Q121385
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -65,3 +67,5 @@ permalink: /kb/121/Q121385/
 	
 	=============================================================================
 	
+
+{% endraw %}

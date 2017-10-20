@@ -6,6 +6,8 @@ permalink: /kb/137/Q137896/
 
 ## Q137896: Quick Windows Viewer is not in the printed index
 
+{% raw %}
+
 	Article: Q137896
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -35,3 +37,5 @@ permalink: /kb/137/Q137896/
 	
 	=============================================================================
 	
+
+{% endraw %}

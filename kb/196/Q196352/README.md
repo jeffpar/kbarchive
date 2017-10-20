@@ -6,6 +6,8 @@ permalink: /kb/196/Q196352/
 
 ## Q196352: Inside the Win98 Registry: Chapter 4 Files Missing
 
+{% raw %}
+
 	Article: Q196352
 	Product(s): Microsoft Press
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/196/Q196352/
 	
 	=============================================================================
 	
+
+{% endraw %}

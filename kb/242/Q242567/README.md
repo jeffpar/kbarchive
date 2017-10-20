@@ -6,6 +6,8 @@ permalink: /kb/242/Q242567/
 
 ## Q242567: AoE II &amp; Pandora: Choppy, Scratchy, or Distorted Sound Playback
 
+{% raw %}
+
 	Article: Q242567
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -58,3 +60,5 @@ permalink: /kb/242/Q242567/
 	
 	=============================================================================
 	
+
+{% endraw %}

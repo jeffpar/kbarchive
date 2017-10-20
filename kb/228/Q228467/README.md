@@ -6,6 +6,8 @@ permalink: /kb/228/Q228467/
 
 ## Q228467: Access Violation in Lsass.exe When Passing a Null Pointer
 
+{% raw %}
+
 	Article: Q228467
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/228/Q228467/
 	
 	=============================================================================
 	
+
+{% endraw %}

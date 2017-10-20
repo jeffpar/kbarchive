@@ -6,6 +6,8 @@ permalink: /kb/057/Q57513/
 
 ## Q57513: Misspelling &quot;mov&quot; in _asm Creates C4405 and C2400
 
+{% raw %}
+
 	Article: Q57513
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -34,3 +36,5 @@ permalink: /kb/057/Q57513/
 	Microsoft has confirmed this to be a problem in Versions 2.00 and
 	2.01. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

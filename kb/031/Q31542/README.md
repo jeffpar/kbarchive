@@ -6,6 +6,8 @@ permalink: /kb/031/Q31542/
 
 ## Q31542: MASM 5.10 EXT.DOC: BadArg - Displays &quot;Bad Argument&quot; Message
 
+{% raw %}
+
 	Article: Q31542
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -23,3 +25,5 @@ permalink: /kb/031/Q31542/
 	 *  The "bad argument" message is printed on the dialog line.
 	 */
 	flagType pascal BadArg (void);
+
+{% endraw %}

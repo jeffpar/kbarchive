@@ -6,6 +6,8 @@ permalink: /kb/066/Q66536/
 
 ## Q66536: Practical Peripherals and Serial Mouse Configuration
 
+{% raw %}
+
 	Article: Q66536
 	Product(s): See article
 	Version(s): 1.00
@@ -22,3 +24,5 @@ permalink: /kb/066/Q66536/
 	confirms this to be a problem.  They recommend that the modem be
 	configured as COM 3 or COM 4.  The mouse should then remain on COM 1
 	to separate the I/O addresses as much as possible.
+
+{% endraw %}

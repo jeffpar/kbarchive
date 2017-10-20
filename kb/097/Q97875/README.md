@@ -6,6 +6,8 @@ permalink: /kb/097/Q97875/
 
 ## Q97875: Support for Locking at Byte, Field, Record and File Level
 
+{% raw %}
+
 	Article: Q97875
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/097/Q97875/
 	
 	=============================================================================
 	
+
+{% endraw %}

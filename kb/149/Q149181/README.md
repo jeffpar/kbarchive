@@ -6,6 +6,8 @@ permalink: /kb/149/Q149181/
 
 ## Q149181: FIX: Removing Subproject Causes Page Fault
 
+{% raw %}
+
 	Article: Q149181
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/149/Q149181/
 	
 	=============================================================================
 	
+
+{% endraw %}

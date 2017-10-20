@@ -6,6 +6,8 @@ permalink: /kb/166/Q166150/
 
 ## Q166150: INFO: Installing McAfee VirusScan for Windows NT Unattended
 
+{% raw %}
+
 	Article: Q166150
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/166/Q166150/
 	
 	=============================================================================
 	
+
+{% endraw %}

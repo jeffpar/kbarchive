@@ -6,6 +6,8 @@ permalink: /kb/195/Q195627/
 
 ## Q195627: FIX: Right-Clicking Item in Find Results View Fails in Gallery
 
+{% raw %}
+
 	Article: Q195627
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/195/Q195627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146001/
 
 ## Q146001: AMD (NexGen) Nx586 Processor Identified as 80386
 
+{% raw %}
+
 	Article: Q146001
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/146/Q146001/
 	
 	=============================================================================
 	
+
+{% endraw %}

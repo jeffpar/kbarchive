@@ -6,6 +6,8 @@ permalink: /kb/041/Q41674/
 
 ## Q41674: QuickC 2.00 README.DOC: QCL Command-Line Options for OS/2
 
+{% raw %}
+
 	Article: Q41674
 	Product(s): See article
 	Version(s): 2.00
@@ -53,3 +55,5 @@ permalink: /kb/041/Q41674/
 	If you own the Microsoft C Optimizing Compiler, Version 5.1, and
 	you're writing OS/2 Protected Mode applications, do not use the
 	QuickC /Zr option.
+
+{% endraw %}

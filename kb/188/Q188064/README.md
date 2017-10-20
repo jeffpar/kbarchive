@@ -6,6 +6,8 @@ permalink: /kb/188/Q188064/
 
 ## Q188064: PRB: ISRLOCKED() and ISFLOCKED() Return Incorrect Values
 
+{% raw %}
+
 	Article: Q188064
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -95,3 +97,5 @@ permalink: /kb/188/Q188064/
 	
 	=============================================================================
 	
+
+{% endraw %}

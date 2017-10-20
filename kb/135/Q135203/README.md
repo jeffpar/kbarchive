@@ -6,6 +6,8 @@ permalink: /kb/135/Q135203/
 
 ## Q135203: Not Enough Disk Space to Restore Backed Up Files
 
+{% raw %}
+
 	Article: Q135203
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135203/
 	
 	=============================================================================
 	
+
+{% endraw %}

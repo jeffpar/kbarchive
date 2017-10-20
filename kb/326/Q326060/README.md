@@ -6,6 +6,8 @@ permalink: /kb/326/Q326060/
 
 ## Q326060: XADM: How to Move a Connection Agreement to Another Server
 
+{% raw %}
+
 	Article: Q326060
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -66,3 +68,5 @@ permalink: /kb/326/Q326060/
 	
 	=============================================================================
 	
+
+{% endraw %}

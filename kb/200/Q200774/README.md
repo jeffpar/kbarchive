@@ -6,6 +6,8 @@ permalink: /kb/200/Q200774/
 
 ## Q200774: XADM: Gear Icon Next to Mailboxes on a Distribution List
 
+{% raw %}
+
 	Article: Q200774
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/200/Q200774/
 	
 	=============================================================================
 	
+
+{% endraw %}

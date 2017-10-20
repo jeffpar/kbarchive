@@ -6,6 +6,8 @@ permalink: /kb/044/Q44523/
 
 ## Q44523: Ellipse Not Bounded Correctly
 
+{% raw %}
+
 	Article: Q44523
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -50,3 +52,5 @@ permalink: /kb/044/Q44523/
 	
 	Microsoft is researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

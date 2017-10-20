@@ -6,6 +6,8 @@ permalink: /kb/221/Q221598/
 
 ## Q221598: XADM: Search Permissions Deny Access to the Offline Address Book
 
+{% raw %}
+
 	Article: Q221598
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/221/Q221598/
 	
 	=============================================================================
 	
+
+{% endraw %}

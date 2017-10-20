@@ -6,6 +6,8 @@ permalink: /kb/316/Q316938/
 
 ## Q316938: Active Server Pages with ODBC Driver for DB2 Causes Creation of
 
+{% raw %}
+
 	Article: Q316938
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -85,3 +87,5 @@ permalink: /kb/316/Q316938/
 	
 	=============================================================================
 	
+
+{% endraw %}

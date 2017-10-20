@@ -6,6 +6,8 @@ permalink: /kb/170/Q170997/
 
 ## Q170997: Availability of Windows NT 4.0 Server Tools for Windows 95
 
+{% raw %}
+
 	Article: Q170997
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/170/Q170997/
 	
 	=============================================================================
 	
+
+{% endraw %}

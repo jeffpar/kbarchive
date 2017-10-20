@@ -6,6 +6,8 @@ permalink: /kb/245/Q245169/
 
 ## Q245169: SMS: DDM May Stop Unexpectedly During Site Attachment Processing
 
+{% raw %}
+
 	Article: Q245169
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -91,3 +93,5 @@ permalink: /kb/245/Q245169/
 	
 	=============================================================================
 	
+
+{% endraw %}

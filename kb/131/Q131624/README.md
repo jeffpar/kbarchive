@@ -6,6 +6,8 @@ permalink: /kb/131/Q131624/
 
 ## Q131624: Connecting to a Remote AS/400 Connected Through an APPN Network
 
+{% raw %}
+
 	Article: Q131624
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1
@@ -106,3 +108,5 @@ permalink: /kb/131/Q131624/
 	
 	=============================================================================
 	
+
+{% endraw %}

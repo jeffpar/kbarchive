@@ -6,6 +6,8 @@ permalink: /kb/157/Q157633/
 
 ## Q157633: BUG: Report Form Fields Appear to Be Selected After Printing
 
+{% raw %}
+
 	Article: Q157633
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -60,3 +62,5 @@ permalink: /kb/157/Q157633/
 	
 	=============================================================================
 	
+
+{% endraw %}

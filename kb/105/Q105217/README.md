@@ -6,6 +6,8 @@ permalink: /kb/105/Q105217/
 
 ## Q105217: Scenes 1.0: Cannot Write to Scenes File
 
+{% raw %}
+
 	Article: Q105217
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -103,3 +105,5 @@ permalink: /kb/105/Q105217/
 	
 	=============================================================================
 	
+
+{% endraw %}

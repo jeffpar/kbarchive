@@ -6,6 +6,8 @@ permalink: /kb/041/Q41388/
 
 ## Q41388: .EXE Compiled BC /S May Not Print String in PRINT TAB(n),A&#36;
 
+{% raw %}
+
 	Article: Q41388
 	Product(s): See article
 	Version(s): 4.50
@@ -55,3 +57,5 @@ permalink: /kb/041/Q41388/
 	A$ = "THIS SHOULD BE PRINTED"
 	PRINT SPACE$(39 - LEN(A$) / 2); A$
 	END
+
+{% endraw %}

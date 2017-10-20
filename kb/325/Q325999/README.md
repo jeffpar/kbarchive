@@ -6,6 +6,8 @@ permalink: /kb/325/Q325999/
 
 ## Q325999: MechWarrior 4: The New Mechs Are Not Available
 
+{% raw %}
+
 	Article: Q325999
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -285,3 +287,5 @@ permalink: /kb/325/Q325999/
 	
 	=============================================================================
 	
+
+{% endraw %}

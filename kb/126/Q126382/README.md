@@ -6,6 +6,8 @@ permalink: /kb/126/Q126382/
 
 ## Q126382: Bypassing Service Provider Banner In SWITCH.INF
 
+{% raw %}
+
 	Article: Q126382
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -58,3 +60,5 @@ permalink: /kb/126/Q126382/
 	
 	=============================================================================
 	
+
+{% endraw %}

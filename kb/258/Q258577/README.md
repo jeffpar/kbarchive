@@ -6,6 +6,8 @@ permalink: /kb/258/Q258577/
 
 ## Q258577: MSB Solar: Sounds and Speech Are Cut Off Abruptly
 
+{% raw %}
+
 	Article: Q258577
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/258/Q258577/
 	
 	=============================================================================
 	
+
+{% endraw %}

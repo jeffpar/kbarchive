@@ -6,6 +6,8 @@ permalink: /kb/280/Q280784/
 
 ## Q280784: MCSE Readiness Review Exam 70-216 Windows 2000 Network Infrastru
 
+{% raw %}
+
 	Article: Q280784
 	Product(s): Microsoft Press
 	Version(s): 
@@ -413,3 +415,5 @@ permalink: /kb/280/Q280784/
 	
 	=============================================================================
 	
+
+{% endraw %}

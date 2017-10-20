@@ -6,6 +6,8 @@ permalink: /kb/098/Q98339/
 
 ## Q98339: PROFS: How to Check VM Host for Enabled EXITs
 
+{% raw %}
+
 	Article: Q98339
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1,3.2,3.3
@@ -46,3 +48,5 @@ permalink: /kb/098/Q98339/
 	
 	=============================================================================
 	
+
+{% endraw %}

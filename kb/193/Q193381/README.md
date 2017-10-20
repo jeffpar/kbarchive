@@ -6,6 +6,8 @@ permalink: /kb/193/Q193381/
 
 ## Q193381: XFOR: Chat Portals No Longer Connect after Installing SP1
 
+{% raw %}
+
 	Article: Q193381
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -57,3 +59,5 @@ permalink: /kb/193/Q193381/
 	
 	=============================================================================
 	
+
+{% endraw %}

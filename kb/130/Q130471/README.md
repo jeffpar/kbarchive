@@ -6,6 +6,8 @@ permalink: /kb/130/Q130471/
 
 ## Q130471: PRB: EXTERN Attribute Prevents F4999 on Unreferenced Function
 
+{% raw %}
+
 	Article: Q130471
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0,5.1
@@ -86,3 +88,5 @@ permalink: /kb/130/Q130471/
 	
 	=============================================================================
 	
+
+{% endraw %}

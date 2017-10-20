@@ -6,6 +6,8 @@ permalink: /kb/162/Q162665/
 
 ## Q162665: LUA File Transfer Locks Out 3270 User Sessions
 
+{% raw %}
+
 	Article: Q162665
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -70,3 +72,5 @@ permalink: /kb/162/Q162665/
 	
 	=============================================================================
 	
+
+{% endraw %}

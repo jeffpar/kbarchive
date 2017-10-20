@@ -6,6 +6,8 @@ permalink: /kb/137/Q137150/
 
 ## Q137150: List of Fixed Bugs in Systems Management Server Version 1.1
 
+{% raw %}
+
 	Article: Q137150
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -102,3 +104,5 @@ permalink: /kb/137/Q137150/
 	
 	=============================================================================
 	
+
+{% endraw %}

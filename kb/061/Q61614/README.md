@@ -6,6 +6,8 @@ permalink: /kb/061/Q61614/
 
 ## Q61614: Cannot Set Breakpoint Warning Due to Wrong Linker
 
+{% raw %}
+
 	Article: Q61614
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -24,3 +26,5 @@ permalink: /kb/061/Q61614/
 	that the correct linker is executed. LINK.EXE version 4.06 is the
 	correct version for QuickC 2.00 and LINK.EXE version 4.07 is the
 	correct version for Quick Assembler 2.01.
+
+{% endraw %}

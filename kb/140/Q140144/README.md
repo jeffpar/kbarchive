@@ -6,6 +6,8 @@ permalink: /kb/140/Q140144/
 
 ## Q140144: SMS: Clipart Gallery Must be Downloaded Every Windows Session
 
+{% raw %}
+
 	Article: Q140144
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -47,3 +49,5 @@ permalink: /kb/140/Q140144/
 	
 	=============================================================================
 	
+
+{% endraw %}

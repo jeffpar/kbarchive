@@ -6,6 +6,8 @@ permalink: /kb/186/Q186357/
 
 ## Q186357: RPC UseWinsockForIP Is Only Applicable to UDP and IPX
 
+{% raw %}
+
 	Article: Q186357
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -133,3 +135,5 @@ permalink: /kb/186/Q186357/
 	
 	=============================================================================
 	
+
+{% endraw %}

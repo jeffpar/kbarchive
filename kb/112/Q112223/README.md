@@ -6,6 +6,8 @@ permalink: /kb/112/Q112223/
 
 ## Q112223: File Available that Updates Flight Simulator 5.0 to 5.0a
 
+{% raw %}
+
 	Article: Q112223
 	Product(s): Microsoft Home Games
 	Version(s): 5.0
@@ -55,3 +57,5 @@ permalink: /kb/112/Q112223/
 	
 	=============================================================================
 	
+
+{% endraw %}

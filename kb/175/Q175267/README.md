@@ -6,6 +6,8 @@ permalink: /kb/175/Q175267/
 
 ## Q175267: How to Install an OEM Modem .INF File In Unattended Setup
 
+{% raw %}
+
 	Article: Q175267
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -122,3 +124,5 @@ permalink: /kb/175/Q175267/
 	
 	=============================================================================
 	
+
+{% endraw %}

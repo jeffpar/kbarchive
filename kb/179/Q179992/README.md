@@ -6,6 +6,8 @@ permalink: /kb/179/Q179992/
 
 ## Q179992: XADM: Exchange Setup Fails with Error File=common&#92;list1.c
 
+{% raw %}
+
 	Article: Q179992
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/179/Q179992/
 	
 	=============================================================================
 	
+
+{% endraw %}

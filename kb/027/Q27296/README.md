@@ -6,6 +6,8 @@ permalink: /kb/027/Q27296/
 
 ## Q27296: Example Passing BASIC String Descriptor to Microsoft C
 
+{% raw %}
+
 	Article: Q27296
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -79,3 +81,5 @@ permalink: /kb/027/Q27296/
 	  12          115            s
 	  13          116            t
 	  14            0
+
+{% endraw %}

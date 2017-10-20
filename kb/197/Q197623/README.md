@@ -6,6 +6,8 @@ permalink: /kb/197/Q197623/
 
 ## Q197623: FP: How to Identify Your Web Server and IP Address
 
+{% raw %}
+
 	Article: Q197623
 	Product(s): Word Front Page
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/197/Q197623/
 	
 	=============================================================================
 	
+
+{% endraw %}

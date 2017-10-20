@@ -6,6 +6,8 @@ permalink: /kb/294/Q294704/
 
 ## Q294704: PRB: VC ClassView Doesn't Show Classes Defined in Header File
 
+{% raw %}
+
 	Article: Q294704
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -103,3 +105,5 @@ permalink: /kb/294/Q294704/
 	
 	=============================================================================
 	
+
+{% endraw %}

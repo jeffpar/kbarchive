@@ -6,6 +6,8 @@ permalink: /kb/176/Q176968/
 
 ## Q176968: Error Message: A Kernel File Is Missing from the Disk
 
+{% raw %}
+
 	Article: Q176968
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -116,3 +118,5 @@ permalink: /kb/176/Q176968/
 	
 	=============================================================================
 	
+
+{% endraw %}

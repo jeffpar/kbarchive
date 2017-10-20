@@ -6,6 +6,8 @@ permalink: /kb/148/Q148438/
 
 ## Q148438: PCMCIA SCSI Hard Disks Not Recognized After Service Pack 1
 
+{% raw %}
+
 	Article: Q148438
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -72,3 +74,5 @@ permalink: /kb/148/Q148438/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158500/
 
 ## Q158500: Updated DAO SDK Required for Visual C++ 4.2
 
+{% raw %}
+
 	Article: Q158500
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/158/Q158500/
 	
 	=============================================================================
 	
+
+{% endraw %}

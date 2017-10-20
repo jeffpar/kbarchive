@@ -6,6 +6,8 @@ permalink: /kb/157/Q157646/
 
 ## Q157646: XCLN: Custom Install Proceeds Even When no Options are Selected
 
+{% raw %}
+
 	Article: Q157646
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; :4.0
@@ -42,3 +44,5 @@ permalink: /kb/157/Q157646/
 	
 	=============================================================================
 	
+
+{% endraw %}

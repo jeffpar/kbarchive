@@ -6,6 +6,8 @@ permalink: /kb/235/Q235765/
 
 ## Q235765: SMS: Local Groups Cannot Write Queries Even With Full Rights
 
+{% raw %}
+
 	Article: Q235765
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -71,3 +73,5 @@ permalink: /kb/235/Q235765/
 	
 	=============================================================================
 	
+
+{% endraw %}

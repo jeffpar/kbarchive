@@ -6,6 +6,8 @@ permalink: /kb/034/Q34231/
 
 ## Q34231: Keys Used to Replace SCROLL LOCK Key on Tandy 1000 Keyboards
 
+{% raw %}
+
 	Article: Q34231
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/034/Q34231/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167600/
 
 ## Q167600: Contents of the Dialup Networking Folder Not Restored
 
+{% raw %}
+
 	Article: Q167600
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -78,3 +80,5 @@ permalink: /kb/167/Q167600/
 	
 	=============================================================================
 	
+
+{% endraw %}

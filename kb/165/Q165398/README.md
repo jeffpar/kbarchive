@@ -6,6 +6,8 @@ permalink: /kb/165/Q165398/
 
 ## Q165398: Profiles for Members of Guests Group Are Deleted
 
+{% raw %}
+
 	Article: Q165398
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165398/
 	
 	=============================================================================
 	
+
+{% endraw %}

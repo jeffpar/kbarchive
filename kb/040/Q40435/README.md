@@ -6,6 +6,8 @@ permalink: /kb/040/Q40435/
 
 ## Q40435: SMARTDrive Does Not Support Conventional Memory
 
+{% raw %}
+
 	Article: Q40435
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -54,3 +56,5 @@ permalink: /kb/040/Q40435/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136695/
 
 ## Q136695: How to Use the Load, Init, Destroy, and Unload Events
 
+{% raw %}
+
 	Article: Q136695
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/136/Q136695/
 	
 	=============================================================================
 	
+
+{% endraw %}

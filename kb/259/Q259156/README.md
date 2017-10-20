@@ -6,6 +6,8 @@ permalink: /kb/259/Q259156/
 
 ## Q259156: Allegiance: Program Stops Responding
 
+{% raw %}
+
 	Article: Q259156
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/259/Q259156/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139786/
 
 ## Q139786: Event 582 may occur when running Win 3.x APPC or CPIC App
 
+{% raw %}
+
 	Article: Q139786
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -80,3 +82,5 @@ permalink: /kb/139/Q139786/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90226/
 
 ## Q90226: Troubleshooting Lost Network Connections
 
+{% raw %}
+
 	Article: Q90226
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -137,3 +139,5 @@ permalink: /kb/090/Q90226/
 	
 	=============================================================================
 	
+
+{% endraw %}

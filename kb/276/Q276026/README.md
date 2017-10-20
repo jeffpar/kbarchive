@@ -6,6 +6,8 @@ permalink: /kb/276/Q276026/
 
 ## Q276026: SNA Print Server May Insert Extra Form Feed
 
+{% raw %}
+
 	Article: Q276026
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3
@@ -62,3 +64,5 @@ permalink: /kb/276/Q276026/
 	
 	=============================================================================
 	
+
+{% endraw %}

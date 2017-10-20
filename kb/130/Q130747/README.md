@@ -6,6 +6,8 @@ permalink: /kb/130/Q130747/
 
 ## Q130747: WSS Setup Does Not Load TASKMAN.EXE
 
+{% raw %}
+
 	Article: Q130747
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/130/Q130747/
 	
 	=============================================================================
 	
+
+{% endraw %}

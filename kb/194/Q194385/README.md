@@ -6,6 +6,8 @@ permalink: /kb/194/Q194385/
 
 ## Q194385: X400: Message Not Delivered and Screen Becomes Corrupted
 
+{% raw %}
+
 	Article: Q194385
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -105,3 +107,5 @@ permalink: /kb/194/Q194385/
 	
 	=============================================================================
 	
+
+{% endraw %}

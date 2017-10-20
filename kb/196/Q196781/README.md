@@ -6,6 +6,8 @@ permalink: /kb/196/Q196781/
 
 ## Q196781: XCON: Multiple SMTP and NNTP Entries within Key Manager
 
+{% raw %}
+
 	Article: Q196781
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/196/Q196781/
 	
 	=============================================================================
 	
+
+{% endraw %}

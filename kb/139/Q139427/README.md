@@ -6,6 +6,8 @@ permalink: /kb/139/Q139427/
 
 ## Q139427: Using Long Filenames with the Run Command
 
+{% raw %}
+
 	Article: Q139427
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -92,3 +94,5 @@ permalink: /kb/139/Q139427/
 	
 	=============================================================================
 	
+
+{% endraw %}

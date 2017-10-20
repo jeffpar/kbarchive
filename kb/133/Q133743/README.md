@@ -6,6 +6,8 @@ permalink: /kb/133/Q133743/
 
 ## Q133743: How to Display Disabled Items in a Combo or List Box
 
+{% raw %}
+
 	Article: Q133743
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -72,3 +74,5 @@ permalink: /kb/133/Q133743/
 	
 	=============================================================================
 	
+
+{% endraw %}

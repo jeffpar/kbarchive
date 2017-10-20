@@ -6,6 +6,8 @@ permalink: /kb/259/Q259553/
 
 ## Q259553: XADM: Install. Exchange Server 5.5 in Windows 2000 Domain
 
+{% raw %}
+
 	Article: Q259553
 	Product(s): Microsoft Exchange
 	Version(s): 2000,4.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/259/Q259553/
 	
 	=============================================================================
 	
+
+{% endraw %}

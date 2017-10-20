@@ -6,6 +6,8 @@ permalink: /kb/186/Q186502/
 
 ## Q186502: Using Blinking Cursors with Terminal Server
 
+{% raw %}
+
 	Article: Q186502
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/186/Q186502/
 	
 	=============================================================================
 	
+
+{% endraw %}

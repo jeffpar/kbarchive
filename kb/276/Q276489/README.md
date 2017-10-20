@@ -6,6 +6,8 @@ permalink: /kb/276/Q276489/
 
 ## Q276489: Patch Available for Web Server Folder Traversal Vulnerability
 
+{% raw %}
+
 	Article: Q276489
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -111,3 +113,5 @@ permalink: /kb/276/Q276489/
 	
 	=============================================================================
 	
+
+{% endraw %}

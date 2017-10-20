@@ -6,6 +6,8 @@ permalink: /kb/050/Q50220/
 
 ## Q50220: QB.EXE 4.50 &quot;String Space Corrupt&quot; Passing Function to .QLB
 
+{% raw %}
+
 	Article: Q50220
 	Product(s): See article
 	Version(s): 4.50
@@ -78,3 +80,5 @@ permalink: /kb/050/Q50220/
 	SUB SOPEN (KAN%, K$, BEST$, RECL%)
 	     PRINT BEST$
 	END SUB
+
+{% endraw %}

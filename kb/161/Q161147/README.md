@@ -6,6 +6,8 @@ permalink: /kb/161/Q161147/
 
 ## Q161147: BUG: ToolTips Disappear when Timer Event Fires
 
+{% raw %}
+
 	Article: Q161147
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -92,3 +94,5 @@ permalink: /kb/161/Q161147/
 	
 	=============================================================================
 	
+
+{% endraw %}

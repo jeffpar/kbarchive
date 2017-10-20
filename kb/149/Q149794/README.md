@@ -6,6 +6,8 @@ permalink: /kb/149/Q149794/
 
 ## Q149794: STOP Msg: &quot;0x0000001E&quot; Debugging a Visual C++ Application
 
+{% raw %}
+
 	Article: Q149794
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -61,3 +63,5 @@ permalink: /kb/149/Q149794/
 	
 	=============================================================================
 	
+
+{% endraw %}

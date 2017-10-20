@@ -6,6 +6,8 @@ permalink: /kb/196/Q196062/
 
 ## Q196062: HOWTO: Set and Get Cookies for a URL Using WinInet APIs
 
+{% raw %}
+
 	Article: Q196062
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/196/Q196062/
 	
 	=============================================================================
 	
+
+{% endraw %}

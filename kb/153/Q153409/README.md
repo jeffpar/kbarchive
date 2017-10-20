@@ -6,6 +6,8 @@ permalink: /kb/153/Q153409/
 
 ## Q153409: Single Quotation Mark in NetWare Domain Name Fails
 
+{% raw %}
+
 	Article: Q153409
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -54,3 +56,5 @@ permalink: /kb/153/Q153409/
 	
 	=============================================================================
 	
+
+{% endraw %}

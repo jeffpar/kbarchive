@@ -6,6 +6,8 @@ permalink: /kb/183/Q183111/
 
 ## Q183111: IFilter SDK Sample Doesn't Build Under Visual C 5 SP3
 
+{% raw %}
+
 	Article: Q183111
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/183/Q183111/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120466/
 
 ## Q120466: Microsoft Backup for Windows Fails on Pentium-Based Machines
 
+{% raw %}
+
 	Article: Q120466
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/120/Q120466/
 	
 	=============================================================================
 	
+
+{% endraw %}

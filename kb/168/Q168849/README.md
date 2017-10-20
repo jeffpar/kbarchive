@@ -6,6 +6,8 @@ permalink: /kb/168/Q168849/
 
 ## Q168849: Puzzle Collection: Contents And Requirements for Trial Version
 
+{% raw %}
+
 	Article: Q168849
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/168/Q168849/
 	
 	=============================================================================
 	
+
+{% endraw %}

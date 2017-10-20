@@ -6,6 +6,8 @@ permalink: /kb/195/Q195269/
 
 ## Q195269: Visual Basic 6 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q195269
 	Product(s): Microsoft Press
 	Version(s): 
@@ -597,3 +599,5 @@ permalink: /kb/195/Q195269/
 	
 	=============================================================================
 	
+
+{% endraw %}

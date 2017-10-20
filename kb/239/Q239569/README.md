@@ -6,6 +6,8 @@ permalink: /kb/239/Q239569/
 
 ## Q239569: XWEB: Requirements for Outlook Web Access
 
+{% raw %}
+
 	Article: Q239569
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -96,3 +98,5 @@ permalink: /kb/239/Q239569/
 	
 	=============================================================================
 	
+
+{% endraw %}

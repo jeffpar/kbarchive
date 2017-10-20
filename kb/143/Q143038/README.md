@@ -6,6 +6,8 @@ permalink: /kb/143/Q143038/
 
 ## Q143038: SAMPLE: VBAPPT7.EXE Integrating a PowerPoint 7.0 Slide Show w/VB
 
+{% raw %}
+
 	Article: Q143038
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,7.0
@@ -268,3 +270,5 @@ permalink: /kb/143/Q143038/
 	
 	=============================================================================
 	
+
+{% endraw %}

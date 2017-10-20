@@ -6,6 +6,8 @@ permalink: /kb/164/Q164199/
 
 ## Q164199: OSR2 Additional Power Management Features
 
+{% raw %}
+
 	Article: Q164199
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -73,3 +75,5 @@ permalink: /kb/164/Q164199/
 	
 	=============================================================================
 	
+
+{% endraw %}

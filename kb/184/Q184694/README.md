@@ -6,6 +6,8 @@ permalink: /kb/184/Q184694/
 
 ## Q184694: SMS: Events Prior to Initialization of SNMP Agent Not Translated
 
+{% raw %}
+
 	Article: Q184694
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/184/Q184694/
 	
 	=============================================================================
 	
+
+{% endraw %}

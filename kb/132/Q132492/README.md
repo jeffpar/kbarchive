@@ -6,6 +6,8 @@ permalink: /kb/132/Q132492/
 
 ## Q132492: FIX:Hard-coded breakpoints and RtlGetUserInfoHeap error
 
+{% raw %}
+
 	Article: Q132492
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,2.2
@@ -67,3 +69,5 @@ permalink: /kb/132/Q132492/
 	
 	=============================================================================
 	
+
+{% endraw %}

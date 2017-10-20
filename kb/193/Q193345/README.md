@@ -6,6 +6,8 @@ permalink: /kb/193/Q193345/
 
 ## Q193345: XCON: No MTA Support for ISO 8859-7 (Greek) Character Set
 
+{% raw %}
+
 	Article: Q193345
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -106,3 +108,5 @@ permalink: /kb/193/Q193345/
 	
 	=============================================================================
 	
+
+{% endraw %}

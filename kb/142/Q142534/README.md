@@ -6,6 +6,8 @@ permalink: /kb/142/Q142534/
 
 ## Q142534: HOWTO: Create Programs in Visual Basic That Use Remote OLE
 
+{% raw %}
+
 	Article: Q142534
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -343,3 +345,5 @@ permalink: /kb/142/Q142534/
 	
 	=============================================================================
 	
+
+{% endraw %}

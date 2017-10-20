@@ -6,6 +6,8 @@ permalink: /kb/154/Q154080/
 
 ## Q154080: PRB: Visual SourceSafe Journal File Not Updated
 
+{% raw %}
+
 	Article: Q154080
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -88,3 +90,5 @@ permalink: /kb/154/Q154080/
 	
 	=============================================================================
 	
+
+{% endraw %}

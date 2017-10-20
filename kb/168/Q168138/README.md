@@ -6,6 +6,8 @@ permalink: /kb/168/Q168138/
 
 ## Q168138: XFOR: IMC Setup for Non-MIME Inbound Japanese SMTP Mail
 
+{% raw %}
+
 	Article: Q168138
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/168/Q168138/
 	
 	=============================================================================
 	
+
+{% endraw %}

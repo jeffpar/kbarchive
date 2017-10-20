@@ -6,6 +6,8 @@ permalink: /kb/281/Q281379/
 
 ## Q281379: Cannot Define New Inbox Assistant Rules w. Outlook for Macintosh
 
+{% raw %}
+
 	Article: Q281379
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.1,8.2,8.2.1,8.2.2
@@ -92,3 +94,5 @@ permalink: /kb/281/Q281379/
 	
 	=============================================================================
 	
+
+{% endraw %}

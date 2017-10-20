@@ -6,6 +6,8 @@ permalink: /kb/185/Q185352/
 
 ## Q185352: SMS: How to Set Up a Simple Test Environment
 
+{% raw %}
+
 	Article: Q185352
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -148,3 +150,5 @@ permalink: /kb/185/Q185352/
 	
 	=============================================================================
 	
+
+{% endraw %}

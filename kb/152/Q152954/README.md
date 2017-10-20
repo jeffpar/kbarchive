@@ -6,6 +6,8 @@ permalink: /kb/152/Q152954/
 
 ## Q152954: XCLN: Network Errors w/ Microsoft Exchange Windows 3.1 Client
 
+{% raw %}
+
 	Article: Q152954
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/152/Q152954/
 	
 	=============================================================================
 	
+
+{% endraw %}

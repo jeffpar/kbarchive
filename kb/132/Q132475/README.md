@@ -6,6 +6,8 @@ permalink: /kb/132/Q132475/
 
 ## Q132475: Determining If a Service Pack Has Been Installed
 
+{% raw %}
+
 	Article: Q132475
 	Product(s): Microsoft Windows NT
 	Version(s): ; WINDOWS:2000; winnt:3.5,3.51,4.0
@@ -96,3 +98,5 @@ permalink: /kb/132/Q132475/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147382/
 
 ## Q147382: Number of Message Recipients Limited to 64
 
+{% raw %}
+
 	Article: Q147382
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2
@@ -39,3 +41,5 @@ permalink: /kb/147/Q147382/
 	
 	=============================================================================
 	
+
+{% endraw %}

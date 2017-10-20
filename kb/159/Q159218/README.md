@@ -6,6 +6,8 @@ permalink: /kb/159/Q159218/
 
 ## Q159218: Proper Backup of Open Files Using Ntbackup
 
+{% raw %}
+
 	Article: Q159218
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0,4.5
@@ -109,3 +111,5 @@ permalink: /kb/159/Q159218/
 	
 	=============================================================================
 	
+
+{% endraw %}

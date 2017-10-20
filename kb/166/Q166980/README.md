@@ -6,6 +6,8 @@ permalink: /kb/166/Q166980/
 
 ## Q166980: WD97: Format Changed If Hyperlink Spans Several Paragraphs
 
+{% raw %}
+
 	Article: Q166980
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/166/Q166980/
 	
 	=============================================================================
 	
+
+{% endraw %}

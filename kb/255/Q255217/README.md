@@ -6,6 +6,8 @@ permalink: /kb/255/Q255217/
 
 ## Q255217: Incorrect Output Printing from Client to Windows NT Server 4.0
 
+{% raw %}
+
 	Article: Q255217
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/255/Q255217/
 	
 	=============================================================================
 	
+
+{% endraw %}

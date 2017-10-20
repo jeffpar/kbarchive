@@ -6,6 +6,8 @@ permalink: /kb/154/Q154666/
 
 ## Q154666: HOWTO: Create a Private Data Collection for an MDI Child Form
 
+{% raw %}
+
 	Article: Q154666
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -172,3 +174,5 @@ permalink: /kb/154/Q154666/
 	
 	=============================================================================
 	
+
+{% endraw %}

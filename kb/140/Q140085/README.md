@@ -6,6 +6,8 @@ permalink: /kb/140/Q140085/
 
 ## Q140085: Golf 2.0: Accessing Tips Included on CD-ROM Version
 
+{% raw %}
+
 	Article: Q140085
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -57,3 +59,5 @@ permalink: /kb/140/Q140085/
 	
 	=============================================================================
 	
+
+{% endraw %}

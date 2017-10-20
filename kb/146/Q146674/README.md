@@ -6,6 +6,8 @@ permalink: /kb/146/Q146674/
 
 ## Q146674: XCLN: Win95 Registry Entries for MSMail Function Incorrectly
 
+{% raw %}
+
 	Article: Q146674
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -62,3 +64,5 @@ permalink: /kb/146/Q146674/
 	
 	=============================================================================
 	
+
+{% endraw %}

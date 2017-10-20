@@ -6,6 +6,8 @@ permalink: /kb/215/Q215005/
 
 ## Q215005: Sluggish Mouse Movement While Remote Controlling Windows NT 4.0
 
+{% raw %}
+
 	Article: Q215005
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/215/Q215005/
 	
 	=============================================================================
 	
+
+{% endraw %}

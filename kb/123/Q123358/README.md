@@ -6,6 +6,8 @@ permalink: /kb/123/Q123358/
 
 ## Q123358: When TCP/IP-32 Under Stress, MS-DOS Command Prompt GP Faults
 
+{% raw %}
+
 	Article: Q123358
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -46,3 +48,5 @@ permalink: /kb/123/Q123358/
 	
 	=============================================================================
 	
+
+{% endraw %}

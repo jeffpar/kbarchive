@@ -6,6 +6,8 @@ permalink: /kb/135/Q135460/
 
 ## Q135460: PC Mac: Not Able to Print Contents of Inbox
 
+{% raw %}
+
 	Article: Q135460
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.x
@@ -50,3 +52,5 @@ permalink: /kb/135/Q135460/
 	
 	=============================================================================
 	
+
+{% endraw %}

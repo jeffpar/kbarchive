@@ -6,6 +6,8 @@ permalink: /kb/031/Q31776/
 
 ## Q31776: Modified CALL INT86OLD Program
 
+{% raw %}
+
 	Article: Q31776
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/031/Q31776/
 	
 	The example on Page 88 is a revised version of a program on Page 149
 	of the QuickBASIC Version 3.00 manual.
+
+{% endraw %}

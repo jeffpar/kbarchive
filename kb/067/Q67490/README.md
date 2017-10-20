@@ -6,6 +6,8 @@ permalink: /kb/067/Q67490/
 
 ## Q67490: Problem with Printer Setup from Calendar, Cardfile, Notepad
 
+{% raw %}
+
 	Article: Q67490
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,95
@@ -71,3 +73,5 @@ permalink: /kb/067/Q67490/
 	
 	=============================================================================
 	
+
+{% endraw %}

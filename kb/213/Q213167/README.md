@@ -6,6 +6,8 @@ permalink: /kb/213/Q213167/
 
 ## Q213167: SMS: Software Metering Clients Do Not Use Retry Setting Properly
 
+{% raw %}
+
 	Article: Q213167
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -54,3 +56,5 @@ permalink: /kb/213/Q213167/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/220/Q220966/
 
 ## Q220966: FIX: Custom Expression Builder with Query Designer Crashes VFP
 
+{% raw %}
+
 	Article: Q220966
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -80,3 +82,5 @@ permalink: /kb/220/Q220966/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134762/
 
 ## Q134762: STOP Msg: 0x0000007B Upgrading Compaq w/ Integrated SCSI-2
 
+{% raw %}
+
 	Article: Q134762
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -129,3 +131,5 @@ permalink: /kb/134/Q134762/
 	
 	=============================================================================
 	
+
+{% endraw %}

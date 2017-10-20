@@ -6,6 +6,8 @@ permalink: /kb/155/Q155211/
 
 ## Q155211: FIX: C2373 on getwchar/putwchar When Using UNICODE &amp; &#95;&#95;stdcall
 
+{% raw %}
+
 	Article: Q155211
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -138,3 +140,5 @@ permalink: /kb/155/Q155211/
 	
 	=============================================================================
 	
+
+{% endraw %}

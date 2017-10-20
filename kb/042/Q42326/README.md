@@ -6,6 +6,8 @@ permalink: /kb/042/Q42326/
 
 ## Q42326: Wrong Example in QB Advisor for CALL INTERRUPT
 
+{% raw %}
+
 	Article: Q42326
 	Product(s): See article
 	Version(s): 4.50
@@ -147,3 +149,5 @@ permalink: /kb/042/Q42326/
 	PRINT "Drive "; Drive$; " has a total of";
 	PRINT USING "###,###,###"; Freespace;
 	PRINT " bytes remaining free."
+
+{% endraw %}

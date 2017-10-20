@@ -6,6 +6,8 @@ permalink: /kb/273/Q273564/
 
 ## Q273564: How to change call waiting settings in MSN Companion
 
+{% raw %}
+
 	Article: Q273564
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -61,3 +63,5 @@ permalink: /kb/273/Q273564/
 	
 	=============================================================================
 	
+
+{% endraw %}

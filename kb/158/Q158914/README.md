@@ -6,6 +6,8 @@ permalink: /kb/158/Q158914/
 
 ## Q158914: PRB: Web Root Busy Opening Source-Controlled Web
 
+{% raw %}
+
 	Article: Q158914
 	Product(s): Microsoft SourceSafe
 	Version(s): 97
@@ -112,3 +114,5 @@ permalink: /kb/158/Q158914/
 	
 	=============================================================================
 	
+
+{% endraw %}

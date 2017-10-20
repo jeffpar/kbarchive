@@ -6,6 +6,8 @@ permalink: /kb/205/Q205493/
 
 ## Q205493: FP: How to Use the META Element with Web Spiders and Robots
 
+{% raw %}
+
 	Article: Q205493
 	Product(s): Word Front Page
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/205/Q205493/
 	
 	=============================================================================
 	
+
+{% endraw %}

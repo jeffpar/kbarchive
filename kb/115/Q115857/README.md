@@ -6,6 +6,8 @@ permalink: /kb/115/Q115857/
 
 ## Q115857: PRB: Using #define to Specify Include File Fails with C2006
 
+{% raw %}
+
 	Article: Q115857
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/115/Q115857/
 	
 	=============================================================================
 	
+
+{% endraw %}

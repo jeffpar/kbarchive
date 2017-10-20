@@ -6,6 +6,8 @@ permalink: /kb/252/Q252844/
 
 ## Q252844: SMS: Remote Installation in NDS Environments Is Unsuccessful
 
+{% raw %}
+
 	Article: Q252844
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -85,3 +87,5 @@ permalink: /kb/252/Q252844/
 	
 	=============================================================================
 	
+
+{% endraw %}

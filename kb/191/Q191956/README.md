@@ -6,6 +6,8 @@ permalink: /kb/191/Q191956/
 
 ## Q191956: XADM: System Attendant (Mad.exe) Stops in ScSetDeleted
 
+{% raw %}
+
 	Article: Q191956
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/191/Q191956/
 	
 	=============================================================================
 	
+
+{% endraw %}

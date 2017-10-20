@@ -6,6 +6,8 @@ permalink: /kb/132/Q132408/
 
 ## Q132408: SNADS: How to Remove the SNADS Gateway from a Postoffice
 
+{% raw %}
+
 	Article: Q132408
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0
@@ -67,3 +69,5 @@ permalink: /kb/132/Q132408/
 	
 	=============================================================================
 	
+
+{% endraw %}

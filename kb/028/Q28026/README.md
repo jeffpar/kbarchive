@@ -6,6 +6,8 @@ permalink: /kb/028/Q28026/
 
 ## Q28026: PSET Color Argument Affect in Screen 2 Differs from BASICA
 
+{% raw %}
+
 	Article: Q28026
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -23,3 +25,5 @@ permalink: /kb/028/Q28026/
 	6.00 and 6.00b for MS-DOS and OS/2 (buglist6.00, buglist6.00b). We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

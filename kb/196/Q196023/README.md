@@ -6,6 +6,8 @@ permalink: /kb/196/Q196023/
 
 ## Q196023: PRB: Cannot Get Individual Items from the Projects Collection
 
+{% raw %}
+
 	Article: Q196023
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -70,3 +72,5 @@ permalink: /kb/196/Q196023/
 	
 	=============================================================================
 	
+
+{% endraw %}

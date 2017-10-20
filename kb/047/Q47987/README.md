@@ -6,6 +6,8 @@ permalink: /kb/047/Q47987/
 
 ## Q47987: _bios_serialcom Sends and Receives Single Character Data
 
+{% raw %}
+
 	Article: Q47987
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -60,3 +62,5 @@ permalink: /kb/047/Q47987/
 	
 	=============================================================================
 	
+
+{% endraw %}

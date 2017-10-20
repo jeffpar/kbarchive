@@ -6,6 +6,8 @@ permalink: /kb/194/Q194853/
 
 ## Q194853: PC Rmt: Remote Mail Client Can't Address Local FFAPI Gateway PO
 
+{% raw %}
+
 	Article: Q194853
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/194/Q194853/
 	
 	=============================================================================
 	
+
+{% endraw %}

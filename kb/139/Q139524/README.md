@@ -6,6 +6,8 @@ permalink: /kb/139/Q139524/
 
 ## Q139524: How to Create a Builder to Add Tables to the Data Environment
 
+{% raw %}
+
 	Article: Q139524
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -145,3 +147,5 @@ permalink: /kb/139/Q139524/
 	
 	=============================================================================
 	
+
+{% endraw %}

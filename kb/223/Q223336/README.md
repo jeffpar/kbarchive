@@ -6,6 +6,8 @@ permalink: /kb/223/Q223336/
 
 ## Q223336: Error in Wowvdm When Installing FrontPage Server Extensions
 
+{% raw %}
+
 	Article: Q223336
 	Product(s): Word Front Page
 	Version(s): WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/223/Q223336/
 	
 	=============================================================================
 	
+
+{% endraw %}

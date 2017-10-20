@@ -6,6 +6,8 @@ permalink: /kb/067/Q67729/
 
 ## Q67729: Error if Productivity Pack Installed in Root Directory
 
+{% raw %}
+
 	Article: Q67729
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0; WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/067/Q67729/
 	
 	=============================================================================
 	
+
+{% endraw %}

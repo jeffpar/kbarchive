@@ -6,6 +6,8 @@ permalink: /kb/164/Q164889/
 
 ## Q164889: SMS: INVWIN32 Won't Check for Upgrade Until Next Inventory
 
+{% raw %}
+
 	Article: Q164889
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -48,3 +50,5 @@ permalink: /kb/164/Q164889/
 	
 	=============================================================================
 	
+
+{% endraw %}

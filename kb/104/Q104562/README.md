@@ -6,6 +6,8 @@ permalink: /kb/104/Q104562/
 
 ## Q104562: PC DB: How to Remove Groups After Running ACCTONME.EXE
 
+{% raw %}
+
 	Article: Q104562
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -111,3 +113,5 @@ permalink: /kb/104/Q104562/
 	
 	=============================================================================
 	
+
+{% endraw %}

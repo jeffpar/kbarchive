@@ -6,6 +6,8 @@ permalink: /kb/100/Q100312/
 
 ## Q100312: Error Messages During Boot Sequence on Intel x86 Machines
 
+{% raw %}
+
 	Article: Q100312
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/100/Q100312/
 	
 	=============================================================================
 	
+
+{% endraw %}

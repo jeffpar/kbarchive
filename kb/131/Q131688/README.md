@@ -6,6 +6,8 @@ permalink: /kb/131/Q131688/
 
 ## Q131688: Mac Bookshelf '95: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q131688
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -83,3 +85,5 @@ permalink: /kb/131/Q131688/
 	
 	=============================================================================
 	
+
+{% endraw %}

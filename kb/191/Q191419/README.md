@@ -6,6 +6,8 @@ permalink: /kb/191/Q191419/
 
 ## Q191419: GP Fault or Access Violation When Buffer Too Small
 
+{% raw %}
+
 	Article: Q191419
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/191/Q191419/
 	
 	=============================================================================
 	
+
+{% endraw %}

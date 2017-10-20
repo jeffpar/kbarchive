@@ -6,6 +6,8 @@ permalink: /kb/131/Q131599/
 
 ## Q131599: Record Pointer Moves in BROWSE as Records Are Deleted
 
+{% raw %}
+
 	Article: Q131599
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/131/Q131599/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132908/
 
 ## Q132908: Error Message: Could Not Start Print Job
 
+{% raw %}
+
 	Article: Q132908
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -94,3 +96,5 @@ permalink: /kb/132/Q132908/
 	
 	=============================================================================
 	
+
+{% endraw %}

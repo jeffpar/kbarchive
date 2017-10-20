@@ -6,6 +6,8 @@ permalink: /kb/134/Q134289/
 
 ## Q134289: Shortcut to BBS Message Does Not Work When BBS Minimized
 
+{% raw %}
+
 	Article: Q134289
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.2 1.3
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134289/
 	
 	=============================================================================
 	
+
+{% endraw %}

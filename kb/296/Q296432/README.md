@@ -6,6 +6,8 @@ permalink: /kb/296/Q296432/
 
 ## Q296432: XFOR: Doclink Conversion to RTF Fails If Source Doc Is on UNIX
 
+{% raw %}
+
 	Article: Q296432
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -155,3 +157,5 @@ permalink: /kb/296/Q296432/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175892/
 
 ## Q175892: XWEB: Permissions Required for Outlook Web Access
 
+{% raw %}
+
 	Article: Q175892
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -77,3 +79,5 @@ permalink: /kb/175/Q175892/
 	
 	=============================================================================
 	
+
+{% endraw %}

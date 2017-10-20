@@ -6,6 +6,8 @@ permalink: /kb/160/Q160932/
 
 ## Q160932: XADM: Error 0002 The Exchange Directory Will Not Start
 
+{% raw %}
+
 	Article: Q160932
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/160/Q160932/
 	
 	=============================================================================
 	
+
+{% endraw %}

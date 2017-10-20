@@ -6,6 +6,8 @@ permalink: /kb/173/Q173783/
 
 ## Q173783: WD97: Web Browser Cannot Open a Mailed or Routed HTML File
 
+{% raw %}
+
 	Article: Q173783
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/173/Q173783/
 	
 	=============================================================================
 	
+
+{% endraw %}

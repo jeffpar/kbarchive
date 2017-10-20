@@ -6,6 +6,8 @@ permalink: /kb/096/Q96910/
 
 ## Q96910: LAYOUTS.WRI from Windows Resource Kit Version 3.1 A-D
 
+{% raw %}
+
 	Article: Q96910
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -250,3 +252,5 @@ permalink: /kb/096/Q96910/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174667/
 
 ## Q174667: HOWTO: Subclass CListBox and CEdit Inside of CComboBox
 
+{% raw %}
+
 	Article: Q174667
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -115,3 +117,5 @@ permalink: /kb/174/Q174667/
 	
 	=============================================================================
 	
+
+{% endraw %}

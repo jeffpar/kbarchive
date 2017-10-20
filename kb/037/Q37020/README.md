@@ -6,6 +6,8 @@ permalink: /kb/037/Q37020/
 
 ## Q37020: QuickC Generates Warning Message &quot;C4071&quot; erroneously
 
+{% raw %}
+
 	Article: Q37020
 	Product(s): See article
 	Version(s): 1.01
@@ -45,3 +47,5 @@ permalink: /kb/037/Q37020/
 	        void main(void)
 	        {
 	        }
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162788/
 
 ## Q162788: RDISK Error: &quot;One Or More Configuration Files Were Not Found&quot;
 
+{% raw %}
+
 	Article: Q162788
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -50,3 +52,5 @@ permalink: /kb/162/Q162788/
 	
 	=============================================================================
 	
+
+{% endraw %}

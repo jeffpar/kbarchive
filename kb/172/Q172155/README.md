@@ -6,6 +6,8 @@ permalink: /kb/172/Q172155/
 
 ## Q172155: BUG: Decimal Values Missing from Internet Search Wizard Results
 
+{% raw %}
+
 	Article: Q172155
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -76,3 +78,5 @@ permalink: /kb/172/Q172155/
 	
 	=============================================================================
 	
+
+{% endraw %}

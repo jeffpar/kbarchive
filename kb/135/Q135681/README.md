@@ -6,6 +6,8 @@ permalink: /kb/135/Q135681/
 
 ## Q135681: HP4 Driver Does not List MP Tray as an Available Source
 
+{% raw %}
+
 	Article: Q135681
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -50,3 +52,5 @@ permalink: /kb/135/Q135681/
 	
 	=============================================================================
 	
+
+{% endraw %}

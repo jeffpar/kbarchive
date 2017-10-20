@@ -6,6 +6,8 @@ permalink: /kb/152/Q152349/
 
 ## Q152349: XCOPY Date Switch Fails on 29th in Leap Year
 
+{% raw %}
+
 	Article: Q152349
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152349/
 	
 	=============================================================================
 	
+
+{% endraw %}

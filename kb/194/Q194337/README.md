@@ -6,6 +6,8 @@ permalink: /kb/194/Q194337/
 
 ## Q194337: XADM: Information Store Crashes Processing HTML Message
 
+{% raw %}
+
 	Article: Q194337
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -127,3 +129,5 @@ permalink: /kb/194/Q194337/
 	
 	=============================================================================
 	
+
+{% endraw %}

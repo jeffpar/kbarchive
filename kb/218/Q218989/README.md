@@ -6,6 +6,8 @@ permalink: /kb/218/Q218989/
 
 ## Q218989: Windows 95 Clients Registering in WINS as Multihomed Computers
 
+{% raw %}
+
 	Article: Q218989
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.0,2.0,2.1,2.2,95
@@ -79,3 +81,5 @@ permalink: /kb/218/Q218989/
 	
 	=============================================================================
 	
+
+{% endraw %}

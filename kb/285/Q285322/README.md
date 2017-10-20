@@ -6,6 +6,8 @@ permalink: /kb/285/Q285322/
 
 ## Q285322: Pinball Arcade Hangs When You Attempt to Select a Pinball Table
 
+{% raw %}
+
 	Article: Q285322
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -77,3 +79,5 @@ permalink: /kb/285/Q285322/
 	
 	=============================================================================
 	
+
+{% endraw %}

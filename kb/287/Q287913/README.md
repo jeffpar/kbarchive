@@ -6,6 +6,8 @@ permalink: /kb/287/Q287913/
 
 ## Q287913: URL Parameter Contains &quot;%3A&quot; When Redirected to Change Password
 
+{% raw %}
+
 	Article: Q287913
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -109,3 +111,5 @@ permalink: /kb/287/Q287913/
 	
 	=============================================================================
 	
+
+{% endraw %}

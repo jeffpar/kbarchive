@@ -6,6 +6,8 @@ permalink: /kb/123/Q123841/
 
 ## Q123841: HOWTO: Create a FORTRAN DLL and Call It from Visual Basic
 
+{% raw %}
+
 	Article: Q123841
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,2.0,3.0,5.1
@@ -312,3 +314,5 @@ permalink: /kb/123/Q123841/
 	
 	=============================================================================
 	
+
+{% endraw %}

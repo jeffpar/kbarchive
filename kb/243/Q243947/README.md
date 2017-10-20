@@ -6,6 +6,8 @@ permalink: /kb/243/Q243947/
 
 ## Q243947: FTP Service Not Installed by Default in IIS 5.0
 
+{% raw %}
+
 	Article: Q243947
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -52,3 +54,5 @@ permalink: /kb/243/Q243947/
 	
 	=============================================================================
 	
+
+{% endraw %}

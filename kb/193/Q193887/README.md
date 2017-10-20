@@ -6,6 +6,8 @@ permalink: /kb/193/Q193887/
 
 ## Q193887: Replacing a Local WINS Database from a Replica Server
 
+{% raw %}
+
 	Article: Q193887
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/193/Q193887/
 	
 	=============================================================================
 	
+
+{% endraw %}

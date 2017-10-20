@@ -6,6 +6,8 @@ permalink: /kb/066/Q66778/
 
 ## Q66778: FIX: Error Messages May Say &quot;short&quot; or &quot;int&quot; Instead of &quot;enum&quot;
 
+{% raw %}
+
 	Article: Q66778
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,6.0,6.0a,6.0ax
@@ -74,3 +76,5 @@ permalink: /kb/066/Q66778/
 	
 	=============================================================================
 	
+
+{% endraw %}

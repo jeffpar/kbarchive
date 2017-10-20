@@ -6,6 +6,8 @@ permalink: /kb/142/Q142991/
 
 ## Q142991: Using Wildcard Characters with the Find Command on MSN
 
+{% raw %}
+
 	Article: Q142991
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.5,2.51,2.52,2.6
@@ -79,3 +81,5 @@ permalink: /kb/142/Q142991/
 	
 	=============================================================================
 	
+
+{% endraw %}

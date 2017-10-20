@@ -6,6 +6,8 @@ permalink: /kb/069/Q69087/
 
 ## Q69087: Information on Windows 3.0 Font Scaling Technology
 
+{% raw %}
+
 	Article: Q69087
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -130,3 +132,5 @@ permalink: /kb/069/Q69087/
 	
 	=============================================================================
 	
+
+{% endraw %}

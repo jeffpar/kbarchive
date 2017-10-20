@@ -6,6 +6,8 @@ permalink: /kb/067/Q67249/
 
 ## Q67249: Using Window Extra Bytes in Custom Controls
 
+{% raw %}
+
 	Article: Q67249
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -72,3 +74,5 @@ permalink: /kb/067/Q67249/
 	
 	=============================================================================
 	
+
+{% endraw %}

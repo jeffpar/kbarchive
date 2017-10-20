@@ -6,6 +6,8 @@ permalink: /kb/090/Q90206/
 
 ## Q90206: WFWG Setup Hangs If Cabletron E2000 Series Active
 
+{% raw %}
+
 	Article: Q90206
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -45,3 +47,5 @@ permalink: /kb/090/Q90206/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/273/Q273038/
 
 ## Q273038: WD97: How to Work with Documents in Different Languages
 
+{% raw %}
+
 	Article: Q273038
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/273/Q273038/
 	
 	=============================================================================
 	
+
+{% endraw %}

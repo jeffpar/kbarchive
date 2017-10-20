@@ -6,6 +6,8 @@ permalink: /kb/200/Q200830/
 
 ## Q200830: SMS: Regularly Verifies Directory Structures and Shares
 
+{% raw %}
+
 	Article: Q200830
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/200/Q200830/
 	
 	=============================================================================
 	
+
+{% endraw %}

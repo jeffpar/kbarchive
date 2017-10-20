@@ -6,6 +6,8 @@ permalink: /kb/223/Q223863/
 
 ## Q223863: Spooler Service May Leak Attempting to Close Print Processor
 
+{% raw %}
+
 	Article: Q223863
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/223/Q223863/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145964/
 
 ## Q145964: XCLN: Upgrade Fails; Err Msg: Application(s) Are Running
 
+{% raw %}
+
 	Article: Q145964
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -63,3 +65,5 @@ permalink: /kb/145/Q145964/
 	
 	=============================================================================
 	
+
+{% endraw %}

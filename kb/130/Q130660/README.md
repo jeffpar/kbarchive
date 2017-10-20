@@ -6,6 +6,8 @@ permalink: /kb/130/Q130660/
 
 ## Q130660: STOP 0x1E in SFMSRV.SYS When Using Services for Macintosh
 
+{% raw %}
+
 	Article: Q130660
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -54,3 +56,5 @@ permalink: /kb/130/Q130660/
 	
 	=============================================================================
 	
+
+{% endraw %}

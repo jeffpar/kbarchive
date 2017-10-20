@@ -6,6 +6,8 @@ permalink: /kb/242/Q242877/
 
 ## Q242877: Age of Empires II: Game Screens or Objects Are Distorted
 
+{% raw %}
+
 	Article: Q242877
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -96,3 +98,5 @@ permalink: /kb/242/Q242877/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160505/
 
 ## Q160505: INFO: Files Modified by VC42b Patch - Part 3 of 4
 
+{% raw %}
+
 	Article: Q160505
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -1101,3 +1103,5 @@ permalink: /kb/160/Q160505/
 	
 	=============================================================================
 	
+
+{% endraw %}

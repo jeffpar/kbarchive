@@ -6,6 +6,8 @@ permalink: /kb/155/Q155955/
 
 ## Q155955: PowerPoint Animation Doesn't Play After Player Download
 
+{% raw %}
+
 	Article: Q155955
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; :
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155955/
 	
 	=============================================================================
 	
+
+{% endraw %}

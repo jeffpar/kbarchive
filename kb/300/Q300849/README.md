@@ -6,6 +6,8 @@ permalink: /kb/300/Q300849/
 
 ## Q300849: XADM: Error Messages Occur When You Run the ExMerge Utility
 
+{% raw %}
+
 	Article: Q300849
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.5
@@ -88,3 +90,5 @@ permalink: /kb/300/Q300849/
 	
 	=============================================================================
 	
+
+{% endraw %}

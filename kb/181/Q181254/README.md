@@ -6,6 +6,8 @@ permalink: /kb/181/Q181254/
 
 ## Q181254: INF: How to Use SQL_C_NUMERIC Data Type with Numeric Data
 
+{% raw %}
+
 	Article: Q181254
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -140,3 +142,5 @@ permalink: /kb/181/Q181254/
 	
 	=============================================================================
 	
+
+{% endraw %}

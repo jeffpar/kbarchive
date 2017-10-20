@@ -6,6 +6,8 @@ permalink: /kb/269/Q269774/
 
 ## Q269774: SMS: Error Message &quot;Unexpected Error Creating the Unique ID File
 
+{% raw %}
+
 	Article: Q269774
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -62,3 +64,5 @@ permalink: /kb/269/Q269774/
 	
 	=============================================================================
 	
+
+{% endraw %}

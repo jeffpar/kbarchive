@@ -6,6 +6,8 @@ permalink: /kb/148/Q148595/
 
 ## Q148595: XCLN: Creating Roving Users on Win95 and WinNT
 
+{% raw %}
+
 	Article: Q148595
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:3.51,4.0
@@ -189,3 +191,5 @@ permalink: /kb/148/Q148595/
 	
 	=============================================================================
 	
+
+{% endraw %}

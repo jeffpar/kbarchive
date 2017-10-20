@@ -6,6 +6,8 @@ permalink: /kb/244/Q244690/
 
 ## Q244690: List of Bugs Fixed in Windows NT 4.0 Service Pack 6/6a (Part 2)
 
+{% raw %}
+
 	Article: Q244690
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6,4.0 SP6a
@@ -319,3 +321,5 @@ permalink: /kb/244/Q244690/
 	
 	=============================================================================
 	
+
+{% endraw %}

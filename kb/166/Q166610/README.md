@@ -6,6 +6,8 @@ permalink: /kb/166/Q166610/
 
 ## Q166610: XFOR: Unable to Open Attachment from ccMail
 
+{% raw %}
+
 	Article: Q166610
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -65,3 +67,5 @@ permalink: /kb/166/Q166610/
 	
 	=============================================================================
 	
+
+{% endraw %}

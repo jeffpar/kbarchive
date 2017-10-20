@@ -6,6 +6,8 @@ permalink: /kb/179/Q179569/
 
 ## Q179569: Error in SQL Setup: Can't Find SQLBOOKS.IDX
 
+{% raw %}
+
 	Article: Q179569
 	Product(s): Microsoft Press
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/179/Q179569/
 	
 	=============================================================================
 	
+
+{% endraw %}

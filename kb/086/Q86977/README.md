@@ -6,6 +6,8 @@ permalink: /kb/086/Q86977/
 
 ## Q86977: X400: Definition of X.121 Address
 
+{% raw %}
+
 	Article: Q86977
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/086/Q86977/
 	
 	=============================================================================
 	
+
+{% endraw %}

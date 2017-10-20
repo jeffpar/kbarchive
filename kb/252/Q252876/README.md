@@ -6,6 +6,8 @@ permalink: /kb/252/Q252876/
 
 ## Q252876: How to View HTTP Data Frames Using Network Monitor
 
+{% raw %}
+
 	Article: Q252876
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -142,3 +144,5 @@ permalink: /kb/252/Q252876/
 	
 	=============================================================================
 	
+
+{% endraw %}

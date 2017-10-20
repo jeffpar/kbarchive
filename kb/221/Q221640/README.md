@@ -6,6 +6,8 @@ permalink: /kb/221/Q221640/
 
 ## Q221640: FIX: C0000005 Fatal Error Importing Chinese Excel 97 Worksheet
 
+{% raw %}
+
 	Article: Q221640
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -90,3 +92,5 @@ permalink: /kb/221/Q221640/
 	
 	=============================================================================
 	
+
+{% endraw %}

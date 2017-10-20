@@ -6,6 +6,8 @@ permalink: /kb/084/Q84465/
 
 ## Q84465: Bitfax May Cause GP Fault in Windows 3.1
 
+{% raw %}
+
 	Article: Q84465
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,4.0,6.0
@@ -58,3 +60,5 @@ permalink: /kb/084/Q84465/
 	
 	=============================================================================
 	
+
+{% endraw %}

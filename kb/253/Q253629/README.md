@@ -6,6 +6,8 @@ permalink: /kb/253/Q253629/
 
 ## Q253629: FS2000: No Control Tower Clearance for Takeoffs or Landings
 
+{% raw %}
+
 	Article: Q253629
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -37,3 +39,5 @@ permalink: /kb/253/Q253629/
 	
 	=============================================================================
 	
+
+{% endraw %}

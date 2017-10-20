@@ -6,6 +6,8 @@ permalink: /kb/047/Q47780/
 
 ## Q47780: Blinking Text May Be Eliminated with BIOS Call
 
+{% raw %}
+
 	Article: Q47780
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -84,3 +86,5 @@ permalink: /kb/047/Q47780/
 	       regs.h.bl = 0x1;
 	    int86 (BIOS_CALL, &regs, &regs);
 	}
+
+{% endraw %}

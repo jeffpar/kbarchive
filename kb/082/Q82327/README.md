@@ -6,6 +6,8 @@ permalink: /kb/082/Q82327/
 
 ## Q82327: Saving File in Ventura 4.0 Causes Sharing Violation
 
+{% raw %}
+
 	Article: Q82327
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/082/Q82327/
 	
 	=============================================================================
 	
+
+{% endraw %}

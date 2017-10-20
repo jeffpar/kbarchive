@@ -6,6 +6,8 @@ permalink: /kb/194/Q194560/
 
 ## Q194560: XADM: Store Crashes while Processing Outbound SMTP Message
 
+{% raw %}
+
 	Article: Q194560
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -158,3 +160,5 @@ permalink: /kb/194/Q194560/
 	
 	=============================================================================
 	
+
+{% endraw %}

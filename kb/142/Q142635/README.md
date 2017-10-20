@@ -6,6 +6,8 @@ permalink: /kb/142/Q142635/
 
 ## Q142635: Cannot Change the Drive Letter of Removable Drives
 
+{% raw %}
+
 	Article: Q142635
 	Product(s): Microsoft Windows NT
 	Version(s): Winnt:4.0
@@ -114,3 +116,5 @@ permalink: /kb/142/Q142635/
 	
 	=============================================================================
 	
+
+{% endraw %}

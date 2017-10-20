@@ -6,6 +6,8 @@ permalink: /kb/118/Q118858/
 
 ## Q118858: X400: Domain Defined Attribute Value to Reach SMTP
 
+{% raw %}
+
 	Article: Q118858
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2
@@ -41,3 +43,5 @@ permalink: /kb/118/Q118858/
 	
 	=============================================================================
 	
+
+{% endraw %}

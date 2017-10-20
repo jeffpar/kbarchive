@@ -6,6 +6,8 @@ permalink: /kb/115/Q115622/
 
 ## Q115622: ACC2: MS Access Dev. Toolkit Questions &amp; Answers
 
+{% raw %}
+
 	Article: Q115622
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 2.0
@@ -100,3 +102,5 @@ permalink: /kb/115/Q115622/
 	
 	=============================================================================
 	
+
+{% endraw %}

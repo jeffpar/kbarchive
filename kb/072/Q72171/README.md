@@ -6,6 +6,8 @@ permalink: /kb/072/Q72171/
 
 ## Q72171: Workarounds for 128 Character PATH Limitation
 
+{% raw %}
+
 	Article: Q72171
 	Product(s): Microsoft Disk Operating System
 	Version(s): 2000,2000 SP1,3.1,3.2,3.21,3.3,3.3a,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP
@@ -237,3 +239,5 @@ permalink: /kb/072/Q72171/
 	
 	=============================================================================
 	
+
+{% endraw %}

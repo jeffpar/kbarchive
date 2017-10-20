@@ -6,6 +6,8 @@ permalink: /kb/161/Q161659/
 
 ## Q161659: Stop 0x0000007F May Occur on Texas Instruments TravelMate
 
+{% raw %}
+
 	Article: Q161659
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/161/Q161659/
 	
 	=============================================================================
 	
+
+{% endraw %}

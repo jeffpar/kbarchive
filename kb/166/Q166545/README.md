@@ -6,6 +6,8 @@ permalink: /kb/166/Q166545/
 
 ## Q166545: XFOR: Exchange 5.0 DXA Appends 001 Only When Needed
 
+{% raw %}
+
 	Article: Q166545
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -149,3 +151,5 @@ permalink: /kb/166/Q166545/
 	
 	=============================================================================
 	
+
+{% endraw %}

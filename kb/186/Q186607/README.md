@@ -6,6 +6,8 @@ permalink: /kb/186/Q186607/
 
 ## Q186607: Understanding the Remote Desktop Protocol (RDP)
 
+{% raw %}
+
 	Article: Q186607
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -123,3 +125,5 @@ permalink: /kb/186/Q186607/
 	
 	=============================================================================
 	
+
+{% endraw %}

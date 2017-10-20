@@ -6,6 +6,8 @@ permalink: /kb/258/Q258628/
 
 ## Q258628: Baseball 2001: Field Radar Graphic Is Not Displayed Properly
 
+{% raw %}
+
 	Article: Q258628
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -87,3 +89,5 @@ permalink: /kb/258/Q258628/
 	
 	=============================================================================
 	
+
+{% endraw %}

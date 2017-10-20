@@ -6,6 +6,8 @@ permalink: /kb/278/Q278642/
 
 ## Q278642: CFS2: How to Import Missions from Combat Flight Simulator
 
+{% raw %}
+
 	Article: Q278642
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -138,3 +140,5 @@ permalink: /kb/278/Q278642/
 	
 	=============================================================================
 	
+
+{% endraw %}

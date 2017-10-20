@@ -6,6 +6,8 @@ permalink: /kb/299/Q299489/
 
 ## Q299489: Error 80004005, Network Server Objects Not Initialized!
 
+{% raw %}
+
 	Article: Q299489
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -58,3 +60,5 @@ permalink: /kb/299/Q299489/
 	
 	=============================================================================
 	
+
+{% endraw %}

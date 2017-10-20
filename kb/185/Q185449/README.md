@@ -6,6 +6,8 @@ permalink: /kb/185/Q185449/
 
 ## Q185449: DLC 802.2 Connection Stays Pending After Remote System Restart
 
+{% raw %}
+
 	Article: Q185449
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -90,3 +92,5 @@ permalink: /kb/185/Q185449/
 	
 	=============================================================================
 	
+
+{% endraw %}

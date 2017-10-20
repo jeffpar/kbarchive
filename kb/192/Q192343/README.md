@@ -6,6 +6,8 @@ permalink: /kb/192/Q192343/
 
 ## Q192343: HOWTO: Associating the Default ProjectHook Class to a Project
 
+{% raw %}
+
 	Article: Q192343
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -104,3 +106,5 @@ permalink: /kb/192/Q192343/
 	
 	=============================================================================
 	
+
+{% endraw %}

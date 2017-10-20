@@ -6,6 +6,8 @@ permalink: /kb/200/Q200614/
 
 ## Q200614: SMS: Setup Uninstall Fails to Clean Up Network Monitor Registry
 
+{% raw %}
+
 	Article: Q200614
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -53,3 +55,5 @@ permalink: /kb/200/Q200614/
 	
 	=============================================================================
 	
+
+{% endraw %}

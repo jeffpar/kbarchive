@@ -6,6 +6,8 @@ permalink: /kb/068/Q68330/
 
 ## Q68330: Decreasing Time to Log Onto Network with DOS/OS2 LM
 
+{% raw %}
+
 	Article: Q68330
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/068/Q68330/
 	
 	=============================================================================
 	
+
+{% endraw %}

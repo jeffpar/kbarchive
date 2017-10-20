@@ -6,6 +6,8 @@ permalink: /kb/126/Q126823/
 
 ## Q126823: Writer/Artist: Setup on Novell Personal NetWare
 
+{% raw %}
+
 	Article: Q126823
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.1,1.1a,3.1
@@ -56,3 +58,5 @@ permalink: /kb/126/Q126823/
 	
 	=============================================================================
 	
+
+{% endraw %}

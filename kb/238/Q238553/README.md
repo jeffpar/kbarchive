@@ -6,6 +6,8 @@ permalink: /kb/238/Q238553/
 
 ## Q238553: SAMPLE: VFPSCUT.EXE Creates Desktop Shortcut to a VFP App
 
+{% raw %}
+
 	Article: Q238553
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -231,3 +233,5 @@ permalink: /kb/238/Q238553/
 	
 	=============================================================================
 	
+
+{% endraw %}

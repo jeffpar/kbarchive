@@ -6,6 +6,8 @@ permalink: /kb/127/Q127193/
 
 ## Q127193: SAMPLE: DLGDB CDialog Sharing a CRecordset Object
 
+{% raw %}
+
 	Article: Q127193
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0
@@ -57,3 +59,5 @@ permalink: /kb/127/Q127193/
 	
 	=============================================================================
 	
+
+{% endraw %}

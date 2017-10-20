@@ -6,6 +6,8 @@ permalink: /kb/120/Q120839/
 
 ## Q120839: &quot;Microsoft System Information&quot; Utility Included on Disk 1
 
+{% raw %}
+
 	Article: Q120839
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -115,3 +117,5 @@ permalink: /kb/120/Q120839/
 	
 	=============================================================================
 	
+
+{% endraw %}

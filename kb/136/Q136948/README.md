@@ -6,6 +6,8 @@ permalink: /kb/136/Q136948/
 
 ## Q136948: Benefits of Using Windows 95 Sound Card Drivers
 
+{% raw %}
+
 	Article: Q136948
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136948/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259855/
 
 ## Q259855: HOWTO: Enable Debug Prints in IEEE 1394 Drivers
 
+{% raw %}
+
 	Article: Q259855
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -136,3 +138,5 @@ permalink: /kb/259/Q259855/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189454/
 
 ## Q189454: MSN 2.52: Contents of the Uninstall.txt File
 
+{% raw %}
+
 	Article: Q189454
 	Product(s): The Microsoft Network
 	Version(s): 2.52
@@ -73,3 +75,5 @@ permalink: /kb/189/Q189454/
 	
 	=============================================================================
 	
+
+{% endraw %}

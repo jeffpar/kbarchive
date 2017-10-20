@@ -6,6 +6,8 @@ permalink: /kb/261/Q261129/
 
 ## Q261129: DLC Connection Stays Pending Due to Bit-Flipped TEST Poll
 
+{% raw %}
+
 	Article: Q261129
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11 SP1,2.11 SP2,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -89,3 +91,5 @@ permalink: /kb/261/Q261129/
 	
 	=============================================================================
 	
+
+{% endraw %}

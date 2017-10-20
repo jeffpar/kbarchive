@@ -6,6 +6,8 @@ permalink: /kb/148/Q148961/
 
 ## Q148961: XADM: Event ID 9037 Advising Increased JET Tables
 
+{% raw %}
+
 	Article: Q148961
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -100,3 +102,5 @@ permalink: /kb/148/Q148961/
 	
 	=============================================================================
 	
+
+{% endraw %}

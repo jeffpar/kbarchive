@@ -6,6 +6,8 @@ permalink: /kb/127/Q127055/
 
 ## Q127055: How to Cause ScanDisk for Windows to Retest Bad Clusters
 
+{% raw %}
+
 	Article: Q127055
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -141,3 +143,5 @@ permalink: /kb/127/Q127055/
 	
 	=============================================================================
 	
+
+{% endraw %}

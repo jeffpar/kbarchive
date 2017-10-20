@@ -6,6 +6,8 @@ permalink: /kb/276/Q276501/
 
 ## Q276501: SAMPLE: How to Set a &quot;Page # of #&quot; Counter in VFP Report
 
+{% raw %}
+
 	Article: Q276501
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -128,3 +130,5 @@ permalink: /kb/276/Q276501/
 	
 	=============================================================================
 	
+
+{% endraw %}

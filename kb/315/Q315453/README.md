@@ -6,6 +6,8 @@ permalink: /kb/315/Q315453/
 
 ## Q315453: FP: Error 0177: 800401f3 When You Attempt to Connect to Database
 
+{% raw %}
+
 	Article: Q315453
 	Product(s): Word Front Page
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/315/Q315453/
 	
 	=============================================================================
 	
+
+{% endraw %}

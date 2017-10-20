@@ -6,6 +6,8 @@ permalink: /kb/140/Q140838/
 
 ## Q140838: SNA Server Win3x Client Tracing Text File Copied to SNA Clients
 
+{% raw %}
+
 	Article: Q140838
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -239,3 +241,5 @@ permalink: /kb/140/Q140838/
 	
 	=============================================================================
 	
+
+{% endraw %}

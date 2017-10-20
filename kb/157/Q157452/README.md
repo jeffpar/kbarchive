@@ -6,6 +6,8 @@ permalink: /kb/157/Q157452/
 
 ## Q157452: MSB Earth: How to Use the Geotable
 
+{% raw %}
+
 	Article: Q157452
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -120,3 +122,5 @@ permalink: /kb/157/Q157452/
 	
 	=============================================================================
 	
+
+{% endraw %}

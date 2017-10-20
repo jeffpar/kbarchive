@@ -6,6 +6,8 @@ permalink: /kb/224/Q224173/
 
 ## Q224173: XCON: Cannot Enable Trace Mode for Cirel Winsock X.25 Connection
 
+{% raw %}
+
 	Article: Q224173
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -52,3 +54,5 @@ permalink: /kb/224/Q224173/
 	
 	=============================================================================
 	
+
+{% endraw %}

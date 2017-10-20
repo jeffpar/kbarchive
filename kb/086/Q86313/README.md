@@ -6,6 +6,8 @@ permalink: /kb/086/Q86313/
 
 ## Q86313: PC OS2: PM Client About Box Reads &quot;Mail for Windows&quot;
 
+{% raw %}
+
 	Article: Q86313
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86313/
 	
 	=============================================================================
 	
+
+{% endraw %}

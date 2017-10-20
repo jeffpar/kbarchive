@@ -6,6 +6,8 @@ permalink: /kb/122/Q122382/
 
 ## Q122382: Scheduler Overwrites Package Property Information
 
+{% raw %}
+
 	Article: Q122382
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -52,3 +54,5 @@ permalink: /kb/122/Q122382/
 	
 	=============================================================================
 	
+
+{% endraw %}

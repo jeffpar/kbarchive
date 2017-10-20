@@ -6,6 +6,8 @@ permalink: /kb/235/Q235699/
 
 ## Q235699: XFOR: Meetings Incorrectly Migrated from GroupWise 4.x
 
+{% raw %}
+
 	Article: Q235699
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/235/Q235699/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/299/Q299788/
 
 ## Q299788: FIX: Setting SelStart = 0 in EditBox Causes Fatal Exception
 
+{% raw %}
+
 	Article: Q299788
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -55,3 +57,5 @@ permalink: /kb/299/Q299788/
 	
 	=============================================================================
 	
+
+{% endraw %}

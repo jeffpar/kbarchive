@@ -6,6 +6,8 @@ permalink: /kb/139/Q139179/
 
 ## Q139179: 3C0M 3C59X.SYS Driver Fails to Initialize in Windows NT 3.51
 
+{% raw %}
+
 	Article: Q139179
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -81,3 +83,5 @@ permalink: /kb/139/Q139179/
 	
 	=============================================================================
 	
+
+{% endraw %}

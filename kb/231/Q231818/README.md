@@ -6,6 +6,8 @@ permalink: /kb/231/Q231818/
 
 ## Q231818: XCON: P1 Headers with Very Long Object IDs Cause MTA to Crash
 
+{% raw %}
+
 	Article: Q231818
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -98,3 +100,5 @@ permalink: /kb/231/Q231818/
 	
 	=============================================================================
 	
+
+{% endraw %}

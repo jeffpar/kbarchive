@@ -6,6 +6,8 @@ permalink: /kb/177/Q177900/
 
 ## Q177900: AS/400 Prompts for Sign-on When SNA Server Is Enabled for SSO
 
+{% raw %}
+
 	Article: Q177900
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -98,3 +100,5 @@ permalink: /kb/177/Q177900/
 	
 	=============================================================================
 	
+
+{% endraw %}

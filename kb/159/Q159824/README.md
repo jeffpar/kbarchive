@@ -6,6 +6,8 @@ permalink: /kb/159/Q159824/
 
 ## Q159824: WD97: How to Automatically Update Fields
 
+{% raw %}
+
 	Article: Q159824
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/159/Q159824/
 	
 	=============================================================================
 	
+
+{% endraw %}

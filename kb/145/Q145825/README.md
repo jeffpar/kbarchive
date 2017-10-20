@@ -6,6 +6,8 @@ permalink: /kb/145/Q145825/
 
 ## Q145825: 3D Movie Maker: How to Remove Recorded/Imported Sounds
 
+{% raw %}
+
 	Article: Q145825
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -113,3 +115,5 @@ permalink: /kb/145/Q145825/
 	
 	=============================================================================
 	
+
+{% endraw %}

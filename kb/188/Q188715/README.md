@@ -6,6 +6,8 @@ permalink: /kb/188/Q188715/
 
 ## Q188715: Global ASA Not Firing When Visual InterDev Made IIS 4.0 App
 
+{% raw %}
+
 	Article: Q188715
 	Product(s): Internet Information Server
 	Version(s): 1.0,4.0,6.0
@@ -122,3 +124,5 @@ permalink: /kb/188/Q188715/
 	
 	=============================================================================
 	
+
+{% endraw %}

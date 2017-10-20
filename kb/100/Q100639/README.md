@@ -6,6 +6,8 @@ permalink: /kb/100/Q100639/
 
 ## Q100639: INFO: Unicode Support in the Microsoft Foundation Class Library
 
+{% raw %}
+
 	Article: Q100639
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -67,3 +69,5 @@ permalink: /kb/100/Q100639/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153941/
 
 ## Q153941: Install May Stop Responding on SCSI Drives Greater Than 8.4 GB
 
+{% raw %}
+
 	Article: Q153941
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153941/
 	
 	=============================================================================
 	
+
+{% endraw %}

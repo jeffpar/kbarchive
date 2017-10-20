@@ -6,6 +6,8 @@ permalink: /kb/297/Q297122/
 
 ## Q297122: MSN Explorer Stops Responding When Opening E-mail Attachments
 
+{% raw %}
+
 	Article: Q297122
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -95,3 +97,5 @@ permalink: /kb/297/Q297122/
 	
 	=============================================================================
 	
+
+{% endraw %}

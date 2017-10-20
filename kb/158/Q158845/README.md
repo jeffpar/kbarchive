@@ -6,6 +6,8 @@ permalink: /kb/158/Q158845/
 
 ## Q158845: Extra Serial Port Displayed in Device Manager
 
+{% raw %}
+
 	Article: Q158845
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -48,3 +50,5 @@ permalink: /kb/158/Q158845/
 	
 	=============================================================================
 	
+
+{% endraw %}

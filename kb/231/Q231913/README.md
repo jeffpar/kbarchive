@@ -6,6 +6,8 @@ permalink: /kb/231/Q231913/
 
 ## Q231913: Midtown Madness: Game Hangs When You Change Screen Resolution
 
+{% raw %}
+
 	Article: Q231913
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/231/Q231913/
 	
 	=============================================================================
 	
+
+{% endraw %}

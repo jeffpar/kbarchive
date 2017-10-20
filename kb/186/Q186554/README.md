@@ -6,6 +6,8 @@ permalink: /kb/186/Q186554/
 
 ## Q186554: Terminal Server Error Messages: 2000 to 2199
 
+{% raw %}
+
 	Article: Q186554
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -824,3 +826,5 @@ permalink: /kb/186/Q186554/
 	
 	=============================================================================
 	
+
+{% endraw %}

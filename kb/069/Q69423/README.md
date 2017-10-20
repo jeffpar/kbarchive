@@ -6,6 +6,8 @@ permalink: /kb/069/Q69423/
 
 ## Q69423: Printing from Windows Notepad Using the Word Wrap Option
 
+{% raw %}
+
 	Article: Q69423
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/069/Q69423/
 	
 	=============================================================================
 	
+
+{% endraw %}

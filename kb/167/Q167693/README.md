@@ -6,6 +6,8 @@ permalink: /kb/167/Q167693/
 
 ## Q167693: FIX: MFC Application Hangs on Multiprocessor Machine
 
+{% raw %}
+
 	Article: Q167693
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -61,3 +63,5 @@ permalink: /kb/167/Q167693/
 	
 	=============================================================================
 	
+
+{% endraw %}

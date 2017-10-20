@@ -6,6 +6,8 @@ permalink: /kb/141/Q141058/
 
 ## Q141058: PRB: Visual Basic .FRX File Not Added to SourceSafe
 
+{% raw %}
+
 	Article: Q141058
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -89,3 +91,5 @@ permalink: /kb/141/Q141058/
 	
 	=============================================================================
 	
+
+{% endraw %}

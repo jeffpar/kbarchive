@@ -6,6 +6,8 @@ permalink: /kb/068/Q68590/
 
 ## Q68590: &quot;Symbol Defined More Than Once&quot; LINKing BASIC 7.10/FORTRAN 5.0
 
+{% raw %}
+
 	Article: Q68590
 	Product(s): See article
 	Version(s): 7.10
@@ -103,3 +105,5 @@ permalink: /kb/068/Q68590/
 	   BC /O /E /FPi /Zi basic.bas;
 	   link /NOD/NOE/CO basic.obj + fortran.obj,s.exe,,BCL71ENR.LIB+
 	                   llibcer.lib+mixed.lib;
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191266/
 
 ## Q191266: HP LaserJet 4 Plus Miniport Driver Mixes Lower and Upper Tray
 
+{% raw %}
+
 	Article: Q191266
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -146,3 +148,5 @@ permalink: /kb/191/Q191266/
 	
 	=============================================================================
 	
+
+{% endraw %}

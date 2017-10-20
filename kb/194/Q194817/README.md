@@ -6,6 +6,8 @@ permalink: /kb/194/Q194817/
 
 ## Q194817: Combat Flight Simulator: Computer Hangs When You Quit the Game
 
+{% raw %}
+
 	Article: Q194817
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -106,3 +108,5 @@ permalink: /kb/194/Q194817/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31277/
 
 ## Q31277: Cannot LOCK Portions of File OPENed with Binary Access File
 
+{% raw %}
+
 	Article: Q31277
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -78,3 +80,5 @@ permalink: /kb/031/Q31277/
 	UNLOCK #1, 30 TO 32
 	UNLOCK #2, 1
 	CLOSE
+
+{% endraw %}

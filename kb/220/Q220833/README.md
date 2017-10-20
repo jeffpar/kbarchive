@@ -6,6 +6,8 @@ permalink: /kb/220/Q220833/
 
 ## Q220833: XFOR:How to Capture &amp; Replay Messages Through PROFS Connector
 
+{% raw %}
+
 	Article: Q220833
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -105,3 +107,5 @@ permalink: /kb/220/Q220833/
 	
 	=============================================================================
 	
+
+{% endraw %}

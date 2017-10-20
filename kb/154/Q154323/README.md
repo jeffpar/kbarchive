@@ -6,6 +6,8 @@ permalink: /kb/154/Q154323/
 
 ## Q154323: Explorapedia Nature: Files Installed and Modified, version 1.2
 
+{% raw %}
+
 	Article: Q154323
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.2; :
@@ -118,3 +120,5 @@ permalink: /kb/154/Q154323/
 	
 	=============================================================================
 	
+
+{% endraw %}

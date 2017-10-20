@@ -6,6 +6,8 @@ permalink: /kb/104/Q104249/
 
 ## Q104249: PC WSPlus: Setting Up Schedule Distribution
 
+{% raw %}
+
 	Article: Q104249
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -161,3 +163,5 @@ permalink: /kb/104/Q104249/
 	
 	=============================================================================
 	
+
+{% endraw %}

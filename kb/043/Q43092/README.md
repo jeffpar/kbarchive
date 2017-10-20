@@ -6,6 +6,8 @@ permalink: /kb/043/Q43092/
 
 ## Q43092: Underscore (_) Not OK in Variable Name or Line Continuation
 
+{% raw %}
+
 	Article: Q43092
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -62,3 +64,5 @@ permalink: /kb/043/Q43092/
 	
 	    A = 5 * B
 	    END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193017/
 
 ## Q193017: BUG: Incorrect File Extension Using ActiveX Document Wizard
 
+{% raw %}
+
 	Article: Q193017
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/193/Q193017/
 	
 	=============================================================================
 	
+
+{% endraw %}

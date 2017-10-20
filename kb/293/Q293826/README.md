@@ -6,6 +6,8 @@ permalink: /kb/293/Q293826/
 
 ## Q293826: Pattern-Matching Function Causes Access Violation on FTP Server
 
+{% raw %}
+
 	Article: Q293826
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -214,3 +216,5 @@ permalink: /kb/293/Q293826/
 	
 	=============================================================================
 	
+
+{% endraw %}

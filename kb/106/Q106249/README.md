@@ -6,6 +6,8 @@ permalink: /kb/106/Q106249/
 
 ## Q106249: WFWG 3.11 ErrMsg: Error 13: The Data Is Invalid
 
+{% raw %}
+
 	Article: Q106249
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -61,3 +63,5 @@ permalink: /kb/106/Q106249/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84128/
 
 ## Q84128: Windows SDK 3.1 Includes Run-time Libraries for MS C 6.0
 
+{% raw %}
+
 	Article: Q84128
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/084/Q84128/
 	
 	=============================================================================
 	
+
+{% endraw %}

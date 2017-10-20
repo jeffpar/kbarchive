@@ -6,6 +6,8 @@ permalink: /kb/182/Q182558/
 
 ## Q182558: XADM: Sending To A Mailbox With An Invalid Alternate Recipient
 
+{% raw %}
+
 	Article: Q182558
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/182/Q182558/
 	
 	=============================================================================
 	
+
+{% endraw %}

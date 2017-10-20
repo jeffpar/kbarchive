@@ -6,6 +6,8 @@ permalink: /kb/083/Q83261/
 
 ## Q83261: Beethoven Err Msg: Cannot Clear or Save Game Setting
 
+{% raw %}
+
 	Article: Q83261
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a
@@ -49,3 +51,5 @@ permalink: /kb/083/Q83261/
 	
 	=============================================================================
 	
+
+{% endraw %}

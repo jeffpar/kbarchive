@@ -6,6 +6,8 @@ permalink: /kb/141/Q141314/
 
 ## Q141314: FIX: Label Wizard Allows Fields to Sort with View
 
+{% raw %}
+
 	Article: Q141314
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -58,3 +60,5 @@ permalink: /kb/141/Q141314/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/202/Q202078/
 
 ## Q202078: SMS: Controlling IDMIF/NOIDMIF Processing
 
+{% raw %}
+
 	Article: Q202078
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -105,3 +107,5 @@ permalink: /kb/202/Q202078/
 	
 	=============================================================================
 	
+
+{% endraw %}

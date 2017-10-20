@@ -6,6 +6,8 @@ permalink: /kb/173/Q173448/
 
 ## Q173448: Expedia Streets 98: Testing CD-ROM Drive for File Access
 
+{% raw %}
+
 	Article: Q173448
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -106,3 +108,5 @@ permalink: /kb/173/Q173448/
 	
 	=============================================================================
 	
+
+{% endraw %}

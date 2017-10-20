@@ -6,6 +6,8 @@ permalink: /kb/173/Q173916/
 
 ## Q173916: WD97: Inserting or Pasting over Selection Retains Hyperlink
 
+{% raw %}
+
 	Article: Q173916
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -137,3 +139,5 @@ permalink: /kb/173/Q173916/
 	
 	=============================================================================
 	
+
+{% endraw %}

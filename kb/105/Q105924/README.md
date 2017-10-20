@@ -6,6 +6,8 @@ permalink: /kb/105/Q105924/
 
 ## Q105924: Determining Version of Windows Sound System 1.0x Software
 
+{% raw %}
+
 	Article: Q105924
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/105/Q105924/
 	
 	=============================================================================
 	
+
+{% endraw %}

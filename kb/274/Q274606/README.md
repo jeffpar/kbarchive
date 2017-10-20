@@ -6,6 +6,8 @@ permalink: /kb/274/Q274606/
 
 ## Q274606: CFS2: Collision Detection Does Not Occur in Carrier Mission
 
+{% raw %}
+
 	Article: Q274606
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/274/Q274606/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190684/
 
 ## Q190684: HOWTO: Insert a Splash Screen into a Dialog-Based Application
 
+{% raw %}
+
 	Article: Q190684
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/190/Q190684/
 	
 	=============================================================================
 	
+
+{% endraw %}

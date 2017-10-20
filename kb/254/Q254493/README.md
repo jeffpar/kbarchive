@@ -6,6 +6,8 @@ permalink: /kb/254/Q254493/
 
 ## Q254493: SHORTCUT.EXE Does Not Accept Pathnames In Command Line
 
+{% raw %}
+
 	Article: Q254493
 	Product(s): Microsoft Press
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/254/Q254493/
 	
 	=============================================================================
 	
+
+{% endraw %}

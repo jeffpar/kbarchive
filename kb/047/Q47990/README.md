@@ -6,6 +6,8 @@ permalink: /kb/047/Q47990/
 
 ## Q47990: Possible Causes of &quot;'&#95;&#95;iob' : Unresolved External&quot;
 
+{% raw %}
+
 	Article: Q47990
 	Product(s): See article
 	Version(s): 5.10
@@ -30,3 +32,5 @@ permalink: /kb/047/Q47990/
 	
 	These options, as well as other important information, are covered in
 	Section 5.2 of MTDYNA.DOC.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159610/
 
 ## Q159610: SMS: Access Violation Occurs with Pollinv.exe
 
+{% raw %}
+
 	Article: Q159610
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -62,3 +64,5 @@ permalink: /kb/159/Q159610/
 	
 	=============================================================================
 	
+
+{% endraw %}

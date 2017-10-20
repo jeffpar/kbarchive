@@ -6,6 +6,8 @@ permalink: /kb/078/Q78303/
 
 ## Q78303: Intermittent File Corruption Problem
 
+{% raw %}
+
 	Article: Q78303
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/078/Q78303/
 	
 	=============================================================================
 	
+
+{% endraw %}

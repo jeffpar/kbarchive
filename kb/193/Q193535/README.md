@@ -6,6 +6,8 @@ permalink: /kb/193/Q193535/
 
 ## Q193535: XFOR: Notes Directory or Mapping Rule Changes Ineffective
 
+{% raw %}
+
 	Article: Q193535
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -104,3 +106,5 @@ permalink: /kb/193/Q193535/
 	
 	=============================================================================
 	
+
+{% endraw %}

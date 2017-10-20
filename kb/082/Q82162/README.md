@@ -6,6 +6,8 @@ permalink: /kb/082/Q82162/
 
 ## Q82162: Incorrect Fonts Are Displayed in MS-DOS Window Using Graphics
 
+{% raw %}
+
 	Article: Q82162
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -47,3 +49,5 @@ permalink: /kb/082/Q82162/
 	
 	=============================================================================
 	
+
+{% endraw %}

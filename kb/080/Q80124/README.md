@@ -6,6 +6,8 @@ permalink: /kb/080/Q80124/
 
 ## Q80124: Retrieving the Names of Simultaneous Tasks Under Windows
 
+{% raw %}
+
 	Article: Q80124
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -82,3 +84,5 @@ permalink: /kb/080/Q80124/
 	
 	=============================================================================
 	
+
+{% endraw %}

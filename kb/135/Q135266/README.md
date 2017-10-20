@@ -6,6 +6,8 @@ permalink: /kb/135/Q135266/
 
 ## Q135266: PRB: Converting 2.x Screen Does Not Allow Adjustable Pageframe
 
+{% raw %}
+
 	Article: Q135266
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -76,3 +78,5 @@ permalink: /kb/135/Q135266/
 	
 	=============================================================================
 	
+
+{% endraw %}

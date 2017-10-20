@@ -6,6 +6,8 @@ permalink: /kb/141/Q141278/
 
 ## Q141278: Err Msg: Incompatible Parameters: Sector Size Adjusted
 
+{% raw %}
+
 	Article: Q141278
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -76,3 +78,5 @@ permalink: /kb/141/Q141278/
 	
 	=============================================================================
 	
+
+{% endraw %}

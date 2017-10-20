@@ -6,6 +6,8 @@ permalink: /kb/083/Q83650/
 
 ## Q83650: Some Applications Won't Respond to Paintbrush Update Command
 
+{% raw %}
+
 	Article: Q83650
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/083/Q83650/
 	
 	=============================================================================
 	
+
+{% endraw %}

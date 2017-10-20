@@ -6,6 +6,8 @@ permalink: /kb/247/Q247721/
 
 ## Q247721: Fighter Ace II: Black Lines Appear Around Ground Textures
 
+{% raw %}
+
 	Article: Q247721
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/247/Q247721/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254251/
 
 ## Q254251: XADM: LDAP Err. on Mailbox Manager on Windows 2000 Server DC
 
+{% raw %}
+
 	Article: Q254251
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5 SP3
@@ -103,3 +105,5 @@ permalink: /kb/254/Q254251/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136517/
 
 ## Q136517: How the Recycle Bin Stores Files
 
+{% raw %}
+
 	Article: Q136517
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; Win2000:95; winnt:4.0
@@ -136,3 +138,5 @@ permalink: /kb/136/Q136517/
 	
 	=============================================================================
 	
+
+{% endraw %}

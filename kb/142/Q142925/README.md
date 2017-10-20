@@ -6,6 +6,8 @@ permalink: /kb/142/Q142925/
 
 ## Q142925: HOWTO: Cancel an Asynchronous Query--RDO
 
+{% raw %}
+
 	Article: Q142925
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/142/Q142925/
 	
 	=============================================================================
 	
+
+{% endraw %}

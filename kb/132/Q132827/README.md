@@ -6,6 +6,8 @@ permalink: /kb/132/Q132827/
 
 ## Q132827: Windows 95 MS-DOS Editor CTRL+Q+Y Functionality Same as CTRL+Y
 
+{% raw %}
+
 	Article: Q132827
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132827/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130079/
 
 ## Q130079: Err Msg: Dial-Up Networking Could Not Negotiate Compatible...
 
+{% raw %}
+
 	Article: Q130079
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -190,3 +192,5 @@ permalink: /kb/130/Q130079/
 	
 	=============================================================================
 	
+
+{% endraw %}

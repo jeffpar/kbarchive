@@ -6,6 +6,8 @@ permalink: /kb/264/Q264377/
 
 ## Q264377: Windows Services for UNIX Solaris SSOD for Sparc Only
 
+{% raw %}
+
 	Article: Q264377
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,3.0
@@ -52,3 +54,5 @@ permalink: /kb/264/Q264377/
 	
 	=============================================================================
 	
+
+{% endraw %}

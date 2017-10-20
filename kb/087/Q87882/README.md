@@ -6,6 +6,8 @@ permalink: /kb/087/Q87882/
 
 ## Q87882: Using SHARE.EXE and Sharing Violations with WinLogin
 
+{% raw %}
+
 	Article: Q87882
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0,3.1,3.11
@@ -88,3 +90,5 @@ permalink: /kb/087/Q87882/
 	
 	=============================================================================
 	
+
+{% endraw %}

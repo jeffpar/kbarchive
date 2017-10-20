@@ -6,6 +6,8 @@ permalink: /kb/214/Q214605/
 
 ## Q214605: FP98: How to Uninstall and Reinstall Server Extensions on UNIX
 
+{% raw %}
+
 	Article: Q214605
 	Product(s): Word Front Page
 	Version(s): WINDOWS:
@@ -130,3 +132,5 @@ permalink: /kb/214/Q214605/
 	
 	=============================================================================
 	
+
+{% endraw %}

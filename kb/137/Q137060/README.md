@@ -6,6 +6,8 @@ permalink: /kb/137/Q137060/
 
 ## Q137060: FIX: FontSize=1 Causes Visual FoxPro to Terminate w/Windows 95
 
+{% raw %}
+
 	Article: Q137060
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/137/Q137060/
 	
 	=============================================================================
 	
+
+{% endraw %}

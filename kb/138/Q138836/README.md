@@ -6,6 +6,8 @@ permalink: /kb/138/Q138836/
 
 ## Q138836: Flying Fonts Screen Saver Leaves Afterimages on Screen
 
+{% raw %}
+
 	Article: Q138836
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/138/Q138836/
 	
 	=============================================================================
 	
+
+{% endraw %}

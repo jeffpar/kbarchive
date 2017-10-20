@@ -6,6 +6,8 @@ permalink: /kb/067/Q67518/
 
 ## Q67518: Shrinking and Replicating Large Images in Paintbrush
 
+{% raw %}
+
 	Article: Q67518
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/067/Q67518/
 	
 	=============================================================================
 	
+
+{% endraw %}

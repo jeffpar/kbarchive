@@ -6,6 +6,8 @@ permalink: /kb/151/Q151078/
 
 ## Q151078: FIX: Arrows to Scroll Tabs in TabStrip Control Not Shown
 
+{% raw %}
+
 	Article: Q151078
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -83,3 +85,5 @@ permalink: /kb/151/Q151078/
 	
 	=============================================================================
 	
+
+{% endraw %}

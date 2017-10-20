@@ -6,6 +6,8 @@ permalink: /kb/313/Q313437/
 
 ## Q313437: HOW TO: Enable Logging in IIS 5.0
 
+{% raw %}
+
 	Article: Q313437
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -143,3 +145,5 @@ permalink: /kb/313/Q313437/
 	
 	=============================================================================
 	
+
+{% endraw %}

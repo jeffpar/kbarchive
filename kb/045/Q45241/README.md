@@ -6,6 +6,8 @@ permalink: /kb/045/Q45241/
 
 ## Q45241: Setting a Breakpoint Highlights More Than One Line
 
+{% raw %}
+
 	Article: Q45241
 	Product(s): See article
 	Version(s): 2.20
@@ -40,3 +42,5 @@ permalink: /kb/045/Q45241/
 	
 	After setting a breakpoint that highlights more than one line of code,
 	using the BL command will list only the one breakpoint you set.
+
+{% endraw %}

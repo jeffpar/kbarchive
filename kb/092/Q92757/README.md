@@ -6,6 +6,8 @@ permalink: /kb/092/Q92757/
 
 ## Q92757: VFW: Troubleshooting - Frames Dropping During Playback
 
+{% raw %}
+
 	Article: Q92757
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/092/Q92757/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129067/
 
 ## Q129067: Using Windows NT RAS to Connect to CompuServe PPP
 
+{% raw %}
+
 	Article: Q129067
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -161,3 +163,5 @@ permalink: /kb/129/Q129067/
 	
 	=============================================================================
 	
+
+{% endraw %}

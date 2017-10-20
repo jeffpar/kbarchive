@@ -6,6 +6,8 @@ permalink: /kb/151/Q151388/
 
 ## Q151388: Setup Prompts for CD-ROM When Installing to Removable Disk
 
+{% raw %}
+
 	Article: Q151388
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/151/Q151388/
 	
 	=============================================================================
 	
+
+{% endraw %}

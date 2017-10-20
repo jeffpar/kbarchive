@@ -6,6 +6,8 @@ permalink: /kb/192/Q192705/
 
 ## Q192705: PRB: Activation of VB MDI Child Window and ActiveX Control
 
+{% raw %}
+
 	Article: Q192705
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -188,3 +190,5 @@ permalink: /kb/192/Q192705/
 	
 	=============================================================================
 	
+
+{% endraw %}

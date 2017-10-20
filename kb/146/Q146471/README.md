@@ -6,6 +6,8 @@ permalink: /kb/146/Q146471/
 
 ## Q146471: XCLN: Cannot Save Parameters of Electronic Forms
 
+{% raw %}
+
 	Article: Q146471
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196862/
 
 ## Q196862: WD97: Heading Numbering Command Changes Style, Paragraph Format
 
+{% raw %}
+
 	Article: Q196862
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -121,3 +123,5 @@ permalink: /kb/196/Q196862/
 	
 	=============================================================================
 	
+
+{% endraw %}

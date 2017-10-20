@@ -6,6 +6,8 @@ permalink: /kb/129/Q129983/
 
 ## Q129983: Compression Statistics Not Displayed in RAS Admin With SP2
 
+{% raw %}
+
 	Article: Q129983
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.11 3.50
@@ -65,3 +67,5 @@ permalink: /kb/129/Q129983/
 	
 	=============================================================================
 	
+
+{% endraw %}

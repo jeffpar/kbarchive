@@ -6,6 +6,8 @@ permalink: /kb/141/Q141274/
 
 ## Q141274: PRB: COleControl::Serialize Not Called with VB as Container
 
+{% raw %}
+
 	Article: Q141274
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.0; winnt:2.0,2.1,2.2,4.0
@@ -152,3 +154,5 @@ permalink: /kb/141/Q141274/
 	
 	=============================================================================
 	
+
+{% endraw %}

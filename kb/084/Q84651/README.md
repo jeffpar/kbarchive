@@ -6,6 +6,8 @@ permalink: /kb/084/Q84651/
 
 ## Q84651: TrueType Font Pack File List with Expanded Filenames &amp; Sizes
 
+{% raw %}
+
 	Article: Q84651
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -151,3 +153,5 @@ permalink: /kb/084/Q84651/
 	
 	=============================================================================
 	
+
+{% endraw %}

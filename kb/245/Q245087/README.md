@@ -6,6 +6,8 @@ permalink: /kb/245/Q245087/
 
 ## Q245087: Err Msg: STOP C0000221 - Bad Image Checksum in Ntvdm.exe
 
+{% raw %}
+
 	Article: Q245087
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/245/Q245087/
 	
 	=============================================================================
 	
+
+{% endraw %}

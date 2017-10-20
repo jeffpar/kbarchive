@@ -6,6 +6,8 @@ permalink: /kb/160/Q160604/
 
 ## Q160604: Access Violation in security!SspQueryContextAttributesW
 
+{% raw %}
+
 	Article: Q160604
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/160/Q160604/
 	
 	=============================================================================
 	
+
+{% endraw %}

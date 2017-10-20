@@ -6,6 +6,8 @@ permalink: /kb/027/Q27225/
 
 ## Q27225: INFO: Determining Available RGB Values of an Output Device
 
+{% raw %}
+
 	Article: Q27225
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -107,3 +109,5 @@ permalink: /kb/027/Q27225/
 	
 	=============================================================================
 	
+
+{% endraw %}

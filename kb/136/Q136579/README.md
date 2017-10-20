@@ -6,6 +6,8 @@ permalink: /kb/136/Q136579/
 
 ## Q136579: How Visual FoxPro Caches Tables by Using File Caching
 
+{% raw %}
+
 	Article: Q136579
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/136/Q136579/
 	
 	=============================================================================
 	
+
+{% endraw %}

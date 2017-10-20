@@ -6,6 +6,8 @@ permalink: /kb/164/Q164913/
 
 ## Q164913: Access Violations or Memory Leak May Occur with Tracing Enabled
 
+{% raw %}
+
 	Article: Q164913
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -151,3 +153,5 @@ permalink: /kb/164/Q164913/
 	
 	=============================================================================
 	
+
+{% endraw %}

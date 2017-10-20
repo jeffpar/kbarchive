@@ -6,6 +6,8 @@ permalink: /kb/058/Q58487/
 
 ## Q58487: C 6.00 Utility Support for OS/2 Long Filenames
 
+{% raw %}
+
 	Article: Q58487
 	Product(s): See article
 	Version(s): 6.00
@@ -42,3 +44,5 @@ permalink: /kb/058/Q58487/
 	   inference rules). For example:
 	
 	      ".foo bar.c".".foo bar.exe"
+
+{% endraw %}

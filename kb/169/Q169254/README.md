@@ -6,6 +6,8 @@ permalink: /kb/169/Q169254/
 
 ## Q169254: PRB: Error -44 Encountered (Disk is Write Protected)
 
+{% raw %}
+
 	Article: Q169254
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -84,3 +86,5 @@ permalink: /kb/169/Q169254/
 	
 	=============================================================================
 	
+
+{% endraw %}

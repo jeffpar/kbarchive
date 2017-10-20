@@ -6,6 +6,8 @@ permalink: /kb/142/Q142826/
 
 ## Q142826: BUG: DBGrid Does Not Paint Correctly When Aligned
 
+{% raw %}
+
 	Article: Q142826
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -81,3 +83,5 @@ permalink: /kb/142/Q142826/
 	
 	=============================================================================
 	
+
+{% endraw %}

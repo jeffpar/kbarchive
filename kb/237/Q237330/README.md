@@ -6,6 +6,8 @@ permalink: /kb/237/Q237330/
 
 ## Q237330: SMS: Advertisements Are Sent with Wrong Priority
 
+{% raw %}
+
 	Article: Q237330
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -84,3 +86,5 @@ permalink: /kb/237/Q237330/
 	
 	=============================================================================
 	
+
+{% endraw %}

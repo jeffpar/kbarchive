@@ -6,6 +6,8 @@ permalink: /kb/272/Q272657/
 
 ## Q272657: Golf 2001: Error Message When You Add New Player to Game
 
+{% raw %}
+
 	Article: Q272657
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/272/Q272657/
 	
 	=============================================================================
 	
+
+{% endraw %}

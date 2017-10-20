@@ -6,6 +6,8 @@ permalink: /kb/304/Q304335/
 
 ## Q304335: FP: Hex Values for the 216 Color Safe Palette Used in HTML Pages
 
+{% raw %}
+
 	Article: Q304335
 	Product(s): Word Front Page
 	Version(s): 
@@ -187,3 +189,5 @@ permalink: /kb/304/Q304335/
 	
 	=============================================================================
 	
+
+{% endraw %}

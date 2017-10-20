@@ -6,6 +6,8 @@ permalink: /kb/127/Q127821/
 
 ## Q127821: Problems Using Event Viewer from Windows for Workgroups
 
+{% raw %}
+
 	Article: Q127821
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.11,3.5
@@ -80,3 +82,5 @@ permalink: /kb/127/Q127821/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87291/
 
 ## Q87291: Windows Workstation Requires Version 4.1
 
+{% raw %}
+
 	Article: Q87291
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/087/Q87291/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153067/
 
 ## Q153067: XCLN: EFD: Cannot Move Field Outside Container
 
+{% raw %}
+
 	Article: Q153067
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/049/Q49385/
 
 ## Q49385: Example Passing Numerics from BASIC to MASM by Far Reference
 
+{% raw %}
+
 	Article: Q49385
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -144,3 +146,5 @@ permalink: /kb/049/Q49385/
 	   Long   :  4          40000
 	   Single :  3.4       -3.4
 	   Double :  5.6000    -5.6000
+
+{% endraw %}

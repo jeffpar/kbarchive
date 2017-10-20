@@ -6,6 +6,8 @@ permalink: /kb/060/Q60955/
 
 ## Q60955: Instruction: Traffic Pattern: Verify Carburetor Heat Is On
 
+{% raw %}
+
 	Article: Q60955
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/060/Q60955/
 	
 	=============================================================================
 	
+
+{% endraw %}

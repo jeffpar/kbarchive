@@ -6,6 +6,8 @@ permalink: /kb/285/Q285862/
 
 ## Q285862: Games Error Message: Problem Getting DP2 Interface
 
+{% raw %}
+
 	Article: Q285862
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/285/Q285862/
 	
 	=============================================================================
 	
+
+{% endraw %}

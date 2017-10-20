@@ -6,6 +6,8 @@ permalink: /kb/194/Q194959/
 
 ## Q194959: XFOR: Permissions Not Properly Set by DXA on New Mailboxes
 
+{% raw %}
+
 	Article: Q194959
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2
@@ -77,3 +79,5 @@ permalink: /kb/194/Q194959/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132081/
 
 ## Q132081: HOWTO: How to Place Scroll Bars on an Object Derived from CContr
 
+{% raw %}
+
 	Article: Q132081
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1
@@ -177,3 +179,5 @@ permalink: /kb/132/Q132081/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88140/
 
 ## Q88140: DOCERR: &quot;Guide to Programming&quot; DLL Example Incorrect
 
+{% raw %}
+
 	Article: Q88140
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -119,3 +121,5 @@ permalink: /kb/088/Q88140/
 	
 	=============================================================================
 	
+
+{% endraw %}

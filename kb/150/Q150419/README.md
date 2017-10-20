@@ -6,6 +6,8 @@ permalink: /kb/150/Q150419/
 
 ## Q150419: PRB: &quot;Add Files to SourceSafe&quot; Add-in Menu Item is Disabled
 
+{% raw %}
+
 	Article: Q150419
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/150/Q150419/
 	
 	=============================================================================
 	
+
+{% endraw %}

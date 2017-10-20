@@ -6,6 +6,8 @@ permalink: /kb/150/Q150131/
 
 ## Q150131: &quot;Windows: A Fatal Exception&quot; Error Message When Opening BBS
 
+{% raw %}
+
 	Article: Q150131
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -70,3 +72,5 @@ permalink: /kb/150/Q150131/
 	
 	=============================================================================
 	
+
+{% endraw %}

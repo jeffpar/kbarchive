@@ -6,6 +6,8 @@ permalink: /kb/118/Q118675/
 
 ## Q118675: PC Ext: Large Mail Message Fails with Windows NT and MMTA
 
+{% raw %}
+
 	Article: Q118675
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -103,3 +105,5 @@ permalink: /kb/118/Q118675/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130087/
 
 ## Q130087: How to Troubleshoot Windows NT Boot Floppy Disk Problems
 
+{% raw %}
+
 	Article: Q130087
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/130/Q130087/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148768/
 
 ## Q148768: CONN: Connection Gateway 1.0b Hangs Delivering Message
 
+{% raw %}
+
 	Article: Q148768
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0b,3.2; WINDOWS:4.0
@@ -74,3 +76,5 @@ permalink: /kb/148/Q148768/
 	
 	=============================================================================
 	
+
+{% endraw %}

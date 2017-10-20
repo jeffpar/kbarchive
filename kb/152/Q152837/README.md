@@ -6,6 +6,8 @@ permalink: /kb/152/Q152837/
 
 ## Q152837: ControlService() Results in Services.exe Memory Leak
 
+{% raw %}
+
 	Article: Q152837
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152837/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193083/
 
 ## Q193083: PRB: &quot;User-Defined Type Not Defined&quot; Error with Shdocvw.dll Enum
 
+{% raw %}
+
 	Article: Q193083
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -62,3 +64,5 @@ permalink: /kb/193/Q193083/
 	
 	=============================================================================
 	
+
+{% endraw %}

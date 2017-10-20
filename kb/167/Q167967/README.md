@@ -6,6 +6,8 @@ permalink: /kb/167/Q167967/
 
 ## Q167967: FIX: /Og Increments the Index of a Loop Too Soon
 
+{% raw %}
+
 	Article: Q167967
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -109,3 +111,5 @@ permalink: /kb/167/Q167967/
 	
 	=============================================================================
 	
+
+{% endraw %}

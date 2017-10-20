@@ -6,6 +6,8 @@ permalink: /kb/185/Q185359/
 
 ## Q185359: Return of Arcade: Shape of Maze in Pac-Man Never Changes
 
+{% raw %}
+
 	Article: Q185359
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/185/Q185359/
 	
 	=============================================================================
 	
+
+{% endraw %}

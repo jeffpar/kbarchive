@@ -6,6 +6,8 @@ permalink: /kb/115/Q115036/
 
 ## Q115036: Description of the Mail Merge Wizard
 
+{% raw %}
+
 	Article: Q115036
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6x; WINDOWS:2.6x,3.0
@@ -113,3 +115,5 @@ permalink: /kb/115/Q115036/
 	
 	=============================================================================
 	
+
+{% endraw %}

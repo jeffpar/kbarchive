@@ -6,6 +6,8 @@ permalink: /kb/099/Q99745/
 
 ## Q99745: Tuning NWLINK Registry Parameters
 
+{% raw %}
+
 	Article: Q99745
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -371,3 +373,5 @@ permalink: /kb/099/Q99745/
 	
 	=============================================================================
 	
+
+{% endraw %}

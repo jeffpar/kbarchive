@@ -6,6 +6,8 @@ permalink: /kb/151/Q151907/
 
 ## Q151907: PRB: DAO SDK Setup Error 104/105: Cannot Run Intermediate File
 
+{% raw %}
+
 	Article: Q151907
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10 4.20
@@ -93,3 +95,5 @@ permalink: /kb/151/Q151907/
 	
 	=============================================================================
 	
+
+{% endraw %}

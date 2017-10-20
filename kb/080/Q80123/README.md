@@ -6,6 +6,8 @@ permalink: /kb/080/Q80123/
 
 ## Q80123: Why Error L2044 Suggests Using /NOE&#91;XTDICTIONARY&#93; Option
 
+{% raw %}
+
 	Article: Q80123
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.x,5.0x,5.1x,5.2,5.3x,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -128,3 +130,5 @@ permalink: /kb/080/Q80123/
 	
 	=============================================================================
 	
+
+{% endraw %}

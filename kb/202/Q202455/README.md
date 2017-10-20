@@ -6,6 +6,8 @@ permalink: /kb/202/Q202455/
 
 ## Q202455: HOWTO: Get Disk Free Space Using the GetDiskFreeSpaceEx() API
 
+{% raw %}
+
 	Article: Q202455
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -113,3 +115,5 @@ permalink: /kb/202/Q202455/
 	
 	=============================================================================
 	
+
+{% endraw %}

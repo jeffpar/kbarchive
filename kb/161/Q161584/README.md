@@ -6,6 +6,8 @@ permalink: /kb/161/Q161584/
 
 ## Q161584: XADM: Err Msg: Unable to Recover the Database, Error 0xc8000713
 
+{% raw %}
+
 	Article: Q161584
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/161/Q161584/
 	
 	=============================================================================
 	
+
+{% endraw %}

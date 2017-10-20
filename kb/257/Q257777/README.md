@@ -6,6 +6,8 @@ permalink: /kb/257/Q257777/
 
 ## Q257777: FIX: Printer.Height May Eject the Wrong Amount of Paper
 
+{% raw %}
+
 	Article: Q257777
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -275,3 +277,5 @@ permalink: /kb/257/Q257777/
 	
 	=============================================================================
 	
+
+{% endraw %}

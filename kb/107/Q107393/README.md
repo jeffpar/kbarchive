@@ -6,6 +6,8 @@ permalink: /kb/107/Q107393/
 
 ## Q107393: Fax Modem Class Required for Binary File Transfers
 
+{% raw %}
+
 	Article: Q107393
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -103,3 +105,5 @@ permalink: /kb/107/Q107393/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185280/
 
 ## Q185280: FIX: Printf Gives Unexpected Results for Doubles on WinCE
 
+{% raw %}
+
 	Article: Q185280
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185280/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302535/
 
 ## Q302535: SMS: Problems with Smsapm32.exe with No Distribution Points
 
+{% raw %}
+
 	Article: Q302535
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -105,3 +107,5 @@ permalink: /kb/302/Q302535/
 	
 	=============================================================================
 	
+
+{% endraw %}

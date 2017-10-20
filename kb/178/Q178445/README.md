@@ -6,6 +6,8 @@ permalink: /kb/178/Q178445/
 
 ## Q178445: PRB: Stored Procedure with Text (BLOB) Input Returns Null Output
 
+{% raw %}
+
 	Article: Q178445
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -169,3 +171,5 @@ permalink: /kb/178/Q178445/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272733/
 
 ## Q272733: E-mail on the MSN Companion
 
+{% raw %}
+
 	Article: Q272733
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -100,3 +102,5 @@ permalink: /kb/272/Q272733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139096/
 
 ## Q139096: HOWTO: How to Set Up and Use 320x200x8 and 320x240x8 DDraw Modes
 
+{% raw %}
+
 	Article: Q139096
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 1.0
@@ -116,3 +118,5 @@ permalink: /kb/139/Q139096/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76644/
 
 ## Q76644: Fastback Plus 5.14 and Earlier Incompatible with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q76644
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -51,3 +53,5 @@ permalink: /kb/076/Q76644/
 	
 	=============================================================================
 	
+
+{% endraw %}

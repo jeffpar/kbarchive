@@ -6,6 +6,8 @@ permalink: /kb/125/Q125330/
 
 ## Q125330: CONN: Messages Stop Moving Between AppleTalk and PC Mail
 
+{% raw %}
+
 	Article: Q125330
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0,3.2
@@ -54,3 +56,5 @@ permalink: /kb/125/Q125330/
 	
 	=============================================================================
 	
+
+{% endraw %}

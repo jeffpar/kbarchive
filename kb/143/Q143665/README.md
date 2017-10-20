@@ -6,6 +6,8 @@ permalink: /kb/143/Q143665/
 
 ## Q143665: PPT7: Animation Player for ActiveX Available
 
+{% raw %}
+
 	Article: Q143665
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -141,3 +143,5 @@ permalink: /kb/143/Q143665/
 	
 	=============================================================================
 	
+
+{% endraw %}

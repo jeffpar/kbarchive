@@ -6,6 +6,8 @@ permalink: /kb/102/Q102302/
 
 ## Q102302: Trap 0002 Exceptions Indicate Physical RAM Damage
 
+{% raw %}
+
 	Article: Q102302
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/102/Q102302/
 	
 	=============================================================================
 	
+
+{% endraw %}

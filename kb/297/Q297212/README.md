@@ -6,6 +6,8 @@ permalink: /kb/297/Q297212/
 
 ## Q297212: XADM: Public Folders Are Not Accessible After Site Split
 
+{% raw %}
+
 	Article: Q297212
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -112,3 +114,5 @@ permalink: /kb/297/Q297212/
 	
 	=============================================================================
 	
+
+{% endraw %}

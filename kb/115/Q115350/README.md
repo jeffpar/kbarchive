@@ -6,6 +6,8 @@ permalink: /kb/115/Q115350/
 
 ## Q115350: X400: Config Doubles Backslashes in MTA Names During Upgrade
 
+{% raw %}
+
 	Article: Q115350
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -55,3 +57,5 @@ permalink: /kb/115/Q115350/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118870/
 
 ## Q118870: Enhanced Functions of Sejin J Mouse Keyboard Do Not Work
 
+{% raw %}
+
 	Article: Q118870
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -67,3 +69,5 @@ permalink: /kb/118/Q118870/
 	
 	=============================================================================
 	
+
+{% endraw %}

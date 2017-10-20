@@ -6,6 +6,8 @@ permalink: /kb/198/Q198837/
 
 ## Q198837: Connection Manager No Longer Works after Upgrade to Windows 98
 
+{% raw %}
+
 	Article: Q198837
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:95; winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/198/Q198837/
 	
 	=============================================================================
 	
+
+{% endraw %}

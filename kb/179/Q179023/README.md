@@ -6,6 +6,8 @@ permalink: /kb/179/Q179023/
 
 ## Q179023: FIX: T-SQL Debugger Hangs When User Has No Execute Permission
 
+{% raw %}
+
 	Article: Q179023
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/179/Q179023/
 	
 	=============================================================================
 	
+
+{% endraw %}

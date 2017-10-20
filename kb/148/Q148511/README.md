@@ -6,6 +6,8 @@ permalink: /kb/148/Q148511/
 
 ## Q148511: INFO: Default Content of the Srcsafe.ini File
 
+{% raw %}
+
 	Article: Q148511
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/148/Q148511/
 	
 	=============================================================================
 	
+
+{% endraw %}

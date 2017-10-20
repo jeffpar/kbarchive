@@ -6,6 +6,8 @@ permalink: /kb/168/Q168714/
 
 ## Q168714: XADM: Manager Field Incorrect After Import
 
+{% raw %}
+
 	Article: Q168714
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/168/Q168714/
 	
 	=============================================================================
 	
+
+{% endraw %}

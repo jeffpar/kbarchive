@@ -6,6 +6,8 @@ permalink: /kb/188/Q188636/
 
 ## Q188636: XADM: Error Generating OAB from Large Containers
 
+{% raw %}
+
 	Article: Q188636
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/188/Q188636/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155595/
 
 ## Q155595: Server Manager Error: A Machine Account Already Exists
 
+{% raw %}
+
 	Article: Q155595
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155595/
 	
 	=============================================================================
 	
+
+{% endraw %}

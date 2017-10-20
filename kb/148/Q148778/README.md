@@ -6,6 +6,8 @@ permalink: /kb/148/Q148778/
 
 ## Q148778: Mastering VB ErrMsg: Insufficient Memory to Run
 
+{% raw %}
+
 	Article: Q148778
 	Product(s): Microsoft Mastering Series
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/148/Q148778/
 	
 	=============================================================================
 	
+
+{% endraw %}

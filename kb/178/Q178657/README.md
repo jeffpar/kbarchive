@@ -6,6 +6,8 @@ permalink: /kb/178/Q178657/
 
 ## Q178657: XADM: Hyperlinks Composed in WordMail 97 Do Not Function
 
+{% raw %}
+
 	Article: Q178657
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/178/Q178657/
 	
 	=============================================================================
 	
+
+{% endraw %}

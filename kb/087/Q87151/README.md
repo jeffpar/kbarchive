@@ -6,6 +6,8 @@ permalink: /kb/087/Q87151/
 
 ## Q87151: Mac Wkst: Location of Folders During Creation
 
+{% raw %}
+
 	Article: Q87151
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/087/Q87151/
 	
 	=============================================================================
 	
+
+{% endraw %}

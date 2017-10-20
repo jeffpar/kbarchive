@@ -6,6 +6,8 @@ permalink: /kb/160/Q160458/
 
 ## Q160458: How to Change the Mouse Driver in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q160458
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -49,3 +51,5 @@ permalink: /kb/160/Q160458/
 	
 	=============================================================================
 	
+
+{% endraw %}

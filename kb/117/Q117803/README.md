@@ -6,6 +6,8 @@ permalink: /kb/117/Q117803/
 
 ## Q117803: PC DOS: Undeliverable Mail Does Not Retain Highlighted Text
 
+{% raw %}
+
 	Article: Q117803
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -58,3 +60,5 @@ permalink: /kb/117/Q117803/
 	
 	=============================================================================
 	
+
+{% endraw %}

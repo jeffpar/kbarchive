@@ -6,6 +6,8 @@ permalink: /kb/114/Q114135/
 
 ## Q114135: How to Print Check Boxes Instead of Y/N in FoxPro Reports
 
+{% raw %}
+
 	Article: Q114135
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -77,3 +79,5 @@ permalink: /kb/114/Q114135/
 	
 	=============================================================================
 	
+
+{% endraw %}

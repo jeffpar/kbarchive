@@ -6,6 +6,8 @@ permalink: /kb/110/Q110000/
 
 ## Q110000: BUG: Format Editor Displays G Descriptor Using E Format
 
+{% raw %}
+
 	Article: Q110000
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -50,3 +52,5 @@ permalink: /kb/110/Q110000/
 	
 	=============================================================================
 	
+
+{% endraw %}

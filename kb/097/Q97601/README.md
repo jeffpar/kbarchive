@@ -6,6 +6,8 @@ permalink: /kb/097/Q97601/
 
 ## Q97601: Windows Fails to Run in 386 Enhanced Mode After Using MemMaker
 
+{% raw %}
+
 	Article: Q97601
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -97,3 +99,5 @@ permalink: /kb/097/Q97601/
 	
 	=============================================================================
 	
+
+{% endraw %}

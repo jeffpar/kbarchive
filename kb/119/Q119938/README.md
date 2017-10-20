@@ -6,6 +6,8 @@ permalink: /kb/119/Q119938/
 
 ## Q119938: BUG: Menu Appears Behind Fox Icon on Menu Bar
 
+{% raw %}
+
 	Article: Q119938
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -74,3 +76,5 @@ permalink: /kb/119/Q119938/
 	
 	=============================================================================
 	
+
+{% endraw %}

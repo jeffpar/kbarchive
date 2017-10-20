@@ -6,6 +6,8 @@ permalink: /kb/176/Q176468/
 
 ## Q176468: INFO: Behavior of Forms in an ActiveX Document
 
+{% raw %}
+
 	Article: Q176468
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -205,3 +207,5 @@ permalink: /kb/176/Q176468/
 	
 	=============================================================================
 	
+
+{% endraw %}

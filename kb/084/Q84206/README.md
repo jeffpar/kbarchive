@@ -6,6 +6,8 @@ permalink: /kb/084/Q84206/
 
 ## Q84206: CAPS LOCK Does Not Function Correctly on Toshiba T2000 SXE
 
+{% raw %}
+
 	Article: Q84206
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/084/Q84206/
 	
 	=============================================================================
 	
+
+{% endraw %}

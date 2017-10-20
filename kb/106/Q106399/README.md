@@ -6,6 +6,8 @@ permalink: /kb/106/Q106399/
 
 ## Q106399: INFO: Using the Development Studio or Visual Workbench with MASM
 
+{% raw %}
+
 	Article: Q106399
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0,6.11
@@ -283,3 +285,5 @@ permalink: /kb/106/Q106399/
 	
 	=============================================================================
 	
+
+{% endraw %}

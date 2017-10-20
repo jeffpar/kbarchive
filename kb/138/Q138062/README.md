@@ -6,6 +6,8 @@ permalink: /kb/138/Q138062/
 
 ## Q138062: How to Specify the Base Address of a VB OLE Server DLL
 
+{% raw %}
+
 	Article: Q138062
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/138/Q138062/
 	
 	=============================================================================
 	
+
+{% endraw %}

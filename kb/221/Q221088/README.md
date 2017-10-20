@@ -6,6 +6,8 @@ permalink: /kb/221/Q221088/
 
 ## Q221088: PRB: Loading COM DLL from ASP Stops IIS if FoxUser is Corrupted
 
+{% raw %}
+
 	Article: Q221088
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -152,3 +154,5 @@ permalink: /kb/221/Q221088/
 	
 	=============================================================================
 	
+
+{% endraw %}

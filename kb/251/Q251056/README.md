@@ -6,6 +6,8 @@ permalink: /kb/251/Q251056/
 
 ## Q251056: PRB: Print Dialog May Not Appear with SET PRINT ON PROMPT
 
+{% raw %}
+
 	Article: Q251056
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -79,3 +81,5 @@ permalink: /kb/251/Q251056/
 	
 	=============================================================================
 	
+
+{% endraw %}

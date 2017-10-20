@@ -6,6 +6,8 @@ permalink: /kb/122/Q122325/
 
 ## Q122325: Gateway 2000 Sound Board Not Compatible with WSS Drivers
 
+{% raw %}
+
 	Article: Q122325
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.0,2.0a
@@ -108,3 +110,5 @@ permalink: /kb/122/Q122325/
 	
 	=============================================================================
 	
+
+{% endraw %}

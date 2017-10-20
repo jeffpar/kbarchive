@@ -6,6 +6,8 @@ permalink: /kb/069/Q69123/
 
 ## Q69123: FIX: Long Command Line Generates Protection Violation
 
+{% raw %}
+
 	Article: Q69123
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -56,3 +58,5 @@ permalink: /kb/069/Q69123/
 	
 	=============================================================================
 	
+
+{% endraw %}

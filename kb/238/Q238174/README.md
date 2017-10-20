@@ -6,6 +6,8 @@ permalink: /kb/238/Q238174/
 
 ## Q238174: Profile Quota Error Message Is Not Reset in German Windows NT
 
+{% raw %}
+
 	Article: Q238174
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -94,3 +96,5 @@ permalink: /kb/238/Q238174/
 	
 	=============================================================================
 	
+
+{% endraw %}

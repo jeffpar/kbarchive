@@ -6,6 +6,8 @@ permalink: /kb/216/Q216355/
 
 ## Q216355: DirectX: List of Files Installed by the DirectX 6.1 Update
 
+{% raw %}
+
 	Article: Q216355
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:95
@@ -153,3 +155,5 @@ permalink: /kb/216/Q216355/
 	
 	=============================================================================
 	
+
+{% endraw %}

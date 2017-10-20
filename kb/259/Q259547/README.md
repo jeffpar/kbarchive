@@ -6,6 +6,8 @@ permalink: /kb/259/Q259547/
 
 ## Q259547: PRB: BROWSE LAST Affected by SET COMPATIBLE
 
+{% raw %}
+
 	Article: Q259547
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -72,3 +74,5 @@ permalink: /kb/259/Q259547/
 	
 	=============================================================================
 	
+
+{% endraw %}

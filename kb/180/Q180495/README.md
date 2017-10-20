@@ -6,6 +6,8 @@ permalink: /kb/180/Q180495/
 
 ## Q180495: BUG: Pages of PageFrame Created with AddObject Method Invisible
 
+{% raw %}
+
 	Article: Q180495
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -105,3 +107,5 @@ permalink: /kb/180/Q180495/
 	
 	=============================================================================
 	
+
+{% endraw %}

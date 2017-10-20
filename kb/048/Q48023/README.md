@@ -6,6 +6,8 @@ permalink: /kb/048/Q48023/
 
 ## Q48023: Developing Common Code for Both Windows and Macintosh
 
+{% raw %}
+
 	Article: Q48023
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -72,3 +74,5 @@ permalink: /kb/048/Q48023/
 	
 	=============================================================================
 	
+
+{% endraw %}

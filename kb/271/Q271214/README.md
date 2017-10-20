@@ -6,6 +6,8 @@ permalink: /kb/271/Q271214/
 
 ## Q271214: Can't Access FoxPro Databases on Netware 5 Server from IIS 5.0
 
+{% raw %}
+
 	Article: Q271214
 	Product(s): Internet Information Server
 	Version(s): 5.0,6.0
@@ -151,3 +153,5 @@ permalink: /kb/271/Q271214/
 	
 	=============================================================================
 	
+
+{% endraw %}

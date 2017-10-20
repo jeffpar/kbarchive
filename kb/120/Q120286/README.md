@@ -6,6 +6,8 @@ permalink: /kb/120/Q120286/
 
 ## Q120286: Scenes 2.0: Create a Collection Wizard Fails Under Windows NT
 
+{% raw %}
+
 	Article: Q120286
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -58,3 +60,5 @@ permalink: /kb/120/Q120286/
 	
 	=============================================================================
 	
+
+{% endraw %}

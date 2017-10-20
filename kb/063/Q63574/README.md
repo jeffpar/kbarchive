@@ -6,6 +6,8 @@ permalink: /kb/063/Q63574/
 
 ## Q63574: Installing Windows 3.0 for Different Graphic Resolutions
 
+{% raw %}
+
 	Article: Q63574
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/063/Q63574/
 	
 	=============================================================================
 	
+
+{% endraw %}

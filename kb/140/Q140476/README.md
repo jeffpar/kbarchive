@@ -6,6 +6,8 @@ permalink: /kb/140/Q140476/
 
 ## Q140476: How to Install a BDC in a Routed TCP/IP Environment
 
+{% raw %}
+
 	Article: Q140476
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -100,3 +102,5 @@ permalink: /kb/140/Q140476/
 	
 	=============================================================================
 	
+
+{% endraw %}

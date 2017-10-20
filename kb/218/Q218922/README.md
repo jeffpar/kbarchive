@@ -6,6 +6,8 @@ permalink: /kb/218/Q218922/
 
 ## Q218922: Installing NTOP on Cluster Server with SP4 Causes Event IDs 1009
 
+{% raw %}
+
 	Article: Q218922
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/218/Q218922/
 	
 	=============================================================================
 	
+
+{% endraw %}

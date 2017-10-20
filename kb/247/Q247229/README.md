@@ -6,6 +6,8 @@ permalink: /kb/247/Q247229/
 
 ## Q247229: SMS: Failure to Write to Log File Affects Executive Performance
 
+{% raw %}
+
 	Article: Q247229
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -52,3 +54,5 @@ permalink: /kb/247/Q247229/
 	
 	=============================================================================
 	
+
+{% endraw %}

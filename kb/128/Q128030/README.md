@@ -6,6 +6,8 @@ permalink: /kb/128/Q128030/
 
 ## Q128030: Setup Error Message: Generic Install Error
 
+{% raw %}
+
 	Article: Q128030
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/128/Q128030/
 	
 	=============================================================================
 	
+
+{% endraw %}

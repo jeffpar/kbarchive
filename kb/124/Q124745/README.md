@@ -6,6 +6,8 @@ permalink: /kb/124/Q124745/
 
 ## Q124745: MHS: Incoming Messages Lose 79th Character
 
+{% raw %}
+
 	Article: Q124745
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/124/Q124745/
 	
 	=============================================================================
 	
+
+{% endraw %}

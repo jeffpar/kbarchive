@@ -6,6 +6,8 @@ permalink: /kb/178/Q178232/
 
 ## Q178232: How to Set IIS 3.0 Authentication from the Registry
 
+{% raw %}
+
 	Article: Q178232
 	Product(s): Internet Information Server
 	Version(s): WINNT:3.0
@@ -78,3 +80,5 @@ permalink: /kb/178/Q178232/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223062/
 
 ## Q223062: FIX: DataGrid Will Not Add a New Record if Fields Set in Code
 
+{% raw %}
+
 	Article: Q223062
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -100,3 +102,5 @@ permalink: /kb/223/Q223062/
 	
 	=============================================================================
 	
+
+{% endraw %}

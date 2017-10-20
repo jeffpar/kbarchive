@@ -6,6 +6,8 @@ permalink: /kb/092/Q92466/
 
 ## Q92466: File Manager RAM Drive Icon Changes Due to Stacker
 
+{% raw %}
+
 	Article: Q92466
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/092/Q92466/
 	
 	=============================================================================
 	
+
+{% endraw %}

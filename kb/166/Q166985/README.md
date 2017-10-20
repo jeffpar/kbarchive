@@ -6,6 +6,8 @@ permalink: /kb/166/Q166985/
 
 ## Q166985: Earlier MSN Signup Window with Install MSN 2.0
 
+{% raw %}
+
 	Article: Q166985
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -45,3 +47,5 @@ permalink: /kb/166/Q166985/
 	
 	=============================================================================
 	
+
+{% endraw %}

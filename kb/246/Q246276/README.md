@@ -6,6 +6,8 @@ permalink: /kb/246/Q246276/
 
 ## Q246276: XADM: Directory Service Not Responding on Two Exchange Servers
 
+{% raw %}
+
 	Article: Q246276
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/246/Q246276/
 	
 	=============================================================================
 	
+
+{% endraw %}

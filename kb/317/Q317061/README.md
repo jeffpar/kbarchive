@@ -6,6 +6,8 @@ permalink: /kb/317/Q317061/
 
 ## Q317061: Software Distribution May Not Work with Exchange 2000 Server
 
+{% raw %}
+
 	Article: Q317061
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -178,3 +180,5 @@ permalink: /kb/317/Q317061/
 	
 	=============================================================================
 	
+
+{% endraw %}

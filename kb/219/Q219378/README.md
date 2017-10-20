@@ -6,6 +6,8 @@ permalink: /kb/219/Q219378/
 
 ## Q219378: WBEM Removed from Windows NT Service Pack 5 CD
 
+{% raw %}
+
 	Article: Q219378
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/219/Q219378/
 	
 	=============================================================================
 	
+
+{% endraw %}

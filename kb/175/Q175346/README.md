@@ -6,6 +6,8 @@ permalink: /kb/175/Q175346/
 
 ## Q175346: A Bridge Too Far: Tips And Strategies Hint Line
 
+{% raw %}
+
 	Article: Q175346
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -37,3 +39,5 @@ permalink: /kb/175/Q175346/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263441/
 
 ## Q263441: APM Control Panel Icons Not Removed if Terminal Services Enabled
 
+{% raw %}
+
 	Article: Q263441
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -72,3 +74,5 @@ permalink: /kb/263/Q263441/
 	
 	=============================================================================
 	
+
+{% endraw %}

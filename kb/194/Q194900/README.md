@@ -6,6 +6,8 @@ permalink: /kb/194/Q194900/
 
 ## Q194900: EVG99: Right-click on Flag Connects You to Macromedia Web Site
 
+{% raw %}
+
 	Article: Q194900
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/194/Q194900/
 	
 	=============================================================================
 	
+
+{% endraw %}

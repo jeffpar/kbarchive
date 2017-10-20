@@ -6,6 +6,8 @@ permalink: /kb/126/Q126054/
 
 ## Q126054: Location of Windows NT Multimedia Drivers in the Registry
 
+{% raw %}
+
 	Article: Q126054
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -208,3 +210,5 @@ permalink: /kb/126/Q126054/
 	
 	=============================================================================
 	
+
+{% endraw %}

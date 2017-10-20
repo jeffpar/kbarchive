@@ -6,6 +6,8 @@ permalink: /kb/154/Q154758/
 
 ## Q154758: HOWTO: Call a Stored Procedure Using the Data Control
 
+{% raw %}
+
 	Article: Q154758
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/154/Q154758/
 	
 	=============================================================================
 	
+
+{% endraw %}

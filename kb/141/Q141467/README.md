@@ -6,6 +6,8 @@ permalink: /kb/141/Q141467/
 
 ## Q141467: Macintosh RPC Client Fails Across AppleTalk Zone
 
+{% raw %}
+
 	Article: Q141467
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -57,3 +59,5 @@ permalink: /kb/141/Q141467/
 	
 	=============================================================================
 	
+
+{% endraw %}

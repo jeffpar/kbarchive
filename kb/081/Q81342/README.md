@@ -6,6 +6,8 @@ permalink: /kb/081/Q81342/
 
 ## Q81342: Mac Fax: Creating Fax Gateway Account Cover Pages
 
+{% raw %}
+
 	Article: Q81342
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.x,3.0a,3.0b,3.1,3.1a,3.1c,3.1d
@@ -78,3 +80,5 @@ permalink: /kb/081/Q81342/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74206/
 
 ## Q74206: Packard Bell Mouse Driver for MS-DOS Shell 5.0 or Later
 
+{% raw %}
+
 	Article: Q74206
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -46,3 +48,5 @@ permalink: /kb/074/Q74206/
 	
 	=============================================================================
 	
+
+{% endraw %}

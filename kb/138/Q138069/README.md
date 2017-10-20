@@ -6,6 +6,8 @@ permalink: /kb/138/Q138069/
 
 ## Q138069: How to Address the Master Object Called Global
 
+{% raw %}
+
 	Article: Q138069
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138069/
 	
 	=============================================================================
 	
+
+{% endraw %}

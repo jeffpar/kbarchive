@@ -6,6 +6,8 @@ permalink: /kb/244/Q244726/
 
 ## Q244726: Encarta 2000: Unable to Install Program
 
+{% raw %}
+
 	Article: Q244726
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -150,3 +152,5 @@ permalink: /kb/244/Q244726/
 	
 	=============================================================================
 	
+
+{% endraw %}

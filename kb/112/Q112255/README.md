@@ -6,6 +6,8 @@ permalink: /kb/112/Q112255/
 
 ## Q112255: PC Ext: Session Log File Maintenance
 
+{% raw %}
+
 	Article: Q112255
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -95,3 +97,5 @@ permalink: /kb/112/Q112255/
 	
 	=============================================================================
 	
+
+{% endraw %}

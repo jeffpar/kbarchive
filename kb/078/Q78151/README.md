@@ -6,6 +6,8 @@ permalink: /kb/078/Q78151/
 
 ## Q78151: Using the Interrupt 2Fh Critical Section Services
 
+{% raw %}
+
 	Article: Q78151
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -93,3 +95,5 @@ permalink: /kb/078/Q78151/
 	
 	=============================================================================
 	
+
+{% endraw %}

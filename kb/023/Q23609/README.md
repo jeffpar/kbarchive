@@ -6,6 +6,8 @@ permalink: /kb/023/Q23609/
 
 ## Q23609: File Size Limitations for the Microsoft Editor
 
+{% raw %}
+
 	Article: Q23609
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -36,3 +38,5 @@ permalink: /kb/023/Q23609/
 	
 	Both MS-DOS and OS/2 currently limit disk size (hence, file size)
 	to 64K sectors, which normally is 32 megabytes.
+
+{% endraw %}

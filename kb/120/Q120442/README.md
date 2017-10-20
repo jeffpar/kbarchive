@@ -6,6 +6,8 @@ permalink: /kb/120/Q120442/
 
 ## Q120442: Using Hard Disk Utilities with Windows 95
 
+{% raw %}
+
 	Article: Q120442
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0
@@ -132,3 +134,5 @@ permalink: /kb/120/Q120442/
 	
 	=============================================================================
 	
+
+{% endraw %}

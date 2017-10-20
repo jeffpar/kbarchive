@@ -6,6 +6,8 @@ permalink: /kb/238/Q238589/
 
 ## Q238589: Domain Sizing and Capacity Planning White Paper Available
 
+{% raw %}
+
 	Article: Q238589
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/238/Q238589/
 	
 	=============================================================================
 	
+
+{% endraw %}

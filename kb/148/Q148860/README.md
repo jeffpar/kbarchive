@@ -6,6 +6,8 @@ permalink: /kb/148/Q148860/
 
 ## Q148860: HOWTO: Show Container's Toolbar During Inplace Activation
 
+{% raw %}
+
 	Article: Q148860
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/148/Q148860/
 	
 	=============================================================================
 	
+
+{% endraw %}

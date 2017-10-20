@@ -6,6 +6,8 @@ permalink: /kb/175/Q175997/
 
 ## Q175997: Err Msg: Findfast Caused an Invalid Page Fault in Findfast.exe
 
+{% raw %}
+
 	Article: Q175997
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,95,98,98 Second Edition
@@ -62,3 +64,5 @@ permalink: /kb/175/Q175997/
 	
 	=============================================================================
 	
+
+{% endraw %}

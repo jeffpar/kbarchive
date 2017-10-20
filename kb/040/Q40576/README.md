@@ -6,6 +6,8 @@ permalink: /kb/040/Q40576/
 
 ## Q40576: Compiling Windows Programs with QuickC Requires 640K
 
+{% raw %}
+
 	Article: Q40576
 	Product(s): See article
 	Version(s): 2.00
@@ -25,3 +27,5 @@ permalink: /kb/040/Q40576/
 	the WINDOWS.H header file:
 	
 	   C1002 : Out of heap space
+
+{% endraw %}

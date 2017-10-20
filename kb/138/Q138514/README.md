@@ -6,6 +6,8 @@ permalink: /kb/138/Q138514/
 
 ## Q138514: Canceling Print Job Causes Next Job to Be Printed Incorrectly
 
+{% raw %}
+
 	Article: Q138514
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/138/Q138514/
 	
 	=============================================================================
 	
+
+{% endraw %}

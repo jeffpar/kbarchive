@@ -6,6 +6,8 @@ permalink: /kb/186/Q186694/
 
 ## Q186694: Old MSN Setup Files Remain When You Upgrade to Windows 98
 
+{% raw %}
+
 	Article: Q186694
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.52
@@ -79,3 +81,5 @@ permalink: /kb/186/Q186694/
 	
 	=============================================================================
 	
+
+{% endraw %}

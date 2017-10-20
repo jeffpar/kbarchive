@@ -6,6 +6,8 @@ permalink: /kb/178/Q178466/
 
 ## Q178466: XCLN: Folder Visible Option Not Available
 
+{% raw %}
+
 	Article: Q178466
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,95,98; :8.0,8.01
@@ -65,3 +67,5 @@ permalink: /kb/178/Q178466/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44723/
 
 ## Q44723: Side Effects in ISRs and Signal Handlers Confuse Optimizer
 
+{% raw %}
+
 	Article: Q44723
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -59,3 +61,5 @@ permalink: /kb/044/Q44723/
 	examined for the optimization's effect. Disabling optimization with
 	/Od may result in slower executable programs but will prevent
 	optimizer side effects.
+
+{% endraw %}

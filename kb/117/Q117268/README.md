@@ -6,6 +6,8 @@ permalink: /kb/117/Q117268/
 
 ## Q117268: File Manager Shows Wrong File Size for Files Larger than 4 GB
 
+{% raw %}
+
 	Article: Q117268
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -49,3 +51,5 @@ permalink: /kb/117/Q117268/
 	
 	=============================================================================
 	
+
+{% endraw %}

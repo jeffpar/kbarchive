@@ -6,6 +6,8 @@ permalink: /kb/059/Q59920/
 
 ## Q59920: Mac Hyp: Getting a Message Reference
 
+{% raw %}
+
 	Article: Q59920
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -54,3 +56,5 @@ permalink: /kb/059/Q59920/
 	
 	=============================================================================
 	
+
+{% endraw %}

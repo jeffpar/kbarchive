@@ -6,6 +6,8 @@ permalink: /kb/319/Q319899/
 
 ## Q319899: VSS Show Differences Option Incorrectly Marks Files as Different
 
+{% raw %}
+
 	Article: Q319899
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -90,3 +92,5 @@ permalink: /kb/319/Q319899/
 	
 	=============================================================================
 	
+
+{% endraw %}

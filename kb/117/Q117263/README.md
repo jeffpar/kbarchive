@@ -6,6 +6,8 @@ permalink: /kb/117/Q117263/
 
 ## Q117263: How to Clear the Text of MaskedEdit Control w/o Clearing Mask
 
+{% raw %}
+
 	Article: Q117263
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -58,3 +60,5 @@ permalink: /kb/117/Q117263/
 	
 	=============================================================================
 	
+
+{% endraw %}

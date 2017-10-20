@@ -6,6 +6,8 @@ permalink: /kb/190/Q190980/
 
 ## Q190980: FIX: Error Using UsesTransaction for MTSTransactionMode
 
+{% raw %}
+
 	Article: Q190980
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -97,3 +99,5 @@ permalink: /kb/190/Q190980/
 	
 	=============================================================================
 	
+
+{% endraw %}

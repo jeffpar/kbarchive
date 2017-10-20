@@ -6,6 +6,8 @@ permalink: /kb/156/Q156013/
 
 ## Q156013: INFO: Possible Uses for Offline Views in Visual FoxPro
 
+{% raw %}
+
 	Article: Q156013
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -60,3 +62,5 @@ permalink: /kb/156/Q156013/
 	
 	=============================================================================
 	
+
+{% endraw %}

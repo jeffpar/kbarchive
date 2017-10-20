@@ -6,6 +6,8 @@ permalink: /kb/264/Q264317/
 
 ## Q264317: XADM: Public Folders Are Re-Homed When You Restore Pub.edb File
 
+{% raw %}
+
 	Article: Q264317
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -163,3 +165,5 @@ permalink: /kb/264/Q264317/
 	
 	=============================================================================
 	
+
+{% endraw %}

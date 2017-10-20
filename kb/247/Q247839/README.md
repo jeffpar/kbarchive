@@ -6,6 +6,8 @@ permalink: /kb/247/Q247839/
 
 ## Q247839: XCLN: Agents Tab Missing in Outlook Inbox Properties
 
+{% raw %}
+
 	Article: Q247839
 	Product(s): Microsoft Exchange
 	Version(s): 8.03,8.04; WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/247/Q247839/
 	
 	=============================================================================
 	
+
+{% endraw %}

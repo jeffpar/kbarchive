@@ -6,6 +6,8 @@ permalink: /kb/097/Q97578/
 
 ## Q97578: DoubleSpace Does Not Mount Hardcard Drive Automatically
 
+{% raw %}
+
 	Article: Q97578
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -84,3 +86,5 @@ permalink: /kb/097/Q97578/
 	
 	=============================================================================
 	
+
+{% endraw %}

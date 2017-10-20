@@ -6,6 +6,8 @@ permalink: /kb/191/Q191311/
 
 ## Q191311: BUG: Class Not Released After Being Deleted From Form
 
+{% raw %}
+
 	Article: Q191311
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -71,3 +73,5 @@ permalink: /kb/191/Q191311/
 	
 	=============================================================================
 	
+
+{% endraw %}

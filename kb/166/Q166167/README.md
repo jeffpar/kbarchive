@@ -6,6 +6,8 @@ permalink: /kb/166/Q166167/
 
 ## Q166167: XCLN: Error Occurred During the Connection, Hardware Failure
 
+{% raw %}
+
 	Article: Q166167
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -105,3 +107,5 @@ permalink: /kb/166/Q166167/
 	
 	=============================================================================
 	
+
+{% endraw %}

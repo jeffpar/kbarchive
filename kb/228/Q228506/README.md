@@ -6,6 +6,8 @@ permalink: /kb/228/Q228506/
 
 ## Q228506: Baseball 2000: 3Dfx Video Cards May Not Support Triple Buffering
 
+{% raw %}
+
 	Article: Q228506
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/228/Q228506/
 	
 	=============================================================================
 	
+
+{% endraw %}

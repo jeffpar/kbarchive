@@ -6,6 +6,8 @@ permalink: /kb/107/Q107640/
 
 ## Q107640: Documentation Error on Installing Remote Access Software
 
+{% raw %}
+
 	Article: Q107640
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -55,3 +57,5 @@ permalink: /kb/107/Q107640/
 	
 	=============================================================================
 	
+
+{% endraw %}

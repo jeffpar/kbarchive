@@ -6,6 +6,8 @@ permalink: /kb/175/Q175942/
 
 ## Q175942: Support Windows NT Services Using SNA Windows 95 Client
 
+{% raw %}
+
 	Article: Q175942
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -93,3 +95,5 @@ permalink: /kb/175/Q175942/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98784/
 
 ## Q98784: PC WSPlus: Cannot Choose All When Exporting to a Text File
 
+{% raw %}
+
 	Article: Q98784
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -53,3 +55,5 @@ permalink: /kb/098/Q98784/
 	
 	=============================================================================
 	
+
+{% endraw %}

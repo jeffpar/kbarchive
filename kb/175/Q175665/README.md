@@ -6,6 +6,8 @@ permalink: /kb/175/Q175665/
 
 ## Q175665: No Repair Option Offered Using Small Business Server Boot Disks
 
+{% raw %}
+
 	Article: Q175665
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -129,3 +131,5 @@ permalink: /kb/175/Q175665/
 	
 	=============================================================================
 	
+
+{% endraw %}

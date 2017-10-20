@@ -6,6 +6,8 @@ permalink: /kb/256/Q256170/
 
 ## Q256170: BUG: C2065 When You Build ATL COM Server with Connection Points
 
+{% raw %}
+
 	Article: Q256170
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/256/Q256170/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72489/
 
 ## Q72489: Support for LINK.EXE Shipped with MS-DOS
 
+{% raw %}
+
 	Article: Q72489
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.2,3.21,3.3,3.3a,4.0,4.01,4.01a,5.0
@@ -55,3 +57,5 @@ permalink: /kb/072/Q72489/
 	
 	=============================================================================
 	
+
+{% endraw %}

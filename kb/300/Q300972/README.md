@@ -6,6 +6,8 @@ permalink: /kb/300/Q300972/
 
 ## Q300972: Unchecked Buffer in ISAPI Extension Can Cause Server Compromise
 
+{% raw %}
+
 	Article: Q300972
 	Product(s): Internet Information Server
 	Version(s): 2.0,2000,2000 SP1,2000 SP2,4.0,5.0
@@ -279,3 +281,5 @@ permalink: /kb/300/Q300972/
 	
 	=============================================================================
 	
+
+{% endraw %}

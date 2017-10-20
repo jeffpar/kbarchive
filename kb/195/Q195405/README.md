@@ -6,6 +6,8 @@ permalink: /kb/195/Q195405/
 
 ## Q195405: FIX: Corrupt Record Added in Grid Using View with Default Value
 
+{% raw %}
+
 	Article: Q195405
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -204,3 +206,5 @@ permalink: /kb/195/Q195405/
 	
 	=============================================================================
 	
+
+{% endraw %}

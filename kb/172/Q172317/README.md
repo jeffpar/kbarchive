@@ -6,6 +6,8 @@ permalink: /kb/172/Q172317/
 
 ## Q172317: WD97: Automatic Numbered List Doesn't Work If Text Contains Tabs
 
+{% raw %}
+
 	Article: Q172317
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/172/Q172317/
 	
 	=============================================================================
 	
+
+{% endraw %}

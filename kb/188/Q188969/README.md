@@ -6,6 +6,8 @@ permalink: /kb/188/Q188969/
 
 ## Q188969: XADM: Public Folder Rule Fails Using Field From EFD
 
+{% raw %}
+
 	Article: Q188969
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -64,3 +66,5 @@ permalink: /kb/188/Q188969/
 	
 	=============================================================================
 	
+
+{% endraw %}

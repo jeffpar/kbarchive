@@ -6,6 +6,8 @@ permalink: /kb/034/Q34086/
 
 ## Q34086: Mouse Menu for Quattro
 
+{% raw %}
+
 	Article: Q34086
 	Product(s): See article
 	Version(s): 1.00
@@ -23,3 +25,5 @@ permalink: /kb/034/Q34086/
 	Quattro is loaded with the Lotus 1-2-3 menu tree.
 	
 	Note: DEFAULT.COM is now called MSMENU.COM.
+
+{% endraw %}

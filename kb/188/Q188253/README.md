@@ -6,6 +6,8 @@ permalink: /kb/188/Q188253/
 
 ## Q188253: PRB: Calling _Htmltag Class Results in Memory Error
 
+{% raw %}
+
 	Article: Q188253
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -77,3 +79,5 @@ permalink: /kb/188/Q188253/
 	
 	=============================================================================
 	
+
+{% endraw %}

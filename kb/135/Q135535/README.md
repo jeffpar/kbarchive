@@ -6,6 +6,8 @@ permalink: /kb/135/Q135535/
 
 ## Q135535: Incorrect Icons Displayed with Slow Network Connection
 
+{% raw %}
+
 	Article: Q135535
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135535/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169225/
 
 ## Q169225: Slow Copying from WinNT to Win95 in Bus Mastering Mode
 
+{% raw %}
+
 	Article: Q169225
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -100,3 +102,5 @@ permalink: /kb/169/Q169225/
 	
 	=============================================================================
 	
+
+{% endraw %}

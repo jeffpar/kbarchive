@@ -6,6 +6,8 @@ permalink: /kb/258/Q258891/
 
 ## Q258891: XADM: Information Store Stops Responding with Access Violation
 
+{% raw %}
+
 	Article: Q258891
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/258/Q258891/
 	
 	=============================================================================
 	
+
+{% endraw %}

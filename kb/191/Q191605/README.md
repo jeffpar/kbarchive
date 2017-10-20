@@ -6,6 +6,8 @@ permalink: /kb/191/Q191605/
 
 ## Q191605: INFO: Incorporating ScriptIt with Unattended Installation
 
+{% raw %}
+
 	Article: Q191605
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -121,3 +123,5 @@ permalink: /kb/191/Q191605/
 	
 	=============================================================================
 	
+
+{% endraw %}

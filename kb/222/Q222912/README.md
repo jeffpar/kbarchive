@@ -6,6 +6,8 @@ permalink: /kb/222/Q222912/
 
 ## Q222912: XADM: Cannot Modify Database Paths on Clustered Server
 
+{% raw %}
+
 	Article: Q222912
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -65,3 +67,5 @@ permalink: /kb/222/Q222912/
 	
 	=============================================================================
 	
+
+{% endraw %}

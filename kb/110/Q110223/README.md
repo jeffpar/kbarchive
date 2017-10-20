@@ -6,6 +6,8 @@ permalink: /kb/110/Q110223/
 
 ## Q110223: PC Gen: PODIAG.EXE NETPO.GLB Error 140
 
+{% raw %}
+
 	Article: Q110223
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -86,3 +88,5 @@ permalink: /kb/110/Q110223/
 	
 	=============================================================================
 	
+
+{% endraw %}

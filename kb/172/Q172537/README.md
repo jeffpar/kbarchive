@@ -6,6 +6,8 @@ permalink: /kb/172/Q172537/
 
 ## Q172537: BUG: Grid Clip Property Contains Remnants of Former Values
 
+{% raw %}
+
 	Article: Q172537
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/172/Q172537/
 	
 	=============================================================================
 	
+
+{% endraw %}

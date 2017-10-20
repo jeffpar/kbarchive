@@ -6,6 +6,8 @@ permalink: /kb/100/Q100113/
 
 ## Q100113: DoubleSpace Err Msg with CompatiCard: Your Computer Might...
 
+{% raw %}
+
 	Article: Q100113
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -51,3 +53,5 @@ permalink: /kb/100/Q100113/
 	
 	=============================================================================
 	
+
+{% endraw %}

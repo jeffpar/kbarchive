@@ -6,6 +6,8 @@ permalink: /kb/173/Q173474/
 
 ## Q173474: XWEB: Read Next Message Command Fails after Move/Copy
 
+{% raw %}
+
 	Article: Q173474
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/173/Q173474/
 	
 	=============================================================================
 	
+
+{% endraw %}

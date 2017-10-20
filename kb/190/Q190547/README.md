@@ -6,6 +6,8 @@ permalink: /kb/190/Q190547/
 
 ## Q190547: PRB: ReadMethod Only Returns Method Text From Visual Class
 
+{% raw %}
+
 	Article: Q190547
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -65,3 +67,5 @@ permalink: /kb/190/Q190547/
 	
 	=============================================================================
 	
+
+{% endraw %}

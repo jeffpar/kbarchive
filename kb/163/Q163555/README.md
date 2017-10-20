@@ -6,6 +6,8 @@ permalink: /kb/163/Q163555/
 
 ## Q163555: Admin Displays LU as Available When It Really Is Not
 
+{% raw %}
+
 	Article: Q163555
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -75,3 +77,5 @@ permalink: /kb/163/Q163555/
 	
 	=============================================================================
 	
+
+{% endraw %}

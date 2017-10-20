@@ -6,6 +6,8 @@ permalink: /kb/246/Q246084/
 
 ## Q246084: Interpreting DrWtsn32.log File to Identify Program Crash Data
 
+{% raw %}
+
 	Article: Q246084
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -207,3 +209,5 @@ permalink: /kb/246/Q246084/
 	
 	=============================================================================
 	
+
+{% endraw %}

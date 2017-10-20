@@ -6,6 +6,8 @@ permalink: /kb/148/Q148760/
 
 ## Q148760: Return of Arcade: Setup Does Not Offer Custom Installation
 
+{% raw %}
+
 	Article: Q148760
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/148/Q148760/
 	
 	=============================================================================
 	
+
+{% endraw %}

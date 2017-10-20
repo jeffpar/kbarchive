@@ -6,6 +6,8 @@ permalink: /kb/173/Q173457/
 
 ## Q173457: XFOR: Information Store Stops in URL Processing RTF to HTML
 
+{% raw %}
+
 	Article: Q173457
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -61,3 +63,5 @@ permalink: /kb/173/Q173457/
 	
 	=============================================================================
 	
+
+{% endraw %}

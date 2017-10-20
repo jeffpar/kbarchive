@@ -6,6 +6,8 @@ permalink: /kb/145/Q145578/
 
 ## Q145578: STOP Msg: 0xc000021a After Changing Drive Letter Assignment
 
+{% raw %}
+
 	Article: Q145578
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -88,3 +90,5 @@ permalink: /kb/145/Q145578/
 	
 	=============================================================================
 	
+
+{% endraw %}

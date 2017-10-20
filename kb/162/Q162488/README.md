@@ -6,6 +6,8 @@ permalink: /kb/162/Q162488/
 
 ## Q162488: Err Msg: You Cannot Copy &quot;File Name&quot; Onto the Shared Disk...
 
+{% raw %}
+
 	Article: Q162488
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -77,3 +79,5 @@ permalink: /kb/162/Q162488/
 	
 	=============================================================================
 	
+
+{% endraw %}

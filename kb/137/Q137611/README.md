@@ -6,6 +6,8 @@ permalink: /kb/137/Q137611/
 
 ## Q137611: CLIENT.BAT Added Incorrectly to AUTOEXEC.BAT
 
+{% raw %}
+
 	Article: Q137611
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -55,3 +57,5 @@ permalink: /kb/137/Q137611/
 	
 	=============================================================================
 	
+
+{% endraw %}

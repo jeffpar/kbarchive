@@ -6,6 +6,8 @@ permalink: /kb/077/Q77722/
 
 ## Q77722: Vertisoft Double Disk Compatible with MS-DOS
 
+{% raw %}
+
 	Article: Q77722
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/077/Q77722/
 	
 	=============================================================================
 	
+
+{% endraw %}

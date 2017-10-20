@@ -6,6 +6,8 @@ permalink: /kb/133/Q133429/
 
 ## Q133429: PC WRmt: Err Msg: Postoffice Has Not Accepted Mail Item
 
+{% raw %}
+
 	Article: Q133429
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -53,3 +55,5 @@ permalink: /kb/133/Q133429/
 	
 	=============================================================================
 	
+
+{% endraw %}

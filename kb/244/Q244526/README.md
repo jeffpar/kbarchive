@@ -6,6 +6,8 @@ permalink: /kb/244/Q244526/
 
 ## Q244526: XCON: RAS MTA Transport Stack Is only Type of Stack Available
 
+{% raw %}
+
 	Article: Q244526
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/244/Q244526/
 	
 	=============================================================================
 	
+
+{% endraw %}

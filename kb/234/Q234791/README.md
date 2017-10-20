@@ -6,6 +6,8 @@ permalink: /kb/234/Q234791/
 
 ## Q234791: Using Index Server to Achieve Hit Highlighting in Site Server Se
 
+{% raw %}
+
 	Article: Q234791
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -76,3 +78,5 @@ permalink: /kb/234/Q234791/
 	
 	=============================================================================
 	
+
+{% endraw %}

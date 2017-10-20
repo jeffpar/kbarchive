@@ -6,6 +6,8 @@ permalink: /kb/296/Q296124/
 
 ## Q296124: Online Investing, Second Edition Comments And Corrections
 
+{% raw %}
+
 	Article: Q296124
 	Product(s): Microsoft Press
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/296/Q296124/
 	
 	=============================================================================
 	
+
+{% endraw %}

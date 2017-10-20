@@ -6,6 +6,8 @@ permalink: /kb/191/Q191765/
 
 ## Q191765: Winspool.drv and Kernel32.dll on Same Base Address in CHS SP3
 
+{% raw %}
+
 	Article: Q191765
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/191/Q191765/
 	
 	=============================================================================
 	
+
+{% endraw %}

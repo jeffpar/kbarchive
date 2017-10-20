@@ -6,6 +6,8 @@ permalink: /kb/143/Q143304/
 
 ## Q143304: Content of the README.HLP That Ships with Visual FoxPro 3.0b
 
+{% raw %}
+
 	Article: Q143304
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0b
@@ -551,3 +553,5 @@ permalink: /kb/143/Q143304/
 	
 	=============================================================================
 	
+
+{% endraw %}

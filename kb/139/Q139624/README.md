@@ -6,6 +6,8 @@ permalink: /kb/139/Q139624/
 
 ## Q139624: How to Print Pictures in a Report by Using an Embedded Path
 
+{% raw %}
+
 	Article: Q139624
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0
@@ -99,3 +101,5 @@ permalink: /kb/139/Q139624/
 	
 	=============================================================================
 	
+
+{% endraw %}

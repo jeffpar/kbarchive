@@ -6,6 +6,8 @@ permalink: /kb/159/Q159010/
 
 ## Q159010: Cinemania/Music Central 97 Err Msg: Win32s - Error
 
+{% raw %}
+
 	Article: Q159010
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition; WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/159/Q159010/
 	
 	=============================================================================
 	
+
+{% endraw %}

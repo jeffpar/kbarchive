@@ -6,6 +6,8 @@ permalink: /kb/095/Q95081/
 
 ## Q95081: INF: How the dBASE Driver Performs Locking
 
+{% raw %}
+
 	Article: Q95081
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/095/Q95081/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221657/
 
 ## Q221657: FIX: C0000005 Error with Specific Access Methods and Debugger
 
+{% raw %}
+
 	Article: Q221657
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -91,3 +93,5 @@ permalink: /kb/221/Q221657/
 	
 	=============================================================================
 	
+
+{% endraw %}

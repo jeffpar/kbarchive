@@ -6,6 +6,8 @@ permalink: /kb/133/Q133789/
 
 ## Q133789: WT1229: Getting Started Controlling PowerPoint Through OLE
 
+{% raw %}
+
 	Article: Q133789
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -59,3 +61,5 @@ permalink: /kb/133/Q133789/
 	
 	=============================================================================
 	
+
+{% endraw %}

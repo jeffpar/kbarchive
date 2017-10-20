@@ -6,6 +6,8 @@ permalink: /kb/086/Q86012/
 
 ## Q86012: ALT+Q Doesn't Function in Write's Print Dialog Box
 
+{% raw %}
+
 	Article: Q86012
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/086/Q86012/
 	
 	=============================================================================
 	
+
+{% endraw %}

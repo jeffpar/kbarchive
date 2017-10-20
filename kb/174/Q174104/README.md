@@ -6,6 +6,8 @@ permalink: /kb/174/Q174104/
 
 ## Q174104: XCLN: Microsoft Outlook Not Available for the Alpha Platform
 
+{% raw %}
+
 	Article: Q174104
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/174/Q174104/
 	
 	=============================================================================
 	
+
+{% endraw %}

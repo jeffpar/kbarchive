@@ -6,6 +6,8 @@ permalink: /kb/275/Q275504/
 
 ## Q275504: XCON: Extra Space Is Inserted in Long Subject Lines
 
+{% raw %}
+
 	Article: Q275504
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/275/Q275504/
 	
 	=============================================================================
 	
+
+{% endraw %}

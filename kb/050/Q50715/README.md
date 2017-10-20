@@ -6,6 +6,8 @@ permalink: /kb/050/Q50715/
 
 ## Q50715: Executing QuickC Under Windows Operating Environment
 
+{% raw %}
+
 	Article: Q50715
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -41,3 +43,5 @@ permalink: /kb/050/Q50715/
 	the following line to your AUTOEXEC.BAT file:
 	
 	   mouse
+
+{% endraw %}

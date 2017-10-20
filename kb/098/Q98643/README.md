@@ -6,6 +6,8 @@ permalink: /kb/098/Q98643/
 
 ## Q98643: Paste Command Dimmed After Choosing Copy or Cut in Encarta
 
+{% raw %}
+
 	Article: Q98643
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/098/Q98643/
 	
 	=============================================================================
 	
+
+{% endraw %}

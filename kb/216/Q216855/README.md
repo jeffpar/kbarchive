@@ -6,6 +6,8 @@ permalink: /kb/216/Q216855/
 
 ## Q216855: SMS: Password Uniqueness Disables SMS 2.0 Server Client Install
 
+{% raw %}
+
 	Article: Q216855
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -81,3 +83,5 @@ permalink: /kb/216/Q216855/
 	
 	=============================================================================
 	
+
+{% endraw %}

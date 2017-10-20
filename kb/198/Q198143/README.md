@@ -6,6 +6,8 @@ permalink: /kb/198/Q198143/
 
 ## Q198143: XFOR: Unique Alias Name Required for POP3/IMAP4 Client Logons
 
+{% raw %}
+
 	Article: Q198143
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -58,3 +60,5 @@ permalink: /kb/198/Q198143/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244209/
 
 ## Q244209: How to Perform Network Tracing in a Switched Environment
 
+{% raw %}
+
 	Article: Q244209
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/244/Q244209/
 	
 	=============================================================================
 	
+
+{% endraw %}

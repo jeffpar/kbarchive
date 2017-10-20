@@ -6,6 +6,8 @@ permalink: /kb/146/Q146126/
 
 ## Q146126: XFOR: Controlling IMC Loopback Connections
 
+{% raw %}
+
 	Article: Q146126
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -69,3 +71,5 @@ permalink: /kb/146/Q146126/
 	
 	=============================================================================
 	
+
+{% endraw %}

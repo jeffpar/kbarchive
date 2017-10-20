@@ -6,6 +6,8 @@ permalink: /kb/158/Q158953/
 
 ## Q158953: Updated Display Drivers Included with DirectX 1.0, 2.0, and 3.0
 
+{% raw %}
+
 	Article: Q158953
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,1.0a
@@ -285,3 +287,5 @@ permalink: /kb/158/Q158953/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85408/
 
 ## Q85408: Envelope Orientation Incorrect in PostScript Driver
 
+{% raw %}
+
 	Article: Q85408
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/085/Q85408/
 	
 	=============================================================================
 	
+
+{% endraw %}

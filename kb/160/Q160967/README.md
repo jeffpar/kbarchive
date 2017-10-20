@@ -6,6 +6,8 @@ permalink: /kb/160/Q160967/
 
 ## Q160967: SMS: Components Fail to Load Language DLLs and Help Files
 
+{% raw %}
+
 	Article: Q160967
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -97,3 +99,5 @@ permalink: /kb/160/Q160967/
 	
 	=============================================================================
 	
+
+{% endraw %}

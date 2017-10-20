@@ -6,6 +6,8 @@ permalink: /kb/172/Q172465/
 
 ## Q172465: Bookshelf 98: &quot;Licensed To&quot; Field in About Box Is Empty
 
+{% raw %}
+
 	Article: Q172465
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -44,3 +46,5 @@ permalink: /kb/172/Q172465/
 	
 	=============================================================================
 	
+
+{% endraw %}

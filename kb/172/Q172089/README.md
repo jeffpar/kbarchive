@@ -6,6 +6,8 @@ permalink: /kb/172/Q172089/
 
 ## Q172089: Cinemania 97:  Why Does the Year Filter Stop at 1996?
 
+{% raw %}
+
 	Article: Q172089
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -50,3 +52,5 @@ permalink: /kb/172/Q172089/
 	
 	=============================================================================
 	
+
+{% endraw %}

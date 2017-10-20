@@ -6,6 +6,8 @@ permalink: /kb/199/Q199521/
 
 ## Q199521: PRB: User-Defined onexit/atexit/cexit Not Called If /MD or /MDd
 
+{% raw %}
+
 	Article: Q199521
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0,4.0b
@@ -54,3 +56,5 @@ permalink: /kb/199/Q199521/
 	
 	=============================================================================
 	
+
+{% endraw %}

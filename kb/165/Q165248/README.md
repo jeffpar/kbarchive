@@ -6,6 +6,8 @@ permalink: /kb/165/Q165248/
 
 ## Q165248: Description for Event ID 5111 is Incomplete
 
+{% raw %}
+
 	Article: Q165248
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/165/Q165248/
 	
 	=============================================================================
 	
+
+{% endraw %}

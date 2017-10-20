@@ -6,6 +6,8 @@ permalink: /kb/107/Q107184/
 
 ## Q107184: Using Aircraft &amp;Scenery 4.0 Files with Flight Simulator 5.0
 
+{% raw %}
+
 	Article: Q107184
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/107/Q107184/
 	
 	=============================================================================
 	
+
+{% endraw %}

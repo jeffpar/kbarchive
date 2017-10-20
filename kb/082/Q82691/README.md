@@ -6,6 +6,8 @@ permalink: /kb/082/Q82691/
 
 ## Q82691: Novell NetWare Incompatible with XTreeNet 2.0 in VM
 
+{% raw %}
+
 	Article: Q82691
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/082/Q82691/
 	
 	=============================================================================
 	
+
+{% endraw %}

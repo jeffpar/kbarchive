@@ -6,6 +6,8 @@ permalink: /kb/129/Q129147/
 
 ## Q129147: Some Compaq Computers Boot Slowly with AutoMount Enabled
 
+{% raw %}
+
 	Article: Q129147
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -76,3 +78,5 @@ permalink: /kb/129/Q129147/
 	
 	=============================================================================
 	
+
+{% endraw %}

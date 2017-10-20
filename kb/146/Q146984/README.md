@@ -6,6 +6,8 @@ permalink: /kb/146/Q146984/
 
 ## Q146984: XCLN: Minimized Msg Finder Windows Not Restored to Position
 
+{% raw %}
+
 	Article: Q146984
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146984/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111809/
 
 ## Q111809: How SROWS() and SCOLS() Behave in FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q111809
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -56,3 +58,5 @@ permalink: /kb/111/Q111809/
 	
 	=============================================================================
 	
+
+{% endraw %}

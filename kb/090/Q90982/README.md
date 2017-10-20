@@ -6,6 +6,8 @@ permalink: /kb/090/Q90982/
 
 ## Q90982: No Network Services After Install Over LAN Manager 2.0
 
+{% raw %}
+
 	Article: Q90982
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/090/Q90982/
 	
 	=============================================================================
 	
+
+{% endraw %}

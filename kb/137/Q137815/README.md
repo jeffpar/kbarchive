@@ -6,6 +6,8 @@ permalink: /kb/137/Q137815/
 
 ## Q137815: Shutdown Problems with Matrox Video Cards
 
+{% raw %}
+
 	Article: Q137815
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/137/Q137815/
 	
 	=============================================================================
 	
+
+{% endraw %}

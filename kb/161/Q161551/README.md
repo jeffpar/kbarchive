@@ -6,6 +6,8 @@ permalink: /kb/161/Q161551/
 
 ## Q161551: WD97: AutoSummarize Doesn't Find Some Text to Summarize
 
+{% raw %}
+
 	Article: Q161551
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/161/Q161551/
 	
 	=============================================================================
 	
+
+{% endraw %}

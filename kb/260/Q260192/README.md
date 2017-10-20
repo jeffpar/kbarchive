@@ -6,6 +6,8 @@ permalink: /kb/260/Q260192/
 
 ## Q260192: XADM: Global Address List Only Displays Contents of One ABV
 
+{% raw %}
+
 	Article: Q260192
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/260/Q260192/
 	
 	=============================================================================
 	
+
+{% endraw %}

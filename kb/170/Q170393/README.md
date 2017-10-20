@@ -6,6 +6,8 @@ permalink: /kb/170/Q170393/
 
 ## Q170393: HOWTO: Prevent Word Printing Error with OLE Automation
 
+{% raw %}
+
 	Article: Q170393
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -230,3 +232,5 @@ permalink: /kb/170/Q170393/
 	
 	=============================================================================
 	
+
+{% endraw %}

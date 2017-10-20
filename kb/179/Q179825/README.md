@@ -6,6 +6,8 @@ permalink: /kb/179/Q179825/
 
 ## Q179825: Contents of the Plus! For Kids Readme.doc File
 
+{% raw %}
+
 	Article: Q179825
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -448,3 +450,5 @@ permalink: /kb/179/Q179825/
 	
 	=============================================================================
 	
+
+{% endraw %}

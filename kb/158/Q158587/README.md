@@ -6,6 +6,8 @@ permalink: /kb/158/Q158587/
 
 ## Q158587: 16-Bit Named Pipe File Open Leads to WOW Access Violation
 
+{% raw %}
+
 	Article: Q158587
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/158/Q158587/
 	
 	=============================================================================
 	
+
+{% endraw %}

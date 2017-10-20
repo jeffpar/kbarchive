@@ -6,6 +6,8 @@ permalink: /kb/072/Q72132/
 
 ## Q72132: BACKUP Fails When Writing Log File to Unformatted Disk
 
+{% raw %}
+
 	Article: Q72132
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -76,3 +78,5 @@ permalink: /kb/072/Q72132/
 	
 	=============================================================================
 	
+
+{% endraw %}

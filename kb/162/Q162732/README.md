@@ -6,6 +6,8 @@ permalink: /kb/162/Q162732/
 
 ## Q162732: FIX: No WizardBar When Editing the Object: theApp
 
+{% raw %}
+
 	Article: Q162732
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162732/
 	
 	=============================================================================
 	
+
+{% endraw %}

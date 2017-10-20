@@ -6,6 +6,8 @@ permalink: /kb/229/Q229739/
 
 ## Q229739: Dllhost.exe Shutdown Causes SQL Server to Hang
 
+{% raw %}
+
 	Article: Q229739
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/229/Q229739/
 	
 	=============================================================================
 	
+
+{% endraw %}

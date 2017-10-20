@@ -6,6 +6,8 @@ permalink: /kb/086/Q86344/
 
 ## Q86344: DELL PVGA600.DRV Video Driver Causes Corrupted Printing
 
+{% raw %}
+
 	Article: Q86344
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/086/Q86344/
 	
 	=============================================================================
 	
+
+{% endraw %}

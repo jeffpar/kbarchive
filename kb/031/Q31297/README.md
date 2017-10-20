@@ -6,6 +6,8 @@ permalink: /kb/031/Q31297/
 
 ## Q31297: A GOTO Inside SELECT CASE Incorrectly Executes ELSE Block
 
+{% raw %}
+
 	Article: Q31297
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -69,3 +71,5 @@ permalink: /kb/031/Q31297/
 	       print "else"
 	     end select
 	200: print "After END SELECT"
+
+{% endraw %}

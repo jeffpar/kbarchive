@@ -6,6 +6,8 @@ permalink: /kb/179/Q179661/
 
 ## Q179661: WD97: File Sharing Options Are Ignored
 
+{% raw %}
+
 	Article: Q179661
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -109,3 +111,5 @@ permalink: /kb/179/Q179661/
 	
 	=============================================================================
 	
+
+{% endraw %}

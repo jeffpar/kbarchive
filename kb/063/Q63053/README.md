@@ -6,6 +6,8 @@ permalink: /kb/063/Q63053/
 
 ## Q63053: Operands Reversed in C 6.00 Divide Operation
 
+{% raw %}
+
 	Article: Q63053
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -136,3 +138,5 @@ permalink: /kb/063/Q63053/
 	0047:0034 D91ED004       FSTP      DWord Ptr [_f1 (04D0)]
 	0047:0038 90             NOP
 	0047:0039 9B             WAIT
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72183/
 
 ## Q72183: Loading MS-DOS 5.0 TSRs and Device Drivers into UMBs
 
+{% raw %}
+
 	Article: Q72183
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -77,3 +79,5 @@ permalink: /kb/072/Q72183/
 	
 	=============================================================================
 	
+
+{% endraw %}

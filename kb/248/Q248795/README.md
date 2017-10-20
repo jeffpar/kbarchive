@@ -6,6 +6,8 @@ permalink: /kb/248/Q248795/
 
 ## Q248795: PRB: Setup Wizard Does not Distribute Current ODBC Drivers
 
+{% raw %}
+
 	Article: Q248795
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -83,3 +85,5 @@ permalink: /kb/248/Q248795/
 	
 	=============================================================================
 	
+
+{% endraw %}

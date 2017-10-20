@@ -6,6 +6,8 @@ permalink: /kb/045/Q45766/
 
 ## Q45766: Mac Wkst: Sending Bcc (Blind Carbon Copy) Messages
 
+{% raw %}
+
 	Article: Q45766
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -51,3 +53,5 @@ permalink: /kb/045/Q45766/
 	
 	=============================================================================
 	
+
+{% endraw %}

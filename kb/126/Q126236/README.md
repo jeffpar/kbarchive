@@ -6,6 +6,8 @@ permalink: /kb/126/Q126236/
 
 ## Q126236: Encarta: &quot;Sub Or Function Not Defined&quot; Error in MindMaze 1994
 
+{% raw %}
+
 	Article: Q126236
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition
@@ -100,3 +102,5 @@ permalink: /kb/126/Q126236/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114276/
 
 ## Q114276: PC Adm: Notice 102 Failure to Generate...RDI System
 
+{% raw %}
+
 	Article: Q114276
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -56,3 +58,5 @@ permalink: /kb/114/Q114276/
 	
 	=============================================================================
 	
+
+{% endraw %}

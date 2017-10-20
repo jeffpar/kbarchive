@@ -6,6 +6,8 @@ permalink: /kb/065/Q65478/
 
 ## Q65478: 7.10 Memory Lost If Reassign &#36;DYNAMIC String Array to STRING&#36;
 
+{% raw %}
+
 	Article: Q65478
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -135,3 +137,5 @@ permalink: /kb/065/Q65478/
 	  s(1) = ""
 	  PRINT "FRE after string deallocation: "; FRE(s(2))
 	END SUB
+
+{% endraw %}

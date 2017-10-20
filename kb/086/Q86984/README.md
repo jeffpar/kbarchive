@@ -6,6 +6,8 @@ permalink: /kb/086/Q86984/
 
 ## Q86984: X400: Location of Log Files and When You Can Move Them
 
+{% raw %}
+
 	Article: Q86984
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -41,3 +43,5 @@ permalink: /kb/086/Q86984/
 	
 	=============================================================================
 	
+
+{% endraw %}

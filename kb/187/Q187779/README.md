@@ -6,6 +6,8 @@ permalink: /kb/187/Q187779/
 
 ## Q187779: XADM: Error: Warning &#91;30&#93; Message Contains Duplicate Email Addre
 
+{% raw %}
+
 	Article: Q187779
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/187/Q187779/
 	
 	=============================================================================
 	
+
+{% endraw %}

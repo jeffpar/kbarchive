@@ -6,6 +6,8 @@ permalink: /kb/129/Q129671/
 
 ## Q129671: Problems Using Real-Mode Compression Driver in Windows 95
 
+{% raw %}
+
 	Article: Q129671
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -168,3 +170,5 @@ permalink: /kb/129/Q129671/
 	
 	=============================================================================
 	
+
+{% endraw %}

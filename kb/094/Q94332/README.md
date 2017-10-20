@@ -6,6 +6,8 @@ permalink: /kb/094/Q94332/
 
 ## Q94332: System Restarts When DoubleSpace Commands Are Issued
 
+{% raw %}
+
 	Article: Q94332
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -44,3 +46,5 @@ permalink: /kb/094/Q94332/
 	
 	=============================================================================
 	
+
+{% endraw %}

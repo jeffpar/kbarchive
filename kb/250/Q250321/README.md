@@ -6,6 +6,8 @@ permalink: /kb/250/Q250321/
 
 ## Q250321: BUG: CString::Delete() Does Not Return the Correct Value
 
+{% raw %}
+
 	Article: Q250321
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -110,3 +112,5 @@ permalink: /kb/250/Q250321/
 	
 	=============================================================================
 	
+
+{% endraw %}

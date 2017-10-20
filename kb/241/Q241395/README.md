@@ -6,6 +6,8 @@ permalink: /kb/241/Q241395/
 
 ## Q241395: Client Configuration for SNA Server Client Does Not Save Changes
 
+{% raw %}
+
 	Article: Q241395
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -62,3 +64,5 @@ permalink: /kb/241/Q241395/
 	
 	=============================================================================
 	
+
+{% endraw %}

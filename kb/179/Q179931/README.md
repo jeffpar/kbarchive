@@ -6,6 +6,8 @@ permalink: /kb/179/Q179931/
 
 ## Q179931: How to Use Walls in Age of Empires to Gain an Advantage
 
+{% raw %}
+
 	Article: Q179931
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/179/Q179931/
 	
 	=============================================================================
 	
+
+{% endraw %}

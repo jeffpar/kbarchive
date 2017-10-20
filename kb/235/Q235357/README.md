@@ -6,6 +6,8 @@ permalink: /kb/235/Q235357/
 
 ## Q235357: PRB: FoxPro ODBC Driver Replaced by Visual FoxPro ODBC Driver
 
+{% raw %}
+
 	Article: Q235357
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0,2.0,2.1,2.1 (GA),2.1 SP1,2.1 SP2,3.0,4.0,5.0,6.0
@@ -133,3 +135,5 @@ permalink: /kb/235/Q235357/
 	
 	=============================================================================
 	
+
+{% endraw %}

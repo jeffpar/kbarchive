@@ -6,6 +6,8 @@ permalink: /kb/062/Q62072/
 
 ## Q62072: C1001: Internal Compiler Error: '@(#)regMD.c:1.100', Line 4634
 
+{% raw %}
+
 	Article: Q62072
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -52,3 +54,5 @@ permalink: /kb/062/Q62072/
 	3. Disable optimizations locally with #pragma("",off).
 	
 	4. Simplify the function call through the use of temporary variables.
+
+{% endraw %}

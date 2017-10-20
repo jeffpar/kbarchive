@@ -6,6 +6,8 @@ permalink: /kb/178/Q178542/
 
 ## Q178542: Age of Empires: Clicking Diplomacy Button Hangs Computer
 
+{% raw %}
+
 	Article: Q178542
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/178/Q178542/
 	
 	=============================================================================
 	
+
+{% endraw %}

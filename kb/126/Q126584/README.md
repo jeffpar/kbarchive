@@ -6,6 +6,8 @@ permalink: /kb/126/Q126584/
 
 ## Q126584: Windows NT PCL Driver Cannot Print Grayscaled Fonts
 
+{% raw %}
+
 	Article: Q126584
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -54,3 +56,5 @@ permalink: /kb/126/Q126584/
 	
 	=============================================================================
 	
+
+{% endraw %}

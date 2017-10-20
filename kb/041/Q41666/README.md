@@ -6,6 +6,8 @@ permalink: /kb/041/Q41666/
 
 ## Q41666: QuickC 2.00 README.DOC: Error Message C2176
 
+{% raw %}
+
 	Article: Q41666
 	Product(s): See article
 	Version(s): 2.00
@@ -25,3 +27,5 @@ permalink: /kb/041/Q41666/
 	
 	   You cannot declare data items with the huge attribute in the QuickC
 	   environment. Declare a huge pointer to the data item instead.
+
+{% endraw %}

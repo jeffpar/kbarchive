@@ -6,6 +6,8 @@ permalink: /kb/042/Q42473/
 
 ## Q42473: &quot;Overflow&quot; Error Might Be the Result of 0/0
 
+{% raw %}
+
 	Article: Q42473
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/042/Q42473/
 	b# = 5
 	c# = 5
 	PRINT (b#-c#) / (b#-c#) ' This will result in an "Overflow" error
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164075/
 
 ## Q164075: SNA 2.11 Service Pack 2 Readme.txt File
 
+{% raw %}
+
 	Article: Q164075
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -159,3 +161,5 @@ permalink: /kb/164/Q164075/
 	
 	=============================================================================
 	
+
+{% endraw %}

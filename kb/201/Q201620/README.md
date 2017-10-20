@@ -6,6 +6,8 @@ permalink: /kb/201/Q201620/
 
 ## Q201620: SMS: RC: Viewing of Cursor on Windows 98 With Multiple Monitors
 
+{% raw %}
+
 	Article: Q201620
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -61,3 +63,5 @@ permalink: /kb/201/Q201620/
 	
 	=============================================================================
 	
+
+{% endraw %}

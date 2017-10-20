@@ -6,6 +6,8 @@ permalink: /kb/166/Q166226/
 
 ## Q166226: Backup of Local Registry Does Not Work With NTBACKUP.EXE /b
 
+{% raw %}
+
 	Article: Q166226
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/166/Q166226/
 	
 	=============================================================================
 	
+
+{% endraw %}

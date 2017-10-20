@@ -6,6 +6,8 @@ permalink: /kb/223/Q223075/
 
 ## Q223075: FIX:GDI Resource Problem w/Many Forms and Intrinsic Data Control
 
+{% raw %}
+
 	Article: Q223075
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -53,3 +55,5 @@ permalink: /kb/223/Q223075/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103541/
 
 ## Q103541: MS-DOS 6.2 Setup Err Msg: You Deleted Files from the...
 
+{% raw %}
+
 	Article: Q103541
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/103/Q103541/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141351/
 
 ## Q141351: PRB: &quot;Invalid argument&quot; with dbAttachedTable or dbAttachedODBC
 
+{% raw %}
+
 	Article: Q141351
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -66,3 +68,5 @@ permalink: /kb/141/Q141351/
 	
 	=============================================================================
 	
+
+{% endraw %}

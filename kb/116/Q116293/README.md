@@ -6,6 +6,8 @@ permalink: /kb/116/Q116293/
 
 ## Q116293: Direct-to-Disk Recorder with ACM
 
+{% raw %}
+
 	Article: Q116293
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -88,3 +90,5 @@ permalink: /kb/116/Q116293/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98318/
 
 ## Q98318: Tandy DAC or PSSJ Windows Sound Driver
 
+{% raw %}
+
 	Article: Q98318
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -114,3 +116,5 @@ permalink: /kb/098/Q98318/
 	
 	=============================================================================
 	
+
+{% endraw %}

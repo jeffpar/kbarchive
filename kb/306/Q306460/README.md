@@ -6,6 +6,8 @@ permalink: /kb/306/Q306460/
 
 ## Q306460: Hfnetchk.exe Returns NOTE Messages for Installed Patches
 
+{% raw %}
+
 	Article: Q306460
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6a
@@ -157,3 +159,5 @@ permalink: /kb/306/Q306460/
 	
 	=============================================================================
 	
+
+{% endraw %}

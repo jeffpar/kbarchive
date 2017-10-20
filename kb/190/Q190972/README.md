@@ -6,6 +6,8 @@ permalink: /kb/190/Q190972/
 
 ## Q190972: NotesDem.exe Reads and Writes the Contacts NOTES Field
 
+{% raw %}
+
 	Article: Q190972
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/190/Q190972/
 	
 	=============================================================================
 	
+
+{% endraw %}

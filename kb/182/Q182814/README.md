@@ -6,6 +6,8 @@ permalink: /kb/182/Q182814/
 
 ## Q182814: XADM: Err Msg: System Could Not Find the Path Specified
 
+{% raw %}
+
 	Article: Q182814
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -78,3 +80,5 @@ permalink: /kb/182/Q182814/
 	
 	=============================================================================
 	
+
+{% endraw %}

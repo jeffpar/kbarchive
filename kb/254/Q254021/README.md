@@ -6,6 +6,8 @@ permalink: /kb/254/Q254021/
 
 ## Q254021: HOWTO: Return an Array of Recordsets from an ADO/RDS Server
 
+{% raw %}
+
 	Article: Q254021
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,2.5,2.6,6.0SP3
@@ -157,3 +159,5 @@ permalink: /kb/254/Q254021/
 	
 	=============================================================================
 	
+
+{% endraw %}

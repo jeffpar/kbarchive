@@ -6,6 +6,8 @@ permalink: /kb/166/Q166256/
 
 ## Q166256: XFOR: Directory You Have Selected Is Not a cc:Mail Post Office
 
+{% raw %}
+
 	Article: Q166256
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/166/Q166256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145677/
 
 ## Q145677: FIX: ARROW and TAB keys Stop Working in MDI Child Form
 
+{% raw %}
+
 	Article: Q145677
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/145/Q145677/
 	
 	=============================================================================
 	
+
+{% endraw %}

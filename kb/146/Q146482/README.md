@@ -6,6 +6,8 @@ permalink: /kb/146/Q146482/
 
 ## Q146482: XCLN: Public Folder Link Starts New Instance of Exchange
 
+{% raw %}
+
 	Article: Q146482
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146482/
 	
 	=============================================================================
 	
+
+{% endraw %}

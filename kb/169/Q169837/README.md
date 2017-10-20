@@ -6,6 +6,8 @@ permalink: /kb/169/Q169837/
 
 ## Q169837: FP: Clicking Alignment Buttons on Format Toolbar Misaligns Cells
 
+{% raw %}
+
 	Article: Q169837
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97; macintosh:1.0
@@ -64,3 +66,5 @@ permalink: /kb/169/Q169837/
 	
 	=============================================================================
 	
+
+{% endraw %}

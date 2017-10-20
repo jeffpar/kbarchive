@@ -6,6 +6,8 @@ permalink: /kb/141/Q141343/
 
 ## Q141343: XCLN: POP3 Requires QUIT Command Before Delete
 
+{% raw %}
+
 	Article: Q141343
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -77,3 +79,5 @@ permalink: /kb/141/Q141343/
 	
 	=============================================================================
 	
+
+{% endraw %}

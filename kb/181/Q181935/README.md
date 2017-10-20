@@ -6,6 +6,8 @@ permalink: /kb/181/Q181935/
 
 ## Q181935: WD97: FileOpen and Auto Macros Renamed
 
+{% raw %}
+
 	Article: Q181935
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/181/Q181935/
 	
 	=============================================================================
 	
+
+{% endraw %}

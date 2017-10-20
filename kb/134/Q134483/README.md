@@ -6,6 +6,8 @@ permalink: /kb/134/Q134483/
 
 ## Q134483: Briefcase Synchronization Copies Are Deleted By Default
 
+{% raw %}
+
 	Article: Q134483
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/134/Q134483/
 	
 	=============================================================================
 	
+
+{% endraw %}

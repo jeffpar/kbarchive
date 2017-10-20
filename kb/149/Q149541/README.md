@@ -6,6 +6,8 @@ permalink: /kb/149/Q149541/
 
 ## Q149541: XCLN: Unable to Send or Save Messages
 
+{% raw %}
+
 	Article: Q149541
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -60,3 +62,5 @@ permalink: /kb/149/Q149541/
 	
 	=============================================================================
 	
+
+{% endraw %}

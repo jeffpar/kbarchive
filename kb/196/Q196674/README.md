@@ -6,6 +6,8 @@ permalink: /kb/196/Q196674/
 
 ## Q196674: WD97: Word Doesn't Include Page Ranges in Index
 
+{% raw %}
+
 	Article: Q196674
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -113,3 +115,5 @@ permalink: /kb/196/Q196674/
 	
 	=============================================================================
 	
+
+{% endraw %}

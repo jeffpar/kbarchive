@@ -6,6 +6,8 @@ permalink: /kb/141/Q141533/
 
 ## Q141533: FIX: CSyncObject::Lock Always Returns TRUE for Finite Waits
 
+{% raw %}
+
 	Article: Q141533
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -155,3 +157,5 @@ permalink: /kb/141/Q141533/
 	
 	=============================================================================
 	
+
+{% endraw %}

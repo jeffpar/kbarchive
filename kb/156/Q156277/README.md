@@ -6,6 +6,8 @@ permalink: /kb/156/Q156277/
 
 ## Q156277: Windows NT Stops When Using Matrox Millennium Driver
 
+{% raw %}
+
 	Article: Q156277
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156277/
 	
 	=============================================================================
 	
+
+{% endraw %}

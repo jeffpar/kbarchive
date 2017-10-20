@@ -6,6 +6,8 @@ permalink: /kb/172/Q172318/
 
 ## Q172318: WD97: Run Time Error If Court Name Blank in Pleading Wizard
 
+{% raw %}
+
 	Article: Q172318
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/172/Q172318/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58388/
 
 ## Q58388: Line Spacing in Windows 3.0 Write
 
+{% raw %}
+
 	Article: Q58388
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/058/Q58388/
 	
 	=============================================================================
 	
+
+{% endraw %}

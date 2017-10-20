@@ -6,6 +6,8 @@ permalink: /kb/271/Q271615/
 
 ## Q271615: XWEB: OWA and CDO Daylight Savings Change for Year 2000
 
+{% raw %}
+
 	Article: Q271615
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -145,3 +147,5 @@ permalink: /kb/271/Q271615/
 	
 	=============================================================================
 	
+
+{% endraw %}

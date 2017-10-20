@@ -6,6 +6,8 @@ permalink: /kb/040/Q40426/
 
 ## Q40426: PRB: L1083 Error From Incorrect CONFIG.SYS FILES Statement
 
+{% raw %}
+
 	Article: Q40426
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.x,5.01.20,5.01.21,5.02,5.03,5.05,5.1,5.11,5.13,5.15,5.3,5.31.009,5.5,5.6
@@ -71,3 +73,5 @@ permalink: /kb/040/Q40426/
 	
 	=============================================================================
 	
+
+{% endraw %}

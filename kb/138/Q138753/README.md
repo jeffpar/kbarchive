@@ -6,6 +6,8 @@ permalink: /kb/138/Q138753/
 
 ## Q138753: PRB: Unable to Compile 32-bit CDK Samples
 
+{% raw %}
+
 	Article: Q138753
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0; :
@@ -78,3 +80,5 @@ permalink: /kb/138/Q138753/
 	
 	=============================================================================
 	
+
+{% endraw %}

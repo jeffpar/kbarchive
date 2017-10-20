@@ -6,6 +6,8 @@ permalink: /kb/171/Q171490/
 
 ## Q171490: FIX: Crash After Toggling Folders in ActiveX EXE Project
 
+{% raw %}
+
 	Article: Q171490
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -69,3 +71,5 @@ permalink: /kb/171/Q171490/
 	
 	=============================================================================
 	
+
+{% endraw %}

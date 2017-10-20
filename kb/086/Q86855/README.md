@@ -6,6 +6,8 @@ permalink: /kb/086/Q86855/
 
 ## Q86855: System Hangs When Running MS-DOS Prompt with IBM LAN Server
 
+{% raw %}
+
 	Article: Q86855
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/086/Q86855/
 	
 	=============================================================================
 	
+
+{% endraw %}

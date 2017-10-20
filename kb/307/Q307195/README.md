@@ -6,6 +6,8 @@ permalink: /kb/307/Q307195/
 
 ## Q307195: XWEB: Unauthenticated User Can Enumerate Global Address List
 
+{% raw %}
+
 	Article: Q307195
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -129,3 +131,5 @@ permalink: /kb/307/Q307195/
 	
 	=============================================================================
 	
+
+{% endraw %}

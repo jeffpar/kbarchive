@@ -6,6 +6,8 @@ permalink: /kb/302/Q302978/
 
 ## Q302978: MSN Explorer Dials But Does Not Connect
 
+{% raw %}
+
 	Article: Q302978
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -84,3 +86,5 @@ permalink: /kb/302/Q302978/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146331/
 
 ## Q146331: Import Reverts Moved Appointments Back to Original Time
 
+{% raw %}
+
 	Article: Q146331
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -42,3 +44,5 @@ permalink: /kb/146/Q146331/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143259/
 
 ## Q143259: INFO: Remote Callback Works Only with 32-Bit Clients
 
+{% raw %}
+
 	Article: Q143259
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/143/Q143259/
 	
 	=============================================================================
 	
+
+{% endraw %}

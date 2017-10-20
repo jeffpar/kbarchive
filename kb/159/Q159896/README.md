@@ -6,6 +6,8 @@ permalink: /kb/159/Q159896/
 
 ## Q159896: WD97: How to Control the Tabbing Order in a Form
 
+{% raw %}
+
 	Article: Q159896
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -131,3 +133,5 @@ permalink: /kb/159/Q159896/
 	
 	=============================================================================
 	
+
+{% endraw %}

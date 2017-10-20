@@ -6,6 +6,8 @@ permalink: /kb/099/Q99170/
 
 ## Q99170: PROFS: Err Msg: ERROR: Directory ID Name Does Not Exist...
 
+{% raw %}
+
 	Article: Q99170
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1b,3.1,3.2,3.3
@@ -71,3 +73,5 @@ permalink: /kb/099/Q99170/
 	
 	=============================================================================
 	
+
+{% endraw %}

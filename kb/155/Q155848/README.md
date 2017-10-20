@@ -6,6 +6,8 @@ permalink: /kb/155/Q155848/
 
 ## Q155848: PRB: ODBC Error When Using CRecordset Without Deriving From It
 
+{% raw %}
+
 	Article: Q155848
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/155/Q155848/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130707/
 
 ## Q130707: HOWTO: Use Criteria to Limit Records Displayed in a Grid
 
+{% raw %}
+
 	Article: Q130707
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/130/Q130707/
 	
 	=============================================================================
 	
+
+{% endraw %}

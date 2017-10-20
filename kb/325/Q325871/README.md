@@ -6,6 +6,8 @@ permalink: /kb/325/Q325871/
 
 ## Q325871: PRB: Err Msg and Event 5149 When You Try to Start SNA Manager
 
+{% raw %}
+
 	Article: Q325871
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/325/Q325871/
 	
 	=============================================================================
 	
+
+{% endraw %}

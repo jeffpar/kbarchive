@@ -6,6 +6,8 @@ permalink: /kb/318/Q318339/
 
 ## Q318339: PRB: Event Log Errors in Index Server if Address Space Exhausted
 
+{% raw %}
+
 	Article: Q318339
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -108,3 +110,5 @@ permalink: /kb/318/Q318339/
 	
 	=============================================================================
 	
+
+{% endraw %}

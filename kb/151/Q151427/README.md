@@ -6,6 +6,8 @@ permalink: /kb/151/Q151427/
 
 ## Q151427: Server Service May Fail After Installing Network Card
 
+{% raw %}
+
 	Article: Q151427
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/151/Q151427/
 	
 	=============================================================================
 	
+
+{% endraw %}

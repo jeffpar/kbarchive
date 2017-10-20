@@ -6,6 +6,8 @@ permalink: /kb/149/Q149564/
 
 ## Q149564: Poor Performance Reading Video CD in IDE CD-ROM Drive
 
+{% raw %}
+
 	Article: Q149564
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -93,3 +95,5 @@ permalink: /kb/149/Q149564/
 	
 	=============================================================================
 	
+
+{% endraw %}

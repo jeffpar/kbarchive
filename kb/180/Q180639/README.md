@@ -6,6 +6,8 @@ permalink: /kb/180/Q180639/
 
 ## Q180639: WD97: &quot;Keep Lines Together&quot; Has No Effect in Tables
 
+{% raw %}
+
 	Article: Q180639
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/180/Q180639/
 	
 	=============================================================================
 	
+
+{% endraw %}

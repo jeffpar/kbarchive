@@ -6,6 +6,8 @@ permalink: /kb/230/Q230784/
 
 ## Q230784: NTVDM May Stop Responding After Quitting 16-Bit Programs
 
+{% raw %}
+
 	Article: Q230784
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -89,3 +91,5 @@ permalink: /kb/230/Q230784/
 	
 	=============================================================================
 	
+
+{% endraw %}

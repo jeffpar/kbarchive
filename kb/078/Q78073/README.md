@@ -6,6 +6,8 @@ permalink: /kb/078/Q78073/
 
 ## Q78073: PRB: Clipboard.SetData Gives Invalid Format Message with Icon
 
+{% raw %}
+
 	Article: Q78073
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,3.0
@@ -80,3 +82,5 @@ permalink: /kb/078/Q78073/
 	
 	=============================================================================
 	
+
+{% endraw %}

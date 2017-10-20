@@ -6,6 +6,8 @@ permalink: /kb/083/Q83720/
 
 ## Q83720: AT&amp;T Safari Requires Windows 3.0 and Upgrade to Windows 3.1
 
+{% raw %}
+
 	Article: Q83720
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/083/Q83720/
 	
 	=============================================================================
 	
+
+{% endraw %}

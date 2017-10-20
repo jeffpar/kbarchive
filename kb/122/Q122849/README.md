@@ -6,6 +6,8 @@ permalink: /kb/122/Q122849/
 
 ## Q122849: CONN: Adding PC Addresses to Mac Address List Via a Text File
 
+{% raw %}
+
 	Article: Q122849
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -119,3 +121,5 @@ permalink: /kb/122/Q122849/
 	
 	=============================================================================
 	
+
+{% endraw %}

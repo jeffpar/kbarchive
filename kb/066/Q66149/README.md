@@ -6,6 +6,8 @@ permalink: /kb/066/Q66149/
 
 ## Q66149: Must Use Parentheses with _fpreset()
 
+{% raw %}
+
 	Article: Q66149
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -79,3 +81,5 @@ permalink: /kb/066/Q66149/
 	      st=1;
 	      longjmp(mark,-1);
 	   }
+
+{% endraw %}

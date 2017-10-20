@@ -6,6 +6,8 @@ permalink: /kb/236/Q236098/
 
 ## Q236098: Local TCP/IP Client Fails--No SNA Servers Found in (Sub)domain
 
+{% raw %}
+
 	Article: Q236098
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -88,3 +90,5 @@ permalink: /kb/236/Q236098/
 	
 	=============================================================================
 	
+
+{% endraw %}

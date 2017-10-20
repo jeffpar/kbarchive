@@ -6,6 +6,8 @@ permalink: /kb/187/Q187988/
 
 ## Q187988: PRB: ActiveX Control Is Parent Window of Modeless Dialog
 
+{% raw %}
+
 	Article: Q187988
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,4.2b,5.0,6.0
@@ -152,3 +154,5 @@ permalink: /kb/187/Q187988/
 	
 	=============================================================================
 	
+
+{% endraw %}

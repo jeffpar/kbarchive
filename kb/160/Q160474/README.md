@@ -6,6 +6,8 @@ permalink: /kb/160/Q160474/
 
 ## Q160474: Fax Wizard Falsely Implies Completion of Faxing Process
 
+{% raw %}
+
 	Article: Q160474
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/160/Q160474/
 	
 	=============================================================================
 	
+
+{% endraw %}

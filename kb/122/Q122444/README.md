@@ -6,6 +6,8 @@ permalink: /kb/122/Q122444/
 
 ## Q122444: Server Manager Reports Inconsistent Computer Type
 
+{% raw %}
+
 	Article: Q122444
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -45,3 +47,5 @@ permalink: /kb/122/Q122444/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126243/
 
 ## Q126243: PGC Creates Duplicate Items on Windows 95 Taskbar
 
+{% raw %}
+
 	Article: Q126243
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -48,3 +50,5 @@ permalink: /kb/126/Q126243/
 	
 	=============================================================================
 	
+
+{% endraw %}

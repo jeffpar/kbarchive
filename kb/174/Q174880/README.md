@@ -6,6 +6,8 @@ permalink: /kb/174/Q174880/
 
 ## Q174880: XADM: EULA in Exchange Setup Shows English and French Text
 
+{% raw %}
+
 	Article: Q174880
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -36,3 +38,5 @@ permalink: /kb/174/Q174880/
 	
 	=============================================================================
 	
+
+{% endraw %}

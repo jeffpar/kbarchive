@@ -6,6 +6,8 @@ permalink: /kb/142/Q142661/
 
 ## Q142661: Cacls.exe May Report Errors when Handling Extended Characters
 
+{% raw %}
+
 	Article: Q142661
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -56,3 +58,5 @@ permalink: /kb/142/Q142661/
 	
 	=============================================================================
 	
+
+{% endraw %}

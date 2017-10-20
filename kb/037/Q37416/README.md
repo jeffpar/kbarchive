@@ -6,6 +6,8 @@ permalink: /kb/037/Q37416/
 
 ## Q37416: QuickBASIC Hasn't Been Tested with PC-MOS or Concurrent DOS
 
+{% raw %}
+
 	Article: Q37416
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -34,3 +36,5 @@ permalink: /kb/037/Q37416/
 	For a multiple-user system (for sharing disk and processor resources),
 	you can connect multiple computers with the Microsoft OS/2 LAN Manager
 	Network.
+
+{% endraw %}

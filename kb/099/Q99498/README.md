@@ -6,6 +6,8 @@ permalink: /kb/099/Q99498/
 
 ## Q99498: Quantum Hard Card EZ Driver Hangs MemMaker
 
+{% raw %}
+
 	Article: Q99498
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/099/Q99498/
 	
 	=============================================================================
 	
+
+{% endraw %}

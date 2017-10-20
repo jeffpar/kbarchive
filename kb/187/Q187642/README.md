@@ -6,6 +6,8 @@ permalink: /kb/187/Q187642/
 
 ## Q187642: BUG: &quot;Out of Memory&quot; Calling COMTI in Same MTS Pkg. as Caller
 
+{% raw %}
+
 	Article: Q187642
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0 SP1,4.0 SP1
@@ -91,3 +93,5 @@ permalink: /kb/187/Q187642/
 	
 	=============================================================================
 	
+
+{% endraw %}

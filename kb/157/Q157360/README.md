@@ -6,6 +6,8 @@ permalink: /kb/157/Q157360/
 
 ## Q157360: FIX: LIST STRUCTURE Ignores Index if Index Name != Field Name
 
+{% raw %}
+
 	Article: Q157360
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157360/
 	
 	=============================================================================
 	
+
+{% endraw %}

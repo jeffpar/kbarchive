@@ -6,6 +6,8 @@ permalink: /kb/153/Q153459/
 
 ## Q153459: Kids: Troubleshooting Help File Included on Compact Disc
 
+{% raw %}
+
 	Article: Q153459
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0; WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/153/Q153459/
 	
 	=============================================================================
 	
+
+{% endraw %}

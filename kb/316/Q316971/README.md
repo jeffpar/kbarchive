@@ -6,6 +6,8 @@ permalink: /kb/316/Q316971/
 
 ## Q316971: Pack Level Is Not Preserved When You Use the #import Directive
 
+{% raw %}
+
 	Article: Q316971
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/316/Q316971/
 	
 	=============================================================================
 	
+
+{% endraw %}

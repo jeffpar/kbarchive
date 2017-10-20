@@ -6,6 +6,8 @@ permalink: /kb/301/Q301359/
 
 ## Q301359: INFO: Cannot Use WebBrowser Control Directly in eVB
 
+{% raw %}
+
 	Article: Q301359
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -115,3 +117,5 @@ permalink: /kb/301/Q301359/
 	
 	=============================================================================
 	
+
+{% endraw %}

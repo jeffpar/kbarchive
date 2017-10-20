@@ -6,6 +6,8 @@ permalink: /kb/145/Q145842/
 
 ## Q145842: Language Versions of MSN and Windows 95 Must Match
 
+{% raw %}
+
 	Article: Q145842
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,95
@@ -53,3 +55,5 @@ permalink: /kb/145/Q145842/
 	
 	=============================================================================
 	
+
+{% endraw %}

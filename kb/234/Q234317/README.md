@@ -6,6 +6,8 @@ permalink: /kb/234/Q234317/
 
 ## Q234317: FIX: HTML Truncated with VS SP3 WebClass Run Time in VB IDE
 
+{% raw %}
+
 	Article: Q234317
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -114,3 +116,5 @@ permalink: /kb/234/Q234317/
 	
 	=============================================================================
 	
+
+{% endraw %}

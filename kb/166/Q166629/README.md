@@ -6,6 +6,8 @@ permalink: /kb/166/Q166629/
 
 ## Q166629: XADM: Store Defrag Fails with Access Violation
 
+{% raw %}
+
 	Article: Q166629
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/166/Q166629/
 	
 	=============================================================================
 	
+
+{% endraw %}

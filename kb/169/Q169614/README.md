@@ -6,6 +6,8 @@ permalink: /kb/169/Q169614/
 
 ## Q169614: HP DeskJet 500-Series Driver May Not Return All System Resources
 
+{% raw %}
+
 	Article: Q169614
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/169/Q169614/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64085/
 
 ## Q64085: Changing Portrait and Landscape Orientation in DayBook
 
+{% raw %}
+
 	Article: Q64085
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/064/Q64085/
 	
 	=============================================================================
 	
+
+{% endraw %}

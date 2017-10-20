@@ -6,6 +6,8 @@ permalink: /kb/174/Q174273/
 
 ## Q174273: How to Copy Files and Maintain NTFS and Share Permissions
 
+{% raw %}
+
 	Article: Q174273
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -136,3 +138,5 @@ permalink: /kb/174/Q174273/
 	
 	=============================================================================
 	
+
+{% endraw %}

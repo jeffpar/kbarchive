@@ -6,6 +6,8 @@ permalink: /kb/044/Q44034/
 
 ## Q44034: How Bits in PAINT Tiling String Represent Pixels in BASIC
 
+{% raw %}
+
 	Article: Q44034
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -55,3 +57,5 @@ permalink: /kb/044/Q44034/
 	order to carry the extra color information). In SCREEN 13, which has 8
 	bits per pixel, tiling is not very useful. Tiling is most flexible in
 	SCREENs 2, 3, 4, and 11.
+
+{% endraw %}

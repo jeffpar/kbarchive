@@ -6,6 +6,8 @@ permalink: /kb/315/Q315817/
 
 ## Q315817: Memory Leak When You Are Running Server-to-Server Shadowing
 
+{% raw %}
+
 	Article: Q315817
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -89,3 +91,5 @@ permalink: /kb/315/Q315817/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272197/
 
 ## Q272197: XCCC: How to Restrict  OWA Address View Searches
 
+{% raw %}
+
 	Article: Q272197
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/272/Q272197/
 	
 	=============================================================================
 	
+
+{% endraw %}

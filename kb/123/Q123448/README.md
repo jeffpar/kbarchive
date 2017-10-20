@@ -6,6 +6,8 @@ permalink: /kb/123/Q123448/
 
 ## Q123448: MDI DGDB2.EXE &quot;Entry Point Not Found&quot; Error
 
+{% raw %}
+
 	Article: Q123448
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -50,3 +52,5 @@ permalink: /kb/123/Q123448/
 	
 	=============================================================================
 	
+
+{% endraw %}

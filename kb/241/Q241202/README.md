@@ -6,6 +6,8 @@ permalink: /kb/241/Q241202/
 
 ## Q241202: HOWTO: Make a Manufactured Hierarchical Recordset from Another
 
+{% raw %}
+
 	Article: Q241202
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
@@ -294,3 +296,5 @@ permalink: /kb/241/Q241202/
 	
 	=============================================================================
 	
+
+{% endraw %}

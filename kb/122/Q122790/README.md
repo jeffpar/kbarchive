@@ -6,6 +6,8 @@ permalink: /kb/122/Q122790/
 
 ## Q122790: BUG: Character Constant with &#92;0 Not Stored Properly
 
+{% raw %}
+
 	Article: Q122790
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -73,3 +75,5 @@ permalink: /kb/122/Q122790/
 	
 	=============================================================================
 	
+
+{% endraw %}

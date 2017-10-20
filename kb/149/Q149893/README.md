@@ -6,6 +6,8 @@ permalink: /kb/149/Q149893/
 
 ## Q149893: XCLN: System Memory Expands After Starting Exchange Client
 
+{% raw %}
+
 	Article: Q149893
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/149/Q149893/
 	
 	=============================================================================
 	
+
+{% endraw %}

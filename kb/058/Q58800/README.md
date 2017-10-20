@@ -6,6 +6,8 @@ permalink: /kb/058/Q58800/
 
 ## Q58800: Using _dos_findfirst() Function to Retrieve Disk Volume
 
+{% raw %}
+
 	Article: Q58800
 	Product(s): See article
 	Version(s): 5.10
@@ -32,3 +34,5 @@ permalink: /kb/058/Q58800/
 	
 	The C run-time function _dos_findfirst() will return the volume label
 	in a file format since DOS stores the volume label in the file format.
+
+{% endraw %}

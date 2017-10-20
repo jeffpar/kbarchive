@@ -6,6 +6,8 @@ permalink: /kb/145/Q145683/
 
 ## Q145683: BUG: Changing ListItem.Selected Doesn't Change SelectedItem
 
+{% raw %}
+
 	Article: Q145683
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -110,3 +112,5 @@ permalink: /kb/145/Q145683/
 	
 	=============================================================================
 	
+
+{% endraw %}

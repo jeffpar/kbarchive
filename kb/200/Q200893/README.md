@@ -6,6 +6,8 @@ permalink: /kb/200/Q200893/
 
 ## Q200893: HOWTO: Use LoadResource to Load Strings from a String Table
 
+{% raw %}
+
 	Article: Q200893
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -107,3 +109,5 @@ permalink: /kb/200/Q200893/
 	
 	=============================================================================
 	
+
+{% endraw %}

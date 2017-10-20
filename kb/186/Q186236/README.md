@@ -6,6 +6,8 @@ permalink: /kb/186/Q186236/
 
 ## Q186236: PRB: SCC Project Opens Very Slowly with Norton Anti Virus
 
+{% raw %}
+
 	Article: Q186236
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,5.0a
@@ -88,3 +90,5 @@ permalink: /kb/186/Q186236/
 	
 	=============================================================================
 	
+
+{% endraw %}

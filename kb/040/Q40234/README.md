@@ -6,6 +6,8 @@ permalink: /kb/040/Q40234/
 
 ## Q40234: INFO: EndPage(), NEXTBAND, and NEWFRAME Reset DC Attributes
 
+{% raw %}
+
 	Article: Q40234
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -43,3 +45,5 @@ permalink: /kb/040/Q40234/
 	
 	=============================================================================
 	
+
+{% endraw %}

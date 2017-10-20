@@ -6,6 +6,8 @@ permalink: /kb/089/Q89354/
 
 ## Q89354: SHIFT Key Must Be Held After Login to Disable Startup Group
 
+{% raw %}
+
 	Article: Q89354
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/089/Q89354/
 	
 	=============================================================================
 	
+
+{% endraw %}

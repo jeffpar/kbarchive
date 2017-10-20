@@ -6,6 +6,8 @@ permalink: /kb/193/Q193619/
 
 ## Q193619: FIX: Get from Project History Does Not Display Get Dialog Box
 
+{% raw %}
+
 	Article: Q193619
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/193/Q193619/
 	
 	=============================================================================
 	
+
+{% endraw %}

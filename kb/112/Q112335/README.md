@@ -6,6 +6,8 @@ permalink: /kb/112/Q112335/
 
 ## Q112335: BUG: CK1020 or CK4009 Encountered When Type Info Exceeds 64K
 
+{% raw %}
+
 	Article: Q112335
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.10,4.25,4.26,4.27
@@ -155,3 +157,5 @@ permalink: /kb/112/Q112335/
 	
 	=============================================================================
 	
+
+{% endraw %}

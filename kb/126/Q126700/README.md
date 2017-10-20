@@ -6,6 +6,8 @@ permalink: /kb/126/Q126700/
 
 ## Q126700: Sound Problems with the Monte Carlo Sound Card
 
+{% raw %}
+
 	Article: Q126700
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition,1996 edition,1997 edition,4.3-CD; WINDOWS:1.0,1.1,1.1a,1.1b,
@@ -74,3 +76,5 @@ permalink: /kb/126/Q126700/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32099/
 
 ## Q32099: BC.EXE &quot;Internal Error&quot; Using Function as Argument to INSTR
 
+{% raw %}
+
 	Article: Q32099
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/032/Q32099/
 	           X$ = FNT$(B$)
 	          on  INSTR("XYZ", X$) goto 1000
 	    1000  print "this is a test"
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171006/
 
 ## Q171006: XCLN: ErrMsg When Attemtping to Import Another Schedule File
 
+{% raw %}
+
 	Article: Q171006
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5
@@ -80,3 +82,5 @@ permalink: /kb/171/Q171006/
 	
 	=============================================================================
 	
+
+{% endraw %}

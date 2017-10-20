@@ -6,6 +6,8 @@ permalink: /kb/082/Q82468/
 
 ## Q82468: Hewlett-Packard Mouse Problems on HP QS 16s
 
+{% raw %}
+
 	Article: Q82468
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/082/Q82468/
 	
 	=============================================================================
 	
+
+{% endraw %}

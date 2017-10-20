@@ -6,6 +6,8 @@ permalink: /kb/181/Q181007/
 
 ## Q181007: HOWTO: Troubleshoot WinCE Application Installations
 
+{% raw %}
+
 	Article: Q181007
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0
@@ -110,3 +112,5 @@ permalink: /kb/181/Q181007/
 	
 	=============================================================================
 	
+
+{% endraw %}

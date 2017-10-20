@@ -6,6 +6,8 @@ permalink: /kb/119/Q119523/
 
 ## Q119523: Troubleshooting Printing Problems on Notebook Computers
 
+{% raw %}
+
 	Article: Q119523
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/119/Q119523/
 	
 	=============================================================================
 	
+
+{% endraw %}

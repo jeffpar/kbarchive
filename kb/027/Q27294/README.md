@@ -6,6 +6,8 @@ permalink: /kb/027/Q27294/
 
 ## Q27294: Passing BASIC INTEGER Array to Microsoft C by Far Reference
 
+{% raw %}
+
 	Article: Q27294
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -93,3 +95,5 @@ permalink: /kb/027/Q27294/
 	 8             108
 	 9             109
 	 10            110
+
+{% endraw %}

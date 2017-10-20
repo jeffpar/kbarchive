@@ -6,6 +6,8 @@ permalink: /kb/154/Q154990/
 
 ## Q154990: SETPASS May Change Password of Wrong User
 
+{% raw %}
+
 	Article: Q154990
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.51,4.0
@@ -91,3 +93,5 @@ permalink: /kb/154/Q154990/
 	
 	=============================================================================
 	
+
+{% endraw %}

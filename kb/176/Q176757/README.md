@@ -6,6 +6,8 @@ permalink: /kb/176/Q176757/
 
 ## Q176757: XADM: Administrator Program Column Settings Lost After Upgrade
 
+{% raw %}
+
 	Article: Q176757
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/176/Q176757/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122354/
 
 ## Q122354: Err Msg: Your Schedule File Is Locked
 
+{% raw %}
+
 	Article: Q122354
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -62,3 +64,5 @@ permalink: /kb/122/Q122354/
 	
 	=============================================================================
 	
+
+{% endraw %}

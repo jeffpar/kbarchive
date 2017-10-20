@@ -6,6 +6,8 @@ permalink: /kb/232/Q232490/
 
 ## Q232490: Quick View Cannot Open File Names with Euro Currency Symbol
 
+{% raw %}
+
 	Article: Q232490
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -64,3 +66,5 @@ permalink: /kb/232/Q232490/
 	
 	=============================================================================
 	
+
+{% endraw %}

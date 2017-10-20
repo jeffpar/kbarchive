@@ -6,6 +6,8 @@ permalink: /kb/168/Q168107/
 
 ## Q168107: Windows NT Briefcase Appears and Acts Like a Normal Folder.
 
+{% raw %}
+
 	Article: Q168107
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/168/Q168107/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61558/
 
 ## Q61558: Unresolved External &#95;&#95;CImin Caused by /Gh /Os Compile Options
 
+{% raw %}
+
 	Article: Q61558
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -49,3 +51,5 @@ permalink: /kb/061/Q61558/
 	Microsoft has confirmed this to be a problem with C versions 6.00 and
 	6.00a. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

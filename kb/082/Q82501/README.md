@@ -6,6 +6,8 @@ permalink: /kb/082/Q82501/
 
 ## Q82501: Blank OLE Packager Objects in Write and Cardfile
 
+{% raw %}
+
 	Article: Q82501
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/082/Q82501/
 	
 	=============================================================================
 	
+
+{% endraw %}

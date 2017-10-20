@@ -6,6 +6,8 @@ permalink: /kb/184/Q184114/
 
 ## Q184114: WD97: Table of Contents Loses Character Formatting
 
+{% raw %}
+
 	Article: Q184114
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/184/Q184114/
 	
 	=============================================================================
 	
+
+{% endraw %}

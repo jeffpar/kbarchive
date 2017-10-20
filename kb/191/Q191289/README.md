@@ -6,6 +6,8 @@ permalink: /kb/191/Q191289/
 
 ## Q191289: HOWTO: Enable Event Error Logging for FrontPage 98 &amp; SourceSafe
 
+{% raw %}
+
 	Article: Q191289
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0,98
@@ -71,3 +73,5 @@ permalink: /kb/191/Q191289/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161497/
 
 ## Q161497: FIX: SYS(2014) Function Returns Incorrect Path
 
+{% raw %}
+
 	Article: Q161497
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -84,3 +86,5 @@ permalink: /kb/161/Q161497/
 	
 	=============================================================================
 	
+
+{% endraw %}

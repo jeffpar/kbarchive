@@ -6,6 +6,8 @@ permalink: /kb/237/Q237557/
 
 ## Q237557: SMS 2.0 Network Discovery Internals
 
+{% raw %}
+
 	Article: Q237557
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -189,3 +191,5 @@ permalink: /kb/237/Q237557/
 	
 	=============================================================================
 	
+
+{% endraw %}

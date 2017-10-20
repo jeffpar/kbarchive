@@ -6,6 +6,8 @@ permalink: /kb/090/Q90381/
 
 ## Q90381: WFWG Server, Share, and Mail Naming Conventions
 
+{% raw %}
+
 	Article: Q90381
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95
@@ -81,3 +83,5 @@ permalink: /kb/090/Q90381/
 	
 	=============================================================================
 	
+
+{% endraw %}

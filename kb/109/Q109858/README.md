@@ -6,6 +6,8 @@ permalink: /kb/109/Q109858/
 
 ## Q109858: No Dynamic Scenery with Paris and New York Scenery Disks
 
+{% raw %}
+
 	Article: Q109858
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -40,3 +42,5 @@ permalink: /kb/109/Q109858/
 	
 	=============================================================================
 	
+
+{% endraw %}

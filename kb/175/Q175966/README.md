@@ -6,6 +6,8 @@ permalink: /kb/175/Q175966/
 
 ## Q175966: BUG: SQL_PRESERVE_CURSORS Fails on Reuse of a Connection Handle
 
+{% raw %}
+
 	Article: Q175966
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.0,6.5
@@ -101,3 +103,5 @@ permalink: /kb/175/Q175966/
 	
 	=============================================================================
 	
+
+{% endraw %}

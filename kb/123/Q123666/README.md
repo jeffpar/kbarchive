@@ -6,6 +6,8 @@ permalink: /kb/123/Q123666/
 
 ## Q123666: BUG: LINK Error L1101 with Public Weak Extern
 
+{% raw %}
+
 	Article: Q123666
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1,6.11
@@ -77,3 +79,5 @@ permalink: /kb/123/Q123666/
 	
 	=============================================================================
 	
+
+{% endraw %}

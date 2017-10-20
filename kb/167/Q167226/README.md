@@ -6,6 +6,8 @@ permalink: /kb/167/Q167226/
 
 ## Q167226: XFOR: Notes Color Graphics Appear Monochrome in Exchange
 
+{% raw %}
+
 	Article: Q167226
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/167/Q167226/
 	
 	=============================================================================
 	
+
+{% endraw %}

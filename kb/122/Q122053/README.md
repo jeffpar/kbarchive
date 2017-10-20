@@ -6,6 +6,8 @@ permalink: /kb/122/Q122053/
 
 ## Q122053: System Hangs at Startup with Maxtor Mobile Max Hard Disk
 
+{% raw %}
+
 	Article: Q122053
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/122/Q122053/
 	
 	=============================================================================
 	
+
+{% endraw %}

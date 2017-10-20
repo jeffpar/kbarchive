@@ -6,6 +6,8 @@ permalink: /kb/228/Q228494/
 
 ## Q228494: Cannot Install Programs on Portuguese Brazilian Windows 95
 
+{% raw %}
+
 	Article: Q228494
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:6.0,95; winnt:6.0
@@ -83,3 +85,5 @@ permalink: /kb/228/Q228494/
 	
 	=============================================================================
 	
+
+{% endraw %}

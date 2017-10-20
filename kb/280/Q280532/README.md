@@ -6,6 +6,8 @@ permalink: /kb/280/Q280532/
 
 ## Q280532: SMS: Client Service Does Not Start on Windows 2000 Professional
 
+{% raw %}
+
 	Article: Q280532
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -73,3 +75,5 @@ permalink: /kb/280/Q280532/
 	
 	=============================================================================
 	
+
+{% endraw %}

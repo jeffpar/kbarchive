@@ -6,6 +6,8 @@ permalink: /kb/171/Q171858/
 
 ## Q171858: WD97: Receive &quot;The Specified Path Is Invalid&quot; Saving HTML File
 
+{% raw %}
+
 	Article: Q171858
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/171/Q171858/
 	
 	=============================================================================
 	
+
+{% endraw %}

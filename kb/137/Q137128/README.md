@@ -6,6 +6,8 @@ permalink: /kb/137/Q137128/
 
 ## Q137128: Encarta 96 for Windows: Readme.wri Contents (Part 2 of 2)
 
+{% raw %}
+
 	Article: Q137128
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -303,3 +305,5 @@ permalink: /kb/137/Q137128/
 	
 	=============================================================================
 	
+
+{% endraw %}

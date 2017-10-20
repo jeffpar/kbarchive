@@ -6,6 +6,8 @@ permalink: /kb/155/Q155683/
 
 ## Q155683: Verification of From Address in SMTP Messages
 
+{% raw %}
+
 	Article: Q155683
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -118,3 +120,5 @@ permalink: /kb/155/Q155683/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165684/
 
 ## Q165684: INFO: Visual C++ 5.0 Readme, Language Issues
 
+{% raw %}
+
 	Article: Q165684
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -135,3 +137,5 @@ permalink: /kb/165/Q165684/
 	
 	=============================================================================
 	
+
+{% endraw %}

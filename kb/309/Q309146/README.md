@@ -6,6 +6,8 @@ permalink: /kb/309/Q309146/
 
 ## Q309146: Academic Learning Series Microsoft SQL Server 2000 System Admini
 
+{% raw %}
+
 	Article: Q309146
 	Product(s): Microsoft Press
 	Version(s): 
@@ -187,3 +189,5 @@ permalink: /kb/309/Q309146/
 	
 	=============================================================================
 	
+
+{% endraw %}

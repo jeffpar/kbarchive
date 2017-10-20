@@ -6,6 +6,8 @@ permalink: /kb/181/Q181346/
 
 ## Q181346: SMS : 'Error Opening SYS:SMS&#92;logon.srv&#92;inventry.box&#92;&lt;file&gt;.tmp'
 
+{% raw %}
+
 	Article: Q181346
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/181/Q181346/
 	
 	=============================================================================
 	
+
+{% endraw %}

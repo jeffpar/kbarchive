@@ -6,6 +6,8 @@ permalink: /kb/139/Q139784/
 
 ## Q139784: RUI_READ Enhancement for Receiving Large RUs
 
+{% raw %}
+
 	Article: Q139784
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -100,3 +102,5 @@ permalink: /kb/139/Q139784/
 	
 	=============================================================================
 	
+
+{% endraw %}

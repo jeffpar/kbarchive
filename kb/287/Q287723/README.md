@@ -6,6 +6,8 @@ permalink: /kb/287/Q287723/
 
 ## Q287723: Games: Error:OE: 0028:C000EC99
 
+{% raw %}
+
 	Article: Q287723
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0,4.0
@@ -111,3 +113,5 @@ permalink: /kb/287/Q287723/
 	
 	=============================================================================
 	
+
+{% endraw %}

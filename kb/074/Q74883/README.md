@@ -6,6 +6,8 @@ permalink: /kb/074/Q74883/
 
 ## Q74883: FIX: ^Z in Input File Appears to Truncate Listing File
 
+{% raw %}
+
 	Article: Q74883
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/074/Q74883/
 	
 	=============================================================================
 	
+
+{% endraw %}

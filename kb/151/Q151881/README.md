@@ -6,6 +6,8 @@ permalink: /kb/151/Q151881/
 
 ## Q151881: Shared Resources Disappear After NT Is Rebooted
 
+{% raw %}
+
 	Article: Q151881
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -51,3 +53,5 @@ permalink: /kb/151/Q151881/
 	
 	=============================================================================
 	
+
+{% endraw %}

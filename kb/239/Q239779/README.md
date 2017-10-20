@@ -6,6 +6,8 @@ permalink: /kb/239/Q239779/
 
 ## Q239779: NFL Fever 2000: Context-Sensitive Help Text Is Invisible
 
+{% raw %}
+
 	Article: Q239779
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/239/Q239779/
 	
 	=============================================================================
 	
+
+{% endraw %}

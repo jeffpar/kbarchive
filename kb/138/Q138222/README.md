@@ -6,6 +6,8 @@ permalink: /kb/138/Q138222/
 
 ## Q138222: DHCP Server Delays Release of Client-Rejected IP Addresses
 
+{% raw %}
+
 	Article: Q138222
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138222/
 	
 	=============================================================================
 	
+
+{% endraw %}

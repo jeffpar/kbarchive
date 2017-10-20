@@ -6,6 +6,8 @@ permalink: /kb/163/Q163120/
 
 ## Q163120: XCLN: Error Messsage: Could Not Schedule Fax for Transmission
 
+{% raw %}
+
 	Article: Q163120
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/163/Q163120/
 	
 	=============================================================================
 	
+
+{% endraw %}

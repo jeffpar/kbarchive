@@ -6,6 +6,8 @@ permalink: /kb/102/Q102737/
 
 ## Q102737: Differences Between FTP and TFTP
 
+{% raw %}
+
 	Article: Q102737
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.10 3.11 3.11a 3.11b 3.50 3.51
@@ -61,3 +63,5 @@ permalink: /kb/102/Q102737/
 	
 	=============================================================================
 	
+
+{% endraw %}

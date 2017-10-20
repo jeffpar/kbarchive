@@ -6,6 +6,8 @@ permalink: /kb/140/Q140837/
 
 ## Q140837: AS/400 Demo Link Service Fails to Log Events
 
+{% raw %}
+
 	Article: Q140837
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -60,3 +62,5 @@ permalink: /kb/140/Q140837/
 	
 	=============================================================================
 	
+
+{% endraw %}

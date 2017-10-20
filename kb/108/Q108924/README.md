@@ -6,6 +6,8 @@ permalink: /kb/108/Q108924/
 
 ## Q108924: DOC: DEVMODE dmPaperSize Member Documentation Error
 
+{% raw %}
+
 	Article: Q108924
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
@@ -46,3 +48,5 @@ permalink: /kb/108/Q108924/
 	
 	=============================================================================
 	
+
+{% endraw %}

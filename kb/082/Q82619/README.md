@@ -6,6 +6,8 @@ permalink: /kb/082/Q82619/
 
 ## Q82619: Two Mouse Cursors in Windowed MS-DOS Program, FAX.EXE
 
+{% raw %}
+
 	Article: Q82619
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/082/Q82619/
 	
 	=============================================================================
 	
+
+{% endraw %}

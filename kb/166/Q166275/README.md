@@ -6,6 +6,8 @@ permalink: /kb/166/Q166275/
 
 ## Q166275: HOWTO: Debug a Native Code Visual Basic Component in VC++
 
+{% raw %}
+
 	Article: Q166275
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -175,3 +177,5 @@ permalink: /kb/166/Q166275/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247726/
 
 ## Q247726: AoE II: &quot;You Have Been Defeated&quot; Msg When You Are Not Defeated
 
+{% raw %}
+
 	Article: Q247726
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -85,3 +87,5 @@ permalink: /kb/247/Q247726/
 	
 	=============================================================================
 	
+
+{% endraw %}

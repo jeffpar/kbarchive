@@ -6,6 +6,8 @@ permalink: /kb/118/Q118585/
 
 ## Q118585: Mixed TrueType Text and Graphics Print Incorrectly
 
+{% raw %}
+
 	Article: Q118585
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -62,3 +64,5 @@ permalink: /kb/118/Q118585/
 	
 	=============================================================================
 	
+
+{% endraw %}

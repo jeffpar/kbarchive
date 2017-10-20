@@ -6,6 +6,8 @@ permalink: /kb/184/Q184198/
 
 ## Q184198: PRB: SelHangingIndent Property of RichTextBox Is Not Persistent
 
+{% raw %}
+
 	Article: Q184198
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/184/Q184198/
 	
 	=============================================================================
 	
+
+{% endraw %}

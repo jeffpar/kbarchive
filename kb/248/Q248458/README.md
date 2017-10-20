@@ -6,6 +6,8 @@ permalink: /kb/248/Q248458/
 
 ## Q248458: PRB: Connecting to MAS 90 ODBC Driver Fails in Visual FoxPro
 
+{% raw %}
+
 	Article: Q248458
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -69,3 +71,5 @@ permalink: /kb/248/Q248458/
 	
 	=============================================================================
 	
+
+{% endraw %}

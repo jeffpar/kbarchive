@@ -6,6 +6,8 @@ permalink: /kb/084/Q84778/
 
 ## Q84778: Memory Use Limitations in Microsoft Windows
 
+{% raw %}
+
 	Article: Q84778
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -91,3 +93,5 @@ permalink: /kb/084/Q84778/
 	
 	=============================================================================
 	
+
+{% endraw %}

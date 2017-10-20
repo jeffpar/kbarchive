@@ -6,6 +6,8 @@ permalink: /kb/225/Q225095/
 
 ## Q225095: Spooler Rollup Fix to Address Memory Leaks
 
+{% raw %}
+
 	Article: Q225095
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -108,3 +110,5 @@ permalink: /kb/225/Q225095/
 	
 	=============================================================================
 	
+
+{% endraw %}

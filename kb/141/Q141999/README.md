@@ -6,6 +6,8 @@ permalink: /kb/141/Q141999/
 
 ## Q141999: HOWTO: Use DrawFrameControl API in Visual Basic
 
+{% raw %}
+
 	Article: Q141999
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -213,3 +215,5 @@ permalink: /kb/141/Q141999/
 	
 	=============================================================================
 	
+
+{% endraw %}

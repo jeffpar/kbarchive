@@ -6,6 +6,8 @@ permalink: /kb/179/Q179589/
 
 ## Q179589: How to Configure the Ascend Pipeline 25-Px to Work with MSN
 
+{% raw %}
+
 	Article: Q179589
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -116,3 +118,5 @@ permalink: /kb/179/Q179589/
 	
 	=============================================================================
 	
+
+{% endraw %}

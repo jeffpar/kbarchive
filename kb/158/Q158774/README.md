@@ -6,6 +6,8 @@ permalink: /kb/158/Q158774/
 
 ## Q158774: Sage.dat Files Do Not Match When Compared After Backup
 
+{% raw %}
+
 	Article: Q158774
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/158/Q158774/
 	
 	=============================================================================
 	
+
+{% endraw %}

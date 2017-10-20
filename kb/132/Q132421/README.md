@@ -6,6 +6,8 @@ permalink: /kb/132/Q132421/
 
 ## Q132421: PRB: Lock_Mode = lockfile Causes &quot;Timeout Locking File&quot; Error
 
+{% raw %}
+
 	Article: Q132421
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/132/Q132421/
 	
 	=============================================================================
 	
+
+{% endraw %}

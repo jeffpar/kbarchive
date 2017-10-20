@@ -6,6 +6,8 @@ permalink: /kb/186/Q186788/
 
 ## Q186788: XWEB: Cannot View Attachments in OWA on IIS 4.0 Computer
 
+{% raw %}
+
 	Article: Q186788
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5; WINNT:4.0
@@ -124,3 +126,5 @@ permalink: /kb/186/Q186788/
 	
 	=============================================================================
 	
+
+{% endraw %}

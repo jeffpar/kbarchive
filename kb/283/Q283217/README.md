@@ -6,6 +6,8 @@ permalink: /kb/283/Q283217/
 
 ## Q283217: Registry Hive Fragmentation Fix May Cause Excessive SAM Size
 
+{% raw %}
+
 	Article: Q283217
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP5,4.0 SP6,4.0 SP6a
@@ -137,3 +139,5 @@ permalink: /kb/283/Q283217/
 	
 	=============================================================================
 	
+
+{% endraw %}

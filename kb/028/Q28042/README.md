@@ -6,6 +6,8 @@ permalink: /kb/028/Q28042/
 
 ## Q28042: LOCATE Has 8 lines Resolution DOS &amp; Real Mode, 16 in Protected
 
+{% raw %}
+
 	Article: Q28042
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -23,3 +25,5 @@ permalink: /kb/028/Q28042/
 	This information applies to Microsoft BASIC Compiler Versions 6.00 and
 	6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC Professional
 	Development System (PDS) Version 7.00 for MS-DOS and MS OS/2.
+
+{% endraw %}

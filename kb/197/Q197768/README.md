@@ -6,6 +6,8 @@ permalink: /kb/197/Q197768/
 
 ## Q197768: WD97: Deleted File Still Listed on MRU List
 
+{% raw %}
+
 	Article: Q197768
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/197/Q197768/
 	
 	=============================================================================
 	
+
+{% endraw %}

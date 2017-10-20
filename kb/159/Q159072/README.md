@@ -6,6 +6,8 @@ permalink: /kb/159/Q159072/
 
 ## Q159072: An Account That Still Has System Access May Be Deleted
 
+{% raw %}
+
 	Article: Q159072
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/159/Q159072/
 	
 	=============================================================================
 	
+
+{% endraw %}

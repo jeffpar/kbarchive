@@ -6,6 +6,8 @@ permalink: /kb/172/Q172282/
 
 ## Q172282: MAILSRV: Unable to Receive Mail from UNIX
 
+{% raw %}
+
 	Article: Q172282
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -83,3 +85,5 @@ permalink: /kb/172/Q172282/
 	
 	=============================================================================
 	
+
+{% endraw %}

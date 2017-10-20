@@ -6,6 +6,8 @@ permalink: /kb/137/Q137403/
 
 ## Q137403: &quot;Access Denied&quot; Errors Using Files on Windows NT 3.5 Server
 
+{% raw %}
+
 	Article: Q137403
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -49,3 +51,5 @@ permalink: /kb/137/Q137403/
 	
 	=============================================================================
 	
+
+{% endraw %}

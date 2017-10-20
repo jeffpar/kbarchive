@@ -6,6 +6,8 @@ permalink: /kb/198/Q198718/
 
 ## Q198718: SMS: Client-Side WUSER Logging for Remote Tools
 
+{% raw %}
+
 	Article: Q198718
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -100,3 +102,5 @@ permalink: /kb/198/Q198718/
 	
 	=============================================================================
 	
+
+{% endraw %}

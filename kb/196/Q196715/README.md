@@ -6,6 +6,8 @@ permalink: /kb/196/Q196715/
 
 ## Q196715: WD97: How to Add a Graphic or Logo to Every Label on a Page
 
+{% raw %}
+
 	Article: Q196715
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -207,3 +209,5 @@ permalink: /kb/196/Q196715/
 	
 	=============================================================================
 	
+
+{% endraw %}

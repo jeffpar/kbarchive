@@ -6,6 +6,8 @@ permalink: /kb/171/Q171560/
 
 ## Q171560: Inside COM: INF: Missing Header and Source Code Files
 
+{% raw %}
+
 	Article: Q171560
 	Product(s): Microsoft Press
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/171/Q171560/
 	
 	=============================================================================
 	
+
+{% endraw %}

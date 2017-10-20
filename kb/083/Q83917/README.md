@@ -6,6 +6,8 @@ permalink: /kb/083/Q83917/
 
 ## Q83917: PRB: Binding Resources to Executable Increases File Size
 
+{% raw %}
+
 	Article: Q83917
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -60,3 +62,5 @@ permalink: /kb/083/Q83917/
 	
 	=============================================================================
 	
+
+{% endraw %}

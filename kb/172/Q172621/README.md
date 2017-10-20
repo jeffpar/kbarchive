@@ -6,6 +6,8 @@ permalink: /kb/172/Q172621/
 
 ## Q172621: Routing and Remote Access Event ID: 30030
 
+{% raw %}
+
 	Article: Q172621
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -101,3 +103,5 @@ permalink: /kb/172/Q172621/
 	
 	=============================================================================
 	
+
+{% endraw %}

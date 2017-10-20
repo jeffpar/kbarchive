@@ -6,6 +6,8 @@ permalink: /kb/222/Q222829/
 
 ## Q222829: HOWTO: Use Accelerator Keys Within a Modal Dialog Box
 
+{% raw %}
+
 	Article: Q222829
 	Product(s): Microsoft C Compiler
 	Version(s): 4.1,4.2,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/222/Q222829/
 	
 	=============================================================================
 	
+
+{% endraw %}

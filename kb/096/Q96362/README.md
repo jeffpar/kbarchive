@@ -6,6 +6,8 @@ permalink: /kb/096/Q96362/
 
 ## Q96362: PRB: &quot;Chosen Printer Not Supported&quot; When Page Size Is Chosen
 
+{% raw %}
+
 	Article: Q96362
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -46,3 +48,5 @@ permalink: /kb/096/Q96362/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96843/
 
 ## Q96843: Mac Srv Wkst: What Is Corrected and Added for Version 3.1a
 
+{% raw %}
+
 	Article: Q96843
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1a
@@ -85,3 +87,5 @@ permalink: /kb/096/Q96843/
 	
 	=============================================================================
 	
+
+{% endraw %}

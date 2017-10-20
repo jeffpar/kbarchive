@@ -6,6 +6,8 @@ permalink: /kb/119/Q119368/
 
 ## Q119368: WD 8514/a Fails to Load in 8514/a High-Resolution Mode
 
+{% raw %}
+
 	Article: Q119368
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/119/Q119368/
 	
 	=============================================================================
 	
+
+{% endraw %}

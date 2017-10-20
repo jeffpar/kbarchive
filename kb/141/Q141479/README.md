@@ -6,6 +6,8 @@ permalink: /kb/141/Q141479/
 
 ## Q141479: FIX: Visual FoxPro Quits If You Click Ignore or Suspend/Resume
 
+{% raw %}
+
 	Article: Q141479
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -83,3 +85,5 @@ permalink: /kb/141/Q141479/
 	
 	=============================================================================
 	
+
+{% endraw %}

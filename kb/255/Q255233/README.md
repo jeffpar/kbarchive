@@ -6,6 +6,8 @@ permalink: /kb/255/Q255233/
 
 ## Q255233: Windows NT 4.0 Enterprise Edition Domain Controllers May Hang
 
+{% raw %}
+
 	Article: Q255233
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/255/Q255233/
 	
 	=============================================================================
 	
+
+{% endraw %}

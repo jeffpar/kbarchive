@@ -6,6 +6,8 @@ permalink: /kb/050/Q50234/
 
 ## Q50234: Using Function Name Without &quot;()&quot; Produces No Code
 
+{% raw %}
+
 	Article: Q50234
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,6.0,6.0a,6.0ax
@@ -89,3 +91,5 @@ permalink: /kb/050/Q50234/
 	
 	=============================================================================
 	
+
+{% endraw %}

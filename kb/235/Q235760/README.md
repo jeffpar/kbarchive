@@ -6,6 +6,8 @@ permalink: /kb/235/Q235760/
 
 ## Q235760: SMS:Queries Fail if Alias Specified &amp; Collection Limiting Used
 
+{% raw %}
+
 	Article: Q235760
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/235/Q235760/
 	
 	=============================================================================
 	
+
+{% endraw %}

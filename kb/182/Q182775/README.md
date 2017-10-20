@@ -6,6 +6,8 @@ permalink: /kb/182/Q182775/
 
 ## Q182775: Encarta Virtual Globe 1998: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q182775
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/182/Q182775/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94940/
 
 ## Q94940: Interlnk Cannot Access CD-ROM Drives or Network Drives
 
+{% raw %}
+
 	Article: Q94940
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -41,3 +43,5 @@ permalink: /kb/094/Q94940/
 	
 	=============================================================================
 	
+
+{% endraw %}

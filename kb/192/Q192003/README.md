@@ -6,6 +6,8 @@ permalink: /kb/192/Q192003/
 
 ## Q192003: BUG: Phantom MouseMove Events with a Transparent UserControl
 
+{% raw %}
+
 	Article: Q192003
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -136,3 +138,5 @@ permalink: /kb/192/Q192003/
 	
 	=============================================================================
 	
+
+{% endraw %}

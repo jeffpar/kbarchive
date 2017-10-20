@@ -6,6 +6,8 @@ permalink: /kb/288/Q288346/
 
 ## Q288346: BUG: BeforeUpdate Event of the DataGrid Does Not Always Fire
 
+{% raw %}
+
 	Article: Q288346
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3,6.0 SP4,6.0 SP5
@@ -177,3 +179,5 @@ permalink: /kb/288/Q288346/
 	
 	=============================================================================
 	
+
+{% endraw %}

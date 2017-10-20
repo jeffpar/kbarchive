@@ -6,6 +6,8 @@ permalink: /kb/177/Q177668/
 
 ## Q177668: Calibration Does Not Change When You Calibrate Foot Pedals
 
+{% raw %}
+
 	Article: Q177668
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/177/Q177668/
 	
 	=============================================================================
 	
+
+{% endraw %}

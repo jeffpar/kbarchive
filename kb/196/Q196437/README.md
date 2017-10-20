@@ -6,6 +6,8 @@ permalink: /kb/196/Q196437/
 
 ## Q196437: WD97: Cannot Cancel Find Record Search
 
+{% raw %}
+
 	Article: Q196437
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/196/Q196437/
 	
 	=============================================================================
 	
+
+{% endraw %}

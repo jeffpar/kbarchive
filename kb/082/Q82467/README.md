@@ -6,6 +6,8 @@ permalink: /kb/082/Q82467/
 
 ## Q82467: Windows: DEC Pathworks Use Command Hangs Machine
 
+{% raw %}
+
 	Article: Q82467
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/082/Q82467/
 	
 	=============================================================================
 	
+
+{% endraw %}

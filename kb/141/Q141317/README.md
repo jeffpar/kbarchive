@@ -6,6 +6,8 @@ permalink: /kb/141/Q141317/
 
 ## Q141317: How to Change the Color of Edit Boxes on a Wizard Form
 
+{% raw %}
+
 	Article: Q141317
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/141/Q141317/
 	
 	=============================================================================
 	
+
+{% endraw %}

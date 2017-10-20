@@ -6,6 +6,8 @@ permalink: /kb/120/Q120421/
 
 ## Q120421: Quattro Pro causes GPF Printing to Unavailable Printer
 
+{% raw %}
+
 	Article: Q120421
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120421/
 	
 	=============================================================================
 	
+
+{% endraw %}

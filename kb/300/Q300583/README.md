@@ -6,6 +6,8 @@ permalink: /kb/300/Q300583/
 
 ## Q300583: XADM: Merge Separate Exchange Servers into a Single Server
 
+{% raw %}
+
 	Article: Q300583
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -69,3 +71,5 @@ permalink: /kb/300/Q300583/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191603/
 
 ## Q191603: Modifying the Autochk.exe Time-out Value
 
+{% raw %}
+
 	Article: Q191603
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -80,3 +82,5 @@ permalink: /kb/191/Q191603/
 	
 	=============================================================================
 	
+
+{% endraw %}

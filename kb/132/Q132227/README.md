@@ -6,6 +6,8 @@ permalink: /kb/132/Q132227/
 
 ## Q132227: PRB: Can't Activate or Access an Object
 
+{% raw %}
+
 	Article: Q132227
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/132/Q132227/
 	
 	=============================================================================
 	
+
+{% endraw %}

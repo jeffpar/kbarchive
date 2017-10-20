@@ -6,6 +6,8 @@ permalink: /kb/310/Q310730/
 
 ## Q310730: Err Msg: Zone Support Files Could Not Be Downloaded or Installed
 
+{% raw %}
+
 	Article: Q310730
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/310/Q310730/
 	
 	=============================================================================
 	
+
+{% endraw %}

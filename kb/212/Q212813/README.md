@@ -6,6 +6,8 @@ permalink: /kb/212/Q212813/
 
 ## Q212813: SMS: Comment Text Not Inserted With &quot;Insert line into Text File&quot;
 
+{% raw %}
+
 	Article: Q212813
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0
@@ -52,3 +54,5 @@ permalink: /kb/212/Q212813/
 	
 	=============================================================================
 	
+
+{% endraw %}

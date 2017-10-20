@@ -6,6 +6,8 @@ permalink: /kb/111/Q111410/
 
 ## Q111410: Scenes 1.0: Screen Changes Color with Scenes Installed
 
+{% raw %}
+
 	Article: Q111410
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/111/Q111410/
 	
 	=============================================================================
 	
+
+{% endraw %}

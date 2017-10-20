@@ -6,6 +6,8 @@ permalink: /kb/193/Q193774/
 
 ## Q193774: HOWTO: Change a Drive's Volume Label Programmatically
 
+{% raw %}
+
 	Article: Q193774
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -64,3 +66,5 @@ permalink: /kb/193/Q193774/
 	
 	=============================================================================
 	
+
+{% endraw %}

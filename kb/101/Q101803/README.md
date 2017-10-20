@@ -6,6 +6,8 @@ permalink: /kb/101/Q101803/
 
 ## Q101803: PRB: .CPP Extension w/ Library Construction Kit Causes Errors
 
+{% raw %}
+
 	Article: Q101803
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5,2.5a; WINDOWS:2.5,2.5a,3.0; :2.5,2.5a
@@ -61,3 +63,5 @@ permalink: /kb/101/Q101803/
 	
 	=============================================================================
 	
+
+{% endraw %}

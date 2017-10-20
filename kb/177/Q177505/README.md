@@ -6,6 +6,8 @@ permalink: /kb/177/Q177505/
 
 ## Q177505: How to Use Personalization Server w/ Anonymous Authentication
 
+{% raw %}
+
 	Article: Q177505
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0,4.0
@@ -64,3 +66,5 @@ permalink: /kb/177/Q177505/
 	
 	=============================================================================
 	
+
+{% endraw %}

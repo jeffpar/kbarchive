@@ -6,6 +6,8 @@ permalink: /kb/171/Q171589/
 
 ## Q171589: SMS: SMSRUN16 Seems to Stop When Selecting a Logon Server
 
+{% raw %}
+
 	Article: Q171589
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -76,3 +78,5 @@ permalink: /kb/171/Q171589/
 	
 	=============================================================================
 	
+
+{% endraw %}

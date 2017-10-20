@@ -6,6 +6,8 @@ permalink: /kb/087/Q87829/
 
 ## Q87829: Random GP Faults with Incorrect Programs= Entry in WIN.INI
 
+{% raw %}
+
 	Article: Q87829
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/087/Q87829/
 	
 	=============================================================================
 	
+
+{% endraw %}

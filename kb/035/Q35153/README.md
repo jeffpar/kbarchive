@@ -6,6 +6,8 @@ permalink: /kb/035/Q35153/
 
 ## Q35153: No Underlining on Color Display in BASIC Text Mode, SCREEN 0
 
+{% raw %}
+
 	Article: Q35153
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/035/Q35153/
 	"Programmer's Guide to PC & PS/2 Video Systems," by Richard Wilton
 	(Microsoft Press, 1987). Chapter 3 describes the alphanumeric video
 	modes (i.e., SCREEN 0).
+
+{% endraw %}

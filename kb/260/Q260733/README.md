@@ -6,6 +6,8 @@ permalink: /kb/260/Q260733/
 
 ## Q260733: StarLancer: Desktop Icons Appear on the Startup Screen
 
+{% raw %}
+
 	Article: Q260733
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/260/Q260733/
 	
 	=============================================================================
 	
+
+{% endraw %}

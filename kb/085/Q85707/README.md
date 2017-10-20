@@ -6,6 +6,8 @@ permalink: /kb/085/Q85707/
 
 ## Q85707: Changing the Default COM Port and Baud Rate in Terminal
 
+{% raw %}
+
 	Article: Q85707
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -91,3 +93,5 @@ permalink: /kb/085/Q85707/
 	
 	=============================================================================
 	
+
+{% endraw %}

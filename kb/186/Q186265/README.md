@@ -6,6 +6,8 @@ permalink: /kb/186/Q186265/
 
 ## Q186265: HOWTO: Use the SQL Server DATEPART Function to Get Milliseconds
 
+{% raw %}
+
 	Article: Q186265
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1 SP2,2.5,2.6,5.0,6.0
@@ -126,3 +128,5 @@ permalink: /kb/186/Q186265/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245979/
 
 ## Q245979: XADM: Other Replicated Sites Shown in Mailbox Manager Policies
 
+{% raw %}
+
 	Article: Q245979
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/245/Q245979/
 	
 	=============================================================================
 	
+
+{% endraw %}

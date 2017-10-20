@@ -6,6 +6,8 @@ permalink: /kb/079/Q79212/
 
 ## Q79212: HOWTO: Drawing Transparent Bitmaps
 
+{% raw %}
+
 	Article: Q79212
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -198,3 +200,5 @@ permalink: /kb/079/Q79212/
 	
 	=============================================================================
 	
+
+{% endraw %}

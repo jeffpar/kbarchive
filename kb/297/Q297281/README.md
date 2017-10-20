@@ -6,6 +6,8 @@ permalink: /kb/297/Q297281/
 
 ## Q297281: XADM: Out of Office Message Is Not Sent
 
+{% raw %}
+
 	Article: Q297281
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -106,3 +108,5 @@ permalink: /kb/297/Q297281/
 	
 	=============================================================================
 	
+
+{% endraw %}

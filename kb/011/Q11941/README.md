@@ -6,6 +6,8 @@ permalink: /kb/011/Q11941/
 
 ## Q11941: How to Get a Pointer to the Stack
 
+{% raw %}
+
 	Article: Q11941
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -52,3 +54,5 @@ permalink: /kb/011/Q11941/
 	
 	=============================================================================
 	
+
+{% endraw %}

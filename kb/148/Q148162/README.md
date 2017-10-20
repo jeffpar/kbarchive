@@ -6,6 +6,8 @@ permalink: /kb/148/Q148162/
 
 ## Q148162: Cannot Add Local Account to Local Group With NET LOCALGROUP
 
+{% raw %}
+
 	Article: Q148162
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -67,3 +69,5 @@ permalink: /kb/148/Q148162/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168320/
 
 ## Q168320: XCLN: How to Print Messages w/out Headers using Wordmail
 
+{% raw %}
+
 	Article: Q168320
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,97; Win95:4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/168/Q168320/
 	
 	=============================================================================
 	
+
+{% endraw %}

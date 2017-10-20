@@ -6,6 +6,8 @@ permalink: /kb/073/Q73293/
 
 ## Q73293: When MS-DOS Fails to Load in the HMA
 
+{% raw %}
+
 	Article: Q73293
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -86,3 +88,5 @@ permalink: /kb/073/Q73293/
 	
 	=============================================================================
 	
+
+{% endraw %}

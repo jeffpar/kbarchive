@@ -6,6 +6,8 @@ permalink: /kb/136/Q136983/
 
 ## Q136983: No Sound, MMSystem or MCI Errors In Windows 95/98
 
+{% raw %}
+
 	Article: Q136983
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1994 edition,2.0,6.0
@@ -172,3 +174,5 @@ permalink: /kb/136/Q136983/
 	
 	=============================================================================
 	
+
+{% endraw %}

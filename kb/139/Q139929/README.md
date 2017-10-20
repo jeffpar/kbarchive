@@ -6,6 +6,8 @@ permalink: /kb/139/Q139929/
 
 ## Q139929: SNMP Queries of Very Long OIDs May Cause SNMP Service to Hang
 
+{% raw %}
+
 	Article: Q139929
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -61,3 +63,5 @@ permalink: /kb/139/Q139929/
 	
 	=============================================================================
 	
+
+{% endraw %}

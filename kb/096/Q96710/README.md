@@ -6,6 +6,8 @@ permalink: /kb/096/Q96710/
 
 ## Q96710: How Do I Get MS-DOS to Run in the High Memory Area?
 
+{% raw %}
+
 	Article: Q96710
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -255,3 +257,5 @@ permalink: /kb/096/Q96710/
 	
 	=============================================================================
 	
+
+{% endraw %}

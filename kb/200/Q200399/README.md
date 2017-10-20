@@ -6,6 +6,8 @@ permalink: /kb/200/Q200399/
 
 ## Q200399: SMS: Upgrading to SMS 2.0 When Packages Rely on MSTEST Directory
 
+{% raw %}
+
 	Article: Q200399
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/200/Q200399/
 	
 	=============================================================================
 	
+
+{% endraw %}

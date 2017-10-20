@@ -6,6 +6,8 @@ permalink: /kb/161/Q161039/
 
 ## Q161039: Snaservr.exe Application Exception in SAPUGETI Function
 
+{% raw %}
+
 	Article: Q161039
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -123,3 +125,5 @@ permalink: /kb/161/Q161039/
 	
 	=============================================================================
 	
+
+{% endraw %}

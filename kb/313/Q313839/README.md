@@ -6,6 +6,8 @@ permalink: /kb/313/Q313839/
 
 ## Q313839: SMS: Previously Applied &quot;Quick Fix Engineering&quot; (QFE) Fixes May
 
+{% raw %}
+
 	Article: Q313839
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -42,3 +44,5 @@ permalink: /kb/313/Q313839/
 	
 	=============================================================================
 	
+
+{% endraw %}

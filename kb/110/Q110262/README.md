@@ -6,6 +6,8 @@ permalink: /kb/110/Q110262/
 
 ## Q110262: Flight Simulator: Error Code 06 When Editing a Situation
 
+{% raw %}
+
 	Article: Q110262
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -70,3 +72,5 @@ permalink: /kb/110/Q110262/
 	
 	=============================================================================
 	
+
+{% endraw %}

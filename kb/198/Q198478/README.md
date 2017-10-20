@@ -6,6 +6,8 @@ permalink: /kb/198/Q198478/
 
 ## Q198478: Infinite Loop When Connecting Through RPC to HP-UX 9.x
 
+{% raw %}
+
 	Article: Q198478
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -80,3 +82,5 @@ permalink: /kb/198/Q198478/
 	
 	=============================================================================
 	
+
+{% endraw %}

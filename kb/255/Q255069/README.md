@@ -6,6 +6,8 @@ permalink: /kb/255/Q255069/
 
 ## Q255069: XADM: Error Message Opening Address Book When Running Pfinfo.exe
 
+{% raw %}
+
 	Article: Q255069
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/255/Q255069/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131434/
 
 ## Q131434: Mac Encarta 95: Can Not Find Articles in Word Search
 
+{% raw %}
+
 	Article: Q131434
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -51,3 +53,5 @@ permalink: /kb/131/Q131434/
 	
 	=============================================================================
 	
+
+{% endraw %}

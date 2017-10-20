@@ -6,6 +6,8 @@ permalink: /kb/322/Q322644/
 
 ## Q322644: Remote Administration Using TNADMIN with -S, -K, or -M Fails
 
+{% raw %}
+
 	Article: Q322644
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,3.0
@@ -102,3 +104,5 @@ permalink: /kb/322/Q322644/
 	
 	=============================================================================
 	
+
+{% endraw %}

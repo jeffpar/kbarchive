@@ -6,6 +6,8 @@ permalink: /kb/138/Q138068/
 
 ## Q138068: Explanation of the States in Which Forms Can Exist
 
+{% raw %}
+
 	Article: Q138068
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/138/Q138068/
 	
 	=============================================================================
 	
+
+{% endraw %}

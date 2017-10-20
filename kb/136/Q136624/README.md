@@ -6,6 +6,8 @@ permalink: /kb/136/Q136624/
 
 ## Q136624: Windows 95 Hangs When Starting on Canon Innova 10c Notebook
 
+{% raw %}
+
 	Article: Q136624
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -103,3 +105,5 @@ permalink: /kb/136/Q136624/
 	
 	=============================================================================
 	
+
+{% endraw %}

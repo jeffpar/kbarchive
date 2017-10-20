@@ -6,6 +6,8 @@ permalink: /kb/131/Q131352/
 
 ## Q131352: Using Registry Editor in Real Mode
 
+{% raw %}
+
 	Article: Q131352
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -206,3 +208,5 @@ permalink: /kb/131/Q131352/
 	
 	=============================================================================
 	
+
+{% endraw %}

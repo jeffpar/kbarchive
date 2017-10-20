@@ -6,6 +6,8 @@ permalink: /kb/087/Q87284/
 
 ## Q87284: DOSKEY Maximum Buffer Size is 61900 Bytes
 
+{% raw %}
+
 	Article: Q87284
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -71,3 +73,5 @@ permalink: /kb/087/Q87284/
 	
 	=============================================================================
 	
+
+{% endraw %}

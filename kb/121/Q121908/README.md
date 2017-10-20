@@ -6,6 +6,8 @@ permalink: /kb/121/Q121908/
 
 ## Q121908: Unable to Browse or Connect to Microsoft Networking Print Server
 
+{% raw %}
+
 	Article: Q121908
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -80,3 +82,5 @@ permalink: /kb/121/Q121908/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184486/
 
 ## Q184486: WD97: Personal Info Style Applied as Style of Next Paragraph
 
+{% raw %}
+
 	Article: Q184486
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/184/Q184486/
 	
 	=============================================================================
 	
+
+{% endraw %}

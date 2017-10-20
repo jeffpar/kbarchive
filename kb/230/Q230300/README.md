@@ -6,6 +6,8 @@ permalink: /kb/230/Q230300/
 
 ## Q230300: Contents of Connection Manager Administration Kit Release Notes
 
+{% raw %}
+
 	Article: Q230300
 	Product(s): Internet Information Server
 	Version(s): winnt:
@@ -140,3 +142,5 @@ permalink: /kb/230/Q230300/
 	
 	=============================================================================
 	
+
+{% endraw %}

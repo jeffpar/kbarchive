@@ -6,6 +6,8 @@ permalink: /kb/130/Q130788/
 
 ## Q130788: Add/Remove Programs Selects Only the First Information File
 
+{% raw %}
+
 	Article: Q130788
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130788/
 	
 	=============================================================================
 	
+
+{% endraw %}

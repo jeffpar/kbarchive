@@ -6,6 +6,8 @@ permalink: /kb/061/Q61208/
 
 ## Q61208: C 6.00 README: Loading PWB Quickly
 
+{% raw %}
+
 	Article: Q61208
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -69,3 +71,5 @@ permalink: /kb/061/Q61208/
 	"extload" on start up:
 	
 	   PWB /e extload
+
+{% endraw %}

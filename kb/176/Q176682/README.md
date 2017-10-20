@@ -6,6 +6,8 @@ permalink: /kb/176/Q176682/
 
 ## Q176682: XADM: System Attendant Uses Unusually Large Amount of Memory
 
+{% raw %}
+
 	Article: Q176682
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,5.0,5.0 SP1
@@ -67,3 +69,5 @@ permalink: /kb/176/Q176682/
 	
 	=============================================================================
 	
+
+{% endraw %}

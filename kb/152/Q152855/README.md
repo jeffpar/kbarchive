@@ -6,6 +6,8 @@ permalink: /kb/152/Q152855/
 
 ## Q152855: XADM: How to Set up the Anonymous Posting Service
 
+{% raw %}
+
 	Article: Q152855
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -121,3 +123,5 @@ permalink: /kb/152/Q152855/
 	
 	=============================================================================
 	
+
+{% endraw %}

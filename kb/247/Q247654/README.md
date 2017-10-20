@@ -6,6 +6,8 @@ permalink: /kb/247/Q247654/
 
 ## Q247654: XADM: Directory Replication Doesn't Work, Event 1171
 
+{% raw %}
+
 	Article: Q247654
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -161,3 +163,5 @@ permalink: /kb/247/Q247654/
 	
 	=============================================================================
 	
+
+{% endraw %}

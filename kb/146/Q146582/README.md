@@ -6,6 +6,8 @@ permalink: /kb/146/Q146582/
 
 ## Q146582: Clients Reboot During Setup Verification
 
+{% raw %}
+
 	Article: Q146582
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -49,3 +51,5 @@ permalink: /kb/146/Q146582/
 	
 	=============================================================================
 	
+
+{% endraw %}

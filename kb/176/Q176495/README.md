@@ -6,6 +6,8 @@ permalink: /kb/176/Q176495/
 
 ## Q176495: How to Configure a Modem to Connect to MSN
 
+{% raw %}
+
 	Article: Q176495
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6,3.0,4.0,5,5.0
@@ -107,3 +109,5 @@ permalink: /kb/176/Q176495/
 	
 	=============================================================================
 	
+
+{% endraw %}

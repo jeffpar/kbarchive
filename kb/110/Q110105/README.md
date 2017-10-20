@@ -6,6 +6,8 @@ permalink: /kb/110/Q110105/
 
 ## Q110105: How to Join Microsoft Developer Network (MSDN); CD-ROM Disk...
 
+{% raw %}
+
 	Article: Q110105
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/110/Q110105/
 	
 	=============================================================================
 	
+
+{% endraw %}

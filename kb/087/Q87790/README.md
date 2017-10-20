@@ -6,6 +6,8 @@ permalink: /kb/087/Q87790/
 
 ## Q87790: DOCERR: Incorrectly States /PACKC Is Off by Default
 
+{% raw %}
+
 	Article: Q87790
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.1,5.11,5.13,5.15,5.2; OS/2:5.1,5.11,5.13,5.15
@@ -76,3 +78,5 @@ permalink: /kb/087/Q87790/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163080/
 
 ## Q163080: XFOR: Event 4081 Occurs When IMC Encounters Invalid Code Page
 
+{% raw %}
+
 	Article: Q163080
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/163/Q163080/
 	
 	=============================================================================
 	
+
+{% endraw %}

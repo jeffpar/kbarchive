@@ -6,6 +6,8 @@ permalink: /kb/170/Q170875/
 
 ## Q170875: WD97: IPF Printing Document with Large Merged Cells
 
+{% raw %}
+
 	Article: Q170875
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/170/Q170875/
 	
 	=============================================================================
 	
+
+{% endraw %}

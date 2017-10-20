@@ -6,6 +6,8 @@ permalink: /kb/100/Q100354/
 
 ## Q100354: BUG: StretchDIBits() Prints Wrong Part of DIB with PSCRIPT.DRV
 
+{% raw %}
+
 	Article: Q100354
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -165,3 +167,5 @@ permalink: /kb/100/Q100354/
 	
 	=============================================================================
 	
+
+{% endraw %}

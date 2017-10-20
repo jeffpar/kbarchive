@@ -6,6 +6,8 @@ permalink: /kb/105/Q105059/
 
 ## Q105059: DIR Listings Do Not Support Commas in 40-Column Mode
 
+{% raw %}
+
 	Article: Q105059
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -43,3 +45,5 @@ permalink: /kb/105/Q105059/
 	
 	=============================================================================
 	
+
+{% endraw %}

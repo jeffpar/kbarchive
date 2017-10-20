@@ -6,6 +6,8 @@ permalink: /kb/195/Q195736/
 
 ## Q195736: Golf 98 Err Msg: Error Loading Texture File Shad.bmp
 
+{% raw %}
+
 	Article: Q195736
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/195/Q195736/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/298/Q298854/
 
 ## Q298854: Combat Flight Simulator 2: (French) Err Msg in Mission 8
 
+{% raw %}
+
 	Article: Q298854
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -95,3 +97,5 @@ permalink: /kb/298/Q298854/
 	
 	=============================================================================
 	
+
+{% endraw %}

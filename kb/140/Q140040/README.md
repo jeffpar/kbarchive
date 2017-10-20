@@ -6,6 +6,8 @@ permalink: /kb/140/Q140040/
 
 ## Q140040: Installing Windows NT 3.51 Service Pack 2 on Compaq Computers
 
+{% raw %}
+
 	Article: Q140040
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -46,3 +48,5 @@ permalink: /kb/140/Q140040/
 	
 	=============================================================================
 	
+
+{% endraw %}

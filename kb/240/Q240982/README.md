@@ -6,6 +6,8 @@ permalink: /kb/240/Q240982/
 
 ## Q240982: PATCH: Patch_26.exe Fixes Divide by Zero Error on Fast Computers
 
+{% raw %}
+
 	Article: Q240982
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6,2.6a
@@ -125,3 +127,5 @@ permalink: /kb/240/Q240982/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197013/
 
 ## Q197013: XADM: RTF Message Appears Incorrectly After Being Forwarded
 
+{% raw %}
+
 	Article: Q197013
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -86,3 +88,5 @@ permalink: /kb/197/Q197013/
 	
 	=============================================================================
 	
+
+{% endraw %}

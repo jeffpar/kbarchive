@@ -6,6 +6,8 @@ permalink: /kb/177/Q177676/
 
 ## Q177676: Stop 0x00000024 May Occur When Bypass Traverse Checking Disabled
 
+{% raw %}
+
 	Article: Q177676
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/177/Q177676/
 	
 	=============================================================================
 	
+
+{% endraw %}

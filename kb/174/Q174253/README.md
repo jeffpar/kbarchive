@@ -6,6 +6,8 @@ permalink: /kb/174/Q174253/
 
 ## Q174253: XFOR: MAC Binary Attachments not Migrated from GroupWise
 
+{% raw %}
+
 	Article: Q174253
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/174/Q174253/
 	
 	=============================================================================
 	
+
+{% endraw %}

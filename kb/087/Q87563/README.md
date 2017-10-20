@@ -6,6 +6,8 @@ permalink: /kb/087/Q87563/
 
 ## Q87563: PPT: Non-PowerPoint Objects Have No Selection Box
 
+{% raw %}
+
 	Article: Q87563
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 4.0,7.0
@@ -60,3 +62,5 @@ permalink: /kb/087/Q87563/
 	
 	=============================================================================
 	
+
+{% endraw %}

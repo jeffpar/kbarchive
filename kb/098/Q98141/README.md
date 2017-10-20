@@ -6,6 +6,8 @@ permalink: /kb/098/Q98141/
 
 ## Q98141: Replacing a Corrupted NET.ACC with Its Backup
 
+{% raw %}
+
 	Article: Q98141
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/098/Q98141/
 	
 	=============================================================================
 	
+
+{% endraw %}

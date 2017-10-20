@@ -6,6 +6,8 @@ permalink: /kb/171/Q171991/
 
 ## Q171991: 3270 Emulator May Truncate Script File When Disk Full
 
+{% raw %}
+
 	Article: Q171991
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -53,3 +55,5 @@ permalink: /kb/171/Q171991/
 	
 	=============================================================================
 	
+
+{% endraw %}

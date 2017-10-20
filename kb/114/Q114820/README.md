@@ -6,6 +6,8 @@ permalink: /kb/114/Q114820/
 
 ## Q114820: Sound: GP Fault When Opening Control Panel or Browser
 
+{% raw %}
+
 	Article: Q114820
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,2.0,2.0a
@@ -54,3 +56,5 @@ permalink: /kb/114/Q114820/
 	
 	=============================================================================
 	
+
+{% endraw %}

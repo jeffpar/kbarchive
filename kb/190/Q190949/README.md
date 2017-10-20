@@ -6,6 +6,8 @@ permalink: /kb/190/Q190949/
 
 ## Q190949: SMS: PREINST /SYNCPARENT Leaves Blank Records in Machine Groups
 
+{% raw %}
+
 	Article: Q190949
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -76,3 +78,5 @@ permalink: /kb/190/Q190949/
 	
 	=============================================================================
 	
+
+{% endraw %}

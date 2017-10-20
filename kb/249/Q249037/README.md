@@ -6,6 +6,8 @@ permalink: /kb/249/Q249037/
 
 ## Q249037: XADM: Event 4096 While InterOrg Synchronization Tool Is Running
 
+{% raw %}
+
 	Article: Q249037
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/249/Q249037/
 	
 	=============================================================================
 	
+
+{% endraw %}

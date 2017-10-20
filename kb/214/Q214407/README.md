@@ -6,6 +6,8 @@ permalink: /kb/214/Q214407/
 
 ## Q214407: XADM: Internet Mail Service Stops with an Access Violation
 
+{% raw %}
+
 	Article: Q214407
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -110,3 +112,5 @@ permalink: /kb/214/Q214407/
 	
 	=============================================================================
 	
+
+{% endraw %}

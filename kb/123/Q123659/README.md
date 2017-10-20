@@ -6,6 +6,8 @@ permalink: /kb/123/Q123659/
 
 ## Q123659: BUG: Divide by Zero Error Compiling an Empty Structure
 
+{% raw %}
+
 	Article: Q123659
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -69,3 +71,5 @@ permalink: /kb/123/Q123659/
 	
 	=============================================================================
 	
+
+{% endraw %}

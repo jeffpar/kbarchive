@@ -6,6 +6,8 @@ permalink: /kb/271/Q271867/
 
 ## Q271867: Err Msg: Event ID: 2140 An Internal Windows NT Error Occurred
 
+{% raw %}
+
 	Article: Q271867
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -106,3 +108,5 @@ permalink: /kb/271/Q271867/
 	
 	=============================================================================
 	
+
+{% endraw %}

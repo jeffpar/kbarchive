@@ -6,6 +6,8 @@ permalink: /kb/110/Q110405/
 
 ## Q110405: PRB: MASM 6.x and the Windows 3.1 DDK
 
+{% raw %}
+
 	Article: Q110405
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -61,3 +63,5 @@ permalink: /kb/110/Q110405/
 	
 	=============================================================================
 	
+
+{% endraw %}

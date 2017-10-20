@@ -6,6 +6,8 @@ permalink: /kb/184/Q184858/
 
 ## Q184858: SMS: CLIMON Consumes PDC lsass Resources When Password Expired
 
+{% raw %}
+
 	Article: Q184858
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -91,3 +93,5 @@ permalink: /kb/184/Q184858/
 	
 	=============================================================================
 	
+
+{% endraw %}

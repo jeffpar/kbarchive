@@ -6,6 +6,8 @@ permalink: /kb/122/Q122217/
 
 ## Q122217: PRB: offsetof() Macro Fails with Virtual Base Class
 
+{% raw %}
+
 	Article: Q122217
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,4.0,4.1,4.2
@@ -122,3 +124,5 @@ permalink: /kb/122/Q122217/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178335/
 
 ## Q178335: INFO: Summary List: Bugs Fixed by Visual C++ Version 5.0
 
+{% raw %}
+
 	Article: Q178335
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -271,3 +273,5 @@ permalink: /kb/178/Q178335/
 	
 	=============================================================================
 	
+
+{% endraw %}

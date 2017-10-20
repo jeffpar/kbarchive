@@ -6,6 +6,8 @@ permalink: /kb/139/Q139368/
 
 ## Q139368: PC NTMMTA: SESSION.LOG Displays Pulse as Baud Rate
 
+{% raw %}
+
 	Article: Q139368
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -115,3 +117,5 @@ permalink: /kb/139/Q139368/
 	
 	=============================================================================
 	
+
+{% endraw %}

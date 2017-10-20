@@ -6,6 +6,8 @@ permalink: /kb/079/Q79989/
 
 ## Q79989: DPMI0301.exe Simulates Real Mode Interrupts
 
+{% raw %}
+
 	Article: Q79989
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -75,3 +77,5 @@ permalink: /kb/079/Q79989/
 	
 	=============================================================================
 	
+
+{% endraw %}

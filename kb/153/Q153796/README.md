@@ -6,6 +6,8 @@ permalink: /kb/153/Q153796/
 
 ## Q153796: Close Combat: Hang at Splash Screen
 
+{% raw %}
+
 	Article: Q153796
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153796/
 	
 	=============================================================================
 	
+
+{% endraw %}

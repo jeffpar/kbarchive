@@ -6,6 +6,8 @@ permalink: /kb/132/Q132822/
 
 ## Q132822: Some US Robotics Modems May Not Dial Long Numbers
 
+{% raw %}
+
 	Article: Q132822
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/132/Q132822/
 	
 	=============================================================================
 	
+
+{% endraw %}

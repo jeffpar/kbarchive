@@ -6,6 +6,8 @@ permalink: /kb/045/Q45185/
 
 ## Q45185: /43 Starts CodeView with Screen Swapping Enabled
 
+{% raw %}
+
 	Article: Q45185
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -17,3 +19,5 @@ permalink: /kb/045/Q45185/
 	mode, screen swapping is automatically enabled. This behavior is by
 	design, although it is not stated in the documentation for the
 	product.
+
+{% endraw %}

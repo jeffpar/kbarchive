@@ -6,6 +6,8 @@ permalink: /kb/155/Q155068/
 
 ## Q155068: PPT: Can't Use PowerPoint 7.0 CD-ROM on a Macintosh Computer
 
+{% raw %}
+
 	Article: Q155068
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:7.0; Win95:7.0
@@ -57,3 +59,5 @@ permalink: /kb/155/Q155068/
 	
 	=============================================================================
 	
+
+{% endraw %}

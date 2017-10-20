@@ -6,6 +6,8 @@ permalink: /kb/065/Q65545/
 
 ## Q65545: C1001: Internal Compiler Error: @(#)exphelp.c:1.115, Line 698
 
+{% raw %}
+
 	Article: Q65545
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -41,3 +43,5 @@ permalink: /kb/065/Q65545/
 	Microsoft has confirmed this to be a problem with the C compiler
 	version 6.00. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

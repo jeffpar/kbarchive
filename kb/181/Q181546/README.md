@@ -6,6 +6,8 @@ permalink: /kb/181/Q181546/
 
 ## Q181546: RAS Error 718 When Using Motorola ISDN BitSURFR Pro EZ
 
+{% raw %}
+
 	Article: Q181546
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/181/Q181546/
 	
 	=============================================================================
 	
+
+{% endraw %}

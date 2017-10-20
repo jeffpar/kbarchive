@@ -6,6 +6,8 @@ permalink: /kb/041/Q41471/
 
 ## Q41471: QuickC 2.00 README.DOC: Help On Help and TSRs
 
+{% raw %}
+
 	Article: Q41471
 	Product(s): See article
 	Version(s): 2.00
@@ -24,3 +26,5 @@ permalink: /kb/041/Q41471/
 	installed, and you invoke that program with SHIFT+F1, then you can't
 	use the SHIFT+F1 shortcut to QuickC's Help on Help. Choose Help on
 	Help from the menus instead. Or change the key that triggers the TSR.
+
+{% endraw %}

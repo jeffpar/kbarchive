@@ -6,6 +6,8 @@ permalink: /kb/247/Q247109/
 
 ## Q247109: XADM: Steps to Restore an Online Backup Using Current Log Files
 
+{% raw %}
+
 	Article: Q247109
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -274,3 +276,5 @@ permalink: /kb/247/Q247109/
 	
 	=============================================================================
 	
+
+{% endraw %}

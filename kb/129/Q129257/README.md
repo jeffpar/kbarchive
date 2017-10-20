@@ -6,6 +6,8 @@ permalink: /kb/129/Q129257/
 
 ## Q129257: Error Message: The Briefcase Cannot Be Opened...
 
+{% raw %}
+
 	Article: Q129257
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/129/Q129257/
 	
 	=============================================================================
 	
+
+{% endraw %}

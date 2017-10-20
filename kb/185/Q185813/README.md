@@ -6,6 +6,8 @@ permalink: /kb/185/Q185813/
 
 ## Q185813: WD97: Drop Cap Jumps to Previous Column
 
+{% raw %}
+
 	Article: Q185813
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185813/
 	
 	=============================================================================
 	
+
+{% endraw %}

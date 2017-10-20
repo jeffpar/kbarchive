@@ -6,6 +6,8 @@ permalink: /kb/232/Q232600/
 
 ## Q232600: XADM: Message Using Non-GAPI Code Page Is Not Converted Properly
 
+{% raw %}
+
 	Article: Q232600
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/232/Q232600/
 	
 	=============================================================================
 	
+
+{% endraw %}

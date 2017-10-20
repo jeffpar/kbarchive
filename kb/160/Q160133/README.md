@@ -6,6 +6,8 @@ permalink: /kb/160/Q160133/
 
 ## Q160133: Golf 3.0: Description of the Internet Multiplayer Patch
 
+{% raw %}
+
 	Article: Q160133
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -96,3 +98,5 @@ permalink: /kb/160/Q160133/
 	
 	=============================================================================
 	
+
+{% endraw %}

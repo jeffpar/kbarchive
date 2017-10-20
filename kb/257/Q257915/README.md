@@ -6,6 +6,8 @@ permalink: /kb/257/Q257915/
 
 ## Q257915: Encarta 99 RO: Text in Field 2 on Notecard Appears as Asterisks
 
+{% raw %}
+
 	Article: Q257915
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -90,3 +92,5 @@ permalink: /kb/257/Q257915/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130335/
 
 ## Q130335: ADT2: &quot;There Is No Object in This Control&quot; Error Message
 
+{% raw %}
+
 	Article: Q130335
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -88,3 +90,5 @@ permalink: /kb/130/Q130335/
 	
 	=============================================================================
 	
+
+{% endraw %}

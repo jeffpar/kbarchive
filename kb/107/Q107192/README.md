@@ -6,6 +6,8 @@ permalink: /kb/107/Q107192/
 
 ## Q107192: Multiple Connections to the Same Host Over 802.2
 
+{% raw %}
+
 	Article: Q107192
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -149,3 +151,5 @@ permalink: /kb/107/Q107192/
 	
 	=============================================================================
 	
+
+{% endraw %}

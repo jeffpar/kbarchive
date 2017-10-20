@@ -6,6 +6,8 @@ permalink: /kb/192/Q192241/
 
 ## Q192241: DOS Remote Mail Incorrectly Changes Date/Time after Year 2000
 
+{% raw %}
+
 	Article: Q192241
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/192/Q192241/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130840/
 
 ## Q130840: How to Append Records from One Remote View to Another
 
+{% raw %}
+
 	Article: Q130840
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -56,3 +58,5 @@ permalink: /kb/130/Q130840/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/313/Q313660/
 
 ## Q313660: SMS: DDM Assigns Clients Incorrectly in Multi-Tiered Hierarchy
 
+{% raw %}
+
 	Article: Q313660
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -268,3 +270,5 @@ permalink: /kb/313/Q313660/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173657/
 
 ## Q173657: XCLN: Outlook Auto Upgrade Fails to Start
 
+{% raw %}
+
 	Article: Q173657
 	Product(s): Microsoft Exchange
 	Version(s): 8.02
@@ -125,3 +127,5 @@ permalink: /kb/173/Q173657/
 	
 	=============================================================================
 	
+
+{% endraw %}

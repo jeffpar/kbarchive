@@ -6,6 +6,8 @@ permalink: /kb/136/Q136489/
 
 ## Q136489: PC Ext: External Access Up to 50 NetWare Network Connections
 
+{% raw %}
+
 	Article: Q136489
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -100,3 +102,5 @@ permalink: /kb/136/Q136489/
 	
 	=============================================================================
 	
+
+{% endraw %}

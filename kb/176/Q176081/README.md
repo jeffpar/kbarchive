@@ -6,6 +6,8 @@ permalink: /kb/176/Q176081/
 
 ## Q176081: Access Violation in Explorer.exe Removing a Share
 
+{% raw %}
+
 	Article: Q176081
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/176/Q176081/
 	
 	=============================================================================
 	
+
+{% endraw %}

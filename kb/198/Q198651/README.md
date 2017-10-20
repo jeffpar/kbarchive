@@ -6,6 +6,8 @@ permalink: /kb/198/Q198651/
 
 ## Q198651: SMS: How to Create a New SMS Console Window in the MMC
 
+{% raw %}
+
 	Article: Q198651
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -98,3 +100,5 @@ permalink: /kb/198/Q198651/
 	
 	=============================================================================
 	
+
+{% endraw %}

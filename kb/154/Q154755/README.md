@@ -6,6 +6,8 @@ permalink: /kb/154/Q154755/
 
 ## Q154755: PCAnywhere 32 7.0 May Delete Files on NTFS Partition
 
+{% raw %}
+
 	Article: Q154755
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -59,3 +61,5 @@ permalink: /kb/154/Q154755/
 	
 	=============================================================================
 	
+
+{% endraw %}

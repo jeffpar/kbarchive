@@ -6,6 +6,8 @@ permalink: /kb/150/Q150570/
 
 ## Q150570: Fixes to SNA Server 2.11 SP1 Barr Channel Link Service
 
+{% raw %}
+
 	Article: Q150570
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -68,3 +70,5 @@ permalink: /kb/150/Q150570/
 	
 	=============================================================================
 	
+
+{% endraw %}

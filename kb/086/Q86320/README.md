@@ -6,6 +6,8 @@ permalink: /kb/086/Q86320/
 
 ## Q86320: PC Win: Message Finders Closing Automatically
 
+{% raw %}
+
 	Article: Q86320
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -37,3 +39,5 @@ permalink: /kb/086/Q86320/
 	
 	=============================================================================
 	
+
+{% endraw %}

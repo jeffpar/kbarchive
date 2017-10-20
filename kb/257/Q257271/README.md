@@ -6,6 +6,8 @@ permalink: /kb/257/Q257271/
 
 ## Q257271: SMS: Client Does Not Run Advertisement of Same Package/Program
 
+{% raw %}
+
 	Article: Q257271
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -82,3 +84,5 @@ permalink: /kb/257/Q257271/
 	
 	=============================================================================
 	
+
+{% endraw %}

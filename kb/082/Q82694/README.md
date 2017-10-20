@@ -6,6 +6,8 @@ permalink: /kb/082/Q82694/
 
 ## Q82694: Novell's NETBIOS May Require TimerCriticalSection Line
 
+{% raw %}
+
 	Article: Q82694
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82694/
 	
 	=============================================================================
 	
+
+{% endraw %}

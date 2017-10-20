@@ -6,6 +6,8 @@ permalink: /kb/266/Q266693/
 
 ## Q266693: XFOR: Can't Add Exchange Server SMTP Addr. in Directory Sync.
 
+{% raw %}
+
 	Article: Q266693
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -103,3 +105,5 @@ permalink: /kb/266/Q266693/
 	
 	=============================================================================
 	
+
+{% endraw %}

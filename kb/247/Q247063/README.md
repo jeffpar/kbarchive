@@ -6,6 +6,8 @@ permalink: /kb/247/Q247063/
 
 ## Q247063: XFOR: DNS Error Installing Internet Mail Service on Windows 2000
 
+{% raw %}
+
 	Article: Q247063
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5
@@ -84,3 +86,5 @@ permalink: /kb/247/Q247063/
 	
 	=============================================================================
 	
+
+{% endraw %}

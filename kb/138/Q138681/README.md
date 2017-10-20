@@ -6,6 +6,8 @@ permalink: /kb/138/Q138681/
 
 ## Q138681: PRB: Windows Flash and Disappear in Dialog-Based Applications
 
+{% raw %}
+
 	Article: Q138681
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/138/Q138681/
 	
 	=============================================================================
 	
+
+{% endraw %}

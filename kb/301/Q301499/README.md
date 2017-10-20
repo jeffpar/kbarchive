@@ -6,6 +6,8 @@ permalink: /kb/301/Q301499/
 
 ## Q301499: HOW TO: Use Windows Backup to Make a Data Backup of IIS 4.0
 
+{% raw %}
+
 	Article: Q301499
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -113,3 +115,5 @@ permalink: /kb/301/Q301499/
 	
 	=============================================================================
 	
+
+{% endraw %}

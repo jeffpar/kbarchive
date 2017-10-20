@@ -6,6 +6,8 @@ permalink: /kb/201/Q201547/
 
 ## Q201547: XFOR: GW User Without First &amp; Last Name Not Synched to Exchange
 
+{% raw %}
+
 	Article: Q201547
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -83,3 +85,5 @@ permalink: /kb/201/Q201547/
 	
 	=============================================================================
 	
+
+{% endraw %}

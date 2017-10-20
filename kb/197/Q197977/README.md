@@ -6,6 +6,8 @@ permalink: /kb/197/Q197977/
 
 ## Q197977: XFOR: Uninstall SMTP Gateway and Install IMC to Route SMTP Mail
 
+{% raw %}
+
 	Article: Q197977
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/197/Q197977/
 	
 	=============================================================================
 	
+
+{% endraw %}

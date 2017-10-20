@@ -6,6 +6,8 @@ permalink: /kb/113/Q113174/
 
 ## Q113174: BUG: Incorrect Return Value with CAPSLOCK() or NUMLOCK()
 
+{% raw %}
+
 	Article: Q113174
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0,2.5,2.5a,2.5b,3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -78,3 +80,5 @@ permalink: /kb/113/Q113174/
 	
 	=============================================================================
 	
+
+{% endraw %}

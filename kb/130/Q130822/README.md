@@ -6,6 +6,8 @@ permalink: /kb/130/Q130822/
 
 ## Q130822: Must Use Windows 95 Client for NetWare with DBCS-Named Server
 
+{% raw %}
+
 	Article: Q130822
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/130/Q130822/
 	
 	=============================================================================
 	
+
+{% endraw %}

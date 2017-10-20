@@ -6,6 +6,8 @@ permalink: /kb/191/Q191026/
 
 ## Q191026: WD97: Incorrect Pages Print with Odd/Even Print Order
 
+{% raw %}
+
 	Article: Q191026
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/191/Q191026/
 	
 	=============================================================================
 	
+
+{% endraw %}

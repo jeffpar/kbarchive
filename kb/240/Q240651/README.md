@@ -6,6 +6,8 @@ permalink: /kb/240/Q240651/
 
 ## Q240651: Err Msg: One or More Shockwave Files Are Missing...
 
+{% raw %}
+
 	Article: Q240651
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/240/Q240651/
 	
 	=============================================================================
 	
+
+{% endraw %}

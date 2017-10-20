@@ -6,6 +6,8 @@ permalink: /kb/187/Q187738/
 
 ## Q187738: Upgrade to IIS 4.0 May Give Extra Virtual Directories
 
+{% raw %}
+
 	Article: Q187738
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/187/Q187738/
 	
 	=============================================================================
 	
+
+{% endraw %}

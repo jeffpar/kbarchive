@@ -6,6 +6,8 @@ permalink: /kb/314/Q314565/
 
 ## Q314565: Games: IPF or Err Msg When Agreement Appears
 
+{% raw %}
+
 	Article: Q314565
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -185,3 +187,5 @@ permalink: /kb/314/Q314565/
 	
 	=============================================================================
 	
+
+{% endraw %}

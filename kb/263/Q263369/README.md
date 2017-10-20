@@ -6,6 +6,8 @@ permalink: /kb/263/Q263369/
 
 ## Q263369: SMS: Advertisement May Run While a User Is Logged Off
 
+{% raw %}
+
 	Article: Q263369
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/263/Q263369/
 	
 	=============================================================================
 	
+
+{% endraw %}

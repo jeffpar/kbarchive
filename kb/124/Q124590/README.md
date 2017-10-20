@@ -6,6 +6,8 @@ permalink: /kb/124/Q124590/
 
 ## Q124590: Cinemania 1995: Font Changes When Printing a Two-Page Document
 
+{% raw %}
+
 	Article: Q124590
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -78,3 +80,5 @@ permalink: /kb/124/Q124590/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318994/
 
 ## Q318994: How To Delete Corrupt Preference Files
 
+{% raw %}
+
 	Article: Q318994
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/318/Q318994/
 	
 	=============================================================================
 	
+
+{% endraw %}

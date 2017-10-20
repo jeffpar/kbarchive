@@ -6,6 +6,8 @@ permalink: /kb/290/Q290621/
 
 ## Q290621: XADM: Public Folder Rules Are Disabled w. Antivirus API Solution
 
+{% raw %}
+
 	Article: Q290621
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -180,3 +182,5 @@ permalink: /kb/290/Q290621/
 	
 	=============================================================================
 	
+
+{% endraw %}

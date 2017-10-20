@@ -6,6 +6,8 @@ permalink: /kb/051/Q51763/
 
 ## Q51763: C1126 - &lt;Identifier&gt;: Automatic Allocation Exceeds &lt;Size&gt;
 
+{% raw %}
+
 	Article: Q51763
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -29,3 +31,5 @@ permalink: /kb/051/Q51763/
 	When the compiler encounters this error, it stops parsing the program
 	and outputs any error messages found up to that point. No object file
 	is produced.
+
+{% endraw %}

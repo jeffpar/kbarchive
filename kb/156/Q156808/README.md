@@ -6,6 +6,8 @@ permalink: /kb/156/Q156808/
 
 ## Q156808: INFO: STL Sample for the new operator Function
 
+{% raw %}
+
 	Article: Q156808
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -180,3 +182,5 @@ permalink: /kb/156/Q156808/
 	
 	=============================================================================
 	
+
+{% endraw %}

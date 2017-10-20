@@ -6,6 +6,8 @@ permalink: /kb/195/Q195905/
 
 ## Q195905: XCON: Address Space Not Updated When You Recalculate GWART
 
+{% raw %}
+
 	Article: Q195905
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -88,3 +90,5 @@ permalink: /kb/195/Q195905/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186487/
 
 ## Q186487: Terminal Server Commands: NW2NT
 
+{% raw %}
+
 	Article: Q186487
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/186/Q186487/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72791/
 
 ## Q72791: FIX: MASM Fails to Generate Error When Real Values Are Too Small
 
+{% raw %}
+
 	Article: Q72791
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.10,5.10a,6.0,6.0a,6.0b
@@ -103,3 +105,5 @@ permalink: /kb/072/Q72791/
 	
 	=============================================================================
 	
+
+{% endraw %}

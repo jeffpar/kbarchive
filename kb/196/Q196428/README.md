@@ -6,6 +6,8 @@ permalink: /kb/196/Q196428/
 
 ## Q196428: WD97: Word Doesn't Display Each Open Document When Quitting
 
+{% raw %}
+
 	Article: Q196428
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/196/Q196428/
 	
 	=============================================================================
 	
+
+{% endraw %}

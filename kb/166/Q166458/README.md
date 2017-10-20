@@ -6,6 +6,8 @@ permalink: /kb/166/Q166458/
 
 ## Q166458: BUG: &quot;One-time Only&quot; Tracing Option Does Not Stop Automatically
 
+{% raw %}
+
 	Article: Q166458
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/166/Q166458/
 	
 	=============================================================================
 	
+
+{% endraw %}

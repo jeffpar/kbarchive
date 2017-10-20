@@ -6,6 +6,8 @@ permalink: /kb/153/Q153493/
 
 ## Q153493: HOWTO: Perform a RollBack Without Losing History
 
+{% raw %}
+
 	Article: Q153493
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/153/Q153493/
 	
 	=============================================================================
 	
+
+{% endraw %}

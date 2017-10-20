@@ -6,6 +6,8 @@ permalink: /kb/050/Q50405/
 
 ## Q50405: Specifying the Size of a CALL or JMP Instruction in MASM
 
+{% raw %}
+
 	Article: Q50405
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -72,3 +74,5 @@ permalink: /kb/050/Q50405/
 	
 	=============================================================================
 	
+
+{% endraw %}

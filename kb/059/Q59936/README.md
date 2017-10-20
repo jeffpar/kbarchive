@@ -6,6 +6,8 @@ permalink: /kb/059/Q59936/
 
 ## Q59936: PRB: L4047 Warning Benign When C 6 Run-time Libraries Used
 
+{% raw %}
+
 	Article: Q59936
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.1,5.11,5.13,5.15,5.2; OS/2:5.1,5.11,5.13,5.15
@@ -51,3 +53,5 @@ permalink: /kb/059/Q59936/
 	
 	=============================================================================
 	
+
+{% endraw %}

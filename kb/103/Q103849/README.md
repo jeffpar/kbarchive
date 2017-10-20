@@ -6,6 +6,8 @@ permalink: /kb/103/Q103849/
 
 ## Q103849: PC Ext: Modem Scripts That Only Support 9600 Baud
 
+{% raw %}
+
 	Article: Q103849
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -74,3 +76,5 @@ permalink: /kb/103/Q103849/
 	
 	=============================================================================
 	
+
+{% endraw %}

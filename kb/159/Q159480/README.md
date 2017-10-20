@@ -6,6 +6,8 @@ permalink: /kb/159/Q159480/
 
 ## Q159480: PPT7: Can't Unpack File To Folder With Extended Characters
 
+{% raw %}
+
 	Article: Q159480
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -67,3 +69,5 @@ permalink: /kb/159/Q159480/
 	
 	=============================================================================
 	
+
+{% endraw %}

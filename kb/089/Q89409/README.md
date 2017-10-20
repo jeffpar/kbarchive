@@ -6,6 +6,8 @@ permalink: /kb/089/Q89409/
 
 ## Q89409: X400: Definition of ADMD
 
+{% raw %}
+
 	Article: Q89409
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/089/Q89409/
 	
 	=============================================================================
 	
+
+{% endraw %}

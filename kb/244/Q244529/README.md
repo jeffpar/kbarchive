@@ -6,6 +6,8 @@ permalink: /kb/244/Q244529/
 
 ## Q244529: XADM: Find Recipients in Exchange Admin Does Not Use Wildcards
 
+{% raw %}
+
 	Article: Q244529
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/244/Q244529/
 	
 	=============================================================================
 	
+
+{% endraw %}

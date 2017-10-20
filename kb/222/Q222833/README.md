@@ -6,6 +6,8 @@ permalink: /kb/222/Q222833/
 
 ## Q222833: XADM: Public Information Store Replication Msg. Size Limit
 
+{% raw %}
+
 	Article: Q222833
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/222/Q222833/
 	
 	=============================================================================
 	
+
+{% endraw %}

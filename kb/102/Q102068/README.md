@@ -6,6 +6,8 @@ permalink: /kb/102/Q102068/
 
 ## Q102068: Remote Access Server Port Speed Indicates DTE Rate
 
+{% raw %}
+
 	Article: Q102068
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -48,3 +50,5 @@ permalink: /kb/102/Q102068/
 	
 	=============================================================================
 	
+
+{% endraw %}

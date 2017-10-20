@@ -6,6 +6,8 @@ permalink: /kb/160/Q160851/
 
 ## Q160851: MSN Setup Does Not Connect If Third-Party Connection Selected
 
+{% raw %}
+
 	Article: Q160851
 	Product(s): The Microsoft Network
 	Version(s): 2.00
@@ -49,3 +51,5 @@ permalink: /kb/160/Q160851/
 	
 	=============================================================================
 	
+
+{% endraw %}

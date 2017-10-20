@@ -6,6 +6,8 @@ permalink: /kb/299/Q299728/
 
 ## Q299728: Train Simulator: Known Issues with Activities
 
+{% raw %}
+
 	Article: Q299728
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -112,3 +114,5 @@ permalink: /kb/299/Q299728/
 	
 	=============================================================================
 	
+
+{% endraw %}

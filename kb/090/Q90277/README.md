@@ -6,6 +6,8 @@ permalink: /kb/090/Q90277/
 
 ## Q90277: Path Used for Spool Files for a Shared Printer
 
+{% raw %}
+
 	Article: Q90277
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/090/Q90277/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86156/
 
 ## Q86156: PROFS: How to Update the Gateway
 
+{% raw %}
+
 	Article: Q86156
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -49,3 +51,5 @@ permalink: /kb/086/Q86156/
 	
 	=============================================================================
 	
+
+{% endraw %}

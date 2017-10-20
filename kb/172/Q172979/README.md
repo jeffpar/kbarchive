@@ -6,6 +6,8 @@ permalink: /kb/172/Q172979/
 
 ## Q172979: Modem Status Icon Does Not Appear on Taskbar
 
+{% raw %}
+
 	Article: Q172979
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -59,3 +61,5 @@ permalink: /kb/172/Q172979/
 	
 	=============================================================================
 	
+
+{% endraw %}

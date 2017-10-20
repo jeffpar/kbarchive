@@ -6,6 +6,8 @@ permalink: /kb/186/Q186241/
 
 ## Q186241: Dr. Watson May Cause CPU Usage to Spike
 
+{% raw %}
+
 	Article: Q186241
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -112,3 +114,5 @@ permalink: /kb/186/Q186241/
 	
 	=============================================================================
 	
+
+{% endraw %}

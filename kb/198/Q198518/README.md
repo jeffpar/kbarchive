@@ -6,6 +6,8 @@ permalink: /kb/198/Q198518/
 
 ## Q198518: RRAS Requires Non-Zero Internal Network Number for IPX
 
+{% raw %}
+
 	Article: Q198518
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/198/Q198518/
 	
 	=============================================================================
 	
+
+{% endraw %}

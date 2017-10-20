@@ -6,6 +6,8 @@ permalink: /kb/176/Q176364/
 
 ## Q176364: FS2000: Hangs When &quot;Building Database for New Scenery&quot; Displayed
 
+{% raw %}
+
 	Article: Q176364
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/176/Q176364/
 	
 	=============================================================================
 	
+
+{% endraw %}

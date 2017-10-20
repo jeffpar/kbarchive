@@ -6,6 +6,8 @@ permalink: /kb/128/Q128156/
 
 ## Q128156: PRB: Invalid Data Type for This Property Error
 
+{% raw %}
+
 	Article: Q128156
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -88,3 +90,5 @@ permalink: /kb/128/Q128156/
 	
 	=============================================================================
 	
+
+{% endraw %}

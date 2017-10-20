@@ -6,6 +6,8 @@ permalink: /kb/173/Q173261/
 
 ## Q173261: FIX: Dialog in InitInstance Doesn't Process WM_DDE_INITIATE
 
+{% raw %}
+
 	Article: Q173261
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,5.0
@@ -122,3 +124,5 @@ permalink: /kb/173/Q173261/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111712/
 
 ## Q111712: WFWG 3.11: 3C509 MLID May Cause Lost Connections and Hangs
 
+{% raw %}
+
 	Article: Q111712
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -82,3 +84,5 @@ permalink: /kb/111/Q111712/
 	
 	=============================================================================
 	
+
+{% endraw %}

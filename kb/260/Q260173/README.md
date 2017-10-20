@@ -6,6 +6,8 @@ permalink: /kb/260/Q260173/
 
 ## Q260173: Err Msg: Could Not Bind to the Microsoft Exchange Directory...
 
+{% raw %}
+
 	Article: Q260173
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -101,3 +103,5 @@ permalink: /kb/260/Q260173/
 	
 	=============================================================================
 	
+
+{% endraw %}

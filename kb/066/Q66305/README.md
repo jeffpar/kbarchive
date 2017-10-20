@@ -6,6 +6,8 @@ permalink: /kb/066/Q66305/
 
 ## Q66305: _setcliprgn Does Not Work Inside a _setviewport
 
+{% raw %}
+
 	Article: Q66305
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -56,3 +58,5 @@ permalink: /kb/066/Q66305/
 	Microsoft has confirmed this to be a problem with Microsoft C Compiler
 	versions 6.00 and 6.00a. We are researching this problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

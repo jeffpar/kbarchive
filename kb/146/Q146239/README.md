@@ -6,6 +6,8 @@ permalink: /kb/146/Q146239/
 
 ## Q146239: Microsoft Windows 95 Service Pack 1 Admin.doc File (2 of 3)
 
+{% raw %}
+
 	Article: Q146239
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -500,3 +502,5 @@ permalink: /kb/146/Q146239/
 	
 	=============================================================================
 	
+
+{% endraw %}

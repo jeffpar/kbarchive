@@ -6,6 +6,8 @@ permalink: /kb/170/Q170339/
 
 ## Q170339: Cropped Pictures and Objects Are Resized
 
+{% raw %}
+
 	Article: Q170339
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/170/Q170339/
 	
 	=============================================================================
 	
+
+{% endraw %}

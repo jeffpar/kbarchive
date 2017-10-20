@@ -6,6 +6,8 @@ permalink: /kb/155/Q155312/
 
 ## Q155312: WD97: How to Convert Multiple White Space Characters to Tabs
 
+{% raw %}
+
 	Article: Q155312
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/155/Q155312/
 	
 	=============================================================================
 	
+
+{% endraw %}

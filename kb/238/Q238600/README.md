@@ -6,6 +6,8 @@ permalink: /kb/238/Q238600/
 
 ## Q238600: Multiple Connection Requests Promote Denial of Service Attack
 
+{% raw %}
+
 	Article: Q238600
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -126,3 +128,5 @@ permalink: /kb/238/Q238600/
 	
 	=============================================================================
 	
+
+{% endraw %}

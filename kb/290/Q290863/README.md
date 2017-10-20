@@ -6,6 +6,8 @@ permalink: /kb/290/Q290863/
 
 ## Q290863: Microsoft Enterprise Learning Library: Step by Step Interactive
 
+{% raw %}
+
 	Article: Q290863
 	Product(s): Microsoft Press
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/290/Q290863/
 	
 	=============================================================================
 	
+
+{% endraw %}

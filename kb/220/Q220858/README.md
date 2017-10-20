@@ -6,6 +6,8 @@ permalink: /kb/220/Q220858/
 
 ## Q220858: Client Install Fails on NT 4.0: CLICORE.EXE Returns Exit Code=1
 
+{% raw %}
+
 	Article: Q220858
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -137,3 +139,5 @@ permalink: /kb/220/Q220858/
 	
 	=============================================================================
 	
+
+{% endraw %}

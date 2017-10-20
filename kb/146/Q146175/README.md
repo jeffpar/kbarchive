@@ -6,6 +6,8 @@ permalink: /kb/146/Q146175/
 
 ## Q146175: Seven Habits Wizard and the Six Step Process
 
+{% raw %}
+
 	Article: Q146175
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -51,3 +53,5 @@ permalink: /kb/146/Q146175/
 	
 	=============================================================================
 	
+
+{% endraw %}

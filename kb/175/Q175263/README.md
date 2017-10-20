@@ -6,6 +6,8 @@ permalink: /kb/175/Q175263/
 
 ## Q175263: XADM: Clients Cannot Recover Items After Item Recovery Enabled
 
+{% raw %}
+
 	Article: Q175263
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -75,3 +77,5 @@ permalink: /kb/175/Q175263/
 	
 	=============================================================================
 	
+
+{% endraw %}

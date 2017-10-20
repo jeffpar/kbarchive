@@ -6,6 +6,8 @@ permalink: /kb/273/Q273808/
 
 ## Q273808: Midtown Madness 2: List of Controllers Is Incorrect
 
+{% raw %}
+
 	Article: Q273808
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -51,3 +53,5 @@ permalink: /kb/273/Q273808/
 	
 	=============================================================================
 	
+
+{% endraw %}

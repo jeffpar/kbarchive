@@ -6,6 +6,8 @@ permalink: /kb/118/Q118815/
 
 ## Q118815: BUG: M6101 Drawing a Line Outside Screen Coordinates
 
+{% raw %}
+
 	Article: Q118815
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -81,3 +83,5 @@ permalink: /kb/118/Q118815/
 	
 	=============================================================================
 	
+
+{% endraw %}

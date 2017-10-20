@@ -6,6 +6,8 @@ permalink: /kb/184/Q184997/
 
 ## Q184997: PRB: Connection Problem with Global Temp Tables and RdoQueries
 
+{% raw %}
+
 	Article: Q184997
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -126,3 +128,5 @@ permalink: /kb/184/Q184997/
 	
 	=============================================================================
 	
+
+{% endraw %}

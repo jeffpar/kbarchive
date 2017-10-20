@@ -6,6 +6,8 @@ permalink: /kb/082/Q82670/
 
 ## Q82670: Error Creating an Invalid Directory from File Manager
 
+{% raw %}
+
 	Article: Q82670
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82670/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154774/
 
 ## Q154774: XCLN: Exchange Client Inbox Assistant Rules FAQ
 
+{% raw %}
+
 	Article: Q154774
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -299,3 +301,5 @@ permalink: /kb/154/Q154774/
 	
 	=============================================================================
 	
+
+{% endraw %}

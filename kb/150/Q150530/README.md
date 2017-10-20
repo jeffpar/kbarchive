@@ -6,6 +6,8 @@ permalink: /kb/150/Q150530/
 
 ## Q150530: Event ID 529 Unknown User Name Or Bad Password
 
+{% raw %}
+
 	Article: Q150530
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -85,3 +87,5 @@ permalink: /kb/150/Q150530/
 	
 	=============================================================================
 	
+
+{% endraw %}

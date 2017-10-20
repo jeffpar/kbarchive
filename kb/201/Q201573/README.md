@@ -6,6 +6,8 @@ permalink: /kb/201/Q201573/
 
 ## Q201573: Two Processes Calling Each Other May Stop Responding
 
+{% raw %}
+
 	Article: Q201573
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -58,3 +60,5 @@ permalink: /kb/201/Q201573/
 	
 	=============================================================================
 	
+
+{% endraw %}

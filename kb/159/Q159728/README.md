@@ -6,6 +6,8 @@ permalink: /kb/159/Q159728/
 
 ## Q159728: DIR Command to NetWare Server Using GSNW Results in Error
 
+{% raw %}
+
 	Article: Q159728
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/159/Q159728/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237798/
 
 ## Q237798: BUG: SSRESTOR Fails with &quot;Error reading from file&quot;
 
+{% raw %}
+
 	Article: Q237798
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/237/Q237798/
 	
 	=============================================================================
 	
+
+{% endraw %}

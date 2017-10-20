@@ -6,6 +6,8 @@ permalink: /kb/160/Q160906/
 
 ## Q160906: HOWTO: Use MFC 4.2 ODBC Classes in an ISAPI DLL
 
+{% raw %}
+
 	Article: Q160906
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,4.2b,5.0,6.0
@@ -317,3 +319,5 @@ permalink: /kb/160/Q160906/
 	
 	=============================================================================
 	
+
+{% endraw %}

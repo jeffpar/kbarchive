@@ -6,6 +6,8 @@ permalink: /kb/202/Q202937/
 
 ## Q202937: SMS: SMS Does Not Support Spaces in SQL Server Database Names
 
+{% raw %}
+
 	Article: Q202937
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -61,3 +63,5 @@ permalink: /kb/202/Q202937/
 	
 	=============================================================================
 	
+
+{% endraw %}

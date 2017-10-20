@@ -6,6 +6,8 @@ permalink: /kb/238/Q238419/
 
 ## Q238419: XADM: Information Store Stops Responding When Delivering an NDR
 
+{% raw %}
+
 	Article: Q238419
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -79,3 +81,5 @@ permalink: /kb/238/Q238419/
 	
 	=============================================================================
 	
+
+{% endraw %}

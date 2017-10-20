@@ -6,6 +6,8 @@ permalink: /kb/176/Q176820/
 
 ## Q176820: Differences Between 128-bit and 40-bit versions of SP3 &amp; SP4
 
+{% raw %}
+
 	Article: Q176820
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -110,3 +112,5 @@ permalink: /kb/176/Q176820/
 	
 	=============================================================================
 	
+
+{% endraw %}

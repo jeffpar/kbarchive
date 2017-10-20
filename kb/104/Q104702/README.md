@@ -6,6 +6,8 @@ permalink: /kb/104/Q104702/
 
 ## Q104702: IGNORE in DBLSPACE.INF Does Not Ignore Subdirectories
 
+{% raw %}
+
 	Article: Q104702
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -96,3 +98,5 @@ permalink: /kb/104/Q104702/
 	
 	=============================================================================
 	
+
+{% endraw %}

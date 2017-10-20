@@ -6,6 +6,8 @@ permalink: /kb/032/Q32216/
 
 ## Q32216: Two Ways to Pass Arrays in Compiled BASIC to Assembler Routine
 
+{% raw %}
+
 	Article: Q32216
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -157,3 +159,5 @@ permalink: /kb/032/Q32216/
 	block. The dynamic array descriptor changes from version to version,
 	and is not released by Microsoft -- it is considered Microsoft
 	proprietary information.
+
+{% endraw %}

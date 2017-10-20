@@ -6,6 +6,8 @@ permalink: /kb/165/Q165905/
 
 ## Q165905: FIX: Activate Event of Page Not Triggered with Keyboard in VFP
 
+{% raw %}
+
 	Article: Q165905
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -75,3 +77,5 @@ permalink: /kb/165/Q165905/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124485/
 
 ## Q124485: Pathworks 5.0 Prevents Domain Name Registration on TCP/IP
 
+{% raw %}
+
 	Article: Q124485
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a,3.5
@@ -69,3 +71,5 @@ permalink: /kb/124/Q124485/
 	
 	=============================================================================
 	
+
+{% endraw %}

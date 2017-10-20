@@ -6,6 +6,8 @@ permalink: /kb/167/Q167631/
 
 ## Q167631: SMS: Windows 95 Service Pack 1 Contains Incorrect PDF Format
 
+{% raw %}
+
 	Article: Q167631
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -58,3 +60,5 @@ permalink: /kb/167/Q167631/
 	
 	=============================================================================
 	
+
+{% endraw %}

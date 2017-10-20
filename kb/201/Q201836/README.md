@@ -6,6 +6,8 @@ permalink: /kb/201/Q201836/
 
 ## Q201836: SMS: SMSAPM32 Network Speed Detection on SMS2.0 NetWare Clients
 
+{% raw %}
+
 	Article: Q201836
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -70,3 +72,5 @@ permalink: /kb/201/Q201836/
 	
 	=============================================================================
 	
+
+{% endraw %}

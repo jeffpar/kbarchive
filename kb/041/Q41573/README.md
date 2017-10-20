@@ -6,6 +6,8 @@ permalink: /kb/041/Q41573/
 
 ## Q41573: QuickC 2.00 README.DOC: Floating-Point Values
 
+{% raw %}
+
 	Article: Q41573
 	Product(s): See article
 	Version(s): 2.00
@@ -20,3 +22,5 @@ permalink: /kb/041/Q41573/
 	Page 72  Floating Point Values
 	
 	The float data type contains four bytes, not six.
+
+{% endraw %}

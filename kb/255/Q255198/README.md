@@ -6,6 +6,8 @@ permalink: /kb/255/Q255198/
 
 ## Q255198: Cannot Change DCOM Call Timeouts in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q255198
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/255/Q255198/
 	
 	=============================================================================
 	
+
+{% endraw %}

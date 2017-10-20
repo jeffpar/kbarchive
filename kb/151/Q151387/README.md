@@ -6,6 +6,8 @@ permalink: /kb/151/Q151387/
 
 ## Q151387: WFWG 3.11 DHCP Client Does Not Release IP Address
 
+{% raw %}
+
 	Article: Q151387
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/151/Q151387/
 	
 	=============================================================================
 	
+
+{% endraw %}

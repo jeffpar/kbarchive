@@ -6,6 +6,8 @@ permalink: /kb/266/Q266530/
 
 ## Q266530: Encarta: How to Use the Repair Feature in Encarta
 
+{% raw %}
+
 	Article: Q266530
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -82,3 +84,5 @@ permalink: /kb/266/Q266530/
 	
 	=============================================================================
 	
+
+{% endraw %}

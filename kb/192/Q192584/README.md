@@ -6,6 +6,8 @@ permalink: /kb/192/Q192584/
 
 ## Q192584: Tutor: Online Registration Wizard Does Not Start
 
+{% raw %}
+
 	Article: Q192584
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/192/Q192584/
 	
 	=============================================================================
 	
+
+{% endraw %}

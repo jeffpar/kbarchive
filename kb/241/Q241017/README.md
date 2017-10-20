@@ -6,6 +6,8 @@ permalink: /kb/241/Q241017/
 
 ## Q241017: Analyzing Requirements and Defining Solution Architectures MCSD
 
+{% raw %}
+
 	Article: Q241017
 	Product(s): Microsoft Press
 	Version(s): 
@@ -152,3 +154,5 @@ permalink: /kb/241/Q241017/
 	
 	=============================================================================
 	
+
+{% endraw %}

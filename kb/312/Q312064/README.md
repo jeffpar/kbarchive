@@ -6,6 +6,8 @@ permalink: /kb/312/Q312064/
 
 ## Q312064: MapPoint 2002: Spatial Data Import COM Add-in Available
 
+{% raw %}
+
 	Article: Q312064
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/312/Q312064/
 	
 	=============================================================================
 	
+
+{% endraw %}

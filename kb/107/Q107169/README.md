@@ -6,6 +6,8 @@ permalink: /kb/107/Q107169/
 
 ## Q107169: GI_BOTADDR Documented Incorrectly
 
+{% raw %}
+
 	Article: Q107169
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0
@@ -36,3 +38,5 @@ permalink: /kb/107/Q107169/
 	
 	=============================================================================
 	
+
+{% endraw %}

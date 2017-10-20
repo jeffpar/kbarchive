@@ -6,6 +6,8 @@ permalink: /kb/138/Q138982/
 
 ## Q138982: 3D Movie Maker: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q138982
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -58,3 +60,5 @@ permalink: /kb/138/Q138982/
 	
 	=============================================================================
 	
+
+{% endraw %}

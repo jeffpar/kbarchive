@@ -6,6 +6,8 @@ permalink: /kb/159/Q159595/
 
 ## Q159595: Missing Uppercase &quot;A&quot; Character in the 1257 Font
 
+{% raw %}
+
 	Article: Q159595
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/159/Q159595/
 	
 	=============================================================================
 	
+
+{% endraw %}

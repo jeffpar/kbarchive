@@ -6,6 +6,8 @@ permalink: /kb/200/Q200834/
 
 ## Q200834: How to Use OSPF with RRAS Demand-Dial and VPN Connections
 
+{% raw %}
+
 	Article: Q200834
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -146,3 +148,5 @@ permalink: /kb/200/Q200834/
 	
 	=============================================================================
 	
+
+{% endraw %}

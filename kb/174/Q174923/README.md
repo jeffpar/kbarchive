@@ -6,6 +6,8 @@ permalink: /kb/174/Q174923/
 
 ## Q174923: HOWTO: Use the PostData Parameter in WebBrowser Control
 
+{% raw %}
+
 	Article: Q174923
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.0,3.0,3.01,3.02,4.0,4.01,5.0,6.0
@@ -106,3 +108,5 @@ permalink: /kb/174/Q174923/
 	
 	=============================================================================
 	
+
+{% endraw %}

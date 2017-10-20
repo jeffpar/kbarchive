@@ -6,6 +6,8 @@ permalink: /kb/037/Q37641/
 
 ## Q37641: Different OS/2 Libraries: DOSCALLS.LIB OS2.LIB API.LIB
 
+{% raw %}
+
 	Article: Q37641
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -31,3 +33,5 @@ permalink: /kb/037/Q37641/
 	
 	You can use OS2.LIB in place of DOSCALLS.LIB because it contains all
 	of the routines. Only use API.LIB if you are binding.
+
+{% endraw %}

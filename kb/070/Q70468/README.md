@@ -6,6 +6,8 @@ permalink: /kb/070/Q70468/
 
 ## Q70468: Incorrect Installation of Novell VPICDA.386 Patch
 
+{% raw %}
+
 	Article: Q70468
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -86,3 +88,5 @@ permalink: /kb/070/Q70468/
 	
 	=============================================================================
 	
+
+{% endraw %}

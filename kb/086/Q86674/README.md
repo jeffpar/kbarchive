@@ -6,6 +6,8 @@ permalink: /kb/086/Q86674/
 
 ## Q86674: Windows Err Msg: Standard-Mode Switcher Is Not Running
 
+{% raw %}
+
 	Article: Q86674
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -90,3 +92,5 @@ permalink: /kb/086/Q86674/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185657/
 
 ## Q185657: HOWTO: Utilize the Hyperlink Foundation Class
 
+{% raw %}
+
 	Article: Q185657
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -151,3 +153,5 @@ permalink: /kb/185/Q185657/
 	
 	=============================================================================
 	
+
+{% endraw %}

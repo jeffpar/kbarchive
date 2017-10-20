@@ -6,6 +6,8 @@ permalink: /kb/152/Q152986/
 
 ## Q152986: CSNW Does Not Report Directory Restrictions
 
+{% raw %}
+
 	Article: Q152986
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -77,3 +79,5 @@ permalink: /kb/152/Q152986/
 	
 	=============================================================================
 	
+
+{% endraw %}

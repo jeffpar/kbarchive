@@ -6,6 +6,8 @@ permalink: /kb/164/Q164502/
 
 ## Q164502: WD97: Some Files Remain After &quot;Remove All&quot;
 
+{% raw %}
+
 	Article: Q164502
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/164/Q164502/
 	
 	=============================================================================
 	
+
+{% endraw %}

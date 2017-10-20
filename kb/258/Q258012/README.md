@@ -6,6 +6,8 @@ permalink: /kb/258/Q258012/
 
 ## Q258012: FIX: Endless Reboot Downloading Internet Package Created by PDW
 
+{% raw %}
+
 	Article: Q258012
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -55,3 +57,5 @@ permalink: /kb/258/Q258012/
 	
 	=============================================================================
 	
+
+{% endraw %}

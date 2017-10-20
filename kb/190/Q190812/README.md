@@ -6,6 +6,8 @@ permalink: /kb/190/Q190812/
 
 ## Q190812: Briefcase Item Needs to Be Synchronized Twice
 
+{% raw %}
+
 	Article: Q190812
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/190/Q190812/
 	
 	=============================================================================
 	
+
+{% endraw %}

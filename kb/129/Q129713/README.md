@@ -6,6 +6,8 @@ permalink: /kb/129/Q129713/
 
 ## Q129713: SMTP: Err Msg: Error Translating Message to SMTP...
 
+{% raw %}
+
 	Article: Q129713
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/129/Q129713/
 	
 	=============================================================================
 	
+
+{% endraw %}

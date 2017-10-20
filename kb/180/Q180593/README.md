@@ -6,6 +6,8 @@ permalink: /kb/180/Q180593/
 
 ## Q180593: FIX: Cannot Rename Directory of a Closed Workspace
 
+{% raw %}
+
 	Article: Q180593
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,4.0a,4.1,4.2,4.2b,5.0,5.0sp1,5.0sp2,5.0sp3
@@ -78,3 +80,5 @@ permalink: /kb/180/Q180593/
 	
 	=============================================================================
 	
+
+{% endraw %}

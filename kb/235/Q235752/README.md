@@ -6,6 +6,8 @@ permalink: /kb/235/Q235752/
 
 ## Q235752: SMS: Prompted Queries May Return Bad Data and Hang MMC
 
+{% raw %}
+
 	Article: Q235752
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -62,3 +64,5 @@ permalink: /kb/235/Q235752/
 	
 	=============================================================================
 	
+
+{% endraw %}

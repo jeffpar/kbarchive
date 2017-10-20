@@ -6,6 +6,8 @@ permalink: /kb/149/Q149523/
 
 ## Q149523: Server Operators Cannot View Administrative Shares in NT
 
+{% raw %}
+
 	Article: Q149523
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -85,3 +87,5 @@ permalink: /kb/149/Q149523/
 	
 	=============================================================================
 	
+
+{% endraw %}

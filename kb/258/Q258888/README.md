@@ -6,6 +6,8 @@ permalink: /kb/258/Q258888/
 
 ## Q258888: PRB: Error When Query Builder Runs Parameterized Queries
 
+{% raw %}
+
 	Article: Q258888
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -98,3 +100,5 @@ permalink: /kb/258/Q258888/
 	
 	=============================================================================
 	
+
+{% endraw %}

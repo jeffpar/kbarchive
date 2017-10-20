@@ -6,6 +6,8 @@ permalink: /kb/160/Q160284/
 
 ## Q160284: XFOR: Messages to 246 Character Addresses Return with NDR
 
+{% raw %}
+
 	Article: Q160284
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/160/Q160284/
 	
 	=============================================================================
 	
+
+{% endraw %}

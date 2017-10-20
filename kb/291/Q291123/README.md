@@ -6,6 +6,8 @@ permalink: /kb/291/Q291123/
 
 ## Q291123: XFOR: Error Message When Installing the Internet Mail Service
 
+{% raw %}
+
 	Article: Q291123
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -68,3 +70,5 @@ permalink: /kb/291/Q291123/
 	
 	=============================================================================
 	
+
+{% endraw %}

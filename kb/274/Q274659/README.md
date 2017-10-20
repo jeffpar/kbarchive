@@ -6,6 +6,8 @@ permalink: /kb/274/Q274659/
 
 ## Q274659: Combat Flight Simulator 2: Screen Textures Are Distorted
 
+{% raw %}
+
 	Article: Q274659
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/274/Q274659/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317491/
 
 ## Q317491: FIX: Project.Files.Count Property Not Incremented Properly
 
+{% raw %}
+
 	Article: Q317491
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -109,3 +111,5 @@ permalink: /kb/317/Q317491/
 	
 	=============================================================================
 	
+
+{% endraw %}

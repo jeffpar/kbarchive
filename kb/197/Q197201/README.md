@@ -6,6 +6,8 @@ permalink: /kb/197/Q197201/
 
 ## Q197201: WD97: Setting Automatic Hyphenation as the Default
 
+{% raw %}
+
 	Article: Q197201
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/197/Q197201/
 	
 	=============================================================================
 	
+
+{% endraw %}

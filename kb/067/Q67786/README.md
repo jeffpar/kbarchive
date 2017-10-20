@@ -6,6 +6,8 @@ permalink: /kb/067/Q67786/
 
 ## Q67786: Code Generation Error with C 6.00 and Global Variables
 
+{% raw %}
+
 	Article: Q67786
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -68,3 +70,5 @@ permalink: /kb/067/Q67786/
 	buf = ...........[........
 	foo = 76
 	bar = 66
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96694/
 
 ## Q96694: PC Win: Mail for Windows MSSFS.DLL 3.2.0.4084 Update
 
+{% raw %}
+
 	Article: Q96694
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2,3.2a
@@ -263,3 +265,5 @@ permalink: /kb/096/Q96694/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132741/
 
 ## Q132741: Sun Exabyte 8500 Tape Device Requires Firmware Upgrade
 
+{% raw %}
+
 	Article: Q132741
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132741/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169687/
 
 ## Q169687: XCON: Some Extended Characters Not Correctly Translated
 
+{% raw %}
+
 	Article: Q169687
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -58,3 +60,5 @@ permalink: /kb/169/Q169687/
 	
 	=============================================================================
 	
+
+{% endraw %}

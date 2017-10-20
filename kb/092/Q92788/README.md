@@ -6,6 +6,8 @@ permalink: /kb/092/Q92788/
 
 ## Q92788: 3Com EtherLink III (3C509) in EISA Machines
 
+{% raw %}
+
 	Article: Q92788
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/092/Q92788/
 	
 	=============================================================================
 	
+
+{% endraw %}

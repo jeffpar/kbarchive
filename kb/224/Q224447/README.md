@@ -6,6 +6,8 @@ permalink: /kb/224/Q224447/
 
 ## Q224447: XADM: How to Change LDAP Port Assignments in Exchange Server
 
+{% raw %}
+
 	Article: Q224447
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -138,3 +140,5 @@ permalink: /kb/224/Q224447/
 	
 	=============================================================================
 	
+
+{% endraw %}

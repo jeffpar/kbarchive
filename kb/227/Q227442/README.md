@@ -6,6 +6,8 @@ permalink: /kb/227/Q227442/
 
 ## Q227442: FP98: Smudges on Images Pasted from Office Application
 
+{% raw %}
+
 	Article: Q227442
 	Product(s): Word Front Page
 	Version(s): WINDOWS:98
@@ -57,3 +59,5 @@ permalink: /kb/227/Q227442/
 	
 	=============================================================================
 	
+
+{% endraw %}

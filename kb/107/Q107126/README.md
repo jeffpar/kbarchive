@@ -6,6 +6,8 @@ permalink: /kb/107/Q107126/
 
 ## Q107126: Using SYS.COM After Stacker Version 3.1 Is Installed
 
+{% raw %}
+
 	Article: Q107126
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -73,3 +75,5 @@ permalink: /kb/107/Q107126/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130703/
 
 ## Q130703: PC MAPI: MAPILogon Can Only Be Called Once from an Application
 
+{% raw %}
+
 	Article: Q130703
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -51,3 +53,5 @@ permalink: /kb/130/Q130703/
 	
 	=============================================================================
 	
+
+{% endraw %}

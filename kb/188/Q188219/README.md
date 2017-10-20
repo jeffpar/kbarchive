@@ -6,6 +6,8 @@ permalink: /kb/188/Q188219/
 
 ## Q188219: Changes to ASP Files May Not Take Effect If Caching Is Disabled
 
+{% raw %}
+
 	Article: Q188219
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/188/Q188219/
 	
 	=============================================================================
 	
+
+{% endraw %}

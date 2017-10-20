@@ -6,6 +6,8 @@ permalink: /kb/110/Q110818/
 
 ## Q110818: Mac Adm: Failure to Insert User into Group with Long Name
 
+{% raw %}
+
 	Article: Q110818
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -52,3 +54,5 @@ permalink: /kb/110/Q110818/
 	
 	=============================================================================
 	
+
+{% endraw %}

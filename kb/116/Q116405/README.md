@@ -6,6 +6,8 @@ permalink: /kb/116/Q116405/
 
 ## Q116405: STOP Message: 0xC000021A During Logon Because of Bad PATH
 
+{% raw %}
+
 	Article: Q116405
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -65,3 +67,5 @@ permalink: /kb/116/Q116405/
 	
 	=============================================================================
 	
+
+{% endraw %}

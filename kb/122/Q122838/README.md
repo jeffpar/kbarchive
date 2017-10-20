@@ -6,6 +6,8 @@ permalink: /kb/122/Q122838/
 
 ## Q122838: Memory Leak in LMREPL Service
 
+{% raw %}
+
 	Article: Q122838
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/122/Q122838/
 	
 	=============================================================================
 	
+
+{% endraw %}

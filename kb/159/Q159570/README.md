@@ -6,6 +6,8 @@ permalink: /kb/159/Q159570/
 
 ## Q159570: INF: Access ODBC Driver Is Double-Byte Enabled
 
+{% raw %}
+
 	Article: Q159570
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5,3.4
@@ -33,3 +35,5 @@ permalink: /kb/159/Q159570/
 	
 	=============================================================================
 	
+
+{% endraw %}

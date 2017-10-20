@@ -6,6 +6,8 @@ permalink: /kb/118/Q118424/
 
 ## Q118424: Schedule+ Err Msg: Mailbox Name or Password Is Incorrect...
 
+{% raw %}
+
 	Article: Q118424
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/118/Q118424/
 	
 	=============================================================================
 	
+
+{% endraw %}

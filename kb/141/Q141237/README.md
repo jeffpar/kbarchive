@@ -6,6 +6,8 @@ permalink: /kb/141/Q141237/
 
 ## Q141237: Site Configuration Manager Does Not Start After System Reboot
 
+{% raw %}
+
 	Article: Q141237
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -73,3 +75,5 @@ permalink: /kb/141/Q141237/
 	
 	=============================================================================
 	
+
+{% endraw %}

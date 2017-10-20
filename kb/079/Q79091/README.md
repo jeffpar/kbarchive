@@ -6,6 +6,8 @@ permalink: /kb/079/Q79091/
 
 ## Q79091: Windows May Not Load on AEG Olympia LT 386sx Laptop
 
+{% raw %}
+
 	Article: Q79091
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/079/Q79091/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88190/
 
 ## Q88190: PRB: DLL System Hook Function Not Affecting Apps System-Wide
 
+{% raw %}
+
 	Article: Q88190
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -75,3 +77,5 @@ permalink: /kb/088/Q88190/
 	
 	=============================================================================
 	
+
+{% endraw %}

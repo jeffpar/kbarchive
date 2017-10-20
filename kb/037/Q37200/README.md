@@ -6,6 +6,8 @@ permalink: /kb/037/Q37200/
 
 ## Q37200: Redirection with spawn() or exec()
 
+{% raw %}
+
 	Article: Q37200
 	Product(s): See article
 	Version(s): 5.10
@@ -54,3 +56,5 @@ permalink: /kb/037/Q37200/
 	It is possible to use freopen() to redefine STDIN and STDOUT; however,
 	doing so causes any redirection that may have been performed on the
 	parent process to be lost.
+
+{% endraw %}

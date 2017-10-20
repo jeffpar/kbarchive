@@ -6,6 +6,8 @@ permalink: /kb/154/Q154045/
 
 ## Q154045: INFO: Setup Cannot Access the Source File ..&#92;include&#92;ALGORITHM
 
+{% raw %}
+
 	Article: Q154045
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.2;
@@ -77,3 +79,5 @@ permalink: /kb/154/Q154045/
 	
 	=============================================================================
 	
+
+{% endraw %}

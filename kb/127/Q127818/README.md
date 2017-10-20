@@ -6,6 +6,8 @@ permalink: /kb/127/Q127818/
 
 ## Q127818: Clients Fail to Connect to Windows NT Server
 
+{% raw %}
+
 	Article: Q127818
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/127/Q127818/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244829/
 
 ## Q244829: FS2000: Adventures and Lessons Are Not Available
 
+{% raw %}
+
 	Article: Q244829
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/244/Q244829/
 	
 	=============================================================================
 	
+
+{% endraw %}

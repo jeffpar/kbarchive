@@ -6,6 +6,8 @@ permalink: /kb/197/Q197494/
 
 ## Q197494: XADM: Outlook Client May Error When Updating Free and Busy
 
+{% raw %}
+
 	Article: Q197494
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -130,3 +132,5 @@ permalink: /kb/197/Q197494/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157712/
 
 ## Q157712: XFOR: Lowercase Address Types in Dir-Sync with Exchange
 
+{% raw %}
+
 	Article: Q157712
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/157/Q157712/
 	
 	=============================================================================
 	
+
+{% endraw %}

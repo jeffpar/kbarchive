@@ -6,6 +6,8 @@ permalink: /kb/285/Q285821/
 
 ## Q285821: Browser Connections Appear to Stop Responding When Accessing IIS
 
+{% raw %}
+
 	Article: Q285821
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -144,3 +146,5 @@ permalink: /kb/285/Q285821/
 	
 	=============================================================================
 	
+
+{% endraw %}

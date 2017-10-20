@@ -6,6 +6,8 @@ permalink: /kb/265/Q265268/
 
 ## Q265268: PRB: MSDN Library Unable to Find Migrated Favorites
 
+{% raw %}
+
 	Article: Q265268
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/265/Q265268/
 	
 	=============================================================================
 	
+
+{% endraw %}

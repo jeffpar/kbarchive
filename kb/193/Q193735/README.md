@@ -6,6 +6,8 @@ permalink: /kb/193/Q193735/
 
 ## Q193735: XFOR: Dates Incorrect After Migrating cc:Mail DB6 Bulletin Board
 
+{% raw %}
+
 	Article: Q193735
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -104,3 +106,5 @@ permalink: /kb/193/Q193735/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140333/
 
 ## Q140333: HOWTO: Add an Object to the New Object List
 
+{% raw %}
+
 	Article: Q140333
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -102,3 +104,5 @@ permalink: /kb/140/Q140333/
 	
 	=============================================================================
 	
+
+{% endraw %}

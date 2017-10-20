@@ -6,6 +6,8 @@ permalink: /kb/234/Q234380/
 
 ## Q234380: XFOR: GroupWise Attached Object Does Not Appear in Exchange
 
+{% raw %}
+
 	Article: Q234380
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/234/Q234380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96555/
 
 ## Q96555: INTERLNK.EXE Doesn't Work with Xircom PPX and Pocket Adapter
 
+{% raw %}
+
 	Article: Q96555
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/096/Q96555/
 	
 	=============================================================================
 	
+
+{% endraw %}

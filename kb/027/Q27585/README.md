@@ -6,6 +6,8 @@ permalink: /kb/027/Q27585/
 
 ## Q27585: INFO: Specifying Windows &quot;Bounding Box&quot; Coordinates
 
+{% raw %}
+
 	Article: Q27585
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/027/Q27585/
 	
 	=============================================================================
 	
+
+{% endraw %}

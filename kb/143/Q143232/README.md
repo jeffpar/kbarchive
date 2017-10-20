@@ -6,6 +6,8 @@ permalink: /kb/143/Q143232/
 
 ## Q143232: 3D Movie Maker: MIDI Does Not Work Properly with SB AWE 32
 
+{% raw %}
+
 	Article: Q143232
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -134,3 +136,5 @@ permalink: /kb/143/Q143232/
 	
 	=============================================================================
 	
+
+{% endraw %}

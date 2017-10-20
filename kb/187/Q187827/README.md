@@ -6,6 +6,8 @@ permalink: /kb/187/Q187827/
 
 ## Q187827: SNA Print to File Results in File Size of Zero KB
 
+{% raw %}
+
 	Article: Q187827
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -64,3 +66,5 @@ permalink: /kb/187/Q187827/
 	
 	=============================================================================
 	
+
+{% endraw %}

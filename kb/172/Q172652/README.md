@@ -6,6 +6,8 @@ permalink: /kb/172/Q172652/
 
 ## Q172652: Computer with USB Devices Hangs
 
+{% raw %}
+
 	Article: Q172652
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -111,3 +113,5 @@ permalink: /kb/172/Q172652/
 	
 	=============================================================================
 	
+
+{% endraw %}

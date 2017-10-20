@@ -6,6 +6,8 @@ permalink: /kb/097/Q97934/
 
 ## Q97934: PC WFW: 3.0 Schedule+ for Windows Disk 4 &#91;5.25, 1.2 MB)
 
+{% raw %}
+
 	Article: Q97934
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -48,3 +50,5 @@ permalink: /kb/097/Q97934/
 	
 	=============================================================================
 	
+
+{% endraw %}

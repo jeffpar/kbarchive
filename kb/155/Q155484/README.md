@@ -6,6 +6,8 @@ permalink: /kb/155/Q155484/
 
 ## Q155484: PowerPoint Custom Object Fills and Word's Picture Editor
 
+{% raw %}
+
 	Article: Q155484
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155484/
 	
 	=============================================================================
 	
+
+{% endraw %}

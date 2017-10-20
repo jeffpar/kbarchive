@@ -6,6 +6,8 @@ permalink: /kb/177/Q177874/
 
 ## Q177874: Age of Empires: Contents of the Strattyp.doc File
 
+{% raw %}
+
 	Article: Q177874
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -271,3 +273,5 @@ permalink: /kb/177/Q177874/
 	
 	=============================================================================
 	
+
+{% endraw %}

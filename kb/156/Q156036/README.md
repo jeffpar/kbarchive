@@ -6,6 +6,8 @@ permalink: /kb/156/Q156036/
 
 ## Q156036: HOWTO: Use the Visual FoxPro Solutions Application
 
+{% raw %}
+
 	Article: Q156036
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/156/Q156036/
 	
 	=============================================================================
 	
+
+{% endraw %}

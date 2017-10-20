@@ -6,6 +6,8 @@ permalink: /kb/194/Q194873/
 
 ## Q194873: HOWTO: Access a Visual Basic ActiveX DLL from Visual C++
 
+{% raw %}
+
 	Article: Q194873
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -256,3 +258,5 @@ permalink: /kb/194/Q194873/
 	
 	=============================================================================
 	
+
+{% endraw %}

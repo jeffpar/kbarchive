@@ -6,6 +6,8 @@ permalink: /kb/194/Q194919/
 
 ## Q194919: Windows NT Boot Process Hangs Because of DST Manipulation
 
+{% raw %}
+
 	Article: Q194919
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194919/
 	
 	=============================================================================
 	
+
+{% endraw %}

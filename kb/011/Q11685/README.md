@@ -6,6 +6,8 @@ permalink: /kb/011/Q11685/
 
 ## Q11685: PRB: MAPSYM 3.10 Truncating Line-Number Information
 
+{% raw %}
+
 	Article: Q11685
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/011/Q11685/
 	
 	=============================================================================
 	
+
+{% endraw %}

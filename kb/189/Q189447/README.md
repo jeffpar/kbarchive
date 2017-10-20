@@ -6,6 +6,8 @@ permalink: /kb/189/Q189447/
 
 ## Q189447: Virtual Globe 98: How to Submit Comments on Geographical Errors
 
+{% raw %}
+
 	Article: Q189447
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/189/Q189447/
 	
 	=============================================================================
 	
+
+{% endraw %}

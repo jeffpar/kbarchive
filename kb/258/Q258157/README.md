@@ -6,6 +6,8 @@ permalink: /kb/258/Q258157/
 
 ## Q258157: HOWTO: Deploy the SQL Distributed Management Objects w/ the PDW
 
+{% raw %}
+
 	Article: Q258157
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,5.0 SP1,5.0 SP2,5.0 SP3,6.0,6.0 SP3
@@ -126,3 +128,5 @@ permalink: /kb/258/Q258157/
 	
 	=============================================================================
 	
+
+{% endraw %}

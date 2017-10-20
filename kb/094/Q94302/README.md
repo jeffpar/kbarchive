@@ -6,6 +6,8 @@ permalink: /kb/094/Q94302/
 
 ## Q94302: WFWG May Hang if InDOSPolling=Yes with an Intel EtherExpress
 
+{% raw %}
+
 	Article: Q94302
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/094/Q94302/
 	
 	=============================================================================
 	
+
+{% endraw %}

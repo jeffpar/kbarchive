@@ -6,6 +6,8 @@ permalink: /kb/096/Q96954/
 
 ## Q96954: NET START NETBEUI/BASIC/FULL/WORKSTATION/REDIR/LIST
 
+{% raw %}
+
 	Article: Q96954
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -118,3 +120,5 @@ permalink: /kb/096/Q96954/
 	
 	=============================================================================
 	
+
+{% endraw %}

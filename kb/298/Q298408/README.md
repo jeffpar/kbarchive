@@ -6,6 +6,8 @@ permalink: /kb/298/Q298408/
 
 ## Q298408: IIS Redirects When Folder Without Trailing Slash Is Requested
 
+{% raw %}
+
 	Article: Q298408
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/298/Q298408/
 	
 	=============================================================================
 	
+
+{% endraw %}

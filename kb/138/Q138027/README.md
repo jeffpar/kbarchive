@@ -6,6 +6,8 @@ permalink: /kb/138/Q138027/
 
 ## Q138027: PPT: Movies Do Not Play When Moved Cross-Platform
 
+{% raw %}
+
 	Article: Q138027
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,4.0a,4.0c,7.0
@@ -195,3 +197,5 @@ permalink: /kb/138/Q138027/
 	
 	=============================================================================
 	
+
+{% endraw %}

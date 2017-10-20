@@ -6,6 +6,8 @@ permalink: /kb/185/Q185593/
 
 ## Q185593: XFOR: Blank Firstname, Lastname Fields with cc:Mail Dirsync
 
+{% raw %}
+
 	Article: Q185593
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/185/Q185593/
 	
 	=============================================================================
 	
+
+{% endraw %}

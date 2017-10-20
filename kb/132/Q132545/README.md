@@ -6,6 +6,8 @@ permalink: /kb/132/Q132545/
 
 ## Q132545: Windows NT 3.51 Step Up Installation
 
+{% raw %}
+
 	Article: Q132545
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -93,3 +95,5 @@ permalink: /kb/132/Q132545/
 	
 	=============================================================================
 	
+
+{% endraw %}

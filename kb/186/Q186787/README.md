@@ -6,6 +6,8 @@ permalink: /kb/186/Q186787/
 
 ## Q186787: XADM: The Extension 'SMTP' Could Not Be Loaded
 
+{% raw %}
+
 	Article: Q186787
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -109,3 +111,5 @@ permalink: /kb/186/Q186787/
 	
 	=============================================================================
 	
+
+{% endraw %}

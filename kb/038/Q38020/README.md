@@ -6,6 +6,8 @@ permalink: /kb/038/Q38020/
 
 ## Q38020: CVPACK /p Causes a More Complete Packing
 
+{% raw %}
+
 	Article: Q38020
 	Product(s): See article
 	Version(s): 2.20
@@ -26,3 +28,5 @@ permalink: /kb/038/Q38020/
 	it to the file. With the /p option, CVPACK discards the unused
 	debugging information, then proceeds to sort it throughout the
 	executable file.
+
+{% endraw %}

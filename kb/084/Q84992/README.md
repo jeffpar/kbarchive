@@ -6,6 +6,8 @@ permalink: /kb/084/Q84992/
 
 ## Q84992: UMBFILES.COM and Windows Err Msg: Unsupported MS-DOS Version
 
+{% raw %}
+
 	Article: Q84992
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/084/Q84992/
 	
 	=============================================================================
 	
+
+{% endraw %}

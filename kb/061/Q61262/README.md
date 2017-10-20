@@ -6,6 +6,8 @@ permalink: /kb/061/Q61262/
 
 ## Q61262: argv
 
+{% raw %}
+
 	Article: Q61262
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -38,3 +40,5 @@ permalink: /kb/061/Q61262/
 	These variations are not attributable to the C version 6.00 run-time
 	functions; they merely reflect what is passed to the program at run
 	time by the operating system.
+
+{% endraw %}

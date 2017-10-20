@@ -6,6 +6,8 @@ permalink: /kb/129/Q129697/
 
 ## Q129697: Unattended Upgrade Using SETUPMGR and TCP/IP Protocol Stops
 
+{% raw %}
+
 	Article: Q129697
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -69,3 +71,5 @@ permalink: /kb/129/Q129697/
 	
 	=============================================================================
 	
+
+{% endraw %}

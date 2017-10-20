@@ -6,6 +6,8 @@ permalink: /kb/172/Q172600/
 
 ## Q172600: Error 234 in Showmbrs.exe
 
+{% raw %}
+
 	Article: Q172600
 	Product(s): Microsoft Press
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/172/Q172600/
 	
 	=============================================================================
 	
+
+{% endraw %}

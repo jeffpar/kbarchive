@@ -6,6 +6,8 @@ permalink: /kb/294/Q294443/
 
 ## Q294443: XCLN:  How to Add Exchange 5.0 Client as Default E-mail Program
 
+{% raw %}
+
 	Article: Q294443
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -119,3 +121,5 @@ permalink: /kb/294/Q294443/
 	
 	=============================================================================
 	
+
+{% endraw %}

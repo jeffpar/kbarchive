@@ -6,6 +6,8 @@ permalink: /kb/142/Q142108/
 
 ## Q142108: 3D Movie Maker: Animation Stops While Credits Box Scrolls
 
+{% raw %}
+
 	Article: Q142108
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/142/Q142108/
 	
 	=============================================================================
 	
+
+{% endraw %}

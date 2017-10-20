@@ -6,6 +6,8 @@ permalink: /kb/257/Q257171/
 
 ## Q257171: BUG: Double Brackets in SQL Statement with MFC May Cause Error
 
+{% raw %}
+
 	Article: Q257171
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -112,3 +114,5 @@ permalink: /kb/257/Q257171/
 	
 	=============================================================================
 	
+
+{% endraw %}

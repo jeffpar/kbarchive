@@ -6,6 +6,8 @@ permalink: /kb/148/Q148645/
 
 ## Q148645: XADM: Err Msg: Operation Terminated with Error -1032
 
+{% raw %}
+
 	Article: Q148645
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/148/Q148645/
 	
 	=============================================================================
 	
+
+{% endraw %}

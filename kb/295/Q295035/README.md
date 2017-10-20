@@ -6,6 +6,8 @@ permalink: /kb/295/Q295035/
 
 ## Q295035: SMS: Charting in Web Reporting Tool Requires Office Run Locally
 
+{% raw %}
+
 	Article: Q295035
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -61,3 +63,5 @@ permalink: /kb/295/Q295035/
 	
 	=============================================================================
 	
+
+{% endraw %}

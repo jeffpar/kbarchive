@@ -6,6 +6,8 @@ permalink: /kb/249/Q249643/
 
 ## Q249643: AoE II: Disband and Wheel Commands Are Not Available
 
+{% raw %}
+
 	Article: Q249643
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -36,3 +38,5 @@ permalink: /kb/249/Q249643/
 	
 	=============================================================================
 	
+
+{% endraw %}

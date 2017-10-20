@@ -6,6 +6,8 @@ permalink: /kb/099/Q99034/
 
 ## Q99034: SONET Signal Rates
 
+{% raw %}
+
 	Article: Q99034
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/099/Q99034/
 	
 	=============================================================================
 	
+
+{% endraw %}

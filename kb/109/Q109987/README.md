@@ -6,6 +6,8 @@ permalink: /kb/109/Q109987/
 
 ## Q109987: PROFS: Err Msg: IN_FORM ID Gets Out of Sequence Error
 
+{% raw %}
+
 	Article: Q109987
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4
@@ -69,3 +71,5 @@ permalink: /kb/109/Q109987/
 	
 	=============================================================================
 	
+
+{% endraw %}

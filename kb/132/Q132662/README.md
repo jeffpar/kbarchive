@@ -6,6 +6,8 @@ permalink: /kb/132/Q132662/
 
 ## Q132662: Cannot Copy Mail with Long Title to Desktop
 
+{% raw %}
+
 	Article: Q132662
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -46,3 +48,5 @@ permalink: /kb/132/Q132662/
 	
 	=============================================================================
 	
+
+{% endraw %}

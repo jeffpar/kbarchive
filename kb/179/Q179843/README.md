@@ -6,6 +6,8 @@ permalink: /kb/179/Q179843/
 
 ## Q179843: OFF97: Compile Error Using the Visible Property of UserForms
 
+{% raw %}
+
 	Article: Q179843
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -138,3 +140,5 @@ permalink: /kb/179/Q179843/
 	
 	=============================================================================
 	
+
+{% endraw %}

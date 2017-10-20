@@ -6,6 +6,8 @@ permalink: /kb/059/Q59727/
 
 ## Q59727: Legal Data Delimiters When Using INPUT #n Statement
 
+{% raw %}
+
 	Article: Q59727
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -141,3 +143,5 @@ permalink: /kb/059/Q59727/
 	 INPUT "Press 'q' to quit.  Press 'c' to continue==> ", start$
 	WEND
 	END
+
+{% endraw %}

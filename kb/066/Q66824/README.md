@@ -6,6 +6,8 @@ permalink: /kb/066/Q66824/
 
 ## Q66824: Flight Simulator: Score Window Disappears in Crop Duster Mode
 
+{% raw %}
+
 	Article: Q66824
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/066/Q66824/
 	
 	=============================================================================
 	
+
+{% endraw %}

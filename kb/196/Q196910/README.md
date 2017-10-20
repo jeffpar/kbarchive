@@ -6,6 +6,8 @@ permalink: /kb/196/Q196910/
 
 ## Q196910: HOWTO: Avoid Extra Threads with Depersisted Embedded Objects
 
+{% raw %}
+
 	Article: Q196910
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -320,3 +322,5 @@ permalink: /kb/196/Q196910/
 	
 	=============================================================================
 	
+
+{% endraw %}

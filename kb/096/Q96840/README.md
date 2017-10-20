@@ -6,6 +6,8 @@ permalink: /kb/096/Q96840/
 
 ## Q96840: Mac Wkst: Sent Mail Folder Not Available
 
+{% raw %}
+
 	Article: Q96840
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1,3.1a
@@ -55,3 +57,5 @@ permalink: /kb/096/Q96840/
 	
 	=============================================================================
 	
+
+{% endraw %}

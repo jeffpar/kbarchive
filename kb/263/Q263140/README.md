@@ -6,6 +6,8 @@ permalink: /kb/263/Q263140/
 
 ## Q263140: Anonymous and Basic Authentication Fail When Connecting to IIS 5
 
+{% raw %}
+
 	Article: Q263140
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -120,3 +122,5 @@ permalink: /kb/263/Q263140/
 	
 	=============================================================================
 	
+
+{% endraw %}

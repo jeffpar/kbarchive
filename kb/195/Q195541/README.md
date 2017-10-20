@@ -6,6 +6,8 @@ permalink: /kb/195/Q195541/
 
 ## Q195541: Large Number of Mounts/Dismounts on NTFS Causes Memory Leak
 
+{% raw %}
+
 	Article: Q195541
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -89,3 +91,5 @@ permalink: /kb/195/Q195541/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149687/
 
 ## Q149687: MSN Error Message: The MAPI Spooler Has Unexpectedly Exited
 
+{% raw %}
+
 	Article: Q149687
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,95
@@ -61,3 +63,5 @@ permalink: /kb/149/Q149687/
 	
 	=============================================================================
 	
+
+{% endraw %}

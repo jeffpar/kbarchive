@@ -6,6 +6,8 @@ permalink: /kb/234/Q234339/
 
 ## Q234339: Volume Lock Request Does Not Release Volume After File Operation
 
+{% raw %}
+
 	Article: Q234339
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -119,3 +121,5 @@ permalink: /kb/234/Q234339/
 	
 	=============================================================================
 	
+
+{% endraw %}

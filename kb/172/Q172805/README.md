@@ -6,6 +6,8 @@ permalink: /kb/172/Q172805/
 
 ## Q172805: Access Violations in Rasphone.exe When Attempting RAS Connection
 
+{% raw %}
+
 	Article: Q172805
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/172/Q172805/
 	
 	=============================================================================
 	
+
+{% endraw %}

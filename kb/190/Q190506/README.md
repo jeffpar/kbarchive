@@ -6,6 +6,8 @@ permalink: /kb/190/Q190506/
 
 ## Q190506: WINS Replication Problem Events 4262, 4261, and 1c Replication
 
+{% raw %}
+
 	Article: Q190506
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -124,3 +126,5 @@ permalink: /kb/190/Q190506/
 	
 	=============================================================================
 	
+
+{% endraw %}

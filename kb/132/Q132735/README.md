@@ -6,6 +6,8 @@ permalink: /kb/132/Q132735/
 
 ## Q132735: The Microsoft Network Questions and Answers
 
+{% raw %}
+
 	Article: Q132735
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -152,3 +154,5 @@ permalink: /kb/132/Q132735/
 	
 	=============================================================================
 	
+
+{% endraw %}

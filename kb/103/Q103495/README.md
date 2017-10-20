@@ -6,6 +6,8 @@ permalink: /kb/103/Q103495/
 
 ## Q103495: Modifying USERDEF Hive So That New Users Get Defined Settings
 
+{% raw %}
+
 	Article: Q103495
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -71,3 +73,5 @@ permalink: /kb/103/Q103495/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166520/
 
 ## Q166520: XADM: Admin Incorrectly Creates an MS Mail Connector Mailbox
 
+{% raw %}
+
 	Article: Q166520
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -136,3 +138,5 @@ permalink: /kb/166/Q166520/
 	
 	=============================================================================
 	
+
+{% endraw %}

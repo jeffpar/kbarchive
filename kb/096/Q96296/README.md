@@ -6,6 +6,8 @@ permalink: /kb/096/Q96296/
 
 ## Q96296: FoxBASE+ User's Guide Incorrectly States Limit of Element
 
+{% raw %}
+
 	Article: Q96296
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -34,3 +36,5 @@ permalink: /kb/096/Q96296/
 	
 	=============================================================================
 	
+
+{% endraw %}

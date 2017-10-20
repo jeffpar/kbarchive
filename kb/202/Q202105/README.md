@@ -6,6 +6,8 @@ permalink: /kb/202/Q202105/
 
 ## Q202105: XFOR: Accept/Decline Message ID Mismatch on a Meeting Invitatio
 
+{% raw %}
+
 	Article: Q202105
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/202/Q202105/
 	
 	=============================================================================
 	
+
+{% endraw %}

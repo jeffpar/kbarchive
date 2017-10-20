@@ -6,6 +6,8 @@ permalink: /kb/135/Q135233/
 
 ## Q135233: CONN: Connection Downstream Component Can Be Created Manually
 
+{% raw %}
+
 	Article: Q135233
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135233/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163641/
 
 ## Q163641: PPT: Cannot Create EPS File Using Windows NT PostScript Driver
 
+{% raw %}
+
 	Article: Q163641
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0; winnt:3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/163/Q163641/
 	
 	=============================================================================
 	
+
+{% endraw %}

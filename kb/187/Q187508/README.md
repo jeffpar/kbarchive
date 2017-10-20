@@ -6,6 +6,8 @@ permalink: /kb/187/Q187508/
 
 ## Q187508: FTP Server Fails to Respond If First Binding Does Not Work
 
+{% raw %}
+
 	Article: Q187508
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.0,4.0
@@ -75,3 +77,5 @@ permalink: /kb/187/Q187508/
 	
 	=============================================================================
 	
+
+{% endraw %}

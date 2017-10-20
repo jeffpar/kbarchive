@@ -6,6 +6,8 @@ permalink: /kb/161/Q161313/
 
 ## Q161313: Msbatch.inf Parameters: Setting Up the Paging File
 
+{% raw %}
+
 	Article: Q161313
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/161/Q161313/
 	
 	=============================================================================
 	
+
+{% endraw %}

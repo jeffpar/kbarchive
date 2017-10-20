@@ -6,6 +6,8 @@ permalink: /kb/066/Q66309/
 
 ## Q66309: FIX: PWB May Exit to MS-DOS If TMP Is Set Incorrectly
 
+{% raw %}
+
 	Article: Q66309
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1
@@ -61,3 +63,5 @@ permalink: /kb/066/Q66309/
 	
 	=============================================================================
 	
+
+{% endraw %}

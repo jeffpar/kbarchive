@@ -6,6 +6,8 @@ permalink: /kb/218/Q218877/
 
 ## Q218877: Mfc40.dll Causes Programs to Display Wrong Date After 01/01/2000
 
+{% raw %}
+
 	Article: Q218877
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/218/Q218877/
 	
 	=============================================================================
 	
+
+{% endraw %}

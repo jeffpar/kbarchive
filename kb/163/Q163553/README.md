@@ -6,6 +6,8 @@ permalink: /kb/163/Q163553/
 
 ## Q163553: Error Message: Error Initializing the Cache
 
+{% raw %}
+
 	Article: Q163553
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -76,3 +78,5 @@ permalink: /kb/163/Q163553/
 	
 	=============================================================================
 	
+
+{% endraw %}

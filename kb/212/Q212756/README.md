@@ -6,6 +6,8 @@ permalink: /kb/212/Q212756/
 
 ## Q212756: PC DB: Non-Delivery Report &quot;Recipient's Inbox Does Not Exist or
 
+{% raw %}
+
 	Article: Q212756
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -81,3 +83,5 @@ permalink: /kb/212/Q212756/
 	
 	=============================================================================
 	
+
+{% endraw %}

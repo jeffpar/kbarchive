@@ -6,6 +6,8 @@ permalink: /kb/114/Q114945/
 
 ## Q114945: Sytos Fails Adding Volumes with Enhanced-mode 1742 Controller
 
+{% raw %}
+
 	Article: Q114945
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/114/Q114945/
 	
 	=============================================================================
 	
+
+{% endraw %}

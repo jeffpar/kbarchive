@@ -6,6 +6,8 @@ permalink: /kb/042/Q42946/
 
 ## Q42946: Wrong Mouse Cursor Position Using Menus on PS/2 Model 25 or 30
 
+{% raw %}
+
 	Article: Q42946
 	Product(s): See article
 	Version(s): 4.50
@@ -35,3 +37,5 @@ permalink: /kb/042/Q42946/
 	that comes with Microsoft BASIC PDS version 7.00 (buglist7.00). We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

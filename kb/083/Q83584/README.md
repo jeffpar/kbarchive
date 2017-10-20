@@ -6,6 +6,8 @@ permalink: /kb/083/Q83584/
 
 ## Q83584: Madison Avenue Requires DMABufferSize=64 Setting
 
+{% raw %}
+
 	Article: Q83584
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/083/Q83584/
 	
 	=============================================================================
 	
+
+{% endraw %}

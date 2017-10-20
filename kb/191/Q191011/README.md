@@ -6,6 +6,8 @@ permalink: /kb/191/Q191011/
 
 ## Q191011: How To Create a Log File of Created Named Objects
 
+{% raw %}
+
 	Article: Q191011
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -111,3 +113,5 @@ permalink: /kb/191/Q191011/
 	
 	=============================================================================
 	
+
+{% endraw %}

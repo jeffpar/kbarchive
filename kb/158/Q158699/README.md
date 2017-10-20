@@ -6,6 +6,8 @@ permalink: /kb/158/Q158699/
 
 ## Q158699: XGEN: README.TXT: Microsoft Exchange 4.0 U.S. Service Pack 4
 
+{% raw %}
+
 	Article: Q158699
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -686,3 +688,5 @@ permalink: /kb/158/Q158699/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152698/
 
 ## Q152698: Paul Bunyan: The Story of Paul Bunyan
 
+{% raw %}
+
 	Article: Q152698
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -447,3 +449,5 @@ permalink: /kb/152/Q152698/
 	
 	=============================================================================
 	
+
+{% endraw %}

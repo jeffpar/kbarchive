@@ -6,6 +6,8 @@ permalink: /kb/200/Q200770/
 
 ## Q200770: TCP/IP Connection Attempts Take Longer to Time Out
 
+{% raw %}
+
 	Article: Q200770
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -122,3 +124,5 @@ permalink: /kb/200/Q200770/
 	
 	=============================================================================
 	
+
+{% endraw %}

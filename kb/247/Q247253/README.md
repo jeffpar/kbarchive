@@ -6,6 +6,8 @@ permalink: /kb/247/Q247253/
 
 ## Q247253: PRB: Using Lower Case Table Names Exporting Access 2000 Table
 
+{% raw %}
+
 	Article: Q247253
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.6,2.7,Build 2.573.4403,Build 2.573.6526,Build 2.573.7713.2
@@ -92,3 +94,5 @@ permalink: /kb/247/Q247253/
 	
 	=============================================================================
 	
+
+{% endraw %}

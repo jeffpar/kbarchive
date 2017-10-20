@@ -6,6 +6,8 @@ permalink: /kb/096/Q96391/
 
 ## Q96391: DoubleSpace Estimated &amp; Actual Compression Ratios
 
+{% raw %}
+
 	Article: Q96391
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:95
@@ -120,3 +122,5 @@ permalink: /kb/096/Q96391/
 	
 	=============================================================================
 	
+
+{% endraw %}

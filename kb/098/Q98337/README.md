@@ -6,6 +6,8 @@ permalink: /kb/098/Q98337/
 
 ## Q98337: PC Win: 3.0b Windows Client Disk 3 &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q98337
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -53,3 +55,5 @@ permalink: /kb/098/Q98337/
 	
 	=============================================================================
 	
+
+{% endraw %}

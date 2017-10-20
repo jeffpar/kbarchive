@@ -6,6 +6,8 @@ permalink: /kb/164/Q164649/
 
 ## Q164649: SNA Server Rejects Open (SSCP) for Pooled LU
 
+{% raw %}
+
 	Article: Q164649
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0
@@ -64,3 +66,5 @@ permalink: /kb/164/Q164649/
 	
 	=============================================================================
 	
+
+{% endraw %}

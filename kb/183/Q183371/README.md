@@ -6,6 +6,8 @@ permalink: /kb/183/Q183371/
 
 ## Q183371: Jumpmenu.htm Returns JavaScript Error
 
+{% raw %}
+
 	Article: Q183371
 	Product(s): Microsoft Press
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/183/Q183371/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256575/
 
 ## Q256575: ClipBook Viewer Prompts for Network Access Password
 
+{% raw %}
+
 	Article: Q256575
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/256/Q256575/
 	
 	=============================================================================
 	
+
+{% endraw %}

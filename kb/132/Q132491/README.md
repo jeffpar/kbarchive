@@ -6,6 +6,8 @@ permalink: /kb/132/Q132491/
 
 ## Q132491: FAX: Fax Gateway Stops with Corrupt RRS.FAX
 
+{% raw %}
+
 	Article: Q132491
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0.1
@@ -114,3 +116,5 @@ permalink: /kb/132/Q132491/
 	
 	=============================================================================
 	
+
+{% endraw %}

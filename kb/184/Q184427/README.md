@@ -6,6 +6,8 @@ permalink: /kb/184/Q184427/
 
 ## Q184427: Installing MSN Removes the Outlook 98 Desktop Icon
 
+{% raw %}
+
 	Article: Q184427
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -50,3 +52,5 @@ permalink: /kb/184/Q184427/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244232/
 
 ## Q244232: HOWTO:Add Context Help (? Button) to Title Bar of CPropertySheet
 
+{% raw %}
+
 	Article: Q244232
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/244/Q244232/
 	
 	=============================================================================
 	
+
+{% endraw %}

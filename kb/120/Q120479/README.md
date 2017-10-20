@@ -6,6 +6,8 @@ permalink: /kb/120/Q120479/
 
 ## Q120479: Encarta Err Msg: Invalid MindMaze Game File
 
+{% raw %}
+
 	Article: Q120479
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition
@@ -51,3 +53,5 @@ permalink: /kb/120/Q120479/
 	
 	=============================================================================
 	
+
+{% endraw %}

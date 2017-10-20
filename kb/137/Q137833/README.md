@@ -6,6 +6,8 @@ permalink: /kb/137/Q137833/
 
 ## Q137833: Error Occurs When Attempting to Remove an Autorun Program
 
+{% raw %}
+
 	Article: Q137833
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1995-1996 edition
@@ -75,3 +77,5 @@ permalink: /kb/137/Q137833/
 	
 	=============================================================================
 	
+
+{% endraw %}

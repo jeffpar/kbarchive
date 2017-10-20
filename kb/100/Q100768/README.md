@@ -6,6 +6,8 @@ permalink: /kb/100/Q100768/
 
 ## Q100768: X400: Downstream Users Receive Multiple Copies of Same Message
 
+{% raw %}
+
 	Article: Q100768
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/100/Q100768/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/324/Q324026/
 
 ## Q324026: XCON: Error 2140 and Event IDs, MTA Does Not Start
 
+{% raw %}
+
 	Article: Q324026
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -180,3 +182,5 @@ permalink: /kb/324/Q324026/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168459/
 
 ## Q168459: XCLN: Preventing User Access to Exchange Profiles
 
+{% raw %}
+
 	Article: Q168459
 	Product(s): Microsoft Exchange
 	Version(s): Win95:4.0;WinNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/168/Q168459/
 	
 	=============================================================================
 	
+
+{% endraw %}

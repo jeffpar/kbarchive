@@ -6,6 +6,8 @@ permalink: /kb/236/Q236073/
 
 ## Q236073: Files and Folders Reappear After Deletion with Roaming Profiles
 
+{% raw %}
+
 	Article: Q236073
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/236/Q236073/
 	
 	=============================================================================
 	
+
+{% endraw %}

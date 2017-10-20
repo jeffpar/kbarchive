@@ -6,6 +6,8 @@ permalink: /kb/149/Q149435/
 
 ## Q149435: AST Bravo LC 4/100 Requires BIOS Version 1.02
 
+{% raw %}
+
 	Article: Q149435
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149435/
 	
 	=============================================================================
 	
+
+{% endraw %}

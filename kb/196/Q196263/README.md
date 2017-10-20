@@ -6,6 +6,8 @@ permalink: /kb/196/Q196263/
 
 ## Q196263: Browse List Does Not Display All NetWare Servers
 
+{% raw %}
+
 	Article: Q196263
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/196/Q196263/
 	
 	=============================================================================
 	
+
+{% endraw %}

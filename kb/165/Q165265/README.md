@@ -6,6 +6,8 @@ permalink: /kb/165/Q165265/
 
 ## Q165265: XCLN: Run-Time 53 Error When You Start Forms Designer
 
+{% raw %}
+
 	Article: Q165265
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0;Win95:4.0,5.0;WINDOWS:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165265/
 	
 	=============================================================================
 	
+
+{% endraw %}

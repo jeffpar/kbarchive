@@ -6,6 +6,8 @@ permalink: /kb/299/Q299513/
 
 ## Q299513: Passport Login Page Appears in the Wrong Language
 
+{% raw %}
+
 	Article: Q299513
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -87,3 +89,5 @@ permalink: /kb/299/Q299513/
 	
 	=============================================================================
 	
+
+{% endraw %}

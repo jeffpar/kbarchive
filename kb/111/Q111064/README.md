@@ -6,6 +6,8 @@ permalink: /kb/111/Q111064/
 
 ## Q111064: Flight Simulator: Setup Program Doesn't Run from MS-DOS Prompt
 
+{% raw %}
+
 	Article: Q111064
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -78,3 +80,5 @@ permalink: /kb/111/Q111064/
 	
 	=============================================================================
 	
+
+{% endraw %}

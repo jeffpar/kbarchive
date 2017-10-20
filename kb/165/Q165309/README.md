@@ -6,6 +6,8 @@ permalink: /kb/165/Q165309/
 
 ## Q165309: FIX: Security Information Is Not Synchronized
 
+{% raw %}
+
 	Article: Q165309
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/165/Q165309/
 	
 	=============================================================================
 	
+
+{% endraw %}

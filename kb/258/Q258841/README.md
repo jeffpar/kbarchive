@@ -6,6 +6,8 @@ permalink: /kb/258/Q258841/
 
 ## Q258841: KybdStck.exe Manipulates the Keyboard Layout Stack from VFP
 
+{% raw %}
+
 	Article: Q258841
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -91,3 +93,5 @@ permalink: /kb/258/Q258841/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248425/
 
 ## Q248425: XADM: Service Pack Upgrade Is Unsuccessful with &quot;C1030B3A&quot; Error
 
+{% raw %}
+
 	Article: Q248425
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -92,3 +94,5 @@ permalink: /kb/248/Q248425/
 	
 	=============================================================================
 	
+
+{% endraw %}

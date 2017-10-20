@@ -6,6 +6,8 @@ permalink: /kb/159/Q159956/
 
 ## Q159956: FIX: Dirty Flag Not Cleared During Edit() or Update()
 
+{% raw %}
+
 	Article: Q159956
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2 4.2b
@@ -97,3 +99,5 @@ permalink: /kb/159/Q159956/
 	
 	=============================================================================
 	
+
+{% endraw %}

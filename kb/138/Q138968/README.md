@@ -6,6 +6,8 @@ permalink: /kb/138/Q138968/
 
 ## Q138968: PRB: UpClick and DownClick Events Do Not Work for a List Box
 
+{% raw %}
+
 	Article: Q138968
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/138/Q138968/
 	
 	=============================================================================
 	
+
+{% endraw %}

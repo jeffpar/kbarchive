@@ -6,6 +6,8 @@ permalink: /kb/139/Q139286/
 
 ## Q139286: PC WSPlus: Dynamic Connections Limited to 8 Netware Servers
 
+{% raw %}
+
 	Article: Q139286
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -69,3 +71,5 @@ permalink: /kb/139/Q139286/
 	
 	=============================================================================
 	
+
+{% endraw %}

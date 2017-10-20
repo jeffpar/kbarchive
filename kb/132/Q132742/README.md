@@ -6,6 +6,8 @@ permalink: /kb/132/Q132742/
 
 ## Q132742: PC Gen: Microsoft Windows NT 3.51 and Compressed Mail Files
 
+{% raw %}
+
 	Article: Q132742
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2; :3.51; winnt:3.51
@@ -53,3 +55,5 @@ permalink: /kb/132/Q132742/
 	
 	=============================================================================
 	
+
+{% endraw %}

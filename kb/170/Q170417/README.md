@@ -6,6 +6,8 @@ permalink: /kb/170/Q170417/
 
 ## Q170417: Closing ZAK Setup Window Causes Setup to Stop
 
+{% raw %}
+
 	Article: Q170417
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/170/Q170417/
 	
 	=============================================================================
 	
+
+{% endraw %}

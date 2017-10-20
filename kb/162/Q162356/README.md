@@ -6,6 +6,8 @@ permalink: /kb/162/Q162356/
 
 ## Q162356: 3D Graphics Programming for Windows 95 Author Web site
 
+{% raw %}
+
 	Article: Q162356
 	Product(s): Microsoft Press
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/162/Q162356/
 	
 	=============================================================================
 	
+
+{% endraw %}

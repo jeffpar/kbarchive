@@ -6,6 +6,8 @@ permalink: /kb/289/Q289122/
 
 ## Q289122: XADM: How Mailbox Manager Calculates the Age of a Message
 
+{% raw %}
+
 	Article: Q289122
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3,5.5 SP4
@@ -116,3 +118,5 @@ permalink: /kb/289/Q289122/
 	
 	=============================================================================
 	
+
+{% endraw %}

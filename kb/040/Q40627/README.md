@@ -6,6 +6,8 @@ permalink: /kb/040/Q40627/
 
 ## Q40627: Mnemonic Letters Indicating Types of Jumps Documentation Error
 
+{% raw %}
+
 	Article: Q40627
 	Product(s): See article
 	Version(s): 5.00   | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/040/Q40627/
 	   B             Below (for unsigned comparisons)
 	   E             Equal
 	   N             Not
+
+{% endraw %}

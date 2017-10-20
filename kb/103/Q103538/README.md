@@ -6,6 +6,8 @@ permalink: /kb/103/Q103538/
 
 ## Q103538: MEM &amp; MSD Only See 16 MB of Memory on Dell Machines
 
+{% raw %}
+
 	Article: Q103538
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/103/Q103538/
 	
 	=============================================================================
 	
+
+{% endraw %}

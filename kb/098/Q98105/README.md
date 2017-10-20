@@ -6,6 +6,8 @@ permalink: /kb/098/Q98105/
 
 ## Q98105: PC Gen: How to Search for Mail &amp; Related KB Articles by Topic
 
+{% raw %}
+
 	Article: Q98105
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0; WINDOWS:1.0,2.x,3.0,3.1,3.1a,3.1c,3.1d,3.2
@@ -137,3 +139,5 @@ permalink: /kb/098/Q98105/
 	
 	=============================================================================
 	
+
+{% endraw %}

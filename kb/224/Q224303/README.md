@@ -6,6 +6,8 @@ permalink: /kb/224/Q224303/
 
 ## Q224303: SNA Server Allows Range of IP Ports w/ Distributed Link Service
 
+{% raw %}
+
 	Article: Q224303
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP3,4.0 SP2
@@ -91,3 +93,5 @@ permalink: /kb/224/Q224303/
 	
 	=============================================================================
 	
+
+{% endraw %}

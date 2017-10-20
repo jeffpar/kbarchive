@@ -6,6 +6,8 @@ permalink: /kb/193/Q193461/
 
 ## Q193461: 3.51: Problems in Date/Time after Choosing Feb 29 in Leap Year
 
+{% raw %}
+
 	Article: Q193461
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -79,3 +81,5 @@ permalink: /kb/193/Q193461/
 	
 	=============================================================================
 	
+
+{% endraw %}

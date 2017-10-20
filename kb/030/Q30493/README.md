@@ -6,6 +6,8 @@ permalink: /kb/030/Q30493/
 
 ## Q30493: DOCERR: Errors in Chapter 5 of MASM Programmer's Guide
 
+{% raw %}
+
 	Article: Q30493
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1
@@ -71,3 +73,5 @@ permalink: /kb/030/Q30493/
 	
 	=============================================================================
 	
+
+{% endraw %}

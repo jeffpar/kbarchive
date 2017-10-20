@@ -6,6 +6,8 @@ permalink: /kb/285/Q285883/
 
 ## Q285883: XADM: Error Message Occurs When You Install Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q285883
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -92,3 +94,5 @@ permalink: /kb/285/Q285883/
 	
 	=============================================================================
 	
+
+{% endraw %}

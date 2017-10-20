@@ -6,6 +6,8 @@ permalink: /kb/099/Q99009/
 
 ## Q99009: Use Asynchronous Negotiation Only with Toshiba 3401
 
+{% raw %}
+
 	Article: Q99009
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -26,3 +28,5 @@ permalink: /kb/099/Q99009/
 	
 	=============================================================================
 	
+
+{% endraw %}

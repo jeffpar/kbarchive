@@ -6,6 +6,8 @@ permalink: /kb/242/Q242900/
 
 ## Q242900: XWEB: HTTP/1.0 Server Error Message When You Attach Files in OWA
 
+{% raw %}
+
 	Article: Q242900
 	Product(s): Microsoft Exchange
 	Version(s): 5,5.5
@@ -116,3 +118,5 @@ permalink: /kb/242/Q242900/
 	
 	=============================================================================
 	
+
+{% endraw %}

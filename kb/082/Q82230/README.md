@@ -6,6 +6,8 @@ permalink: /kb/082/Q82230/
 
 ## Q82230: Windows Err Msg: Invalid HIMEM.SYS
 
+{% raw %}
+
 	Article: Q82230
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -109,3 +111,5 @@ permalink: /kb/082/Q82230/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215107/
 
 ## Q215107: SMS: Client w/ Non-Admin Rights Doesn't Create CCR for 2nd Site
 
+{% raw %}
+
 	Article: Q215107
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/215/Q215107/
 	
 	=============================================================================
 	
+
+{% endraw %}

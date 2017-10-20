@@ -6,6 +6,8 @@ permalink: /kb/149/Q149706/
 
 ## Q149706: IRQ Conflict Using MicroGate SDLC Adapter
 
+{% raw %}
+
 	Article: Q149706
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -89,3 +91,5 @@ permalink: /kb/149/Q149706/
 	
 	=============================================================================
 	
+
+{% endraw %}

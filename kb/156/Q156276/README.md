@@ -6,6 +6,8 @@ permalink: /kb/156/Q156276/
 
 ## Q156276: Cmd.exe Does Not Support UNC Names as the Current Directory
 
+{% raw %}
+
 	Article: Q156276
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/156/Q156276/
 	
 	=============================================================================
 	
+
+{% endraw %}

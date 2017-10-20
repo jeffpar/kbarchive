@@ -6,6 +6,8 @@ permalink: /kb/150/Q150289/
 
 ## Q150289: Bookshelf 96 Setup: Internet Explorer Status Incorrect
 
+{% raw %}
+
 	Article: Q150289
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/150/Q150289/
 	
 	=============================================================================
 	
+
+{% endraw %}

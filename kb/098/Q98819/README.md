@@ -6,6 +6,8 @@ permalink: /kb/098/Q98819/
 
 ## Q98819: PROFS: 3.3 Distribution Manager Disk &#91;5.25, 360K&#93;
 
+{% raw %}
+
 	Article: Q98819
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.3
@@ -70,3 +72,5 @@ permalink: /kb/098/Q98819/
 	
 	=============================================================================
 	
+
+{% endraw %}

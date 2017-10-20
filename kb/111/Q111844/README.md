@@ -6,6 +6,8 @@ permalink: /kb/111/Q111844/
 
 ## Q111844: Err Msg: BAD ERROR: A Successfully Transmitted Fax Could...
 
+{% raw %}
+
 	Article: Q111844
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -56,3 +58,5 @@ permalink: /kb/111/Q111844/
 	
 	=============================================================================
 	
+
+{% endraw %}

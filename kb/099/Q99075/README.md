@@ -6,6 +6,8 @@ permalink: /kb/099/Q99075/
 
 ## Q99075: NWLink--Network Numbers, and &quot;Seeing&quot; Netware File
 
+{% raw %}
+
 	Article: Q99075
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/099/Q99075/
 	
 	=============================================================================
 	
+
+{% endraw %}

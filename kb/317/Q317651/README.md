@@ -6,6 +6,8 @@ permalink: /kb/317/Q317651/
 
 ## Q317651: FIX: TN3287 Print Jobs May Fail to Print with Some Emulators
 
+{% raw %}
+
 	Article: Q317651
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2
@@ -88,3 +90,5 @@ permalink: /kb/317/Q317651/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164589/
 
 ## Q164589: IBM DFT Link Service Not Integrated In SNA Server Manager
 
+{% raw %}
+
 	Article: Q164589
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/164/Q164589/
 	
 	=============================================================================
 	
+
+{% endraw %}

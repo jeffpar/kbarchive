@@ -6,6 +6,8 @@ permalink: /kb/318/Q318900/
 
 ## Q318900: OLE DB Data Sources Newsnads.exe Causes Exception in Windows XP
 
+{% raw %}
+
 	Article: Q318900
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/318/Q318900/
 	
 	=============================================================================
 	
+
+{% endraw %}

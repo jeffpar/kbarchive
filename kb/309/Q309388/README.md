@@ -6,6 +6,8 @@ permalink: /kb/309/Q309388/
 
 ## Q309388: Single Sign-On Option Available with OLE DB Over TCP/IP
 
+{% raw %}
+
 	Article: Q309388
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/309/Q309388/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59009/
 
 ## Q59009: Mac Wkst: Sleep Mode Using Mac Portable on a LocalTalk Network
 
+{% raw %}
+
 	Article: Q59009
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -42,3 +44,5 @@ permalink: /kb/059/Q59009/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242032/
 
 ## Q242032: Subordinate Certificates Appear Invalid with Certificate Server
 
+{% raw %}
+
 	Article: Q242032
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -97,3 +99,5 @@ permalink: /kb/242/Q242032/
 	
 	=============================================================================
 	
+
+{% endraw %}

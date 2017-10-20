@@ -6,6 +6,8 @@ permalink: /kb/308/Q308101/
 
 ## Q308101: Update Resolves Error When Running SBSI Training Program on Wind
 
+{% raw %}
+
 	Article: Q308101
 	Product(s): Microsoft Press
 	Version(s): 3.0
@@ -104,3 +106,5 @@ permalink: /kb/308/Q308101/
 	
 	=============================================================================
 	
+
+{% endraw %}

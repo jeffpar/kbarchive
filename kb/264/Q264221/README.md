@@ -6,6 +6,8 @@ permalink: /kb/264/Q264221/
 
 ## Q264221: Year 2000 Product Analyzer Database Not Updated After March 2000
 
+{% raw %}
+
 	Article: Q264221
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/264/Q264221/
 	
 	=============================================================================
 	
+
+{% endraw %}

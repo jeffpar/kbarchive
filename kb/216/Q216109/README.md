@@ -6,6 +6,8 @@ permalink: /kb/216/Q216109/
 
 ## Q216109: HOWTO: Troubleshoot MSDN Library Run-Time/Install/Uninstall
 
+{% raw %}
+
 	Article: Q216109
 	Product(s): Microsoft Developer Network
 	Version(s): 6.0
@@ -177,3 +179,5 @@ permalink: /kb/216/Q216109/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182006/
 
 ## Q182006: FTP Service SIZE Command Leaves File Handles Open
 
+{% raw %}
+
 	Article: Q182006
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/182/Q182006/
 	
 	=============================================================================
 	
+
+{% endraw %}

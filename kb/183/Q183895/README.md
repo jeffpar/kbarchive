@@ -6,6 +6,8 @@ permalink: /kb/183/Q183895/
 
 ## Q183895: FIX: Problems with @GETS and CLEAR GETS If No READ
 
+{% raw %}
+
 	Article: Q183895
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -98,3 +100,5 @@ permalink: /kb/183/Q183895/
 	
 	=============================================================================
 	
+
+{% endraw %}

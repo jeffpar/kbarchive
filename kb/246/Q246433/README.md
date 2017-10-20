@@ -6,6 +6,8 @@ permalink: /kb/246/Q246433/
 
 ## Q246433: How to Disable Remote Control Acceleration on Selected Clients
 
+{% raw %}
+
 	Article: Q246433
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -81,3 +83,5 @@ permalink: /kb/246/Q246433/
 	
 	=============================================================================
 	
+
+{% endraw %}

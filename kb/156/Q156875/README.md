@@ -6,6 +6,8 @@ permalink: /kb/156/Q156875/
 
 ## Q156875: PRB: Empty Bars Appear in Shortcut Menu
 
+{% raw %}
+
 	Article: Q156875
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/156/Q156875/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99387/
 
 ## Q99387: WFWG: Status Bar Option in Chat Shows Incorrect Shortcut Key
 
+{% raw %}
+
 	Article: Q99387
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/099/Q99387/
 	
 	=============================================================================
 	
+
+{% endraw %}

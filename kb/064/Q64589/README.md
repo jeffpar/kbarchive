@@ -6,6 +6,8 @@ permalink: /kb/064/Q64589/
 
 ## Q64589: How to Use Named, Shared Memory Segments in OS/2 BASIC Program
 
+{% raw %}
+
 	Article: Q64589
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -159,3 +161,5 @@ permalink: /kb/064/Q64589/
 	POKE 0, 255                            'Signal CREATOR.BAS to end and
 	ErrorCode% = DosFreeSeg% (Selector%)   'release the segment selector.
 	END
+
+{% endraw %}

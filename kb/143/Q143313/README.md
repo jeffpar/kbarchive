@@ -6,6 +6,8 @@ permalink: /kb/143/Q143313/
 
 ## Q143313: FIX: CToolTipCtrl Stops Working After Dialog Is Displayed
 
+{% raw %}
+
 	Article: Q143313
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/143/Q143313/
 	
 	=============================================================================
 	
+
+{% endraw %}

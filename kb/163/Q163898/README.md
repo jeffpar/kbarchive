@@ -6,6 +6,8 @@ permalink: /kb/163/Q163898/
 
 ## Q163898: Remote Control Improvement of DHCP Clients
 
+{% raw %}
+
 	Article: Q163898
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -65,3 +67,5 @@ permalink: /kb/163/Q163898/
 	
 	=============================================================================
 	
+
+{% endraw %}

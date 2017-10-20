@@ -6,6 +6,8 @@ permalink: /kb/152/Q152452/
 
 ## Q152452: Access Setup Wizard Fails Because of Permission
 
+{% raw %}
+
 	Article: Q152452
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -71,3 +73,5 @@ permalink: /kb/152/Q152452/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121233/
 
 ## Q121233: Printer Form May Not Print to Correct Paper Path
 
+{% raw %}
+
 	Article: Q121233
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121233/
 	
 	=============================================================================
 	
+
+{% endraw %}

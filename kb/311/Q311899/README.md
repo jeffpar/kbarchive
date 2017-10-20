@@ -6,6 +6,8 @@ permalink: /kb/311/Q311899/
 
 ## Q311899: Shared Folders Service Doesn't Start After Reinstalling HIS 2000
 
+{% raw %}
+
 	Article: Q311899
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/311/Q311899/
 	
 	=============================================================================
 	
+
+{% endraw %}

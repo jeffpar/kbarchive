@@ -6,6 +6,8 @@ permalink: /kb/148/Q148354/
 
 ## Q148354: PC NTMMTA: Contents of the Readme File, MMTA.TXT
 
+{% raw %}
+
 	Article: Q148354
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5; :3.5
@@ -392,3 +394,5 @@ permalink: /kb/148/Q148354/
 	
 	=============================================================================
 	
+
+{% endraw %}

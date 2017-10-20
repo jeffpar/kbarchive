@@ -6,6 +6,8 @@ permalink: /kb/146/Q146661/
 
 ## Q146661: XCLN: Cannot Paste Bitmaps or Files into a RichEntry Field
 
+{% raw %}
+
 	Article: Q146661
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/146/Q146661/
 	
 	=============================================================================
 	
+
+{% endraw %}

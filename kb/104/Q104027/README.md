@@ -6,6 +6,8 @@ permalink: /kb/104/Q104027/
 
 ## Q104027: PC Ext: External Runs on 2.1 Postoffices
 
+{% raw %}
+
 	Article: Q104027
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -35,3 +37,5 @@ permalink: /kb/104/Q104027/
 	
 	=============================================================================
 	
+
+{% endraw %}

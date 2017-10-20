@@ -6,6 +6,8 @@ permalink: /kb/174/Q174031/
 
 ## Q174031: XADM: Unable to Uninstall Active Server Components from Exchange
 
+{% raw %}
+
 	Article: Q174031
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/174/Q174031/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78853/
 
 ## Q78853: PRB: Conditional Breakpoints Cannot Always Be Set
 
+{% raw %}
+
 	Article: Q78853
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0 1.5 1.51 1.52 2.0 2.1 4.0 5.0
@@ -131,3 +133,5 @@ permalink: /kb/078/Q78853/
 	
 	=============================================================================
 	
+
+{% endraw %}

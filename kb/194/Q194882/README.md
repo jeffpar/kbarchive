@@ -6,6 +6,8 @@ permalink: /kb/194/Q194882/
 
 ## Q194882: Encarta Virtual Globe 99: Cannot Use IntelliMouse Wheel to Zoom
 
+{% raw %}
+
 	Article: Q194882
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/194/Q194882/
 	
 	=============================================================================
 	
+
+{% endraw %}

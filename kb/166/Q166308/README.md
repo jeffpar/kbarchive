@@ -6,6 +6,8 @@ permalink: /kb/166/Q166308/
 
 ## Q166308: XCON: Exchange MTA Logs NT Event ID 51
 
+{% raw %}
+
 	Article: Q166308
 	Product(s): Microsoft Exchange
 	Version(s): WinNT; Exchange 4.0, 5.0. 5.5
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166308/
 	
 	=============================================================================
 	
+
+{% endraw %}

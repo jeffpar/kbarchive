@@ -6,6 +6,8 @@ permalink: /kb/153/Q153663/
 
 ## Q153663: SMS: How to Set Up SMS Alert Actions Write To a Log File
 
+{% raw %}
+
 	Article: Q153663
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -45,3 +47,5 @@ permalink: /kb/153/Q153663/
 	
 	=============================================================================
 	
+
+{% endraw %}

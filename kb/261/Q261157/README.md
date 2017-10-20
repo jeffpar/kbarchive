@@ -6,6 +6,8 @@ permalink: /kb/261/Q261157/
 
 ## Q261157: Streets and Trips: Computer Hangs When You Start the Program
 
+{% raw %}
+
 	Article: Q261157
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -138,3 +140,5 @@ permalink: /kb/261/Q261157/
 	
 	=============================================================================
 	
+
+{% endraw %}

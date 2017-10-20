@@ -6,6 +6,8 @@ permalink: /kb/129/Q129990/
 
 ## Q129990: MS WORD 6 RESOURCE KIT: 2Ed Corrections and Comments
 
+{% raw %}
+
 	Article: Q129990
 	Product(s): Microsoft Press
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/129/Q129990/
 	
 	=============================================================================
 	
+
+{% endraw %}

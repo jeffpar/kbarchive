@@ -6,6 +6,8 @@ permalink: /kb/139/Q139204/
 
 ## Q139204: ECP Port with SMC Chip Set Does Not Transfer Data Properly
 
+{% raw %}
+
 	Article: Q139204
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/139/Q139204/
 	
 	=============================================================================
 	
+
+{% endraw %}

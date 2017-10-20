@@ -6,6 +6,8 @@ permalink: /kb/166/Q166905/
 
 ## Q166905: XFOR: How to Change Target Address
 
+{% raw %}
+
 	Article: Q166905
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/166/Q166905/
 	
 	=============================================================================
 	
+
+{% endraw %}

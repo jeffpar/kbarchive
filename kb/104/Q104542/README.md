@@ -6,6 +6,8 @@ permalink: /kb/104/Q104542/
 
 ## Q104542: MemMaker Doesn't Load ATDOSHC2.SYS or ATDOSXL.SYS High
 
+{% raw %}
+
 	Article: Q104542
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -60,3 +62,5 @@ permalink: /kb/104/Q104542/
 	
 	=============================================================================
 	
+
+{% endraw %}

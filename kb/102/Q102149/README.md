@@ -6,6 +6,8 @@ permalink: /kb/102/Q102149/
 
 ## Q102149: CodeView Debugger Function Keys List
 
+{% raw %}
+
 	Article: Q102149
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.05,4.1
@@ -149,3 +151,5 @@ permalink: /kb/102/Q102149/
 	
 	=============================================================================
 	
+
+{% endraw %}

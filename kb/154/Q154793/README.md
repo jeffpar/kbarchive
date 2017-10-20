@@ -6,6 +6,8 @@ permalink: /kb/154/Q154793/
 
 ## Q154793: Games: Invalid Page Fault Starting Game
 
+{% raw %}
+
 	Article: Q154793
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -82,3 +84,5 @@ permalink: /kb/154/Q154793/
 	
 	=============================================================================
 	
+
+{% endraw %}

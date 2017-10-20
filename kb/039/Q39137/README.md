@@ -6,6 +6,8 @@ permalink: /kb/039/Q39137/
 
 ## Q39137: Unresolved External _main in crt0.asm when Compiling with /P
 
+{% raw %}
+
 	Article: Q39137
 	Product(s): See article
 	Version(s): 1.00 1.01
@@ -31,3 +33,5 @@ permalink: /kb/039/Q39137/
 	Microsoft has confirmed this to be a problem in Versions 1.00 and 1.01.
 	We are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

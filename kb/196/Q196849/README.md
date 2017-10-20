@@ -6,6 +6,8 @@ permalink: /kb/196/Q196849/
 
 ## Q196849: XFOR: Internet Mail Service Attachment Formatting Fails
 
+{% raw %}
+
 	Article: Q196849
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -80,3 +82,5 @@ permalink: /kb/196/Q196849/
 	
 	=============================================================================
 	
+
+{% endraw %}

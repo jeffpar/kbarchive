@@ -6,6 +6,8 @@ permalink: /kb/215/Q215431/
 
 ## Q215431: BUG: Cannot Get TreeView Property or Method Topics from the IDE
 
+{% raw %}
+
 	Article: Q215431
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -119,3 +121,5 @@ permalink: /kb/215/Q215431/
 	
 	=============================================================================
 	
+
+{% endraw %}

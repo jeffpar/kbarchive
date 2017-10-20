@@ -6,6 +6,8 @@ permalink: /kb/059/Q59725/
 
 ## Q59725: INTERRUPT for Clock Tick Counter Returns Negative Value
 
+{% raw %}
+
 	Article: Q59725
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/059/Q59725/
 	LOCATE 24, 1: PRINT high&; ":"; low&; "   ";
 	LOOP UNTIL INKEY$ <> ""
 	END
+
+{% endraw %}

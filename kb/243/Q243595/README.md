@@ -6,6 +6,8 @@ permalink: /kb/243/Q243595/
 
 ## Q243595: XADM: Resetting Default &amp; Anonymous Permissions on Public Folder
 
+{% raw %}
+
 	Article: Q243595
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/243/Q243595/
 	
 	=============================================================================
 	
+
+{% endraw %}

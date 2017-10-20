@@ -6,6 +6,8 @@ permalink: /kb/110/Q110765/
 
 ## Q110765: PRB: FONTMETRIC Returns Different Values for Courier Font
 
+{% raw %}
+
 	Article: Q110765
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -63,3 +65,5 @@ permalink: /kb/110/Q110765/
 	
 	=============================================================================
 	
+
+{% endraw %}

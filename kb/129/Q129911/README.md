@@ -6,6 +6,8 @@ permalink: /kb/129/Q129911/
 
 ## Q129911: Querying Macintosh Clients in Systems Management Server
 
+{% raw %}
+
 	Article: Q129911
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -74,3 +76,5 @@ permalink: /kb/129/Q129911/
 	
 	=============================================================================
 	
+
+{% endraw %}

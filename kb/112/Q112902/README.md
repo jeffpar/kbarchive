@@ -6,6 +6,8 @@ permalink: /kb/112/Q112902/
 
 ## Q112902: PC Gen: Err Msg: Notice 34 Could Not Access Log...File
 
+{% raw %}
+
 	Article: Q112902
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0b,3.2
@@ -77,3 +79,5 @@ permalink: /kb/112/Q112902/
 	
 	=============================================================================
 	
+
+{% endraw %}

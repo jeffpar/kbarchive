@@ -6,6 +6,8 @@ permalink: /kb/154/Q154733/
 
 ## Q154733: Error Accessing Boot Sector File &#92;&#92;BOOTSS
 
+{% raw %}
+
 	Article: Q154733
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/154/Q154733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196723/
 
 ## Q196723: WD97: SUM Formula Does Not Update Correctly
 
+{% raw %}
+
 	Article: Q196723
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/196/Q196723/
 	
 	=============================================================================
 	
+
+{% endraw %}

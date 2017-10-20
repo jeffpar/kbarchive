@@ -6,6 +6,8 @@ permalink: /kb/160/Q160329/
 
 ## Q160329: Msbatch.inf Parameters: Installing with PCI Network Adapters
 
+{% raw %}
+
 	Article: Q160329
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/160/Q160329/
 	
 	=============================================================================
 	
+
+{% endraw %}

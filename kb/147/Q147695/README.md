@@ -6,6 +6,8 @@ permalink: /kb/147/Q147695/
 
 ## Q147695: MEMBER OF in FPNW Login Script Returns Incorrect Results
 
+{% raw %}
+
 	Article: Q147695
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -67,3 +69,5 @@ permalink: /kb/147/Q147695/
 	
 	=============================================================================
 	
+
+{% endraw %}

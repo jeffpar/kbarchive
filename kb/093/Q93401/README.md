@@ -6,6 +6,8 @@ permalink: /kb/093/Q93401/
 
 ## Q93401: PRB: C2279: Braces Not Valid in Function Default Argument List
 
+{% raw %}
+
 	Article: Q93401
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/093/Q93401/
 	
 	=============================================================================
 	
+
+{% endraw %}

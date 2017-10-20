@@ -6,6 +6,8 @@ permalink: /kb/142/Q142763/
 
 ## Q142763: PRB: Path Problems on Client Installation of SourceSafe
 
+{% raw %}
+
 	Article: Q142763
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/142/Q142763/
 	
 	=============================================================================
 	
+
+{% endraw %}

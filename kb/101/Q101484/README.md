@@ -6,6 +6,8 @@ permalink: /kb/101/Q101484/
 
 ## Q101484: Mac Srv: Rebuild Recovers User-Created Gateway Names in PAB
 
+{% raw %}
+
 	Article: Q101484
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -38,3 +40,5 @@ permalink: /kb/101/Q101484/
 	
 	=============================================================================
 	
+
+{% endraw %}

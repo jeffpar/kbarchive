@@ -6,6 +6,8 @@ permalink: /kb/066/Q66885/
 
 ## Q66885: ASD: All Dynamic Scenery Objects Can Fly
 
+{% raw %}
+
 	Article: Q66885
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/066/Q66885/
 	
 	=============================================================================
 	
+
+{% endraw %}

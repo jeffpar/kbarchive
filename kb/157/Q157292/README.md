@@ -6,6 +6,8 @@ permalink: /kb/157/Q157292/
 
 ## Q157292: WD97: Hangs When Printing Multiple Open Documents
 
+{% raw %}
+
 	Article: Q157292
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -82,3 +84,5 @@ permalink: /kb/157/Q157292/
 	
 	=============================================================================
 	
+
+{% endraw %}

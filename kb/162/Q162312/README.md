@@ -6,6 +6,8 @@ permalink: /kb/162/Q162312/
 
 ## Q162312: FP: Images Not Saved to Web Aren't Loaded
 
+{% raw %}
+
 	Article: Q162312
 	Product(s): Word Front Page
 	Version(s): windows:97; macintosh:1.0
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162312/
 	
 	=============================================================================
 	
+
+{% endraw %}

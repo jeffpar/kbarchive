@@ -6,6 +6,8 @@ permalink: /kb/195/Q195898/
 
 ## Q195898: Incorrect Drive Size with Promise Technologies Ultra DMA Card
 
+{% raw %}
+
 	Article: Q195898
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/195/Q195898/
 	
 	=============================================================================
 	
+
+{% endraw %}

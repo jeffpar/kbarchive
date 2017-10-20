@@ -6,6 +6,8 @@ permalink: /kb/159/Q159428/
 
 ## Q159428: Writer 2: Creative Writer Needs a Printer When Started
 
+{% raw %}
+
 	Article: Q159428
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0,95; winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/159/Q159428/
 	
 	=============================================================================
 	
+
+{% endraw %}

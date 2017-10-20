@@ -6,6 +6,8 @@ permalink: /kb/093/Q93268/
 
 ## Q93268: &quot;Not Enough Global Memory&quot; Using Crosstalk for Windows 1.2.2
 
+{% raw %}
+
 	Article: Q93268
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/093/Q93268/
 	
 	=============================================================================
 	
+
+{% endraw %}

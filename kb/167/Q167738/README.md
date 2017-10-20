@@ -6,6 +6,8 @@ permalink: /kb/167/Q167738/
 
 ## Q167738: WD97: General Information about Floating Objects
 
+{% raw %}
+
 	Article: Q167738
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -676,3 +678,5 @@ permalink: /kb/167/Q167738/
 	
 	=============================================================================
 	
+
+{% endraw %}

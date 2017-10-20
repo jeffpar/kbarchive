@@ -6,6 +6,8 @@ permalink: /kb/134/Q134232/
 
 ## Q134232: PC WSPlus: Frequently Asked Questions for Schedule+
 
+{% raw %}
+
 	Article: Q134232
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -240,3 +242,5 @@ permalink: /kb/134/Q134232/
 	
 	=============================================================================
 	
+
+{% endraw %}

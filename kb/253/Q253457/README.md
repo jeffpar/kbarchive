@@ -6,6 +6,8 @@ permalink: /kb/253/Q253457/
 
 ## Q253457: Visual FoxPro 6.0 Sample: Demonstrates the ListView Control
 
+{% raw %}
+
 	Article: Q253457
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -199,3 +201,5 @@ permalink: /kb/253/Q253457/
 	
 	=============================================================================
 	
+
+{% endraw %}

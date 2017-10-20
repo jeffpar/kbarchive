@@ -6,6 +6,8 @@ permalink: /kb/269/Q269105/
 
 ## Q269105: SMS Provider May Not Recognize DMTF Dates
 
+{% raw %}
+
 	Article: Q269105
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -81,3 +83,5 @@ permalink: /kb/269/Q269105/
 	
 	=============================================================================
 	
+
+{% endraw %}

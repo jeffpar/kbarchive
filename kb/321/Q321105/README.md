@@ -6,6 +6,8 @@ permalink: /kb/321/Q321105/
 
 ## Q321105: How to Obtain Visual SourceSafe 6.0c
 
+{% raw %}
+
 	Article: Q321105
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/321/Q321105/
 	
 	=============================================================================
 	
+
+{% endraw %}

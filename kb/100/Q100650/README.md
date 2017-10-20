@@ -6,6 +6,8 @@ permalink: /kb/100/Q100650/
 
 ## Q100650: Internal Processing Error at 0270:0Bf8 with LMSM
 
+{% raw %}
+
 	Article: Q100650
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/100/Q100650/
 	
 	=============================================================================
 	
+
+{% endraw %}

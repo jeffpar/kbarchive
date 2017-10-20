@@ -6,6 +6,8 @@ permalink: /kb/094/Q94849/
 
 ## Q94849: Main View in Golf Does Not Maximize in All Resolutions
 
+{% raw %}
+
 	Article: Q94849
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/094/Q94849/
 	
 	=============================================================================
 	
+
+{% endraw %}

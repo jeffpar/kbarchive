@@ -6,6 +6,8 @@ permalink: /kb/184/Q184841/
 
 ## Q184841: XWEB: OWA Component for IIS May Cause Heap Corruption
 
+{% raw %}
+
 	Article: Q184841
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -79,3 +81,5 @@ permalink: /kb/184/Q184841/
 	
 	=============================================================================
 	
+
+{% endraw %}

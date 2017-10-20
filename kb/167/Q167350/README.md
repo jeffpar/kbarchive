@@ -6,6 +6,8 @@ permalink: /kb/167/Q167350/
 
 ## Q167350: FIX: Default Constructor Argument Can Not Use Namespace Scope
 
+{% raw %}
+
 	Article: Q167350
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -82,3 +84,5 @@ permalink: /kb/167/Q167350/
 	
 	=============================================================================
 	
+
+{% endraw %}

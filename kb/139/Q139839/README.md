@@ -6,6 +6,8 @@ permalink: /kb/139/Q139839/
 
 ## Q139839: OpCode Values for x86 Based Computers
 
+{% raw %}
+
 	Article: Q139839
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -59,3 +61,5 @@ permalink: /kb/139/Q139839/
 	
 	=============================================================================
 	
+
+{% endraw %}

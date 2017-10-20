@@ -6,6 +6,8 @@ permalink: /kb/058/Q58953/
 
 ## Q58953: Must LINK 87.LIB Stub File in .OBJ List, NOT in the .LIB List
 
+{% raw %}
+
 	Article: Q58953
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -57,3 +59,5 @@ permalink: /kb/058/Q58953/
 	to work, they must appear in the .OBJ area of the LINK command line to
 	resolve routine references before the default library reference
 	search.
+
+{% endraw %}

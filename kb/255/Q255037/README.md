@@ -6,6 +6,8 @@ permalink: /kb/255/Q255037/
 
 ## Q255037: XADM: Information Store Stops Responding with Event ID 1220
 
+{% raw %}
+
 	Article: Q255037
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -89,3 +91,5 @@ permalink: /kb/255/Q255037/
 	
 	=============================================================================
 	
+
+{% endraw %}

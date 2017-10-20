@@ -6,6 +6,8 @@ permalink: /kb/146/Q146356/
 
 ## Q146356: Large Width Scrollbars Causes Wisdom Lit. to Word Wrap
 
+{% raw %}
+
 	Article: Q146356
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -42,3 +44,5 @@ permalink: /kb/146/Q146356/
 	
 	=============================================================================
 	
+
+{% endraw %}

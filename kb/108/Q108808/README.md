@@ -6,6 +6,8 @@ permalink: /kb/108/Q108808/
 
 ## Q108808: Remote Access Service - Error 714: Configuration Error
 
+{% raw %}
+
 	Article: Q108808
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -79,3 +81,5 @@ permalink: /kb/108/Q108808/
 	
 	=============================================================================
 	
+
+{% endraw %}

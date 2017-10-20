@@ -6,6 +6,8 @@ permalink: /kb/143/Q143287/
 
 ## Q143287: FIX: Visual Class Library's Registration Lost
 
+{% raw %}
+
 	Article: Q143287
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -79,3 +81,5 @@ permalink: /kb/143/Q143287/
 	
 	=============================================================================
 	
+
+{% endraw %}

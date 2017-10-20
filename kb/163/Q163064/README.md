@@ -6,6 +6,8 @@ permalink: /kb/163/Q163064/
 
 ## Q163064: ODE97: Uninstalling Access or Office Pro 97 May Break Run-Time A
 
+{% raw %}
+
 	Article: Q163064
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/163/Q163064/
 	
 	=============================================================================
 	
+
+{% endraw %}

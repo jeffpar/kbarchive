@@ -6,6 +6,8 @@ permalink: /kb/255/Q255227/
 
 ## Q255227: Partial Domain Synchronization From Server Manager Does Not Work
 
+{% raw %}
+
 	Article: Q255227
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/255/Q255227/
 	
 	=============================================================================
 	
+
+{% endraw %}

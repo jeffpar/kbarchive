@@ -6,6 +6,8 @@ permalink: /kb/156/Q156155/
 
 ## Q156155: PP7T: Write-Up Document Larger Than Presentation
 
+{% raw %}
+
 	Article: Q156155
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -45,3 +47,5 @@ permalink: /kb/156/Q156155/
 	
 	=============================================================================
 	
+
+{% endraw %}

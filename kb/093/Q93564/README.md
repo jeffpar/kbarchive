@@ -6,6 +6,8 @@ permalink: /kb/093/Q93564/
 
 ## Q93564: PC Ext: Err Msg: Error on Log File Open
 
+{% raw %}
+
 	Article: Q93564
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/093/Q93564/
 	
 	=============================================================================
 	
+
+{% endraw %}

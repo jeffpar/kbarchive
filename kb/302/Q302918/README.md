@@ -6,6 +6,8 @@ permalink: /kb/302/Q302918/
 
 ## Q302918: &quot;Program.exe not found&quot; Error When Launching Internet Explorer A
 
+{% raw %}
+
 	Article: Q302918
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -57,3 +59,5 @@ permalink: /kb/302/Q302918/
 	
 	=============================================================================
 	
+
+{% endraw %}

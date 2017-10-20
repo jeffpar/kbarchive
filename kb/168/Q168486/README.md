@@ -6,6 +6,8 @@ permalink: /kb/168/Q168486/
 
 ## Q168486: 16-bit Applications May Fail after HP ScanJet Installation
 
+{% raw %}
+
 	Article: Q168486
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -66,3 +68,5 @@ permalink: /kb/168/Q168486/
 	
 	=============================================================================
 	
+
+{% endraw %}

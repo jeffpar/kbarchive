@@ -6,6 +6,8 @@ permalink: /kb/042/Q42595/
 
 ## Q42595: VARSEG Incorrect for COMMON String Array Passed Through CHAIN
 
+{% raw %}
+
 	Article: Q42595
 	Product(s): See article
 	Version(s): 4.50
@@ -97,3 +99,5 @@ permalink: /kb/042/Q42595/
 	This change works because with near addressing, the C routine ignores
 	the VARSEG part of the address. This only works if the array a$ lies
 	within the default data segment.
+
+{% endraw %}

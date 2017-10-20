@@ -6,6 +6,8 @@ permalink: /kb/278/Q278665/
 
 ## Q278665: How to change text size in MSN Companion
 
+{% raw %}
+
 	Article: Q278665
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/278/Q278665/
 	
 	=============================================================================
 	
+
+{% endraw %}

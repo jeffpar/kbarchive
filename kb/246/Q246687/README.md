@@ -6,6 +6,8 @@ permalink: /kb/246/Q246687/
 
 ## Q246687: BUG: DDX_ and DDP_ Functions Don't Work for ComboBoxEx in COlePr
 
+{% raw %}
+
 	Article: Q246687
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -52,9 +54,9 @@ permalink: /kb/246/Q246687/
 	handler function should resemble the following:
 	
 	  BEGIN_MESSAGE_MAP(CTestPropPage, COlePropertyPage)
-	  	//{ {AFX_MSG_MAP(CTestPropPage)
+	  	//{{AFX_MSG_MAP(CTestPropPage)
 	  	ON_CBN_EDITCHANGE(IDC_COMBOBOXEX1, OnEditchangeComboboxex1)
-	  	//} }AFX_MSG_MAP
+	  	//}}AFX_MSG_MAP
 	  END_MESSAGE_MAP()
 	
 	  void CTestPropPage::OnEditchangeComboboxex1() 
@@ -104,3 +106,5 @@ permalink: /kb/246/Q246687/
 	
 	=============================================================================
 	
+
+{% endraw %}

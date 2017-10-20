@@ -6,6 +6,8 @@ permalink: /kb/110/Q110610/
 
 ## Q110610: BUG: MS-DOS Report Printed on LocalTalk Causes Type 1 Error
 
+{% raw %}
+
 	Article: Q110610
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -81,3 +83,5 @@ permalink: /kb/110/Q110610/
 	
 	=============================================================================
 	
+
+{% endraw %}

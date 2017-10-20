@@ -6,6 +6,8 @@ permalink: /kb/113/Q113824/
 
 ## Q113824: SMTP: Return Receipts Sent If &quot;Return-Receipt-To&quot; Is Blank
 
+{% raw %}
+
 	Article: Q113824
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/113/Q113824/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172540/
 
 ## Q172540: Windows NT Server Tools for Windows 95 Readme.txt File
 
+{% raw %}
+
 	Article: Q172540
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -192,3 +194,5 @@ permalink: /kb/172/Q172540/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237258/
 
 ## Q237258: WD97: Page Size Changes When You Edit Document Object
 
+{% raw %}
+
 	Article: Q237258
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/237/Q237258/
 	
 	=============================================================================
 	
+
+{% endraw %}

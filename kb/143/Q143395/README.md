@@ -6,6 +6,8 @@ permalink: /kb/143/Q143395/
 
 ## Q143395: Microsoft Exchange Folder Name Truncated to &quot;Micros~1&quot;
 
+{% raw %}
+
 	Article: Q143395
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -97,3 +99,5 @@ permalink: /kb/143/Q143395/
 	
 	=============================================================================
 	
+
+{% endraw %}

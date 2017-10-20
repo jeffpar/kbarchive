@@ -6,6 +6,8 @@ permalink: /kb/076/Q76979/
 
 ## Q76979: Mouse Driver 7.0 and MS-DOS Applications in Windows 3.0
 
+{% raw %}
+
 	Article: Q76979
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.0
@@ -68,3 +70,5 @@ permalink: /kb/076/Q76979/
 	
 	=============================================================================
 	
+
+{% endraw %}

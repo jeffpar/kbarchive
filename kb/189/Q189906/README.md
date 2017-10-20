@@ -6,6 +6,8 @@ permalink: /kb/189/Q189906/
 
 ## Q189906: XCLN: How to Ensure Proper Name Resolution
 
+{% raw %}
+
 	Article: Q189906
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0
@@ -91,3 +93,5 @@ permalink: /kb/189/Q189906/
 	
 	=============================================================================
 	
+
+{% endraw %}

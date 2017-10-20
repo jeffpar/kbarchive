@@ -6,6 +6,8 @@ permalink: /kb/114/Q114337/
 
 ## Q114337: WFWG: Using NetDDE with Third-Party Networks
 
+{% raw %}
+
 	Article: Q114337
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -110,3 +112,5 @@ permalink: /kb/114/Q114337/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258319/
 
 ## Q258319: XADM: Uuencode Long DBCS Filename Attachment Causes Disk Full
 
+{% raw %}
+
 	Article: Q258319
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2,5.5 SP3
@@ -109,3 +111,5 @@ permalink: /kb/258/Q258319/
 	
 	=============================================================================
 	
+
+{% endraw %}

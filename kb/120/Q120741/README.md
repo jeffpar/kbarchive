@@ -6,6 +6,8 @@ permalink: /kb/120/Q120741/
 
 ## Q120741: MacFile Applet Does Not Show Up After Changing Drive Letters
 
+{% raw %}
+
 	Article: Q120741
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10
@@ -77,3 +79,5 @@ permalink: /kb/120/Q120741/
 	
 	=============================================================================
 	
+
+{% endraw %}

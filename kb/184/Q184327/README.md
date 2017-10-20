@@ -6,6 +6,8 @@ permalink: /kb/184/Q184327/
 
 ## Q184327: How to Install Sound Blaster Drivers in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q184327
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -158,3 +160,5 @@ permalink: /kb/184/Q184327/
 	
 	=============================================================================
 	
+
+{% endraw %}

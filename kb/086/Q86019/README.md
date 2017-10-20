@@ -6,6 +6,8 @@ permalink: /kb/086/Q86019/
 
 ## Q86019: PaintJet XL's Presentation Setting Works on Graphics
 
+{% raw %}
+
 	Article: Q86019
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/086/Q86019/
 	
 	=============================================================================
 	
+
+{% endraw %}

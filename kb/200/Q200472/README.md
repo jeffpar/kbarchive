@@ -6,6 +6,8 @@ permalink: /kb/200/Q200472/
 
 ## Q200472: XFOR: How to Change the Default Header Separator for SNADSCONN
 
+{% raw %}
+
 	Article: Q200472
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -83,3 +85,5 @@ permalink: /kb/200/Q200472/
 	
 	=============================================================================
 	
+
+{% endraw %}

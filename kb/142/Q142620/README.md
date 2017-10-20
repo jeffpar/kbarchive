@@ -6,6 +6,8 @@ permalink: /kb/142/Q142620/
 
 ## Q142620: Access Violation in Nwssvc.exe
 
+{% raw %}
+
 	Article: Q142620
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -59,3 +61,5 @@ permalink: /kb/142/Q142620/
 	
 	=============================================================================
 	
+
+{% endraw %}

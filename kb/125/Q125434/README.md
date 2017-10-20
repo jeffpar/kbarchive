@@ -6,6 +6,8 @@ permalink: /kb/125/Q125434/
 
 ## Q125434: ADT2: How to Modify Reattach NWIND Module in SOLUTION.MDB
 
+{% raw %}
+
 	Article: Q125434
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -283,3 +285,5 @@ permalink: /kb/125/Q125434/
 	
 	=============================================================================
 	
+
+{% endraw %}

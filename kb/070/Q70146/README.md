@@ -6,6 +6,8 @@ permalink: /kb/070/Q70146/
 
 ## Q70146: NMAKE Macros Cannot Expand to Multiple Command Lines
 
+{% raw %}
+
 	Article: Q70146
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/070/Q70146/
 	
 	=============================================================================
 	
+
+{% endraw %}

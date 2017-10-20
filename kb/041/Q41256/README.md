@@ -6,6 +6,8 @@ permalink: /kb/041/Q41256/
 
 ## Q41256: ROMable Code Using Microsoft C
 
+{% raw %}
+
 	Article: Q41256
 	Product(s): See article
 	Version(s): 5.10
@@ -31,3 +33,5 @@ permalink: /kb/041/Q41256/
 	who sells such packages. Microsoft also provides an application note
 	called "Writing ROMable Code in Microsoft C," which can be obtained
 	from Microsoft Product Support Services by calling (206) 454-2030.
+
+{% endraw %}

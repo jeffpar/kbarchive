@@ -6,6 +6,8 @@ permalink: /kb/218/Q218982/
 
 ## Q218982: HOWTO: Override IUnknown Methods in an ATL Server
 
+{% raw %}
+
 	Article: Q218982
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/218/Q218982/
 	
 	=============================================================================
 	
+
+{% endraw %}

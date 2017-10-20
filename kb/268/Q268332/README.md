@@ -6,6 +6,8 @@ permalink: /kb/268/Q268332/
 
 ## Q268332: Err Msg: Setup of Certificate Server Certificate Authority Fa
 
+{% raw %}
+
 	Article: Q268332
 	Product(s): Internet Information Server
 	Version(s): winnt:
@@ -78,3 +80,5 @@ permalink: /kb/268/Q268332/
 	
 	=============================================================================
 	
+
+{% endraw %}

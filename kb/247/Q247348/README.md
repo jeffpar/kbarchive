@@ -6,6 +6,8 @@ permalink: /kb/247/Q247348/
 
 ## Q247348: ASP 200 Error Setting Cookie Expiration Past January 19, 2038
 
+{% raw %}
+
 	Article: Q247348
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/247/Q247348/
 	
 	=============================================================================
 	
+
+{% endraw %}

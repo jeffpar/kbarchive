@@ -6,6 +6,8 @@ permalink: /kb/190/Q190111/
 
 ## Q190111: FIX: In Grid, 2nd Character Overwrites 1st If Old Value Is NULL
 
+{% raw %}
+
 	Article: Q190111
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -93,3 +95,5 @@ permalink: /kb/190/Q190111/
 	
 	=============================================================================
 	
+
+{% endraw %}

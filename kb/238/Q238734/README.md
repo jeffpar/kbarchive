@@ -6,6 +6,8 @@ permalink: /kb/238/Q238734/
 
 ## Q238734: How to Disable Microsoft CHAP Authentication
 
+{% raw %}
+
 	Article: Q238734
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -119,3 +121,5 @@ permalink: /kb/238/Q238734/
 	
 	=============================================================================
 	
+
+{% endraw %}

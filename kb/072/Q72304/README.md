@@ -6,6 +6,8 @@ permalink: /kb/072/Q72304/
 
 ## Q72304: OPTI 486 Memory Chips Require Special AWARD BIOS
 
+{% raw %}
+
 	Article: Q72304
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -73,3 +75,5 @@ permalink: /kb/072/Q72304/
 	
 	=============================================================================
 	
+
+{% endraw %}
