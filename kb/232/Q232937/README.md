@@ -6,6 +6,8 @@ permalink: /kb/232/Q232937/
 
 ## Q232937: UNC Shortcut Do Not Work with RAS to Server with Over 700 Shares
 
+{% raw %}
+
 	Article: Q232937
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -107,3 +109,5 @@ permalink: /kb/232/Q232937/
 	
 	=============================================================================
 	
+
+{% endraw %}

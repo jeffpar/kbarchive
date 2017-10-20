@@ -6,6 +6,8 @@ permalink: /kb/032/Q32164/
 
 ## Q32164: BASIC Example of CALL SetUEvent, ON UEVENT GOSUB Trapping
 
+{% raw %}
+
 	Article: Q32164
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -52,3 +54,5 @@ permalink: /kb/032/Q32164/
 	event1:
 	   PRINT "invoked event handler with value"; a
 	   RETURN
+
+{% endraw %}

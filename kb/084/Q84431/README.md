@@ -6,6 +6,8 @@ permalink: /kb/084/Q84431/
 
 ## Q84431: Sounds Option Unavailable in Alarm Clock
 
+{% raw %}
+
 	Article: Q84431
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0
@@ -86,3 +88,5 @@ permalink: /kb/084/Q84431/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140662/
 
 ## Q140662: World Atlas 96: Ess Sound Card Causes System to Hang
 
+{% raw %}
+
 	Article: Q140662
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996
@@ -66,3 +68,5 @@ permalink: /kb/140/Q140662/
 	
 	=============================================================================
 	
+
+{% endraw %}

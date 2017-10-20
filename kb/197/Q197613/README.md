@@ -6,6 +6,8 @@ permalink: /kb/197/Q197613/
 
 ## Q197613: Internet Directory: Updates have been discontinued
 
+{% raw %}
+
 	Article: Q197613
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/197/Q197613/
 	
 	=============================================================================
 	
+
+{% endraw %}

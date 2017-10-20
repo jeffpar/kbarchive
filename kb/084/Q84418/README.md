@@ -6,6 +6,8 @@ permalink: /kb/084/Q84418/
 
 ## Q84418: Bookshelf: Low-Memory Situation; Unable to Display Picture
 
+{% raw %}
+
 	Article: Q84418
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition; WINDOWS:3.1x
@@ -94,3 +96,5 @@ permalink: /kb/084/Q84418/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161256/
 
 ## Q161256: HOWTO: Customize Visual Basic Menus to Use Mnemonics
 
+{% raw %}
+
 	Article: Q161256
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/161/Q161256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97487/
 
 ## Q97487: Can't Find &quot;drivername=PCNIC&#36;&quot; in PROTOCOL.INI
 
+{% raw %}
+
 	Article: Q97487
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -67,3 +69,5 @@ permalink: /kb/097/Q97487/
 	
 	=============================================================================
 	
+
+{% endraw %}

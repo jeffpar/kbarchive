@@ -6,6 +6,8 @@ permalink: /kb/163/Q163813/
 
 ## Q163813: WD97: Boxes in Central European, Russian, or Greek Document
 
+{% raw %}
+
 	Article: Q163813
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -259,3 +261,5 @@ permalink: /kb/163/Q163813/
 	
 	=============================================================================
 	
+
+{% endraw %}

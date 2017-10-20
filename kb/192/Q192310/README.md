@@ -6,6 +6,8 @@ permalink: /kb/192/Q192310/
 
 ## Q192310: WD97: Formula in Table Is Incorrect When Using Track Changes
 
+{% raw %}
+
 	Article: Q192310
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/192/Q192310/
 	
 	=============================================================================
 	
+
+{% endraw %}

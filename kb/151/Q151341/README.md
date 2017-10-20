@@ -6,6 +6,8 @@ permalink: /kb/151/Q151341/
 
 ## Q151341: Gardening: Mouse Cursor Changes To Gardening Icon
 
+{% raw %}
+
 	Article: Q151341
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; winnt:3.51
@@ -48,3 +50,5 @@ permalink: /kb/151/Q151341/
 	
 	=============================================================================
 	
+
+{% endraw %}

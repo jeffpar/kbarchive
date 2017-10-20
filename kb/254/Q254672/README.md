@@ -6,6 +6,8 @@ permalink: /kb/254/Q254672/
 
 ## Q254672: FS2000 Err Msg: Cache File Open Error
 
+{% raw %}
+
 	Article: Q254672
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -167,3 +169,5 @@ permalink: /kb/254/Q254672/
 	
 	=============================================================================
 	
+
+{% endraw %}

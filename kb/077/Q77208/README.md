@@ -6,6 +6,8 @@ permalink: /kb/077/Q77208/
 
 ## Q77208: Windows 3.0 Err Msg: Unable to Run Setup for xxxxx Driver...
 
+{% raw %}
+
 	Article: Q77208
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -80,3 +82,5 @@ permalink: /kb/077/Q77208/
 	
 	=============================================================================
 	
+
+{% endraw %}

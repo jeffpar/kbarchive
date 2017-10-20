@@ -6,6 +6,8 @@ permalink: /kb/267/Q267851/
 
 ## Q267851: Automap Err Msg: Cannot Display End User License Agreement
 
+{% raw %}
+
 	Article: Q267851
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -129,3 +131,5 @@ permalink: /kb/267/Q267851/
 	
 	=============================================================================
 	
+
+{% endraw %}

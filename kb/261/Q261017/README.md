@@ -6,6 +6,8 @@ permalink: /kb/261/Q261017/
 
 ## Q261017: Motocross Madness 2: Ground Textures Appear in the Sky
 
+{% raw %}
+
 	Article: Q261017
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/261/Q261017/
 	
 	=============================================================================
 	
+
+{% endraw %}

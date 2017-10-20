@@ -6,6 +6,8 @@ permalink: /kb/154/Q154646/
 
 ## Q154646: Setup Stops with Blank Screen During Final Boot
 
+{% raw %}
+
 	Article: Q154646
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/154/Q154646/
 	
 	=============================================================================
 	
+
+{% endraw %}

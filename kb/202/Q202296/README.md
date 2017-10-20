@@ -6,6 +6,8 @@ permalink: /kb/202/Q202296/
 
 ## Q202296: SMS: Cannot Modify Time of Day in Software Metering Graph Wizard
 
+{% raw %}
+
 	Article: Q202296
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -46,3 +48,5 @@ permalink: /kb/202/Q202296/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216731/
 
 ## Q216731: FIX: Dtor of Explicitly Constructed Anonymous Temp Not Called
 
+{% raw %}
+
 	Article: Q216731
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -100,3 +102,5 @@ permalink: /kb/216/Q216731/
 	
 	=============================================================================
 	
+
+{% endraw %}

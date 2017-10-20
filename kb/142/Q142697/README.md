@@ -6,6 +6,8 @@ permalink: /kb/142/Q142697/
 
 ## Q142697: Unlocked Workstation Not Returned to Full Screen Application
 
+{% raw %}
+
 	Article: Q142697
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142697/
 	
 	=============================================================================
 	
+
+{% endraw %}

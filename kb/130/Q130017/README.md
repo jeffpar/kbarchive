@@ -6,6 +6,8 @@ permalink: /kb/130/Q130017/
 
 ## Q130017: How to Manage Migrated NetWare Users Accounts
 
+{% raw %}
+
 	Article: Q130017
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -144,3 +146,5 @@ permalink: /kb/130/Q130017/
 	
 	=============================================================================
 	
+
+{% endraw %}

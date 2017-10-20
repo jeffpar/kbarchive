@@ -6,6 +6,8 @@ permalink: /kb/148/Q148898/
 
 ## Q148898: How to Make Batch Mode Setup Install Minimum Files
 
+{% raw %}
+
 	Article: Q148898
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -95,3 +97,5 @@ permalink: /kb/148/Q148898/
 	
 	=============================================================================
 	
+
+{% endraw %}

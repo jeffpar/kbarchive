@@ -6,6 +6,8 @@ permalink: /kb/139/Q139373/
 
 ## Q139373: INF: Sample ODBC.INF for ODBC Drivers Shipped in Access 7.0
 
+{% raw %}
+
 	Article: Q139373
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5,3.0
@@ -386,3 +388,5 @@ permalink: /kb/139/Q139373/
 	
 	=============================================================================
 	
+
+{% endraw %}

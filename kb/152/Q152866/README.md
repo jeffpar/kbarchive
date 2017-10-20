@@ -6,6 +6,8 @@ permalink: /kb/152/Q152866/
 
 ## Q152866: XADM: No Command to Import MMF File on MIPS or Alpha
 
+{% raw %}
+
 	Article: Q152866
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -48,3 +50,5 @@ permalink: /kb/152/Q152866/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241177/
 
 ## Q241177: XCLN: An Error Occurred Publishing Your Internet Free/Busy Data
 
+{% raw %}
+
 	Article: Q241177
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/241/Q241177/
 	
 	=============================================================================
 	
+
+{% endraw %}

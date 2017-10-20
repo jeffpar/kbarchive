@@ -6,6 +6,8 @@ permalink: /kb/321/Q321021/
 
 ## Q321021: Unexpected Search Results Using Index Server with Local Web Site
 
+{% raw %}
+
 	Article: Q321021
 	Product(s): Internet Information Server
 	Version(s): 2.0,4.0,5.0
@@ -78,3 +80,5 @@ permalink: /kb/321/Q321021/
 	
 	=============================================================================
 	
+
+{% endraw %}

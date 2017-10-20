@@ -6,6 +6,8 @@ permalink: /kb/162/Q162454/
 
 ## Q162454: Cannot Enable Operator Assisted or Manual Dial Option in DUN
 
+{% raw %}
+
 	Article: Q162454
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/162/Q162454/
 	
 	=============================================================================
 	
+
+{% endraw %}

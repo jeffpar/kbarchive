@@ -6,6 +6,8 @@ permalink: /kb/317/Q317300/
 
 ## Q317300: SMS: &quot;Couldn't Get Defined Architecture&quot; Responses
 
+{% raw %}
+
 	Article: Q317300
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -76,3 +78,5 @@ permalink: /kb/317/Q317300/
 	
 	=============================================================================
 	
+
+{% endraw %}

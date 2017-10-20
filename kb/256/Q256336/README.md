@@ -6,6 +6,8 @@ permalink: /kb/256/Q256336/
 
 ## Q256336: Encarta Virtual Globe: You Must Log On with Administrator Rights
 
+{% raw %}
+
 	Article: Q256336
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :
@@ -48,3 +50,5 @@ permalink: /kb/256/Q256336/
 	
 	=============================================================================
 	
+
+{% endraw %}

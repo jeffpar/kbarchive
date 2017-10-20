@@ -6,6 +6,8 @@ permalink: /kb/139/Q139273/
 
 ## Q139273: STOP 0x0000000A Using 3Com 3C770 with Compaq and HP
 
+{% raw %}
+
 	Article: Q139273
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -76,3 +78,5 @@ permalink: /kb/139/Q139273/
 	
 	=============================================================================
 	
+
+{% endraw %}

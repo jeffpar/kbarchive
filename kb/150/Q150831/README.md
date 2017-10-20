@@ -6,6 +6,8 @@ permalink: /kb/150/Q150831/
 
 ## Q150831: Stop 0x0000000A in NBF.SYS When Running Under Stress
 
+{% raw %}
+
 	Article: Q150831
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -49,3 +51,5 @@ permalink: /kb/150/Q150831/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129451/
 
 ## Q129451: Microsoft Windows Simplified Chinese 3.2 Upgrade Is Available
 
+{% raw %}
+
 	Article: Q129451
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1; :3.2
@@ -56,3 +58,5 @@ permalink: /kb/129/Q129451/
 	
 	=============================================================================
 	
+
+{% endraw %}

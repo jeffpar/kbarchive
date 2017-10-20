@@ -6,6 +6,8 @@ permalink: /kb/149/Q149906/
 
 ## Q149906: NetWare Server Can't Be Added to New Domain
 
+{% raw %}
+
 	Article: Q149906
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -52,3 +54,5 @@ permalink: /kb/149/Q149906/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235978/
 
 ## Q235978: XGEN: Helpful Tips and Suggestions for Applying Exchange SPs
 
+{% raw %}
+
 	Article: Q235978
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/235/Q235978/
 	
 	=============================================================================
 	
+
+{% endraw %}

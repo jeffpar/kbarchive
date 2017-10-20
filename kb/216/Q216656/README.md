@@ -6,6 +6,8 @@ permalink: /kb/216/Q216656/
 
 ## Q216656: INFO: &quot;No matching symbolic info&quot; for Comctl32.dll, Msidle.dll
 
+{% raw %}
+
 	Article: Q216656
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -71,3 +73,5 @@ permalink: /kb/216/Q216656/
 	
 	=============================================================================
 	
+
+{% endraw %}

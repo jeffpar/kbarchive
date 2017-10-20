@@ -6,6 +6,8 @@ permalink: /kb/049/Q49326/
 
 ## Q49326: Determining Number of Partitions Per Hard Disk
 
+{% raw %}
+
 	Article: Q49326
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -79,3 +81,5 @@ permalink: /kb/049/Q49326/
 	
 	=============================================================================
 	
+
+{% endraw %}

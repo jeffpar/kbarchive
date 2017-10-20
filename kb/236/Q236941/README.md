@@ -6,6 +6,8 @@ permalink: /kb/236/Q236941/
 
 ## Q236941: BUG: VB 6.0 Fails if ADO DataControl References fMoreData
 
+{% raw %}
+
 	Article: Q236941
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
@@ -92,3 +94,5 @@ permalink: /kb/236/Q236941/
 	
 	=============================================================================
 	
+
+{% endraw %}

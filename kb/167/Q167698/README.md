@@ -6,6 +6,8 @@ permalink: /kb/167/Q167698/
 
 ## Q167698: HOWTO: Help95.exe Implements Windows 95 Style Help
 
+{% raw %}
+
 	Article: Q167698
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,4.2b,5.0,6.0
@@ -147,3 +149,5 @@ permalink: /kb/167/Q167698/
 	
 	=============================================================================
 	
+
+{% endraw %}

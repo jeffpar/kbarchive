@@ -6,6 +6,8 @@ permalink: /kb/194/Q194393/
 
 ## Q194393: New Window From Here Option in MMC May Cause Fatal Error
 
+{% raw %}
+
 	Article: Q194393
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/194/Q194393/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42830/
 
 ## Q42830: Exception #13 at xxxx:xxxx Error Code 0 Caused by QEMM
 
+{% raw %}
+
 	Article: Q42830
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -33,3 +35,5 @@ permalink: /kb/042/Q42830/
 	diagnostic does not necessarily indicate the precise location of the
 	error, it does indicate the location at which the error was first
 	detected.
+
+{% endraw %}

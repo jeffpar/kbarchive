@@ -6,6 +6,8 @@ permalink: /kb/162/Q162617/
 
 ## Q162617: How to Install Windows NT from Multiple Distribution Sources
 
+{% raw %}
+
 	Article: Q162617
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/162/Q162617/
 	
 	=============================================================================
 	
+
+{% endraw %}

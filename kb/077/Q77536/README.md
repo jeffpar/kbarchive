@@ -6,6 +6,8 @@ permalink: /kb/077/Q77536/
 
 ## Q77536: Cannot Use PC Tools Diskcopy Command with Windows 3.0
 
+{% raw %}
+
 	Article: Q77536
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/077/Q77536/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127958/
 
 ## Q127958: Microsoft Systems Journal: May 1995
 
+{% raw %}
+
 	Article: Q127958
 	Product(s): Miscrosoft Systems Journal
 	Version(s): for May 1995
@@ -123,3 +125,5 @@ permalink: /kb/127/Q127958/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150655/
 
 ## Q150655: Mastering Visual C++ 4: Contents of README.WRI
 
+{% raw %}
+
 	Article: Q150655
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a
@@ -409,3 +411,5 @@ permalink: /kb/150/Q150655/
 	
 	=============================================================================
 	
+
+{% endraw %}

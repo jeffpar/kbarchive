@@ -6,6 +6,8 @@ permalink: /kb/316/Q316268/
 
 ## Q316268: INFO: Product Key For Products from Subscriber Downloads Site
 
+{% raw %}
+
 	Article: Q316268
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/316/Q316268/
 	
 	=============================================================================
 	
+
+{% endraw %}

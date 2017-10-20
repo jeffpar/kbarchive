@@ -6,6 +6,8 @@ permalink: /kb/261/Q261155/
 
 ## Q261155: XFOR: Migration Wizard Limits New Passwords to 14 Characters
 
+{% raw %}
+
 	Article: Q261155
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.x,5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/261/Q261155/
 	
 	=============================================================================
 	
+
+{% endraw %}

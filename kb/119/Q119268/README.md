@@ -6,6 +6,8 @@ permalink: /kb/119/Q119268/
 
 ## Q119268: WFWG 3.11 Print Manager Causes 3- to 5-Second Pauses
 
+{% raw %}
+
 	Article: Q119268
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/119/Q119268/
 	
 	=============================================================================
 	
+
+{% endraw %}

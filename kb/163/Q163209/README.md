@@ -6,6 +6,8 @@ permalink: /kb/163/Q163209/
 
 ## Q163209: SNA Server Fails to Send STSN Error from SLI Application
 
+{% raw %}
+
 	Article: Q163209
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -74,3 +76,5 @@ permalink: /kb/163/Q163209/
 	
 	=============================================================================
 	
+
+{% endraw %}

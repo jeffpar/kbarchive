@@ -6,6 +6,8 @@ permalink: /kb/188/Q188542/
 
 ## Q188542: PRB: VB 4.0 16-Bit Add-Ins Fail After Installing VB 6.0
 
+{% raw %}
+
 	Article: Q188542
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -108,3 +110,5 @@ permalink: /kb/188/Q188542/
 	
 	=============================================================================
 	
+
+{% endraw %}

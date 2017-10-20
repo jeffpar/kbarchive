@@ -6,6 +6,8 @@ permalink: /kb/169/Q169416/
 
 ## Q169416: RIP Routes May Have a Different Metric Than Expected
 
+{% raw %}
+
 	Article: Q169416
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/169/Q169416/
 	
 	=============================================================================
 	
+
+{% endraw %}

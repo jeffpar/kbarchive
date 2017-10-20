@@ -6,6 +6,8 @@ permalink: /kb/086/Q86533/
 
 ## Q86533: Panasonic EPL-8541 and EPL-8543 Printers and Windows
 
+{% raw %}
+
 	Article: Q86533
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/086/Q86533/
 	
 	=============================================================================
 	
+
+{% endraw %}

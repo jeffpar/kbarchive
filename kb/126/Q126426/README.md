@@ -6,6 +6,8 @@ permalink: /kb/126/Q126426/
 
 ## Q126426: PC MAPI: MAPIDeleteMail Not Place Deleted Mail in Wastebasket
 
+{% raw %}
+
 	Article: Q126426
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -48,3 +50,5 @@ permalink: /kb/126/Q126426/
 	
 	=============================================================================
 	
+
+{% endraw %}

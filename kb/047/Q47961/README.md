@@ -6,6 +6,8 @@ permalink: /kb/047/Q47961/
 
 ## Q47961: INFO: Extracting Function ptr from a Variable arg List Function
 
+{% raw %}
+
 	Article: Q47961
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0
@@ -121,3 +123,5 @@ permalink: /kb/047/Q47961/
 	
 	=============================================================================
 	
+
+{% endraw %}

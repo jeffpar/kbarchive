@@ -6,6 +6,8 @@ permalink: /kb/069/Q69540/
 
 ## Q69540: JMP to a Far Address Lists Segment First in Listing File
 
+{% raw %}
+
 	Article: Q69540
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -70,3 +72,5 @@ permalink: /kb/069/Q69540/
 	
 	=============================================================================
 	
+
+{% endraw %}

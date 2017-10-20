@@ -6,6 +6,8 @@ permalink: /kb/032/Q32217/
 
 ## Q32217: Using B_OnExit Across a CHAIN Hangs System; Compiled BASIC
 
+{% raw %}
+
 	Article: Q32217
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -100,3 +102,5 @@ permalink: /kb/032/Q32217/
 	{                                       /* called before any restarting */
 	  printf ("\nIn C TermProc routine\n"); /* or termination of the program. */
 	}
+
+{% endraw %}

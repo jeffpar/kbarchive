@@ -6,6 +6,8 @@ permalink: /kb/104/Q104639/
 
 ## Q104639: INFO: Dynamic Memory Allocation for Two-Dimensional Arrays
 
+{% raw %}
+
 	Article: Q104639
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:6.0ax,7.0;OS/2:6.0,6.00a;WINDOWS:1.0,1.5;WINDOWS NT:1.0,2.0,2.1,4.0,4.1,5.0
@@ -160,3 +162,5 @@ permalink: /kb/104/Q104639/
 	
 	=============================================================================
 	
+
+{% endraw %}

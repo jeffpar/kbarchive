@@ -6,6 +6,8 @@ permalink: /kb/086/Q86160/
 
 ## Q86160: PROFS: How to Increase Virtual Storage and Disk Space
 
+{% raw %}
+
 	Article: Q86160
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -48,3 +50,5 @@ permalink: /kb/086/Q86160/
 	
 	=============================================================================
 	
+
+{% endraw %}

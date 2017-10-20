@@ -6,6 +6,8 @@ permalink: /kb/050/Q50104/
 
 ## Q50104: Comparison between DRIVPARM and DRIVER.SYS
 
+{% raw %}
+
 	Article: Q50104
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/050/Q50104/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32890/
 
 ## Q32890: extern int i = 10; Compiles without Error
 
+{% raw %}
+
 	Article: Q32890
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -32,3 +34,5 @@ permalink: /kb/032/Q32890/
 	
 	  Therefore, the compiler does not generate a warning or error for
 	either of these cases.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76182/
 
 ## Q76182: Above DISC Compatibility with DOS=HIGH or HIMEM.SYS
 
+{% raw %}
+
 	Article: Q76182
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/076/Q76182/
 	
 	=============================================================================
 	
+
+{% endraw %}

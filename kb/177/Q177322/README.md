@@ -6,6 +6,8 @@ permalink: /kb/177/Q177322/
 
 ## Q177322: XADM: -1022 or -1026 Error Verifying Consistency of Databases
 
+{% raw %}
+
 	Article: Q177322
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/177/Q177322/
 	
 	=============================================================================
 	
+
+{% endraw %}

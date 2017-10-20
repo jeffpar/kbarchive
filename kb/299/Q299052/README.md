@@ -6,6 +6,8 @@ permalink: /kb/299/Q299052/
 
 ## Q299052: Automap: Some Data Is Not Displayed After Import into Pushpins
 
+{% raw %}
+
 	Article: Q299052
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/299/Q299052/
 	
 	=============================================================================
 	
+
+{% endraw %}

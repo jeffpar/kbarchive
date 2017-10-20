@@ -6,6 +6,8 @@ permalink: /kb/104/Q104047/
 
 ## Q104047: How to Determine the Current DO Nesting Level
 
+{% raw %}
+
 	Article: Q104047
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.01; MS-DOS:1.02,2.0,2.01,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -94,3 +96,5 @@ permalink: /kb/104/Q104047/
 	
 	=============================================================================
 	
+
+{% endraw %}

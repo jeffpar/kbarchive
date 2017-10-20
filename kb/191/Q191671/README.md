@@ -6,6 +6,8 @@ permalink: /kb/191/Q191671/
 
 ## Q191671: FIX: Calling AINSTANCE in Loop Causes Memory Leak
 
+{% raw %}
+
 	Article: Q191671
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -66,3 +68,5 @@ permalink: /kb/191/Q191671/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192686/
 
 ## Q192686: INFO: Third-Party Reference Material List for Visual FoxPro 6.0
 
+{% raw %}
+
 	Article: Q192686
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/192/Q192686/
 	
 	=============================================================================
 	
+
+{% endraw %}

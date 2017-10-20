@@ -6,6 +6,8 @@ permalink: /kb/219/Q219295/
 
 ## Q219295: WINS Replication May Overwrite or Merge Static 1C Records
 
+{% raw %}
+
 	Article: Q219295
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -68,3 +70,5 @@ permalink: /kb/219/Q219295/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246253/
 
 ## Q246253: XADM: Site Folders Deleted for Exchange Sites in the Directory
 
+{% raw %}
+
 	Article: Q246253
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -127,3 +129,5 @@ permalink: /kb/246/Q246253/
 	
 	=============================================================================
 	
+
+{% endraw %}

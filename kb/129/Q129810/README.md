@@ -6,6 +6,8 @@ permalink: /kb/129/Q129810/
 
 ## Q129810: MS Paint Free-Form Select Tool Appears to Select Rectangle
 
+{% raw %}
+
 	Article: Q129810
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/129/Q129810/
 	
 	=============================================================================
 	
+
+{% endraw %}

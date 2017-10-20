@@ -6,6 +6,8 @@ permalink: /kb/125/Q125747/
 
 ## Q125747: Paradox for DOS Over CSNW Causes Windows NT to Hang
 
+{% raw %}
+
 	Article: Q125747
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -61,3 +63,5 @@ permalink: /kb/125/Q125747/
 	
 	=============================================================================
 	
+
+{% endraw %}

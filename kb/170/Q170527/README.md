@@ -6,6 +6,8 @@ permalink: /kb/170/Q170527/
 
 ## Q170527: WD97: Objects Print Incorrectly on Non-Square Resolutions
 
+{% raw %}
+
 	Article: Q170527
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:7.0,97
@@ -131,3 +133,5 @@ permalink: /kb/170/Q170527/
 	
 	=============================================================================
 	
+
+{% endraw %}

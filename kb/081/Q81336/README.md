@@ -6,6 +6,8 @@ permalink: /kb/081/Q81336/
 
 ## Q81336: ExeView.exe Extracts and Displays Application Resources
 
+{% raw %}
+
 	Article: Q81336
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -79,3 +81,5 @@ permalink: /kb/081/Q81336/
 	
 	=============================================================================
 	
+
+{% endraw %}

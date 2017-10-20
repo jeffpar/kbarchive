@@ -6,6 +6,8 @@ permalink: /kb/189/Q189991/
 
 ## Q189991: PRB: Error Setting DateTimePicker's Month Programmatically
 
+{% raw %}
+
 	Article: Q189991
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -115,3 +117,5 @@ permalink: /kb/189/Q189991/
 	
 	=============================================================================
 	
+
+{% endraw %}

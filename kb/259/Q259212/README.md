@@ -6,6 +6,8 @@ permalink: /kb/259/Q259212/
 
 ## Q259212: XCLN: Journaling Configured But Not Storing Data in Outlook 2000
 
+{% raw %}
+
 	Article: Q259212
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/259/Q259212/
 	
 	=============================================================================
 	
+
+{% endraw %}

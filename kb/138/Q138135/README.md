@@ -6,6 +6,8 @@ permalink: /kb/138/Q138135/
 
 ## Q138135: Restoring Backups Created with Earlier Versions of MS-DOS
 
+{% raw %}
+
 	Article: Q138135
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -78,3 +80,5 @@ permalink: /kb/138/Q138135/
 	
 	=============================================================================
 	
+
+{% endraw %}

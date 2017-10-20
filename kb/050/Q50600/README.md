@@ -6,6 +6,8 @@ permalink: /kb/050/Q50600/
 
 ## Q50600: Graphics Routines Available in OS/2 with GRTEXTP Library
 
+{% raw %}
+
 	Article: Q50600
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.0,5.1
@@ -54,3 +56,5 @@ permalink: /kb/050/Q50600/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193967/
 
 ## Q193967: HOWTO: Determine the New Month Selected in Calendar Control
 
+{% raw %}
+
 	Article: Q193967
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -149,3 +151,5 @@ permalink: /kb/193/Q193967/
 	
 	=============================================================================
 	
+
+{% endraw %}

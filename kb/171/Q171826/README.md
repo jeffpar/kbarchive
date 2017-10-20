@@ -6,6 +6,8 @@ permalink: /kb/171/Q171826/
 
 ## Q171826: FIX: Tabbing Problems with Controls Contained with Controls
 
+{% raw %}
+
 	Article: Q171826
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -89,3 +91,5 @@ permalink: /kb/171/Q171826/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131753/
 
 ## Q131753: Private Data Sessions Require Additional File Handles
 
+{% raw %}
+
 	Article: Q131753
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/131/Q131753/
 	
 	=============================================================================
 	
+
+{% endraw %}

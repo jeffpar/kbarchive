@@ -6,6 +6,8 @@ permalink: /kb/260/Q260826/
 
 ## Q260826: SMS: Multiple Advertisements May Not Work If One Is Unscheduled
 
+{% raw %}
+
 	Article: Q260826
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -60,3 +62,5 @@ permalink: /kb/260/Q260826/
 	
 	=============================================================================
 	
+
+{% endraw %}

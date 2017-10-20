@@ -6,6 +6,8 @@ permalink: /kb/135/Q135152/
 
 ## Q135152: Text Appears as Blocky Characters with S3 Video Card
 
+{% raw %}
+
 	Article: Q135152
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135152/
 	
 	=============================================================================
 	
+
+{% endraw %}

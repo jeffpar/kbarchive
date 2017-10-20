@@ -6,6 +6,8 @@ permalink: /kb/162/Q162467/
 
 ## Q162467: AppleTalkClientSupport and VinesClientSupport May Not Work
 
+{% raw %}
+
 	Article: Q162467
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -104,3 +106,5 @@ permalink: /kb/162/Q162467/
 	
 	=============================================================================
 	
+
+{% endraw %}

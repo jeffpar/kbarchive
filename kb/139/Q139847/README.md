@@ -6,6 +6,8 @@ permalink: /kb/139/Q139847/
 
 ## Q139847: Cannot Connect Using NET Command with Dial-Up Networking
 
+{% raw %}
+
 	Article: Q139847
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -73,3 +75,5 @@ permalink: /kb/139/Q139847/
 	
 	=============================================================================
 	
+
+{% endraw %}

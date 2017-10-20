@@ -6,6 +6,8 @@ permalink: /kb/092/Q92954/
 
 ## Q92954: PRB: PWB Hangs Pasting Text from Windowed MS-DOS System Menu
 
+{% raw %}
+
 	Article: Q92954
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.0,2.1.49
@@ -50,3 +52,5 @@ permalink: /kb/092/Q92954/
 	
 	=============================================================================
 	
+
+{% endraw %}

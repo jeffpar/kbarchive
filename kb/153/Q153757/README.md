@@ -6,6 +6,8 @@ permalink: /kb/153/Q153757/
 
 ## Q153757: XCON: Dynamic RAS Connector Ignores Defined Prefix and Suffix
 
+{% raw %}
+
 	Article: Q153757
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153757/
 	
 	=============================================================================
 	
+
+{% endraw %}

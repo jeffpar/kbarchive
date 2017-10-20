@@ -6,6 +6,8 @@ permalink: /kb/229/Q229089/
 
 ## Q229089: XADM: Unable to Reply All to Forwarded Post from a Public Folder
 
+{% raw %}
+
 	Article: Q229089
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -130,3 +132,5 @@ permalink: /kb/229/Q229089/
 	
 	=============================================================================
 	
+
+{% endraw %}

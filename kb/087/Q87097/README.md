@@ -6,6 +6,8 @@ permalink: /kb/087/Q87097/
 
 ## Q87097: Content of CHANGES.TXT from Multimedia OEM Supplemental Kit
 
+{% raw %}
+
 	Article: Q87097
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -136,3 +138,5 @@ permalink: /kb/087/Q87097/
 	
 	=============================================================================
 	
+
+{% endraw %}

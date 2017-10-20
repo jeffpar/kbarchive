@@ -6,6 +6,8 @@ permalink: /kb/309/Q309015/
 
 ## Q309015: ODBC Provider for DB2 Doesn't Allow &quot;Blank&quot; Local APPC LU Alias
 
+{% raw %}
+
 	Article: Q309015
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/309/Q309015/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237189/
 
 ## Q237189: XFOR: Subject Prefix &quot;Re:&quot; Changes in CCMC
 
+{% raw %}
+
 	Article: Q237189
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -100,3 +102,5 @@ permalink: /kb/237/Q237189/
 	
 	=============================================================================
 	
+
+{% endraw %}

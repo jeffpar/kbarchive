@@ -6,6 +6,8 @@ permalink: /kb/128/Q128900/
 
 ## Q128900: PCMCIA Socket Not Detected on IBM ThinkPad 720C
 
+{% raw %}
+
 	Article: Q128900
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/128/Q128900/
 	
 	=============================================================================
 	
+
+{% endraw %}

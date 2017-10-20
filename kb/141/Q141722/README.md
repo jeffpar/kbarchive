@@ -6,6 +6,8 @@ permalink: /kb/141/Q141722/
 
 ## Q141722: How to Prevent a Grid Header from Being Resized Interactively
 
+{% raw %}
+
 	Article: Q141722
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -80,3 +82,5 @@ permalink: /kb/141/Q141722/
 	
 	=============================================================================
 	
+
+{% endraw %}

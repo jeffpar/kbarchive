@@ -6,6 +6,8 @@ permalink: /kb/153/Q153665/
 
 ## Q153665: SPX Data Stream Type Header May Reset Unexpectedly
 
+{% raw %}
+
 	Article: Q153665
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -82,3 +84,5 @@ permalink: /kb/153/Q153665/
 	
 	=============================================================================
 	
+
+{% endraw %}

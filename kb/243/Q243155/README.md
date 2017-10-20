@@ -6,6 +6,8 @@ permalink: /kb/243/Q243155/
 
 ## Q243155: XADM: Offline Address Book Download Does Not Work
 
+{% raw %}
+
 	Article: Q243155
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/243/Q243155/
 	
 	=============================================================================
 	
+
+{% endraw %}

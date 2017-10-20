@@ -6,6 +6,8 @@ permalink: /kb/047/Q47004/
 
 ## Q47004: Overlaying Charts and Displaying Multiple Charts on the Screen
 
+{% raw %}
+
 	Article: Q47004
 	Product(s): See article
 	Version(s): 2.00
@@ -152,3 +154,5 @@ permalink: /kb/047/Q47004/
 	
 	    _setvideomode(_DEFAULTMODE);
 	}
+
+{% endraw %}

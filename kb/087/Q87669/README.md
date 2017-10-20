@@ -6,6 +6,8 @@ permalink: /kb/087/Q87669/
 
 ## Q87669: FoxBASE+ Error Messages: F - H
 
+{% raw %}
+
 	Article: Q87669
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.17
@@ -109,3 +111,5 @@ permalink: /kb/087/Q87669/
 	
 	=============================================================================
 	
+
+{% endraw %}

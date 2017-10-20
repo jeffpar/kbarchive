@@ -6,6 +6,8 @@ permalink: /kb/218/Q218453/
 
 ## Q218453: FIX: Custom Expr. Builder Value Not Accepted in Report Designer
 
+{% raw %}
+
 	Article: Q218453
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -118,3 +120,5 @@ permalink: /kb/218/Q218453/
 	
 	=============================================================================
 	
+
+{% endraw %}

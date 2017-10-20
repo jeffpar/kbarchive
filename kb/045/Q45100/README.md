@@ -6,6 +6,8 @@ permalink: /kb/045/Q45100/
 
 ## Q45100: PIFEDIT.EXE Allows Invalid Filenames
 
+{% raw %}
+
 	Article: Q45100
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -35,3 +37,5 @@ permalink: /kb/045/Q45100/
 	
 	=============================================================================
 	
+
+{% endraw %}

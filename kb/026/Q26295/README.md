@@ -6,6 +6,8 @@ permalink: /kb/026/Q26295/
 
 ## Q26295: Valid Characters for a Volume Label
 
+{% raw %}
+
 	Article: Q26295
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/026/Q26295/
 	
 	=============================================================================
 	
+
+{% endraw %}

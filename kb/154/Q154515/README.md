@@ -6,6 +6,8 @@ permalink: /kb/154/Q154515/
 
 ## Q154515: HOWTO: Print Text Sideways in a Picture Box Using Win32 API
 
+{% raw %}
+
 	Article: Q154515
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,6.0
@@ -121,3 +123,5 @@ permalink: /kb/154/Q154515/
 	
 	=============================================================================
 	
+
+{% endraw %}

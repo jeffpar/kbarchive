@@ -6,6 +6,8 @@ permalink: /kb/182/Q182678/
 
 ## Q182678: COBOL FILLER Generated Incorrectly After Recordset Array
 
+{% raw %}
+
 	Article: Q182678
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -94,3 +96,5 @@ permalink: /kb/182/Q182678/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143089/
 
 ## Q143089: FP: Multiple Errors Trying to Access Web Sites
 
+{% raw %}
+
 	Article: Q143089
 	Product(s): Word Front Page
 	Version(s): windows:1.0,97,macintosh:1.0
@@ -159,3 +161,5 @@ permalink: /kb/143/Q143089/
 	
 	=============================================================================
 	
+
+{% endraw %}

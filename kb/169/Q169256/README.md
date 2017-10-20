@@ -6,6 +6,8 @@ permalink: /kb/169/Q169256/
 
 ## Q169256: WD97: Scrolling Causes Text to &quot;Disappear&quot;
 
+{% raw %}
+
 	Article: Q169256
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/169/Q169256/
 	
 	=============================================================================
 	
+
+{% endraw %}

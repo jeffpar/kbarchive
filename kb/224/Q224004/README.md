@@ -6,6 +6,8 @@ permalink: /kb/224/Q224004/
 
 ## Q224004: Encarta Err Msg: There Is a Problem with Your Sound Card...
 
+{% raw %}
+
 	Article: Q224004
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -150,3 +152,5 @@ permalink: /kb/224/Q224004/
 	
 	=============================================================================
 	
+
+{% endraw %}

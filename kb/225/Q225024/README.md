@@ -6,6 +6,8 @@ permalink: /kb/225/Q225024/
 
 ## Q225024: PING -T Stops Timing Out After 50 Days
 
+{% raw %}
+
 	Article: Q225024
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -58,3 +60,5 @@ permalink: /kb/225/Q225024/
 	
 	=============================================================================
 	
+
+{% endraw %}

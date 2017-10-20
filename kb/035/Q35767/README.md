@@ -6,6 +6,8 @@ permalink: /kb/035/Q35767/
 
 ## Q35767: HOWTO: Obtain an Application's Instance Handle
 
+{% raw %}
+
 	Article: Q35767
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -60,3 +62,5 @@ permalink: /kb/035/Q35767/
 	
 	=============================================================================
 	
+
+{% endraw %}

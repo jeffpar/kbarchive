@@ -6,6 +6,8 @@ permalink: /kb/190/Q190789/
 
 ## Q190789: PRB: Access Method Fires for Properties that Do Not Exist
 
+{% raw %}
+
 	Article: Q190789
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -87,3 +89,5 @@ permalink: /kb/190/Q190789/
 	
 	=============================================================================
 	
+
+{% endraw %}

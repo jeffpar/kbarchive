@@ -6,6 +6,8 @@ permalink: /kb/132/Q132887/
 
 ## Q132887: Err Msg: Unable to Start WinPopup Because No Compatible...
 
+{% raw %}
+
 	Article: Q132887
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/132/Q132887/
 	
 	=============================================================================
 	
+
+{% endraw %}

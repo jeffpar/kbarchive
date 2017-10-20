@@ -6,6 +6,8 @@ permalink: /kb/203/Q203844/
 
 ## Q203844: Err Msg: Trip Planner 98 Requires 256 Colors and 640 x 480...
 
+{% raw %}
+
 	Article: Q203844
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/203/Q203844/
 	
 	=============================================================================
 	
+
+{% endraw %}

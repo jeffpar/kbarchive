@@ -6,6 +6,8 @@ permalink: /kb/142/Q142688/
 
 ## Q142688: Tape Devices Tool Cannot Find Location for Floppy Tape Driver
 
+{% raw %}
+
 	Article: Q142688
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/142/Q142688/
 	
 	=============================================================================
 	
+
+{% endraw %}

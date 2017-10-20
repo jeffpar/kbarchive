@@ -6,6 +6,8 @@ permalink: /kb/151/Q151616/
 
 ## Q151616: Testnet.exe Only Available with BackOffice SMS
 
+{% raw %}
+
 	Article: Q151616
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -41,3 +43,5 @@ permalink: /kb/151/Q151616/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/306/Q306060/
 
 ## Q306060: XADM: Mailbox Manager Can't Notify Users After Cleaning Mailbox
 
+{% raw %}
+
 	Article: Q306060
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -153,3 +155,5 @@ permalink: /kb/306/Q306060/
 	
 	=============================================================================
 	
+
+{% endraw %}

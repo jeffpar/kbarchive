@@ -6,6 +6,8 @@ permalink: /kb/252/Q252995/
 
 ## Q252995: Performance Recommendations for Microsoft Metadirectory Services
 
+{% raw %}
+
 	Article: Q252995
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -82,3 +84,5 @@ permalink: /kb/252/Q252995/
 	
 	=============================================================================
 	
+
+{% endraw %}

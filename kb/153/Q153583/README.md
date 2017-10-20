@@ -6,6 +6,8 @@ permalink: /kb/153/Q153583/
 
 ## Q153583: HOWTO: How to Change Case of a Control Name Within the Code Wind
 
+{% raw %}
+
 	Article: Q153583
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -88,3 +90,5 @@ permalink: /kb/153/Q153583/
 	
 	=============================================================================
 	
+
+{% endraw %}

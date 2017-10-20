@@ -6,6 +6,8 @@ permalink: /kb/196/Q196720/
 
 ## Q196720: WD97: Footnote Moved to Next Page
 
+{% raw %}
+
 	Article: Q196720
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -220,3 +222,5 @@ permalink: /kb/196/Q196720/
 	
 	=============================================================================
 	
+
+{% endraw %}

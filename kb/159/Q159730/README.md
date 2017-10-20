@@ -6,6 +6,8 @@ permalink: /kb/159/Q159730/
 
 ## Q159730: WD97: Word 97 Doesn't Save Version When Document Is Closed
 
+{% raw %}
+
 	Article: Q159730
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/159/Q159730/
 	
 	=============================================================================
 	
+
+{% endraw %}

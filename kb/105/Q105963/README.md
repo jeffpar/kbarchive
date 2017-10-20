@@ -6,6 +6,8 @@ permalink: /kb/105/Q105963/
 
 ## Q105963: PC Forms: Unable to Set Message Priority in E-Forms
 
+{% raw %}
+
 	Article: Q105963
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -54,3 +56,5 @@ permalink: /kb/105/Q105963/
 	
 	=============================================================================
 	
+
+{% endraw %}

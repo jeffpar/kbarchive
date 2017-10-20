@@ -6,6 +6,8 @@ permalink: /kb/101/Q101833/
 
 ## Q101833: PC DB: How to Remove Stranded .ATT and .MAI Files
 
+{% raw %}
+
 	Article: Q101833
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -58,3 +60,5 @@ permalink: /kb/101/Q101833/
 	
 	=============================================================================
 	
+
+{% endraw %}

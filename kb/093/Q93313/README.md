@@ -6,6 +6,8 @@ permalink: /kb/093/Q93313/
 
 ## Q93313: Windows Components Not Installed by Default SETUP.SHH File
 
+{% raw %}
+
 	Article: Q93313
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -151,3 +153,5 @@ permalink: /kb/093/Q93313/
 	
 	=============================================================================
 	
+
+{% endraw %}

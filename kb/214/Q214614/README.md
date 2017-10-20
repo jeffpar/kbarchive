@@ -6,6 +6,8 @@ permalink: /kb/214/Q214614/
 
 ## Q214614: APPC Application Works on SNA 2.11, Fails on SNA 4.0
 
+{% raw %}
+
 	Article: Q214614
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0SP3,4.0,4.0SP1
@@ -93,3 +95,5 @@ permalink: /kb/214/Q214614/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160130/
 
 ## Q160130: Hellbender: Hat View When Pressing SideWinder Buttons
 
+{% raw %}
+
 	Article: Q160130
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,1.0a,1.0b
@@ -49,3 +51,5 @@ permalink: /kb/160/Q160130/
 	
 	=============================================================================
 	
+
+{% endraw %}

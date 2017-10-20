@@ -6,6 +6,8 @@ permalink: /kb/226/Q226831/
 
 ## Q226831: SMS: Slow File Transfer from Alpha Servers to Win95/98 Clients
 
+{% raw %}
+
 	Article: Q226831
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/226/Q226831/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200299/
 
 ## Q200299: BUG: Format or DatePart Functions Can Return Wrong Week Number
 
+{% raw %}
+
 	Article: Q200299
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -285,3 +287,5 @@ permalink: /kb/200/Q200299/
 	
 	=============================================================================
 	
+
+{% endraw %}

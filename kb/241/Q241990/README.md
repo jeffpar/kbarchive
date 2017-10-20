@@ -6,6 +6,8 @@ permalink: /kb/241/Q241990/
 
 ## Q241990: Zone: Getting Started Page Loads When You Click Game Rooms Link
 
+{% raw %}
+
 	Article: Q241990
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/241/Q241990/
 	
 	=============================================================================
 	
+
+{% endraw %}

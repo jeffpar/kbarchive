@@ -6,6 +6,8 @@ permalink: /kb/093/Q93478/
 
 ## Q93478: WFWG May Hang Loading in Enhanced Mode Without a Terminator
 
+{% raw %}
+
 	Article: Q93478
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -109,3 +111,5 @@ permalink: /kb/093/Q93478/
 	
 	=============================================================================
 	
+
+{% endraw %}

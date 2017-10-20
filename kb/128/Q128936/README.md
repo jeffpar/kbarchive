@@ -6,6 +6,8 @@ permalink: /kb/128/Q128936/
 
 ## Q128936: Dell Omniplex Hard Disk Activity Light Remains On
 
+{% raw %}
+
 	Article: Q128936
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/128/Q128936/
 	
 	=============================================================================
 	
+
+{% endraw %}

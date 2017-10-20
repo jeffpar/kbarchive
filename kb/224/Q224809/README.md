@@ -6,6 +6,8 @@ permalink: /kb/224/Q224809/
 
 ## Q224809: Streets and Trips 2000 Err Msg: Unable to Open Response File...
 
+{% raw %}
+
 	Article: Q224809
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -239,3 +241,5 @@ permalink: /kb/224/Q224809/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150682/
 
 ## Q150682: FP: Error Browsing Page, Using WebBot Component
 
+{% raw %}
+
 	Article: Q150682
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -77,3 +79,5 @@ permalink: /kb/150/Q150682/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233430/
 
 ## Q233430: Business Planner: Printed Output Cut Off at Right Margin of Page
 
+{% raw %}
+
 	Article: Q233430
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/233/Q233430/
 	
 	=============================================================================
 	
+
+{% endraw %}

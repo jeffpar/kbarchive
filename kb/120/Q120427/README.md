@@ -6,6 +6,8 @@ permalink: /kb/120/Q120427/
 
 ## Q120427: Quattro Pro Prints No Edges or Borders on Postscript Printers
 
+{% raw %}
+
 	Article: Q120427
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120427/
 	
 	=============================================================================
 	
+
+{% endraw %}

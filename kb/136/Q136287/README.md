@@ -6,6 +6,8 @@ permalink: /kb/136/Q136287/
 
 ## Q136287: Bookshelf Intro Edition:Step 1: Read Me First File
 
+{% raw %}
+
 	Article: Q136287
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -247,3 +249,5 @@ permalink: /kb/136/Q136287/
 	
 	=============================================================================
 	
+
+{% endraw %}

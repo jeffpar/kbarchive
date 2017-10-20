@@ -6,6 +6,8 @@ permalink: /kb/157/Q157747/
 
 ## Q157747: PPT: Palatino Font Prints Squished From Windows 95
 
+{% raw %}
+
 	Article: Q157747
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0,7.0b; winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/157/Q157747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87947/
 
 ## Q87947: DSKLAYT2 Does Not Preserve Tree Structure of Source Files
 
+{% raw %}
+
 	Article: Q87947
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.1,3.5; WINDOWS:3.1,3.5,3.51,4.0
@@ -46,3 +48,5 @@ permalink: /kb/087/Q87947/
 	
 	=============================================================================
 	
+
+{% endraw %}

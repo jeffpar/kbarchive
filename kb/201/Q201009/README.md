@@ -6,6 +6,8 @@ permalink: /kb/201/Q201009/
 
 ## Q201009: Sample: WrapTBar.exe Wraps Toolbar During CFrameWnd Resizing
 
+{% raw %}
+
 	Article: Q201009
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -151,3 +153,5 @@ permalink: /kb/201/Q201009/
 	
 	=============================================================================
 	
+
+{% endraw %}

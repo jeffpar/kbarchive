@@ -6,6 +6,8 @@ permalink: /kb/058/Q58781/
 
 ## Q58781: BUG: LINK Does Not Pause When Command Line Specifies /PAUSE
 
+{% raw %}
+
 	Article: Q58781
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.61,3.65,3.69,5.0x,5.1x,5.2x,5.3x,5.5; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -60,3 +62,5 @@ permalink: /kb/058/Q58781/
 	
 	=============================================================================
 	
+
+{% endraw %}

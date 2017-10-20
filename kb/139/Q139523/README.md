@@ -6,6 +6,8 @@ permalink: /kb/139/Q139523/
 
 ## Q139523: Sound Blaster Mode Not Detected on Media Vision PAS 16
 
+{% raw %}
+
 	Article: Q139523
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/139/Q139523/
 	
 	=============================================================================
 	
+
+{% endraw %}

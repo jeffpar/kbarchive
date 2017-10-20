@@ -6,6 +6,8 @@ permalink: /kb/067/Q67787/
 
 ## Q67787: FIX: STRUC Defined Structures Cannot Be Nested
 
+{% raw %}
+
 	Article: Q67787
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1,5.1a
@@ -66,3 +68,5 @@ permalink: /kb/067/Q67787/
 	
 	=============================================================================
 	
+
+{% endraw %}

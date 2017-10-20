@@ -6,6 +6,8 @@ permalink: /kb/142/Q142295/
 
 ## Q142295: Err Msg: The Microsoft Mail Post Office Could Not Be Found...
 
+{% raw %}
+
 	Article: Q142295
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142295/
 	
 	=============================================================================
 	
+
+{% endraw %}

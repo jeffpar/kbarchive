@@ -6,6 +6,8 @@ permalink: /kb/171/Q171144/
 
 ## Q171144: XCLN: DocErr: Delegate Owner Does Not Receive Reminders
 
+{% raw %}
+
 	Article: Q171144
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -55,3 +57,5 @@ permalink: /kb/171/Q171144/
 	
 	=============================================================================
 	
+
+{% endraw %}

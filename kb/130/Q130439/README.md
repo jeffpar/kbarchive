@@ -6,6 +6,8 @@ permalink: /kb/130/Q130439/
 
 ## Q130439: Code Comparison: Visual FoxPro Grid &amp; Clipper/DOS Tbrowse
 
+{% raw %}
+
 	Article: Q130439
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -332,3 +334,5 @@ permalink: /kb/130/Q130439/
 	
 	=============================================================================
 	
+
+{% endraw %}

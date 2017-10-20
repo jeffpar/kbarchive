@@ -6,6 +6,8 @@ permalink: /kb/194/Q194496/
 
 ## Q194496: WD97:How to Convert Between Ami Pro 2.x/3.x for Windows and Word
 
+{% raw %}
+
 	Article: Q194496
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -300,3 +302,5 @@ permalink: /kb/194/Q194496/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130219/
 
 ## Q130219: PC WRmt: PORT COM&lt;n&gt; in Script Does Not Override MSMAIL.INI
 
+{% raw %}
+
 	Article: Q130219
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -91,3 +93,5 @@ permalink: /kb/130/Q130219/
 	
 	=============================================================================
 	
+
+{% endraw %}

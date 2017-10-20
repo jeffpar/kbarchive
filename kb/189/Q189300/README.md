@@ -6,6 +6,8 @@ permalink: /kb/189/Q189300/
 
 ## Q189300: Unable to Recover Nested Public Folder
 
+{% raw %}
+
 	Article: Q189300
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -65,3 +67,5 @@ permalink: /kb/189/Q189300/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238262/
 
 ## Q238262: Err Msg: &quot;STOP 0x00000050&quot; in Terminal Server Edition
 
+{% raw %}
+
 	Article: Q238262
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -66,3 +68,5 @@ permalink: /kb/238/Q238262/
 	
 	=============================================================================
 	
+
+{% endraw %}

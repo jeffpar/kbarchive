@@ -6,6 +6,8 @@ permalink: /kb/302/Q302580/
 
 ## Q302580: Printing Epson-777 Word-95-Document
 
+{% raw %}
+
 	Article: Q302580
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -46,3 +48,5 @@ permalink: /kb/302/Q302580/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244539/
 
 ## Q244539: Host Route Can Be Deleted if ICMP Fragmentation Is Needed
 
+{% raw %}
+
 	Article: Q244539
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0 SP5,4.0 SP6
@@ -141,3 +143,5 @@ permalink: /kb/244/Q244539/
 	
 	=============================================================================
 	
+
+{% endraw %}

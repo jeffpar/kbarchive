@@ -6,6 +6,8 @@ permalink: /kb/149/Q149792/
 
 ## Q149792: Writer: Solution for GhostWriter Case of Blue Makva Mystery
 
+{% raw %}
+
 	Article: Q149792
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a,1.1b; WINDOWS:1.0,1.1,1.1a,1.1b
@@ -52,3 +54,5 @@ permalink: /kb/149/Q149792/
 	
 	=============================================================================
 	
+
+{% endraw %}

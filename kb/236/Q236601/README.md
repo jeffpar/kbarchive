@@ -6,6 +6,8 @@ permalink: /kb/236/Q236601/
 
 ## Q236601: XADM: Notes Proxy Address Generation Fails on Extended Chars
 
+{% raw %}
+
 	Article: Q236601
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/236/Q236601/
 	
 	=============================================================================
 	
+
+{% endraw %}

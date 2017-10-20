@@ -6,6 +6,8 @@ permalink: /kb/111/Q111000/
 
 ## Q111000: PC WRmt: Summary List of Mail Remote for Windows 3.2 Bugs
 
+{% raw %}
+
 	Article: Q111000
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -182,3 +184,5 @@ permalink: /kb/111/Q111000/
 	
 	=============================================================================
 	
+
+{% endraw %}

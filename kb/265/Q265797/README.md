@@ -6,6 +6,8 @@ permalink: /kb/265/Q265797/
 
 ## Q265797: INFO: Use of User-Defined Data Types in eMbedded Visual Basic
 
+{% raw %}
+
 	Article: Q265797
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -55,3 +57,5 @@ permalink: /kb/265/Q265797/
 	
 	=============================================================================
 	
+
+{% endraw %}

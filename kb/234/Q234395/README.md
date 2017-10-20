@@ -6,6 +6,8 @@ permalink: /kb/234/Q234395/
 
 ## Q234395: XADM: Folder with Slash Mark (/) Cannot Be Seen By IMAP4 Clients
 
+{% raw %}
+
 	Article: Q234395
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/234/Q234395/
 	
 	=============================================================================
 	
+
+{% endraw %}

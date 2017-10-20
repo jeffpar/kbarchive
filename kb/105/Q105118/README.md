@@ -6,6 +6,8 @@ permalink: /kb/105/Q105118/
 
 ## Q105118: PRB: CodeView Displays &quot;Bad DLL Format in 'Filename'&quot;
 
+{% raw %}
+
 	Article: Q105118
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/105/Q105118/
 	
 	=============================================================================
 	
+
+{% endraw %}

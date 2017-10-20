@@ -6,6 +6,8 @@ permalink: /kb/152/Q152337/
 
 ## Q152337: Problems Disabling DNS for Windows Resolution
 
+{% raw %}
+
 	Article: Q152337
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -64,3 +66,5 @@ permalink: /kb/152/Q152337/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233444/
 
 ## Q233444: MSBP Err Msg: Internet Explorer Cannot Open the Internet Site...
 
+{% raw %}
+
 	Article: Q233444
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/233/Q233444/
 	
 	=============================================================================
 	
+
+{% endraw %}

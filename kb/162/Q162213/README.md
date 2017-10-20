@@ -6,6 +6,8 @@ permalink: /kb/162/Q162213/
 
 ## Q162213: Cannot Print Only One Page to PostScript Printer from WordPad
 
+{% raw %}
+
 	Article: Q162213
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/162/Q162213/
 	
 	=============================================================================
 	
+
+{% endraw %}

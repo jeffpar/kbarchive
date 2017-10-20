@@ -6,6 +6,8 @@ permalink: /kb/190/Q190795/
 
 ## Q190795: DOCERR: cAlias Property Missing in _login Class
 
+{% raw %}
+
 	Article: Q190795
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -41,3 +43,5 @@ permalink: /kb/190/Q190795/
 	
 	=============================================================================
 	
+
+{% endraw %}

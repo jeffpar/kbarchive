@@ -6,6 +6,8 @@ permalink: /kb/176/Q176353/
 
 ## Q176353: FIX: SourceSafe OLE Automation Does Not Support Label Comments
 
+{% raw %}
+
 	Article: Q176353
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176353/
 	
 	=============================================================================
 	
+
+{% endraw %}

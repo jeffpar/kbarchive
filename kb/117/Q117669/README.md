@@ -6,6 +6,8 @@ permalink: /kb/117/Q117669/
 
 ## Q117669: Changing Video Drivers in 3.11--Repeated Prompts for Disk 1
 
+{% raw %}
+
 	Article: Q117669
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -51,3 +53,5 @@ permalink: /kb/117/Q117669/
 	
 	=============================================================================
 	
+
+{% endraw %}

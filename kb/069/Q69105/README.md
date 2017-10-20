@@ -6,6 +6,8 @@ permalink: /kb/069/Q69105/
 
 ## Q69105: Additional Steps Required to Print from Aldus PageMaker
 
+{% raw %}
+
 	Article: Q69105
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/069/Q69105/
 	
 	=============================================================================
 	
+
+{% endraw %}

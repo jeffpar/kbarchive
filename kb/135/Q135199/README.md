@@ -6,6 +6,8 @@ permalink: /kb/135/Q135199/
 
 ## Q135199: Cannot Paste Text into Paint Document
 
+{% raw %}
+
 	Article: Q135199
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/135/Q135199/
 	
 	=============================================================================
 	
+
+{% endraw %}

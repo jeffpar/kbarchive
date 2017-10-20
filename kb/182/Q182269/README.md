@@ -6,6 +6,8 @@ permalink: /kb/182/Q182269/
 
 ## Q182269: TN3270 Incorrectly Logs Event 902 - TCPRecv Internal Error
 
+{% raw %}
+
 	Article: Q182269
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -78,3 +80,5 @@ permalink: /kb/182/Q182269/
 	
 	=============================================================================
 	
+
+{% endraw %}

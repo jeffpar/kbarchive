@@ -6,6 +6,8 @@ permalink: /kb/166/Q166336/
 
 ## Q166336: FTP Users Able to List Files Without Correct NTFS Permissions
 
+{% raw %}
+
 	Article: Q166336
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -69,3 +71,5 @@ permalink: /kb/166/Q166336/
 	
 	=============================================================================
 	
+
+{% endraw %}

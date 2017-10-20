@@ -6,6 +6,8 @@ permalink: /kb/194/Q194763/
 
 ## Q194763: SNA Print Server PDF Fails to Support Macros Exceeding 127 Chara
 
+{% raw %}
+
 	Article: Q194763
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -75,3 +77,5 @@ permalink: /kb/194/Q194763/
 	
 	=============================================================================
 	
+
+{% endraw %}

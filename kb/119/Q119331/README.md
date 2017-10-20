@@ -6,6 +6,8 @@ permalink: /kb/119/Q119331/
 
 ## Q119331: INFO: Compiler Errors with Win32 APIs Ending in &quot;A&quot; or &quot;W&quot;
 
+{% raw %}
+
 	Article: Q119331
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,2.2,4.0,4.1,5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/119/Q119331/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72169/
 
 ## Q72169: MS-DOS 5 README.TXT: Documentation Corrections and ...
 
+{% raw %}
+
 	Article: Q72169
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -116,3 +118,5 @@ permalink: /kb/072/Q72169/
 	
 	=============================================================================
 	
+
+{% endraw %}

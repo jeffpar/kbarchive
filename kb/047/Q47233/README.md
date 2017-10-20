@@ -6,6 +6,8 @@ permalink: /kb/047/Q47233/
 
 ## Q47233: QuickC Hangs When Running .COM if &quot;SET LINK=/CO&quot;
 
+{% raw %}
+
 	Article: Q47233
 	Product(s): See article
 	Version(s): 2.01
@@ -75,3 +77,5 @@ permalink: /kb/047/Q47233/
 	fact that if you hang your machine as noted above, reboot (without
 	link=/CO env var), and then run HANG.COM from within QA (without
 	reassembling), you again successfully hang your computer.
+
+{% endraw %}

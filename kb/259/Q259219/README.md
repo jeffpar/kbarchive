@@ -6,6 +6,8 @@ permalink: /kb/259/Q259219/
 
 ## Q259219: XADM: Incorrect Year 2000 Date In the Sent and Received Logs
 
+{% raw %}
+
 	Article: Q259219
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0 SP5
@@ -90,3 +92,5 @@ permalink: /kb/259/Q259219/
 	
 	=============================================================================
 	
+
+{% endraw %}

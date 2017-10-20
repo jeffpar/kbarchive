@@ -6,6 +6,8 @@ permalink: /kb/156/Q156590/
 
 ## Q156590: STL Sample for deque::erase and deque::clear Functions
 
+{% raw %}
+
 	Article: Q156590
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -168,3 +170,5 @@ permalink: /kb/156/Q156590/
 	
 	=============================================================================
 	
+
+{% endraw %}

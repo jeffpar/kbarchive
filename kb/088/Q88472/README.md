@@ -6,6 +6,8 @@ permalink: /kb/088/Q88472/
 
 ## Q88472: Golf: No Sound/Reward for a Hole-in-One
 
+{% raw %}
+
 	Article: Q88472
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/088/Q88472/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237780/
 
 ## Q237780: GDI Subsystem Stops Responding (Hangs) and Returns Error Message
 
+{% raw %}
+
 	Article: Q237780
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/237/Q237780/
 	
 	=============================================================================
 	
+
+{% endraw %}

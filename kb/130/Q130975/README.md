@@ -6,6 +6,8 @@ permalink: /kb/130/Q130975/
 
 ## Q130975: Resource Conflict with Standard VGA Video Driver
 
+{% raw %}
+
 	Article: Q130975
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/130/Q130975/
 	
 	=============================================================================
 	
+
+{% endraw %}

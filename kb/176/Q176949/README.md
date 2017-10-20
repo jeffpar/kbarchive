@@ -6,6 +6,8 @@ permalink: /kb/176/Q176949/
 
 ## Q176949: Microsoft Game Quits Unexpectedly with No Error Message
 
+{% raw %}
+
 	Article: Q176949
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/176/Q176949/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/298/Q298467/
 
 ## Q298467: Allow Automatic Logging In MSN Explorer 6.1
 
+{% raw %}
+
 	Article: Q298467
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -116,3 +118,5 @@ permalink: /kb/298/Q298467/
 	
 	=============================================================================
 	
+
+{% endraw %}

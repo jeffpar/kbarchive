@@ -6,6 +6,8 @@ permalink: /kb/160/Q160225/
 
 ## Q160225: FP97: Memory Leak in FP Extensions on MS Personal Web Server
 
+{% raw %}
+
 	Article: Q160225
 	Product(s): Word Front Page
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/160/Q160225/
 	
 	=============================================================================
 	
+
+{% endraw %}

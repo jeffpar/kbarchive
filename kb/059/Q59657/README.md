@@ -6,6 +6,8 @@ permalink: /kb/059/Q59657/
 
 ## Q59657: System Unstable After Print to FILE: Fails
 
+{% raw %}
+
 	Article: Q59657
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/059/Q59657/
 	
 	=============================================================================
 	
+
+{% endraw %}

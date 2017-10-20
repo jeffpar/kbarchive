@@ -6,6 +6,8 @@ permalink: /kb/105/Q105831/
 
 ## Q105831: Why Should I Install MS-DOS 6.22?
 
+{% raw %}
+
 	Article: Q105831
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.22
@@ -259,3 +261,5 @@ permalink: /kb/105/Q105831/
 	
 	=============================================================================
 	
+
+{% endraw %}

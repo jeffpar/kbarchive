@@ -6,6 +6,8 @@ permalink: /kb/171/Q171823/
 
 ## Q171823: FIX: Application Error Using Implements on Hyperlink Object
 
+{% raw %}
+
 	Article: Q171823
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -73,3 +75,5 @@ permalink: /kb/171/Q171823/
 	
 	=============================================================================
 	
+
+{% endraw %}

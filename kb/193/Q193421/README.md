@@ -6,6 +6,8 @@ permalink: /kb/193/Q193421/
 
 ## Q193421: SMS: Audit16 Fails on Long User Names
 
+{% raw %}
+
 	Article: Q193421
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINNT:1.2
@@ -103,3 +105,5 @@ permalink: /kb/193/Q193421/
 	
 	=============================================================================
 	
+
+{% endraw %}

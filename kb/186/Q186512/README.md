@@ -6,6 +6,8 @@ permalink: /kb/186/Q186512/
 
 ## Q186512: DEC Teamlinks Installation Notes
 
+{% raw %}
+
 	Article: Q186512
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/186/Q186512/
 	
 	=============================================================================
 	
+
+{% endraw %}

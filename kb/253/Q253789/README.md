@@ -6,6 +6,8 @@ permalink: /kb/253/Q253789/
 
 ## Q253789: PRB: Screen Saver Activated While Playing Back MPEG Movie File
 
+{% raw %}
+
 	Article: Q253789
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/253/Q253789/
 	
 	=============================================================================
 	
+
+{% endraw %}

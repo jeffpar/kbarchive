@@ -6,6 +6,8 @@ permalink: /kb/156/Q156033/
 
 ## Q156033: PRB: Unable to Reference SCX with Spaces in Filename
 
+{% raw %}
+
 	Article: Q156033
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/156/Q156033/
 	
 	=============================================================================
 	
+
+{% endraw %}

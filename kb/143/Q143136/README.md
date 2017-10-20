@@ -6,6 +6,8 @@ permalink: /kb/143/Q143136/
 
 ## Q143136: Internal Network Number of FFFFFFFF is Not Valid
 
+{% raw %}
+
 	Article: Q143136
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5,3.51
@@ -47,3 +49,5 @@ permalink: /kb/143/Q143136/
 	
 	=============================================================================
 	
+
+{% endraw %}

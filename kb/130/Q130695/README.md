@@ -6,6 +6,8 @@ permalink: /kb/130/Q130695/
 
 ## Q130695: ACLCONV Fails when Trying to Read ACL File
 
+{% raw %}
+
 	Article: Q130695
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -95,3 +97,5 @@ permalink: /kb/130/Q130695/
 	
 	=============================================================================
 	
+
+{% endraw %}

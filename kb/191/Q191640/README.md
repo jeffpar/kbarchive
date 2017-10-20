@@ -6,6 +6,8 @@ permalink: /kb/191/Q191640/
 
 ## Q191640: BUG: ActiveForm Property Returns Error When Not FormSet
 
+{% raw %}
+
 	Article: Q191640
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/191/Q191640/
 	
 	=============================================================================
 	
+
+{% endraw %}

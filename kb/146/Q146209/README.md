@@ -6,6 +6,8 @@ permalink: /kb/146/Q146209/
 
 ## Q146209: XCLN: Printing Excel Attachments Requires User Input
 
+{% raw %}
+
 	Article: Q146209
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/146/Q146209/
 	
 	=============================================================================
 	
+
+{% endraw %}

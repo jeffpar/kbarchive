@@ -6,6 +6,8 @@ permalink: /kb/177/Q177769/
 
 ## Q177769: XADM: Assert Error When You Extract Windows NT Account List
 
+{% raw %}
+
 	Article: Q177769
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/177/Q177769/
 	
 	=============================================================================
 	
+
+{% endraw %}

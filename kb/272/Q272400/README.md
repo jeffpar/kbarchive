@@ -6,6 +6,8 @@ permalink: /kb/272/Q272400/
 
 ## Q272400: BUG: Application Error Returns Resized Array to Event Procedure
 
+{% raw %}
+
 	Article: Q272400
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -86,3 +88,5 @@ permalink: /kb/272/Q272400/
 	
 	=============================================================================
 	
+
+{% endraw %}

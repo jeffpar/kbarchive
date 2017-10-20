@@ -6,6 +6,8 @@ permalink: /kb/291/Q291800/
 
 ## Q291800: Fatal Exception Error when Attempting Multiplayer Connection
 
+{% raw %}
+
 	Article: Q291800
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/291/Q291800/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/255/Q255121/
 
 ## Q255121: &quot;A Fatal Exception...&quot; Error Message When You Undock Your Laptop
 
+{% raw %}
+
 	Article: Q255121
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/255/Q255121/
 	
 	=============================================================================
 	
+
+{% endraw %}

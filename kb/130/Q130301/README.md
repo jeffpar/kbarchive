@@ -6,6 +6,8 @@ permalink: /kb/130/Q130301/
 
 ## Q130301: PRB: INSERT Command Fails with Buffering and Integrity Rules
 
+{% raw %}
+
 	Article: Q130301
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130301/
 	
 	=============================================================================
 	
+
+{% endraw %}

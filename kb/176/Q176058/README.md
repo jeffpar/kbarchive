@@ -6,6 +6,8 @@ permalink: /kb/176/Q176058/
 
 ## Q176058: HOWTO: Pass String Data Between Applications Using SendMessage
 
+{% raw %}
+
 	Article: Q176058
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -256,3 +258,5 @@ permalink: /kb/176/Q176058/
 	
 	=============================================================================
 	
+
+{% endraw %}

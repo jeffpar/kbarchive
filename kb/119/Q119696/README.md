@@ -6,6 +6,8 @@ permalink: /kb/119/Q119696/
 
 ## Q119696: PC Adm: Err Msg: Please Update Your Version of Foldcomp
 
+{% raw %}
+
 	Article: Q119696
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -58,3 +60,5 @@ permalink: /kb/119/Q119696/
 	
 	=============================================================================
 	
+
+{% endraw %}

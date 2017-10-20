@@ -6,6 +6,8 @@ permalink: /kb/154/Q154050/
 
 ## Q154050: Cannot Uncompress DriveSpace Drive After Using Partition Magic
 
+{% raw %}
+
 	Article: Q154050
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -88,3 +90,5 @@ permalink: /kb/154/Q154050/
 	
 	=============================================================================
 	
+
+{% endraw %}

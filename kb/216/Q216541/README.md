@@ -6,6 +6,8 @@ permalink: /kb/216/Q216541/
 
 ## Q216541: XFOR: Modifying QROOT Parameter Requires UNC Path
 
+{% raw %}
+
 	Article: Q216541
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/216/Q216541/
 	
 	=============================================================================
 	
+
+{% endraw %}

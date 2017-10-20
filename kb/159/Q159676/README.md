@@ -6,6 +6,8 @@ permalink: /kb/159/Q159676/
 
 ## Q159676: WD97: Close Method in Macro Fails in Protected Form
 
+{% raw %}
+
 	Article: Q159676
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -129,3 +131,5 @@ permalink: /kb/159/Q159676/
 	
 	=============================================================================
 	
+
+{% endraw %}

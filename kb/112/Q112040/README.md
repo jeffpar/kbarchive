@@ -6,6 +6,8 @@ permalink: /kb/112/Q112040/
 
 ## Q112040: X400: How to Perform an X.25 Eicon Trace
 
+{% raw %}
+
 	Article: Q112040
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2
@@ -53,3 +55,5 @@ permalink: /kb/112/Q112040/
 	
 	=============================================================================
 	
+
+{% endraw %}

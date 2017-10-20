@@ -6,6 +6,8 @@ permalink: /kb/065/Q65074/
 
 ## Q65074: MSDOS.EXE Loads Full Screen Instead of as an Icon in Windows
 
+{% raw %}
+
 	Article: Q65074
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -38,3 +40,5 @@ permalink: /kb/065/Q65074/
 	
 	=============================================================================
 	
+
+{% endraw %}

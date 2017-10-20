@@ -6,6 +6,8 @@ permalink: /kb/239/Q239715/
 
 ## Q239715: IAS Does Not Proxy Digital Signatures
 
+{% raw %}
+
 	Article: Q239715
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -97,3 +99,5 @@ permalink: /kb/239/Q239715/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173212/
 
 ## Q173212: FIX: &quot;Default&quot; Property Ignored for CommandButton on Win NT
 
+{% raw %}
+
 	Article: Q173212
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -99,3 +101,5 @@ permalink: /kb/173/Q173212/
 	
 	=============================================================================
 	
+
+{% endraw %}

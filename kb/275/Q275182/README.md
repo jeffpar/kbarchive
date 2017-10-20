@@ -6,6 +6,8 @@ permalink: /kb/275/Q275182/
 
 ## Q275182: PRB: FormResize Appears to Have No Effect When the SIP Is Shown
 
+{% raw %}
+
 	Article: Q275182
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -81,3 +83,5 @@ permalink: /kb/275/Q275182/
 	
 	=============================================================================
 	
+
+{% endraw %}

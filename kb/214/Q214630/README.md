@@ -6,6 +6,8 @@ permalink: /kb/214/Q214630/
 
 ## Q214630: How to Install Encarta Africana in Safe Mode
 
+{% raw %}
+
 	Article: Q214630
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/214/Q214630/
 	
 	=============================================================================
 	
+
+{% endraw %}

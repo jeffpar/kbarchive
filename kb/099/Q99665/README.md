@@ -6,6 +6,8 @@ permalink: /kb/099/Q99665/
 
 ## Q99665: PC WSPlus: Displaying the Time in a Military Time Format
 
+{% raw %}
+
 	Article: Q99665
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -44,3 +46,5 @@ permalink: /kb/099/Q99665/
 	
 	=============================================================================
 	
+
+{% endraw %}

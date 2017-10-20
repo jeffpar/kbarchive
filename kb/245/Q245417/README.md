@@ -6,6 +6,8 @@ permalink: /kb/245/Q245417/
 
 ## Q245417: PC WSPlus: Recovering Lost Installation of Schedule+ Information
 
+{% raw %}
+
 	Article: Q245417
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.x
@@ -79,3 +81,5 @@ permalink: /kb/245/Q245417/
 	
 	=============================================================================
 	
+
+{% endraw %}

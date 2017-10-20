@@ -6,6 +6,8 @@ permalink: /kb/135/Q135223/
 
 ## Q135223: Reveal TV300 Adapter Affects Display Color During Setup
 
+{% raw %}
+
 	Article: Q135223
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135223/
 	
 	=============================================================================
 	
+
+{% endraw %}

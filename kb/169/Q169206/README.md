@@ -6,6 +6,8 @@ permalink: /kb/169/Q169206/
 
 ## Q169206: Using TRACERT With the Loose Source Routing Option
 
+{% raw %}
+
 	Article: Q169206
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/169/Q169206/
 	
 	=============================================================================
 	
+
+{% endraw %}

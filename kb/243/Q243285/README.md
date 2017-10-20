@@ -6,6 +6,8 @@ permalink: /kb/243/Q243285/
 
 ## Q243285: HOWTO: Draw TrueType Glyph Outlines
 
+{% raw %}
+
 	Article: Q243285
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): winnt:
@@ -541,3 +543,5 @@ permalink: /kb/243/Q243285/
 	
 	=============================================================================
 	
+
+{% endraw %}

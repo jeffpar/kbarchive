@@ -6,6 +6,8 @@ permalink: /kb/030/Q30827/
 
 ## Q30827: An Example Where a Protect Mode C Extension Will Not Load
 
+{% raw %}
+
 	Article: Q30827
 	Product(s): See article
 	Version(s): 1.00
@@ -66,3 +68,5 @@ permalink: /kb/030/Q30827/
 	
 	   This file should be used with all the extensions that are written.
 	It need not be modified.
+
+{% endraw %}

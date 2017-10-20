@@ -6,6 +6,8 @@ permalink: /kb/115/Q115707/
 
 ## Q115707: FIX: C2857 Error Incorrectly Generated Using /Yc Option
 
+{% raw %}
+
 	Article: Q115707
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,6.0,7.0
@@ -85,3 +87,5 @@ permalink: /kb/115/Q115707/
 	
 	=============================================================================
 	
+
+{% endraw %}

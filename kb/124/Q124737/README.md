@@ -6,6 +6,8 @@ permalink: /kb/124/Q124737/
 
 ## Q124737: X400: Unable to Send or Receive Mail
 
+{% raw %}
+
 	Article: Q124737
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -118,3 +120,5 @@ permalink: /kb/124/Q124737/
 	
 	=============================================================================
 	
+
+{% endraw %}

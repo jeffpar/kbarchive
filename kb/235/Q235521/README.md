@@ -6,6 +6,8 @@ permalink: /kb/235/Q235521/
 
 ## Q235521: BUG: Can't Configure Data Link for OLE DB Provider
 
+{% raw %}
+
 	Article: Q235521
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/235/Q235521/
 	
 	=============================================================================
 	
+
+{% endraw %}

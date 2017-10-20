@@ -6,6 +6,8 @@ permalink: /kb/173/Q173668/
 
 ## Q173668: SAMPLE: AVIRSCE.EXE Plays an AVI Stored in a Resource .dll File
 
+{% raw %}
+
 	Article: Q173668
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -320,3 +322,5 @@ permalink: /kb/173/Q173668/
 	
 	=============================================================================
 	
+
+{% endraw %}

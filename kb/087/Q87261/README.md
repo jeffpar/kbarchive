@@ -6,6 +6,8 @@ permalink: /kb/087/Q87261/
 
 ## Q87261: Mac Srv: Connection Times Lost When Site Name Changes
 
+{% raw %}
+
 	Article: Q87261
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -45,3 +47,5 @@ permalink: /kb/087/Q87261/
 	
 	=============================================================================
 	
+
+{% endraw %}

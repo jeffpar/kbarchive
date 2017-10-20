@@ -6,6 +6,8 @@ permalink: /kb/209/Q209679/
 
 ## Q209679: WD97: Font Colors Change Opening a Word 2000 Document
 
+{% raw %}
+
 	Article: Q209679
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -167,3 +169,5 @@ permalink: /kb/209/Q209679/
 	
 	=============================================================================
 	
+
+{% endraw %}

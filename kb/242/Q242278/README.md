@@ -6,6 +6,8 @@ permalink: /kb/242/Q242278/
 
 ## Q242278: Service Pack 6 Setup Replaces 3Com EtherLink 905B Driver
 
+{% raw %}
+
 	Article: Q242278
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6
@@ -108,3 +110,5 @@ permalink: /kb/242/Q242278/
 	
 	=============================================================================
 	
+
+{% endraw %}

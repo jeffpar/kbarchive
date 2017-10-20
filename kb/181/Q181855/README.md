@@ -6,6 +6,8 @@ permalink: /kb/181/Q181855/
 
 ## Q181855: HOWTO: Create HotKey to Start EXE in Windows 95 or Windows NT
 
+{% raw %}
+
 	Article: Q181855
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/181/Q181855/
 	
 	=============================================================================
 	
+
+{% endraw %}

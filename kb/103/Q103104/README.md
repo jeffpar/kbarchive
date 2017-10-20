@@ -6,6 +6,8 @@ permalink: /kb/103/Q103104/
 
 ## Q103104: Err Msg: The Win16 Subsystem Was Unable to Enter Protect...
 
+{% raw %}
+
 	Article: Q103104
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51
@@ -73,3 +75,5 @@ permalink: /kb/103/Q103104/
 	
 	=============================================================================
 	
+
+{% endraw %}

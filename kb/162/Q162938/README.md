@@ -6,6 +6,8 @@ permalink: /kb/162/Q162938/
 
 ## Q162938: WD97: Macro Returns to View Used Before Opening Header
 
+{% raw %}
+
 	Article: Q162938
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -125,3 +127,5 @@ permalink: /kb/162/Q162938/
 	
 	=============================================================================
 	
+
+{% endraw %}

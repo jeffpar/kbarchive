@@ -6,6 +6,8 @@ permalink: /kb/223/Q223161/
 
 ## Q223161: XADM: Information on ESE Zeroing
 
+{% raw %}
+
 	Article: Q223161
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -148,3 +150,5 @@ permalink: /kb/223/Q223161/
 	
 	=============================================================================
 	
+
+{% endraw %}

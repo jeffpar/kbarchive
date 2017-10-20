@@ -6,6 +6,8 @@ permalink: /kb/022/Q22734/
 
 ## Q22734: Sending Binary Files to a Printer After Print to File
 
+{% raw %}
+
 	Article: Q22734
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.0,3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/022/Q22734/
 	
 	=============================================================================
 	
+
+{% endraw %}

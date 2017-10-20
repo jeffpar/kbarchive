@@ -6,6 +6,8 @@ permalink: /kb/158/Q158229/
 
 ## Q158229: INFO: Security Ramifications for IIS Applications
 
+{% raw %}
+
 	Article: Q158229
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -290,3 +292,5 @@ permalink: /kb/158/Q158229/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302565/
 
 ## Q302565: Music.MSN.com Will Not Play On MSN Companion
 
+{% raw %}
+
 	Article: Q302565
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -47,3 +49,5 @@ permalink: /kb/302/Q302565/
 	
 	=============================================================================
 	
+
+{% endraw %}

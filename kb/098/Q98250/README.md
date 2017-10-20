@@ -6,6 +6,8 @@ permalink: /kb/098/Q98250/
 
 ## Q98250: PC Win: No Default Method of Creating Folders
 
+{% raw %}
+
 	Article: Q98250
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -49,3 +51,5 @@ permalink: /kb/098/Q98250/
 	
 	=============================================================================
 	
+
+{% endraw %}

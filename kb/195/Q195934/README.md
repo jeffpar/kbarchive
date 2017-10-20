@@ -6,6 +6,8 @@ permalink: /kb/195/Q195934/
 
 ## Q195934: Incorrect Permissions Applied to Terminal Server Home Folders
 
+{% raw %}
+
 	Article: Q195934
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/195/Q195934/
 	
 	=============================================================================
 	
+
+{% endraw %}

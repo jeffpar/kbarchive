@@ -6,6 +6,8 @@ permalink: /kb/130/Q130897/
 
 ## Q130897: Windows for Workgroups Hangs on Dell Pentium XPS100
 
+{% raw %}
+
 	Article: Q130897
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130897/
 	
 	=============================================================================
 	
+
+{% endraw %}

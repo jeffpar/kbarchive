@@ -6,6 +6,8 @@ permalink: /kb/198/Q198324/
 
 ## Q198324: WD97: Cannot Assign Shortcut Keys for Insert Bookmark
 
+{% raw %}
+
 	Article: Q198324
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/198/Q198324/
 	
 	=============================================================================
 	
+
+{% endraw %}

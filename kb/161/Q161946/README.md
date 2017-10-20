@@ -6,6 +6,8 @@ permalink: /kb/161/Q161946/
 
 ## Q161946: XCON: Free Form Name Attribute not Handled by Sprint
 
+{% raw %}
+
 	Article: Q161946
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/161/Q161946/
 	
 	=============================================================================
 	
+
+{% endraw %}

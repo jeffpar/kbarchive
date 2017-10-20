@@ -6,6 +6,8 @@ permalink: /kb/165/Q165688/
 
 ## Q165688: INFO: Visual C++ 5.0 Readme, Visual SourceSafe Issues
 
+{% raw %}
+
 	Article: Q165688
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165688/
 	
 	=============================================================================
 	
+
+{% endraw %}

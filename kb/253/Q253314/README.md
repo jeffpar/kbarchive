@@ -6,6 +6,8 @@ permalink: /kb/253/Q253314/
 
 ## Q253314: &quot;SNABASE Not Started&quot; Error Occurs When Using Terminal Server
 
+{% raw %}
+
 	Article: Q253314
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -64,3 +66,5 @@ permalink: /kb/253/Q253314/
 	
 	=============================================================================
 	
+
+{% endraw %}

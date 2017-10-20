@@ -6,6 +6,8 @@ permalink: /kb/276/Q276446/
 
 ## Q276446: Branch Servers Using DLS Use Dynamic Port for SnaBase Connection
 
+{% raw %}
+
 	Article: Q276446
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -78,3 +80,5 @@ permalink: /kb/276/Q276446/
 	
 	=============================================================================
 	
+
+{% endraw %}

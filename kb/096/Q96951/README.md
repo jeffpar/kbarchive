@@ -6,6 +6,8 @@ permalink: /kb/096/Q96951/
 
 ## Q96951: Short Tear-Off Feature Doesn't Work on Epson 9-Pin Printers
 
+{% raw %}
+
 	Article: Q96951
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/096/Q96951/
 	
 	=============================================================================
 	
+
+{% endraw %}

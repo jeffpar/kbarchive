@@ -6,6 +6,8 @@ permalink: /kb/200/Q200622/
 
 ## Q200622: SMS: Multiple Site Summary Only Shows Products With Peak Usage
 
+{% raw %}
+
 	Article: Q200622
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/200/Q200622/
 	
 	=============================================================================
 	
+
+{% endraw %}

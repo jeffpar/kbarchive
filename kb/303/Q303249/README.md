@@ -6,6 +6,8 @@ permalink: /kb/303/Q303249/
 
 ## Q303249: XADM: Export of DLs or Custom Recipients May Fail
 
+{% raw %}
+
 	Article: Q303249
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -94,3 +96,5 @@ permalink: /kb/303/Q303249/
 	
 	=============================================================================
 	
+
+{% endraw %}

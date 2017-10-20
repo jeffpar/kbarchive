@@ -6,6 +6,8 @@ permalink: /kb/184/Q184880/
 
 ## Q184880: XADM: Setup Does Not Detect Cluster Resources Properly
 
+{% raw %}
+
 	Article: Q184880
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -140,3 +142,5 @@ permalink: /kb/184/Q184880/
 	
 	=============================================================================
 	
+
+{% endraw %}

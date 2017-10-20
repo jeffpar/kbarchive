@@ -6,6 +6,8 @@ permalink: /kb/115/Q115546/
 
 ## Q115546: Multimedia Golf Cannot Find Any Courses
 
+{% raw %}
+
 	Article: Q115546
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -101,3 +103,5 @@ permalink: /kb/115/Q115546/
 	
 	=============================================================================
 	
+
+{% endraw %}

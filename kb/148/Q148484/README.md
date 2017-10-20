@@ -6,6 +6,8 @@ permalink: /kb/148/Q148484/
 
 ## Q148484: Do-It-Yourself Guide: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q148484
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -194,3 +196,5 @@ permalink: /kb/148/Q148484/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258905/
 
 ## Q258905: Allegiance: Autopilot Does Not Function in Training Missions
 
+{% raw %}
+
 	Article: Q258905
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/258/Q258905/
 	
 	=============================================================================
 	
+
+{% endraw %}

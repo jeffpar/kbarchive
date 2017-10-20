@@ -6,6 +6,8 @@ permalink: /kb/309/Q309418/
 
 ## Q309418: Description of the Loadqm.exe File
 
+{% raw %}
+
 	Article: Q309418
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -84,3 +86,5 @@ permalink: /kb/309/Q309418/
 	
 	=============================================================================
 	
+
+{% endraw %}

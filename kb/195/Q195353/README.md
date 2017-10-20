@@ -6,6 +6,8 @@ permalink: /kb/195/Q195353/
 
 ## Q195353: FILE: VBUSC.EXE Provides Licensing for Discontinued Controls
 
+{% raw %}
+
 	Article: Q195353
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -114,3 +116,5 @@ permalink: /kb/195/Q195353/
 	
 	=============================================================================
 	
+
+{% endraw %}

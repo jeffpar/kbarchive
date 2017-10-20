@@ -6,6 +6,8 @@ permalink: /kb/131/Q131778/
 
 ## Q131778: System-wide Pool Paged Bytes Allocated By Files Are Not Released
 
+{% raw %}
+
 	Article: Q131778
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/131/Q131778/
 	
 	=============================================================================
 	
+
+{% endraw %}

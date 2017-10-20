@@ -6,6 +6,8 @@ permalink: /kb/174/Q174007/
 
 ## Q174007: Audio and Video Components Seem to Be Damaged
 
+{% raw %}
+
 	Article: Q174007
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -90,3 +92,5 @@ permalink: /kb/174/Q174007/
 	
 	=============================================================================
 	
+
+{% endraw %}

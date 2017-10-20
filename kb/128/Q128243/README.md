@@ -6,6 +6,8 @@ permalink: /kb/128/Q128243/
 
 ## Q128243: PC Win: GP Fault with Corrupt .XTN Files
 
+{% raw %}
+
 	Article: Q128243
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -94,3 +96,5 @@ permalink: /kb/128/Q128243/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177705/
 
 ## Q177705: SMS: List Of Supported Video Adapters for SP3's IDISNTKM
 
+{% raw %}
+
 	Article: Q177705
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -97,3 +99,5 @@ permalink: /kb/177/Q177705/
 	
 	=============================================================================
 	
+
+{% endraw %}

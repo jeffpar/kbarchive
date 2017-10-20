@@ -6,6 +6,8 @@ permalink: /kb/089/Q89914/
 
 ## Q89914: 256-Color Bitmap Problems with Quick Recorder
 
+{% raw %}
+
 	Article: Q89914
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/089/Q89914/
 	
 	=============================================================================
 	
+
+{% endraw %}

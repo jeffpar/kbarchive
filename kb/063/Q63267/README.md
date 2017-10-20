@@ -6,6 +6,8 @@ permalink: /kb/063/Q63267/
 
 ## Q63267: FIX: PWB 1.0 menukey Switch Resets to ALT Shelling Out to MS-DOS
 
+{% raw %}
+
 	Article: Q63267
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0; OS/2:1.0
@@ -72,3 +74,5 @@ permalink: /kb/063/Q63267/
 	
 	=============================================================================
 	
+
+{% endraw %}

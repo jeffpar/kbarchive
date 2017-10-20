@@ -6,6 +6,8 @@ permalink: /kb/193/Q193272/
 
 ## Q193272: FIX: MFC Doesn't Call CPrintDialog::OnInitDialog
 
+{% raw %}
+
 	Article: Q193272
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -49,8 +51,8 @@ permalink: /kb/193/Q193272/
 	     CMyPrintDialog::CMyPrintDialog(DWORD dwFlags)
 	     : CPrintDialog(FALSE,dwFlags)
 	     {
-	        //{ {AFX_DATA_INIT(CMyPrintDialog)
-	        //} }AFX_DATA_INIT
+	        //{{AFX_DATA_INIT(CMyPrintDialog)
+	        //}}AFX_DATA_INIT
 	        // MFCBUG: MFC 6.0 doesn't set the message hook!
 	        m_pd.Flags |= PD_ENABLEPRINTHOOK | PD_ENABLESETUPHOOK;
 	        // _AfxCommDlgProc is exported from static MFC libraries
@@ -108,3 +110,5 @@ permalink: /kb/193/Q193272/
 	
 	=============================================================================
 	
+
+{% endraw %}

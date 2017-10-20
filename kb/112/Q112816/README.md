@@ -6,6 +6,8 @@ permalink: /kb/112/Q112816/
 
 ## Q112816: Locating and Excluding RAM/ROM Addresses in the UMA
 
+{% raw %}
+
 	Article: Q112816
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -155,3 +157,5 @@ permalink: /kb/112/Q112816/
 	
 	=============================================================================
 	
+
+{% endraw %}

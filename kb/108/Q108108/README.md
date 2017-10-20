@@ -6,6 +6,8 @@ permalink: /kb/108/Q108108/
 
 ## Q108108: NDW 2.2 Shows Newly Created Directories on Drives B and C
 
+{% raw %}
+
 	Article: Q108108
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.01,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/108/Q108108/
 	
 	=============================================================================
 	
+
+{% endraw %}

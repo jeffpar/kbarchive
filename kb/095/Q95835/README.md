@@ -6,6 +6,8 @@ permalink: /kb/095/Q95835/
 
 ## Q95835: What VSafe Manager (MWAVTSR.EXE) Does and How It Works
 
+{% raw %}
+
 	Article: Q95835
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -82,3 +84,5 @@ permalink: /kb/095/Q95835/
 	
 	=============================================================================
 	
+
+{% endraw %}

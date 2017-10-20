@@ -6,6 +6,8 @@ permalink: /kb/159/Q159174/
 
 ## Q159174: XADM: MTA Terminates Unexpectedly with Events 251 and 9405
 
+{% raw %}
+
 	Article: Q159174
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/159/Q159174/
 	
 	=============================================================================
 	
+
+{% endraw %}

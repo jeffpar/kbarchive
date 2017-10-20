@@ -6,6 +6,8 @@ permalink: /kb/149/Q149478/
 
 ## Q149478: BUG: F1001 Error /4fps1 and /Ox with Exponent Calculation
 
+{% raw %}
+
 	Article: Q149478
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149478/
 	
 	=============================================================================
 	
+
+{% endraw %}

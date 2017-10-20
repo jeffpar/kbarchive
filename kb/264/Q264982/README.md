@@ -6,6 +6,8 @@ permalink: /kb/264/Q264982/
 
 ## Q264982: Error Message When You View the Properties of a Metaverse Object
 
+{% raw %}
+
 	Article: Q264982
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -67,3 +69,5 @@ permalink: /kb/264/Q264982/
 	
 	=============================================================================
 	
+
+{% endraw %}

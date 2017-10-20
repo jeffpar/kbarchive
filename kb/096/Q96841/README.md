@@ -6,6 +6,8 @@ permalink: /kb/096/Q96841/
 
 ## Q96841: Mac LDF: Local Mail File Compression
 
+{% raw %}
+
 	Article: Q96841
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/096/Q96841/
 	
 	=============================================================================
 	
+
+{% endraw %}

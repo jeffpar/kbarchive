@@ -6,6 +6,8 @@ permalink: /kb/274/Q274203/
 
 ## Q274203: PRB: Cannot Shift Focus from ATL Composite Control on Web Page
 
+{% raw %}
+
 	Article: Q274203
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,4.x,5,5.01,5.01 SP1,5.5
@@ -104,3 +106,5 @@ permalink: /kb/274/Q274203/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141820/
 
 ## Q141820: 3D Movie Maker: Error Messages When Trying to Save a Movie
 
+{% raw %}
+
 	Article: Q141820
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -113,3 +115,5 @@ permalink: /kb/141/Q141820/
 	
 	=============================================================================
 	
+
+{% endraw %}

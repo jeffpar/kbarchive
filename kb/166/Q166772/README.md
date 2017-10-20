@@ -6,6 +6,8 @@ permalink: /kb/166/Q166772/
 
 ## Q166772: S3 Video Performance Improved in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q166772
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166772/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/309/Q309138/
 
 ## Q309138: Audio synchronization problems in French Interactive Training
 
+{% raw %}
+
 	Article: Q309138
 	Product(s): Microsoft Press
 	Version(s): 3.0
@@ -48,3 +50,5 @@ permalink: /kb/309/Q309138/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75894/
 
 ## Q75894: PaintJet Printer Fonts Included with Windows
 
+{% raw %}
+
 	Article: Q75894
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -87,3 +89,5 @@ permalink: /kb/075/Q75894/
 	
 	=============================================================================
 	
+
+{% endraw %}

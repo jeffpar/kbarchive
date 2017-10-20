@@ -6,6 +6,8 @@ permalink: /kb/172/Q172349/
 
 ## Q172349: PRB: Error Type 11 when Creating New Query While Modifying Form
 
+{% raw %}
+
 	Article: Q172349
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0
@@ -100,3 +102,5 @@ permalink: /kb/172/Q172349/
 	
 	=============================================================================
 	
+
+{% endraw %}

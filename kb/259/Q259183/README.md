@@ -6,6 +6,8 @@ permalink: /kb/259/Q259183/
 
 ## Q259183: SMS: Command Clean Utility Does Not Properly Clean History Recor
 
+{% raw %}
+
 	Article: Q259183
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -100,3 +102,5 @@ permalink: /kb/259/Q259183/
 	
 	=============================================================================
 	
+
+{% endraw %}

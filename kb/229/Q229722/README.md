@@ -6,6 +6,8 @@ permalink: /kb/229/Q229722/
 
 ## Q229722: German Compound Word Not Found if Part Is in Noise Word List
 
+{% raw %}
+
 	Article: Q229722
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -94,3 +96,5 @@ permalink: /kb/229/Q229722/
 	
 	=============================================================================
 	
+
+{% endraw %}

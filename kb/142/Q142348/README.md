@@ -6,6 +6,8 @@ permalink: /kb/142/Q142348/
 
 ## Q142348: Recurring Appointments Include the Until Date
 
+{% raw %}
+
 	Article: Q142348
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142348/
 	
 	=============================================================================
 	
+
+{% endraw %}

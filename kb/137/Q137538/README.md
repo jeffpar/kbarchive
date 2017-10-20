@@ -6,6 +6,8 @@ permalink: /kb/137/Q137538/
 
 ## Q137538: HOWTO: Disable the Resizing of an OLE Control
 
+{% raw %}
+
 	Article: Q137538
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -63,3 +65,5 @@ permalink: /kb/137/Q137538/
 	
 	=============================================================================
 	
+
+{% endraw %}

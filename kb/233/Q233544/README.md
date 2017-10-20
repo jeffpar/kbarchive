@@ -6,6 +6,8 @@ permalink: /kb/233/Q233544/
 
 ## Q233544: Certain Invalid Date Fields Are Converted to Valid Dates
 
+{% raw %}
+
 	Article: Q233544
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -66,3 +68,5 @@ permalink: /kb/233/Q233544/
 	
 	=============================================================================
 	
+
+{% endraw %}

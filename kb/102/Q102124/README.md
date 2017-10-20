@@ -6,6 +6,8 @@ permalink: /kb/102/Q102124/
 
 ## Q102124: Mac Srv: Microsoft Mail Remote Resource Protocol Errors
 
+{% raw %}
+
 	Article: Q102124
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -156,3 +158,5 @@ permalink: /kb/102/Q102124/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234344/
 
 ## Q234344: INFO: Template Cache Added in WebClasses for Visual Studio SP3
 
+{% raw %}
+
 	Article: Q234344
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/234/Q234344/
 	
 	=============================================================================
 	
+
+{% endraw %}

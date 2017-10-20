@@ -6,6 +6,8 @@ permalink: /kb/271/Q271620/
 
 ## Q271620: HOWTO: Retrieve XML Data Using SQL XML Query in VB Client
 
+{% raw %}
+
 	Article: Q271620
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.6,2.7,4.0,6.0
@@ -132,3 +134,5 @@ permalink: /kb/271/Q271620/
 	
 	=============================================================================
 	
+
+{% endraw %}

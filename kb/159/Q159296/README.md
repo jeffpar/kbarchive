@@ -6,6 +6,8 @@ permalink: /kb/159/Q159296/
 
 ## Q159296: XCON: MTA May Log Event ID 2187 for Specific DAT Files
 
+{% raw %}
+
 	Article: Q159296
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -54,3 +56,5 @@ permalink: /kb/159/Q159296/
 	
 	=============================================================================
 	
+
+{% endraw %}

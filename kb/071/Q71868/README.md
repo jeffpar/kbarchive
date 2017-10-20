@@ -6,6 +6,8 @@ permalink: /kb/071/Q71868/
 
 ## Q71868: MS-DOS 5 Upgrade README.TXT: Memory Management
 
+{% raw %}
+
 	Article: Q71868
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -106,3 +108,5 @@ permalink: /kb/071/Q71868/
 	
 	=============================================================================
 	
+
+{% endraw %}

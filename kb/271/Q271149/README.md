@@ -6,6 +6,8 @@ permalink: /kb/271/Q271149/
 
 ## Q271149: SMS: SMS 2.0 Character Limits on User and Group Accounts
 
+{% raw %}
+
 	Article: Q271149
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -90,3 +92,5 @@ permalink: /kb/271/Q271149/
 	
 	=============================================================================
 	
+
+{% endraw %}

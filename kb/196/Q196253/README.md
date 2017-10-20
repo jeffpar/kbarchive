@@ -6,6 +6,8 @@ permalink: /kb/196/Q196253/
 
 ## Q196253: XFOR: Service Properties are Blank or Equal Zero
 
+{% raw %}
+
 	Article: Q196253
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -53,3 +55,5 @@ permalink: /kb/196/Q196253/
 	
 	=============================================================================
 	
+
+{% endraw %}

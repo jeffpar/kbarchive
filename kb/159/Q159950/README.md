@@ -6,6 +6,8 @@ permalink: /kb/159/Q159950/
 
 ## Q159950: WD97: General Information About International Functionality
 
+{% raw %}
+
 	Article: Q159950
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/159/Q159950/
 	
 	=============================================================================
 	
+
+{% endraw %}

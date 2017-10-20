@@ -6,6 +6,8 @@ permalink: /kb/237/Q237307/
 
 ## Q237307: WINS Lookup May Not Resolve Some Name Queries
 
+{% raw %}
+
 	Article: Q237307
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/237/Q237307/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98821/
 
 ## Q98821: PROFS: 3.3 Host Access Disk &#91;5.25, 1.22 MB&#93;
 
+{% raw %}
+
 	Article: Q98821
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.3
@@ -130,3 +132,5 @@ permalink: /kb/098/Q98821/
 	
 	=============================================================================
 	
+
+{% endraw %}

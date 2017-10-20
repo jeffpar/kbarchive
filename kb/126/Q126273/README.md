@@ -6,6 +6,8 @@ permalink: /kb/126/Q126273/
 
 ## Q126273: PRB: Columns Missing in .DBF File Created in Microsoft Excel
 
+{% raw %}
+
 	Article: Q126273
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -86,3 +88,5 @@ permalink: /kb/126/Q126273/
 	
 	=============================================================================
 	
+
+{% endraw %}

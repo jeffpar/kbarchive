@@ -6,6 +6,8 @@ permalink: /kb/177/Q177434/
 
 ## Q177434: PRB: Resolving '&lt;App-name&gt;' is not a Valid Windows CE App Error
 
+{% raw %}
+
 	Article: Q177434
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0,5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/177/Q177434/
 	
 	=============================================================================
 	
+
+{% endraw %}

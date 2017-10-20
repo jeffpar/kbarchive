@@ -6,6 +6,8 @@ permalink: /kb/163/Q163674/
 
 ## Q163674: LapLink Does Not Recognize Infrared COM Port
 
+{% raw %}
+
 	Article: Q163674
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -60,3 +62,5 @@ permalink: /kb/163/Q163674/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191927/
 
 ## Q191927: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Report
 
+{% raw %}
+
 	Article: Q191927
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -104,3 +106,5 @@ permalink: /kb/191/Q191927/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137280/
 
 ## Q137280: Macintosh Encarta 1995: Image File Could Not Be Loaded
 
+{% raw %}
+
 	Article: Q137280
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -70,3 +72,5 @@ permalink: /kb/137/Q137280/
 	
 	=============================================================================
 	
+
+{% endraw %}

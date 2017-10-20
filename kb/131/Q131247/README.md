@@ -6,6 +6,8 @@ permalink: /kb/131/Q131247/
 
 ## Q131247: Microsoft Exchange Does Not Recognize Recipient
 
+{% raw %}
+
 	Article: Q131247
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.2,1.3,2.0
@@ -91,3 +93,5 @@ permalink: /kb/131/Q131247/
 	
 	=============================================================================
 	
+
+{% endraw %}

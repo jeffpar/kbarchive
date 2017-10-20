@@ -6,6 +6,8 @@ permalink: /kb/121/Q121951/
 
 ## Q121951: PC DOS Win: PAB Retains Old Address of a Moved User
 
+{% raw %}
+
 	Article: Q121951
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -55,3 +57,5 @@ permalink: /kb/121/Q121951/
 	
 	=============================================================================
 	
+
+{% endraw %}

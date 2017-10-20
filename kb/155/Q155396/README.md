@@ -6,6 +6,8 @@ permalink: /kb/155/Q155396/
 
 ## Q155396: FreeCell Help Opens Extra Windows
 
+{% raw %}
+
 	Article: Q155396
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/155/Q155396/
 	
 	=============================================================================
 	
+
+{% endraw %}

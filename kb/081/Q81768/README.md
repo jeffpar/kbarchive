@@ -6,6 +6,8 @@ permalink: /kb/081/Q81768/
 
 ## Q81768: Windows Err Msg: !Error Building WIN.COM...(From MS-DOS Setup)
 
+{% raw %}
+
 	Article: Q81768
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/081/Q81768/
 	
 	=============================================================================
 	
+
+{% endraw %}

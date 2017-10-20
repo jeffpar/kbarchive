@@ -6,6 +6,8 @@ permalink: /kb/151/Q151894/
 
 ## Q151894: PRB: CToolBarCtrl::GetToolTips() May Return NULL for a ToolBar
 
+{% raw %}
+
 	Article: Q151894
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -81,3 +83,5 @@ permalink: /kb/151/Q151894/
 	
 	=============================================================================
 	
+
+{% endraw %}

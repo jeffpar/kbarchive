@@ -6,6 +6,8 @@ permalink: /kb/165/Q165485/
 
 ## Q165485: XFOR: MS Mail Connector requires a PRMD field in Site Addressing
 
+{% raw %}
+
 	Article: Q165485
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -90,3 +92,5 @@ permalink: /kb/165/Q165485/
 	
 	=============================================================================
 	
+
+{% endraw %}

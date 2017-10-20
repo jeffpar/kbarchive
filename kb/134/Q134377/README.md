@@ -6,6 +6,8 @@ permalink: /kb/134/Q134377/
 
 ## Q134377: CONN: How to Reset the Mail Queue for Mail Connection 1.0b
 
+{% raw %}
+
 	Article: Q134377
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0b
@@ -138,3 +140,5 @@ permalink: /kb/134/Q134377/
 	
 	=============================================================================
 	
+
+{% endraw %}

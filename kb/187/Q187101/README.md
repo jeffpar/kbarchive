@@ -6,6 +6,8 @@ permalink: /kb/187/Q187101/
 
 ## Q187101: Client Can Change System Startup Properties
 
+{% raw %}
+
 	Article: Q187101
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -49,3 +51,5 @@ permalink: /kb/187/Q187101/
 	
 	=============================================================================
 	
+
+{% endraw %}

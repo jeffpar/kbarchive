@@ -6,6 +6,8 @@ permalink: /kb/187/Q187989/
 
 ## Q187989: XCON: No Message Flow Between Servers: IDs 1097, 2124,2171
 
+{% raw %}
+
 	Article: Q187989
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -82,3 +84,5 @@ permalink: /kb/187/Q187989/
 	
 	=============================================================================
 	
+
+{% endraw %}

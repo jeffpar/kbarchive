@@ -6,6 +6,8 @@ permalink: /kb/223/Q223373/
 
 ## Q223373: SNA Server Rejects Host's BIND Response
 
+{% raw %}
+
 	Article: Q223373
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0SP2
@@ -113,3 +115,5 @@ permalink: /kb/223/Q223373/
 	
 	=============================================================================
 	
+
+{% endraw %}

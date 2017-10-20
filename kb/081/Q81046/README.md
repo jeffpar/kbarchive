@@ -6,6 +6,8 @@ permalink: /kb/081/Q81046/
 
 ## Q81046: Epson LQ Support of Extended Characters in Windows
 
+{% raw %}
+
 	Article: Q81046
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/081/Q81046/
 	
 	=============================================================================
 	
+
+{% endraw %}

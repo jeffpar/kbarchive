@@ -6,6 +6,8 @@ permalink: /kb/190/Q190005/
 
 ## Q190005: A Site Set Up for Anonymous Access Prompts Users for Password
 
+{% raw %}
+
 	Article: Q190005
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0
@@ -131,3 +133,5 @@ permalink: /kb/190/Q190005/
 	
 	=============================================================================
 	
+
+{% endraw %}

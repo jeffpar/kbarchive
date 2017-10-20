@@ -6,6 +6,8 @@ permalink: /kb/173/Q173279/
 
 ## Q173279: XFOR: IMC Issues Incorrect Event ID
 
+{% raw %}
+
 	Article: Q173279
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -54,3 +56,5 @@ permalink: /kb/173/Q173279/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40586/
 
 ## Q40586: Display Command Returns Incorrect Result for FORTRAN Function
 
+{% raw %}
+
 	Article: Q40586
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -26,3 +28,5 @@ permalink: /kb/040/Q40586/
 	The display command is discussed in Chapter 6 of the "Microsoft
 	CodeView and Utilities" manual. The valid FORTRAN expressions for
 	CodeView are discussed in the Chapter 4 of the same manual.
+
+{% endraw %}

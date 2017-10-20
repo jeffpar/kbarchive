@@ -6,6 +6,8 @@ permalink: /kb/241/Q241023/
 
 ## Q241023: NBA Inside Drive 2000: Game Is Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q241023
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/241/Q241023/
 	
 	=============================================================================
 	
+
+{% endraw %}

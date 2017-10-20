@@ -6,6 +6,8 @@ permalink: /kb/123/Q123213/
 
 ## Q123213: Requirements of a SMS Network Monitor Agent
 
+{% raw %}
+
 	Article: Q123213
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -40,3 +42,5 @@ permalink: /kb/123/Q123213/
 	
 	=============================================================================
 	
+
+{% endraw %}

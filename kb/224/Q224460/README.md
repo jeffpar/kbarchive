@@ -6,6 +6,8 @@ permalink: /kb/224/Q224460/
 
 ## Q224460: Err Msg: Error Connecting to &lt;Servername&gt; The RPC Service...
 
+{% raw %}
+
 	Article: Q224460
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -147,3 +149,5 @@ permalink: /kb/224/Q224460/
 	
 	=============================================================================
 	
+
+{% endraw %}

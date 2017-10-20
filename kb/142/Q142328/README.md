@@ -6,6 +6,8 @@ permalink: /kb/142/Q142328/
 
 ## Q142328: Windows 95 - How to Change International Dialing Access Codes
 
+{% raw %}
+
 	Article: Q142328
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -352,3 +354,5 @@ permalink: /kb/142/Q142328/
 	
 	=============================================================================
 	
+
+{% endraw %}

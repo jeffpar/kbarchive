@@ -6,6 +6,8 @@ permalink: /kb/134/Q134774/
 
 ## Q134774: 256-Color Bitmap Loses Colors When Drawing Tools Are Used
 
+{% raw %}
+
 	Article: Q134774
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -52,3 +54,5 @@ permalink: /kb/134/Q134774/
 	
 	=============================================================================
 	
+
+{% endraw %}

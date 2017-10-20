@@ -6,6 +6,8 @@ permalink: /kb/230/Q230502/
 
 ## Q230502: HOWTO: Print a Form That Is Too Large for the Screen or Page
 
+{% raw %}
+
 	Article: Q230502
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -185,3 +187,5 @@ permalink: /kb/230/Q230502/
 	
 	=============================================================================
 	
+
+{% endraw %}

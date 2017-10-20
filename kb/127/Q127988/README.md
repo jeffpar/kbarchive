@@ -6,6 +6,8 @@ permalink: /kb/127/Q127988/
 
 ## Q127988: Plug and Play NIC Err Msg: Hardware Does Not Respond...
 
+{% raw %}
+
 	Article: Q127988
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/127/Q127988/
 	
 	=============================================================================
 	
+
+{% endraw %}

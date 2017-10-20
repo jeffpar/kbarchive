@@ -6,6 +6,8 @@ permalink: /kb/180/Q180437/
 
 ## Q180437: BUG: Text Is Aligned Too Far Left and Up in TextBox
 
+{% raw %}
+
 	Article: Q180437
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.0
@@ -81,3 +83,5 @@ permalink: /kb/180/Q180437/
 	
 	=============================================================================
 	
+
+{% endraw %}

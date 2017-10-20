@@ -6,6 +6,8 @@ permalink: /kb/196/Q196946/
 
 ## Q196946: SNAOLEDB Fails with &quot;Data conversion (DCONV.DLL) not found&quot;
 
+{% raw %}
+
 	Article: Q196946
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0,4.0 SP1
@@ -86,3 +88,5 @@ permalink: /kb/196/Q196946/
 	
 	=============================================================================
 	
+
+{% endraw %}

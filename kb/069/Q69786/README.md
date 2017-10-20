@@ -6,6 +6,8 @@ permalink: /kb/069/Q69786/
 
 ## Q69786: Flight Simulator: Fuel Gauge Setting Not Saved with Mode
 
+{% raw %}
+
 	Article: Q69786
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/069/Q69786/
 	
 	=============================================================================
 	
+
+{% endraw %}

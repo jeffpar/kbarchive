@@ -6,6 +6,8 @@ permalink: /kb/176/Q176093/
 
 ## Q176093: Gridtest.exe Sample Grid Does Not Refresh Properly
 
+{% raw %}
+
 	Article: Q176093
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -188,3 +190,5 @@ permalink: /kb/176/Q176093/
 	
 	=============================================================================
 	
+
+{% endraw %}

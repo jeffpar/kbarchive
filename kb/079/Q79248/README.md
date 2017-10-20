@@ -6,6 +6,8 @@ permalink: /kb/079/Q79248/
 
 ## Q79248: COREtape Light Backup System Incompatible with DOSKEY
 
+{% raw %}
+
 	Article: Q79248
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/079/Q79248/
 	
 	=============================================================================
 	
+
+{% endraw %}

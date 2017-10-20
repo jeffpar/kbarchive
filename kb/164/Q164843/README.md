@@ -6,6 +6,8 @@ permalink: /kb/164/Q164843/
 
 ## Q164843: XADM: Enhancement to Separate Reply Address from E-mail Address
 
+{% raw %}
+
 	Article: Q164843
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/164/Q164843/
 	
 	=============================================================================
 	
+
+{% endraw %}

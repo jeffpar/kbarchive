@@ -6,6 +6,8 @@ permalink: /kb/137/Q137366/
 
 ## Q137366: FILE: Fw-win95.exe Running FoxPro 2.6 Apps in Windows 95
 
+{% raw %}
+
 	Article: Q137366
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x
@@ -65,3 +67,5 @@ permalink: /kb/137/Q137366/
 	
 	=============================================================================
 	
+
+{% endraw %}

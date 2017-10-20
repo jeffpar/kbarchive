@@ -6,6 +6,8 @@ permalink: /kb/167/Q167710/
 
 ## Q167710: XCLN: POP and IMAP Security Issues
 
+{% raw %}
+
 	Article: Q167710
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0;Win95:4.0,5.0;WinNT:4.0,5.0
@@ -54,3 +56,5 @@ permalink: /kb/167/Q167710/
 	
 	=============================================================================
 	
+
+{% endraw %}

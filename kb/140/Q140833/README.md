@@ -6,6 +6,8 @@ permalink: /kb/140/Q140833/
 
 ## Q140833: APPC Allocation Error Running Multithreaded Random &amp; Bounce TP
 
+{% raw %}
+
 	Article: Q140833
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -113,3 +115,5 @@ permalink: /kb/140/Q140833/
 	
 	=============================================================================
 	
+
+{% endraw %}

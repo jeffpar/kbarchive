@@ -6,6 +6,8 @@ permalink: /kb/034/Q34294/
 
 ## Q34294: Cannot Overlay Small-Model Code
 
+{% raw %}
+
 	Article: Q34294
 	Product(s): See article
 	Version(s): 3.60 3.61 3.64 3.65 5.01.20 5.01.21
@@ -27,3 +29,5 @@ permalink: /kb/034/Q34294/
 	"Microsoft FORTRAN Optimizing Compiler User's Guide" states that you
 	can overlay only modules to which control is transferred and returned
 	by a standard 8086 long (32-bit) call/return instruction.
+
+{% endraw %}

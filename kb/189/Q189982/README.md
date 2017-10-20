@@ -6,6 +6,8 @@ permalink: /kb/189/Q189982/
 
 ## Q189982: PRB: Error 429 When Trying to Access an MTS Component
 
+{% raw %}
+
 	Article: Q189982
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,5.0
@@ -144,3 +146,5 @@ permalink: /kb/189/Q189982/
 	
 	=============================================================================
 	
+
+{% endraw %}

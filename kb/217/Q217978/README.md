@@ -6,6 +6,8 @@ permalink: /kb/217/Q217978/
 
 ## Q217978: Outgoing and Incoming Values Do Not Refresh as Frequently
 
+{% raw %}
+
 	Article: Q217978
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -59,3 +61,5 @@ permalink: /kb/217/Q217978/
 	
 	=============================================================================
 	
+
+{% endraw %}

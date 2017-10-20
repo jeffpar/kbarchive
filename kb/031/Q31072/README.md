@@ -6,6 +6,8 @@ permalink: /kb/031/Q31072/
 
 ## Q31072: FUNCTION+NUM LOCK Toggle Remaps Cursor Keys on Toshiba T1200
 
+{% raw %}
+
 	Article: Q31072
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -62,3 +64,5 @@ permalink: /kb/031/Q31072/
 	QuickBASIC Version 4.00 works correctly using the above regular
 	keyboard keys as your keypad, instead of using the dedicated cursor
 	keys.
+
+{% endraw %}

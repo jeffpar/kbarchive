@@ -6,6 +6,8 @@ permalink: /kb/193/Q193779/
 
 ## Q193779: Cluster Server Drive Letters Do Not Update Using Disk Admin
 
+{% raw %}
+
 	Article: Q193779
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/193/Q193779/
 	
 	=============================================================================
 	
+
+{% endraw %}

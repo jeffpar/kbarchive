@@ -6,6 +6,8 @@ permalink: /kb/266/Q266759/
 
 ## Q266759: SMS: The Package Source Is Removed from Package Properties
 
+{% raw %}
+
 	Article: Q266759
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0
@@ -85,3 +87,5 @@ permalink: /kb/266/Q266759/
 	
 	=============================================================================
 	
+
+{% endraw %}

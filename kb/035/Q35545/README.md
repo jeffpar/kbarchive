@@ -6,6 +6,8 @@ permalink: /kb/035/Q35545/
 
 ## Q35545: Example Incorrect for the write() Function
 
+{% raw %}
+
 	Article: Q35545
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/035/Q35545/
 	
 	To work around this problem, change the number of bytes to write from
 	60,000 bytes to 6000 bytes.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201063/
 
 ## Q201063: XADM: Advanced Security Only Available for Mailboxes in Exchange
 
+{% raw %}
+
 	Article: Q201063
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/201/Q201063/
 	
 	=============================================================================
 	
+
+{% endraw %}

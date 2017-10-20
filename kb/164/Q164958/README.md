@@ -6,6 +6,8 @@ permalink: /kb/164/Q164958/
 
 ## Q164958: FIX: Error Occurs When Running PTK Setup
 
+{% raw %}
+
 	Article: Q164958
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -59,3 +61,5 @@ permalink: /kb/164/Q164958/
 	
 	=============================================================================
 	
+
+{% endraw %}

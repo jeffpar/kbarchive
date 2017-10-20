@@ -6,6 +6,8 @@ permalink: /kb/194/Q194608/
 
 ## Q194608: FIX: Incorrect Code Generated with /Og Optimization
 
+{% raw %}
+
 	Article: Q194608
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/194/Q194608/
 	
 	=============================================================================
 	
+
+{% endraw %}

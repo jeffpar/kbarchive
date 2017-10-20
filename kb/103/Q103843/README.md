@@ -6,6 +6,8 @@ permalink: /kb/103/Q103843/
 
 ## Q103843: Cannot Manage Files with Trailing Spaces
 
+{% raw %}
+
 	Article: Q103843
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -65,3 +67,5 @@ permalink: /kb/103/Q103843/
 	
 	=============================================================================
 	
+
+{% endraw %}

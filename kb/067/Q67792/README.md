@@ -6,6 +6,8 @@ permalink: /kb/067/Q67792/
 
 ## Q67792: FIX: PWB Extensions in MS-DOS Cannot Shell to MS-DOS
 
+{% raw %}
+
 	Article: Q67792
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1
@@ -53,3 +55,5 @@ permalink: /kb/067/Q67792/
 	
 	=============================================================================
 	
+
+{% endraw %}

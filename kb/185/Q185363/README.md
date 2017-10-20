@@ -6,6 +6,8 @@ permalink: /kb/185/Q185363/
 
 ## Q185363: Close Combat: A Bridge Too Far Update Available
 
+{% raw %}
+
 	Article: Q185363
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -84,3 +86,5 @@ permalink: /kb/185/Q185363/
 	
 	=============================================================================
 	
+
+{% endraw %}

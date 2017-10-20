@@ -6,6 +6,8 @@ permalink: /kb/228/Q228455/
 
 ## Q228455: PRB: Missing /c Compiler Option Causes LNK1561 Linker Error
 
+{% raw %}
+
 	Article: Q228455
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -83,3 +85,5 @@ permalink: /kb/228/Q228455/
 	
 	=============================================================================
 	
+
+{% endraw %}

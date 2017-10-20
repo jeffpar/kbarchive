@@ -6,6 +6,8 @@ permalink: /kb/241/Q241525/
 
 ## Q241525: Duplicate Transactional Messages Sent by MSMQ
 
+{% raw %}
+
 	Article: Q241525
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -99,3 +101,5 @@ permalink: /kb/241/Q241525/
 	
 	=============================================================================
 	
+
+{% endraw %}

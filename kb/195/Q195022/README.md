@@ -6,6 +6,8 @@ permalink: /kb/195/Q195022/
 
 ## Q195022: PRB: VB: &quot;File could not be mapped to the SourceSafe Project&quot;
 
+{% raw %}
+
 	Article: Q195022
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/195/Q195022/
 	
 	=============================================================================
 	
+
+{% endraw %}

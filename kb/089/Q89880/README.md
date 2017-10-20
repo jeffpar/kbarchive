@@ -6,6 +6,8 @@ permalink: /kb/089/Q89880/
 
 ## Q89880: Toolbar Buttons Extend Beyond the Toolbar in File Manager
 
+{% raw %}
+
 	Article: Q89880
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -78,3 +80,5 @@ permalink: /kb/089/Q89880/
 	
 	=============================================================================
 	
+
+{% endraw %}

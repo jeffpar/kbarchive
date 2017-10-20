@@ -6,6 +6,8 @@ permalink: /kb/041/Q41003/
 
 ## Q41003: Missing Options in QuickBASIC 4.50 Editor without Full Menus
 
+{% raw %}
+
 	Article: Q41003
 	Product(s): See article
 	Version(s): 4.50
@@ -91,3 +93,5 @@ permalink: /kb/041/Q41003/
 	
 	   EXE requiring BRUN45
 	   Stand-Alone EXE
+
+{% endraw %}

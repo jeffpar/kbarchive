@@ -6,6 +6,8 @@ permalink: /kb/137/Q137445/
 
 ## Q137445: How to Display View and Connection Properties
 
+{% raw %}
+
 	Article: Q137445
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/137/Q137445/
 	
 	=============================================================================
 	
+
+{% endraw %}

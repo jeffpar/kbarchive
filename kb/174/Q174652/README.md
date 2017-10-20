@@ -6,6 +6,8 @@ permalink: /kb/174/Q174652/
 
 ## Q174652: FIX: PrintForm Method Does Not Print Entire Form
 
+{% raw %}
+
 	Article: Q174652
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -105,3 +107,5 @@ permalink: /kb/174/Q174652/
 	
 	=============================================================================
 	
+
+{% endraw %}

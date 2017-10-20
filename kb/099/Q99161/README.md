@@ -6,6 +6,8 @@ permalink: /kb/099/Q99161/
 
 ## Q99161: HOWTO: Derive From Classes not Listed in ClassWizard
 
+{% raw %}
+
 	Article: Q99161
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS: 1.0, 1.5, 1.51, 1.52; WINNT: 1.0, 2.0,
@@ -130,3 +132,5 @@ permalink: /kb/099/Q99161/
 	
 	=============================================================================
 	
+
+{% endraw %}

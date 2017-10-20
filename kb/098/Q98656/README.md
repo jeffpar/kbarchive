@@ -6,6 +6,8 @@ permalink: /kb/098/Q98656/
 
 ## Q98656: INFO: Creating a Browser Library for the Foundation Classes
 
+{% raw %}
+
 	Article: Q98656
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,4.0
@@ -295,3 +297,5 @@ permalink: /kb/098/Q98656/
 	
 	=============================================================================
 	
+
+{% endraw %}

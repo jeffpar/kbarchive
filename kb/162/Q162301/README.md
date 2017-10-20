@@ -6,6 +6,8 @@ permalink: /kb/162/Q162301/
 
 ## Q162301: FIX: @ SAY Causes Error After SET DEVICE to PRINTER Command
 
+{% raw %}
+
 	Article: Q162301
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -74,3 +76,5 @@ permalink: /kb/162/Q162301/
 	
 	=============================================================================
 	
+
+{% endraw %}

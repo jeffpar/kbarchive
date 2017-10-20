@@ -6,6 +6,8 @@ permalink: /kb/051/Q51240/
 
 ## Q51240: Mouse and Renaissance Legacy II Switch Graphics Adapter
 
+{% raw %}
+
 	Article: Q51240
 	Product(s): See article
 	Version(s): 1.00
@@ -29,3 +31,5 @@ permalink: /kb/051/Q51240/
 	mouse. For example, do the following for COM1:
 	
 	   mouse /C1
+
+{% endraw %}

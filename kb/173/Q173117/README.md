@@ -6,6 +6,8 @@ permalink: /kb/173/Q173117/
 
 ## Q173117: WD97: Cannot Undo Style Gallery Change
 
+{% raw %}
+
 	Article: Q173117
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173117/
 	
 	=============================================================================
 	
+
+{% endraw %}

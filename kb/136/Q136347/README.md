@@ -6,6 +6,8 @@ permalink: /kb/136/Q136347/
 
 ## Q136347: PPT7: &quot;Not Enough Printer Memory...&quot; Error Trying to Print File
 
+{% raw %}
+
 	Article: Q136347
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -90,3 +92,5 @@ permalink: /kb/136/Q136347/
 	
 	=============================================================================
 	
+
+{% endraw %}

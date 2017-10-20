@@ -6,6 +6,8 @@ permalink: /kb/157/Q157391/
 
 ## Q157391: Soccer: Setting Up Your Joystick, Game Pad, Mouse, or Keyboard
 
+{% raw %}
+
 	Article: Q157391
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/157/Q157391/
 	
 	=============================================================================
 	
+
+{% endraw %}

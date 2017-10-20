@@ -6,6 +6,8 @@ permalink: /kb/153/Q153539/
 
 ## Q153539: 16-bit PGC: Appstart GPFs When WFW is Low on Environment Space
 
+{% raw %}
+
 	Article: Q153539
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -50,3 +52,5 @@ permalink: /kb/153/Q153539/
 	
 	=============================================================================
 	
+
+{% endraw %}

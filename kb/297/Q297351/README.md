@@ -6,6 +6,8 @@ permalink: /kb/297/Q297351/
 
 ## Q297351: Last Number Dialed Appears Incorrectly In MSN Explorer 6.1
 
+{% raw %}
+
 	Article: Q297351
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -54,3 +56,5 @@ permalink: /kb/297/Q297351/
 	
 	=============================================================================
 	
+
+{% endraw %}

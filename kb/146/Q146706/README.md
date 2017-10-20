@@ -6,6 +6,8 @@ permalink: /kb/146/Q146706/
 
 ## Q146706: XCLN: Setup Doesn't Remove Icons in Non-Default Group
 
+{% raw %}
+
 	Article: Q146706
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/146/Q146706/
 	
 	=============================================================================
 	
+
+{% endraw %}

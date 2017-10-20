@@ -6,6 +6,8 @@ permalink: /kb/223/Q223329/
 
 ## Q223329: XADM: Setting Server Monitor to Monitor Remote Computers
 
+{% raw %}
+
 	Article: Q223329
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/223/Q223329/
 	
 	=============================================================================
 	
+
+{% endraw %}

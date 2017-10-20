@@ -6,6 +6,8 @@ permalink: /kb/171/Q171049/
 
 ## Q171049: XADM: Error Msg. Trying to Modify E-mail Address in Admin
 
+{% raw %}
+
 	Article: Q171049
 	Product(s): Microsoft Exchange
 	Version(s): 5.00
@@ -138,3 +140,5 @@ permalink: /kb/171/Q171049/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128073/
 
 ## Q128073: PRB: Additem Does Not Add Elements to an Outline Control
 
+{% raw %}
+
 	Article: Q128073
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -122,3 +124,5 @@ permalink: /kb/128/Q128073/
 	
 	=============================================================================
 	
+
+{% endraw %}

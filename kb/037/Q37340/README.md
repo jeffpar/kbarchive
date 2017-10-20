@@ -6,6 +6,8 @@ permalink: /kb/037/Q37340/
 
 ## Q37340: MS-DOS QuickBASIC 4.00 Differs from XENIX BASIC Compiler 5.70
 
+{% raw %}
+
 	Article: Q37340
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -77,3 +79,5 @@ permalink: /kb/037/Q37340/
 	   * DELETE
 	   * EDIT
 	   * USR
+
+{% endraw %}

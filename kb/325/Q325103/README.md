@@ -6,6 +6,8 @@ permalink: /kb/325/Q325103/
 
 ## Q325103: FIX: COMTI Perfmon Counters Do Not Collect Data by Using MOM
 
+{% raw %}
+
 	Article: Q325103
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/325/Q325103/
 	
 	=============================================================================
 	
+
+{% endraw %}

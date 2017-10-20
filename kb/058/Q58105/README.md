@@ -6,6 +6,8 @@ permalink: /kb/058/Q58105/
 
 ## Q58105: Explanation of Tiling in BASIC; PAINTing with Patterns
 
+{% raw %}
+
 	Article: Q58105
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -176,3 +178,5 @@ permalink: /kb/058/Q58105/
 	   CIRCLE (100,100),50
 	   PAINT (100,100),TILE$
 	   END
+
+{% endraw %}

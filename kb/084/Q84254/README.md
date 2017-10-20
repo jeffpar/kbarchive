@@ -6,6 +6,8 @@ permalink: /kb/084/Q84254/
 
 ## Q84254: Order of Groups on the Program Manager's Window Menu
 
+{% raw %}
+
 	Article: Q84254
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/084/Q84254/
 	
 	=============================================================================
 	
+
+{% endraw %}

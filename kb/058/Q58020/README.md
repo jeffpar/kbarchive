@@ -6,6 +6,8 @@ permalink: /kb/058/Q58020/
 
 ## Q58020: Can't Search on Blank String Field in BASIC 7.00 ISAM
 
+{% raw %}
+
 	Article: Q58020
 	Product(s): See article
 	Version(s): 7.00
@@ -47,3 +49,5 @@ permalink: /kb/058/Q58020/
 	character with string fields that are to be completely blank and set
 	the field equal to that character. Then, in all subsequent searches on
 	this field, use that character as the key.
+
+{% endraw %}

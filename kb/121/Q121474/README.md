@@ -6,6 +6,8 @@ permalink: /kb/121/Q121474/
 
 ## Q121474: BUG: Incorrect Declarations in vbdemo Program
 
+{% raw %}
+
 	Article: Q121474
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -102,3 +104,5 @@ permalink: /kb/121/Q121474/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102575/
 
 ## Q102575: INFO: Obtaining Group/Item Info from ProgMan Using DDEML
 
+{% raw %}
+
 	Article: Q102575
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1; winnt:3.5,3.51
@@ -149,3 +151,5 @@ permalink: /kb/102/Q102575/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119524/
 
 ## Q119524: Copying Files with Long Filenames to FAT Partitions
 
+{% raw %}
+
 	Article: Q119524
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/119/Q119524/
 	
 	=============================================================================
 	
+
+{% endraw %}

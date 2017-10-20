@@ -6,6 +6,8 @@ permalink: /kb/142/Q142735/
 
 ## Q142735: DOCERR: Error #1966 Has Incorrect Help Explanation
 
+{% raw %}
+
 	Article: Q142735
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -57,3 +59,5 @@ permalink: /kb/142/Q142735/
 	
 	=============================================================================
 	
+
+{% endraw %}

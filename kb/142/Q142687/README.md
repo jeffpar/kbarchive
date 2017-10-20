@@ -6,6 +6,8 @@ permalink: /kb/142/Q142687/
 
 ## Q142687: Windows NT 4.0 Not Able to Read Some Compact Discs
 
+{% raw %}
+
 	Article: Q142687
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/142/Q142687/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263068/
 
 ## Q263068: XCLN: Reply to All to a Message Stays in Outbox Until NDR
 
+{% raw %}
+
 	Article: Q263068
 	Product(s): Microsoft Exchange
 	Version(s): 8.04
@@ -76,3 +78,5 @@ permalink: /kb/263/Q263068/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196879/
 
 ## Q196879: WD97: Ampersand in File Name Not Included When Added to Menu
 
+{% raw %}
+
 	Article: Q196879
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/196/Q196879/
 	
 	=============================================================================
 	
+
+{% endraw %}

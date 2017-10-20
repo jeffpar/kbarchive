@@ -6,6 +6,8 @@ permalink: /kb/242/Q242309/
 
 ## Q242309: CreateFile() Does Not Function Correctly with Certain Flags
 
+{% raw %}
+
 	Article: Q242309
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -60,3 +62,5 @@ permalink: /kb/242/Q242309/
 	
 	=============================================================================
 	
+
+{% endraw %}

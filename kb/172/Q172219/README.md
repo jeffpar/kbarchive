@@ -6,6 +6,8 @@ permalink: /kb/172/Q172219/
 
 ## Q172219: Canon LBP-8 III+ Prints Symbol Font for Entire Document
 
+{% raw %}
+
 	Article: Q172219
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/172/Q172219/
 	
 	=============================================================================
 	
+
+{% endraw %}

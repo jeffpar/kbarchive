@@ -6,6 +6,8 @@ permalink: /kb/137/Q137912/
 
 ## Q137912: File Permissions on &#92;SYSTEM32 Affect All Subdirectories
 
+{% raw %}
+
 	Article: Q137912
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -68,3 +70,5 @@ permalink: /kb/137/Q137912/
 	
 	=============================================================================
 	
+
+{% endraw %}

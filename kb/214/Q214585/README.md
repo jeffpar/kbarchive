@@ -6,6 +6,8 @@ permalink: /kb/214/Q214585/
 
 ## Q214585: Close Combat III: Computer Hangs When You Quit Game
 
+{% raw %}
+
 	Article: Q214585
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -77,3 +79,5 @@ permalink: /kb/214/Q214585/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140869/
 
 ## Q140869: WD97: Mouse Click Selects Multiple Cells in Embedded Spreadsheet
 
+{% raw %}
+
 	Article: Q140869
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/140/Q140869/
 	
 	=============================================================================
 	
+
+{% endraw %}

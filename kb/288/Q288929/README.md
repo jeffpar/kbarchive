@@ -6,6 +6,8 @@ permalink: /kb/288/Q288929/
 
 ## Q288929: SAMPLE: FileDragTest.exe Drags and Drops File in and out of App.
 
+{% raw %}
+
 	Article: Q288929
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/288/Q288929/
 	
 	=============================================================================
 	
+
+{% endraw %}

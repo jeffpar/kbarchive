@@ -6,6 +6,8 @@ permalink: /kb/260/Q260002/
 
 ## Q260002: StarLancer: Sounds in Game Are Choppy or Are Played Twice
 
+{% raw %}
+
 	Article: Q260002
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/260/Q260002/
 	
 	=============================================================================
 	
+
+{% endraw %}

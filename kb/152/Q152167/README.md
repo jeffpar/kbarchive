@@ -6,6 +6,8 @@ permalink: /kb/152/Q152167/
 
 ## Q152167: Dir-Sync w/Many Computers Running Exchange Server, MS Mail POs
 
+{% raw %}
+
 	Article: Q152167
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/152/Q152167/
 	
 	=============================================================================
 	
+
+{% endraw %}

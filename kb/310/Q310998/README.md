@@ -6,6 +6,8 @@ permalink: /kb/310/Q310998/
 
 ## Q310998: PRB: EMPTY() May Incorrectly Return False When Testing for Zero
 
+{% raw %}
+
 	Article: Q310998
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -76,3 +78,5 @@ permalink: /kb/310/Q310998/
 	
 	=============================================================================
 	
+
+{% endraw %}

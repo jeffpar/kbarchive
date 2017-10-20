@@ -6,6 +6,8 @@ permalink: /kb/113/Q113781/
 
 ## Q113781: Sound: GP Faults or System Hangs with Third-Party Shells
 
+{% raw %}
+
 	Article: Q113781
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.00
@@ -56,3 +58,5 @@ permalink: /kb/113/Q113781/
 	
 	=============================================================================
 	
+
+{% endraw %}

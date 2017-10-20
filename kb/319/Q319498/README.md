@@ -6,6 +6,8 @@ permalink: /kb/319/Q319498/
 
 ## Q319498: Err Msg: Unable to Start or Register Saminfo1 Control Pack
 
+{% raw %}
+
 	Article: Q319498
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.5
@@ -118,3 +120,5 @@ permalink: /kb/319/Q319498/
 	
 	=============================================================================
 	
+
+{% endraw %}

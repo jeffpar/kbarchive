@@ -6,6 +6,8 @@ permalink: /kb/108/Q108742/
 
 ## Q108742: Documentation Errors in RAS Manuals
 
+{% raw %}
+
 	Article: Q108742
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.1
@@ -50,3 +52,5 @@ permalink: /kb/108/Q108742/
 	
 	=============================================================================
 	
+
+{% endraw %}

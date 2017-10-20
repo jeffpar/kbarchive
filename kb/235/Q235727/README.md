@@ -6,6 +6,8 @@ permalink: /kb/235/Q235727/
 
 ## Q235727: SMSINST: Repackage Does Not Detect Deleted Reg Keys and Values
 
+{% raw %}
+
 	Article: Q235727
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0
@@ -56,3 +58,5 @@ permalink: /kb/235/Q235727/
 	
 	=============================================================================
 	
+
+{% endraw %}

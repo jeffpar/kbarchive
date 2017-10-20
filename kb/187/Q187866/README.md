@@ -6,6 +6,8 @@ permalink: /kb/187/Q187866/
 
 ## Q187866: XADM: Store Produces Dr. Watson When Converting File Name
 
+{% raw %}
+
 	Article: Q187866
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -127,3 +129,5 @@ permalink: /kb/187/Q187866/
 	
 	=============================================================================
 	
+
+{% endraw %}

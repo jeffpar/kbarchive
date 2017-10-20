@@ -6,6 +6,8 @@ permalink: /kb/258/Q258538/
 
 ## Q258538: PRB: Printing to a USB Printer Could Cause Fatal Exception Error
 
+{% raw %}
+
 	Article: Q258538
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,95,98,98 Second Edition
@@ -74,3 +76,5 @@ permalink: /kb/258/Q258538/
 	
 	=============================================================================
 	
+
+{% endraw %}

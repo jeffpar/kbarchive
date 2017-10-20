@@ -6,6 +6,8 @@ permalink: /kb/127/Q127185/
 
 ## Q127185: Tandberg 3820 Driver Does Not Support 6150 (150 MB) Tapes
 
+{% raw %}
+
 	Article: Q127185
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/127/Q127185/
 	
 	=============================================================================
 	
+
+{% endraw %}

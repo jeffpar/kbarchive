@@ -6,6 +6,8 @@ permalink: /kb/104/Q104420/
 
 ## Q104420: PC Forms: Data Segment Error When Routing File
 
+{% raw %}
+
 	Article: Q104420
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -59,3 +61,5 @@ permalink: /kb/104/Q104420/
 	
 	=============================================================================
 	
+
+{% endraw %}

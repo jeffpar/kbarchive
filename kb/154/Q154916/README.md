@@ -6,6 +6,8 @@ permalink: /kb/154/Q154916/
 
 ## Q154916: Cannot Switch to Running Control Panel Tool
 
+{% raw %}
+
 	Article: Q154916
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/154/Q154916/
 	
 	=============================================================================
 	
+
+{% endraw %}

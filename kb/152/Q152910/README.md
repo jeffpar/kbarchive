@@ -6,6 +6,8 @@ permalink: /kb/152/Q152910/
 
 ## Q152910: XADM: MTA Queue Message Time Stamp Off By One Hour
 
+{% raw %}
+
 	Article: Q152910
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/152/Q152910/
 	
 	=============================================================================
 	
+
+{% endraw %}

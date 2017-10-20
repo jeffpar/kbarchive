@@ -6,6 +6,8 @@ permalink: /kb/086/Q86085/
 
 ## Q86085: PC WSPlus: Friendly Name Does Not Change When Updated
 
+{% raw %}
+
 	Article: Q86085
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86085/
 	
 	=============================================================================
 	
+
+{% endraw %}

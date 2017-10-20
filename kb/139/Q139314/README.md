@@ -6,6 +6,8 @@ permalink: /kb/139/Q139314/
 
 ## Q139314: CONN: Err Msg: Ambiguous Address: More than One Recipient...
 
+{% raw %}
+
 	Article: Q139314
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -51,3 +53,5 @@ permalink: /kb/139/Q139314/
 	
 	=============================================================================
 	
+
+{% endraw %}

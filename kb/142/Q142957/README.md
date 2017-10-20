@@ -6,6 +6,8 @@ permalink: /kb/142/Q142957/
 
 ## Q142957: Starting Microsoft Backup Hangs Computer
 
+{% raw %}
+
 	Article: Q142957
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -82,3 +84,5 @@ permalink: /kb/142/Q142957/
 	
 	=============================================================================
 	
+
+{% endraw %}

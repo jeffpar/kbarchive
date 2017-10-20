@@ -6,6 +6,8 @@ permalink: /kb/066/Q66077/
 
 ## Q66077: Windows Err Msg: Icon Extraction Error/Group File Error
 
+{% raw %}
+
 	Article: Q66077
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/066/Q66077/
 	
 	=============================================================================
 	
+
+{% endraw %}

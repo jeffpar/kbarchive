@@ -6,6 +6,8 @@ permalink: /kb/247/Q247514/
 
 ## Q247514: XADM: Event ID 295 Message After You Install Spanish Templates
 
+{% raw %}
+
 	Article: Q247514
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -105,3 +107,5 @@ permalink: /kb/247/Q247514/
 	
 	=============================================================================
 	
+
+{% endraw %}

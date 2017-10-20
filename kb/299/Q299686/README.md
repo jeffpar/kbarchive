@@ -6,6 +6,8 @@ permalink: /kb/299/Q299686/
 
 ## Q299686: HOWTO: Detect If Scroll Bars Are Visible on a Control
 
+{% raw %}
+
 	Article: Q299686
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/299/Q299686/
 	
 	=============================================================================
 	
+
+{% endraw %}

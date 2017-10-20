@@ -6,6 +6,8 @@ permalink: /kb/183/Q183915/
 
 ## Q183915: CG: Clip Gallery Cannot Find Clip Art on a CD-ROM Drive
 
+{% raw %}
+
 	Article: Q183915
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0
@@ -199,3 +201,5 @@ permalink: /kb/183/Q183915/
 	
 	=============================================================================
 	
+
+{% endraw %}

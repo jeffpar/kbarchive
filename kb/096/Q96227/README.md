@@ -6,6 +6,8 @@ permalink: /kb/096/Q96227/
 
 ## Q96227: MS-DOS wrkheuristic 14 (Raw Data) Documented Incorrectly
 
+{% raw %}
+
 	Article: Q96227
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/096/Q96227/
 	
 	=============================================================================
 	
+
+{% endraw %}

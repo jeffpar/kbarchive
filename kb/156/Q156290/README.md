@@ -6,6 +6,8 @@ permalink: /kb/156/Q156290/
 
 ## Q156290: XCLN Forms Designer Hangs Attempting To Install Project File
 
+{% raw %}
+
 	Article: Q156290
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/156/Q156290/
 	
 	=============================================================================
 	
+
+{% endraw %}

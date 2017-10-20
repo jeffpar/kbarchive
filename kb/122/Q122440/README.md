@@ -6,6 +6,8 @@ permalink: /kb/122/Q122440/
 
 ## Q122440: Err Msg: Cannot Load Catalog From Tape
 
+{% raw %}
+
 	Article: Q122440
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/122/Q122440/
 	
 	=============================================================================
 	
+
+{% endraw %}

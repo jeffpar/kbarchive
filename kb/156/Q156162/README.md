@@ -6,6 +6,8 @@ permalink: /kb/156/Q156162/
 
 ## Q156162: PPT: Error Opening Unpacked Presentation In Windows 3.1
 
+{% raw %}
+
 	Article: Q156162
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0
@@ -93,3 +95,5 @@ permalink: /kb/156/Q156162/
 	
 	=============================================================================
 	
+
+{% endraw %}

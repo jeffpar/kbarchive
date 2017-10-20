@@ -6,6 +6,8 @@ permalink: /kb/266/Q266599/
 
 ## Q266599: Encarta Researcher: Cannot Copy Text from the Web
 
+{% raw %}
+
 	Article: Q266599
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/266/Q266599/
 	
 	=============================================================================
 	
+
+{% endraw %}

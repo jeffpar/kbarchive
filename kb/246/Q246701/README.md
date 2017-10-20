@@ -6,6 +6,8 @@ permalink: /kb/246/Q246701/
 
 ## Q246701: Configuring Index Server to Use the Neutral Word Breaker
 
+{% raw %}
+
 	Article: Q246701
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -92,3 +94,5 @@ permalink: /kb/246/Q246701/
 	
 	=============================================================================
 	
+
+{% endraw %}

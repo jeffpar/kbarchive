@@ -6,6 +6,8 @@ permalink: /kb/046/Q46847/
 
 ## Q46847: INKEY&#36; Example to Work Around ON KEY GOSUB Suspended by INPUT
 
+{% raw %}
+
 	Article: Q46847
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -149,3 +151,5 @@ permalink: /kb/046/Q46847/
 	      a$ = INKEY$
 	   LOOP WHILE a$ = ""
 	END SUB
+
+{% endraw %}

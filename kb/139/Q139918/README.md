@@ -6,6 +6,8 @@ permalink: /kb/139/Q139918/
 
 ## Q139918: Bookshelf 95: Ctl3dv2.dll Conflicts with Corel Gallery II
 
+{% raw %}
+
 	Article: Q139918
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -67,3 +69,5 @@ permalink: /kb/139/Q139918/
 	
 	=============================================================================
 	
+
+{% endraw %}

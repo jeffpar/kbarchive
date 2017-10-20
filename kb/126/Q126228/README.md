@@ -6,6 +6,8 @@ permalink: /kb/126/Q126228/
 
 ## Q126228: CONN: LGTWGET and LMACGET Version 3.4.6 Update
 
+{% raw %}
+
 	Article: Q126228
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -101,3 +103,5 @@ permalink: /kb/126/Q126228/
 	
 	=============================================================================
 	
+
+{% endraw %}

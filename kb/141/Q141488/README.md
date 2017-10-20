@@ -6,6 +6,8 @@ permalink: /kb/141/Q141488/
 
 ## Q141488: INFO: Using Enumerated Properties in an OLE Control
 
+{% raw %}
+
 	Article: Q141488
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1
@@ -78,9 +80,9 @@ permalink: /kb/141/Q141488/
 	
 	    // NOTE - ClassWizard will maintain property information here.
 	    //    Use extreme caution when editing this section.
-	    //{ {AFX_ODL_PROP(CEnumCtrl)
+	    //{{AFX_ODL_PROP(CEnumCtrl)
 	      [id(1)] enumLineStyle LineStyle;
-	    //} }AFX_ODL_PROP
+	    //}}AFX_ODL_PROP
 	
 	Another method involves overriding the COleControl methods
 	OnGetPredefinedStrings, OnGetPredefinedValue, and OnGetDisplayString. The
@@ -123,3 +125,5 @@ permalink: /kb/141/Q141488/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268787/
 
 ## Q268787: NFS Server Does Not Use Mapped Group for Access Token
 
+{% raw %}
+
 	Article: Q268787
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/268/Q268787/
 	
 	=============================================================================
 	
+
+{% endraw %}

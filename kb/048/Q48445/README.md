@@ -6,6 +6,8 @@ permalink: /kb/048/Q48445/
 
 ## Q48445: Emulation Modes for Brother Dot-Matrix Printers
 
+{% raw %}
+
 	Article: Q48445
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/048/Q48445/
 	
 	=============================================================================
 	
+
+{% endraw %}

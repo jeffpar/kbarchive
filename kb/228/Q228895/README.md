@@ -6,6 +6,8 @@ permalink: /kb/228/Q228895/
 
 ## Q228895: Age of Empires: Trade Workshop Building Is Displayed on the Map
 
+{% raw %}
+
 	Article: Q228895
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/228/Q228895/
 	
 	=============================================================================
 	
+
+{% endraw %}

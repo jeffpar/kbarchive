@@ -6,6 +6,8 @@ permalink: /kb/178/Q178046/
 
 ## Q178046: XADM: Err Msg: Background Thread FDsWaitTask Encountered...
 
+{% raw %}
+
 	Article: Q178046
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/178/Q178046/
 	
 	=============================================================================
 	
+
+{% endraw %}

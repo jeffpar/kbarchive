@@ -6,6 +6,8 @@ permalink: /kb/155/Q155111/
 
 ## Q155111: TCP/IP: Advanced Options Allow &gt; 5 Additional IP Addresses
 
+{% raw %}
+
 	Article: Q155111
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/155/Q155111/
 	
 	=============================================================================
 	
+
+{% endraw %}

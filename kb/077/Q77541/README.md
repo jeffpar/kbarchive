@@ -6,6 +6,8 @@ permalink: /kb/077/Q77541/
 
 ## Q77541: NETLOGON.PRO in LAN Manager 2.0 Doesn't Load in Control Panel
 
+{% raw %}
+
 	Article: Q77541
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -63,3 +65,5 @@ permalink: /kb/077/Q77541/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229148/
 
 ## Q229148: XADM: (N-)DR and (N-)RR Display in Mixed Languages
 
+{% raw %}
+
 	Article: Q229148
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.0,8.01,8.02,8.03,8.04,8.5; winnt:5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/229/Q229148/
 	
 	=============================================================================
 	
+
+{% endraw %}

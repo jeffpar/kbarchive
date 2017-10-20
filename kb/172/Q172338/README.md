@@ -6,6 +6,8 @@ permalink: /kb/172/Q172338/
 
 ## Q172338: HOWTO: Use QueryPerformanceCounter to Time Code
 
+{% raw %}
+
 	Article: Q172338
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,4.0,5.0,6.0,7.0
@@ -195,3 +197,5 @@ permalink: /kb/172/Q172338/
 	
 	=============================================================================
 	
+
+{% endraw %}

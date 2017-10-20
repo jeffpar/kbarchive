@@ -6,6 +6,8 @@ permalink: /kb/152/Q152876/
 
 ## Q152876: XCON: MTA Hung After Deletion of X.400 Connectors
 
+{% raw %}
+
 	Article: Q152876
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/152/Q152876/
 	
 	=============================================================================
 	
+
+{% endraw %}

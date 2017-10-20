@@ -6,6 +6,8 @@ permalink: /kb/296/Q296405/
 
 ## Q296405: &quot;RestrictAnonymous&quot; Registry Key Breaks Trust to Win2000 Domain
 
+{% raw %}
+
 	Article: Q296405
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -95,3 +97,5 @@ permalink: /kb/296/Q296405/
 	
 	=============================================================================
 	
+
+{% endraw %}

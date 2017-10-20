@@ -6,6 +6,8 @@ permalink: /kb/164/Q164793/
 
 ## Q164793: Processor Reaches 100 Percent CPU Use When Printing
 
+{% raw %}
+
 	Article: Q164793
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -111,3 +113,5 @@ permalink: /kb/164/Q164793/
 	
 	=============================================================================
 	
+
+{% endraw %}

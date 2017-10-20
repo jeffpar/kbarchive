@@ -6,6 +6,8 @@ permalink: /kb/165/Q165564/
 
 ## Q165564: WD97: Bullets and Numbering Lose Formatting with Track Changes
 
+{% raw %}
+
 	Article: Q165564
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/165/Q165564/
 	
 	=============================================================================
 	
+
+{% endraw %}

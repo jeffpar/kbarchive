@@ -6,6 +6,8 @@ permalink: /kb/105/Q105686/
 
 ## Q105686: Deleting Windows 3.1 After Installing Windows NT
 
+{% raw %}
+
 	Article: Q105686
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -74,3 +76,5 @@ permalink: /kb/105/Q105686/
 	
 	=============================================================================
 	
+
+{% endraw %}

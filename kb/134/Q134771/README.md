@@ -6,6 +6,8 @@ permalink: /kb/134/Q134771/
 
 ## Q134771: File Contents Changed After Running Compression Agent
 
+{% raw %}
+
 	Article: Q134771
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/134/Q134771/
 	
 	=============================================================================
 	
+
+{% endraw %}

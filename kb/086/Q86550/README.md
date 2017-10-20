@@ -6,6 +6,8 @@ permalink: /kb/086/Q86550/
 
 ## Q86550: MHS: Definition of an MHS Host
 
+{% raw %}
+
 	Article: Q86550
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/086/Q86550/
 	
 	=============================================================================
 	
+
+{% endraw %}

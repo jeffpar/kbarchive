@@ -6,6 +6,8 @@ permalink: /kb/187/Q187515/
 
 ## Q187515: REG.EXE Err Msg: The Operation Could not be Completed
 
+{% raw %}
+
 	Article: Q187515
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/187/Q187515/
 	
 	=============================================================================
 	
+
+{% endraw %}

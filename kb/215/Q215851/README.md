@@ -6,6 +6,8 @@ permalink: /kb/215/Q215851/
 
 ## Q215851: XADM: Send Options in PAB Entry is Ignored
 
+{% raw %}
+
 	Article: Q215851
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -81,3 +83,5 @@ permalink: /kb/215/Q215851/
 	
 	=============================================================================
 	
+
+{% endraw %}

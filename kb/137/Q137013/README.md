@@ -6,6 +6,8 @@ permalink: /kb/137/Q137013/
 
 ## Q137013: Some Older AMS/Austin Motherboards Incompatible w/ Windows 95
 
+{% raw %}
+
 	Article: Q137013
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/137/Q137013/
 	
 	=============================================================================
 	
+
+{% endraw %}

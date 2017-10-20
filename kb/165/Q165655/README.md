@@ -6,6 +6,8 @@ permalink: /kb/165/Q165655/
 
 ## Q165655: Size of Config File Does Not Change After Items Are Deleted
 
+{% raw %}
+
 	Article: Q165655
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/165/Q165655/
 	
 	=============================================================================
 	
+
+{% endraw %}

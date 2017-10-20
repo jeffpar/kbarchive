@@ -6,6 +6,8 @@ permalink: /kb/085/Q85546/
 
 ## Q85546: Linotronic Printer Drivers Not Available for Windows 3.1
 
+{% raw %}
+
 	Article: Q85546
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -78,3 +80,5 @@ permalink: /kb/085/Q85546/
 	
 	=============================================================================
 	
+
+{% endraw %}

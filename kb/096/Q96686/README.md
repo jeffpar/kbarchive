@@ -6,6 +6,8 @@ permalink: /kb/096/Q96686/
 
 ## Q96686: 3Com 3Server &quot;NO OS/2&quot; Error Message
 
+{% raw %}
+
 	Article: Q96686
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/096/Q96686/
 	
 	=============================================================================
 	
+
+{% endraw %}

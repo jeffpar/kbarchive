@@ -6,6 +6,8 @@ permalink: /kb/237/Q237716/
 
 ## Q237716: NFL Fever 2000: User Interface Text Is Illegible
 
+{% raw %}
+
 	Article: Q237716
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -102,3 +104,5 @@ permalink: /kb/237/Q237716/
 	
 	=============================================================================
 	
+
+{% endraw %}

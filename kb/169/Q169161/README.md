@@ -6,6 +6,8 @@ permalink: /kb/169/Q169161/
 
 ## Q169161: Registry Parameters for RIP for IP Version 1
 
+{% raw %}
+
 	Article: Q169161
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -164,3 +166,5 @@ permalink: /kb/169/Q169161/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155677/
 
 ## Q155677: XADM: Input Fields for Storage Limits Display Only Five Digits
 
+{% raw %}
+
 	Article: Q155677
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/155/Q155677/
 	
 	=============================================================================
 	
+
+{% endraw %}

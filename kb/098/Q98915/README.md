@@ -6,6 +6,8 @@ permalink: /kb/098/Q98915/
 
 ## Q98915: PROFS: 3.3 Distribution Manager Disk &#91;3.5, 720K&#93;
 
+{% raw %}
+
 	Article: Q98915
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.3
@@ -68,3 +70,5 @@ permalink: /kb/098/Q98915/
 	
 	=============================================================================
 	
+
+{% endraw %}

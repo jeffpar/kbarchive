@@ -6,6 +6,8 @@ permalink: /kb/105/Q105207/
 
 ## Q105207: PRB: KRNL386: Unable to Enter Protected Mode
 
+{% raw %}
+
 	Article: Q105207
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/105/Q105207/
 	
 	=============================================================================
 	
+
+{% endraw %}

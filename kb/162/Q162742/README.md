@@ -6,6 +6,8 @@ permalink: /kb/162/Q162742/
 
 ## Q162742: BUG: Setup Fails When Directory Named is &gt;237 Characters
 
+{% raw %}
+
 	Article: Q162742
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -54,3 +56,5 @@ permalink: /kb/162/Q162742/
 	
 	=============================================================================
 	
+
+{% endraw %}

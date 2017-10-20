@@ -6,6 +6,8 @@ permalink: /kb/102/Q102326/
 
 ## Q102326: Generating Browser Information with an External Makefile
 
+{% raw %}
+
 	Article: Q102326
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.01,1.11,1.13,1.2,1.3,1.4,1.5
@@ -143,3 +145,5 @@ permalink: /kb/102/Q102326/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246984/
 
 ## Q246984: Tuning May Benefit RPC Programs That Use Winsock Over TCP/IP
 
+{% raw %}
+
 	Article: Q246984
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/246/Q246984/
 	
 	=============================================================================
 	
+
+{% endraw %}

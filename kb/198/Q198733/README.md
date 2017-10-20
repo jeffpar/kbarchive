@@ -6,6 +6,8 @@ permalink: /kb/198/Q198733/
 
 ## Q198733: XADM: SA Logs Event ID 5007 with Message Tracking Enabled
 
+{% raw %}
+
 	Article: Q198733
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -104,3 +106,5 @@ permalink: /kb/198/Q198733/
 	
 	=============================================================================
 	
+
+{% endraw %}

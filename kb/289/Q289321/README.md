@@ -6,6 +6,8 @@ permalink: /kb/289/Q289321/
 
 ## Q289321: FP: Reselecting Reports Shows Previous Report Not Site Summary
 
+{% raw %}
+
 	Article: Q289321
 	Product(s): Word Front Page
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/289/Q289321/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61339/
 
 ## Q61339: Problem When Using IMP with a Variable and a Literal
 
+{% raw %}
+
 	Article: Q61339
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -64,3 +66,5 @@ permalink: /kb/061/Q61339/
 	signed binary integer format) with all 16 bits set equal to 1 (on).
 	The constant 0, when stored in an integer variable, is stored with all
 	16 bits set equal to 0 (off).
+
+{% endraw %}

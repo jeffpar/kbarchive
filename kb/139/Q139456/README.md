@@ -6,6 +6,8 @@ permalink: /kb/139/Q139456/
 
 ## Q139456: FIX: LNK1201 Error Writing to .PDB File After Line Profile
 
+{% raw %}
+
 	Article: Q139456
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -81,3 +83,5 @@ permalink: /kb/139/Q139456/
 	
 	=============================================================================
 	
+
+{% endraw %}

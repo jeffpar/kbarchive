@@ -6,6 +6,8 @@ permalink: /kb/191/Q191663/
 
 ## Q191663: PRB: Unresolved const type_info, &#95;&#95;CxxThrowException
 
+{% raw %}
+
 	Article: Q191663
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0 2.1
@@ -93,3 +95,5 @@ permalink: /kb/191/Q191663/
 	
 	=============================================================================
 	
+
+{% endraw %}

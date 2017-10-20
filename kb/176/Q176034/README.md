@@ -6,6 +6,8 @@ permalink: /kb/176/Q176034/
 
 ## Q176034: XWEB: Outlook View Does Not Appear in OWA View List
 
+{% raw %}
+
 	Article: Q176034
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -62,3 +64,5 @@ permalink: /kb/176/Q176034/
 	
 	=============================================================================
 	
+
+{% endraw %}

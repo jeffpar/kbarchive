@@ -6,6 +6,8 @@ permalink: /kb/312/Q312460/
 
 ## Q312460: FS2002: How to Change Autopilot to FS2000 Functionality
 
+{% raw %}
+
 	Article: Q312460
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/312/Q312460/
 	
 	=============================================================================
 	
+
+{% endraw %}

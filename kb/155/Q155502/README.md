@@ -6,6 +6,8 @@ permalink: /kb/155/Q155502/
 
 ## Q155502: Manual Default Gateway Does Not Override DHCP Lease
 
+{% raw %}
+
 	Article: Q155502
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win95
@@ -86,3 +88,5 @@ permalink: /kb/155/Q155502/
 	
 	=============================================================================
 	
+
+{% endraw %}

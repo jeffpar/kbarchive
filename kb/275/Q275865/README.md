@@ -6,6 +6,8 @@ permalink: /kb/275/Q275865/
 
 ## Q275865: COMTI Event 104 HRESULT 0x8007000e When You Use Recordsets
 
+{% raw %}
+
 	Article: Q275865
 	Product(s): Microsoft SNA Server
 	Version(s): 1.0,1.0 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -71,3 +73,5 @@ permalink: /kb/275/Q275865/
 	
 	=============================================================================
 	
+
+{% endraw %}

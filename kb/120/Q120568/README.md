@@ -6,6 +6,8 @@ permalink: /kb/120/Q120568/
 
 ## Q120568: ADT2: Errors Using Recordset Methods on Data Outline Control
 
+{% raw %}
+
 	Article: Q120568
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -108,3 +110,5 @@ permalink: /kb/120/Q120568/
 	
 	=============================================================================
 	
+
+{% endraw %}

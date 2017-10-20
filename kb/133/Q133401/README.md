@@ -6,6 +6,8 @@ permalink: /kb/133/Q133401/
 
 ## Q133401: XFOR: Connector MTA Appears to Collect Mail It Shouldn't
 
+{% raw %}
+
 	Article: Q133401
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/133/Q133401/
 	
 	=============================================================================
 	
+
+{% endraw %}

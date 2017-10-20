@@ -6,6 +6,8 @@ permalink: /kb/182/Q182415/
 
 ## Q182415: Access Violation with Multiple PU Passthrough Connections
 
+{% raw %}
+
 	Article: Q182415
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -56,3 +58,5 @@ permalink: /kb/182/Q182415/
 	
 	=============================================================================
 	
+
+{% endraw %}

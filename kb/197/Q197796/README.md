@@ -6,6 +6,8 @@ permalink: /kb/197/Q197796/
 
 ## Q197796: Informix IDS Does Not Start After Installing Service Pack 4
 
+{% raw %}
+
 	Article: Q197796
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/197/Q197796/
 	
 	=============================================================================
 	
+
+{% endraw %}

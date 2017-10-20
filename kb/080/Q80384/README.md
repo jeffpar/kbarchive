@@ -6,6 +6,8 @@ permalink: /kb/080/Q80384/
 
 ## Q80384: PRB: Span-Dependent Value Behavior Changes in N-Pass Assembly
 
+{% raw %}
+
 	Article: Q80384
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -183,3 +185,5 @@ permalink: /kb/080/Q80384/
 	
 	=============================================================================
 	
+
+{% endraw %}

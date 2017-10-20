@@ -6,6 +6,8 @@ permalink: /kb/115/Q115821/
 
 ## Q115821: CD Sampler: Buttons Don't Depress Twice if Mouse Button Held
 
+{% raw %}
+
 	Article: Q115821
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Spring 1994
@@ -66,3 +68,5 @@ permalink: /kb/115/Q115821/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116325/
 
 ## Q116325: BUG: Browser Information Shows Incorrect Reference to Variable
 
+{% raw %}
+
 	Article: Q116325
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,4.0a,4.1,4.2,5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/116/Q116325/
 	
 	=============================================================================
 	
+
+{% endraw %}

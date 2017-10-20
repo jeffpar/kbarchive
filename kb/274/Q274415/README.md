@@ -6,6 +6,8 @@ permalink: /kb/274/Q274415/
 
 ## Q274415: Crimson Skies: Sounds Are Not Played in Mission Briefings
 
+{% raw %}
+
 	Article: Q274415
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/274/Q274415/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/070/Q70038/
 
 ## Q70038: Using QRAM.SYS with Microsoft Windows 3.0
 
+{% raw %}
+
 	Article: Q70038
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/070/Q70038/
 	
 	=============================================================================
 	
+
+{% endraw %}

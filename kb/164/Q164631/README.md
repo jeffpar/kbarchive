@@ -6,6 +6,8 @@ permalink: /kb/164/Q164631/
 
 ## Q164631: Scavenging WINS Database Removes Static Entries
 
+{% raw %}
+
 	Article: Q164631
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/164/Q164631/
 	
 	=============================================================================
 	
+
+{% endraw %}

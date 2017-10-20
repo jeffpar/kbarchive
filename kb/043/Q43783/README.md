@@ -6,6 +6,8 @@ permalink: /kb/043/Q43783/
 
 ## Q43783: No Color in QB Editor with Tandy RGB Adapter on Tandy 1200
 
+{% raw %}
+
 	Article: Q43783
 	Product(s): See article
 	Version(s): 4.50
@@ -24,3 +26,5 @@ permalink: /kb/043/Q43783/
 	(high resolution) switch corrects this problem.
 	
 	Microsoft has not confirmed this information.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185631/
 
 ## Q185631: Connectivity Problems Using Olicom ATM Adapter
 
+{% raw %}
+
 	Article: Q185631
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT: 4.0
@@ -58,3 +60,5 @@ permalink: /kb/185/Q185631/
 	
 	=============================================================================
 	
+
+{% endraw %}

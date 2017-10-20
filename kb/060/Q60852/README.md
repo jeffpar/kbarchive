@@ -6,6 +6,8 @@ permalink: /kb/060/Q60852/
 
 ## Q60852: Passing Far Strings to C Using StringAddress and StringLength
 
+{% raw %}
+
 	Article: Q60852
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -69,3 +71,5 @@ permalink: /kb/060/Q60852/
 	   Len: 27
 	
 	   Back in BASIC
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73401/
 
 ## Q73401: FIX: Value of @FileName Truncated If File Has Short Extension
 
+{% raw %}
+
 	Article: Q73401
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -71,3 +73,5 @@ permalink: /kb/073/Q73401/
 	
 	=============================================================================
 	
+
+{% endraw %}

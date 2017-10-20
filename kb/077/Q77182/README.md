@@ -6,6 +6,8 @@ permalink: /kb/077/Q77182/
 
 ## Q77182: Using MS-DOS 5.0 or later EMM386.EXE on Altima NSX
 
+{% raw %}
+
 	Article: Q77182
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -70,3 +72,5 @@ permalink: /kb/077/Q77182/
 	
 	=============================================================================
 	
+
+{% endraw %}

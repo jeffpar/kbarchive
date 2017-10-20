@@ -6,6 +6,8 @@ permalink: /kb/235/Q235568/
 
 ## Q235568: Official Microsoft FrontPage 2000 Book Comments and Corrections
 
+{% raw %}
+
 	Article: Q235568
 	Product(s): Microsoft Press
 	Version(s): 
@@ -208,3 +210,5 @@ permalink: /kb/235/Q235568/
 	
 	=============================================================================
 	
+
+{% endraw %}

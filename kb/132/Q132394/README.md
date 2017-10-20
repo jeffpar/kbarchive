@@ -6,6 +6,8 @@ permalink: /kb/132/Q132394/
 
 ## Q132394: Streaming Mode NPMCA.SYS NIC Sleeps on Transmit.
 
+{% raw %}
+
 	Article: Q132394
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -69,3 +71,5 @@ permalink: /kb/132/Q132394/
 	
 	=============================================================================
 	
+
+{% endraw %}

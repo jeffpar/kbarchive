@@ -6,6 +6,8 @@ permalink: /kb/137/Q137536/
 
 ## Q137536: PRB: SQL PacketSize Property May Not Work w/Individual Handles
 
+{% raw %}
+
 	Article: Q137536
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -92,3 +94,5 @@ permalink: /kb/137/Q137536/
 	
 	=============================================================================
 	
+
+{% endraw %}

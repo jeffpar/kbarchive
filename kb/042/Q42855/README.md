@@ -6,6 +6,8 @@ permalink: /kb/042/Q42855/
 
 ## Q42855: Fast Load Format Can Cause &quot;Binding...&quot; Hang in QB.EXE Editor
 
+{% raw %}
+
 	Article: Q42855
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -77,3 +79,5 @@ permalink: /kb/042/Q42855/
 	For more information, query on the following words:
 	
 	   binding and hang and QuickBASIC
+
+{% endraw %}

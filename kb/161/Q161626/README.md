@@ -6,6 +6,8 @@ permalink: /kb/161/Q161626/
 
 ## Q161626: XCLN: Troubleshooting IPX/SPX Connections
 
+{% raw %}
+
 	Article: Q161626
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -145,3 +147,5 @@ permalink: /kb/161/Q161626/
 	
 	=============================================================================
 	
+
+{% endraw %}

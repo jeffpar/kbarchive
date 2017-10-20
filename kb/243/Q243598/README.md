@@ -6,6 +6,8 @@ permalink: /kb/243/Q243598/
 
 ## Q243598: Err Msg: Setup Is Unable to Continue Due to an Error on the...
 
+{% raw %}
+
 	Article: Q243598
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/243/Q243598/
 	
 	=============================================================================
 	
+
+{% endraw %}

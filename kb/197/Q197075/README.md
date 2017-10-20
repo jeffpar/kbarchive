@@ -6,6 +6,8 @@ permalink: /kb/197/Q197075/
 
 ## Q197075: XFOR: Error during Exchange Notes Connector Setup
 
+{% raw %}
+
 	Article: Q197075
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -82,3 +84,5 @@ permalink: /kb/197/Q197075/
 	
 	=============================================================================
 	
+
+{% endraw %}

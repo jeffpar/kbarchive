@@ -6,6 +6,8 @@ permalink: /kb/194/Q194526/
 
 ## Q194526: FS/Combat FS: How to Disable the Opening Movie
 
+{% raw %}
+
 	Article: Q194526
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -99,3 +101,5 @@ permalink: /kb/194/Q194526/
 	
 	=============================================================================
 	
+
+{% endraw %}

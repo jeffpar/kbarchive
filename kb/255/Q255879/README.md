@@ -6,6 +6,8 @@ permalink: /kb/255/Q255879/
 
 ## Q255879: XCLN: Appointments Created Using CDO Off by One Hour
 
+{% raw %}
+
 	Article: Q255879
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -108,3 +110,5 @@ permalink: /kb/255/Q255879/
 	
 	=============================================================================
 	
+
+{% endraw %}

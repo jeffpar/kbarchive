@@ -6,6 +6,8 @@ permalink: /kb/122/Q122867/
 
 ## Q122867: Registry Keys Are Limited to 60 KB Each
 
+{% raw %}
+
 	Article: Q122867
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -43,3 +45,5 @@ permalink: /kb/122/Q122867/
 	
 	=============================================================================
 	
+
+{% endraw %}

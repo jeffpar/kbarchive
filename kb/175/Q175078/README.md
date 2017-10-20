@@ -6,6 +6,8 @@ permalink: /kb/175/Q175078/
 
 ## Q175078: SMS: Inventory Package Using Checksum and CRC Fails
 
+{% raw %}
+
 	Article: Q175078
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -52,3 +54,5 @@ permalink: /kb/175/Q175078/
 	
 	=============================================================================
 	
+
+{% endraw %}

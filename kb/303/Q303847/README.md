@@ -6,6 +6,8 @@ permalink: /kb/303/Q303847/
 
 ## Q303847: User Group Discovery  Collection Is Not Populated to Child Sites
 
+{% raw %}
+
 	Article: Q303847
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/303/Q303847/
 	
 	=============================================================================
 	
+
+{% endraw %}

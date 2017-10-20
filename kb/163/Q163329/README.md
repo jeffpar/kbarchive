@@ -6,6 +6,8 @@ permalink: /kb/163/Q163329/
 
 ## Q163329: Fatal Exception 0E in WSIPX Using Windows Sockets Program
 
+{% raw %}
+
 	Article: Q163329
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/163/Q163329/
 	
 	=============================================================================
 	
+
+{% endraw %}

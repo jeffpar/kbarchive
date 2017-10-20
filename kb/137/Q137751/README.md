@@ -6,6 +6,8 @@ permalink: /kb/137/Q137751/
 
 ## Q137751: System Agent Reports Damaged Sage.dat File
 
+{% raw %}
+
 	Article: Q137751
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/137/Q137751/
 	
 	=============================================================================
 	
+
+{% endraw %}

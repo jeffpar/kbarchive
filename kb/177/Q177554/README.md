@@ -6,6 +6,8 @@ permalink: /kb/177/Q177554/
 
 ## Q177554: BUG: MousePointer Cannot Be Set to 99-Custom for Form Objects
 
+{% raw %}
+
 	Article: Q177554
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -67,3 +69,5 @@ permalink: /kb/177/Q177554/
 	
 	=============================================================================
 	
+
+{% endraw %}

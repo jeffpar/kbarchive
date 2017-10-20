@@ -6,6 +6,8 @@ permalink: /kb/194/Q194548/
 
 ## Q194548: X400: Message with Long Free-Form Name Cannot Be Delivered
 
+{% raw %}
+
 	Article: Q194548
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -83,3 +85,5 @@ permalink: /kb/194/Q194548/
 	
 	=============================================================================
 	
+
+{% endraw %}

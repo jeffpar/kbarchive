@@ -6,6 +6,8 @@ permalink: /kb/074/Q74201/
 
 ## Q74201: MS-DOS: Program and Group Item Passwords Are Case Sensitive
 
+{% raw %}
+
 	Article: Q74201
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -37,3 +39,5 @@ permalink: /kb/074/Q74201/
 	
 	=============================================================================
 	
+
+{% endraw %}

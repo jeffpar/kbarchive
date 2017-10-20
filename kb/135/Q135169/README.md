@@ -6,6 +6,8 @@ permalink: /kb/135/Q135169/
 
 ## Q135169: New File Changes Background Color in Paint
 
+{% raw %}
+
 	Article: Q135169
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135169/
 	
 	=============================================================================
 	
+
+{% endraw %}

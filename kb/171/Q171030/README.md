@@ -6,6 +6,8 @@ permalink: /kb/171/Q171030/
 
 ## Q171030: XCLN: Err Msg: Upload of Offline Changes Could Not Be Completed
 
+{% raw %}
+
 	Article: Q171030
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -112,3 +114,5 @@ permalink: /kb/171/Q171030/
 	
 	=============================================================================
 	
+
+{% endraw %}

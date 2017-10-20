@@ -6,6 +6,8 @@ permalink: /kb/182/Q182666/
 
 ## Q182666: Inconsistent Length of String When Type Changed to String
 
+{% raw %}
+
 	Article: Q182666
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -87,3 +89,5 @@ permalink: /kb/182/Q182666/
 	
 	=============================================================================
 	
+
+{% endraw %}

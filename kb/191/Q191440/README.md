@@ -6,6 +6,8 @@ permalink: /kb/191/Q191440/
 
 ## Q191440: CG4: Animated GIFs Only Animate in Web Browsers
 
+{% raw %}
+
 	Article: Q191440
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0
@@ -120,3 +122,5 @@ permalink: /kb/191/Q191440/
 	
 	=============================================================================
 	
+
+{% endraw %}

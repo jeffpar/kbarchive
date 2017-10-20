@@ -6,6 +6,8 @@ permalink: /kb/166/Q166579/
 
 ## Q166579: XCLN: Remote Connection Interval Not Constant
 
+{% raw %}
+
 	Article: Q166579
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/166/Q166579/
 	
 	=============================================================================
 	
+
+{% endraw %}

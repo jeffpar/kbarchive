@@ -6,6 +6,8 @@ permalink: /kb/138/Q138157/
 
 ## Q138157: Windows 3.x Help File May Not Work Correctly in Windows 95
 
+{% raw %}
+
 	Article: Q138157
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/138/Q138157/
 	
 	=============================================================================
 	
+
+{% endraw %}

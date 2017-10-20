@@ -6,6 +6,8 @@ permalink: /kb/093/Q93618/
 
 ## Q93618: Using FoxBASE+/Mac .DBF Files with Microsoft Excel 4.0
 
+{% raw %}
+
 	Article: Q93618
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -48,3 +50,5 @@ permalink: /kb/093/Q93618/
 	
 	=============================================================================
 	
+
+{% endraw %}

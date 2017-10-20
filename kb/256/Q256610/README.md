@@ -6,6 +6,8 @@ permalink: /kb/256/Q256610/
 
 ## Q256610: Flashed BIOS Version Is Not Updated by Hardware Inventory
 
+{% raw %}
+
 	Article: Q256610
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -56,3 +58,5 @@ permalink: /kb/256/Q256610/
 	
 	=============================================================================
 	
+
+{% endraw %}

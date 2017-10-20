@@ -6,6 +6,8 @@ permalink: /kb/134/Q134848/
 
 ## Q134848: Reserving Multiple Drive Letters Causes Multiple Drives in UI
 
+{% raw %}
+
 	Article: Q134848
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/134/Q134848/
 	
 	=============================================================================
 	
+
+{% endraw %}

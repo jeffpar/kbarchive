@@ -6,6 +6,8 @@ permalink: /kb/067/Q67735/
 
 ## Q67735: How Structures Are Packed with /Zp
 
+{% raw %}
+
 	Article: Q67735
 	Product(s): See article
 	Version(s): 
@@ -164,3 +166,5 @@ permalink: /kb/067/Q67735/
 	However, because it is already on a 4-byte boundary, no padding
 	characters are needed. Finally, because we have a long in this
 	structure, the entire structure is padded to be a multiple of 4.
+
+{% endraw %}

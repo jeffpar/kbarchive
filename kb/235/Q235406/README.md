@@ -6,6 +6,8 @@ permalink: /kb/235/Q235406/
 
 ## Q235406: SNA Server Support for External Attach Managers
 
+{% raw %}
+
 	Article: Q235406
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0SP3
@@ -411,3 +413,5 @@ permalink: /kb/235/Q235406/
 	
 	=============================================================================
 	
+
+{% endraw %}

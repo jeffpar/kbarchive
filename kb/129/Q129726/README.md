@@ -6,6 +6,8 @@ permalink: /kb/129/Q129726/
 
 ## Q129726: TCP/IP Requires Ethernet_II Frame Type for ODI Driver
 
+{% raw %}
+
 	Article: Q129726
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/129/Q129726/
 	
 	=============================================================================
 	
+
+{% endraw %}

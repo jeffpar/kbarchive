@@ -6,6 +6,8 @@ permalink: /kb/229/Q229114/
 
 ## Q229114: XFOR: InterOrg Fails to Replicate Public Folder
 
+{% raw %}
+
 	Article: Q229114
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -77,3 +79,5 @@ permalink: /kb/229/Q229114/
 	
 	=============================================================================
 	
+
+{% endraw %}

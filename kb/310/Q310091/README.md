@@ -6,6 +6,8 @@ permalink: /kb/310/Q310091/
 
 ## Q310091: SSO Fails If Host Security Domain Added Through SNACFG.exe
 
+{% raw %}
+
 	Article: Q310091
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -85,3 +87,5 @@ permalink: /kb/310/Q310091/
 	
 	=============================================================================
 	
+
+{% endraw %}

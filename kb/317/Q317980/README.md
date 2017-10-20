@@ -6,6 +6,8 @@ permalink: /kb/317/Q317980/
 
 ## Q317980: FIX: Inserting Records with Buffering can Cause VFP to Hang
 
+{% raw %}
+
 	Article: Q317980
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -130,3 +132,5 @@ permalink: /kb/317/Q317980/
 	
 	=============================================================================
 	
+
+{% endraw %}

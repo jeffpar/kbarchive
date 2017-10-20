@@ -6,6 +6,8 @@ permalink: /kb/125/Q125709/
 
 ## Q125709: /RATIO Switch Not Valid with DRVSPACE /CREATE Command
 
+{% raw %}
+
 	Article: Q125709
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -90,3 +92,5 @@ permalink: /kb/125/Q125709/
 	
 	=============================================================================
 	
+
+{% endraw %}

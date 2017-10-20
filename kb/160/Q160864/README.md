@@ -6,6 +6,8 @@ permalink: /kb/160/Q160864/
 
 ## Q160864: WD97: Close All Doesn't Close Multiple HTML Documents
 
+{% raw %}
+
 	Article: Q160864
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160864/
 	
 	=============================================================================
 	
+
+{% endraw %}

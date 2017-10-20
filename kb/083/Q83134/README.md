@@ -6,6 +6,8 @@ permalink: /kb/083/Q83134/
 
 ## Q83134: Minor Distortions Using Certain TrueType Fonts
 
+{% raw %}
+
 	Article: Q83134
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/083/Q83134/
 	
 	=============================================================================
 	
+
+{% endraw %}

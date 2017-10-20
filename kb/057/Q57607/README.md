@@ -6,6 +6,8 @@ permalink: /kb/057/Q57607/
 
 ## Q57607: Exemod Shows Min Alloc Greater Than Max Alloc with Link /CP:1
 
+{% raw %}
+
 	Article: Q57607
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -49,3 +51,5 @@ permalink: /kb/057/Q57607/
 	the minimum value being much larger than the maximum value. Note that
 	this is the same whether the file is packed using the /E switch with
 	LINK, or separately with EXEPACK.
+
+{% endraw %}

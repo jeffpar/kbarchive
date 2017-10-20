@@ -6,6 +6,8 @@ permalink: /kb/261/Q261499/
 
 ## Q261499: Midtown Madness: CD Music Is Not Played in the Game
 
+{% raw %}
+
 	Article: Q261499
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -110,3 +112,5 @@ permalink: /kb/261/Q261499/
 	
 	=============================================================================
 	
+
+{% endraw %}

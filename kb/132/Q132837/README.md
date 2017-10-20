@@ -6,6 +6,8 @@ permalink: /kb/132/Q132837/
 
 ## Q132837: Toshiba 4500 May Not Resume Correctly if Suspended from Start
 
+{% raw %}
+
 	Article: Q132837
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132837/
 	
 	=============================================================================
 	
+
+{% endraw %}

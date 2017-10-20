@@ -6,6 +6,8 @@ permalink: /kb/201/Q201348/
 
 ## Q201348: WINSOCK Accept() Returns Error 10022
 
+{% raw %}
+
 	Article: Q201348
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:4.0 SP4
@@ -70,3 +72,5 @@ permalink: /kb/201/Q201348/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118432/
 
 ## Q118432: BUG: Block-Data Subprograms Are Not Global Symbols
 
+{% raw %}
+
 	Article: Q118432
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -121,3 +123,5 @@ permalink: /kb/118/Q118432/
 	
 	=============================================================================
 	
+
+{% endraw %}

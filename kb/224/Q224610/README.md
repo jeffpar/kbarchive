@@ -6,6 +6,8 @@ permalink: /kb/224/Q224610/
 
 ## Q224610: BUG: C2146/C2501 In the .tlh or .tli files Created by #import
 
+{% raw %}
+
 	Article: Q224610
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -103,3 +105,5 @@ permalink: /kb/224/Q224610/
 	
 	=============================================================================
 	
+
+{% endraw %}

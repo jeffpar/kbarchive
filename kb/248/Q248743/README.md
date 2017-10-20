@@ -6,6 +6,8 @@ permalink: /kb/248/Q248743/
 
 ## Q248743: XFOR: How to Migrate Messages from GroupWise 5.x to Exchange
 
+{% raw %}
+
 	Article: Q248743
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -58,3 +60,5 @@ permalink: /kb/248/Q248743/
 	
 	=============================================================================
 	
+
+{% endraw %}

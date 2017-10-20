@@ -6,6 +6,8 @@ permalink: /kb/026/Q26483/
 
 ## Q26483: CALL INTERRUPTX to Read Disk Sector Can Fail in QB; OK in .EXE
 
+{% raw %}
+
 	Article: Q26483
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/026/Q26483/
 	  IF p > 31 AND p < 127 THEN PRINT CHR$(p);  ELSE PRINT ".";
 	NEXT I
 	PRINT HEX$(inregs.ax)
+
+{% endraw %}

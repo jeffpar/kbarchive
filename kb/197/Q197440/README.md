@@ -6,6 +6,8 @@ permalink: /kb/197/Q197440/
 
 ## Q197440: WD97: &quot;Find Whole Words Only&quot; Option Unavailable
 
+{% raw %}
+
 	Article: Q197440
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/197/Q197440/
 	
 	=============================================================================
 	
+
+{% endraw %}

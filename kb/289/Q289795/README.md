@@ -6,6 +6,8 @@ permalink: /kb/289/Q289795/
 
 ## Q289795: XFOR: Notes Calendar Conn. Crashes on Multiprocessor Computers
 
+{% raw %}
+
 	Article: Q289795
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -114,3 +116,5 @@ permalink: /kb/289/Q289795/
 	
 	=============================================================================
 	
+
+{% endraw %}

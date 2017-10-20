@@ -6,6 +6,8 @@ permalink: /kb/139/Q139617/
 
 ## Q139617: Windows 95 Disconnects Attempting to Connect to Windows NT RAS
 
+{% raw %}
+
 	Article: Q139617
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5,3.51
@@ -74,3 +76,5 @@ permalink: /kb/139/Q139617/
 	
 	=============================================================================
 	
+
+{% endraw %}

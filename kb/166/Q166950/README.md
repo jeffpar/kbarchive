@@ -6,6 +6,8 @@ permalink: /kb/166/Q166950/
 
 ## Q166950: WD97: Can't Fax When Recipient Name Is Blank
 
+{% raw %}
+
 	Article: Q166950
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/166/Q166950/
 	
 	=============================================================================
 	
+
+{% endraw %}

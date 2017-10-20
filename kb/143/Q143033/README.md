@@ -6,6 +6,8 @@ permalink: /kb/143/Q143033/
 
 ## Q143033: INFO: Comparing AbsolutePosition to PercentPosition in VB
 
+{% raw %}
+
 	Article: Q143033
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/143/Q143033/
 	
 	=============================================================================
 	
+
+{% endraw %}

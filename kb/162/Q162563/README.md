@@ -6,6 +6,8 @@ permalink: /kb/162/Q162563/
 
 ## Q162563: WINS Restore Fails on Windows NT Server 4.0
 
+{% raw %}
+
 	Article: Q162563
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/162/Q162563/
 	
 	=============================================================================
 	
+
+{% endraw %}

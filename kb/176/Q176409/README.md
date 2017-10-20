@@ -6,6 +6,8 @@ permalink: /kb/176/Q176409/
 
 ## Q176409: XADM: Internet Newsgroup Public Folder Becomes Visible
 
+{% raw %}
+
 	Article: Q176409
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -68,3 +70,5 @@ permalink: /kb/176/Q176409/
 	
 	=============================================================================
 	
+
+{% endraw %}

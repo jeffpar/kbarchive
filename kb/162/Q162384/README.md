@@ -6,6 +6,8 @@ permalink: /kb/162/Q162384/
 
 ## Q162384: XCON: How to Troubleshoot MTA Starting Failures
 
+{% raw %}
+
 	Article: Q162384
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -311,3 +313,5 @@ permalink: /kb/162/Q162384/
 	
 	=============================================================================
 	
+
+{% endraw %}

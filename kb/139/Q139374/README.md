@@ -6,6 +6,8 @@ permalink: /kb/139/Q139374/
 
 ## Q139374: BUG: Incorrect Error Message: &#91;ODBC Driver pack 2.0&#93;...
 
+{% raw %}
+
 	Article: Q139374
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/139/Q139374/
 	
 	=============================================================================
 	
+
+{% endraw %}

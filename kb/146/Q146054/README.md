@@ -6,6 +6,8 @@ permalink: /kb/146/Q146054/
 
 ## Q146054: STOP 0xC0000263 When Upgrading to WinNT 3.51 On Compaq Computers
 
+{% raw %}
+
 	Article: Q146054
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -70,3 +72,5 @@ permalink: /kb/146/Q146054/
 	
 	=============================================================================
 	
+
+{% endraw %}

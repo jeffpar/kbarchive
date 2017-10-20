@@ -6,6 +6,8 @@ permalink: /kb/197/Q197413/
 
 ## Q197413: WD97: Error Message: &quot;There Are Too Many Edits in the Document&quot;
 
+{% raw %}
+
 	Article: Q197413
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/197/Q197413/
 	
 	=============================================================================
 	
+
+{% endraw %}

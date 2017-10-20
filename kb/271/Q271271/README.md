@@ -6,6 +6,8 @@ permalink: /kb/271/Q271271/
 
 ## Q271271: Microsoft Reader: Cannot Read eBook That You Purchased Online
 
+{% raw %}
+
 	Article: Q271271
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -81,3 +83,5 @@ permalink: /kb/271/Q271271/
 	
 	=============================================================================
 	
+
+{% endraw %}

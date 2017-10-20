@@ -6,6 +6,8 @@ permalink: /kb/197/Q197193/
 
 ## Q197193: FIX: Application Error in Locals Window with Specific Variables
 
+{% raw %}
+
 	Article: Q197193
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -131,3 +133,5 @@ permalink: /kb/197/Q197193/
 	
 	=============================================================================
 	
+
+{% endraw %}

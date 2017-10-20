@@ -6,6 +6,8 @@ permalink: /kb/243/Q243896/
 
 ## Q243896: Dual Boot Windows 98/Windows NT 4.0 with FAT16 or NTFS Volumes
 
+{% raw %}
+
 	Article: Q243896
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:4.0
@@ -193,3 +195,5 @@ permalink: /kb/243/Q243896/
 	
 	=============================================================================
 	
+
+{% endraw %}

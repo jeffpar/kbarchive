@@ -6,6 +6,8 @@ permalink: /kb/142/Q142671/
 
 ## Q142671: Backup Fails on Certain Directories Due to Lack of Permissions
 
+{% raw %}
+
 	Article: Q142671
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/142/Q142671/
 	
 	=============================================================================
 	
+
+{% endraw %}

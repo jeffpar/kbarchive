@@ -6,6 +6,8 @@ permalink: /kb/136/Q136940/
 
 ## Q136940: Valid Uses for the View Parameters
 
+{% raw %}
+
 	Article: Q136940
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/136/Q136940/
 	
 	=============================================================================
 	
+
+{% endraw %}

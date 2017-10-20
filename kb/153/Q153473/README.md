@@ -6,6 +6,8 @@ permalink: /kb/153/Q153473/
 
 ## Q153473: Extra Modem Settings for Connection Problems
 
+{% raw %}
+
 	Article: Q153473
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6,5.0
@@ -213,3 +215,5 @@ permalink: /kb/153/Q153473/
 	
 	=============================================================================
 	
+
+{% endraw %}

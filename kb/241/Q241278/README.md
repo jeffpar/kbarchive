@@ -6,6 +6,8 @@ permalink: /kb/241/Q241278/
 
 ## Q241278: XADM: Insufficient Memory when CDO/MAPI App. Accesses Message
 
+{% raw %}
+
 	Article: Q241278
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -107,3 +109,5 @@ permalink: /kb/241/Q241278/
 	
 	=============================================================================
 	
+
+{% endraw %}

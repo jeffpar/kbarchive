@@ -6,6 +6,8 @@ permalink: /kb/173/Q173714/
 
 ## Q173714: How to Prevent MSN from Dialing Automatically
 
+{% raw %}
+
 	Article: Q173714
 	Product(s): The Microsoft Network
 	Version(s): 2.5,5.0,5.1,5.2,5.3
@@ -52,3 +54,5 @@ permalink: /kb/173/Q173714/
 	
 	=============================================================================
 	
+
+{% endraw %}

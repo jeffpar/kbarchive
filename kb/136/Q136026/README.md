@@ -6,6 +6,8 @@ permalink: /kb/136/Q136026/
 
 ## Q136026: Wrong Volume Label Returned to OS/2 Clients
 
+{% raw %}
+
 	Article: Q136026
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 SP3,3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/136/Q136026/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199519/
 
 ## Q199519: PRB: Unresolved External on &#95;&#95;InitVTableRecords
 
+{% raw %}
+
 	Article: Q199519
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:2.0,4.0,4.0b
@@ -53,3 +55,5 @@ permalink: /kb/199/Q199519/
 	
 	=============================================================================
 	
+
+{% endraw %}

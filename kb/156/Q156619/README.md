@@ -6,6 +6,8 @@ permalink: /kb/156/Q156619/
 
 ## Q156619: STL Sample for the min_element Function
 
+{% raw %}
+
 	Article: Q156619
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -147,3 +149,5 @@ permalink: /kb/156/Q156619/
 	
 	=============================================================================
 	
+
+{% endraw %}

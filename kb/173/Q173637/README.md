@@ -6,6 +6,8 @@ permalink: /kb/173/Q173637/
 
 ## Q173637: XWEB: Can't View Free/Busy Info on a DL
 
+{% raw %}
+
 	Article: Q173637
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -42,3 +44,5 @@ permalink: /kb/173/Q173637/
 	
 	=============================================================================
 	
+
+{% endraw %}

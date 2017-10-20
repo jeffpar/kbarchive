@@ -6,6 +6,8 @@ permalink: /kb/178/Q178911/
 
 ## Q178911: XADM: Event ID 1160 and Exchange Server Performance
 
+{% raw %}
+
 	Article: Q178911
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/178/Q178911/
 	
 	=============================================================================
 	
+
+{% endraw %}

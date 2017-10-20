@@ -6,6 +6,8 @@ permalink: /kb/173/Q173992/
 
 ## Q173992: HOWTO: Uninstall VFP Application Installed by Setup Wizard
 
+{% raw %}
+
 	Article: Q173992
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/173/Q173992/
 	
 	=============================================================================
 	
+
+{% endraw %}

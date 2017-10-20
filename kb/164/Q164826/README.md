@@ -6,6 +6,8 @@ permalink: /kb/164/Q164826/
 
 ## Q164826: Direct Draw Programs May Hang NT 4.0 with S3 968 Video Chipset
 
+{% raw %}
+
 	Article: Q164826
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/164/Q164826/
 	
 	=============================================================================
 	
+
+{% endraw %}

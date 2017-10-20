@@ -6,6 +6,8 @@ permalink: /kb/148/Q148749/
 
 ## Q148749: Performance Monitor Error after Installing NT 3.51 SP4
 
+{% raw %}
+
 	Article: Q148749
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -84,3 +86,5 @@ permalink: /kb/148/Q148749/
 	
 	=============================================================================
 	
+
+{% endraw %}

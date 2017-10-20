@@ -6,6 +6,8 @@ permalink: /kb/163/Q163557/
 
 ## Q163557: GetLuaReturnCode Can Lead To TN3270 Service Access Violation
 
+{% raw %}
+
 	Article: Q163557
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,3.0
@@ -70,3 +72,5 @@ permalink: /kb/163/Q163557/
 	
 	=============================================================================
 	
+
+{% endraw %}

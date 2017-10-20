@@ -6,6 +6,8 @@ permalink: /kb/196/Q196230/
 
 ## Q196230: SLI Does Not Reset Lua_flag2.async
 
+{% raw %}
+
 	Article: Q196230
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -51,3 +53,5 @@ permalink: /kb/196/Q196230/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179696/
 
 ## Q179696: PRB: Focus and Tab Issues with ATL Subclassed Edit Control
 
+{% raw %}
+
 	Article: Q179696
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,5.0
@@ -211,3 +213,5 @@ permalink: /kb/179/Q179696/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122495/
 
 ## Q122495: How to Set Up an Extended Capabilities Port in Windows 95
 
+{% raw %}
+
 	Article: Q122495
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/122/Q122495/
 	
 	=============================================================================
 	
+
+{% endraw %}

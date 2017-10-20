@@ -6,6 +6,8 @@ permalink: /kb/134/Q134957/
 
 ## Q134957: Systems Management Server 1.1 Requires WinNT 3.5 Service Pack 2
 
+{% raw %}
+
 	Article: Q134957
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -57,3 +59,5 @@ permalink: /kb/134/Q134957/
 	
 	=============================================================================
 	
+
+{% endraw %}

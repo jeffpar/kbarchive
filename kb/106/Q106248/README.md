@@ -6,6 +6,8 @@ permalink: /kb/106/Q106248/
 
 ## Q106248: 32-Bit File Access Requires MS-DOS 6.2 DoubleSpace
 
+{% raw %}
+
 	Article: Q106248
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.11
@@ -74,3 +76,5 @@ permalink: /kb/106/Q106248/
 	
 	=============================================================================
 	
+
+{% endraw %}

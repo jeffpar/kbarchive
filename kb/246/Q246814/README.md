@@ -6,6 +6,8 @@ permalink: /kb/246/Q246814/
 
 ## Q246814: INFO: New Features of Visual SourceSafe 6.0
 
+{% raw %}
+
 	Article: Q246814
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -204,3 +206,5 @@ permalink: /kb/246/Q246814/
 	
 	=============================================================================
 	
+
+{% endraw %}

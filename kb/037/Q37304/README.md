@@ -6,6 +6,8 @@ permalink: /kb/037/Q37304/
 
 ## Q37304: LIB Errors During SETUP.EXE If Directory Has &quot;-&quot; in Its Name
 
+{% raw %}
+
 	Article: Q37304
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -55,3 +57,5 @@ permalink: /kb/037/Q37304/
 	libraries:
 	
 	   +  -  -+  *  -*
+
+{% endraw %}

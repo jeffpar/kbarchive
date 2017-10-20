@@ -6,6 +6,8 @@ permalink: /kb/151/Q151668/
 
 ## Q151668: XFOR: An Error Occurred While Processing an E-mail Address
 
+{% raw %}
+
 	Article: Q151668
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/151/Q151668/
 	
 	=============================================================================
 	
+
+{% endraw %}

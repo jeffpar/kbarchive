@@ -6,6 +6,8 @@ permalink: /kb/263/Q263842/
 
 ## Q263842: XADM: Viewing Messages in the MSExchangeIS Private Send Queue
 
+{% raw %}
+
 	Article: Q263842
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/263/Q263842/
 	
 	=============================================================================
 	
+
+{% endraw %}

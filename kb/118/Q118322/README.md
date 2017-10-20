@@ -6,6 +6,8 @@ permalink: /kb/118/Q118322/
 
 ## Q118322: PC WSPlus: New Users in Group Cannot Access .CAL File
 
+{% raw %}
+
 	Article: Q118322
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0a
@@ -50,3 +52,5 @@ permalink: /kb/118/Q118322/
 	
 	=============================================================================
 	
+
+{% endraw %}

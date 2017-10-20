@@ -6,6 +6,8 @@ permalink: /kb/077/Q77587/
 
 ## Q77587: Scott 286 Model 2000-SC Must Disable ROM DOS
 
+{% raw %}
+
 	Article: Q77587
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -66,3 +68,5 @@ permalink: /kb/077/Q77587/
 	
 	=============================================================================
 	
+
+{% endraw %}

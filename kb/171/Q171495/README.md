@@ -6,6 +6,8 @@ permalink: /kb/171/Q171495/
 
 ## Q171495: FIX: Get Statement Not Working Correctly with Large UDT
 
+{% raw %}
+
 	Article: Q171495
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -74,3 +76,5 @@ permalink: /kb/171/Q171495/
 	
 	=============================================================================
 	
+
+{% endraw %}

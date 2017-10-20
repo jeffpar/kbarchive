@@ -6,6 +6,8 @@ permalink: /kb/174/Q174255/
 
 ## Q174255: XFOR: Migrating cc:Mail Release 8 Client Users
 
+{% raw %}
+
 	Article: Q174255
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -43,3 +45,5 @@ permalink: /kb/174/Q174255/
 	
 	=============================================================================
 	
+
+{% endraw %}

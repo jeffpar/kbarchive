@@ -6,6 +6,8 @@ permalink: /kb/186/Q186542/
 
 ## Q186542: Terminal Server Error Messages: 2500 to 2999
 
+{% raw %}
+
 	Article: Q186542
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -394,3 +396,5 @@ permalink: /kb/186/Q186542/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38714/
 
 ## Q38714: Shared and Instance Segments in a DLL
 
+{% raw %}
+
 	Article: Q38714
 	Product(s): See article
 	Version(s): 5.10
@@ -62,3 +64,5 @@ permalink: /kb/038/Q38714/
 	Note: if the segment(s) you want to share are part of a group, you
 	must set ALL of the segments in the group to be shared or NONE will
 	be.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161081/
 
 ## Q161081: Windows NT Imaging Scanning Options Unavailable
 
+{% raw %}
+
 	Article: Q161081
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/161/Q161081/
 	
 	=============================================================================
 	
+
+{% endraw %}

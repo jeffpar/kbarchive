@@ -6,6 +6,8 @@ permalink: /kb/263/Q263448/
 
 ## Q263448: XADM: System Requirements for Mailbox Manager
 
+{% raw %}
+
 	Article: Q263448
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP2,5.5 SP2,5.5 SP3
@@ -77,3 +79,5 @@ permalink: /kb/263/Q263448/
 	
 	=============================================================================
 	
+
+{% endraw %}

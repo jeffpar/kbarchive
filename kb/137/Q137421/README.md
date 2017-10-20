@@ -6,6 +6,8 @@ permalink: /kb/137/Q137421/
 
 ## Q137421: PING to Broadcast Address May Get Response
 
+{% raw %}
+
 	Article: Q137421
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -48,3 +50,5 @@ permalink: /kb/137/Q137421/
 	
 	=============================================================================
 	
+
+{% endraw %}

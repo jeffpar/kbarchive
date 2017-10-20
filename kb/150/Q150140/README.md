@@ -6,6 +6,8 @@ permalink: /kb/150/Q150140/
 
 ## Q150140: STOP Msg: 0xC000021a as Application Terminates
 
+{% raw %}
+
 	Article: Q150140
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -92,3 +94,5 @@ permalink: /kb/150/Q150140/
 	
 	=============================================================================
 	
+
+{% endraw %}

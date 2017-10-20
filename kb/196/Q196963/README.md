@@ -6,6 +6,8 @@ permalink: /kb/196/Q196963/
 
 ## Q196963: WD97: Equation Editor 2.0 Runs Instead of Math Type 3.0
 
+{% raw %}
+
 	Article: Q196963
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; :2.0
@@ -192,3 +194,5 @@ permalink: /kb/196/Q196963/
 	
 	=============================================================================
 	
+
+{% endraw %}

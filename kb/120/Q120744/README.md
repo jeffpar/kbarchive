@@ -6,6 +6,8 @@ permalink: /kb/120/Q120744/
 
 ## Q120744: Pro-Audio Spectrum SCSI on DELL Omniplex -&gt; STOP Message
 
+{% raw %}
+
 	Article: Q120744
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/120/Q120744/
 	
 	=============================================================================
 	
+
+{% endraw %}

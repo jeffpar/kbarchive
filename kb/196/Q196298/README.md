@@ -6,6 +6,8 @@ permalink: /kb/196/Q196298/
 
 ## Q196298: Characters May Print Over Each Other When Using Print Server
 
+{% raw %}
+
 	Article: Q196298
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -115,3 +117,5 @@ permalink: /kb/196/Q196298/
 	
 	=============================================================================
 	
+
+{% endraw %}

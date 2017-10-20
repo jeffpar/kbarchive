@@ -6,6 +6,8 @@ permalink: /kb/067/Q67519/
 
 ## Q67519: UAEs When Cutting and Pasting with Micrografx Designer 3.01
 
+{% raw %}
+
 	Article: Q67519
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -47,3 +49,5 @@ permalink: /kb/067/Q67519/
 	
 	=============================================================================
 	
+
+{% endraw %}

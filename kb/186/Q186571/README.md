@@ -6,6 +6,8 @@ permalink: /kb/186/Q186571/
 
 ## Q186571: User Manager in Terminal Server
 
+{% raw %}
+
 	Article: Q186571
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -313,3 +315,5 @@ permalink: /kb/186/Q186571/
 	
 	=============================================================================
 	
+
+{% endraw %}

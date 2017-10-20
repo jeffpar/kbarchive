@@ -6,6 +6,8 @@ permalink: /kb/037/Q37625/
 
 ## Q37625: MKTEMP() Function Example Clarification
 
+{% raw %}
+
 	Article: Q37625
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -63,3 +65,5 @@ permalink: /kb/037/Q37625/
 	generates one unique name, then terminates as the pointer "result"
 	becomes NULL because mktemp() cannot generate another unique name with
 	the template given.
+
+{% endraw %}

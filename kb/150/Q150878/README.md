@@ -6,6 +6,8 @@ permalink: /kb/150/Q150878/
 
 ## Q150878: SMS Added to NetWare Login Script Twice
 
+{% raw %}
+
 	Article: Q150878
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150878/
 	
 	=============================================================================
 	
+
+{% endraw %}

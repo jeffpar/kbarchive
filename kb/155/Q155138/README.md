@@ -6,6 +6,8 @@ permalink: /kb/155/Q155138/
 
 ## Q155138: Stop 0x00000077 in Fpnwsrv.sys During Burst Mode Read
 
+{% raw %}
+
 	Article: Q155138
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155138/
 	
 	=============================================================================
 	
+
+{% endraw %}

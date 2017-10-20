@@ -6,6 +6,8 @@ permalink: /kb/142/Q142064/
 
 ## Q142064: RPC Authentication Option Under Windows NT
 
+{% raw %}
+
 	Article: Q142064
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -79,3 +81,5 @@ permalink: /kb/142/Q142064/
 	
 	=============================================================================
 	
+
+{% endraw %}

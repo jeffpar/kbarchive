@@ -6,6 +6,8 @@ permalink: /kb/175/Q175098/
 
 ## Q175098: XADM: Unexpected Error Occurs During Upgrade or Installation
 
+{% raw %}
+
 	Article: Q175098
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -87,3 +89,5 @@ permalink: /kb/175/Q175098/
 	
 	=============================================================================
 	
+
+{% endraw %}

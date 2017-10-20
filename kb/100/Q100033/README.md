@@ -6,6 +6,8 @@ permalink: /kb/100/Q100033/
 
 ## Q100033: Mac Wkst: Color Icons Do Not Appear in Summary Window
 
+{% raw %}
+
 	Article: Q100033
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/100/Q100033/
 	
 	=============================================================================
 	
+
+{% endraw %}

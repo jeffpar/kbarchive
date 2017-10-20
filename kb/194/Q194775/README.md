@@ -6,6 +6,8 @@ permalink: /kb/194/Q194775/
 
 ## Q194775: Combat Flight Simulator: Potential Cheating in Multiplayer Games
 
+{% raw %}
+
 	Article: Q194775
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -123,3 +125,5 @@ permalink: /kb/194/Q194775/
 	
 	=============================================================================
 	
+
+{% endraw %}

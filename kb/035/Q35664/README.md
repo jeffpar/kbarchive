@@ -6,6 +6,8 @@ permalink: /kb/035/Q35664/
 
 ## Q35664: Create Your Own Non-ASCII Graphics Characters in CGA Graphics
 
+{% raw %}
+
 	Article: Q35664
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -116,3 +118,5 @@ permalink: /kb/035/Q35664/
 	  POKE 126, C
 	  POKE 127, D
 	DEF SEG
+
+{% endraw %}

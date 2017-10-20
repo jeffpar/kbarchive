@@ -6,6 +6,8 @@ permalink: /kb/253/Q253648/
 
 ## Q253648: Smsls.bat Cannot Install SMS Client When DOSONLY Is Enabled
 
+{% raw %}
+
 	Article: Q253648
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -85,3 +87,5 @@ permalink: /kb/253/Q253648/
 	
 	=============================================================================
 	
+
+{% endraw %}

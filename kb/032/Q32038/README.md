@@ -6,6 +6,8 @@ permalink: /kb/032/Q32038/
 
 ## Q32038: Redirecting the Results of Pressing the PRINT SCREEN Key
 
+{% raw %}
+
 	Article: Q32038
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:1.x,2.x,3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -45,3 +47,5 @@ permalink: /kb/032/Q32038/
 	
 	=============================================================================
 	
+
+{% endraw %}

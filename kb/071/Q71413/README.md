@@ -6,6 +6,8 @@ permalink: /kb/071/Q71413/
 
 ## Q71413: DOC: SetClipboardData Function Documentation Incomplete
 
+{% raw %}
+
 	Article: Q71413
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -47,3 +49,5 @@ permalink: /kb/071/Q71413/
 	
 	=============================================================================
 	
+
+{% endraw %}

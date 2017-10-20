@@ -6,6 +6,8 @@ permalink: /kb/258/Q258294/
 
 ## Q258294: HOWTO: Offload XSL Transformations to Clients' Browsers
 
+{% raw %}
+
 	Article: Q258294
 	Product(s): Internet Information Server
 	Version(s): winnt:; :2.0,2.5,2.6,3.0,3.0 SP1,4.0
@@ -142,3 +144,5 @@ permalink: /kb/258/Q258294/
 	
 	=============================================================================
 	
+
+{% endraw %}

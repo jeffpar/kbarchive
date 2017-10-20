@@ -6,6 +6,8 @@ permalink: /kb/104/Q104372/
 
 ## Q104372: PC DOS: Err Msg: Notice 132 Folder Busy, Try Again Later
 
+{% raw %}
+
 	Article: Q104372
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/104/Q104372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86155/
 
 ## Q86155: PROFS: What to Do When Communication with LAN Ceases
 
+{% raw %}
+
 	Article: Q86155
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -49,3 +51,5 @@ permalink: /kb/086/Q86155/
 	
 	=============================================================================
 	
+
+{% endraw %}

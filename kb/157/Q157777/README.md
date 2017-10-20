@@ -6,6 +6,8 @@ permalink: /kb/157/Q157777/
 
 ## Q157777: WD97: Conversion Wizard Quits If Convert8.dll Is Missing
 
+{% raw %}
+
 	Article: Q157777
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/157/Q157777/
 	
 	=============================================================================
 	
+
+{% endraw %}

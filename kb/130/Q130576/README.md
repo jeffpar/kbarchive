@@ -6,6 +6,8 @@ permalink: /kb/130/Q130576/
 
 ## Q130576: PRB: MODIFY GENERAL Fires the FORM DEACTIVATE Clause
 
+{% raw %}
+
 	Article: Q130576
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -65,3 +67,5 @@ permalink: /kb/130/Q130576/
 	
 	=============================================================================
 	
+
+{% endraw %}

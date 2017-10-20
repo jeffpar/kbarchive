@@ -6,6 +6,8 @@ permalink: /kb/232/Q232649/
 
 ## Q232649: Stop 0x00000050 When Using Windows NT 4.0 Terminal Server
 
+{% raw %}
+
 	Article: Q232649
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -63,3 +65,5 @@ permalink: /kb/232/Q232649/
 	
 	=============================================================================
 	
+
+{% endraw %}

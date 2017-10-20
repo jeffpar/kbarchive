@@ -6,6 +6,8 @@ permalink: /kb/241/Q241982/
 
 ## Q241982: SMS: Subst Command Locks Out SMSCliToknAcct&amp; and SMSCCMBootAcct&amp;
 
+{% raw %}
+
 	Article: Q241982
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -113,3 +115,5 @@ permalink: /kb/241/Q241982/
 	
 	=============================================================================
 	
+
+{% endraw %}

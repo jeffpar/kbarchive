@@ -6,6 +6,8 @@ permalink: /kb/297/Q297525/
 
 ## Q297525: BUG: No ARM Option for eVB J to Create Pocket PC Setup Package
 
+{% raw %}
+
 	Article: Q297525
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -101,3 +103,5 @@ permalink: /kb/297/Q297525/
 	
 	=============================================================================
 	
+
+{% endraw %}

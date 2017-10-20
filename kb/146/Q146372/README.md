@@ -6,6 +6,8 @@ permalink: /kb/146/Q146372/
 
 ## Q146372: XCLN: Cannot Delete a Network Connection After Inserting File
 
+{% raw %}
+
 	Article: Q146372
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -69,3 +71,5 @@ permalink: /kb/146/Q146372/
 	
 	=============================================================================
 	
+
+{% endraw %}

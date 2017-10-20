@@ -6,6 +6,8 @@ permalink: /kb/026/Q26543/
 
 ## Q26543: Hardware Errors During CALL INTERRUPT Hang the System
 
+{% raw %}
+
 	Article: Q26543
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -63,3 +65,5 @@ permalink: /kb/026/Q26543/
 	PRINT outarray.flags
 	PRINT outarray.ax
 	END
+
+{% endraw %}

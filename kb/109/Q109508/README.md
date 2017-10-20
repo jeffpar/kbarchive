@@ -6,6 +6,8 @@ permalink: /kb/109/Q109508/
 
 ## Q109508: &quot;Bad File Mode&quot; Error When Running MS-DOS Help
 
+{% raw %}
+
 	Article: Q109508
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/109/Q109508/
 	
 	=============================================================================
 	
+
+{% endraw %}

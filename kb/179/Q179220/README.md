@@ -6,6 +6,8 @@ permalink: /kb/179/Q179220/
 
 ## Q179220: XADM: Error Trying to Delete Mailbox from Mailbox Resources
 
+{% raw %}
+
 	Article: Q179220
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -66,3 +68,5 @@ permalink: /kb/179/Q179220/
 	
 	=============================================================================
 	
+
+{% endraw %}

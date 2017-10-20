@@ -6,6 +6,8 @@ permalink: /kb/111/Q111894/
 
 ## Q111894: SMTP: Attachment Names Change Case on Outgoing Mail
 
+{% raw %}
+
 	Article: Q111894
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/111/Q111894/
 	
 	=============================================================================
 	
+
+{% endraw %}

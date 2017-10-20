@@ -6,6 +6,8 @@ permalink: /kb/162/Q162766/
 
 ## Q162766: WINS Records Are Timestamped Incorrectly
 
+{% raw %}
+
 	Article: Q162766
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/162/Q162766/
 	
 	=============================================================================
 	
+
+{% endraw %}

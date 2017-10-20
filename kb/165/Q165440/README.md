@@ -6,6 +6,8 @@ permalink: /kb/165/Q165440/
 
 ## Q165440: Shared Folders Gateway Only Shows Root Directory
 
+{% raw %}
+
 	Article: Q165440
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -125,3 +127,5 @@ permalink: /kb/165/Q165440/
 	
 	=============================================================================
 	
+
+{% endraw %}

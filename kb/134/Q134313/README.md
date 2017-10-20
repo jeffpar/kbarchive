@@ -6,6 +6,8 @@ permalink: /kb/134/Q134313/
 
 ## Q134313: How to Change Object Properties Based on a Logical Field
 
+{% raw %}
+
 	Article: Q134313
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/134/Q134313/
 	
 	=============================================================================
 	
+
+{% endraw %}

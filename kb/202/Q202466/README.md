@@ -6,6 +6,8 @@ permalink: /kb/202/Q202466/
 
 ## Q202466: BUG: DNS Admin Reports Incorrect Time in Statistics Field
 
+{% raw %}
+
 	Article: Q202466
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/202/Q202466/
 	
 	=============================================================================
 	
+
+{% endraw %}

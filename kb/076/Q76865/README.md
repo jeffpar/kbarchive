@@ -6,6 +6,8 @@ permalink: /kb/076/Q76865/
 
 ## Q76865: IBM MOUSE.COM Version 1.1 or Later with MS-DOS Shell
 
+{% raw %}
+
 	Article: Q76865
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -45,3 +47,5 @@ permalink: /kb/076/Q76865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317644/
 
 ## Q317644: Pandora's Box: Err Msg: Application Is Not Compatible with...
 
+{% raw %}
+
 	Article: Q317644
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/317/Q317644/
 	
 	=============================================================================
 	
+
+{% endraw %}

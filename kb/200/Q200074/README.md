@@ -6,6 +6,8 @@ permalink: /kb/200/Q200074/
 
 ## Q200074: FIX: Can't Get IBuildProject Interface from Developer Studio
 
+{% raw %}
+
 	Article: Q200074
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -227,3 +229,5 @@ permalink: /kb/200/Q200074/
 	
 	=============================================================================
 	
+
+{% endraw %}

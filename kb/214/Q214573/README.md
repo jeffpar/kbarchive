@@ -6,6 +6,8 @@ permalink: /kb/214/Q214573/
 
 ## Q214573: XADM: Store Handle Leak with Invalid POP3 NTLM Authentication
 
+{% raw %}
+
 	Article: Q214573
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -95,3 +97,5 @@ permalink: /kb/214/Q214573/
 	
 	=============================================================================
 	
+
+{% endraw %}

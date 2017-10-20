@@ -6,6 +6,8 @@ permalink: /kb/146/Q146201/
 
 ## Q146201: Cannot Fax Using Cellular Phone and Motorola Power 14.4 Modem
 
+{% raw %}
+
 	Article: Q146201
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -78,3 +80,5 @@ permalink: /kb/146/Q146201/
 	
 	=============================================================================
 	
+
+{% endraw %}

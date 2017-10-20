@@ -6,6 +6,8 @@ permalink: /kb/075/Q75188/
 
 ## Q75188: Installing MS-DOS over Emerson ROM DOS
 
+{% raw %}
+
 	Article: Q75188
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -84,3 +86,5 @@ permalink: /kb/075/Q75188/
 	
 	=============================================================================
 	
+
+{% endraw %}

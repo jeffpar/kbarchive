@@ -6,6 +6,8 @@ permalink: /kb/157/Q157680/
 
 ## Q157680: SMS: Remote Control Agent Fails on NetWare VLM TR Clients
 
+{% raw %}
+
 	Article: Q157680
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,3.11
@@ -51,3 +53,5 @@ permalink: /kb/157/Q157680/
 	
 	=============================================================================
 	
+
+{% endraw %}

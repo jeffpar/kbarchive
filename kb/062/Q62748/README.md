@@ -6,6 +6,8 @@ permalink: /kb/062/Q62748/
 
 ## Q62748: PPT: Copying Slides Between Presentations
 
+{% raw %}
+
 	Article: Q62748
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 2.0,2.0e,3.0,4.0,7.0
@@ -59,3 +61,5 @@ permalink: /kb/062/Q62748/
 	
 	=============================================================================
 	
+
+{% endraw %}

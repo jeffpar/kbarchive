@@ -6,6 +6,8 @@ permalink: /kb/081/Q81552/
 
 ## Q81552: PC Win: Selected Order of Messages Open Out of Order
 
+{% raw %}
+
 	Article: Q81552
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -48,3 +50,5 @@ permalink: /kb/081/Q81552/
 	
 	=============================================================================
 	
+
+{% endraw %}

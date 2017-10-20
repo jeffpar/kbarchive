@@ -6,6 +6,8 @@ permalink: /kb/244/Q244169/
 
 ## Q244169: How to Configure IAS to Deny Access Immediately
 
+{% raw %}
+
 	Article: Q244169
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0 SP6a
@@ -130,3 +132,5 @@ permalink: /kb/244/Q244169/
 	
 	=============================================================================
 	
+
+{% endraw %}

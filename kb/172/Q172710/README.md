@@ -6,6 +6,8 @@ permalink: /kb/172/Q172710/
 
 ## Q172710: How to Use the OH Tool on the Windows NT 4.0 Resource Kit
 
+{% raw %}
+
 	Article: Q172710
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/172/Q172710/
 	
 	=============================================================================
 	
+
+{% endraw %}

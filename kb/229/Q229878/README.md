@@ -6,6 +6,8 @@ permalink: /kb/229/Q229878/
 
 ## Q229878: SBS DHCP Server Shutdown After Upgrade to Full Windows NT
 
+{% raw %}
+
 	Article: Q229878
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -60,3 +62,5 @@ permalink: /kb/229/Q229878/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132905/
 
 ## Q132905: 16-Bit Network Programs May Not Reflect New Computer Name
 
+{% raw %}
+
 	Article: Q132905
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132905/
 	
 	=============================================================================
 	
+
+{% endraw %}

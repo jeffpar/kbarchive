@@ -6,6 +6,8 @@ permalink: /kb/228/Q228985/
 
 ## Q228985: Games Err Msg: Please Insert the Correct CD-ROM...
 
+{% raw %}
+
 	Article: Q228985
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -255,3 +257,5 @@ permalink: /kb/228/Q228985/
 	
 	=============================================================================
 	
+
+{% endraw %}

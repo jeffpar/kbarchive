@@ -6,6 +6,8 @@ permalink: /kb/185/Q185646/
 
 ## Q185646: BUG: UserConnection Designer and Parameterized Query in Access
 
+{% raw %}
+
 	Article: Q185646
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/185/Q185646/
 	
 	=============================================================================
 	
+
+{% endraw %}

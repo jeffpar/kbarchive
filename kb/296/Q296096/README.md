@@ -6,6 +6,8 @@ permalink: /kb/296/Q296096/
 
 ## Q296096: Source Code for Global.asa Is Displayed in Browser
 
+{% raw %}
+
 	Article: Q296096
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -102,3 +104,5 @@ permalink: /kb/296/Q296096/
 	
 	=============================================================================
 	
+
+{% endraw %}

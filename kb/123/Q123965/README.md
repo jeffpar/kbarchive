@@ -6,6 +6,8 @@ permalink: /kb/123/Q123965/
 
 ## Q123965: Can't Get Zone Information with Compaq Netflex II TR NIC
 
+{% raw %}
+
 	Article: Q123965
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123965/
 	
 	=============================================================================
 	
+
+{% endraw %}

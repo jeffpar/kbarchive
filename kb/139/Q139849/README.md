@@ -6,6 +6,8 @@ permalink: /kb/139/Q139849/
 
 ## Q139849: WD97: Err Msg: &quot;Word Cannot Open Document&quot; with Long File Name
 
+{% raw %}
+
 	Article: Q139849
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -142,3 +144,5 @@ permalink: /kb/139/Q139849/
 	
 	=============================================================================
 	
+
+{% endraw %}

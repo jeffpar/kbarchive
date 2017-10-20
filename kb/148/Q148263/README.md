@@ -6,6 +6,8 @@ permalink: /kb/148/Q148263/
 
 ## Q148263: Invalid Audit and History Records
 
+{% raw %}
+
 	Article: Q148263
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -54,3 +56,5 @@ permalink: /kb/148/Q148263/
 	
 	=============================================================================
 	
+
+{% endraw %}

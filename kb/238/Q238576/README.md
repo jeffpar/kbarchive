@@ -6,6 +6,8 @@ permalink: /kb/238/Q238576/
 
 ## Q238576: Midtown Madness: Objects Appear Suddenly on Screen
 
+{% raw %}
+
 	Article: Q238576
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/238/Q238576/
 	
 	=============================================================================
 	
+
+{% endraw %}

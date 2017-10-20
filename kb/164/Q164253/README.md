@@ -6,6 +6,8 @@ permalink: /kb/164/Q164253/
 
 ## Q164253: WinNT Err. Msg: Event ID 2018 When Srv.sys Is out of Memory
 
+{% raw %}
+
 	Article: Q164253
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/164/Q164253/
 	
 	=============================================================================
 	
+
+{% endraw %}

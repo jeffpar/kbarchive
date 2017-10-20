@@ -6,6 +6,8 @@ permalink: /kb/058/Q58982/
 
 ## Q58982: Mac AL: AppleLink Out Basket Folder Created by AppleLink Comm
 
+{% raw %}
+
 	Article: Q58982
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -53,3 +55,5 @@ permalink: /kb/058/Q58982/
 	
 	=============================================================================
 	
+
+{% endraw %}

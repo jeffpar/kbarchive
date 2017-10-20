@@ -6,6 +6,8 @@ permalink: /kb/153/Q153463/
 
 ## Q153463: HOWTO: Close Applications from Visual Basic
 
+{% raw %}
+
 	Article: Q153463
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -114,3 +116,5 @@ permalink: /kb/153/Q153463/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179477/
 
 ## Q179477: WD97: Cannot Select Document Properties to Print from File Open
 
+{% raw %}
+
 	Article: Q179477
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/179/Q179477/
 	
 	=============================================================================
 	
+
+{% endraw %}

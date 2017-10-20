@@ -6,6 +6,8 @@ permalink: /kb/125/Q125264/
 
 ## Q125264: PC WSPlus: Forced to Work Off Line
 
+{% raw %}
+
 	Article: Q125264
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/125/Q125264/
 	
 	=============================================================================
 	
+
+{% endraw %}

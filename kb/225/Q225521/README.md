@@ -6,6 +6,8 @@ permalink: /kb/225/Q225521/
 
 ## Q225521: Y2K.TXT Information No Longer Valid
 
+{% raw %}
+
 	Article: Q225521
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -53,3 +55,5 @@ permalink: /kb/225/Q225521/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125728/
 
 ## Q125728: FIX: Problems Occur After Destroying Dockable CControlBar
 
+{% raw %}
+
 	Article: Q125728
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -99,3 +101,5 @@ permalink: /kb/125/Q125728/
 	
 	=============================================================================
 	
+
+{% endraw %}

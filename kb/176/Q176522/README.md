@@ -6,6 +6,8 @@ permalink: /kb/176/Q176522/
 
 ## Q176522: IIS Server Instance Error Message with Microsoft Cluster Server
 
+{% raw %}
+
 	Article: Q176522
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/176/Q176522/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66770/
 
 ## Q66770: &quot;Product Assistance Checklist&quot; for BASIC/Pascal Reply Letters
 
+{% raw %}
+
 	Article: Q66770
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -124,3 +126,5 @@ permalink: /kb/066/Q66770/
 	oriented specifically for the software developer and corporate
 	customer. For more information on these services, please contact
 	Microsoft OnLine Telemarketing at (800) 443-4672.
+
+{% endraw %}

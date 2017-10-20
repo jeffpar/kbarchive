@@ -6,6 +6,8 @@ permalink: /kb/051/Q51886/
 
 ## Q51886: How to Print Hercules Graphics SCREEN 3 to an Epson Printer
 
+{% raw %}
+
 	Article: Q51886
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -158,3 +160,5 @@ permalink: /kb/051/Q51886/
 	      PUT #1, , ResetPrn$      'Reset the printer to default settings
 	      CLOSE #1
 	   END SUB
+
+{% endraw %}

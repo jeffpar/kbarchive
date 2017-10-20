@@ -6,6 +6,8 @@ permalink: /kb/081/Q81498/
 
 ## Q81498: DIBs and Their Uses
 
+{% raw %}
+
 	Article: Q81498
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -750,3 +752,5 @@ permalink: /kb/081/Q81498/
 	
 	=============================================================================
 	
+
+{% endraw %}

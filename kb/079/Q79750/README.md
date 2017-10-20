@@ -6,6 +6,8 @@ permalink: /kb/079/Q79750/
 
 ## Q79750: WD97: Using Bookmarks in a Table of Contents
 
+{% raw %}
+
 	Article: Q79750
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -48,7 +50,7 @@ permalink: /kb/079/Q79750/
 	3. Press CTRL+F9 to insert a second set of field braces, and then type the
 	  bookmark name. The resulting TC field should appear as follows:
 	
-	  {TC {bookmark_name} }
+	  {TC {bookmark_name}}
 	
 	4. Add any additional TC field switches or instructions after the bookmark
 	  field.
@@ -63,3 +65,5 @@ permalink: /kb/079/Q79750/
 	
 	=============================================================================
 	
+
+{% endraw %}

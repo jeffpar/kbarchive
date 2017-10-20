@@ -6,6 +6,8 @@ permalink: /kb/149/Q149574/
 
 ## Q149574: Internet Explorer 2.0 Fails to Connect to SSL Enabled IIS Server
 
+{% raw %}
+
 	Article: Q149574
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:2.0; winnt:1.0
@@ -61,3 +63,5 @@ permalink: /kb/149/Q149574/
 	
 	=============================================================================
 	
+
+{% endraw %}

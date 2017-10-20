@@ -6,6 +6,8 @@ permalink: /kb/217/Q217155/
 
 ## Q217155: XADM: Missing MIME Boundary Causes Bad MIME Prolog
 
+{% raw %}
+
 	Article: Q217155
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -117,3 +119,5 @@ permalink: /kb/217/Q217155/
 	
 	=============================================================================
 	
+
+{% endraw %}

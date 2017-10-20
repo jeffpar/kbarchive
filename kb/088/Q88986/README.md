@@ -6,6 +6,8 @@ permalink: /kb/088/Q88986/
 
 ## Q88986: INKEY(0) Function Determines Key CHR Value
 
+{% raw %}
+
 	Article: Q88986
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:1.21,2.1
@@ -49,3 +51,5 @@ permalink: /kb/088/Q88986/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254083/
 
 ## Q254083: SMS 2.0 SP1 Is Not Compatible with WMI Version 1085
 
+{% raw %}
+
 	Article: Q254083
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -145,3 +147,5 @@ permalink: /kb/254/Q254083/
 	
 	=============================================================================
 	
+
+{% endraw %}

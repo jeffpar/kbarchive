@@ -6,6 +6,8 @@ permalink: /kb/140/Q140953/
 
 ## Q140953: XCLN: Fax Template Generates Bad Phone Number
 
+{% raw %}
+
 	Article: Q140953
 	Product(s): Microsoft Exchange
 	Version(s): 3.0a,3.x,4.0
@@ -72,3 +74,5 @@ permalink: /kb/140/Q140953/
 	
 	=============================================================================
 	
+
+{% endraw %}

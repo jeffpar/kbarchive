@@ -6,6 +6,8 @@ permalink: /kb/232/Q232161/
 
 ## Q232161: Changing the Location of Your Certificate Revocation List (CRL)
 
+{% raw %}
+
 	Article: Q232161
 	Product(s): Internet Information Server
 	Version(s): 2.0,5.0
@@ -83,3 +85,5 @@ permalink: /kb/232/Q232161/
 	
 	=============================================================================
 	
+
+{% endraw %}

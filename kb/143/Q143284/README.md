@@ -6,6 +6,8 @@ permalink: /kb/143/Q143284/
 
 ## Q143284: PRB: Error Generated Through Interface Clears READ EVENTS
 
+{% raw %}
+
 	Article: Q143284
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -149,3 +151,5 @@ permalink: /kb/143/Q143284/
 	
 	=============================================================================
 	
+
+{% endraw %}

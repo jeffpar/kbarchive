@@ -6,6 +6,8 @@ permalink: /kb/124/Q124998/
 
 ## Q124998: INF: Change in Behavior of SQLSetPOS on Empty Result Set
 
+{% raw %}
+
 	Article: Q124998
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.1
@@ -89,3 +91,5 @@ permalink: /kb/124/Q124998/
 	
 	=============================================================================
 	
+
+{% endraw %}

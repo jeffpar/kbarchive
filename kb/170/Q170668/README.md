@@ -6,6 +6,8 @@ permalink: /kb/170/Q170668/
 
 ## Q170668: Inetinfo.exe Access Violation When Querying DB2 Using SNA Server
 
+{% raw %}
+
 	Article: Q170668
 	Product(s): Internet Information Server
 	Version(s): WinNT:2.0,3.0
@@ -54,3 +56,5 @@ permalink: /kb/170/Q170668/
 	
 	=============================================================================
 	
+
+{% endraw %}

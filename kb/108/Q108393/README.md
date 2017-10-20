@@ -6,6 +6,8 @@ permalink: /kb/108/Q108393/
 
 ## Q108393: MAXMEM Option in Windows NT BOOT.INI File
 
+{% raw %}
+
 	Article: Q108393
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,3.5,3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/108/Q108393/
 	
 	=============================================================================
 	
+
+{% endraw %}

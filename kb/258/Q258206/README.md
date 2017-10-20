@@ -6,6 +6,8 @@ permalink: /kb/258/Q258206/
 
 ## Q258206: XFOR: Installing Internet Mail Service Extension Imsext.dll
 
+{% raw %}
+
 	Article: Q258206
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -311,3 +313,5 @@ permalink: /kb/258/Q258206/
 	
 	=============================================================================
 	
+
+{% endraw %}

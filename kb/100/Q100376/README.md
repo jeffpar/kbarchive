@@ -6,6 +6,8 @@ permalink: /kb/100/Q100376/
 
 ## Q100376: FIX: Intrinsic REAL Function Assigned to COMPLEX Fails
 
+{% raw %}
+
 	Article: Q100376
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -117,3 +119,5 @@ permalink: /kb/100/Q100376/
 	
 	=============================================================================
 	
+
+{% endraw %}

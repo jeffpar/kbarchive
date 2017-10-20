@@ -6,6 +6,8 @@ permalink: /kb/150/Q150029/
 
 ## Q150029: INFO: OLE Control Containers Must Call AfxEnableControlContainer
 
+{% raw %}
+
 	Article: Q150029
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/150/Q150029/
 	
 	=============================================================================
 	
+
+{% endraw %}

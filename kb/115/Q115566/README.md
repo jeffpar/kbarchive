@@ -6,6 +6,8 @@ permalink: /kb/115/Q115566/
 
 ## Q115566: Open Multiple AVIs, Use of MCI_PUT Command
 
+{% raw %}
+
 	Article: Q115566
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -83,3 +85,5 @@ permalink: /kb/115/Q115566/
 	
 	=============================================================================
 	
+
+{% endraw %}

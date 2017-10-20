@@ -6,6 +6,8 @@ permalink: /kb/087/Q87288/
 
 ## Q87288: CONTROL.INI &#91;MMCPL&#93; Section Can Make Control Panel Disappear
 
+{% raw %}
+
 	Article: Q87288
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/087/Q87288/
 	
 	=============================================================================
 	
+
+{% endraw %}

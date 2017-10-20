@@ -6,6 +6,8 @@ permalink: /kb/139/Q139214/
 
 ## Q139214: How to Store Numeric Values that Come from a Combo Box
 
+{% raw %}
+
 	Article: Q139214
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -107,3 +109,5 @@ permalink: /kb/139/Q139214/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74661/
 
 ## Q74661: Running MS-DOS Setup From An External Floppy
 
+{% raw %}
+
 	Article: Q74661
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/074/Q74661/
 	
 	=============================================================================
 	
+
+{% endraw %}

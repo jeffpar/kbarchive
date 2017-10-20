@@ -6,6 +6,8 @@ permalink: /kb/142/Q142627/
 
 ## Q142627: Ntdetect.com Incorrectly Detects Some S3 Video Controllers
 
+{% raw %}
+
 	Article: Q142627
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -59,3 +61,5 @@ permalink: /kb/142/Q142627/
 	
 	=============================================================================
 	
+
+{% endraw %}

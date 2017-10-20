@@ -6,6 +6,8 @@ permalink: /kb/272/Q272409/
 
 ## Q272409: MSN Password and Member ID Requirements for MSN Companion
 
+{% raw %}
+
 	Article: Q272409
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -85,3 +87,5 @@ permalink: /kb/272/Q272409/
 	
 	=============================================================================
 	
+
+{% endraw %}

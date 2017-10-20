@@ -6,6 +6,8 @@ permalink: /kb/135/Q135114/
 
 ## Q135114: PRB: Error &quot;Library File Foxtools.fll is Invalid&quot;
 
+{% raw %}
+
 	Article: Q135114
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/135/Q135114/
 	
 	=============================================================================
 	
+
+{% endraw %}

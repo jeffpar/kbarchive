@@ -6,6 +6,8 @@ permalink: /kb/125/Q125794/
 
 ## Q125794: PRB: Calling CDatabase::Open in a USRDLL Causes CDBException
 
+{% raw %}
+
 	Article: Q125794
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 1.50 1.51 1.52 | 1.00 2.00
@@ -133,3 +135,5 @@ permalink: /kb/125/Q125794/
 	
 	=============================================================================
 	
+
+{% endraw %}

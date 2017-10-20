@@ -6,6 +6,8 @@ permalink: /kb/122/Q122182/
 
 ## Q122182: CALC.EXE Display Error in Floating Point Number Calculation
 
+{% raw %}
+
 	Article: Q122182
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/122/Q122182/
 	
 	=============================================================================
 	
+
+{% endraw %}

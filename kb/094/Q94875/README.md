@@ -6,6 +6,8 @@ permalink: /kb/094/Q94875/
 
 ## Q94875: Reinstalling Original Windows TrueType Fonts
 
+{% raw %}
+
 	Article: Q94875
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -123,3 +125,5 @@ permalink: /kb/094/Q94875/
 	
 	=============================================================================
 	
+
+{% endraw %}

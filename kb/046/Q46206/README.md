@@ -6,6 +6,8 @@ permalink: /kb/046/Q46206/
 
 ## Q46206: Internal Compiler Error: ctypes.c Line 474
 
+{% raw %}
+
 	Article: Q46206
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -67,3 +69,5 @@ permalink: /kb/046/Q46206/
 	      memcpy(&old_read_b, &read_b, sizeof(old_read_b));
 	  */
 	}
+
+{% endraw %}

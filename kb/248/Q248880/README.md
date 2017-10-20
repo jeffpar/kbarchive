@@ -6,6 +6,8 @@ permalink: /kb/248/Q248880/
 
 ## Q248880: SMS:SMSCliToknAcct&amp; Accesses Network on Computer w/ Auddrive.sys
 
+{% raw %}
+
 	Article: Q248880
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -103,3 +105,5 @@ permalink: /kb/248/Q248880/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/319/Q319116/
 
 ## Q319116: &quot;Error 718&quot; Err Msg When You Connect to the Internet Through MSN
 
+{% raw %}
+
 	Article: Q319116
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/319/Q319116/
 	
 	=============================================================================
 	
+
+{% endraw %}

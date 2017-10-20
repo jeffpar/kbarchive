@@ -6,6 +6,8 @@ permalink: /kb/312/Q312218/
 
 ## Q312218: BUG: Deadlock in Multithreaded Process Using Declare Statements
 
+{% raw %}
+
 	Article: Q312218
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -69,3 +71,5 @@ permalink: /kb/312/Q312218/
 	
 	=============================================================================
 	
+
+{% endraw %}

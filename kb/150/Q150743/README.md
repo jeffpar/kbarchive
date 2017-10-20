@@ -6,6 +6,8 @@ permalink: /kb/150/Q150743/
 
 ## Q150743: Cannot Use DISKCOPY Command on Identical 3.5-Inch Disk Drives
 
+{% raw %}
+
 	Article: Q150743
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -101,3 +103,5 @@ permalink: /kb/150/Q150743/
 	
 	=============================================================================
 	
+
+{% endraw %}

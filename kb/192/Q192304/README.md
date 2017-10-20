@@ -6,6 +6,8 @@ permalink: /kb/192/Q192304/
 
 ## Q192304: HOWTO: Check for a Writeable Drive Under Windows NT
 
+{% raw %}
+
 	Article: Q192304
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -119,3 +121,5 @@ permalink: /kb/192/Q192304/
 	
 	=============================================================================
 	
+
+{% endraw %}

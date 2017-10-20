@@ -6,6 +6,8 @@ permalink: /kb/114/Q114877/
 
 ## Q114877: ADT2: ADT Upgrade Rebate Coupon Lists Incorrect Requirements
 
+{% raw %}
+
 	Article: Q114877
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -77,3 +79,5 @@ permalink: /kb/114/Q114877/
 	
 	=============================================================================
 	
+
+{% endraw %}

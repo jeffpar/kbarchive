@@ -6,6 +6,8 @@ permalink: /kb/067/Q67270/
 
 ## Q67270: HPPCL5A Scalable Font Support in Supplemental Driver Library
 
+{% raw %}
+
 	Article: Q67270
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -38,3 +40,5 @@ permalink: /kb/067/Q67270/
 	
 	=============================================================================
 	
+
+{% endraw %}

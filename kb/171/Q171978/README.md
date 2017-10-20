@@ -6,6 +6,8 @@ permalink: /kb/171/Q171978/
 
 ## Q171978: INFO: Non-Modal Form Support in Visual Basic DLLs
 
+{% raw %}
+
 	Article: Q171978
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/171/Q171978/
 	
 	=============================================================================
 	
+
+{% endraw %}

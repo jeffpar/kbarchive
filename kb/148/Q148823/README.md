@@ -6,6 +6,8 @@ permalink: /kb/148/Q148823/
 
 ## Q148823: Cannot Play .wav and .avi Files on Toshiba 2155CDS Laptop
 
+{% raw %}
+
 	Article: Q148823
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -46,3 +48,5 @@ permalink: /kb/148/Q148823/
 	
 	=============================================================================
 	
+
+{% endraw %}

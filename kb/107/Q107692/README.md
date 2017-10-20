@@ -6,6 +6,8 @@ permalink: /kb/107/Q107692/
 
 ## Q107692: &quot;Backward Compatibility Hack Enabled&quot; Warning
 
+{% raw %}
+
 	Article: Q107692
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/107/Q107692/
 	
 	=============================================================================
 	
+
+{% endraw %}

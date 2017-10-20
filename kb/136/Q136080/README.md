@@ -6,6 +6,8 @@ permalink: /kb/136/Q136080/
 
 ## Q136080: FIX: Memory Leak Reported in PLEX.CPP When Using CSocket
 
+{% raw %}
+
 	Article: Q136080
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2
@@ -73,3 +75,5 @@ permalink: /kb/136/Q136080/
 	
 	=============================================================================
 	
+
+{% endraw %}

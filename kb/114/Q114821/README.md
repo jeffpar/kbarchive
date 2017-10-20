@@ -6,6 +6,8 @@ permalink: /kb/114/Q114821/
 
 ## Q114821: CD Sampler: Can't Run in 16, 32K, 64K, or 1.6 Million Colors
 
+{% raw %}
+
 	Article: Q114821
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/114/Q114821/
 	
 	=============================================================================
 	
+
+{% endraw %}

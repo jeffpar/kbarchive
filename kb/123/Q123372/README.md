@@ -6,6 +6,8 @@ permalink: /kb/123/Q123372/
 
 ## Q123372: PC Adm: Err Msg: Notice 19 Error Accessing Post Office...
 
+{% raw %}
+
 	Article: Q123372
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -70,3 +72,5 @@ permalink: /kb/123/Q123372/
 	
 	=============================================================================
 	
+
+{% endraw %}

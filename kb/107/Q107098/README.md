@@ -6,6 +6,8 @@ permalink: /kb/107/Q107098/
 
 ## Q107098: X400: README.TXT: Gateway to X.400, Version 3.0
 
+{% raw %}
+
 	Article: Q107098
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -298,3 +300,5 @@ permalink: /kb/107/Q107098/
 	
 	=============================================================================
 	
+
+{% endraw %}

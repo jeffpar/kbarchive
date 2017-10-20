@@ -6,6 +6,8 @@ permalink: /kb/149/Q149190/
 
 ## Q149190: Err Msg: Access to the Specified Device, Path, or File...
 
+{% raw %}
+
 	Article: Q149190
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/149/Q149190/
 	
 	=============================================================================
 	
+
+{% endraw %}

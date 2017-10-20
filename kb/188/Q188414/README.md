@@ -6,6 +6,8 @@ permalink: /kb/188/Q188414/
 
 ## Q188414: Random Stop 0x0000000A When Running IPX over Token Ring
 
+{% raw %}
+
 	Article: Q188414
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/188/Q188414/
 	
 	=============================================================================
 	
+
+{% endraw %}

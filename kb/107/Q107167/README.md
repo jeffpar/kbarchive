@@ -6,6 +6,8 @@ permalink: /kb/107/Q107167/
 
 ## Q107167: Using Tabs in Windows Help or Viewer Titles
 
+{% raw %}
+
 	Article: Q107167
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -42,3 +44,5 @@ permalink: /kb/107/Q107167/
 	
 	=============================================================================
 	
+
+{% endraw %}

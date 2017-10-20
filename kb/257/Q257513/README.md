@@ -6,6 +6,8 @@ permalink: /kb/257/Q257513/
 
 ## Q257513: Combat FS: Rudder Control Does Not Function Properly
 
+{% raw %}
+
 	Article: Q257513
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -249,3 +251,5 @@ permalink: /kb/257/Q257513/
 	
 	=============================================================================
 	
+
+{% endraw %}

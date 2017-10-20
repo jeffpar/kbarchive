@@ -6,6 +6,8 @@ permalink: /kb/191/Q191773/
 
 ## Q191773: XFOR: Correlation Table Cleanup Fails; Ct2.dat &amp; Ct2.idx Grow
 
+{% raw %}
+
 	Article: Q191773
 	Product(s): Microsoft Exchange
 	Version(s): 3.2,5.5
@@ -162,3 +164,5 @@ permalink: /kb/191/Q191773/
 	
 	=============================================================================
 	
+
+{% endraw %}

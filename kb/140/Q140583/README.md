@@ -6,6 +6,8 @@ permalink: /kb/140/Q140583/
 
 ## Q140583: How to Configure CD-ROM Caching for Windows 95
 
+{% raw %}
+
 	Article: Q140583
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995
@@ -162,3 +164,5 @@ permalink: /kb/140/Q140583/
 	
 	=============================================================================
 	
+
+{% endraw %}

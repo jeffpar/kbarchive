@@ -6,6 +6,8 @@ permalink: /kb/165/Q165198/
 
 ## Q165198: SNA Server Manager Traps When Assigning 5000 Pools to a User
 
+{% raw %}
+
 	Article: Q165198
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165198/
 	
 	=============================================================================
 	
+
+{% endraw %}

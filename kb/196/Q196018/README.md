@@ -6,6 +6,8 @@ permalink: /kb/196/Q196018/
 
 ## Q196018: System Preparation Tool Directory Not Deleted Upon Cloning
 
+{% raw %}
+
 	Article: Q196018
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/196/Q196018/
 	
 	=============================================================================
 	
+
+{% endraw %}

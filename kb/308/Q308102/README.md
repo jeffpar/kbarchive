@@ -6,6 +6,8 @@ permalink: /kb/308/Q308102/
 
 ## Q308102: PRB: End of Line Errors Can Occur If UTF8 Files are Interpreted
 
+{% raw %}
+
 	Article: Q308102
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/308/Q308102/
 	
 	=============================================================================
 	
+
+{% endraw %}

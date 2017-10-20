@@ -6,6 +6,8 @@ permalink: /kb/062/Q62058/
 
 ## Q62058: Multiple Duplicate Definition L2025 with Graphics Stub Files
 
+{% raw %}
+
 	Article: Q62058
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -33,3 +35,5 @@ permalink: /kb/062/Q62058/
 	
 	This information applies to Microsoft BASIC PDS 7.00 for MS-DOS and MS
 	OS/2.
+
+{% endraw %}

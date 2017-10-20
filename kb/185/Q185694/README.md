@@ -6,6 +6,8 @@ permalink: /kb/185/Q185694/
 
 ## Q185694: Thread Deadlock When Windows NT Backup Is Stopped
 
+{% raw %}
+
 	Article: Q185694
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -149,3 +151,5 @@ permalink: /kb/185/Q185694/
 	
 	=============================================================================
 	
+
+{% endraw %}

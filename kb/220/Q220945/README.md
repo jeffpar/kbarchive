@@ -6,6 +6,8 @@ permalink: /kb/220/Q220945/
 
 ## Q220945: Undocumented COMTI Methods Are Exposed
 
+{% raw %}
+
 	Article: Q220945
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -70,3 +72,5 @@ permalink: /kb/220/Q220945/
 	
 	=============================================================================
 	
+
+{% endraw %}

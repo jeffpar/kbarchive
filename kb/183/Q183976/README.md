@@ -6,6 +6,8 @@ permalink: /kb/183/Q183976/
 
 ## Q183976: XFOR: 3 KB or Larger Attachments Cause PROFS Connector to Stop
 
+{% raw %}
+
 	Article: Q183976
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -60,3 +62,5 @@ permalink: /kb/183/Q183976/
 	
 	=============================================================================
 	
+
+{% endraw %}

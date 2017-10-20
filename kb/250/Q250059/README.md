@@ -6,6 +6,8 @@ permalink: /kb/250/Q250059/
 
 ## Q250059: FIX: Accessing Print Drivers When Issuing SYS(1037) Causes Error
 
+{% raw %}
+
 	Article: Q250059
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -126,3 +128,5 @@ permalink: /kb/250/Q250059/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242013/
 
 ## Q242013: Non-Administrators Can Modify Profile Locations in Registry
 
+{% raw %}
+
 	Article: Q242013
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/242/Q242013/
 	
 	=============================================================================
 	
+
+{% endraw %}

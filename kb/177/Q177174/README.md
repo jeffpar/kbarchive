@@ -6,6 +6,8 @@ permalink: /kb/177/Q177174/
 
 ## Q177174: WINS Server Displays Owners with Questions Marks
 
+{% raw %}
+
 	Article: Q177174
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/177/Q177174/
 	
 	=============================================================================
 	
+
+{% endraw %}

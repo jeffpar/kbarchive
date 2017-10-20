@@ -6,6 +6,8 @@ permalink: /kb/247/Q247619/
 
 ## Q247619: FS2000: Program Hangs with nVIDIA Riva TNT-Based Video Adapter
 
+{% raw %}
+
 	Article: Q247619
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -82,3 +84,5 @@ permalink: /kb/247/Q247619/
 	
 	=============================================================================
 	
+
+{% endraw %}

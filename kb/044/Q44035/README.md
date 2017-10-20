@@ -6,6 +6,8 @@ permalink: /kb/044/Q44035/
 
 ## Q44035: WAIT Statement Can Access All 65535 Ports, Not Just 0 to 255
 
+{% raw %}
+
 	Article: Q44035
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -33,3 +35,5 @@ permalink: /kb/044/Q44035/
 	This documentation error has been corrected in the "Microsoft BASIC
 	7.0: Language Reference" manual and in the Microsoft BASIC PDS 7.00
 	QBX.EXE Microsoft Advisor on-line Help system.
+
+{% endraw %}

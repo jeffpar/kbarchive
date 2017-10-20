@@ -6,6 +6,8 @@ permalink: /kb/134/Q134330/
 
 ## Q134330: Logon Script Window Switches to Full Screen Under Windows 95
 
+{% raw %}
+
 	Article: Q134330
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -51,3 +53,5 @@ permalink: /kb/134/Q134330/
 	
 	=============================================================================
 	
+
+{% endraw %}

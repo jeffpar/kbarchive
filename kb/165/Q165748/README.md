@@ -6,6 +6,8 @@ permalink: /kb/165/Q165748/
 
 ## Q165748: How to Disable a Service or Device that Prevents NT from Booting
 
+{% raw %}
+
 	Article: Q165748
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.51,4.0
@@ -130,3 +132,5 @@ permalink: /kb/165/Q165748/
 	
 	=============================================================================
 	
+
+{% endraw %}

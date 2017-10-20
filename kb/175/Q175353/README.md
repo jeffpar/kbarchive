@@ -6,6 +6,8 @@ permalink: /kb/175/Q175353/
 
 ## Q175353: XADM: System Attendant Says Started and Cannot be Stopped
 
+{% raw %}
+
 	Article: Q175353
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -105,3 +107,5 @@ permalink: /kb/175/Q175353/
 	
 	=============================================================================
 	
+
+{% endraw %}

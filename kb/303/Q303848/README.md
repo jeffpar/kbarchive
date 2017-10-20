@@ -6,6 +6,8 @@ permalink: /kb/303/Q303848/
 
 ## Q303848: SMS: Data Access/Share Name Box Is Limited to 64 Characters
 
+{% raw %}
+
 	Article: Q303848
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -180,3 +182,5 @@ permalink: /kb/303/Q303848/
 	
 	=============================================================================
 	
+
+{% endraw %}

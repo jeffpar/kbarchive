@@ -6,6 +6,8 @@ permalink: /kb/131/Q131194/
 
 ## Q131194: MSN E-mail Is Not Delivered
 
+{% raw %}
+
 	Article: Q131194
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,95
@@ -117,3 +119,5 @@ permalink: /kb/131/Q131194/
 	
 	=============================================================================
 	
+
+{% endraw %}

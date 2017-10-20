@@ -6,6 +6,8 @@ permalink: /kb/137/Q137980/
 
 ## Q137980: Connecting to Windows 95 User Level Share Results Event ID 3012
 
+{% raw %}
+
 	Article: Q137980
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -97,3 +99,5 @@ permalink: /kb/137/Q137980/
 	
 	=============================================================================
 	
+
+{% endraw %}

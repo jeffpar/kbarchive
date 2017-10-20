@@ -6,6 +6,8 @@ permalink: /kb/083/Q83435/
 
 ## Q83435: Windows 3.1 Resource Kit SYSTEM.INI &#91;386ENH&#93; Section A-L
 
+{% raw %}
+
 	Article: Q83435
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.10 3.11
@@ -942,3 +944,5 @@ permalink: /kb/083/Q83435/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157157/
 
 ## Q157157: STL Sample for the heap Functions
 
+{% raw %}
+
 	Article: Q157157
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -229,3 +231,5 @@ permalink: /kb/157/Q157157/
 	
 	=============================================================================
 	
+
+{% endraw %}

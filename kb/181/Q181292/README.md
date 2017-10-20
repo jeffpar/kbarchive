@@ -6,6 +6,8 @@ permalink: /kb/181/Q181292/
 
 ## Q181292: WD97: InsertSymbol Result Not Translated Between Mac and ANSI
 
+{% raw %}
+
 	Article: Q181292
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/181/Q181292/
 	
 	=============================================================================
 	
+
+{% endraw %}

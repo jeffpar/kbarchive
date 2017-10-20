@@ -6,6 +6,8 @@ permalink: /kb/139/Q139106/
 
 ## Q139106: Modifying the Toll Prefix List in Windows 95/98
 
+{% raw %}
+
 	Article: Q139106
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -82,3 +84,5 @@ permalink: /kb/139/Q139106/
 	
 	=============================================================================
 	
+
+{% endraw %}

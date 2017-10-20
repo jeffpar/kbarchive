@@ -6,6 +6,8 @@ permalink: /kb/177/Q177847/
 
 ## Q177847: Error Message: Rundll32 Caused a Fault in Setupx
 
+{% raw %}
+
 	Article: Q177847
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/177/Q177847/
 	
 	=============================================================================
 	
+
+{% endraw %}

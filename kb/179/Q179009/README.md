@@ -6,6 +6,8 @@ permalink: /kb/179/Q179009/
 
 ## Q179009: SMS: DATALOADER Is Unable to Process MIFs
 
+{% raw %}
+
 	Article: Q179009
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -105,3 +107,5 @@ permalink: /kb/179/Q179009/
 	
 	=============================================================================
 	
+
+{% endraw %}

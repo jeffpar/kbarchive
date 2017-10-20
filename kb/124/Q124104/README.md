@@ -6,6 +6,8 @@ permalink: /kb/124/Q124104/
 
 ## Q124104: Primary Mouse Button+DEL Creates Drag Mode in Program Manager
 
+{% raw %}
+
 	Article: Q124104
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/124/Q124104/
 	
 	=============================================================================
 	
+
+{% endraw %}

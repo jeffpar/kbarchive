@@ -6,6 +6,8 @@ permalink: /kb/065/Q65534/
 
 ## Q65534: Maximum Number of Mirrored Drives Allowed in OS/2 LAN Man 2.x
 
+{% raw %}
+
 	Article: Q65534
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/065/Q65534/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181130/
 
 ## Q181130: XFOR: Additional Characters Appear in Migrated cc:Mail Messages
 
+{% raw %}
+
 	Article: Q181130
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -63,3 +65,5 @@ permalink: /kb/181/Q181130/
 	
 	=============================================================================
 	
+
+{% endraw %}

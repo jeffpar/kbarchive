@@ -6,6 +6,8 @@ permalink: /kb/074/Q74179/
 
 ## Q74179: Disabling Grid Systems Isopoint Mouse on a Grid Laptop 1550SX
 
+{% raw %}
+
 	Article: Q74179
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -97,3 +99,5 @@ permalink: /kb/074/Q74179/
 	
 	=============================================================================
 	
+
+{% endraw %}

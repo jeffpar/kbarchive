@@ -6,6 +6,8 @@ permalink: /kb/126/Q126578/
 
 ## Q126578: Incorrect Amount of Memory Detected on EISA Computers
 
+{% raw %}
+
 	Article: Q126578
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/126/Q126578/
 	
 	=============================================================================
 	
+
+{% endraw %}

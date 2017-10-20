@@ -6,6 +6,8 @@ permalink: /kb/195/Q195911/
 
 ## Q195911: XADM: Directory Replication Conflicts and Event ID 1074
 
+{% raw %}
+
 	Article: Q195911
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/195/Q195911/
 	
 	=============================================================================
 	
+
+{% endraw %}

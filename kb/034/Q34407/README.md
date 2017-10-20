@@ -6,6 +6,8 @@ permalink: /kb/034/Q34407/
 
 ## Q34407: BSAVE/BLOAD File Format Explained for BASIC; 7-Byte Header
 
+{% raw %}
+
 	Article: Q34407
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/034/Q34407/
 	
 	Despite the slight format differences, files BSAVEd under any of the
 	three above BASIC dialects correctly BLOAD into each other BASIC.
+
+{% endraw %}

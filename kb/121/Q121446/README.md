@@ -6,6 +6,8 @@ permalink: /kb/121/Q121446/
 
 ## Q121446: Writer/Artist: All Drives Are Checked At Startup
 
+{% raw %}
+
 	Article: Q121446
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -50,3 +52,5 @@ permalink: /kb/121/Q121446/
 	
 	=============================================================================
 	
+
+{% endraw %}

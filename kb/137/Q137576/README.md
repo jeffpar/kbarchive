@@ -6,6 +6,8 @@ permalink: /kb/137/Q137576/
 
 ## Q137576: SNACFG.EXE Fails with Spaces in Username Parameter
 
+{% raw %}
+
 	Article: Q137576
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -64,3 +66,5 @@ permalink: /kb/137/Q137576/
 	
 	=============================================================================
 	
+
+{% endraw %}

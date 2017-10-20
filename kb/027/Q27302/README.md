@@ -6,6 +6,8 @@ permalink: /kb/027/Q27302/
 
 ## Q27302: Passing BASIC Array of User-Defined Type to C
 
+{% raw %}
+
 	Article: Q27302
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -85,3 +87,5 @@ permalink: /kb/027/Q27302/
 	Record[2].A = 130
 	Record[2].B =  2. 02-02-1988
 	Record[2].C = 79.199997
+
+{% endraw %}

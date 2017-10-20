@@ -6,6 +6,8 @@ permalink: /kb/272/Q272618/
 
 ## Q272618: PRB: Client-Side ADO Union Query Using Oracle OLE DB Provider Re
 
+{% raw %}
+
 	Article: Q272618
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.5 SP1,6.0
@@ -92,3 +94,5 @@ permalink: /kb/272/Q272618/
 	
 	=============================================================================
 	
+
+{% endraw %}

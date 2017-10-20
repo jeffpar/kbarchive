@@ -6,6 +6,8 @@ permalink: /kb/058/Q58260/
 
 ## Q58260: Mouse Lost Under IBM DisplayWrite IV
 
+{% raw %}
+
 	Article: Q58260
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/058/Q58260/
 	
 	=============================================================================
 	
+
+{% endraw %}

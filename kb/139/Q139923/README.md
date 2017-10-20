@@ -6,6 +6,8 @@ permalink: /kb/139/Q139923/
 
 ## Q139923: Macintosh Multimedia: Printout Has Overlapping Characters
 
+{% raw %}
+
 	Article: Q139923
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition,1997 edition; MACINTOSH:
@@ -82,3 +84,5 @@ permalink: /kb/139/Q139923/
 	
 	=============================================================================
 	
+
+{% endraw %}

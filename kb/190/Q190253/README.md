@@ -6,6 +6,8 @@ permalink: /kb/190/Q190253/
 
 ## Q190253: INFO: VB6 Designers Do Not Work in VB5
 
+{% raw %}
+
 	Article: Q190253
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -56,3 +58,5 @@ permalink: /kb/190/Q190253/
 	
 	=============================================================================
 	
+
+{% endraw %}

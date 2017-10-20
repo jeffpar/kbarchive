@@ -6,6 +6,8 @@ permalink: /kb/122/Q122398/
 
 ## Q122398: TCP/IP Internetworking Components Not Available
 
+{% raw %}
+
 	Article: Q122398
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -78,3 +80,5 @@ permalink: /kb/122/Q122398/
 	
 	=============================================================================
 	
+
+{% endraw %}

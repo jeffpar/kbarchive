@@ -6,6 +6,8 @@ permalink: /kb/142/Q142293/
 
 ## Q142293: Why Some Methods/Properties Do Not Appear in Object Browser
 
+{% raw %}
+
 	Article: Q142293
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -75,3 +77,5 @@ permalink: /kb/142/Q142293/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169043/
 
 ## Q169043: Mastering Web Site Development: Large Notes Cause Notebook Hang
 
+{% raw %}
+
 	Article: Q169043
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/169/Q169043/
 	
 	=============================================================================
 	
+
+{% endraw %}

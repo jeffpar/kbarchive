@@ -6,6 +6,8 @@ permalink: /kb/216/Q216078/
 
 ## Q216078: DirectX: List of New Features Included in Microsoft DirectX 6.1
 
+{% raw %}
+
 	Article: Q216078
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -127,3 +129,5 @@ permalink: /kb/216/Q216078/
 	
 	=============================================================================
 	
+
+{% endraw %}

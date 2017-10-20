@@ -6,6 +6,8 @@ permalink: /kb/076/Q76098/
 
 ## Q76098: MS-DOS Err Msg: SMARTDrive: Not Enough Memory to Load Driver
 
+{% raw %}
+
 	Article: Q76098
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -83,3 +85,5 @@ permalink: /kb/076/Q76098/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169271/
 
 ## Q169271: Err Msg: Database Already in Use w/ MS Access DB on Remote Share
 
+{% raw %}
+
 	Article: Q169271
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -57,3 +59,5 @@ permalink: /kb/169/Q169271/
 	
 	=============================================================================
 	
+
+{% endraw %}

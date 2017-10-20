@@ -6,6 +6,8 @@ permalink: /kb/134/Q134520/
 
 ## Q134520: Phone Dialer Does Not Report a Busy Signal
 
+{% raw %}
+
 	Article: Q134520
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/134/Q134520/
 	
 	=============================================================================
 	
+
+{% endraw %}

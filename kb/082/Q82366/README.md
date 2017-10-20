@@ -6,6 +6,8 @@ permalink: /kb/082/Q82366/
 
 ## Q82366: Canon LBP III/4 Drivers Can't Print Certain Patterns
 
+{% raw %}
+
 	Article: Q82366
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/082/Q82366/
 	
 	=============================================================================
 	
+
+{% endraw %}

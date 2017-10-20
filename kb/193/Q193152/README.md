@@ -6,6 +6,8 @@ permalink: /kb/193/Q193152/
 
 ## Q193152: Preserving Virtual Directories and Servers During Uninstall
 
+{% raw %}
+
 	Article: Q193152
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/193/Q193152/
 	
 	=============================================================================
 	
+
+{% endraw %}

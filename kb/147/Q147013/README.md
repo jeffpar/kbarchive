@@ -6,6 +6,8 @@ permalink: /kb/147/Q147013/
 
 ## Q147013: Past Reminders for Reoccuring Tasks Show After Event
 
+{% raw %}
+
 	Article: Q147013
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -41,3 +43,5 @@ permalink: /kb/147/Q147013/
 	
 	=============================================================================
 	
+
+{% endraw %}

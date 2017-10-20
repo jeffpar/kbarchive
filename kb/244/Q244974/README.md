@@ -6,6 +6,8 @@ permalink: /kb/244/Q244974/
 
 ## Q244974: List of Bugs Fixed in Windows NT 4.0 Service Pack 5 (Part 2)
 
+{% raw %}
+
 	Article: Q244974
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -239,3 +241,5 @@ permalink: /kb/244/Q244974/
 	
 	=============================================================================
 	
+
+{% endraw %}

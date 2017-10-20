@@ -6,6 +6,8 @@ permalink: /kb/105/Q105334/
 
 ## Q105334: MemMaker Removes Question Mark Characters from CONFIG.SYS
 
+{% raw %}
+
 	Article: Q105334
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/105/Q105334/
 	
 	=============================================================================
 	
+
+{% endraw %}

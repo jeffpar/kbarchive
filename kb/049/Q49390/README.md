@@ -6,6 +6,8 @@ permalink: /kb/049/Q49390/
 
 ## Q49390: Example of Passing Numerics from MASM to BASIC
 
+{% raw %}
+
 	Article: Q49390
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -110,3 +112,5 @@ permalink: /kb/049/Q49390/
 	   Long    : 37999
 	   Single  : 123.45
 	   Double  : 1234.14159
+
+{% endraw %}

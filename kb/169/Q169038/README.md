@@ -6,6 +6,8 @@ permalink: /kb/169/Q169038/
 
 ## Q169038: SMS: Event ID 132 Occurs After Applying an SMS 1.2 Service Pack
 
+{% raw %}
+
 	Article: Q169038
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -116,3 +118,5 @@ permalink: /kb/169/Q169038/
 	
 	=============================================================================
 	
+
+{% endraw %}

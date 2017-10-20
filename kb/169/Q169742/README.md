@@ -6,6 +6,8 @@ permalink: /kb/169/Q169742/
 
 ## Q169742: Semaphore Timeout Error When UseWriteBehind Disabled for Redir
 
+{% raw %}
+
 	Article: Q169742
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -114,3 +116,5 @@ permalink: /kb/169/Q169742/
 	
 	=============================================================================
 	
+
+{% endraw %}

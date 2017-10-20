@@ -6,6 +6,8 @@ permalink: /kb/174/Q174960/
 
 ## Q174960: SMS: Rservice Does Not Pass Startup Parameters
 
+{% raw %}
+
 	Article: Q174960
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -54,3 +56,5 @@ permalink: /kb/174/Q174960/
 	
 	=============================================================================
 	
+
+{% endraw %}

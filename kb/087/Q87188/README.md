@@ -6,6 +6,8 @@ permalink: /kb/087/Q87188/
 
 ## Q87188: PROFS: Attachment File Handling
 
+{% raw %}
+
 	Article: Q87188
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -47,3 +49,5 @@ permalink: /kb/087/Q87188/
 	
 	=============================================================================
 	
+
+{% endraw %}

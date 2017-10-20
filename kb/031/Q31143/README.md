@@ -6,6 +6,8 @@ permalink: /kb/031/Q31143/
 
 ## Q31143: Return Type for ReadCmd Is PSWI, Not PCMD
 
+{% raw %}
+
 	Article: Q31143
 	Product(s): See article
 	Version(s): 1.00 | 1.00
@@ -19,3 +21,5 @@ permalink: /kb/031/Q31143/
 	
 	The correct return type is PSWI, which is documented in the EXT.H
 	file.
+
+{% endraw %}

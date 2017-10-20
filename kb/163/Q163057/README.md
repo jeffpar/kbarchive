@@ -6,6 +6,8 @@ permalink: /kb/163/Q163057/
 
 ## Q163057: WD97: Cannot Change Default Language for New Documents
 
+{% raw %}
+
 	Article: Q163057
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -194,3 +196,5 @@ permalink: /kb/163/Q163057/
 	
 	=============================================================================
 	
+
+{% endraw %}

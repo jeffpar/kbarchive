@@ -6,6 +6,8 @@ permalink: /kb/164/Q164900/
 
 ## Q164900: SMS: Processor Name Only Allows 20 Characters
 
+{% raw %}
+
 	Article: Q164900
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/164/Q164900/
 	
 	=============================================================================
 	
+
+{% endraw %}

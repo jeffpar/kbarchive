@@ -6,6 +6,8 @@ permalink: /kb/168/Q168929/
 
 ## Q168929: XCLN: Err Msg: You Need More Memory or System Resources
 
+{% raw %}
+
 	Article: Q168929
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/168/Q168929/
 	
 	=============================================================================
 	
+
+{% endraw %}

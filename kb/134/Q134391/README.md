@@ -6,6 +6,8 @@ permalink: /kb/134/Q134391/
 
 ## Q134391: INFO: List of References That Discuss ODBC
 
+{% raw %}
+
 	Article: Q134391
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1,2.2,2.5,2.6,2.7,4.0,4.1,4.2,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/134/Q134391/
 	
 	=============================================================================
 	
+
+{% endraw %}

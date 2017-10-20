@@ -6,6 +6,8 @@ permalink: /kb/065/Q65503/
 
 ## Q65503: No CHAIN with ALL, MERGE, DELETE, or Line # in Compiled BASIC
 
+{% raw %}
+
 	Article: Q65503
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -69,3 +71,5 @@ permalink: /kb/065/Q65503/
 	and GW-BASIC/BASICA programs, see Page 312 in the "Microsoft
 	QuickBASIC 4.5: Programming In BASIC" manual for QuickBASIC version
 	4.50.
+
+{% endraw %}

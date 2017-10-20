@@ -6,6 +6,8 @@ permalink: /kb/136/Q136787/
 
 ## Q136787: XCLN: Amalgamated Read/Delivery Receipts
 
+{% raw %}
+
 	Article: Q136787
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -132,3 +134,5 @@ permalink: /kb/136/Q136787/
 	
 	=============================================================================
 	
+
+{% endraw %}

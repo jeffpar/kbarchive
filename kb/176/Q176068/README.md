@@ -6,6 +6,8 @@ permalink: /kb/176/Q176068/
 
 ## Q176068: XADM: Err: &quot;Private store could not be updated&quot; Running Isinteg
 
+{% raw %}
+
 	Article: Q176068
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/176/Q176068/
 	
 	=============================================================================
 	
+
+{% endraw %}

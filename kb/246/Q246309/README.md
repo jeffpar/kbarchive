@@ -6,6 +6,8 @@ permalink: /kb/246/Q246309/
 
 ## Q246309: How to Replace a Missing IIS In-Process Application in MTS
 
+{% raw %}
+
 	Article: Q246309
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -171,3 +173,5 @@ permalink: /kb/246/Q246309/
 	
 	=============================================================================
 	
+
+{% endraw %}

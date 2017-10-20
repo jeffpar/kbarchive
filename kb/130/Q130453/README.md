@@ -6,6 +6,8 @@ permalink: /kb/130/Q130453/
 
 ## Q130453: Cannot See Details Processing NetWare Login Script
 
+{% raw %}
+
 	Article: Q130453
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130453/
 	
 	=============================================================================
 	
+
+{% endraw %}

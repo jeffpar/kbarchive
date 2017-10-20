@@ -6,6 +6,8 @@ permalink: /kb/113/Q113455/
 
 ## Q113455: AWFAX: Excel Macro File Does Not Render Correctly When Faxed
 
+{% raw %}
+
 	Article: Q113455
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11,4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/113/Q113455/
 	
 	=============================================================================
 	
+
+{% endraw %}

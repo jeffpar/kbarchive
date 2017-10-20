@@ -6,6 +6,8 @@ permalink: /kb/301/Q301185/
 
 ## Q301185: Train Simulator: Err Msg: Train Simulator Has Encountered...
 
+{% raw %}
+
 	Article: Q301185
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -375,3 +377,5 @@ permalink: /kb/301/Q301185/
 	
 	=============================================================================
 	
+
+{% endraw %}

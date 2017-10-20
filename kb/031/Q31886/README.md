@@ -6,6 +6,8 @@ permalink: /kb/031/Q31886/
 
 ## Q31886: Underlining on Monochrome Display with POKE or INTERRUPT &amp;H10
 
+{% raw %}
+
 	Article: Q31886
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -118,3 +120,5 @@ permalink: /kb/031/Q31886/
 	LOCATE row, col + 1  'relocate the cursor one place to the right for every
 	                     'character written to the screen
 	END SUB
+
+{% endraw %}

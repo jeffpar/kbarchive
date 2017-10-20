@@ -6,6 +6,8 @@ permalink: /kb/187/Q187441/
 
 ## Q187441: Unable to Change Number of Colors
 
+{% raw %}
+
 	Article: Q187441
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/187/Q187441/
 	
 	=============================================================================
 	
+
+{% endraw %}

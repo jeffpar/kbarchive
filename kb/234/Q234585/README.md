@@ -6,6 +6,8 @@ permalink: /kb/234/Q234585/
 
 ## Q234585: XFOR: GW Connector Fails to Deliver Mail Multiple Attachments
 
+{% raw %}
+
 	Article: Q234585
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -97,3 +99,5 @@ permalink: /kb/234/Q234585/
 	
 	=============================================================================
 	
+
+{% endraw %}

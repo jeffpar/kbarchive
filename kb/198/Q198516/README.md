@@ -6,6 +6,8 @@ permalink: /kb/198/Q198516/
 
 ## Q198516: WLBS Uses Port 2504 for Remote Control
 
+{% raw %}
+
 	Article: Q198516
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/198/Q198516/
 	
 	=============================================================================
 	
+
+{% endraw %}

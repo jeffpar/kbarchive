@@ -6,6 +6,8 @@ permalink: /kb/086/Q86624/
 
 ## Q86624: Windows: Playing Audio CDs on Earlier CD-ROM Drives
 
+{% raw %}
+
 	Article: Q86624
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/086/Q86624/
 	
 	=============================================================================
 	
+
+{% endraw %}

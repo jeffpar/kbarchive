@@ -6,6 +6,8 @@ permalink: /kb/168/Q168382/
 
 ## Q168382: PRB: Using the Stop Build Command May Corrupt Output Files
 
+{% raw %}
+
 	Article: Q168382
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.52; winnt:2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0
@@ -54,3 +56,5 @@ permalink: /kb/168/Q168382/
 	
 	=============================================================================
 	
+
+{% endraw %}

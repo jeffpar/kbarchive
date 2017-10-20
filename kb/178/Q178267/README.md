@@ -6,6 +6,8 @@ permalink: /kb/178/Q178267/
 
 ## Q178267: Route.exe Error Message: The Application Failed to Initialize
 
+{% raw %}
+
 	Article: Q178267
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/178/Q178267/
 	
 	=============================================================================
 	
+
+{% endraw %}

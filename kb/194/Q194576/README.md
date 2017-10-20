@@ -6,6 +6,8 @@ permalink: /kb/194/Q194576/
 
 ## Q194576: HOWTO: Obtain Time Zone Information in Visual FoxPro
 
+{% raw %}
+
 	Article: Q194576
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -230,3 +232,5 @@ permalink: /kb/194/Q194576/
 	
 	=============================================================================
 	
+
+{% endraw %}

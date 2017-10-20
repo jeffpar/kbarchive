@@ -6,6 +6,8 @@ permalink: /kb/224/Q224499/
 
 ## Q224499: SBS Modem Unavailable if Clients Do Not Disconnect
 
+{% raw %}
+
 	Article: Q224499
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -51,3 +53,5 @@ permalink: /kb/224/Q224499/
 	
 	=============================================================================
 	
+
+{% endraw %}

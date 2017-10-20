@@ -6,6 +6,8 @@ permalink: /kb/124/Q124591/
 
 ## Q124591: Multimedia Applications: &quot;Setup Was Unable to Find SHARE.EXE&quot;
 
+{% raw %}
+
 	Article: Q124591
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1994 edition,1994-1995 edition,1995 edition
@@ -83,3 +85,5 @@ permalink: /kb/124/Q124591/
 	
 	=============================================================================
 	
+
+{% endraw %}

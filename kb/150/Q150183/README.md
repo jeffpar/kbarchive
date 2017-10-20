@@ -6,6 +6,8 @@ permalink: /kb/150/Q150183/
 
 ## Q150183: FIX: Cannot Change Left and Top of Invisible Sheridan Control
 
+{% raw %}
+
 	Article: Q150183
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -99,3 +101,5 @@ permalink: /kb/150/Q150183/
 	
 	=============================================================================
 	
+
+{% endraw %}

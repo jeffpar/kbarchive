@@ -6,6 +6,8 @@ permalink: /kb/167/Q167284/
 
 ## Q167284: WD97: Problem Saving Normal.dot on Computer with Multiple Users
 
+{% raw %}
+
 	Article: Q167284
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -193,3 +195,5 @@ permalink: /kb/167/Q167284/
 	
 	=============================================================================
 	
+
+{% endraw %}

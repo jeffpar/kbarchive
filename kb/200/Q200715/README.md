@@ -6,6 +6,8 @@ permalink: /kb/200/Q200715/
 
 ## Q200715: XFOR: How to Save Mapping Rules for LDE Using SQL
 
+{% raw %}
+
 	Article: Q200715
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2
@@ -56,3 +58,5 @@ permalink: /kb/200/Q200715/
 	
 	=============================================================================
 	
+
+{% endraw %}

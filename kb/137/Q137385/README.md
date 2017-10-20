@@ -6,6 +6,8 @@ permalink: /kb/137/Q137385/
 
 ## Q137385: WD97: Error Using Text Data Source with ODBC Driver
 
+{% raw %}
+
 	Article: Q137385
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -159,3 +161,5 @@ permalink: /kb/137/Q137385/
 	
 	=============================================================================
 	
+
+{% endraw %}

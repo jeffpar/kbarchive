@@ -6,6 +6,8 @@ permalink: /kb/119/Q119876/
 
 ## Q119876: Windows 95 Startup Error: Incorrect MS-DOS Version...
 
+{% raw %}
+
 	Article: Q119876
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/119/Q119876/
 	
 	=============================================================================
 	
+
+{% endraw %}

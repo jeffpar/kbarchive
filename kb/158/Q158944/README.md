@@ -6,6 +6,8 @@ permalink: /kb/158/Q158944/
 
 ## Q158944: Text May Be Partially Displayed Using Cirrus Logic Driver
 
+{% raw %}
+
 	Article: Q158944
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -80,3 +82,5 @@ permalink: /kb/158/Q158944/
 	
 	=============================================================================
 	
+
+{% endraw %}

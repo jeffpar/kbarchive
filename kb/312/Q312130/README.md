@@ -6,6 +6,8 @@ permalink: /kb/312/Q312130/
 
 ## Q312130: Microsoft Windows XP Professional Administrator's Pocket Consult
 
+{% raw %}
+
 	Article: Q312130
 	Product(s): Microsoft Press
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/312/Q312130/
 	
 	=============================================================================
 	
+
+{% endraw %}

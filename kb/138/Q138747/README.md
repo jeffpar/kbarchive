@@ -6,6 +6,8 @@ permalink: /kb/138/Q138747/
 
 ## Q138747: Error Message When Trying to Play Pinball2.mid File
 
+{% raw %}
+
 	Article: Q138747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/138/Q138747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68383/
 
 ## Q68383: TZ and tzset Only Use Whole Hours: How to Work Around
 
+{% raw %}
+
 	Article: Q68383
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -29,3 +31,5 @@ permalink: /kb/068/Q68383/
 	environment variable (for example, TZ2) as an indicator so you can add
 	the thirty minutes to the times returned by, and passed to, functions
 	that return and use local times.
+
+{% endraw %}

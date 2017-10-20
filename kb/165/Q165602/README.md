@@ -6,6 +6,8 @@ permalink: /kb/165/Q165602/
 
 ## Q165602: WD97: RecentFile.Path Is Empty When Referencing An ODMA DMS
 
+{% raw %}
+
 	Article: Q165602
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -43,3 +45,5 @@ permalink: /kb/165/Q165602/
 	
 	=============================================================================
 	
+
+{% endraw %}

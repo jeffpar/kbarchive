@@ -6,6 +6,8 @@ permalink: /kb/124/Q124954/
 
 ## Q124954: MHS: Err Msg: Error Getting Memory. Not Enough RAM...
 
+{% raw %}
+
 	Article: Q124954
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0; :3.0
@@ -128,3 +130,5 @@ permalink: /kb/124/Q124954/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178022/
 
 ## Q178022: NetBIOS SEND WAIT Over TCP/IP Completes Without NetBIOS RECEIVE
 
+{% raw %}
+
 	Article: Q178022
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -79,3 +81,5 @@ permalink: /kb/178/Q178022/
 	
 	=============================================================================
 	
+
+{% endraw %}

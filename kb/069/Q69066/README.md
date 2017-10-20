@@ -6,6 +6,8 @@ permalink: /kb/069/Q69066/
 
 ## Q69066: &quot;Save Before Rebuild&quot; Does Not Work Properly
 
+{% raw %}
+
 	Article: Q69066
 	Product(s): See article
 	Version(s): 2.50 2.51
@@ -22,3 +24,5 @@ permalink: /kb/069/Q69066/
 	Microsoft has confirmed this to be a problem in QuickC versions
 	2.50 and 2.51. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

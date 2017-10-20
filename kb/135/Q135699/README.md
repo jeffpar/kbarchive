@@ -6,6 +6,8 @@ permalink: /kb/135/Q135699/
 
 ## Q135699: PRB: In Windows NT Visual FoxPro DIR Command Differs
 
+{% raw %}
+
 	Article: Q135699
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -109,3 +111,5 @@ permalink: /kb/135/Q135699/
 	
 	=============================================================================
 	
+
+{% endraw %}

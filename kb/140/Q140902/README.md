@@ -6,6 +6,8 @@ permalink: /kb/140/Q140902/
 
 ## Q140902: ICM Profile Settings for Supported Monitors
 
+{% raw %}
+
 	Article: Q140902
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -264,3 +266,5 @@ permalink: /kb/140/Q140902/
 	
 	=============================================================================
 	
+
+{% endraw %}

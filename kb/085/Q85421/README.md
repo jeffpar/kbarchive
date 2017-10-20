@@ -6,6 +6,8 @@ permalink: /kb/085/Q85421/
 
 ## Q85421: NETWORKS.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2
 
+{% raw %}
+
 	Article: Q85421
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -1273,3 +1275,5 @@ permalink: /kb/085/Q85421/
 	
 	=============================================================================
 	
+
+{% endraw %}

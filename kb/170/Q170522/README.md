@@ -6,6 +6,8 @@ permalink: /kb/170/Q170522/
 
 ## Q170522: Old Firmware on Tape Drives Can Cause Tape Device Errors
 
+{% raw %}
+
 	Article: Q170522
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -129,3 +131,5 @@ permalink: /kb/170/Q170522/
 	
 	=============================================================================
 	
+
+{% endraw %}

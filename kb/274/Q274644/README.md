@@ -6,6 +6,8 @@ permalink: /kb/274/Q274644/
 
 ## Q274644: Address book is unavailable to Jaws users
 
+{% raw %}
+
 	Article: Q274644
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -60,3 +62,5 @@ permalink: /kb/274/Q274644/
 	
 	=============================================================================
 	
+
+{% endraw %}

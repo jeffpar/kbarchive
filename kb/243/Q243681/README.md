@@ -6,6 +6,8 @@ permalink: /kb/243/Q243681/
 
 ## Q243681: Copy-Queue Causes &quot;Not Logged in&quot; Requests on NetWare Servers
 
+{% raw %}
+
 	Article: Q243681
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -91,3 +93,5 @@ permalink: /kb/243/Q243681/
 	
 	=============================================================================
 	
+
+{% endraw %}

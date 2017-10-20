@@ -6,6 +6,8 @@ permalink: /kb/146/Q146352/
 
 ## Q146352: XCLN: Invalid Temp Variable Causes Files to Appear on Desktop
 
+{% raw %}
+
 	Article: Q146352
 	Product(s): Microsoft Exchange
 	Version(s): 4.00
@@ -56,3 +58,5 @@ permalink: /kb/146/Q146352/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123076/
 
 ## Q123076: Creative Writer Err Msg: Integer Divide by Zero
 
+{% raw %}
+
 	Article: Q123076
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1
@@ -69,3 +71,5 @@ permalink: /kb/123/Q123076/
 	
 	=============================================================================
 	
+
+{% endraw %}

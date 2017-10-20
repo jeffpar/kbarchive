@@ -6,6 +6,8 @@ permalink: /kb/275/Q275167/
 
 ## Q275167: PRB: IIS 5.0: Anonymous Access Fails After Joining Win2K Domain
 
+{% raw %}
+
 	Article: Q275167
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -226,3 +228,5 @@ permalink: /kb/275/Q275167/
 	
 	=============================================================================
 	
+
+{% endraw %}

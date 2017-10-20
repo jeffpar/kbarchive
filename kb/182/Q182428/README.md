@@ -6,6 +6,8 @@ permalink: /kb/182/Q182428/
 
 ## Q182428: SMS: Netmon: GPF Occurs When Large String Entered in Name Field
 
+{% raw %}
+
 	Article: Q182428
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/182/Q182428/
 	
 	=============================================================================
 	
+
+{% endraw %}

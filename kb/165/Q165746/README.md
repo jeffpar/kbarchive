@@ -6,6 +6,8 @@ permalink: /kb/165/Q165746/
 
 ## Q165746: DOC: Incomplete Documentation on CListCtrl::SetColumnWidth
 
+{% raw %}
+
 	Article: Q165746
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/165/Q165746/
 	
 	=============================================================================
 	
+
+{% endraw %}

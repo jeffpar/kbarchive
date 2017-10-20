@@ -6,6 +6,8 @@ permalink: /kb/066/Q66231/
 
 ## Q66231: How to Insert Spaces Before a Block of Text in PWB
 
+{% raw %}
+
 	Article: Q66231
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -58,3 +60,5 @@ permalink: /kb/066/Q66231/
 	
 	=============================================================================
 	
+
+{% endraw %}

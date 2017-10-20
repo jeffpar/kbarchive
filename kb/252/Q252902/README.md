@@ -6,6 +6,8 @@ permalink: /kb/252/Q252902/
 
 ## Q252902: XADM: Alpha Store Crash After Applying Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q252902
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -100,3 +102,5 @@ permalink: /kb/252/Q252902/
 	
 	=============================================================================
 	
+
+{% endraw %}

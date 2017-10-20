@@ -6,6 +6,8 @@ permalink: /kb/096/Q96558/
 
 ## Q96558: MS-DOS Setup Installs 80386- and 80486- Specific Files
 
+{% raw %}
+
 	Article: Q96558
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/096/Q96558/
 	
 	=============================================================================
 	
+
+{% endraw %}

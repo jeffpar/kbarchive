@@ -6,6 +6,8 @@ permalink: /kb/163/Q163789/
 
 ## Q163789: XFOR: UUEncoded Non-TNEF Embedded Messages Translated
 
+{% raw %}
+
 	Article: Q163789
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -45,3 +47,5 @@ permalink: /kb/163/Q163789/
 	
 	=============================================================================
 	
+
+{% endraw %}

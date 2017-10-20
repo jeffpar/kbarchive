@@ -6,6 +6,8 @@ permalink: /kb/154/Q154322/
 
 ## Q154322: First Line Is Not Printed Using Generic/Text Only Printer Driver
 
+{% raw %}
+
 	Article: Q154322
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP4,4.0
@@ -66,3 +68,5 @@ permalink: /kb/154/Q154322/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84927/
 
 ## Q84927: Print TrueType As Graphics Check Box Is Grayed
 
+{% raw %}
+
 	Article: Q84927
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/084/Q84927/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150547/
 
 ## Q150547: Clients Cannot Connect to Server with SysKonnect FDDI Adapter
 
+{% raw %}
+
 	Article: Q150547
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -61,3 +63,5 @@ permalink: /kb/150/Q150547/
 	
 	=============================================================================
 	
+
+{% endraw %}

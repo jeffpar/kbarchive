@@ -6,6 +6,8 @@ permalink: /kb/219/Q219327/
 
 ## Q219327: Windows NT Err Msg: Corrupt and Unreadable File
 
+{% raw %}
+
 	Article: Q219327
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/219/Q219327/
 	
 	=============================================================================
 	
+
+{% endraw %}

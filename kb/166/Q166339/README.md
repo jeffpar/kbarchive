@@ -6,6 +6,8 @@ permalink: /kb/166/Q166339/
 
 ## Q166339: WD97: Opening a JPEG File in Photo Editor Causes an Error
 
+{% raw %}
+
 	Article: Q166339
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/166/Q166339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104355/
 
 ## Q104355: SMARTDrive Reports Incorrect Version
 
+{% raw %}
+
 	Article: Q104355
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -72,3 +74,5 @@ permalink: /kb/104/Q104355/
 	
 	=============================================================================
 	
+
+{% endraw %}

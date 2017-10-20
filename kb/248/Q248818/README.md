@@ -6,6 +6,8 @@ permalink: /kb/248/Q248818/
 
 ## Q248818: Fighter Ace II: Computer Hangs After You Click &quot;Fly Now&quot;
 
+{% raw %}
+
 	Article: Q248818
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/248/Q248818/
 	
 	=============================================================================
 	
+
+{% endraw %}

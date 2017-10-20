@@ -6,6 +6,8 @@ permalink: /kb/171/Q171996/
 
 ## Q171996: Winsock Function Calls Generate Non-Paged Pool Memory Leak
 
+{% raw %}
+
 	Article: Q171996
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -77,3 +79,5 @@ permalink: /kb/171/Q171996/
 	
 	=============================================================================
 	
+
+{% endraw %}

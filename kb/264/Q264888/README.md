@@ -6,6 +6,8 @@ permalink: /kb/264/Q264888/
 
 ## Q264888: WD97: &quot;A Program Is Trying to Access ...&quot; Sending Mail Merge
 
+{% raw %}
+
 	Article: Q264888
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/264/Q264888/
 	
 	=============================================================================
 	
+
+{% endraw %}

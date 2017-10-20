@@ -6,6 +6,8 @@ permalink: /kb/242/Q242129/
 
 ## Q242129: Event ID 12288 with Low Disk Space on Primary Domain Controller
 
+{% raw %}
+
 	Article: Q242129
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/242/Q242129/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125652/
 
 ## Q125652: Incorrect NIC ID Attribute Info Adding NetWare Server to Site
 
+{% raw %}
+
 	Article: Q125652
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -48,3 +50,5 @@ permalink: /kb/125/Q125652/
 	
 	=============================================================================
 	
+
+{% endraw %}

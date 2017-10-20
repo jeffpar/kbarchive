@@ -6,6 +6,8 @@ permalink: /kb/074/Q74997/
 
 ## Q74997: Pathworks 4.x Does Not Run with Windows 3.0 and MS-DOS
 
+{% raw %}
+
 	Article: Q74997
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a
@@ -70,3 +72,5 @@ permalink: /kb/074/Q74997/
 	
 	=============================================================================
 	
+
+{% endraw %}

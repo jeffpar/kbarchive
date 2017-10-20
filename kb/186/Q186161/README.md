@@ -6,6 +6,8 @@ permalink: /kb/186/Q186161/
 
 ## Q186161: Zone: How to Remove and Reinstall the Zone Software
 
+{% raw %}
+
 	Article: Q186161
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/186/Q186161/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185969/
 
 ## Q185969: Domain Controller on Slow Link May Be Used for Domain Validation
 
+{% raw %}
+
 	Article: Q185969
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/185/Q185969/
 	
 	=============================================================================
 	
+
+{% endraw %}

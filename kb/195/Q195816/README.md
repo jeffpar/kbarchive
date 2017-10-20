@@ -6,6 +6,8 @@ permalink: /kb/195/Q195816/
 
 ## Q195816: RandomSponsor Setting Does Not Work on SNA Server Client for NT
 
+{% raw %}
+
 	Article: Q195816
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -68,3 +70,5 @@ permalink: /kb/195/Q195816/
 	
 	=============================================================================
 	
+
+{% endraw %}

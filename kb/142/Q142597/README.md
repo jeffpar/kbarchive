@@ -6,6 +6,8 @@ permalink: /kb/142/Q142597/
 
 ## Q142597: TCP/IP Required for LAN or Third-Party Internet Connection
 
+{% raw %}
+
 	Article: Q142597
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -49,3 +51,5 @@ permalink: /kb/142/Q142597/
 	
 	=============================================================================
 	
+
+{% endraw %}

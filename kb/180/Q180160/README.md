@@ -6,6 +6,8 @@ permalink: /kb/180/Q180160/
 
 ## Q180160: XCLN: Inbox, Properties Does Not Work After WinNT 4.0 Upgrade
 
+{% raw %}
+
 	Article: Q180160
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/180/Q180160/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58819/
 
 ## Q58819: Microsoft Editor Cannot Use QuickBASIC Extended Help Files
 
+{% raw %}
+
 	Article: Q58819
 	Product(s): See article
 	Version(s): 7.00
@@ -31,3 +33,5 @@ permalink: /kb/058/Q58819/
 	
 	The help files of QBX.EXE and PWB.EXE can be created and modified
 	using HELPMAKE.EXE, the Microsoft Help File Creation Utility.
+
+{% endraw %}

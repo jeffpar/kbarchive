@@ -6,6 +6,8 @@ permalink: /kb/177/Q177981/
 
 ## Q177981: PCI Bridge or PCI Card in Device Manager
 
+{% raw %}
+
 	Article: Q177981
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/177/Q177981/
 	
 	=============================================================================
 	
+
+{% endraw %}

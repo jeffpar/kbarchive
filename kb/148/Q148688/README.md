@@ -6,6 +6,8 @@ permalink: /kb/148/Q148688/
 
 ## Q148688: FIX: C2243 on Friend Overload o
 
+{% raw %}
+
 	Article: Q148688
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -114,3 +116,5 @@ permalink: /kb/148/Q148688/
 	
 	=============================================================================
 	
+
+{% endraw %}

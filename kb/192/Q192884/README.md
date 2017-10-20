@@ -6,6 +6,8 @@ permalink: /kb/192/Q192884/
 
 ## Q192884: INFO: SpeechKit by Chant Inc. Support Information
 
+{% raw %}
+
 	Article: Q192884
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0; winnt:6.0
@@ -72,3 +74,5 @@ permalink: /kb/192/Q192884/
 	
 	=============================================================================
 	
+
+{% endraw %}

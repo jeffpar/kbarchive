@@ -6,6 +6,8 @@ permalink: /kb/064/Q64936/
 
 ## Q64936: Update of WordPerfect 5.1 for Expanded Memory Problems
 
+{% raw %}
+
 	Article: Q64936
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/064/Q64936/
 	
 	=============================================================================
 	
+
+{% endraw %}

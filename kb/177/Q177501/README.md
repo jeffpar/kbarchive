@@ -6,6 +6,8 @@ permalink: /kb/177/Q177501/
 
 ## Q177501: Code Page Specified in Remote Environment Was Not Used
 
+{% raw %}
+
 	Article: Q177501
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/177/Q177501/
 	
 	=============================================================================
 	
+
+{% endraw %}

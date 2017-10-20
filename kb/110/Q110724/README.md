@@ -6,6 +6,8 @@ permalink: /kb/110/Q110724/
 
 ## Q110724: DOCERR: Corrections to Viewer 2.0 Manuals
 
+{% raw %}
+
 	Article: Q110724
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -95,3 +97,5 @@ permalink: /kb/110/Q110724/
 	
 	=============================================================================
 	
+
+{% endraw %}

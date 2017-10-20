@@ -6,6 +6,8 @@ permalink: /kb/299/Q299758/
 
 ## Q299758: Train Simulator: Can't Add Coal/Water to Goelsdorf 380 Tender
 
+{% raw %}
+
 	Article: Q299758
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/299/Q299758/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43201/
 
 ## Q43201: RENaming a FAST LOAD/SAVE BASIC Program Makes It Inaccessible
 
+{% raw %}
+
 	Article: Q43201
 	Product(s): See article
 	Version(s): 4.50
@@ -33,3 +35,5 @@ permalink: /kb/043/Q43201/
 	and OPEN the file. If you then want to change the name, select SAVE AS
 	under the FILE menu and change the name and also save it as ASCII
 	(Text), so that it can be read by other software.
+
+{% endraw %}

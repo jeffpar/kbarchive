@@ -6,6 +6,8 @@ permalink: /kb/145/Q145727/
 
 ## Q145727: HOWTO: Call the Unicode Version of an API Function with VB
 
+{% raw %}
+
 	Article: Q145727
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,6.0
@@ -152,3 +154,5 @@ permalink: /kb/145/Q145727/
 	
 	=============================================================================
 	
+
+{% endraw %}

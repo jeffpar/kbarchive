@@ -6,6 +6,8 @@ permalink: /kb/061/Q61557/
 
 ## Q61557: P70 Display Creates Problems Under CodeView and PWB
 
+{% raw %}
+
 	Article: Q61557
 	Product(s): See article
 	Version(s): 3.00
@@ -50,3 +52,5 @@ permalink: /kb/061/Q61557/
 	3. Use an external monitor with the built-in VGA port.
 	
 	4. Invoke CodeView from PWB, which makes the change automatically.
+
+{% endraw %}

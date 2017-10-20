@@ -6,6 +6,8 @@ permalink: /kb/231/Q231306/
 
 ## Q231306: DNS Records with Same Name as Subdomain Are Moved or Missing
 
+{% raw %}
+
 	Article: Q231306
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/231/Q231306/
 	
 	=============================================================================
 	
+
+{% endraw %}

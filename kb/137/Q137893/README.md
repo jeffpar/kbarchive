@@ -6,6 +6,8 @@ permalink: /kb/137/Q137893/
 
 ## Q137893: SMS: No Validity Checking for Date/Time Field in Query
 
+{% raw %}
+
 	Article: Q137893
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137893/
 	
 	=============================================================================
 	
+
+{% endraw %}

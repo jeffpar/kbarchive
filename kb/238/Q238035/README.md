@@ -6,6 +6,8 @@ permalink: /kb/238/Q238035/
 
 ## Q238035: Encarta 2000: Only the First Line of a Quick Fact Is Printed
 
+{% raw %}
+
 	Article: Q238035
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/238/Q238035/
 	
 	=============================================================================
 	
+
+{% endraw %}

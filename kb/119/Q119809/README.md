@@ -6,6 +6,8 @@ permalink: /kb/119/Q119809/
 
 ## Q119809: Only One Half of Mercury Has Bitmap Surface
 
+{% raw %}
+
 	Article: Q119809
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/119/Q119809/
 	
 	=============================================================================
 	
+
+{% endraw %}

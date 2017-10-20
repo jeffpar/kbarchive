@@ -6,6 +6,8 @@ permalink: /kb/161/Q161316/
 
 ## Q161316: Ejecting Network PC Card from CardBus Socket Reboots Computer
 
+{% raw %}
+
 	Article: Q161316
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -48,3 +50,5 @@ permalink: /kb/161/Q161316/
 	
 	=============================================================================
 	
+
+{% endraw %}

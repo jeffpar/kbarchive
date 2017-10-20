@@ -6,6 +6,8 @@ permalink: /kb/156/Q156787/
 
 ## Q156787: MSB Ocean: Typographic Error in Tide Pool
 
+{% raw %}
+
 	Article: Q156787
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/156/Q156787/
 	
 	=============================================================================
 	
+
+{% endraw %}

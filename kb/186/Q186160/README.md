@@ -6,6 +6,8 @@ permalink: /kb/186/Q186160/
 
 ## Q186160: WD97: Invalid Page Fault Using Replace Dialog
 
+{% raw %}
+
 	Article: Q186160
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/186/Q186160/
 	
 	=============================================================================
 	
+
+{% endraw %}

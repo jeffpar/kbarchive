@@ -6,6 +6,8 @@ permalink: /kb/172/Q172965/
 
 ## Q172965: Contents of the Nt4sp3_i.exe File
 
+{% raw %}
+
 	Article: Q172965
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS NT:4.0
@@ -699,3 +701,5 @@ permalink: /kb/172/Q172965/
 	
 	=============================================================================
 	
+
+{% endraw %}

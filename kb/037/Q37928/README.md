@@ -6,6 +6,8 @@ permalink: /kb/037/Q37928/
 
 ## Q37928: Mac DOS: Hardware Interrupts Used by Common Devices
 
+{% raw %}
+
 	Article: Q37928
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0,3.1
@@ -94,3 +96,5 @@ permalink: /kb/037/Q37928/
 	
 	=============================================================================
 	
+
+{% endraw %}

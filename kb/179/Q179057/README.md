@@ -6,6 +6,8 @@ permalink: /kb/179/Q179057/
 
 ## Q179057: XFOR: Exchange-Notes Dirsync Fails with Truncated Person Doc
 
+{% raw %}
+
 	Article: Q179057
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -66,3 +68,5 @@ permalink: /kb/179/Q179057/
 	
 	=============================================================================
 	
+
+{% endraw %}

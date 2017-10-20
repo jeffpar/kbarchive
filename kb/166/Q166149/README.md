@@ -6,6 +6,8 @@ permalink: /kb/166/Q166149/
 
 ## Q166149: PRB: RAS Reserves DHCP Addresses for Dial-Out Only Clients
 
+{% raw %}
+
 	Article: Q166149
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -138,3 +140,5 @@ permalink: /kb/166/Q166149/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185496/
 
 ## Q185496: Changing IP/Port on SSL Web May Require Key Manager Change
 
+{% raw %}
+
 	Article: Q185496
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/185/Q185496/
 	
 	=============================================================================
 	
+
+{% endraw %}

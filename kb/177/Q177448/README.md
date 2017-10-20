@@ -6,6 +6,8 @@ permalink: /kb/177/Q177448/
 
 ## Q177448: Bookshelf Err Msg: Setup Caused an Invalid Page Fault...
 
+{% raw %}
+
 	Article: Q177448
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:98
@@ -98,3 +100,5 @@ permalink: /kb/177/Q177448/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259158/
 
 ## Q259158: XADM: How to Manually Remove Exchange Server 5.5 Completely
 
+{% raw %}
+
 	Article: Q259158
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -131,3 +133,5 @@ permalink: /kb/259/Q259158/
 	
 	=============================================================================
 	
+
+{% endraw %}

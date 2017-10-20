@@ -6,6 +6,8 @@ permalink: /kb/108/Q108919/
 
 ## Q108919: SWAPPER.DAT Grows when NODE Service Runs
 
+{% raw %}
+
 	Article: Q108919
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/108/Q108919/
 	
 	=============================================================================
 	
+
+{% endraw %}

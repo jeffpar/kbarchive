@@ -6,6 +6,8 @@ permalink: /kb/261/Q261435/
 
 ## Q261435: WD97: Compile Error Running Pleading Wizard
 
+{% raw %}
+
 	Article: Q261435
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/261/Q261435/
 	
 	=============================================================================
 	
+
+{% endraw %}

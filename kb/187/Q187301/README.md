@@ -6,6 +6,8 @@ permalink: /kb/187/Q187301/
 
 ## Q187301: SMS: New Msaudit.rul Causes Audit32 to Stop Responding at 80%
 
+{% raw %}
+
 	Article: Q187301
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -65,3 +67,5 @@ permalink: /kb/187/Q187301/
 	
 	=============================================================================
 	
+
+{% endraw %}

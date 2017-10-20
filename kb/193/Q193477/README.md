@@ -6,6 +6,8 @@ permalink: /kb/193/Q193477/
 
 ## Q193477: FIX: Developer Studio Exits When Creating a Derived Class
 
+{% raw %}
+
 	Article: Q193477
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -88,3 +90,5 @@ permalink: /kb/193/Q193477/
 	
 	=============================================================================
 	
+
+{% endraw %}

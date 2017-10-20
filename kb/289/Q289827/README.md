@@ -6,6 +6,8 @@ permalink: /kb/289/Q289827/
 
 ## Q289827: XFOR: Permission Required to Migrate Lotus Notes Mailboxes
 
+{% raw %}
+
 	Article: Q289827
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -62,3 +64,5 @@ permalink: /kb/289/Q289827/
 	
 	=============================================================================
 	
+
+{% endraw %}

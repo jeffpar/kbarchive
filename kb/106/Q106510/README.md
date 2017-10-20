@@ -6,6 +6,8 @@ permalink: /kb/106/Q106510/
 
 ## Q106510: PC Adm: Err Msg: Postoffice Address List Already Has an Alias...
 
+{% raw %}
+
 	Article: Q106510
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2
@@ -161,3 +163,5 @@ permalink: /kb/106/Q106510/
 	
 	=============================================================================
 	
+
+{% endraw %}

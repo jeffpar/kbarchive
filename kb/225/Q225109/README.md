@@ -6,6 +6,8 @@ permalink: /kb/225/Q225109/
 
 ## Q225109: Rasmon Icon Is Not Displayed on the Taskbar
 
+{% raw %}
+
 	Article: Q225109
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -56,3 +58,5 @@ permalink: /kb/225/Q225109/
 	
 	=============================================================================
 	
+
+{% endraw %}

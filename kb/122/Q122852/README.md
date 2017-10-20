@@ -6,6 +6,8 @@ permalink: /kb/122/Q122852/
 
 ## Q122852: PC Gen: Getting Statistics on Intra-postoffice Mail
 
+{% raw %}
+
 	Article: Q122852
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -125,3 +127,5 @@ permalink: /kb/122/Q122852/
 	
 	=============================================================================
 	
+
+{% endraw %}

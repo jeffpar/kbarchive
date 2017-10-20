@@ -6,6 +6,8 @@ permalink: /kb/147/Q147686/
 
 ## Q147686: HOWTO: Get Current Drive's Free Disk Space in VB 4.0
 
+{% raw %}
+
 	Article: Q147686
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -120,3 +122,5 @@ permalink: /kb/147/Q147686/
 	
 	=============================================================================
 	
+
+{% endraw %}

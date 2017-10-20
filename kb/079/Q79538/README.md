@@ -6,6 +6,8 @@ permalink: /kb/079/Q79538/
 
 ## Q79538: 360K Floppies Used in 1.2 MB Drive May Be Unreadable
 
+{% raw %}
+
 	Article: Q79538
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -90,3 +92,5 @@ permalink: /kb/079/Q79538/
 	
 	=============================================================================
 	
+
+{% endraw %}

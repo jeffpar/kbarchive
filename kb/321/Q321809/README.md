@@ -6,6 +6,8 @@ permalink: /kb/321/Q321809/
 
 ## Q321809: FIX: DB2OLEDB Insert Fails If DBCS Second Byte Is EBCDIC 0x7D
 
+{% raw %}
+
 	Article: Q321809
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/321/Q321809/
 	
 	=============================================================================
 	
+
+{% endraw %}

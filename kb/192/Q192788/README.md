@@ -6,6 +6,8 @@ permalink: /kb/192/Q192788/
 
 ## Q192788: SMS: Wuser32 Leaks Memory After UDP Port 1762 Attack
 
+{% raw %}
+
 	Article: Q192788
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -108,3 +110,5 @@ permalink: /kb/192/Q192788/
 	
 	=============================================================================
 	
+
+{% endraw %}

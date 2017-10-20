@@ -6,6 +6,8 @@ permalink: /kb/090/Q90126/
 
 ## Q90126: Mail Demonstration Does Not Run Under Norton Desktop
 
+{% raw %}
+
 	Article: Q90126
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/090/Q90126/
 	
 	=============================================================================
 	
+
+{% endraw %}

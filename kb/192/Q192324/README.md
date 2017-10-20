@@ -6,6 +6,8 @@ permalink: /kb/192/Q192324/
 
 ## Q192324: XADM: Dumpster Size Performance Monitor Value Wraps Prematurely
 
+{% raw %}
+
 	Article: Q192324
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -63,3 +65,5 @@ permalink: /kb/192/Q192324/
 	
 	=============================================================================
 	
+
+{% endraw %}

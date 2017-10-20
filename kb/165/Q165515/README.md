@@ -6,6 +6,8 @@ permalink: /kb/165/Q165515/
 
 ## Q165515: WD97: Run-Time Error '4605': Command Not Available
 
+{% raw %}
+
 	Article: Q165515
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -113,3 +115,5 @@ permalink: /kb/165/Q165515/
 	
 	=============================================================================
 	
+
+{% endraw %}

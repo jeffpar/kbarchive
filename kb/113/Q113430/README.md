@@ -6,6 +6,8 @@ permalink: /kb/113/Q113430/
 
 ## Q113430: Flight Simulator: Slow Video Frame Rate
 
+{% raw %}
+
 	Article: Q113430
 	Product(s): Microsoft Home Games
 	Version(s): 5.0
@@ -122,3 +124,5 @@ permalink: /kb/113/Q113430/
 	
 	=============================================================================
 	
+
+{% endraw %}

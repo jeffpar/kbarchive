@@ -6,6 +6,8 @@ permalink: /kb/274/Q274946/
 
 ## Q274946: Combat Flight Simulator 2: Virtual Cockpit View Is Too Dark
 
+{% raw %}
+
 	Article: Q274946
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/274/Q274946/
 	
 	=============================================================================
 	
+
+{% endraw %}

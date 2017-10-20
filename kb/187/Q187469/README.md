@@ -6,6 +6,8 @@ permalink: /kb/187/Q187469/
 
 ## Q187469: Win16 RDP Client Only Runs One Instance
 
+{% raw %}
+
 	Article: Q187469
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/187/Q187469/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166049/
 
 ## Q166049: WV: Relative Links Don't Work in Word Viewer
 
+{% raw %}
+
 	Article: Q166049
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -74,3 +76,5 @@ permalink: /kb/166/Q166049/
 	
 	=============================================================================
 	
+
+{% endraw %}

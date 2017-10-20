@@ -6,6 +6,8 @@ permalink: /kb/093/Q93633/
 
 ## Q93633: HOWTO: How to Create or Modify a Database in an Application
 
+{% raw %}
+
 	Article: Q93633
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:; WINDOWS:3.0
@@ -96,3 +98,5 @@ permalink: /kb/093/Q93633/
 	
 	=============================================================================
 	
+
+{% endraw %}

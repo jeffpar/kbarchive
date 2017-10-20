@@ -6,6 +6,8 @@ permalink: /kb/218/Q218460/
 
 ## Q218460: SMS: Members of Global User Groups Do Not Inherit Permissions
 
+{% raw %}
+
 	Article: Q218460
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -117,3 +119,5 @@ permalink: /kb/218/Q218460/
 	
 	=============================================================================
 	
+
+{% endraw %}

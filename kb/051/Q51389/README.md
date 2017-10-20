@@ -6,6 +6,8 @@ permalink: /kb/051/Q51389/
 
 ## Q51389: Mac Form: Err Msg: Can't Understand Arguments to Command Put
 
+{% raw %}
+
 	Article: Q51389
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -42,3 +44,5 @@ permalink: /kb/051/Q51389/
 	
 	=============================================================================
 	
+
+{% endraw %}

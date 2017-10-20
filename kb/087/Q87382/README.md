@@ -6,6 +6,8 @@ permalink: /kb/087/Q87382/
 
 ## Q87382: PC DB: No Limit to the Size of an Attachment File
 
+{% raw %}
+
 	Article: Q87382
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -42,3 +44,5 @@ permalink: /kb/087/Q87382/
 	
 	=============================================================================
 	
+
+{% endraw %}

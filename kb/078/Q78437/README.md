@@ -6,6 +6,8 @@ permalink: /kb/078/Q78437/
 
 ## Q78437: Internal Stack Overflow with WordPerfect 5.1 and MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q78437
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -79,3 +81,5 @@ permalink: /kb/078/Q78437/
 	
 	=============================================================================
 	
+
+{% endraw %}

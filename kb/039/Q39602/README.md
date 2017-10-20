@@ -6,6 +6,8 @@ permalink: /kb/039/Q39602/
 
 ## Q39602: Wrong Syntax for fopen Mode Argument Gives NULL Return Value
 
+{% raw %}
+
 	Article: Q39602
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -47,3 +49,5 @@ permalink: /kb/039/Q39602/
 	  else
 	    printf("fopen succeeded\n");
 	}
+
+{% endraw %}

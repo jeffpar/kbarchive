@@ -6,6 +6,8 @@ permalink: /kb/242/Q242033/
 
 ## Q242033: Access Violation in Services.exe Using Samba 2.0.5
 
+{% raw %}
+
 	Article: Q242033
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/242/Q242033/
 	
 	=============================================================================
 	
+
+{% endraw %}

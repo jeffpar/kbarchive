@@ -6,6 +6,8 @@ permalink: /kb/073/Q73744/
 
 ## Q73744: Tandy DOS 5.0 Available from Radio Shack
 
+{% raw %}
+
 	Article: Q73744
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -49,3 +51,5 @@ permalink: /kb/073/Q73744/
 	
 	=============================================================================
 	
+
+{% endraw %}

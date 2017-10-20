@@ -6,6 +6,8 @@ permalink: /kb/269/Q269200/
 
 ## Q269200: An Error Message Is Displayed After Renaming User
 
+{% raw %}
+
 	Article: Q269200
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2
@@ -52,3 +54,5 @@ permalink: /kb/269/Q269200/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272964/
 
 ## Q272964: SMS: Network Discovery Seems to Be Stuck or Looping
 
+{% raw %}
+
 	Article: Q272964
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP2
@@ -72,3 +74,5 @@ permalink: /kb/272/Q272964/
 	
 	=============================================================================
 	
+
+{% endraw %}

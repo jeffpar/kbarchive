@@ -6,6 +6,8 @@ permalink: /kb/100/Q100408/
 
 ## Q100408: DOC: Incorrect Documentation for LineDDA Function
 
+{% raw %}
+
 	Article: Q100408
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/100/Q100408/
 	
 	=============================================================================
 	
+
+{% endraw %}

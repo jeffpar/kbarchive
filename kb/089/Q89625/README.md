@@ -6,6 +6,8 @@ permalink: /kb/089/Q89625/
 
 ## Q89625: Justification for Some TrueType Fonts Doesn't Display
 
+{% raw %}
+
 	Article: Q89625
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/089/Q89625/
 	
 	=============================================================================
 	
+
+{% endraw %}

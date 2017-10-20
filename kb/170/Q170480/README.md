@@ -6,6 +6,8 @@ permalink: /kb/170/Q170480/
 
 ## Q170480: XWEB: Delete Check Box Not Lined Up with Field Header Using OWA
 
+{% raw %}
+
 	Article: Q170480
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -45,3 +47,5 @@ permalink: /kb/170/Q170480/
 	
 	=============================================================================
 	
+
+{% endraw %}

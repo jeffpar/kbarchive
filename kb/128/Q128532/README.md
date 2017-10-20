@@ -6,6 +6,8 @@ permalink: /kb/128/Q128532/
 
 ## Q128532: FPNW: The Bindery Library Could Not Access the PDC for Write
 
+{% raw %}
+
 	Article: Q128532
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -97,3 +99,5 @@ permalink: /kb/128/Q128532/
 	
 	=============================================================================
 	
+
+{% endraw %}

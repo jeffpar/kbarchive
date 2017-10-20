@@ -6,6 +6,8 @@ permalink: /kb/172/Q172742/
 
 ## Q172742: WD97: Batch Converter Not Restored on AutoUpdate Uninstall
 
+{% raw %}
+
 	Article: Q172742
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -109,3 +111,5 @@ permalink: /kb/172/Q172742/
 	
 	=============================================================================
 	
+
+{% endraw %}

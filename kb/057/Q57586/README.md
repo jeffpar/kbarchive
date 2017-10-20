@@ -6,6 +6,8 @@ permalink: /kb/057/Q57586/
 
 ## Q57586: Float Data Type May Cause Problems in TSR Applications
 
+{% raw %}
+
 	Article: Q57586
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -75,3 +77,5 @@ permalink: /kb/057/Q57586/
 	
 	The problem disappears if you change the variable "a" from type
 	"float" to type "double".
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182778/
 
 ## Q182778: TN3270 Service Logs Event 702 Messages
 
+{% raw %}
+
 	Article: Q182778
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -149,3 +151,5 @@ permalink: /kb/182/Q182778/
 	
 	=============================================================================
 	
+
+{% endraw %}

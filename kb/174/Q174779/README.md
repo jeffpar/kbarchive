@@ -6,6 +6,8 @@ permalink: /kb/174/Q174779/
 
 ## Q174779: Require Secure SSL Channel Not Available
 
+{% raw %}
+
 	Article: Q174779
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0,3.0
@@ -88,3 +90,5 @@ permalink: /kb/174/Q174779/
 	
 	=============================================================================
 	
+
+{% endraw %}

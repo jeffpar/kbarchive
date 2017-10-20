@@ -6,6 +6,8 @@ permalink: /kb/074/Q74822/
 
 ## Q74822: Sperry AT Doesn't Format High-Density Disks
 
+{% raw %}
+
 	Article: Q74822
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -63,3 +65,5 @@ permalink: /kb/074/Q74822/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82494/
 
 ## Q82494: Colored Text Not Printing Grayscale on HP PCL Printers
 
+{% raw %}
+
 	Article: Q82494
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/082/Q82494/
 	
 	=============================================================================
 	
+
+{% endraw %}

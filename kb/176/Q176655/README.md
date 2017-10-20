@@ -6,6 +6,8 @@ permalink: /kb/176/Q176655/
 
 ## Q176655: HOWTO: Convert a Word Table to a FoxPro Table
 
+{% raw %}
+
 	Article: Q176655
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -172,3 +174,5 @@ permalink: /kb/176/Q176655/
 	
 	=============================================================================
 	
+
+{% endraw %}

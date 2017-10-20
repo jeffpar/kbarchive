@@ -6,6 +6,8 @@ permalink: /kb/063/Q63961/
 
 ## Q63961: Exaggerated Mouse Tracking With Logitech 9 on Toshiba
 
+{% raw %}
+
 	Article: Q63961
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/063/Q63961/
 	
 	=============================================================================
 	
+
+{% endraw %}

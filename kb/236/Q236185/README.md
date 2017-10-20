@@ -6,6 +6,8 @@ permalink: /kb/236/Q236185/
 
 ## Q236185: Terminal Server User Profiles and Home Folder Paths Are Ignored
 
+{% raw %}
+
 	Article: Q236185
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -117,3 +119,5 @@ permalink: /kb/236/Q236185/
 	
 	=============================================================================
 	
+
+{% endraw %}

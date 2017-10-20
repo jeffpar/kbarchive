@@ -6,6 +6,8 @@ permalink: /kb/200/Q200534/
 
 ## Q200534: Pointing Device Affects Encarta When Running in the Background
 
+{% raw %}
+
 	Article: Q200534
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -46,3 +48,5 @@ permalink: /kb/200/Q200534/
 	
 	=============================================================================
 	
+
+{% endraw %}

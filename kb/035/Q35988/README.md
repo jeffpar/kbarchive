@@ -6,6 +6,8 @@ permalink: /kb/035/Q35988/
 
 ## Q35988: Source Not Available for MS Binary to IEEE Conversion
 
+{% raw %}
+
 	Article: Q35988
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -23,3 +25,5 @@ permalink: /kb/035/Q35988/
 	
 	These functions are incorrectly listed in a flier called "Microsoft C
 	Run-Time Library Source Runtime" as included in the product.
+
+{% endraw %}

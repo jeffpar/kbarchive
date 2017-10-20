@@ -6,6 +6,8 @@ permalink: /kb/101/Q101884/
 
 ## Q101884: How to Detect a DoubleSpace Drive from a Batch File
 
+{% raw %}
+
 	Article: Q101884
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -192,3 +194,5 @@ permalink: /kb/101/Q101884/
 	
 	=============================================================================
 	
+
+{% endraw %}

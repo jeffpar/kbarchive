@@ -6,6 +6,8 @@ permalink: /kb/085/Q85956/
 
 ## Q85956: DOC: Visual Editors Do Not Use INCLUDE Environment Variable
 
+{% raw %}
+
 	Article: Q85956
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/085/Q85956/
 	
 	=============================================================================
 	
+
+{% endraw %}

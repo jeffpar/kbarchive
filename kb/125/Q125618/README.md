@@ -6,6 +6,8 @@ permalink: /kb/125/Q125618/
 
 ## Q125618: Problem with Display Warning when Using Non-US Language
 
+{% raw %}
+
 	Article: Q125618
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/125/Q125618/
 	
 	=============================================================================
 	
+
+{% endraw %}

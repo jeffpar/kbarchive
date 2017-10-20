@@ -6,6 +6,8 @@ permalink: /kb/112/Q112623/
 
 ## Q112623: Intel EtherExpress 16 MCA Adapter Requires Updated Files
 
+{% raw %}
+
 	Article: Q112623
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -63,3 +65,5 @@ permalink: /kb/112/Q112623/
 	
 	=============================================================================
 	
+
+{% endraw %}

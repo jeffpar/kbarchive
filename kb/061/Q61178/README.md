@@ -6,6 +6,8 @@ permalink: /kb/061/Q61178/
 
 ## Q61178: Instruction: Straight and Level -- Gear Should Be Up
 
+{% raw %}
+
 	Article: Q61178
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/061/Q61178/
 	
 	=============================================================================
 	
+
+{% endraw %}

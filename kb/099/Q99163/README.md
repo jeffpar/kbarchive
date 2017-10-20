@@ -6,6 +6,8 @@ permalink: /kb/099/Q99163/
 
 ## Q99163: Mac Bkup: Retrospect Remote Backup May Corrupt Local Data File
 
+{% raw %}
+
 	Article: Q99163
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1,3.1a
@@ -70,3 +72,5 @@ permalink: /kb/099/Q99163/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214982/
 
 ## Q214982: SMS: Unable to View Software Metering Data by the Month
 
+{% raw %}
+
 	Article: Q214982
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/214/Q214982/
 	
 	=============================================================================
 	
+
+{% endraw %}

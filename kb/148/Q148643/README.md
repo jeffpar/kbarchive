@@ -6,6 +6,8 @@ permalink: /kb/148/Q148643/
 
 ## Q148643: PRB: Error: Too Many Files Open
 
+{% raw %}
+
 	Article: Q148643
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -86,3 +88,5 @@ permalink: /kb/148/Q148643/
 	
 	=============================================================================
 	
+
+{% endraw %}

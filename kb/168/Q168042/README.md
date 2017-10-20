@@ -6,6 +6,8 @@ permalink: /kb/168/Q168042/
 
 ## Q168042: PRB: Distributed Setup Requires Admin Privileges on Windows NT
 
+{% raw %}
+
 	Article: Q168042
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -96,3 +98,5 @@ permalink: /kb/168/Q168042/
 	
 	=============================================================================
 	
+
+{% endraw %}

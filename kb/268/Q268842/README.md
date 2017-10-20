@@ -6,6 +6,8 @@ permalink: /kb/268/Q268842/
 
 ## Q268842: AoE II: Game Hangs After You Disconnect from the Internet
 
+{% raw %}
+
 	Article: Q268842
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/268/Q268842/
 	
 	=============================================================================
 	
+
+{% endraw %}

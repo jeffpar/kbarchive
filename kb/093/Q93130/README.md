@@ -6,6 +6,8 @@ permalink: /kb/093/Q93130/
 
 ## Q93130: Differentiating Between the Add-On Getting Started Manuals
 
+{% raw %}
+
 	Article: Q93130
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/093/Q93130/
 	
 	=============================================================================
 	
+
+{% endraw %}

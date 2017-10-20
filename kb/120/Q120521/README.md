@@ -6,6 +6,8 @@ permalink: /kb/120/Q120521/
 
 ## Q120521: Setup Appears to Hang After You Remove Windows Components
 
+{% raw %}
+
 	Article: Q120521
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -51,3 +53,5 @@ permalink: /kb/120/Q120521/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130180/
 
 ## Q130180: Safe Mode Reports 4K Less Conventional Memory
 
+{% raw %}
+
 	Article: Q130180
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/130/Q130180/
 	
 	=============================================================================
 	
+
+{% endraw %}

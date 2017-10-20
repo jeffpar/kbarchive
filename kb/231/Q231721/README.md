@@ -6,6 +6,8 @@ permalink: /kb/231/Q231721/
 
 ## Q231721: HOWTO: Obtain Files Copied from Windows Explorer
 
+{% raw %}
+
 	Article: Q231721
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -132,3 +134,5 @@ permalink: /kb/231/Q231721/
 	
 	=============================================================================
 	
+
+{% endraw %}

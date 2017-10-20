@@ -6,6 +6,8 @@ permalink: /kb/126/Q126275/
 
 ## Q126275: Dinosaurs Hangs During Setup with ATI Mach32 Driver
 
+{% raw %}
+
 	Article: Q126275
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -142,3 +144,5 @@ permalink: /kb/126/Q126275/
 	
 	=============================================================================
 	
+
+{% endraw %}

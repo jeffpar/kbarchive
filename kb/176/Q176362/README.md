@@ -6,6 +6,8 @@ permalink: /kb/176/Q176362/
 
 ## Q176362: Bookshelf: Cannot Play Sound Clips or National Anthems
 
+{% raw %}
+
 	Article: Q176362
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -103,3 +105,5 @@ permalink: /kb/176/Q176362/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170913/
 
 ## Q170913: WD97: GPF in Module Unidrv.dll Printing to Fax Drivers
 
+{% raw %}
+
 	Article: Q170913
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/170/Q170913/
 	
 	=============================================================================
 	
+
+{% endraw %}

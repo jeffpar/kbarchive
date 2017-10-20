@@ -6,6 +6,8 @@ permalink: /kb/137/Q137154/
 
 ## Q137154: FIX: ClassWizard Generates Bad Code for Tree View Messages
 
+{% raw %}
+
 	Article: Q137154
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1
@@ -74,3 +76,5 @@ permalink: /kb/137/Q137154/
 	
 	=============================================================================
 	
+
+{% endraw %}

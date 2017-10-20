@@ -6,6 +6,8 @@ permalink: /kb/146/Q146071/
 
 ## Q146071: Asterisk for Private Appt. Shows in Monthly and Not Daily View
 
+{% raw %}
+
 	Article: Q146071
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -48,3 +50,5 @@ permalink: /kb/146/Q146071/
 	
 	=============================================================================
 	
+
+{% endraw %}

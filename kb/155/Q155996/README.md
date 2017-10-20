@@ -6,6 +6,8 @@ permalink: /kb/155/Q155996/
 
 ## Q155996: Deadly Tide: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q155996
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155996/
 	
 	=============================================================================
 	
+
+{% endraw %}

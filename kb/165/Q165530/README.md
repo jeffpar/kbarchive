@@ -6,6 +6,8 @@ permalink: /kb/165/Q165530/
 
 ## Q165530: WD97: ODMA TeamLinks: Cannot Open Reserved File
 
+{% raw %}
+
 	Article: Q165530
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -58,3 +60,5 @@ permalink: /kb/165/Q165530/
 	
 	=============================================================================
 	
+
+{% endraw %}

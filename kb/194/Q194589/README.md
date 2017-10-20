@@ -6,6 +6,8 @@ permalink: /kb/194/Q194589/
 
 ## Q194589: XCON: Event ID 57 from the Exchange Message Transfer Agent
 
+{% raw %}
+
 	Article: Q194589
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -104,3 +106,5 @@ permalink: /kb/194/Q194589/
 	
 	=============================================================================
 	
+
+{% endraw %}

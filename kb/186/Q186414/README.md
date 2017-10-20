@@ -6,6 +6,8 @@ permalink: /kb/186/Q186414/
 
 ## Q186414: SMS: Distribution Jobs to Child Sites Do Not Complete
 
+{% raw %}
+
 	Article: Q186414
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -50,3 +52,5 @@ permalink: /kb/186/Q186414/
 	
 	=============================================================================
 	
+
+{% endraw %}

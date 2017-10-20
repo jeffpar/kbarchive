@@ -6,6 +6,8 @@ permalink: /kb/195/Q195452/
 
 ## Q195452: XCLN: Blank Column Header Icon May Appear in a Custom View
 
+{% raw %}
+
 	Article: Q195452
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/195/Q195452/
 	
 	=============================================================================
 	
+
+{% endraw %}

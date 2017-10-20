@@ -6,6 +6,8 @@ permalink: /kb/247/Q247764/
 
 ## Q247764: XFOR: Testing POP3 Does Not Work, Generates Event 13003
 
+{% raw %}
+
 	Article: Q247764
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -91,3 +93,5 @@ permalink: /kb/247/Q247764/
 	
 	=============================================================================
 	
+
+{% endraw %}

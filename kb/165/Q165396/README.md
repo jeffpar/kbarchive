@@ -6,6 +6,8 @@ permalink: /kb/165/Q165396/
 
 ## Q165396: XFOR: Err Msg: Message Contains Duplicate E-mail Address
 
+{% raw %}
+
 	Article: Q165396
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/165/Q165396/
 	
 	=============================================================================
 	
+
+{% endraw %}

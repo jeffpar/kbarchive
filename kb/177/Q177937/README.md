@@ -6,6 +6,8 @@ permalink: /kb/177/Q177937/
 
 ## Q177937: FIX: Debugger Cannot Watch Function Returning struct or union
 
+{% raw %}
+
 	Article: Q177937
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,5.0sp1,5.0sp2,6.0
@@ -95,3 +97,5 @@ permalink: /kb/177/Q177937/
 	
 	=============================================================================
 	
+
+{% endraw %}

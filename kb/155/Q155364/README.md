@@ -6,6 +6,8 @@ permalink: /kb/155/Q155364/
 
 ## Q155364: OSR2 Hangs After Booting Previous Operating System
 
+{% raw %}
+
 	Article: Q155364
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,95
@@ -71,3 +73,5 @@ permalink: /kb/155/Q155364/
 	
 	=============================================================================
 	
+
+{% endraw %}

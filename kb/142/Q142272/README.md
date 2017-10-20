@@ -6,6 +6,8 @@ permalink: /kb/142/Q142272/
 
 ## Q142272: Olicom 16/4 TR Drivers Cause Checksum Errors
 
+{% raw %}
+
 	Article: Q142272
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -47,3 +49,5 @@ permalink: /kb/142/Q142272/
 	
 	=============================================================================
 	
+
+{% endraw %}

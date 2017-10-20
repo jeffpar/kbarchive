@@ -6,6 +6,8 @@ permalink: /kb/044/Q44743/
 
 ## Q44743: Major Changes between QuickC 2.00 and Quick Assembler
 
+{% raw %}
+
 	Article: Q44743
 	Product(s): See article
 	Version(s): 2.01
@@ -81,3 +83,5 @@ permalink: /kb/044/Q44743/
 	    callable through QCL. This means that when a *.ASM file is
 	    specified to QCL it will invoke Qasm with all arguments passed
 	    through unchanged.
+
+{% endraw %}

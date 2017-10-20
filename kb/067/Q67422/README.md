@@ -6,6 +6,8 @@ permalink: /kb/067/Q67422/
 
 ## Q67422: Flt Sim: Using Two Joysticks with CH Products GameCard III
 
+{% raw %}
+
 	Article: Q67422
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/067/Q67422/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34029/
 
 ## Q34029: C Version 5.10 LINK and Windows LINK4
 
+{% raw %}
+
 	Article: Q34029
 	Product(s): See article
 	Version(s): 5.10    | 5.10
@@ -20,3 +22,5 @@ permalink: /kb/034/Q34029/
 	file. If you use LINK4, you do not have to put the EXETYPE WINDOWS
 	statement in your .DEF file because the use of LINK4 causes the .EXE
 	file to be identified as a Windows application.
+
+{% endraw %}

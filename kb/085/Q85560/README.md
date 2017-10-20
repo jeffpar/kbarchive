@@ -6,6 +6,8 @@ permalink: /kb/085/Q85560/
 
 ## Q85560: Creating a New SYSTEM.INI Without Third-Party Drivers
 
+{% raw %}
+
 	Article: Q85560
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -118,3 +120,5 @@ permalink: /kb/085/Q85560/
 	
 	=============================================================================
 	
+
+{% endraw %}

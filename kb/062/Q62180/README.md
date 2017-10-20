@@ -6,6 +6,8 @@ permalink: /kb/062/Q62180/
 
 ## Q62180: Internal Compiler Error: @(#)main.c:1.176, Line 807
 
+{% raw %}
+
 	Article: Q62180
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -59,3 +61,5 @@ permalink: /kb/062/Q62180/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

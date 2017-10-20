@@ -6,6 +6,8 @@ permalink: /kb/292/Q292181/
 
 ## Q292181: Software Inventory Properties Only Allow 32 Inventoried Names
 
+{% raw %}
+
 	Article: Q292181
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -99,3 +101,5 @@ permalink: /kb/292/Q292181/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264341/
 
 ## Q264341: XFOR: Unintelligible Characters in MS Mail Connector Queue
 
+{% raw %}
+
 	Article: Q264341
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.5; winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/264/Q264341/
 	
 	=============================================================================
 	
+
+{% endraw %}

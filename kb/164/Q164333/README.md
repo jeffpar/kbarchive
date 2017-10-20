@@ -6,6 +6,8 @@ permalink: /kb/164/Q164333/
 
 ## Q164333: WD97: Word Appears to Hang When You Search Large Address Book
 
+{% raw %}
+
 	Article: Q164333
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/164/Q164333/
 	
 	=============================================================================
 	
+
+{% endraw %}

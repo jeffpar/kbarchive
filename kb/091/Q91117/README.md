@@ -6,6 +6,8 @@ permalink: /kb/091/Q91117/
 
 ## Q91117: COMPAQ DualSpeed Token Ring Card Gives Error #5
 
+{% raw %}
+
 	Article: Q91117
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 1.0; MS-DOS:3.11
@@ -57,3 +59,5 @@ permalink: /kb/091/Q91117/
 	
 	=============================================================================
 	
+
+{% endraw %}

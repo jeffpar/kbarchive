@@ -6,6 +6,8 @@ permalink: /kb/194/Q194300/
 
 ## Q194300: FIX: Asserts When Creating a Dialog Box in an MFC Regular DLL
 
+{% raw %}
+
 	Article: Q194300
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -194,3 +196,5 @@ permalink: /kb/194/Q194300/
 	
 	=============================================================================
 	
+
+{% endraw %}

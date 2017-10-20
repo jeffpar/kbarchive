@@ -6,6 +6,8 @@ permalink: /kb/155/Q155252/
 
 ## Q155252: Host Name to IP Address Redirection in an IIS URL
 
+{% raw %}
+
 	Article: Q155252
 	Product(s): Internet Information Server
 	Version(s): 1.0 2.0
@@ -125,3 +127,5 @@ permalink: /kb/155/Q155252/
 	
 	=============================================================================
 	
+
+{% endraw %}

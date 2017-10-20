@@ -6,6 +6,8 @@ permalink: /kb/094/Q94815/
 
 ## Q94815: MSD Err Msg: Error Writing Bad File Number
 
+{% raw %}
+
 	Article: Q94815
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/094/Q94815/
 	
 	=============================================================================
 	
+
+{% endraw %}

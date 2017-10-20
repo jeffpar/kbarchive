@@ -6,6 +6,8 @@ permalink: /kb/201/Q201097/
 
 ## Q201097: PRB: ClassView Does Not Display COM Interface Nodes
 
+{% raw %}
+
 	Article: Q201097
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -133,3 +135,5 @@ permalink: /kb/201/Q201097/
 	
 	=============================================================================
 	
+
+{% endraw %}

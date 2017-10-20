@@ -6,6 +6,8 @@ permalink: /kb/113/Q113026/
 
 ## Q113026: PPT: Text Format Lost When Promoting, Demoting Paragraph
 
+{% raw %}
+
 	Article: Q113026
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,4.0; WINDOWS:3.0,4.0,7.0
@@ -60,3 +62,5 @@ permalink: /kb/113/Q113026/
 	
 	=============================================================================
 	
+
+{% endraw %}

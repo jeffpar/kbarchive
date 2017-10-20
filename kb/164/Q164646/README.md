@@ -6,6 +6,8 @@ permalink: /kb/164/Q164646/
 
 ## Q164646: BUG: Windows 95 ODBC Driver Traps During ODBC Installation
 
+{% raw %}
+
 	Article: Q164646
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164646/
 	
 	=============================================================================
 	
+
+{% endraw %}

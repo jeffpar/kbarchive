@@ -6,6 +6,8 @@ permalink: /kb/142/Q142380/
 
 ## Q142380: Downloading Encarta Updates From MSN Produces Error Message
 
+{% raw %}
+
 	Article: Q142380
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -86,3 +88,5 @@ permalink: /kb/142/Q142380/
 	
 	=============================================================================
 	
+
+{% endraw %}

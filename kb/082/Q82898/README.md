@@ -6,6 +6,8 @@ permalink: /kb/082/Q82898/
 
 ## Q82898: PC OS2: Fragmented Split Bar When Resizing Window
 
+{% raw %}
+
 	Article: Q82898
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -41,3 +43,5 @@ permalink: /kb/082/Q82898/
 	
 	=============================================================================
 	
+
+{% endraw %}

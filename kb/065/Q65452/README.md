@@ -6,6 +6,8 @@ permalink: /kb/065/Q65452/
 
 ## Q65452: Windows 3.0 Err Msg : Cannot Open Group File (in Real Mode)
 
+{% raw %}
+
 	Article: Q65452
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/065/Q65452/
 	
 	=============================================================================
 	
+
+{% endraw %}

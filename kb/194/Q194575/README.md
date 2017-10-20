@@ -6,6 +6,8 @@ permalink: /kb/194/Q194575/
 
 ## Q194575: PRB: First Item of List Box or Combo Box Not Selectable
 
+{% raw %}
+
 	Article: Q194575
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -118,3 +120,5 @@ permalink: /kb/194/Q194575/
 	
 	=============================================================================
 	
+
+{% endraw %}

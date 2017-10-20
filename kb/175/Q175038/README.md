@@ -6,6 +6,8 @@ permalink: /kb/175/Q175038/
 
 ## Q175038: How to Disable Call Waiting When You Use MSN
 
+{% raw %}
+
 	Article: Q175038
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -56,3 +58,5 @@ permalink: /kb/175/Q175038/
 	
 	=============================================================================
 	
+
+{% endraw %}

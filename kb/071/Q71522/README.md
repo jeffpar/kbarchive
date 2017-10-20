@@ -6,6 +6,8 @@ permalink: /kb/071/Q71522/
 
 ## Q71522: Windows: AUTOEXEC.BAT Is Not Run During Boot
 
+{% raw %}
+
 	Article: Q71522
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/071/Q71522/
 	
 	=============================================================================
 	
+
+{% endraw %}

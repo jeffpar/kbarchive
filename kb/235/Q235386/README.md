@@ -6,6 +6,8 @@ permalink: /kb/235/Q235386/
 
 ## Q235386: HOWTO: Trigger a Beep in VBCE Applications
 
+{% raw %}
+
 	Article: Q235386
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -76,3 +78,5 @@ permalink: /kb/235/Q235386/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141852/
 
 ## Q141852: Closing MS Info Version 2.5 Disables Sound
 
+{% raw %}
+
 	Article: Q141852
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1996 edition
@@ -91,3 +93,5 @@ permalink: /kb/141/Q141852/
 	
 	=============================================================================
 	
+
+{% endraw %}

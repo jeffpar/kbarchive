@@ -6,6 +6,8 @@ permalink: /kb/087/Q87036/
 
 ## Q87036: SMTP: Address Lists That Display SMTP Address
 
+{% raw %}
+
 	Article: Q87036
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/087/Q87036/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138560/
 
 ## Q138560: How to Disable Combo and List Boxes in Wizard-Generated Forms
 
+{% raw %}
+
 	Article: Q138560
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138560/
 	
 	=============================================================================
 	
+
+{% endraw %}

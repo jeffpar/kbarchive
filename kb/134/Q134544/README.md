@@ -6,6 +6,8 @@ permalink: /kb/134/Q134544/
 
 ## Q134544: GP Fault Pressing CTRL+ESC in 3 Balloons Program
 
+{% raw %}
+
 	Article: Q134544
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134544/
 	
 	=============================================================================
 	
+
+{% endraw %}

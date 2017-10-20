@@ -6,6 +6,8 @@ permalink: /kb/194/Q194780/
 
 ## Q194780: HOWTO: Requery a SQL-Select Only Changing a Variable
 
+{% raw %}
+
 	Article: Q194780
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -94,3 +96,5 @@ permalink: /kb/194/Q194780/
 	
 	=============================================================================
 	
+
+{% endraw %}

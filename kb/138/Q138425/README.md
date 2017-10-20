@@ -6,6 +6,8 @@ permalink: /kb/138/Q138425/
 
 ## Q138425: PRB: No Visual Clue to Number of Lines Edit or Text Box Holds
 
+{% raw %}
+
 	Article: Q138425
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -99,3 +101,5 @@ permalink: /kb/138/Q138425/
 	
 	=============================================================================
 	
+
+{% endraw %}

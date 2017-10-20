@@ -6,6 +6,8 @@ permalink: /kb/121/Q121292/
 
 ## Q121292: DoubleSpace Conversion Dialog Box Points to Non-Existent CVF
 
+{% raw %}
+
 	Article: Q121292
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -48,3 +50,5 @@ permalink: /kb/121/Q121292/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148128/
 
 ## Q148128: Using MACFILE to Administer Services for Macintosh
 
+{% raw %}
+
 	Article: Q148128
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51,4.0
@@ -236,3 +238,5 @@ permalink: /kb/148/Q148128/
 	
 	=============================================================================
 	
+
+{% endraw %}

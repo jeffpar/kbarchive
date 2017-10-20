@@ -6,6 +6,8 @@ permalink: /kb/061/Q61193/
 
 ## Q61193: C 6.00 README: Loop Optimization (/Ol) Option Changed
 
+{% raw %}
+
 	Article: Q61193
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -24,3 +26,5 @@ permalink: /kb/061/Q61193/
 	6.00, use /Ole (loop code optimization and global register
 	optimization). See Chapter 1 of "Advanced Programming Techniques" and
 	online help for further details.
+
+{% endraw %}

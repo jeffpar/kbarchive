@@ -6,6 +6,8 @@ permalink: /kb/243/Q243268/
 
 ## Q243268: AoE II: How to Set Up a Multiplayer Game Sharing CD-ROMs
 
+{% raw %}
+
 	Article: Q243268
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -98,3 +100,5 @@ permalink: /kb/243/Q243268/
 	
 	=============================================================================
 	
+
+{% endraw %}

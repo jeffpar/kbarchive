@@ -6,6 +6,8 @@ permalink: /kb/032/Q32998/
 
 ## Q32998: malloc May Truncate Request More Than 64K
 
+{% raw %}
+
 	Article: Q32998
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -53,3 +55,5 @@ permalink: /kb/032/Q32998/
 	        printf("memory allocated");
 	
 	}
+
+{% endraw %}

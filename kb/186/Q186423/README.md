@@ -6,6 +6,8 @@ permalink: /kb/186/Q186423/
 
 ## Q186423: HOWTO: Return and Assign Arrays with Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q186423
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -167,3 +169,5 @@ permalink: /kb/186/Q186423/
 	
 	=============================================================================
 	
+
+{% endraw %}

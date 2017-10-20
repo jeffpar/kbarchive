@@ -6,6 +6,8 @@ permalink: /kb/071/Q71267/
 
 ## Q71267: A B&amp;W Palette Does Not Guarantee a B&amp;W Bitmap
 
+{% raw %}
+
 	Article: Q71267
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -81,3 +83,5 @@ permalink: /kb/071/Q71267/
 	
 	=============================================================================
 	
+
+{% endraw %}

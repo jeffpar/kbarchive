@@ -6,6 +6,8 @@ permalink: /kb/233/Q233046/
 
 ## Q233046: Running MS Office 2000 Professional Comments and Corrections
 
+{% raw %}
+
 	Article: Q233046
 	Product(s): Microsoft Press
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/233/Q233046/
 	
 	=============================================================================
 	
+
+{% endraw %}

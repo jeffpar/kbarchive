@@ -6,6 +6,8 @@ permalink: /kb/125/Q125486/
 
 ## Q125486: TCP/IP Ioctlsocket Function Returns Incorrect Data
 
+{% raw %}
+
 	Article: Q125486
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11a; WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/125/Q125486/
 	
 	=============================================================================
 	
+
+{% endraw %}

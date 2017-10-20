@@ -6,6 +6,8 @@ permalink: /kb/159/Q159498/
 
 ## Q159498: HOWTO: Call LanMan Services from 32-bit Visual Basic Apps
 
+{% raw %}
+
 	Article: Q159498
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -458,3 +460,5 @@ permalink: /kb/159/Q159498/
 	
 	=============================================================================
 	
+
+{% endraw %}

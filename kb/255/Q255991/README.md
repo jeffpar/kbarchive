@@ -6,6 +6,8 @@ permalink: /kb/255/Q255991/
 
 ## Q255991: XCON: How to Configure an X.400 Connector with RRAS over TCP/IP
 
+{% raw %}
+
 	Article: Q255991
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -209,3 +211,5 @@ permalink: /kb/255/Q255991/
 	
 	=============================================================================
 	
+
+{% endraw %}

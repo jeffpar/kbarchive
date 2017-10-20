@@ -6,6 +6,8 @@ permalink: /kb/270/Q270910/
 
 ## Q270910: XCON: NDR Says Recipient Not Recognized When Large Message Sent
 
+{% raw %}
+
 	Article: Q270910
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -68,3 +70,5 @@ permalink: /kb/270/Q270910/
 	
 	=============================================================================
 	
+
+{% endraw %}

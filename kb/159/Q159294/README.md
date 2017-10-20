@@ -6,6 +6,8 @@ permalink: /kb/159/Q159294/
 
 ## Q159294: XFOR: Extra Carriage Return in Dir-Sync Message
 
+{% raw %}
+
 	Article: Q159294
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/159/Q159294/
 	
 	=============================================================================
 	
+
+{% endraw %}

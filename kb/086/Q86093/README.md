@@ -6,6 +6,8 @@ permalink: /kb/086/Q86093/
 
 ## Q86093: PC Win: Attach Dialog Box May Update Improperly
 
+{% raw %}
+
 	Article: Q86093
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -52,3 +54,5 @@ permalink: /kb/086/Q86093/
 	
 	=============================================================================
 	
+
+{% endraw %}

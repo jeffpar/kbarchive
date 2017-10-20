@@ -6,6 +6,8 @@ permalink: /kb/137/Q137933/
 
 ## Q137933: &quot;The Port Is Already Open&quot; Starting Microsoft Exchange
 
+{% raw %}
+
 	Article: Q137933
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -101,3 +103,5 @@ permalink: /kb/137/Q137933/
 	
 	=============================================================================
 	
+
+{% endraw %}

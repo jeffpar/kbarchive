@@ -6,6 +6,8 @@ permalink: /kb/296/Q296085/
 
 ## Q296085: HOWTO: Use SQL Server to Analyze Web Logs
 
+{% raw %}
+
 	Article: Q296085
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -159,3 +161,5 @@ permalink: /kb/296/Q296085/
 	
 	=============================================================================
 	
+
+{% endraw %}

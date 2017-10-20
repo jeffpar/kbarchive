@@ -6,6 +6,8 @@ permalink: /kb/167/Q167129/
 
 ## Q167129: STOP 0x7A or System Lockup in NTBACKUP with MINIQIC
 
+{% raw %}
+
 	Article: Q167129
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/167/Q167129/
 	
 	=============================================================================
 	
+
+{% endraw %}

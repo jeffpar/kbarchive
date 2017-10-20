@@ -6,6 +6,8 @@ permalink: /kb/102/Q102749/
 
 ## Q102749: X400: Err Msg: MTA_Name Has Queued Messages...
 
+{% raw %}
+
 	Article: Q102749
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -49,3 +51,5 @@ permalink: /kb/102/Q102749/
 	
 	=============================================================================
 	
+
+{% endraw %}

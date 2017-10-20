@@ -6,6 +6,8 @@ permalink: /kb/154/Q154680/
 
 ## Q154680: FP: Elements Jump to Bottom of Page Inserting Image, Text
 
+{% raw %}
+
 	Article: Q154680
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.1
@@ -65,3 +67,5 @@ permalink: /kb/154/Q154680/
 	
 	=============================================================================
 	
+
+{% endraw %}

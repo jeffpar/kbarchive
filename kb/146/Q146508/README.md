@@ -6,6 +6,8 @@ permalink: /kb/146/Q146508/
 
 ## Q146508: XCLN: No Underline Appears Between Bullet and Text
 
+{% raw %}
+
 	Article: Q146508
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146508/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191585/
 
 ## Q191585: PRB: File Collections' Add Method Closes Table
 
+{% raw %}
+
 	Article: Q191585
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -82,3 +84,5 @@ permalink: /kb/191/Q191585/
 	
 	=============================================================================
 	
+
+{% endraw %}

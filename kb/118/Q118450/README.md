@@ -6,6 +6,8 @@ permalink: /kb/118/Q118450/
 
 ## Q118450: COMSPEC Environment Is Not Set When Using 4DOS
 
+{% raw %}
+
 	Article: Q118450
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/118/Q118450/
 	
 	=============================================================================
 	
+
+{% endraw %}

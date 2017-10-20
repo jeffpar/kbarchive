@@ -6,6 +6,8 @@ permalink: /kb/044/Q44260/
 
 ## Q44260: Presentation Graphics Does Not Support 3-Dimensional Charts
 
+{% raw %}
+
 	Article: Q44260
 	Product(s): See article
 	Version(s): 2.00
@@ -59,3 +61,5 @@ permalink: /kb/044/Q44260/
 	
 	   _setvideomode( _DEFAULTMODE );
 	}
+
+{% endraw %}

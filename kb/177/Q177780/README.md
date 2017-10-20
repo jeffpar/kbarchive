@@ -6,6 +6,8 @@ permalink: /kb/177/Q177780/
 
 ## Q177780: XADM: Storage Limit Warning Not Generated
 
+{% raw %}
+
 	Article: Q177780
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/177/Q177780/
 	
 	=============================================================================
 	
+
+{% endraw %}

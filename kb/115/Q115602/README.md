@@ -6,6 +6,8 @@ permalink: /kb/115/Q115602/
 
 ## Q115602: Cannot Input Unicode Characters &gt;256 into Dialog Edit Field
 
+{% raw %}
+
 	Article: Q115602
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -107,3 +109,5 @@ permalink: /kb/115/Q115602/
 	
 	=============================================================================
 	
+
+{% endraw %}

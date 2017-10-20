@@ -6,6 +6,8 @@ permalink: /kb/110/Q110527/
 
 ## Q110527: PRB: ADIR() in FoxPro for Macintosh Doesn't Return &quot;.&quot; or &quot;..&quot;
 
+{% raw %}
+
 	Article: Q110527
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -55,3 +57,5 @@ permalink: /kb/110/Q110527/
 	
 	=============================================================================
 	
+
+{% endraw %}

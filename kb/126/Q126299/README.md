@@ -6,6 +6,8 @@ permalink: /kb/126/Q126299/
 
 ## Q126299: Erratic Keyboard Behavior with Comptex 386SX-25
 
+{% raw %}
+
 	Article: Q126299
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/126/Q126299/
 	
 	=============================================================================
 	
+
+{% endraw %}

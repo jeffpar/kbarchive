@@ -6,6 +6,8 @@ permalink: /kb/149/Q149475/
 
 ## Q149475: Unable to Start Services Using User Account
 
+{% raw %}
+
 	Article: Q149475
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -49,3 +51,5 @@ permalink: /kb/149/Q149475/
 	
 	=============================================================================
 	
+
+{% endraw %}

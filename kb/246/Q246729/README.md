@@ -6,6 +6,8 @@ permalink: /kb/246/Q246729/
 
 ## Q246729: Access Violations in Spooler Service Printing Long Named Job
 
+{% raw %}
+
 	Article: Q246729
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -127,3 +129,5 @@ permalink: /kb/246/Q246729/
 	
 	=============================================================================
 	
+
+{% endraw %}

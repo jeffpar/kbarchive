@@ -6,6 +6,8 @@ permalink: /kb/153/Q153471/
 
 ## Q153471: Problems with Removable IDE Drives in Windows 95
 
+{% raw %}
+
 	Article: Q153471
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/153/Q153471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188060/
 
 ## Q188060: SMS: Long Program Item Description May Cause NAD Corruption
 
+{% raw %}
+
 	Article: Q188060
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -115,3 +117,5 @@ permalink: /kb/188/Q188060/
 	
 	=============================================================================
 	
+
+{% endraw %}

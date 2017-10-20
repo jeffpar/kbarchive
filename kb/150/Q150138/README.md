@@ -6,6 +6,8 @@ permalink: /kb/150/Q150138/
 
 ## Q150138: BUG: FOR3199 Error in Host Association of Internal Variable
 
+{% raw %}
+
 	Article: Q150138
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/150/Q150138/
 	
 	=============================================================================
 	
+
+{% endraw %}

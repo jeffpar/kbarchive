@@ -6,6 +6,8 @@ permalink: /kb/136/Q136075/
 
 ## Q136075: HOWTO: Disabling Menu Titles and Bars
 
+{% raw %}
+
 	Article: Q136075
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/136/Q136075/
 	
 	=============================================================================
 	
+
+{% endraw %}

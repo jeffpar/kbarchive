@@ -6,6 +6,8 @@ permalink: /kb/246/Q246700/
 
 ## Q246700: XFOR: Dirsync: Export Containers Empty After Applying 5.5 SP3
 
+{% raw %}
+
 	Article: Q246700
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -117,3 +119,5 @@ permalink: /kb/246/Q246700/
 	
 	=============================================================================
 	
+
+{% endraw %}

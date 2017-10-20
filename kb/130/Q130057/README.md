@@ -6,6 +6,8 @@ permalink: /kb/130/Q130057/
 
 ## Q130057: Supporting Multiple Languages in a Single Application
 
+{% raw %}
+
 	Article: Q130057
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -72,3 +74,5 @@ permalink: /kb/130/Q130057/
 	
 	=============================================================================
 	
+
+{% endraw %}

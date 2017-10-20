@@ -6,6 +6,8 @@ permalink: /kb/273/Q273887/
 
 ## Q273887: XADM: How to Display Deleted Items in an Exchange Server Folder
 
+{% raw %}
+
 	Article: Q273887
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/273/Q273887/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63010/
 
 ## Q63010: Cannot Display Array Pointer or Full BASIC Array with CodeView
 
+{% raw %}
+
 	Article: Q63010
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -40,3 +42,5 @@ permalink: /kb/063/Q63010/
 	and C version 5.10, the ?? command won't display the elements of a C
 	array, but will display the far pointer value that is the array's
 	address.
+
+{% endraw %}

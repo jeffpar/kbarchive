@@ -6,6 +6,8 @@ permalink: /kb/151/Q151994/
 
 ## Q151994: Basketball 94-95 Err Msg: Unable To Start DDE Communications
 
+{% raw %}
+
 	Article: Q151994
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994-1995 edition; WINDOWS:95
@@ -93,3 +95,5 @@ permalink: /kb/151/Q151994/
 	
 	=============================================================================
 	
+
+{% endraw %}

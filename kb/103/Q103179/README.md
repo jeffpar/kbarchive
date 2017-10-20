@@ -6,6 +6,8 @@ permalink: /kb/103/Q103179/
 
 ## Q103179: ADT/ODE: Help Topic Does Not Exist Err Invoking Custom Help File
 
+{% raw %}
+
 	Article: Q103179
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1,2.0,7.0,97
@@ -94,3 +96,5 @@ permalink: /kb/103/Q103179/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63360/
 
 ## Q63360: FIX: INTEGER&#42;2 Multiply by Power of 2 Produces Wrong Results
 
+{% raw %}
+
 	Article: Q63360
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.0
@@ -92,3 +94,5 @@ permalink: /kb/063/Q63360/
 	
 	=============================================================================
 	
+
+{% endraw %}

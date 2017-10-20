@@ -6,6 +6,8 @@ permalink: /kb/186/Q186472/
 
 ## Q186472: PRB: MFC Subclassed Static Control Does Not Work in VB5
 
+{% raw %}
+
 	Article: Q186472
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0; winnt:5.0
@@ -108,3 +110,5 @@ permalink: /kb/186/Q186472/
 	
 	=============================================================================
 	
+
+{% endraw %}

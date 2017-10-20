@@ -6,6 +6,8 @@ permalink: /kb/061/Q61242/
 
 ## Q61242: C 6.00 README: Patching MOUCALLS.DLL (OS/2 1.10 Only)
 
+{% raw %}
+
 	Article: Q61242
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -87,3 +89,5 @@ permalink: /kb/061/Q61242/
 	
 	10. After the system has come back up, delete the files in C:\NEWMOU
 	    and remove the directory.
+
+{% endraw %}

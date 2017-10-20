@@ -6,6 +6,8 @@ permalink: /kb/035/Q35214/
 
 ## Q35214: Proc Directive with Uses Option and Nine Registers
 
+{% raw %}
+
 	Article: Q35214
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -52,3 +54,5 @@ permalink: /kb/035/Q35214/
 	
 	      1 Warning Errors
 	      1 Severe  Errors
+
+{% endraw %}

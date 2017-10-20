@@ -6,6 +6,8 @@ permalink: /kb/034/Q34682/
 
 ## Q34682: Communications (COM1:, COM2:) Receive Buffer Lost During CHAIN
 
+{% raw %}
+
 	Article: Q34682
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -47,3 +49,5 @@ permalink: /kb/034/Q34682/
 	   print #1, x;
 	   next x
 	   close #1
+
+{% endraw %}

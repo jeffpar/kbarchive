@@ -6,6 +6,8 @@ permalink: /kb/134/Q134509/
 
 ## Q134509: Incorrect Colors in MS-DOS-Based Graphics Programs in a Window
 
+{% raw %}
+
 	Article: Q134509
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/134/Q134509/
 	
 	=============================================================================
 	
+
+{% endraw %}

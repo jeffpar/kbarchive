@@ -6,6 +6,8 @@ permalink: /kb/154/Q154504/
 
 ## Q154504: Windows Explorer Error with Long Path on Windows NT Server
 
+{% raw %}
+
 	Article: Q154504
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/154/Q154504/
 	
 	=============================================================================
 	
+
+{% endraw %}

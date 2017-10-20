@@ -6,6 +6,8 @@ permalink: /kb/165/Q165621/
 
 ## Q165621: FIX: Error 231 After Opening a Server Side Cursor
 
+{% raw %}
+
 	Article: Q165621
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0,3.0; winnt:6.5
@@ -64,3 +66,5 @@ permalink: /kb/165/Q165621/
 	
 	=============================================================================
 	
+
+{% endraw %}

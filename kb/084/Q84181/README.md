@@ -6,6 +6,8 @@ permalink: /kb/084/Q84181/
 
 ## Q84181: Windows: Working Directory in Program Item Properties
 
+{% raw %}
+
 	Article: Q84181
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/084/Q84181/
 	
 	=============================================================================
 	
+
+{% endraw %}

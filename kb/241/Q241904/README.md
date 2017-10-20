@@ -6,6 +6,8 @@ permalink: /kb/241/Q241904/
 
 ## Q241904: XCON: Name Not Recognized NDR Sending Between Two Exchange Orgs
 
+{% raw %}
+
 	Article: Q241904
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/241/Q241904/
 	
 	=============================================================================
 	
+
+{% endraw %}

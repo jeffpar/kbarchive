@@ -6,6 +6,8 @@ permalink: /kb/068/Q68839/
 
 ## Q68839: Paintbrush Prints Reduced Image Size
 
+{% raw %}
+
 	Article: Q68839
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/068/Q68839/
 	
 	=============================================================================
 	
+
+{% endraw %}

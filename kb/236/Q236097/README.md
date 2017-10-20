@@ -6,6 +6,8 @@ permalink: /kb/236/Q236097/
 
 ## Q236097: PRB: ReadMethod Returns Name of Method at Run Time
 
+{% raw %}
+
 	Article: Q236097
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -93,3 +95,5 @@ permalink: /kb/236/Q236097/
 	
 	=============================================================================
 	
+
+{% endraw %}

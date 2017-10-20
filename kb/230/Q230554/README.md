@@ -6,6 +6,8 @@ permalink: /kb/230/Q230554/
 
 ## Q230554: Event ID 3113 When Using Novell IntraNetWare 4.1a Client
 
+{% raw %}
+
 	Article: Q230554
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -59,3 +61,5 @@ permalink: /kb/230/Q230554/
 	
 	=============================================================================
 	
+
+{% endraw %}

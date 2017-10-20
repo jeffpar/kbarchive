@@ -6,6 +6,8 @@ permalink: /kb/189/Q189103/
 
 ## Q189103: DHCP Manager in Server Tools Does Not List Superscopes Option
 
+{% raw %}
+
 	Article: Q189103
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/189/Q189103/
 	
 	=============================================================================
 	
+
+{% endraw %}

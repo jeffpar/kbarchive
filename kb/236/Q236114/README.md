@@ -6,6 +6,8 @@ permalink: /kb/236/Q236114/
 
 ## Q236114: FIX: Destructor of Static Object Not Called on Exit
 
+{% raw %}
+
 	Article: Q236114
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/236/Q236114/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/049/Q49501/
 
 ## Q49501: Ftime: C Function -- Documentation Supplement
 
+{% raw %}
+
 	Article: Q49501
 	Product(s): See article
 	Version(s): 5.10
@@ -66,3 +68,5 @@ permalink: /kb/049/Q49501/
 	Other sources of information include the Version 5.10 "Microsoft C for the
 	MS-DOS Operating System: Run-Time Library Reference," Pages 308-9 and
 	the ftime function in the "C Run-Time Library Source Routines".
+
+{% endraw %}

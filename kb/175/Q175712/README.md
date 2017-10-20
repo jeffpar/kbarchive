@@ -6,6 +6,8 @@ permalink: /kb/175/Q175712/
 
 ## Q175712: Starting America Online Disconnects The Microsoft Network
 
+{% raw %}
+
 	Article: Q175712
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/175/Q175712/
 	
 	=============================================================================
 	
+
+{% endraw %}

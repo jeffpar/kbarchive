@@ -6,6 +6,8 @@ permalink: /kb/079/Q79824/
 
 ## Q79824: FIX: Last Letter of NMAKE Command-Line Macro Incremented
 
+{% raw %}
+
 	Article: Q79824
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.13,1.2; OS/2:1.13,1.21
@@ -76,3 +78,5 @@ permalink: /kb/079/Q79824/
 	
 	=============================================================================
 	
+
+{% endraw %}

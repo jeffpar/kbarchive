@@ -6,6 +6,8 @@ permalink: /kb/101/Q101557/
 
 ## Q101557: MENUDEFAULT Timer Not Working in Submenus
 
+{% raw %}
+
 	Article: Q101557
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.0,6.2,6.21,6.22
@@ -44,3 +46,5 @@ permalink: /kb/101/Q101557/
 	
 	=============================================================================
 	
+
+{% endraw %}

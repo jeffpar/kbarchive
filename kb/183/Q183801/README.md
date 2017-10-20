@@ -6,6 +6,8 @@ permalink: /kb/183/Q183801/
 
 ## Q183801: XFOR: Internet Mail Service Can Only Send SMTP Type Mail
 
+{% raw %}
+
 	Article: Q183801
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -120,3 +122,5 @@ permalink: /kb/183/Q183801/
 	
 	=============================================================================
 	
+
+{% endraw %}

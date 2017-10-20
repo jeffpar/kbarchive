@@ -6,6 +6,8 @@ permalink: /kb/218/Q218802/
 
 ## Q218802: XADM: Can't Enroll Using X.509 V3 Certificates
 
+{% raw %}
+
 	Article: Q218802
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -169,3 +171,5 @@ permalink: /kb/218/Q218802/
 	
 	=============================================================================
 	
+
+{% endraw %}

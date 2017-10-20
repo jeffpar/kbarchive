@@ -6,6 +6,8 @@ permalink: /kb/182/Q182945/
 
 ## Q182945: PRB: Database Field in Collection Treated Differently in VB
 
+{% raw %}
+
 	Article: Q182945
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/182/Q182945/
 	
 	=============================================================================
 	
+
+{% endraw %}

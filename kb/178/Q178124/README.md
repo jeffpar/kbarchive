@@ -6,6 +6,8 @@ permalink: /kb/178/Q178124/
 
 ## Q178124: XCLN: Microsoft Outlook for Windows 3.1x
 
+{% raw %}
+
 	Article: Q178124
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.0
@@ -146,3 +148,5 @@ permalink: /kb/178/Q178124/
 	
 	=============================================================================
 	
+
+{% endraw %}

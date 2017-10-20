@@ -6,6 +6,8 @@ permalink: /kb/188/Q188629/
 
 ## Q188629: XADM: Using PFADMIN to Remove Public Folder Permissions
 
+{% raw %}
+
 	Article: Q188629
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -75,3 +77,5 @@ permalink: /kb/188/Q188629/
 	
 	=============================================================================
 	
+
+{% endraw %}

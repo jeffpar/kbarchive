@@ -6,6 +6,8 @@ permalink: /kb/234/Q234259/
 
 ## Q234259: Revision to AMD K6-2/350 Central Processing Unit Update
 
+{% raw %}
+
 	Article: Q234259
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/234/Q234259/
 	
 	=============================================================================
 	
+
+{% endraw %}

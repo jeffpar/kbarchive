@@ -6,6 +6,8 @@ permalink: /kb/268/Q268828/
 
 ## Q268828: How to Modify the Registry to Delete Locally Cached Profiles
 
+{% raw %}
+
 	Article: Q268828
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/268/Q268828/
 	
 	=============================================================================
 	
+
+{% endraw %}

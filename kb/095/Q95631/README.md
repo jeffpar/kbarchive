@@ -6,6 +6,8 @@ permalink: /kb/095/Q95631/
 
 ## Q95631: Changing or Reinstalling MS-DOS Shell Video Files
 
+{% raw %}
+
 	Article: Q95631
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -104,3 +106,5 @@ permalink: /kb/095/Q95631/
 	
 	=============================================================================
 	
+
+{% endraw %}

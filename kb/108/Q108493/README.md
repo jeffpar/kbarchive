@@ -6,6 +6,8 @@ permalink: /kb/108/Q108493/
 
 ## Q108493: ScanDisk and Files Marked with Directory Attributes
 
+{% raw %}
+
 	Article: Q108493
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -73,3 +75,5 @@ permalink: /kb/108/Q108493/
 	
 	=============================================================================
 	
+
+{% endraw %}

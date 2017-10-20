@@ -6,6 +6,8 @@ permalink: /kb/126/Q126611/
 
 ## Q126611: PC Adm: PROFS Templates Lost Using IMPORT -T
 
+{% raw %}
+
 	Article: Q126611
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -67,3 +69,5 @@ permalink: /kb/126/Q126611/
 	
 	=============================================================================
 	
+
+{% endraw %}

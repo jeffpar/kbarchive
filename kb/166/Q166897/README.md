@@ -6,6 +6,8 @@ permalink: /kb/166/Q166897/
 
 ## Q166897: Windows NT 3.51 Regedt32 Fails to Load a Hive from WinNT 4.0
 
+{% raw %}
+
 	Article: Q166897
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -103,3 +105,5 @@ permalink: /kb/166/Q166897/
 	
 	=============================================================================
 	
+
+{% endraw %}

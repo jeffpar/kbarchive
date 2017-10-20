@@ -6,6 +6,8 @@ permalink: /kb/061/Q61244/
 
 ## Q61244: C 6.00 README: RAMDRIVE Documentation
 
+{% raw %}
+
 	Article: Q61244
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -51,3 +53,5 @@ permalink: /kb/061/Q61244/
 	
 	- If you omit the <memtype> option altogether, RAMDRIVE attempts to
 	  set up a virtual drive in conventional memory.
+
+{% endraw %}

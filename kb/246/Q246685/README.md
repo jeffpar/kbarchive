@@ -6,6 +6,8 @@ permalink: /kb/246/Q246685/
 
 ## Q246685: Err Msg: Limit Reached on Number of Objects of this Type
 
+{% raw %}
+
 	Article: Q246685
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -95,3 +97,5 @@ permalink: /kb/246/Q246685/
 	
 	=============================================================================
 	
+
+{% endraw %}

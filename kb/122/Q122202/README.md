@@ -6,6 +6,8 @@ permalink: /kb/122/Q122202/
 
 ## Q122202: PCM and Archiving Unexecuted Mandatory Jobs
 
+{% raw %}
+
 	Article: Q122202
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -52,3 +54,5 @@ permalink: /kb/122/Q122202/
 	
 	=============================================================================
 	
+
+{% endraw %}

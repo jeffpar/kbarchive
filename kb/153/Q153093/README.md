@@ -6,6 +6,8 @@ permalink: /kb/153/Q153093/
 
 ## Q153093: XCLN: Error Message: The Set of Folders Could Not Be Opened
 
+{% raw %}
+
 	Article: Q153093
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -73,3 +75,5 @@ permalink: /kb/153/Q153093/
 	
 	=============================================================================
 	
+
+{% endraw %}

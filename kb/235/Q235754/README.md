@@ -6,6 +6,8 @@ permalink: /kb/235/Q235754/
 
 ## Q235754: Error Message Displays MMF Build Info: SMS 2.0 Beta (1239)
 
+{% raw %}
+
 	Article: Q235754
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/235/Q235754/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100859/
 
 ## Q100859: List of Encarta AVI Files Without Sound
 
+{% raw %}
+
 	Article: Q100859
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/100/Q100859/
 	
 	=============================================================================
 	
+
+{% endraw %}

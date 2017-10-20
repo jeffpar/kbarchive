@@ -6,6 +6,8 @@ permalink: /kb/248/Q248323/
 
 ## Q248323: Fighter Ace II: Game Hangs When Switching from Direct3D to Glide
 
+{% raw %}
+
 	Article: Q248323
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/248/Q248323/
 	
 	=============================================================================
 	
+
+{% endraw %}

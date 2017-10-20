@@ -6,6 +6,8 @@ permalink: /kb/110/Q110764/
 
 ## Q110764: BUG: Scrollable List Box Displays Blank Line at Bottom
 
+{% raw %}
+
 	Article: Q110764
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -72,3 +74,5 @@ permalink: /kb/110/Q110764/
 	
 	=============================================================================
 	
+
+{% endraw %}

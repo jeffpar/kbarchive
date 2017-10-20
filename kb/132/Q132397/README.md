@@ -6,6 +6,8 @@ permalink: /kb/132/Q132397/
 
 ## Q132397: HOWTO: Retrieve a Counter Field Value Without Requerying
 
+{% raw %}
+
 	Article: Q132397
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/132/Q132397/
 	
 	=============================================================================
 	
+
+{% endraw %}

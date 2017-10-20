@@ -6,6 +6,8 @@ permalink: /kb/214/Q214472/
 
 ## Q214472: How to Restrict IIS 4.0 Users and Groups in FrontPage98
 
+{% raw %}
+
 	Article: Q214472
 	Product(s): Word Front Page
 	Version(s): WINDOWS:; winnt:4.0
@@ -123,3 +125,5 @@ permalink: /kb/214/Q214472/
 	
 	=============================================================================
 	
+
+{% endraw %}

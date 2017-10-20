@@ -6,6 +6,8 @@ permalink: /kb/131/Q131837/
 
 ## Q131837: How to Return from an Event or Method
 
+{% raw %}
+
 	Article: Q131837
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/131/Q131837/
 	
 	=============================================================================
 	
+
+{% endraw %}

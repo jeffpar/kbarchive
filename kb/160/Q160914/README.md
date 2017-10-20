@@ -6,6 +6,8 @@ permalink: /kb/160/Q160914/
 
 ## Q160914: PRB: The Data File for &lt;file&gt; (&lt;physical file&gt;) Was Not Found
 
+{% raw %}
+
 	Article: Q160914
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,4.0a,5.0,6.0
@@ -185,3 +187,5 @@ permalink: /kb/160/Q160914/
 	
 	=============================================================================
 	
+
+{% endraw %}

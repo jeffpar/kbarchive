@@ -6,6 +6,8 @@ permalink: /kb/115/Q115389/
 
 ## Q115389: Obtaining Knowledge Base Articles on the Internet
 
+{% raw %}
+
 	Article: Q115389
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -203,3 +205,5 @@ permalink: /kb/115/Q115389/
 	
 	=============================================================================
 	
+
+{% endraw %}

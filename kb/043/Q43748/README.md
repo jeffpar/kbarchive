@@ -6,6 +6,8 @@ permalink: /kb/043/Q43748/
 
 ## Q43748: Changing Printers During Print Job Affects Output
 
+{% raw %}
+
 	Article: Q43748
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/043/Q43748/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167355/
 
 ## Q167355: FIX: C4786 Warning Is Not Disabled with #pragma Warning
 
+{% raw %}
+
 	Article: Q167355
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -167,3 +169,5 @@ permalink: /kb/167/Q167355/
 	
 	=============================================================================
 	
+
+{% endraw %}

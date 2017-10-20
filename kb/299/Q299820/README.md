@@ -6,6 +6,8 @@ permalink: /kb/299/Q299820/
 
 ## Q299820: HOWTO: Run a DBC Stored Proc with the VFP OLE DB Provider
 
+{% raw %}
+
 	Article: Q299820
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -130,3 +132,5 @@ permalink: /kb/299/Q299820/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169280/
 
 ## Q169280: Cannot Size Pre-Dial and After Dial Terminal Screen
 
+{% raw %}
+
 	Article: Q169280
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/169/Q169280/
 	
 	=============================================================================
 	
+
+{% endraw %}

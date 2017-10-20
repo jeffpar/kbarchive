@@ -6,6 +6,8 @@ permalink: /kb/156/Q156518/
 
 ## Q156518: Minimized Internet Explorer Remains on Taskbar
 
+{% raw %}
+
 	Article: Q156518
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.0,4.0
@@ -57,3 +59,5 @@ permalink: /kb/156/Q156518/
 	
 	=============================================================================
 	
+
+{% endraw %}

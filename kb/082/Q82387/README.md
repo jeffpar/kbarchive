@@ -6,6 +6,8 @@ permalink: /kb/082/Q82387/
 
 ## Q82387: Old Versions of LOCKIT Incorrectly Modify WIN.INI
 
+{% raw %}
+
 	Article: Q82387
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82387/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117219/
 
 ## Q117219: Using STRTRAN() to Add Carriage Returns to ASCII File
 
+{% raw %}
+
 	Article: Q117219
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -70,3 +72,5 @@ permalink: /kb/117/Q117219/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135106/
 
 ## Q135106: Changing Billing Address Does Not Change Address Book
 
+{% raw %}
+
 	Article: Q135106
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,95
@@ -64,3 +66,5 @@ permalink: /kb/135/Q135106/
 	
 	=============================================================================
 	
+
+{% endraw %}

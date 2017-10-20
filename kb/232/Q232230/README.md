@@ -6,6 +6,8 @@ permalink: /kb/232/Q232230/
 
 ## Q232230: Jobs Not Printed When Print Server Is Busy
 
+{% raw %}
+
 	Article: Q232230
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -90,3 +92,5 @@ permalink: /kb/232/Q232230/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/079/Q79516/
 
 ## Q79516: Imported Windows Group Files Retain Old Descriptions
 
+{% raw %}
+
 	Article: Q79516
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -76,3 +78,5 @@ permalink: /kb/079/Q79516/
 	
 	=============================================================================
 	
+
+{% endraw %}

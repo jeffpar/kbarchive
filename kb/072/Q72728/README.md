@@ -6,6 +6,8 @@ permalink: /kb/072/Q72728/
 
 ## Q72728: FIX: BIND Generates Multiply Defined Symbols with API.LIB
 
+{% raw %}
+
 	Article: Q72728
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/072/Q72728/
 	
 	=============================================================================
 	
+
+{% endraw %}

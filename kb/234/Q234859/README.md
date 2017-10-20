@@ -6,6 +6,8 @@ permalink: /kb/234/Q234859/
 
 ## Q234859: PRB: Windows Desktop Update Is Required for Product Resiliency
 
+{% raw %}
+
 	Article: Q234859
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/234/Q234859/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146350/
 
 ## Q146350: XCLN: Shutdown Does Not Ask User to Exit Exchange Client
 
+{% raw %}
+
 	Article: Q146350
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -49,3 +51,5 @@ permalink: /kb/146/Q146350/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87293/
 
 ## Q87293: Registering Message Alias on RPL Workstation
 
+{% raw %}
+
 	Article: Q87293
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/087/Q87293/
 	
 	=============================================================================
 	
+
+{% endraw %}

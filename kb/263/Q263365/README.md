@@ -6,6 +6,8 @@ permalink: /kb/263/Q263365/
 
 ## Q263365: SMS: Remote Control Not Removed if Terminal Services Is Enabled
 
+{% raw %}
+
 	Article: Q263365
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP2
@@ -66,3 +68,5 @@ permalink: /kb/263/Q263365/
 	
 	=============================================================================
 	
+
+{% endraw %}

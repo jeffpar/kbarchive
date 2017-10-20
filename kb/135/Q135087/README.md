@@ -6,6 +6,8 @@ permalink: /kb/135/Q135087/
 
 ## Q135087: Cannot Install Sender on BDC Unless It is a Site or Logon Server
 
+{% raw %}
+
 	Article: Q135087
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -59,3 +61,5 @@ permalink: /kb/135/Q135087/
 	
 	=============================================================================
 	
+
+{% endraw %}

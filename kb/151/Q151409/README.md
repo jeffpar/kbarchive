@@ -6,6 +6,8 @@ permalink: /kb/151/Q151409/
 
 ## Q151409: RUI_BID Improperly Handles Lua_Peek_Data Causing Data Truncation
 
+{% raw %}
+
 	Article: Q151409
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -76,3 +78,5 @@ permalink: /kb/151/Q151409/
 	
 	=============================================================================
 	
+
+{% endraw %}

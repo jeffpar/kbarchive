@@ -6,6 +6,8 @@ permalink: /kb/148/Q148193/
 
 ## Q148193: How to Change REAL&#42;4 Numbers to REAL&#42;8 Values in Debugger
 
+{% raw %}
+
 	Article: Q148193
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/148/Q148193/
 	
 	=============================================================================
 	
+
+{% endraw %}

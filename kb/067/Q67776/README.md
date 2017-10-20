@@ -6,6 +6,8 @@ permalink: /kb/067/Q67776/
 
 ## Q67776: NMK.COM Will Execute PWB.SHL If it Exists
 
+{% raw %}
+
 	Article: Q67776
 	Product(s): See article
 	Version(s): 1.00 1.11
@@ -56,3 +58,5 @@ permalink: /kb/067/Q67776/
 	will find the PWB.SHL file in the TMP subdirectory and execute it,
 	causing PWB to be invoked even though you had not explicitly invoked
 	PWB since the reboot.
+
+{% endraw %}

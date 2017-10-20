@@ -6,6 +6,8 @@ permalink: /kb/185/Q185605/
 
 ## Q185605: Stop Error Caused by Invalid Use of Private Video Driver Handle
 
+{% raw %}
+
 	Article: Q185605
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/185/Q185605/
 	
 	=============================================================================
 	
+
+{% endraw %}

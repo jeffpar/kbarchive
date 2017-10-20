@@ -6,6 +6,8 @@ permalink: /kb/140/Q140317/
 
 ## Q140317: DOC: Visual SourceSafe Treats Binary Files Differently
 
+{% raw %}
+
 	Article: Q140317
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/140/Q140317/
 	
 	=============================================================================
 	
+
+{% endraw %}

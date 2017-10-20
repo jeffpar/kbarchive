@@ -6,6 +6,8 @@ permalink: /kb/268/Q268500/
 
 ## Q268500: Advertisement Rescheduling May Fail Due to Improper APM Code
 
+{% raw %}
+
 	Article: Q268500
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0,2.0 SP1,2.0 SP2
@@ -101,3 +103,5 @@ permalink: /kb/268/Q268500/
 	
 	=============================================================================
 	
+
+{% endraw %}

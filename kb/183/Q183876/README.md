@@ -6,6 +6,8 @@ permalink: /kb/183/Q183876/
 
 ## Q183876: Exchange Server 5.0 SP2 TechNet CD-ROM Labeled Incorrectly
 
+{% raw %}
+
 	Article: Q183876
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): April 1998  edition
@@ -60,3 +62,5 @@ permalink: /kb/183/Q183876/
 	
 	=============================================================================
 	
+
+{% endraw %}

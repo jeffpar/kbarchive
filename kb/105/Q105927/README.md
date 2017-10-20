@@ -6,6 +6,8 @@ permalink: /kb/105/Q105927/
 
 ## Q105927: MS-DOS 6.x Backup Err Msg: &quot;...Catalog File Is Corrupt&quot;
 
+{% raw %}
+
 	Article: Q105927
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -72,3 +74,5 @@ permalink: /kb/105/Q105927/
 	
 	=============================================================================
 	
+
+{% endraw %}

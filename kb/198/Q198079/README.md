@@ -6,6 +6,8 @@ permalink: /kb/198/Q198079/
 
 ## Q198079: WD97: Edit/Replace Changes Formatting of Previous Table Cells
 
+{% raw %}
+
 	Article: Q198079
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/198/Q198079/
 	
 	=============================================================================
 	
+
+{% endraw %}

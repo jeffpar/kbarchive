@@ -6,6 +6,8 @@ permalink: /kb/060/Q60929/
 
 ## Q60929: Windows 3.0 SYSTEM.INI Settings for MS Network Software
 
+{% raw %}
+
 	Article: Q60929
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/060/Q60929/
 	
 	=============================================================================
 	
+
+{% endraw %}

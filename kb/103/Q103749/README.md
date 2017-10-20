@@ -6,6 +6,8 @@ permalink: /kb/103/Q103749/
 
 ## Q103749: WFWG File Manager GP Faults When You Use a Multi-Config Menu
 
+{% raw %}
+
 	Article: Q103749
 	Product(s): Microsoft Disk Operating System
 	Version(s): 3.11,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/103/Q103749/
 	
 	=============================================================================
 	
+
+{% endraw %}

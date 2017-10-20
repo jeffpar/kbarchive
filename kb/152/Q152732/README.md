@@ -6,6 +6,8 @@ permalink: /kb/152/Q152732/
 
 ## Q152732: XADM: How to Modify Fields in the Exchange Mailbox Template
 
+{% raw %}
+
 	Article: Q152732
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/152/Q152732/
 	
 	=============================================================================
 	
+
+{% endraw %}

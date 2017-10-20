@@ -6,6 +6,8 @@ permalink: /kb/137/Q137697/
 
 ## Q137697: Backup Problems with Colorado Trakker Drive on ECP or EPP Port
 
+{% raw %}
+
 	Article: Q137697
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -78,3 +80,5 @@ permalink: /kb/137/Q137697/
 	
 	=============================================================================
 	
+
+{% endraw %}

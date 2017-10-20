@@ -6,6 +6,8 @@ permalink: /kb/180/Q180679/
 
 ## Q180679: XCON: Encapsulated Message Properties May Be Lost
 
+{% raw %}
+
 	Article: Q180679
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:1.0,5.0,5.5;winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/180/Q180679/
 	
 	=============================================================================
 	
+
+{% endraw %}

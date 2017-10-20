@@ -6,6 +6,8 @@ permalink: /kb/159/Q159301/
 
 ## Q159301: XCON: Messages Sent Over X.400 Connector Should NDR First
 
+{% raw %}
+
 	Article: Q159301
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/159/Q159301/
 	
 	=============================================================================
 	
+
+{% endraw %}

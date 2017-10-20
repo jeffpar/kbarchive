@@ -6,6 +6,8 @@ permalink: /kb/157/Q157373/
 
 ## Q157373: How to Insert Sample Text into a Document
 
+{% raw %}
+
 	Article: Q157373
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/157/Q157373/
 	
 	=============================================================================
 	
+
+{% endraw %}

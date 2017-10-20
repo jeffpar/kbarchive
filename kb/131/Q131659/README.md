@@ -6,6 +6,8 @@ permalink: /kb/131/Q131659/
 
 ## Q131659: RAS Err Msg Connecting a Remote Server Share: Access Denied
 
+{% raw %}
+
 	Article: Q131659
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -178,3 +180,5 @@ permalink: /kb/131/Q131659/
 	
 	=============================================================================
 	
+
+{% endraw %}

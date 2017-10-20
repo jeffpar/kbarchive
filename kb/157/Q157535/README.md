@@ -6,6 +6,8 @@ permalink: /kb/157/Q157535/
 
 ## Q157535: WD97: Outlook Message Title Shows Invalid Character
 
+{% raw %}
+
 	Article: Q157535
 	Product(s): Word 97 for Windows
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157535/
 	
 	=============================================================================
 	
+
+{% endraw %}

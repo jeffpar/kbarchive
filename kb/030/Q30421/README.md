@@ -6,6 +6,8 @@ permalink: /kb/030/Q30421/
 
 ## Q30421: FIX: Extra Line-Feed Char Generated in Four-Digit Listing File
 
+{% raw %}
+
 	Article: Q30421
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -60,3 +62,5 @@ permalink: /kb/030/Q30421/
 	
 	=============================================================================
 	
+
+{% endraw %}

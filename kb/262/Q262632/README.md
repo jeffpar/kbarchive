@@ -6,6 +6,8 @@ permalink: /kb/262/Q262632/
 
 ## Q262632: Run IIS 5.0/5.1 Instead of PWS on Windows 2000 Professional
 
+{% raw %}
+
 	Article: Q262632
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/262/Q262632/
 	
 	=============================================================================
 	
+
+{% endraw %}

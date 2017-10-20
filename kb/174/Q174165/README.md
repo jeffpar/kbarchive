@@ -6,6 +6,8 @@ permalink: /kb/174/Q174165/
 
 ## Q174165: XADM: Directory Replication Error 1224 After Replacing Server
 
+{% raw %}
+
 	Article: Q174165
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -59,3 +61,5 @@ permalink: /kb/174/Q174165/
 	
 	=============================================================================
 	
+
+{% endraw %}

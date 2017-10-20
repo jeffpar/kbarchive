@@ -6,6 +6,8 @@ permalink: /kb/214/Q214800/
 
 ## Q214800: Visual InterDev 6 Enterprise Dev Workshop: MenuDemo Program Miss
 
+{% raw %}
+
 	Article: Q214800
 	Product(s): Microsoft Press
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/214/Q214800/
 	
 	=============================================================================
 	
+
+{% endraw %}

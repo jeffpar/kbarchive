@@ -6,6 +6,8 @@ permalink: /kb/149/Q149087/
 
 ## Q149087: HOWTO: Using CDaoRecordset::Seek
 
+{% raw %}
+
 	Article: Q149087
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -178,3 +180,5 @@ permalink: /kb/149/Q149087/
 	
 	=============================================================================
 	
+
+{% endraw %}

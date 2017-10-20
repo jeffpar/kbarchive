@@ -6,6 +6,8 @@ permalink: /kb/252/Q252302/
 
 ## Q252302: IIS Stops Responding at W3SVC!CGIThread
 
+{% raw %}
+
 	Article: Q252302
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/252/Q252302/
 	
 	=============================================================================
 	
+
+{% endraw %}

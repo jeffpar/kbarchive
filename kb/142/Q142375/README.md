@@ -6,6 +6,8 @@ permalink: /kb/142/Q142375/
 
 ## Q142375: BUG: Jetpack.exe Reports Incorrect Usage Syntax
 
+{% raw %}
+
 	Article: Q142375
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -52,3 +54,5 @@ permalink: /kb/142/Q142375/
 	
 	=============================================================================
 	
+
+{% endraw %}

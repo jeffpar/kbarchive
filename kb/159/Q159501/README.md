@@ -6,6 +6,8 @@ permalink: /kb/159/Q159501/
 
 ## Q159501: Compaq LTE 5000 with 2.167GB Drive Requires Updated HAL
 
+{% raw %}
+
 	Article: Q159501
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/159/Q159501/
 	
 	=============================================================================
 	
+
+{% endraw %}

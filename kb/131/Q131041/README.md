@@ -6,6 +6,8 @@ permalink: /kb/131/Q131041/
 
 ## Q131041: PRB: Programs Crash After Installing Visual FoxPro
 
+{% raw %}
+
 	Article: Q131041
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/131/Q131041/
 	
 	=============================================================================
 	
+
+{% endraw %}

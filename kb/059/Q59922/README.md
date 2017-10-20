@@ -6,6 +6,8 @@ permalink: /kb/059/Q59922/
 
 ## Q59922: Mac Hyp: Setting the Flag for an Urgent Message
 
+{% raw %}
+
 	Article: Q59922
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -42,3 +44,5 @@ permalink: /kb/059/Q59922/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256864/
 
 ## Q256864: SMS: Windows 2000 Professional May Appear as Windows NT Server
 
+{% raw %}
+
 	Article: Q256864
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/256/Q256864/
 	
 	=============================================================================
 	
+
+{% endraw %}

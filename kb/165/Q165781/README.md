@@ -6,6 +6,8 @@ permalink: /kb/165/Q165781/
 
 ## Q165781: WD97: Converted Document Contains PRIVATE Fields
 
+{% raw %}
+
 	Article: Q165781
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/165/Q165781/
 	
 	=============================================================================
 	
+
+{% endraw %}

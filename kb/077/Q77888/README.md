@@ -6,6 +6,8 @@ permalink: /kb/077/Q77888/
 
 ## Q77888: Bitstream Facelift 1.0 Hangs with MS-DOS Shell Task Swapper
 
+{% raw %}
+
 	Article: Q77888
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -85,3 +87,5 @@ permalink: /kb/077/Q77888/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241896/
 
 ## Q241896: PRB: Threading Issues with Visual Basic 6.0 ActiveX Components
 
+{% raw %}
+
 	Article: Q241896
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3
@@ -231,3 +233,5 @@ permalink: /kb/241/Q241896/
 	
 	=============================================================================
 	
+
+{% endraw %}

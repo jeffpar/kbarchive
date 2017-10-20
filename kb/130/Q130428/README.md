@@ -6,6 +6,8 @@ permalink: /kb/130/Q130428/
 
 ## Q130428: Day Starts At and Day Ends At Settings Round Down
 
+{% raw %}
+
 	Article: Q130428
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -38,3 +40,5 @@ permalink: /kb/130/Q130428/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172819/
 
 ## Q172819: WD97: Main Document Not Connected to Data Source in Word 6.x/7.x
 
+{% raw %}
+
 	Article: Q172819
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/172/Q172819/
 	
 	=============================================================================
 	
+
+{% endraw %}

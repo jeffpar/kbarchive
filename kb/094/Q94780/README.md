@@ -6,6 +6,8 @@ permalink: /kb/094/Q94780/
 
 ## Q94780: ISAMCVT Problems Converting BTRIEVE Files
 
+{% raw %}
+
 	Article: Q94780
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): MS-DOS:1.0; :7.1
@@ -49,3 +51,5 @@ permalink: /kb/094/Q94780/
 	
 	=============================================================================
 	
+
+{% endraw %}

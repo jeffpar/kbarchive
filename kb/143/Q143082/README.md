@@ -6,6 +6,8 @@ permalink: /kb/143/Q143082/
 
 ## Q143082: FIX: Wrong Pointer Value When Nested Classes Have Same Name
 
+{% raw %}
+
 	Article: Q143082
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/143/Q143082/
 	
 	=============================================================================
 	
+
+{% endraw %}

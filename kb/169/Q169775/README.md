@@ -6,6 +6,8 @@ permalink: /kb/169/Q169775/
 
 ## Q169775: XFOR: Preserving PABs During Upgrade or Re-installation
 
+{% raw %}
+
 	Article: Q169775
 	Product(s): Microsoft Exchange
 	Version(s): 3.2; WINDOWS:3.2
@@ -50,3 +52,5 @@ permalink: /kb/169/Q169775/
 	
 	=============================================================================
 	
+
+{% endraw %}

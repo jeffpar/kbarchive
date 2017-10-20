@@ -6,6 +6,8 @@ permalink: /kb/080/Q80319/
 
 ## Q80319: BUG: Cannot Bind Programs that Increase the Number of Files
 
+{% raw %}
+
 	Article: Q80319
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -82,3 +84,5 @@ permalink: /kb/080/Q80319/
 	
 	=============================================================================
 	
+
+{% endraw %}

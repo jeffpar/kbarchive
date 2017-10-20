@@ -6,6 +6,8 @@ permalink: /kb/160/Q160479/
 
 ## Q160479: Encarta 97: Computer Hangs with Sound Galaxy Pro 16
 
+{% raw %}
+
 	Article: Q160479
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/160/Q160479/
 	
 	=============================================================================
 	
+
+{% endraw %}

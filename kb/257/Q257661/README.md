@@ -6,6 +6,8 @@ permalink: /kb/257/Q257661/
 
 ## Q257661: FIX: Form Double-Click Event May Fire SSTab Events
 
+{% raw %}
+
 	Article: Q257661
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -124,3 +126,5 @@ permalink: /kb/257/Q257661/
 	
 	=============================================================================
 	
+
+{% endraw %}

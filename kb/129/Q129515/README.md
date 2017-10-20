@@ -6,6 +6,8 @@ permalink: /kb/129/Q129515/
 
 ## Q129515: File Transfer Using Zmodem Protocol Hangs HyperTerminal
 
+{% raw %}
+
 	Article: Q129515
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/129/Q129515/
 	
 	=============================================================================
 	
+
+{% endraw %}

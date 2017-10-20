@@ -6,6 +6,8 @@ permalink: /kb/066/Q66267/
 
 ## Q66267: Windows 3.0 Supplemental Driver Library; Network Install
 
+{% raw %}
+
 	Article: Q66267
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -206,3 +208,5 @@ permalink: /kb/066/Q66267/
 	
 	=============================================================================
 	
+
+{% endraw %}

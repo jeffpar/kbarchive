@@ -6,6 +6,8 @@ permalink: /kb/151/Q151290/
 
 ## Q151290: Top Articles on Windows 95 Hardware
 
+{% raw %}
+
 	Article: Q151290
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/151/Q151290/
 	
 	=============================================================================
 	
+
+{% endraw %}

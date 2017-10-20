@@ -6,6 +6,8 @@ permalink: /kb/153/Q153738/
 
 ## Q153738: BUG:Properties Sheet/Project Manager Ignore SET MACDESKTOP OFF
 
+{% raw %}
+
 	Article: Q153738
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -107,3 +109,5 @@ permalink: /kb/153/Q153738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177414/
 
 ## Q177414: Using Incorrect DNS Forwarders Cause High Processor Usage
 
+{% raw %}
+
 	Article: Q177414
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/177/Q177414/
 	
 	=============================================================================
 	
+
+{% endraw %}

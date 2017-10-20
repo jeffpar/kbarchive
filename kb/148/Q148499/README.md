@@ -6,6 +6,8 @@ permalink: /kb/148/Q148499/
 
 ## Q148499: Differences Between SLIP and PPP with Dial-Up Networking
 
+{% raw %}
+
 	Article: Q148499
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -234,3 +236,5 @@ permalink: /kb/148/Q148499/
 	
 	=============================================================================
 	
+
+{% endraw %}

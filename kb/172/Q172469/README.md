@@ -6,6 +6,8 @@ permalink: /kb/172/Q172469/
 
 ## Q172469: Last Byte of Transparent Section Interpreted Incorrectly
 
+{% raw %}
+
 	Article: Q172469
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -70,3 +72,5 @@ permalink: /kb/172/Q172469/
 	
 	=============================================================================
 	
+
+{% endraw %}

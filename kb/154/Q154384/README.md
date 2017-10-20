@@ -6,6 +6,8 @@ permalink: /kb/154/Q154384/
 
 ## Q154384: INF: Jet 3.0 Dynamic Memory Usage and Access ODBC Driver
 
+{% raw %}
+
 	Article: Q154384
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0,3.5
@@ -96,3 +98,5 @@ permalink: /kb/154/Q154384/
 	
 	=============================================================================
 	
+
+{% endraw %}

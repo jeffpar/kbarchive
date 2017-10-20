@@ -6,6 +6,8 @@ permalink: /kb/305/Q305929/
 
 ## Q305929: Err Msg: This Certificate Has an Invalid Digital Signature
 
+{% raw %}
+
 	Article: Q305929
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -111,3 +113,5 @@ permalink: /kb/305/Q305929/
 	
 	=============================================================================
 	
+
+{% endraw %}

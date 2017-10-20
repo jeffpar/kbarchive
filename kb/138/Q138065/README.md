@@ -6,6 +6,8 @@ permalink: /kb/138/Q138065/
 
 ## Q138065: HOWTO: Enforce Initialization of a VB OLE Class Object
 
+{% raw %}
+
 	Article: Q138065
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -118,3 +120,5 @@ permalink: /kb/138/Q138065/
 	
 	=============================================================================
 	
+
+{% endraw %}

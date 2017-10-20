@@ -6,6 +6,8 @@ permalink: /kb/062/Q62206/
 
 ## Q62206: LINK L1083 &quot;Cannot Open Run File&quot; on Novell Network
 
+{% raw %}
+
 	Article: Q62206
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -44,3 +46,5 @@ permalink: /kb/062/Q62206/
 	   Novell ELS Level 2 version 2.15
 	   DOS version 3.30
 	   Hercules video card
+
+{% endraw %}

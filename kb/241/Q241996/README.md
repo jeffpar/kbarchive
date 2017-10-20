@@ -6,6 +6,8 @@ permalink: /kb/241/Q241996/
 
 ## Q241996: Update Item in MMC May Cause Excessive Screen Flicker
 
+{% raw %}
+
 	Article: Q241996
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -127,3 +129,5 @@ permalink: /kb/241/Q241996/
 	
 	=============================================================================
 	
+
+{% endraw %}

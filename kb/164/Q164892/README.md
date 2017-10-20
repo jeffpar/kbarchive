@@ -6,6 +6,8 @@ permalink: /kb/164/Q164892/
 
 ## Q164892: SNA Manager Shows Incorrect Status For Resources In Subdomain
 
+{% raw %}
+
 	Article: Q164892
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -114,3 +116,5 @@ permalink: /kb/164/Q164892/
 	
 	=============================================================================
 	
+
+{% endraw %}

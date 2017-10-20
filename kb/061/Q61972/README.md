@@ -6,6 +6,8 @@ permalink: /kb/061/Q61972/
 
 ## Q61972: Internal Compiler Error: @(#)regMD.c:1.100, Line 4634
 
+{% raw %}
+
 	Article: Q61972
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -71,3 +73,5 @@ permalink: /kb/061/Q61972/
 	   to the following:
 	
 	      c[0] = s1[j];
+
+{% endraw %}

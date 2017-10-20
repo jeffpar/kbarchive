@@ -6,6 +6,8 @@ permalink: /kb/179/Q179094/
 
 ## Q179094: Draw98: How to Remove (Uninstall) Microsoft Draw 98
 
+{% raw %}
+
 	Article: Q179094
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:98
@@ -103,3 +105,5 @@ permalink: /kb/179/Q179094/
 	
 	=============================================================================
 	
+
+{% endraw %}

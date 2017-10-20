@@ -6,6 +6,8 @@ permalink: /kb/129/Q129037/
 
 ## Q129037: Windows NT 3.5x and 4.0 Emergency Repair Process Screens
 
+{% raw %}
+
 	Article: Q129037
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -260,3 +262,5 @@ permalink: /kb/129/Q129037/
 	
 	=============================================================================
 	
+
+{% endraw %}

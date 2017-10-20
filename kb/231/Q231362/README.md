@@ -6,6 +6,8 @@ permalink: /kb/231/Q231362/
 
 ## Q231362: SMS: Using SmsrunStartupDelay Causes Win 95/98 Clients to Hang
 
+{% raw %}
+
 	Article: Q231362
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -104,3 +106,5 @@ permalink: /kb/231/Q231362/
 	
 	=============================================================================
 	
+
+{% endraw %}

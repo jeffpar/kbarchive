@@ -6,6 +6,8 @@ permalink: /kb/111/Q111880/
 
 ## Q111880: AWFAX Hangs When Faxing a Microsoft Works for Windows Document
 
+{% raw %}
+
 	Article: Q111880
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -61,3 +63,5 @@ permalink: /kb/111/Q111880/
 	
 	=============================================================================
 	
+
+{% endraw %}

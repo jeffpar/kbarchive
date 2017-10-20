@@ -6,6 +6,8 @@ permalink: /kb/189/Q189192/
 
 ## Q189192: Accessibility Options Do Not Work Properly on Compaq Computers
 
+{% raw %}
+
 	Article: Q189192
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -96,3 +98,5 @@ permalink: /kb/189/Q189192/
 	
 	=============================================================================
 	
+
+{% endraw %}

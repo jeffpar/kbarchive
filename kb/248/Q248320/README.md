@@ -6,6 +6,8 @@ permalink: /kb/248/Q248320/
 
 ## Q248320: FS2000 Pro Err Msg: Fsedit Caused an Invalid Page Fault in...
 
+{% raw %}
+
 	Article: Q248320
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -52,3 +54,5 @@ permalink: /kb/248/Q248320/
 	
 	=============================================================================
 	
+
+{% endraw %}

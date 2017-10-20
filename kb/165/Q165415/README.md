@@ -6,6 +6,8 @@ permalink: /kb/165/Q165415/
 
 ## Q165415: Duplicate Windows Explorer File Menu Commands for Fonts Folder
 
+{% raw %}
+
 	Article: Q165415
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1,95
@@ -72,3 +74,5 @@ permalink: /kb/165/Q165415/
 	
 	=============================================================================
 	
+
+{% endraw %}

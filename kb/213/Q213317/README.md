@@ -6,6 +6,8 @@ permalink: /kb/213/Q213317/
 
 ## Q213317: SMS: Batch programs w/ UNC Working Directory Not Executing
 
+{% raw %}
+
 	Article: Q213317
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -47,3 +49,5 @@ permalink: /kb/213/Q213317/
 	
 	=============================================================================
 	
+
+{% endraw %}

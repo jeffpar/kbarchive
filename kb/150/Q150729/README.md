@@ -6,6 +6,8 @@ permalink: /kb/150/Q150729/
 
 ## Q150729: Err Msg: &quot;Access Denied&quot; When Using Account Operator
 
+{% raw %}
+
 	Article: Q150729
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150729/
 	
 	=============================================================================
 	
+
+{% endraw %}

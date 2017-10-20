@@ -6,6 +6,8 @@ permalink: /kb/185/Q185575/
 
 ## Q185575: XADM: Home Server Attribute Does Not Work In Mailbox Template
 
+{% raw %}
+
 	Article: Q185575
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -175,3 +177,5 @@ permalink: /kb/185/Q185575/
 	
 	=============================================================================
 	
+
+{% endraw %}

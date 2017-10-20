@@ -6,6 +6,8 @@ permalink: /kb/231/Q231591/
 
 ## Q231591: HOWTO: Use Dialog Template to Create MFC Dialog with ActiveX
 
+{% raw %}
+
 	Article: Q231591
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -130,3 +132,5 @@ permalink: /kb/231/Q231591/
 	
 	=============================================================================
 	
+
+{% endraw %}

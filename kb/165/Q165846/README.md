@@ -6,6 +6,8 @@ permalink: /kb/165/Q165846/
 
 ## Q165846: WinNT Err: The System Cannot Find the File Specified with RAS
 
+{% raw %}
+
 	Article: Q165846
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -98,3 +100,5 @@ permalink: /kb/165/Q165846/
 	
 	=============================================================================
 	
+
+{% endraw %}

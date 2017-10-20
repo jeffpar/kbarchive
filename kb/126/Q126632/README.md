@@ -6,6 +6,8 @@ permalink: /kb/126/Q126632/
 
 ## Q126632: Mouse Detected as PS/2-Style or Bus Does Not Work During Setup
 
+{% raw %}
+
 	Article: Q126632
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/126/Q126632/
 	
 	=============================================================================
 	
+
+{% endraw %}

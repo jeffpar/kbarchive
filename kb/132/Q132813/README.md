@@ -6,6 +6,8 @@ permalink: /kb/132/Q132813/
 
 ## Q132813: Battery Meter Shows Unknown Battery Status On Toshiba Laptop
 
+{% raw %}
+
 	Article: Q132813
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132813/
 	
 	=============================================================================
 	
+
+{% endraw %}

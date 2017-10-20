@@ -6,6 +6,8 @@ permalink: /kb/209/Q209397/
 
 ## Q209397: The Web Proxy Service Stops Responding
 
+{% raw %}
+
 	Article: Q209397
 	Product(s): Internet Information Server
 	Version(s): 2.0,4.0
@@ -65,3 +67,5 @@ permalink: /kb/209/Q209397/
 	
 	=============================================================================
 	
+
+{% endraw %}

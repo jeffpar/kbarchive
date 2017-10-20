@@ -6,6 +6,8 @@ permalink: /kb/173/Q173224/
 
 ## Q173224: WD97: How to Turn On/Off Prompts in Word Web Authoring
 
+{% raw %}
+
 	Article: Q173224
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -162,3 +164,5 @@ permalink: /kb/173/Q173224/
 	
 	=============================================================================
 	
+
+{% endraw %}

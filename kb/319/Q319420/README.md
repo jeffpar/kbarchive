@@ -6,6 +6,8 @@ permalink: /kb/319/Q319420/
 
 ## Q319420: Problems with Very High Data Rates Over TCP/IP with Windows NT
 
+{% raw %}
+
 	Article: Q319420
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/319/Q319420/
 	
 	=============================================================================
 	
+
+{% endraw %}

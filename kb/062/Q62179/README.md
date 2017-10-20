@@ -6,6 +6,8 @@ permalink: /kb/062/Q62179/
 
 ## Q62179: NOGRAPH.OBJ Listed in Online Help Is Actually TXTONLY.OBJ
 
+{% raw %}
+
 	Article: Q62179
 	Product(s): See article
 	Version(s): 6.00
@@ -26,3 +28,5 @@ permalink: /kb/062/Q62179/
 	executable that uses only the text-mode functions from GRAPHICS.LIB.
 	
 	The actual filename is TXTONLY.OBJ.
+
+{% endraw %}

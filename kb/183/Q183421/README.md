@@ -6,6 +6,8 @@ permalink: /kb/183/Q183421/
 
 ## Q183421: Keyboard Issues with Protel Advanced PCB 2.8 and Windows NT
 
+{% raw %}
+
 	Article: Q183421
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -49,3 +51,5 @@ permalink: /kb/183/Q183421/
 	
 	=============================================================================
 	
+
+{% endraw %}

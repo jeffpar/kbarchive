@@ -6,6 +6,8 @@ permalink: /kb/226/Q226894/
 
 ## Q226894: SMS: SMS_LOCAL_DIR Must Not Exceed the Maximum of 8 Characters
 
+{% raw %}
+
 	Article: Q226894
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -62,3 +64,5 @@ permalink: /kb/226/Q226894/
 	
 	=============================================================================
 	
+
+{% endraw %}

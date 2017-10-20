@@ -6,6 +6,8 @@ permalink: /kb/315/Q315402/
 
 ## Q315402: XML Step by Step Second Edition Comments and Corrections
 
+{% raw %}
+
 	Article: Q315402
 	Product(s): Microsoft Press
 	Version(s): 
@@ -340,3 +342,5 @@ permalink: /kb/315/Q315402/
 	
 	=============================================================================
 	
+
+{% endraw %}

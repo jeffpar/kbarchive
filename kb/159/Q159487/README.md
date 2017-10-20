@@ -6,6 +6,8 @@ permalink: /kb/159/Q159487/
 
 ## Q159487: Games: How to Determine the Version of Installed Video Driver
 
+{% raw %}
+
 	Article: Q159487
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,3.0
@@ -105,3 +107,5 @@ permalink: /kb/159/Q159487/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196586/
 
 ## Q196586: FIX: HttpSendRequest Does Not Work Correctly on WinCE 2.0
 
+{% raw %}
+
 	Article: Q196586
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0
@@ -190,3 +192,5 @@ permalink: /kb/196/Q196586/
 	
 	=============================================================================
 	
+
+{% endraw %}

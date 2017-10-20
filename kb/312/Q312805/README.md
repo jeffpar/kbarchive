@@ -6,6 +6,8 @@ permalink: /kb/312/Q312805/
 
 ## Q312805: Encarta Reference Library 2002: No Audible Pronunciation
 
+{% raw %}
+
 	Article: Q312805
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/312/Q312805/
 	
 	=============================================================================
 	
+
+{% endraw %}

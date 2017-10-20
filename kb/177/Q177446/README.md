@@ -6,6 +6,8 @@ permalink: /kb/177/Q177446/
 
 ## Q177446: How to Test Microsoft Remote Procedure Call Performance
 
+{% raw %}
+
 	Article: Q177446
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -274,3 +276,5 @@ permalink: /kb/177/Q177446/
 	
 	=============================================================================
 	
+
+{% endraw %}

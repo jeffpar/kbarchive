@@ -6,6 +6,8 @@ permalink: /kb/157/Q157237/
 
 ## Q157237: Changes to Message Format Not Reflected in Sent Fax
 
+{% raw %}
+
 	Article: Q157237
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/157/Q157237/
 	
 	=============================================================================
 	
+
+{% endraw %}

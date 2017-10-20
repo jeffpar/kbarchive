@@ -6,6 +6,8 @@ permalink: /kb/150/Q150871/
 
 ## Q150871: Using Dual-Channel ISDN with The Microsoft Network
 
+{% raw %}
+
 	Article: Q150871
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6,5.0
@@ -48,3 +50,5 @@ permalink: /kb/150/Q150871/
 	
 	=============================================================================
 	
+
+{% endraw %}

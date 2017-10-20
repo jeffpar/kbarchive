@@ -6,6 +6,8 @@ permalink: /kb/066/Q66884/
 
 ## Q66884: ASD: Using SubLogic Scenery
 
+{% raw %}
+
 	Article: Q66884
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/066/Q66884/
 	
 	=============================================================================
 	
+
+{% endraw %}

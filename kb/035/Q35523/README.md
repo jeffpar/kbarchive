@@ -6,6 +6,8 @@ permalink: /kb/035/Q35523/
 
 ## Q35523: Reassigning Default Keystrokes for Editor Functions
 
+{% raw %}
+
 	Article: Q35523
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -30,3 +32,5 @@ permalink: /kb/035/Q35523/
 	it to the function Unassigned, as follows:
 	
 	Unassigned:Ctrl+Home
+
+{% endraw %}

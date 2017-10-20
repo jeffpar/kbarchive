@@ -6,6 +6,8 @@ permalink: /kb/195/Q195625/
 
 ## Q195625: FIX: Set Component Gallery Dynamic Folder to HTMLHelp Fails
 
+{% raw %}
+
 	Article: Q195625
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -90,3 +92,5 @@ permalink: /kb/195/Q195625/
 	
 	=============================================================================
 	
+
+{% endraw %}

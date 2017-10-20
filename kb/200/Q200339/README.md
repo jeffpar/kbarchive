@@ -6,6 +6,8 @@ permalink: /kb/200/Q200339/
 
 ## Q200339: Promiscuous Mode Madge TR NIC Can Halt Mainframe Connection
 
+{% raw %}
+
 	Article: Q200339
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -64,3 +66,5 @@ permalink: /kb/200/Q200339/
 	
 	=============================================================================
 	
+
+{% endraw %}

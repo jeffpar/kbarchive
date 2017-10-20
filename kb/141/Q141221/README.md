@@ -6,6 +6,8 @@ permalink: /kb/141/Q141221/
 
 ## Q141221: Writer/Artist: Stickers Print with Gray Squares Around Them
 
+{% raw %}
+
 	Article: Q141221
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,1.1b
@@ -71,3 +73,5 @@ permalink: /kb/141/Q141221/
 	
 	=============================================================================
 	
+
+{% endraw %}

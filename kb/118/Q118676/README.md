@@ -6,6 +6,8 @@ permalink: /kb/118/Q118676/
 
 ## Q118676: PC Ext: External Won't Dial Out Unless There Is Outbound Mail
 
+{% raw %}
+
 	Article: Q118676
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.5
@@ -88,3 +90,5 @@ permalink: /kb/118/Q118676/
 	
 	=============================================================================
 	
+
+{% endraw %}

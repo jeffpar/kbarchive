@@ -6,6 +6,8 @@ permalink: /kb/136/Q136042/
 
 ## Q136042: BUG: SET TOPIC Overwritten by SET MESSAGE
 
+{% raw %}
+
 	Article: Q136042
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -66,3 +68,5 @@ permalink: /kb/136/Q136042/
 	
 	=============================================================================
 	
+
+{% endraw %}

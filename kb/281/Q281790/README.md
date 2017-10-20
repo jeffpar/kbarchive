@@ -6,6 +6,8 @@ permalink: /kb/281/Q281790/
 
 ## Q281790: Flight Simulator 2000: Known Video Issues
 
+{% raw %}
+
 	Article: Q281790
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/281/Q281790/
 	
 	=============================================================================
 	
+
+{% endraw %}

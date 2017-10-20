@@ -6,6 +6,8 @@ permalink: /kb/139/Q139278/
 
 ## Q139278: Example in Windows NT Resource Kit For REGINI Does Not Work
 
+{% raw %}
+
 	Article: Q139278
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -72,3 +74,5 @@ permalink: /kb/139/Q139278/
 	
 	=============================================================================
 	
+
+{% endraw %}

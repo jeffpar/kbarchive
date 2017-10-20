@@ -6,6 +6,8 @@ permalink: /kb/230/Q230332/
 
 ## Q230332: Cvtres.exe Program Error
 
+{% raw %}
+
 	Article: Q230332
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,6.0
@@ -116,3 +118,5 @@ permalink: /kb/230/Q230332/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123672/
 
 ## Q123672: GP Fault in Peachtree Accounting for Windows 3.0
 
+{% raw %}
+
 	Article: Q123672
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/123/Q123672/
 	
 	=============================================================================
 	
+
+{% endraw %}

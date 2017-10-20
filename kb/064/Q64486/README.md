@@ -6,6 +6,8 @@ permalink: /kb/064/Q64486/
 
 ## Q64486: IBM EE 1.2 Lan Server User ID Names Limited to 8 Char.
 
+{% raw %}
+
 	Article: Q64486
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/064/Q64486/
 	
 	=============================================================================
 	
+
+{% endraw %}

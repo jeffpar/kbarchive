@@ -6,6 +6,8 @@ permalink: /kb/300/Q300712/
 
 ## Q300712: Label Promotion After Share Pin and Branch Operation Fails
 
+{% raw %}
+
 	Article: Q300712
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -114,3 +116,5 @@ permalink: /kb/300/Q300712/
 	
 	=============================================================================
 	
+
+{% endraw %}

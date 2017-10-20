@@ -6,6 +6,8 @@ permalink: /kb/185/Q185830/
 
 ## Q185830: Small Business Server Fax Ignores Retry Delay
 
+{% raw %}
+
 	Article: Q185830
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0,4.0a
@@ -64,3 +66,5 @@ permalink: /kb/185/Q185830/
 	
 	=============================================================================
 	
+
+{% endraw %}

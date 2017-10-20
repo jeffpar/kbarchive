@@ -6,6 +6,8 @@ permalink: /kb/166/Q166767/
 
 ## Q166767: PRB: GetControlUnknown() Returns NULL in COleControl
 
+{% raw %}
+
 	Article: Q166767
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,4.2b,5.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166767/
 	
 	=============================================================================
 	
+
+{% endraw %}

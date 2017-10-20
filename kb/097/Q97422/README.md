@@ -6,6 +6,8 @@ permalink: /kb/097/Q97422/
 
 ## Q97422: Word for Windows Setup Err: Unable to Update WWORD20.INF
 
+{% raw %}
+
 	Article: Q97422
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 2.0a-CD,2.0c-CD
@@ -49,3 +51,5 @@ permalink: /kb/097/Q97422/
 	
 	=============================================================================
 	
+
+{% endraw %}

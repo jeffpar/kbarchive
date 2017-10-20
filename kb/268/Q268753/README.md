@@ -6,6 +6,8 @@ permalink: /kb/268/Q268753/
 
 ## Q268753: PRB: CDO Cannot Access Secure Properties
 
+{% raw %}
+
 	Article: Q268753
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -68,3 +70,5 @@ permalink: /kb/268/Q268753/
 	
 	=============================================================================
 	
+
+{% endraw %}

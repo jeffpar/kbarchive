@@ -6,6 +6,8 @@ permalink: /kb/253/Q253307/
 
 ## Q253307: XCON: Dynamic RAS Connector Stops Delivering Messages
 
+{% raw %}
+
 	Article: Q253307
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -115,3 +117,5 @@ permalink: /kb/253/Q253307/
 	
 	=============================================================================
 	
+
+{% endraw %}

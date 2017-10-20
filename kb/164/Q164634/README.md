@@ -6,6 +6,8 @@ permalink: /kb/164/Q164634/
 
 ## Q164634: SNA Client Fails on SNA Server 3.0 on French WinNT 3.51
 
+{% raw %}
+
 	Article: Q164634
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/164/Q164634/
 	
 	=============================================================================
 	
+
+{% endraw %}

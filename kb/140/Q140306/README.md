@@ -6,6 +6,8 @@ permalink: /kb/140/Q140306/
 
 ## Q140306: HOWTO: Change a Grid's RecordSource Property Programmatically
 
+{% raw %}
+
 	Article: Q140306
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -136,3 +138,5 @@ permalink: /kb/140/Q140306/
 	
 	=============================================================================
 	
+
+{% endraw %}

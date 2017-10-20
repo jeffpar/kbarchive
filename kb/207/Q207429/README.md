@@ -6,6 +6,8 @@ permalink: /kb/207/Q207429/
 
 ## Q207429: SMS: Cannot Install SMS Client Software in Windows NT and 2000
 
+{% raw %}
+
 	Article: Q207429
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -75,3 +77,5 @@ permalink: /kb/207/Q207429/
 	
 	=============================================================================
 	
+
+{% endraw %}

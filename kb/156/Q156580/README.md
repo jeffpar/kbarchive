@@ -6,6 +6,8 @@ permalink: /kb/156/Q156580/
 
 ## Q156580: INFO: SetAll('Value') Works for Text Boxes in Grids in VFP
 
+{% raw %}
+
 	Article: Q156580
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -144,3 +146,5 @@ permalink: /kb/156/Q156580/
 	
 	=============================================================================
 	
+
+{% endraw %}

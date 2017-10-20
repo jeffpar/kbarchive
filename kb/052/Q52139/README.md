@@ -6,6 +6,8 @@ permalink: /kb/052/Q52139/
 
 ## Q52139: Accessing Strings from Local (Stack) Pointers with _asm
 
+{% raw %}
+
 	Article: Q52139
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -49,3 +51,5 @@ permalink: /kb/052/Q52139/
 	    pop dx
 	  }
 	}
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34293/
 
 ## Q34293: PROC and USES Documentation
 
+{% raw %}
+
 	Article: Q34293
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -18,3 +20,5 @@ permalink: /kb/034/Q34293/
 	Microsoft Editor" manual.
 	   Used in conjunction with the PROC directive are the NEAR, FAR, and
 	USES keywords, also documented on Page 37.
+
+{% endraw %}

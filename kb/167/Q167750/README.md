@@ -6,6 +6,8 @@ permalink: /kb/167/Q167750/
 
 ## Q167750: BUG: The pow() Function Doesn't Set Underflow Condition
 
+{% raw %}
+
 	Article: Q167750
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -154,3 +156,5 @@ permalink: /kb/167/Q167750/
 	
 	=============================================================================
 	
+
+{% endraw %}

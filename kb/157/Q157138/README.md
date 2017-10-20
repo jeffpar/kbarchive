@@ -6,6 +6,8 @@ permalink: /kb/157/Q157138/
 
 ## Q157138: WD97: Outline Numbering Is Not Reapplied
 
+{% raw %}
+
 	Article: Q157138
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/157/Q157138/
 	
 	=============================================================================
 	
+
+{% endraw %}

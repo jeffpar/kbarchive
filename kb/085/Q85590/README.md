@@ -6,6 +6,8 @@ permalink: /kb/085/Q85590/
 
 ## Q85590: SETUP.INF &#91;run&#93; Section Ignores File Named SETUP.XXX
 
+{% raw %}
+
 	Article: Q85590
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/085/Q85590/
 	
 	=============================================================================
 	
+
+{% endraw %}

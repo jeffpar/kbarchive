@@ -6,6 +6,8 @@ permalink: /kb/195/Q195510/
 
 ## Q195510: XFOR: Notes Dirsync not Working after Installation of 5.5 SP1
 
+{% raw %}
+
 	Article: Q195510
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -91,3 +93,5 @@ permalink: /kb/195/Q195510/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190313/
 
 ## Q190313: PRB: Form QueryUnload Fires Before the Activate Event
 
+{% raw %}
+
 	Article: Q190313
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -71,3 +73,5 @@ permalink: /kb/190/Q190313/
 	
 	=============================================================================
 	
+
+{% endraw %}

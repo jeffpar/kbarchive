@@ -6,6 +6,8 @@ permalink: /kb/302/Q302394/
 
 ## Q302394: XADM: NDR Sending E-Mail to Public Folder in Mixed Environment
 
+{% raw %}
+
 	Article: Q302394
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -103,3 +105,5 @@ permalink: /kb/302/Q302394/
 	
 	=============================================================================
 	
+
+{% endraw %}

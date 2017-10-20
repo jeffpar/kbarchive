@@ -6,6 +6,8 @@ permalink: /kb/182/Q182824/
 
 ## Q182824: Server-side Script Debugging Causes TypeLibrary Call To Fail
 
+{% raw %}
+
 	Article: Q182824
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/182/Q182824/
 	
 	=============================================================================
 	
+
+{% endraw %}

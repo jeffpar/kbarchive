@@ -6,6 +6,8 @@ permalink: /kb/131/Q131471/
 
 ## Q131471: Environment Variables Update Immediately
 
+{% raw %}
+
 	Article: Q131471
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131471/
 	
 	=============================================================================
 	
+
+{% endraw %}

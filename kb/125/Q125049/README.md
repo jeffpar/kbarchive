@@ -6,6 +6,8 @@ permalink: /kb/125/Q125049/
 
 ## Q125049: BUG: ExtractIcon Not Freeing Up Memory
 
+{% raw %}
+
 	Article: Q125049
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -82,3 +84,5 @@ permalink: /kb/125/Q125049/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71286/
 
 ## Q71286: Macro Cannot Substitute String in Another Macro
 
+{% raw %}
+
 	Article: Q71286
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.11,1.12,1.13,1.2,1.3,1.4; NT:1.4,1.5
@@ -61,3 +63,5 @@ permalink: /kb/071/Q71286/
 	
 	=============================================================================
 	
+
+{% endraw %}

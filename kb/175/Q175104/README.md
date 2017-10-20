@@ -6,6 +6,8 @@ permalink: /kb/175/Q175104/
 
 ## Q175104: XFOR: AppleDouble Attachments Lost When Message Converts
 
+{% raw %}
+
 	Article: Q175104
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -41,3 +43,5 @@ permalink: /kb/175/Q175104/
 	
 	=============================================================================
 	
+
+{% endraw %}

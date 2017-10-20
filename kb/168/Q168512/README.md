@@ -6,6 +6,8 @@ permalink: /kb/168/Q168512/
 
 ## Q168512: IBMTRP.SYS Causes Stop 0x0000000A During Shutdown.
 
+{% raw %}
+
 	Article: Q168512
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -67,3 +69,5 @@ permalink: /kb/168/Q168512/
 	
 	=============================================================================
 	
+
+{% endraw %}

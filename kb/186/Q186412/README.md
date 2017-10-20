@@ -6,6 +6,8 @@ permalink: /kb/186/Q186412/
 
 ## Q186412: SMS: How to Disable the Restart Now/Don't Restart Now Message
 
+{% raw %}
+
 	Article: Q186412
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -92,3 +94,5 @@ permalink: /kb/186/Q186412/
 	
 	=============================================================================
 	
+
+{% endraw %}

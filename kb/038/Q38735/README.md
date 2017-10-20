@@ -6,6 +6,8 @@ permalink: /kb/038/Q38735/
 
 ## Q38735: Viewing Array Elements in CodeView
 
+{% raw %}
+
 	Article: Q38735
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -58,3 +60,5 @@ permalink: /kb/038/Q38735/
 	incorrect for this operation":
 	
 	   > ?buffer[i]
+
+{% endraw %}

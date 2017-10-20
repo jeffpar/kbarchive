@@ -6,6 +6,8 @@ permalink: /kb/155/Q155035/
 
 ## Q155035: STOP 0x00000036 On Shutdown Running RAS Server with a Digiboard
 
+{% raw %}
+
 	Article: Q155035
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/155/Q155035/
 	
 	=============================================================================
 	
+
+{% endraw %}

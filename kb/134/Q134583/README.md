@@ -6,6 +6,8 @@ permalink: /kb/134/Q134583/
 
 ## Q134583: Xircom PE3 Parallel Adapter Does Not Work on Toshiba Laptops
 
+{% raw %}
+
 	Article: Q134583
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/134/Q134583/
 	
 	=============================================================================
 	
+
+{% endraw %}

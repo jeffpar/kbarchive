@@ -6,6 +6,8 @@ permalink: /kb/142/Q142698/
 
 ## Q142698: Service Pack Overwrites Localized Version of Windows NT
 
+{% raw %}
+
 	Article: Q142698
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142698/
 	
 	=============================================================================
 	
+
+{% endraw %}

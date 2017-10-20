@@ -6,6 +6,8 @@ permalink: /kb/158/Q158250/
 
 ## Q158250: FIX: Inherited Code Fires Twice with DODEFAULT()
 
+{% raw %}
+
 	Article: Q158250
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -107,3 +109,5 @@ permalink: /kb/158/Q158250/
 	
 	=============================================================================
 	
+
+{% endraw %}

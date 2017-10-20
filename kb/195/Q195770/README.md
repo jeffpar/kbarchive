@@ -6,6 +6,8 @@ permalink: /kb/195/Q195770/
 
 ## Q195770: Print Margins Not Properly Configured When Using SNACFG.EXE
 
+{% raw %}
+
 	Article: Q195770
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -107,3 +109,5 @@ permalink: /kb/195/Q195770/
 	
 	=============================================================================
 	
+
+{% endraw %}

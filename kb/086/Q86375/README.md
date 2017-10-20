@@ -6,6 +6,8 @@ permalink: /kb/086/Q86375/
 
 ## Q86375: PC DB: Global Address List Definition and Details
 
+{% raw %}
+
 	Article: Q86375
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -241,3 +243,5 @@ permalink: /kb/086/Q86375/
 	
 	=============================================================================
 	
+
+{% endraw %}

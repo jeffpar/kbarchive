@@ -6,6 +6,8 @@ permalink: /kb/263/Q263345/
 
 ## Q263345: SMS: Client Installation Is Prevented if Logon Point Has Changed
 
+{% raw %}
+
 	Article: Q263345
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP2
@@ -100,3 +102,5 @@ permalink: /kb/263/Q263345/
 	
 	=============================================================================
 	
+
+{% endraw %}

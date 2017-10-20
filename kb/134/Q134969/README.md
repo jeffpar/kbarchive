@@ -6,6 +6,8 @@ permalink: /kb/134/Q134969/
 
 ## Q134969: Faxing from 16-bit Program Using Separate Memory Space Fails
 
+{% raw %}
+
 	Article: Q134969
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -92,3 +94,5 @@ permalink: /kb/134/Q134969/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84932/
 
 ## Q84932: DLLSKEL Demonstrates DLL and Calling Application
 
+{% raw %}
+
 	Article: Q84932
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -112,3 +114,5 @@ permalink: /kb/084/Q84932/
 	
 	=============================================================================
 	
+
+{% endraw %}

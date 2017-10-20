@@ -6,6 +6,8 @@ permalink: /kb/232/Q232162/
 
 ## Q232162: Incorrect CRL on Certificates Issued by Certificate Services 2.0
 
+{% raw %}
+
 	Article: Q232162
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -87,3 +89,5 @@ permalink: /kb/232/Q232162/
 	
 	=============================================================================
 	
+
+{% endraw %}

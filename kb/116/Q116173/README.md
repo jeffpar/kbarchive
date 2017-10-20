@@ -6,6 +6,8 @@ permalink: /kb/116/Q116173/
 
 ## Q116173: Installing the HP HP560C Printer Driver
 
+{% raw %}
+
 	Article: Q116173
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/116/Q116173/
 	
 	=============================================================================
 	
+
+{% endraw %}

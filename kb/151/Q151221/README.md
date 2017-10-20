@@ -6,6 +6,8 @@ permalink: /kb/151/Q151221/
 
 ## Q151221: How Remote Control Registers with WINS Server
 
+{% raw %}
+
 	Article: Q151221
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -50,3 +52,5 @@ permalink: /kb/151/Q151221/
 	
 	=============================================================================
 	
+
+{% endraw %}

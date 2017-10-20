@@ -6,6 +6,8 @@ permalink: /kb/183/Q183677/
 
 ## Q183677: Client Authentication with Personal Certificates Fail
 
+{% raw %}
+
 	Article: Q183677
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/183/Q183677/
 	
 	=============================================================================
 	
+
+{% endraw %}

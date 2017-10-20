@@ -6,6 +6,8 @@ permalink: /kb/085/Q85520/
 
 ## Q85520: INFO: Archiving Several Objects That Point to a Third Object
 
+{% raw %}
+
 	Article: Q85520
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1
@@ -78,3 +80,5 @@ permalink: /kb/085/Q85520/
 	
 	=============================================================================
 	
+
+{% endraw %}

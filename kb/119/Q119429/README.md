@@ -6,6 +6,8 @@ permalink: /kb/119/Q119429/
 
 ## Q119429: ScanDisk Marks Valid Clusters Bad with Incorrect CMOS Settings
 
+{% raw %}
+
 	Article: Q119429
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/119/Q119429/
 	
 	=============================================================================
 	
+
+{% endraw %}

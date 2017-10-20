@@ -6,6 +6,8 @@ permalink: /kb/195/Q195636/
 
 ## Q195636: Fiber System Loses SCSI Reservation After Multiple Restarts
 
+{% raw %}
+
 	Article: Q195636
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/195/Q195636/
 	
 	=============================================================================
 	
+
+{% endraw %}

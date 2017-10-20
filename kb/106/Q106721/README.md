@@ -6,6 +6,8 @@ permalink: /kb/106/Q106721/
 
 ## Q106721: FIX: Tab Edit Descriptor Can Give Incorrect Results with READ
 
+{% raw %}
+
 	Article: Q106721
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -78,3 +80,5 @@ permalink: /kb/106/Q106721/
 	
 	=============================================================================
 	
+
+{% endraw %}

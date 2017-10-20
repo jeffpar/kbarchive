@@ -6,6 +6,8 @@ permalink: /kb/183/Q183386/
 
 ## Q183386: WD97: Shortcut Key Doesn't Bring Word to the Front with Focus
 
+{% raw %}
+
 	Article: Q183386
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/183/Q183386/
 	
 	=============================================================================
 	
+
+{% endraw %}

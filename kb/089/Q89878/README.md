@@ -6,6 +6,8 @@ permalink: /kb/089/Q89878/
 
 ## Q89878: Windows Sound System: How SoundScapes Works
 
+{% raw %}
+
 	Article: Q89878
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/089/Q89878/
 	
 	=============================================================================
 	
+
+{% endraw %}

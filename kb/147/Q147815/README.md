@@ -6,6 +6,8 @@ permalink: /kb/147/Q147815/
 
 ## Q147815: HOWTO: Create a Flashing Title Bar on a Visual Basic Form
 
+{% raw %}
+
 	Article: Q147815
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -145,3 +147,5 @@ permalink: /kb/147/Q147815/
 	
 	=============================================================================
 	
+
+{% endraw %}

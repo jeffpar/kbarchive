@@ -6,6 +6,8 @@ permalink: /kb/156/Q156124/
 
 ## Q156124: XFOR: How to Use a Resync.glb with an Exchange Requestor
 
+{% raw %}
+
 	Article: Q156124
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156124/
 	
 	=============================================================================
 	
+
+{% endraw %}

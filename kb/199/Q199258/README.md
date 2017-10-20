@@ -6,6 +6,8 @@ permalink: /kb/199/Q199258/
 
 ## Q199258: XFOR: IMS Message Counts in  Admin. Not Reflected in Queues
 
+{% raw %}
+
 	Article: Q199258
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -49,3 +51,5 @@ permalink: /kb/199/Q199258/
 	
 	=============================================================================
 	
+
+{% endraw %}

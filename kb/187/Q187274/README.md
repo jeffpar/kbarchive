@@ -6,6 +6,8 @@ permalink: /kb/187/Q187274/
 
 ## Q187274: BUG: Referencing This.Value in Editbox Refresh Causes Error
 
+{% raw %}
+
 	Article: Q187274
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -144,3 +146,5 @@ permalink: /kb/187/Q187274/
 	
 	=============================================================================
 	
+
+{% endraw %}

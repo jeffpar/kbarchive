@@ -6,6 +6,8 @@ permalink: /kb/199/Q199106/
 
 ## Q199106: WD97: Hidden AutoNum Field Show Result After Save as Word 6.0/95
 
+{% raw %}
+
 	Article: Q199106
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/199/Q199106/
 	
 	=============================================================================
 	
+
+{% endraw %}

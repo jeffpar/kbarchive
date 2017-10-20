@@ -6,6 +6,8 @@ permalink: /kb/246/Q246517/
 
 ## Q246517: XADM: Unable to Resolve DL from the Global Address List
 
+{% raw %}
+
 	Article: Q246517
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/246/Q246517/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149614/
 
 ## Q149614: Replaceable Parameter Not Saved When Editing File Type
 
+{% raw %}
+
 	Article: Q149614
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -68,3 +70,5 @@ permalink: /kb/149/Q149614/
 	
 	=============================================================================
 	
+
+{% endraw %}

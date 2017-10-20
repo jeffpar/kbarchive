@@ -6,6 +6,8 @@ permalink: /kb/209/Q209483/
 
 ## Q209483: WD97: Printing Slow When Printing Text Boxes Under Windows NT 4
 
+{% raw %}
+
 	Article: Q209483
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/209/Q209483/
 	
 	=============================================================================
 	
+
+{% endraw %}

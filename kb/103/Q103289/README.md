@@ -6,6 +6,8 @@ permalink: /kb/103/Q103289/
 
 ## Q103289: Mac Gty: Using Auto-Propagation Versus Gateway Installer
 
+{% raw %}
+
 	Article: Q103289
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1,3.1a
@@ -109,3 +111,5 @@ permalink: /kb/103/Q103289/
 	
 	=============================================================================
 	
+
+{% endraw %}

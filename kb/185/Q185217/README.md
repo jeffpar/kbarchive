@@ -6,6 +6,8 @@ permalink: /kb/185/Q185217/
 
 ## Q185217: Desktop Icons Appear As the Default Windows Icon
 
+{% raw %}
+
 	Article: Q185217
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -167,3 +169,5 @@ permalink: /kb/185/Q185217/
 	
 	=============================================================================
 	
+
+{% endraw %}

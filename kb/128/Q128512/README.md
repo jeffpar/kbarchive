@@ -6,6 +6,8 @@ permalink: /kb/128/Q128512/
 
 ## Q128512: SMTP: -MR Option Ignored When You Use It with -MD
 
+{% raw %}
+
 	Article: Q128512
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/128/Q128512/
 	
 	=============================================================================
 	
+
+{% endraw %}

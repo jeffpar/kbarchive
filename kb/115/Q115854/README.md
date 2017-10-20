@@ -6,6 +6,8 @@ permalink: /kb/115/Q115854/
 
 ## Q115854: FIX: Cannot Access Private Member from Friend Class
 
+{% raw %}
+
 	Article: Q115854
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5
@@ -81,3 +83,5 @@ permalink: /kb/115/Q115854/
 	
 	=============================================================================
 	
+
+{% endraw %}

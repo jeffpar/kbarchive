@@ -6,6 +6,8 @@ permalink: /kb/150/Q150054/
 
 ## Q150054: Error: &quot;An Extended Error Has Occurred&quot; on Windows 95 Client
 
+{% raw %}
+
 	Article: Q150054
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -53,3 +55,5 @@ permalink: /kb/150/Q150054/
 	
 	=============================================================================
 	
+
+{% endraw %}

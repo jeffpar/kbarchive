@@ -6,6 +6,8 @@ permalink: /kb/196/Q196588/
 
 ## Q196588: BUG: Picture Field Dropped as Text Box on Data Report
 
+{% raw %}
+
 	Article: Q196588
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -80,3 +82,5 @@ permalink: /kb/196/Q196588/
 	
 	=============================================================================
 	
+
+{% endraw %}

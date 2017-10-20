@@ -6,6 +6,8 @@ permalink: /kb/195/Q195876/
 
 ## Q195876: Encarta: Designed to Be Viewed at 800 x 600 Screen Resolution
 
+{% raw %}
+
 	Article: Q195876
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :
@@ -64,3 +66,5 @@ permalink: /kb/195/Q195876/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193262/
 
 ## Q193262: PRB: Quotes Added When Using Write# to Write Numbers to File
 
+{% raw %}
+
 	Article: Q193262
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/193/Q193262/
 	
 	=============================================================================
 	
+
+{% endraw %}

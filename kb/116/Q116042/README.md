@@ -6,6 +6,8 @@ permalink: /kb/116/Q116042/
 
 ## Q116042: Compatibility Layer Doesn't Support Some Paradox 4.x Types
 
+{% raw %}
+
 	Article: Q116042
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -55,3 +57,5 @@ permalink: /kb/116/Q116042/
 	
 	=============================================================================
 	
+
+{% endraw %}

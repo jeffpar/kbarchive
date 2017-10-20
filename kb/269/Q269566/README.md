@@ -6,6 +6,8 @@ permalink: /kb/269/Q269566/
 
 ## Q269566: WD97: ErrMsg Clicking &quot;Exit&quot;, &quot;AutoCorrect&quot;, &quot;Increase Indent&quot;
 
+{% raw %}
+
 	Article: Q269566
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -179,3 +181,5 @@ permalink: /kb/269/Q269566/
 	
 	=============================================================================
 	
+
+{% endraw %}

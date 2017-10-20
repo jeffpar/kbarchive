@@ -6,6 +6,8 @@ permalink: /kb/224/Q224293/
 
 ## Q224293: Cluster Admin Extension Can't Remotely Administer IIS in Cluster
 
+{% raw %}
+
 	Article: Q224293
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/224/Q224293/
 	
 	=============================================================================
 	
+
+{% endraw %}

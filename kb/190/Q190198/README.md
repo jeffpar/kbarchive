@@ -6,6 +6,8 @@ permalink: /kb/190/Q190198/
 
 ## Q190198: BUG: VB Fails When Editing Modules That Are Interdependent
 
+{% raw %}
+
 	Article: Q190198
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/190/Q190198/
 	
 	=============================================================================
 	
+
+{% endraw %}

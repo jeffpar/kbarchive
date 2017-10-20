@@ -6,6 +6,8 @@ permalink: /kb/148/Q148498/
 
 ## Q148498: DOC: CListBox::ItemFromPoint() Works Only in Windows 95
 
+{% raw %}
+
 	Article: Q148498
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -112,3 +114,5 @@ permalink: /kb/148/Q148498/
 	
 	=============================================================================
 	
+
+{% endraw %}

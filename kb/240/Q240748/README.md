@@ -6,6 +6,8 @@ permalink: /kb/240/Q240748/
 
 ## Q240748: PRB: Opening a DBase IV File with Long File Name Returns Error
 
+{% raw %}
+
 	Article: Q240748
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/240/Q240748/
 	
 	=============================================================================
 	
+
+{% endraw %}

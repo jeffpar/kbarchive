@@ -6,6 +6,8 @@ permalink: /kb/132/Q132360/
 
 ## Q132360: Error Message Setting Up Program Items: Invalid Path
 
+{% raw %}
+
 	Article: Q132360
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/132/Q132360/
 	
 	=============================================================================
 	
+
+{% endraw %}

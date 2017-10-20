@@ -6,6 +6,8 @@ permalink: /kb/087/Q87446/
 
 ## Q87446: 471 Quickwriter 5204 Omits Printing in Fanfold Size
 
+{% raw %}
+
 	Article: Q87446
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/087/Q87446/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131618/
 
 ## Q131618: Tape Drive Error Detected with Qlogic Fast SCSI IQ PCI Adapter
 
+{% raw %}
+
 	Article: Q131618
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/131/Q131618/
 	
 	=============================================================================
 	
+
+{% endraw %}

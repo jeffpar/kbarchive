@@ -6,6 +6,8 @@ permalink: /kb/085/Q85454/
 
 ## Q85454: T2HINTS.WRI from Windows Resource Kit Version 3.1
 
+{% raw %}
+
 	Article: Q85454
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -189,3 +191,5 @@ permalink: /kb/085/Q85454/
 	
 	=============================================================================
 	
+
+{% endraw %}

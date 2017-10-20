@@ -6,6 +6,8 @@ permalink: /kb/067/Q67697/
 
 ## Q67697: UI Toolbox: &quot;Subscript Out of Range&quot; or Hang on WindowDo Call
 
+{% raw %}
+
 	Article: Q67697
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -73,3 +75,5 @@ permalink: /kb/067/Q67697/
 	UITBEFR.QLB:
 	
 	        LINK /Q UITBEFR.LIB,,,QBXQLB.LIB;
+
+{% endraw %}

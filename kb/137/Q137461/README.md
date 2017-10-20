@@ -6,6 +6,8 @@ permalink: /kb/137/Q137461/
 
 ## Q137461: Mac Encarta 95: Some Sounds Do Not Play
 
+{% raw %}
+
 	Article: Q137461
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -60,3 +62,5 @@ permalink: /kb/137/Q137461/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130701/
 
 ## Q130701: PC Win: Sending Mail Without Delay with ForceScanInterval=1
 
+{% raw %}
+
 	Article: Q130701
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -61,3 +63,5 @@ permalink: /kb/130/Q130701/
 	
 	=============================================================================
 	
+
+{% endraw %}

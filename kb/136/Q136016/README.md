@@ -6,6 +6,8 @@ permalink: /kb/136/Q136016/
 
 ## Q136016: AFIELDS() Has Been Enhanced in Visual FoxPro
 
+{% raw %}
+
 	Article: Q136016
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136016/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137295/
 
 ## Q137295: How to Convert Memo Fields into Embedded Word Documents
 
+{% raw %}
+
 	Article: Q137295
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b; WINDOWS:3.0,6.0
@@ -130,3 +132,5 @@ permalink: /kb/137/Q137295/
 	
 	=============================================================================
 	
+
+{% endraw %}

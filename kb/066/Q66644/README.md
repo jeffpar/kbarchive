@@ -6,6 +6,8 @@ permalink: /kb/066/Q66644/
 
 ## Q66644: NMAKE /N Doesn't Work Across Multiple Dependency Blocks
 
+{% raw %}
+
 	Article: Q66644
 	Product(s): See article
 	Version(s): 1.11 1.12 | 1.11 1.12
@@ -56,3 +58,5 @@ permalink: /kb/066/Q66644/
 	
 	sub.lib:: mod2.obj
 	        lib $@ -+ mod2.obj;
+
+{% endraw %}

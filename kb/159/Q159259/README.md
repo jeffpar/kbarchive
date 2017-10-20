@@ -6,6 +6,8 @@ permalink: /kb/159/Q159259/
 
 ## Q159259: Spike's World: How Do I Download and Install the Games?
 
+{% raw %}
+
 	Article: Q159259
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/159/Q159259/
 	
 	=============================================================================
 	
+
+{% endraw %}

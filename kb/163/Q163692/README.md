@@ -6,6 +6,8 @@ permalink: /kb/163/Q163692/
 
 ## Q163692: PPT: Code Displays Each Word of Selection in Message Box
 
+{% raw %}
+
 	Article: Q163692
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -109,3 +111,5 @@ permalink: /kb/163/Q163692/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163015/
 
 ## Q163015: Use of &quot;Already Verified&quot; APPC Security from Invoking TPs
 
+{% raw %}
+
 	Article: Q163015
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -110,3 +112,5 @@ permalink: /kb/163/Q163015/
 	
 	=============================================================================
 	
+
+{% endraw %}

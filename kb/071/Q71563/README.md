@@ -6,6 +6,8 @@ permalink: /kb/071/Q71563/
 
 ## Q71563: Map Analysis Doesn't Run in the Background
 
+{% raw %}
+
 	Article: Q71563
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/071/Q71563/
 	
 	=============================================================================
 	
+
+{% endraw %}

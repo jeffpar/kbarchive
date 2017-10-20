@@ -6,6 +6,8 @@ permalink: /kb/302/Q302658/
 
 ## Q302658: Trouble Shooting Code - &quot;Mail&quot;
 
+{% raw %}
+
 	Article: Q302658
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -41,3 +43,5 @@ permalink: /kb/302/Q302658/
 	
 	=============================================================================
 	
+
+{% endraw %}

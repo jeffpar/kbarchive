@@ -6,6 +6,8 @@ permalink: /kb/177/Q177107/
 
 ## Q177107: ODE97: Displaying Context-Sensitive Help for What'sThis Button
 
+{% raw %}
+
 	Article: Q177107
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -104,3 +106,5 @@ permalink: /kb/177/Q177107/
 	
 	=============================================================================
 	
+
+{% endraw %}

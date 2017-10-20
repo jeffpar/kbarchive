@@ -6,6 +6,8 @@ permalink: /kb/178/Q178139/
 
 ## Q178139: MSN Notifies You About More E-mail Messages Than You Receive
 
+{% raw %}
+
 	Article: Q178139
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -66,3 +68,5 @@ permalink: /kb/178/Q178139/
 	
 	=============================================================================
 	
+
+{% endraw %}

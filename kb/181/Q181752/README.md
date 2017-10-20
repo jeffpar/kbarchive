@@ -6,6 +6,8 @@ permalink: /kb/181/Q181752/
 
 ## Q181752: Unable to Save Contents of the Clipboard Using Clipboard Viewer
 
+{% raw %}
+
 	Article: Q181752
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/181/Q181752/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153958/
 
 ## Q153958: No Support for Print Performance Architecture under Windows NT
 
+{% raw %}
+
 	Article: Q153958
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -139,3 +141,5 @@ permalink: /kb/153/Q153958/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157895/
 
 ## Q157895: No Context Menu for Clock.exe on Taskbar
 
+{% raw %}
+
 	Article: Q157895
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157895/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128640/
 
 ## Q128640: Boca Vortek Drivers Cause &quot;Error in EXE File&quot; Error Message
 
+{% raw %}
+
 	Article: Q128640
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -97,3 +99,5 @@ permalink: /kb/128/Q128640/
 	
 	=============================================================================
 	
+
+{% endraw %}

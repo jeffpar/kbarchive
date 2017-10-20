@@ -6,6 +6,8 @@ permalink: /kb/142/Q142694/
 
 ## Q142694: CPU Write-Back Cache Disabled on Certain Cyrix Processors
 
+{% raw %}
+
 	Article: Q142694
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/142/Q142694/
 	
 	=============================================================================
 	
+
+{% endraw %}

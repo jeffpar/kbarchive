@@ -6,6 +6,8 @@ permalink: /kb/162/Q162767/
 
 ## Q162767: QMS Print System 1725 Always Defaults to Letter
 
+{% raw %}
+
 	Article: Q162767
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -102,3 +104,5 @@ permalink: /kb/162/Q162767/
 	
 	=============================================================================
 	
+
+{% endraw %}

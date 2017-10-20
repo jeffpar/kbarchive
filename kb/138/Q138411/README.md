@@ -6,6 +6,8 @@ permalink: /kb/138/Q138411/
 
 ## Q138411: Deriving an OLE Control from a Base Control
 
+{% raw %}
+
 	Article: Q138411
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -123,8 +125,8 @@ permalink: /kb/138/Q138411/
 	  message map was removed:
 	
 	     BEGIN_MESSAGE_MAP(CBaseShapeCtrl, COleControl)
-	       //{ {AFX_MSG_MAP(CBaseShapeCtrl)
-	       //} }AFX_MSG_MAP
+	       //{{AFX_MSG_MAP(CBaseShapeCtrl)
+	       //}}AFX_MSG_MAP
 	       //ON_OLEVERB(AFX_IDS_VERB_PROPERTIES, OnProperties)
 	     END_MESSAGE_MAP()
 	
@@ -227,13 +229,13 @@ permalink: /kb/138/Q138411/
 	    properties:
 	      // NOTE - ClassWizard will maintain property information here.
 	      //    Use extreme caution when editing this section.
-	      //{ {AFX_ODL_PROP(CCircleCtrl)
+	      //{{AFX_ODL_PROP(CCircleCtrl)
 	      [id(0x10001)] OLE_COLOR FillColor;
 	      [id(0x10002)] OLE_COLOR LineColor;
 	      [id(0x10003)] short LineWidth;
 	      [id(1)] boolean CircleShape;
 	      [id(2)] short CircleOffset;
-	      //} }AFX_ODL_PROP
+	      //}}AFX_ODL_PROP
 	      ...
 	
 	The FillColor, LineColor, and LineWidth properties implemented in the base class
@@ -258,12 +260,12 @@ permalink: /kb/138/Q138411/
 	    methods:
 	      // NOTE - ClassWizard will maintain event information here.
 	      //    Use extreme caution when editing this section.
-	      //{ {AFX_ODL_EVENT(CCircleCtrl)
+	      //{{AFX_ODL_EVENT(CCircleCtrl)
 	      [id(1)] void BaseEvent1(long lParam);
 	      [id(2)] void BaseEvent2(BSTR pszString);
 	      [id(3)] void CircleEvent1(long lParam);
 	      [id(4)] void CircleEvent2(long lParam);
-	      //} }AFX_ODL_EVENT
+	      //}}AFX_ODL_EVENT
 	  };
 	
 	Manually updating the DISPIDs can be problematic because ClassWizard may get
@@ -286,7 +288,7 @@ permalink: /kb/138/Q138411/
 	  // Dispatch and event IDs
 	  public:
 	    enum {
-	    //{ {AFX_DISP_ID(CCircleCtrl)
+	    //{{AFX_DISP_ID(CCircleCtrl)
 	    //dispidFillColor   = 65537L,
 	    //dispidLineColor   = 65538L,
 	    //dispidLineWidth   = 65539L,
@@ -302,7 +304,7 @@ permalink: /kb/138/Q138411/
 	    //eventidBaseEvent2 = 2L,
 	    eventidCircleEvent1 = 3L,
 	    eventidCircleEvent2 = 4L,
-	    //} }AFX_DISP_ID
+	    //}}AFX_DISP_ID
 	  };
 	
 	the Shapes2 sample is based on a ControlWizard-generated OLE control. Files
@@ -335,3 +337,5 @@ permalink: /kb/138/Q138411/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152916/
 
 ## Q152916: XCLN: MAC Client Can't Open Attachments from Migrated MAC PO
 
+{% raw %}
+
 	Article: Q152916
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -80,3 +82,5 @@ permalink: /kb/152/Q152916/
 	
 	=============================================================================
 	
+
+{% endraw %}

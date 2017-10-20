@@ -6,6 +6,8 @@ permalink: /kb/012/Q12230/
 
 ## Q12230: IRQ Settings and Mouse Installation
 
+{% raw %}
+
 	Article: Q12230
 	Product(s): See article
 	Version(s): 1.x 2.x 3.x 4.x 5.x 6.x 1.00
@@ -123,3 +125,5 @@ permalink: /kb/012/Q12230/
 	problems are uncovered, the next step is to remove as much hardware as
 	possible. In this way, the conflict should be uncovered between
 	particular devices and a resolution of the problem will follow.
+
+{% endraw %}

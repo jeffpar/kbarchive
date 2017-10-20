@@ -6,6 +6,8 @@ permalink: /kb/179/Q179338/
 
 ## Q179338: WD97: Programmatically Unlinking Field Makes Word Stop
 
+{% raw %}
+
 	Article: Q179338
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/179/Q179338/
 	
 	=============================================================================
 	
+
+{% endraw %}

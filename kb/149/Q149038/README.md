@@ -6,6 +6,8 @@ permalink: /kb/149/Q149038/
 
 ## Q149038: FIX: VB Registry Functions Are Limited with Nested Settings
 
+{% raw %}
+
 	Article: Q149038
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/149/Q149038/
 	
 	=============================================================================
 	
+
+{% endraw %}

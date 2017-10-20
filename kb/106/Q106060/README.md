@@ -6,6 +6,8 @@ permalink: /kb/106/Q106060/
 
 ## Q106060: FIX: No &quot;Save Changes&quot; Prompt After Editing a String Table
 
+{% raw %}
+
 	Article: Q106060
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/106/Q106060/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240436/
 
 ## Q240436: FIX: Repeated SQL SELECT Statements Cause &quot;File is in use&quot; Error
 
+{% raw %}
+
 	Article: Q240436
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/240/Q240436/
 	
 	=============================================================================
 	
+
+{% endraw %}

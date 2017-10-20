@@ -6,6 +6,8 @@ permalink: /kb/129/Q129790/
 
 ## Q129790: Base Classes Available in Visual FoxPro
 
+{% raw %}
+
 	Article: Q129790
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -100,3 +102,5 @@ permalink: /kb/129/Q129790/
 	
 	=============================================================================
 	
+
+{% endraw %}

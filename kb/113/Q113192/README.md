@@ -6,6 +6,8 @@ permalink: /kb/113/Q113192/
 
 ## Q113192: STOP Message: 0x0000000A with ARROW.SYS Driver
 
+{% raw %}
+
 	Article: Q113192
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -50,3 +52,5 @@ permalink: /kb/113/Q113192/
 	
 	=============================================================================
 	
+
+{% endraw %}

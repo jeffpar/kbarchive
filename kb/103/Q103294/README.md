@@ -6,6 +6,8 @@ permalink: /kb/103/Q103294/
 
 ## Q103294: Microsoft Dinosaurs in Windows NT
 
+{% raw %}
+
 	Article: Q103294
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -47,3 +49,5 @@ permalink: /kb/103/Q103294/
 	
 	=============================================================================
 	
+
+{% endraw %}

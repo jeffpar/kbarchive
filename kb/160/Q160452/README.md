@@ -6,6 +6,8 @@ permalink: /kb/160/Q160452/
 
 ## Q160452: NVAlert Service Logs Event 3006 and Stops Responding
 
+{% raw %}
+
 	Article: Q160452
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -72,3 +74,5 @@ permalink: /kb/160/Q160452/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58323/
 
 ## Q58323: PPT: Setting Default Attributes for Slide Objects
 
+{% raw %}
+
 	Article: Q58323
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0,3.0a,3.0b,4.0,4.0a,4.0c,7.0
@@ -101,3 +103,5 @@ permalink: /kb/058/Q58323/
 	
 	=============================================================================
 	
+
+{% endraw %}

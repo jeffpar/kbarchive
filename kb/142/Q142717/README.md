@@ -6,6 +6,8 @@ permalink: /kb/142/Q142717/
 
 ## Q142717: IExplorer 1.5 Fails Anonymous Log On to WinNT 3.51 FTP Server
 
+{% raw %}
+
 	Article: Q142717
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -47,3 +49,5 @@ permalink: /kb/142/Q142717/
 	
 	=============================================================================
 	
+
+{% endraw %}

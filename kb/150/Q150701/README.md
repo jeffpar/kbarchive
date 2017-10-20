@@ -6,6 +6,8 @@ permalink: /kb/150/Q150701/
 
 ## Q150701: BUG: VB 4.0 Professional Edition Does Not Reinstall Help Files
 
+{% raw %}
+
 	Article: Q150701
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150701/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198364/
 
 ## Q198364: WD97: How to View Exact Tab, Indent, Margin Positions on Ruler
 
+{% raw %}
+
 	Article: Q198364
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/198/Q198364/
 	
 	=============================================================================
 	
+
+{% endraw %}

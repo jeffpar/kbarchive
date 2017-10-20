@@ -6,6 +6,8 @@ permalink: /kb/095/Q95633/
 
 ## Q95633: Automating RAMDrive Compression with DoubleSpace
 
+{% raw %}
+
 	Article: Q95633
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -121,3 +123,5 @@ permalink: /kb/095/Q95633/
 	
 	=============================================================================
 	
+
+{% endraw %}

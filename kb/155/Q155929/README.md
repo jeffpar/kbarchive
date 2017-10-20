@@ -6,6 +6,8 @@ permalink: /kb/155/Q155929/
 
 ## Q155929: BUG: APRINTERS Function Behaves Differently in Windows 95
 
+{% raw %}
+
 	Article: Q155929
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/155/Q155929/
 	
 	=============================================================================
 	
+
+{% endraw %}

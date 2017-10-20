@@ -6,6 +6,8 @@ permalink: /kb/012/Q12337/
 
 ## Q12337: Explanation of String Space Garbage Collection; FRE Function
 
+{% raw %}
+
 	Article: Q12337
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -52,3 +54,5 @@ permalink: /kb/012/Q12337/
 	
 	3. String descriptors are the first bytes of each string, and they
 	   move as the strings move.
+
+{% endraw %}

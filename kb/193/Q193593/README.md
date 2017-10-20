@@ -6,6 +6,8 @@ permalink: /kb/193/Q193593/
 
 ## Q193593: PRB: Cannot Paste PrintScreen Result to OLE Control
 
+{% raw %}
+
 	Article: Q193593
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -126,3 +128,5 @@ permalink: /kb/193/Q193593/
 	
 	=============================================================================
 	
+
+{% endraw %}

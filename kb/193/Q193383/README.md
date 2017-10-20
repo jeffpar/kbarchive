@@ -6,6 +6,8 @@ permalink: /kb/193/Q193383/
 
 ## Q193383: Research Organizer: PC-Cillin II Finds Virus in Soccer.ero File
 
+{% raw %}
+
 	Article: Q193383
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/193/Q193383/
 	
 	=============================================================================
 	
+
+{% endraw %}

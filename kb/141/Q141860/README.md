@@ -6,6 +6,8 @@ permalink: /kb/141/Q141860/
 
 ## Q141860: PPT: Can't Open Files Created in Foreign Language Version
 
+{% raw %}
+
 	Article: Q141860
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0; :4.0,7.0
@@ -73,3 +75,5 @@ permalink: /kb/141/Q141860/
 	
 	=============================================================================
 	
+
+{% endraw %}

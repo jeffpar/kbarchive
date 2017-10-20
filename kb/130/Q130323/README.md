@@ -6,6 +6,8 @@ permalink: /kb/130/Q130323/
 
 ## Q130323: PC MAPI: Sample VB Code to Determine Mail Session User
 
+{% raw %}
+
 	Article: Q130323
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -131,3 +133,5 @@ permalink: /kb/130/Q130323/
 	
 	=============================================================================
 	
+
+{% endraw %}

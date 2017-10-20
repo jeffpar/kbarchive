@@ -6,6 +6,8 @@ permalink: /kb/085/Q85544/
 
 ## Q85544: Bitstream Fontware Installation Kit: Information and Errors
 
+{% raw %}
+
 	Article: Q85544
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -166,3 +168,5 @@ permalink: /kb/085/Q85544/
 	
 	=============================================================================
 	
+
+{% endraw %}

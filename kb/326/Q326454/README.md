@@ -6,6 +6,8 @@ permalink: /kb/326/Q326454/
 
 ## Q326454: BUG: MDM Agent System Does Not Power Off
 
+{% raw %}
+
 	Article: Q326454
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/326/Q326454/
 	
 	=============================================================================
 	
+
+{% endraw %}

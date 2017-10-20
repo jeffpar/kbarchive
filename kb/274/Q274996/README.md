@@ -6,6 +6,8 @@ permalink: /kb/274/Q274996/
 
 ## Q274996: Cannot Delete Exchsrvr Folder w. a &quot;SHARING VIOLATION&quot; Err Msg
 
+{% raw %}
+
 	Article: Q274996
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -69,3 +71,5 @@ permalink: /kb/274/Q274996/
 	
 	=============================================================================
 	
+
+{% endraw %}

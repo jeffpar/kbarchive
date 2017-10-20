@@ -6,6 +6,8 @@ permalink: /kb/250/Q250342/
 
 ## Q250342: XFOR: SNADS Connector Causes Host To Abend During Dirsync
 
+{% raw %}
+
 	Article: Q250342
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/250/Q250342/
 	
 	=============================================================================
 	
+
+{% endraw %}

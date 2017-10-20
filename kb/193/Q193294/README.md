@@ -6,6 +6,8 @@ permalink: /kb/193/Q193294/
 
 ## Q193294: PRB: PRTINFO() Function Causes Fatal Error on Windows 98
 
+{% raw %}
+
 	Article: Q193294
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -66,3 +68,5 @@ permalink: /kb/193/Q193294/
 	
 	=============================================================================
 	
+
+{% endraw %}

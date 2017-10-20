@@ -6,6 +6,8 @@ permalink: /kb/230/Q230488/
 
 ## Q230488: HOWTO: Print the Contents of the Wang (Kodak) ImageEdit Control
 
+{% raw %}
+
 	Article: Q230488
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/230/Q230488/
 	
 	=============================================================================
 	
+
+{% endraw %}

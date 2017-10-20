@@ -6,6 +6,8 @@ permalink: /kb/257/Q257926/
 
 ## Q257926: Encarta Dictionary: Essays in Hardbound Edition Are Not Included
 
+{% raw %}
+
 	Article: Q257926
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :
@@ -55,3 +57,5 @@ permalink: /kb/257/Q257926/
 	
 	=============================================================================
 	
+
+{% endraw %}

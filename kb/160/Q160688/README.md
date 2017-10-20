@@ -6,6 +6,8 @@ permalink: /kb/160/Q160688/
 
 ## Q160688: Monster Truck: Retail Version Does Not Run But Demo Does
 
+{% raw %}
+
 	Article: Q160688
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -132,3 +134,5 @@ permalink: /kb/160/Q160688/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122851/
 
 ## Q122851: PC WSPlus: Restoring the SCHEDULE.KEY File
 
+{% raw %}
+
 	Article: Q122851
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/122/Q122851/
 	
 	=============================================================================
 	
+
+{% endraw %}

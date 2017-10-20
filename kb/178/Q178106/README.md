@@ -6,6 +6,8 @@ permalink: /kb/178/Q178106/
 
 ## Q178106: Encarta: Taskbar Covered at 640 x 480 Display Resolution
 
+{% raw %}
+
 	Article: Q178106
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -80,3 +82,5 @@ permalink: /kb/178/Q178106/
 	
 	=============================================================================
 	
+
+{% endraw %}

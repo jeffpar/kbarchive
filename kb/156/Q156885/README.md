@@ -6,6 +6,8 @@ permalink: /kb/156/Q156885/
 
 ## Q156885: XGEN: Errors When Using the Header.exe Tool
 
+{% raw %}
+
 	Article: Q156885
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/156/Q156885/
 	
 	=============================================================================
 	
+
+{% endraw %}

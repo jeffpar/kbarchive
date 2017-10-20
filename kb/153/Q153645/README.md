@@ -6,6 +6,8 @@ permalink: /kb/153/Q153645/
 
 ## Q153645: Appctl16.exe Doesn't Look in Package Source Directory for Config
 
+{% raw %}
+
 	Article: Q153645
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -52,3 +54,5 @@ permalink: /kb/153/Q153645/
 	
 	=============================================================================
 	
+
+{% endraw %}

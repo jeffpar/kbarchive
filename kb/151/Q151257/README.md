@@ -6,6 +6,8 @@ permalink: /kb/151/Q151257/
 
 ## Q151257: How to Modify a Report Preview Window Property
 
+{% raw %}
+
 	Article: Q151257
 	Product(s): Microsoft FoxPro
 	Version(s): windows:3.0,3.0b,6.0
@@ -137,3 +139,5 @@ permalink: /kb/151/Q151257/
 	
 	=============================================================================
 	
+
+{% endraw %}

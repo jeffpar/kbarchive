@@ -6,6 +6,8 @@ permalink: /kb/168/Q168371/
 
 ## Q168371: HOWTO: IObjectSafety Marks ATL Controls Safe for Initializing
 
+{% raw %}
+
 	Article: Q168371
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0
@@ -202,3 +204,5 @@ permalink: /kb/168/Q168371/
 	
 	=============================================================================
 	
+
+{% endraw %}

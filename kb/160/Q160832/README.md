@@ -6,6 +6,8 @@ permalink: /kb/160/Q160832/
 
 ## Q160832: FP: &quot;Center&quot; Alignment Not Supported for ActiveX Objects
 
+{% raw %}
+
 	Article: Q160832
 	Product(s): Word Front Page
 	Version(s): ; MACINTOSH:1.0
@@ -72,3 +74,5 @@ permalink: /kb/160/Q160832/
 	
 	=============================================================================
 	
+
+{% endraw %}

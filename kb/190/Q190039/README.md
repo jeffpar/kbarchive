@@ -6,6 +6,8 @@ permalink: /kb/190/Q190039/
 
 ## Q190039: BUG: VB Crashes When Deselecting Multi-Selected Objects
 
+{% raw %}
+
 	Article: Q190039
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -84,3 +86,5 @@ permalink: /kb/190/Q190039/
 	
 	=============================================================================
 	
+
+{% endraw %}

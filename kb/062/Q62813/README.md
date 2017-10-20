@@ -6,6 +6,8 @@ permalink: /kb/062/Q62813/
 
 ## Q62813: FRE(-1) Decreases with Repeated Use of DEF FNa&#36; in QBX.EXE
 
+{% raw %}
+
 	Article: Q62813
 	Product(s): See article
 	Version(s): 7.00
@@ -62,3 +64,5 @@ permalink: /kb/062/Q62813/
 	This is a test string.
 	 179296
 	This is a test string.
+
+{% endraw %}

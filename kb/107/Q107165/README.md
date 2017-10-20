@@ -6,6 +6,8 @@ permalink: /kb/107/Q107165/
 
 ## Q107165: Stretched or Shrunken Graphics in Viewer
 
+{% raw %}
+
 	Article: Q107165
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -52,3 +54,5 @@ permalink: /kb/107/Q107165/
 	
 	=============================================================================
 	
+
+{% endraw %}

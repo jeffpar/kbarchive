@@ -6,6 +6,8 @@ permalink: /kb/058/Q58436/
 
 ## Q58436: Setting Size and Number of Internal Stacks
 
+{% raw %}
+
 	Article: Q58436
 	Product(s): See article
 	Version(s): 3.x 4.x 5.00 5.10
@@ -40,3 +42,5 @@ permalink: /kb/058/Q58436/
 	   stack frames is exhausted, the system halts with the message
 	   INTERNAL STACK OVERFLOW. Increasing the number parameter in the
 	   stacks command usually corrects the problem.
+
+{% endraw %}

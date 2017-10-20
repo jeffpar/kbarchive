@@ -6,6 +6,8 @@ permalink: /kb/244/Q244978/
 
 ## Q244978: Event ID 1003 and DHCP Errors with Two DHCP Servers on Network.
 
+{% raw %}
+
 	Article: Q244978
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/244/Q244978/
 	
 	=============================================================================
 	
+
+{% endraw %}

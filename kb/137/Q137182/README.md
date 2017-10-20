@@ -6,6 +6,8 @@ permalink: /kb/137/Q137182/
 
 ## Q137182: PRB: List Box Shows .F. from an Empty Array
 
+{% raw %}
+
 	Article: Q137182
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -208,3 +210,5 @@ permalink: /kb/137/Q137182/
 	
 	=============================================================================
 	
+
+{% endraw %}

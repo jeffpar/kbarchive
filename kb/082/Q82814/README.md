@@ -6,6 +6,8 @@ permalink: /kb/082/Q82814/
 
 ## Q82814: Re-Registering .REG Files
 
+{% raw %}
+
 	Article: Q82814
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/082/Q82814/
 	
 	=============================================================================
 	
+
+{% endraw %}

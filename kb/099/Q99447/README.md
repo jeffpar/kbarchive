@@ -6,6 +6,8 @@ permalink: /kb/099/Q99447/
 
 ## Q99447: Password Protection Option Is Not Saved in MWBACKUP SET File
 
+{% raw %}
+
 	Article: Q99447
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -44,3 +46,5 @@ permalink: /kb/099/Q99447/
 	
 	=============================================================================
 	
+
+{% endraw %}

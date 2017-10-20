@@ -6,6 +6,8 @@ permalink: /kb/191/Q191872/
 
 ## Q191872: PRB: Enum HelpStrings Not Displayed in Properties Window
 
+{% raw %}
+
 	Article: Q191872
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -55,9 +57,9 @@ permalink: /kb/191/Q191872/
 	       properties:
 	       // NOTE - ClassWizard will maintain property information here.
 	       //    Use extreme caution when editing this section.
-	       //{ {AFX_ODL_PROP(CEnumCtrl)
+	       //{{AFX_ODL_PROP(CEnumCtrl)
 	         [id(1)] LineStyleConstants LineStyle;
-	       //} }AFX_ODL_PROP
+	       //}}AFX_ODL_PROP
 	
 	When the ActiveX control has been sited on a form in Visual Basic 4.0, you can
 	see that the value of the LineStyle property, when viewed from the Properties
@@ -141,9 +143,9 @@ permalink: /kb/191/Q191872/
 	
 	        // NOTE - ClassWizard will maintain property information here.
 	        // Use extreme caution when editing this section.
-	        //{ {AFX_ODL_PROP(CEnumTestCtrl)
+	        //{{AFX_ODL_PROP(CEnumTestCtrl)
 	           [id(1)] LineStyleConstants LineStyle;
-	        //} }AFX_ODL_PROP
+	        //}}AFX_ODL_PROP
 	
 	5. Compile your control. MFC will register the control for you.
 	
@@ -173,3 +175,5 @@ permalink: /kb/191/Q191872/
 	
 	=============================================================================
 	
+
+{% endraw %}

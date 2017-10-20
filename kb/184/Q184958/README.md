@@ -6,6 +6,8 @@ permalink: /kb/184/Q184958/
 
 ## Q184958: CART: Game Stops Responding When You Enter the Racing School
 
+{% raw %}
+
 	Article: Q184958
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -117,3 +119,5 @@ permalink: /kb/184/Q184958/
 	
 	=============================================================================
 	
+
+{% endraw %}

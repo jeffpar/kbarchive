@@ -6,6 +6,8 @@ permalink: /kb/239/Q239594/
 
 ## Q239594: IIS FTP Logs Write SIZE Requests as GET Requests with Zero Bytes
 
+{% raw %}
+
 	Article: Q239594
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -44,3 +46,5 @@ permalink: /kb/239/Q239594/
 	
 	=============================================================================
 	
+
+{% endraw %}

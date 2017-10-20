@@ -6,6 +6,8 @@ permalink: /kb/259/Q259110/
 
 ## Q259110: Unusable Link If Attachment Uses UNC Name
 
+{% raw %}
+
 	Article: Q259110
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -74,3 +76,5 @@ permalink: /kb/259/Q259110/
 	
 	=============================================================================
 	
+
+{% endraw %}

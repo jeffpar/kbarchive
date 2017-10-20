@@ -6,6 +6,8 @@ permalink: /kb/217/Q217892/
 
 ## Q217892: DirectX Err Msg: Problem Getting Extra Display Info at Step 3...
 
+{% raw %}
+
 	Article: Q217892
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -77,3 +79,5 @@ permalink: /kb/217/Q217892/
 	
 	=============================================================================
 	
+
+{% endraw %}

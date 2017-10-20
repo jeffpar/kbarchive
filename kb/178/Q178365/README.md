@@ -6,6 +6,8 @@ permalink: /kb/178/Q178365/
 
 ## Q178365: XCON: Exchange Logs Content Conversion Error 4096 or 4097
 
+{% raw %}
+
 	Article: Q178365
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/178/Q178365/
 	
 	=============================================================================
 	
+
+{% endraw %}

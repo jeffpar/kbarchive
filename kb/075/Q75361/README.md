@@ -6,6 +6,8 @@ permalink: /kb/075/Q75361/
 
 ## Q75361: Using Search Master CD-ROM Software with MS DOS 5.0
 
+{% raw %}
+
 	Article: Q75361
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -65,3 +67,5 @@ permalink: /kb/075/Q75361/
 	
 	=============================================================================
 	
+
+{% endraw %}

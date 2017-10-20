@@ -6,6 +6,8 @@ permalink: /kb/201/Q201586/
 
 ## Q201586: Reinstalling the SBS Client Computer to an Existing Client
 
+{% raw %}
+
 	Article: Q201586
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0,4.0a
@@ -100,3 +102,5 @@ permalink: /kb/201/Q201586/
 	
 	=============================================================================
 	
+
+{% endraw %}

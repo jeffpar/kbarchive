@@ -6,6 +6,8 @@ permalink: /kb/130/Q130786/
 
 ## Q130786: Kids: Hangs at Black Screen or Quits After Microsoft Logo
 
+{% raw %}
+
 	Article: Q130786
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,3.1,3.11,95,98
@@ -200,3 +202,5 @@ permalink: /kb/130/Q130786/
 	
 	=============================================================================
 	
+
+{% endraw %}

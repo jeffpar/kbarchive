@@ -6,6 +6,8 @@ permalink: /kb/101/Q101595/
 
 ## Q101595: PRB: &quot;Insufficient Memory for Application's Required Space&quot;
 
+{% raw %}
+
 	Article: Q101595
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -98,3 +100,5 @@ permalink: /kb/101/Q101595/
 	
 	=============================================================================
 	
+
+{% endraw %}

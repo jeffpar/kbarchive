@@ -6,6 +6,8 @@ permalink: /kb/170/Q170465/
 
 ## Q170465: WD97: Large MS-DOS File Is Damaged When Opened as MS-DOS Text
 
+{% raw %}
+
 	Article: Q170465
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/170/Q170465/
 	
 	=============================================================================
 	
+
+{% endraw %}

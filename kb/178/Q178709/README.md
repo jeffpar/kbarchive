@@ -6,6 +6,8 @@ permalink: /kb/178/Q178709/
 
 ## Q178709: XFOR: Internet Mail Service Is Not Properly Encoding Messages
 
+{% raw %}
+
 	Article: Q178709
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -65,3 +67,5 @@ permalink: /kb/178/Q178709/
 	
 	=============================================================================
 	
+
+{% endraw %}

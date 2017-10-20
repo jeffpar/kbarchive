@@ -6,6 +6,8 @@ permalink: /kb/183/Q183378/
 
 ## Q183378: HTML Help Authoring Kit: vcSampleDoc Files Missing from CD-ROM
 
+{% raw %}
+
 	Article: Q183378
 	Product(s): Microsoft Press
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/183/Q183378/
 	
 	=============================================================================
 	
+
+{% endraw %}

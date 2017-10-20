@@ -6,6 +6,8 @@ permalink: /kb/161/Q161290/
 
 ## Q161290: SMS: Network Adapter Card Information Not Correct
 
+{% raw %}
+
 	Article: Q161290
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -63,3 +65,5 @@ permalink: /kb/161/Q161290/
 	
 	=============================================================================
 	
+
+{% endraw %}

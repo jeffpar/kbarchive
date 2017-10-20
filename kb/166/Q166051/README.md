@@ -6,6 +6,8 @@ permalink: /kb/166/Q166051/
 
 ## Q166051: WD97: Starting Word Viewer Starts Word Instead
 
+{% raw %}
+
 	Article: Q166051
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/166/Q166051/
 	
 	=============================================================================
 	
+
+{% endraw %}

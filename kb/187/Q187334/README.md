@@ -6,6 +6,8 @@ permalink: /kb/187/Q187334/
 
 ## Q187334: SMS: Inventory Processor Does Not Indicate When MIF Not Created
 
+{% raw %}
+
 	Article: Q187334
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -83,3 +85,5 @@ permalink: /kb/187/Q187334/
 	
 	=============================================================================
 	
+
+{% endraw %}

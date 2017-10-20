@@ -6,6 +6,8 @@ permalink: /kb/146/Q146492/
 
 ## Q146492: Setting a New Contact to Private Requires Data to Be Entered
 
+{% raw %}
+
 	Article: Q146492
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -41,3 +43,5 @@ permalink: /kb/146/Q146492/
 	
 	=============================================================================
 	
+
+{% endraw %}

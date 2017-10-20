@@ -6,6 +6,8 @@ permalink: /kb/074/Q74038/
 
 ## Q74038: DOSKEY Macro to Search for File Text
 
+{% raw %}
+
 	Article: Q74038
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -99,3 +101,5 @@ permalink: /kb/074/Q74038/
 	
 	=============================================================================
 	
+
+{% endraw %}

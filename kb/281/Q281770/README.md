@@ -6,6 +6,8 @@ permalink: /kb/281/Q281770/
 
 ## Q281770: How to Perform Clean-Boot Troubleshooting for Windows 2000
 
+{% raw %}
+
 	Article: Q281770
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -585,3 +587,5 @@ permalink: /kb/281/Q281770/
 	
 	=============================================================================
 	
+
+{% endraw %}

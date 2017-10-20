@@ -6,6 +6,8 @@ permalink: /kb/178/Q178687/
 
 ## Q178687: WINS Resolution Is Automatically Disabled
 
+{% raw %}
+
 	Article: Q178687
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -78,3 +80,5 @@ permalink: /kb/178/Q178687/
 	
 	=============================================================================
 	
+
+{% endraw %}

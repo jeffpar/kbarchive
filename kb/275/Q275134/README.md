@@ -6,6 +6,8 @@ permalink: /kb/275/Q275134/
 
 ## Q275134: XADM: Cannot Reply to Mail Sent From User That Changed Sites
 
+{% raw %}
+
 	Article: Q275134
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -99,3 +101,5 @@ permalink: /kb/275/Q275134/
 	
 	=============================================================================
 	
+
+{% endraw %}

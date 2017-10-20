@@ -6,6 +6,8 @@ permalink: /kb/173/Q173578/
 
 ## Q173578: HOWTO: Change Local User WinNT 3.51 Profile to a Domain Profile
 
+{% raw %}
+
 	Article: Q173578
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -75,3 +77,5 @@ permalink: /kb/173/Q173578/
 	
 	=============================================================================
 	
+
+{% endraw %}

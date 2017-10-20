@@ -6,6 +6,8 @@ permalink: /kb/150/Q150474/
 
 ## Q150474: Accessing an Access Database Through GSNW May Hang Access
 
+{% raw %}
+
 	Article: Q150474
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -64,3 +66,5 @@ permalink: /kb/150/Q150474/
 	
 	=============================================================================
 	
+
+{% endraw %}

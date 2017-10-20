@@ -6,6 +6,8 @@ permalink: /kb/118/Q118613/
 
 ## Q118613: INFO: Accessing OLE 2.0 Embedded Object Dirties OLE 1.0 Client
 
+{% raw %}
+
 	Article: Q118613
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -124,8 +126,8 @@ permalink: /kb/118/Q118613/
 	
 	     // Message Maps
 	     protected:
-	        //{ {AFX_MSG(COleServerDocEx)
-	        //} }AFX_MSG
+	        //{{AFX_MSG(COleServerDocEx)
+	        //}}AFX_MSG
 	        DECLARE_MESSAGE_MAP()
 	
 	     // Interface Maps
@@ -168,8 +170,8 @@ permalink: /kb/118/Q118613/
 	     IMPLEMENT_DYNAMIC(COleServerDocEx, COleServerDoc)
 	
 	     BEGIN_MESSAGE_MAP(COleServerDocEx, COleServerDoc)
-	        //{ {AFX_MSG_MAP(COleServerDocEx)
-	        //} }AFX_MSG_MAP
+	        //{{AFX_MSG_MAP(COleServerDocEx)
+	        //}}AFX_MSG_MAP
 	     END_MESSAGE_MAP()
 	
 	     /////////////////////////////////////////////////////////////// 
@@ -344,3 +346,5 @@ permalink: /kb/118/Q118613/
 	
 	=============================================================================
 	
+
+{% endraw %}

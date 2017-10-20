@@ -6,6 +6,8 @@ permalink: /kb/153/Q153417/
 
 ## Q153417: Location of Cookies File in Internet Explorer
 
+{% raw %}
+
 	Article: Q153417
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -83,3 +85,5 @@ permalink: /kb/153/Q153417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135491/
 
 ## Q135491: SDLC Multidrop Primary Needs to be Remote End = Host System.
 
+{% raw %}
+
 	Article: Q135491
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135491/
 	
 	=============================================================================
 	
+
+{% endraw %}

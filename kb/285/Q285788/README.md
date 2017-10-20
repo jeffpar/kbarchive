@@ -6,6 +6,8 @@ permalink: /kb/285/Q285788/
 
 ## Q285788: Mailbox Resources Display &quot;total k&quot; and &quot;total items&quot; Columns
 
+{% raw %}
+
 	Article: Q285788
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -64,3 +66,5 @@ permalink: /kb/285/Q285788/
 	
 	=============================================================================
 	
+
+{% endraw %}

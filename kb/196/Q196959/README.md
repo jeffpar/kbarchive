@@ -6,6 +6,8 @@ permalink: /kb/196/Q196959/
 
 ## Q196959: PRB:'Unspecified Error' Err Using ADO Data Marshalling w/ DCOM
 
+{% raw %}
+
 	Article: Q196959
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,5.0,6.0
@@ -294,3 +296,5 @@ permalink: /kb/196/Q196959/
 	
 	=============================================================================
 	
+
+{% endraw %}

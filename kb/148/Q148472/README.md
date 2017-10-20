@@ -6,6 +6,8 @@ permalink: /kb/148/Q148472/
 
 ## Q148472: SMC Ultra 8216 Is Supported by Selecting SMC EtherEZ (8416)
 
+{% raw %}
+
 	Article: Q148472
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -60,3 +62,5 @@ permalink: /kb/148/Q148472/
 	
 	=============================================================================
 	
+
+{% endraw %}

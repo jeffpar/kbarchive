@@ -6,6 +6,8 @@ permalink: /kb/132/Q132501/
 
 ## Q132501: NetBIOS Error 0x11: Local Session Table Full
 
+{% raw %}
+
 	Article: Q132501
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/132/Q132501/
 	
 	=============================================================================
 	
+
+{% endraw %}

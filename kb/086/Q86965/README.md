@@ -6,6 +6,8 @@ permalink: /kb/086/Q86965/
 
 ## Q86965: X400: X.25 Line Requirements for X.400 Gateway Operation
 
+{% raw %}
+
 	Article: Q86965
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/086/Q86965/
 	
 	=============================================================================
 	
+
+{% endraw %}

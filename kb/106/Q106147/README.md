@@ -6,6 +6,8 @@ permalink: /kb/106/Q106147/
 
 ## Q106147: DosPeekNmPipe Returns Incorrect bRead Value
 
+{% raw %}
+
 	Article: Q106147
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/106/Q106147/
 	
 	=============================================================================
 	
+
+{% endraw %}

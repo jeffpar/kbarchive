@@ -6,6 +6,8 @@ permalink: /kb/132/Q132673/
 
 ## Q132673: NET VIEW /DOMAIN: &lt;domainname&gt; Command Fails
 
+{% raw %}
+
 	Article: Q132673
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132673/
 	
 	=============================================================================
 	
+
+{% endraw %}

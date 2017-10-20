@@ -6,6 +6,8 @@ permalink: /kb/111/Q111670/
 
 ## Q111670: ArpCacheSize Defaults to 62 Entries
 
+{% raw %}
+
 	Article: Q111670
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -69,3 +71,5 @@ permalink: /kb/111/Q111670/
 	
 	=============================================================================
 	
+
+{% endraw %}

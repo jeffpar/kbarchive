@@ -6,6 +6,8 @@ permalink: /kb/097/Q97496/
 
 ## Q97496: Use MSnull/IBMnull Driver with HP IIIsi Printer
 
+{% raw %}
+
 	Article: Q97496
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/097/Q97496/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315576/
 
 ## Q315576: PRB: Err Msg Starting eVB Project: Object Library Not Registered
 
+{% raw %}
+
 	Article: Q315576
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -101,3 +103,5 @@ permalink: /kb/315/Q315576/
 	
 	=============================================================================
 	
+
+{% endraw %}

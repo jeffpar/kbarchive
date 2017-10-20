@@ -6,6 +6,8 @@ permalink: /kb/319/Q319506/
 
 ## Q319506: INFO: Index Server Does Not Support Mounted Volumes
 
+{% raw %}
+
 	Article: Q319506
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -42,3 +44,5 @@ permalink: /kb/319/Q319506/
 	
 	=============================================================================
 	
+
+{% endraw %}

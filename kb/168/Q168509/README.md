@@ -6,6 +6,8 @@ permalink: /kb/168/Q168509/
 
 ## Q168509: Setting Up WINS Replication Between Untrusting Domains
 
+{% raw %}
+
 	Article: Q168509
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -77,3 +79,5 @@ permalink: /kb/168/Q168509/
 	
 	=============================================================================
 	
+
+{% endraw %}

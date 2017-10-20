@@ -6,6 +6,8 @@ permalink: /kb/036/Q36964/
 
 ## Q36964: Meaning of the /PATH:ON Option of the MS-DOS APPEND Command
 
+{% raw %}
+
 	Article: Q36964
 	Product(s): Microsoft Disk Operating System
 	Version(s): 4.0,4.01,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -40,3 +42,5 @@ permalink: /kb/036/Q36964/
 	
 	=============================================================================
 	
+
+{% endraw %}

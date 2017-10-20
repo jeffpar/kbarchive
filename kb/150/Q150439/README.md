@@ -6,6 +6,8 @@ permalink: /kb/150/Q150439/
 
 ## Q150439: Office 95 Shortcut Bar AutoHide Fails with Wuser.exe Loaded
 
+{% raw %}
+
 	Article: Q150439
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -45,3 +47,5 @@ permalink: /kb/150/Q150439/
 	
 	=============================================================================
 	
+
+{% endraw %}

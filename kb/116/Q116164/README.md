@@ -6,6 +6,8 @@ permalink: /kb/116/Q116164/
 
 ## Q116164: Baseball: Contents of BBLEGAL.TXT File
 
+{% raw %}
+
 	Article: Q116164
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -193,3 +195,5 @@ permalink: /kb/116/Q116164/
 	
 	=============================================================================
 	
+
+{% endraw %}

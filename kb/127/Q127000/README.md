@@ -6,6 +6,8 @@ permalink: /kb/127/Q127000/
 
 ## Q127000: HP DeskJet Version 3.x/4.x/5.x Driver Settings
 
+{% raw %}
+
 	Article: Q127000
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/127/Q127000/
 	
 	=============================================================================
 	
+
+{% endraw %}

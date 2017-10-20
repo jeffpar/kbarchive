@@ -6,6 +6,8 @@ permalink: /kb/111/Q111531/
 
 ## Q111531: FORMAT /S and SYS Copy Invalid System File with 4DOS or NDOS
 
+{% raw %}
+
 	Article: Q111531
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/111/Q111531/
 	
 	=============================================================================
 	
+
+{% endraw %}

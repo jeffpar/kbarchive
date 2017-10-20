@@ -6,6 +6,8 @@ permalink: /kb/135/Q135181/
 
 ## Q135181: MS Works for MS-DOS File Has Garbled Text in Quick View
 
+{% raw %}
+
 	Article: Q135181
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135181/
 	
 	=============================================================================
 	
+
+{% endraw %}

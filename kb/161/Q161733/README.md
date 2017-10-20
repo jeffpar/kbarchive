@@ -6,6 +6,8 @@ permalink: /kb/161/Q161733/
 
 ## Q161733: Err Msg: Unable to Locate NWAPI32.DLL with IntranetWare Client
 
+{% raw %}
+
 	Article: Q161733
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/161/Q161733/
 	
 	=============================================================================
 	
+
+{% endraw %}

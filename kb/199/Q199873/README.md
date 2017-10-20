@@ -6,6 +6,8 @@ permalink: /kb/199/Q199873/
 
 ## Q199873: PRB: Can't Remove Controls from the Controls Toolbar in VC++
 
+{% raw %}
+
 	Article: Q199873
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/199/Q199873/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174849/
 
 ## Q174849: Fly-By-Videos in Golf 3.0 Are Purple
 
+{% raw %}
+
 	Article: Q174849
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/174/Q174849/
 	
 	=============================================================================
 	
+
+{% endraw %}

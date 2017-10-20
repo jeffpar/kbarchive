@@ -6,6 +6,8 @@ permalink: /kb/177/Q177944/
 
 ## Q177944: XFOR: Incorrect Spacing in RTFHTML Messages w/ Outlook Express
 
+{% raw %}
+
 	Article: Q177944
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -53,3 +55,5 @@ permalink: /kb/177/Q177944/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158041/
 
 ## Q158041: Xircom CreditCard Ethernet Adapter IIps with Windows NT 4.0
 
+{% raw %}
+
 	Article: Q158041
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/158/Q158041/
 	
 	=============================================================================
 	
+
+{% endraw %}

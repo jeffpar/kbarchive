@@ -6,6 +6,8 @@ permalink: /kb/171/Q171033/
 
 ## Q171033: Remote Performance Monitor Changes Under Windows NT 4.0 SP3
 
+{% raw %}
+
 	Article: Q171033
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -118,3 +120,5 @@ permalink: /kb/171/Q171033/
 	
 	=============================================================================
 	
+
+{% endraw %}

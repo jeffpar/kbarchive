@@ -6,6 +6,8 @@ permalink: /kb/246/Q246550/
 
 ## Q246550: BUG: Local Static Variables Not Reinitialized after an Exception
 
+{% raw %}
+
 	Article: Q246550
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -160,3 +162,5 @@ permalink: /kb/246/Q246550/
 	
 	=============================================================================
 	
+
+{% endraw %}

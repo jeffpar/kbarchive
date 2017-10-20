@@ -6,6 +6,8 @@ permalink: /kb/193/Q193548/
 
 ## Q193548: Stop 0x0000002E Using Qlogic Driver Version 2.29
 
+{% raw %}
+
 	Article: Q193548
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/193/Q193548/
 	
 	=============================================================================
 	
+
+{% endraw %}

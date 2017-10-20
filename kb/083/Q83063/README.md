@@ -6,6 +6,8 @@ permalink: /kb/083/Q83063/
 
 ## Q83063: README.WRI from Windows 3.1
 
+{% raw %}
+
 	Article: Q83063
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -1280,3 +1282,5 @@ permalink: /kb/083/Q83063/
 	
 	=============================================================================
 	
+
+{% endraw %}

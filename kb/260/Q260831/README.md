@@ -6,6 +6,8 @@ permalink: /kb/260/Q260831/
 
 ## Q260831: &quot;STOP 0x0000001E&quot; Caused by Pool Corruption
 
+{% raw %}
+
 	Article: Q260831
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/260/Q260831/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127072/
 
 ## Q127072: Installing SMS Client to Drive Other Than Most Free Disk Space
 
+{% raw %}
+
 	Article: Q127072
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -83,3 +85,5 @@ permalink: /kb/127/Q127072/
 	
 	=============================================================================
 	
+
+{% endraw %}

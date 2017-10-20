@@ -6,6 +6,8 @@ permalink: /kb/128/Q128536/
 
 ## Q128536: Cannot Insert Harvard Graphics Slide into WordPad
 
+{% raw %}
+
 	Article: Q128536
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/128/Q128536/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66568/
 
 ## Q66568: ASD: Achieving Level Flight with the Boeing 747-400
 
+{% raw %}
+
 	Article: Q66568
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/066/Q66568/
 	
 	=============================================================================
 	
+
+{% endraw %}

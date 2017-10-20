@@ -6,6 +6,8 @@ permalink: /kb/156/Q156504/
 
 ## Q156504: PRB: Intellidrop from View into Designer Causes Requeries
 
+{% raw %}
+
 	Article: Q156504
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/156/Q156504/
 	
 	=============================================================================
 	
+
+{% endraw %}

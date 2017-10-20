@@ -6,6 +6,8 @@ permalink: /kb/073/Q73843/
 
 ## Q73843: Files and Buffers Memory Usage
 
+{% raw %}
+
 	Article: Q73843
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -82,3 +84,5 @@ permalink: /kb/073/Q73843/
 	
 	=============================================================================
 	
+
+{% endraw %}

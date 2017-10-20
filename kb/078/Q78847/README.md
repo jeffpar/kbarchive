@@ -6,6 +6,8 @@ permalink: /kb/078/Q78847/
 
 ## Q78847: SHIFT+F9 Gives MS-DOS Prompt, &quot;Command Prompt&quot; Item Disabled
 
+{% raw %}
+
 	Article: Q78847
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -69,3 +71,5 @@ permalink: /kb/078/Q78847/
 	
 	=============================================================================
 	
+
+{% endraw %}

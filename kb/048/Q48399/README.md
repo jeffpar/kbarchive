@@ -6,6 +6,8 @@ permalink: /kb/048/Q48399/
 
 ## Q48399: Why QuickBASIC Is Incompatible with Many TSR Programs
 
+{% raw %}
+
 	Article: Q48399
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/048/Q48399/
 	to trade productivity for low-level machine control, QuickBASIC is
 	available for them. And for many people, this is a very reasonable and
 	acceptable trade-off.
+
+{% endraw %}

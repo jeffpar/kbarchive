@@ -6,6 +6,8 @@ permalink: /kb/196/Q196179/
 
 ## Q196179: XADM: Move Server Wizard Errors when Connectors are Installed
 
+{% raw %}
+
 	Article: Q196179
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -56,3 +58,5 @@ permalink: /kb/196/Q196179/
 	
 	=============================================================================
 	
+
+{% endraw %}

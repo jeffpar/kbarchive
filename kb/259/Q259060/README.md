@@ -6,6 +6,8 @@ permalink: /kb/259/Q259060/
 
 ## Q259060: Err Msg: Invalid Addition Response: 19 - CONSTRAINT VIOLATION...
 
+{% raw %}
+
 	Article: Q259060
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -101,3 +103,5 @@ permalink: /kb/259/Q259060/
 	
 	=============================================================================
 	
+
+{% endraw %}

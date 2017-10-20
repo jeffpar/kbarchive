@@ -6,6 +6,8 @@ permalink: /kb/173/Q173805/
 
 ## Q173805: XADM: Unable to Administer 5.5 IMS from 5.0 Admin Program
 
+{% raw %}
+
 	Article: Q173805
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/173/Q173805/
 	
 	=============================================================================
 	
+
+{% endraw %}

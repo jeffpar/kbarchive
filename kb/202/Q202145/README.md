@@ -6,6 +6,8 @@ permalink: /kb/202/Q202145/
 
 ## Q202145: PRB: Source Control Tool Shows Font Property Deleted on Check-in
 
+{% raw %}
+
 	Article: Q202145
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/202/Q202145/
 	
 	=============================================================================
 	
+
+{% endraw %}

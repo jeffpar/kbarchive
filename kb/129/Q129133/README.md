@@ -6,6 +6,8 @@ permalink: /kb/129/Q129133/
 
 ## Q129133: XCLN: Can't Switch from Message Back to Address Book
 
+{% raw %}
+
 	Article: Q129133
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -43,3 +45,5 @@ permalink: /kb/129/Q129133/
 	
 	=============================================================================
 	
+
+{% endraw %}

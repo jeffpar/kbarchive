@@ -6,6 +6,8 @@ permalink: /kb/247/Q247973/
 
 ## Q247973: PRB: Missing Oracle File SQLNET.ora May Cause Access Violation
 
+{% raw %}
+
 	Article: Q247973
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Build 2.73.7269,Bu
@@ -101,3 +103,5 @@ permalink: /kb/247/Q247973/
 	
 	=============================================================================
 	
+
+{% endraw %}

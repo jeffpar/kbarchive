@@ -6,6 +6,8 @@ permalink: /kb/272/Q272305/
 
 ## Q272305: XADM: Move Mailbox Fails with Event ID 8505 and Error 0x8004030
 
+{% raw %}
+
 	Article: Q272305
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -73,3 +75,5 @@ permalink: /kb/272/Q272305/
 	
 	=============================================================================
 	
+
+{% endraw %}

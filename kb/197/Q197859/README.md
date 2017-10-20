@@ -6,6 +6,8 @@ permalink: /kb/197/Q197859/
 
 ## Q197859: Server Roles in a Small Business Server Domain
 
+{% raw %}
+
 	Article: Q197859
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -54,3 +56,5 @@ permalink: /kb/197/Q197859/
 	
 	=============================================================================
 	
+
+{% endraw %}

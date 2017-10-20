@@ -6,6 +6,8 @@ permalink: /kb/154/Q154753/
 
 ## Q154753: INFO: What Are the C/C++ Libraries My Program Would Link With?
 
+{% raw %}
+
 	Article: Q154753
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0
@@ -249,3 +251,5 @@ permalink: /kb/154/Q154753/
 	
 	=============================================================================
 	
+
+{% endraw %}

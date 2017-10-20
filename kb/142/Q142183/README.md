@@ -6,6 +6,8 @@ permalink: /kb/142/Q142183/
 
 ## Q142183: Setup Err Msg: Windows 95 Has Disabled Direct Disk Access...
 
+{% raw %}
+
 	Article: Q142183
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -88,3 +90,5 @@ permalink: /kb/142/Q142183/
 	
 	=============================================================================
 	
+
+{% endraw %}

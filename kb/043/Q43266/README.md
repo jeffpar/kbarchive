@@ -6,6 +6,8 @@ permalink: /kb/043/Q43266/
 
 ## Q43266: QB/H Not Reset to 25-Line Mode After Using Make EXE And Exit
 
+{% raw %}
+
 	Article: Q43266
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -29,3 +31,5 @@ permalink: /kb/043/Q43266/
 	BASIC Compiler Versions 6.00 and 6.00b (buglist6.00, buglist6.00b).
 	This problem was corrected in Microsoft BASIC Professional Development
 	System (PDS) Version 7.00 (fixlist7.00).
+
+{% endraw %}

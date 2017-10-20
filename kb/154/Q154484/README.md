@@ -6,6 +6,8 @@ permalink: /kb/154/Q154484/
 
 ## Q154484: Stop 0xA in Afd.sys
 
+{% raw %}
+
 	Article: Q154484
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -56,3 +58,5 @@ permalink: /kb/154/Q154484/
 	
 	=============================================================================
 	
+
+{% endraw %}

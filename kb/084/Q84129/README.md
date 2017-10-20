@@ -6,6 +6,8 @@ permalink: /kb/084/Q84129/
 
 ## Q84129: DbMenu.exe Demonstrates How to Add Menus to Dialog Box
 
+{% raw %}
+
 	Article: Q84129
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -114,3 +116,5 @@ permalink: /kb/084/Q84129/
 	
 	=============================================================================
 	
+
+{% endraw %}

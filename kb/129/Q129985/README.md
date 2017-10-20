@@ -6,6 +6,8 @@ permalink: /kb/129/Q129985/
 
 ## Q129985: Type 1 Font Converter Does Not Convert Some Fonts
 
+{% raw %}
+
 	Article: Q129985
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -77,3 +79,5 @@ permalink: /kb/129/Q129985/
 	
 	=============================================================================
 	
+
+{% endraw %}

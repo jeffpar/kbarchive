@@ -6,6 +6,8 @@ permalink: /kb/239/Q239480/
 
 ## Q239480: XADM: Mailbox Manager Reports Do Not Count Single Instancing
 
+{% raw %}
+
 	Article: Q239480
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -40,3 +42,5 @@ permalink: /kb/239/Q239480/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195484/
 
 ## Q195484: WD97: Schedule+ Contact List Not Sorted Alphabetically
 
+{% raw %}
+
 	Article: Q195484
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -177,3 +179,5 @@ permalink: /kb/195/Q195484/
 	
 	=============================================================================
 	
+
+{% endraw %}

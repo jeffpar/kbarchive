@@ -6,6 +6,8 @@ permalink: /kb/231/Q231521/
 
 ## Q231521: MapPoint 2000: Unexpected Data Is Exported to Excel
 
+{% raw %}
+
 	Article: Q231521
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/231/Q231521/
 	
 	=============================================================================
 	
+
+{% endraw %}

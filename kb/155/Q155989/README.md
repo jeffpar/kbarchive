@@ -6,6 +6,8 @@ permalink: /kb/155/Q155989/
 
 ## Q155989: WINS Administrator Refresh Button Doesn't Refresh Mapping Screen
 
+{% raw %}
+
 	Article: Q155989
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/155/Q155989/
 	
 	=============================================================================
 	
+
+{% endraw %}

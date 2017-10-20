@@ -6,6 +6,8 @@ permalink: /kb/183/Q183400/
 
 ## Q183400: XADM: Specific Events That ISINTEG Attempts to Fix
 
+{% raw %}
+
 	Article: Q183400
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -183,3 +185,5 @@ permalink: /kb/183/Q183400/
 	
 	=============================================================================
 	
+
+{% endraw %}

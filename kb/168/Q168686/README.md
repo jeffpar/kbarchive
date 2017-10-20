@@ -6,6 +6,8 @@ permalink: /kb/168/Q168686/
 
 ## Q168686: PRB: Performance Loss When Upgrading Jet ODBC Driver
 
+{% raw %}
+
 	Article: Q168686
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.5,4.2,5.0,95; winnt:3.5,3.51,4.0,4.0 SP4,5.0
@@ -114,3 +116,5 @@ permalink: /kb/168/Q168686/
 	
 	=============================================================================
 	
+
+{% endraw %}

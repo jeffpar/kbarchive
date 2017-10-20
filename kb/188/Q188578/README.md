@@ -6,6 +6,8 @@ permalink: /kb/188/Q188578/
 
 ## Q188578: SMS: PCMWin Exits at Startup If No SMS Logon Server Is Available
 
+{% raw %}
+
 	Article: Q188578
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -71,3 +73,5 @@ permalink: /kb/188/Q188578/
 	
 	=============================================================================
 	
+
+{% endraw %}

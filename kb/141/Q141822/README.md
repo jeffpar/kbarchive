@@ -6,6 +6,8 @@ permalink: /kb/141/Q141822/
 
 ## Q141822: 3D Movie Maker: Default Text Color Not Available in Color List
 
+{% raw %}
+
 	Article: Q141822
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/141/Q141822/
 	
 	=============================================================================
 	
+
+{% endraw %}

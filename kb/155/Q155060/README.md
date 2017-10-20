@@ -6,6 +6,8 @@ permalink: /kb/155/Q155060/
 
 ## Q155060: XCLN: MAPIAddress Function Does Not Allocate Memory
 
+{% raw %}
+
 	Article: Q155060
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155060/
 	
 	=============================================================================
 	
+
+{% endraw %}

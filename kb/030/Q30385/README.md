@@ -6,6 +6,8 @@ permalink: /kb/030/Q30385/
 
 ## Q30385: FIX: MOV with Type Operator Generates Incorrect Opcodes
 
+{% raw %}
+
 	Article: Q30385
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -68,3 +70,5 @@ permalink: /kb/030/Q30385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/203/Q203263/
 
 ## Q203263: Cirel FPX X.25 Network Adapter Does Not Work Correctly
 
+{% raw %}
+
 	Article: Q203263
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -82,3 +84,5 @@ permalink: /kb/203/Q203263/
 	
 	=============================================================================
 	
+
+{% endraw %}

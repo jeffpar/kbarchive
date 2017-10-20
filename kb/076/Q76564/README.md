@@ -6,6 +6,8 @@ permalink: /kb/076/Q76564/
 
 ## Q76564: Receiving a Physical COM Port from the Windows VCD
 
+{% raw %}
+
 	Article: Q76564
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -115,3 +117,5 @@ permalink: /kb/076/Q76564/
 	
 	=============================================================================
 	
+
+{% endraw %}

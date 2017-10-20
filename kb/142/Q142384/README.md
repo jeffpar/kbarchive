@@ -6,6 +6,8 @@ permalink: /kb/142/Q142384/
 
 ## Q142384: HOWTO: How to Create Accelerators for CPropertyPages
 
+{% raw %}
+
 	Article: Q142384
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0
@@ -95,3 +97,5 @@ permalink: /kb/142/Q142384/
 	
 	=============================================================================
 	
+
+{% endraw %}

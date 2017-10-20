@@ -6,6 +6,8 @@ permalink: /kb/216/Q216259/
 
 ## Q216259: XADM: IS Stops Responding Due to Critical Section Leak, Event ID
 
+{% raw %}
+
 	Article: Q216259
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -126,3 +128,5 @@ permalink: /kb/216/Q216259/
 	
 	=============================================================================
 	
+
+{% endraw %}

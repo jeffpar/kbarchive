@@ -6,6 +6,8 @@ permalink: /kb/172/Q172875/
 
 ## Q172875: WD97: General Document Properties Incorrect During Save
 
+{% raw %}
+
 	Article: Q172875
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/172/Q172875/
 	
 	=============================================================================
 	
+
+{% endraw %}

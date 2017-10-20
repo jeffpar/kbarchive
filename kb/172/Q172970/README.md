@@ -6,6 +6,8 @@ permalink: /kb/172/Q172970/
 
 ## Q172970: DMOD Does Not Recreate I/O Threads If Reinitialized
 
+{% raw %}
+
 	Article: Q172970
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/172/Q172970/
 	
 	=============================================================================
 	
+
+{% endraw %}

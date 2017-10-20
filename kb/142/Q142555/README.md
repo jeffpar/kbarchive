@@ -6,6 +6,8 @@ permalink: /kb/142/Q142555/
 
 ## Q142555: Installing IIS FTP over Microsoft Windows NT FTP Service
 
+{% raw %}
+
 	Article: Q142555
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142555/
 	
 	=============================================================================
 	
+
+{% endraw %}

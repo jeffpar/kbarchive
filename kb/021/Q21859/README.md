@@ -6,6 +6,8 @@ permalink: /kb/021/Q21859/
 
 ## Q21859: WIDTH 40, WIDTH 80; &quot;Illegal Function Call&quot;
 
+{% raw %}
+
 	Article: Q21859
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -30,3 +32,5 @@ permalink: /kb/021/Q21859/
 	  open "scrn:" for output as #1
 	  print#1, "123456789012345678901234567890"
 	  close
+
+{% endraw %}

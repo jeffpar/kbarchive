@@ -6,6 +6,8 @@ permalink: /kb/085/Q85053/
 
 ## Q85053: FFAPI: The FFAPI Postoffice and How It is Used
 
+{% raw %}
+
 	Article: Q85053
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -39,3 +41,5 @@ permalink: /kb/085/Q85053/
 	
 	=============================================================================
 	
+
+{% endraw %}

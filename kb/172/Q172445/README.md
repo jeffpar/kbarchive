@@ -6,6 +6,8 @@ permalink: /kb/172/Q172445/
 
 ## Q172445: Directory Replication Is Erratic With Ntconfig.pol, Config.pol
 
+{% raw %}
+
 	Article: Q172445
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172445/
 	
 	=============================================================================
 	
+
+{% endraw %}

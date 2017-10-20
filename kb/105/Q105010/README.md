@@ -6,6 +6,8 @@ permalink: /kb/105/Q105010/
 
 ## Q105010: How To Use the OpenComm() Function with FOXTOOLS.FLL
 
+{% raw %}
+
 	Article: Q105010
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 2.60 2.60a
@@ -138,3 +140,5 @@ permalink: /kb/105/Q105010/
 	
 	=============================================================================
 	
+
+{% endraw %}

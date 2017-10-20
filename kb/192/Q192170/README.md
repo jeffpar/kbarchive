@@ -6,6 +6,8 @@ permalink: /kb/192/Q192170/
 
 ## Q192170: HOWTO: Add Explorer Style Rename Capability to TreeView Control
 
+{% raw %}
+
 	Article: Q192170
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -123,3 +125,5 @@ permalink: /kb/192/Q192170/
 	
 	=============================================================================
 	
+
+{% endraw %}

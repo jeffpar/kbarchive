@@ -6,6 +6,8 @@ permalink: /kb/221/Q221788/
 
 ## Q221788: HOWTO: Get Localized Microsoft Components for Your Applications
 
+{% raw %}
+
 	Article: Q221788
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/221/Q221788/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272515/
 
 ## Q272515: How to change themes on the MSN Companion user interface
 
+{% raw %}
+
 	Article: Q272515
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/272/Q272515/
 	
 	=============================================================================
 	
+
+{% endraw %}

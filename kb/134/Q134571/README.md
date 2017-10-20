@@ -6,6 +6,8 @@ permalink: /kb/134/Q134571/
 
 ## Q134571: &quot;No Such File or Directory&quot; Message with File Compare (FC.EXE)
 
+{% raw %}
+
 	Article: Q134571
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/134/Q134571/
 	
 	=============================================================================
 	
+
+{% endraw %}

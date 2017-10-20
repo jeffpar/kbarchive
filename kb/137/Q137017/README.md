@@ -6,6 +6,8 @@ permalink: /kb/137/Q137017/
 
 ## Q137017: INFO: Visual Basic 4.0 File Types &amp; Version Control Recommendati
 
+{% raw %}
+
 	Article: Q137017
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,4.0a
@@ -121,3 +123,5 @@ permalink: /kb/137/Q137017/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112278/
 
 ## Q112278: PC WSPlus: Print Margin Changes Not Saved
 
+{% raw %}
+
 	Article: Q112278
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -50,3 +52,5 @@ permalink: /kb/112/Q112278/
 	
 	=============================================================================
 	
+
+{% endraw %}

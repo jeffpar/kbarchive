@@ -6,6 +6,8 @@ permalink: /kb/200/Q200815/
 
 ## Q200815: NetBEUI Data Transfer Hangs on Intergraph Workstation
 
+{% raw %}
+
 	Article: Q200815
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/200/Q200815/
 	
 	=============================================================================
 	
+
+{% endraw %}

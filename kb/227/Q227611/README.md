@@ -6,6 +6,8 @@ permalink: /kb/227/Q227611/
 
 ## Q227611: IIS 5.0 &quot;Site Operators Can Administer This Site Remotely&quot;
 
+{% raw %}
+
 	Article: Q227611
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -51,3 +53,5 @@ permalink: /kb/227/Q227611/
 	
 	=============================================================================
 	
+
+{% endraw %}

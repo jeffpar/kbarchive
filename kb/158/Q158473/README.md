@@ -6,6 +6,8 @@ permalink: /kb/158/Q158473/
 
 ## Q158473: Upgrading the DHCP Database to Windows NT Server 4.0
 
+{% raw %}
+
 	Article: Q158473
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -89,3 +91,5 @@ permalink: /kb/158/Q158473/
 	
 	=============================================================================
 	
+
+{% endraw %}

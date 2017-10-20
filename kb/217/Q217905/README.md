@@ -6,6 +6,8 @@ permalink: /kb/217/Q217905/
 
 ## Q217905: Error Message When Creating Client Setup Floppy
 
+{% raw %}
+
 	Article: Q217905
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.5
@@ -58,3 +60,5 @@ permalink: /kb/217/Q217905/
 	
 	=============================================================================
 	
+
+{% endraw %}

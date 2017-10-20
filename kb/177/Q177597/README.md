@@ -6,6 +6,8 @@ permalink: /kb/177/Q177597/
 
 ## Q177597: XFOR: Delivery and Read Reports Do Not Appear in Lotus Notes
 
+{% raw %}
+
 	Article: Q177597
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177597/
 	
 	=============================================================================
 	
+
+{% endraw %}

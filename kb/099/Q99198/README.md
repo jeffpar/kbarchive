@@ -6,6 +6,8 @@ permalink: /kb/099/Q99198/
 
 ## Q99198: HOWTO: Display the Current Time in a CStatusBar Pane
 
+{% raw %}
+
 	Article: Q99198
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,5.0,6.0
@@ -163,3 +165,5 @@ permalink: /kb/099/Q99198/
 	
 	=============================================================================
 	
+
+{% endraw %}

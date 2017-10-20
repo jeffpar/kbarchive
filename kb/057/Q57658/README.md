@@ -6,6 +6,8 @@ permalink: /kb/057/Q57658/
 
 ## Q57658: Setting the MS-DOS Errorlevel in a Program
 
+{% raw %}
+
 	Article: Q57658
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,6.0,6.2,6.21,6.22
@@ -64,3 +66,5 @@ permalink: /kb/057/Q57658/
 	
 	=============================================================================
 	
+
+{% endraw %}

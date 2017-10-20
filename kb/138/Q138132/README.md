@@ -6,6 +6,8 @@ permalink: /kb/138/Q138132/
 
 ## Q138132: Programs Hang Intermittently on Dell XE 5100-2
 
+{% raw %}
+
 	Article: Q138132
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138132/
 	
 	=============================================================================
 	
+
+{% endraw %}

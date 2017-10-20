@@ -6,6 +6,8 @@ permalink: /kb/178/Q178882/
 
 ## Q178882: XWEB: French Version of Internet Explorer 3.x Replaces VBScript.
 
+{% raw %}
+
 	Article: Q178882
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.0,3.01,3.02,5.5
@@ -56,3 +58,5 @@ permalink: /kb/178/Q178882/
 	
 	=============================================================================
 	
+
+{% endraw %}

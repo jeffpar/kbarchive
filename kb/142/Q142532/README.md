@@ -6,6 +6,8 @@ permalink: /kb/142/Q142532/
 
 ## Q142532: OLE Problems Using Microsoft Service for NDS
 
+{% raw %}
+
 	Article: Q142532
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -136,3 +138,5 @@ permalink: /kb/142/Q142532/
 	
 	=============================================================================
 	
+
+{% endraw %}

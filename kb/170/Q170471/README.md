@@ -6,6 +6,8 @@ permalink: /kb/170/Q170471/
 
 ## Q170471: XCON: 290/4284 Errors Indicate Misconfigured MTA or Connector
 
+{% raw %}
+
 	Article: Q170471
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 5.5
@@ -64,3 +66,5 @@ permalink: /kb/170/Q170471/
 	
 	=============================================================================
 	
+
+{% endraw %}

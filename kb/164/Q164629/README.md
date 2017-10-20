@@ -6,6 +6,8 @@ permalink: /kb/164/Q164629/
 
 ## Q164629: Error Message: Default Printer Cannot Be Set
 
+{% raw %}
+
 	Article: Q164629
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164629/
 	
 	=============================================================================
 	
+
+{% endraw %}

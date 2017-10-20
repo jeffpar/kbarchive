@@ -6,6 +6,8 @@ permalink: /kb/257/Q257967/
 
 ## Q257967: SMSINST: Deleting Installer Packages May Remove Shared INI Files
 
+{% raw %}
+
 	Article: Q257967
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/257/Q257967/
 	
 	=============================================================================
 	
+
+{% endraw %}

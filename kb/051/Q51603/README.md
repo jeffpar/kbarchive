@@ -6,6 +6,8 @@ permalink: /kb/051/Q51603/
 
 ## Q51603: EXT.H, EXTHDR.H Files Don't Come with BASIC 6.00 or COBOL 3.00
 
+{% raw %}
+
 	Article: Q51603
 	Product(s): See article
 	Version(s): 6.00 6.00b | 6.00 6.00b
@@ -25,3 +27,5 @@ permalink: /kb/051/Q51603/
 	the lack of EXT.H and EXTHDR.H will only affect those who are writing
 	C extensions for the M.EXE or MEP.EXE editor and using Microsoft
 	QuickC.
+
+{% endraw %}

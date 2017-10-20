@@ -6,6 +6,8 @@ permalink: /kb/314/Q314995/
 
 ## Q314995: Windows XP--Optimizing Modem Performance For MSN
 
+{% raw %}
+
 	Article: Q314995
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -55,3 +57,5 @@ permalink: /kb/314/Q314995/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248645/
 
 ## Q248645: Autologon for Terminal Server Clients Does Not Work
 
+{% raw %}
+
 	Article: Q248645
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/248/Q248645/
 	
 	=============================================================================
 	
+
+{% endraw %}

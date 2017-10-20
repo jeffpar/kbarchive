@@ -6,6 +6,8 @@ permalink: /kb/177/Q177714/
 
 ## Q177714: WD97: Recorded Macro Switching to Outline View Causes Error
 
+{% raw %}
+
 	Article: Q177714
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -166,3 +168,5 @@ permalink: /kb/177/Q177714/
 	
 	=============================================================================
 	
+
+{% endraw %}

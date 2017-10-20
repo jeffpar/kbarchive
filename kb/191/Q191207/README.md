@@ -6,6 +6,8 @@ permalink: /kb/191/Q191207/
 
 ## Q191207: BUG: Compile Error When You Reopen a Project That Uses Implement
 
+{% raw %}
+
 	Article: Q191207
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -106,3 +108,5 @@ permalink: /kb/191/Q191207/
 	
 	=============================================================================
 	
+
+{% endraw %}

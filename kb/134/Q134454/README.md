@@ -6,6 +6,8 @@ permalink: /kb/134/Q134454/
 
 ## Q134454: No Pointer After Exiting MS-DOS Window Using 928 Movie Card
 
+{% raw %}
+
 	Article: Q134454
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/134/Q134454/
 	
 	=============================================================================
 	
+
+{% endraw %}

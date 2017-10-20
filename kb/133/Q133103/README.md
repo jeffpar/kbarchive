@@ -6,6 +6,8 @@ permalink: /kb/133/Q133103/
 
 ## Q133103: FORTRAN PowerStation 32 README.TXT: Debugger and Building
 
+{% raw %}
+
 	Article: Q133103
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -185,3 +187,5 @@ permalink: /kb/133/Q133103/
 	
 	=============================================================================
 	
+
+{% endraw %}

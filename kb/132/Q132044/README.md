@@ -6,6 +6,8 @@ permalink: /kb/132/Q132044/
 
 ## Q132044: INFO: Using _declspec(dllimport) &amp; _declspec(dllexport) in Code
 
+{% raw %}
+
 	Article: Q132044
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,5.0
@@ -268,3 +270,5 @@ permalink: /kb/132/Q132044/
 	
 	=============================================================================
 	
+
+{% endraw %}

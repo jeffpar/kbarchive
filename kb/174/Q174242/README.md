@@ -6,6 +6,8 @@ permalink: /kb/174/Q174242/
 
 ## Q174242: Frequently Asked Integrated Services Digital Network Questions
 
+{% raw %}
+
 	Article: Q174242
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -192,3 +194,5 @@ permalink: /kb/174/Q174242/
 	
 	=============================================================================
 	
+
+{% endraw %}

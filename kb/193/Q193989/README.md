@@ -6,6 +6,8 @@ permalink: /kb/193/Q193989/
 
 ## Q193989: Opening Subdomain in SNA Manager Fails on Every Other Attempt
 
+{% raw %}
+
 	Article: Q193989
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP3,4.0,4.0 SP1
@@ -91,3 +93,5 @@ permalink: /kb/193/Q193989/
 	
 	=============================================================================
 	
+
+{% endraw %}

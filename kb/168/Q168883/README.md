@@ -6,6 +6,8 @@ permalink: /kb/168/Q168883/
 
 ## Q168883: XFOR: 4037 Event Starting Internet Mail Service, 1067 IMC Error
 
+{% raw %}
+
 	Article: Q168883
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -121,3 +123,5 @@ permalink: /kb/168/Q168883/
 	
 	=============================================================================
 	
+
+{% endraw %}

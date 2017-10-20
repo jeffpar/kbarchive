@@ -6,6 +6,8 @@ permalink: /kb/166/Q166138/
 
 ## Q166138: INFO: Detailed Description of FTCODE Table in ATS
 
+{% raw %}
+
 	Article: Q166138
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/166/Q166138/
 	
 	=============================================================================
 	
+
+{% endraw %}

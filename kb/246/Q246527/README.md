@@ -6,6 +6,8 @@ permalink: /kb/246/Q246527/
 
 ## Q246527: SMS: Systems Management Server 2.0 Service Pack 1 Client Hotfix
 
+{% raw %}
+
 	Article: Q246527
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -454,3 +456,5 @@ permalink: /kb/246/Q246527/
 	
 	=============================================================================
 	
+
+{% endraw %}

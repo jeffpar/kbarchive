@@ -6,6 +6,8 @@ permalink: /kb/189/Q189493/
 
 ## Q189493: RTF Translation to Notes Servers May Fail
 
+{% raw %}
+
 	Article: Q189493
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -53,3 +55,5 @@ permalink: /kb/189/Q189493/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140127/
 
 ## Q140127: PPP Authentication Fails with SP2 and Shiva Dialer
 
+{% raw %}
+
 	Article: Q140127
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140127/
 	
 	=============================================================================
 	
+
+{% endraw %}

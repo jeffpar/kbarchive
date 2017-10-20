@@ -6,6 +6,8 @@ permalink: /kb/198/Q198375/
 
 ## Q198375: WD97: Registered Trademark Symbol Conversion Problems
 
+{% raw %}
+
 	Article: Q198375
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/198/Q198375/
 	
 	=============================================================================
 	
+
+{% endraw %}

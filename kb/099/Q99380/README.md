@@ -6,6 +6,8 @@ permalink: /kb/099/Q99380/
 
 ## Q99380: NT Account Validation for PCs in the Same Domain
 
+{% raw %}
+
 	Article: Q99380
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/099/Q99380/
 	
 	=============================================================================
 	
+
+{% endraw %}

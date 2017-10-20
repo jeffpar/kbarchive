@@ -6,6 +6,8 @@ permalink: /kb/068/Q68446/
 
 ## Q68446: WIDTH &quot;CONS:&quot; or &quot;SCRN:&quot; Uses Only 40 or 80 in BASIC 7.00/7.10
 
+{% raw %}
+
 	Article: Q68446
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -87,3 +89,5 @@ permalink: /kb/068/Q68446/
 	    - The width assignment is deferred until the next OPEN statement
 	      affecting the device.
 	    - The assignment does not affect output for an already open file.
+
+{% endraw %}

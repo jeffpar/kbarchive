@@ -6,6 +6,8 @@ permalink: /kb/132/Q132372/
 
 ## Q132372: Writer: Patterns Created Using Word Shape Tool Do Not Print
 
+{% raw %}
+
 	Article: Q132372
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -75,3 +77,5 @@ permalink: /kb/132/Q132372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77815/
 
 ## Q77815: Novell NetWare Shell History 3.02, 3.21, and 3.22
 
+{% raw %}
+
 	Article: Q77815
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -183,3 +185,5 @@ permalink: /kb/077/Q77815/
 	
 	=============================================================================
 	
+
+{% endraw %}

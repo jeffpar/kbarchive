@@ -6,6 +6,8 @@ permalink: /kb/224/Q224229/
 
 ## Q224229: Streets and Trips 2000: Unable to Print Route Driving Directions
 
+{% raw %}
+
 	Article: Q224229
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/224/Q224229/
 	
 	=============================================================================
 	
+
+{% endraw %}

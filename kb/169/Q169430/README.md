@@ -6,6 +6,8 @@ permalink: /kb/169/Q169430/
 
 ## Q169430: Arcade: Updated Wavemix.ini File For Microsoft Arcade
 
+{% raw %}
+
 	Article: Q169430
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/169/Q169430/
 	
 	=============================================================================
 	
+
+{% endraw %}

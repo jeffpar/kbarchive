@@ -6,6 +6,8 @@ permalink: /kb/133/Q133717/
 
 ## Q133717: Windows 95/98: How to Find a File
 
+{% raw %}
+
 	Article: Q133717
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:95
@@ -64,3 +66,5 @@ permalink: /kb/133/Q133717/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155791/
 
 ## Q155791: FIX: Some Intermediate Files not Deleted by FileView
 
+{% raw %}
+
 	Article: Q155791
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/155/Q155791/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182367/
 
 ## Q182367: Possible to Circumvent ZAK Using Explorer.exe as Embedded Object
 
+{% raw %}
+
 	Article: Q182367
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -103,3 +105,5 @@ permalink: /kb/182/Q182367/
 	
 	=============================================================================
 	
+
+{% endraw %}

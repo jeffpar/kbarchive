@@ -6,6 +6,8 @@ permalink: /kb/286/Q286559/
 
 ## Q286559: XFOR:&quot;No Mapping Between Account Names &amp; Security IDs Was Done&quot;
 
+{% raw %}
+
 	Article: Q286559
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -94,3 +96,5 @@ permalink: /kb/286/Q286559/
 	
 	=============================================================================
 	
+
+{% endraw %}

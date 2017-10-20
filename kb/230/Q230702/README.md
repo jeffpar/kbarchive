@@ -6,6 +6,8 @@ permalink: /kb/230/Q230702/
 
 ## Q230702: FIX: Errors When Renaming or Deleting a Project in VSS
 
+{% raw %}
+
 	Article: Q230702
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -98,3 +100,5 @@ permalink: /kb/230/Q230702/
 	
 	=============================================================================
 	
+
+{% endraw %}

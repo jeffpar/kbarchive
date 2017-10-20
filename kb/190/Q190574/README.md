@@ -6,6 +6,8 @@ permalink: /kb/190/Q190574/
 
 ## Q190574: &quot;No Matching Places Were Found&quot; When You Search for Restaurant
 
+{% raw %}
+
 	Article: Q190574
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -138,3 +140,5 @@ permalink: /kb/190/Q190574/
 	
 	=============================================================================
 	
+
+{% endraw %}

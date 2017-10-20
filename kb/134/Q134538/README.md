@@ -6,6 +6,8 @@ permalink: /kb/134/Q134538/
 
 ## Q134538: Microsoft Does Not Provide Real Mode Novell NetWare Files
 
+{% raw %}
+
 	Article: Q134538
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/134/Q134538/
 	
 	=============================================================================
 	
+
+{% endraw %}

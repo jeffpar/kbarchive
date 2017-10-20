@@ -6,6 +6,8 @@ permalink: /kb/136/Q136018/
 
 ## Q136018: PRB: &quot;Incorrect Syntax Near 'Like'&quot; ODBC Error
 
+{% raw %}
+
 	Article: Q136018
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/136/Q136018/
 	
 	=============================================================================
 	
+
+{% endraw %}

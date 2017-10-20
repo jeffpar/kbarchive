@@ -6,6 +6,8 @@ permalink: /kb/142/Q142267/
 
 ## Q142267: SMS: Netspeed Returns False Speed Over Compression-Capable Link
 
+{% raw %}
+
 	Article: Q142267
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -131,3 +133,5 @@ permalink: /kb/142/Q142267/
 	
 	=============================================================================
 	
+
+{% endraw %}

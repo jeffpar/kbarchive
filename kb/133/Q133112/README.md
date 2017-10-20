@@ -6,6 +6,8 @@ permalink: /kb/133/Q133112/
 
 ## Q133112: NetWkstaSetUid2 API Returns Access Denied
 
+{% raw %}
+
 	Article: Q133112
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -73,3 +75,5 @@ permalink: /kb/133/Q133112/
 	
 	=============================================================================
 	
+
+{% endraw %}

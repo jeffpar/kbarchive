@@ -6,6 +6,8 @@ permalink: /kb/171/Q171318/
 
 ## Q171318: HOWTO: Bind Data Controls Across Multiple Forms
 
+{% raw %}
+
 	Article: Q171318
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/171/Q171318/
 	
 	=============================================================================
 	
+
+{% endraw %}

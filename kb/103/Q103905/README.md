@@ -6,6 +6,8 @@ permalink: /kb/103/Q103905/
 
 ## Q103905: PC WRmt: Cannot Create New .MMF If Old Location Unavailable
 
+{% raw %}
+
 	Article: Q103905
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -71,3 +73,5 @@ permalink: /kb/103/Q103905/
 	
 	=============================================================================
 	
+
+{% endraw %}

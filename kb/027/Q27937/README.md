@@ -6,6 +6,8 @@ permalink: /kb/027/Q27937/
 
 ## Q27937: Sample Program That Makes OS/2 Call to DosQCurDir
 
+{% raw %}
+
 	Article: Q27937
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -43,3 +45,5 @@ permalink: /kb/027/Q27937/
 	  Print "The DIR path : ";dr$
 	END IF
 	END
+
+{% endraw %}

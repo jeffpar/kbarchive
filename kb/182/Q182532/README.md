@@ -6,6 +6,8 @@ permalink: /kb/182/Q182532/
 
 ## Q182532: HOWTO: DMA-Capable ATAPI Device Driver for Windows NT
 
+{% raw %}
+
 	Article: Q182532
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -114,3 +116,5 @@ permalink: /kb/182/Q182532/
 	
 	=============================================================================
 	
+
+{% endraw %}

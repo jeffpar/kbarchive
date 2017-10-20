@@ -6,6 +6,8 @@ permalink: /kb/150/Q150541/
 
 ## Q150541: Restoring the UPS Tool and Icon in Control Panel
 
+{% raw %}
+
 	Article: Q150541
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -105,3 +107,5 @@ permalink: /kb/150/Q150541/
 	
 	=============================================================================
 	
+
+{% endraw %}

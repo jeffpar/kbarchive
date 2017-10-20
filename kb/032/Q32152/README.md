@@ -6,6 +6,8 @@ permalink: /kb/032/Q32152/
 
 ## Q32152: Corrections for LOCATE Statement
 
+{% raw %}
+
 	Article: Q32152
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -47,3 +49,5 @@ permalink: /kb/032/Q32152/
 	print "the next line will result in an Illegal Function call error message"
 	locate ,,1,,4
 	print "end of the test"
+
+{% endraw %}

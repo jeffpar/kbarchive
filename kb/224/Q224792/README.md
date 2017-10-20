@@ -6,6 +6,8 @@ permalink: /kb/224/Q224792/
 
 ## Q224792: List of Bugs Fixed in Windows NT 4.0 Service Pack 1, 2, and 3
 
+{% raw %}
+
 	Article: Q224792
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -419,3 +421,5 @@ permalink: /kb/224/Q224792/
 	
 	=============================================================================
 	
+
+{% endraw %}

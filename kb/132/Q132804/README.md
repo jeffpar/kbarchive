@@ -6,6 +6,8 @@ permalink: /kb/132/Q132804/
 
 ## Q132804: WinBackup Does Not Identify Files with Long Filenames
 
+{% raw %}
+
 	Article: Q132804
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/132/Q132804/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146264/
 
 ## Q146264: XFOR: Clarification of the IMC Maximum Message Size
 
+{% raw %}
+
 	Article: Q146264
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/146/Q146264/
 	
 	=============================================================================
 	
+
+{% endraw %}

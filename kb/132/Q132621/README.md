@@ -6,6 +6,8 @@ permalink: /kb/132/Q132621/
 
 ## Q132621: Cannot Start Help After Removing Disk from Disk Drive
 
+{% raw %}
+
 	Article: Q132621
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -52,3 +54,5 @@ permalink: /kb/132/Q132621/
 	
 	=============================================================================
 	
+
+{% endraw %}

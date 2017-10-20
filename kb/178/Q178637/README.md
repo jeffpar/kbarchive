@@ -6,6 +6,8 @@ permalink: /kb/178/Q178637/
 
 ## Q178637: Using Game Compatible Device to Troubleshoot Sound Problems
 
+{% raw %}
+
 	Article: Q178637
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -116,3 +118,5 @@ permalink: /kb/178/Q178637/
 	
 	=============================================================================
 	
+
+{% endraw %}

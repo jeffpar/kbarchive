@@ -6,6 +6,8 @@ permalink: /kb/051/Q51821/
 
 ## Q51821: Instruction: Incorrect Cross Controls in Slip Lesson
 
+{% raw %}
+
 	Article: Q51821
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/051/Q51821/
 	
 	=============================================================================
 	
+
+{% endraw %}

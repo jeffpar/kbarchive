@@ -6,6 +6,8 @@ permalink: /kb/142/Q142772/
 
 ## Q142772: Setup Hangs on Compaq Laptop After Running Add Printer Wizard
 
+{% raw %}
+
 	Article: Q142772
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/142/Q142772/
 	
 	=============================================================================
 	
+
+{% endraw %}

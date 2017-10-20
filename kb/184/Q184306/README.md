@@ -6,6 +6,8 @@ permalink: /kb/184/Q184306/
 
 ## Q184306: SNA Server 3.0 Service Pack 3 Readme.txt File
 
+{% raw %}
+
 	Article: Q184306
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP3
@@ -190,3 +192,5 @@ permalink: /kb/184/Q184306/
 	
 	=============================================================================
 	
+
+{% endraw %}

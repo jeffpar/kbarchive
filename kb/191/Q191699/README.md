@@ -6,6 +6,8 @@ permalink: /kb/191/Q191699/
 
 ## Q191699: XID Type for PU Passthrough May Cause Failed Connection
 
+{% raw %}
+
 	Article: Q191699
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP1
@@ -49,3 +51,5 @@ permalink: /kb/191/Q191699/
 	
 	=============================================================================
 	
+
+{% endraw %}

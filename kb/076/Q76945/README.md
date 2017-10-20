@@ -6,6 +6,8 @@ permalink: /kb/076/Q76945/
 
 ## Q76945: FIX: Sample Program BELL.C Causes R6001 Error
 
+{% raw %}
+
 	Article: Q76945
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -72,3 +74,5 @@ permalink: /kb/076/Q76945/
 	
 	=============================================================================
 	
+
+{% endraw %}

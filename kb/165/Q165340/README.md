@@ -6,6 +6,8 @@ permalink: /kb/165/Q165340/
 
 ## Q165340: Change Permissions Needed on Index Server System Files
 
+{% raw %}
+
 	Article: Q165340
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.1,2.0
@@ -62,3 +64,5 @@ permalink: /kb/165/Q165340/
 	
 	=============================================================================
 	
+
+{% endraw %}

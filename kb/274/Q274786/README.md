@@ -6,6 +6,8 @@ permalink: /kb/274/Q274786/
 
 ## Q274786: XFOR: Notes Addresses Are Deleted If a Mapping Rule Won't Work
 
+{% raw %}
+
 	Article: Q274786
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -90,3 +92,5 @@ permalink: /kb/274/Q274786/
 	
 	=============================================================================
 	
+
+{% endraw %}

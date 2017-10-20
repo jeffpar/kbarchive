@@ -6,6 +6,8 @@ permalink: /kb/084/Q84790/
 
 ## Q84790: Terminal's Kermit Does Not Support 7,n,1 Communication Setting
 
+{% raw %}
+
 	Article: Q84790
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/084/Q84790/
 	
 	=============================================================================
 	
+
+{% endraw %}

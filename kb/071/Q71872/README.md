@@ -6,6 +6,8 @@ permalink: /kb/071/Q71872/
 
 ## Q71872: MS-DOS 5 Upgrade README.TXT: Network Compatibility
 
+{% raw %}
+
 	Article: Q71872
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -186,3 +188,5 @@ permalink: /kb/071/Q71872/
 	
 	=============================================================================
 	
+
+{% endraw %}

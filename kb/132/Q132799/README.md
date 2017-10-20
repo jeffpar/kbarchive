@@ -6,6 +6,8 @@ permalink: /kb/132/Q132799/
 
 ## Q132799: General Protection Fault in Pscript.drv When Printing
 
+{% raw %}
+
 	Article: Q132799
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132799/
 	
 	=============================================================================
 	
+
+{% endraw %}

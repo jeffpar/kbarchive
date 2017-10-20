@@ -6,6 +6,8 @@ permalink: /kb/165/Q165776/
 
 ## Q165776: FIX: Admin Cannot See Files with Project Security Enabled
 
+{% raw %}
+
 	Article: Q165776
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,97
@@ -114,3 +116,5 @@ permalink: /kb/165/Q165776/
 	
 	=============================================================================
 	
+
+{% endraw %}

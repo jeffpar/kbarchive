@@ -6,6 +6,8 @@ permalink: /kb/152/Q152211/
 
 ## Q152211: FIX: Constructor Gets Called Multiple Times on the Same Object
 
+{% raw %}
+
 	Article: Q152211
 	Product(s): Microsoft C Compiler
 	Version(s): 4.1,4.2,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/152/Q152211/
 	
 	=============================================================================
 	
+
+{% endraw %}

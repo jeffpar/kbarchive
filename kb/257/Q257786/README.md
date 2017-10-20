@@ -6,6 +6,8 @@ permalink: /kb/257/Q257786/
 
 ## Q257786: FIX: IPF in Msvbvm60.dll Showing Data Report After Modal Form
 
+{% raw %}
+
 	Article: Q257786
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -174,3 +176,5 @@ permalink: /kb/257/Q257786/
 	
 	=============================================================================
 	
+
+{% endraw %}

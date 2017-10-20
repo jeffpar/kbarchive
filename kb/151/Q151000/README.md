@@ -6,6 +6,8 @@ permalink: /kb/151/Q151000/
 
 ## Q151000: FIX: Problems with the Task Bar in Windows 95
 
+{% raw %}
+
 	Article: Q151000
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/151/Q151000/
 	
 	=============================================================================
 	
+
+{% endraw %}

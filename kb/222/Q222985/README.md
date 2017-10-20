@@ -6,6 +6,8 @@ permalink: /kb/222/Q222985/
 
 ## Q222985: XCON: MTA Stops Processing Messages with Large Attachments
 
+{% raw %}
+
 	Article: Q222985
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -103,3 +105,5 @@ permalink: /kb/222/Q222985/
 	
 	=============================================================================
 	
+
+{% endraw %}

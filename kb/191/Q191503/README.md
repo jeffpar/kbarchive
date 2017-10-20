@@ -6,6 +6,8 @@ permalink: /kb/191/Q191503/
 
 ## Q191503: FIX: Unexpected Results Display With Input Mask
 
+{% raw %}
+
 	Article: Q191503
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -195,3 +197,5 @@ permalink: /kb/191/Q191503/
 	
 	=============================================================================
 	
+
+{% endraw %}

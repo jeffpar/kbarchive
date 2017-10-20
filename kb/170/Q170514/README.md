@@ -6,6 +6,8 @@ permalink: /kb/170/Q170514/
 
 ## Q170514: FIX: Bad Codegen with /Og and FP Mult in Class with Virtual Dtor
 
+{% raw %}
+
 	Article: Q170514
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -145,3 +147,5 @@ permalink: /kb/170/Q170514/
 	
 	=============================================================================
 	
+
+{% endraw %}

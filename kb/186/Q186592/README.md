@@ -6,6 +6,8 @@ permalink: /kb/186/Q186592/
 
 ## Q186592: Terminal Server Commands: QUERY
 
+{% raw %}
+
 	Article: Q186592
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -475,3 +477,5 @@ permalink: /kb/186/Q186592/
 	
 	=============================================================================
 	
+
+{% endraw %}

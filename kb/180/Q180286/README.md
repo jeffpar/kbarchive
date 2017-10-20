@@ -6,6 +6,8 @@ permalink: /kb/180/Q180286/
 
 ## Q180286: Reg.exe DELETE and UPDATE Functions Do Not Work as Expected
 
+{% raw %}
+
 	Article: Q180286
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/180/Q180286/
 	
 	=============================================================================
 	
+
+{% endraw %}

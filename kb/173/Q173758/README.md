@@ -6,6 +6,8 @@ permalink: /kb/173/Q173758/
 
 ## Q173758: FAQ: How Do I Obtain a Copy of Visual FoxPro 5.0a?
 
+{% raw %}
+
 	Article: Q173758
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a
@@ -37,3 +39,5 @@ permalink: /kb/173/Q173758/
 	
 	=============================================================================
 	
+
+{% endraw %}

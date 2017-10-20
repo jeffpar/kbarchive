@@ -6,6 +6,8 @@ permalink: /kb/084/Q84787/
 
 ## Q84787: Mac Fax: Fax Gateway Cover Pages Not Sent
 
+{% raw %}
+
 	Article: Q84787
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -39,3 +41,5 @@ permalink: /kb/084/Q84787/
 	
 	=============================================================================
 	
+
+{% endraw %}

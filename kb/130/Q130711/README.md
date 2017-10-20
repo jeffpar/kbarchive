@@ -6,6 +6,8 @@ permalink: /kb/130/Q130711/
 
 ## Q130711: PRB: Microsoft Excel 5.0 Can't Open Visual FoxPro 3.0 Table
 
+{% raw %}
+
 	Article: Q130711
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0; :5.0
@@ -60,3 +62,5 @@ permalink: /kb/130/Q130711/
 	
 	=============================================================================
 	
+
+{% endraw %}

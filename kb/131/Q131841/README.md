@@ -6,6 +6,8 @@ permalink: /kb/131/Q131841/
 
 ## Q131841: Glyph Problems With Automatic Type 1 To TrueType Font Converte
 
+{% raw %}
+
 	Article: Q131841
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -75,3 +77,5 @@ permalink: /kb/131/Q131841/
 	
 	=============================================================================
 	
+
+{% endraw %}

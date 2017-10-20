@@ -6,6 +6,8 @@ permalink: /kb/048/Q48414/
 
 ## Q48414: Selecting Communications Ports, Interrupts in COMPAQ SLT/286
 
+{% raw %}
+
 	Article: Q48414
 	Product(s): See article
 	Version(s): 1.00
@@ -32,3 +34,5 @@ permalink: /kb/048/Q48414/
 	7. From the next screen, select "interrupt 4."
 	
 	8. Back up through the screens until you return to the DOS prompt.
+
+{% endraw %}

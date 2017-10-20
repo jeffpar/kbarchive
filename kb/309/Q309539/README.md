@@ -6,6 +6,8 @@ permalink: /kb/309/Q309539/
 
 ## Q309539: MechWarrior 4: Err Msg: 0036: Unable to Complete Patch
 
+{% raw %}
+
 	Article: Q309539
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/309/Q309539/
 	
 	=============================================================================
 	
+
+{% endraw %}

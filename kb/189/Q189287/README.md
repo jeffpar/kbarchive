@@ -6,6 +6,8 @@ permalink: /kb/189/Q189287/
 
 ## Q189287: Exchange Server Databases Not Sent To Recycle Bin When Deleted
 
+{% raw %}
+
 	Article: Q189287
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/189/Q189287/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/283/Q283652/
 
 ## Q283652: Games: Black Screen During Movies While Audio Plays Correctly
 
+{% raw %}
+
 	Article: Q283652
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,4.0
@@ -71,3 +73,5 @@ permalink: /kb/283/Q283652/
 	
 	=============================================================================
 	
+
+{% endraw %}

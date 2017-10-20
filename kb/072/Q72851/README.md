@@ -6,6 +6,8 @@ permalink: /kb/072/Q72851/
 
 ## Q72851: BUG: Arg+Linsert May Corrupt Lines Longer Than 128 Characters
 
+{% raw %}
+
 	Article: Q72851
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -69,3 +71,5 @@ permalink: /kb/072/Q72851/
 	
 	=============================================================================
 	
+
+{% endraw %}

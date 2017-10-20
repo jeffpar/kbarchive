@@ -6,6 +6,8 @@ permalink: /kb/099/Q99529/
 
 ## Q99529: NET USE Returns &quot;Error 53-The Network Path Is Not Found&quot;
 
+{% raw %}
+
 	Article: Q99529
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/099/Q99529/
 	
 	=============================================================================
 	
+
+{% endraw %}

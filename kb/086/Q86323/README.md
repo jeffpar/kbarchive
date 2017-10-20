@@ -6,6 +6,8 @@ permalink: /kb/086/Q86323/
 
 ## Q86323: PC Win: How to Move Folder to Top Level
 
+{% raw %}
+
 	Article: Q86323
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -40,3 +42,5 @@ permalink: /kb/086/Q86323/
 	
 	=============================================================================
 	
+
+{% endraw %}

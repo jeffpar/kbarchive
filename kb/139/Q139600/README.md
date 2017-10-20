@@ -6,6 +6,8 @@ permalink: /kb/139/Q139600/
 
 ## Q139600: Registry Editor Save Key Saves Key on Wrong Computer
 
+{% raw %}
+
 	Article: Q139600
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139600/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195763/
 
 ## Q195763: HOWTO: Use GetTempFileName API to Create a Unique Temporary File
 
+{% raw %}
+
 	Article: Q195763
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -153,3 +155,5 @@ permalink: /kb/195/Q195763/
 	
 	=============================================================================
 	
+
+{% endraw %}

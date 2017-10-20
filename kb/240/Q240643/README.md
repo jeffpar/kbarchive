@@ -6,6 +6,8 @@ permalink: /kb/240/Q240643/
 
 ## Q240643: World Atlas 2000: Web Page Does Not Open When You Click Web Link
 
+{% raw %}
+
 	Article: Q240643
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/240/Q240643/
 	
 	=============================================================================
 	
+
+{% endraw %}

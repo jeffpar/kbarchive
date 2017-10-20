@@ -6,6 +6,8 @@ permalink: /kb/156/Q156477/
 
 ## Q156477: SMS: Remote Control Agent Service Stops on a Windows NT Client
 
+{% raw %}
+
 	Article: Q156477
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/156/Q156477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138920/
 
 ## Q138920: How to Enable One Check Box While Disabling the Others
 
+{% raw %}
+
 	Article: Q138920
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -120,3 +122,5 @@ permalink: /kb/138/Q138920/
 	
 	=============================================================================
 	
+
+{% endraw %}

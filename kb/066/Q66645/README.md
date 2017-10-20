@@ -6,6 +6,8 @@ permalink: /kb/066/Q66645/
 
 ## Q66645: C4059 Warning May Be Caused by Errors in OS2DEF.H and PMWIN.H
 
+{% raw %}
+
 	Article: Q66645
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -54,3 +56,5 @@ permalink: /kb/066/Q66645/
 	 8.     i=LOUSHORT(mp1);
 	 9.     c=CHAR1FROMMP(mp1);
 	10. }
+
+{% endraw %}

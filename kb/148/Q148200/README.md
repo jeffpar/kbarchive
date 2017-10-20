@@ -6,6 +6,8 @@ permalink: /kb/148/Q148200/
 
 ## Q148200: XGEN: Error Forwarding Exchange Mail with Mac Client PC Mail
 
+{% raw %}
+
 	Article: Q148200
 	Product(s): Microsoft Exchange
 	Version(s): 3.5,4.0
@@ -72,3 +74,5 @@ permalink: /kb/148/Q148200/
 	
 	=============================================================================
 	
+
+{% endraw %}

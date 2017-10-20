@@ -6,6 +6,8 @@ permalink: /kb/201/Q201127/
 
 ## Q201127: XIMS: Rerouting SMTP Mail to Another Organization
 
+{% raw %}
+
 	Article: Q201127
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/201/Q201127/
 	
 	=============================================================================
 	
+
+{% endraw %}

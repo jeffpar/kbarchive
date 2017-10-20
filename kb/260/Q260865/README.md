@@ -6,6 +6,8 @@ permalink: /kb/260/Q260865/
 
 ## Q260865: StarLancer: Video Clips Are Not Played Smoothly
 
+{% raw %}
+
 	Article: Q260865
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -80,3 +82,5 @@ permalink: /kb/260/Q260865/
 	
 	=============================================================================
 	
+
+{% endraw %}

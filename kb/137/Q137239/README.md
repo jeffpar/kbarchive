@@ -6,6 +6,8 @@ permalink: /kb/137/Q137239/
 
 ## Q137239: More Disk Space Required to Copy or Move Compressed Files
 
+{% raw %}
+
 	Article: Q137239
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/137/Q137239/
 	
 	=============================================================================
 	
+
+{% endraw %}

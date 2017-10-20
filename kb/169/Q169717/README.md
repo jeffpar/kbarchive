@@ -6,6 +6,8 @@ permalink: /kb/169/Q169717/
 
 ## Q169717: Properties Menu Option Missing in DHCP Manager
 
+{% raw %}
+
 	Article: Q169717
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/169/Q169717/
 	
 	=============================================================================
 	
+
+{% endraw %}

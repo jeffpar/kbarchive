@@ -6,6 +6,8 @@ permalink: /kb/200/Q200344/
 
 ## Q200344: SMS: Defining Site Boundaries in Systems Management Server 2.0
 
+{% raw %}
+
 	Article: Q200344
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/200/Q200344/
 	
 	=============================================================================
 	
+
+{% endraw %}

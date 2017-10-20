@@ -6,6 +6,8 @@ permalink: /kb/154/Q154021/
 
 ## Q154021: INFO: ColorSource Property Has Different Values for Each Object
 
+{% raw %}
+
 	Article: Q154021
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -91,3 +93,5 @@ permalink: /kb/154/Q154021/
 	
 	=============================================================================
 	
+
+{% endraw %}

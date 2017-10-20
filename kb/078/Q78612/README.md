@@ -6,6 +6,8 @@ permalink: /kb/078/Q78612/
 
 ## Q78612: The ANSI /S Switch
 
+{% raw %}
+
 	Article: Q78612
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -48,3 +50,5 @@ permalink: /kb/078/Q78612/
 	
 	=============================================================================
 	
+
+{% endraw %}

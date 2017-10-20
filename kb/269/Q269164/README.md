@@ -6,6 +6,8 @@ permalink: /kb/269/Q269164/
 
 ## Q269164: Column Headings Change When You Modify Canned Queries
 
+{% raw %}
+
 	Article: Q269164
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -53,3 +55,5 @@ permalink: /kb/269/Q269164/
 	
 	=============================================================================
 	
+
+{% endraw %}

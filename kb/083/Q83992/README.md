@@ -6,6 +6,8 @@ permalink: /kb/083/Q83992/
 
 ## Q83992: Copying Individual Components from the Win SDK 3.1 Disks
 
+{% raw %}
+
 	Article: Q83992
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/083/Q83992/
 	
 	=============================================================================
 	
+
+{% endraw %}

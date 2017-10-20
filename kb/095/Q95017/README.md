@@ -6,6 +6,8 @@ permalink: /kb/095/Q95017/
 
 ## Q95017: SNADS: Two Message Headers Viewing Loop Around Message
 
+{% raw %}
+
 	Article: Q95017
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1
@@ -50,3 +52,5 @@ permalink: /kb/095/Q95017/
 	
 	=============================================================================
 	
+
+{% endraw %}

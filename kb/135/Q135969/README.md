@@ -6,6 +6,8 @@ permalink: /kb/135/Q135969/
 
 ## Q135969: Cannot Upgrade a Drive to DriveSpace 3
 
+{% raw %}
+
 	Article: Q135969
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/135/Q135969/
 	
 	=============================================================================
 	
+
+{% endraw %}

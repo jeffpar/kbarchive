@@ -6,6 +6,8 @@ permalink: /kb/095/Q95726/
 
 ## Q95726: PRB: SHOW WINDOW &lt;Window Name&gt; REFRESH with Browse Window
 
+{% raw %}
+
 	Article: Q95726
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -69,3 +71,5 @@ permalink: /kb/095/Q95726/
 	
 	=============================================================================
 	
+
+{% endraw %}

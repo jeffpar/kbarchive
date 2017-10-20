@@ -6,6 +6,8 @@ permalink: /kb/125/Q125452/
 
 ## Q125452: Using the SMS Tracer Utility
 
+{% raw %}
+
 	Article: Q125452
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -113,3 +115,5 @@ permalink: /kb/125/Q125452/
 	
 	=============================================================================
 	
+
+{% endraw %}

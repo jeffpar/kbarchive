@@ -6,6 +6,8 @@ permalink: /kb/172/Q172067/
 
 ## Q172067: Duplicate HSD Causes Incorrect Error Using &quot;Insert&quot; Option
 
+{% raw %}
+
 	Article: Q172067
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -83,3 +85,5 @@ permalink: /kb/172/Q172067/
 	
 	=============================================================================
 	
+
+{% endraw %}

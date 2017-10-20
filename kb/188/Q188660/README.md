@@ -6,6 +6,8 @@ permalink: /kb/188/Q188660/
 
 ## Q188660: PRB: Troubleshooting Active Movie Problems in Mastering Series
 
+{% raw %}
+
 	Article: Q188660
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -93,3 +95,5 @@ permalink: /kb/188/Q188660/
 	
 	=============================================================================
 	
+
+{% endraw %}

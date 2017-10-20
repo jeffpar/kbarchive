@@ -6,6 +6,8 @@ permalink: /kb/091/Q91211/
 
 ## Q91211: How to Change LAN Server Interface to 802.3
 
+{% raw %}
+
 	Article: Q91211
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/091/Q91211/
 	
 	=============================================================================
 	
+
+{% endraw %}

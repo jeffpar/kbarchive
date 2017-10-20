@@ -6,6 +6,8 @@ permalink: /kb/130/Q130122/
 
 ## Q130122: HOWTO: Add SQL SELECT to the Data Environment of a Report
 
+{% raw %}
+
 	Article: Q130122
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/130/Q130122/
 	
 	=============================================================================
 	
+
+{% endraw %}

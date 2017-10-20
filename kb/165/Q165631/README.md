@@ -6,6 +6,8 @@ permalink: /kb/165/Q165631/
 
 ## Q165631: ODE97: Creating Profiles for Custom Application in Setup Wizard
 
+{% raw %}
+
 	Article: Q165631
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -265,3 +267,5 @@ permalink: /kb/165/Q165631/
 	
 	=============================================================================
 	
+
+{% endraw %}

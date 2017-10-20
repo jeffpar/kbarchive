@@ -6,6 +6,8 @@ permalink: /kb/269/Q269442/
 
 ## Q269442: XADM: Mailbox Manager Removes Future Appointment
 
+{% raw %}
+
 	Article: Q269442
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -64,3 +66,5 @@ permalink: /kb/269/Q269442/
 	
 	=============================================================================
 	
+
+{% endraw %}

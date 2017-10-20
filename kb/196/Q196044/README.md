@@ -6,6 +6,8 @@ permalink: /kb/196/Q196044/
 
 ## Q196044: WD97: Cannot Insert Address Book After Installing SR-2
 
+{% raw %}
+
 	Article: Q196044
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 2
@@ -71,3 +73,5 @@ permalink: /kb/196/Q196044/
 	
 	=============================================================================
 	
+
+{% endraw %}

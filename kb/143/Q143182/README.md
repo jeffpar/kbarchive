@@ -6,6 +6,8 @@ permalink: /kb/143/Q143182/
 
 ## Q143182: Gopher Server MIB Definitions
 
+{% raw %}
+
 	Article: Q143182
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -127,3 +129,5 @@ permalink: /kb/143/Q143182/
 	
 	=============================================================================
 	
+
+{% endraw %}

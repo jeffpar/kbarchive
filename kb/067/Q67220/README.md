@@ -6,6 +6,8 @@ permalink: /kb/067/Q67220/
 
 ## Q67220: Screen Problems on the Compuadd 386 SL Using Windows
 
+{% raw %}
+
 	Article: Q67220
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/067/Q67220/
 	
 	=============================================================================
 	
+
+{% endraw %}

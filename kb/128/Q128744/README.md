@@ -6,6 +6,8 @@ permalink: /kb/128/Q128744/
 
 ## Q128744: PC Win: No Message If Password Change Fails
 
+{% raw %}
+
 	Article: Q128744
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2a
@@ -84,3 +86,5 @@ permalink: /kb/128/Q128744/
 	
 	=============================================================================
 	
+
+{% endraw %}

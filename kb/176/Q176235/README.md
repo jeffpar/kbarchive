@@ -6,6 +6,8 @@ permalink: /kb/176/Q176235/
 
 ## Q176235: XCON: Cyrillic Characters Not Rendered Correctly
 
+{% raw %}
+
 	Article: Q176235
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -104,3 +106,5 @@ permalink: /kb/176/Q176235/
 	
 	=============================================================================
 	
+
+{% endraw %}

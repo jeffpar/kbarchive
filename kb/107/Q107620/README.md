@@ -6,6 +6,8 @@ permalink: /kb/107/Q107620/
 
 ## Q107620: MAC Dinosaurs: Unable to Cancel Introductory Audio
 
+{% raw %}
+
 	Article: Q107620
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -45,3 +47,5 @@ permalink: /kb/107/Q107620/
 	
 	=============================================================================
 	
+
+{% endraw %}

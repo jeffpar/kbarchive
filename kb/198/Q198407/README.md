@@ -6,6 +6,8 @@ permalink: /kb/198/Q198407/
 
 ## Q198407: STREAMS Does Not Handle User Data Correctly
 
+{% raw %}
+
 	Article: Q198407
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/198/Q198407/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83318/
 
 ## Q83318: Novell NetWare 286 Rights Required to Run SETUP /N
 
+{% raw %}
+
 	Article: Q83318
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -110,3 +112,5 @@ permalink: /kb/083/Q83318/
 	
 	=============================================================================
 	
+
+{% endraw %}

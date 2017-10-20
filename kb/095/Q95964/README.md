@@ -6,6 +6,8 @@ permalink: /kb/095/Q95964/
 
 ## Q95964: PC Win: Version 3.0b Installs as 3.1 with Shared Windows
 
+{% raw %}
+
 	Article: Q95964
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -72,3 +74,5 @@ permalink: /kb/095/Q95964/
 	
 	=============================================================================
 	
+
+{% endraw %}

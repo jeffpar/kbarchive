@@ -6,6 +6,8 @@ permalink: /kb/073/Q73189/
 
 ## Q73189: FIX: MASM 6.0 ML Driver Does Not Pass /nologo to LINK Correctly
 
+{% raw %}
+
 	Article: Q73189
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -76,3 +78,5 @@ permalink: /kb/073/Q73189/
 	
 	=============================================================================
 	
+
+{% endraw %}

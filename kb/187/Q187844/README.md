@@ -6,6 +6,8 @@ permalink: /kb/187/Q187844/
 
 ## Q187844: XCLN: Viewing Calendar Information In a Public Folder
 
+{% raw %}
+
 	Article: Q187844
 	Product(s): Microsoft Exchange
 	Version(s): 8.02,8.03; WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/187/Q187844/
 	
 	=============================================================================
 	
+
+{% endraw %}

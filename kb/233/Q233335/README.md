@@ -6,6 +6,8 @@ permalink: /kb/233/Q233335/
 
 ## Q233335: Page Contents Visible When Certain Characters are at End of URL
 
+{% raw %}
+
 	Article: Q233335
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0
@@ -135,3 +137,5 @@ permalink: /kb/233/Q233335/
 	
 	=============================================================================
 	
+
+{% endraw %}

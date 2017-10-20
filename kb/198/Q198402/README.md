@@ -6,6 +6,8 @@ permalink: /kb/198/Q198402/
 
 ## Q198402: Combat Flight Simulator: Computer Hangs While Playing Game
 
+{% raw %}
+
 	Article: Q198402
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/198/Q198402/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/267/Q267548/
 
 ## Q267548: Cluster IP Resource Fails After Network Change
 
+{% raw %}
+
 	Article: Q267548
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -137,3 +139,5 @@ permalink: /kb/267/Q267548/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88295/
 
 ## Q88295: PRB: Clicking Database Runs Run-Time, Not Development Version
 
+{% raw %}
+
 	Article: Q88295
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -44,3 +46,5 @@ permalink: /kb/088/Q88295/
 	
 	=============================================================================
 	
+
+{% endraw %}

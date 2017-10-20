@@ -6,6 +6,8 @@ permalink: /kb/254/Q254323/
 
 ## Q254323: Problems Printing to Printer on an AS/400 NetServer
 
+{% raw %}
+
 	Article: Q254323
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -66,3 +68,5 @@ permalink: /kb/254/Q254323/
 	
 	=============================================================================
 	
+
+{% endraw %}

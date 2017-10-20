@@ -6,6 +6,8 @@ permalink: /kb/156/Q156502/
 
 ## Q156502: Cinemania/Music Central 96: Availability of Monthly Updates
 
+{% raw %}
+
 	Article: Q156502
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -49,3 +51,5 @@ permalink: /kb/156/Q156502/
 	
 	=============================================================================
 	
+
+{% endraw %}

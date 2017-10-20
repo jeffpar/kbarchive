@@ -6,6 +6,8 @@ permalink: /kb/301/Q301940/
 
 ## Q301940: HOW TO: Migrate Objects from One Domain to Another in Windows NT
 
+{% raw %}
+
 	Article: Q301940
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -230,3 +232,5 @@ permalink: /kb/301/Q301940/
 	
 	=============================================================================
 	
+
+{% endraw %}

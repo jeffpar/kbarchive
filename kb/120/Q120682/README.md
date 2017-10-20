@@ -6,6 +6,8 @@ permalink: /kb/120/Q120682/
 
 ## Q120682: How to Exclude CLSIDs from OLE's Insert Object Dialog
 
+{% raw %}
+
 	Article: Q120682
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -163,3 +165,5 @@ permalink: /kb/120/Q120682/
 	
 	=============================================================================
 	
+
+{% endraw %}

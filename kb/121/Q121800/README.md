@@ -6,6 +6,8 @@ permalink: /kb/121/Q121800/
 
 ## Q121800: PC WSPlus:  How to Use Schedule+  Without Microsoft Mail
 
+{% raw %}
+
 	Article: Q121800
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/121/Q121800/
 	
 	=============================================================================
 	
+
+{% endraw %}

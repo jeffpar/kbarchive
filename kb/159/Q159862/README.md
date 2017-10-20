@@ -6,6 +6,8 @@ permalink: /kb/159/Q159862/
 
 ## Q159862: Close Combat: Unable to Determine Leader's Affect on Team(s)
 
+{% raw %}
+
 	Article: Q159862
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/159/Q159862/
 	
 	=============================================================================
 	
+
+{% endraw %}

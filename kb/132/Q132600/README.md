@@ -6,6 +6,8 @@ permalink: /kb/132/Q132600/
 
 ## Q132600: Animations Flicker in Lion King 1.0
 
+{% raw %}
+
 	Article: Q132600
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132600/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226850/
 
 ## Q226850: SMS: Software Metering Server Installation Generates Error 997
 
+{% raw %}
+
 	Article: Q226850
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -85,3 +87,5 @@ permalink: /kb/226/Q226850/
 	
 	=============================================================================
 	
+
+{% endraw %}

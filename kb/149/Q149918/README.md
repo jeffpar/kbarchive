@@ -6,6 +6,8 @@ permalink: /kb/149/Q149918/
 
 ## Q149918: BUG: SQLState S1011 on SQL_AUTOCOMMIT_OFF with Active Results
 
+{% raw %}
+
 	Article: Q149918
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/149/Q149918/
 	
 	=============================================================================
 	
+
+{% endraw %}

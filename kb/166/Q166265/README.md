@@ -6,6 +6,8 @@ permalink: /kb/166/Q166265/
 
 ## Q166265: Printing to a Postscript Printer May Cause a STOP 0x0000003b
 
+{% raw %}
+
 	Article: Q166265
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/166/Q166265/
 	
 	=============================================================================
 	
+
+{% endraw %}

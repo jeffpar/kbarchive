@@ -6,6 +6,8 @@ permalink: /kb/128/Q128468/
 
 ## Q128468: PROFS: Cannot Receive Attachments Not Sent As Documents
 
+{% raw %}
+
 	Article: Q128468
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4a
@@ -89,3 +91,5 @@ permalink: /kb/128/Q128468/
 	
 	=============================================================================
 	
+
+{% endraw %}

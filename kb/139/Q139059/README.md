@@ -6,6 +6,8 @@ permalink: /kb/139/Q139059/
 
 ## Q139059: No Personal Folders Password By Default in MS Exchange
 
+{% raw %}
+
 	Article: Q139059
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/139/Q139059/
 	
 	=============================================================================
 	
+
+{% endraw %}

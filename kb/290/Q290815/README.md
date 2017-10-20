@@ -6,6 +6,8 @@ permalink: /kb/290/Q290815/
 
 ## Q290815: Microsoft Enterprise Learning Library: Step by Step Interactive
 
+{% raw %}
+
 	Article: Q290815
 	Product(s): Microsoft Press
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/290/Q290815/
 	
 	=============================================================================
 	
+
+{% endraw %}

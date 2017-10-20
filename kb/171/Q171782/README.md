@@ -6,6 +6,8 @@ permalink: /kb/171/Q171782/
 
 ## Q171782: INFO: How to Map a Network Drive During an Unattended Setup
 
+{% raw %}
+
 	Article: Q171782
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/171/Q171782/
 	
 	=============================================================================
 	
+
+{% endraw %}

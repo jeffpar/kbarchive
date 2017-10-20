@@ -6,6 +6,8 @@ permalink: /kb/108/Q108649/
 
 ## Q108649: Flight Simulator: Yoke for Flight Simulator
 
+{% raw %}
+
 	Article: Q108649
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:4.0; MS-DOS:4.0
@@ -45,3 +47,5 @@ permalink: /kb/108/Q108649/
 	
 	=============================================================================
 	
+
+{% endraw %}

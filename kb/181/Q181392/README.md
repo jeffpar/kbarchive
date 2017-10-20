@@ -6,6 +6,8 @@ permalink: /kb/181/Q181392/
 
 ## Q181392: PRB: Some Keywords Are Not Highlighted
 
+{% raw %}
+
 	Article: Q181392
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -80,3 +82,5 @@ permalink: /kb/181/Q181392/
 	
 	=============================================================================
 	
+
+{% endraw %}

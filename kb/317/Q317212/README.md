@@ -6,6 +6,8 @@ permalink: /kb/317/Q317212/
 
 ## Q317212: &quot;Error 718&quot; Err Msg While Waiting For Response From NAC
 
+{% raw %}
+
 	Article: Q317212
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/317/Q317212/
 	
 	=============================================================================
 	
+
+{% endraw %}

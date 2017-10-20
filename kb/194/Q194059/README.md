@@ -6,6 +6,8 @@ permalink: /kb/194/Q194059/
 
 ## Q194059: Encarta Virtual Globe 99: How to Print the Map Legend
 
+{% raw %}
+
 	Article: Q194059
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/194/Q194059/
 	
 	=============================================================================
 	
+
+{% endraw %}

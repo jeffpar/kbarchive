@@ -6,6 +6,8 @@ permalink: /kb/242/Q242205/
 
 ## Q242205: Usage of RootUse.exe Program
 
+{% raw %}
+
 	Article: Q242205
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/242/Q242205/
 	
 	=============================================================================
 	
+
+{% endraw %}

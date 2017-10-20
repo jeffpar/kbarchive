@@ -6,6 +6,8 @@ permalink: /kb/069/Q69704/
 
 ## Q69704: How to Write Advisor Library Callback Routines Under MS-DOS
 
+{% raw %}
+
 	Article: Q69704
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0
@@ -139,3 +141,5 @@ permalink: /kb/069/Q69704/
 	
 	=============================================================================
 	
+
+{% endraw %}

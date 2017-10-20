@@ -6,6 +6,8 @@ permalink: /kb/128/Q128897/
 
 ## Q128897: FIX: GP Fault When For Loop Used with Unsigned Char Index
 
+{% raw %}
+
 	Article: Q128897
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -94,3 +96,5 @@ permalink: /kb/128/Q128897/
 	
 	=============================================================================
 	
+
+{% endraw %}

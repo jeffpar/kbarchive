@@ -6,6 +6,8 @@ permalink: /kb/147/Q147052/
 
 ## Q147052: XADM: Setup Displays Remote Server Does Not Respond Error
 
+{% raw %}
+
 	Article: Q147052
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/147/Q147052/
 	
 	=============================================================================
 	
+
+{% endraw %}

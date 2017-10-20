@@ -6,6 +6,8 @@ permalink: /kb/196/Q196226/
 
 ## Q196226: SMS: Site Component Manager May Fail When Polling
 
+{% raw %}
+
 	Article: Q196226
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -66,3 +68,5 @@ permalink: /kb/196/Q196226/
 	
 	=============================================================================
 	
+
+{% endraw %}

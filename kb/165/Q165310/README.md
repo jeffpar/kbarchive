@@ -6,6 +6,8 @@ permalink: /kb/165/Q165310/
 
 ## Q165310: 5250 Print Sessions Don't Reconnect After Connection Outage
 
+{% raw %}
+
 	Article: Q165310
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -87,3 +89,5 @@ permalink: /kb/165/Q165310/
 	
 	=============================================================================
 	
+
+{% endraw %}

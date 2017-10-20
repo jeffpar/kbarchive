@@ -6,6 +6,8 @@ permalink: /kb/072/Q72363/
 
 ## Q72363: Paintbrush: MSP to BMP Conversion Reduces Size
 
+{% raw %}
+
 	Article: Q72363
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/072/Q72363/
 	
 	=============================================================================
 	
+
+{% endraw %}

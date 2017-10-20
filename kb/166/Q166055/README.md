@@ -6,6 +6,8 @@ permalink: /kb/166/Q166055/
 
 ## Q166055: WV: Margins Outside Printable Area Error in Word Viewer
 
+{% raw %}
+
 	Article: Q166055
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -118,3 +120,5 @@ permalink: /kb/166/Q166055/
 	
 	=============================================================================
 	
+
+{% endraw %}

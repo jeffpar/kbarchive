@@ -6,6 +6,8 @@ permalink: /kb/182/Q182531/
 
 ## Q182531: Problems with the Windows NT Client Configuration Tool
 
+{% raw %}
+
 	Article: Q182531
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -75,3 +77,5 @@ permalink: /kb/182/Q182531/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165314/
 
 ## Q165314: Grace Logon Remaining Is Not Decremented When Logging to BDC
 
+{% raw %}
+
 	Article: Q165314
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.00
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165314/
 	
 	=============================================================================
 	
+
+{% endraw %}

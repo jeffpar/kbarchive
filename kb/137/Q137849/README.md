@@ -6,6 +6,8 @@ permalink: /kb/137/Q137849/
 
 ## Q137849: Event 4102 Error with WINS Server
 
+{% raw %}
+
 	Article: Q137849
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -59,3 +61,5 @@ permalink: /kb/137/Q137849/
 	
 	=============================================================================
 	
+
+{% endraw %}

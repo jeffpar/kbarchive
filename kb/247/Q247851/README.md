@@ -6,6 +6,8 @@ permalink: /kb/247/Q247851/
 
 ## Q247851: Problems with Logon Scripts if Exporting Server Is Not PDC
 
+{% raw %}
+
 	Article: Q247851
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/247/Q247851/
 	
 	=============================================================================
 	
+
+{% endraw %}

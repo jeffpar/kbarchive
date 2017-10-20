@@ -6,6 +6,8 @@ permalink: /kb/068/Q68906/
 
 ## Q68906: ASD: 747 Stabilator Trim Appears to Move in Wrong Direction
 
+{% raw %}
+
 	Article: Q68906
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/068/Q68906/
 	
 	=============================================================================
 	
+
+{% endraw %}

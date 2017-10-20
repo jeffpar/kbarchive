@@ -6,6 +6,8 @@ permalink: /kb/123/Q123297/
 
 ## Q123297: Losing Connections with HP JetDirect Printers
 
+{% raw %}
+
 	Article: Q123297
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/123/Q123297/
 	
 	=============================================================================
 	
+
+{% endraw %}

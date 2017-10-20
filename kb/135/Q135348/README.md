@@ -6,6 +6,8 @@ permalink: /kb/135/Q135348/
 
 ## Q135348: HOWTO: Update a Graph in a Form
 
+{% raw %}
+
 	Article: Q135348
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/135/Q135348/
 	
 	=============================================================================
 	
+
+{% endraw %}

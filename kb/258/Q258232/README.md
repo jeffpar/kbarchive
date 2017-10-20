@@ -6,6 +6,8 @@ permalink: /kb/258/Q258232/
 
 ## Q258232: Cannot Run Delprof.exe Against Remote Computers on the Network
 
+{% raw %}
+
 	Article: Q258232
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/258/Q258232/
 	
 	=============================================================================
 	
+
+{% endraw %}

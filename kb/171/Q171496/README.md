@@ -6,6 +6,8 @@ permalink: /kb/171/Q171496/
 
 ## Q171496: FIX: Bad Filename or Number with Get of UDT
 
+{% raw %}
+
 	Article: Q171496
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -117,3 +119,5 @@ permalink: /kb/171/Q171496/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82724/
 
 ## Q82724: Maintenance Mode Setup of Windows 3.1 and Networks
 
+{% raw %}
+
 	Article: Q82724
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/082/Q82724/
 	
 	=============================================================================
 	
+
+{% endraw %}

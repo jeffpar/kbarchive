@@ -6,6 +6,8 @@ permalink: /kb/079/Q79889/
 
 ## Q79889: Using Stacker XT/8 Coprocessor and Windows 3.0
 
+{% raw %}
+
 	Article: Q79889
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/079/Q79889/
 	
 	=============================================================================
 	
+
+{% endraw %}

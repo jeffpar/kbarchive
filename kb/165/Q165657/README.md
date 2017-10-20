@@ -6,6 +6,8 @@ permalink: /kb/165/Q165657/
 
 ## Q165657: RUI_BID Response Is Not Recognized by RUI Application
 
+{% raw %}
+
 	Article: Q165657
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP2,3.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165657/
 	
 	=============================================================================
 	
+
+{% endraw %}

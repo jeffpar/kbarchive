@@ -6,6 +6,8 @@ permalink: /kb/085/Q85227/
 
 ## Q85227: FIX: Using EXTERNDEF w/ a label May Work Incorrectly
 
+{% raw %}
+
 	Article: Q85227
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -120,3 +122,5 @@ permalink: /kb/085/Q85227/
 	
 	=============================================================================
 	
+
+{% endraw %}

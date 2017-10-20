@@ -6,6 +6,8 @@ permalink: /kb/102/Q102813/
 
 ## Q102813: Backup Err Msg: Incorrect DOS Version
 
+{% raw %}
+
 	Article: Q102813
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -85,3 +87,5 @@ permalink: /kb/102/Q102813/
 	
 	=============================================================================
 	
+
+{% endraw %}

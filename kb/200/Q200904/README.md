@@ -6,6 +6,8 @@ permalink: /kb/200/Q200904/
 
 ## Q200904: XCLN: Messages with None as Received Date are Not Archived
 
+{% raw %}
+
 	Article: Q200904
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03
@@ -60,3 +62,5 @@ permalink: /kb/200/Q200904/
 	
 	=============================================================================
 	
+
+{% endraw %}

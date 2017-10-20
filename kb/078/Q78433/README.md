@@ -6,6 +6,8 @@ permalink: /kb/078/Q78433/
 
 ## Q78433: Detailed Explanation of EMM386.EXE Switches
 
+{% raw %}
+
 	Article: Q78433
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -110,3 +112,5 @@ permalink: /kb/078/Q78433/
 	
 	=============================================================================
 	
+
+{% endraw %}

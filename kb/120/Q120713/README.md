@@ -6,6 +6,8 @@ permalink: /kb/120/Q120713/
 
 ## Q120713: Err Msg w/IntelliPoint/Type &amp; ProofReader: Sound Input Is Busy
 
+{% raw %}
+
 	Article: Q120713
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.0; WINDOWS:1.0
@@ -97,3 +99,5 @@ permalink: /kb/120/Q120713/
 	
 	=============================================================================
 	
+
+{% endraw %}

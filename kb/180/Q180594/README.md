@@ -6,6 +6,8 @@ permalink: /kb/180/Q180594/
 
 ## Q180594: WD97: Document Map Applies Level 1 to Incorrect Paragraphs
 
+{% raw %}
+
 	Article: Q180594
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -136,3 +138,5 @@ permalink: /kb/180/Q180594/
 	
 	=============================================================================
 	
+
+{% endraw %}

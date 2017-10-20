@@ -6,6 +6,8 @@ permalink: /kb/200/Q200474/
 
 ## Q200474: XADM: Unable to Create More than One Server Location
 
+{% raw %}
+
 	Article: Q200474
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/200/Q200474/
 	
 	=============================================================================
 	
+
+{% endraw %}

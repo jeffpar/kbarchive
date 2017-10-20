@@ -6,6 +6,8 @@ permalink: /kb/044/Q44715/
 
 ## Q44715: Mac Srv: Server Not Visible in Chooser on a Macintosh Plus
 
+{% raw %}
+
 	Article: Q44715
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -45,3 +47,5 @@ permalink: /kb/044/Q44715/
 	
 	=============================================================================
 	
+
+{% endraw %}

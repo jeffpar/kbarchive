@@ -6,6 +6,8 @@ permalink: /kb/242/Q242060/
 
 ## Q242060: Stop 0x0000000A Error in Tcpip.sys Caused by Ipr_Buffer Size
 
+{% raw %}
+
 	Article: Q242060
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/242/Q242060/
 	
 	=============================================================================
 	
+
+{% endraw %}

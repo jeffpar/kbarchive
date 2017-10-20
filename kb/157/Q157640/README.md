@@ -6,6 +6,8 @@ permalink: /kb/157/Q157640/
 
 ## Q157640: WD97: Insertion Point Disappears After Inserting Scrolling Text
 
+{% raw %}
+
 	Article: Q157640
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/157/Q157640/
 	
 	=============================================================================
 	
+
+{% endraw %}

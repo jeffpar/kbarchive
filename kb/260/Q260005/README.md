@@ -6,6 +6,8 @@ permalink: /kb/260/Q260005/
 
 ## Q260005: StarLancer: USB Game Controller Does Not Function Properly
 
+{% raw %}
+
 	Article: Q260005
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/260/Q260005/
 	
 	=============================================================================
 	
+
+{% endraw %}

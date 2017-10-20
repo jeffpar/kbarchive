@@ -6,6 +6,8 @@ permalink: /kb/071/Q71300/
 
 ## Q71300: LAN Manager Pop-up Messages While Running MS-DOS Applications
 
+{% raw %}
+
 	Article: Q71300
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -72,3 +74,5 @@ permalink: /kb/071/Q71300/
 	
 	=============================================================================
 	
+
+{% endraw %}

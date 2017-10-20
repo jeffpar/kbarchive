@@ -6,6 +6,8 @@ permalink: /kb/086/Q86100/
 
 ## Q86100: PC Win: MSMAIL.INI Entries in &#91;Microsoft Mail&#93;
 
+{% raw %}
+
 	Article: Q86100
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.0b,3.2
@@ -459,3 +461,5 @@ permalink: /kb/086/Q86100/
 	
 	=============================================================================
 	
+
+{% endraw %}

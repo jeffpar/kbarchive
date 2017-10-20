@@ -6,6 +6,8 @@ permalink: /kb/113/Q113083/
 
 ## Q113083: PC Forms: User Setup for Running on Windows NT
 
+{% raw %}
+
 	Article: Q113083
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0
@@ -331,3 +333,5 @@ permalink: /kb/113/Q113083/
 	
 	=============================================================================
 	
+
+{% endraw %}

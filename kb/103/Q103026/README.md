@@ -6,6 +6,8 @@ permalink: /kb/103/Q103026/
 
 ## Q103026: RAS Frame Format Diagram
 
+{% raw %}
+
 	Article: Q103026
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -90,3 +92,5 @@ permalink: /kb/103/Q103026/
 	
 	=============================================================================
 	
+
+{% endraw %}

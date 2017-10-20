@@ -6,6 +6,8 @@ permalink: /kb/119/Q119099/
 
 ## Q119099: BUG: Memory Leak with Desktop Database Drivers with USE
 
+{% raw %}
+
 	Article: Q119099
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/119/Q119099/
 	
 	=============================================================================
 	
+
+{% endraw %}

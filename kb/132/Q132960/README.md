@@ -6,6 +6,8 @@ permalink: /kb/132/Q132960/
 
 ## Q132960: PRB: Invalid Precision Value Err w/ Character Field Parameters
 
+{% raw %}
+
 	Article: Q132960
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5 1.51 1.52 1.52a 1.52b 2.0
@@ -101,3 +103,5 @@ permalink: /kb/132/Q132960/
 	
 	=============================================================================
 	
+
+{% endraw %}

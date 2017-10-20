@@ -6,6 +6,8 @@ permalink: /kb/284/Q284943/
 
 ## Q284943: How to Create a Windows 95 Startup Disk in MS-DOS
 
+{% raw %}
+
 	Article: Q284943
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1,2.5
@@ -96,3 +98,5 @@ permalink: /kb/284/Q284943/
 	
 	=============================================================================
 	
+
+{% endraw %}

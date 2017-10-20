@@ -6,6 +6,8 @@ permalink: /kb/138/Q138970/
 
 ## Q138970: Configuring the NVAlert and NVRunCmd Host Code Page
 
+{% raw %}
+
 	Article: Q138970
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -93,3 +95,5 @@ permalink: /kb/138/Q138970/
 	
 	=============================================================================
 	
+
+{% endraw %}

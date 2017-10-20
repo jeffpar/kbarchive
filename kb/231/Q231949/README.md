@@ -6,6 +6,8 @@ permalink: /kb/231/Q231949/
 
 ## Q231949: AMD CPUID Check for the AMD Athlon Now Allows Write-Combining
 
+{% raw %}
+
 	Article: Q231949
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/231/Q231949/
 	
 	=============================================================================
 	
+
+{% endraw %}

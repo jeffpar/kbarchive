@@ -6,6 +6,8 @@ permalink: /kb/171/Q171615/
 
 ## Q171615: 3270 Applet Extended Menu is Hidden when Auto-connect is Enabled
 
+{% raw %}
+
 	Article: Q171615
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1 and above
@@ -48,3 +50,5 @@ permalink: /kb/171/Q171615/
 	
 	=============================================================================
 	
+
+{% endraw %}

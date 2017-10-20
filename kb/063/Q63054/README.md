@@ -6,6 +6,8 @@ permalink: /kb/063/Q63054/
 
 ## Q63054: Case Lost in Complex Switch Statement in C 6.00
 
+{% raw %}
+
 	Article: Q63054
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -111,3 +113,5 @@ permalink: /kb/063/Q63054/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

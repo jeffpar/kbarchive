@@ -6,6 +6,8 @@ permalink: /kb/141/Q141740/
 
 ## Q141740: PRB: APPEND BLANK on a Child Grid Does Not Display New Record
 
+{% raw %}
+
 	Article: Q141740
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 5.00
@@ -111,3 +113,5 @@ permalink: /kb/141/Q141740/
 	
 	=============================================================================
 	
+
+{% endraw %}

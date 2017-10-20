@@ -6,6 +6,8 @@ permalink: /kb/130/Q130280/
 
 ## Q130280: Changing Domain Password Causes Error 7210
 
+{% raw %}
+
 	Article: Q130280
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -67,3 +69,5 @@ permalink: /kb/130/Q130280/
 	
 	=============================================================================
 	
+
+{% endraw %}

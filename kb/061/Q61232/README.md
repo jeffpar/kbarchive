@@ -6,6 +6,8 @@ permalink: /kb/061/Q61232/
 
 ## Q61232: C 6.00 README: CV Extended Memory Option with Northgate
 
+{% raw %}
+
 	Article: Q61232
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -25,3 +27,5 @@ permalink: /kb/061/Q61232/
 	
 	Northgate is a registered trademark of Northgate Computer Systems, a
 	division of ABL Corporation. Vega is a trademark of Video Seven, Inc.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149295/
 
 ## Q149295: Win 95 SNA Client May Hang on Startup with Anti-cmos Virus
 
+{% raw %}
+
 	Article: Q149295
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,3.0,4.0
@@ -179,3 +181,5 @@ permalink: /kb/149/Q149295/
 	
 	=============================================================================
 	
+
+{% endraw %}

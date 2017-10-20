@@ -6,6 +6,8 @@ permalink: /kb/124/Q124794/
 
 ## Q124794: FFAPI: Corrupted From: Field with Large Gateway Put
 
+{% raw %}
+
 	Article: Q124794
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -79,3 +81,5 @@ permalink: /kb/124/Q124794/
 	
 	=============================================================================
 	
+
+{% endraw %}

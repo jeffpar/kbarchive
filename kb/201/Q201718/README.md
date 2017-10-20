@@ -6,6 +6,8 @@ permalink: /kb/201/Q201718/
 
 ## Q201718: SMS: Insufficient Access Permissions Produce Generic Error Msg
 
+{% raw %}
+
 	Article: Q201718
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -68,3 +70,5 @@ permalink: /kb/201/Q201718/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179565/
 
 ## Q179565: SMS: Unable To Generate Traps For Dr. Watson Events
 
+{% raw %}
+
 	Article: Q179565
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/179/Q179565/
 	
 	=============================================================================
 	
+
+{% endraw %}

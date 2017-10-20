@@ -6,6 +6,8 @@ permalink: /kb/243/Q243824/
 
 ## Q243824: XFOR: How to Install the Application Converter for Lotus Notes
 
+{% raw %}
+
 	Article: Q243824
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -56,3 +58,5 @@ permalink: /kb/243/Q243824/
 	
 	=============================================================================
 	
+
+{% endraw %}

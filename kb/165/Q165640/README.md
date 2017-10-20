@@ -6,6 +6,8 @@ permalink: /kb/165/Q165640/
 
 ## Q165640: HOWTO: Customize the Comment and Uncomment Strings in VFP
 
+{% raw %}
+
 	Article: Q165640
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -110,3 +112,5 @@ permalink: /kb/165/Q165640/
 	
 	=============================================================================
 	
+
+{% endraw %}

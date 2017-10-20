@@ -6,6 +6,8 @@ permalink: /kb/141/Q141002/
 
 ## Q141002: Bookshelf: Can't Use Undo with Copy To Excel Command
 
+{% raw %}
+
 	Article: Q141002
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1995 edition
@@ -67,3 +69,5 @@ permalink: /kb/141/Q141002/
 	
 	=============================================================================
 	
+
+{% endraw %}

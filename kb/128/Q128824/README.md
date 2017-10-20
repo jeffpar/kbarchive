@@ -6,6 +6,8 @@ permalink: /kb/128/Q128824/
 
 ## Q128824: PC Win: User Information Moved with MOVEUSER
 
+{% raw %}
+
 	Article: Q128824
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -71,3 +73,5 @@ permalink: /kb/128/Q128824/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174824/
 
 ## Q174824: XCLN: Err Msg: The Items Properties Could Not Be Displayed
 
+{% raw %}
+
 	Article: Q174824
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -49,3 +51,5 @@ permalink: /kb/174/Q174824/
 	
 	=============================================================================
 	
+
+{% endraw %}

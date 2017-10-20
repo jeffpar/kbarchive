@@ -6,6 +6,8 @@ permalink: /kb/243/Q243985/
 
 ## Q243985: FS2000: Introductory Video Is Played but Program Does Not Start
 
+{% raw %}
+
 	Article: Q243985
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -95,3 +97,5 @@ permalink: /kb/243/Q243985/
 	
 	=============================================================================
 	
+
+{% endraw %}

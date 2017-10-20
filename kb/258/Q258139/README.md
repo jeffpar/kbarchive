@@ -6,6 +6,8 @@ permalink: /kb/258/Q258139/
 
 ## Q258139: Outlook 97 Included In Exchange Server Training Kit Has Expired
 
+{% raw %}
+
 	Article: Q258139
 	Product(s): Microsoft Press
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/258/Q258139/
 	
 	=============================================================================
 	
+
+{% endraw %}

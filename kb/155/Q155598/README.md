@@ -6,6 +6,8 @@ permalink: /kb/155/Q155598/
 
 ## Q155598: Cannot Install DPT SCSI Adapter During Setup on MIPS Platform
 
+{% raw %}
+
 	Article: Q155598
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/155/Q155598/
 	
 	=============================================================================
 	
+
+{% endraw %}

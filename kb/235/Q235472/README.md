@@ -6,6 +6,8 @@ permalink: /kb/235/Q235472/
 
 ## Q235472: All Host Security Services Must Run in Same Windows NT Account
 
+{% raw %}
+
 	Article: Q235472
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -89,3 +91,5 @@ permalink: /kb/235/Q235472/
 	
 	=============================================================================
 	
+
+{% endraw %}

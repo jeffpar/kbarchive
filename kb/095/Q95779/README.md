@@ -6,6 +6,8 @@ permalink: /kb/095/Q95779/
 
 ## Q95779: WFWG Err Msg: Cannot Install Protected Mode Mapping
 
+{% raw %}
+
 	Article: Q95779
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/095/Q95779/
 	
 	=============================================================================
 	
+
+{% endraw %}

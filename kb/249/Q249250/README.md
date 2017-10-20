@@ -6,6 +6,8 @@ permalink: /kb/249/Q249250/
 
 ## Q249250: XADM: Proxy Addresses May Be Modified After Applying Window
 
+{% raw %}
+
 	Article: Q249250
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/249/Q249250/
 	
 	=============================================================================
 	
+
+{% endraw %}

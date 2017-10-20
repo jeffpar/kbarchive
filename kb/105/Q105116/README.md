@@ -6,6 +6,8 @@ permalink: /kb/105/Q105116/
 
 ## Q105116: RunWait.exe - DLL Provides Synchronous Spawn Function
 
+{% raw %}
+
 	Article: Q105116
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -201,3 +203,5 @@ permalink: /kb/105/Q105116/
 	
 	=============================================================================
 	
+
+{% endraw %}

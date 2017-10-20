@@ -6,6 +6,8 @@ permalink: /kb/265/Q265109/
 
 ## Q265109: BUG: The STL list::sort() Function Doesn't Sort List of Pointers
 
+{% raw %}
+
 	Article: Q265109
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -151,3 +153,5 @@ permalink: /kb/265/Q265109/
 	
 	=============================================================================
 	
+
+{% endraw %}

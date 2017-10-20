@@ -6,6 +6,8 @@ permalink: /kb/185/Q185721/
 
 ## Q185721: Faxing from Win95 Prompts for Intervention or Has Blank Status
 
+{% raw %}
+
 	Article: Q185721
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT4.0,4.0a;WINDOWS:95
@@ -61,3 +63,5 @@ permalink: /kb/185/Q185721/
 	
 	=============================================================================
 	
+
+{% endraw %}

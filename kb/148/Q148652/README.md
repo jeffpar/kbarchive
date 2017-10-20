@@ -6,6 +6,8 @@ permalink: /kb/148/Q148652/
 
 ## Q148652: PRB: LNK2005 Errors When Link C Run-Time Libraries Are Linked Be
 
+{% raw %}
+
 	Article: Q148652
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,5.0,6.0
@@ -152,3 +154,5 @@ permalink: /kb/148/Q148652/
 	
 	=============================================================================
 	
+
+{% endraw %}

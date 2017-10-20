@@ -6,6 +6,8 @@ permalink: /kb/172/Q172685/
 
 ## Q172685: PRB: DISPLAY STATUS Shows Only 210 Characters of SET PATH TO
 
+{% raw %}
+
 	Article: Q172685
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -111,3 +113,5 @@ permalink: /kb/172/Q172685/
 	
 	=============================================================================
 	
+
+{% endraw %}

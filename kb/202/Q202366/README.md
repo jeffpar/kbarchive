@@ -6,6 +6,8 @@ permalink: /kb/202/Q202366/
 
 ## Q202366: Outlook 98 Does Not Read Certificates from Certificate Server
 
+{% raw %}
+
 	Article: Q202366
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/202/Q202366/
 	
 	=============================================================================
 	
+
+{% endraw %}

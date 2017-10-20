@@ -6,6 +6,8 @@ permalink: /kb/139/Q139212/
 
 ## Q139212: Memory Leak in TN3270 Server if RU Sizes Exceed TN3270 Defaults
 
+{% raw %}
+
 	Article: Q139212
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -74,3 +76,5 @@ permalink: /kb/139/Q139212/
 	
 	=============================================================================
 	
+
+{% endraw %}

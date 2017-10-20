@@ -6,6 +6,8 @@ permalink: /kb/037/Q37882/
 
 ## Q37882: Call Microsoft MOUSE from QB 4.x Using Assembler, INTERRUPT
 
+{% raw %}
+
 	Article: Q37882
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -226,3 +228,5 @@ permalink: /kb/037/Q37882/
 	    ret    8           ;remove 4 parameters from stack
 	Mouse    endp
 	END
+
+{% endraw %}

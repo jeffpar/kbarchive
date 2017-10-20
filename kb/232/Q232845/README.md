@@ -6,6 +6,8 @@ permalink: /kb/232/Q232845/
 
 ## Q232845: LoadBarState asserts while restoring two/more floating toolbars
 
+{% raw %}
+
 	Article: Q232845
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,5.0,6.0
@@ -109,3 +111,5 @@ permalink: /kb/232/Q232845/
 	
 	=============================================================================
 	
+
+{% endraw %}

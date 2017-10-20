@@ -6,6 +6,8 @@ permalink: /kb/104/Q104530/
 
 ## Q104530: Step-Up or Uninstall Err Msg: Error Reading File DOSSETUP.INI
 
+{% raw %}
+
 	Article: Q104530
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/104/Q104530/
 	
 	=============================================================================
 	
+
+{% endraw %}

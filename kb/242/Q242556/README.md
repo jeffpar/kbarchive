@@ -6,6 +6,8 @@ permalink: /kb/242/Q242556/
 
 ## Q242556: AoE II Err Msg: A Required .dll File, Dplayx.dll, Was Not Found
 
+{% raw %}
+
 	Article: Q242556
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0; :
@@ -151,3 +153,5 @@ permalink: /kb/242/Q242556/
 	
 	=============================================================================
 	
+
+{% endraw %}

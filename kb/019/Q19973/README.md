@@ -6,6 +6,8 @@ permalink: /kb/019/Q19973/
 
 ## Q19973: Running Flight Simulator on an IBM PC AT with an EGA
 
+{% raw %}
+
 	Article: Q19973
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/019/Q19973/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/291/Q291575/
 
 ## Q291575: HOWTO: Use Visual Basic to Locate CD-ROM Drives
 
+{% raw %}
+
 	Article: Q291575
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -150,3 +152,5 @@ permalink: /kb/291/Q291575/
 	
 	=============================================================================
 	
+
+{% endraw %}

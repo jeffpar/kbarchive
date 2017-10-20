@@ -6,6 +6,8 @@ permalink: /kb/186/Q186710/
 
 ## Q186710: FEEDIGNOREFINAL is Not a Valid Option
 
+{% raw %}
+
 	Article: Q186710
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -67,3 +69,5 @@ permalink: /kb/186/Q186710/
 	
 	=============================================================================
 	
+
+{% endraw %}

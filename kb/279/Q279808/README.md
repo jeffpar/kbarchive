@@ -6,6 +6,8 @@ permalink: /kb/279/Q279808/
 
 ## Q279808: Encarta World Atlas 2001: Multimedia Features Perform Slowly
 
+{% raw %}
+
 	Article: Q279808
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/279/Q279808/
 	
 	=============================================================================
 	
+
+{% endraw %}

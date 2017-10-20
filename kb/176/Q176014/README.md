@@ -6,6 +6,8 @@ permalink: /kb/176/Q176014/
 
 ## Q176014: 8.3 Short File Names not Retained after Tape Restore
 
+{% raw %}
+
 	Article: Q176014
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176014/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85352/
 
 ## Q85352: FAX: How to Configure the Fax Gateway
 
+{% raw %}
+
 	Article: Q85352
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -40,3 +42,5 @@ permalink: /kb/085/Q85352/
 	
 	=============================================================================
 	
+
+{% endraw %}

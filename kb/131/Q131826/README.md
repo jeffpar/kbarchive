@@ -6,6 +6,8 @@ permalink: /kb/131/Q131826/
 
 ## Q131826: PC NTMMTA: Err Msg 1069: Service Did Not Start Due to Logon...
 
+{% raw %}
+
 	Article: Q131826
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/131/Q131826/
 	
 	=============================================================================
 	
+
+{% endraw %}

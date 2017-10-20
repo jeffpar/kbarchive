@@ -6,6 +6,8 @@ permalink: /kb/195/Q195124/
 
 ## Q195124: XCON: NDR When Replying All to Message Sent to Moved User
 
+{% raw %}
+
 	Article: Q195124
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -101,3 +103,5 @@ permalink: /kb/195/Q195124/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191323/
 
 ## Q191323: BUG: &quot;Member OPTION3 Is a Class Member&quot; Error
 
+{% raw %}
+
 	Article: Q191323
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -97,3 +99,5 @@ permalink: /kb/191/Q191323/
 	
 	=============================================================================
 	
+
+{% endraw %}

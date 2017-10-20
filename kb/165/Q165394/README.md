@@ -6,6 +6,8 @@ permalink: /kb/165/Q165394/
 
 ## Q165394: XADM: Importing a Carriage Return in Multi-Valued Fields
 
+{% raw %}
+
 	Article: Q165394
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -44,3 +46,5 @@ permalink: /kb/165/Q165394/
 	
 	=============================================================================
 	
+
+{% endraw %}

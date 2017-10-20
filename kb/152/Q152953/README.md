@@ -6,6 +6,8 @@ permalink: /kb/152/Q152953/
 
 ## Q152953: XADM: SMTP Proxy Generation Fails After 21st Address
 
+{% raw %}
+
 	Article: Q152953
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/152/Q152953/
 	
 	=============================================================================
 	
+
+{% endraw %}

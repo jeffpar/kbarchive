@@ -6,6 +6,8 @@ permalink: /kb/049/Q49868/
 
 ## Q49868: Microsoft International Subsidiary Technical Support
 
+{% raw %}
+
 	Article: Q49868
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/049/Q49868/
 	
 	=============================================================================
 	
+
+{% endraw %}

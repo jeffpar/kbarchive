@@ -6,6 +6,8 @@ permalink: /kb/130/Q130958/
 
 ## Q130958: BUG: Five Label Layouts Have Incorrect Format
 
+{% raw %}
+
 	Article: Q130958
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -86,3 +88,5 @@ permalink: /kb/130/Q130958/
 	
 	=============================================================================
 	
+
+{% endraw %}

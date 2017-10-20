@@ -6,6 +6,8 @@ permalink: /kb/140/Q140678/
 
 ## Q140678: How Windows 95 Manages the Size of the Disk Cache
 
+{% raw %}
+
 	Article: Q140678
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/140/Q140678/
 	
 	=============================================================================
 	
+
+{% endraw %}

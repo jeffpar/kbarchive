@@ -6,6 +6,8 @@ permalink: /kb/189/Q189894/
 
 ## Q189894: WD97: Cannot Find Thesaurus Error After Installing Works 4.5a
 
+{% raw %}
+
 	Article: Q189894
 	Product(s): Word 97 for Windows
 	Version(s): 4.5a,Service Release 2 (SR-2)
@@ -77,3 +79,5 @@ permalink: /kb/189/Q189894/
 	
 	=============================================================================
 	
+
+{% endraw %}

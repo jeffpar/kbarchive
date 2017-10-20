@@ -6,6 +6,8 @@ permalink: /kb/154/Q154817/
 
 ## Q154817: PRB: RDC Refresh Method Failure with Bound DBListbox
 
+{% raw %}
+
 	Article: Q154817
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -108,3 +110,5 @@ permalink: /kb/154/Q154817/
 	
 	=============================================================================
 	
+
+{% endraw %}

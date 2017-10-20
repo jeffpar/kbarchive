@@ -6,6 +6,8 @@ permalink: /kb/169/Q169748/
 
 ## Q169748: SMS: Packages Not Copied to NetWare Distribution Servers
 
+{% raw %}
+
 	Article: Q169748
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -60,3 +62,5 @@ permalink: /kb/169/Q169748/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192662/
 
 ## Q192662: SMS: Remote Control GPFs with Certain Mouse Drivers
 
+{% raw %}
+
 	Article: Q192662
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -82,3 +84,5 @@ permalink: /kb/192/Q192662/
 	
 	=============================================================================
 	
+
+{% endraw %}

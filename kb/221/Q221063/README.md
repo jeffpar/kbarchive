@@ -6,6 +6,8 @@ permalink: /kb/221/Q221063/
 
 ## Q221063: Network Drives Created with Substitute Command Cannot Copy
 
+{% raw %}
+
 	Article: Q221063
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP3
@@ -65,3 +67,5 @@ permalink: /kb/221/Q221063/
 	
 	=============================================================================
 	
+
+{% endraw %}

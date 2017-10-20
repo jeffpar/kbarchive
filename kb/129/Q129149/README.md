@@ -6,6 +6,8 @@ permalink: /kb/129/Q129149/
 
 ## Q129149: Cannot Find SYSTEM.INI After Omar Sharif Bridge Installation
 
+{% raw %}
+
 	Article: Q129149
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -86,3 +88,5 @@ permalink: /kb/129/Q129149/
 	
 	=============================================================================
 	
+
+{% endraw %}

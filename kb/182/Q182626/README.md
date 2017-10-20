@@ -6,6 +6,8 @@ permalink: /kb/182/Q182626/
 
 ## Q182626: Access Is Denied When Attempting to Put Files on FTP Server
 
+{% raw %}
+
 	Article: Q182626
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -115,3 +117,5 @@ permalink: /kb/182/Q182626/
 	
 	=============================================================================
 	
+
+{% endraw %}

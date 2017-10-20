@@ -6,6 +6,8 @@ permalink: /kb/157/Q157221/
 
 ## Q157221: STL Sample for the Predicate Version of lower_bound Function
 
+{% raw %}
+
 	Article: Q157221
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -161,3 +163,5 @@ permalink: /kb/157/Q157221/
 	
 	=============================================================================
 	
+
+{% endraw %}

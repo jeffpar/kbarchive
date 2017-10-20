@@ -6,6 +6,8 @@ permalink: /kb/113/Q113530/
 
 ## Q113530: BUG: Parent Folder Icon Not at Top of List in Filer
 
+{% raw %}
+
 	Article: Q113530
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -61,3 +63,5 @@ permalink: /kb/113/Q113530/
 	
 	=============================================================================
 	
+
+{% endraw %}

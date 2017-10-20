@@ -6,6 +6,8 @@ permalink: /kb/100/Q100552/
 
 ## Q100552: Total of Report Bands Cannot Exceed Page Length
 
+{% raw %}
+
 	Article: Q100552
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0,6.0
@@ -47,3 +49,5 @@ permalink: /kb/100/Q100552/
 	
 	=============================================================================
 	
+
+{% endraw %}

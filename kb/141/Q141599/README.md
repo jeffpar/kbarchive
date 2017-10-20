@@ -6,6 +6,8 @@ permalink: /kb/141/Q141599/
 
 ## Q141599: Lens Screen Saver Hangs on Dell Omniplex 4100
 
+{% raw %}
+
 	Article: Q141599
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/141/Q141599/
 	
 	=============================================================================
 	
+
+{% endraw %}

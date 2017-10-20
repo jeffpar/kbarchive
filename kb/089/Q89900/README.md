@@ -6,6 +6,8 @@ permalink: /kb/089/Q89900/
 
 ## Q89900: Sound Finder Does Not Restore Minimized Quick Recorder
 
+{% raw %}
+
 	Article: Q89900
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/089/Q89900/
 	
 	=============================================================================
 	
+
+{% endraw %}

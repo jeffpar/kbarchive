@@ -6,6 +6,8 @@ permalink: /kb/312/Q312433/
 
 ## Q312433: XFOR: How to Use Mdbvu32.exe to Find and Remove a Delegate Rule
 
+{% raw %}
+
 	Article: Q312433
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -104,3 +106,5 @@ permalink: /kb/312/Q312433/
 	
 	=============================================================================
 	
+
+{% endraw %}

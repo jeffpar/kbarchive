@@ -6,6 +6,8 @@ permalink: /kb/273/Q273930/
 
 ## Q273930: Crimson Skies: Quits Unexpectedly After Finishing Game on Zone
 
+{% raw %}
+
 	Article: Q273930
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/273/Q273930/
 	
 	=============================================================================
 	
+
+{% endraw %}

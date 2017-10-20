@@ -6,6 +6,8 @@ permalink: /kb/180/Q180168/
 
 ## Q180168: Novell Client 32 for Win95 Displays Duplicate Files on FPNW
 
+{% raw %}
+
 	Article: Q180168
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0;Windows:95
@@ -57,3 +59,5 @@ permalink: /kb/180/Q180168/
 	
 	=============================================================================
 	
+
+{% endraw %}

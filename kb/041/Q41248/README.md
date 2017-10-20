@@ -6,6 +6,8 @@ permalink: /kb/041/Q41248/
 
 ## Q41248: Floppy Setup Only Installs the Libraries
 
+{% raw %}
+
 	Article: Q41248
 	Product(s): See article
 	Version(s): 2.00
@@ -20,3 +22,5 @@ permalink: /kb/041/Q41248/
 	
 	There are too many variables involved for one generic setup to install
 	QuickC effectively on all possible floppy systems.
+
+{% endraw %}

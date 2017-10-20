@@ -6,6 +6,8 @@ permalink: /kb/256/Q256061/
 
 ## Q256061: Cannot Log On Using SMTP Name After Running the Exchange MA
 
+{% raw %}
+
 	Article: Q256061
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -59,3 +61,5 @@ permalink: /kb/256/Q256061/
 	
 	=============================================================================
 	
+
+{% endraw %}

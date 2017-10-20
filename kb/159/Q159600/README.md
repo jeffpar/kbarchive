@@ -6,6 +6,8 @@ permalink: /kb/159/Q159600/
 
 ## Q159600: PerfMon Server-Sessions Errored Out Also Tracks Autodisconnects
 
+{% raw %}
+
 	Article: Q159600
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -61,3 +63,5 @@ permalink: /kb/159/Q159600/
 	
 	=============================================================================
 	
+
+{% endraw %}

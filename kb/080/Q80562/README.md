@@ -6,6 +6,8 @@ permalink: /kb/080/Q80562/
 
 ## Q80562: MTTOOL Test Miscellaneous Information
 
+{% raw %}
+
 	Article: Q80562
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -148,3 +150,5 @@ permalink: /kb/080/Q80562/
 	
 	=============================================================================
 	
+
+{% endraw %}

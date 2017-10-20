@@ -6,6 +6,8 @@ permalink: /kb/168/Q168359/
 
 ## Q168359: MSB Rainforest: Minimum System Requirements for Windows
 
+{% raw %}
+
 	Article: Q168359
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/168/Q168359/
 	
 	=============================================================================
 	
+
+{% endraw %}

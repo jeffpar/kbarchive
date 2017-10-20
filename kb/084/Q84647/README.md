@@ -6,6 +6,8 @@ permalink: /kb/084/Q84647/
 
 ## Q84647: WD97: &quot;Margins Set Outside Printable Area of Page&quot;
 
+{% raw %}
+
 	Article: Q84647
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/084/Q84647/
 	
 	=============================================================================
 	
+
+{% endraw %}

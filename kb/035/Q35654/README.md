@@ -6,6 +6,8 @@ permalink: /kb/035/Q35654/
 
 ## Q35654: &quot;Bad Record Length&quot; if PUT#1,,x&#36; where x&#36; Length = Buffer Size
 
+{% raw %}
+
 	Article: Q35654
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -88,3 +90,5 @@ permalink: /kb/035/Q35654/
 	work around this compatibility issue, you can modify your Version
 	4.00b or 4.50 program to GET into a fixed-length string of the correct
 	length.
+
+{% endraw %}

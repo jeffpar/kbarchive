@@ -6,6 +6,8 @@ permalink: /kb/050/Q50334/
 
 ## Q50334: atexit() Returns Zero if Successful
 
+{% raw %}
+
 	Article: Q50334
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -25,3 +27,5 @@ permalink: /kb/050/Q50334/
 	function (Page 124) under DESCRIPTION. The correct return values are
 	described in the RETURN VALUE section. atexit() should return a value
 	of zero (0) if successful and nonzero (-1) on error.
+
+{% endraw %}

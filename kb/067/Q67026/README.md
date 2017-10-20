@@ -6,6 +6,8 @@ permalink: /kb/067/Q67026/
 
 ## Q67026: Bitstream Fontware 3.0 Installation Kit Requirements
 
+{% raw %}
+
 	Article: Q67026
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/067/Q67026/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185241/
 
 ## Q185241: BUG: Cannot Navigate Columns If a Row in a Grid is Disabled
 
+{% raw %}
+
 	Article: Q185241
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -86,3 +88,5 @@ permalink: /kb/185/Q185241/
 	
 	=============================================================================
 	
+
+{% endraw %}

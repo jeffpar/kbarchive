@@ -6,6 +6,8 @@ permalink: /kb/153/Q153534/
 
 ## Q153534: SMS: Retrieving SMSVIEW Data Using Microsoft Access
 
+{% raw %}
+
 	Article: Q153534
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -108,3 +110,5 @@ permalink: /kb/153/Q153534/
 	
 	=============================================================================
 	
+
+{% endraw %}

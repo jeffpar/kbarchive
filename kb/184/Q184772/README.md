@@ -6,6 +6,8 @@ permalink: /kb/184/Q184772/
 
 ## Q184772: XFOR: Internet Messages Received in Raw Form
 
+{% raw %}
+
 	Article: Q184772
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/184/Q184772/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82469/
 
 ## Q82469: Using Multiple CD-ROM Drives on One Machine
 
+{% raw %}
+
 	Article: Q82469
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/082/Q82469/
 	
 	=============================================================================
 	
+
+{% endraw %}

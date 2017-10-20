@@ -6,6 +6,8 @@ permalink: /kb/258/Q258815/
 
 ## Q258815: Wave Audio Volume Is Unexpectedly Raised
 
+{% raw %}
+
 	Article: Q258815
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/258/Q258815/
 	
 	=============================================================================
 	
+
+{% endraw %}

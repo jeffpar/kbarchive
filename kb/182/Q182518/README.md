@@ -6,6 +6,8 @@ permalink: /kb/182/Q182518/
 
 ## Q182518: XADM: Exchange Server Setup.log File Is Unreadable In Wordpad
 
+{% raw %}
+
 	Article: Q182518
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/182/Q182518/
 	
 	=============================================================================
 	
+
+{% endraw %}

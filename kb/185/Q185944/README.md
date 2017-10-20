@@ -6,6 +6,8 @@ permalink: /kb/185/Q185944/
 
 ## Q185944: Stop 0x7B After Installing Windows NT on an ALR Evolution-V ST
 
+{% raw %}
+
 	Article: Q185944
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/185/Q185944/
 	
 	=============================================================================
 	
+
+{% endraw %}

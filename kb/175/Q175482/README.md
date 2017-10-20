@@ -6,6 +6,8 @@ permalink: /kb/175/Q175482/
 
 ## Q175482: XFOR: Populating First and Last Name for Dirsync'd MS Mail
 
+{% raw %}
+
 	Article: Q175482
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -88,3 +90,5 @@ permalink: /kb/175/Q175482/
 	
 	=============================================================================
 	
+
+{% endraw %}

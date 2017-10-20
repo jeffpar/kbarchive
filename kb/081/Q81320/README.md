@@ -6,6 +6,8 @@ permalink: /kb/081/Q81320/
 
 ## Q81320: Mouse Problems with Windows on KLH and Premier Computers
 
+{% raw %}
+
 	Article: Q81320
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -73,3 +75,5 @@ permalink: /kb/081/Q81320/
 	
 	=============================================================================
 	
+
+{% endraw %}

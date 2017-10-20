@@ -6,6 +6,8 @@ permalink: /kb/094/Q94911/
 
 ## Q94911: BUG: ALIGN Directive Placement Changes EXE File Size
 
+{% raw %}
+
 	Article: Q94911
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1,6.11,6.1a
@@ -83,3 +85,5 @@ permalink: /kb/094/Q94911/
 	
 	=============================================================================
 	
+
+{% endraw %}

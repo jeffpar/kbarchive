@@ -6,6 +6,8 @@ permalink: /kb/256/Q256844/
 
 ## Q256844: XCON: Routing and RAS Connection Doesn't Work with 9301 Warning
 
+{% raw %}
+
 	Article: Q256844
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1,5.5 SP2,5.5 SP3
@@ -148,3 +150,5 @@ permalink: /kb/256/Q256844/
 	
 	=============================================================================
 	
+
+{% endraw %}

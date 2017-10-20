@@ -6,6 +6,8 @@ permalink: /kb/149/Q149683/
 
 ## Q149683: PCM Appears Blank on Startup When &quot;Offer After&quot; Not Expired
 
+{% raw %}
+
 	Article: Q149683
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -62,3 +64,5 @@ permalink: /kb/149/Q149683/
 	
 	=============================================================================
 	
+
+{% endraw %}

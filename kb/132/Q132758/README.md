@@ -6,6 +6,8 @@ permalink: /kb/132/Q132758/
 
 ## Q132758: Netware Client Cannot Create A File
 
+{% raw %}
+
 	Article: Q132758
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132758/
 	
 	=============================================================================
 	
+
+{% endraw %}

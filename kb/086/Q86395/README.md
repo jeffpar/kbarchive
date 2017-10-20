@@ -6,6 +6,8 @@ permalink: /kb/086/Q86395/
 
 ## Q86395: PC OS2: Err Msg: Your Message File Was Moved...
 
+{% raw %}
+
 	Article: Q86395
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -49,3 +51,5 @@ permalink: /kb/086/Q86395/
 	
 	=============================================================================
 	
+
+{% endraw %}

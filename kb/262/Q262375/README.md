@@ -6,6 +6,8 @@ permalink: /kb/262/Q262375/
 
 ## Q262375: XADM: Information Store Stops &amp; Error &quot;4294966781&quot; Is Generated
 
+{% raw %}
+
 	Article: Q262375
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -89,3 +91,5 @@ permalink: /kb/262/Q262375/
 	
 	=============================================================================
 	
+
+{% endraw %}

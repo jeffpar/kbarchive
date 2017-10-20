@@ -6,6 +6,8 @@ permalink: /kb/173/Q173889/
 
 ## Q173889: XADM: Determining if Exchange Server Enterprise or Standard Edit
 
+{% raw %}
+
 	Article: Q173889
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/173/Q173889/
 	
 	=============================================================================
 	
+
+{% endraw %}

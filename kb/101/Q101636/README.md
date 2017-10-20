@@ -6,6 +6,8 @@ permalink: /kb/101/Q101636/
 
 ## Q101636: &quot;Access Denied&quot; Message Accessing File Open Elsewhere
 
+{% raw %}
+
 	Article: Q101636
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,4.0
@@ -47,3 +49,5 @@ permalink: /kb/101/Q101636/
 	
 	=============================================================================
 	
+
+{% endraw %}

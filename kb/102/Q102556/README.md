@@ -6,6 +6,8 @@ permalink: /kb/102/Q102556/
 
 ## Q102556: PC Ext: -Q4 Parameter Output Meanings
 
+{% raw %}
+
 	Article: Q102556
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -58,3 +60,5 @@ permalink: /kb/102/Q102556/
 	
 	=============================================================================
 	
+
+{% endraw %}

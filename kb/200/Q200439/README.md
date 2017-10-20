@@ -6,6 +6,8 @@ permalink: /kb/200/Q200439/
 
 ## Q200439: SMSINST: Install Status MIF Files Are Not Created on Windows 95
 
+{% raw %}
+
 	Article: Q200439
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/200/Q200439/
 	
 	=============================================================================
 	
+
+{% endraw %}

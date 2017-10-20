@@ -6,6 +6,8 @@ permalink: /kb/255/Q255779/
 
 ## Q255779: Can View System Drive Even Though View Is Disabled by a Policy
 
+{% raw %}
+
 	Article: Q255779
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -118,3 +120,5 @@ permalink: /kb/255/Q255779/
 	
 	=============================================================================
 	
+
+{% endraw %}

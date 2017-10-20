@@ -6,6 +6,8 @@ permalink: /kb/190/Q190149/
 
 ## Q190149: PRB: Access Violation in GetAmbientDisplayName
 
+{% raw %}
+
 	Article: Q190149
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/190/Q190149/
 	
 	=============================================================================
 	
+
+{% endraw %}

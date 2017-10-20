@@ -6,6 +6,8 @@ permalink: /kb/238/Q238143/
 
 ## Q238143: BUG: WTSQuerySessionInformation() Returns Invalid Client Address
 
+{% raw %}
+
 	Article: Q238143
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/238/Q238143/
 	
 	=============================================================================
 	
+
+{% endraw %}

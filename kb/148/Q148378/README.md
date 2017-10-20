@@ -6,6 +6,8 @@ permalink: /kb/148/Q148378/
 
 ## Q148378: Setup of RAS with Multiple Modems Gives Slow Performance
 
+{% raw %}
+
 	Article: Q148378
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/148/Q148378/
 	
 	=============================================================================
 	
+
+{% endraw %}

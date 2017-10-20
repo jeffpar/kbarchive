@@ -6,6 +6,8 @@ permalink: /kb/148/Q148494/
 
 ## Q148494: Windows 95 Uses Pbrush.exe for Backward Compatibility
 
+{% raw %}
+
 	Article: Q148494
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148494/
 	
 	=============================================================================
 	
+
+{% endraw %}

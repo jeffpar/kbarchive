@@ -6,6 +6,8 @@ permalink: /kb/138/Q138786/
 
 ## Q138786: PRB: Just-In-Time Debugging Launches Wrong Debugger
 
+{% raw %}
+
 	Article: Q138786
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 5.0 6.0
@@ -86,3 +88,5 @@ permalink: /kb/138/Q138786/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68382/
 
 ## Q68382: Multithreaded fcvt() and ecvt() in C 6.00 May Cause GP Fault
 
+{% raw %}
+
 	Article: Q68382
 	Product(s): See article
 	Version(s): 6.00
@@ -26,3 +28,5 @@ permalink: /kb/068/Q68382/
 	fcvt() format if the number is greater than 0.1 and ecvt() format if
 	the number is less than 0.1. In addition, sprintf() can be called with
 	the %f or %e format specifier to return the required string.
+
+{% endraw %}

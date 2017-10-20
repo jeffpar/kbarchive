@@ -6,6 +6,8 @@ permalink: /kb/083/Q83376/
 
 ## Q83376: SMARTDrive ElementSize Should Precede CacheSizes
 
+{% raw %}
+
 	Article: Q83376
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -78,3 +80,5 @@ permalink: /kb/083/Q83376/
 	
 	=============================================================================
 	
+
+{% endraw %}

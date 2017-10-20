@@ -6,6 +6,8 @@ permalink: /kb/164/Q164146/
 
 ## Q164146: HTTP PerfMon Counters Not Available to Non-Admin Accounts
 
+{% raw %}
+
 	Article: Q164146
 	Product(s): Internet Information Server
 	Version(s): 1.00,2.00,3.00
@@ -38,3 +40,5 @@ permalink: /kb/164/Q164146/
 	
 	=============================================================================
 	
+
+{% endraw %}

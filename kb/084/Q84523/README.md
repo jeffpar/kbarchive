@@ -6,6 +6,8 @@ permalink: /kb/084/Q84523/
 
 ## Q84523: OmniPage Pro 2.0 Does Not Display Scanned Image at High Res
 
+{% raw %}
+
 	Article: Q84523
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/084/Q84523/
 	
 	=============================================================================
 	
+
+{% endraw %}

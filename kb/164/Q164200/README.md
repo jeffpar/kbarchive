@@ -6,6 +6,8 @@ permalink: /kb/164/Q164200/
 
 ## Q164200: Writer 2: How to Mute All Sound In Creative Writer
 
+{% raw %}
+
 	Article: Q164200
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -94,3 +96,5 @@ permalink: /kb/164/Q164200/
 	
 	=============================================================================
 	
+
+{% endraw %}

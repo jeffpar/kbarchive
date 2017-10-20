@@ -6,6 +6,8 @@ permalink: /kb/096/Q96604/
 
 ## Q96604: MS-DOS Setup Error Message: Hard Disk Is Not Readable
 
+{% raw %}
+
 	Article: Q96604
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:
@@ -102,3 +104,5 @@ permalink: /kb/096/Q96604/
 	
 	=============================================================================
 	
+
+{% endraw %}

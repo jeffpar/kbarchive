@@ -6,6 +6,8 @@ permalink: /kb/167/Q167134/
 
 ## Q167134: HOWTO: Open Visual SourceSafe to a Specific Project
 
+{% raw %}
+
 	Article: Q167134
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/167/Q167134/
 	
 	=============================================================================
 	
+
+{% endraw %}

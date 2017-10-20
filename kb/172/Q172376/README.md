@@ -6,6 +6,8 @@ permalink: /kb/172/Q172376/
 
 ## Q172376: PRB: Ddcerr.log Reports &quot;DDCONV initializing&quot; During Upgrade
 
+{% raw %}
+
 	Article: Q172376
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -72,3 +74,5 @@ permalink: /kb/172/Q172376/
 	
 	=============================================================================
 	
+
+{% endraw %}

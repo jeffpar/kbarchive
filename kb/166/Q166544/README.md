@@ -6,6 +6,8 @@ permalink: /kb/166/Q166544/
 
 ## Q166544: XADM: DS Terminates Unexpectedly w/ Event IDs 1186, 1229, 1171
 
+{% raw %}
+
 	Article: Q166544
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -165,3 +167,5 @@ permalink: /kb/166/Q166544/
 	
 	=============================================================================
 	
+
+{% endraw %}

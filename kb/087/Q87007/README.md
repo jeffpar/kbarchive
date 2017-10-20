@@ -6,6 +6,8 @@ permalink: /kb/087/Q87007/
 
 ## Q87007: BUG: Help Compiler Hangs When .HPJ File &#91;MAP&#93; Section Too Big
 
+{% raw %}
+
 	Article: Q87007
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -48,3 +50,5 @@ permalink: /kb/087/Q87007/
 	
 	=============================================================================
 	
+
+{% endraw %}

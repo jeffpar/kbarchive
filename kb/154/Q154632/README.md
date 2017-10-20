@@ -6,6 +6,8 @@ permalink: /kb/154/Q154632/
 
 ## Q154632: FIX: Accept Returns FALSE but GetLastError Returns 0
 
+{% raw %}
+
 	Article: Q154632
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1,4.2
@@ -156,3 +158,5 @@ permalink: /kb/154/Q154632/
 	
 	=============================================================================
 	
+
+{% endraw %}

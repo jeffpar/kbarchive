@@ -6,6 +6,8 @@ permalink: /kb/186/Q186605/
 
 ## Q186605: Terminal Server Client Error: Not a Valid Windows NT Application
 
+{% raw %}
+
 	Article: Q186605
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/186/Q186605/
 	
 	=============================================================================
 	
+
+{% endraw %}

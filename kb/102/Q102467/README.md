@@ -6,6 +6,8 @@ permalink: /kb/102/Q102467/
 
 ## Q102467: HOWTO: Use MAPI.DLL to Invoke MS Mail from FoxPro for Windows
 
+{% raw %}
+
 	Article: Q102467
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/102/Q102467/
 	
 	=============================================================================
 	
+
+{% endraw %}

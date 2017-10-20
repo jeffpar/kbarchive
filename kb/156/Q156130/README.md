@@ -6,6 +6,8 @@ permalink: /kb/156/Q156130/
 
 ## Q156130: OLE DB Redistributable Components
 
+{% raw %}
+
 	Article: Q156130
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -92,3 +94,5 @@ permalink: /kb/156/Q156130/
 	
 	=============================================================================
 	
+
+{% endraw %}

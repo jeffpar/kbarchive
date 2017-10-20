@@ -6,6 +6,8 @@ permalink: /kb/171/Q171838/
 
 ## Q171838: FIX:Crash Compiling Native Code for Assignment of Variant Array
 
+{% raw %}
+
 	Article: Q171838
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -111,3 +113,5 @@ permalink: /kb/171/Q171838/
 	
 	=============================================================================
 	
+
+{% endraw %}

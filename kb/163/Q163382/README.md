@@ -6,6 +6,8 @@ permalink: /kb/163/Q163382/
 
 ## Q163382: XCLN: Macintosh Schedule+ and Exchange Interoperability
 
+{% raw %}
+
 	Article: Q163382
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; :7.5
@@ -49,3 +51,5 @@ permalink: /kb/163/Q163382/
 	
 	=============================================================================
 	
+
+{% endraw %}

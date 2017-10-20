@@ -6,6 +6,8 @@ permalink: /kb/145/Q145948/
 
 ## Q145948: Intermittent Logons To NetWare and FPNW Servers
 
+{% raw %}
+
 	Article: Q145948
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -60,3 +62,5 @@ permalink: /kb/145/Q145948/
 	
 	=============================================================================
 	
+
+{% endraw %}

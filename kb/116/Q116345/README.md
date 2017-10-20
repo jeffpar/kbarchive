@@ -6,6 +6,8 @@ permalink: /kb/116/Q116345/
 
 ## Q116345: Bookshelf: Redraw Problems When Scrolling with Virtual Desktop
 
+{% raw %}
+
 	Article: Q116345
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -46,3 +48,5 @@ permalink: /kb/116/Q116345/
 	
 	=============================================================================
 	
+
+{% endraw %}

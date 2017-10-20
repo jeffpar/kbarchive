@@ -6,6 +6,8 @@ permalink: /kb/174/Q174557/
 
 ## Q174557: Time Sources Defined For The Windows NT Time Service
 
+{% raw %}
+
 	Article: Q174557
 	Product(s): Microsoft Windows NT
 	Version(s): MS-DOS:3.0; Win2000:95; winnt:3.5,3.51,4.0
@@ -109,3 +111,5 @@ permalink: /kb/174/Q174557/
 	
 	=============================================================================
 	
+
+{% endraw %}

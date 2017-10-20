@@ -6,6 +6,8 @@ permalink: /kb/183/Q183270/
 
 ## Q183270: XCON: X400 Address Replaces SMTP Address When Resending Message
 
+{% raw %}
+
 	Article: Q183270
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/183/Q183270/
 	
 	=============================================================================
 	
+
+{% endraw %}

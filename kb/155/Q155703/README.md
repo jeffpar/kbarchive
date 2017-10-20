@@ -6,6 +6,8 @@ permalink: /kb/155/Q155703/
 
 ## Q155703: PRB: MCI Fails to Read a File Using a Custom mmio Procedure
 
+{% raw %}
+
 	Article: Q155703
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:4.0
@@ -70,3 +72,5 @@ permalink: /kb/155/Q155703/
 	
 	=============================================================================
 	
+
+{% endraw %}

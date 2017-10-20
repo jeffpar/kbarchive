@@ -6,6 +6,8 @@ permalink: /kb/254/Q254552/
 
 ## Q254552: XADM: Slow Information Store Startup From Public Folder Cleanup
 
+{% raw %}
+
 	Article: Q254552
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/254/Q254552/
 	
 	=============================================================================
 	
+
+{% endraw %}

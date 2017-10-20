@@ -6,6 +6,8 @@ permalink: /kb/033/Q33628/
 
 ## Q33628: LINK &quot;Too Many Groups in One Module&quot; with 30+ Named COMMONs
 
+{% raw %}
+
 	Article: Q33628
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/033/Q33628/
 	   COMMON SHARED /Mel/ a30
 	   COMMON SHARED /Harrison/ a31
 	   PRINT "OK!"
+
+{% endraw %}

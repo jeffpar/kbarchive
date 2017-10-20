@@ -6,6 +6,8 @@ permalink: /kb/080/Q80608/
 
 ## Q80608: MS-DOS 5 Upgrade 5.0a Disk Directories (5.25-Inch, 1.2 MB)
 
+{% raw %}
+
 	Article: Q80608
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0a
@@ -173,3 +175,5 @@ permalink: /kb/080/Q80608/
 	
 	=============================================================================
 	
+
+{% endraw %}

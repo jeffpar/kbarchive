@@ -6,6 +6,8 @@ permalink: /kb/128/Q128462/
 
 ## Q128462: PROFS: VMGATE Log .MAI File Errors
 
+{% raw %}
+
 	Article: Q128462
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4a
@@ -81,3 +83,5 @@ permalink: /kb/128/Q128462/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117147/
 
 ## Q117147: BUG: Break When Expression Has Changed Fails On Struct Members
 
+{% raw %}
+
 	Article: Q117147
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -104,3 +106,5 @@ permalink: /kb/117/Q117147/
 	
 	=============================================================================
 	
+
+{% endraw %}

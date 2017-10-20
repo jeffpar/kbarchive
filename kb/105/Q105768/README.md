@@ -6,6 +6,8 @@ permalink: /kb/105/Q105768/
 
 ## Q105768: PC WSPlus: Automatic Recovery and the RECOVER.CAL File
 
+{% raw %}
+
 	Article: Q105768
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -79,3 +81,5 @@ permalink: /kb/105/Q105768/
 	
 	=============================================================================
 	
+
+{% endraw %}

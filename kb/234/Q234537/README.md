@@ -6,6 +6,8 @@ permalink: /kb/234/Q234537/
 
 ## Q234537: Heap Corruption May Occur When Changing the Properties of SMB
 
+{% raw %}
+
 	Article: Q234537
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/234/Q234537/
 	
 	=============================================================================
 	
+
+{% endraw %}

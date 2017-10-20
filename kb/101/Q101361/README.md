@@ -6,6 +6,8 @@ permalink: /kb/101/Q101361/
 
 ## Q101361: PRB: VSafe Manager Does Not Appear in Windows Task List
 
+{% raw %}
+
 	Article: Q101361
 	Product(s): Microsoft Disk Operating System
 	Version(s): 3.0,3.0a,3.1,3.11,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/101/Q101361/
 	
 	=============================================================================
 	
+
+{% endraw %}

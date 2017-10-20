@@ -6,6 +6,8 @@ permalink: /kb/231/Q231305/
 
 ## Q231305: WINS Randomize1cList Feature Aids Load-Balancing Between DCs
 
+{% raw %}
+
 	Article: Q231305
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -234,3 +236,5 @@ permalink: /kb/231/Q231305/
 	
 	=============================================================================
 	
+
+{% endraw %}

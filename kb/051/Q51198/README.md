@@ -6,6 +6,8 @@ permalink: /kb/051/Q51198/
 
 ## Q51198: INFO: Formal Parameters Default to Type int
 
+{% raw %}
+
 	Article: Q51198
 	Product(s): Microsoft C Compiler
 	Version(s): MS- DOS:6.0,6.00a,6.00ax,7.0;OS/2:6.0,6.00a;WIN3X:1.0,1.5;WINNT:1.0,2.0,4.0,5.0 ;
@@ -66,3 +68,5 @@ permalink: /kb/051/Q51198/
 	
 	=============================================================================
 	
+
+{% endraw %}

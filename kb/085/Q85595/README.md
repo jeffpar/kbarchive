@@ -6,6 +6,8 @@ permalink: /kb/085/Q85595/
 
 ## Q85595: Toshiba PageLaser 12 May Require Updated Version of ROM
 
+{% raw %}
+
 	Article: Q85595
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/085/Q85595/
 	
 	=============================================================================
 	
+
+{% endraw %}

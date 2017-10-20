@@ -6,6 +6,8 @@ permalink: /kb/162/Q162086/
 
 ## Q162086: PRB: @GET...LIST Command Can Cause Errors in VFP Macintosh
 
+{% raw %}
+
 	Article: Q162086
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -95,3 +97,5 @@ permalink: /kb/162/Q162086/
 	
 	=============================================================================
 	
+
+{% endraw %}

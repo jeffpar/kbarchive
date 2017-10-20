@@ -6,6 +6,8 @@ permalink: /kb/195/Q195336/
 
 ## Q195336: Resource Kit Perfmib.dll Cannot Read Some SNMP Counters
 
+{% raw %}
+
 	Article: Q195336
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/195/Q195336/
 	
 	=============================================================================
 	
+
+{% endraw %}

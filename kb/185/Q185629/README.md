@@ -6,6 +6,8 @@ permalink: /kb/185/Q185629/
 
 ## Q185629: XCLN: Displaying This Message Correctly Requires a Custom E- For
 
+{% raw %}
+
 	Article: Q185629
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -65,3 +67,5 @@ permalink: /kb/185/Q185629/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142288/
 
 ## Q142288: INFO: No System Subdirectory Created on Shared Windows
 
+{% raw %}
+
 	Article: Q142288
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -116,3 +118,5 @@ permalink: /kb/142/Q142288/
 	
 	=============================================================================
 	
+
+{% endraw %}

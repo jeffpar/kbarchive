@@ -6,6 +6,8 @@ permalink: /kb/247/Q247785/
 
 ## Q247785: XCON: Getting IMC, X.400, Site Conns. in Exchange 4.0, 5.0, 5.5
 
+{% raw %}
+
 	Article: Q247785
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -117,3 +119,5 @@ permalink: /kb/247/Q247785/
 	
 	=============================================================================
 	
+
+{% endraw %}

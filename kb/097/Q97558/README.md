@@ -6,6 +6,8 @@ permalink: /kb/097/Q97558/
 
 ## Q97558: Windows NT Err Msg: Logon Failure
 
+{% raw %}
+
 	Article: Q97558
 	Product(s): Microsoft Windows NT
 	Version(s): ; Win2000:95; winnt:3.5,3.51,4.0
@@ -84,3 +86,5 @@ permalink: /kb/097/Q97558/
 	
 	=============================================================================
 	
+
+{% endraw %}

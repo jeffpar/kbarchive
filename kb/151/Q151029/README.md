@@ -6,6 +6,8 @@ permalink: /kb/151/Q151029/
 
 ## Q151029: Mac Bookshelf 96-97: CD Key Not Needed for Installation
 
+{% raw %}
+
 	Article: Q151029
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996-1997
@@ -46,3 +48,5 @@ permalink: /kb/151/Q151029/
 	
 	=============================================================================
 	
+
+{% endraw %}

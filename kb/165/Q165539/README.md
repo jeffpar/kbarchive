@@ -6,6 +6,8 @@ permalink: /kb/165/Q165539/
 
 ## Q165539: Microsoft Pocket Automap Streets: Frequently Asked Questions
 
+{% raw %}
+
 	Article: Q165539
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:1.0
@@ -138,3 +140,5 @@ permalink: /kb/165/Q165539/
 	
 	=============================================================================
 	
+
+{% endraw %}

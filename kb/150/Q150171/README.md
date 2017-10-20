@@ -6,6 +6,8 @@ permalink: /kb/150/Q150171/
 
 ## Q150171: Baseball 1994: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q150171
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150171/
 	
 	=============================================================================
 	
+
+{% endraw %}

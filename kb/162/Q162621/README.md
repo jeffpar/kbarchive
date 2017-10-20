@@ -6,6 +6,8 @@ permalink: /kb/162/Q162621/
 
 ## Q162621: BUG: GetSetting Causes GP Fault in Vba2.dll
 
+{% raw %}
+
 	Article: Q162621
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/162/Q162621/
 	
 	=============================================================================
 	
+
+{% endraw %}

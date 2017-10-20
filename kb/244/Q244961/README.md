@@ -6,6 +6,8 @@ permalink: /kb/244/Q244961/
 
 ## Q244961: FIX: Analyze.exe -f Replaces Project Data Files with 0 Byte File
 
+{% raw %}
+
 	Article: Q244961
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -113,3 +115,5 @@ permalink: /kb/244/Q244961/
 	
 	=============================================================================
 	
+
+{% endraw %}

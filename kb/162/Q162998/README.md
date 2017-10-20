@@ -6,6 +6,8 @@ permalink: /kb/162/Q162998/
 
 ## Q162998: XADM: Mailbox Is Empty Following Move Mailbox Command
 
+{% raw %}
+
 	Article: Q162998
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -97,3 +99,5 @@ permalink: /kb/162/Q162998/
 	
 	=============================================================================
 	
+
+{% endraw %}

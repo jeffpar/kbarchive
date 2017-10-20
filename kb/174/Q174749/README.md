@@ -6,6 +6,8 @@ permalink: /kb/174/Q174749/
 
 ## Q174749: XFOR: cc:Mail Migration Does Not Create PST File
 
+{% raw %}
+
 	Article: Q174749
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -48,3 +50,5 @@ permalink: /kb/174/Q174749/
 	
 	=============================================================================
 	
+
+{% endraw %}

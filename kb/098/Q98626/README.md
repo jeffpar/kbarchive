@@ -6,6 +6,8 @@ permalink: /kb/098/Q98626/
 
 ## Q98626: SAMPLE: Annotating and Printing Text and Ink Together
 
+{% raw %}
+
 	Article: Q98626
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/098/Q98626/
 	
 	=============================================================================
 	
+
+{% endraw %}

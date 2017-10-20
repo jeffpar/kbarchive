@@ -6,6 +6,8 @@ permalink: /kb/233/Q233400/
 
 ## Q233400: XGEN: Using Windows2000 Encrypted File System to Encrypt Mdbdata
 
+{% raw %}
+
 	Article: Q233400
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -76,3 +78,5 @@ permalink: /kb/233/Q233400/
 	
 	=============================================================================
 	
+
+{% endraw %}

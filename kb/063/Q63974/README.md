@@ -6,6 +6,8 @@ permalink: /kb/063/Q63974/
 
 ## Q63974: IOCtl Calls in Protected-Mode Microsoft Windows
 
+{% raw %}
+
 	Article: Q63974
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -75,3 +77,5 @@ permalink: /kb/063/Q63974/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164222/
 
 ## Q164222: CardBus Card in Docking Station May Not Be Configured
 
+{% raw %}
+
 	Article: Q164222
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164222/
 	
 	=============================================================================
 	
+
+{% endraw %}

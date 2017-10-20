@@ -6,6 +6,8 @@ permalink: /kb/162/Q162409/
 
 ## Q162409: SMS: Remote Control Windows Corrupted with Cirrus 5446 Chipset
 
+{% raw %}
+
 	Article: Q162409
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -53,3 +55,5 @@ permalink: /kb/162/Q162409/
 	
 	=============================================================================
 	
+
+{% endraw %}

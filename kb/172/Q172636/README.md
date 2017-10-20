@@ -6,6 +6,8 @@ permalink: /kb/172/Q172636/
 
 ## Q172636: Blank Manager Screen If Sponsor Server Registry Not Available
 
+{% raw %}
+
 	Article: Q172636
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/172/Q172636/
 	
 	=============================================================================
 	
+
+{% endraw %}

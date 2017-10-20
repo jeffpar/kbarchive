@@ -6,6 +6,8 @@ permalink: /kb/154/Q154053/
 
 ## Q154053: XFOR: How To Change cc:Mail Address Format To &quot;Last, First&quot;
 
+{% raw %}
+
 	Article: Q154053
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -134,3 +136,5 @@ permalink: /kb/154/Q154053/
 	
 	=============================================================================
 	
+
+{% endraw %}

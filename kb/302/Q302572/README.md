@@ -6,6 +6,8 @@ permalink: /kb/302/Q302572/
 
 ## Q302572: Supported Printers
 
+{% raw %}
+
 	Article: Q302572
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -61,3 +63,5 @@ permalink: /kb/302/Q302572/
 	
 	=============================================================================
 	
+
+{% endraw %}

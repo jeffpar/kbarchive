@@ -6,6 +6,8 @@ permalink: /kb/076/Q76761/
 
 ## Q76761: WUGNET.TXT: Putting Windows on a Network
 
+{% raw %}
+
 	Article: Q76761
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -237,3 +239,5 @@ permalink: /kb/076/Q76761/
 	
 	=============================================================================
 	
+
+{% endraw %}

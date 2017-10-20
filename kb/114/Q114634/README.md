@@ -6,6 +6,8 @@ permalink: /kb/114/Q114634/
 
 ## Q114634: Bookshelf 1994: Video Problems with Cirrus Logic Cards/Drivers
 
+{% raw %}
+
 	Article: Q114634
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -64,3 +66,5 @@ permalink: /kb/114/Q114634/
 	
 	=============================================================================
 	
+
+{% endraw %}

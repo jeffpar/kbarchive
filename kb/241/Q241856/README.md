@@ -6,6 +6,8 @@ permalink: /kb/241/Q241856/
 
 ## Q241856: PRB: Crash in DllMain After FreeLibrary is Called on a Resource
 
+{% raw %}
+
 	Article: Q241856
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.2,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/241/Q241856/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/251/Q251349/
 
 ## Q251349: 3270 Applet Stops Responding at Blank Screen on Terminal Server
 
+{% raw %}
+
 	Article: Q251349
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -92,3 +94,5 @@ permalink: /kb/251/Q251349/
 	
 	=============================================================================
 	
+
+{% endraw %}

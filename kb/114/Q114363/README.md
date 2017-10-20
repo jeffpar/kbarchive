@@ -6,6 +6,8 @@ permalink: /kb/114/Q114363/
 
 ## Q114363: Tools Group Contains Invalid Icon After Installing MS-DOS 6.21
 
+{% raw %}
+
 	Article: Q114363
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -64,3 +66,5 @@ permalink: /kb/114/Q114363/
 	
 	=============================================================================
 	
+
+{% endraw %}

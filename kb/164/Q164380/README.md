@@ -6,6 +6,8 @@ permalink: /kb/164/Q164380/
 
 ## Q164380: FIX: Custom Build Rules are Lost with Multiple Selections
 
+{% raw %}
+
 	Article: Q164380
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -76,3 +78,5 @@ permalink: /kb/164/Q164380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/081/Q81356/
 
 ## Q81356: BUG: QuickHelp /t Option Is Not Implemented
 
+{% raw %}
+
 	Article: Q81356
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.7,1.83
@@ -55,3 +57,5 @@ permalink: /kb/081/Q81356/
 	
 	=============================================================================
 	
+
+{% endraw %}

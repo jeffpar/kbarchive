@@ -6,6 +6,8 @@ permalink: /kb/197/Q197671/
 
 ## Q197671: HOWTO: How to Enumerate Monitors in Win 98 and Windows 2000
 
+{% raw %}
+
 	Article: Q197671
 	Product(s): Microsoft Windows NT
 	Version(s): ; WINDOWS:
@@ -127,3 +129,5 @@ permalink: /kb/197/Q197671/
 	
 	=============================================================================
 	
+
+{% endraw %}

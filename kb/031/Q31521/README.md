@@ -6,6 +6,8 @@ permalink: /kb/031/Q31521/
 
 ## Q31521: MASM 5.10 EXT.DOC: GetLine - Retrieves Line of Text
 
+{% raw %}
+
 	Article: Q31521
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -36,3 +38,5 @@ permalink: /kb/031/Q31521/
 	LINE line;
 	char far *buf;
 	PFILE pfile;
+
+{% endraw %}

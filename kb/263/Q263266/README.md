@@ -6,6 +6,8 @@ permalink: /kb/263/Q263266/
 
 ## Q263266: Baseball 2000: Erratic Behavior with SideWinder Game Pad Pro
 
+{% raw %}
+
 	Article: Q263266
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -138,3 +140,5 @@ permalink: /kb/263/Q263266/
 	
 	=============================================================================
 	
+
+{% endraw %}

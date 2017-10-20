@@ -6,6 +6,8 @@ permalink: /kb/233/Q233975/
 
 ## Q233975: Err Msg: The Requested Service Has Already Been Started
 
+{% raw %}
+
 	Article: Q233975
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/233/Q233975/
 	
 	=============================================================================
 	
+
+{% endraw %}

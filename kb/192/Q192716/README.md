@@ -6,6 +6,8 @@ permalink: /kb/192/Q192716/
 
 ## Q192716: HOWTO: Update More Than 40 Fields in an Access (Jet) Database
 
+{% raw %}
+
 	Article: Q192716
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.5,2.0,2.1 SP2,5.0,6.0
@@ -169,3 +171,5 @@ permalink: /kb/192/Q192716/
 	
 	=============================================================================
 	
+
+{% endraw %}

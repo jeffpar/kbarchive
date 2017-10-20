@@ -6,6 +6,8 @@ permalink: /kb/145/Q145753/
 
 ## Q145753: MS VISUAL FOXPRO 3 FOR WIN SBS Corrections and Comments
 
+{% raw %}
+
 	Article: Q145753
 	Product(s): Microsoft Press
 	Version(s): 
@@ -242,3 +244,5 @@ permalink: /kb/145/Q145753/
 	
 	=============================================================================
 	
+
+{% endraw %}

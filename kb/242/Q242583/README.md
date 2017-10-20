@@ -6,6 +6,8 @@ permalink: /kb/242/Q242583/
 
 ## Q242583: Resrcmon Leaks Handles
 
+{% raw %}
+
 	Article: Q242583
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/242/Q242583/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97650/
 
 ## Q97650: Installing TCP/IP Protocol for Remoteboot Workstations
 
+{% raw %}
+
 	Article: Q97650
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -164,3 +166,5 @@ permalink: /kb/097/Q97650/
 	
 	=============================================================================
 	
+
+{% endraw %}

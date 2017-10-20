@@ -6,6 +6,8 @@ permalink: /kb/088/Q88758/
 
 ## Q88758: AMI BIOS May Need to Be Upgraded for IDE Hard Drive
 
+{% raw %}
+
 	Article: Q88758
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:3.x,4.x,5.0,5.x,6.0,6.2,6.21; WINDOWS:3.0,3.0a,3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/088/Q88758/
 	
 	=============================================================================
 	
+
+{% endraw %}

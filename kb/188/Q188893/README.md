@@ -6,6 +6,8 @@ permalink: /kb/188/Q188893/
 
 ## Q188893: SnaBase Hangs When 256th Process Added to Internal Process Table
 
+{% raw %}
+
 	Article: Q188893
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -96,3 +98,5 @@ permalink: /kb/188/Q188893/
 	
 	=============================================================================
 	
+
+{% endraw %}

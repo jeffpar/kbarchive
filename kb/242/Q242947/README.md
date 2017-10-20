@@ -6,6 +6,8 @@ permalink: /kb/242/Q242947/
 
 ## Q242947: XCLN: Error Message Accessing PF: Unable to Display the Folder
 
+{% raw %}
+
 	Article: Q242947
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,98
@@ -53,3 +55,5 @@ permalink: /kb/242/Q242947/
 	
 	=============================================================================
 	
+
+{% endraw %}

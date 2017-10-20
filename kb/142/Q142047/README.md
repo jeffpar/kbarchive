@@ -6,6 +6,8 @@ permalink: /kb/142/Q142047/
 
 ## Q142047: Bad Network Packet May Cause Access Violation (AV) on DNS Server
 
+{% raw %}
+
 	Article: Q142047
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/142/Q142047/
 	
 	=============================================================================
 	
+
+{% endraw %}

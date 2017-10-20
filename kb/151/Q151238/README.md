@@ -6,6 +6,8 @@ permalink: /kb/151/Q151238/
 
 ## Q151238: SNA Server May Log Events 442, 443, 444, 445, and 446
 
+{% raw %}
+
 	Article: Q151238
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -123,3 +125,5 @@ permalink: /kb/151/Q151238/
 	
 	=============================================================================
 	
+
+{% endraw %}

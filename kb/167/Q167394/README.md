@@ -6,6 +6,8 @@ permalink: /kb/167/Q167394/
 
 ## Q167394: Installed Modem Detected as Serial Mouse on Restart
 
+{% raw %}
+
 	Article: Q167394
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/167/Q167394/
 	
 	=============================================================================
 	
+
+{% endraw %}

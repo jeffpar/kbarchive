@@ -6,6 +6,8 @@ permalink: /kb/192/Q192767/
 
 ## Q192767: FIX: HalfHeight Form Close Even when Closable Property is False
 
+{% raw %}
+
 	Article: Q192767
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -66,3 +68,5 @@ permalink: /kb/192/Q192767/
 	
 	=============================================================================
 	
+
+{% endraw %}

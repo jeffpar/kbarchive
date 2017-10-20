@@ -6,6 +6,8 @@ permalink: /kb/192/Q192203/
 
 ## Q192203: XADM: NNTP Message ID Missing From Event Description
 
+{% raw %}
+
 	Article: Q192203
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -75,3 +77,5 @@ permalink: /kb/192/Q192203/
 	
 	=============================================================================
 	
+
+{% endraw %}

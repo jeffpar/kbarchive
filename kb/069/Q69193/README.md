@@ -6,6 +6,8 @@ permalink: /kb/069/Q69193/
 
 ## Q69193: Mac Srv: Macintosh II Server Hangs Occasionally
 
+{% raw %}
+
 	Article: Q69193
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -52,3 +54,5 @@ permalink: /kb/069/Q69193/
 	
 	=============================================================================
 	
+
+{% endraw %}

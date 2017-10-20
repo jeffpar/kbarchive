@@ -6,6 +6,8 @@ permalink: /kb/129/Q129792/
 
 ## Q129792: List of Third-Party Object-Oriented Books with ISBN
 
+{% raw %}
+
 	Article: Q129792
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -155,3 +157,5 @@ permalink: /kb/129/Q129792/
 	
 	=============================================================================
 	
+
+{% endraw %}

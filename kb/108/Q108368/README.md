@@ -6,6 +6,8 @@ permalink: /kb/108/Q108368/
 
 ## Q108368: FIX: Error F1001 in range.c Compiling with -Ox
 
+{% raw %}
+
 	Article: Q108368
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -84,3 +86,5 @@ permalink: /kb/108/Q108368/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249077/
 
 ## Q249077: SMS: SP1:Copylog.tcf Does Not Show Site that Updated Logon Point
 
+{% raw %}
+
 	Article: Q249077
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -216,3 +218,5 @@ permalink: /kb/249/Q249077/
 	
 	=============================================================================
 	
+
+{% endraw %}

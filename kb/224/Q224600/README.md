@@ -6,6 +6,8 @@ permalink: /kb/224/Q224600/
 
 ## Q224600: RPC Application Causes AV When Dereferencing Freed Connection
 
+{% raw %}
+
 	Article: Q224600
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0,5.5
@@ -126,3 +128,5 @@ permalink: /kb/224/Q224600/
 	
 	=============================================================================
 	
+
+{% endraw %}

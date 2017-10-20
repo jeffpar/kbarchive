@@ -6,6 +6,8 @@ permalink: /kb/075/Q75206/
 
 ## Q75206: BUG: Inference Rules Not Invoked on Multiple Targets
 
+{% raw %}
+
 	Article: Q75206
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.1x,1.2,1.3,1.4; NT:1.4,1.5; OS/2:1.1x,1.21
@@ -81,3 +83,5 @@ permalink: /kb/075/Q75206/
 	
 	=============================================================================
 	
+
+{% endraw %}

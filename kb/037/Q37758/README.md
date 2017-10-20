@@ -6,6 +6,8 @@ permalink: /kb/037/Q37758/
 
 ## Q37758: Share Problems Documentation Error for open
 
+{% raw %}
+
 	Article: Q37758
 	Product(s): See article
 	Version(s): 5.00   | 5.10
@@ -20,3 +22,5 @@ permalink: /kb/037/Q37758/
 	"Another work around is to open the file with pmode set to S_IREAD and
 	omode..." is incorrect. The word omode should be replaced with the
 	word oflag.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72342/
 
 ## Q72342: Restoring the Original Version Table in SETVER.EXE
 
+{% raw %}
+
 	Article: Q72342
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -74,3 +76,5 @@ permalink: /kb/072/Q72342/
 	
 	=============================================================================
 	
+
+{% endraw %}

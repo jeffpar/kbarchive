@@ -6,6 +6,8 @@ permalink: /kb/066/Q66146/
 
 ## Q66146: Tetris 2-Player Mode Not Saved in Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66146
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/066/Q66146/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/288/Q288207/
 
 ## Q288207: IISSYNC May Fail If SSL Is Enabled on IIS5/Windows 2000 Cluster
 
+{% raw %}
+
 	Article: Q288207
 	Product(s): Internet Information Server
 	Version(s): 2000,2000 SP1,5.0
@@ -101,3 +103,5 @@ permalink: /kb/288/Q288207/
 	
 	=============================================================================
 	
+
+{% endraw %}

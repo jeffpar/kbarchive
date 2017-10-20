@@ -6,6 +6,8 @@ permalink: /kb/173/Q173104/
 
 ## Q173104: XCLN: No MAPI or Programmable APIs for Macintosh Client
 
+{% raw %}
+
 	Article: Q173104
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/173/Q173104/
 	
 	=============================================================================
 	
+
+{% endraw %}

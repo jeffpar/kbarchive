@@ -6,6 +6,8 @@ permalink: /kb/146/Q146383/
 
 ## Q146383: All Instances of Recurring Appointments Download to Timex
 
+{% raw %}
+
 	Article: Q146383
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -41,3 +43,5 @@ permalink: /kb/146/Q146383/
 	
 	=============================================================================
 	
+
+{% endraw %}

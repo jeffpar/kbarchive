@@ -6,6 +6,8 @@ permalink: /kb/184/Q184734/
 
 ## Q184734: Outwars: Volume Is Set at Maximum Level When You Start Game
 
+{% raw %}
+
 	Article: Q184734
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/184/Q184734/
 	
 	=============================================================================
 	
+
+{% endraw %}

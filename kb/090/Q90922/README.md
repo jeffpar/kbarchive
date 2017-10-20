@@ -6,6 +6,8 @@ permalink: /kb/090/Q90922/
 
 ## Q90922: Net Watcher Requires Enhanced Mode in Windows for Workgroups
 
+{% raw %}
+
 	Article: Q90922
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/090/Q90922/
 	
 	=============================================================================
 	
+
+{% endraw %}

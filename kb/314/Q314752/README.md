@@ -6,6 +6,8 @@ permalink: /kb/314/Q314752/
 
 ## Q314752: FIX: adLockBatchOptimistic Slows Down VFP OLE DB Provider
 
+{% raw %}
+
 	Article: Q314752
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -135,3 +137,5 @@ permalink: /kb/314/Q314752/
 	
 	=============================================================================
 	
+
+{% endraw %}

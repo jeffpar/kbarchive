@@ -6,6 +6,8 @@ permalink: /kb/143/Q143406/
 
 ## Q143406: FIX: ListView and Item Spacing
 
+{% raw %}
+
 	Article: Q143406
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/143/Q143406/
 	
 	=============================================================================
 	
+
+{% endraw %}

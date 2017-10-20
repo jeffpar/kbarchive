@@ -6,6 +6,8 @@ permalink: /kb/313/Q313331/
 
 ## Q313331: INFO: Pooling the ODBC Driver for DB2 with MTS/COM+
 
+{% raw %}
+
 	Article: Q313331
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/313/Q313331/
 	
 	=============================================================================
 	
+
+{% endraw %}

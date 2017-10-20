@@ -6,6 +6,8 @@ permalink: /kb/190/Q190792/
 
 ## Q190792: FIX: Transform on String Greater Than 255 Crashes VFP 6.0
 
+{% raw %}
+
 	Article: Q190792
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -126,3 +128,5 @@ permalink: /kb/190/Q190792/
 	
 	=============================================================================
 	
+
+{% endraw %}

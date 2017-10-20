@@ -6,6 +6,8 @@ permalink: /kb/095/Q95881/
 
 ## Q95881: WFWG: Enable Sharing Must Be Selected to View a WFWG Server
 
+{% raw %}
+
 	Article: Q95881
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/095/Q95881/
 	
 	=============================================================================
 	
+
+{% endraw %}

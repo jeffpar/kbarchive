@@ -6,6 +6,8 @@ permalink: /kb/124/Q124826/
 
 ## Q124826: Basketball: Problems Printing to Epson LQ2550
 
+{% raw %}
+
 	Article: Q124826
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994-1995 edition,1995-1996 edition
@@ -64,3 +66,5 @@ permalink: /kb/124/Q124826/
 	
 	=============================================================================
 	
+
+{% endraw %}

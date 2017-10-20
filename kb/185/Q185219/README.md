@@ -6,6 +6,8 @@ permalink: /kb/185/Q185219/
 
 ## Q185219: IIS 4.0 with Multiple Certificates May Return Error
 
+{% raw %}
+
 	Article: Q185219
 	Product(s): Internet Information Server
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/185/Q185219/
 	
 	=============================================================================
 	
+
+{% endraw %}

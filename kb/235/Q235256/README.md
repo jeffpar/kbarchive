@@ -6,6 +6,8 @@ permalink: /kb/235/Q235256/
 
 ## Q235256: Microsoft Outlook 2000 At A Glance Comments and Corrections
 
+{% raw %}
+
 	Article: Q235256
 	Product(s): Microsoft Press
 	Version(s): 
@@ -147,3 +149,5 @@ permalink: /kb/235/Q235256/
 	
 	=============================================================================
 	
+
+{% endraw %}

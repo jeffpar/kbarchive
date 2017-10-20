@@ -6,6 +6,8 @@ permalink: /kb/168/Q168431/
 
 ## Q168431: FIX: Launching VB 5.0 ActiveX Documents from Internet Explorer
 
+{% raw %}
+
 	Article: Q168431
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.x,5.0
@@ -139,3 +141,5 @@ permalink: /kb/168/Q168431/
 	
 	=============================================================================
 	
+
+{% endraw %}

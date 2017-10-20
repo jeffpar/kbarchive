@@ -6,6 +6,8 @@ permalink: /kb/199/Q199808/
 
 ## Q199808: SMS: Browsing PGC Shares from Win95 or Win98 May Not Be Accurate
 
+{% raw %}
+
 	Article: Q199808
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -75,3 +77,5 @@ permalink: /kb/199/Q199808/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96719/
 
 ## Q96719: PC WRmt: Demos Not Included Nor Can They Run in Mail Remote
 
+{% raw %}
+
 	Article: Q96719
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -38,3 +40,5 @@ permalink: /kb/096/Q96719/
 	
 	=============================================================================
 	
+
+{% endraw %}

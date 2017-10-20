@@ -6,6 +6,8 @@ permalink: /kb/127/Q127823/
 
 ## Q127823: Printed Schedule+ Daily View Has Errant Text in Notes Box
 
+{% raw %}
+
 	Article: Q127823
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/127/Q127823/
 	
 	=============================================================================
 	
+
+{% endraw %}

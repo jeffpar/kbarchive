@@ -6,6 +6,8 @@ permalink: /kb/268/Q268087/
 
 ## Q268087: User Cannot Log on From Web Client
 
+{% raw %}
+
 	Article: Q268087
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -71,3 +73,5 @@ permalink: /kb/268/Q268087/
 	
 	=============================================================================
 	
+
+{% endraw %}

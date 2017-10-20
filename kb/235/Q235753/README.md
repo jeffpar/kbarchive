@@ -6,6 +6,8 @@ permalink: /kb/235/Q235753/
 
 ## Q235753: SMS: Specifying &#92;&#92;servername Send Address May Cause Failure
 
+{% raw %}
+
 	Article: Q235753
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -75,3 +77,5 @@ permalink: /kb/235/Q235753/
 	
 	=============================================================================
 	
+
+{% endraw %}

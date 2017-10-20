@@ -6,6 +6,8 @@ permalink: /kb/131/Q131423/
 
 ## Q131423: PC Adm: Err Msg: Notice 162 Failed to Complete Installation...
 
+{% raw %}
+
 	Article: Q131423
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2a
@@ -54,3 +56,5 @@ permalink: /kb/131/Q131423/
 	
 	=============================================================================
 	
+
+{% endraw %}

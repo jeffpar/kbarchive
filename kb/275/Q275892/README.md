@@ -6,6 +6,8 @@ permalink: /kb/275/Q275892/
 
 ## Q275892: XADM: Error c103073a When Starting the Administrator Program
 
+{% raw %}
+
 	Article: Q275892
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -64,3 +66,5 @@ permalink: /kb/275/Q275892/
 	
 	=============================================================================
 	
+
+{% endraw %}

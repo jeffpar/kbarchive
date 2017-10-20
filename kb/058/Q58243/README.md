@@ -6,6 +6,8 @@ permalink: /kb/058/Q58243/
 
 ## Q58243: Cannot Run Real Mode Under Enhanced with SHARE
 
+{% raw %}
+
 	Article: Q58243
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/058/Q58243/
 	
 	=============================================================================
 	
+
+{% endraw %}

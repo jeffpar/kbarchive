@@ -6,6 +6,8 @@ permalink: /kb/137/Q137970/
 
 ## Q137970: BUG: Precision for a Projected Column Always Reported as 255
 
+{% raw %}
+
 	Article: Q137970
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0,3.0
@@ -64,3 +66,5 @@ permalink: /kb/137/Q137970/
 	
 	=============================================================================
 	
+
+{% endraw %}

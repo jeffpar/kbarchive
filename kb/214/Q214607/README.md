@@ -6,6 +6,8 @@ permalink: /kb/214/Q214607/
 
 ## Q214607: BUG: Cannot Add a Secured VBA Module to SourceSafe.
 
+{% raw %}
+
 	Article: Q214607
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0; :
@@ -107,3 +109,5 @@ permalink: /kb/214/Q214607/
 	
 	=============================================================================
 	
+
+{% endraw %}

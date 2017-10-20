@@ -6,6 +6,8 @@ permalink: /kb/132/Q132767/
 
 ## Q132767: City Streets for Windows Cannot Paste Map into Paint
 
+{% raw %}
+
 	Article: Q132767
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/132/Q132767/
 	
 	=============================================================================
 	
+
+{% endraw %}

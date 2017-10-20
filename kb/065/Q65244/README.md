@@ -6,6 +6,8 @@ permalink: /kb/065/Q65244/
 
 ## Q65244: @data Group Override Produces Phase Error A2006
 
+{% raw %}
+
 	Article: Q65244
 	Product(s): See article
 	Version(s): 5.10    | 5.10a
@@ -44,3 +46,5 @@ permalink: /kb/065/Q65244/
 	Microsoft has confirmed this to be a problem in the Macro Assembler
 	version 5.10a. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232568/
 
 ## Q232568: Permissions on the Temp&#92;x Folder Are Incorrectly Reset
 
+{% raw %}
+
 	Article: Q232568
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -63,3 +65,5 @@ permalink: /kb/232/Q232568/
 	
 	=============================================================================
 	
+
+{% endraw %}

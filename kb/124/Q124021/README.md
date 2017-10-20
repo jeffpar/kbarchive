@@ -6,6 +6,8 @@ permalink: /kb/124/Q124021/
 
 ## Q124021: CD-ROM File System Does Not De-allocate Non-paged Pool Memory
 
+{% raw %}
+
 	Article: Q124021
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/124/Q124021/
 	
 	=============================================================================
 	
+
+{% endraw %}

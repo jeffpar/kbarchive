@@ -6,6 +6,8 @@ permalink: /kb/185/Q185047/
 
 ## Q185047: XADM: Maximum Age Limit for Public Folders
 
+{% raw %}
+
 	Article: Q185047
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -66,3 +68,5 @@ permalink: /kb/185/Q185047/
 	
 	=============================================================================
 	
+
+{% endraw %}

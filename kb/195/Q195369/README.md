@@ -6,6 +6,8 @@ permalink: /kb/195/Q195369/
 
 ## Q195369: WD97: Plus Sign Causes Incorrect Result in Formula
 
+{% raw %}
+
 	Article: Q195369
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/195/Q195369/
 	
 	=============================================================================
 	
+
+{% endraw %}

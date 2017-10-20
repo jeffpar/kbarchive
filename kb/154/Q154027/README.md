@@ -6,6 +6,8 @@ permalink: /kb/154/Q154027/
 
 ## Q154027: Print Manager Hangs If Printer Description Has Multiple Commas
 
+{% raw %}
+
 	Article: Q154027
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -59,3 +61,5 @@ permalink: /kb/154/Q154027/
 	
 	=============================================================================
 	
+
+{% endraw %}

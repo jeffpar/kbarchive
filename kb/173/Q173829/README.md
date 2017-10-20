@@ -6,6 +6,8 @@ permalink: /kb/173/Q173829/
 
 ## Q173829: MS Press Computer Dictionary, 3rd Ed. Comments and Corrections
 
+{% raw %}
+
 	Article: Q173829
 	Product(s): Microsoft Press
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/173/Q173829/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103833/
 
 ## Q103833: Using Alternate Character Sets Provided by Code Pages
 
+{% raw %}
+
 	Article: Q103833
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b | 2.50 2.50a 2
@@ -82,3 +84,5 @@ permalink: /kb/103/Q103833/
 	
 	=============================================================================
 	
+
+{% endraw %}

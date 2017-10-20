@@ -6,6 +6,8 @@ permalink: /kb/104/Q104831/
 
 ## Q104831: Cinemania: Can't Run Demo with Orchid Card and Video Driver
 
+{% raw %}
+
 	Article: Q104831
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -65,3 +67,5 @@ permalink: /kb/104/Q104831/
 	
 	=============================================================================
 	
+
+{% endraw %}

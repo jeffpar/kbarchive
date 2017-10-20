@@ -6,6 +6,8 @@ permalink: /kb/255/Q255995/
 
 ## Q255995: Deploying Windows 2000 with SMS Requires an Unattend.txt File
 
+{% raw %}
+
 	Article: Q255995
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -51,3 +53,5 @@ permalink: /kb/255/Q255995/
 	
 	=============================================================================
 	
+
+{% endraw %}

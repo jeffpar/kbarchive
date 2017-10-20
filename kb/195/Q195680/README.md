@@ -6,6 +6,8 @@ permalink: /kb/195/Q195680/
 
 ## Q195680: Error Message: Correcting Errors in the Uppercase File
 
+{% raw %}
+
 	Article: Q195680
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/195/Q195680/
 	
 	=============================================================================
 	
+
+{% endraw %}

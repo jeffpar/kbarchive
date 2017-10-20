@@ -6,6 +6,8 @@ permalink: /kb/254/Q254950/
 
 ## Q254950: Shortcuts and .lnk Files Do Not Work in Windows NT Workstation
 
+{% raw %}
+
 	Article: Q254950
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -197,3 +199,5 @@ permalink: /kb/254/Q254950/
 	
 	=============================================================================
 	
+
+{% endraw %}

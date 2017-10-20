@@ -6,6 +6,8 @@ permalink: /kb/064/Q64163/
 
 ## Q64163: /Zp Default Values with and without Specifying the Switch
 
+{% raw %}
+
 	Article: Q64163
 	Product(s): See article
 	Version(s): 5.10 6.00 | 5.10 6.00
@@ -22,3 +24,5 @@ permalink: /kb/064/Q64163/
 	Additionally, if the /Zp switch is not specified, the structure
 	members will be packed on two-byte boundaries (that is, the equivalent
 	of using /Zp2).
+
+{% endraw %}

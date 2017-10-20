@@ -6,6 +6,8 @@ permalink: /kb/037/Q37319/
 
 ## Q37319: QB.EXE Editor Fails to Flag Extra ELSE Clause as Syntax Error
 
+{% raw %}
+
 	Article: Q37319
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/037/Q37319/
 	ELSE
 	  PRINT 2
 	END IF
+
+{% endraw %}

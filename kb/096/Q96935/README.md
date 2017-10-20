@@ -6,6 +6,8 @@ permalink: /kb/096/Q96935/
 
 ## Q96935: EMM386.EXE Dynamic Memory Allocation
 
+{% raw %}
+
 	Article: Q96935
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -53,3 +55,5 @@ permalink: /kb/096/Q96935/
 	
 	=============================================================================
 	
+
+{% endraw %}

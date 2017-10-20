@@ -6,6 +6,8 @@ permalink: /kb/086/Q86865/
 
 ## Q86865: Print Manager DOS Timeout: System Call Level Incorrect
 
+{% raw %}
+
 	Article: Q86865
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/086/Q86865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170342/
 
 ## Q170342: WD97: How to Add Templates to the Letter Wizard
 
+{% raw %}
+
 	Article: Q170342
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -230,3 +232,5 @@ permalink: /kb/170/Q170342/
 	
 	=============================================================================
 	
+
+{% endraw %}

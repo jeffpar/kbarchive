@@ -6,6 +6,8 @@ permalink: /kb/130/Q130831/
 
 ## Q130831: Converter: How the Position of Screens Is Converted
 
+{% raw %}
+
 	Article: Q130831
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -121,3 +123,5 @@ permalink: /kb/130/Q130831/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78079/
 
 ## Q78079: FIX: Printing with HPPCL5A.DRV to HP LaserJet III Cuts Line
 
+{% raw %}
+
 	Article: Q78079
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/078/Q78079/
 	
 	=============================================================================
 	
+
+{% endraw %}

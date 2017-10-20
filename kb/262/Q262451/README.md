@@ -6,6 +6,8 @@ permalink: /kb/262/Q262451/
 
 ## Q262451: XCLN: Workaround for Events That Span Two Days Across Time Zones
 
+{% raw %}
+
 	Article: Q262451
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -103,3 +105,5 @@ permalink: /kb/262/Q262451/
 	
 	=============================================================================
 	
+
+{% endraw %}

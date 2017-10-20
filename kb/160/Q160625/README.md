@@ -6,6 +6,8 @@ permalink: /kb/160/Q160625/
 
 ## Q160625: Dialing Out Using 32-Bit Program Returns Busy Signal
 
+{% raw %}
+
 	Article: Q160625
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/160/Q160625/
 	
 	=============================================================================
 	
+
+{% endraw %}

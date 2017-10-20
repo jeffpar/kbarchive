@@ -6,6 +6,8 @@ permalink: /kb/186/Q186950/
 
 ## Q186950: XCLN: Installing and Using Global Address List Modify Tool
 
+{% raw %}
+
 	Article: Q186950
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:5.5; :8.0,8.01,8.02,8.03
@@ -127,3 +129,5 @@ permalink: /kb/186/Q186950/
 	
 	=============================================================================
 	
+
+{% endraw %}

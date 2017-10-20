@@ -6,6 +6,8 @@ permalink: /kb/019/Q19842/
 
 ## Q19842: How Microsoft BASIC ON ERROR Handles DOS General Drive Failure
 
+{% raw %}
+
 	Article: Q19842
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -27,3 +29,5 @@ permalink: /kb/019/Q19842/
 	BASIC error trapping invoked with the BASIC ON ERROR statement traps
 	the DOS general drive failure and returns a BASIC error number 57,
 	"Device I/O error."
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96939/
 
 ## Q96939: MS-DOS 6 Upgrade Directory Listing for Supplemental Disks
 
+{% raw %}
+
 	Article: Q96939
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -167,3 +169,5 @@ permalink: /kb/096/Q96939/
 	
 	=============================================================================
 	
+
+{% endraw %}

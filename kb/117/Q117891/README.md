@@ -6,6 +6,8 @@ permalink: /kb/117/Q117891/
 
 ## Q117891: Cinemania/Encarta: Installation Hangs on Macintosh Performa
 
+{% raw %}
+
 	Article: Q117891
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -60,3 +62,5 @@ permalink: /kb/117/Q117891/
 	
 	=============================================================================
 	
+
+{% endraw %}

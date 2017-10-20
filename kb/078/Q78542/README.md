@@ -6,6 +6,8 @@ permalink: /kb/078/Q78542/
 
 ## Q78542: Retrieving MS-DOS Environment Vars from a Windows DLL
 
+{% raw %}
+
 	Article: Q78542
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -141,3 +143,5 @@ permalink: /kb/078/Q78542/
 	
 	=============================================================================
 	
+
+{% endraw %}

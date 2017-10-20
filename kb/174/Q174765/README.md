@@ -6,6 +6,8 @@ permalink: /kb/174/Q174765/
 
 ## Q174765: How to Configure Microsoft DHCP Server for BOOTP Clients
 
+{% raw %}
+
 	Article: Q174765
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -107,3 +109,5 @@ permalink: /kb/174/Q174765/
 	
 	=============================================================================
 	
+
+{% endraw %}

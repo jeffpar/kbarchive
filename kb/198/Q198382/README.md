@@ -6,6 +6,8 @@ permalink: /kb/198/Q198382/
 
 ## Q198382: WD97: Word Does Not &quot;Fast Save&quot; Document
 
+{% raw %}
+
 	Article: Q198382
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/198/Q198382/
 	
 	=============================================================================
 	
+
+{% endraw %}

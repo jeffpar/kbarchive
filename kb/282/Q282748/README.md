@@ -6,6 +6,8 @@ permalink: /kb/282/Q282748/
 
 ## Q282748: NFS Attributes Tab Disappears from Windows Explorer Properties
 
+{% raw %}
+
 	Article: Q282748
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -98,3 +100,5 @@ permalink: /kb/282/Q282748/
 	
 	=============================================================================
 	
+
+{% endraw %}

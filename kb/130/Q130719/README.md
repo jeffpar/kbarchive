@@ -6,6 +6,8 @@ permalink: /kb/130/Q130719/
 
 ## Q130719: FIX: &quot;Unable to Create File Buffer&quot; 32-Bit ODBC Error
 
+{% raw %}
+
 	Article: Q130719
 	Product(s): Microsoft C Compiler
 	Version(s): 1.50 1.51 1.52 1.52a | 2.00 2.10
@@ -97,3 +99,5 @@ permalink: /kb/130/Q130719/
 	
 	=============================================================================
 	
+
+{% endraw %}

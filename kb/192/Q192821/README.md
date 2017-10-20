@@ -6,6 +6,8 @@ permalink: /kb/192/Q192821/
 
 ## Q192821: STOP 0x0000009A During Restore of Registry
 
+{% raw %}
+
 	Article: Q192821
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/192/Q192821/
 	
 	=============================================================================
 	
+
+{% endraw %}

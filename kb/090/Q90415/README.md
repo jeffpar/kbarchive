@@ -6,6 +6,8 @@ permalink: /kb/090/Q90415/
 
 ## Q90415: Suppressing the &quot;Invalid Input&quot; Error Message in FoxPro
 
+{% raw %}
+
 	Article: Q90415
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -54,3 +56,5 @@ permalink: /kb/090/Q90415/
 	
 	=============================================================================
 	
+
+{% endraw %}

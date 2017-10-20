@@ -6,6 +6,8 @@ permalink: /kb/156/Q156790/
 
 ## Q156790: INFO: STL Sample for the operator == and operato
 
+{% raw %}
+
 	Article: Q156790
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -186,3 +188,5 @@ permalink: /kb/156/Q156790/
 	
 	=============================================================================
 	
+
+{% endraw %}

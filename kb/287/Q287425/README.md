@@ -6,6 +6,8 @@ permalink: /kb/287/Q287425/
 
 ## Q287425: SMS: Successfully Using NetworkLoginProfile Class in Sms_def.mof
 
+{% raw %}
+
 	Article: Q287425
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -65,3 +67,5 @@ permalink: /kb/287/Q287425/
 	
 	=============================================================================
 	
+
+{% endraw %}

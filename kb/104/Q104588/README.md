@@ -6,6 +6,8 @@ permalink: /kb/104/Q104588/
 
 ## Q104588: PC MAPI: DocErr: You Cannot Add a New Menu to Microsoft Mail
 
+{% raw %}
+
 	Article: Q104588
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/104/Q104588/
 	
 	=============================================================================
 	
+
+{% endraw %}

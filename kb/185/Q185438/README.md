@@ -6,6 +6,8 @@ permalink: /kb/185/Q185438/
 
 ## Q185438: How To Determine Session Status Using SLI API.
 
+{% raw %}
+
 	Article: Q185438
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -62,3 +64,5 @@ permalink: /kb/185/Q185438/
 	
 	=============================================================================
 	
+
+{% endraw %}

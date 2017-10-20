@@ -6,6 +6,8 @@ permalink: /kb/169/Q169895/
 
 ## Q169895: Enabling 128-bit Encryption for Routing and Remote Access
 
+{% raw %}
+
 	Article: Q169895
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP3
@@ -90,3 +92,5 @@ permalink: /kb/169/Q169895/
 	
 	=============================================================================
 	
+
+{% endraw %}

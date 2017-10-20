@@ -6,6 +6,8 @@ permalink: /kb/090/Q90210/
 
 ## Q90210: Contents of CONNECT.DAT, &lt;USERNAME&gt;.PWL, and SHARES.PWL Files
 
+{% raw %}
+
 	Article: Q90210
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -108,3 +110,5 @@ permalink: /kb/090/Q90210/
 	
 	=============================================================================
 	
+
+{% endraw %}

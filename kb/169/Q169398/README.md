@@ -6,6 +6,8 @@ permalink: /kb/169/Q169398/
 
 ## Q169398: HOWTO: Manipulate File Shares with ADSI (VB Sample)
 
+{% raw %}
+
 	Article: Q169398
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/169/Q169398/
 	
 	=============================================================================
 	
+
+{% endraw %}

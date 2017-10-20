@@ -6,6 +6,8 @@ permalink: /kb/148/Q148618/
 
 ## Q148618: No Load Balancing When You Invoke Many APPC Conversations
 
+{% raw %}
+
 	Article: Q148618
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -115,3 +117,5 @@ permalink: /kb/148/Q148618/
 	
 	=============================================================================
 	
+
+{% endraw %}

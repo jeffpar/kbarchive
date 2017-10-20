@@ -6,6 +6,8 @@ permalink: /kb/101/Q101302/
 
 ## Q101302: How to Prevent &quot;Source Is out of Date&quot; Error Message
 
+{% raw %}
+
 	Article: Q101302
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 3.00| 2.00 2.50 2.50a
@@ -82,3 +84,5 @@ permalink: /kb/101/Q101302/
 	
 	=============================================================================
 	
+
+{% endraw %}

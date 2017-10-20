@@ -6,6 +6,8 @@ permalink: /kb/161/Q161286/
 
 ## Q161286: HOWTO: Use a Common Dialog File Open Dialog with Win32 API
 
+{% raw %}
+
 	Article: Q161286
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -132,3 +134,5 @@ permalink: /kb/161/Q161286/
 	
 	=============================================================================
 	
+
+{% endraw %}

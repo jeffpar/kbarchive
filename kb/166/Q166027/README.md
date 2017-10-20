@@ -6,6 +6,8 @@ permalink: /kb/166/Q166027/
 
 ## Q166027: Extra Security Dialog Displayed with Windows 3.x Client
 
+{% raw %}
+
 	Article: Q166027
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -127,3 +129,5 @@ permalink: /kb/166/Q166027/
 	
 	=============================================================================
 	
+
+{% endraw %}

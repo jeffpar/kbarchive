@@ -6,6 +6,8 @@ permalink: /kb/164/Q164619/
 
 ## Q164619: FP97: Cannot Preview Office 97 Clipart in FrontPage Editor
 
+{% raw %}
+
 	Article: Q164619
 	Product(s): Word Front Page
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/164/Q164619/
 	
 	=============================================================================
 	
+
+{% endraw %}

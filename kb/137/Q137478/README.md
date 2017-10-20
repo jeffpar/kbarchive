@@ -6,6 +6,8 @@ permalink: /kb/137/Q137478/
 
 ## Q137478: Error Browse Server Shares with File Manager: The Interface...
 
+{% raw %}
+
 	Article: Q137478
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/137/Q137478/
 	
 	=============================================================================
 	
+
+{% endraw %}

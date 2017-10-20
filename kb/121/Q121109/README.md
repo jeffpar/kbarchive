@@ -6,6 +6,8 @@ permalink: /kb/121/Q121109/
 
 ## Q121109: WD97: Font Changes During Mail Merge
 
+{% raw %}
+
 	Article: Q121109
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/121/Q121109/
 	
 	=============================================================================
 	
+
+{% endraw %}

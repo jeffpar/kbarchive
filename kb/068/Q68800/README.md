@@ -6,6 +6,8 @@ permalink: /kb/068/Q68800/
 
 ## Q68800: Use of the HELPFILES Environment Variable by QuickC
 
+{% raw %}
+
 	Article: Q68800
 	Product(s): See article
 	Version(s): 2.00 2.50
@@ -37,3 +39,5 @@ permalink: /kb/068/Q68800/
 	This feature is very useful because it allows the use of additional
 	help files without having to append them to an existing QuickC help
 	file.
+
+{% endraw %}

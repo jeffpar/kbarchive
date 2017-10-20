@@ -6,6 +6,8 @@ permalink: /kb/147/Q147138/
 
 ## Q147138: Mac Encarta 96 Encyclopedia: Memory ReadMe Contents
 
+{% raw %}
+
 	Article: Q147138
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -380,3 +382,5 @@ permalink: /kb/147/Q147138/
 	
 	=============================================================================
 	
+
+{% endraw %}

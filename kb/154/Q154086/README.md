@@ -6,6 +6,8 @@ permalink: /kb/154/Q154086/
 
 ## Q154086: XCLN: Err Msg: This Program has Performed an Illegal Operation
 
+{% raw %}
+
 	Article: Q154086
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -106,3 +108,5 @@ permalink: /kb/154/Q154086/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96760/
 
 ## Q96760: PRB: Gray Box Appears Using SDK Custom Control in App Studio
 
+{% raw %}
+
 	Article: Q96760
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/096/Q96760/
 	
 	=============================================================================
 	
+
+{% endraw %}

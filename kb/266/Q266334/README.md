@@ -6,6 +6,8 @@ permalink: /kb/266/Q266334/
 
 ## Q266334: Memory Leak in Os2srv.exe
 
+{% raw %}
+
 	Article: Q266334
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/266/Q266334/
 	
 	=============================================================================
 	
+
+{% endraw %}

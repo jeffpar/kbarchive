@@ -6,6 +6,8 @@ permalink: /kb/298/Q298559/
 
 ## Q298559: How to Load Balance Web Traffic Between Two IIS Servers
 
+{% raw %}
+
 	Article: Q298559
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -112,3 +114,5 @@ permalink: /kb/298/Q298559/
 	
 	=============================================================================
 	
+
+{% endraw %}

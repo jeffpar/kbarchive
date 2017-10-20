@@ -6,6 +6,8 @@ permalink: /kb/091/Q91044/
 
 ## Q91044: PC WFW: Invalid Postoffice &amp; Network Names for Workgroups
 
+{% raw %}
+
 	Article: Q91044
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/091/Q91044/
 	
 	=============================================================================
 	
+
+{% endraw %}

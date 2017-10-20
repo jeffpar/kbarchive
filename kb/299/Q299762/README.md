@@ -6,6 +6,8 @@ permalink: /kb/299/Q299762/
 
 ## Q299762: Train Simulator: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q299762
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/299/Q299762/
 	
 	=============================================================================
 	
+
+{% endraw %}

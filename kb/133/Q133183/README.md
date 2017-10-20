@@ -6,6 +6,8 @@ permalink: /kb/133/Q133183/
 
 ## Q133183: STOP 0x7A with Adaptec 2740A SCSI and 3Com Etherlink III
 
+{% raw %}
+
 	Article: Q133183
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/133/Q133183/
 	
 	=============================================================================
 	
+
+{% endraw %}

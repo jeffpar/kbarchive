@@ -6,6 +6,8 @@ permalink: /kb/164/Q164342/
 
 ## Q164342: WD97: Picture Hyperlink Lost When Saved as HTML
 
+{% raw %}
+
 	Article: Q164342
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/164/Q164342/
 	
 	=============================================================================
 	
+
+{% endraw %}

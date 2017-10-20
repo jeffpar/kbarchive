@@ -6,6 +6,8 @@ permalink: /kb/031/Q31783/
 
 ## Q31783: Inverse of x&#36; = HEX&#36;(n) Is VAL(&quot;&amp;H&quot;+x&#36;); Inverse for Octal...
 
+{% raw %}
+
 	Article: Q31783
 	Product(s): See article
 	Version(s): 1,x 2.x 3.00 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/031/Q31783/
 	
 	8. Microsoft BASIC Interpreter Versions 1.00, 1.01, 2.00, 2.10, and
 	   3.00 for the Apple Macintosh
+
+{% endraw %}

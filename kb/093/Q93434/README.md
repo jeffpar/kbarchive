@@ -6,6 +6,8 @@ permalink: /kb/093/Q93434/
 
 ## Q93434: MemMaker Copies HIMEM.SYS and EMM386.EXE to C:&#92;DOS
 
+{% raw %}
+
 	Article: Q93434
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -84,3 +86,5 @@ permalink: /kb/093/Q93434/
 	
 	=============================================================================
 	
+
+{% endraw %}

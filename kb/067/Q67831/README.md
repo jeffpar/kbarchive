@@ -6,6 +6,8 @@ permalink: /kb/067/Q67831/
 
 ## Q67831: Flt Sim: Outer Marker at Paine Field Not Working with ADF
 
+{% raw %}
+
 	Article: Q67831
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/067/Q67831/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183001/
 
 ## Q183001: Retrieving Output Parameters From Stored Procedure
 
+{% raw %}
+
 	Article: Q183001
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -168,3 +170,5 @@ permalink: /kb/183/Q183001/
 	
 	=============================================================================
 	
+
+{% endraw %}

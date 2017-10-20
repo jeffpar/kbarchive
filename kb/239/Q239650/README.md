@@ -6,6 +6,8 @@ permalink: /kb/239/Q239650/
 
 ## Q239650: XFOR: Migration Wizard for Lotus Notes May Stop Responding
 
+{% raw %}
+
 	Article: Q239650
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -91,3 +93,5 @@ permalink: /kb/239/Q239650/
 	
 	=============================================================================
 	
+
+{% endraw %}

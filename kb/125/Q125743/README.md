@@ -6,6 +6,8 @@ permalink: /kb/125/Q125743/
 
 ## Q125743: Dr. Watson Log Displays Incorrect Version of Windows NT
 
+{% raw %}
+
 	Article: Q125743
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/125/Q125743/
 	
 	=============================================================================
 	
+
+{% endraw %}

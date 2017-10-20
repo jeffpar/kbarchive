@@ -6,6 +6,8 @@ permalink: /kb/089/Q89542/
 
 ## Q89542: Software Library has DDE Management Library Information
 
+{% raw %}
+
 	Article: Q89542
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -53,3 +55,5 @@ permalink: /kb/089/Q89542/
 	
 	=============================================================================
 	
+
+{% endraw %}

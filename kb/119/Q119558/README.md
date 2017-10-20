@@ -6,6 +6,8 @@ permalink: /kb/119/Q119558/
 
 ## Q119558: PC Win: Hyphens in Columns 1 and 78 Replaced by Space
 
+{% raw %}
+
 	Article: Q119558
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -43,3 +45,5 @@ permalink: /kb/119/Q119558/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189606/
 
 ## Q189606: Browser Service Fails to Start or Stop Button Is Unavailable
 
+{% raw %}
+
 	Article: Q189606
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/189/Q189606/
 	
 	=============================================================================
 	
+
+{% endraw %}

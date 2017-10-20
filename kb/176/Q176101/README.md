@@ -6,6 +6,8 @@ permalink: /kb/176/Q176101/
 
 ## Q176101: Err Msg: Unable to Get the Dial-Up Networking Connection...
 
+{% raw %}
+
 	Article: Q176101
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51,2.52,2.6,4.0,5.0
@@ -82,3 +84,5 @@ permalink: /kb/176/Q176101/
 	
 	=============================================================================
 	
+
+{% endraw %}

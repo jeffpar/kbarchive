@@ -6,6 +6,8 @@ permalink: /kb/183/Q183215/
 
 ## Q183215: WD97: Object Not a Collection Error in SynonymInfo.MeaningList
 
+{% raw %}
+
 	Article: Q183215
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -153,3 +155,5 @@ permalink: /kb/183/Q183215/
 	
 	=============================================================================
 	
+
+{% endraw %}

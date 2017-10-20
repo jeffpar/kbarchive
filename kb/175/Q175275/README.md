@@ -6,6 +6,8 @@ permalink: /kb/175/Q175275/
 
 ## Q175275: How to Replace Shared SCSI Controller When Using MSCS
 
+{% raw %}
+
 	Article: Q175275
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/175/Q175275/
 	
 	=============================================================================
 	
+
+{% endraw %}

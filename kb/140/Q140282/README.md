@@ -6,6 +6,8 @@ permalink: /kb/140/Q140282/
 
 ## Q140282: Multimedia Screen Saver: Choosing None Sets Windows to None
 
+{% raw %}
+
 	Article: Q140282
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -80,3 +82,5 @@ permalink: /kb/140/Q140282/
 	
 	=============================================================================
 	
+
+{% endraw %}

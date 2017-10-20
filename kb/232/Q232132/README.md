@@ -6,6 +6,8 @@ permalink: /kb/232/Q232132/
 
 ## Q232132: MMC Does not Show Physical Directories under FTP Root
 
+{% raw %}
+
 	Article: Q232132
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -55,3 +57,5 @@ permalink: /kb/232/Q232132/
 	
 	=============================================================================
 	
+
+{% endraw %}

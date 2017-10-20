@@ -6,6 +6,8 @@ permalink: /kb/066/Q66745/
 
 ## Q66745: ASD: Support for Sublogic Instant Facilities Locator
 
+{% raw %}
+
 	Article: Q66745
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/066/Q66745/
 	
 	=============================================================================
 	
+
+{% endraw %}

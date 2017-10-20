@@ -6,6 +6,8 @@ permalink: /kb/134/Q134421/
 
 ## Q134421: HOWTO: How to Use CBitmapButton to Resize a Bitmap to Fit a Butt
 
+{% raw %}
+
 	Article: Q134421
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2
@@ -123,3 +125,5 @@ permalink: /kb/134/Q134421/
 	
 	=============================================================================
 	
+
+{% endraw %}

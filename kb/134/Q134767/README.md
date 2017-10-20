@@ -6,6 +6,8 @@ permalink: /kb/134/Q134767/
 
 ## Q134767: Lens Screen Saver Hangs with Diamond Viper Video Drivers
 
+{% raw %}
+
 	Article: Q134767
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134767/
 	
 	=============================================================================
 	
+
+{% endraw %}

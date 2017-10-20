@@ -6,6 +6,8 @@ permalink: /kb/124/Q124520/
 
 ## Q124520: FILE: Increased File Libraries for Visual C++ 2.0-2.2 Available
 
+{% raw %}
+
 	Article: Q124520
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2
@@ -138,3 +140,5 @@ permalink: /kb/124/Q124520/
 	
 	=============================================================================
 	
+
+{% endraw %}

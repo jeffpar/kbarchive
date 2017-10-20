@@ -6,6 +6,8 @@ permalink: /kb/303/Q303979/
 
 ## Q303979: Importing Netscape 4.77 &amp; 6.X Bookmarks into Internet Explorer 5
 
+{% raw %}
+
 	Article: Q303979
 	Product(s): The Microsoft Network
 	Version(s): 1.05,1.2,1.3,2.0,2.5,2.5 (OEM Release),2.51,2.52,2.6,5.0,5.1,5.2,5.3,5.4,6.0,6.1
@@ -110,3 +112,5 @@ permalink: /kb/303/Q303979/
 	
 	=============================================================================
 	
+
+{% endraw %}

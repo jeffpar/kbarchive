@@ -6,6 +6,8 @@ permalink: /kb/239/Q239099/
 
 ## Q239099: FIX: Microsoft ODBC Driver for Oracle Truncates Error Messages
 
+{% raw %}
+
 	Article: Q239099
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.5,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Build 2.57
@@ -154,3 +156,5 @@ permalink: /kb/239/Q239099/
 	
 	=============================================================================
 	
+
+{% endraw %}

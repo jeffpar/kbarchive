@@ -6,6 +6,8 @@ permalink: /kb/155/Q155910/
 
 ## Q155910: WD97: Table Column Selection May Show Incorrect With Merged Cell
 
+{% raw %}
+
 	Article: Q155910
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/155/Q155910/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/270/Q270225/
 
 ## Q270225: WD97: Error Message: &quot;Run-time Error '5'&quot; When You Start Word
 
+{% raw %}
+
 	Article: Q270225
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/270/Q270225/
 	
 	=============================================================================
 	
+
+{% endraw %}

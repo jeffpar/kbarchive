@@ -6,6 +6,8 @@ permalink: /kb/101/Q101318/
 
 ## Q101318: ADT: How to Use DDE to Communicate with a Run-Time Application
 
+{% raw %}
+
 	Article: Q101318
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1,2.0
@@ -89,3 +91,5 @@ permalink: /kb/101/Q101318/
 	
 	=============================================================================
 	
+
+{% endraw %}

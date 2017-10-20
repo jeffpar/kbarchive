@@ -6,6 +6,8 @@ permalink: /kb/249/Q249607/
 
 ## Q249607: FIX: UserControl in Excel Does Not Print or Print Preview
 
+{% raw %}
+
 	Article: Q249607
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2000,6.0,97
@@ -111,3 +113,5 @@ permalink: /kb/249/Q249607/
 	
 	=============================================================================
 	
+
+{% endraw %}

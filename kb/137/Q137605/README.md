@@ -6,6 +6,8 @@ permalink: /kb/137/Q137605/
 
 ## Q137605: INFO: Viruses Known to Interfere with Visual FoxPro Installation
 
+{% raw %}
+
 	Article: Q137605
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -99,3 +101,5 @@ permalink: /kb/137/Q137605/
 	
 	=============================================================================
 	
+
+{% endraw %}

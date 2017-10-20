@@ -6,6 +6,8 @@ permalink: /kb/143/Q143015/
 
 ## Q143015: PPT7: Text Printed Incorrectly on HP DeskJet 500
 
+{% raw %}
+
 	Article: Q143015
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -62,3 +64,5 @@ permalink: /kb/143/Q143015/
 	
 	=============================================================================
 	
+
+{% endraw %}

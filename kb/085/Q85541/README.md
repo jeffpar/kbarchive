@@ -6,6 +6,8 @@ permalink: /kb/085/Q85541/
 
 ## Q85541: HP ThinkJet Driver Missing Paper Sizes in Common Dialog Boxes
 
+{% raw %}
+
 	Article: Q85541
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/085/Q85541/
 	
 	=============================================================================
 	
+
+{% endraw %}

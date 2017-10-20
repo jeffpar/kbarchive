@@ -6,6 +6,8 @@ permalink: /kb/168/Q168493/
 
 ## Q168493: PPT: Narration Does Not Play From Unpacked PPT97 Presentation
 
+{% raw %}
+
 	Article: Q168493
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0,97
@@ -132,3 +134,5 @@ permalink: /kb/168/Q168493/
 	
 	=============================================================================
 	
+
+{% endraw %}

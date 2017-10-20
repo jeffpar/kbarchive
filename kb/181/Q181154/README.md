@@ -6,6 +6,8 @@ permalink: /kb/181/Q181154/
 
 ## Q181154: DRW98: Microsoft Draw 98 Available for Download
 
+{% raw %}
+
 	Article: Q181154
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:98
@@ -51,3 +53,5 @@ permalink: /kb/181/Q181154/
 	
 	=============================================================================
 	
+
+{% endraw %}

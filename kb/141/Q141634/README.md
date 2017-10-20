@@ -6,6 +6,8 @@ permalink: /kb/141/Q141634/
 
 ## Q141634: BUG: Setup Parse Error &quot;Object ID 335&quot; from Distributed Setup
 
+{% raw %}
+
 	Article: Q141634
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0b
@@ -85,3 +87,5 @@ permalink: /kb/141/Q141634/
 	
 	=============================================================================
 	
+
+{% endraw %}

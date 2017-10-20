@@ -6,6 +6,8 @@ permalink: /kb/149/Q149294/
 
 ## Q149294: IBM CA/400 Gathers Incomplete List of Partner APPC LU Aliases
 
+{% raw %}
+
 	Article: Q149294
 	Product(s): Microsoft SNA Server
 	Version(s): winnt:2.1,2.11,3.0 (all SP)
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149294/
 	
 	=============================================================================
 	
+
+{% endraw %}

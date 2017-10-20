@@ -6,6 +6,8 @@ permalink: /kb/040/Q40784/
 
 ## Q40784: CodeView Does Not Work with Grouped Code Segments
 
+{% raw %}
+
 	Article: Q40784
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
@@ -74,3 +76,5 @@ permalink: /kb/040/Q40784/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148809/
 
 ## Q148809: PC NTMMTA: Mail Service Manager Monitor Flashes &amp; Disappears
 
+{% raw %}
+
 	Article: Q148809
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -112,3 +114,5 @@ permalink: /kb/148/Q148809/
 	
 	=============================================================================
 	
+
+{% endraw %}

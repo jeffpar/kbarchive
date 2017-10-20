@@ -6,6 +6,8 @@ permalink: /kb/088/Q88474/
 
 ## Q88474: Printing in Landscape Truncates Golf Score Card
 
+{% raw %}
+
 	Article: Q88474
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/088/Q88474/
 	
 	=============================================================================
 	
+
+{% endraw %}

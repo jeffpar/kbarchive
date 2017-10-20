@@ -6,6 +6,8 @@ permalink: /kb/041/Q41041/
 
 ## Q41041: QB.EXE 4.50 Instant Watch... &quot;STRING SPACE CORRUPT&quot; or Hang
 
+{% raw %}
+
 	Article: Q41041
 	Product(s): See article
 	Version(s): 4.50
@@ -76,3 +78,5 @@ permalink: /kb/041/Q41041/
 	The problem does not occur in the above examples if you set the
 	Instant Watch... variable BEFORE running the program or BEFORE
 	pressing CTRL+BREAK or AFTER choosing the Restart option.
+
+{% endraw %}

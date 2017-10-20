@@ -6,6 +6,8 @@ permalink: /kb/137/Q137441/
 
 ## Q137441: Why the UIEnable Event Does Not Exist for All Controls
 
+{% raw %}
+
 	Article: Q137441
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/137/Q137441/
 	
 	=============================================================================
 	
+
+{% endraw %}

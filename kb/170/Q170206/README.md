@@ -6,6 +6,8 @@ permalink: /kb/170/Q170206/
 
 ## Q170206: FP97: How to Use Client Pull in FrontPage Web Documents
 
+{% raw %}
+
 	Article: Q170206
 	Product(s): Word Front Page
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/170/Q170206/
 	
 	=============================================================================
 	
+
+{% endraw %}

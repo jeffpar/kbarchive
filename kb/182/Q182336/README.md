@@ -6,6 +6,8 @@ permalink: /kb/182/Q182336/
 
 ## Q182336: WD97: Lists in Word Cause Numbering Problems When Saved As RTF
 
+{% raw %}
+
 	Article: Q182336
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -193,3 +195,5 @@ permalink: /kb/182/Q182336/
 	
 	=============================================================================
 	
+
+{% endraw %}

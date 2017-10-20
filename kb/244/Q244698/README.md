@@ -6,6 +6,8 @@ permalink: /kb/244/Q244698/
 
 ## Q244698: INFO: After Upgrade Migdb.inf Apps Started Will Query User
 
+{% raw %}
+
 	Article: Q244698
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -48,3 +50,5 @@ permalink: /kb/244/Q244698/
 	
 	=============================================================================
 	
+
+{% endraw %}

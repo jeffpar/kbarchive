@@ -6,6 +6,8 @@ permalink: /kb/250/Q250848/
 
 ## Q250848: PRB: STL list::remove Doesn't Remove All Occurrences of Element
 
+{% raw %}
+
 	Article: Q250848
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -105,3 +107,5 @@ permalink: /kb/250/Q250848/
 	
 	=============================================================================
 	
+
+{% endraw %}

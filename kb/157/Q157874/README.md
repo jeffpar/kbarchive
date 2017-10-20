@@ -6,6 +6,8 @@ permalink: /kb/157/Q157874/
 
 ## Q157874: Writer 2: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q157874
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -73,3 +75,5 @@ permalink: /kb/157/Q157874/
 	
 	=============================================================================
 	
+
+{% endraw %}

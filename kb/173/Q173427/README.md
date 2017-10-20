@@ -6,6 +6,8 @@ permalink: /kb/173/Q173427/
 
 ## Q173427: Error Message New MSN Error 87
 
+{% raw %}
+
 	Article: Q173427
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,95
@@ -81,3 +83,5 @@ permalink: /kb/173/Q173427/
 	
 	=============================================================================
 	
+
+{% endraw %}

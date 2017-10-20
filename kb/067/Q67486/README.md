@@ -6,6 +6,8 @@ permalink: /kb/067/Q67486/
 
 ## Q67486: International Versions of MS-DOS for End Users
 
+{% raw %}
+
 	Article: Q67486
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -58,3 +60,5 @@ permalink: /kb/067/Q67486/
 	
 	=============================================================================
 	
+
+{% endraw %}

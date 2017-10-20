@@ -6,6 +6,8 @@ permalink: /kb/147/Q147442/
 
 ## Q147442: Hover! Does Not Run with Windows NT Version 3.5 or Win32s
 
+{% raw %}
+
 	Article: Q147442
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11,3.5,95
@@ -76,3 +78,5 @@ permalink: /kb/147/Q147442/
 	
 	=============================================================================
 	
+
+{% endraw %}

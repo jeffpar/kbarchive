@@ -6,6 +6,8 @@ permalink: /kb/059/Q59895/
 
 ## Q59895: Why Can't a Stand-Alone DLL Use the Emulator Math Library?
 
+{% raw %}
+
 	Article: Q59895
 	Product(s): See article
 	Version(s): 5.10 6.00
@@ -58,3 +60,5 @@ permalink: /kb/059/Q59895/
 	be called from any EXE. Because LLIBCDLL.LIB uses alternate math, it
 	is completely self-contained and doesn't need any special code in the
 	EXE.
+
+{% endraw %}

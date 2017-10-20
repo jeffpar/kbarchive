@@ -6,6 +6,8 @@ permalink: /kb/113/Q113827/
 
 ## Q113827: X400: 3.2 Setup and Maintenance Utilities
 
+{% raw %}
+
 	Article: Q113827
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -90,3 +92,5 @@ permalink: /kb/113/Q113827/
 	
 	=============================================================================
 	
+
+{% endraw %}

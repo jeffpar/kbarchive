@@ -6,6 +6,8 @@ permalink: /kb/083/Q83381/
 
 ## Q83381: Windows Err Msg: Startup Application Error: Application Req...
 
+{% raw %}
+
 	Article: Q83381
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/083/Q83381/
 	
 	=============================================================================
 	
+
+{% endraw %}

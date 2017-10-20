@@ -6,6 +6,8 @@ permalink: /kb/141/Q141432/
 
 ## Q141432: Wine Guide: Poor Video Performance on Windows NT
 
+{% raw %}
+
 	Article: Q141432
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a,2.0; winnt:3.5x,4.0 beta 2
@@ -59,3 +61,5 @@ permalink: /kb/141/Q141432/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/026/Q26778/
 
 ## Q26778: _amblksiz Not Declared
 
+{% raw %}
+
 	Article: Q26778
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -21,3 +23,5 @@ permalink: /kb/026/Q26778/
 	follows:
 	
 	extern unsigned int _amblksiz;
+
+{% endraw %}

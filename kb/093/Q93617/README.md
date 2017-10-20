@@ -6,6 +6,8 @@ permalink: /kb/093/Q93617/
 
 ## Q93617: Using FoxBASE+/FoxPro for MS-DOS Databases on a Macintosh
 
+{% raw %}
+
 	Article: Q93617
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): 2.01
@@ -51,3 +53,5 @@ permalink: /kb/093/Q93617/
 	
 	=============================================================================
 	
+
+{% endraw %}

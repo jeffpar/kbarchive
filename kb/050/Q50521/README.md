@@ -6,6 +6,8 @@ permalink: /kb/050/Q50521/
 
 ## Q50521: QuickAssembler 2.01 Cannot Debug Code in INCLUDELIB Libraries
 
+{% raw %}
+
 	Article: Q50521
 	Product(s): See article
 	Version(s): 2.01
@@ -112,3 +114,5 @@ permalink: /kb/050/Q50521/
 	                RET
 	WRT   ENDP
 	                END
+
+{% endraw %}

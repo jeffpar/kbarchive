@@ -6,6 +6,8 @@ permalink: /kb/159/Q159161/
 
 ## Q159161: XCON: Connecting Soft-Switch EMX to Microsoft Exchange Server
 
+{% raw %}
+
 	Article: Q159161
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/159/Q159161/
 	
 	=============================================================================
 	
+
+{% endraw %}

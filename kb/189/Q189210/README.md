@@ -6,6 +6,8 @@ permalink: /kb/189/Q189210/
 
 ## Q189210: Running Office 97 Updated Edition Samples Folder Missing
 
+{% raw %}
+
 	Article: Q189210
 	Product(s): Microsoft Press
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/189/Q189210/
 	
 	=============================================================================
 	
+
+{% endraw %}

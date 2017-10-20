@@ -6,6 +6,8 @@ permalink: /kb/141/Q141811/
 
 ## Q141811: BUG: Problems w/ ODBC 32-bit Thunking Installer DLL in Win32s
 
+{% raw %}
+
 	Article: Q141811
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.10
@@ -93,3 +95,5 @@ permalink: /kb/141/Q141811/
 	
 	=============================================================================
 	
+
+{% endraw %}

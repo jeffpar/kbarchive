@@ -6,6 +6,8 @@ permalink: /kb/201/Q201121/
 
 ## Q201121: XFOR: MSExchangeIMC Profile Registry Key Is Missing
 
+{% raw %}
+
 	Article: Q201121
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/201/Q201121/
 	
 	=============================================================================
 	
+
+{% endraw %}

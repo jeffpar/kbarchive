@@ -6,6 +6,8 @@ permalink: /kb/145/Q145936/
 
 ## Q145936: HOWTO: Insert Existing Projects as Sub-Projects
 
+{% raw %}
+
 	Article: Q145936
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,5.0,6.0;
@@ -134,3 +136,5 @@ permalink: /kb/145/Q145936/
 	
 	=============================================================================
 	
+
+{% endraw %}

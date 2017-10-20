@@ -6,6 +6,8 @@ permalink: /kb/223/Q223099/
 
 ## Q223099: FIX: DataMemberChanged Fails for UserControls
 
+{% raw %}
+
 	Article: Q223099
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -175,3 +177,5 @@ permalink: /kb/223/Q223099/
 	
 	=============================================================================
 	
+
+{% endraw %}

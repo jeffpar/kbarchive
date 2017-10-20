@@ -6,6 +6,8 @@ permalink: /kb/192/Q192786/
 
 ## Q192786: Event ID 11 Changed to an Informational Message
 
+{% raw %}
+
 	Article: Q192786
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/192/Q192786/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216461/
 
 ## Q216461: BUG: Toolbar Covers Document in MFC ActiveX Document Container
 
+{% raw %}
+
 	Article: Q216461
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -109,3 +111,5 @@ permalink: /kb/216/Q216461/
 	
 	=============================================================================
 	
+
+{% endraw %}

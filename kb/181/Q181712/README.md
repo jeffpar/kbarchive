@@ -6,6 +6,8 @@ permalink: /kb/181/Q181712/
 
 ## Q181712: XCLN: How to Use the Universal Client Setup (Ucsetup.exe)
 
+{% raw %}
+
 	Article: Q181712
 	Product(s): Microsoft Exchange
 	Version(s): 8.03; MS-DOS:5.0; WINDOWS:8.0
@@ -71,3 +73,5 @@ permalink: /kb/181/Q181712/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130825/
 
 ## Q130825: Tools Available with Visual FoxPro 3.0 Professional
 
+{% raw %}
+
 	Article: Q130825
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b
@@ -245,3 +247,5 @@ permalink: /kb/130/Q130825/
 	
 	=============================================================================
 	
+
+{% endraw %}

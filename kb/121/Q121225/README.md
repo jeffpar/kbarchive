@@ -6,6 +6,8 @@ permalink: /kb/121/Q121225/
 
 ## Q121225: Different Driver Names Reported with MEM/C and MEM/D
 
+{% raw %}
+
 	Article: Q121225
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -77,3 +79,5 @@ permalink: /kb/121/Q121225/
 	
 	=============================================================================
 	
+
+{% endraw %}

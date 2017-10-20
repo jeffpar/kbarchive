@@ -6,6 +6,8 @@ permalink: /kb/152/Q152166/
 
 ## Q152166: XFOR: Attachment Name Truncated When Name Contains a Period
 
+{% raw %}
+
 	Article: Q152166
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -82,3 +84,5 @@ permalink: /kb/152/Q152166/
 	
 	=============================================================================
 	
+
+{% endraw %}

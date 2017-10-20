@@ -6,6 +6,8 @@ permalink: /kb/238/Q238791/
 
 ## Q238791: Specifying a Catalog in ASP Code (IXSSO Query)
 
+{% raw %}
+
 	Article: Q238791
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -68,3 +70,5 @@ permalink: /kb/238/Q238791/
 	
 	=============================================================================
 	
+
+{% endraw %}

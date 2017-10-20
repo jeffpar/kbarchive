@@ -6,6 +6,8 @@ permalink: /kb/145/Q145966/
 
 ## Q145966: XCLN: Personal Views Lost When Changing Stores
 
+{% raw %}
+
 	Article: Q145966
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -53,3 +55,5 @@ permalink: /kb/145/Q145966/
 	
 	=============================================================================
 	
+
+{% endraw %}

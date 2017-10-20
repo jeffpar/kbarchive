@@ -6,6 +6,8 @@ permalink: /kb/096/Q96908/
 
 ## Q96908: Network Installation of TrueType Font Pack 2
 
+{% raw %}
+
 	Article: Q96908
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -114,3 +116,5 @@ permalink: /kb/096/Q96908/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100367/
 
 ## Q100367: FIX: Referencing Data Object Gives Error: Object not an Array
 
+{% raw %}
+
 	Article: Q100367
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -133,3 +135,5 @@ permalink: /kb/100/Q100367/
 	
 	=============================================================================
 	
+
+{% endraw %}

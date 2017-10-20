@@ -6,6 +6,8 @@ permalink: /kb/179/Q179117/
 
 ## Q179117: ACC: ActiveX Controls Installed by MS Access, ODE, and Others
 
+{% raw %}
+
 	Article: Q179117
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0,97
@@ -211,3 +213,5 @@ permalink: /kb/179/Q179117/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/228/Q228930/
 
 ## Q228930: How to Replace Currently Locked Files with Inuse.exe
 
+{% raw %}
+
 	Article: Q228930
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -170,3 +172,5 @@ permalink: /kb/228/Q228930/
 	
 	=============================================================================
 	
+
+{% endraw %}

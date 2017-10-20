@@ -6,6 +6,8 @@ permalink: /kb/235/Q235204/
 
 ## Q235204: SMS: %sys% Variable Differs for 16-bit and 32-bit Executables
 
+{% raw %}
+
 	Article: Q235204
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -51,3 +53,5 @@ permalink: /kb/235/Q235204/
 	
 	=============================================================================
 	
+
+{% endraw %}

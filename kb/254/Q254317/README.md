@@ -6,6 +6,8 @@ permalink: /kb/254/Q254317/
 
 ## Q254317: MapPoint: How to Export and Copy Maps to Pocket Streets
 
+{% raw %}
+
 	Article: Q254317
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/254/Q254317/
 	
 	=============================================================================
 	
+
+{% endraw %}

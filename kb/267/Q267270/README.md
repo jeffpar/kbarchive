@@ -6,6 +6,8 @@ permalink: /kb/267/Q267270/
 
 ## Q267270: Convlog Stops Processing Log Files
 
+{% raw %}
+
 	Article: Q267270
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -95,3 +97,5 @@ permalink: /kb/267/Q267270/
 	
 	=============================================================================
 	
+
+{% endraw %}

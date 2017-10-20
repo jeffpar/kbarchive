@@ -6,6 +6,8 @@ permalink: /kb/164/Q164770/
 
 ## Q164770: Host Account Manager Incorrectly Prompts User to Reapply Changes
 
+{% raw %}
+
 	Article: Q164770
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/164/Q164770/
 	
 	=============================================================================
 	
+
+{% endraw %}

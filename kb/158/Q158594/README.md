@@ -6,6 +6,8 @@ permalink: /kb/158/Q158594/
 
 ## Q158594: Mac Encarta 97: Readme.txt: How to Install and Files Installed
 
+{% raw %}
+
 	Article: Q158594
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -152,3 +154,5 @@ permalink: /kb/158/Q158594/
 	
 	=============================================================================
 	
+
+{% endraw %}

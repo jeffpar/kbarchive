@@ -6,6 +6,8 @@ permalink: /kb/132/Q132816/
 
 ## Q132816: Suspend Command Cannot Be Used on an SBS Computer
 
+{% raw %}
+
 	Article: Q132816
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132816/
 	
 	=============================================================================
 	
+
+{% endraw %}

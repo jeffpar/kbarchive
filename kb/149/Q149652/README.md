@@ -6,6 +6,8 @@ permalink: /kb/149/Q149652/
 
 ## Q149652: Macintosh Dangerous Creatures: ReadMe Contents
 
+{% raw %}
+
 	Article: Q149652
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -221,3 +223,5 @@ permalink: /kb/149/Q149652/
 	
 	=============================================================================
 	
+
+{% endraw %}

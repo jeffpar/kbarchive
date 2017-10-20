@@ -6,6 +6,8 @@ permalink: /kb/158/Q158844/
 
 ## Q158844: PRB: Cannot Turn Off Filter when Using Cursor Filter Property
 
+{% raw %}
+
 	Article: Q158844
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/158/Q158844/
 	
 	=============================================================================
 	
+
+{% endraw %}

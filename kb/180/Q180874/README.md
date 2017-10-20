@@ -6,6 +6,8 @@ permalink: /kb/180/Q180874/
 
 ## Q180874: Control Unit Image Number Should be a 1 Digit Field
 
+{% raw %}
+
 	Article: Q180874
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -57,3 +59,5 @@ permalink: /kb/180/Q180874/
 	
 	=============================================================================
 	
+
+{% endraw %}

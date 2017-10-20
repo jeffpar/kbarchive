@@ -6,6 +6,8 @@ permalink: /kb/120/Q120204/
 
 ## Q120204: Mozart: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q120204
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a
@@ -274,3 +276,5 @@ permalink: /kb/120/Q120204/
 	
 	=============================================================================
 	
+
+{% endraw %}

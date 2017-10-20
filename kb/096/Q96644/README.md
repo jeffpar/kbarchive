@@ -6,6 +6,8 @@ permalink: /kb/096/Q96644/
 
 ## Q96644: PC DOS: 3.0 MS-DOS Workstation Disk &#91;5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q96644
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -160,3 +162,5 @@ permalink: /kb/096/Q96644/
 	
 	=============================================================================
 	
+
+{% endraw %}

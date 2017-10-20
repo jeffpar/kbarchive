@@ -6,6 +6,8 @@ permalink: /kb/241/Q241733/
 
 ## Q241733: HOWTO: Obtain Location of Special Folders for Migration DLL
 
+{% raw %}
+
 	Article: Q241733
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -187,3 +189,5 @@ permalink: /kb/241/Q241733/
 	
 	=============================================================================
 	
+
+{% endraw %}

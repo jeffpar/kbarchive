@@ -6,6 +6,8 @@ permalink: /kb/069/Q69474/
 
 ## Q69474: Old Compiler Pass May Cause C1007: Unrecognized Flag -Bm in P2
 
+{% raw %}
+
 	Article: Q69474
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -36,3 +38,5 @@ permalink: /kb/069/Q69474/
 	option displays the information that is being passed to each phase of
 	the compiler, including the name and directory of the compiler file in
 	use.
+
+{% endraw %}

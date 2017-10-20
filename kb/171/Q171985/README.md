@@ -6,6 +6,8 @@ permalink: /kb/171/Q171985/
 
 ## Q171985: Limiting Access to Internet Content With RSACI Rating System
 
+{% raw %}
+
 	Article: Q171985
 	Product(s): The Microsoft Network
 	Version(s): 2.0,2.5,2.51,2.52,2.6,3.0,3.01,3.02,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5
@@ -113,3 +115,5 @@ permalink: /kb/171/Q171985/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38963/
 
 ## Q38963: MouseTrak Mouse Reportedly Does Not Work with QuickBASIC 4.50
 
+{% raw %}
+
 	Article: Q38963
 	Product(s): See article
 	Version(s): 4.50
@@ -24,3 +26,5 @@ permalink: /kb/038/Q38963/
 	Microsoft recommends checking with your respective mouse manufacturer
 	to see if a more up-to-date mouse driver is available that will allow
 	your mouse to work with QuickBASIC Version 4.50.
+
+{% endraw %}

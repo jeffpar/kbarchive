@@ -6,6 +6,8 @@ permalink: /kb/141/Q141089/
 
 ## Q141089: Artist: Oval Drawing Tool Produces Extra Lines or Ovals
 
+{% raw %}
+
 	Article: Q141089
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -44,3 +46,5 @@ permalink: /kb/141/Q141089/
 	
 	=============================================================================
 	
+
+{% endraw %}

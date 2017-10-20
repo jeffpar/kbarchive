@@ -6,6 +6,8 @@ permalink: /kb/250/Q250914/
 
 ## Q250914: BUG: Modify String During Concatenation Gives Unexpected Results
 
+{% raw %}
+
 	Article: Q250914
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -108,3 +110,5 @@ permalink: /kb/250/Q250914/
 	
 	=============================================================================
 	
+
+{% endraw %}

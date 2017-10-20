@@ -6,6 +6,8 @@ permalink: /kb/295/Q295450/
 
 ## Q295450: SMS:  SMS Status Manager Reports 1215 Error Messages
 
+{% raw %}
+
 	Article: Q295450
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -150,3 +152,5 @@ permalink: /kb/295/Q295450/
 	
 	=============================================================================
 	
+
+{% endraw %}

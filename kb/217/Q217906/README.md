@@ -6,6 +6,8 @@ permalink: /kb/217/Q217906/
 
 ## Q217906: Foreign Language Error Messages on Intranet Starter Site
 
+{% raw %}
+
 	Article: Q217906
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -60,3 +62,5 @@ permalink: /kb/217/Q217906/
 	
 	=============================================================================
 	
+
+{% endraw %}

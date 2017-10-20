@@ -6,6 +6,8 @@ permalink: /kb/059/Q59133/
 
 ## Q59133: How to Trap PRINT SCREEN Key on an Extended (101-Key) Keyboard
 
+{% raw %}
+
 	Article: Q59133
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -80,3 +82,5 @@ permalink: /kb/059/Q59133/
 	        PRINT "Interrupt vector changed with"
 	        PRINT "C or Assembly routine."
 	        RETURN
+
+{% endraw %}

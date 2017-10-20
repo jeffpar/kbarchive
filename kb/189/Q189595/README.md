@@ -6,6 +6,8 @@ permalink: /kb/189/Q189595/
 
 ## Q189595: PPTP Performance &amp; Security Upgrade for WinNT 4.0 Release Notes
 
+{% raw %}
+
 	Article: Q189595
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -288,3 +290,5 @@ permalink: /kb/189/Q189595/
 	
 	=============================================================================
 	
+
+{% endraw %}

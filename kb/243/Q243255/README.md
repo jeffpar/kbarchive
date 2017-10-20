@@ -6,6 +6,8 @@ permalink: /kb/243/Q243255/
 
 ## Q243255: PRB: Scroll Box on ActiveX Image Control Causes Image Distortion
 
+{% raw %}
+
 	Article: Q243255
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -86,3 +88,5 @@ permalink: /kb/243/Q243255/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104892/
 
 ## Q104892: FIX: F2836 on Type Declaration After Entry Statement
 
+{% raw %}
+
 	Article: Q104892
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/104/Q104892/
 	
 	=============================================================================
 	
+
+{% endraw %}

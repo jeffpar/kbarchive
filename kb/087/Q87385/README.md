@@ -6,6 +6,8 @@ permalink: /kb/087/Q87385/
 
 ## Q87385: PC DB: Which Programs Access the CONTROL.GLB File
 
+{% raw %}
+
 	Article: Q87385
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -40,3 +42,5 @@ permalink: /kb/087/Q87385/
 	
 	=============================================================================
 	
+
+{% endraw %}

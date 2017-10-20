@@ -6,6 +6,8 @@ permalink: /kb/184/Q184989/
 
 ## Q184989: XFOR: Backup Exec Event ID 3004 When Backing Up LinkAge
 
+{% raw %}
+
 	Article: Q184989
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2,4.0,5.0
@@ -85,3 +87,5 @@ permalink: /kb/184/Q184989/
 	
 	=============================================================================
 	
+
+{% endraw %}

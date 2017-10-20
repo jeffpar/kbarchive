@@ -6,6 +6,8 @@ permalink: /kb/262/Q262291/
 
 ## Q262291: DOC: Win2000 Supports Delegations with Kerberos Authentication
 
+{% raw %}
+
 	Article: Q262291
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/262/Q262291/
 	
 	=============================================================================
 	
+
+{% endraw %}

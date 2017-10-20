@@ -6,6 +6,8 @@ permalink: /kb/175/Q175060/
 
 ## Q175060: MSN Connection Manager Error Codes
 
+{% raw %}
+
 	Article: Q175060
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.6,5.0,5.1,5.2,5.3,5.4
@@ -349,3 +351,5 @@ permalink: /kb/175/Q175060/
 	
 	=============================================================================
 	
+
+{% endraw %}

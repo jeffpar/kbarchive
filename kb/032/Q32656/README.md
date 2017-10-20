@@ -6,6 +6,8 @@ permalink: /kb/032/Q32656/
 
 ## Q32656: ANSI Escape Sequence ESC&#91;nD Not Moving Cursor to the Left
 
+{% raw %}
+
 	Article: Q32656
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/032/Q32656/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231604/
 
 ## Q231604: Event ID 7023 When Server Service Does Not Start
 
+{% raw %}
+
 	Article: Q231604
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -101,3 +103,5 @@ permalink: /kb/231/Q231604/
 	
 	=============================================================================
 	
+
+{% endraw %}

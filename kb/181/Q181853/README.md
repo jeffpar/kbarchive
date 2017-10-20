@@ -6,6 +6,8 @@ permalink: /kb/181/Q181853/
 
 ## Q181853: HOWTO: Access and Retrieve the SQL QueryPlan from RDO
 
+{% raw %}
+
 	Article: Q181853
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/181/Q181853/
 	
 	=============================================================================
 	
+
+{% endraw %}

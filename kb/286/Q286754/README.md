@@ -6,6 +6,8 @@ permalink: /kb/286/Q286754/
 
 ## Q286754: PRB: Three-Tiered Service Model Is Not Visible in Visual Modeler
 
+{% raw %}
+
 	Article: Q286754
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3,6.0 SP4
@@ -68,3 +70,5 @@ permalink: /kb/286/Q286754/
 	
 	=============================================================================
 	
+
+{% endraw %}

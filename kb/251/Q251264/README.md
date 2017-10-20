@@ -6,6 +6,8 @@ permalink: /kb/251/Q251264/
 
 ## Q251264: PRB: App.Logevent Fails in Components that You Call from ASP
 
+{% raw %}
+
 	Article: Q251264
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:6.0; winnt:5.0
@@ -111,3 +113,5 @@ permalink: /kb/251/Q251264/
 	
 	=============================================================================
 	
+
+{% endraw %}

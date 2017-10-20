@@ -6,6 +6,8 @@ permalink: /kb/160/Q160022/
 
 ## Q160022: WD97: Symbol Characters Change to Box Characters
 
+{% raw %}
+
 	Article: Q160022
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -180,3 +182,5 @@ permalink: /kb/160/Q160022/
 	
 	=============================================================================
 	
+
+{% endraw %}

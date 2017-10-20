@@ -6,6 +6,8 @@ permalink: /kb/188/Q188579/
 
 ## Q188579: BUG: Memory Leak with Jet 3.51 and Remote ODBC Data Sources
 
+{% raw %}
+
 	Article: Q188579
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -89,3 +91,5 @@ permalink: /kb/188/Q188579/
 	
 	=============================================================================
 	
+
+{% endraw %}

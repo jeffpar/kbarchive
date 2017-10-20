@@ -6,6 +6,8 @@ permalink: /kb/168/Q168796/
 
 ## Q168796: HOWTO: Programmatically Restart or Log Off a Computer
 
+{% raw %}
+
 	Article: Q168796
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -405,3 +407,5 @@ permalink: /kb/168/Q168796/
 	
 	=============================================================================
 	
+
+{% endraw %}

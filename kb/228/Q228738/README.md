@@ -6,6 +6,8 @@ permalink: /kb/228/Q228738/
 
 ## Q228738: Null in First Byte of &#91;Input&#93; String When 'Pad With Blanks' Spec
 
+{% raw %}
+
 	Article: Q228738
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -67,3 +69,5 @@ permalink: /kb/228/Q228738/
 	
 	=============================================================================
 	
+
+{% endraw %}

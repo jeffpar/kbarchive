@@ -6,6 +6,8 @@ permalink: /kb/150/Q150350/
 
 ## Q150350: NetLogon Maximum Value of Pulse Should Exceed 3600
 
+{% raw %}
+
 	Article: Q150350
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -111,3 +113,5 @@ permalink: /kb/150/Q150350/
 	
 	=============================================================================
 	
+
+{% endraw %}

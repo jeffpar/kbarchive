@@ -6,6 +6,8 @@ permalink: /kb/021/Q21805/
 
 ## Q21805: &lt; RESUME Linenumber &gt; Is Not Allowed for Subprograms
 
+{% raw %}
+
 	Article: Q21805
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00
@@ -80,3 +82,5 @@ permalink: /kb/021/Q21805/
 	
 	For a related article, you may query on "subprogram module error
 	resume QuickBASIC" in this database.
+
+{% endraw %}

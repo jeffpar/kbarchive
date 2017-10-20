@@ -6,6 +6,8 @@ permalink: /kb/137/Q137500/
 
 ## Q137500: SLI Interface Returns Truncated Data on SSCP-LU Session
 
+{% raw %}
+
 	Article: Q137500
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -67,3 +69,5 @@ permalink: /kb/137/Q137500/
 	
 	=============================================================================
 	
+
+{% endraw %}

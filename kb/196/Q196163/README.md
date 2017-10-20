@@ -6,6 +6,8 @@ permalink: /kb/196/Q196163/
 
 ## Q196163: XADM: Move Server Wizard Batch Mode Displays KMS Error Twice
 
+{% raw %}
+
 	Article: Q196163
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -47,3 +49,5 @@ permalink: /kb/196/Q196163/
 	
 	=============================================================================
 	
+
+{% endraw %}

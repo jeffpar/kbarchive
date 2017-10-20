@@ -6,6 +6,8 @@ permalink: /kb/256/Q256260/
 
 ## Q256260: MapPoint 2001: How to Prepare Data for Importing or Linking
 
+{% raw %}
+
 	Article: Q256260
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/256/Q256260/
 	
 	=============================================================================
 	
+
+{% endraw %}

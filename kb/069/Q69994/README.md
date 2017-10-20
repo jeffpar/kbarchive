@@ -6,6 +6,8 @@ permalink: /kb/069/Q69994/
 
 ## Q69994: Using argv and envp Variables in a LAN Manager 2.00 Service
 
+{% raw %}
+
 	Article: Q69994
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/069/Q69994/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179782/
 
 ## Q179782: XCLN: Outlook 8.03 Compact Disc Does Not Contain Cabinet Files
 
+{% raw %}
+
 	Article: Q179782
 	Product(s): Microsoft Exchange
 	Version(s): 8.03; WINDOWS:8.0
@@ -78,3 +80,5 @@ permalink: /kb/179/Q179782/
 	
 	=============================================================================
 	
+
+{% endraw %}

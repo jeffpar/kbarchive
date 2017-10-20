@@ -6,6 +6,8 @@ permalink: /kb/118/Q118321/
 
 ## Q118321: PC DB: Gateway Addresses and Template Information
 
+{% raw %}
+
 	Article: Q118321
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -57,3 +59,5 @@ permalink: /kb/118/Q118321/
 	
 	=============================================================================
 	
+
+{% endraw %}

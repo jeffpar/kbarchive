@@ -6,6 +6,8 @@ permalink: /kb/246/Q246173/
 
 ## Q246173: FTP Server Does Not Allow FTP Server-to-Server Connection
 
+{% raw %}
+
 	Article: Q246173
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -78,3 +80,5 @@ permalink: /kb/246/Q246173/
 	
 	=============================================================================
 	
+
+{% endraw %}

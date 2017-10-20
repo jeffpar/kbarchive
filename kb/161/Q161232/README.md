@@ -6,6 +6,8 @@ permalink: /kb/161/Q161232/
 
 ## Q161232: HOWTO: Use Spaces in Enumerated Types
 
+{% raw %}
+
 	Article: Q161232
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/161/Q161232/
 	
 	=============================================================================
 	
+
+{% endraw %}

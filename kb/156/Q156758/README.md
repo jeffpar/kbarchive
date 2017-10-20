@@ -6,6 +6,8 @@ permalink: /kb/156/Q156758/
 
 ## Q156758: BUG: Perfmon Terminates While Monitoring SQL Procedure Cache
 
+{% raw %}
+
 	Article: Q156758
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:
@@ -69,3 +71,5 @@ permalink: /kb/156/Q156758/
 	
 	=============================================================================
 	
+
+{% endraw %}

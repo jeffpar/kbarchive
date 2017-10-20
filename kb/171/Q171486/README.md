@@ -6,6 +6,8 @@ permalink: /kb/171/Q171486/
 
 ## Q171486: FIX: Crash Sometimes Occurs with Cursor over Toolbox
 
+{% raw %}
+
 	Article: Q171486
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -76,3 +78,5 @@ permalink: /kb/171/Q171486/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165086/
 
 ## Q165086: Right-Clicking on Host Security Domain Brings Up Incorrect Menu
 
+{% raw %}
+
 	Article: Q165086
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/165/Q165086/
 	
 	=============================================================================
 	
+
+{% endraw %}

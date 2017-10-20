@@ -6,6 +6,8 @@ permalink: /kb/160/Q160975/
 
 ## Q160975: Photo Editor: Problems Controlling Resolution of PCD File
 
+{% raw %}
+
 	Article: Q160975
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0; WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/160/Q160975/
 	
 	=============================================================================
 	
+
+{% endraw %}

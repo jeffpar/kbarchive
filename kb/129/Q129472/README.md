@@ -6,6 +6,8 @@ permalink: /kb/129/Q129472/
 
 ## Q129472: Bookshelf 1995: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q129472
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995
@@ -437,3 +439,5 @@ permalink: /kb/129/Q129472/
 	
 	=============================================================================
 	
+
+{% endraw %}

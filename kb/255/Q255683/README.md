@@ -6,6 +6,8 @@ permalink: /kb/255/Q255683/
 
 ## Q255683: BUG: The GETOBJECT() Function Fails When Calling a Visual FoxPro
 
+{% raw %}
+
 	Article: Q255683
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -134,3 +136,5 @@ permalink: /kb/255/Q255683/
 	
 	=============================================================================
 	
+
+{% endraw %}

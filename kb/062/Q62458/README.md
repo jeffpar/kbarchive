@@ -6,6 +6,8 @@ permalink: /kb/062/Q62458/
 
 ## Q62458: How to Find All Available Logical Drives in BASIC
 
+{% raw %}
+
 	Article: Q62458
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -73,3 +75,5 @@ permalink: /kb/062/Q62458/
 	   END IF                             'selected, drive is available.
 	
 	NEXT Drive%
+
+{% endraw %}

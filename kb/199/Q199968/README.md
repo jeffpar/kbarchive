@@ -6,6 +6,8 @@ permalink: /kb/199/Q199968/
 
 ## Q199968: XFOR: Remote Admin of Internet Mail Service Loses RAS Connection
 
+{% raw %}
+
 	Article: Q199968
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -45,3 +47,5 @@ permalink: /kb/199/Q199968/
 	
 	=============================================================================
 	
+
+{% endraw %}

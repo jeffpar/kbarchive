@@ -6,6 +6,8 @@ permalink: /kb/236/Q236325/
 
 ## Q236325: How to Obtain and Install Systems Management Server 2.0 SP2
 
+{% raw %}
+
 	Article: Q236325
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -120,3 +122,5 @@ permalink: /kb/236/Q236325/
 	
 	=============================================================================
 	
+
+{% endraw %}

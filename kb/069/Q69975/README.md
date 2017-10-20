@@ -6,6 +6,8 @@ permalink: /kb/069/Q69975/
 
 ## Q69975: Network Server Allows Only One User to Access Windows
 
+{% raw %}
+
 	Article: Q69975
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -65,3 +67,5 @@ permalink: /kb/069/Q69975/
 	
 	=============================================================================
 	
+
+{% endraw %}

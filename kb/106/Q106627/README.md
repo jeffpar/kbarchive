@@ -6,6 +6,8 @@ permalink: /kb/106/Q106627/
 
 ## Q106627: PC Shell 6.0 Problems with DoubleSpace-Compressed Drives
 
+{% raw %}
+
 	Article: Q106627
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -56,3 +58,5 @@ permalink: /kb/106/Q106627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129038/
 
 ## Q129038: Summary of Windows NT NTFS and FTDisk Data Recovery
 
+{% raw %}
+
 	Article: Q129038
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/129/Q129038/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107476/
 
 ## Q107476: Video Seven VRAM II Video Adapter Hangs WFWG 3.11 Setup
 
+{% raw %}
+
 	Article: Q107476
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -54,3 +56,5 @@ permalink: /kb/107/Q107476/
 	
 	=============================================================================
 	
+
+{% endraw %}

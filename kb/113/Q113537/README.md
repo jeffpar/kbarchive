@@ -6,6 +6,8 @@ permalink: /kb/113/Q113537/
 
 ## Q113537: Workgroup Add-On Displays Network Connections as Disconnected
 
+{% raw %}
+
 	Article: Q113537
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -62,3 +64,5 @@ permalink: /kb/113/Q113537/
 	
 	=============================================================================
 	
+
+{% endraw %}

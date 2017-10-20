@@ -6,6 +6,8 @@ permalink: /kb/110/Q110100/
 
 ## Q110100: PC Gen: PODIAG.EXE NETPO.GLB Error 117
 
+{% raw %}
+
 	Article: Q110100
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -48,3 +50,5 @@ permalink: /kb/110/Q110100/
 	
 	=============================================================================
 	
+
+{% endraw %}

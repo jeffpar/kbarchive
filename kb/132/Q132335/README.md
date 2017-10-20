@@ -6,6 +6,8 @@ permalink: /kb/132/Q132335/
 
 ## Q132335: Mac Bookshelf 95: Error Type 15 Occurs in Quotation Book
 
+{% raw %}
+
 	Article: Q132335
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -50,3 +52,5 @@ permalink: /kb/132/Q132335/
 	
 	=============================================================================
 	
+
+{% endraw %}

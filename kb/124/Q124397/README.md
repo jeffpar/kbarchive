@@ -6,6 +6,8 @@ permalink: /kb/124/Q124397/
 
 ## Q124397: HP 4V, 4MV, &amp; Epson Stylus Drivers Don't Install Off Floppy Disk
 
+{% raw %}
+
 	Article: Q124397
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -59,3 +61,5 @@ permalink: /kb/124/Q124397/
 	
 	=============================================================================
 	
+
+{% endraw %}

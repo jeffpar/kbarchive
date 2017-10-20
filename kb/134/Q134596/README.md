@@ -6,6 +6,8 @@ permalink: /kb/134/Q134596/
 
 ## Q134596: Error Messages When Using Novell NE3200 EISA NDIS2 Driver
 
+{% raw %}
+
 	Article: Q134596
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/134/Q134596/
 	
 	=============================================================================
 	
+
+{% endraw %}

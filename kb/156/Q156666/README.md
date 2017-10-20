@@ -6,6 +6,8 @@ permalink: /kb/156/Q156666/
 
 ## Q156666: HOWTO: Obtain User Permissions from Oracle Server
 
+{% raw %}
+
 	Article: Q156666
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/156/Q156666/
 	
 	=============================================================================
 	
+
+{% endraw %}

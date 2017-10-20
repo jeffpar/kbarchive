@@ -6,6 +6,8 @@ permalink: /kb/181/Q181178/
 
 ## Q181178: WD97: How to Place a Bullet in the Middle of a Sentence
 
+{% raw %}
+
 	Article: Q181178
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -131,3 +133,5 @@ permalink: /kb/181/Q181178/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185577/
 
 ## Q185577: XADM: Error 1120 and 5000 When Starting Information Store
 
+{% raw %}
+
 	Article: Q185577
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -154,3 +156,5 @@ permalink: /kb/185/Q185577/
 	
 	=============================================================================
 	
+
+{% endraw %}

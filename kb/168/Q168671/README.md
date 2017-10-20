@@ -6,6 +6,8 @@ permalink: /kb/168/Q168671/
 
 ## Q168671: Cannot Connect to MSN Using Dial-Up Internet Provider or LAN
 
+{% raw %}
+
 	Article: Q168671
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,2.51,2.52,2.6,95,98,98 Second Edition
@@ -66,3 +68,5 @@ permalink: /kb/168/Q168671/
 	
 	=============================================================================
 	
+
+{% endraw %}

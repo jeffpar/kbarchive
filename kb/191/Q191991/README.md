@@ -6,6 +6,8 @@ permalink: /kb/191/Q191991/
 
 ## Q191991: Error Message: Stop C0000142 (DLL Initialization Failed)
 
+{% raw %}
+
 	Article: Q191991
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -148,3 +150,5 @@ permalink: /kb/191/Q191991/
 	
 	=============================================================================
 	
+
+{% endraw %}

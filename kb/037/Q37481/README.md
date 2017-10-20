@@ -6,6 +6,8 @@ permalink: /kb/037/Q37481/
 
 ## Q37481: PRINT USING Statement Fails to Use Print Zones
 
+{% raw %}
+
 	Article: Q37481
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -66,3 +68,5 @@ permalink: /kb/037/Q37481/
 	The output is as follows:
 	
 	   3.45 5.23
+
+{% endraw %}

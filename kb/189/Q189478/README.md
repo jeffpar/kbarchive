@@ -6,6 +6,8 @@ permalink: /kb/189/Q189478/
 
 ## Q189478: INFO: What Do eVB/VBCE Have That Visual Basic Doesn't Have?
 
+{% raw %}
+
 	Article: Q189478
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -129,3 +131,5 @@ permalink: /kb/189/Q189478/
 	
 	=============================================================================
 	
+
+{% endraw %}

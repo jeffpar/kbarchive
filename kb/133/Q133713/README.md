@@ -6,6 +6,8 @@ permalink: /kb/133/Q133713/
 
 ## Q133713: PRB: Problems Using the PivotTable Wizard
 
+{% raw %}
+
 	Article: Q133713
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -129,3 +131,5 @@ permalink: /kb/133/Q133713/
 	
 	=============================================================================
 	
+
+{% endraw %}

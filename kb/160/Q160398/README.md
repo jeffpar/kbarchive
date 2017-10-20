@@ -6,6 +6,8 @@ permalink: /kb/160/Q160398/
 
 ## Q160398: Cannot Read Files Greater than 4 GB
 
+{% raw %}
+
 	Article: Q160398
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/160/Q160398/
 	
 	=============================================================================
 	
+
+{% endraw %}

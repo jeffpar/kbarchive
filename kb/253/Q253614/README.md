@@ -6,6 +6,8 @@ permalink: /kb/253/Q253614/
 
 ## Q253614: Midtown: Erratic Behavior With SideWinder Precision Racing Wheel
 
+{% raw %}
+
 	Article: Q253614
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -126,3 +128,5 @@ permalink: /kb/253/Q253614/
 	
 	=============================================================================
 	
+
+{% endraw %}

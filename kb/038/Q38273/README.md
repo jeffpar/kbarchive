@@ -6,6 +6,8 @@ permalink: /kb/038/Q38273/
 
 ## Q38273: PAINT Must Not Use Fixed-Length String Patterns
 
+{% raw %}
+
 	Article: Q38273
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/038/Q38273/
 	COLOR 3, 0
 	PAINT (600, 200), pat, 1
 	INPUT a$
+
+{% endraw %}

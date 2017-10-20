@@ -6,6 +6,8 @@ permalink: /kb/271/Q271186/
 
 ## Q271186: WD97: Word Hangs When Started on Compaq Armada M300 or M700
 
+{% raw %}
+
 	Article: Q271186
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/271/Q271186/
 	
 	=============================================================================
 	
+
+{% endraw %}

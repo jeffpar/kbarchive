@@ -6,6 +6,8 @@ permalink: /kb/180/Q180906/
 
 ## Q180906: Dial-Up Networking Cannot Dial Local Area Code
 
+{% raw %}
+
 	Article: Q180906
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -69,3 +71,5 @@ permalink: /kb/180/Q180906/
 	
 	=============================================================================
 	
+
+{% endraw %}

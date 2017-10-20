@@ -6,6 +6,8 @@ permalink: /kb/131/Q131966/
 
 ## Q131966: Bookshelf 1995: Copy to Word Command Causes WinWord Error 537
 
+{% raw %}
+
 	Article: Q131966
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -102,3 +104,5 @@ permalink: /kb/131/Q131966/
 	
 	=============================================================================
 	
+
+{% endraw %}

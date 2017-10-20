@@ -6,6 +6,8 @@ permalink: /kb/304/Q304542/
 
 ## Q304542: FP: Warning Message and Content Appears Duplicated Opening Page
 
+{% raw %}
+
 	Article: Q304542
 	Product(s): Word Front Page
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/304/Q304542/
 	
 	=============================================================================
 	
+
+{% endraw %}

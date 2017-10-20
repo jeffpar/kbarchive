@@ -6,6 +6,8 @@ permalink: /kb/168/Q168003/
 
 ## Q168003: FIX: Function Prototypes in comutil.h Missing Calling Convention
 
+{% raw %}
+
 	Article: Q168003
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -93,3 +95,5 @@ permalink: /kb/168/Q168003/
 	
 	=============================================================================
 	
+
+{% endraw %}

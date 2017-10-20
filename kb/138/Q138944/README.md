@@ -6,6 +6,8 @@ permalink: /kb/138/Q138944/
 
 ## Q138944: Cannot Add Components from Floppy Disks or CD-ROM
 
+{% raw %}
+
 	Article: Q138944
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/138/Q138944/
 	
 	=============================================================================
 	
+
+{% endraw %}

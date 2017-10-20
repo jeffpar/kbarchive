@@ -6,6 +6,8 @@ permalink: /kb/155/Q155334/
 
 ## Q155334: Windows 95 RPL Clients will Only Allow One Logon to Domain
 
+{% raw %}
+
 	Article: Q155334
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -59,3 +61,5 @@ permalink: /kb/155/Q155334/
 	
 	=============================================================================
 	
+
+{% endraw %}

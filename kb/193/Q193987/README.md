@@ -6,6 +6,8 @@ permalink: /kb/193/Q193987/
 
 ## Q193987: Win95 Client May Trap When Client/Server Encryption is Enabled.
 
+{% raw %}
+
 	Article: Q193987
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -69,3 +71,5 @@ permalink: /kb/193/Q193987/
 	
 	=============================================================================
 	
+
+{% endraw %}

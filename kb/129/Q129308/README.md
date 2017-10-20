@@ -6,6 +6,8 @@ permalink: /kb/129/Q129308/
 
 ## Q129308: PRB: Pivot Table in Excel Does Not Update
 
+{% raw %}
+
 	Article: Q129308
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -58,3 +60,5 @@ permalink: /kb/129/Q129308/
 	
 	=============================================================================
 	
+
+{% endraw %}

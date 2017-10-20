@@ -6,6 +6,8 @@ permalink: /kb/094/Q94893/
 
 ## Q94893: DOSSHELL.INI Archive Attribute Is Not Set
 
+{% raw %}
+
 	Article: Q94893
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -62,3 +64,5 @@ permalink: /kb/094/Q94893/
 	
 	=============================================================================
 	
+
+{% endraw %}

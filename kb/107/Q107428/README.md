@@ -6,6 +6,8 @@ permalink: /kb/107/Q107428/
 
 ## Q107428: FIX: Extra New Line Added to Debug Output in Visual Debugger
 
+{% raw %}
+
 	Article: Q107428
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00
@@ -127,3 +129,5 @@ permalink: /kb/107/Q107428/
 	
 	=============================================================================
 	
+
+{% endraw %}

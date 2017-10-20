@@ -6,6 +6,8 @@ permalink: /kb/156/Q156807/
 
 ## Q156807: STL Sample for accumulate, copy, vector::push_back Functions
 
+{% raw %}
+
 	Article: Q156807
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -170,3 +172,5 @@ permalink: /kb/156/Q156807/
 	
 	=============================================================================
 	
+
+{% endraw %}

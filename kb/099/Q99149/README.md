@@ -6,6 +6,8 @@ permalink: /kb/099/Q99149/
 
 ## Q99149: Updating LAN Manager Redirector After Upgrading from MS-DOS 3
 
+{% raw %}
+
 	Article: Q99149
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2c,3.0,6.0,6.2,6.21,6.22
@@ -76,3 +78,5 @@ permalink: /kb/099/Q99149/
 	
 	=============================================================================
 	
+
+{% endraw %}

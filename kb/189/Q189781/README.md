@@ -6,6 +6,8 @@ permalink: /kb/189/Q189781/
 
 ## Q189781: Black Screen When Starting Microsoft Dinosaurs for Macintosh
 
+{% raw %}
+
 	Article: Q189781
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -59,3 +61,5 @@ permalink: /kb/189/Q189781/
 	
 	=============================================================================
 	
+
+{% endraw %}

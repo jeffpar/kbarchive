@@ -6,6 +6,8 @@ permalink: /kb/115/Q115419/
 
 ## Q115419: PRB: REPORT FORM Filter Syntax Incorrect on Date Field
 
+{% raw %}
+
 	Article: Q115419
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -54,3 +56,5 @@ permalink: /kb/115/Q115419/
 	
 	=============================================================================
 	
+
+{% endraw %}

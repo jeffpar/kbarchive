@@ -6,6 +6,8 @@ permalink: /kb/109/Q109483/
 
 ## Q109483: Using AppleScript to Programmatically Convert PICT to BMP
 
+{% raw %}
+
 	Article: Q109483
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -116,3 +118,5 @@ permalink: /kb/109/Q109483/
 	
 	=============================================================================
 	
+
+{% endraw %}

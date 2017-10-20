@@ -6,6 +6,8 @@ permalink: /kb/135/Q135972/
 
 ## Q135972: Zero-Byte Files Left on Compressed Drive
 
+{% raw %}
+
 	Article: Q135972
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135972/
 	
 	=============================================================================
 	
+
+{% endraw %}

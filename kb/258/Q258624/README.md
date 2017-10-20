@@ -6,6 +6,8 @@ permalink: /kb/258/Q258624/
 
 ## Q258624: Baseball 2001: Textures Are Displayed in the Wrong Location
 
+{% raw %}
+
 	Article: Q258624
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -48,3 +50,5 @@ permalink: /kb/258/Q258624/
 	
 	=============================================================================
 	
+
+{% endraw %}

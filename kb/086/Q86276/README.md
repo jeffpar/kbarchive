@@ -6,6 +6,8 @@ permalink: /kb/086/Q86276/
 
 ## Q86276: Installing Voyager Laserdisc Drivers into Windows 3.1
 
+{% raw %}
+
 	Article: Q86276
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/086/Q86276/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/080/Q80912/
 
 ## Q80912: FIX: Graph Custom Control Incompatible w/ HP II Series Printer
 
+{% raw %}
+
 	Article: Q80912
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0
@@ -129,3 +131,5 @@ permalink: /kb/080/Q80912/
 	
 	=============================================================================
 	
+
+{% endraw %}

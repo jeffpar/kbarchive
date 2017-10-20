@@ -6,6 +6,8 @@ permalink: /kb/066/Q66084/
 
 ## Q66084: IgnoreInstalledEMM=yes Not Working Properly with Windows 3.0
 
+{% raw %}
+
 	Article: Q66084
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/066/Q66084/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138726/
 
 ## Q138726: PC Mac: Err Msg: Before You Can Use Private Folders,...
 
+{% raw %}
+
 	Article: Q138726
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): (all),3.x
@@ -85,3 +87,5 @@ permalink: /kb/138/Q138726/
 	
 	=============================================================================
 	
+
+{% endraw %}

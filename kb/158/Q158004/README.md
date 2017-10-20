@@ -6,6 +6,8 @@ permalink: /kb/158/Q158004/
 
 ## Q158004: STL Sample for the random_shuffle Function
 
+{% raw %}
+
 	Article: Q158004
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -159,3 +161,5 @@ permalink: /kb/158/Q158004/
 	
 	=============================================================================
 	
+
+{% endraw %}

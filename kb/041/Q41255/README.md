@@ -6,6 +6,8 @@ permalink: /kb/041/Q41255/
 
 ## Q41255: Number of Serial Ports under OS/2
 
+{% raw %}
+
 	Article: Q41255
 	Product(s): See article
 	Version(s): 5.10
@@ -23,3 +25,5 @@ permalink: /kb/041/Q41255/
 	Note: Both original and third-party vendors can support additional
 	ports (essentially, as many as they like) if they write or modify
 	device drivers to do so.
+
+{% endraw %}

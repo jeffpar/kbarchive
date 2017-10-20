@@ -6,6 +6,8 @@ permalink: /kb/121/Q121850/
 
 ## Q121850: Windows NT Hangs on Computers Using AMD PCNet Network Cards
 
+{% raw %}
+
 	Article: Q121850
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/121/Q121850/
 	
 	=============================================================================
 	
+
+{% endraw %}

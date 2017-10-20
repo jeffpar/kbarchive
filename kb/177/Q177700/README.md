@@ -6,6 +6,8 @@ permalink: /kb/177/Q177700/
 
 ## Q177700: MS Access 97/Visual Basic Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q177700
 	Product(s): Microsoft Press
 	Version(s): 
@@ -177,3 +179,5 @@ permalink: /kb/177/Q177700/
 	
 	=============================================================================
 	
+
+{% endraw %}

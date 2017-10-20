@@ -6,6 +6,8 @@ permalink: /kb/207/Q207721/
 
 ## Q207721: UA: No Start Button When You Attempt to Join Multiplayer Game
 
+{% raw %}
+
 	Article: Q207721
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/207/Q207721/
 	
 	=============================================================================
 	
+
+{% endraw %}

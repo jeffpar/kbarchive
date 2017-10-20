@@ -6,6 +6,8 @@ permalink: /kb/274/Q274667/
 
 ## Q274667: MSN Companion user can send e-mail, but can't receive e-mail
 
+{% raw %}
+
 	Article: Q274667
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/274/Q274667/
 	
 	=============================================================================
 	
+
+{% endraw %}

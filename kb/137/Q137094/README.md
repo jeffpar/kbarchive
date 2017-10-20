@@ -6,6 +6,8 @@ permalink: /kb/137/Q137094/
 
 ## Q137094: PRB: Early Binding Fails with Out-Of-Process OLE Servers
 
+{% raw %}
+
 	Article: Q137094
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/137/Q137094/
 	
 	=============================================================================
 	
+
+{% endraw %}

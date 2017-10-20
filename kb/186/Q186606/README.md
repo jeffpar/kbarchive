@@ -6,6 +6,8 @@ permalink: /kb/186/Q186606/
 
 ## Q186606: Terminal Server's NetWare User Access For Terminal Server
 
+{% raw %}
+
 	Article: Q186606
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/186/Q186606/
 	
 	=============================================================================
 	
+
+{% endraw %}

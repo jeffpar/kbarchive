@@ -6,6 +6,8 @@ permalink: /kb/237/Q237961/
 
 ## Q237961: XFOR: IMAP4 and POP3 Users Cannot Retrieve Messages
 
+{% raw %}
+
 	Article: Q237961
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -125,3 +127,5 @@ permalink: /kb/237/Q237961/
 	
 	=============================================================================
 	
+
+{% endraw %}

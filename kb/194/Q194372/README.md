@@ -6,6 +6,8 @@ permalink: /kb/194/Q194372/
 
 ## Q194372: Virtual Globe 99: Internet Explorer 4.01 Set as Default Browser
 
+{% raw %}
+
 	Article: Q194372
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -132,3 +134,5 @@ permalink: /kb/194/Q194372/
 	
 	=============================================================================
 	
+
+{% endraw %}

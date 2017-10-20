@@ -6,6 +6,8 @@ permalink: /kb/192/Q192736/
 
 ## Q192736: STOP 0x0000000A Blue Screen on Alpha AXP
 
+{% raw %}
+
 	Article: Q192736
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/192/Q192736/
 	
 	=============================================================================
 	
+
+{% endraw %}

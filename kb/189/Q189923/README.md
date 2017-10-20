@@ -6,6 +6,8 @@ permalink: /kb/189/Q189923/
 
 ## Q189923: PRB: No Validate Event When Activating CommandButton
 
+{% raw %}
+
 	Article: Q189923
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -140,3 +142,5 @@ permalink: /kb/189/Q189923/
 	
 	=============================================================================
 	
+
+{% endraw %}

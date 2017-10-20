@@ -6,6 +6,8 @@ permalink: /kb/166/Q166710/
 
 ## Q166710: Kids Plus!: Start Menu Loses Hierarchies With Protect It! On
 
+{% raw %}
+
 	Article: Q166710
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/166/Q166710/
 	
 	=============================================================================
 	
+
+{% endraw %}

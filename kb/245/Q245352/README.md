@@ -6,6 +6,8 @@ permalink: /kb/245/Q245352/
 
 ## Q245352: Administrators Are Unable to Add Either Local or Domain Printers
 
+{% raw %}
+
 	Article: Q245352
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -54,3 +56,5 @@ permalink: /kb/245/Q245352/
 	
 	=============================================================================
 	
+
+{% endraw %}

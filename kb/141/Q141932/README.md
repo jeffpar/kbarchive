@@ -6,6 +6,8 @@ permalink: /kb/141/Q141932/
 
 ## Q141932: HOWTO: Create a Basic Add-In Using Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q141932
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -324,3 +326,5 @@ permalink: /kb/141/Q141932/
 	
 	=============================================================================
 	
+
+{% endraw %}

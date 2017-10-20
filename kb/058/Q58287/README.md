@@ -6,6 +6,8 @@ permalink: /kb/058/Q58287/
 
 ## Q58287: AutoCAD Plotter Communication Under Windows 3.0
 
+{% raw %}
+
 	Article: Q58287
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/058/Q58287/
 	
 	=============================================================================
 	
+
+{% endraw %}

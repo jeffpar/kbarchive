@@ -6,6 +6,8 @@ permalink: /kb/068/Q68540/
 
 ## Q68540: Installing Windows Printer Description Files from the SDL
 
+{% raw %}
+
 	Article: Q68540
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -92,3 +94,5 @@ permalink: /kb/068/Q68540/
 	
 	=============================================================================
 	
+
+{% endraw %}

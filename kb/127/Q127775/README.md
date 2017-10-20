@@ -6,6 +6,8 @@ permalink: /kb/127/Q127775/
 
 ## Q127775: STOP 0x0A in STREAMS.SYS with DEC Pathworks Loaded
 
+{% raw %}
+
 	Article: Q127775
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -59,3 +61,5 @@ permalink: /kb/127/Q127775/
 	
 	=============================================================================
 	
+
+{% endraw %}

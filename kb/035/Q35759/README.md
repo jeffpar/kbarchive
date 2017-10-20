@@ -6,6 +6,8 @@ permalink: /kb/035/Q35759/
 
 ## Q35759: Don't Change Disks during a Critical Error
 
+{% raw %}
+
 	Article: Q35759
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.0,5.x,6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/035/Q35759/
 	
 	=============================================================================
 	
+
+{% endraw %}

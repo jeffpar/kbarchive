@@ -6,6 +6,8 @@ permalink: /kb/313/Q313815/
 
 ## Q313815: XCCC: You Are Unable to Delete E-mail Messages Using OWA
 
+{% raw %}
+
 	Article: Q313815
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -99,3 +101,5 @@ permalink: /kb/313/Q313815/
 	
 	=============================================================================
 	
+
+{% endraw %}

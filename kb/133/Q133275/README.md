@@ -6,6 +6,8 @@ permalink: /kb/133/Q133275/
 
 ## Q133275: HOWTO: Print from a Class Other Than CView
 
+{% raw %}
+
 	Article: Q133275
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1
@@ -112,3 +114,5 @@ permalink: /kb/133/Q133275/
 	
 	=============================================================================
 	
+
+{% endraw %}

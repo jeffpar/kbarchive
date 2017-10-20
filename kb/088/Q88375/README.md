@@ -6,6 +6,8 @@ permalink: /kb/088/Q88375/
 
 ## Q88375: Testing Serial Plotter Connections
 
+{% raw %}
+
 	Article: Q88375
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/088/Q88375/
 	
 	=============================================================================
 	
+
+{% endraw %}

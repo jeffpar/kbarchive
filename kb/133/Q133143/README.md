@@ -6,6 +6,8 @@ permalink: /kb/133/Q133143/
 
 ## Q133143: PRB: VFP300.ESL Goes in System Directory, Not App's Directory
 
+{% raw %}
+
 	Article: Q133143
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/133/Q133143/
 	
 	=============================================================================
 	
+
+{% endraw %}

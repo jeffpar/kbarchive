@@ -6,6 +6,8 @@ permalink: /kb/154/Q154635/
 
 ## Q154635: FPNW Login.exe Does Not Set Machine Name Correctly
 
+{% raw %}
+
 	Article: Q154635
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -77,3 +79,5 @@ permalink: /kb/154/Q154635/
 	
 	=============================================================================
 	
+
+{% endraw %}

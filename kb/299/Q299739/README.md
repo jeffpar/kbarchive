@@ -6,6 +6,8 @@ permalink: /kb/299/Q299739/
 
 ## Q299739: Train Simulator: Compass Not Visible in Cab View
 
+{% raw %}
+
 	Article: Q299739
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -39,3 +41,5 @@ permalink: /kb/299/Q299739/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248413/
 
 ## Q248413: INFO: NDIS Debug Tracing and Kernel Debugger Extensions
 
+{% raw %}
+
 	Article: Q248413
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -172,3 +174,5 @@ permalink: /kb/248/Q248413/
 	
 	=============================================================================
 	
+
+{% endraw %}

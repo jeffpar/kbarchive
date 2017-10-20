@@ -6,6 +6,8 @@ permalink: /kb/317/Q317938/
 
 ## Q317938: PRB: &#42;Source Control cache is not always updated when it should
 
+{% raw %}
+
 	Article: Q317938
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/317/Q317938/
 	
 	=============================================================================
 	
+
+{% endraw %}

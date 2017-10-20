@@ -6,6 +6,8 @@ permalink: /kb/141/Q141397/
 
 ## Q141397: PRB: Insertion Point Left of Input Mask in Text Box on Page
 
+{% raw %}
+
 	Article: Q141397
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -82,3 +84,5 @@ permalink: /kb/141/Q141397/
 	
 	=============================================================================
 	
+
+{% endraw %}

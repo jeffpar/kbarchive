@@ -6,6 +6,8 @@ permalink: /kb/184/Q184662/
 
 ## Q184662: XADM: Messages Not Rerouted Between 2 X.400 Connectors in Site
 
+{% raw %}
+
 	Article: Q184662
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -71,3 +73,5 @@ permalink: /kb/184/Q184662/
 	
 	=============================================================================
 	
+
+{% endraw %}

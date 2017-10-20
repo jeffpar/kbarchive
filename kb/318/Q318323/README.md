@@ -6,6 +6,8 @@ permalink: /kb/318/Q318323/
 
 ## Q318323: PRB: Empty Cache Statistics Using Index Server Admin Page
 
+{% raw %}
+
 	Article: Q318323
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -65,3 +67,5 @@ permalink: /kb/318/Q318323/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149191/
 
 ## Q149191: XADM: Maximum Number of Recipients in a Distribution List
 
+{% raw %}
+
 	Article: Q149191
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -37,3 +39,5 @@ permalink: /kb/149/Q149191/
 	
 	=============================================================================
 	
+
+{% endraw %}

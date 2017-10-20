@@ -6,6 +6,8 @@ permalink: /kb/244/Q244211/
 
 ## Q244211: Cannot Save Office 97 Files to Terminal Server ICA Client
 
+{% raw %}
+
 	Article: Q244211
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -53,3 +55,5 @@ permalink: /kb/244/Q244211/
 	
 	=============================================================================
 	
+
+{% endraw %}

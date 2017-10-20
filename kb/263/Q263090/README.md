@@ -6,6 +6,8 @@ permalink: /kb/263/Q263090/
 
 ## Q263090: How to Install Win2K Print Driver in NT4 for Point and Print
 
+{% raw %}
+
 	Article: Q263090
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -115,3 +117,5 @@ permalink: /kb/263/Q263090/
 	
 	=============================================================================
 	
+
+{% endraw %}

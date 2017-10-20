@@ -6,6 +6,8 @@ permalink: /kb/114/Q114274/
 
 ## Q114274: BUG: SKIP FOR Does Not Disable Menu Pad
 
+{% raw %}
+
 	Article: Q114274
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -69,3 +71,5 @@ permalink: /kb/114/Q114274/
 	
 	=============================================================================
 	
+
+{% endraw %}

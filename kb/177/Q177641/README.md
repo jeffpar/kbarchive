@@ -6,6 +6,8 @@ permalink: /kb/177/Q177641/
 
 ## Q177641: FIX: Assertion with an Insertable OLE Control
 
+{% raw %}
+
 	Article: Q177641
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -124,3 +126,5 @@ permalink: /kb/177/Q177641/
 	
 	=============================================================================
 	
+
+{% endraw %}

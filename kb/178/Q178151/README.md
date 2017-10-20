@@ -6,6 +6,8 @@ permalink: /kb/178/Q178151/
 
 ## Q178151: Err Msg: This Version of Windows Does Not Run on MS-DOS 7.00
 
+{% raw %}
+
 	Article: Q178151
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -164,3 +166,5 @@ permalink: /kb/178/Q178151/
 	
 	=============================================================================
 	
+
+{% endraw %}

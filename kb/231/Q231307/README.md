@@ -6,6 +6,8 @@ permalink: /kb/231/Q231307/
 
 ## Q231307: XADM: Server Issues V1 Certificate When Configured for V3 Only
 
+{% raw %}
+
 	Article: Q231307
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/231/Q231307/
 	
 	=============================================================================
 	
+
+{% endraw %}

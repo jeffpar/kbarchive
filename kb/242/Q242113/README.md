@@ -6,6 +6,8 @@ permalink: /kb/242/Q242113/
 
 ## Q242113: Cannot Log On to Windows NT Domain Using IPX/SPX and TCP/IP
 
+{% raw %}
+
 	Article: Q242113
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/242/Q242113/
 	
 	=============================================================================
 	
+
+{% endraw %}

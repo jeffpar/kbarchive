@@ -6,6 +6,8 @@ permalink: /kb/263/Q263417/
 
 ## Q263417: Unable to Make Access Changes for Custom Share Points Packages
 
+{% raw %}
+
 	Article: Q263417
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -56,3 +58,5 @@ permalink: /kb/263/Q263417/
 	
 	=============================================================================
 	
+
+{% endraw %}

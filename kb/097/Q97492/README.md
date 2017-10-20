@@ -6,6 +6,8 @@ permalink: /kb/097/Q97492/
 
 ## Q97492: COMNDIS Command Can Keep Workstations from Hanging
 
+{% raw %}
+
 	Article: Q97492
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/097/Q97492/
 	
 	=============================================================================
 	
+
+{% endraw %}

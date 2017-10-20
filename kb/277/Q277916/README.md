@@ -6,6 +6,8 @@ permalink: /kb/277/Q277916/
 
 ## Q277916: HOWTO: Use GetKeyState() to Check If the TAB Key Was Pressed
 
+{% raw %}
+
 	Article: Q277916
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -83,3 +85,5 @@ permalink: /kb/277/Q277916/
 	
 	=============================================================================
 	
+
+{% endraw %}

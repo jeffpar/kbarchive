@@ -6,6 +6,8 @@ permalink: /kb/159/Q159612/
 
 ## Q159612: WD: Creating a Password-Style Macro Dialog Text Box
 
+{% raw %}
+
 	Article: Q159612
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -178,3 +180,5 @@ permalink: /kb/159/Q159612/
 	
 	=============================================================================
 	
+
+{% endraw %}

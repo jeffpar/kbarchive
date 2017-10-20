@@ -6,6 +6,8 @@ permalink: /kb/253/Q253982/
 
 ## Q253982: BUG: MSDN Library Problems with the Windows 2000 MUI
 
+{% raw %}
+
 	Article: Q253982
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:6.0
@@ -90,3 +92,5 @@ permalink: /kb/253/Q253982/
 	
 	=============================================================================
 	
+
+{% endraw %}

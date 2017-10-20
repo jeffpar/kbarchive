@@ -6,6 +6,8 @@ permalink: /kb/169/Q169223/
 
 ## Q169223: XADM: Bad Message Causes Dr. Watson in Store.exe
 
+{% raw %}
+
 	Article: Q169223
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -130,3 +132,5 @@ permalink: /kb/169/Q169223/
 	
 	=============================================================================
 	
+
+{% endraw %}

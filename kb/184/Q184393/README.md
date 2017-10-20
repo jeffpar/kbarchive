@@ -6,6 +6,8 @@ permalink: /kb/184/Q184393/
 
 ## Q184393: INFO: Script Errors Using HTMLA When Shift-Clicking Links
 
+{% raw %}
+
 	Article: Q184393
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:4.0; winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/184/Q184393/
 	
 	=============================================================================
 	
+
+{% endraw %}

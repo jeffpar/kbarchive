@@ -6,6 +6,8 @@ permalink: /kb/194/Q194715/
 
 ## Q194715: Oracle Diagnostic Tool Missing After Installing Service Pack 4
 
+{% raw %}
+
 	Article: Q194715
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194715/
 	
 	=============================================================================
 	
+
+{% endraw %}

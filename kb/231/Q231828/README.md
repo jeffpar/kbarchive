@@ -6,6 +6,8 @@ permalink: /kb/231/Q231828/
 
 ## Q231828: Midtown 1.0/2.0: Description of the Troubleshooting Shortcuts
 
+{% raw %}
+
 	Article: Q231828
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -88,3 +90,5 @@ permalink: /kb/231/Q231828/
 	
 	=============================================================================
 	
+
+{% endraw %}

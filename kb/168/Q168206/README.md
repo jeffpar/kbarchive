@@ -6,6 +6,8 @@ permalink: /kb/168/Q168206/
 
 ## Q168206: PRB: &quot;Argument Not Optional&quot; Error Using DAO 3.5
 
+{% raw %}
+
 	Article: Q168206
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0 5.0
@@ -88,3 +90,5 @@ permalink: /kb/168/Q168206/
 	
 	=============================================================================
 	
+
+{% endraw %}

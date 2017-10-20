@@ -6,6 +6,8 @@ permalink: /kb/238/Q238596/
 
 ## Q238596: Midtown Madness Err Msg: EBU90B4 Caused an Invalid Page Fault...
 
+{% raw %}
+
 	Article: Q238596
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -111,3 +113,5 @@ permalink: /kb/238/Q238596/
 	
 	=============================================================================
 	
+
+{% endraw %}

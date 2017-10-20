@@ -6,6 +6,8 @@ permalink: /kb/179/Q179568/
 
 ## Q179568: Understanding ActiveX and OLE Corrections and Comments
 
+{% raw %}
+
 	Article: Q179568
 	Product(s): Microsoft Press
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/179/Q179568/
 	
 	=============================================================================
 	
+
+{% endraw %}

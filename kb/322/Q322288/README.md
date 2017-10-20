@@ -6,6 +6,8 @@ permalink: /kb/322/Q322288/
 
 ## Q322288: Using MSN Broadband with Mac OS X
 
+{% raw %}
+
 	Article: Q322288
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -177,3 +179,5 @@ permalink: /kb/322/Q322288/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97493/
 
 ## Q97493: Minimum LAN Manager MS-DOS Files and RAM Consumption
 
+{% raw %}
+
 	Article: Q97493
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/097/Q97493/
 	
 	=============================================================================
 	
+
+{% endraw %}

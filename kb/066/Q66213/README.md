@@ -6,6 +6,8 @@ permalink: /kb/066/Q66213/
 
 ## Q66213: &#92;&quot; Sequence Must Be Used to Define Strings with /D Switch
 
+{% raw %}
+
 	Article: Q66213
 	Product(s): See article
 	Version(s): 5.10 6.00 | 5.10 6.00
@@ -26,3 +28,5 @@ permalink: /kb/066/Q66213/
 	below, where FOO is defined as "bar":
 	
 	   cl /DFOO=\"bar\" s.c
+
+{% endraw %}

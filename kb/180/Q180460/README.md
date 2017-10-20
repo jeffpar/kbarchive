@@ -6,6 +6,8 @@ permalink: /kb/180/Q180460/
 
 ## Q180460: Rumba v5.1 May Cause Stop 0x0000007f
 
+{% raw %}
+
 	Article: Q180460
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -54,3 +56,5 @@ permalink: /kb/180/Q180460/
 	
 	=============================================================================
 	
+
+{% endraw %}

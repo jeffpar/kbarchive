@@ -6,6 +6,8 @@ permalink: /kb/141/Q141904/
 
 ## Q141904: HOWTO: Use SQL Aggregate Functions with the MFC DAO Classes
 
+{% raw %}
+
 	Article: Q141904
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.1b 4.2 4.2b 5.0 6.0
@@ -146,3 +148,5 @@ permalink: /kb/141/Q141904/
 	
 	=============================================================================
 	
+
+{% endraw %}

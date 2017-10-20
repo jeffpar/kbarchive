@@ -6,6 +6,8 @@ permalink: /kb/048/Q48038/
 
 ## Q48038: Mac Adm: Special/Reserved Keys for User Names
 
+{% raw %}
+
 	Article: Q48038
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
@@ -64,3 +66,5 @@ permalink: /kb/048/Q48038/
 	
 	=============================================================================
 	
+
+{% endraw %}

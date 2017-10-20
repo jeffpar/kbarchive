@@ -6,6 +6,8 @@ permalink: /kb/103/Q103234/
 
 ## Q103234: Windows NT Err Msg: MSWORD/PP3 Caused Segment Load Failure...
 
+{% raw %}
+
 	Article: Q103234
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -74,3 +76,5 @@ permalink: /kb/103/Q103234/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90275/
 
 ## Q90275: Network Printing in Windows for Workgroups
 
+{% raw %}
+
 	Article: Q90275
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/090/Q90275/
 	
 	=============================================================================
 	
+
+{% endraw %}

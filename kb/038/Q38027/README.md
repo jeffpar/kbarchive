@@ -6,6 +6,8 @@ permalink: /kb/038/Q38027/
 
 ## Q38027: INFO: Negative Values Use Two's Complement
 
+{% raw %}
+
 	Article: Q38027
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:6.0,6.00a,6.00ax,7.0; OS/2:6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS:1.0,2.0,4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/038/Q38027/
 	
 	=============================================================================
 	
+
+{% endraw %}

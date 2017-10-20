@@ -6,6 +6,8 @@ permalink: /kb/135/Q135141/
 
 ## Q135141: Installing Media Vision Windows 3.1 Drivers Causes GP Fault
 
+{% raw %}
+
 	Article: Q135141
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/135/Q135141/
 	
 	=============================================================================
 	
+
+{% endraw %}

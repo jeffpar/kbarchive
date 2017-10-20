@@ -6,6 +6,8 @@ permalink: /kb/112/Q112352/
 
 ## Q112352: How to Emulate Function Keys in FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q112352
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -48,3 +50,5 @@ permalink: /kb/112/Q112352/
 	
 	=============================================================================
 	
+
+{% endraw %}

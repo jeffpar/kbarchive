@@ -6,6 +6,8 @@ permalink: /kb/125/Q125779/
 
 ## Q125779: HOWTO: Color Text ClassWizard Updates to Make Mods Easy to See
 
+{% raw %}
+
 	Article: Q125779
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/125/Q125779/
 	
 	=============================================================================
 	
+
+{% endraw %}

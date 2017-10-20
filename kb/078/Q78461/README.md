@@ -6,6 +6,8 @@ permalink: /kb/078/Q78461/
 
 ## Q78461: Flashing Mouse Cursor in Windows 3.0 on AST Premium Exec
 
+{% raw %}
+
 	Article: Q78461
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0
@@ -52,3 +54,5 @@ permalink: /kb/078/Q78461/
 	
 	=============================================================================
 	
+
+{% endraw %}

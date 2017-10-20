@@ -6,6 +6,8 @@ permalink: /kb/067/Q67417/
 
 ## Q67417: PIF Files Created by Windows 3.0 Setup from P to R
 
+{% raw %}
+
 	Article: Q67417
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -230,3 +232,5 @@ permalink: /kb/067/Q67417/
 	
 	=============================================================================
 	
+
+{% endraw %}

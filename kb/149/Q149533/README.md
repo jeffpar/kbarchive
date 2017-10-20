@@ -6,6 +6,8 @@ permalink: /kb/149/Q149533/
 
 ## Q149533: OLE Problems When Running 16-bit Applications on Windows NT
 
+{% raw %}
+
 	Article: Q149533
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149533/
 	
 	=============================================================================
 	
+
+{% endraw %}

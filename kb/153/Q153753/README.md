@@ -6,6 +6,8 @@ permalink: /kb/153/Q153753/
 
 ## Q153753: XCLN: Schedule+ 1.0 and 7.0 Interoperability in MS Mail
 
+{% raw %}
+
 	Article: Q153753
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 7.0
@@ -177,3 +179,5 @@ permalink: /kb/153/Q153753/
 	
 	=============================================================================
 	
+
+{% endraw %}

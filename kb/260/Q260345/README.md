@@ -6,6 +6,8 @@ permalink: /kb/260/Q260345/
 
 ## Q260345: BUG: Channel Screen Saver in Brazillian Windows 2000 OPK Fails
 
+{% raw %}
+
 	Article: Q260345
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/260/Q260345/
 	
 	=============================================================================
 	
+
+{% endraw %}

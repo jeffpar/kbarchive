@@ -6,6 +6,8 @@ permalink: /kb/087/Q87057/
 
 ## Q87057: MCI: How Mail Gets from Downstream Postoffice to Gateway
 
+{% raw %}
+
 	Article: Q87057
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -48,3 +50,5 @@ permalink: /kb/087/Q87057/
 	
 	=============================================================================
 	
+
+{% endraw %}

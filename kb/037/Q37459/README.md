@@ -6,6 +6,8 @@ permalink: /kb/037/Q37459/
 
 ## Q37459: &quot;pascal&quot; Attribute for Multi-Thread Functions Returning Double
 
+{% raw %}
+
 	Article: Q37459
 	Product(s): See article
 	Version(s): 5.10
@@ -30,3 +32,5 @@ permalink: /kb/037/Q37459/
 	could be unintentionally modified by another thread, so it is not
 	contained in CRTEXE.OBJ, CRTDLL.OBJ, or CRTDLL.LIB. Consequently,
 	references to __fac will be unresolved at link time.
+
+{% endraw %}

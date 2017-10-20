@@ -6,6 +6,8 @@ permalink: /kb/072/Q72849/
 
 ## Q72849: FIX: L1126 Link Error May Be Caused By EXPORT in PROC Definition
 
+{% raw %}
+
 	Article: Q72849
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -102,3 +104,5 @@ permalink: /kb/072/Q72849/
 	
 	=============================================================================
 	
+
+{% endraw %}

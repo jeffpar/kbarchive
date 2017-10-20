@@ -6,6 +6,8 @@ permalink: /kb/051/Q51625/
 
 ## Q51625: Flight Simulator Version 4.00 Hangs on AT&amp;T 6300
 
+{% raw %}
+
 	Article: Q51625
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/051/Q51625/
 	
 	=============================================================================
 	
+
+{% endraw %}

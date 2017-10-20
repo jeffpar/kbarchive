@@ -6,6 +6,8 @@ permalink: /kb/059/Q59130/
 
 ## Q59130: WHEREIS.BAS Correction in &quot;4.5: Programming in BASIC&quot; Manual
 
+{% raw %}
+
 	Article: Q59130
 	Product(s): See article
 	Version(s): 4.50
@@ -32,3 +34,5 @@ permalink: /kb/059/Q59130/
 	This documentation error has been corrected in the manuals for
 	Microsoft BASIC Professional Development System 7.00 for MS-DOS and MS
 	OS/2.
+
+{% endraw %}

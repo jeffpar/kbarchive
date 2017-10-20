@@ -6,6 +6,8 @@ permalink: /kb/077/Q77256/
 
 ## Q77256: SAMPLE: MASMWin.exe Uses MASM 6.0 to Write Windows Application
 
+{% raw %}
+
 	Article: Q77256
 	Product(s): Microsoft Macro Assembler
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/077/Q77256/
 	
 	=============================================================================
 	
+
+{% endraw %}

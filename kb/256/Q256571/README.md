@@ -6,6 +6,8 @@ permalink: /kb/256/Q256571/
 
 ## Q256571: WD97: Word Stops Responding During Spelling and Grammar Check
 
+{% raw %}
+
 	Article: Q256571
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/256/Q256571/
 	
 	=============================================================================
 	
+
+{% endraw %}

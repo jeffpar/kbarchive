@@ -6,6 +6,8 @@ permalink: /kb/200/Q200910/
 
 ## Q200910: How to Install Network Monitor in Windows 95/98
 
+{% raw %}
+
 	Article: Q200910
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/200/Q200910/
 	
 	=============================================================================
 	
+
+{% endraw %}

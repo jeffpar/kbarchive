@@ -6,6 +6,8 @@ permalink: /kb/129/Q129329/
 
 ## Q129329: HOWTO: Populate a Form's List Box Object from an Array
 
+{% raw %}
+
 	Article: Q129329
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -235,3 +237,5 @@ permalink: /kb/129/Q129329/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167629/
 
 ## Q167629: Predictable Query IDs Pose Security Risks for DNS Servers
 
+{% raw %}
+
 	Article: Q167629
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/167/Q167629/
 	
 	=============================================================================
 	
+
+{% endraw %}

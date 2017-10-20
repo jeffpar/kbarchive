@@ -6,6 +6,8 @@ permalink: /kb/160/Q160377/
 
 ## Q160377: File Size Data Does Not Remain Consistent After Defrag on NTFS
 
+{% raw %}
+
 	Article: Q160377
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160377/
 	
 	=============================================================================
 	
+
+{% endraw %}

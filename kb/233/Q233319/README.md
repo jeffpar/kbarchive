@@ -6,6 +6,8 @@ permalink: /kb/233/Q233319/
 
 ## Q233319: XCON: INMR01 Record Doesn't Have All Recipient Addresses
 
+{% raw %}
+
 	Article: Q233319
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/233/Q233319/
 	
 	=============================================================================
 	
+
+{% endraw %}

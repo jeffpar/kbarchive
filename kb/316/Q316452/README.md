@@ -6,6 +6,8 @@ permalink: /kb/316/Q316452/
 
 ## Q316452: MCSE Readiness Review Exam 70-270: Microsoft Windows XP Professi
 
+{% raw %}
+
 	Article: Q316452
 	Product(s): Microsoft Press
 	Version(s): 
@@ -172,3 +174,5 @@ permalink: /kb/316/Q316452/
 	
 	=============================================================================
 	
+
+{% endraw %}

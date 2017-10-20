@@ -6,6 +6,8 @@ permalink: /kb/192/Q192243/
 
 ## Q192243: Administrator Program Incorrectly Displays Date After Year 2000
 
+{% raw %}
+
 	Article: Q192243
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -61,3 +63,5 @@ permalink: /kb/192/Q192243/
 	
 	=============================================================================
 	
+
+{% endraw %}

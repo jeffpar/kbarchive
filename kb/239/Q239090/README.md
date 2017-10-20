@@ -6,6 +6,8 @@ permalink: /kb/239/Q239090/
 
 ## Q239090: XADM: Forward Intact Logged as Send As
 
+{% raw %}
+
 	Article: Q239090
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -41,3 +43,5 @@ permalink: /kb/239/Q239090/
 	
 	=============================================================================
 	
+
+{% endraw %}

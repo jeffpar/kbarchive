@@ -6,6 +6,8 @@ permalink: /kb/196/Q196006/
 
 ## Q196006: Virtual Globe 99: How to Disable Sound in Virtual Flights
 
+{% raw %}
+
 	Article: Q196006
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/196/Q196006/
 	
 	=============================================================================
 	
+
+{% endraw %}

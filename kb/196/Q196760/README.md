@@ -6,6 +6,8 @@ permalink: /kb/196/Q196760/
 
 ## Q196760: WD97: Sub Doc's Heading Numbering Doesn't Appear in Master Doc
 
+{% raw %}
+
 	Article: Q196760
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/196/Q196760/
 	
 	=============================================================================
 	
+
+{% endraw %}

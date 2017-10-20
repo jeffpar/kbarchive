@@ -6,6 +6,8 @@ permalink: /kb/194/Q194645/
 
 ## Q194645: WD97: How to Auto-Register a Converter
 
+{% raw %}
+
 	Article: Q194645
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -99,3 +101,5 @@ permalink: /kb/194/Q194645/
 	
 	=============================================================================
 	
+
+{% endraw %}

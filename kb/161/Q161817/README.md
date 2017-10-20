@@ -6,6 +6,8 @@ permalink: /kb/161/Q161817/
 
 ## Q161817: WD97: &quot;Word Could Not Insert the Address...&quot; Error
 
+{% raw %}
+
 	Article: Q161817
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/161/Q161817/
 	
 	=============================================================================
 	
+
+{% endraw %}

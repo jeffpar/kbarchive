@@ -6,6 +6,8 @@ permalink: /kb/169/Q169343/
 
 ## Q169343: SMS: INVOS2 Fails To Detect Various System Attributes
 
+{% raw %}
+
 	Article: Q169343
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/169/Q169343/
 	
 	=============================================================================
 	
+
+{% endraw %}

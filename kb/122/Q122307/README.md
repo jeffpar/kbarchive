@@ -6,6 +6,8 @@ permalink: /kb/122/Q122307/
 
 ## Q122307: HOWTO: Tracking Down Memory Leaks with _afxBreakAlloc
 
+{% raw %}
+
 	Article: Q122307
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1
@@ -94,3 +96,5 @@ permalink: /kb/122/Q122307/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78903/
 
 ## Q78903: Problems Attaching to Novell Print Server
 
+{% raw %}
+
 	Article: Q78903
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/078/Q78903/
 	
 	=============================================================================
 	
+
+{% endraw %}

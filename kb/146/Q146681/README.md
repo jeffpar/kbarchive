@@ -6,6 +6,8 @@ permalink: /kb/146/Q146681/
 
 ## Q146681: XFOR: DXA Improperly Appending 001 to Friendly Names in the GAL
 
+{% raw %}
+
 	Article: Q146681
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/146/Q146681/
 	
 	=============================================================================
 	
+
+{% endraw %}

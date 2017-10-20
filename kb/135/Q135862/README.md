@@ -6,6 +6,8 @@ permalink: /kb/135/Q135862/
 
 ## Q135862: HOWTO: How to Use OLE2UI Functionality in 32-bit Applications
 
+{% raw %}
+
 	Article: Q135862
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2
@@ -84,3 +86,5 @@ permalink: /kb/135/Q135862/
 	
 	=============================================================================
 	
+
+{% endraw %}

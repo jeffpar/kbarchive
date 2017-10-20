@@ -6,6 +6,8 @@ permalink: /kb/164/Q164836/
 
 ## Q164836: XCON: Conditional Reroute on Single Link Bounces Back
 
+{% raw %}
+
 	Article: Q164836
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/164/Q164836/
 	
 	=============================================================================
 	
+
+{% endraw %}

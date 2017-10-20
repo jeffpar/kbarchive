@@ -6,6 +6,8 @@ permalink: /kb/150/Q150812/
 
 ## Q150812: Stop Msg: Octopus Driver May Cause Stop 0x00000050
 
+{% raw %}
+
 	Article: Q150812
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150812/
 	
 	=============================================================================
 	
+
+{% endraw %}

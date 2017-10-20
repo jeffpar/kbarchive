@@ -6,6 +6,8 @@ permalink: /kb/114/Q114393/
 
 ## Q114393: WD97:Word Prompts to Select Header Delimiter Opening Header File
 
+{% raw %}
+
 	Article: Q114393
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -111,3 +113,5 @@ permalink: /kb/114/Q114393/
 	
 	=============================================================================
 	
+
+{% endraw %}

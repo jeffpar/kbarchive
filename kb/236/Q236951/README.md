@@ -6,6 +6,8 @@ permalink: /kb/236/Q236951/
 
 ## Q236951: PRB: VI Projects Do Not Appear or Added to Wrong VSS Database
 
+{% raw %}
+
 	Article: Q236951
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0,6.0 SP1,6.0 SP2,6.0 SP3
@@ -132,3 +134,5 @@ permalink: /kb/236/Q236951/
 	
 	=============================================================================
 	
+
+{% endraw %}

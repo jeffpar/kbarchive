@@ -6,6 +6,8 @@ permalink: /kb/097/Q97144/
 
 ## Q97144: PC WRmt: Cannot Successfully Book Meeting in Schedule+
 
+{% raw %}
+
 	Article: Q97144
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,1.0a,3.2
@@ -48,3 +50,5 @@ permalink: /kb/097/Q97144/
 	
 	=============================================================================
 	
+
+{% endraw %}

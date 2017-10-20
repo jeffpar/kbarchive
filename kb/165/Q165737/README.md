@@ -6,6 +6,8 @@ permalink: /kb/165/Q165737/
 
 ## Q165737: CSNW/GSNW Unable to Connect to NetWare Server
 
+{% raw %}
+
 	Article: Q165737
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -77,3 +79,5 @@ permalink: /kb/165/Q165737/
 	
 	=============================================================================
 	
+
+{% endraw %}

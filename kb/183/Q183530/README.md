@@ -6,6 +6,8 @@ permalink: /kb/183/Q183530/
 
 ## Q183530: XCLN: How Exchange Macintosh Client Calls the Internet Browser
 
+{% raw %}
+
 	Article: Q183530
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH: 4.0,5.0
@@ -70,3 +72,5 @@ permalink: /kb/183/Q183530/
 	
 	=============================================================================
 	
+
+{% endraw %}

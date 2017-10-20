@@ -6,6 +6,8 @@ permalink: /kb/157/Q157516/
 
 ## Q157516: 3D GRAPHICS PROGRAMMING FOR WIN 95 Corrections and Comments
 
+{% raw %}
+
 	Article: Q157516
 	Product(s): Microsoft Press
 	Version(s): 
@@ -138,3 +140,5 @@ permalink: /kb/157/Q157516/
 	
 	=============================================================================
 	
+
+{% endraw %}

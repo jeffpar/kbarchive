@@ -6,6 +6,8 @@ permalink: /kb/162/Q162484/
 
 ## Q162484: XWEB: Unable to Rename Folders with ASC
 
+{% raw %}
+
 	Article: Q162484
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -42,3 +44,5 @@ permalink: /kb/162/Q162484/
 	
 	=============================================================================
 	
+
+{% endraw %}

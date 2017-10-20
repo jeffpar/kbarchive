@@ -6,6 +6,8 @@ permalink: /kb/300/Q300606/
 
 ## Q300606: HOWTO: Design a Resizable MFC Property Sheet
 
+{% raw %}
+
 	Article: Q300606
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -237,3 +239,5 @@ permalink: /kb/300/Q300606/
 	
 	=============================================================================
 	
+
+{% endraw %}

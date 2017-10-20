@@ -6,6 +6,8 @@ permalink: /kb/175/Q175376/
 
 ## Q175376: Connected User Names Disappear from List on SBS
 
+{% raw %}
+
 	Article: Q175376
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -67,3 +69,5 @@ permalink: /kb/175/Q175376/
 	
 	=============================================================================
 	
+
+{% endraw %}

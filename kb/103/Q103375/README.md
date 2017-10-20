@@ -6,6 +6,8 @@ permalink: /kb/103/Q103375/
 
 ## Q103375: MultiDlg.exe Demonstrates Dynamic Child Dialog Boxes
 
+{% raw %}
+
 	Article: Q103375
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -140,3 +142,5 @@ permalink: /kb/103/Q103375/
 	
 	=============================================================================
 	
+
+{% endraw %}

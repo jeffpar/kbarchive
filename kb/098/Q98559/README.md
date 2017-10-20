@@ -6,6 +6,8 @@ permalink: /kb/098/Q98559/
 
 ## Q98559: Undelete or Anti-Virus Err Msg: NQ30.ZFD Not Found
 
+{% raw %}
+
 	Article: Q98559
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/098/Q98559/
 	
 	=============================================================================
 	
+
+{% endraw %}

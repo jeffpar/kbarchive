@@ -6,6 +6,8 @@ permalink: /kb/168/Q168217/
 
 ## Q168217: FIX: Unattended Setup May Fail with 3Com 3C619B Tokenlink III A
 
+{% raw %}
+
 	Article: Q168217
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/168/Q168217/
 	
 	=============================================================================
 	
+
+{% endraw %}

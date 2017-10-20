@@ -6,6 +6,8 @@ permalink: /kb/166/Q166482/
 
 ## Q166482: DUMPCHK.EXE Incorrectly Reports Some Dump Files as Invalid
 
+{% raw %}
+
 	Article: Q166482
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/166/Q166482/
 	
 	=============================================================================
 	
+
+{% endraw %}

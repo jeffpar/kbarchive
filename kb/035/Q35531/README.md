@@ -6,6 +6,8 @@ permalink: /kb/035/Q35531/
 
 ## Q35531: Making the Editor Default to Insert Mode
 
+{% raw %}
+
 	Article: Q35531
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -26,3 +28,5 @@ permalink: /kb/035/Q35531/
 	entry to TOOLS.INI:
 	
 	   enterinsmode:
+
+{% endraw %}

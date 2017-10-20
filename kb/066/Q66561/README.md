@@ -6,6 +6,8 @@ permalink: /kb/066/Q66561/
 
 ## Q66561: 386MAX.SYS with MOUSE.COM 7.0 Can Hang Sprite Video Cards
 
+{% raw %}
+
 	Article: Q66561
 	Product(s): See article
 	Version(s): 7.00 7.03 7.04
@@ -31,3 +33,5 @@ permalink: /kb/066/Q66561/
 	 or in the AUTOEXEC.BAT:
 	
 	      C:\MOUSE1\MOUSE /Y
+
+{% endraw %}

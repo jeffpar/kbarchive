@@ -6,6 +6,8 @@ permalink: /kb/156/Q156965/
 
 ## Q156965: XFOR: SMTP Header Time Conflicts with Sent Time on Message
 
+{% raw %}
+
 	Article: Q156965
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/156/Q156965/
 	
 	=============================================================================
 	
+
+{% endraw %}

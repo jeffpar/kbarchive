@@ -6,6 +6,8 @@ permalink: /kb/097/Q97808/
 
 ## Q97808: Microsoft Anti-Virus Err Msg: File &lt;Filename&gt; Was Changed
 
+{% raw %}
+
 	Article: Q97808
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/097/Q97808/
 	
 	=============================================================================
 	
+
+{% endraw %}

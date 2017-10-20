@@ -6,6 +6,8 @@ permalink: /kb/163/Q163562/
 
 ## Q163562: TN3270 Server Does Not Handle DACTLU/ACTLU Sequence Properly
 
+{% raw %}
+
 	Article: Q163562
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -70,3 +72,5 @@ permalink: /kb/163/Q163562/
 	
 	=============================================================================
 	
+
+{% endraw %}

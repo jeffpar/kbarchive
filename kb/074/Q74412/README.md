@@ -6,6 +6,8 @@ permalink: /kb/074/Q74412/
 
 ## Q74412: Steady Timer Messages in a Dynamic-Link Library (DLL)
 
+{% raw %}
+
 	Article: Q74412
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -91,3 +93,5 @@ permalink: /kb/074/Q74412/
 	
 	=============================================================================
 	
+
+{% endraw %}

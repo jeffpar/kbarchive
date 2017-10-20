@@ -6,6 +6,8 @@ permalink: /kb/096/Q96824/
 
 ## Q96824: Using a Common UNDELETE.INI File with Undelete
 
+{% raw %}
+
 	Article: Q96824
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -79,3 +81,5 @@ permalink: /kb/096/Q96824/
 	
 	=============================================================================
 	
+
+{% endraw %}

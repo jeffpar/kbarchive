@@ -6,6 +6,8 @@ permalink: /kb/305/Q305041/
 
 ## Q305041: FIX: Fatal Error When Closing Second Instance of Class Designer
 
+{% raw %}
+
 	Article: Q305041
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -71,3 +73,5 @@ permalink: /kb/305/Q305041/
 	
 	=============================================================================
 	
+
+{% endraw %}

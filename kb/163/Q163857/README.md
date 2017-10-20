@@ -6,6 +6,8 @@ permalink: /kb/163/Q163857/
 
 ## Q163857: PPT: Sample VB Code Adds Multiple New Slides to Presentation
 
+{% raw %}
+
 	Article: Q163857
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -197,3 +199,5 @@ permalink: /kb/163/Q163857/
 	
 	=============================================================================
 	
+
+{% endraw %}

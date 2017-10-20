@@ -6,6 +6,8 @@ permalink: /kb/311/Q311809/
 
 ## Q311809: Initial APPC Print Job May Have Incorrect Font Size
 
+{% raw %}
+
 	Article: Q311809
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/311/Q311809/
 	
 	=============================================================================
 	
+
+{% endraw %}

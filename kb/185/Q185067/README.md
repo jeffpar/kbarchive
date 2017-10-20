@@ -6,6 +6,8 @@ permalink: /kb/185/Q185067/
 
 ## Q185067: &quot;Fatal Exception 0D at 0327:00004DE4&quot; on HP Vectra VL5
 
+{% raw %}
+
 	Article: Q185067
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -110,3 +112,5 @@ permalink: /kb/185/Q185067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/255/Q255495/
 
 ## Q255495: Terminal Server Settings Not Recognized From Trusted Domain
 
+{% raw %}
+
 	Article: Q255495
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -86,3 +88,5 @@ permalink: /kb/255/Q255495/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134601/
 
 ## Q134601: DEC 24x4x Chip Set on Network Adapter Not Detected Correctly
 
+{% raw %}
+
 	Article: Q134601
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/134/Q134601/
 	
 	=============================================================================
 	
+
+{% endraw %}

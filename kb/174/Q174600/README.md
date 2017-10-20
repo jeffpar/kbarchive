@@ -6,6 +6,8 @@ permalink: /kb/174/Q174600/
 
 ## Q174600: XCON: MTA Stops Unexpectedly or Stops Transferring Messages
 
+{% raw %}
+
 	Article: Q174600
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.0 SP1,5.0 SP2
@@ -101,3 +103,5 @@ permalink: /kb/174/Q174600/
 	
 	=============================================================================
 	
+
+{% endraw %}

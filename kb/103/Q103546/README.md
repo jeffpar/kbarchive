@@ -6,6 +6,8 @@ permalink: /kb/103/Q103546/
 
 ## Q103546: Interactive Boot Displays AUTOEXEC.BAT Messages Twice
 
+{% raw %}
+
 	Article: Q103546
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.2,6.22
@@ -45,3 +47,5 @@ permalink: /kb/103/Q103546/
 	
 	=============================================================================
 	
+
+{% endraw %}

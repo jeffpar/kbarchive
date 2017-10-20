@@ -6,6 +6,8 @@ permalink: /kb/196/Q196912/
 
 ## Q196912: WD97: Syntax Error in Formula Field That Uses Comma Separator
 
+{% raw %}
+
 	Article: Q196912
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/196/Q196912/
 	
 	=============================================================================
 	
+
+{% endraw %}

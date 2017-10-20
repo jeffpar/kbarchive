@@ -6,6 +6,8 @@ permalink: /kb/195/Q195659/
 
 ## Q195659: WD97: How to Use Conditional Field to Specify Number of Digits
 
+{% raw %}
+
 	Article: Q195659
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -45,8 +47,8 @@ permalink: /kb/195/Q195659/
 	
 	  {if { MERGEFIELD number } > "9" { if { MERGEFIELD number } > "99" { if 
 	  {MERGEFIELD number } > "999" { if { MERGEFIELD number } > "9999" { 
-	  MERGEFIELD number } { MERGEFIELD number \# 0#### } }{ MERGEFIELD number \# 
-	  00### } }{ MERGEFIELD number \# 000## } }{MERGEFIELD number \# 0000# } }
+	  MERGEFIELD number } { MERGEFIELD number \# 0#### }}{ MERGEFIELD number \# 
+	  00### }}{ MERGEFIELD number \# 000## }}{MERGEFIELD number \# 0000# }}
 	
 	Additional query words: nested conditional 8.0 8.00
 	
@@ -58,3 +60,5 @@ permalink: /kb/195/Q195659/
 	
 	=============================================================================
 	
+
+{% endraw %}

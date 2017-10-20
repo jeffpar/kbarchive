@@ -6,6 +6,8 @@ permalink: /kb/171/Q171971/
 
 ## Q171971: Mac Bookshelf 98: 360 Degree Views May Turn White After Panning
 
+{% raw %}
+
 	Article: Q171971
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -51,3 +53,5 @@ permalink: /kb/171/Q171971/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172456/
 
 ## Q172456: How to Automatically Replace Files In Use by Windows 95
 
+{% raw %}
+
 	Article: Q172456
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -105,3 +107,5 @@ permalink: /kb/172/Q172456/
 	
 	=============================================================================
 	
+
+{% endraw %}

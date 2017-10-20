@@ -6,6 +6,8 @@ permalink: /kb/162/Q162461/
 
 ## Q162461: WinNT Err Msg: The Streams Environment is Currently in Use. . .
 
+{% raw %}
+
 	Article: Q162461
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/162/Q162461/
 	
 	=============================================================================
 	
+
+{% endraw %}

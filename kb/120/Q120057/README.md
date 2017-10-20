@@ -6,6 +6,8 @@ permalink: /kb/120/Q120057/
 
 ## Q120057: Adding RINGIN and RINGOUT for Chat
 
+{% raw %}
+
 	Article: Q120057
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -69,3 +71,5 @@ permalink: /kb/120/Q120057/
 	
 	=============================================================================
 	
+
+{% endraw %}

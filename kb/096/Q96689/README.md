@@ -6,6 +6,8 @@ permalink: /kb/096/Q96689/
 
 ## Q96689: PC WRmt: ConnectTimeOut Value Purpose and Use
 
+{% raw %}
+
 	Article: Q96689
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -60,3 +62,5 @@ permalink: /kb/096/Q96689/
 	
 	=============================================================================
 	
+
+{% endraw %}

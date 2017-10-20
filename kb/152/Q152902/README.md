@@ -6,6 +6,8 @@ permalink: /kb/152/Q152902/
 
 ## Q152902: XADM: Continuous Attempts to Publish Free/Busy Information
 
+{% raw %}
+
 	Article: Q152902
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/152/Q152902/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147274/
 
 ## Q147274: XCLN: Message Attachment Prints to Default Printer
 
+{% raw %}
+
 	Article: Q147274
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -51,3 +53,5 @@ permalink: /kb/147/Q147274/
 	
 	=============================================================================
 	
+
+{% endraw %}

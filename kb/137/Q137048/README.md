@@ -6,6 +6,8 @@ permalink: /kb/137/Q137048/
 
 ## Q137048: Add/Remove Programs Tool Displays Incorrect Available Space
 
+{% raw %}
+
 	Article: Q137048
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/137/Q137048/
 	
 	=============================================================================
 	
+
+{% endraw %}

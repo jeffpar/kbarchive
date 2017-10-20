@@ -6,6 +6,8 @@ permalink: /kb/136/Q136755/
 
 ## Q136755: HOWTO: Replacing the Visual FoxPro Desktop with an App's Form
 
+{% raw %}
+
 	Article: Q136755
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -184,3 +186,5 @@ permalink: /kb/136/Q136755/
 	
 	=============================================================================
 	
+
+{% endraw %}

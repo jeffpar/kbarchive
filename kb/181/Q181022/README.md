@@ -6,6 +6,8 @@ permalink: /kb/181/Q181022/
 
 ## Q181022: Err: Cannot Write to LPTx Printing to Parallel Port
 
+{% raw %}
+
 	Article: Q181022
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -119,3 +121,5 @@ permalink: /kb/181/Q181022/
 	
 	=============================================================================
 	
+
+{% endraw %}

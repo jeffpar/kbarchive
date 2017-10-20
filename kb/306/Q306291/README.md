@@ -6,6 +6,8 @@ permalink: /kb/306/Q306291/
 
 ## Q306291: MCSE Readiness Review Exam 70-217: Microsoft Windows 2000 Direct
 
+{% raw %}
+
 	Article: Q306291
 	Product(s): Microsoft Press
 	Version(s): 
@@ -181,3 +183,5 @@ permalink: /kb/306/Q306291/
 	
 	=============================================================================
 	
+
+{% endraw %}

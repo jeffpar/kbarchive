@@ -6,6 +6,8 @@ permalink: /kb/250/Q250600/
 
 ## Q250600: WD97: Err Msg: &quot;Compile Error in Hidden Module ModMain&quot;
 
+{% raw %}
+
 	Article: Q250600
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/250/Q250600/
 	
 	=============================================================================
 	
+
+{% endraw %}

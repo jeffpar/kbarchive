@@ -6,6 +6,8 @@ permalink: /kb/031/Q31505/
 
 ## Q31505: &quot;Error During Run-Time Initialization&quot;: Mixing /FPa and /FPi
 
+{% raw %}
+
 	Article: Q31505
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -39,3 +41,5 @@ permalink: /kb/031/Q31505/
 	PDS 7.00 and 7.10 do not support the alternate math package. In other
 	words, object modules compiled with the /FPa switch cannot be placed
 	into a Quick library (.QLB file) for use in QB.EXE or QBX.EXE.
+
+{% endraw %}

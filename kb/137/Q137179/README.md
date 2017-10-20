@@ -6,6 +6,8 @@ permalink: /kb/137/Q137179/
 
 ## Q137179: PRB: List from Array May Display Incorrect Number Of Elements
 
+{% raw %}
+
 	Article: Q137179
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -111,3 +113,5 @@ permalink: /kb/137/Q137179/
 	
 	=============================================================================
 	
+
+{% endraw %}

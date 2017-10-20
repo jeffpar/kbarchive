@@ -6,6 +6,8 @@ permalink: /kb/138/Q138296/
 
 ## Q138296: HOWTO: Use UNC Paths in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q138296
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/138/Q138296/
 	
 	=============================================================================
 	
+
+{% endraw %}

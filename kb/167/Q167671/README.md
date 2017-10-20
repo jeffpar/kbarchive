@@ -6,6 +6,8 @@ permalink: /kb/167/Q167671/
 
 ## Q167671: WD97: Can't Check Spelling in Text Box Located in Header/Footer
 
+{% raw %}
+
 	Article: Q167671
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/167/Q167671/
 	
 	=============================================================================
 	
+
+{% endraw %}

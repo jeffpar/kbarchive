@@ -6,6 +6,8 @@ permalink: /kb/148/Q148286/
 
 ## Q148286: XCON: How To Install and Configure the Dynamic RAS Connector
 
+{% raw %}
+
 	Article: Q148286
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/148/Q148286/
 	
 	=============================================================================
 	
+
+{% endraw %}

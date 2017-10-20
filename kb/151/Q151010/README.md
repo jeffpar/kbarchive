@@ -6,6 +6,8 @@ permalink: /kb/151/Q151010/
 
 ## Q151010: IIS IDC: Err Msg: Error Performing Query
 
+{% raw %}
+
 	Article: Q151010
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -60,3 +62,5 @@ permalink: /kb/151/Q151010/
 	
 	=============================================================================
 	
+
+{% endraw %}

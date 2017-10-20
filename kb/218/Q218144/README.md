@@ -6,6 +6,8 @@ permalink: /kb/218/Q218144/
 
 ## Q218144: Cannot Apply Licenses or Windows NT Upgrade
 
+{% raw %}
+
 	Article: Q218144
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -59,3 +61,5 @@ permalink: /kb/218/Q218144/
 	
 	=============================================================================
 	
+
+{% endraw %}

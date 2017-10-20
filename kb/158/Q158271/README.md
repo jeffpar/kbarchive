@@ -6,6 +6,8 @@ permalink: /kb/158/Q158271/
 
 ## Q158271: SNA Windows 95 Client Not Support Windows NT Password Change
 
+{% raw %}
+
 	Article: Q158271
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -96,3 +98,5 @@ permalink: /kb/158/Q158271/
 	
 	=============================================================================
 	
+
+{% endraw %}

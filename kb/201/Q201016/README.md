@@ -6,6 +6,8 @@ permalink: /kb/201/Q201016/
 
 ## Q201016: SMS: All Senders Except Courier Sender Log to Sender.log
 
+{% raw %}
+
 	Article: Q201016
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -80,3 +82,5 @@ permalink: /kb/201/Q201016/
 	
 	=============================================================================
 	
+
+{% endraw %}

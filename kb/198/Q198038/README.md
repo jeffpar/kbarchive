@@ -6,6 +6,8 @@ permalink: /kb/198/Q198038/
 
 ## Q198038: INFO: Useful Tools for Package and Deployment Issues
 
+{% raw %}
+
 	Article: Q198038
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -431,3 +433,5 @@ permalink: /kb/198/Q198038/
 	
 	=============================================================================
 	
+
+{% endraw %}

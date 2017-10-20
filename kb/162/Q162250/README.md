@@ -6,6 +6,8 @@ permalink: /kb/162/Q162250/
 
 ## Q162250: Service Packs on Compaq MPS Systems May Cause System Hangs
 
+{% raw %}
+
 	Article: Q162250
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -167,3 +169,5 @@ permalink: /kb/162/Q162250/
 	
 	=============================================================================
 	
+
+{% endraw %}

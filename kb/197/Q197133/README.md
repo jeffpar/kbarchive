@@ -6,6 +6,8 @@ permalink: /kb/197/Q197133/
 
 ## Q197133: WD97: Page Number Start At Limited to a Number Range
 
+{% raw %}
+
 	Article: Q197133
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/197/Q197133/
 	
 	=============================================================================
 	
+
+{% endraw %}

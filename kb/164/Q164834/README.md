@@ -6,6 +6,8 @@ permalink: /kb/164/Q164834/
 
 ## Q164834: XADM: Empty Notification-Requests Bitstring Causes Error
 
+{% raw %}
+
 	Article: Q164834
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/164/Q164834/
 	
 	=============================================================================
 	
+
+{% endraw %}

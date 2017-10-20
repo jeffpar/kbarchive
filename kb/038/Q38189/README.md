@@ -6,6 +6,8 @@ permalink: /kb/038/Q38189/
 
 ## Q38189: SDK C Documentation Incorrect for memcpy
 
+{% raw %}
+
 	Article: Q38189
 	Product(s): See article
 	Version(s): 4.50   | 5.10
@@ -39,3 +41,5 @@ permalink: /kb/038/Q38189/
 	prompted the change in the memcpy function. The memmove was added to
 	handle overlapping regions while memcpy (the old handler of overlapped
 	regions) was implemented as the "fast" copy.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198325/
 
 ## Q198325: WD97: Bullets in Custom Bullet Style Change to Numbered
 
+{% raw %}
+
 	Article: Q198325
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -136,3 +138,5 @@ permalink: /kb/198/Q198325/
 	
 	=============================================================================
 	
+
+{% endraw %}

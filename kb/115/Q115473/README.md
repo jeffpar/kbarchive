@@ -6,6 +6,8 @@ permalink: /kb/115/Q115473/
 
 ## Q115473: File-Extension Differences Between dBASE and FoxPro
 
+{% raw %}
+
 	Article: Q115473
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6; WINDOWS:2.6,3.0
@@ -82,3 +84,5 @@ permalink: /kb/115/Q115473/
 	
 	=============================================================================
 	
+
+{% endraw %}

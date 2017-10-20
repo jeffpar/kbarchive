@@ -6,6 +6,8 @@ permalink: /kb/115/Q115731/
 
 ## Q115731: How to Read Memo Field Data from Delimited ASCII Files
 
+{% raw %}
+
 	Article: Q115731
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 2.60 | 2.00 2.5
@@ -173,3 +175,5 @@ permalink: /kb/115/Q115731/
 	
 	=============================================================================
 	
+
+{% endraw %}

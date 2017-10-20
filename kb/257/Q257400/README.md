@@ -6,6 +6,8 @@ permalink: /kb/257/Q257400/
 
 ## Q257400: FIX: VB6 SP3 Application Crashing in the IDE
 
+{% raw %}
+
 	Article: Q257400
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -52,3 +54,5 @@ permalink: /kb/257/Q257400/
 	
 	=============================================================================
 	
+
+{% endraw %}

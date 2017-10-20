@@ -6,6 +6,8 @@ permalink: /kb/261/Q261035/
 
 ## Q261035: MCM2: Textures Become Distorted After Text Is Displayed
 
+{% raw %}
+
 	Article: Q261035
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -64,3 +66,5 @@ permalink: /kb/261/Q261035/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155657/
 
 ## Q155657: Incoming Internet Mail Not Formatted Correctly
 
+{% raw %}
+
 	Article: Q155657
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/155/Q155657/
 	
 	=============================================================================
 	
+
+{% endraw %}

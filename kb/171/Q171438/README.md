@@ -6,6 +6,8 @@ permalink: /kb/171/Q171438/
 
 ## Q171438: PRB: Passing Arrays by Reference to OLE Objects Not Supported
 
+{% raw %}
+
 	Article: Q171438
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -103,3 +105,5 @@ permalink: /kb/171/Q171438/
 	
 	=============================================================================
 	
+
+{% endraw %}

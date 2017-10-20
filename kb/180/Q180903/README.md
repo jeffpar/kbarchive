@@ -6,6 +6,8 @@ permalink: /kb/180/Q180903/
 
 ## Q180903: PRB: LCK Functions Do Not Work in a Private Data Session
 
+{% raw %}
+
 	Article: Q180903
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -94,3 +96,5 @@ permalink: /kb/180/Q180903/
 	
 	=============================================================================
 	
+
+{% endraw %}

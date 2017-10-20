@@ -6,6 +6,8 @@ permalink: /kb/146/Q146469/
 
 ## Q146469: Printing Empty Schedule Pages Causes Separator Page to Print
 
+{% raw %}
+
 	Article: Q146469
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -43,3 +45,5 @@ permalink: /kb/146/Q146469/
 	
 	=============================================================================
 	
+
+{% endraw %}

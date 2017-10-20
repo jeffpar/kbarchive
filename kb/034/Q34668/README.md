@@ -6,6 +6,8 @@ permalink: /kb/034/Q34668/
 
 ## Q34668: Initialization of auto Arrays, Structs, Unions Not Allowed
 
+{% raw %}
+
 	Article: Q34668
 	Product(s): See article
 	Version(s): 4.00 5.00 | 5.10
@@ -51,3 +53,5 @@ permalink: /kb/034/Q34668/
 	
 	The first workaround will give a savings of both time and space over
 	both the second workaround and over initializing an auto aggregate.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155752/
 
 ## Q155752: Video Problems with #9 FX Vision 330 PCI Video Card on PowerPC
 
+{% raw %}
+
 	Article: Q155752
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/155/Q155752/
 	
 	=============================================================================
 	
+
+{% endraw %}

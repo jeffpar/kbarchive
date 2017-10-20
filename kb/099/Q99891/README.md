@@ -6,6 +6,8 @@ permalink: /kb/099/Q99891/
 
 ## Q99891: How to Obtain TCP/IP-32 3.11b for Windows for Workgroups
 
+{% raw %}
+
 	Article: Q99891
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/099/Q99891/
 	
 	=============================================================================
 	
+
+{% endraw %}

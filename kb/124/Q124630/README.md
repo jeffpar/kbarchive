@@ -6,6 +6,8 @@ permalink: /kb/124/Q124630/
 
 ## Q124630: After Dark Err Msg: &quot;An Error Has Occurred in Your Program...&quot;
 
+{% raw %}
+
 	Article: Q124630
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/124/Q124630/
 	
 	=============================================================================
 	
+
+{% endraw %}

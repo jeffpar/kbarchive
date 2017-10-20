@@ -6,6 +6,8 @@ permalink: /kb/082/Q82813/
 
 ## Q82813: OLE: How Windows 3.1 Searches for Server Applications
 
+{% raw %}
+
 	Article: Q82813
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -101,3 +103,5 @@ permalink: /kb/082/Q82813/
 	
 	=============================================================================
 	
+
+{% endraw %}

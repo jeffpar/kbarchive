@@ -6,6 +6,8 @@ permalink: /kb/062/Q62456/
 
 ## Q62456: Incorrect Results When Compiling with Near Strings
 
+{% raw %}
+
 	Article: Q62456
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -97,3 +99,5 @@ permalink: /kb/062/Q62456/
 	      PRINT LEN(b$) \ 2      'and perform the rest of the
 	                             'calculations on b$
 	      END
+
+{% endraw %}

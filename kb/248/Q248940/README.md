@@ -6,6 +6,8 @@ permalink: /kb/248/Q248940/
 
 ## Q248940: Error on the Microsoft Year 2000 Resource CD-ROM Cover
 
+{% raw %}
+
 	Article: Q248940
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11,3.1x; winnt:3.51
@@ -135,3 +137,5 @@ permalink: /kb/248/Q248940/
 	
 	=============================================================================
 	
+
+{% endraw %}

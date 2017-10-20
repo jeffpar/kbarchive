@@ -6,6 +6,8 @@ permalink: /kb/157/Q157853/
 
 ## Q157853: FIX: Upsizing Wizard Generated SQL Code Causes Errors
 
+{% raw %}
+
 	Article: Q157853
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -82,3 +84,5 @@ permalink: /kb/157/Q157853/
 	
 	=============================================================================
 	
+
+{% endraw %}

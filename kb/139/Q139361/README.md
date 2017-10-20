@@ -6,6 +6,8 @@ permalink: /kb/139/Q139361/
 
 ## Q139361: INFO: Readme.wri: Section 3, Issues and Considerations
 
+{% raw %}
+
 	Article: Q139361
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -213,3 +215,5 @@ permalink: /kb/139/Q139361/
 	
 	=============================================================================
 	
+
+{% endraw %}

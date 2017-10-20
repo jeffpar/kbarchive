@@ -6,6 +6,8 @@ permalink: /kb/121/Q121383/
 
 ## Q121383: Shared Packages Not Distributed to NetWare Volumes
 
+{% raw %}
+
 	Article: Q121383
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -57,3 +59,5 @@ permalink: /kb/121/Q121383/
 	
 	=============================================================================
 	
+
+{% endraw %}

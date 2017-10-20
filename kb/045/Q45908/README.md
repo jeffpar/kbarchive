@@ -6,6 +6,8 @@ permalink: /kb/045/Q45908/
 
 ## Q45908: QuickBASIC Cannot RUN or CHAIN to Batch Files; Use SHELL
 
+{% raw %}
+
 	Article: Q45908
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -53,3 +55,5 @@ permalink: /kb/045/Q45908/
 	
 	For more information, consult the BASIC language reference manual
 	included with your BASIC package.
+
+{% endraw %}

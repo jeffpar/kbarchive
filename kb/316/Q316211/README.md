@@ -6,6 +6,8 @@ permalink: /kb/316/Q316211/
 
 ## Q316211: IStorage::CopyTo() Calls Do Not Work with the Post-SP6a SRP
 
+{% raw %}
+
 	Article: Q316211
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -87,3 +89,5 @@ permalink: /kb/316/Q316211/
 	
 	=============================================================================
 	
+
+{% endraw %}

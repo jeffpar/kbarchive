@@ -6,6 +6,8 @@ permalink: /kb/133/Q133003/
 
 ## Q133003: BUG: SQL SELECT Brings Up Dialog Twice Erroneously
 
+{% raw %}
+
 	Article: Q133003
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a; MS-DOS:2.6a; WINDOWS:2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/133/Q133003/
 	
 	=============================================================================
 	
+
+{% endraw %}

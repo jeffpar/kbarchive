@@ -6,6 +6,8 @@ permalink: /kb/042/Q42213/
 
 ## Q42213: Error in Adding Longs Returned by Reference
 
+{% raw %}
+
 	Article: Q42213
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -100,3 +102,5 @@ permalink: /kb/042/Q42213/
 	   mov     es, [bp-24]
 	   add     ax, es:[bp-22]
 	   adc     dx, es:[bp-20]
+
+{% endraw %}

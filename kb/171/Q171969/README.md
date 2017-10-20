@@ -6,6 +6,8 @@ permalink: /kb/171/Q171969/
 
 ## Q171969: Mac Bookshelf 98: Line Art Drawings May Not Print
 
+{% raw %}
+
 	Article: Q171969
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -76,3 +78,5 @@ permalink: /kb/171/Q171969/
 	
 	=============================================================================
 	
+
+{% endraw %}

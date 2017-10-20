@@ -6,6 +6,8 @@ permalink: /kb/130/Q130839/
 
 ## Q130839: NTFS Performance Problem with Many Files
 
+{% raw %}
+
 	Article: Q130839
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130839/
 	
 	=============================================================================
 	
+
+{% endraw %}

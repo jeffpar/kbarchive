@@ -6,6 +6,8 @@ permalink: /kb/165/Q165950/
 
 ## Q165950: Unable to Change Font Cartridge Selection
 
+{% raw %}
+
 	Article: Q165950
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165950/
 	
 	=============================================================================
 	
+
+{% endraw %}

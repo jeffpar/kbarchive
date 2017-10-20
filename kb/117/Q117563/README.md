@@ -6,6 +6,8 @@ permalink: /kb/117/Q117563/
 
 ## Q117563: HOWTO: How to Trap WM_KEYDOWN Messages in a CDialog
 
+{% raw %}
+
 	Article: Q117563
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0
@@ -160,3 +162,5 @@ permalink: /kb/117/Q117563/
 	
 	=============================================================================
 	
+
+{% endraw %}

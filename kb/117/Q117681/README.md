@@ -6,6 +6,8 @@ permalink: /kb/117/Q117681/
 
 ## Q117681: Profiling Windows NT Services
 
+{% raw %}
+
 	Article: Q117681
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.1
@@ -88,3 +90,5 @@ permalink: /kb/117/Q117681/
 	
 	=============================================================================
 	
+
+{% endraw %}

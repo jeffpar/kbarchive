@@ -6,6 +6,8 @@ permalink: /kb/158/Q158414/
 
 ## Q158414: &quot;&quot;Program Files&#92;Personal Web Server&quot;&quot; Folder Not Removed
 
+{% raw %}
+
 	Article: Q158414
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0,1.0a,95
@@ -87,3 +89,5 @@ permalink: /kb/158/Q158414/
 	
 	=============================================================================
 	
+
+{% endraw %}

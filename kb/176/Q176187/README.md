@@ -6,6 +6,8 @@ permalink: /kb/176/Q176187/
 
 ## Q176187: XCLN: BCC Recipients Not Shown in Sent Items Folder
 
+{% raw %}
+
 	Article: Q176187
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -82,3 +84,5 @@ permalink: /kb/176/Q176187/
 	
 	=============================================================================
 	
+
+{% endraw %}

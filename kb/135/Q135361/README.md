@@ -6,6 +6,8 @@ permalink: /kb/135/Q135361/
 
 ## Q135361: BUG: SEEK Command Fails If Collate Is Set to &quot;Machine&quot;
 
+{% raw %}
+
 	Article: Q135361
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -110,3 +112,5 @@ permalink: /kb/135/Q135361/
 	
 	=============================================================================
 	
+
+{% endraw %}

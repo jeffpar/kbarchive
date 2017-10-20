@@ -6,6 +6,8 @@ permalink: /kb/263/Q263436/
 
 ## Q263436: Offer Summarizer Needs a Large Amount of Time to Replicate
 
+{% raw %}
+
 	Article: Q263436
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -52,3 +54,5 @@ permalink: /kb/263/Q263436/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183900/
 
 ## Q183900: WD97: Err Msg: &quot;Word Cannot Edit the Microsoft Drawing&quot;
 
+{% raw %}
+
 	Article: Q183900
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/183/Q183900/
 	
 	=============================================================================
 	
+
+{% endraw %}

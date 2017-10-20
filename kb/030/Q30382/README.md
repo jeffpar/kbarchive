@@ -6,6 +6,8 @@ permalink: /kb/030/Q30382/
 
 ## Q30382: FIX: Command Line Option /Z Is Ignored after Processing
 
+{% raw %}
+
 	Article: Q30382
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -51,3 +53,5 @@ permalink: /kb/030/Q30382/
 	
 	=============================================================================
 	
+
+{% endraw %}

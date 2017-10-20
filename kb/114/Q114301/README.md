@@ -6,6 +6,8 @@ permalink: /kb/114/Q114301/
 
 ## Q114301: Common Questions and Answers for Windows 3.11
 
+{% raw %}
+
 	Article: Q114301
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -189,3 +191,5 @@ permalink: /kb/114/Q114301/
 	
 	=============================================================================
 	
+
+{% endraw %}

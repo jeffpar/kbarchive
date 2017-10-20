@@ -6,6 +6,8 @@ permalink: /kb/093/Q93328/
 
 ## Q93328: FoxPro Commands That Create Backup (.BAK &amp; .TBK) Files
 
+{% raw %}
+
 	Article: Q93328
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -56,3 +58,5 @@ permalink: /kb/093/Q93328/
 	
 	=============================================================================
 	
+
+{% endraw %}

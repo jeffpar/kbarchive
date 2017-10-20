@@ -6,6 +6,8 @@ permalink: /kb/248/Q248664/
 
 ## Q248664: XFOR: Cannot Reply All to SMTP Reply Received from Notes R5 User
 
+{% raw %}
+
 	Article: Q248664
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -98,3 +100,5 @@ permalink: /kb/248/Q248664/
 	
 	=============================================================================
 	
+
+{% endraw %}

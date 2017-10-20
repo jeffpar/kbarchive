@@ -6,6 +6,8 @@ permalink: /kb/220/Q220976/
 
 ## Q220976: XCON: Improve Network Performance in Poor Network Conditions
 
+{% raw %}
+
 	Article: Q220976
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -100,3 +102,5 @@ permalink: /kb/220/Q220976/
 	
 	=============================================================================
 	
+
+{% endraw %}

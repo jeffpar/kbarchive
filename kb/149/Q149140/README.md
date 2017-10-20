@@ -6,6 +6,8 @@ permalink: /kb/149/Q149140/
 
 ## Q149140: BUG: Access Violation Writing Namelist With Equivalence Member
 
+{% raw %}
+
 	Article: Q149140
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/149/Q149140/
 	
 	=============================================================================
 	
+
+{% endraw %}

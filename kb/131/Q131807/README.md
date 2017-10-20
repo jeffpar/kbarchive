@@ -6,6 +6,8 @@ permalink: /kb/131/Q131807/
 
 ## Q131807: COM2 Not Started with EtherExpress 16 and Plug and Play BIOS
 
+{% raw %}
+
 	Article: Q131807
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -74,3 +76,5 @@ permalink: /kb/131/Q131807/
 	
 	=============================================================================
 	
+
+{% endraw %}

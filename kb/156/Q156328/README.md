@@ -6,6 +6,8 @@ permalink: /kb/156/Q156328/
 
 ## Q156328: Description of Windows NT Emergency Repair Disk
 
+{% raw %}
+
 	Article: Q156328
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/156/Q156328/
 	
 	=============================================================================
 	
+
+{% endraw %}

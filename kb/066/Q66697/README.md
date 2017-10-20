@@ -6,6 +6,8 @@ permalink: /kb/066/Q66697/
 
 ## Q66697: Compiler Incorrectly Generates 80186+ Code
 
+{% raw %}
+
 	Article: Q66697
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -39,3 +41,5 @@ permalink: /kb/066/Q66697/
 	   bar(dPtr1, dPtr2, dPtr3, dPtr4, i4, i1, &ldPtrPtr[i4][i1],
 	       RESET, RESET, i6);
 	}
+
+{% endraw %}

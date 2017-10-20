@@ -6,6 +6,8 @@ permalink: /kb/171/Q171497/
 
 ## Q171497: FIX: ListView in PictureBox on Tabbed Dialog Disappears
 
+{% raw %}
+
 	Article: Q171497
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -90,3 +92,5 @@ permalink: /kb/171/Q171497/
 	
 	=============================================================================
 	
+
+{% endraw %}

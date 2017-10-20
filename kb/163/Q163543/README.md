@@ -6,6 +6,8 @@ permalink: /kb/163/Q163543/
 
 ## Q163543: XCLN: Getting Started Guide Graphics Display Fuzzy on Macintosh
 
+{% raw %}
+
 	Article: Q163543
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/163/Q163543/
 	
 	=============================================================================
 	
+
+{% endraw %}

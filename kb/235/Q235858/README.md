@@ -6,6 +6,8 @@ permalink: /kb/235/Q235858/
 
 ## Q235858: A CPI-C Application May Hang When Internal Tracing Is Enabled
 
+{% raw %}
+
 	Article: Q235858
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,3.0SP4,4.0,4.0SP1,4.0SP2
@@ -62,3 +64,5 @@ permalink: /kb/235/Q235858/
 	
 	=============================================================================
 	
+
+{% endraw %}

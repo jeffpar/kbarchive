@@ -6,6 +6,8 @@ permalink: /kb/104/Q104002/
 
 ## Q104002: 256-Color Bitmap May Cause Slow Redraw
 
+{% raw %}
+
 	Article: Q104002
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/104/Q104002/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132593/
 
 ## Q132593: NET VIEW Err Msg: Error 234: Additional Data Is Available
 
+{% raw %}
+
 	Article: Q132593
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/132/Q132593/
 	
 	=============================================================================
 	
+
+{% endraw %}

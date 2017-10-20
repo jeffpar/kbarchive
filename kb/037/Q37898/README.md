@@ -6,6 +6,8 @@ permalink: /kb/037/Q37898/
 
 ## Q37898: Bibliography Reference for QuickBASIC: Graphics, Tutorials
 
+{% raw %}
+
 	Article: Q37898
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -270,3 +272,5 @@ permalink: /kb/037/Q37898/
 	   126 Wellington Ave.
 	   Warwick, RI  02886
 	   (401) 274-5492
+
+{% endraw %}

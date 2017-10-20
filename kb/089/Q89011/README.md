@@ -6,6 +6,8 @@ permalink: /kb/089/Q89011/
 
 ## Q89011: PageMaker Err Msg: Waiting for the Spooler to...
 
+{% raw %}
+
 	Article: Q89011
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/089/Q89011/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105251/
 
 ## Q105251: DBLSPACE /DELETE Prompt Does Not Show Y/N Prompt
 
+{% raw %}
+
 	Article: Q105251
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21
@@ -48,3 +50,5 @@ permalink: /kb/105/Q105251/
 	
 	=============================================================================
 	
+
+{% endraw %}

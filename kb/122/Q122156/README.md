@@ -6,6 +6,8 @@ permalink: /kb/122/Q122156/
 
 ## Q122156: How to Save (or Not Save) TrueType Fonts with Your Publication
 
+{% raw %}
+
 	Article: Q122156
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -123,3 +125,5 @@ permalink: /kb/122/Q122156/
 	
 	=============================================================================
 	
+
+{% endraw %}

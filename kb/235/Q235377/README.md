@@ -6,6 +6,8 @@ permalink: /kb/235/Q235377/
 
 ## Q235377: SMS: APM Cannot Run a Command Line That Contains a Space
 
+{% raw %}
+
 	Article: Q235377
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/235/Q235377/
 	
 	=============================================================================
 	
+
+{% endraw %}

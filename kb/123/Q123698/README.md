@@ -6,6 +6,8 @@ permalink: /kb/123/Q123698/
 
 ## Q123698: WD97: Err Msg: &quot;Word Could Not Re-Establish a DDE Connection...&quot;
 
+{% raw %}
+
 	Article: Q123698
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -117,3 +119,5 @@ permalink: /kb/123/Q123698/
 	
 	=============================================================================
 	
+
+{% endraw %}

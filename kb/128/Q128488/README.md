@@ -6,6 +6,8 @@ permalink: /kb/128/Q128488/
 
 ## Q128488: Error C0000035: The LsaCreateSecret Call Failed
 
+{% raw %}
+
 	Article: Q128488
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -120,3 +122,5 @@ permalink: /kb/128/Q128488/
 	
 	=============================================================================
 	
+
+{% endraw %}

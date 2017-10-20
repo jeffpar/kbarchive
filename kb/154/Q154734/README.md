@@ -6,6 +6,8 @@ permalink: /kb/154/Q154734/
 
 ## Q154734: Quantum DLT 2000 and 4000 Tape Device Support
 
+{% raw %}
+
 	Article: Q154734
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -74,3 +76,5 @@ permalink: /kb/154/Q154734/
 	
 	=============================================================================
 	
+
+{% endraw %}

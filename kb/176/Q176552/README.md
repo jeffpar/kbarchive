@@ -6,6 +6,8 @@ permalink: /kb/176/Q176552/
 
 ## Q176552: HOWTO: Set Initial Default Size of ActiveX (ATL) Control
 
+{% raw %}
+
 	Article: Q176552
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0,5.0,6.0
@@ -56,3 +58,5 @@ permalink: /kb/176/Q176552/
 	
 	=============================================================================
 	
+
+{% endraw %}

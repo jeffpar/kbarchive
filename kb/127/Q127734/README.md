@@ -6,6 +6,8 @@ permalink: /kb/127/Q127734/
 
 ## Q127734: HOWTO: Ensure ODBC.DLL and ODBCCURS.DLL Cursor Levels Match
 
+{% raw %}
+
 	Article: Q127734
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1,2.2,2.5,2.6,4.1,4.2,5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/127/Q127734/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199238/
 
 ## Q199238: SMS: Objects Converted During SMS 1.2 Upgrade to SMS 2.0
 
+{% raw %}
+
 	Article: Q199238
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -101,3 +103,5 @@ permalink: /kb/199/Q199238/
 	
 	=============================================================================
 	
+
+{% endraw %}

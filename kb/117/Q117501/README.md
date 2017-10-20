@@ -6,6 +6,8 @@ permalink: /kb/117/Q117501/
 
 ## Q117501: Replacing RAS in Network Setup After PTP Has Been Installed
 
+{% raw %}
+
 	Article: Q117501
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -95,3 +97,5 @@ permalink: /kb/117/Q117501/
 	
 	=============================================================================
 	
+
+{% endraw %}

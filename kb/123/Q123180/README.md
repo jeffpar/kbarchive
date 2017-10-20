@@ -6,6 +6,8 @@ permalink: /kb/123/Q123180/
 
 ## Q123180: Large File Download Fails Over Eicon WAN Services
 
+{% raw %}
+
 	Article: Q123180
 	Product(s): Microsoft SNA Server
 	Version(s): winnt:
@@ -47,3 +49,5 @@ permalink: /kb/123/Q123180/
 	
 	=============================================================================
 	
+
+{% endraw %}

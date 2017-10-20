@@ -6,6 +6,8 @@ permalink: /kb/164/Q164546/
 
 ## Q164546: SCSI Driver Description Truncated in Control Panel
 
+{% raw %}
+
 	Article: Q164546
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/164/Q164546/
 	
 	=============================================================================
 	
+
+{% endraw %}

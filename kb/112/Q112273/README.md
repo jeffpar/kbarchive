@@ -6,6 +6,8 @@ permalink: /kb/112/Q112273/
 
 ## Q112273: Mac Adm: Incorrect Server Version Displayed in Server Report
 
+{% raw %}
+
 	Article: Q112273
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -62,3 +64,5 @@ permalink: /kb/112/Q112273/
 	
 	=============================================================================
 	
+
+{% endraw %}

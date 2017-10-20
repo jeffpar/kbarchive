@@ -6,6 +6,8 @@ permalink: /kb/186/Q186509/
 
 ## Q186509: Terminal Server Commands: CPROFILE
 
+{% raw %}
+
 	Article: Q186509
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -90,3 +92,5 @@ permalink: /kb/186/Q186509/
 	
 	=============================================================================
 	
+
+{% endraw %}

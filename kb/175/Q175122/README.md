@@ -6,6 +6,8 @@ permalink: /kb/175/Q175122/
 
 ## Q175122: XWEB: Error Msg: Failed to Get Inbox in Outlook Web Access
 
+{% raw %}
+
 	Article: Q175122
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -49,3 +51,5 @@ permalink: /kb/175/Q175122/
 	
 	=============================================================================
 	
+
+{% endraw %}

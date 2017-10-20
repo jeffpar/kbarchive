@@ -6,6 +6,8 @@ permalink: /kb/230/Q230307/
 
 ## Q230307: Slow Performance in TCP/IP When Reconnecting
 
+{% raw %}
+
 	Article: Q230307
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/230/Q230307/
 	
 	=============================================================================
 	
+
+{% endraw %}

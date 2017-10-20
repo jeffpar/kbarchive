@@ -6,6 +6,8 @@ permalink: /kb/240/Q240731/
 
 ## Q240731: CREATEPROCESS FAILED Error During Silent Install
 
+{% raw %}
+
 	Article: Q240731
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -84,3 +86,5 @@ permalink: /kb/240/Q240731/
 	
 	=============================================================================
 	
+
+{% endraw %}

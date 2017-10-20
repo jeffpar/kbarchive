@@ -6,6 +6,8 @@ permalink: /kb/242/Q242783/
 
 ## Q242783: DOC: MAXDWORD Has Incorrect Value in Visual Basic API Text Viewe
 
+{% raw %}
+
 	Article: Q242783
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -47,3 +49,5 @@ permalink: /kb/242/Q242783/
 	
 	=============================================================================
 	
+
+{% endraw %}

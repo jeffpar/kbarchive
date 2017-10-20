@@ -6,6 +6,8 @@ permalink: /kb/235/Q235418/
 
 ## Q235418: XADM: Cannot Apply Service Pack on KM Server
 
+{% raw %}
+
 	Article: Q235418
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/235/Q235418/
 	
 	=============================================================================
 	
+
+{% endraw %}

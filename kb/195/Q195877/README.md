@@ -6,6 +6,8 @@ permalink: /kb/195/Q195877/
 
 ## Q195877: Virtual Globe 99: Program Window Is Not Resized Correctly
 
+{% raw %}
+
 	Article: Q195877
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/195/Q195877/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278689/
 
 ## Q278689: XADM:  How to Manually Create a User.dmp File with Dr.Watson
 
+{% raw %}
+
 	Article: Q278689
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/278/Q278689/
 	
 	=============================================================================
 	
+
+{% endraw %}

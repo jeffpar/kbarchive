@@ -6,6 +6,8 @@ permalink: /kb/194/Q194429/
 
 ## Q194429: TCPIP Timewaitstate May Not Remain in 2&#42;msl
 
+{% raw %}
+
 	Article: Q194429
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/194/Q194429/
 	
 	=============================================================================
 	
+
+{% endraw %}

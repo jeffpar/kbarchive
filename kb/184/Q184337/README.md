@@ -6,6 +6,8 @@ permalink: /kb/184/Q184337/
 
 ## Q184337: WD97: Cell Text Deleted After Converting File to HTML
 
+{% raw %}
+
 	Article: Q184337
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/184/Q184337/
 	
 	=============================================================================
 	
+
+{% endraw %}

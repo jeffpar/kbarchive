@@ -6,6 +6,8 @@ permalink: /kb/313/Q313329/
 
 ## Q313329: Lsass Access Violation When You Audit Account Log Off Events
 
+{% raw %}
+
 	Article: Q313329
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/313/Q313329/
 	
 	=============================================================================
 	
+
+{% endraw %}

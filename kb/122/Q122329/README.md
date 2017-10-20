@@ -6,6 +6,8 @@ permalink: /kb/122/Q122329/
 
 ## Q122329: Err Msg: System Error 59 Has Occurred, an Unexpected...
 
+{% raw %}
+
 	Article: Q122329
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -73,3 +75,5 @@ permalink: /kb/122/Q122329/
 	
 	=============================================================================
 	
+
+{% endraw %}

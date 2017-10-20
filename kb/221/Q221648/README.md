@@ -6,6 +6,8 @@ permalink: /kb/221/Q221648/
 
 ## Q221648: FIX: RI Code Not Selecting Right Work Area After Cascaded Delete
 
+{% raw %}
+
 	Article: Q221648
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -132,3 +134,5 @@ permalink: /kb/221/Q221648/
 	
 	=============================================================================
 	
+
+{% endraw %}

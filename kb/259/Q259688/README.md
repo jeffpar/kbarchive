@@ -6,6 +6,8 @@ permalink: /kb/259/Q259688/
 
 ## Q259688: XADM: How to Use Exmerge to Extract Data from a Database
 
+{% raw %}
+
 	Article: Q259688
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -133,3 +135,5 @@ permalink: /kb/259/Q259688/
 	
 	=============================================================================
 	
+
+{% endraw %}

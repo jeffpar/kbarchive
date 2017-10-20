@@ -6,6 +6,8 @@ permalink: /kb/133/Q133257/
 
 ## Q133257: FIX: Invalid String Displayed by CToolTipCtrl
 
+{% raw %}
+
 	Article: Q133257
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2
@@ -121,9 +123,9 @@ permalink: /kb/133/Q133257/
 	
 	     // Generated message map functions
 	  protected:
-	     //{ {AFX_MSG(CFixToolTipCtrl)
+	     //{{AFX_MSG(CFixToolTipCtrl)
 	  // NOTE - the ClassWizard will add and remove member functions here.
-	     //} }AFX_MSG
+	     //}}AFX_MSG
 	        afx_msg LRESULT OnAddTool(WPARAM wParam, LPARAM lParam);
 	     DECLARE_MESSAGE_MAP()
 	  };
@@ -138,9 +140,9 @@ permalink: /kb/133/Q133257/
 	  #include "ttfix.h"
 	
 	  BEGIN_MESSAGE_MAP(CFixToolTipCtrl, CToolTipCtrl)
-	     //{ {AFX_MSG_MAP(CFixToolTipCtrl)
+	     //{{AFX_MSG_MAP(CFixToolTipCtrl)
 	    // NOTE - the ClassWizard will add and remove mapping macros here.
-	     //} }AFX_MSG_MAP
+	     //}}AFX_MSG_MAP
 	       ON_MESSAGE(TTM_ADDTOOL, OnAddTool)
 	  END_MESSAGE_MAP()
 	
@@ -176,3 +178,5 @@ permalink: /kb/133/Q133257/
 	
 	=============================================================================
 	
+
+{% endraw %}

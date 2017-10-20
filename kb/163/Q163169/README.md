@@ -6,6 +6,8 @@ permalink: /kb/163/Q163169/
 
 ## Q163169: Windows NT Does Not Recognize Second PCMCIA Network Adapter
 
+{% raw %}
+
 	Article: Q163169
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -73,3 +75,5 @@ permalink: /kb/163/Q163169/
 	
 	=============================================================================
 	
+
+{% endraw %}

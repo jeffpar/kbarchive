@@ -6,6 +6,8 @@ permalink: /kb/120/Q120242/
 
 ## Q120242: How to Have Individual CONFIG.FPM Files on Workstations
 
+{% raw %}
+
 	Article: Q120242
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -64,3 +66,5 @@ permalink: /kb/120/Q120242/
 	
 	=============================================================================
 	
+
+{% endraw %}

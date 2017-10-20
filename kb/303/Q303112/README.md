@@ -6,6 +6,8 @@ permalink: /kb/303/Q303112/
 
 ## Q303112: Pandora's Box: Run-Time Error When You Attempt to Start Game
 
+{% raw %}
+
 	Article: Q303112
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/303/Q303112/
 	
 	=============================================================================
 	
+
+{% endraw %}

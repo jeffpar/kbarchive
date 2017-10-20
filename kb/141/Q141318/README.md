@@ -6,6 +6,8 @@ permalink: /kb/141/Q141318/
 
 ## Q141318: PRB: &quot;Error #101 in addgraphdata(0)&quot; in Query Designer
 
+{% raw %}
+
 	Article: Q141318
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a
@@ -69,3 +71,5 @@ permalink: /kb/141/Q141318/
 	
 	=============================================================================
 	
+
+{% endraw %}

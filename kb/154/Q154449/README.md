@@ -6,6 +6,8 @@ permalink: /kb/154/Q154449/
 
 ## Q154449: BUG: Error #202 In Makestf when Running VFP/Mac Setup Wizard
 
+{% raw %}
+
 	Article: Q154449
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -62,3 +64,5 @@ permalink: /kb/154/Q154449/
 	
 	=============================================================================
 	
+
+{% endraw %}

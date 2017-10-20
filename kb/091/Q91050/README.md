@@ -6,6 +6,8 @@ permalink: /kb/091/Q91050/
 
 ## Q91050: Network Setup Prompts for Disk; Doesn't Work if Mouse Present
 
+{% raw %}
+
 	Article: Q91050
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/091/Q91050/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174896/
 
 ## Q174896: XCLN: Err Msg: There Are Too Many Items In This Folder
 
+{% raw %}
+
 	Article: Q174896
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:4.0,5.0
@@ -42,3 +44,5 @@ permalink: /kb/174/Q174896/
 	
 	=============================================================================
 	
+
+{% endraw %}

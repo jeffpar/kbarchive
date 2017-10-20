@@ -6,6 +6,8 @@ permalink: /kb/178/Q178316/
 
 ## Q178316: SNA 4.0 Backup Server Logs Numerous 670 Events With 3.0 Primary
 
+{% raw %}
+
 	Article: Q178316
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -102,3 +104,5 @@ permalink: /kb/178/Q178316/
 	
 	=============================================================================
 	
+
+{% endraw %}

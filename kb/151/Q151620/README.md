@@ -6,6 +6,8 @@ permalink: /kb/151/Q151620/
 
 ## Q151620: Inventory Scan Intervals Off by One Day
 
+{% raw %}
+
 	Article: Q151620
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2
@@ -72,3 +74,5 @@ permalink: /kb/151/Q151620/
 	
 	=============================================================================
 	
+
+{% endraw %}

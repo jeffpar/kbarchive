@@ -6,6 +6,8 @@ permalink: /kb/085/Q85605/
 
 ## Q85605: FAX: How to Troubleshoot the Gateway
 
+{% raw %}
+
 	Article: Q85605
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -95,3 +97,5 @@ permalink: /kb/085/Q85605/
 	
 	=============================================================================
 	
+
+{% endraw %}

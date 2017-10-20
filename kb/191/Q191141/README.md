@@ -6,6 +6,8 @@ permalink: /kb/191/Q191141/
 
 ## Q191141: Internet Service Manager (HTML) Returns HTTP Error 403
 
+{% raw %}
+
 	Article: Q191141
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/191/Q191141/
 	
 	=============================================================================
 	
+
+{% endraw %}

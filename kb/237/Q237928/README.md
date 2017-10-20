@@ -6,6 +6,8 @@ permalink: /kb/237/Q237928/
 
 ## Q237928: XCLN: ErrMsg. w/Microsoft Mail Service: File Is Current in Use
 
+{% raw %}
+
 	Article: Q237928
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/237/Q237928/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/300/Q300227/
 
 ## Q300227: Microsoft Search Service May Not Delete Temporary Files
 
+{% raw %}
+
 	Article: Q300227
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -88,3 +90,5 @@ permalink: /kb/300/Q300227/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268850/
 
 ## Q268850: Motocross Madness 2: How to Improve Game Performance
 
+{% raw %}
+
 	Article: Q268850
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -195,3 +197,5 @@ permalink: /kb/268/Q268850/
 	
 	=============================================================================
 	
+
+{% endraw %}

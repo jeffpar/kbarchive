@@ -6,6 +6,8 @@ permalink: /kb/072/Q72796/
 
 ## Q72796: Common Ways of Detecting a Virus in MS-DOS
 
+{% raw %}
+
 	Article: Q72796
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -89,3 +91,5 @@ permalink: /kb/072/Q72796/
 	
 	=============================================================================
 	
+
+{% endraw %}

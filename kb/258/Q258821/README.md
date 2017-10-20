@@ -6,6 +6,8 @@ permalink: /kb/258/Q258821/
 
 ## Q258821: MapPoint 2001: Map Is Not Printed Properly
 
+{% raw %}
+
 	Article: Q258821
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/258/Q258821/
 	
 	=============================================================================
 	
+
+{% endraw %}

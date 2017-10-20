@@ -6,6 +6,8 @@ permalink: /kb/171/Q171525/
 
 ## Q171525: FIX: ListView Causes IPF When Accessing ColumnHeaders Property
 
+{% raw %}
+
 	Article: Q171525
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -73,3 +75,5 @@ permalink: /kb/171/Q171525/
 	
 	=============================================================================
 	
+
+{% endraw %}

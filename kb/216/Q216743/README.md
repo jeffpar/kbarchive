@@ -6,6 +6,8 @@ permalink: /kb/216/Q216743/
 
 ## Q216743: Unable to KILL Processes or Terminate Down Sessions
 
+{% raw %}
+
 	Article: Q216743
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/216/Q216743/
 	
 	=============================================================================
 	
+
+{% endraw %}

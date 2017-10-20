@@ -6,6 +6,8 @@ permalink: /kb/245/Q245041/
 
 ## Q245041: XFOR: Postmaster Incorrectly Receives SMTP Messages
 
+{% raw %}
+
 	Article: Q245041
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -56,3 +58,5 @@ permalink: /kb/245/Q245041/
 	
 	=============================================================================
 	
+
+{% endraw %}

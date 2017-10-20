@@ -6,6 +6,8 @@ permalink: /kb/168/Q168752/
 
 ## Q168752: SNA Windows 95 3.0 SP1 3270 Applet Print Option Doesn't Print
 
+{% raw %}
+
 	Article: Q168752
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -68,3 +70,5 @@ permalink: /kb/168/Q168752/
 	
 	=============================================================================
 	
+
+{% endraw %}

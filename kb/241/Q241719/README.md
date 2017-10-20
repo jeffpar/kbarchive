@@ -6,6 +6,8 @@ permalink: /kb/241/Q241719/
 
 ## Q241719: Incorrect Analysis Information for Security Options in SCE
 
+{% raw %}
+
 	Article: Q241719
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -106,3 +108,5 @@ permalink: /kb/241/Q241719/
 	
 	=============================================================================
 	
+
+{% endraw %}

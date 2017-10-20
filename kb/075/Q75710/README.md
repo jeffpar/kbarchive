@@ -6,6 +6,8 @@ permalink: /kb/075/Q75710/
 
 ## Q75710: &quot;SYS2090&quot; Error with Novell Btrieve Utility
 
+{% raw %}
+
 	Article: Q75710
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.0,3.1,3.2,3.3,4.01,5.0
@@ -75,3 +77,5 @@ permalink: /kb/075/Q75710/
 	
 	=============================================================================
 	
+
+{% endraw %}

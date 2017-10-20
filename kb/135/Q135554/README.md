@@ -6,6 +6,8 @@ permalink: /kb/135/Q135554/
 
 ## Q135554: U.S Robotics Courier V.34 Fax/Modem Not Detected
 
+{% raw %}
+
 	Article: Q135554
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135554/
 	
 	=============================================================================
 	
+
+{% endraw %}

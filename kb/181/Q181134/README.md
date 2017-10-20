@@ -6,6 +6,8 @@ permalink: /kb/181/Q181134/
 
 ## Q181134: The Service Pack Uninstall Does Not Check for Active Processes
 
+{% raw %}
+
 	Article: Q181134
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1,3.0 SP2
@@ -56,3 +58,5 @@ permalink: /kb/181/Q181134/
 	
 	=============================================================================
 	
+
+{% endraw %}

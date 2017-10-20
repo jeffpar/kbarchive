@@ -6,6 +6,8 @@ permalink: /kb/177/Q177304/
 
 ## Q177304: HOWTO: Programmatically Copy the Current Record to a New Record
 
+{% raw %}
+
 	Article: Q177304
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/177/Q177304/
 	
 	=============================================================================
 	
+
+{% endraw %}

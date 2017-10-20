@@ -6,6 +6,8 @@ permalink: /kb/189/Q189133/
 
 ## Q189133: HOWTO: Make C DLL More Accessible to VB with a Type Library
 
+{% raw %}
+
 	Article: Q189133
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -286,3 +288,5 @@ permalink: /kb/189/Q189133/
 	
 	=============================================================================
 	
+
+{% endraw %}

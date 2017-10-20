@@ -6,6 +6,8 @@ permalink: /kb/263/Q263112/
 
 ## Q263112: XCON: Message Transfer Agent Generates Event 1016 When Logging P
 
+{% raw %}
+
 	Article: Q263112
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -64,3 +66,5 @@ permalink: /kb/263/Q263112/
 	
 	=============================================================================
 	
+
+{% endraw %}

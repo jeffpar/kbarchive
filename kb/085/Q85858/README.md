@@ -6,6 +6,8 @@ permalink: /kb/085/Q85858/
 
 ## Q85858: Misleading Error When Renaming Read-Only File on Novell
 
+{% raw %}
+
 	Article: Q85858
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/085/Q85858/
 	
 	=============================================================================
 	
+
+{% endraw %}

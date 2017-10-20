@@ -6,6 +6,8 @@ permalink: /kb/091/Q91221/
 
 ## Q91221: NET.EXE Does Not Always Load Full Redirector by Default
 
+{% raw %}
+
 	Article: Q91221
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 1.0
@@ -43,3 +45,5 @@ permalink: /kb/091/Q91221/
 	
 	=============================================================================
 	
+
+{% endraw %}

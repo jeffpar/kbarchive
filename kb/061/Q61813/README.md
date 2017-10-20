@@ -6,6 +6,8 @@ permalink: /kb/061/Q61813/
 
 ## Q61813: Graphics Functions Available for OS/2 Protected Mode
 
+{% raw %}
+
 	Article: Q61813
 	Product(s): See article
 	Version(s): 5.10 6.00 | 5.10 6.00
@@ -49,3 +51,5 @@ permalink: /kb/061/Q61813/
 	version 5.10 or 6.00. The OS/2 PM libraries are included with the
 	Presentation Manager Toolkit version 1.10 or 1.20, as well as with the
 	OS/2 Software Development Kit version 2.00.
+
+{% endraw %}

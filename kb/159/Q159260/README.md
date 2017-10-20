@@ -6,6 +6,8 @@ permalink: /kb/159/Q159260/
 
 ## Q159260: Spike's World: What Is Shareware?
 
+{% raw %}
+
 	Article: Q159260
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/159/Q159260/
 	
 	=============================================================================
 	
+
+{% endraw %}

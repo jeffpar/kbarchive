@@ -6,6 +6,8 @@ permalink: /kb/149/Q149712/
 
 ## Q149712: How to Install Windows 95: Helpful Tips and Suggestions
 
+{% raw %}
+
 	Article: Q149712
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -152,3 +154,5 @@ permalink: /kb/149/Q149712/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/202/Q202761/
 
 ## Q202761: Bookshelf 99: List of Fonts Installed by Bookshelf 99
 
+{% raw %}
+
 	Article: Q202761
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -52,3 +54,5 @@ permalink: /kb/202/Q202761/
 	
 	=============================================================================
 	
+
+{% endraw %}

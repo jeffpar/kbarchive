@@ -6,6 +6,8 @@ permalink: /kb/259/Q259834/
 
 ## Q259834: StarLancer Err Msg: Invalid Page Fault in Module Lancer.exe
 
+{% raw %}
+
 	Article: Q259834
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/259/Q259834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/023/Q23753/
 
 ## Q23753: fseek() Function Requires a long for the Offset into a File
 
+{% raw %}
+
 	Article: Q23753
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -35,3 +37,5 @@ permalink: /kb/023/Q23753/
 	
 	When using the fseek() routine, just be sure to use a long for
 	specifying the offset into the file.
+
+{% endraw %}

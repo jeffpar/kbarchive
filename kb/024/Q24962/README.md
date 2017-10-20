@@ -6,6 +6,8 @@ permalink: /kb/024/Q24962/
 
 ## Q24962: &lt;constant&gt; and &#91;&lt;constant&gt;&#93; Are Semantically the Same
 
+{% raw %}
+
 	Article: Q24962
 	Product(s): Microsoft Macro Assembler
 	Version(s): 1.25,1.27,3.0x,4.0,5.0,5.1,6.0,6.0a,6.0b
@@ -45,3 +47,5 @@ permalink: /kb/024/Q24962/
 	
 	=============================================================================
 	
+
+{% endraw %}

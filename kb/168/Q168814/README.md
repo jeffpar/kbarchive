@@ -6,6 +6,8 @@ permalink: /kb/168/Q168814/
 
 ## Q168814: Installing WinNT 4.0 Service Packs During Unattended Install
 
+{% raw %}
+
 	Article: Q168814
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -215,3 +217,5 @@ permalink: /kb/168/Q168814/
 	
 	=============================================================================
 	
+
+{% endraw %}

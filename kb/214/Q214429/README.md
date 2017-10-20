@@ -6,6 +6,8 @@ permalink: /kb/214/Q214429/
 
 ## Q214429: Stop 0xA in Netbt.sys When Querying the DNS for a NetBIOS Name
 
+{% raw %}
+
 	Article: Q214429
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/214/Q214429/
 	
 	=============================================================================
 	
+
+{% endraw %}

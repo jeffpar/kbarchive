@@ -6,6 +6,8 @@ permalink: /kb/224/Q224181/
 
 ## Q224181: FIX: GDI Resouce Leak Using Checkboxes in ListVew Control
 
+{% raw %}
+
 	Article: Q224181
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -181,3 +183,5 @@ permalink: /kb/224/Q224181/
 	
 	=============================================================================
 	
+
+{% endraw %}

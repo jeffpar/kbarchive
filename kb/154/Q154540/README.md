@@ -6,6 +6,8 @@ permalink: /kb/154/Q154540/
 
 ## Q154540: Printer Setup Looks for Drivers on Network Share
 
+{% raw %}
+
 	Article: Q154540
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/154/Q154540/
 	
 	=============================================================================
 	
+
+{% endraw %}

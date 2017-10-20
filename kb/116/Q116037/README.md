@@ -6,6 +6,8 @@ permalink: /kb/116/Q116037/
 
 ## Q116037: How to Perform REPLACE for Two Databases w/ Common Field
 
+{% raw %}
+
 	Article: Q116037
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -125,3 +127,5 @@ permalink: /kb/116/Q116037/
 	
 	=============================================================================
 	
+
+{% endraw %}

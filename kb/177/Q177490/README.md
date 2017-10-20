@@ -6,6 +6,8 @@ permalink: /kb/177/Q177490/
 
 ## Q177490: TN3270 Does Not Appear in Manager Without TN5250 Installed
 
+{% raw %}
+
 	Article: Q177490
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2
@@ -60,3 +62,5 @@ permalink: /kb/177/Q177490/
 	
 	=============================================================================
 	
+
+{% endraw %}

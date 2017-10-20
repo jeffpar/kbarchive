@@ -6,6 +6,8 @@ permalink: /kb/127/Q127184/
 
 ## Q127184: Mac Bookshelf: Deleting Unwanted Queries
 
+{% raw %}
+
 	Article: Q127184
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994, 1995, 96-97 editions
@@ -58,3 +60,5 @@ permalink: /kb/127/Q127184/
 	
 	=============================================================================
 	
+
+{% endraw %}

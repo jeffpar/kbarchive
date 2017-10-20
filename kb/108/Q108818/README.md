@@ -6,6 +6,8 @@ permalink: /kb/108/Q108818/
 
 ## Q108818: WFWG May Hang at Startup with 32-Bit File Access &amp; NoEmmDriver
 
+{% raw %}
+
 	Article: Q108818
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -74,3 +76,5 @@ permalink: /kb/108/Q108818/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/261/Q261200/
 
 ## Q261200: HTTP 500 Error Displays Instead of ASP Error from 500-100.asp
 
+{% raw %}
+
 	Article: Q261200
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -95,3 +97,5 @@ permalink: /kb/261/Q261200/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124541/
 
 ## Q124541: Use UPTOMP.EXE to Upgrade Single-Processor to Multiprocessor
 
+{% raw %}
+
 	Article: Q124541
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/124/Q124541/
 	
 	=============================================================================
 	
+
+{% endraw %}

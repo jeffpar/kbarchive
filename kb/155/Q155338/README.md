@@ -6,6 +6,8 @@ permalink: /kb/155/Q155338/
 
 ## Q155338: Resource Kit for Windows NT 4.0 Support Guidelines
 
+{% raw %}
+
 	Article: Q155338
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155338/
 	
 	=============================================================================
 	
+
+{% endraw %}

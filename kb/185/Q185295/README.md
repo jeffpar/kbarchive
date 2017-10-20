@@ -6,6 +6,8 @@ permalink: /kb/185/Q185295/
 
 ## Q185295: INFO: Results of Function Timing from Microsoft Source Profiler
 
+{% raw %}
+
 	Article: Q185295
 	Product(s): Microsoft Programming Utilities
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -180,3 +182,5 @@ permalink: /kb/185/Q185295/
 	
 	=============================================================================
 	
+
+{% endraw %}

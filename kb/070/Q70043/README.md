@@ -6,6 +6,8 @@ permalink: /kb/070/Q70043/
 
 ## Q70043: Tandy 2800HD Unable to Run Windows in Standard Mode
 
+{% raw %}
+
 	Article: Q70043
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/070/Q70043/
 	
 	=============================================================================
 	
+
+{% endraw %}

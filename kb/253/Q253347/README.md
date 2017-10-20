@@ -6,6 +6,8 @@ permalink: /kb/253/Q253347/
 
 ## Q253347: XCON: Comments File in Gw2mexa Folder Stops Calendar Items
 
+{% raw %}
+
 	Article: Q253347
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/253/Q253347/
 	
 	=============================================================================
 	
+
+{% endraw %}

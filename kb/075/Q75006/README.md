@@ -6,6 +6,8 @@ permalink: /kb/075/Q75006/
 
 ## Q75006: Virtual Communications Driver Functional Structure
 
+{% raw %}
+
 	Article: Q75006
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1,3.11
@@ -241,3 +243,5 @@ permalink: /kb/075/Q75006/
 	
 	=============================================================================
 	
+
+{% endraw %}

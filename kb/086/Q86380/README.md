@@ -6,6 +6,8 @@ permalink: /kb/086/Q86380/
 
 ## Q86380: PC WSPlus: Problem Sending Mail Does Not Update Appointment
 
+{% raw %}
+
 	Article: Q86380
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214491/
 
 ## Q214491: SNA Server Access Violation in Function S1PWHSES()
 
+{% raw %}
+
 	Article: Q214491
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -174,3 +176,5 @@ permalink: /kb/214/Q214491/
 	
 	=============================================================================
 	
+
+{% endraw %}

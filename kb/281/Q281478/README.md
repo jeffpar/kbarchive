@@ -6,6 +6,8 @@ permalink: /kb/281/Q281478/
 
 ## Q281478: How to play games on MSN Companion
 
+{% raw %}
+
 	Article: Q281478
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/281/Q281478/
 	
 	=============================================================================
 	
+
+{% endraw %}

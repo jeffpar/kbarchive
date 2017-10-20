@@ -6,6 +6,8 @@ permalink: /kb/086/Q86936/
 
 ## Q86936: 3COM: Main Software Components in a 3Com Gateway
 
+{% raw %}
+
 	Article: Q86936
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -41,3 +43,5 @@ permalink: /kb/086/Q86936/
 	
 	=============================================================================
 	
+
+{% endraw %}

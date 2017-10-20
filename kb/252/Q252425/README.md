@@ -6,6 +6,8 @@ permalink: /kb/252/Q252425/
 
 ## Q252425: SMS: Discovered Clients Not Installed By Windows NT
 
+{% raw %}
+
 	Article: Q252425
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -71,3 +73,5 @@ permalink: /kb/252/Q252425/
 	
 	=============================================================================
 	
+
+{% endraw %}

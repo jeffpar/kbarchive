@@ -6,6 +6,8 @@ permalink: /kb/323/Q323189/
 
 ## Q323189: &quot;Random Sponsors&quot; Option Doesn't Work on HIS End-User Client
 
+{% raw %}
+
 	Article: Q323189
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/323/Q323189/
 	
 	=============================================================================
 	
+
+{% endraw %}

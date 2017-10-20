@@ -6,6 +6,8 @@ permalink: /kb/117/Q117426/
 
 ## Q117426: PC MMTA: Err Msg: Ring3 TRAP NET0140: A Timeout Occurred...
 
+{% raw %}
+
 	Article: Q117426
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -57,3 +59,5 @@ permalink: /kb/117/Q117426/
 	
 	=============================================================================
 	
+
+{% endraw %}

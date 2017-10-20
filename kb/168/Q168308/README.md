@@ -6,6 +6,8 @@ permalink: /kb/168/Q168308/
 
 ## Q168308: XADM: Event ID 1191: Total Number of Threads Too Low
 
+{% raw %}
+
 	Article: Q168308
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -54,3 +56,5 @@ permalink: /kb/168/Q168308/
 	
 	=============================================================================
 	
+
+{% endraw %}

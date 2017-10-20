@@ -6,6 +6,8 @@ permalink: /kb/153/Q153199/
 
 ## Q153199: HOWTO: Use BCP to Move Large Amounts of Data to SQL Server
 
+{% raw %}
+
 	Article: Q153199
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0,3.0b,6.0
@@ -119,3 +121,5 @@ permalink: /kb/153/Q153199/
 	
 	=============================================================================
 	
+
+{% endraw %}

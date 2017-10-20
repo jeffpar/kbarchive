@@ -6,6 +6,8 @@ permalink: /kb/178/Q178949/
 
 ## Q178949: MS Graph 97: Cannot Scroll One Window Left or Right in Datasheet
 
+{% raw %}
+
 	Article: Q178949
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/178/Q178949/
 	
 	=============================================================================
 	
+
+{% endraw %}

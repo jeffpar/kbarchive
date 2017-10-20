@@ -6,6 +6,8 @@ permalink: /kb/074/Q74621/
 
 ## Q74621: Setup Detects Incorrect Keyboard on AST Premium Notebook
 
+{% raw %}
+
 	Article: Q74621
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/074/Q74621/
 	
 	=============================================================================
 	
+
+{% endraw %}

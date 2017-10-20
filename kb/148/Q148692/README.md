@@ -6,6 +6,8 @@ permalink: /kb/148/Q148692/
 
 ## Q148692: Visual Basic 4.0 Hangs In Windows NT and Windows 95
 
+{% raw %}
+
 	Article: Q148692
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0,95
@@ -46,3 +48,5 @@ permalink: /kb/148/Q148692/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83895/
 
 ## Q83895: Files Left Open Using CALL Command on .EXE File
 
+{% raw %}
+
 	Article: Q83895
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -70,3 +72,5 @@ permalink: /kb/083/Q83895/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137477/
 
 ## Q137477: Fury3: Floating Gunship in Terran World Shows as Ground Target
 
+{% raw %}
+
 	Article: Q137477
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/137/Q137477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132902/
 
 ## Q132902: SMS Primary Site Configuration Menu May Re-appear During Setup
 
+{% raw %}
+
 	Article: Q132902
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -64,3 +66,5 @@ permalink: /kb/132/Q132902/
 	
 	=============================================================================
 	
+
+{% endraw %}

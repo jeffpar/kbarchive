@@ -6,6 +6,8 @@ permalink: /kb/086/Q86943/
 
 ## Q86943: 3COM: Terms and Definitions of 3Com Networks
 
+{% raw %}
+
 	Article: Q86943
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -60,3 +62,5 @@ permalink: /kb/086/Q86943/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/261/Q261262/
 
 ## Q261262: WD97: Err Msg: Not Enough Memory or Disk Space
 
+{% raw %}
+
 	Article: Q261262
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -152,3 +154,5 @@ permalink: /kb/261/Q261262/
 	
 	=============================================================================
 	
+
+{% endraw %}

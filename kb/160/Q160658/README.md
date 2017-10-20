@@ -6,6 +6,8 @@ permalink: /kb/160/Q160658/
 
 ## Q160658: Stop C000021A Using MoveFileEx MOVEFILE_DELAY_UNTIL_REBOOT
 
+{% raw %}
+
 	Article: Q160658
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/160/Q160658/
 	
 	=============================================================================
 	
+
+{% endraw %}

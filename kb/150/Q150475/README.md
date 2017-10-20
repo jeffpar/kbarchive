@@ -6,6 +6,8 @@ permalink: /kb/150/Q150475/
 
 ## Q150475: XCLN: Exchng32 Causes Invalid Page Fault on ThinkPads
 
+{% raw %}
+
 	Article: Q150475
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -81,3 +83,5 @@ permalink: /kb/150/Q150475/
 	
 	=============================================================================
 	
+
+{% endraw %}

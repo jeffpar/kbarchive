@@ -6,6 +6,8 @@ permalink: /kb/163/Q163554/
 
 ## Q163554: INFO: Determining NIC Parameters for Setup Using Unattend.txt
 
+{% raw %}
+
 	Article: Q163554
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -137,3 +139,5 @@ permalink: /kb/163/Q163554/
 	
 	=============================================================================
 	
+
+{% endraw %}

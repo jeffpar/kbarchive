@@ -6,6 +6,8 @@ permalink: /kb/274/Q274641/
 
 ## Q274641: MSN Explorer Ceases To Function After MSN Messenger Is Reinstall
 
+{% raw %}
+
 	Article: Q274641
 	Product(s): The Microsoft Network
 	Version(s): 2.2,6.0
@@ -53,3 +55,5 @@ permalink: /kb/274/Q274641/
 	
 	=============================================================================
 	
+
+{% endraw %}

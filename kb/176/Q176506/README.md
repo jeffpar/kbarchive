@@ -6,6 +6,8 @@ permalink: /kb/176/Q176506/
 
 ## Q176506: Radius Accounting Only Logs One Entry for Multilink Client
 
+{% raw %}
+
 	Article: Q176506
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/176/Q176506/
 	
 	=============================================================================
 	
+
+{% endraw %}

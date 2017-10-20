@@ -6,6 +6,8 @@ permalink: /kb/136/Q136265/
 
 ## Q136265: PRB: Input/Output Operation Fails When Starting Visual FoxPro
 
+{% raw %}
+
 	Article: Q136265
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -81,3 +83,5 @@ permalink: /kb/136/Q136265/
 	
 	=============================================================================
 	
+
+{% endraw %}

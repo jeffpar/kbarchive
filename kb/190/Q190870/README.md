@@ -6,6 +6,8 @@ permalink: /kb/190/Q190870/
 
 ## Q190870: PRB: TITLEBAR = 0 Does Not Carry Over from Base Class
 
+{% raw %}
+
 	Article: Q190870
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/190/Q190870/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173490/
 
 ## Q173490: WD97: Cannot Move to Previous or Next Linked Text Box
 
+{% raw %}
+
 	Article: Q173490
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/173/Q173490/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198474/
 
 ## Q198474: XWEB:Jscript Errors Refreshing Appointment in Outlook Web Access
 
+{% raw %}
+
 	Article: Q198474
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5,5.5SP1
@@ -64,3 +66,5 @@ permalink: /kb/198/Q198474/
 	
 	=============================================================================
 	
+
+{% endraw %}

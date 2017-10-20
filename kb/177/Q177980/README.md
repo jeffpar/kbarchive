@@ -6,6 +6,8 @@ permalink: /kb/177/Q177980/
 
 ## Q177980: Identification and Access Control Tabs Missing
 
+{% raw %}
+
 	Article: Q177980
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/177/Q177980/
 	
 	=============================================================================
 	
+
+{% endraw %}

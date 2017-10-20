@@ -6,6 +6,8 @@ permalink: /kb/169/Q169375/
 
 ## Q169375: STOP 0X0000007B on HP NetServer LH Systems
 
+{% raw %}
+
 	Article: Q169375
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/169/Q169375/
 	
 	=============================================================================
 	
+
+{% endraw %}

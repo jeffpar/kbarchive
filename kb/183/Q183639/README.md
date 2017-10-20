@@ -6,6 +6,8 @@ permalink: /kb/183/Q183639/
 
 ## Q183639: PRB: Oracle Cursors Remain Open After Calling VB rdoQuery
 
+{% raw %}
+
 	Article: Q183639
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 4.0,5.0,6.0,Build 2.573.2927,Build 2.73.7283.03
@@ -148,3 +150,5 @@ permalink: /kb/183/Q183639/
 	
 	=============================================================================
 	
+
+{% endraw %}

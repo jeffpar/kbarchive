@@ -6,6 +6,8 @@ permalink: /kb/170/Q170031/
 
 ## Q170031: Sendmail Version 8 Configurable Timeouts
 
+{% raw %}
+
 	Article: Q170031
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/170/Q170031/
 	
 	=============================================================================
 	
+
+{% endraw %}

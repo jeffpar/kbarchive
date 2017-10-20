@@ -6,6 +6,8 @@ permalink: /kb/069/Q69830/
 
 ## Q69830: Oracle Requires Windows 3.0a to Run in Standard Mode
 
+{% raw %}
+
 	Article: Q69830
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/069/Q69830/
 	
 	=============================================================================
 	
+
+{% endraw %}

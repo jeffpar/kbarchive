@@ -6,6 +6,8 @@ permalink: /kb/175/Q175282/
 
 ## Q175282: FIX: Error Message Appears When Answer File Contains Blank Entri
 
+{% raw %}
+
 	Article: Q175282
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/175/Q175282/
 	
 	=============================================================================
 	
+
+{% endraw %}

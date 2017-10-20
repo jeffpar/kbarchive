@@ -6,6 +6,8 @@ permalink: /kb/087/Q87503/
 
 ## Q87503: Envelope Return Address Smudged on HP LaserJet Printers
 
+{% raw %}
+
 	Article: Q87503
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/087/Q87503/
 	
 	=============================================================================
 	
+
+{% endraw %}

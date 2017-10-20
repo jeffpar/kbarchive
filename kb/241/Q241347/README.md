@@ -6,6 +6,8 @@ permalink: /kb/241/Q241347/
 
 ## Q241347: FIX: Inserting/Updating Dates Before &quot;01-01-1900&quot; Into SQL
 
+{% raw %}
+
 	Article: Q241347
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.5,2.6,2.7
@@ -81,3 +83,5 @@ permalink: /kb/241/Q241347/
 	
 	=============================================================================
 	
+
+{% endraw %}

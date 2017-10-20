@@ -6,6 +6,8 @@ permalink: /kb/143/Q143393/
 
 ## Q143393: CONN: Changing the Preferred Memory Size of the CNU
 
+{% raw %}
+
 	Article: Q143393
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -61,3 +63,5 @@ permalink: /kb/143/Q143393/
 	
 	=============================================================================
 	
+
+{% endraw %}

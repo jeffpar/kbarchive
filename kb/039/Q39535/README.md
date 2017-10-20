@@ -6,6 +6,8 @@ permalink: /kb/039/Q39535/
 
 ## Q39535: Performance Degradation when Accessing Large Subdirectories
 
+{% raw %}
+
 	Article: Q39535
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -146,3 +148,5 @@ permalink: /kb/039/Q39535/
 	
 	=============================================================================
 	
+
+{% endraw %}

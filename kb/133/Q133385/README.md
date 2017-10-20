@@ -6,6 +6,8 @@ permalink: /kb/133/Q133385/
 
 ## Q133385: Using Performance Monitor to Monitor SMS Executive Threads
 
+{% raw %}
+
 	Article: Q133385
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -88,3 +90,5 @@ permalink: /kb/133/Q133385/
 	
 	=============================================================================
 	
+
+{% endraw %}

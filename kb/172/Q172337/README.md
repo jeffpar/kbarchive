@@ -6,6 +6,8 @@ permalink: /kb/172/Q172337/
 
 ## Q172337: FIX: SSARC &amp; SSRESTOR Do Not Store Macintosh Resource Fork Data
 
+{% raw %}
+
 	Article: Q172337
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/172/Q172337/
 	
 	=============================================================================
 	
+
+{% endraw %}

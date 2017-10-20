@@ -6,6 +6,8 @@ permalink: /kb/122/Q122118/
 
 ## Q122118: PRB: Editing While Debugging Causes Breakpoint Misalignment
 
+{% raw %}
+
 	Article: Q122118
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/122/Q122118/
 	
 	=============================================================================
 	
+
+{% endraw %}

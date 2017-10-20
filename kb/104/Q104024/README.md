@@ -6,6 +6,8 @@ permalink: /kb/104/Q104024/
 
 ## Q104024: Ethernet Frame Types for NWLINK
 
+{% raw %}
+
 	Article: Q104024
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1
@@ -79,3 +81,5 @@ permalink: /kb/104/Q104024/
 	
 	=============================================================================
 	
+
+{% endraw %}

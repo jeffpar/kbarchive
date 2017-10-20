@@ -6,6 +6,8 @@ permalink: /kb/082/Q82797/
 
 ## Q82797: Windows 3.1 Does Not Require VPICDA.386
 
+{% raw %}
+
 	Article: Q82797
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/082/Q82797/
 	
 	=============================================================================
 	
+
+{% endraw %}

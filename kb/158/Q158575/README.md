@@ -6,6 +6,8 @@ permalink: /kb/158/Q158575/
 
 ## Q158575: STL Sample for the set::(empty, clear) Functions
 
+{% raw %}
+
 	Article: Q158575
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -151,3 +153,5 @@ permalink: /kb/158/Q158575/
 	
 	=============================================================================
 	
+
+{% endraw %}

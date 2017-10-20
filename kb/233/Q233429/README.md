@@ -6,6 +6,8 @@ permalink: /kb/233/Q233429/
 
 ## Q233429: Business Planner: Cannot Use IntelliMouse AutoScroll Feature
 
+{% raw %}
+
 	Article: Q233429
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/233/Q233429/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121167/
 
 ## Q121167: GP Fault Occurs &amp; Keyboard Is Remapped w/ProofReader &amp; Word 6
 
+{% raw %}
+
 	Article: Q121167
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/121/Q121167/
 	
 	=============================================================================
 	
+
+{% endraw %}

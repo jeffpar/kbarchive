@@ -6,6 +6,8 @@ permalink: /kb/142/Q142236/
 
 ## Q142236: QEMM 8.0 Causes GP Fault in Safe Mode
 
+{% raw %}
+
 	Article: Q142236
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -95,3 +97,5 @@ permalink: /kb/142/Q142236/
 	
 	=============================================================================
 	
+
+{% endraw %}

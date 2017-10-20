@@ -6,6 +6,8 @@ permalink: /kb/291/Q291815/
 
 ## Q291815: Program Running in a Terminal Server Session May Hang
 
+{% raw %}
+
 	Article: Q291815
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -91,3 +93,5 @@ permalink: /kb/291/Q291815/
 	
 	=============================================================================
 	
+
+{% endraw %}

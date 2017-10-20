@@ -6,6 +6,8 @@ permalink: /kb/167/Q167024/
 
 ## Q167024: XFOR: cc:Mail Migration Generates Dr. Watson in Mailmig.exe
 
+{% raw %}
+
 	Article: Q167024
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -61,3 +63,5 @@ permalink: /kb/167/Q167024/
 	
 	=============================================================================
 	
+
+{% endraw %}

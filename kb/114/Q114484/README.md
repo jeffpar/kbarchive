@@ -6,6 +6,8 @@ permalink: /kb/114/Q114484/
 
 ## Q114484: WD97: Delivery Point Bar Code Option Unavailable Envelope Merge
 
+{% raw %}
+
 	Article: Q114484
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -146,3 +148,5 @@ permalink: /kb/114/Q114484/
 	
 	=============================================================================
 	
+
+{% endraw %}

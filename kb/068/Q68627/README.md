@@ -6,6 +6,8 @@ permalink: /kb/068/Q68627/
 
 ## Q68627: C1001: Internal Compiler Error: omfMD.c, Line 446
 
+{% raw %}
+
 	Article: Q68627
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -56,3 +58,5 @@ permalink: /kb/068/Q68627/
 	10.       mov CS:WORD PTR $-4, SS
 	11.    }
 	12. }
+
+{% endraw %}

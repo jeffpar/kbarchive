@@ -6,6 +6,8 @@ permalink: /kb/228/Q228557/
 
 ## Q228557: SFU: Services for UNIX - Readme File
 
+{% raw %}
+
 	Article: Q228557
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -243,3 +245,5 @@ permalink: /kb/228/Q228557/
 	
 	=============================================================================
 	
+
+{% endraw %}

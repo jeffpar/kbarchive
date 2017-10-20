@@ -6,6 +6,8 @@ permalink: /kb/098/Q98962/
 
 ## Q98962: Mac LDF: Mail Tools Err Msg: File Unrecognizable
 
+{% raw %}
+
 	Article: Q98962
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/098/Q98962/
 	
 	=============================================================================
 	
+
+{% endraw %}

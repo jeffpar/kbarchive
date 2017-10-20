@@ -6,6 +6,8 @@ permalink: /kb/301/Q301296/
 
 ## Q301296: WaitToKillAppTimeout Registry Value Has No Effect
 
+{% raw %}
+
 	Article: Q301296
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/301/Q301296/
 	
 	=============================================================================
 	
+
+{% endraw %}

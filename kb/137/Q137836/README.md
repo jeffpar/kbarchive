@@ -6,6 +6,8 @@ permalink: /kb/137/Q137836/
 
 ## Q137836: Encarta 1996: Could Not Open Mplayer.ini
 
+{% raw %}
+
 	Article: Q137836
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition; WINDOWS:3.1,3.11
@@ -96,3 +98,5 @@ permalink: /kb/137/Q137836/
 	
 	=============================================================================
 	
+
+{% endraw %}

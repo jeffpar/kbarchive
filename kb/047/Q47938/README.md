@@ -6,6 +6,8 @@ permalink: /kb/047/Q47938/
 
 ## Q47938: Debugging of DLLs That Do Not Have the .DLL Extension
 
+{% raw %}
+
 	Article: Q47938
 	Product(s): See article
 	Version(s): 2.30   | 2.30
@@ -22,3 +24,5 @@ permalink: /kb/047/Q47938/
 	Microsoft is aware of this limitation with CodeView Protect 2.30. We
 	are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

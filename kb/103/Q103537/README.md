@@ -6,6 +6,8 @@ permalink: /kb/103/Q103537/
 
 ## Q103537: MS-DOS Upgrade Setup Doesn't Detect @ Symbol in AUTOEXEC.BAT
 
+{% raw %}
+
 	Article: Q103537
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/103/Q103537/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149115/
 
 ## Q149115: MSN Interactive Teen: Installing and Setting Up a Sound Card
 
+{% raw %}
+
 	Article: Q149115
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0; WINDOWS:95
@@ -59,3 +61,5 @@ permalink: /kb/149/Q149115/
 	
 	=============================================================================
 	
+
+{% endraw %}

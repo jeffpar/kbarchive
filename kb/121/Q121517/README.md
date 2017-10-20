@@ -6,6 +6,8 @@ permalink: /kb/121/Q121517/
 
 ## Q121517: How to Recover From a Corrupt NTFS Boot Sector
 
+{% raw %}
+
 	Article: Q121517
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -277,3 +279,5 @@ permalink: /kb/121/Q121517/
 	
 	=============================================================================
 	
+
+{% endraw %}

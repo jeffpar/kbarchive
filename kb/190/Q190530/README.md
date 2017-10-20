@@ -6,6 +6,8 @@ permalink: /kb/190/Q190530/
 
 ## Q190530: FIX: ActiveX Control Events Are Not Fired in ATL Dialog
 
+{% raw %}
+
 	Article: Q190530
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -117,3 +119,5 @@ permalink: /kb/190/Q190530/
 	
 	=============================================================================
 	
+
+{% endraw %}

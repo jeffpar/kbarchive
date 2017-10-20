@@ -6,6 +6,8 @@ permalink: /kb/078/Q78358/
 
 ## Q78358: Logon Scripts and Environment Space
 
+{% raw %}
+
 	Article: Q78358
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/078/Q78358/
 	
 	=============================================================================
 	
+
+{% endraw %}

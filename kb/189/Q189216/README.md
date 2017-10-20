@@ -6,6 +6,8 @@ permalink: /kb/189/Q189216/
 
 ## Q189216: MS Office 97 Visual Basic Step by Step Comments &amp; Corrections
 
+{% raw %}
+
 	Article: Q189216
 	Product(s): Microsoft Press
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/189/Q189216/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66336/
 
 ## Q66336: Installing Aircraft &amp; Scenery Designer
 
+{% raw %}
+
 	Article: Q66336
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/066/Q66336/
 	
 	=============================================================================
 	
+
+{% endraw %}

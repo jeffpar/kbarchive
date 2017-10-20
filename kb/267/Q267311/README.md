@@ -6,6 +6,8 @@ permalink: /kb/267/Q267311/
 
 ## Q267311: MapPoint 2000: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q267311
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/267/Q267311/
 	
 	=============================================================================
 	
+
+{% endraw %}

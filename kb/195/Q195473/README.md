@@ -6,6 +6,8 @@ permalink: /kb/195/Q195473/
 
 ## Q195473: FIX: MS Access ODBC Driver Does Not Recognize DSN MaxBufferSize
 
+{% raw %}
+
 	Article: Q195473
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.1 SP2,2.5,3.5,3.51
@@ -117,3 +119,5 @@ permalink: /kb/195/Q195473/
 	
 	=============================================================================
 	
+
+{% endraw %}

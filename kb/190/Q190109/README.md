@@ -6,6 +6,8 @@ permalink: /kb/190/Q190109/
 
 ## Q190109: HOWTO: Keep RDO Cursor Open After Transaction
 
+{% raw %}
+
 	Article: Q190109
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -147,3 +149,5 @@ permalink: /kb/190/Q190109/
 	
 	=============================================================================
 	
+
+{% endraw %}

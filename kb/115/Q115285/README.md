@@ -6,6 +6,8 @@ permalink: /kb/115/Q115285/
 
 ## Q115285: New Auditing Feature for FTP Server
 
+{% raw %}
+
 	Article: Q115285
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -89,3 +91,5 @@ permalink: /kb/115/Q115285/
 	
 	=============================================================================
 	
+
+{% endraw %}

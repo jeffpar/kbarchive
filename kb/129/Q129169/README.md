@@ -6,6 +6,8 @@ permalink: /kb/129/Q129169/
 
 ## Q129169: PRB: Excel Chart Wizard Crashes When Accessed from a Form
 
+{% raw %}
+
 	Article: Q129169
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -80,3 +82,5 @@ permalink: /kb/129/Q129169/
 	
 	=============================================================================
 	
+
+{% endraw %}

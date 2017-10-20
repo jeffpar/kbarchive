@@ -6,6 +6,8 @@ permalink: /kb/150/Q150558/
 
 ## Q150558: Cinemania 96 Update Contents: February 96
 
+{% raw %}
+
 	Article: Q150558
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -45,3 +47,5 @@ permalink: /kb/150/Q150558/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155558/
 
 ## Q155558: Deleting Clipbook Page Causes Overwrite of Clipboard Contents
 
+{% raw %}
+
 	Article: Q155558
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/155/Q155558/
 	
 	=============================================================================
 	
+
+{% endraw %}

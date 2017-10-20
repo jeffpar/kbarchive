@@ -6,6 +6,8 @@ permalink: /kb/272/Q272037/
 
 ## Q272037: Encarta 2001 Err Msg: ENC2001 Caused an Invalid Page Fault...
 
+{% raw %}
+
 	Article: Q272037
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/272/Q272037/
 	
 	=============================================================================
 	
+
+{% endraw %}

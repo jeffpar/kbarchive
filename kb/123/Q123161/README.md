@@ -6,6 +6,8 @@ permalink: /kb/123/Q123161/
 
 ## Q123161: BUG: ios::internal Adds No Fill Characters for int and long
 
+{% raw %}
+
 	Article: Q123161
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,2.1,4.0,4.1,4.2,5.0
@@ -114,3 +116,5 @@ permalink: /kb/123/Q123161/
 	
 	=============================================================================
 	
+
+{% endraw %}

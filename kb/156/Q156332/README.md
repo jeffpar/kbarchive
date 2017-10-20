@@ -6,6 +6,8 @@ permalink: /kb/156/Q156332/
 
 ## Q156332: Low Free Conventional Memory with OEM Service Release 2
 
+{% raw %}
+
 	Article: Q156332
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -61,3 +63,5 @@ permalink: /kb/156/Q156332/
 	
 	=============================================================================
 	
+
+{% endraw %}

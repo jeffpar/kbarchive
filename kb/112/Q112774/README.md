@@ -6,6 +6,8 @@ permalink: /kb/112/Q112774/
 
 ## Q112774: ERR: VSERVER File Server Encountered Critical Error
 
+{% raw %}
+
 	Article: Q112774
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5 2.5a 2.5b 3.0
@@ -59,3 +61,5 @@ permalink: /kb/112/Q112774/
 	
 	=============================================================================
 	
+
+{% endraw %}

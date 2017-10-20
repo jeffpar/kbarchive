@@ -6,6 +6,8 @@ permalink: /kb/021/Q21832/
 
 ## Q21832: Reserved Words Not Necessarily Implemented as Features
 
+{% raw %}
+
 	Article: Q21832
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -28,3 +30,5 @@ permalink: /kb/021/Q21832/
 	present versions of Microsoft BASIC. Some words are on the list but
 	not currently implemented or supported because these reserved words
 	represent possible additions for future versions of BASIC.
+
+{% endraw %}

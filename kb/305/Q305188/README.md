@@ -6,6 +6,8 @@ permalink: /kb/305/Q305188/
 
 ## Q305188: Integrating Passport Sign In Features for WindowsXP and Passport
 
+{% raw %}
+
 	Article: Q305188
 	Product(s): Microsoft Developer Network
 	Version(s): 1.4,1.99,2.0
@@ -77,3 +79,5 @@ permalink: /kb/305/Q305188/
 	
 	=============================================================================
 	
+
+{% endraw %}

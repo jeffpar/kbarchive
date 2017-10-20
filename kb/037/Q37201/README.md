@@ -6,6 +6,8 @@ permalink: /kb/037/Q37201/
 
 ## Q37201: System Memory Allocation Error after Using halloc or malloc
 
+{% raw %}
+
 	Article: Q37201
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -38,3 +40,5 @@ permalink: /kb/037/Q37201/
 	enough memory to run CodeView, you can narrow down the problem by
 	using a pointer to check those bytes at selected points in your
 	program.
+
+{% endraw %}

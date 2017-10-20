@@ -6,6 +6,8 @@ permalink: /kb/153/Q153233/
 
 ## Q153233: XADM: Exchange Server Setup Error Under Chinese Version of NT
 
+{% raw %}
+
 	Article: Q153233
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/153/Q153233/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177009/
 
 ## Q177009: WD97: VerticalPercentScrolled Fails to Set the Correct Value
 
+{% raw %}
+
 	Article: Q177009
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/177/Q177009/
 	
 	=============================================================================
 	
+
+{% endraw %}

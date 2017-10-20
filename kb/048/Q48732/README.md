@@ -6,6 +6,8 @@ permalink: /kb/048/Q48732/
 
 ## Q48732: Format Specifier %p Not Found in Documentation
 
+{% raw %}
+
 	Article: Q48732
 	Product(s): See article
 	Version(s): 2.00
@@ -31,3 +33,5 @@ permalink: /kb/048/Q48732/
 	
 	  printf("the near pointer: %p    the far pointer: %Fp",ptr,fptr);
 	}
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104959/
 
 ## Q104959: INFO: Types of System Modal Message Boxes
 
+{% raw %}
+
 	Article: Q104959
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -83,3 +85,5 @@ permalink: /kb/104/Q104959/
 	
 	=============================================================================
 	
+
+{% endraw %}

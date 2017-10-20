@@ -6,6 +6,8 @@ permalink: /kb/223/Q223070/
 
 ## Q223070: FIX: DataGrid Column 1 Visible = False Does Not Work With ADC
 
+{% raw %}
+
 	Article: Q223070
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -98,3 +100,5 @@ permalink: /kb/223/Q223070/
 	
 	=============================================================================
 	
+
+{% endraw %}

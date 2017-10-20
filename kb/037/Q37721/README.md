@@ -6,6 +6,8 @@ permalink: /kb/037/Q37721/
 
 ## Q37721: Error C2172 Function : Actual Is Not a Pointer...
 
+{% raw %}
+
 	Article: Q37721
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -29,3 +31,5 @@ permalink: /kb/037/Q37721/
 	When the compiler encounters any of the errors listed in this section,
 	it continues parsing the program (if possible) and outputs additional
 	error messages. However, no object file is produced.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185436/
 
 ## Q185436: Using Excel and SNACFG to Implement Batch Configuration Changes
 
+{% raw %}
+
 	Article: Q185436
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -135,3 +137,5 @@ permalink: /kb/185/Q185436/
 	
 	=============================================================================
 	
+
+{% endraw %}

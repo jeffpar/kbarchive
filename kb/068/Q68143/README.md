@@ -6,6 +6,8 @@ permalink: /kb/068/Q68143/
 
 ## Q68143: PRB: Stringize Operator Fails to Insert Backslashes
 
+{% raw %}
+
 	Article: Q68143
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/068/Q68143/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130399/
 
 ## Q130399: ADT2: ADT Apps from Win 95 Cause Err in Win 3.1 and WFW 3.11
 
+{% raw %}
+
 	Article: Q130399
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -160,3 +162,5 @@ permalink: /kb/130/Q130399/
 	
 	=============================================================================
 	
+
+{% endraw %}

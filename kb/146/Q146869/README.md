@@ -6,6 +6,8 @@ permalink: /kb/146/Q146869/
 
 ## Q146869: ALT+F6 Key Combination Does Not Work in Windows 95
 
+{% raw %}
+
 	Article: Q146869
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -69,3 +71,5 @@ permalink: /kb/146/Q146869/
 	
 	=============================================================================
 	
+
+{% endraw %}

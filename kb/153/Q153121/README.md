@@ -6,6 +6,8 @@ permalink: /kb/153/Q153121/
 
 ## Q153121: XFOR: Migrating from WGPO to Exchange
 
+{% raw %}
+
 	Article: Q153121
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153121/
 	
 	=============================================================================
 	
+
+{% endraw %}

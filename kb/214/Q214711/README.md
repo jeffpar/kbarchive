@@ -6,6 +6,8 @@ permalink: /kb/214/Q214711/
 
 ## Q214711: XADM: Properties Incorrectly Indicate Read Receipt Not Requested
 
+{% raw %}
+
 	Article: Q214711
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/214/Q214711/
 	
 	=============================================================================
 	
+
+{% endraw %}

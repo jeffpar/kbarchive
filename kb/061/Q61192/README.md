@@ -6,6 +6,8 @@ permalink: /kb/061/Q61192/
 
 ## Q61192: C 6.00 README: The offsetof Macro
 
+{% raw %}
+
 	Article: Q61192
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -28,3 +30,5 @@ permalink: /kb/061/Q61192/
 	   offsetof( type, member_name )
 	
 	yields the byte offset of the member from the beginning of the struct.
+
+{% endraw %}

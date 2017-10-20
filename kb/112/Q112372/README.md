@@ -6,6 +6,8 @@ permalink: /kb/112/Q112372/
 
 ## Q112372: Recombining Split Domains
 
+{% raw %}
+
 	Article: Q112372
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/112/Q112372/
 	
 	=============================================================================
 	
+
+{% endraw %}

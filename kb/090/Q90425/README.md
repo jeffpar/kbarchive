@@ -6,6 +6,8 @@ permalink: /kb/090/Q90425/
 
 ## Q90425: Using LAN Manager Scripts with WFWG Real-Mode Redirector
 
+{% raw %}
+
 	Article: Q90425
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1; :1.0
@@ -70,3 +72,5 @@ permalink: /kb/090/Q90425/
 	
 	=============================================================================
 	
+
+{% endraw %}

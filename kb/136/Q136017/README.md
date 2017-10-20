@@ -6,6 +6,8 @@ permalink: /kb/136/Q136017/
 
 ## Q136017: PRB: Cannot Update Cursor Error Occurs as Buildapp Builds .EXE
 
+{% raw %}
+
 	Article: Q136017
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -100,3 +102,5 @@ permalink: /kb/136/Q136017/
 	
 	=============================================================================
 	
+
+{% endraw %}

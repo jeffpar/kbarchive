@@ -6,6 +6,8 @@ permalink: /kb/180/Q180768/
 
 ## Q180768: BUG: Label Control BackStyle Property Does Not Work
 
+{% raw %}
+
 	Article: Q180768
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -79,3 +81,5 @@ permalink: /kb/180/Q180768/
 	
 	=============================================================================
 	
+
+{% endraw %}

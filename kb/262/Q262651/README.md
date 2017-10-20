@@ -6,6 +6,8 @@ permalink: /kb/262/Q262651/
 
 ## Q262651: Baseball 2001: Background Scenery in the Game Flickers
 
+{% raw %}
+
 	Article: Q262651
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/262/Q262651/
 	
 	=============================================================================
 	
+
+{% endraw %}

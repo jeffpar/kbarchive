@@ -6,6 +6,8 @@ permalink: /kb/070/Q70889/
 
 ## Q70889: PRB: SPY Updates Only One Line with Small Buffer
 
+{% raw %}
+
 	Article: Q70889
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -45,3 +47,5 @@ permalink: /kb/070/Q70889/
 	
 	=============================================================================
 	
+
+{% endraw %}

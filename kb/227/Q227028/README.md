@@ -6,6 +6,8 @@ permalink: /kb/227/Q227028/
 
 ## Q227028: SMS: LSM Fails to Update the PDC in a Large Domain Mult Sites
 
+{% raw %}
+
 	Article: Q227028
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -74,3 +76,5 @@ permalink: /kb/227/Q227028/
 	
 	=============================================================================
 	
+
+{% endraw %}

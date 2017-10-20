@@ -6,6 +6,8 @@ permalink: /kb/188/Q188700/
 
 ## Q188700: Screensaver Password Works Even if Account Is Locked Out
 
+{% raw %}
+
 	Article: Q188700
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/188/Q188700/
 	
 	=============================================================================
 	
+
+{% endraw %}

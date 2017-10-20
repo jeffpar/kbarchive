@@ -6,6 +6,8 @@ permalink: /kb/071/Q71428/
 
 ## Q71428: Network Pop-Up Message Hangs Standard, Real Mode Windows 3.0
 
+{% raw %}
+
 	Article: Q71428
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/071/Q71428/
 	
 	=============================================================================
 	
+
+{% endraw %}

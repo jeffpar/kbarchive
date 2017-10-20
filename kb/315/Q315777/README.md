@@ -6,6 +6,8 @@ permalink: /kb/315/Q315777/
 
 ## Q315777: Event 744 or SnaBase Failure When Using Active Directory
 
+{% raw %}
+
 	Article: Q315777
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/315/Q315777/
 	
 	=============================================================================
 	
+
+{% endraw %}

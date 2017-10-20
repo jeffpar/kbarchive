@@ -6,6 +6,8 @@ permalink: /kb/248/Q248074/
 
 ## Q248074: Err Msg: Access Forbidden: Too Many Users Are Connected 403.9
 
+{% raw %}
+
 	Article: Q248074
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -59,3 +61,5 @@ permalink: /kb/248/Q248074/
 	
 	=============================================================================
 	
+
+{% endraw %}

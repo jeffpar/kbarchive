@@ -6,6 +6,8 @@ permalink: /kb/323/Q323709/
 
 ## Q323709: Err Msg: &quot;An exception 'Runtime Error' Has Occurred in Script&quot;
 
+{% raw %}
+
 	Article: Q323709
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -111,3 +113,5 @@ permalink: /kb/323/Q323709/
 	
 	=============================================================================
 	
+
+{% endraw %}

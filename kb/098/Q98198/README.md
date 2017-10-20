@@ -6,6 +6,8 @@ permalink: /kb/098/Q98198/
 
 ## Q98198: INFO: CDialogBar Button Enabled When Command Handler Present
 
+{% raw %}
+
 	Article: Q98198
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -58,3 +60,5 @@ permalink: /kb/098/Q98198/
 	
 	=============================================================================
 	
+
+{% endraw %}

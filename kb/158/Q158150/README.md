@@ -6,6 +6,8 @@ permalink: /kb/158/Q158150/
 
 ## Q158150: Oracle 8 Utilities May Not Run
 
+{% raw %}
+
 	Article: Q158150
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/158/Q158150/
 	
 	=============================================================================
 	
+
+{% endraw %}

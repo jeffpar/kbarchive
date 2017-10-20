@@ -6,6 +6,8 @@ permalink: /kb/222/Q222553/
 
 ## Q222553: XFOR: IMC Events 4020, 4007 with Error 10048
 
+{% raw %}
+
 	Article: Q222553
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/222/Q222553/
 	
 	=============================================================================
 	
+
+{% endraw %}

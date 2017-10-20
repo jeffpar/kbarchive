@@ -6,6 +6,8 @@ permalink: /kb/140/Q140945/
 
 ## Q140945: XCON: MTA Error ID 251
 
+{% raw %}
+
 	Article: Q140945
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/140/Q140945/
 	
 	=============================================================================
 	
+
+{% endraw %}

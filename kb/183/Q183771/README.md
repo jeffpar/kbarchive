@@ -6,6 +6,8 @@ permalink: /kb/183/Q183771/
 
 ## Q183771: INFO: Registry Entries Made by an ActiveX Component
 
+{% raw %}
+
 	Article: Q183771
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0,97
@@ -146,3 +148,5 @@ permalink: /kb/183/Q183771/
 	
 	=============================================================================
 	
+
+{% endraw %}

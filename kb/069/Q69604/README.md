@@ -6,6 +6,8 @@ permalink: /kb/069/Q69604/
 
 ## Q69604: Mac Form Srv: Err Msg: Couldn't Allocate the Forms List
 
+{% raw %}
+
 	Article: Q69604
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/069/Q69604/
 	
 	=============================================================================
 	
+
+{% endraw %}

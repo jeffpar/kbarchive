@@ -6,6 +6,8 @@ permalink: /kb/166/Q166719/
 
 ## Q166719: FIX: Wrong Exception Rethrown with Global Optimization
 
+{% raw %}
+
 	Article: Q166719
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -103,3 +105,5 @@ permalink: /kb/166/Q166719/
 	
 	=============================================================================
 	
+
+{% endraw %}

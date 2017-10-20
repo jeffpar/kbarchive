@@ -6,6 +6,8 @@ permalink: /kb/202/Q202563/
 
 ## Q202563: HOWTO: Call Win32 WinHelp API from Visual Basic
 
+{% raw %}
+
 	Article: Q202563
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/202/Q202563/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171770/
 
 ## Q171770: Dr. Watson Error in Spoolss.dbg
 
+{% raw %}
+
 	Article: Q171770
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/171/Q171770/
 	
 	=============================================================================
 	
+
+{% endraw %}

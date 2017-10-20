@@ -6,6 +6,8 @@ permalink: /kb/048/Q48417/
 
 ## Q48417: FltSim: Mouse Shadow Remains in Edit Box
 
+{% raw %}
+
 	Article: Q48417
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/048/Q48417/
 	
 	=============================================================================
 	
+
+{% endraw %}

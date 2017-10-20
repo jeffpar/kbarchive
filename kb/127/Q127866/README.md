@@ -6,6 +6,8 @@ permalink: /kb/127/Q127866/
 
 ## Q127866: Cannot Change System Time In Access Using Time Statement
 
+{% raw %}
+
 	Article: Q127866
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -53,3 +55,5 @@ permalink: /kb/127/Q127866/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43784/
 
 ## Q43784: Obtaining the Local Drive Name and Network Name; INT 21 Hex
 
+{% raw %}
+
 	Article: Q43784
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/043/Q43784/
 	    NEXT
 	    DEF SEG
 	END
+
+{% endraw %}

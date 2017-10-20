@@ -6,6 +6,8 @@ permalink: /kb/191/Q191183/
 
 ## Q191183: HOWTO: Navigate Between DHTML Designer Pages
 
+{% raw %}
+
 	Article: Q191183
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -97,3 +99,5 @@ permalink: /kb/191/Q191183/
 	
 	=============================================================================
 	
+
+{% endraw %}

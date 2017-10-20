@@ -6,6 +6,8 @@ permalink: /kb/129/Q129413/
 
 ## Q129413: Explanation &amp; Usage of the LOCKSCREEN Property
 
+{% raw %}
+
 	Article: Q129413
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -96,3 +98,5 @@ permalink: /kb/129/Q129413/
 	
 	=============================================================================
 	
+
+{% endraw %}

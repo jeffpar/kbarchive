@@ -6,6 +6,8 @@ permalink: /kb/215/Q215363/
 
 ## Q215363: BUG: Changing TabIndex at Run Time Has No Effect
 
+{% raw %}
+
 	Article: Q215363
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,2.11,3.0
@@ -97,3 +99,5 @@ permalink: /kb/215/Q215363/
 	
 	=============================================================================
 	
+
+{% endraw %}

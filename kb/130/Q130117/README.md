@@ -6,6 +6,8 @@ permalink: /kb/130/Q130117/
 
 ## Q130117: Running PKZIP Hangs WFW or Windows NT MS-DOS Command Prompt
 
+{% raw %}
+
 	Article: Q130117
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:3.5
@@ -87,3 +89,5 @@ permalink: /kb/130/Q130117/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58825/
 
 ## Q58825: How BASIC Can Determine VGA Palette Colors with BIOS Interrupt
 
+{% raw %}
+
 	Article: Q58825
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -104,3 +106,5 @@ permalink: /kb/058/Q58825/
 	END  ' End of example code.
 	
 	Additional reference words: &H10 10H &H15 15H
+
+{% endraw %}

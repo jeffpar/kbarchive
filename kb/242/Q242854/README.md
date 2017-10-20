@@ -6,6 +6,8 @@ permalink: /kb/242/Q242854/
 
 ## Q242854: Certificate Server 1.0 Readme.htm File
 
+{% raw %}
+
 	Article: Q242854
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6a
@@ -194,3 +196,5 @@ permalink: /kb/242/Q242854/
 	
 	=============================================================================
 	
+
+{% endraw %}

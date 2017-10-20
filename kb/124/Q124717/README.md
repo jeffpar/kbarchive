@@ -6,6 +6,8 @@ permalink: /kb/124/Q124717/
 
 ## Q124717: How to Use the FXALERT() Function in FOXTOOLS.MLB
 
+{% raw %}
+
 	Article: Q124717
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -159,3 +161,5 @@ permalink: /kb/124/Q124717/
 	
 	=============================================================================
 	
+
+{% endraw %}

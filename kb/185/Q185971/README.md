@@ -6,6 +6,8 @@ permalink: /kb/185/Q185971/
 
 ## Q185971: XCLN: Err Msg: Unable to Display Folder. You Do Not Have ...
 
+{% raw %}
+
 	Article: Q185971
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/185/Q185971/
 	
 	=============================================================================
 	
+
+{% endraw %}

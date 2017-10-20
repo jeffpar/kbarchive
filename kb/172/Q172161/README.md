@@ -6,6 +6,8 @@ permalink: /kb/172/Q172161/
 
 ## Q172161: HOWTO: Determining the Number of Colors Available on a Mac
 
+{% raw %}
+
 	Article: Q172161
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0
@@ -87,3 +89,5 @@ permalink: /kb/172/Q172161/
 	
 	=============================================================================
 	
+
+{% endraw %}

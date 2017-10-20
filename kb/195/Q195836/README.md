@@ -6,6 +6,8 @@ permalink: /kb/195/Q195836/
 
 ## Q195836: PRB: Visual C++ Integration: &quot;Specify Working Directory&quot; Dialog
 
+{% raw %}
+
 	Article: Q195836
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/195/Q195836/
 	
 	=============================================================================
 	
+
+{% endraw %}

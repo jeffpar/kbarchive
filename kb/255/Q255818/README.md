@@ -6,6 +6,8 @@ permalink: /kb/255/Q255818/
 
 ## Q255818: Err Msg: 19033-ERROR: &#36;multi_valued() Subscript Goes Beyond...
 
+{% raw %}
+
 	Article: Q255818
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -64,3 +66,5 @@ permalink: /kb/255/Q255818/
 	
 	=============================================================================
 	
+
+{% endraw %}

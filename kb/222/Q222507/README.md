@@ -6,6 +6,8 @@ permalink: /kb/222/Q222507/
 
 ## Q222507: Incorrect Service Pack Level Displayed After Applying Hotfix
 
+{% raw %}
+
 	Article: Q222507
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/222/Q222507/
 	
 	=============================================================================
 	
+
+{% endraw %}

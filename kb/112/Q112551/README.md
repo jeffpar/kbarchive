@@ -6,6 +6,8 @@ permalink: /kb/112/Q112551/
 
 ## Q112551: Reinstalling Windows 3.10 Files over Windows 3.11
 
+{% raw %}
+
 	Article: Q112551
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -201,3 +203,5 @@ permalink: /kb/112/Q112551/
 	
 	=============================================================================
 	
+
+{% endraw %}

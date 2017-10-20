@@ -6,6 +6,8 @@ permalink: /kb/119/Q119018/
 
 ## Q119018: PC DirSync: Zero-Byte ADMIN.NME Halts REBUILD
 
+{% raw %}
+
 	Article: Q119018
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -66,3 +68,5 @@ permalink: /kb/119/Q119018/
 	
 	=============================================================================
 	
+
+{% endraw %}

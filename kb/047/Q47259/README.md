@@ -6,6 +6,8 @@ permalink: /kb/047/Q47259/
 
 ## Q47259: Mac Wkst: Date Inconsistent Between Summary and Read Screen
 
+{% raw %}
+
 	Article: Q47259
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -42,3 +44,5 @@ permalink: /kb/047/Q47259/
 	
 	=============================================================================
 	
+
+{% endraw %}

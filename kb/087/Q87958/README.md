@@ -6,6 +6,8 @@ permalink: /kb/087/Q87958/
 
 ## Q87958: README.WRI from WinLogin 1.0
 
+{% raw %}
+
 	Article: Q87958
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -235,3 +237,5 @@ permalink: /kb/087/Q87958/
 	
 	=============================================================================
 	
+
+{% endraw %}

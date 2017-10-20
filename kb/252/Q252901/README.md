@@ -6,6 +6,8 @@ permalink: /kb/252/Q252901/
 
 ## Q252901: SMS: Status Filter Rules Restored to Defaults After a Site Reset
 
+{% raw %}
+
 	Article: Q252901
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -44,3 +46,5 @@ permalink: /kb/252/Q252901/
 	
 	=============================================================================
 	
+
+{% endraw %}

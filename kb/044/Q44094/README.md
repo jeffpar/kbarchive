@@ -6,6 +6,8 @@ permalink: /kb/044/Q44094/
 
 ## Q44094: INFO: GETPHYSPAGESIZE Landscape vs. Portrait Mode
 
+{% raw %}
+
 	Article: Q44094
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -40,3 +42,5 @@ permalink: /kb/044/Q44094/
 	
 	=============================================================================
 	
+
+{% endraw %}

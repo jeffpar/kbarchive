@@ -6,6 +6,8 @@ permalink: /kb/032/Q32303/
 
 ## Q32303: Assert Macro Anomaly; Generating Syntax Errors
 
+{% raw %}
+
 	Article: Q32303
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -56,3 +58,5 @@ permalink: /kb/032/Q32303/
 	
 	   Microsoft is researching this problem and will post new information
 	as it becomes available.
+
+{% endraw %}

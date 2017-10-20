@@ -6,6 +6,8 @@ permalink: /kb/242/Q242489/
 
 ## Q242489: SMS: Run-Time Error When Advertising MFC-Based Package (English
 
+{% raw %}
+
 	Article: Q242489
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -165,3 +167,5 @@ permalink: /kb/242/Q242489/
 	
 	=============================================================================
 	
+
+{% endraw %}

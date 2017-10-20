@@ -6,6 +6,8 @@ permalink: /kb/138/Q138217/
 
 ## Q138217: Encarta 96 Uninstall:  Mscreate.dir Files, Folders not Deleted
 
+{% raw %}
+
 	Article: Q138217
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138217/
 	
 	=============================================================================
 	
+
+{% endraw %}

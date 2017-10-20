@@ -6,6 +6,8 @@ permalink: /kb/274/Q274737/
 
 ## Q274737: XADM: Verifying If ForestPrep and DomainPrep Have Completed
 
+{% raw %}
+
 	Article: Q274737
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/274/Q274737/
 	
 	=============================================================================
 	
+
+{% endraw %}

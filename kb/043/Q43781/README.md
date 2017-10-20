@@ -6,6 +6,8 @@ permalink: /kb/043/Q43781/
 
 ## Q43781: MOUSE.COM Solves PS/2 Serial Problems with Ventura Publishing
 
+{% raw %}
+
 	Article: Q43781
 	Product(s): See article
 	Version(s): 1.01
@@ -24,3 +26,5 @@ permalink: /kb/043/Q43781/
 	no longer be present.  You DO NOT need to replace your PS/2-Serial
 	mouse to choose the bus mouse option.  Selecting the Bus mouse option
 	bypasses Ventura's own mouse drivers.
+
+{% endraw %}

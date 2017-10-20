@@ -6,6 +6,8 @@ permalink: /kb/324/Q324550/
 
 ## Q324550: Inside C#, Second Edition Comments And Corrections
 
+{% raw %}
+
 	Article: Q324550
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/324/Q324550/
 	
 	=============================================================================
 	
+
+{% endraw %}

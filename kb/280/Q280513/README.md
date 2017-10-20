@@ -6,6 +6,8 @@ permalink: /kb/280/Q280513/
 
 ## Q280513: PRB: VB6 App Has Run-Time Error 3633 When Run on New Computer
 
+{% raw %}
+
 	Article: Q280513
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -91,3 +93,5 @@ permalink: /kb/280/Q280513/
 	
 	=============================================================================
 	
+
+{% endraw %}

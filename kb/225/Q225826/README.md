@@ -6,6 +6,8 @@ permalink: /kb/225/Q225826/
 
 ## Q225826: Incorrect Numbers in Performance Tuning Slider
 
+{% raw %}
+
 	Article: Q225826
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -77,3 +79,5 @@ permalink: /kb/225/Q225826/
 	
 	=============================================================================
 	
+
+{% endraw %}

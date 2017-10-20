@@ -6,6 +6,8 @@ permalink: /kb/043/Q43941/
 
 ## Q43941: Mac Wkst: Searching for Names in the Address Window
 
+{% raw %}
+
 	Article: Q43941
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -72,3 +74,5 @@ permalink: /kb/043/Q43941/
 	
 	=============================================================================
 	
+
+{% endraw %}

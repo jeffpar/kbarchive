@@ -6,6 +6,8 @@ permalink: /kb/199/Q199902/
 
 ## Q199902: Encarta 99: Find Feature Finds Words Even When You Misspell Them
 
+{% raw %}
+
 	Article: Q199902
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/199/Q199902/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131698/
 
 ## Q131698: Systems Management Server Executive Service Hangs
 
+{% raw %}
+
 	Article: Q131698
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -71,3 +73,5 @@ permalink: /kb/131/Q131698/
 	
 	=============================================================================
 	
+
+{% endraw %}

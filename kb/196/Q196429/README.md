@@ -6,6 +6,8 @@ permalink: /kb/196/Q196429/
 
 ## Q196429: WD97: Can't Underline Equation Field Below Text Baseline
 
+{% raw %}
+
 	Article: Q196429
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/196/Q196429/
 	
 	=============================================================================
 	
+
+{% endraw %}

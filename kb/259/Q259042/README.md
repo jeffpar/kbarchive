@@ -6,6 +6,8 @@ permalink: /kb/259/Q259042/
 
 ## Q259042: Handle Leak in WinLogon After Applying Windows NT 4.0 SP6
 
+{% raw %}
+
 	Article: Q259042
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6,4.0 SP6a
@@ -73,3 +75,5 @@ permalink: /kb/259/Q259042/
 	
 	=============================================================================
 	
+
+{% endraw %}

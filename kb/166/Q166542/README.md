@@ -6,6 +6,8 @@ permalink: /kb/166/Q166542/
 
 ## Q166542: XADM: Database in Inconsistent State After Soft Recovery
 
+{% raw %}
+
 	Article: Q166542
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -62,3 +64,5 @@ permalink: /kb/166/Q166542/
 	
 	=============================================================================
 	
+
+{% endraw %}

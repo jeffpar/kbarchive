@@ -6,6 +6,8 @@ permalink: /kb/080/Q80275/
 
 ## Q80275: Windows: HP DeskJet Series 2.0 Driver Error Detection
 
+{% raw %}
+
 	Article: Q80275
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -65,3 +67,5 @@ permalink: /kb/080/Q80275/
 	
 	=============================================================================
 	
+
+{% endraw %}

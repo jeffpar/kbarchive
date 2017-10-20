@@ -6,6 +6,8 @@ permalink: /kb/154/Q154268/
 
 ## Q154268: XCLN: Troubleshooting RPC Problems with Windows 3.x Client
 
+{% raw %}
+
 	Article: Q154268
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -210,3 +212,5 @@ permalink: /kb/154/Q154268/
 	
 	=============================================================================
 	
+
+{% endraw %}

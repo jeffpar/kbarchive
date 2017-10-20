@@ -6,6 +6,8 @@ permalink: /kb/136/Q136284/
 
 ## Q136284: How to Find the Size of an .FPT File with Different Blocksizes
 
+{% raw %}
+
 	Article: Q136284
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
@@ -143,3 +145,5 @@ permalink: /kb/136/Q136284/
 	
 	=============================================================================
 	
+
+{% endraw %}

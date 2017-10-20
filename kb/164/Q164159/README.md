@@ -6,6 +6,8 @@ permalink: /kb/164/Q164159/
 
 ## Q164159: Verify Reports Errors When Restoring a Tape Backup
 
+{% raw %}
+
 	Article: Q164159
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/164/Q164159/
 	
 	=============================================================================
 	
+
+{% endraw %}

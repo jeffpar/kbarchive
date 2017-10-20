@@ -6,6 +6,8 @@ permalink: /kb/171/Q171849/
 
 ## Q171849: FIX: Debugger Hangs When Very Long STL Symbol in Watch Window
 
+{% raw %}
+
 	Article: Q171849
 	Product(s): Microsoft C Compiler
 	Version(s): 97
@@ -100,3 +102,5 @@ permalink: /kb/171/Q171849/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99268/
 
 ## Q99268: FDirSync: Err Msg: Error &#91;158&#93; Requestor Not Registered
 
+{% raw %}
+
 	Article: Q99268
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/099/Q99268/
 	
 	=============================================================================
 	
+
+{% endraw %}

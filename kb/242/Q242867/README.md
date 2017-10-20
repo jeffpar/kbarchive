@@ -6,6 +6,8 @@ permalink: /kb/242/Q242867/
 
 ## Q242867: PRB: Compile Error when Declaring MSVSAEventSourceInstaller
 
+{% raw %}
+
 	Article: Q242867
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -105,3 +107,5 @@ permalink: /kb/242/Q242867/
 	
 	=============================================================================
 	
+
+{% endraw %}

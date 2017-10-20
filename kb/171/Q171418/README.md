@@ -6,6 +6,8 @@ permalink: /kb/171/Q171418/
 
 ## Q171418: WD97: Using Word as E-mail Editor in Outlook Changes Word View
 
+{% raw %}
+
 	Article: Q171418
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/171/Q171418/
 	
 	=============================================================================
 	
+
+{% endraw %}

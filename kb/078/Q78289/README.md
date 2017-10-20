@@ -6,6 +6,8 @@ permalink: /kb/078/Q78289/
 
 ## Q78289: LOADHIGH Command with Non MS-DOS Command Interpreter
 
+{% raw %}
+
 	Article: Q78289
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -70,3 +72,5 @@ permalink: /kb/078/Q78289/
 	
 	=============================================================================
 	
+
+{% endraw %}

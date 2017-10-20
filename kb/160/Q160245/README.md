@@ -6,6 +6,8 @@ permalink: /kb/160/Q160245/
 
 ## Q160245: PRB: Apple Guide Help Files Need Type of HELP
 
+{% raw %}
+
 	Article: Q160245
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -111,3 +113,5 @@ permalink: /kb/160/Q160245/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161390/
 
 ## Q161390: PPT: Sample Code to Display the Selection Type
 
+{% raw %}
+
 	Article: Q161390
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -123,3 +125,5 @@ permalink: /kb/161/Q161390/
 	
 	=============================================================================
 	
+
+{% endraw %}

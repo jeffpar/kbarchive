@@ -6,6 +6,8 @@ permalink: /kb/253/Q253698/
 
 ## Q253698: Support WebCast Available: Microsoft Age of Empires II
 
+{% raw %}
+
 	Article: Q253698
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -61,3 +63,5 @@ permalink: /kb/253/Q253698/
 	
 	=============================================================================
 	
+
+{% endraw %}

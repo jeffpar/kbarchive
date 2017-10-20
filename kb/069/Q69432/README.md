@@ -6,6 +6,8 @@ permalink: /kb/069/Q69432/
 
 ## Q69432: Adobe Plus Pack Fonts Print Incorrectly in Ventura for Windows
 
+{% raw %}
+
 	Article: Q69432
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -74,3 +76,5 @@ permalink: /kb/069/Q69432/
 	
 	=============================================================================
 	
+
+{% endraw %}

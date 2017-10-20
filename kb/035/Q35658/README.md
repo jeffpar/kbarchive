@@ -6,6 +6,8 @@ permalink: /kb/035/Q35658/
 
 ## Q35658: &quot;Array Already Dimensioned&quot; if 2nd DIM for Static Array in IF
 
+{% raw %}
+
 	Article: Q35658
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -59,3 +61,5 @@ permalink: /kb/035/Q35658/
 	GW-BASIC Version 3.20 interpreter, since the DIM for the dynamic array
 	in the IF statement is not executed at run time, and the array in line
 	30 defaults to only ten elements.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223774/
 
 ## Q223774: Mplay32.exe Leaks Memory When Playing a MIDI File
 
+{% raw %}
+
 	Article: Q223774
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/223/Q223774/
 	
 	=============================================================================
 	
+
+{% endraw %}

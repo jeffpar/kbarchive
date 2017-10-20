@@ -6,6 +6,8 @@ permalink: /kb/291/Q291375/
 
 ## Q291375: Microsoft Exchange 2000 Server Resource Kit Comments And Correct
 
+{% raw %}
+
 	Article: Q291375
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/291/Q291375/
 	
 	=============================================================================
 	
+
+{% endraw %}

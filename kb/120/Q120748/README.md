@@ -6,6 +6,8 @@ permalink: /kb/120/Q120748/
 
 ## Q120748: Math Rabbit Fails with a General Protection Fault in Windows NT
 
+{% raw %}
+
 	Article: Q120748
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/120/Q120748/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141125/
 
 ## Q141125: Cannot Insert Package into BBS Message
 
+{% raw %}
+
 	Article: Q141125
 	Product(s): The Microsoft Network
 	Version(s): 1.20 1.30
@@ -46,3 +48,5 @@ permalink: /kb/141/Q141125/
 	
 	=============================================================================
 	
+
+{% endraw %}

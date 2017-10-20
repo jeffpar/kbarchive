@@ -6,6 +6,8 @@ permalink: /kb/041/Q41578/
 
 ## Q41578: &quot;st&quot; Is the Floating Point Stack Register in In-Line Assembly
 
+{% raw %}
+
 	Article: Q41578
 	Product(s): See article
 	Version(s): 2.00
@@ -41,3 +43,5 @@ permalink: /kb/041/Q41578/
 	
 	Changing "st" to any other nonreserved name will resolve this
 	situation.
+
+{% endraw %}

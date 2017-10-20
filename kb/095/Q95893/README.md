@@ -6,6 +6,8 @@ permalink: /kb/095/Q95893/
 
 ## Q95893: Summary of CD-ROM Drives and Their Capabilities
 
+{% raw %}
+
 	Article: Q95893
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -297,3 +299,5 @@ permalink: /kb/095/Q95893/
 	
 	=============================================================================
 	
+
+{% endraw %}

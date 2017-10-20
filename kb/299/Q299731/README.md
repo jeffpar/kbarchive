@@ -6,6 +6,8 @@ permalink: /kb/299/Q299731/
 
 ## Q299731: Train Simulator: Clock in Cab Always Displays Time as 1:10
 
+{% raw %}
+
 	Article: Q299731
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -41,3 +43,5 @@ permalink: /kb/299/Q299731/
 	
 	=============================================================================
 	
+
+{% endraw %}

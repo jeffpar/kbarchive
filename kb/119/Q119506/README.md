@@ -6,6 +6,8 @@ permalink: /kb/119/Q119506/
 
 ## Q119506: Transmitting a BREAK Signal
 
+{% raw %}
+
 	Article: Q119506
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -91,3 +93,5 @@ permalink: /kb/119/Q119506/
 	
 	=============================================================================
 	
+
+{% endraw %}

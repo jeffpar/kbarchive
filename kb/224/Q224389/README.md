@@ -6,6 +6,8 @@ permalink: /kb/224/Q224389/
 
 ## Q224389: HTTP Error 403, 403.4, 403.5 Forbidden: SSL Required
 
+{% raw %}
+
 	Article: Q224389
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -114,3 +116,5 @@ permalink: /kb/224/Q224389/
 	
 	=============================================================================
 	
+
+{% endraw %}

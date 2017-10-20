@@ -6,6 +6,8 @@ permalink: /kb/060/Q60956/
 
 ## Q60956: Instruction: The Spin Lesson Needs Ground References
 
+{% raw %}
+
 	Article: Q60956
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/060/Q60956/
 	
 	=============================================================================
 	
+
+{% endraw %}

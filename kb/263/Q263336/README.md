@@ -6,6 +6,8 @@ permalink: /kb/263/Q263336/
 
 ## Q263336: &quot;NOT&quot; Operator May Cause Software Distribution to All Computers
 
+{% raw %}
+
 	Article: Q263336
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -75,3 +77,5 @@ permalink: /kb/263/Q263336/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/079/Q79751/
 
 ## Q79751: Quitting Windows While an MS-DOS-Based Application is Running
 
+{% raw %}
+
 	Article: Q79751
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/079/Q79751/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258656/
 
 ## Q258656: Baseball 2001: Game Screen Is Distorted or Textures Disappear
 
+{% raw %}
+
 	Article: Q258656
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/258/Q258656/
 	
 	=============================================================================
 	
+
+{% endraw %}

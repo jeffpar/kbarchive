@@ -6,6 +6,8 @@ permalink: /kb/124/Q124617/
 
 ## Q124617: Jetpack.exe Error Codes and Messages for Windows NT 3.5
 
+{% raw %}
+
 	Article: Q124617
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5
@@ -752,3 +754,5 @@ permalink: /kb/124/Q124617/
 	
 	=============================================================================
 	
+
+{% endraw %}

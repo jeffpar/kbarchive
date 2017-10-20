@@ -6,6 +6,8 @@ permalink: /kb/230/Q230563/
 
 ## Q230563: XADM: Information Store Crash in FreePadrlist:padrlist
 
+{% raw %}
+
 	Article: Q230563
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -78,3 +80,5 @@ permalink: /kb/230/Q230563/
 	
 	=============================================================================
 	
+
+{% endraw %}

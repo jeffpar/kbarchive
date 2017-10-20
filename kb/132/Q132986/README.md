@@ -6,6 +6,8 @@ permalink: /kb/132/Q132986/
 
 ## Q132986: Damaged Registry Values Prevent Connection to The MS Network
 
+{% raw %}
+
 	Article: Q132986
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -79,3 +81,5 @@ permalink: /kb/132/Q132986/
 	
 	=============================================================================
 	
+
+{% endraw %}

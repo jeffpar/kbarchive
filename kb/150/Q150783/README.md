@@ -6,6 +6,8 @@ permalink: /kb/150/Q150783/
 
 ## Q150783: INF: Testing ODBC Connectivity to Oracle 7.x
 
+{% raw %}
+
 	Article: Q150783
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/150/Q150783/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82862/
 
 ## Q82862: Poor Print Quality in Taxview 1991
 
+{% raw %}
+
 	Article: Q82862
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/082/Q82862/
 	
 	=============================================================================
 	
+
+{% endraw %}

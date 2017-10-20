@@ -6,6 +6,8 @@ permalink: /kb/107/Q107996/
 
 ## Q107996: WFWG 3.11: Real-Mode Redirector and Direct Hosting
 
+{% raw %}
+
 	Article: Q107996
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -104,3 +106,5 @@ permalink: /kb/107/Q107996/
 	
 	=============================================================================
 	
+
+{% endraw %}

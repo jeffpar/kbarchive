@@ -6,6 +6,8 @@ permalink: /kb/262/Q262894/
 
 ## Q262894: SCM Is Unable to Make Updates with Read Option
 
+{% raw %}
+
 	Article: Q262894
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6,4.0 SP6a
@@ -60,3 +62,5 @@ permalink: /kb/262/Q262894/
 	
 	=============================================================================
 	
+
+{% endraw %}

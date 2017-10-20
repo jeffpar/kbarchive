@@ -6,6 +6,8 @@ permalink: /kb/141/Q141833/
 
 ## Q141833: Performance Monitor Reports Wrong Percent of Free Disk Space
 
+{% raw %}
+
 	Article: Q141833
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -77,3 +79,5 @@ permalink: /kb/141/Q141833/
 	
 	=============================================================================
 	
+
+{% endraw %}

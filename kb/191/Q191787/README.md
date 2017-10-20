@@ -6,6 +6,8 @@ permalink: /kb/191/Q191787/
 
 ## Q191787: BUG: Selecting RecordSource for Data Control Causes VB to Hang
 
+{% raw %}
+
 	Article: Q191787
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -67,3 +69,5 @@ permalink: /kb/191/Q191787/
 	
 	=============================================================================
 	
+
+{% endraw %}

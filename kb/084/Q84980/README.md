@@ -6,6 +6,8 @@ permalink: /kb/084/Q84980/
 
 ## Q84980: SAMPLE: XpandDlg.exe Demonstrates Changing Dialog Box Size
 
+{% raw %}
+
 	Article: Q84980
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -65,3 +67,5 @@ permalink: /kb/084/Q84980/
 	
 	=============================================================================
 	
+
+{% endraw %}

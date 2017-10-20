@@ -6,6 +6,8 @@ permalink: /kb/089/Q89665/
 
 ## Q89665: PRB: Cause of &quot;String Memory Variable Area Overflow&quot; Error
 
+{% raw %}
+
 	Article: Q89665
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01; MS-DOS:2.1
@@ -46,3 +48,5 @@ permalink: /kb/089/Q89665/
 	
 	=============================================================================
 	
+
+{% endraw %}

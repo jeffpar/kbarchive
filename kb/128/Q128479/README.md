@@ -6,6 +6,8 @@ permalink: /kb/128/Q128479/
 
 ## Q128479: Baseball 1995: No International Characters in Daily Sign-Up
 
+{% raw %}
+
 	Article: Q128479
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -61,3 +63,5 @@ permalink: /kb/128/Q128479/
 	
 	=============================================================================
 	
+
+{% endraw %}

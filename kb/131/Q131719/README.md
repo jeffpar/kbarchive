@@ -6,6 +6,8 @@ permalink: /kb/131/Q131719/
 
 ## Q131719: Audio CD Continues to Play After Restart
 
+{% raw %}
+
 	Article: Q131719
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/131/Q131719/
 	
 	=============================================================================
 	
+
+{% endraw %}

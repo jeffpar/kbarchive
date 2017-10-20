@@ -6,6 +6,8 @@ permalink: /kb/134/Q134506/
 
 ## Q134506: System Hangs Formatting an Unformatted Floppy Disk
 
+{% raw %}
+
 	Article: Q134506
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134506/
 	
 	=============================================================================
 	
+
+{% endraw %}

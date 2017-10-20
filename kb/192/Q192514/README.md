@@ -6,6 +6,8 @@ permalink: /kb/192/Q192514/
 
 ## Q192514: XFOR: DXA Appends 001 at End of Display Name in MS Mail GAL
 
+{% raw %}
+
 	Article: Q192514
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -96,3 +98,5 @@ permalink: /kb/192/Q192514/
 	
 	=============================================================================
 	
+
+{% endraw %}

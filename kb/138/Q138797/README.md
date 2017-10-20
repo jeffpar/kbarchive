@@ -6,6 +6,8 @@ permalink: /kb/138/Q138797/
 
 ## Q138797: Adjusted Free Space Reflects Slight Amount of Extra Space
 
+{% raw %}
+
 	Article: Q138797
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -43,3 +45,5 @@ permalink: /kb/138/Q138797/
 	
 	=============================================================================
 	
+
+{% endraw %}

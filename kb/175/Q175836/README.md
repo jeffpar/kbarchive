@@ -6,6 +6,8 @@ permalink: /kb/175/Q175836/
 
 ## Q175836: XFOR: Lotus Notes Low Delivery Priority Message Not Delivered
 
+{% raw %}
+
 	Article: Q175836
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -42,3 +44,5 @@ permalink: /kb/175/Q175836/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317642/
 
 ## Q317642: FIX: APPC/CPI-C Applications May Not Switch to Active Connection
 
+{% raw %}
+
 	Article: Q317642
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP4
@@ -158,3 +160,5 @@ permalink: /kb/317/Q317642/
 	
 	=============================================================================
 	
+
+{% endraw %}

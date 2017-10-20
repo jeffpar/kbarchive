@@ -6,6 +6,8 @@ permalink: /kb/242/Q242302/
 
 ## Q242302: Poor Server Performance with High CPU Usage on Terminal Server
 
+{% raw %}
+
 	Article: Q242302
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP5
@@ -66,3 +68,5 @@ permalink: /kb/242/Q242302/
 	
 	=============================================================================
 	
+
+{% endraw %}

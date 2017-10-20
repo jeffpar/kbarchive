@@ -6,6 +6,8 @@ permalink: /kb/082/Q82393/
 
 ## Q82393: VRAM386.SYS, HRAMDEV.SYS Incompatible with Windows
 
+{% raw %}
+
 	Article: Q82393
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82393/
 	
 	=============================================================================
 	
+
+{% endraw %}

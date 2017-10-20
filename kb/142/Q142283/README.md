@@ -6,6 +6,8 @@ permalink: /kb/142/Q142283/
 
 ## Q142283: PRB: Uniqueness of Index Violated When Creating Primary Index
 
+{% raw %}
+
 	Article: Q142283
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -112,3 +114,5 @@ permalink: /kb/142/Q142283/
 	
 	=============================================================================
 	
+
+{% endraw %}

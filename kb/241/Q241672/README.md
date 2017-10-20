@@ -6,6 +6,8 @@ permalink: /kb/241/Q241672/
 
 ## Q241672: File Transfers Between Computers Are Slower Than Expected
 
+{% raw %}
+
 	Article: Q241672
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/241/Q241672/
 	
 	=============================================================================
 	
+
+{% endraw %}

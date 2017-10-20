@@ -6,6 +6,8 @@ permalink: /kb/209/Q209077/
 
 ## Q209077: PRB: CommCtl: No &quot;OK&quot; Received When Using Some Modems
 
+{% raw %}
+
 	Article: Q209077
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -111,3 +113,5 @@ permalink: /kb/209/Q209077/
 	
 	=============================================================================
 	
+
+{% endraw %}

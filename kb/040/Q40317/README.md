@@ -6,6 +6,8 @@ permalink: /kb/040/Q40317/
 
 ## Q40317: QC 2.00 SAMPLES.DOC: Note on Name Convention
 
+{% raw %}
+
 	Article: Q40317
 	Product(s): See article
 	Version(s): 2.00
@@ -27,3 +29,5 @@ permalink: /kb/040/Q40317/
 	beginning with an uppercase letter. For example, an identifier called
 	achFileName is an array (a) of characters (ch) containing a file name
 	(FileName).
+
+{% endraw %}

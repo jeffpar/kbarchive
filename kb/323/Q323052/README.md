@@ -6,6 +6,8 @@ permalink: /kb/323/Q323052/
 
 ## Q323052: PRB: .NET Alerts Code Results in E_DELIVER_FAILED Error
 
+{% raw %}
+
 	Article: Q323052
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/323/Q323052/
 	
 	=============================================================================
 	
+
+{% endraw %}

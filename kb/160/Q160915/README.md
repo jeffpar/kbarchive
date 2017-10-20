@@ -6,6 +6,8 @@ permalink: /kb/160/Q160915/
 
 ## Q160915: WD97: Caption with Chapter Numbering Reset to 1
 
+{% raw %}
+
 	Article: Q160915
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -135,3 +137,5 @@ permalink: /kb/160/Q160915/
 	
 	=============================================================================
 	
+
+{% endraw %}

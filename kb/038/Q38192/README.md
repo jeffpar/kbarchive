@@ -6,6 +6,8 @@ permalink: /kb/038/Q38192/
 
 ## Q38192: Fatal Compile Time Error C1008 No Input File Specified
 
+{% raw %}
+
 	Article: Q38192
 	Product(s): See article
 	Version(s): 1.00   | 1.01
@@ -23,3 +25,5 @@ permalink: /kb/038/Q38192/
 	documentation. The error is produced in the QuickC environment
 	when the compiler is not given a file to compile.  It does not
 	occur with QCL.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139053/
 
 ## Q139053: BUG: Can't Set Some Background/Foreground Colors in InfoViewer
 
+{% raw %}
+
 	Article: Q139053
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139053/
 	
 	=============================================================================
 	
+
+{% endraw %}

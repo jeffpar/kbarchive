@@ -6,6 +6,8 @@ permalink: /kb/123/Q123324/
 
 ## Q123324: File Transfer Protocols Supported by HyperTerminal
 
+{% raw %}
+
 	Article: Q123324
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/123/Q123324/
 	
 	=============================================================================
 	
+
+{% endraw %}

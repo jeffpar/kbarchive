@@ -6,6 +6,8 @@ permalink: /kb/069/Q69216/
 
 ## Q69216: How to Change Attributes of Subdirectories in a C Program
 
+{% raw %}
+
 	Article: Q69216
 	Product(s): See article
 	Version(s): 3.x 4.x 5.x 6.00 6.00a | 5.10 6.00 6.00a
@@ -93,3 +95,5 @@ permalink: /kb/069/Q69216/
 	      DosSetFileMode( "\\foo", newattr, 0L );
 	      }
 	}
+
+{% endraw %}

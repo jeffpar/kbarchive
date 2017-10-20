@@ -6,6 +6,8 @@ permalink: /kb/165/Q165153/
 
 ## Q165153: SNA Server Name Cannot Be Changed in Manager
 
+{% raw %}
+
 	Article: Q165153
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/165/Q165153/
 	
 	=============================================================================
 	
+
+{% endraw %}

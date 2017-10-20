@@ -6,6 +6,8 @@ permalink: /kb/194/Q194410/
 
 ## Q194410: XWEB: No Response Buttons in Meeting Request in OWA
 
+{% raw %}
+
 	Article: Q194410
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -51,3 +53,5 @@ permalink: /kb/194/Q194410/
 	
 	=============================================================================
 	
+
+{% endraw %}

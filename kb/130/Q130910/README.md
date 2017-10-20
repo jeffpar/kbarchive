@@ -6,6 +6,8 @@ permalink: /kb/130/Q130910/
 
 ## Q130910: TSRs Knows to Conflict with USERTSR(IPX)
 
+{% raw %}
+
 	Article: Q130910
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -42,3 +44,5 @@ permalink: /kb/130/Q130910/
 	
 	=============================================================================
 	
+
+{% endraw %}

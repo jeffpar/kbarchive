@@ -6,6 +6,8 @@ permalink: /kb/142/Q142508/
 
 ## Q142508: SAMPLE: Sys0.exe with DLL that Retrieves a Novell Machine Name
 
+{% raw %}
+
 	Article: Q142508
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142508/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216249/
 
 ## Q216249: DNS Client Does Not Try All Servers in the DNS Service List
 
+{% raw %}
+
 	Article: Q216249
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -100,3 +102,5 @@ permalink: /kb/216/Q216249/
 	
 	=============================================================================
 	
+
+{% endraw %}

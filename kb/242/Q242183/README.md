@@ -6,6 +6,8 @@ permalink: /kb/242/Q242183/
 
 ## Q242183: Cisco Cable Modem Cannot Receive IP Address from DHCP Server
 
+{% raw %}
+
 	Article: Q242183
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/242/Q242183/
 	
 	=============================================================================
 	
+
+{% endraw %}

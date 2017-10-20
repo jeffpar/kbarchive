@@ -6,6 +6,8 @@ permalink: /kb/207/Q207132/
 
 ## Q207132: INFO: How Regsvr32.exe Registers and Unregisters COM DLLs
 
+{% raw %}
+
 	Article: Q207132
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2000; :4.0; winnt:4.0
@@ -341,3 +343,5 @@ permalink: /kb/207/Q207132/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/311/Q311350/
 
 ## Q311350: HOW TO: Create a Custom Server Type for Use with the IIS Lockdow
 
+{% raw %}
+
 	Article: Q311350
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -131,3 +133,5 @@ permalink: /kb/311/Q311350/
 	
 	=============================================================================
 	
+
+{% endraw %}

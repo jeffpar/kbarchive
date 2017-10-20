@@ -6,6 +6,8 @@ permalink: /kb/058/Q58963/
 
 ## Q58963: UI Toolbox Shortcut Keys Documentation Error in BASIC 7.00
 
+{% raw %}
+
 	Article: Q58963
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -24,3 +26,5 @@ permalink: /kb/058/Q58963/
 	This information applies to the User Interface (UI) Toolbox in
 	Microsoft BASIC Professional Development System (PDS) Versions 7.00
 	and 7.10 for MS-DOS.
+
+{% endraw %}

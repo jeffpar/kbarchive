@@ -6,6 +6,8 @@ permalink: /kb/117/Q117903/
 
 ## Q117903: FIX: Incorrect Floating-Point Calculations with /Ox and /Op
 
+{% raw %}
+
 	Article: Q117903
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -75,3 +77,5 @@ permalink: /kb/117/Q117903/
 	
 	=============================================================================
 	
+
+{% endraw %}

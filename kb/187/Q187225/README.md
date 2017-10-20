@@ -6,6 +6,8 @@ permalink: /kb/187/Q187225/
 
 ## Q187225: XCON: Clustered MTA Generates Socket Errors w/X.400 Connections
 
+{% raw %}
+
 	Article: Q187225
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -60,3 +62,5 @@ permalink: /kb/187/Q187225/
 	
 	=============================================================================
 	
+
+{% endraw %}

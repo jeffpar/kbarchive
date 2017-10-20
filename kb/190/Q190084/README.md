@@ -6,6 +6,8 @@ permalink: /kb/190/Q190084/
 
 ## Q190084: XFOR: 12006 and 4117 Errors when IMS Receives an SMTP Message
 
+{% raw %}
+
 	Article: Q190084
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -123,3 +125,5 @@ permalink: /kb/190/Q190084/
 	
 	=============================================================================
 	
+
+{% endraw %}

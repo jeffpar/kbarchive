@@ -6,6 +6,8 @@ permalink: /kb/140/Q140573/
 
 ## Q140573: FIX: F4 to Go to Error/Tag Doesn't Always Open Source File
 
+{% raw %}
+
 	Article: Q140573
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/140/Q140573/
 	
 	=============================================================================
 	
+
+{% endraw %}

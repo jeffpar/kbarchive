@@ -6,6 +6,8 @@ permalink: /kb/177/Q177785/
 
 ## Q177785: Err Msg: Event ID 7000: Spooler Service Failed to Start...
 
+{% raw %}
+
 	Article: Q177785
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -83,3 +85,5 @@ permalink: /kb/177/Q177785/
 	
 	=============================================================================
 	
+
+{% endraw %}

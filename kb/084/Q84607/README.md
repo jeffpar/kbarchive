@@ -6,6 +6,8 @@ permalink: /kb/084/Q84607/
 
 ## Q84607: &quot;Setup Unable to Copy...WIN.SRC,&quot; &quot;Setup Error #5&quot; Messages
 
+{% raw %}
+
 	Article: Q84607
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -92,3 +94,5 @@ permalink: /kb/084/Q84607/
 	
 	=============================================================================
 	
+
+{% endraw %}

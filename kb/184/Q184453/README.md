@@ -6,6 +6,8 @@ permalink: /kb/184/Q184453/
 
 ## Q184453: IE 4 Technical Support Training Comments and Corrections
 
+{% raw %}
+
 	Article: Q184453
 	Product(s): Microsoft Press
 	Version(s): 
@@ -297,3 +299,5 @@ permalink: /kb/184/Q184453/
 	
 	=============================================================================
 	
+
+{% endraw %}

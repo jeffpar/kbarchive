@@ -6,6 +6,8 @@ permalink: /kb/236/Q236925/
 
 ## Q236925: Windows NT Network Administration Training Comments and Correcti
 
+{% raw %}
+
 	Article: Q236925
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/236/Q236925/
 	
 	=============================================================================
 	
+
+{% endraw %}

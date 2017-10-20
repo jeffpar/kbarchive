@@ -6,6 +6,8 @@ permalink: /kb/066/Q66051/
 
 ## Q66051: C 6.00 Optimization Pops Too Much Off Stack in Some Situations
 
+{% raw %}
+
 	Article: Q66051
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -164,3 +166,5 @@ permalink: /kb/066/Q66051/
 	    *** 00004e  9a 00 00 00 00  call  FAR PTR _d_rectangle
 	    *** 000053  83 c4 26     add  sp,38
 	;|***   return 0;
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122931/
 
 ## Q122931: ADT2: How to Display a README.TXT File at the End of Setup
 
+{% raw %}
+
 	Article: Q122931
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -79,3 +81,5 @@ permalink: /kb/122/Q122931/
 	
 	=============================================================================
 	
+
+{% endraw %}

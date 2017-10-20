@@ -6,6 +6,8 @@ permalink: /kb/139/Q139355/
 
 ## Q139355: WINMGT.H Problems with Win32 Structure Packing
 
+{% raw %}
+
 	Article: Q139355
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -79,3 +81,5 @@ permalink: /kb/139/Q139355/
 	
 	=============================================================================
 	
+
+{% endraw %}

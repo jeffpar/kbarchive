@@ -6,6 +6,8 @@ permalink: /kb/150/Q150993/
 
 ## Q150993: Complete Gardening: Printout of Shopping List Truncated
 
+{% raw %}
+
 	Article: Q150993
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/150/Q150993/
 	
 	=============================================================================
 	
+
+{% endraw %}

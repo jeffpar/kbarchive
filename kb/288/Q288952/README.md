@@ -6,6 +6,8 @@ permalink: /kb/288/Q288952/
 
 ## Q288952: XADM:  Error 2186 When Starting the Information Store Service
 
+{% raw %}
+
 	Article: Q288952
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -107,3 +109,5 @@ permalink: /kb/288/Q288952/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241104/
 
 ## Q241104: COM Internet Services Causes Memory Leaks in IIS
 
+{% raw %}
+
 	Article: Q241104
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6
@@ -82,3 +84,5 @@ permalink: /kb/241/Q241104/
 	
 	=============================================================================
 	
+
+{% endraw %}

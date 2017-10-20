@@ -6,6 +6,8 @@ permalink: /kb/087/Q87195/
 
 ## Q87195: PROFS: Memory Required on the Gateway PC
 
+{% raw %}
+
 	Article: Q87195
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -41,3 +43,5 @@ permalink: /kb/087/Q87195/
 	
 	=============================================================================
 	
+
+{% endraw %}

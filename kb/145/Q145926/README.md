@@ -6,6 +6,8 @@ permalink: /kb/145/Q145926/
 
 ## Q145926: How to Troubleshoot Windows 95 Shutdown Problems
 
+{% raw %}
+
 	Article: Q145926
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -467,3 +469,5 @@ permalink: /kb/145/Q145926/
 	
 	=============================================================================
 	
+
+{% endraw %}

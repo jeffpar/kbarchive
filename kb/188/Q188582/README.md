@@ -6,6 +6,8 @@ permalink: /kb/188/Q188582/
 
 ## Q188582: HOWTO: Deploy an ActiveX Control with License Information
 
+{% raw %}
+
 	Article: Q188582
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -110,3 +112,5 @@ permalink: /kb/188/Q188582/
 	
 	=============================================================================
 	
+
+{% endraw %}

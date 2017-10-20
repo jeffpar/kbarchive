@@ -6,6 +6,8 @@ permalink: /kb/164/Q164127/
 
 ## Q164127: OLE Error Running Applications After Applying SP2
 
+{% raw %}
+
 	Article: Q164127
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/164/Q164127/
 	
 	=============================================================================
 	
+
+{% endraw %}

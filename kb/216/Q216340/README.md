@@ -6,6 +6,8 @@ permalink: /kb/216/Q216340/
 
 ## Q216340: XFOR: Cannot Install 5.5 SP2 Connectors after GroupWise
 
+{% raw %}
+
 	Article: Q216340
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/216/Q216340/
 	
 	=============================================================================
 	
+
+{% endraw %}

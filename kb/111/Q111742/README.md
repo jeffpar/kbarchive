@@ -6,6 +6,8 @@ permalink: /kb/111/Q111742/
 
 ## Q111742: PRINTERS.WRI from Windows for Workgroups 3.11 (Part 2)
 
+{% raw %}
+
 	Article: Q111742
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -441,3 +443,5 @@ permalink: /kb/111/Q111742/
 	
 	=============================================================================
 	
+
+{% endraw %}

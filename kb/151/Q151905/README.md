@@ -6,6 +6,8 @@ permalink: /kb/151/Q151905/
 
 ## Q151905: Problems Deleting Directory After FPNW Share
 
+{% raw %}
+
 	Article: Q151905
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -62,3 +64,5 @@ permalink: /kb/151/Q151905/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173432/
 
 ## Q173432: WD97: Web Page Wizard Creates Unnecessary Copies of Image Files
 
+{% raw %}
+
 	Article: Q173432
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/173/Q173432/
 	
 	=============================================================================
 	
+
+{% endraw %}

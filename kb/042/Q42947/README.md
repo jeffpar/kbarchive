@@ -6,6 +6,8 @@ permalink: /kb/042/Q42947/
 
 ## Q42947: Instant Watch on &#36;INCLUDE File CONST Name May Hang QB.EXE
 
+{% raw %}
+
 	Article: Q42947
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/042/Q42947/
 	   command.
 	
 	Additional reference word: B_BASICCOM
+
+{% endraw %}

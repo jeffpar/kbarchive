@@ -6,6 +6,8 @@ permalink: /kb/163/Q163257/
 
 ## Q163257: XADM: Dr. Watson, AV When You Create X.400 Address
 
+{% raw %}
+
 	Article: Q163257
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -77,3 +79,5 @@ permalink: /kb/163/Q163257/
 	
 	=============================================================================
 	
+
+{% endraw %}

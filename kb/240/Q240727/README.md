@@ -6,6 +6,8 @@ permalink: /kb/240/Q240727/
 
 ## Q240727: How to Use the FTP Utility in a Typical Session
 
+{% raw %}
+
 	Article: Q240727
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -181,3 +183,5 @@ permalink: /kb/240/Q240727/
 	
 	=============================================================================
 	
+
+{% endraw %}

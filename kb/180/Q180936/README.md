@@ -6,6 +6,8 @@ permalink: /kb/180/Q180936/
 
 ## Q180936: HOWTO: Position a MsgBox Using a Windows Hook Procedure
 
+{% raw %}
+
 	Article: Q180936
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -173,3 +175,5 @@ permalink: /kb/180/Q180936/
 	
 	=============================================================================
 	
+
+{% endraw %}

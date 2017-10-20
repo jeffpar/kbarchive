@@ -6,6 +6,8 @@ permalink: /kb/122/Q122675/
 
 ## Q122675: BUG: Wrong Operator Delete Called for Exported Class
 
+{% raw %}
+
 	Article: Q122675
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,4.1,4.2,5.0
@@ -303,3 +305,5 @@ permalink: /kb/122/Q122675/
 	
 	=============================================================================
 	
+
+{% endraw %}

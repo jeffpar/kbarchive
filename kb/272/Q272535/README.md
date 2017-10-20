@@ -6,6 +6,8 @@ permalink: /kb/272/Q272535/
 
 ## Q272535: XFOR: Notes Dirsync Does Not Work After Resetting Pcta.tbl Files
 
+{% raw %}
+
 	Article: Q272535
 	Product(s): Microsoft Exchange
 	Version(s): 3.2
@@ -73,3 +75,5 @@ permalink: /kb/272/Q272535/
 	
 	=============================================================================
 	
+
+{% endraw %}

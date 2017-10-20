@@ -6,6 +6,8 @@ permalink: /kb/126/Q126751/
 
 ## Q126751: FIX: Scribble File Extension Conflicts with Screen Savers
 
+{% raw %}
+
 	Article: Q126751
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1
@@ -97,3 +99,5 @@ permalink: /kb/126/Q126751/
 	
 	=============================================================================
 	
+
+{% endraw %}

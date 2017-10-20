@@ -6,6 +6,8 @@ permalink: /kb/174/Q174481/
 
 ## Q174481: Phantom Zone Appears in the Chooser List
 
+{% raw %}
+
 	Article: Q174481
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -96,3 +98,5 @@ permalink: /kb/174/Q174481/
 	
 	=============================================================================
 	
+
+{% endraw %}

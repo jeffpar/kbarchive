@@ -6,6 +6,8 @@ permalink: /kb/171/Q171977/
 
 ## Q171977: WD97: When You Quit Word, It Hangs or Stops Responding
 
+{% raw %}
+
 	Article: Q171977
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/171/Q171977/
 	
 	=============================================================================
 	
+
+{% endraw %}

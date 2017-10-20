@@ -6,6 +6,8 @@ permalink: /kb/113/Q113420/
 
 ## Q113420: BUG: A2008 When Angle Brackets Missing on FOR Argument List
 
+{% raw %}
+
 	Article: Q113420
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -92,3 +94,5 @@ permalink: /kb/113/Q113420/
 	
 	=============================================================================
 	
+
+{% endraw %}

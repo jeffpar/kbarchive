@@ -6,6 +6,8 @@ permalink: /kb/172/Q172590/
 
 ## Q172590: WD97: Unable to Insert Objects into Table Cell
 
+{% raw %}
+
 	Article: Q172590
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -117,3 +119,5 @@ permalink: /kb/172/Q172590/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174212/
 
 ## Q174212: FIX: ActiveForm Returns Wrong Form
 
+{% raw %}
+
 	Article: Q174212
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/174/Q174212/
 	
 	=============================================================================
 	
+
+{% endraw %}

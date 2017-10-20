@@ -6,6 +6,8 @@ permalink: /kb/171/Q171780/
 
 ## Q171780: How to Use WinDiff to Compare Registry Files
 
+{% raw %}
+
 	Article: Q171780
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -77,3 +79,5 @@ permalink: /kb/171/Q171780/
 	
 	=============================================================================
 	
+
+{% endraw %}

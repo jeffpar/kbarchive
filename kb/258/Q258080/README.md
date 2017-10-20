@@ -6,6 +6,8 @@ permalink: /kb/258/Q258080/
 
 ## Q258080: Digital Drives and Drive Letters Disappear with Clustered Server
 
+{% raw %}
+
 	Article: Q258080
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/258/Q258080/
 	
 	=============================================================================
 	
+
+{% endraw %}

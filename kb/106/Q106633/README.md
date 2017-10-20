@@ -6,6 +6,8 @@ permalink: /kb/106/Q106633/
 
 ## Q106633: BUG: Sample Code for GRDEMO Contains Errors
 
+{% raw %}
+
 	Article: Q106633
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/106/Q106633/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192824/
 
 ## Q192824: SMS: WinNT Clients Not Supported Under NetWare Logon Servers
 
+{% raw %}
+
 	Article: Q192824
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -68,3 +70,5 @@ permalink: /kb/192/Q192824/
 	
 	=============================================================================
 	
+
+{% endraw %}

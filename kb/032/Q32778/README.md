@@ -6,6 +6,8 @@ permalink: /kb/032/Q32778/
 
 ## Q32778: C4001 and C4074 &quot;Function Given File Scope&quot; Warnings
 
+{% raw %}
+
 	Article: Q32778
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -41,3 +43,5 @@ permalink: /kb/032/Q32778/
 	 {
 	 void foo(int x);
 	 }
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179707/
 
 ## Q179707: BUG: Pressing TAB Key on Form Does Not Change Focus
 
+{% raw %}
+
 	Article: Q179707
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -160,3 +162,5 @@ permalink: /kb/179/Q179707/
 	
 	=============================================================================
 	
+
+{% endraw %}

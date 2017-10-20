@@ -6,6 +6,8 @@ permalink: /kb/224/Q224388/
 
 ## Q224388: SMS: Slownet Determines Network Speed at Logon
 
+{% raw %}
+
 	Article: Q224388
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -243,3 +245,5 @@ permalink: /kb/224/Q224388/
 	
 	=============================================================================
 	
+
+{% endraw %}

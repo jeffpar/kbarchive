@@ -6,6 +6,8 @@ permalink: /kb/251/Q251323/
 
 ## Q251323: XCLN: Rule to Forward E-mail Shows Wrong Sent Time for Recipient
 
+{% raw %}
+
 	Article: Q251323
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -58,3 +60,5 @@ permalink: /kb/251/Q251323/
 	
 	=============================================================================
 	
+
+{% endraw %}

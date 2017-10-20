@@ -6,6 +6,8 @@ permalink: /kb/123/Q123085/
 
 ## Q123085: ADT2: Creating Custom Setup That Does Not Create Program Group
 
+{% raw %}
+
 	Article: Q123085
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -86,3 +88,5 @@ permalink: /kb/123/Q123085/
 	
 	=============================================================================
 	
+
+{% endraw %}

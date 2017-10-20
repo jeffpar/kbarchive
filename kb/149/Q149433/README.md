@@ -6,6 +6,8 @@ permalink: /kb/149/Q149433/
 
 ## Q149433: How to Stop a Form from Loading
 
+{% raw %}
+
 	Article: Q149433
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -51,3 +53,5 @@ permalink: /kb/149/Q149433/
 	
 	=============================================================================
 	
+
+{% endraw %}

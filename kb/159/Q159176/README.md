@@ -6,6 +6,8 @@ permalink: /kb/159/Q159176/
 
 ## Q159176: XADM: Store Stops Responding with High CPU Usage
 
+{% raw %}
+
 	Article: Q159176
 	Product(s): Microsoft Exchange
 	Version(s): winnt:3.51,4.0
@@ -103,3 +105,5 @@ permalink: /kb/159/Q159176/
 	
 	=============================================================================
 	
+
+{% endraw %}

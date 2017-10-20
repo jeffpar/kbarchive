@@ -6,6 +6,8 @@ permalink: /kb/260/Q260522/
 
 ## Q260522: SMS: Cannot Target Software to Windows NT 4.0 SP6 x86 Computers
 
+{% raw %}
+
 	Article: Q260522
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/260/Q260522/
 	
 	=============================================================================
 	
+
+{% endraw %}

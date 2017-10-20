@@ -6,6 +6,8 @@ permalink: /kb/114/Q114579/
 
 ## Q114579: Word 6.0 for Windows Tutorial Does Not Run on Windows NT
 
+{% raw %}
+
 	Article: Q114579
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -47,3 +49,5 @@ permalink: /kb/114/Q114579/
 	
 	=============================================================================
 	
+
+{% endraw %}

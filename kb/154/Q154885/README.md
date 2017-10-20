@@ -6,6 +6,8 @@ permalink: /kb/154/Q154885/
 
 ## Q154885: PRB: Tabbing Problem When Sheridan SSTab Control Hosts OCXs
 
+{% raw %}
+
 	Article: Q154885
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -141,3 +143,5 @@ permalink: /kb/154/Q154885/
 	
 	=============================================================================
 	
+
+{% endraw %}

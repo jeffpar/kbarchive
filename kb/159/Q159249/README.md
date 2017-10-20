@@ -6,6 +6,8 @@ permalink: /kb/159/Q159249/
 
 ## Q159249: INSIDE VISUAL C++ VER 4 (3RD ED) Corrections and Comments
 
+{% raw %}
+
 	Article: Q159249
 	Product(s): Microsoft Press
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/159/Q159249/
 	
 	=============================================================================
 	
+
+{% endraw %}

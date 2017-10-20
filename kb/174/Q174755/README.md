@@ -6,6 +6,8 @@ permalink: /kb/174/Q174755/
 
 ## Q174755: XFOR: ResolveP2 Registry Setting Expanded in Exchange 5.5
 
+{% raw %}
+
 	Article: Q174755
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -55,3 +57,5 @@ permalink: /kb/174/Q174755/
 	
 	=============================================================================
 	
+
+{% endraw %}

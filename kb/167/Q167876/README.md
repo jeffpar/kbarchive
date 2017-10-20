@@ -6,6 +6,8 @@ permalink: /kb/167/Q167876/
 
 ## Q167876: WD97: Documents Collection Fails When Document Is Closed
 
+{% raw %}
+
 	Article: Q167876
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -138,3 +140,5 @@ permalink: /kb/167/Q167876/
 	
 	=============================================================================
 	
+
+{% endraw %}

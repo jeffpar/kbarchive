@@ -6,6 +6,8 @@ permalink: /kb/178/Q178556/
 
 ## Q178556: Seagate Tape Will Not Autoeject After NTBackup Finishes
 
+{% raw %}
+
 	Article: Q178556
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -49,3 +51,5 @@ permalink: /kb/178/Q178556/
 	
 	=============================================================================
 	
+
+{% endraw %}

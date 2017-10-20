@@ -6,6 +6,8 @@ permalink: /kb/139/Q139422/
 
 ## Q139422: FIX: Advanced Options for SDI Application in Appwizard
 
+{% raw %}
+
 	Article: Q139422
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -128,3 +130,5 @@ permalink: /kb/139/Q139422/
 	
 	=============================================================================
 	
+
+{% endraw %}

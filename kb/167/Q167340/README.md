@@ -6,6 +6,8 @@ permalink: /kb/167/Q167340/
 
 ## Q167340: FIX: ATL Control Causes Access Violation In Visual Basic 5.0
 
+{% raw %}
+
 	Article: Q167340
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,5.0
@@ -90,3 +92,5 @@ permalink: /kb/167/Q167340/
 	
 	=============================================================================
 	
+
+{% endraw %}

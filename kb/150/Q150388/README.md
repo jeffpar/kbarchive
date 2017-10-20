@@ -6,6 +6,8 @@ permalink: /kb/150/Q150388/
 
 ## Q150388: XCLN: Netware Compatible Shell is not Available
 
+{% raw %}
+
 	Article: Q150388
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -94,3 +96,5 @@ permalink: /kb/150/Q150388/
 	
 	=============================================================================
 	
+
+{% endraw %}

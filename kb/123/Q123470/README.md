@@ -6,6 +6,8 @@ permalink: /kb/123/Q123470/
 
 ## Q123470: INFO: How SourceSafe Selects a Viewer for a File
 
+{% raw %}
+
 	Article: Q123470
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/123/Q123470/
 	
 	=============================================================================
 	
+
+{% endraw %}

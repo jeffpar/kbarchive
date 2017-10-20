@@ -6,6 +6,8 @@ permalink: /kb/162/Q162155/
 
 ## Q162155: XCLN: Err Msg: Logon Failed Due to the Runtime Error 4
 
+{% raw %}
+
 	Article: Q162155
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162155/
 	
 	=============================================================================
 	
+
+{% endraw %}

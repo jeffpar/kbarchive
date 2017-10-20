@@ -6,6 +6,8 @@ permalink: /kb/239/Q239044/
 
 ## Q239044: Removing Application Settings from IISADMIN Causes Error
 
+{% raw %}
+
 	Article: Q239044
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -68,3 +70,5 @@ permalink: /kb/239/Q239044/
 	
 	=============================================================================
 	
+
+{% endraw %}

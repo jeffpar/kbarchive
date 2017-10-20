@@ -6,6 +6,8 @@ permalink: /kb/088/Q88991/
 
 ## Q88991: Visual Basic for MS-DOS: Memory Management Questions &amp; Answers
 
+{% raw %}
+
 	Article: Q88991
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): MS-DOS:1.0
@@ -153,3 +155,5 @@ permalink: /kb/088/Q88991/
 	
 	=============================================================================
 	
+
+{% endraw %}

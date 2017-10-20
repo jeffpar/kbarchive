@@ -6,6 +6,8 @@ permalink: /kb/124/Q124291/
 
 ## Q124291: FIX: Access Violation When Using Local Static Const Objects
 
+{% raw %}
+
 	Article: Q124291
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0
@@ -85,3 +87,5 @@ permalink: /kb/124/Q124291/
 	
 	=============================================================================
 	
+
+{% endraw %}

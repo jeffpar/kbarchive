@@ -6,6 +6,8 @@ permalink: /kb/130/Q130713/
 
 ## Q130713: How to Use Collection Array Property for Object Container
 
+{% raw %}
+
 	Article: Q130713
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/130/Q130713/
 	
 	=============================================================================
 	
+
+{% endraw %}

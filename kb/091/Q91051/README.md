@@ -6,6 +6,8 @@ permalink: /kb/091/Q91051/
 
 ## Q91051: WFWG Logo Screen Has An Unexpected Blue Cursor
 
+{% raw %}
+
 	Article: Q91051
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -45,3 +47,5 @@ permalink: /kb/091/Q91051/
 	
 	=============================================================================
 	
+
+{% endraw %}

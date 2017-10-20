@@ -6,6 +6,8 @@ permalink: /kb/066/Q66246/
 
 ## Q66246: SAMPLE: Twins.exe Uses RegisterWindowMessage for Interapp Comm.
 
+{% raw %}
+
 	Article: Q66246
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/066/Q66246/
 	
 	=============================================================================
 	
+
+{% endraw %}

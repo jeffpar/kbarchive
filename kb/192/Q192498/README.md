@@ -6,6 +6,8 @@ permalink: /kb/192/Q192498/
 
 ## Q192498: SMS: Repackage of Netscape Communicator 4.03 Fails to Show Icons
 
+{% raw %}
+
 	Article: Q192498
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -98,3 +100,5 @@ permalink: /kb/192/Q192498/
 	
 	=============================================================================
 	
+
+{% endraw %}

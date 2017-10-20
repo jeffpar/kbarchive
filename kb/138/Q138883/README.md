@@ -6,6 +6,8 @@ permalink: /kb/138/Q138883/
 
 ## Q138883: Writer: Document Prints Landscape/Portrait Incorrectly with HP
 
+{% raw %}
+
 	Article: Q138883
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -109,3 +111,5 @@ permalink: /kb/138/Q138883/
 	
 	=============================================================================
 	
+
+{% endraw %}

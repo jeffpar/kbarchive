@@ -6,6 +6,8 @@ permalink: /kb/234/Q234953/
 
 ## Q234953: Windows 2000 Beta Training Kit Comments and Corrections
 
+{% raw %}
+
 	Article: Q234953
 	Product(s): Microsoft Press
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/234/Q234953/
 	
 	=============================================================================
 	
+
+{% endraw %}

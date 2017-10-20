@@ -6,6 +6,8 @@ permalink: /kb/129/Q129297/
 
 ## Q129297: Cannot Connect to The Microsoft Network in Safe Mode
 
+{% raw %}
+
 	Article: Q129297
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -48,3 +50,5 @@ permalink: /kb/129/Q129297/
 	
 	=============================================================================
 	
+
+{% endraw %}

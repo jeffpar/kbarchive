@@ -6,6 +6,8 @@ permalink: /kb/074/Q74591/
 
 ## Q74591: Search Command in File Manager Finds Hidden Files
 
+{% raw %}
+
 	Article: Q74591
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/074/Q74591/
 	
 	=============================================================================
 	
+
+{% endraw %}

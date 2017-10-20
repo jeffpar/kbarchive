@@ -6,6 +6,8 @@ permalink: /kb/138/Q138860/
 
 ## Q138860: SNA Server Events 94 and 592 Fill Up Application Log
 
+{% raw %}
+
 	Article: Q138860
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -111,3 +113,5 @@ permalink: /kb/138/Q138860/
 	
 	=============================================================================
 	
+
+{% endraw %}

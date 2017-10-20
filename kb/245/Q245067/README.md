@@ -6,6 +6,8 @@ permalink: /kb/245/Q245067/
 
 ## Q245067: Cannot Synchronize Time on a Cluster
 
+{% raw %}
+
 	Article: Q245067
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -103,3 +105,5 @@ permalink: /kb/245/Q245067/
 	
 	=============================================================================
 	
+
+{% endraw %}

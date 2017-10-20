@@ -6,6 +6,8 @@ permalink: /kb/103/Q103032/
 
 ## Q103032: PRB: &quot;RUN/! Command Failed&quot; with Windows NT
 
+{% raw %}
+
 	Article: Q103032
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 2.60 3.00
@@ -67,3 +69,5 @@ permalink: /kb/103/Q103032/
 	
 	=============================================================================
 	
+
+{% endraw %}

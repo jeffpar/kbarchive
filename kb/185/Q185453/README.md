@@ -6,6 +6,8 @@ permalink: /kb/185/Q185453/
 
 ## Q185453: HOWTO: Associate a File Extension with Your Application (Win32)
 
+{% raw %}
+
 	Article: Q185453
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/185/Q185453/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104062/
 
 ## Q104062: PC WSPlus: IBM Matrix Incorrectly Prints Right Border
 
+{% raw %}
+
 	Article: Q104062
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -43,3 +45,5 @@ permalink: /kb/104/Q104062/
 	
 	=============================================================================
 	
+
+{% endraw %}

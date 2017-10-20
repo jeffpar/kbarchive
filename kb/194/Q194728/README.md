@@ -6,6 +6,8 @@ permalink: /kb/194/Q194728/
 
 ## Q194728: INFO: Coverage Profiler Add-Ins Considerations
 
+{% raw %}
+
 	Article: Q194728
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -115,3 +117,5 @@ permalink: /kb/194/Q194728/
 	
 	=============================================================================
 	
+
+{% endraw %}

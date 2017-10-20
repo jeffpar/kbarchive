@@ -6,6 +6,8 @@ permalink: /kb/111/Q111908/
 
 ## Q111908: DoubleSpace Err Msg: DBLSPACE.&lt;nnn&gt; Is Not a Valid CVF
 
+{% raw %}
+
 	Article: Q111908
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -88,3 +90,5 @@ permalink: /kb/111/Q111908/
 	
 	=============================================================================
 	
+
+{% endraw %}

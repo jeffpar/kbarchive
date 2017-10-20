@@ -6,6 +6,8 @@ permalink: /kb/236/Q236141/
 
 ## Q236141: Selecting File Path Through Multiple Windows Closes Backup
 
+{% raw %}
+
 	Article: Q236141
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP3
@@ -87,3 +89,5 @@ permalink: /kb/236/Q236141/
 	
 	=============================================================================
 	
+
+{% endraw %}

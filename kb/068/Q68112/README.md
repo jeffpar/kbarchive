@@ -6,6 +6,8 @@ permalink: /kb/068/Q68112/
 
 ## Q68112: ASD: Coordinate Systems Available
 
+{% raw %}
+
 	Article: Q68112
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/068/Q68112/
 	
 	=============================================================================
 	
+
+{% endraw %}

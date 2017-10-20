@@ -6,6 +6,8 @@ permalink: /kb/115/Q115404/
 
 ## Q115404: ErrMsgs After Upgrade:&quot;Port Is Currently...&quot; or &quot;System Error&quot;
 
+{% raw %}
+
 	Article: Q115404
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -69,3 +71,5 @@ permalink: /kb/115/Q115404/
 	
 	=============================================================================
 	
+
+{% endraw %}

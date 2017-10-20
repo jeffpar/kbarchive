@@ -6,6 +6,8 @@ permalink: /kb/288/Q288222/
 
 ## Q288222: HOWTO: Create a Transparent Framer Control
 
+{% raw %}
+
 	Article: Q288222
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -216,3 +218,5 @@ permalink: /kb/288/Q288222/
 	
 	=============================================================================
 	
+
+{% endraw %}

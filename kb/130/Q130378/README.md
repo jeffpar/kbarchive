@@ -6,6 +6,8 @@ permalink: /kb/130/Q130378/
 
 ## Q130378: Mouse Connected to Disabled COM Port Functions Properly
 
+{% raw %}
+
 	Article: Q130378
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130378/
 	
 	=============================================================================
 	
+
+{% endraw %}

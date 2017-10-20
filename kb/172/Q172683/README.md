@@ -6,6 +6,8 @@ permalink: /kb/172/Q172683/
 
 ## Q172683: SNA Manager Traps When Editing LUA Properties TN3270 Tab
 
+{% raw %}
+
 	Article: Q172683
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -88,3 +90,5 @@ permalink: /kb/172/Q172683/
 	
 	=============================================================================
 	
+
+{% endraw %}

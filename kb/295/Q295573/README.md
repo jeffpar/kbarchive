@@ -6,6 +6,8 @@ permalink: /kb/295/Q295573/
 
 ## Q295573: Random Access Violation in RPC Client in Low-Memory Conditions
 
+{% raw %}
+
 	Article: Q295573
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -103,3 +105,5 @@ permalink: /kb/295/Q295573/
 	
 	=============================================================================
 	
+
+{% endraw %}

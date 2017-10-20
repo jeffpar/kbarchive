@@ -6,6 +6,8 @@ permalink: /kb/043/Q43267/
 
 ## Q43267: How to Flush File Buffers from within a BASIC Program
 
+{% raw %}
+
 	Article: Q43267
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -82,3 +84,5 @@ permalink: /kb/043/Q43267/
 	CALL interrupt(&H21, inregs, outregs)  'call interrupt 21 to
 	'                                       commit buffer
 	END SUB
+
+{% endraw %}

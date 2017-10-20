@@ -6,6 +6,8 @@ permalink: /kb/188/Q188047/
 
 ## Q188047: SMS: Smsaddin.exe Description and Usage
 
+{% raw %}
+
 	Article: Q188047
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -79,3 +81,5 @@ permalink: /kb/188/Q188047/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136101/
 
 ## Q136101: Err Msg: Receiver(s) Not Valid for Binary Message
 
+{% raw %}
+
 	Article: Q136101
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136101/
 	
 	=============================================================================
 	
+
+{% endraw %}

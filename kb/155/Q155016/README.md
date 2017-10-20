@@ -6,6 +6,8 @@ permalink: /kb/155/Q155016/
 
 ## Q155016: XFOR: MIME Inbound Mail Failure on ISO-2022-JP Character Set
 
+{% raw %}
+
 	Article: Q155016
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -92,3 +94,5 @@ permalink: /kb/155/Q155016/
 	
 	=============================================================================
 	
+
+{% endraw %}

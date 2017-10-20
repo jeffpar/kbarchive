@@ -6,6 +6,8 @@ permalink: /kb/045/Q45218/
 
 ## Q45218: APPEND Command in DOS 4.x Incompatible with QuickC 2.00
 
+{% raw %}
+
 	Article: Q45218
 	Product(s): See article
 	Version(s): 2.00
@@ -31,3 +33,5 @@ permalink: /kb/045/Q45218/
 	disable APPEND; if QuickC still produces errors, then removing APPEND
 	entirely may be the only solution.  It will then be necessary to
 	reboot for this change to take affect.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130632/
 
 ## Q130632: How to Determine Current Licensing Mode (Per Seat or Per Server)
 
+{% raw %}
+
 	Article: Q130632
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -75,3 +77,5 @@ permalink: /kb/130/Q130632/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86372/
 
 ## Q86372: PC Mac: New Features in 3.0 Macintosh Client
 
+{% raw %}
+
 	Article: Q86372
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -197,3 +199,5 @@ permalink: /kb/086/Q86372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243044/
 
 ## Q243044: MMC Does Not Display Virtual Directories
 
+{% raw %}
+
 	Article: Q243044
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/243/Q243044/
 	
 	=============================================================================
 	
+
+{% endraw %}

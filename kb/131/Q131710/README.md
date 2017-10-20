@@ -6,6 +6,8 @@ permalink: /kb/131/Q131710/
 
 ## Q131710: FIX: TYPE() Returns &quot;&quot; Instead of &quot;U&quot; For OleBoundControl
 
+{% raw %}
+
 	Article: Q131710
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0
@@ -95,3 +97,5 @@ permalink: /kb/131/Q131710/
 	
 	=============================================================================
 	
+
+{% endraw %}

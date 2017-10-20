@@ -6,6 +6,8 @@ permalink: /kb/296/Q296599/
 
 ## Q296599: Daylight Saving Time Bug in Resource Kit Utilities NOW.EXE and S
 
+{% raw %}
+
 	Article: Q296599
 	Product(s): Microsoft Press
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/296/Q296599/
 	
 	=============================================================================
 	
+
+{% endraw %}

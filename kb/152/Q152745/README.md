@@ -6,6 +6,8 @@ permalink: /kb/152/Q152745/
 
 ## Q152745: XADM: Cannot Delete Public Folders Using Administrator Program
 
+{% raw %}
+
 	Article: Q152745
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/152/Q152745/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129758/
 
 ## Q129758: Road Atlas 3.x: Problems Printing with IBM Proprinters
 
+{% raw %}
+
 	Article: Q129758
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/129/Q129758/
 	
 	=============================================================================
 	
+
+{% endraw %}

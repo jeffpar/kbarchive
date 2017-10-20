@@ -6,6 +6,8 @@ permalink: /kb/153/Q153091/
 
 ## Q153091: HOWTO: Find and View the Amount of Free Disk Space on a Drive
 
+{% raw %}
+
 	Article: Q153091
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/153/Q153091/
 	
 	=============================================================================
 	
+
+{% endraw %}

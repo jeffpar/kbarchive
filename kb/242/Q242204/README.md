@@ -6,6 +6,8 @@ permalink: /kb/242/Q242204/
 
 ## Q242204: BUG: Cannot Insert Multiple Images into the Image List Control
 
+{% raw %}
+
 	Article: Q242204
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.1,1.2,6.0
@@ -73,3 +75,5 @@ permalink: /kb/242/Q242204/
 	
 	=============================================================================
 	
+
+{% endraw %}

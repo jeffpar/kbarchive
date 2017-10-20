@@ -6,6 +6,8 @@ permalink: /kb/107/Q107092/
 
 ## Q107092: PROFS: Manually Regenerating the PRX Files for Host Access
 
+{% raw %}
+
 	Article: Q107092
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.3,3.4
@@ -51,3 +53,5 @@ permalink: /kb/107/Q107092/
 	
 	=============================================================================
 	
+
+{% endraw %}

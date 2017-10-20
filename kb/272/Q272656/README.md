@@ -6,6 +6,8 @@ permalink: /kb/272/Q272656/
 
 ## Q272656: How to Create a File Viewer By Using ASP
 
+{% raw %}
+
 	Article: Q272656
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -174,3 +176,5 @@ permalink: /kb/272/Q272656/
 	
 	=============================================================================
 	
+
+{% endraw %}

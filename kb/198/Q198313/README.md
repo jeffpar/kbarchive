@@ -6,6 +6,8 @@ permalink: /kb/198/Q198313/
 
 ## Q198313: WD97: Can't Cancel Options of &quot;Cannot Find Data Source&quot; Error
 
+{% raw %}
+
 	Article: Q198313
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/198/Q198313/
 	
 	=============================================================================
 	
+
+{% endraw %}

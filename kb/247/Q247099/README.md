@@ -6,6 +6,8 @@ permalink: /kb/247/Q247099/
 
 ## Q247099: Access Denied Connecting to FTP Directory Using &quot;Connect As&quot;
 
+{% raw %}
+
 	Article: Q247099
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0,5.0
@@ -95,3 +97,5 @@ permalink: /kb/247/Q247099/
 	
 	=============================================================================
 	
+
+{% endraw %}

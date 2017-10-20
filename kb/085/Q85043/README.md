@@ -6,6 +6,8 @@ permalink: /kb/085/Q85043/
 
 ## Q85043: FFAPI: Errors Caused by an Incorrect FFAPI File
 
+{% raw %}
+
 	Article: Q85043
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/085/Q85043/
 	
 	=============================================================================
 	
+
+{% endraw %}

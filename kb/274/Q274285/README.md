@@ -6,6 +6,8 @@ permalink: /kb/274/Q274285/
 
 ## Q274285: XCON: Error Message Occurs When Starting MTA
 
+{% raw %}
+
 	Article: Q274285
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -98,3 +100,5 @@ permalink: /kb/274/Q274285/
 	
 	=============================================================================
 	
+
+{% endraw %}

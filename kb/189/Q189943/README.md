@@ -6,6 +6,8 @@ permalink: /kb/189/Q189943/
 
 ## Q189943: Performance Counters Become Corrupted After BackOffice 4.0 Setup
 
+{% raw %}
+
 	Article: Q189943
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/189/Q189943/
 	
 	=============================================================================
 	
+
+{% endraw %}

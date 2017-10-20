@@ -6,6 +6,8 @@ permalink: /kb/194/Q194862/
 
 ## Q194862: PRB: &quot;QueryInterface:function does not take 1 parameters&quot; Error
 
+{% raw %}
+
 	Article: Q194862
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/194/Q194862/
 	
 	=============================================================================
 	
+
+{% endraw %}

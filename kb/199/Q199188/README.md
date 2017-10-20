@@ -6,6 +6,8 @@ permalink: /kb/199/Q199188/
 
 ## Q199188: XADM: Special Characters in Mailbox Display Name
 
+{% raw %}
+
 	Article: Q199188
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/199/Q199188/
 	
 	=============================================================================
 	
+
+{% endraw %}

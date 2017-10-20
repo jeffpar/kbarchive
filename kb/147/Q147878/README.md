@@ -6,6 +6,8 @@ permalink: /kb/147/Q147878/
 
 ## Q147878: Difference of WorkSpace in VB4 and SetDefaultWorkSpace in VB3
 
+{% raw %}
+
 	Article: Q147878
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/147/Q147878/
 	
 	=============================================================================
 	
+
+{% endraw %}

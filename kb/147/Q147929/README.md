@@ -6,6 +6,8 @@ permalink: /kb/147/Q147929/
 
 ## Q147929: XADM: Imcadmin.dll Should Not be Renamed or Deleted
 
+{% raw %}
+
 	Article: Q147929
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/147/Q147929/
 	
 	=============================================================================
 	
+
+{% endraw %}

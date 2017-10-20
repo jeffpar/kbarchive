@@ -6,6 +6,8 @@ permalink: /kb/191/Q191303/
 
 ## Q191303: SMS: Ipconfig.exe Makes Inventory Stop on Windows for Workgroups
 
+{% raw %}
+
 	Article: Q191303
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -69,3 +71,5 @@ permalink: /kb/191/Q191303/
 	
 	=============================================================================
 	
+
+{% endraw %}

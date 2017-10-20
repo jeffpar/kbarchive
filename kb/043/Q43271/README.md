@@ -6,6 +6,8 @@ permalink: /kb/043/Q43271/
 
 ## Q43271: C: Cannot Bind Programs with Increased File Handles
 
+{% raw %}
+
 	Article: Q43271
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -37,3 +39,5 @@ permalink: /kb/043/Q43271/
 	
 	The start-up files that must be modified to increase the number of
 	available file handles are CRT0DAT.ASM and _FILE.C.
+
+{% endraw %}

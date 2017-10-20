@@ -6,6 +6,8 @@ permalink: /kb/085/Q85684/
 
 ## Q85684: Compressed QBASIC.EXE Gives &quot;Out of Memory&quot; Error with Editor
 
+{% raw %}
+
 	Article: Q85684
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -52,3 +54,5 @@ permalink: /kb/085/Q85684/
 	
 	=============================================================================
 	
+
+{% endraw %}

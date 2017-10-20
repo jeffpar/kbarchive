@@ -6,6 +6,8 @@ permalink: /kb/142/Q142537/
 
 ## Q142537: Remember Password Option Is Unavailable
 
+{% raw %}
+
 	Article: Q142537
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2,95,98,98 Second Edition
@@ -84,3 +86,5 @@ permalink: /kb/142/Q142537/
 	
 	=============================================================================
 	
+
+{% endraw %}

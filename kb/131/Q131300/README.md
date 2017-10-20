@@ -6,6 +6,8 @@ permalink: /kb/131/Q131300/
 
 ## Q131300: PRB: Clicking a Disabled Item in a List Box Selects It
 
+{% raw %}
+
 	Article: Q131300
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -137,3 +139,5 @@ permalink: /kb/131/Q131300/
 	
 	=============================================================================
 	
+
+{% endraw %}

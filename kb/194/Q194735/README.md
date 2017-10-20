@@ -6,6 +6,8 @@ permalink: /kb/194/Q194735/
 
 ## Q194735: PC WRmt: Remote Mail Errors Using Custom Script
 
+{% raw %}
+
 	Article: Q194735
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -74,3 +76,5 @@ permalink: /kb/194/Q194735/
 	
 	=============================================================================
 	
+
+{% endraw %}

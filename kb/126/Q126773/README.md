@@ -6,6 +6,8 @@ permalink: /kb/126/Q126773/
 
 ## Q126773: Writer/Artist: Using Manual Feed on a Panasonic KX-P2123
 
+{% raw %}
+
 	Article: Q126773
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,3.x
@@ -63,3 +65,5 @@ permalink: /kb/126/Q126773/
 	
 	=============================================================================
 	
+
+{% endraw %}

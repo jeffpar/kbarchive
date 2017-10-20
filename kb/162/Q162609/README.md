@@ -6,6 +6,8 @@ permalink: /kb/162/Q162609/
 
 ## Q162609: HOWTO: Create a Printer Device Context (DC) in MFC
 
+{% raw %}
+
 	Article: Q162609
 	Product(s): Microsoft C Compiler
 	Version(s): 1.52,2.0,2.1,2.2,4.0,4.1,4.2
@@ -94,3 +96,5 @@ permalink: /kb/162/Q162609/
 	
 	=============================================================================
 	
+
+{% endraw %}

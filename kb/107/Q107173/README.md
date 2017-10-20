@@ -6,6 +6,8 @@ permalink: /kb/107/Q107173/
 
 ## Q107173: DOCERR: NFY_RIP Not Received in Windows 3.0
 
+{% raw %}
+
 	Article: Q107173
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/107/Q107173/
 	
 	=============================================================================
 	
+
+{% endraw %}

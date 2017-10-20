@@ -6,6 +6,8 @@ permalink: /kb/242/Q242366/
 
 ## Q242366: Denial of Service When Using Xenroll to Create Files
 
+{% raw %}
+
 	Article: Q242366
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5; winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/242/Q242366/
 	
 	=============================================================================
 	
+
+{% endraw %}

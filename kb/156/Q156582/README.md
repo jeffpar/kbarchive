@@ -6,6 +6,8 @@ permalink: /kb/156/Q156582/
 
 ## Q156582: PRB: Opening Database Named IN.DBC as a Table Causes Error
 
+{% raw %}
+
 	Article: Q156582
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/156/Q156582/
 	
 	=============================================================================
 	
+
+{% endraw %}

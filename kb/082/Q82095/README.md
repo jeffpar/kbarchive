@@ -6,6 +6,8 @@ permalink: /kb/082/Q82095/
 
 ## Q82095: Windows Err Msg: Unable to Use XXXX.BMP As a Desktop Bitmap
 
+{% raw %}
+
 	Article: Q82095
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -89,3 +91,5 @@ permalink: /kb/082/Q82095/
 	
 	=============================================================================
 	
+
+{% endraw %}

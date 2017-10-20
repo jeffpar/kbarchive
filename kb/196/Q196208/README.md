@@ -6,6 +6,8 @@ permalink: /kb/196/Q196208/
 
 ## Q196208: INFO: DCOM98 Release Notes
 
+{% raw %}
+
 	Article: Q196208
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -750,3 +752,5 @@ permalink: /kb/196/Q196208/
 	
 	=============================================================================
 	
+
+{% endraw %}

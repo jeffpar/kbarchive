@@ -6,6 +6,8 @@ permalink: /kb/318/Q318061/
 
 ## Q318061: BUG: Reloading the Solution from Visual SourceSafe Changes the S
 
+{% raw %}
+
 	Article: Q318061
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/318/Q318061/
 	
 	=============================================================================
 	
+
+{% endraw %}

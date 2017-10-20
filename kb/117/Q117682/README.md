@@ -6,6 +6,8 @@ permalink: /kb/117/Q117682/
 
 ## Q117682: Returning a Float from Assembly to C
 
+{% raw %}
+
 	Article: Q117682
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.1,6.11,6.1a
@@ -148,3 +150,5 @@ permalink: /kb/117/Q117682/
 	
 	=============================================================================
 	
+
+{% endraw %}

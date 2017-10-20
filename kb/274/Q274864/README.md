@@ -6,6 +6,8 @@ permalink: /kb/274/Q274864/
 
 ## Q274864: Simulators: Host Is the Only Player in a Multiplayer Game
 
+{% raw %}
+
 	Article: Q274864
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -84,3 +86,5 @@ permalink: /kb/274/Q274864/
 	
 	=============================================================================
 	
+
+{% endraw %}

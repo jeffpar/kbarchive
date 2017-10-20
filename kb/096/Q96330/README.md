@@ -6,6 +6,8 @@ permalink: /kb/096/Q96330/
 
 ## Q96330: MS-DOS 6.x Upgrade Does Not Update SHELL= in CONFIG.SYS
 
+{% raw %}
+
 	Article: Q96330
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/096/Q96330/
 	
 	=============================================================================
 	
+
+{% endraw %}

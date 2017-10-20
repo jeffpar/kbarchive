@@ -6,6 +6,8 @@ permalink: /kb/120/Q120039/
 
 ## Q120039: NET VIEW Command Does Not List Novell NetWare Print Queues
 
+{% raw %}
+
 	Article: Q120039
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/120/Q120039/
 	
 	=============================================================================
 	
+
+{% endraw %}

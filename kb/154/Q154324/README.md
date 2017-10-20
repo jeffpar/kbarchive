@@ -6,6 +6,8 @@ permalink: /kb/154/Q154324/
 
 ## Q154324: Leopard: List of Files Installed and Modified
 
+{% raw %}
+
 	Article: Q154324
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -151,3 +153,5 @@ permalink: /kb/154/Q154324/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216906/
 
 ## Q216906: IIS 5.0 and Native Windows 2000 Active Directory Mapping
 
+{% raw %}
+
 	Article: Q216906
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -88,3 +90,5 @@ permalink: /kb/216/Q216906/
 	
 	=============================================================================
 	
+
+{% endraw %}

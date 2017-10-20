@@ -6,6 +6,8 @@ permalink: /kb/085/Q85057/
 
 ## Q85057: FFAPI: Summary of Changes
 
+{% raw %}
+
 	Article: Q85057
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/085/Q85057/
 	
 	=============================================================================
 	
+
+{% endraw %}

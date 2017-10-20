@@ -6,6 +6,8 @@ permalink: /kb/148/Q148381/
 
 ## Q148381: XADM: Directory Replication Takes Too Long
 
+{% raw %}
+
 	Article: Q148381
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/148/Q148381/
 	
 	=============================================================================
 	
+
+{% endraw %}

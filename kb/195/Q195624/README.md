@@ -6,6 +6,8 @@ permalink: /kb/195/Q195624/
 
 ## Q195624: Virtual Globe 99: Empty Dialog Box Appears When Starting Program
 
+{% raw %}
+
 	Article: Q195624
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -105,3 +107,5 @@ permalink: /kb/195/Q195624/
 	
 	=============================================================================
 	
+
+{% endraw %}

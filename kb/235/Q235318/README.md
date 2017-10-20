@@ -6,6 +6,8 @@ permalink: /kb/235/Q235318/
 
 ## Q235318: XFOR: Exchange Server NNTP Service Fails With 500 Command Not Re
 
+{% raw %}
+
 	Article: Q235318
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/235/Q235318/
 	
 	=============================================================================
 	
+
+{% endraw %}

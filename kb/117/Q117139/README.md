@@ -6,6 +6,8 @@ permalink: /kb/117/Q117139/
 
 ## Q117139: Hard Disk Access Disappears with Ultrastor 34F Local Bus
 
+{% raw %}
+
 	Article: Q117139
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21
@@ -50,3 +52,5 @@ permalink: /kb/117/Q117139/
 	
 	=============================================================================
 	
+
+{% endraw %}

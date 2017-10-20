@@ -6,6 +6,8 @@ permalink: /kb/145/Q145619/
 
 ## Q145619: FIX: Maximized Win95 MDI Child Form Disappears
 
+{% raw %}
+
 	Article: Q145619
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -102,3 +104,5 @@ permalink: /kb/145/Q145619/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271490/
 
 ## Q271490: NETSET.EXE Cannot Change Machine Name And Join Domain Simultaneo
 
+{% raw %}
+
 	Article: Q271490
 	Product(s): Microsoft Press
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/271/Q271490/
 	
 	=============================================================================
 	
+
+{% endraw %}

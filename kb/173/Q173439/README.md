@@ -6,6 +6,8 @@ permalink: /kb/173/Q173439/
 
 ## Q173439: How to Configure Internet Mail for The Microsoft Network 2.5
 
+{% raw %}
+
 	Article: Q173439
 	Product(s): The Microsoft Network
 	Version(s): 1.2,1.3,2.0,2.5,2.51,2.52,2.6,5.0,5.1,5.2,5.3,5.4
@@ -95,3 +97,5 @@ permalink: /kb/173/Q173439/
 	
 	=============================================================================
 	
+
+{% endraw %}

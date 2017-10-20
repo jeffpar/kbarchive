@@ -6,6 +6,8 @@ permalink: /kb/104/Q104528/
 
 ## Q104528: PC Adm: Microsoft Extraction Utilities Error Messages
 
+{% raw %}
+
 	Article: Q104528
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -109,3 +111,5 @@ permalink: /kb/104/Q104528/
 	
 	=============================================================================
 	
+
+{% endraw %}

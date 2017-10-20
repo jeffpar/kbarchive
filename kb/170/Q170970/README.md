@@ -6,6 +6,8 @@ permalink: /kb/170/Q170970/
 
 ## Q170970: WD97: Macro to Generate List of Available Fonts in Word
 
+{% raw %}
+
 	Article: Q170970
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -120,3 +122,5 @@ permalink: /kb/170/Q170970/
 	
 	=============================================================================
 	
+
+{% endraw %}

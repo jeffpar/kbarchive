@@ -6,6 +6,8 @@ permalink: /kb/148/Q148561/
 
 ## Q148561: PPT: How to Open a PowerPoint 7.0 File in PowerPoint 4.0
 
+{% raw %}
+
 	Article: Q148561
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -96,3 +98,5 @@ permalink: /kb/148/Q148561/
 	
 	=============================================================================
 	
+
+{% endraw %}

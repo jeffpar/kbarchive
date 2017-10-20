@@ -6,6 +6,8 @@ permalink: /kb/038/Q38317/
 
 ## Q38317: CodeView Gives &quot;Illegal Instruction&quot; on Clone 386
 
+{% raw %}
+
 	Article: Q38317
 	Product(s): See article
 	Version(s): 2.20
@@ -19,3 +21,5 @@ permalink: /kb/038/Q38317/
 	is FINIT or FNINIT, the particular ROM BIOS probably has a built-in
 	387 emulator. Either turn off the emulator, or set the environment
 	variable SET NO87=(some string).
+
+{% endraw %}

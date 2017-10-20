@@ -6,6 +6,8 @@ permalink: /kb/237/Q237873/
 
 ## Q237873: Err Msg: Overlapped I/O Error
 
+{% raw %}
+
 	Article: Q237873
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/237/Q237873/
 	
 	=============================================================================
 	
+
+{% endraw %}

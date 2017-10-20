@@ -6,6 +6,8 @@ permalink: /kb/151/Q151067/
 
 ## Q151067: Fury3 Video Skips to End if Focus Is Removed from Window
 
+{% raw %}
+
 	Article: Q151067
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/151/Q151067/
 	
 	=============================================================================
 	
+
+{% endraw %}

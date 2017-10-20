@@ -6,6 +6,8 @@ permalink: /kb/130/Q130504/
 
 ## Q130504: PRB: Connection Dialog Box Doesn't Show Data Source Choices
 
+{% raw %}
+
 	Article: Q130504
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -61,3 +63,5 @@ permalink: /kb/130/Q130504/
 	
 	=============================================================================
 	
+
+{% endraw %}

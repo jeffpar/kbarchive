@@ -6,6 +6,8 @@ permalink: /kb/182/Q182169/
 
 ## Q182169: WD97: Macro to Determine Whether a Form Field Exists
 
+{% raw %}
+
 	Article: Q182169
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/182/Q182169/
 	
 	=============================================================================
 	
+
+{% endraw %}

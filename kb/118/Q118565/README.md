@@ -6,6 +6,8 @@ permalink: /kb/118/Q118565/
 
 ## Q118565: X400: Use BODYPART.CFG File for Body-Part Typing/Tagging
 
+{% raw %}
+
 	Article: Q118565
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -46,3 +48,5 @@ permalink: /kb/118/Q118565/
 	
 	=============================================================================
 	
+
+{% endraw %}

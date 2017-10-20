@@ -6,6 +6,8 @@ permalink: /kb/111/Q111234/
 
 ## Q111234: FIX: ISHFT and ISHL Always Assume 4-Byte Integers
 
+{% raw %}
+
 	Article: Q111234
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -108,3 +110,5 @@ permalink: /kb/111/Q111234/
 	
 	=============================================================================
 	
+
+{% endraw %}

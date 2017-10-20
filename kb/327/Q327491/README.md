@@ -6,6 +6,8 @@ permalink: /kb/327/Q327491/
 
 ## Q327491: INFO: SNA Server 4.0 Clients Not Supported on Windows XP
 
+{% raw %}
+
 	Article: Q327491
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -76,3 +78,5 @@ permalink: /kb/327/Q327491/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111092/
 
 ## Q111092: BUG: DIMENSION Statement Out of Order Causes D2030 Error
 
+{% raw %}
+
 	Article: Q111092
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -74,3 +76,5 @@ permalink: /kb/111/Q111092/
 	
 	=============================================================================
 	
+
+{% endraw %}

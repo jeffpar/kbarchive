@@ -6,6 +6,8 @@ permalink: /kb/192/Q192552/
 
 ## Q192552: HOWTO: Create an HTML Form With DHTML Page Designer
 
+{% raw %}
+
 	Article: Q192552
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -136,3 +138,5 @@ permalink: /kb/192/Q192552/
 	
 	=============================================================================
 	
+
+{% endraw %}

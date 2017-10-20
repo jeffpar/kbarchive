@@ -6,6 +6,8 @@ permalink: /kb/228/Q228456/
 
 ## Q228456: Unnecessary Dialog Appears When Configuring TCP/IP to Use DHCP
 
+{% raw %}
+
 	Article: Q228456
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -93,3 +95,5 @@ permalink: /kb/228/Q228456/
 	
 	=============================================================================
 	
+
+{% endraw %}

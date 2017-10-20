@@ -6,6 +6,8 @@ permalink: /kb/217/Q217162/
 
 ## Q217162: SMS: SMS 2.0 Incorrectly References &quot;Windows NT 4.0 SP4a&quot;
 
+{% raw %}
+
 	Article: Q217162
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,4.0
@@ -73,3 +75,5 @@ permalink: /kb/217/Q217162/
 	
 	=============================================================================
 	
+
+{% endraw %}

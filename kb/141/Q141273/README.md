@@ -6,6 +6,8 @@ permalink: /kb/141/Q141273/
 
 ## Q141273: FIX: Firing a KeyPress Event from an OLE Control Causes Beep
 
+{% raw %}
+
 	Article: Q141273
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/141/Q141273/
 	
 	=============================================================================
 	
+
+{% endraw %}

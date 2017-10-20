@@ -6,6 +6,8 @@ permalink: /kb/011/Q11467/
 
 ## Q11467: Reference Counts for Windows Dynamic Libraries
 
+{% raw %}
+
 	Article: Q11467
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -42,3 +44,5 @@ permalink: /kb/011/Q11467/
 	
 	=============================================================================
 	
+
+{% endraw %}

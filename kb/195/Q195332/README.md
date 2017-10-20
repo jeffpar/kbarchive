@@ -6,6 +6,8 @@ permalink: /kb/195/Q195332/
 
 ## Q195332: WD97: Address Position Not Retained on Mail Merge Envelopes
 
+{% raw %}
+
 	Article: Q195332
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/195/Q195332/
 	
 	=============================================================================
 	
+
+{% endraw %}

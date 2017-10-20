@@ -6,6 +6,8 @@ permalink: /kb/130/Q130733/
 
 ## Q130733: Cannot Connect with Evercom 2400 Modem
 
+{% raw %}
+
 	Article: Q130733
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130733/
 	
 	=============================================================================
 	
+
+{% endraw %}

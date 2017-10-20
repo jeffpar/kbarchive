@@ -6,6 +6,8 @@ permalink: /kb/160/Q160846/
 
 ## Q160846: &quot;Illegal Operation&quot; Error Message Changing Desktop Themes
 
+{% raw %}
+
 	Article: Q160846
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -97,3 +99,5 @@ permalink: /kb/160/Q160846/
 	
 	=============================================================================
 	
+
+{% endraw %}

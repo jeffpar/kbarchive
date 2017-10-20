@@ -6,6 +6,8 @@ permalink: /kb/190/Q190041/
 
 ## Q190041: XCON: SMTP Message ID May Be Incorrectly Truncated
 
+{% raw %}
+
 	Article: Q190041
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -70,3 +72,5 @@ permalink: /kb/190/Q190041/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243085/
 
 ## Q243085: Performance Problems with Shortcuts After Using SYSPREP
 
+{% raw %}
+
 	Article: Q243085
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
@@ -84,3 +86,5 @@ permalink: /kb/243/Q243085/
 	
 	=============================================================================
 	
+
+{% endraw %}

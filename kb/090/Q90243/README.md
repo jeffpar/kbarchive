@@ -6,6 +6,8 @@ permalink: /kb/090/Q90243/
 
 ## Q90243: Workgroup Connection SYSTEM.INI Settings
 
+{% raw %}
+
 	Article: Q90243
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,3.1
@@ -90,3 +92,5 @@ permalink: /kb/090/Q90243/
 	
 	=============================================================================
 	
+
+{% endraw %}

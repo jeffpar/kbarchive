@@ -6,6 +6,8 @@ permalink: /kb/189/Q189811/
 
 ## Q189811: FP: Cannot Import File After Parse Error
 
+{% raw %}
+
 	Article: Q189811
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0,1.1,97
@@ -92,3 +94,5 @@ permalink: /kb/189/Q189811/
 	
 	=============================================================================
 	
+
+{% endraw %}

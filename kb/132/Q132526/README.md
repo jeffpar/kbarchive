@@ -6,6 +6,8 @@ permalink: /kb/132/Q132526/
 
 ## Q132526: Microsoft Exposition CD Catalog Information
 
+{% raw %}
+
 	Article: Q132526
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/132/Q132526/
 	
 	=============================================================================
 	
+
+{% endraw %}

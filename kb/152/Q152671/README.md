@@ -6,6 +6,8 @@ permalink: /kb/152/Q152671/
 
 ## Q152671: XADM: Can't Create/Open the LoadSim Performance Registry Key
 
+{% raw %}
+
 	Article: Q152671
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152671/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94376/
 
 ## Q94376: WRK Shows Incorrect Network Setting Dialog Box
 
+{% raw %}
+
 	Article: Q94376
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -38,3 +40,5 @@ permalink: /kb/094/Q94376/
 	
 	=============================================================================
 	
+
+{% endraw %}

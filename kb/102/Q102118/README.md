@@ -6,6 +6,8 @@ permalink: /kb/102/Q102118/
 
 ## Q102118: Mac Wkst: Notification of Incoming Messages Delayed
 
+{% raw %}
+
 	Article: Q102118
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,3.0,3.1
@@ -43,3 +45,5 @@ permalink: /kb/102/Q102118/
 	
 	=============================================================================
 	
+
+{% endraw %}

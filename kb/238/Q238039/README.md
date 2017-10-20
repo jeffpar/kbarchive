@@ -6,6 +6,8 @@ permalink: /kb/238/Q238039/
 
 ## Q238039: Encarta Dictionary 2000: Define Button Missing from Word Toolbar
 
+{% raw %}
+
 	Article: Q238039
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2000; :
@@ -68,3 +70,5 @@ permalink: /kb/238/Q238039/
 	
 	=============================================================================
 	
+
+{% endraw %}

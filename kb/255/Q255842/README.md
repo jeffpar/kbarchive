@@ -6,6 +6,8 @@ permalink: /kb/255/Q255842/
 
 ## Q255842: Status Manager Loses Status Messages During Shutdown
 
+{% raw %}
+
 	Article: Q255842
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -61,3 +63,5 @@ permalink: /kb/255/Q255842/
 	
 	=============================================================================
 	
+
+{% endraw %}

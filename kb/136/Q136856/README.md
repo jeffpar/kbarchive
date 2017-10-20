@@ -6,6 +6,8 @@ permalink: /kb/136/Q136856/
 
 ## Q136856: Classes You Can Create in Code but Not a Designer &amp; Vice Versa
 
+{% raw %}
+
 	Article: Q136856
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/136/Q136856/
 	
 	=============================================================================
 	
+
+{% endraw %}

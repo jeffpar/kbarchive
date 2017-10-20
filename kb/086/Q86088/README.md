@@ -6,6 +6,8 @@ permalink: /kb/086/Q86088/
 
 ## Q86088: PC WSPlus: Dynamic Connections Do Not Show Busy Times
 
+{% raw %}
+
 	Article: Q86088
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/086/Q86088/
 	
 	=============================================================================
 	
+
+{% endraw %}

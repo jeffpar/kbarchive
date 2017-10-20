@@ -6,6 +6,8 @@ permalink: /kb/188/Q188594/
 
 ## Q188594: XADM: Event ID 1023 Reports Logon Failure Audit
 
+{% raw %}
+
 	Article: Q188594
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/188/Q188594/
 	
 	=============================================================================
 	
+
+{% endraw %}

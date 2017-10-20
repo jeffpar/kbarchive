@@ -6,6 +6,8 @@ permalink: /kb/257/Q257230/
 
 ## Q257230: HOWTO: Display a Form in a Top-Level Form on Startup
 
+{% raw %}
+
 	Article: Q257230
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -145,3 +147,5 @@ permalink: /kb/257/Q257230/
 	
 	=============================================================================
 	
+
+{% endraw %}

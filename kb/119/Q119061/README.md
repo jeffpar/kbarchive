@@ -6,6 +6,8 @@ permalink: /kb/119/Q119061/
 
 ## Q119061: Writer/Artist: Importing and Exporting Pictures
 
+{% raw %}
+
 	Article: Q119061
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0,1.1,1.1a
@@ -79,3 +81,5 @@ permalink: /kb/119/Q119061/
 	
 	=============================================================================
 	
+
+{% endraw %}

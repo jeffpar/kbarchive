@@ -6,6 +6,8 @@ permalink: /kb/222/Q222136/
 
 ## Q222136: FIX: C0000005 Fatal Error Typing Characters In Find Dialog Box
 
+{% raw %}
+
 	Article: Q222136
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -86,3 +88,5 @@ permalink: /kb/222/Q222136/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135319/
 
 ## Q135319: DOC: Optimizable Expression Missing Left Parenthesis
 
+{% raw %}
+
 	Article: Q135319
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/135/Q135319/
 	
 	=============================================================================
 	
+
+{% endraw %}

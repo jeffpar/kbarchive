@@ -6,6 +6,8 @@ permalink: /kb/134/Q134866/
 
 ## Q134866: PPT7: Slow Performance or Memory Errors Running PowerPoint
 
+{% raw %}
+
 	Article: Q134866
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -64,3 +66,5 @@ permalink: /kb/134/Q134866/
 	
 	=============================================================================
 	
+
+{% endraw %}

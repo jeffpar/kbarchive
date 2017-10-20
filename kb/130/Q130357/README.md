@@ -6,6 +6,8 @@ permalink: /kb/130/Q130357/
 
 ## Q130357: Baseball 95: National League Schedule Changes Caused By Strike
 
+{% raw %}
+
 	Article: Q130357
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -173,3 +175,5 @@ permalink: /kb/130/Q130357/
 	
 	=============================================================================
 	
+
+{% endraw %}

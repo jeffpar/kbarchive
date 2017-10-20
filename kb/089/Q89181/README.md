@@ -6,6 +6,8 @@ permalink: /kb/089/Q89181/
 
 ## Q89181: Outer Join Syntax Example for SELECT-SQL Statement
 
+{% raw %}
+
 	Article: Q89181
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.6x 3.00 | 2.00 2.5x 2.6x
@@ -138,3 +140,5 @@ permalink: /kb/089/Q89181/
 	
 	=============================================================================
 	
+
+{% endraw %}

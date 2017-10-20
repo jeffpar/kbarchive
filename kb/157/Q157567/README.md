@@ -6,6 +6,8 @@ permalink: /kb/157/Q157567/
 
 ## Q157567: STL Sample for the prev_permutation Function
 
+{% raw %}
+
 	Article: Q157567
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -163,3 +165,5 @@ permalink: /kb/157/Q157567/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/326/Q326245/
 
 ## Q326245: PRB: Actv Dsktp in Win 98 Handles .NETAlerts Sign In Differently
 
+{% raw %}
+
 	Article: Q326245
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/326/Q326245/
 	
 	=============================================================================
 	
+
+{% endraw %}

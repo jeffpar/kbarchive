@@ -6,6 +6,8 @@ permalink: /kb/109/Q109601/
 
 ## Q109601: FoxPro for Macintosh Allows Trailing Spaces in Filenames
 
+{% raw %}
+
 	Article: Q109601
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -61,3 +63,5 @@ permalink: /kb/109/Q109601/
 	
 	=============================================================================
 	
+
+{% endraw %}

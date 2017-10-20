@@ -6,6 +6,8 @@ permalink: /kb/077/Q77694/
 
 ## Q77694: Setting the Amount of Memory for the Audio Data Buffer
 
+{% raw %}
+
 	Article: Q77694
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -56,3 +58,5 @@ permalink: /kb/077/Q77694/
 	
 	=============================================================================
 	
+
+{% endraw %}

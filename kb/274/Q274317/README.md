@@ -6,6 +6,8 @@ permalink: /kb/274/Q274317/
 
 ## Q274317: XADM: How to View Windows NT Accounts that Access Mailboxes
 
+{% raw %}
+
 	Article: Q274317
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -125,3 +127,5 @@ permalink: /kb/274/Q274317/
 	
 	=============================================================================
 	
+
+{% endraw %}

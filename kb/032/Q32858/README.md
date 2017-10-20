@@ -6,6 +6,8 @@ permalink: /kb/032/Q32858/
 
 ## Q32858: LOCAL Directive Requires Language Parameter
 
+{% raw %}
+
 	Article: Q32858
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -32,3 +34,5 @@ permalink: /kb/032/Q32858/
 	   Microsoft has confirmed this to be a problem in Version 5.10. We
 	are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

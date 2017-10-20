@@ -6,6 +6,8 @@ permalink: /kb/147/Q147849/
 
 ## Q147849: MSB: &quot;Internal Error&quot; or Computer Hangs When Starting
 
+{% raw %}
+
 	Article: Q147849
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -199,3 +201,5 @@ permalink: /kb/147/Q147849/
 	
 	=============================================================================
 	
+
+{% endraw %}

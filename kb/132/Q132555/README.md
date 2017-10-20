@@ -6,6 +6,8 @@ permalink: /kb/132/Q132555/
 
 ## Q132555: TYPE Command Displays Garbage After Displaying File Contents
 
+{% raw %}
+
 	Article: Q132555
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/132/Q132555/
 	
 	=============================================================================
 	
+
+{% endraw %}

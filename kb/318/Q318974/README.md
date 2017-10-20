@@ -6,6 +6,8 @@ permalink: /kb/318/Q318974/
 
 ## Q318974: How To Add A Web-based Hotmail E-mail Account To Microsoft Entou
 
+{% raw %}
+
 	Article: Q318974
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/318/Q318974/
 	
 	=============================================================================
 	
+
+{% endraw %}

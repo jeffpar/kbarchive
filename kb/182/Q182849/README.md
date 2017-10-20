@@ -6,6 +6,8 @@ permalink: /kb/182/Q182849/
 
 ## Q182849: PPT: Code to Detect if PowerPoint is Running on a Macintosh
 
+{% raw %}
+
 	Article: Q182849
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -119,3 +121,5 @@ permalink: /kb/182/Q182849/
 	
 	=============================================================================
 	
+
+{% endraw %}

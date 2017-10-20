@@ -6,6 +6,8 @@ permalink: /kb/136/Q136045/
 
 ## Q136045: PC Gen: Template Utility Ignores Record with a Space
 
+{% raw %}
+
 	Article: Q136045
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136045/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146358/
 
 ## Q146358: No Update to Recurring Meetings with Mixed Versions
 
+{% raw %}
+
 	Article: Q146358
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,7.0; Win95:7.0
@@ -60,3 +62,5 @@ permalink: /kb/146/Q146358/
 	
 	=============================================================================
 	
+
+{% endraw %}

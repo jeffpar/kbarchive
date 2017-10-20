@@ -6,6 +6,8 @@ permalink: /kb/170/Q170156/
 
 ## Q170156: INFO: VB 6.0 Readme Part 12: Transaction Server (MTS) Issues
 
+{% raw %}
+
 	Article: Q170156
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -374,3 +376,5 @@ permalink: /kb/170/Q170156/
 	
 	=============================================================================
 	
+
+{% endraw %}

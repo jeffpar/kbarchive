@@ -6,6 +6,8 @@ permalink: /kb/151/Q151284/
 
 ## Q151284: Top Articles on Troubleshooting Windows 95
 
+{% raw %}
+
 	Article: Q151284
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/151/Q151284/
 	
 	=============================================================================
 	
+
+{% endraw %}

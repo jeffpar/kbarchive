@@ -6,6 +6,8 @@ permalink: /kb/047/Q47879/
 
 ## Q47879: Using the Spawn, Exec, and System Routines to Call Batch Files
 
+{% raw %}
+
 	Article: Q47879
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -83,3 +85,5 @@ permalink: /kb/047/Q47879/
 	
 	For further information regarding system(), spawn(), and exec(),
 	consult the "Microsoft C Run-Time Library Reference Manual."
+
+{% endraw %}

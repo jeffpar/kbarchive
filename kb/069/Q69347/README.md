@@ -6,6 +6,8 @@ permalink: /kb/069/Q69347/
 
 ## Q69347: BUG: PWB 1.1 Dialog Boxes Blink After Dialog Help Is Obtained
 
+{% raw %}
+
 	Article: Q69347
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.1; OS/2:1.1
@@ -55,3 +57,5 @@ permalink: /kb/069/Q69347/
 	
 	=============================================================================
 	
+
+{% endraw %}

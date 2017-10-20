@@ -6,6 +6,8 @@ permalink: /kb/086/Q86861/
 
 ## Q86861: Alternate Backup Software for LAN Manager
 
+{% raw %}
+
 	Article: Q86861
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -238,3 +240,5 @@ permalink: /kb/086/Q86861/
 	
 	=============================================================================
 	
+
+{% endraw %}

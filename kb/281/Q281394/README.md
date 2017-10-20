@@ -6,6 +6,8 @@ permalink: /kb/281/Q281394/
 
 ## Q281394: ASP Parses Request Collection Name Incorrectly
 
+{% raw %}
+
 	Article: Q281394
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -121,3 +123,5 @@ permalink: /kb/281/Q281394/
 	
 	=============================================================================
 	
+
+{% endraw %}

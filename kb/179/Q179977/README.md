@@ -6,6 +6,8 @@ permalink: /kb/179/Q179977/
 
 ## Q179977: XCLN: Error Msg.: Briefcase Is in Use by Another Computer
 
+{% raw %}
+
 	Article: Q179977
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/179/Q179977/
 	
 	=============================================================================
 	
+
+{% endraw %}

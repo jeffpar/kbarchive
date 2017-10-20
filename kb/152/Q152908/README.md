@@ -6,6 +6,8 @@ permalink: /kb/152/Q152908/
 
 ## Q152908: XCLN: Error Accessing Disk Exporting to Timex Datalink on NT
 
+{% raw %}
+
 	Article: Q152908
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:4.0,4.0 SP1,4.0 SP2
@@ -60,3 +62,5 @@ permalink: /kb/152/Q152908/
 	
 	=============================================================================
 	
+
+{% endraw %}

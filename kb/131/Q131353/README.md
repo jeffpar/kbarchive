@@ -6,6 +6,8 @@ permalink: /kb/131/Q131353/
 
 ## Q131353: Err Msg: Unable to Initialize Windows Sockets...
 
+{% raw %}
+
 	Article: Q131353
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; :
@@ -61,3 +63,5 @@ permalink: /kb/131/Q131353/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76871/
 
 ## Q76871: Support for DSP Access in Multimedia Windows
 
+{% raw %}
+
 	Article: Q76871
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -40,3 +42,5 @@ permalink: /kb/076/Q76871/
 	
 	=============================================================================
 	
+
+{% endraw %}

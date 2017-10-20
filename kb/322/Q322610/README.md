@@ -6,6 +6,8 @@ permalink: /kb/322/Q322610/
 
 ## Q322610: Zone: Sign-in Page Reappears After You Submit Your Information
 
+{% raw %}
+
 	Article: Q322610
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -243,3 +245,5 @@ permalink: /kb/322/Q322610/
 	
 	=============================================================================
 	
+
+{% endraw %}

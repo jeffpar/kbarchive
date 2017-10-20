@@ -6,6 +6,8 @@ permalink: /kb/166/Q166594/
 
 ## Q166594: XCON: Messages not Being Delivered Over the First Association
 
+{% raw %}
+
 	Article: Q166594
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/166/Q166594/
 	
 	=============================================================================
 	
+
+{% endraw %}

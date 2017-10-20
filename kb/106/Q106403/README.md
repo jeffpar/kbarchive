@@ -6,6 +6,8 @@ permalink: /kb/106/Q106403/
 
 ## Q106403: FIX: DUP Operator Must Be Preceded by White Space
 
+{% raw %}
+
 	Article: Q106403
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -66,3 +68,5 @@ permalink: /kb/106/Q106403/
 	
 	=============================================================================
 	
+
+{% endraw %}

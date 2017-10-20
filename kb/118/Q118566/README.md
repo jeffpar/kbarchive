@@ -6,6 +6,8 @@ permalink: /kb/118/Q118566/
 
 ## Q118566: X400: General Information on Checkpoint Size
 
+{% raw %}
+
 	Article: Q118566
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -42,3 +44,5 @@ permalink: /kb/118/Q118566/
 	
 	=============================================================================
 	
+
+{% endraw %}

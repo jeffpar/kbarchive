@@ -6,6 +6,8 @@ permalink: /kb/035/Q35032/
 
 ## Q35032: Don't Place Communal Data in Libraries
 
+{% raw %}
+
 	Article: Q35032
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 | 5.10
@@ -63,3 +65,5 @@ permalink: /kb/035/Q35032/
 	initialize all variables in this one module as long as one of them is
 	initialized. This process is sufficient to force the module to be
 	brought in while linking.
+
+{% endraw %}

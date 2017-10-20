@@ -6,6 +6,8 @@ permalink: /kb/259/Q259949/
 
 ## Q259949: INFO: SetCaretPos Is Not Appropriate with CEdit or CRichEditCtrl
 
+{% raw %}
+
 	Article: Q259949
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -51,3 +53,5 @@ permalink: /kb/259/Q259949/
 	
 	=============================================================================
 	
+
+{% endraw %}

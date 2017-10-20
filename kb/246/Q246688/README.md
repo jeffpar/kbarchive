@@ -6,6 +6,8 @@ permalink: /kb/246/Q246688/
 
 ## Q246688: XCLN: Private Calendar Items Not Showing for Secondary Mailbox
 
+{% raw %}
+
 	Article: Q246688
 	Product(s): Microsoft Exchange
 	Version(s): 8.04; WINDOWS:
@@ -77,3 +79,5 @@ permalink: /kb/246/Q246688/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158622/
 
 ## Q158622: BUG: Cursor Library Fails to Close Buffer
 
+{% raw %}
+
 	Article: Q158622
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5
@@ -84,3 +86,5 @@ permalink: /kb/158/Q158622/
 	
 	=============================================================================
 	
+
+{% endraw %}

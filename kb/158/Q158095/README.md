@@ -6,6 +6,8 @@ permalink: /kb/158/Q158095/
 
 ## Q158095: XCLN: Using ShivaRemote with Exchange (Win 3.x/LanMan NetBEUI)
 
+{% raw %}
+
 	Article: Q158095
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -224,3 +226,5 @@ permalink: /kb/158/Q158095/
 	
 	=============================================================================
 	
+
+{% endraw %}

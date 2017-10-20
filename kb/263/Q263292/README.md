@@ -6,6 +6,8 @@ permalink: /kb/263/Q263292/
 
 ## Q263292: WD97: Known Issues w/Word After Applying Outlook Security Update
 
+{% raw %}
+
 	Article: Q263292
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/263/Q263292/
 	
 	=============================================================================
 	
+
+{% endraw %}

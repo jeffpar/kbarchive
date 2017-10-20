@@ -6,6 +6,8 @@ permalink: /kb/182/Q182887/
 
 ## Q182887: XCLN: Error Message Installing E-forms on Non-Intel Computer
 
+{% raw %}
+
 	Article: Q182887
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/182/Q182887/
 	
 	=============================================================================
 	
+
+{% endraw %}

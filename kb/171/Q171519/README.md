@@ -6,6 +6,8 @@ permalink: /kb/171/Q171519/
 
 ## Q171519: FIX: Removing Function Causes Binary Compatibility Error
 
+{% raw %}
+
 	Article: Q171519
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -98,3 +100,5 @@ permalink: /kb/171/Q171519/
 	
 	=============================================================================
 	
+
+{% endraw %}

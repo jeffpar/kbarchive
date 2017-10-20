@@ -6,6 +6,8 @@ permalink: /kb/155/Q155263/
 
 ## Q155263: ErrMsg: This Application Is Not Supported by Microsoft Windows
 
+{% raw %}
+
 	Article: Q155263
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155263/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155020/
 
 ## Q155020: Cannot Boot Windows NT from CD-ROM
 
+{% raw %}
+
 	Article: Q155020
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/155/Q155020/
 	
 	=============================================================================
 	
+
+{% endraw %}

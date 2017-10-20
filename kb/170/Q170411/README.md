@@ -6,6 +6,8 @@ permalink: /kb/170/Q170411/
 
 ## Q170411: WD97: Excel Text Uses Wrong Font When Pasted into Word
 
+{% raw %}
+
 	Article: Q170411
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/170/Q170411/
 	
 	=============================================================================
 	
+
+{% endraw %}

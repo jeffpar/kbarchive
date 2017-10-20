@@ -6,6 +6,8 @@ permalink: /kb/111/Q111048/
 
 ## Q111048: White Lines Appear in Printed Output with Toshiba P1351
 
+{% raw %}
+
 	Article: Q111048
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/111/Q111048/
 	
 	=============================================================================
 	
+
+{% endraw %}

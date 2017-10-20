@@ -6,6 +6,8 @@ permalink: /kb/178/Q178264/
 
 ## Q178264: Encarta: Stack Fault when Applying Filter in Media Gallery
 
+{% raw %}
+
 	Article: Q178264
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1997 98
@@ -69,3 +71,5 @@ permalink: /kb/178/Q178264/
 	
 	=============================================================================
 	
+
+{% endraw %}

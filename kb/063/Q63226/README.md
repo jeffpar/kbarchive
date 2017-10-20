@@ -6,6 +6,8 @@ permalink: /kb/063/Q63226/
 
 ## Q63226: Internal Processing Error and OS2MOUSE.V12 with Mouse
 
+{% raw %}
+
 	Article: Q63226
 	Product(s): See article
 	Version(s): 1.20
@@ -23,3 +25,5 @@ permalink: /kb/063/Q63226/
 	
 	We are researching this problem and will post new information here as
 	it becomes available.
+
+{% endraw %}

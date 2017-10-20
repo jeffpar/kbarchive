@@ -6,6 +6,8 @@ permalink: /kb/243/Q243615/
 
 ## Q243615: Distortion of Screen Colors and Text Occurs During the MSN Setup
 
+{% raw %}
+
 	Article: Q243615
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/243/Q243615/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41090/
 
 ## Q41090: INFO: Writing ROMable Code with Microsoft Languages
 
+{% raw %}
+
 	Article: Q41090
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.x,2.x,3.x,4.x,5.01.20,5.01.21,5.1,5.13,5.15,5.3,5.31.009,5.5,5.60.339
@@ -63,3 +65,5 @@ permalink: /kb/041/Q41090/
 	
 	=============================================================================
 	
+
+{% endraw %}

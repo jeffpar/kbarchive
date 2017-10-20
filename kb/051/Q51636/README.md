@@ -6,6 +6,8 @@ permalink: /kb/051/Q51636/
 
 ## Q51636: C Extensions: Link Errors on &#95;&#95;acrtused and _main Explained
 
+{% raw %}
+
 	Article: Q51636
 	Product(s): See article
 	Version(s): 1.00    | 1.02
@@ -51,3 +53,5 @@ permalink: /kb/051/Q51636/
 	Please contact Microsoft Product Support Services at (800) 454-2030 to
 	obtain an application note that discusses further techniques of writing C
 	extensions for the Microsoft Editor.
+
+{% endraw %}

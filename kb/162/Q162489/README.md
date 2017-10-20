@@ -6,6 +6,8 @@ permalink: /kb/162/Q162489/
 
 ## Q162489: Server Fails w/ SNA Server Event 624 and SnaBase Event 686
 
+{% raw %}
+
 	Article: Q162489
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -119,3 +121,5 @@ permalink: /kb/162/Q162489/
 	
 	=============================================================================
 	
+
+{% endraw %}

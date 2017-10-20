@@ -6,6 +6,8 @@ permalink: /kb/040/Q40888/
 
 ## Q40888: RUN and execlp Between QB 4.00 and C Can Dump to DOS
 
+{% raw %}
+
 	Article: Q40888
 	Product(s): See article
 	Version(s): 4.00
@@ -62,3 +64,5 @@ permalink: /kb/040/Q40888/
 	_clearscreen(_GCLEARSCREEN);
 	execlp("BEXAMPLE.EXE",NULL);             /* Calls the QB Program */
 	}
+
+{% endraw %}

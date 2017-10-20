@@ -6,6 +6,8 @@ permalink: /kb/134/Q134964/
 
 ## Q134964: Rcmd.exe Err Msg: Error 3 Failed to Connect to Server
 
+{% raw %}
+
 	Article: Q134964
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -64,3 +66,5 @@ permalink: /kb/134/Q134964/
 	
 	=============================================================================
 	
+
+{% endraw %}

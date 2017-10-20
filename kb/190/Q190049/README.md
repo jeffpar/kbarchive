@@ -6,6 +6,8 @@ permalink: /kb/190/Q190049/
 
 ## Q190049: BUG: Compile Error When Using Document.Write in DHTML App
 
+{% raw %}
+
 	Article: Q190049
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0;
@@ -74,3 +76,5 @@ permalink: /kb/190/Q190049/
 	
 	=============================================================================
 	
+
+{% endraw %}

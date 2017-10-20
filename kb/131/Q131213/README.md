@@ -6,6 +6,8 @@ permalink: /kb/131/Q131213/
 
 ## Q131213: PRB: Grid Behavior Isn't Consistent w/ that of List/Combo Box
 
+{% raw %}
+
 	Article: Q131213
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
@@ -131,3 +133,5 @@ permalink: /kb/131/Q131213/
 	
 	=============================================================================
 	
+
+{% endraw %}

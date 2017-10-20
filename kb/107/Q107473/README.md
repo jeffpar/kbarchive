@@ -6,6 +6,8 @@ permalink: /kb/107/Q107473/
 
 ## Q107473: WFWG 3.11 Err Msg: Access Denied
 
+{% raw %}
+
 	Article: Q107473
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -67,3 +69,5 @@ permalink: /kb/107/Q107473/
 	
 	=============================================================================
 	
+
+{% endraw %}

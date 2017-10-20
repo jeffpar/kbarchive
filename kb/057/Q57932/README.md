@@ -6,6 +6,8 @@ permalink: /kb/057/Q57932/
 
 ## Q57932: Incorrect Message from &quot;searchall&quot; with Regular Expressions
 
+{% raw %}
+
 	Article: Q57932
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -23,3 +25,5 @@ permalink: /kb/057/Q57932/
 	
 	In this situation, searchall still finds all occurrences of the search
 	pattern correctly -- only the message is incorrect.
+
+{% endraw %}

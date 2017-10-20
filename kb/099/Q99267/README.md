@@ -6,6 +6,8 @@ permalink: /kb/099/Q99267/
 
 ## Q99267: Bookshelf: QuicKeys Dialog Adds CTRL Key to Invalid Entries
 
+{% raw %}
+
 	Article: Q99267
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition,2.0
@@ -48,3 +50,5 @@ permalink: /kb/099/Q99267/
 	
 	=============================================================================
 	
+
+{% endraw %}

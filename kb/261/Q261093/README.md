@@ -6,6 +6,8 @@ permalink: /kb/261/Q261093/
 
 ## Q261093: XADM: Readme Document for the Pfinfo.exe Program
 
+{% raw %}
+
 	Article: Q261093
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -295,3 +297,5 @@ permalink: /kb/261/Q261093/
 	
 	=============================================================================
 	
+
+{% endraw %}

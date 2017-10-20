@@ -6,6 +6,8 @@ permalink: /kb/139/Q139285/
 
 ## Q139285: XCLN: Specifying Microsoft Word as E-Mail Editor
 
+{% raw %}
+
 	Article: Q139285
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -51,3 +53,5 @@ permalink: /kb/139/Q139285/
 	
 	=============================================================================
 	
+
+{% endraw %}

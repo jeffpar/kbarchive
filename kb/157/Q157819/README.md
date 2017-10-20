@@ -6,6 +6,8 @@ permalink: /kb/157/Q157819/
 
 ## Q157819: SMS: Office 97 as Shared Application Requires SP1
 
+{% raw %}
+
 	Article: Q157819
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -50,3 +52,5 @@ permalink: /kb/157/Q157819/
 	
 	=============================================================================
 	
+
+{% endraw %}

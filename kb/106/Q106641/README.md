@@ -6,6 +6,8 @@ permalink: /kb/106/Q106641/
 
 ## Q106641: BUG: GPF on Expanding Adjustable Size Array After Execution
 
+{% raw %}
+
 	Article: Q106641
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -75,3 +77,5 @@ permalink: /kb/106/Q106641/
 	
 	=============================================================================
 	
+
+{% endraw %}

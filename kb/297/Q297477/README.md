@@ -6,6 +6,8 @@ permalink: /kb/297/Q297477/
 
 ## Q297477: HOW TO: Apply a Background Sound to a Web Page in FrontPage
 
+{% raw %}
+
 	Article: Q297477
 	Product(s): Word Front Page
 	Version(s): 
@@ -168,3 +170,5 @@ permalink: /kb/297/Q297477/
 	
 	=============================================================================
 	
+
+{% endraw %}

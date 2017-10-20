@@ -6,6 +6,8 @@ permalink: /kb/120/Q120754/
 
 ## Q120754: WINS Managers Fails to Delete All Selected Static Mappings
 
+{% raw %}
+
 	Article: Q120754
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/120/Q120754/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120902/
 
 ## Q120902: Cannot Specify a Working Directory for a Windows Executable
 
+{% raw %}
+
 	Article: Q120902
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -58,3 +60,5 @@ permalink: /kb/120/Q120902/
 	
 	=============================================================================
 	
+
+{% endraw %}

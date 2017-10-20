@@ -6,6 +6,8 @@ permalink: /kb/058/Q58124/
 
 ## Q58124: BASIC 7.00/7.10: Incorrect Results with Alternate Math Library
 
+{% raw %}
+
 	Article: Q58124
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -46,3 +48,5 @@ permalink: /kb/058/Q58124/
 	The correct output from BASIC 7.10 is as follows:
 	
 	   .5     5     5
+
+{% endraw %}

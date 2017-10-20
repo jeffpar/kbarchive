@@ -6,6 +6,8 @@ permalink: /kb/098/Q98537/
 
 ## Q98537: PC DOS: Starting Monitor in Monochrome Mode
 
+{% raw %}
+
 	Article: Q98537
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -40,3 +42,5 @@ permalink: /kb/098/Q98537/
 	
 	=============================================================================
 	
+
+{% endraw %}

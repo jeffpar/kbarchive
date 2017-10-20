@@ -6,6 +6,8 @@ permalink: /kb/086/Q86742/
 
 ## Q86742: Using the Microsoft Mouse as a Pen Input Device
 
+{% raw %}
+
 	Article: Q86742
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -69,3 +71,5 @@ permalink: /kb/086/Q86742/
 	
 	=============================================================================
 	
+
+{% endraw %}

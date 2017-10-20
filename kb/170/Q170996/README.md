@@ -6,6 +6,8 @@ permalink: /kb/170/Q170996/
 
 ## Q170996: SNA Server Fails to Send Data to DSPU After an Outage
 
+{% raw %}
+
 	Article: Q170996
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP2,3.0,3.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/170/Q170996/
 	
 	=============================================================================
 	
+
+{% endraw %}

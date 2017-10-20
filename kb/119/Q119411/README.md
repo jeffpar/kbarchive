@@ -6,6 +6,8 @@ permalink: /kb/119/Q119411/
 
 ## Q119411: PC DOS: SCRCOMP.EXE -P Option Not Work
 
+{% raw %}
+
 	Article: Q119411
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -60,3 +62,5 @@ permalink: /kb/119/Q119411/
 	
 	=============================================================================
 	
+
+{% endraw %}

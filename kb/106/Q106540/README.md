@@ -6,6 +6,8 @@ permalink: /kb/106/Q106540/
 
 ## Q106540: Scenes 1.0: Cannot Install the After Dark Module
 
+{% raw %}
+
 	Article: Q106540
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/106/Q106540/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274369/
 
 ## Q274369: Internet Explorer No Longer Prompts To Accept Cookies
 
+{% raw %}
+
 	Article: Q274369
 	Product(s): The Microsoft Network
 	Version(s): 5,6.0
@@ -59,3 +61,5 @@ permalink: /kb/274/Q274369/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101018/
 
 ## Q101018: How to Copy Memo or General Fields to New Records
 
+{% raw %}
+
 	Article: Q101018
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 3.00| 2.00 2.50 2.50a
@@ -82,3 +84,5 @@ permalink: /kb/101/Q101018/
 	
 	=============================================================================
 	
+
+{% endraw %}

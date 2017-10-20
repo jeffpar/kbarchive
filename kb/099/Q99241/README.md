@@ -6,6 +6,8 @@ permalink: /kb/099/Q99241/
 
 ## Q99241: DoubleSpace User Interface Text Not Visible on Monochrome
 
+{% raw %}
+
 	Article: Q99241
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -52,3 +54,5 @@ permalink: /kb/099/Q99241/
 	
 	=============================================================================
 	
+
+{% endraw %}

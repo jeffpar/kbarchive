@@ -6,6 +6,8 @@ permalink: /kb/094/Q94801/
 
 ## Q94801: Windows for Workgroups 3.1 Retail Package Options (SKUs)
 
+{% raw %}
+
 	Article: Q94801
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,3.1
@@ -139,3 +141,5 @@ permalink: /kb/094/Q94801/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/052/Q52101/
 
 ## Q52101: /Zr Generates Error When Assigning to Video Memory
 
+{% raw %}
+
 	Article: Q52101
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -68,3 +70,5 @@ permalink: /kb/052/Q52101/
 	
 	It does generate the correct code to make the assignment; however, it
 	is too late to then generate the code for the segment:offset checking.
+
+{% endraw %}

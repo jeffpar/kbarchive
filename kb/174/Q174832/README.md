@@ -6,6 +6,8 @@ permalink: /kb/174/Q174832/
 
 ## Q174832: DOC: Incorrect Internet Transfer Control GetChunk Example
 
+{% raw %}
+
 	Article: Q174832
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -96,3 +98,5 @@ permalink: /kb/174/Q174832/
 	
 	=============================================================================
 	
+
+{% endraw %}

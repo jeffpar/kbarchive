@@ -6,6 +6,8 @@ permalink: /kb/318/Q318987/
 
 ## Q318987: How To Clear History In Internet Explorer 5.x For The Macintosh
 
+{% raw %}
+
 	Article: Q318987
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/318/Q318987/
 	
 	=============================================================================
 	
+
+{% endraw %}

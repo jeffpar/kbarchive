@@ -6,6 +6,8 @@ permalink: /kb/172/Q172529/
 
 ## Q172529: Printer access with Control Panel disabled by a Policy
 
+{% raw %}
+
 	Article: Q172529
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -113,3 +115,5 @@ permalink: /kb/172/Q172529/
 	
 	=============================================================================
 	
+
+{% endraw %}

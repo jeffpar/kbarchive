@@ -6,6 +6,8 @@ permalink: /kb/231/Q231205/
 
 ## Q231205: SMS: Migration Wizard Fails w/More Than 50 Characters in Name
 
+{% raw %}
+
 	Article: Q231205
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -61,3 +63,5 @@ permalink: /kb/231/Q231205/
 	
 	=============================================================================
 	
+
+{% endraw %}

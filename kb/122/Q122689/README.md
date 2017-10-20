@@ -6,6 +6,8 @@ permalink: /kb/122/Q122689/
 
 ## Q122689: PC DirSync: IMPORT.EXE Hangs When Processing Corrupt RESYNC.GLB
 
+{% raw %}
+
 	Article: Q122689
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -58,3 +60,5 @@ permalink: /kb/122/Q122689/
 	
 	=============================================================================
 	
+
+{% endraw %}

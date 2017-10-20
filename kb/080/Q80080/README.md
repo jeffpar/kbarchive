@@ -6,6 +6,8 @@ permalink: /kb/080/Q80080/
 
 ## Q80080: HOWTO: Convert Between Device-Dependent Bitmaps and DIBs
 
+{% raw %}
+
 	Article: Q80080
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -161,3 +163,5 @@ permalink: /kb/080/Q80080/
 	
 	=============================================================================
 	
+
+{% endraw %}

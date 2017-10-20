@@ -6,6 +6,8 @@ permalink: /kb/191/Q191089/
 
 ## Q191089: PRB: Multimedia API Calls May Fail with Long File Names
 
+{% raw %}
+
 	Article: Q191089
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/191/Q191089/
 	
 	=============================================================================
 	
+
+{% endraw %}

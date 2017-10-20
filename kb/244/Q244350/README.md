@@ -6,6 +6,8 @@ permalink: /kb/244/Q244350/
 
 ## Q244350: Memory Leaks in &quot;Drsd&quot; Tag When Printing to Generic Text Printer
 
+{% raw %}
+
 	Article: Q244350
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2.0,3.0,4.0; winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -86,3 +88,5 @@ permalink: /kb/244/Q244350/
 	
 	=============================================================================
 	
+
+{% endraw %}

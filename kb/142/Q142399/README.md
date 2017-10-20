@@ -6,6 +6,8 @@ permalink: /kb/142/Q142399/
 
 ## Q142399: PRB: Line Drawn with Line Method Is Behind Form's Objects
 
+{% raw %}
+
 	Article: Q142399
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -111,3 +113,5 @@ permalink: /kb/142/Q142399/
 	
 	=============================================================================
 	
+
+{% endraw %}

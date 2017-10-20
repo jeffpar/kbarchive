@@ -6,6 +6,8 @@ permalink: /kb/195/Q195823/
 
 ## Q195823: SMS: Audit Stops If Certain Entries in Sms.ini Are Blank
 
+{% raw %}
+
 	Article: Q195823
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -128,3 +130,5 @@ permalink: /kb/195/Q195823/
 	
 	=============================================================================
 	
+
+{% endraw %}

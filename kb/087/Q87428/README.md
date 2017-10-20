@@ -6,6 +6,8 @@ permalink: /kb/087/Q87428/
 
 ## Q87428: PROFS: How Import/Export Feature Works for PROFS Addresses
 
+{% raw %}
+
 	Article: Q87428
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -54,3 +56,5 @@ permalink: /kb/087/Q87428/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113263/
 
 ## Q113263: Printing Multiple Topics from Viewer
 
+{% raw %}
+
 	Article: Q113263
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/113/Q113263/
 	
 	=============================================================================
 	
+
+{% endraw %}

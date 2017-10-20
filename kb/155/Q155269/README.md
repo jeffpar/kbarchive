@@ -6,6 +6,8 @@ permalink: /kb/155/Q155269/
 
 ## Q155269: XADM: Microsoft Exchange Administrators' FAQ
 
+{% raw %}
+
 	Article: Q155269
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -220,3 +222,5 @@ permalink: /kb/155/Q155269/
 	
 	=============================================================================
 	
+
+{% endraw %}

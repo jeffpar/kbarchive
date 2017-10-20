@@ -6,6 +6,8 @@ permalink: /kb/148/Q148765/
 
 ## Q148765: Availability of DLC Update for MSDLC32 Protocol
 
+{% raw %}
+
 	Article: Q148765
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -92,3 +94,5 @@ permalink: /kb/148/Q148765/
 	
 	=============================================================================
 	
+
+{% endraw %}

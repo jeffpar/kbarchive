@@ -6,6 +6,8 @@ permalink: /kb/089/Q89705/
 
 ## Q89705: INFO: How VMs Can Communicate with VxDs
 
+{% raw %}
+
 	Article: Q89705
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -169,3 +171,5 @@ permalink: /kb/089/Q89705/
 	
 	=============================================================================
 	
+
+{% endraw %}

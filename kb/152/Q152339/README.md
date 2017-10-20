@@ -6,6 +6,8 @@ permalink: /kb/152/Q152339/
 
 ## Q152339: Windows NT NTFS Time Stamps Mismatch CD-ROM After Upgrading
 
+{% raw %}
+
 	Article: Q152339
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -98,3 +100,5 @@ permalink: /kb/152/Q152339/
 	
 	=============================================================================
 	
+
+{% endraw %}

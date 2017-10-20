@@ -6,6 +6,8 @@ permalink: /kb/036/Q36028/
 
 ## Q36028: .EXE &quot;String Space Corrupt&quot; Actually Is &quot;Duplicate Definition&quot;
 
+{% raw %}
+
 	Article: Q36028
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/036/Q36028/
 	     DIM X AS STRING        ' "Duplicate Definition" in QB.EXE editor.
 	     X = "abcdefghi"        ' "String Space Corrupt" error here in .EXE
 	     END SUB
+
+{% endraw %}

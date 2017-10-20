@@ -6,6 +6,8 @@ permalink: /kb/253/Q253860/
 
 ## Q253860: Assigning SMTP Mail Attribute from a Notes Connected Directory
 
+{% raw %}
+
 	Article: Q253860
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -68,3 +70,5 @@ permalink: /kb/253/Q253860/
 	
 	=============================================================================
 	
+
+{% endraw %}

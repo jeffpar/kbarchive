@@ -6,6 +6,8 @@ permalink: /kb/183/Q183554/
 
 ## Q183554: Incorrect Error Message When Data Source Is Missing
 
+{% raw %}
+
 	Article: Q183554
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -62,3 +64,5 @@ permalink: /kb/183/Q183554/
 	
 	=============================================================================
 	
+
+{% endraw %}

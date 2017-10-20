@@ -6,6 +6,8 @@ permalink: /kb/109/Q109270/
 
 ## Q109270: PRB: CK1024 Error May Be Caused by Modules in Library
 
+{% raw %}
+
 	Article: Q109270
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.5,5.6; winnt:1.0,2.5,2.55
@@ -72,3 +74,5 @@ permalink: /kb/109/Q109270/
 	
 	=============================================================================
 	
+
+{% endraw %}

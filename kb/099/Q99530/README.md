@@ -6,6 +6,8 @@ permalink: /kb/099/Q99530/
 
 ## Q99530: RPL Workstation Login Problems with Login Scripts
 
+{% raw %}
+
 	Article: Q99530
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/099/Q99530/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247139/
 
 ## Q247139: AppGetStatus Is Different than MMC Status Using Adsutil.vbs
 
+{% raw %}
+
 	Article: Q247139
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -166,3 +168,5 @@ permalink: /kb/247/Q247139/
 	
 	=============================================================================
 	
+
+{% endraw %}

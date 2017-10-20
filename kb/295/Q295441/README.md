@@ -6,6 +6,8 @@ permalink: /kb/295/Q295441/
 
 ## Q295441: SMS: Logon Discovery Agent Creates Multiple Connections
 
+{% raw %}
+
 	Article: Q295441
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -155,3 +157,5 @@ permalink: /kb/295/Q295441/
 	
 	=============================================================================
 	
+
+{% endraw %}

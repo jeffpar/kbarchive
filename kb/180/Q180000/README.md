@@ -6,6 +6,8 @@ permalink: /kb/180/Q180000/
 
 ## Q180000: WD97: OLE Objects Print Incorrectly with Float Over Text
 
+{% raw %}
+
 	Article: Q180000
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/180/Q180000/
 	
 	=============================================================================
 	
+
+{% endraw %}

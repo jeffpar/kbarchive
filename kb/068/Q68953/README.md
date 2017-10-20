@@ -6,6 +6,8 @@ permalink: /kb/068/Q68953/
 
 ## Q68953: Microsoft Mouse Incompatible with Commodore PC 40-III
 
+{% raw %}
+
 	Article: Q68953
 	Product(s): See article
 	Version(s): 1.00
@@ -22,3 +24,5 @@ permalink: /kb/068/Q68953/
 	here is manufactured by a vendor independent of Microsoft; we make no
 	warranty, implied or otherwise, regarding this product's performance
 	or reliability.
+
+{% endraw %}

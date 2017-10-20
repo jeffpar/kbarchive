@@ -6,6 +6,8 @@ permalink: /kb/088/Q88763/
 
 ## Q88763: Display Options for 286 Machines with Windows 3.0, 3.0a
 
+{% raw %}
+
 	Article: Q88763
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/088/Q88763/
 	
 	=============================================================================
 	
+
+{% endraw %}

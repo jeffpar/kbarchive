@@ -6,6 +6,8 @@ permalink: /kb/155/Q155999/
 
 ## Q155999: Deadly Tide: An Overview of Playing the Game
 
+{% raw %}
+
 	Article: Q155999
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/155/Q155999/
 	
 	=============================================================================
 	
+
+{% endraw %}

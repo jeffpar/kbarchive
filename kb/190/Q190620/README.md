@@ -6,6 +6,8 @@ permalink: /kb/190/Q190620/
 
 ## Q190620: PRB: Error 3622 Open SQL Server Table with Identity Column
 
+{% raw %}
+
 	Article: Q190620
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -109,3 +111,5 @@ permalink: /kb/190/Q190620/
 	
 	=============================================================================
 	
+
+{% endraw %}

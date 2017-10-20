@@ -6,6 +6,8 @@ permalink: /kb/175/Q175499/
 
 ## Q175499: XCON: NDR When Replying to Another Exchange Organization
 
+{% raw %}
+
 	Article: Q175499
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -79,3 +81,5 @@ permalink: /kb/175/Q175499/
 	
 	=============================================================================
 	
+
+{% endraw %}

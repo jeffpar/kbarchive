@@ -6,6 +6,8 @@ permalink: /kb/317/Q317544/
 
 ## Q317544: How To Connect To MSN Using Macintosh OS X
 
+{% raw %}
+
 	Article: Q317544
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/317/Q317544/
 	
 	=============================================================================
 	
+
+{% endraw %}

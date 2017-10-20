@@ -6,6 +6,8 @@ permalink: /kb/317/Q317364/
 
 ## Q317364: FIX: A Second TABLEUPDATE After Failure May Corrupt Index
 
+{% raw %}
+
 	Article: Q317364
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,7.0
@@ -254,3 +256,5 @@ permalink: /kb/317/Q317364/
 	
 	=============================================================================
 	
+
+{% endraw %}

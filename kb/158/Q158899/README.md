@@ -6,6 +6,8 @@ permalink: /kb/158/Q158899/
 
 ## Q158899: Prompted for Password When Restoring Persistent Connections
 
+{% raw %}
+
 	Article: Q158899
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/158/Q158899/
 	
 	=============================================================================
 	
+
+{% endraw %}

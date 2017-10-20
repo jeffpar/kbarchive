@@ -6,6 +6,8 @@ permalink: /kb/253/Q253348/
 
 ## Q253348: XCON: Exchange Server Cannot Reply All to Notes Recipients
 
+{% raw %}
+
 	Article: Q253348
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/253/Q253348/
 	
 	=============================================================================
 	
+
+{% endraw %}

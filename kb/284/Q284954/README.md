@@ -6,6 +6,8 @@ permalink: /kb/284/Q284954/
 
 ## Q284954: XADM: Extra Read Receipt May Be Sent from Delegate
 
+{% raw %}
+
 	Article: Q284954
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -94,3 +96,5 @@ permalink: /kb/284/Q284954/
 	
 	=============================================================================
 	
+
+{% endraw %}

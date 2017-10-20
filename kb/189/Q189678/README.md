@@ -6,6 +6,8 @@ permalink: /kb/189/Q189678/
 
 ## Q189678: FIX: Error 3315 or 3426 When Updating a Bound DBCombo Box
 
+{% raw %}
+
 	Article: Q189678
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/189/Q189678/
 	
 	=============================================================================
 	
+
+{% endraw %}

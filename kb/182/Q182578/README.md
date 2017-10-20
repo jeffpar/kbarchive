@@ -6,6 +6,8 @@ permalink: /kb/182/Q182578/
 
 ## Q182578: MC_CONFIRMED Stops Following what_rcvd=AP_CONFIRM_DEALLOCATE
 
+{% raw %}
+
 	Article: Q182578
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -63,3 +65,5 @@ permalink: /kb/182/Q182578/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134234/
 
 ## Q134234: PC Adm: Err Msg: Notice 38 Cannot Add Local Postoffice Name...
 
+{% raw %}
+
 	Article: Q134234
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -49,3 +51,5 @@ permalink: /kb/134/Q134234/
 	
 	=============================================================================
 	
+
+{% endraw %}

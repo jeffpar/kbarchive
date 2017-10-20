@@ -6,6 +6,8 @@ permalink: /kb/147/Q147799/
 
 ## Q147799: Net3779 Errors During Domain Validation
 
+{% raw %}
+
 	Article: Q147799
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -51,3 +53,5 @@ permalink: /kb/147/Q147799/
 	
 	=============================================================================
 	
+
+{% endraw %}

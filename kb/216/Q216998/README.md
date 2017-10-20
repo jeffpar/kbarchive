@@ -6,6 +6,8 @@ permalink: /kb/216/Q216998/
 
 ## Q216998: XWEB: OWA Logon Screen Displays Again When Opening Mail Message
 
+{% raw %}
+
 	Article: Q216998
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/216/Q216998/
 	
 	=============================================================================
 	
+
+{% endraw %}

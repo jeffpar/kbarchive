@@ -6,6 +6,8 @@ permalink: /kb/099/Q99801/
 
 ## Q99801: INFO: Increasing the Transmission Retry Timeout for Printing
 
+{% raw %}
+
 	Article: Q99801
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -80,3 +82,5 @@ permalink: /kb/099/Q99801/
 	
 	=============================================================================
 	
+
+{% endraw %}

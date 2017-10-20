@@ -6,6 +6,8 @@ permalink: /kb/270/Q270036/
 
 ## Q270036: SMS: Multiple TCP/IP Addresses Cause Incorrect Discovery Data
 
+{% raw %}
+
 	Article: Q270036
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -164,3 +166,5 @@ permalink: /kb/270/Q270036/
 	
 	=============================================================================
 	
+
+{% endraw %}

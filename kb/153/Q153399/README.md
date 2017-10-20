@@ -6,6 +6,8 @@ permalink: /kb/153/Q153399/
 
 ## Q153399: Add-in Display Adapters and Motorola Powerstack Computers
 
+{% raw %}
+
 	Article: Q153399
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/153/Q153399/
 	
 	=============================================================================
 	
+
+{% endraw %}

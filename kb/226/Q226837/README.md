@@ -6,6 +6,8 @@ permalink: /kb/226/Q226837/
 
 ## Q226837: SMS: Crystal Reports Location Is Displayed Incorrectly
 
+{% raw %}
+
 	Article: Q226837
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/226/Q226837/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177875/
 
 ## Q177875: XADM: Memory Leak in Directory Service of Exchange Server
 
+{% raw %}
+
 	Article: Q177875
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/177/Q177875/
 	
 	=============================================================================
 	
+
+{% endraw %}

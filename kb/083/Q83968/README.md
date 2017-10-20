@@ -6,6 +6,8 @@ permalink: /kb/083/Q83968/
 
 ## Q83968: How Windows Determines the Recommended Maximum Swap File Size
 
+{% raw %}
+
 	Article: Q83968
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -105,3 +107,5 @@ permalink: /kb/083/Q83968/
 	
 	=============================================================================
 	
+
+{% endraw %}

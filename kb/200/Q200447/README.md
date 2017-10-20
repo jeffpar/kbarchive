@@ -6,6 +6,8 @@ permalink: /kb/200/Q200447/
 
 ## Q200447: SMS: SMS.MSC Randomly Disappears
 
+{% raw %}
+
 	Article: Q200447
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -114,3 +116,5 @@ permalink: /kb/200/Q200447/
 	
 	=============================================================================
 	
+
+{% endraw %}

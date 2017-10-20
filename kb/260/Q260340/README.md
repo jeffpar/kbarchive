@@ -6,6 +6,8 @@ permalink: /kb/260/Q260340/
 
 ## Q260340: Visual FoxPro Sample: Use PictureClip Control to Animate in VFP
 
+{% raw %}
+
 	Article: Q260340
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -96,3 +98,5 @@ permalink: /kb/260/Q260340/
 	
 	=============================================================================
 	
+
+{% endraw %}

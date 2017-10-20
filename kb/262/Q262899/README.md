@@ -6,6 +6,8 @@ permalink: /kb/262/Q262899/
 
 ## Q262899: XADM: KCC Generates Notifications for Intrasite Server
 
+{% raw %}
+
 	Article: Q262899
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -65,3 +67,5 @@ permalink: /kb/262/Q262899/
 	
 	=============================================================================
 	
+
+{% endraw %}

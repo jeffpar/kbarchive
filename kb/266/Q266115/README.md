@@ -6,6 +6,8 @@ permalink: /kb/266/Q266115/
 
 ## Q266115: Resources for Installing and Using IIS 5.0
 
+{% raw %}
+
 	Article: Q266115
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -288,3 +290,5 @@ permalink: /kb/266/Q266115/
 	
 	=============================================================================
 	
+
+{% endraw %}

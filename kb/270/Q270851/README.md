@@ -6,6 +6,8 @@ permalink: /kb/270/Q270851/
 
 ## Q270851: XADM: How to Export the Outlook Web Access Server Name Field
 
+{% raw %}
+
 	Article: Q270851
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -52,3 +54,5 @@ permalink: /kb/270/Q270851/
 	
 	=============================================================================
 	
+
+{% endraw %}

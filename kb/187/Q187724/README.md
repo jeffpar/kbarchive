@@ -6,6 +6,8 @@ permalink: /kb/187/Q187724/
 
 ## Q187724: BUG: WLList and WLText Controls Cause Display Problem
 
+{% raw %}
+
 	Article: Q187724
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/187/Q187724/
 	
 	=============================================================================
 	
+
+{% endraw %}

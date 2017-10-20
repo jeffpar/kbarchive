@@ -6,6 +6,8 @@ permalink: /kb/060/Q60975/
 
 ## Q60975: -Za and OS2.H Are Incompatible
 
+{% raw %}
+
 	Article: Q60975
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -25,3 +27,5 @@ permalink: /kb/060/Q60975/
 	
 	Microsoft is researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

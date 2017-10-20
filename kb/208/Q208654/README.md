@@ -6,6 +6,8 @@ permalink: /kb/208/Q208654/
 
 ## Q208654: BUG: FontChanged Fires Twice When a Font Object Property Changed
 
+{% raw %}
+
 	Article: Q208654
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -126,3 +128,5 @@ permalink: /kb/208/Q208654/
 	
 	=============================================================================
 	
+
+{% endraw %}

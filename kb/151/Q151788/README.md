@@ -6,6 +6,8 @@ permalink: /kb/151/Q151788/
 
 ## Q151788: XADM: &quot;Reps-From&quot; USN Too High for One Server
 
+{% raw %}
+
 	Article: Q151788
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -109,3 +111,5 @@ permalink: /kb/151/Q151788/
 	
 	=============================================================================
 	
+
+{% endraw %}

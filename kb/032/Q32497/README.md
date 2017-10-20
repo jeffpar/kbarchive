@@ -6,6 +6,8 @@ permalink: /kb/032/Q32497/
 
 ## Q32497: How to Delete the Contents of a Directory in One Step
 
+{% raw %}
+
 	Article: Q32497
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -54,3 +56,5 @@ permalink: /kb/032/Q32497/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254992/
 
 ## Q254992: XCON: MIXER Encapsulates X.400 Addr. in the Wrong SMTP Addr.
 
+{% raw %}
+
 	Article: Q254992
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -80,3 +82,5 @@ permalink: /kb/254/Q254992/
 	
 	=============================================================================
 	
+
+{% endraw %}

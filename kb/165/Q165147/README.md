@@ -6,6 +6,8 @@ permalink: /kb/165/Q165147/
 
 ## Q165147: SMS: PCMWin32 Should Ignore Mandatory Background Jobs
 
+{% raw %}
+
 	Article: Q165147
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -54,3 +56,5 @@ permalink: /kb/165/Q165147/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254303/
 
 ## Q254303: XADM: New CDONTS Fixes Available
 
+{% raw %}
+
 	Article: Q254303
 	Product(s): Microsoft Exchange
 	Version(s): 2.0,2.5,4.0 SP5,4.0 SP6,4.0 SP6a,5.5
@@ -67,3 +69,5 @@ permalink: /kb/254/Q254303/
 	
 	=============================================================================
 	
+
+{% endraw %}

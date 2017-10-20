@@ -6,6 +6,8 @@ permalink: /kb/163/Q163418/
 
 ## Q163418: FIX: Disabled Page in a Pageframe Shows Objects with Arrow Key
 
+{% raw %}
+
 	Article: Q163418
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -66,3 +68,5 @@ permalink: /kb/163/Q163418/
 	
 	=============================================================================
 	
+
+{% endraw %}

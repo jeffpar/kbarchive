@@ -6,6 +6,8 @@ permalink: /kb/194/Q194733/
 
 ## Q194733: PC Rmt: Attachments from MAC Clients Show Garbage File Names
 
+{% raw %}
+
 	Article: Q194733
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/194/Q194733/
 	
 	=============================================================================
 	
+
+{% endraw %}

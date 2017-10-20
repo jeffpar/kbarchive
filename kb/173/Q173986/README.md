@@ -6,6 +6,8 @@ permalink: /kb/173/Q173986/
 
 ## Q173986: Flight Simulator 98/2000: Product Identification (PID) Location
 
+{% raw %}
+
 	Article: Q173986
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/173/Q173986/
 	
 	=============================================================================
 	
+
+{% endraw %}

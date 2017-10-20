@@ -6,6 +6,8 @@ permalink: /kb/313/Q313489/
 
 ## Q313489: Content Headers in Body of Response OK w/ ISAPI Filter Install
 
+{% raw %}
+
 	Article: Q313489
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -79,3 +81,5 @@ permalink: /kb/313/Q313489/
 	
 	=============================================================================
 	
+
+{% endraw %}

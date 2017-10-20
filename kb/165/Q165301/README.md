@@ -6,6 +6,8 @@ permalink: /kb/165/Q165301/
 
 ## Q165301: WD97: Auto Numbering Changes by One After You Press ENTER
 
+{% raw %}
+
 	Article: Q165301
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/165/Q165301/
 	
 	=============================================================================
 	
+
+{% endraw %}

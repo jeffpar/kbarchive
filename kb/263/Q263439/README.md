@@ -6,6 +6,8 @@ permalink: /kb/263/Q263439/
 
 ## Q263439: SMS: Online Admin Guide Incorrectly Refers to SP1 and Not SP2
 
+{% raw %}
+
 	Article: Q263439
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -86,3 +88,5 @@ permalink: /kb/263/Q263439/
 	
 	=============================================================================
 	
+
+{% endraw %}

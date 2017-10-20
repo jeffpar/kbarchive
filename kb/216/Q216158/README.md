@@ -6,6 +6,8 @@ permalink: /kb/216/Q216158/
 
 ## Q216158: BUG: Multiple &quot;Please Insert Disk&quot; Messages Installing VB6 App
 
+{% raw %}
+
 	Article: Q216158
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -136,3 +138,5 @@ permalink: /kb/216/Q216158/
 	
 	=============================================================================
 	
+
+{% endraw %}

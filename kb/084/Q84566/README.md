@@ -6,6 +6,8 @@ permalink: /kb/084/Q84566/
 
 ## Q84566: Panasonic KX-P1624 Has Top and Bottom Margin Shift
 
+{% raw %}
+
 	Article: Q84566
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/084/Q84566/
 	
 	=============================================================================
 	
+
+{% endraw %}

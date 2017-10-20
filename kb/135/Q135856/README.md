@@ -6,6 +6,8 @@ permalink: /kb/135/Q135856/
 
 ## Q135856: RIP Table Does Not Update When New RIPX Response Is Received
 
+{% raw %}
+
 	Article: Q135856
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -59,3 +61,5 @@ permalink: /kb/135/Q135856/
 	
 	=============================================================================
 	
+
+{% endraw %}

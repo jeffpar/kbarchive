@@ -6,6 +6,8 @@ permalink: /kb/308/Q308133/
 
 ## Q308133: INFO: CONVERT Function Gets Date from SQL Server DateTime Field
 
+{% raw %}
+
 	Article: Q308133
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -115,3 +117,5 @@ permalink: /kb/308/Q308133/
 	
 	=============================================================================
 	
+
+{% endraw %}

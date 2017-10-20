@@ -6,6 +6,8 @@ permalink: /kb/128/Q128522/
 
 ## Q128522: Replacing Carriage Return &amp; Line Feeds with Other Characters
 
+{% raw %}
+
 	Article: Q128522
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0
@@ -96,3 +98,5 @@ permalink: /kb/128/Q128522/
 	
 	=============================================================================
 	
+
+{% endraw %}

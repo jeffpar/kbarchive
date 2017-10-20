@@ -6,6 +6,8 @@ permalink: /kb/162/Q162744/
 
 ## Q162744: Using AOL's Internet Connection with Windows Programs
 
+{% raw %}
+
 	Article: Q162744
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -108,3 +110,5 @@ permalink: /kb/162/Q162744/
 	
 	=============================================================================
 	
+
+{% endraw %}

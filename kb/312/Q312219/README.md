@@ -6,6 +6,8 @@ permalink: /kb/312/Q312219/
 
 ## Q312219: MCSE Training Kit: Microsoft Internet Security and Acceleration
 
+{% raw %}
+
 	Article: Q312219
 	Product(s): Microsoft Press
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/312/Q312219/
 	
 	=============================================================================
 	
+
+{% endraw %}

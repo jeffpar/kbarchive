@@ -6,6 +6,8 @@ permalink: /kb/190/Q190254/
 
 ## Q190254: BUG: Cannot Insert MFC 4.1-Based Controls in DHTML Page Designer
 
+{% raw %}
+
 	Article: Q190254
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -58,3 +60,5 @@ permalink: /kb/190/Q190254/
 	
 	=============================================================================
 	
+
+{% endraw %}

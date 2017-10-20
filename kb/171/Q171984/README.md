@@ -6,6 +6,8 @@ permalink: /kb/171/Q171984/
 
 ## Q171984: Using DLC Protocol Instead of JetAdmin Utility
 
+{% raw %}
+
 	Article: Q171984
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -88,3 +90,5 @@ permalink: /kb/171/Q171984/
 	
 	=============================================================================
 	
+
+{% endraw %}

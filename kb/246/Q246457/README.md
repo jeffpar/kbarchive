@@ -6,6 +6,8 @@ permalink: /kb/246/Q246457/
 
 ## Q246457: PRB: Cannot find location of main media view file
 
+{% raw %}
+
 	Article: Q246457
 	Product(s): Microsoft Mastering Series
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/246/Q246457/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225542/
 
 ## Q225542: SMS: Logon Points Are Not Being Configured
 
+{% raw %}
+
 	Article: Q225542
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/225/Q225542/
 	
 	=============================================================================
 	
+
+{% endraw %}

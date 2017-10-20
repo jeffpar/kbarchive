@@ -6,6 +6,8 @@ permalink: /kb/123/Q123664/
 
 ## Q123664: BUG: PAGE + Directive Doesn't Insert Form Feed in Listing File
 
+{% raw %}
+
 	Article: Q123664
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.1,6.11
@@ -62,3 +64,5 @@ permalink: /kb/123/Q123664/
 	
 	=============================================================================
 	
+
+{% endraw %}

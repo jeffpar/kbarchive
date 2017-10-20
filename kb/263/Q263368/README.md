@@ -6,6 +6,8 @@ permalink: /kb/263/Q263368/
 
 ## Q263368: Membership of User and User Group Collections Is Not Updated
 
+{% raw %}
+
 	Article: Q263368
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/263/Q263368/
 	
 	=============================================================================
 	
+
+{% endraw %}

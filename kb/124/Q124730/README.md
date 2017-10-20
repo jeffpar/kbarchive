@@ -6,6 +6,8 @@ permalink: /kb/124/Q124730/
 
 ## Q124730: Tape Backup Units Supported in Windows 95
 
+{% raw %}
+
 	Article: Q124730
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -87,3 +89,5 @@ permalink: /kb/124/Q124730/
 	
 	=============================================================================
 	
+
+{% endraw %}

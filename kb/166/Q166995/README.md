@@ -6,6 +6,8 @@ permalink: /kb/166/Q166995/
 
 ## Q166995: XCLN: Mail Notifications Not Received for Each New Message
 
+{% raw %}
+
 	Article: Q166995
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -79,3 +81,5 @@ permalink: /kb/166/Q166995/
 	
 	=============================================================================
 	
+
+{% endraw %}

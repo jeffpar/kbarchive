@@ -6,6 +6,8 @@ permalink: /kb/131/Q131147/
 
 ## Q131147: FIX: CXX0033 Error in OMF Type from Forward Class Declaration
 
+{% raw %}
+
 	Article: Q131147
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -148,3 +150,5 @@ permalink: /kb/131/Q131147/
 	
 	=============================================================================
 	
+
+{% endraw %}

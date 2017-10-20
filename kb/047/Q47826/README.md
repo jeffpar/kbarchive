@@ -6,6 +6,8 @@ permalink: /kb/047/Q47826/
 
 ## Q47826: Default for NODATA When Using the _export Keyword
 
+{% raw %}
+
 	Article: Q47826
 	Product(s): See article
 	Version(s): 5.01.21 | 5.01.21
@@ -39,3 +41,5 @@ permalink: /kb/047/Q47826/
 	
 	In any case, a workaround is to not use the _export keyword and
 	declare the routine in EXPORTS in the .DEF file.
+
+{% endraw %}

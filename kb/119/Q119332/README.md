@@ -6,6 +6,8 @@ permalink: /kb/119/Q119332/
 
 ## Q119332: Output from &quot;lib /list &lt;import library&gt;&quot;
 
+{% raw %}
+
 	Article: Q119332
 	Product(s): Microsoft Programming Utilities
 	Version(s): winnt:1.0,2.5,2.55
@@ -66,3 +68,5 @@ permalink: /kb/119/Q119332/
 	
 	=============================================================================
 	
+
+{% endraw %}

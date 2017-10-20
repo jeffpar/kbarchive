@@ -6,6 +6,8 @@ permalink: /kb/249/Q249121/
 
 ## Q249121: SMS: COMMIT TRANSACTION Request Has No BEGIN TRANSACTION
 
+{% raw %}
+
 	Article: Q249121
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -143,3 +145,5 @@ permalink: /kb/249/Q249121/
 	
 	=============================================================================
 	
+
+{% endraw %}

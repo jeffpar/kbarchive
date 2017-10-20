@@ -6,6 +6,8 @@ permalink: /kb/235/Q235149/
 
 ## Q235149: Simple Command Fails in Available Program Manager (APM)
 
+{% raw %}
+
 	Article: Q235149
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/235/Q235149/
 	
 	=============================================================================
 	
+
+{% endraw %}

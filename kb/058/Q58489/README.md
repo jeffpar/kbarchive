@@ -6,6 +6,8 @@ permalink: /kb/058/Q58489/
 
 ## Q58489: Tips for Reducing Prolog/Epilog Code in Windows or PM Apps
 
+{% raw %}
+
 	Article: Q58489
 	Product(s): See article
 	Version(s): 6.00    | 6.00
@@ -59,3 +61,5 @@ permalink: /kb/058/Q58489/
 	4. Other references claim you should use -Au (equivalent to -Aw +
 	   _loadds); we claim the _loadds is not needed for windows since they
 	   all have a special DS sequence.
+
+{% endraw %}

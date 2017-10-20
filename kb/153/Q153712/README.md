@@ -6,6 +6,8 @@ permalink: /kb/153/Q153712/
 
 ## Q153712: Windows 95 Hangs with Always IN2000 SCSI Controller
 
+{% raw %}
+
 	Article: Q153712
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/153/Q153712/
 	
 	=============================================================================
 	
+
+{% endraw %}

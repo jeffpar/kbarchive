@@ -6,6 +6,8 @@ permalink: /kb/262/Q262295/
 
 ## Q262295: SMS: CCIM Does Not  Restart Running Smsman on Installed Client
 
+{% raw %}
+
 	Article: Q262295
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/262/Q262295/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194033/
 
 ## Q194033: PRB: Treeview Node Visible Property Still True When Not Viewable
 
+{% raw %}
+
 	Article: Q194033
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/194/Q194033/
 	
 	=============================================================================
 	
+
+{% endraw %}

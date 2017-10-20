@@ -6,6 +6,8 @@ permalink: /kb/120/Q120808/
 
 ## Q120808: PRB: Viewer Setup Error in INICM.C Line 185 or in PROGCM.C
 
+{% raw %}
+
 	Article: Q120808
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1; :2.0,2.0a
@@ -92,3 +94,5 @@ permalink: /kb/120/Q120808/
 	
 	=============================================================================
 	
+
+{% endraw %}

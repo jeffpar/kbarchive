@@ -6,6 +6,8 @@ permalink: /kb/215/Q215533/
 
 ## Q215533: XADM: Directory Export Sends OBJ-DIST-NAME Instead of Directory
 
+{% raw %}
+
 	Article: Q215533
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/215/Q215533/
 	
 	=============================================================================
 	
+
+{% endraw %}

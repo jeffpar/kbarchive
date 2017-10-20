@@ -6,6 +6,8 @@ permalink: /kb/149/Q149070/
 
 ## Q149070: 3D Movie Maker: Files Installed by 3D Movie Maker
 
+{% raw %}
+
 	Article: Q149070
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -347,3 +349,5 @@ permalink: /kb/149/Q149070/
 	
 	=============================================================================
 	
+
+{% endraw %}

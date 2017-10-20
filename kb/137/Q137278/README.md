@@ -6,6 +6,8 @@ permalink: /kb/137/Q137278/
 
 ## Q137278: PRB: Trigger Fails with One-to-Many Form Wizard and RI Builder
 
+{% raw %}
+
 	Article: Q137278
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -124,3 +126,5 @@ permalink: /kb/137/Q137278/
 	
 	=============================================================================
 	
+
+{% endraw %}

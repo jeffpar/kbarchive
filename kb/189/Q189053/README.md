@@ -6,6 +6,8 @@ permalink: /kb/189/Q189053/
 
 ## Q189053: SNA Server Access Violation in Function Snaservr!s1prfpda
 
+{% raw %}
+
 	Article: Q189053
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -118,3 +120,5 @@ permalink: /kb/189/Q189053/
 	
 	=============================================================================
 	
+
+{% endraw %}

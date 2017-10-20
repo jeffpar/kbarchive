@@ -6,6 +6,8 @@ permalink: /kb/228/Q228773/
 
 ## Q228773: Baseball 2000: Cannot See Player Photos in General Manager
 
+{% raw %}
+
 	Article: Q228773
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/228/Q228773/
 	
 	=============================================================================
 	
+
+{% endraw %}

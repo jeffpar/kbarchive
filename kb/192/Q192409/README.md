@@ -6,6 +6,8 @@ permalink: /kb/192/Q192409/
 
 ## Q192409: Open Files Can Cause Kernel to Report INSUFFICIENT_RESOURCES
 
+{% raw %}
+
 	Article: Q192409
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -124,3 +126,5 @@ permalink: /kb/192/Q192409/
 	
 	=============================================================================
 	
+
+{% endraw %}

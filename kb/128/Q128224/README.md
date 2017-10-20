@@ -6,6 +6,8 @@ permalink: /kb/128/Q128224/
 
 ## Q128224: How to Build 16- or 32-bit DRVSETUP.EXE by Using Visual C++
 
+{% raw %}
+
 	Article: Q128224
 	Product(s): Microsoft C Compiler
 	Version(s): 1.51,1.52,1.52b,1.52c; winnt:2.0,2.1,2.2
@@ -89,3 +91,5 @@ permalink: /kb/128/Q128224/
 	
 	=============================================================================
 	
+
+{% endraw %}

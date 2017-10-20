@@ -6,6 +6,8 @@ permalink: /kb/280/Q280518/
 
 ## Q280518: SMS: Client Installation Process Stops Responding
 
+{% raw %}
+
 	Article: Q280518
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -51,3 +53,5 @@ permalink: /kb/280/Q280518/
 	
 	=============================================================================
 	
+
+{% endraw %}

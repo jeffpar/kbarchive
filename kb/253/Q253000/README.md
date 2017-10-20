@@ -6,6 +6,8 @@ permalink: /kb/253/Q253000/
 
 ## Q253000: Last Foreign User Update Time Appears Not to Be Updated
 
+{% raw %}
+
 	Article: Q253000
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -60,3 +62,5 @@ permalink: /kb/253/Q253000/
 	
 	=============================================================================
 	
+
+{% endraw %}

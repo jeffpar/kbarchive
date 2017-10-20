@@ -6,6 +6,8 @@ permalink: /kb/096/Q96286/
 
 ## Q96286: ON ERROR Does Not Trap All Errors
 
+{% raw %}
+
 	Article: Q96286
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -65,3 +67,5 @@ permalink: /kb/096/Q96286/
 	
 	=============================================================================
 	
+
+{% endraw %}

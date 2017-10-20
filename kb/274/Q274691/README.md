@@ -6,6 +6,8 @@ permalink: /kb/274/Q274691/
 
 ## Q274691: MGS: Inventory Continues to Scroll After You Release Arrow Keys
 
+{% raw %}
+
 	Article: Q274691
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/274/Q274691/
 	
 	=============================================================================
 	
+
+{% endraw %}

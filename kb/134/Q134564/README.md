@@ -6,6 +6,8 @@ permalink: /kb/134/Q134564/
 
 ## Q134564: SSI Software's LASSIE Does Not Print Puzzle
 
+{% raw %}
+
 	Article: Q134564
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134564/
 	
 	=============================================================================
 	
+
+{% endraw %}

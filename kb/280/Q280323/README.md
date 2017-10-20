@@ -6,6 +6,8 @@ permalink: /kb/280/Q280323/
 
 ## Q280323: Encryption Level Is Displayed as &quot;N/A&quot; on RDP Clients
 
+{% raw %}
+
 	Article: Q280323
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/280/Q280323/
 	
 	=============================================================================
 	
+
+{% endraw %}

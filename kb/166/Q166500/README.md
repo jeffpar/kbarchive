@@ -6,6 +6,8 @@ permalink: /kb/166/Q166500/
 
 ## Q166500: XCLN: Windows 3.x Client Can't Fully Display or Save Large Msgs
 
+{% raw %}
+
 	Article: Q166500
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -108,3 +110,5 @@ permalink: /kb/166/Q166500/
 	
 	=============================================================================
 	
+
+{% endraw %}

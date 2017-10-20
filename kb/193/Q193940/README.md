@@ -6,6 +6,8 @@ permalink: /kb/193/Q193940/
 
 ## Q193940: FIX: Wingdings/Webdings/FoxPrint Not Printing from Windows 98
 
+{% raw %}
+
 	Article: Q193940
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -92,3 +94,5 @@ permalink: /kb/193/Q193940/
 	
 	=============================================================================
 	
+
+{% endraw %}

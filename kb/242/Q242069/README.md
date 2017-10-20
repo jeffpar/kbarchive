@@ -6,6 +6,8 @@ permalink: /kb/242/Q242069/
 
 ## Q242069: Err Msg: Error Invoking the Security Editor
 
+{% raw %}
+
 	Article: Q242069
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/242/Q242069/
 	
 	=============================================================================
 	
+
+{% endraw %}

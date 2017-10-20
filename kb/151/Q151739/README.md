@@ -6,6 +6,8 @@ permalink: /kb/151/Q151739/
 
 ## Q151739: How to Create a List of Users from Other Domains
 
+{% raw %}
+
 	Article: Q151739
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -49,3 +51,5 @@ permalink: /kb/151/Q151739/
 	
 	=============================================================================
 	
+
+{% endraw %}

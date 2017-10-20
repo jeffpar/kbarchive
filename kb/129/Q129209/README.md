@@ -6,6 +6,8 @@ permalink: /kb/129/Q129209/
 
 ## Q129209: HOWTO: Convert 10-Byte Long Doubles to 8-Byte Doubles
 
+{% raw %}
+
 	Article: Q129209
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,4.0,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/129/Q129209/
 	
 	=============================================================================
 	
+
+{% endraw %}

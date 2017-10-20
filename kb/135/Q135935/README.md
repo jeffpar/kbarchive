@@ -6,6 +6,8 @@ permalink: /kb/135/Q135935/
 
 ## Q135935: MS Plus! Setup Causes GP Fault When DriveSpace Is Left Running
 
+{% raw %}
+
 	Article: Q135935
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/135/Q135935/
 	
 	=============================================================================
 	
+
+{% endraw %}

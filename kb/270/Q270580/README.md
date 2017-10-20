@@ -6,6 +6,8 @@ permalink: /kb/270/Q270580/
 
 ## Q270580: &quot;Unable to Create Mapping&quot; Error Message Re-creating DFS Share
 
+{% raw %}
+
 	Article: Q270580
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -92,3 +94,5 @@ permalink: /kb/270/Q270580/
 	
 	=============================================================================
 	
+
+{% endraw %}

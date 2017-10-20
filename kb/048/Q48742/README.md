@@ -6,6 +6,8 @@ permalink: /kb/048/Q48742/
 
 ## Q48742: Mac DOS: Requirements for Mail and TOPS/DOS 2.1
 
+{% raw %}
+
 	Article: Q48742
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -69,3 +71,5 @@ permalink: /kb/048/Q48742/
 	
 	=============================================================================
 	
+
+{% endraw %}

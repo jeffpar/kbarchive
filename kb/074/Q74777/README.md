@@ -6,6 +6,8 @@ permalink: /kb/074/Q74777/
 
 ## Q74777: Top Producer Hangs in MS-DOS
 
+{% raw %}
+
 	Article: Q74777
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/074/Q74777/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241385/
 
 ## Q241385: PRB: MSDN Library Topics Display ActiveX Control Warning
 
+{% raw %}
+
 	Article: Q241385
 	Product(s): Microsoft Developer Network
 	Version(s): 4.0
@@ -105,3 +107,5 @@ permalink: /kb/241/Q241385/
 	
 	=============================================================================
 	
+
+{% endraw %}

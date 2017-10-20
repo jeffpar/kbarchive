@@ -6,6 +6,8 @@ permalink: /kb/087/Q87386/
 
 ## Q87386: PC DB: Symptoms of a Missing CONTROL.GLB File
 
+{% raw %}
+
 	Article: Q87386
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -57,3 +59,5 @@ permalink: /kb/087/Q87386/
 	
 	=============================================================================
 	
+
+{% endraw %}

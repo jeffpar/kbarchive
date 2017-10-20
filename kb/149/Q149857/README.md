@@ -6,6 +6,8 @@ permalink: /kb/149/Q149857/
 
 ## Q149857: MoveFileEx API Does Not Work After Applying SP4
 
+{% raw %}
+
 	Article: Q149857
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/149/Q149857/
 	
 	=============================================================================
 	
+
+{% endraw %}

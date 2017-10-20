@@ -6,6 +6,8 @@ permalink: /kb/327/Q327238/
 
 ## Q327238: Programming Microsoft SQL Server 2000 with Visual Basic .Net Com
 
+{% raw %}
+
 	Article: Q327238
 	Product(s): Microsoft Press
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/327/Q327238/
 	
 	=============================================================================
 	
+
+{% endraw %}

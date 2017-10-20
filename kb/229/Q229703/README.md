@@ -6,6 +6,8 @@ permalink: /kb/229/Q229703/
 
 ## Q229703: User Mode Programs May Cause a Bugcheck in Windows NT
 
+{% raw %}
+
 	Article: Q229703
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -67,3 +69,5 @@ permalink: /kb/229/Q229703/
 	
 	=============================================================================
 	
+
+{% endraw %}

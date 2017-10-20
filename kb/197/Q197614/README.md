@@ -6,6 +6,8 @@ permalink: /kb/197/Q197614/
 
 ## Q197614: Visual Basic 6.0 Programmer's Guide Comments and Corrections
 
+{% raw %}
+
 	Article: Q197614
 	Product(s): Microsoft Press
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/197/Q197614/
 	
 	=============================================================================
 	
+
+{% endraw %}

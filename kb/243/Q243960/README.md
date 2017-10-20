@@ -6,6 +6,8 @@ permalink: /kb/243/Q243960/
 
 ## Q243960: Site Operators Receive Error When Creating New Virtual Directory
 
+{% raw %}
+
 	Article: Q243960
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/243/Q243960/
 	
 	=============================================================================
 	
+
+{% endraw %}

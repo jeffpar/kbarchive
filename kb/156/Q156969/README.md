@@ -6,6 +6,8 @@ permalink: /kb/156/Q156969/
 
 ## Q156969: Description of DeviceOld Value Under HKEY_CURRENT_USER&#92;Printers
 
+{% raw %}
+
 	Article: Q156969
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -53,3 +55,5 @@ permalink: /kb/156/Q156969/
 	
 	=============================================================================
 	
+
+{% endraw %}

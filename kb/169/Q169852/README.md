@@ -6,6 +6,8 @@ permalink: /kb/169/Q169852/
 
 ## Q169852: Only 128 Print Sessions Active in SNA Server Print Service
 
+{% raw %}
+
 	Article: Q169852
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -48,3 +50,5 @@ permalink: /kb/169/Q169852/
 	
 	=============================================================================
 	
+
+{% endraw %}

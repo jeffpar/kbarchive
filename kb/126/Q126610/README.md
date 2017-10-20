@@ -6,6 +6,8 @@ permalink: /kb/126/Q126610/
 
 ## Q126610: PC DirSync: Import -X Fails for SNADS Gateway
 
+{% raw %}
+
 	Article: Q126610
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0a,3.2,3.2a,3.5
@@ -71,3 +73,5 @@ permalink: /kb/126/Q126610/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137780/
 
 ## Q137780: Change in WINS Search Order from Windows NT 3.5 to 3.51
 
+{% raw %}
+
 	Article: Q137780
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -43,3 +45,5 @@ permalink: /kb/137/Q137780/
 	
 	=============================================================================
 	
+
+{% endraw %}

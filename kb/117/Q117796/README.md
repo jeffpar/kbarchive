@@ -6,6 +6,8 @@ permalink: /kb/117/Q117796/
 
 ## Q117796: PRB: Incorrect Debug Information in 32-bit Object Module
 
+{% raw %}
+
 	Article: Q117796
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1
@@ -59,3 +61,5 @@ permalink: /kb/117/Q117796/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98588/
 
 ## Q98588: PRB: Undesired Side Effects from toascii, tolower, toupper
 
+{% raw %}
+
 	Article: Q98588
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0 6.0a 6.0ax 7.0 1.0 1.5 1.51 2.0 2.1 4.0 4.1 4.2 5.0
@@ -107,3 +109,5 @@ permalink: /kb/098/Q98588/
 	
 	=============================================================================
 	
+
+{% endraw %}

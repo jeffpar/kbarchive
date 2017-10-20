@@ -6,6 +6,8 @@ permalink: /kb/133/Q133757/
 
 ## Q133757: Performance Monitor SQLServer-Log Object Corrupted
 
+{% raw %}
+
 	Article: Q133757
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -51,3 +53,5 @@ permalink: /kb/133/Q133757/
 	
 	=============================================================================
 	
+
+{% endraw %}

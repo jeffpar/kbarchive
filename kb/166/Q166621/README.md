@@ -6,6 +6,8 @@ permalink: /kb/166/Q166621/
 
 ## Q166621: XADM: Gateway Out Threads Not Set Correctly by Perfwiz.exe
 
+{% raw %}
+
 	Article: Q166621
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/166/Q166621/
 	
 	=============================================================================
 	
+
+{% endraw %}

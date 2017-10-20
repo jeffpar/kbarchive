@@ -6,6 +6,8 @@ permalink: /kb/049/Q49811/
 
 ## Q49811: Network ROM for OS/2 LAN Manager 2.0 RPL
 
+{% raw %}
+
 	Article: Q49811
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/049/Q49811/
 	
 	=============================================================================
 	
+
+{% endraw %}

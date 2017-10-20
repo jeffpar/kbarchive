@@ -6,6 +6,8 @@ permalink: /kb/115/Q115321/
 
 ## Q115321: File Manager Err Msg: The Destination Drive Is Full
 
+{% raw %}
+
 	Article: Q115321
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/115/Q115321/
 	
 	=============================================================================
 	
+
+{% endraw %}

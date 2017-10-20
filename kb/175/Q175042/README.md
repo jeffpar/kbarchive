@@ -6,6 +6,8 @@ permalink: /kb/175/Q175042/
 
 ## Q175042: XCON: Extended T.61 Translated Wrong in P2/P22 Subject Field
 
+{% raw %}
+
 	Article: Q175042
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/175/Q175042/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173052/
 
 ## Q173052: WD97: Chart Missing When Pasting Grouped Items from Excel
 
+{% raw %}
+
 	Article: Q173052
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/173/Q173052/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76923/
 
 ## Q76923: The Control Menu in Write Works Incorrectly in Windows
 
+{% raw %}
+
 	Article: Q76923
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/076/Q76923/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/305/Q305294/
 
 ## Q305294: ENC2002: Encarta Hangs When You Switch Between 3D Virtual Tours
 
+{% raw %}
+
 	Article: Q305294
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/305/Q305294/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222186/
 
 ## Q222186: XFOR: Old GroupWise Connector May Delete Users in the GW System
 
+{% raw %}
+
 	Article: Q222186
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -75,3 +77,5 @@ permalink: /kb/222/Q222186/
 	
 	=============================================================================
 	
+
+{% endraw %}

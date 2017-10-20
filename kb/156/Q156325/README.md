@@ -6,6 +6,8 @@ permalink: /kb/156/Q156325/
 
 ## Q156325: STOP: 0x0000001E with HP DeskScan Version 2.3
 
+{% raw %}
+
 	Article: Q156325
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -97,3 +99,5 @@ permalink: /kb/156/Q156325/
 	
 	=============================================================================
 	
+
+{% endraw %}

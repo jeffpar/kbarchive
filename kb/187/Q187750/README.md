@@ -6,6 +6,8 @@ permalink: /kb/187/Q187750/
 
 ## Q187750: Internet Information Server Returns Old Content to Browsers
 
+{% raw %}
+
 	Article: Q187750
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/187/Q187750/
 	
 	=============================================================================
 	
+
+{% endraw %}

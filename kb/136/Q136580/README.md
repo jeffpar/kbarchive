@@ -6,6 +6,8 @@ permalink: /kb/136/Q136580/
 
 ## Q136580: PRB: Saving a Form File Takes a Long Time
 
+{% raw %}
+
 	Article: Q136580
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/136/Q136580/
 	
 	=============================================================================
 	
+
+{% endraw %}

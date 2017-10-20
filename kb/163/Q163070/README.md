@@ -6,6 +6,8 @@ permalink: /kb/163/Q163070/
 
 ## Q163070: Print Server Stops Printing from an AS400
 
+{% raw %}
+
 	Article: Q163070
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/163/Q163070/
 	
 	=============================================================================
 	
+
+{% endraw %}

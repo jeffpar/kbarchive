@@ -6,6 +6,8 @@ permalink: /kb/113/Q113841/
 
 ## Q113841: MS-DOS 6.21: Information About EGA2.CPI and KEYBRD2.SYS
 
+{% raw %}
+
 	Article: Q113841
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -137,3 +139,5 @@ permalink: /kb/113/Q113841/
 	
 	=============================================================================
 	
+
+{% endraw %}

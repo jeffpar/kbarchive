@@ -6,6 +6,8 @@ permalink: /kb/160/Q160095/
 
 ## Q160095: DUN Client May Not Be Able to Ping Remote Host by Name
 
+{% raw %}
+
 	Article: Q160095
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -94,3 +96,5 @@ permalink: /kb/160/Q160095/
 	
 	=============================================================================
 	
+
+{% endraw %}

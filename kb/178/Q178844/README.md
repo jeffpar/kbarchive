@@ -6,6 +6,8 @@ permalink: /kb/178/Q178844/
 
 ## Q178844: XADM: How to Generate Reports on Mailbox Resources
 
+{% raw %}
+
 	Article: Q178844
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -118,3 +120,5 @@ permalink: /kb/178/Q178844/
 	
 	=============================================================================
 	
+
+{% endraw %}

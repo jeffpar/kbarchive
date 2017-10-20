@@ -6,6 +6,8 @@ permalink: /kb/160/Q160971/
 
 ## Q160971: XADM: How to Export the Connections Container to a Text File
 
+{% raw %}
+
 	Article: Q160971
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/160/Q160971/
 	
 	=============================================================================
 	
+
+{% endraw %}

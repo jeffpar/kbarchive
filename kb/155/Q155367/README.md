@@ -6,6 +6,8 @@ permalink: /kb/155/Q155367/
 
 ## Q155367: Pressing ESC Key Does Not Cancel Manual Feed Print Job
 
+{% raw %}
+
 	Article: Q155367
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155367/
 	
 	=============================================================================
 	
+
+{% endraw %}

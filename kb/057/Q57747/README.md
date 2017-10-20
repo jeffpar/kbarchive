@@ -6,6 +6,8 @@ permalink: /kb/057/Q57747/
 
 ## Q57747: Correction to Online Help Message for Error 70 in QB.EXE 4.50
 
+{% raw %}
+
 	Article: Q57747
 	Product(s): See article
 	Version(s): 4.50
@@ -44,3 +46,5 @@ permalink: /kb/057/Q57747/
 	denied" (ERR code 70) error. You can make a file read-only by using
 	the MS-DOS ATTRIB command (for more information about ATTRIB, see an
 	MS-DOS reference manual).
+
+{% endraw %}

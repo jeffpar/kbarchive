@@ -6,6 +6,8 @@ permalink: /kb/141/Q141500/
 
 ## Q141500: PC WSPlus: How to Access Multiple CAL Files Working Offline
 
+{% raw %}
+
 	Article: Q141500
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -76,3 +78,5 @@ permalink: /kb/141/Q141500/
 	
 	=============================================================================
 	
+
+{% endraw %}

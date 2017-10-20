@@ -6,6 +6,8 @@ permalink: /kb/181/Q181361/
 
 ## Q181361: WD97: Text/Table Disappears Following Check Box Form Field
 
+{% raw %}
+
 	Article: Q181361
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/181/Q181361/
 	
 	=============================================================================
 	
+
+{% endraw %}

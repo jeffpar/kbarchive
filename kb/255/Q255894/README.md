@@ -6,6 +6,8 @@ permalink: /kb/255/Q255894/
 
 ## Q255894: XCON: MTA Does Not Support MSP4 Content Type
 
+{% raw %}
+
 	Article: Q255894
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/255/Q255894/
 	
 	=============================================================================
 	
+
+{% endraw %}

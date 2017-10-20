@@ -6,6 +6,8 @@ permalink: /kb/133/Q133371/
 
 ## Q133371: Encarta: Title Bar Overlaps Windows 95/98-Style Title Bar
 
+{% raw %}
+
 	Article: Q133371
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition; WINDOWS:
@@ -93,3 +95,5 @@ permalink: /kb/133/Q133371/
 	
 	=============================================================================
 	
+
+{% endraw %}

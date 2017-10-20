@@ -6,6 +6,8 @@ permalink: /kb/182/Q182511/
 
 ## Q182511: XADM: Top Level Raw Property Attributes
 
+{% raw %}
+
 	Article: Q182511
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -141,3 +143,5 @@ permalink: /kb/182/Q182511/
 	
 	=============================================================================
 	
+
+{% endraw %}

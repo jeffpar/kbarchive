@@ -6,6 +6,8 @@ permalink: /kb/244/Q244312/
 
 ## Q244312: HOWTO: Add Keyboard Functionality to MDI form Scrollbars
 
+{% raw %}
+
 	Article: Q244312
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -153,3 +155,5 @@ permalink: /kb/244/Q244312/
 	
 	=============================================================================
 	
+
+{% endraw %}

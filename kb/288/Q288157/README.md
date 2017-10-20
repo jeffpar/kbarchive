@@ -6,6 +6,8 @@ permalink: /kb/288/Q288157/
 
 ## Q288157: Wallpaper Set by System Policy Overriden by Active Desktop
 
+{% raw %}
+
 	Article: Q288157
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/288/Q288157/
 	
 	=============================================================================
 	
+
+{% endraw %}

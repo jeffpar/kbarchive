@@ -6,6 +6,8 @@ permalink: /kb/120/Q120931/
 
 ## Q120931: Incorrect Syntax for FTP in Help File
 
+{% raw %}
+
 	Article: Q120931
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): ; WINDOWS:3.11
@@ -48,3 +50,5 @@ permalink: /kb/120/Q120931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/283/Q283895/
 
 ## Q283895: Inside SQL Server 2000 Comment and Corrections
 
+{% raw %}
+
 	Article: Q283895
 	Product(s): Microsoft Press
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/283/Q283895/
 	
 	=============================================================================
 	
+
+{% endraw %}

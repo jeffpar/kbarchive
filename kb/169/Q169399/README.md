@@ -6,6 +6,8 @@ permalink: /kb/169/Q169399/
 
 ## Q169399: High-Color Icons Displayed in 256-Color Mode
 
+{% raw %}
+
 	Article: Q169399
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/169/Q169399/
 	
 	=============================================================================
 	
+
+{% endraw %}

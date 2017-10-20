@@ -6,6 +6,8 @@ permalink: /kb/112/Q112232/
 
 ## Q112232: FaxDrv: Installing the Fax Driver for Windows
 
+{% raw %}
+
 	Article: Q112232
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/112/Q112232/
 	
 	=============================================================================
 	
+
+{% endraw %}

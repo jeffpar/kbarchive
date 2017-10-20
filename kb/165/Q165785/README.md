@@ -6,6 +6,8 @@ permalink: /kb/165/Q165785/
 
 ## Q165785: SNA 3.0 Upgrade CD Does Not Prompt for License Information
 
+{% raw %}
+
 	Article: Q165785
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/165/Q165785/
 	
 	=============================================================================
 	
+
+{% endraw %}

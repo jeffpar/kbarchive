@@ -6,6 +6,8 @@ permalink: /kb/173/Q173666/
 
 ## Q173666: SMSINST: Office 97 Does Not Show Template Icons
 
+{% raw %}
+
 	Article: Q173666
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,97
@@ -77,3 +79,5 @@ permalink: /kb/173/Q173666/
 	
 	=============================================================================
 	
+
+{% endraw %}

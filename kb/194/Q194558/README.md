@@ -6,6 +6,8 @@ permalink: /kb/194/Q194558/
 
 ## Q194558: Print Server Translates Characters Below 0x40 to Spaces (0x20)
 
+{% raw %}
+
 	Article: Q194558
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1
@@ -119,3 +121,5 @@ permalink: /kb/194/Q194558/
 	
 	=============================================================================
 	
+
+{% endraw %}

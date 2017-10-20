@@ -6,6 +6,8 @@ permalink: /kb/126/Q126887/
 
 ## Q126887: PC MAPI: Accessing Attachments Using the Function MAPIReadMail
 
+{% raw %}
+
 	Article: Q126887
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -58,3 +60,5 @@ permalink: /kb/126/Q126887/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169761/
 
 ## Q169761: XADM: Sample CSVs Not Included on Exchange Server 5.0 or 5.5 CD
 
+{% raw %}
+
 	Article: Q169761
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/169/Q169761/
 	
 	=============================================================================
 	
+
+{% endraw %}

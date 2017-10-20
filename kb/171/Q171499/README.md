@@ -6,6 +6,8 @@ permalink: /kb/171/Q171499/
 
 ## Q171499: FIX: IDE Doesn't Show Topics of OCX Help Files Correctly
 
+{% raw %}
+
 	Article: Q171499
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -144,3 +146,5 @@ permalink: /kb/171/Q171499/
 	
 	=============================================================================
 	
+
+{% endraw %}

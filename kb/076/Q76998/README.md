@@ -6,6 +6,8 @@ permalink: /kb/076/Q76998/
 
 ## Q76998: Running Lansmart with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q76998
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -70,3 +72,5 @@ permalink: /kb/076/Q76998/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141972/
 
 ## Q141972: How to Use the SYS(1270) Function
 
+{% raw %}
+
 	Article: Q141972
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -80,3 +82,5 @@ permalink: /kb/141/Q141972/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138953/
 
 ## Q138953: BUG: Static Identifiers Do Not Show Up in ClassView
 
+{% raw %}
+
 	Article: Q138953
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -67,3 +69,5 @@ permalink: /kb/138/Q138953/
 	
 	=============================================================================
 	
+
+{% endraw %}

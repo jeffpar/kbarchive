@@ -6,6 +6,8 @@ permalink: /kb/258/Q258533/
 
 ## Q258533: FIX: Can't Resize Column Widths under Localized Windows
 
+{% raw %}
+
 	Article: Q258533
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0,6.0 SP3
@@ -70,3 +72,5 @@ permalink: /kb/258/Q258533/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111042/
 
 ## Q111042: PC DOS: Missing Message File Aborts Saving Mail to Folder
 
+{% raw %}
+
 	Article: Q111042
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0a,3.2
@@ -54,3 +56,5 @@ permalink: /kb/111/Q111042/
 	
 	=============================================================================
 	
+
+{% endraw %}

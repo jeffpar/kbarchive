@@ -6,6 +6,8 @@ permalink: /kb/060/Q60839/
 
 ## Q60839: File Manager Loses Keyboard Focus
 
+{% raw %}
+
 	Article: Q60839
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/060/Q60839/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122668/
 
 ## Q122668: Writer/Artist: Patterned Objects Appear Blurry on Printouts
 
+{% raw %}
+
 	Article: Q122668
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -57,3 +59,5 @@ permalink: /kb/122/Q122668/
 	
 	=============================================================================
 	
+
+{% endraw %}

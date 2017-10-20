@@ -6,6 +6,8 @@ permalink: /kb/037/Q37794/
 
 ## Q37794: PRB: gcvt() Generates Exponential Notation for 0.0x
 
+{% raw %}
+
 	Article: Q37794
 	Product(s): Microsoft C Compiler
 	Version(s): 5.1 6.0 6.0a 6.0ax 7.0 1.0 1.5 2
@@ -79,3 +81,5 @@ permalink: /kb/037/Q37794/
 	
 	=============================================================================
 	
+
+{% endraw %}

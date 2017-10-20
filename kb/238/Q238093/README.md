@@ -6,6 +6,8 @@ permalink: /kb/238/Q238093/
 
 ## Q238093: SMS: Upgrade Error: Setup Cannot Upgrade the SMS Database
 
+{% raw %}
+
 	Article: Q238093
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -71,3 +73,5 @@ permalink: /kb/238/Q238093/
 	
 	=============================================================================
 	
+
+{% endraw %}

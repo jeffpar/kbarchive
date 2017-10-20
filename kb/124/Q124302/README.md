@@ -6,6 +6,8 @@ permalink: /kb/124/Q124302/
 
 ## Q124302: BUG: Setup of Data Source in Use Causes Sharing Violation Err.
 
+{% raw %}
+
 	Article: Q124302
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -68,3 +70,5 @@ permalink: /kb/124/Q124302/
 	
 	=============================================================================
 	
+
+{% endraw %}

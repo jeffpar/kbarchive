@@ -6,6 +6,8 @@ permalink: /kb/242/Q242038/
 
 ## Q242038: NTOP: NNTP Postings Renamed with .bad Extension During Recovery
 
+{% raw %}
+
 	Article: Q242038
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/242/Q242038/
 	
 	=============================================================================
 	
+
+{% endraw %}

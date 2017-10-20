@@ -6,6 +6,8 @@ permalink: /kb/065/Q65598/
 
 ## Q65598: Differences/Enhancements from BASIC PDS 7.00 to 7.10
 
+{% raw %}
+
 	Article: Q65598
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -125,3 +127,5 @@ permalink: /kb/065/Q65598/
 	For a list of known problems with BASIC PDS 7.00 (or QuickBASIC 4.50)
 	that are corrected in BASIC PDS 7.10, query in this Knowledge Base on
 	the word "fixlist7.10".
+
+{% endraw %}

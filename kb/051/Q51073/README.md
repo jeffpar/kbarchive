@@ -6,6 +6,8 @@ permalink: /kb/051/Q51073/
 
 ## Q51073: QuickC 2.00: C1007: Switches Not Recognized by QCCOM
 
+{% raw %}
+
 	Article: Q51073
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -47,3 +49,5 @@ permalink: /kb/051/Q51073/
 	   fatal error C1007: Unrecognized flag '<switch>' in 'qccom'
 	
 	The QCL command-line compiler will accept these switches.
+
+{% endraw %}

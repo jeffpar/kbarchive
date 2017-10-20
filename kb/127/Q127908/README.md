@@ -6,6 +6,8 @@ permalink: /kb/127/Q127908/
 
 ## Q127908: Granularity Value Changes After Installing Service Pack 2
 
+{% raw %}
+
 	Article: Q127908
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/127/Q127908/
 	
 	=============================================================================
 	
+
+{% endraw %}

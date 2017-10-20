@@ -6,6 +6,8 @@ permalink: /kb/240/Q240296/
 
 ## Q240296: Reference Suite 2000: Error Message When You Start Program
 
+{% raw %}
+
 	Article: Q240296
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -218,3 +220,5 @@ permalink: /kb/240/Q240296/
 	
 	=============================================================================
 	
+
+{% endraw %}

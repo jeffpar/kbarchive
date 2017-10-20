@@ -6,6 +6,8 @@ permalink: /kb/237/Q237842/
 
 ## Q237842: NTVDM May Switch to Uppercase After Running a 32-Bit Program
 
+{% raw %}
+
 	Article: Q237842
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/237/Q237842/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124983/
 
 ## Q124983: Mac Encarta: Images at 16 Shades of Gray Are Clearer in Finder
 
+{% raw %}
+
 	Article: Q124983
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 editions
@@ -60,3 +62,5 @@ permalink: /kb/124/Q124983/
 	
 	=============================================================================
 	
+
+{% endraw %}

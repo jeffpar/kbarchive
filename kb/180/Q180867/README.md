@@ -6,6 +6,8 @@ permalink: /kb/180/Q180867/
 
 ## Q180867: SNA Server Fails to Map Host User ID/Password
 
+{% raw %}
+
 	Article: Q180867
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -93,3 +95,5 @@ permalink: /kb/180/Q180867/
 	
 	=============================================================================
 	
+
+{% endraw %}

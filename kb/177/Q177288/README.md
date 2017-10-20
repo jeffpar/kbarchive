@@ -6,6 +6,8 @@ permalink: /kb/177/Q177288/
 
 ## Q177288: Err Msg: The Procedure Entry Point SUnMapLS_IP_EBP_8 Could...
 
+{% raw %}
+
 	Article: Q177288
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -89,3 +91,5 @@ permalink: /kb/177/Q177288/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196003/
 
 ## Q196003: How to Show Text in Different Fonts in Notepad
 
+{% raw %}
+
 	Article: Q196003
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): Windows:95,98; WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/196/Q196003/
 	
 	=============================================================================
 	
+
+{% endraw %}

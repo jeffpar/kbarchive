@@ -6,6 +6,8 @@ permalink: /kb/166/Q166491/
 
 ## Q166491: Secure Batch Files Return Access Denied Error Message
 
+{% raw %}
+
 	Article: Q166491
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -108,3 +110,5 @@ permalink: /kb/166/Q166491/
 	
 	=============================================================================
 	
+
+{% endraw %}

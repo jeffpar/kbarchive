@@ -6,6 +6,8 @@ permalink: /kb/156/Q156903/
 
 ## Q156903: Boot Loader Screen Keeps Repeating During Setup
 
+{% raw %}
+
 	Article: Q156903
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/156/Q156903/
 	
 	=============================================================================
 	
+
+{% endraw %}

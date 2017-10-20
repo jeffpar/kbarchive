@@ -6,6 +6,8 @@ permalink: /kb/181/Q181788/
 
 ## Q181788: WD97: Using the Open Statement in Word VBA
 
+{% raw %}
+
 	Article: Q181788
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -158,3 +160,5 @@ permalink: /kb/181/Q181788/
 	
 	=============================================================================
 	
+
+{% endraw %}

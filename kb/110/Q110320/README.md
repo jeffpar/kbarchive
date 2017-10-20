@@ -6,6 +6,8 @@ permalink: /kb/110/Q110320/
 
 ## Q110320: PC Forms: Summary List of E-Forms Designer 1.0 Bugs
 
+{% raw %}
+
 	Article: Q110320
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0
@@ -185,3 +187,5 @@ permalink: /kb/110/Q110320/
 	
 	=============================================================================
 	
+
+{% endraw %}

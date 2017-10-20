@@ -6,6 +6,8 @@ permalink: /kb/170/Q170497/
 
 ## Q170497: FP: Cannot Delete Templates in FrontPage
 
+{% raw %}
+
 	Article: Q170497
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97,macintosh:1.0
@@ -64,3 +66,5 @@ permalink: /kb/170/Q170497/
 	
 	=============================================================================
 	
+
+{% endraw %}

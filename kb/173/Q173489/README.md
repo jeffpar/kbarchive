@@ -6,6 +6,8 @@ permalink: /kb/173/Q173489/
 
 ## Q173489: WD97: Cannot Open Hyperlinked Document Using Shortcut Menu
 
+{% raw %}
+
 	Article: Q173489
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/173/Q173489/
 	
 	=============================================================================
 	
+
+{% endraw %}

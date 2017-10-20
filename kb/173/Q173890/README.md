@@ -6,6 +6,8 @@ permalink: /kb/173/Q173890/
 
 ## Q173890: XWEB: Appointment Cancellation Form Shows Attachment Icon
 
+{% raw %}
+
 	Article: Q173890
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173890/
 	
 	=============================================================================
 	
+
+{% endraw %}

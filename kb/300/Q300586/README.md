@@ -6,6 +6,8 @@ permalink: /kb/300/Q300586/
 
 ## Q300586: BUG: Error &quot;Row Cannot Be Located for Updating&quot;
 
+{% raw %}
+
 	Article: Q300586
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -230,3 +232,5 @@ permalink: /kb/300/Q300586/
 	
 	=============================================================================
 	
+
+{% endraw %}

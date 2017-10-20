@@ -6,6 +6,8 @@ permalink: /kb/325/Q325571/
 
 ## Q325571: Buffer Overrun in IIS When No Script Maps Exist
 
+{% raw %}
+
 	Article: Q325571
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -107,3 +109,5 @@ permalink: /kb/325/Q325571/
 	
 	=============================================================================
 	
+
+{% endraw %}

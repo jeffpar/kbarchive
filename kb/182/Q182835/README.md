@@ -6,6 +6,8 @@ permalink: /kb/182/Q182835/
 
 ## Q182835: Decimal Type Doesn't Allow Scale for COBOL DISPLAY Types
 
+{% raw %}
+
 	Article: Q182835
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -55,3 +57,5 @@ permalink: /kb/182/Q182835/
 	
 	=============================================================================
 	
+
+{% endraw %}

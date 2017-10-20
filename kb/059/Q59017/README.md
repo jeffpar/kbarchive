@@ -6,6 +6,8 @@ permalink: /kb/059/Q59017/
 
 ## Q59017: PRINT SCREEN Does Not Print More Than 25 Lines
 
+{% raw %}
+
 	Article: Q59017
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -50,3 +52,5 @@ permalink: /kb/059/Q59017/
 	
 	=============================================================================
 	
+
+{% endraw %}

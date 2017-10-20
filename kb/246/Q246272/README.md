@@ -6,6 +6,8 @@ permalink: /kb/246/Q246272/
 
 ## Q246272: XADM: Error 4294966767 Appears, Store Stops When Disk Space Low
 
+{% raw %}
+
 	Article: Q246272
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -102,3 +104,5 @@ permalink: /kb/246/Q246272/
 	
 	=============================================================================
 	
+
+{% endraw %}

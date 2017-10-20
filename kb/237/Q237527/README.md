@@ -6,6 +6,8 @@ permalink: /kb/237/Q237527/
 
 ## Q237527: Encarta Dictionary 2000: Pointing Device Behaves Unexpectedly
 
+{% raw %}
+
 	Article: Q237527
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -47,3 +49,5 @@ permalink: /kb/237/Q237527/
 	
 	=============================================================================
 	
+
+{% endraw %}

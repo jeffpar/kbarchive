@@ -6,6 +6,8 @@ permalink: /kb/113/Q113939/
 
 ## Q113939: PRB: Setup Toolkit DoMsgBox Shows Wrong Buttons or Icons
 
+{% raw %}
+
 	Article: Q113939
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -77,3 +79,5 @@ permalink: /kb/113/Q113939/
 	
 	=============================================================================
 	
+
+{% endraw %}

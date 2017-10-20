@@ -6,6 +6,8 @@ permalink: /kb/216/Q216331/
 
 ## Q216331: PRB: Pages of Page Frame Activate with Click When the PageFrame.
 
+{% raw %}
+
 	Article: Q216331
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -59,3 +61,5 @@ permalink: /kb/216/Q216331/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148694/
 
 ## Q148694: IIS and SQL: Intermittent NamedPipe Connections Problem
 
+{% raw %}
+
 	Article: Q148694
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,3.51
@@ -55,3 +57,5 @@ permalink: /kb/148/Q148694/
 	
 	=============================================================================
 	
+
+{% endraw %}

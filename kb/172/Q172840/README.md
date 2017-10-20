@@ -6,6 +6,8 @@ permalink: /kb/172/Q172840/
 
 ## Q172840: FILE: Visual Basic Data Sheets
 
+{% raw %}
+
 	Article: Q172840
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172840/
 	
 	=============================================================================
 	
+
+{% endraw %}

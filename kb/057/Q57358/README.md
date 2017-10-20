@@ -6,6 +6,8 @@ permalink: /kb/057/Q57358/
 
 ## Q57358: Incorrect Declaration of Far Procedure in Assembly; BASIC 7.10
 
+{% raw %}
+
 	Article: Q57358
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -27,3 +29,5 @@ permalink: /kb/057/Q57358/
 	
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+{% endraw %}

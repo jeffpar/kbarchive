@@ -6,6 +6,8 @@ permalink: /kb/234/Q234495/
 
 ## Q234495: Microsoft Internet Explorer 5 Step by Step Comments and Correcti
 
+{% raw %}
+
 	Article: Q234495
 	Product(s): Microsoft Press
 	Version(s): 
@@ -215,3 +217,5 @@ permalink: /kb/234/Q234495/
 	
 	=============================================================================
 	
+
+{% endraw %}

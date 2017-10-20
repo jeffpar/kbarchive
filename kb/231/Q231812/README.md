@@ -6,6 +6,8 @@ permalink: /kb/231/Q231812/
 
 ## Q231812: HOWTO: Programmatically Set Compatibility Level of SQL ODBC Drv.
 
+{% raw %}
+
 	Article: Q231812
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0,6.0 SP3
@@ -246,3 +248,5 @@ permalink: /kb/231/Q231812/
 	
 	=============================================================================
 	
+
+{% endraw %}

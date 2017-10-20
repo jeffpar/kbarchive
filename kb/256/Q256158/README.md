@@ -6,6 +6,8 @@ permalink: /kb/256/Q256158/
 
 ## Q256158: FIX: Text May Be Truncated in Apps for Japanese Windows 2000
 
+{% raw %}
+
 	Article: Q256158
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:; winnt:6.0
@@ -81,3 +83,5 @@ permalink: /kb/256/Q256158/
 	
 	=============================================================================
 	
+
+{% endraw %}

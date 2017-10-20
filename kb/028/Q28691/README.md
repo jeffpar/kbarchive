@@ -6,6 +6,8 @@ permalink: /kb/028/Q28691/
 
 ## Q28691: Command-Line Switches for Supported Graphics Cards in FltSim
 
+{% raw %}
+
 	Article: Q28691
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/028/Q28691/
 	
 	=============================================================================
 	
+
+{% endraw %}

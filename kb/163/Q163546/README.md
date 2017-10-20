@@ -6,6 +6,8 @@ permalink: /kb/163/Q163546/
 
 ## Q163546: WD97: Can't Save Changes to Toolbar Buttons on Custom Toolbar
 
+{% raw %}
+
 	Article: Q163546
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/163/Q163546/
 	
 	=============================================================================
 	
+
+{% endraw %}

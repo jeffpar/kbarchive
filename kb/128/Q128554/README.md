@@ -6,6 +6,8 @@ permalink: /kb/128/Q128554/
 
 ## Q128554: PRB: Profiler Fatal Errors PRF1012 and PRF1306
 
+{% raw %}
+
 	Article: Q128554
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -121,3 +123,5 @@ permalink: /kb/128/Q128554/
 	
 	=============================================================================
 	
+
+{% endraw %}

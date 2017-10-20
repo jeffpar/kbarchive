@@ -6,6 +6,8 @@ permalink: /kb/040/Q40865/
 
 ## Q40865: BC 6.00 Example to Manipulate File with OS/2 API Calls
 
+{% raw %}
+
 	Article: Q40865
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -215,3 +217,5 @@ permalink: /kb/040/Q40865/
 	   print "The file is closed."
 	END IF
 	END
+
+{% endraw %}

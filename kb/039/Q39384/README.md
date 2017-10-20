@@ -6,6 +6,8 @@ permalink: /kb/039/Q39384/
 
 ## Q39384: INPUT to Out of Range Array Element Can Hang; or Bad Value
 
+{% raw %}
+
 	Article: Q39384
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -42,3 +44,5 @@ permalink: /kb/039/Q39384/
 	FOR a = 1 TO 20
 	    INPUT "ENTER NUMBER "; b(a)
 	NEXT a
+
+{% endraw %}

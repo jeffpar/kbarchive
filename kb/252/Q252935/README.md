@@ -6,6 +6,8 @@ permalink: /kb/252/Q252935/
 
 ## Q252935: Err Msg: STOP 0x0000001E KMODE_EXCEPTION_NOT_HANDLED
 
+{% raw %}
+
 	Article: Q252935
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/252/Q252935/
 	
 	=============================================================================
 	
+
+{% endraw %}

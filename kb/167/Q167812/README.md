@@ -6,6 +6,8 @@ permalink: /kb/167/Q167812/
 
 ## Q167812: WINS and DHCP Dynamic Database Compaction in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q167812
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -45,3 +47,5 @@ permalink: /kb/167/Q167812/
 	
 	=============================================================================
 	
+
+{% endraw %}

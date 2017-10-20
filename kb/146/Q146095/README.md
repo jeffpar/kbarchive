@@ -6,6 +6,8 @@ permalink: /kb/146/Q146095/
 
 ## Q146095: STOP: 0x0000000A or STOP: 0x0000001E in Tcpip.sys
 
+{% raw %}
+
 	Article: Q146095
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/146/Q146095/
 	
 	=============================================================================
 	
+
+{% endraw %}

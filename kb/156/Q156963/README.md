@@ -6,6 +6,8 @@ permalink: /kb/156/Q156963/
 
 ## Q156963: XFOR: Korean Characters Are Corrupted by the MS Mail Connector
 
+{% raw %}
+
 	Article: Q156963
 	Product(s): Microsoft Exchange
 	Version(s): MS-DOS:4.0,5.0; WINDOWS:4.0,5.0; winnt:4.0; :4.0,5.0
@@ -55,3 +57,5 @@ permalink: /kb/156/Q156963/
 	
 	=============================================================================
 	
+
+{% endraw %}

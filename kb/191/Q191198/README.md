@@ -6,6 +6,8 @@ permalink: /kb/191/Q191198/
 
 ## Q191198: SAMPLE: SFOLDER.EXE Gets the Path of a Special Folder
 
+{% raw %}
+
 	Article: Q191198
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0,97,97sp3
@@ -135,3 +137,5 @@ permalink: /kb/191/Q191198/
 	
 	=============================================================================
 	
+
+{% endraw %}

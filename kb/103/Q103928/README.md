@@ -6,6 +6,8 @@ permalink: /kb/103/Q103928/
 
 ## Q103928: SFM: Confirm Volume Removal Dialog Box Requires a Mouse
 
+{% raw %}
+
 	Article: Q103928
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -66,3 +68,5 @@ permalink: /kb/103/Q103928/
 	
 	=============================================================================
 	
+
+{% endraw %}

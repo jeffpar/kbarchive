@@ -6,6 +6,8 @@ permalink: /kb/141/Q141083/
 
 ## Q141083: PRB: No Error Message When Creating a Cyclic Relation
 
+{% raw %}
+
 	Article: Q141083
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -65,3 +67,5 @@ permalink: /kb/141/Q141083/
 	
 	=============================================================================
 	
+
+{% endraw %}

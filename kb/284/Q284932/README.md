@@ -6,6 +6,8 @@ permalink: /kb/284/Q284932/
 
 ## Q284932: XADM: Error Message: Unable to Get Organizational Information...
 
+{% raw %}
+
 	Article: Q284932
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -66,3 +68,5 @@ permalink: /kb/284/Q284932/
 	
 	=============================================================================
 	
+
+{% endraw %}

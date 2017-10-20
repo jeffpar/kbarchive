@@ -6,6 +6,8 @@ permalink: /kb/092/Q92782/
 
 ## Q92782: WFWG Setup Prompts for Disk with Nonexistent Drive Letter
 
+{% raw %}
+
 	Article: Q92782
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -43,3 +45,5 @@ permalink: /kb/092/Q92782/
 	
 	=============================================================================
 	
+
+{% endraw %}

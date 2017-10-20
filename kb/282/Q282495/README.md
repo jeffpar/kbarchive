@@ -6,6 +6,8 @@ permalink: /kb/282/Q282495/
 
 ## Q282495: Encarta World Atlas: Moving Dynamic Sensor Hangs Your Computer
 
+{% raw %}
+
 	Article: Q282495
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/282/Q282495/
 	
 	=============================================================================
 	
+
+{% endraw %}

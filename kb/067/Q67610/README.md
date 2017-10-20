@@ -6,6 +6,8 @@ permalink: /kb/067/Q67610/
 
 ## Q67610: Accessing Help with the CodeView Upgrade for QuickC
 
+{% raw %}
+
 	Article: Q67610
 	Product(s): See article
 	Version(s): 2.50
@@ -25,3 +27,5 @@ permalink: /kb/067/Q67610/
 	
 	This is not covered in the CodeView for QuickC printed documentation,
 	but is stated clearly in the CodeView for QuickC Setup program.
+
+{% endraw %}

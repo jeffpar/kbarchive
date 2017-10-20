@@ -6,6 +6,8 @@ permalink: /kb/288/Q288335/
 
 ## Q288335: XADM:  Error Messages Occur When You Run Exmerge
 
+{% raw %}
+
 	Article: Q288335
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -61,3 +63,5 @@ permalink: /kb/288/Q288335/
 	
 	=============================================================================
 	
+
+{% endraw %}

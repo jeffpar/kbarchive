@@ -6,6 +6,8 @@ permalink: /kb/026/Q26485/
 
 ## Q26485: Trapping ALT+, SHIFT+, or CTRL+PRINT SCREEN, &amp;H80 Key Flag
 
+{% raw %}
+
 	Article: Q26485
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/026/Q26485/
 	keytrap:
 	   PRINT "CONTROL+PRINT SCREEN key sequence trapped"
 	   RETURN
+
+{% endraw %}

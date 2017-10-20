@@ -6,6 +6,8 @@ permalink: /kb/257/Q257805/
 
 ## Q257805: Encarta World English Dictionary: QuickDefine Dialog Box Closes
 
+{% raw %}
+
 	Article: Q257805
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -78,3 +80,5 @@ permalink: /kb/257/Q257805/
 	
 	=============================================================================
 	
+
+{% endraw %}

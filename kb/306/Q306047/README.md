@@ -6,6 +6,8 @@ permalink: /kb/306/Q306047/
 
 ## Q306047: ENC2002: Status Bar at 100% When Copying to Hard Drive
 
+{% raw %}
+
 	Article: Q306047
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/306/Q306047/
 	
 	=============================================================================
 	
+
+{% endraw %}

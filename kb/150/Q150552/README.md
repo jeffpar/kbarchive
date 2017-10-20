@@ -6,6 +6,8 @@ permalink: /kb/150/Q150552/
 
 ## Q150552: HOWTO: How To Avoid the ODBC Login Dialog when Using MFC
 
+{% raw %}
+
 	Article: Q150552
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.5; winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -351,3 +353,5 @@ permalink: /kb/150/Q150552/
 	
 	=============================================================================
 	
+
+{% endraw %}

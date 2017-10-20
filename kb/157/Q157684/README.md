@@ -6,6 +6,8 @@ permalink: /kb/157/Q157684/
 
 ## Q157684: XFOR: IMC Might Lose Inbound and Outbound Messages
 
+{% raw %}
+
 	Article: Q157684
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/157/Q157684/
 	
 	=============================================================================
 	
+
+{% endraw %}

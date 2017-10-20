@@ -6,6 +6,8 @@ permalink: /kb/165/Q165079/
 
 ## Q165079: WD97: &quot;From Scanner&quot; Missing from Insert Picture Menu
 
+{% raw %}
+
 	Article: Q165079
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/165/Q165079/
 	
 	=============================================================================
 	
+
+{% endraw %}

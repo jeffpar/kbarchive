@@ -6,6 +6,8 @@ permalink: /kb/136/Q136065/
 
 ## Q136065: Windows 95 Help File Available
 
+{% raw %}
+
 	Article: Q136065
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/136/Q136065/
 	
 	=============================================================================
 	
+
+{% endraw %}

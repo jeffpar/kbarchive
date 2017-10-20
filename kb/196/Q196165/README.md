@@ -6,6 +6,8 @@ permalink: /kb/196/Q196165/
 
 ## Q196165: XADM: &quot;Unable to display folder...&quot; in Outlook 97 After MSW Runs
 
+{% raw %}
+
 	Article: Q196165
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -51,3 +53,5 @@ permalink: /kb/196/Q196165/
 	
 	=============================================================================
 	
+
+{% endraw %}

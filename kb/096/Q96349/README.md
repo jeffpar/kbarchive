@@ -6,6 +6,8 @@ permalink: /kb/096/Q96349/
 
 ## Q96349: Errors in HELP Command Documentation
 
+{% raw %}
+
 	Article: Q96349
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -44,3 +46,5 @@ permalink: /kb/096/Q96349/
 	
 	=============================================================================
 	
+
+{% endraw %}
