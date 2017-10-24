@@ -1,6 +1,9 @@
 source: .
 destination: ./docs
-title: KnowledgeBase Archive
-description: An Archive of Early Microsoft KnowledgeBase Articles
+baseurl: /kbarchive
+url: http://jeffpar.github.io
+repository: kbarchive/jeffpar.github.io
+title: "KnowledgeBase Archive"
+description: "An Archive of Early Microsoft KnowledgeBase Articles"
 theme: jekyll-theme-tactile
-exclude: ["node_modules","tmp","txt","Gemfile*","package*.json","scripts"]
+exclude: ["kb","node_modules","tmp","txt","Gemfile*","package*.json","scripts"]
