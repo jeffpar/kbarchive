@@ -2,7 +2,7 @@ source: .
 destination: ./docs
 baseurl: /kbarchive
 url: http://jeffpar.github.io
-repository: kbarchive/jeffpar.github.io
+repository: jeffpar/kbarchive
 title: "KnowledgeBase Archive"
 description: "An Archive of Early Microsoft KnowledgeBase Articles"
 theme: jekyll-theme-tactile
