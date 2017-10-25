@@ -13,7 +13,10 @@
 let fs = require("fs");
 let path = require("path");
 let mkdirp = require("mkdirp");
-let tmpDir = "tmp/";
+let rootDir = "";
+
+let TEST = false;
+if (TEST) rootDir = "tmp/";
 
 /**
  * isAlphaNum(s)
@@ -24,13 +27,13 @@ let tmpDir = "tmp/";
 function isAlphaNum(s)
 {
     if (!s) return false;
-    return !!s.match(/^[a-z0-9]*$/);
+    return !!s.match(/^[a-z0-9]*$/i);
 }
 
 /**
  * toHex(n, cch)
  *
- * Number.toString(16) will work, too, but it doesn't support fixed-length output.
+ * Number.toString(16) works, but it doesn't do zero-padded fixed-length upper-case output.
  *
  * @param {number} n
  * @param {number} [cch] (default is 2 characters)
@@ -45,6 +48,54 @@ function toHex(n, cch = 2)
         n >>= 4;
     }
     return s;
+}
+
+/**
+ * replaceSpecial(s)
+ *
+ * Replace selected "special characters" with corresponding HTML entities, as well as any character sequences
+ * that might be misinterpreted by the Liquid template engine used by Jekyll and GitHub Pages.
+ *
+ * @param {string} s
+ * @return {string}
+ */
+function replaceSpecial(s)
+{
+    return s.replace(/&/g, "&amp;").replace(/\|/g, "&#124;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/\$/g, "&#36;").replace(/\*/g, "&#42;").replace(/\[/g, "&#91;").replace(/\\/g, "&#92;").replace(/]/g, "&#93;").replace(/__/g, "&#95;&#95;").replace(/{{/g, "{ {").replace(/}}/g, "} }");
+}
+
+/**
+ * validateASCII(s, sSource)
+ *
+ * Verify that all characters in the string are valid (7-bit) ASCII, and replace any characters that are
+ * either not supported or not valid.
+ *
+ * @param {string} s
+ * @param {string} sSource
+ * @return {string}
+ */
+function validateASCII(s, sSource)
+{
+    let sNew = "";
+    for (let i = 0; i < s.length;) {
+        let ch = s[i];
+        let chCode = s.charCodeAt(i++);
+        if (chCode >= 0x7F || chCode < 0x20 && chCode != 0x09 && chCode != 0x0A && chCode != 0x0D) {
+            ch = "<" + toHex(chCode) + ">";
+            console.log(sSource + ", pos " + i + ": unrecognized character " + ch + " (" + chCode + ")");
+            /*
+             * Some CP-1252 characters slipped into the titles of a few KB articles, so deal with those here.
+             */
+            if (chCode == 0x91 /* left single quote */ || chCode == 0x92 /* right single quote */) {
+                ch = "'";
+            }
+            if (chCode == 0x93 /* left double quote */ || chCode == 0x94 /* right double quote */) {
+                ch = '"';
+            }
+        }
+        sNew += ch;
+    }
+    return sNew;
 }
 
 /**
@@ -78,10 +129,10 @@ function processDir(sDir) {
  * @param {string} sFile
  */
 function processFile(sFile) {
-    let sNewDir = sFile.replace("txt/", tmpDir + "kb/").replace(".TXT", "");
+    let sNewDir = sFile.replace("txt/", rootDir + "kb/").replace(".TXT", "");
     let sNewFile = path.join(sNewDir, "README.md");
 
-    // console.log("processing " + sFile + " new dir: " + sNewDir + " new file: " + sNewFile);
+    // if (TEST) console.log("processing " + sFile + " new dir: " + sNewDir + " new file: " + sNewFile);
 
     let sText = fs.readFileSync(sFile, "binary");
     /*
@@ -149,31 +200,25 @@ function processFile(sFile) {
 function processText(sID, sTitle, sProductID, sProductName, sProductVersions, sSystem, sKeywords, sDateModified, sText, sNewDir, sNewFile)
 {
     let sNewText = "{% raw %}\n\n";
+
     sNewText += "\tArticle: " + sID + "\n";
     sNewText += "\tProduct(s): " + sProductName + "\n";
     sNewText += "\tVersion(s): " + sProductVersions + "\n";
     sNewText += "\tOperating System(s): " + sSystem + "\n";
     sNewText += "\tKeyword(s): " + sKeywords + "\n";
     sNewText += "\tLast Modified: " + sDateModified + "\n\t\n";
+
     let aLines = sText.split(/(?:^|\r?\n) ?/);
     for (let l = 0; l < aLines.length;) {
-        let sNewLine = "";
-        let sLine = aLines[l++];
-        for (let i = 0; i < sLine.length;) {
-            let ch = sLine[i];
-            let chCode = sLine.charCodeAt(i++);
-            if (chCode >= 0x7F || chCode < 0x20 && chCode != 0x09 && chCode != 0x0A && chCode != 0x0D) {
-                ch = "<" + toHex(chCode) + ">";
-                console.log(sID + ", line " + l + ", pos " + i + ": unrecognized character " + ch + " (" + chCode + ")");
-            }
-            sNewLine += ch;
-        }
-        sNewText += '\t' + sNewLine + '\n';
+        sNewText += '\t' + validateASCII(aLines[l++], sID + ", line " + l) + '\n';
     }
     sNewText += "\n{% endraw %}\n";
-    let sSiteDir = '/' + sNewDir.replace(tmpDir, "");
-    sTitle = sTitle.replace(/&/g, "&amp;").replace(/\|/g, "&#124;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/\$/g, "&#36;").replace(/\*/g, "&#42;").replace(/\[/g, "&#91;").replace(/\\/g, "&#92;").replace(/]/g, "&#93;").replace(/__/g, "&#95;&#95;").replace(/{{/g, "{ {").replace(/}}/g, "} }");
-    sNewText = "---\nlayout: page\ntitle: \"" + sID + ": " + sTitle + "\"\npermalink: " + sSiteDir + "/\n---\n\n## " + sID + ": " + sTitle + "\n\n" + sNewText;
+
+    let sNewTitle = replaceSpecial(validateASCII(sTitle, sID + " title"));
+    let sSiteDir = '/' + sNewDir.replace(rootDir, "");
+    sNewText = "---\nlayout: page\ntitle: \"" + sID + ": " + sNewTitle + "\"\npermalink: " + sSiteDir + "/\n---\n\n## " + sID + ": " + sNewTitle + "\n\n" + sNewText;
+    if (TEST) return;
+
     if (!fs.existsSync(sNewDir)) {
         mkdirp.sync(sNewDir);
     }
@@ -183,20 +228,21 @@ function processText(sID, sTitle, sProductID, sProductName, sProductVersions, sS
      * (without wasting more time reading the file) is that if the sizes are different, the files differ.
      */
     if (size != sNewText.length) fs.writeFileSync(sNewFile, sNewText);
+
     /*
-     * We also want to update listings by product ID...
+     * Update listings by product ID, too.
      */
     if (!isAlphaNum(sProductID)) {
         throw new Error(sID + " contains unexpected product ID: " + sProductID);
     }
-    sNewDir = tmpDir + "id/" + sProductID;
+    sNewDir = rootDir + "id/" + sProductID.toLowerCase();
     if (!fs.existsSync(sNewDir)) {
         mkdirp.sync(sNewDir);
     }
     sNewFile = sNewDir + "/README.md";
-    sNewText = "- [" + sID + ": " + sTitle + "](" + sSiteDir + "/)\n";
+    sNewText = "- [" + sID + ": " + sNewTitle + "](../.." + sSiteDir + "/)\n";
     if (!fs.existsSync(sNewFile)) {
-        sNewText = "---\nlayout: page\ntitle: \"" + sProductName + "\"\npermalink: /" + sNewDir.replace(tmpDir, "") + "/\n---\n\n## KB Articles for " + sProductName + "\n\n" + sNewText;
+        sNewText = "---\nlayout: page\ntitle: \"" + sProductName + "\"\npermalink: /" + sNewDir.replace(rootDir, "") + "/\n---\n\n## KB Articles for " + sProductName + "\n\n" + sNewText;
     }
     fs.appendFileSync(sNewFile, sNewText);
 }
